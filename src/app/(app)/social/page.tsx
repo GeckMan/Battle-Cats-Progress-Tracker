@@ -4,6 +4,8 @@ import { redirect } from "next/navigation";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
+import SocialClient from "./SocialClient";
+
 
 type SagaBreakdown = {
   sagaId: string;
@@ -225,53 +227,59 @@ export default async function SocialPage() {
   // Helpful: sort friends by overall descending
   friendSummaries.sort((a, b) => b.summary.overall - a.summary.overall);
 
-  return (
-    <div className="p-8 space-y-6">
-      <div className="flex items-end justify-between">
-        <div>
-          <h1 className="text-2xl font-semibold text-gray-100">Social</h1>
-          <p className="text-sm text-gray-400 mt-1">Compare your progress with friends.</p>
-        </div>
+return (
+  <div className="p-8 space-y-6">
+    <div className="flex items-end justify-between">
+      <div>
+        <h1 className="text-2xl font-semibold text-gray-100">Social</h1>
+        <p className="text-sm text-gray-400 mt-1">Compare your progress with friends.</p>
+      </div>
+    </div>
+
+    {/* ✅ RESTORED FRIEND UI */}
+    <section className="space-y-3">
+      <h2 className="text-lg font-semibold text-gray-100">Friends</h2>
+      <SocialClient userId={userId} />
+    </section>
+
+    {/* Your existing server-rendered progress sections can stay below */}
+    <section className="space-y-3">
+      <h2 className="text-lg font-semibold text-gray-100">You</h2>
+      <UserProgressCard
+        username={me?.username ?? "you"}
+        displayName={me?.displayName ?? null}
+        summary={mySummary}
+        compareHref={null}
+        showSolDetail
+      />
+    </section>
+
+    <section className="space-y-3">
+      <div className="flex items-center justify-between">
+        <h2 className="text-lg font-semibold text-gray-100">Friends (Progress)</h2>
+        <div className="text-sm text-gray-400">{friendSummaries.length} friends</div>
       </div>
 
-      <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-gray-100">You</h2>
-        <UserProgressCard
-          username={me?.username ?? "you"}
-          displayName={me?.displayName ?? null}
-          summary={mySummary}
-          compareHref={null}
-          showSolDetail
-        />
-      </section>
-
-      <section className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-lg font-semibold text-gray-100">Friends</h2>
-          <div className="text-sm text-gray-400">{friendSummaries.length} friends</div>
+      {friendSummaries.length === 0 ? (
+        <div className="text-sm text-gray-400">No accepted friends yet.</div>
+      ) : (
+        <div className="grid gap-4 md:grid-cols-2">
+          {friendSummaries.map(({ user, summary }) => (
+            <UserProgressCard
+              key={user.id}
+              username={user.username}
+              displayName={user.displayName ?? null}
+              summary={summary}
+              compareHref={`/social/compare/${encodeURIComponent(user.username)}`}
+              showSolDetail={false}
+            />
+          ))}
         </div>
+      )}
+    </section>
+  </div>
+);
 
-        {friendSummaries.length === 0 ? (
-          <div className="text-sm text-gray-400">
-            No accepted friends yet. (Friend adding UI comes next.)
-          </div>
-        ) : (
-          <div className="grid gap-4 md:grid-cols-2">
-            {friendSummaries.map(({ user, summary }) => (
-              <UserProgressCard
-                key={user.id}
-                username={user.username}
-                displayName={user.displayName ?? null}
-                summary={summary}
-                compareHref={`/social/compare/${encodeURIComponent(user.username)}`}
-                showSolDetail={false}
-              />
-            ))}
-          </div>
-        )}
-      </section>
-    </div>
-  );
 }
 
 function UserProgressCard({
