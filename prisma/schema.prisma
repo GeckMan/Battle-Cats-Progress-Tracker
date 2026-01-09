@@ -1,0 +1,262 @@
+generator client {
+  provider = "prisma-client-js"
+  output   = "../src/generated/prisma"
+}
+
+
+datasource db {
+  provider = "postgresql"
+}
+
+/**
+ * ---------- Enums ----------
+ */
+
+enum Visibility {
+  PUBLIC
+  FRIENDS
+  PRIVATE
+}
+
+enum FriendshipStatus {
+  PENDING
+  ACCEPTED
+  BLOCKED
+}
+
+enum TreasureStatus {
+  NONE
+  PARTIAL
+  ALL
+}
+
+enum ZombieStatus {
+  NONE
+  PARTIAL
+  ALL
+}
+
+enum LegendProgressStatus {
+  NOT_STARTED
+  IN_PROGRESS
+  COMPLETED
+}
+
+enum MilestoneCategory {
+  CRAZED
+  MANIC
+  ADVENT
+  CATCLAW
+  OTHER
+}
+
+/**
+ * ---------- Auth / Users ----------
+ */
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  // For a friends-only app, you can keep email optional.
+  // If you later add password reset, making email required is better.
+  email        String?  @unique
+  passwordHash String
+  displayName  String?
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  privacy PrivacySettings?
+
+  sentFriendRequests     Friendship[] @relation("FriendRequestsSent")
+  receivedFriendRequests Friendship[] @relation("FriendRequestsReceived")
+
+  storyProgress     UserStoryProgress[]
+  legendProgress    UserLegendProgress[]
+  milestoneProgress UserMilestoneProgress[]
+  catclawProgress   UserCatclawProgress?
+  meowMedalProgress UserMeowMedal[]
+}
+
+model PrivacySettings {
+  userId             String     @id
+  profileVisibility  Visibility @default(PUBLIC)
+  progressVisibility Visibility @default(FRIENDS)
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model Friendship {
+  id          String           @id @default(cuid())
+  requesterId String
+  addresseeId String
+  status      FriendshipStatus @default(PENDING)
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  requester User @relation("FriendRequestsSent", fields: [requesterId], references: [id], onDelete: Cascade)
+  addressee User @relation("FriendRequestsReceived", fields: [addresseeId], references: [id], onDelete: Cascade)
+
+  @@unique([requesterId, addresseeId])
+  @@index([addresseeId, status])
+  @@index([requesterId, status])
+}
+
+/**
+ * ---------- Story Catalog + Progress ----------
+ */
+
+model StoryChapter {
+  id            String @id @default(cuid())
+  arc           String
+  chapterNumber Int
+  displayName   String
+  sortOrder     Int
+
+  progress UserStoryProgress[]
+
+  @@unique([arc, chapterNumber])
+  @@index([sortOrder])
+}
+
+model UserStoryProgress {
+  id             String         @id @default(cuid())
+  userId         String
+  storyChapterId String
+  cleared        Boolean        @default(false)
+  treasures      TreasureStatus @default(NONE)
+  zombies        ZombieStatus   @default(NONE)
+  updatedAt      DateTime       @updatedAt
+
+  user    User         @relation(fields: [userId], references: [id], onDelete: Cascade)
+  chapter StoryChapter @relation(fields: [storyChapterId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, storyChapterId])
+  @@index([userId])
+}
+
+/**
+ * ---------- Legend Catalog + Progress (Subchapter + Crown 1–4) ----------
+ */
+
+model LegendSaga {
+  id          String @id @default(cuid())
+  displayName String
+  sortOrder   Int
+
+  subchapters LegendSubchapter[]
+
+  @@index([sortOrder])
+}
+
+model LegendSubchapter {
+  id          String @id @default(cuid())
+  sagaId      String
+  displayName String
+  sortOrder   Int
+
+  saga     LegendSaga           @relation(fields: [sagaId], references: [id], onDelete: Cascade)
+  progress UserLegendProgress[]
+
+  @@unique([sagaId, displayName])
+  @@index([sagaId, sortOrder])
+}
+
+model UserLegendProgress {
+  id           String               @id @default(cuid())
+  userId       String
+  subchapterId String
+  status       LegendProgressStatus @default(NOT_STARTED)
+  crownMax     Int? // 1-4; null if unknown/not applicable
+  notes        String?
+  updatedAt    DateTime             @updatedAt
+
+  user       User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  subchapter LegendSubchapter @relation(fields: [subchapterId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, subchapterId])
+  @@index([userId])
+}
+
+/**
+ * ---------- Milestones Catalog + Progress ----------
+ */
+
+model Milestone {
+  id          String            @id @default(cuid())
+  category    MilestoneCategory
+  displayName String
+  sortOrder   Int
+
+  progress UserMilestoneProgress[]
+
+  @@index([category, sortOrder])
+}
+
+model UserMilestoneProgress {
+  id          String   @id @default(cuid())
+  userId      String
+  milestoneId String
+  cleared     Boolean  @default(false)
+  notes       String?
+  updatedAt   DateTime @updatedAt
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  milestone Milestone @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, milestoneId])
+  @@index([userId])
+}
+
+/**
+ * ---------- Catclaw (simple v1) ----------
+ */
+
+model UserCatclawProgress {
+  id          String   @id @default(cuid())
+  userId      String   @unique
+  currentRank String?
+  bestRank    String?
+  notes       String?
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+/**
+ * ---------- Meow Medals Catalog + Progress (for later scraping/import) ----------
+ */
+
+model MeowMedal {
+  id              String   @id @default(cuid())
+  name            String   @unique
+  requirementText String?
+  description     String?
+  category        String?
+  sortOrder       Int?
+  sourceUrl       String?
+  imageFile       String?
+
+  // NEW: used to link a medal to an auto-sync rule
+  autoKey         String?  @unique
+
+  updatedAt       DateTime @updatedAt
+
+  earnedBy UserMeowMedal[]
+}
+
+
+
+model UserMeowMedal {
+  id          String    @id @default(cuid())
+  userId      String
+  meowMedalId String
+  earned      Boolean   @default(false)
+  earnedAt    DateTime?
+  updatedAt   DateTime  @updatedAt
+
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  meowMedal MeowMedal @relation(fields: [meowMedalId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, meowMedalId])
+  @@index([userId])
+}
