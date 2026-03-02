@@ -50,7 +50,6 @@ export const authOptions: NextAuthOptions = {
     },
     async session({ session, token }) {
       if (session.user && token.sub) {
-        // @ts-expect-error
         session.user.id = token.sub;
       }
       return session;

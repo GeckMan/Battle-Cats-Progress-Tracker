@@ -8,7 +8,6 @@ export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({}, { status: 401 });
 
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   const { ids, patch } = await req.json();

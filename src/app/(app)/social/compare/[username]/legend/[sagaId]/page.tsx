@@ -10,7 +10,6 @@ export default async function CompareLegendSagaPage(props: {
 }) {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const viewerId = session.user.id as string;
 
   const { username: rawUsername, sagaId } = await props.params;

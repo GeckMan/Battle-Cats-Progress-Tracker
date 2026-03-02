@@ -4,38 +4,17 @@ import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
 import LogoutButton from "./LogoutButton";
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
+import { ensureStoryProgress, ensureMedalProgress } from "@/lib/ensure-progress";
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   // --------------------
-  // Story (ensure rows exist)
+  // Story (ensure rows exist) + Legend + Medals initialization run in parallel
   // --------------------
-  const storyChapterIds = (
-    await prisma.storyChapter.findMany({
-      select: { id: true },
-    })
-  ).map((c) => c.id);
-
-  if (storyChapterIds.length) {
-    const existingStory = await prisma.userStoryProgress.findMany({
-      where: { userId, storyChapterId: { in: storyChapterIds } },
-      select: { storyChapterId: true },
-    });
-
-    const existingSet = new Set(existingStory.map((e) => e.storyChapterId));
-
-    const missing = storyChapterIds
-      .filter((id) => !existingSet.has(id))
-      .map((storyChapterId) => ({ userId, storyChapterId }));
-
-    if (missing.length) {
-      await prisma.userStoryProgress.createMany({ data: missing });
-    }
-  }
+  await Promise.all([ensureStoryProgress(userId), ensureMedalProgress(userId)]);
 
   const storyChapters = await prisma.storyChapter.findMany({
     orderBy: { sortOrder: "asc" },
@@ -88,31 +67,8 @@ export default async function DashboardPage() {
       : Math.round(legendPercents.reduce((a, b) => a + b, 0) / legendPercents.length);
 
   // --------------------
-  // Meow Medals (ensure rows exist + compute)
+  // Meow Medals (compute — rows ensured above)
   // --------------------
-  const medalIds = (
-    await prisma.meowMedal.findMany({
-      select: { id: true },
-    })
-  ).map((m) => m.id);
-
-  if (medalIds.length) {
-    const existingMedals = await prisma.userMeowMedal.findMany({
-      where: { userId, meowMedalId: { in: medalIds } },
-      select: { meowMedalId: true },
-    });
-
-    const existingSet = new Set(existingMedals.map((e) => e.meowMedalId));
-
-    const missing = medalIds
-      .filter((id) => !existingSet.has(id))
-      .map((meowMedalId) => ({ userId, meowMedalId }));
-
-    if (missing.length) {
-      await prisma.userMeowMedal.createMany({ data: missing });
-    }
-  }
-
   const medalsWithProgress = await prisma.meowMedal.findMany({
     orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
     include: {

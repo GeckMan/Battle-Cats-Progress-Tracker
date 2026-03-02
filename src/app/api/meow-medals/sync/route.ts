@@ -70,7 +70,6 @@ export async function POST() {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  // @ts-expect-error next-auth session typing
   const userId = session.user.id as string;
 
   // 1) Load all medals that have an autoKey
@@ -83,27 +82,34 @@ export async function POST() {
     return NextResponse.json({ updated: 0, medals: 0, evaluated: 0 });
   }
 
-  // 2) Fetch story progress once
-  const story = await prisma.userStoryProgress.findMany({
-    where: { userId },
-    select: {
-      chapter: { select: { arc: true, chapterNumber: true } },
-      treasures: true,
-      zombies: true,
-    },
-  });
+  // 2–4) Fetch all required data in parallel to reduce total DB round-trips
+  const [story, legend, sagaRows, sagaSubs] = await Promise.all([
+    prisma.userStoryProgress.findMany({
+      where: { userId },
+      select: {
+        chapter: { select: { arc: true, chapterNumber: true } },
+        treasures: true,
+        zombies: true,
+      },
+    }),
+    prisma.userLegendProgress.findMany({
+      where: { userId },
+      select: { subchapterId: true, status: true, crownMax: true },
+    }),
+    prisma.legendSaga.findMany({
+      where: { displayName: { in: ["Stories of Legend", "Uncanny Legends", "Zero Legends"] } },
+      select: { id: true, displayName: true },
+    }),
+    prisma.legendSubchapter.findMany({
+      select: { id: true, sagaId: true },
+    }),
+  ]);
 
   const storyByKey = new Map<string, { treasures: string; zombies: string }>();
   for (const r of story) {
     const k = `${r.chapter.arc}.${r.chapter.chapterNumber}`;
     storyByKey.set(k, { treasures: r.treasures, zombies: r.zombies });
   }
-
-  // 3) Fetch legend progress once
-  const legend = await prisma.userLegendProgress.findMany({
-    where: { userId },
-    select: { subchapterId: true, status: true, crownMax: true },
-  });
 
   // legendBySub: subchapterId -> { status, crownMax }
   const legendBySub = new Map(
@@ -113,22 +119,12 @@ export async function POST() {
     ])
   );
 
-  // 4) Build saga mappings (SOL/UL/ZL) -> sagaId, and sagaId -> subchapterIds
-  const sagaRows = await prisma.legendSaga.findMany({
-    where: { displayName: { in: ["Stories of Legend", "Uncanny Legends", "Zero Legends"] } },
-    select: { id: true, displayName: true },
-  });
-
   const sagaIdByKey = new Map<string, string>();
   for (const s of sagaRows) {
     if (s.displayName === "Stories of Legend") sagaIdByKey.set("SOL", s.id);
     if (s.displayName === "Uncanny Legends") sagaIdByKey.set("UL", s.id);
     if (s.displayName === "Zero Legends") sagaIdByKey.set("ZL", s.id);
   }
-
-  const sagaSubs = await prisma.legendSubchapter.findMany({
-    select: { id: true, sagaId: true },
-  });
 
   const subIdsBySagaId = new Map<string, string[]>();
   for (const sc of sagaSubs) {
@@ -194,31 +190,32 @@ export async function POST() {
     }
   }
 
-  // 6) Upsert UserMeowMedal rows accordingly
-  const now = new Date();
-  let updatedCount = 0;
+  // 6) Load existing rows to preserve original earnedAt timestamps
+  const existingRows = await prisma.userMeowMedal.findMany({
+    where: { userId, meowMedalId: { in: Array.from(desired.keys()) } },
+    select: { meowMedalId: true, earned: true, earnedAt: true },
+  });
+  const existingByMedal = new Map(existingRows.map((r) => [r.meowMedalId, r]));
 
-  for (const [meowMedalId, earned] of desired.entries()) {
-    await prisma.userMeowMedal.upsert({
+  // 7) Batch all upserts in a single transaction instead of N sequential awaits
+  const now = new Date();
+  const ops = Array.from(desired.entries()).map(([meowMedalId, earned]) => {
+    const existing = existingByMedal.get(meowMedalId);
+    // Preserve original earnedAt — only stamp it the first time earned becomes true
+    const earnedAt = earned ? (existing?.earnedAt ?? now) : null;
+
+    return prisma.userMeowMedal.upsert({
       where: { userId_meowMedalId: { userId, meowMedalId } },
-      create: {
-        userId,
-        meowMedalId,
-        earned,
-        earnedAt: earned ? now : null,
-      },
-      update: {
-        earned,
-        earnedAt: earned ? now : null,
-      },
+      create: { userId, meowMedalId, earned, earnedAt },
+      update: { earned, earnedAt },
       select: { meowMedalId: true },
     });
+  });
 
-    updatedCount++;
-  }
+  await prisma.$transaction(ops);
 
   return NextResponse.json({
-    updated: updatedCount,
+    updated: ops.length,
     medals: medals.length,
     evaluated: desired.size,
   });

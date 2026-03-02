@@ -68,6 +68,7 @@ export default function SocialClient({ userId }: { userId: string }) {
             placeholder="Search by username"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
+            onKeyDown={(e) => e.key === "Enter" && query.trim() && search()}
           />
           <button
             className="px-3 py-2 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700 text-gray-100"

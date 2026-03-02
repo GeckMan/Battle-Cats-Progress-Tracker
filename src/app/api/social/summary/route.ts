@@ -7,41 +7,41 @@ export async function GET() {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  // @ts-expect-error
   const userId = session.user.id as string;
 
-  const incoming = await prisma.friendship.findMany({
-    where: { addresseeId: userId, status: "PENDING" },
-    select: {
-      id: true,
-      requester: { select: { id: true, username: true, displayName: true } },
-    },
-    orderBy: { createdAt: "desc" },
-  });
-
-  const outgoing = await prisma.friendship.findMany({
-    where: { requesterId: userId, status: "PENDING" },
-    select: {
-      id: true,
-      addressee: { select: { id: true, username: true, displayName: true } },
-    },
-    orderBy: { createdAt: "desc" },
-  });
-
-  const friendships = await prisma.friendship.findMany({
-    where: {
-      status: "ACCEPTED",
-      OR: [{ requesterId: userId }, { addresseeId: userId }],
-    },
-    select: {
-      id: true,
-      requesterId: true,
-      addresseeId: true,
-      requester: { select: { id: true, username: true, displayName: true } },
-      addressee: { select: { id: true, username: true, displayName: true } },
-    },
-    orderBy: { updatedAt: "desc" },
-  });
+  // Run all three queries in parallel — no dependency between them
+  const [incoming, outgoing, friendships] = await Promise.all([
+    prisma.friendship.findMany({
+      where: { addresseeId: userId, status: "PENDING" },
+      select: {
+        id: true,
+        requester: { select: { id: true, username: true, displayName: true } },
+      },
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.friendship.findMany({
+      where: { requesterId: userId, status: "PENDING" },
+      select: {
+        id: true,
+        addressee: { select: { id: true, username: true, displayName: true } },
+      },
+      orderBy: { createdAt: "desc" },
+    }),
+    prisma.friendship.findMany({
+      where: {
+        status: "ACCEPTED",
+        OR: [{ requesterId: userId }, { addresseeId: userId }],
+      },
+      select: {
+        id: true,
+        requesterId: true,
+        addresseeId: true,
+        requester: { select: { id: true, username: true, displayName: true } },
+        addressee: { select: { id: true, username: true, displayName: true } },
+      },
+      orderBy: { updatedAt: "desc" },
+    }),
+  ]);
 
   const friends = friendships.map((f) => {
     const other = f.requesterId === userId ? f.addressee : f.requester;

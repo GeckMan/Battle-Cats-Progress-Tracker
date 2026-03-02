@@ -7,7 +7,6 @@ import MedalsClient from "./MedalsClient";
 export default async function MedalsPage() {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   const medals = await prisma.meowMedal.findMany({

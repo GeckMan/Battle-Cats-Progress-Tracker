@@ -12,7 +12,6 @@ export async function PATCH(
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   }
 
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   const { meowMedalId } = await ctx.params;

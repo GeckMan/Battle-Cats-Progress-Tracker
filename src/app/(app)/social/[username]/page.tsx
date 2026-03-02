@@ -9,7 +9,6 @@ export default async function FriendProfilePage(props: {
 }) {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const viewerId = session.user.id as string;
 
   const { username: raw } = await props.params;

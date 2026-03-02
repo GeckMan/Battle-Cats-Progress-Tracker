@@ -7,7 +7,6 @@ export async function GET(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   const { searchParams } = new URL(req.url);

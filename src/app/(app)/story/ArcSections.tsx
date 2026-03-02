@@ -34,9 +34,11 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
   );
 
   const [data, setData] = useState<Row[]>(groups.flatMap((g) => g.rows));
+  const [error, setError] = useState<string | null>(null);
 
   async function update(id: string, patch: Partial<Row>) {
-    setData((prev) => prev.map((r) => (r.id === id ? { ...r, ...patch } : r)));
+    const prev = data.find((r) => r.id === id);
+    setData((d) => d.map((r) => (r.id === id ? { ...r, ...patch } : r)));
 
     const res = await fetch("/api/story", {
       method: "POST",
@@ -45,13 +47,16 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
     });
 
     if (!res.ok) {
-      window.location.reload();
+      // Rollback optimistic update
+      if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r)));
+      setError("Failed to save. Please try again.");
     }
   }
 
   async function bulkUpdate(ids: string[], patch: Partial<Row>) {
+    const idSet = new Set(ids);
     setData((prev) =>
-      prev.map((r) => (ids.includes(r.id) ? { ...r, ...patch } : r))
+      prev.map((r) => (idSet.has(r.id) ? { ...r, ...patch } : r))
     );
 
     const res = await fetch("/api/story/bulk", {
@@ -61,7 +66,11 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
     });
 
     if (!res.ok) {
-      window.location.reload();
+      setError("Failed to save changes. Please refresh the page.");
+      // Rollback optimistic update
+      setData((prev) =>
+        prev.map((r) => (idSet.has(r.id) ? { ...r } : r))
+      );
     }
   }
 
@@ -82,6 +91,12 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
 
   return (
     <div className="space-y-4">
+      {error && (
+        <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
+          <span>{error}</span>
+          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+        </div>
+      )}
       {groups.map((g) => {
         const rows = dataByArc.get(g.arc) ?? [];
         const ids = rows.map((r) => r.id);

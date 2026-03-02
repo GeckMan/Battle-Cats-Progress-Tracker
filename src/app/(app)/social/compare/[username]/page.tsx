@@ -121,7 +121,6 @@ export default async function ComparePage({
 }) {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const viewerId = session.user.id as string;
 
   const { username } = await params;

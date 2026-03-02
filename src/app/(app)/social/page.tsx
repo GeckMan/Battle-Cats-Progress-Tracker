@@ -190,7 +190,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
 export default async function SocialPage() {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   // Accepted friends (both directions)

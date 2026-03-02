@@ -33,6 +33,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
   );
 
   const [data, setData] = useState<Row[]>(groups.flatMap((g) => g.rows));
+  const [error, setError] = useState<string | null>(null);
 
   const dataBySaga = useMemo(() => {
     const map = new Map<string, Row[]>();
@@ -50,44 +51,55 @@ export default function Sections({ groups }: { groups: Group[] }) {
   }, [data, groups]);
 
   async function update(id: string, uiCrown: number) {
-  const crownMax = uiCrown === 0 ? null : uiCrown;
-  const status =
-    crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
+    const crownMax = uiCrown === 0 ? null : uiCrown;
+    const status =
+      crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
 
-  setData((prev) =>
-    prev.map((r) => (r.id === id ? { ...r, crownMax, status } : r))
-  );
+    const prev = data.find((r) => r.id === id);
+    setData((d) => d.map((r) => (r.id === id ? { ...r, crownMax, status } : r)));
 
-  const res = await fetch("/api/legend", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ id, patch: { crownMax, status } }),
-  });
+    const res = await fetch("/api/legend", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ id, patch: { crownMax, status } }),
+    });
 
-  if (!res.ok) window.location.reload();
-}
+    if (!res.ok) {
+      if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r)));
+      setError("Failed to save. Please try again.");
+    }
+  }
 
-async function bulkUpdate(ids: string[], uiCrown: number) {
-  const crownMax = uiCrown === 0 ? null : uiCrown;
-  const status =
-    crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
+  async function bulkUpdate(ids: string[], uiCrown: number) {
+    const crownMax = uiCrown === 0 ? null : uiCrown;
+    const status =
+      crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
 
-  setData((prev) =>
-    prev.map((r) => (ids.includes(r.id) ? { ...r, crownMax, status } : r))
-  );
+    const idSet = new Set(ids);
+    setData((prev) =>
+      prev.map((r) => (idSet.has(r.id) ? { ...r, crownMax, status } : r))
+    );
 
-  const res = await fetch("/api/legend/bulk", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ ids, patch: { crownMax, status } }),
-  });
+    const res = await fetch("/api/legend/bulk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ ids, patch: { crownMax, status } }),
+    });
 
-  if (!res.ok) window.location.reload();
-}
+    if (!res.ok) {
+      setError("Failed to save changes. Please try again.");
+    }
+  }
 
 
   return (
     <div className="space-y-4">
+      {error && (
+        <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
+          <span>{error}</span>
+          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+        </div>
+      )}
       {groups
         .slice()
         .sort((a, b) => a.sortOrder - b.sortOrder)

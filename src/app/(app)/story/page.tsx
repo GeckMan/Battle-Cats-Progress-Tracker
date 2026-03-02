@@ -9,7 +9,6 @@ export default async function StoryPage() {
   const session = await getServerSession(authOptions);
   if (!session) redirect("/login");
 
-  // @ts-expect-error
   const userId = session.user.id as string;
 
   const chapters = await prisma.storyChapter.findMany({
