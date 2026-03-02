@@ -32,9 +32,14 @@ export default function AppHeader() {
             Social
           </Link>
           <Link href="/medals" className={linkClass("/medals")}>
-  Medals
-</Link>
-
+            Medals
+          </Link>
+          <Link href="/milestones" className={linkClass("/milestones")}>
+            Milestones
+          </Link>
+          <Link href="/about" className={linkClass("/about")}>
+            About
+          </Link>
         </div>
 
         {/* Right actions */}

@@ -34,3 +34,13 @@ export async function ensureLegendProgress(userId: string) {
     skipDuplicates: true,
   });
 }
+
+export async function ensureMilestoneProgress(userId: string) {
+  const milestones = await prisma.milestone.findMany({ select: { id: true } });
+  if (!milestones.length) return;
+
+  await prisma.userMilestoneProgress.createMany({
+    data: milestones.map((m) => ({ userId, milestoneId: m.id })),
+    skipDuplicates: true,
+  });
+}
