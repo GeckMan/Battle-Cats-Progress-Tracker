@@ -43,13 +43,18 @@ export default function AppHeader() {
         </div>
 
         {/* Right actions */}
-        <button
-          type="button"
-          className="px-3 py-2 rounded border border-gray-700 text-sm bg-gray-900 text-gray-200 hover:bg-gray-800"
-          onClick={() => signOut({ callbackUrl: "/login" })}
-        >
-          Logout
-        </button>
+        <div className="flex items-center gap-2">
+          <Link href="/settings" className={linkClass("/settings")}>
+            Settings
+          </Link>
+          <button
+            type="button"
+            className="px-3 py-2 rounded border border-gray-700 text-sm bg-gray-900 text-gray-200 hover:bg-gray-800"
+            onClick={() => signOut({ callbackUrl: "/login" })}
+          >
+            Logout
+          </button>
+        </div>
       </div>
     </div>
   );
