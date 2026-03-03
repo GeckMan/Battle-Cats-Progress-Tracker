@@ -9,6 +9,9 @@ type UnitRow = {
   id: string;
   unitNumber: number;
   name: string;
+  evolvedName: string | null;
+  trueName: string | null;
+  ultraName: string | null;
   category: string;
   formCount: number;
   sortOrder: number;
@@ -17,6 +20,16 @@ type UnitRow = {
   setName: string | null;
   formLevel: number; // 0–4
 };
+
+/** Return the display name for the unit's current form level */
+function displayName(unit: UnitRow): string {
+  switch (unit.formLevel) {
+    case 4: return unit.ultraName ?? unit.trueName ?? unit.name;
+    case 3: return unit.trueName ?? unit.name;
+    case 2: return unit.evolvedName ?? unit.name;
+    default: return unit.name;
+  }
+}
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
@@ -161,7 +174,13 @@ function UnitCard({
       onClick={handleClick}
       onMouseEnter={preloadSprites}
       disabled={pending}
-      title={`${unit.name} — click to cycle form (${FORM_LABEL[level]}) · Shift+click for max`}
+      title={[
+        unit.name,
+        unit.evolvedName ? `→ ${unit.evolvedName}` : null,
+        unit.trueName ? `→ ${unit.trueName}` : null,
+        unit.ultraName ? `→ ${unit.ultraName}` : null,
+        `\nCurrent: ${FORM_LABEL[level]} · Click to cycle · Shift+click for max`,
+      ].filter(Boolean).join(" ")}
       className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 transition-all
         ${cardTint(level)}
         ${pending ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
@@ -185,9 +204,9 @@ function UnitCard({
         {FORM_LABEL[level]}
       </div>
 
-      {/* Unit name */}
+      {/* Unit name — shows current form name */}
       <div className="text-[10px] text-gray-400 text-center leading-tight line-clamp-2 w-full">
-        {unit.name}
+        {displayName(unit)}
       </div>
     </button>
   );
@@ -364,13 +383,18 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
     }
   }
 
-  /* Search filter */
+  /* Search filter — matches across all form names */
   const filtered = searchQuery
-    ? units.filter(
-        (u) =>
-          u.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+    ? units.filter((u) => {
+        const q = searchQuery.toLowerCase();
+        return (
+          u.name.toLowerCase().includes(q) ||
+          (u.evolvedName?.toLowerCase().includes(q) ?? false) ||
+          (u.trueName?.toLowerCase().includes(q) ?? false) ||
+          (u.ultraName?.toLowerCase().includes(q) ?? false) ||
           String(u.unitNumber).includes(searchQuery)
-      )
+        );
+      })
     : units;
 
   /* Overall stats */

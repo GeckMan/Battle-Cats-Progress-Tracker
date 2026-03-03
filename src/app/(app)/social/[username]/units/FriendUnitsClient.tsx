@@ -10,6 +10,9 @@ type UnitRow = {
   id: string;
   unitNumber: number;
   name: string;
+  evolvedName: string | null;
+  trueName: string | null;
+  ultraName: string | null;
   category: string;
   formCount: number;
   sortOrder: number;
@@ -18,6 +21,16 @@ type UnitRow = {
   setName: string | null;
   formLevel: number; // 0–4
 };
+
+/** Return the display name for the unit's current form level */
+function displayName(unit: UnitRow): string {
+  switch (unit.formLevel) {
+    case 4: return unit.ultraName ?? unit.trueName ?? unit.name;
+    case 3: return unit.trueName ?? unit.name;
+    case 2: return unit.evolvedName ?? unit.name;
+    default: return unit.name;
+  }
+}
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
@@ -104,7 +117,13 @@ function UnitCard({ unit }: { unit: UnitRow }) {
 
   return (
     <div
-      title={`${unit.name} — ${FORM_LABEL[level]}`}
+      title={[
+        unit.name,
+        unit.evolvedName ? `→ ${unit.evolvedName}` : null,
+        unit.trueName ? `→ ${unit.trueName}` : null,
+        unit.ultraName ? `→ ${unit.ultraName}` : null,
+        `\nCurrent: ${FORM_LABEL[level]}`,
+      ].filter(Boolean).join(" ")}
       className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 ${cardTint(level)}`}
     >
       <div className="w-14 h-14 flex items-center justify-center">
@@ -122,7 +141,7 @@ function UnitCard({ unit }: { unit: UnitRow }) {
         {FORM_LABEL[level]}
       </div>
       <div className="text-[10px] text-gray-400 text-center leading-tight line-clamp-2 w-full">
-        {unit.name}
+        {displayName(unit)}
       </div>
     </div>
   );
@@ -288,7 +307,12 @@ export default function FriendUnitsClient({
   if (searchQuery) {
     const q = searchQuery.toLowerCase();
     filtered = filtered.filter(
-      (u) => u.name.toLowerCase().includes(q) || String(u.unitNumber).includes(searchQuery)
+      (u) =>
+        u.name.toLowerCase().includes(q) ||
+        (u.evolvedName?.toLowerCase().includes(q) ?? false) ||
+        (u.trueName?.toLowerCase().includes(q) ?? false) ||
+        (u.ultraName?.toLowerCase().includes(q) ?? false) ||
+        String(u.unitNumber).includes(searchQuery)
     );
   }
 
