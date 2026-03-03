@@ -29,12 +29,16 @@
  *   ...
  */
 
+import "dotenv/config";
 import { createReadStream } from "fs";
 import { createInterface } from "readline";
 import path from "path";
-import { PrismaClient } from "@prisma/client";
+import { Pool } from "pg";
+import { PrismaPg } from "@prisma/adapter-pg";
+import { PrismaClient } from "../src/generated/prisma/index.js";
 
-const prisma = new PrismaClient();
+const pool = new Pool({ connectionString: process.env.DATABASE_URL, max: 5 });
+const prisma = new PrismaClient({ adapter: new PrismaPg(pool), log: ["warn", "error"] });
 
 const VALID_CATEGORIES = new Set([
   "NORMAL", "SPECIAL", "RARE", "SUPER_RARE", "UBER_RARE", "LEGEND_RARE",
@@ -149,10 +153,12 @@ async function main() {
 
   console.log(`\nDone! ${imported} units upserted.`);
   await prisma.$disconnect();
+  await pool.end();
 }
 
-main().catch((e) => {
+main().catch(async (e) => {
   console.error(e);
-  prisma.$disconnect();
+  await prisma.$disconnect();
+  await pool.end();
   process.exit(1);
 });
