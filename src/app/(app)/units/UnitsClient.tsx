@@ -42,8 +42,10 @@ const RARITY_ACCENT: Record<string, string> = {
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
 
 function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
-  // Ancient Egg units share a common egg sprite (Uni000_m00.png) for base form
-  if (unitName?.startsWith("Ancient Egg") && formIndex === 0) {
+  // Ancient Egg units: base & evolved forms use shared egg sprite (non-standard
+  // filenames like Uni007_m01.png that can't be derived from the unit number).
+  // True Form (s00) and Ultra Form (u00) follow the standard naming.
+  if (unitName?.startsWith("Ancient Egg") && formIndex <= 1) {
     return `/api/sprite?u=0&f=m`;
   }
   const letter = FORM_LETTER[formIndex] ?? "f";
