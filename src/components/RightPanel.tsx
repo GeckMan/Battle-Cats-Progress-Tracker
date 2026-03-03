@@ -551,7 +551,7 @@ export function PanelToggleButton({
   return (
     <button
       onClick={onClick}
-      className="fixed top-4 right-4 z-20 flex items-center gap-2.5 pl-3 pr-3.5 py-2.5 rounded-xl border border-amber-800/60 bg-gray-950/95 backdrop-blur-sm text-amber-300 hover:text-amber-200 hover:border-amber-700 hover:bg-gray-900/95 transition-all shadow-lg shadow-black/40 group"
+      className="fixed top-4 right-4 z-20 flex items-center gap-2.5 pl-2.5 pr-3 py-2 md:pl-3 md:pr-3.5 md:py-2.5 rounded-xl border border-amber-800/60 bg-gray-950/95 backdrop-blur-sm text-amber-300 hover:text-amber-200 hover:border-amber-700 hover:bg-gray-900/95 transition-all shadow-lg shadow-black/40 group"
       aria-label="Open panel"
     >
       {/* Icon */}
@@ -578,7 +578,7 @@ export function PanelToggleButton({
       </div>
 
       {/* Label */}
-      <span className="text-xs font-medium tracking-wide">Activity & Chat</span>
+      <span className="text-xs font-medium tracking-wide hidden md:inline">Activity & Chat</span>
     </button>
   );
 }

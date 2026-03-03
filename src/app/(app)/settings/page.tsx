@@ -24,7 +24,7 @@ export default async function SettingsPage() {
   if (!user) redirect("/login");
 
   return (
-    <div className="p-8 max-w-xl">
+    <div className="p-4 pt-16 md:p-8 max-w-xl">
       <SettingsClient
         username={user.username}
         displayName={user.displayName}

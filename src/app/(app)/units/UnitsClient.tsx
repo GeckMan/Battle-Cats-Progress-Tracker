@@ -388,7 +388,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   const hasActiveFilters = sourceFilter || setFilter || hideCollab;
 
   return (
-    <div className="p-6 space-y-5 w-full">
+    <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
 
       {/* Header */}
       <div>
@@ -417,7 +417,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       </div>
 
       {/* Stats bar */}
-      <div className="grid grid-cols-3 gap-3">
+      <div className="grid grid-cols-3 gap-2 md:gap-3">
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">Obtained</div>
           <MiniBar value={obtained} total={units.length} />

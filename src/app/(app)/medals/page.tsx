@@ -47,7 +47,7 @@ const rows = medals.map((m) => ({
 
   if (rows.length === 0) {
     return (
-      <div className="p-8 space-y-3">
+      <div className="p-4 pt-16 md:p-8 space-y-3">
         <h1 className="text-2xl font-semibold text-gray-100">Meow Medals</h1>
         <div className="text-sm text-gray-400">No medals found in the database yet.</div>
         <div className="text-sm text-gray-500">
@@ -61,7 +61,7 @@ const rows = medals.map((m) => ({
   const earned = rows.filter((r) => r.earned).length;
 
   return (
-    <div className="p-8 space-y-6">
+    <div className="p-4 pt-16 md:p-8 space-y-6">
       <div className="flex items-end justify-between">
         <div>
           <h1 className="text-2xl font-semibold text-gray-100">Meow Medals</h1>

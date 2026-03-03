@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="p-8 max-w-2xl space-y-10">
+    <div className="p-4 pt-16 md:p-8 max-w-2xl space-y-10">
 
       {/* Hero */}
       <div className="space-y-2">
@@ -69,6 +69,10 @@ export default function AboutPage() {
             <span className="text-gray-500">→</span>
             <span><strong className="text-gray-100">Social</strong> — add friends, view their profiles, and compare your progress side by side</span>
           </li>
+          <li className="flex gap-2">
+            <span className="text-gray-500">→</span>
+            <span><strong className="text-gray-100">Mobile Support</strong> — fully responsive layout with a hamburger menu, optimized grids, and touch-friendly controls</span>
+          </li>
         </ul>
       </section>
 
@@ -77,6 +81,12 @@ export default function AboutPage() {
         <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
           Announcements
         </h2>
+
+        <Announcement
+          date="March 2026"
+          title="Mobile support"
+          body="The site is now fully responsive. On phones and tablets, the sidebar collapses into a hamburger menu, grids reflow to fit your screen, and tables scroll horizontally. Everything works on the go."
+        />
 
         <Announcement
           date="March 2026"

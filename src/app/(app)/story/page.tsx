@@ -64,7 +64,7 @@ export default async function StoryPage() {
     .filter((g) => g.rows.length > 0);
 
   return (
-    <div className="p-8 space-y-6">
+    <div className="p-4 pt-16 md:p-8 space-y-6">
       <h1 className="text-2xl font-semibold text-gray-100">Story Progress</h1>
       <ArcSections groups={groups} />
     </div>

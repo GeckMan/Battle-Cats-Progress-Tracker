@@ -78,7 +78,7 @@ const existingSet = new Set(existing.map((e) => e.subchapterId));
   }));
 
   return (
-    <div className="p-8 space-y-6">
+    <div className="p-4 pt-16 md:p-8 space-y-6">
       <h1 className="text-2xl font-semibold text-gray-100">Legend Stages</h1>
       <p className="text-sm text-gray-400">
         Track legend progress by subchapter. Crown = highest crown completed (0–4).

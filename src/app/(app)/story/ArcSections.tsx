@@ -236,8 +236,8 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
 
             {/* Chapter table */}
             {open[g.arc] && (
-              <div className="bg-black">
-                <table className="w-full text-sm">
+              <div className="bg-black overflow-x-auto">
+                <table className="w-full text-sm min-w-[500px]">
                   <thead>
                     <tr className="border-b border-gray-800 bg-gray-950">
                       <th className="px-4 py-2 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Chapter</th>

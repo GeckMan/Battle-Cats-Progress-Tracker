@@ -248,7 +248,7 @@ export default async function SocialPage() {
   friendSummaries.sort((a, b) => b.summary.overall - a.summary.overall);
 
 return (
-  <div className="p-8 space-y-6">
+  <div className="p-4 pt-16 md:p-8 space-y-6">
     <div className="flex items-end justify-between">
       <div>
         <h1 className="text-2xl font-semibold text-gray-100">Social</h1>
@@ -374,7 +374,7 @@ function UserProgressCard({
       </div>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-5 gap-2">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-2">
         {[
           { title: "Overall", pct: summary.overall, highlight: true },
           { title: "Story",   pct: summary.storyOverall },

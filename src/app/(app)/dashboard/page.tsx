@@ -133,11 +133,11 @@ export default async function DashboardPage() {
   const overall = Math.round((storyOverall + legendOverall + medalsOverall + milestonesOverall + unitsOverall) / 5);
 
   return (
-    <div className="p-8 space-y-6 w-full">
+    <div className="p-4 pt-16 md:p-8 space-y-6 w-full">
       <h1 className="text-2xl font-semibold text-gray-100">Dashboard</h1>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 md:gap-3">
         <StatCard title="Overall"     pct={overall}           highlight />
         <StatCard title="Story"       pct={storyOverall} />
         <StatCard title="Legend"      pct={legendOverall} />
@@ -147,7 +147,7 @@ export default async function DashboardPage() {
       </div>
 
       {/* Story + Legend side by side */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Section title="Story Chapters">
           <div className="space-y-1.5">
             {storyRows.map((r) => (
@@ -166,7 +166,7 @@ export default async function DashboardPage() {
       </div>
 
       {/* Medals + Milestones side by side */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Section title={`Meow Medals — ${medalEarned}/${medalTotal}`}>
           <div className="space-y-1.5">
             {medalCategoryRows.map((r) => (
@@ -205,9 +205,9 @@ function barFill(pct: number) {
 
 function StatCard({ title, pct, highlight = false, sub }: { title: string; pct: number; highlight?: boolean; sub?: string }) {
   return (
-    <div className={`border rounded-lg p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
-      <div className="text-sm text-gray-400 mb-1">{title}</div>
-      <div className="text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
+    <div className={`border rounded-lg p-3 md:p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
+      <div className="text-xs md:text-sm text-gray-400 mb-1">{title}</div>
+      <div className="text-2xl md:text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
       {sub && <div className="text-xs text-gray-500 mt-0.5">{sub}</div>}
       <div className="mt-3 h-2 rounded bg-gray-800 overflow-hidden">
         <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />

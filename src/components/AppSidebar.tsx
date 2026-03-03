@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
+import { useState, useEffect } from "react";
 
 /* ─── Nav items ──────────────────────────────────────────────────────────── */
 
@@ -21,10 +22,25 @@ const NAV_ITEMS = [
 
 export default function AppSidebar() {
   const pathname = usePathname();
+  const [mobileOpen, setMobileOpen] = useState(false);
 
-  return (
-    <aside className="w-52 flex-shrink-0 h-screen fixed left-0 top-0 bg-black border-r border-gray-800 flex flex-col z-10">
+  // Close mobile menu on route change
+  useEffect(() => {
+    setMobileOpen(false);
+  }, [pathname]);
 
+  // Prevent body scroll when mobile menu is open
+  useEffect(() => {
+    if (mobileOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [mobileOpen]);
+
+  const sidebarContent = (
+    <>
       {/* Brand */}
       <div className="px-5 pt-6 pb-5 border-b border-gray-800">
         <div className="text-amber-400 font-bold text-sm tracking-widest uppercase">
@@ -64,7 +80,56 @@ export default function AppSidebar() {
           Logout
         </button>
       </div>
-    </aside>
+    </>
+  );
+
+  return (
+    <>
+      {/* ── Mobile hamburger button ── */}
+      <button
+        type="button"
+        onClick={() => setMobileOpen(true)}
+        className="fixed top-4 left-4 z-30 flex items-center justify-center w-10 h-10 rounded-lg border border-gray-700 bg-gray-950/95 backdrop-blur-sm text-gray-300 hover:text-gray-100 hover:border-gray-600 transition-colors shadow-lg md:hidden"
+        aria-label="Open menu"
+      >
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+          <line x1="3" y1="5" x2="17" y2="5" />
+          <line x1="3" y1="10" x2="17" y2="10" />
+          <line x1="3" y1="15" x2="17" y2="15" />
+        </svg>
+      </button>
+
+      {/* ── Mobile sidebar overlay ── */}
+      {mobileOpen && (
+        <div
+          className="fixed inset-0 bg-black/60 z-40 md:hidden"
+          onClick={() => setMobileOpen(false)}
+        />
+      )}
+      <aside
+        className={`
+          fixed left-0 top-0 h-screen bg-black border-r border-gray-800 flex flex-col z-50 w-52
+          transition-transform duration-200 ease-in-out
+          md:translate-x-0
+          ${mobileOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
+        `}
+      >
+        {/* Close button for mobile */}
+        <button
+          type="button"
+          onClick={() => setMobileOpen(false)}
+          className="absolute top-4 right-3 text-gray-500 hover:text-gray-200 transition-colors md:hidden"
+          aria-label="Close menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+            <line x1="5" y1="5" x2="15" y2="15" />
+            <line x1="15" y1="5" x2="5" y2="15" />
+          </svg>
+        </button>
+
+        {sidebarContent}
+      </aside>
+    </>
   );
 }
 
