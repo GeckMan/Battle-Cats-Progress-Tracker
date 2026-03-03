@@ -43,13 +43,11 @@ const RARITY_ACCENT: Record<string, string> = {
 // Human-readable source labels
 const SOURCE_LABELS: Record<string, string> = {
   RARE_CAPSULE:      "Rare Cat Capsule",
-  EVENT_CAPSULE:     "Event Capsule",
+  EVENT_CAPSULE:     "Collab",
   STAGE_DROP:        "Stage Drop",
   EMPIRE_OF_CATS:    "Empire of Cats",
   DAILY_LOGIN:       "Daily Login",
-
   CATNIP_CHALLENGES: "Catnip Challenges",
-  CAMPAIGN:          "Campaign",
   SPECIAL_SALE:      "Special Sale",
   EXTERNAL_APP:      "External App",
   STAMP_REWARD:      "Stamp Reward",
