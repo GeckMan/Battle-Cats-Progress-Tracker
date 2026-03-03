@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, useRef } from "react";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
@@ -71,7 +71,8 @@ const FORM_LABEL: Record<number, string> = {
 };
 
 function cardTint(level: number) {
-  if (level >= 3) return "bg-gray-950 border-gray-500/60";
+  if (level >= 4) return "bg-purple-950/20 border-purple-500/50";
+  if (level === 3) return "bg-gray-950 border-gray-500/60";
   if (level === 2) return "bg-red-950/10 border-red-900/40";
   if (level === 1) return "bg-yellow-950/10 border-yellow-900/40";
   return "bg-black border-gray-800";
@@ -106,10 +107,31 @@ function UnitCard({
 }) {
   const maxLevel = unit.formCount;
   const level = unit.formLevel;
+  const preloaded = useRef(false);
 
-  function cycle() {
-    const next = (level + 1) % (maxLevel + 1);
-    onUpdate(unit.id, next);
+  /** Preload all form sprites on first hover so cycling feels instant */
+  function preloadSprites() {
+    if (preloaded.current) return;
+    preloaded.current = true;
+    for (let i = 0; i < maxLevel; i++) {
+      const img = new Image();
+      img.src = spriteUrl(unit.unitNumber, i, unit.name);
+    }
+  }
+
+  function handleClick(e: React.MouseEvent) {
+    if (e.shiftKey) {
+      // Shift+click → jump straight to max form
+      if (level < maxLevel) {
+        onUpdate(unit.id, maxLevel);
+      } else {
+        // Already at max — reset to 0
+        onUpdate(unit.id, 0);
+      }
+    } else {
+      const next = (level + 1) % (maxLevel + 1);
+      onUpdate(unit.id, next);
+    }
   }
 
   const displayForm = Math.max(0, level - 1); // formLevel 1 → form index 0 (f00)
@@ -118,9 +140,10 @@ function UnitCard({
   return (
     <button
       type="button"
-      onClick={cycle}
+      onClick={handleClick}
+      onMouseEnter={preloadSprites}
       disabled={pending}
-      title={`${unit.name} — click to cycle form (${FORM_LABEL[level]})`}
+      title={`${unit.name} — click to cycle form (${FORM_LABEL[level]}) · Shift+click for max`}
       className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 transition-all
         ${cardTint(level)}
         ${pending ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
@@ -295,7 +318,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       <div>
         <h1 className="text-2xl font-semibold text-gray-100">Unit Collection</h1>
         <p className="text-sm text-gray-500 mt-0.5">
-          Track each cat's form level — click a card to cycle forms.
+          Track each cat's form level — click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
       </div>
 
