@@ -11,7 +11,6 @@ const NAV_ITEMS = [
   { href: "/story",      label: "Story",       icon: <IconStory /> },
   { href: "/legend",     label: "Legend",      icon: <IconLegend /> },
   { href: "/social",     label: "Social",      icon: <IconSocial /> },
-  { href: "/activity",   label: "Activity",    icon: <IconActivity /> },
   { href: "/medals",     label: "Medals",      icon: <IconMedals /> },
   { href: "/milestones", label: "Milestones",  icon: <IconMilestones /> },
   { href: "/units",      label: "Units",       icon: <IconUnits /> },

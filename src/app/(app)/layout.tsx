@@ -1,4 +1,5 @@
 import AppSidebar from "@/components/AppSidebar";
+import RightPanelWrapper from "@/components/RightPanelWrapper";
 
 export default function AppGroupLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,6 +8,7 @@ export default function AppGroupLayout({ children }: { children: React.ReactNode
       <main className="ml-52 flex-1 min-h-screen">
         {children}
       </main>
+      <RightPanelWrapper />
     </div>
   );
 }

@@ -86,6 +86,7 @@ model User {
   meowMedalProgress UserMeowMedal[]
   unitProgress      UserUnitProgress[]
   activities        Activity[]
+  chatMessages      ChatMessage[]
 }
 
 model PrivacySettings {
@@ -324,5 +325,20 @@ model Activity {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([userId, createdAt])
+  @@index([createdAt])
+}
+
+/**
+ * ---------- Chat / Message Board ----------
+ */
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  userId    String
+  content   String
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
   @@index([createdAt])
 }

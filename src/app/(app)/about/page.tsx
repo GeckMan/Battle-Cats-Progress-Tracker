@@ -63,7 +63,7 @@ export default function AboutPage() {
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
-            <span><strong className="text-gray-100">Activity Feed</strong> — see recent updates from you and your friends, with smart batching for mass updates</span>
+            <span><strong className="text-gray-100">Activity & Chat Panel</strong> — slide-out panel with a live activity feed (smart-batched mass updates) and a global chat board for all users</span>
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
@@ -80,8 +80,8 @@ export default function AboutPage() {
 
         <Announcement
           date="March 2026"
-          title="Activity Feed launched"
-          body="See what you and your friends have been up to. Mass updates like obtaining many units at once are automatically summarized into a single entry. Check it out in the Activity tab."
+          title="Activity & Chat panel"
+          body="The activity feed and a new global chat are now in a slide-out panel on the right side of the screen. Click the Activity & Chat button in the top-right corner to open it. Mass updates are auto-summarized and chat is visible to all users."
         />
 
         <Announcement
@@ -116,10 +116,6 @@ export default function AboutPage() {
           <li className="flex gap-2">
             <span className="text-gray-600">◦</span>
             <span><strong className="text-gray-300">Better Compare</strong> — side by side progress for all story arcs, legend sagas, and medals</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-gray-600">◦</span>
-            <span><strong className="text-gray-300">Friend Chat</strong> — send messages to friends without leaving the site</span>
           </li>
         </ul>
       </section>
