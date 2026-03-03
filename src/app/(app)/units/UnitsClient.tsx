@@ -42,9 +42,8 @@ const RARITY_ACCENT: Record<string, string> = {
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
 
 function spriteUrl(unitNumber: number, formIndex: number) {
-  const num = String(unitNumber).padStart(3, "0");
   const letter = FORM_LETTER[formIndex] ?? "f";
-  return `https://battlecats.miraheze.org/wiki/Special:FilePath/Uni${num}_${letter}00.png`;
+  return `/api/sprite?u=${unitNumber}&f=${letter}`;
 }
 
 /* ── Form badge colors ─────────────────────────────────────────────────── */
@@ -128,6 +127,7 @@ function UnitCard({
           alt={unit.name}
           width={56}
           height={56}
+          loading="lazy"
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
           onError={(e) => { e.currentTarget.style.opacity = "0"; }}
         />
