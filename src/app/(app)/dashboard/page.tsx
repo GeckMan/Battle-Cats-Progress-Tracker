@@ -120,7 +120,7 @@ export default async function DashboardPage() {
   const overall = Math.round((storyOverall + legendOverall + medalsOverall + milestonesOverall) / 4);
 
   return (
-    <div className="p-8 space-y-6 max-w-5xl">
+    <div className="p-8 space-y-6 w-full">
       <h1 className="text-2xl font-semibold text-gray-100">Dashboard</h1>
 
       {/* Stat cards */}
@@ -191,11 +191,11 @@ function barFill(pct: number) {
 
 function StatCard({ title, pct, highlight = false }: { title: string; pct: number; highlight?: boolean }) {
   return (
-    <div className={`border rounded-lg p-3 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
-      <div className="text-xs text-gray-400 mb-1">{title}</div>
-      <div className="text-xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
-      <div className="mt-2 h-1.5 rounded bg-gray-800 overflow-hidden">
-        <div className={`h-1.5 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+    <div className={`border rounded-lg p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
+      <div className="text-sm text-gray-400 mb-1">{title}</div>
+      <div className="text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
+      <div className="mt-3 h-2 rounded bg-gray-800 overflow-hidden">
+        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
       </div>
     </div>
   );
@@ -203,7 +203,7 @@ function StatCard({ title, pct, highlight = false }: { title: string; pct: numbe
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <div className="border border-gray-700 rounded-lg p-4 bg-black">
+    <div className="border border-gray-700 rounded-lg p-5 bg-black h-full">
       <h2 className="text-sm font-semibold text-gray-300 mb-3 pb-2 border-b border-gray-800">{title}</h2>
       {children}
     </div>
@@ -212,12 +212,12 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 
 function CompactRow({ label, pct, sub }: { label: string; pct: number; sub?: string }) {
   return (
-    <div className="flex items-center gap-2">
-      <div className="w-36 text-xs text-gray-300 truncate flex-shrink-0">{label}</div>
-      <div className="flex-1 h-1.5 rounded bg-gray-800 overflow-hidden">
-        <div className={`h-1.5 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+    <div className="flex items-center gap-3">
+      <div className="w-[30%] text-sm text-gray-300 truncate flex-shrink-0">{label}</div>
+      <div className="flex-1 h-2 rounded bg-gray-800 overflow-hidden">
+        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
       </div>
-      <div className="w-16 text-right text-xs flex-shrink-0" style={{ color: pctColor(pct) }}>
+      <div className="w-16 text-right text-sm flex-shrink-0" style={{ color: pctColor(pct) }}>
         {sub ?? `${pct}%`}
       </div>
     </div>
