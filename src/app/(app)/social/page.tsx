@@ -31,6 +31,9 @@ type ProgressSummary = {
   medalsOverall: number;
   medalsEarned: number;
   medalsTotal: number;
+  unitsOverall: number;
+  unitsObtained: number;
+  unitsTotal: number;
 
   // NEW: legend breakdown
   sagas: SagaBreakdown[];
@@ -173,7 +176,22 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
   const medalsEarned = await prisma.userMeowMedal.count({ where: { userId, earned: true } });
   const medalsOverall = medalsTotal === 0 ? 0 : Math.round((medalsEarned / medalsTotal) * 100);
 
-  const overall = Math.round((storyOverall + legendOverall + medalsOverall) / 3);
+  // ----- Units overall
+  // @ts-ignore – Unit model added in new migration
+  const unitsTotal = await (prisma as any).unit.count({
+    where: { source: { not: "UNOBTAINABLE" } },
+  });
+  // @ts-ignore
+  const unitsObtained = await (prisma as any).userUnitProgress.count({
+    where: {
+      userId,
+      formLevel: { gte: 1 },
+      unit: { source: { not: "UNOBTAINABLE" } },
+    },
+  });
+  const unitsOverall = unitsTotal === 0 ? 0 : Math.round((unitsObtained / unitsTotal) * 100);
+
+  const overall = Math.round((storyOverall + legendOverall + medalsOverall + unitsOverall) / 4);
 
   return {
     overall,
@@ -182,6 +200,9 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
     medalsOverall,
     medalsEarned,
     medalsTotal,
+    unitsOverall,
+    unitsObtained,
+    unitsTotal,
     sagas: sagaBreakdown,
     solSubchapters,
   };
@@ -339,7 +360,7 @@ function UserProgressCard({
             {displayName && <span className="text-gray-500 text-sm ml-2">@{username}</span>}
           </div>
           <div className="text-xs text-gray-500 mt-0.5">
-            {summary.medalsEarned}/{summary.medalsTotal} medals earned
+            {summary.medalsEarned}/{summary.medalsTotal} medals · {summary.unitsObtained}/{summary.unitsTotal} units
           </div>
         </div>
         {compareHref && (
@@ -353,12 +374,13 @@ function UserProgressCard({
       </div>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-4 gap-2">
+      <div className="grid grid-cols-5 gap-2">
         {[
           { title: "Overall", pct: summary.overall, highlight: true },
           { title: "Story",   pct: summary.storyOverall },
           { title: "Legend",  pct: summary.legendOverall },
           { title: "Medals",  pct: summary.medalsOverall },
+          { title: "Units",   pct: summary.unitsOverall },
         ].map(({ title, pct, highlight }) => (
           <div key={title} className={`border rounded-md p-2.5 bg-black ${highlight ? "border-amber-800" : "border-gray-800"}`}>
             <div className="text-xs text-gray-500">{title}</div>

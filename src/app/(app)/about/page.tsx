@@ -30,8 +30,8 @@ export default function AboutPage() {
           this site tries to fill that gap.
         </p>
         <p className="text-gray-300 text-sm leading-relaxed">
-          You can track your Story, Legend, Medals, and Milestones, add friends, and compare where
-          you both stand. More features are in the works.
+          You can track your Story, Legend, Medals, Milestones, and Unit Collection, add friends,
+          and compare where you both stand. More features are in the works.
         </p>
       </section>
 
@@ -59,6 +59,10 @@ export default function AboutPage() {
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
+            <span><strong className="text-gray-100">Unit Collection</strong> — browse all 800+ cats with sprites, track which you own and their form level, filter by rarity, source, and gacha set</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-gray-500">→</span>
             <span><strong className="text-gray-100">Social</strong> — add friends, view their profiles, and compare your progress side by side</span>
           </li>
         </ul>
@@ -69,6 +73,12 @@ export default function AboutPage() {
         <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
           Announcements
         </h2>
+
+        <Announcement
+          date="March 2026"
+          title="Unit Collection launched"
+          body="Browse all 800+ cats with wiki sprites, track which ones you own and their form level, and filter by rarity, unlock source, or gacha set. Unit progress now counts toward your overall completion percentage."
+        />
 
         <Announcement
           date="March 2026"
@@ -89,10 +99,6 @@ export default function AboutPage() {
           Coming Soon
         </h2>
         <ul className="space-y-2 text-sm text-gray-400">
-          <li className="flex gap-2">
-            <span className="text-gray-600">◦</span>
-            <span><strong className="text-gray-300">Unit Collection</strong> — track which cats you own, their levels, and true form status, and compare with friends</span>
-          </li>
           <li className="flex gap-2">
             <span className="text-gray-600">◦</span>
             <span><strong className="text-gray-300">Activity Feed</strong> — see what your friends have been up to recently</span>
@@ -122,7 +128,7 @@ export default function AboutPage() {
             Built by <strong className="text-gray-200">GeckMan</strong>. Started as a personal project to track progress and compare with friends.
           </p>
           <p>
-            Stage names and medal data sourced from the{" "}
+            Stage names, medal data, and unit sprites sourced from the{" "}
             <a
               href="https://battlecats.miraheze.org/wiki/Battle_Cats_Wiki"
               target="_blank"

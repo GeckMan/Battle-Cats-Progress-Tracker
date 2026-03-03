@@ -116,20 +116,34 @@ export default async function DashboardPage() {
     .map(([, v]) => ({ ...v, pct: v.total === 0 ? 0 : Math.round((v.cleared / v.total) * 100) }))
     .sort((a, b) => a.order - b.order);
 
+  // ── Units ────────────────────────────────────────────────────────────────
+  const unitTotal = await (prisma as any).unit.count({
+    where: { source: { not: "UNOBTAINABLE" } },
+  });
+  const unitObtained = await (prisma as any).userUnitProgress.count({
+    where: {
+      userId,
+      formLevel: { gte: 1 },
+      unit: { source: { not: "UNOBTAINABLE" } },
+    },
+  });
+  const unitsOverall = unitTotal === 0 ? 0 : Math.round((unitObtained / unitTotal) * 100);
+
   // ── Overall ──────────────────────────────────────────────────────────────
-  const overall = Math.round((storyOverall + legendOverall + medalsOverall + milestonesOverall) / 4);
+  const overall = Math.round((storyOverall + legendOverall + medalsOverall + milestonesOverall + unitsOverall) / 5);
 
   return (
     <div className="p-8 space-y-6 w-full">
       <h1 className="text-2xl font-semibold text-gray-100">Dashboard</h1>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-5 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-6 gap-3">
         <StatCard title="Overall"     pct={overall}           highlight />
         <StatCard title="Story"       pct={storyOverall} />
         <StatCard title="Legend"      pct={legendOverall} />
         <StatCard title="Medals"      pct={medalsOverall} />
         <StatCard title="Milestones"  pct={milestonesOverall} />
+        <StatCard title="Units"       pct={unitsOverall} sub={`${unitObtained}/${unitTotal}`} />
       </div>
 
       {/* Story + Legend side by side */}
@@ -189,11 +203,12 @@ function barFill(pct: number) {
   return "bg-gray-700";
 }
 
-function StatCard({ title, pct, highlight = false }: { title: string; pct: number; highlight?: boolean }) {
+function StatCard({ title, pct, highlight = false, sub }: { title: string; pct: number; highlight?: boolean; sub?: string }) {
   return (
     <div className={`border rounded-lg p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
       <div className="text-sm text-gray-400 mb-1">{title}</div>
       <div className="text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
+      {sub && <div className="text-xs text-gray-500 mt-0.5">{sub}</div>}
       <div className="mt-3 h-2 rounded bg-gray-800 overflow-hidden">
         <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
       </div>
