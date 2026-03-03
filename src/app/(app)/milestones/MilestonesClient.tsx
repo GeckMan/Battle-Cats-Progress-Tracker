@@ -66,6 +66,44 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
     }
   }
 
+  async function bulkToggle(ids: string[], cleared: boolean) {
+    setError(null);
+    // Optimistic update
+    setData((m) => {
+      const next = new Map(m);
+      ids.forEach((id) => next.set(id, cleared));
+      return next;
+    });
+    setPending((s) => {
+      const next = new Set(s);
+      ids.forEach((id) => next.add(id));
+      return next;
+    });
+
+    try {
+      const res = await fetch("/api/milestones/bulk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ ids, cleared }),
+      });
+      if (!res.ok) throw new Error(await res.text());
+    } catch {
+      // Rollback
+      setData((m) => {
+        const prev = new Map(m);
+        ids.forEach((id) => prev.set(id, !cleared));
+        return prev;
+      });
+      setError("Failed to save - please try again.");
+    } finally {
+      setPending((s) => {
+        const next = new Set(s);
+        ids.forEach((id) => next.delete(id));
+        return next;
+      });
+    }
+  }
+
   return (
     <div className="space-y-8">
       <div className="flex items-center justify-between">
@@ -91,27 +129,51 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
       {error && (
         <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
           <span>{error}</span>
-          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">x</button>
+          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
         </div>
       )}
 
       {groups.map((g) => {
-        const groupCleared = g.rows.filter((r) => data.get(r.id)).length;
-        const groupTotal = g.rows.length;
+        const groupRows = g.rows;
+        const groupIds = groupRows.map((r) => r.id);
+        const groupCleared = groupRows.filter((r) => data.get(r.id)).length;
+        const groupTotal = groupRows.length;
         const groupPct = groupTotal ? Math.round((groupCleared / groupTotal) * 100) : 0;
+        const allCleared = groupCleared === groupTotal;
+        const anyPending = groupIds.some((id) => pending.has(id));
 
         return (
           <section key={g.category} className="space-y-2">
-            <div className="flex items-center justify-between border-b border-gray-800 pb-2">
+            <div className="flex items-center justify-between border-b border-gray-800 pb-2 gap-4">
               <h2 className="text-base font-semibold text-gray-100">{g.label}</h2>
-              <div className="text-sm text-gray-400">
-                {groupCleared}/{groupTotal}
-                <span className="ml-2 text-gray-600">({groupPct}%)</span>
+
+              <div className="flex items-center gap-2">
+                <span className="text-sm text-gray-400">
+                  {groupCleared}/{groupTotal}
+                  <span className="ml-1 text-gray-600">({groupPct}%)</span>
+                </span>
+
+                <button
+                  type="button"
+                  disabled={anyPending || allCleared}
+                  onClick={() => bulkToggle(groupIds, true)}
+                  className="text-xs px-2 py-1 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 disabled:opacity-40 transition-colors"
+                >
+                  Mark all ✓
+                </button>
+                <button
+                  type="button"
+                  disabled={anyPending || groupCleared === 0}
+                  onClick={() => bulkToggle(groupIds, false)}
+                  className="text-xs px-2 py-1 rounded border border-gray-700 bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200 disabled:opacity-40 transition-colors"
+                >
+                  Clear all
+                </button>
               </div>
             </div>
 
             <div className="space-y-1">
-              {g.rows.map((r) => {
+              {groupRows.map((r) => {
                 const isCleared = data.get(r.id) ?? false;
                 const isLoading = pending.has(r.id);
 
