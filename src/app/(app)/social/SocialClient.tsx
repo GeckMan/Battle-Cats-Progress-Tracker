@@ -3,12 +3,19 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-
 type UserLite = { id: string; username: string; displayName: string | null };
-
 type IncomingReq = { id: string; from: UserLite };
 type OutgoingReq = { id: string; to: UserLite };
 type FriendRow = { id: string; user: UserLite };
+
+function UserAvatar({ name }: { name: string }) {
+  const initials = name.slice(0, 2).toUpperCase();
+  return (
+    <div className="w-8 h-8 rounded-full bg-amber-950 border border-amber-800 flex items-center justify-center flex-shrink-0">
+      <span className="text-xs font-semibold text-amber-300">{initials}</span>
+    </div>
+  );
+}
 
 export default function SocialClient({ userId }: { userId: string }) {
   const [query, setQuery] = useState("");
@@ -28,9 +35,7 @@ export default function SocialClient({ userId }: { userId: string }) {
     setLoading(false);
   }
 
-  useEffect(() => {
-    refresh();
-  }, []);
+  useEffect(() => { refresh(); }, []);
 
   async function search() {
     const res = await fetch(`/api/social/search?q=${encodeURIComponent(query)}`);
@@ -59,19 +64,21 @@ export default function SocialClient({ userId }: { userId: string }) {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-4">
+
+      {/* Search */}
       <div className="border border-gray-700 rounded-lg p-4 bg-black space-y-3">
-        <div className="text-gray-100 font-semibold">Find users</div>
+        <div className="text-sm font-semibold text-gray-300">Find users</div>
         <div className="flex gap-2">
           <input
-            className="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100"
-            placeholder="Search by username"
+            className="flex-1 bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm placeholder-gray-600 focus:outline-none focus:border-amber-700 focus:ring-1 focus:ring-amber-800 transition-colors"
+            placeholder="Search by username…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={(e) => e.key === "Enter" && query.trim() && search()}
           />
           <button
-            className="px-3 py-2 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700 text-gray-100"
+            className="px-4 py-2 rounded border border-amber-800 bg-amber-950/30 text-amber-300 text-sm hover:bg-amber-950/60 disabled:opacity-40 transition-colors"
             onClick={search}
             disabled={!query.trim()}
           >
@@ -80,19 +87,23 @@ export default function SocialClient({ userId }: { userId: string }) {
         </div>
 
         {results.length > 0 && (
-          <div className="space-y-2">
+          <div className="border-t border-gray-800 pt-3 space-y-2">
             {results
               .filter((u) => u.id !== userId)
               .map((u) => (
-                <div key={u.id} className="flex items-center justify-between">
-                  <div className="text-gray-200">
-                    {u.displayName ?? u.username} <span className="text-gray-500">@{u.username}</span>
+                <div key={u.id} className="flex items-center justify-between gap-3">
+                  <div className="flex items-center gap-2.5">
+                    <UserAvatar name={u.displayName ?? u.username} />
+                    <div>
+                      <span className="text-sm text-gray-200">{u.displayName ?? u.username}</span>
+                      <span className="text-xs text-gray-500 ml-1.5">@{u.username}</span>
+                    </div>
                   </div>
                   <button
-                    className="text-sm px-2 py-1 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700"
+                    className="text-xs px-2.5 py-1 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors"
                     onClick={() => sendRequest(u.id)}
                   >
-                    Add
+                    + Add friend
                   </button>
                 </div>
               ))}
@@ -100,33 +111,46 @@ export default function SocialClient({ userId }: { userId: string }) {
         )}
       </div>
 
+      {/* Requests row */}
       <div className="grid gap-4 md:grid-cols-2">
+
+        {/* Incoming */}
         <div className="border border-gray-700 rounded-lg p-4 bg-black">
-          <div className="text-gray-100 font-semibold">Incoming requests</div>
-          <div className="mt-3 space-y-2">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-sm font-semibold text-gray-300">Incoming requests</span>
+            {!loading && incoming.length > 0 && (
+              <span className="text-xs bg-amber-500 text-black font-bold rounded-full px-1.5 py-0.5 leading-none">
+                {incoming.length}
+              </span>
+            )}
+          </div>
+          <div className="space-y-2">
             {loading ? (
-              <div className="text-sm text-gray-500">Loading…</div>
+              <div className="text-sm text-gray-600">Loading…</div>
             ) : incoming.length === 0 ? (
-              <div className="text-sm text-gray-500">None</div>
+              <div className="text-sm text-gray-600">No pending requests</div>
             ) : (
               incoming.map((r) => (
-                <div key={r.id} className="flex items-center justify-between">
-                  <div className="text-gray-200">
-                    {r.from.displayName ?? r.from.username}{" "}
-                    <span className="text-gray-500">@{r.from.username}</span>
+                <div key={r.id} className="flex items-center justify-between gap-3 py-1">
+                  <div className="flex items-center gap-2.5">
+                    <UserAvatar name={r.from.displayName ?? r.from.username} />
+                    <div>
+                      <span className="text-sm text-gray-200">{r.from.displayName ?? r.from.username}</span>
+                      <span className="text-xs text-gray-500 ml-1.5">@{r.from.username}</span>
+                    </div>
                   </div>
-                  <div className="flex gap-2">
+                  <div className="flex gap-1.5">
                     <button
-                      className="text-sm px-2 py-1 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700"
+                      className="text-xs px-2.5 py-1 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors"
                       onClick={() => respond(r.id, "accept")}
                     >
                       Accept
                     </button>
                     <button
-                      className="text-sm px-2 py-1 rounded border border-gray-700 bg-gray-900 hover:bg-gray-800"
+                      className="text-xs px-2.5 py-1 rounded border border-gray-700 bg-gray-900 text-gray-400 hover:bg-gray-800 transition-colors"
                       onClick={() => respond(r.id, "reject")}
                     >
-                      Reject
+                      Decline
                     </button>
                   </div>
                 </div>
@@ -135,21 +159,27 @@ export default function SocialClient({ userId }: { userId: string }) {
           </div>
         </div>
 
+        {/* Outgoing */}
         <div className="border border-gray-700 rounded-lg p-4 bg-black">
-          <div className="text-gray-100 font-semibold">Outgoing requests</div>
-          <div className="mt-3 space-y-2">
+          <div className="text-sm font-semibold text-gray-300 mb-3">Outgoing requests</div>
+          <div className="space-y-2">
             {loading ? (
-              <div className="text-sm text-gray-500">Loading…</div>
+              <div className="text-sm text-gray-600">Loading…</div>
             ) : outgoing.length === 0 ? (
-              <div className="text-sm text-gray-500">None</div>
+              <div className="text-sm text-gray-600">None sent</div>
             ) : (
               outgoing.map((r) => (
-                <div key={r.id} className="flex items-center justify-between">
-                  <div className="text-gray-200">
-                    {r.to.displayName ?? r.to.username}{" "}
-                    <span className="text-gray-500">@{r.to.username}</span>
+                <div key={r.id} className="flex items-center justify-between gap-3 py-1">
+                  <div className="flex items-center gap-2.5">
+                    <UserAvatar name={r.to.displayName ?? r.to.username} />
+                    <div>
+                      <span className="text-sm text-gray-200">{r.to.displayName ?? r.to.username}</span>
+                      <span className="text-xs text-gray-500 ml-1.5">@{r.to.username}</span>
+                    </div>
                   </div>
-                  <div className="text-xs text-gray-500">Pending</div>
+                  <span className="text-xs border border-amber-900 text-amber-600 rounded-full px-2 py-0.5">
+                    Pending
+                  </span>
                 </div>
               ))
             )}
@@ -157,37 +187,40 @@ export default function SocialClient({ userId }: { userId: string }) {
         </div>
       </div>
 
+      {/* Friends list */}
       <div className="border border-gray-700 rounded-lg p-4 bg-black">
-        <div className="text-gray-100 font-semibold">Friends</div>
-        <div className="mt-3 space-y-2">
+        <div className="flex items-center gap-2 mb-3">
+          <span className="text-sm font-semibold text-gray-300">Friends</span>
+          {!loading && friends.length > 0 && (
+            <span className="text-xs text-gray-500">{friends.length}</span>
+          )}
+        </div>
+        <div className="space-y-1">
           {loading ? (
-            <div className="text-sm text-gray-500">Loading…</div>
+            <div className="text-sm text-gray-600">Loading…</div>
           ) : friends.length === 0 ? (
-            <div className="text-sm text-gray-500">No friends yet</div>
+            <div className="text-sm text-gray-600">No friends yet — search for someone above</div>
           ) : (
             friends.map((f) => (
-  <div key={f.id} className="flex items-center justify-between">
-    <div className="flex items-center gap-3">
-      <Link
-        className="text-gray-200 hover:underline"
-        href={`/social/${encodeURIComponent(f.user.username)}`}
-      >
-        {f.user.displayName ?? f.user.username}{" "}
-        <span className="text-gray-500">@{f.user.username}</span>
-      </Link>
-
-      <Link
-        className="text-xs text-gray-300 underline hover:text-gray-100"
-        href={`/social/compare/${encodeURIComponent(f.user.username)}`}
-      >
-        Compare
-      </Link>
-    </div>
-
-    <div className="text-xs text-gray-500">Friend</div>
-  </div>
-))
-
+              <div key={f.id} className="flex items-center justify-between gap-3 px-2 py-2 rounded hover:bg-gray-900 transition-colors">
+                <div className="flex items-center gap-2.5">
+                  <UserAvatar name={f.user.displayName ?? f.user.username} />
+                  <Link
+                    href={`/social/${encodeURIComponent(f.user.username)}`}
+                    className="text-sm text-gray-200 hover:text-amber-300 transition-colors"
+                  >
+                    {f.user.displayName ?? f.user.username}
+                    <span className="text-gray-500 ml-1.5">@{f.user.username}</span>
+                  </Link>
+                </div>
+                <Link
+                  href={`/social/compare/${encodeURIComponent(f.user.username)}`}
+                  className="text-xs px-2.5 py-1 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors"
+                >
+                  Compare →
+                </Link>
+              </div>
+            ))
           )}
         </div>
       </div>

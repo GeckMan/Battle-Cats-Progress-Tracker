@@ -281,6 +281,40 @@ return (
 
 }
 
+/* ── Helpers ──────────────────────────────────────────────────────────────── */
+
+function pctColor(pct: number) {
+  if (pct >= 80) return "#fbbf24";
+  if (pct >= 40) return "#d97706";
+  if (pct > 0)   return "#92400e";
+  return "#4b5563";
+}
+
+function barFill(pct: number) {
+  if (pct >= 80) return "bg-amber-400";
+  if (pct >= 40) return "bg-amber-600";
+  if (pct > 0)   return "bg-amber-800";
+  return "bg-gray-700";
+}
+
+function MiniBar({ pct }: { pct: number }) {
+  return (
+    <div className="mt-1.5 h-1.5 rounded bg-gray-800 overflow-hidden">
+      <div className={`h-1.5 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+    </div>
+  );
+}
+
+function StatusBadge({ status }: { status: string }) {
+  if (status === "COMPLETED")
+    return <span className="text-xs rounded-full px-2 py-0.5 bg-amber-500/20 border border-amber-700 text-amber-300">Completed</span>;
+  if (status === "IN_PROGRESS")
+    return <span className="text-xs rounded-full px-2 py-0.5 bg-amber-950/50 border border-amber-900 text-amber-600">In progress</span>;
+  return <span className="text-xs rounded-full px-2 py-0.5 bg-gray-900 border border-gray-700 text-gray-500">Not started</span>;
+}
+
+/* ── UserProgressCard ─────────────────────────────────────────────────────── */
+
 function UserProgressCard({
   username,
   displayName,
@@ -295,86 +329,92 @@ function UserProgressCard({
   showSolDetail: boolean;
 }) {
   return (
-    <div className="border border-gray-700 rounded-lg p-4 bg-black space-y-3">
+    <div className="border border-gray-700 rounded-lg p-4 bg-black space-y-4">
+
+      {/* Header */}
       <div className="flex items-start justify-between gap-3">
         <div>
           <div className="text-gray-100 font-semibold">
-            {displayName ? `${displayName} (${username})` : username}
+            {displayName ?? username}
+            {displayName && <span className="text-gray-500 text-sm ml-2">@{username}</span>}
           </div>
-          <div className="text-sm text-gray-400 mt-1">
-            Medals: {summary.medalsEarned}/{summary.medalsTotal}
+          <div className="text-xs text-gray-500 mt-0.5">
+            {summary.medalsEarned}/{summary.medalsTotal} medals earned
           </div>
         </div>
-
-        {compareHref ? (
+        {compareHref && (
           <Link
             href={compareHref}
-            className="text-sm text-gray-200 border border-gray-700 rounded px-3 py-1 hover:bg-gray-900"
+            className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
           >
-            Compare
+            Compare →
           </Link>
-        ) : null}
+        )}
       </div>
 
-      <div className="grid gap-3 md:grid-cols-4">
-        <MiniStat title="Overall" value={`${summary.overall}%`} />
-        <MiniStat title="Story" value={`${summary.storyOverall}%`} />
-        <MiniStat title="Legend" value={`${summary.legendOverall}%`} />
-        <MiniStat title="Medals" value={`${summary.medalsOverall}%`} />
+      {/* Stat cards */}
+      <div className="grid grid-cols-4 gap-2">
+        {[
+          { title: "Overall", pct: summary.overall, highlight: true },
+          { title: "Story",   pct: summary.storyOverall },
+          { title: "Legend",  pct: summary.legendOverall },
+          { title: "Medals",  pct: summary.medalsOverall },
+        ].map(({ title, pct, highlight }) => (
+          <div key={title} className={`border rounded-md p-2.5 bg-black ${highlight ? "border-amber-800" : "border-gray-800"}`}>
+            <div className="text-xs text-gray-500">{title}</div>
+            <div className="text-xl font-semibold mt-0.5" style={{ color: pctColor(pct) }}>{pct}%</div>
+            <MiniBar pct={pct} />
+          </div>
+        ))}
       </div>
 
-      {/* Legend breakdown: sagas + (optional) SoL subchapters */}
-      <details className="border border-gray-800 rounded-md p-3">
-        <summary className="cursor-pointer text-sm text-gray-200 select-none">
-          Legend breakdown
+      {/* Legend breakdown */}
+      <details className="border border-gray-800 rounded-md overflow-hidden">
+        <summary className="cursor-pointer select-none px-3 py-2.5 text-sm text-gray-400 hover:text-gray-200 hover:bg-gray-900 transition-colors flex items-center justify-between">
+          <span>Legend breakdown</span>
+          <span className="text-gray-600 text-xs">▾</span>
         </summary>
 
-        <div className="mt-3 space-y-3">
+        <div className="px-3 pb-3 pt-2 space-y-4 bg-gray-950">
+          {/* Saga bars */}
           <div className="space-y-2">
             {summary.sagas.map((s) => (
-              <div key={s.sagaId} className="flex items-center justify-between text-sm">
-                <div className="text-gray-200">{s.sagaName}</div>
-                <div className="text-gray-400">
-                  {s.completed}/{s.total} • {s.pct}%
+              <div key={s.sagaId}>
+                <div className="flex items-center justify-between mb-1">
+                  <span className="text-xs text-gray-300">{s.sagaName}</span>
+                  <span className="text-xs" style={{ color: pctColor(s.pct) }}>{s.pct}%</span>
+                </div>
+                <div className="h-1.5 rounded bg-gray-800 overflow-hidden">
+                  <div className={`h-1.5 ${barFill(s.pct)}`} style={{ width: `${s.pct}%` }} />
                 </div>
               </div>
             ))}
           </div>
 
-          {showSolDetail && summary.solSubchapters.length > 0 ? (
+          {/* SoL subchapter detail */}
+          {showSolDetail && summary.solSubchapters.length > 0 && (
             <div className="border-t border-gray-800 pt-3">
-              <div className="text-sm text-gray-200 font-semibold">Stories of Legend</div>
-              <div className="mt-2 max-h-64 overflow-auto space-y-1">
+              <div className="text-xs font-semibold text-gray-400 mb-2">Stories of Legend — subchapters</div>
+              <div className="max-h-64 overflow-auto space-y-1.5 pr-1">
                 {summary.solSubchapters.map((sc) => (
-                  <div key={sc.subchapterId} className="flex items-center justify-between text-xs">
-                    <div className="text-gray-300 truncate pr-2">
-                      {sc.sortOrder}. {sc.subchapterName}
+                  <div key={sc.subchapterId} className="flex items-center justify-between gap-2">
+                    <div className="text-xs text-gray-400 truncate">
+                      <span className="text-gray-600 mr-1">{sc.sortOrder}.</span>
+                      {sc.subchapterName}
                     </div>
-                    <div className="text-gray-500 whitespace-nowrap">
-                      {formatStatus(sc.status)} • crown {sc.crownMax}
+                    <div className="flex items-center gap-2 flex-shrink-0">
+                      <StatusBadge status={sc.status} />
+                      {sc.crownMax > 0 && (
+                        <span className="text-xs text-amber-600">👑 {sc.crownMax}</span>
+                      )}
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-          ) : null}
+          )}
         </div>
       </details>
     </div>
   );
-}
-
-function MiniStat({ title, value }: { title: string; value: string }) {
-  return (
-    <div className="border border-gray-800 rounded-md p-3 bg-black">
-      <div className="text-xs text-gray-400">{title}</div>
-      <div className="text-lg font-semibold text-gray-100 mt-1">{value}</div>
-    </div>
-  );
-}
-
-function formatStatus(s: string) {
-  if (s === "COMPLETED") return "Completed";
-  if (s === "IN_PROGRESS") return "In Progress";
-  return "Not Started";
 }
