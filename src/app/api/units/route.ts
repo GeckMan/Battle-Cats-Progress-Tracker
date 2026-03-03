@@ -2,27 +2,9 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
-import { NORMAL_CATS } from "@/lib/unit-catalog";
 
-/** Ensure at least the seed Normal cats exist in the DB */
-async function ensureUnitCatalog() {
-  // @ts-ignore – Unit model added in new migration, types regenerated on Vercel
-  const count = await (prisma as any).unit.count();
-  if (count === 0) {
-    // @ts-ignore
-    await (prisma as any).unit.createMany({
-      data: NORMAL_CATS.map((u) => ({
-        id: `unit-${u.unitNumber}`,
-        unitNumber: u.unitNumber,
-        name: u.name,
-        category: u.category,
-        formCount: u.formCount,
-        sortOrder: u.sortOrder,
-      })),
-      skipDuplicates: true,
-    });
-  }
-}
+// Units are seeded via Prisma migration 20260303000001_seed_units.
+// No runtime seeding needed.
 
 export async function GET(req: Request) {
   const session = await getServerSession(authOptions);
@@ -33,8 +15,6 @@ export async function GET(req: Request) {
   const category = searchParams.get("category") ?? undefined; // NORMAL | SPECIAL | …
   const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10));
   const perPage = 60;
-
-  await ensureUnitCatalog();
 
   const where = category ? { category } : {};
 

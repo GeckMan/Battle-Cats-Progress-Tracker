@@ -1,38 +1,21 @@
 /**
- * Seed data for Battle Cats units.
- * Normal cats: units 0–9 (the base 10 normal cats).
- * More units can be imported via the CSV import script.
+ * Unit catalog metadata and display constants.
+ * The actual unit data (850 units) is seeded via the Prisma migration
+ * prisma/migrations/20260303000001_seed_units/migration.sql.
+ * The API route calls ensureUnitCatalog() which is now a no-op since
+ * units are always present after migration.
  */
 
 export type UnitSeed = {
   unitNumber: number;
   name: string;
   category: "NORMAL" | "SPECIAL" | "RARE" | "SUPER_RARE" | "UBER_RARE" | "LEGEND_RARE";
-  formCount: number; // usually 3 (F1/F2/TF), some have 4 (with Ultra Form)
+  formCount: number;
   sortOrder: number;
 };
 
-/** The original 10 Normal cats (unit numbers 0–9) */
-export const NORMAL_CATS: UnitSeed[] = [
-  { unitNumber: 0,  name: "Cat",         category: "NORMAL", formCount: 3, sortOrder: 0 },
-  { unitNumber: 1,  name: "Tank Cat",    category: "NORMAL", formCount: 3, sortOrder: 1 },
-  { unitNumber: 2,  name: "Axe Cat",     category: "NORMAL", formCount: 3, sortOrder: 2 },
-  { unitNumber: 3,  name: "Gross Cat",   category: "NORMAL", formCount: 3, sortOrder: 3 },
-  { unitNumber: 4,  name: "Cow Cat",     category: "NORMAL", formCount: 3, sortOrder: 4 },
-  { unitNumber: 5,  name: "Bird Cat",    category: "NORMAL", formCount: 3, sortOrder: 5 },
-  { unitNumber: 6,  name: "Fish Cat",    category: "NORMAL", formCount: 3, sortOrder: 6 },
-  { unitNumber: 7,  name: "Lizard Cat",  category: "NORMAL", formCount: 3, sortOrder: 7 },
-  { unitNumber: 8,  name: "Titan Cat",   category: "NORMAL", formCount: 3, sortOrder: 8 },
-  { unitNumber: 9,  name: "Crazed Cat",  category: "NORMAL", formCount: 3, sortOrder: 9 },
-  { unitNumber: 10, name: "Crazed Tank Cat",  category: "NORMAL", formCount: 3, sortOrder: 10 },
-  { unitNumber: 11, name: "Crazed Axe Cat",   category: "NORMAL", formCount: 3, sortOrder: 11 },
-  { unitNumber: 12, name: "Crazed Gross Cat",  category: "NORMAL", formCount: 3, sortOrder: 12 },
-  { unitNumber: 13, name: "Crazed Cow Cat",    category: "NORMAL", formCount: 3, sortOrder: 13 },
-  { unitNumber: 14, name: "Crazed Bird Cat",   category: "NORMAL", formCount: 3, sortOrder: 14 },
-  { unitNumber: 15, name: "Crazed Fish Cat",   category: "NORMAL", formCount: 3, sortOrder: 15 },
-  { unitNumber: 16, name: "Crazed Lizard Cat", category: "NORMAL", formCount: 3, sortOrder: 16 },
-  { unitNumber: 17, name: "Crazed Titan Cat",  category: "NORMAL", formCount: 3, sortOrder: 17 },
-];
+/** Empty — units come from the migration, not runtime seeding */
+export const NORMAL_CATS: UnitSeed[] = [];
 
 /** Category display labels */
 export const UNIT_CATEGORY_META: Record<string, { label: string; color: string }> = {
