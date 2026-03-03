@@ -31,6 +31,16 @@ export async function GET(req: NextRequest) {
   const hasMore = messages.length > limit;
   const items = hasMore ? messages.slice(0, limit) : messages;
 
+  // Check if the requesting user is currently muted
+  const viewerId = session.user.id as string;
+  // @ts-ignore – chatMutedUntil added in new migration
+  const viewer = await (prisma as any).user.findUnique({
+    where: { id: viewerId },
+    select: { chatMutedUntil: true },
+  });
+  const now = new Date();
+  const isMuted = viewer?.chatMutedUntil ? viewer.chatMutedUntil > now : false;
+
   return NextResponse.json({
     messages: items.map((m: any) => ({
       id: m.id,
@@ -42,6 +52,8 @@ export async function GET(req: NextRequest) {
       createdAt: m.createdAt,
     })),
     hasMore,
+    isMuted,
+    mutedUntil: isMuted ? viewer!.chatMutedUntil!.toISOString() : null,
   });
 }
 
@@ -50,6 +62,19 @@ export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const userId = session.user.id as string;
+
+  // Check if user is muted
+  // @ts-ignore – chatMutedUntil added in new migration
+  const sender = await (prisma as any).user.findUnique({
+    where: { id: userId },
+    select: { chatMutedUntil: true },
+  });
+  if (sender?.chatMutedUntil && sender.chatMutedUntil > new Date()) {
+    return NextResponse.json(
+      { error: "You are muted", mutedUntil: sender.chatMutedUntil.toISOString() },
+      { status: 403 }
+    );
+  }
 
   const body = await req.json();
   const content = typeof body.content === "string" ? body.content.trim() : "";

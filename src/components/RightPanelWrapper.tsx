@@ -15,9 +15,9 @@ function setLastSeen(key: string) {
   localStorage.setItem(key, new Date().toISOString());
 }
 
-export default function RightPanelWrapper({ currentUserId }: { currentUserId: string }) {
+export default function RightPanelWrapper({ currentUserId, currentUserRole }: { currentUserId: string; currentUserRole: string }) {
   const [open, setOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<"activity" | "chat">("activity");
+  const [activeTab, setActiveTab] = useState<"activity" | "chat" | "admin">("activity");
   const [unreadActivity, setUnreadActivity] = useState(0);
   const [unreadChat, setUnreadChat] = useState(0);
 
@@ -90,12 +90,12 @@ export default function RightPanelWrapper({ currentUserId }: { currentUserId: st
 
   // Mark tab as read when viewing it
   const handleTabChange = useCallback(
-    (tab: "activity" | "chat") => {
+    (tab: "activity" | "chat" | "admin") => {
       setActiveTab(tab);
       if (tab === "activity") {
         setLastSeen(LS_KEY_ACTIVITY);
         setUnreadActivity(0);
-      } else {
+      } else if (tab === "chat") {
         setLastSeen(LS_KEY_CHAT);
         setUnreadChat(0);
       }
@@ -131,6 +131,7 @@ export default function RightPanelWrapper({ currentUserId }: { currentUserId: st
         unreadActivity={unreadActivity}
         unreadChat={unreadChat}
         currentUserId={currentUserId}
+        currentUserRole={currentUserRole}
       />
     </>
   );

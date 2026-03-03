@@ -6,7 +6,7 @@ import { useEffect, useState, useCallback, useRef } from "react";
    RightPanel — sliding drawer on the right edge with Activity + Chat tabs
    ═══════════════════════════════════════════════════════════════════════════ */
 
-type Tab = "activity" | "chat";
+type Tab = "activity" | "chat" | "admin";
 
 export default function RightPanel({
   open,
@@ -16,6 +16,7 @@ export default function RightPanel({
   unreadActivity,
   unreadChat,
   currentUserId,
+  currentUserRole,
 }: {
   open: boolean;
   onClose: () => void;
@@ -24,7 +25,10 @@ export default function RightPanel({
   unreadActivity: number;
   unreadChat: number;
   currentUserId: string;
+  currentUserRole: string;
 }) {
+  const isAdmin = currentUserRole === "ADMIN";
+
   return (
     <>
       {/* Backdrop */}
@@ -58,6 +62,14 @@ export default function RightPanel({
             >
               Chat
             </TabButton>
+            {isAdmin && (
+              <TabButton
+                active={activeTab === "admin"}
+                onClick={() => onTabChange("admin")}
+              >
+                Admin
+              </TabButton>
+            )}
           </div>
           <button
             onClick={onClose}
@@ -73,7 +85,9 @@ export default function RightPanel({
 
         {/* Content */}
         <div className="flex-1 overflow-hidden">
-          {activeTab === "activity" ? <ActivityTab /> : <ChatTab currentUserId={currentUserId} />}
+          {activeTab === "activity" && <ActivityTab />}
+          {activeTab === "chat" && <ChatTab currentUserId={currentUserId} />}
+          {activeTab === "admin" && isAdmin && <AdminTab />}
         </div>
       </aside>
     </>
@@ -366,6 +380,8 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
   const [loadingMore, setLoadingMore] = useState(false);
   const [draft, setDraft] = useState("");
   const [sending, setSending] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
+  const [mutedUntil, setMutedUntil] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -383,6 +399,10 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
         setMessages(data.messages);
       }
       setHasMore(data.hasMore);
+      if (data.isMuted !== undefined) {
+        setIsMuted(data.isMuted);
+        setMutedUntil(data.mutedUntil);
+      }
     } finally {
       setLoading(false);
       setLoadingMore(false);
@@ -416,7 +436,7 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
 
   const sendMessage = async () => {
     const text = draft.trim();
-    if (!text || sending) return;
+    if (!text || sending || isMuted) return;
     setSending(true);
     try {
       const res = await fetch("/api/chat", {
@@ -424,6 +444,12 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ content: text }),
       });
+      if (res.status === 403) {
+        const err = await res.json();
+        setIsMuted(true);
+        setMutedUntil(err.mutedUntil ?? null);
+        return;
+      }
       if (!res.ok) return;
       const msg = await res.json();
       setMessages((prev) => [msg, ...prev]);
@@ -484,27 +510,35 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
 
       {/* Input */}
       <div className="border-t border-gray-800 px-3 py-3">
+        {isMuted && (
+          <div className="mb-2 px-3 py-2 rounded-md bg-red-950/30 border border-red-800/50 text-xs text-red-300">
+            You are muted{mutedUntil ? ` until ${new Date(mutedUntil).toLocaleString()}` : ""}.
+          </div>
+        )}
         <div className="flex gap-2">
           <input
             type="text"
             value={draft}
             onChange={(e) => setDraft(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Type a message..."
+            placeholder={isMuted ? "You are muted..." : "Type a message..."}
             maxLength={500}
-            className="flex-1 bg-gray-900 border border-gray-700 rounded-md px-3 py-2 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-800 transition-colors"
+            disabled={isMuted}
+            className="flex-1 bg-gray-900 border border-gray-700 rounded-md px-3 py-2 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-800 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           />
           <button
             onClick={sendMessage}
-            disabled={!draft.trim() || sending}
+            disabled={!draft.trim() || sending || isMuted}
             className="px-3 py-2 rounded-md bg-amber-900/50 border border-amber-800 text-amber-300 text-sm hover:bg-amber-900 transition-colors disabled:opacity-40 disabled:cursor-not-allowed"
           >
             {sending ? "..." : "Send"}
           </button>
         </div>
-        <div className="text-[10px] text-gray-600 mt-1 px-1">
-          {draft.length}/500 — Enter to send
-        </div>
+        {!isMuted && (
+          <div className="text-[10px] text-gray-600 mt-1 px-1">
+            {draft.length}/500 — Enter to send
+          </div>
+        )}
       </div>
     </div>
   );
@@ -542,6 +576,253 @@ function ChatBubble({ msg, isMe }: { msg: ChatMsg; isMe: boolean }) {
         </span>
       </div>
       <div className="text-sm text-gray-300 break-words">{msg.content}</div>
+    </div>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Admin Tab — user management for admins (mute, delete)
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+type AdminUser = {
+  id: string;
+  username: string;
+  displayName: string | null;
+  role: string;
+  chatMutedUntil: string | null;
+  isMuted: boolean;
+  createdAt: string;
+};
+
+function AdminTab() {
+  const [users, setUsers] = useState<AdminUser[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [actionLoading, setActionLoading] = useState<string | null>(null);
+  const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
+  const [deleteInput, setDeleteInput] = useState("");
+  const [muteMenu, setMuteMenu] = useState<string | null>(null);
+  const [feedback, setFeedback] = useState<{ msg: string; type: "ok" | "err" } | null>(null);
+
+  const fetchUsers = useCallback(async () => {
+    try {
+      const res = await fetch("/api/admin/users");
+      if (!res.ok) return;
+      const data = await res.json();
+      setUsers(data.users);
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
+  useEffect(() => { fetchUsers(); }, [fetchUsers]);
+
+  // Auto-clear feedback
+  useEffect(() => {
+    if (!feedback) return;
+    const t = setTimeout(() => setFeedback(null), 4000);
+    return () => clearTimeout(t);
+  }, [feedback]);
+
+  const handleMute = async (userId: string, minutes: number | null) => {
+    setActionLoading(userId);
+    setMuteMenu(null);
+    try {
+      const body = minutes === null
+        ? { userId, unmute: true }
+        : { userId, minutes };
+      const res = await fetch("/api/admin/mute", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(body),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        setFeedback({ msg: err.error ?? "Failed to mute user", type: "err" });
+        return;
+      }
+      const data = await res.json();
+      setFeedback({ msg: data.message ?? "Done", type: "ok" });
+      fetchUsers();
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  const handleDelete = async (userId: string) => {
+    const user = users.find((u) => u.id === userId);
+    if (!user || deleteInput !== user.username) return;
+    setActionLoading(userId);
+    try {
+      const res = await fetch("/api/admin/delete-user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId }),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        setFeedback({ msg: err.error ?? "Failed to delete user", type: "err" });
+        return;
+      }
+      setFeedback({ msg: `Deleted @${user.username}`, type: "ok" });
+      setConfirmDelete(null);
+      setDeleteInput("");
+      fetchUsers();
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
+  if (loading) {
+    return <div className="text-gray-500 text-sm py-12 text-center">Loading users...</div>;
+  }
+
+  return (
+    <div className="overflow-y-auto h-full px-3 py-3 space-y-2">
+      <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-1">
+        User Management ({users.length})
+      </div>
+
+      {feedback && (
+        <div className={`px-3 py-2 rounded-md text-xs border ${
+          feedback.type === "ok"
+            ? "bg-green-950/30 border-green-800/50 text-green-300"
+            : "bg-red-950/30 border-red-800/50 text-red-300"
+        }`}>
+          {feedback.msg}
+        </div>
+      )}
+
+      {users.map((user) => {
+        const isBeingActioned = actionLoading === user.id;
+        const isDeleting = confirmDelete === user.id;
+        const isMuting = muteMenu === user.id;
+
+        return (
+          <div
+            key={user.id}
+            className="rounded-md border border-gray-800 bg-gray-900/50 px-3 py-2.5"
+          >
+            {/* User info row */}
+            <div className="flex items-center gap-2">
+              <div className="flex-1 min-w-0">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-sm font-medium text-gray-200 truncate">
+                    {user.displayName ?? user.username}
+                  </span>
+                  <span className="text-[10px] text-gray-500">@{user.username}</span>
+                  {user.role === "ADMIN" && (
+                    <span className="text-[9px] font-bold bg-red-500/20 border border-red-700/50 text-red-300 rounded px-1 py-px leading-none">
+                      Admin
+                    </span>
+                  )}
+                </div>
+                <div className="text-[10px] text-gray-600 mt-0.5">
+                  Joined {new Date(user.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
+                  {user.isMuted && (
+                    <span className="ml-2 text-red-400">
+                      Muted until {new Date(user.chatMutedUntil!).toLocaleString()}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
+
+            {/* Actions row */}
+            {user.role !== "ADMIN" && (
+              <div className="flex items-center gap-1.5 mt-2">
+                {user.isMuted ? (
+                  <button
+                    onClick={() => handleMute(user.id, null)}
+                    disabled={isBeingActioned}
+                    className="text-[11px] px-2 py-1 rounded border border-green-800/50 text-green-400 hover:bg-green-950/30 transition-colors disabled:opacity-40"
+                  >
+                    {isBeingActioned ? "..." : "Unmute"}
+                  </button>
+                ) : (
+                  <>
+                    <button
+                      onClick={() => setMuteMenu(isMuting ? null : user.id)}
+                      disabled={isBeingActioned}
+                      className="text-[11px] px-2 py-1 rounded border border-amber-800/50 text-amber-400 hover:bg-amber-950/30 transition-colors disabled:opacity-40"
+                    >
+                      {isBeingActioned ? "..." : "Mute"}
+                    </button>
+                  </>
+                )}
+                <button
+                  onClick={() => {
+                    setConfirmDelete(isDeleting ? null : user.id);
+                    setDeleteInput("");
+                    setMuteMenu(null);
+                  }}
+                  disabled={isBeingActioned}
+                  className="text-[11px] px-2 py-1 rounded border border-red-800/50 text-red-400 hover:bg-red-950/30 transition-colors disabled:opacity-40"
+                >
+                  Delete
+                </button>
+              </div>
+            )}
+
+            {/* Mute duration picker */}
+            {isMuting && (
+              <div className="mt-2 flex flex-wrap gap-1">
+                <span className="text-[10px] text-gray-500 w-full mb-0.5">Mute duration:</span>
+                {[
+                  { label: "1 hour", minutes: 60 },
+                  { label: "24 hours", minutes: 1440 },
+                  { label: "7 days", minutes: 10080 },
+                  { label: "Permanent", minutes: 525600 },
+                ].map((opt) => (
+                  <button
+                    key={opt.minutes}
+                    onClick={() => handleMute(user.id, opt.minutes)}
+                    className="text-[10px] px-2 py-1 rounded bg-amber-950/30 border border-amber-800/40 text-amber-300 hover:bg-amber-900/40 transition-colors"
+                  >
+                    {opt.label}
+                  </button>
+                ))}
+                <button
+                  onClick={() => setMuteMenu(null)}
+                  className="text-[10px] px-2 py-1 rounded text-gray-500 hover:text-gray-300 transition-colors"
+                >
+                  Cancel
+                </button>
+              </div>
+            )}
+
+            {/* Delete confirmation */}
+            {isDeleting && (
+              <div className="mt-2 p-2 rounded border border-red-800/40 bg-red-950/20">
+                <div className="text-[10px] text-red-300 mb-1.5">
+                  Type <span className="font-mono font-bold">{user.username}</span> to confirm deletion. This cannot be undone.
+                </div>
+                <div className="flex gap-1.5">
+                  <input
+                    type="text"
+                    value={deleteInput}
+                    onChange={(e) => setDeleteInput(e.target.value)}
+                    placeholder={user.username}
+                    className="flex-1 bg-gray-900 border border-red-800/50 rounded px-2 py-1 text-xs text-gray-200 placeholder-gray-600 focus:outline-none focus:border-red-700"
+                  />
+                  <button
+                    onClick={() => handleDelete(user.id)}
+                    disabled={deleteInput !== user.username || isBeingActioned}
+                    className="text-[11px] px-2.5 py-1 rounded bg-red-900/50 border border-red-700 text-red-200 hover:bg-red-800/50 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                  >
+                    {isBeingActioned ? "..." : "Confirm"}
+                  </button>
+                  <button
+                    onClick={() => { setConfirmDelete(null); setDeleteInput(""); }}
+                    className="text-[11px] px-2 py-1 rounded text-gray-500 hover:text-gray-300 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
+        );
+      })}
     </div>
   );
 }
