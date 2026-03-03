@@ -13,6 +13,8 @@ type UnitRow = {
   formCount: number;
   sortOrder: number;
   isCollab: boolean;
+  source: string | null;
+  setName: string | null;
   formLevel: number; // 0–4
 };
 
@@ -36,6 +38,24 @@ const RARITY_ACCENT: Record<string, string> = {
   SUPER_RARE:  "border-amber-700 text-amber-300 bg-amber-950/30",
   UBER_RARE:   "border-orange-700 text-orange-300 bg-orange-950/30",
   LEGEND_RARE: "border-red-700 text-red-300 bg-red-950/30",
+};
+
+// Human-readable source labels
+const SOURCE_LABELS: Record<string, string> = {
+  RARE_CAPSULE:      "Rare Cat Capsule",
+  EVENT_CAPSULE:     "Event Capsule",
+  STAGE_DROP:        "Stage Drop",
+  EMPIRE_OF_CATS:    "Empire of Cats",
+  DAILY_LOGIN:       "Daily Login",
+  SERIAL_CODE:       "Serial Code",
+  CATNIP_CHALLENGES: "Catnip Challenges",
+  CAMPAIGN:          "Campaign",
+  SPECIAL_SALE:      "Special Sale",
+  EXTERNAL_APP:      "External App",
+  STAMP_REWARD:      "Stamp Reward",
+  OTOTO_CORPS:       "Ototo Corps",
+  EASTER_EGG:        "Easter Egg",
+  UNOBTAINABLE:      "Unobtainable",
 };
 
 // Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)
@@ -182,12 +202,15 @@ function RaritySection({
   units,
   onUpdate,
   pendingIds,
+  defaultOpen = true,
 }: {
   rarity: string;
   units: UnitRow[];
   onUpdate: (id: string, level: number) => void;
   pendingIds: Set<string>;
+  defaultOpen?: boolean;
 }) {
+  const [open, setOpen] = useState(defaultOpen);
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
   const accent = RARITY_ACCENT[rarity] ?? "border-gray-600 text-gray-300 bg-gray-900/60";
   const obtained = units.filter((u) => u.formLevel > 0).length;
@@ -195,9 +218,14 @@ function RaritySection({
 
   return (
     <div className="space-y-2">
-      {/* Section header */}
-      <div className={`flex items-center justify-between rounded-md border px-3 py-2 ${accent}`}>
+      {/* Section header — clickable to collapse */}
+      <button
+        type="button"
+        onClick={() => setOpen((v) => !v)}
+        className={`w-full flex items-center justify-between rounded-md border px-3 py-2 cursor-pointer transition-colors hover:brightness-110 ${accent}`}
+      >
         <div className="flex items-center gap-3">
+          <span className={`text-xs transition-transform ${open ? "rotate-90" : ""}`}>&#9654;</span>
           <span className="text-sm font-semibold">{label}</span>
           <span className="text-xs opacity-60">{units.length} units</span>
         </div>
@@ -205,20 +233,54 @@ function RaritySection({
           <span>{obtained} obtained</span>
           <span>{trueForm} TF</span>
         </div>
-      </div>
+      </button>
 
-      {/* Unit grid */}
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
-        {units.map((unit) => (
-          <UnitCard
-            key={unit.id}
-            unit={unit}
-            onUpdate={onUpdate}
-            pending={pendingIds.has(unit.id)}
-          />
-        ))}
-      </div>
+      {/* Unit grid — collapsible */}
+      {open && (
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
+          {units.map((unit) => (
+            <UnitCard
+              key={unit.id}
+              unit={unit}
+              onUpdate={onUpdate}
+              pending={pendingIds.has(unit.id)}
+            />
+          ))}
+        </div>
+      )}
     </div>
+  );
+}
+
+/* ── Filter Select ──────────────────────────────────────────────────────── */
+
+function FilterSelect({
+  label,
+  value,
+  options,
+  onChange,
+  labelMap,
+}: {
+  label: string;
+  value: string;
+  options: string[];
+  onChange: (v: string) => void;
+  labelMap?: Record<string, string>;
+}) {
+  return (
+    <select
+      value={value}
+      onChange={(e) => onChange(e.target.value)}
+      className="px-2 py-1.5 rounded border border-gray-700 bg-gray-900 text-xs text-gray-200 focus:outline-none focus:border-amber-700 max-w-[200px] truncate"
+      title={label}
+    >
+      <option value="">{label}</option>
+      {options.map((opt) => (
+        <option key={opt} value={opt}>
+          {labelMap?.[opt] ?? opt}
+        </option>
+      ))}
+    </select>
   );
 }
 
@@ -231,7 +293,11 @@ type CategoryMeta = { key: string; label: string };
 export default function UnitsClient({ categories }: { categories: CategoryMeta[] }) {
   const [activeCategory, setActiveCategory] = useState<string>(ALL_KEY);
   const [hideCollab, setHideCollab] = useState(false);
+  const [sourceFilter, setSourceFilter] = useState("");
+  const [setFilter, setSetFilter] = useState("");
   const [units, setUnits] = useState<UnitRow[]>([]);
+  const [availableSources, setAvailableSources] = useState<string[]>([]);
+  const [availableSets, setAvailableSets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pendingIds, setPendingIds] = useState<Set<string>>(new Set());
@@ -240,17 +306,21 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
   /* Fetch all units for current filters */
-  const fetchUnits = useCallback(async (cat: string, collab: boolean) => {
+  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string) => {
     setLoading(true);
     setError(null);
     try {
       const params = new URLSearchParams();
       if (cat !== ALL_KEY) params.set("category", cat);
       if (collab) params.set("hideCollab", "true");
+      if (src) params.set("source", src);
+      if (sn) params.set("setName", sn);
       const res = await fetch(`/api/units?${params}`);
       if (!res.ok) throw new Error("Failed to load units");
       const data = await res.json();
       setUnits(data.units);
+      if (data.sources) setAvailableSources(data.sources);
+      if (data.sets) setAvailableSets(data.sets);
     } catch {
       setError("Failed to load units. Please refresh.");
     } finally {
@@ -259,11 +329,18 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   }, []);
 
   useEffect(() => {
-    fetchUnits(activeCategory, hideCollab);
-  }, [activeCategory, hideCollab, fetchUnits]);
+    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, fetchUnits]);
 
   function handleTabChange(key: string) {
     setActiveCategory(key);
+    setSearchQuery("");
+  }
+
+  function clearFilters() {
+    setSourceFilter("");
+    setSetFilter("");
+    setHideCollab(false);
     setSearchQuery("");
   }
 
@@ -278,7 +355,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       });
       if (!res.ok) throw new Error("save failed");
     } catch {
-      await fetchUnits(activeCategory, hideCollab);
+      await fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter);
       setError("Failed to save. Please try again.");
     } finally {
       setPendingIds((s) => {
@@ -310,6 +387,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
+  const hasActiveFilters = sourceFilter || setFilter || hideCollab;
 
   return (
     <div className="p-6 space-y-5 w-full">
@@ -356,8 +434,8 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         </div>
       </div>
 
-      {/* Search + Collab toggle row */}
-      <div className="flex items-center gap-3 flex-wrap">
+      {/* Search + filters row */}
+      <div className="flex items-center gap-2 flex-wrap">
         <input
           type="text"
           placeholder="Search by name or #…"
@@ -375,11 +453,30 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
           </button>
         )}
 
+        {/* Source filter dropdown */}
+        <FilterSelect
+          label="All Sources"
+          value={sourceFilter}
+          options={availableSources}
+          onChange={(v) => { setSourceFilter(v); setSetFilter(""); }}
+          labelMap={SOURCE_LABELS}
+        />
+
+        {/* Set/collection filter dropdown — shown when source is Rare Cat Capsule or no source selected */}
+        {(!sourceFilter || sourceFilter === "RARE_CAPSULE") && availableSets.length > 0 && (
+          <FilterSelect
+            label="All Sets"
+            value={setFilter}
+            options={availableSets}
+            onChange={setSetFilter}
+          />
+        )}
+
         {/* Collab toggle */}
         <button
           type="button"
           onClick={() => setHideCollab((v) => !v)}
-          className={`flex items-center gap-2 px-3 py-1.5 rounded border text-xs transition-colors ${
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
             hideCollab
               ? "bg-amber-950/50 border-amber-700 text-amber-300"
               : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
@@ -388,6 +485,17 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         >
           <span>{hideCollab ? "✓" : ""} Hide Collab</span>
         </button>
+
+        {/* Clear all filters */}
+        {hasActiveFilters && (
+          <button
+            type="button"
+            onClick={clearFilters}
+            className="text-xs text-amber-600 hover:text-amber-400"
+          >
+            Clear filters
+          </button>
+        )}
 
         <span className="text-xs text-gray-600 ml-auto">
           {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
