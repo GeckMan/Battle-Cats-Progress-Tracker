@@ -19,11 +19,15 @@ type CategoryMeta = { key: string; label: string };
 
 /* ── Sprite URL helper ──────────────────────────────────────────────────── */
 
-function spriteUrl(unitNumber: number, form: number) {
-  // Miraheze wiki Special:FilePath — e.g. Uni000_f00.png
+// Form index → letter used in miraheze filenames
+// F1=f, F2=c, TF=s, UF=u
+const FORM_LETTER = ["f", "c", "s", "u"] as const;
+
+function spriteUrl(unitNumber: number, formIndex: number) {
+  // formIndex: 0=F1, 1=F2, 2=TF, 3=UF
   const num = String(unitNumber).padStart(3, "0");
-  const f = String(form).padStart(2, "0");
-  return `https://battlecats.miraheze.org/wiki/Special:FilePath/Uni${num}_f${f}.png`;
+  const letter = FORM_LETTER[formIndex] ?? "f";
+  return `https://battlecats.miraheze.org/wiki/Special:FilePath/Uni${num}_${letter}00.png`;
 }
 
 /* ── Form badge colors ─────────────────────────────────────────────────── */
