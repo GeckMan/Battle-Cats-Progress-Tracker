@@ -11,12 +11,18 @@ type Tab = "activity" | "chat";
 export default function RightPanel({
   open,
   onClose,
+  activeTab,
+  onTabChange,
+  unreadActivity,
+  unreadChat,
 }: {
   open: boolean;
   onClose: () => void;
+  activeTab: Tab;
+  onTabChange: (tab: Tab) => void;
+  unreadActivity: number;
+  unreadChat: number;
 }) {
-  const [tab, setTab] = useState<Tab>("activity");
-
   return (
     <>
       {/* Backdrop */}
@@ -36,10 +42,18 @@ export default function RightPanel({
         {/* Header */}
         <div className="flex items-center justify-between px-4 pt-4 pb-2 border-b border-gray-800">
           <div className="flex gap-1">
-            <TabButton active={tab === "activity"} onClick={() => setTab("activity")}>
+            <TabButton
+              active={activeTab === "activity"}
+              onClick={() => onTabChange("activity")}
+              badge={activeTab !== "activity" ? unreadActivity : 0}
+            >
               Activity
             </TabButton>
-            <TabButton active={tab === "chat"} onClick={() => setTab("chat")}>
+            <TabButton
+              active={activeTab === "chat"}
+              onClick={() => onTabChange("chat")}
+              badge={activeTab !== "chat" ? unreadChat : 0}
+            >
               Chat
             </TabButton>
           </div>
@@ -57,7 +71,7 @@ export default function RightPanel({
 
         {/* Content */}
         <div className="flex-1 overflow-hidden">
-          {tab === "activity" ? <ActivityTab /> : <ChatTab />}
+          {activeTab === "activity" ? <ActivityTab /> : <ChatTab />}
         </div>
       </aside>
     </>
@@ -67,22 +81,29 @@ export default function RightPanel({
 function TabButton({
   active,
   onClick,
+  badge,
   children,
 }: {
   active: boolean;
   onClick: () => void;
+  badge?: number;
   children: React.ReactNode;
 }) {
   return (
     <button
       onClick={onClick}
-      className={`px-3 py-1.5 text-sm rounded transition-colors ${
+      className={`relative px-3 py-1.5 text-sm rounded transition-colors ${
         active
           ? "bg-amber-950 text-amber-200 border border-amber-800"
           : "text-gray-400 border border-transparent hover:bg-gray-900 hover:text-gray-200"
       }`}
     >
       {children}
+      {(badge ?? 0) > 0 && (
+        <span className="absolute -top-1 -right-1 min-w-[18px] h-[18px] flex items-center justify-center rounded-full bg-red-500 text-white text-[10px] font-bold px-1 leading-none">
+          {badge! > 99 ? "99+" : badge}
+        </span>
+      )}
     </button>
   );
 }
@@ -375,7 +396,6 @@ function ChatTab() {
         if (!res.ok) return;
         const data = await res.json();
         setMessages((prev) => {
-          // Merge: keep new messages, preserve older ones that might not be in latest fetch
           const existingIds = new Set(prev.map((m) => m.id));
           const newMsgs = data.messages.filter((m: ChatMsg) => !existingIds.has(m.id));
           if (newMsgs.length === 0) return prev;
@@ -514,19 +534,51 @@ function ChatBubble({ msg }: { msg: ChatMsg }) {
 
 /* ═══════════════════════════════════════════════════════════════════════════
    Toggle Button — shown in the layout, top-right corner
+   More prominent styling with amber accent + notification badges
    ═══════════════════════════════════════════════════════════════════════════ */
 
-export function PanelToggleButton({ onClick }: { onClick: () => void }) {
+export function PanelToggleButton({
+  onClick,
+  unreadActivity,
+  unreadChat,
+}: {
+  onClick: () => void;
+  unreadActivity: number;
+  unreadChat: number;
+}) {
+  const totalUnread = unreadActivity + unreadChat;
+
   return (
     <button
       onClick={onClick}
-      className="fixed top-4 right-4 z-20 flex items-center gap-2 px-3 py-2 rounded-lg border border-gray-700 bg-black/80 backdrop-blur text-gray-400 hover:text-gray-200 hover:border-gray-600 transition-colors shadow-lg"
+      className="fixed top-4 right-4 z-20 flex items-center gap-2.5 pl-3 pr-3.5 py-2.5 rounded-xl border border-amber-800/60 bg-gray-950/95 backdrop-blur-sm text-amber-300 hover:text-amber-200 hover:border-amber-700 hover:bg-gray-900/95 transition-all shadow-lg shadow-black/40 group"
       aria-label="Open panel"
     >
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-        <polyline points="1,8 4,8 6,3 8,13 10,6 12,8 15,8" />
-      </svg>
-      <span className="text-xs">Activity & Chat</span>
+      {/* Icon */}
+      <div className="relative">
+        <svg
+          width="18"
+          height="18"
+          viewBox="0 0 16 16"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          className="group-hover:scale-110 transition-transform"
+        >
+          <polyline points="1,8 4,8 6,3 8,13 10,6 12,8 15,8" />
+        </svg>
+        {/* Combined red badge on the icon */}
+        {totalUnread > 0 && (
+          <span className="absolute -top-2 -right-2.5 min-w-[16px] h-[16px] flex items-center justify-center rounded-full bg-red-500 text-white text-[9px] font-bold px-0.5 leading-none animate-pulse">
+            {totalUnread > 99 ? "99+" : totalUnread}
+          </span>
+        )}
+      </div>
+
+      {/* Label */}
+      <span className="text-xs font-medium tracking-wide">Activity & Chat</span>
     </button>
   );
 }
