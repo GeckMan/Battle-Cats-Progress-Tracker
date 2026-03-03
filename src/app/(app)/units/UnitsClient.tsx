@@ -47,7 +47,7 @@ const SOURCE_LABELS: Record<string, string> = {
   STAGE_DROP:        "Stage Drop",
   EMPIRE_OF_CATS:    "Empire of Cats",
   DAILY_LOGIN:       "Daily Login",
-  SERIAL_CODE:       "Serial Code",
+
   CATNIP_CHALLENGES: "Catnip Challenges",
   CAMPAIGN:          "Campaign",
   SPECIAL_SALE:      "Special Sale",
