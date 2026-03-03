@@ -1,1085 +1,1158 @@
 -- Add evolved, true form, and ultra form name columns to Unit table
 -- Then populate from BCU game data (en-UnitName.txt)
 -- Also fix formCount for units that don't have 3 forms
+-- Optimized: uses CASE statements instead of individual UPDATEs
 
 -- Add new columns
 ALTER TABLE "Unit" ADD COLUMN "evolvedName" TEXT;
 ALTER TABLE "Unit" ADD COLUMN "trueName" TEXT;
 ALTER TABLE "Unit" ADD COLUMN "ultraName" TEXT;
 
--- Populate form names from BCU data
-UPDATE "Unit" SET "evolvedName" = 'Macho Cat', "trueName" = 'Mohawk Cat' WHERE "unitNumber" = 0;
-UPDATE "Unit" SET "evolvedName" = 'Wall Cat', "trueName" = 'Eraser Cat' WHERE "unitNumber" = 1;
-UPDATE "Unit" SET "evolvedName" = 'Brave Cat', "trueName" = 'Dark Cat' WHERE "unitNumber" = 2;
-UPDATE "Unit" SET "evolvedName" = 'Sexy Legs Cat', "trueName" = 'Macho Leg Cat' WHERE "unitNumber" = 3;
-UPDATE "Unit" SET "evolvedName" = 'Giraffe Cat', "trueName" = 'Lion Cat' WHERE "unitNumber" = 4;
-UPDATE "Unit" SET "evolvedName" = 'UFO Cat', "trueName" = 'The Flying Cat' WHERE "unitNumber" = 5;
-UPDATE "Unit" SET "evolvedName" = 'Whale Cat', "trueName" = 'Island Cat' WHERE "unitNumber" = 6;
-UPDATE "Unit" SET "evolvedName" = 'Dragon Cat', "trueName" = 'King Dragon Cat' WHERE "unitNumber" = 7;
-UPDATE "Unit" SET "evolvedName" = 'Mythical Titan Cat', "trueName" = 'Jamiera Cat' WHERE "unitNumber" = 8;
-UPDATE "Unit" SET "evolvedName" = 'Mother Cat', "trueName" = 'Beefcake Cat' WHERE "unitNumber" = 9;
-UPDATE "Unit" SET "evolvedName" = 'Drunken Master Cat', "trueName" = 'Dancer Cat' WHERE "unitNumber" = 10;
-UPDATE "Unit" SET "evolvedName" = 'Super Mr.', "trueName" = 'Hyper Mr.' WHERE "unitNumber" = 11;
-UPDATE "Unit" SET "evolvedName" = 'Bondage CatNEO', "trueName" = 'Ultimate Bondage Cat' WHERE "unitNumber" = 12;
-UPDATE "Unit" SET "evolvedName" = 'Executioner', "trueName" = 'Dark Lazer' WHERE "unitNumber" = 13;
-UPDATE "Unit" SET "evolvedName" = 'Cat Gang', "trueName" = 'Heavy Assault C.A.T.' WHERE "unitNumber" = 14;
-UPDATE "Unit" SET "evolvedName" = 'Leaf Cat', "trueName" = 'Lollycat' WHERE "unitNumber" = 15;
-UPDATE "Unit" SET "evolvedName" = 'Miss MONEKO', "trueName" = 'Superstar MONEKO' WHERE "unitNumber" = 16;
-UPDATE "Unit" SET "evolvedName" = 'Biker Cat', "trueName" = 'Unicycle Cat' WHERE "unitNumber" = 17;
-UPDATE "Unit" SET "evolvedName" = 'Ninja Frog Cat', "trueName" = 'Flying Ninja Cat' WHERE "unitNumber" = 18;
-UPDATE "Unit" SET "evolvedName" = 'Devil Cat', "trueName" = 'Skelecat' WHERE "unitNumber" = 19;
-UPDATE "Unit" SET "evolvedName" = 'Knight Cat', "trueName" = 'Pastry Cat' WHERE "unitNumber" = 20;
-UPDATE "Unit" SET "evolvedName" = 'Madame Sumo', "trueName" = 'Riceball Cat' WHERE "unitNumber" = 21;
-UPDATE "Unit" SET "evolvedName" = 'Samba Cat', "trueName" = 'Gato Amigo' WHERE "unitNumber" = 22;
-UPDATE "Unit" SET "evolvedName" = 'Tights Cat', "trueName" = 'Loincloth Cat' WHERE "unitNumber" = 23;
-UPDATE "Unit" SET "evolvedName" = 'True Valkyrie Cat', "trueName" = 'Holy Valkyrie Cat' WHERE "unitNumber" = 24;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Bahamut Cat', "trueName" = 'Awakened Bahamut Cat' WHERE "unitNumber" = 25;
-UPDATE "Unit" SET "evolvedName" = 'Full color Kerihime', "trueName" = 'Bridal Princess Punt' WHERE "unitNumber" = 26;
-UPDATE "Unit" SET "evolvedName" = 'Cat Princess beauty' WHERE "unitNumber" = 27;
-UPDATE "Unit" SET "evolvedName" = 'Cramped Cats' WHERE "unitNumber" = 28;
-UPDATE "Unit" SET "evolvedName" = 'Luchador Cat' WHERE "unitNumber" = 29;
-UPDATE "Unit" SET "evolvedName" = 'Avalokitesvara Cat', "trueName" = 'Tathagata Cat' WHERE "unitNumber" = 30;
-UPDATE "Unit" SET "evolvedName" = 'Angry Delinquent Cat', "trueName" = 'Ultra Delinquent Cat' WHERE "unitNumber" = 31;
-UPDATE "Unit" SET "evolvedName" = 'Dancing Flasher Cat', "trueName" = 'Can Can Cat' WHERE "unitNumber" = 32;
-UPDATE "Unit" SET "evolvedName" = 'Sadako Cat', "trueName" = 'Octopus Cat' WHERE "unitNumber" = 33;
-UPDATE "Unit" SET "evolvedName" = 'Unknown Cat', "trueName" = 'Ultralan Pasalan' WHERE "unitNumber" = 34;
-UPDATE "Unit" SET "evolvedName" = 'Hacker Cat', "trueName" = 'Cyberpunk Cat' WHERE "unitNumber" = 35;
-UPDATE "Unit" SET "evolvedName" = 'Butterfly Cat', "trueName" = 'Fishman Cat' WHERE "unitNumber" = 36;
-UPDATE "Unit" SET "evolvedName" = 'Masai Cat', "trueName" = 'Jiangshi Cat' WHERE "unitNumber" = 37;
-UPDATE "Unit" SET "evolvedName" = 'Solar Cat', "trueName" = 'Chill Cat' WHERE "unitNumber" = 38;
-UPDATE "Unit" SET "evolvedName" = 'Face Cat', "trueName" = 'iCat' WHERE "unitNumber" = 39;
-UPDATE "Unit" SET "evolvedName" = 'Sexy Bathtub Cat', "trueName" = 'Luxury Bath Cat' WHERE "unitNumber" = 40;
-UPDATE "Unit" SET "evolvedName" = 'Paris Cat', "trueName" = 'Cyborg Cat' WHERE "unitNumber" = 41;
-UPDATE "Unit" SET "evolvedName" = 'Ice Queen Cat', "trueName" = 'Ice Crystal Cat' WHERE "unitNumber" = 42;
-UPDATE "Unit" SET "evolvedName" = 'Cat Machine Mk 2', "trueName" = 'Cat Machine Mk 3' WHERE "unitNumber" = 43;
-UPDATE "Unit" SET "evolvedName" = 'Greater Demon Cat', "trueName" = 'Greater Balrog Cat' WHERE "unitNumber" = 44;
-UPDATE "Unit" SET "evolvedName" = 'Geisha Cat' WHERE "unitNumber" = 45;
-UPDATE "Unit" SET "evolvedName" = 'Jurassic Cat Sitter', "trueName" = 'Catasaurus' WHERE "unitNumber" = 46;
-UPDATE "Unit" SET "evolvedName" = 'Thor Cat', "trueName" = 'Maximum the Fighter' WHERE "unitNumber" = 47;
-UPDATE "Unit" SET "evolvedName" = 'Captain Cat', "trueName" = 'Dread Pirate Catley' WHERE "unitNumber" = 48;
-UPDATE "Unit" SET "evolvedName" = 'Phantom Thief Cat', "trueName" = 'Goemon Cat' WHERE "unitNumber" = 49;
-UPDATE "Unit" SET "evolvedName" = 'Monk Cat', "trueName" = 'Sanzo Cat' WHERE "unitNumber" = 50;
-UPDATE "Unit" SET "evolvedName" = 'Fisherman Cat', "trueName" = 'Doctor Cat' WHERE "unitNumber" = 51;
-UPDATE "Unit" SET "evolvedName" = 'Necromancer Cat', "trueName" = 'Necro-Dancer Cat' WHERE "unitNumber" = 52;
-UPDATE "Unit" SET "evolvedName" = 'Filibuster Cat' WHERE "unitNumber" = 53;
-UPDATE "Unit" SET "evolvedName" = 'Sorceress Cat', "trueName" = 'Enchantress Cat' WHERE "unitNumber" = 55;
-UPDATE "Unit" SET "evolvedName" = 'Cupid Cat', "trueName" = 'Cataur' WHERE "unitNumber" = 56;
-UPDATE "Unit" SET "evolvedName" = 'Berserker Cat', "trueName" = 'Paladin Cat' WHERE "unitNumber" = 57;
-UPDATE "Unit" SET "evolvedName" = 'Sword Master Cat', "trueName" = 'Elemental Duelist Cat' WHERE "unitNumber" = 58;
-UPDATE "Unit" SET "evolvedName" = 'Baby Cats', "trueName" = 'Cats in the Cradle', "ultraName" = 'Cats in the Stroller' WHERE "unitNumber" = 59;
-UPDATE "Unit" SET "evolvedName" = 'Michelangelo Cat', "trueName" = 'Quizmaster Cat' WHERE "unitNumber" = 60;
-UPDATE "Unit" SET "evolvedName" = 'Fried Shrimp Cat', "trueName" = 'Roe Cat' WHERE "unitNumber" = 61;
-UPDATE "Unit" SET "evolvedName" = 'Vendor Cat' WHERE "unitNumber" = 62;
-UPDATE "Unit" SET "evolvedName" = 'Kidnapper Cats', "trueName" = 'Rampage Cats' WHERE "unitNumber" = 63;
-UPDATE "Unit" SET "evolvedName" = 'Swordsman Johnny' WHERE "unitNumber" = 64;
-UPDATE "Unit" SET "evolvedName" = 'Giraffe Princess' WHERE "unitNumber" = 65;
-UPDATE "Unit" SET "evolvedName" = 'Dark PPT48', "trueName" = 'PPT46' WHERE "unitNumber" = 66;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Gau Gau', "trueName" = 'Crystal Li''l Gau Gau' WHERE "unitNumber" = 67;
-UPDATE "Unit" SET "evolvedName" = 'Reaper 999', "trueName" = 'Judgment' WHERE "unitNumber" = 68;
-UPDATE "Unit" SET "evolvedName" = 'Sleeping Beauty Punt II', "trueName" = 'Oversleeping Beauty Punt' WHERE "unitNumber" = 69;
-UPDATE "Unit" SET "evolvedName" = 'Grudge Cat', "trueName" = 'Ritual Cat' WHERE "unitNumber" = 70;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Yukimura', "trueName" = 'Immortal Yukimura' WHERE "unitNumber" = 71;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Keiji', "trueName" = 'Immortal Keiji' WHERE "unitNumber" = 72;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Nobunaga', "trueName" = 'Immortal Nobunaga', "ultraName" = 'Phantasmal Nobunaga' WHERE "unitNumber" = 73;
-UPDATE "Unit" SET "evolvedName" = 'Sashimi Cat', "trueName" = 'Xmas Pudding Cat' WHERE "unitNumber" = 74;
-UPDATE "Unit" SET "evolvedName" = 'Windy, type α', "trueName" = 'Divine Windy', "ultraName" = 'Ultimate Windy' WHERE "unitNumber" = 75;
-UPDATE "Unit" SET "evolvedName" = 'Thundia, type β', "trueName" = 'Divine Thundia', "ultraName" = 'Ultimate Thundia' WHERE "unitNumber" = 76;
-UPDATE "Unit" SET "evolvedName" = 'Droid Cat Mk 2', "trueName" = 'SpringDroid' WHERE "unitNumber" = 77;
-UPDATE "Unit" SET "evolvedName" = 'Major Space Cat', "trueName" = 'Space Marine Cat' WHERE "unitNumber" = 78;
-UPDATE "Unit" SET "evolvedName" = 'Sick Cat', "trueName" = 'Prisoner Cat' WHERE "unitNumber" = 79;
-UPDATE "Unit" SET "evolvedName" = 'Gentleman Cat', "trueName" = 'Gentleman Bros.' WHERE "unitNumber" = 80;
-UPDATE "Unit" SET "evolvedName" = 'Cat-o-tron', "trueName" = 'Nyalladin' WHERE "unitNumber" = 81;
-UPDATE "Unit" SET "evolvedName" = 'Orange Shinobi' WHERE "unitNumber" = 82;
-UPDATE "Unit" SET "evolvedName" = 'Earth King Sodom', "trueName" = 'God-Emperor Sodom' WHERE "unitNumber" = 83;
-UPDATE "Unit" SET "evolvedName" = 'Holy Dragon Megidora', "trueName" = 'God-Emperor Megidora' WHERE "unitNumber" = 84;
-UPDATE "Unit" SET "evolvedName" = 'Dragon King Vars', "trueName" = 'God-Emperor Vars' WHERE "unitNumber" = 85;
-UPDATE "Unit" SET "evolvedName" = 'God Dragon Kamukura', "trueName" = 'God-Emperor Kamukura' WHERE "unitNumber" = 86;
-UPDATE "Unit" SET "evolvedName" = 'Dragonslayer Raiden', "trueName" = 'God-Emperor Raiden' WHERE "unitNumber" = 87;
-UPDATE "Unit" SET "evolvedName" = 'Pair Rope Jump Cat', "trueName" = 'Noodle Cats' WHERE "unitNumber" = 88;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Macho Cat', "trueName" = 'Manic Mohawk Cat' WHERE "unitNumber" = 91;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Wall Cat', "trueName" = 'Manic Eraser Cat' WHERE "unitNumber" = 92;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Brave Cat', "trueName" = 'Manic Dark Cat' WHERE "unitNumber" = 93;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Sexy Legs Cat', "trueName" = 'Manic Macho Legs' WHERE "unitNumber" = 94;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Giraffe Cat', "trueName" = 'Manic Lion Cat' WHERE "unitNumber" = 95;
-UPDATE "Unit" SET "evolvedName" = 'Crazed UFO Cat', "trueName" = 'Manic Flying Cat' WHERE "unitNumber" = 96;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Whale Cat', "trueName" = 'Manic Island Cat' WHERE "unitNumber" = 97;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Dragon Cat', "trueName" = 'Manic King Dragon' WHERE "unitNumber" = 98;
-UPDATE "Unit" SET "evolvedName" = 'Crazed M. Titan Cat', "trueName" = 'Manic Jamiera Cat' WHERE "unitNumber" = 99;
-UPDATE "Unit" SET "evolvedName" = 'Sportsgirl Cat', "trueName" = 'Wrestling Cat' WHERE "unitNumber" = 100;
-UPDATE "Unit" SET "evolvedName" = 'Mega Cat', "trueName" = 'Mega Cat EX' WHERE "unitNumber" = 103;
-UPDATE "Unit" SET "evolvedName" = 'Gross Koi Cat', "trueName" = 'Kiss and Koi' WHERE "unitNumber" = 104;
-UPDATE "Unit" SET "evolvedName" = 'Kuu, type γ', "trueName" = 'Divine Kuu' WHERE "unitNumber" = 105;
-UPDATE "Unit" SET "evolvedName" = 'Kai, type μ', "trueName" = 'Divine Kai' WHERE "unitNumber" = 106;
-UPDATE "Unit" SET "evolvedName" = 'Coppermine, type κ', "trueName" = 'Divine Coppermine' WHERE "unitNumber" = 107;
-UPDATE "Unit" SET "evolvedName" = 'Secret Base' WHERE "unitNumber" = 108;
-UPDATE "Unit" SET "evolvedName" = 'Madam King', "trueName" = 'Madam the Savannah' WHERE "unitNumber" = 109;
-UPDATE "Unit" SET "evolvedName" = 'Celesse CC' WHERE "unitNumber" = 110;
-UPDATE "Unit" SET "evolvedName" = 'Nono CC', "trueName" = 'Frolicking Nono CC' WHERE "unitNumber" = 111;
-UPDATE "Unit" SET "evolvedName" = 'Olga CC' WHERE "unitNumber" = 112;
-UPDATE "Unit" SET "evolvedName" = 'Norn CC' WHERE "unitNumber" = 113;
-UPDATE "Unit" SET "evolvedName" = 'Yoichi CC' WHERE "unitNumber" = 114;
-UPDATE "Unit" SET "evolvedName" = 'Serum CC' WHERE "unitNumber" = 115;
-UPDATE "Unit" SET "evolvedName" = 'Fuu CC' WHERE "unitNumber" = 116;
-UPDATE "Unit" SET "evolvedName" = 'Aura CC' WHERE "unitNumber" = 117;
-UPDATE "Unit" SET "evolvedName" = 'Rei CC' WHERE "unitNumber" = 118;
-UPDATE "Unit" SET "evolvedName" = 'Wyvern Cat', "trueName" = 'Wyvern and Alec' WHERE "unitNumber" = 119;
-UPDATE "Unit" SET "evolvedName" = 'Healer CC', "trueName" = 'Healer Cat CC' WHERE "unitNumber" = 120;
-UPDATE "Unit" SET "evolvedName" = 'Merc CC', "trueName" = 'Merc & Cat CC' WHERE "unitNumber" = 121;
-UPDATE "Unit" SET "evolvedName" = 'Office Lady Cat', "trueName" = 'Call Center Cat' WHERE "unitNumber" = 122;
-UPDATE "Unit" SET "evolvedName" = 'Brah Cats', "trueName" = 'Val Val Cat' WHERE "unitNumber" = 123;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Masamune', "trueName" = 'Immortal Masamune' WHERE "unitNumber" = 124;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Shingen', "trueName" = 'Immortal Shingen' WHERE "unitNumber" = 125;
-UPDATE "Unit" SET "evolvedName" = 'Puppetmaster Cat', "trueName" = 'Puppetmaster & Charley' WHERE "unitNumber" = 126;
-UPDATE "Unit" SET "evolvedName" = 'Cooldown Cat', "trueName" = 'Bombercat' WHERE "unitNumber" = 127;
-UPDATE "Unit" SET "evolvedName" = 'Groucho Cat', "trueName" = 'Kite Cat' WHERE "unitNumber" = 128;
-UPDATE "Unit" SET "evolvedName" = 'Gold Macho Cat', "trueName" = 'Glittering Macho Cat' WHERE "unitNumber" = 129;
-UPDATE "Unit" SET "evolvedName" = 'Ururun Cat', "trueName" = 'Awakened Ururun' WHERE "unitNumber" = 130;
-UPDATE "Unit" SET "evolvedName" = 'Miss NENEKO' WHERE "unitNumber" = 131;
-UPDATE "Unit" SET "evolvedName" = 'Drunken Master Cat X', "trueName" = 'Iron Claw X' WHERE "unitNumber" = 132;
-UPDATE "Unit" SET "evolvedName" = 'Guardian Gamereon', "trueName" = 'King Gamereon' WHERE "unitNumber" = 134;
-UPDATE "Unit" SET "evolvedName" = 'Super Galaxy Cosmo', "trueName" = 'Ultima Galaxy Cosmo', "ultraName" = 'Supernova Cosmo' WHERE "unitNumber" = 135;
-UPDATE "Unit" SET "evolvedName" = 'The Peach Angels', "trueName" = 'The Peach Devils' WHERE "unitNumber" = 136;
-UPDATE "Unit" SET "evolvedName" = 'Jizo''s Moving Castle', "trueName" = 'Jizo''s Mega-Castle', "ultraName" = 'Ultra Kasa Jizo' WHERE "unitNumber" = 137;
-UPDATE "Unit" SET "evolvedName" = 'The Death Moon', "trueName" = 'The Chaos Moon', "ultraName" = 'Ultra Kaguya' WHERE "unitNumber" = 138;
-UPDATE "Unit" SET "evolvedName" = 'Muscleman Cat' WHERE "unitNumber" = 140;
-UPDATE "Unit" SET "evolvedName" = 'Secret God' WHERE "unitNumber" = 141;
-UPDATE "Unit" SET "evolvedName" = 'Heartful Nurse Cat', "trueName" = 'Joyful Nurse Cat' WHERE "unitNumber" = 143;
-UPDATE "Unit" SET "evolvedName" = 'Cat Base Jr.', "trueName" = 'Cat Base Ultra' WHERE "unitNumber" = 144;
-UPDATE "Unit" SET "evolvedName" = 'Cat Eastwood', "trueName" = 'Rodeo Cat' WHERE "unitNumber" = 145;
-UPDATE "Unit" SET "evolvedName" = 'Totem Cat', "trueName" = 'Acrobat Cats' WHERE "unitNumber" = 146;
-UPDATE "Unit" SET "evolvedName" = 'Plane Cat', "trueName" = 'Robocat' WHERE "unitNumber" = 147;
-UPDATE "Unit" SET "evolvedName" = 'Artist Cat', "trueName" = 'Ramen Cat' WHERE "unitNumber" = 148;
-UPDATE "Unit" SET "evolvedName" = 'Commando Cat', "trueName" = 'Cameraman Cat' WHERE "unitNumber" = 149;
-UPDATE "Unit" SET "evolvedName" = 'Princess Juliet Cat', "trueName" = 'Juliet the Maiko' WHERE "unitNumber" = 150;
-UPDATE "Unit" SET "evolvedName" = 'Ring Girl Cat', "trueName" = 'Pizza Cat' WHERE "unitNumber" = 151;
-UPDATE "Unit" SET "evolvedName" = 'Drama Cats', "trueName" = 'Slapstick Cats' WHERE "unitNumber" = 152;
-UPDATE "Unit" SET "evolvedName" = 'Cat Projector', "trueName" = 'Catophone' WHERE "unitNumber" = 153;
-UPDATE "Unit" SET "evolvedName" = 'Showoff Cat', "trueName" = 'Hoopmaster Cat' WHERE "unitNumber" = 154;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Kenshin', "trueName" = 'Immortal Kenshin', "ultraName" = 'Hellrider Kenshin' WHERE "unitNumber" = 158;
-UPDATE "Unit" SET "evolvedName" = 'Kalisa, type χ', "trueName" = 'Divine Kalisa' WHERE "unitNumber" = 159;
-UPDATE "Unit" SET "evolvedName" = 'Phoenix Yurinchi', "trueName" = 'Gekirinchi' WHERE "unitNumber" = 160;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Princess Punt CC', "trueName" = 'Manic Princess Punt' WHERE "unitNumber" = 161;
-UPDATE "Unit" SET "evolvedName" = 'Asilan Pasalan', "trueName" = 'Assassinlan Pasalan' WHERE "unitNumber" = 168;
-UPDATE "Unit" SET "evolvedName" = 'Kubilan Pasalan', "trueName" = 'E. Kubilan Pasalan' WHERE "unitNumber" = 169;
-UPDATE "Unit" SET "evolvedName" = 'Tesalan Pasalan', "trueName" = 'Lufalan Pasalan' WHERE "unitNumber" = 170;
-UPDATE "Unit" SET "evolvedName" = 'Balalan Pasalan', "trueName" = 'Piccolan Pasalan' WHERE "unitNumber" = 171;
-UPDATE "Unit" SET "evolvedName" = 'Dark Emperor Catdam', "trueName" = 'Schoolbus Nyandam' WHERE "unitNumber" = 172;
-UPDATE "Unit" SET "evolvedName" = 'Young Man Mola', "trueName" = 'Citizen Mola' WHERE "unitNumber" = 173;
-UPDATE "Unit" SET "evolvedName" = 'Living Legend', "trueName" = 'Master of the Pacific' WHERE "unitNumber" = 174;
-UPDATE "Unit" SET "evolvedName" = 'Catorpedo' WHERE "unitNumber" = 175;
-UPDATE "Unit" SET "evolvedName" = 'Creepmallow' WHERE "unitNumber" = 176;
-UPDATE "Unit" SET "evolvedName" = 'Archdragon Dioramos', "trueName" = 'God-Emperor Dioramos', "ultraName" = 'Ascendant Dioramos' WHERE "unitNumber" = 177;
-UPDATE "Unit" SET "evolvedName" = 'Takuya, Yuki ＆ Cat', "trueName" = 'Takuya＆ Lovely Yuki' WHERE "unitNumber" = 179;
-UPDATE "Unit" SET "evolvedName" = 'Mystery Yuki ＆ Cat', "trueName" = 'Mystery Catgirl Yuki' WHERE "unitNumber" = 180;
-UPDATE "Unit" SET "evolvedName" = 'Lovely Yuki Cat' WHERE "unitNumber" = 181;
-UPDATE "Unit" SET "evolvedName" = 'Cat Kart G', "trueName" = 'Cat Kart P' WHERE "unitNumber" = 183;
-UPDATE "Unit" SET "evolvedName" = 'Mint' WHERE "unitNumber" = 184;
-UPDATE "Unit" SET "evolvedName" = 'Hearscht CC', "trueName" = 'Revolutionary Hearscht CC' WHERE "unitNumber" = 185;
-UPDATE "Unit" SET "evolvedName" = 'Cornelia CC' WHERE "unitNumber" = 186;
-UPDATE "Unit" SET "evolvedName" = 'Juvens CC', "trueName" = 'Holiday Juvens CC' WHERE "unitNumber" = 187;
-UPDATE "Unit" SET "evolvedName" = 'Mystica CC', "trueName" = 'Savior Mystica CC' WHERE "unitNumber" = 188;
-UPDATE "Unit" SET "evolvedName" = 'Alois CC' WHERE "unitNumber" = 189;
-UPDATE "Unit" SET "evolvedName" = 'Citrouille CC' WHERE "unitNumber" = 190;
-UPDATE "Unit" SET "evolvedName" = 'Titi CC', "trueName" = 'Titi Cat CC' WHERE "unitNumber" = 191;
-UPDATE "Unit" SET "evolvedName" = 'Shadow Akira', "trueName" = 'Inferno Akira' WHERE "unitNumber" = 194;
-UPDATE "Unit" SET "evolvedName" = 'Dr. Mekako', "trueName" = 'Mission Control Mekako' WHERE "unitNumber" = 195;
-UPDATE "Unit" SET "evolvedName" = 'Dark Catman', "trueName" = 'Ultimate Catman' WHERE "unitNumber" = 196;
-UPDATE "Unit" SET "evolvedName" = 'Neo Psychocat', "trueName" = 'Corrupted Psychocat' WHERE "unitNumber" = 197;
-UPDATE "Unit" SET "evolvedName" = 'Magica Cat', "trueName" = 'Thaumaturge Cat' WHERE "unitNumber" = 198;
-UPDATE "Unit" SET "evolvedName" = 'Castaway Cat', "trueName" = 'Seafarer Cat' WHERE "unitNumber" = 199;
-UPDATE "Unit" SET "evolvedName" = 'Metal Macho' WHERE "unitNumber" = 200;
-UPDATE "Unit" SET "evolvedName" = 'Banner Cat', "trueName" = 'Mochi Cat' WHERE "unitNumber" = 201;
-UPDATE "Unit" SET "evolvedName" = 'Big Baozi' WHERE "unitNumber" = 202;
-UPDATE "Unit" SET "evolvedName" = 'Fire Squad Kachiyama', "trueName" = 'Kachiyama Assault Brigade' WHERE "unitNumber" = 203;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Macho Cat', "trueName" = 'Li''l Mohawk Cat' WHERE "unitNumber" = 209;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Wall Cat', "trueName" = 'Li''l Eraser Cat' WHERE "unitNumber" = 210;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Brave Cat', "trueName" = 'Li''l Dark Cat' WHERE "unitNumber" = 211;
-UPDATE "Unit" SET "evolvedName" = 'The Black Cat', "trueName" = 'The Grey Fox', "ultraName" = 'The Spectral Cat' WHERE "unitNumber" = 212;
-UPDATE "Unit" SET "evolvedName" = 'Cat Royale', "trueName" = 'Value Meal Cat' WHERE "unitNumber" = 213;
-UPDATE "Unit" SET "evolvedName" = 'HYAKUTARO CC' WHERE "unitNumber" = 214;
-UPDATE "Unit" SET "evolvedName" = 'MARCO CC' WHERE "unitNumber" = 215;
-UPDATE "Unit" SET "evolvedName" = 'TARMA CC' WHERE "unitNumber" = 216;
-UPDATE "Unit" SET "evolvedName" = 'ERI CC' WHERE "unitNumber" = 217;
-UPDATE "Unit" SET "evolvedName" = 'FIO CC' WHERE "unitNumber" = 218;
-UPDATE "Unit" SET "evolvedName" = 'SV-001 CC' WHERE "unitNumber" = 219;
-UPDATE "Unit" SET "evolvedName" = 'ALLEN O''NEIL CC' WHERE "unitNumber" = 220;
-UPDATE "Unit" SET "evolvedName" = 'MARS PEOPLE CC' WHERE "unitNumber" = 221;
-UPDATE "Unit" SET "evolvedName" = 'HUGE HERMIT CC', "trueName" = 'GOLDEN HUGE HERMIT CC' WHERE "unitNumber" = 222;
-UPDATE "Unit" SET "evolvedName" = 'JUPITER KING CC', "trueName" = 'GOLDEN JUPITER CC' WHERE "unitNumber" = 223;
-UPDATE "Unit" SET "evolvedName" = 'GENERAL MORDEN', "trueName" = 'GOLDEN MORDEN CC' WHERE "unitNumber" = 224;
-UPDATE "Unit" SET "evolvedName" = 'HI-DO CC', "trueName" = 'HI-DO MK III' WHERE "unitNumber" = 225;
-UPDATE "Unit" SET "evolvedName" = 'Dark Merchant Babil', "trueName" = 'Mad Doctor Klay' WHERE "unitNumber" = 226;
-UPDATE "Unit" SET "evolvedName" = 'Cat O''Lantern', "trueName" = 'Harbinger Cat' WHERE "unitNumber" = 227;
-UPDATE "Unit" SET "evolvedName" = 'Witchy Neneko', "trueName" = 'Costumed Witchy Neneko' WHERE "unitNumber" = 228;
-UPDATE "Unit" SET "evolvedName" = 'Hallowindy, type α' WHERE "unitNumber" = 229;
-UPDATE "Unit" SET "evolvedName" = 'Spooky Thundia, type β' WHERE "unitNumber" = 230;
-UPDATE "Unit" SET "evolvedName" = 'Prof. Cat Jobs', "trueName" = 'Headmaster Cat Jobs' WHERE "unitNumber" = 237;
-UPDATE "Unit" SET "evolvedName" = 'Rich Cat Sr.', "trueName" = 'Richest Cat' WHERE "unitNumber" = 238;
-UPDATE "Unit" SET "evolvedName" = 'Sniper the Heavy', "trueName" = 'Sniper the Deadeye' WHERE "unitNumber" = 239;
-UPDATE "Unit" SET "evolvedName" = 'Togelan Pasalan', "trueName" = 'Shishilan Pasalan' WHERE "unitNumber" = 240;
-UPDATE "Unit" SET "evolvedName" = 'Frosty Kai, type μ', "trueName" = 'Frostspirit Kai, type μ' WHERE "unitNumber" = 241;
-UPDATE "Unit" SET "evolvedName" = 'Santa Kuu, type γ' WHERE "unitNumber" = 242;
-UPDATE "Unit" SET "evolvedName" = 'Holy Coppermine, type κ' WHERE "unitNumber" = 243;
-UPDATE "Unit" SET "evolvedName" = 'Cat''s Gift' WHERE "unitNumber" = 244;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Sexy Legs Cat', "trueName" = 'Li''l Macho Legs Cat' WHERE "unitNumber" = 245;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Giraffe Cat', "trueName" = 'Li''l Lion Cat' WHERE "unitNumber" = 246;
-UPDATE "Unit" SET "evolvedName" = 'Li''l UFO Cat', "trueName" = 'Li''l Flying Cat' WHERE "unitNumber" = 247;
-UPDATE "Unit" SET "evolvedName" = 'Bake-Nyanko', "trueName" = 'Extra-Life Cat' WHERE "unitNumber" = 248;
-UPDATE "Unit" SET "evolvedName" = 'The Majestic Zeus', "trueName" = 'Almighty Zeus' WHERE "unitNumber" = 257;
-UPDATE "Unit" SET "evolvedName" = 'Anubis the Unblemished', "trueName" = 'Almighty Anubis' WHERE "unitNumber" = 258;
-UPDATE "Unit" SET "evolvedName" = 'Megaphrodite', "trueName" = 'Almighty Aphrodite' WHERE "unitNumber" = 259;
-UPDATE "Unit" SET "evolvedName" = 'Drone Cat', "trueName" = 'Time Traveller Cat' WHERE "unitNumber" = 260;
-UPDATE "Unit" SET "evolvedName" = 'Oni Hayabusa', "trueName" = 'Akuma Hayabusa' WHERE "unitNumber" = 261;
-UPDATE "Unit" SET "evolvedName" = 'Hurricat', "trueName" = 'Catyphoon' WHERE "unitNumber" = 267;
-UPDATE "Unit" SET "evolvedName" = 'Crimson Mina', "trueName" = 'Awakened Mina' WHERE "unitNumber" = 268;
-UPDATE "Unit" SET "evolvedName" = 'Mighty Lord Gao' WHERE "unitNumber" = 269;
-UPDATE "Unit" SET "evolvedName" = 'Crazed Yuki & Cat', "trueName" = 'Crazed Catgirl Yuki' WHERE "unitNumber" = 270;
-UPDATE "Unit" SET "evolvedName" = 'Glorious Amaterasu', "trueName" = 'Almighty Amaterasu' WHERE "unitNumber" = 271;
-UPDATE "Unit" SET "evolvedName" = 'Exalted Ganesha', "trueName" = 'Almighty Ganesha' WHERE "unitNumber" = 272;
-UPDATE "Unit" SET "evolvedName" = 'Waitress Cat', "trueName" = 'Soba Cat' WHERE "unitNumber" = 273;
-UPDATE "Unit" SET "evolvedName" = 'Tropical Kalisa, type X' WHERE "unitNumber" = 274;
-UPDATE "Unit" SET "evolvedName" = 'Midsummer Cat', "trueName" = 'Brightsummer Cat' WHERE "unitNumber" = 275;
-UPDATE "Unit" SET "evolvedName" = 'Seaside Neneko', "trueName" = 'Early Summer Neneko' WHERE "unitNumber" = 276;
-UPDATE "Unit" SET "evolvedName" = 'Funghi ''n'' Cat' WHERE "unitNumber" = 277;
-UPDATE "Unit" SET "evolvedName" = 'Tanky ''n'' Cat' WHERE "unitNumber" = 278;
-UPDATE "Unit" SET "evolvedName" = 'Gross White Cat' WHERE "unitNumber" = 279;
-UPDATE "Unit" SET "evolvedName" = 'Castley' WHERE "unitNumber" = 280;
-UPDATE "Unit" SET "evolvedName" = 'So-Ran Cat', "trueName" = 'Gorgeous Groovin'' Cat' WHERE "unitNumber" = 282;
-UPDATE "Unit" SET "evolvedName" = 'Pai-Pai Z', "trueName" = 'Pai-Pai DX' WHERE "unitNumber" = 283;
-UPDATE "Unit" SET "evolvedName" = 'Maglev Cat', "trueName" = 'Bullet Train Cat' WHERE "unitNumber" = 284;
-UPDATE "Unit" SET "evolvedName" = 'Assault Unit R.E.I.', "trueName" = 'Flight Unit R.E.I.' WHERE "unitNumber" = 286;
-UPDATE "Unit" SET "evolvedName" = 'Major Leaguer Cat', "trueName" = 'Golfer Cat' WHERE "unitNumber" = 287;
-UPDATE "Unit" SET "evolvedName" = 'Madoka & Cat', "trueName" = 'Ultimate Madoka' WHERE "unitNumber" = 288;
-UPDATE "Unit" SET "evolvedName" = 'Homura & Cat', "trueName" = 'Devil Homura' WHERE "unitNumber" = 289;
-UPDATE "Unit" SET "evolvedName" = 'Sayaka & Cat' WHERE "unitNumber" = 290;
-UPDATE "Unit" SET "evolvedName" = 'Mami & Cat' WHERE "unitNumber" = 291;
-UPDATE "Unit" SET "evolvedName" = 'Kyoko & Cat' WHERE "unitNumber" = 292;
-UPDATE "Unit" SET "evolvedName" = 'Kyubey & Cat' WHERE "unitNumber" = 293;
-UPDATE "Unit" SET "evolvedName" = 'Magical Girl Madoka Cat' WHERE "unitNumber" = 294;
-UPDATE "Unit" SET "evolvedName" = 'Magical Girl Homura Cat' WHERE "unitNumber" = 295;
-UPDATE "Unit" SET "evolvedName" = 'Magical Girl Sayaka Cat' WHERE "unitNumber" = 296;
-UPDATE "Unit" SET "evolvedName" = 'Magical Girl Mami Cat' WHERE "unitNumber" = 297;
-UPDATE "Unit" SET "evolvedName" = 'Magical Girl Kyoko Cat' WHERE "unitNumber" = 298;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Magical Girl Madoka', "trueName" = 'Li''l Ultimate Madoka' WHERE "unitNumber" = 299;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Magical Girl Homura', "trueName" = 'Li''l Devil Homura' WHERE "unitNumber" = 300;
-UPDATE "Unit" SET "evolvedName" = 'Tank Kyubey Cat' WHERE "unitNumber" = 301;
-UPDATE "Unit" SET "evolvedName" = 'Succubus Cat', "trueName" = 'Queen Succubus Cat' WHERE "unitNumber" = 302;
-UPDATE "Unit" SET "evolvedName" = 'Delivery Cat', "trueName" = 'Cafeteria Cat' WHERE "unitNumber" = 303;
-UPDATE "Unit" SET "evolvedName" = 'CAT-6 Siege Engine', "trueName" = 'CAT-8 Behemoth', "ultraName" = 'CAT-10 Gigapult' WHERE "unitNumber" = 304;
-UPDATE "Unit" SET "evolvedName" = 'B.C.S. Lionheart', "trueName" = 'B.C.S. Tigerclaw', "ultraName" = 'B.C.S. Beartooth' WHERE "unitNumber" = 305;
-UPDATE "Unit" SET "evolvedName" = 'NEK-0 Sky Fortress', "trueName" = 'NEK-02 Air Citadel', "ultraName" = 'NEK-03 Cloud Emperor' WHERE "unitNumber" = 306;
-UPDATE "Unit" SET "evolvedName" = 'Polevaulter Cat', "trueName" = 'Housewife Cat' WHERE "unitNumber" = 307;
-UPDATE "Unit" SET "evolvedName" = 'Lumbercat', "trueName" = 'Weedwacker Cat' WHERE "unitNumber" = 308;
-UPDATE "Unit" SET "evolvedName" = 'Yule Knight Nurse', "trueName" = 'Xmas Spirit Nurse' WHERE "unitNumber" = 310;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Whale Cat', "trueName" = 'Li''l Island Cat' WHERE "unitNumber" = 311;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Dragon Cat', "trueName" = 'Li''l King Dragon Cat' WHERE "unitNumber" = 312;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Mythical Titan', "trueName" = 'Li''l Jamiera Cat' WHERE "unitNumber" = 313;
-UPDATE "Unit" SET "evolvedName" = 'New Year Neneko', "trueName" = 'Festive New Year Neneko' WHERE "unitNumber" = 314;
-UPDATE "Unit" SET "evolvedName" = 'NEKOTARO' WHERE "unitNumber" = 315;
-UPDATE "Unit" SET "evolvedName" = 'Valiant Poseidon', "trueName" = 'Almighty Poseidon' WHERE "unitNumber" = 316;
-UPDATE "Unit" SET "evolvedName" = 'PPAP' WHERE "unitNumber" = 317;
-UPDATE "Unit" SET "evolvedName" = 'Mitama the Oracle' WHERE "unitNumber" = 318;
-UPDATE "Unit" SET "evolvedName" = 'True Killer Cat', "trueName" = 'Radical Cat' WHERE "unitNumber" = 319;
-UPDATE "Unit" SET "evolvedName" = 'Rock Revengers', "trueName" = 'The One-Hit Wonders' WHERE "unitNumber" = 322;
-UPDATE "Unit" SET "evolvedName" = 'Heroic Musashi', "trueName" = 'Awakened Musashi' WHERE "unitNumber" = 323;
-UPDATE "Unit" SET "evolvedName" = 'Cleanerbot Cat', "trueName" = 'Green Shell Cat' WHERE "unitNumber" = 324;
-UPDATE "Unit" SET "evolvedName" = 'Heavyweight Cat', "trueName" = 'Ectoweight Cat' WHERE "unitNumber" = 325;
-UPDATE "Unit" SET "evolvedName" = 'Miraculous Mobius' WHERE "unitNumber" = 326;
-UPDATE "Unit" SET "evolvedName" = 'Reckless Belial' WHERE "unitNumber" = 327;
-UPDATE "Unit" SET "evolvedName" = 'Heartful Happy 100' WHERE "unitNumber" = 328;
-UPDATE "Unit" SET "evolvedName" = 'Easter Cat', "trueName" = 'Easter Egg Cat' WHERE "unitNumber" = 329;
-UPDATE "Unit" SET "evolvedName" = 'Full-Bloom Kenshin', "trueName" = 'Spring Breeze Kenshin' WHERE "unitNumber" = 330;
-UPDATE "Unit" SET "evolvedName" = 'Disciple Psychoduck', "trueName" = 'Malevolent Mad-Duck' WHERE "unitNumber" = 331;
-UPDATE "Unit" SET "evolvedName" = 'Hoppity Neneko', "trueName" = 'Blossoming Neneko' WHERE "unitNumber" = 332;
-UPDATE "Unit" SET "evolvedName" = 'Diabolic Gao' WHERE "unitNumber" = 333;
-UPDATE "Unit" SET "evolvedName" = 'Himeyuri Ninetails', "trueName" = 'Fox Queen Himeyuri' WHERE "unitNumber" = 334;
-UPDATE "Unit" SET "evolvedName" = 'Sea Mistress Ruri', "trueName" = 'Mer-Queen Ruri' WHERE "unitNumber" = 335;
-UPDATE "Unit" SET "evolvedName" = 'Pharaoh Reika', "trueName" = 'Eternal Reika' WHERE "unitNumber" = 336;
-UPDATE "Unit" SET "evolvedName" = 'HMS Princess CC', "trueName" = 'HMS Princess II CC' WHERE "unitNumber" = 337;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Yoshimoto', "trueName" = 'Immortal Yoshimoto' WHERE "unitNumber" = 338;
-UPDATE "Unit" SET "evolvedName" = 'Redhead Lovely Yuki Cat', "trueName" = 'Redhead Muscled Yuki Cat' WHERE "unitNumber" = 340;
-UPDATE "Unit" SET "evolvedName" = 'Lost World Yuki ＆ Cat', "trueName" = 'Lost World Catgirl Yuki' WHERE "unitNumber" = 341;
-UPDATE "Unit" SET "evolvedName" = 'Neo Maneki Cat' WHERE "unitNumber" = 342;
-UPDATE "Unit" SET "evolvedName" = 'Slugcat' WHERE "unitNumber" = 343;
-UPDATE "Unit" SET "evolvedName" = 'Orthos CC', "trueName" = 'Artist Orthos CC' WHERE "unitNumber" = 344;
-UPDATE "Unit" SET "evolvedName" = 'Michelia CC', "trueName" = 'Naptime Michelia CC' WHERE "unitNumber" = 345;
-UPDATE "Unit" SET "evolvedName" = 'Todomeki CC' WHERE "unitNumber" = 346;
-UPDATE "Unit" SET "evolvedName" = 'Twinstars, type Φ', "trueName" = 'Divine Twinstars' WHERE "unitNumber" = 351;
-UPDATE "Unit" SET "evolvedName" = 'Grandmaster Cat', "trueName" = 'Masked Grandmaster Cat' WHERE "unitNumber" = 352;
-UPDATE "Unit" SET "evolvedName" = 'Seashore Kai, type μ' WHERE "unitNumber" = 354;
-UPDATE "Unit" SET "evolvedName" = 'Orbital Platform Armageddon', "trueName" = 'Orbital Annihilator Ragnarok' WHERE "unitNumber" = 355;
-UPDATE "Unit" SET "evolvedName" = 'Wolf Princess Deale', "trueName" = 'Jester Queen Deale' WHERE "unitNumber" = 357;
-UPDATE "Unit" SET "evolvedName" = 'Verbena the Bride', "trueName" = 'Opulent Verbena' WHERE "unitNumber" = 358;
-UPDATE "Unit" SET "evolvedName" = 'Bazibon', "trueName" = 'Bazibastra', "ultraName" = 'Bazifenix' WHERE "unitNumber" = 359;
-UPDATE "Unit" SET "evolvedName" = 'Marinmizu', "trueName" = 'Mizuririn', "ultraName" = 'Mizunade' WHERE "unitNumber" = 360;
-UPDATE "Unit" SET "evolvedName" = 'Erphuan', "trueName" = 'Aervanta', "ultraName" = 'Aervantex' WHERE "unitNumber" = 361;
-UPDATE "Unit" SET "evolvedName" = 'Saber CC', "trueName" = 'Saber Alter CC' WHERE "unitNumber" = 362;
-UPDATE "Unit" SET "evolvedName" = 'Rin Tohsaka CC' WHERE "unitNumber" = 363;
-UPDATE "Unit" SET "evolvedName" = 'Illyasviel CC' WHERE "unitNumber" = 364;
-UPDATE "Unit" SET "evolvedName" = 'Archer CC' WHERE "unitNumber" = 365;
-UPDATE "Unit" SET "evolvedName" = 'Lancer CC' WHERE "unitNumber" = 366;
-UPDATE "Unit" SET "evolvedName" = 'Rider CC' WHERE "unitNumber" = 367;
-UPDATE "Unit" SET "evolvedName" = 'Gilgamesh CC' WHERE "unitNumber" = 368;
-UPDATE "Unit" SET "evolvedName" = 'Heroic Spirit Saber Cat', "trueName" = 'Saber Alter Cat' WHERE "unitNumber" = 369;
-UPDATE "Unit" SET "evolvedName" = 'Apron Sakura Cat', "trueName" = 'Dreaming Sakura Cat' WHERE "unitNumber" = 370;
-UPDATE "Unit" SET "evolvedName" = 'Mage Rin Cat' WHERE "unitNumber" = 371;
-UPDATE "Unit" SET "evolvedName" = 'Snow Faerie Illya' WHERE "unitNumber" = 372;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Shirou CC' WHERE "unitNumber" = 373;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Sakura CC' WHERE "unitNumber" = 374;
-UPDATE "Unit" SET "evolvedName" = 'Macho Coin Cat' WHERE "unitNumber" = 375;
-UPDATE "Unit" SET "evolvedName" = 'Rover Cat Mk II', "trueName" = 'Catellite' WHERE "unitNumber" = 376;
-UPDATE "Unit" SET "evolvedName" = 'Kendo Cat', "trueName" = 'The Kitty of Liberty' WHERE "unitNumber" = 377;
-UPDATE "Unit" SET "evolvedName" = 'Gothic Mitama' WHERE "unitNumber" = 378;
-UPDATE "Unit" SET "evolvedName" = 'Ballet Cat', "trueName" = 'Curry Cat' WHERE "unitNumber" = 379;
-UPDATE "Unit" SET "evolvedName" = 'Meow-sketeer' WHERE "unitNumber" = 380;
-UPDATE "Unit" SET "evolvedName" = 'Harvest Cat' WHERE "unitNumber" = 381;
-UPDATE "Unit" SET "evolvedName" = 'Macho Glass Cat', "trueName" = 'Macho Crystal Cat' WHERE "unitNumber" = 382;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Yulala', "trueName" = 'Spiritual Yulala' WHERE "unitNumber" = 383;
-UPDATE "Unit" SET "evolvedName" = 'Satori Hikami & Cat CC' WHERE "unitNumber" = 384;
-UPDATE "Unit" SET "evolvedName" = 'Akio Yabe CC', "trueName" = 'Akio & Gunder CC' WHERE "unitNumber" = 385;
-UPDATE "Unit" SET "evolvedName" = 'Sairi Nijitani CC' WHERE "unitNumber" = 386;
-UPDATE "Unit" SET "evolvedName" = 'Misaki Konno CC' WHERE "unitNumber" = 387;
-UPDATE "Unit" SET "evolvedName" = 'Ren Katagiri CC' WHERE "unitNumber" = 388;
-UPDATE "Unit" SET "evolvedName" = 'Karin Nekozuka CC' WHERE "unitNumber" = 389;
-UPDATE "Unit" SET "evolvedName" = 'Aoi Hayakawa CC', "trueName" = 'Baseball Mask α' WHERE "unitNumber" = 390;
-UPDATE "Unit" SET "evolvedName" = 'Mizuki Tachibana CC', "trueName" = 'Baseball Mask β' WHERE "unitNumber" = 391;
-UPDATE "Unit" SET "evolvedName" = 'Hijiri Rokudo CC', "trueName" = 'Baseball Mask γ' WHERE "unitNumber" = 392;
-UPDATE "Unit" SET "evolvedName" = 'Saki Nijima CC', "trueName" = 'Samba Saki CC' WHERE "unitNumber" = 393;
-UPDATE "Unit" SET "evolvedName" = 'Subaru Hoshi CC', "trueName" = 'Dark Subaru CC' WHERE "unitNumber" = 394;
-UPDATE "Unit" SET "evolvedName" = 'Miyabi Oyama CC', "trueName" = 'Baseball Mask δ' WHERE "unitNumber" = 395;
-UPDATE "Unit" SET "evolvedName" = 'Ganglion the Ancient', "trueName" = 'Ganglion the Unleashed' WHERE "unitNumber" = 396;
-UPDATE "Unit" SET "evolvedName" = 'Afterschool Sakura', "trueName" = 'Sacred Blade Sakura', "ultraName" = 'Sacred Blade Sakura Z' WHERE "unitNumber" = 397;
-UPDATE "Unit" SET "evolvedName" = 'Mentori CC' WHERE "unitNumber" = 399;
-UPDATE "Unit" SET "evolvedName" = 'Imoto CC' WHERE "unitNumber" = 400;
-UPDATE "Unit" SET "evolvedName" = 'Volta', "trueName" = 'Gigavolta' WHERE "unitNumber" = 401;
-UPDATE "Unit" SET "evolvedName" = 'Plug Suit Shinji', "trueName" = 'Plug Suit Shinji Black' WHERE "unitNumber" = 402;
-UPDATE "Unit" SET "evolvedName" = 'Moon Gendo & Fuyutsuki Cats' WHERE "unitNumber" = 403;
-UPDATE "Unit" SET "evolvedName" = 'Giraffe Unit-02' WHERE "unitNumber" = 404;
-UPDATE "Unit" SET "evolvedName" = 'Plug Suit Kaworu', "trueName" = 'Moon Kaworu' WHERE "unitNumber" = 405;
-UPDATE "Unit" SET "evolvedName" = 'Ayanami Cat (TBC)' WHERE "unitNumber" = 406;
-UPDATE "Unit" SET "evolvedName" = 'Apron Asuka' WHERE "unitNumber" = 407;
-UPDATE "Unit" SET "evolvedName" = 'Special Ops Mari' WHERE "unitNumber" = 408;
-UPDATE "Unit" SET "evolvedName" = 'Plug Suit Rei', "trueName" = 'Reunion Li''l Rei' WHERE "unitNumber" = 409;
-UPDATE "Unit" SET "evolvedName" = 'Plug Suit Asuka', "trueName" = 'Eyepatch Li''l Asuka' WHERE "unitNumber" = 410;
-UPDATE "Unit" SET "evolvedName" = 'Plug Suit Mari' WHERE "unitNumber" = 411;
-UPDATE "Unit" SET "evolvedName" = 'EVA Unit-00 & Cat' WHERE "unitNumber" = 412;
-UPDATE "Unit" SET "evolvedName" = 'EVA Unit-01 & Cat', "trueName" = 'Determined Unit-01 & Cat' WHERE "unitNumber" = 413;
-UPDATE "Unit" SET "evolvedName" = 'EVA Unit-02 & Cat', "trueName" = 'Unit-02, Code 777' WHERE "unitNumber" = 414;
-UPDATE "Unit" SET "evolvedName" = 'Toji & Kensuke Cats' WHERE "unitNumber" = 415;
-UPDATE "Unit" SET "evolvedName" = 'NERV Moon' WHERE "unitNumber" = 416;
-UPDATE "Unit" SET "evolvedName" = 'Subterra Guardians', "trueName" = 'Subterra Sentinels' WHERE "unitNumber" = 417;
-UPDATE "Unit" SET "evolvedName" = 'Corrupted Moneko' WHERE "unitNumber" = 418;
-UPDATE "Unit" SET "evolvedName" = 'Pokota CC' WHERE "unitNumber" = 419;
-UPDATE "Unit" SET "evolvedName" = 'Ovis CC' WHERE "unitNumber" = 420;
-UPDATE "Unit" SET "evolvedName" = 'Coco CC' WHERE "unitNumber" = 421;
-UPDATE "Unit" SET "evolvedName" = 'Mecha-Bun Mk II', "trueName" = 'Ultimate Mecha-Bun' WHERE "unitNumber" = 426;
-UPDATE "Unit" SET "evolvedName" = 'Cat Guild Heroes', "trueName" = 'Cat Quest Heroes' WHERE "unitNumber" = 427;
-UPDATE "Unit" SET "evolvedName" = 'Stylish Souma Cat' WHERE "unitNumber" = 428;
-UPDATE "Unit" SET "evolvedName" = 'Hacker Geek Cat' WHERE "unitNumber" = 429;
-UPDATE "Unit" SET "evolvedName" = 'Inspector Gabriel', "trueName" = 'Section Chief Gravicci', "ultraName" = 'Arcane Commissioner Gravicci' WHERE "unitNumber" = 431;
-UPDATE "Unit" SET "evolvedName" = 'Black Betakkuma' WHERE "unitNumber" = 432;
-UPDATE "Unit" SET "evolvedName" = 'Killer Nekokkuma' WHERE "unitNumber" = 433;
-UPDATE "Unit" SET "evolvedName" = 'Wind Dancer Valkyrie' WHERE "unitNumber" = 435;
-UPDATE "Unit" SET "evolvedName" = 'Nobilan Pasalan', "trueName" = 'Mystican Pasalan' WHERE "unitNumber" = 436;
-UPDATE "Unit" SET "evolvedName" = 'Cat God the Awesome', "trueName" = 'Cat God the Golden' WHERE "unitNumber" = 437;
-UPDATE "Unit" SET "evolvedName" = 'Waverider Kuu, type γ' WHERE "unitNumber" = 438;
-UPDATE "Unit" SET "evolvedName" = 'Chronos the Infinite', "trueName" = 'Almighty Chronos' WHERE "unitNumber" = 439;
-UPDATE "Unit" SET "evolvedName" = 'Nagisa & Cat', "trueName" = 'Law of Cycles Nagisa' WHERE "unitNumber" = 440;
-UPDATE "Unit" SET "evolvedName" = 'Valiant D''arktanyan' WHERE "unitNumber" = 441;
-UPDATE "Unit" SET "evolvedName" = 'Vendor Cat and Kitten', "trueName" = 'Tourist Cat' WHERE "unitNumber" = 442;
-UPDATE "Unit" SET "evolvedName" = 'Power Driller Cat', "trueName" = 'Neo Driller Cat' WHERE "unitNumber" = 443;
-UPDATE "Unit" SET "evolvedName" = 'Power Piledriver Cat', "trueName" = 'Neo Piledriver Cat' WHERE "unitNumber" = 444;
-UPDATE "Unit" SET "evolvedName" = 'Power Cutter Cat', "trueName" = 'Neo Cutter Cat' WHERE "unitNumber" = 445;
-UPDATE "Unit" SET "evolvedName" = 'Power Backhoe Cat', "trueName" = 'Neo Backhoe Cat' WHERE "unitNumber" = 446;
-UPDATE "Unit" SET "evolvedName" = 'Power Saw Cat', "trueName" = 'Neo Saw Cat' WHERE "unitNumber" = 447;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Miyamoto', "trueName" = 'Immortal Miyamoto' WHERE "unitNumber" = 448;
-UPDATE "Unit" SET "evolvedName" = 'Headmistress Jeanne ψ' WHERE "unitNumber" = 449;
-UPDATE "Unit" SET "evolvedName" = 'Babel the Darkflame', "trueName" = 'God-Emperor Babel' WHERE "unitNumber" = 450;
-UPDATE "Unit" SET "evolvedName" = 'Colossal Benkei' WHERE "unitNumber" = 451;
-UPDATE "Unit" SET "evolvedName" = 'Modern Cat', "trueName" = 'Future Cat' WHERE "unitNumber" = 452;
-UPDATE "Unit" SET "evolvedName" = 'Cutie MOMOCO' WHERE "unitNumber" = 455;
-UPDATE "Unit" SET "evolvedName" = 'Sakura Matou CC', "trueName" = 'Dark Sakura CC' WHERE "unitNumber" = 456;
-UPDATE "Unit" SET "evolvedName" = 'Novice Mage Shirou Cat' WHERE "unitNumber" = 457;
-UPDATE "Unit" SET "evolvedName" = 'Heroic Spirit Archer Cat' WHERE "unitNumber" = 458;
-UPDATE "Unit" SET "evolvedName" = 'Heroic Spirit Rider Cat' WHERE "unitNumber" = 459;
-UPDATE "Unit" SET "evolvedName" = 'Gilgamesh & Kotomine Cats' WHERE "unitNumber" = 460;
-UPDATE "Unit" SET "evolvedName" = 'Legelan Pasalan' WHERE "unitNumber" = 461;
-UPDATE "Unit" SET "evolvedName" = 'Filibuster Cat Y', "trueName" = 'Metafilibuster' WHERE "unitNumber" = 462;
-UPDATE "Unit" SET "evolvedName" = 'Doom Engine Pandora' WHERE "unitNumber" = 463;
-UPDATE "Unit" SET "evolvedName" = 'Doguemon', "trueName" = 'Reborn Warrior Doguemon' WHERE "unitNumber" = 464;
-UPDATE "Unit" SET "evolvedName" = 'Dark Lord Zeus' WHERE "unitNumber" = 466;
-UPDATE "Unit" SET "evolvedName" = 'All-Powerful Super Zeus', "trueName" = 'Super S-Zeus' WHERE "unitNumber" = 467;
-UPDATE "Unit" SET "evolvedName" = 'Holy Warrior Phoenix', "trueName" = 'Head Rococo' WHERE "unitNumber" = 468;
-UPDATE "Unit" SET "evolvedName" = 'Imposter Super Devil', "trueName" = 'Super D-Devil' WHERE "unitNumber" = 469;
-UPDATE "Unit" SET "evolvedName" = 'Wondermaria' WHERE "unitNumber" = 470;
-UPDATE "Unit" SET "evolvedName" = 'Perfect Heracrist' WHERE "unitNumber" = 471;
-UPDATE "Unit" SET "evolvedName" = 'Beastly Nero' WHERE "unitNumber" = 472;
-UPDATE "Unit" SET "evolvedName" = 'Holy Yamato', "trueName" = 'Rampaging Yamato' WHERE "unitNumber" = 473;
-UPDATE "Unit" SET "evolvedName" = 'Cross Angel', "trueName" = 'Strike Angel' WHERE "unitNumber" = 474;
-UPDATE "Unit" SET "evolvedName" = 'Warrior King Cat' WHERE "unitNumber" = 475;
-UPDATE "Unit" SET "evolvedName" = 'Infernal Cat' WHERE "unitNumber" = 476;
-UPDATE "Unit" SET "evolvedName" = 'Old Guardian Cat' WHERE "unitNumber" = 477;
-UPDATE "Unit" SET "evolvedName" = 'Luminalia' WHERE "unitNumber" = 478;
-UPDATE "Unit" SET "evolvedName" = 'Professor Abyss' WHERE "unitNumber" = 481;
-UPDATE "Unit" SET "evolvedName" = 'Souma ＆ Cat', "trueName" = 'Cat-Eared Souma' WHERE "unitNumber" = 482;
-UPDATE "Unit" SET "evolvedName" = 'Kano ＆ Souma ＆ Cat' WHERE "unitNumber" = 483;
-UPDATE "Unit" SET "evolvedName" = 'Dark Rider Valkyrie' WHERE "unitNumber" = 484;
-UPDATE "Unit" SET "evolvedName" = 'Calette CC' WHERE "unitNumber" = 485;
-UPDATE "Unit" SET "evolvedName" = 'Swordswoman Hina' WHERE "unitNumber" = 486;
-UPDATE "Unit" SET "evolvedName" = 'EVA Unit-08 & Cat' WHERE "unitNumber" = 487;
-UPDATE "Unit" SET "evolvedName" = 'NNN Wunder', "trueName" = 'Vanished NNN Wunder' WHERE "unitNumber" = 488;
-UPDATE "Unit" SET "evolvedName" = 'Captain Misato' WHERE "unitNumber" = 489;
-UPDATE "Unit" SET "evolvedName" = 'First Officer Ritsuko' WHERE "unitNumber" = 490;
-UPDATE "Unit" SET "evolvedName" = 'Awakened Ayanami' WHERE "unitNumber" = 491;
-UPDATE "Unit" SET "evolvedName" = 'Gaia the Supreme' WHERE "unitNumber" = 493;
-UPDATE "Unit" SET "evolvedName" = 'Seabreeze Coppermine, type κ' WHERE "unitNumber" = 494;
-UPDATE "Unit" SET "evolvedName" = 'Flamenco Cat', "trueName" = 'Bellydance Cat' WHERE "unitNumber" = 495;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Kaihime', "trueName" = 'Immortal Kaihime' WHERE "unitNumber" = 496;
-UPDATE "Unit" SET "evolvedName" = 'Shakurel Macho Cat' WHERE "unitNumber" = 497;
-UPDATE "Unit" SET "evolvedName" = 'Shakurel Lion CC' WHERE "unitNumber" = 498;
-UPDATE "Unit" SET "evolvedName" = 'Shakurel Tiger CC' WHERE "unitNumber" = 499;
-UPDATE "Unit" SET "evolvedName" = 'Shakurel Panda CC' WHERE "unitNumber" = 500;
-UPDATE "Unit" SET "evolvedName" = 'Baka Cat Bros' WHERE "unitNumber" = 501;
-UPDATE "Unit" SET "evolvedName" = 'Myrcia, type ξ', "trueName" = 'Divine Myrcia' WHERE "unitNumber" = 502;
-UPDATE "Unit" SET "evolvedName" = 'Gladios the Annihilator', "trueName" = 'God-Emperor Gladios' WHERE "unitNumber" = 505;
-UPDATE "Unit" SET "evolvedName" = 'Eyewaltz CC', "trueName" = 'Nameless Eyewaltz CC' WHERE "unitNumber" = 506;
-UPDATE "Unit" SET "evolvedName" = 'Supercat' WHERE "unitNumber" = 507;
-UPDATE "Unit" SET "evolvedName" = 'Ryu Cat CC' WHERE "unitNumber" = 508;
-UPDATE "Unit" SET "evolvedName" = 'Chun-Li Cat CC' WHERE "unitNumber" = 509;
-UPDATE "Unit" SET "evolvedName" = 'Akuma CC' WHERE "unitNumber" = 510;
-UPDATE "Unit" SET "evolvedName" = 'Ryu CC', "trueName" = 'Kage' WHERE "unitNumber" = 511;
-UPDATE "Unit" SET "evolvedName" = 'Chun-Li CC' WHERE "unitNumber" = 512;
-UPDATE "Unit" SET "evolvedName" = 'Guile CC' WHERE "unitNumber" = 513;
-UPDATE "Unit" SET "evolvedName" = 'Zangief CC' WHERE "unitNumber" = 514;
-UPDATE "Unit" SET "evolvedName" = 'Blanka CC' WHERE "unitNumber" = 515;
-UPDATE "Unit" SET "evolvedName" = 'Dhalsim CC' WHERE "unitNumber" = 516;
-UPDATE "Unit" SET "evolvedName" = 'Ken CC', "trueName" = 'Crimson King of Battle Ken' WHERE "unitNumber" = 517;
-UPDATE "Unit" SET "evolvedName" = 'Akuma Lion' WHERE "unitNumber" = 518;
-UPDATE "Unit" SET "evolvedName" = 'Ultimate Lasvoss', "trueName" = 'Lasvoss Reborn' WHERE "unitNumber" = 519;
-UPDATE "Unit" SET "evolvedName" = 'Bad-Luck Ebisu' WHERE "unitNumber" = 520;
-UPDATE "Unit" SET "evolvedName" = 'Twintail Medusa Cat', "trueName" = 'Naga Cat' WHERE "unitNumber" = 521;
-UPDATE "Unit" SET "evolvedName" = 'Medalist Cat', "trueName" = 'Fiend Cat' WHERE "unitNumber" = 522;
-UPDATE "Unit" SET "evolvedName" = 'Sifu Cat', "trueName" = 'Shigong Cat' WHERE "unitNumber" = 523;
-UPDATE "Unit" SET "evolvedName" = 'Kinrangers RoboForce', "trueName" = 'Kinrangers GigaForce' WHERE "unitNumber" = 525;
-UPDATE "Unit" SET "evolvedName" = 'Snow Angel Twinstars, type Φ' WHERE "unitNumber" = 526;
-UPDATE "Unit" SET "evolvedName" = 'Jellycat', "trueName" = 'Jelly Dumpling Cat' WHERE "unitNumber" = 527;
-UPDATE "Unit" SET "evolvedName" = 'Vodka Cat', "trueName" = 'Royal Guard Cat' WHERE "unitNumber" = 528;
-UPDATE "Unit" SET "evolvedName" = 'Ritual Saint Kasli' WHERE "unitNumber" = 529;
-UPDATE "Unit" SET "evolvedName" = 'Herme CC' WHERE "unitNumber" = 530;
-UPDATE "Unit" SET "evolvedName" = 'Assassin BearCat', "trueName" = 'Cadaver BearCat' WHERE "unitNumber" = 531;
-UPDATE "Unit" SET "evolvedName" = 'Urs & Minka', "trueName" = 'Awakened Urs' WHERE "unitNumber" = 532;
-UPDATE "Unit" SET "evolvedName" = 'Nighthunter Saki', "trueName" = 'Bad Blaster Saki' WHERE "unitNumber" = 533;
-UPDATE "Unit" SET "evolvedName" = 'Hades the Deathdealer', "trueName" = 'Almighty Hades' WHERE "unitNumber" = 534;
-UPDATE "Unit" SET "evolvedName" = 'Hatsune Miku CC' WHERE "unitNumber" = 535;
-UPDATE "Unit" SET "evolvedName" = 'Sakura Miku CC' WHERE "unitNumber" = 536;
-UPDATE "Unit" SET "evolvedName" = 'Kagamine Rin & Len CC' WHERE "unitNumber" = 537;
-UPDATE "Unit" SET "evolvedName" = 'Miku Cat CC' WHERE "unitNumber" = 538;
-UPDATE "Unit" SET "evolvedName" = 'Quarterback Cat', "trueName" = 'Gridiron Cat' WHERE "unitNumber" = 539;
-UPDATE "Unit" SET "evolvedName" = 'Kasli, Daughter of Chaos' WHERE "unitNumber" = 543;
-UPDATE "Unit" SET "evolvedName" = 'True Kyosaka Nanaho' WHERE "unitNumber" = 544;
-UPDATE "Unit" SET "evolvedName" = 'Miasma Cat', "trueName" = 'Bubble Cat' WHERE "unitNumber" = 545;
-UPDATE "Unit" SET "evolvedName" = 'Papalan Pasalan', "trueName" = 'Sukelan Kakulan' WHERE "unitNumber" = 546;
-UPDATE "Unit" SET "evolvedName" = 'Heavenly Herald Rei' WHERE "unitNumber" = 547;
-UPDATE "Unit" SET "evolvedName" = '4th Angel Cat' WHERE "unitNumber" = 548;
-UPDATE "Unit" SET "evolvedName" = '6th Angel Cat' WHERE "unitNumber" = 549;
-UPDATE "Unit" SET "evolvedName" = '10th Angel Cat' WHERE "unitNumber" = 550;
-UPDATE "Unit" SET "evolvedName" = '9th Angel Cat' WHERE "unitNumber" = 551;
-UPDATE "Unit" SET "evolvedName" = 'Moon Kaworu Cat' WHERE "unitNumber" = 552;
-UPDATE "Unit" SET "evolvedName" = 'Boomerang Cat', "trueName" = 'Fried Chicken Cat' WHERE "unitNumber" = 553;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Uril', "trueName" = 'Esoteric Uril' WHERE "unitNumber" = 554;
-UPDATE "Unit" SET "evolvedName" = 'All-Loving Shaman Khan' WHERE "unitNumber" = 555;
-UPDATE "Unit" SET "evolvedName" = 'Holy King Alibaba', "trueName" = 'Ghost Alibaba' WHERE "unitNumber" = 556;
-UPDATE "Unit" SET "evolvedName" = 'Heavenly Lord Jack' WHERE "unitNumber" = 557;
-UPDATE "Unit" SET "evolvedName" = 'Lucky Gacha Cat' WHERE "unitNumber" = 558;
-UPDATE "Unit" SET "evolvedName" = 'Hell Sentinel Emma', "trueName" = 'Hell Commissioner Emma' WHERE "unitNumber" = 559;
-UPDATE "Unit" SET "evolvedName" = 'Megurine Luka CC' WHERE "unitNumber" = 560;
-UPDATE "Unit" SET "evolvedName" = 'MEIKO & Cat CC' WHERE "unitNumber" = 561;
-UPDATE "Unit" SET "evolvedName" = 'Luka Cat CC' WHERE "unitNumber" = 562;
-UPDATE "Unit" SET "evolvedName" = 'Aquabuster Saki', "trueName" = 'Aquablaster Saki' WHERE "unitNumber" = 563;
-UPDATE "Unit" SET "evolvedName" = 'Bikinilan Pasalan', "trueName" = 'Fabulous Pasalan' WHERE "unitNumber" = 564;
-UPDATE "Unit" SET "evolvedName" = 'Macho Suntan Cat', "trueName" = 'Permed Suntan Cat' WHERE "unitNumber" = 565;
-UPDATE "Unit" SET "evolvedName" = 'Sweet Bro Cats', "trueName" = 'Gelato Bro Cats' WHERE "unitNumber" = 566;
-UPDATE "Unit" SET "evolvedName" = 'Idi:N2', "trueName" = 'Idi:NX' WHERE "unitNumber" = 568;
-UPDATE "Unit" SET "evolvedName" = 'Gravolo', "trueName" = 'Gravolodon' WHERE "unitNumber" = 569;
-UPDATE "Unit" SET "evolvedName" = 'Nightmare King Vars', "trueName" = 'Halloween Knight Vars' WHERE "unitNumber" = 570;
-UPDATE "Unit" SET "evolvedName" = 'E. Honda CC' WHERE "unitNumber" = 571;
-UPDATE "Unit" SET "evolvedName" = 'Balrog CC' WHERE "unitNumber" = 572;
-UPDATE "Unit" SET "evolvedName" = 'Vega CC' WHERE "unitNumber" = 573;
-UPDATE "Unit" SET "evolvedName" = 'Sagat CC' WHERE "unitNumber" = 574;
-UPDATE "Unit" SET "evolvedName" = 'M. Bison CC' WHERE "unitNumber" = 575;
-UPDATE "Unit" SET "evolvedName" = 'C. Honda CC' WHERE "unitNumber" = 576;
-UPDATE "Unit" SET "evolvedName" = 'Balrog Cat CC' WHERE "unitNumber" = 577;
-UPDATE "Unit" SET "evolvedName" = 'Vega Cat CC' WHERE "unitNumber" = 578;
-UPDATE "Unit" SET "evolvedName" = 'Sagat Cat CC' WHERE "unitNumber" = 579;
-UPDATE "Unit" SET "evolvedName" = 'M. Bison Cat CC' WHERE "unitNumber" = 580;
-UPDATE "Unit" SET "evolvedName" = 'Boulder Cat' WHERE "unitNumber" = 581;
-UPDATE "Unit" SET "evolvedName" = 'Hatsune Miku CC: MM2020 Osaka' WHERE "unitNumber" = 582;
-UPDATE "Unit" SET "evolvedName" = 'Hatsune Miku CC: MM2020 Tokyo' WHERE "unitNumber" = 583;
-UPDATE "Unit" SET "evolvedName" = 'Maeda Christmas', "trueName" = 'Maeda Christmas DX' WHERE "unitNumber" = 584;
-UPDATE "Unit" SET "evolvedName" = 'Mighty Aegis Garu' WHERE "unitNumber" = 585;
-UPDATE "Unit" SET "evolvedName" = 'Tyrant Cat' WHERE "unitNumber" = 586;
-UPDATE "Unit" SET "evolvedName" = 'Chocoladite' WHERE "unitNumber" = 587;
-UPDATE "Unit" SET "evolvedName" = 'First-Love Myrcia ξ' WHERE "unitNumber" = 588;
-UPDATE "Unit" SET "evolvedName" = 'Sweetheart Neneko', "trueName" = 'True Love Neneko' WHERE "unitNumber" = 589;
-UPDATE "Unit" SET "evolvedName" = 'Snow Miku CC 2021' WHERE "unitNumber" = 590;
-UPDATE "Unit" SET "evolvedName" = 'KAITO & Cat CC' WHERE "unitNumber" = 591;
-UPDATE "Unit" SET "evolvedName" = 'Neko Rin CC' WHERE "unitNumber" = 592;
-UPDATE "Unit" SET "evolvedName" = 'Neko Len CC' WHERE "unitNumber" = 593;
-UPDATE "Unit" SET "evolvedName" = 'Atlantis Logistix', "trueName" = 'Ultra Atlantis Logistix' WHERE "unitNumber" = 594;
-UPDATE "Unit" SET "evolvedName" = 'Everbloom Kamukura', "trueName" = 'Everbloom Lord Kamukura' WHERE "unitNumber" = 595;
-UPDATE "Unit" SET "evolvedName" = 'Ranma Saotome (F)' WHERE "unitNumber" = 596;
-UPDATE "Unit" SET "evolvedName" = 'Akane Tendo (Gi)' WHERE "unitNumber" = 597;
-UPDATE "Unit" SET "evolvedName" = 'Ryoga Hibiki' WHERE "unitNumber" = 598;
-UPDATE "Unit" SET "evolvedName" = 'Shampoo' WHERE "unitNumber" = 599;
-UPDATE "Unit" SET "evolvedName" = 'Mousse' WHERE "unitNumber" = 600;
-UPDATE "Unit" SET "evolvedName" = 'Happosai (Lewd)' WHERE "unitNumber" = 601;
-UPDATE "Unit" SET "evolvedName" = 'Ukyo Kuonji' WHERE "unitNumber" = 602;
-UPDATE "Unit" SET "evolvedName" = 'Tatewaki Kuno' WHERE "unitNumber" = 603;
-UPDATE "Unit" SET "evolvedName" = 'Ranma Cat (F)' WHERE "unitNumber" = 604;
-UPDATE "Unit" SET "evolvedName" = 'Akane Cat (Gi)' WHERE "unitNumber" = 605;
-UPDATE "Unit" SET "evolvedName" = 'Genma Cat' WHERE "unitNumber" = 606;
-UPDATE "Unit" SET "evolvedName" = 'Swashbuckler Kanna', "trueName" = 'Fabled Adventure Girl Kanna' WHERE "unitNumber" = 607;
-UPDATE "Unit" SET "evolvedName" = 'Dark Beastlord Garu' WHERE "unitNumber" = 609;
-UPDATE "Unit" SET "evolvedName" = 'King Ingot Cat', "trueName" = 'King Nekokhamen' WHERE "unitNumber" = 610;
-UPDATE "Unit" SET "evolvedName" = 'Shin Godzilla Cat' WHERE "unitNumber" = 611;
-UPDATE "Unit" SET "evolvedName" = 'Empress Cat' WHERE "unitNumber" = 612;
-UPDATE "Unit" SET "evolvedName" = 'Cat Mask Doron', "trueName" = 'Awakened Doron' WHERE "unitNumber" = 613;
-UPDATE "Unit" SET "evolvedName" = 'The Southern Sun', "trueName" = 'The Southern Sunflare' WHERE "unitNumber" = 614;
-UPDATE "Unit" SET "evolvedName" = 'Golden Kabuto Cat' WHERE "unitNumber" = 615;
-UPDATE "Unit" SET "evolvedName" = 'King Kuwagata Cat' WHERE "unitNumber" = 616;
-UPDATE "Unit" SET "evolvedName" = 'Dark Summoner Satoru', "trueName" = 'Devil Hunter Satoru' WHERE "unitNumber" = 617;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Amakusa', "trueName" = 'Immortal Amakusa' WHERE "unitNumber" = 618;
-UPDATE "Unit" SET "evolvedName" = 'Lilin π', "trueName" = 'Divine Lilin π' WHERE "unitNumber" = 619;
-UPDATE "Unit" SET "evolvedName" = 'Wicked King Hevijak', "trueName" = 'God-Emperor Hevijak' WHERE "unitNumber" = 620;
-UPDATE "Unit" SET "evolvedName" = 'Evil Aku Researcher', "trueName" = 'Cat Researcher' WHERE "unitNumber" = 621;
-UPDATE "Unit" SET "evolvedName" = 'Lord of Ruin Jagando Jr.' WHERE "unitNumber" = 622;
-UPDATE "Unit" SET "evolvedName" = 'Komuso Cat', "trueName" = 'Brass Cat' WHERE "unitNumber" = 623;
-UPDATE "Unit" SET "evolvedName" = 'Dodgeball Kunio-kun' WHERE "unitNumber" = 624;
-UPDATE "Unit" SET "evolvedName" = 'Furilan Pasalan', "trueName" = 'Ragelan Pasalan' WHERE "unitNumber" = 625;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Macho Cat', "trueName" = 'Brainwashed Mohawk Cat' WHERE "unitNumber" = 629;
-UPDATE "Unit" SET "evolvedName" = 'Tea Master Cat' WHERE "unitNumber" = 630;
-UPDATE "Unit" SET "evolvedName" = 'Yaminoir', "trueName" = 'Yaminora' WHERE "unitNumber" = 631;
-UPDATE "Unit" SET "evolvedName" = 'Siege Walker Diabolosa', "trueName" = 'Obliterator Diabolosa' WHERE "unitNumber" = 632;
-UPDATE "Unit" SET "evolvedName" = 'Chunchun Haunters', "trueName" = 'Grand Chunchun Haunters' WHERE "unitNumber" = 633;
-UPDATE "Unit" SET "evolvedName" = 'Black Knight Kyklops', "trueName" = 'Demon Knight Kyklops' WHERE "unitNumber" = 634;
-UPDATE "Unit" SET "evolvedName" = 'Hundred-Million-Dollar Cat' WHERE "unitNumber" = 635;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Wall Cat', "trueName" = 'Brainwashed Eraser Cat' WHERE "unitNumber" = 636;
-UPDATE "Unit" SET "evolvedName" = 'Iz the Alluring Dancer' WHERE "unitNumber" = 641;
-UPDATE "Unit" SET "evolvedName" = 'Grand Lucifer', "trueName" = 'Almighty Lucifer' WHERE "unitNumber" = 642;
-UPDATE "Unit" SET "evolvedName" = 'Superfeline II', "trueName" = 'True Superfeline' WHERE "unitNumber" = 643;
-UPDATE "Unit" SET "evolvedName" = 'Bittersweet Mekako', "trueName" = 'Minty Love Mekako' WHERE "unitNumber" = 644;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Brave Cat', "trueName" = 'Brainwashed Dark Cat' WHERE "unitNumber" = 645;
-UPDATE "Unit" SET "evolvedName" = 'Macho Firecracker Cat' WHERE "unitNumber" = 646;
-UPDATE "Unit" SET "evolvedName" = 'Huntress Terun ζ', "trueName" = 'Divine Huntress Terun ζ' WHERE "unitNumber" = 647;
-UPDATE "Unit" SET "evolvedName" = 'Lovestruck Greater Demon' WHERE "unitNumber" = 648;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Hanzo', "trueName" = 'Immortal Hanzo' WHERE "unitNumber" = 649;
-UPDATE "Unit" SET "evolvedName" = 'Girlfriend Cat' WHERE "unitNumber" = 650;
-UPDATE "Unit" SET "evolvedName" = 'Iron-Masked Lion Cat' WHERE "unitNumber" = 651;
-UPDATE "Unit" SET "evolvedName" = 'Chalkboard Punk Cat' WHERE "unitNumber" = 652;
-UPDATE "Unit" SET "evolvedName" = 'Storm Beast Naala', "trueName" = 'Awakened Naala' WHERE "unitNumber" = 653;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Sexy Legs Cat', "trueName" = 'Brainwashed Macho Legs Cat' WHERE "unitNumber" = 654;
-UPDATE "Unit" SET "evolvedName" = 'Blizana', "trueName" = 'Blizarena' WHERE "unitNumber" = 655;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Egg: N001', "trueName" = 'Haniwa Cat' WHERE "unitNumber" = 656;
-UPDATE "Unit" SET "evolvedName" = 'Iz the Lady of Mourning' WHERE "unitNumber" = 657;
-UPDATE "Unit" SET "evolvedName" = 'Cinnabar Egg: N101', "trueName" = 'Courier Cat' WHERE "unitNumber" = 658;
-UPDATE "Unit" SET "evolvedName" = 'Teal Egg: N102', "trueName" = 'Catarzan' WHERE "unitNumber" = 659;
-UPDATE "Unit" SET "evolvedName" = 'Sea King Daliasan', "trueName" = 'God-Emperor Daliasan' WHERE "unitNumber" = 660;
-UPDATE "Unit" SET "evolvedName" = 'Wedding Chronos' WHERE "unitNumber" = 661;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Giraffe Cat', "trueName" = 'Brainwashed Lion Cat' WHERE "unitNumber" = 662;
-UPDATE "Unit" SET "evolvedName" = 'Black Egg: N103', "trueName" = 'Gas Mask Cat' WHERE "unitNumber" = 663;
-UPDATE "Unit" SET "evolvedName" = 'Green Egg: N104', "trueName" = 'Surgeon Cat' WHERE "unitNumber" = 664;
-UPDATE "Unit" SET "evolvedName" = 'Dark Egg: N201', "trueName" = 'Exorcist Cat' WHERE "unitNumber" = 665;
-UPDATE "Unit" SET "evolvedName" = 'Night Beach Lilinπ' WHERE "unitNumber" = 666;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed UFO Cat', "trueName" = 'Brainwashed Flying Cat' WHERE "unitNumber" = 667;
-UPDATE "Unit" SET "evolvedName" = 'Grand Yokai Tengu', "trueName" = 'Immortal Master Tengu' WHERE "unitNumber" = 668;
-UPDATE "Unit" SET "evolvedName" = 'Evil Egg: N003', "trueName" = 'Cat Cactus' WHERE "unitNumber" = 669;
-UPDATE "Unit" SET "evolvedName" = 'Cinnabar Egg: N202', "trueName" = 'Armored Firefly Cat' WHERE "unitNumber" = 670;
-UPDATE "Unit" SET "evolvedName" = 'Ranma Saotome (Cheer)' WHERE "unitNumber" = 671;
-UPDATE "Unit" SET "evolvedName" = 'Genma Saotome' WHERE "unitNumber" = 672;
-UPDATE "Unit" SET "evolvedName" = 'Extraterrestrial Envanz', "trueName" = 'Extradimensional Envanz' WHERE "unitNumber" = 674;
-UPDATE "Unit" SET "evolvedName" = 'Teal Egg: N105', "trueName" = 'Racquet Cat' WHERE "unitNumber" = 675;
-UPDATE "Unit" SET "evolvedName" = 'Amber Egg: N106', "trueName" = 'Mushroom Cat' WHERE "unitNumber" = 676;
-UPDATE "Unit" SET "evolvedName" = 'Osamu Mikumo & Cat CC' WHERE "unitNumber" = 677;
-UPDATE "Unit" SET "evolvedName" = 'Yuma Kuga & Cat CC' WHERE "unitNumber" = 678;
-UPDATE "Unit" SET "evolvedName" = 'Chika Amatori & Cat CC' WHERE "unitNumber" = 679;
-UPDATE "Unit" SET "evolvedName" = 'Sakura CC' WHERE "unitNumber" = 680;
-UPDATE "Unit" SET "evolvedName" = 'Luke CC' WHERE "unitNumber" = 681;
-UPDATE "Unit" SET "evolvedName" = 'Illusory Guardian Vega', "trueName" = 'Lady of Deception Vega' WHERE "unitNumber" = 682;
-UPDATE "Unit" SET "evolvedName" = 'Nosferatu Yukimura', "trueName" = 'Vampiric Yukimura' WHERE "unitNumber" = 683;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Whale Cat', "trueName" = 'Brainwashed Island Cat' WHERE "unitNumber" = 684;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Egg: N004', "trueName" = 'Supercar Cat' WHERE "unitNumber" = 685;
-UPDATE "Unit" SET "evolvedName" = 'Goddess of Sunrise Sirius' WHERE "unitNumber" = 686;
-UPDATE "Unit" SET "evolvedName" = 'Reindeer Terunζ' WHERE "unitNumber" = 687;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Dragon Cat', "trueName" = 'Brainwashed King Dragon Cat' WHERE "unitNumber" = 688;
-UPDATE "Unit" SET "evolvedName" = 'Paragon Cat' WHERE "unitNumber" = 689;
-UPDATE "Unit" SET "evolvedName" = 'King of Destiny Phonoa' WHERE "unitNumber" = 690;
-UPDATE "Unit" SET "evolvedName" = 'Elder Egg: N000', "trueName" = 'Ape Lord Luza' WHERE "unitNumber" = 691;
-UPDATE "Unit" SET "evolvedName" = 'Oni Landshaker Kozuchimaru', "trueName" = 'Oni Battlepod Kozuchimaru' WHERE "unitNumber" = 692;
-UPDATE "Unit" SET "evolvedName" = 'Black Butler Vigler' WHERE "unitNumber" = 693;
-UPDATE "Unit" SET "evolvedName" = 'Brainwashed Mythic Titan', "trueName" = 'Brainwashed Jamiera Cat' WHERE "unitNumber" = 694;
-UPDATE "Unit" SET "evolvedName" = 'True Killer Tank Cat' WHERE "unitNumber" = 695;
-UPDATE "Unit" SET "evolvedName" = 'Stealth Class Rep Cat' WHERE "unitNumber" = 696;
-UPDATE "Unit" SET "evolvedName" = 'Violet Egg: N107', "trueName" = 'Cat Chief' WHERE "unitNumber" = 697;
-UPDATE "Unit" SET "evolvedName" = 'Bloody Jack', "trueName" = 'Lightning Jack' WHERE "unitNumber" = 698;
-UPDATE "Unit" SET "evolvedName" = 'Rabbit Champion Satoru' WHERE "unitNumber" = 699;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Egg: N005', "trueName" = 'Hitman Cat' WHERE "unitNumber" = 700;
-UPDATE "Unit" SET "evolvedName" = 'King of Extinction Phono' WHERE "unitNumber" = 705;
-UPDATE "Unit" SET "evolvedName" = 'Teal Egg: N108', "trueName" = 'Soap Cat' WHERE "unitNumber" = 706;
-UPDATE "Unit" SET "evolvedName" = 'Dark Egg: N109', "trueName" = 'Barrel Cat' WHERE "unitNumber" = 707;
-UPDATE "Unit" SET "evolvedName" = 'Kinjirou Cat' WHERE "unitNumber" = 708;
-UPDATE "Unit" SET "evolvedName" = 'Blue-Eyed Asuka' WHERE "unitNumber" = 709;
-UPDATE "Unit" SET "evolvedName" = 'EVA Unit-13 & Cat' WHERE "unitNumber" = 710;
-UPDATE "Unit" SET "evolvedName" = 'Betrothed Pasalan' WHERE "unitNumber" = 711;
-UPDATE "Unit" SET "evolvedName" = 'Kaolan Pasalan', "trueName" = 'Kaolan Tatalan' WHERE "unitNumber" = 712;
-UPDATE "Unit" SET "evolvedName" = 'Violet Egg: N203', "trueName" = 'Clown Cat' WHERE "unitNumber" = 713;
-UPDATE "Unit" SET "evolvedName" = 'Deep-Diver Kanna', "trueName" = 'Great Deep-Diver Kanna' WHERE "unitNumber" = 714;
-UPDATE "Unit" SET "evolvedName" = 'Attack Battalion Convoys', "trueName" = 'Hyper Battalion Convoys' WHERE "unitNumber" = 715;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Egg: N111', "trueName" = 'Cop Cat' WHERE "unitNumber" = 716;
-UPDATE "Unit" SET "evolvedName" = 'Amber Egg: N110', "trueName" = 'Farmboy Cat' WHERE "unitNumber" = 717;
-UPDATE "Unit" SET "evolvedName" = 'Cone Cat' WHERE "unitNumber" = 718;
-UPDATE "Unit" SET "evolvedName" = 'Tetsukachi' WHERE "unitNumber" = 719;
-UPDATE "Unit" SET "evolvedName" = 'Devil Egg: N006', "trueName" = 'Fallen Bear Cat' WHERE "unitNumber" = 720;
-UPDATE "Unit" SET "evolvedName" = 'Dodgeball Riki' WHERE "unitNumber" = 721;
-UPDATE "Unit" SET "evolvedName" = 'Hatsune Miku XVI CC' WHERE "unitNumber" = 722;
-UPDATE "Unit" SET "evolvedName" = 'Nefer Aset', "trueName" = 'Almighty Aset' WHERE "unitNumber" = 723;
-UPDATE "Unit" SET "evolvedName" = 'Mystic Egg: N112', "trueName" = 'Cat Egg Pod' WHERE "unitNumber" = 724;
-UPDATE "Unit" SET "evolvedName" = 'Gourmand Ninja Girl Tomoe' WHERE "unitNumber" = 725;
-UPDATE "Unit" SET "evolvedName" = 'Medal Emperor' WHERE "unitNumber" = 726;
-UPDATE "Unit" SET "evolvedName" = 'SOL DAE ROKKER CC' WHERE "unitNumber" = 727;
-UPDATE "Unit" SET "evolvedName" = 'Master of Mind Catcrates' WHERE "unitNumber" = 728;
-UPDATE "Unit" SET "evolvedName" = 'Cinnabar Egg: N204', "trueName" = 'Lion Dancer Cat' WHERE "unitNumber" = 730;
-UPDATE "Unit" SET "evolvedName" = 'Dawnbringer Izanagi' WHERE "unitNumber" = 731;
-UPDATE "Unit" SET "evolvedName" = 'Pegasa ν', "trueName" = 'Uninterested in the plots and schemes of adults,' WHERE "unitNumber" = 733;
-UPDATE "Unit" SET "evolvedName" = 'Midlife Crisis Cat' WHERE "unitNumber" = 735;
-UPDATE "Unit" SET "evolvedName" = 'Arctic Bloom Cat' WHERE "unitNumber" = 736;
-UPDATE "Unit" SET "evolvedName" = 'Floral Kalisa, type X' WHERE "unitNumber" = 737;
-UPDATE "Unit" SET "evolvedName" = 'Izanami of Eventide' WHERE "unitNumber" = 738;
-UPDATE "Unit" SET "evolvedName" = 'Mimic Cat' WHERE "unitNumber" = 740;
-UPDATE "Unit" SET "evolvedName" = 'Daji & Cat' WHERE "unitNumber" = 741;
-UPDATE "Unit" SET "evolvedName" = 'Mesmerizing Tune - Mollyanna' WHERE "unitNumber" = 742;
-UPDATE "Unit" SET "evolvedName" = 'Madhead Cat' WHERE "unitNumber" = 743;
-UPDATE "Unit" SET "evolvedName" = 'Mercenary Leader Felix Cat' WHERE "unitNumber" = 744;
-UPDATE "Unit" SET "evolvedName" = 'Birthday Dotty Cat' WHERE "unitNumber" = 745;
-UPDATE "Unit" SET "evolvedName" = 'Kenshin Himura CC' WHERE "unitNumber" = 746;
-UPDATE "Unit" SET "evolvedName" = 'Sanosuke Sagara CC' WHERE "unitNumber" = 747;
-UPDATE "Unit" SET "evolvedName" = 'Aoshi Shinomori CC' WHERE "unitNumber" = 748;
-UPDATE "Unit" SET "evolvedName" = 'Hajime Saito CC' WHERE "unitNumber" = 749;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Kaoru CC' WHERE "unitNumber" = 750;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Yahiko CC' WHERE "unitNumber" = 751;
-UPDATE "Unit" SET "evolvedName" = 'Battosai Cat' WHERE "unitNumber" = 752;
-UPDATE "Unit" SET "evolvedName" = 'Swordscat Kaoru' WHERE "unitNumber" = 753;
-UPDATE "Unit" SET "evolvedName" = 'Wargod Mitsuhide' WHERE "unitNumber" = 754;
-UPDATE "Unit" SET "evolvedName" = 'Wedding Cake Machine' WHERE "unitNumber" = 756;
-UPDATE "Unit" SET "evolvedName" = 'Violet Egg: N205', "trueName" = 'Bride Cat' WHERE "unitNumber" = 757;
-UPDATE "Unit" SET "evolvedName" = 'Trixi the Revenant' WHERE "unitNumber" = 758;
-UPDATE "Unit" SET "evolvedName" = 'Music Fest Thundia β' WHERE "unitNumber" = 759;
-UPDATE "Unit" SET "evolvedName" = 'Ballistic Dragon Gunduros' WHERE "unitNumber" = 760;
-UPDATE "Unit" SET "evolvedName" = 'Mecha Dynasaurus Cat' WHERE "unitNumber" = 763;
-UPDATE "Unit" SET "evolvedName" = 'Cinnabar Egg: N206', "trueName" = 'Clam Cat' WHERE "unitNumber" = 765;
-UPDATE "Unit" SET "evolvedName" = 'Sardine CC', "trueName" = 'Dropping in from "Survive! Mola Mola!" Tiny bones' WHERE "unitNumber" = 766;
-UPDATE "Unit" SET "evolvedName" = 'Squid CC' WHERE "unitNumber" = 767;
-UPDATE "Unit" SET "evolvedName" = 'Taitenki CC' WHERE "unitNumber" = 768;
-UPDATE "Unit" SET "evolvedName" = 'Ravenous Cherry' WHERE "unitNumber" = 769;
-UPDATE "Unit" SET "evolvedName" = 'Master of Life Catnova' WHERE "unitNumber" = 771;
-UPDATE "Unit" SET "evolvedName" = 'Sodom-o''-Lantern' WHERE "unitNumber" = 772;
-UPDATE "Unit" SET "evolvedName" = 'Mama Mummy Sumo' WHERE "unitNumber" = 773;
-UPDATE "Unit" SET "evolvedName" = 'Steel Sergeant Axel' WHERE "unitNumber" = 774;
-UPDATE "Unit" SET "evolvedName" = 'Commander Cat' WHERE "unitNumber" = 776;
-UPDATE "Unit" SET "evolvedName" = 'Winter Commander Kaihime' WHERE "unitNumber" = 777;
-UPDATE "Unit" SET "evolvedName" = 'Magical Cat☆ Magica' WHERE "unitNumber" = 778;
-UPDATE "Unit" SET "evolvedName" = 'Salvation''s Daughter Lunacia' WHERE "unitNumber" = 779;
-UPDATE "Unit" SET "evolvedName" = 'Dodgeballer Cat' WHERE "unitNumber" = 780;
-UPDATE "Unit" SET "evolvedName" = 'Mamolan Pasalan' WHERE "unitNumber" = 781;
-UPDATE "Unit" SET "evolvedName" = 'Superstar Koneko' WHERE "unitNumber" = 783;
-UPDATE "Unit" SET "evolvedName" = 'True Killer Gross Cat' WHERE "unitNumber" = 785;
-UPDATE "Unit" SET "evolvedName" = 'Illusionist Catman' WHERE "unitNumber" = 786;
-UPDATE "Unit" SET "evolvedName" = 'Death''s Daughter Lunacia' WHERE "unitNumber" = 787;
-UPDATE "Unit" SET "evolvedName" = 'Baki Hanma CC' WHERE "unitNumber" = 789;
-UPDATE "Unit" SET "evolvedName" = 'Retsu Kaioh CC' WHERE "unitNumber" = 790;
-UPDATE "Unit" SET "evolvedName" = 'Kaoru Hanayama CC' WHERE "unitNumber" = 791;
-UPDATE "Unit" SET "evolvedName" = 'Katsumi Orochi CC' WHERE "unitNumber" = 792;
-UPDATE "Unit" SET "evolvedName" = 'Jack Hammer CC' WHERE "unitNumber" = 793;
-UPDATE "Unit" SET "evolvedName" = 'Ogre Cat Face' WHERE "unitNumber" = 794;
-UPDATE "Unit" SET "evolvedName" = 'Li''l Baki CC' WHERE "unitNumber" = 795;
-UPDATE "Unit" SET "evolvedName" = 'Baki Cat CC' WHERE "unitNumber" = 796;
-UPDATE "Unit" SET "evolvedName" = 'Kaioh Cat CC' WHERE "unitNumber" = 797;
-UPDATE "Unit" SET "evolvedName" = 'Doppo Cat CC' WHERE "unitNumber" = 798;
-UPDATE "Unit" SET "evolvedName" = 'Grandiose Gunhauzer' WHERE "unitNumber" = 799;
-UPDATE "Unit" SET "evolvedName" = 'Master of Logic Mewton' WHERE "unitNumber" = 801;
-UPDATE "Unit" SET "evolvedName" = 'Sonic & Cat' WHERE "unitNumber" = 803;
-UPDATE "Unit" SET "evolvedName" = 'Tails & Cat' WHERE "unitNumber" = 804;
-UPDATE "Unit" SET "evolvedName" = 'Knuckles & Cat' WHERE "unitNumber" = 805;
-UPDATE "Unit" SET "evolvedName" = 'Shadow & Cat' WHERE "unitNumber" = 806;
-UPDATE "Unit" SET "evolvedName" = 'Sonic Cat CC' WHERE "unitNumber" = 807;
-UPDATE "Unit" SET "evolvedName" = 'Tails Cat CC' WHERE "unitNumber" = 808;
-UPDATE "Unit" SET "evolvedName" = 'Shadow Cat CC' WHERE "unitNumber" = 809;
-UPDATE "Unit" SET "evolvedName" = 'Edgemaster Staal' WHERE "unitNumber" = 810;
-UPDATE "Unit" SET "evolvedName" = 'Zeta Skanda' WHERE "unitNumber" = 811;
-UPDATE "Unit" SET "evolvedName" = 'Tasmanian Giant Crab CC' WHERE "unitNumber" = 813;
-UPDATE "Unit" SET "evolvedName" = 'Mass Production EVA-Cat' WHERE "unitNumber" = 814;
-UPDATE "Unit" SET "evolvedName" = 'Moon Disciple Kaworu' WHERE "unitNumber" = 815;
-UPDATE "Unit" SET "evolvedName" = 'Moririn' WHERE "unitNumber" = 817;
-UPDATE "Unit" SET "evolvedName" = 'Rapper Cat' WHERE "unitNumber" = 819;
-UPDATE "Unit" SET "evolvedName" = 'Seaside Pegasa v' WHERE "unitNumber" = 820;
-UPDATE "Unit" SET "evolvedName" = 'Business Partner Cat' WHERE "unitNumber" = 822;
-UPDATE "Unit" SET "evolvedName" = 'Flame Mage Sidmi' WHERE "unitNumber" = 824;
-UPDATE "Unit" SET "evolvedName" = 'Cammy CC' WHERE "unitNumber" = 826;
-UPDATE "Unit" SET "evolvedName" = 'Juri CC' WHERE "unitNumber" = 827;
-UPDATE "Unit" SET "evolvedName" = 'Zangief Cat CC' WHERE "unitNumber" = 828;
-UPDATE "Unit" SET "evolvedName" = 'Jamie Cat CC' WHERE "unitNumber" = 829;
-UPDATE "Unit" SET "evolvedName" = 'Raclesa Σ' WHERE "unitNumber" = 830;
-UPDATE "Unit" SET "evolvedName" = 'Lunos the Luminous' WHERE "unitNumber" = 837;
+-- Bulk update evolved names
+UPDATE "Unit" SET "evolvedName" = CASE "unitNumber"
+  WHEN 0 THEN 'Macho Cat'
+  WHEN 1 THEN 'Wall Cat'
+  WHEN 2 THEN 'Brave Cat'
+  WHEN 3 THEN 'Sexy Legs Cat'
+  WHEN 4 THEN 'Giraffe Cat'
+  WHEN 5 THEN 'UFO Cat'
+  WHEN 6 THEN 'Whale Cat'
+  WHEN 7 THEN 'Dragon Cat'
+  WHEN 8 THEN 'Mythical Titan Cat'
+  WHEN 9 THEN 'Mother Cat'
+  WHEN 10 THEN 'Drunken Master Cat'
+  WHEN 11 THEN 'Super Mr.'
+  WHEN 12 THEN 'Bondage CatNEO'
+  WHEN 13 THEN 'Executioner'
+  WHEN 14 THEN 'Cat Gang'
+  WHEN 15 THEN 'Leaf Cat'
+  WHEN 16 THEN 'Miss MONEKO'
+  WHEN 17 THEN 'Biker Cat'
+  WHEN 18 THEN 'Ninja Frog Cat'
+  WHEN 19 THEN 'Devil Cat'
+  WHEN 20 THEN 'Knight Cat'
+  WHEN 21 THEN 'Madame Sumo'
+  WHEN 22 THEN 'Samba Cat'
+  WHEN 23 THEN 'Tights Cat'
+  WHEN 24 THEN 'True Valkyrie Cat'
+  WHEN 25 THEN 'Crazed Bahamut Cat'
+  WHEN 26 THEN 'Full color Kerihime'
+  WHEN 27 THEN 'Cat Princess beauty'
+  WHEN 28 THEN 'Cramped Cats'
+  WHEN 29 THEN 'Luchador Cat'
+  WHEN 30 THEN 'Avalokitesvara Cat'
+  WHEN 31 THEN 'Angry Delinquent Cat'
+  WHEN 32 THEN 'Dancing Flasher Cat'
+  WHEN 33 THEN 'Sadako Cat'
+  WHEN 34 THEN 'Unknown Cat'
+  WHEN 35 THEN 'Hacker Cat'
+  WHEN 36 THEN 'Butterfly Cat'
+  WHEN 37 THEN 'Masai Cat'
+  WHEN 38 THEN 'Solar Cat'
+  WHEN 39 THEN 'Face Cat'
+  WHEN 40 THEN 'Sexy Bathtub Cat'
+  WHEN 41 THEN 'Paris Cat'
+  WHEN 42 THEN 'Ice Queen Cat'
+  WHEN 43 THEN 'Cat Machine Mk 2'
+  WHEN 44 THEN 'Greater Demon Cat'
+  WHEN 45 THEN 'Geisha Cat'
+  WHEN 46 THEN 'Jurassic Cat Sitter'
+  WHEN 47 THEN 'Thor Cat'
+  WHEN 48 THEN 'Captain Cat'
+  WHEN 49 THEN 'Phantom Thief Cat'
+  WHEN 50 THEN 'Monk Cat'
+  WHEN 51 THEN 'Fisherman Cat'
+  WHEN 52 THEN 'Necromancer Cat'
+  WHEN 53 THEN 'Filibuster Cat'
+  WHEN 55 THEN 'Sorceress Cat'
+  WHEN 56 THEN 'Cupid Cat'
+  WHEN 57 THEN 'Berserker Cat'
+  WHEN 58 THEN 'Sword Master Cat'
+  WHEN 59 THEN 'Baby Cats'
+  WHEN 60 THEN 'Michelangelo Cat'
+  WHEN 61 THEN 'Fried Shrimp Cat'
+  WHEN 62 THEN 'Vendor Cat'
+  WHEN 63 THEN 'Kidnapper Cats'
+  WHEN 64 THEN 'Swordsman Johnny'
+  WHEN 65 THEN 'Giraffe Princess'
+  WHEN 66 THEN 'Dark PPT48'
+  WHEN 67 THEN 'Li''l Gau Gau'
+  WHEN 68 THEN 'Reaper 999'
+  WHEN 69 THEN 'Sleeping Beauty Punt II'
+  WHEN 70 THEN 'Grudge Cat'
+  WHEN 71 THEN 'Wargod Yukimura'
+  WHEN 72 THEN 'Wargod Keiji'
+  WHEN 73 THEN 'Wargod Nobunaga'
+  WHEN 74 THEN 'Sashimi Cat'
+  WHEN 75 THEN 'Windy, type α'
+  WHEN 76 THEN 'Thundia, type β'
+  WHEN 77 THEN 'Droid Cat Mk 2'
+  WHEN 78 THEN 'Major Space Cat'
+  WHEN 79 THEN 'Sick Cat'
+  WHEN 80 THEN 'Gentleman Cat'
+  WHEN 81 THEN 'Cat-o-tron'
+  WHEN 82 THEN 'Orange Shinobi'
+  WHEN 83 THEN 'Earth King Sodom'
+  WHEN 84 THEN 'Holy Dragon Megidora'
+  WHEN 85 THEN 'Dragon King Vars'
+  WHEN 86 THEN 'God Dragon Kamukura'
+  WHEN 87 THEN 'Dragonslayer Raiden'
+  WHEN 88 THEN 'Pair Rope Jump Cat'
+  WHEN 91 THEN 'Crazed Macho Cat'
+  WHEN 92 THEN 'Crazed Wall Cat'
+  WHEN 93 THEN 'Crazed Brave Cat'
+  WHEN 94 THEN 'Crazed Sexy Legs Cat'
+  WHEN 95 THEN 'Crazed Giraffe Cat'
+  WHEN 96 THEN 'Crazed UFO Cat'
+  WHEN 97 THEN 'Crazed Whale Cat'
+  WHEN 98 THEN 'Crazed Dragon Cat'
+  WHEN 99 THEN 'Crazed M. Titan Cat'
+  WHEN 100 THEN 'Sportsgirl Cat'
+  WHEN 103 THEN 'Mega Cat'
+  WHEN 104 THEN 'Gross Koi Cat'
+  WHEN 105 THEN 'Kuu, type γ'
+  WHEN 106 THEN 'Kai, type μ'
+  WHEN 107 THEN 'Coppermine, type κ'
+  WHEN 108 THEN 'Secret Base'
+  WHEN 109 THEN 'Madam King'
+  WHEN 110 THEN 'Celesse CC'
+  WHEN 111 THEN 'Nono CC'
+  WHEN 112 THEN 'Olga CC'
+  WHEN 113 THEN 'Norn CC'
+  WHEN 114 THEN 'Yoichi CC'
+  WHEN 115 THEN 'Serum CC'
+  WHEN 116 THEN 'Fuu CC'
+  WHEN 117 THEN 'Aura CC'
+  WHEN 118 THEN 'Rei CC'
+  WHEN 119 THEN 'Wyvern Cat'
+  WHEN 120 THEN 'Healer CC'
+  WHEN 121 THEN 'Merc CC'
+  WHEN 122 THEN 'Office Lady Cat'
+  WHEN 123 THEN 'Brah Cats'
+  WHEN 124 THEN 'Wargod Masamune'
+  WHEN 125 THEN 'Wargod Shingen'
+  WHEN 126 THEN 'Puppetmaster Cat'
+  WHEN 127 THEN 'Cooldown Cat'
+  WHEN 128 THEN 'Groucho Cat'
+  WHEN 129 THEN 'Gold Macho Cat'
+  WHEN 130 THEN 'Ururun Cat'
+  WHEN 131 THEN 'Miss NENEKO'
+  WHEN 132 THEN 'Drunken Master Cat X'
+  WHEN 134 THEN 'Guardian Gamereon'
+  WHEN 135 THEN 'Super Galaxy Cosmo'
+  WHEN 136 THEN 'The Peach Angels'
+  WHEN 137 THEN 'Jizo''s Moving Castle'
+  WHEN 138 THEN 'The Death Moon'
+  WHEN 140 THEN 'Muscleman Cat'
+  WHEN 141 THEN 'Secret God'
+  WHEN 143 THEN 'Heartful Nurse Cat'
+  WHEN 144 THEN 'Cat Base Jr.'
+  WHEN 145 THEN 'Cat Eastwood'
+  WHEN 146 THEN 'Totem Cat'
+  WHEN 147 THEN 'Plane Cat'
+  WHEN 148 THEN 'Artist Cat'
+  WHEN 149 THEN 'Commando Cat'
+  WHEN 150 THEN 'Princess Juliet Cat'
+  WHEN 151 THEN 'Ring Girl Cat'
+  WHEN 152 THEN 'Drama Cats'
+  WHEN 153 THEN 'Cat Projector'
+  WHEN 154 THEN 'Showoff Cat'
+  WHEN 158 THEN 'Wargod Kenshin'
+  WHEN 159 THEN 'Kalisa, type χ'
+  WHEN 160 THEN 'Phoenix Yurinchi'
+  WHEN 161 THEN 'Crazed Princess Punt CC'
+  WHEN 168 THEN 'Asilan Pasalan'
+  WHEN 169 THEN 'Kubilan Pasalan'
+  WHEN 170 THEN 'Tesalan Pasalan'
+  WHEN 171 THEN 'Balalan Pasalan'
+  WHEN 172 THEN 'Dark Emperor Catdam'
+  WHEN 173 THEN 'Young Man Mola'
+  WHEN 174 THEN 'Living Legend'
+  WHEN 175 THEN 'Catorpedo'
+  WHEN 176 THEN 'Creepmallow'
+  WHEN 177 THEN 'Archdragon Dioramos'
+  WHEN 179 THEN 'Takuya, Yuki ＆ Cat'
+  WHEN 180 THEN 'Mystery Yuki ＆ Cat'
+  WHEN 181 THEN 'Lovely Yuki Cat'
+  WHEN 183 THEN 'Cat Kart G'
+  WHEN 184 THEN 'Mint'
+  WHEN 185 THEN 'Hearscht CC'
+  WHEN 186 THEN 'Cornelia CC'
+  WHEN 187 THEN 'Juvens CC'
+  WHEN 188 THEN 'Mystica CC'
+  WHEN 189 THEN 'Alois CC'
+  WHEN 190 THEN 'Citrouille CC'
+  WHEN 191 THEN 'Titi CC'
+  WHEN 194 THEN 'Shadow Akira'
+  WHEN 195 THEN 'Dr. Mekako'
+  WHEN 196 THEN 'Dark Catman'
+  WHEN 197 THEN 'Neo Psychocat'
+  WHEN 198 THEN 'Magica Cat'
+  WHEN 199 THEN 'Castaway Cat'
+  WHEN 200 THEN 'Metal Macho'
+  WHEN 201 THEN 'Banner Cat'
+  WHEN 202 THEN 'Big Baozi'
+  WHEN 203 THEN 'Fire Squad Kachiyama'
+  WHEN 209 THEN 'Li''l Macho Cat'
+  WHEN 210 THEN 'Li''l Wall Cat'
+  WHEN 211 THEN 'Li''l Brave Cat'
+  WHEN 212 THEN 'The Black Cat'
+  WHEN 213 THEN 'Cat Royale'
+  WHEN 214 THEN 'HYAKUTARO CC'
+  WHEN 215 THEN 'MARCO CC'
+  WHEN 216 THEN 'TARMA CC'
+  WHEN 217 THEN 'ERI CC'
+  WHEN 218 THEN 'FIO CC'
+  WHEN 219 THEN 'SV-001 CC'
+  WHEN 220 THEN 'ALLEN O''NEIL CC'
+  WHEN 221 THEN 'MARS PEOPLE CC'
+  WHEN 222 THEN 'HUGE HERMIT CC'
+  WHEN 223 THEN 'JUPITER KING CC'
+  WHEN 224 THEN 'GENERAL MORDEN'
+  WHEN 225 THEN 'HI-DO CC'
+  WHEN 226 THEN 'Dark Merchant Babil'
+  WHEN 227 THEN 'Cat O''Lantern'
+  WHEN 228 THEN 'Witchy Neneko'
+  WHEN 229 THEN 'Hallowindy, type α'
+  WHEN 230 THEN 'Spooky Thundia, type β'
+  WHEN 237 THEN 'Prof. Cat Jobs'
+  WHEN 238 THEN 'Rich Cat Sr.'
+  WHEN 239 THEN 'Sniper the Heavy'
+  WHEN 240 THEN 'Togelan Pasalan'
+  WHEN 241 THEN 'Frosty Kai, type μ'
+  WHEN 242 THEN 'Santa Kuu, type γ'
+  WHEN 243 THEN 'Holy Coppermine, type κ'
+  WHEN 244 THEN 'Cat''s Gift'
+  WHEN 245 THEN 'Li''l Sexy Legs Cat'
+  WHEN 246 THEN 'Li''l Giraffe Cat'
+  WHEN 247 THEN 'Li''l UFO Cat'
+  WHEN 248 THEN 'Bake-Nyanko'
+  WHEN 257 THEN 'The Majestic Zeus'
+  WHEN 258 THEN 'Anubis the Unblemished'
+  WHEN 259 THEN 'Megaphrodite'
+  WHEN 260 THEN 'Drone Cat'
+  WHEN 261 THEN 'Oni Hayabusa'
+  WHEN 267 THEN 'Hurricat'
+  WHEN 268 THEN 'Crimson Mina'
+  WHEN 269 THEN 'Mighty Lord Gao'
+  WHEN 270 THEN 'Crazed Yuki & Cat'
+  WHEN 271 THEN 'Glorious Amaterasu'
+  WHEN 272 THEN 'Exalted Ganesha'
+  WHEN 273 THEN 'Waitress Cat'
+  WHEN 274 THEN 'Tropical Kalisa, type X'
+  WHEN 275 THEN 'Midsummer Cat'
+  WHEN 276 THEN 'Seaside Neneko'
+  WHEN 277 THEN 'Funghi ''n'' Cat'
+  WHEN 278 THEN 'Tanky ''n'' Cat'
+  WHEN 279 THEN 'Gross White Cat'
+  WHEN 280 THEN 'Castley'
+  WHEN 282 THEN 'So-Ran Cat'
+  WHEN 283 THEN 'Pai-Pai Z'
+  WHEN 284 THEN 'Maglev Cat'
+  WHEN 286 THEN 'Assault Unit R.E.I.'
+  WHEN 287 THEN 'Major Leaguer Cat'
+  WHEN 288 THEN 'Madoka & Cat'
+  WHEN 289 THEN 'Homura & Cat'
+  WHEN 290 THEN 'Sayaka & Cat'
+  WHEN 291 THEN 'Mami & Cat'
+  WHEN 292 THEN 'Kyoko & Cat'
+  WHEN 293 THEN 'Kyubey & Cat'
+  WHEN 294 THEN 'Magical Girl Madoka Cat'
+  WHEN 295 THEN 'Magical Girl Homura Cat'
+  WHEN 296 THEN 'Magical Girl Sayaka Cat'
+  WHEN 297 THEN 'Magical Girl Mami Cat'
+  WHEN 298 THEN 'Magical Girl Kyoko Cat'
+  WHEN 299 THEN 'Li''l Magical Girl Madoka'
+  WHEN 300 THEN 'Li''l Magical Girl Homura'
+  WHEN 301 THEN 'Tank Kyubey Cat'
+  WHEN 302 THEN 'Succubus Cat'
+  WHEN 303 THEN 'Delivery Cat'
+  WHEN 304 THEN 'CAT-6 Siege Engine'
+  WHEN 305 THEN 'B.C.S. Lionheart'
+  WHEN 306 THEN 'NEK-0 Sky Fortress'
+  WHEN 307 THEN 'Polevaulter Cat'
+  WHEN 308 THEN 'Lumbercat'
+  WHEN 310 THEN 'Yule Knight Nurse'
+  WHEN 311 THEN 'Li''l Whale Cat'
+  WHEN 312 THEN 'Li''l Dragon Cat'
+  WHEN 313 THEN 'Li''l Mythical Titan'
+  WHEN 314 THEN 'New Year Neneko'
+  WHEN 315 THEN 'NEKOTARO'
+  WHEN 316 THEN 'Valiant Poseidon'
+  WHEN 317 THEN 'PPAP'
+  WHEN 318 THEN 'Mitama the Oracle'
+  WHEN 319 THEN 'True Killer Cat'
+  WHEN 322 THEN 'Rock Revengers'
+  WHEN 323 THEN 'Heroic Musashi'
+  WHEN 324 THEN 'Cleanerbot Cat'
+  WHEN 325 THEN 'Heavyweight Cat'
+  WHEN 326 THEN 'Miraculous Mobius'
+  WHEN 327 THEN 'Reckless Belial'
+  WHEN 328 THEN 'Heartful Happy 100'
+  WHEN 329 THEN 'Easter Cat'
+  WHEN 330 THEN 'Full-Bloom Kenshin'
+  WHEN 331 THEN 'Disciple Psychoduck'
+  WHEN 332 THEN 'Hoppity Neneko'
+  WHEN 333 THEN 'Diabolic Gao'
+  WHEN 334 THEN 'Himeyuri Ninetails'
+  WHEN 335 THEN 'Sea Mistress Ruri'
+  WHEN 336 THEN 'Pharaoh Reika'
+  WHEN 337 THEN 'HMS Princess CC'
+  WHEN 338 THEN 'Wargod Yoshimoto'
+  WHEN 340 THEN 'Redhead Lovely Yuki Cat'
+  WHEN 341 THEN 'Lost World Yuki ＆ Cat'
+  WHEN 342 THEN 'Neo Maneki Cat'
+  WHEN 343 THEN 'Slugcat'
+  WHEN 344 THEN 'Orthos CC'
+  WHEN 345 THEN 'Michelia CC'
+  WHEN 346 THEN 'Todomeki CC'
+  WHEN 351 THEN 'Twinstars, type Φ'
+  WHEN 352 THEN 'Grandmaster Cat'
+  WHEN 354 THEN 'Seashore Kai, type μ'
+  WHEN 355 THEN 'Orbital Platform Armageddon'
+  WHEN 357 THEN 'Wolf Princess Deale'
+  WHEN 358 THEN 'Verbena the Bride'
+  WHEN 359 THEN 'Bazibon'
+  WHEN 360 THEN 'Marinmizu'
+  WHEN 361 THEN 'Erphuan'
+  WHEN 362 THEN 'Saber CC'
+  WHEN 363 THEN 'Rin Tohsaka CC'
+  WHEN 364 THEN 'Illyasviel CC'
+  WHEN 365 THEN 'Archer CC'
+  WHEN 366 THEN 'Lancer CC'
+  WHEN 367 THEN 'Rider CC'
+  WHEN 368 THEN 'Gilgamesh CC'
+  WHEN 369 THEN 'Heroic Spirit Saber Cat'
+  WHEN 370 THEN 'Apron Sakura Cat'
+  WHEN 371 THEN 'Mage Rin Cat'
+  WHEN 372 THEN 'Snow Faerie Illya'
+  WHEN 373 THEN 'Li''l Shirou CC'
+  WHEN 374 THEN 'Li''l Sakura CC'
+  WHEN 375 THEN 'Macho Coin Cat'
+  WHEN 376 THEN 'Rover Cat Mk II'
+  WHEN 377 THEN 'Kendo Cat'
+  WHEN 378 THEN 'Gothic Mitama'
+  WHEN 379 THEN 'Ballet Cat'
+  WHEN 380 THEN 'Meow-sketeer'
+  WHEN 381 THEN 'Harvest Cat'
+  WHEN 382 THEN 'Macho Glass Cat'
+  WHEN 383 THEN 'Mystic Yulala'
+  WHEN 384 THEN 'Satori Hikami & Cat CC'
+  WHEN 385 THEN 'Akio Yabe CC'
+  WHEN 386 THEN 'Sairi Nijitani CC'
+  WHEN 387 THEN 'Misaki Konno CC'
+  WHEN 388 THEN 'Ren Katagiri CC'
+  WHEN 389 THEN 'Karin Nekozuka CC'
+  WHEN 390 THEN 'Aoi Hayakawa CC'
+  WHEN 391 THEN 'Mizuki Tachibana CC'
+  WHEN 392 THEN 'Hijiri Rokudo CC'
+  WHEN 393 THEN 'Saki Nijima CC'
+  WHEN 394 THEN 'Subaru Hoshi CC'
+  WHEN 395 THEN 'Miyabi Oyama CC'
+  WHEN 396 THEN 'Ganglion the Ancient'
+  WHEN 397 THEN 'Afterschool Sakura'
+  WHEN 399 THEN 'Mentori CC'
+  WHEN 400 THEN 'Imoto CC'
+  WHEN 401 THEN 'Volta'
+  WHEN 402 THEN 'Plug Suit Shinji'
+  WHEN 403 THEN 'Moon Gendo & Fuyutsuki Cats'
+  WHEN 404 THEN 'Giraffe Unit-02'
+  WHEN 405 THEN 'Plug Suit Kaworu'
+  WHEN 406 THEN 'Ayanami Cat (TBC)'
+  WHEN 407 THEN 'Apron Asuka'
+  WHEN 408 THEN 'Special Ops Mari'
+  WHEN 409 THEN 'Plug Suit Rei'
+  WHEN 410 THEN 'Plug Suit Asuka'
+  WHEN 411 THEN 'Plug Suit Mari'
+  WHEN 412 THEN 'EVA Unit-00 & Cat'
+  WHEN 413 THEN 'EVA Unit-01 & Cat'
+  WHEN 414 THEN 'EVA Unit-02 & Cat'
+  WHEN 415 THEN 'Toji & Kensuke Cats'
+  WHEN 416 THEN 'NERV Moon'
+  WHEN 417 THEN 'Subterra Guardians'
+  WHEN 418 THEN 'Corrupted Moneko'
+  WHEN 419 THEN 'Pokota CC'
+  WHEN 420 THEN 'Ovis CC'
+  WHEN 421 THEN 'Coco CC'
+  WHEN 426 THEN 'Mecha-Bun Mk II'
+  WHEN 427 THEN 'Cat Guild Heroes'
+  WHEN 428 THEN 'Stylish Souma Cat'
+  WHEN 429 THEN 'Hacker Geek Cat'
+  WHEN 431 THEN 'Inspector Gabriel'
+  WHEN 432 THEN 'Black Betakkuma'
+  WHEN 433 THEN 'Killer Nekokkuma'
+  WHEN 435 THEN 'Wind Dancer Valkyrie'
+  WHEN 436 THEN 'Nobilan Pasalan'
+  WHEN 437 THEN 'Cat God the Awesome'
+  WHEN 438 THEN 'Waverider Kuu, type γ'
+  WHEN 439 THEN 'Chronos the Infinite'
+  WHEN 440 THEN 'Nagisa & Cat'
+  WHEN 441 THEN 'Valiant D''arktanyan'
+  WHEN 442 THEN 'Vendor Cat and Kitten'
+  WHEN 443 THEN 'Power Driller Cat'
+  WHEN 444 THEN 'Power Piledriver Cat'
+  WHEN 445 THEN 'Power Cutter Cat'
+  WHEN 446 THEN 'Power Backhoe Cat'
+  WHEN 447 THEN 'Power Saw Cat'
+  WHEN 448 THEN 'Wargod Miyamoto'
+  WHEN 449 THEN 'Headmistress Jeanne ψ'
+  WHEN 450 THEN 'Babel the Darkflame'
+  WHEN 451 THEN 'Colossal Benkei'
+  WHEN 452 THEN 'Modern Cat'
+  WHEN 455 THEN 'Cutie MOMOCO'
+  WHEN 456 THEN 'Sakura Matou CC'
+  WHEN 457 THEN 'Novice Mage Shirou Cat'
+  WHEN 458 THEN 'Heroic Spirit Archer Cat'
+  WHEN 459 THEN 'Heroic Spirit Rider Cat'
+  WHEN 460 THEN 'Gilgamesh & Kotomine Cats'
+  WHEN 461 THEN 'Legelan Pasalan'
+  WHEN 462 THEN 'Filibuster Cat Y'
+  WHEN 463 THEN 'Doom Engine Pandora'
+  WHEN 464 THEN 'Doguemon'
+  WHEN 466 THEN 'Dark Lord Zeus'
+  WHEN 467 THEN 'All-Powerful Super Zeus'
+  WHEN 468 THEN 'Holy Warrior Phoenix'
+  WHEN 469 THEN 'Imposter Super Devil'
+  WHEN 470 THEN 'Wondermaria'
+  WHEN 471 THEN 'Perfect Heracrist'
+  WHEN 472 THEN 'Beastly Nero'
+  WHEN 473 THEN 'Holy Yamato'
+  WHEN 474 THEN 'Cross Angel'
+  WHEN 475 THEN 'Warrior King Cat'
+  WHEN 476 THEN 'Infernal Cat'
+  WHEN 477 THEN 'Old Guardian Cat'
+  WHEN 478 THEN 'Luminalia'
+  WHEN 481 THEN 'Professor Abyss'
+  WHEN 482 THEN 'Souma ＆ Cat'
+  WHEN 483 THEN 'Kano ＆ Souma ＆ Cat'
+  WHEN 484 THEN 'Dark Rider Valkyrie'
+  WHEN 485 THEN 'Calette CC'
+  WHEN 486 THEN 'Swordswoman Hina'
+  WHEN 487 THEN 'EVA Unit-08 & Cat'
+  WHEN 488 THEN 'NNN Wunder'
+  WHEN 489 THEN 'Captain Misato'
+  WHEN 490 THEN 'First Officer Ritsuko'
+  WHEN 491 THEN 'Awakened Ayanami'
+  WHEN 493 THEN 'Gaia the Supreme'
+  WHEN 494 THEN 'Seabreeze Coppermine, type κ'
+  WHEN 495 THEN 'Flamenco Cat'
+  WHEN 496 THEN 'Wargod Kaihime'
+  WHEN 497 THEN 'Shakurel Macho Cat'
+  WHEN 498 THEN 'Shakurel Lion CC'
+  WHEN 499 THEN 'Shakurel Tiger CC'
+  WHEN 500 THEN 'Shakurel Panda CC'
+  WHEN 501 THEN 'Baka Cat Bros'
+  WHEN 502 THEN 'Myrcia, type ξ'
+  WHEN 505 THEN 'Gladios the Annihilator'
+  WHEN 506 THEN 'Eyewaltz CC'
+  WHEN 507 THEN 'Supercat'
+  WHEN 508 THEN 'Ryu Cat CC'
+  WHEN 509 THEN 'Chun-Li Cat CC'
+  WHEN 510 THEN 'Akuma CC'
+  WHEN 511 THEN 'Ryu CC'
+  WHEN 512 THEN 'Chun-Li CC'
+  WHEN 513 THEN 'Guile CC'
+  WHEN 514 THEN 'Zangief CC'
+  WHEN 515 THEN 'Blanka CC'
+  WHEN 516 THEN 'Dhalsim CC'
+  WHEN 517 THEN 'Ken CC'
+  WHEN 518 THEN 'Akuma Lion'
+  WHEN 519 THEN 'Ultimate Lasvoss'
+  WHEN 520 THEN 'Bad-Luck Ebisu'
+  WHEN 521 THEN 'Twintail Medusa Cat'
+  WHEN 522 THEN 'Medalist Cat'
+  WHEN 523 THEN 'Sifu Cat'
+  WHEN 525 THEN 'Kinrangers RoboForce'
+  WHEN 526 THEN 'Snow Angel Twinstars, type Φ'
+  WHEN 527 THEN 'Jellycat'
+  WHEN 528 THEN 'Vodka Cat'
+  WHEN 529 THEN 'Ritual Saint Kasli'
+  WHEN 530 THEN 'Herme CC'
+  WHEN 531 THEN 'Assassin BearCat'
+  WHEN 532 THEN 'Urs & Minka'
+  WHEN 533 THEN 'Nighthunter Saki'
+  WHEN 534 THEN 'Hades the Deathdealer'
+  WHEN 535 THEN 'Hatsune Miku CC'
+  WHEN 536 THEN 'Sakura Miku CC'
+  WHEN 537 THEN 'Kagamine Rin & Len CC'
+  WHEN 538 THEN 'Miku Cat CC'
+  WHEN 539 THEN 'Quarterback Cat'
+  WHEN 543 THEN 'Kasli, Daughter of Chaos'
+  WHEN 544 THEN 'True Kyosaka Nanaho'
+  WHEN 545 THEN 'Miasma Cat'
+  WHEN 546 THEN 'Papalan Pasalan'
+  WHEN 547 THEN 'Heavenly Herald Rei'
+  WHEN 548 THEN '4th Angel Cat'
+  WHEN 549 THEN '6th Angel Cat'
+  WHEN 550 THEN '10th Angel Cat'
+  WHEN 551 THEN '9th Angel Cat'
+  WHEN 552 THEN 'Moon Kaworu Cat'
+  WHEN 553 THEN 'Boomerang Cat'
+  WHEN 554 THEN 'Mystic Uril'
+  WHEN 555 THEN 'All-Loving Shaman Khan'
+  WHEN 556 THEN 'Holy King Alibaba'
+  WHEN 557 THEN 'Heavenly Lord Jack'
+  WHEN 558 THEN 'Lucky Gacha Cat'
+  WHEN 559 THEN 'Hell Sentinel Emma'
+  WHEN 560 THEN 'Megurine Luka CC'
+  WHEN 561 THEN 'MEIKO & Cat CC'
+  WHEN 562 THEN 'Luka Cat CC'
+  WHEN 563 THEN 'Aquabuster Saki'
+  WHEN 564 THEN 'Bikinilan Pasalan'
+  WHEN 565 THEN 'Macho Suntan Cat'
+  WHEN 566 THEN 'Sweet Bro Cats'
+  WHEN 568 THEN 'Idi:N2'
+  WHEN 569 THEN 'Gravolo'
+  WHEN 570 THEN 'Nightmare King Vars'
+  WHEN 571 THEN 'E. Honda CC'
+  WHEN 572 THEN 'Balrog CC'
+  WHEN 573 THEN 'Vega CC'
+  WHEN 574 THEN 'Sagat CC'
+  WHEN 575 THEN 'M. Bison CC'
+  WHEN 576 THEN 'C. Honda CC'
+  WHEN 577 THEN 'Balrog Cat CC'
+  WHEN 578 THEN 'Vega Cat CC'
+  WHEN 579 THEN 'Sagat Cat CC'
+  WHEN 580 THEN 'M. Bison Cat CC'
+  WHEN 581 THEN 'Boulder Cat'
+  WHEN 582 THEN 'Hatsune Miku CC: MM2020 Osaka'
+  WHEN 583 THEN 'Hatsune Miku CC: MM2020 Tokyo'
+  WHEN 584 THEN 'Maeda Christmas'
+  WHEN 585 THEN 'Mighty Aegis Garu'
+  WHEN 586 THEN 'Tyrant Cat'
+  WHEN 587 THEN 'Chocoladite'
+  WHEN 588 THEN 'First-Love Myrcia ξ'
+  WHEN 589 THEN 'Sweetheart Neneko'
+  WHEN 590 THEN 'Snow Miku CC 2021'
+  WHEN 591 THEN 'KAITO & Cat CC'
+  WHEN 592 THEN 'Neko Rin CC'
+  WHEN 593 THEN 'Neko Len CC'
+  WHEN 594 THEN 'Atlantis Logistix'
+  WHEN 595 THEN 'Everbloom Kamukura'
+  WHEN 596 THEN 'Ranma Saotome (F)'
+  WHEN 597 THEN 'Akane Tendo (Gi)'
+  WHEN 598 THEN 'Ryoga Hibiki'
+  WHEN 599 THEN 'Shampoo'
+  WHEN 600 THEN 'Mousse'
+  WHEN 601 THEN 'Happosai (Lewd)'
+  WHEN 602 THEN 'Ukyo Kuonji'
+  WHEN 603 THEN 'Tatewaki Kuno'
+  WHEN 604 THEN 'Ranma Cat (F)'
+  WHEN 605 THEN 'Akane Cat (Gi)'
+  WHEN 606 THEN 'Genma Cat'
+  WHEN 607 THEN 'Swashbuckler Kanna'
+  WHEN 609 THEN 'Dark Beastlord Garu'
+  WHEN 610 THEN 'King Ingot Cat'
+  WHEN 611 THEN 'Shin Godzilla Cat'
+  WHEN 612 THEN 'Empress Cat'
+  WHEN 613 THEN 'Cat Mask Doron'
+  WHEN 614 THEN 'The Southern Sun'
+  WHEN 615 THEN 'Golden Kabuto Cat'
+  WHEN 616 THEN 'King Kuwagata Cat'
+  WHEN 617 THEN 'Dark Summoner Satoru'
+  WHEN 618 THEN 'Wargod Amakusa'
+  WHEN 619 THEN 'Lilin π'
+  WHEN 620 THEN 'Wicked King Hevijak'
+  WHEN 621 THEN 'Evil Aku Researcher'
+  WHEN 622 THEN 'Lord of Ruin Jagando Jr.'
+  WHEN 623 THEN 'Komuso Cat'
+  WHEN 624 THEN 'Dodgeball Kunio-kun'
+  WHEN 625 THEN 'Furilan Pasalan'
+  WHEN 629 THEN 'Brainwashed Macho Cat'
+  WHEN 630 THEN 'Tea Master Cat'
+  WHEN 631 THEN 'Yaminoir'
+  WHEN 632 THEN 'Siege Walker Diabolosa'
+  WHEN 633 THEN 'Chunchun Haunters'
+  WHEN 634 THEN 'Black Knight Kyklops'
+  WHEN 635 THEN 'Hundred-Million-Dollar Cat'
+  WHEN 636 THEN 'Brainwashed Wall Cat'
+  WHEN 641 THEN 'Iz the Alluring Dancer'
+  WHEN 642 THEN 'Grand Lucifer'
+  WHEN 643 THEN 'Superfeline II'
+  WHEN 644 THEN 'Bittersweet Mekako'
+  WHEN 645 THEN 'Brainwashed Brave Cat'
+  WHEN 646 THEN 'Macho Firecracker Cat'
+  WHEN 647 THEN 'Huntress Terun ζ'
+  WHEN 648 THEN 'Lovestruck Greater Demon'
+  WHEN 649 THEN 'Wargod Hanzo'
+  WHEN 650 THEN 'Girlfriend Cat'
+  WHEN 651 THEN 'Iron-Masked Lion Cat'
+  WHEN 652 THEN 'Chalkboard Punk Cat'
+  WHEN 653 THEN 'Storm Beast Naala'
+  WHEN 654 THEN 'Brainwashed Sexy Legs Cat'
+  WHEN 655 THEN 'Blizana'
+  WHEN 656 THEN 'Mystic Egg: N001'
+  WHEN 657 THEN 'Iz the Lady of Mourning'
+  WHEN 658 THEN 'Cinnabar Egg: N101'
+  WHEN 659 THEN 'Teal Egg: N102'
+  WHEN 660 THEN 'Sea King Daliasan'
+  WHEN 661 THEN 'Wedding Chronos'
+  WHEN 662 THEN 'Brainwashed Giraffe Cat'
+  WHEN 663 THEN 'Black Egg: N103'
+  WHEN 664 THEN 'Green Egg: N104'
+  WHEN 665 THEN 'Dark Egg: N201'
+  WHEN 666 THEN 'Night Beach Lilinπ'
+  WHEN 667 THEN 'Brainwashed UFO Cat'
+  WHEN 668 THEN 'Grand Yokai Tengu'
+  WHEN 669 THEN 'Evil Egg: N003'
+  WHEN 670 THEN 'Cinnabar Egg: N202'
+  WHEN 671 THEN 'Ranma Saotome (Cheer)'
+  WHEN 672 THEN 'Genma Saotome'
+  WHEN 674 THEN 'Extraterrestrial Envanz'
+  WHEN 675 THEN 'Teal Egg: N105'
+  WHEN 676 THEN 'Amber Egg: N106'
+  WHEN 677 THEN 'Osamu Mikumo & Cat CC'
+  WHEN 678 THEN 'Yuma Kuga & Cat CC'
+  WHEN 679 THEN 'Chika Amatori & Cat CC'
+  WHEN 680 THEN 'Sakura CC'
+  WHEN 681 THEN 'Luke CC'
+  WHEN 682 THEN 'Illusory Guardian Vega'
+  WHEN 683 THEN 'Nosferatu Yukimura'
+  WHEN 684 THEN 'Brainwashed Whale Cat'
+  WHEN 685 THEN 'Mystic Egg: N004'
+  WHEN 686 THEN 'Goddess of Sunrise Sirius'
+  WHEN 687 THEN 'Reindeer Terunζ'
+  WHEN 688 THEN 'Brainwashed Dragon Cat'
+  WHEN 689 THEN 'Paragon Cat'
+  WHEN 690 THEN 'King of Destiny Phonoa'
+  WHEN 691 THEN 'Elder Egg: N000'
+  WHEN 692 THEN 'Oni Landshaker Kozuchimaru'
+  WHEN 693 THEN 'Black Butler Vigler'
+  WHEN 694 THEN 'Brainwashed Mythic Titan'
+  WHEN 695 THEN 'True Killer Tank Cat'
+  WHEN 696 THEN 'Stealth Class Rep Cat'
+  WHEN 697 THEN 'Violet Egg: N107'
+  WHEN 698 THEN 'Bloody Jack'
+  WHEN 699 THEN 'Rabbit Champion Satoru'
+  WHEN 700 THEN 'Mystic Egg: N005'
+  WHEN 705 THEN 'King of Extinction Phono'
+  WHEN 706 THEN 'Teal Egg: N108'
+  WHEN 707 THEN 'Dark Egg: N109'
+  WHEN 708 THEN 'Kinjirou Cat'
+  WHEN 709 THEN 'Blue-Eyed Asuka'
+  WHEN 710 THEN 'EVA Unit-13 & Cat'
+  WHEN 711 THEN 'Betrothed Pasalan'
+  WHEN 712 THEN 'Kaolan Pasalan'
+  WHEN 713 THEN 'Violet Egg: N203'
+  WHEN 714 THEN 'Deep-Diver Kanna'
+  WHEN 715 THEN 'Attack Battalion Convoys'
+  WHEN 716 THEN 'Mystic Egg: N111'
+  WHEN 717 THEN 'Amber Egg: N110'
+  WHEN 718 THEN 'Cone Cat'
+  WHEN 719 THEN 'Tetsukachi'
+  WHEN 720 THEN 'Devil Egg: N006'
+  WHEN 721 THEN 'Dodgeball Riki'
+  WHEN 722 THEN 'Hatsune Miku XVI CC'
+  WHEN 723 THEN 'Nefer Aset'
+  WHEN 724 THEN 'Mystic Egg: N112'
+  WHEN 725 THEN 'Gourmand Ninja Girl Tomoe'
+  WHEN 726 THEN 'Medal Emperor'
+  WHEN 727 THEN 'SOL DAE ROKKER CC'
+  WHEN 728 THEN 'Master of Mind Catcrates'
+  WHEN 730 THEN 'Cinnabar Egg: N204'
+  WHEN 731 THEN 'Dawnbringer Izanagi'
+  WHEN 733 THEN 'Pegasa ν'
+  WHEN 735 THEN 'Midlife Crisis Cat'
+  WHEN 736 THEN 'Arctic Bloom Cat'
+  WHEN 737 THEN 'Floral Kalisa, type X'
+  WHEN 738 THEN 'Izanami of Eventide'
+  WHEN 740 THEN 'Mimic Cat'
+  WHEN 741 THEN 'Daji & Cat'
+  WHEN 742 THEN 'Mesmerizing Tune - Mollyanna'
+  WHEN 743 THEN 'Madhead Cat'
+  WHEN 744 THEN 'Mercenary Leader Felix Cat'
+  WHEN 745 THEN 'Birthday Dotty Cat'
+  WHEN 746 THEN 'Kenshin Himura CC'
+  WHEN 747 THEN 'Sanosuke Sagara CC'
+  WHEN 748 THEN 'Aoshi Shinomori CC'
+  WHEN 749 THEN 'Hajime Saito CC'
+  WHEN 750 THEN 'Li''l Kaoru CC'
+  WHEN 751 THEN 'Li''l Yahiko CC'
+  WHEN 752 THEN 'Battosai Cat'
+  WHEN 753 THEN 'Swordscat Kaoru'
+  WHEN 754 THEN 'Wargod Mitsuhide'
+  WHEN 756 THEN 'Wedding Cake Machine'
+  WHEN 757 THEN 'Violet Egg: N205'
+  WHEN 758 THEN 'Trixi the Revenant'
+  WHEN 759 THEN 'Music Fest Thundia β'
+  WHEN 760 THEN 'Ballistic Dragon Gunduros'
+  WHEN 763 THEN 'Mecha Dynasaurus Cat'
+  WHEN 765 THEN 'Cinnabar Egg: N206'
+  WHEN 766 THEN 'Sardine CC'
+  WHEN 767 THEN 'Squid CC'
+  WHEN 768 THEN 'Taitenki CC'
+  WHEN 769 THEN 'Ravenous Cherry'
+  WHEN 771 THEN 'Master of Life Catnova'
+  WHEN 772 THEN 'Sodom-o''-Lantern'
+  WHEN 773 THEN 'Mama Mummy Sumo'
+  WHEN 774 THEN 'Steel Sergeant Axel'
+  WHEN 776 THEN 'Commander Cat'
+  WHEN 777 THEN 'Winter Commander Kaihime'
+  WHEN 778 THEN 'Magical Cat☆ Magica'
+  WHEN 779 THEN 'Salvation''s Daughter Lunacia'
+  WHEN 780 THEN 'Dodgeballer Cat'
+  WHEN 781 THEN 'Mamolan Pasalan'
+  WHEN 783 THEN 'Superstar Koneko'
+  WHEN 785 THEN 'True Killer Gross Cat'
+  WHEN 786 THEN 'Illusionist Catman'
+  WHEN 787 THEN 'Death''s Daughter Lunacia'
+  WHEN 789 THEN 'Baki Hanma CC'
+  WHEN 790 THEN 'Retsu Kaioh CC'
+  WHEN 791 THEN 'Kaoru Hanayama CC'
+  WHEN 792 THEN 'Katsumi Orochi CC'
+  WHEN 793 THEN 'Jack Hammer CC'
+  WHEN 794 THEN 'Ogre Cat Face'
+  WHEN 795 THEN 'Li''l Baki CC'
+  WHEN 796 THEN 'Baki Cat CC'
+  WHEN 797 THEN 'Kaioh Cat CC'
+  WHEN 798 THEN 'Doppo Cat CC'
+  WHEN 799 THEN 'Grandiose Gunhauzer'
+  WHEN 801 THEN 'Master of Logic Mewton'
+  WHEN 803 THEN 'Sonic & Cat'
+  WHEN 804 THEN 'Tails & Cat'
+  WHEN 805 THEN 'Knuckles & Cat'
+  WHEN 806 THEN 'Shadow & Cat'
+  WHEN 807 THEN 'Sonic Cat CC'
+  WHEN 808 THEN 'Tails Cat CC'
+  WHEN 809 THEN 'Shadow Cat CC'
+  WHEN 810 THEN 'Edgemaster Staal'
+  WHEN 811 THEN 'Zeta Skanda'
+  WHEN 813 THEN 'Tasmanian Giant Crab CC'
+  WHEN 814 THEN 'Mass Production EVA-Cat'
+  WHEN 815 THEN 'Moon Disciple Kaworu'
+  WHEN 817 THEN 'Moririn'
+  WHEN 819 THEN 'Rapper Cat'
+  WHEN 820 THEN 'Seaside Pegasa v'
+  WHEN 822 THEN 'Business Partner Cat'
+  WHEN 824 THEN 'Flame Mage Sidmi'
+  WHEN 826 THEN 'Cammy CC'
+  WHEN 827 THEN 'Juri CC'
+  WHEN 828 THEN 'Zangief Cat CC'
+  WHEN 829 THEN 'Jamie Cat CC'
+  WHEN 830 THEN 'Raclesa Σ'
+  WHEN 837 THEN 'Lunos the Luminous'
+END
+WHERE "unitNumber" IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 134, 135, 136, 137, 138, 140, 141, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 158, 159, 160, 161, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 179, 180, 181, 183, 184, 185, 186, 187, 188, 189, 190, 191, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 257, 258, 259, 260, 261, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 282, 283, 284, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 340, 341, 342, 343, 344, 345, 346, 351, 352, 354, 355, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 426, 427, 428, 429, 431, 432, 433, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 629, 630, 631, 632, 633, 634, 635, 636, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 730, 731, 733, 735, 736, 737, 738, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 756, 757, 758, 759, 760, 763, 765, 766, 767, 768, 769, 771, 772, 773, 774, 776, 777, 778, 779, 780, 781, 783, 785, 786, 787, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 801, 803, 804, 805, 806, 807, 808, 809, 810, 811, 813, 814, 815, 817, 819, 820, 822, 824, 826, 827, 828, 829, 830, 837);
 
--- Fix formCount for units that don't have exactly 3 forms
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 27;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 28;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 29;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 45;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 53;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 59;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 62;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 64;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 65;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 73;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 75;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 76;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 82;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 108;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 110;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 112;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 113;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 114;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 115;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 116;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 117;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 118;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 131;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 135;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 137;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 138;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 140;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 141;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 158;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 175;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 176;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 177;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 181;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 184;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 186;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 189;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 190;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 200;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 202;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 212;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 214;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 215;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 216;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 217;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 218;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 219;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 220;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 221;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 229;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 230;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 242;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 243;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 244;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 269;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 274;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 277;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 278;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 279;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 280;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 290;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 291;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 292;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 293;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 294;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 295;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 296;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 297;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 298;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 301;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 304;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 305;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 306;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 315;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 317;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 318;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 326;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 327;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 328;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 333;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 342;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 343;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 346;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 354;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 359;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 360;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 361;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 363;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 364;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 365;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 366;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 367;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 368;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 371;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 372;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 373;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 374;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 375;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 378;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 380;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 381;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 384;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 386;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 387;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 388;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 389;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 397;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 399;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 400;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 403;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 404;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 406;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 407;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 408;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 411;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 412;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 415;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 416;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 418;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 419;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 420;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 421;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 428;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 429;
-UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" = 431;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 432;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 433;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 435;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 438;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 441;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 449;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 451;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 455;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 457;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 458;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 459;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 460;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 461;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 463;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 466;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 470;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 471;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 472;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 475;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 476;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 477;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 478;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 481;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 483;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 484;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 485;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 486;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 487;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 489;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 490;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 491;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 493;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 494;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 497;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 498;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 499;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 500;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 501;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 507;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 508;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 509;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 510;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 512;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 513;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 514;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 515;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 516;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 518;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 520;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 526;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 529;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 530;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 535;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 536;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 537;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 538;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 543;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 544;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 547;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 548;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 549;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 550;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 551;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 552;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 555;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 557;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 558;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 560;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 561;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 562;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 571;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 572;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 573;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 574;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 575;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 576;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 577;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 578;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 579;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 580;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 581;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 582;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 583;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 585;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 586;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 587;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 588;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 590;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 591;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 592;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 593;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 596;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 597;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 598;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 599;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 600;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 601;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 602;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 603;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 604;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 605;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 606;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 609;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 611;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 612;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 615;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 616;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 622;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 624;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 630;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 635;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 641;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 646;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 648;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 650;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 651;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 652;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 657;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 661;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 666;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 671;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 672;
-UPDATE "Unit" SET "formCount" = 1 WHERE "unitNumber" = 673;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 677;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 678;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 679;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 680;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 681;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 686;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 687;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 689;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 690;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 693;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 695;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 696;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 699;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 705;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 708;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 709;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 710;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 711;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 718;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 719;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 721;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 722;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 725;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 726;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 727;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 728;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 731;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 735;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 736;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 737;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 738;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 740;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 741;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 742;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 743;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 744;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 745;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 746;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 747;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 748;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 749;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 750;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 751;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 752;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 753;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 754;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 756;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 758;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 759;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 760;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 763;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 767;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 768;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 769;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 771;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 772;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 773;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 774;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 776;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 777;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 778;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 779;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 780;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 781;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 783;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 785;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 786;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 787;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 789;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 790;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 791;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 792;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 793;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 794;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 795;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 796;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 797;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 798;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 799;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 801;
-UPDATE "Unit" SET "formCount" = 1 WHERE "unitNumber" = 802;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 803;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 804;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 805;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 806;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 807;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 808;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 809;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 810;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 811;
-UPDATE "Unit" SET "formCount" = 1 WHERE "unitNumber" = 812;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 813;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 814;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 815;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 817;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 819;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 820;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 822;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 824;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 826;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 827;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 828;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 829;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 830;
-UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" = 837;
+-- Bulk update true form names
+UPDATE "Unit" SET "trueName" = CASE "unitNumber"
+  WHEN 0 THEN 'Mohawk Cat'
+  WHEN 1 THEN 'Eraser Cat'
+  WHEN 2 THEN 'Dark Cat'
+  WHEN 3 THEN 'Macho Leg Cat'
+  WHEN 4 THEN 'Lion Cat'
+  WHEN 5 THEN 'The Flying Cat'
+  WHEN 6 THEN 'Island Cat'
+  WHEN 7 THEN 'King Dragon Cat'
+  WHEN 8 THEN 'Jamiera Cat'
+  WHEN 9 THEN 'Beefcake Cat'
+  WHEN 10 THEN 'Dancer Cat'
+  WHEN 11 THEN 'Hyper Mr.'
+  WHEN 12 THEN 'Ultimate Bondage Cat'
+  WHEN 13 THEN 'Dark Lazer'
+  WHEN 14 THEN 'Heavy Assault C.A.T.'
+  WHEN 15 THEN 'Lollycat'
+  WHEN 16 THEN 'Superstar MONEKO'
+  WHEN 17 THEN 'Unicycle Cat'
+  WHEN 18 THEN 'Flying Ninja Cat'
+  WHEN 19 THEN 'Skelecat'
+  WHEN 20 THEN 'Pastry Cat'
+  WHEN 21 THEN 'Riceball Cat'
+  WHEN 22 THEN 'Gato Amigo'
+  WHEN 23 THEN 'Loincloth Cat'
+  WHEN 24 THEN 'Holy Valkyrie Cat'
+  WHEN 25 THEN 'Awakened Bahamut Cat'
+  WHEN 26 THEN 'Bridal Princess Punt'
+  WHEN 30 THEN 'Tathagata Cat'
+  WHEN 31 THEN 'Ultra Delinquent Cat'
+  WHEN 32 THEN 'Can Can Cat'
+  WHEN 33 THEN 'Octopus Cat'
+  WHEN 34 THEN 'Ultralan Pasalan'
+  WHEN 35 THEN 'Cyberpunk Cat'
+  WHEN 36 THEN 'Fishman Cat'
+  WHEN 37 THEN 'Jiangshi Cat'
+  WHEN 38 THEN 'Chill Cat'
+  WHEN 39 THEN 'iCat'
+  WHEN 40 THEN 'Luxury Bath Cat'
+  WHEN 41 THEN 'Cyborg Cat'
+  WHEN 42 THEN 'Ice Crystal Cat'
+  WHEN 43 THEN 'Cat Machine Mk 3'
+  WHEN 44 THEN 'Greater Balrog Cat'
+  WHEN 46 THEN 'Catasaurus'
+  WHEN 47 THEN 'Maximum the Fighter'
+  WHEN 48 THEN 'Dread Pirate Catley'
+  WHEN 49 THEN 'Goemon Cat'
+  WHEN 50 THEN 'Sanzo Cat'
+  WHEN 51 THEN 'Doctor Cat'
+  WHEN 52 THEN 'Necro-Dancer Cat'
+  WHEN 55 THEN 'Enchantress Cat'
+  WHEN 56 THEN 'Cataur'
+  WHEN 57 THEN 'Paladin Cat'
+  WHEN 58 THEN 'Elemental Duelist Cat'
+  WHEN 59 THEN 'Cats in the Cradle'
+  WHEN 60 THEN 'Quizmaster Cat'
+  WHEN 61 THEN 'Roe Cat'
+  WHEN 63 THEN 'Rampage Cats'
+  WHEN 66 THEN 'PPT46'
+  WHEN 67 THEN 'Crystal Li''l Gau Gau'
+  WHEN 68 THEN 'Judgment'
+  WHEN 69 THEN 'Oversleeping Beauty Punt'
+  WHEN 70 THEN 'Ritual Cat'
+  WHEN 71 THEN 'Immortal Yukimura'
+  WHEN 72 THEN 'Immortal Keiji'
+  WHEN 73 THEN 'Immortal Nobunaga'
+  WHEN 74 THEN 'Xmas Pudding Cat'
+  WHEN 75 THEN 'Divine Windy'
+  WHEN 76 THEN 'Divine Thundia'
+  WHEN 77 THEN 'SpringDroid'
+  WHEN 78 THEN 'Space Marine Cat'
+  WHEN 79 THEN 'Prisoner Cat'
+  WHEN 80 THEN 'Gentleman Bros.'
+  WHEN 81 THEN 'Nyalladin'
+  WHEN 83 THEN 'God-Emperor Sodom'
+  WHEN 84 THEN 'God-Emperor Megidora'
+  WHEN 85 THEN 'God-Emperor Vars'
+  WHEN 86 THEN 'God-Emperor Kamukura'
+  WHEN 87 THEN 'God-Emperor Raiden'
+  WHEN 88 THEN 'Noodle Cats'
+  WHEN 91 THEN 'Manic Mohawk Cat'
+  WHEN 92 THEN 'Manic Eraser Cat'
+  WHEN 93 THEN 'Manic Dark Cat'
+  WHEN 94 THEN 'Manic Macho Legs'
+  WHEN 95 THEN 'Manic Lion Cat'
+  WHEN 96 THEN 'Manic Flying Cat'
+  WHEN 97 THEN 'Manic Island Cat'
+  WHEN 98 THEN 'Manic King Dragon'
+  WHEN 99 THEN 'Manic Jamiera Cat'
+  WHEN 100 THEN 'Wrestling Cat'
+  WHEN 103 THEN 'Mega Cat EX'
+  WHEN 104 THEN 'Kiss and Koi'
+  WHEN 105 THEN 'Divine Kuu'
+  WHEN 106 THEN 'Divine Kai'
+  WHEN 107 THEN 'Divine Coppermine'
+  WHEN 109 THEN 'Madam the Savannah'
+  WHEN 111 THEN 'Frolicking Nono CC'
+  WHEN 119 THEN 'Wyvern and Alec'
+  WHEN 120 THEN 'Healer Cat CC'
+  WHEN 121 THEN 'Merc & Cat CC'
+  WHEN 122 THEN 'Call Center Cat'
+  WHEN 123 THEN 'Val Val Cat'
+  WHEN 124 THEN 'Immortal Masamune'
+  WHEN 125 THEN 'Immortal Shingen'
+  WHEN 126 THEN 'Puppetmaster & Charley'
+  WHEN 127 THEN 'Bombercat'
+  WHEN 128 THEN 'Kite Cat'
+  WHEN 129 THEN 'Glittering Macho Cat'
+  WHEN 130 THEN 'Awakened Ururun'
+  WHEN 132 THEN 'Iron Claw X'
+  WHEN 134 THEN 'King Gamereon'
+  WHEN 135 THEN 'Ultima Galaxy Cosmo'
+  WHEN 136 THEN 'The Peach Devils'
+  WHEN 137 THEN 'Jizo''s Mega-Castle'
+  WHEN 138 THEN 'The Chaos Moon'
+  WHEN 143 THEN 'Joyful Nurse Cat'
+  WHEN 144 THEN 'Cat Base Ultra'
+  WHEN 145 THEN 'Rodeo Cat'
+  WHEN 146 THEN 'Acrobat Cats'
+  WHEN 147 THEN 'Robocat'
+  WHEN 148 THEN 'Ramen Cat'
+  WHEN 149 THEN 'Cameraman Cat'
+  WHEN 150 THEN 'Juliet the Maiko'
+  WHEN 151 THEN 'Pizza Cat'
+  WHEN 152 THEN 'Slapstick Cats'
+  WHEN 153 THEN 'Catophone'
+  WHEN 154 THEN 'Hoopmaster Cat'
+  WHEN 158 THEN 'Immortal Kenshin'
+  WHEN 159 THEN 'Divine Kalisa'
+  WHEN 160 THEN 'Gekirinchi'
+  WHEN 161 THEN 'Manic Princess Punt'
+  WHEN 168 THEN 'Assassinlan Pasalan'
+  WHEN 169 THEN 'E. Kubilan Pasalan'
+  WHEN 170 THEN 'Lufalan Pasalan'
+  WHEN 171 THEN 'Piccolan Pasalan'
+  WHEN 172 THEN 'Schoolbus Nyandam'
+  WHEN 173 THEN 'Citizen Mola'
+  WHEN 174 THEN 'Master of the Pacific'
+  WHEN 177 THEN 'God-Emperor Dioramos'
+  WHEN 179 THEN 'Takuya＆ Lovely Yuki'
+  WHEN 180 THEN 'Mystery Catgirl Yuki'
+  WHEN 183 THEN 'Cat Kart P'
+  WHEN 185 THEN 'Revolutionary Hearscht CC'
+  WHEN 187 THEN 'Holiday Juvens CC'
+  WHEN 188 THEN 'Savior Mystica CC'
+  WHEN 191 THEN 'Titi Cat CC'
+  WHEN 194 THEN 'Inferno Akira'
+  WHEN 195 THEN 'Mission Control Mekako'
+  WHEN 196 THEN 'Ultimate Catman'
+  WHEN 197 THEN 'Corrupted Psychocat'
+  WHEN 198 THEN 'Thaumaturge Cat'
+  WHEN 199 THEN 'Seafarer Cat'
+  WHEN 201 THEN 'Mochi Cat'
+  WHEN 203 THEN 'Kachiyama Assault Brigade'
+  WHEN 209 THEN 'Li''l Mohawk Cat'
+  WHEN 210 THEN 'Li''l Eraser Cat'
+  WHEN 211 THEN 'Li''l Dark Cat'
+  WHEN 212 THEN 'The Grey Fox'
+  WHEN 213 THEN 'Value Meal Cat'
+  WHEN 222 THEN 'GOLDEN HUGE HERMIT CC'
+  WHEN 223 THEN 'GOLDEN JUPITER CC'
+  WHEN 224 THEN 'GOLDEN MORDEN CC'
+  WHEN 225 THEN 'HI-DO MK III'
+  WHEN 226 THEN 'Mad Doctor Klay'
+  WHEN 227 THEN 'Harbinger Cat'
+  WHEN 228 THEN 'Costumed Witchy Neneko'
+  WHEN 237 THEN 'Headmaster Cat Jobs'
+  WHEN 238 THEN 'Richest Cat'
+  WHEN 239 THEN 'Sniper the Deadeye'
+  WHEN 240 THEN 'Shishilan Pasalan'
+  WHEN 241 THEN 'Frostspirit Kai, type μ'
+  WHEN 245 THEN 'Li''l Macho Legs Cat'
+  WHEN 246 THEN 'Li''l Lion Cat'
+  WHEN 247 THEN 'Li''l Flying Cat'
+  WHEN 248 THEN 'Extra-Life Cat'
+  WHEN 257 THEN 'Almighty Zeus'
+  WHEN 258 THEN 'Almighty Anubis'
+  WHEN 259 THEN 'Almighty Aphrodite'
+  WHEN 260 THEN 'Time Traveller Cat'
+  WHEN 261 THEN 'Akuma Hayabusa'
+  WHEN 267 THEN 'Catyphoon'
+  WHEN 268 THEN 'Awakened Mina'
+  WHEN 270 THEN 'Crazed Catgirl Yuki'
+  WHEN 271 THEN 'Almighty Amaterasu'
+  WHEN 272 THEN 'Almighty Ganesha'
+  WHEN 273 THEN 'Soba Cat'
+  WHEN 275 THEN 'Brightsummer Cat'
+  WHEN 276 THEN 'Early Summer Neneko'
+  WHEN 282 THEN 'Gorgeous Groovin'' Cat'
+  WHEN 283 THEN 'Pai-Pai DX'
+  WHEN 284 THEN 'Bullet Train Cat'
+  WHEN 286 THEN 'Flight Unit R.E.I.'
+  WHEN 287 THEN 'Golfer Cat'
+  WHEN 288 THEN 'Ultimate Madoka'
+  WHEN 289 THEN 'Devil Homura'
+  WHEN 299 THEN 'Li''l Ultimate Madoka'
+  WHEN 300 THEN 'Li''l Devil Homura'
+  WHEN 302 THEN 'Queen Succubus Cat'
+  WHEN 303 THEN 'Cafeteria Cat'
+  WHEN 304 THEN 'CAT-8 Behemoth'
+  WHEN 305 THEN 'B.C.S. Tigerclaw'
+  WHEN 306 THEN 'NEK-02 Air Citadel'
+  WHEN 307 THEN 'Housewife Cat'
+  WHEN 308 THEN 'Weedwacker Cat'
+  WHEN 310 THEN 'Xmas Spirit Nurse'
+  WHEN 311 THEN 'Li''l Island Cat'
+  WHEN 312 THEN 'Li''l King Dragon Cat'
+  WHEN 313 THEN 'Li''l Jamiera Cat'
+  WHEN 314 THEN 'Festive New Year Neneko'
+  WHEN 316 THEN 'Almighty Poseidon'
+  WHEN 319 THEN 'Radical Cat'
+  WHEN 322 THEN 'The One-Hit Wonders'
+  WHEN 323 THEN 'Awakened Musashi'
+  WHEN 324 THEN 'Green Shell Cat'
+  WHEN 325 THEN 'Ectoweight Cat'
+  WHEN 329 THEN 'Easter Egg Cat'
+  WHEN 330 THEN 'Spring Breeze Kenshin'
+  WHEN 331 THEN 'Malevolent Mad-Duck'
+  WHEN 332 THEN 'Blossoming Neneko'
+  WHEN 334 THEN 'Fox Queen Himeyuri'
+  WHEN 335 THEN 'Mer-Queen Ruri'
+  WHEN 336 THEN 'Eternal Reika'
+  WHEN 337 THEN 'HMS Princess II CC'
+  WHEN 338 THEN 'Immortal Yoshimoto'
+  WHEN 340 THEN 'Redhead Muscled Yuki Cat'
+  WHEN 341 THEN 'Lost World Catgirl Yuki'
+  WHEN 344 THEN 'Artist Orthos CC'
+  WHEN 345 THEN 'Naptime Michelia CC'
+  WHEN 351 THEN 'Divine Twinstars'
+  WHEN 352 THEN 'Masked Grandmaster Cat'
+  WHEN 355 THEN 'Orbital Annihilator Ragnarok'
+  WHEN 357 THEN 'Jester Queen Deale'
+  WHEN 358 THEN 'Opulent Verbena'
+  WHEN 359 THEN 'Bazibastra'
+  WHEN 360 THEN 'Mizuririn'
+  WHEN 361 THEN 'Aervanta'
+  WHEN 362 THEN 'Saber Alter CC'
+  WHEN 369 THEN 'Saber Alter Cat'
+  WHEN 370 THEN 'Dreaming Sakura Cat'
+  WHEN 376 THEN 'Catellite'
+  WHEN 377 THEN 'The Kitty of Liberty'
+  WHEN 379 THEN 'Curry Cat'
+  WHEN 382 THEN 'Macho Crystal Cat'
+  WHEN 383 THEN 'Spiritual Yulala'
+  WHEN 385 THEN 'Akio & Gunder CC'
+  WHEN 390 THEN 'Baseball Mask α'
+  WHEN 391 THEN 'Baseball Mask β'
+  WHEN 392 THEN 'Baseball Mask γ'
+  WHEN 393 THEN 'Samba Saki CC'
+  WHEN 394 THEN 'Dark Subaru CC'
+  WHEN 395 THEN 'Baseball Mask δ'
+  WHEN 396 THEN 'Ganglion the Unleashed'
+  WHEN 397 THEN 'Sacred Blade Sakura'
+  WHEN 401 THEN 'Gigavolta'
+  WHEN 402 THEN 'Plug Suit Shinji Black'
+  WHEN 405 THEN 'Moon Kaworu'
+  WHEN 409 THEN 'Reunion Li''l Rei'
+  WHEN 410 THEN 'Eyepatch Li''l Asuka'
+  WHEN 413 THEN 'Determined Unit-01 & Cat'
+  WHEN 414 THEN 'Unit-02, Code 777'
+  WHEN 417 THEN 'Subterra Sentinels'
+  WHEN 426 THEN 'Ultimate Mecha-Bun'
+  WHEN 427 THEN 'Cat Quest Heroes'
+  WHEN 431 THEN 'Section Chief Gravicci'
+  WHEN 436 THEN 'Mystican Pasalan'
+  WHEN 437 THEN 'Cat God the Golden'
+  WHEN 439 THEN 'Almighty Chronos'
+  WHEN 440 THEN 'Law of Cycles Nagisa'
+  WHEN 442 THEN 'Tourist Cat'
+  WHEN 443 THEN 'Neo Driller Cat'
+  WHEN 444 THEN 'Neo Piledriver Cat'
+  WHEN 445 THEN 'Neo Cutter Cat'
+  WHEN 446 THEN 'Neo Backhoe Cat'
+  WHEN 447 THEN 'Neo Saw Cat'
+  WHEN 448 THEN 'Immortal Miyamoto'
+  WHEN 450 THEN 'God-Emperor Babel'
+  WHEN 452 THEN 'Future Cat'
+  WHEN 456 THEN 'Dark Sakura CC'
+  WHEN 462 THEN 'Metafilibuster'
+  WHEN 464 THEN 'Reborn Warrior Doguemon'
+  WHEN 467 THEN 'Super S-Zeus'
+  WHEN 468 THEN 'Head Rococo'
+  WHEN 469 THEN 'Super D-Devil'
+  WHEN 473 THEN 'Rampaging Yamato'
+  WHEN 474 THEN 'Strike Angel'
+  WHEN 482 THEN 'Cat-Eared Souma'
+  WHEN 488 THEN 'Vanished NNN Wunder'
+  WHEN 495 THEN 'Bellydance Cat'
+  WHEN 496 THEN 'Immortal Kaihime'
+  WHEN 502 THEN 'Divine Myrcia'
+  WHEN 505 THEN 'God-Emperor Gladios'
+  WHEN 506 THEN 'Nameless Eyewaltz CC'
+  WHEN 511 THEN 'Kage'
+  WHEN 517 THEN 'Crimson King of Battle Ken'
+  WHEN 519 THEN 'Lasvoss Reborn'
+  WHEN 521 THEN 'Naga Cat'
+  WHEN 522 THEN 'Fiend Cat'
+  WHEN 523 THEN 'Shigong Cat'
+  WHEN 525 THEN 'Kinrangers GigaForce'
+  WHEN 527 THEN 'Jelly Dumpling Cat'
+  WHEN 528 THEN 'Royal Guard Cat'
+  WHEN 531 THEN 'Cadaver BearCat'
+  WHEN 532 THEN 'Awakened Urs'
+  WHEN 533 THEN 'Bad Blaster Saki'
+  WHEN 534 THEN 'Almighty Hades'
+  WHEN 539 THEN 'Gridiron Cat'
+  WHEN 545 THEN 'Bubble Cat'
+  WHEN 546 THEN 'Sukelan Kakulan'
+  WHEN 553 THEN 'Fried Chicken Cat'
+  WHEN 554 THEN 'Esoteric Uril'
+  WHEN 556 THEN 'Ghost Alibaba'
+  WHEN 559 THEN 'Hell Commissioner Emma'
+  WHEN 563 THEN 'Aquablaster Saki'
+  WHEN 564 THEN 'Fabulous Pasalan'
+  WHEN 565 THEN 'Permed Suntan Cat'
+  WHEN 566 THEN 'Gelato Bro Cats'
+  WHEN 568 THEN 'Idi:NX'
+  WHEN 569 THEN 'Gravolodon'
+  WHEN 570 THEN 'Halloween Knight Vars'
+  WHEN 584 THEN 'Maeda Christmas DX'
+  WHEN 589 THEN 'True Love Neneko'
+  WHEN 594 THEN 'Ultra Atlantis Logistix'
+  WHEN 595 THEN 'Everbloom Lord Kamukura'
+  WHEN 607 THEN 'Fabled Adventure Girl Kanna'
+  WHEN 610 THEN 'King Nekokhamen'
+  WHEN 613 THEN 'Awakened Doron'
+  WHEN 614 THEN 'The Southern Sunflare'
+  WHEN 617 THEN 'Devil Hunter Satoru'
+  WHEN 618 THEN 'Immortal Amakusa'
+  WHEN 619 THEN 'Divine Lilin π'
+  WHEN 620 THEN 'God-Emperor Hevijak'
+  WHEN 621 THEN 'Cat Researcher'
+  WHEN 623 THEN 'Brass Cat'
+  WHEN 625 THEN 'Ragelan Pasalan'
+  WHEN 629 THEN 'Brainwashed Mohawk Cat'
+  WHEN 631 THEN 'Yaminora'
+  WHEN 632 THEN 'Obliterator Diabolosa'
+  WHEN 633 THEN 'Grand Chunchun Haunters'
+  WHEN 634 THEN 'Demon Knight Kyklops'
+  WHEN 636 THEN 'Brainwashed Eraser Cat'
+  WHEN 642 THEN 'Almighty Lucifer'
+  WHEN 643 THEN 'True Superfeline'
+  WHEN 644 THEN 'Minty Love Mekako'
+  WHEN 645 THEN 'Brainwashed Dark Cat'
+  WHEN 647 THEN 'Divine Huntress Terun ζ'
+  WHEN 649 THEN 'Immortal Hanzo'
+  WHEN 653 THEN 'Awakened Naala'
+  WHEN 654 THEN 'Brainwashed Macho Legs Cat'
+  WHEN 655 THEN 'Blizarena'
+  WHEN 656 THEN 'Haniwa Cat'
+  WHEN 658 THEN 'Courier Cat'
+  WHEN 659 THEN 'Catarzan'
+  WHEN 660 THEN 'God-Emperor Daliasan'
+  WHEN 662 THEN 'Brainwashed Lion Cat'
+  WHEN 663 THEN 'Gas Mask Cat'
+  WHEN 664 THEN 'Surgeon Cat'
+  WHEN 665 THEN 'Exorcist Cat'
+  WHEN 667 THEN 'Brainwashed Flying Cat'
+  WHEN 668 THEN 'Immortal Master Tengu'
+  WHEN 669 THEN 'Cat Cactus'
+  WHEN 670 THEN 'Armored Firefly Cat'
+  WHEN 674 THEN 'Extradimensional Envanz'
+  WHEN 675 THEN 'Racquet Cat'
+  WHEN 676 THEN 'Mushroom Cat'
+  WHEN 682 THEN 'Lady of Deception Vega'
+  WHEN 683 THEN 'Vampiric Yukimura'
+  WHEN 684 THEN 'Brainwashed Island Cat'
+  WHEN 685 THEN 'Supercar Cat'
+  WHEN 688 THEN 'Brainwashed King Dragon Cat'
+  WHEN 691 THEN 'Ape Lord Luza'
+  WHEN 692 THEN 'Oni Battlepod Kozuchimaru'
+  WHEN 694 THEN 'Brainwashed Jamiera Cat'
+  WHEN 697 THEN 'Cat Chief'
+  WHEN 698 THEN 'Lightning Jack'
+  WHEN 700 THEN 'Hitman Cat'
+  WHEN 706 THEN 'Soap Cat'
+  WHEN 707 THEN 'Barrel Cat'
+  WHEN 712 THEN 'Kaolan Tatalan'
+  WHEN 713 THEN 'Clown Cat'
+  WHEN 714 THEN 'Great Deep-Diver Kanna'
+  WHEN 715 THEN 'Hyper Battalion Convoys'
+  WHEN 716 THEN 'Cop Cat'
+  WHEN 717 THEN 'Farmboy Cat'
+  WHEN 720 THEN 'Fallen Bear Cat'
+  WHEN 723 THEN 'Almighty Aset'
+  WHEN 724 THEN 'Cat Egg Pod'
+  WHEN 730 THEN 'Lion Dancer Cat'
+  WHEN 733 THEN 'Uninterested in the plots and schemes of adults,'
+  WHEN 757 THEN 'Bride Cat'
+  WHEN 765 THEN 'Clam Cat'
+  WHEN 766 THEN 'Dropping in from "Survive! Mola Mola!" Tiny bones'
+END
+WHERE "unitNumber" IN (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 46, 47, 48, 49, 50, 51, 52, 55, 56, 57, 58, 59, 60, 61, 63, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 83, 84, 85, 86, 87, 88, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 103, 104, 105, 106, 107, 109, 111, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 132, 134, 135, 136, 137, 138, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 158, 159, 160, 161, 168, 169, 170, 171, 172, 173, 174, 177, 179, 180, 183, 185, 187, 188, 191, 194, 195, 196, 197, 198, 199, 201, 203, 209, 210, 211, 212, 213, 222, 223, 224, 225, 226, 227, 228, 237, 238, 239, 240, 241, 245, 246, 247, 248, 257, 258, 259, 260, 261, 267, 268, 270, 271, 272, 273, 275, 276, 282, 283, 284, 286, 287, 288, 289, 299, 300, 302, 303, 304, 305, 306, 307, 308, 310, 311, 312, 313, 314, 316, 319, 322, 323, 324, 325, 329, 330, 331, 332, 334, 335, 336, 337, 338, 340, 341, 344, 345, 351, 352, 355, 357, 358, 359, 360, 361, 362, 369, 370, 376, 377, 379, 382, 383, 385, 390, 391, 392, 393, 394, 395, 396, 397, 401, 402, 405, 409, 410, 413, 414, 417, 426, 427, 431, 436, 437, 439, 440, 442, 443, 444, 445, 446, 447, 448, 450, 452, 456, 462, 464, 467, 468, 469, 473, 474, 482, 488, 495, 496, 502, 505, 506, 511, 517, 519, 521, 522, 523, 525, 527, 528, 531, 532, 533, 534, 539, 545, 546, 553, 554, 556, 559, 563, 564, 565, 566, 568, 569, 570, 584, 589, 594, 595, 607, 610, 613, 614, 617, 618, 619, 620, 621, 623, 625, 629, 631, 632, 633, 634, 636, 642, 643, 644, 645, 647, 649, 653, 654, 655, 656, 658, 659, 660, 662, 663, 664, 665, 667, 668, 669, 670, 674, 675, 676, 682, 683, 684, 685, 688, 691, 692, 694, 697, 698, 700, 706, 707, 712, 713, 714, 715, 716, 717, 720, 723, 724, 730, 733, 757, 765, 766);
+
+-- Bulk update ultra form names
+UPDATE "Unit" SET "ultraName" = CASE "unitNumber"
+  WHEN 59 THEN 'Cats in the Stroller'
+  WHEN 73 THEN 'Phantasmal Nobunaga'
+  WHEN 75 THEN 'Ultimate Windy'
+  WHEN 76 THEN 'Ultimate Thundia'
+  WHEN 135 THEN 'Supernova Cosmo'
+  WHEN 137 THEN 'Ultra Kasa Jizo'
+  WHEN 138 THEN 'Ultra Kaguya'
+  WHEN 158 THEN 'Hellrider Kenshin'
+  WHEN 177 THEN 'Ascendant Dioramos'
+  WHEN 212 THEN 'The Spectral Cat'
+  WHEN 304 THEN 'CAT-10 Gigapult'
+  WHEN 305 THEN 'B.C.S. Beartooth'
+  WHEN 306 THEN 'NEK-03 Cloud Emperor'
+  WHEN 359 THEN 'Bazifenix'
+  WHEN 360 THEN 'Mizunade'
+  WHEN 361 THEN 'Aervantex'
+  WHEN 397 THEN 'Sacred Blade Sakura Z'
+  WHEN 431 THEN 'Arcane Commissioner Gravicci'
+END
+WHERE "unitNumber" IN (59, 73, 75, 76, 135, 137, 138, 158, 177, 212, 304, 305, 306, 359, 360, 361, 397, 431);
+
+-- Fix formCount for units that don't have 3 forms
+UPDATE "Unit" SET "formCount" = 1 WHERE "unitNumber" IN (673, 802, 812);
+UPDATE "Unit" SET "formCount" = 2 WHERE "unitNumber" IN (27, 28, 29, 45, 53, 62, 64, 65, 82, 108, 110, 112, 113, 114, 115, 116, 117, 118, 131, 140, 141, 175, 176, 181, 184, 186, 189, 190, 200, 202, 214, 215, 216, 217, 218, 219, 220, 221, 229, 230, 242, 243, 244, 269, 274, 277, 278, 279, 280, 290, 291, 292, 293, 294, 295, 296, 297, 298, 301, 315, 317, 318, 326, 327, 328, 333, 342, 343, 346, 354, 363, 364, 365, 366, 367, 368, 371, 372, 373, 374, 375, 378, 380, 381, 384, 386, 387, 388, 389, 399, 400, 403, 404, 406, 407, 408, 411, 412, 415, 416, 418, 419, 420, 421, 428, 429, 432, 433, 435, 438, 441, 449, 451, 455, 457, 458, 459, 460, 461, 463, 466, 470, 471, 472, 475, 476, 477, 478, 481, 483, 484, 485, 486, 487, 489, 490, 491, 493, 494, 497, 498, 499, 500, 501, 507, 508, 509, 510, 512, 513, 514, 515, 516, 518, 520, 526, 529, 530, 535, 536, 537, 538, 543, 544, 547, 548, 549, 550, 551, 552, 555, 557, 558, 560, 561, 562, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 585, 586, 587, 588, 590, 591, 592, 593, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 609, 611, 612, 615, 616, 622, 624, 630, 635, 641, 646, 648, 650, 651, 652, 657, 661, 666, 671, 672, 677, 678, 679, 680, 681, 686, 687, 689, 690, 693, 695, 696, 699, 705, 708, 709, 710, 711, 718, 719, 721, 722, 725, 726, 727, 728, 731, 735, 736, 737, 738, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 756, 758, 759, 760, 763, 767, 768, 769, 771, 772, 773, 774, 776, 777, 778, 779, 780, 781, 783, 785, 786, 787, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 801, 803, 804, 805, 806, 807, 808, 809, 810, 811, 813, 814, 815, 817, 819, 820, 822, 824, 826, 827, 828, 829, 830, 837);
+UPDATE "Unit" SET "formCount" = 4 WHERE "unitNumber" IN (59, 73, 75, 76, 135, 137, 138, 158, 177, 212, 304, 305, 306, 359, 360, 361, 397, 431);
