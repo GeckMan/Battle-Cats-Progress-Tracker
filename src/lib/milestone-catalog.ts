@@ -19,7 +19,6 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "The Crazed Fish Cat",   category: "CRAZED", sortOrder: 7 },
   { displayName: "The Crazed Lizard Cat", category: "CRAZED", sortOrder: 8 },
   { displayName: "The Crazed Titan Cat",  category: "CRAZED", sortOrder: 9 },
-  { displayName: "Crazed Bahamut Cat",    category: "CRAZED", sortOrder: 10 },
 
   // ── MANIC ───────────────────────────────────────────────────────────────────
   { displayName: "Manic Mohawk Cat",   category: "MANIC", sortOrder: 1 },
@@ -31,21 +30,33 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Manic Swimmer Cat",  category: "MANIC", sortOrder: 7 },
   { displayName: "Manic Lizard Cat",   category: "MANIC", sortOrder: 8 },
   { displayName: "Manic Titan Cat",    category: "MANIC", sortOrder: 9 },
-  { displayName: "Awakened Bahamut Cat", category: "MANIC", sortOrder: 10 },
 
-  // ── ADVENT ──────────────────────────────────────────────────────────────────
-  { displayName: "Wrath of Bun-Bun",             category: "ADVENT", sortOrder: 1 },
-  { displayName: "Attack on Titanium",            category: "ADVENT", sortOrder: 2 },
-  { displayName: "Parade of the Dead",            category: "ADVENT", sortOrder: 3 },
-  { displayName: "Night of the Doktor",           category: "ADVENT", sortOrder: 4 },
-  { displayName: "River Styx",                    category: "ADVENT", sortOrder: 5 },
-  { displayName: "Fall of Ogre Island",           category: "ADVENT", sortOrder: 6 },
-  { displayName: "Conspiracy of the Universe",    category: "ADVENT", sortOrder: 7 },
-  { displayName: "Dimensional Interference",      category: "ADVENT", sortOrder: 8 },
-  { displayName: "Day of Judgment",               category: "ADVENT", sortOrder: 9 },
-  { displayName: "The Pale Wind",                 category: "ADVENT", sortOrder: 10 },
-  { displayName: "Cats in a Pinch",               category: "ADVENT", sortOrder: 11 },
-  { displayName: "Honey Trap",                    category: "ADVENT", sortOrder: 12 },
+  // ── ADVENT (Standard Tier 1) ──────────────────────────────────────────────
+  { displayName: "Clionel Ascendant",     category: "ADVENT", sortOrder: 1 },
+  { displayName: "River Styx",            category: "ADVENT", sortOrder: 2 },
+  { displayName: "Queen's Coronation",    category: "ADVENT", sortOrder: 3 },
+  { displayName: "Dead on Debut",         category: "ADVENT", sortOrder: 4 },
+  { displayName: "King Wahwah's Revenge", category: "ADVENT", sortOrder: 5 },
+  { displayName: "Deeply Dreaming",       category: "ADVENT", sortOrder: 6 },
+  { displayName: "Blue Impact",           category: "ADVENT", sortOrder: 7 },
+  { displayName: "Bottom of the Swamp",   category: "ADVENT", sortOrder: 8 },
+  { displayName: "Prelude to Ruin",       category: "ADVENT", sortOrder: 9 },
+  { displayName: "Temptation's Symphony", category: "ADVENT", sortOrder: 10 },
+  { displayName: "Rashomon",              category: "ADVENT", sortOrder: 11 },
+
+  // ── ADVENT (Standard Tier 2) ──────────────────────────────────────────────
+  { displayName: "Courts of Torment",     category: "ADVENT", sortOrder: 12 },
+  { displayName: "Papuu's Paradise",      category: "ADVENT", sortOrder: 13 },
+  { displayName: "The Old Queen",         category: "ADVENT", sortOrder: 14 },
+  { displayName: "Wanwan's Glory",        category: "ADVENT", sortOrder: 15 },
+  { displayName: "Z-Onel Rises!",         category: "ADVENT", sortOrder: 16 },
+  { displayName: "First Errand",          category: "ADVENT", sortOrder: 17 },
+
+  // ── GREAT ADVENT ──────────────────────────────────────────────────────────
+  { displayName: "Reign of the Tyrant",       category: "ADVENT", sortOrder: 18 },
+  { displayName: "Invasion of the Swamplord", category: "ADVENT", sortOrder: 19 },
+  { displayName: "Hunt for the Xenobeast",    category: "ADVENT", sortOrder: 20 },
+  { displayName: "Jumbo Invasion",            category: "ADVENT", sortOrder: 21 },
 
   // ── CATCLAW ─────────────────────────────────────────────────────────────────
   { displayName: "Championship Rank 1",  category: "CATCLAW", sortOrder: 1 },
