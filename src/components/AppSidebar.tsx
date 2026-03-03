@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 
 /* ─── Nav items ──────────────────────────────────────────────────────────── */
 
@@ -23,6 +23,7 @@ const NAV_ITEMS = [
 export default function AppSidebar() {
   const pathname = usePathname();
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [pendingRequests, setPendingRequests] = useState(0);
 
   // Close mobile menu on route change
   useEffect(() => {
@@ -38,6 +39,23 @@ export default function AppSidebar() {
     }
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
+
+  // Poll for pending friend requests
+  const checkPending = useCallback(async () => {
+    try {
+      const res = await fetch("/api/social/summary");
+      if (res.ok) {
+        const data = await res.json();
+        setPendingRequests(data.incoming?.length ?? 0);
+      }
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    checkPending();
+    const interval = setInterval(checkPending, 30000);
+    return () => clearInterval(interval);
+  }, [checkPending]);
 
   const sidebarContent = (
     <>
@@ -57,6 +75,7 @@ export default function AppSidebar() {
             href={item.href}
             active={pathname === item.href}
             icon={item.icon}
+            badge={item.href === "/social" ? pendingRequests : 0}
           >
             {item.label}
           </NavLink>
@@ -139,11 +158,13 @@ function NavLink({
   href,
   active,
   icon,
+  badge = 0,
   children,
 }: {
   href: string;
   active: boolean;
   icon: React.ReactNode;
+  badge?: number;
   children: React.ReactNode;
 }) {
   return (
@@ -158,7 +179,12 @@ function NavLink({
       <span className={`flex-shrink-0 ${active ? "text-amber-400" : "text-gray-600"}`}>
         {icon}
       </span>
-      {children}
+      <span className="flex-1">{children}</span>
+      {badge > 0 && (
+        <span className="text-[10px] font-bold bg-amber-500 text-black rounded-full min-w-[18px] h-[18px] flex items-center justify-center px-1 leading-none">
+          {badge}
+        </span>
+      )}
     </Link>
   );
 }
