@@ -53,7 +53,6 @@ const SOURCE_LABELS: Record<string, string> = {
   SPECIAL_SALE:      "Special Sale",
   EXTERNAL_APP:      "External App",
   STAMP_REWARD:      "Stamp Reward",
-  OTOTO_CORPS:       "Ototo Corps",
   EASTER_EGG:        "Easter Egg",
   UNOBTAINABLE:      "Unobtainable",
 };
