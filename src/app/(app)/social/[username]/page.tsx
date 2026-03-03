@@ -1,4 +1,5 @@
 import { getServerSession } from "next-auth/next";
+import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
@@ -12,7 +13,6 @@ export default async function FriendProfilePage(props: {
   const viewerId = session.user.id as string;
 
   const { username: raw } = await props.params;
-
   const username = decodeURIComponent(raw ?? "").trim();
   if (!username) notFound();
 
@@ -20,10 +20,8 @@ export default async function FriendProfilePage(props: {
     where: { username },
     select: { id: true, username: true, displayName: true, privacy: true },
   });
-
   if (!user) notFound();
 
-  // Must be friends (or self)
   const isSelf = user.id === viewerId;
   const friendship = isSelf
     ? true
@@ -41,25 +39,20 @@ export default async function FriendProfilePage(props: {
   if (!friendship) {
     return (
       <div className="p-8 space-y-4">
-        <h1 className="text-2xl font-semibold text-gray-100">
-          {user.displayName ?? user.username}
-        </h1>
-        <div className="text-sm text-gray-400">
-          You must be friends to view progress.
-        </div>
+        <Link href="/social" className="text-xs text-amber-600 hover:text-amber-400 transition-colors">← Back to Social</Link>
+        <h1 className="text-2xl font-semibold text-gray-100">{user.displayName ?? user.username}</h1>
+        <div className="text-sm text-gray-400">You must be friends to view this profile.</div>
       </div>
     );
   }
 
-  // Privacy check (default FRIENDS if no settings)
   const progressVis = user.privacy?.progressVisibility ?? "FRIENDS";
   if (!isSelf && progressVis === "PRIVATE") {
     return (
       <div className="p-8 space-y-4">
-        <h1 className="text-2xl font-semibold text-gray-100">
-          {user.displayName ?? user.username}
-        </h1>
-        <div className="text-sm text-gray-400">This user’s progress is private.</div>
+        <Link href="/social" className="text-xs text-amber-600 hover:text-amber-400 transition-colors">← Back to Social</Link>
+        <h1 className="text-2xl font-semibold text-gray-100">{user.displayName ?? user.username}</h1>
+        <div className="text-sm text-gray-400">This user's progress is private.</div>
       </div>
     );
   }
@@ -69,16 +62,14 @@ export default async function FriendProfilePage(props: {
     orderBy: { sortOrder: "asc" },
     include: { progress: { where: { userId: user.id }, take: 1 } },
   });
-
   const storyRows = storyChapters.map((ch) => {
     const p = ch.progress[0];
-    const pct = p
-      ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies })
-      : 0;
+    const pct = p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies }) : 0;
     return { id: ch.id, name: ch.displayName, pct };
   });
-
-  const storyOverall = storyRows.length ? Math.round(storyRows.reduce((s, r) => s + r.pct, 0) / storyRows.length) : 0;
+  const storyOverall = storyRows.length
+    ? Math.round(storyRows.reduce((s, r) => s + r.pct, 0) / storyRows.length)
+    : 0;
 
   // Legend progress
   const sagas = await prisma.legendSaga.findMany({
@@ -90,101 +81,134 @@ export default async function FriendProfilePage(props: {
       },
     },
   });
+  const legendRows = sagas.map((s) => {
+    const percents = s.subchapters.map((sc) =>
+      legendSubchapterPercent({ sagaName: s.displayName, subchapterSortOrder: sc.sortOrder, crownMax: sc.progress[0]?.crownMax ?? null })
+    );
+    const pct = percents.length ? Math.round(percents.reduce((a, b) => a + b, 0) / percents.length) : 0;
+    return { id: s.id, name: s.displayName, pct };
+  });
+  const legendOverall = legendRows.length
+    ? Math.round(legendRows.reduce((s, r) => s + r.pct, 0) / legendRows.length)
+    : 0;
 
-  const legendPercents = sagas.flatMap((s) =>
-    s.subchapters.map((sc) =>
-      legendSubchapterPercent({
-        sagaName: s.displayName,
-        subchapterSortOrder: sc.sortOrder,
-        crownMax: sc.progress[0]?.crownMax ?? null,
-      })
-    )
-  );
+  // Medals
+  const medalsTotal  = await prisma.meowMedal.count();
+  const medalsEarned = await prisma.userMeowMedal.count({ where: { userId: user.id, earned: true } });
+  const medalsOverall = medalsTotal === 0 ? 0 : Math.round((medalsEarned / medalsTotal) * 100);
 
-  const legendOverall = legendPercents.length ? Math.round(legendPercents.reduce((a, b) => a + b, 0) / legendPercents.length) : 0;
+  const overall = Math.round((storyOverall + legendOverall + medalsOverall) / 3);
 
-  const overall = Math.round((storyOverall + legendOverall) / 2);
+  const displayLabel = user.displayName ?? user.username;
 
   return (
-    <div className="p-8 space-y-8">
-      <div>
-        <h1 className="text-2xl font-semibold text-gray-100">
-          {user.displayName ?? user.username}
-        </h1>
-        <div className="text-sm text-gray-500">@{user.username}</div>
+    <div className="p-8 space-y-6 w-full">
+
+      {/* Header */}
+      <div className="flex items-start justify-between gap-4">
+        <div>
+          <Link href="/social" className="text-xs text-amber-600 hover:text-amber-400 transition-colors mb-2 inline-block">
+            ← Back to Social
+          </Link>
+          <h1 className="text-2xl font-semibold text-gray-100">{displayLabel}</h1>
+          {user.displayName && <div className="text-sm text-gray-500 mt-0.5">@{user.username}</div>}
+        </div>
+        {!isSelf && (
+          <Link
+            href={`/social/compare/${encodeURIComponent(user.username)}`}
+            className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+          >
+            Compare →
+          </Link>
+        )}
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        <Card title="Overall" value={`${overall}%`} />
-        <Card title="Story" value={`${storyOverall}%`} />
-        <Card title="Legend" value={`${legendOverall}%`} />
+      {/* Stat cards */}
+      <div className="grid grid-cols-4 gap-3">
+        {[
+          { title: "Overall", pct: overall, highlight: true },
+          { title: "Story",   pct: storyOverall },
+          { title: "Legend",  pct: legendOverall },
+          { title: "Medals",  pct: medalsOverall },
+        ].map(({ title, pct, highlight }) => (
+          <StatCard key={title} title={title} pct={pct} highlight={highlight} />
+        ))}
       </div>
 
-      <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-gray-100">Story Chapters</h2>
-        <div className="space-y-2">
-          {storyRows.map((r) => (
-            <Row key={r.id} label={r.name} pct={r.pct} />
-          ))}
-        </div>
-      </section>
+      {/* Story + Legend side by side */}
+      <div className="grid grid-cols-2 gap-4">
+        <Section title="Story Chapters">
+          <div className="space-y-2">
+            {storyRows.map((r) => (
+              <CompactRow key={r.id} label={r.name} pct={r.pct} />
+            ))}
+          </div>
+        </Section>
 
-      <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-gray-100">Legend Sagas</h2>
-        <div className="space-y-4">
-          {sagas.map((s) => {
-            const sub = s.subchapters.map((sc) =>
-              legendSubchapterPercent({
-                sagaName: s.displayName,
-                subchapterSortOrder: sc.sortOrder,
-                crownMax: sc.progress[0]?.crownMax ?? null,
-              })
-            );
-            const sagaPct = sub.length ? Math.round(sub.reduce((a, b) => a + b, 0) / sub.length) : 0;
+        <Section title="Legend Stages">
+          <div className="space-y-2">
+            {legendRows.map((r) => (
+              <CompactRow key={r.id} label={r.name} pct={r.pct} />
+            ))}
+          </div>
+        </Section>
+      </div>
 
-            return (
-              <div key={s.id} className="border border-gray-700 rounded-lg p-4 bg-black">
-                <div className="flex items-center justify-between">
-                  <div className="text-gray-100 font-semibold">{s.displayName}</div>
-                  <div className="text-gray-300 text-sm">{sagaPct}%</div>
-                </div>
-                <div className="mt-2">
-                  <Bar pct={sagaPct} />
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
+      {/* Medals */}
+      <Section title={`Meow Medals — ${medalsEarned}/${medalsTotal}`}>
+        <CompactRow label="All medals" pct={medalsOverall} sub={`${medalsEarned}/${medalsTotal}`} />
+      </Section>
     </div>
   );
 }
 
-function Card({ title, value }: { title: string; value: string }) {
+/* ── Helpers ────────────────────────────────────────────────────────────── */
+
+function pctColor(pct: number) {
+  if (pct >= 80) return "#fbbf24";
+  if (pct >= 40) return "#d97706";
+  if (pct > 0)   return "#92400e";
+  return "#4b5563";
+}
+
+function barFill(pct: number) {
+  if (pct >= 80) return "bg-amber-400";
+  if (pct >= 40) return "bg-amber-600";
+  if (pct > 0)   return "bg-amber-800";
+  return "bg-gray-700";
+}
+
+function StatCard({ title, pct, highlight = false }: { title: string; pct: number; highlight?: boolean }) {
+  return (
+    <div className={`border rounded-lg p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
+      <div className="text-sm text-gray-400 mb-1">{title}</div>
+      <div className="text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
+      <div className="mt-3 h-2 rounded bg-gray-800 overflow-hidden">
+        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+      </div>
+    </div>
+  );
+}
+
+function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div className="border border-gray-700 rounded-lg p-4 bg-black">
-      <div className="text-sm text-gray-400">{title}</div>
-      <div className="text-2xl font-semibold text-gray-100 mt-1">{value}</div>
+      <h2 className="text-sm font-semibold text-gray-300 mb-3 pb-2 border-b border-gray-800">{title}</h2>
+      {children}
     </div>
   );
 }
 
-function Row({ label, pct }: { label: string; pct: number }) {
+function CompactRow({ label, pct, sub }: { label: string; pct: number; sub?: string }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="w-64 text-sm text-gray-200 truncate">{label}</div>
-      <div className="flex-1">
-        <Bar pct={pct} />
+      <div className="w-[35%] text-sm text-gray-300 truncate flex-shrink-0">{label}</div>
+      <div className="flex-1 h-2 rounded bg-gray-800 overflow-hidden">
+        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
       </div>
-      <div className="w-12 text-right text-sm text-gray-300">{pct}%</div>
-    </div>
-  );
-}
-
-function Bar({ pct }: { pct: number }) {
-  return (
-    <div className="h-2 rounded bg-gray-800 overflow-hidden">
-      <div className="h-2 bg-gray-200" style={{ width: `${pct}%` }} />
+      <div className="w-16 text-right text-sm flex-shrink-0" style={{ color: pctColor(pct) }}>
+        {sub ?? `${pct}%`}
+      </div>
     </div>
   );
 }
