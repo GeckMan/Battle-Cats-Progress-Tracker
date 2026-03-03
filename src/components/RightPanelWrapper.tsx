@@ -15,7 +15,7 @@ function setLastSeen(key: string) {
   localStorage.setItem(key, new Date().toISOString());
 }
 
-export default function RightPanelWrapper() {
+export default function RightPanelWrapper({ currentUserId }: { currentUserId: string }) {
   const [open, setOpen] = useState(false);
   const [activeTab, setActiveTab] = useState<"activity" | "chat">("activity");
   const [unreadActivity, setUnreadActivity] = useState(0);
@@ -32,19 +32,19 @@ export default function RightPanelWrapper() {
       if (actRes.ok) {
         const data = await actRes.json();
         const lastSeen = new Date(getLastSeen(LS_KEY_ACTIVITY));
+        // Only count activities from OTHER users as unread notifications
         const newCount = data.activities.filter(
-          (a: { createdAt: string }) => new Date(a.createdAt) > lastSeen
+          (a: { createdAt: string; userId: string }) =>
+            new Date(a.createdAt) > lastSeen && a.userId !== currentUserId
         ).length;
-        // If there's at least 1 newer than last seen, show the dot
-        // (We can't get exact count from limit=1, so just check if newest is new)
         if (newCount > 0) {
-          // Fetch more to get actual count
           const fullRes = await fetch("/api/activity?limit=200");
           if (fullRes.ok) {
             const full = await fullRes.json();
             setUnreadActivity(
               full.activities.filter(
-                (a: { createdAt: string }) => new Date(a.createdAt) > lastSeen
+                (a: { createdAt: string; userId: string }) =>
+                  new Date(a.createdAt) > lastSeen && a.userId !== currentUserId
               ).length
             );
           }
@@ -56,8 +56,10 @@ export default function RightPanelWrapper() {
       if (chatRes.ok) {
         const data = await chatRes.json();
         const lastSeen = new Date(getLastSeen(LS_KEY_CHAT));
+        // Only count messages from OTHER users as unread
         const newCount = data.messages.filter(
-          (m: { createdAt: string }) => new Date(m.createdAt) > lastSeen
+          (m: { createdAt: string; userId?: string }) =>
+            new Date(m.createdAt) > lastSeen && m.userId !== currentUserId
         ).length;
         if (newCount > 0) {
           const fullRes = await fetch("/api/chat?limit=200");
@@ -65,7 +67,8 @@ export default function RightPanelWrapper() {
             const full = await fullRes.json();
             setUnreadChat(
               full.messages.filter(
-                (m: { createdAt: string }) => new Date(m.createdAt) > lastSeen
+                (m: { createdAt: string; userId?: string }) =>
+                  new Date(m.createdAt) > lastSeen && m.userId !== currentUserId
               ).length
             );
           }
@@ -76,7 +79,7 @@ export default function RightPanelWrapper() {
     } catch {
       /* ignore */
     }
-  }, []);
+  }, [currentUserId]);
 
   // Initial check + poll every 15s
   useEffect(() => {

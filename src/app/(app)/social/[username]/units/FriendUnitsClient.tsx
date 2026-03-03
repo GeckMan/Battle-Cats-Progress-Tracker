@@ -221,6 +221,7 @@ export default function FriendUnitsClient({
 }) {
   const [activeCategory, setActiveCategory] = useState<string>(ALL_KEY);
   const [hideCollab, setHideCollab] = useState(false);
+  const [hideUnowned, setHideUnowned] = useState(true);
   const [sourceFilter, setSourceFilter] = useState("");
   const [setFilter, setSetFilter] = useState("");
   const [units, setUnits] = useState<UnitRow[]>([]);
@@ -277,17 +278,19 @@ export default function FriendUnitsClient({
     setSourceFilter("");
     setSetFilter("");
     setHideCollab(false);
+    setHideUnowned(true);
     setSearchQuery("");
   }
 
-  /* Search filter */
-  const filtered = searchQuery
-    ? units.filter(
-        (u) =>
-          u.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-          String(u.unitNumber).includes(searchQuery)
-      )
-    : units;
+  /* Search + hide-unowned filter */
+  let filtered = units;
+  if (hideUnowned) filtered = filtered.filter((u) => u.formLevel > 0);
+  if (searchQuery) {
+    const q = searchQuery.toLowerCase();
+    filtered = filtered.filter(
+      (u) => u.name.toLowerCase().includes(q) || String(u.unitNumber).includes(searchQuery)
+    );
+  }
 
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
@@ -299,7 +302,7 @@ export default function FriendUnitsClient({
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
-  const hasActiveFilters = sourceFilter || setFilter || hideCollab;
+  const hasActiveFilters = sourceFilter || setFilter || hideCollab || !hideUnowned;
 
   return (
     <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
@@ -380,6 +383,18 @@ export default function FriendUnitsClient({
         {(!sourceFilter || sourceFilter === "RARE_CAPSULE") && availableSets.length > 0 && (
           <FilterSelect label="All Sets" value={setFilter} options={availableSets} onChange={setSetFilter} />
         )}
+
+        <button
+          type="button"
+          onClick={() => setHideUnowned((v) => !v)}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
+            hideUnowned
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+        >
+          <span>{hideUnowned ? "✓" : ""} Owned Only</span>
+        </button>
 
         <button
           type="button"
