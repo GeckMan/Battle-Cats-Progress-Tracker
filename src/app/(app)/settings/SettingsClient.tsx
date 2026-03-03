@@ -22,7 +22,6 @@ export default function SettingsClient(props: Props) {
       />
       <PasswordPanel />
       <PrivacyPanel
-        profileVisibility={props.profileVisibility}
         progressVisibility={props.progressVisibility}
       />
     </div>
@@ -75,7 +74,7 @@ function ProfilePanel({
 
       <Field label="Display name">
         <input
-          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
           placeholder="Leave blank to use your username"
           value={displayName}
           onChange={(e) => setDisplayName(e.target.value)}
@@ -87,12 +86,14 @@ function ProfilePanel({
       <Field label="Email">
         <input
           type="email"
-          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
           placeholder="Optional"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <p className="text-xs text-gray-600 mt-1">Not shown publicly. Used for account recovery in the future.</p>
+        <p className="text-xs text-gray-600 mt-1">
+          Optional, not shown publicly. Password reset is not built yet but your email will be used for it when it is.
+        </p>
       </Field>
 
       <SaveRow saving={saving} status={status} onSave={save} />
@@ -144,7 +145,7 @@ function PasswordPanel() {
       <Field label="Current password">
         <input
           type="password"
-          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
           value={current}
           onChange={(e) => setCurrent(e.target.value)}
           autoComplete="current-password"
@@ -154,7 +155,7 @@ function PasswordPanel() {
       <Field label="New password">
         <input
           type="password"
-          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
           value={next}
           onChange={(e) => setNext(e.target.value)}
           autoComplete="new-password"
@@ -164,7 +165,7 @@ function PasswordPanel() {
       <Field label="Confirm new password">
         <input
           type="password"
-          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
           value={confirm}
           onChange={(e) => setConfirm(e.target.value)}
           autoComplete="new-password"
@@ -178,21 +179,13 @@ function PasswordPanel() {
 
 /* ─── Privacy ─────────────────────────────────────────────────────────────── */
 
-const VISIBILITY_OPTIONS: { value: Visibility; label: string; description: string }[] = [
-  { value: "PUBLIC",  label: "Public",       description: "anyone can see it" },
-  { value: "FRIENDS", label: "Friends only", description: "only accepted friends" },
-  { value: "PRIVATE", label: "Private",      description: "only you" },
-];
-
 function PrivacyPanel({
-  profileVisibility: initialProfile,
   progressVisibility: initialProgress,
 }: {
-  profileVisibility: Visibility;
   progressVisibility: Visibility;
 }) {
-  const [profileVis, setProfileVis] = useState<Visibility>(initialProfile);
-  const [progressVis, setProgressVis] = useState<Visibility>(initialProgress);
+  const clamp = (v: Visibility): Visibility => (v === "PUBLIC" ? "FRIENDS" : v);
+  const [progressVis, setProgressVis] = useState<Visibility>(clamp(initialProgress));
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState<{ ok: boolean; msg: string } | null>(null);
 
@@ -203,10 +196,7 @@ function PrivacyPanel({
       const res = await fetch("/api/settings/privacy", {
         method: "PATCH",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          profileVisibility: profileVis,
-          progressVisibility: progressVis,
-        }),
+        body: JSON.stringify({ progressVisibility: progressVis }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Something went wrong");
@@ -220,40 +210,22 @@ function PrivacyPanel({
 
   return (
     <Panel title="Privacy">
-      <Field label="Profile visibility">
-        <VisibilitySelect value={profileVis} onChange={setProfileVis} />
-        <p className="text-xs text-gray-600 mt-1">Controls who can find and view your profile page.</p>
-      </Field>
-
       <Field label="Progress visibility">
-        <VisibilitySelect value={progressVis} onChange={setProgressVis} />
-        <p className="text-xs text-gray-600 mt-1">Controls who can see your story, legend, and medal progress.</p>
+        <select
+          className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-amber-600"
+          value={progressVis}
+          onChange={(e) => setProgressVis(e.target.value as Visibility)}
+        >
+          <option value="FRIENDS">Friends only - only accepted friends can see it</option>
+          <option value="PRIVATE">Private - only you can see it</option>
+        </select>
+        <p className="text-xs text-gray-600 mt-1">
+          Controls who can see your story, legend, and medal progress. Profile access always requires being friends first anyway.
+        </p>
       </Field>
 
       <SaveRow saving={saving} status={status} onSave={save} />
     </Panel>
-  );
-}
-
-function VisibilitySelect({
-  value,
-  onChange,
-}: {
-  value: Visibility;
-  onChange: (v: Visibility) => void;
-}) {
-  return (
-    <select
-      className="w-full bg-gray-900 border border-gray-700 rounded px-3 py-2 text-gray-100 text-sm focus:outline-none focus:border-gray-500"
-      value={value}
-      onChange={(e) => onChange(e.target.value as Visibility)}
-    >
-      {VISIBILITY_OPTIONS.map((opt) => (
-        <option key={opt.value} value={opt.value}>
-          {opt.label} — {opt.description}
-        </option>
-      ))}
-    </select>
   );
 }
 
@@ -291,7 +263,7 @@ function SaveRow({
   return (
     <div className="flex items-center justify-between pt-2">
       {status ? (
-        <span className={`text-sm ${status.ok ? "text-green-400" : "text-red-400"}`}>
+        <span className={`text-sm ${status.ok ? "text-amber-400" : "text-red-400"}`}>
           {status.msg}
         </span>
       ) : (
@@ -301,9 +273,9 @@ function SaveRow({
         type="button"
         onClick={onSave}
         disabled={saving}
-        className="px-4 py-2 rounded border border-gray-600 bg-gray-800 hover:bg-gray-700 text-gray-100 text-sm disabled:opacity-50 transition-colors"
+        className="px-4 py-2 rounded border border-amber-700 bg-transparent hover:bg-amber-900 text-amber-300 text-sm disabled:opacity-50 transition-colors"
       >
-        {saving ? "Saving…" : saveLabel}
+        {saving ? "Saving..." : saveLabel}
       </button>
     </div>
   );

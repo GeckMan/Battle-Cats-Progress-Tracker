@@ -21,13 +21,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
     try {
       const res = await fetch("/api/meow-medals/sync", { method: "POST" });
       if (res.ok) {
-        // Refresh medal earned state from server response isn't detailed,
-        // so re-fetch the page data via a lightweight approach
-        const refreshed = await fetch(window.location.href);
-        if (refreshed.ok) {
-          // Simplest reliable approach: reload only if sync succeeded
-          window.location.reload();
-        }
+        window.location.reload();
       }
     } finally {
       setSyncing(false);
@@ -48,20 +42,18 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
             type="button"
             onClick={handleSync}
             disabled={syncing}
-            className="text-xs px-3 py-1 rounded border border-gray-700 text-gray-200 hover:bg-gray-900 disabled:opacity-50"
+            className="text-xs px-3 py-1 rounded border border-amber-700 text-amber-300 hover:bg-amber-900 disabled:opacity-50 transition-colors"
             title="Sync medals from tracked progress (story/zombie/legend as available)"
           >
-            {syncing ? "Syncing…" : "Sync"}
+            {syncing ? "Syncing..." : "Sync"}
           </button>
         </div>
       </div>
 
-
       <div
-  className="grid gap-2.5"
-  style={{ gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))" }}
->
-
+        className="grid gap-2.5"
+        style={{ gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))" }}
+      >
         {data.map((m) => (
           <MedalToken
             key={m.id}
@@ -85,21 +77,17 @@ function MedalToken({
   row: Row;
   onToggled: (earned: boolean) => void;
 }) {
-  // w-24 = 96px — closest valid Tailwind size (w-25 is not in the default scale)
   const base =
-    "w-24 h-24 rounded-full border flex items-center justify-center select-none overflow-hidden";
+    "w-24 h-24 rounded-full border flex items-center justify-center select-none overflow-hidden transition-all";
 
   const locked = "bg-gray-950 border-gray-800 opacity-60";
-  const unlocked = "bg-transparent border-gray-700";
+  const unlocked = "bg-transparent border-amber-700 ring-1 ring-amber-900";
 
   const tip = `${row.name}\n${row.description}`;
-
   const localSrc = row.imageFile ? `/medals/${row.imageFile}` : null;
 
   async function toggle() {
     const next = !row.earned;
-
-    // optimistic
     onToggled(next);
 
     const res = await fetch(`/api/meow-medals/${row.id}`, {
@@ -109,7 +97,6 @@ function MedalToken({
     });
 
     if (!res.ok) {
-      // rollback on failure
       onToggled(!next);
     }
   }
@@ -123,19 +110,19 @@ function MedalToken({
     >
       {localSrc ? (
         <img
-  src={localSrc}
-  alt={row.name}
-  loading="lazy"
-  className={
-    row.earned
-      ? "w-full h-full object-cover pointer-events-none"
-      : "w-full h-full object-cover opacity-60 pointer-events-none"
-  }
-/>
-
-
+          src={localSrc}
+          alt={row.name}
+          loading="lazy"
+          className={
+            row.earned
+              ? "w-full h-full object-cover pointer-events-none"
+              : "w-full h-full object-cover opacity-40 pointer-events-none grayscale"
+          }
+        />
       ) : (
-        <span className="text-lg font-semibold">{row.earned ? "★" : "?"}</span>
+        <span className={`text-lg font-semibold ${row.earned ? "text-amber-400" : "text-gray-600"}`}>
+          {row.earned ? "★" : "?"}
+        </span>
       )}
     </button>
   );

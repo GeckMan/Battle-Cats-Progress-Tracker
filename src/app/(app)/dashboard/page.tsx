@@ -11,9 +11,6 @@ export default async function DashboardPage() {
   if (!session) redirect("/login");
   const userId = session.user.id as string;
 
-  // --------------------
-  // Story (ensure rows exist) + Legend + Medals initialization run in parallel
-  // --------------------
   await Promise.all([ensureStoryProgress(userId), ensureMedalProgress(userId)]);
 
   const storyChapters = await prisma.storyChapter.findMany({
@@ -38,9 +35,6 @@ export default async function DashboardPage() {
       ? 0
       : Math.round(storyRows.reduce((s, r) => s + r.pct, 0) / storyRows.length);
 
-  // --------------------
-  // Legend (compute only; /legend already ensures progress rows exist)
-  // --------------------
   const sagas = await prisma.legendSaga.findMany({
     orderBy: { sortOrder: "asc" },
     include: {
@@ -66,9 +60,6 @@ export default async function DashboardPage() {
       ? 0
       : Math.round(legendPercents.reduce((a, b) => a + b, 0) / legendPercents.length);
 
-  // --------------------
-  // Meow Medals (compute — rows ensured above)
-  // --------------------
   const medalsWithProgress = await prisma.meowMedal.findMany({
     orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
     include: {
@@ -82,10 +73,8 @@ export default async function DashboardPage() {
 
   const medalTotal = medalsWithProgress.length;
   const medalEarned = medalsWithProgress.filter((m) => m.earnedBy[0]?.earned).length;
-
   const medalsOverall = medalTotal === 0 ? 0 : Math.round((medalEarned / medalTotal) * 100);
 
-  // Group by category for dashboard section
   const medalsByCategory = new Map<string, { total: number; earned: number }>();
   for (const m of medalsWithProgress) {
     const cat = m.category ?? "Other";
@@ -103,9 +92,6 @@ export default async function DashboardPage() {
     })
     .sort((a, b) => a.category.localeCompare(b.category));
 
-  // --------------------
-  // Overall (Story + Legend + Medals)
-  // --------------------
   const overall = Math.round((storyOverall + legendOverall + medalsOverall) / 3);
 
   return (
@@ -116,10 +102,10 @@ export default async function DashboardPage() {
       </div>
 
       <div className="grid gap-4 md:grid-cols-4">
-        <Card title="Overall" value={`${overall}%`} />
-        <Card title="Story" value={`${storyOverall}%`} />
-        <Card title="Legend" value={`${legendOverall}%`} />
-        <Card title="Medals" value={`${medalsOverall}%`} />
+        <Card title="Overall" value={`${overall}%`} pct={overall} highlight />
+        <Card title="Story" value={`${storyOverall}%`} pct={storyOverall} />
+        <Card title="Legend" value={`${legendOverall}%`} pct={legendOverall} />
+        <Card title="Medals" value={`${medalsOverall}%`} pct={medalsOverall} />
       </div>
 
       <section className="space-y-3">
@@ -149,7 +135,7 @@ export default async function DashboardPage() {
               <div key={s.id} className="border border-gray-700 rounded-lg p-4 bg-black">
                 <div className="flex items-center justify-between">
                   <div className="text-gray-100 font-semibold">{s.displayName}</div>
-                  <div className="text-gray-300 text-sm">{sagaPct}%</div>
+                  <div className="text-sm" style={{ color: pctColor(sagaPct) }}>{sagaPct}%</div>
                 </div>
                 <div className="mt-2">
                   <Bar pct={sagaPct} />
@@ -176,7 +162,7 @@ export default async function DashboardPage() {
               <div key={r.category} className="border border-gray-700 rounded-lg p-4 bg-black">
                 <div className="flex items-center justify-between">
                   <div className="text-gray-100 font-semibold">{r.category}</div>
-                  <div className="text-gray-300 text-sm">
+                  <div className="text-sm" style={{ color: pctColor(r.pct) }}>
                     {r.earned}/{r.total} ({r.pct}%)
                   </div>
                 </div>
@@ -192,11 +178,28 @@ export default async function DashboardPage() {
   );
 }
 
-function Card({ title, value }: { title: string; value: string }) {
+function pctColor(pct: number) {
+  if (pct >= 80) return "#fbbf24"; // amber-400
+  if (pct >= 40) return "#d97706"; // amber-600
+  if (pct > 0)   return "#92400e"; // amber-800
+  return "#4b5563"; // gray-600
+}
+
+function barFill(pct: number) {
+  if (pct >= 80) return "bg-amber-400";
+  if (pct >= 40) return "bg-amber-600";
+  if (pct > 0)   return "bg-amber-800";
+  return "bg-gray-700";
+}
+
+function Card({ title, value, pct, highlight = false }: { title: string; value: string; pct: number; highlight?: boolean }) {
   return (
-    <div className="border border-gray-700 rounded-lg p-4 bg-black">
+    <div className={`border rounded-lg p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
       <div className="text-sm text-gray-400">{title}</div>
-      <div className="text-2xl font-semibold text-gray-100 mt-1">{value}</div>
+      <div className="text-2xl font-semibold mt-1" style={{ color: pctColor(pct) }}>{value}</div>
+      <div className="mt-2">
+        <Bar pct={pct} />
+      </div>
     </div>
   );
 }
@@ -208,7 +211,7 @@ function Row({ label, pct }: { label: string; pct: number }) {
       <div className="flex-1">
         <Bar pct={pct} />
       </div>
-      <div className="w-12 text-right text-sm text-gray-300">{pct}%</div>
+      <div className="w-12 text-right text-sm" style={{ color: pctColor(pct) }}>{pct}%</div>
     </div>
   );
 }
@@ -216,7 +219,7 @@ function Row({ label, pct }: { label: string; pct: number }) {
 function Bar({ pct }: { pct: number }) {
   return (
     <div className="h-2 rounded bg-gray-800 overflow-hidden">
-      <div className="h-2 bg-gray-200" style={{ width: `${pct}%` }} />
+      <div className={`h-2 transition-all duration-300 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
     </div>
   );
 }

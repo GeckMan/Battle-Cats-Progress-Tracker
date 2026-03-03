@@ -8,10 +8,10 @@ export default function AppHeader() {
   const pathname = usePathname();
 
   const linkClass = (href: string) =>
-    `px-3 py-2 rounded border border-gray-700 text-sm ${
+    `px-3 py-2 rounded border text-sm transition-colors ${
       pathname === href
-        ? "bg-gray-700 text-white"
-        : "bg-gray-900 text-gray-200 hover:bg-gray-800"
+        ? "bg-amber-900 border-amber-700 text-amber-200"
+        : "border-gray-700 bg-gray-900 text-gray-200 hover:bg-gray-800"
     }`;
 
   return (
@@ -49,7 +49,7 @@ export default function AppHeader() {
           </Link>
           <button
             type="button"
-            className="px-3 py-2 rounded border border-gray-700 text-sm bg-gray-900 text-gray-200 hover:bg-gray-800"
+            className="px-3 py-2 rounded border border-gray-700 text-sm bg-gray-900 text-gray-200 hover:bg-gray-800 transition-colors"
             onClick={() => signOut({ callbackUrl: "/login" })}
           >
             Logout
