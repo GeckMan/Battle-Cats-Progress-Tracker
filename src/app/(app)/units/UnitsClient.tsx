@@ -20,10 +20,10 @@ type CategoryMeta = { key: string; label: string };
 /* ── Sprite URL helper ──────────────────────────────────────────────────── */
 
 function spriteUrl(unitNumber: number, form: number) {
-  // Miraheze wiki Special:FilePath — e.g. Unit_icon_000_f00.png
+  // Miraheze wiki Special:FilePath — e.g. Uni000_f00.png
   const num = String(unitNumber).padStart(3, "0");
   const f = String(form).padStart(2, "0");
-  return `https://battlecats.miraheze.org/wiki/Special:FilePath/Unit_icon_${num}_f${f}.png`;
+  return `https://battlecats.miraheze.org/wiki/Special:FilePath/Uni${num}_f${f}.png`;
 }
 
 /* ── Form badge colors ─────────────────────────────────────────────────── */
@@ -96,18 +96,8 @@ function UnitCard({
           height={56}
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
           onError={(e) => {
-            // Fallback: try battlecats-db.com CDN
-            const el = e.currentTarget;
-            if (!el.dataset.fallback) {
-              el.dataset.fallback = "1";
-              const num = String(unit.unitNumber).padStart(3, "0");
-              const f = String(displayForm).padStart(2, "0");
-              el.src = `https://battlecats-db.com/unit/img/uni${num}${f}.png`;
-            } else if (el.dataset.fallback === "1") {
-              // Both failed — hide the broken image
-              el.dataset.fallback = "2";
-              el.style.opacity = "0";
-            }
+            // Hide broken image gracefully
+            e.currentTarget.style.opacity = "0";
           }}
         />
       </div>
