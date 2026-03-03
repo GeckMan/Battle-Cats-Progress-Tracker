@@ -597,10 +597,12 @@ type AdminUser = {
 function AdminTab() {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [loading, setLoading] = useState(true);
+  const [search, setSearch] = useState("");
   const [actionLoading, setActionLoading] = useState<string | null>(null);
   const [confirmDelete, setConfirmDelete] = useState<string | null>(null);
   const [deleteInput, setDeleteInput] = useState("");
   const [muteMenu, setMuteMenu] = useState<string | null>(null);
+  const [confirmRole, setConfirmRole] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ msg: string; type: "ok" | "err" } | null>(null);
 
   const fetchUsers = useCallback(async () => {
@@ -648,6 +650,28 @@ function AdminTab() {
     }
   };
 
+  const handleSetRole = async (userId: string, role: "ADMIN" | "USER") => {
+    setActionLoading(userId);
+    setConfirmRole(null);
+    try {
+      const res = await fetch("/api/admin/set-role", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ userId, role }),
+      });
+      if (!res.ok) {
+        const err = await res.json();
+        setFeedback({ msg: err.error ?? "Failed to change role", type: "err" });
+        return;
+      }
+      const data = await res.json();
+      setFeedback({ msg: data.message ?? "Done", type: "ok" });
+      fetchUsers();
+    } finally {
+      setActionLoading(null);
+    }
+  };
+
   const handleDelete = async (userId: string) => {
     const user = users.find((u) => u.id === userId);
     if (!user || deleteInput !== user.username) return;
@@ -676,10 +700,48 @@ function AdminTab() {
     return <div className="text-gray-500 text-sm py-12 text-center">Loading users...</div>;
   }
 
+  const query = search.toLowerCase().trim();
+  const filtered = query
+    ? users.filter(
+        (u) =>
+          u.username.toLowerCase().includes(query) ||
+          (u.displayName ?? "").toLowerCase().includes(query)
+      )
+    : users;
+
   return (
     <div className="overflow-y-auto h-full px-3 py-3 space-y-2">
+      {/* Search bar */}
+      <div className="relative">
+        <svg
+          className="absolute left-2.5 top-1/2 -translate-y-1/2 text-gray-500 pointer-events-none"
+          width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"
+        >
+          <circle cx="7" cy="7" r="5" />
+          <line x1="11" y1="11" x2="14.5" y2="14.5" />
+        </svg>
+        <input
+          type="text"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          placeholder="Search users..."
+          className="w-full bg-gray-900 border border-gray-700 rounded-md pl-8 pr-3 py-1.5 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-800 transition-colors"
+        />
+        {search && (
+          <button
+            onClick={() => setSearch("")}
+            className="absolute right-2 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-300 transition-colors"
+          >
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+              <line x1="4" y1="4" x2="12" y2="12" />
+              <line x1="12" y1="4" x2="4" y2="12" />
+            </svg>
+          </button>
+        )}
+      </div>
+
       <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-1">
-        User Management ({users.length})
+        {query ? `${filtered.length} result${filtered.length !== 1 ? "s" : ""}` : `User Management (${users.length})`}
       </div>
 
       {feedback && (
@@ -692,10 +754,17 @@ function AdminTab() {
         </div>
       )}
 
-      {users.map((user) => {
+      {filtered.length === 0 && (
+        <div className="text-gray-500 text-sm py-6 text-center">
+          {query ? `No users matching "${search}"` : "No users found."}
+        </div>
+      )}
+
+      {filtered.map((user) => {
         const isBeingActioned = actionLoading === user.id;
         const isDeleting = confirmDelete === user.id;
         const isMuting = muteMenu === user.id;
+        const isRoleConfirm = confirmRole === user.id;
 
         return (
           <div
@@ -728,18 +797,38 @@ function AdminTab() {
             </div>
 
             {/* Actions row */}
-            {user.role !== "ADMIN" && (
-              <div className="flex items-center gap-1.5 mt-2">
-                {user.isMuted ? (
-                  <button
-                    onClick={() => handleMute(user.id, null)}
-                    disabled={isBeingActioned}
-                    className="text-[11px] px-2 py-1 rounded border border-green-800/50 text-green-400 hover:bg-green-950/30 transition-colors disabled:opacity-40"
-                  >
-                    {isBeingActioned ? "..." : "Unmute"}
-                  </button>
-                ) : (
-                  <>
+            <div className="flex items-center gap-1.5 mt-2">
+              {/* Promote / Demote button */}
+              {user.role === "ADMIN" ? (
+                <button
+                  onClick={() => setConfirmRole(isRoleConfirm ? null : user.id)}
+                  disabled={isBeingActioned}
+                  className="text-[11px] px-2 py-1 rounded border border-gray-600/50 text-gray-400 hover:bg-gray-800/50 transition-colors disabled:opacity-40"
+                >
+                  Demote
+                </button>
+              ) : (
+                <button
+                  onClick={() => setConfirmRole(isRoleConfirm ? null : user.id)}
+                  disabled={isBeingActioned}
+                  className="text-[11px] px-2 py-1 rounded border border-purple-800/50 text-purple-400 hover:bg-purple-950/30 transition-colors disabled:opacity-40"
+                >
+                  Promote
+                </button>
+              )}
+
+              {/* Mute / Unmute (non-admins only) */}
+              {user.role !== "ADMIN" && (
+                <>
+                  {user.isMuted ? (
+                    <button
+                      onClick={() => handleMute(user.id, null)}
+                      disabled={isBeingActioned}
+                      className="text-[11px] px-2 py-1 rounded border border-green-800/50 text-green-400 hover:bg-green-950/30 transition-colors disabled:opacity-40"
+                    >
+                      {isBeingActioned ? "..." : "Unmute"}
+                    </button>
+                  ) : (
                     <button
                       onClick={() => setMuteMenu(isMuting ? null : user.id)}
                       disabled={isBeingActioned}
@@ -747,19 +836,50 @@ function AdminTab() {
                     >
                       {isBeingActioned ? "..." : "Mute"}
                     </button>
-                  </>
-                )}
+                  )}
+                </>
+              )}
+
+              {/* Delete (non-admins only) */}
+              {user.role !== "ADMIN" && (
                 <button
                   onClick={() => {
                     setConfirmDelete(isDeleting ? null : user.id);
                     setDeleteInput("");
                     setMuteMenu(null);
+                    setConfirmRole(null);
                   }}
                   disabled={isBeingActioned}
                   className="text-[11px] px-2 py-1 rounded border border-red-800/50 text-red-400 hover:bg-red-950/30 transition-colors disabled:opacity-40"
                 >
                   Delete
                 </button>
+              )}
+            </div>
+
+            {/* Role change confirmation */}
+            {isRoleConfirm && (
+              <div className="mt-2 p-2 rounded border border-purple-800/40 bg-purple-950/20">
+                <div className="text-[10px] text-purple-300 mb-1.5">
+                  {user.role === "ADMIN"
+                    ? `Demote @${user.username} from Admin to User?`
+                    : `Promote @${user.username} to Admin? They will have full moderation powers.`}
+                </div>
+                <div className="flex gap-1.5">
+                  <button
+                    onClick={() => handleSetRole(user.id, user.role === "ADMIN" ? "USER" : "ADMIN")}
+                    disabled={isBeingActioned}
+                    className="text-[11px] px-2.5 py-1 rounded bg-purple-900/50 border border-purple-700 text-purple-200 hover:bg-purple-800/50 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+                  >
+                    {isBeingActioned ? "..." : "Confirm"}
+                  </button>
+                  <button
+                    onClick={() => setConfirmRole(null)}
+                    className="text-[11px] px-2 py-1 rounded text-gray-500 hover:text-gray-300 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                </div>
               </div>
             )}
 
