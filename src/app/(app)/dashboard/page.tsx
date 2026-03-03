@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
-import LogoutButton from "./LogoutButton";
+
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
 import { ensureStoryProgress, ensureMedalProgress } from "@/lib/ensure-progress";
 
@@ -96,9 +96,8 @@ export default async function DashboardPage() {
 
   return (
     <div className="p-8 space-y-8">
-      <div className="flex items-center justify-between">
+      <div>
         <h1 className="text-2xl font-semibold text-gray-100">Dashboard</h1>
-        <LogoutButton />
       </div>
 
       <div className="grid gap-4 md:grid-cols-4">
@@ -133,7 +132,7 @@ export default async function DashboardPage() {
 
             return (
               <div key={s.id} className="border border-gray-700 rounded-lg p-4 bg-black">
-                <div className="flex items-center justify-between">
+                <div>
                   <div className="text-gray-100 font-semibold">{s.displayName}</div>
                   <div className="text-sm" style={{ color: pctColor(sagaPct) }}>{sagaPct}%</div>
                 </div>
@@ -160,7 +159,7 @@ export default async function DashboardPage() {
           <div className="space-y-4">
             {medalCategoryRows.map((r) => (
               <div key={r.category} className="border border-gray-700 rounded-lg p-4 bg-black">
-                <div className="flex items-center justify-between">
+                <div>
                   <div className="text-gray-100 font-semibold">{r.category}</div>
                   <div className="text-sm" style={{ color: pctColor(r.pct) }}>
                     {r.earned}/{r.total} ({r.pct}%)
