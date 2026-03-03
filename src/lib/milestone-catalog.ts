@@ -72,13 +72,6 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Championship Rank 11", category: "CATCLAW", sortOrder: 11 },
   { displayName: "Championship Rank 12", category: "CATCLAW", sortOrder: 12 },
 
-  // ── OTHER ───────────────────────────────────────────────────────────────────
-  { displayName: "Complete Stories of Legend", category: "OTHER", sortOrder: 1 },
-  { displayName: "Complete Uncanny Legends",   category: "OTHER", sortOrder: 2 },
-  { displayName: "Complete Zero Legends",      category: "OTHER", sortOrder: 3 },
-  { displayName: "All Crazed Cats Obtained",   category: "OTHER", sortOrder: 4 },
-  { displayName: "All Manic Cats Obtained",    category: "OTHER", sortOrder: 5 },
-  { displayName: "All Advent Stages Cleared",  category: "OTHER", sortOrder: 6 },
 ];
 
 /** Human-readable labels and display order for categories */

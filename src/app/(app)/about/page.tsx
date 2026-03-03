@@ -55,7 +55,7 @@ export default function AboutPage() {
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
-            <span><strong className="text-gray-100">Milestones</strong> — check off Crazed Cats, Manic Cats, Advent stages, Catclaw ranks, and more</span>
+            <span><strong className="text-gray-100">Milestone Stages</strong> — check off Crazed Cats, Manic Cats, Advent stages, and Catclaw ranks</span>
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>

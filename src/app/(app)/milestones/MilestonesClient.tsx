@@ -107,7 +107,7 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
   return (
     <div className="space-y-8">
       <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold text-gray-100">Milestones</h1>
+        <h1 className="text-2xl font-semibold text-gray-100">Milestone Stages</h1>
         <div className="text-sm text-gray-400">
           {clearedCount}/{totalCount} cleared
         </div>

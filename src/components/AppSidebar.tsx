@@ -13,7 +13,7 @@ const NAV_ITEMS = [
   { href: "/legend",     label: "Legend",      icon: <IconLegend /> },
   { href: "/social",     label: "Social",      icon: <IconSocial /> },
   { href: "/medals",     label: "Medals",      icon: <IconMedals /> },
-  { href: "/milestones", label: "Milestones",  icon: <IconMilestones /> },
+  { href: "/milestones", label: "Milestone Stages",  icon: <IconMilestones /> },
   { href: "/units",      label: "Units",       icon: <IconUnits /> },
   { href: "/about",      label: "About",       icon: <IconAbout /> },
 ];

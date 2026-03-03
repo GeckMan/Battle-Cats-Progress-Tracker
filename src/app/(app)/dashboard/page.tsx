@@ -175,7 +175,7 @@ export default async function DashboardPage() {
           </div>
         </Section>
 
-        <Section title={`Milestones — ${milestoneCleared}/${milestoneTotal}`}>
+        <Section title={`Milestone Stages — ${milestoneCleared}/${milestoneTotal}`}>
           <div className="space-y-1.5">
             {milestoneCategoryRows.map((r) => (
               <CompactRow key={r.label} label={r.label} pct={r.pct} sub={`${r.cleared}/${r.total}`} />
