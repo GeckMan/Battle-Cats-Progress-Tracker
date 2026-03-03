@@ -85,6 +85,7 @@ model User {
   catclawProgress   UserCatclawProgress?
   meowMedalProgress UserMeowMedal[]
   unitProgress      UserUnitProgress[]
+  activities        Activity[]
 }
 
 model PrivacySettings {
@@ -306,4 +307,22 @@ model UserUnitProgress {
 
   @@unique([userId, unitId])
   @@index([userId])
+}
+
+/**
+ * ---------- Activity Feed ----------
+ */
+
+model Activity {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String   // STORY_CLEARED, LEGEND_COMPLETED, MEDAL_EARNED, MILESTONE_CLEARED, UNIT_OBTAINED, UNIT_EVOLVED, UNIT_REMOVED
+  itemName  String?  // human-readable name of the item (chapter, medal, unit, etc.)
+  detail    String?  // extra context: "treasures → ALL", "crown 3", "True Form"
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([createdAt])
 }

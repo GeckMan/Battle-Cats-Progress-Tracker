@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { logActivity } from "@/lib/activity-logger";
 
 export async function PATCH(
   req: NextRequest,
@@ -28,8 +29,14 @@ export async function PATCH(
     const updated = await prisma.userMilestoneProgress.update({
       where: { userId_milestoneId: { userId, milestoneId } },
       data: patch,
-      select: { cleared: true, notes: true },
+      select: { cleared: true, notes: true, milestone: { select: { displayName: true } } },
     });
+
+    // Log activity when a milestone is cleared
+    if (cleared === true) {
+      await logActivity(userId, "MILESTONE_CLEARED", (updated as any).milestone?.displayName ?? "Unknown milestone");
+    }
+
     return NextResponse.json(updated);
   } catch {
     return NextResponse.json({ error: "Record not found" }, { status: 404 });

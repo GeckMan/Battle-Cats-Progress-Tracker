@@ -63,6 +63,10 @@ export default function AboutPage() {
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
+            <span><strong className="text-gray-100">Activity Feed</strong> — see recent updates from you and your friends, with smart batching for mass updates</span>
+          </li>
+          <li className="flex gap-2">
+            <span className="text-gray-500">→</span>
             <span><strong className="text-gray-100">Social</strong> — add friends, view their profiles, and compare your progress side by side</span>
           </li>
         </ul>
@@ -73,6 +77,12 @@ export default function AboutPage() {
         <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
           Announcements
         </h2>
+
+        <Announcement
+          date="March 2026"
+          title="Activity Feed launched"
+          body="See what you and your friends have been up to. Mass updates like obtaining many units at once are automatically summarized into a single entry. Check it out in the Activity tab."
+        />
 
         <Announcement
           date="March 2026"
@@ -99,10 +109,6 @@ export default function AboutPage() {
           Coming Soon
         </h2>
         <ul className="space-y-2 text-sm text-gray-400">
-          <li className="flex gap-2">
-            <span className="text-gray-600">◦</span>
-            <span><strong className="text-gray-300">Activity Feed</strong> — see what your friends have been up to recently</span>
-          </li>
           <li className="flex gap-2">
             <span className="text-gray-600">◦</span>
             <span><strong className="text-gray-300">Profile Settings</strong> — update your display name and privacy preferences</span>

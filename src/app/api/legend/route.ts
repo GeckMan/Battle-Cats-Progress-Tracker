@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth-options";
+import { logActivity } from "@/lib/activity-logger";
 
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
@@ -41,10 +42,25 @@ if (patch.status !== undefined) {
 }
 
 
+  // Fetch subchapter name for activity logging
+  const progressRow = await prisma.userLegendProgress.findFirst({
+    where: { id, userId },
+    select: { subchapter: { select: { displayName: true } } },
+  });
+
   await prisma.userLegendProgress.updateMany({
     where: { id, userId },
     data: patch,
   });
+
+  // Log activity for meaningful changes
+  const subName = progressRow?.subchapter?.displayName ?? "Unknown subchapter";
+  if (patch.status === "COMPLETED") {
+    await logActivity(userId, "LEGEND_COMPLETED", subName);
+  }
+  if (patch.crownMax !== undefined && patch.crownMax !== null) {
+    await logActivity(userId, "LEGEND_COMPLETED", subName, `crown ${patch.crownMax}`);
+  }
 
   return NextResponse.json({ ok: true });
 }

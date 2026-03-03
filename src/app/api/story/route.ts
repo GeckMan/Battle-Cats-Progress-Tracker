@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth-options";
 import { recomputeStoryMedalsForUser } from "@/lib/medals";
+import { logActivity } from "@/lib/activity-logger";
 
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
@@ -42,12 +43,30 @@ export async function POST(req: Request) {
     }
   }
 
+  // Fetch chapter name for activity logging
+  const progressRow = await prisma.userStoryProgress.findFirst({
+    where: { id, userId },
+    select: { chapter: { select: { displayName: true } } },
+  });
+
   await prisma.userStoryProgress.updateMany({
     where: { id, userId },
     data: patch,
   });
 
   await recomputeStoryMedalsForUser(userId);
+
+  // Log activity for meaningful changes
+  const chapterName = progressRow?.chapter?.displayName ?? "Unknown chapter";
+  if (patch.cleared === true) {
+    await logActivity(userId, "STORY_CLEARED", chapterName);
+  }
+  if (patch.treasures && patch.treasures !== "NONE") {
+    await logActivity(userId, "STORY_CLEARED", chapterName, `treasures → ${patch.treasures}`);
+  }
+  if (patch.zombies && patch.zombies !== "NONE") {
+    await logActivity(userId, "STORY_CLEARED", chapterName, `zombies → ${patch.zombies}`);
+  }
 
   return NextResponse.json({ ok: true });
 }

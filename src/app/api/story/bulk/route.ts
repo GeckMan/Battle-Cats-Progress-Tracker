@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth-options";
 import { recomputeStoryMedalsForUser } from "@/lib/medals";
+import { logBulkActivities } from "@/lib/activity-logger";
 
 export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
@@ -24,11 +25,27 @@ export async function POST(req: Request) {
     }
   }
 
+  // Fetch chapter names for activity logging
+  const chapters = await prisma.userStoryProgress.findMany({
+    where: { id: { in: ids }, userId },
+    select: { chapter: { select: { displayName: true } } },
+  });
+
   await prisma.userStoryProgress.updateMany({
     where: { id: { in: ids }, userId },
     data: patch,
   });
   await recomputeStoryMedalsForUser(userId);
+
+  // Log activities
+  const entries: { type: string; itemName: string; detail?: string }[] = [];
+  for (const ch of chapters) {
+    const name = ch.chapter?.displayName ?? "Unknown chapter";
+    if (patch.cleared === true) entries.push({ type: "STORY_CLEARED", itemName: name });
+    if (patch.treasures && patch.treasures !== "NONE") entries.push({ type: "STORY_CLEARED", itemName: name, detail: `treasures → ${patch.treasures}` });
+    if (patch.zombies && patch.zombies !== "NONE") entries.push({ type: "STORY_CLEARED", itemName: name, detail: `zombies → ${patch.zombies}` });
+  }
+  await logBulkActivities(userId, entries);
 
   return NextResponse.json({ ok: true });
 }

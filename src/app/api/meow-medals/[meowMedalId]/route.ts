@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { logActivity } from "@/lib/activity-logger";
 
 export async function PATCH(
   req: Request,
@@ -37,6 +38,15 @@ export async function PATCH(
     },
     select: { meowMedalId: true, earned: true, earnedAt: true },
   });
+
+  // Log activity when a medal is earned
+  if (earned) {
+    const medal = await prisma.meowMedal.findUnique({
+      where: { id: meowMedalId },
+      select: { name: true },
+    });
+    await logActivity(userId, "MEDAL_EARNED", medal?.name ?? "Unknown medal");
+  }
 
   return NextResponse.json(updated);
 }

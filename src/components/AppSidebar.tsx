@@ -11,6 +11,7 @@ const NAV_ITEMS = [
   { href: "/story",      label: "Story",       icon: <IconStory /> },
   { href: "/legend",     label: "Legend",      icon: <IconLegend /> },
   { href: "/social",     label: "Social",      icon: <IconSocial /> },
+  { href: "/activity",   label: "Activity",    icon: <IconActivity /> },
   { href: "/medals",     label: "Medals",      icon: <IconMedals /> },
   { href: "/milestones", label: "Milestones",  icon: <IconMilestones /> },
   { href: "/units",      label: "Units",       icon: <IconUnits /> },
@@ -171,6 +172,14 @@ function IconUnits() {
       <circle cx="4"  cy="12" r="2.2" />
       <circle cx="12" cy="12" r="2.2" />
       <circle cx="8"  cy="8.5"  r="2.5" />
+    </svg>
+  );
+}
+
+function IconActivity() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <polyline points="1,8 4,8 6,3 8,13 10,6 12,8 15,8" />
     </svg>
   );
 }

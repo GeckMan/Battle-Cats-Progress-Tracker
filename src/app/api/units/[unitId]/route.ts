@@ -2,6 +2,14 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { logActivity } from "@/lib/activity-logger";
+
+const FORM_LABELS: Record<number, string> = {
+  1: "Form 1",
+  2: "Form 2",
+  3: "True Form",
+  4: "Ultra Form",
+};
 
 export async function PATCH(
   req: Request,
@@ -20,8 +28,15 @@ export async function PATCH(
   }
 
   try {
+    // Get previous state for activity logging
+    // @ts-ignore
+    const prev = await (prisma as any).userUnitProgress.findUnique({
+      where: { userId_unitId: { userId, unitId } },
+      select: { formLevel: true },
+    });
+    const prevLevel = prev?.formLevel ?? 0;
+
     if (formLevel === 0) {
-      // Remove progress record (treat as "not obtained")
       // @ts-ignore – UserUnitProgress added in new migration
       await (prisma as any).userUnitProgress.deleteMany({
         where: { userId, unitId },
@@ -34,6 +49,25 @@ export async function PATCH(
         update: { formLevel },
       });
     }
+
+    // Log activity if something changed
+    if (prevLevel !== formLevel) {
+      // @ts-ignore
+      const unit = await (prisma as any).unit.findUnique({
+        where: { id: unitId },
+        select: { name: true },
+      });
+      const name = unit?.name ?? "Unknown unit";
+
+      if (prevLevel === 0 && formLevel > 0) {
+        await logActivity(userId, "UNIT_OBTAINED", name, FORM_LABELS[formLevel]);
+      } else if (formLevel === 0) {
+        await logActivity(userId, "UNIT_REMOVED", name);
+      } else if (formLevel > prevLevel) {
+        await logActivity(userId, "UNIT_EVOLVED", name, FORM_LABELS[formLevel]);
+      }
+    }
+
     return NextResponse.json({ ok: true });
   } catch (e) {
     console.error(e);
