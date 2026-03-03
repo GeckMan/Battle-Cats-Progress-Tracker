@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
@@ -12,19 +12,36 @@ type UnitRow = {
   category: string;
   formCount: number;
   sortOrder: number;
-  formLevel: number; // 0–3 (or 0–4 if 4-form unit)
+  isCollab: boolean;
+  formLevel: number; // 0–4
 };
 
-type CategoryMeta = { key: string; label: string };
+/* ── Constants ──────────────────────────────────────────────────────────── */
 
-/* ── Sprite URL helper ──────────────────────────────────────────────────── */
+// Rarity order — matches the in-game Cat Guide ordering
+const RARITY_ORDER = [
+  "NORMAL",
+  "SPECIAL",
+  "RARE",
+  "SUPER_RARE",
+  "UBER_RARE",
+  "LEGEND_RARE",
+] as const;
 
-// Form index → letter used in miraheze filenames
-// F1=f, F2=c, TF=s, UF=u
+// Accent colours per rarity for section headers
+const RARITY_ACCENT: Record<string, string> = {
+  NORMAL:      "border-gray-600 text-gray-300 bg-gray-900/60",
+  SPECIAL:     "border-blue-800 text-blue-300 bg-blue-950/30",
+  RARE:        "border-green-800 text-green-300 bg-green-950/30",
+  SUPER_RARE:  "border-amber-700 text-amber-300 bg-amber-950/30",
+  UBER_RARE:   "border-orange-700 text-orange-300 bg-orange-950/30",
+  LEGEND_RARE: "border-red-700 text-red-300 bg-red-950/30",
+};
+
+// Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
 
 function spriteUrl(unitNumber: number, formIndex: number) {
-  // formIndex: 0=F1, 1=F2, 2=TF, 3=UF
   const num = String(unitNumber).padStart(3, "0");
   const letter = FORM_LETTER[formIndex] ?? "f";
   return `https://battlecats.miraheze.org/wiki/Special:FilePath/Uni${num}_${letter}00.png`;
@@ -48,13 +65,27 @@ const FORM_LABEL: Record<number, string> = {
   4: "UF",
 };
 
-/* ── Card tint based on form level ─────────────────────────────────────── */
-
 function cardTint(level: number) {
   if (level >= 3) return "bg-gray-950 border-gray-500/60";
   if (level === 2) return "bg-red-950/10 border-red-900/40";
   if (level === 1) return "bg-yellow-950/10 border-yellow-900/40";
   return "bg-black border-gray-800";
+}
+
+/* ── Progress bar ───────────────────────────────────────────────────────── */
+
+function MiniBar({ value, total }: { value: number; total: number }) {
+  const pct = total === 0 ? 0 : Math.round((value / total) * 100);
+  const fill =
+    pct >= 80 ? "bg-amber-400" : pct >= 40 ? "bg-amber-600" : pct > 0 ? "bg-amber-800" : "bg-gray-700";
+  return (
+    <div className="flex items-center gap-2">
+      <div className="flex-1 h-1.5 rounded bg-gray-800 overflow-hidden">
+        <div className={`h-1.5 ${fill}`} style={{ width: `${pct}%` }} />
+      </div>
+      <span className="text-xs text-gray-500 w-14 text-right">{value}/{total}</span>
+    </div>
+  );
 }
 
 /* ── Single Unit Card ───────────────────────────────────────────────────── */
@@ -68,7 +99,7 @@ function UnitCard({
   onUpdate: (id: string, level: number) => void;
   pending: boolean;
 }) {
-  const maxLevel = unit.formCount; // 3 or 4
+  const maxLevel = unit.formCount;
   const level = unit.formLevel;
 
   function cycle() {
@@ -76,8 +107,7 @@ function UnitCard({
     onUpdate(unit.id, next);
   }
 
-  // Display the sprite for the current form (or form 0 if not obtained)
-  const displayForm = Math.max(0, level - 1); // formLevel 1 = form index 0 (f00)
+  const displayForm = Math.max(0, level - 1); // formLevel 1 → form index 0 (f00)
   const imgUrl = spriteUrl(unit.unitNumber, displayForm);
 
   return (
@@ -99,10 +129,7 @@ function UnitCard({
           width={56}
           height={56}
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => {
-            // Hide broken image gracefully
-            e.currentTarget.style.opacity = "0";
-          }}
+          onError={(e) => { e.currentTarget.style.opacity = "0"; }}
         />
       </div>
 
@@ -119,18 +146,49 @@ function UnitCard({
   );
 }
 
-/* ── Progress bar ───────────────────────────────────────────────────────── */
+/* ── Rarity Section ─────────────────────────────────────────────────────── */
 
-function MiniBar({ value, total }: { value: number; total: number }) {
-  const pct = total === 0 ? 0 : Math.round((value / total) * 100);
-  const fill =
-    pct >= 80 ? "bg-amber-400" : pct >= 40 ? "bg-amber-600" : pct > 0 ? "bg-amber-800" : "bg-gray-700";
+function RaritySection({
+  rarity,
+  units,
+  onUpdate,
+  pendingIds,
+}: {
+  rarity: string;
+  units: UnitRow[];
+  onUpdate: (id: string, level: number) => void;
+  pendingIds: Set<string>;
+}) {
+  const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
+  const accent = RARITY_ACCENT[rarity] ?? "border-gray-600 text-gray-300 bg-gray-900/60";
+  const obtained = units.filter((u) => u.formLevel > 0).length;
+  const trueForm = units.filter((u) => u.formLevel >= 3).length;
+
   return (
-    <div className="flex items-center gap-2">
-      <div className="flex-1 h-1.5 rounded bg-gray-800 overflow-hidden">
-        <div className={`h-1.5 ${fill}`} style={{ width: `${pct}%` }} />
+    <div className="space-y-2">
+      {/* Section header */}
+      <div className={`flex items-center justify-between rounded-md border px-3 py-2 ${accent}`}>
+        <div className="flex items-center gap-3">
+          <span className="text-sm font-semibold">{label}</span>
+          <span className="text-xs opacity-60">{units.length} units</span>
+        </div>
+        <div className="flex items-center gap-4 text-xs opacity-70">
+          <span>{obtained} obtained</span>
+          <span>{trueForm} TF</span>
+        </div>
       </div>
-      <span className="text-xs text-gray-500 w-12 text-right">{value}/{total}</span>
+
+      {/* Unit grid */}
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
+        {units.map((unit) => (
+          <UnitCard
+            key={unit.id}
+            unit={unit}
+            onUpdate={onUpdate}
+            pending={pendingIds.has(unit.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
@@ -139,32 +197,32 @@ function MiniBar({ value, total }: { value: number; total: number }) {
 
 const ALL_KEY = "ALL";
 
+type CategoryMeta = { key: string; label: string };
+
 export default function UnitsClient({ categories }: { categories: CategoryMeta[] }) {
   const [activeCategory, setActiveCategory] = useState<string>(ALL_KEY);
-  const [page, setPage] = useState(1);
+  const [hideCollab, setHideCollab] = useState(false);
   const [units, setUnits] = useState<UnitRow[]>([]);
-  const [total, setTotal] = useState(0);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pendingIds, setPendingIds] = useState<Set<string>>(new Set());
   const [searchQuery, setSearchQuery] = useState("");
-  const perPage = 60;
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
-  /* Fetch units for current tab + page */
-  const fetchUnits = useCallback(async (cat: string, p: number) => {
+  /* Fetch all units for current filters */
+  const fetchUnits = useCallback(async (cat: string, collab: boolean) => {
     setLoading(true);
     setError(null);
     try {
-      const params = new URLSearchParams({ page: String(p) });
+      const params = new URLSearchParams();
       if (cat !== ALL_KEY) params.set("category", cat);
+      if (collab) params.set("hideCollab", "true");
       const res = await fetch(`/api/units?${params}`);
       if (!res.ok) throw new Error("Failed to load units");
       const data = await res.json();
       setUnits(data.units);
-      setTotal(data.total);
-    } catch (e) {
+    } catch {
       setError("Failed to load units. Please refresh.");
     } finally {
       setLoading(false);
@@ -172,20 +230,17 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   }, []);
 
   useEffect(() => {
-    fetchUnits(activeCategory, page);
-  }, [activeCategory, page, fetchUnits]);
+    fetchUnits(activeCategory, hideCollab);
+  }, [activeCategory, hideCollab, fetchUnits]);
 
   function handleTabChange(key: string) {
     setActiveCategory(key);
-    setPage(1);
     setSearchQuery("");
   }
 
   async function handleUpdate(id: string, formLevel: number) {
-    // Optimistic update
     setUnits((prev) => prev.map((u) => (u.id === id ? { ...u, formLevel } : u)));
     setPendingIds((s) => new Set(s).add(id));
-
     try {
       const res = await fetch(`/api/units/${id}`, {
         method: "PATCH",
@@ -194,8 +249,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       });
       if (!res.ok) throw new Error("save failed");
     } catch {
-      // Rollback
-      await fetchUnits(activeCategory, page);
+      await fetchUnits(activeCategory, hideCollab);
       setError("Failed to save. Please try again.");
     } finally {
       setPendingIds((s) => {
@@ -206,20 +260,27 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
     }
   }
 
-  /* Filtered units based on search */
+  /* Search filter */
   const filtered = searchQuery
-    ? units.filter((u) =>
-        u.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        String(u.unitNumber).includes(searchQuery)
+    ? units.filter(
+        (u) =>
+          u.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+          String(u.unitNumber).includes(searchQuery)
       )
     : units;
 
-  /* Stats for current category */
+  /* Overall stats */
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
-  const totalDisplayed = units.length;
 
-  const totalPages = Math.ceil(total / perPage);
+  /* Group units by rarity for the "All" tab sectioned view */
+  const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {
+    const rarityUnits = filtered.filter((u) => u.category === rarity);
+    if (rarityUnits.length > 0) acc[rarity] = rarityUnits;
+    return acc;
+  }, {});
+
+  const showSections = activeCategory === ALL_KEY && !searchQuery;
 
   return (
     <div className="p-6 space-y-5 w-full">
@@ -254,26 +315,26 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       <div className="grid grid-cols-3 gap-3">
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">Obtained</div>
-          <MiniBar value={obtained} total={totalDisplayed} />
+          <MiniBar value={obtained} total={units.length} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">True Form</div>
-          <MiniBar value={trueForm} total={totalDisplayed} />
+          <MiniBar value={trueForm} total={units.length} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
-          <div className="text-xs text-gray-500 mb-1">Total Shown</div>
-          <div className="text-sm text-gray-300">{total} units</div>
+          <div className="text-xs text-gray-500 mb-1">Total</div>
+          <div className="text-sm text-gray-300">{units.length} units</div>
         </div>
       </div>
 
-      {/* Search */}
-      <div className="flex items-center gap-3">
+      {/* Search + Collab toggle row */}
+      <div className="flex items-center gap-3 flex-wrap">
         <input
           type="text"
           placeholder="Search by name or #…"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="flex-1 max-w-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-700"
+          className="flex-1 min-w-0 max-w-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-700"
         />
         {searchQuery && (
           <button
@@ -284,8 +345,23 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
             Clear
           </button>
         )}
+
+        {/* Collab toggle */}
+        <button
+          type="button"
+          onClick={() => setHideCollab((v) => !v)}
+          className={`flex items-center gap-2 px-3 py-1.5 rounded border text-xs transition-colors ${
+            hideCollab
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+          title="Collab units come from limited-time events, serial codes, or campaign downloads"
+        >
+          <span>{hideCollab ? "✓" : ""} Hide Collab</span>
+        </button>
+
         <span className="text-xs text-gray-600 ml-auto">
-          {filtered.length} {filtered.length !== units.length ? `of ${units.length}` : ""} units
+          {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
         </span>
       </div>
 
@@ -309,14 +385,28 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         </div>
       )}
 
-      {/* Grid */}
+      {/* Grid / Sections */}
       {loading ? (
         <div className="text-sm text-gray-500 py-8 text-center">Loading units…</div>
       ) : filtered.length === 0 ? (
         <div className="text-sm text-gray-500 py-8 text-center">
-          {searchQuery ? "No units match your search." : "No units found. Import a CSV to populate the catalog."}
+          {searchQuery ? "No units match your search." : "No units found."}
+        </div>
+      ) : showSections ? (
+        /* All-tab: show rarity section headers like the in-game Cat Guide */
+        <div className="space-y-8">
+          {RARITY_ORDER.filter((r) => grouped[r]).map((rarity) => (
+            <RaritySection
+              key={rarity}
+              rarity={rarity}
+              units={grouped[rarity]}
+              onUpdate={handleUpdate}
+              pendingIds={pendingIds}
+            />
+          ))}
         </div>
       ) : (
+        /* Single-rarity tab or search results: flat grid */
         <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
           {filtered.map((unit) => (
             <UnitCard
@@ -326,31 +416,6 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
               pending={pendingIds.has(unit.id)}
             />
           ))}
-        </div>
-      )}
-
-      {/* Pagination */}
-      {!searchQuery && totalPages > 1 && (
-        <div className="flex items-center justify-between pt-2 border-t border-gray-800">
-          <button
-            type="button"
-            disabled={page <= 1}
-            onClick={() => setPage((p) => p - 1)}
-            className="text-xs px-3 py-1.5 rounded border border-gray-700 text-gray-400 hover:text-gray-200 hover:bg-gray-900 disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            ← Prev
-          </button>
-          <span className="text-xs text-gray-500">
-            Page {page} of {totalPages}
-          </span>
-          <button
-            type="button"
-            disabled={page >= totalPages}
-            onClick={() => setPage((p) => p + 1)}
-            className="text-xs px-3 py-1.5 rounded border border-gray-700 text-gray-400 hover:text-gray-200 hover:bg-gray-900 disabled:opacity-40 disabled:cursor-not-allowed"
-          >
-            Next →
-          </button>
         </div>
       )}
     </div>

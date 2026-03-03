@@ -282,10 +282,12 @@ model Unit {
   category   UnitCategory
   formCount  Int          @default(3) // how many forms this unit has (2 or 3)
   sortOrder  Int                    // display order within category
+  isCollab   Boolean      @default(false) // true = collab/serial-code/event-capsule unit
 
   progress UserUnitProgress[]
 
   @@index([category, sortOrder])
+  @@index([isCollab])
 }
 
 model UserUnitProgress {

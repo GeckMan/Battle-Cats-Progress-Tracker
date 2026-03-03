@@ -13,25 +13,30 @@ export async function GET(req: Request) {
 
   const { searchParams } = new URL(req.url);
   const category = searchParams.get("category") ?? undefined; // NORMAL | SPECIAL | …
-  const page = Math.max(1, parseInt(searchParams.get("page") ?? "1", 10));
-  const perPage = 60;
+  const hideCollab = searchParams.get("hideCollab") === "true";
 
-  const where = category ? { category } : {};
+  // Build where clause — no pagination, load all units for the current view
+  const where: Record<string, unknown> = {};
+  if (category) where.category = category;
+  if (hideCollab) where.isCollab = false;
 
   // @ts-ignore
-  const [units, total] = await Promise.all([
-    (prisma as any).unit.findMany({
-      where,
-      orderBy: [{ sortOrder: "asc" }],
-      skip: (page - 1) * perPage,
-      take: perPage,
-    }),
-    // @ts-ignore
-    (prisma as any).unit.count({ where }),
-  ]);
+  const units: any[] = await (prisma as any).unit.findMany({
+    where,
+    orderBy: [{ sortOrder: "asc" }],
+    select: {
+      id: true,
+      unitNumber: true,
+      name: true,
+      category: true,
+      formCount: true,
+      sortOrder: true,
+      isCollab: true,
+    },
+  });
 
-  // Fetch progress for this user on these specific units
-  const unitIds = (units as any[]).map((u: any) => u.id);
+  // Fetch progress for this user on these specific units in one query
+  const unitIds = units.map((u: any) => u.id);
   // @ts-ignore
   const progressRows: any[] = await (prisma as any).userUnitProgress.findMany({
     where: { userId, unitId: { in: unitIds } },
@@ -42,15 +47,16 @@ export async function GET(req: Request) {
     progressRows.map((p: any) => [p.unitId, p.formLevel])
   );
 
-  const result = (units as any[]).map((u: any) => ({
+  const result = units.map((u: any) => ({
     id: u.id,
     unitNumber: u.unitNumber,
     name: u.name,
     category: u.category,
     formCount: u.formCount,
     sortOrder: u.sortOrder,
+    isCollab: u.isCollab,
     formLevel: progressMap.get(u.id) ?? 0,
   }));
 
-  return NextResponse.json({ units: result, total, page, perPage });
+  return NextResponse.json({ units: result, total: result.length });
 }
