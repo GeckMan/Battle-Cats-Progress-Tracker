@@ -44,6 +44,7 @@ const RARITY_ACCENT: Record<string, string> = {
 const SOURCE_LABELS: Record<string, string> = {
   RARE_CAPSULE:      "Rare Cat Capsule",
   EVENT_CAPSULE:     "Collab",
+  SEASONAL_EVENT:    "Seasonal Event",
   STAGE_DROP:        "Stage Drop",
   EMPIRE_OF_CATS:    "Empire of Cats",
   DAILY_LOGIN:       "Daily Login",
