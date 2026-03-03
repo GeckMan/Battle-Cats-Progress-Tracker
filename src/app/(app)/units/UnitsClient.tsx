@@ -41,7 +41,11 @@ const RARITY_ACCENT: Record<string, string> = {
 // Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
 
-function spriteUrl(unitNumber: number, formIndex: number) {
+function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
+  // Ancient Egg units share a common egg sprite (Uni000_m00.png) for base form
+  if (unitName?.startsWith("Ancient Egg") && formIndex === 0) {
+    return `/api/sprite?u=0&f=m`;
+  }
   const letter = FORM_LETTER[formIndex] ?? "f";
   return `/api/sprite?u=${unitNumber}&f=${letter}`;
 }
@@ -107,7 +111,7 @@ function UnitCard({
   }
 
   const displayForm = Math.max(0, level - 1); // formLevel 1 → form index 0 (f00)
-  const imgUrl = spriteUrl(unit.unitNumber, displayForm);
+  const imgUrl = spriteUrl(unit.unitNumber, displayForm, unit.name);
 
   return (
     <button

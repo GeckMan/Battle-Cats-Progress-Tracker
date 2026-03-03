@@ -12,7 +12,7 @@ import { createHash } from "crypto";
  *   f  – form letter   (f | c | s | u)
  */
 
-const VALID_FORM_LETTERS = new Set(["f", "c", "s", "u"]);
+const VALID_FORM_LETTERS = new Set(["f", "c", "s", "u", "m"]);
 
 function staticCdnUrl(filename: string): string {
   const md5 = createHash("md5").update(filename).digest("hex");
