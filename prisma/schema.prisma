@@ -50,6 +50,15 @@ enum MilestoneCategory {
   OTHER
 }
 
+enum UnitCategory {
+  NORMAL
+  SPECIAL
+  RARE
+  SUPER_RARE
+  UBER_RARE
+  LEGEND_RARE
+}
+
 /**
  * ---------- Auth / Users ----------
  */
@@ -75,6 +84,7 @@ model User {
   milestoneProgress UserMilestoneProgress[]
   catclawProgress   UserCatclawProgress?
   meowMedalProgress UserMeowMedal[]
+  unitProgress      UserUnitProgress[]
 }
 
 model PrivacySettings {
@@ -258,5 +268,36 @@ model UserMeowMedal {
   meowMedal MeowMedal @relation(fields: [meowMedalId], references: [id], onDelete: Cascade)
 
   @@unique([userId, meowMedalId])
+  @@index([userId])
+}
+
+/**
+ * ---------- Unit Collection Catalog + Progress ----------
+ */
+
+model Unit {
+  id         String       @id @default(cuid())
+  unitNumber Int          @unique   // game-internal unit ID (0-based, used for sprite URLs)
+  name       String                 // Form 1 display name
+  category   UnitCategory
+  formCount  Int          @default(3) // how many forms this unit has (2 or 3)
+  sortOrder  Int                    // display order within category
+
+  progress UserUnitProgress[]
+
+  @@index([category, sortOrder])
+}
+
+model UserUnitProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  unitId    String
+  formLevel Int      @default(0) // 0 = not obtained, 1 = Form 1, 2 = Form 2, 3 = True Form
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit Unit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, unitId])
   @@index([userId])
 }

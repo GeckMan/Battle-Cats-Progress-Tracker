@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "prisma migrate deploy && next build",
     "start": "next start",
     "lint": "eslint",
     "db:seed": "node -r ts-node/register prisma/seed.cts",
@@ -17,9 +17,8 @@
     "set:medal-autokeys": "npx tsx ./scripts/set-medal-autokeys.ts",
     "set:legend-autokeys": "npx tsx ./scripts/set-legend-medal-autokeys.ts",
     "set:legend:clear-autokeys": "npx tsx ./scripts/set-legend-clear-autokeys.ts",
-    "set:legend:saga-autokeys": "npx tsx ./scripts/set-legend-saga-autokeys.ts"
-
-
+    "set:legend:saga-autokeys": "npx tsx ./scripts/set-legend-saga-autokeys.ts",
+    "import:units": "npx tsx ./scripts/import-units-csv.ts"
   },
   "prisma": {
     "seed": "npx tsx prisma/seed.ts"

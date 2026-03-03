@@ -63,3 +63,15 @@ export const MilestoneCategory = {
 } as const
 
 export type MilestoneCategory = (typeof MilestoneCategory)[keyof typeof MilestoneCategory]
+
+
+export const UnitCategory = {
+  NORMAL: 'NORMAL',
+  SPECIAL: 'SPECIAL',
+  RARE: 'RARE',
+  SUPER_RARE: 'SUPER_RARE',
+  UBER_RARE: 'UBER_RARE',
+  LEGEND_RARE: 'LEGEND_RARE'
+} as const
+
+export type UnitCategory = (typeof UnitCategory)[keyof typeof UnitCategory]

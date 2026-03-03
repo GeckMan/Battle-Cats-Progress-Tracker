@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { href: "/social",     label: "Social",      icon: <IconSocial /> },
   { href: "/medals",     label: "Medals",      icon: <IconMedals /> },
   { href: "/milestones", label: "Milestones",  icon: <IconMilestones /> },
+  { href: "/units",      label: "Units",       icon: <IconUnits /> },
   { href: "/about",      label: "About",       icon: <IconAbout /> },
 ];
 
@@ -158,6 +159,18 @@ function IconMilestones() {
       <line x1="8" y1="4.5" x2="14" y2="4.5" />
       <rect x="2" y="9.5" width="4" height="4" rx="0.5" />
       <line x1="8" y1="11.5" x2="14" y2="11.5" />
+    </svg>
+  );
+}
+
+function IconUnits() {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+      <circle cx="4"  cy="5"  r="2.2" />
+      <circle cx="12" cy="5"  r="2.2" />
+      <circle cx="4"  cy="12" r="2.2" />
+      <circle cx="12" cy="12" r="2.2" />
+      <circle cx="8"  cy="8.5"  r="2.5" />
     </svg>
   );
 }
