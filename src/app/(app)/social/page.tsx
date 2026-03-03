@@ -270,6 +270,7 @@ return (
         displayName={me?.displayName ?? null}
         summary={mySummary}
         compareHref={null}
+        unitsHref={null}
         showSolDetail
       />
     </section>
@@ -291,6 +292,7 @@ return (
               displayName={user.displayName ?? null}
               summary={summary}
               compareHref={`/social/compare/${encodeURIComponent(user.username)}`}
+              unitsHref={`/social/${encodeURIComponent(user.username)}/units`}
               showSolDetail={false}
             />
           ))}
@@ -341,12 +343,14 @@ function UserProgressCard({
   displayName,
   summary,
   compareHref,
+  unitsHref,
   showSolDetail,
 }: {
   username: string;
   displayName: string | null;
   summary: ProgressSummary;
   compareHref: string | null;
+  unitsHref: string | null;
   showSolDetail: boolean;
 }) {
   return (
@@ -363,14 +367,24 @@ function UserProgressCard({
             {summary.medalsEarned}/{summary.medalsTotal} medals · {summary.unitsObtained}/{summary.unitsTotal} units
           </div>
         </div>
-        {compareHref && (
-          <Link
-            href={compareHref}
-            className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
-          >
-            Compare →
-          </Link>
-        )}
+        <div className="flex gap-2">
+          {unitsHref && (
+            <Link
+              href={unitsHref}
+              className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800/60 transition-colors whitespace-nowrap"
+            >
+              View Units →
+            </Link>
+          )}
+          {compareHref && (
+            <Link
+              href={compareHref}
+              className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+            >
+              Compare →
+            </Link>
+          )}
+        </div>
       </div>
 
       {/* Stat cards */}
