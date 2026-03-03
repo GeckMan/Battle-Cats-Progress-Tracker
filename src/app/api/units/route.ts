@@ -57,7 +57,11 @@ export async function GET(req: Request) {
     where.source = source;
   } else {
     // Hide unobtainable units by default — only show when explicitly filtered
-    where.source = { not: "UNOBTAINABLE" };
+    // Use OR to include units with NULL source (e.g. Li'l cats)
+    where.OR = [
+      { source: null },
+      { source: { not: "UNOBTAINABLE" } },
+    ];
   }
   if (setName) where.setName = setName;
 
