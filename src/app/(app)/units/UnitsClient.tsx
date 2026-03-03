@@ -521,6 +521,13 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         </div>
       )}
 
+      {/* Unobtainable banner */}
+      {sourceFilter === "UNOBTAINABLE" && (
+        <div className="rounded border border-gray-700 bg-gray-900/60 px-4 py-2 text-sm text-gray-400">
+          These units were from serial codes or other methods that are no longer available. They don't count towards your collection progress.
+        </div>
+      )}
+
       {/* Grid / Sections */}
       {loading ? (
         <div className="text-sm text-gray-500 py-8 text-center">Loading units…</div>

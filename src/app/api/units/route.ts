@@ -21,7 +21,12 @@ export async function GET(req: Request) {
   const where: Record<string, unknown> = {};
   if (category) where.category = category;
   if (hideCollab) where.isCollab = false;
-  if (source) where.source = source;
+  if (source) {
+    where.source = source;
+  } else {
+    // Hide unobtainable units by default — only show when explicitly filtered
+    where.source = { not: "UNOBTAINABLE" };
+  }
   if (setName) where.setName = setName;
 
   // @ts-ignore
