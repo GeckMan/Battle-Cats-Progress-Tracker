@@ -143,7 +143,7 @@ export default function AboutPage() {
         </h2>
         <div className="text-sm text-gray-400 space-y-2">
           <p>
-            Built by <strong className="text-gray-200">GeckMan</strong>. Started as a personal project to track progress and compare with friends.
+            Built by <strong className="text-gray-200">Geck</strong>. Started as a personal project to track progress and compare with friends.
           </p>
           <p>
             Stage names, medal data, and unit sprites sourced from the{" "}

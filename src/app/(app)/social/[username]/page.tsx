@@ -122,12 +122,18 @@ export default async function FriendProfilePage(props: {
           <h1 className="text-2xl font-semibold text-gray-100">{displayLabel}</h1>
           {user.displayName && <div className="text-sm text-gray-500 mt-0.5">@{user.username}</div>}
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap justify-end">
           <Link
             href={`/social/${encodeURIComponent(user.username)}/units`}
             className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800 hover:text-gray-100 transition-colors whitespace-nowrap"
           >
             View Units →
+          </Link>
+          <Link
+            href={`/social/${encodeURIComponent(user.username)}/medals`}
+            className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800 hover:text-gray-100 transition-colors whitespace-nowrap"
+          >
+            View Medals →
           </Link>
           {!isSelf && (
             <Link

@@ -271,6 +271,7 @@ return (
         summary={mySummary}
         compareHref={null}
         unitsHref={null}
+        medalsHref={null}
         showSolDetail
       />
     </section>
@@ -293,6 +294,7 @@ return (
               summary={summary}
               compareHref={`/social/compare/${encodeURIComponent(user.username)}`}
               unitsHref={`/social/${encodeURIComponent(user.username)}/units`}
+              medalsHref={`/social/${encodeURIComponent(user.username)}/medals`}
               showSolDetail={false}
             />
           ))}
@@ -344,6 +346,7 @@ function UserProgressCard({
   summary,
   compareHref,
   unitsHref,
+  medalsHref,
   showSolDetail,
 }: {
   username: string;
@@ -351,6 +354,7 @@ function UserProgressCard({
   summary: ProgressSummary;
   compareHref: string | null;
   unitsHref: string | null;
+  medalsHref: string | null;
   showSolDetail: boolean;
 }) {
   return (
@@ -367,13 +371,21 @@ function UserProgressCard({
             {summary.medalsEarned}/{summary.medalsTotal} medals · {summary.unitsObtained}/{summary.unitsTotal} units
           </div>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 flex-wrap justify-end">
           {unitsHref && (
             <Link
               href={unitsHref}
               className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800/60 transition-colors whitespace-nowrap"
             >
               View Units →
+            </Link>
+          )}
+          {medalsHref && (
+            <Link
+              href={medalsHref}
+              className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800/60 transition-colors whitespace-nowrap"
+            >
+              View Medals →
             </Link>
           )}
           {compareHref && (
