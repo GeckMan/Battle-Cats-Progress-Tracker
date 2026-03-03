@@ -67,7 +67,7 @@ export default function AboutPage() {
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
-            <span><strong className="text-gray-100">Social</strong> — add friends, view their profiles, and compare your progress side by side</span>
+            <span><strong className="text-gray-100">Social</strong> — add friends, view their profiles, compare your progress side by side, and browse their unit collection</span>
           </li>
           <li className="flex gap-2">
             <span className="text-gray-500">→</span>
@@ -81,6 +81,12 @@ export default function AboutPage() {
         <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
           Announcements
         </h2>
+
+        <Announcement
+          date="March 2026"
+          title="Friend unit collection viewer"
+          body="You can now browse a friend's unit collection from their profile page. See which cats they've obtained and at what form level, with the same filters and sprite display as your own collection. Fully read-only — no editing their progress."
+        />
 
         <Announcement
           date="March 2026"

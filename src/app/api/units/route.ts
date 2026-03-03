@@ -9,13 +9,45 @@ import { prisma } from "@/lib/prisma";
 export async function GET(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  const userId = session.user.id as string;
+  const viewerId = session.user.id as string;
 
   const { searchParams } = new URL(req.url);
   const category = searchParams.get("category") ?? undefined; // NORMAL | SPECIAL | …
   const hideCollab = searchParams.get("hideCollab") === "true";
   const source = searchParams.get("source") ?? undefined;
   const setName = searchParams.get("setName") ?? undefined;
+
+  // Optional: view another user's units (read-only)
+  const targetUserId = searchParams.get("userId") ?? undefined;
+  let progressUserId = viewerId;
+
+  if (targetUserId && targetUserId !== viewerId) {
+    // Verify friendship
+    const friendship = await prisma.friendship.findFirst({
+      where: {
+        status: "ACCEPTED",
+        OR: [
+          { requesterId: viewerId, addresseeId: targetUserId },
+          { requesterId: targetUserId, addresseeId: viewerId },
+        ],
+      },
+      select: { id: true },
+    });
+    if (!friendship) {
+      return NextResponse.json({ error: "Not friends" }, { status: 403 });
+    }
+
+    // Check privacy
+    const targetUser = await prisma.user.findUnique({
+      where: { id: targetUserId },
+      select: { privacy: { select: { progressVisibility: true } } },
+    });
+    if (targetUser?.privacy?.progressVisibility === "PRIVATE") {
+      return NextResponse.json({ error: "Progress is private" }, { status: 403 });
+    }
+
+    progressUserId = targetUserId;
+  }
 
   // Build where clause — no pagination, load all units for the current view
   const where: Record<string, unknown> = {};
@@ -46,11 +78,11 @@ export async function GET(req: Request) {
     },
   });
 
-  // Fetch progress for this user on these specific units in one query
+  // Fetch progress for the target user on these specific units in one query
   const unitIds = units.map((u: any) => u.id);
   // @ts-ignore
   const progressRows: any[] = await (prisma as any).userUnitProgress.findMany({
-    where: { userId, unitId: { in: unitIds } },
+    where: { userId: progressUserId, unitId: { in: unitIds } },
     select: { unitId: true, formLevel: true },
   });
 

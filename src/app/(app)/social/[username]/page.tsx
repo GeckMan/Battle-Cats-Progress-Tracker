@@ -97,12 +97,21 @@ export default async function FriendProfilePage(props: {
   const medalsEarned = await prisma.userMeowMedal.count({ where: { userId: user.id, earned: true } });
   const medalsOverall = medalsTotal === 0 ? 0 : Math.round((medalsEarned / medalsTotal) * 100);
 
-  const overall = Math.round((storyOverall + legendOverall + medalsOverall) / 3);
+  // Units
+  // @ts-ignore
+  const unitTotal = await (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } });
+  // @ts-ignore
+  const unitObtained = await (prisma as any).userUnitProgress.count({
+    where: { userId: user.id, formLevel: { gte: 1 }, unit: { source: { not: "UNOBTAINABLE" } } },
+  });
+  const unitsOverall = unitTotal === 0 ? 0 : Math.round((unitObtained / unitTotal) * 100);
+
+  const overall = Math.round((storyOverall + legendOverall + medalsOverall + unitsOverall) / 4);
 
   const displayLabel = user.displayName ?? user.username;
 
   return (
-    <div className="p-8 space-y-6 w-full">
+    <div className="p-4 pt-16 md:p-8 space-y-6 w-full">
 
       {/* Header */}
       <div className="flex items-start justify-between gap-4">
@@ -113,30 +122,39 @@ export default async function FriendProfilePage(props: {
           <h1 className="text-2xl font-semibold text-gray-100">{displayLabel}</h1>
           {user.displayName && <div className="text-sm text-gray-500 mt-0.5">@{user.username}</div>}
         </div>
-        {!isSelf && (
+        <div className="flex gap-2">
           <Link
-            href={`/social/compare/${encodeURIComponent(user.username)}`}
-            className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+            href={`/social/${encodeURIComponent(user.username)}/units`}
+            className="text-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900/50 text-gray-300 hover:bg-gray-800 hover:text-gray-100 transition-colors whitespace-nowrap"
           >
-            Compare →
+            View Units →
           </Link>
-        )}
+          {!isSelf && (
+            <Link
+              href={`/social/compare/${encodeURIComponent(user.username)}`}
+              className="text-xs px-3 py-1.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+            >
+              Compare →
+            </Link>
+          )}
+        </div>
       </div>
 
       {/* Stat cards */}
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-3 sm:grid-cols-5 gap-2 md:gap-3">
         {[
           { title: "Overall", pct: overall, highlight: true },
           { title: "Story",   pct: storyOverall },
           { title: "Legend",  pct: legendOverall },
           { title: "Medals",  pct: medalsOverall },
+          { title: "Units",   pct: unitsOverall },
         ].map(({ title, pct, highlight }) => (
           <StatCard key={title} title={title} pct={pct} highlight={highlight} />
         ))}
       </div>
 
       {/* Story + Legend side by side */}
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <Section title="Story Chapters">
           <div className="space-y-2">
             {storyRows.map((r) => (
@@ -154,10 +172,16 @@ export default async function FriendProfilePage(props: {
         </Section>
       </div>
 
-      {/* Medals */}
-      <Section title={`Meow Medals — ${medalsEarned}/${medalsTotal}`}>
-        <CompactRow label="All medals" pct={medalsOverall} sub={`${medalsEarned}/${medalsTotal}`} />
-      </Section>
+      {/* Medals + Units side by side */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <Section title={`Meow Medals — ${medalsEarned}/${medalsTotal}`}>
+          <CompactRow label="All medals" pct={medalsOverall} sub={`${medalsEarned}/${medalsTotal}`} />
+        </Section>
+
+        <Section title={`Units — ${unitObtained}/${unitTotal}`}>
+          <CompactRow label="All units" pct={unitsOverall} sub={`${unitObtained}/${unitTotal}`} />
+        </Section>
+      </div>
     </div>
   );
 }
