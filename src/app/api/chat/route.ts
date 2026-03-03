@@ -23,7 +23,7 @@ export async function GET(req: NextRequest) {
     take: limit + 1,
     include: {
       user: {
-        select: { id: true, username: true, displayName: true },
+        select: { id: true, username: true, displayName: true, role: true },
       },
     },
   });
@@ -37,6 +37,7 @@ export async function GET(req: NextRequest) {
       userId: m.userId,
       username: m.user.username,
       displayName: m.user.displayName,
+      role: m.user.role ?? "USER",
       content: m.content,
       createdAt: m.createdAt,
     })),
@@ -65,7 +66,7 @@ export async function POST(req: Request) {
     data: { userId, content },
     include: {
       user: {
-        select: { id: true, username: true, displayName: true },
+        select: { id: true, username: true, displayName: true, role: true },
       },
     },
   });
@@ -75,6 +76,7 @@ export async function POST(req: Request) {
     userId: msg.userId,
     username: msg.user.username,
     displayName: msg.user.displayName,
+    role: msg.user.role ?? "USER",
     content: msg.content,
     createdAt: msg.createdAt,
   });

@@ -130,6 +130,7 @@ export default function RightPanelWrapper({ currentUserId }: { currentUserId: st
         onTabChange={handleTabChange}
         unreadActivity={unreadActivity}
         unreadChat={unreadChat}
+        currentUserId={currentUserId}
       />
     </>
   );

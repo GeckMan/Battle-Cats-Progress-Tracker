@@ -15,6 +15,7 @@ export default function RightPanel({
   onTabChange,
   unreadActivity,
   unreadChat,
+  currentUserId,
 }: {
   open: boolean;
   onClose: () => void;
@@ -22,6 +23,7 @@ export default function RightPanel({
   onTabChange: (tab: Tab) => void;
   unreadActivity: number;
   unreadChat: number;
+  currentUserId: string;
 }) {
   return (
     <>
@@ -71,7 +73,7 @@ export default function RightPanel({
 
         {/* Content */}
         <div className="flex-1 overflow-hidden">
-          {activeTab === "activity" ? <ActivityTab /> : <ChatTab />}
+          {activeTab === "activity" ? <ActivityTab /> : <ChatTab currentUserId={currentUserId} />}
         </div>
       </aside>
     </>
@@ -352,11 +354,12 @@ type ChatMsg = {
   userId: string;
   username: string;
   displayName: string | null;
+  role: string;
   content: string;
   createdAt: string;
 };
 
-function ChatTab() {
+function ChatTab({ currentUserId }: { currentUserId: string }) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [loading, setLoading] = useState(true);
   const [hasMore, setHasMore] = useState(false);
@@ -474,7 +477,7 @@ function ChatTab() {
         )}
 
         {displayMessages.map((msg) => (
-          <ChatBubble key={msg.id} msg={msg} />
+          <ChatBubble key={msg.id} msg={msg} isMe={msg.userId === currentUserId} />
         ))}
         <div ref={bottomRef} />
       </div>
@@ -507,8 +510,9 @@ function ChatTab() {
   );
 }
 
-function ChatBubble({ msg }: { msg: ChatMsg }) {
+function ChatBubble({ msg, isMe }: { msg: ChatMsg; isMe: boolean }) {
   const name = msg.displayName ?? msg.username;
+  const isAdmin = msg.role === "ADMIN";
   const time = new Date(msg.createdAt);
   const timeStr = time.toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" });
   const dateStr = time.toLocaleDateString("en-US", { month: "short", day: "numeric" });
@@ -520,9 +524,19 @@ function ChatBubble({ msg }: { msg: ChatMsg }) {
     time.getDate() === now.getDate();
 
   return (
-    <div className="px-2 py-1.5 rounded hover:bg-gray-900/40 transition-colors group">
+    <div className={`px-2 py-1.5 rounded transition-colors group ${
+      isMe ? "bg-amber-950/20 border-l-2 border-amber-700" : "hover:bg-gray-900/40"
+    }`}>
       <div className="flex items-baseline gap-2">
-        <span className="text-xs font-medium text-amber-300">{name}</span>
+        <span className={`text-xs font-medium ${isMe ? "text-amber-200" : "text-amber-300"}`}>
+          {name}
+          {isMe && <span className="text-amber-600 ml-1">(you)</span>}
+        </span>
+        {isAdmin && (
+          <span className="text-[9px] font-bold bg-red-500/20 border border-red-700/50 text-red-300 rounded px-1 py-px leading-none">
+            Admin
+          </span>
+        )}
         <span className="text-[10px] text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
           {isToday ? timeStr : `${dateStr} ${timeStr}`}
         </span>
