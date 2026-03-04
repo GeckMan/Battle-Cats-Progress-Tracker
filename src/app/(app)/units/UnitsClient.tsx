@@ -312,9 +312,11 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   const [hideCollab, setHideCollab] = useState(false);
   const [sourceFilter, setSourceFilter] = useState("");
   const [setFilter, setSetFilter] = useState("");
+  const [collabFilter, setCollabFilter] = useState("");
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
+  const [availableCollabSets, setAvailableCollabSets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pendingIds, setPendingIds] = useState<Set<string>>(new Set());
@@ -323,7 +325,8 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
   /* Fetch all units for current filters */
-  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string) => {
+  const COLLABS_KEY = "__COLLABS__";
+  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string, cf: string) => {
     setLoading(true);
     setError(null);
     try {
@@ -331,13 +334,24 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       if (cat !== ALL_KEY) params.set("category", cat);
       if (collab) params.set("hideCollab", "true");
       if (src) params.set("source", src);
-      if (sn) params.set("setName", sn);
+      // Handle collab grouping: specific collab selected → filter by that banner
+      // "Collabs" selected with no sub-selection → show all collab units via source
+      if (sn === COLLABS_KEY) {
+        if (cf) {
+          params.set("setName", cf);
+        } else {
+          params.set("source", "EVENT_CAPSULE");
+        }
+      } else if (sn) {
+        params.set("setName", sn);
+      }
       const res = await fetch(`/api/units?${params}`);
       if (!res.ok) throw new Error("Failed to load units");
       const data = await res.json();
       setUnits(data.units);
       if (data.sources) setAvailableSources(data.sources);
       if (data.sets) setAvailableSets(data.sets);
+      if (data.collabSets) setAvailableCollabSets(data.collabSets);
     } catch {
       setError("Failed to load units. Please refresh.");
     } finally {
@@ -346,8 +360,8 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   }, []);
 
   useEffect(() => {
-    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter);
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, fetchUnits]);
+    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, fetchUnits]);
 
   function handleTabChange(key: string) {
     setActiveCategory(key);
@@ -357,6 +371,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   function clearFilters() {
     setSourceFilter("");
     setSetFilter("");
+    setCollabFilter("");
     setHideCollab(false);
     setSearchQuery("");
   }
@@ -372,7 +387,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
       });
       if (!res.ok) throw new Error("save failed");
     } catch {
-      await fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter);
+      await fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
       setError("Failed to save. Please try again.");
     } finally {
       setPendingIds((s) => {
@@ -409,7 +424,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
-  const hasActiveFilters = sourceFilter || setFilter || hideCollab;
+  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab;
 
   return (
     <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
@@ -481,7 +496,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
           label="All Sources"
           value={sourceFilter}
           options={availableSources}
-          onChange={(v) => { setSourceFilter(v); setSetFilter(""); }}
+          onChange={(v) => { setSourceFilter(v); setSetFilter(""); setCollabFilter(""); }}
           labelMap={SOURCE_LABELS}
         />
 
@@ -490,8 +505,20 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
           <FilterSelect
             label="All Sets"
             value={setFilter}
-            options={availableSets}
-            onChange={setSetFilter}
+            options={[...availableSets, ...(availableCollabSets.length > 0 ? [COLLABS_KEY] : [])]}
+            onChange={(v) => { setSetFilter(v); setCollabFilter(""); }}
+            labelMap={{ [COLLABS_KEY]: "Collabs" }}
+          />
+        )}
+
+        {/* Collab sub-filter — shown when "Collabs" is selected */}
+        {setFilter === COLLABS_KEY && availableCollabSets.length > 0 && (
+          <FilterSelect
+            label="All Collabs"
+            value={collabFilter}
+            options={availableCollabSets}
+            onChange={setCollabFilter}
+            labelMap={Object.fromEntries(availableCollabSets.map((c) => [c, c.replace(" Collaboration", "")]))}
           />
         )}
 

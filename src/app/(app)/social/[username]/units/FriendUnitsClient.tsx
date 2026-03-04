@@ -243,9 +243,11 @@ export default function FriendUnitsClient({
   const [hideUnowned, setHideUnowned] = useState(true);
   const [sourceFilter, setSourceFilter] = useState("");
   const [setFilter, setSetFilter] = useState("");
+  const [collabFilter, setCollabFilter] = useState("");
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
+  const [availableCollabSets, setAvailableCollabSets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [searchQuery, setSearchQuery] = useState("");
@@ -254,7 +256,8 @@ export default function FriendUnitsClient({
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
   /* Fetch units for the friend */
-  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string) => {
+  const COLLABS_KEY = "__COLLABS__";
+  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string, cf: string) => {
     setLoading(true);
     setError(null);
     try {
@@ -263,13 +266,22 @@ export default function FriendUnitsClient({
       if (cat !== ALL_KEY) params.set("category", cat);
       if (collab) params.set("hideCollab", "true");
       if (src) params.set("source", src);
-      if (sn) params.set("setName", sn);
+      if (sn === COLLABS_KEY) {
+        if (cf) {
+          params.set("setName", cf);
+        } else {
+          params.set("source", "EVENT_CAPSULE");
+        }
+      } else if (sn) {
+        params.set("setName", sn);
+      }
       const res = await fetch(`/api/units?${params}`);
       if (!res.ok) throw new Error("Failed to load units");
       const data = await res.json();
       setUnits(data.units);
       if (data.sources) setAvailableSources(data.sources);
       if (data.sets) setAvailableSets(data.sets);
+      if (data.collabSets) setAvailableCollabSets(data.collabSets);
 
       // Derive category tabs from first fetch
       if (categories.length === 0) {
@@ -285,8 +297,8 @@ export default function FriendUnitsClient({
   }, [userId, categories.length]);
 
   useEffect(() => {
-    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter);
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, fetchUnits]);
+    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, fetchUnits]);
 
   function handleTabChange(key: string) {
     setActiveCategory(key);
@@ -296,6 +308,7 @@ export default function FriendUnitsClient({
   function clearFilters() {
     setSourceFilter("");
     setSetFilter("");
+    setCollabFilter("");
     setHideCollab(false);
     setHideUnowned(true);
     setSearchQuery("");
@@ -326,7 +339,7 @@ export default function FriendUnitsClient({
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
-  const hasActiveFilters = sourceFilter || setFilter || hideCollab || !hideUnowned;
+  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab || !hideUnowned;
 
   return (
     <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
@@ -400,12 +413,28 @@ export default function FriendUnitsClient({
           label="All Sources"
           value={sourceFilter}
           options={availableSources}
-          onChange={(v) => { setSourceFilter(v); setSetFilter(""); }}
+          onChange={(v) => { setSourceFilter(v); setSetFilter(""); setCollabFilter(""); }}
           labelMap={SOURCE_LABELS}
         />
 
         {(!sourceFilter || sourceFilter === "RARE_CAPSULE") && availableSets.length > 0 && (
-          <FilterSelect label="All Sets" value={setFilter} options={availableSets} onChange={setSetFilter} />
+          <FilterSelect
+            label="All Sets"
+            value={setFilter}
+            options={[...availableSets, ...(availableCollabSets.length > 0 ? [COLLABS_KEY] : [])]}
+            onChange={(v) => { setSetFilter(v); setCollabFilter(""); }}
+            labelMap={{ [COLLABS_KEY]: "Collabs" }}
+          />
+        )}
+
+        {setFilter === COLLABS_KEY && availableCollabSets.length > 0 && (
+          <FilterSelect
+            label="All Collabs"
+            value={collabFilter}
+            options={availableCollabSets}
+            onChange={setCollabFilter}
+            labelMap={Object.fromEntries(availableCollabSets.map((c) => [c, c.replace(" Collaboration", "")]))}
+          />
         )}
 
         <button

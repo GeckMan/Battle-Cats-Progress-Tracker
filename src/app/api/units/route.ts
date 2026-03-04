@@ -124,10 +124,23 @@ export async function GET(req: Request) {
     SELECT DISTINCT unnest("banners") AS "setName" FROM "Unit" ORDER BY "setName"
   `;
 
+  // Split banner names into regular sets and collab sets
+  const sets: string[] = [];
+  const collabSets: string[] = [];
+  for (const r of allSets) {
+    const name = r.setName as string;
+    if (name.endsWith(" Collaboration")) {
+      collabSets.push(name);
+    } else {
+      sets.push(name);
+    }
+  }
+
   return NextResponse.json({
     units: result,
     total: result.length,
     sources: allSources.map((r: any) => r.source),
-    sets: allSets.map((r: any) => r.setName),
+    sets,
+    collabSets,
   });
 }
