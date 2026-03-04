@@ -420,6 +420,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         <p className="text-sm text-gray-500 mt-0.5">
           Track each cat's form level — click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
+        <p className="text-xs text-gray-600 mt-0.5">Unit data current to game version 15.1.1</p>
       </div>
 
       {/* Category tabs */}
