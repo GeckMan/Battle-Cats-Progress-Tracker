@@ -1,0 +1,83 @@
+-- Comprehensive setName fix using actual gacha pool data from GatyaDataSetR1.csv
+-- Corrected version: uses integrated banner rows to verify permanent set rosters,
+-- properly splits UBERFEST/EPICFEST exclusives, fixes seasonal assignments
+-- First clear all existing setName assignments to start fresh
+UPDATE "Unit" SET "setName" = NULL;
+
+-- === Permanent Gacha Sets (verified from integrated banner rows 942-1017) ===
+
+UPDATE "Unit" SET "setName" = 'Tales of the Nekoluga' WHERE "unitNumber" IN (34, 168, 169, 170, 171, 240, 436, 461, 546, 625, 712, 781);
+UPDATE "Unit" SET "setName" = 'The Dynamites' WHERE "unitNumber" IN (42, 43, 44, 57, 59, 143, 427, 455, 519, 617, 668, 763);
+UPDATE "Unit" SET "setName" = 'Sengoku Wargods Vajiras' WHERE "unitNumber" IN (71, 72, 73, 124, 125, 158, 338, 448, 496, 618, 649, 754);
+UPDATE "Unit" SET "setName" = 'Cyber Academy Galaxy Gals' WHERE "unitNumber" IN (75, 76, 105, 106, 107, 159, 351, 449, 502, 619, 647, 733);
+UPDATE "Unit" SET "setName" = 'Lords of Destruction Dragon Emperors' WHERE "unitNumber" IN (83, 84, 85, 86, 87, 177, 396, 450, 505, 620, 660, 760);
+UPDATE "Unit" SET "setName" = 'Ancient Heroes Ultra Souls' WHERE "unitNumber" IN (134, 135, 136, 137, 138, 203, 322, 451, 525, 633, 692, 769);
+UPDATE "Unit" SET "setName" = 'Justice Strikes Back! Dark Heroes' WHERE "unitNumber" IN (194, 195, 196, 212, 226, 261, 431, 481, 533, 634, 698, 774);
+UPDATE "Unit" SET "setName" = 'Frontline Assault Iron Legion' WHERE "unitNumber" IN (304, 305, 306, 355, 417, 463, 594, 632, 674, 715, 799);
+UPDATE "Unit" SET "setName" = 'Nature''s Guardians Elemental Pixies' WHERE "unitNumber" IN (359, 360, 361, 401, 478, 569, 631, 655, 719, 817);
+UPDATE "Unit" SET "setName" = 'Girls & Monsters: Angels of Terror' WHERE "unitNumber" IN (334, 335, 336, 357, 358, 607, 725, 824);
+UPDATE "Unit" SET "setName" = 'The Almighties' WHERE "unitNumber" IN (466, 731, 738, 830, 837);
+
+-- === Fest Exclusives (from Gigant Zeus pool row 992 + UBER/EPIC split) ===
+
+-- UBERFEST: units in both fests (Gigant Zeus pool) + UBERFEST-only exclusives
+UPDATE "Unit" SET "setName" = 'UBERFEST' WHERE "unitNumber" IN (257, 258, 259, 269, 271, 272, 316, 318, 380, 439, 493, 529, 534, 585, 641, 642, 690, 723, 779, 811);
+-- EPICFEST: units only in EPICFEST (not UBERFEST or permanent sets)
+UPDATE "Unit" SET "setName" = 'EPICFEST' WHERE "unitNumber" IN (333, 378, 441, 543, 609, 657, 673, 705, 787, 812);
+
+-- === Seasonal Event Exclusives (from RoyalFest/Super King Festival row 1013) ===
+
+UPDATE "Unit" SET "setName" = 'Halloween Capsules' WHERE "unitNumber" IN (229, 230, 302, 570, 683, 772);
+UPDATE "Unit" SET "setName" = 'Xmas Gals' WHERE "unitNumber" IN (241, 242, 243, 310, 526, 584, 687, 777);
+UPDATE "Unit" SET "setName" = 'Gals of Summer' WHERE "unitNumber" IN (274, 275, 354, 438, 494, 563, 564, 614, 666, 714, 759, 820);
+UPDATE "Unit" SET "setName" = 'Easter Carnival' WHERE "unitNumber" IN (330, 331, 595, 699, 737);
+UPDATE "Unit" SET "setName" = 'Valentine Gals' WHERE "unitNumber" IN (587, 588, 644);
+UPDATE "Unit" SET "setName" = 'White Day Capsules' WHERE "unitNumber" IN (648, 693, 736, 786);
+UPDATE "Unit" SET "setName" = 'June Bride' WHERE "unitNumber" IN (661, 711, 756);
+UPDATE "Unit" SET "setName" = 'RoyalFest' WHERE "unitNumber" IN (586, 612);
+UPDATE "Unit" SET "setName" = 'Seasonal Capsules' WHERE "unitNumber" IN (520, 565, 566, 773);
+UPDATE "Unit" SET "setName" = 'Best of the Best' WHERE "unitNumber" IN (435, 484, 758, 783, 810);
+
+-- === Buster Event Exclusives ===
+
+UPDATE "Unit" SET "setName" = 'Air Busters' WHERE "unitNumber" IN (286);
+UPDATE "Unit" SET "setName" = 'Red Busters' WHERE "unitNumber" IN (283);
+UPDATE "Unit" SET "setName" = 'Metal Busters' WHERE "unitNumber" IN (397);
+UPDATE "Unit" SET "setName" = 'Wave Busters' WHERE "unitNumber" IN (559);
+UPDATE "Unit" SET "setName" = 'Colossus Busters' WHERE "unitNumber" IN (686);
+
+-- === Special/Drop Units ===
+
+UPDATE "Unit" SET "setName" = 'Ancient Eggs' WHERE "unitNumber" IN (658, 659, 663, 664, 675, 676, 697, 706, 707, 716, 717, 724);
+UPDATE "Unit" SET "setName" = 'Crazed Cats' WHERE "unitNumber" IN (91, 92, 93, 94, 95, 96, 97, 98, 99);
+UPDATE "Unit" SET "setName" = 'Brainwashed Cats' WHERE "unitNumber" IN (629, 636, 645, 654, 662, 667, 684, 688, 694);
+UPDATE "Unit" SET "setName" = 'Cyclone/Advent Drops' WHERE "unitNumber" IN (260, 267, 273, 284, 287);
+UPDATE "Unit" SET "setName" = 'Ototo Corps' WHERE "unitNumber" IN (443, 444, 445, 446, 447);
+UPDATE "Unit" SET "setName" = 'Li''''l Cats' WHERE "unitNumber" IN (63, 70, 74, 79, 80, 81, 100, 104, 109, 122, 128, 132, 176, 183, 227, 244, 282, 303, 329, 343, 501);
+
+-- === Collaboration Events ===
+
+UPDATE "Unit" SET "setName" = 'Baki Hanma Collaboration' WHERE "unitNumber" IN (789, 790, 791, 792, 793, 794);
+UPDATE "Unit" SET "setName" = 'Bikkuriman Collaboration' WHERE "unitNumber" IN (467, 468, 469, 470, 471, 472, 473, 544, 555, 556);
+UPDATE "Unit" SET "setName" = 'Crash Fever Collaboration' WHERE "unitNumber" IN (326, 327);
+UPDATE "Unit" SET "setName" = 'Demon Slayer Collaboration' WHERE "unitNumber" IN (840, 841, 842, 843, 844, 845, 846, 847, 848, 849);
+UPDATE "Unit" SET "setName" = 'Fate/Stay Night Collaboration' WHERE "unitNumber" IN (362, 363, 364, 365, 366, 367, 368, 370, 371, 372, 373, 456, 458, 459, 460);
+UPDATE "Unit" SET "setName" = 'Hatsune Miku Collaboration' WHERE "unitNumber" IN (535, 536, 537, 538, 560, 561, 562, 582, 583, 590, 591, 592, 593, 722);
+UPDATE "Unit" SET "setName" = 'Kunio-kun Collaboration' WHERE "unitNumber" IN (624, 721);
+UPDATE "Unit" SET "setName" = 'Merc Storia Collaboration' WHERE "unitNumber" IN (110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 185, 186, 187, 188, 189, 190, 344, 345, 346, 506, 768);
+UPDATE "Unit" SET "setName" = 'Metal Slug Defense Collaboration' WHERE "unitNumber" IN (214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 727);
+UPDATE "Unit" SET "setName" = 'Neon Genesis Evangelion Collaboration' WHERE "unitNumber" IN (53, 402, 404, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 487, 488, 489, 490, 491, 547, 548, 549, 550, 551, 552, 709, 710, 814, 815);
+UPDATE "Unit" SET "setName" = 'Power Pro Baseball Collaboration' WHERE "unitNumber" IN (385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395);
+UPDATE "Unit" SET "setName" = 'Princess Punt Sweets Collaboration' WHERE "unitNumber" IN (64, 65, 66, 67, 68, 69, 160, 161, 337, 485, 486, 530);
+UPDATE "Unit" SET "setName" = 'Puella Magi Madoka Magica Collaboration' WHERE "unitNumber" IN (288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 301, 440, 778);
+UPDATE "Unit" SET "setName" = 'Ranma 1/2 Collaboration' WHERE "unitNumber" IN (596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 671, 672);
+UPDATE "Unit" SET "setName" = 'Rurouni Kenshin Collaboration' WHERE "unitNumber" IN (746, 747, 748, 749, 750, 751, 752);
+UPDATE "Unit" SET "setName" = 'Shoumetsu Toshi Collaboration' WHERE "unitNumber" IN (179, 180, 270, 340, 341, 428, 429, 482, 483);
+UPDATE "Unit" SET "setName" = 'Sonic the Hedgehog Collaboration' WHERE "unitNumber" IN (803, 804, 805, 806, 807, 809);
+UPDATE "Unit" SET "setName" = 'Street Fighter Collaboration' WHERE "unitNumber" IN (508, 510, 511, 512, 513, 514, 515, 516, 517, 518, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 680, 681, 682, 826, 827, 828, 829);
+UPDATE "Unit" SET "setName" = 'Survive! Mola Mola! Collaboration' WHERE "unitNumber" IN (173, 174);
+UPDATE "Unit" SET "setName" = 'Tower of Saviors Collaboration' WHERE "unitNumber" IN (741, 742, 743);
+
+-- === Shared Rare/Super Rare Pool ===
+
+UPDATE "Unit" SET "setName" = 'Rare Cat Capsule' WHERE "unitNumber" IN (30, 31, 32, 33, 35, 36, 37, 38, 39, 40, 41, 46, 47, 48, 49, 50, 51, 52, 55, 56, 58, 60, 61, 78, 88, 126, 129, 131, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 197, 198, 199, 200, 201, 228, 237, 238, 239, 276, 307, 308, 314, 319, 324, 325, 332, 376, 377, 379, 382, 442, 452, 495, 507, 521, 522, 523, 527, 528, 531, 539, 545, 553, 581, 589, 621, 623, 630, 695, 708, 718, 780, 785, 819);
