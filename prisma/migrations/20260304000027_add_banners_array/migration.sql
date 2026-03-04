@@ -49,36 +49,12 @@ UPDATE "Unit" SET "banners" = "banners" || ARRAY['Colossus Busters']
 WHERE "unitNumber" IN (647, 649, 655, 660, 668, 674, 682, 686)
 AND NOT ('Colossus Busters' = ANY("banners"));
 
--- Step 4: Add UBERFEST membership for all ubers available in UBERFEST (row 1007)
--- This includes all permanent set ubers + UBERFEST exclusives
-UPDATE "Unit" SET "banners" = "banners" || ARRAY['UBERFEST']
-WHERE "unitNumber" IN (
-  -- Permanent set ubers available in UBERFEST
-  34, 42, 43, 44, 57, 59, 71, 72, 73, 75, 76, 83, 84, 85, 86, 87,
-  105, 106, 107, 124, 125, 134, 135, 136, 137, 138, 143, 158, 159,
-  168, 169, 170, 171, 177, 194, 195, 196, 203, 212, 226, 240, 257, 258, 259, 261,
-  -- Fest exclusives + newer permanent set ubers
-  269, 271, 272, 304, 305, 306, 316, 318, 322, 338, 351, 355, 359, 360, 361,
-  380, 396, 401, 417, 427, 431, 436, 439, 448, 449, 450, 451, 455, 461, 463, 478,
-  496, 502, 505, 519, 525, 529, 533, 534, 546, 569, 585, 594, 617, 618, 619, 620,
-  625, 631, 632, 633, 634, 641, 642, 647, 649, 655, 660, 668, 674, 690, 692, 698,
-  712, 715, 719, 723, 733, 754, 760, 769, 774, 779, 781, 799, 811, 817
-)
-AND NOT ('UBERFEST' = ANY("banners"));
+-- Step 4: Add UBERFEST banner — exclusives only (units whose home set IS UBERFEST already have it;
+-- this adds it for the "both-fest" exclusives from Gigant Zeus pool that have setName='UBERFEST')
+-- No additional units needed since UBERFEST exclusives already get it from setName in Step 1.
 
--- Step 5: Add EPICFEST membership for all ubers available in EPICFEST (row 1008)
-UPDATE "Unit" SET "banners" = "banners" || ARRAY['EPICFEST']
-WHERE "unitNumber" IN (
-  34, 42, 43, 44, 57, 59, 71, 72, 73, 75, 76, 83, 84, 85, 86, 87,
-  105, 106, 107, 124, 125, 134, 135, 136, 137, 138, 143, 158, 159,
-  168, 169, 170, 171, 177, 194, 195, 196, 203, 212, 226, 240, 257, 258, 259, 261,
-  272, 271, 304, 305, 306, 316, 322, 333, 338, 351, 355, 359, 360, 361,
-  378, 396, 401, 417, 427, 431, 436, 439, 441, 448, 449, 450, 451, 455, 461, 463, 478,
-  496, 502, 505, 519, 525, 533, 534, 543, 546, 569, 594, 609, 617, 618, 619, 620,
-  625, 631, 632, 633, 634, 642, 647, 649, 655, 657, 660, 668, 674, 692, 698, 705,
-  712, 715, 719, 723, 733, 738, 754, 760, 769, 774, 781, 787, 799, 811, 817
-)
-AND NOT ('EPICFEST' = ANY("banners"));
+-- Step 5: Add EPICFEST banner — exclusives only (same logic)
+-- No additional units needed since EPICFEST exclusives already get it from setName in Step 1.
 
 -- Step 6: Add Best of the Best membership for ubers featured in selection festivals (rows 976-977)
 UPDATE "Unit" SET "banners" = "banners" || ARRAY['Best of the Best']
