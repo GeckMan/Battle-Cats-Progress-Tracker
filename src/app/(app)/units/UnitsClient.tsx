@@ -415,6 +415,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   /* Overall stats */
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
+  const hasTrueForm = units.filter((u) => u.formCount >= 3).length;
 
   /* Group units by rarity for the "All" tab sectioned view */
   const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {
@@ -464,7 +465,7 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">True Form</div>
-          <MiniBar value={trueForm} total={units.length} />
+          <MiniBar value={trueForm} total={hasTrueForm} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">Total</div>
