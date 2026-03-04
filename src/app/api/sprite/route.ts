@@ -72,7 +72,8 @@ export async function GET(req: NextRequest) {
         "Cache-Control": "public, max-age=604800, s-maxage=604800, stale-while-revalidate=86400",
       },
     });
-  } catch {
+  } catch (err) {
+    console.error(`[sprite] Failed u=${u} f=${f}:`, err instanceof Error ? err.message : err);
     return new NextResponse(null, { status: 502 });
   }
 }

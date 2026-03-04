@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useState, useCallback, memo } from "react";
 import Link from "next/link";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
@@ -110,7 +110,7 @@ function MiniBar({ value, total }: { value: number; total: number }) {
 
 /* ── Read-only Unit Card ───────────────────────────────────────────────── */
 
-function UnitCard({ unit }: { unit: UnitRow }) {
+const UnitCard = memo(function UnitCard({ unit }: { unit: UnitRow }) {
   const level = unit.formLevel;
   const displayForm = Math.max(0, level - 1);
   const imgUrl = spriteUrl(unit.unitNumber, displayForm, unit.name);
@@ -145,7 +145,7 @@ function UnitCard({ unit }: { unit: UnitRow }) {
       </div>
     </div>
   );
-}
+});
 
 /* ── Rarity Section ─────────────────────────────────────────────────────── */
 

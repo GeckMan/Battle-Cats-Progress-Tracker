@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef } from "react";
+import { useEffect, useState, useCallback, useRef, memo } from "react";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
@@ -127,7 +127,7 @@ function MiniBar({ value, total }: { value: number; total: number }) {
 
 /* ── Single Unit Card ───────────────────────────────────────────────────── */
 
-function UnitCard({
+const UnitCard = memo(function UnitCard({
   unit,
   onUpdate,
   pending,
@@ -210,7 +210,7 @@ function UnitCard({
       </div>
     </button>
   );
-}
+});
 
 /* ── Rarity Section ─────────────────────────────────────────────────────── */
 

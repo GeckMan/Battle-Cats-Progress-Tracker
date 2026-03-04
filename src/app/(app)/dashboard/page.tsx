@@ -117,16 +117,18 @@ export default async function DashboardPage() {
     .sort((a, b) => a.order - b.order);
 
   // ── Units ────────────────────────────────────────────────────────────────
-  const unitTotal = await (prisma as any).unit.count({
-    where: { source: { not: "UNOBTAINABLE" } },
-  });
-  const unitObtained = await (prisma as any).userUnitProgress.count({
-    where: {
-      userId,
-      formLevel: { gte: 1 },
-      unit: { source: { not: "UNOBTAINABLE" } },
-    },
-  });
+  const [unitTotal, unitObtained] = await Promise.all([
+    (prisma as any).unit.count({
+      where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+    }),
+    (prisma as any).userUnitProgress.count({
+      where: {
+        userId,
+        formLevel: { gte: 1 },
+        unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+      },
+    }),
+  ]);
   const unitsOverall = unitTotal === 0 ? 0 : Math.round((unitObtained / unitTotal) * 100);
 
   // ── Overall ──────────────────────────────────────────────────────────────

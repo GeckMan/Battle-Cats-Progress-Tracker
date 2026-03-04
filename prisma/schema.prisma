@@ -256,9 +256,9 @@ model MeowMedal {
   updatedAt       DateTime @updatedAt
 
   earnedBy UserMeowMedal[]
+
+  @@index([category])
 }
-
-
 
 model UserMeowMedal {
   id          String    @id @default(cuid())
@@ -346,4 +346,5 @@ model ChatMessage {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([createdAt])
+  @@index([userId])
 }

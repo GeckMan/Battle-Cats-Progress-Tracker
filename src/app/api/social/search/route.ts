@@ -10,9 +10,9 @@ export async function GET(req: Request) {
   const userId = session.user.id as string;
 
   const { searchParams } = new URL(req.url);
-  const q = (searchParams.get("q") ?? "").trim();
+  const q = (searchParams.get("q") ?? "").trim().slice(0, 100);
 
-  if (!q) return NextResponse.json({ users: [] });
+  if (!q || q.length < 1) return NextResponse.json({ users: [] });
 
   const users = await prisma.user.findMany({
     where: {
