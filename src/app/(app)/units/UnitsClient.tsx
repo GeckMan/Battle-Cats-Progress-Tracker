@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef, memo } from "react";
+import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
@@ -131,10 +132,16 @@ const UnitCard = memo(function UnitCard({
   unit,
   onUpdate,
   pending,
+  selectionMode,
+  selected,
+  onToggleSelect,
 }: {
   unit: UnitRow;
   onUpdate: (id: string, level: number) => void;
   pending: boolean;
+  selectionMode?: boolean;
+  selected?: boolean;
+  onToggleSelect?: (id: string) => void;
 }) {
   const maxLevel = unit.formCount;
   const level = unit.formLevel;
@@ -151,6 +158,10 @@ const UnitCard = memo(function UnitCard({
   }
 
   function handleClick(e: React.MouseEvent) {
+    if (selectionMode) {
+      onToggleSelect?.(unit.id);
+      return;
+    }
     if (e.shiftKey) {
       // Shift+click → jump straight to max form
       if (level < maxLevel) {
@@ -173,19 +184,31 @@ const UnitCard = memo(function UnitCard({
       type="button"
       onClick={handleClick}
       onMouseEnter={preloadSprites}
-      disabled={pending}
-      title={[
-        unit.name,
-        unit.evolvedName ? `→ ${unit.evolvedName}` : null,
-        unit.trueName ? `→ ${unit.trueName}` : null,
-        unit.ultraName ? `→ ${unit.ultraName}` : null,
-        `\nCurrent: ${FORM_LABEL[level]} · Click to cycle · Shift+click for max`,
-      ].filter(Boolean).join(" ")}
+      disabled={pending && !selectionMode}
+      title={selectionMode
+        ? `${unit.name} — click to ${selected ? "deselect" : "select"}`
+        : [
+            unit.name,
+            unit.evolvedName ? `→ ${unit.evolvedName}` : null,
+            unit.trueName ? `→ ${unit.trueName}` : null,
+            unit.ultraName ? `→ ${unit.ultraName}` : null,
+            `\nCurrent: ${FORM_LABEL[level]} · Click to cycle · Shift+click for max`,
+          ].filter(Boolean).join(" ")
+      }
       className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 transition-all
-        ${cardTint(level)}
-        ${pending ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
+        ${selectionMode && selected ? "border-amber-500 bg-amber-950/40 ring-1 ring-amber-500/50" : cardTint(level)}
+        ${pending && !selectionMode ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
       `}
     >
+      {/* Selection checkbox overlay */}
+      {selectionMode && (
+        <div className={`absolute top-1 right-1 w-4 h-4 rounded border text-[10px] flex items-center justify-center
+          ${selected ? "bg-amber-600 border-amber-500 text-white" : "border-gray-600 bg-gray-900"}
+        `}>
+          {selected ? "✓" : ""}
+        </div>
+      )}
+
       {/* Sprite */}
       <div className="w-14 h-14 flex items-center justify-center">
         <img
@@ -220,12 +243,18 @@ function RaritySection({
   onUpdate,
   pendingIds,
   defaultOpen = true,
+  selectionMode,
+  selectedIds,
+  onToggleSelect,
 }: {
   rarity: string;
   units: UnitRow[];
   onUpdate: (id: string, level: number) => void;
   pendingIds: Set<string>;
   defaultOpen?: boolean;
+  selectionMode?: boolean;
+  selectedIds?: Set<string>;
+  onToggleSelect?: (id: string) => void;
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
@@ -261,6 +290,9 @@ function RaritySection({
               unit={unit}
               onUpdate={onUpdate}
               pending={pendingIds.has(unit.id)}
+              selectionMode={selectionMode}
+              selected={selectedIds?.has(unit.id)}
+              onToggleSelect={onToggleSelect}
             />
           ))}
         </div>
@@ -308,11 +340,25 @@ const ALL_KEY = "ALL";
 type CategoryMeta = { key: string; label: string };
 
 export default function UnitsClient({ categories }: { categories: CategoryMeta[] }) {
-  const [activeCategory, setActiveCategory] = useState<string>(ALL_KEY);
-  const [hideCollab, setHideCollab] = useState(false);
-  const [sourceFilter, setSourceFilter] = useState("");
-  const [setFilter, setSetFilter] = useState("");
-  const [collabFilter, setCollabFilter] = useState("");
+  return (
+    <Suspense fallback={<div className="p-4 pt-16 text-sm text-gray-500">Loading units…</div>}>
+      <UnitsClientInner categories={categories} />
+    </Suspense>
+  );
+}
+
+function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  /* ── Initialise filter state from URL params ── */
+  const [activeCategory, setActiveCategory] = useState<string>(searchParams.get("cat") || ALL_KEY);
+  const [hideCollab, setHideCollab] = useState(searchParams.get("hideCollab") === "1");
+  const [sourceFilter, setSourceFilter] = useState(searchParams.get("source") || "");
+  const [setFilter, setSetFilter] = useState(searchParams.get("set") || "");
+  const [collabFilter, setCollabFilter] = useState(searchParams.get("collab") || "");
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
@@ -320,7 +366,27 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pendingIds, setPendingIds] = useState<Set<string>>(new Set());
-  const [searchQuery, setSearchQuery] = useState("");
+
+  /* ── Selection mode state ── */
+  const [selectionMode, setSelectionMode] = useState(false);
+  const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
+  const [bulkSaving, setBulkSaving] = useState(false);
+
+  /* ── Sync filter state → URL ── */
+  const initialMount = useRef(true);
+  useEffect(() => {
+    // Skip the first render to avoid replacing the URL we just read from
+    if (initialMount.current) { initialMount.current = false; return; }
+    const p = new URLSearchParams();
+    if (activeCategory !== ALL_KEY) p.set("cat", activeCategory);
+    if (hideCollab) p.set("hideCollab", "1");
+    if (sourceFilter) p.set("source", sourceFilter);
+    if (setFilter) p.set("set", setFilter);
+    if (collabFilter) p.set("collab", collabFilter);
+    if (searchQuery) p.set("q", searchQuery);
+    const qs = p.toString();
+    router.replace(qs ? `?${qs}` : "/units", { scroll: false });
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, router]);
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
@@ -374,6 +440,55 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
     setCollabFilter("");
     setHideCollab(false);
     setSearchQuery("");
+    exitSelectionMode();
+  }
+
+  /* ── Selection mode helpers ── */
+  function exitSelectionMode() {
+    setSelectionMode(false);
+    setSelectedIds(new Set());
+  }
+
+  function toggleSelect(id: string) {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  function selectAllVisible() {
+    setSelectedIds(new Set(filtered.map((u) => u.id)));
+  }
+
+  async function handleBulkAction(formLevel: number) {
+    if (selectedIds.size === 0) return;
+    setBulkSaving(true);
+    setError(null);
+    // Optimistic update
+    setUnits((prev) =>
+      prev.map((u) => (selectedIds.has(u.id) ? { ...u, formLevel: Math.min(formLevel, u.formCount) } : u))
+    );
+    try {
+      const updates = [...selectedIds].map((unitId) => {
+        const unit = units.find((u) => u.id === unitId);
+        return { unitId, formLevel: Math.min(formLevel, unit?.formCount ?? formLevel) };
+      });
+      const res = await fetch("/api/units/bulk", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ updates }),
+      });
+      if (!res.ok) throw new Error("Bulk update failed");
+      exitSelectionMode();
+    } catch {
+      // Revert on failure
+      await fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
+      setError("Bulk update failed. Please try again.");
+    } finally {
+      setBulkSaving(false);
+    }
   }
 
   async function handleUpdate(id: string, formLevel: number) {
@@ -537,6 +652,19 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
           <span>{hideCollab ? "✓" : ""} Hide Collab</span>
         </button>
 
+        {/* Select mode toggle */}
+        <button
+          type="button"
+          onClick={() => selectionMode ? exitSelectionMode() : setSelectionMode(true)}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
+            selectionMode
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+        >
+          <span>{selectionMode ? "✓" : ""} Select</span>
+        </button>
+
         {/* Clear all filters */}
         {hasActiveFilters && (
           <button
@@ -552,6 +680,43 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
           {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
         </span>
       </div>
+
+      {/* Bulk action bar — shown in selection mode */}
+      {selectionMode && (
+        <div className="flex items-center gap-2 flex-wrap rounded-lg border border-amber-800 bg-amber-950/20 px-4 py-2.5">
+          <span className="text-xs text-amber-300 font-medium mr-1">
+            {selectedIds.size} selected
+          </span>
+          <button type="button" onClick={selectAllVisible} className="text-xs text-gray-400 hover:text-gray-200 px-2 py-1 border border-gray-700 rounded">
+            Select All
+          </button>
+          <button type="button" onClick={() => setSelectedIds(new Set())} className="text-xs text-gray-400 hover:text-gray-200 px-2 py-1 border border-gray-700 rounded">
+            Deselect All
+          </button>
+          <span className="w-px h-4 bg-gray-700 mx-1" />
+          <span className="text-xs text-gray-500">Set to:</span>
+          {[
+            { level: 1, label: "F1", color: "border-yellow-700/60 text-yellow-300 hover:bg-yellow-950/50" },
+            { level: 2, label: "F2", color: "border-red-700/60 text-red-300 hover:bg-red-950/50" },
+            { level: 3, label: "TF", color: "border-gray-400 text-gray-100 hover:bg-gray-800" },
+            { level: 4, label: "UF", color: "border-purple-500/60 text-purple-200 hover:bg-purple-950/50" },
+            { level: 0, label: "Clear", color: "border-gray-700 text-gray-400 hover:bg-gray-900" },
+          ].map((btn) => (
+            <button
+              key={btn.level}
+              type="button"
+              onClick={() => handleBulkAction(btn.level)}
+              disabled={selectedIds.size === 0 || bulkSaving}
+              className={`px-2 py-1 text-xs font-bold rounded border transition-colors disabled:opacity-40 ${btn.color}`}
+            >
+              {btn.label}
+            </button>
+          ))}
+          <button type="button" onClick={exitSelectionMode} className="text-xs text-gray-500 hover:text-gray-300 ml-auto">
+            Cancel
+          </button>
+        </div>
+      )}
 
       {/* Form legend */}
       <div className="flex gap-3 flex-wrap text-xs">
@@ -597,6 +762,9 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
               units={grouped[rarity]}
               onUpdate={handleUpdate}
               pendingIds={pendingIds}
+              selectionMode={selectionMode}
+              selectedIds={selectedIds}
+              onToggleSelect={toggleSelect}
             />
           ))}
         </div>
@@ -609,6 +777,9 @@ export default function UnitsClient({ categories }: { categories: CategoryMeta[]
               unit={unit}
               onUpdate={handleUpdate}
               pending={pendingIds.has(unit.id)}
+              selectionMode={selectionMode}
+              selected={selectedIds.has(unit.id)}
+              onToggleSelect={toggleSelect}
             />
           ))}
         </div>

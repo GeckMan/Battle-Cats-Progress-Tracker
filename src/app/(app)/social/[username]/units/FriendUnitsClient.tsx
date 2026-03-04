@@ -1,6 +1,7 @@
 "use client";
 
-import { useEffect, useState, useCallback, memo } from "react";
+import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react";
+import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
@@ -229,7 +230,19 @@ function FilterSelect({
 
 const ALL_KEY = "ALL";
 
-export default function FriendUnitsClient({
+export default function FriendUnitsClient(props: {
+  userId: string;
+  displayName: string;
+  username: string;
+}) {
+  return (
+    <Suspense fallback={<div className="p-4 pt-16 text-sm text-gray-500">Loading units…</div>}>
+      <FriendUnitsInner {...props} />
+    </Suspense>
+  );
+}
+
+function FriendUnitsInner({
   userId,
   displayName,
   username,
@@ -238,20 +251,40 @@ export default function FriendUnitsClient({
   displayName: string;
   username: string;
 }) {
-  const [activeCategory, setActiveCategory] = useState<string>(ALL_KEY);
-  const [hideCollab, setHideCollab] = useState(false);
-  const [hideUnowned, setHideUnowned] = useState(true);
-  const [sourceFilter, setSourceFilter] = useState("");
-  const [setFilter, setSetFilter] = useState("");
-  const [collabFilter, setCollabFilter] = useState("");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+
+  const [activeCategory, setActiveCategory] = useState<string>(searchParams.get("cat") || ALL_KEY);
+  const [hideCollab, setHideCollab] = useState(searchParams.get("hideCollab") === "1");
+  const [hideUnowned, setHideUnowned] = useState(searchParams.get("hideUnowned") !== "0");
+  const [sourceFilter, setSourceFilter] = useState(searchParams.get("source") || "");
+  const [setFilter, setSetFilter] = useState(searchParams.get("set") || "");
+  const [collabFilter, setCollabFilter] = useState(searchParams.get("collab") || "");
+  const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
   const [availableCollabSets, setAvailableCollabSets] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [searchQuery, setSearchQuery] = useState("");
   const [categories, setCategories] = useState<{ key: string; label: string }[]>([]);
+
+  /* ── Sync filter state → URL ── */
+  const initialMount = useRef(true);
+  useEffect(() => {
+    if (initialMount.current) { initialMount.current = false; return; }
+    const p = new URLSearchParams();
+    if (activeCategory !== ALL_KEY) p.set("cat", activeCategory);
+    if (hideCollab) p.set("hideCollab", "1");
+    if (!hideUnowned) p.set("hideUnowned", "0");
+    if (sourceFilter) p.set("source", sourceFilter);
+    if (setFilter) p.set("set", setFilter);
+    if (collabFilter) p.set("collab", collabFilter);
+    if (searchQuery) p.set("q", searchQuery);
+    const qs = p.toString();
+    router.replace(qs ? `?${qs}` : `/social/${encodeURIComponent(username)}/units`, { scroll: false });
+  }, [activeCategory, hideCollab, hideUnowned, sourceFilter, setFilter, collabFilter, searchQuery, router, username]);
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
