@@ -63,7 +63,7 @@ export async function GET(req: Request) {
       { source: { not: "UNOBTAINABLE" } },
     ];
   }
-  if (setName) where.setName = setName;
+  if (setName) where.banners = { has: setName };
 
   // @ts-ignore
   const units: any[] = await (prisma as any).unit.findMany({
@@ -118,9 +118,10 @@ export async function GET(req: Request) {
   const allSources: any[] = await (prisma as any).$queryRaw`
     SELECT DISTINCT "source" FROM "Unit" WHERE "source" IS NOT NULL ORDER BY "source"
   `;
+  // Get all unique banner names from the banners array column
   // @ts-ignore
   const allSets: any[] = await (prisma as any).$queryRaw`
-    SELECT DISTINCT "setName" FROM "Unit" WHERE "setName" IS NOT NULL ORDER BY "setName"
+    SELECT DISTINCT unnest("banners") AS "setName" FROM "Unit" ORDER BY "setName"
   `;
 
   return NextResponse.json({

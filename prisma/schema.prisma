@@ -292,6 +292,7 @@ model Unit {
   isCollab    Boolean      @default(false) // true = collab/serial-code/event-capsule unit
   source      String?                // unlock method: RARE_CAPSULE, STAGE_DROP, EVENT_CAPSULE, etc.
   setName     String?                // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
+  banners     String[]  @default([]) // all banners this unit can be pulled from (for multi-banner filtering)
 
   progress UserUnitProgress[]
 
