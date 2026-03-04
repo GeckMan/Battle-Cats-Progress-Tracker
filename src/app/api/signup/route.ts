@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import bcrypt from "bcrypt";
 import { prisma } from "@/lib/prisma";
+import { checkRateLimit, getClientIp, rateLimitResponse } from "@/lib/rate-limit";
 
 function normalizeUsername(raw: string) {
   return raw.trim().toLowerCase();
@@ -8,6 +9,11 @@ function normalizeUsername(raw: string) {
 
 export async function POST(req: Request) {
   try {
+    // Rate limit: 5 signups per hour per IP
+    const ip = getClientIp(req);
+    const rl = await checkRateLimit(`signup:${ip}`, 5, 60 * 60 * 1000);
+    if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
+
     const body = await req.json();
 
     const usernameRaw = String(body.username ?? "");

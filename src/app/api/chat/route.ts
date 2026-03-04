@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 const MAX_MESSAGE_LENGTH = 500;
 
@@ -62,6 +63,10 @@ export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const userId = session.user.id as string;
+
+  // Rate limit: 5 messages per 30 seconds per user
+  const rl = await checkRateLimit(`chat:${userId}`, 5, 30 * 1000);
+  if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
 
   // Check if user is muted
   // @ts-ignore – chatMutedUntil added in new migration

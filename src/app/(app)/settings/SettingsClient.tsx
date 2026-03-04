@@ -24,6 +24,7 @@ export default function SettingsClient(props: Props) {
       <PrivacyPanel
         progressVisibility={props.progressVisibility}
       />
+      <DataBackupPanel />
     </div>
   );
 }
@@ -225,6 +226,157 @@ function PrivacyPanel({
       </Field>
 
       <SaveRow saving={saving} status={status} onSave={save} />
+    </Panel>
+  );
+}
+
+/* ─── Data Backup ─────────────────────────────────────────────────────────── */
+
+function DataBackupPanel() {
+  const [exporting, setExporting] = useState(false);
+  const [importing, setImporting] = useState(false);
+  const [status, setStatus] = useState<{ ok: boolean; msg: string } | null>(null);
+  const [confirmImport, setConfirmImport] = useState<{ file: File; summary: string } | null>(null);
+
+  async function handleExport() {
+    setExporting(true);
+    setStatus(null);
+    try {
+      const res = await fetch("/api/export");
+      if (!res.ok) throw new Error("Export failed");
+      const blob = await res.blob();
+      const disposition = res.headers.get("Content-Disposition") ?? "";
+      const match = disposition.match(/filename="(.+?)"/);
+      const filename = match?.[1] ?? "battlecats-progress.json";
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      a.click();
+      URL.revokeObjectURL(url);
+      setStatus({ ok: true, msg: "Export downloaded!" });
+    } catch (e) {
+      setStatus({ ok: false, msg: e instanceof Error ? e.message : "Export failed" });
+    } finally {
+      setExporting(false);
+    }
+  }
+
+  function handleFileSelect(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0];
+    if (!file) return;
+    setStatus(null);
+
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = JSON.parse(reader.result as string);
+        if (data.version !== 1) {
+          setStatus({ ok: false, msg: "Unsupported file format." });
+          return;
+        }
+        const counts = [
+          data.story?.length && `${data.story.length} story chapters`,
+          data.legend?.length && `${data.legend.length} legend stages`,
+          data.units?.length && `${data.units.length} units`,
+          data.medals?.length && `${data.medals.length} medals`,
+          data.milestones?.length && `${data.milestones.length} milestones`,
+          data.catclaw && "catclaw progress",
+        ].filter(Boolean).join(", ");
+        setConfirmImport({ file, summary: counts || "No progress data found" });
+      } catch {
+        setStatus({ ok: false, msg: "Invalid JSON file." });
+      }
+    };
+    reader.readAsText(file);
+    // Reset the input so the same file can be re-selected
+    e.target.value = "";
+  }
+
+  async function executeImport() {
+    if (!confirmImport) return;
+    setImporting(true);
+    setStatus(null);
+    setConfirmImport(null);
+    try {
+      const text = await confirmImport.file.text();
+      const res = await fetch("/api/import", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: text,
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error ?? "Import failed");
+      const msg = data.warnings?.length
+        ? `Imported! (${data.warnings.length} warnings — some items may have been skipped)`
+        : "All progress imported successfully!";
+      setStatus({ ok: true, msg });
+    } catch (e) {
+      setStatus({ ok: false, msg: e instanceof Error ? e.message : "Import failed" });
+    } finally {
+      setImporting(false);
+    }
+  }
+
+  return (
+    <Panel title="Data Backup">
+      <p className="text-sm text-gray-400">
+        Export your progress as a JSON file for backup, or import a previously exported file to restore your data.
+      </p>
+
+      <div className="flex flex-wrap gap-3 pt-2">
+        <button
+          type="button"
+          onClick={handleExport}
+          disabled={exporting}
+          className="px-4 py-2 rounded border border-amber-700 bg-transparent hover:bg-amber-900 text-amber-300 text-sm disabled:opacity-50 transition-colors"
+        >
+          {exporting ? "Exporting..." : "Export Progress"}
+        </button>
+
+        <label className="px-4 py-2 rounded border border-gray-600 bg-transparent hover:bg-gray-900 text-gray-300 text-sm cursor-pointer transition-colors">
+          {importing ? "Importing..." : "Import Progress"}
+          <input
+            type="file"
+            accept=".json"
+            onChange={handleFileSelect}
+            className="hidden"
+            disabled={importing}
+          />
+        </label>
+      </div>
+
+      {/* Confirmation dialog */}
+      {confirmImport && (
+        <div className="border border-amber-800 rounded-lg p-4 bg-amber-950/30 space-y-3">
+          <p className="text-sm text-amber-200">
+            This will overwrite your current progress with the imported data:
+          </p>
+          <p className="text-xs text-gray-400">{confirmImport.summary}</p>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={executeImport}
+              className="px-3 py-1.5 rounded border border-amber-600 bg-amber-900/50 hover:bg-amber-800 text-amber-200 text-sm transition-colors"
+            >
+              Confirm Import
+            </button>
+            <button
+              type="button"
+              onClick={() => setConfirmImport(null)}
+              className="px-3 py-1.5 rounded border border-gray-700 text-gray-400 text-sm hover:text-gray-200 transition-colors"
+            >
+              Cancel
+            </button>
+          </div>
+        </div>
+      )}
+
+      {status && (
+        <p className={`text-sm ${status.ok ? "text-amber-400" : "text-red-400"}`}>
+          {status.msg}
+        </p>
+      )}
     </Panel>
   );
 }
