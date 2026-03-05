@@ -6,6 +6,10 @@ import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
+type EvolveItem = { id: number; name: string; count: number };
+type EvolveData = { xp: number; items: EvolveItem[] };
+type EvolutionData = { tf?: EvolveData; uf?: EvolveData } | null;
+
 type UnitRow = {
   id: string;
   unitNumber: number;
@@ -19,6 +23,7 @@ type UnitRow = {
   isCollab: boolean;
   source: string | null;
   setName: string | null;
+  evolutionData: EvolutionData;
   formLevel: number; // 0–4
 };
 
@@ -126,6 +131,127 @@ function MiniBar({ value, total }: { value: number; total: number }) {
   );
 }
 
+/* ── Wiki URL helper ───────────────────────────────────────────────────── */
+
+function wikiUrl(unitName: string) {
+  // Miraheze wiki page naming: spaces → underscores, most punctuation kept
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
+  return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(Cat)`;
+}
+
+/* ── Unit Detail Panel ─────────────────────────────────────────────────── */
+
+function UnitDetailPanel({
+  unit,
+  onClose,
+}: {
+  unit: UnitRow;
+  onClose: () => void;
+}) {
+  const evo = unit.evolutionData;
+
+  return (
+    <>
+      {/* Backdrop */}
+      <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose} />
+      {/* Panel */}
+      <div className="fixed right-0 top-0 bottom-0 w-[380px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-50 overflow-y-auto p-5 space-y-5 animate-slide-in">
+        {/* Close */}
+        <button type="button" onClick={onClose} className="absolute top-3 right-3 text-gray-500 hover:text-gray-300 text-lg">✕</button>
+
+        {/* Header with sprite */}
+        <div className="flex items-center gap-4">
+          <img
+            src={spriteUrl(unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
+            alt={unit.name}
+            width={72}
+            height={72}
+            className={`w-18 h-18 object-contain pixelated ${unit.formLevel === 0 ? "opacity-40 grayscale" : ""}`}
+          />
+          <div>
+            <h2 className="text-lg font-semibold text-gray-100">{unit.name}</h2>
+            <p className="text-xs text-gray-500">#{unit.unitNumber} · {UNIT_CATEGORY_META[unit.category]?.label ?? unit.category}</p>
+          </div>
+        </div>
+
+        {/* Form names */}
+        <div className="space-y-1">
+          <div className="text-xs text-gray-500 uppercase tracking-wide">Forms</div>
+          <div className="flex flex-col gap-0.5 text-sm">
+            <span className="text-gray-300">F1: {unit.name}</span>
+            {unit.evolvedName && <span className="text-gray-300">F2: {unit.evolvedName}</span>}
+            {unit.trueName && <span className="text-gray-300">TF: {unit.trueName}</span>}
+            {unit.ultraName && <span className="text-gray-300">UF: {unit.ultraName}</span>}
+          </div>
+        </div>
+
+        {/* Source / How to obtain */}
+        <div className="space-y-1">
+          <div className="text-xs text-gray-500 uppercase tracking-wide">How to Obtain</div>
+          <p className="text-sm text-gray-300">{SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"}</p>
+          {unit.setName && <p className="text-xs text-gray-500">{unit.setName}</p>}
+        </div>
+
+        {/* True Form evolution requirements */}
+        {evo?.tf && (
+          <div className="space-y-2">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">True Form Evolution</div>
+            <div className="rounded border border-gray-800 bg-gray-900/60 p-3 space-y-2">
+              <div className="text-sm text-amber-300 font-medium">{evo.tf.xp.toLocaleString()} XP</div>
+              <div className="flex flex-wrap gap-2">
+                {evo.tf.items.map((item) => (
+                  <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-gray-700 bg-gray-800 text-xs text-gray-300">
+                    {item.name} <span className="text-amber-400 font-bold">×{item.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* Ultra Form evolution requirements */}
+        {evo?.uf && (
+          <div className="space-y-2">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">Ultra Form Evolution</div>
+            <div className="rounded border border-purple-900/40 bg-purple-950/20 p-3 space-y-2">
+              <div className="text-sm text-purple-300 font-medium">{evo.uf.xp.toLocaleString()} XP</div>
+              <div className="flex flex-wrap gap-2">
+                {evo.uf.items.map((item) => (
+                  <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-purple-800/40 bg-purple-900/30 text-xs text-gray-300">
+                    {item.name} <span className="text-purple-300 font-bold">×{item.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+
+        {/* No evolution data */}
+        {!evo?.tf && !evo?.uf && (
+          <div className="space-y-1">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">Evolution</div>
+            <p className="text-sm text-gray-500">
+              {unit.formCount <= 2
+                ? "This unit does not have a True Form."
+                : "Evolution data not available for this unit."}
+            </p>
+          </div>
+        )}
+
+        {/* Wiki link */}
+        <a
+          href={wikiUrl(unit.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-2 rounded border border-gray-700 bg-gray-900 text-sm text-amber-400 hover:text-amber-300 hover:border-amber-800 transition-colors"
+        >
+          View on Wiki →
+        </a>
+      </div>
+    </>
+  );
+}
+
 /* ── Single Unit Card ───────────────────────────────────────────────────── */
 
 const UnitCard = memo(function UnitCard({
@@ -135,6 +261,8 @@ const UnitCard = memo(function UnitCard({
   selectionMode,
   selected,
   onToggleSelect,
+  onInfo,
+  focused,
 }: {
   unit: UnitRow;
   onUpdate: (id: string, level: number) => void;
@@ -142,6 +270,8 @@ const UnitCard = memo(function UnitCard({
   selectionMode?: boolean;
   selected?: boolean;
   onToggleSelect?: (id: string) => void;
+  onInfo?: (unit: UnitRow) => void;
+  focused?: boolean;
 }) {
   const maxLevel = unit.formCount;
   const level = unit.formLevel;
@@ -195,9 +325,10 @@ const UnitCard = memo(function UnitCard({
             `\nCurrent: ${FORM_LABEL[level]} · Click to cycle · Shift+click for max`,
           ].filter(Boolean).join(" ")
       }
-      className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 transition-all
+      className={`group relative flex flex-col items-center rounded-lg border p-2 gap-1 transition-all
         ${selectionMode && selected ? "border-amber-500 bg-amber-950/40 ring-1 ring-amber-500/50" : cardTint(level)}
         ${pending && !selectionMode ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
+        ${focused ? "ring-2 ring-amber-500/70" : ""}
       `}
     >
       {/* Selection checkbox overlay */}
@@ -206,6 +337,17 @@ const UnitCard = memo(function UnitCard({
           ${selected ? "bg-amber-600 border-amber-500 text-white" : "border-gray-600 bg-gray-900"}
         `}>
           {selected ? "✓" : ""}
+        </div>
+      )}
+
+      {/* Info icon — visible on hover (top-left) */}
+      {!selectionMode && onInfo && (
+        <div
+          className="absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
+          onClick={(e) => { e.stopPropagation(); onInfo(unit); }}
+          title="View details"
+        >
+          i
         </div>
       )}
 
@@ -246,6 +388,7 @@ function RaritySection({
   selectionMode,
   selectedIds,
   onToggleSelect,
+  onInfo,
 }: {
   rarity: string;
   units: UnitRow[];
@@ -255,6 +398,7 @@ function RaritySection({
   selectionMode?: boolean;
   selectedIds?: Set<string>;
   onToggleSelect?: (id: string) => void;
+  onInfo?: (unit: UnitRow) => void;
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
@@ -293,6 +437,7 @@ function RaritySection({
               selectionMode={selectionMode}
               selected={selectedIds?.has(unit.id)}
               onToggleSelect={onToggleSelect}
+              onInfo={onInfo}
             />
           ))}
         </div>
@@ -371,6 +516,15 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [selectionMode, setSelectionMode] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [bulkSaving, setBulkSaving] = useState(false);
+
+  /* ── Detail panel state ── */
+  const [detailUnit, setDetailUnit] = useState<UnitRow | null>(null);
+  const openDetail = useCallback((unit: UnitRow) => setDetailUnit(unit), []);
+
+  /* ── Keyboard navigation ── */
+  const [focusedIdx, setFocusedIdx] = useState(-1);
+  const gridRef = useRef<HTMLDivElement>(null);
+  const filteredRef = useRef<UnitRow[]>([]);
 
   /* ── Sync filter state → URL ── */
   const initialMount = useRef(true);
@@ -527,6 +681,78 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       })
     : units;
 
+  // Keep ref in sync for keyboard handler
+  filteredRef.current = filtered;
+
+  // Compute columns from the grid container width
+  const getGridCols = useCallback(() => {
+    const el = gridRef.current;
+    if (!el) return 1;
+    const style = getComputedStyle(el);
+    return style.gridTemplateColumns.split(" ").length || 1;
+  }, []);
+
+  useEffect(() => {
+    function handleKey(e: KeyboardEvent) {
+      const tag = (e.target as HTMLElement)?.tagName;
+      if (tag === "INPUT" || tag === "SELECT" || tag === "TEXTAREA") return;
+
+      if (e.key === "Escape") {
+        if (detailUnit) { setDetailUnit(null); e.preventDefault(); return; }
+        if (selectionMode) { exitSelectionMode(); e.preventDefault(); return; }
+        if (focusedIdx >= 0) { setFocusedIdx(-1); e.preventDefault(); return; }
+        return;
+      }
+
+      const list = filteredRef.current;
+      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
+        e.preventDefault();
+        if (list.length === 0) return;
+        const cols = getGridCols();
+        setFocusedIdx((prev) => {
+          if (prev < 0) return 0;
+          switch (e.key) {
+            case "ArrowRight": return Math.min(prev + 1, list.length - 1);
+            case "ArrowLeft": return Math.max(prev - 1, 0);
+            case "ArrowDown": return Math.min(prev + cols, list.length - 1);
+            case "ArrowUp": return Math.max(prev - cols, 0);
+            default: return prev;
+          }
+        });
+        return;
+      }
+
+      if (focusedIdx < 0 || focusedIdx >= list.length) return;
+      const unit = list[focusedIdx];
+
+      if (/^[0-4]$/.test(e.key)) {
+        const level = Number(e.key);
+        if (level <= unit.formCount) handleUpdate(unit.id, level);
+        return;
+      }
+      if (e.key === "i" || e.key === "I") { setDetailUnit(unit); return; }
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        if (selectionMode) { toggleSelect(unit.id); }
+        else { handleUpdate(unit.id, (unit.formLevel + 1) % (unit.formCount + 1)); }
+        return;
+      }
+    }
+    window.addEventListener("keydown", handleKey);
+    return () => window.removeEventListener("keydown", handleKey);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [focusedIdx, detailUnit, selectionMode, getGridCols]);
+
+  // Reset focus when filters change
+  useEffect(() => { setFocusedIdx(-1); }, [activeCategory, sourceFilter, setFilter, collabFilter, searchQuery, hideCollab]);
+
+  // Scroll focused card into view
+  useEffect(() => {
+    if (focusedIdx < 0) return;
+    const el = gridRef.current?.children[focusedIdx] as HTMLElement | undefined;
+    el?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [focusedIdx]);
+
   /* Overall stats */
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
@@ -551,7 +777,9 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         <p className="text-sm text-gray-500 mt-0.5">
           Track each cat's form level — click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
-        <p className="text-xs text-gray-600 mt-0.5">Unit data current to game version 15.1.1</p>
+        <p className="text-xs text-gray-600 mt-0.5">
+          Unit data current to game version 15.1.1 · <span className="text-gray-700">Arrow keys to navigate, 0-4 to set form, i for info</span>
+        </p>
       </div>
 
       {/* Category tabs */}
@@ -765,13 +993,14 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
               selectionMode={selectionMode}
               selectedIds={selectedIds}
               onToggleSelect={toggleSelect}
+              onInfo={openDetail}
             />
           ))}
         </div>
       ) : (
         /* Single-rarity tab or search results: flat grid */
-        <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
-          {filtered.map((unit) => (
+        <div ref={gridRef} className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
+          {filtered.map((unit, idx) => (
             <UnitCard
               key={unit.id}
               unit={unit}
@@ -780,9 +1009,16 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
               selectionMode={selectionMode}
               selected={selectedIds.has(unit.id)}
               onToggleSelect={toggleSelect}
+              onInfo={openDetail}
+              focused={focusedIdx === idx}
             />
           ))}
         </div>
+      )}
+
+      {/* Detail panel */}
+      {detailUnit && (
+        <UnitDetailPanel unit={detailUnit} onClose={() => setDetailUnit(null)} />
       )}
     </div>
   );

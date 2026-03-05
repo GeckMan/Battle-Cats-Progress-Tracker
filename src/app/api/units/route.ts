@@ -82,6 +82,7 @@ export async function GET(req: Request) {
       isCollab: true,
       source: true,
       setName: true,
+      evolutionData: true,
     },
   });
 
@@ -110,6 +111,7 @@ export async function GET(req: Request) {
     isCollab: u.isCollab,
     source: u.source,
     setName: u.setName,
+    evolutionData: u.evolutionData ?? null,
     formLevel: progressMap.get(u.id) ?? 0,
   }));
 

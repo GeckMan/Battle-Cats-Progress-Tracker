@@ -78,6 +78,26 @@ export type MeowMedal = $Result.DefaultSelection<Prisma.$MeowMedalPayload>
  * 
  */
 export type UserMeowMedal = $Result.DefaultSelection<Prisma.$UserMeowMedalPayload>
+/**
+ * Model Unit
+ * 
+ */
+export type Unit = $Result.DefaultSelection<Prisma.$UnitPayload>
+/**
+ * Model UserUnitProgress
+ * 
+ */
+export type UserUnitProgress = $Result.DefaultSelection<Prisma.$UserUnitProgressPayload>
+/**
+ * Model Activity
+ * 
+ */
+export type Activity = $Result.DefaultSelection<Prisma.$ActivityPayload>
+/**
+ * Model ChatMessage
+ * 
+ */
+export type ChatMessage = $Result.DefaultSelection<Prisma.$ChatMessagePayload>
 
 /**
  * Enums
@@ -138,6 +158,18 @@ export const MilestoneCategory: {
 
 export type MilestoneCategory = (typeof MilestoneCategory)[keyof typeof MilestoneCategory]
 
+
+export const UnitCategory: {
+  NORMAL: 'NORMAL',
+  SPECIAL: 'SPECIAL',
+  RARE: 'RARE',
+  SUPER_RARE: 'SUPER_RARE',
+  UBER_RARE: 'UBER_RARE',
+  LEGEND_RARE: 'LEGEND_RARE'
+};
+
+export type UnitCategory = (typeof UnitCategory)[keyof typeof UnitCategory]
+
 }
 
 export type Visibility = $Enums.Visibility
@@ -163,6 +195,10 @@ export const LegendProgressStatus: typeof $Enums.LegendProgressStatus
 export type MilestoneCategory = $Enums.MilestoneCategory
 
 export const MilestoneCategory: typeof $Enums.MilestoneCategory
+
+export type UnitCategory = $Enums.UnitCategory
+
+export const UnitCategory: typeof $Enums.UnitCategory
 
 /**
  * ##  Prisma Client ʲˢ
@@ -410,6 +446,46 @@ export class PrismaClient<
     * ```
     */
   get userMeowMedal(): Prisma.UserMeowMedalDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.unit`: Exposes CRUD operations for the **Unit** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Units
+    * const units = await prisma.unit.findMany()
+    * ```
+    */
+  get unit(): Prisma.UnitDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.userUnitProgress`: Exposes CRUD operations for the **UserUnitProgress** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more UserUnitProgresses
+    * const userUnitProgresses = await prisma.userUnitProgress.findMany()
+    * ```
+    */
+  get userUnitProgress(): Prisma.UserUnitProgressDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.activity`: Exposes CRUD operations for the **Activity** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more Activities
+    * const activities = await prisma.activity.findMany()
+    * ```
+    */
+  get activity(): Prisma.ActivityDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.chatMessage`: Exposes CRUD operations for the **ChatMessage** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more ChatMessages
+    * const chatMessages = await prisma.chatMessage.findMany()
+    * ```
+    */
+  get chatMessage(): Prisma.ChatMessageDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -856,7 +932,11 @@ export namespace Prisma {
     UserMilestoneProgress: 'UserMilestoneProgress',
     UserCatclawProgress: 'UserCatclawProgress',
     MeowMedal: 'MeowMedal',
-    UserMeowMedal: 'UserMeowMedal'
+    UserMeowMedal: 'UserMeowMedal',
+    Unit: 'Unit',
+    UserUnitProgress: 'UserUnitProgress',
+    Activity: 'Activity',
+    ChatMessage: 'ChatMessage'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -872,7 +952,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "user" | "privacySettings" | "friendship" | "storyChapter" | "userStoryProgress" | "legendSaga" | "legendSubchapter" | "userLegendProgress" | "milestone" | "userMilestoneProgress" | "userCatclawProgress" | "meowMedal" | "userMeowMedal"
+      modelProps: "user" | "privacySettings" | "friendship" | "storyChapter" | "userStoryProgress" | "legendSaga" | "legendSubchapter" | "userLegendProgress" | "milestone" | "userMilestoneProgress" | "userCatclawProgress" | "meowMedal" | "userMeowMedal" | "unit" | "userUnitProgress" | "activity" | "chatMessage"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -1838,6 +1918,302 @@ export namespace Prisma {
           }
         }
       }
+      Unit: {
+        payload: Prisma.$UnitPayload<ExtArgs>
+        fields: Prisma.UnitFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.UnitFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.UnitFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          findFirst: {
+            args: Prisma.UnitFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.UnitFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          findMany: {
+            args: Prisma.UnitFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>[]
+          }
+          create: {
+            args: Prisma.UnitCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          createMany: {
+            args: Prisma.UnitCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.UnitCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>[]
+          }
+          delete: {
+            args: Prisma.UnitDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          update: {
+            args: Prisma.UnitUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          deleteMany: {
+            args: Prisma.UnitDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.UnitUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.UnitUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>[]
+          }
+          upsert: {
+            args: Prisma.UnitUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UnitPayload>
+          }
+          aggregate: {
+            args: Prisma.UnitAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateUnit>
+          }
+          groupBy: {
+            args: Prisma.UnitGroupByArgs<ExtArgs>
+            result: $Utils.Optional<UnitGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.UnitCountArgs<ExtArgs>
+            result: $Utils.Optional<UnitCountAggregateOutputType> | number
+          }
+        }
+      }
+      UserUnitProgress: {
+        payload: Prisma.$UserUnitProgressPayload<ExtArgs>
+        fields: Prisma.UserUnitProgressFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.UserUnitProgressFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.UserUnitProgressFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          findFirst: {
+            args: Prisma.UserUnitProgressFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.UserUnitProgressFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          findMany: {
+            args: Prisma.UserUnitProgressFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>[]
+          }
+          create: {
+            args: Prisma.UserUnitProgressCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          createMany: {
+            args: Prisma.UserUnitProgressCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.UserUnitProgressCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>[]
+          }
+          delete: {
+            args: Prisma.UserUnitProgressDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          update: {
+            args: Prisma.UserUnitProgressUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          deleteMany: {
+            args: Prisma.UserUnitProgressDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.UserUnitProgressUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.UserUnitProgressUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>[]
+          }
+          upsert: {
+            args: Prisma.UserUnitProgressUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$UserUnitProgressPayload>
+          }
+          aggregate: {
+            args: Prisma.UserUnitProgressAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateUserUnitProgress>
+          }
+          groupBy: {
+            args: Prisma.UserUnitProgressGroupByArgs<ExtArgs>
+            result: $Utils.Optional<UserUnitProgressGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.UserUnitProgressCountArgs<ExtArgs>
+            result: $Utils.Optional<UserUnitProgressCountAggregateOutputType> | number
+          }
+        }
+      }
+      Activity: {
+        payload: Prisma.$ActivityPayload<ExtArgs>
+        fields: Prisma.ActivityFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.ActivityFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.ActivityFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          findFirst: {
+            args: Prisma.ActivityFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.ActivityFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          findMany: {
+            args: Prisma.ActivityFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>[]
+          }
+          create: {
+            args: Prisma.ActivityCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          createMany: {
+            args: Prisma.ActivityCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.ActivityCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>[]
+          }
+          delete: {
+            args: Prisma.ActivityDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          update: {
+            args: Prisma.ActivityUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          deleteMany: {
+            args: Prisma.ActivityDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.ActivityUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.ActivityUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>[]
+          }
+          upsert: {
+            args: Prisma.ActivityUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ActivityPayload>
+          }
+          aggregate: {
+            args: Prisma.ActivityAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateActivity>
+          }
+          groupBy: {
+            args: Prisma.ActivityGroupByArgs<ExtArgs>
+            result: $Utils.Optional<ActivityGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.ActivityCountArgs<ExtArgs>
+            result: $Utils.Optional<ActivityCountAggregateOutputType> | number
+          }
+        }
+      }
+      ChatMessage: {
+        payload: Prisma.$ChatMessagePayload<ExtArgs>
+        fields: Prisma.ChatMessageFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.ChatMessageFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.ChatMessageFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          findFirst: {
+            args: Prisma.ChatMessageFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.ChatMessageFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          findMany: {
+            args: Prisma.ChatMessageFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>[]
+          }
+          create: {
+            args: Prisma.ChatMessageCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          createMany: {
+            args: Prisma.ChatMessageCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.ChatMessageCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>[]
+          }
+          delete: {
+            args: Prisma.ChatMessageDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          update: {
+            args: Prisma.ChatMessageUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          deleteMany: {
+            args: Prisma.ChatMessageDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.ChatMessageUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.ChatMessageUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>[]
+          }
+          upsert: {
+            args: Prisma.ChatMessageUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$ChatMessagePayload>
+          }
+          aggregate: {
+            args: Prisma.ChatMessageAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateChatMessage>
+          }
+          groupBy: {
+            args: Prisma.ChatMessageGroupByArgs<ExtArgs>
+            result: $Utils.Optional<ChatMessageGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.ChatMessageCountArgs<ExtArgs>
+            result: $Utils.Optional<ChatMessageCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -1959,6 +2335,10 @@ export namespace Prisma {
     userCatclawProgress?: UserCatclawProgressOmit
     meowMedal?: MeowMedalOmit
     userMeowMedal?: UserMeowMedalOmit
+    unit?: UnitOmit
+    userUnitProgress?: UserUnitProgressOmit
+    activity?: ActivityOmit
+    chatMessage?: ChatMessageOmit
   }
 
   /* Types for Logging */
@@ -2045,6 +2425,9 @@ export namespace Prisma {
     legendProgress: number
     milestoneProgress: number
     meowMedalProgress: number
+    unitProgress: number
+    activities: number
+    chatMessages: number
   }
 
   export type UserCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
@@ -2054,6 +2437,9 @@ export namespace Prisma {
     legendProgress?: boolean | UserCountOutputTypeCountLegendProgressArgs
     milestoneProgress?: boolean | UserCountOutputTypeCountMilestoneProgressArgs
     meowMedalProgress?: boolean | UserCountOutputTypeCountMeowMedalProgressArgs
+    unitProgress?: boolean | UserCountOutputTypeCountUnitProgressArgs
+    activities?: boolean | UserCountOutputTypeCountActivitiesArgs
+    chatMessages?: boolean | UserCountOutputTypeCountChatMessagesArgs
   }
 
   // Custom InputTypes
@@ -2107,6 +2493,27 @@ export namespace Prisma {
    */
   export type UserCountOutputTypeCountMeowMedalProgressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     where?: UserMeowMedalWhereInput
+  }
+
+  /**
+   * UserCountOutputType without action
+   */
+  export type UserCountOutputTypeCountUnitProgressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: UserUnitProgressWhereInput
+  }
+
+  /**
+   * UserCountOutputType without action
+   */
+  export type UserCountOutputTypeCountActivitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ActivityWhereInput
+  }
+
+  /**
+   * UserCountOutputType without action
+   */
+  export type UserCountOutputTypeCountChatMessagesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ChatMessageWhereInput
   }
 
 
@@ -2266,6 +2673,37 @@ export namespace Prisma {
 
 
   /**
+   * Count Type UnitCountOutputType
+   */
+
+  export type UnitCountOutputType = {
+    progress: number
+  }
+
+  export type UnitCountOutputTypeSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    progress?: boolean | UnitCountOutputTypeCountProgressArgs
+  }
+
+  // Custom InputTypes
+  /**
+   * UnitCountOutputType without action
+   */
+  export type UnitCountOutputTypeDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UnitCountOutputType
+     */
+    select?: UnitCountOutputTypeSelect<ExtArgs> | null
+  }
+
+  /**
+   * UnitCountOutputType without action
+   */
+  export type UnitCountOutputTypeCountProgressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: UserUnitProgressWhereInput
+  }
+
+
+  /**
    * Models
    */
 
@@ -2285,6 +2723,7 @@ export namespace Prisma {
     email: string | null
     passwordHash: string | null
     displayName: string | null
+    role: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2295,6 +2734,7 @@ export namespace Prisma {
     email: string | null
     passwordHash: string | null
     displayName: string | null
+    role: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2305,6 +2745,7 @@ export namespace Prisma {
     email: number
     passwordHash: number
     displayName: number
+    role: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -2317,6 +2758,7 @@ export namespace Prisma {
     email?: true
     passwordHash?: true
     displayName?: true
+    role?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2327,6 +2769,7 @@ export namespace Prisma {
     email?: true
     passwordHash?: true
     displayName?: true
+    role?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2337,6 +2780,7 @@ export namespace Prisma {
     email?: true
     passwordHash?: true
     displayName?: true
+    role?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -2420,6 +2864,7 @@ export namespace Prisma {
     email: string | null
     passwordHash: string
     displayName: string | null
+    role: string
     createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
@@ -2447,6 +2892,7 @@ export namespace Prisma {
     email?: boolean
     passwordHash?: boolean
     displayName?: boolean
+    role?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     privacy?: boolean | User$privacyArgs<ExtArgs>
@@ -2457,6 +2903,9 @@ export namespace Prisma {
     milestoneProgress?: boolean | User$milestoneProgressArgs<ExtArgs>
     catclawProgress?: boolean | User$catclawProgressArgs<ExtArgs>
     meowMedalProgress?: boolean | User$meowMedalProgressArgs<ExtArgs>
+    unitProgress?: boolean | User$unitProgressArgs<ExtArgs>
+    activities?: boolean | User$activitiesArgs<ExtArgs>
+    chatMessages?: boolean | User$chatMessagesArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["user"]>
 
@@ -2466,6 +2915,7 @@ export namespace Prisma {
     email?: boolean
     passwordHash?: boolean
     displayName?: boolean
+    role?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2476,6 +2926,7 @@ export namespace Prisma {
     email?: boolean
     passwordHash?: boolean
     displayName?: boolean
+    role?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2486,11 +2937,12 @@ export namespace Prisma {
     email?: boolean
     passwordHash?: boolean
     displayName?: boolean
+    role?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "role" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     privacy?: boolean | User$privacyArgs<ExtArgs>
     sentFriendRequests?: boolean | User$sentFriendRequestsArgs<ExtArgs>
@@ -2500,6 +2952,9 @@ export namespace Prisma {
     milestoneProgress?: boolean | User$milestoneProgressArgs<ExtArgs>
     catclawProgress?: boolean | User$catclawProgressArgs<ExtArgs>
     meowMedalProgress?: boolean | User$meowMedalProgressArgs<ExtArgs>
+    unitProgress?: boolean | User$unitProgressArgs<ExtArgs>
+    activities?: boolean | User$activitiesArgs<ExtArgs>
+    chatMessages?: boolean | User$chatMessagesArgs<ExtArgs>
     _count?: boolean | UserCountOutputTypeDefaultArgs<ExtArgs>
   }
   export type UserIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
@@ -2516,6 +2971,9 @@ export namespace Prisma {
       milestoneProgress: Prisma.$UserMilestoneProgressPayload<ExtArgs>[]
       catclawProgress: Prisma.$UserCatclawProgressPayload<ExtArgs> | null
       meowMedalProgress: Prisma.$UserMeowMedalPayload<ExtArgs>[]
+      unitProgress: Prisma.$UserUnitProgressPayload<ExtArgs>[]
+      activities: Prisma.$ActivityPayload<ExtArgs>[]
+      chatMessages: Prisma.$ChatMessagePayload<ExtArgs>[]
     }
     scalars: $Extensions.GetPayloadResult<{
       id: string
@@ -2523,6 +2981,7 @@ export namespace Prisma {
       email: string | null
       passwordHash: string
       displayName: string | null
+      role: string
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
@@ -2927,6 +3386,9 @@ export namespace Prisma {
     milestoneProgress<T extends User$milestoneProgressArgs<ExtArgs> = {}>(args?: Subset<T, User$milestoneProgressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserMilestoneProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     catclawProgress<T extends User$catclawProgressArgs<ExtArgs> = {}>(args?: Subset<T, User$catclawProgressArgs<ExtArgs>>): Prisma__UserCatclawProgressClient<$Result.GetResult<Prisma.$UserCatclawProgressPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
     meowMedalProgress<T extends User$meowMedalProgressArgs<ExtArgs> = {}>(args?: Subset<T, User$meowMedalProgressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserMeowMedalPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    unitProgress<T extends User$unitProgressArgs<ExtArgs> = {}>(args?: Subset<T, User$unitProgressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    activities<T extends User$activitiesArgs<ExtArgs> = {}>(args?: Subset<T, User$activitiesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    chatMessages<T extends User$chatMessagesArgs<ExtArgs> = {}>(args?: Subset<T, User$chatMessagesArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
     /**
      * Attaches callbacks for the resolution and/or rejection of the Promise.
      * @param onfulfilled The callback to execute when the Promise is resolved.
@@ -2961,6 +3423,7 @@ export namespace Prisma {
     readonly email: FieldRef<"User", 'String'>
     readonly passwordHash: FieldRef<"User", 'String'>
     readonly displayName: FieldRef<"User", 'String'>
+    readonly role: FieldRef<"User", 'String'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
@@ -3530,6 +3993,78 @@ export namespace Prisma {
     take?: number
     skip?: number
     distinct?: UserMeowMedalScalarFieldEnum | UserMeowMedalScalarFieldEnum[]
+  }
+
+  /**
+   * User.unitProgress
+   */
+  export type User$unitProgressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    where?: UserUnitProgressWhereInput
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    cursor?: UserUnitProgressWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: UserUnitProgressScalarFieldEnum | UserUnitProgressScalarFieldEnum[]
+  }
+
+  /**
+   * User.activities
+   */
+  export type User$activitiesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    where?: ActivityWhereInput
+    orderBy?: ActivityOrderByWithRelationInput | ActivityOrderByWithRelationInput[]
+    cursor?: ActivityWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: ActivityScalarFieldEnum | ActivityScalarFieldEnum[]
+  }
+
+  /**
+   * User.chatMessages
+   */
+  export type User$chatMessagesArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    where?: ChatMessageWhereInput
+    orderBy?: ChatMessageOrderByWithRelationInput | ChatMessageOrderByWithRelationInput[]
+    cursor?: ChatMessageWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: ChatMessageScalarFieldEnum | ChatMessageScalarFieldEnum[]
   }
 
   /**
@@ -16665,6 +17200,4386 @@ export namespace Prisma {
 
 
   /**
+   * Model Unit
+   */
+
+  export type AggregateUnit = {
+    _count: UnitCountAggregateOutputType | null
+    _avg: UnitAvgAggregateOutputType | null
+    _sum: UnitSumAggregateOutputType | null
+    _min: UnitMinAggregateOutputType | null
+    _max: UnitMaxAggregateOutputType | null
+  }
+
+  export type UnitAvgAggregateOutputType = {
+    unitNumber: number | null
+    formCount: number | null
+    sortOrder: number | null
+  }
+
+  export type UnitSumAggregateOutputType = {
+    unitNumber: number | null
+    formCount: number | null
+    sortOrder: number | null
+  }
+
+  export type UnitMinAggregateOutputType = {
+    id: string | null
+    unitNumber: number | null
+    name: string | null
+    category: $Enums.UnitCategory | null
+    formCount: number | null
+    sortOrder: number | null
+    isCollab: boolean | null
+    source: string | null
+    setName: string | null
+  }
+
+  export type UnitMaxAggregateOutputType = {
+    id: string | null
+    unitNumber: number | null
+    name: string | null
+    category: $Enums.UnitCategory | null
+    formCount: number | null
+    sortOrder: number | null
+    isCollab: boolean | null
+    source: string | null
+    setName: string | null
+  }
+
+  export type UnitCountAggregateOutputType = {
+    id: number
+    unitNumber: number
+    name: number
+    category: number
+    formCount: number
+    sortOrder: number
+    isCollab: number
+    source: number
+    setName: number
+    _all: number
+  }
+
+
+  export type UnitAvgAggregateInputType = {
+    unitNumber?: true
+    formCount?: true
+    sortOrder?: true
+  }
+
+  export type UnitSumAggregateInputType = {
+    unitNumber?: true
+    formCount?: true
+    sortOrder?: true
+  }
+
+  export type UnitMinAggregateInputType = {
+    id?: true
+    unitNumber?: true
+    name?: true
+    category?: true
+    formCount?: true
+    sortOrder?: true
+    isCollab?: true
+    source?: true
+    setName?: true
+  }
+
+  export type UnitMaxAggregateInputType = {
+    id?: true
+    unitNumber?: true
+    name?: true
+    category?: true
+    formCount?: true
+    sortOrder?: true
+    isCollab?: true
+    source?: true
+    setName?: true
+  }
+
+  export type UnitCountAggregateInputType = {
+    id?: true
+    unitNumber?: true
+    name?: true
+    category?: true
+    formCount?: true
+    sortOrder?: true
+    isCollab?: true
+    source?: true
+    setName?: true
+    _all?: true
+  }
+
+  export type UnitAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Unit to aggregate.
+     */
+    where?: UnitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Units to fetch.
+     */
+    orderBy?: UnitOrderByWithRelationInput | UnitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: UnitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned Units
+    **/
+    _count?: true | UnitCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: UnitAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: UnitSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: UnitMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: UnitMaxAggregateInputType
+  }
+
+  export type GetUnitAggregateType<T extends UnitAggregateArgs> = {
+        [P in keyof T & keyof AggregateUnit]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateUnit[P]>
+      : GetScalarType<T[P], AggregateUnit[P]>
+  }
+
+
+
+
+  export type UnitGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: UnitWhereInput
+    orderBy?: UnitOrderByWithAggregationInput | UnitOrderByWithAggregationInput[]
+    by: UnitScalarFieldEnum[] | UnitScalarFieldEnum
+    having?: UnitScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: UnitCountAggregateInputType | true
+    _avg?: UnitAvgAggregateInputType
+    _sum?: UnitSumAggregateInputType
+    _min?: UnitMinAggregateInputType
+    _max?: UnitMaxAggregateInputType
+  }
+
+  export type UnitGroupByOutputType = {
+    id: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount: number
+    sortOrder: number
+    isCollab: boolean
+    source: string | null
+    setName: string | null
+    _count: UnitCountAggregateOutputType | null
+    _avg: UnitAvgAggregateOutputType | null
+    _sum: UnitSumAggregateOutputType | null
+    _min: UnitMinAggregateOutputType | null
+    _max: UnitMaxAggregateOutputType | null
+  }
+
+  type GetUnitGroupByPayload<T extends UnitGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<UnitGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof UnitGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], UnitGroupByOutputType[P]>
+            : GetScalarType<T[P], UnitGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type UnitSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    unitNumber?: boolean
+    name?: boolean
+    category?: boolean
+    formCount?: boolean
+    sortOrder?: boolean
+    isCollab?: boolean
+    source?: boolean
+    setName?: boolean
+    progress?: boolean | Unit$progressArgs<ExtArgs>
+    _count?: boolean | UnitCountOutputTypeDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["unit"]>
+
+  export type UnitSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    unitNumber?: boolean
+    name?: boolean
+    category?: boolean
+    formCount?: boolean
+    sortOrder?: boolean
+    isCollab?: boolean
+    source?: boolean
+    setName?: boolean
+  }, ExtArgs["result"]["unit"]>
+
+  export type UnitSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    unitNumber?: boolean
+    name?: boolean
+    category?: boolean
+    formCount?: boolean
+    sortOrder?: boolean
+    isCollab?: boolean
+    source?: boolean
+    setName?: boolean
+  }, ExtArgs["result"]["unit"]>
+
+  export type UnitSelectScalar = {
+    id?: boolean
+    unitNumber?: boolean
+    name?: boolean
+    category?: boolean
+    formCount?: boolean
+    sortOrder?: boolean
+    isCollab?: boolean
+    source?: boolean
+    setName?: boolean
+  }
+
+  export type UnitOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "unitNumber" | "name" | "category" | "formCount" | "sortOrder" | "isCollab" | "source" | "setName", ExtArgs["result"]["unit"]>
+  export type UnitInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    progress?: boolean | Unit$progressArgs<ExtArgs>
+    _count?: boolean | UnitCountOutputTypeDefaultArgs<ExtArgs>
+  }
+  export type UnitIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+  export type UnitIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {}
+
+  export type $UnitPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Unit"
+    objects: {
+      progress: Prisma.$UserUnitProgressPayload<ExtArgs>[]
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      unitNumber: number
+      name: string
+      category: $Enums.UnitCategory
+      formCount: number
+      sortOrder: number
+      isCollab: boolean
+      source: string | null
+      setName: string | null
+    }, ExtArgs["result"]["unit"]>
+    composites: {}
+  }
+
+  type UnitGetPayload<S extends boolean | null | undefined | UnitDefaultArgs> = $Result.GetResult<Prisma.$UnitPayload, S>
+
+  type UnitCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<UnitFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: UnitCountAggregateInputType | true
+    }
+
+  export interface UnitDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Unit'], meta: { name: 'Unit' } }
+    /**
+     * Find zero or one Unit that matches the filter.
+     * @param {UnitFindUniqueArgs} args - Arguments to find a Unit
+     * @example
+     * // Get one Unit
+     * const unit = await prisma.unit.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends UnitFindUniqueArgs>(args: SelectSubset<T, UnitFindUniqueArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Unit that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {UnitFindUniqueOrThrowArgs} args - Arguments to find a Unit
+     * @example
+     * // Get one Unit
+     * const unit = await prisma.unit.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends UnitFindUniqueOrThrowArgs>(args: SelectSubset<T, UnitFindUniqueOrThrowArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitFindFirstArgs} args - Arguments to find a Unit
+     * @example
+     * // Get one Unit
+     * const unit = await prisma.unit.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends UnitFindFirstArgs>(args?: SelectSubset<T, UnitFindFirstArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Unit that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitFindFirstOrThrowArgs} args - Arguments to find a Unit
+     * @example
+     * // Get one Unit
+     * const unit = await prisma.unit.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends UnitFindFirstOrThrowArgs>(args?: SelectSubset<T, UnitFindFirstOrThrowArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Units that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Units
+     * const units = await prisma.unit.findMany()
+     * 
+     * // Get first 10 Units
+     * const units = await prisma.unit.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const unitWithIdOnly = await prisma.unit.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends UnitFindManyArgs>(args?: SelectSubset<T, UnitFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Unit.
+     * @param {UnitCreateArgs} args - Arguments to create a Unit.
+     * @example
+     * // Create one Unit
+     * const Unit = await prisma.unit.create({
+     *   data: {
+     *     // ... data to create a Unit
+     *   }
+     * })
+     * 
+     */
+    create<T extends UnitCreateArgs>(args: SelectSubset<T, UnitCreateArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Units.
+     * @param {UnitCreateManyArgs} args - Arguments to create many Units.
+     * @example
+     * // Create many Units
+     * const unit = await prisma.unit.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends UnitCreateManyArgs>(args?: SelectSubset<T, UnitCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Units and returns the data saved in the database.
+     * @param {UnitCreateManyAndReturnArgs} args - Arguments to create many Units.
+     * @example
+     * // Create many Units
+     * const unit = await prisma.unit.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Units and only return the `id`
+     * const unitWithIdOnly = await prisma.unit.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends UnitCreateManyAndReturnArgs>(args?: SelectSubset<T, UnitCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Unit.
+     * @param {UnitDeleteArgs} args - Arguments to delete one Unit.
+     * @example
+     * // Delete one Unit
+     * const Unit = await prisma.unit.delete({
+     *   where: {
+     *     // ... filter to delete one Unit
+     *   }
+     * })
+     * 
+     */
+    delete<T extends UnitDeleteArgs>(args: SelectSubset<T, UnitDeleteArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Unit.
+     * @param {UnitUpdateArgs} args - Arguments to update one Unit.
+     * @example
+     * // Update one Unit
+     * const unit = await prisma.unit.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends UnitUpdateArgs>(args: SelectSubset<T, UnitUpdateArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Units.
+     * @param {UnitDeleteManyArgs} args - Arguments to filter Units to delete.
+     * @example
+     * // Delete a few Units
+     * const { count } = await prisma.unit.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends UnitDeleteManyArgs>(args?: SelectSubset<T, UnitDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Units
+     * const unit = await prisma.unit.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends UnitUpdateManyArgs>(args: SelectSubset<T, UnitUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Units and returns the data updated in the database.
+     * @param {UnitUpdateManyAndReturnArgs} args - Arguments to update many Units.
+     * @example
+     * // Update many Units
+     * const unit = await prisma.unit.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Units and only return the `id`
+     * const unitWithIdOnly = await prisma.unit.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends UnitUpdateManyAndReturnArgs>(args: SelectSubset<T, UnitUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Unit.
+     * @param {UnitUpsertArgs} args - Arguments to update or create a Unit.
+     * @example
+     * // Update or create a Unit
+     * const unit = await prisma.unit.upsert({
+     *   create: {
+     *     // ... data to create a Unit
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Unit we want to update
+     *   }
+     * })
+     */
+    upsert<T extends UnitUpsertArgs>(args: SelectSubset<T, UnitUpsertArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Units.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitCountArgs} args - Arguments to filter Units to count.
+     * @example
+     * // Count the number of Units
+     * const count = await prisma.unit.count({
+     *   where: {
+     *     // ... the filter for the Units we want to count
+     *   }
+     * })
+    **/
+    count<T extends UnitCountArgs>(
+      args?: Subset<T, UnitCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], UnitCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Unit.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends UnitAggregateArgs>(args: Subset<T, UnitAggregateArgs>): Prisma.PrismaPromise<GetUnitAggregateType<T>>
+
+    /**
+     * Group by Unit.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UnitGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends UnitGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: UnitGroupByArgs['orderBy'] }
+        : { orderBy?: UnitGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, UnitGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetUnitGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the Unit model
+   */
+  readonly fields: UnitFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for Unit.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__UnitClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    progress<T extends Unit$progressArgs<ExtArgs> = {}>(args?: Subset<T, Unit$progressArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions> | Null>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the Unit model
+   */
+  interface UnitFieldRefs {
+    readonly id: FieldRef<"Unit", 'String'>
+    readonly unitNumber: FieldRef<"Unit", 'Int'>
+    readonly name: FieldRef<"Unit", 'String'>
+    readonly category: FieldRef<"Unit", 'UnitCategory'>
+    readonly formCount: FieldRef<"Unit", 'Int'>
+    readonly sortOrder: FieldRef<"Unit", 'Int'>
+    readonly isCollab: FieldRef<"Unit", 'Boolean'>
+    readonly source: FieldRef<"Unit", 'String'>
+    readonly setName: FieldRef<"Unit", 'String'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * Unit findUnique
+   */
+  export type UnitFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter, which Unit to fetch.
+     */
+    where: UnitWhereUniqueInput
+  }
+
+  /**
+   * Unit findUniqueOrThrow
+   */
+  export type UnitFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter, which Unit to fetch.
+     */
+    where: UnitWhereUniqueInput
+  }
+
+  /**
+   * Unit findFirst
+   */
+  export type UnitFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter, which Unit to fetch.
+     */
+    where?: UnitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Units to fetch.
+     */
+    orderBy?: UnitOrderByWithRelationInput | UnitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Units.
+     */
+    cursor?: UnitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Units.
+     */
+    distinct?: UnitScalarFieldEnum | UnitScalarFieldEnum[]
+  }
+
+  /**
+   * Unit findFirstOrThrow
+   */
+  export type UnitFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter, which Unit to fetch.
+     */
+    where?: UnitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Units to fetch.
+     */
+    orderBy?: UnitOrderByWithRelationInput | UnitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Units.
+     */
+    cursor?: UnitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Units.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Units.
+     */
+    distinct?: UnitScalarFieldEnum | UnitScalarFieldEnum[]
+  }
+
+  /**
+   * Unit findMany
+   */
+  export type UnitFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter, which Units to fetch.
+     */
+    where?: UnitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Units to fetch.
+     */
+    orderBy?: UnitOrderByWithRelationInput | UnitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing Units.
+     */
+    cursor?: UnitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Units from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Units.
+     */
+    skip?: number
+    distinct?: UnitScalarFieldEnum | UnitScalarFieldEnum[]
+  }
+
+  /**
+   * Unit create
+   */
+  export type UnitCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * The data needed to create a Unit.
+     */
+    data: XOR<UnitCreateInput, UnitUncheckedCreateInput>
+  }
+
+  /**
+   * Unit createMany
+   */
+  export type UnitCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many Units.
+     */
+    data: UnitCreateManyInput | UnitCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Unit createManyAndReturn
+   */
+  export type UnitCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * The data used to create many Units.
+     */
+    data: UnitCreateManyInput | UnitCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Unit update
+   */
+  export type UnitUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * The data needed to update a Unit.
+     */
+    data: XOR<UnitUpdateInput, UnitUncheckedUpdateInput>
+    /**
+     * Choose, which Unit to update.
+     */
+    where: UnitWhereUniqueInput
+  }
+
+  /**
+   * Unit updateMany
+   */
+  export type UnitUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update Units.
+     */
+    data: XOR<UnitUpdateManyMutationInput, UnitUncheckedUpdateManyInput>
+    /**
+     * Filter which Units to update
+     */
+    where?: UnitWhereInput
+    /**
+     * Limit how many Units to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Unit updateManyAndReturn
+   */
+  export type UnitUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * The data used to update Units.
+     */
+    data: XOR<UnitUpdateManyMutationInput, UnitUncheckedUpdateManyInput>
+    /**
+     * Filter which Units to update
+     */
+    where?: UnitWhereInput
+    /**
+     * Limit how many Units to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Unit upsert
+   */
+  export type UnitUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * The filter to search for the Unit to update in case it exists.
+     */
+    where: UnitWhereUniqueInput
+    /**
+     * In case the Unit found by the `where` argument doesn't exist, create a new Unit with this data.
+     */
+    create: XOR<UnitCreateInput, UnitUncheckedCreateInput>
+    /**
+     * In case the Unit was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<UnitUpdateInput, UnitUncheckedUpdateInput>
+  }
+
+  /**
+   * Unit delete
+   */
+  export type UnitDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+    /**
+     * Filter which Unit to delete.
+     */
+    where: UnitWhereUniqueInput
+  }
+
+  /**
+   * Unit deleteMany
+   */
+  export type UnitDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Units to delete
+     */
+    where?: UnitWhereInput
+    /**
+     * Limit how many Units to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * Unit.progress
+   */
+  export type Unit$progressArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    where?: UserUnitProgressWhereInput
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    cursor?: UserUnitProgressWhereUniqueInput
+    take?: number
+    skip?: number
+    distinct?: UserUnitProgressScalarFieldEnum | UserUnitProgressScalarFieldEnum[]
+  }
+
+  /**
+   * Unit without action
+   */
+  export type UnitDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Unit
+     */
+    select?: UnitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Unit
+     */
+    omit?: UnitOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UnitInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model UserUnitProgress
+   */
+
+  export type AggregateUserUnitProgress = {
+    _count: UserUnitProgressCountAggregateOutputType | null
+    _avg: UserUnitProgressAvgAggregateOutputType | null
+    _sum: UserUnitProgressSumAggregateOutputType | null
+    _min: UserUnitProgressMinAggregateOutputType | null
+    _max: UserUnitProgressMaxAggregateOutputType | null
+  }
+
+  export type UserUnitProgressAvgAggregateOutputType = {
+    formLevel: number | null
+  }
+
+  export type UserUnitProgressSumAggregateOutputType = {
+    formLevel: number | null
+  }
+
+  export type UserUnitProgressMinAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    unitId: string | null
+    formLevel: number | null
+    updatedAt: Date | null
+  }
+
+  export type UserUnitProgressMaxAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    unitId: string | null
+    formLevel: number | null
+    updatedAt: Date | null
+  }
+
+  export type UserUnitProgressCountAggregateOutputType = {
+    id: number
+    userId: number
+    unitId: number
+    formLevel: number
+    updatedAt: number
+    _all: number
+  }
+
+
+  export type UserUnitProgressAvgAggregateInputType = {
+    formLevel?: true
+  }
+
+  export type UserUnitProgressSumAggregateInputType = {
+    formLevel?: true
+  }
+
+  export type UserUnitProgressMinAggregateInputType = {
+    id?: true
+    userId?: true
+    unitId?: true
+    formLevel?: true
+    updatedAt?: true
+  }
+
+  export type UserUnitProgressMaxAggregateInputType = {
+    id?: true
+    userId?: true
+    unitId?: true
+    formLevel?: true
+    updatedAt?: true
+  }
+
+  export type UserUnitProgressCountAggregateInputType = {
+    id?: true
+    userId?: true
+    unitId?: true
+    formLevel?: true
+    updatedAt?: true
+    _all?: true
+  }
+
+  export type UserUnitProgressAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which UserUnitProgress to aggregate.
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of UserUnitProgresses to fetch.
+     */
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: UserUnitProgressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` UserUnitProgresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` UserUnitProgresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned UserUnitProgresses
+    **/
+    _count?: true | UserUnitProgressCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to average
+    **/
+    _avg?: UserUnitProgressAvgAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to sum
+    **/
+    _sum?: UserUnitProgressSumAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: UserUnitProgressMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: UserUnitProgressMaxAggregateInputType
+  }
+
+  export type GetUserUnitProgressAggregateType<T extends UserUnitProgressAggregateArgs> = {
+        [P in keyof T & keyof AggregateUserUnitProgress]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateUserUnitProgress[P]>
+      : GetScalarType<T[P], AggregateUserUnitProgress[P]>
+  }
+
+
+
+
+  export type UserUnitProgressGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: UserUnitProgressWhereInput
+    orderBy?: UserUnitProgressOrderByWithAggregationInput | UserUnitProgressOrderByWithAggregationInput[]
+    by: UserUnitProgressScalarFieldEnum[] | UserUnitProgressScalarFieldEnum
+    having?: UserUnitProgressScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: UserUnitProgressCountAggregateInputType | true
+    _avg?: UserUnitProgressAvgAggregateInputType
+    _sum?: UserUnitProgressSumAggregateInputType
+    _min?: UserUnitProgressMinAggregateInputType
+    _max?: UserUnitProgressMaxAggregateInputType
+  }
+
+  export type UserUnitProgressGroupByOutputType = {
+    id: string
+    userId: string
+    unitId: string
+    formLevel: number
+    updatedAt: Date
+    _count: UserUnitProgressCountAggregateOutputType | null
+    _avg: UserUnitProgressAvgAggregateOutputType | null
+    _sum: UserUnitProgressSumAggregateOutputType | null
+    _min: UserUnitProgressMinAggregateOutputType | null
+    _max: UserUnitProgressMaxAggregateOutputType | null
+  }
+
+  type GetUserUnitProgressGroupByPayload<T extends UserUnitProgressGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<UserUnitProgressGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof UserUnitProgressGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], UserUnitProgressGroupByOutputType[P]>
+            : GetScalarType<T[P], UserUnitProgressGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type UserUnitProgressSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    unitId?: boolean
+    formLevel?: boolean
+    updatedAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["userUnitProgress"]>
+
+  export type UserUnitProgressSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    unitId?: boolean
+    formLevel?: boolean
+    updatedAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["userUnitProgress"]>
+
+  export type UserUnitProgressSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    unitId?: boolean
+    formLevel?: boolean
+    updatedAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["userUnitProgress"]>
+
+  export type UserUnitProgressSelectScalar = {
+    id?: boolean
+    userId?: boolean
+    unitId?: boolean
+    formLevel?: boolean
+    updatedAt?: boolean
+  }
+
+  export type UserUnitProgressOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "unitId" | "formLevel" | "updatedAt", ExtArgs["result"]["userUnitProgress"]>
+  export type UserUnitProgressInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }
+  export type UserUnitProgressIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }
+  export type UserUnitProgressIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+    unit?: boolean | UnitDefaultArgs<ExtArgs>
+  }
+
+  export type $UserUnitProgressPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "UserUnitProgress"
+    objects: {
+      user: Prisma.$UserPayload<ExtArgs>
+      unit: Prisma.$UnitPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      userId: string
+      unitId: string
+      formLevel: number
+      updatedAt: Date
+    }, ExtArgs["result"]["userUnitProgress"]>
+    composites: {}
+  }
+
+  type UserUnitProgressGetPayload<S extends boolean | null | undefined | UserUnitProgressDefaultArgs> = $Result.GetResult<Prisma.$UserUnitProgressPayload, S>
+
+  type UserUnitProgressCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<UserUnitProgressFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: UserUnitProgressCountAggregateInputType | true
+    }
+
+  export interface UserUnitProgressDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['UserUnitProgress'], meta: { name: 'UserUnitProgress' } }
+    /**
+     * Find zero or one UserUnitProgress that matches the filter.
+     * @param {UserUnitProgressFindUniqueArgs} args - Arguments to find a UserUnitProgress
+     * @example
+     * // Get one UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends UserUnitProgressFindUniqueArgs>(args: SelectSubset<T, UserUnitProgressFindUniqueArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one UserUnitProgress that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {UserUnitProgressFindUniqueOrThrowArgs} args - Arguments to find a UserUnitProgress
+     * @example
+     * // Get one UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends UserUnitProgressFindUniqueOrThrowArgs>(args: SelectSubset<T, UserUnitProgressFindUniqueOrThrowArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first UserUnitProgress that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressFindFirstArgs} args - Arguments to find a UserUnitProgress
+     * @example
+     * // Get one UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends UserUnitProgressFindFirstArgs>(args?: SelectSubset<T, UserUnitProgressFindFirstArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first UserUnitProgress that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressFindFirstOrThrowArgs} args - Arguments to find a UserUnitProgress
+     * @example
+     * // Get one UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends UserUnitProgressFindFirstOrThrowArgs>(args?: SelectSubset<T, UserUnitProgressFindFirstOrThrowArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more UserUnitProgresses that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all UserUnitProgresses
+     * const userUnitProgresses = await prisma.userUnitProgress.findMany()
+     * 
+     * // Get first 10 UserUnitProgresses
+     * const userUnitProgresses = await prisma.userUnitProgress.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const userUnitProgressWithIdOnly = await prisma.userUnitProgress.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends UserUnitProgressFindManyArgs>(args?: SelectSubset<T, UserUnitProgressFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a UserUnitProgress.
+     * @param {UserUnitProgressCreateArgs} args - Arguments to create a UserUnitProgress.
+     * @example
+     * // Create one UserUnitProgress
+     * const UserUnitProgress = await prisma.userUnitProgress.create({
+     *   data: {
+     *     // ... data to create a UserUnitProgress
+     *   }
+     * })
+     * 
+     */
+    create<T extends UserUnitProgressCreateArgs>(args: SelectSubset<T, UserUnitProgressCreateArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many UserUnitProgresses.
+     * @param {UserUnitProgressCreateManyArgs} args - Arguments to create many UserUnitProgresses.
+     * @example
+     * // Create many UserUnitProgresses
+     * const userUnitProgress = await prisma.userUnitProgress.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends UserUnitProgressCreateManyArgs>(args?: SelectSubset<T, UserUnitProgressCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many UserUnitProgresses and returns the data saved in the database.
+     * @param {UserUnitProgressCreateManyAndReturnArgs} args - Arguments to create many UserUnitProgresses.
+     * @example
+     * // Create many UserUnitProgresses
+     * const userUnitProgress = await prisma.userUnitProgress.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many UserUnitProgresses and only return the `id`
+     * const userUnitProgressWithIdOnly = await prisma.userUnitProgress.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends UserUnitProgressCreateManyAndReturnArgs>(args?: SelectSubset<T, UserUnitProgressCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a UserUnitProgress.
+     * @param {UserUnitProgressDeleteArgs} args - Arguments to delete one UserUnitProgress.
+     * @example
+     * // Delete one UserUnitProgress
+     * const UserUnitProgress = await prisma.userUnitProgress.delete({
+     *   where: {
+     *     // ... filter to delete one UserUnitProgress
+     *   }
+     * })
+     * 
+     */
+    delete<T extends UserUnitProgressDeleteArgs>(args: SelectSubset<T, UserUnitProgressDeleteArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one UserUnitProgress.
+     * @param {UserUnitProgressUpdateArgs} args - Arguments to update one UserUnitProgress.
+     * @example
+     * // Update one UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends UserUnitProgressUpdateArgs>(args: SelectSubset<T, UserUnitProgressUpdateArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more UserUnitProgresses.
+     * @param {UserUnitProgressDeleteManyArgs} args - Arguments to filter UserUnitProgresses to delete.
+     * @example
+     * // Delete a few UserUnitProgresses
+     * const { count } = await prisma.userUnitProgress.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends UserUnitProgressDeleteManyArgs>(args?: SelectSubset<T, UserUnitProgressDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more UserUnitProgresses.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many UserUnitProgresses
+     * const userUnitProgress = await prisma.userUnitProgress.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends UserUnitProgressUpdateManyArgs>(args: SelectSubset<T, UserUnitProgressUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more UserUnitProgresses and returns the data updated in the database.
+     * @param {UserUnitProgressUpdateManyAndReturnArgs} args - Arguments to update many UserUnitProgresses.
+     * @example
+     * // Update many UserUnitProgresses
+     * const userUnitProgress = await prisma.userUnitProgress.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more UserUnitProgresses and only return the `id`
+     * const userUnitProgressWithIdOnly = await prisma.userUnitProgress.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends UserUnitProgressUpdateManyAndReturnArgs>(args: SelectSubset<T, UserUnitProgressUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one UserUnitProgress.
+     * @param {UserUnitProgressUpsertArgs} args - Arguments to update or create a UserUnitProgress.
+     * @example
+     * // Update or create a UserUnitProgress
+     * const userUnitProgress = await prisma.userUnitProgress.upsert({
+     *   create: {
+     *     // ... data to create a UserUnitProgress
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the UserUnitProgress we want to update
+     *   }
+     * })
+     */
+    upsert<T extends UserUnitProgressUpsertArgs>(args: SelectSubset<T, UserUnitProgressUpsertArgs<ExtArgs>>): Prisma__UserUnitProgressClient<$Result.GetResult<Prisma.$UserUnitProgressPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of UserUnitProgresses.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressCountArgs} args - Arguments to filter UserUnitProgresses to count.
+     * @example
+     * // Count the number of UserUnitProgresses
+     * const count = await prisma.userUnitProgress.count({
+     *   where: {
+     *     // ... the filter for the UserUnitProgresses we want to count
+     *   }
+     * })
+    **/
+    count<T extends UserUnitProgressCountArgs>(
+      args?: Subset<T, UserUnitProgressCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], UserUnitProgressCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a UserUnitProgress.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends UserUnitProgressAggregateArgs>(args: Subset<T, UserUnitProgressAggregateArgs>): Prisma.PrismaPromise<GetUserUnitProgressAggregateType<T>>
+
+    /**
+     * Group by UserUnitProgress.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {UserUnitProgressGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends UserUnitProgressGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: UserUnitProgressGroupByArgs['orderBy'] }
+        : { orderBy?: UserUnitProgressGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, UserUnitProgressGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetUserUnitProgressGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the UserUnitProgress model
+   */
+  readonly fields: UserUnitProgressFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for UserUnitProgress.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__UserUnitProgressClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    user<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    unit<T extends UnitDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UnitDefaultArgs<ExtArgs>>): Prisma__UnitClient<$Result.GetResult<Prisma.$UnitPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the UserUnitProgress model
+   */
+  interface UserUnitProgressFieldRefs {
+    readonly id: FieldRef<"UserUnitProgress", 'String'>
+    readonly userId: FieldRef<"UserUnitProgress", 'String'>
+    readonly unitId: FieldRef<"UserUnitProgress", 'String'>
+    readonly formLevel: FieldRef<"UserUnitProgress", 'Int'>
+    readonly updatedAt: FieldRef<"UserUnitProgress", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * UserUnitProgress findUnique
+   */
+  export type UserUnitProgressFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter, which UserUnitProgress to fetch.
+     */
+    where: UserUnitProgressWhereUniqueInput
+  }
+
+  /**
+   * UserUnitProgress findUniqueOrThrow
+   */
+  export type UserUnitProgressFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter, which UserUnitProgress to fetch.
+     */
+    where: UserUnitProgressWhereUniqueInput
+  }
+
+  /**
+   * UserUnitProgress findFirst
+   */
+  export type UserUnitProgressFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter, which UserUnitProgress to fetch.
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of UserUnitProgresses to fetch.
+     */
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for UserUnitProgresses.
+     */
+    cursor?: UserUnitProgressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` UserUnitProgresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` UserUnitProgresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of UserUnitProgresses.
+     */
+    distinct?: UserUnitProgressScalarFieldEnum | UserUnitProgressScalarFieldEnum[]
+  }
+
+  /**
+   * UserUnitProgress findFirstOrThrow
+   */
+  export type UserUnitProgressFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter, which UserUnitProgress to fetch.
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of UserUnitProgresses to fetch.
+     */
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for UserUnitProgresses.
+     */
+    cursor?: UserUnitProgressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` UserUnitProgresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` UserUnitProgresses.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of UserUnitProgresses.
+     */
+    distinct?: UserUnitProgressScalarFieldEnum | UserUnitProgressScalarFieldEnum[]
+  }
+
+  /**
+   * UserUnitProgress findMany
+   */
+  export type UserUnitProgressFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter, which UserUnitProgresses to fetch.
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of UserUnitProgresses to fetch.
+     */
+    orderBy?: UserUnitProgressOrderByWithRelationInput | UserUnitProgressOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing UserUnitProgresses.
+     */
+    cursor?: UserUnitProgressWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` UserUnitProgresses from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` UserUnitProgresses.
+     */
+    skip?: number
+    distinct?: UserUnitProgressScalarFieldEnum | UserUnitProgressScalarFieldEnum[]
+  }
+
+  /**
+   * UserUnitProgress create
+   */
+  export type UserUnitProgressCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * The data needed to create a UserUnitProgress.
+     */
+    data: XOR<UserUnitProgressCreateInput, UserUnitProgressUncheckedCreateInput>
+  }
+
+  /**
+   * UserUnitProgress createMany
+   */
+  export type UserUnitProgressCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many UserUnitProgresses.
+     */
+    data: UserUnitProgressCreateManyInput | UserUnitProgressCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * UserUnitProgress createManyAndReturn
+   */
+  export type UserUnitProgressCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * The data used to create many UserUnitProgresses.
+     */
+    data: UserUnitProgressCreateManyInput | UserUnitProgressCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * UserUnitProgress update
+   */
+  export type UserUnitProgressUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * The data needed to update a UserUnitProgress.
+     */
+    data: XOR<UserUnitProgressUpdateInput, UserUnitProgressUncheckedUpdateInput>
+    /**
+     * Choose, which UserUnitProgress to update.
+     */
+    where: UserUnitProgressWhereUniqueInput
+  }
+
+  /**
+   * UserUnitProgress updateMany
+   */
+  export type UserUnitProgressUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update UserUnitProgresses.
+     */
+    data: XOR<UserUnitProgressUpdateManyMutationInput, UserUnitProgressUncheckedUpdateManyInput>
+    /**
+     * Filter which UserUnitProgresses to update
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * Limit how many UserUnitProgresses to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * UserUnitProgress updateManyAndReturn
+   */
+  export type UserUnitProgressUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * The data used to update UserUnitProgresses.
+     */
+    data: XOR<UserUnitProgressUpdateManyMutationInput, UserUnitProgressUncheckedUpdateManyInput>
+    /**
+     * Filter which UserUnitProgresses to update
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * Limit how many UserUnitProgresses to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * UserUnitProgress upsert
+   */
+  export type UserUnitProgressUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * The filter to search for the UserUnitProgress to update in case it exists.
+     */
+    where: UserUnitProgressWhereUniqueInput
+    /**
+     * In case the UserUnitProgress found by the `where` argument doesn't exist, create a new UserUnitProgress with this data.
+     */
+    create: XOR<UserUnitProgressCreateInput, UserUnitProgressUncheckedCreateInput>
+    /**
+     * In case the UserUnitProgress was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<UserUnitProgressUpdateInput, UserUnitProgressUncheckedUpdateInput>
+  }
+
+  /**
+   * UserUnitProgress delete
+   */
+  export type UserUnitProgressDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+    /**
+     * Filter which UserUnitProgress to delete.
+     */
+    where: UserUnitProgressWhereUniqueInput
+  }
+
+  /**
+   * UserUnitProgress deleteMany
+   */
+  export type UserUnitProgressDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which UserUnitProgresses to delete
+     */
+    where?: UserUnitProgressWhereInput
+    /**
+     * Limit how many UserUnitProgresses to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * UserUnitProgress without action
+   */
+  export type UserUnitProgressDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the UserUnitProgress
+     */
+    select?: UserUnitProgressSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the UserUnitProgress
+     */
+    omit?: UserUnitProgressOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: UserUnitProgressInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model Activity
+   */
+
+  export type AggregateActivity = {
+    _count: ActivityCountAggregateOutputType | null
+    _min: ActivityMinAggregateOutputType | null
+    _max: ActivityMaxAggregateOutputType | null
+  }
+
+  export type ActivityMinAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    type: string | null
+    itemName: string | null
+    detail: string | null
+    createdAt: Date | null
+  }
+
+  export type ActivityMaxAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    type: string | null
+    itemName: string | null
+    detail: string | null
+    createdAt: Date | null
+  }
+
+  export type ActivityCountAggregateOutputType = {
+    id: number
+    userId: number
+    type: number
+    itemName: number
+    detail: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type ActivityMinAggregateInputType = {
+    id?: true
+    userId?: true
+    type?: true
+    itemName?: true
+    detail?: true
+    createdAt?: true
+  }
+
+  export type ActivityMaxAggregateInputType = {
+    id?: true
+    userId?: true
+    type?: true
+    itemName?: true
+    detail?: true
+    createdAt?: true
+  }
+
+  export type ActivityCountAggregateInputType = {
+    id?: true
+    userId?: true
+    type?: true
+    itemName?: true
+    detail?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type ActivityAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Activity to aggregate.
+     */
+    where?: ActivityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Activities to fetch.
+     */
+    orderBy?: ActivityOrderByWithRelationInput | ActivityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: ActivityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Activities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Activities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned Activities
+    **/
+    _count?: true | ActivityCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: ActivityMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: ActivityMaxAggregateInputType
+  }
+
+  export type GetActivityAggregateType<T extends ActivityAggregateArgs> = {
+        [P in keyof T & keyof AggregateActivity]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateActivity[P]>
+      : GetScalarType<T[P], AggregateActivity[P]>
+  }
+
+
+
+
+  export type ActivityGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ActivityWhereInput
+    orderBy?: ActivityOrderByWithAggregationInput | ActivityOrderByWithAggregationInput[]
+    by: ActivityScalarFieldEnum[] | ActivityScalarFieldEnum
+    having?: ActivityScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: ActivityCountAggregateInputType | true
+    _min?: ActivityMinAggregateInputType
+    _max?: ActivityMaxAggregateInputType
+  }
+
+  export type ActivityGroupByOutputType = {
+    id: string
+    userId: string
+    type: string
+    itemName: string | null
+    detail: string | null
+    createdAt: Date
+    _count: ActivityCountAggregateOutputType | null
+    _min: ActivityMinAggregateOutputType | null
+    _max: ActivityMaxAggregateOutputType | null
+  }
+
+  type GetActivityGroupByPayload<T extends ActivityGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<ActivityGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof ActivityGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], ActivityGroupByOutputType[P]>
+            : GetScalarType<T[P], ActivityGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type ActivitySelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    type?: boolean
+    itemName?: boolean
+    detail?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["activity"]>
+
+  export type ActivitySelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    type?: boolean
+    itemName?: boolean
+    detail?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["activity"]>
+
+  export type ActivitySelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    type?: boolean
+    itemName?: boolean
+    detail?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["activity"]>
+
+  export type ActivitySelectScalar = {
+    id?: boolean
+    userId?: boolean
+    type?: boolean
+    itemName?: boolean
+    detail?: boolean
+    createdAt?: boolean
+  }
+
+  export type ActivityOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "type" | "itemName" | "detail" | "createdAt", ExtArgs["result"]["activity"]>
+  export type ActivityInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type ActivityIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type ActivityIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+
+  export type $ActivityPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "Activity"
+    objects: {
+      user: Prisma.$UserPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      userId: string
+      type: string
+      itemName: string | null
+      detail: string | null
+      createdAt: Date
+    }, ExtArgs["result"]["activity"]>
+    composites: {}
+  }
+
+  type ActivityGetPayload<S extends boolean | null | undefined | ActivityDefaultArgs> = $Result.GetResult<Prisma.$ActivityPayload, S>
+
+  type ActivityCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<ActivityFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: ActivityCountAggregateInputType | true
+    }
+
+  export interface ActivityDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['Activity'], meta: { name: 'Activity' } }
+    /**
+     * Find zero or one Activity that matches the filter.
+     * @param {ActivityFindUniqueArgs} args - Arguments to find a Activity
+     * @example
+     * // Get one Activity
+     * const activity = await prisma.activity.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends ActivityFindUniqueArgs>(args: SelectSubset<T, ActivityFindUniqueArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one Activity that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {ActivityFindUniqueOrThrowArgs} args - Arguments to find a Activity
+     * @example
+     * // Get one Activity
+     * const activity = await prisma.activity.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends ActivityFindUniqueOrThrowArgs>(args: SelectSubset<T, ActivityFindUniqueOrThrowArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Activity that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityFindFirstArgs} args - Arguments to find a Activity
+     * @example
+     * // Get one Activity
+     * const activity = await prisma.activity.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends ActivityFindFirstArgs>(args?: SelectSubset<T, ActivityFindFirstArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first Activity that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityFindFirstOrThrowArgs} args - Arguments to find a Activity
+     * @example
+     * // Get one Activity
+     * const activity = await prisma.activity.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends ActivityFindFirstOrThrowArgs>(args?: SelectSubset<T, ActivityFindFirstOrThrowArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more Activities that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all Activities
+     * const activities = await prisma.activity.findMany()
+     * 
+     * // Get first 10 Activities
+     * const activities = await prisma.activity.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const activityWithIdOnly = await prisma.activity.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends ActivityFindManyArgs>(args?: SelectSubset<T, ActivityFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a Activity.
+     * @param {ActivityCreateArgs} args - Arguments to create a Activity.
+     * @example
+     * // Create one Activity
+     * const Activity = await prisma.activity.create({
+     *   data: {
+     *     // ... data to create a Activity
+     *   }
+     * })
+     * 
+     */
+    create<T extends ActivityCreateArgs>(args: SelectSubset<T, ActivityCreateArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many Activities.
+     * @param {ActivityCreateManyArgs} args - Arguments to create many Activities.
+     * @example
+     * // Create many Activities
+     * const activity = await prisma.activity.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends ActivityCreateManyArgs>(args?: SelectSubset<T, ActivityCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many Activities and returns the data saved in the database.
+     * @param {ActivityCreateManyAndReturnArgs} args - Arguments to create many Activities.
+     * @example
+     * // Create many Activities
+     * const activity = await prisma.activity.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many Activities and only return the `id`
+     * const activityWithIdOnly = await prisma.activity.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends ActivityCreateManyAndReturnArgs>(args?: SelectSubset<T, ActivityCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a Activity.
+     * @param {ActivityDeleteArgs} args - Arguments to delete one Activity.
+     * @example
+     * // Delete one Activity
+     * const Activity = await prisma.activity.delete({
+     *   where: {
+     *     // ... filter to delete one Activity
+     *   }
+     * })
+     * 
+     */
+    delete<T extends ActivityDeleteArgs>(args: SelectSubset<T, ActivityDeleteArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one Activity.
+     * @param {ActivityUpdateArgs} args - Arguments to update one Activity.
+     * @example
+     * // Update one Activity
+     * const activity = await prisma.activity.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends ActivityUpdateArgs>(args: SelectSubset<T, ActivityUpdateArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more Activities.
+     * @param {ActivityDeleteManyArgs} args - Arguments to filter Activities to delete.
+     * @example
+     * // Delete a few Activities
+     * const { count } = await prisma.activity.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends ActivityDeleteManyArgs>(args?: SelectSubset<T, ActivityDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Activities.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many Activities
+     * const activity = await prisma.activity.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends ActivityUpdateManyArgs>(args: SelectSubset<T, ActivityUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more Activities and returns the data updated in the database.
+     * @param {ActivityUpdateManyAndReturnArgs} args - Arguments to update many Activities.
+     * @example
+     * // Update many Activities
+     * const activity = await prisma.activity.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more Activities and only return the `id`
+     * const activityWithIdOnly = await prisma.activity.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends ActivityUpdateManyAndReturnArgs>(args: SelectSubset<T, ActivityUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one Activity.
+     * @param {ActivityUpsertArgs} args - Arguments to update or create a Activity.
+     * @example
+     * // Update or create a Activity
+     * const activity = await prisma.activity.upsert({
+     *   create: {
+     *     // ... data to create a Activity
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the Activity we want to update
+     *   }
+     * })
+     */
+    upsert<T extends ActivityUpsertArgs>(args: SelectSubset<T, ActivityUpsertArgs<ExtArgs>>): Prisma__ActivityClient<$Result.GetResult<Prisma.$ActivityPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of Activities.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityCountArgs} args - Arguments to filter Activities to count.
+     * @example
+     * // Count the number of Activities
+     * const count = await prisma.activity.count({
+     *   where: {
+     *     // ... the filter for the Activities we want to count
+     *   }
+     * })
+    **/
+    count<T extends ActivityCountArgs>(
+      args?: Subset<T, ActivityCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], ActivityCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a Activity.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends ActivityAggregateArgs>(args: Subset<T, ActivityAggregateArgs>): Prisma.PrismaPromise<GetActivityAggregateType<T>>
+
+    /**
+     * Group by Activity.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ActivityGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends ActivityGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: ActivityGroupByArgs['orderBy'] }
+        : { orderBy?: ActivityGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, ActivityGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetActivityGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the Activity model
+   */
+  readonly fields: ActivityFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for Activity.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__ActivityClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    user<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the Activity model
+   */
+  interface ActivityFieldRefs {
+    readonly id: FieldRef<"Activity", 'String'>
+    readonly userId: FieldRef<"Activity", 'String'>
+    readonly type: FieldRef<"Activity", 'String'>
+    readonly itemName: FieldRef<"Activity", 'String'>
+    readonly detail: FieldRef<"Activity", 'String'>
+    readonly createdAt: FieldRef<"Activity", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * Activity findUnique
+   */
+  export type ActivityFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter, which Activity to fetch.
+     */
+    where: ActivityWhereUniqueInput
+  }
+
+  /**
+   * Activity findUniqueOrThrow
+   */
+  export type ActivityFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter, which Activity to fetch.
+     */
+    where: ActivityWhereUniqueInput
+  }
+
+  /**
+   * Activity findFirst
+   */
+  export type ActivityFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter, which Activity to fetch.
+     */
+    where?: ActivityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Activities to fetch.
+     */
+    orderBy?: ActivityOrderByWithRelationInput | ActivityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Activities.
+     */
+    cursor?: ActivityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Activities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Activities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Activities.
+     */
+    distinct?: ActivityScalarFieldEnum | ActivityScalarFieldEnum[]
+  }
+
+  /**
+   * Activity findFirstOrThrow
+   */
+  export type ActivityFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter, which Activity to fetch.
+     */
+    where?: ActivityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Activities to fetch.
+     */
+    orderBy?: ActivityOrderByWithRelationInput | ActivityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for Activities.
+     */
+    cursor?: ActivityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Activities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Activities.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of Activities.
+     */
+    distinct?: ActivityScalarFieldEnum | ActivityScalarFieldEnum[]
+  }
+
+  /**
+   * Activity findMany
+   */
+  export type ActivityFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter, which Activities to fetch.
+     */
+    where?: ActivityWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of Activities to fetch.
+     */
+    orderBy?: ActivityOrderByWithRelationInput | ActivityOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing Activities.
+     */
+    cursor?: ActivityWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` Activities from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` Activities.
+     */
+    skip?: number
+    distinct?: ActivityScalarFieldEnum | ActivityScalarFieldEnum[]
+  }
+
+  /**
+   * Activity create
+   */
+  export type ActivityCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * The data needed to create a Activity.
+     */
+    data: XOR<ActivityCreateInput, ActivityUncheckedCreateInput>
+  }
+
+  /**
+   * Activity createMany
+   */
+  export type ActivityCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many Activities.
+     */
+    data: ActivityCreateManyInput | ActivityCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * Activity createManyAndReturn
+   */
+  export type ActivityCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * The data used to create many Activities.
+     */
+    data: ActivityCreateManyInput | ActivityCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * Activity update
+   */
+  export type ActivityUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * The data needed to update a Activity.
+     */
+    data: XOR<ActivityUpdateInput, ActivityUncheckedUpdateInput>
+    /**
+     * Choose, which Activity to update.
+     */
+    where: ActivityWhereUniqueInput
+  }
+
+  /**
+   * Activity updateMany
+   */
+  export type ActivityUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update Activities.
+     */
+    data: XOR<ActivityUpdateManyMutationInput, ActivityUncheckedUpdateManyInput>
+    /**
+     * Filter which Activities to update
+     */
+    where?: ActivityWhereInput
+    /**
+     * Limit how many Activities to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * Activity updateManyAndReturn
+   */
+  export type ActivityUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * The data used to update Activities.
+     */
+    data: XOR<ActivityUpdateManyMutationInput, ActivityUncheckedUpdateManyInput>
+    /**
+     * Filter which Activities to update
+     */
+    where?: ActivityWhereInput
+    /**
+     * Limit how many Activities to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * Activity upsert
+   */
+  export type ActivityUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * The filter to search for the Activity to update in case it exists.
+     */
+    where: ActivityWhereUniqueInput
+    /**
+     * In case the Activity found by the `where` argument doesn't exist, create a new Activity with this data.
+     */
+    create: XOR<ActivityCreateInput, ActivityUncheckedCreateInput>
+    /**
+     * In case the Activity was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<ActivityUpdateInput, ActivityUncheckedUpdateInput>
+  }
+
+  /**
+   * Activity delete
+   */
+  export type ActivityDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+    /**
+     * Filter which Activity to delete.
+     */
+    where: ActivityWhereUniqueInput
+  }
+
+  /**
+   * Activity deleteMany
+   */
+  export type ActivityDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which Activities to delete
+     */
+    where?: ActivityWhereInput
+    /**
+     * Limit how many Activities to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * Activity without action
+   */
+  export type ActivityDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the Activity
+     */
+    select?: ActivitySelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the Activity
+     */
+    omit?: ActivityOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ActivityInclude<ExtArgs> | null
+  }
+
+
+  /**
+   * Model ChatMessage
+   */
+
+  export type AggregateChatMessage = {
+    _count: ChatMessageCountAggregateOutputType | null
+    _min: ChatMessageMinAggregateOutputType | null
+    _max: ChatMessageMaxAggregateOutputType | null
+  }
+
+  export type ChatMessageMinAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    content: string | null
+    createdAt: Date | null
+  }
+
+  export type ChatMessageMaxAggregateOutputType = {
+    id: string | null
+    userId: string | null
+    content: string | null
+    createdAt: Date | null
+  }
+
+  export type ChatMessageCountAggregateOutputType = {
+    id: number
+    userId: number
+    content: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type ChatMessageMinAggregateInputType = {
+    id?: true
+    userId?: true
+    content?: true
+    createdAt?: true
+  }
+
+  export type ChatMessageMaxAggregateInputType = {
+    id?: true
+    userId?: true
+    content?: true
+    createdAt?: true
+  }
+
+  export type ChatMessageCountAggregateInputType = {
+    id?: true
+    userId?: true
+    content?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type ChatMessageAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which ChatMessage to aggregate.
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ChatMessages to fetch.
+     */
+    orderBy?: ChatMessageOrderByWithRelationInput | ChatMessageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: ChatMessageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ChatMessages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ChatMessages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned ChatMessages
+    **/
+    _count?: true | ChatMessageCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: ChatMessageMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: ChatMessageMaxAggregateInputType
+  }
+
+  export type GetChatMessageAggregateType<T extends ChatMessageAggregateArgs> = {
+        [P in keyof T & keyof AggregateChatMessage]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateChatMessage[P]>
+      : GetScalarType<T[P], AggregateChatMessage[P]>
+  }
+
+
+
+
+  export type ChatMessageGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: ChatMessageWhereInput
+    orderBy?: ChatMessageOrderByWithAggregationInput | ChatMessageOrderByWithAggregationInput[]
+    by: ChatMessageScalarFieldEnum[] | ChatMessageScalarFieldEnum
+    having?: ChatMessageScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: ChatMessageCountAggregateInputType | true
+    _min?: ChatMessageMinAggregateInputType
+    _max?: ChatMessageMaxAggregateInputType
+  }
+
+  export type ChatMessageGroupByOutputType = {
+    id: string
+    userId: string
+    content: string
+    createdAt: Date
+    _count: ChatMessageCountAggregateOutputType | null
+    _min: ChatMessageMinAggregateOutputType | null
+    _max: ChatMessageMaxAggregateOutputType | null
+  }
+
+  type GetChatMessageGroupByPayload<T extends ChatMessageGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<ChatMessageGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof ChatMessageGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], ChatMessageGroupByOutputType[P]>
+            : GetScalarType<T[P], ChatMessageGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type ChatMessageSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    content?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["chatMessage"]>
+
+  export type ChatMessageSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    content?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["chatMessage"]>
+
+  export type ChatMessageSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    userId?: boolean
+    content?: boolean
+    createdAt?: boolean
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }, ExtArgs["result"]["chatMessage"]>
+
+  export type ChatMessageSelectScalar = {
+    id?: boolean
+    userId?: boolean
+    content?: boolean
+    createdAt?: boolean
+  }
+
+  export type ChatMessageOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "userId" | "content" | "createdAt", ExtArgs["result"]["chatMessage"]>
+  export type ChatMessageInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type ChatMessageIncludeCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+  export type ChatMessageIncludeUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    user?: boolean | UserDefaultArgs<ExtArgs>
+  }
+
+  export type $ChatMessagePayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "ChatMessage"
+    objects: {
+      user: Prisma.$UserPayload<ExtArgs>
+    }
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      userId: string
+      content: string
+      createdAt: Date
+    }, ExtArgs["result"]["chatMessage"]>
+    composites: {}
+  }
+
+  type ChatMessageGetPayload<S extends boolean | null | undefined | ChatMessageDefaultArgs> = $Result.GetResult<Prisma.$ChatMessagePayload, S>
+
+  type ChatMessageCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<ChatMessageFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: ChatMessageCountAggregateInputType | true
+    }
+
+  export interface ChatMessageDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['ChatMessage'], meta: { name: 'ChatMessage' } }
+    /**
+     * Find zero or one ChatMessage that matches the filter.
+     * @param {ChatMessageFindUniqueArgs} args - Arguments to find a ChatMessage
+     * @example
+     * // Get one ChatMessage
+     * const chatMessage = await prisma.chatMessage.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends ChatMessageFindUniqueArgs>(args: SelectSubset<T, ChatMessageFindUniqueArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one ChatMessage that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {ChatMessageFindUniqueOrThrowArgs} args - Arguments to find a ChatMessage
+     * @example
+     * // Get one ChatMessage
+     * const chatMessage = await prisma.chatMessage.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends ChatMessageFindUniqueOrThrowArgs>(args: SelectSubset<T, ChatMessageFindUniqueOrThrowArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first ChatMessage that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageFindFirstArgs} args - Arguments to find a ChatMessage
+     * @example
+     * // Get one ChatMessage
+     * const chatMessage = await prisma.chatMessage.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends ChatMessageFindFirstArgs>(args?: SelectSubset<T, ChatMessageFindFirstArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first ChatMessage that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageFindFirstOrThrowArgs} args - Arguments to find a ChatMessage
+     * @example
+     * // Get one ChatMessage
+     * const chatMessage = await prisma.chatMessage.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends ChatMessageFindFirstOrThrowArgs>(args?: SelectSubset<T, ChatMessageFindFirstOrThrowArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more ChatMessages that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all ChatMessages
+     * const chatMessages = await prisma.chatMessage.findMany()
+     * 
+     * // Get first 10 ChatMessages
+     * const chatMessages = await prisma.chatMessage.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const chatMessageWithIdOnly = await prisma.chatMessage.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends ChatMessageFindManyArgs>(args?: SelectSubset<T, ChatMessageFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a ChatMessage.
+     * @param {ChatMessageCreateArgs} args - Arguments to create a ChatMessage.
+     * @example
+     * // Create one ChatMessage
+     * const ChatMessage = await prisma.chatMessage.create({
+     *   data: {
+     *     // ... data to create a ChatMessage
+     *   }
+     * })
+     * 
+     */
+    create<T extends ChatMessageCreateArgs>(args: SelectSubset<T, ChatMessageCreateArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many ChatMessages.
+     * @param {ChatMessageCreateManyArgs} args - Arguments to create many ChatMessages.
+     * @example
+     * // Create many ChatMessages
+     * const chatMessage = await prisma.chatMessage.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends ChatMessageCreateManyArgs>(args?: SelectSubset<T, ChatMessageCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many ChatMessages and returns the data saved in the database.
+     * @param {ChatMessageCreateManyAndReturnArgs} args - Arguments to create many ChatMessages.
+     * @example
+     * // Create many ChatMessages
+     * const chatMessage = await prisma.chatMessage.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many ChatMessages and only return the `id`
+     * const chatMessageWithIdOnly = await prisma.chatMessage.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends ChatMessageCreateManyAndReturnArgs>(args?: SelectSubset<T, ChatMessageCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a ChatMessage.
+     * @param {ChatMessageDeleteArgs} args - Arguments to delete one ChatMessage.
+     * @example
+     * // Delete one ChatMessage
+     * const ChatMessage = await prisma.chatMessage.delete({
+     *   where: {
+     *     // ... filter to delete one ChatMessage
+     *   }
+     * })
+     * 
+     */
+    delete<T extends ChatMessageDeleteArgs>(args: SelectSubset<T, ChatMessageDeleteArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one ChatMessage.
+     * @param {ChatMessageUpdateArgs} args - Arguments to update one ChatMessage.
+     * @example
+     * // Update one ChatMessage
+     * const chatMessage = await prisma.chatMessage.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends ChatMessageUpdateArgs>(args: SelectSubset<T, ChatMessageUpdateArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more ChatMessages.
+     * @param {ChatMessageDeleteManyArgs} args - Arguments to filter ChatMessages to delete.
+     * @example
+     * // Delete a few ChatMessages
+     * const { count } = await prisma.chatMessage.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends ChatMessageDeleteManyArgs>(args?: SelectSubset<T, ChatMessageDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more ChatMessages.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many ChatMessages
+     * const chatMessage = await prisma.chatMessage.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends ChatMessageUpdateManyArgs>(args: SelectSubset<T, ChatMessageUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more ChatMessages and returns the data updated in the database.
+     * @param {ChatMessageUpdateManyAndReturnArgs} args - Arguments to update many ChatMessages.
+     * @example
+     * // Update many ChatMessages
+     * const chatMessage = await prisma.chatMessage.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more ChatMessages and only return the `id`
+     * const chatMessageWithIdOnly = await prisma.chatMessage.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends ChatMessageUpdateManyAndReturnArgs>(args: SelectSubset<T, ChatMessageUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one ChatMessage.
+     * @param {ChatMessageUpsertArgs} args - Arguments to update or create a ChatMessage.
+     * @example
+     * // Update or create a ChatMessage
+     * const chatMessage = await prisma.chatMessage.upsert({
+     *   create: {
+     *     // ... data to create a ChatMessage
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the ChatMessage we want to update
+     *   }
+     * })
+     */
+    upsert<T extends ChatMessageUpsertArgs>(args: SelectSubset<T, ChatMessageUpsertArgs<ExtArgs>>): Prisma__ChatMessageClient<$Result.GetResult<Prisma.$ChatMessagePayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of ChatMessages.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageCountArgs} args - Arguments to filter ChatMessages to count.
+     * @example
+     * // Count the number of ChatMessages
+     * const count = await prisma.chatMessage.count({
+     *   where: {
+     *     // ... the filter for the ChatMessages we want to count
+     *   }
+     * })
+    **/
+    count<T extends ChatMessageCountArgs>(
+      args?: Subset<T, ChatMessageCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], ChatMessageCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a ChatMessage.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends ChatMessageAggregateArgs>(args: Subset<T, ChatMessageAggregateArgs>): Prisma.PrismaPromise<GetChatMessageAggregateType<T>>
+
+    /**
+     * Group by ChatMessage.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {ChatMessageGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends ChatMessageGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: ChatMessageGroupByArgs['orderBy'] }
+        : { orderBy?: ChatMessageGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, ChatMessageGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetChatMessageGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the ChatMessage model
+   */
+  readonly fields: ChatMessageFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for ChatMessage.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__ChatMessageClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    user<T extends UserDefaultArgs<ExtArgs> = {}>(args?: Subset<T, UserDefaultArgs<ExtArgs>>): Prisma__UserClient<$Result.GetResult<Prisma.$UserPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions> | Null, Null, ExtArgs, GlobalOmitOptions>
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the ChatMessage model
+   */
+  interface ChatMessageFieldRefs {
+    readonly id: FieldRef<"ChatMessage", 'String'>
+    readonly userId: FieldRef<"ChatMessage", 'String'>
+    readonly content: FieldRef<"ChatMessage", 'String'>
+    readonly createdAt: FieldRef<"ChatMessage", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * ChatMessage findUnique
+   */
+  export type ChatMessageFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter, which ChatMessage to fetch.
+     */
+    where: ChatMessageWhereUniqueInput
+  }
+
+  /**
+   * ChatMessage findUniqueOrThrow
+   */
+  export type ChatMessageFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter, which ChatMessage to fetch.
+     */
+    where: ChatMessageWhereUniqueInput
+  }
+
+  /**
+   * ChatMessage findFirst
+   */
+  export type ChatMessageFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter, which ChatMessage to fetch.
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ChatMessages to fetch.
+     */
+    orderBy?: ChatMessageOrderByWithRelationInput | ChatMessageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for ChatMessages.
+     */
+    cursor?: ChatMessageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ChatMessages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ChatMessages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of ChatMessages.
+     */
+    distinct?: ChatMessageScalarFieldEnum | ChatMessageScalarFieldEnum[]
+  }
+
+  /**
+   * ChatMessage findFirstOrThrow
+   */
+  export type ChatMessageFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter, which ChatMessage to fetch.
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ChatMessages to fetch.
+     */
+    orderBy?: ChatMessageOrderByWithRelationInput | ChatMessageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for ChatMessages.
+     */
+    cursor?: ChatMessageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ChatMessages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ChatMessages.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of ChatMessages.
+     */
+    distinct?: ChatMessageScalarFieldEnum | ChatMessageScalarFieldEnum[]
+  }
+
+  /**
+   * ChatMessage findMany
+   */
+  export type ChatMessageFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter, which ChatMessages to fetch.
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of ChatMessages to fetch.
+     */
+    orderBy?: ChatMessageOrderByWithRelationInput | ChatMessageOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing ChatMessages.
+     */
+    cursor?: ChatMessageWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` ChatMessages from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` ChatMessages.
+     */
+    skip?: number
+    distinct?: ChatMessageScalarFieldEnum | ChatMessageScalarFieldEnum[]
+  }
+
+  /**
+   * ChatMessage create
+   */
+  export type ChatMessageCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * The data needed to create a ChatMessage.
+     */
+    data: XOR<ChatMessageCreateInput, ChatMessageUncheckedCreateInput>
+  }
+
+  /**
+   * ChatMessage createMany
+   */
+  export type ChatMessageCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many ChatMessages.
+     */
+    data: ChatMessageCreateManyInput | ChatMessageCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * ChatMessage createManyAndReturn
+   */
+  export type ChatMessageCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * The data used to create many ChatMessages.
+     */
+    data: ChatMessageCreateManyInput | ChatMessageCreateManyInput[]
+    skipDuplicates?: boolean
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageIncludeCreateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * ChatMessage update
+   */
+  export type ChatMessageUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * The data needed to update a ChatMessage.
+     */
+    data: XOR<ChatMessageUpdateInput, ChatMessageUncheckedUpdateInput>
+    /**
+     * Choose, which ChatMessage to update.
+     */
+    where: ChatMessageWhereUniqueInput
+  }
+
+  /**
+   * ChatMessage updateMany
+   */
+  export type ChatMessageUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update ChatMessages.
+     */
+    data: XOR<ChatMessageUpdateManyMutationInput, ChatMessageUncheckedUpdateManyInput>
+    /**
+     * Filter which ChatMessages to update
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * Limit how many ChatMessages to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * ChatMessage updateManyAndReturn
+   */
+  export type ChatMessageUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * The data used to update ChatMessages.
+     */
+    data: XOR<ChatMessageUpdateManyMutationInput, ChatMessageUncheckedUpdateManyInput>
+    /**
+     * Filter which ChatMessages to update
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * Limit how many ChatMessages to update.
+     */
+    limit?: number
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageIncludeUpdateManyAndReturn<ExtArgs> | null
+  }
+
+  /**
+   * ChatMessage upsert
+   */
+  export type ChatMessageUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * The filter to search for the ChatMessage to update in case it exists.
+     */
+    where: ChatMessageWhereUniqueInput
+    /**
+     * In case the ChatMessage found by the `where` argument doesn't exist, create a new ChatMessage with this data.
+     */
+    create: XOR<ChatMessageCreateInput, ChatMessageUncheckedCreateInput>
+    /**
+     * In case the ChatMessage was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<ChatMessageUpdateInput, ChatMessageUncheckedUpdateInput>
+  }
+
+  /**
+   * ChatMessage delete
+   */
+  export type ChatMessageDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+    /**
+     * Filter which ChatMessage to delete.
+     */
+    where: ChatMessageWhereUniqueInput
+  }
+
+  /**
+   * ChatMessage deleteMany
+   */
+  export type ChatMessageDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which ChatMessages to delete
+     */
+    where?: ChatMessageWhereInput
+    /**
+     * Limit how many ChatMessages to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * ChatMessage without action
+   */
+  export type ChatMessageDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the ChatMessage
+     */
+    select?: ChatMessageSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the ChatMessage
+     */
+    omit?: ChatMessageOmit<ExtArgs> | null
+    /**
+     * Choose, which related nodes to fetch as well
+     */
+    include?: ChatMessageInclude<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -16684,6 +21599,7 @@ export namespace Prisma {
     email: 'email',
     passwordHash: 'passwordHash',
     displayName: 'displayName',
+    role: 'role',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -16828,6 +21744,54 @@ export namespace Prisma {
   };
 
   export type UserMeowMedalScalarFieldEnum = (typeof UserMeowMedalScalarFieldEnum)[keyof typeof UserMeowMedalScalarFieldEnum]
+
+
+  export const UnitScalarFieldEnum: {
+    id: 'id',
+    unitNumber: 'unitNumber',
+    name: 'name',
+    category: 'category',
+    formCount: 'formCount',
+    sortOrder: 'sortOrder',
+    isCollab: 'isCollab',
+    source: 'source',
+    setName: 'setName'
+  };
+
+  export type UnitScalarFieldEnum = (typeof UnitScalarFieldEnum)[keyof typeof UnitScalarFieldEnum]
+
+
+  export const UserUnitProgressScalarFieldEnum: {
+    id: 'id',
+    userId: 'userId',
+    unitId: 'unitId',
+    formLevel: 'formLevel',
+    updatedAt: 'updatedAt'
+  };
+
+  export type UserUnitProgressScalarFieldEnum = (typeof UserUnitProgressScalarFieldEnum)[keyof typeof UserUnitProgressScalarFieldEnum]
+
+
+  export const ActivityScalarFieldEnum: {
+    id: 'id',
+    userId: 'userId',
+    type: 'type',
+    itemName: 'itemName',
+    detail: 'detail',
+    createdAt: 'createdAt'
+  };
+
+  export type ActivityScalarFieldEnum = (typeof ActivityScalarFieldEnum)[keyof typeof ActivityScalarFieldEnum]
+
+
+  export const ChatMessageScalarFieldEnum: {
+    id: 'id',
+    userId: 'userId',
+    content: 'content',
+    createdAt: 'createdAt'
+  };
+
+  export type ChatMessageScalarFieldEnum = (typeof ChatMessageScalarFieldEnum)[keyof typeof ChatMessageScalarFieldEnum]
 
 
   export const SortOrder: {
@@ -16993,6 +21957,20 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'UnitCategory'
+   */
+  export type EnumUnitCategoryFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'UnitCategory'>
+    
+
+
+  /**
+   * Reference to a field of type 'UnitCategory[]'
+   */
+  export type ListEnumUnitCategoryFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'UnitCategory[]'>
+    
+
+
+  /**
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
@@ -17018,6 +21996,7 @@ export namespace Prisma {
     email?: StringNullableFilter<"User"> | string | null
     passwordHash?: StringFilter<"User"> | string
     displayName?: StringNullableFilter<"User"> | string | null
+    role?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -17028,6 +22007,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressListRelationFilter
     catclawProgress?: XOR<UserCatclawProgressNullableScalarRelationFilter, UserCatclawProgressWhereInput> | null
     meowMedalProgress?: UserMeowMedalListRelationFilter
+    unitProgress?: UserUnitProgressListRelationFilter
+    activities?: ActivityListRelationFilter
+    chatMessages?: ChatMessageListRelationFilter
   }
 
   export type UserOrderByWithRelationInput = {
@@ -17036,6 +22018,7 @@ export namespace Prisma {
     email?: SortOrderInput | SortOrder
     passwordHash?: SortOrder
     displayName?: SortOrderInput | SortOrder
+    role?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     privacy?: PrivacySettingsOrderByWithRelationInput
@@ -17046,6 +22029,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressOrderByRelationAggregateInput
     catclawProgress?: UserCatclawProgressOrderByWithRelationInput
     meowMedalProgress?: UserMeowMedalOrderByRelationAggregateInput
+    unitProgress?: UserUnitProgressOrderByRelationAggregateInput
+    activities?: ActivityOrderByRelationAggregateInput
+    chatMessages?: ChatMessageOrderByRelationAggregateInput
   }
 
   export type UserWhereUniqueInput = Prisma.AtLeast<{
@@ -17057,6 +22043,7 @@ export namespace Prisma {
     NOT?: UserWhereInput | UserWhereInput[]
     passwordHash?: StringFilter<"User"> | string
     displayName?: StringNullableFilter<"User"> | string | null
+    role?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -17067,6 +22054,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressListRelationFilter
     catclawProgress?: XOR<UserCatclawProgressNullableScalarRelationFilter, UserCatclawProgressWhereInput> | null
     meowMedalProgress?: UserMeowMedalListRelationFilter
+    unitProgress?: UserUnitProgressListRelationFilter
+    activities?: ActivityListRelationFilter
+    chatMessages?: ChatMessageListRelationFilter
   }, "id" | "username" | "email">
 
   export type UserOrderByWithAggregationInput = {
@@ -17075,6 +22065,7 @@ export namespace Prisma {
     email?: SortOrderInput | SortOrder
     passwordHash?: SortOrder
     displayName?: SortOrderInput | SortOrder
+    role?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
@@ -17091,6 +22082,7 @@ export namespace Prisma {
     email?: StringNullableWithAggregatesFilter<"User"> | string | null
     passwordHash?: StringWithAggregatesFilter<"User"> | string
     displayName?: StringNullableWithAggregatesFilter<"User"> | string | null
+    role?: StringWithAggregatesFilter<"User"> | string
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
@@ -17827,12 +22819,261 @@ export namespace Prisma {
     updatedAt?: DateTimeWithAggregatesFilter<"UserMeowMedal"> | Date | string
   }
 
+  export type UnitWhereInput = {
+    AND?: UnitWhereInput | UnitWhereInput[]
+    OR?: UnitWhereInput[]
+    NOT?: UnitWhereInput | UnitWhereInput[]
+    id?: StringFilter<"Unit"> | string
+    unitNumber?: IntFilter<"Unit"> | number
+    name?: StringFilter<"Unit"> | string
+    category?: EnumUnitCategoryFilter<"Unit"> | $Enums.UnitCategory
+    formCount?: IntFilter<"Unit"> | number
+    sortOrder?: IntFilter<"Unit"> | number
+    isCollab?: BoolFilter<"Unit"> | boolean
+    source?: StringNullableFilter<"Unit"> | string | null
+    setName?: StringNullableFilter<"Unit"> | string | null
+    progress?: UserUnitProgressListRelationFilter
+  }
+
+  export type UnitOrderByWithRelationInput = {
+    id?: SortOrder
+    unitNumber?: SortOrder
+    name?: SortOrder
+    category?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+    isCollab?: SortOrder
+    source?: SortOrderInput | SortOrder
+    setName?: SortOrderInput | SortOrder
+    progress?: UserUnitProgressOrderByRelationAggregateInput
+  }
+
+  export type UnitWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    unitNumber?: number
+    AND?: UnitWhereInput | UnitWhereInput[]
+    OR?: UnitWhereInput[]
+    NOT?: UnitWhereInput | UnitWhereInput[]
+    name?: StringFilter<"Unit"> | string
+    category?: EnumUnitCategoryFilter<"Unit"> | $Enums.UnitCategory
+    formCount?: IntFilter<"Unit"> | number
+    sortOrder?: IntFilter<"Unit"> | number
+    isCollab?: BoolFilter<"Unit"> | boolean
+    source?: StringNullableFilter<"Unit"> | string | null
+    setName?: StringNullableFilter<"Unit"> | string | null
+    progress?: UserUnitProgressListRelationFilter
+  }, "id" | "unitNumber">
+
+  export type UnitOrderByWithAggregationInput = {
+    id?: SortOrder
+    unitNumber?: SortOrder
+    name?: SortOrder
+    category?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+    isCollab?: SortOrder
+    source?: SortOrderInput | SortOrder
+    setName?: SortOrderInput | SortOrder
+    _count?: UnitCountOrderByAggregateInput
+    _avg?: UnitAvgOrderByAggregateInput
+    _max?: UnitMaxOrderByAggregateInput
+    _min?: UnitMinOrderByAggregateInput
+    _sum?: UnitSumOrderByAggregateInput
+  }
+
+  export type UnitScalarWhereWithAggregatesInput = {
+    AND?: UnitScalarWhereWithAggregatesInput | UnitScalarWhereWithAggregatesInput[]
+    OR?: UnitScalarWhereWithAggregatesInput[]
+    NOT?: UnitScalarWhereWithAggregatesInput | UnitScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"Unit"> | string
+    unitNumber?: IntWithAggregatesFilter<"Unit"> | number
+    name?: StringWithAggregatesFilter<"Unit"> | string
+    category?: EnumUnitCategoryWithAggregatesFilter<"Unit"> | $Enums.UnitCategory
+    formCount?: IntWithAggregatesFilter<"Unit"> | number
+    sortOrder?: IntWithAggregatesFilter<"Unit"> | number
+    isCollab?: BoolWithAggregatesFilter<"Unit"> | boolean
+    source?: StringNullableWithAggregatesFilter<"Unit"> | string | null
+    setName?: StringNullableWithAggregatesFilter<"Unit"> | string | null
+  }
+
+  export type UserUnitProgressWhereInput = {
+    AND?: UserUnitProgressWhereInput | UserUnitProgressWhereInput[]
+    OR?: UserUnitProgressWhereInput[]
+    NOT?: UserUnitProgressWhereInput | UserUnitProgressWhereInput[]
+    id?: StringFilter<"UserUnitProgress"> | string
+    userId?: StringFilter<"UserUnitProgress"> | string
+    unitId?: StringFilter<"UserUnitProgress"> | string
+    formLevel?: IntFilter<"UserUnitProgress"> | number
+    updatedAt?: DateTimeFilter<"UserUnitProgress"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+    unit?: XOR<UnitScalarRelationFilter, UnitWhereInput>
+  }
+
+  export type UserUnitProgressOrderByWithRelationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    unitId?: SortOrder
+    formLevel?: SortOrder
+    updatedAt?: SortOrder
+    user?: UserOrderByWithRelationInput
+    unit?: UnitOrderByWithRelationInput
+  }
+
+  export type UserUnitProgressWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    userId_unitId?: UserUnitProgressUserIdUnitIdCompoundUniqueInput
+    AND?: UserUnitProgressWhereInput | UserUnitProgressWhereInput[]
+    OR?: UserUnitProgressWhereInput[]
+    NOT?: UserUnitProgressWhereInput | UserUnitProgressWhereInput[]
+    userId?: StringFilter<"UserUnitProgress"> | string
+    unitId?: StringFilter<"UserUnitProgress"> | string
+    formLevel?: IntFilter<"UserUnitProgress"> | number
+    updatedAt?: DateTimeFilter<"UserUnitProgress"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+    unit?: XOR<UnitScalarRelationFilter, UnitWhereInput>
+  }, "id" | "userId_unitId">
+
+  export type UserUnitProgressOrderByWithAggregationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    unitId?: SortOrder
+    formLevel?: SortOrder
+    updatedAt?: SortOrder
+    _count?: UserUnitProgressCountOrderByAggregateInput
+    _avg?: UserUnitProgressAvgOrderByAggregateInput
+    _max?: UserUnitProgressMaxOrderByAggregateInput
+    _min?: UserUnitProgressMinOrderByAggregateInput
+    _sum?: UserUnitProgressSumOrderByAggregateInput
+  }
+
+  export type UserUnitProgressScalarWhereWithAggregatesInput = {
+    AND?: UserUnitProgressScalarWhereWithAggregatesInput | UserUnitProgressScalarWhereWithAggregatesInput[]
+    OR?: UserUnitProgressScalarWhereWithAggregatesInput[]
+    NOT?: UserUnitProgressScalarWhereWithAggregatesInput | UserUnitProgressScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"UserUnitProgress"> | string
+    userId?: StringWithAggregatesFilter<"UserUnitProgress"> | string
+    unitId?: StringWithAggregatesFilter<"UserUnitProgress"> | string
+    formLevel?: IntWithAggregatesFilter<"UserUnitProgress"> | number
+    updatedAt?: DateTimeWithAggregatesFilter<"UserUnitProgress"> | Date | string
+  }
+
+  export type ActivityWhereInput = {
+    AND?: ActivityWhereInput | ActivityWhereInput[]
+    OR?: ActivityWhereInput[]
+    NOT?: ActivityWhereInput | ActivityWhereInput[]
+    id?: StringFilter<"Activity"> | string
+    userId?: StringFilter<"Activity"> | string
+    type?: StringFilter<"Activity"> | string
+    itemName?: StringNullableFilter<"Activity"> | string | null
+    detail?: StringNullableFilter<"Activity"> | string | null
+    createdAt?: DateTimeFilter<"Activity"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }
+
+  export type ActivityOrderByWithRelationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    type?: SortOrder
+    itemName?: SortOrderInput | SortOrder
+    detail?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    user?: UserOrderByWithRelationInput
+  }
+
+  export type ActivityWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: ActivityWhereInput | ActivityWhereInput[]
+    OR?: ActivityWhereInput[]
+    NOT?: ActivityWhereInput | ActivityWhereInput[]
+    userId?: StringFilter<"Activity"> | string
+    type?: StringFilter<"Activity"> | string
+    itemName?: StringNullableFilter<"Activity"> | string | null
+    detail?: StringNullableFilter<"Activity"> | string | null
+    createdAt?: DateTimeFilter<"Activity"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }, "id">
+
+  export type ActivityOrderByWithAggregationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    type?: SortOrder
+    itemName?: SortOrderInput | SortOrder
+    detail?: SortOrderInput | SortOrder
+    createdAt?: SortOrder
+    _count?: ActivityCountOrderByAggregateInput
+    _max?: ActivityMaxOrderByAggregateInput
+    _min?: ActivityMinOrderByAggregateInput
+  }
+
+  export type ActivityScalarWhereWithAggregatesInput = {
+    AND?: ActivityScalarWhereWithAggregatesInput | ActivityScalarWhereWithAggregatesInput[]
+    OR?: ActivityScalarWhereWithAggregatesInput[]
+    NOT?: ActivityScalarWhereWithAggregatesInput | ActivityScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"Activity"> | string
+    userId?: StringWithAggregatesFilter<"Activity"> | string
+    type?: StringWithAggregatesFilter<"Activity"> | string
+    itemName?: StringNullableWithAggregatesFilter<"Activity"> | string | null
+    detail?: StringNullableWithAggregatesFilter<"Activity"> | string | null
+    createdAt?: DateTimeWithAggregatesFilter<"Activity"> | Date | string
+  }
+
+  export type ChatMessageWhereInput = {
+    AND?: ChatMessageWhereInput | ChatMessageWhereInput[]
+    OR?: ChatMessageWhereInput[]
+    NOT?: ChatMessageWhereInput | ChatMessageWhereInput[]
+    id?: StringFilter<"ChatMessage"> | string
+    userId?: StringFilter<"ChatMessage"> | string
+    content?: StringFilter<"ChatMessage"> | string
+    createdAt?: DateTimeFilter<"ChatMessage"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }
+
+  export type ChatMessageOrderByWithRelationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    content?: SortOrder
+    createdAt?: SortOrder
+    user?: UserOrderByWithRelationInput
+  }
+
+  export type ChatMessageWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: ChatMessageWhereInput | ChatMessageWhereInput[]
+    OR?: ChatMessageWhereInput[]
+    NOT?: ChatMessageWhereInput | ChatMessageWhereInput[]
+    userId?: StringFilter<"ChatMessage"> | string
+    content?: StringFilter<"ChatMessage"> | string
+    createdAt?: DateTimeFilter<"ChatMessage"> | Date | string
+    user?: XOR<UserScalarRelationFilter, UserWhereInput>
+  }, "id">
+
+  export type ChatMessageOrderByWithAggregationInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    content?: SortOrder
+    createdAt?: SortOrder
+    _count?: ChatMessageCountOrderByAggregateInput
+    _max?: ChatMessageMaxOrderByAggregateInput
+    _min?: ChatMessageMinOrderByAggregateInput
+  }
+
+  export type ChatMessageScalarWhereWithAggregatesInput = {
+    AND?: ChatMessageScalarWhereWithAggregatesInput | ChatMessageScalarWhereWithAggregatesInput[]
+    OR?: ChatMessageScalarWhereWithAggregatesInput[]
+    NOT?: ChatMessageScalarWhereWithAggregatesInput | ChatMessageScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"ChatMessage"> | string
+    userId?: StringWithAggregatesFilter<"ChatMessage"> | string
+    content?: StringWithAggregatesFilter<"ChatMessage"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"ChatMessage"> | Date | string
+  }
+
   export type UserCreateInput = {
     id?: string
     username: string
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -17843,6 +23084,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateInput = {
@@ -17851,6 +23095,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -17861,6 +23106,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserUpdateInput = {
@@ -17869,6 +23117,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -17879,6 +23128,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateInput = {
@@ -17887,6 +23139,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -17897,6 +23150,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateManyInput = {
@@ -17905,6 +23161,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -17915,6 +23172,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -17925,6 +23183,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -18657,6 +23916,258 @@ export namespace Prisma {
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
+  export type UnitCreateInput = {
+    id?: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount?: number
+    sortOrder: number
+    isCollab?: boolean
+    source?: string | null
+    setName?: string | null
+    progress?: UserUnitProgressCreateNestedManyWithoutUnitInput
+  }
+
+  export type UnitUncheckedCreateInput = {
+    id?: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount?: number
+    sortOrder: number
+    isCollab?: boolean
+    source?: string | null
+    setName?: string | null
+    progress?: UserUnitProgressUncheckedCreateNestedManyWithoutUnitInput
+  }
+
+  export type UnitUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+    progress?: UserUnitProgressUpdateManyWithoutUnitNestedInput
+  }
+
+  export type UnitUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+    progress?: UserUnitProgressUncheckedUpdateManyWithoutUnitNestedInput
+  }
+
+  export type UnitCreateManyInput = {
+    id?: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount?: number
+    sortOrder: number
+    isCollab?: boolean
+    source?: string | null
+    setName?: string | null
+  }
+
+  export type UnitUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type UnitUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type UserUnitProgressCreateInput = {
+    id?: string
+    formLevel?: number
+    updatedAt?: Date | string
+    user: UserCreateNestedOneWithoutUnitProgressInput
+    unit: UnitCreateNestedOneWithoutProgressInput
+  }
+
+  export type UserUnitProgressUncheckedCreateInput = {
+    id?: string
+    userId: string
+    unitId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    user?: UserUpdateOneRequiredWithoutUnitProgressNestedInput
+    unit?: UnitUpdateOneRequiredWithoutProgressNestedInput
+  }
+
+  export type UserUnitProgressUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    unitId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressCreateManyInput = {
+    id?: string
+    userId: string
+    unitId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    unitId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityCreateInput = {
+    id?: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+    user: UserCreateNestedOneWithoutActivitiesInput
+  }
+
+  export type ActivityUncheckedCreateInput = {
+    id?: string
+    userId: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+  }
+
+  export type ActivityUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    user?: UserUpdateOneRequiredWithoutActivitiesNestedInput
+  }
+
+  export type ActivityUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityCreateManyInput = {
+    id?: string
+    userId: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+  }
+
+  export type ActivityUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageCreateInput = {
+    id?: string
+    content: string
+    createdAt?: Date | string
+    user: UserCreateNestedOneWithoutChatMessagesInput
+  }
+
+  export type ChatMessageUncheckedCreateInput = {
+    id?: string
+    userId: string
+    content: string
+    createdAt?: Date | string
+  }
+
+  export type ChatMessageUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    user?: UserUpdateOneRequiredWithoutChatMessagesNestedInput
+  }
+
+  export type ChatMessageUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageCreateManyInput = {
+    id?: string
+    userId: string
+    content: string
+    createdAt?: Date | string
+  }
+
+  export type ChatMessageUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
     in?: string[] | ListStringFieldRefInput<$PrismaModel>
@@ -18738,6 +24249,24 @@ export namespace Prisma {
     none?: UserMeowMedalWhereInput
   }
 
+  export type UserUnitProgressListRelationFilter = {
+    every?: UserUnitProgressWhereInput
+    some?: UserUnitProgressWhereInput
+    none?: UserUnitProgressWhereInput
+  }
+
+  export type ActivityListRelationFilter = {
+    every?: ActivityWhereInput
+    some?: ActivityWhereInput
+    none?: ActivityWhereInput
+  }
+
+  export type ChatMessageListRelationFilter = {
+    every?: ChatMessageWhereInput
+    some?: ChatMessageWhereInput
+    none?: ChatMessageWhereInput
+  }
+
   export type SortOrderInput = {
     sort: SortOrder
     nulls?: NullsOrder
@@ -18763,12 +24292,25 @@ export namespace Prisma {
     _count?: SortOrder
   }
 
+  export type UserUnitProgressOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type ActivityOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
+  export type ChatMessageOrderByRelationAggregateInput = {
+    _count?: SortOrder
+  }
+
   export type UserCountOrderByAggregateInput = {
     id?: SortOrder
     username?: SortOrder
     email?: SortOrder
     passwordHash?: SortOrder
     displayName?: SortOrder
+    role?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18779,6 +24321,7 @@ export namespace Prisma {
     email?: SortOrder
     passwordHash?: SortOrder
     displayName?: SortOrder
+    role?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -18789,6 +24332,7 @@ export namespace Prisma {
     email?: SortOrder
     passwordHash?: SortOrder
     displayName?: SortOrder
+    role?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -19471,6 +25015,161 @@ export namespace Prisma {
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
 
+  export type EnumUnitCategoryFilter<$PrismaModel = never> = {
+    equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
+    in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    notIn?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    not?: NestedEnumUnitCategoryFilter<$PrismaModel> | $Enums.UnitCategory
+  }
+
+  export type UnitCountOrderByAggregateInput = {
+    id?: SortOrder
+    unitNumber?: SortOrder
+    name?: SortOrder
+    category?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+    isCollab?: SortOrder
+    source?: SortOrder
+    setName?: SortOrder
+  }
+
+  export type UnitAvgOrderByAggregateInput = {
+    unitNumber?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+  }
+
+  export type UnitMaxOrderByAggregateInput = {
+    id?: SortOrder
+    unitNumber?: SortOrder
+    name?: SortOrder
+    category?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+    isCollab?: SortOrder
+    source?: SortOrder
+    setName?: SortOrder
+  }
+
+  export type UnitMinOrderByAggregateInput = {
+    id?: SortOrder
+    unitNumber?: SortOrder
+    name?: SortOrder
+    category?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+    isCollab?: SortOrder
+    source?: SortOrder
+    setName?: SortOrder
+  }
+
+  export type UnitSumOrderByAggregateInput = {
+    unitNumber?: SortOrder
+    formCount?: SortOrder
+    sortOrder?: SortOrder
+  }
+
+  export type EnumUnitCategoryWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
+    in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    notIn?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    not?: NestedEnumUnitCategoryWithAggregatesFilter<$PrismaModel> | $Enums.UnitCategory
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumUnitCategoryFilter<$PrismaModel>
+    _max?: NestedEnumUnitCategoryFilter<$PrismaModel>
+  }
+
+  export type UnitScalarRelationFilter = {
+    is?: UnitWhereInput
+    isNot?: UnitWhereInput
+  }
+
+  export type UserUnitProgressUserIdUnitIdCompoundUniqueInput = {
+    userId: string
+    unitId: string
+  }
+
+  export type UserUnitProgressCountOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    unitId?: SortOrder
+    formLevel?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type UserUnitProgressAvgOrderByAggregateInput = {
+    formLevel?: SortOrder
+  }
+
+  export type UserUnitProgressMaxOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    unitId?: SortOrder
+    formLevel?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type UserUnitProgressMinOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    unitId?: SortOrder
+    formLevel?: SortOrder
+    updatedAt?: SortOrder
+  }
+
+  export type UserUnitProgressSumOrderByAggregateInput = {
+    formLevel?: SortOrder
+  }
+
+  export type ActivityCountOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    type?: SortOrder
+    itemName?: SortOrder
+    detail?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type ActivityMaxOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    type?: SortOrder
+    itemName?: SortOrder
+    detail?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type ActivityMinOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    type?: SortOrder
+    itemName?: SortOrder
+    detail?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type ChatMessageCountOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    content?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type ChatMessageMaxOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    content?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type ChatMessageMinOrderByAggregateInput = {
+    id?: SortOrder
+    userId?: SortOrder
+    content?: SortOrder
+    createdAt?: SortOrder
+  }
+
   export type PrivacySettingsCreateNestedOneWithoutUserInput = {
     create?: XOR<PrivacySettingsCreateWithoutUserInput, PrivacySettingsUncheckedCreateWithoutUserInput>
     connectOrCreate?: PrivacySettingsCreateOrConnectWithoutUserInput
@@ -19525,6 +25224,27 @@ export namespace Prisma {
     connect?: UserMeowMedalWhereUniqueInput | UserMeowMedalWhereUniqueInput[]
   }
 
+  export type UserUnitProgressCreateNestedManyWithoutUserInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput> | UserUnitProgressCreateWithoutUserInput[] | UserUnitProgressUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUserInput | UserUnitProgressCreateOrConnectWithoutUserInput[]
+    createMany?: UserUnitProgressCreateManyUserInputEnvelope
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+  }
+
+  export type ActivityCreateNestedManyWithoutUserInput = {
+    create?: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput> | ActivityCreateWithoutUserInput[] | ActivityUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ActivityCreateOrConnectWithoutUserInput | ActivityCreateOrConnectWithoutUserInput[]
+    createMany?: ActivityCreateManyUserInputEnvelope
+    connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+  }
+
+  export type ChatMessageCreateNestedManyWithoutUserInput = {
+    create?: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput> | ChatMessageCreateWithoutUserInput[] | ChatMessageUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ChatMessageCreateOrConnectWithoutUserInput | ChatMessageCreateOrConnectWithoutUserInput[]
+    createMany?: ChatMessageCreateManyUserInputEnvelope
+    connect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+  }
+
   export type PrivacySettingsUncheckedCreateNestedOneWithoutUserInput = {
     create?: XOR<PrivacySettingsCreateWithoutUserInput, PrivacySettingsUncheckedCreateWithoutUserInput>
     connectOrCreate?: PrivacySettingsCreateOrConnectWithoutUserInput
@@ -19577,6 +25297,27 @@ export namespace Prisma {
     connectOrCreate?: UserMeowMedalCreateOrConnectWithoutUserInput | UserMeowMedalCreateOrConnectWithoutUserInput[]
     createMany?: UserMeowMedalCreateManyUserInputEnvelope
     connect?: UserMeowMedalWhereUniqueInput | UserMeowMedalWhereUniqueInput[]
+  }
+
+  export type UserUnitProgressUncheckedCreateNestedManyWithoutUserInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput> | UserUnitProgressCreateWithoutUserInput[] | UserUnitProgressUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUserInput | UserUnitProgressCreateOrConnectWithoutUserInput[]
+    createMany?: UserUnitProgressCreateManyUserInputEnvelope
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+  }
+
+  export type ActivityUncheckedCreateNestedManyWithoutUserInput = {
+    create?: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput> | ActivityCreateWithoutUserInput[] | ActivityUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ActivityCreateOrConnectWithoutUserInput | ActivityCreateOrConnectWithoutUserInput[]
+    createMany?: ActivityCreateManyUserInputEnvelope
+    connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+  }
+
+  export type ChatMessageUncheckedCreateNestedManyWithoutUserInput = {
+    create?: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput> | ChatMessageCreateWithoutUserInput[] | ChatMessageUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ChatMessageCreateOrConnectWithoutUserInput | ChatMessageCreateOrConnectWithoutUserInput[]
+    createMany?: ChatMessageCreateManyUserInputEnvelope
+    connect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
   }
 
   export type StringFieldUpdateOperationsInput = {
@@ -19695,6 +25436,48 @@ export namespace Prisma {
     deleteMany?: UserMeowMedalScalarWhereInput | UserMeowMedalScalarWhereInput[]
   }
 
+  export type UserUnitProgressUpdateManyWithoutUserNestedInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput> | UserUnitProgressCreateWithoutUserInput[] | UserUnitProgressUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUserInput | UserUnitProgressCreateOrConnectWithoutUserInput[]
+    upsert?: UserUnitProgressUpsertWithWhereUniqueWithoutUserInput | UserUnitProgressUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: UserUnitProgressCreateManyUserInputEnvelope
+    set?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    disconnect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    delete?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    update?: UserUnitProgressUpdateWithWhereUniqueWithoutUserInput | UserUnitProgressUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: UserUnitProgressUpdateManyWithWhereWithoutUserInput | UserUnitProgressUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+  }
+
+  export type ActivityUpdateManyWithoutUserNestedInput = {
+    create?: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput> | ActivityCreateWithoutUserInput[] | ActivityUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ActivityCreateOrConnectWithoutUserInput | ActivityCreateOrConnectWithoutUserInput[]
+    upsert?: ActivityUpsertWithWhereUniqueWithoutUserInput | ActivityUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: ActivityCreateManyUserInputEnvelope
+    set?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    disconnect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    delete?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    update?: ActivityUpdateWithWhereUniqueWithoutUserInput | ActivityUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: ActivityUpdateManyWithWhereWithoutUserInput | ActivityUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
+  }
+
+  export type ChatMessageUpdateManyWithoutUserNestedInput = {
+    create?: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput> | ChatMessageCreateWithoutUserInput[] | ChatMessageUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ChatMessageCreateOrConnectWithoutUserInput | ChatMessageCreateOrConnectWithoutUserInput[]
+    upsert?: ChatMessageUpsertWithWhereUniqueWithoutUserInput | ChatMessageUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: ChatMessageCreateManyUserInputEnvelope
+    set?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    disconnect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    delete?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    connect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    update?: ChatMessageUpdateWithWhereUniqueWithoutUserInput | ChatMessageUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: ChatMessageUpdateManyWithWhereWithoutUserInput | ChatMessageUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: ChatMessageScalarWhereInput | ChatMessageScalarWhereInput[]
+  }
+
   export type PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput = {
     create?: XOR<PrivacySettingsCreateWithoutUserInput, PrivacySettingsUncheckedCreateWithoutUserInput>
     connectOrCreate?: PrivacySettingsCreateOrConnectWithoutUserInput
@@ -19797,6 +25580,48 @@ export namespace Prisma {
     update?: UserMeowMedalUpdateWithWhereUniqueWithoutUserInput | UserMeowMedalUpdateWithWhereUniqueWithoutUserInput[]
     updateMany?: UserMeowMedalUpdateManyWithWhereWithoutUserInput | UserMeowMedalUpdateManyWithWhereWithoutUserInput[]
     deleteMany?: UserMeowMedalScalarWhereInput | UserMeowMedalScalarWhereInput[]
+  }
+
+  export type UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput> | UserUnitProgressCreateWithoutUserInput[] | UserUnitProgressUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUserInput | UserUnitProgressCreateOrConnectWithoutUserInput[]
+    upsert?: UserUnitProgressUpsertWithWhereUniqueWithoutUserInput | UserUnitProgressUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: UserUnitProgressCreateManyUserInputEnvelope
+    set?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    disconnect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    delete?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    update?: UserUnitProgressUpdateWithWhereUniqueWithoutUserInput | UserUnitProgressUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: UserUnitProgressUpdateManyWithWhereWithoutUserInput | UserUnitProgressUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+  }
+
+  export type ActivityUncheckedUpdateManyWithoutUserNestedInput = {
+    create?: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput> | ActivityCreateWithoutUserInput[] | ActivityUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ActivityCreateOrConnectWithoutUserInput | ActivityCreateOrConnectWithoutUserInput[]
+    upsert?: ActivityUpsertWithWhereUniqueWithoutUserInput | ActivityUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: ActivityCreateManyUserInputEnvelope
+    set?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    disconnect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    delete?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    connect?: ActivityWhereUniqueInput | ActivityWhereUniqueInput[]
+    update?: ActivityUpdateWithWhereUniqueWithoutUserInput | ActivityUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: ActivityUpdateManyWithWhereWithoutUserInput | ActivityUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
+  }
+
+  export type ChatMessageUncheckedUpdateManyWithoutUserNestedInput = {
+    create?: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput> | ChatMessageCreateWithoutUserInput[] | ChatMessageUncheckedCreateWithoutUserInput[]
+    connectOrCreate?: ChatMessageCreateOrConnectWithoutUserInput | ChatMessageCreateOrConnectWithoutUserInput[]
+    upsert?: ChatMessageUpsertWithWhereUniqueWithoutUserInput | ChatMessageUpsertWithWhereUniqueWithoutUserInput[]
+    createMany?: ChatMessageCreateManyUserInputEnvelope
+    set?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    disconnect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    delete?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    connect?: ChatMessageWhereUniqueInput | ChatMessageWhereUniqueInput[]
+    update?: ChatMessageUpdateWithWhereUniqueWithoutUserInput | ChatMessageUpdateWithWhereUniqueWithoutUserInput[]
+    updateMany?: ChatMessageUpdateManyWithWhereWithoutUserInput | ChatMessageUpdateManyWithWhereWithoutUserInput[]
+    deleteMany?: ChatMessageScalarWhereInput | ChatMessageScalarWhereInput[]
   }
 
   export type UserCreateNestedOneWithoutPrivacyInput = {
@@ -20239,6 +26064,108 @@ export namespace Prisma {
     update?: XOR<XOR<MeowMedalUpdateToOneWithWhereWithoutEarnedByInput, MeowMedalUpdateWithoutEarnedByInput>, MeowMedalUncheckedUpdateWithoutEarnedByInput>
   }
 
+  export type UserUnitProgressCreateNestedManyWithoutUnitInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput> | UserUnitProgressCreateWithoutUnitInput[] | UserUnitProgressUncheckedCreateWithoutUnitInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUnitInput | UserUnitProgressCreateOrConnectWithoutUnitInput[]
+    createMany?: UserUnitProgressCreateManyUnitInputEnvelope
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+  }
+
+  export type UserUnitProgressUncheckedCreateNestedManyWithoutUnitInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput> | UserUnitProgressCreateWithoutUnitInput[] | UserUnitProgressUncheckedCreateWithoutUnitInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUnitInput | UserUnitProgressCreateOrConnectWithoutUnitInput[]
+    createMany?: UserUnitProgressCreateManyUnitInputEnvelope
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+  }
+
+  export type EnumUnitCategoryFieldUpdateOperationsInput = {
+    set?: $Enums.UnitCategory
+  }
+
+  export type UserUnitProgressUpdateManyWithoutUnitNestedInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput> | UserUnitProgressCreateWithoutUnitInput[] | UserUnitProgressUncheckedCreateWithoutUnitInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUnitInput | UserUnitProgressCreateOrConnectWithoutUnitInput[]
+    upsert?: UserUnitProgressUpsertWithWhereUniqueWithoutUnitInput | UserUnitProgressUpsertWithWhereUniqueWithoutUnitInput[]
+    createMany?: UserUnitProgressCreateManyUnitInputEnvelope
+    set?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    disconnect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    delete?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    update?: UserUnitProgressUpdateWithWhereUniqueWithoutUnitInput | UserUnitProgressUpdateWithWhereUniqueWithoutUnitInput[]
+    updateMany?: UserUnitProgressUpdateManyWithWhereWithoutUnitInput | UserUnitProgressUpdateManyWithWhereWithoutUnitInput[]
+    deleteMany?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+  }
+
+  export type UserUnitProgressUncheckedUpdateManyWithoutUnitNestedInput = {
+    create?: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput> | UserUnitProgressCreateWithoutUnitInput[] | UserUnitProgressUncheckedCreateWithoutUnitInput[]
+    connectOrCreate?: UserUnitProgressCreateOrConnectWithoutUnitInput | UserUnitProgressCreateOrConnectWithoutUnitInput[]
+    upsert?: UserUnitProgressUpsertWithWhereUniqueWithoutUnitInput | UserUnitProgressUpsertWithWhereUniqueWithoutUnitInput[]
+    createMany?: UserUnitProgressCreateManyUnitInputEnvelope
+    set?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    disconnect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    delete?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    connect?: UserUnitProgressWhereUniqueInput | UserUnitProgressWhereUniqueInput[]
+    update?: UserUnitProgressUpdateWithWhereUniqueWithoutUnitInput | UserUnitProgressUpdateWithWhereUniqueWithoutUnitInput[]
+    updateMany?: UserUnitProgressUpdateManyWithWhereWithoutUnitInput | UserUnitProgressUpdateManyWithWhereWithoutUnitInput[]
+    deleteMany?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+  }
+
+  export type UserCreateNestedOneWithoutUnitProgressInput = {
+    create?: XOR<UserCreateWithoutUnitProgressInput, UserUncheckedCreateWithoutUnitProgressInput>
+    connectOrCreate?: UserCreateOrConnectWithoutUnitProgressInput
+    connect?: UserWhereUniqueInput
+  }
+
+  export type UnitCreateNestedOneWithoutProgressInput = {
+    create?: XOR<UnitCreateWithoutProgressInput, UnitUncheckedCreateWithoutProgressInput>
+    connectOrCreate?: UnitCreateOrConnectWithoutProgressInput
+    connect?: UnitWhereUniqueInput
+  }
+
+  export type UserUpdateOneRequiredWithoutUnitProgressNestedInput = {
+    create?: XOR<UserCreateWithoutUnitProgressInput, UserUncheckedCreateWithoutUnitProgressInput>
+    connectOrCreate?: UserCreateOrConnectWithoutUnitProgressInput
+    upsert?: UserUpsertWithoutUnitProgressInput
+    connect?: UserWhereUniqueInput
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutUnitProgressInput, UserUpdateWithoutUnitProgressInput>, UserUncheckedUpdateWithoutUnitProgressInput>
+  }
+
+  export type UnitUpdateOneRequiredWithoutProgressNestedInput = {
+    create?: XOR<UnitCreateWithoutProgressInput, UnitUncheckedCreateWithoutProgressInput>
+    connectOrCreate?: UnitCreateOrConnectWithoutProgressInput
+    upsert?: UnitUpsertWithoutProgressInput
+    connect?: UnitWhereUniqueInput
+    update?: XOR<XOR<UnitUpdateToOneWithWhereWithoutProgressInput, UnitUpdateWithoutProgressInput>, UnitUncheckedUpdateWithoutProgressInput>
+  }
+
+  export type UserCreateNestedOneWithoutActivitiesInput = {
+    create?: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutActivitiesInput
+    connect?: UserWhereUniqueInput
+  }
+
+  export type UserUpdateOneRequiredWithoutActivitiesNestedInput = {
+    create?: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutActivitiesInput
+    upsert?: UserUpsertWithoutActivitiesInput
+    connect?: UserWhereUniqueInput
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutActivitiesInput, UserUpdateWithoutActivitiesInput>, UserUncheckedUpdateWithoutActivitiesInput>
+  }
+
+  export type UserCreateNestedOneWithoutChatMessagesInput = {
+    create?: XOR<UserCreateWithoutChatMessagesInput, UserUncheckedCreateWithoutChatMessagesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutChatMessagesInput
+    connect?: UserWhereUniqueInput
+  }
+
+  export type UserUpdateOneRequiredWithoutChatMessagesNestedInput = {
+    create?: XOR<UserCreateWithoutChatMessagesInput, UserUncheckedCreateWithoutChatMessagesInput>
+    connectOrCreate?: UserCreateOrConnectWithoutChatMessagesInput
+    upsert?: UserUpsertWithoutChatMessagesInput
+    connect?: UserWhereUniqueInput
+    update?: XOR<XOR<UserUpdateToOneWithWhereWithoutChatMessagesInput, UserUpdateWithoutChatMessagesInput>, UserUncheckedUpdateWithoutChatMessagesInput>
+  }
+
   export type NestedStringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
     in?: string[] | ListStringFieldRefInput<$PrismaModel>
@@ -20542,6 +26469,23 @@ export namespace Prisma {
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
 
+  export type NestedEnumUnitCategoryFilter<$PrismaModel = never> = {
+    equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
+    in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    notIn?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    not?: NestedEnumUnitCategoryFilter<$PrismaModel> | $Enums.UnitCategory
+  }
+
+  export type NestedEnumUnitCategoryWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
+    in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    notIn?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
+    not?: NestedEnumUnitCategoryWithAggregatesFilter<$PrismaModel> | $Enums.UnitCategory
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumUnitCategoryFilter<$PrismaModel>
+    _max?: NestedEnumUnitCategoryFilter<$PrismaModel>
+  }
+
   export type PrivacySettingsCreateWithoutUserInput = {
     profileVisibility?: $Enums.Visibility
     progressVisibility?: $Enums.Visibility
@@ -20735,6 +26679,78 @@ export namespace Prisma {
 
   export type UserMeowMedalCreateManyUserInputEnvelope = {
     data: UserMeowMedalCreateManyUserInput | UserMeowMedalCreateManyUserInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type UserUnitProgressCreateWithoutUserInput = {
+    id?: string
+    formLevel?: number
+    updatedAt?: Date | string
+    unit: UnitCreateNestedOneWithoutProgressInput
+  }
+
+  export type UserUnitProgressUncheckedCreateWithoutUserInput = {
+    id?: string
+    unitId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressCreateOrConnectWithoutUserInput = {
+    where: UserUnitProgressWhereUniqueInput
+    create: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput>
+  }
+
+  export type UserUnitProgressCreateManyUserInputEnvelope = {
+    data: UserUnitProgressCreateManyUserInput | UserUnitProgressCreateManyUserInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type ActivityCreateWithoutUserInput = {
+    id?: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+  }
+
+  export type ActivityUncheckedCreateWithoutUserInput = {
+    id?: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+  }
+
+  export type ActivityCreateOrConnectWithoutUserInput = {
+    where: ActivityWhereUniqueInput
+    create: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput>
+  }
+
+  export type ActivityCreateManyUserInputEnvelope = {
+    data: ActivityCreateManyUserInput | ActivityCreateManyUserInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type ChatMessageCreateWithoutUserInput = {
+    id?: string
+    content: string
+    createdAt?: Date | string
+  }
+
+  export type ChatMessageUncheckedCreateWithoutUserInput = {
+    id?: string
+    content: string
+    createdAt?: Date | string
+  }
+
+  export type ChatMessageCreateOrConnectWithoutUserInput = {
+    where: ChatMessageWhereUniqueInput
+    create: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput>
+  }
+
+  export type ChatMessageCreateManyUserInputEnvelope = {
+    data: ChatMessageCreateManyUserInput | ChatMessageCreateManyUserInput[]
     skipDuplicates?: boolean
   }
 
@@ -20944,12 +26960,94 @@ export namespace Prisma {
     updatedAt?: DateTimeFilter<"UserMeowMedal"> | Date | string
   }
 
+  export type UserUnitProgressUpsertWithWhereUniqueWithoutUserInput = {
+    where: UserUnitProgressWhereUniqueInput
+    update: XOR<UserUnitProgressUpdateWithoutUserInput, UserUnitProgressUncheckedUpdateWithoutUserInput>
+    create: XOR<UserUnitProgressCreateWithoutUserInput, UserUnitProgressUncheckedCreateWithoutUserInput>
+  }
+
+  export type UserUnitProgressUpdateWithWhereUniqueWithoutUserInput = {
+    where: UserUnitProgressWhereUniqueInput
+    data: XOR<UserUnitProgressUpdateWithoutUserInput, UserUnitProgressUncheckedUpdateWithoutUserInput>
+  }
+
+  export type UserUnitProgressUpdateManyWithWhereWithoutUserInput = {
+    where: UserUnitProgressScalarWhereInput
+    data: XOR<UserUnitProgressUpdateManyMutationInput, UserUnitProgressUncheckedUpdateManyWithoutUserInput>
+  }
+
+  export type UserUnitProgressScalarWhereInput = {
+    AND?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+    OR?: UserUnitProgressScalarWhereInput[]
+    NOT?: UserUnitProgressScalarWhereInput | UserUnitProgressScalarWhereInput[]
+    id?: StringFilter<"UserUnitProgress"> | string
+    userId?: StringFilter<"UserUnitProgress"> | string
+    unitId?: StringFilter<"UserUnitProgress"> | string
+    formLevel?: IntFilter<"UserUnitProgress"> | number
+    updatedAt?: DateTimeFilter<"UserUnitProgress"> | Date | string
+  }
+
+  export type ActivityUpsertWithWhereUniqueWithoutUserInput = {
+    where: ActivityWhereUniqueInput
+    update: XOR<ActivityUpdateWithoutUserInput, ActivityUncheckedUpdateWithoutUserInput>
+    create: XOR<ActivityCreateWithoutUserInput, ActivityUncheckedCreateWithoutUserInput>
+  }
+
+  export type ActivityUpdateWithWhereUniqueWithoutUserInput = {
+    where: ActivityWhereUniqueInput
+    data: XOR<ActivityUpdateWithoutUserInput, ActivityUncheckedUpdateWithoutUserInput>
+  }
+
+  export type ActivityUpdateManyWithWhereWithoutUserInput = {
+    where: ActivityScalarWhereInput
+    data: XOR<ActivityUpdateManyMutationInput, ActivityUncheckedUpdateManyWithoutUserInput>
+  }
+
+  export type ActivityScalarWhereInput = {
+    AND?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
+    OR?: ActivityScalarWhereInput[]
+    NOT?: ActivityScalarWhereInput | ActivityScalarWhereInput[]
+    id?: StringFilter<"Activity"> | string
+    userId?: StringFilter<"Activity"> | string
+    type?: StringFilter<"Activity"> | string
+    itemName?: StringNullableFilter<"Activity"> | string | null
+    detail?: StringNullableFilter<"Activity"> | string | null
+    createdAt?: DateTimeFilter<"Activity"> | Date | string
+  }
+
+  export type ChatMessageUpsertWithWhereUniqueWithoutUserInput = {
+    where: ChatMessageWhereUniqueInput
+    update: XOR<ChatMessageUpdateWithoutUserInput, ChatMessageUncheckedUpdateWithoutUserInput>
+    create: XOR<ChatMessageCreateWithoutUserInput, ChatMessageUncheckedCreateWithoutUserInput>
+  }
+
+  export type ChatMessageUpdateWithWhereUniqueWithoutUserInput = {
+    where: ChatMessageWhereUniqueInput
+    data: XOR<ChatMessageUpdateWithoutUserInput, ChatMessageUncheckedUpdateWithoutUserInput>
+  }
+
+  export type ChatMessageUpdateManyWithWhereWithoutUserInput = {
+    where: ChatMessageScalarWhereInput
+    data: XOR<ChatMessageUpdateManyMutationInput, ChatMessageUncheckedUpdateManyWithoutUserInput>
+  }
+
+  export type ChatMessageScalarWhereInput = {
+    AND?: ChatMessageScalarWhereInput | ChatMessageScalarWhereInput[]
+    OR?: ChatMessageScalarWhereInput[]
+    NOT?: ChatMessageScalarWhereInput | ChatMessageScalarWhereInput[]
+    id?: StringFilter<"ChatMessage"> | string
+    userId?: StringFilter<"ChatMessage"> | string
+    content?: StringFilter<"ChatMessage"> | string
+    createdAt?: DateTimeFilter<"ChatMessage"> | Date | string
+  }
+
   export type UserCreateWithoutPrivacyInput = {
     id?: string
     username: string
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
@@ -20959,6 +27057,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutPrivacyInput = {
@@ -20967,6 +27068,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
@@ -20976,6 +27078,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutPrivacyInput = {
@@ -21000,6 +27105,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
@@ -21009,6 +27115,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutPrivacyInput = {
@@ -21017,6 +27126,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
@@ -21026,6 +27136,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserCreateWithoutSentFriendRequestsInput = {
@@ -21034,6 +27147,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21043,6 +27157,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutSentFriendRequestsInput = {
@@ -21051,6 +27168,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21060,6 +27178,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutSentFriendRequestsInput = {
@@ -21073,6 +27194,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21082,6 +27204,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutReceivedFriendRequestsInput = {
@@ -21090,6 +27215,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21099,6 +27225,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutReceivedFriendRequestsInput = {
@@ -21123,6 +27252,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21132,6 +27262,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutSentFriendRequestsInput = {
@@ -21140,6 +27273,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21149,6 +27283,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserUpsertWithoutReceivedFriendRequestsInput = {
@@ -21168,6 +27305,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21177,6 +27315,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutReceivedFriendRequestsInput = {
@@ -21185,6 +27326,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21194,6 +27336,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserStoryProgressCreateWithoutChapterInput = {
@@ -21246,6 +27391,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21255,6 +27401,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutStoryProgressInput = {
@@ -21263,6 +27412,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21272,6 +27422,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutStoryProgressInput = {
@@ -21317,6 +27470,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21326,6 +27480,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutStoryProgressInput = {
@@ -21334,6 +27491,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21343,6 +27501,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type StoryChapterUpsertWithoutProgressInput = {
@@ -21512,6 +27673,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21521,6 +27683,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutLegendProgressInput = {
@@ -21529,6 +27694,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21538,6 +27704,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutLegendProgressInput = {
@@ -21581,6 +27750,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21590,6 +27760,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutLegendProgressInput = {
@@ -21598,6 +27771,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21607,6 +27781,9 @@ export namespace Prisma {
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type LegendSubchapterUpsertWithoutProgressInput = {
@@ -21682,6 +27859,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21691,6 +27869,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutMilestoneProgressInput = {
@@ -21699,6 +27880,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21708,6 +27890,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutMilestoneProgressInput = {
@@ -21751,6 +27936,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21760,6 +27946,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutMilestoneProgressInput = {
@@ -21768,6 +27957,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21777,6 +27967,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type MilestoneUpsertWithoutProgressInput = {
@@ -21810,6 +28003,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21819,6 +28013,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutCatclawProgressInput = {
@@ -21827,6 +28024,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21836,6 +28034,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutCatclawProgressInput = {
@@ -21860,6 +28061,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -21869,6 +28071,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutCatclawProgressInput = {
@@ -21877,6 +28082,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -21886,6 +28092,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type UserMeowMedalCreateWithoutMeowMedalInput = {
@@ -21936,6 +28145,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -21945,6 +28155,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
     milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
   }
 
   export type UserUncheckedCreateWithoutMeowMedalProgressInput = {
@@ -21953,6 +28166,7 @@ export namespace Prisma {
     email?: string | null
     passwordHash: string
     displayName?: string | null
+    role?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -21962,6 +28176,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
     milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
     catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
   }
 
   export type UserCreateOrConnectWithoutMeowMedalProgressInput = {
@@ -22017,6 +28234,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -22026,6 +28244,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
     milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
   }
 
   export type UserUncheckedUpdateWithoutMeowMedalProgressInput = {
@@ -22034,6 +28255,7 @@ export namespace Prisma {
     email?: NullableStringFieldUpdateOperationsInput | string | null
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -22043,6 +28265,9 @@ export namespace Prisma {
     legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
     milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
     catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type MeowMedalUpsertWithoutEarnedByInput = {
@@ -22080,6 +28305,410 @@ export namespace Prisma {
     imageFile?: NullableStringFieldUpdateOperationsInput | string | null
     autoKey?: NullableStringFieldUpdateOperationsInput | string | null
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressCreateWithoutUnitInput = {
+    id?: string
+    formLevel?: number
+    updatedAt?: Date | string
+    user: UserCreateNestedOneWithoutUnitProgressInput
+  }
+
+  export type UserUnitProgressUncheckedCreateWithoutUnitInput = {
+    id?: string
+    userId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressCreateOrConnectWithoutUnitInput = {
+    where: UserUnitProgressWhereUniqueInput
+    create: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput>
+  }
+
+  export type UserUnitProgressCreateManyUnitInputEnvelope = {
+    data: UserUnitProgressCreateManyUnitInput | UserUnitProgressCreateManyUnitInput[]
+    skipDuplicates?: boolean
+  }
+
+  export type UserUnitProgressUpsertWithWhereUniqueWithoutUnitInput = {
+    where: UserUnitProgressWhereUniqueInput
+    update: XOR<UserUnitProgressUpdateWithoutUnitInput, UserUnitProgressUncheckedUpdateWithoutUnitInput>
+    create: XOR<UserUnitProgressCreateWithoutUnitInput, UserUnitProgressUncheckedCreateWithoutUnitInput>
+  }
+
+  export type UserUnitProgressUpdateWithWhereUniqueWithoutUnitInput = {
+    where: UserUnitProgressWhereUniqueInput
+    data: XOR<UserUnitProgressUpdateWithoutUnitInput, UserUnitProgressUncheckedUpdateWithoutUnitInput>
+  }
+
+  export type UserUnitProgressUpdateManyWithWhereWithoutUnitInput = {
+    where: UserUnitProgressScalarWhereInput
+    data: XOR<UserUnitProgressUpdateManyMutationInput, UserUnitProgressUncheckedUpdateManyWithoutUnitInput>
+  }
+
+  export type UserCreateWithoutUnitProgressInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
+  }
+
+  export type UserUncheckedCreateWithoutUnitProgressInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressUncheckedCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
+  }
+
+  export type UserCreateOrConnectWithoutUnitProgressInput = {
+    where: UserWhereUniqueInput
+    create: XOR<UserCreateWithoutUnitProgressInput, UserUncheckedCreateWithoutUnitProgressInput>
+  }
+
+  export type UnitCreateWithoutProgressInput = {
+    id?: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount?: number
+    sortOrder: number
+    isCollab?: boolean
+    source?: string | null
+    setName?: string | null
+  }
+
+  export type UnitUncheckedCreateWithoutProgressInput = {
+    id?: string
+    unitNumber: number
+    name: string
+    category: $Enums.UnitCategory
+    formCount?: number
+    sortOrder: number
+    isCollab?: boolean
+    source?: string | null
+    setName?: string | null
+  }
+
+  export type UnitCreateOrConnectWithoutProgressInput = {
+    where: UnitWhereUniqueInput
+    create: XOR<UnitCreateWithoutProgressInput, UnitUncheckedCreateWithoutProgressInput>
+  }
+
+  export type UserUpsertWithoutUnitProgressInput = {
+    update: XOR<UserUpdateWithoutUnitProgressInput, UserUncheckedUpdateWithoutUnitProgressInput>
+    create: XOR<UserCreateWithoutUnitProgressInput, UserUncheckedCreateWithoutUnitProgressInput>
+    where?: UserWhereInput
+  }
+
+  export type UserUpdateToOneWithWhereWithoutUnitProgressInput = {
+    where?: UserWhereInput
+    data: XOR<UserUpdateWithoutUnitProgressInput, UserUncheckedUpdateWithoutUnitProgressInput>
+  }
+
+  export type UserUpdateWithoutUnitProgressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserUncheckedUpdateWithoutUnitProgressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUncheckedUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUncheckedUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
+  }
+
+  export type UnitUpsertWithoutProgressInput = {
+    update: XOR<UnitUpdateWithoutProgressInput, UnitUncheckedUpdateWithoutProgressInput>
+    create: XOR<UnitCreateWithoutProgressInput, UnitUncheckedCreateWithoutProgressInput>
+    where?: UnitWhereInput
+  }
+
+  export type UnitUpdateToOneWithWhereWithoutProgressInput = {
+    where?: UnitWhereInput
+    data: XOR<UnitUpdateWithoutProgressInput, UnitUncheckedUpdateWithoutProgressInput>
+  }
+
+  export type UnitUpdateWithoutProgressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type UnitUncheckedUpdateWithoutProgressInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitNumber?: IntFieldUpdateOperationsInput | number
+    name?: StringFieldUpdateOperationsInput | string
+    category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
+    formCount?: IntFieldUpdateOperationsInput | number
+    sortOrder?: IntFieldUpdateOperationsInput | number
+    isCollab?: BoolFieldUpdateOperationsInput | boolean
+    source?: NullableStringFieldUpdateOperationsInput | string | null
+    setName?: NullableStringFieldUpdateOperationsInput | string | null
+  }
+
+  export type UserCreateWithoutActivitiesInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageCreateNestedManyWithoutUserInput
+  }
+
+  export type UserUncheckedCreateWithoutActivitiesInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressUncheckedCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    chatMessages?: ChatMessageUncheckedCreateNestedManyWithoutUserInput
+  }
+
+  export type UserCreateOrConnectWithoutActivitiesInput = {
+    where: UserWhereUniqueInput
+    create: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+  }
+
+  export type UserUpsertWithoutActivitiesInput = {
+    update: XOR<UserUpdateWithoutActivitiesInput, UserUncheckedUpdateWithoutActivitiesInput>
+    create: XOR<UserCreateWithoutActivitiesInput, UserUncheckedCreateWithoutActivitiesInput>
+    where?: UserWhereInput
+  }
+
+  export type UserUpdateToOneWithWhereWithoutActivitiesInput = {
+    where?: UserWhereInput
+    data: XOR<UserUpdateWithoutActivitiesInput, UserUncheckedUpdateWithoutActivitiesInput>
+  }
+
+  export type UserUpdateWithoutActivitiesInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserUncheckedUpdateWithoutActivitiesInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUncheckedUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUncheckedUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    chatMessages?: ChatMessageUncheckedUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserCreateWithoutChatMessagesInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressCreateNestedManyWithoutUserInput
+    activities?: ActivityCreateNestedManyWithoutUserInput
+  }
+
+  export type UserUncheckedCreateWithoutChatMessagesInput = {
+    id?: string
+    username: string
+    email?: string | null
+    passwordHash: string
+    displayName?: string | null
+    role?: string
+    createdAt?: Date | string
+    updatedAt?: Date | string
+    privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
+    sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
+    receivedFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutAddresseeInput
+    storyProgress?: UserStoryProgressUncheckedCreateNestedManyWithoutUserInput
+    legendProgress?: UserLegendProgressUncheckedCreateNestedManyWithoutUserInput
+    milestoneProgress?: UserMilestoneProgressUncheckedCreateNestedManyWithoutUserInput
+    catclawProgress?: UserCatclawProgressUncheckedCreateNestedOneWithoutUserInput
+    meowMedalProgress?: UserMeowMedalUncheckedCreateNestedManyWithoutUserInput
+    unitProgress?: UserUnitProgressUncheckedCreateNestedManyWithoutUserInput
+    activities?: ActivityUncheckedCreateNestedManyWithoutUserInput
+  }
+
+  export type UserCreateOrConnectWithoutChatMessagesInput = {
+    where: UserWhereUniqueInput
+    create: XOR<UserCreateWithoutChatMessagesInput, UserUncheckedCreateWithoutChatMessagesInput>
+  }
+
+  export type UserUpsertWithoutChatMessagesInput = {
+    update: XOR<UserUpdateWithoutChatMessagesInput, UserUncheckedUpdateWithoutChatMessagesInput>
+    create: XOR<UserCreateWithoutChatMessagesInput, UserUncheckedCreateWithoutChatMessagesInput>
+    where?: UserWhereInput
+  }
+
+  export type UserUpdateToOneWithWhereWithoutChatMessagesInput = {
+    where?: UserWhereInput
+    data: XOR<UserUpdateWithoutChatMessagesInput, UserUncheckedUpdateWithoutChatMessagesInput>
+  }
+
+  export type UserUpdateWithoutChatMessagesInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUpdateManyWithoutUserNestedInput
+    activities?: ActivityUpdateManyWithoutUserNestedInput
+  }
+
+  export type UserUncheckedUpdateWithoutChatMessagesInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    username?: StringFieldUpdateOperationsInput | string
+    email?: NullableStringFieldUpdateOperationsInput | string | null
+    passwordHash?: StringFieldUpdateOperationsInput | string
+    displayName?: NullableStringFieldUpdateOperationsInput | string | null
+    role?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
+    sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
+    receivedFriendRequests?: FriendshipUncheckedUpdateManyWithoutAddresseeNestedInput
+    storyProgress?: UserStoryProgressUncheckedUpdateManyWithoutUserNestedInput
+    legendProgress?: UserLegendProgressUncheckedUpdateManyWithoutUserNestedInput
+    milestoneProgress?: UserMilestoneProgressUncheckedUpdateManyWithoutUserNestedInput
+    catclawProgress?: UserCatclawProgressUncheckedUpdateOneWithoutUserNestedInput
+    meowMedalProgress?: UserMeowMedalUncheckedUpdateManyWithoutUserNestedInput
+    unitProgress?: UserUnitProgressUncheckedUpdateManyWithoutUserNestedInput
+    activities?: ActivityUncheckedUpdateManyWithoutUserNestedInput
   }
 
   export type FriendshipCreateManyRequesterInput = {
@@ -22130,6 +28759,27 @@ export namespace Prisma {
     earned?: boolean
     earnedAt?: Date | string | null
     updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressCreateManyUserInput = {
+    id?: string
+    unitId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type ActivityCreateManyUserInput = {
+    id?: string
+    type: string
+    itemName?: string | null
+    detail?: string | null
+    createdAt?: Date | string
+  }
+
+  export type ChatMessageCreateManyUserInput = {
+    id?: string
+    content: string
+    createdAt?: Date | string
   }
 
   export type FriendshipUpdateWithoutRequesterInput = {
@@ -22280,6 +28930,69 @@ export namespace Prisma {
     earned?: BoolFieldUpdateOperationsInput | boolean
     earnedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    unit?: UnitUpdateOneRequiredWithoutProgressNestedInput
+  }
+
+  export type UserUnitProgressUncheckedUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressUncheckedUpdateManyWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    unitId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityUncheckedUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ActivityUncheckedUpdateManyWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    type?: StringFieldUpdateOperationsInput | string
+    itemName?: NullableStringFieldUpdateOperationsInput | string | null
+    detail?: NullableStringFieldUpdateOperationsInput | string | null
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageUncheckedUpdateWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type ChatMessageUncheckedUpdateManyWithoutUserInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    content?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
   export type UserStoryProgressCreateManyChapterInput = {
@@ -22441,6 +29154,34 @@ export namespace Prisma {
     userId?: StringFieldUpdateOperationsInput | string
     earned?: BoolFieldUpdateOperationsInput | boolean
     earnedAt?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressCreateManyUnitInput = {
+    id?: string
+    userId: string
+    formLevel?: number
+    updatedAt?: Date | string
+  }
+
+  export type UserUnitProgressUpdateWithoutUnitInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+    user?: UserUpdateOneRequiredWithoutUnitProgressNestedInput
+  }
+
+  export type UserUnitProgressUncheckedUpdateWithoutUnitInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
+    updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type UserUnitProgressUncheckedUpdateManyWithoutUnitInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    userId?: StringFieldUpdateOperationsInput | string
+    formLevel?: IntFieldUpdateOperationsInput | number
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 

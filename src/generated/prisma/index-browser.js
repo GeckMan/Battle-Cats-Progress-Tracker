@@ -126,6 +126,7 @@ exports.Prisma.UserScalarFieldEnum = {
   email: 'email',
   passwordHash: 'passwordHash',
   displayName: 'displayName',
+  role: 'role',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -233,6 +234,42 @@ exports.Prisma.UserMeowMedalScalarFieldEnum = {
   updatedAt: 'updatedAt'
 };
 
+exports.Prisma.UnitScalarFieldEnum = {
+  id: 'id',
+  unitNumber: 'unitNumber',
+  name: 'name',
+  category: 'category',
+  formCount: 'formCount',
+  sortOrder: 'sortOrder',
+  isCollab: 'isCollab',
+  source: 'source',
+  setName: 'setName'
+};
+
+exports.Prisma.UserUnitProgressScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  unitId: 'unitId',
+  formLevel: 'formLevel',
+  updatedAt: 'updatedAt'
+};
+
+exports.Prisma.ActivityScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  type: 'type',
+  itemName: 'itemName',
+  detail: 'detail',
+  createdAt: 'createdAt'
+};
+
+exports.Prisma.ChatMessageScalarFieldEnum = {
+  id: 'id',
+  userId: 'userId',
+  content: 'content',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
@@ -285,6 +322,15 @@ exports.MilestoneCategory = exports.$Enums.MilestoneCategory = {
   OTHER: 'OTHER'
 };
 
+exports.UnitCategory = exports.$Enums.UnitCategory = {
+  NORMAL: 'NORMAL',
+  SPECIAL: 'SPECIAL',
+  RARE: 'RARE',
+  SUPER_RARE: 'SUPER_RARE',
+  UBER_RARE: 'UBER_RARE',
+  LEGEND_RARE: 'LEGEND_RARE'
+};
+
 exports.Prisma.ModelName = {
   User: 'User',
   PrivacySettings: 'PrivacySettings',
@@ -298,7 +344,11 @@ exports.Prisma.ModelName = {
   UserMilestoneProgress: 'UserMilestoneProgress',
   UserCatclawProgress: 'UserCatclawProgress',
   MeowMedal: 'MeowMedal',
-  UserMeowMedal: 'UserMeowMedal'
+  UserMeowMedal: 'UserMeowMedal',
+  Unit: 'Unit',
+  UserUnitProgress: 'UserUnitProgress',
+  Activity: 'Activity',
+  ChatMessage: 'ChatMessage'
 };
 
 /**

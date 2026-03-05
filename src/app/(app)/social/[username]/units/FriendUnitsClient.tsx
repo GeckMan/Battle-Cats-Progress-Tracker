@@ -7,6 +7,10 @@ import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
+type EvolveItem = { id: number; name: string; count: number };
+type EvolveData = { xp: number; items: EvolveItem[] };
+type EvolutionData = { tf?: EvolveData; uf?: EvolveData } | null;
+
 type UnitRow = {
   id: string;
   unitNumber: number;
@@ -20,6 +24,7 @@ type UnitRow = {
   isCollab: boolean;
   source: string | null;
   setName: string | null;
+  evolutionData: EvolutionData;
   formLevel: number; // 0–4
 };
 
@@ -109,9 +114,103 @@ function MiniBar({ value, total }: { value: number; total: number }) {
   );
 }
 
+/* ── Wiki URL helper ───────────────────────────────────────────────────── */
+
+function wikiUrl(unitName: string) {
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
+  return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(Cat)`;
+}
+
+/* ── Unit Detail Panel ─────────────────────────────────────────────────── */
+
+function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void }) {
+  const evo = unit.evolutionData;
+  return (
+    <>
+      <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose} />
+      <div className="fixed right-0 top-0 bottom-0 w-[380px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-50 overflow-y-auto p-5 space-y-5 animate-slide-in">
+        <button type="button" onClick={onClose} className="absolute top-3 right-3 text-gray-500 hover:text-gray-300 text-lg">✕</button>
+        <div className="flex items-center gap-4">
+          <img
+            src={spriteUrl(unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
+            alt={unit.name}
+            width={72}
+            height={72}
+            className={`w-18 h-18 object-contain pixelated ${unit.formLevel === 0 ? "opacity-40 grayscale" : ""}`}
+          />
+          <div>
+            <h2 className="text-lg font-semibold text-gray-100">{unit.name}</h2>
+            <p className="text-xs text-gray-500">#{unit.unitNumber} · {UNIT_CATEGORY_META[unit.category]?.label ?? unit.category}</p>
+          </div>
+        </div>
+        <div className="space-y-1">
+          <div className="text-xs text-gray-500 uppercase tracking-wide">Forms</div>
+          <div className="flex flex-col gap-0.5 text-sm">
+            <span className="text-gray-300">F1: {unit.name}</span>
+            {unit.evolvedName && <span className="text-gray-300">F2: {unit.evolvedName}</span>}
+            {unit.trueName && <span className="text-gray-300">TF: {unit.trueName}</span>}
+            {unit.ultraName && <span className="text-gray-300">UF: {unit.ultraName}</span>}
+          </div>
+        </div>
+        <div className="space-y-1">
+          <div className="text-xs text-gray-500 uppercase tracking-wide">How to Obtain</div>
+          <p className="text-sm text-gray-300">{SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"}</p>
+          {unit.setName && <p className="text-xs text-gray-500">{unit.setName}</p>}
+        </div>
+        {evo?.tf && (
+          <div className="space-y-2">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">True Form Evolution</div>
+            <div className="rounded border border-gray-800 bg-gray-900/60 p-3 space-y-2">
+              <div className="text-sm text-amber-300 font-medium">{evo.tf.xp.toLocaleString()} XP</div>
+              <div className="flex flex-wrap gap-2">
+                {evo.tf.items.map((item) => (
+                  <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-gray-700 bg-gray-800 text-xs text-gray-300">
+                    {item.name} <span className="text-amber-400 font-bold">×{item.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+        {evo?.uf && (
+          <div className="space-y-2">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">Ultra Form Evolution</div>
+            <div className="rounded border border-purple-900/40 bg-purple-950/20 p-3 space-y-2">
+              <div className="text-sm text-purple-300 font-medium">{evo.uf.xp.toLocaleString()} XP</div>
+              <div className="flex flex-wrap gap-2">
+                {evo.uf.items.map((item) => (
+                  <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-purple-800/40 bg-purple-900/30 text-xs text-gray-300">
+                    {item.name} <span className="text-purple-300 font-bold">×{item.count}</span>
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
+        {!evo?.tf && !evo?.uf && (
+          <div className="space-y-1">
+            <div className="text-xs text-gray-500 uppercase tracking-wide">Evolution</div>
+            <p className="text-sm text-gray-500">
+              {unit.formCount <= 2 ? "This unit does not have a True Form." : "Evolution data not available for this unit."}
+            </p>
+          </div>
+        )}
+        <a
+          href={wikiUrl(unit.name)}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-3 py-2 rounded border border-gray-700 bg-gray-900 text-sm text-amber-400 hover:text-amber-300 hover:border-amber-800 transition-colors"
+        >
+          View on Wiki →
+        </a>
+      </div>
+    </>
+  );
+}
+
 /* ── Read-only Unit Card ───────────────────────────────────────────────── */
 
-const UnitCard = memo(function UnitCard({ unit }: { unit: UnitRow }) {
+const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInfo?: (unit: UnitRow) => void }) {
   const level = unit.formLevel;
   const displayForm = Math.max(0, level - 1);
   const imgUrl = spriteUrl(unit.unitNumber, displayForm, unit.name);
@@ -125,8 +224,19 @@ const UnitCard = memo(function UnitCard({ unit }: { unit: UnitRow }) {
         unit.ultraName ? `→ ${unit.ultraName}` : null,
         `\nCurrent: ${FORM_LABEL[level]}`,
       ].filter(Boolean).join(" ")}
-      className={`relative flex flex-col items-center rounded-lg border p-2 gap-1 ${cardTint(level)}`}
+      className={`group relative flex flex-col items-center rounded-lg border p-2 gap-1 ${cardTint(level)}`}
     >
+      {/* Info icon */}
+      {onInfo && (
+        <button
+          type="button"
+          className="absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
+          onClick={() => onInfo(unit)}
+          title="View details"
+        >
+          i
+        </button>
+      )}
       <div className="w-14 h-14 flex items-center justify-center">
         <img
           src={imgUrl}
@@ -154,10 +264,12 @@ function RaritySection({
   rarity,
   units,
   defaultOpen = true,
+  onInfo,
 }: {
   rarity: string;
   units: UnitRow[];
   defaultOpen?: boolean;
+  onInfo?: (unit: UnitRow) => void;
 }) {
   const [open, setOpen] = useState(defaultOpen);
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
@@ -186,7 +298,7 @@ function RaritySection({
       {open && (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
           {units.map((unit) => (
-            <UnitCard key={unit.id} unit={unit} />
+            <UnitCard key={unit.id} unit={unit} onInfo={onInfo} />
           ))}
         </div>
       )}
@@ -269,6 +381,8 @@ function FriendUnitsInner({
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [categories, setCategories] = useState<{ key: string; label: string }[]>([]);
+  const [detailUnit, setDetailUnit] = useState<UnitRow | null>(null);
+  const openDetail = useCallback((unit: UnitRow) => setDetailUnit(unit), []);
 
   /* ── Sync filter state → URL ── */
   const initialMount = useRef(true);
@@ -536,15 +650,20 @@ function FriendUnitsInner({
       ) : showSections ? (
         <div className="space-y-8">
           {RARITY_ORDER.filter((r) => grouped[r]).map((rarity) => (
-            <RaritySection key={rarity} rarity={rarity} units={grouped[rarity]} />
+            <RaritySection key={rarity} rarity={rarity} units={grouped[rarity]} onInfo={openDetail} />
           ))}
         </div>
       ) : (
         <div className="grid grid-cols-[repeat(auto-fill,minmax(90px,1fr))] gap-2">
           {filtered.map((unit) => (
-            <UnitCard key={unit.id} unit={unit} />
+            <UnitCard key={unit.id} unit={unit} onInfo={openDetail} />
           ))}
         </div>
+      )}
+
+      {/* Detail panel */}
+      {detailUnit && (
+        <UnitDetailPanel unit={detailUnit} onClose={() => setDetailUnit(null)} />
       )}
     </div>
   );

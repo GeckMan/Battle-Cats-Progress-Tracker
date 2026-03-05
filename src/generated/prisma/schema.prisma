@@ -49,6 +49,15 @@ enum MilestoneCategory {
   OTHER
 }
 
+enum UnitCategory {
+  NORMAL
+  SPECIAL
+  RARE
+  SUPER_RARE
+  UBER_RARE
+  LEGEND_RARE
+}
+
 /**
  * ---------- Auth / Users ----------
  */
@@ -61,6 +70,7 @@ model User {
   email        String?  @unique
   passwordHash String
   displayName  String?
+  role         String   @default("USER") // USER | ADMIN
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 
@@ -74,6 +84,9 @@ model User {
   milestoneProgress UserMilestoneProgress[]
   catclawProgress   UserCatclawProgress?
   meowMedalProgress UserMeowMedal[]
+  unitProgress      UserUnitProgress[]
+  activities        Activity[]
+  chatMessages      ChatMessage[]
 }
 
 model PrivacySettings {
@@ -256,4 +269,74 @@ model UserMeowMedal {
 
   @@unique([userId, meowMedalId])
   @@index([userId])
+}
+
+/**
+ * ---------- Unit Collection Catalog + Progress ----------
+ */
+
+model Unit {
+  id         String       @id @default(cuid())
+  unitNumber Int          @unique // game-internal unit ID (0-based, used for sprite URLs)
+  name       String // Form 1 display name
+  category   UnitCategory
+  formCount  Int          @default(3) // how many forms this unit has (2 or 3)
+  sortOrder  Int // display order within category
+  isCollab   Boolean      @default(false) // true = collab/serial-code/event-capsule unit
+  source     String? // unlock method: RARE_CAPSULE, STAGE_DROP, EVENT_CAPSULE, etc.
+  setName    String? // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
+
+  progress UserUnitProgress[]
+
+  @@index([category, sortOrder])
+  @@index([isCollab])
+  @@index([source])
+  @@index([setName])
+}
+
+model UserUnitProgress {
+  id        String   @id @default(cuid())
+  userId    String
+  unitId    String
+  formLevel Int      @default(0) // 0 = not obtained, 1 = Form 1, 2 = Form 2, 3 = True Form
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+  unit Unit @relation(fields: [unitId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, unitId])
+  @@index([userId])
+}
+
+/**
+ * ---------- Activity Feed ----------
+ */
+
+model Activity {
+  id        String   @id @default(cuid())
+  userId    String
+  type      String // STORY_CLEARED, LEGEND_COMPLETED, MEDAL_EARNED, MILESTONE_CLEARED, UNIT_OBTAINED, UNIT_EVOLVED, UNIT_REMOVED
+  itemName  String? // human-readable name of the item (chapter, medal, unit, etc.)
+  detail    String? // extra context: "treasures → ALL", "crown 3", "True Form"
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+  @@index([createdAt])
+}
+
+/**
+ * ---------- Chat / Message Board ----------
+ */
+
+model ChatMessage {
+  id        String   @id @default(cuid())
+  userId    String
+  content   String
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([createdAt])
 }
