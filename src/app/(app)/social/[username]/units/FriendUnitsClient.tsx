@@ -116,9 +116,19 @@ function MiniBar({ value, total }: { value: number; total: number }) {
 
 /* ── Wiki URL helper ───────────────────────────────────────────────────── */
 
-function wikiUrl(unitName: string) {
+const WIKI_SUFFIX: Record<string, string> = {
+  NORMAL:      "Normal_Cat",
+  SPECIAL:     "Special_Cat",
+  RARE:        "Rare_Cat",
+  SUPER_RARE:  "Super_Rare_Cat",
+  UBER_RARE:   "Uber_Rare_Cat",
+  LEGEND_RARE: "Legend_Rare_Cat",
+};
+
+function wikiUrl(unitName: string, category: string) {
   const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
-  return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(Cat)`;
+  const suffix = WIKI_SUFFIX[category] ?? "Cat";
+  return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(${suffix})`;
 }
 
 /* ── Unit Detail Panel ─────────────────────────────────────────────────── */
@@ -196,7 +206,7 @@ function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void
           </div>
         )}
         <a
-          href={wikiUrl(unit.name)}
+          href={wikiUrl(unit.name, unit.category)}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-3 py-2 rounded border border-gray-700 bg-gray-900 text-sm text-amber-400 hover:text-amber-300 hover:border-amber-800 transition-colors"
