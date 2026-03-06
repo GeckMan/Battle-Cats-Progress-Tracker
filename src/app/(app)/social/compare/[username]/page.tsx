@@ -226,6 +226,21 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
         <MedalCard label={theirLabel} earned={theirSummary.medalsEarned} total={theirSummary.medalsTotal} />
       </div>
 
+      {/* Compare units link */}
+      <Link
+        href={`/social/compare/${encodeURIComponent(other.username)}/units`}
+        className="flex items-center justify-between rounded-lg border border-gray-700 bg-black px-4 py-3 hover:border-amber-800 hover:bg-amber-950/10 transition-colors group"
+      >
+        <div>
+          <div className="text-sm font-semibold text-gray-200 group-hover:text-amber-300 transition-colors">
+            Compare Units →
+          </div>
+          <div className="text-xs text-gray-500 mt-0.5">
+            See what units they have that you don't, and vice versa
+          </div>
+        </div>
+      </Link>
+
       {/* SoL subchapter table */}
       <section className="space-y-3">
         <div className="flex items-center justify-between">
