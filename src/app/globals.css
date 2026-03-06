@@ -38,3 +38,19 @@ body {
 .pixelated {
   image-rendering: pixelated;
 }
+
+/* Always show info icon on touch-only devices (no hover capability) */
+@media (hover: none) {
+  .group .info-icon-hover {
+    opacity: 1 !important;
+  }
+}
+
+/* Long-press visual feedback */
+.long-press-active {
+  animation: long-press-scale 0.4s ease-out forwards;
+}
+@keyframes long-press-scale {
+  from { transform: scale(1); }
+  to { transform: scale(1.05); }
+}

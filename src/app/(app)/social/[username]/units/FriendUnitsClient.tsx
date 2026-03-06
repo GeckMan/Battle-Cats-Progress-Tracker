@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
+import { useLongPress } from "@/lib/hooks/useLongPress";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -225,8 +226,14 @@ const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInf
   const displayForm = Math.max(0, level - 1);
   const imgUrl = spriteUrl(unit.unitNumber, displayForm, unit.name);
 
+  const { handlers: lpHandlers, pressActive } = useLongPress({
+    onLongPress: () => onInfo?.(unit),
+  });
+
   return (
     <div
+      {...lpHandlers}
+      style={{ touchAction: "manipulation" }}
       title={[
         unit.name,
         unit.evolvedName ? `→ ${unit.evolvedName}` : null,
@@ -234,13 +241,13 @@ const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInf
         unit.ultraName ? `→ ${unit.ultraName}` : null,
         `\nCurrent: ${FORM_LABEL[level]}`,
       ].filter(Boolean).join(" ")}
-      className={`group relative flex flex-col items-center rounded-lg border p-2 gap-1 ${cardTint(level)}`}
+      className={`group relative flex flex-col items-center rounded-lg border p-2 gap-1 ${cardTint(level)} ${pressActive ? "long-press-active" : ""}`}
     >
-      {/* Info icon */}
+      {/* Info icon — visible on hover (desktop) or always (touch devices) */}
       {onInfo && (
         <button
           type="button"
-          className="absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
+          className="info-icon-hover absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
           onClick={() => onInfo(unit)}
           title="View details"
         >

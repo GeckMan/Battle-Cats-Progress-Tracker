@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
+import { useLongPress } from "@/lib/hooks/useLongPress";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -286,6 +287,11 @@ const UnitCard = memo(function UnitCard({
   const level = unit.formLevel;
   const preloaded = useRef(false);
 
+  /* Long-press to open info panel */
+  const { handlers: lpHandlers, pressActive, longPressed } = useLongPress({
+    onLongPress: () => onInfo?.(unit),
+  });
+
   /** Preload all form sprites on first hover so cycling feels instant */
   function preloadSprites() {
     if (preloaded.current) return;
@@ -297,16 +303,17 @@ const UnitCard = memo(function UnitCard({
   }
 
   function handleClick(e: React.MouseEvent) {
+    // After a long-press, suppress the click that follows touch release
+    if (longPressed.current) { longPressed.current = false; return; }
+
     if (selectionMode) {
       onToggleSelect?.(unit.id);
       return;
     }
     if (e.shiftKey) {
-      // Shift+click → jump straight to max form
       if (level < maxLevel) {
         onUpdate(unit.id, maxLevel);
       } else {
-        // Already at max — reset to 0
         onUpdate(unit.id, 0);
       }
     } else {
@@ -323,7 +330,9 @@ const UnitCard = memo(function UnitCard({
       type="button"
       onClick={handleClick}
       onMouseEnter={preloadSprites}
+      {...lpHandlers}
       disabled={pending && !selectionMode}
+      style={{ touchAction: "manipulation" }}
       title={selectionMode
         ? `${unit.name} — click to ${selected ? "deselect" : "select"}`
         : [
@@ -338,6 +347,7 @@ const UnitCard = memo(function UnitCard({
         ${selectionMode && selected ? "border-amber-500 bg-amber-950/40 ring-1 ring-amber-500/50" : cardTint(level)}
         ${pending && !selectionMode ? "opacity-50 cursor-not-allowed" : "hover:border-amber-700/60 hover:bg-amber-950/10 cursor-pointer"}
         ${focused ? "ring-2 ring-amber-500/70" : ""}
+        ${pressActive ? "long-press-active" : ""}
       `}
     >
       {/* Selection checkbox overlay */}
@@ -349,10 +359,10 @@ const UnitCard = memo(function UnitCard({
         </div>
       )}
 
-      {/* Info icon — visible on hover (top-left) */}
+      {/* Info icon — visible on hover (desktop) or always (touch devices) */}
       {!selectionMode && onInfo && (
         <div
-          className="absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
+          className="info-icon-hover absolute top-1 left-1 w-5 h-5 rounded-full border border-gray-600 bg-gray-900/90 text-[10px] text-gray-400 flex items-center justify-center opacity-0 group-hover:opacity-100 hover:!opacity-100 hover:border-amber-600 hover:text-amber-400 transition-opacity cursor-pointer z-10"
           onClick={(e) => { e.stopPropagation(); onInfo(unit); }}
           title="View details"
         >
