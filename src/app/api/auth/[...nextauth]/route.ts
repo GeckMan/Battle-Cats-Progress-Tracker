@@ -7,11 +7,11 @@ const handler = NextAuth(authOptions);
 export { handler as GET };
 
 // Wrap POST to add rate limiting on login attempts
-export async function POST(req: Request) {
+export async function POST(req: Request, context: any) {
   // Rate limit: 10 login attempts per 15 minutes per IP
   const ip = getClientIp(req);
   const rl = await checkRateLimit(`login:${ip}`, 10, 15 * 60 * 1000);
   if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
 
-  return handler(req as any);
+  return handler(req as any, context);
 }
