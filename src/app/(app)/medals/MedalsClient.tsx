@@ -1,6 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { useTheme } from "@/lib/theme-context";
+import { getThemeColors, barFill, type ThemeColors } from "@/lib/theme-colors";
 
 type Row = {
   id: string;
@@ -10,7 +12,178 @@ type Row = {
   imageFile?: string | null;
 };
 
+/* ── Hexagonal Honeycomb (NERV theme) ──────────────────────────────────── */
+
+const HEX_W = 80;
+const HEX_H = 92;
+const HEX_GAP_X = 4;
+const HEX_GAP_Y = -20; // negative = overlap for honeycomb tessellation
+const HEX_CLIP = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
+
+function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggle: (id: string, earned: boolean) => void }) {
+  const colW = HEX_W + HEX_GAP_X;
+  const rowH = HEX_H + HEX_GAP_Y;
+
+  // Compute how many columns fit — use CSS container, fallback to 8
+  const cols = 10;
+  const rowCount = Math.ceil(items.length / cols);
+  const totalH = rowCount * rowH + (HEX_H - rowH) + 8;
+
+  return (
+    <div style={{ position: "relative", width: "100%", height: totalH, minHeight: 200 }}>
+      {items.map((m, i) => {
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        const isOddRow = row % 2 === 1;
+        const x = col * colW + (isOddRow ? colW / 2 : 0);
+        const y = row * rowH;
+
+        return (
+          <button
+            key={m.id}
+            type="button"
+            onClick={() => onToggle(m.id, !m.earned)}
+            title={`${m.name}\n${m.description}`}
+            style={{
+              position: "absolute",
+              left: x,
+              top: y,
+              width: HEX_W,
+              height: HEX_H,
+              clipPath: HEX_CLIP,
+              border: "none",
+              background: m.earned ? c.accentFill : c.void,
+              cursor: "pointer",
+              transition: "all 0.15s",
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+            }}
+          >
+            {/* Inner hex border effect */}
+            <div style={{
+              position: "absolute",
+              inset: 0,
+              clipPath: HEX_CLIP,
+              border: "none",
+              background: m.earned
+                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
+                : c.void,
+            }} />
+            {/* Hex outline via box-shadow trick on an inner div */}
+            <div style={{
+              position: "absolute",
+              inset: 2,
+              clipPath: HEX_CLIP,
+              background: m.earned ? "rgba(255,152,48,0.03)" : c.void,
+              boxShadow: m.earned
+                ? `0 0 8px ${c.accent}`
+                : "none",
+            }} />
+            {/* Content */}
+            <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              {m.imageFile ? (
+                <img
+                  src={`/medals/${m.imageFile}`}
+                  alt={m.name}
+                  loading="lazy"
+                  style={{
+                    width: "70%",
+                    height: "70%",
+                    objectFit: "contain",
+                    pointerEvents: "none",
+                    filter: m.earned ? "none" : "grayscale(1)",
+                    opacity: m.earned ? 1 : 0.3,
+                  }}
+                />
+              ) : (
+                <span style={{
+                  fontSize: 20,
+                  fontWeight: 700,
+                  color: m.earned ? c.accent : c.textDim,
+                  fontFamily: c.fontSys,
+                }}>
+                  {m.earned ? "★" : "?"}
+                </span>
+              )}
+            </div>
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+/* ── Circular Grid (Default theme) ─────────────────────────────────────── */
+
+function CircleGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggle: (id: string, earned: boolean) => void }) {
+  return (
+    <div style={{
+      display: "grid",
+      gap: 10,
+      gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))",
+    }}>
+      {items.map((m) => (
+        <button
+          key={m.id}
+          type="button"
+          onClick={() => onToggle(m.id, !m.earned)}
+          title={`${m.name}\n${m.description}`}
+          style={{
+            width: 96,
+            height: 96,
+            borderRadius: "50%",
+            border: m.earned
+              ? `1px solid ${c.accent}`
+              : `1px solid ${c.borderFaint}`,
+            background: m.earned ? c.accentFill : c.void,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            overflow: "hidden",
+            cursor: "pointer",
+            transition: "all 0.15s",
+            opacity: m.earned ? 1 : 0.6,
+            boxShadow: m.earned ? `0 0 6px ${c.accentFill}` : "none",
+          }}
+        >
+          {m.imageFile ? (
+            <img
+              src={`/medals/${m.imageFile}`}
+              alt={m.name}
+              loading="lazy"
+              style={{
+                width: "100%",
+                height: "100%",
+                objectFit: "cover",
+                pointerEvents: "none",
+                filter: m.earned ? "none" : "grayscale(1)",
+                opacity: m.earned ? 1 : 0.4,
+              }}
+            />
+          ) : (
+            <span style={{
+              fontSize: 18,
+              fontWeight: 700,
+              color: m.earned ? c.accent : c.textDim,
+            }}>
+              {m.earned ? "★" : "?"}
+            </span>
+          )}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+/* ── Main Component ─────────────────────────────────────────────────────── */
+
 export default function MedalsClient({ rows }: { rows: Row[] }) {
+  const { theme } = useTheme();
+  const c = getThemeColors(theme);
+
   const [data, setData] = useState(rows);
   const [syncing, setSyncing] = useState(false);
 
@@ -29,20 +202,34 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
     }
   }
 
+  async function handleToggle(id: string, earned: boolean) {
+    setData((prev) => prev.map((x) => (x.id === id ? { ...x, earned } : x)));
+
+    const res = await fetch(`/api/meow-medals/${id}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ earned }),
+    });
+
+    if (!res.ok) {
+      setData((prev) => prev.map((x) => (x.id === id ? { ...x, earned: !earned } : x)));
+    }
+  }
+
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
       {/* ── Header Panel ──────────────────────────────────────────────────── */}
       <div style={{
-        background: "var(--void-warm, #080807)",
-        border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        background: c.panelBg,
+        border: `1px solid ${c.border}`,
         overflow: "hidden",
       }}>
         <div style={{
           fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
-          color: "var(--nerv-orange, #FF9830)", padding: "8px 12px 7px",
-          borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+          color: c.accent, padding: "8px 12px 7px",
+          borderBottom: `1px solid ${c.accentDim}`,
           display: "flex", justifyContent: "space-between", alignItems: "center",
-          fontFamily: "var(--font-sys, monospace)",
+          fontFamily: c.fontSys,
         }}>
           <span>Meow Medals</span>
           <button
@@ -50,10 +237,10 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
             onClick={handleSync}
             disabled={syncing}
             style={{
-              fontSize: 10, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+              fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
               letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",
-              border: "1px solid var(--nerv-orange-dim, #C87020)",
-              background: "rgba(255,152,48,0.06)", color: "var(--nerv-orange, #FF9830)",
+              border: `1px solid ${c.accentDim}`,
+              background: c.accentFill, color: c.accent,
               cursor: syncing ? "wait" : "pointer", opacity: syncing ? 0.5 : 1,
             }}
           >
@@ -63,7 +250,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
 
         <div style={{
           display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1,
-          background: "var(--steel-faint, rgba(200,200,192,0.12))",
+          background: c.border,
         }}>
           {[
             { label: "Earned", value: `${earnedCount}`, sub: `of ${data.length}` },
@@ -71,125 +258,39 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
             { label: "Remaining", value: `${data.length - earnedCount}`, sub: "to earn" },
           ].map((m) => (
             <div key={m.label} style={{
-              background: "var(--void-warm, #080807)", padding: "12px 14px",
+              background: c.panelBg, padding: "12px 14px",
               display: "flex", flexDirection: "column", justifyContent: "center",
             }}>
               <div style={{
                 fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase",
-                color: "var(--nerv-orange, #FF9830)", marginBottom: 3,
-                fontFamily: "var(--font-sys, monospace)",
+                color: c.accent, marginBottom: 3, fontFamily: c.fontSys,
               }}>{m.label}</div>
               <div style={{
-                fontSize: 22, fontWeight: 700, color: "var(--data-green, #50FF50)",
-                fontVariantNumeric: "tabular-nums", textShadow: "0 0 4px rgba(80,255,80,0.3)",
-                lineHeight: 1.1, fontFamily: "var(--font-sys, monospace)",
+                fontSize: 22, fontWeight: 700, color: c.dataOk,
+                fontVariantNumeric: "tabular-nums", lineHeight: 1.1, fontFamily: c.fontSys,
               }}>{m.value}</div>
               <div style={{
-                fontSize: 9, color: "var(--steel-dim, #888880)", marginTop: 3,
-                letterSpacing: "0.06em", fontFamily: "var(--font-sys, monospace)",
+                fontSize: 9, color: c.textDim, marginTop: 3,
+                letterSpacing: "0.06em", fontFamily: c.fontSys,
               }}>{m.sub}</div>
             </div>
           ))}
         </div>
+
+        {/* Progress bar */}
+        <div style={{ padding: "6px 10px" }}>
+          <div style={{ height: 3, background: c.voidPanel, border: `1px solid ${c.borderFaint}`, overflow: "hidden" }}>
+            <div style={{ height: "100%", width: `${pct}%`, background: barFill(pct, theme), transition: "width 0.3s" }} />
+          </div>
+        </div>
       </div>
 
-      {/* ── Medal Grid ────────────────────────────────────────────────────── */}
-      <div
-        style={{
-          display: "grid",
-          gap: 10,
-          gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))",
-        }}
-      >
-        {data.map((m) => (
-          <MedalToken
-            key={m.id}
-            row={m}
-            onToggled={(earned) => {
-              setData((prev) =>
-                prev.map((x) => (x.id === m.id ? { ...x, earned } : x))
-              );
-            }}
-          />
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function MedalToken({
-  row,
-  onToggled,
-}: {
-  row: Row;
-  onToggled: (earned: boolean) => void;
-}) {
-  const tip = `${row.name}\n${row.description}`;
-  const localSrc = row.imageFile ? `/medals/${row.imageFile}` : null;
-
-  async function toggle() {
-    const next = !row.earned;
-    onToggled(next);
-
-    const res = await fetch(`/api/meow-medals/${row.id}`, {
-      method: "PATCH",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ earned: next }),
-    });
-
-    if (!res.ok) {
-      onToggled(!next);
-    }
-  }
-
-  return (
-    <button
-      type="button"
-      onClick={toggle}
-      title={tip}
-      className="rounded-full"
-      style={{
-        width: 96,
-        height: 96,
-        border: row.earned
-          ? "1px solid var(--nerv-orange, #FF9830)"
-          : "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
-        background: row.earned
-          ? "rgba(255,152,48,0.06)"
-          : "var(--void, #000)",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        overflow: "hidden",
-        cursor: "pointer",
-        transition: "all 0.15s",
-        opacity: row.earned ? 1 : 0.6,
-        boxShadow: row.earned ? "0 0 6px rgba(255,152,48,0.15)" : "none",
-      }}
-    >
-      {localSrc ? (
-        <img
-          src={localSrc}
-          alt={row.name}
-          loading="lazy"
-          style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-            pointerEvents: "none",
-            filter: row.earned ? "none" : "grayscale(1)",
-            opacity: row.earned ? 1 : 0.4,
-          }}
-        />
+      {/* ── Medal Grid — hexagonal for NERV, circular for default ─────────── */}
+      {theme === "nerv" ? (
+        <HexGrid items={data} c={c} onToggle={handleToggle} />
       ) : (
-        <span style={{
-          fontSize: 18,
-          fontWeight: 700,
-          color: row.earned ? "var(--nerv-orange, #FF9830)" : "var(--steel-dim, #888880)",
-        }}>
-          {row.earned ? "★" : "?"}
-        </span>
+        <CircleGrid items={data} c={c} onToggle={handleToggle} />
       )}
-    </button>
+    </div>
   );
 }
