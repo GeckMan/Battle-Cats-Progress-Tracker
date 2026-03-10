@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { useState, useEffect, useCallback } from "react";
+import { useTheme } from "@/lib/theme-context";
 
 /* ─── Nav items ──────────────────────────────────────────────────────────── */
 
@@ -22,6 +23,7 @@ const NAV_ITEMS = [
 
 export default function AppSidebar() {
   const pathname = usePathname();
+  const { theme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
   const [pendingRequests, setPendingRequests] = useState(0);
 
@@ -57,49 +59,12 @@ export default function AppSidebar() {
     return () => clearInterval(interval);
   }, [checkPending]);
 
-  const sidebarContent = (
-    <>
-      {/* Brand */}
-      <div className="px-5 pt-6 pb-5 border-b border-gray-800">
-        <div className="text-amber-400 font-bold text-sm tracking-widest uppercase">
-          Battle Cats
-        </div>
-        <div className="text-gray-600 text-xs mt-0.5">Progress Tracker</div>
-      </div>
+  const isNerv = theme === "nerv";
 
-      {/* Main nav */}
-      <nav className="flex-1 px-2 py-3 space-y-0.5 overflow-y-auto">
-        {NAV_ITEMS.map((item) => (
-          <NavLink
-            key={item.href}
-            href={item.href}
-            active={pathname === item.href}
-            icon={item.icon}
-            badge={item.href === "/social" ? pendingRequests : 0}
-          >
-            {item.label}
-          </NavLink>
-        ))}
-      </nav>
-
-      {/* Bottom: Settings + Logout */}
-      <div className="px-2 py-3 border-t border-gray-800 space-y-0.5">
-        <NavLink href="/settings" active={pathname === "/settings"} icon={<IconSettings />}>
-          Settings
-        </NavLink>
-
-        <button
-          type="button"
-          onClick={() => signOut({ callbackUrl: "/login" })}
-          className="w-full flex items-center gap-3 px-3 py-2 rounded text-left text-sm text-gray-500 hover:bg-gray-900 hover:text-gray-200 transition-colors"
-        >
-          <span className="text-gray-600 flex-shrink-0">
-            <IconLogout />
-          </span>
-          Logout
-        </button>
-      </div>
-    </>
+  const sidebarContent = isNerv ? (
+    <NervSidebarContent pathname={pathname} pendingRequests={pendingRequests} />
+  ) : (
+    <DefaultSidebarContent pathname={pathname} pendingRequests={pendingRequests} />
   );
 
   return (
@@ -148,6 +113,139 @@ export default function AppSidebar() {
 
         {sidebarContent}
       </aside>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   NERV Sidebar — Evangelion-inspired operations panel
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+function NervSidebarContent({ pathname, pendingRequests }: { pathname: string; pendingRequests: number }) {
+  return (
+    <>
+      {/* Brand — compressed serif title */}
+      <div style={{ padding: "16px 12px 12px", borderBottom: "1px solid var(--nerv-orange-dim)" }}>
+        <div className="nerv-brand">NERV</div>
+        <div className="nerv-brand-sub" style={{ marginTop: "2px" }}>Battle Cats Operations</div>
+      </div>
+
+      {/* Panel header */}
+      <div className="nerv-panel-header" style={{ borderBottom: "1px solid var(--steel-faint)" }}>
+        <span>Navigation</span>
+        <span className="tag">
+          <span className="led green" />Active
+        </span>
+      </div>
+
+      {/* Nav links */}
+      <nav style={{ flex: 1, padding: "6px 0", overflowY: "auto" }}>
+        {NAV_ITEMS.map((item) => {
+          const active = pathname === item.href;
+          return (
+            <Link
+              key={item.href}
+              href={item.href}
+              className={`nerv-nav-link ${active ? "active" : ""}`}
+            >
+              <span className="led green" style={{ opacity: active ? 1 : 0.2 }} />
+              <span style={{ flex: 1 }}>{item.label}</span>
+              {item.href === "/social" && pendingRequests > 0 && (
+                <span style={{
+                  fontSize: "8px",
+                  fontWeight: 700,
+                  color: "var(--void)",
+                  background: "var(--nerv-orange)",
+                  padding: "1px 4px",
+                  minWidth: "14px",
+                  textAlign: "center",
+                  lineHeight: "14px",
+                }}>
+                  {pendingRequests}
+                </span>
+              )}
+            </Link>
+          );
+        })}
+      </nav>
+
+      {/* Bottom — Settings + Logout */}
+      <div style={{ borderTop: "1px solid var(--steel-faint)", padding: "6px 0" }}>
+        <Link
+          href="/settings"
+          className={`nerv-nav-link ${pathname === "/settings" ? "active" : ""}`}
+        >
+          <span className="led orange" style={{ opacity: pathname === "/settings" ? 1 : 0.3 }} />
+          <span style={{ flex: 1 }}>Settings</span>
+        </Link>
+
+        <button
+          type="button"
+          onClick={() => signOut({ callbackUrl: "/login" })}
+          className="nerv-nav-link"
+          style={{ color: "var(--alert-red-dim)" }}
+        >
+          <span className="led red" style={{ opacity: 0.4 }} />
+          <span style={{ flex: 1 }}>Logout</span>
+        </button>
+      </div>
+
+      {/* Status bar */}
+      <div className="nerv-status-bar">
+        <span>SYS:NOMINAL</span>
+        <span>v2.0</span>
+      </div>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════════
+   Default Sidebar — Original dark theme
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+function DefaultSidebarContent({ pathname, pendingRequests }: { pathname: string; pendingRequests: number }) {
+  return (
+    <>
+      {/* Brand */}
+      <div className="px-5 pt-6 pb-5 border-b border-gray-800">
+        <div className="text-amber-400 font-bold text-sm tracking-widest uppercase">
+          Battle Cats
+        </div>
+        <div className="text-gray-600 text-xs mt-0.5">Progress Tracker</div>
+      </div>
+
+      {/* Main nav */}
+      <nav className="flex-1 px-2 py-3 space-y-0.5 overflow-y-auto">
+        {NAV_ITEMS.map((item) => (
+          <NavLink
+            key={item.href}
+            href={item.href}
+            active={pathname === item.href}
+            icon={item.icon}
+            badge={item.href === "/social" ? pendingRequests : 0}
+          >
+            {item.label}
+          </NavLink>
+        ))}
+      </nav>
+
+      {/* Bottom: Settings + Logout */}
+      <div className="px-2 py-3 border-t border-gray-800 space-y-0.5">
+        <NavLink href="/settings" active={pathname === "/settings"} icon={<IconSettings />}>
+          Settings
+        </NavLink>
+
+        <button
+          type="button"
+          onClick={() => signOut({ callbackUrl: "/login" })}
+          className="w-full flex items-center gap-3 px-3 py-2 rounded text-left text-sm text-gray-500 hover:bg-gray-900 hover:text-gray-200 transition-colors"
+        >
+          <span className="text-gray-600 flex-shrink-0">
+            <IconLogout />
+          </span>
+          Logout
+        </button>
+      </div>
     </>
   );
 }

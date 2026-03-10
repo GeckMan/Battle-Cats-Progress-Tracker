@@ -4,6 +4,7 @@ import { prisma } from "@/lib/prisma";
 import AppSidebar from "@/components/AppSidebar";
 import RightPanelWrapper from "@/components/RightPanelWrapper";
 import { ThemeProvider, type Theme } from "@/lib/theme-context";
+import NervScanLine from "@/components/NervScanLine";
 
 export default async function AppGroupLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions);
@@ -29,6 +30,7 @@ export default async function AppGroupLayout({ children }: { children: React.Rea
         </main>
         <RightPanelWrapper currentUserId={userId} currentUserRole={userRole} />
       </div>
+      <NervScanLine />
     </ThemeProvider>
   );
 }

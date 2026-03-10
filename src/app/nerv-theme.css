@@ -1,46 +1,52 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   NERV Operations Console Theme
-   Evangelion-inspired instrumentation UI
+   NERV Operations Console v2 Theme
+   Dense data-driven instrumentation UI — every pixel conveys information.
    Applied when [data-theme="nerv"] is set on <html>
    ═══════════════════════════════════════════════════════════════════════════ */
 
-/* ── Design Tokens ─────────────────────────────────────────────────────── */
+/* ── Design Tokens (v2) ──────────────────────────────────────────────────── */
 
 [data-theme="nerv"] {
-  /* Void */
   --void:             #000000;
-  --void-warm:        #0A0A08;
-  --void-panel:       #111110;
+  --void-warm:        #080807;
+  --void-panel:       #0C0C0A;
+  --void-raised:      #111110;
 
-  /* NERV Orange — headers, labels */
   --nerv-orange:      #FF9830;
-  --nerv-orange-dim:  #D08028;
+  --nerv-orange-dim:  #C87020;
   --nerv-orange-hot:  #FFCC50;
+  --nerv-orange-fill: rgba(255, 152, 48, 0.08);
 
-  /* Nominal Green — data readouts */
   --data-green:       #50FF50;
   --data-green-dim:   #30BB30;
-  --data-green-faint: rgba(80, 255, 80, 0.1);
+  --data-green-faint: rgba(80, 255, 80, 0.06);
+  --data-green-fill:  rgba(80, 255, 80, 0.1);
 
-  /* Cyan — wireframes, structural */
   --wire-cyan:        #20F0FF;
-  --wire-cyan-dim:    #10A8B8;
-  --wire-cyan-glow:   rgba(32, 240, 255, 0.15);
+  --wire-cyan-dim:    #10A0B0;
+  --wire-cyan-glow:   rgba(32, 240, 255, 0.12);
 
-  /* Alert Red */
-  --alert-red:        #FF4840;
-  --alert-red-dim:    #CC3028;
-  --alert-red-hot:    #FF6858;
-  --alert-red-fill:   rgba(255, 72, 64, 0.18);
+  --alert-red:        #FF3030;
+  --alert-red-dim:    #CC2020;
+  --alert-red-hot:    #FF5050;
+  --alert-red-fill:   rgba(255, 48, 48, 0.15);
 
-  /* Steel / Neutral */
-  --steel:            #E0E0D8;
-  --steel-dim:        #9A9A90;
-  --steel-faint:      rgba(224, 224, 216, 0.08);
+  --thermal-yellow:   #FFE820;
+  --thermal-magenta:  #F030C0;
+
+  --steel:            #D8D8D0;
+  --steel-dim:        #888880;
+  --steel-faint:      rgba(200, 200, 192, 0.06);
+  --steel-line:       rgba(200, 200, 192, 0.12);
+
+  --font-title:       var(--font-noto-serif-display), 'Noto Serif Display', 'Times New Roman', serif;
+  --font-sys:         var(--font-jetbrains-mono), 'JetBrains Mono', 'Cascadia Mono', monospace;
+  --font-stamp:       var(--font-saira-extra-condensed), 'Saira Extra Condensed', 'Impact', sans-serif;
+
+  --scan-opacity:     0.04;
 }
 
-/* ── Anti-Patterns: Sharp corners everywhere (except LEDs/dots) ──────── */
-/* Target common elements directly instead of universal * selector */
+/* ── Sharp Corners (except LEDs/dots) ────────────────────────────────────── */
 
 [data-theme="nerv"] div,
 [data-theme="nerv"] button,
@@ -58,19 +64,22 @@
   border-radius: 0 !important;
 }
 
-/* Preserve round shapes for LEDs and dot indicators */
 [data-theme="nerv"] .led,
 [data-theme="nerv"] .rounded-full {
   border-radius: 9999px !important;
 }
 
-/* ── Typography Override ───────────────────────────────────────────────── */
+/* ── Typography — JetBrains Mono everywhere ──────────────────────────────── */
 
 [data-theme="nerv"] body {
-  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', 'Courier New', monospace !important;
+  font-family: var(--font-sys) !important;
+  font-size: 12px;
+  line-height: 1.4;
+  background: var(--void);
+  color: var(--steel);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Propagate monospace font to common elements (avoids universal * selector) */
 [data-theme="nerv"] div,
 [data-theme="nerv"] span,
 [data-theme="nerv"] p,
@@ -83,316 +92,7 @@
   font-family: inherit;
 }
 
-/* ── Global Body ───────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] body {
-  background: var(--void);
-  color: var(--steel);
-}
-
-/* ── Sidebar ───────────────────────────────────────────────────────────── */
-
-/* Sidebar container */
-[data-theme="nerv"] aside {
-  background: var(--void) !important;
-  border-color: rgba(255, 152, 48, 0.25) !important;
-}
-
-/* Brand header */
-[data-theme="nerv"] aside > div:first-child {
-  border-color: rgba(255, 152, 48, 0.25) !important;
-}
-
-/* NERV brand text — turn "Battle Cats" into NERV orange */
-[data-theme="nerv"] aside .text-amber-400 {
-  color: var(--nerv-orange) !important;
-  letter-spacing: 0.15em;
-}
-
-/* Subtitle */
-[data-theme="nerv"] aside .text-gray-600 {
-  color: var(--steel-dim) !important;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  font-size: 0.625rem;
-}
-
-/* Nav links — active */
-[data-theme="nerv"] aside a.bg-amber-950 {
-  background: rgba(255, 152, 48, 0.12) !important;
-  border-color: rgba(255, 152, 48, 0.4) !important;
-  color: var(--nerv-orange-hot) !important;
-}
-[data-theme="nerv"] aside a.bg-amber-950 span:first-child {
-  color: var(--nerv-orange) !important;
-}
-
-/* Nav links — inactive */
-[data-theme="nerv"] aside nav a:not(.bg-amber-950) {
-  color: var(--steel-dim) !important;
-}
-[data-theme="nerv"] aside nav a:not(.bg-amber-950):hover {
-  background: rgba(255, 152, 48, 0.06) !important;
-  color: var(--nerv-orange-dim) !important;
-}
-
-/* Bottom border (settings/logout area) */
-[data-theme="nerv"] aside > div:last-child {
-  border-color: rgba(255, 152, 48, 0.25) !important;
-}
-
-/* Badge (friend requests) */
-[data-theme="nerv"] aside .bg-amber-500 {
-  background: var(--alert-red) !important;
-  color: var(--void) !important;
-}
-
-/* ── Main Content Area ─────────────────────────────────────────────────── */
-
-[data-theme="nerv"] main {
-  background: var(--void);
-}
-
-/* ── Headings ──────────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] h1 {
-  color: var(--nerv-orange) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-weight: 700;
-}
-
-[data-theme="nerv"] h2 {
-  color: var(--nerv-orange-dim) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-weight: 700;
-}
-
-/* ── Cards / Panels ────────────────────────────────────────────────────── */
-
-/* Generic dark panels (settings, etc.) */
-[data-theme="nerv"] .border-gray-700 {
-  border-color: rgba(255, 152, 48, 0.2) !important;
-}
-
-[data-theme="nerv"] .border-gray-800 {
-  border-color: rgba(255, 152, 48, 0.12) !important;
-}
-
-[data-theme="nerv"] .bg-gray-900 {
-  background: var(--void-warm) !important;
-}
-
-[data-theme="nerv"] .bg-gray-950 {
-  background: var(--void) !important;
-}
-
-/* ── Buttons ───────────────────────────────────────────────────────────── */
-
-/* Primary amber buttons → NERV orange */
-[data-theme="nerv"] .border-amber-700 {
-  border-color: rgba(255, 152, 48, 0.5) !important;
-}
-
-[data-theme="nerv"] .text-amber-300,
-[data-theme="nerv"] .text-amber-200 {
-  color: var(--nerv-orange) !important;
-}
-
-[data-theme="nerv"] .text-amber-400 {
-  color: var(--nerv-orange) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-amber-900:hover {
-  background: rgba(255, 152, 48, 0.15) !important;
-}
-
-/* Active tab styling */
-[data-theme="nerv"] .bg-amber-950\/50 {
-  background: rgba(255, 152, 48, 0.12) !important;
-}
-
-[data-theme="nerv"] .border-amber-800 {
-  border-color: rgba(255, 152, 48, 0.4) !important;
-}
-
-/* ── Form Inputs ───────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] input[type="text"],
-[data-theme="nerv"] input[type="email"],
-[data-theme="nerv"] input[type="password"],
-[data-theme="nerv"] input[type="search"],
-[data-theme="nerv"] select,
-[data-theme="nerv"] textarea {
-  background: var(--void) !important;
-  border-color: rgba(255, 152, 48, 0.25) !important;
-  color: var(--data-green) !important;
-  font-family: var(--font-ibm-plex-mono), 'IBM Plex Mono', monospace !important;
-}
-
-[data-theme="nerv"] input::placeholder,
-[data-theme="nerv"] textarea::placeholder {
-  color: var(--steel-dim) !important;
-  opacity: 0.6;
-}
-
-[data-theme="nerv"] input:focus,
-[data-theme="nerv"] select:focus,
-[data-theme="nerv"] textarea:focus {
-  border-color: var(--nerv-orange) !important;
-  outline: none;
-  box-shadow: 0 0 8px rgba(255, 152, 48, 0.2);
-}
-
-/* ── Text Colors ───────────────────────────────────────────────────────── */
-
-/* Data values / primary text */
-[data-theme="nerv"] .text-gray-100,
-[data-theme="nerv"] .text-gray-200 {
-  color: var(--steel) !important;
-}
-
-/* Secondary text */
-[data-theme="nerv"] .text-gray-400,
-[data-theme="nerv"] .text-gray-500 {
-  color: var(--steel-dim) !important;
-}
-
-/* Muted text */
-[data-theme="nerv"] .text-gray-600,
-[data-theme="nerv"] .text-gray-700 {
-  color: rgba(154, 154, 144, 0.5) !important;
-}
-
-/* ── Unit Cards ────────────────────────────────────────────────────────── */
-
-/* Unit card backgrounds */
-[data-theme="nerv"] .bg-amber-950\/20,
-[data-theme="nerv"] .bg-amber-950\/30 {
-  background: rgba(255, 152, 48, 0.08) !important;
-}
-
-/* Rarity accent borders */
-[data-theme="nerv"] .border-green-800 { border-color: var(--data-green-dim) !important; }
-[data-theme="nerv"] .text-green-300 { color: var(--data-green) !important; }
-
-[data-theme="nerv"] .border-orange-700 { border-color: var(--nerv-orange-dim) !important; }
-[data-theme="nerv"] .text-orange-300 { color: var(--nerv-orange) !important; }
-
-[data-theme="nerv"] .border-red-700 { border-color: var(--alert-red-dim) !important; }
-[data-theme="nerv"] .text-red-300 { color: var(--alert-red) !important; }
-
-[data-theme="nerv"] .border-blue-800,
-[data-theme="nerv"] .border-blue-900 { border-color: var(--wire-cyan-dim) !important; }
-[data-theme="nerv"] .text-blue-300,
-[data-theme="nerv"] .text-blue-400 { color: var(--wire-cyan) !important; }
-
-/* ── Form Badges (unit forms F1/F2/TF/UF) ─────────────────────────────── */
-
-[data-theme="nerv"] .bg-yellow-950\/70 {
-  background: rgba(255, 152, 48, 0.15) !important;
-}
-[data-theme="nerv"] .border-yellow-700\/60 {
-  border-color: rgba(255, 152, 48, 0.4) !important;
-}
-[data-theme="nerv"] .text-yellow-300 {
-  color: var(--nerv-orange) !important;
-}
-
-[data-theme="nerv"] .bg-red-950\/70 {
-  background: rgba(255, 72, 64, 0.12) !important;
-}
-[data-theme="nerv"] .border-red-700\/60 {
-  border-color: rgba(255, 72, 64, 0.35) !important;
-}
-
-[data-theme="nerv"] .bg-purple-950\/70 {
-  background: rgba(160, 48, 224, 0.12) !important;
-}
-[data-theme="nerv"] .border-purple-500\/60 {
-  border-color: rgba(160, 48, 224, 0.4) !important;
-}
-[data-theme="nerv"] .text-purple-200 {
-  color: #C060FF !important;
-}
-
-/* ── Comparison Page ───────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-blue-950\/10 {
-  background: rgba(32, 240, 255, 0.04) !important;
-}
-[data-theme="nerv"] .bg-blue-950\/20 {
-  background: rgba(32, 240, 255, 0.08) !important;
-}
-[data-theme="nerv"] .bg-amber-950\/10 {
-  background: rgba(255, 152, 48, 0.04) !important;
-}
-[data-theme="nerv"] .bg-amber-950\/20 {
-  background: rgba(255, 152, 48, 0.08) !important;
-}
-
-/* Delta indicators */
-[data-theme="nerv"] .text-amber-500 {
-  color: var(--nerv-orange) !important;
-}
-
-/* ── Summary Cards (comparison page) ───────────────────────────────────── */
-
-[data-theme="nerv"] .border-blue-900 {
-  border-color: var(--wire-cyan-dim) !important;
-}
-[data-theme="nerv"] .border-amber-900 {
-  border-color: var(--nerv-orange-dim) !important;
-}
-
-/* Ring on active card */
-[data-theme="nerv"] .ring-amber-500\/50 {
-  --tw-ring-color: rgba(255, 152, 48, 0.35) !important;
-}
-
-/* ── Rarity Group Headers ──────────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-green-950\/30 {
-  background: rgba(80, 255, 80, 0.05) !important;
-}
-[data-theme="nerv"] .bg-amber-950\/30 {
-  background: rgba(255, 152, 48, 0.06) !important;
-}
-[data-theme="nerv"] .bg-orange-950\/30 {
-  background: rgba(255, 152, 48, 0.08) !important;
-}
-[data-theme="nerv"] .bg-red-950\/30 {
-  background: rgba(255, 72, 64, 0.06) !important;
-}
-[data-theme="nerv"] .bg-blue-950\/30 {
-  background: rgba(32, 240, 255, 0.06) !important;
-}
-[data-theme="nerv"] .bg-gray-900\/60 {
-  background: rgba(17, 17, 16, 0.6) !important;
-}
-
-/* ── Scrollbar ─────────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-[data-theme="nerv"] ::-webkit-scrollbar-track {
-  background: var(--void);
-}
-[data-theme="nerv"] ::-webkit-scrollbar-thumb {
-  background: rgba(255, 152, 48, 0.25);
-  border-radius: 3px;
-}
-[data-theme="nerv"] ::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 152, 48, 0.4);
-}
-
-/* ── CRT Effects via pseudo-elements (no extra DOM nodes) ────────────── */
-/* Using ::before (vignette) and ::after (scanlines) on body avoids
-   compositing two extra full-viewport layers. The pseudo-elements are
-   part of body's paint, so the GPU handles them in one pass. */
+/* ── CRT Effects (pseudo-elements on body) ───────────────────────────────── */
 
 [data-theme="nerv"] body::after {
   content: '';
@@ -402,11 +102,11 @@
     0deg,
     transparent,
     transparent 2px,
-    rgba(0, 0, 0, 0.06) 2px,
-    rgba(0, 0, 0, 0.06) 4px
+    rgba(0, 0, 0, var(--scan-opacity)) 2px,
+    rgba(0, 0, 0, var(--scan-opacity)) 4px
   );
   pointer-events: none;
-  z-index: 9999;
+  z-index: 10000;
 }
 
 [data-theme="nerv"] body::before {
@@ -414,344 +114,458 @@
   position: fixed;
   inset: 0;
   background: radial-gradient(
-    ellipse at center,
-    transparent 60%,
-    rgba(0, 0, 0, 0.3) 100%
+    ellipse 70% 70% at center,
+    transparent 50%,
+    rgba(0, 0, 0, 0.4) 100%
   );
   pointer-events: none;
-  z-index: 9998;
+  z-index: 9999;
 }
 
-/* ── Mobile Hamburger ──────────────────────────────────────────────────── */
+/* Phosphor flicker — v2 timing (4s cycle, sharp dip at 93%) */
+@keyframes nerv-phosphor {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.96; }
+  94% { opacity: 1; }
+}
 
+[data-theme="nerv"] body {
+  animation: nerv-phosphor 4s ease-in-out infinite;
+}
+
+/* Scan line overlay (thin green line sweeping down) */
+@keyframes nerv-scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+[data-theme="nerv"] .nerv-scan-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(80, 255, 80, 0.15) 20%,
+    rgba(80, 255, 80, 0.3) 50%,
+    rgba(80, 255, 80, 0.15) 80%,
+    transparent 100%
+  );
+  pointer-events: none;
+  z-index: 9997;
+  animation: nerv-scan-line 4s linear infinite;
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="nerv"] body,
+  [data-theme="nerv"] .nerv-scan-line {
+    animation: none !important;
+  }
+}
+
+/* ── Glow Effects ────────────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .glow-green {
+  text-shadow: 0 0 8px rgba(80, 255, 80, 0.5), 0 0 16px rgba(80, 255, 80, 0.2);
+}
+[data-theme="nerv"] .glow-orange {
+  text-shadow: 0 0 8px rgba(255, 152, 48, 0.5), 0 0 16px rgba(255, 152, 48, 0.2);
+}
+
+/* ── NERV Headings — Compressed serif for h1 ─────────────────────────────── */
+
+[data-theme="nerv"] h1 {
+  font-family: var(--font-title) !important;
+  font-weight: 900 !important;
+  color: var(--nerv-orange) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  transform: scaleX(0.82);
+  transform-origin: left center;
+  line-height: 1.15;
+}
+
+[data-theme="nerv"] h2 {
+  font-family: var(--font-sys) !important;
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nerv-orange) !important;
+}
+
+/* ── NERV Panel System ───────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .nerv-panel {
+  background: var(--void-warm);
+  border: 1px solid var(--steel-faint);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+[data-theme="nerv"] .nerv-panel-header {
+  font-family: var(--font-sys);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--nerv-orange);
+  padding: 6px 10px 5px;
+  border-bottom: 1px solid var(--nerv-orange-dim);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+[data-theme="nerv"] .nerv-panel-header .tag {
+  font-size: 7px;
+  color: var(--steel-dim);
+  letter-spacing: 0.08em;
+}
+
+[data-theme="nerv"] .nerv-panel-body {
+  padding: 8px 10px;
+  flex: 1;
+  min-height: 0;
+}
+
+/* ── NERV Metrics Grid ───────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .nerv-metrics-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--steel-faint);
+  flex: 1;
+}
+
+[data-theme="nerv"] .nerv-metric-cell {
+  background: var(--void-warm);
+  padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+[data-theme="nerv"] .nerv-metric-cell .m-label {
+  font-size: 7px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--nerv-orange);
+  margin-bottom: 2px;
+}
+
+[data-theme="nerv"] .nerv-metric-cell .m-value {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--data-green);
+  font-variant-numeric: tabular-nums;
+  text-shadow: 0 0 6px rgba(80, 255, 80, 0.4), 0 0 12px rgba(80, 255, 80, 0.15);
+  line-height: 1.1;
+}
+
+[data-theme="nerv"] .nerv-metric-cell .m-sub {
+  font-size: 7px;
+  color: var(--steel-dim);
+  margin-top: 2px;
+  letter-spacing: 0.06em;
+}
+
+[data-theme="nerv"] .nerv-metric-cell.highlight .m-value {
+  color: var(--nerv-orange);
+  text-shadow: 0 0 6px rgba(255, 152, 48, 0.4), 0 0 12px rgba(255, 152, 48, 0.15);
+  font-size: 22px;
+}
+
+/* ── NERV Progress Bar ───────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .nerv-progress {
+  height: 3px;
+  background: var(--void-panel);
+  border: 1px solid var(--steel-faint);
+  overflow: hidden;
+}
+
+[data-theme="nerv"] .nerv-progress .fill {
+  height: 100%;
+  background: var(--data-green);
+  box-shadow: 0 0 4px rgba(80, 255, 80, 0.3);
+}
+
+/* ── NERV Data Row ───────────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .nerv-data-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 2px 0;
+  font-size: 9px;
+  border-bottom: 1px solid var(--steel-faint);
+}
+
+[data-theme="nerv"] .nerv-data-row:last-child {
+  border-bottom: none;
+}
+
+[data-theme="nerv"] .nerv-data-row .lbl {
+  color: var(--nerv-orange-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 8px;
+  flex-shrink: 0;
+}
+
+[data-theme="nerv"] .nerv-data-row .val {
+  color: var(--data-green);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* ── NERV LED ────────────────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .led {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50% !important;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+[data-theme="nerv"] .led.green {
+  background: var(--data-green);
+  box-shadow: 0 0 4px var(--data-green), 0 0 8px rgba(80, 255, 80, 0.3);
+}
+[data-theme="nerv"] .led.red {
+  background: var(--alert-red);
+  box-shadow: 0 0 4px var(--alert-red);
+}
+[data-theme="nerv"] .led.orange {
+  background: var(--nerv-orange);
+  box-shadow: 0 0 4px var(--nerv-orange);
+}
+
+/* ── NERV Status Bar ─────────────────────────────────────────────────────── */
+
+[data-theme="nerv"] .nerv-status-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3px 12px;
+  font-size: 7px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--steel-dim);
+  border-top: 1px solid var(--steel-faint);
+  flex-shrink: 0;
+}
+
+/* ── Sidebar Overrides ───────────────────────────────────────────────────── */
+
+[data-theme="nerv"] aside {
+  background: var(--void) !important;
+  border-color: var(--nerv-orange-dim) !important;
+}
+
+/* NERV sidebar brand — compressed serif */
+[data-theme="nerv"] .nerv-brand {
+  font-family: var(--font-title);
+  font-size: 24px;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  color: var(--nerv-orange);
+  text-transform: uppercase;
+  transform: scaleX(0.82);
+  transform-origin: left center;
+  line-height: 1.15;
+}
+
+[data-theme="nerv"] .nerv-brand-sub {
+  font-family: var(--font-sys);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  color: var(--steel-dim);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/* NERV sidebar nav links */
+[data-theme="nerv"] .nerv-nav-link {
+  font-family: var(--font-sys);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--steel-dim);
+  text-decoration: none;
+  padding: 4px 8px;
+  transition: color 0.15s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+[data-theme="nerv"] .nerv-nav-link:hover {
+  color: var(--nerv-orange);
+}
+
+[data-theme="nerv"] .nerv-nav-link.active {
+  color: var(--nerv-orange);
+  border-left: 2px solid var(--nerv-orange);
+  background: var(--nerv-orange-fill);
+}
+
+/* ── General Tailwind Color Overrides ────────────────────────────────────── */
+
+/* Backgrounds */
+[data-theme="nerv"] .bg-black { background: var(--void) !important; }
+[data-theme="nerv"] .bg-gray-900 { background: var(--void-warm) !important; }
+[data-theme="nerv"] .bg-gray-950 { background: var(--void) !important; }
+
+/* Borders */
+[data-theme="nerv"] .border-gray-700 { border-color: var(--steel-faint) !important; }
+[data-theme="nerv"] .border-gray-800 { border-color: var(--steel-faint) !important; }
+[data-theme="nerv"] .border-amber-700,
+[data-theme="nerv"] .border-amber-800 { border-color: var(--nerv-orange-dim) !important; }
+
+/* Text colors */
+[data-theme="nerv"] .text-gray-100,
+[data-theme="nerv"] .text-gray-200 { color: var(--steel) !important; }
+[data-theme="nerv"] .text-gray-300 { color: var(--steel) !important; }
+[data-theme="nerv"] .text-gray-400,
+[data-theme="nerv"] .text-gray-500 { color: var(--steel-dim) !important; }
+[data-theme="nerv"] .text-gray-600,
+[data-theme="nerv"] .text-gray-700 { color: rgba(136, 136, 128, 0.5) !important; }
+
+[data-theme="nerv"] .text-amber-200,
+[data-theme="nerv"] .text-amber-300,
+[data-theme="nerv"] .text-amber-400,
+[data-theme="nerv"] .text-amber-500,
+[data-theme="nerv"] .text-amber-600 { color: var(--nerv-orange) !important; }
+
+[data-theme="nerv"] .text-red-300,
+[data-theme="nerv"] .text-red-400 { color: var(--alert-red) !important; }
+
+[data-theme="nerv"] .text-blue-300,
+[data-theme="nerv"] .text-blue-400 { color: var(--wire-cyan) !important; }
+
+[data-theme="nerv"] .text-green-300 { color: var(--data-green) !important; }
+[data-theme="nerv"] .text-orange-300 { color: var(--nerv-orange) !important; }
+[data-theme="nerv"] .text-yellow-300 { color: var(--nerv-orange) !important; }
+[data-theme="nerv"] .text-purple-200 { color: var(--thermal-magenta) !important; }
+
+/* Amber backgrounds */
+[data-theme="nerv"] .bg-amber-950\/20,
+[data-theme="nerv"] .bg-amber-950\/30,
+[data-theme="nerv"] .bg-amber-950\/40,
+[data-theme="nerv"] .bg-amber-950\/50 { background: var(--nerv-orange-fill) !important; }
+[data-theme="nerv"] .bg-amber-950 { background: var(--nerv-orange-fill) !important; }
+
+/* Rarity group backgrounds */
+[data-theme="nerv"] .bg-green-950\/30 { background: var(--data-green-faint) !important; }
+[data-theme="nerv"] .bg-blue-950\/30 { background: rgba(32, 240, 255, 0.04) !important; }
+[data-theme="nerv"] .bg-orange-950\/30 { background: var(--nerv-orange-fill) !important; }
+[data-theme="nerv"] .bg-red-950\/30 { background: var(--alert-red-fill) !important; }
+[data-theme="nerv"] .bg-gray-900\/60 { background: var(--void-panel) !important; }
+
+/* Rarity borders */
+[data-theme="nerv"] .border-green-800 { border-color: var(--data-green-dim) !important; }
+[data-theme="nerv"] .border-orange-700 { border-color: var(--nerv-orange-dim) !important; }
+[data-theme="nerv"] .border-red-700 { border-color: var(--alert-red-dim) !important; }
+[data-theme="nerv"] .border-blue-800,
+[data-theme="nerv"] .border-blue-900 { border-color: var(--wire-cyan-dim) !important; }
+
+/* Form badges */
+[data-theme="nerv"] .bg-yellow-950\/70 { background: var(--nerv-orange-fill) !important; }
+[data-theme="nerv"] .border-yellow-700\/60 { border-color: var(--nerv-orange-dim) !important; }
+[data-theme="nerv"] .bg-red-950\/70 { background: var(--alert-red-fill) !important; }
+[data-theme="nerv"] .border-red-700\/60 { border-color: var(--alert-red-dim) !important; }
+[data-theme="nerv"] .bg-purple-950\/70 { background: rgba(240, 48, 192, 0.08) !important; }
+[data-theme="nerv"] .border-purple-500\/60 { border-color: rgba(240, 48, 192, 0.3) !important; }
+
+/* Form inputs */
+[data-theme="nerv"] input[type="text"],
+[data-theme="nerv"] input[type="email"],
+[data-theme="nerv"] input[type="password"],
+[data-theme="nerv"] input[type="search"],
+[data-theme="nerv"] select,
+[data-theme="nerv"] textarea {
+  background: var(--void) !important;
+  border-color: var(--steel-faint) !important;
+  color: var(--data-green) !important;
+  font-family: var(--font-sys) !important;
+  font-size: 10px !important;
+}
+
+[data-theme="nerv"] input:focus,
+[data-theme="nerv"] select:focus,
+[data-theme="nerv"] textarea:focus {
+  border-color: var(--nerv-orange) !important;
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 152, 48, 0.2);
+}
+
+[data-theme="nerv"] input::placeholder,
+[data-theme="nerv"] textarea::placeholder {
+  color: var(--steel-dim) !important;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 9px;
+}
+
+/* Hover states */
+[data-theme="nerv"] .hover\:bg-amber-900:hover { background: var(--nerv-orange-fill) !important; }
+[data-theme="nerv"] .hover\:bg-gray-900:hover { background: var(--void-warm) !important; }
+[data-theme="nerv"] .hover\:bg-gray-950:hover { background: var(--void-panel) !important; }
+[data-theme="nerv"] .hover\:text-amber-400:hover,
+[data-theme="nerv"] .hover\:text-amber-300:hover { color: var(--nerv-orange-hot) !important; }
+
+/* Rings */
+[data-theme="nerv"] .ring-amber-500\/50 { --tw-ring-color: rgba(255, 152, 48, 0.3) !important; }
+[data-theme="nerv"] .ring-amber-500\/70 { --tw-ring-color: rgba(255, 152, 48, 0.5) !important; }
+[data-theme="nerv"] .border-amber-500 { border-color: var(--nerv-orange) !important; }
+
+/* Scrollbar */
+[data-theme="nerv"] ::-webkit-scrollbar { width: 3px; height: 3px; }
+[data-theme="nerv"] ::-webkit-scrollbar-track { background: var(--void); }
+[data-theme="nerv"] ::-webkit-scrollbar-thumb { background: var(--steel-faint); }
+
+/* Mobile hamburger */
 [data-theme="nerv"] .bg-gray-950\/95 {
   background: rgba(0, 0, 0, 0.95) !important;
-  border-color: rgba(255, 152, 48, 0.3) !important;
-}
-
-/* ── Alert/Status Colors ───────────────────────────────────────────────── */
-
-[data-theme="nerv"] .text-red-400 {
-  color: var(--alert-red) !important;
-}
-
-[data-theme="nerv"] .text-amber-400 {
-  color: var(--nerv-orange) !important;
-}
-
-/* ── Data-dense Table Styling ──────────────────────────────────────────── */
-
-[data-theme="nerv"] .divide-gray-900 > * + * {
-  border-color: rgba(255, 152, 48, 0.08) !important;
-}
-
-/* Column headers */
-[data-theme="nerv"] .tracking-wider {
-  color: var(--nerv-orange-dim) !important;
-  letter-spacing: 0.12em;
-}
-
-/* ── Section Labels ────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .text-xs.text-amber-600 {
-  color: var(--nerv-orange-dim) !important;
-}
-
-[data-theme="nerv"] .hover\:text-amber-400:hover {
-  color: var(--nerv-orange-hot) !important;
-}
-
-/* ── Confirmation Dialogs ──────────────────────────────────────────────── */
-
-[data-theme="nerv"] .border-amber-800.rounded-lg {
-  border-color: rgba(255, 152, 48, 0.3) !important;
-}
-
-[data-theme="nerv"] .bg-amber-950\/30 {
-  background: rgba(255, 152, 48, 0.06) !important;
-}
-
-/* ═══════════════════════════════════════════════════════════════════════════
-   SKILL.md Refinements — Additional fidelity to NERV Operations Console spec
-   ═══════════════════════════════════════════════════════════════════════════ */
-
-/* ── Tabular Nums for Data Readouts ──────────────────────────────────────── */
-/* Numbers should align in columns like terminal readouts */
-
-[data-theme="nerv"] .text-right,
-[data-theme="nerv"] .tabular-nums,
-[data-theme="nerv"] td,
-[data-theme="nerv"] .font-mono,
-[data-theme="nerv"] .font-bold {
-  font-variant-numeric: tabular-nums;
-}
-
-/* ── Progress Bars → Phosphor Green ──────────────────────────────────────── */
-/* Data readouts are green, not amber — progress = data */
-
-[data-theme="nerv"] .bg-amber-400 {
-  background: var(--data-green) !important;
-}
-
-[data-theme="nerv"] .bg-amber-600 {
-  background: var(--data-green-dim) !important;
-}
-
-[data-theme="nerv"] .bg-amber-800:not(aside *):not(button):not(a) {
-  background: rgba(80, 255, 80, 0.25) !important;
-}
-
-/* Progress bar track → deeper void */
-[data-theme="nerv"] .bg-gray-800.overflow-hidden {
-  background: var(--void-panel) !important;
-  border: 1px solid rgba(80, 255, 80, 0.1);
-}
-
-/* ── Dashboard Stat Cards ─────────────────────────────────────────────────── */
-
-/* Section header labels */
-[data-theme="nerv"] .text-sm.font-semibold.text-gray-300 {
-  color: var(--nerv-orange) !important;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.75rem;
-}
-
-/* Stat percentages — data green for nominal, orange for labels */
-[data-theme="nerv"] .text-2xl,
-[data-theme="nerv"] .text-3xl {
-  color: var(--data-green) !important;
-  font-variant-numeric: tabular-nums;
-}
-
-/* ── Right Panel / Detail Panel ───────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-gray-950.border-l {
-  background: var(--void) !important;
-  border-color: rgba(255, 152, 48, 0.3) !important;
-}
-
-/* Evolution requirements boxes */
-[data-theme="nerv"] .bg-gray-900\/60 {
-  background: var(--void-warm) !important;
-  border-color: rgba(255, 152, 48, 0.15) !important;
-}
-
-/* XP values → data green */
-[data-theme="nerv"] .text-amber-300.font-medium {
-  color: var(--data-green) !important;
-}
-
-/* Item count badges → data green */
-[data-theme="nerv"] .text-amber-400.font-bold {
-  color: var(--data-green) !important;
-}
-
-/* Wiki link button */
-[data-theme="nerv"] .text-amber-400.hover\:text-amber-300 {
-  color: var(--nerv-orange) !important;
-  border-color: rgba(255, 152, 48, 0.25) !important;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-}
-
-/* ── Ultra Form Purple → Thermal Purple ──────────────────────────────────── */
-
-[data-theme="nerv"] .border-purple-900\/40 {
-  border-color: rgba(160, 48, 224, 0.3) !important;
-}
-
-[data-theme="nerv"] .bg-purple-950\/20 {
-  background: rgba(160, 48, 224, 0.06) !important;
-}
-
-[data-theme="nerv"] .text-purple-300 {
-  color: #C060FF !important;
-}
-
-[data-theme="nerv"] .border-purple-800\/40 {
-  border-color: rgba(160, 48, 224, 0.25) !important;
-}
-
-[data-theme="nerv"] .bg-purple-900\/30 {
-  background: rgba(160, 48, 224, 0.08) !important;
-}
-
-/* ── Card Tint Overrides ──────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-purple-950\/20.border-purple-500\/50 {
-  background: rgba(160, 48, 224, 0.08) !important;
-  border-color: rgba(160, 48, 224, 0.35) !important;
-}
-
-[data-theme="nerv"] .bg-yellow-950\/10 {
-  background: rgba(255, 152, 48, 0.04) !important;
-}
-
-[data-theme="nerv"] .border-yellow-900\/40 {
-  border-color: rgba(255, 152, 48, 0.2) !important;
-}
-
-[data-theme="nerv"] .bg-red-950\/10 {
-  background: rgba(255, 72, 64, 0.04) !important;
-}
-
-[data-theme="nerv"] .border-red-900\/40 {
-  border-color: rgba(255, 72, 64, 0.2) !important;
-}
-
-/* ── Status Badges ────────────────────────────────────────────────────────── */
-
-/* Completed → data green */
-[data-theme="nerv"] .bg-amber-500\/20.border-amber-700 {
-  background: rgba(80, 255, 80, 0.1) !important;
-  border-color: var(--data-green-dim) !important;
-}
-[data-theme="nerv"] .bg-amber-500\/20.border-amber-700 * {
-  color: var(--data-green) !important;
-}
-
-/* In progress → orange (active state) */
-[data-theme="nerv"] .bg-amber-950\/50.border-amber-900 {
-  background: rgba(255, 152, 48, 0.08) !important;
   border-color: var(--nerv-orange-dim) !important;
 }
 
-/* Not started → dim steel */
-[data-theme="nerv"] .bg-gray-900.border-gray-800 {
-  background: var(--void-warm) !important;
-  border-color: rgba(224, 224, 216, 0.08) !important;
-}
+/* Backdrop */
+[data-theme="nerv"] .bg-black\/50,
+[data-theme="nerv"] .bg-black\/60 { background: rgba(0, 0, 0, 0.8) !important; }
 
-/* ── Tab / Filter Controls ────────────────────────────────────────────────── */
+/* Comparison page blues → cyan */
+[data-theme="nerv"] .bg-blue-950\/10 { background: rgba(32, 240, 255, 0.04) !important; }
+[data-theme="nerv"] .bg-blue-950\/20 { background: rgba(32, 240, 255, 0.06) !important; }
+[data-theme="nerv"] .bg-blue-600 { background: var(--wire-cyan-dim) !important; }
+[data-theme="nerv"] .border-amber-900 { border-color: var(--nerv-orange-dim) !important; }
 
-/* Active tab */
-[data-theme="nerv"] .bg-amber-950\/50.border-amber-800 {
-  background: rgba(255, 152, 48, 0.1) !important;
-  border-color: var(--nerv-orange-dim) !important;
-}
+/* Dividers */
+[data-theme="nerv"] .divide-gray-900 > * + * { border-color: var(--steel-faint) !important; }
 
-/* Tab text */
-[data-theme="nerv"] .text-amber-300:not(aside *) {
-  color: var(--nerv-orange) !important;
-}
-
-/* ── Selection Ring ───────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .ring-amber-500\/50 {
-  --tw-ring-color: rgba(255, 152, 48, 0.3) !important;
-}
-
-[data-theme="nerv"] .ring-amber-500\/70 {
-  --tw-ring-color: rgba(255, 152, 48, 0.5) !important;
-}
-
-[data-theme="nerv"] .border-amber-500 {
-  border-color: var(--nerv-orange) !important;
-}
-
-/* ── Selected Unit Card Glow ──────────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-amber-950\/40 {
-  background: rgba(255, 152, 48, 0.1) !important;
-}
-
-/* ── Hover States ─────────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .hover\:border-amber-700\/60:hover {
-  border-color: rgba(255, 152, 48, 0.35) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-amber-950\/10:hover {
-  background: rgba(255, 152, 48, 0.06) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-amber-950\/20:hover {
-  background: rgba(255, 152, 48, 0.1) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-amber-950\/30:hover {
-  background: rgba(255, 152, 48, 0.12) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-blue-950\/20:hover {
-  background: rgba(32, 240, 255, 0.08) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-blue-950\/30:hover {
-  background: rgba(32, 240, 255, 0.12) !important;
-}
-
-[data-theme="nerv"] .hover\:bg-gray-950:hover {
-  background: var(--void-warm) !important;
-}
-
-/* ── Comparison Delta Indicators ──────────────────────────────────────────── */
-
-[data-theme="nerv"] .text-blue-400 {
-  color: var(--wire-cyan) !important;
-}
-
-/* Blue bars (opponent) → cyan */
-[data-theme="nerv"] .bg-blue-600 {
-  background: var(--wire-cyan-dim) !important;
-}
-
-/* ── Disabled / Empty States ──────────────────────────────────────────────── */
-
-[data-theme="nerv"] .text-gray-700 {
-  color: rgba(154, 154, 144, 0.35) !important;
-}
-
-[data-theme="nerv"] .bg-gray-700 {
-  background: rgba(224, 224, 216, 0.06) !important;
-}
-
-/* ── Section Borders ──────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .border-b.border-gray-800 {
-  border-color: rgba(255, 152, 48, 0.12) !important;
-}
-
-[data-theme="nerv"] .border-gray-700.rounded-lg {
-  border-color: rgba(255, 152, 48, 0.15) !important;
-}
-
-/* ── Backdrop Overlay ─────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] .bg-black\/50 {
-  background: rgba(0, 0, 0, 0.7) !important;
-}
-
-/* ── Green Rarity Text → Keep Green (it's data-green aligned) ────────────── */
-
-[data-theme="nerv"] .text-green-300 {
-  color: var(--data-green) !important;
-}
-
-[data-theme="nerv"] .text-orange-300 {
-  color: var(--nerv-orange) !important;
-}
-
-/* ── Search Input ─────────────────────────────────────────────────────────── */
-
-[data-theme="nerv"] input[type="text"]::placeholder {
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-}
-
-/* ── Accessibility: High Contrast ─────────────────────────────────────────── */
-
+/* Accessibility: High Contrast */
 @media (prefers-contrast: more) {
   [data-theme="nerv"] {
     --nerv-orange: #FFB030;
-    --alert-red: #FF6050;
+    --alert-red: #FF5050;
     --data-green: #40FF40;
     --wire-cyan: #30FFFF;
   }
 }
-
-/* ── Accessibility: Reduced Motion ────────────────────────────────────────── */
-/* (No animations remain to disable, but keep for future additions) */

@@ -6,6 +6,7 @@ import { prisma } from "@/lib/prisma";
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
 import { ensureStoryProgress, ensureMedalProgress, ensureMilestoneProgress } from "@/lib/ensure-progress";
 import { ensureMilestoneCatalog, CATEGORY_META } from "@/lib/milestone-catalog";
+import DashboardShell from "@/components/DashboardShell";
 
 export default async function DashboardPage() {
   const session = await getServerSession(authOptions);
@@ -30,7 +31,7 @@ export default async function DashboardPage() {
     const pct = p
       ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies })
       : 0;
-    return { id: ch.id, name: ch.displayName, pct };
+    return { label: ch.displayName, pct };
   });
 
   const storyOverall =
@@ -58,7 +59,7 @@ export default async function DashboardPage() {
       })
     );
     const pct = percents.length ? Math.round(percents.reduce((a, b) => a + b, 0) / percents.length) : 0;
-    return { id: s.id, name: s.displayName, pct };
+    return { label: s.displayName, pct };
   });
 
   const legendOverall =
@@ -90,6 +91,7 @@ export default async function DashboardPage() {
   const medalCategoryRows = Array.from(medalsByCategory.entries())
     .map(([category, v]) => ({
       category,
+      label: category,
       ...v,
       pct: v.total === 0 ? 0 : Math.round((v.earned / v.total) * 100),
     }))
@@ -135,108 +137,25 @@ export default async function DashboardPage() {
   const overall = Math.round((storyOverall + legendOverall + medalsOverall + milestonesOverall + unitsOverall) / 5);
 
   return (
-    <div className="p-4 pt-16 md:p-8 space-y-6 w-full">
-      <h1 className="text-2xl font-semibold text-gray-100">Dashboard</h1>
-
-      {/* Stat cards */}
-      <div className="grid grid-cols-3 sm:grid-cols-6 gap-2 md:gap-3">
-        <StatCard title="Overall"     pct={overall}           highlight />
-        <StatCard title="Story"       pct={storyOverall} />
-        <StatCard title="Legend"      pct={legendOverall} />
-        <StatCard title="Medals"      pct={medalsOverall} />
-        <StatCard title="Milestones"  pct={milestonesOverall} />
-        <StatCard title="Units"       pct={unitsOverall} sub={`${unitObtained}/${unitTotal}`} />
-      </div>
-
-      {/* Story + Legend side by side */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Section title="Story Chapters">
-          <div className="space-y-1.5">
-            {storyRows.map((r) => (
-              <CompactRow key={r.id} label={r.name} pct={r.pct} />
-            ))}
-          </div>
-        </Section>
-
-        <Section title="Legend Stages">
-          <div className="space-y-1.5">
-            {legendRows.map((r) => (
-              <CompactRow key={r.id} label={r.name} pct={r.pct} />
-            ))}
-          </div>
-        </Section>
-      </div>
-
-      {/* Medals + Milestones side by side */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Section title={`Meow Medals — ${medalEarned}/${medalTotal}`}>
-          <div className="space-y-1.5">
-            {medalCategoryRows.map((r) => (
-              <CompactRow key={r.category} label={r.category} pct={r.pct} sub={`${r.earned}/${r.total}`} />
-            ))}
-          </div>
-        </Section>
-
-        <Section title={`Milestone Stages — ${milestoneCleared}/${milestoneTotal}`}>
-          <div className="space-y-1.5">
-            {milestoneCategoryRows.map((r) => (
-              <CompactRow key={r.label} label={r.label} pct={r.pct} sub={`${r.cleared}/${r.total}`} />
-            ))}
-          </div>
-        </Section>
-      </div>
-    </div>
-  );
-}
-
-/* ── Helpers ───────────────────────────────────────────────────────────────── */
-
-function pctColor(pct: number) {
-  if (pct >= 80) return "#fbbf24"; // amber-400
-  if (pct >= 40) return "#d97706"; // amber-600
-  if (pct > 0)   return "#92400e"; // amber-800
-  return "#4b5563"; // gray-600
-}
-
-function barFill(pct: number) {
-  if (pct >= 80) return "bg-amber-400";
-  if (pct >= 40) return "bg-amber-600";
-  if (pct > 0)   return "bg-amber-800";
-  return "bg-gray-700";
-}
-
-function StatCard({ title, pct, highlight = false, sub }: { title: string; pct: number; highlight?: boolean; sub?: string }) {
-  return (
-    <div className={`border rounded-lg p-3 md:p-4 bg-black ${highlight ? "border-amber-800" : "border-gray-700"}`}>
-      <div className="text-xs md:text-sm text-gray-400 mb-1">{title}</div>
-      <div className="text-2xl md:text-3xl font-semibold" style={{ color: pctColor(pct) }}>{pct}%</div>
-      {sub && <div className="text-xs text-gray-500 mt-0.5">{sub}</div>}
-      <div className="mt-3 h-2 rounded bg-gray-800 overflow-hidden">
-        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
-      </div>
-    </div>
-  );
-}
-
-function Section({ title, children }: { title: string; children: React.ReactNode }) {
-  return (
-    <div className="border border-gray-700 rounded-lg p-5 bg-black h-full">
-      <h2 className="text-sm font-semibold text-gray-300 mb-3 pb-2 border-b border-gray-800">{title}</h2>
-      {children}
-    </div>
-  );
-}
-
-function CompactRow({ label, pct, sub }: { label: string; pct: number; sub?: string }) {
-  return (
-    <div className="flex items-center gap-3">
-      <div className="w-[30%] text-sm text-gray-300 truncate flex-shrink-0">{label}</div>
-      <div className="flex-1 h-2 rounded bg-gray-800 overflow-hidden">
-        <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
-      </div>
-      <div className="w-16 text-right text-sm flex-shrink-0" style={{ color: pctColor(pct) }}>
-        {sub ?? `${pct}%`}
-      </div>
-    </div>
+    <DashboardShell
+      data={{
+        overall,
+        storyOverall,
+        legendOverall,
+        medalsOverall,
+        milestonesOverall,
+        unitsOverall,
+        unitObtained,
+        unitTotal,
+        storyRows,
+        legendRows,
+        medalCategoryRows,
+        milestoneCategoryRows,
+        medalEarned,
+        medalTotal,
+        milestoneCleared,
+        milestoneTotal,
+      }}
+    />
   );
 }

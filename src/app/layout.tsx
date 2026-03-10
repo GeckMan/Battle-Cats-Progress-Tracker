@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, IBM_Plex_Mono } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono, Noto_Serif_Display, Saira_Extra_Condensed } from "next/font/google";
 import "./globals.css";
 import "./nerv-theme.css";
 
@@ -13,10 +13,23 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const ibmPlexMono = IBM_Plex_Mono({
-  variable: "--font-ibm-plex-mono",
+/* NERV v2 fonts */
+const jetbrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+});
+
+const notoSerifDisplay = Noto_Serif_Display({
+  variable: "--font-noto-serif-display",
+  subsets: ["latin"],
+  weight: ["700", "800", "900"],
+});
+
+const sairaExtraCondensed = Saira_Extra_Condensed({
+  variable: "--font-saira-extra-condensed",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800"],
 });
 
 export const viewport: Viewport = {
@@ -50,7 +63,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${ibmPlexMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${notoSerifDisplay.variable} ${sairaExtraCondensed.variable} antialiased`}
       >
         {children}
       </body>
