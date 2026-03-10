@@ -162,21 +162,40 @@ export default function NervWaveform() {
     curKeys.forEach((k) => inGroupSet.add(k));
   }
 
-  // For each group, scan backwards to find the convergence point
+  // For each group, scan backwards to find the convergence point.
+  // Convergence requires BOTH: (a) values within threshold AND (b) values
+  // are stable (not changing >1% per day) — so we only candy-cane once
+  // the lines are flat/horizontal, not during the vertical climb.
+  const STABILITY_THRESHOLD = 1; // max % change per day to be "stable"
+
   for (const g of oGroups) {
     const gPaths = g.keys.map((k) => paths.find((p) => p.key === k)!);
     g.convergeIdx = 0; // default: overlapping for entire range
     for (let di = numDays - 1; di >= 0; di--) {
       const pcts = gPaths.map((p) => p.pctValues[di]);
-      if (Math.max(...pcts) - Math.min(...pcts) > OVERLAP_THRESHOLD) {
+      const spread = Math.max(...pcts) - Math.min(...pcts);
+
+      // Check if any series is still moving (not yet settled)
+      let unstable = false;
+      if (di < numDays - 1) {
+        for (const p of gPaths) {
+          const delta = Math.abs(p.pctValues[di + 1] - p.pctValues[di]);
+          if (delta > STABILITY_THRESHOLD) {
+            unstable = true;
+            break;
+          }
+        }
+      }
+
+      if (spread > OVERLAP_THRESHOLD || unstable) {
         g.convergeIdx = di + 1;
         break;
       }
     }
 
     // Build candy-cane path using averaged pctValues.
-    // Start 1 point before convergence for smooth visual transition.
-    const startIdx = Math.max(0, g.convergeIdx - 1);
+    // Start right at convergence (no early overlap — lines are solid during climb).
+    const startIdx = g.convergeIdx;
     const avgPoints: { x: number; y: number }[] = [];
     for (let di = startIdx; di < numDays; di++) {
       const avgPct = gPaths.reduce((s, p) => s + p.pctValues[di], 0) / gPaths.length;
