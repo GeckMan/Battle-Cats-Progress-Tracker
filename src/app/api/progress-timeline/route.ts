@@ -6,20 +6,12 @@ import { prisma } from "@/lib/prisma";
 /**
  * GET /api/progress-timeline
  *
- * Returns daily cumulative activity counts over the last 90 days,
+ * Returns daily cumulative progress counts over the last 90 days,
  * broken down by category. Used for the NERV Progress Waveform chart.
  *
- * Response shape:
- * {
- *   days: string[],              // ISO date strings ["2026-01-10", ...]
- *   series: {
- *     units:      number[],      // cumulative units obtained per day
- *     medals:     number[],      // cumulative medals earned per day
- *     milestones: number[],      // cumulative milestones cleared per day
- *     story:      number[],      // cumulative story events per day
- *     legend:     number[],      // cumulative legend events per day
- *   }
- * }
+ * Combines Activity event logs with actual progress table counts to
+ * ensure the waveform reflects real progress even when activity events
+ * were not logged (e.g. medals earned before activity tracking existed).
  */
 export async function GET(req: NextRequest) {
   const session = await getServerSession(authOptions);
@@ -33,7 +25,7 @@ export async function GET(req: NextRequest) {
   since.setDate(since.getDate() - daysBack);
   since.setHours(0, 0, 0, 0);
 
-  // Fetch all user activities since cutoff, ordered chronologically
+  // ── 1. Fetch activity events (existing logic) ──────────────────────────
   // @ts-ignore – Activity model
   const activities: { type: string; createdAt: Date }[] = await (prisma as any).activity.findMany({
     where: {
@@ -44,7 +36,7 @@ export async function GET(req: NextRequest) {
     select: { type: true, createdAt: true },
   });
 
-  // Also get total counts BEFORE the window to establish baseline
+  // Baseline from before the window
   // @ts-ignore
   const baselineCounts = await (prisma as any).activity.groupBy({
     by: ["type"],
@@ -59,6 +51,30 @@ export async function GET(req: NextRequest) {
   for (const row of baselineCounts) {
     baseline[row.type] = row._count.id;
   }
+
+  // ── 2. Query actual progress tables for real current totals ────────────
+  const [realMedals, realLegend, realMilestones, realUnits] = await Promise.all([
+    // Medals: count UserMeowMedal where earned = true
+    (prisma as any).userMeowMedal.count({
+      where: { userId, earned: true },
+    }),
+    // Legend: count UserLegendProgress where status = COMPLETED
+    (prisma as any).userLegendProgress.count({
+      where: { userId, status: "COMPLETED" },
+    }),
+    // Milestones: count cleared milestones
+    (prisma as any).userMilestoneProgress.count({
+      where: { userId, cleared: true },
+    }),
+    // Units: count obtained units (formLevel >= 1)
+    (prisma as any).userUnitProgress.count({
+      where: {
+        userId,
+        formLevel: { gte: 1 },
+        unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+      },
+    }),
+  ]);
 
   // Category mapping
   const categoryMap: Record<string, string> = {
@@ -97,7 +113,6 @@ export async function GET(req: NextRequest) {
   // Convert daily counts to cumulative, starting from baseline
   const series: Record<string, number[]> = {};
   for (const cat of categories) {
-    // Baseline: sum all matching types before the window
     let cumulative = 0;
     if (cat === "units") cumulative = (baseline["UNIT_OBTAINED"] ?? 0) + (baseline["UNIT_EVOLVED"] ?? 0);
     else if (cat === "medals") cumulative = baseline["MEDAL_EARNED"] ?? 0;
@@ -109,6 +124,40 @@ export async function GET(req: NextRequest) {
       cumulative += count;
       return cumulative;
     });
+  }
+
+  // ── 3. Reconcile: ensure final values match real DB counts ─────────────
+  // If activity logs under-count (e.g. medals earned before tracking),
+  // adjust the series so the last value equals the real count.
+  // We add the deficit evenly across all days so the line still shows
+  // growth shape from activities, but anchored to the correct total.
+  const realCounts: Record<string, number> = {
+    units: realUnits,
+    medals: realMedals,
+    milestones: realMilestones,
+    legend: realLegend,
+    // story doesn't have a simple "count" equivalent — leave activity-based
+  };
+
+  for (const cat of ["units", "medals", "milestones", "legend"] as const) {
+    const vals = series[cat];
+    if (!vals || vals.length === 0) continue;
+
+    const activityTotal = vals[vals.length - 1];
+    const realTotal = realCounts[cat];
+
+    if (realTotal > activityTotal) {
+      // The activity log is missing entries. Boost the entire series
+      // so that the final day matches the real count.
+      // Strategy: flat offset — add the deficit to every day.
+      // This means the line starts at the correct baseline and ends at
+      // the correct total. If there are activity events they still show
+      // as bumps relative to the base.
+      const deficit = realTotal - activityTotal;
+      for (let i = 0; i < vals.length; i++) {
+        vals[i] += deficit;
+      }
+    }
   }
 
   return NextResponse.json({ days, series });
