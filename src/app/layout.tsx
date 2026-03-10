@@ -7,30 +7,35 @@ import "./nerv-theme.css";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap",
 });
 
-/* NERV v2 fonts */
+/* NERV v2 fonts — swap to prevent render-blocking on first load */
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400", "500", "700"],
+  display: "swap",
 });
 
 const notoSerifDisplay = Noto_Serif_Display({
   variable: "--font-noto-serif-display",
   subsets: ["latin"],
   weight: ["700", "800", "900"],
+  display: "swap",
 });
 
 const sairaExtraCondensed = Saira_Extra_Condensed({
   variable: "--font-saira-extra-condensed",
   subsets: ["latin"],
   weight: ["400", "600", "700", "800"],
+  display: "swap",
 });
 
 export const viewport: Viewport = {
