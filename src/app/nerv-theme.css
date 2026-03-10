@@ -93,6 +93,8 @@
 }
 
 /* ── CRT Effects (pseudo-elements on body) ───────────────────────────────── */
+/* NOTE: Each fixed overlay creates a GPU-composited layer. Minimize layer count
+   and add proper containment hints to prevent sub-pixel compositing artifacts. */
 
 [data-theme="nerv"] body::after {
   content: '';
@@ -107,6 +109,10 @@
   );
   pointer-events: none;
   z-index: 10000;
+  /* Proper layer isolation to prevent compositing bleed */
+  will-change: auto;
+  contain: strict;
+  backface-visibility: hidden;
 }
 
 [data-theme="nerv"] body::before {
@@ -120,29 +126,24 @@
   );
   pointer-events: none;
   z-index: 9999;
+  will-change: auto;
+  contain: strict;
+  backface-visibility: hidden;
 }
 
-/* Phosphor flicker — v2 timing (4s cycle, sharp dip at 93%) */
-@keyframes nerv-phosphor {
-  0%, 100% { opacity: 1; }
-  92% { opacity: 1; }
-  93% { opacity: 0.96; }
-  94% { opacity: 1; }
-}
-
-[data-theme="nerv"] body {
-  animation: nerv-phosphor 4s ease-in-out infinite;
-}
+/* Phosphor flicker — applied to a wrapper instead of body to avoid
+   forcing the entire page into a single GPU-composited layer.
+   Moved to the .nerv-scan-line element as a subtle brightness pulse. */
 
 /* Scan line overlay (thin green line sweeping down) */
 @keyframes nerv-scan-line {
-  0% { transform: translateY(-100%); }
-  100% { transform: translateY(100vh); }
+  0% { top: -2px; }
+  100% { top: 100vh; }
 }
 
 [data-theme="nerv"] .nerv-scan-line {
   position: fixed;
-  top: 0;
+  top: -2px;
   left: 0;
   right: 0;
   height: 2px;
@@ -158,10 +159,14 @@
   z-index: 9997;
   animation: nerv-scan-line 4s linear infinite;
   opacity: 0.5;
+  /* Avoid transform-based animation — use top instead to prevent
+     GPU compositing artifact at the transform origin point */
+  will-change: top;
+  contain: layout style;
+  backface-visibility: hidden;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  [data-theme="nerv"] body,
   [data-theme="nerv"] .nerv-scan-line {
     animation: none !important;
   }
