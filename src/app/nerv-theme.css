@@ -167,6 +167,14 @@
   }
 }
 
+/* ── Focus Suppression (prevent Tailwind v4 blue outline artifacts) ─────── */
+
+[data-theme="nerv"] *:focus,
+[data-theme="nerv"] *:focus-visible {
+  outline: none !important;
+  outline-offset: 0 !important;
+}
+
 /* ── Glow Effects ────────────────────────────────────────────────────────── */
 
 [data-theme="nerv"] .glow-green {

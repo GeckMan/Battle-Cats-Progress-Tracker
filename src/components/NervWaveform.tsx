@@ -38,7 +38,7 @@ export default function NervWaveform() {
     try {
       // Start from Jan 1 2026 (site launch) — calculate days dynamically
       const launchDate = new Date("2026-01-01T00:00:00");
-      const daysSinceLaunch = Math.ceil((Date.now() - launchDate.getTime()) / 86400000);
+      const daysSinceLaunch = Math.floor((Date.now() - launchDate.getTime()) / 86400000);
       const res = await fetch(`/api/progress-timeline?days=${Math.max(daysSinceLaunch, 7)}`);
       if (res.ok) {
         const json = await res.json();
@@ -101,23 +101,28 @@ export default function NervWaveform() {
   const numDays = data.days.length;
   const xStep = numDays > 1 ? chartW / (numDays - 1) : chartW;
 
-  // Build SVG paths for each series
+  // Build SVG paths for each series (skip flat/degenerate series to avoid sub-pixel artifacts)
   const paths = SERIES_CONFIG.map((cfg) => {
     const values = data.series[cfg.key as keyof typeof data.series] ?? [];
-    if (values.length === 0) return { ...cfg, d: "", areaD: "" };
+    if (values.length === 0) return { ...cfg, d: "", areaD: "", flat: true };
+
+    const seriesMin = Math.min(...values);
+    const seriesMax = Math.max(...values);
+    // Skip rendering if series has no variation (flat line) — prevents sub-pixel artifacts
+    if (seriesMax === seriesMin) return { ...cfg, d: "", areaD: "", flat: true };
 
     const points = values.map((v, i) => ({
       x: PAD_L + i * xStep,
       y: PAD_T + chartH - (v / maxVal) * chartH,
     }));
 
-    // Smooth curve using catmull-rom → cubic bezier
+    // Smooth curve using monotone cubic Hermite interpolation
     const d = smoothPath(points);
 
     // Area fill (path down to bottom, back to start)
     const areaD = `${d} L ${points[points.length - 1].x},${PAD_T + chartH} L ${points[0].x},${PAD_T + chartH} Z`;
 
-    return { ...cfg, d, areaD };
+    return { ...cfg, d, areaD, flat: false };
   });
 
   // Date labels (show ~5 evenly spaced)
@@ -162,6 +167,7 @@ export default function NervWaveform() {
                   border: "none",
                   cursor: "pointer",
                   padding: 0,
+                  outline: "none",
                 }}
               >
                 <span style={{
@@ -185,6 +191,7 @@ export default function NervWaveform() {
           height="auto"
           style={{ display: "block", overflow: "hidden" }}
           preserveAspectRatio="xMidYMid meet"
+          shapeRendering="geometricPrecision"
         >
           {/* Grid lines */}
           {[0, 0.25, 0.5, 0.75, 1].map((frac) => {
@@ -202,9 +209,9 @@ export default function NervWaveform() {
             );
           })}
 
-          {/* Area fills (behind lines) */}
+          {/* Area fills (behind lines) — skip flat/degenerate series */}
           {paths.map((p) => {
-            if (!p.areaD) return null;
+            if (!p.areaD || p.flat) return null;
             const isActive = !hoveredSeries || hoveredSeries === p.key;
             return (
               <path
@@ -217,9 +224,9 @@ export default function NervWaveform() {
             );
           })}
 
-          {/* Lines */}
+          {/* Lines — skip flat/degenerate series */}
           {paths.map((p) => {
-            if (!p.d) return null;
+            if (!p.d || p.flat) return null;
             const isActive = !hoveredSeries || hoveredSeries === p.key;
             return (
               <path
@@ -228,6 +235,7 @@ export default function NervWaveform() {
                 fill="none"
                 stroke={p.color}
                 strokeWidth={isActive ? 2 : 1}
+                strokeLinecap="butt"
                 opacity={isActive ? 1 : 0.15}
                 style={{
                   transition: "opacity 0.3s, stroke-width 0.3s",
