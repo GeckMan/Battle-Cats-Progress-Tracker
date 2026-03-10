@@ -534,7 +534,6 @@ function getSagaName(index: number): string {
 }
 
 async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
-  // Map_Name.csv format: "index|subchapter_display_name"
   const mapNamePath = path.join(resLocal, "Map_Name.csv");
   if (!existsSync(mapNamePath)) {
     console.log("  Map_Name.csv not found — skipping legend stages");
@@ -544,17 +543,52 @@ async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
   const content = readFileSync(mapNamePath, "utf-8");
   const lines = content.trim().split("\n").filter((l) => l.trim());
 
+  console.log(`  Map_Name.csv: ${lines.length} total lines`);
+  // Log first 3 lines for format debugging
+  for (let i = 0; i < Math.min(3, lines.length); i++) {
+    console.log(`    line[${i}]: "${lines[i].substring(0, 80)}${lines[i].length > 80 ? "..." : ""}"`);
+  }
+
+  // Map_Name.csv format varies across BCData versions:
+  //   Format A: "index|subchapter_name" (explicit numeric index as first field)
+  //   Format B: "subchapter_name|..." (no index — line number IS the index)
+  //
+  // We auto-detect: if the first line's first pipe-field parses as an integer,
+  // assume Format A. Otherwise assume Format B (line index = subchapter index).
   const subchapters: { index: number; name: string }[] = [];
-  for (const line of lines) {
-    const [indexStr, ...nameParts] = line.split("|");
-    const index = parseInt(indexStr.trim(), 10);
-    const name = nameParts.join("|").trim();
-    if (!isNaN(index) && name) {
-      subchapters.push({ index, name });
+
+  const firstFields = lines.slice(0, 5).map((l) => l.split("|")[0].trim());
+  const looksLikeFormatA = firstFields.every((f) => !isNaN(parseInt(f, 10)));
+
+  if (looksLikeFormatA) {
+    console.log("  Detected Format A: index|name");
+    for (const line of lines) {
+      const [indexStr, ...nameParts] = line.split("|");
+      const index = parseInt(indexStr.trim(), 10);
+      const name = nameParts.join("|").trim();
+      if (!isNaN(index) && name) {
+        subchapters.push({ index, name });
+      }
+    }
+  } else {
+    console.log("  Detected Format B: name per line (line number = index)");
+    for (let i = 0; i < lines.length; i++) {
+      // The name is the first (or only) pipe-delimited field
+      const name = lines[i].split("|")[0].trim();
+      if (name) {
+        subchapters.push({ index: i, name });
+      }
     }
   }
 
   console.log(`  Found ${subchapters.length} legend subchapters in BCData`);
+  // Log index distribution across sagas
+  const sagaDist: Record<string, number> = {};
+  for (const sub of subchapters) {
+    const saga = getSagaName(sub.index);
+    sagaDist[saga] = (sagaDist[saga] ?? 0) + 1;
+  }
+  console.log(`  Saga distribution: ${Object.entries(sagaDist).map(([k, v]) => `${k}=${v}`).join(", ")}`);
 
   // ── Parse stage counts from StageName_L_en.csv ──────────────────────────
   // Each line: "subchapterIndex|stageIndex|stageName"
