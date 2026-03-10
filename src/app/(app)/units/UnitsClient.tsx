@@ -28,6 +28,29 @@ type UnitRow = {
   formLevel: number; // 0–4
 };
 
+/**
+ * Compute the real max form level for a unit based on which form names exist.
+ * formCount from the DB can overcount because BCData has placeholder text for
+ * forms that don't actually exist in-game yet.
+ *
+ * Level 0 = not obtained, 1 = F1 (base), 2 = F2 (evolved), 3 = TF, 4 = UF
+ * A unit only has a form if its corresponding name field is a real name
+ * (not null and not matching a placeholder pattern like "817-1").
+ */
+const PLACEHOLDER_RE = /^[\d_\-.\s]+$/;
+function isRealName(name: string | null): boolean {
+  return !!name && !PLACEHOLDER_RE.test(name);
+}
+
+function realMaxForm(unit: UnitRow): number {
+  // Every unit has at least F1 (level 1)
+  let max = 1;
+  if (isRealName(unit.evolvedName)) max = 2;
+  if (isRealName(unit.trueName)) max = 3;
+  if (isRealName(unit.ultraName)) max = 4;
+  return max;
+}
+
 /** Return the display name for the unit's current form level */
 function displayName(unit: UnitRow): string {
   switch (unit.formLevel) {
@@ -241,7 +264,7 @@ function UnitDetailPanel({
           <div className="space-y-1">
             <div className="text-xs text-gray-500 uppercase tracking-wide">Evolution</div>
             <p className="text-sm text-gray-500">
-              {unit.formCount <= 2
+              {realMaxForm(unit) <= 2
                 ? "This unit does not have a True Form."
                 : "Evolution data not available for this unit."}
             </p>
@@ -283,8 +306,8 @@ const UnitCard = memo(function UnitCard({
   onInfo?: (unit: UnitRow) => void;
   focused?: boolean;
 }) {
-  const maxLevel = unit.formCount;
-  const level = unit.formLevel;
+  const maxLevel = realMaxForm(unit);
+  const level = Math.min(unit.formLevel, maxLevel); // clamp in case DB has a higher level than available forms
   const preloaded = useRef(false);
 
   /* Long-press to open info panel */
@@ -379,7 +402,18 @@ const UnitCard = memo(function UnitCard({
           height={56}
           loading="lazy"
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => { e.currentTarget.style.opacity = "0"; }}
+          onError={(e) => {
+            // If current form sprite doesn't exist, try falling back to previous form
+            const img = e.currentTarget;
+            if (displayForm > 0) {
+              const prevUrl = spriteUrl(unit.unitNumber, displayForm - 1, unit.name);
+              if (img.src !== prevUrl && !img.src.endsWith(prevUrl.split("?")[1])) {
+                img.src = prevUrl;
+                return;
+              }
+            }
+            img.style.opacity = "0";
+          }}
         />
       </div>
 
@@ -641,12 +675,12 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     setError(null);
     // Optimistic update
     setUnits((prev) =>
-      prev.map((u) => (selectedIds.has(u.id) ? { ...u, formLevel: Math.min(formLevel, u.formCount) } : u))
+      prev.map((u) => (selectedIds.has(u.id) ? { ...u, formLevel: Math.min(formLevel, realMaxForm(u)) } : u))
     );
     try {
       const updates = [...selectedIds].map((unitId) => {
         const unit = units.find((u) => u.id === unitId);
-        return { unitId, formLevel: Math.min(formLevel, unit?.formCount ?? formLevel) };
+        return { unitId, formLevel: Math.min(formLevel, unit ? realMaxForm(unit) : formLevel) };
       });
       const res = await fetch("/api/units/bulk", {
         method: "POST",
@@ -746,14 +780,15 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
       if (/^[0-4]$/.test(e.key)) {
         const level = Number(e.key);
-        if (level <= unit.formCount) handleUpdate(unit.id, level);
+        if (level <= realMaxForm(unit)) handleUpdate(unit.id, level);
         return;
       }
       if (e.key === "i" || e.key === "I") { setDetailUnit(unit); return; }
       if (e.key === " " || e.key === "Enter") {
         e.preventDefault();
+        const maxForm = realMaxForm(unit);
         if (selectionMode) { toggleSelect(unit.id); }
-        else { handleUpdate(unit.id, (unit.formLevel + 1) % (unit.formCount + 1)); }
+        else { handleUpdate(unit.id, (unit.formLevel + 1) % (maxForm + 1)); }
         return;
       }
     }
@@ -775,7 +810,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   /* Overall stats */
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
-  const hasTrueForm = units.filter((u) => u.formCount >= 3).length;
+  const hasTrueForm = units.filter((u) => realMaxForm(u) >= 3).length;
 
   /* Group units by rarity for the "All" tab sectioned view */
   const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {

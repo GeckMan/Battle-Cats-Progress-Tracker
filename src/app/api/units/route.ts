@@ -66,7 +66,7 @@ export async function GET(req: Request) {
   if (setName) where.banners = { has: setName };
 
   // @ts-ignore
-  const units: any[] = await (prisma as any).unit.findMany({
+  const allUnits: any[] = await (prisma as any).unit.findMany({
     where,
     orderBy: [{ sortOrder: "asc" }],
     select: {
@@ -85,6 +85,12 @@ export async function GET(req: Request) {
       evolutionData: true,
     },
   });
+
+  // Filter out placeholder/test units from BCData that have no real names.
+  // These have names like "817-1", "733_1", "801-1" (unit number + form index).
+  // Real unit names always contain at least one letter character.
+  const PLACEHOLDER_RE = /^[\d_\-.\s]+$/;
+  const units = allUnits.filter((u: any) => !PLACEHOLDER_RE.test(u.name));
 
   // Fetch progress for the target user on these specific units in one query
   const unitIds = units.map((u: any) => u.id);
