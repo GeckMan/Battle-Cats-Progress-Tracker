@@ -93,8 +93,9 @@
 }
 
 /* ── CRT Effects (pseudo-elements on body) ───────────────────────────────── */
-/* NOTE: Each fixed overlay creates a GPU-composited layer. Minimize layer count
-   and add proper containment hints to prevent sub-pixel compositing artifacts. */
+/* Static overlays — no animations on body to avoid forcing it into a GPU layer.
+   Use transform: translateZ(0) to promote each overlay to its own compositor
+   layer, preventing compositing bleed between them. */
 
 [data-theme="nerv"] body::after {
   content: '';
@@ -109,10 +110,7 @@
   );
   pointer-events: none;
   z-index: 10000;
-  /* Proper layer isolation to prevent compositing bleed */
-  will-change: auto;
-  contain: strict;
-  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
 [data-theme="nerv"] body::before {
@@ -126,24 +124,19 @@
   );
   pointer-events: none;
   z-index: 9999;
-  will-change: auto;
-  contain: strict;
-  backface-visibility: hidden;
+  transform: translateZ(0);
 }
 
-/* Phosphor flicker — applied to a wrapper instead of body to avoid
-   forcing the entire page into a single GPU-composited layer.
-   Moved to the .nerv-scan-line element as a subtle brightness pulse. */
-
-/* Scan line overlay (thin green line sweeping down) */
+/* Scan line overlay — GPU-accelerated transform animation (not top/left
+   which trigger layout). translateZ(0) promotes to own compositor layer. */
 @keyframes nerv-scan-line {
-  0% { top: -2px; }
-  100% { top: 100vh; }
+  0%   { transform: translate3d(0, -2px, 0); }
+  100% { transform: translate3d(0, 100vh, 0); }
 }
 
 [data-theme="nerv"] .nerv-scan-line {
   position: fixed;
-  top: -2px;
+  top: 0;
   left: 0;
   right: 0;
   height: 2px;
@@ -159,10 +152,7 @@
   z-index: 9997;
   animation: nerv-scan-line 4s linear infinite;
   opacity: 0.5;
-  /* Avoid transform-based animation — use top instead to prevent
-     GPU compositing artifact at the transform origin point */
-  will-change: top;
-  contain: layout style;
+  will-change: transform;
   backface-visibility: hidden;
 }
 
@@ -172,21 +162,22 @@
   }
 }
 
-/* ── Focus Suppression (prevent Tailwind v4 blue outline artifacts) ─────── */
+/* ── Focus Suppression (prevent default blue outlines) ─────────────────── */
 
-[data-theme="nerv"] *:focus,
-[data-theme="nerv"] *:focus-visible {
+[data-theme="nerv"] button:focus,
+[data-theme="nerv"] button:focus-visible,
+[data-theme="nerv"] a:focus,
+[data-theme="nerv"] a:focus-visible {
   outline: none !important;
-  outline-offset: 0 !important;
 }
 
 /* ── Glow Effects ────────────────────────────────────────────────────────── */
 
 [data-theme="nerv"] .glow-green {
-  text-shadow: 0 0 8px rgba(80, 255, 80, 0.5), 0 0 16px rgba(80, 255, 80, 0.2);
+  text-shadow: 0 0 6px rgba(80, 255, 80, 0.4);
 }
 [data-theme="nerv"] .glow-orange {
-  text-shadow: 0 0 8px rgba(255, 152, 48, 0.5), 0 0 16px rgba(255, 152, 48, 0.2);
+  text-shadow: 0 0 6px rgba(255, 152, 48, 0.4);
 }
 
 /* ── NERV Headings — Compressed serif for h1 ─────────────────────────────── */
@@ -279,7 +270,7 @@
   font-weight: 700;
   color: var(--data-green);
   font-variant-numeric: tabular-nums;
-  text-shadow: 0 0 6px rgba(80, 255, 80, 0.4), 0 0 12px rgba(80, 255, 80, 0.15);
+  text-shadow: 0 0 4px rgba(80, 255, 80, 0.3);
   line-height: 1.1;
 }
 
@@ -292,7 +283,7 @@
 
 [data-theme="nerv"] .nerv-metric-cell.highlight .m-value {
   color: var(--nerv-orange);
-  text-shadow: 0 0 6px rgba(255, 152, 48, 0.4), 0 0 12px rgba(255, 152, 48, 0.15);
+  text-shadow: 0 0 4px rgba(255, 152, 48, 0.3);
   font-size: 28px;
 }
 
@@ -308,7 +299,6 @@
 [data-theme="nerv"] .nerv-progress .fill {
   height: 100%;
   background: var(--data-green);
-  box-shadow: 0 0 4px rgba(80, 255, 80, 0.3);
 }
 
 /* ── NERV Data Row ───────────────────────────────────────────────────────── */
@@ -355,15 +345,15 @@
 
 [data-theme="nerv"] .led.green {
   background: var(--data-green);
-  box-shadow: 0 0 4px var(--data-green), 0 0 8px rgba(80, 255, 80, 0.3);
+  box-shadow: 0 0 3px var(--data-green);
 }
 [data-theme="nerv"] .led.red {
   background: var(--alert-red);
-  box-shadow: 0 0 4px var(--alert-red);
+  box-shadow: 0 0 3px var(--alert-red);
 }
 [data-theme="nerv"] .led.orange {
   background: var(--nerv-orange);
-  box-shadow: 0 0 4px var(--nerv-orange);
+  box-shadow: 0 0 3px var(--nerv-orange);
 }
 
 /* ── NERV Status Bar ─────────────────────────────────────────────────────── */

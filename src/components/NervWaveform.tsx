@@ -238,8 +238,7 @@ export default function NervWaveform() {
                 strokeLinecap="butt"
                 opacity={isActive ? 1 : 0.15}
                 style={{
-                  transition: "opacity 0.3s, stroke-width 0.3s",
-                  filter: isActive ? `drop-shadow(0 0 4px ${p.dimColor})` : "none",
+                  transition: "opacity 0.3s",
                 }}
               />
             );
