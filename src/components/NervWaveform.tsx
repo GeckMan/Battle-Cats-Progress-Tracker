@@ -103,8 +103,20 @@ export default function NervWaveform() {
 
     const seriesMin = Math.min(...values);
     const seriesMax = Math.max(...values);
-    // Skip rendering if series has no variation (flat line) — prevents sub-pixel artifacts
-    if (seriesMax === seriesMin) return { ...cfg, d: "", areaD: "", flat: true };
+
+    // Flat series (no variation) — draw a horizontal line near the bottom
+    // so the series is still visible on the chart
+    if (seriesMax === seriesMin) {
+      const flatY = seriesMax === 0
+        ? PAD_T + chartH - 2          // 0-value: near bottom
+        : PAD_T + chartH * 0.5;       // non-zero constant: mid-height
+      const points = values.map((_, i) => ({
+        x: PAD_L + i * xStep,
+        y: flatY,
+      }));
+      const d = points.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x},${p.y}`).join(" ");
+      return { ...cfg, d, areaD: "", flat: false };
+    }
 
     const points = values.map((v, i) => ({
       x: PAD_L + i * xStep,
