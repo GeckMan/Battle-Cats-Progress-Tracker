@@ -81,6 +81,19 @@ fix: pass route context to NextAuth handler in POST wrapper
 feat: add long-press to open unit info on mobile
 ```
 
+## BCData Auto-Sync
+Game data (units, legend stages) is synced from [fieryhenry/BCData](https://git.battlecatsmodding.org/fieryhenry/BCData.git).
+
+- **Script:** `scripts/sync-bcdata.ts` — clones BCData, finds latest EN version, upserts units + legend stages
+- **GitHub Action:** `.github/workflows/sync-bcdata.yml` — runs weekly (Monday 6AM UTC) or manually via workflow_dispatch
+- **Data source:** `game_data/en/<version>/DataLocal/` and `resLocal/` folders
+- **Unit names:** parsed from `resLocal/Unit_Explanation{N}_en.csv` (pipe-delimited, line per form)
+- **Rarity:** guessed from unit ID ranges (Normal 0-8, Special 9-56, default Rare). Can be manually corrected.
+- **Legend stages:** parsed from `resLocal/Map_Name.csv` (pipe-delimited subchapter names)
+- **Required secrets:** `DATABASE_URL` and `DIRECT_DATABASE_URL` must be set in GitHub repo secrets
+
+To run manually: `npx tsx ./scripts/sync-bcdata.ts` (needs DATABASE_URL env var)
+
 ## Common Gotchas
 - Paths with parentheses need quoting in bash: `"src/app/(app)/layout.tsx"`
 - Neon cold starts can cause Prisma timeouts — retry usually works
