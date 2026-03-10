@@ -36,7 +36,10 @@ export default function NervWaveform() {
 
   const fetchData = useCallback(async () => {
     try {
-      const res = await fetch("/api/progress-timeline?days=90");
+      // Start from Jan 1 2026 (site launch) — calculate days dynamically
+      const launchDate = new Date("2026-01-01T00:00:00");
+      const daysSinceLaunch = Math.ceil((Date.now() - launchDate.getTime()) / 86400000);
+      const res = await fetch(`/api/progress-timeline?days=${Math.max(daysSinceLaunch, 7)}`);
       if (res.ok) {
         const json = await res.json();
         setData(json);
@@ -130,7 +133,7 @@ export default function NervWaveform() {
   return (
     <div className="nerv-panel">
       <div className="nerv-panel-header">
-        <span>Progress Waveform — 90 Day</span>
+        <span>Progress Waveform</span>
         <span className="tag">{startDate} → {endDate}</span>
       </div>
       <div className="nerv-panel-body" style={{ padding: "8px 12px 4px" }}>
@@ -180,7 +183,7 @@ export default function NervWaveform() {
           viewBox={`0 0 ${W} ${H}`}
           width="100%"
           height="auto"
-          style={{ display: "block", overflow: "visible" }}
+          style={{ display: "block", overflow: "hidden" }}
           preserveAspectRatio="xMidYMid meet"
         >
           {/* Grid lines */}
@@ -266,27 +269,65 @@ function formatDateLabel(isoDate: string): string {
   return d.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
-/** Build a smooth SVG path from points using monotone cubic interpolation */
+/**
+ * Build a smooth SVG path using monotone cubic Hermite interpolation.
+ * Unlike Catmull-Rom, this method guarantees no overshooting —
+ * the curve stays within the bounding box of consecutive data points.
+ */
 function smoothPath(points: { x: number; y: number }[]): string {
   if (points.length === 0) return "";
   if (points.length === 1) return `M ${points[0].x},${points[0].y}`;
   if (points.length === 2) return `M ${points[0].x},${points[0].y} L ${points[1].x},${points[1].y}`;
 
+  // Compute slopes (Fritsch–Carlson monotone method)
+  const n = points.length;
+  const dx: number[] = [];
+  const dy: number[] = [];
+  const slopes: number[] = [];
+
+  for (let i = 0; i < n - 1; i++) {
+    dx.push(points[i + 1].x - points[i].x);
+    dy.push(points[i + 1].y - points[i].y);
+    slopes.push(dx[i] === 0 ? 0 : dy[i] / dx[i]);
+  }
+
+  // Tangents
+  const m: number[] = [slopes[0]];
+  for (let i = 1; i < n - 1; i++) {
+    if (slopes[i - 1] * slopes[i] <= 0) {
+      m.push(0); // Flat at local extrema — prevents overshoot
+    } else {
+      m.push((slopes[i - 1] + slopes[i]) / 2);
+    }
+  }
+  m.push(slopes[n - 2]);
+
+  // Clamp tangents for monotonicity
+  for (let i = 0; i < n - 1; i++) {
+    if (Math.abs(slopes[i]) < 1e-6) {
+      m[i] = 0;
+      m[i + 1] = 0;
+    } else {
+      const a = m[i] / slopes[i];
+      const b = m[i + 1] / slopes[i];
+      const s = a * a + b * b;
+      if (s > 9) {
+        const t = 3 / Math.sqrt(s);
+        m[i] = t * a * slopes[i];
+        m[i + 1] = t * b * slopes[i];
+      }
+    }
+  }
+
+  // Build path
   let d = `M ${points[0].x},${points[0].y}`;
-
-  for (let i = 0; i < points.length - 1; i++) {
-    const p0 = points[Math.max(0, i - 1)];
-    const p1 = points[i];
-    const p2 = points[i + 1];
-    const p3 = points[Math.min(points.length - 1, i + 2)];
-
-    // Catmull-Rom to cubic bezier conversion
-    const cp1x = p1.x + (p2.x - p0.x) / 6;
-    const cp1y = p1.y + (p2.y - p0.y) / 6;
-    const cp2x = p2.x - (p3.x - p1.x) / 6;
-    const cp2y = p2.y - (p3.y - p1.y) / 6;
-
-    d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${p2.x},${p2.y}`;
+  for (let i = 0; i < n - 1; i++) {
+    const seg = dx[i] / 3;
+    const cp1x = points[i].x + seg;
+    const cp1y = points[i].y + m[i] * seg;
+    const cp2x = points[i + 1].x - seg;
+    const cp2y = points[i + 1].y - m[i + 1] * seg;
+    d += ` C ${cp1x},${cp1y} ${cp2x},${cp2y} ${points[i + 1].x},${points[i + 1].y}`;
   }
 
   return d;
