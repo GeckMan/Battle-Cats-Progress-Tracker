@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback, useRef } from "react";
+import { useTheme } from "@/lib/theme-context";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    RightPanel — sliding drawer on the right edge with Activity + Chat tabs
@@ -240,6 +241,7 @@ function relativeTime(date: Date, now: Date): string {
 }
 
 function ActivityTab() {
+  const { theme } = useTheme();
   const [activities, setActivities] = useState<RawActivity[]>([]);
   const [loading, setLoading] = useState(true);
   const [nextOffset, setNextOffset] = useState<number | null>(null);
@@ -261,12 +263,27 @@ function ActivityTab() {
   useEffect(() => { fetchActivities(); }, [fetchActivities]);
 
   if (loading) {
+    if (theme === "nerv") {
+      return (
+        <div style={{ padding: "48px 12px", textAlign: "center", color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+          Scanning event log...
+        </div>
+      );
+    }
     return <div className="text-gray-500 text-sm py-12 text-center">Loading activity...</div>;
   }
 
   const grouped = groupActivities(activities);
 
   if (grouped.length === 0) {
+    if (theme === "nerv") {
+      return (
+        <div style={{ padding: "24px 12px", textAlign: "center" }}>
+          <div style={{ color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>No events recorded</div>
+          <div style={{ color: "var(--steel-dim)", fontSize: "9px", marginTop: "4px", opacity: 0.5 }}>Activity will appear when you or friends log progress</div>
+        </div>
+      );
+    }
     return (
       <div className="p-6 text-center">
         <div className="text-gray-500 text-sm">No recent activity.</div>
@@ -276,6 +293,52 @@ function ActivityTab() {
   }
 
   const now = new Date();
+
+  // ── NERV Event Log variant ───────────────────────────────────────────────
+  if (theme === "nerv") {
+    return (
+      <div style={{ overflow: "auto", height: "100%", padding: 0 }}>
+        {/* Panel header */}
+        <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
+          <span>Event Log</span>
+          <span className="tag"><span className="led green" />Live</span>
+        </div>
+
+        <div style={{ padding: "4px 0", fontFamily: "var(--font-sys)" }}>
+          {grouped.map((g) => (
+            <NervEventRow key={g.key} group={g} now={now} />
+          ))}
+        </div>
+
+        {nextOffset !== null && (
+          <div style={{ textAlign: "center", padding: "8px" }}>
+            <button
+              onClick={() => {
+                setLoadingMore(true);
+                fetchActivities(nextOffset, true);
+              }}
+              disabled={loadingMore}
+              style={{
+                fontSize: "9px",
+                textTransform: "uppercase",
+                letterSpacing: "0.08em",
+                padding: "4px 12px",
+                border: "1px solid var(--steel-faint)",
+                background: "var(--void-warm)",
+                color: "var(--nerv-orange-dim)",
+                cursor: loadingMore ? "wait" : "pointer",
+                opacity: loadingMore ? 0.5 : 1,
+              }}
+            >
+              {loadingMore ? "Loading..." : "Load more events"}
+            </button>
+          </div>
+        )}
+      </div>
+    );
+  }
+
+  // ── Default theme ────────────────────────────────────────────────────────
   const sections = new Map<string, GroupedEntry[]>();
   for (const g of grouped) {
     const section = getTimeSection(g.createdAt, now);
@@ -315,6 +378,123 @@ function ActivityTab() {
     </div>
   );
 }
+
+/* ── NERV Event Row — terminal-style operations log entry ──────────────── */
+
+const NERV_TYPE_CODES: Record<string, { code: string; color: string }> = {
+  STORY_CLEARED:    { code: "STORY",     color: "var(--thermal-yellow)" },
+  LEGEND_COMPLETED: { code: "LEGEND",    color: "var(--thermal-magenta)" },
+  MEDAL_EARNED:     { code: "MEDAL",     color: "var(--wire-cyan)" },
+  MILESTONE_CLEARED:{ code: "MILESTONE", color: "var(--nerv-orange)" },
+  UNIT_OBTAINED:    { code: "UNIT:OBT",  color: "var(--data-green)" },
+  UNIT_EVOLVED:     { code: "UNIT:EVO",  color: "var(--data-green-dim)" },
+  UNIT_REMOVED:     { code: "UNIT:REM",  color: "var(--alert-red)" },
+};
+
+function NervEventRow({ group, now }: { group: GroupedEntry; now: Date }) {
+  const typeInfo = NERV_TYPE_CODES[group.type] ?? { code: "EVENT", color: "var(--steel-dim)" };
+  const name = (group.displayName ?? group.username).toUpperCase();
+  const time = formatNervTime(group.createdAt);
+  const count = group.items.length;
+  const [expanded, setExpanded] = useState(false);
+
+  // Build description
+  let desc: string;
+  if (count === 1) {
+    const item = group.items[0];
+    desc = (item.itemName ?? "UNKNOWN").toUpperCase();
+    if (item.detail) desc += ` — ${item.detail.toUpperCase()}`;
+  } else {
+    desc = `${count} ITEMS`;
+  }
+
+  return (
+    <div
+      style={{
+        padding: "3px 10px",
+        fontSize: "11px",
+        lineHeight: "1.6",
+        borderBottom: "1px solid var(--steel-faint)",
+        fontFamily: "var(--font-sys)",
+      }}
+    >
+      <div style={{ display: "flex", gap: "6px", alignItems: "baseline" }}>
+        {/* Timestamp */}
+        <span style={{ color: "var(--steel-dim)", fontSize: "9px", flexShrink: 0, fontVariantNumeric: "tabular-nums", minWidth: "50px" }}>
+          {time}
+        </span>
+
+        {/* Type badge */}
+        <span style={{
+          color: typeInfo.color,
+          fontSize: "9px",
+          fontWeight: 700,
+          letterSpacing: "0.06em",
+          flexShrink: 0,
+          minWidth: "65px",
+        }}>
+          {typeInfo.code}
+        </span>
+
+        {/* User */}
+        <span style={{ color: "var(--nerv-orange)", fontSize: "10px", flexShrink: 0 }}>
+          {name}
+        </span>
+
+        {/* Arrow */}
+        <span style={{ color: "var(--steel-dim)", fontSize: "9px" }}>→</span>
+
+        {/* Description */}
+        <span style={{ color: "var(--steel)", fontSize: "10px", flex: 1, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap" }}>
+          {desc}
+        </span>
+      </div>
+
+      {/* Expandable item list */}
+      {count > 1 && (
+        <button
+          onClick={() => setExpanded((e) => !e)}
+          style={{
+            fontSize: "9px",
+            color: "var(--steel-dim)",
+            background: "none",
+            border: "none",
+            cursor: "pointer",
+            padding: "2px 0 0 56px",
+            letterSpacing: "0.04em",
+          }}
+        >
+          {expanded ? "▾ COLLAPSE" : `▸ ${count} ENTRIES`}
+        </button>
+      )}
+      {expanded && count > 1 && (
+        <div style={{ paddingLeft: "56px", maxHeight: "120px", overflow: "auto" }}>
+          {group.items.map((item, i) => (
+            <div key={i} style={{ fontSize: "9px", lineHeight: "1.6", color: "var(--steel-dim)" }}>
+              <span style={{ color: "var(--data-green-dim)" }}>├─ </span>
+              <span style={{ color: "var(--steel)" }}>{(item.itemName ?? "Unknown").toUpperCase()}</span>
+              {item.detail && <span style={{ color: "var(--steel-dim)" }}> ({item.detail})</span>}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function formatNervTime(date: Date): string {
+  const h = date.getHours().toString().padStart(2, "0");
+  const m = date.getMinutes().toString().padStart(2, "0");
+  const s = date.getSeconds().toString().padStart(2, "0");
+  const now = new Date();
+  const dayDiff = Math.floor((now.getTime() - date.getTime()) / 86400000);
+  if (dayDiff === 0) return `${h}:${m}:${s}`;
+  if (dayDiff === 1) return `YST ${h}:${m}`;
+  if (dayDiff < 7) return `${dayDiff}D ${h}:${m}`;
+  return `${(date.getMonth() + 1).toString().padStart(2, "0")}/${date.getDate().toString().padStart(2, "0")}`;
+}
+
+/* ── Default ActivityRow ──────────────────────────────────────────────────── */
 
 function ActivityRow({ group, now }: { group: GroupedEntry; now: Date }) {
   const icon = TYPE_ICONS[group.type] ?? "📋";

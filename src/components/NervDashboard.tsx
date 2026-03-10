@@ -1,9 +1,11 @@
 "use client";
 
+import NervWaveform from "./NervWaveform";
+
 /**
  * NervDashboard — NERV Operations Console variant of the dashboard.
  * Renders dense metrics grid with phosphor-green values, NERV panel headers,
- * 3px glowing progress bars, and compressed serif headings.
+ * progress waveform chart, and compressed serif headings.
  *
  * The parent server component passes pre-computed data as props.
  */
@@ -56,6 +58,9 @@ export default function NervDashboard({
           ))}
         </div>
       </div>
+
+      {/* ── Progress Waveform — 90 day timeline ──────────────────── */}
+      <NervWaveform />
 
       {/* ── Story + Legend side by side ─────────────────────────────── */}
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
