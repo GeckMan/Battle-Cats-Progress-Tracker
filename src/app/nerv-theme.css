@@ -73,8 +73,8 @@
 
 [data-theme="nerv"] body {
   font-family: var(--font-sys) !important;
-  font-size: 12px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.5;
   background: var(--void);
   color: var(--steel);
   -webkit-font-smoothing: antialiased;
@@ -191,7 +191,7 @@
 
 [data-theme="nerv"] h2 {
   font-family: var(--font-sys) !important;
-  font-size: 8px !important;
+  font-size: 11px !important;
   font-weight: 700 !important;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -210,12 +210,12 @@
 
 [data-theme="nerv"] .nerv-panel-header {
   font-family: var(--font-sys);
-  font-size: 8px;
+  font-size: 11px;
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--nerv-orange);
-  padding: 6px 10px 5px;
+  padding: 8px 12px 7px;
   border-bottom: 1px solid var(--nerv-orange-dim);
   display: flex;
   justify-content: space-between;
@@ -224,13 +224,13 @@
 }
 
 [data-theme="nerv"] .nerv-panel-header .tag {
-  font-size: 7px;
+  font-size: 9px;
   color: var(--steel-dim);
   letter-spacing: 0.08em;
 }
 
 [data-theme="nerv"] .nerv-panel-body {
-  padding: 8px 10px;
+  padding: 10px 12px;
   flex: 1;
   min-height: 0;
 }
@@ -247,22 +247,22 @@
 
 [data-theme="nerv"] .nerv-metric-cell {
   background: var(--void-warm);
-  padding: 8px 10px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
 [data-theme="nerv"] .nerv-metric-cell .m-label {
-  font-size: 7px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--nerv-orange);
-  margin-bottom: 2px;
+  margin-bottom: 3px;
 }
 
 [data-theme="nerv"] .nerv-metric-cell .m-value {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 700;
   color: var(--data-green);
   font-variant-numeric: tabular-nums;
@@ -271,22 +271,22 @@
 }
 
 [data-theme="nerv"] .nerv-metric-cell .m-sub {
-  font-size: 7px;
+  font-size: 9px;
   color: var(--steel-dim);
-  margin-top: 2px;
+  margin-top: 3px;
   letter-spacing: 0.06em;
 }
 
 [data-theme="nerv"] .nerv-metric-cell.highlight .m-value {
   color: var(--nerv-orange);
   text-shadow: 0 0 6px rgba(255, 152, 48, 0.4), 0 0 12px rgba(255, 152, 48, 0.15);
-  font-size: 22px;
+  font-size: 28px;
 }
 
 /* ── NERV Progress Bar ───────────────────────────────────────────────────── */
 
 [data-theme="nerv"] .nerv-progress {
-  height: 3px;
+  height: 4px;
   background: var(--void-panel);
   border: 1px solid var(--steel-faint);
   overflow: hidden;
@@ -303,9 +303,9 @@
 [data-theme="nerv"] .nerv-data-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 2px 0;
-  font-size: 9px;
+  gap: 10px;
+  padding: 4px 0;
+  font-size: 12px;
   border-bottom: 1px solid var(--steel-faint);
 }
 
@@ -317,7 +317,7 @@
   color: var(--nerv-orange-dim);
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: 8px;
+  font-size: 11px;
   flex-shrink: 0;
 }
 
@@ -333,8 +333,8 @@
 
 [data-theme="nerv"] .led {
   display: inline-block;
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
   border-radius: 50% !important;
   margin-right: 4px;
   vertical-align: middle;
@@ -359,8 +359,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 12px;
-  font-size: 7px;
+  padding: 5px 12px;
+  font-size: 9px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--steel-dim);
@@ -390,7 +390,7 @@
 
 [data-theme="nerv"] .nerv-brand-sub {
   font-family: var(--font-sys);
-  font-size: 9px;
+  font-size: 10px;
   letter-spacing: 0.12em;
   color: var(--steel-dim);
   text-transform: uppercase;
@@ -400,12 +400,12 @@
 /* NERV sidebar nav links */
 [data-theme="nerv"] .nerv-nav-link {
   font-family: var(--font-sys);
-  font-size: 10px;
-  letter-spacing: 0.1em;
+  font-size: 12px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--steel-dim);
   text-decoration: none;
-  padding: 4px 8px;
+  padding: 6px 10px;
   transition: color 0.15s;
   display: flex;
   align-items: center;
@@ -505,7 +505,7 @@
   border-color: var(--steel-faint) !important;
   color: var(--data-green) !important;
   font-family: var(--font-sys) !important;
-  font-size: 10px !important;
+  font-size: 13px !important;
 }
 
 [data-theme="nerv"] input:focus,
@@ -521,7 +521,7 @@
   color: var(--steel-dim) !important;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  font-size: 9px;
+  font-size: 11px;
 }
 
 /* Hover states */

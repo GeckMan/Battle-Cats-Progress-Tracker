@@ -124,10 +124,10 @@ export default function AppSidebar() {
 function NervSidebarContent({ pathname, pendingRequests }: { pathname: string; pendingRequests: number }) {
   return (
     <>
-      {/* Brand — compressed serif title */}
+      {/* Brand — compressed serif title, same name as default theme */}
       <div style={{ padding: "16px 12px 12px", borderBottom: "1px solid var(--nerv-orange-dim)" }}>
-        <div className="nerv-brand">NERV</div>
-        <div className="nerv-brand-sub" style={{ marginTop: "2px" }}>Battle Cats Operations</div>
+        <div className="nerv-brand">Battle Cats</div>
+        <div className="nerv-brand-sub" style={{ marginTop: "2px" }}>Progress Tracker</div>
       </div>
 
       {/* Panel header */}
@@ -152,7 +152,7 @@ function NervSidebarContent({ pathname, pendingRequests }: { pathname: string; p
               <span style={{ flex: 1 }}>{item.label}</span>
               {item.href === "/social" && pendingRequests > 0 && (
                 <span style={{
-                  fontSize: "8px",
+                  fontSize: "10px",
                   fontWeight: 700,
                   color: "var(--void)",
                   background: "var(--nerv-orange)",

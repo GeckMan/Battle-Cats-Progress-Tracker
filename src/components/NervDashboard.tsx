@@ -33,9 +33,9 @@ export default function NervDashboard({
   milestoneSummary,
 }: NervDashboardProps) {
   return (
-    <div style={{ padding: "12px", paddingTop: "48px", display: "flex", flexDirection: "column", gap: "2px", width: "100%" }}>
+    <div style={{ padding: "16px", paddingTop: "48px", display: "flex", flexDirection: "column", gap: "4px", width: "100%" }}>
       {/* Page title */}
-      <h1 style={{ marginBottom: "8px" }}>Operations Console</h1>
+      <h1 style={{ marginBottom: "12px" }}>Dashboard</h1>
 
       {/* ── Metrics Grid — 2×3 dense cells ─────────────────────────── */}
       <div className="nerv-panel">
@@ -58,13 +58,13 @@ export default function NervDashboard({
       </div>
 
       {/* ── Story + Legend side by side ─────────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
         <NervDataPanel title="Story Chapters" tag={`${storyRows.length} CHAPTERS`} rows={storyRows} />
         <NervDataPanel title="Legend Stages" tag={`${legendRows.length} SAGAS`} rows={legendRows} />
       </div>
 
       {/* ── Medals + Milestones side by side ────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
         <NervDataPanel title={`Meow Medals`} tag={medalSummary} rows={medalCategoryRows} />
         <NervDataPanel title={`Milestone Stages`} tag={milestoneSummary} rows={milestoneCategoryRows} />
       </div>
@@ -105,7 +105,7 @@ function NervDataPanel({
                 <div className="fill" style={{ width: `${r.pct}%` }} />
               </div>
             </span>
-            <span className="val" style={{ width: "50px" }}>
+            <span className="val" style={{ width: "60px" }}>
               {r.sub ?? `${r.pct}%`}
             </span>
           </div>
