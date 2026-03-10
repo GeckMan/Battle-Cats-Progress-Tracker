@@ -608,17 +608,10 @@ async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
     }
   }
 
-  // Build set of existing subchapter names per saga for dedup
-  const existingSubNames = new Set<string>();
-  for (const saga of existingSagas) {
-    for (const sub of saga.subchapters) {
-      existingSubNames.add(sub.displayName);
-    }
-  }
-
-  // ── Upsert subchapters with proper saga assignment ───────────────────────
-  let addedCount = 0;
-  let updatedCount = 0;
+  // ── Upsert subchapters using compound unique key [sagaId, displayName] ──
+  // Subchapter names can repeat across sagas (e.g. Stories of Legend and
+  // Uncanny Legends may share names), so we must always scope by sagaId.
+  let upsertedCount = 0;
 
   for (const sub of subchapters) {
     const sagaName = getSagaName(sub.index);
@@ -627,49 +620,29 @@ async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
 
     const stageCount = stageCountMap.get(sub.index) ?? null;
 
-    if (existingSubNames.has(sub.name)) {
-      // Update existing: fix saga assignment if wrong + update stageCount
-      try {
-        const existing = await (prisma as any).legendSubchapter.findFirst({
-          where: { displayName: sub.name },
-        });
-        if (existing) {
-          const needsUpdate = existing.sagaId !== sagaId || existing.stageCount !== stageCount;
-          if (needsUpdate) {
-            await (prisma as any).legendSubchapter.update({
-              where: { id: existing.id },
-              data: { sagaId, stageCount, sortOrder: sub.index },
-            });
-            updatedCount++;
-          }
-        }
-      } catch (e: any) {
-        // Unique constraint — different saga already has this name
-        if (!e.message?.includes("Unique constraint")) {
-          console.warn(`    Failed to update "${sub.name}": ${e.message}`);
-        }
-      }
-    } else {
-      // Create new
-      try {
-        await (prisma as any).legendSubchapter.create({
-          data: {
-            sagaId,
-            displayName: sub.name,
-            sortOrder: sub.index,
-            stageCount,
-          },
-        });
-        addedCount++;
-      } catch (e: any) {
-        if (!e.message?.includes("Unique constraint")) {
-          console.warn(`    Failed to add "${sub.name}": ${e.message}`);
-        }
-      }
+    try {
+      await (prisma as any).legendSubchapter.upsert({
+        where: {
+          sagaId_displayName: { sagaId, displayName: sub.name },
+        },
+        create: {
+          sagaId,
+          displayName: sub.name,
+          sortOrder: sub.index,
+          stageCount,
+        },
+        update: {
+          sortOrder: sub.index,
+          stageCount,
+        },
+      });
+      upsertedCount++;
+    } catch (e: any) {
+      console.warn(`    Failed to upsert "${sub.name}" (saga ${sagaName}): ${e.message}`);
     }
   }
 
-  console.log(`  ✓ Added ${addedCount} new subchapters, updated ${updatedCount} existing`);
+  console.log(`  ✓ Upserted ${upsertedCount} subchapters across ${SAGA_RANGES.length} sagas`);
 }
 
 // ── Run ──────────────────────────────────────────────────────────────────────
