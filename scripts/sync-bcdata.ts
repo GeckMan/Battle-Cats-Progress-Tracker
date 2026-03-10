@@ -196,11 +196,25 @@ interface ParsedUnit {
 }
 
 async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: string) {
-  // 1. Parse rarity from nyankoPictureBookData.csv
+  // 1. Parse rarity from data files
   const rarityMap = parseRarityMap(dataLocal);
   console.log(`  Parsed rarity for ${rarityMap.size} units`);
 
-  // 2. Parse unit names from Unit_Explanation files
+  // 2. Build authoritative form count map from unit stat files.
+  // Each unit has a stat file: DataLocal/unit{N:03d}.csv where N = unitNumber + 1.
+  // Each line in the stat file = one form's stats. Line count = actual form count.
+  const statFormCounts = new Map<number, number>();
+  for (let i = 0; i < 2000; i++) {
+    const paddedId = String(i + 1).padStart(3, "0");
+    const statFile = path.join(dataLocal, `unit${paddedId}.csv`);
+    if (!existsSync(statFile)) continue;
+    const content = readFileSync(statFile, "utf-8");
+    const lines = content.trim().split("\n").filter((l) => l.trim());
+    if (lines.length > 0) statFormCounts.set(i, lines.length);
+  }
+  console.log(`  Counted stat-based forms for ${statFormCounts.size} units`);
+
+  // 3. Parse unit names from Unit_Explanation files
   const units: ParsedUnit[] = [];
   const explanationFiles = readdirSync(resLocal)
     .filter((f) => /^Unit_Explanation\d+_en\.csv$/.test(f))
@@ -228,10 +242,17 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     const name = formNames[0];
     if (!name) continue; // Skip units with no name
 
-    const evolvedName = formNames[1] ?? null;
-    const trueName = formNames[2] ?? null;
-    const ultraName = formNames[3] ?? null;
-    const formCount = formNames.filter((n) => n !== null).length;
+    // Use stat file line count as the authoritative form count.
+    // Explanation files often have names for unreleased/datamined forms,
+    // but stat files only exist for forms that are actually in the game.
+    const statForms = statFormCounts.get(unitNumber) ?? 1;
+    const formCount = Math.max(1, statForms);
+
+    // Only keep form names for forms that actually exist (per stat file count).
+    // This prevents unreleased/datamined form names from appearing in the app.
+    const evolvedName = formCount >= 2 ? (formNames[1] ?? null) : null;
+    const trueName = formCount >= 3 ? (formNames[2] ?? null) : null;
+    const ultraName = formCount >= 4 ? (formNames[3] ?? null) : null;
 
     // Determine rarity — prefer data file, fall back to guess
     const dataRarity = rarityMap.get(unitNumber);
@@ -248,7 +269,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
       ultraName,
       category,
       rarityFromData,
-      formCount: Math.max(formCount, 1),
+      formCount,
       sortOrder,
     });
   }
