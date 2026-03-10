@@ -200,19 +200,11 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
   const rarityMap = parseRarityMap(dataLocal);
   console.log(`  Parsed rarity for ${rarityMap.size} units`);
 
-  // 2. Build authoritative form count map from unit stat files.
-  // Each unit has a stat file: DataLocal/unit{N:03d}.csv where N = unitNumber + 1.
-  // Each line in the stat file = one form's stats. Line count = actual form count.
-  const statFormCounts = new Map<number, number>();
-  for (let i = 0; i < 2000; i++) {
-    const paddedId = String(i + 1).padStart(3, "0");
-    const statFile = path.join(dataLocal, `unit${paddedId}.csv`);
-    if (!existsSync(statFile)) continue;
-    const content = readFileSync(statFile, "utf-8");
-    const lines = content.trim().split("\n").filter((l) => l.trim());
-    if (lines.length > 0) statFormCounts.set(i, lines.length);
-  }
-  console.log(`  Counted stat-based forms for ${statFormCounts.size} units`);
+  // 2. Build authoritative form count map from nyankoPictureBookData.csv.
+  // This file has one row per unit. One of its columns encodes the number of
+  // forms available for that unit (1-4). We auto-detect the column.
+  const formCountMap = parseFormCountMap(dataLocal);
+  console.log(`  Parsed form counts for ${formCountMap.size} units`);
 
   // 3. Parse unit names from Unit_Explanation files
   const units: ParsedUnit[] = [];
@@ -242,13 +234,15 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     const name = formNames[0];
     if (!name) continue; // Skip units with no name
 
-    // Use stat file line count as the authoritative form count.
+    // Use nyankoPictureBookData form count as the authoritative source.
     // Explanation files often have names for unreleased/datamined forms,
-    // but stat files only exist for forms that are actually in the game.
-    const statForms = statFormCounts.get(unitNumber) ?? 1;
-    const formCount = Math.max(1, statForms);
+    // but the picture book data reflects what's actually in the game.
+    // Fall back to explanation file line count if picture book data is unavailable.
+    const pbFormCount = formCountMap.get(unitNumber);
+    const nameBasedCount = formNames.filter((n) => n !== null).length;
+    const formCount = pbFormCount ?? nameBasedCount;
 
-    // Only keep form names for forms that actually exist (per stat file count).
+    // Only keep form names for forms that actually exist (per picture book count).
     // This prevents unreleased/datamined form names from appearing in the app.
     const evolvedName = formCount >= 2 ? (formNames[1] ?? null) : null;
     const trueName = formCount >= 3 ? (formNames[2] ?? null) : null;
@@ -454,6 +448,70 @@ function guessRarity(unitNumber: number): string {
   if (unitNumber <= 8) return "NORMAL";
   if (unitNumber <= 56) return "SPECIAL";
   return "RARE";
+}
+
+// ── Form Count Parsing ───────────────────────────────────────────────────────
+
+function parseFormCountMap(dataLocal: string): Map<number, number> {
+  const map = new Map<number, number>();
+
+  // nyankoPictureBookData.csv: one row per unit (row index = unit ID).
+  // One column encodes the number of forms shown in the Cat Guide (1-4).
+  // We auto-detect this column by checking which one:
+  //   1. Has all values in range [1, 4] (or [2, 4] for known multi-form units)
+  //   2. Units 0-8 (Normal cats) all have value 3 (Normal/Evolved/True forms)
+  //   3. Has reasonable distribution (not all the same value)
+  const pbPath = path.join(dataLocal, "nyankoPictureBookData.csv");
+  if (!existsSync(pbPath)) {
+    console.warn("  WARNING: nyankoPictureBookData.csv not found — form counts unavailable");
+    return map;
+  }
+
+  const content = readFileSync(pbPath, "utf-8");
+  const lines = content.trim().split("\n").filter((l) => l.trim());
+  if (lines.length < 10) return map;
+
+  const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+  const numCols = Math.min(...rows.map((r) => r.length));
+
+  let bestCol = -1;
+  for (let col = 0; col < numCols; col++) {
+    const colVals = rows.map((r) => r[col]);
+
+    // All values must be in range [1, 6] (some units might have 5+ forms eventually)
+    if (!colVals.every((v) => v >= 1 && v <= 6)) continue;
+
+    // Units 0-8 (Normal cats: Cat through Titan Cat) all have 3 forms
+    const normalOk = colVals.slice(0, 9).every((v) => v === 3);
+    if (!normalOk) continue;
+
+    // Should have at least 3 distinct values (1, 2, 3 at minimum)
+    const distinct = new Set(colVals);
+    if (distinct.size < 3) continue;
+
+    // Should have a reasonable distribution — most units have 2 or 3 forms
+    const count2 = colVals.filter((v) => v === 2).length;
+    const count3 = colVals.filter((v) => v === 3).length;
+    if (count2 + count3 > colVals.length * 0.3) {
+      bestCol = col;
+      break;
+    }
+  }
+
+  if (bestCol >= 0) {
+    console.log(`  Found form count in nyankoPictureBookData.csv column ${bestCol}`);
+    for (let i = 0; i < rows.length; i++) {
+      map.set(i, rows[i][bestCol]);
+    }
+    // Log distribution
+    const dist: Record<number, number> = {};
+    for (const v of map.values()) dist[v] = (dist[v] ?? 0) + 1;
+    console.log(`  Form count distribution: ${Object.entries(dist).map(([k, v]) => `${k}-form=${v}`).join(", ")}`);
+  } else {
+    console.warn("  WARNING: Could not auto-detect form count column in nyankoPictureBookData.csv");
+  }
+
+  return map;
 }
 
 // ── Legend Stage Sync ────────────────────────────────────────────────────────
