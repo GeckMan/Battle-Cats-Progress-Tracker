@@ -92,16 +92,11 @@ export default function NervWaveform() {
   const chartW = W - PAD_L - PAD_R;
   const chartH = H - PAD_T - PAD_B;
 
-  // Find global max across all series for Y scaling
-  const allValues = SERIES_CONFIG.flatMap(
-    (s) => data.series[s.key as keyof typeof data.series] ?? []
-  );
-  const maxVal = Math.max(1, ...allValues);
-
   const numDays = data.days.length;
   const xStep = numDays > 1 ? chartW / (numDays - 1) : chartW;
 
-  // Build SVG paths for each series (skip flat/degenerate series to avoid sub-pixel artifacts)
+  // Build SVG paths — each series scaled to its OWN max value so every
+  // line uses the full chart height regardless of absolute numbers.
   const paths = SERIES_CONFIG.map((cfg) => {
     const values = data.series[cfg.key as keyof typeof data.series] ?? [];
     if (values.length === 0) return { ...cfg, d: "", areaD: "", flat: true };
@@ -113,7 +108,7 @@ export default function NervWaveform() {
 
     const points = values.map((v, i) => ({
       x: PAD_L + i * xStep,
-      y: PAD_T + chartH - (v / maxVal) * chartH,
+      y: PAD_T + chartH - ((v - seriesMin) / (seriesMax - seriesMin)) * chartH,
     }));
 
     // Smooth curve using monotone cubic Hermite interpolation
