@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono, JetBrains_Mono, Noto_Serif_Display, Saira_Extra_Condensed } from "next/font/google";
+// @ts-expect-error — package installed during Vercel build (not available locally)
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "./nerv-theme.css";

@@ -46,21 +46,9 @@
   --scan-opacity:     0.04;
 }
 
-/* ── Sharp Corners (except LEDs/dots) ────────────────────────────────────── */
+/* ── Sharp Corners — single wildcard is cheaper than 13 type selectors ──── */
 
-[data-theme="nerv"] div,
-[data-theme="nerv"] button,
-[data-theme="nerv"] a,
-[data-theme="nerv"] input,
-[data-theme="nerv"] select,
-[data-theme="nerv"] textarea,
-[data-theme="nerv"] section,
-[data-theme="nerv"] article,
-[data-theme="nerv"] aside,
-[data-theme="nerv"] main,
-[data-theme="nerv"] nav,
-[data-theme="nerv"] span,
-[data-theme="nerv"] img {
+[data-theme="nerv"] * {
   border-radius: 0 !important;
 }
 
@@ -75,7 +63,24 @@
   font-family: var(--font-sys) !important;
   font-size: 14px;
   line-height: 1.5;
-  background: var(--void);
+  /* CRT scanlines + vignette merged into body background — eliminates 2
+     position:fixed compositor layers that were forcing full-page repaint
+     on every scroll frame (measured: 35.8ms/frame → ~28fps). */
+  background:
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, var(--scan-opacity)) 2px,
+      rgba(0, 0, 0, var(--scan-opacity)) 4px
+    ),
+    radial-gradient(
+      ellipse 70% 70% at 50% 50%,
+      transparent 50%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    var(--void);
+  background-attachment: fixed, fixed, scroll;
   color: var(--steel);
   -webkit-font-smoothing: antialiased;
 }
@@ -92,43 +97,9 @@
   font-family: inherit;
 }
 
-/* ── CRT Effects (pseudo-elements on body) ───────────────────────────────── */
-/* Static overlays — no animations on body to avoid forcing it into a GPU layer.
-   Use transform: translateZ(0) to promote each overlay to its own compositor
-   layer, preventing compositing bleed between them. */
-
-[data-theme="nerv"] body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: repeating-linear-gradient(
-    0deg,
-    transparent,
-    transparent 2px,
-    rgba(0, 0, 0, var(--scan-opacity)) 2px,
-    rgba(0, 0, 0, var(--scan-opacity)) 4px
-  );
-  pointer-events: none;
-  z-index: 10000;
-  transform: translateZ(0);
-}
-
-[data-theme="nerv"] body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background: radial-gradient(
-    ellipse 70% 70% at center,
-    transparent 50%,
-    rgba(0, 0, 0, 0.4) 100%
-  );
-  pointer-events: none;
-  z-index: 9999;
-  transform: translateZ(0);
-}
-
-/* Scan line overlay — GPU-accelerated transform animation (not top/left
-   which trigger layout). translateZ(0) promotes to own compositor layer. */
+/* ── Scan Line Overlay ──────────────────────────────────────────────────── */
+/* Single animated element — kept as a positioned layer because it MUST move.
+   GPU-accelerated via translate3d + will-change: transform. */
 @keyframes nerv-scan-line {
   0%   { transform: translate3d(0, -2px, 0); }
   100% { transform: translate3d(0, 100vh, 0); }
