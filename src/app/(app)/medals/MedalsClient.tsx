@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useRef, useEffect } from "react";
 import { useTheme } from "@/lib/theme-context";
 import { getThemeColors, barFill, type ThemeColors } from "@/lib/theme-colors";
 
@@ -14,23 +14,39 @@ type Row = {
 
 /* ── Hexagonal Honeycomb (NERV theme) ──────────────────────────────────── */
 
-const HEX_W = 80;
-const HEX_H = 92;
-const HEX_GAP_X = 4;
-const HEX_GAP_Y = -20; // negative = overlap for honeycomb tessellation
 const HEX_CLIP = "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)";
+const HEX_GAP = 4; // px gap between hexagons
+const HEX_RATIO = 1.155; // height/width ratio for regular hexagon (2/√3)
 
 function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggle: (id: string, earned: boolean) => void }) {
-  const colW = HEX_W + HEX_GAP_X;
-  const rowH = HEX_H + HEX_GAP_Y;
+  const containerRef = useRef<HTMLDivElement>(null);
+  const [containerW, setContainerW] = useState(1200);
 
-  // Compute how many columns fit — use CSS container, fallback to 8
-  const cols = 10;
+  useEffect(() => {
+    if (!containerRef.current) return;
+    const obs = new ResizeObserver((entries) => {
+      for (const e of entries) setContainerW(e.contentRect.width);
+    });
+    obs.observe(containerRef.current);
+    setContainerW(containerRef.current.clientWidth);
+    return () => obs.disconnect();
+  }, []);
+
+  // Compute hex size to fill the container width
+  // Target ~12-14 columns for a nice honeycomb, with hexes ~100px wide
+  const targetCols = Math.max(6, Math.floor(containerW / 110));
+  // Odd rows are offset by half a hex, so we need room for that
+  const hexW = Math.floor((containerW - HEX_GAP * targetCols) / (targetCols + 0.5));
+  const hexH = Math.floor(hexW * HEX_RATIO);
+  const cols = targetCols;
+
+  const colW = hexW + HEX_GAP;
+  const rowH = Math.floor(hexH * 0.75) + HEX_GAP; // 75% vertical stacking for honeycomb
   const rowCount = Math.ceil(items.length / cols);
-  const totalH = rowCount * rowH + (HEX_H - rowH) + 8;
+  const totalH = rowCount * rowH + (hexH - rowH) + 8;
 
   return (
-    <div style={{ position: "relative", width: "100%", height: totalH, minHeight: 200 }}>
+    <div ref={containerRef} style={{ position: "relative", width: "100%", height: totalH, minHeight: 200 }}>
       {items.map((m, i) => {
         const col = i % cols;
         const row = Math.floor(i / cols);
@@ -48,8 +64,8 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
               position: "absolute",
               left: x,
               top: y,
-              width: HEX_W,
-              height: HEX_H,
+              width: hexW,
+              height: hexH,
               clipPath: HEX_CLIP,
               border: "none",
               background: m.earned ? c.accentFill : c.void,
@@ -90,8 +106,8 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
                   alt={m.name}
                   loading="lazy"
                   style={{
-                    width: "70%",
-                    height: "70%",
+                    width: "75%",
+                    height: "75%",
                     objectFit: "contain",
                     pointerEvents: "none",
                     filter: m.earned ? "none" : "grayscale(1)",
@@ -100,7 +116,7 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
                 />
               ) : (
                 <span style={{
-                  fontSize: 20,
+                  fontSize: Math.max(16, hexW * 0.25),
                   fontWeight: 700,
                   color: m.earned ? c.accent : c.textDim,
                   fontFamily: c.fontSys,
