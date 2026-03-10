@@ -98,6 +98,11 @@ export type Activity = $Result.DefaultSelection<Prisma.$ActivityPayload>
  * 
  */
 export type ChatMessage = $Result.DefaultSelection<Prisma.$ChatMessagePayload>
+/**
+ * Model RateLimit
+ * 
+ */
+export type RateLimit = $Result.DefaultSelection<Prisma.$RateLimitPayload>
 
 /**
  * Enums
@@ -486,6 +491,16 @@ export class PrismaClient<
     * ```
     */
   get chatMessage(): Prisma.ChatMessageDelegate<ExtArgs, ClientOptions>;
+
+  /**
+   * `prisma.rateLimit`: Exposes CRUD operations for the **RateLimit** model.
+    * Example usage:
+    * ```ts
+    * // Fetch zero or more RateLimits
+    * const rateLimits = await prisma.rateLimit.findMany()
+    * ```
+    */
+  get rateLimit(): Prisma.RateLimitDelegate<ExtArgs, ClientOptions>;
 }
 
 export namespace Prisma {
@@ -936,7 +951,8 @@ export namespace Prisma {
     Unit: 'Unit',
     UserUnitProgress: 'UserUnitProgress',
     Activity: 'Activity',
-    ChatMessage: 'ChatMessage'
+    ChatMessage: 'ChatMessage',
+    RateLimit: 'RateLimit'
   };
 
   export type ModelName = (typeof ModelName)[keyof typeof ModelName]
@@ -952,7 +968,7 @@ export namespace Prisma {
       omit: GlobalOmitOptions
     }
     meta: {
-      modelProps: "user" | "privacySettings" | "friendship" | "storyChapter" | "userStoryProgress" | "legendSaga" | "legendSubchapter" | "userLegendProgress" | "milestone" | "userMilestoneProgress" | "userCatclawProgress" | "meowMedal" | "userMeowMedal" | "unit" | "userUnitProgress" | "activity" | "chatMessage"
+      modelProps: "user" | "privacySettings" | "friendship" | "storyChapter" | "userStoryProgress" | "legendSaga" | "legendSubchapter" | "userLegendProgress" | "milestone" | "userMilestoneProgress" | "userCatclawProgress" | "meowMedal" | "userMeowMedal" | "unit" | "userUnitProgress" | "activity" | "chatMessage" | "rateLimit"
       txIsolationLevel: Prisma.TransactionIsolationLevel
     }
     model: {
@@ -2214,6 +2230,80 @@ export namespace Prisma {
           }
         }
       }
+      RateLimit: {
+        payload: Prisma.$RateLimitPayload<ExtArgs>
+        fields: Prisma.RateLimitFieldRefs
+        operations: {
+          findUnique: {
+            args: Prisma.RateLimitFindUniqueArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload> | null
+          }
+          findUniqueOrThrow: {
+            args: Prisma.RateLimitFindUniqueOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          findFirst: {
+            args: Prisma.RateLimitFindFirstArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload> | null
+          }
+          findFirstOrThrow: {
+            args: Prisma.RateLimitFindFirstOrThrowArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          findMany: {
+            args: Prisma.RateLimitFindManyArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>[]
+          }
+          create: {
+            args: Prisma.RateLimitCreateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          createMany: {
+            args: Prisma.RateLimitCreateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          createManyAndReturn: {
+            args: Prisma.RateLimitCreateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>[]
+          }
+          delete: {
+            args: Prisma.RateLimitDeleteArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          update: {
+            args: Prisma.RateLimitUpdateArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          deleteMany: {
+            args: Prisma.RateLimitDeleteManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateMany: {
+            args: Prisma.RateLimitUpdateManyArgs<ExtArgs>
+            result: BatchPayload
+          }
+          updateManyAndReturn: {
+            args: Prisma.RateLimitUpdateManyAndReturnArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>[]
+          }
+          upsert: {
+            args: Prisma.RateLimitUpsertArgs<ExtArgs>
+            result: $Utils.PayloadToResult<Prisma.$RateLimitPayload>
+          }
+          aggregate: {
+            args: Prisma.RateLimitAggregateArgs<ExtArgs>
+            result: $Utils.Optional<AggregateRateLimit>
+          }
+          groupBy: {
+            args: Prisma.RateLimitGroupByArgs<ExtArgs>
+            result: $Utils.Optional<RateLimitGroupByOutputType>[]
+          }
+          count: {
+            args: Prisma.RateLimitCountArgs<ExtArgs>
+            result: $Utils.Optional<RateLimitCountAggregateOutputType> | number
+          }
+        }
+      }
     }
   } & {
     other: {
@@ -2339,6 +2429,7 @@ export namespace Prisma {
     userUnitProgress?: UserUnitProgressOmit
     activity?: ActivityOmit
     chatMessage?: ChatMessageOmit
+    rateLimit?: RateLimitOmit
   }
 
   /* Types for Logging */
@@ -2724,6 +2815,8 @@ export namespace Prisma {
     passwordHash: string | null
     displayName: string | null
     role: string | null
+    chatMutedUntil: Date | null
+    theme: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2735,6 +2828,8 @@ export namespace Prisma {
     passwordHash: string | null
     displayName: string | null
     role: string | null
+    chatMutedUntil: Date | null
+    theme: string | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2746,6 +2841,8 @@ export namespace Prisma {
     passwordHash: number
     displayName: number
     role: number
+    chatMutedUntil: number
+    theme: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -2759,6 +2856,8 @@ export namespace Prisma {
     passwordHash?: true
     displayName?: true
     role?: true
+    chatMutedUntil?: true
+    theme?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2770,6 +2869,8 @@ export namespace Prisma {
     passwordHash?: true
     displayName?: true
     role?: true
+    chatMutedUntil?: true
+    theme?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2781,6 +2882,8 @@ export namespace Prisma {
     passwordHash?: true
     displayName?: true
     role?: true
+    chatMutedUntil?: true
+    theme?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -2865,6 +2968,8 @@ export namespace Prisma {
     passwordHash: string
     displayName: string | null
     role: string
+    chatMutedUntil: Date | null
+    theme: string
     createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
@@ -2893,6 +2998,8 @@ export namespace Prisma {
     passwordHash?: boolean
     displayName?: boolean
     role?: boolean
+    chatMutedUntil?: boolean
+    theme?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     privacy?: boolean | User$privacyArgs<ExtArgs>
@@ -2916,6 +3023,8 @@ export namespace Prisma {
     passwordHash?: boolean
     displayName?: boolean
     role?: boolean
+    chatMutedUntil?: boolean
+    theme?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2927,6 +3036,8 @@ export namespace Prisma {
     passwordHash?: boolean
     displayName?: boolean
     role?: boolean
+    chatMutedUntil?: boolean
+    theme?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -2938,11 +3049,13 @@ export namespace Prisma {
     passwordHash?: boolean
     displayName?: boolean
     role?: boolean
+    chatMutedUntil?: boolean
+    theme?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "role" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "role" | "chatMutedUntil" | "theme" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     privacy?: boolean | User$privacyArgs<ExtArgs>
     sentFriendRequests?: boolean | User$sentFriendRequestsArgs<ExtArgs>
@@ -2982,6 +3095,8 @@ export namespace Prisma {
       passwordHash: string
       displayName: string | null
       role: string
+      chatMutedUntil: Date | null
+      theme: string
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
@@ -3424,6 +3539,8 @@ export namespace Prisma {
     readonly passwordHash: FieldRef<"User", 'String'>
     readonly displayName: FieldRef<"User", 'String'>
     readonly role: FieldRef<"User", 'String'>
+    readonly chatMutedUntil: FieldRef<"User", 'DateTime'>
+    readonly theme: FieldRef<"User", 'String'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
@@ -17227,6 +17344,9 @@ export namespace Prisma {
     id: string | null
     unitNumber: number | null
     name: string | null
+    evolvedName: string | null
+    trueName: string | null
+    ultraName: string | null
     category: $Enums.UnitCategory | null
     formCount: number | null
     sortOrder: number | null
@@ -17239,6 +17359,9 @@ export namespace Prisma {
     id: string | null
     unitNumber: number | null
     name: string | null
+    evolvedName: string | null
+    trueName: string | null
+    ultraName: string | null
     category: $Enums.UnitCategory | null
     formCount: number | null
     sortOrder: number | null
@@ -17251,12 +17374,17 @@ export namespace Prisma {
     id: number
     unitNumber: number
     name: number
+    evolvedName: number
+    trueName: number
+    ultraName: number
     category: number
     formCount: number
     sortOrder: number
     isCollab: number
     source: number
     setName: number
+    banners: number
+    evolutionData: number
     _all: number
   }
 
@@ -17277,6 +17405,9 @@ export namespace Prisma {
     id?: true
     unitNumber?: true
     name?: true
+    evolvedName?: true
+    trueName?: true
+    ultraName?: true
     category?: true
     formCount?: true
     sortOrder?: true
@@ -17289,6 +17420,9 @@ export namespace Prisma {
     id?: true
     unitNumber?: true
     name?: true
+    evolvedName?: true
+    trueName?: true
+    ultraName?: true
     category?: true
     formCount?: true
     sortOrder?: true
@@ -17301,12 +17435,17 @@ export namespace Prisma {
     id?: true
     unitNumber?: true
     name?: true
+    evolvedName?: true
+    trueName?: true
+    ultraName?: true
     category?: true
     formCount?: true
     sortOrder?: true
     isCollab?: true
     source?: true
     setName?: true
+    banners?: true
+    evolutionData?: true
     _all?: true
   }
 
@@ -17400,12 +17539,17 @@ export namespace Prisma {
     id: string
     unitNumber: number
     name: string
+    evolvedName: string | null
+    trueName: string | null
+    ultraName: string | null
     category: $Enums.UnitCategory
     formCount: number
     sortOrder: number
     isCollab: boolean
     source: string | null
     setName: string | null
+    banners: string[]
+    evolutionData: JsonValue | null
     _count: UnitCountAggregateOutputType | null
     _avg: UnitAvgAggregateOutputType | null
     _sum: UnitSumAggregateOutputType | null
@@ -17431,12 +17575,17 @@ export namespace Prisma {
     id?: boolean
     unitNumber?: boolean
     name?: boolean
+    evolvedName?: boolean
+    trueName?: boolean
+    ultraName?: boolean
     category?: boolean
     formCount?: boolean
     sortOrder?: boolean
     isCollab?: boolean
     source?: boolean
     setName?: boolean
+    banners?: boolean
+    evolutionData?: boolean
     progress?: boolean | Unit$progressArgs<ExtArgs>
     _count?: boolean | UnitCountOutputTypeDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["unit"]>
@@ -17445,39 +17594,54 @@ export namespace Prisma {
     id?: boolean
     unitNumber?: boolean
     name?: boolean
+    evolvedName?: boolean
+    trueName?: boolean
+    ultraName?: boolean
     category?: boolean
     formCount?: boolean
     sortOrder?: boolean
     isCollab?: boolean
     source?: boolean
     setName?: boolean
+    banners?: boolean
+    evolutionData?: boolean
   }, ExtArgs["result"]["unit"]>
 
   export type UnitSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
     id?: boolean
     unitNumber?: boolean
     name?: boolean
+    evolvedName?: boolean
+    trueName?: boolean
+    ultraName?: boolean
     category?: boolean
     formCount?: boolean
     sortOrder?: boolean
     isCollab?: boolean
     source?: boolean
     setName?: boolean
+    banners?: boolean
+    evolutionData?: boolean
   }, ExtArgs["result"]["unit"]>
 
   export type UnitSelectScalar = {
     id?: boolean
     unitNumber?: boolean
     name?: boolean
+    evolvedName?: boolean
+    trueName?: boolean
+    ultraName?: boolean
     category?: boolean
     formCount?: boolean
     sortOrder?: boolean
     isCollab?: boolean
     source?: boolean
     setName?: boolean
+    banners?: boolean
+    evolutionData?: boolean
   }
 
-  export type UnitOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "unitNumber" | "name" | "category" | "formCount" | "sortOrder" | "isCollab" | "source" | "setName", ExtArgs["result"]["unit"]>
+  export type UnitOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "unitNumber" | "name" | "evolvedName" | "trueName" | "ultraName" | "category" | "formCount" | "sortOrder" | "isCollab" | "source" | "setName" | "banners" | "evolutionData", ExtArgs["result"]["unit"]>
   export type UnitInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     progress?: boolean | Unit$progressArgs<ExtArgs>
     _count?: boolean | UnitCountOutputTypeDefaultArgs<ExtArgs>
@@ -17494,12 +17658,17 @@ export namespace Prisma {
       id: string
       unitNumber: number
       name: string
+      evolvedName: string | null
+      trueName: string | null
+      ultraName: string | null
       category: $Enums.UnitCategory
       formCount: number
       sortOrder: number
       isCollab: boolean
       source: string | null
       setName: string | null
+      banners: string[]
+      evolutionData: Prisma.JsonValue | null
     }, ExtArgs["result"]["unit"]>
     composites: {}
   }
@@ -17927,12 +18096,17 @@ export namespace Prisma {
     readonly id: FieldRef<"Unit", 'String'>
     readonly unitNumber: FieldRef<"Unit", 'Int'>
     readonly name: FieldRef<"Unit", 'String'>
+    readonly evolvedName: FieldRef<"Unit", 'String'>
+    readonly trueName: FieldRef<"Unit", 'String'>
+    readonly ultraName: FieldRef<"Unit", 'String'>
     readonly category: FieldRef<"Unit", 'UnitCategory'>
     readonly formCount: FieldRef<"Unit", 'Int'>
     readonly sortOrder: FieldRef<"Unit", 'Int'>
     readonly isCollab: FieldRef<"Unit", 'Boolean'>
     readonly source: FieldRef<"Unit", 'String'>
     readonly setName: FieldRef<"Unit", 'String'>
+    readonly banners: FieldRef<"Unit", 'String[]'>
+    readonly evolutionData: FieldRef<"Unit", 'Json'>
   }
     
 
@@ -21580,6 +21754,975 @@ export namespace Prisma {
 
 
   /**
+   * Model RateLimit
+   */
+
+  export type AggregateRateLimit = {
+    _count: RateLimitCountAggregateOutputType | null
+    _min: RateLimitMinAggregateOutputType | null
+    _max: RateLimitMaxAggregateOutputType | null
+  }
+
+  export type RateLimitMinAggregateOutputType = {
+    id: string | null
+    key: string | null
+    createdAt: Date | null
+  }
+
+  export type RateLimitMaxAggregateOutputType = {
+    id: string | null
+    key: string | null
+    createdAt: Date | null
+  }
+
+  export type RateLimitCountAggregateOutputType = {
+    id: number
+    key: number
+    createdAt: number
+    _all: number
+  }
+
+
+  export type RateLimitMinAggregateInputType = {
+    id?: true
+    key?: true
+    createdAt?: true
+  }
+
+  export type RateLimitMaxAggregateInputType = {
+    id?: true
+    key?: true
+    createdAt?: true
+  }
+
+  export type RateLimitCountAggregateInputType = {
+    id?: true
+    key?: true
+    createdAt?: true
+    _all?: true
+  }
+
+  export type RateLimitAggregateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which RateLimit to aggregate.
+     */
+    where?: RateLimitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of RateLimits to fetch.
+     */
+    orderBy?: RateLimitOrderByWithRelationInput | RateLimitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the start position
+     */
+    cursor?: RateLimitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` RateLimits from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` RateLimits.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Count returned RateLimits
+    **/
+    _count?: true | RateLimitCountAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the minimum value
+    **/
+    _min?: RateLimitMinAggregateInputType
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/aggregations Aggregation Docs}
+     * 
+     * Select which fields to find the maximum value
+    **/
+    _max?: RateLimitMaxAggregateInputType
+  }
+
+  export type GetRateLimitAggregateType<T extends RateLimitAggregateArgs> = {
+        [P in keyof T & keyof AggregateRateLimit]: P extends '_count' | 'count'
+      ? T[P] extends true
+        ? number
+        : GetScalarType<T[P], AggregateRateLimit[P]>
+      : GetScalarType<T[P], AggregateRateLimit[P]>
+  }
+
+
+
+
+  export type RateLimitGroupByArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    where?: RateLimitWhereInput
+    orderBy?: RateLimitOrderByWithAggregationInput | RateLimitOrderByWithAggregationInput[]
+    by: RateLimitScalarFieldEnum[] | RateLimitScalarFieldEnum
+    having?: RateLimitScalarWhereWithAggregatesInput
+    take?: number
+    skip?: number
+    _count?: RateLimitCountAggregateInputType | true
+    _min?: RateLimitMinAggregateInputType
+    _max?: RateLimitMaxAggregateInputType
+  }
+
+  export type RateLimitGroupByOutputType = {
+    id: string
+    key: string
+    createdAt: Date
+    _count: RateLimitCountAggregateOutputType | null
+    _min: RateLimitMinAggregateOutputType | null
+    _max: RateLimitMaxAggregateOutputType | null
+  }
+
+  type GetRateLimitGroupByPayload<T extends RateLimitGroupByArgs> = Prisma.PrismaPromise<
+    Array<
+      PickEnumerable<RateLimitGroupByOutputType, T['by']> &
+        {
+          [P in ((keyof T) & (keyof RateLimitGroupByOutputType))]: P extends '_count'
+            ? T[P] extends boolean
+              ? number
+              : GetScalarType<T[P], RateLimitGroupByOutputType[P]>
+            : GetScalarType<T[P], RateLimitGroupByOutputType[P]>
+        }
+      >
+    >
+
+
+  export type RateLimitSelect<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    key?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["rateLimit"]>
+
+  export type RateLimitSelectCreateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    key?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["rateLimit"]>
+
+  export type RateLimitSelectUpdateManyAndReturn<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetSelect<{
+    id?: boolean
+    key?: boolean
+    createdAt?: boolean
+  }, ExtArgs["result"]["rateLimit"]>
+
+  export type RateLimitSelectScalar = {
+    id?: boolean
+    key?: boolean
+    createdAt?: boolean
+  }
+
+  export type RateLimitOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "key" | "createdAt", ExtArgs["result"]["rateLimit"]>
+
+  export type $RateLimitPayload<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    name: "RateLimit"
+    objects: {}
+    scalars: $Extensions.GetPayloadResult<{
+      id: string
+      key: string
+      createdAt: Date
+    }, ExtArgs["result"]["rateLimit"]>
+    composites: {}
+  }
+
+  type RateLimitGetPayload<S extends boolean | null | undefined | RateLimitDefaultArgs> = $Result.GetResult<Prisma.$RateLimitPayload, S>
+
+  type RateLimitCountArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> =
+    Omit<RateLimitFindManyArgs, 'select' | 'include' | 'distinct' | 'omit'> & {
+      select?: RateLimitCountAggregateInputType | true
+    }
+
+  export interface RateLimitDelegate<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> {
+    [K: symbol]: { types: Prisma.TypeMap<ExtArgs>['model']['RateLimit'], meta: { name: 'RateLimit' } }
+    /**
+     * Find zero or one RateLimit that matches the filter.
+     * @param {RateLimitFindUniqueArgs} args - Arguments to find a RateLimit
+     * @example
+     * // Get one RateLimit
+     * const rateLimit = await prisma.rateLimit.findUnique({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUnique<T extends RateLimitFindUniqueArgs>(args: SelectSubset<T, RateLimitFindUniqueArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "findUnique", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find one RateLimit that matches the filter or throw an error with `error.code='P2025'`
+     * if no matches were found.
+     * @param {RateLimitFindUniqueOrThrowArgs} args - Arguments to find a RateLimit
+     * @example
+     * // Get one RateLimit
+     * const rateLimit = await prisma.rateLimit.findUniqueOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findUniqueOrThrow<T extends RateLimitFindUniqueOrThrowArgs>(args: SelectSubset<T, RateLimitFindUniqueOrThrowArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "findUniqueOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first RateLimit that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitFindFirstArgs} args - Arguments to find a RateLimit
+     * @example
+     * // Get one RateLimit
+     * const rateLimit = await prisma.rateLimit.findFirst({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirst<T extends RateLimitFindFirstArgs>(args?: SelectSubset<T, RateLimitFindFirstArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "findFirst", GlobalOmitOptions> | null, null, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find the first RateLimit that matches the filter or
+     * throw `PrismaKnownClientError` with `P2025` code if no matches were found.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitFindFirstOrThrowArgs} args - Arguments to find a RateLimit
+     * @example
+     * // Get one RateLimit
+     * const rateLimit = await prisma.rateLimit.findFirstOrThrow({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     */
+    findFirstOrThrow<T extends RateLimitFindFirstOrThrowArgs>(args?: SelectSubset<T, RateLimitFindFirstOrThrowArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "findFirstOrThrow", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Find zero or more RateLimits that matches the filter.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitFindManyArgs} args - Arguments to filter and select certain fields only.
+     * @example
+     * // Get all RateLimits
+     * const rateLimits = await prisma.rateLimit.findMany()
+     * 
+     * // Get first 10 RateLimits
+     * const rateLimits = await prisma.rateLimit.findMany({ take: 10 })
+     * 
+     * // Only select the `id`
+     * const rateLimitWithIdOnly = await prisma.rateLimit.findMany({ select: { id: true } })
+     * 
+     */
+    findMany<T extends RateLimitFindManyArgs>(args?: SelectSubset<T, RateLimitFindManyArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "findMany", GlobalOmitOptions>>
+
+    /**
+     * Create a RateLimit.
+     * @param {RateLimitCreateArgs} args - Arguments to create a RateLimit.
+     * @example
+     * // Create one RateLimit
+     * const RateLimit = await prisma.rateLimit.create({
+     *   data: {
+     *     // ... data to create a RateLimit
+     *   }
+     * })
+     * 
+     */
+    create<T extends RateLimitCreateArgs>(args: SelectSubset<T, RateLimitCreateArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "create", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Create many RateLimits.
+     * @param {RateLimitCreateManyArgs} args - Arguments to create many RateLimits.
+     * @example
+     * // Create many RateLimits
+     * const rateLimit = await prisma.rateLimit.createMany({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     *     
+     */
+    createMany<T extends RateLimitCreateManyArgs>(args?: SelectSubset<T, RateLimitCreateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Create many RateLimits and returns the data saved in the database.
+     * @param {RateLimitCreateManyAndReturnArgs} args - Arguments to create many RateLimits.
+     * @example
+     * // Create many RateLimits
+     * const rateLimit = await prisma.rateLimit.createManyAndReturn({
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Create many RateLimits and only return the `id`
+     * const rateLimitWithIdOnly = await prisma.rateLimit.createManyAndReturn({
+     *   select: { id: true },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    createManyAndReturn<T extends RateLimitCreateManyAndReturnArgs>(args?: SelectSubset<T, RateLimitCreateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "createManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Delete a RateLimit.
+     * @param {RateLimitDeleteArgs} args - Arguments to delete one RateLimit.
+     * @example
+     * // Delete one RateLimit
+     * const RateLimit = await prisma.rateLimit.delete({
+     *   where: {
+     *     // ... filter to delete one RateLimit
+     *   }
+     * })
+     * 
+     */
+    delete<T extends RateLimitDeleteArgs>(args: SelectSubset<T, RateLimitDeleteArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "delete", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Update one RateLimit.
+     * @param {RateLimitUpdateArgs} args - Arguments to update one RateLimit.
+     * @example
+     * // Update one RateLimit
+     * const rateLimit = await prisma.rateLimit.update({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    update<T extends RateLimitUpdateArgs>(args: SelectSubset<T, RateLimitUpdateArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "update", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+    /**
+     * Delete zero or more RateLimits.
+     * @param {RateLimitDeleteManyArgs} args - Arguments to filter RateLimits to delete.
+     * @example
+     * // Delete a few RateLimits
+     * const { count } = await prisma.rateLimit.deleteMany({
+     *   where: {
+     *     // ... provide filter here
+     *   }
+     * })
+     * 
+     */
+    deleteMany<T extends RateLimitDeleteManyArgs>(args?: SelectSubset<T, RateLimitDeleteManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more RateLimits.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitUpdateManyArgs} args - Arguments to update one or more rows.
+     * @example
+     * // Update many RateLimits
+     * const rateLimit = await prisma.rateLimit.updateMany({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: {
+     *     // ... provide data here
+     *   }
+     * })
+     * 
+     */
+    updateMany<T extends RateLimitUpdateManyArgs>(args: SelectSubset<T, RateLimitUpdateManyArgs<ExtArgs>>): Prisma.PrismaPromise<BatchPayload>
+
+    /**
+     * Update zero or more RateLimits and returns the data updated in the database.
+     * @param {RateLimitUpdateManyAndReturnArgs} args - Arguments to update many RateLimits.
+     * @example
+     * // Update many RateLimits
+     * const rateLimit = await prisma.rateLimit.updateManyAndReturn({
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * 
+     * // Update zero or more RateLimits and only return the `id`
+     * const rateLimitWithIdOnly = await prisma.rateLimit.updateManyAndReturn({
+     *   select: { id: true },
+     *   where: {
+     *     // ... provide filter here
+     *   },
+     *   data: [
+     *     // ... provide data here
+     *   ]
+     * })
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * 
+     */
+    updateManyAndReturn<T extends RateLimitUpdateManyAndReturnArgs>(args: SelectSubset<T, RateLimitUpdateManyAndReturnArgs<ExtArgs>>): Prisma.PrismaPromise<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "updateManyAndReturn", GlobalOmitOptions>>
+
+    /**
+     * Create or update one RateLimit.
+     * @param {RateLimitUpsertArgs} args - Arguments to update or create a RateLimit.
+     * @example
+     * // Update or create a RateLimit
+     * const rateLimit = await prisma.rateLimit.upsert({
+     *   create: {
+     *     // ... data to create a RateLimit
+     *   },
+     *   update: {
+     *     // ... in case it already exists, update
+     *   },
+     *   where: {
+     *     // ... the filter for the RateLimit we want to update
+     *   }
+     * })
+     */
+    upsert<T extends RateLimitUpsertArgs>(args: SelectSubset<T, RateLimitUpsertArgs<ExtArgs>>): Prisma__RateLimitClient<$Result.GetResult<Prisma.$RateLimitPayload<ExtArgs>, T, "upsert", GlobalOmitOptions>, never, ExtArgs, GlobalOmitOptions>
+
+
+    /**
+     * Count the number of RateLimits.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitCountArgs} args - Arguments to filter RateLimits to count.
+     * @example
+     * // Count the number of RateLimits
+     * const count = await prisma.rateLimit.count({
+     *   where: {
+     *     // ... the filter for the RateLimits we want to count
+     *   }
+     * })
+    **/
+    count<T extends RateLimitCountArgs>(
+      args?: Subset<T, RateLimitCountArgs>,
+    ): Prisma.PrismaPromise<
+      T extends $Utils.Record<'select', any>
+        ? T['select'] extends true
+          ? number
+          : GetScalarType<T['select'], RateLimitCountAggregateOutputType>
+        : number
+    >
+
+    /**
+     * Allows you to perform aggregations operations on a RateLimit.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitAggregateArgs} args - Select which aggregations you would like to apply and on what fields.
+     * @example
+     * // Ordered by age ascending
+     * // Where email contains prisma.io
+     * // Limited to the 10 users
+     * const aggregations = await prisma.user.aggregate({
+     *   _avg: {
+     *     age: true,
+     *   },
+     *   where: {
+     *     email: {
+     *       contains: "prisma.io",
+     *     },
+     *   },
+     *   orderBy: {
+     *     age: "asc",
+     *   },
+     *   take: 10,
+     * })
+    **/
+    aggregate<T extends RateLimitAggregateArgs>(args: Subset<T, RateLimitAggregateArgs>): Prisma.PrismaPromise<GetRateLimitAggregateType<T>>
+
+    /**
+     * Group by RateLimit.
+     * Note, that providing `undefined` is treated as the value not being there.
+     * Read more here: https://pris.ly/d/null-undefined
+     * @param {RateLimitGroupByArgs} args - Group by arguments.
+     * @example
+     * // Group by city, order by createdAt, get count
+     * const result = await prisma.user.groupBy({
+     *   by: ['city', 'createdAt'],
+     *   orderBy: {
+     *     createdAt: true
+     *   },
+     *   _count: {
+     *     _all: true
+     *   },
+     * })
+     * 
+    **/
+    groupBy<
+      T extends RateLimitGroupByArgs,
+      HasSelectOrTake extends Or<
+        Extends<'skip', Keys<T>>,
+        Extends<'take', Keys<T>>
+      >,
+      OrderByArg extends True extends HasSelectOrTake
+        ? { orderBy: RateLimitGroupByArgs['orderBy'] }
+        : { orderBy?: RateLimitGroupByArgs['orderBy'] },
+      OrderFields extends ExcludeUnderscoreKeys<Keys<MaybeTupleToUnion<T['orderBy']>>>,
+      ByFields extends MaybeTupleToUnion<T['by']>,
+      ByValid extends Has<ByFields, OrderFields>,
+      HavingFields extends GetHavingFields<T['having']>,
+      HavingValid extends Has<ByFields, HavingFields>,
+      ByEmpty extends T['by'] extends never[] ? True : False,
+      InputErrors extends ByEmpty extends True
+      ? `Error: "by" must not be empty.`
+      : HavingValid extends False
+      ? {
+          [P in HavingFields]: P extends ByFields
+            ? never
+            : P extends string
+            ? `Error: Field "${P}" used in "having" needs to be provided in "by".`
+            : [
+                Error,
+                'Field ',
+                P,
+                ` in "having" needs to be provided in "by"`,
+              ]
+        }[HavingFields]
+      : 'take' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "take", you also need to provide "orderBy"'
+      : 'skip' extends Keys<T>
+      ? 'orderBy' extends Keys<T>
+        ? ByValid extends True
+          ? {}
+          : {
+              [P in OrderFields]: P extends ByFields
+                ? never
+                : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+            }[OrderFields]
+        : 'Error: If you provide "skip", you also need to provide "orderBy"'
+      : ByValid extends True
+      ? {}
+      : {
+          [P in OrderFields]: P extends ByFields
+            ? never
+            : `Error: Field "${P}" in "orderBy" needs to be provided in "by"`
+        }[OrderFields]
+    >(args: SubsetIntersection<T, RateLimitGroupByArgs, OrderByArg> & InputErrors): {} extends InputErrors ? GetRateLimitGroupByPayload<T> : Prisma.PrismaPromise<InputErrors>
+  /**
+   * Fields of the RateLimit model
+   */
+  readonly fields: RateLimitFieldRefs;
+  }
+
+  /**
+   * The delegate class that acts as a "Promise-like" for RateLimit.
+   * Why is this prefixed with `Prisma__`?
+   * Because we want to prevent naming conflicts as mentioned in
+   * https://github.com/prisma/prisma-client-js/issues/707
+   */
+  export interface Prisma__RateLimitClient<T, Null = never, ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs, GlobalOmitOptions = {}> extends Prisma.PrismaPromise<T> {
+    readonly [Symbol.toStringTag]: "PrismaPromise"
+    /**
+     * Attaches callbacks for the resolution and/or rejection of the Promise.
+     * @param onfulfilled The callback to execute when the Promise is resolved.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of which ever callback is executed.
+     */
+    then<TResult1 = T, TResult2 = never>(onfulfilled?: ((value: T) => TResult1 | PromiseLike<TResult1>) | undefined | null, onrejected?: ((reason: any) => TResult2 | PromiseLike<TResult2>) | undefined | null): $Utils.JsPromise<TResult1 | TResult2>
+    /**
+     * Attaches a callback for only the rejection of the Promise.
+     * @param onrejected The callback to execute when the Promise is rejected.
+     * @returns A Promise for the completion of the callback.
+     */
+    catch<TResult = never>(onrejected?: ((reason: any) => TResult | PromiseLike<TResult>) | undefined | null): $Utils.JsPromise<T | TResult>
+    /**
+     * Attaches a callback that is invoked when the Promise is settled (fulfilled or rejected). The
+     * resolved value cannot be modified from the callback.
+     * @param onfinally The callback to execute when the Promise is settled (fulfilled or rejected).
+     * @returns A Promise for the completion of the callback.
+     */
+    finally(onfinally?: (() => void) | undefined | null): $Utils.JsPromise<T>
+  }
+
+
+
+
+  /**
+   * Fields of the RateLimit model
+   */
+  interface RateLimitFieldRefs {
+    readonly id: FieldRef<"RateLimit", 'String'>
+    readonly key: FieldRef<"RateLimit", 'String'>
+    readonly createdAt: FieldRef<"RateLimit", 'DateTime'>
+  }
+    
+
+  // Custom InputTypes
+  /**
+   * RateLimit findUnique
+   */
+  export type RateLimitFindUniqueArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter, which RateLimit to fetch.
+     */
+    where: RateLimitWhereUniqueInput
+  }
+
+  /**
+   * RateLimit findUniqueOrThrow
+   */
+  export type RateLimitFindUniqueOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter, which RateLimit to fetch.
+     */
+    where: RateLimitWhereUniqueInput
+  }
+
+  /**
+   * RateLimit findFirst
+   */
+  export type RateLimitFindFirstArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter, which RateLimit to fetch.
+     */
+    where?: RateLimitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of RateLimits to fetch.
+     */
+    orderBy?: RateLimitOrderByWithRelationInput | RateLimitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for RateLimits.
+     */
+    cursor?: RateLimitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` RateLimits from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` RateLimits.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of RateLimits.
+     */
+    distinct?: RateLimitScalarFieldEnum | RateLimitScalarFieldEnum[]
+  }
+
+  /**
+   * RateLimit findFirstOrThrow
+   */
+  export type RateLimitFindFirstOrThrowArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter, which RateLimit to fetch.
+     */
+    where?: RateLimitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of RateLimits to fetch.
+     */
+    orderBy?: RateLimitOrderByWithRelationInput | RateLimitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for searching for RateLimits.
+     */
+    cursor?: RateLimitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` RateLimits from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` RateLimits.
+     */
+    skip?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/distinct Distinct Docs}
+     * 
+     * Filter by unique combinations of RateLimits.
+     */
+    distinct?: RateLimitScalarFieldEnum | RateLimitScalarFieldEnum[]
+  }
+
+  /**
+   * RateLimit findMany
+   */
+  export type RateLimitFindManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter, which RateLimits to fetch.
+     */
+    where?: RateLimitWhereInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/sorting Sorting Docs}
+     * 
+     * Determine the order of RateLimits to fetch.
+     */
+    orderBy?: RateLimitOrderByWithRelationInput | RateLimitOrderByWithRelationInput[]
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination#cursor-based-pagination Cursor Docs}
+     * 
+     * Sets the position for listing RateLimits.
+     */
+    cursor?: RateLimitWhereUniqueInput
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Take `±n` RateLimits from the position of the cursor.
+     */
+    take?: number
+    /**
+     * {@link https://www.prisma.io/docs/concepts/components/prisma-client/pagination Pagination Docs}
+     * 
+     * Skip the first `n` RateLimits.
+     */
+    skip?: number
+    distinct?: RateLimitScalarFieldEnum | RateLimitScalarFieldEnum[]
+  }
+
+  /**
+   * RateLimit create
+   */
+  export type RateLimitCreateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * The data needed to create a RateLimit.
+     */
+    data: XOR<RateLimitCreateInput, RateLimitUncheckedCreateInput>
+  }
+
+  /**
+   * RateLimit createMany
+   */
+  export type RateLimitCreateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to create many RateLimits.
+     */
+    data: RateLimitCreateManyInput | RateLimitCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * RateLimit createManyAndReturn
+   */
+  export type RateLimitCreateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelectCreateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * The data used to create many RateLimits.
+     */
+    data: RateLimitCreateManyInput | RateLimitCreateManyInput[]
+    skipDuplicates?: boolean
+  }
+
+  /**
+   * RateLimit update
+   */
+  export type RateLimitUpdateArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * The data needed to update a RateLimit.
+     */
+    data: XOR<RateLimitUpdateInput, RateLimitUncheckedUpdateInput>
+    /**
+     * Choose, which RateLimit to update.
+     */
+    where: RateLimitWhereUniqueInput
+  }
+
+  /**
+   * RateLimit updateMany
+   */
+  export type RateLimitUpdateManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * The data used to update RateLimits.
+     */
+    data: XOR<RateLimitUpdateManyMutationInput, RateLimitUncheckedUpdateManyInput>
+    /**
+     * Filter which RateLimits to update
+     */
+    where?: RateLimitWhereInput
+    /**
+     * Limit how many RateLimits to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * RateLimit updateManyAndReturn
+   */
+  export type RateLimitUpdateManyAndReturnArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelectUpdateManyAndReturn<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * The data used to update RateLimits.
+     */
+    data: XOR<RateLimitUpdateManyMutationInput, RateLimitUncheckedUpdateManyInput>
+    /**
+     * Filter which RateLimits to update
+     */
+    where?: RateLimitWhereInput
+    /**
+     * Limit how many RateLimits to update.
+     */
+    limit?: number
+  }
+
+  /**
+   * RateLimit upsert
+   */
+  export type RateLimitUpsertArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * The filter to search for the RateLimit to update in case it exists.
+     */
+    where: RateLimitWhereUniqueInput
+    /**
+     * In case the RateLimit found by the `where` argument doesn't exist, create a new RateLimit with this data.
+     */
+    create: XOR<RateLimitCreateInput, RateLimitUncheckedCreateInput>
+    /**
+     * In case the RateLimit was found with the provided `where` argument, update it with this data.
+     */
+    update: XOR<RateLimitUpdateInput, RateLimitUncheckedUpdateInput>
+  }
+
+  /**
+   * RateLimit delete
+   */
+  export type RateLimitDeleteArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+    /**
+     * Filter which RateLimit to delete.
+     */
+    where: RateLimitWhereUniqueInput
+  }
+
+  /**
+   * RateLimit deleteMany
+   */
+  export type RateLimitDeleteManyArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Filter which RateLimits to delete
+     */
+    where?: RateLimitWhereInput
+    /**
+     * Limit how many RateLimits to delete.
+     */
+    limit?: number
+  }
+
+  /**
+   * RateLimit without action
+   */
+  export type RateLimitDefaultArgs<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
+    /**
+     * Select specific fields to fetch from the RateLimit
+     */
+    select?: RateLimitSelect<ExtArgs> | null
+    /**
+     * Omit specific fields from the RateLimit
+     */
+    omit?: RateLimitOmit<ExtArgs> | null
+  }
+
+
+  /**
    * Enums
    */
 
@@ -21600,6 +22743,8 @@ export namespace Prisma {
     passwordHash: 'passwordHash',
     displayName: 'displayName',
     role: 'role',
+    chatMutedUntil: 'chatMutedUntil',
+    theme: 'theme',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -21750,12 +22895,17 @@ export namespace Prisma {
     id: 'id',
     unitNumber: 'unitNumber',
     name: 'name',
+    evolvedName: 'evolvedName',
+    trueName: 'trueName',
+    ultraName: 'ultraName',
     category: 'category',
     formCount: 'formCount',
     sortOrder: 'sortOrder',
     isCollab: 'isCollab',
     source: 'source',
-    setName: 'setName'
+    setName: 'setName',
+    banners: 'banners',
+    evolutionData: 'evolutionData'
   };
 
   export type UnitScalarFieldEnum = (typeof UnitScalarFieldEnum)[keyof typeof UnitScalarFieldEnum]
@@ -21794,12 +22944,29 @@ export namespace Prisma {
   export type ChatMessageScalarFieldEnum = (typeof ChatMessageScalarFieldEnum)[keyof typeof ChatMessageScalarFieldEnum]
 
 
+  export const RateLimitScalarFieldEnum: {
+    id: 'id',
+    key: 'key',
+    createdAt: 'createdAt'
+  };
+
+  export type RateLimitScalarFieldEnum = (typeof RateLimitScalarFieldEnum)[keyof typeof RateLimitScalarFieldEnum]
+
+
   export const SortOrder: {
     asc: 'asc',
     desc: 'desc'
   };
 
   export type SortOrder = (typeof SortOrder)[keyof typeof SortOrder]
+
+
+  export const NullableJsonNullValueInput: {
+    DbNull: typeof DbNull,
+    JsonNull: typeof JsonNull
+  };
+
+  export type NullableJsonNullValueInput = (typeof NullableJsonNullValueInput)[keyof typeof NullableJsonNullValueInput]
 
 
   export const QueryMode: {
@@ -21816,6 +22983,15 @@ export namespace Prisma {
   };
 
   export type NullsOrder = (typeof NullsOrder)[keyof typeof NullsOrder]
+
+
+  export const JsonNullValueFilter: {
+    DbNull: typeof DbNull,
+    JsonNull: typeof JsonNull,
+    AnyNull: typeof AnyNull
+  };
+
+  export type JsonNullValueFilter = (typeof JsonNullValueFilter)[keyof typeof JsonNullValueFilter]
 
 
   /**
@@ -21971,6 +23147,20 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Json'
+   */
+  export type JsonFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Json'>
+    
+
+
+  /**
+   * Reference to a field of type 'QueryMode'
+   */
+  export type EnumQueryModeFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'QueryMode'>
+    
+
+
+  /**
    * Reference to a field of type 'Float'
    */
   export type FloatFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Float'>
@@ -21997,6 +23187,8 @@ export namespace Prisma {
     passwordHash?: StringFilter<"User"> | string
     displayName?: StringNullableFilter<"User"> | string | null
     role?: StringFilter<"User"> | string
+    chatMutedUntil?: DateTimeNullableFilter<"User"> | Date | string | null
+    theme?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -22019,6 +23211,8 @@ export namespace Prisma {
     passwordHash?: SortOrder
     displayName?: SortOrderInput | SortOrder
     role?: SortOrder
+    chatMutedUntil?: SortOrderInput | SortOrder
+    theme?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     privacy?: PrivacySettingsOrderByWithRelationInput
@@ -22044,6 +23238,8 @@ export namespace Prisma {
     passwordHash?: StringFilter<"User"> | string
     displayName?: StringNullableFilter<"User"> | string | null
     role?: StringFilter<"User"> | string
+    chatMutedUntil?: DateTimeNullableFilter<"User"> | Date | string | null
+    theme?: StringFilter<"User"> | string
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -22066,6 +23262,8 @@ export namespace Prisma {
     passwordHash?: SortOrder
     displayName?: SortOrderInput | SortOrder
     role?: SortOrder
+    chatMutedUntil?: SortOrderInput | SortOrder
+    theme?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
@@ -22083,6 +23281,8 @@ export namespace Prisma {
     passwordHash?: StringWithAggregatesFilter<"User"> | string
     displayName?: StringNullableWithAggregatesFilter<"User"> | string | null
     role?: StringWithAggregatesFilter<"User"> | string
+    chatMutedUntil?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
+    theme?: StringWithAggregatesFilter<"User"> | string
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
@@ -22826,12 +24026,17 @@ export namespace Prisma {
     id?: StringFilter<"Unit"> | string
     unitNumber?: IntFilter<"Unit"> | number
     name?: StringFilter<"Unit"> | string
+    evolvedName?: StringNullableFilter<"Unit"> | string | null
+    trueName?: StringNullableFilter<"Unit"> | string | null
+    ultraName?: StringNullableFilter<"Unit"> | string | null
     category?: EnumUnitCategoryFilter<"Unit"> | $Enums.UnitCategory
     formCount?: IntFilter<"Unit"> | number
     sortOrder?: IntFilter<"Unit"> | number
     isCollab?: BoolFilter<"Unit"> | boolean
     source?: StringNullableFilter<"Unit"> | string | null
     setName?: StringNullableFilter<"Unit"> | string | null
+    banners?: StringNullableListFilter<"Unit">
+    evolutionData?: JsonNullableFilter<"Unit">
     progress?: UserUnitProgressListRelationFilter
   }
 
@@ -22839,12 +24044,17 @@ export namespace Prisma {
     id?: SortOrder
     unitNumber?: SortOrder
     name?: SortOrder
+    evolvedName?: SortOrderInput | SortOrder
+    trueName?: SortOrderInput | SortOrder
+    ultraName?: SortOrderInput | SortOrder
     category?: SortOrder
     formCount?: SortOrder
     sortOrder?: SortOrder
     isCollab?: SortOrder
     source?: SortOrderInput | SortOrder
     setName?: SortOrderInput | SortOrder
+    banners?: SortOrder
+    evolutionData?: SortOrderInput | SortOrder
     progress?: UserUnitProgressOrderByRelationAggregateInput
   }
 
@@ -22855,12 +24065,17 @@ export namespace Prisma {
     OR?: UnitWhereInput[]
     NOT?: UnitWhereInput | UnitWhereInput[]
     name?: StringFilter<"Unit"> | string
+    evolvedName?: StringNullableFilter<"Unit"> | string | null
+    trueName?: StringNullableFilter<"Unit"> | string | null
+    ultraName?: StringNullableFilter<"Unit"> | string | null
     category?: EnumUnitCategoryFilter<"Unit"> | $Enums.UnitCategory
     formCount?: IntFilter<"Unit"> | number
     sortOrder?: IntFilter<"Unit"> | number
     isCollab?: BoolFilter<"Unit"> | boolean
     source?: StringNullableFilter<"Unit"> | string | null
     setName?: StringNullableFilter<"Unit"> | string | null
+    banners?: StringNullableListFilter<"Unit">
+    evolutionData?: JsonNullableFilter<"Unit">
     progress?: UserUnitProgressListRelationFilter
   }, "id" | "unitNumber">
 
@@ -22868,12 +24083,17 @@ export namespace Prisma {
     id?: SortOrder
     unitNumber?: SortOrder
     name?: SortOrder
+    evolvedName?: SortOrderInput | SortOrder
+    trueName?: SortOrderInput | SortOrder
+    ultraName?: SortOrderInput | SortOrder
     category?: SortOrder
     formCount?: SortOrder
     sortOrder?: SortOrder
     isCollab?: SortOrder
     source?: SortOrderInput | SortOrder
     setName?: SortOrderInput | SortOrder
+    banners?: SortOrder
+    evolutionData?: SortOrderInput | SortOrder
     _count?: UnitCountOrderByAggregateInput
     _avg?: UnitAvgOrderByAggregateInput
     _max?: UnitMaxOrderByAggregateInput
@@ -22888,12 +24108,17 @@ export namespace Prisma {
     id?: StringWithAggregatesFilter<"Unit"> | string
     unitNumber?: IntWithAggregatesFilter<"Unit"> | number
     name?: StringWithAggregatesFilter<"Unit"> | string
+    evolvedName?: StringNullableWithAggregatesFilter<"Unit"> | string | null
+    trueName?: StringNullableWithAggregatesFilter<"Unit"> | string | null
+    ultraName?: StringNullableWithAggregatesFilter<"Unit"> | string | null
     category?: EnumUnitCategoryWithAggregatesFilter<"Unit"> | $Enums.UnitCategory
     formCount?: IntWithAggregatesFilter<"Unit"> | number
     sortOrder?: IntWithAggregatesFilter<"Unit"> | number
     isCollab?: BoolWithAggregatesFilter<"Unit"> | boolean
     source?: StringNullableWithAggregatesFilter<"Unit"> | string | null
     setName?: StringNullableWithAggregatesFilter<"Unit"> | string | null
+    banners?: StringNullableListFilter<"Unit">
+    evolutionData?: JsonNullableWithAggregatesFilter<"Unit">
   }
 
   export type UserUnitProgressWhereInput = {
@@ -23067,6 +24292,48 @@ export namespace Prisma {
     createdAt?: DateTimeWithAggregatesFilter<"ChatMessage"> | Date | string
   }
 
+  export type RateLimitWhereInput = {
+    AND?: RateLimitWhereInput | RateLimitWhereInput[]
+    OR?: RateLimitWhereInput[]
+    NOT?: RateLimitWhereInput | RateLimitWhereInput[]
+    id?: StringFilter<"RateLimit"> | string
+    key?: StringFilter<"RateLimit"> | string
+    createdAt?: DateTimeFilter<"RateLimit"> | Date | string
+  }
+
+  export type RateLimitOrderByWithRelationInput = {
+    id?: SortOrder
+    key?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type RateLimitWhereUniqueInput = Prisma.AtLeast<{
+    id?: string
+    AND?: RateLimitWhereInput | RateLimitWhereInput[]
+    OR?: RateLimitWhereInput[]
+    NOT?: RateLimitWhereInput | RateLimitWhereInput[]
+    key?: StringFilter<"RateLimit"> | string
+    createdAt?: DateTimeFilter<"RateLimit"> | Date | string
+  }, "id">
+
+  export type RateLimitOrderByWithAggregationInput = {
+    id?: SortOrder
+    key?: SortOrder
+    createdAt?: SortOrder
+    _count?: RateLimitCountOrderByAggregateInput
+    _max?: RateLimitMaxOrderByAggregateInput
+    _min?: RateLimitMinOrderByAggregateInput
+  }
+
+  export type RateLimitScalarWhereWithAggregatesInput = {
+    AND?: RateLimitScalarWhereWithAggregatesInput | RateLimitScalarWhereWithAggregatesInput[]
+    OR?: RateLimitScalarWhereWithAggregatesInput[]
+    NOT?: RateLimitScalarWhereWithAggregatesInput | RateLimitScalarWhereWithAggregatesInput[]
+    id?: StringWithAggregatesFilter<"RateLimit"> | string
+    key?: StringWithAggregatesFilter<"RateLimit"> | string
+    createdAt?: DateTimeWithAggregatesFilter<"RateLimit"> | Date | string
+  }
+
   export type UserCreateInput = {
     id?: string
     username: string
@@ -23074,6 +24341,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -23096,6 +24365,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -23118,6 +24389,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -23140,6 +24413,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -23162,6 +24437,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -23173,6 +24450,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -23184,6 +24463,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -23920,12 +25201,17 @@ export namespace Prisma {
     id?: string
     unitNumber: number
     name: string
+    evolvedName?: string | null
+    trueName?: string | null
+    ultraName?: string | null
     category: $Enums.UnitCategory
     formCount?: number
     sortOrder: number
     isCollab?: boolean
     source?: string | null
     setName?: string | null
+    banners?: UnitCreatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
     progress?: UserUnitProgressCreateNestedManyWithoutUnitInput
   }
 
@@ -23933,12 +25219,17 @@ export namespace Prisma {
     id?: string
     unitNumber: number
     name: string
+    evolvedName?: string | null
+    trueName?: string | null
+    ultraName?: string | null
     category: $Enums.UnitCategory
     formCount?: number
     sortOrder: number
     isCollab?: boolean
     source?: string | null
     setName?: string | null
+    banners?: UnitCreatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
     progress?: UserUnitProgressUncheckedCreateNestedManyWithoutUnitInput
   }
 
@@ -23946,12 +25237,17 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
     progress?: UserUnitProgressUpdateManyWithoutUnitNestedInput
   }
 
@@ -23959,12 +25255,17 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
     progress?: UserUnitProgressUncheckedUpdateManyWithoutUnitNestedInput
   }
 
@@ -23972,36 +25273,51 @@ export namespace Prisma {
     id?: string
     unitNumber: number
     name: string
+    evolvedName?: string | null
+    trueName?: string | null
+    ultraName?: string | null
     category: $Enums.UnitCategory
     formCount?: number
     sortOrder: number
     isCollab?: boolean
     source?: string | null
     setName?: string | null
+    banners?: UnitCreatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UnitUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UnitUncheckedUpdateManyInput = {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UserUnitProgressCreateInput = {
@@ -24168,6 +25484,48 @@ export namespace Prisma {
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
 
+  export type RateLimitCreateInput = {
+    id?: string
+    key: string
+    createdAt?: Date | string
+  }
+
+  export type RateLimitUncheckedCreateInput = {
+    id?: string
+    key: string
+    createdAt?: Date | string
+  }
+
+  export type RateLimitUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    key?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type RateLimitUncheckedUpdateInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    key?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type RateLimitCreateManyInput = {
+    id?: string
+    key: string
+    createdAt?: Date | string
+  }
+
+  export type RateLimitUpdateManyMutationInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    key?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
+  export type RateLimitUncheckedUpdateManyInput = {
+    id?: StringFieldUpdateOperationsInput | string
+    key?: StringFieldUpdateOperationsInput | string
+    createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
+  }
+
   export type StringFilter<$PrismaModel = never> = {
     equals?: string | StringFieldRefInput<$PrismaModel>
     in?: string[] | ListStringFieldRefInput<$PrismaModel>
@@ -24196,6 +25554,17 @@ export namespace Prisma {
     endsWith?: string | StringFieldRefInput<$PrismaModel>
     mode?: QueryMode
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
+  }
+
+  export type DateTimeNullableFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
   }
 
   export type DateTimeFilter<$PrismaModel = never> = {
@@ -24311,6 +25680,8 @@ export namespace Prisma {
     passwordHash?: SortOrder
     displayName?: SortOrder
     role?: SortOrder
+    chatMutedUntil?: SortOrder
+    theme?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -24322,6 +25693,8 @@ export namespace Prisma {
     passwordHash?: SortOrder
     displayName?: SortOrder
     role?: SortOrder
+    chatMutedUntil?: SortOrder
+    theme?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -24333,6 +25706,8 @@ export namespace Prisma {
     passwordHash?: SortOrder
     displayName?: SortOrder
     role?: SortOrder
+    chatMutedUntil?: SortOrder
+    theme?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -24371,6 +25746,20 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedStringNullableFilter<$PrismaModel>
     _max?: NestedStringNullableFilter<$PrismaModel>
+  }
+
+  export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedDateTimeNullableFilter<$PrismaModel>
+    _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
 
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
@@ -24953,17 +26342,6 @@ export namespace Prisma {
     sortOrder?: SortOrder
   }
 
-  export type DateTimeNullableFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
-  }
-
   export type MeowMedalScalarRelationFilter = {
     is?: MeowMedalWhereInput
     isNot?: MeowMedalWhereInput
@@ -25001,20 +26379,6 @@ export namespace Prisma {
     updatedAt?: SortOrder
   }
 
-  export type DateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedDateTimeNullableFilter<$PrismaModel>
-    _max?: NestedDateTimeNullableFilter<$PrismaModel>
-  }
-
   export type EnumUnitCategoryFilter<$PrismaModel = never> = {
     equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
     in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
@@ -25022,16 +26386,52 @@ export namespace Prisma {
     not?: NestedEnumUnitCategoryFilter<$PrismaModel> | $Enums.UnitCategory
   }
 
+  export type StringNullableListFilter<$PrismaModel = never> = {
+    equals?: string[] | ListStringFieldRefInput<$PrismaModel> | null
+    has?: string | StringFieldRefInput<$PrismaModel> | null
+    hasEvery?: string[] | ListStringFieldRefInput<$PrismaModel>
+    hasSome?: string[] | ListStringFieldRefInput<$PrismaModel>
+    isEmpty?: boolean
+  }
+  export type JsonNullableFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonNullableFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonNullableFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonNullableFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonNullableFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonNullableFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+  }
+
   export type UnitCountOrderByAggregateInput = {
     id?: SortOrder
     unitNumber?: SortOrder
     name?: SortOrder
+    evolvedName?: SortOrder
+    trueName?: SortOrder
+    ultraName?: SortOrder
     category?: SortOrder
     formCount?: SortOrder
     sortOrder?: SortOrder
     isCollab?: SortOrder
     source?: SortOrder
     setName?: SortOrder
+    banners?: SortOrder
+    evolutionData?: SortOrder
   }
 
   export type UnitAvgOrderByAggregateInput = {
@@ -25044,6 +26444,9 @@ export namespace Prisma {
     id?: SortOrder
     unitNumber?: SortOrder
     name?: SortOrder
+    evolvedName?: SortOrder
+    trueName?: SortOrder
+    ultraName?: SortOrder
     category?: SortOrder
     formCount?: SortOrder
     sortOrder?: SortOrder
@@ -25056,6 +26459,9 @@ export namespace Prisma {
     id?: SortOrder
     unitNumber?: SortOrder
     name?: SortOrder
+    evolvedName?: SortOrder
+    trueName?: SortOrder
+    ultraName?: SortOrder
     category?: SortOrder
     formCount?: SortOrder
     sortOrder?: SortOrder
@@ -25078,6 +26484,32 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumUnitCategoryFilter<$PrismaModel>
     _max?: NestedEnumUnitCategoryFilter<$PrismaModel>
+  }
+  export type JsonNullableWithAggregatesFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<JsonNullableWithAggregatesFilterBase<$PrismaModel>>, Exclude<keyof Required<JsonNullableWithAggregatesFilterBase<$PrismaModel>>, 'path'>>,
+        Required<JsonNullableWithAggregatesFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<JsonNullableWithAggregatesFilterBase<$PrismaModel>>, 'path'>>
+
+  export type JsonNullableWithAggregatesFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedJsonNullableFilter<$PrismaModel>
+    _max?: NestedJsonNullableFilter<$PrismaModel>
   }
 
   export type UnitScalarRelationFilter = {
@@ -25167,6 +26599,24 @@ export namespace Prisma {
     id?: SortOrder
     userId?: SortOrder
     content?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type RateLimitCountOrderByAggregateInput = {
+    id?: SortOrder
+    key?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type RateLimitMaxOrderByAggregateInput = {
+    id?: SortOrder
+    key?: SortOrder
+    createdAt?: SortOrder
+  }
+
+  export type RateLimitMinOrderByAggregateInput = {
+    id?: SortOrder
+    key?: SortOrder
     createdAt?: SortOrder
   }
 
@@ -25326,6 +26776,10 @@ export namespace Prisma {
 
   export type NullableStringFieldUpdateOperationsInput = {
     set?: string | null
+  }
+
+  export type NullableDateTimeFieldUpdateOperationsInput = {
+    set?: Date | string | null
   }
 
   export type DateTimeFieldUpdateOperationsInput = {
@@ -26044,10 +27498,6 @@ export namespace Prisma {
     connect?: MeowMedalWhereUniqueInput
   }
 
-  export type NullableDateTimeFieldUpdateOperationsInput = {
-    set?: Date | string | null
-  }
-
   export type UserUpdateOneRequiredWithoutMeowMedalProgressNestedInput = {
     create?: XOR<UserCreateWithoutMeowMedalProgressInput, UserUncheckedCreateWithoutMeowMedalProgressInput>
     connectOrCreate?: UserCreateOrConnectWithoutMeowMedalProgressInput
@@ -26062,6 +27512,10 @@ export namespace Prisma {
     upsert?: MeowMedalUpsertWithoutEarnedByInput
     connect?: MeowMedalWhereUniqueInput
     update?: XOR<XOR<MeowMedalUpdateToOneWithWhereWithoutEarnedByInput, MeowMedalUpdateWithoutEarnedByInput>, MeowMedalUncheckedUpdateWithoutEarnedByInput>
+  }
+
+  export type UnitCreatebannersInput = {
+    set: string[]
   }
 
   export type UserUnitProgressCreateNestedManyWithoutUnitInput = {
@@ -26080,6 +27534,11 @@ export namespace Prisma {
 
   export type EnumUnitCategoryFieldUpdateOperationsInput = {
     set?: $Enums.UnitCategory
+  }
+
+  export type UnitUpdatebannersInput = {
+    set?: string[]
+    push?: string | string[]
   }
 
   export type UserUnitProgressUpdateManyWithoutUnitNestedInput = {
@@ -26194,6 +27653,17 @@ export namespace Prisma {
     not?: NestedStringNullableFilter<$PrismaModel> | string | null
   }
 
+  export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
+  }
+
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -26259,6 +27729,20 @@ export namespace Prisma {
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
     not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
+    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
+    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
+    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedDateTimeNullableFilter<$PrismaModel>
+    _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
 
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
@@ -26444,31 +27928,6 @@ export namespace Prisma {
     _max?: NestedEnumMilestoneCategoryFilter<$PrismaModel>
   }
 
-  export type NestedDateTimeNullableFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
-  }
-
-  export type NestedDateTimeNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: Date | string | DateTimeFieldRefInput<$PrismaModel> | null
-    in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    notIn?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel> | null
-    lt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    lte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gt?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    gte?: Date | string | DateTimeFieldRefInput<$PrismaModel>
-    not?: NestedDateTimeNullableWithAggregatesFilter<$PrismaModel> | Date | string | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedDateTimeNullableFilter<$PrismaModel>
-    _max?: NestedDateTimeNullableFilter<$PrismaModel>
-  }
-
   export type NestedEnumUnitCategoryFilter<$PrismaModel = never> = {
     equals?: $Enums.UnitCategory | EnumUnitCategoryFieldRefInput<$PrismaModel>
     in?: $Enums.UnitCategory[] | ListEnumUnitCategoryFieldRefInput<$PrismaModel>
@@ -26484,6 +27943,29 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumUnitCategoryFilter<$PrismaModel>
     _max?: NestedEnumUnitCategoryFilter<$PrismaModel>
+  }
+  export type NestedJsonNullableFilter<$PrismaModel = never> =
+    | PatchUndefined<
+        Either<Required<NestedJsonNullableFilterBase<$PrismaModel>>, Exclude<keyof Required<NestedJsonNullableFilterBase<$PrismaModel>>, 'path'>>,
+        Required<NestedJsonNullableFilterBase<$PrismaModel>>
+      >
+    | OptionalFlat<Omit<Required<NestedJsonNullableFilterBase<$PrismaModel>>, 'path'>>
+
+  export type NestedJsonNullableFilterBase<$PrismaModel = never> = {
+    equals?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
+    path?: string[]
+    mode?: QueryMode | EnumQueryModeFieldRefInput<$PrismaModel>
+    string_contains?: string | StringFieldRefInput<$PrismaModel>
+    string_starts_with?: string | StringFieldRefInput<$PrismaModel>
+    string_ends_with?: string | StringFieldRefInput<$PrismaModel>
+    array_starts_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_ends_with?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    array_contains?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | null
+    lt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    lte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gt?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    gte?: InputJsonValue | JsonFieldRefInput<$PrismaModel>
+    not?: InputJsonValue | JsonFieldRefInput<$PrismaModel> | JsonNullValueFilter
   }
 
   export type PrivacySettingsCreateWithoutUserInput = {
@@ -27048,6 +28530,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
@@ -27069,6 +28553,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
@@ -27106,6 +28592,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
@@ -27127,6 +28615,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
@@ -27148,6 +28638,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -27169,6 +28661,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -27195,6 +28689,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -27216,6 +28712,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -27253,6 +28751,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -27274,6 +28774,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -27306,6 +28808,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -27327,6 +28831,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -27392,6 +28898,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -27413,6 +28921,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -27471,6 +28981,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -27492,6 +29004,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -27674,6 +29188,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -27695,6 +29211,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -27751,6 +29269,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -27772,6 +29292,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -27860,6 +29382,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -27881,6 +29405,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -27937,6 +29463,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -27958,6 +29486,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28004,6 +29534,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28025,6 +29557,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28062,6 +29596,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28083,6 +29619,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28146,6 +29684,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28167,6 +29707,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28235,6 +29777,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28256,6 +29800,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28354,6 +29900,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28375,6 +29923,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28398,24 +29948,34 @@ export namespace Prisma {
     id?: string
     unitNumber: number
     name: string
+    evolvedName?: string | null
+    trueName?: string | null
+    ultraName?: string | null
     category: $Enums.UnitCategory
     formCount?: number
     sortOrder: number
     isCollab?: boolean
     source?: string | null
     setName?: string | null
+    banners?: UnitCreatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UnitUncheckedCreateWithoutProgressInput = {
     id?: string
     unitNumber: number
     name: string
+    evolvedName?: string | null
+    trueName?: string | null
+    ultraName?: string | null
     category: $Enums.UnitCategory
     formCount?: number
     sortOrder: number
     isCollab?: boolean
     source?: string | null
     setName?: string | null
+    banners?: UnitCreatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UnitCreateOrConnectWithoutProgressInput = {
@@ -28441,6 +30001,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28462,6 +30024,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28491,24 +30055,34 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UnitUncheckedUpdateWithoutProgressInput = {
     id?: StringFieldUpdateOperationsInput | string
     unitNumber?: IntFieldUpdateOperationsInput | number
     name?: StringFieldUpdateOperationsInput | string
+    evolvedName?: NullableStringFieldUpdateOperationsInput | string | null
+    trueName?: NullableStringFieldUpdateOperationsInput | string | null
+    ultraName?: NullableStringFieldUpdateOperationsInput | string | null
     category?: EnumUnitCategoryFieldUpdateOperationsInput | $Enums.UnitCategory
     formCount?: IntFieldUpdateOperationsInput | number
     sortOrder?: IntFieldUpdateOperationsInput | number
     isCollab?: BoolFieldUpdateOperationsInput | boolean
     source?: NullableStringFieldUpdateOperationsInput | string | null
     setName?: NullableStringFieldUpdateOperationsInput | string | null
+    banners?: UnitUpdatebannersInput | string[]
+    evolutionData?: NullableJsonNullValueInput | InputJsonValue
   }
 
   export type UserCreateWithoutActivitiesInput = {
@@ -28518,6 +30092,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28539,6 +30115,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28576,6 +30154,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28597,6 +30177,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28618,6 +30200,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28639,6 +30223,8 @@ export namespace Prisma {
     passwordHash: string
     displayName?: string | null
     role?: string
+    chatMutedUntil?: Date | string | null
+    theme?: string
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28676,6 +30262,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28697,6 +30285,8 @@ export namespace Prisma {
     passwordHash?: StringFieldUpdateOperationsInput | string
     displayName?: NullableStringFieldUpdateOperationsInput | string | null
     role?: StringFieldUpdateOperationsInput | string
+    chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
+    theme?: StringFieldUpdateOperationsInput | string
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput

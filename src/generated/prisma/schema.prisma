@@ -63,16 +63,18 @@ enum UnitCategory {
  */
 
 model User {
-  id           String   @id @default(cuid())
-  username     String   @unique
+  id             String    @id @default(cuid())
+  username       String    @unique
   // For a friends-only app, you can keep email optional.
   // If you later add password reset, making email required is better.
-  email        String?  @unique
-  passwordHash String
-  displayName  String?
-  role         String   @default("USER") // USER | ADMIN
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  email          String?   @unique
+  passwordHash   String
+  displayName    String?
+  role           String    @default("USER") // USER | ADMIN
+  chatMutedUntil DateTime? // null = not muted; future timestamp = muted until then
+  theme          String    @default("default") // "default" | "nerv"
+  createdAt      DateTime  @default(now())
+  updatedAt      DateTime  @updatedAt
 
   privacy PrivacySettings?
 
@@ -254,6 +256,8 @@ model MeowMedal {
   updatedAt DateTime @updatedAt
 
   earnedBy UserMeowMedal[]
+
+  @@index([category])
 }
 
 model UserMeowMedal {
@@ -276,15 +280,20 @@ model UserMeowMedal {
  */
 
 model Unit {
-  id         String       @id @default(cuid())
-  unitNumber Int          @unique // game-internal unit ID (0-based, used for sprite URLs)
-  name       String // Form 1 display name
-  category   UnitCategory
-  formCount  Int          @default(3) // how many forms this unit has (2 or 3)
-  sortOrder  Int // display order within category
-  isCollab   Boolean      @default(false) // true = collab/serial-code/event-capsule unit
-  source     String? // unlock method: RARE_CAPSULE, STAGE_DROP, EVENT_CAPSULE, etc.
-  setName    String? // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
+  id            String       @id @default(cuid())
+  unitNumber    Int          @unique // game-internal unit ID (0-based, used for sprite URLs)
+  name          String // Form 1 display name
+  evolvedName   String? // Form 2 (evolved) display name
+  trueName      String? // Form 3 (true form) display name
+  ultraName     String? // Form 4 (ultra form) display name — only ~18 units have this
+  category      UnitCategory
+  formCount     Int          @default(3) // how many forms this unit has (2 or 3)
+  sortOrder     Int // display order within category
+  isCollab      Boolean      @default(false) // true = collab/serial-code/event-capsule unit
+  source        String? // unlock method: RARE_CAPSULE, STAGE_DROP, EVENT_CAPSULE, etc.
+  setName       String? // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
+  banners       String[]     @default([]) // all banners this unit can be pulled from (for multi-banner filtering)
+  evolutionData Json? // { tf?: { xp, items: [{id,name,count}] }, uf?: { xp, items } }
 
   progress UserUnitProgress[]
 
@@ -339,4 +348,17 @@ model ChatMessage {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@index([createdAt])
+  @@index([userId])
+}
+
+/**
+ * ---------- Rate Limiting ----------
+ */
+
+model RateLimit {
+  id        String   @id @default(cuid())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
 }

@@ -127,6 +127,8 @@ exports.Prisma.UserScalarFieldEnum = {
   passwordHash: 'passwordHash',
   displayName: 'displayName',
   role: 'role',
+  chatMutedUntil: 'chatMutedUntil',
+  theme: 'theme',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -238,12 +240,17 @@ exports.Prisma.UnitScalarFieldEnum = {
   id: 'id',
   unitNumber: 'unitNumber',
   name: 'name',
+  evolvedName: 'evolvedName',
+  trueName: 'trueName',
+  ultraName: 'ultraName',
   category: 'category',
   formCount: 'formCount',
   sortOrder: 'sortOrder',
   isCollab: 'isCollab',
   source: 'source',
-  setName: 'setName'
+  setName: 'setName',
+  banners: 'banners',
+  evolutionData: 'evolutionData'
 };
 
 exports.Prisma.UserUnitProgressScalarFieldEnum = {
@@ -270,9 +277,20 @@ exports.Prisma.ChatMessageScalarFieldEnum = {
   createdAt: 'createdAt'
 };
 
+exports.Prisma.RateLimitScalarFieldEnum = {
+  id: 'id',
+  key: 'key',
+  createdAt: 'createdAt'
+};
+
 exports.Prisma.SortOrder = {
   asc: 'asc',
   desc: 'desc'
+};
+
+exports.Prisma.NullableJsonNullValueInput = {
+  DbNull: Prisma.DbNull,
+  JsonNull: Prisma.JsonNull
 };
 
 exports.Prisma.QueryMode = {
@@ -283,6 +301,12 @@ exports.Prisma.QueryMode = {
 exports.Prisma.NullsOrder = {
   first: 'first',
   last: 'last'
+};
+
+exports.Prisma.JsonNullValueFilter = {
+  DbNull: Prisma.DbNull,
+  JsonNull: Prisma.JsonNull,
+  AnyNull: Prisma.AnyNull
 };
 exports.Visibility = exports.$Enums.Visibility = {
   PUBLIC: 'PUBLIC',
@@ -348,7 +372,8 @@ exports.Prisma.ModelName = {
   Unit: 'Unit',
   UserUnitProgress: 'UserUnitProgress',
   Activity: 'Activity',
-  ChatMessage: 'ChatMessage'
+  ChatMessage: 'ChatMessage',
+  RateLimit: 'RateLimit'
 };
 
 /**

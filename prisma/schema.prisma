@@ -73,6 +73,7 @@ model User {
   displayName  String?
   role            String    @default("USER") // USER | ADMIN
   chatMutedUntil  DateTime? // null = not muted; future timestamp = muted until then
+  theme           String    @default("default") // "default" | "nerv"
   createdAt       DateTime  @default(now())
   updatedAt    DateTime @updatedAt
 

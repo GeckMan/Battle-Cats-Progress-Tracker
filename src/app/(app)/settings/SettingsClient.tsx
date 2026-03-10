@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import type { Visibility } from "@/generated/prisma/client";
+import { useTheme, type Theme } from "@/lib/theme-context";
 
 type Props = {
   username: string;
@@ -15,6 +16,7 @@ export default function SettingsClient(props: Props) {
   return (
     <div className="space-y-8">
       <h1 className="text-2xl font-semibold text-gray-100">Settings</h1>
+      <ThemePanel />
       <ProfilePanel
         username={props.username}
         displayName={props.displayName}
@@ -377,6 +379,64 @@ function DataBackupPanel() {
           {status.msg}
         </p>
       )}
+    </Panel>
+  );
+}
+
+/* ─── Theme ───────────────────────────────────────────────────────────────── */
+
+function ThemePanel() {
+  const { theme, setTheme } = useTheme();
+
+  const themes: { key: Theme; label: string; desc: string }[] = [
+    {
+      key: "default",
+      label: "Default",
+      desc: "Dark theme with warm amber accents",
+    },
+    {
+      key: "nerv",
+      label: "NERV Operations Console",
+      desc: "Evangelion-inspired CRT terminal aesthetic with scanlines, monospace type, and phosphor glow",
+    },
+  ];
+
+  return (
+    <Panel title="Theme">
+      <div className="space-y-2">
+        {themes.map((t) => (
+          <button
+            key={t.key}
+            type="button"
+            onClick={() => setTheme(t.key)}
+            className={`w-full text-left rounded-lg border p-4 transition-colors ${
+              theme === t.key
+                ? "border-amber-700 bg-amber-950/20"
+                : "border-gray-800 bg-black hover:border-gray-600 hover:bg-gray-950"
+            }`}
+          >
+            <div className="flex items-center gap-3">
+              <div
+                className={`w-4 h-4 rounded-full border-2 flex-shrink-0 transition-colors ${
+                  theme === t.key
+                    ? "border-amber-500 bg-amber-500"
+                    : "border-gray-600 bg-transparent"
+                }`}
+              >
+                {theme === t.key && (
+                  <div className="w-full h-full flex items-center justify-center">
+                    <div className="w-1.5 h-1.5 rounded-full bg-black" />
+                  </div>
+                )}
+              </div>
+              <div>
+                <div className="text-sm font-semibold text-gray-100">{t.label}</div>
+                <div className="text-xs text-gray-500 mt-0.5">{t.desc}</div>
+              </div>
+            </div>
+          </button>
+        ))}
+      </div>
     </Panel>
   );
 }
