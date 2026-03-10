@@ -190,6 +190,7 @@ interface ParsedUnit {
   trueName: string | null;
   ultraName: string | null;
   category: string;
+  rarityFromData: boolean; // true if rarity came from data file, false if guessed
   formCount: number;
   sortOrder: number;
 }
@@ -232,8 +233,10 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     const ultraName = formNames[3] ?? null;
     const formCount = formNames.filter((n) => n !== null).length;
 
-    // Determine rarity
-    let category = rarityMap.get(unitNumber) ?? guessRarity(unitNumber);
+    // Determine rarity — prefer data file, fall back to guess
+    const dataRarity = rarityMap.get(unitNumber);
+    const category = dataRarity ?? guessRarity(unitNumber);
+    const rarityFromData = !!dataRarity;
 
     const sortOrder = (CATEGORY_SORT_BASE[category] ?? 0) + unitNumber;
 
@@ -244,6 +247,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
       trueName,
       ultraName,
       category,
+      rarityFromData,
       formCount: Math.max(formCount, 1),
       sortOrder,
     });
@@ -261,13 +265,34 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
   }
 
   // 4. Upsert all units
+  // If rarity was reliably parsed from data files, update category.
+  // If rarity was only guessed, DON'T overwrite existing category (it may have
+  // been correctly set by the seed migration or a previous successful sync).
+  const hasReliableRarity = rarityMap.size > 0;
+  if (!hasReliableRarity) {
+    console.warn("  ⚠ Rarity was NOT parsed from data files — will NOT overwrite existing unit categories");
+  }
+
   const batchSize = 50;
   let upserted = 0;
   for (let i = 0; i < units.length; i += batchSize) {
     const batch = units.slice(i, i + batchSize);
     await Promise.all(
-      batch.map((u) =>
-        (prisma as any).unit.upsert({
+      batch.map((u) => {
+        // For updates: only include category/sortOrder if we have reliable rarity data
+        const updateData: Record<string, unknown> = {
+          name: u.name,
+          evolvedName: u.evolvedName,
+          trueName: u.trueName,
+          ultraName: u.ultraName,
+          formCount: u.formCount,
+        };
+        if (u.rarityFromData) {
+          updateData.category = u.category;
+          updateData.sortOrder = u.sortOrder;
+        }
+
+        return (prisma as any).unit.upsert({
           where: { unitNumber: u.unitNumber },
           create: {
             id: `unit-${u.unitNumber}`,
@@ -280,17 +305,9 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
             formCount: u.formCount,
             sortOrder: u.sortOrder,
           },
-          update: {
-            name: u.name,
-            evolvedName: u.evolvedName,
-            trueName: u.trueName,
-            ultraName: u.ultraName,
-            category: u.category,
-            formCount: u.formCount,
-            sortOrder: u.sortOrder,
-          },
-        })
-      )
+          update: updateData,
+        });
+      })
     );
     upserted += batch.length;
     process.stdout.write(`\r  Upserted ${upserted}/${units.length} units...`);
@@ -300,68 +317,121 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
 
 function parseRarityMap(dataLocal: string): Map<number, string> {
   const map = new Map<number, string>();
-  const filePath = path.join(dataLocal, "nyankoPictureBookData.csv");
-  if (!existsSync(filePath)) {
-    console.warn("  WARNING: nyankoPictureBookData.csv not found, using fallback rarity ranges");
-    return map;
+
+  // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
+  // unitbuy.csv has one row per unit (row index = unit ID).
+  // One of its columns contains the rarity value (0-5).
+  // The column index varies across game versions, so we auto-detect it.
+  const unitbuyPath = path.join(dataLocal, "unitbuy.csv");
+  if (existsSync(unitbuyPath)) {
+    const content = readFileSync(unitbuyPath, "utf-8");
+    const lines = content.trim().split("\n").filter((l) => l.trim());
+
+    if (lines.length > 9) {
+      // Parse all rows into columns
+      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+      const numCols = Math.min(...rows.map((r) => r.length));
+
+      // Auto-detect: find a column where:
+      //   1. All values are in range [0, 5]
+      //   2. The first 9 rows (units 0-8, Normal cats) all have value 0
+      //   3. Rows 9-56 (Special cats) all have value 1
+      //   4. There are at least 3 distinct values total (not all the same)
+      let bestCol = -1;
+      for (let col = 0; col < numCols; col++) {
+        const colVals = rows.map((r) => r[col]);
+        const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+        if (!allInRange) continue;
+
+        const normalOk = colVals.slice(0, 9).every((v) => v === 0);
+        if (!normalOk) continue;
+
+        const specialOk = colVals.slice(9, Math.min(57, colVals.length)).every((v) => v === 1);
+        if (!specialOk) continue;
+
+        const distinctVals = new Set(colVals);
+        if (distinctVals.size >= 3) {
+          bestCol = col;
+          break;
+        }
+      }
+
+      if (bestCol >= 0) {
+        console.log(`  Found rarity in unitbuy.csv column ${bestCol}`);
+        for (let i = 0; i < rows.length; i++) {
+          const rarityNum = rows[i][bestCol];
+          const category = RARITY_MAP[rarityNum];
+          if (category) {
+            map.set(i, category);
+          }
+        }
+        console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
+        return map;
+      } else {
+        console.warn("  WARNING: Could not auto-detect rarity column in unitbuy.csv");
+      }
+    }
   }
 
-  const content = readFileSync(filePath, "utf-8");
-  const lines = content.trim().split("\n");
+  // ── Strategy 2: Parse nyankoPictureBookData.csv ────────────────────────
+  // Each row = one unit. Try to find a rarity column here too.
+  const pbPath = path.join(dataLocal, "nyankoPictureBookData.csv");
+  if (existsSync(pbPath)) {
+    const content = readFileSync(pbPath, "utf-8");
+    const lines = content.trim().split("\n").filter((l) => l.trim());
 
-  for (let i = 0; i < lines.length; i++) {
-    const cols = lines[i].split(",").map((c) => c.trim());
-    // Column layout: [show_in_book, ???, rarity_group, ...]
-    // The 3rd column (index 2) appears to be the rarity group number
-    // But from exploration, column structure is: flag, flag, formCount, ???, ...
-    // Actually the first column (index 0) is "show in book" flag
-    // Let's use a different approach: check if unitbuy.csv has rarity info
-    //
-    // unitbuy.csv first column values observed: 0,1,3,6,9,7,11,12,16,20,24,36,48
-    // These don't directly map to rarity. Let's use the known ranges approach
-    // supplemented by checking which units have Ultra Forms (formCount lines in explanation files)
+    if (lines.length > 9) {
+      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+      const numCols = Math.min(...rows.map((r) => r.length));
+
+      for (let col = 0; col < numCols; col++) {
+        const colVals = rows.map((r) => r[col]);
+        const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+        if (!allInRange) continue;
+
+        // For picture book data, units 0-8 should map to rarity 0
+        const normalOk = colVals.slice(0, 9).every((v) => v === 0);
+        if (!normalOk) continue;
+
+        const distinctVals = new Set(colVals);
+        if (distinctVals.size >= 4) {
+          console.log(`  Found rarity in nyankoPictureBookData.csv column ${col}`);
+          for (let i = 0; i < rows.length; i++) {
+            const rarityNum = rows[i][col];
+            const category = RARITY_MAP[rarityNum];
+            if (category) {
+              map.set(i, category);
+            }
+          }
+          console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
+          return map;
+        }
+      }
+    }
   }
 
-  // Actually, let's parse unitbuy.csv differently:
-  // The FIRST column of unitbuy.csv is the rarity ID:
-  //   0 = Normal, 1 = Special, 2 = Rare, 3 = Super Rare, 4 = Uber Rare, 5 = Legend Rare
-  // Wait — from earlier exploration the first column had values like 0,0,3,6,9 which
-  // are XP costs, not rarity. Let me try a different column.
-  //
-  // After research: unitbuy.csv doesn't directly encode rarity in a simple column.
-  // The community uses nyankoPictureBookData_Attribute.csv for grouping.
-  //
-  // Simplest reliable approach: use the Attribute file which groups units by rarity
-  const attrPath = path.join(dataLocal, "nyankoPictureBookData_Attribute.csv");
-  if (existsSync(attrPath)) {
-    // Each row corresponds to a rarity tier.
-    // Row 0 = ?, Row 1 = ?, ...
-    // Actually this file maps unit IDs to attribute groups, not rarity directly.
-    // Format: each row has pairs of IDs that map to picture book tabs.
-  }
+  console.warn("  WARNING: Could not parse rarity from any data file, using fallback guessRarity()");
+  return map;
+}
 
-  // Final approach: hardcoded rarity boundaries that are stable across versions.
-  // These are maintained by the BC community and rarely change.
-  // The ranges below are for EN version and cover all units up to 15.x.
-  // New units added by PONOS follow the same pattern.
-  return map; // Return empty — will fall back to guessRarity()
+/** Summarize rarity distribution for logging */
+function summarizeRarity(map: Map<number, string>): string {
+  const counts: Record<string, number> = {};
+  for (const v of map.values()) {
+    counts[v] = (counts[v] ?? 0) + 1;
+  }
+  return Object.entries(counts)
+    .map(([k, v]) => `${k}=${v}`)
+    .join(", ");
 }
 
 function guessRarity(unitNumber: number): string {
-  // Well-known rarity boundaries for Battle Cats EN.
-  // Normal: 0–8 (Cat through Lizard Cat + their evolutions)
-  // Special: 9–56 (Ninja Cat, Sumo, Samurai, etc.)
-  // Rare: 57–300ish (varies)
-  // Super Rare: mixed in the 100s-400s
-  // Uber Rare: mixed in the 200s-700s
-  // Legend Rare: very high IDs (700+)
-  //
-  // Since exact boundaries shift per version, we use a conservative approach:
-  // exact ranges for Normal/Special (which never change), and RARE as default.
-  // The import-units-csv.ts script can be used to manually correct any misclassified units.
+  // Fallback rarity using well-known unit ID ranges for Battle Cats EN.
+  // Normal: 0–8, Special: 9–56, everything else defaults to RARE.
+  // This is only used when the data files can't be parsed — the sync
+  // will log a warning so it's visible in GitHub Actions.
   if (unitNumber <= 8) return "NORMAL";
   if (unitNumber <= 56) return "SPECIAL";
-  // Default to RARE — the GitHub Action log will flag these for review
   return "RARE";
 }
 
