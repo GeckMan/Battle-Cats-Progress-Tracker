@@ -51,37 +51,51 @@ function arcPct(rows: Row[]) {
   return Math.round(rows.reduce((s, r) => s + rowPct(r), 0) / rows.length);
 }
 
-function pctColor(pct: number) {
-  if (pct >= 80) return "#fbbf24"; // amber-400
-  if (pct >= 40) return "#d97706"; // amber-600
-  if (pct > 0)   return "#92400e"; // amber-800
-  return "#4b5563"; // gray-600
+function pctCssColor(pct: number): string {
+  if (pct >= 100) return "var(--data-green, #50FF50)";
+  if (pct >= 75) return "var(--nerv-orange-hot, #FFCC50)";
+  if (pct >= 25) return "var(--nerv-orange, #FF9830)";
+  if (pct > 0) return "var(--nerv-orange-dim, #C87020)";
+  return "var(--steel-dim, #888880)";
 }
 
-function barFill(pct: number) {
-  if (pct >= 80) return "bg-amber-400";
-  if (pct >= 40) return "bg-amber-600";
-  if (pct > 0)   return "bg-amber-800";
-  return "bg-gray-700";
+function barFillColor(pct: number): string {
+  if (pct >= 100) return "#50FF50";
+  if (pct >= 75) return "#FFCC50";
+  if (pct >= 25) return "#FF9830";
+  if (pct > 0) return "#C87020";
+  return "#333";
 }
 
-// Colored pill for NONE / PARTIAL / ALL
-function StatusPill({ value, onChange, type }: {
+/* ── Status Select ──────────────────────────────────────────────────────── */
+
+function StatusPill({ value, onChange }: {
   value: "NONE" | "PARTIAL" | "ALL";
   onChange: (v: "NONE" | "PARTIAL" | "ALL") => void;
-  type: "treasures" | "zombies";
 }) {
-  const colors = {
-    NONE:    "bg-gray-800 border-gray-700 text-gray-400",
-    PARTIAL: "bg-amber-950/60 border-amber-800 text-amber-400",
-    ALL:     "bg-amber-500/20 border-amber-500 text-amber-300",
+  const colorMap: Record<string, { bg: string; border: string; color: string }> = {
+    NONE: { bg: "transparent", border: "var(--steel-faint, rgba(200,200,192,0.12))", color: "var(--steel-dim, #888880)" },
+    PARTIAL: { bg: "rgba(255,152,48,0.06)", border: "var(--nerv-orange-dim, #C87020)", color: "var(--nerv-orange, #FF9830)" },
+    ALL: { bg: "rgba(80,255,80,0.06)", border: "var(--data-green-dim, #30BB30)", color: "var(--data-green, #50FF50)" },
   };
+  const c = colorMap[value];
 
   return (
     <select
       value={value}
       onChange={(e) => onChange(e.target.value as "NONE" | "PARTIAL" | "ALL")}
-      className={`rounded border px-2 py-1 text-xs font-medium cursor-pointer transition-colors focus:outline-none focus:ring-1 focus:ring-amber-600 ${colors[value]}`}
+      style={{
+        background: c.bg,
+        border: `1px solid ${c.border}`,
+        color: c.color,
+        fontSize: 11,
+        fontWeight: 500,
+        fontFamily: "var(--font-sys, monospace)",
+        padding: "3px 6px",
+        cursor: "pointer",
+        letterSpacing: "0.04em",
+        appearance: "auto",
+      }}
     >
       <option value="NONE">None</option>
       <option value="PARTIAL">Partial</option>
@@ -90,23 +104,68 @@ function StatusPill({ value, onChange, type }: {
   );
 }
 
-// Amber checkbox
-function AmberCheck({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
+/* ── Checkbox ───────────────────────────────────────────────────────────── */
+
+function NervCheck({ checked, onChange }: { checked: boolean; onChange: (v: boolean) => void }) {
   return (
     <button
       type="button"
       onClick={() => onChange(!checked)}
-      className={`w-5 h-5 rounded border flex items-center justify-center transition-colors flex-shrink-0
-        ${checked ? "bg-amber-500 border-amber-500" : "bg-transparent border-gray-600 hover:border-amber-700"}`}
+      style={{
+        width: 20,
+        height: 20,
+        border: `1px solid ${checked ? "var(--data-green, #50FF50)" : "var(--steel-faint, rgba(200,200,192,0.12))"}`,
+        background: checked ? "rgba(80,255,80,0.1)" : "transparent",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        cursor: "pointer",
+        transition: "all 0.15s",
+        flexShrink: 0,
+      }}
     >
       {checked && (
-        <svg className="w-3 h-3 text-black" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2.5">
+        <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="var(--data-green, #50FF50)" strokeWidth="2.5">
           <polyline points="2,6 5,9 10,3" />
         </svg>
       )}
     </button>
   );
 }
+
+/* ── Bulk Button ────────────────────────────────────────────────────────── */
+
+function BulkBtn({ children, onClick, variant }: {
+  children: React.ReactNode;
+  onClick: () => void;
+  variant: "primary" | "muted" | "danger";
+}) {
+  const styles: Record<string, React.CSSProperties> = {
+    primary: { border: "1px solid var(--nerv-orange-dim, #C87020)", background: "rgba(255,152,48,0.06)", color: "var(--nerv-orange, #FF9830)" },
+    muted: { border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))", background: "transparent", color: "var(--steel-dim, #888880)" },
+    danger: { border: "1px solid var(--alert-red-dim, #CC2020)", background: "rgba(255,48,48,0.06)", color: "var(--alert-red, #FF3030)" },
+  };
+  return (
+    <button
+      type="button"
+      onClick={onClick}
+      style={{
+        ...styles[variant],
+        fontSize: 10,
+        fontFamily: "var(--font-sys, monospace)",
+        fontWeight: 500,
+        letterSpacing: "0.08em",
+        textTransform: "uppercase",
+        padding: "4px 8px",
+        cursor: "pointer",
+      }}
+    >
+      {children}
+    </button>
+  );
+}
+
+/* ── Main Component ─────────────────────────────────────────────────────── */
 
 export default function ArcSections({ groups }: { groups: Group[] }) {
   const [open, setOpen] = useState<Record<string, boolean>>(
@@ -159,22 +218,90 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
       if (!map.has(arc)) map.set(arc, []);
       map.get(arc)!.push(r);
     }
-    for (const [arc, rows] of map) {
+    for (const [, rows] of map) {
       rows.sort((a, b) => a.chapter.sortOrder - b.chapter.sortOrder);
-      map.set(arc, rows);
     }
     return map;
   }, [data, groups]);
 
+  // Global summary
+  const allRows = data;
+  const totalChaps = allRows.length;
+  const clearedTotal = allRows.filter((r) => r.cleared).length;
+  const treasuresTotal = allRows.filter((r) => r.treasures === "ALL").length;
+  const zombiesTotal = allRows.filter((r) => r.zombies === "ALL").length;
+  const globalPct = arcPct(allRows);
+
   return (
-    <div className="space-y-5">
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {/* ── Global Metrics ────────────────────────────────────────────────── */}
+      <div style={{
+        background: "var(--void-warm, #080807)",
+        border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        overflow: "hidden",
+      }}>
+        <div style={{
+          fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
+          color: "var(--nerv-orange, #FF9830)", padding: "8px 12px 7px",
+          borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+          display: "flex", justifyContent: "space-between", alignItems: "center",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
+          <span>Story Progress Overview</span>
+          <span style={{ fontSize: 9, color: "var(--steel-dim, #888880)", letterSpacing: "0.08em" }}>
+            {groups.length} ARCS
+          </span>
+        </div>
+
+        <div style={{
+          display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 1,
+          background: "var(--steel-faint, rgba(200,200,192,0.12))",
+        }}>
+          {[
+            { label: "Completion", value: `${globalPct}%`, sub: `${totalChaps} chapters` },
+            { label: "Cleared", value: `${clearedTotal}`, sub: `of ${totalChaps}` },
+            { label: "Treasures", value: `${treasuresTotal}`, sub: `all collected` },
+            { label: "Zombies", value: `${zombiesTotal}`, sub: `all cleared` },
+          ].map((m) => (
+            <div key={m.label} style={{
+              background: "var(--void-warm, #080807)", padding: "12px 14px",
+              display: "flex", flexDirection: "column", justifyContent: "center",
+            }}>
+              <div style={{
+                fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase",
+                color: "var(--nerv-orange, #FF9830)", marginBottom: 3,
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.label}</div>
+              <div style={{
+                fontSize: 22, fontWeight: 700, color: "var(--data-green, #50FF50)",
+                fontVariantNumeric: "tabular-nums", textShadow: "0 0 4px rgba(80,255,80,0.3)",
+                lineHeight: 1.1, fontFamily: "var(--font-sys, monospace)",
+              }}>{m.value}</div>
+              <div style={{
+                fontSize: 9, color: "var(--steel-dim, #888880)", marginTop: 3,
+                letterSpacing: "0.06em", fontFamily: "var(--font-sys, monospace)",
+              }}>{m.sub}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Error Banner ──────────────────────────────────────────────────── */}
       {error && (
-        <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
+        <div style={{
+          border: "1px solid var(--alert-red-dim, #CC2020)", background: "rgba(255,48,48,0.08)",
+          padding: "8px 14px", fontSize: 12, color: "var(--alert-red, #FF3030)",
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
           <span>{error}</span>
-          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+          <button type="button" onClick={() => setError(null)} style={{
+            background: "none", border: "none", color: "var(--alert-red, #FF3030)", cursor: "pointer", fontSize: 14,
+          }}>✕</button>
         </div>
       )}
 
+      {/* ── Arc Panels ────────────────────────────────────────────────────── */}
       {groups.map((g) => {
         const rows = dataByArc.get(g.arc) ?? [];
         const ids = rows.map((r) => r.id);
@@ -183,67 +310,106 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
         const treasuresAll = rows.filter((r) => r.treasures === "ALL").length;
         const zombiesAll = rows.filter((r) => r.zombies === "ALL").length;
         const total = rows.length;
+        const isOpen = open[g.arc];
 
         return (
-          <div key={g.arc} className="border border-gray-700 rounded-lg overflow-hidden">
+          <div key={g.arc} style={{
+            background: "var(--void-warm, #080807)",
+            border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+            overflow: "hidden",
+          }}>
 
-            {/* Arc header */}
-            <div className="bg-gray-900 px-5 pt-4 pb-3">
-              <div className="flex items-start justify-between gap-4">
-
-                <div className="flex-1 min-w-0">
-                  {/* Title + badge */}
-                  <div className="flex items-center gap-2 mb-1">
-                    <span className="text-gray-100 font-semibold text-base">{arcLabel(g.arc)}</span>
-                    <span className="text-xs font-mono text-gray-500 border border-gray-700 rounded px-1.5 py-0.5">{arcShort(g.arc)}</span>
-                    <span className="ml-auto text-sm font-semibold" style={{ color: pctColor(pct) }}>{pct}%</span>
+            {/* Arc Header */}
+            <div style={{
+              borderBottom: isOpen ? "1px solid var(--nerv-orange-dim, #C87020)" : "none",
+              padding: "10px 12px 8px",
+            }}>
+              <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
+                    <span style={{
+                      fontFamily: "var(--font-sys, monospace)", fontSize: 11, fontWeight: 700,
+                      letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--nerv-orange, #FF9830)",
+                    }}>{arcLabel(g.arc)}</span>
+                    <span style={{
+                      fontSize: 9, fontFamily: "var(--font-sys, monospace)", color: "var(--steel-dim, #888880)",
+                      border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))", padding: "1px 6px",
+                      letterSpacing: "0.06em",
+                    }}>{arcShort(g.arc)}</span>
+                    <span style={{
+                      marginLeft: "auto", fontSize: 18, fontWeight: 700,
+                      fontFamily: "var(--font-sys, monospace)", color: pctCssColor(pct),
+                      fontVariantNumeric: "tabular-nums",
+                      textShadow: pct >= 75 ? `0 0 4px ${pctCssColor(pct)}` : "none",
+                    }}>{pct}%</span>
                   </div>
 
-                  {/* Progress bar */}
-                  <div className="h-1.5 rounded bg-gray-800 overflow-hidden mb-2">
-                    <div className={`h-1.5 transition-all duration-300 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+                  <div style={{
+                    height: 4, background: "var(--void-panel, #0C0C0A)",
+                    border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                    overflow: "hidden", marginBottom: 8,
+                  }}>
+                    <div style={{ height: "100%", width: `${pct}%`, background: barFillColor(pct), transition: "width 0.3s" }} />
                   </div>
 
-                  {/* Stats row */}
-                  <div className="flex gap-4 text-xs mb-3">
-                    <StatBadge label="Cleared" value={cleared} total={total} />
-                    <StatBadge label="Treasures" value={treasuresAll} total={total} />
-                    <StatBadge label="Zombies" value={zombiesAll} total={total} />
+                  <div style={{
+                    display: "flex", gap: 16, fontSize: 11, fontFamily: "var(--font-sys, monospace)", marginBottom: 8,
+                  }}>
+                    {[
+                      { label: "Cleared", val: cleared },
+                      { label: "Treasures", val: treasuresAll },
+                      { label: "Zombies", val: zombiesAll },
+                    ].map((s) => (
+                      <span key={s.label}>
+                        <span style={{ color: "var(--nerv-orange-dim, #C87020)", letterSpacing: "0.06em", textTransform: "uppercase", fontSize: 10 }}>{s.label} </span>
+                        <span style={{ color: s.val === total ? "var(--data-green, #50FF50)" : "var(--steel, #D8D8D0)", fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{s.val}/{total}</span>
+                      </span>
+                    ))}
                   </div>
 
-                  {/* Bulk actions */}
-                  <div className="flex flex-wrap gap-1.5">
-                    <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, { cleared: true })}>Mark all Cleared</BulkBtn>
-                    <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, { treasures: "ALL" })}>Treasures → All</BulkBtn>
-                    <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, { zombies: "ALL" })}>Zombies → All</BulkBtn>
-                    <span className="text-gray-700 self-center px-0.5">|</span>
-                    <BulkBtn variant="gray" onClick={() => bulkUpdate(ids, { cleared: false })}>Reset Cleared</BulkBtn>
-                    <BulkBtn variant="gray" onClick={() => bulkUpdate(ids, { treasures: "NONE" })}>Reset Treasures</BulkBtn>
-                    <BulkBtn variant="gray" onClick={() => bulkUpdate(ids, { zombies: "NONE" })}>Reset Zombies</BulkBtn>
-                    <BulkBtn variant="red"  onClick={() => bulkUpdate(ids, { cleared: false, treasures: "NONE", zombies: "NONE" })}>Reset All</BulkBtn>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 4, alignItems: "center" }}>
+                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { cleared: true })}>All Cleared</BulkBtn>
+                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { treasures: "ALL" })}>Treasures → All</BulkBtn>
+                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { zombies: "ALL" })}>Zombies → All</BulkBtn>
+                    <span style={{ color: "var(--steel-faint, rgba(200,200,192,0.12))", padding: "0 2px" }}>│</span>
+                    <BulkBtn variant="muted" onClick={() => bulkUpdate(ids, { cleared: false })}>Reset Cleared</BulkBtn>
+                    <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, { cleared: false, treasures: "NONE", zombies: "NONE" })}>Reset All</BulkBtn>
                   </div>
                 </div>
 
                 <button
                   type="button"
                   onClick={() => setOpen((o) => ({ ...o, [g.arc]: !o[g.arc] }))}
-                  className="flex-shrink-0 text-xs text-gray-400 px-2.5 py-1.5 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700 hover:text-gray-200 transition-colors mt-1"
+                  style={{
+                    flexShrink: 0, fontSize: 10, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+                    letterSpacing: "0.08em", textTransform: "uppercase", color: "var(--steel-dim, #888880)",
+                    padding: "4px 10px", border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                    background: "transparent", cursor: "pointer", marginTop: 2,
+                  }}
                 >
-                  {open[g.arc] ? "Hide" : "Show"}
+                  {isOpen ? "Hide" : "Show"}
                 </button>
               </div>
             </div>
 
-            {/* Chapter table */}
-            {open[g.arc] && (
-              <div className="bg-black overflow-x-auto">
-                <table className="w-full text-sm min-w-[500px]">
+            {/* Chapter Table */}
+            {isOpen && (
+              <div style={{ overflowX: "auto", background: "var(--void, #000)" }}>
+                <table style={{
+                  width: "100%", fontSize: 12, fontFamily: "var(--font-sys, monospace)",
+                  borderCollapse: "collapse", minWidth: 560,
+                }}>
                   <thead>
-                    <tr className="border-b border-gray-800 bg-gray-950">
-                      <th className="px-4 py-2 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Chapter</th>
-                      <th className="px-4 py-2 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-24">Cleared</th>
-                      <th className="px-4 py-2 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-32">Treasures</th>
-                      <th className="px-4 py-2 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-32">Zombies</th>
+                    <tr style={{ borderBottom: "1px solid var(--steel-faint, rgba(200,200,192,0.12))" }}>
+                      {["Chapter", "Cleared", "Treasures", "Zombies"].map((h, i) => (
+                        <th key={h} style={{
+                          padding: "8px 12px",
+                          textAlign: i === 0 ? "left" : "center",
+                          fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase",
+                          color: "var(--nerv-orange, #FF9830)", background: "var(--void-warm, #080807)",
+                          width: i === 0 ? undefined : i === 1 ? 80 : 100,
+                        }}>{h}</th>
+                      ))}
                     </tr>
                   </thead>
                   <tbody>
@@ -253,94 +419,58 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                       return (
                         <tr
                           key={r.id}
-                          className={`border-b border-gray-900 transition-colors ${
-                            isComplete
-                              ? "bg-amber-950/20 hover:bg-amber-950/30"
-                              : "hover:bg-gray-950"
-                          }`}
+                          style={{
+                            borderBottom: "1px solid var(--steel-faint, rgba(200,200,192,0.06))",
+                            background: isComplete ? "rgba(80,255,80,0.02)" : "transparent",
+                            transition: "background 0.15s",
+                          }}
+                          onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.background = "var(--void-panel, #0C0C0A)"; }}
+                          onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = isComplete ? "rgba(80,255,80,0.02)" : "transparent"; }}
                         >
-                          <td className="px-4 py-2.5">
-                            <div className="flex items-center gap-3">
-                              {/* Mini progress bar */}
-                              <div className="flex-1 max-w-xs">
-                                <div className="flex items-center gap-2">
-                                  <span className={`font-medium ${isComplete ? "text-amber-300/80" : "text-gray-200"}`}>
-                                    {r.chapter.displayName}
-                                  </span>
-                                </div>
-                                <div className="mt-1 h-1 rounded bg-gray-800 overflow-hidden w-32">
-                                  <div className={`h-1 ${barFill(rPct)}`} style={{ width: `${rPct}%` }} />
-                                </div>
+                          <td style={{ padding: "8px 12px" }}>
+                            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                              <span style={{
+                                fontWeight: 500, fontSize: 12,
+                                color: isComplete ? "var(--data-green, #50FF50)" : "var(--steel, #D8D8D0)",
+                              }}>
+                                {r.chapter.displayName}
+                              </span>
+                              <div style={{ width: 100, height: 2, background: "var(--void-panel, #0C0C0A)", overflow: "hidden" }}>
+                                <div style={{ height: "100%", width: `${rPct}%`, background: barFillColor(rPct), transition: "width 0.2s" }} />
                               </div>
                             </div>
                           </td>
-
-                          <td className="px-4 py-2.5 text-center">
-                            <div className="flex justify-center">
-                              <AmberCheck
-                                checked={r.cleared}
-                                onChange={(v) => update(r.id, { cleared: v })}
-                              />
+                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
+                            <div style={{ display: "flex", justifyContent: "center" }}>
+                              <NervCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} />
                             </div>
                           </td>
-
-                          <td className="px-4 py-2.5 text-center">
-                            <StatusPill
-                              value={r.treasures}
-                              onChange={(v) => update(r.id, { treasures: v })}
-                              type="treasures"
-                            />
+                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
+                            <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} />
                           </td>
-
-                          <td className="px-4 py-2.5 text-center">
-                            <StatusPill
-                              value={r.zombies}
-                              onChange={(v) => update(r.id, { zombies: v })}
-                              type="zombies"
-                            />
+                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
+                            <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} />
                           </td>
                         </tr>
                       );
                     })}
                   </tbody>
                 </table>
+
+                <div style={{
+                  display: "flex", justifyContent: "space-between", alignItems: "center",
+                  padding: "5px 12px", fontSize: 9, letterSpacing: "0.1em", textTransform: "uppercase",
+                  color: "var(--steel-dim, #888880)", borderTop: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                  fontFamily: "var(--font-sys, monospace)",
+                }}>
+                  <span>{total} chapters</span>
+                  <span>{cleared}/{total} cleared</span>
+                </div>
               </div>
             )}
           </div>
         );
       })}
     </div>
-  );
-}
-
-/* ── Sub-components ─────────────────────────────────────────────────────── */
-
-function StatBadge({ label, value, total }: { label: string; value: number; total: number }) {
-  const done = value === total;
-  return (
-    <span className={done ? "text-amber-400" : "text-gray-400"}>
-      {label}: <span className="font-medium">{value}/{total}</span>
-    </span>
-  );
-}
-
-function BulkBtn({ children, onClick, variant }: {
-  children: React.ReactNode;
-  onClick: () => void;
-  variant: "amber" | "gray" | "red";
-}) {
-  const styles = {
-    amber: "border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60",
-    gray:  "border-gray-700 bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200",
-    red:   "border-red-800 bg-red-900/20 text-red-400 hover:bg-red-900/40",
-  };
-  return (
-    <button
-      type="button"
-      onClick={onClick}
-      className={`text-xs px-2 py-1 rounded border transition-colors ${styles[variant]}`}
-    >
-      {children}
-    </button>
   );
 }

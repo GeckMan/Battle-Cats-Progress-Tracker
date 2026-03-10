@@ -10,6 +10,7 @@ type Row = {
     id: string;
     displayName: string;
     sortOrder: number;
+    stageCount: number | null;
     saga: {
       id: string;
       displayName: string;
@@ -36,58 +37,79 @@ function sagaPct(rows: Row[]) {
   return Math.round(rows.reduce((s, r) => s + rowPct(r), 0) / rows.length);
 }
 
-function pctColor(pct: number) {
-  if (pct >= 80) return "#fbbf24";
-  if (pct >= 40) return "#d97706";
-  if (pct > 0)   return "#92400e";
-  return "#4b5563";
+/** Returns CSS color var for progress level */
+function pctCssColor(pct: number): string {
+  if (pct >= 100) return "var(--data-green, #50FF50)";
+  if (pct >= 75) return "var(--nerv-orange-hot, #FFCC50)";
+  if (pct >= 25) return "var(--nerv-orange, #FF9830)";
+  if (pct > 0) return "var(--nerv-orange-dim, #C87020)";
+  return "var(--steel-dim, #888880)";
 }
 
-function barFill(pct: number) {
-  if (pct >= 80) return "bg-amber-400";
-  if (pct >= 40) return "bg-amber-600";
-  if (pct > 0)   return "bg-amber-800";
-  return "bg-gray-700";
-}
-
-/** Subtle amber row tint based on crown level */
-function rowTint(crown: number) {
-  if (crown >= 4) return "bg-amber-950/25 hover:bg-amber-950/35";
-  if (crown >= 3) return "bg-amber-950/15 hover:bg-amber-950/25";
-  if (crown >= 1) return "bg-amber-950/5  hover:bg-gray-950";
-  return "hover:bg-gray-950";
+/** Tailwind fallback fill color for progress bar */
+function barFillColor(pct: number): string {
+  if (pct >= 100) return "#50FF50";
+  if (pct >= 75) return "#FFCC50";
+  if (pct >= 25) return "#FF9830";
+  if (pct > 0) return "#C87020";
+  return "#333";
 }
 
 /* ── Crown Picker ───────────────────────────────────────────────────────── */
 
-const CROWN_COLORS: Record<number, string> = {
-  0: "border-gray-700 bg-gray-900 text-gray-500 hover:border-gray-600",
-  1: "border-amber-900 bg-amber-950/40 text-amber-700 hover:border-amber-800",
-  2: "border-amber-800 bg-amber-950/60 text-amber-600 hover:border-amber-700",
-  3: "border-amber-700 bg-amber-900/50 text-amber-400 hover:border-amber-600",
-  4: "border-amber-500 bg-amber-500/20 text-amber-300 hover:border-amber-400",
-};
-
-const CROWN_ACTIVE: Record<number, string> = {
-  0: "border-gray-500 bg-gray-800 text-gray-300 ring-1 ring-gray-500",
-  1: "border-amber-800 bg-amber-950 text-amber-600 ring-1 ring-amber-900",
-  2: "border-amber-700 bg-amber-900/70 text-amber-500 ring-1 ring-amber-800",
-  3: "border-amber-600 bg-amber-800/60 text-amber-400 ring-1 ring-amber-700",
-  4: "border-amber-400 bg-amber-500/30 text-amber-200 ring-1 ring-amber-500",
-};
-
 function CrownPicker({ value, onChange }: { value: number; onChange: (v: number) => void }) {
   return (
-    <div className="flex gap-1 items-center">
+    <div className="flex gap-0.5 items-center">
       {[0, 1, 2, 3, 4].map((n) => {
         const isActive = value === n;
+        const baseStyle: React.CSSProperties = {
+          width: 28,
+          height: 28,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: 11,
+          fontWeight: 700,
+          fontFamily: "var(--font-sys, monospace)",
+          border: "1px solid",
+          cursor: "pointer",
+          transition: "all 0.15s",
+          letterSpacing: "0.04em",
+        };
+
+        if (isActive) {
+          const colors: Record<number, { bg: string; border: string; color: string }> = {
+            0: { bg: "rgba(136,136,128,0.1)", border: "var(--steel-dim, #888)", color: "var(--steel, #D8D8D0)" },
+            1: { bg: "rgba(255,152,48,0.08)", border: "var(--nerv-orange-dim, #C87020)", color: "var(--nerv-orange-dim, #C87020)" },
+            2: { bg: "rgba(255,152,48,0.12)", border: "var(--nerv-orange, #FF9830)", color: "var(--nerv-orange, #FF9830)" },
+            3: { bg: "rgba(255,204,80,0.12)", border: "var(--nerv-orange-hot, #FFCC50)", color: "var(--nerv-orange-hot, #FFCC50)" },
+            4: { bg: "rgba(80,255,80,0.1)", border: "var(--data-green, #50FF50)", color: "var(--data-green, #50FF50)" },
+          };
+          const c = colors[n];
+          return (
+            <button
+              key={n}
+              type="button"
+              onClick={() => onChange(n)}
+              style={{ ...baseStyle, background: c.bg, borderColor: c.border, color: c.color, boxShadow: `0 0 4px ${c.border}` }}
+              title={n === 0 ? "Not started" : `Crown ${n}`}
+            >
+              {n === 0 ? "—" : n}
+            </button>
+          );
+        }
+
         return (
           <button
             key={n}
             type="button"
             onClick={() => onChange(n)}
-            className={`w-8 h-8 rounded border text-xs font-semibold transition-all flex items-center justify-center
-              ${isActive ? CROWN_ACTIVE[n] : CROWN_COLORS[n]}`}
+            style={{
+              ...baseStyle,
+              background: "transparent",
+              borderColor: "var(--steel-faint, rgba(200,200,192,0.12))",
+              color: "var(--steel-dim, #888880)",
+            }}
             title={n === 0 ? "Not started" : `Crown ${n}`}
           >
             {n === 0 ? "—" : n}
@@ -103,32 +125,43 @@ function CrownPicker({ value, onChange }: { value: number; onChange: (v: number)
 function BulkBtn({ children, onClick, variant }: {
   children: React.ReactNode;
   onClick: () => void;
-  variant: "amber" | "gray" | "red";
+  variant: "primary" | "muted" | "danger";
 }) {
-  const styles = {
-    amber: "border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60",
-    gray:  "border-gray-700 bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200",
-    red:   "border-red-800 bg-red-900/20 text-red-400 hover:bg-red-900/40",
+  const styles: Record<string, React.CSSProperties> = {
+    primary: {
+      border: "1px solid var(--nerv-orange-dim, #C87020)",
+      background: "rgba(255,152,48,0.06)",
+      color: "var(--nerv-orange, #FF9830)",
+    },
+    muted: {
+      border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+      background: "transparent",
+      color: "var(--steel-dim, #888880)",
+    },
+    danger: {
+      border: "1px solid var(--alert-red-dim, #CC2020)",
+      background: "rgba(255,48,48,0.06)",
+      color: "var(--alert-red, #FF3030)",
+    },
   };
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`text-xs px-2 py-1 rounded border transition-colors ${styles[variant]}`}
+      style={{
+        ...styles[variant],
+        fontSize: 10,
+        fontFamily: "var(--font-sys, monospace)",
+        fontWeight: 500,
+        letterSpacing: "0.08em",
+        textTransform: "uppercase" as const,
+        padding: "4px 8px",
+        cursor: "pointer",
+        transition: "opacity 0.15s",
+      }}
     >
       {children}
     </button>
-  );
-}
-
-/* ── StatBadge ──────────────────────────────────────────────────────────── */
-
-function StatBadge({ label, value, total }: { label: string; value: number; total: number }) {
-  const done = value === total;
-  return (
-    <span className={done ? "text-amber-400" : "text-gray-400"}>
-      {label}: <span className="font-medium">{value}/{total}</span>
-    </span>
   );
 }
 
@@ -149,9 +182,8 @@ export default function Sections({ groups }: { groups: Group[] }) {
       if (!map.has(id)) map.set(id, []);
       map.get(id)!.push(r);
     }
-    for (const [id, rows] of map) {
+    for (const [, rows] of map) {
       rows.sort((a, b) => a.subchapter.sortOrder - b.subchapter.sortOrder);
-      map.set(id, rows);
     }
     return map;
   }, [data, groups]);
@@ -189,15 +221,113 @@ export default function Sections({ groups }: { groups: Group[] }) {
     if (!res.ok) setError("Failed to save changes. Please try again.");
   }
 
+  // Global summary
+  const allRows = data;
+  const totalSubs = allRows.length;
+  const crown4Total = allRows.filter((r) => r.crownMax === 4).length;
+  const startedTotal = allRows.filter((r) => (r.crownMax ?? 0) > 0).length;
+  const globalPct = sagaPct(allRows);
+
   return (
-    <div className="space-y-5">
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {/* ── Global Metrics Grid ───────────────────────────────────────────── */}
+      <div className="nerv-panel" style={{
+        background: "var(--void-warm, #080807)",
+        border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        overflow: "hidden",
+      }}>
+        <div className="nerv-panel-header" style={{
+          fontSize: 11,
+          fontWeight: 700,
+          letterSpacing: "0.14em",
+          textTransform: "uppercase",
+          color: "var(--nerv-orange, #FF9830)",
+          padding: "8px 12px 7px",
+          borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
+          <span>Legend Progress Overview</span>
+          <span style={{ fontSize: 9, color: "var(--steel-dim, #888880)", letterSpacing: "0.08em" }}>
+            {groups.length} SAGAS
+          </span>
+        </div>
+
+        <div className="nerv-metrics-grid" style={{
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr 1fr 1fr",
+          gap: 1,
+          background: "var(--steel-faint, rgba(200,200,192,0.12))",
+        }}>
+          {[
+            { label: "Completion", value: `${globalPct}%`, sub: `${totalSubs} subchapters` },
+            { label: "Crown 4", value: `${crown4Total}`, sub: `of ${totalSubs}` },
+            { label: "Started", value: `${startedTotal}`, sub: `of ${totalSubs}` },
+            { label: "Remaining", value: `${totalSubs - startedTotal}`, sub: "not started" },
+          ].map((m) => (
+            <div key={m.label} style={{
+              background: "var(--void-warm, #080807)",
+              padding: "12px 14px",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}>
+              <div style={{
+                fontSize: 10,
+                letterSpacing: "0.12em",
+                textTransform: "uppercase",
+                color: "var(--nerv-orange, #FF9830)",
+                marginBottom: 3,
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.label}</div>
+              <div style={{
+                fontSize: 22,
+                fontWeight: 700,
+                color: "var(--data-green, #50FF50)",
+                fontVariantNumeric: "tabular-nums",
+                textShadow: "0 0 4px rgba(80,255,80,0.3)",
+                lineHeight: 1.1,
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.value}</div>
+              <div style={{
+                fontSize: 9,
+                color: "var(--steel-dim, #888880)",
+                marginTop: 3,
+                letterSpacing: "0.06em",
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.sub}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ── Error Banner ──────────────────────────────────────────────────── */}
       {error && (
-        <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
+        <div style={{
+          border: "1px solid var(--alert-red-dim, #CC2020)",
+          background: "rgba(255,48,48,0.08)",
+          padding: "8px 14px",
+          fontSize: 12,
+          color: "var(--alert-red, #FF3030)",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
           <span>{error}</span>
-          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+          <button type="button" onClick={() => setError(null)} style={{
+            background: "none",
+            border: "none",
+            color: "var(--alert-red, #FF3030)",
+            cursor: "pointer",
+            fontSize: 14,
+          }}>✕</button>
         </div>
       )}
 
+      {/* ── Saga Panels ───────────────────────────────────────────────────── */}
       {groups
         .slice()
         .sort((a, b) => a.sortOrder - b.sortOrder)
@@ -208,61 +338,156 @@ export default function Sections({ groups }: { groups: Group[] }) {
           const total = rows.length;
           const crown4 = rows.filter((r) => r.crownMax === 4).length;
           const started = rows.filter((r) => (r.crownMax ?? 0) > 0).length;
+          const isOpen = open[g.sagaId];
 
           return (
-            <div key={g.sagaId} className="border border-gray-700 rounded-lg overflow-hidden">
+            <div key={g.sagaId} style={{
+              background: "var(--void-warm, #080807)",
+              border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+              overflow: "hidden",
+            }}>
 
-              {/* Saga header */}
-              <div className="bg-gray-900 px-5 pt-4 pb-3">
-                <div className="flex items-start justify-between gap-4">
-                  <div className="flex-1 min-w-0">
+              {/* ── Saga Header (NERV Panel Header) ───────────────────────── */}
+              <div style={{
+                borderBottom: isOpen ? "1px solid var(--nerv-orange-dim, #C87020)" : "none",
+                padding: "10px 12px 8px",
+              }}>
+                <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
+                  <div style={{ flex: 1, minWidth: 0 }}>
 
-                    {/* Title + % */}
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="text-gray-100 font-semibold text-base">{g.sagaName}</span>
-                      <span className="ml-auto text-sm font-semibold" style={{ color: pctColor(pct) }}>{pct}%</span>
+                    {/* Title row */}
+                    <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
+                      <span style={{
+                        fontFamily: "var(--font-sys, monospace)",
+                        fontSize: 11,
+                        fontWeight: 700,
+                        letterSpacing: "0.14em",
+                        textTransform: "uppercase",
+                        color: "var(--nerv-orange, #FF9830)",
+                      }}>{g.sagaName}</span>
+                      <span style={{
+                        marginLeft: "auto",
+                        fontSize: 18,
+                        fontWeight: 700,
+                        fontFamily: "var(--font-sys, monospace)",
+                        color: pctCssColor(pct),
+                        fontVariantNumeric: "tabular-nums",
+                        textShadow: pct >= 75 ? `0 0 4px ${pctCssColor(pct)}` : "none",
+                      }}>{pct}%</span>
                     </div>
 
                     {/* Progress bar */}
-                    <div className="h-1.5 rounded bg-gray-800 overflow-hidden mb-2">
-                      <div className={`h-1.5 transition-all duration-300 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
+                    <div style={{
+                      height: 4,
+                      background: "var(--void-panel, #0C0C0A)",
+                      border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                      overflow: "hidden",
+                      marginBottom: 8,
+                    }}>
+                      <div style={{
+                        height: "100%",
+                        width: `${pct}%`,
+                        background: barFillColor(pct),
+                        transition: "width 0.3s",
+                      }} />
                     </div>
 
-                    {/* Stats */}
-                    <div className="flex gap-4 text-xs mb-3">
-                      <StatBadge label="Started"  value={started} total={total} />
-                      <StatBadge label="Crown 4"  value={crown4}  total={total} />
+                    {/* Stats row — NERV data-row style */}
+                    <div style={{
+                      display: "flex",
+                      gap: 16,
+                      fontSize: 11,
+                      fontFamily: "var(--font-sys, monospace)",
+                      marginBottom: 8,
+                    }}>
+                      <span>
+                        <span style={{ color: "var(--nerv-orange-dim, #C87020)", letterSpacing: "0.06em", textTransform: "uppercase", fontSize: 10 }}>Started </span>
+                        <span style={{ color: started === total ? "var(--data-green, #50FF50)" : "var(--steel, #D8D8D0)", fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{started}/{total}</span>
+                      </span>
+                      <span>
+                        <span style={{ color: "var(--nerv-orange-dim, #C87020)", letterSpacing: "0.06em", textTransform: "uppercase", fontSize: 10 }}>Crown 4 </span>
+                        <span style={{ color: crown4 === total ? "var(--data-green, #50FF50)" : "var(--steel, #D8D8D0)", fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{crown4}/{total}</span>
+                      </span>
                     </div>
 
                     {/* Bulk actions */}
-                    <div className="flex flex-wrap gap-1.5">
-                      <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, 4)}>Set all → Crown 4</BulkBtn>
-                      <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, 3)}>Set all → Crown 3</BulkBtn>
-                      <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, 2)}>Set all → Crown 2</BulkBtn>
-                      <BulkBtn variant="amber" onClick={() => bulkUpdate(ids, 1)}>Set all → Crown 1</BulkBtn>
-                      <span className="text-gray-700 self-center px-0.5">|</span>
-                      <BulkBtn variant="red"   onClick={() => bulkUpdate(ids, 0)}>Reset all → 0</BulkBtn>
+                    <div style={{ display: "flex", flexWrap: "wrap", gap: 4, alignItems: "center" }}>
+                      <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 4)}>All → 4</BulkBtn>
+                      <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 3)}>All → 3</BulkBtn>
+                      <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 2)}>All → 2</BulkBtn>
+                      <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 1)}>All → 1</BulkBtn>
+                      <span style={{ color: "var(--steel-faint, rgba(200,200,192,0.12))", padding: "0 2px" }}>│</span>
+                      <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, 0)}>Reset → 0</BulkBtn>
                     </div>
                   </div>
 
                   <button
                     type="button"
                     onClick={() => setOpen((o) => ({ ...o, [g.sagaId]: !o[g.sagaId] }))}
-                    className="flex-shrink-0 text-xs text-gray-400 px-2.5 py-1.5 rounded border border-gray-700 bg-gray-800 hover:bg-gray-700 hover:text-gray-200 transition-colors mt-1"
+                    style={{
+                      flexShrink: 0,
+                      fontSize: 10,
+                      fontFamily: "var(--font-sys, monospace)",
+                      fontWeight: 500,
+                      letterSpacing: "0.08em",
+                      textTransform: "uppercase",
+                      color: "var(--steel-dim, #888880)",
+                      padding: "4px 10px",
+                      border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                      background: "transparent",
+                      cursor: "pointer",
+                      marginTop: 2,
+                    }}
                   >
-                    {open[g.sagaId] ? "Hide" : "Show"}
+                    {isOpen ? "Hide" : "Show"}
                   </button>
                 </div>
               </div>
 
-              {/* Subchapter table */}
-              {open[g.sagaId] && (
-                <div className="bg-black overflow-x-auto">
-                  <table className="w-full text-sm min-w-[500px]">
+              {/* ── Subchapter Table (NERV Data Table) ────────────────────── */}
+              {isOpen && (
+                <div style={{ overflowX: "auto", background: "var(--void, #000)" }}>
+                  <table style={{
+                    width: "100%",
+                    fontSize: 12,
+                    fontFamily: "var(--font-sys, monospace)",
+                    borderCollapse: "collapse",
+                    minWidth: 520,
+                  }}>
                     <thead>
-                      <tr className="border-b border-gray-800 bg-gray-950">
-                        <th className="px-4 py-2 text-left text-xs font-semibold text-gray-500 uppercase tracking-wider">Subchapter</th>
-                        <th className="px-4 py-2 text-center text-xs font-semibold text-gray-500 uppercase tracking-wider w-52">Crown Max</th>
+                      <tr style={{ borderBottom: "1px solid var(--steel-faint, rgba(200,200,192,0.12))" }}>
+                        <th style={{
+                          padding: "8px 12px",
+                          textAlign: "left",
+                          fontSize: 10,
+                          fontWeight: 700,
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase",
+                          color: "var(--nerv-orange, #FF9830)",
+                          background: "var(--void-warm, #080807)",
+                        }}>Subchapter</th>
+                        <th style={{
+                          padding: "8px 12px",
+                          textAlign: "center",
+                          fontSize: 10,
+                          fontWeight: 700,
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase",
+                          color: "var(--nerv-orange, #FF9830)",
+                          background: "var(--void-warm, #080807)",
+                          width: 80,
+                        }}>Stages</th>
+                        <th style={{
+                          padding: "8px 12px",
+                          textAlign: "center",
+                          fontSize: 10,
+                          fontWeight: 700,
+                          letterSpacing: "0.12em",
+                          textTransform: "uppercase",
+                          color: "var(--nerv-orange, #FF9830)",
+                          background: "var(--void-warm, #080807)",
+                          width: 180,
+                        }}>Crown</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -272,22 +497,73 @@ export default function Sections({ groups }: { groups: Group[] }) {
                         return (
                           <tr
                             key={r.id}
-                            className={`border-b border-gray-900 transition-colors ${rowTint(crown)}`}
+                            style={{
+                              borderBottom: "1px solid var(--steel-faint, rgba(200,200,192,0.06))",
+                              background: crown >= 4
+                                ? "rgba(80,255,80,0.02)"
+                                : crown >= 1
+                                  ? "rgba(255,152,48,0.02)"
+                                  : "transparent",
+                              transition: "background 0.15s",
+                            }}
+                            onMouseEnter={(e) => {
+                              (e.currentTarget as HTMLElement).style.background = "var(--void-panel, #0C0C0A)";
+                            }}
+                            onMouseLeave={(e) => {
+                              (e.currentTarget as HTMLElement).style.background = crown >= 4
+                                ? "rgba(80,255,80,0.02)"
+                                : crown >= 1
+                                  ? "rgba(255,152,48,0.02)"
+                                  : "transparent";
+                            }}
                           >
-                            <td className="px-4 py-2.5">
-                              <div className="flex flex-col gap-1">
-                                <span className={`font-medium ${crown >= 4 ? "text-amber-300/80" : "text-gray-200"}`}>
+                            {/* Subchapter name + mini progress */}
+                            <td style={{ padding: "8px 12px" }}>
+                              <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                                <span style={{
+                                  fontWeight: 500,
+                                  color: crown >= 4
+                                    ? "var(--data-green, #50FF50)"
+                                    : crown >= 1
+                                      ? "var(--steel, #D8D8D0)"
+                                      : "var(--steel-dim, #888880)",
+                                  fontSize: 12,
+                                }}>
                                   {r.subchapter.displayName}
                                 </span>
-                                {/* Mini crown progress bar */}
-                                <div className="w-32 h-1 rounded bg-gray-800 overflow-hidden">
-                                  <div className={`h-1 ${barFill(rPct)}`} style={{ width: `${rPct}%` }} />
+                                {/* Mini progress bar */}
+                                <div style={{
+                                  width: 100,
+                                  height: 2,
+                                  background: "var(--void-panel, #0C0C0A)",
+                                  overflow: "hidden",
+                                }}>
+                                  <div style={{
+                                    height: "100%",
+                                    width: `${rPct}%`,
+                                    background: barFillColor(rPct),
+                                    transition: "width 0.2s",
+                                  }} />
                                 </div>
                               </div>
                             </td>
 
-                            <td className="px-4 py-2.5">
-                              <div className="flex justify-center">
+                            {/* Stage count */}
+                            <td style={{
+                              padding: "8px 12px",
+                              textAlign: "center",
+                              fontVariantNumeric: "tabular-nums",
+                              color: r.subchapter.stageCount
+                                ? "var(--steel, #D8D8D0)"
+                                : "var(--steel-faint, rgba(200,200,192,0.12))",
+                              fontSize: 11,
+                            }}>
+                              {r.subchapter.stageCount ?? "—"}
+                            </td>
+
+                            {/* Crown picker */}
+                            <td style={{ padding: "8px 12px" }}>
+                              <div style={{ display: "flex", justifyContent: "center" }}>
                                 <CrownPicker
                                   value={crown}
                                   onChange={(v) => update(r.id, v)}
@@ -299,6 +575,23 @@ export default function Sections({ groups }: { groups: Group[] }) {
                       })}
                     </tbody>
                   </table>
+
+                  {/* Status bar */}
+                  <div style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "5px 12px",
+                    fontSize: 9,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: "var(--steel-dim, #888880)",
+                    borderTop: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                    fontFamily: "var(--font-sys, monospace)",
+                  }}>
+                    <span>{total} subchapters</span>
+                    <span>{crown4}/{total} complete</span>
+                  </div>
                 </div>
               )}
             </div>

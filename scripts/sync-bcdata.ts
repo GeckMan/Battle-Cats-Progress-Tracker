@@ -367,21 +367,25 @@ function guessRarity(unitNumber: number): string {
 
 // ── Legend Stage Sync ────────────────────────────────────────────────────────
 
-async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
-  // Legend stages are in Map_Name.csv (saga names) and
-  // the stage data structure uses "Stories of Legend" (SoL) and "Uncanny Legends" (UL) etc.
-  //
-  // Map_Name.csv format: "index|saga_display_name"
-  // Each line is one subchapter within the Legend Stages system.
-  //
-  // The sagas are grouped by well-known ranges:
-  //   Stories of Legend: subchapters 0–48 (varies by version)
-  //   Uncanny Legends: subchapters 49+
-  //   Zero Legends: later range
-  //
-  // For now we parse all subchapter names from Map_Name.csv and
-  // group them into the existing saga structure.
+// Saga assignment by Map_Name.csv index range.
+// These ranges are well-known in the BC community and stable across versions.
+// Stories of Legend = indices 0–48, Uncanny Legends = 49–97, Zero Legends = 98+.
+// New subchapters added by PONOS extend the last saga's range.
+const SAGA_RANGES: { name: string; minIndex: number; maxIndex: number }[] = [
+  { name: "Stories of Legend", minIndex: 0, maxIndex: 48 },
+  { name: "Uncanny Legends",  minIndex: 49, maxIndex: 97 },
+  { name: "Zero Legends",     minIndex: 98, maxIndex: 999 },
+];
 
+function getSagaName(index: number): string {
+  for (const range of SAGA_RANGES) {
+    if (index >= range.minIndex && index <= range.maxIndex) return range.name;
+  }
+  return SAGA_RANGES[SAGA_RANGES.length - 1].name; // default to last saga
+}
+
+async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
+  // Map_Name.csv format: "index|subchapter_display_name"
   const mapNamePath = path.join(resLocal, "Map_Name.csv");
   if (!existsSync(mapNamePath)) {
     console.log("  Map_Name.csv not found — skipping legend stages");
@@ -403,13 +407,59 @@ async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
 
   console.log(`  Found ${subchapters.length} legend subchapters in BCData`);
 
-  // Get existing sagas from DB
+  // ── Parse stage counts from StageName_L_en.csv ──────────────────────────
+  // Each line: "subchapterIndex|stageIndex|stageName"
+  // We count unique stageIndex values per subchapterIndex.
+  const stageCountMap = new Map<number, number>();
+  const stageNamePath = path.join(resLocal, "StageName_L_en.csv");
+  if (existsSync(stageNamePath)) {
+    const stageContent = readFileSync(stageNamePath, "utf-8");
+    const stageLines = stageContent.trim().split("\n").filter((l) => l.trim());
+    const stageIndices = new Map<number, Set<number>>();
+
+    for (const line of stageLines) {
+      const parts = line.split("|");
+      if (parts.length < 2) continue;
+      const subIdx = parseInt(parts[0].trim(), 10);
+      const stgIdx = parseInt(parts[1].trim(), 10);
+      if (isNaN(subIdx) || isNaN(stgIdx)) continue;
+      if (!stageIndices.has(subIdx)) stageIndices.set(subIdx, new Set());
+      stageIndices.get(subIdx)!.add(stgIdx);
+    }
+
+    for (const [subIdx, stages] of stageIndices) {
+      stageCountMap.set(subIdx, stages.size);
+    }
+    console.log(`  Parsed stage counts for ${stageCountMap.size} subchapters`);
+  } else {
+    console.log("  StageName_L_en.csv not found — skipping stage counts");
+  }
+
+  // ── Get or create sagas ──────────────────────────────────────────────────
   const existingSagas = await (prisma as any).legendSaga.findMany({
     orderBy: { sortOrder: "asc" },
     include: { subchapters: { orderBy: { sortOrder: "asc" } } },
   });
 
-  // Check for new subchapters not yet in DB
+  // Build saga name → ID map, create missing sagas
+  const sagaIdMap = new Map<string, string>();
+  for (const saga of existingSagas) {
+    sagaIdMap.set(saga.displayName, saga.id);
+  }
+
+  // Ensure all required sagas exist
+  for (let i = 0; i < SAGA_RANGES.length; i++) {
+    const range = SAGA_RANGES[i];
+    if (!sagaIdMap.has(range.name)) {
+      const created = await (prisma as any).legendSaga.create({
+        data: { displayName: range.name, sortOrder: i + 1 },
+      });
+      sagaIdMap.set(range.name, created.id);
+      console.log(`  Created saga: "${range.name}"`);
+    }
+  }
+
+  // Build set of existing subchapter names per saga for dedup
   const existingSubNames = new Set<string>();
   for (const saga of existingSagas) {
     for (const sub of saga.subchapters) {
@@ -417,49 +467,60 @@ async function syncLegendStages(prisma: PrismaClient, resLocal: string) {
     }
   }
 
-  const newSubs = subchapters.filter((s) => !existingSubNames.has(s.name));
-  if (newSubs.length > 0) {
-    console.log(`  ${newSubs.length} NEW subchapters to add:`);
-    for (const s of newSubs.slice(0, 10)) {
-      console.log(`    [${s.index}] ${s.name}`);
-    }
-    if (newSubs.length > 10) console.log(`    ... and ${newSubs.length - 10} more`);
-  } else {
-    console.log(`  All subchapters already in DB`);
-  }
+  // ── Upsert subchapters with proper saga assignment ───────────────────────
+  let addedCount = 0;
+  let updatedCount = 0;
 
-  // For new subchapters, we need to assign them to a saga.
-  // The saga assignment is based on index ranges which are version-dependent.
-  // We'll add new subchapters to the last saga (or create a new one if needed).
-  // Manual review is recommended after sync.
-  if (newSubs.length > 0 && existingSagas.length > 0) {
-    const lastSaga = existingSagas[existingSagas.length - 1];
-    const maxSortOrder = lastSaga.subchapters.length > 0
-      ? Math.max(...lastSaga.subchapters.map((s: any) => s.sortOrder))
-      : 0;
+  for (const sub of subchapters) {
+    const sagaName = getSagaName(sub.index);
+    const sagaId = sagaIdMap.get(sagaName);
+    if (!sagaId) continue;
 
-    let addedCount = 0;
-    for (let i = 0; i < newSubs.length; i++) {
-      const sub = newSubs[i];
+    const stageCount = stageCountMap.get(sub.index) ?? null;
+
+    if (existingSubNames.has(sub.name)) {
+      // Update existing: fix saga assignment if wrong + update stageCount
+      try {
+        const existing = await (prisma as any).legendSubchapter.findFirst({
+          where: { displayName: sub.name },
+        });
+        if (existing) {
+          const needsUpdate = existing.sagaId !== sagaId || existing.stageCount !== stageCount;
+          if (needsUpdate) {
+            await (prisma as any).legendSubchapter.update({
+              where: { id: existing.id },
+              data: { sagaId, stageCount, sortOrder: sub.index },
+            });
+            updatedCount++;
+          }
+        }
+      } catch (e: any) {
+        // Unique constraint — different saga already has this name
+        if (!e.message?.includes("Unique constraint")) {
+          console.warn(`    Failed to update "${sub.name}": ${e.message}`);
+        }
+      }
+    } else {
+      // Create new
       try {
         await (prisma as any).legendSubchapter.create({
           data: {
-            sagaId: lastSaga.id,
+            sagaId,
             displayName: sub.name,
-            sortOrder: maxSortOrder + i + 1,
+            sortOrder: sub.index,
+            stageCount,
           },
         });
         addedCount++;
       } catch (e: any) {
-        // Skip duplicates (unique constraint)
         if (!e.message?.includes("Unique constraint")) {
           console.warn(`    Failed to add "${sub.name}": ${e.message}`);
         }
       }
     }
-    console.log(`  ✓ Added ${addedCount} new subchapters to "${lastSaga.displayName}"`);
-    console.log(`  NOTE: Review saga assignments — new subchapters were added to the last saga`);
   }
+
+  console.log(`  ✓ Added ${addedCount} new subchapters, updated ${updatedCount} existing`);
 }
 
 // ── Run ──────────────────────────────────────────────────────────────────────

@@ -15,6 +15,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
   const [syncing, setSyncing] = useState(false);
 
   const earnedCount = useMemo(() => data.filter((r) => r.earned).length, [data]);
+  const pct = data.length ? Math.round((earnedCount / data.length) * 100) : 0;
 
   async function handleSync() {
     setSyncing(true);
@@ -29,30 +30,76 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
   }
 
   return (
-    <section className="space-y-3">
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-semibold text-gray-100">Meow Medals</h2>
-
-        <div className="flex items-center gap-3">
-          <div className="text-sm text-gray-400">
-            {earnedCount}/{data.length}
-          </div>
-
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {/* ── Header Panel ──────────────────────────────────────────────────── */}
+      <div style={{
+        background: "var(--void-warm, #080807)",
+        border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        overflow: "hidden",
+      }}>
+        <div style={{
+          fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
+          color: "var(--nerv-orange, #FF9830)", padding: "8px 12px 7px",
+          borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+          display: "flex", justifyContent: "space-between", alignItems: "center",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
+          <span>Meow Medals</span>
           <button
             type="button"
             onClick={handleSync}
             disabled={syncing}
-            className="text-xs px-3 py-1 rounded border border-amber-700 text-amber-300 hover:bg-amber-900 disabled:opacity-50 transition-colors"
-            title="Sync medals from tracked progress (story/zombie/legend as available)"
+            style={{
+              fontSize: 10, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+              letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",
+              border: "1px solid var(--nerv-orange-dim, #C87020)",
+              background: "rgba(255,152,48,0.06)", color: "var(--nerv-orange, #FF9830)",
+              cursor: syncing ? "wait" : "pointer", opacity: syncing ? 0.5 : 1,
+            }}
           >
             {syncing ? "Syncing..." : "Sync"}
           </button>
         </div>
+
+        <div style={{
+          display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1,
+          background: "var(--steel-faint, rgba(200,200,192,0.12))",
+        }}>
+          {[
+            { label: "Earned", value: `${earnedCount}`, sub: `of ${data.length}` },
+            { label: "Completion", value: `${pct}%`, sub: `${data.length} medals total` },
+            { label: "Remaining", value: `${data.length - earnedCount}`, sub: "to earn" },
+          ].map((m) => (
+            <div key={m.label} style={{
+              background: "var(--void-warm, #080807)", padding: "12px 14px",
+              display: "flex", flexDirection: "column", justifyContent: "center",
+            }}>
+              <div style={{
+                fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase",
+                color: "var(--nerv-orange, #FF9830)", marginBottom: 3,
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.label}</div>
+              <div style={{
+                fontSize: 22, fontWeight: 700, color: "var(--data-green, #50FF50)",
+                fontVariantNumeric: "tabular-nums", textShadow: "0 0 4px rgba(80,255,80,0.3)",
+                lineHeight: 1.1, fontFamily: "var(--font-sys, monospace)",
+              }}>{m.value}</div>
+              <div style={{
+                fontSize: 9, color: "var(--steel-dim, #888880)", marginTop: 3,
+                letterSpacing: "0.06em", fontFamily: "var(--font-sys, monospace)",
+              }}>{m.sub}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
+      {/* ── Medal Grid ────────────────────────────────────────────────────── */}
       <div
-        className="grid gap-2.5"
-        style={{ gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))" }}
+        style={{
+          display: "grid",
+          gap: 10,
+          gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))",
+        }}
       >
         {data.map((m) => (
           <MedalToken
@@ -66,7 +113,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
           />
         ))}
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -77,12 +124,6 @@ function MedalToken({
   row: Row;
   onToggled: (earned: boolean) => void;
 }) {
-  const base =
-    "w-24 h-24 rounded-full border flex items-center justify-center select-none overflow-hidden transition-all";
-
-  const locked = "bg-gray-950 border-gray-800 opacity-60";
-  const unlocked = "bg-transparent border-amber-700 ring-1 ring-amber-900";
-
   const tip = `${row.name}\n${row.description}`;
   const localSrc = row.imageFile ? `/medals/${row.imageFile}` : null;
 
@@ -105,22 +146,47 @@ function MedalToken({
     <button
       type="button"
       onClick={toggle}
-      className={`${base} ${row.earned ? unlocked : locked}`}
       title={tip}
+      className="rounded-full"
+      style={{
+        width: 96,
+        height: 96,
+        border: row.earned
+          ? "1px solid var(--nerv-orange, #FF9830)"
+          : "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        background: row.earned
+          ? "rgba(255,152,48,0.06)"
+          : "var(--void, #000)",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        overflow: "hidden",
+        cursor: "pointer",
+        transition: "all 0.15s",
+        opacity: row.earned ? 1 : 0.6,
+        boxShadow: row.earned ? "0 0 6px rgba(255,152,48,0.15)" : "none",
+      }}
     >
       {localSrc ? (
         <img
           src={localSrc}
           alt={row.name}
           loading="lazy"
-          className={
-            row.earned
-              ? "w-full h-full object-cover pointer-events-none"
-              : "w-full h-full object-cover opacity-40 pointer-events-none grayscale"
-          }
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            pointerEvents: "none",
+            filter: row.earned ? "none" : "grayscale(1)",
+            opacity: row.earned ? 1 : 0.4,
+          }}
         />
       ) : (
-        <span className={`text-lg font-semibold ${row.earned ? "text-amber-400" : "text-gray-600"}`}>
+        <span style={{
+          fontSize: 18,
+          fontWeight: 700,
+          color: row.earned ? "var(--nerv-orange, #FF9830)" : "var(--steel-dim, #888880)",
+        }}>
           {row.earned ? "★" : "?"}
         </span>
       )}

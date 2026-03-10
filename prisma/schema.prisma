@@ -168,6 +168,7 @@ model LegendSubchapter {
   sagaId      String
   displayName String
   sortOrder   Int
+  stageCount  Int?   // number of stages in this subchapter (from BCData sync)
 
   saga     LegendSaga           @relation(fields: [sagaId], references: [id], onDelete: Cascade)
   progress UserLegendProgress[]

@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import type { MilestoneCategory } from "@/generated/prisma/client";
-import { CATEGORY_META } from "@/lib/milestone-catalog";
 
 export type MilestoneRow = {
   id: string;
@@ -19,11 +18,20 @@ type CategoryGroup = {
   rows: MilestoneRow[];
 };
 
-function barFill(pct: number) {
-  if (pct >= 80) return "bg-amber-400";
-  if (pct >= 40) return "bg-amber-600";
-  if (pct > 0)   return "bg-amber-800";
-  return "bg-gray-700";
+function barFillColor(pct: number): string {
+  if (pct >= 100) return "#50FF50";
+  if (pct >= 75) return "#FFCC50";
+  if (pct >= 25) return "#FF9830";
+  if (pct > 0) return "#C87020";
+  return "#333";
+}
+
+function pctCssColor(pct: number): string {
+  if (pct >= 100) return "var(--data-green, #50FF50)";
+  if (pct >= 75) return "var(--nerv-orange-hot, #FFCC50)";
+  if (pct >= 25) return "var(--nerv-orange, #FF9830)";
+  if (pct > 0) return "var(--nerv-orange-dim, #C87020)";
+  return "var(--steel-dim, #888880)";
 }
 
 export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }) {
@@ -68,7 +76,6 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
 
   async function bulkToggle(ids: string[], cleared: boolean) {
     setError(null);
-    // Optimistic update
     setData((m) => {
       const next = new Map(m);
       ids.forEach((id) => next.set(id, cleared));
@@ -88,7 +95,6 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
       });
       if (!res.ok) throw new Error(await res.text());
     } catch {
-      // Rollback
       setData((m) => {
         const prev = new Map(m);
         ids.forEach((id) => prev.set(id, !cleared));
@@ -105,34 +111,84 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
   }
 
   return (
-    <div className="space-y-8">
-      <div className="flex items-center justify-between">
-        <h1 className="text-2xl font-semibold text-gray-100">Milestone Stages</h1>
-        <div className="text-sm text-gray-400">
-          {clearedCount}/{totalCount} cleared
+    <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {/* ── Global Metrics ────────────────────────────────────────────────── */}
+      <div style={{
+        background: "var(--void-warm, #080807)",
+        border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+        overflow: "hidden",
+      }}>
+        <div style={{
+          fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
+          color: "var(--nerv-orange, #FF9830)", padding: "8px 12px 7px",
+          borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+          display: "flex", justifyContent: "space-between", alignItems: "center",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
+          <span>Milestone Stages</span>
+          <span style={{ fontSize: 9, color: "var(--steel-dim, #888880)", letterSpacing: "0.08em" }}>
+            {groups.length} CATEGORIES
+          </span>
+        </div>
+
+        <div style={{
+          display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 1,
+          background: "var(--steel-faint, rgba(200,200,192,0.12))",
+        }}>
+          {[
+            { label: "Completion", value: `${overallPct}%`, sub: `${totalCount} milestones` },
+            { label: "Cleared", value: `${clearedCount}`, sub: `of ${totalCount}` },
+            { label: "Remaining", value: `${totalCount - clearedCount}`, sub: "to clear" },
+          ].map((m) => (
+            <div key={m.label} style={{
+              background: "var(--void-warm, #080807)", padding: "12px 14px",
+              display: "flex", flexDirection: "column", justifyContent: "center",
+            }}>
+              <div style={{
+                fontSize: 10, letterSpacing: "0.12em", textTransform: "uppercase",
+                color: "var(--nerv-orange, #FF9830)", marginBottom: 3,
+                fontFamily: "var(--font-sys, monospace)",
+              }}>{m.label}</div>
+              <div style={{
+                fontSize: 22, fontWeight: 700, color: "var(--data-green, #50FF50)",
+                fontVariantNumeric: "tabular-nums", textShadow: "0 0 4px rgba(80,255,80,0.3)",
+                lineHeight: 1.1, fontFamily: "var(--font-sys, monospace)",
+              }}>{m.value}</div>
+              <div style={{
+                fontSize: 9, color: "var(--steel-dim, #888880)", marginTop: 3,
+                letterSpacing: "0.06em", fontFamily: "var(--font-sys, monospace)",
+              }}>{m.sub}</div>
+            </div>
+          ))}
+        </div>
+
+        {/* Overall progress bar */}
+        <div style={{ padding: "8px 12px" }}>
+          <div style={{
+            height: 4, background: "var(--void-panel, #0C0C0A)",
+            border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))", overflow: "hidden",
+          }}>
+            <div style={{ height: "100%", width: `${overallPct}%`, background: barFillColor(overallPct), transition: "width 0.3s" }} />
+          </div>
         </div>
       </div>
 
-      {/* Overall bar */}
-      <div>
-        <div className="h-2 rounded bg-gray-800 overflow-hidden">
-          <div
-            className={`h-2 transition-all duration-300 ${barFill(overallPct)}`}
-            style={{ width: `${overallPct}%` }}
-          />
-        </div>
-        <div className="mt-1 text-xs text-right" style={{ color: overallPct >= 80 ? "#fbbf24" : overallPct >= 40 ? "#d97706" : "#6b7280" }}>
-          {overallPct}% overall
-        </div>
-      </div>
-
+      {/* ── Error Banner ──────────────────────────────────────────────────── */}
       {error && (
-        <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
+        <div style={{
+          border: "1px solid var(--alert-red-dim, #CC2020)", background: "rgba(255,48,48,0.08)",
+          padding: "8px 14px", fontSize: 12, color: "var(--alert-red, #FF3030)",
+          display: "flex", alignItems: "center", justifyContent: "space-between",
+          fontFamily: "var(--font-sys, monospace)",
+        }}>
           <span>{error}</span>
-          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+          <button type="button" onClick={() => setError(null)} style={{
+            background: "none", border: "none", color: "var(--alert-red, #FF3030)", cursor: "pointer", fontSize: 14,
+          }}>✕</button>
         </div>
       )}
 
+      {/* ── Category Groups ───────────────────────────────────────────────── */}
       {groups.map((g) => {
         const groupRows = g.rows;
         const groupIds = groupRows.map((r) => r.id);
@@ -143,36 +199,73 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
         const anyPending = groupIds.some((id) => pending.has(id));
 
         return (
-          <section key={g.category} className="space-y-2">
-            <div className="flex items-center justify-between border-b border-gray-800 pb-2 gap-4">
-              <h2 className="text-base font-semibold text-gray-100">{g.label}</h2>
-
-              <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-400">
+          <div key={g.category} style={{
+            background: "var(--void-warm, #080807)",
+            border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+            overflow: "hidden",
+          }}>
+            {/* Category Header */}
+            <div style={{
+              padding: "8px 12px 7px",
+              borderBottom: "1px solid var(--nerv-orange-dim, #C87020)",
+              display: "flex", justifyContent: "space-between", alignItems: "center",
+            }}>
+              <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+                <span style={{
+                  fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
+                  color: "var(--nerv-orange, #FF9830)", fontFamily: "var(--font-sys, monospace)",
+                }}>{g.label}</span>
+                <span style={{
+                  fontSize: 11, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+                  color: groupPct === 100 ? "var(--data-green, #50FF50)" : "var(--steel, #D8D8D0)",
+                  fontVariantNumeric: "tabular-nums",
+                }}>
                   {groupCleared}/{groupTotal}
-                  <span className="ml-1 text-gray-600">({groupPct}%)</span>
                 </span>
+                <span style={{
+                  fontSize: 11, fontFamily: "var(--font-sys, monospace)",
+                  color: pctCssColor(groupPct), fontWeight: 700,
+                }}>
+                  {groupPct}%
+                </span>
+              </div>
 
+              <div style={{ display: "flex", gap: 4 }}>
                 <button
                   type="button"
                   disabled={anyPending || allCleared}
                   onClick={() => bulkToggle(groupIds, true)}
-                  className="text-xs px-2 py-1 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 disabled:opacity-40 transition-colors"
+                  style={{
+                    fontSize: 10, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+                    letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 8px",
+                    border: "1px solid var(--nerv-orange-dim, #C87020)",
+                    background: "rgba(255,152,48,0.06)", color: "var(--nerv-orange, #FF9830)",
+                    cursor: anyPending || allCleared ? "default" : "pointer",
+                    opacity: anyPending || allCleared ? 0.4 : 1,
+                  }}
                 >
-                  Mark all ✓
+                  All ✓
                 </button>
                 <button
                   type="button"
                   disabled={anyPending || groupCleared === 0}
                   onClick={() => bulkToggle(groupIds, false)}
-                  className="text-xs px-2 py-1 rounded border border-gray-700 bg-gray-900 text-gray-400 hover:bg-gray-800 hover:text-gray-200 disabled:opacity-40 transition-colors"
+                  style={{
+                    fontSize: 10, fontFamily: "var(--font-sys, monospace)", fontWeight: 500,
+                    letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 8px",
+                    border: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+                    background: "transparent", color: "var(--steel-dim, #888880)",
+                    cursor: anyPending || groupCleared === 0 ? "default" : "pointer",
+                    opacity: anyPending || groupCleared === 0 ? 0.4 : 1,
+                  }}
                 >
-                  Clear all
+                  Clear
                 </button>
               </div>
             </div>
 
-            <div className="space-y-1">
+            {/* Milestone Items */}
+            <div style={{ display: "flex", flexDirection: "column" }}>
               {groupRows.map((r) => {
                 const isCleared = data.get(r.id) ?? false;
                 const isLoading = pending.has(r.id);
@@ -183,42 +276,67 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
                     type="button"
                     onClick={() => toggle(r.id)}
                     disabled={isLoading}
-                    className={`w-full flex items-center gap-3 px-3 py-2 rounded border text-left transition-colors
-                      ${isCleared
-                        ? "border-amber-900 bg-amber-950/30 hover:bg-amber-950/50"
-                        : "border-gray-800 bg-black hover:bg-gray-950"
-                      }
-                      ${isLoading ? "opacity-60" : ""}
-                    `}
+                    style={{
+                      width: "100%",
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 10,
+                      padding: "8px 12px",
+                      border: "none",
+                      borderBottom: "1px solid var(--steel-faint, rgba(200,200,192,0.06))",
+                      background: isCleared ? "rgba(80,255,80,0.02)" : "var(--void, #000)",
+                      textAlign: "left",
+                      cursor: isLoading ? "wait" : "pointer",
+                      opacity: isLoading ? 0.6 : 1,
+                      transition: "background 0.15s",
+                      fontFamily: "var(--font-sys, monospace)",
+                    }}
+                    onMouseEnter={(e) => { if (!isLoading) (e.currentTarget as HTMLElement).style.background = "var(--void-panel, #0C0C0A)"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.background = isCleared ? "rgba(80,255,80,0.02)" : "var(--void, #000)"; }}
                   >
-                    <div
-                      className={`flex-shrink-0 w-4 h-4 rounded border flex items-center justify-center transition-colors
-                        ${isCleared ? "bg-amber-500 border-amber-500" : "border-gray-600 bg-transparent"}
-                      `}
-                    >
+                    {/* Checkbox */}
+                    <div style={{
+                      width: 16, height: 16, flexShrink: 0,
+                      border: `1px solid ${isCleared ? "var(--data-green, #50FF50)" : "var(--steel-faint, rgba(200,200,192,0.12))"}`,
+                      background: isCleared ? "rgba(80,255,80,0.1)" : "transparent",
+                      display: "flex", alignItems: "center", justifyContent: "center",
+                    }}>
                       {isCleared && (
-                        <svg className="w-3 h-3 text-black" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="2.5">
+                        <svg width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="var(--data-green, #50FF50)" strokeWidth="2.5">
                           <polyline points="2,6 5,9 10,3" />
                         </svg>
                       )}
                     </div>
 
-                    <span
-                      className={`text-sm ${
-                        isCleared ? "text-gray-500 line-through" : "text-gray-100"
-                      }`}
-                    >
+                    <span style={{
+                      fontSize: 12,
+                      color: isCleared ? "var(--steel-dim, #888880)" : "var(--steel, #D8D8D0)",
+                      textDecoration: isCleared ? "line-through" : "none",
+                    }}>
                       {r.displayName}
                     </span>
 
                     {isLoading && (
-                      <span className="ml-auto text-xs text-gray-600">saving...</span>
+                      <span style={{ marginLeft: "auto", fontSize: 9, color: "var(--steel-dim, #888880)", letterSpacing: "0.08em", textTransform: "uppercase" }}>
+                        saving...
+                      </span>
                     )}
                   </button>
                 );
               })}
             </div>
-          </section>
+
+            {/* Status bar */}
+            <div style={{
+              display: "flex", justifyContent: "space-between", alignItems: "center",
+              padding: "5px 12px", fontSize: 9, letterSpacing: "0.1em", textTransform: "uppercase",
+              color: "var(--steel-dim, #888880)", borderTop: "1px solid var(--steel-faint, rgba(200,200,192,0.12))",
+              fontFamily: "var(--font-sys, monospace)",
+            }}>
+              <span>{groupTotal} milestones</span>
+              <span>{groupCleared}/{groupTotal} cleared</span>
+            </div>
+          </div>
         );
       })}
     </div>
