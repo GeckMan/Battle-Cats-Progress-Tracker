@@ -5,9 +5,10 @@ import { useEffect, useState, useCallback } from "react";
 /**
  * NervWaveform — Multi-line SVG progress waveform chart.
  * Fetches /api/progress-timeline and renders cumulative progress lines
- * in the NERV color palette (green, cyan, orange, magenta, yellow).
+ * scaled as percentages of each category's max total.
  *
- * Inspired by the "Yield Flow — Waveform Monitor" in the NERV UI reference.
+ * When two or more series overlap (similar percentage values), lines are
+ * rendered with a dashed pattern so both colors remain visible.
  */
 
 type TimelineData = {
@@ -18,6 +19,13 @@ type TimelineData = {
     milestones: number[];
     story: number[];
     legend: number[];
+  };
+  totals: {
+    units: number;
+    medals: number;
+    milestones: number;
+    story: number;
+    legend: number;
   };
 };
 
@@ -36,10 +44,7 @@ export default function NervWaveform() {
 
   const fetchData = useCallback(async () => {
     try {
-      // Start from Jan 1 2026 (site launch) — calculate days dynamically
-      const launchDate = new Date("2026-01-01T00:00:00");
-      const daysSinceLaunch = Math.floor((Date.now() - launchDate.getTime()) / 86400000);
-      const res = await fetch(`/api/progress-timeline?days=${Math.max(daysSinceLaunch, 7)}`);
+      const res = await fetch(`/api/progress-timeline?days=30`);
       if (res.ok) {
         const json = await res.json();
         setData(json);
@@ -88,57 +93,92 @@ export default function NervWaveform() {
   const PAD_L = 0;
   const PAD_R = 0;
   const PAD_T = 10;
-  const PAD_B = 24; // space for date labels
+  const PAD_B = 24;
   const chartW = W - PAD_L - PAD_R;
   const chartH = H - PAD_T - PAD_B;
 
   const numDays = data.days.length;
   const xStep = numDays > 1 ? chartW / (numDays - 1) : chartW;
 
-  // Build SVG paths — each series scaled to its OWN max value so every
-  // line uses the full chart height regardless of absolute numbers.
+  // Build SVG paths — each series scaled as PERCENTAGE of its max total.
+  // e.g. 120/125 medals = 96% → plotted at 96% of chart height.
   const paths = SERIES_CONFIG.map((cfg) => {
     const values = data.series[cfg.key as keyof typeof data.series] ?? [];
-    if (values.length === 0) return { ...cfg, d: "", areaD: "", flat: true };
+    const total = data.totals?.[cfg.key as keyof typeof data.totals] ?? 0;
+    if (values.length === 0) return { ...cfg, d: "", areaD: "", pctValues: [] as number[] };
 
-    const seriesMin = Math.min(...values);
-    const seriesMax = Math.max(...values);
+    // Convert raw counts to percentages (0–100)
+    const pctValues = values.map((v) => total > 0 ? (v / total) * 100 : 0);
 
-    // Flat series (no variation) — draw a horizontal line near the bottom
-    // so the series is still visible on the chart
-    if (seriesMax === seriesMin) {
-      const flatY = seriesMax === 0
-        ? PAD_T + chartH - 2          // 0-value: near bottom
-        : PAD_T + chartH * 0.5;       // non-zero constant: mid-height
-      const points = values.map((_, i) => ({
-        x: PAD_L + i * xStep,
-        y: flatY,
-      }));
-      const d = points.map((p, i) => `${i === 0 ? "M" : "L"} ${p.x},${p.y}`).join(" ");
-      return { ...cfg, d, areaD: "", flat: false };
-    }
-
-    const points = values.map((v, i) => ({
+    const points = pctValues.map((pct, i) => ({
       x: PAD_L + i * xStep,
-      y: PAD_T + chartH - ((v - seriesMin) / (seriesMax - seriesMin)) * chartH,
+      y: PAD_T + chartH - (pct / 100) * chartH,
     }));
 
-    // Smooth curve using monotone cubic Hermite interpolation
+    // Smooth curve
     const d = smoothPath(points);
 
-    // Area fill (path down to bottom, back to start)
-    const areaD = `${d} L ${points[points.length - 1].x},${PAD_T + chartH} L ${points[0].x},${PAD_T + chartH} Z`;
+    // Area fill
+    const areaD = d
+      ? `${d} L ${points[points.length - 1].x},${PAD_T + chartH} L ${points[0].x},${PAD_T + chartH} Z`
+      : "";
 
-    return { ...cfg, d, areaD, flat: false };
+    return { ...cfg, d, areaD, pctValues };
   });
 
-  // Date labels (show ~5 evenly spaced)
+  // ── Overlap detection ──────────────────────────────────────────────────
+  // For the final day, find which series have similar percentage values.
+  // If two lines are within 3% of each other, offset their dash patterns
+  // so both colors are visible (alternating dashes).
+  const lastIdx = numDays - 1;
+  const OVERLAP_THRESHOLD = 3; // percentage points
+
+  // Group series by proximity at the final data point
+  type OverlapInfo = { dashArray?: string; dashOffset?: number };
+  const overlapMap = new Map<string, OverlapInfo>();
+
+  // Get final percentages for all series
+  const finalPcts = paths.map((p) => ({
+    key: p.key,
+    pct: p.pctValues.length > 0 ? p.pctValues[p.pctValues.length - 1] : -999,
+  }));
+
+  // Sort by pct to find neighbors
+  const sorted = [...finalPcts].sort((a, b) => a.pct - b.pct);
+  const visited = new Set<string>();
+
+  for (let i = 0; i < sorted.length; i++) {
+    if (visited.has(sorted[i].key)) continue;
+    const group: string[] = [sorted[i].key];
+    visited.add(sorted[i].key);
+
+    for (let j = i + 1; j < sorted.length; j++) {
+      if (visited.has(sorted[j].key)) continue;
+      if (Math.abs(sorted[j].pct - sorted[i].pct) <= OVERLAP_THRESHOLD) {
+        group.push(sorted[j].key);
+        visited.add(sorted[j].key);
+      }
+    }
+
+    if (group.length > 1) {
+      // Assign alternating dash patterns so both colors show
+      const dashLen = 8;
+      const totalLen = dashLen * group.length;
+      for (let g = 0; g < group.length; g++) {
+        overlapMap.set(group[g], {
+          dashArray: `${dashLen} ${totalLen - dashLen}`,
+          dashOffset: -(g * dashLen),
+        });
+      }
+    }
+  }
+
+  // Date labels
   const labelCount = Math.min(5, numDays);
   const labelIndices = Array.from({ length: labelCount }, (_, i) =>
     Math.round((i / (labelCount - 1)) * (numDays - 1))
   );
 
-  // Time range label
   const startDate = data.days[0];
   const endDate = data.days[data.days.length - 1];
 
@@ -151,9 +191,11 @@ export default function NervWaveform() {
       <div className="nerv-panel-body" style={{ padding: "8px 12px 4px" }}>
         {/* Legend */}
         <div style={{ display: "flex", gap: "12px", marginBottom: "6px", flexWrap: "wrap" }}>
-          {SERIES_CONFIG.map((cfg) => {
+          {paths.map((cfg) => {
             const values = data.series[cfg.key as keyof typeof data.series] ?? [];
+            const total = data.totals?.[cfg.key as keyof typeof data.totals] ?? 0;
             const latest = values.length > 0 ? values[values.length - 1] : 0;
+            const pct = total > 0 ? Math.round((latest / total) * 100) : 0;
             const isActive = !hoveredSeries || hoveredSeries === cfg.key;
             return (
               <button
@@ -185,7 +227,9 @@ export default function NervWaveform() {
                   display: "inline-block",
                 }} />
                 {cfg.label}
-                <span style={{ fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>{latest}</span>
+                <span style={{ fontWeight: 700, fontVariantNumeric: "tabular-nums" }}>
+                  {latest}/{total} ({pct}%)
+                </span>
               </button>
             );
           })}
@@ -200,7 +244,7 @@ export default function NervWaveform() {
           preserveAspectRatio="xMidYMid meet"
           shapeRendering="geometricPrecision"
         >
-          {/* Grid lines */}
+          {/* Grid lines at 0%, 25%, 50%, 75%, 100% */}
           {[0, 0.25, 0.5, 0.75, 1].map((frac) => {
             const y = PAD_T + chartH - frac * chartH;
             return (
@@ -216,9 +260,9 @@ export default function NervWaveform() {
             );
           })}
 
-          {/* Area fills (behind lines) — skip flat/degenerate series */}
+          {/* Area fills */}
           {paths.map((p) => {
-            if (!p.areaD || p.flat) return null;
+            if (!p.areaD) return null;
             const isActive = !hoveredSeries || hoveredSeries === p.key;
             return (
               <path
@@ -231,22 +275,23 @@ export default function NervWaveform() {
             );
           })}
 
-          {/* Lines — skip flat/degenerate series */}
+          {/* Lines */}
           {paths.map((p) => {
-            if (!p.d || p.flat) return null;
+            if (!p.d) return null;
             const isActive = !hoveredSeries || hoveredSeries === p.key;
+            const overlap = overlapMap.get(p.key);
             return (
               <path
                 key={`line-${p.key}`}
                 d={p.d}
                 fill="none"
                 stroke={p.color}
-                strokeWidth={isActive ? 2 : 1}
+                strokeWidth={isActive ? 2.5 : 1}
                 strokeLinecap="butt"
                 opacity={isActive ? 1 : 0.15}
-                style={{
-                  transition: "opacity 0.3s",
-                }}
+                strokeDasharray={overlap?.dashArray}
+                strokeDashoffset={overlap?.dashOffset}
+                style={{ transition: "opacity 0.3s" }}
               />
             );
           })}
@@ -285,15 +330,12 @@ function formatDateLabel(isoDate: string): string {
 
 /**
  * Build a smooth SVG path using monotone cubic Hermite interpolation.
- * Unlike Catmull-Rom, this method guarantees no overshooting —
- * the curve stays within the bounding box of consecutive data points.
  */
 function smoothPath(points: { x: number; y: number }[]): string {
   if (points.length === 0) return "";
   if (points.length === 1) return `M ${points[0].x},${points[0].y}`;
   if (points.length === 2) return `M ${points[0].x},${points[0].y} L ${points[1].x},${points[1].y}`;
 
-  // Compute slopes (Fritsch–Carlson monotone method)
   const n = points.length;
   const dx: number[] = [];
   const dy: number[] = [];
@@ -305,18 +347,16 @@ function smoothPath(points: { x: number; y: number }[]): string {
     slopes.push(dx[i] === 0 ? 0 : dy[i] / dx[i]);
   }
 
-  // Tangents
   const m: number[] = [slopes[0]];
   for (let i = 1; i < n - 1; i++) {
     if (slopes[i - 1] * slopes[i] <= 0) {
-      m.push(0); // Flat at local extrema — prevents overshoot
+      m.push(0);
     } else {
       m.push((slopes[i - 1] + slopes[i]) / 2);
     }
   }
   m.push(slopes[n - 2]);
 
-  // Clamp tangents for monotonicity
   for (let i = 0; i < n - 1; i++) {
     if (Math.abs(slopes[i]) < 1e-6) {
       m[i] = 0;
@@ -333,7 +373,6 @@ function smoothPath(points: { x: number; y: number }[]): string {
     }
   }
 
-  // Build path
   let d = `M ${points[0].x},${points[0].y}`;
   for (let i = 0; i < n - 1; i++) {
     const seg = dx[i] / 3;
