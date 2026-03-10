@@ -18,13 +18,11 @@ The build script (`package.json`) runs: `prisma generate && prisma migrate deplo
 
 **After every push, ALWAYS do this:**
 1. Push the code
-2. Tell the user: "Pushed — Vercel is building. I'll check the site in ~60s."
-3. Wait 60 seconds, then use WebFetch to hit `https://battlecatsprogress.app` and check if it loads
-4. If the site loads fine, report success
-5. If it errors or shows a Vercel error page, push an empty retry commit:
+2. Immediately push a SECOND empty commit to handle Neon cold starts:
    `git commit --allow-empty -m "chore: retrigger deploy (Neon cold start)" && git push origin main`
-6. The most common failure is Neon cold start timeout (P1002) — the database is serverless and sleeps after inactivity. The first deploy attempt wakes it up, and the retry succeeds. Always push a retry before asking the user for help.
-7. After retrying, wait another 60s and check again. If it still fails after 2 retries, then ask the user to check the Vercel dashboard.
+   The Neon serverless database sleeps after inactivity. The first deploy wakes it, the second succeeds.
+3. Tell the user: "Pushed (with automatic retry for Neon cold starts). Vercel is building — check your dashboard or site in ~90s."
+4. This sandbox CANNOT reach battlecatsprogress.app or any Vercel/GitHub API to check build status. Do NOT try WebFetch, curl, or any HTTP client — they will all fail. Only `git push` works through the proxy.
 
 ## Git Remote
 - GitHub: `GeckMan/Battle-Cats-Progress-Tracker`
