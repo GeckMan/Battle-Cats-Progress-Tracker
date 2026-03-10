@@ -58,7 +58,7 @@ export default async function MilestonesPage() {
     }));
 
   return (
-    <div className="p-4 pt-16 md:p-8 max-w-2xl">
+    <div className="p-4 pt-16 md:p-8">
       <MilestonesClient groups={groups} />
     </div>
   );
