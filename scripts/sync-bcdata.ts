@@ -534,220 +534,195 @@ function getSagaName(index: number): string {
 }
 
 async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLocal: string) {
-  // ── Step 1: Parse StageName_L_en.csv — the AUTHORITY for legend subchapters ─
-  // This file is legend-specific ("L" = Legend map type). Format per line:
-  //   "subchapterIndex|stageIndex|stageName"
-  // Subchapter indices: 0-48 = SoL, 49-97 = UL, 98+ = ZL.
+  // ──────────────────────────────────────────────────────────────────────────
+  // Step 1: Parse StageName_L_en.csv for stage counts per subchapter.
+  // Delimiter may be pipe OR comma — auto-detect.
+  // ──────────────────────────────────────────────────────────────────────────
+  const stageCountMap = new Map<number, number>();
   const stageNamePath = path.join(resLocal, "StageName_L_en.csv");
-  if (!existsSync(stageNamePath)) {
-    console.log("  StageName_L_en.csv not found — skipping legend stages");
+
+  if (existsSync(stageNamePath)) {
+    const raw = readFileSync(stageNamePath, "utf-8");
+    const lines = raw.trim().split("\n").filter((l) => l.trim());
+    console.log(`  StageName_L_en.csv: ${lines.length} lines`);
+    for (let i = 0; i < Math.min(3, lines.length); i++) {
+      console.log(`    raw[${i}]: "${lines[i].substring(0, 120)}"`);
+    }
+
+    // Auto-detect delimiter
+    const first = lines[0] || "";
+    const pipes = (first.match(/\|/g) || []).length;
+    const commas = (first.match(/,/g) || []).length;
+    const delim = commas > pipes ? "," : "|";
+    console.log(`  Delimiter: "${delim}" (pipes=${pipes}, commas=${commas})`);
+
+    const buckets = new Map<number, Set<number>>();
+    for (const line of lines) {
+      const p = line.split(delim);
+      if (p.length < 2) continue;
+      const sub = parseInt(p[0].trim(), 10);
+      const stg = parseInt(p[1].trim(), 10);
+      if (isNaN(sub) || isNaN(stg)) continue;
+      if (!buckets.has(sub)) buckets.set(sub, new Set());
+      buckets.get(sub)!.add(stg);
+    }
+    for (const [sub, stages] of buckets) stageCountMap.set(sub, stages.size);
+    console.log(`  Parsed stage counts for ${stageCountMap.size} subchapters`);
+  } else {
+    console.log("  StageName_L_en.csv not found");
+  }
+
+  // ──────────────────────────────────────────────────────────────────────────
+  // Step 2: Parse Map_Name.csv — this has ALL map types (1200+).
+  // From the logs we know: format is "id|name", and legend subchapters
+  // start at line 0 ("The Legend Begins", "Passion Land", ...).
+  // We need to figure out WHERE legend entries end.
+  //
+  // Two approaches:
+  //   A) If StageName_L_en.csv gave us legend indices, use those.
+  //   B) Otherwise, use the known first non-legend entry to find the boundary,
+  //      or use Map_Name.csv directly with SAGA_RANGES.
+  // ──────────────────────────────────────────────────────────────────────────
+  const mapNamePath = path.join(resLocal, "Map_Name.csv");
+  if (!existsSync(mapNamePath)) {
+    console.log("  Map_Name.csv not found — skipping legend stages");
     return;
   }
 
-  const stageContent = readFileSync(stageNamePath, "utf-8");
-  const stageLines = stageContent.trim().split("\n").filter((l) => l.trim());
-  const stageIndices = new Map<number, Set<number>>();
-  // Also collect first stage name per subchapter as fallback names
-  const firstStageName = new Map<number, string>();
+  const mapContent = readFileSync(mapNamePath, "utf-8");
+  const mapLines = mapContent.trim().split("\n").filter((l) => l.trim());
+  console.log(`  Map_Name.csv: ${mapLines.length} lines`);
 
-  for (const line of stageLines) {
-    const parts = line.split("|");
-    if (parts.length < 3) continue;
-    const subIdx = parseInt(parts[0].trim(), 10);
-    const stgIdx = parseInt(parts[1].trim(), 10);
-    const stageName = parts.slice(2).join("|").trim();
-    if (isNaN(subIdx) || isNaN(stgIdx)) continue;
-    if (!stageIndices.has(subIdx)) stageIndices.set(subIdx, new Set());
-    stageIndices.get(subIdx)!.add(stgIdx);
-    // Keep the name of stage 0 (or first stage found) per subchapter
-    if (stgIdx === 0 || !firstStageName.has(subIdx)) {
-      firstStageName.set(subIdx, stageName);
+  // Parse names — format is "id|name" (id is numeric first field)
+  const allNames: string[] = [];
+  for (const line of mapLines) {
+    const p = line.split("|");
+    const id = parseInt(p[0].trim(), 10);
+    if (!isNaN(id) && p.length > 1) {
+      allNames.push(p.slice(1).join("|").trim());
+    } else {
+      allNames.push(p[0].trim());
     }
   }
+  console.log(`  First 5 names: ${allNames.slice(0, 5).map((n) => `"${n}"`).join(", ")}`);
 
-  const stageCountMap = new Map<number, number>();
-  for (const [subIdx, stages] of stageIndices) {
-    stageCountMap.set(subIdx, stages.size);
-  }
-
-  const legendIndices = [...stageCountMap.keys()].sort((a, b) => a - b);
-  console.log(`  StageName_L_en.csv: ${legendIndices.length} legend subchapters (indices ${legendIndices[0]}–${legendIndices[legendIndices.length - 1]})`);
-
-  // ── Step 2: Find legend subchapter NAMES ──────────────────────────────────
-  // Map_Name.csv has ALL map types (800+). Legend entries are somewhere in the
-  // middle. The first field is an explicit map ID, the second is the name.
+  // ──────────────────────────────────────────────────────────────────────────
+  // Step 3: Determine which Map_Name.csv entries are legend subchapters.
   //
-  // We need to find which Map_Name.csv entries correspond to legend subchapters.
-  // We do this by building a map from explicit-ID → name, then finding the
-  // legend base ID by searching for known SoL subchapter names.
-  const subchapterNames = new Map<number, string>();
+  // We know from the logs that legend entries start at line 0.
+  // The legend base offset is 0: "The Legend Begins" = SoL subchapter 0.
+  //
+  // If StageName_L_en.csv gave us legend indices (e.g. 0..148), we use those
+  // to pick names from allNames[offset + legendIdx].
+  //
+  // If StageName_L_en.csv parsing failed (0 entries), we fall back to using
+  // ALL entries from line 0 up to the first known non-legend entry as the
+  // legend block, or up to a reasonable max.
+  // ──────────────────────────────────────────────────────────────────────────
 
-  const mapNamePath = path.join(resLocal, "Map_Name.csv");
-  if (existsSync(mapNamePath)) {
-    const mapContent = readFileSync(mapNamePath, "utf-8");
-    const mapLines = mapContent.trim().split("\n").filter((l) => l.trim());
-    console.log(`  Map_Name.csv: ${mapLines.length} total lines`);
-
-    // Parse Map_Name.csv — build both an array (by line) and a map (by explicit ID)
-    const nameByLine: string[] = [];     // index = line number
-    const nameByExplicitId = new Map<number, string>(); // key = explicit ID from first field
-    let hasExplicitIds = false;
-
-    for (const line of mapLines) {
-      const parts = line.split("|");
-      const firstField = parts[0].trim();
-      const explicitId = parseInt(firstField, 10);
-
-      if (!isNaN(explicitId) && parts.length > 1) {
-        // Format: "id|name"
-        const name = parts.slice(1).join("|").trim();
-        nameByLine.push(name);
-        nameByExplicitId.set(explicitId, name);
-        hasExplicitIds = true;
-      } else {
-        // Format: just "name" per line (line number = index)
-        nameByLine.push(firstField);
+  // Verify offset 0 by checking known SoL subchapter names at the start
+  const KNOWN_SOL_STARTS = ["The Legend Begins", "Passion Land", "Glucosamine Desert"];
+  let legendBaseOffset = -1;
+  if (allNames.length > 2 && KNOWN_SOL_STARTS.includes(allNames[0])) {
+    legendBaseOffset = 0;
+    console.log(`  Legend base offset = 0 (confirmed: first entry is "${allNames[0]}")`);
+  } else {
+    // Try to find it
+    for (const name of KNOWN_SOL_STARTS) {
+      const idx = allNames.indexOf(name);
+      if (idx >= 0) {
+        legendBaseOffset = idx;
+        console.log(`  Legend base offset = ${idx} (found "${name}")`);
+        break;
       }
     }
+  }
 
-    console.log(`  Format: ${hasExplicitIds ? "id|name" : "name per line"}`);
-    console.log(`  First 3 names: ${nameByLine.slice(0, 3).map((n) => `"${n}"`).join(", ")}`);
-    console.log(`  Name at line 400: "${nameByLine[400] ?? "(N/A)"}"`);
-    console.log(`  Name at line 500: "${nameByLine[500] ?? "(N/A)"}"`);
+  if (legendBaseOffset < 0) {
+    console.error("  ERROR: Could not find legend subchapters in Map_Name.csv. Aborting.");
+    console.log(`  First 3 names: ${allNames.slice(0, 3).map((n) => `"${n}"`).join(", ")}`);
+    return;
+  }
 
-    // ── Diagnostic: list all resLocal and DataLocal CSV files ──────────
-    const resFiles = readdirSync(resLocal).filter((f) => f.endsWith(".csv")).sort();
-    console.log(`  resLocal CSVs (${resFiles.length}): ${resFiles.slice(0, 20).join(", ")}${resFiles.length > 20 ? "..." : ""}`);
+  // Build the subchapter list
+  type SubEntry = { legendIdx: number; name: string };
+  const subchapters: SubEntry[] = [];
 
-    const dataMapFiles = readdirSync(dataLocal).filter((f) => /MapStageData/i.test(f)).sort();
-    console.log(`  DataLocal MapStageData* files: ${dataMapFiles.length} total`);
-    const dataMapLFiles = dataMapFiles.filter((f) => /MapStageDataL_/i.test(f));
-    console.log(`  DataLocal MapStageDataL_* files: ${dataMapLFiles.length} (legend-specific)`);
-    if (dataMapLFiles.length > 0) {
-      console.log(`    First: ${dataMapLFiles[0]}, Last: ${dataMapLFiles[dataMapLFiles.length - 1]}`);
-    }
-
-    // ── Find the legend base offset ──────────────────────────────────────
-    // Search for known SoL subchapter names in Map_Name.csv.
-    const KNOWN_SOL_NAMES = [
-      "A New Legend", "Legend Begins", "Here Be Dragons",
-      "The Endless Wood", "Primeval Currents", "Barking Bay",
-      "Abyss Gazers", "Neo-Necropolis", "Law of the Wildlands",
-      "Pararila Peninsula", "Coup de Chat",
-    ];
-
-    let legendBaseOffset = -1;
-
-    // Strategy 1: Search by name in the name-by-line array
-    for (const solName of KNOWN_SOL_NAMES) {
-      const lineIdx = nameByLine.indexOf(solName);
-      if (lineIdx >= 0) {
-        // "A New Legend" should be legend index 0, "Here Be Dragons" index 1, etc.
-        const expectedLegendIdx = KNOWN_SOL_NAMES.indexOf(solName) <= 1 ? 0 :
-          KNOWN_SOL_NAMES.indexOf(solName) - 1; // account for "Legend Begins" alt
-        // Actually, let's just find two matches and compute the offset from their difference
-        console.log(`  Found "${solName}" at Map_Name.csv line ${lineIdx}`);
-        if (solName === "A New Legend" || solName === "Legend Begins") {
-          legendBaseOffset = lineIdx;
-          console.log(`  → Legend base offset = ${legendBaseOffset}`);
-          break;
-        }
-      }
-    }
-
-    // Strategy 2: If first name not found, find "Here Be Dragons" (SoL index 1)
-    if (legendBaseOffset < 0) {
-      const hbdLine = nameByLine.indexOf("Here Be Dragons");
-      if (hbdLine >= 0) {
-        legendBaseOffset = hbdLine - 1; // It's the 2nd SoL subchapter (index 1)
-        console.log(`  Derived legend base offset ${legendBaseOffset} from "Here Be Dragons" at line ${hbdLine}`);
-      }
-    }
-
-    // Strategy 3: Use explicit IDs if available
-    if (legendBaseOffset < 0 && hasExplicitIds) {
-      for (const [id, name] of nameByExplicitId) {
-        if (name === "A New Legend" || name === "Legend Begins") {
-          legendBaseOffset = id; // Use the explicit map ID as offset
-          console.log(`  Found legend base offset ${legendBaseOffset} via explicit ID for "${name}"`);
-          // When using explicit IDs, map by ID not by line
-          for (const legIdx of legendIndices) {
-            const globalId = legendBaseOffset + legIdx;
-            const mapName = nameByExplicitId.get(globalId);
-            if (mapName) subchapterNames.set(legIdx, mapName);
-          }
-          console.log(`  Mapped ${subchapterNames.size}/${legendIndices.length} via explicit IDs`);
-          break;
-        }
-      }
-    }
-
-    // Map via line-based offset (if we didn't already map via explicit IDs)
-    if (legendBaseOffset >= 0 && subchapterNames.size === 0) {
-      for (const legIdx of legendIndices) {
-        const globalIdx = legendBaseOffset + legIdx;
-        if (globalIdx < nameByLine.length && nameByLine[globalIdx]) {
-          subchapterNames.set(legIdx, nameByLine[globalIdx]);
-        }
-      }
-      console.log(`  Mapped ${subchapterNames.size}/${legendIndices.length} legend subchapters via line offset ${legendBaseOffset}`);
-    }
-
-    // Log samples for verification
-    if (subchapterNames.size > 0) {
-      const samples = [0, 1, 2, 48, 49, 50, 97, 98, 99, legendIndices[legendIndices.length - 1]]
-        .filter((i) => subchapterNames.has(i));
-      for (const i of samples) {
-        console.log(`    [${i}] ${getSagaName(i)}: "${subchapterNames.get(i)}"`);
-      }
-    }
-
-    if (legendBaseOffset < 0) {
-      console.warn("  WARNING: Could not determine legend base offset in Map_Name.csv");
-      // Log nearby names for manual debugging
-      console.log("  Sample names for manual inspection:");
-      for (const idx of [0, 100, 200, 300, 400, 500, 600, 700]) {
-        if (nameByLine[idx]) console.log(`    line[${idx}]: "${nameByLine[idx]}"`);
-      }
+  if (stageCountMap.size > 0) {
+    // Use StageName_L_en.csv indices as the authority
+    const legendIndices = [...stageCountMap.keys()].sort((a, b) => a - b);
+    console.log(`  Using StageName indices: ${legendIndices.length} (${legendIndices[0]}–${legendIndices[legendIndices.length - 1]})`);
+    for (const legIdx of legendIndices) {
+      const globalIdx = legendBaseOffset + legIdx;
+      const name = allNames[globalIdx];
+      if (name) subchapters.push({ legendIdx: legIdx, name });
     }
   } else {
-    console.warn("  Map_Name.csv not found!");
-  }
+    // StageName parsing failed — use Map_Name.csv directly.
+    // Legend entries start at offset 0. We know SoL = 49 subchapters,
+    // UL ≈ 49 subchapters. We'll take entries until we hit a known
+    // non-legend name or reach a reasonable limit.
+    console.log("  StageName_L_en.csv had 0 entries — using Map_Name.csv directly");
 
-  // ── Fallback: use first stage name per subchapter from StageName_L_en.csv ──
-  if (subchapterNames.size === 0) {
-    console.log("  FALLBACK: Using first stage names as subchapter names");
-    for (const [subIdx, stageName] of firstStageName) {
-      subchapterNames.set(subIdx, stageName);
-    }
-    console.log(`  Fallback produced ${subchapterNames.size} names`);
-    // Log a few
-    for (const i of [0, 1, 49, 98]) {
-      if (subchapterNames.has(i)) {
-        console.log(`    [${i}] ${getSagaName(i)}: "${subchapterNames.get(i)}"`);
+    // Known non-legend stage names that mark the end of the legend block
+    const NON_LEGEND_MARKERS = new Set([
+      "Growing Yellow", "Growing Blue", "Growing Red", "Growing Purple",
+      "Growing Green", "Facing Danger", "Cat Ticket Chance!", "XP Stage",
+      "Merciless XP!", "XP Colosseum", "XP Megablitz!",
+    ]);
+
+    // Scan from offset until we hit a non-legend marker or run out
+    // But be careful: non-legend stages may be interspersed.
+    // Better approach: count MapStageDataL files for total legend count.
+    // From the logs we know there's only MapStageDataL_000.csv (1 file),
+    // which means the data is structured differently. Just use all entries
+    // up to the first clearly non-legend name.
+    let legendCount = 0;
+    for (let i = legendBaseOffset; i < allNames.length; i++) {
+      if (NON_LEGEND_MARKERS.has(allNames[i])) {
+        console.log(`  Found non-legend marker "${allNames[i]}" at line ${i} — legend block ends`);
+        break;
       }
+      legendCount++;
+    }
+
+    // Sanity check: should be at least 49 (SoL) but not more than ~200
+    if (legendCount > 200) {
+      console.warn(`  WARNING: Legend block seems too large (${legendCount}). Capping at 200.`);
+      legendCount = 200;
+    }
+
+    console.log(`  Using ${legendCount} entries from Map_Name.csv as legend subchapters`);
+    for (let i = 0; i < legendCount; i++) {
+      subchapters.push({ legendIdx: i, name: allNames[legendBaseOffset + i] });
     }
   }
 
-  // ── FINAL safety: if we still have no names, something is very wrong ──
-  if (subchapterNames.size === 0) {
-    console.error("  ERROR: Could not determine ANY legend subchapter names. Aborting legend sync.");
+  console.log(`  Total legend subchapters to sync: ${subchapters.length}`);
+  // Log samples
+  const sampleIdxs = [0, 1, 48, 49, 50, 97, 98, 99, subchapters.length - 1]
+    .filter((i) => i >= 0 && i < subchapters.length);
+  for (const i of sampleIdxs) {
+    const s = subchapters[i];
+    console.log(`    [${s.legendIdx}] ${getSagaName(s.legendIdx)}: "${s.name}"`);
+  }
+
+  // ── Safety check ──
+  if (subchapters.length === 0) {
+    console.error("  ERROR: Could not determine ANY legend subchapters. Aborting legend sync.");
     return;
   }
 
   // ── Get or create sagas ──────────────────────────────────────────────────
   const existingSagas = await (prisma as any).legendSaga.findMany({
     orderBy: { sortOrder: "asc" },
-    include: { subchapters: { orderBy: { sortOrder: "asc" } } },
   });
 
-  // Build saga name → ID map, create missing sagas
   const sagaIdMap = new Map<string, string>();
   for (const saga of existingSagas) {
     sagaIdMap.set(saga.displayName, saga.id);
   }
 
-  // Ensure all required sagas exist
   for (let i = 0; i < SAGA_RANGES.length; i++) {
     const range = SAGA_RANGES[i];
     if (!sagaIdMap.has(range.name)) {
@@ -759,80 +734,63 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     }
   }
 
-  // ── Upsert ONLY legend subchapters (identified by StageName_L_en.csv) ────
-  // Previously we ingested ALL 800+ entries from Map_Name.csv (events, collabs,
-  // etc.) — now we only process the actual legend subchapter indices.
+  // ── Upsert legend subchapters ────────────────────────────────────────────
   const validLegendNames = new Set<string>();
   let upsertedCount = 0;
 
-  for (const legIdx of legendIndices) {
-    const name = subchapterNames.get(legIdx);
-    if (!name) {
-      console.warn(`    No name found for legend subchapter index ${legIdx} — skipping`);
-      continue;
-    }
-
-    const sagaName = getSagaName(legIdx);
+  for (const sub of subchapters) {
+    const sagaName = getSagaName(sub.legendIdx);
     const sagaId = sagaIdMap.get(sagaName);
     if (!sagaId) continue;
 
-    const stageCount = stageCountMap.get(legIdx) ?? null;
-    validLegendNames.add(name);
+    const stageCount = stageCountMap.get(sub.legendIdx) ?? null;
+    validLegendNames.add(sub.name);
 
     try {
       await (prisma as any).legendSubchapter.upsert({
         where: {
-          sagaId_displayName: { sagaId, displayName: name },
+          sagaId_displayName: { sagaId, displayName: sub.name },
         },
         create: {
           sagaId,
-          displayName: name,
-          sortOrder: legIdx,
+          displayName: sub.name,
+          sortOrder: sub.legendIdx,
           stageCount,
         },
         update: {
-          sortOrder: legIdx,
+          sortOrder: sub.legendIdx,
           stageCount,
         },
       });
       upsertedCount++;
     } catch (e: any) {
-      console.warn(`    Failed to upsert "${name}" (saga ${sagaName}): ${e.message}`);
+      console.warn(`    Failed to upsert "${sub.name}" (saga ${sagaName}): ${e.message}`);
     }
   }
 
-  // Log saga distribution of upserted subchapters
+  // Log saga distribution
   const sagaDist: Record<string, number> = {};
-  for (const legIdx of legendIndices) {
-    if (subchapterNames.has(legIdx)) {
-      const saga = getSagaName(legIdx);
-      sagaDist[saga] = (sagaDist[saga] ?? 0) + 1;
-    }
+  for (const sub of subchapters) {
+    const saga = getSagaName(sub.legendIdx);
+    sagaDist[saga] = (sagaDist[saga] ?? 0) + 1;
   }
   console.log(`  Saga distribution: ${Object.entries(sagaDist).map(([k, v]) => `${k}=${v}`).join(", ")}`);
   console.log(`  ✓ Upserted ${upsertedCount} legend subchapters across ${SAGA_RANGES.length} sagas`);
 
-  // ── Clean up non-legend subchapters that were incorrectly added ─────────
-  // A previous buggy sync ingested ALL Map_Name.csv entries (800+ events,
-  // collabs, etc.) as legend subchapters. Remove any that aren't real legend
-  // subchapters to clean up the data.
-  //
-  // SAFETY: Only clean up if we successfully upserted a reasonable number of
-  // legend subchapters. If we upserted very few (or zero), something went
-  // wrong with name resolution and we should NOT delete existing data.
+  // ── Clean up non-legend subchapters from previous buggy syncs ──────────
+  // SAFETY: Only clean up if we upserted 50+ subchapters (SoL alone has 49)
   if (upsertedCount >= 50) {
     const allExisting = await (prisma as any).legendSubchapter.findMany({
       select: { id: true, displayName: true, sagaId: true },
     });
     const toDelete: string[] = [];
-    for (const sub of allExisting) {
-      if (!validLegendNames.has(sub.displayName)) {
-        toDelete.push(sub.id);
+    for (const existing of allExisting) {
+      if (!validLegendNames.has(existing.displayName)) {
+        toDelete.push(existing.id);
       }
     }
     if (toDelete.length > 0) {
-      console.log(`  🧹 Cleaning up ${toDelete.length} non-legend subchapters (keeping ${allExisting.length - toDelete.length})`);
-      // First delete any user progress referencing these subchapters
+      console.log(`  Cleaning up ${toDelete.length} non-legend subchapters (keeping ${allExisting.length - toDelete.length})`);
       await (prisma as any).userLegendProgress.deleteMany({
         where: { subchapterId: { in: toDelete } },
       });
@@ -843,7 +801,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   } else if (upsertedCount > 0) {
     console.warn(`  ⚠ Only upserted ${upsertedCount} subchapters — skipping cleanup to protect existing data`);
   } else {
-    console.warn("  ⚠ No subchapters upserted — name resolution may have failed. Skipping cleanup.");
+    console.warn("  ⚠ No subchapters upserted — skipping cleanup.");
   }
 }
 
