@@ -604,13 +604,20 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     const mapLines = mapContent.trim().split("\n").filter((l) => l.trim());
     console.log(`  Map_Name.csv: ${mapLines.length} total entries (all map types)`);
 
-    // Parse all names from Map_Name.csv (line number = global map ID)
+    // Parse all names from Map_Name.csv (line number = global map ID).
+    // Format is "index|name" — the first pipe-field is a numeric index,
+    // the actual subchapter name is the SECOND field.
     const allMapNames: string[] = [];
     for (const line of mapLines) {
-      // Format: either "name|..." or just "name" per line
-      const name = line.split("|")[0].trim();
+      const parts = line.split("|");
+      // Auto-detect: if first field is numeric, name is in the second field
+      const firstIsNum = !isNaN(parseInt(parts[0].trim(), 10));
+      const name = firstIsNum && parts.length > 1
+        ? parts.slice(1).join("|").trim()
+        : parts[0].trim();
       allMapNames.push(name);
     }
+    console.log(`  First 3 parsed names: ${allMapNames.slice(0, 3).map((n) => `"${n}"`).join(", ")}`);
 
     // ── Find the legend base offset ──────────────────────────────────────
     // Known first SoL subchapter names (try several — different game versions
@@ -795,24 +802,34 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   // A previous buggy sync ingested ALL Map_Name.csv entries (800+ events,
   // collabs, etc.) as legend subchapters. Remove any that aren't real legend
   // subchapters to clean up the data.
-  const allExisting = await (prisma as any).legendSubchapter.findMany({
-    select: { id: true, displayName: true, sagaId: true },
-  });
-  const toDelete: string[] = [];
-  for (const sub of allExisting) {
-    if (!validLegendNames.has(sub.displayName)) {
-      toDelete.push(sub.id);
+  //
+  // SAFETY: Only clean up if we successfully upserted a reasonable number of
+  // legend subchapters. If we upserted very few (or zero), something went
+  // wrong with name resolution and we should NOT delete existing data.
+  if (upsertedCount >= 50) {
+    const allExisting = await (prisma as any).legendSubchapter.findMany({
+      select: { id: true, displayName: true, sagaId: true },
+    });
+    const toDelete: string[] = [];
+    for (const sub of allExisting) {
+      if (!validLegendNames.has(sub.displayName)) {
+        toDelete.push(sub.id);
+      }
     }
-  }
-  if (toDelete.length > 0) {
-    // First delete any user progress referencing these subchapters
-    await (prisma as any).userLegendProgress.deleteMany({
-      where: { subchapterId: { in: toDelete } },
-    });
-    await (prisma as any).legendSubchapter.deleteMany({
-      where: { id: { in: toDelete } },
-    });
-    console.log(`  🧹 Cleaned up ${toDelete.length} non-legend subchapters from previous buggy sync`);
+    if (toDelete.length > 0) {
+      console.log(`  🧹 Cleaning up ${toDelete.length} non-legend subchapters (keeping ${allExisting.length - toDelete.length})`);
+      // First delete any user progress referencing these subchapters
+      await (prisma as any).userLegendProgress.deleteMany({
+        where: { subchapterId: { in: toDelete } },
+      });
+      await (prisma as any).legendSubchapter.deleteMany({
+        where: { id: { in: toDelete } },
+      });
+    }
+  } else if (upsertedCount > 0) {
+    console.warn(`  ⚠ Only upserted ${upsertedCount} subchapters — skipping cleanup to protect existing data`);
+  } else {
+    console.warn("  ⚠ No subchapters upserted — name resolution may have failed. Skipping cleanup.");
   }
 }
 
