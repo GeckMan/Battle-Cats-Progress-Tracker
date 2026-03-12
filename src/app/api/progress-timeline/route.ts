@@ -146,11 +146,31 @@ export async function GET(req: NextRequest) {
     if (!vals || vals.length === 0) continue;
     const activityTotal = vals[vals.length - 1];
     const realTotal = realCounts[cat];
+    const maxTotals: Record<string, number> = {
+      units: totalUnits, medals: totalMedals, milestones: totalMilestones,
+      story: totalStory, legend: totalLegend,
+    };
+    const maxTotal = maxTotals[cat] ?? Infinity;
+
     if (realTotal > activityTotal) {
+      // Activity log undershot the real count — shift entire series up
       const deficit = realTotal - activityTotal;
       for (let i = 0; i < vals.length; i++) {
         vals[i] += deficit;
       }
+    } else if (activityTotal > realTotal) {
+      // Activity log overshot the real count (e.g. story logs multiple events
+      // per chapter for cleared + treasures + zombies). Scale the series down
+      // so the final value matches the real DB count.
+      const scale = activityTotal > 0 ? realTotal / activityTotal : 1;
+      for (let i = 0; i < vals.length; i++) {
+        vals[i] = Math.round(vals[i] * scale);
+      }
+    }
+
+    // Clamp all values to the max possible total (can't exceed 100%)
+    for (let i = 0; i < vals.length; i++) {
+      if (vals[i] > maxTotal) vals[i] = maxTotal;
     }
   }
 
