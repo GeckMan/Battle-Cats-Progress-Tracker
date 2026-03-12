@@ -517,61 +517,68 @@ function parseFormCountMap(dataLocal: string): Map<number, number> {
 // ── Legend Stage Sync ────────────────────────────────────────────────────────
 //
 // Map_Name.csv has names for ALL map types (1200+ entries): SoL, UL, ZL,
-// daily stages, events, collabs, etc. The three legend sagas occupy
-// non-contiguous blocks. We find each saga by searching for its known
-// first subchapter name, then scan forward to determine the count.
+// daily stages, events, collabs, etc.
+//
+// CRITICAL: UL and ZL entries are INTERLEAVED in Map_Name.csv (they were
+// added simultaneously in alternating game updates). We CANNOT use contiguous
+// index ranges for UL or ZL.
 //
 // Strategy:
-//   1. Search Map_Name.csv for known first subchapter of each saga
-//   2. Verify by checking the second subchapter name matches
-//   3. Determine count via known-last-name search + forward scanning
-//   4. Upsert to DB, clean up stale entries
+//   - SoL: indices 0-48 (contiguous, confirmed, fixed at 49)
+//   - ZL:  hardcoded known names, searched individually by name
+//          (grows with game updates — forward scan picks up new ones)
+//   - UL:  found by ELIMINATION — from "Exile's Resort" onward, collect
+//          names that aren't SoL, aren't ZL, and aren't non-legend,
+//          capped at exactly 49
 
-interface SagaSearchConfig {
-  name: string;
-  /** Possible first subchapter names (searched in order) */
-  firstNames: string[];
-  /** Expected name at index start+1 (for verification) */
-  secondName: string;
-  /** Exact count if this saga is complete and will never change */
-  fixedCount?: number;
-  /** Known recent last subchapter names (searched in order, latest first).
-   *  Used only when fixedCount is not set. */
-  knownLastNames: string[];
-  /** Hard cap on subchapter count (for dynamic sagas) */
-  maxCount: number;
-}
+// ── SoL: 49 subchapters, indices 0-48, fixed forever ─────────────────────
+const SOL_EXPECTED_FIRST = "The Legend Begins";
+const SOL_EXPECTED_LAST = "Laboratory of Relics";
+const SOL_COUNT = 49;
 
-const SAGA_SEARCH: SagaSearchConfig[] = [
-  {
-    name: "Stories of Legend",
-    firstNames: ["The Legend Begins"],
-    secondName: "Passion Land",
-    fixedCount: 49, // Complete — will not change
-    knownLastNames: ["Laboratory of Relics"],
-    maxCount: 49,
-  },
-  {
-    name: "Uncanny Legends",
-    firstNames: ["Exile's Resort"],
-    secondName: "Heaven's Back Alley",
-    fixedCount: 49, // Complete — will not change
-    knownLastNames: ["Sacred Forest"],
-    maxCount: 49,
-  },
-  {
-    name: "Zero Legends",
-    firstNames: ["Zero Field"],
-    secondName: "The Edge of Spacetime",
-    // Dynamic — PONOS adds new subchapters over time.
-    // knownLastNames searched in order; first match wins.
-    knownLastNames: [
-      "Muscle Empire", "Phantasmagoria", "Vainglorious Venture",
-      "Booklet Islands", "Forgotten Republic", "Sleeping Chasm",
-    ],
-    maxCount: 60,
-  },
+// ── UL: 49 subchapters, fixed forever ─────────────────────────────────────
+// UL entries are INTERLEAVED with ZL in Map_Name.csv (indices 908+).
+// We find UL by elimination: everything from "Exile's Resort" onward that
+// is NOT SoL, NOT ZL, and NOT a non-legend name, capped at 49.
+const UL_FIRST_NAME = "Exile's Resort";
+const UL_COUNT = 49;
+
+// ── ZL: dynamic, grows with game updates ──────────────────────────────────
+// These are in correct sort order. New subchapters are added at the end.
+const ZL_KNOWN_NAMES: string[] = [
+  "Zero Field",
+  "The Edge of Spacetime",
+  "Cats Cradle Basin",
+  "The Ururuvu Journals",
+  "New World Ehen",
+  "Cats of a Common Sea",
+  "Truth in Extremes",
+  "Demon of Deciliter Bay",
+  "Garden of Wilted Thoughts",
+  "Stratospheric Pathway",
+  "Konjac Valley",
+  "Candy Paradise",
+  "Secluded Cavy Island",
+  "Resort De La Cospa",
+  "Restricted Area",
+  "Cruise Ship Panic",
+  "En Garde Shrine",
+  "Forest Playground",
+  "Newtown Trench",
+  "Truth's Devouring Maw",
+  "A Journey of Moments",
+  "Patisserie Parklands",
+  "Reverse Royal Grave",
+  "Sleeping Chasm",
+  "Forgotten Republic",
+  "Booklet Islands",
+  "Vainglorious Venture",
+  "Phantasmagoria",
+  "Muscle Empire",
 ];
+
+// Max ZL subchapters before we stop scanning for new ones
+const ZL_MAX = 60;
 
 async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLocal: string) {
   // ── Step 1: Parse Map_Name.csv ─────────────────────────────────────────
@@ -584,7 +591,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   const mapContent = readFileSync(mapNamePath, "utf-8");
   const mapLines = mapContent.trim().split("\n").filter((l) => l.trim());
 
-  // Parse names — format is "id|name" (id is numeric first field)
+  // Parse names — format is "id|name" (pipe-delimited, numeric ID first)
   const allNames: string[] = [];
   for (const line of mapLines) {
     const p = line.split("|");
@@ -597,163 +604,187 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   }
   console.log(`  Map_Name.csv: ${allNames.length} names`);
 
-  // ── Step 2: Find each saga's block in Map_Name.csv ─────────────────────
-  interface SagaBlock {
-    name: string;
-    startIdx: number;
-    count: number;
-  }
-
-  const foundBlocks: SagaBlock[] = [];
-
-  // Collect all saga start indices first (needed for stop conditions)
-  const sagaStartIndices = new Map<string, number>();
-  for (const cfg of SAGA_SEARCH) {
-    for (const firstName of cfg.firstNames) {
-      const idx = allNames.indexOf(firstName);
-      if (idx >= 0) {
-        sagaStartIndices.set(cfg.name, idx);
-        break;
-      }
+  // Build a lookup: name → index (first occurrence)
+  const nameToIdx = new Map<string, number>();
+  for (let i = 0; i < allNames.length; i++) {
+    if (!nameToIdx.has(allNames[i])) {
+      nameToIdx.set(allNames[i], i);
     }
   }
 
-  for (const cfg of SAGA_SEARCH) {
-    const startIdx = sagaStartIndices.get(cfg.name);
-    if (startIdx === undefined || startIdx < 0) {
-      console.error(`  ERROR: Could not find ${cfg.name} in Map_Name.csv`);
-      console.log(`    Searched for: ${cfg.firstNames.join(", ")}`);
-      continue;
+  // ── Step 2: Build subchapter lists per saga ────────────────────────────
+  type SubEntry = { sortOrder: number; name: string; sagaName: string };
+  const subchapters: SubEntry[] = [];
+  const sagaNames: string[] = [];
+
+  // Non-legend stage names that appear interleaved in Map_Name.csv
+  const NON_LEGEND_PATTERNS = [
+    "Growing", "XP ", "Merciless XP", "Cat Ticket Chance",
+    "Facing Danger", "Siege of Hippoe", "Clionel Ascendant",
+    "Otherworld Colosseum", "Catclaw Championships",
+    "Catamin", "Gauntlet", "Baron Seal",
+  ];
+
+  function isNonLegendName(nm: string): boolean {
+    for (const pat of NON_LEGEND_PATTERNS) {
+      if (nm.startsWith(pat) || nm.includes(pat)) return true;
     }
+    // Event/collab patterns
+    if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
+        nm.includes("(Merciless)") || nm.includes("(Insane)")) return true;
+    if (nm.endsWith("Ranking") || nm.startsWith("Ranking")) return true;
+    if (nm.includes(" VS ")) return true;
+    // "Rank N" patterns (Catclaw Championships Rank 1-9)
+    if (/Rank \d+/.test(nm)) return true;
+    return false;
+  }
 
-    console.log(`  ${cfg.name}: found "${allNames[startIdx]}" at index ${startIdx}`);
+  // --- Stories of Legend: contiguous block at indices 0..48 ---
+  const solFirst = allNames[0];
+  const solLast = allNames[SOL_COUNT - 1];
+  console.log(`  Stories of Legend: expecting indices 0-${SOL_COUNT - 1}`);
+  console.log(`    first: "${solFirst}" (expected "${SOL_EXPECTED_FIRST}") ${solFirst === SOL_EXPECTED_FIRST ? "✓" : "⚠ MISMATCH"}`);
+  console.log(`    last:  "${solLast}" (expected "${SOL_EXPECTED_LAST}") ${solLast === SOL_EXPECTED_LAST ? "✓" : "⚠ MISMATCH"}`);
 
-    // Verify second subchapter
-    const actualSecond = allNames[startIdx + 1];
-    if (actualSecond !== cfg.secondName) {
-      console.warn(`    WARNING: expected [1]="${cfg.secondName}", got "${actualSecond}"`);
+  const solNameSet = new Set<string>();
+  if (solFirst === SOL_EXPECTED_FIRST) {
+    sagaNames.push("Stories of Legend");
+    for (let i = 0; i < SOL_COUNT; i++) {
+      const name = allNames[i];
+      if (name) {
+        subchapters.push({ sortOrder: i, name, sagaName: "Stories of Legend" });
+        solNameSet.add(name);
+      }
+    }
+    console.log(`    Added ${SOL_COUNT} SoL subchapters`);
+  } else {
+    console.error("  ERROR: Stories of Legend not found at expected position — skipping SoL");
+  }
+
+  // --- Zero Legends: known names + forward scanning for new ones ---
+  // ZL must be identified BEFORE UL, because UL uses elimination (everything
+  // that's not SoL, not ZL, not non-legend).
+  console.log(`  Zero Legends: searching for ${ZL_KNOWN_NAMES.length} known names`);
+  let zlFound = 0;
+  let zlMissing: string[] = [];
+  const zlNameSet = new Set<string>(ZL_KNOWN_NAMES);
+
+  for (let i = 0; i < ZL_KNOWN_NAMES.length; i++) {
+    const name = ZL_KNOWN_NAMES[i];
+    if (nameToIdx.has(name)) {
+      subchapters.push({ sortOrder: i, name, sagaName: "Zero Legends" });
+      zlFound++;
     } else {
-      console.log(`    Verified: [1]="${actualSecond}" ✓`);
+      zlMissing.push(name);
+    }
+  }
+  console.log(`    Found ${zlFound}/${ZL_KNOWN_NAMES.length} in Map_Name.csv`);
+  if (zlMissing.length > 0) {
+    console.warn(`    Missing ${zlMissing.length} ZL names: ${zlMissing.join(", ")}`);
+  }
+
+  // Forward scan for NEW ZL subchapters added after our known list.
+  // Find the last known ZL name's index, scan forward, collect unknowns.
+  let lastKnownZlIdx = -1;
+  for (const name of ZL_KNOWN_NAMES) {
+    const idx = nameToIdx.get(name);
+    if (idx !== undefined && idx > lastKnownZlIdx) {
+      lastKnownZlIdx = idx;
+    }
+  }
+
+  // We'll also collect new ZL names into a set so UL elimination skips them.
+  // But we can't know if a new unknown name is ZL vs UL yet — we'll handle
+  // this by doing UL elimination FIRST (from Exile's Resort, cap at 49),
+  // then treating remaining unknowns as potential new ZL.
+  // Actually: since UL is capped at exactly 49 and is complete, any unknown
+  // name in the post-SoL region that's not non-legend must be ZL (once we
+  // have our 49 UL).
+
+  if (zlFound > 0) sagaNames.push("Zero Legends");
+
+  // --- Uncanny Legends: found by ELIMINATION ---
+  // Scan from "Exile's Resort" forward through Map_Name.csv. Collect names
+  // that are NOT in SoL (0-48), NOT in ZL, and NOT non-legend. Cap at 49.
+  const ulStartIdx = nameToIdx.get(UL_FIRST_NAME);
+  const ulCollected: { name: string; mapIdx: number }[] = [];
+
+  if (ulStartIdx !== undefined) {
+    console.log(`  Uncanny Legends: found "${UL_FIRST_NAME}" at index ${ulStartIdx}`);
+    console.log(`    Scanning forward, collecting by elimination (not SoL, not ZL, not non-legend)...`);
+
+    for (let i = ulStartIdx; i < allNames.length && ulCollected.length < UL_COUNT; i++) {
+      const nm = allNames[i];
+      if (!nm) continue;
+
+      // Skip SoL names (shouldn't appear here, but be safe)
+      if (solNameSet.has(nm)) continue;
+
+      // Skip known ZL names
+      if (zlNameSet.has(nm)) continue;
+
+      // Skip non-legend names
+      if (isNonLegendName(nm)) continue;
+
+      ulCollected.push({ name: nm, mapIdx: i });
     }
 
-    // Determine count
-    let count = -1;
-
-    if (cfg.fixedCount) {
-      // Saga has a known fixed count (complete, will not change)
-      count = cfg.fixedCount;
-      console.log(`    Using fixed count: ${count}`);
-      // Verify the last entry matches known last name
-      const lastEntry = allNames[startIdx + count - 1];
-      if (cfg.knownLastNames.length > 0 && lastEntry !== cfg.knownLastNames[0]) {
-        console.warn(`    WARNING: expected last="${cfg.knownLastNames[0]}", got "${lastEntry}"`);
-      } else {
-        console.log(`    Verified last: "${lastEntry}" ✓`);
-      }
+    console.log(`    Collected ${ulCollected.length} UL subchapters by elimination`);
+    if (ulCollected.length === UL_COUNT) {
+      console.log(`    ✓ Got exactly ${UL_COUNT} as expected`);
     } else {
-      // Dynamic saga — find count via known last names + forward scanning
-      for (const lastName of cfg.knownLastNames) {
-        const lastIdx = allNames.indexOf(lastName, startIdx);
-        if (lastIdx >= startIdx && lastIdx - startIdx < cfg.maxCount) {
-          count = lastIdx - startIdx + 1;
-          console.log(`    Found last-name "${lastName}" at index ${lastIdx} → count=${count}`);
-
-          // Extend past the known last name to pick up any newer subchapters
-          let extended = count;
-          while (extended < cfg.maxCount && startIdx + extended < allNames.length) {
-            const nextIdx = startIdx + extended;
-
-            // Stop if we've hit another saga's start
-            let hitAnotherSaga = false;
-            for (const [otherSaga, otherStart] of sagaStartIndices) {
-              if (otherSaga !== cfg.name && nextIdx === otherStart) {
-                hitAnotherSaga = true;
-                break;
-              }
-            }
-            if (hitAnotherSaga) break;
-
-            // Stop if the name looks like an event/collab stage
-            const nm = allNames[nextIdx];
-            if (!nm) break;
-            if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
-                nm.includes("(Merciless)") || nm.includes("(Insane)")) break;
-            if (nm.endsWith("Ranking") || nm.startsWith("Ranking")) break;
-            if (nm.includes(" VS ")) break;
-
-            extended++;
-          }
-
-          if (extended > count) {
-            console.log(`    Extended from ${count} to ${extended} (found ${extended - count} newer subchapters)`);
-            count = extended;
-          }
-          break;
-        }
-      }
-
-      // If no known last name found, fall back to scanning
-      if (count < 0) {
-        console.warn(`    No known last-name found, scanning forward...`);
-        count = 0;
-        while (count < cfg.maxCount && startIdx + count < allNames.length) {
-          const nextIdx = startIdx + count;
-
-          let hitAnotherSaga = false;
-          for (const [otherSaga, otherStart] of sagaStartIndices) {
-            if (otherSaga !== cfg.name && nextIdx === otherStart) {
-              hitAnotherSaga = true;
-              break;
-            }
-          }
-          if (hitAnotherSaga) break;
-
-          const nm = allNames[nextIdx];
-          if (!nm) break;
-          if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
-              nm.includes("(Merciless)") || nm.includes("(Insane)")) break;
-
-          count++;
-        }
-        console.log(`    Scan found ${count} entries`);
-      }
-    }
-
-    if (count <= 0) {
-      console.error(`    ERROR: ${cfg.name} has 0 entries — skipping`);
-      continue;
+      console.warn(`    ⚠ Expected ${UL_COUNT}, got ${ulCollected.length}`);
     }
 
     // Log first and last
-    console.log(`    ${cfg.name}: ${count} subchapters`);
-    console.log(`      first: "${allNames[startIdx]}"`);
-    console.log(`      last:  "${allNames[startIdx + count - 1]}"`);
+    if (ulCollected.length > 0) {
+      console.log(`    first: "${ulCollected[0].name}" (idx=${ulCollected[0].mapIdx})`);
+      console.log(`    last:  "${ulCollected[ulCollected.length - 1].name}" (idx=${ulCollected[ulCollected.length - 1].mapIdx})`);
+    }
 
-    foundBlocks.push({ name: cfg.name, startIdx, count });
-  }
+    // Add UL subchapters with sortOrder based on collection order
+    const ulNameSet = new Set<string>();
+    for (let i = 0; i < ulCollected.length; i++) {
+      subchapters.push({ sortOrder: i, name: ulCollected[i].name, sagaName: "Uncanny Legends" });
+      ulNameSet.add(ulCollected[i].name);
+    }
 
-  if (foundBlocks.length === 0) {
-    console.error("  ERROR: Could not identify any legend sagas. Aborting.");
-    return;
-  }
+    if (ulCollected.length > 0) sagaNames.push("Uncanny Legends");
 
-  // ── Step 3: Build subchapter list ──────────────────────────────────────
-  type SubEntry = { sortOrder: number; name: string; sagaName: string };
-  const subchapters: SubEntry[] = [];
+    // Now scan for NEW ZL subchapters beyond the known list.
+    // These are names after the last known ZL index that aren't UL, not SoL, not non-legend.
+    if (lastKnownZlIdx >= 0) {
+      let newZlCount = 0;
+      for (let i = lastKnownZlIdx + 1; i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
+        const nm = allNames[i];
+        if (!nm) continue;
+        if (solNameSet.has(nm)) continue;
+        if (zlNameSet.has(nm)) continue;
+        if (ulNameSet.has(nm)) continue;
+        if (isNonLegendName(nm)) continue;
 
-  for (const block of foundBlocks) {
-    for (let i = 0; i < block.count; i++) {
-      const name = allNames[block.startIdx + i];
-      if (name) {
-        subchapters.push({ sortOrder: i, name, sagaName: block.name });
+        const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
+        subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends" });
+        zlNameSet.add(nm);
+        newZlCount++;
+        console.log(`    NEW ZL subchapter: "${nm}" (sortOrder=${sortOrder})`);
+      }
+      if (newZlCount > 0) {
+        console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
       }
     }
+  } else {
+    console.error(`  ERROR: Could not find UL start "${UL_FIRST_NAME}" in Map_Name.csv`);
   }
 
+  // ── Step 3: Summary ────────────────────────────────────────────────────
+  const sagaDist: Record<string, number> = {};
+  for (const sub of subchapters) {
+    sagaDist[sub.sagaName] = (sagaDist[sub.sagaName] ?? 0) + 1;
+  }
   console.log(`  Total legend subchapters: ${subchapters.length}`);
-  for (const block of foundBlocks) {
-    const count = subchapters.filter((s) => s.sagaName === block.name).length;
-    console.log(`    ${block.name}: ${count} subchapters`);
+  for (const [saga, count] of Object.entries(sagaDist)) {
+    console.log(`    ${saga}: ${count}`);
   }
 
   if (subchapters.length === 0) {
@@ -770,26 +801,26 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   for (const s of existingSagas) sagaIdMap.set(s.displayName, s.id);
 
   const SAGA_ORDER = ["Stories of Legend", "Uncanny Legends", "Zero Legends"];
-  for (let i = 0; i < foundBlocks.length; i++) {
-    const block = foundBlocks[i];
-    if (!sagaIdMap.has(block.name)) {
-      const sortOrder = SAGA_ORDER.indexOf(block.name) + 1 || i + 1;
+  for (const sagaName of sagaNames) {
+    if (!sagaIdMap.has(sagaName)) {
+      const sortOrder = SAGA_ORDER.indexOf(sagaName) + 1 || sagaNames.indexOf(sagaName) + 1;
       const created = await (prisma as any).legendSaga.create({
-        data: { displayName: block.name, sortOrder },
+        data: { displayName: sagaName, sortOrder },
       });
-      sagaIdMap.set(block.name, created.id);
-      console.log(`  Created saga: "${block.name}"`);
+      sagaIdMap.set(sagaName, created.id);
+      console.log(`  Created saga: "${sagaName}"`);
     }
   }
 
   // ── Step 5: Upsert subchapters ─────────────────────────────────────────
-  const validNames = new Set<string>();
+  // Track valid (sagaId, displayName) pairs for saga-aware cleanup
+  const validPairs = new Set<string>();
   let upsertedCount = 0;
 
   for (const sub of subchapters) {
     const sagaId = sagaIdMap.get(sub.sagaName);
     if (!sagaId) continue;
-    validNames.add(sub.name);
+    validPairs.add(`${sagaId}::${sub.name}`);
 
     try {
       await (prisma as any).legendSubchapter.upsert({
@@ -803,24 +834,20 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     }
   }
 
-  // Log distribution
-  const sagaDist: Record<string, number> = {};
-  for (const sub of subchapters) {
-    sagaDist[sub.sagaName] = (sagaDist[sub.sagaName] ?? 0) + 1;
-  }
-  console.log(`  Saga distribution: ${Object.entries(sagaDist).map(([k, v]) => `${k}=${v}`).join(", ")}`);
   console.log(`  ✓ Upserted ${upsertedCount} legend subchapters`);
 
-  // ── Step 6: Clean up stale subchapters ─────────────────────────────────
-  // SAFETY: Only clean up if we upserted 50+ (SoL alone has 49)
+  // ── Step 6: Saga-aware cleanup of stale subchapters ────────────────────
+  // SAFETY: Only clean up if we upserted enough (SoL alone has 49)
   if (upsertedCount >= 50) {
     const allExisting = await (prisma as any).legendSubchapter.findMany({
       select: { id: true, displayName: true, sagaId: true },
     });
     const toDelete: string[] = [];
     for (const existing of allExisting) {
-      if (!validNames.has(existing.displayName)) {
+      const key = `${existing.sagaId}::${existing.displayName}`;
+      if (!validPairs.has(key)) {
         toDelete.push(existing.id);
+        console.log(`    Stale: "${existing.displayName}" (saga=${existing.sagaId})`);
       }
     }
     if (toDelete.length > 0) {
@@ -831,6 +858,8 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       await (prisma as any).legendSubchapter.deleteMany({
         where: { id: { in: toDelete } },
       });
+    } else {
+      console.log("  No stale subchapters to clean up");
     }
   } else if (upsertedCount > 0) {
     console.warn(`  Only upserted ${upsertedCount} subchapters — skipping cleanup to protect existing data`);
