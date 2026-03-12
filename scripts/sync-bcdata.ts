@@ -807,44 +807,61 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   if (zlFound > 0) sagaNames.push("Zero Legends");
 
   // Forward scan for NEW ZL subchapters added after our known list.
-  // Find the highest Map_Name.csv index among known UL and ZL names to
-  // determine the boundary of the interleaved UL/ZL region.
+  // ZL grows with game updates — PONOS adds new subchapters over time.
+  // Since UL is fully hardcoded (all 49 names), we can safely identify
+  // new entries by elimination: anything after the last known ZL entry
+  // that's NOT SoL, NOT UL, and NOT a non-legend stage must be new ZL.
+  //
+  // We scan from the last known ZL index all the way to the end of
+  // Map_Name.csv (not just a small buffer). With UL hardcoded, false
+  // positives can only come from non-legend names slipping through
+  // the filter, and we cap at ZL_MAX to be safe.
   let lastKnownZlIdx = -1;
-  for (const name of ZL_KNOWN_NAMES) {
+  for (const name of [...ZL_KNOWN_NAMES]) {
+    // Check both the hardcoded name and any fuzzy-matched actual name
     const idx = nameToIdx.get(name);
     if (idx !== undefined && idx > lastKnownZlIdx) {
       lastKnownZlIdx = idx;
+    }
   }
-  }
-
-  let lastKnownUlIdx = -1;
-  for (const name of UL_NAMES) {
+  // Also check actual names in zlNameSet (in case of fuzzy matches)
+  for (const name of zlNameSet) {
     const idx = nameToIdx.get(name);
-    if (idx !== undefined && idx > lastKnownUlIdx) {
-      lastKnownUlIdx = idx;
+    if (idx !== undefined && idx > lastKnownZlIdx) {
+      lastKnownZlIdx = idx;
     }
   }
 
   if (lastKnownZlIdx >= 0) {
-    // Only scan within the UL/ZL interleaved region + small buffer.
-    const scanLimit = Math.max(lastKnownZlIdx, lastKnownUlIdx) + 20;
-    console.log(`    Scanning for new ZL entries between idx ${lastKnownZlIdx + 1} and ${scanLimit}`);
+    // Scan from after last known ZL entry to end of Map_Name.csv.
+    // New ZL entries could be far past the current UL/ZL region if many
+    // non-legend entries were added in between.
+    console.log(`    Scanning for new ZL entries from idx ${lastKnownZlIdx + 1} to end of Map_Name.csv (${allNames.length - 1})`);
 
     let newZlCount = 0;
-    for (let i = lastKnownZlIdx + 1; i <= scanLimit && i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
-      const nm = allNames[i];
-      if (!nm) continue;
-      if (solNameSet.has(nm)) continue;
-      if (zlNameSet.has(nm)) continue;
-      if (ulNameSet.has(nm)) continue;
-      if (isNonLegendName(nm)) continue;
+    // Track consecutive non-legend entries to detect when we've left
+    // the legend region entirely (avoid scanning thousands of irrelevant entries)
+    let consecutiveSkips = 0;
+    const MAX_CONSECUTIVE_SKIPS = 100; // stop after 100 consecutive non-legend names
 
+    for (let i = lastKnownZlIdx + 1; i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
+      const nm = allNames[i];
+      if (!nm) { consecutiveSkips++; continue; }
+      if (solNameSet.has(nm)) { consecutiveSkips++; continue; }
+      if (zlNameSet.has(nm)) { consecutiveSkips = 0; continue; } // known ZL resets counter
+      if (ulNameSet.has(nm)) { consecutiveSkips = 0; continue; } // known UL resets counter
+      if (isNonLegendName(nm)) { consecutiveSkips++; continue; }
+
+      // Found a name that's not SoL, not UL, not ZL, not non-legend.
+      // This is likely a new ZL subchapter!
       const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
       subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends" });
       zlNameSet.add(nm);
       newZlCount++;
-      console.log(`    NEW ZL subchapter: "${nm}" (sortOrder=${sortOrder})`);
+      consecutiveSkips = 0;
+      console.log(`    NEW ZL subchapter: "${nm}" at idx ${i} (sortOrder=${sortOrder})`);
     }
+
     if (newZlCount > 0) {
       console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
     } else {
