@@ -525,11 +525,9 @@ function parseFormCountMap(dataLocal: string): Map<number, number> {
 //
 // Strategy:
 //   - SoL: indices 0-48 (contiguous, confirmed, fixed at 49)
+//   - UL:  all 49 names hardcoded, searched individually by name (fixed forever)
 //   - ZL:  hardcoded known names, searched individually by name
 //          (grows with game updates — forward scan picks up new ones)
-//   - UL:  found by ELIMINATION — from "Exile's Resort" onward, collect
-//          names that aren't SoL, aren't ZL, and aren't non-legend,
-//          capped at exactly 49
 
 // ── SoL: 49 subchapters, indices 0-48, fixed forever ─────────────────────
 const SOL_EXPECTED_FIRST = "The Legend Begins";
@@ -537,11 +535,60 @@ const SOL_EXPECTED_LAST = "Laboratory of Relics";
 const SOL_COUNT = 49;
 
 // ── UL: 49 subchapters, fixed forever ─────────────────────────────────────
-// UL entries are INTERLEAVED with ZL in Map_Name.csv (indices 908+).
-// We find UL by elimination: everything from "Exile's Resort" onward that
-// is NOT SoL, NOT ZL, and NOT a non-legend name, capped at 49.
-const UL_FIRST_NAME = "Exile's Resort";
-const UL_COUNT = 49;
+// UL entries are scattered across Map_Name.csv (the first 13 subchapters
+// are at early indices, the rest are interleaved with ZL at indices 908+).
+// All 49 names are hardcoded and searched individually.
+const UL_NAMES: string[] = [
+  "A New Legend",
+  "Here Be Dragons",
+  "The Endless Wood",
+  "Primeval Currents",
+  "Barking Bay",
+  "Abyss Gazers",
+  "Neo-Necropolis",
+  "Law of the Wildlands",
+  "Pararila Peninsula",
+  "Coup de Chat",
+  "Cherry Isles",
+  "Depths of My Heart",
+  "Ghost Sea",
+  "Exile's Resort",
+  "Roads of Torment",
+  "Heaven's Back Alley",
+  "Battle in the Bath",
+  "Ancient Mountains",
+  "Marine Ministry",
+  "The Devils' Academy",
+  "The Gelatin Mines",
+  "Drunken Foundry",
+  "Unearthed Artifacts",
+  "Realm of Whyworry",
+  "Pumping Titanium",
+  "Morningstar Isle",
+  "In the Sleeping Forest",
+  "Laboratory Island",
+  "Forgotten Graves",
+  "Dawn of the Beginning",
+  "The Happy Lucky Temple",
+  "Theatre of Fear",
+  "Diver's City",
+  "Nasi-Go-Round",
+  "DNA Plantation",
+  "Ancient Forest Labyrinth",
+  "Castle of the Sentinels",
+  "Spacetime Distortion",
+  "Imminent Disaster",
+  "Bikura, Harbor of Evil",
+  "Dead Heat Land",
+  "Rose-Colored Road",
+  "Behemoth's Peak",
+  "Moodist Beach",
+  "Cat-Chasing Village",
+  "Bazaar of the Pirate King",
+  "Between Truth and Lies",
+  "Humanity Catified",
+  "Sacred Forest",
+];
 
 // ── ZL: dynamic, grows with game updates ──────────────────────────────────
 // These are in correct sort order. New subchapters are added at the end.
@@ -706,12 +753,36 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     console.error("  ERROR: Stories of Legend not found at expected position — skipping SoL");
   }
 
+  // --- Uncanny Legends: 49 hardcoded names, searched individually ---
+  console.log(`  Uncanny Legends: searching for ${UL_NAMES.length} known names`);
+  let ulFound = 0;
+  const ulMissing: string[] = [];
+  const ulNameSet = new Set<string>();
+
+  for (let i = 0; i < UL_NAMES.length; i++) {
+    const target = UL_NAMES[i];
+    const found = fuzzyFindName(target, allNames);
+    if (found) {
+      subchapters.push({ sortOrder: i, name: found, sagaName: "Uncanny Legends" });
+      ulNameSet.add(found);
+      if (found !== target) {
+        console.log(`    Fuzzy match: "${target}" → "${found}"`);
+      }
+      ulFound++;
+    } else {
+      ulMissing.push(target);
+    }
+  }
+  if (ulFound > 0) sagaNames.push("Uncanny Legends");
+  console.log(`    Found ${ulFound}/${UL_NAMES.length} in Map_Name.csv`);
+  if (ulMissing.length > 0) {
+    console.warn(`    Missing ${ulMissing.length} UL names: ${ulMissing.join(", ")}`);
+  }
+
   // --- Zero Legends: known names + forward scanning for new ones ---
-  // ZL must be identified BEFORE UL, because UL uses elimination (everything
-  // that's not SoL, not ZL, not non-legend).
   console.log(`  Zero Legends: searching for ${ZL_KNOWN_NAMES.length} known names`);
   let zlFound = 0;
-  let zlMissing: string[] = [];
+  const zlMissing: string[] = [];
   const zlNameSet = new Set<string>(ZL_KNOWN_NAMES);
 
   for (let i = 0; i < ZL_KNOWN_NAMES.length; i++) {
@@ -733,108 +804,52 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     console.warn(`    Missing ${zlMissing.length} ZL names: ${zlMissing.join(", ")}`);
   }
 
+  if (zlFound > 0) sagaNames.push("Zero Legends");
+
   // Forward scan for NEW ZL subchapters added after our known list.
-  // Find the last known ZL name's index, scan forward, collect unknowns.
+  // Find the highest Map_Name.csv index among known UL and ZL names to
+  // determine the boundary of the interleaved UL/ZL region.
   let lastKnownZlIdx = -1;
   for (const name of ZL_KNOWN_NAMES) {
     const idx = nameToIdx.get(name);
     if (idx !== undefined && idx > lastKnownZlIdx) {
       lastKnownZlIdx = idx;
+  }
+  }
+
+  let lastKnownUlIdx = -1;
+  for (const name of UL_NAMES) {
+    const idx = nameToIdx.get(name);
+    if (idx !== undefined && idx > lastKnownUlIdx) {
+      lastKnownUlIdx = idx;
     }
   }
 
-  // We'll also collect new ZL names into a set so UL elimination skips them.
-  // But we can't know if a new unknown name is ZL vs UL yet — we'll handle
-  // this by doing UL elimination FIRST (from Exile's Resort, cap at 49),
-  // then treating remaining unknowns as potential new ZL.
-  // Actually: since UL is capped at exactly 49 and is complete, any unknown
-  // name in the post-SoL region that's not non-legend must be ZL (once we
-  // have our 49 UL).
+  if (lastKnownZlIdx >= 0) {
+    // Only scan within the UL/ZL interleaved region + small buffer.
+    const scanLimit = Math.max(lastKnownZlIdx, lastKnownUlIdx) + 20;
+    console.log(`    Scanning for new ZL entries between idx ${lastKnownZlIdx + 1} and ${scanLimit}`);
 
-  if (zlFound > 0) sagaNames.push("Zero Legends");
-
-  // --- Uncanny Legends: found by ELIMINATION ---
-  // Scan from "Exile's Resort" forward through Map_Name.csv. Collect names
-  // that are NOT in SoL (0-48), NOT in ZL, and NOT non-legend. Cap at 49.
-  const ulStartIdx = nameToIdx.get(UL_FIRST_NAME);
-  const ulCollected: { name: string; mapIdx: number }[] = [];
-
-  if (ulStartIdx !== undefined) {
-    console.log(`  Uncanny Legends: found "${UL_FIRST_NAME}" at index ${ulStartIdx}`);
-    console.log(`    Scanning forward, collecting by elimination (not SoL, not ZL, not non-legend)...`);
-
-    for (let i = ulStartIdx; i < allNames.length && ulCollected.length < UL_COUNT; i++) {
+    let newZlCount = 0;
+    for (let i = lastKnownZlIdx + 1; i <= scanLimit && i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
       const nm = allNames[i];
       if (!nm) continue;
-
-      // Skip SoL names (shouldn't appear here, but be safe)
       if (solNameSet.has(nm)) continue;
-
-      // Skip known ZL names
       if (zlNameSet.has(nm)) continue;
-
-      // Skip non-legend names
+      if (ulNameSet.has(nm)) continue;
       if (isNonLegendName(nm)) continue;
 
-      ulCollected.push({ name: nm, mapIdx: i });
+      const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
+      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends" });
+      zlNameSet.add(nm);
+      newZlCount++;
+      console.log(`    NEW ZL subchapter: "${nm}" (sortOrder=${sortOrder})`);
     }
-
-    console.log(`    Collected ${ulCollected.length} UL subchapters by elimination`);
-    if (ulCollected.length === UL_COUNT) {
-      console.log(`    ✓ Got exactly ${UL_COUNT} as expected`);
+    if (newZlCount > 0) {
+      console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
     } else {
-      console.warn(`    ⚠ Expected ${UL_COUNT}, got ${ulCollected.length}`);
+      console.log(`    No new ZL subchapters found beyond known list`);
     }
-
-    // Log first and last
-    if (ulCollected.length > 0) {
-      console.log(`    first: "${ulCollected[0].name}" (idx=${ulCollected[0].mapIdx})`);
-      console.log(`    last:  "${ulCollected[ulCollected.length - 1].name}" (idx=${ulCollected[ulCollected.length - 1].mapIdx})`);
-    }
-
-    // Add UL subchapters with sortOrder based on collection order
-    const ulNameSet = new Set<string>();
-    for (let i = 0; i < ulCollected.length; i++) {
-      subchapters.push({ sortOrder: i, name: ulCollected[i].name, sagaName: "Uncanny Legends" });
-      ulNameSet.add(ulCollected[i].name);
-    }
-
-    if (ulCollected.length > 0) sagaNames.push("Uncanny Legends");
-
-    // Now scan for NEW ZL subchapters beyond the known list.
-    // IMPORTANT: Only scan within the UL/ZL interleaved region. The region ends
-    // roughly at the last UL entry's index. Scanning beyond that picks up unrelated
-    // map names (Cats of the Cosmos, special stages, etc.).
-    if (lastKnownZlIdx >= 0 && ulCollected.length > 0) {
-      const lastUlIdx = ulCollected[ulCollected.length - 1].mapIdx;
-      // Scan from last known ZL to slightly past last UL (new ZL entries could be
-      // a few indices after the last UL entry in the interleaved region)
-      const scanLimit = lastUlIdx + 20; // small buffer past last UL entry
-      console.log(`    Scanning for new ZL entries between idx ${lastKnownZlIdx + 1} and ${scanLimit}`);
-
-      let newZlCount = 0;
-      for (let i = lastKnownZlIdx + 1; i <= scanLimit && i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
-        const nm = allNames[i];
-        if (!nm) continue;
-        if (solNameSet.has(nm)) continue;
-        if (zlNameSet.has(nm)) continue;
-        if (ulNameSet.has(nm)) continue;
-        if (isNonLegendName(nm)) continue;
-
-        const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
-        subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends" });
-        zlNameSet.add(nm);
-        newZlCount++;
-        console.log(`    NEW ZL subchapter: "${nm}" (sortOrder=${sortOrder})`);
-      }
-      if (newZlCount > 0) {
-        console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
-      } else {
-        console.log(`    No new ZL subchapters found beyond known list`);
-      }
-    }
-  } else {
-    console.error(`  ERROR: Could not find UL start "${UL_FIRST_NAME}" in Map_Name.csv`);
   }
 
   // ── Step 3: Summary ────────────────────────────────────────────────────
