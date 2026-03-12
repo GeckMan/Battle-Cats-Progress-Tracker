@@ -623,20 +623,65 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     "Facing Danger", "Siege of Hippoe", "Clionel Ascendant",
     "Otherworld Colosseum", "Catclaw Championships",
     "Catamin", "Gauntlet", "Baron Seal",
+    // Special/challenge stages that appear in the UL/ZL index range:
+    "Crazed", "The Crazed ",
+    // Other saga names that appear in Map_Name.csv:
+    "Cats of the Cosmos", "Empire of Cats", "Into the Future",
+    // Event/special stage keywords:
+    "Advent ", "Cyclone ", "Dojo ",
+    "Legend Quest", "Heavenly Tower", "Infernal Tower",
+    "Aku Realm", "Behemoth Culling",
   ];
 
+  // Exact non-legend names that don't match patterns
+  const NON_LEGEND_EXACT = new Set([
+    "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Weekend",
+    "Cat Ticket Chance!", "Facing Danger", "Siege of Hippoe!",
+  ]);
+
   function isNonLegendName(nm: string): boolean {
+    if (NON_LEGEND_EXACT.has(nm)) return true;
     for (const pat of NON_LEGEND_PATTERNS) {
       if (nm.startsWith(pat) || nm.includes(pat)) return true;
     }
-    // Event/collab patterns
-    if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
-        nm.includes("(Merciless)") || nm.includes("(Insane)")) return true;
+    // Event/collab patterns — anything with difficulty markers in parentheses
+    if (/\((Normal|Expert|Deadly|Merciless|Insane|Veteran|Extreme)\)/.test(nm)) return true;
+    // Other parenthesized content that indicates event maps (e.g., "Zombie Filibuster")
+    // Legend subchapter names generally don't have parentheses
+    if (/\(.+\)/.test(nm)) return true;
     if (nm.endsWith("Ranking") || nm.startsWith("Ranking")) return true;
     if (nm.includes(" VS ")) return true;
     // "Rank N" patterns (Catclaw Championships Rank 1-9)
     if (/Rank \d+/.test(nm)) return true;
+    // "Ch. N" patterns (e.g., "Cats of the Cosmos Ch. 3")
+    if (/Ch\. \d+/.test(nm)) return true;
     return false;
+  }
+
+  // Helper: fuzzy search for a name in allNames (tries exact, then substring)
+  function fuzzyFindName(target: string, names: string[]): string | null {
+    // Exact match first
+    if (nameToIdx.has(target)) return target;
+    // Try case-insensitive exact match
+    const lower = target.toLowerCase();
+    for (const nm of names) {
+      if (nm.toLowerCase() === lower) return nm;
+    }
+    // Try substring: look for names containing the last significant word(s)
+    // e.g., "New World Ehen" → look for names containing "Ehen"
+    const words = target.split(/\s+/);
+    const lastWord = words[words.length - 1];
+    if (lastWord.length >= 4) {
+      const candidates = names.filter((nm) => nm.includes(lastWord));
+      if (candidates.length === 1) return candidates[0];
+      // If multiple, try with last two words
+      if (words.length >= 2) {
+        const lastTwo = words.slice(-2).join(" ");
+        const narrowed = candidates.filter((nm) => nm.includes(lastTwo));
+        if (narrowed.length === 1) return narrowed[0];
+      }
+    }
+    return null;
   }
 
   // --- Stories of Legend: contiguous block at indices 0..48 ---
@@ -670,12 +715,17 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   const zlNameSet = new Set<string>(ZL_KNOWN_NAMES);
 
   for (let i = 0; i < ZL_KNOWN_NAMES.length; i++) {
-    const name = ZL_KNOWN_NAMES[i];
-    if (nameToIdx.has(name)) {
-      subchapters.push({ sortOrder: i, name, sagaName: "Zero Legends" });
+    const target = ZL_KNOWN_NAMES[i];
+    const found = fuzzyFindName(target, allNames);
+    if (found) {
+      subchapters.push({ sortOrder: i, name: found, sagaName: "Zero Legends" });
+      zlNameSet.add(found); // Add the ACTUAL name from Map_Name.csv
+      if (found !== target) {
+        console.log(`    Fuzzy match: "${target}" → "${found}"`);
+      }
       zlFound++;
     } else {
-      zlMissing.push(name);
+      zlMissing.push(target);
     }
   }
   console.log(`    Found ${zlFound}/${ZL_KNOWN_NAMES.length} in Map_Name.csv`);
@@ -752,10 +802,18 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     if (ulCollected.length > 0) sagaNames.push("Uncanny Legends");
 
     // Now scan for NEW ZL subchapters beyond the known list.
-    // These are names after the last known ZL index that aren't UL, not SoL, not non-legend.
-    if (lastKnownZlIdx >= 0) {
+    // IMPORTANT: Only scan within the UL/ZL interleaved region. The region ends
+    // roughly at the last UL entry's index. Scanning beyond that picks up unrelated
+    // map names (Cats of the Cosmos, special stages, etc.).
+    if (lastKnownZlIdx >= 0 && ulCollected.length > 0) {
+      const lastUlIdx = ulCollected[ulCollected.length - 1].mapIdx;
+      // Scan from last known ZL to slightly past last UL (new ZL entries could be
+      // a few indices after the last UL entry in the interleaved region)
+      const scanLimit = lastUlIdx + 20; // small buffer past last UL entry
+      console.log(`    Scanning for new ZL entries between idx ${lastKnownZlIdx + 1} and ${scanLimit}`);
+
       let newZlCount = 0;
-      for (let i = lastKnownZlIdx + 1; i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
+      for (let i = lastKnownZlIdx + 1; i <= scanLimit && i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
         const nm = allNames[i];
         if (!nm) continue;
         if (solNameSet.has(nm)) continue;
@@ -771,6 +829,8 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       }
       if (newZlCount > 0) {
         console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
+      } else {
+        console.log(`    No new ZL subchapters found beyond known list`);
       }
     }
   } else {
