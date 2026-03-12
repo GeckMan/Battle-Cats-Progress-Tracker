@@ -57,7 +57,7 @@ export async function GET(req: NextRequest) {
     realLegend, totalLegend,
     realMilestones, totalMilestones,
     realUnits, totalUnits,
-    realStory, totalStory,
+    storyProgress, totalStoryChapters,
   ] = await Promise.all([
     // Medals earned / total
     (prisma as any).userMeowMedal.count({ where: { userId, earned: true } }),
@@ -79,10 +79,23 @@ export async function GET(req: NextRequest) {
     (prisma as any).unit.count({
       where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
     }),
-    // Story cleared / total chapters
-    (prisma as any).userStoryProgress.count({ where: { userId, cleared: true } }),
+    // Story progress — fetch all records to compute granular score
+    (prisma as any).userStoryProgress.findMany({
+      where: { userId },
+      select: { cleared: true, treasures: true, zombies: true },
+    }) as Promise<{ cleared: boolean; treasures: string; zombies: string }[]>,
     (prisma as any).storyChapter.count(),
   ]);
+
+  // Story scoring: 1pt cleared + 1pt ALL treasures + 1pt ALL zombies per chapter
+  // Partial progress (SOME) doesn't count — only fully completed milestones.
+  let realStory = 0;
+  for (const sp of storyProgress) {
+    if (sp.cleared) realStory++;
+    if (sp.treasures === "ALL") realStory++;
+    if (sp.zombies === "ALL") realStory++;
+  }
+  const totalStory = totalStoryChapters * 3;
 
   const categoryMap: Record<string, string> = {
     UNIT_OBTAINED: "units",
