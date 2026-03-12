@@ -533,9 +533,12 @@ interface SagaSearchConfig {
   firstNames: string[];
   /** Expected name at index start+1 (for verification) */
   secondName: string;
-  /** Known recent last subchapter names (searched in order, latest first) */
+  /** Exact count if this saga is complete and will never change */
+  fixedCount?: number;
+  /** Known recent last subchapter names (searched in order, latest first).
+   *  Used only when fixedCount is not set. */
   knownLastNames: string[];
-  /** Hard cap on subchapter count */
+  /** Hard cap on subchapter count (for dynamic sagas) */
   maxCount: number;
 }
 
@@ -544,25 +547,29 @@ const SAGA_SEARCH: SagaSearchConfig[] = [
     name: "Stories of Legend",
     firstNames: ["The Legend Begins"],
     secondName: "Passion Land",
+    fixedCount: 49, // Complete — will not change
     knownLastNames: ["Laboratory of Relics"],
-    maxCount: 55,
+    maxCount: 49,
   },
   {
     name: "Uncanny Legends",
     firstNames: ["Exile's Resort"],
     secondName: "Heaven's Back Alley",
-    knownLastNames: ["Sacred Forest", "Behemoth's Peak"],
-    maxCount: 55,
+    fixedCount: 49, // Complete — will not change
+    knownLastNames: ["Sacred Forest"],
+    maxCount: 49,
   },
   {
     name: "Zero Legends",
     firstNames: ["Zero Field"],
     secondName: "The Edge of Spacetime",
+    // Dynamic — PONOS adds new subchapters over time.
+    // knownLastNames searched in order; first match wins.
     knownLastNames: [
       "Muscle Empire", "Phantasmagoria", "Vainglorious Venture",
       "Booklet Islands", "Forgotten Republic", "Sleeping Chasm",
     ],
-    maxCount: 50,
+    maxCount: 60,
   },
 ];
 
@@ -629,23 +636,69 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       console.log(`    Verified: [1]="${actualSecond}" ✓`);
     }
 
-    // Determine count using known last names
+    // Determine count
     let count = -1;
-    for (const lastName of cfg.knownLastNames) {
-      // Search for the last name starting from startIdx
-      const lastIdx = allNames.indexOf(lastName, startIdx);
-      if (lastIdx >= startIdx && lastIdx - startIdx < cfg.maxCount) {
-        count = lastIdx - startIdx + 1;
-        console.log(`    Found last-name "${lastName}" at index ${lastIdx} → count=${count}`);
 
-        // Extend past the known last name to pick up any newer subchapters
-        // Stop when we hit another saga's start, a parenthesized name (event/collab),
-        // or the maxCount cap
-        let extended = count;
-        while (extended < cfg.maxCount && startIdx + extended < allNames.length) {
-          const nextIdx = startIdx + extended;
+    if (cfg.fixedCount) {
+      // Saga has a known fixed count (complete, will not change)
+      count = cfg.fixedCount;
+      console.log(`    Using fixed count: ${count}`);
+      // Verify the last entry matches known last name
+      const lastEntry = allNames[startIdx + count - 1];
+      if (cfg.knownLastNames.length > 0 && lastEntry !== cfg.knownLastNames[0]) {
+        console.warn(`    WARNING: expected last="${cfg.knownLastNames[0]}", got "${lastEntry}"`);
+      } else {
+        console.log(`    Verified last: "${lastEntry}" ✓`);
+      }
+    } else {
+      // Dynamic saga — find count via known last names + forward scanning
+      for (const lastName of cfg.knownLastNames) {
+        const lastIdx = allNames.indexOf(lastName, startIdx);
+        if (lastIdx >= startIdx && lastIdx - startIdx < cfg.maxCount) {
+          count = lastIdx - startIdx + 1;
+          console.log(`    Found last-name "${lastName}" at index ${lastIdx} → count=${count}`);
 
-          // Stop if we've hit another saga's start
+          // Extend past the known last name to pick up any newer subchapters
+          let extended = count;
+          while (extended < cfg.maxCount && startIdx + extended < allNames.length) {
+            const nextIdx = startIdx + extended;
+
+            // Stop if we've hit another saga's start
+            let hitAnotherSaga = false;
+            for (const [otherSaga, otherStart] of sagaStartIndices) {
+              if (otherSaga !== cfg.name && nextIdx === otherStart) {
+                hitAnotherSaga = true;
+                break;
+              }
+            }
+            if (hitAnotherSaga) break;
+
+            // Stop if the name looks like an event/collab stage
+            const nm = allNames[nextIdx];
+            if (!nm) break;
+            if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
+                nm.includes("(Merciless)") || nm.includes("(Insane)")) break;
+            if (nm.endsWith("Ranking") || nm.startsWith("Ranking")) break;
+            if (nm.includes(" VS ")) break;
+
+            extended++;
+          }
+
+          if (extended > count) {
+            console.log(`    Extended from ${count} to ${extended} (found ${extended - count} newer subchapters)`);
+            count = extended;
+          }
+          break;
+        }
+      }
+
+      // If no known last name found, fall back to scanning
+      if (count < 0) {
+        console.warn(`    No known last-name found, scanning forward...`);
+        count = 0;
+        while (count < cfg.maxCount && startIdx + count < allNames.length) {
+          const nextIdx = startIdx + count;
+
           let hitAnotherSaga = false;
           for (const [otherSaga, otherStart] of sagaStartIndices) {
             if (otherSaga !== cfg.name && nextIdx === otherStart) {
@@ -655,51 +708,15 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
           }
           if (hitAnotherSaga) break;
 
-          // Stop if the name looks like an event/collab stage
           const nm = allNames[nextIdx];
           if (!nm) break;
           if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
               nm.includes("(Merciless)") || nm.includes("(Insane)")) break;
-          if (nm.endsWith("Ranking") || nm.startsWith("Ranking")) break;
-          if (nm.includes(" VS ")) break;
 
-          extended++;
+          count++;
         }
-
-        if (extended > count) {
-          console.log(`    Extended from ${count} to ${extended} (found ${extended - count} newer subchapters)`);
-          count = extended;
-        }
-        break;
+        console.log(`    Scan found ${count} entries`);
       }
-    }
-
-    // If no known last name found, fall back to scanning
-    if (count < 0) {
-      console.warn(`    No known last-name found, scanning forward...`);
-      count = 0;
-      while (count < cfg.maxCount && startIdx + count < allNames.length) {
-        const nextIdx = startIdx + count;
-
-        // Stop at another saga's start
-        let hitAnotherSaga = false;
-        for (const [otherSaga, otherStart] of sagaStartIndices) {
-          if (otherSaga !== cfg.name && nextIdx === otherStart) {
-            hitAnotherSaga = true;
-            break;
-          }
-        }
-        if (hitAnotherSaga) break;
-
-        // Stop at event/collab patterns
-        const nm = allNames[nextIdx];
-        if (!nm) break;
-        if (nm.includes("(Normal)") || nm.includes("(Expert)") || nm.includes("(Deadly)") ||
-            nm.includes("(Merciless)") || nm.includes("(Insane)")) break;
-
-        count++;
-      }
-      console.log(`    Scan found ${count} entries`);
     }
 
     if (count <= 0) {
