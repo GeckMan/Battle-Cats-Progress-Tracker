@@ -550,7 +550,7 @@ const ZL_KNOWN_NAMES: string[] = [
   "The Edge of Spacetime",
   "Cats Cradle Basin",
   "The Ururuvu Journals",
-  "New World Ehen",
+  "New World Area: Ehen",
   "Cats of a Common Sea",
   "Truth in Extremes",
   "Demon of Deciliter Bay",
