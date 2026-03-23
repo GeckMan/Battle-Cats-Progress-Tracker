@@ -53,9 +53,8 @@ export default async function DashboardPage() {
   const legendRows = sagas.map((s) => {
     const percents = s.subchapters.map((sc) =>
       legendSubchapterPercent({
-        sagaName: s.displayName,
-        subchapterSortOrder: sc.sortOrder,
         crownMax: sc.progress[0]?.crownMax ?? null,
+        maxCrowns: (sc as any).maxCrowns ?? 4,
       })
     );
     const pct = percents.length ? Math.round(percents.reduce((a, b) => a + b, 0) / percents.length) : 0;

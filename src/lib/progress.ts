@@ -29,13 +29,11 @@ export function storyChapterPercent(opts: {
 }
 
 export function legendSubchapterPercent(opts: {
-  sagaName: string;
-  subchapterSortOrder: number;
   crownMax: number | null;
+  maxCrowns?: number | null;
 }) {
   const crown = Math.max(0, Math.min(opts.crownMax ?? 0, 4)); // safety clamp
-  const isZL = opts.sagaName === "Zero Legends";
-  const maxCrown = isZL ? (opts.subchapterSortOrder === 1 ? 2 : 1) : 4;
+  const maxCrown = Math.max(1, opts.maxCrowns ?? 4); // from DB, default 4
 
   const pct = (Math.min(crown, maxCrown) / maxCrown) * 100;
   return Math.round(pct);

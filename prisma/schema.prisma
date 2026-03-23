@@ -169,6 +169,7 @@ model LegendSubchapter {
   displayName String
   sortOrder   Int
   stageCount  Int?   // number of stages in this subchapter (from BCData sync)
+  maxCrowns   Int    @default(4) // max crowns available (1-4, from game data)
 
   saga     LegendSaga           @relation(fields: [sagaId], references: [id], onDelete: Cascade)
   progress UserLegendProgress[]

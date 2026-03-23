@@ -61,7 +61,7 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
   });
   const legendPercents = sagas.flatMap((s) =>
     s.subchapters.map((sc) =>
-      legendSubchapterPercent({ sagaName: s.displayName, subchapterSortOrder: sc.sortOrder, crownMax: sc.progress[0]?.crownMax ?? null })
+      legendSubchapterPercent({ crownMax: sc.progress[0]?.crownMax ?? null, maxCrowns: (sc as any).maxCrowns ?? 4 })
     )
   );
   const legendOverall = legendPercents.length ? Math.round(legendPercents.reduce((a, b) => a + b, 0) / legendPercents.length) : 0;

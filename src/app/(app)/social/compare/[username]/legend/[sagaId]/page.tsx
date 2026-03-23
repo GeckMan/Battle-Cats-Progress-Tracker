@@ -80,15 +80,13 @@ export default async function CompareLegendSagaPage(props: {
     const fp = sc.progress.find((p) => p.userId === friend.id);
 
     const you = legendSubchapterPercent({
-      sagaName: saga.displayName,
-      subchapterSortOrder: sc.sortOrder,
       crownMax: vp?.crownMax ?? null,
+      maxCrowns: (sc as any).maxCrowns ?? 4,
     });
 
     const them = legendSubchapterPercent({
-      sagaName: saga.displayName,
-      subchapterSortOrder: sc.sortOrder,
       crownMax: fp?.crownMax ?? null,
+      maxCrowns: (sc as any).maxCrowns ?? 4,
     });
 
     return {

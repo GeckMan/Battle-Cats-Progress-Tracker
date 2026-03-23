@@ -62,6 +62,7 @@ const existingSet = new Set(existing.map((e) => e.subchapterId));
     displayName: p.subchapter.displayName,
     sortOrder: p.subchapter.sortOrder,
     stageCount: (p.subchapter as any).stageCount as number | null,
+    maxCrowns: (p.subchapter as any).maxCrowns as number ?? 4,
     saga: {
       id: p.subchapter.saga.id,
       displayName: p.subchapter.saga.displayName,

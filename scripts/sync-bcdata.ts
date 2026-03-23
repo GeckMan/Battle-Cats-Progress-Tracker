@@ -627,6 +627,27 @@ const ZL_KNOWN_NAMES: string[] = [
 // Max ZL subchapters before we stop scanning for new ones
 const ZL_MAX = 60;
 
+// ── Crown counts per saga ──────────────────────────────────────────────────
+// SoL and UL: all subchapters have 4 crowns (fully released).
+// ZL: varies by subchapter. Map_option.csv has this data but BCData doesn't
+// extract it, so we hardcode the known values. New ZL subchapters discovered
+// by forward scan default to 1 crown.
+const SOL_MAX_CROWNS = 4;
+const UL_MAX_CROWNS = 4;
+
+// ZL subchapters with 2 crowns (the rest have 1)
+const ZL_TWO_CROWN_NAMES = new Set([
+  "Zero Field",
+  "The Edge of Spacetime",
+  "Cats Cradle Basin",
+  "The Ururuvu Journals",
+  "New World Area: Ehen",
+]);
+
+function getZlMaxCrowns(name: string): number {
+  return ZL_TWO_CROWN_NAMES.has(name) ? 2 : 1;
+}
+
 async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLocal: string) {
   // ── Step 1: Parse Map_Name.csv ─────────────────────────────────────────
   const mapNamePath = path.join(resLocal, "Map_Name.csv");
@@ -660,7 +681,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   }
 
   // ── Step 2: Build subchapter lists per saga ────────────────────────────
-  type SubEntry = { sortOrder: number; name: string; sagaName: string };
+  type SubEntry = { sortOrder: number; name: string; sagaName: string; maxCrowns: number };
   const subchapters: SubEntry[] = [];
   const sagaNames: string[] = [];
 
@@ -744,7 +765,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     for (let i = 0; i < SOL_COUNT; i++) {
       const name = allNames[i];
       if (name) {
-        subchapters.push({ sortOrder: i, name, sagaName: "Stories of Legend" });
+        subchapters.push({ sortOrder: i, name, sagaName: "Stories of Legend", maxCrowns: SOL_MAX_CROWNS });
         solNameSet.add(name);
       }
     }
@@ -763,7 +784,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     const target = UL_NAMES[i];
     const found = fuzzyFindName(target, allNames);
     if (found) {
-      subchapters.push({ sortOrder: i, name: found, sagaName: "Uncanny Legends" });
+      subchapters.push({ sortOrder: i, name: found, sagaName: "Uncanny Legends", maxCrowns: UL_MAX_CROWNS });
       ulNameSet.add(found);
       if (found !== target) {
         console.log(`    Fuzzy match: "${target}" → "${found}"`);
@@ -789,7 +810,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     const target = ZL_KNOWN_NAMES[i];
     const found = fuzzyFindName(target, allNames);
     if (found) {
-      subchapters.push({ sortOrder: i, name: found, sagaName: "Zero Legends" });
+      subchapters.push({ sortOrder: i, name: found, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(found) });
       zlNameSet.add(found); // Add the ACTUAL name from Map_Name.csv
       if (found !== target) {
         console.log(`    Fuzzy match: "${target}" → "${found}"`);
@@ -855,7 +876,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       // Found a name that's not SoL, not UL, not ZL, not non-legend.
       // This is likely a new ZL subchapter!
       const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
-      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends" });
+      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends", maxCrowns: 1 }); // new ZL defaults to 1 crown
       zlNameSet.add(nm);
       newZlCount++;
       consecutiveSkips = 0;
@@ -917,8 +938,8 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     try {
       await (prisma as any).legendSubchapter.upsert({
         where: { sagaId_displayName: { sagaId, displayName: sub.name } },
-        create: { sagaId, displayName: sub.name, sortOrder: sub.sortOrder },
-        update: { sortOrder: sub.sortOrder },
+        create: { sagaId, displayName: sub.name, sortOrder: sub.sortOrder, maxCrowns: sub.maxCrowns },
+        update: { sortOrder: sub.sortOrder, maxCrowns: sub.maxCrowns },
       });
       upsertedCount++;
     } catch (e: any) {

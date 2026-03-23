@@ -13,18 +13,22 @@ type Row = {
     displayName: string;
     sortOrder: number;
     stageCount: number | null;
+    maxCrowns: number;
     saga: { id: string; displayName: string; sortOrder: number };
   };
 };
 
 type Group = { sagaId: string; sagaName: string; sortOrder: number; rows: Row[] };
 
-function rowPct(r: Row) { return Math.round(((r.crownMax ?? 0) / 4) * 100); }
+function rowPct(r: Row) {
+  const max = Math.max(1, r.subchapter.maxCrowns ?? 4);
+  return Math.round((Math.min(r.crownMax ?? 0, max) / max) * 100);
+}
 function sagaPct(rows: Row[]) { return rows.length ? Math.round(rows.reduce((s, r) => s + rowPct(r), 0) / rows.length) : 0; }
 
 /* ── Crown Picker ───────────────────────────────────────────────────────── */
 
-function CrownPicker({ value, onChange, c }: { value: number; onChange: (v: number) => void; c: ThemeColors }) {
+function CrownPicker({ value, onChange, maxCrowns, c }: { value: number; onChange: (v: number) => void; maxCrowns: number; c: ThemeColors }) {
   const crownColors: Record<number, { bg: string; border: string; color: string }> = {
     0: { bg: "rgba(136,136,128,0.1)", border: c.textDim, color: c.text },
     1: { bg: c.accentFill, border: c.accentDim, color: c.accentDim },
@@ -33,9 +37,11 @@ function CrownPicker({ value, onChange, c }: { value: number; onChange: (v: numb
     4: { bg: c.dataOkFill, border: c.dataOk, color: c.dataOk },
   };
 
+  const options = [0, ...Array.from({ length: maxCrowns }, (_, i) => i + 1)];
+
   return (
     <div style={{ display: "flex", gap: 1, alignItems: "center" }}>
-      {[0, 1, 2, 3, 4].map((n) => {
+      {options.map((n) => {
         const isActive = value === n;
         const base: React.CSSProperties = {
           width: 24, height: 24, display: "flex", alignItems: "center", justifyContent: "center",
@@ -92,8 +98,10 @@ export default function Sections({ groups }: { groups: Group[] }) {
 
   async function update(id: string, uiCrown: number) {
     const crownMax = uiCrown === 0 ? null : uiCrown;
-    const status = crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
-    const prev = data.find((r) => r.id === id);
+    const row = data.find((r) => r.id === id);
+    const mc = row?.subchapter.maxCrowns ?? 4;
+    const status = crownMax === null ? "NOT_STARTED" : crownMax >= mc ? "COMPLETED" : "IN_PROGRESS";
+    const prev = row;
     setData((d) => d.map((r) => (r.id === id ? { ...r, crownMax, status } : r)));
     const res = await fetch("/api/legend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, patch: { crownMax, status } }) });
     if (!res.ok) { if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r))); setError("Failed to save."); }
@@ -101,16 +109,20 @@ export default function Sections({ groups }: { groups: Group[] }) {
 
   async function bulkUpdate(ids: string[], uiCrown: number) {
     const crownMax = uiCrown === 0 ? null : uiCrown;
-    const status = crownMax === null ? "NOT_STARTED" : crownMax >= 4 ? "COMPLETED" : "IN_PROGRESS";
     const idSet = new Set(ids);
-    setData((prev) => prev.map((r) => (idSet.has(r.id) ? { ...r, crownMax, status } : r)));
-    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, patch: { crownMax, status } }) });
+    setData((prev) => prev.map((r) => {
+      if (!idSet.has(r.id)) return r;
+      const mc = r.subchapter.maxCrowns ?? 4;
+      const status = crownMax === null ? "NOT_STARTED" : crownMax >= mc ? "COMPLETED" : "IN_PROGRESS";
+      return { ...r, crownMax, status };
+    }));
+    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, patch: { crownMax, status: crownMax === null ? "NOT_STARTED" : "IN_PROGRESS" } }) });
     if (!res.ok) setError("Failed to save.");
   }
 
   const allRows = data;
   const totalSubs = allRows.length;
-  const crown4Total = allRows.filter((r) => r.crownMax === 4).length;
+  const maxedTotal = allRows.filter((r) => (r.crownMax ?? 0) >= (r.subchapter.maxCrowns ?? 4)).length;
   const startedTotal = allRows.filter((r) => (r.crownMax ?? 0) > 0).length;
   const globalPct = sagaPct(allRows);
   const sortedGroups = groups.slice().sort((a, b) => a.sortOrder - b.sortOrder);
@@ -130,7 +142,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 1, background: c.border }}>
           {[
             { label: "Completion", value: `${globalPct}%`, sub: `${totalSubs} subchapters` },
-            { label: "Crown 4", value: `${crown4Total}`, sub: `of ${totalSubs}` },
+            { label: "Maxed", value: `${maxedTotal}`, sub: `of ${totalSubs}` },
             { label: "Started", value: `${startedTotal}`, sub: `of ${totalSubs}` },
             { label: "Remaining", value: `${totalSubs - startedTotal}`, sub: "not started" },
           ].map((m) => (
@@ -157,7 +169,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
           const ids = rows.map((r) => r.id);
           const pct = sagaPct(rows);
           const total = rows.length;
-          const crown4 = rows.filter((r) => r.crownMax === 4).length;
+          const crown4 = rows.filter((r) => (r.crownMax ?? 0) >= (r.subchapter.maxCrowns ?? 4)).length;
           const started = rows.filter((r) => (r.crownMax ?? 0) > 0).length;
           const isOpen = open[g.sagaId];
 
@@ -178,7 +190,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
                 <div style={{ display: "flex", alignItems: "center", gap: 6, fontSize: 10, fontFamily: c.fontSys, flexWrap: "wrap" }}>
                   <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase" }}>S</span>
                   <span style={{ color: started === total ? c.dataOk : c.text, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{started}/{total}</span>
-                  <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase", marginLeft: 4 }}>C4</span>
+                  <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase", marginLeft: 4 }}>MAX</span>
                   <span style={{ color: crown4 === total ? c.dataOk : c.text, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{crown4}/{total}</span>
                   <span style={{ flex: 1 }} />
                   <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 4)} c={c}>4</BulkBtn>
@@ -193,20 +205,22 @@ export default function Sections({ groups }: { groups: Group[] }) {
                 <div style={{ overflowY: "auto", maxHeight: "70vh", background: c.void, flex: 1 }}>
                   {rows.map((r) => {
                     const crown = r.crownMax ?? 0;
+                    const mc = r.subchapter.maxCrowns ?? 4;
+                    const isMaxed = crown >= mc;
                     return (
                       <div key={r.id} style={{
                         display: "flex", alignItems: "center", gap: 6, padding: "4px 8px",
                         borderBottom: `1px solid ${c.borderFaint}`, fontSize: 13, fontFamily: c.fontSys,
-                        background: crown >= 4 ? c.dataOkFill : crown >= 1 ? c.accentFill : "transparent",
+                        background: isMaxed ? c.dataOkFill : crown >= 1 ? c.accentFill : "transparent",
                       }}>
                         <span style={{
                           flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap", fontWeight: 500,
-                          color: crown >= 4 ? c.dataOk : crown >= 1 ? c.text : c.textDim,
+                          color: isMaxed ? c.dataOk : crown >= 1 ? c.text : c.textDim,
                         }}>
                           {r.subchapter.displayName}
                           {r.subchapter.stageCount != null && <span style={{ fontSize: 9, color: c.textDim, marginLeft: 4 }}>({r.subchapter.stageCount})</span>}
                         </span>
-                        <CrownPicker value={crown} onChange={(v) => update(r.id, v)} c={c} />
+                        <CrownPicker value={crown} onChange={(v) => update(r.id, v)} maxCrowns={r.subchapter.maxCrowns ?? 4} c={c} />
                       </div>
                     );
                   })}
