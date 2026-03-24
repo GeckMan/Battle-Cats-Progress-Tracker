@@ -1,7 +1,10 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
-import RightPanel, { PanelToggleButton } from "./RightPanel";
+import { useState, useEffect, useCallback, lazy, Suspense } from "react";
+import { PanelToggleButton } from "./PanelToggleButton";
+
+// Lazy-load the full 1300-line RightPanel — it's only needed when the user opens it
+const RightPanel = lazy(() => import("./RightPanel"));
 
 const LS_KEY_ACTIVITY = "bc_lastSeenActivity";
 const LS_KEY_CHAT = "bc_lastSeenChat";
@@ -126,16 +129,20 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
           unreadChat={unreadChat}
         />
       )}
-      <RightPanel
-        open={open}
-        onClose={handleClose}
-        activeTab={activeTab}
-        onTabChange={handleTabChange}
-        unreadActivity={unreadActivity}
-        unreadChat={unreadChat}
-        currentUserId={currentUserId}
-        currentUserRole={currentUserRole}
-      />
+      {open && (
+        <Suspense fallback={null}>
+          <RightPanel
+            open={open}
+            onClose={handleClose}
+            activeTab={activeTab}
+            onTabChange={handleTabChange}
+            unreadActivity={unreadActivity}
+            unreadChat={unreadChat}
+            currentUserId={currentUserId}
+            currentUserRole={currentUserRole}
+          />
+        </Suspense>
+      )}
     </>
   );
 }

@@ -13,19 +13,55 @@ export default async function DashboardPage() {
   if (!session) redirect("/login");
   const userId = session.user.id as string;
 
+  // Ensure milestone catalog exists (idempotent, fast after first call)
   await ensureMilestoneCatalog();
-  await Promise.all([
+
+  // Ensure progress rows exist — fire-and-forget, don't block rendering
+  // Missing rows simply show as 0% progress until created
+  Promise.all([
     ensureStoryProgress(userId),
     ensureMedalProgress(userId),
     ensureMilestoneProgress(userId),
-  ]);
+  ]).catch(() => {});
 
-  // ── Story ────────────────────────────────────────────────────────────────
-  const storyChapters = await prisma.storyChapter.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: { progress: { where: { userId }, take: 1 } },
-  });
+  // ── Run ALL data queries in parallel ──────────────────────────────────────
+  const [storyChapters, sagas, medalsWithProgress, milestones, unitTotal, unitObtained] =
+    await Promise.all([
+      prisma.storyChapter.findMany({
+        orderBy: { sortOrder: "asc" },
+        include: { progress: { where: { userId }, take: 1 } },
+      }),
+      prisma.legendSaga.findMany({
+        orderBy: { sortOrder: "asc" },
+        include: {
+          subchapters: {
+            orderBy: { sortOrder: "asc" },
+            include: { progress: { where: { userId }, take: 1 } },
+          },
+        },
+      }),
+      prisma.meowMedal.findMany({
+        orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
+        include: {
+          earnedBy: { where: { userId }, select: { earned: true }, take: 1 },
+        },
+      }),
+      prisma.milestone.findMany({
+        include: { progress: { where: { userId }, take: 1 } },
+      }),
+      (prisma as any).unit.count({
+        where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+      }),
+      (prisma as any).userUnitProgress.count({
+        where: {
+          userId,
+          formLevel: { gte: 1 },
+          unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+        },
+      }),
+    ]);
 
+  // ── Story (pure computation) ──────────────────────────────────────────────
   const storyRows = storyChapters.map((ch) => {
     const p = ch.progress[0];
     const pct = p
@@ -33,23 +69,12 @@ export default async function DashboardPage() {
       : 0;
     return { label: ch.displayName, pct };
   });
-
   const storyOverall =
     storyRows.length === 0
       ? 0
       : Math.round(storyRows.reduce((s, r) => s + r.pct, 0) / storyRows.length);
 
-  // ── Legend ───────────────────────────────────────────────────────────────
-  const sagas = await prisma.legendSaga.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: {
-      subchapters: {
-        orderBy: { sortOrder: "asc" },
-        include: { progress: { where: { userId }, take: 1 } },
-      },
-    },
-  });
-
+  // ── Legend ─────────────────────────────────────────────────────────────────
   const legendRows = sagas.map((s) => {
     const percents = s.subchapters.map((sc) =>
       legendSubchapterPercent({
@@ -60,20 +85,12 @@ export default async function DashboardPage() {
     const pct = percents.length ? Math.round(percents.reduce((a, b) => a + b, 0) / percents.length) : 0;
     return { label: s.displayName, pct };
   });
-
   const legendOverall =
     legendRows.length === 0
       ? 0
       : Math.round(legendRows.reduce((s, r) => s + r.pct, 0) / legendRows.length);
 
-  // ── Medals ───────────────────────────────────────────────────────────────
-  const medalsWithProgress = await prisma.meowMedal.findMany({
-    orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
-    include: {
-      earnedBy: { where: { userId }, select: { earned: true }, take: 1 },
-    },
-  });
-
+  // ── Medals ────────────────────────────────────────────────────────────────
   const medalTotal = medalsWithProgress.length;
   const medalEarned = medalsWithProgress.filter((m) => m.earnedBy[0]?.earned).length;
   const medalsOverall = medalTotal === 0 ? 0 : Math.round((medalEarned / medalTotal) * 100);
@@ -96,11 +113,7 @@ export default async function DashboardPage() {
     }))
     .sort((a, b) => a.category.localeCompare(b.category));
 
-  // ── Milestones ───────────────────────────────────────────────────────────
-  const milestones = await prisma.milestone.findMany({
-    include: { progress: { where: { userId }, take: 1 } },
-  });
-
+  // ── Milestones ────────────────────────────────────────────────────────────
   const milestoneTotal = milestones.length;
   const milestoneCleared = milestones.filter((m) => m.progress[0]?.cleared).length;
   const milestonesOverall = milestoneTotal === 0 ? 0 : Math.round((milestoneCleared / milestoneTotal) * 100);
@@ -117,19 +130,7 @@ export default async function DashboardPage() {
     .map(([, v]) => ({ ...v, pct: v.total === 0 ? 0 : Math.round((v.cleared / v.total) * 100) }))
     .sort((a, b) => a.order - b.order);
 
-  // ── Units ────────────────────────────────────────────────────────────────
-  const [unitTotal, unitObtained] = await Promise.all([
-    (prisma as any).unit.count({
-      where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
-    }),
-    (prisma as any).userUnitProgress.count({
-      where: {
-        userId,
-        formLevel: { gte: 1 },
-        unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
-      },
-    }),
-  ]);
+  // ── Units ─────────────────────────────────────────────────────────────────
   const unitsOverall = unitTotal === 0 ? 0 : Math.round((unitObtained / unitTotal) * 100);
 
   // ── Overall ──────────────────────────────────────────────────────────────

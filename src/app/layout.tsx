@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono, JetBrains_Mono, Noto_Serif_Display, Saira_Extra_Condensed } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import "./nerv-theme.css";
@@ -16,27 +16,9 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-/* NERV v2 fonts — swap to prevent render-blocking on first load */
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  display: "swap",
-});
-
-const notoSerifDisplay = Noto_Serif_Display({
-  variable: "--font-noto-serif-display",
-  subsets: ["latin"],
-  weight: ["700", "800", "900"],
-  display: "swap",
-});
-
-const sairaExtraCondensed = Saira_Extra_Condensed({
-  variable: "--font-saira-extra-condensed",
-  subsets: ["latin"],
-  weight: ["400", "600", "700", "800"],
-  display: "swap",
-});
+/* NERV fonts moved to nerv-theme.css @font-face rules —
+   they only download when [data-theme="nerv"] activates the font-family usage.
+   This saves ~150KB+ of font data for non-NERV users (majority). */
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -69,7 +51,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${jetbrainsMono.variable} ${notoSerifDisplay.variable} ${sairaExtraCondensed.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
         <SpeedInsights />

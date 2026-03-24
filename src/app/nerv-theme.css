@@ -4,6 +4,47 @@
    Applied when [data-theme="nerv"] is set on <html>
    ═══════════════════════════════════════════════════════════════════════════ */
 
+/* ── NERV Fonts (loaded on-demand, only when NERV theme is active) ─────── */
+/* These @font-face rules are always defined, but the browser only downloads
+   the font files when an element actually uses the font-family — which only
+   happens inside [data-theme="nerv"] selectors below. */
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FPpRFhGi8CEbstYPqnSBYSwQ.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/jetbrainsmono/v18/tDbY2o-flEEny0FPpRFhGi8CEbstYPqnSBYSwQ.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Noto Serif Display";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/notoserifdisplay/v25/buERppa9f8_vkXaZLAgP0G5Wi6QmA1QaeYah2ROEIH5jJ-NMBqEk.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: "Saira Extra Condensed";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("https://fonts.gstatic.com/s/sairaextracondensed/v13/-nFvOHYr-vcC7h8MklGBkrvmUG9rbpkisrTri0jx9i5ss3a3.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 /* ── Design Tokens (v2) ──────────────────────────────────────────────────── */
 
 [data-theme="nerv"] {
@@ -39,9 +80,9 @@
   --steel-faint:      rgba(200, 200, 192, 0.06);
   --steel-line:       rgba(200, 200, 192, 0.12);
 
-  --font-title:       var(--font-noto-serif-display), 'Noto Serif Display', 'Times New Roman', serif;
-  --font-sys:         var(--font-jetbrains-mono), 'JetBrains Mono', 'Cascadia Mono', monospace;
-  --font-stamp:       var(--font-saira-extra-condensed), 'Saira Extra Condensed', 'Impact', sans-serif;
+  --font-title:       'Noto Serif Display', 'Times New Roman', serif;
+  --font-sys:         'JetBrains Mono', 'Cascadia Mono', monospace;
+  --font-stamp:       'Saira Extra Condensed', 'Impact', sans-serif;
 
   --scan-opacity:     0.04;
 }

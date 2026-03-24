@@ -25,40 +25,32 @@ type SubchapterCompareRow = {
 
 /* ── DB helpers ─────────────────────────────────────────────────────────── */
 
-async function ensureLegendRows(userId: string) {
-  const subIds = (await prisma.legendSubchapter.findMany({ select: { id: true } })).map((s) => s.id);
-  if (!subIds.length) return;
-  const existing = await prisma.userLegendProgress.findMany({
-    where: { userId, subchapterId: { in: subIds } },
-    select: { subchapterId: true },
-  });
-  const have = new Set(existing.map((e) => e.subchapterId));
-  const missing = subIds.filter((id) => !have.has(id)).map((subchapterId) => ({ userId, subchapterId }));
-  if (missing.length) await prisma.userLegendProgress.createMany({ data: missing });
-}
-
 async function computeProgressSummary(userId: string): Promise<ProgressSummary> {
-  await ensureLegendRows(userId);
+  // Run all queries in parallel — no more sequential ensure*Rows calls
+  const [storyChapters, sagas, medalsTotal, medalsEarned] = await Promise.all([
+    prisma.storyChapter.findMany({
+      orderBy: { sortOrder: "asc" },
+      include: { progress: { where: { userId }, take: 1 } },
+    }),
+    prisma.legendSaga.findMany({
+      orderBy: { sortOrder: "asc" },
+      include: {
+        subchapters: {
+          orderBy: { sortOrder: "asc" },
+          include: { progress: { where: { userId }, take: 1 } },
+        },
+      },
+    }),
+    prisma.meowMedal.count(),
+    prisma.userMeowMedal.count({ where: { userId, earned: true } }),
+  ]);
 
-  const storyChapters = await prisma.storyChapter.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: { progress: { where: { userId }, take: 1 } },
-  });
   const storyPcts = storyChapters.map((ch) => {
     const p = ch.progress[0];
     return p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies }) : 0;
   });
   const storyOverall = storyPcts.length ? Math.round(storyPcts.reduce((s, p) => s + p, 0) / storyPcts.length) : 0;
 
-  const sagas = await prisma.legendSaga.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: {
-      subchapters: {
-        orderBy: { sortOrder: "asc" },
-        include: { progress: { where: { userId }, take: 1 } },
-      },
-    },
-  });
   const legendPercents = sagas.flatMap((s) =>
     s.subchapters.map((sc) =>
       legendSubchapterPercent({ crownMax: sc.progress[0]?.crownMax ?? null, maxCrowns: (sc as any).maxCrowns ?? 4 })
@@ -66,8 +58,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
   );
   const legendOverall = legendPercents.length ? Math.round(legendPercents.reduce((a, b) => a + b, 0) / legendPercents.length) : 0;
 
-  const medalsTotal = await prisma.meowMedal.count();
-  const medalsEarned = await prisma.userMeowMedal.count({ where: { userId, earned: true } });
   const medalsOverall = medalsTotal === 0 ? 0 : Math.round((medalsEarned / medalsTotal) * 100);
   const overall = Math.round((storyOverall + legendOverall + medalsOverall) / 3);
 

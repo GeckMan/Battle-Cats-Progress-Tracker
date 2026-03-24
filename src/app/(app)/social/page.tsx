@@ -35,100 +35,72 @@ type ProgressSummary = {
   unitsObtained: number;
   unitsTotal: number;
 
-  // NEW: legend breakdown
+  // Legend breakdown
   sagas: SagaBreakdown[];
-  // NEW: SoL subchapter detail (so you can “see which ones”)
+  // SoL subchapter detail
   solSubchapters: SubchapterStatus[];
 };
 
-async function ensureStoryRows(userId: string) {
-  const storyChapterIds = (await prisma.storyChapter.findMany({ select: { id: true } })).map(
-    (c) => c.id
-  );
-  if (!storyChapterIds.length) return;
+/**
+ * Compute progress summary with ALL queries running in parallel.
+ * No more ensure*Rows — missing rows simply count as 0% progress.
+ * This reduces ~10 sequential DB queries down to 4 parallel ones.
+ */
+async function computeProgressSummary(
+  userId: string,
+  /** Pass shared static counts to avoid re-fetching for each friend */
+  staticCounts?: { medalsTotal: number; unitsTotal: number },
+): Promise<ProgressSummary> {
+  // Run ALL independent queries in parallel
+  const [storyChapters, sagas, medalsEarned, unitsObtained, medalsTotal, unitsTotal] =
+    await Promise.all([
+      // Story chapters with user progress
+      prisma.storyChapter.findMany({
+        orderBy: { sortOrder: "asc" },
+        include: { progress: { where: { userId }, take: 1 } },
+      }),
+      // Legend sagas + subchapters with user progress
+      prisma.legendSaga.findMany({
+        orderBy: { sortOrder: "asc" },
+        include: {
+          subchapters: {
+            orderBy: { sortOrder: "asc" },
+            include: { progress: { where: { userId }, take: 1 } },
+          },
+        },
+      }),
+      // Medal count for this user
+      prisma.userMeowMedal.count({ where: { userId, earned: true } }),
+      // Unit count for this user
+      // @ts-ignore
+      (prisma as any).userUnitProgress.count({
+        where: {
+          userId,
+          formLevel: { gte: 1 },
+          unit: { source: { not: "UNOBTAINABLE" } },
+        },
+      }),
+      // Static totals (use cached if available)
+      staticCounts
+        ? Promise.resolve(staticCounts.medalsTotal)
+        : prisma.meowMedal.count(),
+      staticCounts
+        ? Promise.resolve(staticCounts.unitsTotal)
+        // @ts-ignore
+        : (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } }),
+    ]);
 
-  const existing = await prisma.userStoryProgress.findMany({
-    where: { userId, storyChapterId: { in: storyChapterIds } },
-    select: { storyChapterId: true },
-  });
-
-  const have = new Set(existing.map((e) => e.storyChapterId));
-  const missing = storyChapterIds.filter((id) => !have.has(id)).map((storyChapterId) => ({
-    userId,
-    storyChapterId,
-  }));
-
-  if (missing.length) await prisma.userStoryProgress.createMany({ data: missing });
-}
-
-async function ensureLegendRows(userId: string) {
-  const subIds = (await prisma.legendSubchapter.findMany({ select: { id: true } })).map((s) => s.id);
-  if (!subIds.length) return;
-
-  const existing = await prisma.userLegendProgress.findMany({
-    where: { userId, subchapterId: { in: subIds } },
-    select: { subchapterId: true },
-  });
-
-  const have = new Set(existing.map((e) => e.subchapterId));
-  const missing = subIds.filter((id) => !have.has(id)).map((subchapterId) => ({
-    userId,
-    subchapterId,
-  }));
-
-  if (missing.length) await prisma.userLegendProgress.createMany({ data: missing });
-}
-
-async function ensureMedalRows(userId: string) {
-  const medalIds = (await prisma.meowMedal.findMany({ select: { id: true } })).map((m) => m.id);
-  if (!medalIds.length) return;
-
-  const existing = await prisma.userMeowMedal.findMany({
-    where: { userId, meowMedalId: { in: medalIds } },
-    select: { meowMedalId: true },
-  });
-
-  const have = new Set(existing.map((e) => e.meowMedalId));
-  const missing = medalIds.filter((id) => !have.has(id)).map((meowMedalId) => ({
-    userId,
-    meowMedalId,
-  }));
-
-  if (missing.length) await prisma.userMeowMedal.createMany({ data: missing });
-}
-
-async function computeProgressSummary(userId: string): Promise<ProgressSummary> {
-  await ensureStoryRows(userId);
-  await ensureLegendRows(userId);
-  await ensureMedalRows(userId);
-
-  // ----- Story overall
-  const storyChapters = await prisma.storyChapter.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: { progress: { where: { userId }, take: 1 } },
-  });
-
+  // ----- Story overall (pure computation, no more DB calls)
   const storyPcts = storyChapters.map((ch) => {
     const p = ch.progress[0];
     return p
       ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies })
       : 0;
   });
-
   const storyOverall =
     storyPcts.length === 0 ? 0 : Math.round(storyPcts.reduce((s, p) => s + p, 0) / storyPcts.length);
 
   // ----- Legend overall + breakdown + SoL details
-  const sagas = await prisma.legendSaga.findMany({
-    orderBy: { sortOrder: "asc" },
-    include: {
-      subchapters: {
-        orderBy: { sortOrder: "asc" },
-        include: { progress: { where: { userId }, take: 1 } },
-      },
-    },
-  });
-
   const legendPercents = sagas.flatMap((s) =>
     s.subchapters.map((sc) =>
       legendSubchapterPercent({
@@ -137,7 +109,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
       })
     )
   );
-
   const legendOverall =
     legendPercents.length === 0
       ? 0
@@ -146,7 +117,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
   const sagaBreakdown: SagaBreakdown[] = sagas.map((s) => {
     const total = s.subchapters.length;
     const completed = s.subchapters.filter((sc) => sc.progress[0]?.status === "COMPLETED").length;
-
     const sub = s.subchapters.map((sc) =>
       legendSubchapterPercent({
         crownMax: sc.progress[0]?.crownMax ?? null,
@@ -154,7 +124,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
       })
     );
     const pct = sub.length ? Math.round(sub.reduce((a, b) => a + b, 0) / sub.length) : 0;
-
     return { sagaId: s.id, sagaName: s.displayName, completed, total, pct };
   });
 
@@ -169,26 +138,9 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
       crownMax: sc.progress[0]?.crownMax ?? 0,
     })) ?? [];
 
-  // ----- Medals overall
-  const medalsTotal = await prisma.meowMedal.count();
-  const medalsEarned = await prisma.userMeowMedal.count({ where: { userId, earned: true } });
+  // ----- Medals & Units overall
   const medalsOverall = medalsTotal === 0 ? 0 : Math.round((medalsEarned / medalsTotal) * 100);
-
-  // ----- Units overall
-  // @ts-ignore – Unit model added in new migration
-  const unitsTotal = await (prisma as any).unit.count({
-    where: { source: { not: "UNOBTAINABLE" } },
-  });
-  // @ts-ignore
-  const unitsObtained = await (prisma as any).userUnitProgress.count({
-    where: {
-      userId,
-      formLevel: { gte: 1 },
-      unit: { source: { not: "UNOBTAINABLE" } },
-    },
-  });
   const unitsOverall = unitsTotal === 0 ? 0 : Math.round((unitsObtained / unitsTotal) * 100);
-
   const overall = Math.round((storyOverall + legendOverall + medalsOverall + unitsOverall) / 4);
 
   return {
@@ -211,39 +163,44 @@ export default async function SocialPage() {
   if (!session) redirect("/login");
   const userId = session.user.id as string;
 
-  // Accepted friends (both directions)
-  const friends = await prisma.friendship.findMany({
-    where: {
-      status: "ACCEPTED",
-      OR: [{ requesterId: userId }, { addresseeId: userId }],
-    },
-    select: {
-      requester: { select: { id: true, username: true, displayName: true } },
-      addressee: { select: { id: true, username: true, displayName: true } },
-    },
-  });
+  // Fetch friends, user info, and static totals in parallel
+  const [friendships, me, medalsTotal, unitsTotal] = await Promise.all([
+    prisma.friendship.findMany({
+      where: {
+        status: "ACCEPTED",
+        OR: [{ requesterId: userId }, { addresseeId: userId }],
+      },
+      select: {
+        requester: { select: { id: true, username: true, displayName: true } },
+        addressee: { select: { id: true, username: true, displayName: true } },
+      },
+    }),
+    prisma.user.findUnique({
+      where: { id: userId },
+      select: { username: true, displayName: true },
+    }),
+    prisma.meowMedal.count(),
+    // @ts-ignore
+    (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } }),
+  ]);
 
-  const friendUsers = friends.map((f) => {
-    const other = f.requester.id === userId ? f.addressee : f.requester;
-    return other;
-  });
-
-  const me = await prisma.user.findUnique({
-    where: { id: userId },
-    select: { username: true, displayName: true },
-  });
-
-  const mySummary = await computeProgressSummary(userId);
-
-  const friendSummaries = await Promise.all(
-    friendUsers.map(async (u) => ({
-      user: u,
-      summary: await computeProgressSummary(u.id),
-    }))
+  const friendUsers = friendships.map((f) =>
+    f.requester.id === userId ? f.addressee : f.requester,
   );
 
-  // Helpful: sort friends by overall descending
-  friendSummaries.sort((a, b) => b.summary.overall - a.summary.overall);
+  // Share static counts across all summary computations to avoid re-fetching
+  const staticCounts = { medalsTotal, unitsTotal };
+
+  // Compute ALL summaries in parallel (user + all friends at once)
+  const allUserIds = [userId, ...friendUsers.map((u) => u.id)];
+  const allSummaries = await Promise.all(
+    allUserIds.map((uid) => computeProgressSummary(uid, staticCounts)),
+  );
+
+  const mySummary = allSummaries[0];
+  const friendSummaries = friendUsers
+    .map((user, i) => ({ user, summary: allSummaries[i + 1] }))
+    .sort((a, b) => b.summary.overall - a.summary.overall);
 
 return (
   <div className="p-4 pt-16 md:p-8 space-y-6">
