@@ -25,8 +25,10 @@ export default async function CompareLegendSagaPage(props: {
   if (!friend) notFound();
 
   const isSelf = friend.id === viewerId;
+  const viewerRole = (session.user as any).role ?? "USER";
+  const isAdmin = viewerRole === "ADMIN";
 
-  const friendship = isSelf
+  const friendship = isSelf || isAdmin
     ? true
     : await prisma.friendship.findFirst({
         where: {
@@ -49,7 +51,7 @@ export default async function CompareLegendSagaPage(props: {
   }
 
   const progressVis = friend.privacy?.progressVisibility ?? "FRIENDS";
-  if (!isSelf && progressVis === "PRIVATE") {
+  if (!isSelf && !isAdmin && progressVis === "PRIVATE") {
     return (
       <div className="p-8 space-y-4">
         <h1 className="text-2xl font-semibold text-gray-100">Legend Comparison</h1>

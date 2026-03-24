@@ -23,7 +23,9 @@ export default async function FriendProfilePage(props: {
   if (!user) notFound();
 
   const isSelf = user.id === viewerId;
-  const friendship = isSelf
+  const viewerRole = (session.user as any).role ?? "USER";
+  const isAdmin = viewerRole === "ADMIN";
+  const friendship = isSelf || isAdmin
     ? true
     : await prisma.friendship.findFirst({
         where: {
@@ -47,7 +49,7 @@ export default async function FriendProfilePage(props: {
   }
 
   const progressVis = user.privacy?.progressVisibility ?? "FRIENDS";
-  if (!isSelf && progressVis === "PRIVATE") {
+  if (!isSelf && !isAdmin && progressVis === "PRIVATE") {
     return (
       <div className="p-8 space-y-4">
         <Link href="/social" className="text-xs text-amber-600 hover:text-amber-400 transition-colors">← Back to Social</Link>

@@ -22,28 +22,37 @@ export async function GET(req: Request) {
   let progressUserId = viewerId;
 
   if (targetUserId && targetUserId !== viewerId) {
-    // Verify friendship
-    const friendship = await prisma.friendship.findFirst({
-      where: {
-        status: "ACCEPTED",
-        OR: [
-          { requesterId: viewerId, addresseeId: targetUserId },
-          { requesterId: targetUserId, addresseeId: viewerId },
-        ],
-      },
-      select: { id: true },
+    // Admins bypass friendship and privacy checks
+    const viewer = await prisma.user.findUnique({
+      where: { id: viewerId },
+      select: { role: true },
     });
-    if (!friendship) {
-      return NextResponse.json({ error: "Not friends" }, { status: 403 });
-    }
+    const isAdmin = viewer?.role === "ADMIN";
 
-    // Check privacy
-    const targetUser = await prisma.user.findUnique({
-      where: { id: targetUserId },
-      select: { privacy: { select: { progressVisibility: true } } },
-    });
-    if (targetUser?.privacy?.progressVisibility === "PRIVATE") {
-      return NextResponse.json({ error: "Progress is private" }, { status: 403 });
+    if (!isAdmin) {
+      // Verify friendship
+      const friendship = await prisma.friendship.findFirst({
+        where: {
+          status: "ACCEPTED",
+          OR: [
+            { requesterId: viewerId, addresseeId: targetUserId },
+            { requesterId: targetUserId, addresseeId: viewerId },
+          ],
+        },
+        select: { id: true },
+      });
+      if (!friendship) {
+        return NextResponse.json({ error: "Not friends" }, { status: 403 });
+      }
+
+      // Check privacy
+      const targetUser = await prisma.user.findUnique({
+        where: { id: targetUserId },
+        select: { privacy: { select: { progressVisibility: true } } },
+      });
+      if (targetUser?.privacy?.progressVisibility === "PRIVATE") {
+        return NextResponse.json({ error: "Progress is private" }, { status: 403 });
+      }
     }
 
     progressUserId = targetUserId;

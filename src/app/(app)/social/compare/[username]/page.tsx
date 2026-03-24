@@ -103,7 +103,9 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
   });
   if (!other) notFound();
 
-  const ok = await areFriendsOrSelf(viewerId, other.id);
+  const viewerRole = (session.user as any).role ?? "USER";
+  const isAdmin = viewerRole === "ADMIN";
+  const ok = isAdmin || await areFriendsOrSelf(viewerId, other.id);
   if (!ok) {
     return (
       <div className="p-8 space-y-4">

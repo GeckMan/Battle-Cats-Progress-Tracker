@@ -18,20 +18,28 @@ export async function GET(req: NextRequest) {
   const targetUserId = searchParams.get("userId") ?? viewerId;
   const isSelf = targetUserId === viewerId;
 
-  // If viewing someone else, verify friendship
+  // If viewing someone else, verify friendship (admins bypass)
   if (!isSelf) {
-    const friendship = await prisma.friendship.findFirst({
-      where: {
-        status: "ACCEPTED",
-        OR: [
-          { requesterId: viewerId, addresseeId: targetUserId },
-          { requesterId: targetUserId, addresseeId: viewerId },
-        ],
-      },
-      select: { id: true },
+    const viewer = await prisma.user.findUnique({
+      where: { id: viewerId },
+      select: { role: true },
     });
-    if (!friendship) {
-      return NextResponse.json({ error: "Not friends" }, { status: 403 });
+    const isAdmin = viewer?.role === "ADMIN";
+
+    if (!isAdmin) {
+      const friendship = await prisma.friendship.findFirst({
+        where: {
+          status: "ACCEPTED",
+          OR: [
+            { requesterId: viewerId, addresseeId: targetUserId },
+            { requesterId: targetUserId, addresseeId: viewerId },
+          ],
+        },
+        select: { id: true },
+      });
+      if (!friendship) {
+        return NextResponse.json({ error: "Not friends" }, { status: 403 });
+      }
     }
   }
 
