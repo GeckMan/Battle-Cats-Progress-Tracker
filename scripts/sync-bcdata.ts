@@ -641,6 +641,7 @@ const ZL_TWO_CROWN_NAMES = new Set([
   "The Edge of Spacetime",
   "Cats Cradle Basin",
   "The Ururuvu Journals",
+  "New World Area: Ehen",
 ]);
 
 function getZlMaxCrowns(name: string): number {
