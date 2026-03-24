@@ -289,173 +289,135 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
         </div>
       )}
 
-      {/* ── Arc Panels ────────────────────────────────────────────────────── */}
-      {groups.map((g) => {
-        const rows = dataByArc.get(g.arc) ?? [];
-        const ids = rows.map((r) => r.id);
-        const pct = arcPct(rows);
-        const cleared = rows.filter((r) => r.cleared).length;
-        const treasuresAll = rows.filter((r) => r.treasures === "ALL").length;
-        const zombiesAll = rows.filter((r) => r.zombies === "ALL").length;
-        const total = rows.length;
-        const isOpen = open[g.arc];
+      {/* ── Arc Panels — side by side like Legend ──────────────────────────── */}
+      <div style={{ display: "grid", gridTemplateColumns: `repeat(${groups.length}, 1fr)`, gap: 8, alignItems: "start" }}>
+        {groups.map((g) => {
+          const rows = dataByArc.get(g.arc) ?? [];
+          const ids = rows.map((r) => r.id);
+          const pct = arcPct(rows);
+          const cleared = rows.filter((r) => r.cleared).length;
+          const treasuresAll = rows.filter((r) => r.treasures === "ALL").length;
+          const zombiesAll = rows.filter((r) => r.zombies === "ALL").length;
+          const total = rows.length;
+          const isOpen = open[g.arc];
 
-        return (
-          <div key={g.arc} style={{
-            background: c.panelBg,
-            border: `1px solid ${c.border}`,
-            overflow: "hidden",
-          }}>
-
-            {/* Arc Header */}
-            <div style={{
-              borderBottom: isOpen ? `1px solid ${c.accentDim}` : "none",
-              padding: "10px 12px 8px",
+          return (
+            <div key={g.arc} style={{
+              background: c.panelBg,
+              border: `1px solid ${c.border}`,
+              overflow: "hidden",
+              display: "flex",
+              flexDirection: "column",
             }}>
-              <div style={{ display: "flex", alignItems: "flex-start", justifyContent: "space-between", gap: 12 }}>
-                <div style={{ flex: 1, minWidth: 0 }}>
-                  <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 6 }}>
-                    <span style={{
-                      fontFamily: c.fontSys, fontSize: 11, fontWeight: 700,
-                      letterSpacing: "0.14em", textTransform: "uppercase", color: c.accent,
-                    }}>{arcLabel(g.arc)}</span>
-                    <span style={{
-                      fontSize: 9, fontFamily: c.fontSys, color: c.textDim,
-                      border: `1px solid ${c.borderFaint}`, padding: "1px 6px",
-                      letterSpacing: "0.06em",
-                    }}>{arcShort(g.arc)}</span>
-                    <span style={{
-                      marginLeft: "auto", fontSize: 18, fontWeight: 700,
-                      fontFamily: c.fontSys, color: pctColor(pct, c),
-                      fontVariantNumeric: "tabular-nums",
-                    }}>{pct}%</span>
-                  </div>
 
-                  <div style={{
-                    height: 4, background: c.voidPanel,
-                    border: `1px solid ${c.borderFaint}`,
-                    overflow: "hidden", marginBottom: 8,
-                  }}>
-                    <div style={{ height: "100%", width: `${pct}%`, background: barFill(pct, theme), transition: "width 0.3s" }} />
-                  </div>
-
-                  <div style={{
-                    display: "flex", gap: 16, fontSize: 11, fontFamily: c.fontSys, marginBottom: 8,
-                  }}>
-                    {[
-                      { label: "Cleared", val: cleared },
-                      { label: "Treasures", val: treasuresAll },
-                      { label: "Zombies", val: zombiesAll },
-                    ].map((s) => (
-                      <span key={s.label}>
-                        <span style={{ color: c.accentDim, letterSpacing: "0.06em", textTransform: "uppercase", fontSize: 10 }}>{s.label} </span>
-                        <span style={{ color: s.val === total ? c.dataOk : c.text, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{s.val}/{total}</span>
-                      </span>
-                    ))}
-                  </div>
-
-                  <div style={{ display: "flex", flexWrap: "wrap", gap: 4, alignItems: "center" }}>
-                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { cleared: true })} c={c}>All Cleared</BulkBtn>
-                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { treasures: "ALL" })} c={c}>Treasures → All</BulkBtn>
-                    <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { zombies: "ALL" })} c={c}>Zombies → All</BulkBtn>
-                    <span style={{ color: c.borderFaint, padding: "0 2px" }}>│</span>
-                    <BulkBtn variant="muted" onClick={() => bulkUpdate(ids, { cleared: false })} c={c}>Reset Cleared</BulkBtn>
-                    <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, { cleared: false, treasures: "NONE", zombies: "NONE" })} c={c}>Reset All</BulkBtn>
-                  </div>
+              {/* Arc Header — compact like Legend */}
+              <div style={{
+                borderBottom: isOpen ? `1px solid ${c.accentDim}` : "none",
+                padding: "6px 8px 5px",
+              }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }}>
+                  <span style={{
+                    fontFamily: c.fontSys, fontSize: 11, fontWeight: 700,
+                    letterSpacing: "0.12em", textTransform: "uppercase", color: c.accent,
+                    flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                  }}>{arcLabel(g.arc)}</span>
+                  <span style={{
+                    fontSize: 14, fontWeight: 700, fontFamily: c.fontSys,
+                    color: pctColor(pct, c), fontVariantNumeric: "tabular-nums", flexShrink: 0,
+                  }}>{pct}%</span>
+                  <button
+                    type="button"
+                    onClick={() => setOpen((o) => ({ ...o, [g.arc]: !o[g.arc] }))}
+                    style={{
+                      flexShrink: 0, fontSize: 9, fontFamily: c.fontSys, fontWeight: 500,
+                      color: c.textDim, padding: "2px 6px", border: `1px solid ${c.border}`,
+                      background: "transparent", cursor: "pointer",
+                    }}
+                  >
+                    {isOpen ? "▲" : "▼"}
+                  </button>
                 </div>
-
-                <button
-                  type="button"
-                  onClick={() => setOpen((o) => ({ ...o, [g.arc]: !o[g.arc] }))}
-                  style={{
-                    flexShrink: 0, fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
-                    letterSpacing: "0.08em", textTransform: "uppercase", color: c.textDim,
-                    padding: "4px 10px", border: `1px solid ${c.borderFaint}`,
-                    background: "transparent", cursor: "pointer", marginTop: 2,
-                  }}
-                >
-                  {isOpen ? "Hide" : "Show"}
-                </button>
-              </div>
-            </div>
-
-            {/* Chapter Table */}
-            {isOpen && (
-              <div style={{ overflowX: "auto", background: c.void }}>
-                <table style={{
-                  width: "100%", fontSize: 12, fontFamily: c.fontSys,
-                  borderCollapse: "collapse", minWidth: 560,
-                }}>
-                  <thead>
-                    <tr style={{ borderBottom: `1px solid ${c.borderFaint}` }}>
-                      {["Chapter", "Cleared", "Treasures", "Zombies"].map((h, i) => (
-                        <th key={h} style={{
-                          padding: "8px 12px",
-                          textAlign: i === 0 ? "left" : "center",
-                          fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", textTransform: "uppercase",
-                          color: c.accent, background: c.panelBg,
-                          width: i === 0 ? undefined : i === 1 ? 80 : 100,
-                        }}>{h}</th>
-                      ))}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {rows.map((r) => {
-                      const rPct = rowPct(r);
-                      const isComplete = rPct === 100;
-                      return (
-                        <tr
-                          key={r.id}
-                          style={{
-                            borderBottom: `1px solid ${c.borderFaint}`,
-                            background: isComplete ? c.dataOkFill : "transparent",
-                            transition: "background 0.15s",
-                          }}
-                        >
-                          <td style={{ padding: "8px 12px" }}>
-                            <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                              <span style={{
-                                fontWeight: 500, fontSize: 12,
-                                color: isComplete ? c.dataOk : c.text,
-                              }}>
-                                {r.chapter.displayName}
-                              </span>
-                              <div style={{ width: 100, height: 2, background: c.voidPanel, overflow: "hidden" }}>
-                                <div style={{ height: "100%", width: `${rPct}%`, background: barFill(rPct, theme), transition: "width 0.2s" }} />
-                              </div>
-                            </div>
-                          </td>
-                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
-                            <div style={{ display: "flex", justifyContent: "center" }}>
-                              <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
-                            </div>
-                          </td>
-                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
-                            <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} c={c} />
-                          </td>
-                          <td style={{ padding: "8px 12px", textAlign: "center" }}>
-                            <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} c={c} />
-                          </td>
-                        </tr>
-                      );
-                    })}
-                  </tbody>
-                </table>
 
                 <div style={{
-                  display: "flex", justifyContent: "space-between", alignItems: "center",
-                  padding: "5px 12px", fontSize: 9, letterSpacing: "0.1em", textTransform: "uppercase",
-                  color: c.textDim, borderTop: `1px solid ${c.border}`,
-                  fontFamily: c.fontSys,
+                  height: 3, background: c.voidPanel,
+                  border: `1px solid ${c.border}`,
+                  overflow: "hidden", marginBottom: 4,
                 }}>
-                  <span>{total} chapters</span>
-                  <span>{cleared}/{total} cleared</span>
+                  <div style={{ height: "100%", width: `${pct}%`, background: barFill(pct, theme), transition: "width 0.3s" }} />
+                </div>
+
+                <div style={{
+                  display: "flex", alignItems: "center", gap: 6, fontSize: 10, fontFamily: c.fontSys, flexWrap: "wrap",
+                }}>
+                  {[
+                    { label: "C", val: cleared },
+                    { label: "T", val: treasuresAll },
+                    { label: "Z", val: zombiesAll },
+                  ].map((s) => (
+                    <span key={s.label}>
+                      <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase" }}>{s.label} </span>
+                      <span style={{ color: s.val === total ? c.dataOk : c.text, fontWeight: 500, fontVariantNumeric: "tabular-nums" }}>{s.val}/{total}</span>
+                    </span>
+                  ))}
+                  <span style={{ flex: 1 }} />
+                  <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { cleared: true, treasures: "ALL", zombies: "ALL" })} c={c}>All</BulkBtn>
+                  <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, { cleared: false, treasures: "NONE", zombies: "NONE" })} c={c}>Reset</BulkBtn>
                 </div>
               </div>
-            )}
-          </div>
-        );
-      })}
+
+              {/* Chapter Rows — compact list like Legend */}
+              {isOpen && (
+                <div style={{ overflowY: "auto", maxHeight: "70vh", background: c.void, flex: 1 }}>
+                  {rows.map((r) => {
+                    const rPct = rowPct(r);
+                    const isComplete = rPct === 100;
+                    return (
+                      <div key={r.id} style={{
+                        display: "flex", flexDirection: "column", gap: 3,
+                        padding: "5px 8px",
+                        borderBottom: `1px solid ${c.borderFaint}`,
+                        background: isComplete ? c.dataOkFill : r.cleared ? c.accentFill : "transparent",
+                        fontSize: 12, fontFamily: c.fontSys,
+                      }}>
+                        {/* Chapter name + progress bar */}
+                        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                          <span style={{
+                            flex: 1, minWidth: 0, overflow: "hidden", textOverflow: "ellipsis",
+                            whiteSpace: "nowrap", fontWeight: 500,
+                            color: isComplete ? c.dataOk : r.cleared ? c.text : c.textDim,
+                          }}>
+                            {r.chapter.displayName}
+                          </span>
+                          <span style={{
+                            fontSize: 10, fontWeight: 600, fontFamily: c.fontSys,
+                            color: pctColor(rPct, c), fontVariantNumeric: "tabular-nums", flexShrink: 0,
+                          }}>{rPct}%</span>
+                        </div>
+                        {/* Controls row */}
+                        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                          <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
+                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>T</span>
+                          <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} c={c} />
+                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Z</span>
+                          <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} c={c} />
+                        </div>
+                      </div>
+                    );
+                  })}
+                  <div style={{
+                    display: "flex", justifyContent: "space-between", padding: "4px 8px",
+                    fontSize: 9, letterSpacing: "0.1em", textTransform: "uppercase",
+                    color: c.textDim, borderTop: `1px solid ${c.border}`, fontFamily: c.fontSys,
+                  }}>
+                    <span>{total} chapters</span>
+                    <span>{cleared}/{total} cleared</span>
+                  </div>
+                </div>
+              )}
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }
