@@ -350,9 +350,9 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                   display: "flex", alignItems: "center", gap: 6, fontSize: 10, fontFamily: c.fontSys, flexWrap: "wrap",
                 }}>
                   {[
-                    { label: "C", val: cleared },
-                    { label: "T", val: treasuresAll },
-                    { label: "Z", val: zombiesAll },
+                    { label: "Cleared", val: cleared },
+                    { label: "Treasures", val: treasuresAll },
+                    { label: "Zombies", val: zombiesAll },
                   ].map((s) => (
                     <span key={s.label}>
                       <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase" }}>{s.label} </span>
@@ -396,9 +396,9 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                         {/* Controls row */}
                         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                           <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
-                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>T</span>
+                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Treasures</span>
                           <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} c={c} />
-                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Z</span>
+                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Zombies</span>
                           <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} c={c} />
                         </div>
                       </div>
