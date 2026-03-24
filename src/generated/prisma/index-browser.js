@@ -176,7 +176,9 @@ exports.Prisma.LegendSubchapterScalarFieldEnum = {
   id: 'id',
   sagaId: 'sagaId',
   displayName: 'displayName',
-  sortOrder: 'sortOrder'
+  sortOrder: 'sortOrder',
+  stageCount: 'stageCount',
+  maxCrowns: 'maxCrowns'
 };
 
 exports.Prisma.UserLegendProgressScalarFieldEnum = {
