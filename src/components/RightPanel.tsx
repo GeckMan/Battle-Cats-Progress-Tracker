@@ -89,7 +89,7 @@ export default function RightPanel({
         <div className="flex-1 overflow-hidden">
           {activeTab === "activity" && <ActivityTab />}
           {activeTab === "chat" && <ChatTab currentUserId={currentUserId} />}
-          {activeTab === "admin" && isAdmin && <AdminTab />}
+          {activeTab === "admin" && isAdmin && <AdminTab currentUserId={currentUserId} />}
         </div>
       </aside>
     </>
@@ -862,7 +862,7 @@ type AdminUser = {
   createdAt: string;
 };
 
-function AdminTab() {
+function AdminTab({ currentUserId }: { currentUserId: string }) {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [loading, setLoading] = useState(true);
   const [search, setSearch] = useState("");
@@ -872,6 +872,8 @@ function AdminTab() {
   const [muteMenu, setMuteMenu] = useState<string | null>(null);
   const [confirmRole, setConfirmRole] = useState<string | null>(null);
   const [feedback, setFeedback] = useState<{ msg: string; type: "ok" | "err" } | null>(null);
+  const [friends, setFriends] = useState<Set<string>>(new Set());
+  const [pendingOutgoing, setPendingOutgoing] = useState<Set<string>>(new Set());
 
   const fetchUsers = useCallback(async () => {
     try {
@@ -884,7 +886,35 @@ function AdminTab() {
     }
   }, []);
 
-  useEffect(() => { fetchUsers(); }, [fetchUsers]);
+  const fetchFriends = useCallback(async () => {
+    try {
+      const res = await fetch("/api/social/summary");
+      if (!res.ok) return;
+      const data = await res.json();
+      setFriends(new Set((data.friends ?? []).map((f: any) => f.user.id)));
+      setPendingOutgoing(new Set((data.outgoing ?? []).map((o: any) => o.to.id)));
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => { fetchUsers(); fetchFriends(); }, [fetchUsers, fetchFriends]);
+
+  const sendFriendRequest = useCallback(async (toUserId: string) => {
+    try {
+      const res = await fetch("/api/social/request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ toUserId }),
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.autoAccepted) {
+        await fetchFriends();
+      } else {
+        setPendingOutgoing((prev) => new Set(prev).add(toUserId));
+      }
+      setFeedback({ msg: data.autoAccepted ? "Friend added!" : "Request sent", type: "ok" });
+    } catch { /* ignore */ }
+  }, [fetchFriends]);
 
   // Auto-clear feedback
   useEffect(() => {
@@ -1065,7 +1095,30 @@ function AdminTab() {
             </div>
 
             {/* Actions row */}
-            <div className="flex items-center gap-1.5 mt-2">
+            <div className="flex items-center gap-1.5 mt-2 flex-wrap">
+              {/* View Profile / Add Friend */}
+              {user.id !== currentUserId && (
+                friends.has(user.id) ? (
+                  <Link
+                    href={`/social/${encodeURIComponent(user.username)}`}
+                    className="text-[11px] px-2 py-1 rounded border border-gray-600/50 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors"
+                  >
+                    View Profile
+                  </Link>
+                ) : pendingOutgoing.has(user.id) ? (
+                  <span className="text-[11px] px-2 py-1 rounded border border-amber-900/50 text-amber-700">
+                    Pending
+                  </span>
+                ) : (
+                  <button
+                    onClick={() => sendFriendRequest(user.id)}
+                    className="text-[11px] px-2 py-1 rounded border border-amber-800/50 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors"
+                  >
+                    + Add Friend
+                  </button>
+                )
+              )}
+
               {/* Promote / Demote button */}
               {user.role === "ADMIN" ? (
                 <button
