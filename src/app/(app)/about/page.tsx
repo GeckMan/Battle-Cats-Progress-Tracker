@@ -76,64 +76,59 @@ export default function AboutPage() {
         </ul>
       </section>
 
-      {/* Announcements */}
+      {/* Changelog */}
       <section className="space-y-4">
         <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
-          Announcements
+          Changelog
         </h2>
 
-        <Announcement
-          date="March 2026"
-          title="Friend unit collection viewer"
-          body="You can now browse a friend's unit collection from their profile page. See which cats they've obtained and at what form level, with the same filters and sprite display as your own collection. Fully read-only — no editing their progress."
+        <ChangelogEntry
+          version="0.9"
+          date="March 24, 2026"
+          items={[
+            "Chat friend requests — hover a username in chat to add them as a friend or view their profile",
+            "Smarter polling — reduced unnecessary background requests for activity, chat, and friend request counts",
+            "Per-subchapter crown limits — ZL chapters now correctly show 1 or 2 crowns instead of 4",
+          ]}
         />
 
-        <Announcement
+        <ChangelogEntry
+          version="0.8"
           date="March 2026"
-          title="Mobile support"
-          body="The site is now fully responsive. On phones and tablets, the sidebar collapses into a hamburger menu, grids reflow to fit your screen, and tables scroll horizontally. Everything works on the go."
+          items={[
+            "Unit comparison view — see what units friends have that you don't, filter by rarity and form level",
+            "Friend unit collection browser — view a friend's full unit collection from their profile",
+            "BCData auto-sync — unit names and legend stages update automatically from game data weekly",
+          ]}
         />
 
-        <Announcement
+        <ChangelogEntry
+          version="0.7"
           date="March 2026"
-          title="Activity & Chat panel"
-          body="The activity feed and a new global chat are now in a slide-out panel on the right side of the screen. Click the Activity & Chat button in the top-right corner to open it. Mass updates are auto-summarized and chat is visible to all users."
+          items={[
+            "Mobile support — fully responsive layout with hamburger menu and touch-friendly controls",
+            "Activity & Chat panel — slide-out drawer with a live activity feed and global chat",
+            "NERV theme — optional Evangelion-inspired CRT terminal aesthetic in Settings",
+          ]}
         />
 
-        <Announcement
+        <ChangelogEntry
+          version="0.6"
           date="March 2026"
-          title="Unit Collection launched"
-          body="Browse all 800+ cats with wiki sprites, track which ones you own and their form level, and filter by rarity, unlock source, or gacha set. Unit progress now counts toward your overall completion percentage."
+          items={[
+            "Unit Collection — browse 800+ cats with sprites, track form levels, filter by rarity/source/gacha set",
+            "Milestones page — track Crazed, Manic, Advent stages, and Catclaw ranks",
+            "Progress comparison — compare your overall stats and SoL subchapters with friends",
+          ]}
         />
 
-        <Announcement
-          date="March 2026"
-          title="Milestones page added"
-          body="You can now track Crazed Cats, Manic Cats, Advent stages, and Catclaw milestones from the new Milestones page in the nav."
-        />
-
-        <Announcement
+        <ChangelogEntry
+          version="0.1"
           date="January 2026"
-          title="Site launch"
-          body="Battle Cats Progress is live. Story, Legend, Medals, and the friend/compare system are all up and running. More stuff coming as time allows."
+          items={[
+            "Site launch — Story, Legend, Medals tracking and friend/compare system",
+          ]}
         />
-      </section>
-
-      {/* Coming Soon */}
-      <section className="space-y-3">
-        <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
-          Coming Soon
-        </h2>
-        <ul className="space-y-2 text-sm text-gray-400">
-          <li className="flex gap-2">
-            <span className="text-gray-600">◦</span>
-            <span><strong className="text-gray-300">Profile Settings</strong> — update your display name and privacy preferences</span>
-          </li>
-          <li className="flex gap-2">
-            <span className="text-gray-600">◦</span>
-            <span><strong className="text-gray-300">Better Compare</strong> — side by side progress for all story arcs, legend sagas, and medals</span>
-          </li>
-        </ul>
       </section>
 
       {/* Credits */}
@@ -176,22 +171,31 @@ export default function AboutPage() {
   );
 }
 
-function Announcement({
+function ChangelogEntry({
+  version,
   date,
-  title,
-  body,
+  items,
 }: {
+  version: string;
   date: string;
-  title: string;
-  body: string;
+  items: string[];
 }) {
   return (
-    <div className="border border-gray-700 rounded-lg p-4 bg-black space-y-1">
+    <div className="border border-gray-700 rounded-lg p-4 bg-black space-y-2">
       <div className="flex items-center gap-3">
+        <span className="text-xs font-bold bg-amber-950/50 border border-amber-800 text-amber-300 rounded px-1.5 py-0.5 leading-none">
+          v{version}
+        </span>
         <span className="text-xs text-gray-500">{date}</span>
-        <span className="text-sm font-semibold text-gray-100">{title}</span>
       </div>
-      <p className="text-sm text-gray-400 leading-relaxed">{body}</p>
+      <ul className="space-y-1">
+        {items.map((item, i) => (
+          <li key={i} className="flex gap-2 text-sm text-gray-400 leading-relaxed">
+            <span className="text-gray-600 mt-0.5 flex-shrink-0">•</span>
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }

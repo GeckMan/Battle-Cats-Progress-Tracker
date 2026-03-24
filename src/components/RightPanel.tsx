@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState, useCallback, useRef } from "react";
+import Link from "next/link";
 import { useTheme } from "@/lib/theme-context";
 
 /* ═══════════════════════════════════════════════════════════════════════════
@@ -553,6 +554,8 @@ type ChatMsg = {
   createdAt: string;
 };
 
+type FriendInfo = { id: string; username: string };
+
 function ChatTab({ currentUserId }: { currentUserId: string }) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [loading, setLoading] = useState(true);
@@ -562,8 +565,49 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
   const [sending, setSending] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [mutedUntil, setMutedUntil] = useState<string | null>(null);
+  const [friends, setFriends] = useState<Map<string, FriendInfo>>(new Map());
+  const [pendingOutgoing, setPendingOutgoing] = useState<Set<string>>(new Set());
   const bottomRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+
+  // Fetch friend list so we can show "View Profile" vs "Add Friend" per user
+  const fetchFriends = useCallback(async () => {
+    try {
+      const res = await fetch("/api/social/summary");
+      if (!res.ok) return;
+      const data = await res.json();
+      const friendMap = new Map<string, FriendInfo>();
+      for (const f of data.friends ?? []) {
+        friendMap.set(f.user.id, { id: f.user.id, username: f.user.username });
+      }
+      setFriends(friendMap);
+      const outgoing = new Set<string>();
+      for (const o of data.outgoing ?? []) {
+        outgoing.add(o.to.id);
+      }
+      setPendingOutgoing(outgoing);
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => { fetchFriends(); }, [fetchFriends]);
+
+  const sendFriendRequest = useCallback(async (toUserId: string) => {
+    try {
+      const res = await fetch("/api/social/request", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ toUserId }),
+      });
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.autoAccepted) {
+        // They had a pending request to us — now we're friends
+        await fetchFriends();
+      } else {
+        setPendingOutgoing((prev) => new Set(prev).add(toUserId));
+      }
+    } catch { /* ignore */ }
+  }, [fetchFriends]);
 
   const fetchMessages = useCallback(async (before?: string) => {
     try {
@@ -591,7 +635,7 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
 
   useEffect(() => { fetchMessages(); }, [fetchMessages]);
 
-  // Poll for new messages every 10s
+  // Poll for new messages every 30s (reduced from 10s — event-driven refresh on send)
   useEffect(() => {
     const interval = setInterval(async () => {
       try {
@@ -605,7 +649,7 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
           return [...newMsgs, ...prev];
         });
       } catch { /* ignore poll errors */ }
-    }, 10000);
+    }, 30000);
     return () => clearInterval(interval);
   }, []);
 
@@ -683,7 +727,14 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
         )}
 
         {displayMessages.map((msg) => (
-          <ChatBubble key={msg.id} msg={msg} isMe={msg.userId === currentUserId} />
+          <ChatBubble
+            key={msg.id}
+            msg={msg}
+            isMe={msg.userId === currentUserId}
+            isFriend={friends.has(msg.userId)}
+            isPendingOutgoing={pendingOutgoing.has(msg.userId)}
+            onAddFriend={() => sendFriendRequest(msg.userId)}
+          />
         ))}
         <div ref={bottomRef} />
       </div>
@@ -724,7 +775,19 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
   );
 }
 
-function ChatBubble({ msg, isMe }: { msg: ChatMsg; isMe: boolean }) {
+function ChatBubble({
+  msg,
+  isMe,
+  isFriend,
+  isPendingOutgoing,
+  onAddFriend,
+}: {
+  msg: ChatMsg;
+  isMe: boolean;
+  isFriend: boolean;
+  isPendingOutgoing: boolean;
+  onAddFriend: () => void;
+}) {
   const name = msg.displayName ?? msg.username;
   const isAdmin = msg.role === "ADMIN";
   const time = new Date(msg.createdAt);
@@ -741,7 +804,7 @@ function ChatBubble({ msg, isMe }: { msg: ChatMsg; isMe: boolean }) {
     <div className={`px-2 py-1.5 rounded transition-colors group ${
       isMe ? "bg-amber-950/20 border-l-2 border-amber-700" : "hover:bg-gray-900/40"
     }`}>
-      <div className="flex items-baseline gap-2">
+      <div className="flex items-center gap-2">
         <span className={`text-xs font-medium ${isMe ? "text-amber-200" : "text-amber-300"}`}>
           {name}
           {isMe && <span className="text-amber-600 ml-1">(you)</span>}
@@ -754,6 +817,31 @@ function ChatBubble({ msg, isMe }: { msg: ChatMsg; isMe: boolean }) {
         <span className="text-[10px] text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
           {isToday ? timeStr : `${dateStr} ${timeStr}`}
         </span>
+        {/* Friend / Profile action — hidden until hover, skip for own messages */}
+        {!isMe && (
+          <span className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
+            {isFriend ? (
+              <Link
+                href={`/social/${encodeURIComponent(msg.username)}`}
+                className="text-[9px] px-1.5 py-0.5 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors whitespace-nowrap"
+              >
+                View Profile
+              </Link>
+            ) : isPendingOutgoing ? (
+              <span className="text-[9px] px-1.5 py-0.5 rounded border border-amber-900 text-amber-700 whitespace-nowrap">
+                Pending
+              </span>
+            ) : (
+              <button
+                type="button"
+                onClick={onAddFriend}
+                className="text-[9px] px-1.5 py-0.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+              >
+                + Add Friend
+              </button>
+            )}
+          </span>
+        )}
       </div>
       <div className="text-sm text-gray-300 break-words">{msg.content}</div>
     </div>

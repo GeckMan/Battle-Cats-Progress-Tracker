@@ -81,10 +81,10 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
     }
   }, [currentUserId]);
 
-  // Initial check + poll every 15s
+  // Initial check + poll every 60s (reduced from 15s — refreshes on panel open/close)
   useEffect(() => {
     checkUnread();
-    const interval = setInterval(checkUnread, 15000);
+    const interval = setInterval(checkUnread, 60000);
     return () => clearInterval(interval);
   }, [checkUnread]);
 
@@ -103,16 +103,19 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
     []
   );
 
-  // Mark current tab as read on open
+  // Mark current tab as read on open + refresh counts
   const handleOpen = useCallback(() => {
     setOpen(true);
     handleTabChange(activeTab);
-  }, [activeTab, handleTabChange]);
+    checkUnread();
+  }, [activeTab, handleTabChange, checkUnread]);
 
   // Re-check on close (so badge updates while browsing)
   const handleClose = useCallback(() => {
     setOpen(false);
-  }, []);
+    // Refresh unread counts after a short delay so new items show on the badge
+    setTimeout(checkUnread, 500);
+  }, [checkUnread]);
 
   return (
     <>

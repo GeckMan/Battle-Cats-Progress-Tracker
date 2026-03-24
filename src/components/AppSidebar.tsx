@@ -53,9 +53,10 @@ export default function AppSidebar() {
     } catch { /* ignore */ }
   }, []);
 
+  // Check on mount + poll every 90s (reduced from 30s — friend requests are infrequent)
   useEffect(() => {
     checkPending();
-    const interval = setInterval(checkPending, 30000);
+    const interval = setInterval(checkPending, 90000);
     return () => clearInterval(interval);
   }, [checkPending]);
 
