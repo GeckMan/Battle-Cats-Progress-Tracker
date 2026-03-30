@@ -3,7 +3,7 @@
 import { useMemo, useState, useRef, useEffect } from "react";
 import { useTheme } from "@/lib/theme-context";
 import { getThemeColors, barFill, type ThemeColors } from "@/lib/theme-colors";
-import { MedalTooltip } from "@/components/MedalTooltip";
+import { MedalTooltip, MedalTooltipProvider, useMedalTooltip } from "@/components/MedalTooltip";
 
 type Row = {
   id: string;
@@ -20,6 +20,7 @@ const HEX_GAP = 4; // px gap between hexagons
 const HEX_RATIO = 1.155; // height/width ratio for regular hexagon (2/√3)
 
 function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggle: (id: string, earned: boolean) => void }) {
+  const tip = useMedalTooltip();
   const containerRef = useRef<HTMLDivElement>(null);
   const [containerW, setContainerW] = useState(1200);
 
@@ -54,70 +55,72 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
         const y = row * rowH;
 
         return (
-          <MedalTooltip key={m.id} name={m.name} description={m.description} earned={m.earned}>
-            <button
-              type="button"
-              onClick={() => onToggle(m.id, !m.earned)}
-              style={{
+          <button
+            key={m.id}
+            type="button"
+            onClick={() => onToggle(m.id, !m.earned)}
+            onMouseEnter={(e) => tip?.show({ name: m.name, description: m.description, earned: m.earned, x: e.clientX, y: e.clientY })}
+            onMouseMove={(e) => tip?.move(e.clientX, e.clientY)}
+            onMouseLeave={() => tip?.hide()}
+            style={{
+              position: "absolute",
+              left: x,
+              top: y,
+              width: hexW,
+              height: hexH,
+              clipPath: HEX_CLIP,
+              border: "none",
+              background: m.earned
+                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
+                : c.void,
+              cursor: "pointer",
+              padding: 0,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+              contain: "layout style paint",
+              contentVisibility: "auto" as any,
+            }}
+          >
+            {/* Single inner div instead of two nested clip-path divs */}
+            {m.earned && (
+              <div style={{
                 position: "absolute",
-                left: x,
-                top: y,
-                width: hexW,
-                height: hexH,
+                inset: 2,
                 clipPath: HEX_CLIP,
-                border: "none",
-                background: m.earned
-                  ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
-                  : c.void,
-                cursor: "pointer",
-                padding: 0,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                overflow: "hidden",
-                contain: "layout style paint",
-                contentVisibility: "auto" as any,
-              }}
-            >
-              {/* Single inner div instead of two nested clip-path divs */}
-              {m.earned && (
-                <div style={{
-                  position: "absolute",
-                  inset: 2,
-                  clipPath: HEX_CLIP,
-                  background: "rgba(255,152,48,0.03)",
-                  boxShadow: `0 0 8px ${c.accent}`,
-                }} />
+                background: "rgba(255,152,48,0.03)",
+                boxShadow: `0 0 8px ${c.accent}`,
+              }} />
+            )}
+            {/* Content */}
+            <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              {m.imageFile ? (
+                <img
+                  src={`/medals/${m.imageFile}`}
+                  alt={m.name}
+                  loading="lazy"
+                  style={{
+                    width: "75%",
+                    height: "75%",
+                    objectFit: "contain",
+                    pointerEvents: "none",
+                    filter: m.earned ? "none" : "grayscale(1)",
+                    opacity: m.earned ? 1 : 0.3,
+                  }}
+                />
+              ) : (
+                <span style={{
+                  fontSize: Math.max(16, hexW * 0.25),
+                  fontWeight: 700,
+                  color: m.earned ? c.accent : c.textDim,
+                  fontFamily: c.fontSys,
+                }}>
+                  {m.earned ? "★" : "?"}
+                </span>
               )}
-              {/* Content */}
-              <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-                {m.imageFile ? (
-                  <img
-                    src={`/medals/${m.imageFile}`}
-                    alt={m.name}
-                    loading="lazy"
-                    style={{
-                      width: "75%",
-                      height: "75%",
-                      objectFit: "contain",
-                      pointerEvents: "none",
-                      filter: m.earned ? "none" : "grayscale(1)",
-                      opacity: m.earned ? 1 : 0.3,
-                    }}
-                  />
-                ) : (
-                  <span style={{
-                    fontSize: Math.max(16, hexW * 0.25),
-                    fontWeight: 700,
-                    color: m.earned ? c.accent : c.textDim,
-                    fontFamily: c.fontSys,
-                  }}>
-                    {m.earned ? "★" : "?"}
-                  </span>
-                )}
-              </div>
-            </button>
-          </MedalTooltip>
+            </div>
+          </button>
         );
       })}
     </div>
@@ -227,6 +230,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
   }
 
   return (
+    <MedalTooltipProvider>
     <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
       {/* ── Header Panel ──────────────────────────────────────────────────── */}
       <div style={{
@@ -296,11 +300,13 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
       </div>
 
       {/* ── Medal Grid — hexagonal for NERV, circular for default ─────────── */}
+      {/* ── Medal Grid — hexagonal for NERV, circular for default ─────────── */}
       {theme === "nerv" ? (
         <HexGrid items={data} c={c} onToggle={handleToggle} />
       ) : (
         <CircleGrid items={data} c={c} onToggle={handleToggle} />
       )}
     </div>
+    </MedalTooltipProvider>
   );
 }
