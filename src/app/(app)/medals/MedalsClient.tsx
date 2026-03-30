@@ -33,20 +33,18 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
   }, []);
 
   // Compute hex size to fill the container width
-  // Target ~12-14 columns for a nice honeycomb, with hexes ~100px wide
   const targetCols = Math.max(6, Math.floor(containerW / 110));
-  // Odd rows are offset by half a hex, so we need room for that
   const hexW = Math.floor((containerW - HEX_GAP * targetCols) / (targetCols + 0.5));
   const hexH = Math.floor(hexW * HEX_RATIO);
   const cols = targetCols;
 
   const colW = hexW + HEX_GAP;
-  const rowH = Math.floor(hexH * 0.75) + HEX_GAP; // 75% vertical stacking for honeycomb
+  const rowH = Math.floor(hexH * 0.75) + HEX_GAP;
   const rowCount = Math.ceil(items.length / cols);
   const totalH = rowCount * rowH + (hexH - rowH) + 8;
 
   return (
-    <div ref={containerRef} style={{ position: "relative", width: "100%", height: totalH, minHeight: 200 }}>
+    <div ref={containerRef} style={{ position: "relative", width: "100%", height: totalH, minHeight: 200, contain: "layout style" }}>
       {items.map((m, i) => {
         const col = i % cols;
         const row = Math.floor(i / cols);
@@ -68,36 +66,29 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
               height: hexH,
               clipPath: HEX_CLIP,
               border: "none",
-              background: m.earned ? c.accentFill : c.void,
+              background: m.earned
+                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
+                : c.void,
               cursor: "pointer",
-              transition: "all 0.15s",
               padding: 0,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
               overflow: "hidden",
+              contain: "layout style paint",
+              contentVisibility: "auto" as any,
             }}
           >
-            {/* Inner hex border effect */}
-            <div style={{
-              position: "absolute",
-              inset: 0,
-              clipPath: HEX_CLIP,
-              border: "none",
-              background: m.earned
-                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
-                : c.void,
-            }} />
-            {/* Hex outline via box-shadow trick on an inner div */}
-            <div style={{
-              position: "absolute",
-              inset: 2,
-              clipPath: HEX_CLIP,
-              background: m.earned ? "rgba(255,152,48,0.03)" : c.void,
-              boxShadow: m.earned
-                ? `0 0 8px ${c.accent}`
-                : "none",
-            }} />
+            {/* Single inner div instead of two nested clip-path divs */}
+            {m.earned && (
+              <div style={{
+                position: "absolute",
+                inset: 2,
+                clipPath: HEX_CLIP,
+                background: "rgba(255,152,48,0.03)",
+                boxShadow: `0 0 8px ${c.accent}`,
+              }} />
+            )}
             {/* Content */}
             <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
               {m.imageFile ? (
@@ -140,6 +131,7 @@ function CircleGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onTo
       display: "grid",
       gap: 10,
       gridTemplateColumns: "repeat(auto-fill, minmax(88px, 1fr))",
+      contain: "layout style",
     }}>
       {items.map((m) => (
         <button
@@ -160,9 +152,10 @@ function CircleGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onTo
             justifyContent: "center",
             overflow: "hidden",
             cursor: "pointer",
-            transition: "all 0.15s",
             opacity: m.earned ? 1 : 0.6,
             boxShadow: m.earned ? `0 0 6px ${c.accentFill}` : "none",
+            contain: "layout style paint",
+            contentVisibility: "auto" as any,
           }}
         >
           {m.imageFile ? (
