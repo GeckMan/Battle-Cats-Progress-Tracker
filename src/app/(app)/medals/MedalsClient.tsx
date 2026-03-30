@@ -70,10 +70,8 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
               height: hexH,
               clipPath: HEX_CLIP,
               border: "none",
-              // Earned: gold fill acts as the hex "border ring"
-              // Unearned: dark void fill
               background: m.earned
-                ? c.accent
+                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
                 : c.void,
               cursor: "pointer",
               padding: 0,
@@ -84,15 +82,15 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
               contain: "layout style paint",
             }}
           >
-            {/* Inner hex: inset by 3px to reveal gold border on earned medals */}
-            <div style={{
-              position: "absolute",
-              inset: m.earned ? 3 : 0,
-              clipPath: m.earned ? HEX_CLIP : undefined,
-              background: m.earned
-                ? `linear-gradient(160deg, rgba(30,25,15,0.95), rgba(15,12,8,0.98))`
-                : "transparent",
-            }} />
+            {m.earned && (
+              <div style={{
+                position: "absolute",
+                inset: 2,
+                clipPath: HEX_CLIP,
+                background: "rgba(255,152,48,0.03)",
+                boxShadow: `0 0 8px ${c.accent}`,
+              }} />
+            )}
             {/* Content */}
             <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
               {m.imageFile ? (
