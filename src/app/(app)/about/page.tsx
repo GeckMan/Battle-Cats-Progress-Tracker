@@ -1,3 +1,5 @@
+import AboutClient from "./AboutClient";
+
 export default function AboutPage() {
   return (
     <div className="p-4 pt-16 md:p-8 max-w-2xl space-y-10">
@@ -166,6 +168,9 @@ export default function AboutPage() {
           </p>
         </div>
       </section>
+
+      {/* Easter egg */}
+      <AboutClient />
 
     </div>
   );
