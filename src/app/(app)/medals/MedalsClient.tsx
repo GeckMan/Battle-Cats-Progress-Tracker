@@ -3,6 +3,7 @@
 import { useMemo, useState, useRef, useEffect } from "react";
 import { useTheme } from "@/lib/theme-context";
 import { getThemeColors, barFill, type ThemeColors } from "@/lib/theme-colors";
+import { MedalTooltip } from "@/components/MedalTooltip";
 
 type Row = {
   id: string;
@@ -53,70 +54,70 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
         const y = row * rowH;
 
         return (
-          <button
-            key={m.id}
-            type="button"
-            onClick={() => onToggle(m.id, !m.earned)}
-            title={`${m.name}\n${m.description}`}
-            style={{
-              position: "absolute",
-              left: x,
-              top: y,
-              width: hexW,
-              height: hexH,
-              clipPath: HEX_CLIP,
-              border: "none",
-              background: m.earned
-                ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
-                : c.void,
-              cursor: "pointer",
-              padding: 0,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              overflow: "hidden",
-              contain: "layout style paint",
-              contentVisibility: "auto" as any,
-            }}
-          >
-            {/* Single inner div instead of two nested clip-path divs */}
-            {m.earned && (
-              <div style={{
+          <MedalTooltip key={m.id} name={m.name} description={m.description} earned={m.earned}>
+            <button
+              type="button"
+              onClick={() => onToggle(m.id, !m.earned)}
+              style={{
                 position: "absolute",
-                inset: 2,
+                left: x,
+                top: y,
+                width: hexW,
+                height: hexH,
                 clipPath: HEX_CLIP,
-                background: "rgba(255,152,48,0.03)",
-                boxShadow: `0 0 8px ${c.accent}`,
-              }} />
-            )}
-            {/* Content */}
-            <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
-              {m.imageFile ? (
-                <img
-                  src={`/medals/${m.imageFile}`}
-                  alt={m.name}
-                  loading="lazy"
-                  style={{
-                    width: "75%",
-                    height: "75%",
-                    objectFit: "contain",
-                    pointerEvents: "none",
-                    filter: m.earned ? "none" : "grayscale(1)",
-                    opacity: m.earned ? 1 : 0.3,
-                  }}
-                />
-              ) : (
-                <span style={{
-                  fontSize: Math.max(16, hexW * 0.25),
-                  fontWeight: 700,
-                  color: m.earned ? c.accent : c.textDim,
-                  fontFamily: c.fontSys,
-                }}>
-                  {m.earned ? "★" : "?"}
-                </span>
+                border: "none",
+                background: m.earned
+                  ? `linear-gradient(135deg, ${c.accentFill}, rgba(255,152,48,0.12))`
+                  : c.void,
+                cursor: "pointer",
+                padding: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                overflow: "hidden",
+                contain: "layout style paint",
+                contentVisibility: "auto" as any,
+              }}
+            >
+              {/* Single inner div instead of two nested clip-path divs */}
+              {m.earned && (
+                <div style={{
+                  position: "absolute",
+                  inset: 2,
+                  clipPath: HEX_CLIP,
+                  background: "rgba(255,152,48,0.03)",
+                  boxShadow: `0 0 8px ${c.accent}`,
+                }} />
               )}
-            </div>
-          </button>
+              {/* Content */}
+              <div style={{ position: "relative", zIndex: 1, width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                {m.imageFile ? (
+                  <img
+                    src={`/medals/${m.imageFile}`}
+                    alt={m.name}
+                    loading="lazy"
+                    style={{
+                      width: "75%",
+                      height: "75%",
+                      objectFit: "contain",
+                      pointerEvents: "none",
+                      filter: m.earned ? "none" : "grayscale(1)",
+                      opacity: m.earned ? 1 : 0.3,
+                    }}
+                  />
+                ) : (
+                  <span style={{
+                    fontSize: Math.max(16, hexW * 0.25),
+                    fontWeight: 700,
+                    color: m.earned ? c.accent : c.textDim,
+                    fontFamily: c.fontSys,
+                  }}>
+                    {m.earned ? "★" : "?"}
+                  </span>
+                )}
+              </div>
+            </button>
+          </MedalTooltip>
         );
       })}
     </div>
@@ -134,54 +135,54 @@ function CircleGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onTo
       contain: "layout style",
     }}>
       {items.map((m) => (
-        <button
-          key={m.id}
-          type="button"
-          onClick={() => onToggle(m.id, !m.earned)}
-          title={`${m.name}\n${m.description}`}
-          style={{
-            width: 96,
-            height: 96,
-            borderRadius: "50%",
-            border: m.earned
-              ? `1px solid ${c.accent}`
-              : `1px solid ${c.borderFaint}`,
-            background: m.earned ? c.accentFill : c.void,
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            overflow: "hidden",
-            cursor: "pointer",
-            opacity: m.earned ? 1 : 0.6,
-            boxShadow: m.earned ? `0 0 6px ${c.accentFill}` : "none",
-            contain: "layout style paint",
-            contentVisibility: "auto" as any,
-          }}
-        >
-          {m.imageFile ? (
-            <img
-              src={`/medals/${m.imageFile}`}
-              alt={m.name}
-              loading="lazy"
-              style={{
-                width: "100%",
-                height: "100%",
-                objectFit: "cover",
-                pointerEvents: "none",
-                filter: m.earned ? "none" : "grayscale(1)",
-                opacity: m.earned ? 1 : 0.4,
-              }}
-            />
-          ) : (
-            <span style={{
-              fontSize: 18,
-              fontWeight: 700,
-              color: m.earned ? c.accent : c.textDim,
-            }}>
-              {m.earned ? "★" : "?"}
-            </span>
-          )}
-        </button>
+        <MedalTooltip key={m.id} name={m.name} description={m.description} earned={m.earned}>
+          <button
+            type="button"
+            onClick={() => onToggle(m.id, !m.earned)}
+            style={{
+              width: 96,
+              height: 96,
+              borderRadius: "50%",
+              border: m.earned
+                ? `1px solid ${c.accent}`
+                : `1px solid ${c.borderFaint}`,
+              background: m.earned ? c.accentFill : c.void,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              overflow: "hidden",
+              cursor: "pointer",
+              opacity: m.earned ? 1 : 0.6,
+              boxShadow: m.earned ? `0 0 6px ${c.accentFill}` : "none",
+              contain: "layout style paint",
+              contentVisibility: "auto" as any,
+            }}
+          >
+            {m.imageFile ? (
+              <img
+                src={`/medals/${m.imageFile}`}
+                alt={m.name}
+                loading="lazy"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                  pointerEvents: "none",
+                  filter: m.earned ? "none" : "grayscale(1)",
+                  opacity: m.earned ? 1 : 0.4,
+                }}
+              />
+            ) : (
+              <span style={{
+                fontSize: 18,
+                fontWeight: 700,
+                color: m.earned ? c.accent : c.textDim,
+              }}>
+                {m.earned ? "★" : "?"}
+              </span>
+            )}
+          </button>
+        </MedalTooltip>
       ))}
     </div>
   );

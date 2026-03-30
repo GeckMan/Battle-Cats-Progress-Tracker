@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react"
 import { useSearchParams, useRouter } from "next/navigation";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 import { useLongPress } from "@/lib/hooks/useLongPress";
+import { PretextAccordion } from "@/components/PretextAccordion";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -207,68 +208,91 @@ function UnitDetailPanel({
           </div>
         </div>
 
-        {/* Form names */}
-        <div className="space-y-1">
-          <div className="text-xs text-gray-500 uppercase tracking-wide">Forms</div>
-          <div className="flex flex-col gap-0.5 text-sm">
+        {/* Form names — accordion with pretext height calculation */}
+        <PretextAccordion
+          title="Forms"
+          defaultOpen
+          textContent={[
+            `F1: ${unit.name}`,
+            unit.evolvedName ? `F2: ${unit.evolvedName}` : "",
+            unit.trueName ? `TF: ${unit.trueName}` : "",
+            unit.ultraName ? `UF: ${unit.ultraName}` : "",
+          ].filter(Boolean).join(" | ")}
+          font='14px ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif'
+          lineHeight={22}
+          extraHeight={8}
+        >
+          <div className="flex flex-col gap-0.5 text-sm pt-1">
             <span className="text-gray-300">F1: {unit.name}</span>
             {unit.evolvedName && <span className="text-gray-300">F2: {unit.evolvedName}</span>}
             {unit.trueName && <span className="text-gray-300">TF: {unit.trueName}</span>}
             {unit.ultraName && <span className="text-gray-300">UF: {unit.ultraName}</span>}
           </div>
-        </div>
+        </PretextAccordion>
 
-        {/* Source / How to obtain */}
-        <div className="space-y-1">
-          <div className="text-xs text-gray-500 uppercase tracking-wide">How to Obtain</div>
-          <p className="text-sm text-gray-300">{SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"}</p>
-          {unit.setName && <p className="text-xs text-gray-500">{unit.setName}</p>}
-        </div>
+        {/* Source / How to obtain — accordion */}
+        <PretextAccordion
+          title="How to Obtain"
+          defaultOpen
+          textContent={`${SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"}${unit.setName ? " " + unit.setName : ""}`}
+          lineHeight={21}
+          extraHeight={4}
+        >
+          <div className="pt-1">
+            <p className="text-sm text-gray-300">{SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"}</p>
+            {unit.setName && <p className="text-xs text-gray-500 mt-0.5">{unit.setName}</p>}
+          </div>
+        </PretextAccordion>
 
-        {/* True Form evolution requirements */}
+        {/* Evolution — accordion (starts collapsed for cleaner look) */}
         {evo?.tf && (
-          <div className="space-y-2">
-            <div className="text-xs text-gray-500 uppercase tracking-wide">True Form Evolution</div>
-            <div className="rounded border border-gray-800 bg-gray-900/60 p-3 space-y-2">
+          <PretextAccordion
+            title="True Form Evolution"
+            defaultOpen={false}
+            accentColor="rgb(252 211 77)"
+            extraHeight={80 + (evo.tf.items.length * 32)}
+          >
+            <div className="rounded border border-gray-800 bg-gray-900/60 p-3 space-y-2 mt-1">
               <div className="text-sm text-amber-300 font-medium">{evo.tf.xp.toLocaleString()} XP</div>
               <div className="flex flex-wrap gap-2">
                 {evo.tf.items.map((item) => (
                   <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-gray-700 bg-gray-800 text-xs text-gray-300">
-                    {item.name} <span className="text-amber-400 font-bold">×{item.count}</span>
+                    {item.name} <span className="text-amber-400 font-bold">&times;{item.count}</span>
                   </span>
                 ))}
               </div>
             </div>
-          </div>
+          </PretextAccordion>
         )}
 
-        {/* Ultra Form evolution requirements */}
         {evo?.uf && (
-          <div className="space-y-2">
-            <div className="text-xs text-gray-500 uppercase tracking-wide">Ultra Form Evolution</div>
-            <div className="rounded border border-purple-900/40 bg-purple-950/20 p-3 space-y-2">
+          <PretextAccordion
+            title="Ultra Form Evolution"
+            defaultOpen={false}
+            accentColor="rgb(192 132 252)"
+            extraHeight={80 + (evo.uf.items.length * 32)}
+          >
+            <div className="rounded border border-purple-900/40 bg-purple-950/20 p-3 space-y-2 mt-1">
               <div className="text-sm text-purple-300 font-medium">{evo.uf.xp.toLocaleString()} XP</div>
               <div className="flex flex-wrap gap-2">
                 {evo.uf.items.map((item) => (
                   <span key={item.id} className="inline-flex items-center gap-1 px-2 py-1 rounded border border-purple-800/40 bg-purple-900/30 text-xs text-gray-300">
-                    {item.name} <span className="text-purple-300 font-bold">×{item.count}</span>
+                    {item.name} <span className="text-purple-300 font-bold">&times;{item.count}</span>
                   </span>
                 ))}
               </div>
             </div>
-          </div>
+          </PretextAccordion>
         )}
 
-        {/* No evolution data */}
         {!evo?.tf && !evo?.uf && (
-          <div className="space-y-1">
-            <div className="text-xs text-gray-500 uppercase tracking-wide">Evolution</div>
-            <p className="text-sm text-gray-500">
+          <PretextAccordion title="Evolution" defaultOpen>
+            <p className="text-sm text-gray-500 pt-1">
               {realMaxForm(unit) <= 2
                 ? "This unit does not have a True Form."
                 : "Evolution data not available for this unit."}
             </p>
-          </div>
+          </PretextAccordion>
         )}
 
         {/* Wiki link */}
