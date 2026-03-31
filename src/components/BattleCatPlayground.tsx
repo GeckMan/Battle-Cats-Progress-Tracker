@@ -1,49 +1,37 @@
 "use client";
 
-import { useRef, useEffect, useCallback } from "react";
+import { useRef, useEffect } from "react";
 
 /**
- * BattleCatPlayground — Transparent canvas overlay that sits on top of
- * the About page. When mounted, it scans all text nodes in the parent
- * container, measures each character's position, hides the DOM text,
- * and re-renders every character on canvas as a physics body.
+ * BattleCatPlayground — Per-character DOM displacement.
  *
- * The cat is draggable/throwable with gravity. Characters inside the
- * cat's elliptical hitbox get pushed outward and spring back.
+ * Instead of rendering text on canvas (which caused duplication and missing text),
+ * this wraps every visible character in a <span> and applies CSS transforms
+ * for physics displacement. The cat is a simple positioned <img>.
  *
- * On unmount, DOM text is restored.
+ * ✅ No text duplication (text stays in DOM)
+ * ✅ No text disappearing (nothing is hidden)
+ * ✅ Per-character displacement with rotation
+ * ✅ Works with all content (badges, links, styled elements)
+ * ✅ Clean restoration on unmount
  */
 
-/* ── Config ────────────────────────────────────────────────────────────── */
-
-const PUSH_FORCE = 9;
-const SPRING = 0.02;
-const DAMPING = 0.91;
+/* ── Config ── */
+const PUSH = 12;
+const SPRING = 0.025;
+const DAMP = 0.9;
 const GRAVITY = 0.5;
 const BOUNCE = 0.5;
-const THROW_SCALE = 1.4;
-const CAT_SIZE = 130;
-const CAT_RX = 56;
-const CAT_RY = 48;
-const MAX_LETTERS = 5000;
+const THROW = 1.4;
+const CAT_W = 130;
+const CAT_RX = 60;
+const CAT_RY = 52;
+const MAX = 8000;
 
-/* ── Types ─────────────────────────────────────────────────────────────── */
-
-type State = {
-  count: number;
-  homeX: Float32Array; homeY: Float32Array;
-  x: Float32Array; y: Float32Array;
-  vx: Float32Array; vy: Float32Array;
-  angle: Float32Array; angVel: Float32Array;
-  charW: Float32Array; alpha: Float32Array;
-  fSize: Float32Array;
-  chars: string[]; fonts: string[]; colors: string[];
-  catX: number; catY: number; catVx: number; catVy: number; catRot: number;
-  dragging: boolean; dragOX: number; dragOY: number;
-  dragLX: number; dragLY: number; dragVX: number; dragVY: number;
-  catImg: HTMLImageElement | null;
-  animId: number; lastTime: number;
-  hiddenEls: { el: HTMLElement; orig: string }[];
+type Restoration = {
+  wrapper: HTMLSpanElement;
+  parent: Node;
+  original: Text;
 };
 
 export default function BattleCatPlayground({
@@ -51,322 +39,283 @@ export default function BattleCatPlayground({
 }: {
   containerRef: React.RefObject<HTMLDivElement | null>;
 }) {
-  const canvasRef = useRef<HTMLCanvasElement>(null);
-  const stateRef = useRef<State | null>(null);
-
-  const getState = useCallback((): State => {
-    if (!stateRef.current) {
-      stateRef.current = {
-        count: 0,
-        homeX: new Float32Array(MAX_LETTERS), homeY: new Float32Array(MAX_LETTERS),
-        x: new Float32Array(MAX_LETTERS), y: new Float32Array(MAX_LETTERS),
-        vx: new Float32Array(MAX_LETTERS), vy: new Float32Array(MAX_LETTERS),
-        angle: new Float32Array(MAX_LETTERS), angVel: new Float32Array(MAX_LETTERS),
-        charW: new Float32Array(MAX_LETTERS), alpha: new Float32Array(MAX_LETTERS),
-        fSize: new Float32Array(MAX_LETTERS),
-        chars: [], fonts: [], colors: [],
-        catX: 200, catY: 100, catVx: 3, catVy: 0, catRot: 0,
-        dragging: false, dragOX: 0, dragOY: 0,
-        dragLX: 0, dragLY: 0, dragVX: 0, dragVY: 0,
-        catImg: null, animId: 0, lastTime: 0, hiddenEls: [],
-      };
-    }
-    return stateRef.current;
-  }, []);
+  const catRef = useRef<HTMLImageElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const container = containerRef.current;
-    if (!canvas || !container) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
-    const s = getState();
+    const ctr = containerRef.current;
+    const catEl = catRef.current;
+    if (!ctr || !catEl) return;
 
-    // Load cat image
-    const img = new Image();
-    img.src = "/battlecat.png";
-    img.onload = () => { s.catImg = img; };
+    /* ── Physics arrays ── */
+    const els: HTMLSpanElement[] = [];
+    let count = 0;
+    const hx = new Float32Array(MAX), hy = new Float32Array(MAX);
+    const ddx = new Float32Array(MAX), ddy = new Float32Array(MAX);
+    const vx = new Float32Array(MAX), vy = new Float32Array(MAX);
+    const ang = new Float32Array(MAX), angV = new Float32Array(MAX);
+    const restorations: Restoration[] = [];
 
-    // Scan DOM text and build character arrays
-    function scanText() {
-      if (!container || !canvas || !ctx) return;
-      const rect = container.getBoundingClientRect();
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      canvas.width = rect.width * dpr;
-      canvas.height = rect.height * dpr;
-      canvas.style.width = rect.width + "px";
-      canvas.style.height = rect.height + "px";
-      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    /* Cat state */
+    let catX = 200, catY = 100, catVx = 3, catVy = 0, catRot = 0;
+    let dragging = false, dragOX = 0, dragOY = 0;
+    let dragLX = 0, dragLY = 0, dragVX = 0, dragVY = 0;
+    let animId = 0;
 
-      // Restore any previously hidden elements
-      for (const h of s.hiddenEls) h.el.style.color = h.orig;
-      s.hiddenEls = [];
-      s.count = 0;
-      s.chars.length = 0;
-      s.fonts.length = 0;
-      s.colors.length = 0;
-
-      // Walk all text-containing elements
-      const walker = document.createTreeWalker(container, NodeFilter.SHOW_TEXT);
-      const textNodes: { node: Text; parent: HTMLElement }[] = [];
-      let node: Text | null;
-      while ((node = walker.nextNode() as Text | null)) {
-        const parent = node.parentElement;
-        if (!parent || !node.textContent?.trim()) continue;
-        // Skip the canvas itself and the close/unleash buttons
-        if (parent.closest("canvas") || parent.closest("[data-playground-ui]")) continue;
-        textNodes.push({ node, parent });
-      }
-
-      // For each text node, measure character positions using Range
-      const containerRect = container.getBoundingClientRect();
-
-      for (const { node, parent } of textNodes) {
-        const text = node.textContent || "";
-        const computed = getComputedStyle(parent);
-        const font = `${computed.fontWeight} ${computed.fontSize} ${computed.fontFamily}`;
-        const color = computed.color;
-        const opacity = parseFloat(computed.opacity) || 1;
-
-        // Track parent to hide later
-        if (!s.hiddenEls.some((h) => h.el === parent)) {
-          s.hiddenEls.push({ el: parent, orig: parent.style.color });
-        }
-
-        const range = document.createRange();
-        for (let i = 0; i < text.length; i++) {
-          if (s.count >= MAX_LETTERS) break;
-          if (text[i] === "\n") continue;
-
-          range.setStart(node, i);
-          range.setEnd(node, i + 1);
-          const charRect = range.getBoundingClientRect();
-
-          if (charRect.width < 0.5 && text[i] === " ") continue; // Skip collapsed spaces
-
-          const idx = s.count++;
-          const cx = charRect.left - containerRect.left + charRect.width / 2;
-          const cy = charRect.top - containerRect.top + charRect.height / 2;
-
-          s.homeX[idx] = cx; s.homeY[idx] = cy;
-          s.x[idx] = cx; s.y[idx] = cy;
-          s.vx[idx] = 0; s.vy[idx] = 0;
-          s.angle[idx] = 0; s.angVel[idx] = 0;
-          s.charW[idx] = charRect.width;
-          s.alpha[idx] = opacity;
-          s.fSize[idx] = parseFloat(computed.fontSize);
-          s.chars[idx] = text[i];
-          s.fonts[idx] = font;
-          s.colors[idx] = color;
-        }
-      }
-
-      // Hide the DOM text (make transparent) so canvas chars show instead
-      for (const h of s.hiddenEls) {
-        h.el.style.color = "transparent";
-      }
+    /* ── Wrap text nodes in per-character spans ── */
+    const walker = document.createTreeWalker(ctr, NodeFilter.SHOW_TEXT);
+    const textNodes: Text[] = [];
+    let node: Node | null;
+    while ((node = walker.nextNode())) {
+      const p = (node as Text).parentElement;
+      if (!p || !(node as Text).textContent?.trim()) continue;
+      if (p.closest("[data-playground-ui]")) continue;
+      textNodes.push(node as Text);
     }
 
-    scanText();
-    s.lastTime = performance.now();
+    for (const tn of textNodes) {
+      const text = tn.textContent || "";
+      const par = tn.parentNode;
+      if (!par) continue;
 
-    const resizeObs = new ResizeObserver(() => scanText());
-    resizeObs.observe(container);
+      const wrap = document.createElement("span");
+      wrap.style.display = "contents"; // doesn't affect layout
 
-    // Main loop
-    function frame(now: number) {
-      if (!canvas || !ctx || !container) return;
-      const dt = Math.min((now - s.lastTime) / 1000, 0.05);
-      s.lastTime = now;
-
-      const W = parseFloat(canvas.style.width);
-      const H = parseFloat(canvas.style.height);
-
-      // Cat physics
-      if (!s.dragging) {
-        s.catVy += GRAVITY;
-        s.catVx *= 0.995;
-        s.catVy *= 0.995;
-        s.catX += s.catVx;
-        s.catY += s.catVy;
-        s.catRot += s.catVx * 0.012;
-
-        if (s.catY + CAT_SIZE / 2 > H) { s.catY = H - CAT_SIZE / 2; s.catVy *= -BOUNCE; s.catVx *= 0.9; if (Math.abs(s.catVy) < 1) s.catVy = 0; }
-        if (s.catY - CAT_SIZE / 2 < 0) { s.catY = CAT_SIZE / 2; s.catVy *= -BOUNCE; }
-        if (s.catX - CAT_SIZE / 2 < 0) { s.catX = CAT_SIZE / 2; s.catVx *= -BOUNCE; }
-        if (s.catX + CAT_SIZE / 2 > W) { s.catX = W - CAT_SIZE / 2; s.catVx *= -BOUNCE; }
-      } else {
-        s.catRot *= 0.92;
+      for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        // Leave whitespace as plain text nodes to preserve natural spacing/wrapping
+        if (/\s/.test(ch)) {
+          wrap.appendChild(document.createTextNode(ch));
+          continue;
+        }
+        if (count >= MAX) {
+          wrap.appendChild(document.createTextNode(text.slice(i)));
+          break;
+        }
+        const sp = document.createElement("span");
+        sp.textContent = ch;
+        sp.style.display = "inline-block";
+        sp.style.willChange = "transform";
+        wrap.appendChild(sp);
+        els.push(sp);
+        count++;
       }
 
-      const cx = s.catX, cy = s.catY;
+      par.replaceChild(wrap, tn);
+      restorations.push({ wrapper: wrap, parent: par, original: tn });
+    }
 
-      // Per-character physics
-      for (let i = 0; i < s.count; i++) {
-        let vx = s.vx[i], vy = s.vy[i];
-        const px = s.x[i], py = s.y[i];
+    /* ── Measure home positions (container-relative) ── */
+    function measureHomes() {
+      const cr = ctr!.getBoundingClientRect();
+      for (let i = 0; i < count; i++) {
+        const r = els[i].getBoundingClientRect();
+        hx[i] = r.left - cr.left + r.width / 2;
+        hy[i] = r.top - cr.top + r.height / 2;
+      }
+    }
+    measureHomes();
 
-        // Elliptical collision
-        const dx = px - cx, dy = py - cy;
-        const nx = dx / CAT_RX, ny = dy / CAT_RY;
-        const eDist = nx * nx + ny * ny;
+    let W = ctr.scrollWidth || ctr.offsetWidth;
+    let H = ctr.scrollHeight || ctr.offsetHeight;
 
-        if (eDist < 1.0 && eDist > 0.001) {
-          const d = Math.sqrt(eDist);
-          const f = PUSH_FORCE * (1 - d) * (1 + Math.abs(s.catVx) * 0.04 + Math.abs(s.catVy) * 0.04);
-          const gnx = dx / (CAT_RX * CAT_RX);
-          const gny = dy / (CAT_RY * CAT_RY);
-          const glen = Math.sqrt(gnx * gnx + gny * gny) || 1;
-          vx += (gnx / glen) * f + s.catVx * 0.25;
-          vy += (gny / glen) * f + s.catVy * 0.25;
-          s.angVel[i] += ((gnx / glen) * 0.2 - (gny / glen) * 0.1) * f * 0.06;
+    /* ── Animation loop ── */
+    function frame() {
+      /* Cat physics */
+      if (!dragging) {
+        catVy += GRAVITY;
+        catVx *= 0.995;
+        catVy *= 0.995;
+        catX += catVx;
+        catY += catVy;
+        catRot += catVx * 0.012;
+
+        // Bounce off walls/floor
+        if (catY + CAT_W / 2 > H) {
+          catY = H - CAT_W / 2;
+          catVy *= -BOUNCE;
+          catVx *= 0.9;
+          if (Math.abs(catVy) < 1) catVy = 0;
+        }
+        if (catY - CAT_W / 2 < 0) { catY = CAT_W / 2; catVy *= -BOUNCE; }
+        if (catX - CAT_W / 2 < 0) { catX = CAT_W / 2; catVx *= -BOUNCE; }
+        if (catX + CAT_W / 2 > W) { catX = W - CAT_W / 2; catVx *= -BOUNCE; }
+      } else {
+        catRot *= 0.92;
+      }
+
+      // Update cat element position
+      catEl!.style.left = (catX - CAT_W / 2) + "px";
+      catEl!.style.top = (catY - CAT_W / 2) + "px";
+      catEl!.style.transform = `rotate(${catRot}rad)`;
+
+      /* Per-character physics */
+      for (let i = 0; i < count; i++) {
+        let _vx = vx[i], _vy = vy[i];
+        const cx = hx[i] + ddx[i], cy = hy[i] + ddy[i];
+
+        // Elliptical collision with cat
+        const ex = cx - catX, ey = cy - catY;
+        const nx = ex / CAT_RX, ny = ey / CAT_RY;
+        const eD = nx * nx + ny * ny;
+
+        if (eD < 1.0 && eD > 0.001) {
+          const d = Math.sqrt(eD);
+          const f = PUSH * (1 - d) * (1 + Math.abs(catVx) * 0.04 + Math.abs(catVy) * 0.04);
+          const gx = ex / (CAT_RX * CAT_RX);
+          const gy = ey / (CAT_RY * CAT_RY);
+          const gl = Math.sqrt(gx * gx + gy * gy) || 1;
+          _vx += (gx / gl) * f + catVx * 0.25;
+          _vy += (gy / gl) * f + catVy * 0.25;
+          angV[i] += ((gx / gl) * 0.2 - (gy / gl) * 0.1) * f * 0.06;
         }
 
-        // Spring home
-        const hdx = s.homeX[i] - px, hdy = s.homeY[i] - py;
-        const hd = Math.sqrt(hdx * hdx + hdy * hdy);
-        if (hd > 0.3) {
-          const sf = SPRING * (1 + hd * 0.0004);
-          vx += hdx * sf;
-          vy += hdy * sf;
-          s.angVel[i] -= s.angle[i] * 0.05;
+        // Spring back to home
+        const sd = Math.sqrt(ddx[i] * ddx[i] + ddy[i] * ddy[i]);
+        if (sd > 0.3) {
+          const sf = SPRING * (1 + sd * 0.0004);
+          _vx -= ddx[i] * sf;
+          _vy -= ddy[i] * sf;
+          angV[i] -= ang[i] * 0.05;
         } else {
-          s.angle[i] *= 0.85;
+          ang[i] *= 0.85;
         }
 
-        s.vx[i] = vx * DAMPING;
-        s.vy[i] = vy * DAMPING;
-        s.angVel[i] *= 0.88;
-        s.x[i] = px + s.vx[i];
-        s.y[i] = py + s.vy[i];
-        s.angle[i] += s.angVel[i];
+        vx[i] = _vx * DAMP;
+        vy[i] = _vy * DAMP;
+        angV[i] *= 0.88;
+        ddx[i] += vx[i];
+        ddy[i] += vy[i];
+        ang[i] += angV[i];
+
+        // Apply CSS transform (only when needed)
+        if (Math.abs(ddx[i]) > 0.1 || Math.abs(ddy[i]) > 0.1 || Math.abs(ang[i]) > 0.001) {
+          els[i].style.transform = `translate(${ddx[i]}px,${ddy[i]}px) rotate(${ang[i]}rad)`;
+        } else if (els[i].style.transform) {
+          els[i].style.transform = "";
+        }
       }
 
-      // Render
-      const dpr = Math.min(window.devicePixelRatio || 1, 2);
-      ctx.clearRect(0, 0, canvas.width / dpr, canvas.height / dpr);
-
-      // Characters
-      let prevFont = "";
-      for (let i = 0; i < s.count; i++) {
-        if (s.chars[i] === " ") continue;
-        const font = s.fonts[i];
-        if (font !== prevFont) { ctx.font = font; prevFont = font; }
-        ctx.save();
-        ctx.translate(s.x[i], s.y[i]);
-        if (Math.abs(s.angle[i]) > 0.001) ctx.rotate(s.angle[i]);
-        ctx.globalAlpha = s.alpha[i];
-        ctx.fillStyle = s.colors[i];
-        ctx.textAlign = "center";
-        ctx.textBaseline = "middle";
-        ctx.fillText(s.chars[i], 0, 0);
-        ctx.restore();
-      }
-
-      // Cat
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.rotate(s.catRot);
-      if (s.catImg) {
-        ctx.drawImage(s.catImg, -CAT_SIZE / 2, -CAT_SIZE / 2, CAT_SIZE, CAT_SIZE);
-      } else {
-        ctx.fillStyle = "white";
-        ctx.beginPath();
-        ctx.ellipse(0, 0, CAT_RX, CAT_RY, 0, 0, Math.PI * 2);
-        ctx.fill();
-        ctx.strokeStyle = "#333";
-        ctx.lineWidth = 3;
-        ctx.stroke();
-      }
-      ctx.restore();
-
-      // Shadow
-      if (s.catY + CAT_SIZE / 2 < H - 5) {
-        const ss = Math.max(0.3, 1 - (H - s.catY - CAT_SIZE / 2) / H);
-        ctx.fillStyle = `rgba(0,0,0,${0.1 * ss})`;
-        ctx.beginPath();
-        ctx.ellipse(cx, H - 3, CAT_RX * ss * 0.7, 3 * ss, 0, 0, Math.PI * 2);
-        ctx.fill();
-      }
-
-      s.animId = requestAnimationFrame(frame);
+      animId = requestAnimationFrame(frame);
     }
 
-    s.animId = requestAnimationFrame(frame);
+    animId = requestAnimationFrame(frame);
 
-    return () => {
-      cancelAnimationFrame(s.animId);
-      resizeObs.disconnect();
-      // Restore DOM text
-      for (const h of s.hiddenEls) h.el.style.color = h.orig;
-      s.hiddenEls = [];
-    };
-  }, [getState, containerRef]);
+    /* ── Resize observer ── */
+    let rt: ReturnType<typeof setTimeout> | undefined;
+    const ro = new ResizeObserver(() => {
+      clearTimeout(rt);
+      rt = setTimeout(() => {
+        W = ctr.scrollWidth || ctr.offsetWidth;
+        H = ctr.scrollHeight || ctr.offsetHeight;
+        // Re-measure home positions (transforms are additive to home, so reset first)
+        for (let i = 0; i < count; i++) {
+          els[i].style.transform = "";
+          ddx[i] = 0; ddy[i] = 0;
+          vx[i] = 0; vy[i] = 0;
+          ang[i] = 0; angV[i] = 0;
+        }
+        measureHomes();
+      }, 200);
+    });
+    ro.observe(ctr);
 
-  // Mouse/touch handlers
-  const getPos = useCallback((e: React.MouseEvent | React.TouchEvent) => {
-    const canvas = canvasRef.current;
-    if (!canvas) return { x: 0, y: 0 };
-    const rect = canvas.getBoundingClientRect();
-    const cx = "touches" in e ? e.touches[0]?.clientX ?? 0 : e.clientX;
-    const cy = "touches" in e ? e.touches[0]?.clientY ?? 0 : e.clientY;
-    return { x: cx - rect.left, y: cy - rect.top };
-  }, []);
+    /* ── Input handlers ── */
+    function pos(e: MouseEvent | TouchEvent) {
+      const cr = ctr!.getBoundingClientRect();
+      const px = "touches" in e
+        ? (e as TouchEvent).touches[0]?.clientX ?? 0
+        : (e as MouseEvent).clientX;
+      const py = "touches" in e
+        ? (e as TouchEvent).touches[0]?.clientY ?? 0
+        : (e as MouseEvent).clientY;
+      return { x: px - cr.left, y: py - cr.top };
+    }
 
-  const handleDown = useCallback((e: React.MouseEvent | React.TouchEvent) => {
-    const s = getState();
-    const pos = getPos(e);
-    const dx = pos.x - s.catX, dy = pos.y - s.catY;
-    if ((dx / (CAT_RX + 12)) ** 2 + (dy / (CAT_RY + 12)) ** 2 < 1) {
-      s.dragging = true;
-      s.dragOX = dx; s.dragOY = dy;
-      s.dragLX = pos.x; s.dragLY = pos.y;
-      s.dragVX = 0; s.dragVY = 0;
-      s.catVx = 0; s.catVy = 0;
+    function onDown(e: MouseEvent | TouchEvent) {
+      const p = pos(e);
+      const ex = p.x - catX, ey = p.y - catY;
+      if ((ex / (CAT_RX + 15)) ** 2 + (ey / (CAT_RY + 15)) ** 2 < 1) {
+        dragging = true;
+        dragOX = ex; dragOY = ey;
+        dragLX = p.x; dragLY = p.y;
+        dragVX = 0; dragVY = 0;
+        catVx = 0; catVy = 0;
+        catEl!.style.cursor = "grabbing";
+        e.preventDefault();
+      }
+    }
+
+    function onMove(e: MouseEvent | TouchEvent) {
+      if (!dragging) return;
+      const p = pos(e);
+      catX = p.x - dragOX;
+      catY = p.y - dragOY;
+      dragVX = (p.x - dragLX) * 0.6 + dragVX * 0.4;
+      dragVY = (p.y - dragLY) * 0.6 + dragVY * 0.4;
+      dragLX = p.x; dragLY = p.y;
       e.preventDefault();
     }
-  }, [getState, getPos]);
 
-  const handleMove = useCallback((e: React.MouseEvent | React.TouchEvent) => {
-    const s = getState();
-    if (!s.dragging) return;
-    const pos = getPos(e);
-    s.catX = pos.x - s.dragOX;
-    s.catY = pos.y - s.dragOY;
-    s.dragVX = (pos.x - s.dragLX) * 0.6 + s.dragVX * 0.4;
-    s.dragVY = (pos.y - s.dragLY) * 0.6 + s.dragVY * 0.4;
-    s.dragLX = pos.x; s.dragLY = pos.y;
-    e.preventDefault();
-  }, [getState, getPos]);
+    function onUp() {
+      if (!dragging) return;
+      catVx = dragVX * THROW;
+      catVy = dragVY * THROW;
+      dragging = false;
+      catEl!.style.cursor = "grab";
+    }
 
-  const handleUp = useCallback(() => {
-    const s = getState();
-    if (!s.dragging) return;
-    s.catVx = s.dragVX * THROW_SCALE;
-    s.catVy = s.dragVY * THROW_SCALE;
-    s.dragging = false;
-  }, [getState]);
+    // Attach mouse events to cat element (for grab detection) and window (for move/up)
+    catEl.addEventListener("mousedown", onDown);
+    catEl.addEventListener("touchstart", onDown, { passive: false });
+    // Also listen on container for clicks that might be slightly outside cat bounds
+    ctr.addEventListener("mousedown", onDown);
+    ctr.addEventListener("touchstart", onDown, { passive: false });
+    window.addEventListener("mousemove", onMove);
+    window.addEventListener("mouseup", onUp);
+    window.addEventListener("touchmove", onMove, { passive: false });
+    window.addEventListener("touchend", onUp);
+
+    /* ── Cleanup ── */
+    return () => {
+      cancelAnimationFrame(animId);
+      ro.disconnect();
+      clearTimeout(rt);
+
+      catEl.removeEventListener("mousedown", onDown);
+      catEl.removeEventListener("touchstart", onDown);
+      ctr.removeEventListener("mousedown", onDown);
+      ctr.removeEventListener("touchstart", onDown);
+      window.removeEventListener("mousemove", onMove);
+      window.removeEventListener("mouseup", onUp);
+      window.removeEventListener("touchmove", onMove);
+      window.removeEventListener("touchend", onUp);
+
+      // Restore original text nodes
+      for (const { wrapper, parent, original } of restorations) {
+        try {
+          parent.replaceChild(original, wrapper);
+        } catch {
+          // If DOM has changed, just remove transforms
+        }
+      }
+    };
+  }, [containerRef]);
 
   return (
-    <canvas
-      ref={canvasRef}
-      onMouseDown={handleDown}
-      onMouseMove={handleMove}
-      onMouseUp={handleUp}
-      onMouseLeave={handleUp}
-      onTouchStart={handleDown}
-      onTouchMove={handleMove}
-      onTouchEnd={handleUp}
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      ref={catRef}
+      src="/battlecat.png"
+      alt=""
+      draggable={false}
       style={{
         position: "absolute",
-        top: 0,
-        left: 0,
-        width: "100%",
-        height: "100%",
+        width: CAT_W,
+        height: CAT_W,
         cursor: "grab",
-        touchAction: "none",
+        zIndex: 20,
         pointerEvents: "auto",
-        zIndex: 10,
+        userSelect: "none",
       }}
     />
   );
