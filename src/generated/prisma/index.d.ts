@@ -2817,6 +2817,7 @@ export namespace Prisma {
     role: string | null
     chatMutedUntil: Date | null
     theme: string | null
+    hasUnleashedCat: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2830,6 +2831,7 @@ export namespace Prisma {
     role: string | null
     chatMutedUntil: Date | null
     theme: string | null
+    hasUnleashedCat: boolean | null
     createdAt: Date | null
     updatedAt: Date | null
   }
@@ -2843,6 +2845,7 @@ export namespace Prisma {
     role: number
     chatMutedUntil: number
     theme: number
+    hasUnleashedCat: number
     createdAt: number
     updatedAt: number
     _all: number
@@ -2858,6 +2861,7 @@ export namespace Prisma {
     role?: true
     chatMutedUntil?: true
     theme?: true
+    hasUnleashedCat?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2871,6 +2875,7 @@ export namespace Prisma {
     role?: true
     chatMutedUntil?: true
     theme?: true
+    hasUnleashedCat?: true
     createdAt?: true
     updatedAt?: true
   }
@@ -2884,6 +2889,7 @@ export namespace Prisma {
     role?: true
     chatMutedUntil?: true
     theme?: true
+    hasUnleashedCat?: true
     createdAt?: true
     updatedAt?: true
     _all?: true
@@ -2970,6 +2976,7 @@ export namespace Prisma {
     role: string
     chatMutedUntil: Date | null
     theme: string
+    hasUnleashedCat: boolean
     createdAt: Date
     updatedAt: Date
     _count: UserCountAggregateOutputType | null
@@ -3000,6 +3007,7 @@ export namespace Prisma {
     role?: boolean
     chatMutedUntil?: boolean
     theme?: boolean
+    hasUnleashedCat?: boolean
     createdAt?: boolean
     updatedAt?: boolean
     privacy?: boolean | User$privacyArgs<ExtArgs>
@@ -3025,6 +3033,7 @@ export namespace Prisma {
     role?: boolean
     chatMutedUntil?: boolean
     theme?: boolean
+    hasUnleashedCat?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -3038,6 +3047,7 @@ export namespace Prisma {
     role?: boolean
     chatMutedUntil?: boolean
     theme?: boolean
+    hasUnleashedCat?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }, ExtArgs["result"]["user"]>
@@ -3051,11 +3061,12 @@ export namespace Prisma {
     role?: boolean
     chatMutedUntil?: boolean
     theme?: boolean
+    hasUnleashedCat?: boolean
     createdAt?: boolean
     updatedAt?: boolean
   }
 
-  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "role" | "chatMutedUntil" | "theme" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
+  export type UserOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "username" | "email" | "passwordHash" | "displayName" | "role" | "chatMutedUntil" | "theme" | "hasUnleashedCat" | "createdAt" | "updatedAt", ExtArgs["result"]["user"]>
   export type UserInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     privacy?: boolean | User$privacyArgs<ExtArgs>
     sentFriendRequests?: boolean | User$sentFriendRequestsArgs<ExtArgs>
@@ -3097,6 +3108,7 @@ export namespace Prisma {
       role: string
       chatMutedUntil: Date | null
       theme: string
+      hasUnleashedCat: boolean
       createdAt: Date
       updatedAt: Date
     }, ExtArgs["result"]["user"]>
@@ -3541,6 +3553,7 @@ export namespace Prisma {
     readonly role: FieldRef<"User", 'String'>
     readonly chatMutedUntil: FieldRef<"User", 'DateTime'>
     readonly theme: FieldRef<"User", 'String'>
+    readonly hasUnleashedCat: FieldRef<"User", 'Boolean'>
     readonly createdAt: FieldRef<"User", 'DateTime'>
     readonly updatedAt: FieldRef<"User", 'DateTime'>
   }
@@ -9606,10 +9619,14 @@ export namespace Prisma {
 
   export type LegendSubchapterAvgAggregateOutputType = {
     sortOrder: number | null
+    stageCount: number | null
+    maxCrowns: number | null
   }
 
   export type LegendSubchapterSumAggregateOutputType = {
     sortOrder: number | null
+    stageCount: number | null
+    maxCrowns: number | null
   }
 
   export type LegendSubchapterMinAggregateOutputType = {
@@ -9617,6 +9634,8 @@ export namespace Prisma {
     sagaId: string | null
     displayName: string | null
     sortOrder: number | null
+    stageCount: number | null
+    maxCrowns: number | null
   }
 
   export type LegendSubchapterMaxAggregateOutputType = {
@@ -9624,6 +9643,8 @@ export namespace Prisma {
     sagaId: string | null
     displayName: string | null
     sortOrder: number | null
+    stageCount: number | null
+    maxCrowns: number | null
   }
 
   export type LegendSubchapterCountAggregateOutputType = {
@@ -9631,16 +9652,22 @@ export namespace Prisma {
     sagaId: number
     displayName: number
     sortOrder: number
+    stageCount: number
+    maxCrowns: number
     _all: number
   }
 
 
   export type LegendSubchapterAvgAggregateInputType = {
     sortOrder?: true
+    stageCount?: true
+    maxCrowns?: true
   }
 
   export type LegendSubchapterSumAggregateInputType = {
     sortOrder?: true
+    stageCount?: true
+    maxCrowns?: true
   }
 
   export type LegendSubchapterMinAggregateInputType = {
@@ -9648,6 +9675,8 @@ export namespace Prisma {
     sagaId?: true
     displayName?: true
     sortOrder?: true
+    stageCount?: true
+    maxCrowns?: true
   }
 
   export type LegendSubchapterMaxAggregateInputType = {
@@ -9655,6 +9684,8 @@ export namespace Prisma {
     sagaId?: true
     displayName?: true
     sortOrder?: true
+    stageCount?: true
+    maxCrowns?: true
   }
 
   export type LegendSubchapterCountAggregateInputType = {
@@ -9662,6 +9693,8 @@ export namespace Prisma {
     sagaId?: true
     displayName?: true
     sortOrder?: true
+    stageCount?: true
+    maxCrowns?: true
     _all?: true
   }
 
@@ -9756,6 +9789,8 @@ export namespace Prisma {
     sagaId: string
     displayName: string
     sortOrder: number
+    stageCount: number | null
+    maxCrowns: number
     _count: LegendSubchapterCountAggregateOutputType | null
     _avg: LegendSubchapterAvgAggregateOutputType | null
     _sum: LegendSubchapterSumAggregateOutputType | null
@@ -9782,6 +9817,8 @@ export namespace Prisma {
     sagaId?: boolean
     displayName?: boolean
     sortOrder?: boolean
+    stageCount?: boolean
+    maxCrowns?: boolean
     saga?: boolean | LegendSagaDefaultArgs<ExtArgs>
     progress?: boolean | LegendSubchapter$progressArgs<ExtArgs>
     _count?: boolean | LegendSubchapterCountOutputTypeDefaultArgs<ExtArgs>
@@ -9792,6 +9829,8 @@ export namespace Prisma {
     sagaId?: boolean
     displayName?: boolean
     sortOrder?: boolean
+    stageCount?: boolean
+    maxCrowns?: boolean
     saga?: boolean | LegendSagaDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["legendSubchapter"]>
 
@@ -9800,6 +9839,8 @@ export namespace Prisma {
     sagaId?: boolean
     displayName?: boolean
     sortOrder?: boolean
+    stageCount?: boolean
+    maxCrowns?: boolean
     saga?: boolean | LegendSagaDefaultArgs<ExtArgs>
   }, ExtArgs["result"]["legendSubchapter"]>
 
@@ -9808,9 +9849,11 @@ export namespace Prisma {
     sagaId?: boolean
     displayName?: boolean
     sortOrder?: boolean
+    stageCount?: boolean
+    maxCrowns?: boolean
   }
 
-  export type LegendSubchapterOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "sagaId" | "displayName" | "sortOrder", ExtArgs["result"]["legendSubchapter"]>
+  export type LegendSubchapterOmit<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = $Extensions.GetOmit<"id" | "sagaId" | "displayName" | "sortOrder" | "stageCount" | "maxCrowns", ExtArgs["result"]["legendSubchapter"]>
   export type LegendSubchapterInclude<ExtArgs extends $Extensions.InternalArgs = $Extensions.DefaultArgs> = {
     saga?: boolean | LegendSagaDefaultArgs<ExtArgs>
     progress?: boolean | LegendSubchapter$progressArgs<ExtArgs>
@@ -9834,6 +9877,8 @@ export namespace Prisma {
       sagaId: string
       displayName: string
       sortOrder: number
+      stageCount: number | null
+      maxCrowns: number
     }, ExtArgs["result"]["legendSubchapter"]>
     composites: {}
   }
@@ -10263,6 +10308,8 @@ export namespace Prisma {
     readonly sagaId: FieldRef<"LegendSubchapter", 'String'>
     readonly displayName: FieldRef<"LegendSubchapter", 'String'>
     readonly sortOrder: FieldRef<"LegendSubchapter", 'Int'>
+    readonly stageCount: FieldRef<"LegendSubchapter", 'Int'>
+    readonly maxCrowns: FieldRef<"LegendSubchapter", 'Int'>
   }
     
 
@@ -22745,6 +22792,7 @@ export namespace Prisma {
     role: 'role',
     chatMutedUntil: 'chatMutedUntil',
     theme: 'theme',
+    hasUnleashedCat: 'hasUnleashedCat',
     createdAt: 'createdAt',
     updatedAt: 'updatedAt'
   };
@@ -22810,7 +22858,9 @@ export namespace Prisma {
     id: 'id',
     sagaId: 'sagaId',
     displayName: 'displayName',
-    sortOrder: 'sortOrder'
+    sortOrder: 'sortOrder',
+    stageCount: 'stageCount',
+    maxCrowns: 'maxCrowns'
   };
 
   export type LegendSubchapterScalarFieldEnum = (typeof LegendSubchapterScalarFieldEnum)[keyof typeof LegendSubchapterScalarFieldEnum]
@@ -23028,6 +23078,13 @@ export namespace Prisma {
 
 
   /**
+   * Reference to a field of type 'Boolean'
+   */
+  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
+    
+
+
+  /**
    * Reference to a field of type 'Visibility'
    */
   export type EnumVisibilityFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Visibility'>
@@ -23066,13 +23123,6 @@ export namespace Prisma {
    * Reference to a field of type 'Int[]'
    */
   export type ListIntFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Int[]'>
-    
-
-
-  /**
-   * Reference to a field of type 'Boolean'
-   */
-  export type BooleanFieldRefInput<$PrismaModel> = FieldRefInputType<$PrismaModel, 'Boolean'>
     
 
 
@@ -23189,6 +23239,7 @@ export namespace Prisma {
     role?: StringFilter<"User"> | string
     chatMutedUntil?: DateTimeNullableFilter<"User"> | Date | string | null
     theme?: StringFilter<"User"> | string
+    hasUnleashedCat?: BoolFilter<"User"> | boolean
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -23213,6 +23264,7 @@ export namespace Prisma {
     role?: SortOrder
     chatMutedUntil?: SortOrderInput | SortOrder
     theme?: SortOrder
+    hasUnleashedCat?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     privacy?: PrivacySettingsOrderByWithRelationInput
@@ -23240,6 +23292,7 @@ export namespace Prisma {
     role?: StringFilter<"User"> | string
     chatMutedUntil?: DateTimeNullableFilter<"User"> | Date | string | null
     theme?: StringFilter<"User"> | string
+    hasUnleashedCat?: BoolFilter<"User"> | boolean
     createdAt?: DateTimeFilter<"User"> | Date | string
     updatedAt?: DateTimeFilter<"User"> | Date | string
     privacy?: XOR<PrivacySettingsNullableScalarRelationFilter, PrivacySettingsWhereInput> | null
@@ -23264,6 +23317,7 @@ export namespace Prisma {
     role?: SortOrder
     chatMutedUntil?: SortOrderInput | SortOrder
     theme?: SortOrder
+    hasUnleashedCat?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
     _count?: UserCountOrderByAggregateInput
@@ -23283,6 +23337,7 @@ export namespace Prisma {
     role?: StringWithAggregatesFilter<"User"> | string
     chatMutedUntil?: DateTimeNullableWithAggregatesFilter<"User"> | Date | string | null
     theme?: StringWithAggregatesFilter<"User"> | string
+    hasUnleashedCat?: BoolWithAggregatesFilter<"User"> | boolean
     createdAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
     updatedAt?: DateTimeWithAggregatesFilter<"User"> | Date | string
   }
@@ -23578,6 +23633,8 @@ export namespace Prisma {
     sagaId?: StringFilter<"LegendSubchapter"> | string
     displayName?: StringFilter<"LegendSubchapter"> | string
     sortOrder?: IntFilter<"LegendSubchapter"> | number
+    stageCount?: IntNullableFilter<"LegendSubchapter"> | number | null
+    maxCrowns?: IntFilter<"LegendSubchapter"> | number
     saga?: XOR<LegendSagaScalarRelationFilter, LegendSagaWhereInput>
     progress?: UserLegendProgressListRelationFilter
   }
@@ -23587,6 +23644,8 @@ export namespace Prisma {
     sagaId?: SortOrder
     displayName?: SortOrder
     sortOrder?: SortOrder
+    stageCount?: SortOrderInput | SortOrder
+    maxCrowns?: SortOrder
     saga?: LegendSagaOrderByWithRelationInput
     progress?: UserLegendProgressOrderByRelationAggregateInput
   }
@@ -23600,6 +23659,8 @@ export namespace Prisma {
     sagaId?: StringFilter<"LegendSubchapter"> | string
     displayName?: StringFilter<"LegendSubchapter"> | string
     sortOrder?: IntFilter<"LegendSubchapter"> | number
+    stageCount?: IntNullableFilter<"LegendSubchapter"> | number | null
+    maxCrowns?: IntFilter<"LegendSubchapter"> | number
     saga?: XOR<LegendSagaScalarRelationFilter, LegendSagaWhereInput>
     progress?: UserLegendProgressListRelationFilter
   }, "id" | "sagaId_displayName">
@@ -23609,6 +23670,8 @@ export namespace Prisma {
     sagaId?: SortOrder
     displayName?: SortOrder
     sortOrder?: SortOrder
+    stageCount?: SortOrderInput | SortOrder
+    maxCrowns?: SortOrder
     _count?: LegendSubchapterCountOrderByAggregateInput
     _avg?: LegendSubchapterAvgOrderByAggregateInput
     _max?: LegendSubchapterMaxOrderByAggregateInput
@@ -23624,6 +23687,8 @@ export namespace Prisma {
     sagaId?: StringWithAggregatesFilter<"LegendSubchapter"> | string
     displayName?: StringWithAggregatesFilter<"LegendSubchapter"> | string
     sortOrder?: IntWithAggregatesFilter<"LegendSubchapter"> | number
+    stageCount?: IntNullableWithAggregatesFilter<"LegendSubchapter"> | number | null
+    maxCrowns?: IntWithAggregatesFilter<"LegendSubchapter"> | number
   }
 
   export type UserLegendProgressWhereInput = {
@@ -24343,6 +24408,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -24367,6 +24433,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -24391,6 +24458,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -24415,6 +24483,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -24439,6 +24508,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
   }
@@ -24452,6 +24522,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -24465,6 +24536,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
   }
@@ -24749,6 +24821,8 @@ export namespace Prisma {
     id?: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
     saga: LegendSagaCreateNestedOneWithoutSubchaptersInput
     progress?: UserLegendProgressCreateNestedManyWithoutSubchapterInput
   }
@@ -24758,6 +24832,8 @@ export namespace Prisma {
     sagaId: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
     progress?: UserLegendProgressUncheckedCreateNestedManyWithoutSubchapterInput
   }
 
@@ -24765,6 +24841,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
     saga?: LegendSagaUpdateOneRequiredWithoutSubchaptersNestedInput
     progress?: UserLegendProgressUpdateManyWithoutSubchapterNestedInput
   }
@@ -24774,6 +24852,8 @@ export namespace Prisma {
     sagaId?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
     progress?: UserLegendProgressUncheckedUpdateManyWithoutSubchapterNestedInput
   }
 
@@ -24782,12 +24862,16 @@ export namespace Prisma {
     sagaId: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
   }
 
   export type LegendSubchapterUpdateManyMutationInput = {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
   }
 
   export type LegendSubchapterUncheckedUpdateManyInput = {
@@ -24795,6 +24879,8 @@ export namespace Prisma {
     sagaId?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
   }
 
   export type UserLegendProgressCreateInput = {
@@ -25567,6 +25653,11 @@ export namespace Prisma {
     not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
   }
 
+  export type BoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
   export type DateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -25682,6 +25773,7 @@ export namespace Prisma {
     role?: SortOrder
     chatMutedUntil?: SortOrder
     theme?: SortOrder
+    hasUnleashedCat?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -25695,6 +25787,7 @@ export namespace Prisma {
     role?: SortOrder
     chatMutedUntil?: SortOrder
     theme?: SortOrder
+    hasUnleashedCat?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -25708,6 +25801,7 @@ export namespace Prisma {
     role?: SortOrder
     chatMutedUntil?: SortOrder
     theme?: SortOrder
+    hasUnleashedCat?: SortOrder
     createdAt?: SortOrder
     updatedAt?: SortOrder
   }
@@ -25760,6 +25854,14 @@ export namespace Prisma {
     _count?: NestedIntNullableFilter<$PrismaModel>
     _min?: NestedDateTimeNullableFilter<$PrismaModel>
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
+  }
+
+  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
   }
 
   export type DateTimeWithAggregatesFilter<$PrismaModel = never> = {
@@ -25931,11 +26033,6 @@ export namespace Prisma {
     _max?: NestedIntFilter<$PrismaModel>
   }
 
-  export type BoolFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolFilter<$PrismaModel> | boolean
-  }
-
   export type EnumTreasureStatusFilter<$PrismaModel = never> = {
     equals?: $Enums.TreasureStatus | EnumTreasureStatusFieldRefInput<$PrismaModel>
     in?: $Enums.TreasureStatus[] | ListEnumTreasureStatusFieldRefInput<$PrismaModel>
@@ -25988,14 +26085,6 @@ export namespace Prisma {
     treasures?: SortOrder
     zombies?: SortOrder
     updatedAt?: SortOrder
-  }
-
-  export type BoolWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedBoolFilter<$PrismaModel>
-    _max?: NestedBoolFilter<$PrismaModel>
   }
 
   export type EnumTreasureStatusWithAggregatesFilter<$PrismaModel = never> = {
@@ -26054,6 +26143,17 @@ export namespace Prisma {
     sortOrder?: SortOrder
   }
 
+  export type IntNullableFilter<$PrismaModel = never> = {
+    equals?: number | IntFieldRefInput<$PrismaModel> | null
+    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
+    lt?: number | IntFieldRefInput<$PrismaModel>
+    lte?: number | IntFieldRefInput<$PrismaModel>
+    gt?: number | IntFieldRefInput<$PrismaModel>
+    gte?: number | IntFieldRefInput<$PrismaModel>
+    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+  }
+
   export type LegendSagaScalarRelationFilter = {
     is?: LegendSagaWhereInput
     isNot?: LegendSagaWhereInput
@@ -26069,10 +26169,14 @@ export namespace Prisma {
     sagaId?: SortOrder
     displayName?: SortOrder
     sortOrder?: SortOrder
+    stageCount?: SortOrder
+    maxCrowns?: SortOrder
   }
 
   export type LegendSubchapterAvgOrderByAggregateInput = {
     sortOrder?: SortOrder
+    stageCount?: SortOrder
+    maxCrowns?: SortOrder
   }
 
   export type LegendSubchapterMaxOrderByAggregateInput = {
@@ -26080,6 +26184,8 @@ export namespace Prisma {
     sagaId?: SortOrder
     displayName?: SortOrder
     sortOrder?: SortOrder
+    stageCount?: SortOrder
+    maxCrowns?: SortOrder
   }
 
   export type LegendSubchapterMinOrderByAggregateInput = {
@@ -26087,20 +26193,17 @@ export namespace Prisma {
     sagaId?: SortOrder
     displayName?: SortOrder
     sortOrder?: SortOrder
+    stageCount?: SortOrder
+    maxCrowns?: SortOrder
   }
 
   export type LegendSubchapterSumOrderByAggregateInput = {
     sortOrder?: SortOrder
+    stageCount?: SortOrder
+    maxCrowns?: SortOrder
   }
 
-  export type EnumLegendProgressStatusFilter<$PrismaModel = never> = {
-    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    not?: NestedEnumLegendProgressStatusFilter<$PrismaModel> | $Enums.LegendProgressStatus
-  }
-
-  export type IntNullableFilter<$PrismaModel = never> = {
+  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
     equals?: number | IntFieldRefInput<$PrismaModel> | null
     in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
     notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
@@ -26108,7 +26211,19 @@ export namespace Prisma {
     lte?: number | IntFieldRefInput<$PrismaModel>
     gt?: number | IntFieldRefInput<$PrismaModel>
     gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableFilter<$PrismaModel> | number | null
+    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
+    _count?: NestedIntNullableFilter<$PrismaModel>
+    _avg?: NestedFloatNullableFilter<$PrismaModel>
+    _sum?: NestedIntNullableFilter<$PrismaModel>
+    _min?: NestedIntNullableFilter<$PrismaModel>
+    _max?: NestedIntNullableFilter<$PrismaModel>
+  }
+
+  export type EnumLegendProgressStatusFilter<$PrismaModel = never> = {
+    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    not?: NestedEnumLegendProgressStatusFilter<$PrismaModel> | $Enums.LegendProgressStatus
   }
 
   export type LegendSubchapterScalarRelationFilter = {
@@ -26167,22 +26282,6 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
     _max?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
-  }
-
-  export type IntNullableWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: number | IntFieldRefInput<$PrismaModel> | null
-    in?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    notIn?: number[] | ListIntFieldRefInput<$PrismaModel> | null
-    lt?: number | IntFieldRefInput<$PrismaModel>
-    lte?: number | IntFieldRefInput<$PrismaModel>
-    gt?: number | IntFieldRefInput<$PrismaModel>
-    gte?: number | IntFieldRefInput<$PrismaModel>
-    not?: NestedIntNullableWithAggregatesFilter<$PrismaModel> | number | null
-    _count?: NestedIntNullableFilter<$PrismaModel>
-    _avg?: NestedFloatNullableFilter<$PrismaModel>
-    _sum?: NestedIntNullableFilter<$PrismaModel>
-    _min?: NestedIntNullableFilter<$PrismaModel>
-    _max?: NestedIntNullableFilter<$PrismaModel>
   }
 
   export type EnumMilestoneCategoryFilter<$PrismaModel = never> = {
@@ -26782,6 +26881,10 @@ export namespace Prisma {
     set?: Date | string | null
   }
 
+  export type BoolFieldUpdateOperationsInput = {
+    set?: boolean
+  }
+
   export type DateTimeFieldUpdateOperationsInput = {
     set?: Date | string
   }
@@ -27190,10 +27293,6 @@ export namespace Prisma {
     connect?: StoryChapterWhereUniqueInput
   }
 
-  export type BoolFieldUpdateOperationsInput = {
-    set?: boolean
-  }
-
   export type EnumTreasureStatusFieldUpdateOperationsInput = {
     set?: $Enums.TreasureStatus
   }
@@ -27280,6 +27379,14 @@ export namespace Prisma {
     connect?: UserLegendProgressWhereUniqueInput | UserLegendProgressWhereUniqueInput[]
   }
 
+  export type NullableIntFieldUpdateOperationsInput = {
+    set?: number | null
+    increment?: number
+    decrement?: number
+    multiply?: number
+    divide?: number
+  }
+
   export type LegendSagaUpdateOneRequiredWithoutSubchaptersNestedInput = {
     create?: XOR<LegendSagaCreateWithoutSubchaptersInput, LegendSagaUncheckedCreateWithoutSubchaptersInput>
     connectOrCreate?: LegendSagaCreateOrConnectWithoutSubchaptersInput
@@ -27330,14 +27437,6 @@ export namespace Prisma {
 
   export type EnumLegendProgressStatusFieldUpdateOperationsInput = {
     set?: $Enums.LegendProgressStatus
-  }
-
-  export type NullableIntFieldUpdateOperationsInput = {
-    set?: number | null
-    increment?: number
-    decrement?: number
-    multiply?: number
-    divide?: number
   }
 
   export type UserUpdateOneRequiredWithoutLegendProgressNestedInput = {
@@ -27664,6 +27763,11 @@ export namespace Prisma {
     not?: NestedDateTimeNullableFilter<$PrismaModel> | Date | string | null
   }
 
+  export type NestedBoolFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolFilter<$PrismaModel> | boolean
+  }
+
   export type NestedDateTimeFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -27745,6 +27849,14 @@ export namespace Prisma {
     _max?: NestedDateTimeNullableFilter<$PrismaModel>
   }
 
+  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
+    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedBoolFilter<$PrismaModel>
+    _max?: NestedBoolFilter<$PrismaModel>
+  }
+
   export type NestedDateTimeWithAggregatesFilter<$PrismaModel = never> = {
     equals?: Date | string | DateTimeFieldRefInput<$PrismaModel>
     in?: Date[] | string[] | ListDateTimeFieldRefInput<$PrismaModel>
@@ -27820,11 +27932,6 @@ export namespace Prisma {
     not?: NestedFloatFilter<$PrismaModel> | number
   }
 
-  export type NestedBoolFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolFilter<$PrismaModel> | boolean
-  }
-
   export type NestedEnumTreasureStatusFilter<$PrismaModel = never> = {
     equals?: $Enums.TreasureStatus | EnumTreasureStatusFieldRefInput<$PrismaModel>
     in?: $Enums.TreasureStatus[] | ListEnumTreasureStatusFieldRefInput<$PrismaModel>
@@ -27837,14 +27944,6 @@ export namespace Prisma {
     in?: $Enums.ZombieStatus[] | ListEnumZombieStatusFieldRefInput<$PrismaModel>
     notIn?: $Enums.ZombieStatus[] | ListEnumZombieStatusFieldRefInput<$PrismaModel>
     not?: NestedEnumZombieStatusFilter<$PrismaModel> | $Enums.ZombieStatus
-  }
-
-  export type NestedBoolWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: boolean | BooleanFieldRefInput<$PrismaModel>
-    not?: NestedBoolWithAggregatesFilter<$PrismaModel> | boolean
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedBoolFilter<$PrismaModel>
-    _max?: NestedBoolFilter<$PrismaModel>
   }
 
   export type NestedEnumTreasureStatusWithAggregatesFilter<$PrismaModel = never> = {
@@ -27865,23 +27964,6 @@ export namespace Prisma {
     _count?: NestedIntFilter<$PrismaModel>
     _min?: NestedEnumZombieStatusFilter<$PrismaModel>
     _max?: NestedEnumZombieStatusFilter<$PrismaModel>
-  }
-
-  export type NestedEnumLegendProgressStatusFilter<$PrismaModel = never> = {
-    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    not?: NestedEnumLegendProgressStatusFilter<$PrismaModel> | $Enums.LegendProgressStatus
-  }
-
-  export type NestedEnumLegendProgressStatusWithAggregatesFilter<$PrismaModel = never> = {
-    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
-    not?: NestedEnumLegendProgressStatusWithAggregatesFilter<$PrismaModel> | $Enums.LegendProgressStatus
-    _count?: NestedIntFilter<$PrismaModel>
-    _min?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
-    _max?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
   }
 
   export type NestedIntNullableWithAggregatesFilter<$PrismaModel = never> = {
@@ -27909,6 +27991,23 @@ export namespace Prisma {
     gt?: number | FloatFieldRefInput<$PrismaModel>
     gte?: number | FloatFieldRefInput<$PrismaModel>
     not?: NestedFloatNullableFilter<$PrismaModel> | number | null
+  }
+
+  export type NestedEnumLegendProgressStatusFilter<$PrismaModel = never> = {
+    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    not?: NestedEnumLegendProgressStatusFilter<$PrismaModel> | $Enums.LegendProgressStatus
+  }
+
+  export type NestedEnumLegendProgressStatusWithAggregatesFilter<$PrismaModel = never> = {
+    equals?: $Enums.LegendProgressStatus | EnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    in?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    notIn?: $Enums.LegendProgressStatus[] | ListEnumLegendProgressStatusFieldRefInput<$PrismaModel>
+    not?: NestedEnumLegendProgressStatusWithAggregatesFilter<$PrismaModel> | $Enums.LegendProgressStatus
+    _count?: NestedIntFilter<$PrismaModel>
+    _min?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
+    _max?: NestedEnumLegendProgressStatusFilter<$PrismaModel>
   }
 
   export type NestedEnumMilestoneCategoryFilter<$PrismaModel = never> = {
@@ -28532,6 +28631,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipCreateNestedManyWithoutRequesterInput
@@ -28555,6 +28655,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     sentFriendRequests?: FriendshipUncheckedCreateNestedManyWithoutRequesterInput
@@ -28594,6 +28695,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUpdateManyWithoutRequesterNestedInput
@@ -28617,6 +28719,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     sentFriendRequests?: FriendshipUncheckedUpdateManyWithoutRequesterNestedInput
@@ -28640,6 +28743,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28663,6 +28767,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28691,6 +28796,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28714,6 +28820,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28753,6 +28860,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28776,6 +28884,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28810,6 +28919,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -28833,6 +28943,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -28900,6 +29011,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -28923,6 +29035,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -28983,6 +29096,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -29006,6 +29120,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -29051,6 +29166,8 @@ export namespace Prisma {
     id?: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
     progress?: UserLegendProgressCreateNestedManyWithoutSubchapterInput
   }
 
@@ -29058,6 +29175,8 @@ export namespace Prisma {
     id?: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
     progress?: UserLegendProgressUncheckedCreateNestedManyWithoutSubchapterInput
   }
 
@@ -29095,6 +29214,8 @@ export namespace Prisma {
     sagaId?: StringFilter<"LegendSubchapter"> | string
     displayName?: StringFilter<"LegendSubchapter"> | string
     sortOrder?: IntFilter<"LegendSubchapter"> | number
+    stageCount?: IntNullableFilter<"LegendSubchapter"> | number | null
+    maxCrowns?: IntFilter<"LegendSubchapter"> | number
   }
 
   export type LegendSagaCreateWithoutSubchaptersInput = {
@@ -29190,6 +29311,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -29213,6 +29335,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -29236,6 +29359,8 @@ export namespace Prisma {
     id?: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
     saga: LegendSagaCreateNestedOneWithoutSubchaptersInput
   }
 
@@ -29244,6 +29369,8 @@ export namespace Prisma {
     sagaId: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
   }
 
   export type LegendSubchapterCreateOrConnectWithoutProgressInput = {
@@ -29271,6 +29398,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -29294,6 +29422,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -29323,6 +29452,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
     saga?: LegendSagaUpdateOneRequiredWithoutSubchaptersNestedInput
   }
 
@@ -29331,6 +29462,8 @@ export namespace Prisma {
     sagaId?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
   }
 
   export type UserMilestoneProgressCreateWithoutMilestoneInput = {
@@ -29384,6 +29517,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -29407,6 +29541,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -29465,6 +29600,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -29488,6 +29624,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -29536,6 +29673,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -29559,6 +29697,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -29598,6 +29737,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -29621,6 +29761,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -29686,6 +29827,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -29709,6 +29851,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -29779,6 +29922,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -29802,6 +29946,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -29902,6 +30047,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -29925,6 +30071,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -30003,6 +30150,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -30026,6 +30174,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -30094,6 +30243,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -30117,6 +30267,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -30156,6 +30307,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -30179,6 +30331,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -30202,6 +30355,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsCreateNestedOneWithoutUserInput
@@ -30225,6 +30379,7 @@ export namespace Prisma {
     role?: string
     chatMutedUntil?: Date | string | null
     theme?: string
+    hasUnleashedCat?: boolean
     createdAt?: Date | string
     updatedAt?: Date | string
     privacy?: PrivacySettingsUncheckedCreateNestedOneWithoutUserInput
@@ -30264,6 +30419,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUpdateOneWithoutUserNestedInput
@@ -30287,6 +30443,7 @@ export namespace Prisma {
     role?: StringFieldUpdateOperationsInput | string
     chatMutedUntil?: NullableDateTimeFieldUpdateOperationsInput | Date | string | null
     theme?: StringFieldUpdateOperationsInput | string
+    hasUnleashedCat?: BoolFieldUpdateOperationsInput | boolean
     createdAt?: DateTimeFieldUpdateOperationsInput | Date | string
     updatedAt?: DateTimeFieldUpdateOperationsInput | Date | string
     privacy?: PrivacySettingsUncheckedUpdateOneWithoutUserNestedInput
@@ -30625,12 +30782,16 @@ export namespace Prisma {
     id?: string
     displayName: string
     sortOrder: number
+    stageCount?: number | null
+    maxCrowns?: number
   }
 
   export type LegendSubchapterUpdateWithoutSagaInput = {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
     progress?: UserLegendProgressUpdateManyWithoutSubchapterNestedInput
   }
 
@@ -30638,6 +30799,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
     progress?: UserLegendProgressUncheckedUpdateManyWithoutSubchapterNestedInput
   }
 
@@ -30645,6 +30808,8 @@ export namespace Prisma {
     id?: StringFieldUpdateOperationsInput | string
     displayName?: StringFieldUpdateOperationsInput | string
     sortOrder?: IntFieldUpdateOperationsInput | number
+    stageCount?: NullableIntFieldUpdateOperationsInput | number | null
+    maxCrowns?: IntFieldUpdateOperationsInput | number
   }
 
   export type UserLegendProgressCreateManySubchapterInput = {

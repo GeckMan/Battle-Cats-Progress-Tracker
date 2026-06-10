@@ -129,6 +129,7 @@ exports.Prisma.UserScalarFieldEnum = {
   role: 'role',
   chatMutedUntil: 'chatMutedUntil',
   theme: 'theme',
+  hasUnleashedCat: 'hasUnleashedCat',
   createdAt: 'createdAt',
   updatedAt: 'updatedAt'
 };
@@ -176,7 +177,9 @@ exports.Prisma.LegendSubchapterScalarFieldEnum = {
   id: 'id',
   sagaId: 'sagaId',
   displayName: 'displayName',
-  sortOrder: 'sortOrder'
+  sortOrder: 'sortOrder',
+  stageCount: 'stageCount',
+  maxCrowns: 'maxCrowns'
 };
 
 exports.Prisma.UserLegendProgressScalarFieldEnum = {
