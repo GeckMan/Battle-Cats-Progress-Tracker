@@ -333,6 +333,9 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
 function parseRarityMap(dataLocal: string): Map<number, string> {
   const map = new Map<number, string>();
 
+  // Try both data files and pick the best result
+  const candidates: { source: string; col: number; score: number; values: number[] }[] = [];
+
   // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
   // unitbuy.csv has one row per unit (row index = unit ID).
   // One of its columns contains the rarity value (0-5).
@@ -343,16 +346,9 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
     const lines = content.trim().split("\n").filter((l) => l.trim());
 
     if (lines.length > 9) {
-      // Parse all rows into columns
       const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
       const numCols = Math.min(...rows.map((r) => r.length));
 
-      // Auto-detect: find a column where:
-      //   1. All values are in range [0, 5]
-      //   2. The first 9 rows (units 0-8, Normal cats) all have value 0
-      //   3. Rows 9-56 (Special cats) all have value 1
-      //   4. There are at least 3 distinct values total (not all the same)
-      let bestCol = -1;
       for (let col = 0; col < numCols; col++) {
         const colVals = rows.map((r) => r[col]);
         const allInRange = colVals.every((v) => v >= 0 && v <= 5);
@@ -366,30 +362,15 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
 
         const distinctVals = new Set(colVals);
         if (distinctVals.size >= 3) {
-          bestCol = col;
-          break;
+          const score = scoreRarityColumn(colVals);
+          candidates.push({ source: "unitbuy.csv", col, score, values: colVals });
+          console.log(`  unitbuy.csv col ${col}: ${distinctVals.size} distinct values, score=${score.toFixed(1)}`);
         }
-      }
-
-      if (bestCol >= 0) {
-        console.log(`  Found rarity in unitbuy.csv column ${bestCol}`);
-        for (let i = 0; i < rows.length; i++) {
-          const rarityNum = rows[i][bestCol];
-          const category = RARITY_MAP[rarityNum];
-          if (category) {
-            map.set(i, category);
-          }
-        }
-        console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
-        return map;
-      } else {
-        console.warn("  WARNING: Could not auto-detect rarity column in unitbuy.csv");
       }
     }
   }
 
   // ── Strategy 2: Parse nyankoPictureBookData.csv ────────────────────────
-  // Each row = one unit. Try to find a rarity column here too.
   const pbPath = path.join(dataLocal, "nyankoPictureBookData.csv");
   if (existsSync(pbPath)) {
     const content = readFileSync(pbPath, "utf-8");
@@ -404,29 +385,96 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
         const allInRange = colVals.every((v) => v >= 0 && v <= 5);
         if (!allInRange) continue;
 
-        // For picture book data, units 0-8 should map to rarity 0
         const normalOk = colVals.slice(0, 9).every((v) => v === 0);
         if (!normalOk) continue;
 
         const distinctVals = new Set(colVals);
-        if (distinctVals.size >= 4) {
-          console.log(`  Found rarity in nyankoPictureBookData.csv column ${col}`);
-          for (let i = 0; i < rows.length; i++) {
-            const rarityNum = rows[i][col];
-            const category = RARITY_MAP[rarityNum];
-            if (category) {
-              map.set(i, category);
-            }
-          }
-          console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
-          return map;
+        if (distinctVals.size >= 3) {
+          const score = scoreRarityColumn(colVals);
+          candidates.push({ source: "nyankoPictureBookData.csv", col, score, values: colVals });
+          console.log(`  nyankoPictureBookData.csv col ${col}: ${distinctVals.size} distinct values, score=${score.toFixed(1)}`);
         }
       }
     }
   }
 
+  // Pick the candidate with the highest score
+  if (candidates.length > 0) {
+    candidates.sort((a, b) => b.score - a.score);
+    const best = candidates[0];
+    console.log(`  → Best rarity column: ${best.source} col ${best.col} (score=${best.score.toFixed(1)})`);
+
+    for (let i = 0; i < best.values.length; i++) {
+      const category = RARITY_MAP[best.values[i]];
+      if (category) {
+        map.set(i, category);
+      }
+    }
+    console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
+    return map;
+  }
+
   console.warn("  WARNING: Could not parse rarity from any data file, using fallback guessRarity()");
   return map;
+}
+
+/**
+ * Score a candidate rarity column by how realistic its distribution looks.
+ *
+ * A real rarity column should have:
+ *   - All 6 rarity tiers present (0-5)
+ *   - More Rares (2) than Super Rares (3)
+ *   - More Super Rares (3) than Uber Rares (4)
+ *   - More Uber Rares (4) than Legend Rares (5)
+ *   - Legend Rares should be a small fraction of total
+ *   - Units 57+ should have mixed rarities (not all the same)
+ *
+ * Higher score = more likely to be the real rarity column.
+ */
+function scoreRarityColumn(values: number[]): number {
+  const counts: Record<number, number> = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  for (const v of values) counts[v] = (counts[v] ?? 0) + 1;
+
+  let score = 0;
+  const total = values.length;
+
+  // Reward having all 6 rarity tiers present (strong signal)
+  const tiersPresent = Object.values(counts).filter((c) => c > 0).length;
+  score += tiersPresent * 15; // max 90 for all 6 tiers
+
+  // Reward correct ordering: Rare > Super Rare > Uber Rare > Legend Rare
+  if (counts[2] > counts[3]) score += 20; // more Rare than Super Rare
+  if (counts[3] > counts[4]) score += 20; // more Super Rare than Uber Rare
+  if (counts[4] > counts[5]) score += 20; // more Uber Rare than Legend Rare
+
+  // Reward Legend Rare being rare (< 5% of total)
+  if (counts[5] > 0 && counts[5] < total * 0.05) score += 15;
+
+  // Reward Uber Rare being a moderate chunk (5-20% of total)
+  const uberPct = counts[4] / total;
+  if (uberPct > 0.05 && uberPct < 0.25) score += 15;
+
+  // Reward Rare being the largest non-Normal/Special group
+  if (counts[2] > counts[3] && counts[2] > counts[4] && counts[2] > counts[5]) score += 10;
+
+  // Penalize if units 57-200 are all the same value (wrong column)
+  const midRange = values.slice(57, Math.min(200, values.length));
+  const midDistinct = new Set(midRange).size;
+  if (midDistinct <= 1) score -= 50;
+  else if (midDistinct <= 2) score -= 20;
+  else score += midDistinct * 2; // reward variety
+
+  // Penalize if more than 80% of units after Special are the same rarity
+  // (a real rarity column has a broad distribution)
+  const postSpecial = values.slice(57);
+  if (postSpecial.length > 0) {
+    const maxCount = Math.max(...Object.entries(counts)
+      .filter(([k]) => parseInt(k) >= 2)
+      .map(([, v]) => v));
+    if (maxCount / postSpecial.length > 0.8) score -= 40;
+  }
+
+  return score;
 }
 
 /** Summarize rarity distribution for logging */
