@@ -490,6 +490,53 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
     }
   }
 
+  // ── Strategy 4: Ground-truth search ─────────────────────────────────────
+  // If no candidate passed scoring, scan ALL columns for one that matches
+  // known unit rarities exactly, even if it has fewer distinct values.
+  // This handles cases where the column format changed completely.
+  const viableCandidates = candidates.filter((c) => c.score >= 100);
+  if (viableCandidates.length === 0) {
+    console.log("  Strategy 4: Ground-truth search — looking for columns matching known unit rarities");
+    const GROUND_TRUTH: Record<number, number> = {
+      0: 0,   // Cat = Normal
+      25: 1,  // Ninja Frog Cat = Special
+      57: 2,  // Salon Cat = Rare
+      209: 4, // Fuma Kotaro = Uber Rare
+    };
+
+    for (const file of ["unitbuy.csv", "nyankoPictureBookData.csv"]) {
+      const fp = path.join(dataLocal, file);
+      if (!existsSync(fp)) continue;
+      const content = readFileSync(fp, "utf-8");
+      const lines = content.trim().split("\n").filter((l) => l.trim());
+      if (lines.length <= 209) continue;
+
+      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+      const numCols = Math.min(...rows.map((r) => r.length));
+
+      for (let col = 0; col < numCols; col++) {
+        const colVals = rows.map((r) => r[col]);
+        // Check ground truth
+        let matches = 0;
+        for (const [uid, expected] of Object.entries(GROUND_TRUTH)) {
+          if (colVals[Number(uid)] === expected) matches++;
+        }
+        if (matches === Object.keys(GROUND_TRUTH).length) {
+          // All ground truth units match! Check if values are in rarity range (0-5)
+          const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+          if (allInRange) {
+            const score = scoreRarityColumn(colVals);
+            console.log(`  Strategy 4 MATCH: ${file} col ${col} — all ${matches} ground truth units match, score=${score.toFixed(1)}`);
+            const dist: Record<number, number> = {};
+            for (const v of colVals) dist[v] = (dist[v] ?? 0) + 1;
+            console.log(`    Distribution: ${JSON.stringify(dist)}`);
+            candidates.push({ source: `${file}(ground-truth)`, col, score: score + 200, values: colVals }); // +200 bonus for ground truth match
+          }
+        }
+      }
+    }
+  }
+
   // Pick the candidate with the highest score (minimum threshold: 100)
   // A score below 100 means the column is missing critical rarity tiers
   // and should not be trusted to overwrite existing data.
@@ -561,6 +608,18 @@ function scoreRarityColumn(values: number[]): number {
   // where a column with only 3 distinct values (0,1,2) was accepted.
   if (counts[3] === 0) score -= 200; // no Super Rare = definitely wrong
   if (counts[4] === 0) score -= 200; // no Uber Rare = definitely wrong
+
+  // GROUND TRUTH validation: check known unit rarities.
+  // Unit 0 (Cat) = 0 (Normal), Unit 57 (Salon Cat) = 2 (Rare),
+  // Unit 209 (Fuma Kotaro) = 4 (Uber Rare)
+  // If ANY of these don't match, this column is definitely wrong.
+  if (values.length > 209) {
+    if (values[0] !== 0) score -= 100;   // Cat must be Normal
+    if (values[57] !== 2) score -= 100;  // Salon Cat must be Rare
+    if (values[209] !== 4) score -= 100; // Fuma Kotaro must be Uber Rare
+    // Bonus for matching all three
+    if (values[0] === 0 && values[57] === 2 && values[209] === 4) score += 50;
+  }
 
   // Reward correct ordering: Rare > Super Rare > Uber Rare > Legend Rare
   if (counts[2] > counts[3]) score += 20; // more Rare than Super Rare
@@ -790,6 +849,9 @@ const ZL_KNOWN_NAMES: string[] = [
   "Vainglorious Venture",
   "Phantasmagoria",
   "Muscle Empire",
+  "Artisan's Sanctum",
+  "Eden of Evolution",
+  "New Horizon",
 ];
 
 // Max ZL subchapters before we stop scanning for new ones
