@@ -356,53 +356,77 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
     }
   }
 
-  // ── DEBUG: Scan ALL CSVs in DataLocal for potential rarity columns ────
-  // Since v15.4.0 moved rarity out of the expected files, scan everything
+  // ── DEBUG: Dump key suspect files ────────────────────────────────────────
+  const suspectFiles = ["Hidden_rarity.csv", "t_unit.csv", "unitlimit.csv",
+    "nyankoPictureBookData_Attribute.csv", "nyankoPictureBookData_CharaGet.csv",
+    "Charagroup.csv", "GatyaDataSetR1.csv"];
+  for (const file of suspectFiles) {
+    for (const dir of [dataLocal, resLocal]) {
+      const fp = path.join(dir, file);
+      if (!existsSync(fp)) continue;
+      const content = readFileSync(fp, "utf-8");
+      const lines = content.trim().split("\n").filter((l) => l.trim());
+      console.log(`  DEBUG ${file}: ${lines.length} rows`);
+      // Dump first 5 rows + rows for known units if they exist
+      for (let i = 0; i < Math.min(5, lines.length); i++) {
+        console.log(`    row ${i}: ${lines[i].substring(0, 200)}`);
+      }
+      // For files with enough rows, dump ground truth unit rows
+      for (const uid of debugUnits) {
+        if (uid >= 5 && uid < lines.length) {
+          console.log(`    row ${uid}: ${lines[uid].substring(0, 200)}`);
+        }
+      }
+    }
+  }
+
+  // ── DEBUG: Search for key-value pair format (unitId, rarity) ──────────
+  // Some files might store rarity as [unitId, rarity] pairs rather than
+  // having row index = unit ID
   const GROUND_TRUTH_RARITY: Record<number, number> = {
-    0: 0,   // Cat = Normal
-    25: 1,  // Ninja Frog Cat = Special
-    57: 2,  // Salon Cat = Rare
-    209: 4, // Fuma Kotaro = Uber Rare
+    0: 0, 25: 1, 57: 2, 209: 4,
   };
   const allCsvFiles = readdirSync(dataLocal).filter((f) => f.endsWith(".csv"));
-  // Also scan resLocal for CSV files
-  const resLocalCsvFiles = readdirSync(resLocal).filter((f) => f.endsWith(".csv") && !f.startsWith("Unit_Explanation"));
-  console.log(`  DEBUG: Scanning ${allCsvFiles.length} DataLocal + ${resLocalCsvFiles.length} resLocal CSV files for rarity data`);
-  console.log(`  DEBUG: DataLocal files: ${allCsvFiles.join(", ")}`);
-  const allScanFiles = [
-    ...allCsvFiles.map((f) => ({ name: f, dir: dataLocal })),
-    ...resLocalCsvFiles.map((f) => ({ name: f, dir: resLocal })),
-  ];
-  for (const { name: csvFile, dir } of allScanFiles) {
-    const fp = path.join(dir, csvFile);
+  console.log(`  DEBUG: Key-value pair search across ${allCsvFiles.length} DataLocal CSVs`);
+  for (const csvFile of allCsvFiles) {
+    const fp = path.join(dataLocal, csvFile);
     const content = readFileSync(fp, "utf-8");
     const lines = content.trim().split("\n").filter((l) => l.trim());
-    if (lines.length < 210) continue; // need at least 210 rows for our ground truth units
+    if (lines.length < 4) continue; // need at least 4 rows for our ground truth
 
     const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
-    const numCols = Math.min(...rows.slice(0, 300).map((r) => r.length)); // check first 300 rows for col count
+    const numCols = Math.min(...rows.slice(0, 50).map((r) => r.length));
+    if (numCols < 2) continue;
 
-    for (let col = 0; col < numCols; col++) {
-      let allMatch = true;
-      for (const [uid, expected] of Object.entries(GROUND_TRUTH_RARITY)) {
-        const val = rows[Number(uid)]?.[col];
-        if (val !== expected) { allMatch = false; break; }
+    // For each potential ID column + value column pair
+    for (let idCol = 0; idCol < Math.min(numCols, 3); idCol++) {
+      // Build a map of id → row for this column
+      const idToRow = new Map<number, number[]>();
+      for (const row of rows) {
+        const id = row[idCol];
+        if (!idToRow.has(id)) idToRow.set(id, row);
       }
-      if (allMatch) {
-        // Check if all values in range 0-5
-        const colVals = rows.map((r) => r[col]);
-        const allInRange = colVals.every((v) => v >= 0 && v <= 5);
-        const distinctVals = new Set(colVals);
-        if (allInRange) {
-          console.log(`  ★ RARITY MATCH: ${csvFile} col ${col} — all ground truth match! ${distinctVals.size} distinct values`);
-          const dist: Record<number, number> = {};
-          for (const v of colVals) dist[v] = (dist[v] ?? 0) + 1;
-          console.log(`    Distribution: ${JSON.stringify(dist)}`);
-          // Also dump the ground truth rows for verification
-          for (const uid of debugUnits) {
-            if (uid < rows.length) {
-              console.log(`    row ${uid} col ${col} = ${rows[uid][col]}`);
-            }
+
+      // Check if all ground truth unit IDs are present
+      const gtIds = Object.keys(GROUND_TRUTH_RARITY).map(Number);
+      if (!gtIds.every((id) => idToRow.has(id))) continue;
+
+      // For each potential rarity column
+      for (let valCol = 0; valCol < numCols; valCol++) {
+        if (valCol === idCol) continue;
+        let allMatch = true;
+        for (const [uid, expected] of Object.entries(GROUND_TRUTH_RARITY)) {
+          const row = idToRow.get(Number(uid));
+          if (!row || row[valCol] !== expected) { allMatch = false; break; }
+        }
+        if (allMatch) {
+          // Verify values are in rarity range
+          const vals = rows.map((r) => r[valCol]);
+          const allInRange = vals.every((v) => v >= 0 && v <= 5);
+          if (allInRange) {
+            const dist: Record<number, number> = {};
+            for (const v of vals) dist[v] = (dist[v] ?? 0) + 1;
+            console.log(`  ★ KV RARITY MATCH: ${csvFile} idCol=${idCol} valCol=${valCol} — ${rows.length} rows, dist=${JSON.stringify(dist)}`);
           }
         }
       }
