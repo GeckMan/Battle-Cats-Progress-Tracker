@@ -15,7 +15,7 @@ jobs:
         with:
           node-version: '22'
           cache: 'npm'
-      - npm install
+      - run: npm install
       - run: npx prisma generate
       - name: Run BCData sync
         env:
