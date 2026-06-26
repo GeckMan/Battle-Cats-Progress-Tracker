@@ -336,56 +336,6 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
   // Try both data files and pick the best result
   const candidates: { source: string; col: number; score: number; values: number[] }[] = [];
 
-  // ── DEBUG: Dump known unit rows to help diagnose column changes ────────
-  // Unit 209 = Fuma Kotaro (Uber Rare, rarity=4)
-  // Unit 57 = Salon Cat (Rare, rarity=2)
-  // Unit 25 = Ninja Frog Cat (Special, rarity=1)
-  // Unit 0 = Cat (Normal, rarity=0)
-  const debugUnits = [0, 25, 57, 209];
-  for (const file of ["unitbuy.csv", "nyankoPictureBookData.csv"]) {
-    const fp = path.join(dataLocal, file);
-    if (!existsSync(fp)) continue;
-    const content = readFileSync(fp, "utf-8");
-    const lines = content.trim().split("\n").filter((l) => l.trim());
-    console.log(`  DEBUG ${file}: ${lines.length} rows`);
-    for (const uid of debugUnits) {
-      if (uid < lines.length) {
-        const vals = lines[uid].split(",").map((c) => c.trim());
-        console.log(`    row ${uid}: [${vals.join(", ")}]`);
-      }
-    }
-  }
-
-  // ── DEBUG: Check for JSON files and alternative data formats ────────────
-  try {
-    // List all files in the EN 15.4.0 DataLocal that are NOT CSV (JSON, etc.)
-    const nonCsvFiles = readdirSync(dataLocal).filter((f) => !f.endsWith(".csv"));
-    console.log(`  DEBUG: Non-CSV files in DataLocal: ${nonCsvFiles.length > 0 ? nonCsvFiles.join(", ") : "(none)"}`);
-
-    // Check if there's a resLocal JSON or other rarity-related files
-    const resFiles = readdirSync(resLocal).filter((f) => !f.startsWith("Unit_Explanation") && !f.endsWith(".csv"));
-    console.log(`  DEBUG: Non-CSV non-explanation files in resLocal: ${resFiles.length > 0 ? resFiles.slice(0, 30).join(", ") : "(none)"}`);
-
-    // Dump unitbuy.csv columns for more ground truth units to find a pattern
-    // Add more known units: unit 175 (Weightlifter Cat = Super Rare), unit 350 (Baby Cats = Uber Rare),
-    // unit 700+ (Legend Rare range)
-    const moreDebugUnits = [9, 56, 175, 270, 350, 480, 650, 700, 750];
-    const ubPath = path.join(dataLocal, "unitbuy.csv");
-    if (existsSync(ubPath)) {
-      const ubContent = readFileSync(ubPath, "utf-8");
-      const ubLines = ubContent.trim().split("\n").filter((l) => l.trim());
-      console.log(`  DEBUG: unitbuy.csv extended dump (cols 12-17 for more units):`);
-      for (const uid of [0, 9, 25, 56, 57, 175, 209, 270, 350, 480, 650, 750]) {
-        if (uid < ubLines.length) {
-          const vals = ubLines[uid].split(",").map((c) => c.trim());
-          console.log(`    unit ${uid}: col12=${vals[12]} col13=${vals[13]} col14=${vals[14]} col15=${vals[15]} col16=${vals[16]} col17=${vals[17]}`);
-        }
-      }
-    }
-  } catch (e) {
-    console.log(`  DEBUG: Error in extended diagnostics: ${e}`);
-  }
-
   // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
   // unitbuy.csv has one row per unit (row index = unit ID).
   // One of its columns contains the rarity value (0-5).
@@ -606,7 +556,93 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
     }
   }
 
-  console.warn("  WARNING: Could not parse rarity from any data file, using fallback guessRarity()");
+  // ── Strategy 5: Fall back to older game versions ─────────────────────────
+  // v15.4.0 removed rarity from CSV files. Try older versions in the BCData
+  // repo which still had rarity in nyankoPictureBookData.csv.
+  console.log("  Strategy 5: Searching older BCData versions for rarity data");
+  const gameDataEnDir = path.join(CLONE_DIR, "game_data", REGION);
+  if (existsSync(gameDataEnDir)) {
+    const allVersions = readdirSync(gameDataEnDir, { withFileTypes: true })
+      .filter((d) => d.isDirectory() && /^\d+\.\d+\.\d+$/.test(d.name))
+      .map((d) => d.name)
+      .sort(compareVersions)
+      .reverse(); // newest first
+
+    // Extract current version from dataLocal path
+    const currentVersion = path.basename(path.dirname(dataLocal));
+    console.log(`    Current version: ${currentVersion}, available: ${allVersions.join(", ")}`);
+
+    for (const ver of allVersions) {
+      if (ver === currentVersion) continue; // skip current (already failed)
+      const oldDataLocal = path.join(gameDataEnDir, ver, "DataLocal");
+      const oldPbPath = path.join(oldDataLocal, "nyankoPictureBookData.csv");
+      if (!existsSync(oldPbPath)) continue;
+
+      const content = readFileSync(oldPbPath, "utf-8");
+      const lines = content.trim().split("\n").filter((l) => l.trim());
+      if (lines.length < 100) continue;
+
+      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+      const numCols = Math.min(...rows.map((r) => r.length));
+
+      // Try each column
+      for (let col = 0; col < numCols; col++) {
+        const colVals = rows.map((r) => r[col]);
+        const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+        if (!allInRange) continue;
+
+        const distinctVals = new Set(colVals);
+        if (distinctVals.size < 3) continue;
+
+        const score = scoreRarityColumn(colVals);
+        if (score >= 100) {
+          console.log(`    ✓ Found rarity in v${ver} nyankoPictureBookData.csv col ${col} (score=${score.toFixed(1)})`);
+          const dist: Record<number, number> = {};
+          for (const v of colVals) dist[v] = (dist[v] ?? 0) + 1;
+          console.log(`      Distribution: ${JSON.stringify(dist)}`);
+          console.log(`      Applying ${lines.length} rarity values from v${ver} to current units`);
+
+          for (let i = 0; i < colVals.length; i++) {
+            const category = RARITY_MAP[colVals[i]];
+            if (category) map.set(i, category);
+          }
+          console.log(`    Rarity from older version: ${summarizeRarity(map)}`);
+          return map;
+        }
+      }
+
+      // Also try unitbuy.csv from older version
+      const oldUbPath = path.join(oldDataLocal, "unitbuy.csv");
+      if (existsSync(oldUbPath)) {
+        const ubContent = readFileSync(oldUbPath, "utf-8");
+        const ubLines = ubContent.trim().split("\n").filter((l) => l.trim());
+        if (ubLines.length >= 100) {
+          const ubRows = ubLines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+          const ubNumCols = Math.min(...ubRows.map((r) => r.length));
+          for (let col = 0; col < ubNumCols; col++) {
+            const colVals = ubRows.map((r) => r[col]);
+            const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+            if (!allInRange) continue;
+            const distinctVals = new Set(colVals);
+            if (distinctVals.size < 5) continue;
+            const score = scoreRarityColumn(colVals);
+            if (score >= 100) {
+              console.log(`    ✓ Found rarity in v${ver} unitbuy.csv col ${col} (score=${score.toFixed(1)})`);
+              for (let i = 0; i < colVals.length; i++) {
+                const category = RARITY_MAP[colVals[i]];
+                if (category) map.set(i, category);
+              }
+              console.log(`    Rarity from older version: ${summarizeRarity(map)}`);
+              return map;
+            }
+          }
+        }
+      }
+      console.log(`    v${ver}: no rarity data found`);
+    }
+  }
+
+  console.warn("  WARNING: Could not parse rarity from any version, using fallback guessRarity()");
   return map;
 }
 
