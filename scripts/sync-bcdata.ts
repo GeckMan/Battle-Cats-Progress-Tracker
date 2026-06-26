@@ -197,7 +197,7 @@ interface ParsedUnit {
 
 async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: string) {
   // 1. Parse rarity from data files
-  const rarityMap = parseRarityMap(dataLocal);
+  const rarityMap = parseRarityMap(dataLocal, resLocal);
   console.log(`  Parsed rarity for ${rarityMap.size} units`);
 
   // 2. Build authoritative form count map from nyankoPictureBookData.csv.
@@ -330,7 +330,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
   console.log(`\n  ✓ ${upserted} units synced`);
 }
 
-function parseRarityMap(dataLocal: string): Map<number, string> {
+function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string> {
   const map = new Map<number, string>();
 
   // Try both data files and pick the best result
