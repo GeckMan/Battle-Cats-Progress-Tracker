@@ -356,31 +356,34 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
     }
   }
 
-  // ── DEBUG: Search BCData Python source for rarity parsing logic ────────
+  // ── DEBUG: Check for JSON files and alternative data formats ────────────
   try {
-    const result = execSync(
-      `grep -r -n -i "rarity\\|unitbuy\\|picture_book\\|nyankoPictureBook" ${CLONE_DIR} --include="*.py" --include="*.json" -l 2>/dev/null || true`,
-      { encoding: "utf-8", timeout: 10000 }
-    );
-    const files = result.trim().split("\n").filter((f) => f.trim());
-    console.log(`  DEBUG: BCData source files mentioning rarity: ${files.length}`);
-    for (const f of files.slice(0, 10)) {
-      console.log(`    ${f}`);
-      // Dump lines with "rarity" context
-      try {
-        const grepResult = execSync(
-          `grep -n -i -A 2 "rarity" "${f}" 2>/dev/null | head -30`,
-          { encoding: "utf-8", timeout: 5000 }
-        );
-        if (grepResult.trim()) {
-          for (const line of grepResult.trim().split("\n")) {
-            console.log(`      ${line}`);
-          }
+    // List all files in the EN 15.4.0 DataLocal that are NOT CSV (JSON, etc.)
+    const nonCsvFiles = readdirSync(dataLocal).filter((f) => !f.endsWith(".csv"));
+    console.log(`  DEBUG: Non-CSV files in DataLocal: ${nonCsvFiles.length > 0 ? nonCsvFiles.join(", ") : "(none)"}`);
+
+    // Check if there's a resLocal JSON or other rarity-related files
+    const resFiles = readdirSync(resLocal).filter((f) => !f.startsWith("Unit_Explanation") && !f.endsWith(".csv"));
+    console.log(`  DEBUG: Non-CSV non-explanation files in resLocal: ${resFiles.length > 0 ? resFiles.slice(0, 30).join(", ") : "(none)"}`);
+
+    // Dump unitbuy.csv columns for more ground truth units to find a pattern
+    // Add more known units: unit 175 (Weightlifter Cat = Super Rare), unit 350 (Baby Cats = Uber Rare),
+    // unit 700+ (Legend Rare range)
+    const moreDebugUnits = [9, 56, 175, 270, 350, 480, 650, 700, 750];
+    const ubPath = path.join(dataLocal, "unitbuy.csv");
+    if (existsSync(ubPath)) {
+      const ubContent = readFileSync(ubPath, "utf-8");
+      const ubLines = ubContent.trim().split("\n").filter((l) => l.trim());
+      console.log(`  DEBUG: unitbuy.csv extended dump (cols 12-17 for more units):`);
+      for (const uid of [0, 9, 25, 56, 57, 175, 209, 270, 350, 480, 650, 750]) {
+        if (uid < ubLines.length) {
+          const vals = ubLines[uid].split(",").map((c) => c.trim());
+          console.log(`    unit ${uid}: col12=${vals[12]} col13=${vals[13]} col14=${vals[14]} col15=${vals[15]} col16=${vals[16]} col17=${vals[17]}`);
         }
-      } catch {}
+      }
     }
   } catch (e) {
-    console.log(`  DEBUG: Could not search BCData source: ${e}`);
+    console.log(`  DEBUG: Error in extended diagnostics: ${e}`);
   }
 
   // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
