@@ -10,61 +10,65 @@ import { prisma } from "@/lib/prisma";
  * Requires friendship (or self) to view another user's medals.
  */
 export async function GET(req: NextRequest) {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  const viewerId = session.user.id as string;
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const viewerId = session.user.id as string;
 
-  const { searchParams } = new URL(req.url);
-  const targetUserId = searchParams.get("userId") ?? viewerId;
-  const isSelf = targetUserId === viewerId;
+    const { searchParams } = new URL(req.url);
+    const targetUserId = searchParams.get("userId") ?? viewerId;
+    const isSelf = targetUserId === viewerId;
 
-  // If viewing someone else, verify friendship (admins bypass)
-  if (!isSelf) {
-    const viewer = await prisma.user.findUnique({
-      where: { id: viewerId },
-      select: { role: true },
-    });
-    const isAdmin = viewer?.role === "ADMIN";
-
-    if (!isAdmin) {
-      const friendship = await prisma.friendship.findFirst({
-        where: {
-          status: "ACCEPTED",
-          OR: [
-            { requesterId: viewerId, addresseeId: targetUserId },
-            { requesterId: targetUserId, addresseeId: viewerId },
-          ],
-        },
-        select: { id: true },
+    // If viewing someone else, verify friendship (admins bypass)
+    if (!isSelf) {
+      const viewer = await prisma.user.findUnique({
+        where: { id: viewerId },
+        select: { role: true },
       });
-      if (!friendship) {
-        return NextResponse.json({ error: "Not friends" }, { status: 403 });
+      const isAdmin = viewer?.role === "ADMIN";
+
+      if (!isAdmin) {
+        const friendship = await prisma.friendship.findFirst({
+          where: {
+            status: "ACCEPTED",
+            OR: [
+              { requesterId: viewerId, addresseeId: targetUserId },
+              { requesterId: targetUserId, addresseeId: viewerId },
+            ],
+          },
+          select: { id: true },
+        });
+        if (!friendship) {
+          return NextResponse.json({ error: "Not friends" }, { status: 403 });
+        }
       }
     }
+
+    const medals = await prisma.meowMedal.findMany({
+      orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
+    });
+
+    const userRows = await prisma.userMeowMedal.findMany({
+      where: { userId: targetUserId, meowMedalId: { in: medals.map((m) => m.id) } },
+      select: { meowMedalId: true, earned: true },
+    });
+
+    const earnedById = new Map(userRows.map((r) => [r.meowMedalId, r.earned]));
+
+    const rows = medals.map((m) => ({
+      id: m.id,
+      name: m.name,
+      description: m.description ?? "",
+      category: m.category ?? null,
+      earned: earnedById.get(m.id) ?? false,
+      imageFile: m.imageFile ?? null,
+    }));
+
+    const total = rows.length;
+    const earned = rows.filter((r) => r.earned).length;
+
+    return NextResponse.json({ medals: rows, total, earned });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
-
-  const medals = await prisma.meowMedal.findMany({
-    orderBy: [{ category: "asc" }, { sortOrder: "asc" }, { name: "asc" }],
-  });
-
-  const userRows = await prisma.userMeowMedal.findMany({
-    where: { userId: targetUserId, meowMedalId: { in: medals.map((m) => m.id) } },
-    select: { meowMedalId: true, earned: true },
-  });
-
-  const earnedById = new Map(userRows.map((r) => [r.meowMedalId, r.earned]));
-
-  const rows = medals.map((m) => ({
-    id: m.id,
-    name: m.name,
-    description: m.description ?? "",
-    category: m.category ?? null,
-    earned: earnedById.get(m.id) ?? false,
-    imageFile: m.imageFile ?? null,
-  }));
-
-  const total = rows.length;
-  const earned = rows.filter((r) => r.earned).length;
-
-  return NextResponse.json({ medals: rows, total, earned });
 }

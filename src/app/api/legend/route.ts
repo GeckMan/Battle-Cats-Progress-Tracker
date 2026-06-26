@@ -5,62 +5,66 @@ import { authOptions } from "@/lib/auth-options";
 import { logActivity } from "@/lib/activity-logger";
 
 export async function POST(req: Request) {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({}, { status: 401 });
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({}, { status: 401 });
 
-  const userId = session.user.id as string;
+    const userId = session.user.id as string;
 
-  const { id, patch } = await req.json();
+    const { id, patch } = await req.json();
 
-  if (typeof id !== "string" || !patch || typeof patch !== "object") {
-    return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
+    if (typeof id !== "string" || !patch || typeof patch !== "object") {
+      return NextResponse.json({ error: "Invalid payload" }, { status: 400 });
+    }
+
+    const allowed: Record<string, boolean> = { crownMax: true, status: true };
+    for (const key of Object.keys(patch)) {
+      if (!allowed[key]) {
+        return NextResponse.json({ error: `Field not allowed: ${key}` }, { status: 400 });
+      }
+    }
+
+    // crownMax: null or 1..4 (client uses null for 0)
+    if (patch.crownMax !== undefined && patch.crownMax !== null) {
+      const c = Number(patch.crownMax);
+      if (!Number.isFinite(c) || c < 1 || c > 4) {
+        return NextResponse.json(
+          { error: "Invalid crownMax (must be 1–4 or null)" },
+          { status: 400 }
+        );
+      }
+    }
+
+    if (patch.status !== undefined) {
+      const s = String(patch.status);
+      if (s !== "NOT_STARTED" && s !== "IN_PROGRESS" && s !== "COMPLETED") {
+        return NextResponse.json({ error: "Invalid status" }, { status: 400 });
+      }
+    }
+
+
+    // Fetch subchapter name for activity logging
+    const progressRow = await prisma.userLegendProgress.findFirst({
+      where: { id, userId },
+      select: { subchapter: { select: { displayName: true } } },
+    });
+
+    await prisma.userLegendProgress.updateMany({
+      where: { id, userId },
+      data: patch,
+    });
+
+    // Log activity for meaningful changes
+    const subName = progressRow?.subchapter?.displayName ?? "Unknown subchapter";
+    if (patch.status === "COMPLETED") {
+      await logActivity(userId, "LEGEND_COMPLETED", subName);
+    }
+    if (patch.crownMax !== undefined && patch.crownMax !== null) {
+      await logActivity(userId, "LEGEND_COMPLETED", subName, `crown ${patch.crownMax}`);
+    }
+
+    return NextResponse.json({ ok: true });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
-
-  const allowed: Record<string, boolean> = { crownMax: true, status: true };
-for (const key of Object.keys(patch)) {
-  if (!allowed[key]) {
-    return NextResponse.json({ error: `Field not allowed: ${key}` }, { status: 400 });
-  }
-}
-
-// crownMax: null or 1..4 (client uses null for 0)
-if (patch.crownMax !== undefined && patch.crownMax !== null) {
-  const c = Number(patch.crownMax);
-  if (!Number.isFinite(c) || c < 1 || c > 4) {
-    return NextResponse.json(
-      { error: "Invalid crownMax (must be 1–4 or null)" },
-      { status: 400 }
-    );
-  }
-}
-
-if (patch.status !== undefined) {
-  const s = String(patch.status);
-  if (s !== "NOT_STARTED" && s !== "IN_PROGRESS" && s !== "COMPLETED") {
-    return NextResponse.json({ error: "Invalid status" }, { status: 400 });
-  }
-}
-
-
-  // Fetch subchapter name for activity logging
-  const progressRow = await prisma.userLegendProgress.findFirst({
-    where: { id, userId },
-    select: { subchapter: { select: { displayName: true } } },
-  });
-
-  await prisma.userLegendProgress.updateMany({
-    where: { id, userId },
-    data: patch,
-  });
-
-  // Log activity for meaningful changes
-  const subName = progressRow?.subchapter?.displayName ?? "Unknown subchapter";
-  if (patch.status === "COMPLETED") {
-    await logActivity(userId, "LEGEND_COMPLETED", subName);
-  }
-  if (patch.crownMax !== undefined && patch.crownMax !== null) {
-    await logActivity(userId, "LEGEND_COMPLETED", subName, `crown ${patch.crownMax}`);
-  }
-
-  return NextResponse.json({ ok: true });
 }

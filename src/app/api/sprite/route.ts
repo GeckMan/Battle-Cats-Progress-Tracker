@@ -73,7 +73,6 @@ export async function GET(req: NextRequest) {
       },
     });
   } catch (err) {
-    console.error(`[sprite] Failed u=${u} f=${f}:`, err instanceof Error ? err.message : err);
     return new NextResponse(null, { status: 502 });
   }
 }

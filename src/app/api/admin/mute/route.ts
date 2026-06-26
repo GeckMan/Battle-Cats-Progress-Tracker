@@ -4,14 +4,15 @@ import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
 
 export async function POST(req: Request) {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  if ((session.user as any).role !== "ADMIN") {
-    return NextResponse.json({ error: "Forbidden" }, { status: 403 });
-  }
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    if ((session.user as any).role !== "ADMIN") {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
 
-  const body = await req.json();
-  const { userId, minutes, unmute } = body as {
+    const body = await req.json();
+    const { userId, minutes, unmute } = body as {
     userId?: string;
     minutes?: number;
     unmute?: boolean;
@@ -55,9 +56,12 @@ export async function POST(req: Request) {
     data: { chatMutedUntil: mutedUntil },
   });
 
-  return NextResponse.json({
-    success: true,
-    message: `${target.username} muted until ${mutedUntil.toISOString()}`,
-    mutedUntil: mutedUntil.toISOString(),
-  });
+    return NextResponse.json({
+      success: true,
+      message: `${target.username} muted until ${mutedUntil.toISOString()}`,
+      mutedUntil: mutedUntil.toISOString(),
+    });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
 }

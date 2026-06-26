@@ -82,7 +82,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true, user });
   } catch (err) {
-    console.error("Signup error:", err);
     return NextResponse.json(
       { error: "Unexpected server error." },
       { status: 500 }

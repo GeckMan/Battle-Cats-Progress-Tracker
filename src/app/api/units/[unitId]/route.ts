@@ -70,7 +70,6 @@ export async function PATCH(
 
     return NextResponse.json({ ok: true });
   } catch (e) {
-    console.error(e);
     return NextResponse.json({ error: "Failed to save" }, { status: 500 });
   }
 }

@@ -3,6 +3,7 @@ import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
 import { logBulkActivities } from "@/lib/activity-logger";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 const FORM_LABELS: Record<number, string> = {
   1: "Form 1",
@@ -16,6 +17,10 @@ export async function POST(req: Request) {
   const session = await getServerSession(authOptions);
   if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
   const userId = session.user.id as string;
+
+  // Rate limit: 30 per minute per user
+  const rl = await checkRateLimit(`units-bulk:${userId}`, 30, 60 * 1000);
+  if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
 
   const body = await req.json();
   const updates: { unitId: string; formLevel: number }[] = body.updates ?? [];
@@ -87,7 +92,6 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (e) {
-    console.error(e);
     return NextResponse.json({ error: "Failed to save" }, { status: 500 });
   }
 }

@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 /**
  * POST /api/import — Restore user progress from an exported JSON file.
@@ -10,9 +11,14 @@ import { prisma } from "@/lib/prisma";
  * within a single transaction for atomicity.
  */
 export async function POST(req: Request) {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-  const userId = session.user.id as string;
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const userId = session.user.id as string;
+
+    // Rate limit: 5 per hour per user
+    const rl = await checkRateLimit(`import:${userId}`, 5, 60 * 60 * 1000);
+    if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
 
   let data: any;
   try {
@@ -255,7 +261,6 @@ export async function POST(req: Request) {
       }
     });
   } catch (err) {
-    console.error("Import transaction error:", err);
     return NextResponse.json({ error: "Import failed. No changes were made." }, { status: 500 });
   }
 
@@ -268,9 +273,12 @@ export async function POST(req: Request) {
     catclaw: catclawOp ? 1 : 0,
   };
 
-  return NextResponse.json({
-    ok: true,
-    imported,
-    warnings: errors.length > 0 ? errors : undefined,
-  });
+    return NextResponse.json({
+      ok: true,
+      imported,
+      warnings: errors.length > 0 ? errors : undefined,
+    });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
 }

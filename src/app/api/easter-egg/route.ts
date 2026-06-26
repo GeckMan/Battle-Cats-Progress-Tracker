@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 /**
  * Easter egg tracker — counts unique users who have unleashed the Battle Cat.
@@ -13,39 +14,51 @@ import { prisma } from "@/lib/prisma";
 
 /** GET — return total count and whether the current user has unleashed */
 export async function GET() {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
-  const [countResult, userResult] = await Promise.all([
-    prisma.$queryRaw<[{ count: bigint }]>`
-      SELECT COUNT(*) as count FROM "User" WHERE "hasUnleashedCat" = true
-    `,
-    prisma.$queryRaw<[{ hasUnleashedCat: boolean }?]>`
-      SELECT "hasUnleashedCat" FROM "User" WHERE "id" = ${session.user.id}
-    `,
-  ]);
+    const [countResult, userResult] = await Promise.all([
+      prisma.$queryRaw<[{ count: bigint }]>`
+        SELECT COUNT(*) as count FROM "User" WHERE "hasUnleashedCat" = true
+      `,
+      prisma.$queryRaw<[{ hasUnleashedCat: boolean }?]>`
+        SELECT "hasUnleashedCat" FROM "User" WHERE "id" = ${session.user.id}
+      `,
+    ]);
 
-  return NextResponse.json({
-    count: Number(countResult[0]?.count ?? 0),
-    hasUnleashed: userResult[0]?.hasUnleashedCat ?? false,
-  });
+    return NextResponse.json({
+      count: Number(countResult[0]?.count ?? 0),
+      hasUnleashed: userResult[0]?.hasUnleashedCat ?? false,
+    });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
 }
 
 /** POST — mark current user as having unleashed the cat (idempotent) */
 export async function POST() {
-  const session = await getServerSession(authOptions);
-  if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const userId = session.user.id as string;
 
-  await prisma.$executeRaw`
-    UPDATE "User" SET "hasUnleashedCat" = true WHERE "id" = ${session.user.id}
-  `;
+    const rl = await checkRateLimit(`easter-egg:${userId}`, 10, 60 * 1000);
+    if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
 
-  const countResult = await prisma.$queryRaw<[{ count: bigint }]>`
-    SELECT COUNT(*) as count FROM "User" WHERE "hasUnleashedCat" = true
-  `;
+    await prisma.$executeRaw`
+      UPDATE "User" SET "hasUnleashedCat" = true WHERE "id" = ${session.user.id}
+    `;
 
-  return NextResponse.json({
-    count: Number(countResult[0]?.count ?? 0),
-    hasUnleashed: true,
-  });
+    const countResult = await prisma.$queryRaw<[{ count: bigint }]>`
+      SELECT COUNT(*) as count FROM "User" WHERE "hasUnleashedCat" = true
+    `;
+
+    return NextResponse.json({
+      count: Number(countResult[0]?.count ?? 0),
+      hasUnleashed: true,
+    });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
 }
