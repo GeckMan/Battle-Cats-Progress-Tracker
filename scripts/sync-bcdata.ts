@@ -336,6 +336,26 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
   // Try both data files and pick the best result
   const candidates: { source: string; col: number; score: number; values: number[] }[] = [];
 
+  // ── DEBUG: Dump known unit rows to help diagnose column changes ────────
+  // Unit 209 = Fuma Kotaro (Uber Rare, rarity=4)
+  // Unit 57 = Salon Cat (Rare, rarity=2)
+  // Unit 25 = Ninja Frog Cat (Special, rarity=1)
+  // Unit 0 = Cat (Normal, rarity=0)
+  const debugUnits = [0, 25, 57, 209];
+  for (const file of ["unitbuy.csv", "nyankoPictureBookData.csv"]) {
+    const fp = path.join(dataLocal, file);
+    if (!existsSync(fp)) continue;
+    const content = readFileSync(fp, "utf-8");
+    const lines = content.trim().split("\n").filter((l) => l.trim());
+    console.log(`  DEBUG ${file}: ${lines.length} rows`);
+    for (const uid of debugUnits) {
+      if (uid < lines.length) {
+        const vals = lines[uid].split(",").map((c) => c.trim());
+        console.log(`    row ${uid}: [${vals.join(", ")}]`);
+      }
+    }
+  }
+
   // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
   // unitbuy.csv has one row per unit (row index = unit ID).
   // One of its columns contains the rarity value (0-5).
@@ -412,6 +432,61 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
         }
       }
       console.log(`  nyankoPictureBookData.csv: checked ${pbChecked} columns with values 0-5 + normalOk`);
+    }
+  }
+
+  // ── Strategy 3: Broad scan — relax all pre-filters, rely purely on scoring ─
+  // If strategies 1 & 2 found nothing, the CSV format may have changed.
+  // Scan ALL columns of unitbuy.csv with only the ≥5 distinct values requirement.
+  if (candidates.length === 0) {
+    console.log("  Strategy 3: Broad scan of unitbuy.csv (no normalOk/specialOk requirement)");
+    const unitbuyPath2 = path.join(dataLocal, "unitbuy.csv");
+    if (existsSync(unitbuyPath2)) {
+      const content = readFileSync(unitbuyPath2, "utf-8");
+      const lines = content.trim().split("\n").filter((l) => l.trim());
+      if (lines.length > 9) {
+        const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+        const numCols = Math.min(...rows.map((r) => r.length));
+
+        for (let col = 0; col < numCols; col++) {
+          const colVals = rows.map((r) => r[col]);
+          const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+          if (!allInRange) continue;
+
+          const distinctVals = new Set(colVals);
+          if (distinctVals.size >= 5) {
+            const score = scoreRarityColumn(colVals);
+            candidates.push({ source: "unitbuy.csv(broad)", col, score, values: colVals });
+            console.log(`  unitbuy.csv(broad) col ${col}: ${distinctVals.size} distinct, score=${score.toFixed(1)}`);
+          }
+        }
+      }
+    }
+    // Also broad scan nyankoPictureBookData.csv
+    const pbPath2 = path.join(dataLocal, "nyankoPictureBookData.csv");
+    if (existsSync(pbPath2)) {
+      const content = readFileSync(pbPath2, "utf-8");
+      const lines = content.trim().split("\n").filter((l) => l.trim());
+      if (lines.length > 9) {
+        const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+        const numCols = Math.min(...rows.map((r) => r.length));
+
+        for (let col = 0; col < numCols; col++) {
+          const colVals = rows.map((r) => r[col]);
+          const allInRange = colVals.every((v) => v >= 0 && v <= 5);
+          if (!allInRange) continue;
+
+          const distinctVals = new Set(colVals);
+          if (distinctVals.size >= 5) {
+            const score = scoreRarityColumn(colVals);
+            candidates.push({ source: "nyankoPictureBookData.csv(broad)", col, score, values: colVals });
+            console.log(`  nyankoPictureBookData.csv(broad) col ${col}: ${distinctVals.size} distinct, score=${score.toFixed(1)}`);
+          }
+        }
+      }
+    }
+    if (candidates.length === 0) {
+      console.warn("  Strategy 3 also found no candidates with ≥5 distinct values in range 0-5");
     }
   }
 
