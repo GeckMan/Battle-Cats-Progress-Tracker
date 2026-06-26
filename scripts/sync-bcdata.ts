@@ -356,81 +356,31 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
     }
   }
 
-  // ── DEBUG: Dump key suspect files ────────────────────────────────────────
-  const suspectFiles = ["Hidden_rarity.csv", "t_unit.csv", "unitlimit.csv",
-    "nyankoPictureBookData_Attribute.csv", "nyankoPictureBookData_CharaGet.csv",
-    "Charagroup.csv", "GatyaDataSetR1.csv"];
-  for (const file of suspectFiles) {
-    for (const dir of [dataLocal, resLocal]) {
-      const fp = path.join(dir, file);
-      if (!existsSync(fp)) continue;
-      const content = readFileSync(fp, "utf-8");
-      const lines = content.trim().split("\n").filter((l) => l.trim());
-      console.log(`  DEBUG ${file}: ${lines.length} rows`);
-      // Dump first 5 rows + rows for known units if they exist
-      for (let i = 0; i < Math.min(5, lines.length); i++) {
-        console.log(`    row ${i}: ${lines[i].substring(0, 200)}`);
-      }
-      // For files with enough rows, dump ground truth unit rows
-      for (const uid of debugUnits) {
-        if (uid >= 5 && uid < lines.length) {
-          console.log(`    row ${uid}: ${lines[uid].substring(0, 200)}`);
-        }
-      }
-    }
-  }
-
-  // ── DEBUG: Search for key-value pair format (unitId, rarity) ──────────
-  // Some files might store rarity as [unitId, rarity] pairs rather than
-  // having row index = unit ID
-  const GROUND_TRUTH_RARITY: Record<number, number> = {
-    0: 0, 25: 1, 57: 2, 209: 4,
-  };
-  const allCsvFiles = readdirSync(dataLocal).filter((f) => f.endsWith(".csv"));
-  console.log(`  DEBUG: Key-value pair search across ${allCsvFiles.length} DataLocal CSVs`);
-  for (const csvFile of allCsvFiles) {
-    const fp = path.join(dataLocal, csvFile);
-    const content = readFileSync(fp, "utf-8");
-    const lines = content.trim().split("\n").filter((l) => l.trim());
-    if (lines.length < 4) continue; // need at least 4 rows for our ground truth
-
-    const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
-    const numCols = Math.min(...rows.slice(0, 50).map((r) => r.length));
-    if (numCols < 2) continue;
-
-    // For each potential ID column + value column pair
-    for (let idCol = 0; idCol < Math.min(numCols, 3); idCol++) {
-      // Build a map of id → row for this column
-      const idToRow = new Map<number, number[]>();
-      for (const row of rows) {
-        const id = row[idCol];
-        if (!idToRow.has(id)) idToRow.set(id, row);
-      }
-
-      // Check if all ground truth unit IDs are present
-      const gtIds = Object.keys(GROUND_TRUTH_RARITY).map(Number);
-      if (!gtIds.every((id) => idToRow.has(id))) continue;
-
-      // For each potential rarity column
-      for (let valCol = 0; valCol < numCols; valCol++) {
-        if (valCol === idCol) continue;
-        let allMatch = true;
-        for (const [uid, expected] of Object.entries(GROUND_TRUTH_RARITY)) {
-          const row = idToRow.get(Number(uid));
-          if (!row || row[valCol] !== expected) { allMatch = false; break; }
-        }
-        if (allMatch) {
-          // Verify values are in rarity range
-          const vals = rows.map((r) => r[valCol]);
-          const allInRange = vals.every((v) => v >= 0 && v <= 5);
-          if (allInRange) {
-            const dist: Record<number, number> = {};
-            for (const v of vals) dist[v] = (dist[v] ?? 0) + 1;
-            console.log(`  ★ KV RARITY MATCH: ${csvFile} idCol=${idCol} valCol=${valCol} — ${rows.length} rows, dist=${JSON.stringify(dist)}`);
+  // ── DEBUG: Search BCData Python source for rarity parsing logic ────────
+  try {
+    const result = execSync(
+      `grep -r -n -i "rarity\\|unitbuy\\|picture_book\\|nyankoPictureBook" ${CLONE_DIR} --include="*.py" --include="*.json" -l 2>/dev/null || true`,
+      { encoding: "utf-8", timeout: 10000 }
+    );
+    const files = result.trim().split("\n").filter((f) => f.trim());
+    console.log(`  DEBUG: BCData source files mentioning rarity: ${files.length}`);
+    for (const f of files.slice(0, 10)) {
+      console.log(`    ${f}`);
+      // Dump lines with "rarity" context
+      try {
+        const grepResult = execSync(
+          `grep -n -i -A 2 "rarity" "${f}" 2>/dev/null | head -30`,
+          { encoding: "utf-8", timeout: 5000 }
+        );
+        if (grepResult.trim()) {
+          for (const line of grepResult.trim().split("\n")) {
+            console.log(`      ${line}`);
           }
         }
-      }
+      } catch {}
     }
+  } catch (e) {
+    console.log(`  DEBUG: Could not search BCData source: ${e}`);
   }
 
   // ── Strategy 1: Parse unitbuy.csv ──────────────────────────────────────
