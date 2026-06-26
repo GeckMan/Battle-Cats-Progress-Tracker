@@ -348,23 +348,33 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
     if (lines.length > 9) {
       const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
       const numCols = Math.min(...rows.map((r) => r.length));
+      console.log(`  unitbuy.csv: ${rows.length} rows, ${numCols} columns`);
 
       for (let col = 0; col < numCols; col++) {
         const colVals = rows.map((r) => r[col]);
         const allInRange = colVals.every((v) => v >= 0 && v <= 5);
         if (!allInRange) continue;
 
+        // Normal cats (0-8) should have rarity 0 (Normal)
         const normalOk = colVals.slice(0, 9).every((v) => v === 0);
         if (!normalOk) continue;
 
-        const specialOk = colVals.slice(9, Math.min(57, colVals.length)).every((v) => v === 1);
+        // Relaxed special check: at least 80% of units 9-56 should be 1 (Special).
+        // PONOS may have reclassified a few units near the boundary.
+        const specialSlice = colVals.slice(9, Math.min(57, colVals.length));
+        const specialCount = specialSlice.filter((v) => v === 1).length;
+        const specialOk = specialSlice.length > 0 && (specialCount / specialSlice.length) >= 0.8;
         if (!specialOk) continue;
 
         const distinctVals = new Set(colVals);
-        if (distinctVals.size >= 3) {
+        // A real rarity column MUST have at least 5 distinct values (0-4 minimum;
+        // Legend Rare (5) might be absent in very old versions but SR/UR never are)
+        if (distinctVals.size >= 5) {
           const score = scoreRarityColumn(colVals);
           candidates.push({ source: "unitbuy.csv", col, score, values: colVals });
           console.log(`  unitbuy.csv col ${col}: ${distinctVals.size} distinct values, score=${score.toFixed(1)}`);
+        } else {
+          console.log(`  unitbuy.csv col ${col}: SKIPPED (only ${distinctVals.size} distinct values, need ≥5)`);
         }
       }
     }
@@ -380,6 +390,8 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
       const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
       const numCols = Math.min(...rows.map((r) => r.length));
 
+      console.log(`  nyankoPictureBookData.csv: ${rows.length} rows, ${numCols} columns`);
+      let pbChecked = 0;
       for (let col = 0; col < numCols; col++) {
         const colVals = rows.map((r) => r[col]);
         const allInRange = colVals.every((v) => v >= 0 && v <= 5);
@@ -388,30 +400,56 @@ function parseRarityMap(dataLocal: string): Map<number, string> {
         const normalOk = colVals.slice(0, 9).every((v) => v === 0);
         if (!normalOk) continue;
 
+        pbChecked++;
         const distinctVals = new Set(colVals);
-        if (distinctVals.size >= 3) {
+        // A real rarity column MUST have at least 5 distinct values
+        if (distinctVals.size >= 5) {
           const score = scoreRarityColumn(colVals);
           candidates.push({ source: "nyankoPictureBookData.csv", col, score, values: colVals });
           console.log(`  nyankoPictureBookData.csv col ${col}: ${distinctVals.size} distinct values, score=${score.toFixed(1)}`);
+        } else {
+          console.log(`  nyankoPictureBookData.csv col ${col}: SKIPPED (only ${distinctVals.size} distinct values, need ≥5)`);
         }
       }
+      console.log(`  nyankoPictureBookData.csv: checked ${pbChecked} columns with values 0-5 + normalOk`);
     }
   }
 
-  // Pick the candidate with the highest score
+  // Pick the candidate with the highest score (minimum threshold: 100)
+  // A score below 100 means the column is missing critical rarity tiers
+  // and should not be trusted to overwrite existing data.
+  const MIN_RARITY_SCORE = 100;
+
   if (candidates.length > 0) {
     candidates.sort((a, b) => b.score - a.score);
     const best = candidates[0];
-    console.log(`  → Best rarity column: ${best.source} col ${best.col} (score=${best.score.toFixed(1)})`);
 
-    for (let i = 0; i < best.values.length; i++) {
-      const category = RARITY_MAP[best.values[i]];
-      if (category) {
-        map.set(i, category);
-      }
+    // Log all candidates for debugging
+    for (const c of candidates) {
+      const dist: Record<number, number> = {};
+      for (const v of c.values) dist[v] = (dist[v] ?? 0) + 1;
+      console.log(`  Candidate: ${c.source} col ${c.col} score=${c.score.toFixed(1)} dist=${JSON.stringify(dist)}`);
     }
-    console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
-    return map;
+
+    if (best.score >= MIN_RARITY_SCORE) {
+      console.log(`  → Best rarity column: ${best.source} col ${best.col} (score=${best.score.toFixed(1)})`);
+
+      for (let i = 0; i < best.values.length; i++) {
+        const category = RARITY_MAP[best.values[i]];
+        if (category) {
+          map.set(i, category);
+        }
+      }
+      console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
+      return map;
+    } else {
+      console.warn(`  ⚠ Best candidate score ${best.score.toFixed(1)} is below minimum threshold ${MIN_RARITY_SCORE}`);
+      console.warn(`    Rejecting column to protect existing data. Distribution: ${JSON.stringify(
+        Object.fromEntries(Object.entries(
+          best.values.reduce((acc, v) => { acc[v] = (acc[v] ?? 0) + 1; return acc; }, {} as Record<number, number>)
+        ))
+      )}`);
+    }
   }
 
   console.warn("  WARNING: Could not parse rarity from any data file, using fallback guessRarity()");
@@ -441,6 +479,13 @@ function scoreRarityColumn(values: number[]): number {
   // Reward having all 6 rarity tiers present (strong signal)
   const tiersPresent = Object.values(counts).filter((c) => c > 0).length;
   score += tiersPresent * 15; // max 90 for all 6 tiers
+
+  // HARD REQUIREMENT: Super Rare (3) and Uber Rare (4) MUST be present.
+  // Battle Cats has hundreds of SR and UR units — any column missing them
+  // is definitely wrong. This was the root cause of the NORMAL=748 bug
+  // where a column with only 3 distinct values (0,1,2) was accepted.
+  if (counts[3] === 0) score -= 200; // no Super Rare = definitely wrong
+  if (counts[4] === 0) score -= 200; // no Uber Rare = definitely wrong
 
   // Reward correct ordering: Rare > Super Rare > Uber Rare > Legend Rare
   if (counts[2] > counts[3]) score += 20; // more Rare than Super Rare
