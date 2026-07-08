@@ -56,7 +56,7 @@ export default function RightPanel({
               badge={activeTab !== "activity" ? unreadActivity : 0}
               title="Activity from you and your friends"
             >
-              Friends
+              Friend Updates
             </TabButton>
             <TabButton
               active={activeTab === "chat"}
@@ -378,7 +378,7 @@ function ActivityTab({ scope }: { scope: "friends" | "global" }) {
 
   const nervHeader = (
     <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
-      <span>{scope === "global" ? "Global Event Log" : "Friends Event Log"}</span>
+      <span>{scope === "global" ? "Global Event Log" : "Friend Updates Log"}</span>
       <div style={{ display: "flex", gap: "6px" }}>
         {onlineCount !== null && (
           <span className="tag"><span className="led green" />{onlineCount} Online</span>
@@ -391,7 +391,7 @@ function ActivityTab({ scope }: { scope: "friends" | "global" }) {
   const defaultHeader = onlineCount !== null && (
     <div className="flex items-center justify-between px-1 pb-2 mb-1 border-b border-gray-800">
       <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
-        {scope === "global" ? "Global Activity" : "Friends Activity"}
+        {scope === "global" ? "Global Activity" : "Friend Updates"}
       </span>
       <span className="flex items-center gap-1.5 text-[10px] text-gray-400">
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
