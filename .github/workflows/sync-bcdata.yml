@@ -39,5 +39,10 @@ jobs:
             echo "No new medal images to commit"
           else
             git commit -m "chore: add newly-synced medal images"
+            # main may have moved since actions/checkout ran at the start of
+            # this job (e.g. someone pushed in the meantime) — rebase onto
+            # the latest before pushing so this doesn't get rejected as a
+            # non-fast-forward.
+            git pull --rebase origin main
             git push
           fi
