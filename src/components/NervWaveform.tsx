@@ -210,7 +210,7 @@ export default function NervWaveform() {
   }
 
   // ── Date labels ────────────────────────────────────────────────────────
-  const labelCount = Math.min(5, numDays);
+  const labelCount = Math.min(7, numDays);
   const labelIndices = Array.from({ length: labelCount }, (_, i) =>
     Math.round((i / (labelCount - 1)) * (numDays - 1))
   );
@@ -368,15 +368,22 @@ export default function NervWaveform() {
             );
           })}
 
-          {/* Date labels */}
-          {labelIndices.map((idx) => (
-            <text key={idx} x={PAD_L + idx * xStep} y={H - 4}
-              fill="rgba(136,136,128,0.5)" fontSize="9"
-              fontFamily="var(--font-sys)" textAnchor="middle"
-              letterSpacing="0.06em">
-              {formatDateLabel(data.days[idx])}
-            </text>
-          ))}
+          {/* Date labels — edge labels anchor inward so they don't get
+              clipped by the SVG's overflow:hidden boundary. */}
+          {labelIndices.map((idx, li) => {
+            const isFirst = li === 0;
+            const isLast = li === labelIndices.length - 1;
+            const anchor = isFirst ? "start" : isLast ? "end" : "middle";
+            const x = PAD_L + idx * xStep + (isFirst ? 3 : isLast ? -3 : 0);
+            return (
+              <text key={idx} x={x} y={H - 4}
+                fill="rgba(136,136,128,0.5)" fontSize="8"
+                fontFamily="var(--font-sys)" textAnchor={anchor}
+                letterSpacing="0.03em">
+                {formatDateLabel(data.days[idx])}
+              </text>
+            );
+          })}
         </svg>
       </div>
     </div>
