@@ -48,8 +48,8 @@ export default function RightPanel({
         }`}
       >
         {/* Header */}
-        <div className="flex items-center justify-between px-4 pt-4 pb-2 border-b border-gray-800">
-          <div className="flex gap-1">
+        <div className="flex items-center justify-between px-4 pt-4 pb-2 border-b border-gray-800 gap-2">
+          <div className="flex gap-1 overflow-x-auto">
             <TabButton
               active={activeTab === "activity"}
               onClick={() => onTabChange("activity")}
@@ -985,12 +985,15 @@ function ChatBubble({
             Admin
           </span>
         )}
-        <span className="text-[10px] text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
+        <span className="text-[10px] text-gray-600 opacity-60 group-hover:opacity-100 transition-opacity">
           {isToday ? timeStr : `${dateStr} ${timeStr}`}
         </span>
-        {/* Trailing actions — hidden until hover */}
+        {/* Trailing actions — dimmed by default, brighten on hover. Deliberately
+            not opacity-0: touch devices have no real hover state, so fully
+            hiding these (including the delete button) would make them
+            undiscoverable and untappable on mobile. */}
         {(!isMe || canDelete) && (
-          <span className="ml-auto flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+          <span className="ml-auto flex items-center gap-1.5 opacity-60 group-hover:opacity-100 transition-opacity">
             {/* Friend / Profile action — skip for own messages */}
             {!isMe && (
               isFriend ? (
