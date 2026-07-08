@@ -90,10 +90,11 @@ Game data (units, legend stages, meow medals) is synced from [fieryhenry/BCData]
 - **Unit names:** parsed from `resLocal/Unit_Explanation{N}_en.csv` (pipe-delimited, line per form)
 - **Rarity:** guessed from unit ID ranges (Normal 0-8, Special 9-56, default Rare). Can be manually corrected.
 - **Legend stages:** parsed from `resLocal/Map_Name.csv` (pipe-delimited subchapter names)
-- **Meow medals:** parsed from `resLocal/medalname.tsv` (tab-delimited `name\tdescription`, one row per medal, in the same order as `DataLocal/medallist.json`'s `iconID` array — used as sortOrder). Replaces the old `scripts/import-meow-medals-miraheze.ts` wiki scraper as the source of truth; that script is now legacy/manual-fallback only. Does not touch the `autoKey` field (separate hand-curated auto-completion system).
+- **Meow medals:** parsed from `resLocal/medalname.tsv` (tab-delimited `name\tdescription`, one row per medal, in the same order as `DataLocal/medallist.json`'s `iconID` array — used as sortOrder and as the `Medal_NNN.png` image index). Matches existing rows by normalized name (star glyphs/whitespace stripped), not exact string equality — a `consolidateDuplicateMedals()` step runs before every sync as a self-healing safety net in case duplicates ever reappear. Replaces the old `scripts/import-meow-medals-miraheze.ts` wiki scraper as the source of truth for names/descriptions; that script is now legacy/manual-fallback only. Does not touch the `autoKey` field (separate hand-curated auto-completion system).
+- **Meow medal artwork:** BCData has no images at all, only text/JSON — `scripts/sync-medal-images.ts` runs right after `sync-bcdata.ts` in the same workflow and downloads artwork for any medal missing a local file in `public/medals/` from the Battle Cats wiki's Meow_Medals page. The workflow then commits any newly-downloaded PNGs back into the repo (`permissions: contents: write`), so new medal art ships with the next deploy automatically. Best-effort — if the wiki hasn't been updated yet for a brand-new medal, it just logs a warning and leaves that one image missing until a later run finds it.
 - **Required secrets:** `DATABASE_URL` and `DIRECT_DATABASE_URL` must be set in GitHub repo secrets
 
-To run manually: `npx tsx ./scripts/sync-bcdata.ts` (needs DATABASE_URL env var)
+To run manually: `npx tsx ./scripts/sync-bcdata.ts` (needs DATABASE_URL env var), then `npx tsx ./scripts/sync-medal-images.ts` to backfill any missing artwork.
 
 ## Common Gotchas
 - Paths with parentheses need quoting in bash: `"src/app/(app)/layout.tsx"`
