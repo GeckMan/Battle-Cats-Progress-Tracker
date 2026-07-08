@@ -86,6 +86,41 @@ export default function AboutPage() {
           </h2>
 
           <ChangelogEntry
+            version="1.0"
+            date="July 8, 2026"
+            items={[
+              "Meow Medals now sync automatically from the same weekly game-data update as units and legend stages, including medal artwork, instead of relying on a manual wiki scrape",
+              "Fixed a bug causing most cats to show the wrong rarity in Unit Collection",
+              "Chat messages can now be deleted (your own message anytime, or any message if you're an admin)",
+              "Progress Waveform on the dashboard now shows your full history instead of just the last 30 days, with cleaner date labels",
+              "Activity feed now groups everything one person did in a single sitting into one entry, instead of splitting it up by action type",
+              "Added a live \"online now\" counter to the Activity panel",
+              "Login attempts are now logged, with suspicious activity flagged for admins",
+              "Security hardening: upgraded Next.js, added rate limiting and stronger error handling across the API",
+            ]}
+          />
+
+          <ChangelogEntry
+            version="0.95"
+            date="June 2026"
+            items={[
+              "Added Vercel Web Analytics to keep an eye on site traffic",
+              "Backend hardening pass: consistent error handling and rate limiting across all API routes",
+              "More reliable unit rarity detection from game data",
+            ]}
+          />
+
+          <ChangelogEntry
+            version="0.91"
+            date="March 2026"
+            items={[
+              "Added a hidden \"Unleash the Cat\" easter egg on this page",
+              "Hover tooltips and accordions for units and medals",
+              "Fixed medal hex borders, tooltip positioning, and a laggy Medals page scroll",
+            ]}
+          />
+
+          <ChangelogEntry
             version="0.9"
             date="March 24, 2026"
             items={[
@@ -144,7 +179,21 @@ export default function AboutPage() {
               Built by <strong className="text-gray-200">Geck</strong>. Started as a personal project to track progress and compare with friends.
             </p>
             <p>
-              Stage names, medal data, and unit sprites sourced from the{" "}
+              Unit names and rarities, legend stage names, and the meow medal catalog are synced
+              weekly from{" "}
+              <a
+                href="https://git.battlecatsmodding.org/fieryhenry/BCData"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline hover:text-gray-200"
+              >
+                fieryhenry&apos;s BCData
+              </a>
+              , an extracted, versioned dump of the game&apos;s data files. Huge thanks to fieryhenry
+              for maintaining it.
+            </p>
+            <p>
+              Unit sprites and medal artwork are sourced from the{" "}
               <a
                 href="https://battlecats.miraheze.org/wiki/Battle_Cats_Wiki"
                 target="_blank"
