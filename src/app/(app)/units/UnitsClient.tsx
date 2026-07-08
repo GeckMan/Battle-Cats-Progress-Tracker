@@ -381,7 +381,7 @@ const UnitCard = memo(function UnitCard({
       disabled={pending && !selectionMode}
       style={{ touchAction: "manipulation" }}
       title={selectionMode
-        ? `${unit.name} — click to ${selected ? "deselect" : "select"}`
+        ? `${unit.name}: click to ${selected ? "deselect" : "select"}`
         : [
             unit.name,
             unit.evolvedName ? `→ ${unit.evolvedName}` : null,
@@ -853,7 +853,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       <div>
         <h1 className="text-2xl font-semibold text-gray-100">Unit Collection</h1>
         <p className="text-sm text-gray-500 mt-0.5">
-          Track each cat's form level — click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
+          Track each cat's form level. Click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
         <p className="text-xs text-gray-600 mt-0.5">
           Unit data current to game version 15.1.1 · <span className="text-gray-700">Arrow keys to navigate, 0-4 to set form, i for info</span>

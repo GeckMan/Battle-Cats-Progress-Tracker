@@ -28,10 +28,10 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: "Battle Cats Progress",
-  description: "Track your Battle Cats game progress — story chapters, legend stages, medals, milestones, and more.",
+  description: "Track your Battle Cats game progress: story chapters, legend stages, medals, milestones, and more.",
   openGraph: {
     title: "Battle Cats Progress",
-    description: "Track your Battle Cats game progress — story chapters, legend stages, medals, milestones, and more.",
+    description: "Track your Battle Cats game progress: story chapters, legend stages, medals, milestones, and more.",
     siteName: "Battle Cats Progress",
   },
 };

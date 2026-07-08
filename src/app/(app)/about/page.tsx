@@ -89,9 +89,9 @@ export default function AboutPage() {
             version="0.9"
             date="March 24, 2026"
             items={[
-              "Chat friend requests — hover a username in chat to add them as a friend or view their profile",
-              "Smarter polling — reduced unnecessary background requests for activity, chat, and friend request counts",
-              "Per-subchapter crown limits — ZL chapters now correctly show 1 or 2 crowns instead of 4",
+              "Chat friend requests: hover a username in chat to add them as a friend or view their profile",
+              "Smarter polling: reduced unnecessary background requests for activity, chat, and friend request counts",
+              "Per-subchapter crown limits: ZL chapters now correctly show 1 or 2 crowns instead of 4",
             ]}
           />
 
@@ -99,9 +99,9 @@ export default function AboutPage() {
             version="0.8"
             date="March 2026"
             items={[
-              "Unit comparison view — see what units friends have that you don't, filter by rarity and form level",
-              "Friend unit collection browser — view a friend's full unit collection from their profile",
-              "BCData auto-sync — unit names and legend stages update automatically from game data weekly",
+              "Unit comparison view: see what units friends have that you don't, filter by rarity and form level",
+              "Friend unit collection browser: view a friend's full unit collection from their profile",
+              "BCData auto-sync: unit names and legend stages update automatically from game data weekly",
             ]}
           />
 
@@ -109,9 +109,9 @@ export default function AboutPage() {
             version="0.7"
             date="March 2026"
             items={[
-              "Mobile support — fully responsive layout with hamburger menu and touch-friendly controls",
-              "Activity & Chat panel — slide-out drawer with a live activity feed and global chat",
-              "NERV theme — optional Evangelion-inspired CRT terminal aesthetic in Settings",
+              "Mobile support: fully responsive layout with hamburger menu and touch-friendly controls",
+              "Activity & Chat panel: slide-out drawer with a live activity feed and global chat",
+              "NERV theme: optional Evangelion-inspired CRT terminal aesthetic in Settings",
             ]}
           />
 
@@ -119,9 +119,9 @@ export default function AboutPage() {
             version="0.6"
             date="March 2026"
             items={[
-              "Unit Collection — browse 800+ cats with sprites, track form levels, filter by rarity/source/gacha set",
-              "Milestones page — track Crazed, Manic, Advent stages, and Catclaw ranks",
-              "Progress comparison — compare your overall stats and SoL subchapters with friends",
+              "Unit Collection: browse 800+ cats with sprites, track form levels, filter by rarity/source/gacha set",
+              "Milestones page: track Crazed, Manic, Advent stages, and Catclaw ranks",
+              "Progress comparison: compare your overall stats and SoL subchapters with friends",
             ]}
           />
 
@@ -129,7 +129,7 @@ export default function AboutPage() {
             version="0.1"
             date="January 2026"
             items={[
-              "Site launch — Story, Legend, Medals tracking and friend/compare system",
+              "Site launch: Story, Legend, Medals tracking and friend/compare system",
             ]}
           />
         </section>

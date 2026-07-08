@@ -199,7 +199,7 @@ export default function SocialClient({ userId }: { userId: string }) {
           {loading ? (
             <div className="text-sm text-gray-600">Loading…</div>
           ) : friends.length === 0 ? (
-            <div className="text-sm text-gray-600">No friends yet — search for someone above</div>
+            <div className="text-sm text-gray-600">No friends yet, search for someone above</div>
           ) : (
             friends.map((f) => (
               <div key={f.id} className="flex items-center justify-between gap-3 px-2 py-2 rounded hover:bg-gray-900 transition-colors">

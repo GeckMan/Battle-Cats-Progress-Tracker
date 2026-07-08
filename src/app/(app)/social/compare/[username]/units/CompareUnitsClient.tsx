@@ -217,7 +217,7 @@ export default function CompareUnitsClient({
           {searchQuery
             ? "No units match your search."
             : activeTab === "missing"
-              ? `${theirLabel} doesn't have any units you're missing — nice!`
+              ? `${theirLabel} doesn't have any units you're missing. Nice!`
               : activeTab === "ahead"
                 ? "You're not ahead on any units."
                 : activeTab === "behind"

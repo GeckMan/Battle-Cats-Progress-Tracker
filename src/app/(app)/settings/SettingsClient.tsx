@@ -310,7 +310,7 @@ function DataBackupPanel() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Import failed");
       const msg = data.warnings?.length
-        ? `Imported! (${data.warnings.length} warnings — some items may have been skipped)`
+        ? `Imported! (${data.warnings.length} warnings, some items may have been skipped)`
         : "All progress imported successfully!";
       setStatus({ ok: true, msg });
     } catch (e) {
