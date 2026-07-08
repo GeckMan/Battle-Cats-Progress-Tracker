@@ -57,6 +57,7 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Invasion of the Swamplord", category: "ADVENT", sortOrder: 19 },
   { displayName: "Hunt for the Xenobeast",    category: "ADVENT", sortOrder: 20 },
   { displayName: "Jumbo Invasion",            category: "ADVENT", sortOrder: 21 },
+  { displayName: "Invasion of Poultrio",      category: "ADVENT", sortOrder: 22 },
 
   // ── CATCLAW ─────────────────────────────────────────────────────────────────
   { displayName: "Championship Rank 1",  category: "CATCLAW", sortOrder: 1 },

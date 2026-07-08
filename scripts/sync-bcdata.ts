@@ -955,6 +955,40 @@ function getZlMaxCrowns(name: string): number {
   return ZL_TWO_CROWN_NAMES.has(name) ? 2 : 1;
 }
 
+// ── Great Advent milestone coverage check ───────────────────────────────────
+// The "Milestone Stages" tab (Great Advent tier of the ADVENT category) is a
+// hand-maintained list in src/lib/milestone-catalog.ts, not something this
+// script writes to — Map_Name.csv is too noisy (difficulty variants, event
+// maps, etc.) to safely auto-populate it. This just flags likely-new Great
+// Advent stage names during each sync run so a new boss doesn't silently go
+// unnoticed the way "Invasion of Poultrio" did. Keep this Set in sync with
+// the "GREAT ADVENT" section of MILESTONE_CATALOG in milestone-catalog.ts.
+const KNOWN_GREAT_ADVENT_MILESTONES = new Set([
+  "Reign of the Tyrant",
+  "Invasion of the Swamplord",
+  "Hunt for the Xenobeast",
+  "Jumbo Invasion",
+  "Invasion of Poultrio",
+]);
+const GREAT_ADVENT_NAME_PATTERNS = [/^Invasion of /, /^Jumbo Invasion$/, /^Reign of /, /^Hunt for /];
+
+function checkGreatAdventMilestoneCoverage(allNames: string[]) {
+  const candidates = new Set(
+    allNames.filter((nm) => GREAT_ADVENT_NAME_PATTERNS.some((re) => re.test(nm)))
+  );
+  const missing = [...candidates].filter((nm) => !KNOWN_GREAT_ADVENT_MILESTONES.has(nm));
+  if (missing.length > 0) {
+    console.log(
+      `  ⚠ Possible new Great Advent stage(s) not in the Milestone Stages tab: ${missing.join(", ")}`
+    );
+    console.log(`    → Add to the "GREAT ADVENT" section of src/lib/milestone-catalog.ts`);
+  } else {
+    console.log(
+      `  Great Advent milestone coverage: OK (${KNOWN_GREAT_ADVENT_MILESTONES.size} known, 0 new candidates found)`
+    );
+  }
+}
+
 async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLocal: string) {
   // ── Step 1: Parse Map_Name.csv ─────────────────────────────────────────
   const mapNamePath = path.join(resLocal, "Map_Name.csv");
@@ -978,6 +1012,8 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     }
   }
   console.log(`  Map_Name.csv: ${allNames.length} names`);
+
+  checkGreatAdventMilestoneCoverage(allNames);
 
   // Build a lookup: name → index (first occurrence)
   const nameToIdx = new Map<string, number>();
