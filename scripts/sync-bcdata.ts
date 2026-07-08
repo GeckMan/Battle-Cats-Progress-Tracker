@@ -13,7 +13,11 @@
  *
  * Data source:
  *   https://git.battlecatsmodding.org/fieryhenry/BCData.git
- *   Fallback: https://github.com/fieryhenry/BCData.git
+ *   No fallback — the old GitHub mirror (github.com/fieryhenry/BCData) was
+ *   archived/frozen by its owner on 2026-06-18 at EN 14.7.0 and will never
+ *   update again, so it's no longer used even as a fallback (see the comment
+ *   on BCDATA_REPO_URLS). If the primary host is down, the sync fails loudly
+ *   instead of silently regressing the database with stale data.
  *
  * What it syncs:
  *   - Units: name (all forms), rarity/category, form count
@@ -34,10 +38,21 @@ import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../src/generated/prisma/index.js";
 
 // ── Config ───────────────────────────────────────────────────────────────────
-const BCDATA_REPO_URLS = [
-  "https://git.battlecatsmodding.org/fieryhenry/BCData.git",
-  "https://github.com/fieryhenry/BCData.git",
-];
+// PRIMARY (and ONLY) source: fieryhenry's self-hosted Forgejo instance, which
+// is actively maintained (as of writing, on EN 15.4.x — see
+// https://git.battlecatsmodding.org/fieryhenry/BCData).
+//
+// The GitHub mirror (github.com/fieryhenry/BCData) was archived/frozen by
+// its owner on 2026-06-18 and is now permanently stuck at EN 14.7.0 — it
+// will never receive another update. It used to be listed here as an
+// automatic fallback, but that's now actively dangerous: if the primary
+// host has a transient outage during the weekly cron, falling back to the
+// frozen mirror would silently re-sync 14.7.0-era data over whatever
+// current data is already in the database (e.g. reintroducing unit
+// rarities/legend stages/medals that have since changed or been added).
+// Deliberately NOT including it — see cloneOrPull() below, which now fails
+// loudly instead of silently degrading to stale data.
+const BCDATA_REPO_URLS = ["https://git.battlecatsmodding.org/fieryhenry/BCData.git"];
 const CLONE_DIR = "/tmp/bcdata-sync";
 const REGION = "en";
 
@@ -151,11 +166,20 @@ function cloneOrPull() {
       execSync(`git clone --depth 1 "${url}" "${CLONE_DIR}"`, { stdio: "pipe", timeout: 120000 });
       return;
     } catch (e) {
-      console.log(`  Failed to clone from ${url}, trying next...`);
+      console.log(`  Failed to clone from ${url}`);
     }
   }
 
-  throw new Error("Failed to clone BCData from any source");
+  // Intentionally NOT falling back to the archived GitHub mirror (see the
+  // comment on BCDATA_REPO_URLS above) — failing the sync run leaves the
+  // existing database data untouched, which is safe. Silently falling back
+  // to a permanently frozen mirror would not be.
+  throw new Error(
+    "Failed to clone BCData from the primary source (git.battlecatsmodding.org). " +
+      "Not falling back to the archived GitHub mirror — it's permanently frozen at " +
+      "EN 14.7.0 and would regress the database with stale data. This run will fail " +
+      "and existing data is left as-is; re-run once the primary host is back up."
+  );
 }
 
 function findLatestVersion(): string {
