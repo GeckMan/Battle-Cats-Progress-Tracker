@@ -1,3 +1,13 @@
+/**
+ * LEGACY — superseded by scripts/sync-bcdata.ts (syncMeowMedals), which pulls
+ * the medal catalog directly from BCData's resLocal/medalname.tsv on every
+ * weekly sync. That's the authoritative, versioned game data source (same
+ * one already used for units and legend stages), so it won't silently drift
+ * out of date the way a one-off wiki scrape does.
+ *
+ * Kept around only as a manual fallback in case BCData is ever missing medal
+ * data for a version. Not run automatically.
+ */
 import "dotenv/config";
 import { load } from "cheerio";
 import { seedPrisma as prisma, seedDisconnect } from "../prisma/seed-client.ts";

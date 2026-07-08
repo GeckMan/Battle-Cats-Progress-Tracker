@@ -2,7 +2,8 @@
  * sync-bcdata.ts — Automated data sync from fieryhenry/BCData
  *
  * Clones the BCData repository, finds the latest EN game version,
- * and upserts units + legend stages into the database.
+ * and upserts units + legend stages + the meow medal catalog into the
+ * database.
  *
  * Usage:
  *   npx tsx ./scripts/sync-bcdata.ts
@@ -17,6 +18,9 @@
  * What it syncs:
  *   - Units: name (all forms), rarity/category, form count
  *   - Legend Stages: saga names + subchapter names
+ *   - Meow Medals: name + description catalog (resLocal/medalname.tsv),
+ *     superseding the old one-off Miraheze wiki scraper
+ *     (import-meow-medals-miraheze.ts) as the source of truth.
  *
  * Safe to run repeatedly — all writes are upserts.
  */
@@ -115,6 +119,10 @@ async function main() {
     // Step 4: Parse and sync legend stages
     console.log("\n── Syncing Legend Stages ──");
     await syncLegendStages(prisma, dataLocal, resLocal);
+
+    // Step 5: Parse and sync meow medal catalog
+    console.log("\n── Syncing Meow Medals ──");
+    await syncMeowMedals(prisma, resLocal);
 
     console.log("\n✓ Sync complete!");
   } finally {
@@ -1324,6 +1332,93 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   }
 }
 
+
+// ── Meow Medal Sync ──────────────────────────────────────────────────────────
+
+/**
+ * Syncs the Meow Medal catalog from resLocal/medalname.tsv.
+ *
+ * File format: one medal per line, tab-separated `Name\tDescription`, in the
+ * same order as DataLocal/medallist.json's `iconID` array (verified 1:1 —
+ * both have the same entry count in every version checked so far). That
+ * order matches the in-game medal list order, so we reuse it as sortOrder.
+ *
+ * This replaces the old one-off Miraheze wiki scraper
+ * (scripts/import-meow-medals-miraheze.ts) as the source of truth — BCData
+ * is the authoritative, versioned game data source already used for units
+ * and legend stages, so new medals (e.g. a new Great Advent "Clear X" medal)
+ * show up automatically on the next weekly sync instead of requiring someone
+ * to notice the wiki is out of date and re-run the scraper by hand.
+ *
+ * Deliberately does NOT touch `autoKey` — that field drives the separate
+ * auto-completion system (see src/app/api/meow-medals/sync/route.ts and the
+ * scripts/set-*-autokeys.ts helpers) and is curated by hand per medal. Since
+ * we only set it on `create` (new medals start with no autoKey) and never
+ * include it in `update`, existing autoKey assignments are preserved.
+ */
+async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
+  const medalNamePath = path.join(resLocal, "medalname.tsv");
+  if (!existsSync(medalNamePath)) {
+    console.log("  medalname.tsv not found — skipping meow medals");
+    return;
+  }
+
+  const raw = readFileSync(medalNamePath, "utf-8");
+  const lines = raw.split("\n").filter((l) => l.trim().length > 0);
+
+  type ParsedMedal = { name: string; description: string; sortOrder: number };
+  const medals: ParsedMedal[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    const parts = lines[i].split("\t");
+    if (parts.length < 2) {
+      console.warn(`    Skipping malformed line ${i}: ${JSON.stringify(lines[i])}`);
+      continue;
+    }
+    const name = parts[0].trim();
+    const description = parts.slice(1).join("\t").trim();
+    if (!name) continue;
+    medals.push({ name, description, sortOrder: i });
+  }
+
+  console.log(`  medalname.tsv: ${medals.length} medals`);
+  if (medals.length === 0) return;
+
+  const existingNames = new Set(
+    (await (prisma as any).meowMedal.findMany({ select: { name: true } })).map(
+      (m: { name: string }) => m.name
+    )
+  );
+
+  const batchSize = 50;
+  let created = 0;
+  let updated = 0;
+  for (let i = 0; i < medals.length; i += batchSize) {
+    const batch = medals.slice(i, i + batchSize);
+    await Promise.all(
+      batch.map((m) => {
+        if (existingNames.has(m.name)) updated++;
+        else created++;
+        return (prisma as any).meowMedal.upsert({
+          where: { name: m.name },
+          create: {
+            name: m.name,
+            description: m.description,
+            requirementText: m.description,
+            category: "Other",
+            sortOrder: m.sortOrder,
+          },
+          update: {
+            description: m.description,
+            requirementText: m.description,
+            sortOrder: m.sortOrder,
+          },
+        });
+      })
+    );
+    process.stdout.write(`\r  Upserted ${Math.min(i + batchSize, medals.length)}/${medals.length} medals...`);
+  }
+  console.log(`\n  ✓ ${created} created, ${updated} updated (${medals.length} total from BCData)`);
+}
 
 // ── Run ──────────────────────────────────────────────────────────────────────
 main().catch((e) => {

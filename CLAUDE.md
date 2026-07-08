@@ -82,14 +82,15 @@ feat: add long-press to open unit info on mobile
 ```
 
 ## BCData Auto-Sync
-Game data (units, legend stages) is synced from [fieryhenry/BCData](https://git.battlecatsmodding.org/fieryhenry/BCData.git).
+Game data (units, legend stages, meow medals) is synced from [fieryhenry/BCData](https://git.battlecatsmodding.org/fieryhenry/BCData.git).
 
-- **Script:** `scripts/sync-bcdata.ts` — clones BCData, finds latest EN version, upserts units + legend stages
+- **Script:** `scripts/sync-bcdata.ts` — clones BCData, finds latest EN version, upserts units + legend stages + meow medal catalog
 - **GitHub Action:** `.github/workflows/sync-bcdata.yml` — runs weekly (Monday 6AM UTC) or manually via workflow_dispatch
-- **Data source:** `game_data/en/<version>/DataLocal/` and `resLocal/` folders
+- **Data source:** `game_data/en/<version>/DataLocal/` and `resLocal/` folders (older BCData snapshots use a flat `<version>en/` layout instead — the script falls back to that automatically)
 - **Unit names:** parsed from `resLocal/Unit_Explanation{N}_en.csv` (pipe-delimited, line per form)
 - **Rarity:** guessed from unit ID ranges (Normal 0-8, Special 9-56, default Rare). Can be manually corrected.
 - **Legend stages:** parsed from `resLocal/Map_Name.csv` (pipe-delimited subchapter names)
+- **Meow medals:** parsed from `resLocal/medalname.tsv` (tab-delimited `name\tdescription`, one row per medal, in the same order as `DataLocal/medallist.json`'s `iconID` array — used as sortOrder). Replaces the old `scripts/import-meow-medals-miraheze.ts` wiki scraper as the source of truth; that script is now legacy/manual-fallback only. Does not touch the `autoKey` field (separate hand-curated auto-completion system).
 - **Required secrets:** `DATABASE_URL` and `DIRECT_DATABASE_URL` must be set in GitHub repo secrets
 
 To run manually: `npx tsx ./scripts/sync-bcdata.ts` (needs DATABASE_URL env var)
