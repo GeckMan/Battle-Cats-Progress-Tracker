@@ -366,3 +366,20 @@ model RateLimit {
 
   @@index([key, createdAt])
 }
+
+/**
+ * ---------- Login Attempt Audit Log ----------
+ * Records every login attempt (success or failure) so admins can review
+ * suspicious activity. Never stores the attempted password.
+ */
+
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  username  String // attempted username as typed, normalized lowercase
+  ip        String
+  success   Boolean
+  createdAt DateTime @default(now())
+
+  @@index([createdAt])
+  @@index([ip, createdAt])
+}

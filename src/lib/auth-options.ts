@@ -3,6 +3,50 @@ import bcrypt from "bcrypt";
 import { prisma } from "@/lib/prisma";
 import type { NextAuthOptions } from "next-auth";
 
+/**
+ * Extract the client IP from next-auth's internal request object.
+ * On Vercel, x-forwarded-for is set to a single trustworthy IP (Vercel
+ * overwrites this header and does not forward externally-supplied
+ * values), so taking the first entry is safe.
+ */
+function extractIp(req: unknown): string {
+  try {
+    const headers = (req as { headers?: unknown } | undefined)?.headers as
+      | { get?: (name: string) => string | null; [key: string]: unknown }
+      | undefined;
+    if (!headers) return "unknown";
+
+    let raw: unknown = typeof headers.get === "function"
+      ? headers.get("x-forwarded-for")
+      : (headers["x-forwarded-for"] ?? headers["X-Forwarded-For"]);
+
+    if (Array.isArray(raw)) raw = raw[0];
+    if (!raw || typeof raw !== "string") return "unknown";
+    return raw.split(",")[0].trim();
+  } catch {
+    return "unknown";
+  }
+}
+
+/** Record a login attempt for audit purposes. Never logs the password. */
+async function logLoginAttempt(username: string, ip: string, success: boolean) {
+  try {
+    // @ts-ignore – LoginAttempt model added in new migration
+    await (prisma as any).loginAttempt.create({
+      data: { username, ip, success },
+    });
+
+    // Fire-and-forget cleanup of entries older than 30 days
+    const thirtyDaysAgo = new Date(Date.now() - 30 * 24 * 60 * 60 * 1000);
+    // @ts-ignore
+    (prisma as any).loginAttempt
+      .deleteMany({ where: { createdAt: { lt: thirtyDaysAgo } } })
+      .catch(() => {});
+  } catch {
+    // Never let audit logging break the actual login flow
+  }
+}
+
 export const authOptions: NextAuthOptions = {
   providers: [
     Credentials({
@@ -11,9 +55,10 @@ export const authOptions: NextAuthOptions = {
         username: { label: "Username", type: "text" },
         password: { label: "Password", type: "password" },
       },
-      async authorize(credentials) {
+      async authorize(credentials, req) {
   const usernameRaw = String(credentials?.username ?? "").trim();
   const password = String(credentials?.password ?? "");
+  const ip = extractIp(req);
 
   if (!usernameRaw || !password) return null;
 
@@ -27,9 +72,13 @@ export const authOptions: NextAuthOptions = {
     },
   });
 
-  if (!user) return null;
+  if (!user) {
+    await logLoginAttempt(usernameRaw.toLowerCase(), ip, false);
+    return null;
+  }
 
   const ok = await bcrypt.compare(password, user.passwordHash);
+  await logLoginAttempt(usernameRaw.toLowerCase(), ip, ok);
   if (!ok) return null;
 
   return {

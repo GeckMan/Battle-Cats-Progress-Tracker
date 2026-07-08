@@ -862,6 +862,19 @@ type AdminUser = {
   createdAt: string;
 };
 
+type LoginAttempt = {
+  id: string;
+  username: string;
+  ip: string;
+  success: boolean;
+  createdAt: string;
+};
+
+type SuspiciousIp = {
+  ip: string;
+  failuresLastHour: number;
+};
+
 function AdminTab({ currentUserId }: { currentUserId: string }) {
   const [users, setUsers] = useState<AdminUser[]>([]);
   const [loading, setLoading] = useState(true);
@@ -874,6 +887,24 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
   const [feedback, setFeedback] = useState<{ msg: string; type: "ok" | "err" } | null>(null);
   const [friends, setFriends] = useState<Set<string>>(new Set());
   const [pendingOutgoing, setPendingOutgoing] = useState<Set<string>>(new Set());
+  const [loginAttempts, setLoginAttempts] = useState<LoginAttempt[]>([]);
+  const [suspiciousIps, setSuspiciousIps] = useState<SuspiciousIp[]>([]);
+  const [showLoginActivity, setShowLoginActivity] = useState(false);
+  const [failedOnly, setFailedOnly] = useState(true);
+
+  const fetchLoginAttempts = useCallback(async (failedOnlyParam: boolean) => {
+    try {
+      const res = await fetch(`/api/admin/login-attempts?failedOnly=${failedOnlyParam}&limit=50`);
+      if (!res.ok) return;
+      const data = await res.json();
+      setLoginAttempts(data.attempts ?? []);
+      setSuspiciousIps(data.suspiciousIps ?? []);
+    } catch { /* ignore */ }
+  }, []);
+
+  useEffect(() => {
+    if (showLoginActivity) fetchLoginAttempts(failedOnly);
+  }, [showLoginActivity, failedOnly, fetchLoginAttempts]);
 
   const fetchUsers = useCallback(async () => {
     try {
@@ -1035,6 +1066,84 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
               <line x1="12" y1="4" x2="4" y2="12" />
             </svg>
           </button>
+        )}
+      </div>
+
+      {/* Login Activity */}
+      <div className="rounded-md border border-gray-800 bg-gray-900/50">
+        <button
+          onClick={() => setShowLoginActivity((v) => !v)}
+          className="w-full flex items-center justify-between px-3 py-2 text-xs font-semibold text-gray-400 hover:text-gray-200 transition-colors"
+        >
+          <span className="flex items-center gap-2">
+            Login Activity
+            {suspiciousIps.length > 0 && (
+              <span className="px-1.5 py-0.5 rounded bg-red-950/50 border border-red-800/50 text-red-300 text-[10px] font-bold">
+                {suspiciousIps.length} suspicious
+              </span>
+            )}
+          </span>
+          <span>{showLoginActivity ? "▲" : "▼"}</span>
+        </button>
+
+        {showLoginActivity && (
+          <div className="px-3 pb-3 space-y-2">
+            {suspiciousIps.length > 0 && (
+              <div className="rounded-md border border-red-800/50 bg-red-950/30 px-2.5 py-2 text-xs text-red-300 space-y-1">
+                <div className="font-semibold">5+ failed logins in the last hour:</div>
+                {suspiciousIps.map((s) => (
+                  <div key={s.ip} className="flex justify-between font-mono">
+                    <span>{s.ip}</span>
+                    <span>{s.failuresLastHour} failures</span>
+                  </div>
+                ))}
+              </div>
+            )}
+
+            <div className="flex items-center gap-2 text-[11px]">
+              <button
+                onClick={() => setFailedOnly(true)}
+                className={`px-2 py-1 rounded ${failedOnly ? "bg-amber-900/40 text-amber-300 border border-amber-800/50" : "text-gray-500 border border-transparent hover:text-gray-300"}`}
+              >
+                Failed only
+              </button>
+              <button
+                onClick={() => setFailedOnly(false)}
+                className={`px-2 py-1 rounded ${!failedOnly ? "bg-amber-900/40 text-amber-300 border border-amber-800/50" : "text-gray-500 border border-transparent hover:text-gray-300"}`}
+              >
+                All attempts
+              </button>
+              <button
+                onClick={() => fetchLoginAttempts(failedOnly)}
+                className="ml-auto px-2 py-1 rounded text-gray-500 hover:text-gray-300"
+              >
+                Refresh
+              </button>
+            </div>
+
+            <div className="max-h-64 overflow-y-auto space-y-1">
+              {loginAttempts.length === 0 && (
+                <div className="text-gray-600 text-xs text-center py-4">
+                  {failedOnly ? "No failed login attempts recorded." : "No login attempts recorded."}
+                </div>
+              )}
+              {loginAttempts.map((a) => (
+                <div
+                  key={a.id}
+                  className="flex items-center justify-between text-[11px] font-mono px-2 py-1 rounded bg-black/30"
+                >
+                  <span className={a.success ? "text-green-400" : "text-red-400"}>
+                    {a.success ? "✓" : "✗"}
+                  </span>
+                  <span className="text-gray-300 truncate flex-1 mx-2">{a.username}</span>
+                  <span className="text-gray-500">{a.ip}</span>
+                  <span className="text-gray-600 ml-2 whitespace-nowrap">
+                    {new Date(a.createdAt).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
         )}
       </div>
 
