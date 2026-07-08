@@ -39,6 +39,15 @@ jobs:
             echo "No new medal images to commit"
           else
             git commit -m "chore: add newly-synced medal images"
+            # Earlier steps (npm install, prisma generate) can leave the
+            # working tree with unrelated unstaged changes — e.g. `prisma
+            # generate` re-emits src/generated/prisma, which is checked into
+            # git and often comes out byte-different. `git pull --rebase`
+            # refuses to run with ANY unstaged changes present, even ones
+            # that have nothing to do with our commit, so discard them first
+            # (safe: our actual payload is already committed above, this is
+            # just disposable regenerated build output).
+            git checkout -- .
             # main may have moved since actions/checkout ran at the start of
             # this job (e.g. someone pushed in the meantime) — rebase onto
             # the latest before pushing so this doesn't get rejected as a
