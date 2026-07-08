@@ -91,6 +91,18 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
     return () => clearInterval(interval);
   }, [checkUnread]);
 
+  // Presence heartbeat — this component is mounted for the whole authenticated
+  // app shell (not just while the panel is open), so it's a reliable place to
+  // ping "I'm here" for the site-wide "online now" count.
+  useEffect(() => {
+    const ping = () => {
+      fetch("/api/presence", { method: "POST" }).catch(() => {});
+    };
+    ping();
+    const interval = setInterval(ping, 60000);
+    return () => clearInterval(interval);
+  }, []);
+
   // Mark tab as read when viewing it
   const handleTabChange = useCallback(
     (tab: "activity" | "chat" | "admin") => {

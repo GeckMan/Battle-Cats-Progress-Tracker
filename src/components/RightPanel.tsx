@@ -141,17 +141,44 @@ type RawActivity = {
   createdAt: string;
 };
 
+type GroupedItem = { type: string; itemName: string | null; detail: string | null; createdAt: Date };
+
 type GroupedEntry = {
   key: string;
   userId: string;
   username: string;
   displayName: string | null;
-  type: string;
-  items: { itemName: string | null; detail: string | null }[];
+  items: GroupedItem[];
   createdAt: Date;
 };
 
-const BATCH_WINDOW_MS = 5 * 60 * 1000;
+// A single person filling in a big batch of progress (units, medals, story...)
+// in one sitting shouldn't spam the log with a dozen separate rows — group
+// everything from the same user within this window into one entry, regardless
+// of activity type (mixed-type groups get a breakdown when expanded).
+const BATCH_WINDOW_MS = 60 * 60 * 1000; // 1 hour
+
+/** The most common activity type in a group — used to pick the group's badge/icon. */
+function dominantType(items: GroupedItem[]): string {
+  const counts = new Map<string, number>();
+  for (const it of items) counts.set(it.type, (counts.get(it.type) ?? 0) + 1);
+  let best = items[0].type;
+  let bestCount = 0;
+  for (const [t, c] of counts) {
+    if (c > bestCount) {
+      best = t;
+      bestCount = c;
+    }
+  }
+  return best;
+}
+
+/** Count of items per activity type within a group, insertion-ordered. */
+function typeTally(items: GroupedItem[]): [string, number][] {
+  const counts = new Map<string, number>();
+  for (const it of items) counts.set(it.type, (counts.get(it.type) ?? 0) + 1);
+  return [...counts.entries()];
+}
 
 const TYPE_ICONS: Record<string, string> = {
   STORY_CLEARED: "📖",
@@ -161,6 +188,18 @@ const TYPE_ICONS: Record<string, string> = {
   UNIT_OBTAINED: "🐱",
   UNIT_EVOLVED: "⬆️",
   UNIT_REMOVED: "❌",
+};
+
+// Compact noun phrases used for mixed-type batch summaries, e.g.
+// "logged 5 cats obtained, 3 cats evolved, 1 medal".
+const TYPE_NOUNS: Record<string, { one: string; many: string }> = {
+  STORY_CLEARED: { one: "story chapter", many: "story chapters" },
+  LEGEND_COMPLETED: { one: "legend subchapter", many: "legend subchapters" },
+  MEDAL_EARNED: { one: "medal", many: "medals" },
+  MILESTONE_CLEARED: { one: "milestone", many: "milestones" },
+  UNIT_OBTAINED: { one: "cat obtained", many: "cats obtained" },
+  UNIT_EVOLVED: { one: "cat evolved", many: "cats evolved" },
+  UNIT_REMOVED: { one: "cat removed", many: "cats removed" },
 };
 
 const TYPE_VERBS: Record<string, { single: string; plural: string }> = {
@@ -182,18 +221,16 @@ function groupActivities(raw: RawActivity[]): GroupedEntry[] {
     if (
       current &&
       current.userId === a.userId &&
-      current.type === a.type &&
       Math.abs(ts.getTime() - current.createdAt.getTime()) < BATCH_WINDOW_MS
     ) {
-      current.items.push({ itemName: a.itemName, detail: a.detail });
+      current.items.push({ type: a.type, itemName: a.itemName, detail: a.detail, createdAt: ts });
     } else {
       current = {
         key: a.id,
         userId: a.userId,
         username: a.username,
         displayName: a.displayName,
-        type: a.type,
-        items: [{ itemName: a.itemName, detail: a.detail }],
+        items: [{ type: a.type, itemName: a.itemName, detail: a.detail, createdAt: ts }],
         createdAt: ts,
       };
       groups.push(current);
@@ -202,22 +239,38 @@ function groupActivities(raw: RawActivity[]): GroupedEntry[] {
   return groups;
 }
 
+function describeSingle(type: string, item: GroupedItem): string {
+  const verbs = TYPE_VERBS[type] ?? { single: "did something with", plural: "did something with" };
+  if (type === "UNIT_OBTAINED" || type === "UNIT_EVOLVED" || type === "UNIT_REMOVED") {
+    const suffix = item.detail ? ` to ${item.detail}` : "";
+    return `${verbs.single} ${item.itemName ?? "a cat"}${suffix}`;
+  }
+  if (item.detail) return `${verbs.single} ${item.itemName ?? "something"} (${item.detail})`;
+  return `${verbs.single} ${item.itemName ?? "something"}`;
+}
+
 function describeGroup(g: GroupedEntry): string {
-  const verbs = TYPE_VERBS[g.type] ?? { single: "did something with", plural: "did something with" };
   const count = g.items.length;
-  if (count === 1) {
-    const item = g.items[0];
-    if (g.type === "UNIT_OBTAINED" || g.type === "UNIT_EVOLVED" || g.type === "UNIT_REMOVED") {
-      const suffix = item.detail ? ` to ${item.detail}` : "";
-      return `${verbs.single} ${item.itemName ?? "a cat"}${suffix}`;
+  if (count === 1) return describeSingle(g.items[0].type, g.items[0]);
+
+  const tally = typeTally(g.items);
+  if (tally.length === 1) {
+    // Homogeneous group — keep the nicer, specific plural wording.
+    const [type] = tally[0];
+    const verbs = TYPE_VERBS[type] ?? { single: "did something with", plural: "did something with" };
+    if (type === "UNIT_OBTAINED" || type === "UNIT_EVOLVED" || type === "UNIT_REMOVED") {
+      return verbs.plural.replace("cats", `${count} cats`).replace("new ", `${count} new `);
     }
-    if (item.detail) return `${verbs.single} ${item.itemName ?? "something"} (${item.detail})`;
-    return `${verbs.single} ${item.itemName ?? "something"}`;
+    return verbs.plural.replace(/\b(chapter|subchapter|medal|milestone)s\b/, `${count} $&`);
   }
-  if (g.type === "UNIT_OBTAINED" || g.type === "UNIT_EVOLVED" || g.type === "UNIT_REMOVED") {
-    return `${verbs.plural.replace("cats", `${count} cats`).replace("new ", `${count} new `)}`;
-  }
-  return `${verbs.plural.replace(/\b(chapter|subchapter|medal|milestone)s\b/, `${count} $&`)}`;
+
+  // Mixed-type batch — summarize as a breakdown, e.g.
+  // "logged 5 cats obtained, 3 cats evolved, 1 medal".
+  const parts = tally.map(([type, c]) => {
+    const noun = TYPE_NOUNS[type] ?? { one: "update", many: "updates" };
+    return `${c} ${c === 1 ? noun.one : noun.many}`;
+  });
+  return `logged ${parts.join(", ")}`;
 }
 
 function getTimeSection(date: Date, now: Date): string {
@@ -247,6 +300,7 @@ function ActivityTab() {
   const [loading, setLoading] = useState(true);
   const [nextOffset, setNextOffset] = useState<number | null>(null);
   const [loadingMore, setLoadingMore] = useState(false);
+  const [onlineCount, setOnlineCount] = useState<number | null>(null);
 
   const fetchActivities = useCallback(async (offset = 0, append = false) => {
     try {
@@ -261,17 +315,62 @@ function ActivityTab() {
     }
   }, []);
 
+  const fetchOnlineCount = useCallback(async () => {
+    try {
+      const res = await fetch("/api/presence");
+      if (!res.ok) return;
+      const data = await res.json();
+      setOnlineCount(data.onlineCount);
+    } catch { /* ignore */ }
+  }, []);
+
   useEffect(() => { fetchActivities(); }, [fetchActivities]);
+
+  useEffect(() => {
+    fetchOnlineCount();
+    const interval = setInterval(fetchOnlineCount, 30000);
+    return () => clearInterval(interval);
+  }, [fetchOnlineCount]);
+
+  const nervHeader = (
+    <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
+      <span>Event Log</span>
+      <div style={{ display: "flex", gap: "6px" }}>
+        {onlineCount !== null && (
+          <span className="tag"><span className="led green" />{onlineCount} Online</span>
+        )}
+        <span className="tag"><span className="led green" />Live</span>
+      </div>
+    </div>
+  );
+
+  const defaultHeader = onlineCount !== null && (
+    <div className="flex items-center justify-between px-1 pb-2 mb-1 border-b border-gray-800">
+      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Activity</span>
+      <span className="flex items-center gap-1.5 text-[10px] text-gray-400">
+        <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
+        {onlineCount} online now
+      </span>
+    </div>
+  );
 
   if (loading) {
     if (theme === "nerv") {
       return (
-        <div style={{ padding: "48px 12px", textAlign: "center", color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>
-          Scanning event log...
+        <div style={{ overflow: "auto", height: "100%", padding: 0 }}>
+          {nervHeader}
+          <div style={{ padding: "48px 12px", textAlign: "center", color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>
+            Scanning event log...
+          </div>
         </div>
       );
     }
-    return <div className="text-gray-500 text-sm py-12 text-center">Loading activity...</div>;
+    return (
+      <div className="px-3 pt-3">
+        {defaultHeader}
+        <div className="text-gray-500 text-sm py-12 text-center">Loading activity...</div>
+      </div>
+    );
   }
 
   const grouped = groupActivities(activities);
@@ -279,16 +378,22 @@ function ActivityTab() {
   if (grouped.length === 0) {
     if (theme === "nerv") {
       return (
-        <div style={{ padding: "24px 12px", textAlign: "center" }}>
-          <div style={{ color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>No events recorded</div>
-          <div style={{ color: "var(--steel-dim)", fontSize: "9px", marginTop: "4px", opacity: 0.5 }}>Activity will appear when you or friends log progress</div>
+        <div style={{ overflow: "auto", height: "100%", padding: 0 }}>
+          {nervHeader}
+          <div style={{ padding: "24px 12px", textAlign: "center" }}>
+            <div style={{ color: "var(--steel-dim)", fontSize: "11px", textTransform: "uppercase", letterSpacing: "0.1em" }}>No events recorded</div>
+            <div style={{ color: "var(--steel-dim)", fontSize: "9px", marginTop: "4px", opacity: 0.5 }}>Activity will appear when you or friends log progress</div>
+          </div>
         </div>
       );
     }
     return (
-      <div className="p-6 text-center">
-        <div className="text-gray-500 text-sm">No recent activity.</div>
-        <div className="text-gray-600 text-xs mt-1">Updates appear when you or friends log progress.</div>
+      <div className="px-3 pt-3">
+        {defaultHeader}
+        <div className="p-6 text-center">
+          <div className="text-gray-500 text-sm">No recent activity.</div>
+          <div className="text-gray-600 text-xs mt-1">Updates appear when you or friends log progress.</div>
+        </div>
       </div>
     );
   }
@@ -299,11 +404,7 @@ function ActivityTab() {
   if (theme === "nerv") {
     return (
       <div style={{ overflow: "auto", height: "100%", padding: 0 }}>
-        {/* Panel header */}
-        <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
-          <span>Event Log</span>
-          <span className="tag"><span className="led green" />Live</span>
-        </div>
+        {nervHeader}
 
         <div style={{ padding: "4px 0", fontFamily: "var(--font-sys)" }}>
           {grouped.map((g) => (
@@ -349,6 +450,7 @@ function ActivityTab() {
 
   return (
     <div className="overflow-y-auto h-full px-3 py-3 space-y-4">
+      {defaultHeader}
       {Array.from(sections.entries()).map(([section, entries]) => (
         <div key={section}>
           <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-1">
@@ -393,10 +495,14 @@ const NERV_TYPE_CODES: Record<string, { code: string; color: string }> = {
 };
 
 function NervEventRow({ group, now }: { group: GroupedEntry; now: Date }) {
-  const typeInfo = NERV_TYPE_CODES[group.type] ?? { code: "EVENT", color: "var(--steel-dim)" };
+  const count = group.items.length;
+  const tally = typeTally(group.items);
+  const isMixed = tally.length > 1;
+  const badgeInfo = isMixed
+    ? { code: "MULTI", color: "var(--steel)" }
+    : NERV_TYPE_CODES[group.items[0].type] ?? { code: "EVENT", color: "var(--steel-dim)" };
   const name = (group.displayName ?? group.username).toUpperCase();
   const time = formatNervTime(group.createdAt);
-  const count = group.items.length;
   const [expanded, setExpanded] = useState(false);
 
   // Build description
@@ -405,8 +511,12 @@ function NervEventRow({ group, now }: { group: GroupedEntry; now: Date }) {
     const item = group.items[0];
     desc = (item.itemName ?? "UNKNOWN").toUpperCase();
     if (item.detail) desc += ` — ${item.detail.toUpperCase()}`;
-  } else {
+  } else if (!isMixed) {
     desc = `${count} ITEMS`;
+  } else {
+    desc = tally
+      .map(([type, c]) => `${c} ${(NERV_TYPE_CODES[type]?.code ?? type).toUpperCase()}`)
+      .join(" · ");
   }
 
   return (
@@ -427,14 +537,14 @@ function NervEventRow({ group, now }: { group: GroupedEntry; now: Date }) {
 
         {/* Type badge */}
         <span style={{
-          color: typeInfo.color,
+          color: badgeInfo.color,
           fontSize: "9px",
           fontWeight: 700,
           letterSpacing: "0.06em",
           flexShrink: 0,
           minWidth: "65px",
         }}>
-          {typeInfo.code}
+          {badgeInfo.code}
         </span>
 
         {/* User */}
@@ -470,13 +580,19 @@ function NervEventRow({ group, now }: { group: GroupedEntry; now: Date }) {
       )}
       {expanded && count > 1 && (
         <div style={{ paddingLeft: "56px", maxHeight: "120px", overflow: "auto" }}>
-          {group.items.map((item, i) => (
-            <div key={i} style={{ fontSize: "9px", lineHeight: "1.6", color: "var(--steel-dim)" }}>
-              <span style={{ color: "var(--data-green-dim)" }}>├─ </span>
-              <span style={{ color: "var(--steel)" }}>{(item.itemName ?? "Unknown").toUpperCase()}</span>
-              {item.detail && <span style={{ color: "var(--steel-dim)" }}> ({item.detail})</span>}
-            </div>
-          ))}
+          {group.items.map((item, i) => {
+            const itemInfo = NERV_TYPE_CODES[item.type] ?? { code: "EVENT", color: "var(--steel-dim)" };
+            return (
+              <div key={i} style={{ fontSize: "9px", lineHeight: "1.6", color: "var(--steel-dim)" }}>
+                <span style={{ color: "var(--data-green-dim)" }}>├─ </span>
+                {isMixed && (
+                  <span style={{ color: itemInfo.color, fontWeight: 700 }}>{itemInfo.code} </span>
+                )}
+                <span style={{ color: "var(--steel)" }}>{(item.itemName ?? "Unknown").toUpperCase()}</span>
+                {item.detail && <span style={{ color: "var(--steel-dim)" }}> ({item.detail})</span>}
+              </div>
+            );
+          })}
         </div>
       )}
     </div>
@@ -498,7 +614,9 @@ function formatNervTime(date: Date): string {
 /* ── Default ActivityRow ──────────────────────────────────────────────────── */
 
 function ActivityRow({ group, now }: { group: GroupedEntry; now: Date }) {
-  const icon = TYPE_ICONS[group.type] ?? "📋";
+  const tally = typeTally(group.items);
+  const isMixed = tally.length > 1;
+  const icon = isMixed ? "📋" : TYPE_ICONS[group.items[0].type] ?? "📋";
   const description = describeGroup(group);
   const name = group.displayName ?? group.username;
   const time = relativeTime(group.createdAt, now);
@@ -527,6 +645,7 @@ function ActivityRow({ group, now }: { group: GroupedEntry; now: Date }) {
               {group.items.map((item, i) => (
                 <div key={i}>
                   <span className="text-gray-700">• </span>
+                  {isMixed && <span className="text-gray-600">{TYPE_ICONS[item.type] ?? "📋"} </span>}
                   {item.itemName ?? "Unknown"}
                   {item.detail && <span className="text-gray-600"> ({item.detail})</span>}
                 </div>
