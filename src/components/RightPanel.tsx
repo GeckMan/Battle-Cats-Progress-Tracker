@@ -301,6 +301,7 @@ function ActivityTab() {
   const [nextOffset, setNextOffset] = useState<number | null>(null);
   const [loadingMore, setLoadingMore] = useState(false);
   const [onlineCount, setOnlineCount] = useState<number | null>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   const fetchActivities = useCallback(async (offset = 0, append = false) => {
     try {
@@ -314,6 +315,21 @@ function ActivityTab() {
       setLoadingMore(false);
     }
   }, []);
+
+  // Fetch more raw activity only once the user has actually scrolled near
+  // the bottom of the panel — grouping means a single fetched page can
+  // collapse into just a couple of visible rows, so gating on scroll
+  // position (rather than a manual button that shows up right away) avoids
+  // the "click load more and nothing visibly changes" feeling.
+  const handleScroll = useCallback(() => {
+    const el = scrollRef.current;
+    if (!el || nextOffset === null || loadingMore) return;
+    const distanceFromBottom = el.scrollHeight - el.scrollTop - el.clientHeight;
+    if (distanceFromBottom < 150) {
+      setLoadingMore(true);
+      fetchActivities(nextOffset, true);
+    }
+  }, [nextOffset, loadingMore, fetchActivities]);
 
   const fetchOnlineCount = useCallback(async () => {
     try {
@@ -331,6 +347,19 @@ function ActivityTab() {
     const interval = setInterval(fetchOnlineCount, 30000);
     return () => clearInterval(interval);
   }, [fetchOnlineCount]);
+
+  // If a page of raw activity collapses into so few grouped rows that the
+  // panel isn't even scrollable yet, there'd be no scroll event to ever
+  // trigger the next page — so keep auto-loading until either the content
+  // fills the panel or there's genuinely nothing left.
+  useEffect(() => {
+    const el = scrollRef.current;
+    if (!el || loading || loadingMore || nextOffset === null) return;
+    if (el.scrollHeight <= el.clientHeight + 10) {
+      setLoadingMore(true);
+      fetchActivities(nextOffset, true);
+    }
+  }, [activities, loading, loadingMore, nextOffset, fetchActivities]);
 
   const nervHeader = (
     <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
@@ -403,7 +432,7 @@ function ActivityTab() {
   // ── NERV Event Log variant ───────────────────────────────────────────────
   if (theme === "nerv") {
     return (
-      <div style={{ overflow: "auto", height: "100%", padding: 0 }}>
+      <div ref={scrollRef} onScroll={handleScroll} style={{ overflow: "auto", height: "100%", padding: 0 }}>
         {nervHeader}
 
         <div style={{ padding: "4px 0", fontFamily: "var(--font-sys)" }}>
@@ -412,28 +441,9 @@ function ActivityTab() {
           ))}
         </div>
 
-        {nextOffset !== null && (
-          <div style={{ textAlign: "center", padding: "8px" }}>
-            <button
-              onClick={() => {
-                setLoadingMore(true);
-                fetchActivities(nextOffset, true);
-              }}
-              disabled={loadingMore}
-              style={{
-                fontSize: "9px",
-                textTransform: "uppercase",
-                letterSpacing: "0.08em",
-                padding: "4px 12px",
-                border: "1px solid var(--steel-faint)",
-                background: "var(--void-warm)",
-                color: "var(--nerv-orange-dim)",
-                cursor: loadingMore ? "wait" : "pointer",
-                opacity: loadingMore ? 0.5 : 1,
-              }}
-            >
-              {loadingMore ? "Loading..." : "Load more events"}
-            </button>
+        {loadingMore && (
+          <div style={{ textAlign: "center", padding: "8px", fontSize: "9px", color: "var(--steel-dim)", textTransform: "uppercase", letterSpacing: "0.08em" }}>
+            Loading more events...
           </div>
         )}
       </div>
@@ -449,7 +459,7 @@ function ActivityTab() {
   }
 
   return (
-    <div className="overflow-y-auto h-full px-3 py-3 space-y-4">
+    <div ref={scrollRef} onScroll={handleScroll} className="overflow-y-auto h-full px-3 py-3 space-y-4">
       {defaultHeader}
       {Array.from(sections.entries()).map(([section, entries]) => (
         <div key={section}>
@@ -464,19 +474,8 @@ function ActivityTab() {
         </div>
       ))}
 
-      {nextOffset !== null && (
-        <div className="text-center py-2">
-          <button
-            onClick={() => {
-              setLoadingMore(true);
-              fetchActivities(nextOffset, true);
-            }}
-            disabled={loadingMore}
-            className="text-xs px-3 py-1.5 rounded border border-gray-700 text-gray-400 hover:bg-gray-900 hover:text-gray-200 transition-colors disabled:opacity-50"
-          >
-            {loadingMore ? "Loading..." : "Load more"}
-          </button>
-        </div>
+      {loadingMore && (
+        <div className="text-center py-2 text-xs text-gray-500">Loading more...</div>
       )}
     </div>
   );
