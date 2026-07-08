@@ -1360,12 +1360,117 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
 // ── Meow Medal Sync ──────────────────────────────────────────────────────────
 
 /**
+ * Strips star-glyph decorations, collapses whitespace, and lowercases a
+ * medal name so it can be matched regardless of formatting differences
+ * between data sources (e.g. the retired Miraheze scraper vs BCData's raw
+ * text may render the "★ Name ★" decoration with different spacing or a
+ * visually-identical-but-different Unicode star character).
+ */
+function normalizeMedalName(name: string): string {
+  return name
+    .replace(/[★☆✩✪✫✬✭✮✯✰⭐]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
+function medalImageFile(sortOrder: number): string {
+  return `Medal_${String(sortOrder).padStart(3, "0")}.png`;
+}
+
+/**
+ * Merges any MeowMedal rows that are really the same medal but ended up as
+ * separate DB rows (normalized names match, exact names don't). This
+ * happened when the previous version of this sync matched on exact `name`
+ * equality: the pre-existing Miraheze-scraped rows apparently differ from
+ * BCData's formatting just enough (star glyph/whitespace) that every single
+ * medal failed to match and got inserted a second time, doubling the
+ * catalog (125 → 252) without touching anyone's earned progress on the
+ * original rows.
+ *
+ * Runs as a self-healing step before every sync so this can't silently
+ * recur, and so anyone who already has the duplicated data gets it fixed
+ * automatically on the next sync run rather than needing a one-off script.
+ */
+async function consolidateDuplicateMedals(prisma: PrismaClient) {
+  const rows: {
+    id: string;
+    name: string;
+    imageFile: string | null;
+    autoKey: string | null;
+  }[] = await (prisma as any).meowMedal.findMany({
+    select: { id: true, name: true, imageFile: true, autoKey: true },
+  });
+
+  const groups = new Map<string, typeof rows>();
+  for (const r of rows) {
+    const key = normalizeMedalName(r.name);
+    if (!groups.has(key)) groups.set(key, []);
+    groups.get(key)!.push(r);
+  }
+
+  const dupeGroups = [...groups.values()].filter((g) => g.length > 1);
+  if (dupeGroups.length === 0) {
+    console.log("  No duplicate medals found — nothing to consolidate");
+    return;
+  }
+
+  console.log(`  Found ${dupeGroups.length} duplicate medal group(s) — consolidating...`);
+  let mergedCount = 0;
+
+  for (const group of dupeGroups) {
+    const autoKeys = [...new Set(group.map((r) => r.autoKey).filter(Boolean))];
+    if (autoKeys.length > 1) {
+      console.warn(
+        `    ⚠ "${group[0].name}" duplicates have conflicting autoKeys (${autoKeys.join(", ")}) — keeping one, please verify manually`
+      );
+    }
+
+    // Prefer keeping the row with an autoKey (hand-curated, hard to
+    // reconstruct), then one with an imageFile, else just the first.
+    const keep = group.find((r) => r.autoKey) ?? group.find((r) => r.imageFile) ?? group[0];
+    const dupes = group.filter((r) => r.id !== keep.id);
+
+    for (const dupe of dupes) {
+      // Carry over earned progress so nobody loses a medal they'd already earned.
+      const dupeProgress: { userId: string; earned: boolean; earnedAt: Date | null }[] =
+        await (prisma as any).userMeowMedal.findMany({
+          where: { meowMedalId: dupe.id, earned: true },
+          select: { userId: true, earned: true, earnedAt: true },
+        });
+
+      for (const p of dupeProgress) {
+        const keepRow = await (prisma as any).userMeowMedal.findUnique({
+          where: { userId_meowMedalId: { userId: p.userId, meowMedalId: keep.id } },
+          select: { earned: true },
+        });
+        if (keepRow?.earned) continue;
+
+        await (prisma as any).userMeowMedal.upsert({
+          where: { userId_meowMedalId: { userId: p.userId, meowMedalId: keep.id } },
+          create: { userId: p.userId, meowMedalId: keep.id, earned: true, earnedAt: p.earnedAt },
+          update: { earned: true, earnedAt: p.earnedAt },
+        });
+      }
+
+      await (prisma as any).userMeowMedal.deleteMany({ where: { meowMedalId: dupe.id } });
+      await (prisma as any).meowMedal.delete({ where: { id: dupe.id } });
+      mergedCount++;
+    }
+  }
+
+  console.log(`  ✓ Consolidated ${mergedCount} duplicate row(s) across ${dupeGroups.length} group(s)`);
+}
+
+/**
  * Syncs the Meow Medal catalog from resLocal/medalname.tsv.
  *
  * File format: one medal per line, tab-separated `Name\tDescription`, in the
  * same order as DataLocal/medallist.json's `iconID` array (verified 1:1 —
  * both have the same entry count in every version checked so far). That
- * order matches the in-game medal list order, so we reuse it as sortOrder.
+ * order matches the in-game medal list order, so we reuse it as sortOrder
+ * AND as the local image filename index (public/medals/Medal_NNN.png — the
+ * 125 checked-in images are numbered by this same position).
  *
  * This replaces the old one-off Miraheze wiki scraper
  * (scripts/import-meow-medals-miraheze.ts) as the source of truth — BCData
@@ -1374,11 +1479,14 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
  * show up automatically on the next weekly sync instead of requiring someone
  * to notice the wiki is out of date and re-run the scraper by hand.
  *
- * Deliberately does NOT touch `autoKey` — that field drives the separate
- * auto-completion system (see src/app/api/meow-medals/sync/route.ts and the
- * scripts/set-*-autokeys.ts helpers) and is curated by hand per medal. Since
- * we only set it on `create` (new medals start with no autoKey) and never
- * include it in `update`, existing autoKey assignments are preserved.
+ * Matches existing rows by normalized name (see normalizeMedalName) rather
+ * than exact string equality, and updates by id — this is what fixes (and
+ * prevents recurrence of) the duplication bug from the first version of
+ * this function.
+ *
+ * Deliberately does NOT touch `autoKey` on update — that field drives the
+ * separate auto-completion system (see src/app/api/meow-medals/sync/route.ts
+ * and the scripts/set-*-autokeys.ts helpers) and is hand-curated per medal.
  */
 async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
   const medalNamePath = path.join(resLocal, "medalname.tsv");
@@ -1390,7 +1498,7 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
   const raw = readFileSync(medalNamePath, "utf-8");
   const lines = raw.split("\n").filter((l) => l.trim().length > 0);
 
-  type ParsedMedal = { name: string; description: string; sortOrder: number };
+  type ParsedMedal = { name: string; description: string; sortOrder: number; imageFile: string };
   const medals: ParsedMedal[] = [];
   for (let i = 0; i < lines.length; i++) {
     const parts = lines[i].split("\t");
@@ -1401,17 +1509,20 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
     const name = parts[0].trim();
     const description = parts.slice(1).join("\t").trim();
     if (!name) continue;
-    medals.push({ name, description, sortOrder: i });
+    medals.push({ name, description, sortOrder: i, imageFile: medalImageFile(i) });
   }
 
   console.log(`  medalname.tsv: ${medals.length} medals`);
   if (medals.length === 0) return;
 
-  const existingNames = new Set(
-    (await (prisma as any).meowMedal.findMany({ select: { name: true } })).map(
-      (m: { name: string }) => m.name
-    )
-  );
+  // Step 0: fix up any pre-existing duplicates before matching new data in.
+  await consolidateDuplicateMedals(prisma);
+
+  // Step 1: match against existing rows by normalized name, not exact name.
+  const existing: { id: string; name: string }[] = await (prisma as any).meowMedal.findMany({
+    select: { id: true, name: true },
+  });
+  const existingByKey = new Map(existing.map((r) => [normalizeMedalName(r.name), r]));
 
   const batchSize = 50;
   let created = 0;
@@ -1420,28 +1531,36 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
     const batch = medals.slice(i, i + batchSize);
     await Promise.all(
       batch.map((m) => {
-        if (existingNames.has(m.name)) updated++;
-        else created++;
-        return (prisma as any).meowMedal.upsert({
-          where: { name: m.name },
-          create: {
+        const match = existingByKey.get(normalizeMedalName(m.name));
+        if (match) {
+          updated++;
+          return (prisma as any).meowMedal.update({
+            where: { id: match.id },
+            data: {
+              name: m.name,
+              description: m.description,
+              requirementText: m.description,
+              sortOrder: m.sortOrder,
+              imageFile: m.imageFile,
+            },
+          });
+        }
+        created++;
+        return (prisma as any).meowMedal.create({
+          data: {
             name: m.name,
             description: m.description,
             requirementText: m.description,
             category: "Other",
             sortOrder: m.sortOrder,
-          },
-          update: {
-            description: m.description,
-            requirementText: m.description,
-            sortOrder: m.sortOrder,
+            imageFile: m.imageFile,
           },
         });
       })
     );
-    process.stdout.write(`\r  Upserted ${Math.min(i + batchSize, medals.length)}/${medals.length} medals...`);
+    process.stdout.write(`\r  Synced ${Math.min(i + batchSize, medals.length)}/${medals.length} medals...`);
   }
-  console.log(`\n  ✓ ${created} created, ${updated} updated (${medals.length} total from BCData)`);
+  console.log(`\n  ✓ ${created} created, ${updated} matched & updated (${medals.length} total from BCData)`);
 }
 
 // ── Run ──────────────────────────────────────────────────────────────────────
