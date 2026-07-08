@@ -46,7 +46,8 @@ export default function NervWaveform() {
 
   const fetchData = useCallback(async () => {
     try {
-      const res = await fetch(`/api/progress-timeline?days=30`);
+      // No `days` param — the API defaults to full history (account creation → today).
+      const res = await fetch(`/api/progress-timeline`);
       if (res.ok) setData(await res.json());
     } catch { /* ignore */ }
     finally { setLoading(false); }

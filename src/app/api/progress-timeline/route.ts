@@ -6,8 +6,12 @@ import { prisma } from "@/lib/prisma";
 /**
  * GET /api/progress-timeline
  *
- * Returns daily cumulative progress counts over the last 30 days,
- * broken down by category, plus the max possible totals for each.
+ * Returns daily cumulative progress counts, broken down by category, plus
+ * the max possible totals for each.
+ *
+ * By default the range spans from account creation to today, so the
+ * waveform always shows the user's full history. Pass `?days=N` to
+ * request a shorter fixed window instead (min 7, max 3650).
  *
  * The waveform uses totals to scale each series as a percentage
  * (e.g. 120/125 medals = 96% = near the top of the chart).
@@ -26,10 +30,21 @@ export async function GET(req: NextRequest) {
     const userId = session.user.id as string;
 
     const { searchParams } = new URL(req.url);
-    const daysBack = Math.min(365, Math.max(7, Number(searchParams.get("days") ?? 30)));
+    const daysParam = searchParams.get("days");
 
-    const since = new Date();
-    since.setDate(since.getDate() - daysBack);
+    let since: Date;
+    if (daysParam) {
+      const daysBack = Math.min(3650, Math.max(7, Number(daysParam)));
+      since = new Date();
+      since.setDate(since.getDate() - daysBack);
+    } else {
+      // Default: full history, from account creation to now.
+      const account = await (prisma as any).user.findUnique({
+        where: { id: userId },
+        select: { createdAt: true },
+      });
+      since = account?.createdAt ?? new Date();
+    }
     since.setHours(0, 0, 0, 0);
 
     // ── 1. Fetch activity events ───────────────────────────────────────────
