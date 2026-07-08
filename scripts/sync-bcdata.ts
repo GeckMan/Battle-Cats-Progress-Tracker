@@ -1379,6 +1379,18 @@ function medalImageFile(sortOrder: number): string {
 }
 
 /**
+ * BCData's medal descriptions carry literal `<br>` tags meant for the
+ * in-game text renderer (e.g. "Clear All Level 1<br>Stories of Legend
+ * stages") — our UI renders this as plain text, so left alone it shows the
+ * raw tag instead of a line break. Replace with a space and collapse
+ * whitespace rather than rendering as HTML, since these strings ultimately
+ * come from an external data source we don't control.
+ */
+function cleanMedalText(s: string): string {
+  return s.replace(/<br\s*\/?>/gi, " ").replace(/\s+/g, " ").trim();
+}
+
+/**
  * Merges any MeowMedal rows that are really the same medal but ended up as
  * separate DB rows (normalized names match, exact names don't). This
  * happened when the previous version of this sync matched on exact `name`
@@ -1507,7 +1519,7 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
       continue;
     }
     const name = parts[0].trim();
-    const description = parts.slice(1).join("\t").trim();
+    const description = cleanMedalText(parts.slice(1).join("\t"));
     if (!name) continue;
     medals.push({ name, description, sortOrder: i, imageFile: medalImageFile(i) });
   }
