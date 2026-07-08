@@ -21,6 +21,10 @@
  *
  * What it syncs:
  *   - Units: name (all forms), rarity/category, form count
+ *   - Collab flags: isCollab/source, detected from the "コラボ" marker Ponos
+ *     itself uses in DataLocal/GatyaDataSet{E,N,R}1.csv banner labels —
+ *     superseding the old one-off hardcoded unit-ID list from migration
+ *     20260303000002_add_iscollab, which never updated for new units.
  *   - Legend Stages: saga names + subchapter names
  *   - Meow Medals: name + description catalog (resLocal/medalname.tsv),
  *     superseding the old one-off Miraheze wiki scraper
@@ -130,6 +134,12 @@ async function main() {
     // Step 3: Parse and sync units
     console.log("\n── Syncing Units ──");
     await syncUnits(prisma, dataLocal, resLocal);
+
+    // Step 3b: Detect collab units from real gacha banner history, and flag
+    // any unit still missing a source/set classification entirely
+    console.log("\n── Detecting Collab Units ──");
+    await syncCollabFlags(prisma, dataLocal);
+    await checkUnitClassificationCoverage(prisma);
 
     // Step 4: Parse and sync legend stages
     console.log("\n── Syncing Legend Stages ──");
@@ -360,6 +370,172 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     process.stdout.write(`\r  Upserted ${upserted}/${units.length} units...`);
   }
   console.log(`\n  ✓ ${upserted} units synced`);
+}
+
+// ── Collab Detection from Gacha Banner Data ─────────────────────────────────
+//
+// `isCollab` used to be a one-time hardcoded list of ~82 unit IDs (see the
+// March 2026 migration `20260303000002_add_iscollab`), which meant every
+// unit added since then defaulted to isCollab=false / source=null forever —
+// the same class of staleness bug the meow medal catalog had before it was
+// folded into this sync.
+//
+// BCData's DataLocal/GatyaDataSet{E,N,R}1.csv files are a full historical
+// log of every gacha banner Ponos has ever run (row index = in-game
+// GatyaSetID). Each row is a comma-separated list of unit IDs terminated by
+// a `-1` sentinel, followed by a `//` comment holding Ponos's own internal
+// Japanese banner label. Crucially, those labels literally spell out real
+// licensed crossovers using the loanword "コラボ" (korabo = "collab") — e.g.
+// "Fateコラボガチャ", "刃牙コラボ" (Baki collab), "ビックリマンコラボ"
+// (Bikkuriman collab). That gives a reliable signal for isCollab with no
+// keyword list of IP names to maintain — just check for that marker.
+//
+// (GatyaDataSet{E,N,R}2/3.csv are companion files for banner
+// weighting/animation metadata, not additional unit-ID pools — verified by
+// inspecting their contents, which are either all -1 or small tier-index
+// integers, never real unit IDs. Deliberately not parsed here.)
+//
+// This intentionally does NOT try to auto-generate the human-readable
+// "setName" shown in the UI (e.g. "Tales of the Nekoluga") — BCData's raw
+// banner labels are Japanese-only with no English translation source, and
+// dumping untranslated text into the Set filter dropdown would be a worse
+// regression than leaving it manually curated. See
+// checkUnitClassificationCoverage() below for how those gaps still get
+// surfaced instead of silently staying "Unknown" forever.
+const GATYA_SET_FILES = ["GatyaDataSetE1.csv", "GatyaDataSetN1.csv", "GatyaDataSetR1.csv"];
+const COLLAB_MARKER = "コラボ";
+
+function parseGatyaSetFile(content: string): { unitIds: number[]; label: string }[] {
+  return content
+    .split("\n")
+    .map((line) => {
+      const commentIdx = line.indexOf("//");
+      const dataPart = commentIdx >= 0 ? line.slice(0, commentIdx) : line;
+      const label = commentIdx >= 0 ? line.slice(commentIdx + 2).trim() : "";
+      const unitIds = dataPart
+        .split(",")
+        .map((s) => s.trim())
+        .filter((s) => s !== "" && s !== "-1")
+        .map(Number)
+        .filter((n) => Number.isFinite(n));
+      return { unitIds, label };
+    })
+    .filter((row) => row.unitIds.length > 0);
+}
+
+function detectCollabUnitIds(dataLocal: string): Set<number> {
+  const collabIds = new Set<number>();
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) continue;
+    const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
+    for (const row of rows) {
+      if (row.label.includes(COLLAB_MARKER)) {
+        for (const id of row.unitIds) collabIds.add(id);
+      }
+    }
+  }
+  return collabIds;
+}
+
+async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
+  // Known limitation: this only catches banners where Ponos's own internal
+  // label literally contains コラボ. Verified against real BCData that this
+  // reliably matches recent licensed crossovers (Fate, Baki, Bikkuriman,
+  // Metal Slug), but some long-running older collabs never got labeled that
+  // way at all (e.g. the Sengoku Basara banner is labeled "戦国武神バサラーズ"
+  // across ~20 historical appearances, never once with コラボ). Those aren't
+  // regressed — anything already isCollab=true stays that way — they just
+  // won't be freshly auto-detected here. checkUnitClassificationCoverage()
+  // below is the safety net for gaps like that.
+  const collabIds = detectCollabUnitIds(dataLocal);
+  if (collabIds.size === 0) {
+    console.log(
+      "  ⚠ No コラボ-marked gacha banners found — GatyaDataSet*.csv may be missing or reformatted in this BCData snapshot, skipping"
+    );
+  } else {
+    console.log(`  Detected ${collabIds.size} unit(s) across all-time コラボ-labeled gacha banners`);
+
+    // Only ever ADD isCollab/source info, never remove it — a unit confirmed
+    // as collab (by this detector or the old hardcoded migration) stays
+    // collab even if some future BCData snapshot's banner history looks
+    // different (e.g. depth-limited history windows).
+    const existing = await (prisma as any).unit.findMany({
+      where: { unitNumber: { in: [...collabIds] } },
+      select: { unitNumber: true, isCollab: true, source: true },
+    });
+
+    const toFlag = existing.filter((u: any) => !u.isCollab || !u.source);
+    if (toFlag.length === 0) {
+      console.log("  All detected collab units already flagged — nothing to update");
+    } else {
+      for (const u of toFlag) {
+        await (prisma as any).unit.update({
+          where: { unitNumber: u.unitNumber },
+          data: {
+            isCollab: true,
+            source: u.source ?? "EVENT_CAPSULE",
+          },
+        });
+      }
+      console.log(
+        `  ✓ Flagged ${toFlag.length} newly-detected collab unit(s) as isCollab (source defaulted to EVENT_CAPSULE where unset)`
+      );
+    }
+  }
+
+  // Separate, independent backfill: some units may already be isCollab=true
+  // (from the old hardcoded migration or a past manual edit) but never got a
+  // `source` set at all, which would still render "How to Obtain: Unknown"
+  // in the UI despite being correctly flagged as collab. Safe to fix
+  // unconditionally — a unit that's definitely collab but missing a source
+  // should always fall back to the generic "Collab" label.
+  const missingSource = await (prisma as any).unit.findMany({
+    where: { isCollab: true, source: null },
+    select: { unitNumber: true },
+  });
+  if (missingSource.length > 0) {
+    await (prisma as any).unit.updateMany({
+      where: { isCollab: true, source: null },
+      data: { source: "EVENT_CAPSULE" },
+    });
+    console.log(
+      `  ✓ Backfilled source="EVENT_CAPSULE" for ${missingSource.length} previously-flagged collab unit(s) that were missing a source`
+    );
+  }
+}
+
+/**
+ * Surfaces units that still have no way to explain "How to Obtain" in the
+ * UI — no source, no set, and not flagged as collab. These previously went
+ * silently unnoticed (e.g. a brand-new Uber Rare that isn't a collab but
+ * also hasn't been manually assigned a gacha set name yet). Rather than
+ * trying to guess a set name from untranslated data, this just makes the
+ * gap visible in the weekly sync log so it can be fixed with a 30-second
+ * manual edit — the same "flag it, don't guess it" pattern used for
+ * Great Advent milestone coverage above.
+ */
+async function checkUnitClassificationCoverage(prisma: PrismaClient) {
+  const unclassified = await (prisma as any).unit.findMany({
+    where: { isCollab: false, source: null, setName: null },
+    select: { unitNumber: true, name: true },
+    orderBy: { unitNumber: "asc" },
+  });
+
+  if (unclassified.length === 0) {
+    console.log("  Unit source/set coverage: OK (every unit has a source, a set, or is flagged as collab)");
+    return;
+  }
+
+  const preview = unclassified
+    .slice(0, 15)
+    .map((u: any) => `${u.name} (#${u.unitNumber})`)
+    .join(", ");
+  const more = unclassified.length > 15 ? ` …and ${unclassified.length - 15} more` : "";
+  console.log(`  ⚠ ${unclassified.length} unit(s) have no source, set, or collab classification: ${preview}${more}`);
+  console.log(
+    `    → These will show "How to Obtain: Unknown" in the app. Set Unit.source/setName manually if known.`
+  );
 }
 
 /**
