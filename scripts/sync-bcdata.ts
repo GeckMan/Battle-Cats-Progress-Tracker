@@ -330,8 +330,71 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
   console.log(`\n  ✓ ${upserted} units synced`);
 }
 
+/**
+ * Column position of the rarity field in unitbuy.csv, verified against
+ * bcsfe (fieryhenry/BCSFE-Python — the actively maintained community
+ * save editor) whose UnitBuyCatData class parses this exact column
+ * using the same 0-indexed, no-header-row layout this script assumes.
+ * See UnitBuyCatData.assign() in bcsfe/core/game/catbase/cat.py.
+ */
+const KNOWN_RARITY_COL = 13;
+
+/**
+ * Quick sanity check for the known-good rarity column position, so we
+ * don't blindly trust it forever — if a future game update reshuffles
+ * unitbuy.csv's columns again, this should catch it and trigger the
+ * fallback heuristic scan below instead of silently applying garbage.
+ */
+function isSaneRarityColumn(values: number[]): boolean {
+  if (values.length < 100) return false;
+  if (!values.every((v) => v >= 0 && v <= 5)) return false;
+
+  const counts: Record<number, number> = { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+  for (const v of values) counts[v] = (counts[v] ?? 0) + 1;
+
+  // Battle Cats has hundreds of Super Rare and Uber Rare units — their
+  // total absence (or near-absence) means this isn't the rarity column.
+  if (counts[3] < 5 || counts[4] < 5) return false;
+
+  // Normal cats are always a small, fixed handful (the original 9 cats
+  // plus a couple of collab reclassifications) — never hundreds.
+  if (counts[0] > 30) return false;
+
+  return true;
+}
+
 function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string> {
   const map = new Map<number, string>();
+
+  // ── Strategy 0: Known-good column ───────────────────────────────────────
+  // Try the verified column position first. This avoids re-deriving the
+  // answer via heuristics on every sync, which is what caused a previous
+  // false-negative — the heuristics rejected the correct column based on
+  // unverified assumptions. Only fall through to the scanning strategies
+  // below if this fails its sanity check (e.g. a future format change).
+  const unitbuyPathKnown = path.join(dataLocal, "unitbuy.csv");
+  if (existsSync(unitbuyPathKnown)) {
+    const content = readFileSync(unitbuyPathKnown, "utf-8");
+    const lines = content.trim().split("\n").filter((l) => l.trim());
+    if (lines.length > 100) {
+      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
+      if (rows[0].length > KNOWN_RARITY_COL) {
+        const colVals = rows.map((r) => r[KNOWN_RARITY_COL]);
+        if (isSaneRarityColumn(colVals)) {
+          for (let i = 0; i < colVals.length; i++) {
+            const category = RARITY_MAP[colVals[i]];
+            if (category) map.set(i, category);
+          }
+          console.log(`  ✓ Using known-good unitbuy.csv col ${KNOWN_RARITY_COL} (rarity) — sanity check passed`);
+          console.log(`  Rarity distribution: ${summarizeRarity(map)}`);
+          return map;
+        }
+        console.warn(`  ⚠ Known-good unitbuy.csv col ${KNOWN_RARITY_COL} failed sanity check — game format may have changed, falling back to column scan`);
+      } else {
+        console.warn(`  ⚠ unitbuy.csv only has ${rows[0].length} columns (expected >${KNOWN_RARITY_COL}) — falling back to column scan`);
+      }
+    }
+  }
 
   // Try both data files and pick the best result
   const candidates: { source: string; col: number; score: number; values: number[] }[] = [];
