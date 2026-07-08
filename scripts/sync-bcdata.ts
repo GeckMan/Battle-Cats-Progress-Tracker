@@ -25,6 +25,11 @@
  *     itself uses in DataLocal/GatyaDataSet{E,N,R}1.csv banner labels —
  *     superseding the old one-off hardcoded unit-ID list from migration
  *     20260303000002_add_iscollab, which never updated for new units.
+ *   - Gacha set assignment: setName/banners, by clustering units that debut
+ *     together in the same historical gacha banner (see syncEventSets) and
+ *     extending an already-curated English set name (e.g. "June Bride") to
+ *     new units in the same event — additive only, never guesses a brand
+ *     new name and never overwrites existing data.
  *   - Legend Stages: saga names + subchapter names
  *   - Meow Medals: name + description catalog (resLocal/medalname.tsv),
  *     superseding the old one-off Miraheze wiki scraper
@@ -135,10 +140,14 @@ async function main() {
     console.log("\n── Syncing Units ──");
     await syncUnits(prisma, dataLocal, resLocal);
 
-    // Step 3b: Detect collab units from real gacha banner history, and flag
-    // any unit still missing a source/set classification entirely
+    // Step 3b: Detect collab units from real gacha banner history
     console.log("\n── Detecting Collab Units ──");
     await syncCollabFlags(prisma, dataLocal);
+
+    // Step 3c: Tie units to their real gacha set/event using banner debut
+    // history, and flag any unit still missing a source/set classification
+    console.log("\n── Assigning Gacha Sets ──");
+    await syncEventSets(prisma, dataLocal);
     await checkUnitClassificationCoverage(prisma);
 
     // Step 4: Parse and sync legend stages
@@ -395,13 +404,8 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
 // inspecting their contents, which are either all -1 or small tier-index
 // integers, never real unit IDs. Deliberately not parsed here.)
 //
-// This intentionally does NOT try to auto-generate the human-readable
-// "setName" shown in the UI (e.g. "Tales of the Nekoluga") — BCData's raw
-// banner labels are Japanese-only with no English translation source, and
-// dumping untranslated text into the Set filter dropdown would be a worse
-// regression than leaving it manually curated. See
-// checkUnitClassificationCoverage() below for how those gaps still get
-// surfaced instead of silently staying "Unknown" forever.
+// setName/banner ("gacha set") assignment is handled separately below by
+// syncEventSets(), which reuses this same parser.
 const GATYA_SET_FILES = ["GatyaDataSetE1.csv", "GatyaDataSetN1.csv", "GatyaDataSetR1.csv"];
 const COLLAB_MARKER = "コラボ";
 
@@ -502,6 +506,171 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
     console.log(
       `  ✓ Backfilled source="EVENT_CAPSULE" for ${missingSource.length} previously-flagged collab unit(s) that were missing a source`
     );
+  }
+}
+
+// ── Event/Gacha Set Assignment from Banner Debut History ───────────────────
+//
+// Beyond collab detection, units should also get tied to their real gacha
+// "set" (e.g. Hanzo the Betrothed → "June Bride", Fuma Kotaro → "Sengoku
+// Wargods Vajiras") instead of showing "How to Obtain: Unknown" forever.
+// BCData has no clean structured English name for gacha events (checked:
+// no series/theme data file, no per-banner title resource — only
+// occasional unstructured mentions buried in Mission_Name.csv prose), so
+// this can't auto-translate a BRAND NEW event's name out of thin air. But
+// it CAN reliably detect which units belong to the SAME real event as each
+// other, which is enough to solve the common case: a new unit added to an
+// event that already has a curated English name in the database (like
+// June Bride) gets that same name automatically, with zero translation.
+//
+// How: track each unit's first-ever appearance across BCData's full banner
+// history (GatyaDataSet{E,N,R}1.csv, in chronological file order). A naive
+// "which banners does this unit share with others" approach doesn't work —
+// verified against real data that even restricted to Uber/Legend Rare
+// tier, how many historical banners a unit appears in is a smooth,
+// unbroken continuum from 1 to 373 with no natural cutoff, because units
+// get folded into the ever-growing "everyone pull from here" pool the
+// longer they've existed. That signal mostly measures unit AGE, not what
+// event it belongs to. Looking only at each unit's DEBUT row sidesteps
+// this entirely: the other units debuting in that exact same historical
+// row are precisely its real event co-members, with none of the
+// accumulated-filler noise. Reruns/expansions of the same event are then
+// grouped together by their cleaned banner label (stripping version tags,
+// row-index prefixes, and variant annotations like "+4 characters").
+//
+// Strictly additive and conservative:
+//   - Only fills a unit's setName/banners if currently null.
+//   - Only when at least one OTHER member of its detected event family
+//     already has a curated setName in the database — never invents a new
+//     English name, never overwrites existing data.
+//   - Event families with no existing curated name anywhere are logged for
+//     one-time manual naming (translate once, it propagates from then on).
+//   - If a family's members have DIFFERENT existing setNames, that's left
+//     alone and logged as a possible mislabeling for manual review instead
+//     of guessed at — this is exactly the shape of bug reported for "The
+//     Almighties" vs "Uber Fest" and Vega vs the Street Fighter banner.
+//   - Does NOT attempt to fix a family that's already consistently (but
+//     possibly wrongly) labeled — e.g. a whole set of units incorrectly
+//     but uniformly tagged with a bogus legacy name like "Ototo Corps"
+//     wouldn't be touched by this pass, since there's no internal
+//     inconsistency to flag. That's a separate, harder audit problem
+//     (comparing existing labels against the real derived clusters. rather
+//     than just checking for gaps/conflicts) left for a future pass.
+interface DebutEvent {
+  newUnitIds: number[];
+  cleanedLabel: string;
+}
+
+function cleanBannerLabel(label: string): string {
+  return label
+    .replace(/^\d+:\s*/, "") // leading row-index prefix "214:"
+    .replace(/NG/g, "") // "NG" marker
+    .replace(/【[^】]*】/g, "") // version tag 【6.6.0】
+    .replace(/『[^』]*』/g, "") // sub-variant bracket 『+4キャラ』
+    .replace(/（[^）]*）/g, "") // full-width parenthetical notes
+    .replace(/\([^)]*\)/g, "") // half-width parenthetical notes
+    .replace(/\+\s*\d+\s*(キャラ|文字|人)/g, "") // unbracketed "+4キャラ" suffix
+    .replace(/(統合版|支援隊入り)/g, "") // consolidated/support-unit-added suffixes
+    .trim();
+}
+
+function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
+  const seen = new Set<number>();
+  const debutEvents: DebutEvent[] = [];
+
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) continue;
+    const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
+    for (const row of rows) {
+      // Generic "everything so far" catch-up banners would otherwise mark
+      // hundreds of old units as "new" the first time one appears,
+      // corrupting every subsequent debut comparison — track their
+      // membership as already-seen without treating any of it as a debut.
+      if (/ALL/i.test(row.label)) {
+        for (const id of row.unitIds) seen.add(id);
+        continue;
+      }
+      const newUnitIds = row.unitIds.filter((id) => !seen.has(id));
+      for (const id of row.unitIds) seen.add(id);
+      if (newUnitIds.length > 0) {
+        const cleanedLabel = cleanBannerLabel(row.label);
+        if (cleanedLabel) debutEvents.push({ newUnitIds, cleanedLabel });
+      }
+    }
+  }
+
+  const families = new Map<string, Set<number>>();
+  for (const ev of debutEvents) {
+    if (!families.has(ev.cleanedLabel)) families.set(ev.cleanedLabel, new Set());
+    const fam = families.get(ev.cleanedLabel)!;
+    for (const id of ev.newUnitIds) fam.add(id);
+  }
+  return families;
+}
+
+async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
+  const families = detectEventFamilies(dataLocal);
+  if (families.size === 0) {
+    console.log("  ⚠ No event families detected — GatyaDataSet*.csv may be missing or reformatted, skipping");
+    return;
+  }
+  console.log(`  Detected ${families.size} distinct event famil(y/ies) from banner debut history`);
+
+  let filled = 0;
+  const newFamilies: string[] = [];
+  const conflicts: string[] = [];
+
+  for (const [label, memberIds] of families.entries()) {
+    if (memberIds.size < 2) continue; // a lone unit isn't a "set" to tie anything to
+
+    const members = await (prisma as any).unit.findMany({
+      where: { unitNumber: { in: [...memberIds] } },
+      select: { unitNumber: true, name: true, setName: true, banners: true },
+    });
+    if (members.length === 0) continue;
+
+    const namedSetNames = new Set(members.map((m: any) => m.setName).filter(Boolean));
+    if (namedSetNames.size === 0) {
+      newFamilies.push(`"${label}" (${members.length} units, e.g. ${members[0].name})`);
+      continue;
+    }
+    if (namedSetNames.size > 1) {
+      conflicts.push(`"${label}": ${[...namedSetNames].join(" vs ")}`);
+      continue;
+    }
+
+    const resolvedName = [...namedSetNames][0] as string;
+    const toUpdate = members.filter((m: any) => !m.setName);
+    for (const m of toUpdate) {
+      const banners: string[] = m.banners ?? [];
+      await (prisma as any).unit.update({
+        where: { unitNumber: m.unitNumber },
+        data: {
+          setName: resolvedName,
+          banners: banners.includes(resolvedName) ? banners : [...banners, resolvedName],
+        },
+      });
+      filled++;
+    }
+  }
+
+  if (filled > 0) {
+    console.log(`  ✓ Assigned an existing set name to ${filled} previously-unclassified unit(s)`);
+  } else {
+    console.log("  No units needed a set assignment this run");
+  }
+  if (newFamilies.length > 0) {
+    const preview = newFamilies.slice(0, 10).join("; ");
+    const more = newFamilies.length > 10 ? " …and more" : "";
+    console.log(`  ⚠ ${newFamilies.length} event famil(y/ies) have no existing curated name yet: ${preview}${more}`);
+    console.log(`    → Translate and set Unit.setName manually for one member; it'll propagate to the rest next sync.`);
+  }
+  if (conflicts.length > 0) {
+    console.log(
+      `  ⚠ Possible mislabeling: ${conflicts.length} event famil(y/ies) have members with different existing set names: ${conflicts.slice(0, 5).join("; ")}`
+    );
+    console.log(`    → Worth a manual look — one of these is likely wrong (e.g. a unit filed under the wrong banner).`);
   }
 }
 
