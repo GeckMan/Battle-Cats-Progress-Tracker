@@ -344,10 +344,14 @@ model Activity {
  */
 
 model ChatMessage {
-  id        String   @id @default(cuid())
+  id        String    @id @default(cuid())
   userId    String
   content   String
-  createdAt DateTime @default(now())
+  createdAt DateTime  @default(now())
+  // Soft delete: removed messages are hidden from the feed but the row is
+  // kept for moderation accountability (who removed it, and when).
+  deletedAt DateTime?
+  deletedBy String? // id of the user who deleted it (author or an admin)
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 

@@ -88,7 +88,7 @@ export default function RightPanel({
         {/* Content */}
         <div className="flex-1 overflow-hidden">
           {activeTab === "activity" && <ActivityTab />}
-          {activeTab === "chat" && <ChatTab currentUserId={currentUserId} />}
+          {activeTab === "chat" && <ChatTab currentUserId={currentUserId} isAdmin={isAdmin} />}
           {activeTab === "admin" && isAdmin && <AdminTab currentUserId={currentUserId} />}
         </div>
       </aside>
@@ -556,7 +556,7 @@ type ChatMsg = {
 
 type FriendInfo = { id: string; username: string };
 
-function ChatTab({ currentUserId }: { currentUserId: string }) {
+function ChatTab({ currentUserId, isAdmin }: { currentUserId: string; isAdmin: boolean }) {
   const [messages, setMessages] = useState<ChatMsg[]>([]);
   const [loading, setLoading] = useState(true);
   const [hasMore, setHasMore] = useState(false);
@@ -567,6 +567,8 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
   const [mutedUntil, setMutedUntil] = useState<string | null>(null);
   const [friends, setFriends] = useState<Map<string, FriendInfo>>(new Map());
   const [pendingOutgoing, setPendingOutgoing] = useState<Set<string>>(new Set());
+  const [confirmDeleteId, setConfirmDeleteId] = useState<string | null>(null);
+  const [deletingId, setDeletingId] = useState<string | null>(null);
   const bottomRef = useRef<HTMLDivElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -690,6 +692,22 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
     }
   };
 
+  const deleteMessage = async (messageId: string) => {
+    setDeletingId(messageId);
+    try {
+      const res = await fetch("/api/chat", {
+        method: "DELETE",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messageId }),
+      });
+      if (!res.ok) return;
+      setMessages((prev) => prev.filter((m) => m.id !== messageId));
+    } finally {
+      setDeletingId(null);
+      setConfirmDeleteId(null);
+    }
+  };
+
   if (loading) {
     return <div className="text-gray-500 text-sm py-12 text-center">Loading chat...</div>;
   }
@@ -734,6 +752,12 @@ function ChatTab({ currentUserId }: { currentUserId: string }) {
             isFriend={friends.has(msg.userId)}
             isPendingOutgoing={pendingOutgoing.has(msg.userId)}
             onAddFriend={() => sendFriendRequest(msg.userId)}
+            canDelete={isAdmin || msg.userId === currentUserId}
+            confirmingDelete={confirmDeleteId === msg.id}
+            deleting={deletingId === msg.id}
+            onRequestDelete={() => setConfirmDeleteId(msg.id)}
+            onCancelDelete={() => setConfirmDeleteId(null)}
+            onConfirmDelete={() => deleteMessage(msg.id)}
           />
         ))}
         <div ref={bottomRef} />
@@ -781,12 +805,24 @@ function ChatBubble({
   isFriend,
   isPendingOutgoing,
   onAddFriend,
+  canDelete,
+  confirmingDelete,
+  deleting,
+  onRequestDelete,
+  onCancelDelete,
+  onConfirmDelete,
 }: {
   msg: ChatMsg;
   isMe: boolean;
   isFriend: boolean;
   isPendingOutgoing: boolean;
   onAddFriend: () => void;
+  canDelete: boolean;
+  confirmingDelete: boolean;
+  deleting: boolean;
+  onRequestDelete: () => void;
+  onCancelDelete: () => void;
+  onConfirmDelete: () => void;
 }) {
   const name = msg.displayName ?? msg.username;
   const isAdmin = msg.role === "ADMIN";
@@ -817,28 +853,71 @@ function ChatBubble({
         <span className="text-[10px] text-gray-600 opacity-0 group-hover:opacity-100 transition-opacity">
           {isToday ? timeStr : `${dateStr} ${timeStr}`}
         </span>
-        {/* Friend / Profile action — hidden until hover, skip for own messages */}
-        {!isMe && (
-          <span className="ml-auto opacity-0 group-hover:opacity-100 transition-opacity">
-            {isFriend ? (
-              <Link
-                href={`/social/${encodeURIComponent(msg.username)}`}
-                className="text-[9px] px-1.5 py-0.5 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors whitespace-nowrap"
-              >
-                View Profile
-              </Link>
-            ) : isPendingOutgoing ? (
-              <span className="text-[9px] px-1.5 py-0.5 rounded border border-amber-900 text-amber-700 whitespace-nowrap">
-                Pending
-              </span>
-            ) : (
-              <button
-                type="button"
-                onClick={onAddFriend}
-                className="text-[9px] px-1.5 py-0.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
-              >
-                + Add Friend
-              </button>
+        {/* Trailing actions — hidden until hover */}
+        {(!isMe || canDelete) && (
+          <span className="ml-auto flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-opacity">
+            {/* Friend / Profile action — skip for own messages */}
+            {!isMe && (
+              isFriend ? (
+                <Link
+                  href={`/social/${encodeURIComponent(msg.username)}`}
+                  className="text-[9px] px-1.5 py-0.5 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors whitespace-nowrap"
+                >
+                  View Profile
+                </Link>
+              ) : isPendingOutgoing ? (
+                <span className="text-[9px] px-1.5 py-0.5 rounded border border-amber-900 text-amber-700 whitespace-nowrap">
+                  Pending
+                </span>
+              ) : (
+                <button
+                  type="button"
+                  onClick={onAddFriend}
+                  className="text-[9px] px-1.5 py-0.5 rounded border border-amber-800 bg-amber-950/30 text-amber-300 hover:bg-amber-950/60 transition-colors whitespace-nowrap"
+                >
+                  + Add Friend
+                </button>
+              )
+            )}
+
+            {/* Delete action — own messages, or any message if admin */}
+            {canDelete && (
+              confirmingDelete ? (
+                <span className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    onClick={onConfirmDelete}
+                    disabled={deleting}
+                    className="text-[9px] px-1.5 py-0.5 rounded border border-red-700 bg-red-950/50 text-red-300 hover:bg-red-950 transition-colors whitespace-nowrap disabled:opacity-50"
+                  >
+                    {deleting ? "..." : "Confirm"}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={onCancelDelete}
+                    disabled={deleting}
+                    className="text-[9px] px-1.5 py-0.5 rounded border border-gray-700 text-gray-400 hover:text-gray-200 transition-colors whitespace-nowrap"
+                  >
+                    Cancel
+                  </button>
+                </span>
+              ) : (
+                <button
+                  type="button"
+                  onClick={onRequestDelete}
+                  title="Delete message"
+                  aria-label="Delete message"
+                  className="text-gray-600 hover:text-red-400 transition-colors p-0.5"
+                >
+                  <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M3 4h10" />
+                    <path d="M6.5 4V2.5a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1V4" />
+                    <path d="M4.5 4l.5 9a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1l.5-9" />
+                    <path d="M6.5 7v4" />
+                    <path d="M9.5 7v4" />
+                  </svg>
+                </button>
+              )
             )}
           </span>
         )}

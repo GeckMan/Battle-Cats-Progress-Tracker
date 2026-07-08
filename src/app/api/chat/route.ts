@@ -16,7 +16,9 @@ export async function GET(req: NextRequest) {
     const before = searchParams.get("before"); // cursor-based pagination
     const limit = Math.min(100, Math.max(1, Number(searchParams.get("limit") ?? 50)));
 
-    const where = before ? { createdAt: { lt: new Date(before) } } : {};
+    const where = before
+      ? { createdAt: { lt: new Date(before) }, deletedAt: null }
+      : { deletedAt: null };
 
     // @ts-ignore – ChatMessage model added in new migration
     const messages = await (prisma as any).chatMessage.findMany({
@@ -115,6 +117,54 @@ export async function POST(req: Request) {
       content: msg.content,
       createdAt: msg.createdAt,
     });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}
+
+/**
+ * DELETE /api/chat — remove a message.
+ *
+ * A user may delete their own message. Admins may delete any message
+ * (moderation). Messages are soft-deleted (hidden from the feed, row
+ * kept for accountability) rather than destroyed.
+ */
+export async function DELETE(req: Request) {
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const userId = session.user.id as string;
+    const role = (session.user as any).role ?? "USER";
+
+    const body = await req.json();
+    const messageId = typeof body.messageId === "string" ? body.messageId : "";
+    if (!messageId) {
+      return NextResponse.json({ error: "messageId is required" }, { status: 400 });
+    }
+
+    // @ts-ignore – deletedAt/deletedBy added in new migration
+    const message = await (prisma as any).chatMessage.findUnique({
+      where: { id: messageId },
+      select: { id: true, userId: true, deletedAt: true },
+    });
+
+    if (!message || message.deletedAt) {
+      return NextResponse.json({ error: "Message not found" }, { status: 404 });
+    }
+
+    const isOwnMessage = message.userId === userId;
+    const isAdmin = role === "ADMIN";
+    if (!isOwnMessage && !isAdmin) {
+      return NextResponse.json({ error: "Forbidden" }, { status: 403 });
+    }
+
+    // @ts-ignore
+    await (prisma as any).chatMessage.update({
+      where: { id: messageId },
+      data: { deletedAt: new Date(), deletedBy: userId },
+    });
+
+    return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
