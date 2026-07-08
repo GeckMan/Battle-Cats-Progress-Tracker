@@ -470,55 +470,6 @@ function parseRarityMap(dataLocal: string, resLocal: string): Map<number, string
     }
   }
 
-  // ── Strategy 4: Ground-truth search ─────────────────────────────────────
-  // If no candidate passed scoring, scan ALL columns for one that matches
-  // known unit rarities exactly, even if it has fewer distinct values.
-  // This handles cases where the column format changed completely.
-  const viableCandidates = candidates.filter((c) => c.score >= 100);
-  if (viableCandidates.length === 0) {
-    console.log("  Strategy 4: Ground-truth search — looking for columns matching known unit rarities");
-    const GROUND_TRUTH: Record<number, number> = {
-      0: 0,   // Cat = Normal
-      25: 1,  // Ninja Frog Cat = Special
-      57: 2,  // Salon Cat = Rare
-      209: 4, // Fuma Kotaro = Uber Rare
-    };
-
-    // Scan ALL CSV files in DataLocal, not just unitbuy/nyankoPictureBookData
-    const csvFiles = readdirSync(dataLocal).filter((f) => f.endsWith(".csv"));
-    console.log(`    Scanning ${csvFiles.length} CSV files for ground-truth matches`);
-    for (const file of csvFiles) {
-      const fp = path.join(dataLocal, file);
-      const content = readFileSync(fp, "utf-8");
-      const lines = content.trim().split("\n").filter((l) => l.trim());
-      if (lines.length <= 209) continue;
-
-      const rows = lines.map((l) => l.split(",").map((c) => parseInt(c.trim(), 10)));
-      const numCols = Math.min(...rows.slice(0, 300).map((r) => r.length));
-
-      for (let col = 0; col < numCols; col++) {
-        const colVals = rows.map((r) => r[col]);
-        // Check ground truth
-        let matches = 0;
-        for (const [uid, expected] of Object.entries(GROUND_TRUTH)) {
-          if (colVals[Number(uid)] === expected) matches++;
-        }
-        if (matches === Object.keys(GROUND_TRUTH).length) {
-          // All ground truth units match! Check if values are in rarity range (0-5)
-          const allInRange = colVals.every((v) => v >= 0 && v <= 5);
-          if (allInRange) {
-            const score = scoreRarityColumn(colVals);
-            console.log(`  Strategy 4 MATCH: ${file} col ${col} — all ${matches} ground truth units match, score=${score.toFixed(1)}`);
-            const dist: Record<number, number> = {};
-            for (const v of colVals) dist[v] = (dist[v] ?? 0) + 1;
-            console.log(`    Distribution: ${JSON.stringify(dist)}`);
-            candidates.push({ source: `${file}(ground-truth)`, col, score: score + 200, values: colVals }); // +200 bonus for ground truth match
-          }
-        }
-      }
-    }
-  }
-
   // Pick the candidate with the highest score (minimum threshold: 100)
   // A score below 100 means the column is missing critical rarity tiers
   // and should not be trusted to overwrite existing data.
@@ -677,32 +628,27 @@ function scoreRarityColumn(values: number[]): number {
   if (counts[3] === 0) score -= 200; // no Super Rare = definitely wrong
   if (counts[4] === 0) score -= 200; // no Uber Rare = definitely wrong
 
-  // GROUND TRUTH validation: check known unit rarities.
-  // Unit 0 (Cat) = 0 (Normal), Unit 57 (Salon Cat) = 2 (Rare),
-  // Unit 209 (Fuma Kotaro) = 4 (Uber Rare)
-  // If ANY of these don't match, this column is definitely wrong.
-  if (values.length > 209) {
-    if (values[0] !== 0) score -= 100;   // Cat must be Normal
-    if (values[57] !== 2) score -= 100;  // Salon Cat must be Rare
-    if (values[209] !== 4) score -= 100; // Fuma Kotaro must be Uber Rare
-    // Bonus for matching all three
-    if (values[0] === 0 && values[57] === 2 && values[209] === 4) score += 50;
-  }
+  // Reward Legend Rare being a small minority (it's always the rarest,
+  // most exclusive tier, even as the game has grown).
+  if (counts[5] > 0 && counts[5] < total * 0.1) score += 15;
 
-  // Reward correct ordering: Rare > Super Rare > Uber Rare > Legend Rare
-  if (counts[2] > counts[3]) score += 20; // more Rare than Super Rare
-  if (counts[3] > counts[4]) score += 20; // more Super Rare than Uber Rare
-  if (counts[4] > counts[5]) score += 20; // more Uber Rare than Legend Rare
-
-  // Reward Legend Rare being rare (< 5% of total)
-  if (counts[5] > 0 && counts[5] < total * 0.05) score += 15;
-
-  // Reward Uber Rare being a moderate chunk (5-20% of total)
-  const uberPct = counts[4] / total;
-  if (uberPct > 0.05 && uberPct < 0.25) score += 15;
-
-  // Reward Rare being the largest non-Normal/Special group
-  if (counts[2] > counts[3] && counts[2] > counts[4] && counts[2] > counts[5]) score += 10;
+  // NOTE: This function intentionally does NOT assume any particular
+  // ordering or proportion between Rare/Super Rare/Uber Rare counts
+  // (e.g. "Rare > Super Rare", "Uber Rare is 5-20% of total"). Those
+  // assumptions don't hold for modern Battle Cats — after a decade of
+  // gacha banners, Uber Rare is by far the LARGEST tier (300+ units),
+  // easily exceeding both Rare and Super Rare.
+  //
+  // An earlier version of this function also hard-coded "ground truth"
+  // checks assuming specific rarities for a few named units (Cat, Ninja
+  // Frog Cat, Salon Cat, Fuma Kotaro). Those assumed values were wrong
+  // and caused this scorer to reject the correct column. Verified
+  // against bcsfe (fieryhenry/BCSFE-Python on Codeberg — the actively
+  // maintained community save editor), whose UnitBuyCatData class
+  // confirms unitbuy.csv column 13 is rarity, using the exact same
+  // 0-indexed, no-header-row layout this script assumes. Do not
+  // re-add per-unit assumptions without verifying against an
+  // authoritative source first.
 
   // Penalize if units 57-200 are all the same value (wrong column)
   const midRange = values.slice(57, Math.min(200, values.length));
