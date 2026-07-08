@@ -20,7 +20,7 @@ function setLastSeen(key: string) {
 
 export default function RightPanelWrapper({ currentUserId, currentUserRole }: { currentUserId: string; currentUserRole: string }) {
   const [open, setOpen] = useState(false);
-  const [activeTab, setActiveTab] = useState<"activity" | "chat" | "admin">("activity");
+  const [activeTab, setActiveTab] = useState<"activity" | "chat" | "admin" | "globalActivity">("activity");
   const [unreadActivity, setUnreadActivity] = useState(0);
   const [unreadChat, setUnreadChat] = useState(0);
 
@@ -105,7 +105,7 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
 
   // Mark tab as read when viewing it
   const handleTabChange = useCallback(
-    (tab: "activity" | "chat" | "admin") => {
+    (tab: "activity" | "chat" | "admin" | "globalActivity") => {
       setActiveTab(tab);
       if (tab === "activity") {
         setLastSeen(LS_KEY_ACTIVITY);

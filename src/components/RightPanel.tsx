@@ -8,7 +8,7 @@ import { useTheme } from "@/lib/theme-context";
    RightPanel — sliding drawer on the right edge with Activity + Chat tabs
    ═══════════════════════════════════════════════════════════════════════════ */
 
-type Tab = "activity" | "chat" | "admin";
+type Tab = "activity" | "chat" | "admin" | "globalActivity";
 
 export default function RightPanel({
   open,
@@ -54,8 +54,9 @@ export default function RightPanel({
               active={activeTab === "activity"}
               onClick={() => onTabChange("activity")}
               badge={activeTab !== "activity" ? unreadActivity : 0}
+              title="Activity from you and your friends"
             >
-              Activity
+              Friends
             </TabButton>
             <TabButton
               active={activeTab === "chat"}
@@ -64,6 +65,15 @@ export default function RightPanel({
             >
               Chat
             </TabButton>
+            {isAdmin && (
+              <TabButton
+                active={activeTab === "globalActivity"}
+                onClick={() => onTabChange("globalActivity")}
+                title="Activity from every user on the site"
+              >
+                Global
+              </TabButton>
+            )}
             {isAdmin && (
               <TabButton
                 active={activeTab === "admin"}
@@ -87,8 +97,9 @@ export default function RightPanel({
 
         {/* Content */}
         <div className="flex-1 overflow-hidden">
-          {activeTab === "activity" && <ActivityTab />}
+          {activeTab === "activity" && <ActivityTab scope="friends" />}
           {activeTab === "chat" && <ChatTab currentUserId={currentUserId} isAdmin={isAdmin} />}
+          {activeTab === "globalActivity" && isAdmin && <ActivityTab scope="global" />}
           {activeTab === "admin" && isAdmin && <AdminTab currentUserId={currentUserId} />}
         </div>
       </aside>
@@ -100,16 +111,19 @@ function TabButton({
   active,
   onClick,
   badge,
+  title,
   children,
 }: {
   active: boolean;
   onClick: () => void;
   badge?: number;
+  title?: string;
   children: React.ReactNode;
 }) {
   return (
     <button
       onClick={onClick}
+      title={title}
       className={`relative px-3 py-1.5 text-sm rounded transition-colors ${
         active
           ? "bg-amber-950 text-amber-200 border border-amber-800"
@@ -294,8 +308,9 @@ function relativeTime(date: Date, now: Date): string {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
-function ActivityTab() {
+function ActivityTab({ scope }: { scope: "friends" | "global" }) {
   const { theme } = useTheme();
+  const endpoint = scope === "global" ? "/api/admin/activity" : "/api/activity";
   const [activities, setActivities] = useState<RawActivity[]>([]);
   const [loading, setLoading] = useState(true);
   const [nextOffset, setNextOffset] = useState<number | null>(null);
@@ -305,7 +320,7 @@ function ActivityTab() {
 
   const fetchActivities = useCallback(async (offset = 0, append = false) => {
     try {
-      const res = await fetch(`/api/activity?offset=${offset}&limit=50`);
+      const res = await fetch(`${endpoint}?offset=${offset}&limit=50`);
       if (!res.ok) return;
       const data = await res.json();
       setActivities((prev) => (append ? [...prev, ...data.activities] : data.activities));
@@ -314,7 +329,7 @@ function ActivityTab() {
       setLoading(false);
       setLoadingMore(false);
     }
-  }, []);
+  }, [endpoint]);
 
   // Fetch more raw activity only once the user has actually scrolled near
   // the bottom of the panel — grouping means a single fetched page can
@@ -363,7 +378,7 @@ function ActivityTab() {
 
   const nervHeader = (
     <div className="nerv-panel-header" style={{ position: "sticky", top: 0, zIndex: 1, background: "var(--void)" }}>
-      <span>Event Log</span>
+      <span>{scope === "global" ? "Global Event Log" : "Friends Event Log"}</span>
       <div style={{ display: "flex", gap: "6px" }}>
         {onlineCount !== null && (
           <span className="tag"><span className="led green" />{onlineCount} Online</span>
@@ -375,7 +390,9 @@ function ActivityTab() {
 
   const defaultHeader = onlineCount !== null && (
     <div className="flex items-center justify-between px-1 pb-2 mb-1 border-b border-gray-800">
-      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">Activity</span>
+      <span className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+        {scope === "global" ? "Global Activity" : "Friends Activity"}
+      </span>
       <span className="flex items-center gap-1.5 text-[10px] text-gray-400">
         <span className="inline-block w-1.5 h-1.5 rounded-full bg-green-500" />
         {onlineCount} online now
