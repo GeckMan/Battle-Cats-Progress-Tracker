@@ -45,6 +45,7 @@ import path from "path";
 import { Pool } from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { PrismaClient } from "../src/generated/prisma/index.js";
+import { GACHA_EVENT_NAMES } from "./data/gacha-event-names.js";
 
 // ── Config ───────────────────────────────────────────────────────────────────
 // PRIMARY (and ONLY) source: fieryhenry's self-hosted Forgejo instance, which
@@ -543,8 +544,11 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
 //   - Only when at least one OTHER member of its detected event family
 //     already has a curated setName in the database — never invents a new
 //     English name, never overwrites existing data.
-//   - Event families with no existing curated name anywhere are logged for
-//     one-time manual naming (translate once, it propagates from then on).
+//   - If no member has a curated name, falls back to a static, hand-curated
+//     translation table (scripts/data/gacha-event-names.ts, sourced from
+//     real wiki data) before giving up. Event families that still have no
+//     name after that are logged for one-time manual naming (translate
+//     once, it propagates from then on).
 //   - If a family's members have DIFFERENT existing setNames, that's left
 //     alone and logged as a possible mislabeling for manual review instead
 //     of guessed at — this is exactly the shape of bug reported for "The
@@ -571,6 +575,8 @@ function cleanBannerLabel(label: string): string {
     .replace(/\([^)]*\)/g, "") // half-width parenthetical notes
     .replace(/\+\s*\d+\s*(キャラ|文字|人)/g, "") // unbracketed "+4キャラ" suffix
     .replace(/(統合版|支援隊入り)/g, "") // consolidated/support-unit-added suffixes
+    .replace(/\s*第[一二三四五六七八九十]+弾\s*/g, "") // "Part 2/3/5" installment suffix (e.g. Merc Storia reruns)
+    .replace(/[★☆✩✪✫✬✭✮✯✰⭐]/g, "") // star glyph variants (e.g. Madoka★Magica vs Madoka☆Magica)
     .trim();
 }
 
@@ -631,16 +637,19 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     if (members.length === 0) continue;
 
     const namedSetNames = new Set(members.map((m: any) => m.setName).filter(Boolean));
-    if (namedSetNames.size === 0) {
-      newFamilies.push(`"${label}" (${members.length} units, e.g. ${members[0].name})`);
-      continue;
-    }
     if (namedSetNames.size > 1) {
       conflicts.push(`"${label}": ${[...namedSetNames].join(" vs ")}`);
       continue;
     }
 
-    const resolvedName = [...namedSetNames][0] as string;
+    // No existing curated name on any member — fall back to the static
+    // translation table (see scripts/data/gacha-event-names.ts) before
+    // giving up and flagging this as needing manual naming.
+    let resolvedName = namedSetNames.size === 1 ? ([...namedSetNames][0] as string) : GACHA_EVENT_NAMES[label];
+    if (!resolvedName) {
+      newFamilies.push(`"${label}" (${members.length} units, e.g. ${members[0].name})`);
+      continue;
+    }
     const toUpdate = members.filter((m: any) => !m.setName);
     for (const m of toUpdate) {
       const banners: string[] = m.banners ?? [];
