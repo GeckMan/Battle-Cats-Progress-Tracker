@@ -116,6 +116,16 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   春節イベント: "Lunar New Year",
   海外版春節イベント: "Lunar New Year",
   ホワイトデー: "White Day Capsules",
+  // Confirmed via the wiki's "Lucky Capsule" page: its full 9-unit roster
+  // (Li'l Cat, Li'l Tank/Axe/Gross/Cow/Bird/Fish/Lizard/Titan Cat) exactly
+  // matches these two BCData families combined (6 + 3 members).
+  にゃんこ福引: "Lucky Capsule",
+  "2016にゃんこ福引": "Lucky Capsule",
+  // Confirmed via the wiki's "Best of the Best Milestone Edition" page:
+  // Koneko is the event's single new "(Limited)" Uber Rare — every other
+  // unit in that banner's roster is a pre-existing character from earlier
+  // events, matching this BCData family's single-member size exactly.
+  DL記念選抜ガチャ: "Best of the Best Milestone Edition",
 };
 
 /**
@@ -138,15 +148,20 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  *   entirely (Champion Edition-era Street Fighter characters like Luke/
  *   Juri/Cammy are recent). Needs an actual sync against live/current
  *   BCData to resolve, not something a wiki printout can fix.
- * - "にゃんこ福引" / "2016にゃんこ福引" (Li'l-cat lottery capsules): no
- *   confident match found in the wiki's gacha event navbox.
  * - "極選抜祭" / "みんなが選んだ超選抜祭" / "海外版超選抜祭" (Selection
- *   Festival family, v7.2.0-8.6.0 era): likely one of "Miracle/Ultra/
- *   Excellent Selection" (Removed category) but couldn't confidently
- *   assign which specific one to which sub-label.
- * - "DL記念選抜ガチャ" (download-milestone celebration, 1 member): likely
- *   one of the "30/90/100 Million Download" events (Removed category),
- *   but no version tag was present to narrow down which milestone.
+ *   Festival family, v7.2.0-8.6.0 era, members: Li'l Valkyrie Dark, Agent
+ *   Staal, Li'l Valkyrie, Trixi the Merc): NOT a match for any of "Excellent
+ *   Selection" (Removed), "Ultra 4 Selection", or "Miracle 4 Selection" —
+ *   the user supplied wiki printouts of all three and none contain any of
+ *   this family's unit names. Notably, both Ultra 4 and Miracle 4 Selection
+ *   explicitly say "for the old event, see here" on the wiki, linking to an
+ *   older predecessor page that wasn't supplied — that older page (not
+ *   these current rotating "Selection" gachas) is the likely real match,
+ *   since these modern Selection-type events appear to just reoffer
+ *   previously-debuted units (e.g. Hattori Hanzo and Maeda Keiji both show
+ *   up across multiple different modern Selection rosters despite already
+ *   having earlier, separate debut events) rather than introduce a distinct
+ *   debut family of their own. Needs that specific "old event" page.
  * - "にゃんパズル＆ねば～る君" (old puzzle-game tie-in promo): not present
  *   in the current wiki navbox at all — likely delisted long ago.
  * - "超ネコ祭" / "極ネコ祭" (Baby Gao / Shadow Gao festival pair): no
