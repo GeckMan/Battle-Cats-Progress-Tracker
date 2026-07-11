@@ -126,16 +126,16 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   // unit in that banner's roster is a pre-existing character from earlier
   // events, matching this BCData family's single-member size exactly.
   DL記念選抜ガチャ: "Best of the Best Milestone Edition",
-  // Confirmed via the wiki's "NEO Best of the Best" page (the v8.7+ rebrand
-  // of this evergreen anniversary-banner series): its current roster's
-  // Limited Uber Rare pair is Li'l Valkyrie Dark + Agent Staal — exactly 2
-  // of this family's 4 members, confirming the series. Using the plain
-  // "Best of the Best" name (not "NEO") since this BCData family dates to
-  // v7.2.0-8.6.0, before the v8.7 "NEO" rebrand existed. Li'l Valkyrie and
-  // Trixi the Merc are presumably from an earlier iteration of the same
-  // evergreen pool, consistent with how these anniversary banners reoffer
-  // previously-featured units release after release.
-  極選抜祭: "Best of the Best",
+  // These 3 labels turned out to be TWO separate evergreen anniversary
+  // series, not one — confirmed via exact/root Japanese name matches on
+  // the wiki, each pinned down by its own Limited Uber Rare debut pair:
+  // "NEO Best of the Best" is 極選抜祭レアガチャ (Goku Senbatsusai Gacha)
+  // and debuts Li'l Valkyrie Dark + Agent Staal — an exact match for the
+  // "極選抜祭" label. "Best of the Best" (no NEO) is 超選抜祭ガチャ (Chō
+  // Senbatsusai Gacha) and debuts Li'l Valkyrie + Trixi the Merc — a root
+  // match for "超選抜祭", present in both the "みんなが選んだ" (everyone's
+  // choice / domestic) and "海外版" (overseas version) sub-labels.
+  極選抜祭: "NEO Best of the Best",
   みんなが選んだ超選抜祭: "Best of the Best",
   海外版超選抜祭: "Best of the Best",
 };
