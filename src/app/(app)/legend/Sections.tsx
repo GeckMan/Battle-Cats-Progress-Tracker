@@ -195,6 +195,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
                   <span style={{ flex: 1 }} />
                   <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 4)} c={c}>4</BulkBtn>
                   <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 3)} c={c}>3</BulkBtn>
+                  <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 2)} c={c}>2</BulkBtn>
                   <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, 1)} c={c}>1</BulkBtn>
                   <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, 0)} c={c}>0</BulkBtn>
                 </div>
