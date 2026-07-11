@@ -142,6 +142,10 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   // belongs to Uber Fest, Shadow Gao Cat's family belongs to Epic Fest.
   超ネコ祭: "Uber Fest",
   極ネコ祭: "Epic Fest",
+  // Confirmed via the wiki's "Ancient Heroes ULTRA SOULS" page: Hanasaka
+  // Cat is directly in its Uber Rare roster. This is an abbreviated banner
+  // label for the same event as "超古代勇者ウルトラソウルズ" above.
+  ウルトラ: "Ancient Heroes ULTRA SOULS",
 };
 
 /**
@@ -166,6 +170,4 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  *   BCData to resolve, not something a wiki printout can fix.
  * - "にゃんパズル＆ねば～る君" (old puzzle-game tie-in promo): not present
  *   in the current wiki navbox at all — likely delisted long ago.
- * - "ウルトラ" (single member: Hanasaka Cat): too ambiguous a label on its
- *   own to confidently tie to Ultra Souls or an Ultra Selection event.
  */
