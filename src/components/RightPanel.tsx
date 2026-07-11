@@ -1077,6 +1077,8 @@ type AdminUser = {
   chatMutedUntil: string | null;
   isMuted: boolean;
   createdAt: string;
+  lastActiveAt: string | null;
+  isOnline: boolean;
 };
 
 type LoginAttempt = {
@@ -1108,6 +1110,8 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
   const [suspiciousIps, setSuspiciousIps] = useState<SuspiciousIp[]>([]);
   const [showLoginActivity, setShowLoginActivity] = useState(false);
   const [failedOnly, setFailedOnly] = useState(true);
+  const [onlineCount, setOnlineCount] = useState(0);
+  const [onlineOnly, setOnlineOnly] = useState(false);
 
   const fetchLoginAttempts = useCallback(async (failedOnlyParam: boolean) => {
     try {
@@ -1129,10 +1133,18 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
       if (!res.ok) return;
       const data = await res.json();
       setUsers(data.users);
+      setOnlineCount(data.onlineCount ?? 0);
     } finally {
       setLoading(false);
     }
   }, []);
+
+  // Keep the online roster fresh without requiring a manual refresh —
+  // same cadence as the client's own presence heartbeat.
+  useEffect(() => {
+    const t = setInterval(fetchUsers, 60 * 1000);
+    return () => clearInterval(t);
+  }, [fetchUsers]);
 
   const fetchFriends = useCallback(async () => {
     try {
@@ -1247,13 +1259,13 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
   }
 
   const query = search.toLowerCase().trim();
-  const filtered = query
-    ? users.filter(
-        (u) =>
-          u.username.toLowerCase().includes(query) ||
-          (u.displayName ?? "").toLowerCase().includes(query)
-      )
-    : users;
+  const filtered = users
+    .filter((u) =>
+      query
+        ? u.username.toLowerCase().includes(query) || (u.displayName ?? "").toLowerCase().includes(query)
+        : true
+    )
+    .filter((u) => (onlineOnly ? u.isOnline : true));
 
   return (
     <div className="overflow-y-auto h-full px-3 py-3 space-y-2">
@@ -1364,8 +1376,22 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
         )}
       </div>
 
-      <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-2 px-1">
-        {query ? `${filtered.length} result${filtered.length !== 1 ? "s" : ""}` : `User Management (${users.length})`}
+      <div className="flex items-center justify-between mb-2 px-1">
+        <div className="text-xs font-semibold text-gray-500 uppercase tracking-wider">
+          {query ? `${filtered.length} result${filtered.length !== 1 ? "s" : ""}` : `User Management (${users.length})`}
+        </div>
+        <button
+          onClick={() => setOnlineOnly((v) => !v)}
+          className={`flex items-center gap-1.5 text-[11px] px-2 py-1 rounded border transition-colors ${
+            onlineOnly
+              ? "border-green-700/50 bg-green-950/30 text-green-300"
+              : "border-gray-700/50 text-gray-500 hover:text-gray-300"
+          }`}
+          title="Toggle to show only users active in the last 5 minutes"
+        >
+          <span className={`w-1.5 h-1.5 rounded-full ${onlineCount > 0 ? "bg-green-400" : "bg-gray-600"}`} />
+          {onlineCount} online
+        </button>
       </div>
 
       {feedback && (
@@ -1399,6 +1425,10 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
             <div className="flex items-center gap-2">
               <div className="flex-1 min-w-0">
                 <div className="flex items-center gap-1.5">
+                  <span
+                    className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${user.isOnline ? "bg-green-400" : "bg-gray-700"}`}
+                    title={user.isOnline ? "Online now" : "Offline"}
+                  />
                   <span className="text-sm font-medium text-gray-200 truncate">
                     {user.displayName ?? user.username}
                   </span>
@@ -1410,6 +1440,12 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
                   )}
                 </div>
                 <div className="text-[10px] text-gray-600 mt-0.5">
+                  {user.isOnline
+                    ? <span className="text-green-500">Online now</span>
+                    : user.lastActiveAt
+                      ? `Last active ${new Date(user.lastActiveAt).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`
+                      : "Never active"}
+                  <span className="mx-1.5 text-gray-700">·</span>
                   Joined {new Date(user.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
                   {user.isMuted && (
                     <span className="ml-2 text-red-400">

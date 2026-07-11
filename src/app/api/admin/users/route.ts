@@ -20,16 +20,24 @@ export async function GET() {
         role: true,
         chatMutedUntil: true,
         createdAt: true,
+        lastActiveAt: true,
       },
       orderBy: { createdAt: "asc" },
     });
 
     const now = new Date();
+    // Same 5-minute heartbeat window used by /api/presence for the
+    // site-wide online count, applied per-user here.
+    const onlineThreshold = new Date(now.getTime() - 5 * 60 * 1000);
+    const withStatus = users.map((u: any) => ({
+      ...u,
+      isMuted: u.chatMutedUntil ? u.chatMutedUntil > now : false,
+      isOnline: u.lastActiveAt ? new Date(u.lastActiveAt) >= onlineThreshold : false,
+    }));
+
     return NextResponse.json({
-      users: users.map((u: any) => ({
-        ...u,
-        isMuted: u.chatMutedUntil ? u.chatMutedUntil > now : false,
-      })),
+      users: withStatus,
+      onlineCount: withStatus.filter((u: any) => u.isOnline).length,
     });
   } catch {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
