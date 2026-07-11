@@ -149,6 +149,7 @@ async function main() {
     // history, and flag any unit still missing a source/set classification
     console.log("\n── Assigning Gacha Sets ──");
     await syncEventSets(prisma, dataLocal);
+    await syncBannerMembership(prisma, dataLocal);
     await checkUnitClassificationCoverage(prisma);
 
     // Step 4: Parse and sync legend stages
@@ -681,6 +682,77 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     );
     console.log(`    → Worth a manual look — one of these is likely wrong (e.g. a unit filed under the wrong banner).`);
   }
+}
+
+/**
+ * syncEventSets() above only looks at each unit's very FIRST historical
+ * banner appearance (its "debut"), which is exactly right for assigning a
+ * unit's home setName. But units are routinely re-offered later in
+ * completely different, unrelated banners (evergreen pools like Uber Fest,
+ * Best of the Best, and Selection-type events all draw from previously-
+ * debuted units) — the `banners` array exists specifically to capture ALL
+ * of these, not just the debut one.
+ *
+ * This is what actually resolves a real bug reported on Reddit: "the
+ * UBERFEST filter shows Uber Fest AND Almighties together" / "the
+ * Almighties filter is very strange". Those two banners legitimately share
+ * some units (the Gigant Zeus pool is drawn from both Uber Fest and The
+ * Almighties), and a hardcoded migration years ago tried to represent that
+ * overlap with a single ad-hoc 'UBERFEST' bucket that silently swallowed
+ * the Almighties tag for anyone in both. Rather than guess at which units
+ * currently overlap, this scans EVERY historical banner row (not just
+ * debuts) and, for any row whose cleaned label has a resolved English name
+ * (via the same static translation table, or reuses an already-curated
+ * name it can recognize), adds that name to the `banners` array of every
+ * member who's missing it — strictly additive, never touches setName,
+ * never removes an existing banners entry.
+ */
+async function syncBannerMembership(prisma: PrismaClient, dataLocal: string) {
+  const additions = new Map<number, Set<string>>();
+
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) continue;
+    const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
+    for (const row of rows) {
+      if (/ALL/i.test(row.label)) continue; // generic "everything so far" catch-up banners
+      const cleaned = cleanBannerLabel(row.label);
+      const resolvedName = GACHA_EVENT_NAMES[cleaned];
+      if (!resolvedName) continue;
+      for (const id of row.unitIds) {
+        if (!additions.has(id)) additions.set(id, new Set());
+        additions.get(id)!.add(resolvedName);
+      }
+    }
+  }
+
+  if (additions.size === 0) {
+    console.log("  No resolvable banner rows found for full-history membership sync, skipping");
+    return;
+  }
+
+  const units = await (prisma as any).unit.findMany({
+    where: { unitNumber: { in: [...additions.keys()] } },
+    select: { unitNumber: true, banners: true },
+  });
+
+  let updated = 0;
+  for (const u of units) {
+    const current: string[] = u.banners ?? [];
+    const toAdd = [...(additions.get(u.unitNumber) ?? [])].filter((name) => !current.includes(name));
+    if (toAdd.length === 0) continue;
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: { banners: [...current, ...toAdd] },
+    });
+    updated++;
+  }
+
+  console.log(
+    updated > 0
+      ? `  ✓ Added missing banner membership(s) to ${updated} unit(s) from full historical banner data`
+      : "  All detected banner memberships already present — nothing to update"
+  );
 }
 
 /**
