@@ -146,6 +146,12 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   // Cat is directly in its Uber Rare roster. This is an abbreviated banner
   // label for the same event as "超古代勇者ウルトラソウルズ" above.
   ウルトラ: "Ancient Heroes ULTRA SOULS",
+  // Confirmed via the wiki's "Cat Release Order" page (ground truth,
+  // covers every unit ID with its actual obtaining method): IDs 826-829
+  // are Cammy, Juri, Zangief Cat, and Jamie Cat, all obtained via "Street
+  // Fighter Collaboration" — this is the later rerun distinct from the
+  // base 2019 roster already mapped under "415  ストリートファイターⅤ".
+  ストファイ: "Street Fighter Collaboration Event",
 };
 
 /**
@@ -154,20 +160,6 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  * here so the next person (or Claude) doesn't redo this research from
  * scratch:
  *
- * - "ストファイ" (a later Street Fighter rerun, unit IDs 826-829 in the
- *   14.7.0 snapshot available): the user supplied the actual wiki pages
- *   for both team rosters, which confirmed the full current lineup —
- *   Blue Team: Blanka, Dhalsim, Ken, E. Honda, Sagat, M. Bison, Luke, Juri
- *   (+ Akuma); Red Team: Ryu, Chun-Li, Guile, Zangief, Balrog, Vega,
- *   Sakura, Cammy (+ Akuma). That also confirms Vega genuinely belongs to
- *   Street Fighter Red Team (resolves the "Lady of Deception Vega" report
- *   from Reddit as correct data, not a bug — her evolved form under that
- *   name is presumably the same base Vega unit here). Still couldn't map
- *   BCData's 826-829 to these specific names though, since the 14.7.0
- *   snapshot has them unnamed — likely predates this particular rerun
- *   entirely (Champion Edition-era Street Fighter characters like Luke/
- *   Juri/Cammy are recent). Needs an actual sync against live/current
- *   BCData to resolve, not something a wiki printout can fix.
  * - "にゃんパズル＆ねば～る君" (old puzzle-game tie-in promo): not present
  *   in the current wiki navbox at all — likely delisted long ago.
  */
