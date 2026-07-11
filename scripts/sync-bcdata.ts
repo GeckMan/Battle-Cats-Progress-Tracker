@@ -411,6 +411,28 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
 const GATYA_SET_FILES = ["GatyaDataSetE1.csv", "GatyaDataSetN1.csv", "GatyaDataSetR1.csv"];
 const COLLAB_MARKER = "コラボ";
 
+// Diagnostic for when GATYA_SET_FILES yields nothing — rather than just
+// logging "may be missing or reformatted" and leaving it at that (which is
+// exactly what happened silently for the 15.4.0 BCData snapshot: these
+// exact filenames stopped resolving and every downstream feature that
+// depends on them — collab detection, gacha set assignment, banner
+// membership — quietly no-op'd every run since, with no visibility into
+// why). This prints what's ACTUALLY in DataLocal so the real rename/move
+// is visible in the next run's log instead of having to guess blind.
+function logGatyaFileDiagnostics(dataLocal: string) {
+  try {
+    const entries = readdirSync(dataLocal);
+    const candidates = entries.filter((f) => /gatya/i.test(f));
+    if (candidates.length > 0) {
+      console.log(`    Files in DataLocal matching /gatya/i (${candidates.length}): ${candidates.slice(0, 20).join(", ")}${candidates.length > 20 ? " …and more" : ""}`);
+    } else {
+      console.log(`    No files in DataLocal match /gatya/i at all — checked ${entries.length} total entries in ${dataLocal}`);
+    }
+  } catch (e) {
+    console.log(`    Could not list DataLocal for diagnostics: ${(e as Error).message}`);
+  }
+}
+
 function parseGatyaSetFile(content: string): { unitIds: number[]; label: string }[] {
   return content
     .split("\n")
@@ -459,6 +481,7 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
     console.log(
       "  ⚠ No コラボ-marked gacha banners found — GatyaDataSet*.csv may be missing or reformatted in this BCData snapshot, skipping"
     );
+    logGatyaFileDiagnostics(dataLocal);
   } else {
     console.log(`  Detected ${collabIds.size} unit(s) across all-time コラボ-labeled gacha banners`);
 
@@ -620,6 +643,7 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
   const families = detectEventFamilies(dataLocal);
   if (families.size === 0) {
     console.log("  ⚠ No event families detected — GatyaDataSet*.csv may be missing or reformatted, skipping");
+    logGatyaFileDiagnostics(dataLocal);
     return;
   }
   console.log(`  Detected ${families.size} distinct event famil(y/ies) from banner debut history`);
