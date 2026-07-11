@@ -124,11 +124,20 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  * here so the next person (or Claude) doesn't redo this research from
  * scratch:
  *
- * - "ストファイ" (2021 Street Fighter "Champion Edition" rerun, unit IDs
- *   826-829): confirmed via web search that this rerun split new units
- *   across a Red Team (Luke, Cammy) and Blue Team (Sakura, Juri), but the
- *   BCData snapshot available had these 4 units unnamed, so which 2 of
- *   the 4 IDs are Red vs Blue could not be determined without guessing.
+ * - "ストファイ" (a later Street Fighter rerun, unit IDs 826-829 in the
+ *   14.7.0 snapshot available): the user supplied the actual wiki pages
+ *   for both team rosters, which confirmed the full current lineup —
+ *   Blue Team: Blanka, Dhalsim, Ken, E. Honda, Sagat, M. Bison, Luke, Juri
+ *   (+ Akuma); Red Team: Ryu, Chun-Li, Guile, Zangief, Balrog, Vega,
+ *   Sakura, Cammy (+ Akuma). That also confirms Vega genuinely belongs to
+ *   Street Fighter Red Team (resolves the "Lady of Deception Vega" report
+ *   from Reddit as correct data, not a bug — her evolved form under that
+ *   name is presumably the same base Vega unit here). Still couldn't map
+ *   BCData's 826-829 to these specific names though, since the 14.7.0
+ *   snapshot has them unnamed — likely predates this particular rerun
+ *   entirely (Champion Edition-era Street Fighter characters like Luke/
+ *   Juri/Cammy are recent). Needs an actual sync against live/current
+ *   BCData to resolve, not something a wiki printout can fix.
  * - "にゃんこ福引" / "2016にゃんこ福引" (Li'l-cat lottery capsules): no
  *   confident match found in the wiki's gacha event navbox.
  * - "極選抜祭" / "みんなが選んだ超選抜祭" / "海外版超選抜祭" (Selection
