@@ -138,6 +138,10 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   極選抜祭: "NEO Best of the Best",
   みんなが選んだ超選抜祭: "Best of the Best",
   海外版超選抜祭: "Best of the Best",
+  // Per direct user confirmation (2026-07-11): Baby Gao Cat's family
+  // belongs to Uber Fest, Shadow Gao Cat's family belongs to Epic Fest.
+  超ネコ祭: "Uber Fest",
+  極ネコ祭: "Epic Fest",
 };
 
 /**
@@ -162,8 +166,6 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  *   BCData to resolve, not something a wiki printout can fix.
  * - "にゃんパズル＆ねば～る君" (old puzzle-game tie-in promo): not present
  *   in the current wiki navbox at all — likely delisted long ago.
- * - "超ネコ祭" / "極ネコ祭" (Baby Gao / Shadow Gao festival pair): no
- *   confident match found.
  * - "ウルトラ" (single member: Hanasaka Cat): too ambiguous a label on its
  *   own to confidently tie to Ultra Souls or an Ultra Selection event.
  */
