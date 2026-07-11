@@ -431,6 +431,29 @@ function logGatyaFileDiagnostics(dataLocal: string) {
   } catch (e) {
     console.log(`    Could not list DataLocal for diagnostics: ${(e as Error).message}`);
   }
+
+  // The files themselves may exist (confirmed by the listing above) but
+  // still parse to zero rows if the row/comment format inside them
+  // changed — which is exactly what happened for BCData EN 15.4.0. Print
+  // the raw first few lines of each target file (with \r made visible) so
+  // the actual current format is visible in the log instead of guessing.
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) {
+      console.log(`    ${file}: does not exist at ${filePath}`);
+      continue;
+    }
+    try {
+      const raw = readFileSync(filePath, "utf-8");
+      const lines = raw.split("\n").slice(0, 5);
+      console.log(`    ${file} (${raw.length} bytes, ${raw.split("\n").length} lines) — first ${lines.length} raw line(s):`);
+      for (const [i, line] of lines.entries()) {
+        console.log(`      [${i}] ${JSON.stringify(line)}`);
+      }
+    } catch (e) {
+      console.log(`    ${file}: could not read — ${(e as Error).message}`);
+    }
+  }
 }
 
 function parseGatyaSetFile(content: string): { unitIds: number[]; label: string }[] {
