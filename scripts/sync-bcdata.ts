@@ -792,19 +792,32 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
  * debuted units) — the `banners` array exists specifically to capture ALL
  * of these, not just the debut one.
  *
- * This is what actually resolves a real bug reported on Reddit: "the
- * UBERFEST filter shows Uber Fest AND Almighties together" / "the
- * Almighties filter is very strange". Those two banners legitimately share
- * some units (the Gigant Zeus pool is drawn from both Uber Fest and The
- * Almighties), and a hardcoded migration years ago tried to represent that
- * overlap with a single ad-hoc 'UBERFEST' bucket that silently swallowed
- * the Almighties tag for anyone in both. Rather than guess at which units
- * currently overlap, this scans EVERY historical banner row (not just
- * debuts) and, for any row whose cleaned label has a resolved English name
- * (via the same static translation table, or reuses an already-curated
- * name it can recognize), adds that name to the `banners` array of every
- * member who's missing it — strictly additive, never touches setName,
- * never removes an existing banners entry.
+ * A Reddit report ("the UBERFEST filter shows Uber Fest AND Almighties
+ * together" / "the Almighties filter is very strange") was initially
+ * suspected to be exactly this kind of dropped dual-membership. It isn't:
+ * checked 2026-07-11 against the actual migration history and "The
+ * Almighties" (466, 731, 738, 830, 837 — Black Zeus, Daybreaker Izanagi,
+ * Izanami of Dusk, Raclesa the Lioness, Squire Luno) and "UBERFEST" (a
+ * disjoint 20-unit list) were deliberately defined as separate sets in
+ * 20260303000026, itself an explicit correction of an earlier, less
+ * reliable cat-guide-sourced classification that HAD wrongly lumped 12
+ * Uber Fest units under "Almighties". 20260304000027 (which built this
+ * very banners[] system) says as much directly: "No additional units
+ * needed since UBERFEST exclusives already get it from setName" — i.e.
+ * the overlap was considered and rejected at the time, not lost by
+ * accident. A same-day migration (20260711000007) mistakenly re-added
+ * that overlap and was reverted in 20260711000008 — don't reintroduce it
+ * without real evidence (a genuine shared banner row in live data).
+ *
+ * What this function DOES legitimately resolve: units that are re-offered
+ * later in unrelated evergreen banners (Best of the Best, RoyalFest,
+ * Busters, etc.) with a currently-resolvable label. It scans EVERY
+ * historical banner row (not just debuts) and, for any row whose cleaned
+ * label has a resolved English name (via the same static translation
+ * table, or reuses an already-curated name it can recognize), adds that
+ * name to the `banners` array of every member who's missing it — strictly
+ * additive, never touches setName, never removes an existing banners
+ * entry.
  */
 async function syncBannerMembership(prisma: PrismaClient, dataLocal: string) {
   const additions = new Map<number, Set<string>>();

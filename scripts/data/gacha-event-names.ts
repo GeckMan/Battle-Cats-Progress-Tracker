@@ -71,13 +71,14 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   ダークヒーローズ: "Justice Strikes Back! Dark Heroes",
   超激ダイナマイツセット: "The Dynamites",
   "ダイナマイツ＋４キャラ": "The Dynamites",
-  // "The Almighties" already exists live as the umbrella name for this
-  // whole recurring Gigant Zeus pool — matching it exactly (instead of a
-  // more specific invented name) is what actually fixes the Reddit-reported
-  // "Almighties filter is very strange" / "UBERFEST shows Uber Fest and
-  // Almighties together" bug once combined with the full-history banner
-  // membership sync below, which is what actually detects the real overlap
-  // between this pool and Uber Fest.
+  // "The Almighties" already exists live as the name for this specific
+  // recurring Gigant Zeus debut pool (Black Zeus, Daybreaker Izanagi,
+  // Izanami of Dusk, Raclesa the Lioness, Squire Luno — see
+  // 20260303000026) — matching it exactly here avoids fragmenting into a
+  // second, differently-worded duplicate. Note: this pool is NOT the same
+  // as Uber Fest and does not overlap with it (checked 2026-07-11 against
+  // migration history; see sync-bcdata.ts's syncBannerMembership doc
+  // comment for the full story of a same-day fix-then-revert here).
   究極降臨ギガントゼウス: "The Almighties",
   ギガントゼウス: "The Almighties",
   // Consolidated with the later rerun (see "ストファイ" below) under the
