@@ -499,6 +499,15 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
   // regressed — anything already isCollab=true stays that way — they just
   // won't be freshly auto-detected here. checkUnitClassificationCoverage()
   // below is the safety net for gaps like that.
+  //
+  // UPDATE 2026-07-11: as of BCData EN 15.4.0, every row's label is now ""
+  // (Ponos/fieryhenry stripped the dev comments retroactively — see the
+  // detailed note above detectEventFamilies()). That means this function
+  // can structurally never find a コラボ match again — there is nothing
+  // left to search. This isn't a bug to fix; existing isCollab flags are
+  // untouched (additive-only) and checkUnitClassificationCoverage() will
+  // flag any brand-new collab unit for manual review same as it always
+  // has for the harder cases above.
   const collabIds = detectCollabUnitIds(dataLocal);
   if (collabIds.size === 0) {
     console.log(
@@ -607,9 +616,35 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
 //     inconsistency to flag. That's a separate, harder audit problem
 //     (comparing existing labels against the real derived clusters. rather
 //     than just checking for gaps/conflicts) left for a future pass.
+//
+// IMPORTANT — discovered 2026-07-11: as of BCData EN 15.4.0, the trailing
+// "// <japanese label>" developer comment is gone from every single row in
+// GatyaDataSet{E,N,R}1.csv, including old historical rows that definitely
+// had one before (confirmed by diffing raw file content directly).
+// Ponos/fieryhenry stripped these retroactively, not just going forward.
+// This breaks two things structurally, not just cosmetically:
+//   1. detectCollabUnitIds()'s コラボ-marker check can never match anything
+//      again — there's no label left to search. Existing isCollab flags
+//      are unaffected (additive-only), but no NEW collab can be
+//      auto-detected via this method going forward. No workaround exists
+//      short of a different signal entirely.
+//   2. Every row's label cleans down to "", so the static translation
+//      table (scripts/data/gacha-event-names.ts) and syncBannerMembership()
+//      can never resolve a NEW family name either — there's nothing left
+//      to look up in the dictionary.
+// What's still salvageable without any label at all: units debuting
+// together in the exact same historical row can still inherit an already-
+// curated setName from a same-row sibling, since that only requires
+// knowing which unit IDs co-occurred, not what the row was called. That's
+// why unlabeled rows are still tracked below (via a synthetic per-row key
+// instead of being dropped) — this is what would resolve a case like Fuma
+// Kotaro if he shares a debut row with an already-named Sengoku Wargods
+// Vajiras member. It just can't invent an English name for a brand new,
+// never-before-seen event anymore; those get flagged for manual naming
+// same as always.
 interface DebutEvent {
   newUnitIds: number[];
-  cleanedLabel: string;
+  cleanedLabel: string; // "" when the source row has no label at all (see note above)
 }
 
 function cleanBannerLabel(label: string): string {
@@ -647,16 +682,28 @@ function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
       const newUnitIds = row.unitIds.filter((id) => !seen.has(id));
       for (const id of row.unitIds) seen.add(id);
       if (newUnitIds.length > 0) {
-        const cleanedLabel = cleanBannerLabel(row.label);
-        if (cleanedLabel) debutEvents.push({ newUnitIds, cleanedLabel });
+        // Previously this dropped the debut entirely when cleanedLabel was
+        // empty. As of BCData EN 15.4.0 that's every row (see note above),
+        // so dropping here would zero out event detection completely. Keep
+        // the debut either way — an empty label just means this row can
+        // only resolve via an already-curated name on a same-row sibling,
+        // never via the static dictionary (nothing to look up).
+        debutEvents.push({ newUnitIds, cleanedLabel: cleanBannerLabel(row.label) });
       }
     }
   }
 
   const families = new Map<string, Set<number>>();
+  let unlabeledIndex = 0;
   for (const ev of debutEvents) {
-    if (!families.has(ev.cleanedLabel)) families.set(ev.cleanedLabel, new Set());
-    const fam = families.get(ev.cleanedLabel)!;
+    // Rows with no label can't be safely merged with each other just
+    // because they share the same "" key — that would incorrectly treat
+    // every unlabeled historical debut across all of time as one giant
+    // family. Give each its own synthetic key instead, so grouping only
+    // ever happens within a single real historical row.
+    const key = ev.cleanedLabel || `__unlabeled_${unlabeledIndex++}`;
+    if (!families.has(key)) families.set(key, new Set());
+    const fam = families.get(key)!;
     for (const id of ev.newUnitIds) fam.add(id);
   }
   return families;
@@ -678,6 +725,9 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
   for (const [label, memberIds] of families.entries()) {
     if (memberIds.size < 2) continue; // a lone unit isn't a "set" to tie anything to
 
+    const isUnlabeled = label.startsWith("__unlabeled_");
+    const displayLabel = isUnlabeled ? "(no label in source data)" : `"${label}"`;
+
     const members = await (prisma as any).unit.findMany({
       where: { unitNumber: { in: [...memberIds] } },
       select: { unitNumber: true, name: true, setName: true, banners: true },
@@ -686,16 +736,18 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
 
     const namedSetNames = new Set(members.map((m: any) => m.setName).filter(Boolean));
     if (namedSetNames.size > 1) {
-      conflicts.push(`"${label}": ${[...namedSetNames].join(" vs ")}`);
+      conflicts.push(`${displayLabel}: ${[...namedSetNames].join(" vs ")}`);
       continue;
     }
 
     // No existing curated name on any member — fall back to the static
     // translation table (see scripts/data/gacha-event-names.ts) before
-    // giving up and flagging this as needing manual naming.
+    // giving up and flagging this as needing manual naming. Synthetic
+    // unlabeled keys never match the dictionary (nothing to look up),
+    // so they always fall straight through to "needs manual naming".
     let resolvedName = namedSetNames.size === 1 ? ([...namedSetNames][0] as string) : GACHA_EVENT_NAMES[label];
     if (!resolvedName) {
-      newFamilies.push(`"${label}" (${members.length} units, e.g. ${members[0].name})`);
+      newFamilies.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name})`);
       continue;
     }
     const toUpdate = members.filter((m: any) => !m.setName);
