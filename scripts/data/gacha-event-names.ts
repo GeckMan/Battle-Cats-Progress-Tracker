@@ -126,6 +126,18 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   // unit in that banner's roster is a pre-existing character from earlier
   // events, matching this BCData family's single-member size exactly.
   DL記念選抜ガチャ: "Best of the Best Milestone Edition",
+  // Confirmed via the wiki's "NEO Best of the Best" page (the v8.7+ rebrand
+  // of this evergreen anniversary-banner series): its current roster's
+  // Limited Uber Rare pair is Li'l Valkyrie Dark + Agent Staal — exactly 2
+  // of this family's 4 members, confirming the series. Using the plain
+  // "Best of the Best" name (not "NEO") since this BCData family dates to
+  // v7.2.0-8.6.0, before the v8.7 "NEO" rebrand existed. Li'l Valkyrie and
+  // Trixi the Merc are presumably from an earlier iteration of the same
+  // evergreen pool, consistent with how these anniversary banners reoffer
+  // previously-featured units release after release.
+  極選抜祭: "Best of the Best",
+  みんなが選んだ超選抜祭: "Best of the Best",
+  海外版超選抜祭: "Best of the Best",
 };
 
 /**
@@ -148,20 +160,6 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
  *   entirely (Champion Edition-era Street Fighter characters like Luke/
  *   Juri/Cammy are recent). Needs an actual sync against live/current
  *   BCData to resolve, not something a wiki printout can fix.
- * - "極選抜祭" / "みんなが選んだ超選抜祭" / "海外版超選抜祭" (Selection
- *   Festival family, v7.2.0-8.6.0 era, members: Li'l Valkyrie Dark, Agent
- *   Staal, Li'l Valkyrie, Trixi the Merc): NOT a match for any of "Excellent
- *   Selection" (Removed), "Ultra 4 Selection", or "Miracle 4 Selection" —
- *   the user supplied wiki printouts of all three and none contain any of
- *   this family's unit names. Notably, both Ultra 4 and Miracle 4 Selection
- *   explicitly say "for the old event, see here" on the wiki, linking to an
- *   older predecessor page that wasn't supplied — that older page (not
- *   these current rotating "Selection" gachas) is the likely real match,
- *   since these modern Selection-type events appear to just reoffer
- *   previously-debuted units (e.g. Hattori Hanzo and Maeda Keiji both show
- *   up across multiple different modern Selection rosters despite already
- *   having earlier, separate debut events) rather than introduce a distinct
- *   debut family of their own. Needs that specific "old event" page.
  * - "にゃんパズル＆ねば～る君" (old puzzle-game tie-in promo): not present
  *   in the current wiki navbox at all — likely delisted long ago.
  * - "超ネコ祭" / "極ネコ祭" (Baby Gao / Shadow Gao festival pair): no
