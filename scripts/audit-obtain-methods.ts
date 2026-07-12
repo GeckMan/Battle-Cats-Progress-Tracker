@@ -215,6 +215,11 @@ async function main() {
     // lines (e.g. region-split units) -- surfaced but not auto-proposed,
     // needs a human to pick.
     const ambiguous: string[] = [];
+    // 3. Units already flagged isCollab=true (whether by this script's own
+    // earlier run, or any other detection layer) but with no setName yet --
+    // once isCollab is fixed these stop showing up as "mismatches" above,
+    // so without this separate pass their naming gap would go invisible.
+    const unnamedCollabs: string[] = [];
     let noWikiRow = 0;
 
     for (const u of units) {
@@ -239,6 +244,16 @@ async function main() {
         );
       }
 
+      if (u.isCollab && !u.setName) {
+        const collabDetail = classified.filter((c) => c.isCollab).map((c) => c.detail).join(" / ") || classified.map((c) => c.detail).join(" / ");
+        const siblingMatches = findSiblingSetNameMatches(collabDetail, allSetNames);
+        const siblingNote =
+          siblingMatches.length > 0
+            ? `possible existing setName match: ${siblingMatches.map((s) => `"${s}"`).join(", ")}`
+            : "no existing setName in this DB shares a word with this collab -- wiki's own phrasing may be the only option";
+        unnamedCollabs.push(`${u.name} (#${u.unitNumber}): wiki says "${row.methodLines.join(" | ")}" — ${siblingNote}`);
+      }
+
       if (u.source === null && u.setName === null) {
         const distinctSources = new Set(classified.map((c) => c.source));
         if (classified.length === 1 && classified[0].source) {
@@ -257,6 +272,9 @@ async function main() {
 
     console.log(`\n  ⚠ ${collabMismatches.length} unit(s) look like missed collab flags (isCollab=false but wiki text says otherwise):`);
     for (const m of collabMismatches) console.log(`    - ${m}`);
+
+    console.log(`\n  ⚑ ${unnamedCollabs.length} unit(s) are isCollab=true but still have no setName:`);
+    for (const n of unnamedCollabs) console.log(`    - ${n}`);
 
     console.log(`\n  ○ ${proposedFills.length} unit(s) with no source/setName have a single unambiguous wiki method to propose:`);
     for (const p of proposedFills) console.log(`    - ${p}`);
