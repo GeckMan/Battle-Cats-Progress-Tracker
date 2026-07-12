@@ -1113,7 +1113,22 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
 
     const namedSetNames = new Set(members.map((m: any) => m.setName).filter(Boolean));
     if (namedSetNames.size > 1) {
-      conflicts.push(`${displayLabel}: ${[...namedSetNames].join(" vs ")}`);
+      // Previously only logged the two-or-more conflicting NAMES (e.g.
+      // "Brainwashed Cats vs June Bride"), with no way to tell which actual
+      // units were involved — useless for actually deciding which name is
+      // right without a database query. Now groups every member by its
+      // current setName so the log alone is enough to investigate (e.g.
+      // cross-reference specific unit numbers against a wiki page), the
+      // same evidence-first approach used for the Almighties fix.
+      const bySetName = new Map<string, string[]>();
+      for (const m of members) {
+        if (!m.setName) continue;
+        const list = bySetName.get(m.setName) ?? [];
+        list.push(`${m.name} (#${m.unitNumber})`);
+        bySetName.set(m.setName, list);
+      }
+      const detail = [...bySetName.entries()].map(([name, us]) => `"${name}": ${us.join(", ")}`).join("  |  ");
+      conflicts.push(`${displayLabel} — ${detail}`);
       continue;
     }
 
@@ -1174,9 +1189,10 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
     console.log(`    → Translate and set Unit.setName manually for one member; it'll propagate to the rest next sync.`);
   }
   if (conflicts.length > 0) {
-    console.log(
-      `  ⚠ Possible mislabeling: ${conflicts.length} event famil(y/ies) have members with different existing set names: ${conflicts.slice(0, 5).join("; ")}`
-    );
+    console.log(`  ⚠ Possible mislabeling: ${conflicts.length} event famil(y/ies) have members with different existing set names:`);
+    for (const c of conflicts) {
+      console.log(`    - ${c}`);
+    }
     console.log(`    → Worth a manual look — one of these is likely wrong (e.g. a unit filed under the wrong banner).`);
   }
 }
