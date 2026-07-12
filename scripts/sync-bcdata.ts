@@ -177,6 +177,7 @@ async function main() {
     await syncCollabFlagsFromCuratedNames(prisma);
 
     await checkUnitClassificationCoverage(prisma);
+    await checkBrainwashedCatsCoverage(prisma);
 
     // Step 4: Parse and sync legend stages
     console.log("\n── Syncing Legend Stages ──");
@@ -1384,6 +1385,57 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   console.log(`  ⚠ ${unclassified.length} unit(s) have no source, set, or collab classification: ${preview}${more}`);
   console.log(
     `    → These will show "How to Obtain: Unknown" in the app. Set Unit.source/setName manually if known.`
+  );
+}
+
+/**
+ * Dedicated coverage check for Brainwashed Cats, added 2026-07-12 after
+ * discovering checkUnitClassificationCoverage() above couldn't see this gap
+ * at all — it only flags units with setName === null, but every Brainwashed
+ * Cat unit already has a non-null setName (the old generic "Brainwashed
+ * Cats" placeholder from a pre-BCData-automation migration), so it silently
+ * passed that check even while still being wrong.
+ *
+ * The Battle Cats Wiki's Category:Brainwashed_Cats page confirms there are
+ * exactly 9 Brainwashed lines, one per base Normal Cat (Cat, Tank, Axe,
+ * Gross, Cow, Bird, Fish, Lizard, Titan). Only 4 of the 9 (Cow, Bird, Fish,
+ * Lizard) have been corrected so far (20260712000002/20260712000003) — those
+ * 4 got fixed specifically because they happened to share their real BCData
+ * debut row with an already-differently-named sibling, which is what
+ * surfaced them as a "possible mislabeling" conflict in the first place. The
+ * other 5 apparently never got that lucky co-occurrence, so they've been
+ * sitting on the generic "Brainwashed Cats" label indefinitely with no
+ * detection path at all until now. This check can't safely assign each of
+ * them a specific real seasonal name by itself (that needs the same kind of
+ * direct evidence used for the first 4 — a wiki page or a confirmed debut
+ * co-occurrence), so it just surfaces which ones still need that treatment.
+ */
+async function checkBrainwashedCatsCoverage(prisma: PrismaClient) {
+  const brainwashed = await (prisma as any).unit.findMany({
+    where: { name: { startsWith: "Brainwashed " } },
+    select: { unitNumber: true, name: true, setName: true, banners: true },
+    orderBy: { unitNumber: "asc" },
+  });
+
+  const stillGeneric = brainwashed.filter((u: any) => !u.setName || u.setName === "Brainwashed Cats");
+
+  if (brainwashed.length === 0) {
+    console.log("  ⚠ No units named \"Brainwashed ...\" found at all — check if the name prefix changed");
+    return;
+  }
+
+  if (stillGeneric.length === 0) {
+    console.log(`  Brainwashed Cats coverage: OK (all ${brainwashed.length} found units have a specific setName)`);
+    return;
+  }
+
+  console.log(
+    `  ⚠ ${stillGeneric.length}/${brainwashed.length} Brainwashed Cat unit(s) still have no specific seasonal setName: ${stillGeneric
+      .map((u: any) => `${u.name} (#${u.unitNumber}, setName=${u.setName ? `"${u.setName}"` : "null"})`)
+      .join(", ")}`
+  );
+  console.log(
+    `    → Needs the same evidence-based treatment as the other 4 (a wiki page naming its real seasonal event, or a confirmed BCData debut co-occurrence) — not a guess.`
   );
 }
 
