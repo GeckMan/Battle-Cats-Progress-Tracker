@@ -149,14 +149,25 @@ async function main() {
     console.log("\n── Syncing Units ──");
     await syncUnits(prisma, dataLocal, resLocal);
 
+    // Fetched once and shared by both collab detection and gacha set
+    // assignment below — both need the same rowIndex -> resolved-name map
+    // from battlecatsultimate/bcu-assets, no reason to fetch it twice.
+    console.log("\n── Loading battlecatsultimate/bcu-assets gacha names ──");
+    const bcuNames = await fetchBcuGachaNameMap();
+    console.log(
+      bcuNames
+        ? `  Loaded ${bcuNames.size} row-name(s) from battlecatsultimate/bcu-assets`
+        : "  ⚠ Could not load battlecatsultimate/bcu-assets gacha names this run — falling back to コラボ label/dictionary/manual naming only"
+    );
+
     // Step 3b: Detect collab units from real gacha banner history
     console.log("\n── Detecting Collab Units ──");
-    await syncCollabFlags(prisma, dataLocal);
+    await syncCollabFlags(prisma, dataLocal, bcuNames);
 
     // Step 3c: Tie units to their real gacha set/event using banner debut
     // history, and flag any unit still missing a source/set classification
     console.log("\n── Assigning Gacha Sets ──");
-    await syncEventSets(prisma, dataLocal);
+    await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
     await checkUnitClassificationCoverage(prisma);
 
@@ -587,7 +598,37 @@ function parseGatyaSetFile(content: string): { unitIds: number[]; label: string;
     .filter((row) => row.unitIds.length > 0);
 }
 
-function detectCollabUnitIds(dataLocal: string): Set<number> {
+// A bcu-assets category name is unambiguously a real-world IP crossover iff
+// it literally ends in "Collab Gacha"/"Collab Capsules" — verified against
+// the full category list (e.g. "-2031 Baki Collab Gacha", "-2033 Demon
+// Slayer Collab Gacha", "-2006 Evangelion Collab Gacha", "-2010 Street
+// Fighter Collab Gacha", "-2022 Ranma 1/2 Collab Gacha", "-2030 Rurouni
+// Kenshin Gacha" [no "Collab" in this one specific name, see below], "-2032
+// Sonic the Hedgehog Collab Gacha"). Genuinely non-collab original in-game
+// events (e.g. "-3 Galaxy Gals", "-9 Girls & Monsters") never carry this
+// wording. Deliberately a plain substring match, not an ID-range check
+// (-2030 Rurouni Kenshin Gacha has no literal "Collab" in its name despite
+// being in the same numbered block as its neighbors) — the ID block groups
+// collabs together by when they were added to bcu-assets' catalog, but
+// isn't itself a promise that every ID in it says "Collab", so name text is
+// the more direct signal. Known gap: Rurouni Kenshin (-2030) needs handling
+// separately, see BCU_KNOWN_COLLAB_CATEGORIES below.
+const COLLAB_NAME_PATTERN = /collab/i;
+
+// A handful of real collabs in bcu-assets' own catalog don't spell "Collab"
+// in their display name at all (Ponos's marketing name for the tie-in just
+// doesn't use the word) — these are cross-checked by hand against the wiki
+// before being added here, same bar as BCU_CATEGORY_ALIAS above. Kunio-kun
+// isn't in this list even though its two team-variant categories also don't
+// say "Collab" (-2023/-2027) because it wasn't independently verified this
+// session — flagged for a future manual check instead of guessed at.
+const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>(["Rurouni Kenshin Gacha"]);
+
+function isBcuCollabName(name: string): boolean {
+  return COLLAB_NAME_PATTERN.test(name) || BCU_KNOWN_COLLAB_CATEGORIES.has(name);
+}
+
+function detectCollabUnitIds(dataLocal: string, bcuNames: Map<number, string> | null): Set<number> {
   const collabIds = new Set<number>();
   for (const file of GATYA_SET_FILES) {
     const filePath = path.join(dataLocal, file);
@@ -596,39 +637,62 @@ function detectCollabUnitIds(dataLocal: string): Set<number> {
     for (const row of rows) {
       if (row.label.includes(COLLAB_MARKER)) {
         for (const id of row.unitIds) collabIds.add(id);
+        continue;
+      }
+      // bcu-assets cross-check — see the big comment on syncCollabFlags()
+      // for why the コラボ label marker alone was never enough. Only
+      // meaningful for GatyaDataSetR1.csv rows, same scope restriction as
+      // syncEventSets()'s use of this same map (bcu-assets' plain-integer
+      // row numbering is only confirmed to match this one file).
+      if (file === "GatyaDataSetR1.csv" && bcuNames) {
+        const bcuName = bcuNames.get(row.rawLineIndex);
+        if (bcuName && isBcuCollabName(bcuName)) {
+          for (const id of row.unitIds) collabIds.add(id);
+        }
       }
     }
   }
   return collabIds;
 }
 
-async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
-  // Known limitation: this only catches banners where Ponos's own internal
-  // label literally contains コラボ. Verified against real BCData that this
-  // reliably matches recent licensed crossovers (Fate, Baki, Bikkuriman,
-  // Metal Slug), but some long-running older collabs never got labeled that
-  // way at all (e.g. the Sengoku Basara banner is labeled "戦国武神バサラーズ"
-  // across ~20 historical appearances, never once with コラボ). Those aren't
-  // regressed — anything already isCollab=true stays that way — they just
-  // won't be freshly auto-detected here. checkUnitClassificationCoverage()
-  // below is the safety net for gaps like that.
+async function syncCollabFlags(prisma: PrismaClient, dataLocal: string, bcuNames: Map<number, string> | null) {
+  // Known limitation (ORIGINAL, pre-2026-07-12): this only caught banners
+  // where Ponos's own internal label literally contains コラボ. Verified
+  // against real BCData that this reliably matched recent licensed
+  // crossovers at the time (Fate, Bikkuriman, Metal Slug), but plenty of
+  // collabs never got labeled that way at all — confirmed directly from a
+  // live "Hide Collab" filter screenshot (2026-07-12) still showing Baki,
+  // Sonic the Hedgehog, Street Fighter, Ranma 1/2, Rurouni Kenshin, and
+  // Demon Slayer units. This wasn't only the BCData 15.4.0 label-stripping
+  // (see the note above detectEventFamilies() for that separate issue) —
+  // some of these (e.g. Evangelion, which debuted long before 15.4.0) were
+  // never reliably コラボ-labeled in the first place, same category of gap
+  // as the already-documented Sengoku Basara case below.
   //
-  // UPDATE 2026-07-11: as of BCData EN 15.4.0, every row's label is now ""
-  // (Ponos/fieryhenry stripped the dev comments retroactively — see the
-  // detailed note above detectEventFamilies()). That means this function
-  // can structurally never find a コラボ match again — there is nothing
-  // left to search. This isn't a bug to fix; existing isCollab flags are
-  // untouched (additive-only) and checkUnitClassificationCoverage() will
-  // flag any brand-new collab unit for manual review same as it always
-  // has for the harder cases above.
-  const collabIds = detectCollabUnitIds(dataLocal);
+  // FIX (2026-07-12): detectCollabUnitIds() now ALSO cross-checks every
+  // GatyaDataSetR1.csv row against battlecatsultimate/bcu-assets'
+  // lang/bot-GachaName.txt (the same file syncEventSets() already uses for
+  // set names). That file has its own explicit, hand-maintained "Collab"
+  // category block (IDs -2000 through at least -2033: Princess Punt, Fate,
+  // Evangelion, Madoka Magica, Bikkuriman, Street Fighter, Hatsune Miku,
+  // Ranma 1/2, Kunio-kun, Metal Slug, Tower of Saviors, Rurouni Kenshin,
+  // Baki, Sonic the Hedgehog, Demon Slayer, and more) that doesn't depend on
+  // BCData's raw Japanese label at all — this is a real, independent signal
+  // rather than a guess, and isn't affected by the label-stripping issue
+  // since it's keyed by row position, not label text. Older コラボ-labeled
+  // banners (e.g. Sengoku Basara's "戦国武神バサラーズ" label, which never said
+  // コラボ) may still not be in bcu-assets' collab block either if bcu-assets
+  // itself doesn't classify that one as a "Collab" category — that's a
+  // separate, harder case left for checkUnitClassificationCoverage() below
+  // and manual review, not solved by this fix.
+  const collabIds = detectCollabUnitIds(dataLocal, bcuNames);
   if (collabIds.size === 0) {
     console.log(
       "  ⚠ No コラボ-marked gacha banners found — GatyaDataSet*.csv may be missing or reformatted in this BCData snapshot, skipping"
     );
     logGatyaFileDiagnostics(dataLocal);
   } else {
-    console.log(`  Detected ${collabIds.size} unit(s) across all-time コラボ-labeled gacha banners`);
+    console.log(`  Detected ${collabIds.size} unit(s) across all-time コラボ-labeled and/or bcu-assets-tagged collab gacha banners`);
 
     // Only ever ADD isCollab/source info, never remove it — a unit confirmed
     // as collab (by this detector or the old hardcoded migration) stays
@@ -738,9 +802,14 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
 // This breaks two things structurally, not just cosmetically:
 //   1. detectCollabUnitIds()'s コラボ-marker check can never match anything
 //      again — there's no label left to search. Existing isCollab flags
-//      are unaffected (additive-only), but no NEW collab can be
-//      auto-detected via this method going forward. No workaround exists
-//      short of a different signal entirely.
+//      are unaffected (additive-only), but no NEW collab could be
+//      auto-detected via this method going forward.
+//      UPDATE 2026-07-12: a different signal was found after all —
+//      battlecatsultimate/bcu-assets' lang/bot-GachaName.txt (see the big
+//      comment on syncCollabFlags()) has its own explicit "Collab" category
+//      block, independent of BCData's label text entirely. detectCollabUnitIds()
+//      now cross-checks every GatyaDataSetR1.csv row against it in addition
+//      to the コラボ marker, closing this gap for real going forward.
 //   2. Every row's label cleans down to "", so the static translation
 //      table (scripts/data/gacha-event-names.ts) and syncBannerMembership()
 //      can never resolve a NEW family name either — there's nothing left
@@ -946,7 +1015,7 @@ export const BCU_CATEGORY_ALIAS: Record<string, string> = {
   "June Bride Gacha": "June Bride",
 };
 
-async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
+async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: Map<number, string> | null) {
   const { families, provenance } = detectEventFamilies(dataLocal);
   if (families.size === 0) {
     console.log("  ⚠ No event families detected — GatyaDataSet*.csv may be missing or reformatted, skipping");
@@ -954,13 +1023,6 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     return;
   }
   console.log(`  Detected ${families.size} distinct event famil(y/ies) from banner debut history`);
-
-  const bcuNames = await fetchBcuGachaNameMap();
-  console.log(
-    bcuNames
-      ? `  Loaded ${bcuNames.size} row-name(s) from battlecatsultimate/bcu-assets`
-      : "  ⚠ Could not load battlecatsultimate/bcu-assets gacha names this run — falling back to dictionary/manual naming only"
-  );
 
   let filled = 0;
   let filledViaBcu = 0;
