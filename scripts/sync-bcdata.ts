@@ -561,10 +561,10 @@ function investigateBannerDataSources(dataLocal: string, resLocal: string) {
   }
 }
 
-function parseGatyaSetFile(content: string): { unitIds: number[]; label: string }[] {
+function parseGatyaSetFile(content: string): { unitIds: number[]; label: string; rawLineIndex: number }[] {
   return content
     .split("\n")
-    .map((line) => {
+    .map((line, rawLineIndex) => {
       const commentIdx = line.indexOf("//");
       const dataPart = commentIdx >= 0 ? line.slice(0, commentIdx) : line;
       const label = commentIdx >= 0 ? line.slice(commentIdx + 2).trim() : "";
@@ -574,8 +574,16 @@ function parseGatyaSetFile(content: string): { unitIds: number[]; label: string 
         .filter((s) => s !== "" && s !== "-1")
         .map(Number)
         .filter((n) => Number.isFinite(n));
-      return { unitIds, label };
+      return { unitIds, label, rawLineIndex };
     })
+    // IMPORTANT: this filter must run AFTER rawLineIndex is captured above,
+    // not before — rawLineIndex has to reflect this row's true 0-based
+    // position in the raw file (matching the numbering used by
+    // battlecatsultimate/bcu-assets' lang/bot-GachaName.txt and by
+    // PackPack's GachaSet.java, both of which count every line including
+    // "-1"-only placeholder rows) — not its position in this already-
+    // filtered array, which would silently drift out of sync the moment
+    // any blank row appears earlier in the file.
     .filter((row) => row.unitIds.length > 0);
 }
 
@@ -754,52 +762,78 @@ interface DebutEvent {
   rowIndex: number; // 0-based line index within sourceFile
 }
 
-// EXPERIMENTAL (2026-07-12) — Ponos itself publicly hosts an official HTML
-// info page per rare-gacha row, at the same row-index numbering used by
-// GatyaDataSetR1.csv (confirmed by reading battlecatsultimate/PackPack's
-// source: GachaSet.java keys its parsed rows by raw 0-based line index, and
-// GachaSchedule.java's tryGetGachaName() looks up that exact same index
-// against this URL). Unlike PackPack's live-event-schedule fetcher (which
-// impersonates a real game client against Ponos's authenticated backend
-// using reverse-engineered keys — deliberately NOT reproduced here), this is
-// a plain, unauthenticated public GET to Ponos's own S3 bucket, the same
-// page a real player sees when tapping "info" on a gacha banner. No
-// scraping trick, no spoofed client, nothing BCData-adjacent tooling
-// doesn't already do.
+// BCU_GACHA_NAME_URL (2026-07-12) — supersedes the earlier Ponos public-HTML
+// experiment (removed; it went 0-for-10 against real unresolved families in
+// production, confirming it only covers current/very-recent banners, not
+// history). This is a fundamentally better source: battlecatsultimate/
+// bcu-assets is a plain public GitHub repo (no auth, no submodule needed —
+// found by asking the user to fetch battlecatsultimate/BCU_java_util_common
+// directly, which revealed the actual asset-download URLs in
+// common.io.assets.UpdateCheck) holding a hand-curated, community-maintained,
+// ID-keyed English name for every rare-tier gacha row since the file began.
+// Format per line (tab-separated): a numeric row ID (0-based, identical
+// numbering to GatyaDataSetR1.csv's raw line index — confirmed by
+// cross-checking known rows: 992 -> "-7" i.e. category -7, which resolves to
+// "The Almighties", exactly matching this session's independent wiki-sourced
+// fix; 1043/1044 -> "-2" i.e. "Wargods Vajiras", matching the Fuma Kotaro
+// fix; 1065 -> "-115" i.e. "June Bride Gacha", matching the Hanzo the
+// Betrothed fix) followed by EITHER a literal English name, or a negative
+// integer referencing one of the permanent category rows at the top of the
+// file (e.g. -7 = "The Almighties", -2 = "Wargods Vajiras") which itself
+// resolves to the real name. A third column (row numbers, or a "//comment")
+// is ignored here — not needed for name resolution.
 //
-// Unverified in practice: three manual test IDs (an old row from this
-// codebase's own history, a guessed recent-looking one) all came back
-// empty when tried directly. Ponos likely only keeps this page live for
-// banners that are current or very recently expired, not a permanent
-// archive — so this probably can't backfill old events, only possibly help
-// name brand new ones automatically going forward. Logged as a suggestion
-// only (never auto-applied to setName) until we've seen it produce a
-// confirmed-correct real result.
-const PONOS_GACHA_INFO_URL = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/gacha/rare_en_{ID}.html";
+// Scope: only the plain-integer (rare-tier / GatyaDataSetR1.csv) rows are
+// parsed. The file also has E<n>/N<n> prefixed rows for the extra/normal
+// tiers, but those are overwhelmingly generic item/catfruit/ticket capsules,
+// not unit gacha sets — out of scope for what syncEventSets() resolves.
+const BCU_GACHA_NAME_URL = "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-GachaName.txt";
 
-async function tryFetchOfficialGachaName(rowIndex: number): Promise<string | null> {
-  const id = String(rowIndex).padStart(3, "0");
-  const url = PONOS_GACHA_INFO_URL.replace("{ID}", id);
-
+async function fetchBcuGachaNameMap(): Promise<Map<number, string> | null> {
   try {
     const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 8000);
-    const res = await fetch(url, { signal: controller.signal });
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    const res = await fetch(BCU_GACHA_NAME_URL, { signal: controller.signal });
     clearTimeout(timeout);
 
     if (!res.ok) return null;
 
-    const html = await res.text();
-    const match = html.match(/<h2>[\s\S]+?<\/h2>/);
-    if (!match) return null;
+    const text = await res.text();
+    const categoryNames = new Map<number, string>();
+    const rowRefs = new Map<number, { name?: string; ref?: number }>();
 
-    const title = match[0]
-      .replace(/<h2>/, "")
-      .replace(/<\/h2>/, "")
-      .replace(/<span[\s\S]+?<\/span>/, "")
-      .trim();
+    for (const line of text.split("\n")) {
+      const cols = line.split("\t").map((c) => c.trim());
+      if (cols.length < 2 || cols[0] === "") continue;
 
-    return title || null;
+      const id = Number(cols[0]);
+      if (!Number.isFinite(id)) continue; // skips E<n>/N<n> rows — out of scope, see comment above
+
+      if (id < 0) {
+        // Category header row, e.g. "-7\tThe Almighties\t//Gods"
+        categoryNames.set(id, cols[1]);
+      } else {
+        // Row-instance line, e.g. "643\t-8\t632" (references category -8) or
+        // "100\tThe Dynamites" (literal name directly).
+        const second = cols[1];
+        const ref = Number(second);
+        if (Number.isFinite(ref) && ref < 0) {
+          rowRefs.set(id, { ref });
+        } else if (second) {
+          rowRefs.set(id, { name: second });
+        }
+      }
+    }
+
+    const resolved = new Map<number, string>();
+    for (const [rowId, entry] of rowRefs.entries()) {
+      if (entry.name) {
+        resolved.set(rowId, entry.name);
+      } else if (entry.ref !== undefined && categoryNames.has(entry.ref)) {
+        resolved.set(rowId, categoryNames.get(entry.ref)!);
+      }
+    }
+    return resolved;
   } catch {
     return null;
   }
@@ -836,7 +870,7 @@ function detectEventFamilies(dataLocal: string): {
     const filePath = path.join(dataLocal, file);
     if (!existsSync(filePath)) continue;
     const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
-    for (const [rowIndex, row] of rows.entries()) {
+    for (const row of rows) {
       // Generic "everything so far" catch-up banners would otherwise mark
       // hundreds of old units as "new" the first time one appears,
       // corrupting every subsequent debut comparison — track their
@@ -854,7 +888,12 @@ function detectEventFamilies(dataLocal: string): {
         // the debut either way — an empty label just means this row can
         // only resolve via an already-curated name on a same-row sibling,
         // never via the static dictionary (nothing to look up).
-        debutEvents.push({ newUnitIds, cleanedLabel: cleanBannerLabel(row.label), sourceFile: file, rowIndex });
+        debutEvents.push({
+          newUnitIds,
+          cleanedLabel: cleanBannerLabel(row.label),
+          sourceFile: file,
+          rowIndex: row.rawLineIndex,
+        });
       }
     }
   }
@@ -883,6 +922,30 @@ function detectEventFamilies(dataLocal: string): {
   return { families, provenance };
 }
 
+// High-confidence aliases from BCU's category naming convention to our own
+// existing DB naming convention, for the categories directly cross-checked
+// against real migration text this session (avoids fragmenting an existing
+// set into a second, differently-worded duplicate — e.g. BCU's "Wargods
+// Vajiras" for what our DB has always called "Sengoku Wargods Vajiras").
+// Deliberately does NOT include lower-confidence guesses (e.g. whether BCU's
+// "Halloween Gacha"/"Easter Gacha"/"Summer Gals" are really the same thing as
+// our "Halloween Capsules"/"Easter Carnival"/"Gals of Summer" or a distinct
+// banner) — unmapped BCU names are used as-is, same as any brand-new name.
+const BCU_CATEGORY_ALIAS: Record<string, string> = {
+  "Wargods Vajiras": "Sengoku Wargods Vajiras",
+  "Galaxy Gals": "Cyber Academy Galaxy Gals",
+  "Dragon Emperors": "Lords of Destruction Dragon Emperors",
+  "Ultra Souls": "Ancient Heroes Ultra Souls",
+  "Dark Heroes": "Justice Strikes Back! Dark Heroes",
+  "Iron Legion": "Frontline Assault Iron Legion",
+  "Girls & Monsters": "Girls & Monsters: Angels of Terror",
+  "Elemental Pixies": "Nature's Guardians Elemental Pixies",
+  "Luga Families": "Tales of the Nekoluga",
+  Uberfest: "Uber Fest",
+  Epicfest: "Epic Fest",
+  "June Bride Gacha": "June Bride",
+};
+
 async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
   const { families, provenance } = detectEventFamilies(dataLocal);
   if (families.size === 0) {
@@ -892,10 +955,17 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
   }
   console.log(`  Detected ${families.size} distinct event famil(y/ies) from banner debut history`);
 
+  const bcuNames = await fetchBcuGachaNameMap();
+  console.log(
+    bcuNames
+      ? `  Loaded ${bcuNames.size} row-name(s) from battlecatsultimate/bcu-assets`
+      : "  ⚠ Could not load battlecatsultimate/bcu-assets gacha names this run — falling back to dictionary/manual naming only"
+  );
+
   let filled = 0;
+  let filledViaBcu = 0;
   const newFamilies: string[] = [];
   const conflicts: string[] = [];
-  const ponosSuggestions: string[] = [];
 
   for (const [label, memberIds] of families.entries()) {
     if (memberIds.size < 2) continue; // a lone unit isn't a "set" to tie anything to
@@ -921,21 +991,25 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     // unlabeled keys never match the dictionary (nothing to look up),
     // so they always fall straight through to "needs manual naming".
     let resolvedName = namedSetNames.size === 1 ? ([...namedSetNames][0] as string) : GACHA_EVENT_NAMES[label];
-    if (!resolvedName) {
-      newFamilies.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name})`);
+    let viaBcu = false;
 
-      // Experimental: see the big comment above tryFetchOfficialGachaName().
+    if (!resolvedName && bcuNames) {
       // Only meaningful for a single-row (unlabeled) family whose row came
-      // from the rare-tier file, since that's the only URL pattern
-      // confirmed from PackPack's source. Log-only — never auto-applied.
+      // from the rare-tier file — that's the only numbering scheme
+      // bot-GachaName.txt's plain integer rows are confirmed to match (see
+      // the big comment above fetchBcuGachaNameMap()).
       const prov = provenance.get(label);
       if (prov && prov.sourceFile === "GatyaDataSetR1.csv") {
-        const officialName = await tryFetchOfficialGachaName(prov.rowIndex);
-        if (officialName) {
-          ponosSuggestions.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name}) → Ponos's own page says "${officialName}" (row ${prov.rowIndex})`);
+        const bcuName = bcuNames.get(prov.rowIndex);
+        if (bcuName) {
+          resolvedName = BCU_CATEGORY_ALIAS[bcuName] ?? bcuName;
+          viaBcu = true;
         }
       }
+    }
 
+    if (!resolvedName) {
+      newFamilies.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name})`);
       continue;
     }
     const toUpdate = members.filter((m: any) => !m.setName);
@@ -949,11 +1023,15 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
         },
       });
       filled++;
+      if (viaBcu) filledViaBcu++;
     }
   }
 
   if (filled > 0) {
-    console.log(`  ✓ Assigned an existing set name to ${filled} previously-unclassified unit(s)`);
+    console.log(
+      `  ✓ Assigned an existing set name to ${filled} previously-unclassified unit(s)` +
+        (filledViaBcu > 0 ? ` (${filledViaBcu} via battlecatsultimate/bcu-assets)` : "")
+    );
   } else {
     console.log("  No units needed a set assignment this run");
   }
@@ -962,13 +1040,6 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     const more = newFamilies.length > 10 ? " …and more" : "";
     console.log(`  ⚠ ${newFamilies.length} event famil(y/ies) have no existing curated name yet: ${preview}${more}`);
     console.log(`    → Translate and set Unit.setName manually for one member; it'll propagate to the rest next sync.`);
-  }
-  if (ponosSuggestions.length > 0) {
-    console.log(`  🔎 Experimental: Ponos's own public gacha-info page had a title for ${ponosSuggestions.length} unresolved famil(y/ies):`);
-    for (const s of ponosSuggestions.slice(0, 10)) {
-      console.log(`      ${s}`);
-    }
-    console.log(`    → Unverified data source (see comment above tryFetchOfficialGachaName) — please eyeball these before trusting them, then set Unit.setName manually if correct.`);
   }
   if (conflicts.length > 0) {
     console.log(
