@@ -20,10 +20,10 @@
  * done by hand this session.
  *
  * Scope, same as syncEventSets(): only unlabeled (no "// <label>" comment),
- * single-row debut families whose row came from GatyaDataSetR1.csv have an
- * unambiguous bcu-assets row-index mapping. Labeled families and E/N-tier
- * rows are out of scope (see the big comment on fetchBcuGachaNameMap() in
- * sync-bcdata.ts for why).
+ * single-row debut families whose row came from GatyaDataSetR1.csv or
+ * GatyaDataSetE1.csv have an unambiguous bcu-assets row-index mapping.
+ * Labeled families and N-tier rows are out of scope (see the big comment on
+ * fetchBcuGachaNameMap() in sync-bcdata.ts for why).
  *
  * Run manually via: npx tsx ./scripts/audit-gacha-names.ts
  * (needs DATABASE_URL/DIRECT_DATABASE_URL + real internet access — i.e. the
@@ -96,7 +96,7 @@ async function main() {
       console.error("  ✗ Could not load bcu-assets gacha names this run — aborting audit (nothing to compare against)");
       process.exit(1);
     }
-    console.log(`  Loaded ${bcuNames.size} row-name(s)`);
+    console.log(`  Loaded ${bcuNames.r.size} rare-tier + ${bcuNames.e.size} special-tier row-name(s)`);
 
     const mismatches: Mismatch[] = [];
     const willFill: WillFill[] = [];
@@ -106,9 +106,12 @@ async function main() {
     for (const [label, memberIds] of families.entries()) {
       if (!label.startsWith("__unlabeled_")) continue; // out of scope, see doc comment
       const prov = provenance.get(label);
-      if (!prov || prov.sourceFile !== "GatyaDataSetR1.csv") continue; // out of scope
+      if (!prov) continue;
+      const byRowIndex =
+        prov.sourceFile === "GatyaDataSetR1.csv" ? bcuNames.r : prov.sourceFile === "GatyaDataSetE1.csv" ? bcuNames.e : null;
+      if (!byRowIndex) continue; // out of scope (N-tier or unrecognized source file)
 
-      const rawBcuName = bcuNames.get(prov.rowIndex);
+      const rawBcuName = byRowIndex.get(prov.rowIndex);
       if (!rawBcuName) continue; // bcu-assets has no entry for this row either
 
       const resolvedBcuName = BCU_CATEGORY_ALIAS[rawBcuName] ?? rawBcuName;

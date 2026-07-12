@@ -156,7 +156,7 @@ async function main() {
     const bcuNames = await fetchBcuGachaNameMap();
     console.log(
       bcuNames
-        ? `  Loaded ${bcuNames.size} row-name(s) from battlecatsultimate/bcu-assets`
+        ? `  Loaded ${bcuNames.r.size} rare-tier + ${bcuNames.e.size} special-tier row-name(s) from battlecatsultimate/bcu-assets`
         : "  ⚠ Could not load battlecatsultimate/bcu-assets gacha names this run — falling back to コラボ label/dictionary/manual naming only"
     );
 
@@ -618,17 +618,20 @@ const COLLAB_NAME_PATTERN = /collab/i;
 // A handful of real collabs in bcu-assets' own catalog don't spell "Collab"
 // in their display name at all (Ponos's marketing name for the tie-in just
 // doesn't use the word) — these are cross-checked by hand against the wiki
-// before being added here, same bar as BCU_CATEGORY_ALIAS above. Kunio-kun
-// isn't in this list even though its two team-variant categories also don't
-// say "Collab" (-2023/-2027) because it wasn't independently verified this
-// session — flagged for a future manual check instead of guessed at.
-const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>(["Rurouni Kenshin Gacha"]);
+// (or, for "Baki Hanma Capsules", directly against BCData's own pre-15.4.0
+// Japanese label "刃牙" = "Baki" — see the big comment on
+// fetchBcuGachaNameMap()) before being added here, same bar as
+// BCU_CATEGORY_ALIAS above. Kunio-kun isn't in this list even though its two
+// team-variant categories also don't say "Collab" (-2023/-2027) because it
+// wasn't independently verified this session — flagged for a future manual
+// check instead of guessed at.
+const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>(["Rurouni Kenshin Gacha", "Baki Hanma Capsules"]);
 
 function isBcuCollabName(name: string): boolean {
   return COLLAB_NAME_PATTERN.test(name) || BCU_KNOWN_COLLAB_CATEGORIES.has(name);
 }
 
-function detectCollabUnitIds(dataLocal: string, bcuNames: Map<number, string> | null): Set<number> {
+function detectCollabUnitIds(dataLocal: string, bcuNames: BcuGachaNames | null): Set<number> {
   const collabIds = new Set<number>();
   for (const file of GATYA_SET_FILES) {
     const filePath = path.join(dataLocal, file);
@@ -640,12 +643,13 @@ function detectCollabUnitIds(dataLocal: string, bcuNames: Map<number, string> | 
         continue;
       }
       // bcu-assets cross-check — see the big comment on syncCollabFlags()
-      // for why the コラボ label marker alone was never enough. Only
-      // meaningful for GatyaDataSetR1.csv rows, same scope restriction as
-      // syncEventSets()'s use of this same map (bcu-assets' plain-integer
-      // row numbering is only confirmed to match this one file).
-      if (file === "GatyaDataSetR1.csv" && bcuNames) {
-        const bcuName = bcuNames.get(row.rawLineIndex);
+      // for why the コラボ label marker alone was never enough. Covers both
+      // GatyaDataSetR1.csv (bcuNames.r) and GatyaDataSetE1.csv (bcuNames.e) —
+      // same scope restriction as syncEventSets()'s use of this same map
+      // (N-tier rows confirmed generic, see fetchBcuGachaNameMap()).
+      if (bcuNames) {
+        const byRowIndex = file === "GatyaDataSetR1.csv" ? bcuNames.r : file === "GatyaDataSetE1.csv" ? bcuNames.e : null;
+        const bcuName = byRowIndex?.get(row.rawLineIndex);
         if (bcuName && isBcuCollabName(bcuName)) {
           for (const id of row.unitIds) collabIds.add(id);
         }
@@ -655,7 +659,7 @@ function detectCollabUnitIds(dataLocal: string, bcuNames: Map<number, string> | 
   return collabIds;
 }
 
-async function syncCollabFlags(prisma: PrismaClient, dataLocal: string, bcuNames: Map<number, string> | null) {
+async function syncCollabFlags(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {
   // Known limitation (ORIGINAL, pre-2026-07-12): this only caught banners
   // where Ponos's own internal label literally contains コラボ. Verified
   // against real BCData that this reliably matched recent licensed
@@ -852,13 +856,37 @@ interface DebutEvent {
 // resolves to the real name. A third column (row numbers, or a "//comment")
 // is ignored here — not needed for name resolution.
 //
-// Scope: only the plain-integer (rare-tier / GatyaDataSetR1.csv) rows are
-// parsed. The file also has E<n>/N<n> prefixed rows for the extra/normal
-// tiers, but those are overwhelmingly generic item/catfruit/ticket capsules,
-// not unit gacha sets — out of scope for what syncEventSets() resolves.
+// Scope: the plain-integer (rare-tier / GatyaDataSetR1.csv) rows AND the
+// "E<n>"-prefixed (special-tier / GatyaDataSetE1.csv) rows are both parsed —
+// N<n>-prefixed rows are still skipped (confirmed genuinely generic: every
+// single N-tier entry in the file is "Item/Catfruit/Catamin/Cats Eye/Lucky
+// Ticket/G Ticket Capsules", nothing unit-specific).
+//
+// E-tier was ORIGINALLY assumed to be "overwhelmingly generic" too and left
+// out entirely — that assumption was wrong. Verified 2026-07-12 two
+// independent ways against the frozen pre-15.4.0 GitHub mirror (which still
+// has BCData's original Japanese labels, unlike the live Forgejo source —
+// see cloneOrPull()'s comment for why that mirror is never used for actual
+// syncing, only safe to read here as a one-off manual cross-check):
+//   - GatyaDataSetE1.csv row 39 (0-based): "796,797,798,-1, //39:【14.3.0】
+//     刃牙（伝説のダンベル）" — 刃牙 is literally "Baki" — matches bcu-assets'
+//     "E39\tBaki Hanma Capsules" exactly.
+//   - GatyaDataSetE1.csv row 41: "…ねこなつパラダイス編…" ("Cat Summer
+//     Vacation, Paradise Edition") — matches bcu-assets' "E41\tSummer Break
+//     Capsules Paradise" exactly, and independently confirmed by the Battle
+//     Cats Wiki's own "Maneki Cat" page, which names "Summer Break Cats
+//     Paradise" as one of Maneki Cat's two real gachas.
+// Same numbering scheme as the plain-integer rows: "E<n>" is the 0-based
+// raw line index within GatyaDataSetE1.csv specifically, not a separate ID
+// space that happens to share the "E" prefix with something else.
 const BCU_GACHA_NAME_URL = "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-GachaName.txt";
 
-export async function fetchBcuGachaNameMap(): Promise<Map<number, string> | null> {
+export interface BcuGachaNames {
+  r: Map<number, string>; // GatyaDataSetR1.csv row index -> resolved name
+  e: Map<number, string>; // GatyaDataSetE1.csv row index -> resolved name
+}
+
+export async function fetchBcuGachaNameMap(): Promise<BcuGachaNames | null> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
@@ -869,40 +897,52 @@ export async function fetchBcuGachaNameMap(): Promise<Map<number, string> | null
 
     const text = await res.text();
     const categoryNames = new Map<number, string>();
-    const rowRefs = new Map<number, { name?: string; ref?: number }>();
+    const rowRefsR = new Map<number, { name?: string; ref?: number }>();
+    const rowRefsE = new Map<number, { name?: string; ref?: number }>();
 
     for (const line of text.split("\n")) {
       const cols = line.split("\t").map((c) => c.trim());
       if (cols.length < 2 || cols[0] === "") continue;
 
-      const id = Number(cols[0]);
-      if (!Number.isFinite(id)) continue; // skips E<n>/N<n> rows — out of scope, see comment above
+      const rawId = cols[0];
+      const second = cols[1];
+      const ref = Number(second);
+      const entry = Number.isFinite(ref) && ref < 0 ? { ref } : second ? { name: second } : null;
+
+      if (rawId.startsWith("E")) {
+        const eId = Number(rawId.slice(1));
+        if (Number.isFinite(eId) && entry) rowRefsE.set(eId, entry);
+        continue;
+      }
+      if (rawId.startsWith("N")) continue; // confirmed generic, see comment above
+
+      const id = Number(rawId);
+      if (!Number.isFinite(id)) continue;
 
       if (id < 0) {
-        // Category header row, e.g. "-7\tThe Almighties\t//Gods"
-        categoryNames.set(id, cols[1]);
-      } else {
+        // Category header row, e.g. "-7\tThe Almighties\t//Gods" — shared
+        // across both R-tier and E-tier row references.
+        categoryNames.set(id, second);
+      } else if (entry) {
         // Row-instance line, e.g. "643\t-8\t632" (references category -8) or
         // "100\tThe Dynamites" (literal name directly).
-        const second = cols[1];
-        const ref = Number(second);
-        if (Number.isFinite(ref) && ref < 0) {
-          rowRefs.set(id, { ref });
-        } else if (second) {
-          rowRefs.set(id, { name: second });
-        }
+        rowRefsR.set(id, entry);
       }
     }
 
-    const resolved = new Map<number, string>();
-    for (const [rowId, entry] of rowRefs.entries()) {
-      if (entry.name) {
-        resolved.set(rowId, entry.name);
-      } else if (entry.ref !== undefined && categoryNames.has(entry.ref)) {
-        resolved.set(rowId, categoryNames.get(entry.ref)!);
+    function resolveAll(rowRefs: Map<number, { name?: string; ref?: number }>): Map<number, string> {
+      const resolved = new Map<number, string>();
+      for (const [rowId, entry] of rowRefs.entries()) {
+        if (entry.name) {
+          resolved.set(rowId, entry.name);
+        } else if (entry.ref !== undefined && categoryNames.has(entry.ref)) {
+          resolved.set(rowId, categoryNames.get(entry.ref)!);
+        }
       }
+      return resolved;
     }
-    return resolved;
+
+    return { r: resolveAll(rowRefsR), e: resolveAll(rowRefsE) };
   } catch {
     return null;
   }
@@ -1015,7 +1055,7 @@ export const BCU_CATEGORY_ALIAS: Record<string, string> = {
   "June Bride Gacha": "June Bride",
 };
 
-async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: Map<number, string> | null) {
+async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {
   const { families, provenance } = detectEventFamilies(dataLocal);
   if (families.size === 0) {
     console.log("  ⚠ No event families detected — GatyaDataSet*.csv may be missing or reformatted, skipping");
@@ -1057,16 +1097,16 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
 
     if (!resolvedName && bcuNames) {
       // Only meaningful for a single-row (unlabeled) family whose row came
-      // from the rare-tier file — that's the only numbering scheme
-      // bot-GachaName.txt's plain integer rows are confirmed to match (see
-      // the big comment above fetchBcuGachaNameMap()).
+      // from the rare-tier or special-tier file — the only two numbering
+      // schemes bot-GachaName.txt's "<int>" and "E<n>" rows are confirmed to
+      // match (see the big comment above fetchBcuGachaNameMap()).
       const prov = provenance.get(label);
-      if (prov && prov.sourceFile === "GatyaDataSetR1.csv") {
-        const bcuName = bcuNames.get(prov.rowIndex);
-        if (bcuName) {
-          resolvedName = BCU_CATEGORY_ALIAS[bcuName] ?? bcuName;
-          viaBcu = true;
-        }
+      const byRowIndex =
+        prov?.sourceFile === "GatyaDataSetR1.csv" ? bcuNames.r : prov?.sourceFile === "GatyaDataSetE1.csv" ? bcuNames.e : null;
+      const bcuName = prov ? byRowIndex?.get(prov.rowIndex) : undefined;
+      if (bcuName) {
+        resolvedName = BCU_CATEGORY_ALIAS[bcuName] ?? bcuName;
+        viaBcu = true;
       }
     }
 
