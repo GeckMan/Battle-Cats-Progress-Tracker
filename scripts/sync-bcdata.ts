@@ -177,7 +177,12 @@ async function main() {
     await syncCollabFlagsFromCuratedNames(prisma);
 
     await checkUnitClassificationCoverage(prisma);
-    await checkBrainwashedCatsCoverage(prisma);
+    // Re-detect families here (cheap — just re-reads the already-cloned
+    // CSVs) so the coverage check can look up debut-row siblings for any
+    // still-unresolved Brainwashed Cat units, without changing
+    // syncEventSets()'s own internal signature/behavior.
+    const { families: brainwashedFamilies, provenance: brainwashedProvenance } = detectEventFamilies(dataLocal);
+    await checkBrainwashedCatsCoverage(prisma, brainwashedFamilies, brainwashedProvenance);
 
     // Step 4: Parse and sync legend stages
     console.log("\n── Syncing Legend Stages ──");
@@ -1410,7 +1415,11 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
  * direct evidence used for the first 4 — a wiki page or a confirmed debut
  * co-occurrence), so it just surfaces which ones still need that treatment.
  */
-async function checkBrainwashedCatsCoverage(prisma: PrismaClient) {
+async function checkBrainwashedCatsCoverage(
+  prisma: PrismaClient,
+  families: Map<string, Set<number>>,
+  provenance: Map<string, FamilyProvenance>
+) {
   const brainwashed = await (prisma as any).unit.findMany({
     where: { name: { startsWith: "Brainwashed " } },
     select: { unitNumber: true, name: true, setName: true, banners: true },
@@ -1437,6 +1446,52 @@ async function checkBrainwashedCatsCoverage(prisma: PrismaClient) {
   console.log(
     `    → Needs the same evidence-based treatment as the other 4 (a wiki page naming its real seasonal event, or a confirmed BCData debut co-occurrence) — not a guess.`
   );
+
+  // Diagnostic (2026-07-12): the first 4 Brainwashed Cats were solved by
+  // finding the ONE other already-named unit each shared its real BCData
+  // debut row with. That evidence never surfaces in the "possible
+  // mislabeling" log above unless the shared family has 2+ DIFFERENT
+  // existing setNames — if these 5 debuted alongside units that are
+  // themselves still unnamed, or alongside each other, nothing gets
+  // flagged there at all even though the row itself is exactly the clue
+  // needed. So: look up each of these 5 units' own debut family directly
+  // (regardless of whether it was flagged as a conflict) and print every
+  // sibling + its current setName, so a human can go find that debut
+  // row's real event on the wiki the same way as before.
+  const stillGenericIds = new Set(stillGeneric.map((u: any) => u.unitNumber));
+  const familyByUnitId = new Map<number, string>();
+  for (const [label, memberIds] of families.entries()) {
+    for (const id of memberIds) {
+      if (stillGenericIds.has(id)) familyByUnitId.set(id, label);
+    }
+  }
+
+  console.log(`  Debut-family lookup for the ${stillGeneric.length} unresolved unit(s):`);
+  for (const u of stillGeneric) {
+    const label = familyByUnitId.get(u.unitNumber);
+    if (!label) {
+      console.log(`    - ${u.name} (#${u.unitNumber}): no debut family detected at all (not found in any GATYA_SET_FILES row)`);
+      continue;
+    }
+    const prov = provenance.get(label);
+    const memberIds = [...(families.get(label) ?? [])].filter((id) => id !== u.unitNumber);
+    if (memberIds.length === 0) {
+      console.log(
+        `    - ${u.name} (#${u.unitNumber}): debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) has no other members — debuted alone`
+      );
+      continue;
+    }
+    const siblings = await (prisma as any).unit.findMany({
+      where: { unitNumber: { in: memberIds } },
+      select: { unitNumber: true, name: true, setName: true },
+    });
+    const siblingDetail = siblings
+      .map((s: any) => `${s.name} (#${s.unitNumber}, setName=${s.setName ? `"${s.setName}"` : "null"})`)
+      .join(", ");
+    console.log(
+      `    - ${u.name} (#${u.unitNumber}): shares debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) with: ${siblingDetail}`
+    );
+  }
 }
 
 /**
