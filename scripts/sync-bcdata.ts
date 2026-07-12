@@ -268,6 +268,45 @@ function compareVersions(a: string, b: string): number {
 
 // ── Unit Sync ────────────────────────────────────────────────────────────────
 
+// BCData's Unit_Explanation*_en.csv genuinely contains a raw numeric-ID
+// placeholder (e.g. "730_1", "771-1") as the literal name field for these
+// 21 units, not a parsing bug on this project's side -- confirmed
+// 2026-07-12 while investigating why the app's unit search couldn't find
+// anything for "spirit" despite these units existing. They're Arena of
+// Honor "Spirit" fusion-material tokens tied to a specific Uber Rare
+// (used to power that Uber Rare up via dojo ranking rewards) that appear
+// to have never gotten a real localized name from Ponos's own source
+// data, so there's no future BCData version where this would just fix
+// itself. Names below are the Battle Cats Wiki's Cat Release Order page's
+// "Obtaining method" text for each (the only human-readable identifier
+// available for any of them), captured via the "Audit Obtain Methods"
+// workflow. Applied here (not just as a one-off migration) so a future
+// weekly sync's unconditional `name: u.name` upsert doesn't silently
+// revert these back to the placeholder the next time this runs.
+const UNIT_NAME_OVERRIDES: Record<number, string> = {
+  729: "Spirit of Master of Mind Soractes",
+  732: "Spirit of Daybreaker Izanagi",
+  734: "Spirit of Pegasa",
+  739: "Spirit of Izanami of Dusk",
+  755: "Spirit of Akechi Mitsuhide",
+  761: "Spirit of Gunduros",
+  764: "Spirit of Dynasaurus Cat",
+  770: "Spirit of Hanasaka Cat",
+  775: "Spirit of Mech Patrol Axel",
+  782: "Spirit of Mamoluga",
+  800: "Spirit of Mighty Morta-Loncha",
+  802: "Spirit of Master of Logic Newtone",
+  812: "Spirit of Victorious Skanda",
+  816: "Spirit of Moonshade Kaworu",
+  818: "Spirit of Komori",
+  821: "Spirit of Seaside Pegasa",
+  825: "Spirit of Sorceress Sidmi",
+  838: "Spirit of Squire Luno",
+  839: "Spirit of Lunos the Luminous",
+  855: "Spirit of Master of Selection Darvin",
+  860: "Spirit of Lone Moon Lunos",
+};
+
 interface ParsedUnit {
   unitNumber: number;
   name: string;
@@ -316,7 +355,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
       return name && name !== "＠" ? name : null;
     });
 
-    const name = formNames[0];
+    const name = UNIT_NAME_OVERRIDES[unitNumber] ?? formNames[0];
     if (!name) continue; // Skip units with no name
 
     // Use nyankoPictureBookData form count as the authoritative source.
