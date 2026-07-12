@@ -750,6 +750,59 @@ async function syncCollabFlags(prisma: PrismaClient, dataLocal: string) {
 interface DebutEvent {
   newUnitIds: number[];
   cleanedLabel: string; // "" when the source row has no label at all (see note above)
+  sourceFile: string;
+  rowIndex: number; // 0-based line index within sourceFile
+}
+
+// EXPERIMENTAL (2026-07-12) — Ponos itself publicly hosts an official HTML
+// info page per rare-gacha row, at the same row-index numbering used by
+// GatyaDataSetR1.csv (confirmed by reading battlecatsultimate/PackPack's
+// source: GachaSet.java keys its parsed rows by raw 0-based line index, and
+// GachaSchedule.java's tryGetGachaName() looks up that exact same index
+// against this URL). Unlike PackPack's live-event-schedule fetcher (which
+// impersonates a real game client against Ponos's authenticated backend
+// using reverse-engineered keys — deliberately NOT reproduced here), this is
+// a plain, unauthenticated public GET to Ponos's own S3 bucket, the same
+// page a real player sees when tapping "info" on a gacha banner. No
+// scraping trick, no spoofed client, nothing BCData-adjacent tooling
+// doesn't already do.
+//
+// Unverified in practice: three manual test IDs (an old row from this
+// codebase's own history, a guessed recent-looking one) all came back
+// empty when tried directly. Ponos likely only keeps this page live for
+// banners that are current or very recently expired, not a permanent
+// archive — so this probably can't backfill old events, only possibly help
+// name brand new ones automatically going forward. Logged as a suggestion
+// only (never auto-applied to setName) until we've seen it produce a
+// confirmed-correct real result.
+const PONOS_GACHA_INFO_URL = "https://ponos.s3.dualstack.ap-northeast-1.amazonaws.com/information/appli/battlecats/gacha/rare_en_{ID}.html";
+
+async function tryFetchOfficialGachaName(rowIndex: number): Promise<string | null> {
+  const id = String(rowIndex).padStart(3, "0");
+  const url = PONOS_GACHA_INFO_URL.replace("{ID}", id);
+
+  try {
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+    const res = await fetch(url, { signal: controller.signal });
+    clearTimeout(timeout);
+
+    if (!res.ok) return null;
+
+    const html = await res.text();
+    const match = html.match(/<h2>[\s\S]+?<\/h2>/);
+    if (!match) return null;
+
+    const title = match[0]
+      .replace(/<h2>/, "")
+      .replace(/<\/h2>/, "")
+      .replace(/<span[\s\S]+?<\/span>/, "")
+      .trim();
+
+    return title || null;
+  } catch {
+    return null;
+  }
 }
 
 function cleanBannerLabel(label: string): string {
@@ -767,7 +820,15 @@ function cleanBannerLabel(label: string): string {
     .trim();
 }
 
-function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
+interface FamilyProvenance {
+  sourceFile: string;
+  rowIndex: number;
+}
+
+function detectEventFamilies(dataLocal: string): {
+  families: Map<string, Set<number>>;
+  provenance: Map<string, FamilyProvenance>;
+} {
   const seen = new Set<number>();
   const debutEvents: DebutEvent[] = [];
 
@@ -775,7 +836,7 @@ function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
     const filePath = path.join(dataLocal, file);
     if (!existsSync(filePath)) continue;
     const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
-    for (const row of rows) {
+    for (const [rowIndex, row] of rows.entries()) {
       // Generic "everything so far" catch-up banners would otherwise mark
       // hundreds of old units as "new" the first time one appears,
       // corrupting every subsequent debut comparison — track their
@@ -793,12 +854,13 @@ function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
         // the debut either way — an empty label just means this row can
         // only resolve via an already-curated name on a same-row sibling,
         // never via the static dictionary (nothing to look up).
-        debutEvents.push({ newUnitIds, cleanedLabel: cleanBannerLabel(row.label) });
+        debutEvents.push({ newUnitIds, cleanedLabel: cleanBannerLabel(row.label), sourceFile: file, rowIndex });
       }
     }
   }
 
   const families = new Map<string, Set<number>>();
+  const provenance = new Map<string, FamilyProvenance>();
   let unlabeledIndex = 0;
   for (const ev of debutEvents) {
     // Rows with no label can't be safely merged with each other just
@@ -810,12 +872,19 @@ function detectEventFamilies(dataLocal: string): Map<string, Set<number>> {
     if (!families.has(key)) families.set(key, new Set());
     const fam = families.get(key)!;
     for (const id of ev.newUnitIds) fam.add(id);
+
+    // Only unlabeled (synthetic-keyed) families ever map to a single real
+    // row 1:1 — labeled families can span many historical rows merged
+    // together, so there's no single row index to attribute to them.
+    if (key.startsWith("__unlabeled_")) {
+      provenance.set(key, { sourceFile: ev.sourceFile, rowIndex: ev.rowIndex });
+    }
   }
-  return families;
+  return { families, provenance };
 }
 
 async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
-  const families = detectEventFamilies(dataLocal);
+  const { families, provenance } = detectEventFamilies(dataLocal);
   if (families.size === 0) {
     console.log("  ⚠ No event families detected — GatyaDataSet*.csv may be missing or reformatted, skipping");
     logGatyaFileDiagnostics(dataLocal);
@@ -826,6 +895,7 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
   let filled = 0;
   const newFamilies: string[] = [];
   const conflicts: string[] = [];
+  const ponosSuggestions: string[] = [];
 
   for (const [label, memberIds] of families.entries()) {
     if (memberIds.size < 2) continue; // a lone unit isn't a "set" to tie anything to
@@ -853,6 +923,19 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     let resolvedName = namedSetNames.size === 1 ? ([...namedSetNames][0] as string) : GACHA_EVENT_NAMES[label];
     if (!resolvedName) {
       newFamilies.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name})`);
+
+      // Experimental: see the big comment above tryFetchOfficialGachaName().
+      // Only meaningful for a single-row (unlabeled) family whose row came
+      // from the rare-tier file, since that's the only URL pattern
+      // confirmed from PackPack's source. Log-only — never auto-applied.
+      const prov = provenance.get(label);
+      if (prov && prov.sourceFile === "GatyaDataSetR1.csv") {
+        const officialName = await tryFetchOfficialGachaName(prov.rowIndex);
+        if (officialName) {
+          ponosSuggestions.push(`${displayLabel} (${members.length} units, e.g. ${members[0].name}) → Ponos's own page says "${officialName}" (row ${prov.rowIndex})`);
+        }
+      }
+
       continue;
     }
     const toUpdate = members.filter((m: any) => !m.setName);
@@ -879,6 +962,13 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
     const more = newFamilies.length > 10 ? " …and more" : "";
     console.log(`  ⚠ ${newFamilies.length} event famil(y/ies) have no existing curated name yet: ${preview}${more}`);
     console.log(`    → Translate and set Unit.setName manually for one member; it'll propagate to the rest next sync.`);
+  }
+  if (ponosSuggestions.length > 0) {
+    console.log(`  🔎 Experimental: Ponos's own public gacha-info page had a title for ${ponosSuggestions.length} unresolved famil(y/ies):`);
+    for (const s of ponosSuggestions.slice(0, 10)) {
+      console.log(`      ${s}`);
+    }
+    console.log(`    → Unverified data source (see comment above tryFetchOfficialGachaName) — please eyeball these before trusting them, then set Unit.setName manually if correct.`);
   }
   if (conflicts.length > 0) {
     console.log(
