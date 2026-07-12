@@ -793,21 +793,38 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
  * of these, not just the debut one.
  *
  * A Reddit report ("the UBERFEST filter shows Uber Fest AND Almighties
- * together" / "the Almighties filter is very strange") was initially
- * suspected to be exactly this kind of dropped dual-membership. It isn't:
- * checked 2026-07-11 against the actual migration history and "The
- * Almighties" (466, 731, 738, 830, 837 — Black Zeus, Daybreaker Izanagi,
- * Izanami of Dusk, Raclesa the Lioness, Squire Luno) and "UBERFEST" (a
- * disjoint 20-unit list) were deliberately defined as separate sets in
- * 20260303000026, itself an explicit correction of an earlier, less
- * reliable cat-guide-sourced classification that HAD wrongly lumped 12
- * Uber Fest units under "Almighties". 20260304000027 (which built this
- * very banners[] system) says as much directly: "No additional units
- * needed since UBERFEST exclusives already get it from setName" — i.e.
- * the overlap was considered and rejected at the time, not lost by
- * accident. A same-day migration (20260711000007) mistakenly re-added
- * that overlap and was reverted in 20260711000008 — don't reintroduce it
- * without real evidence (a genuine shared banner row in live data).
+ * together" / "the Almighties filter is very strange") turned out to be
+ * real, but not for the reason first assumed. This took three passes to
+ * get right (2026-07-11) — recorded here so it isn't re-litigated:
+ *
+ *   - Pass 1 (20260711000007): guessed that 12 Uber Fest units (257, 258,
+ *     259, 271, 272, 316, 439, 493, 534, 642, 723, 811) also belonged under
+ *     "The Almighties" and added the tag. Reverted (20260711000008) after
+ *     re-reading 20260304000027's own comment ("No additional units needed
+ *     since UBERFEST exclusives already get it from setName") as evidence
+ *     the overlap didn't exist.
+ *   - Pass 2 turned out to be the wrong call. The wiki's dedicated gacha
+ *     event page ("The Almighties: The Majestic Zeus") lists exactly those
+ *     same 12 units by name (Thunder God Zeus, Anubis the Protector,
+ *     Radiant Aphrodite, Shining Amaterasu, Splendid Ganesha, Wrathful
+ *     Poseidon, Empress Chronos, Hades the Punisher, Lucifer the Fallen,
+ *     Lightmother Aset, Victorious Skanda, Gaia the Creator) — and beyond
+ *     doubt, each one's own THIRD evolved form (20260303000022) is literally
+ *     named "Almighty Zeus" / "Almighty Anubis" / "Almighty Amaterasu" /
+ *     "Almighty Ganesha" / "Almighty Poseidon" / "Almighty Hades" /
+ *     "Almighty Lucifer" / "Almighty Aset". These 12 really are Almighties,
+ *     currently ALSO drawn from the Uber Fest evergreen pool — a genuine
+ *     dual membership, restored via setName='The Almighties' plus a kept
+ *     'Uber Fest' banners[] tag in 20260711000009.
+ *   - Meanwhile 466, 731, 738, 830, 837 (Black Zeus, Daybreaker Izanagi,
+ *     Izanami of Dusk, Raclesa the Lioness, Squire Luno) — a totally
+ *     unrelated group that 20260303000026 had separately mislabeled
+ *     "The Almighties" in a single erroneous statement — do NOT belong
+ *     there at all (none appear on the real Almighties wiki page, and none
+ *     of their evolved names contain "Almighty"). Confirmed directly from
+ *     each unit's own wiki page for Black Zeus (Bikkuriman Collaboration)
+ *     and Raclesa (Cyber Academy Galaxy Gals); restored all 5 to their
+ *     last known-good pre-20260303000026 classification in 20260711000009.
  *
  * What this function DOES legitimately resolve: units that are re-offered
  * later in unrelated evergreen banners (Best of the Best, RoyalFest,

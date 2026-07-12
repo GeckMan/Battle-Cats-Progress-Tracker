@@ -71,14 +71,17 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   ダークヒーローズ: "Justice Strikes Back! Dark Heroes",
   超激ダイナマイツセット: "The Dynamites",
   "ダイナマイツ＋４キャラ": "The Dynamites",
-  // "The Almighties" already exists live as the name for this specific
-  // recurring Gigant Zeus debut pool (Black Zeus, Daybreaker Izanagi,
-  // Izanami of Dusk, Raclesa the Lioness, Squire Luno — see
-  // 20260303000026) — matching it exactly here avoids fragmenting into a
-  // second, differently-worded duplicate. Note: this pool is NOT the same
-  // as Uber Fest and does not overlap with it (checked 2026-07-11 against
-  // migration history; see sync-bcdata.ts's syncBannerMembership doc
-  // comment for the full story of a same-day fix-then-revert here).
+  // "The Almighties" is the real gacha-event home (per the wiki's dedicated
+  // page) of Thunder God Zeus, Anubis the Protector, Radiant Aphrodite,
+  // Shining Amaterasu, Splendid Ganesha, Wrathful Poseidon, Empress Chronos,
+  // Hades the Punisher, Lucifer the Fallen, Lightmother Aset, Victorious
+  // Skanda, and Gaia the Creator — confirmed beyond doubt by their own
+  // third evolved forms literally being named "Almighty <name>" (see
+  // 20260303000022_add_form_names). It is NOT the home of Black Zeus,
+  // Daybreaker Izanagi, Izanami of Dusk, Raclesa the Lioness, or Squire
+  // Luno, despite 20260303000026 briefly mislabeling those five this way —
+  // see sync-bcdata.ts's syncBannerMembership doc comment for the full
+  // three-pass story (2026-07-11) of getting this right.
   究極降臨ギガントゼウス: "The Almighties",
   ギガントゼウス: "The Almighties",
   // Consolidated with the later rerun (see "ストファイ" below) under the
