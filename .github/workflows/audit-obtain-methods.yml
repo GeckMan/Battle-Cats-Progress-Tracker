@@ -1,0 +1,36 @@
+name: Audit Obtain Methods
+
+# One-time/manual diagnostic — NOT on a schedule. Fetches the Battle Cats
+# Wiki's "Cat Release Order" page (which lists a per-unit "Obtaining
+# method" — Rare Cat Capsule, Drop, Stamp Reward, Daily Login, Special
+# Sale, External App, etc., often naming the specific collab/set) and
+# cross-references it against every unit's current isCollab/source/setName
+# in the live database. Surfaces units that look mis-flagged as non-collab
+# and units with no source/set classification at all that the wiki has an
+# unambiguous obtaining method for. Read-only: makes no database writes and
+# no commits. Run from the Actions tab whenever a manual sanity check is
+# wanted (this is exactly how Kaoru Cat's missing collab flag was found by
+# hand on 2026-07-12, before this script existed).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Run obtain-method audit (read-only)
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/audit-obtain-methods.ts
