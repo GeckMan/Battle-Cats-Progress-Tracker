@@ -1,0 +1,32 @@
+name: Audit Gacha Names
+
+# One-time/manual diagnostic — NOT on a schedule. Compares bcu-assets'
+# resolved gacha name for every unlabeled rare-tier debut row against each
+# unit's CURRENT Unit.setName in the live database, and prints every
+# mismatch to the workflow log. Read-only: makes no database writes and no
+# commits. Run from the Actions tab whenever a manual sanity check against
+# bcu-assets is wanted (e.g. after finding one bad setName by hand, to see
+# if there are others like it).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Run gacha name audit (read-only)
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/audit-gacha-names.ts

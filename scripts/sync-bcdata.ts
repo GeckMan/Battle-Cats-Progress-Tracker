@@ -63,8 +63,8 @@ import { GACHA_EVENT_NAMES } from "./data/gacha-event-names.js";
 // Deliberately NOT including it — see cloneOrPull() below, which now fails
 // loudly instead of silently degrading to stale data.
 const BCDATA_REPO_URLS = ["https://git.battlecatsmodding.org/fieryhenry/BCData.git"];
-const CLONE_DIR = "/tmp/bcdata-sync";
-const REGION = "en";
+export const CLONE_DIR = "/tmp/bcdata-sync";
+export const REGION = "en";
 
 // Rarity ranges in unitbuy.csv (row index = unit ID)
 // The rarity is NOT a single column — it's determined by unit ID ranges
@@ -177,7 +177,7 @@ async function main() {
 
 // ── Git Operations ───────────────────────────────────────────────────────────
 
-function cloneOrPull() {
+export function cloneOrPull() {
   if (existsSync(path.join(CLONE_DIR, ".git"))) {
     console.log("  Pulling latest changes...");
     try {
@@ -211,7 +211,7 @@ function cloneOrPull() {
   );
 }
 
-function findLatestVersion(): string {
+export function findLatestVersion(): string {
   // Try game_data/en/ structure first (Forgejo repo)
   const gameDataEnDir = path.join(CLONE_DIR, "game_data", REGION);
   if (existsSync(gameDataEnDir)) {
@@ -789,7 +789,7 @@ interface DebutEvent {
 // not unit gacha sets — out of scope for what syncEventSets() resolves.
 const BCU_GACHA_NAME_URL = "https://raw.githubusercontent.com/battlecatsultimate/bcu-assets/master/lang/bot-GachaName.txt";
 
-async function fetchBcuGachaNameMap(): Promise<Map<number, string> | null> {
+export async function fetchBcuGachaNameMap(): Promise<Map<number, string> | null> {
   try {
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 15000);
@@ -854,12 +854,12 @@ function cleanBannerLabel(label: string): string {
     .trim();
 }
 
-interface FamilyProvenance {
+export interface FamilyProvenance {
   sourceFile: string;
   rowIndex: number;
 }
 
-function detectEventFamilies(dataLocal: string): {
+export function detectEventFamilies(dataLocal: string): {
   families: Map<string, Set<number>>;
   provenance: Map<string, FamilyProvenance>;
 } {
@@ -931,7 +931,7 @@ function detectEventFamilies(dataLocal: string): {
 // "Halloween Gacha"/"Easter Gacha"/"Summer Gals" are really the same thing as
 // our "Halloween Capsules"/"Easter Carnival"/"Gals of Summer" or a distinct
 // banner) — unmapped BCU names are used as-is, same as any brand-new name.
-const BCU_CATEGORY_ALIAS: Record<string, string> = {
+export const BCU_CATEGORY_ALIAS: Record<string, string> = {
   "Wargods Vajiras": "Sengoku Wargods Vajiras",
   "Galaxy Gals": "Cyber Academy Galaxy Gals",
   "Dragon Emperors": "Lords of Destruction Dragon Emperors",
