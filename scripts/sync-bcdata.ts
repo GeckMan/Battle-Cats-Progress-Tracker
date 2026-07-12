@@ -137,6 +137,14 @@ async function main() {
     const dataLocal = path.join(baseDir, "DataLocal");
     const resLocal = path.join(baseDir, "resLocal");
 
+    // Temporary: see the big comment on investigateBannerDataSources() —
+    // wrapped so a diagnostic-only investigation can never fail the sync.
+    try {
+      investigateBannerDataSources(dataLocal, resLocal);
+    } catch (e) {
+      console.log(`  Banner data investigation failed (non-fatal): ${(e as Error).message}`);
+    }
+
     // Step 3: Parse and sync units
     console.log("\n── Syncing Units ──");
     await syncUnits(prisma, dataLocal, resLocal);
@@ -452,6 +460,103 @@ function logGatyaFileDiagnostics(dataLocal: string) {
       }
     } catch (e) {
       console.log(`    ${file}: could not read — ${(e as Error).message}`);
+    }
+  }
+}
+
+// TEMPORARY INVESTIGATION (2026-07-11) — remove once we've learned what's
+// actually in here. GATYA_SET_FILES only reads the "*1.csv" tier of banner
+// data, and only from DataLocal; we've never looked at the "*2.csv"/"*3.csv"
+// siblings (confirmed present in the last sync's diagnostic listing), the
+// other gacha-adjacent files sitting right next to them (EventGatya_Setting,
+// Mission_NewGatyaSetting, EventGatyaMedamaItem, GatyaData_Option_Set*), or
+// resLocal at all for that matter — which is where every other piece of
+// human-readable text we DO use (unit names, legend stage names, medal
+// names/descriptions) actually lives. Since this sandbox can't reach
+// git.battlecatsmodding.org directly, this only runs where BCData is
+// actually cloned: inside the GitHub Action. Logs unconditionally (not
+// gated behind a failure branch) so it shows up on every manual trigger
+// until removed.
+function investigateBannerDataSources(dataLocal: string, resLocal: string) {
+  console.log("\n── Investigating banner/event name data sources (temporary) ──");
+
+  for (const [label, dir] of [
+    ["DataLocal", dataLocal],
+    ["resLocal", resLocal],
+  ] as const) {
+    try {
+      const entries = readdirSync(dir);
+      console.log(`  ${label}: ${entries.length} total entries`);
+      const interesting = entries.filter((f) =>
+        /gatya|gacha|event|title|banner|capsule|selection|festival|fest/i.test(f)
+      );
+      console.log(
+        `  ${label} entries matching gatya/gacha/event/title/banner/capsule/selection/fest(ival) (${interesting.length}): ${interesting.join(", ") || "(none)"}`
+      );
+    } catch (e) {
+      console.log(`  Could not list ${label}: ${(e as Error).message}`);
+    }
+  }
+
+  // The *2/*3 tiers we've never parsed — check whether they still carry a
+  // label at all (maybe only *1 lost it), and whether their unit-ID rows
+  // overlap meaningfully with what we already derive from *1.
+  const untriedGatyaFiles = [
+    "GatyaDataSetE2.csv",
+    "GatyaDataSetE3.csv",
+    "GatyaDataSetN2.csv",
+    "GatyaDataSetN3.csv",
+    "GatyaDataSetR2.csv",
+    "GatyaDataSetR3.csv",
+  ];
+  for (const file of untriedGatyaFiles) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) {
+      console.log(`  ${file}: does not exist`);
+      continue;
+    }
+    try {
+      const raw = readFileSync(filePath, "utf-8");
+      const lines = raw.split("\n");
+      const withLabel = lines.filter((l) => l.includes("//")).length;
+      console.log(
+        `  ${file} (${raw.length} bytes, ${lines.length} lines, ${withLabel} with a "//" comment) — first 3 raw line(s):`
+      );
+      for (const [i, line] of lines.slice(0, 3).entries()) {
+        console.log(`    [${i}] ${JSON.stringify(line)}`);
+      }
+    } catch (e) {
+      console.log(`  ${file}: could not read — ${(e as Error).message}`);
+    }
+  }
+
+  // Other gacha-adjacent files sitting next to GatyaDataSet* that we've
+  // never opened at all — sample enough to tell if any carry structured
+  // event names/titles/dates rather than just numeric tuning data.
+  const otherCandidates = [
+    "EventGatya_Setting.csv",
+    "Mission_NewGatyaSetting.json",
+    "EventGatyaMedamaItem.json",
+    "GatyaData_Option_SetE.tsv",
+    "GatyaData_Option_SetN.tsv",
+    "GatyaData_Option_SetR.tsv",
+    "Gatyaitembuy.csv",
+  ];
+  for (const file of otherCandidates) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) {
+      console.log(`  ${file}: does not exist`);
+      continue;
+    }
+    try {
+      const raw = readFileSync(filePath, "utf-8");
+      const lines = raw.split("\n").slice(0, 5);
+      console.log(`  ${file} (${raw.length} bytes) — first ${lines.length} raw line(s):`);
+      for (const [i, line] of lines.entries()) {
+        console.log(`    [${i}] ${JSON.stringify(line).slice(0, 300)}`);
+      }
+    } catch (e) {
+      console.log(`  ${file}: could not read — ${(e as Error).message}`);
     }
   }
 }
