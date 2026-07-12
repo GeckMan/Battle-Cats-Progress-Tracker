@@ -182,7 +182,7 @@ async function main() {
     // still-unresolved Brainwashed Cat units, without changing
     // syncEventSets()'s own internal signature/behavior.
     const { families: brainwashedFamilies, provenance: brainwashedProvenance } = detectEventFamilies(dataLocal);
-    await checkBrainwashedCatsCoverage(prisma, brainwashedFamilies, brainwashedProvenance);
+    await checkBrainwashedCatsCoverage(prisma, brainwashedFamilies, brainwashedProvenance, bcuNames);
 
     // Step 4: Parse and sync legend stages
     console.log("\n── Syncing Legend Stages ──");
@@ -1414,11 +1414,24 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
  * them a specific real seasonal name by itself (that needs the same kind of
  * direct evidence used for the first 4 — a wiki page or a confirmed debut
  * co-occurrence), so it just surfaces which ones still need that treatment.
+ *
+ * Extended 2026-07-12: for a lone debut (no co-occurring sibling at all —
+ * turned out to be all 5 of the remaining units), syncEventSets() itself
+ * never even looks up bcu-assets (it skips any row with `memberIds.size < 2`
+ * as "not a real set to tie anything to"), so that live, actively-maintained
+ * data source was never consulted for exactly the units that most needed it.
+ * This check now does that lookup directly and prints whatever category
+ * name bcu-assets has for that row as a LEAD (not an auto-applied fix — its
+ * category names are still broad recurring buckets like "Halloween Gacha"
+ * that may need the same kind of translation to this project's own naming
+ * convention that BCU_CATEGORY_ALIAS already does for other categories, and
+ * still deserve a wiki cross-check before a migration is written).
  */
 async function checkBrainwashedCatsCoverage(
   prisma: PrismaClient,
   families: Map<string, Set<number>>,
-  provenance: Map<string, FamilyProvenance>
+  provenance: Map<string, FamilyProvenance>,
+  bcuNames: BcuGachaNames | null
 ) {
   const brainwashed = await (prisma as any).unit.findMany({
     where: { name: { startsWith: "Brainwashed " } },
@@ -1474,10 +1487,30 @@ async function checkBrainwashedCatsCoverage(
       continue;
     }
     const prov = provenance.get(label);
+
+    // A lone debut (no co-occurring sibling) is exactly the case
+    // syncEventSets() itself skips (`memberIds.size < 2`) and so never
+    // consults bcu-assets for. Do that lookup here instead -- same live
+    // bcu-assets fetch already loaded this run, just applied to a row it
+    // would otherwise never be checked against. This is a LEAD, not an
+    // auto-applied fix: bcu-assets' category names here (e.g. "Halloween
+    // Gacha", "Christmas Gacha") are themselves broad recurring buckets,
+    // not necessarily this project's exact established setName for that
+    // bucket (see BCU_CATEGORY_ALIAS for precedent on needing to translate
+    // bcu's raw category name to our own convention) -- still needs a wiki
+    // cross-check before writing a migration, same evidence bar as always.
+    let bcuLead: string | null = null;
+    if (prov && bcuNames) {
+      const byRowIndex = prov.sourceFile === "GatyaDataSetR1.csv" ? bcuNames.r : prov.sourceFile === "GatyaDataSetE1.csv" ? bcuNames.e : null;
+      const raw = byRowIndex?.get(prov.rowIndex);
+      if (raw) bcuLead = BCU_CATEGORY_ALIAS[raw] ?? raw;
+    }
+
     const memberIds = [...(families.get(label) ?? [])].filter((id) => id !== u.unitNumber);
     if (memberIds.length === 0) {
       console.log(
-        `    - ${u.name} (#${u.unitNumber}): debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) has no other members — debuted alone`
+        `    - ${u.name} (#${u.unitNumber}): debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) has no other members — debuted alone` +
+          (bcuLead ? `; bcu-assets lead: "${bcuLead}" (verify against wiki before using)` : "; no bcu-assets entry for this row either")
       );
       continue;
     }
@@ -1489,7 +1522,8 @@ async function checkBrainwashedCatsCoverage(
       .map((s: any) => `${s.name} (#${s.unitNumber}, setName=${s.setName ? `"${s.setName}"` : "null"})`)
       .join(", ");
     console.log(
-      `    - ${u.name} (#${u.unitNumber}): shares debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) with: ${siblingDetail}`
+      `    - ${u.name} (#${u.unitNumber}): shares debut row (${prov?.sourceFile ?? "?"} row ${prov?.rowIndex ?? "?"}) with: ${siblingDetail}` +
+        (bcuLead ? `; bcu-assets lead: "${bcuLead}" (verify against wiki before using)` : "")
     );
   }
 }
