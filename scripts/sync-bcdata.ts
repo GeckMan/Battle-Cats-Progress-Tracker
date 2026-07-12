@@ -968,6 +968,29 @@ export interface FamilyProvenance {
   rowIndex: number;
 }
 
+// GatyaDataSetN1.csv rows are still scanned below (for `seen` tracking
+// only — so a unit whose real debut is in N1 never gets misattributed as
+// "newly debuting" if it also happens to appear in a later E1/R1 row), but
+// deliberately never produce a debutEvent/family of their own. N1 is the
+// basic "Normal Cat Capsule," not a themed event, and grouping its debut
+// rows into "families that need a setName" is a category error, not a
+// missing translation. Confirmed 2026-07-12 directly against the Battle
+// Cats Wiki's own "Cat Release Order" page: two units that kept showing up
+// as example members of "no label in source data" unresolved families
+// (Axe Cat, unit #2; Lizard Cat, unit #7) are both plain Normal-rarity
+// units obtained via "Empire of Cats — requires 0/7,000 XP or a Normal Cat
+// Capsule to unlock," nothing to do with any real-world or seasonal gacha
+// event. Every such unit was going to sit in the "needs manual naming" log
+// forever (there's no real English event name to give it — it isn't an
+// event), permanently cluttering that warning with false positives instead
+// of genuine gaps. The other several units in the same unresolved families
+// (Maneki Cat, Baozi Cat, etc.) are the real remaining gap — see the E-tier
+// fix on fetchBcuGachaNameMap() for those. detectCollabUnitIds() is
+// unaffected by this and still scans all three files from GATYA_SET_FILES —
+// no evidence of a similar false-positive there, so left as-is rather than
+// speculatively changed.
+const NON_EVENT_GATYA_FILES = new Set<string>(["GatyaDataSetN1.csv"]);
+
 export function detectEventFamilies(dataLocal: string): {
   families: Map<string, Set<number>>;
   provenance: Map<string, FamilyProvenance>;
@@ -990,7 +1013,7 @@ export function detectEventFamilies(dataLocal: string): {
       }
       const newUnitIds = row.unitIds.filter((id) => !seen.has(id));
       for (const id of row.unitIds) seen.add(id);
-      if (newUnitIds.length > 0) {
+      if (newUnitIds.length > 0 && !NON_EVENT_GATYA_FILES.has(file)) {
         // Previously this dropped the debut entirely when cleanedLabel was
         // empty. As of BCData EN 15.4.0 that's every row (see note above),
         // so dropping here would zero out event detection completely. Keep
