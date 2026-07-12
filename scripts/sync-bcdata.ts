@@ -1060,8 +1060,9 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
  *
  * A Reddit report ("the UBERFEST filter shows Uber Fest AND Almighties
  * together" / "the Almighties filter is very strange") turned out to be
- * real, but not for the reason first assumed. This took three passes to
- * get right (2026-07-11) — recorded here so it isn't re-litigated:
+ * real, but not for the reason first assumed. This took FOUR passes to
+ * get right (2026-07-11 – 2026-07-12) — recorded here so it isn't
+ * re-litigated:
  *
  *   - Pass 1 (20260711000007): guessed that 12 Uber Fest units (257, 258,
  *     259, 271, 272, 316, 439, 493, 534, 642, 723, 811) also belonged under
@@ -1079,9 +1080,15 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string) {
  *     named "Almighty Zeus" / "Almighty Anubis" / "Almighty Amaterasu" /
  *     "Almighty Ganesha" / "Almighty Poseidon" / "Almighty Hades" /
  *     "Almighty Lucifer" / "Almighty Aset". These 12 really are Almighties,
- *     currently ALSO drawn from the Uber Fest evergreen pool — a genuine
- *     dual membership, restored via setName='The Almighties' plus a kept
- *     'Uber Fest' banners[] tag in 20260711000009.
+ *     restored via setName='The Almighties' in 20260711000009 — which ALSO
+ *     kept a 'Uber Fest' banners[] tag on them, on the unverified assumption
+ *     they were still currently offered from that evergreen pool too.
+ *   - Pass 4 (20260712000001) removed that tag. A live screenshot of the
+ *     app's own Uber Fest filter showed all 12 "Almighty X" units mixed in
+ *     with genuine Uber Fest exclusives — i.e. the exact original bug,
+ *     reintroduced by pass 3's unverified assumption. There's no confirmed
+ *     evidence these 12 are currently drawn from Uber Fest at all; "The
+ *     Almighties" is their only real home.
  *   - Meanwhile 466, 731, 738, 830, 837 (Black Zeus, Daybreaker Izanagi,
  *     Izanami of Dusk, Raclesa the Lioness, Squire Luno) — a totally
  *     unrelated group that 20260303000026 had separately mislabeled
