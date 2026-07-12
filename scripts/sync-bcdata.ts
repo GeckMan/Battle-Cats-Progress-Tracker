@@ -169,6 +169,13 @@ async function main() {
     console.log("\n── Assigning Gacha Sets ──");
     await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
+
+    // Backstop: catches units whose setName/banners already say "Collab"
+    // (often via family-propagation from a sibling's row, not their own)
+    // but never got isCollab set — see the big comment on the function.
+    console.log("\n── Backstopping Collab Flags from Resolved Names ──");
+    await syncCollabFlagsFromCuratedNames(prisma);
+
     await checkUnitClassificationCoverage(prisma);
 
     // Step 4: Parse and sync legend stages
@@ -1279,6 +1286,55 @@ async function syncBannerMembership(prisma: PrismaClient, dataLocal: string) {
     updated > 0
       ? `  ✓ Added missing banner membership(s) to ${updated} unit(s) from full historical banner data`
       : "  All detected banner memberships already present — nothing to update"
+  );
+}
+
+/**
+ * Backstop for isCollab, run AFTER setName/banners are fully resolved above.
+ *
+ * detectCollabUnitIds() (used by syncCollabFlags(), which runs much earlier
+ * in main()) only ever looks at a unit's OWN raw debut row — the コラボ label
+ * on that exact row, or that exact row's bcu-assets entry. But syncEventSets()
+ * can give a unit a setName like "Street Fighter Collaboration" through a
+ * completely different path: propagating an already-curated name from a
+ * SIBLING family member's row, not from anything on the unit's own row at
+ * all. Confirmed 2026-07-12 directly from the live app: Zangief Cat (#828)
+ * correctly showed "How to Obtain: Street Fighter Collaboration" (from
+ * setName) while still appearing in the "Hide Collab" filter, because
+ * isCollab itself was never set — its own debut row never matched either
+ * signal, only a sibling's did.
+ *
+ * Rather than chasing more individual raw-row edge cases indefinitely, this
+ * closes the gap structurally: any unit whose FINAL, already-resolved
+ * setName or banners[] entry says "Collab"/"Collaboration" is unambiguously
+ * a real-world collab by definition, regardless of which code path put that
+ * text there. Strictly additive (only sets isCollab=true, never unsets it)
+ * and runs last so it sees every name resolved above, including ones filled
+ * in this very run.
+ */
+async function syncCollabFlagsFromCuratedNames(prisma: PrismaClient) {
+  const units = await (prisma as any).unit.findMany({
+    where: { isCollab: false },
+    select: { unitNumber: true, setName: true, banners: true, source: true },
+  });
+
+  const toFlag = units.filter(
+    (u: any) => (u.setName && COLLAB_NAME_PATTERN.test(u.setName)) || (u.banners ?? []).some((b: string) => COLLAB_NAME_PATTERN.test(b))
+  );
+
+  if (toFlag.length === 0) {
+    console.log("  No additional collab units found via setName/banners text — nothing to update");
+    return;
+  }
+
+  for (const u of toFlag) {
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: { isCollab: true, source: u.source ?? "EVENT_CAPSULE" },
+    });
+  }
+  console.log(
+    `  ✓ Flagged ${toFlag.length} additional collab unit(s) whose resolved setName/banners already said so (isCollab was never set)`
   );
 }
 
