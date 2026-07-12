@@ -148,6 +148,33 @@ function classifyMethodLine(line: string): { source: string | null; detail: stri
   return { source: null, detail: line, isCollab: COLLAB_PATTERN.test(line) };
 }
 
+const STOPWORDS = new Set(["the", "of", "and", "event", "collaboration", "collab", "1/2"]);
+
+// The wiki's own phrasing for a collab (e.g. "Baki Hanma Collaboration
+// Event") often doesn't match this project's own established setName for
+// that collab's real gacha-capsule roster (e.g. "Baki Hanma Capsules",
+// set via BCU_KNOWN_COLLAB_CATEGORIES elsewhere in this codebase) --
+// assigning the wiki's text directly would create a second, differently-
+// labeled entry for the same real-world collab, actively working against
+// unified collab filtering. This looks for an ALREADY-EXISTING setName in
+// this database that shares a significant word with the wiki's collab
+// text, so a human can confirm "yes, group with that" instead of
+// inventing a new label from wiki phrasing alone.
+function findSiblingSetNameMatches(collabDetail: string, allSetNames: string[]): string[] {
+  const words = collabDetail
+    .toLowerCase()
+    .replace(/[^a-z0-9\s/]/g, " ")
+    .split(/\s+/)
+    .filter((w) => w.length >= 4 && !STOPWORDS.has(w));
+
+  const matches = new Set<string>();
+  for (const setName of allSetNames) {
+    const lower = setName.toLowerCase();
+    if (words.some((w) => lower.includes(w))) matches.add(setName);
+  }
+  return [...matches];
+}
+
 async function main() {
   const dbUrl = process.env.DIRECT_DATABASE_URL || process.env.DATABASE_URL;
   if (!dbUrl) {
@@ -176,6 +203,8 @@ async function main() {
     });
     console.log(`  ${units.length} unit(s) total`);
 
+    const allSetNames = [...new Set(units.map((u: any) => u.setName).filter((s: any): s is string => !!s))] as string[];
+
     // 1. Units not flagged isCollab but the wiki's obtaining method says
     // otherwise -- the Kaoru Cat pattern.
     const collabMismatches: string[] = [];
@@ -200,8 +229,13 @@ async function main() {
 
       if (!u.isCollab && anyCollab) {
         const collabDetail = classified.filter((c) => c.isCollab).map((c) => c.detail).join(" / ");
+        const siblingMatches = findSiblingSetNameMatches(collabDetail, allSetNames);
+        const siblingNote =
+          siblingMatches.length > 0
+            ? ` — possible existing setName match: ${siblingMatches.map((s) => `"${s}"`).join(", ")}`
+            : " — no existing setName in this DB shares a word with this collab, may be a genuinely new one";
         collabMismatches.push(
-          `${u.name} (#${u.unitNumber}): wiki says "${row.methodLines.join(" | ")}" (collab: ${collabDetail}) but isCollab=false`
+          `${u.name} (#${u.unitNumber}): wiki says "${row.methodLines.join(" | ")}" (collab: ${collabDetail}) but isCollab=false${siblingNote}`
         );
       }
 
