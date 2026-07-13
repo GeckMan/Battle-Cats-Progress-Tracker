@@ -56,8 +56,15 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   エヴァンゲリオン: "Neon Genesis Evangelion Collaboration",
   エヴァ新世紀: "Neon Genesis Evangelion Collaboration",
   魔法少女まどかマギカ: "Puella Magi Madoka Magica Collaboration",
-  ビックリマン: "Bikkuriman Collaboration",
-  ビックリマンコラボ: "Bikkuriman Collaboration",
+  // Fixed 2026-07-13 (full-audit find): "Bikkuriman Collaboration" was the
+  // ORIGINAL label from the March migrations, but 20260712000012 confirmed
+  // "Bikkuriman Chocolate Capsules" is the real canonical name (checked
+  // directly against the live app's Sets dropdown) and the whole bulk
+  // roster (466-473, 544, 555, 556, 762) got migrated to match in
+  // 20260713000007. Using the old label here would have silently
+  // re-fragmented the set the next time a new Bikkuriman unit debuts.
+  ビックリマン: "Bikkuriman Chocolate Capsules",
+  ビックリマンコラボ: "Bikkuriman Chocolate Capsules",
   メタルスラッグディフェンス: "Metal Slug Defense Collaboration",
   // Not in the current wiki navbox (likely delisted after the license
   // lapsed), but this is the real, well-documented Capcom crossover —
@@ -98,9 +105,17 @@ export const GACHA_EVENT_NAMES: Record<string, string> = {
   革命軍隊アイアンウォーズ: "Frontline Assault Iron Legion",
   アイアンウォーズ汎用: "Frontline Assault Iron Legion",
   実況パワフルプロ野球: "Power Pro Baseball Collaboration",
-  るろ剣: "Rurouni Kenshin Collaboration",
-  刃牙コラボ: "Baki Hanma Collaboration",
-  刃牙: "Baki Hanma Collaboration",
+  // Fixed 2026-07-13 (full-audit find): both of these used their original
+  // March-migration label, but the project's own code already treats
+  // "Rurouni Kenshin Gacha" / "Baki Hanma Capsules" as canonical elsewhere
+  // (BCU_KNOWN_COLLAB_CATEGORIES in sync-bcdata.ts and
+  // fetch-collab-verification-pages.ts) -- confirmed via Kaoru Cat (#753)
+  // and Li'l Baki (#795), each independently assigned the "canonical" name
+  // in a later migration while the bulk roster stayed on the old one. Bulk
+  // rosters (746-752, 789-794) migrated to match in 20260713000007.
+  るろ剣: "Rurouni Kenshin Gacha",
+  刃牙コラボ: "Baki Hanma Capsules",
+  刃牙: "Baki Hanma Capsules",
   ねこのなつやすみ: "Summer Break Cats",
   ねこなつサバイバル編: "Summer Break Cats Castaway",
   ねこなつパラダイス編: "Summer Break Cats Paradise",
