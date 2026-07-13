@@ -21,6 +21,16 @@ jobs:
       - run: npm install
       - run: npx prisma generate
       - name: Run BCData sync
+        id: sync
+        # sync-bcdata.ts now exits nonzero when its own coverage checks find
+        # something review-worthy (unclassified units, isCollab evidence
+        # mismatches, untranslated/placeholder names, etc.) even though every
+        # write it made still succeeded — see the reviewWarningCount comment
+        # at the end of its main(). continue-on-error lets the rest of this
+        # job (medal image sync + commit) run exactly as normal either way;
+        # the dedicated step at the bottom re-fails the whole job afterward
+        # so this is never silently swallowed.
+        continue-on-error: true
         env:
           DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
@@ -55,3 +65,15 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+      - name: Fail the job if the sync found anything needing review
+        # Runs last, after medal images have already synced/committed
+        # normally. steps.sync.outcome is "failure" both when sync-bcdata.ts
+        # crashed outright AND when it completed but flagged review-worthy
+        # coverage findings (see the "Run BCData sync" step above) — either
+        # way, the job as a whole should end red so GitHub's default
+        # workflow-failure-notification email actually fires instead of a
+        # plain green checkmark hiding it.
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo "::error::BCData sync finished with something needing review — see the 'Run BCData sync' step's log for details (unclassified units, isCollab evidence mismatches, untranslated names, etc., or an actual crash)."
+          exit 1

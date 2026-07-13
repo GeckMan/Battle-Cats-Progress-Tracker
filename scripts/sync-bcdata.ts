@@ -36,6 +36,15 @@
  *     (import-meow-medals-miraheze.ts) as the source of truth.
  *
  * Safe to run repeatedly — all writes are upserts.
+ *
+ * Review-worthy findings (unclassified units, isCollab evidence mismatches,
+ * untranslated/placeholder-looking names, unrecognized Great Advent stages,
+ * etc.) never block a write, but DO make the run end with a nonzero exit
+ * code and a GitHub Actions `::warning::` annotation — see the
+ * reviewWarningCount handling at the end of main(). This is what turns the
+ * weekly cron's plain green checkmark into a visible, notified signal
+ * whenever something needs a human/AI to actually look, instead of a
+ * finding sitting silently in a log nobody opens.
  */
 
 import "dotenv/config";
@@ -102,6 +111,21 @@ const CATEGORY_SORT_BASE: Record<string, number> = {
   UBER_RARE: 40000,
   LEGEND_RARE: 50000,
 };
+
+// Added 2026-07-13: every "flag it, don't guess it" coverage check in this
+// file (unit classification coverage, existing-collab-flag evidence check,
+// Brainwashed Cats coverage, Great Advent milestone coverage, unit name
+// sanity) used to only ever print a warning to the log — with no failure
+// signal, no notification, nothing. The weekly cron shows a plain green
+// checkmark in the Actions tab whether or not it found something needing a
+// human/AI look, so nobody would ever know to go read it. Each coverage
+// check now adds its finding count here; main() turns a nonzero total into
+// a GitHub Actions annotation AND a nonzero process exit code at the very
+// end of the run (after every other step has already completed), which
+// makes the job show as failed and triggers GitHub's default
+// workflow-failure-notification email — without ever aborting the sync
+// itself early or skipping any of its own writes.
+let reviewWarningCount = 0;
 
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
@@ -176,6 +200,7 @@ async function main() {
     await checkExistingCollabFlagsAgainstEvidence(prisma, dataLocal, bcuNames);
 
     await checkUnitClassificationCoverage(prisma);
+    await checkUnitNameSanity(prisma);
     // Re-detect families here (cheap — just re-reads the already-cloned
     // CSVs) so the coverage check can look up debut-row siblings for any
     // still-unresolved Brainwashed Cat units, without changing
@@ -192,6 +217,31 @@ async function main() {
     await syncMeowMedals(prisma, resLocal);
 
     console.log("\n✓ Sync complete!");
+
+    // All actual data writes above have already happened by this point —
+    // this only decides how loudly to end the run, never whether to make
+    // it. A nonzero reviewWarningCount means one or more coverage checks
+    // above found something a human/AI needs to look at (unclassified
+    // units, evidence-mismatch leads, untranslated/placeholder names, etc.)
+    // that used to just sit in the log with no visible signal at all. The
+    // GitHub Actions `::warning::` command puts a yellow annotation
+    // directly on the run's summary page (visible without opening any
+    // step's log), and process.exitCode (not process.exit — this still
+    // lets the `finally` block below run first) makes the job itself show
+    // as failed, which triggers GitHub's own default
+    // workflow-failure-notification email to the repo's watchers. The
+    // companion workflow step in sync-bcdata.yml still runs the medal-image
+    // sync/commit afterward regardless (continue-on-error on this step),
+    // so a review-worthy warning here never blocks anything else from
+    // shipping.
+    if (reviewWarningCount > 0) {
+      const summary = `Sync completed and all writes succeeded, but ${reviewWarningCount} item(s) across this run's coverage checks need a human/AI look (see the ⚠ lines above) — not a crash, just nothing that should silently go unread.`;
+      console.log(`\n⚠ ${summary}`);
+      console.log(`::warning::${summary}`);
+      process.exitCode = 1;
+    } else {
+      console.log("\n✓ All coverage checks clean — nothing needs manual review this run.");
+    }
   } finally {
     await prisma.$disconnect();
     await pool.end();
@@ -1512,6 +1562,57 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   console.log(
     `    → These will show "How to Obtain: Unknown" in the app. Set Unit.source/setName manually if known.`
   );
+  reviewWarningCount += unclassified.length;
+}
+
+// A unit name containing an actual Japanese character (hiragana, katakana,
+// half-width katakana, or a CJK ideograph) almost certainly means BCData's
+// EN Unit_Explanation file had no real translated entry for it and the raw
+// JP text fell straight through — exactly what happened to unit #673
+// ("ネコチーター" instead of "Cheetah Cat") before the user caught it from
+// their own wiki screenshot. A name that's ENTIRELY digits and a single
+// separator (e.g. "730_1", "771-1") is BCData's raw numeric-ID placeholder
+// format — exactly what the original 21 "Spirit of X" units looked like
+// before they were renamed. Both are real, previously-seen failure modes,
+// not theoretical.
+const NON_ENGLISH_CHAR_RE = /[぀-ヿ㐀-鿿･-ﾟ]/;
+const RAW_ID_PLACEHOLDER_RE = /^\d+[-_]\d+$/;
+
+/**
+ * Coverage check added 2026-07-13, after fixing exactly two real instances
+ * of this bug this session (the 21 Arena-era "Spirit of X" units, and
+ * Cheetah Cat #673) with no automated way to have caught either one ahead
+ * of a user noticing broken text in the app. Read-only — flags candidates
+ * for a human/AI to confirm and add to UNIT_NAME_OVERRIDES/
+ * EXTRA_NAME_OVERRIDES (or excludeFromCollection, if it turns out to be
+ * another non-collectible summoned-ability entry rather than a real unit),
+ * same as every other check in this file. Does not attempt to guess the
+ * real English name itself — that always needs the unit's own wiki page.
+ */
+async function checkUnitNameSanity(prisma: PrismaClient) {
+  const units = await (prisma as any).unit.findMany({
+    select: { unitNumber: true, name: true },
+    orderBy: { unitNumber: "asc" },
+  });
+
+  const suspicious = units.filter(
+    (u: any) => NON_ENGLISH_CHAR_RE.test(u.name) || RAW_ID_PLACEHOLDER_RE.test(u.name.trim())
+  );
+
+  if (suspicious.length === 0) {
+    console.log("  Unit name sanity: OK (no untranslated-looking or raw-placeholder names found)");
+    return;
+  }
+
+  console.log(
+    `  ⚠ ${suspicious.length} unit(s) have a name that looks untranslated or like a raw BCData placeholder (same failure mode as Cheetah Cat #673 and the original 21 "Spirit of X" units): ${suspicious
+      .map((u: any) => `${u.name} (#${u.unitNumber})`)
+      .join(", ")}`
+  );
+  console.log(
+    `    → Confirm the real name on the unit's own wiki page, then add it to UNIT_NAME_OVERRIDES or EXTRA_NAME_OVERRIDES above (or excludeFromCollection, if it turns out to be a non-collectible summoned-ability entry, not a real unit).`
+  );
+  reviewWarningCount += suspicious.length;
 }
 
 /**
@@ -1600,6 +1701,8 @@ async function checkExistingCollabFlagsAgainstEvidence(
     `\n  ${weakLeads.length} unit(s) flagged isCollab=true have NO gacha banner history at all (weak lead — bcu-assets has no opinion either way, check the unit's own wiki page or the Cat Release Order audit instead):`
   );
   for (const w of weakLeads) console.log(`    - ${w}`);
+
+  reviewWarningCount += strongLeads.length + weakLeads.length;
 }
 
 /**
@@ -1652,6 +1755,7 @@ async function checkBrainwashedCatsCoverage(
 
   if (brainwashed.length === 0) {
     console.log("  ⚠ No units named \"Brainwashed ...\" found at all — check if the name prefix changed");
+    reviewWarningCount += 1;
     return;
   }
 
@@ -1668,6 +1772,7 @@ async function checkBrainwashedCatsCoverage(
   console.log(
     `    → Needs the same evidence-based treatment as the other 4 (a wiki page naming its real seasonal event, or a confirmed BCData debut co-occurrence) — not a guess.`
   );
+  reviewWarningCount += stillGeneric.length;
 
   // Diagnostic (2026-07-12): the first 4 Brainwashed Cats were solved by
   // finding the ONE other already-named unit each shared its real BCData
@@ -2389,6 +2494,7 @@ function checkGreatAdventMilestoneCoverage(allNames: string[]) {
       `  ⚠ Possible new Great Advent stage(s) not in the Milestone Stages tab: ${missing.join(", ")}`
     );
     console.log(`    → Add to the "GREAT ADVENT" section of src/lib/milestone-catalog.ts`);
+    reviewWarningCount += missing.length;
   } else {
     console.log(
       `  Great Advent milestone coverage: OK (${KNOWN_GREAT_ADVENT_MILESTONES.size} known, 0 new candidates found)`
