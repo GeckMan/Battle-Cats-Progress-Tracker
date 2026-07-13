@@ -363,6 +363,57 @@ const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([
   381, 615, 616,
   // June Bride of Devil Capsules
   248, 713, 757, 863,
+  // 2026-07-13: 89 units confirmed non-collab by the first real run of
+  // scripts/fetch-collab-verification-pages.ts (each unit's own wiki page
+  // fetched and read directly — see migration
+  // 20260713000005_fix_89_iscollab_false_positives_from_wiki_verification
+  // for the full evidence writeup). Grouped by setName below, matching the
+  // migration's own grouping.
+  //
+  // Plain "Rare Cat Capsule" pool
+  30, 31, 32, 33, 35, 36, 37, 38, 39, 40, 41, 46, 47, 48, 49, 50, 51, 52, 55, 56,
+  58, 61, 129, 131, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153,
+  197, 198, 199, 200, 237, 238, 239, 307, 308, 325, 376, 377, 495, 522, 523,
+  // Sengoku Wargods Vajiras
+  72, 338, 618,
+  // Lords of Destruction Dragon Emperors
+  83, 87, 177,
+  // Cyber Academy Galaxy Gals
+  105, 107, 619,
+  // Ancient Heroes Ultra Souls
+  136, 137, 203, 525,
+  // Tales of the Nekoluga
+  170, 625,
+  // Justice Strikes Back! Dark Heroes
+  194, 212,
+  // The Almighties
+  257, 271, 316,
+  // Nature's Guardians Elemental Pixies
+  359, 401,
+  // Frontline Assault Iron Legion
+  417,
+  // Gals of Summer
+  438,
+  // Girls & Monsters: Angels of Terror
+  607,
+  // The Dynamites
+  617, 668,
+  // 10th Anniversary Memorial Capsules
+  635, 689,
+  // New Moon Capsules
+  646,
+  // Love Letter Capsules
+  650, 651, 652,
+  // June Bride of Devil Capsules (missed from the earlier batch above)
+  665,
+  // Heartbeat Catcademy
+  696,
+  // Medal King's Palace
+  726,
+  // Lunar New Year
+  730,
+  // Summer Break Survival Capsules
+  765, 766, 767,
 ]);
 
 interface ParsedUnit {
