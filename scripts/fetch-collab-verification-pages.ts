@@ -99,11 +99,20 @@ async function fetchParsedHtml(page: string): Promise<string> {
 /** First few substantive paragraphs of the article body, trimmed. */
 function extractIntroParagraphs(html: string, max = 3): string[] {
   const $ = load(html);
+  // The wiki's portable-infobox ships a <style> block whose CSS text lands
+  // inside a <p> in some page layouts (observed 2026-07-13: every single
+  // unit's output included a ~2400-char ".mw-parser-output .portable-infobox
+  // ..." blob as if it were a real paragraph). Strip style/script content
+  // before selecting paragraphs so their text never leaks into $(el).text().
+  $("style, script").remove();
   const paragraphs: string[] = [];
   $("p").each((_, el) => {
     if (paragraphs.length >= max) return;
     const text = $(el).text().replace(/\s+/g, " ").trim();
-    if (text.length >= 15) paragraphs.push(text);
+    // Defense in depth: even with style tags stripped, skip anything that
+    // still looks like raw CSS (semicolon-heavy, brace-delimited) rather
+    // than prose.
+    if (text.length >= 15 && !/\{[^{}]*:[^{}]*;/.test(text)) paragraphs.push(text);
   });
   return paragraphs;
 }
