@@ -50,13 +50,13 @@ export default async function DashboardPage() {
         include: { progress: { where: { userId }, take: 1 } },
       }),
       (prisma as any).unit.count({
-        where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+        where: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
       }),
       (prisma as any).userUnitProgress.count({
         where: {
           userId,
           formLevel: { gte: 1 },
-          unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+          unit: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
         },
       }),
     ]);

@@ -101,10 +101,16 @@ export default async function FriendProfilePage(props: {
 
   // Units
   // @ts-ignore
-  const unitTotal = await (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } });
+  const unitTotal = await (prisma as any).unit.count({
+    where: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+  });
   // @ts-ignore
   const unitObtained = await (prisma as any).userUnitProgress.count({
-    where: { userId: user.id, formLevel: { gte: 1 }, unit: { source: { not: "UNOBTAINABLE" } } },
+    where: {
+      userId: user.id,
+      formLevel: { gte: 1 },
+      unit: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+    },
   });
   const unitsOverall = unitTotal === 0 ? 0 : Math.round((unitObtained / unitTotal) * 100);
 

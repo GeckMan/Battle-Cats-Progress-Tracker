@@ -15,6 +15,15 @@ export async function GET(req: Request) {
     const { searchParams } = new URL(req.url);
     const category = searchParams.get("category") ?? undefined; // NORMAL | SPECIAL | …
     const hideCollab = searchParams.get("hideCollab") === "true";
+    // "Show only collabs, no specific set picked yet" — the frontend's
+    // synthetic "Collabs" option in the Sets dropdown. Previously this sent
+    // source=EVENT_CAPSULE instead, which was wrong in both directions: many
+    // real collabs (Kaoru Cat via STAMP_REWARD, God via DAILY_LOGIN, etc.)
+    // don't have source=EVENT_CAPSULE, and many non-collab seasonal capsule
+    // units (Lunar New Year, Summer Break Capsules, etc.) DO — so "All
+    // Collabs" was showing a mix of wrong units. Filtering on the actual
+    // isCollab field directly is what the UI has always meant by "collab".
+    const onlyCollab = searchParams.get("onlyCollab") === "true";
     const source = searchParams.get("source") ?? undefined;
     const setName = searchParams.get("setName") ?? undefined;
 
@@ -60,9 +69,15 @@ export async function GET(req: Request) {
     }
 
     // Build where clause — no pagination, load all units for the current view
-    const where: Record<string, unknown> = {};
+    const where: Record<string, unknown> = {
+      // Arena of Honor "Spirit of X" fusion-material tokens and any other
+      // future non-collectible entries — never part of the tracked
+      // collection, regardless of any other filter selected.
+      excludeFromCollection: false,
+    };
     if (category) where.category = category;
     if (hideCollab) where.isCollab = false;
+    else if (onlyCollab) where.isCollab = true;
     if (source) {
       where.source = source;
     } else {
@@ -134,25 +149,26 @@ export async function GET(req: Request) {
     // Also return distinct sources and sets for filter dropdowns
     // @ts-ignore
     const allSources: any[] = await (prisma as any).$queryRaw`
-      SELECT DISTINCT "source" FROM "Unit" WHERE "source" IS NOT NULL ORDER BY "source"
+      SELECT DISTINCT "source" FROM "Unit" WHERE "source" IS NOT NULL AND "excludeFromCollection" = false ORDER BY "source"
     `;
-    // Get all unique banner names from the banners array column
+    // Get regular (non-collab) and collab banner names as two separate
+    // queries, split by the unit's actual isCollab field — NOT by guessing
+    // from the setName text itself (a previous version checked
+    // name.endsWith(" Collaboration"), which was wrong in both directions:
+    // real collabs like "Baki Hanma Capsules" and "Rurouni Kenshin Gacha"
+    // don't end that way and were missing from the collab dropdown, while
+    // a banner shared by both a collab and non-collab unit could land in
+    // the wrong bucket entirely regardless of its actual classification).
     // @ts-ignore
-    const allSets: any[] = await (prisma as any).$queryRaw`
-      SELECT DISTINCT unnest("banners") AS "setName" FROM "Unit" ORDER BY "setName"
+    const regularSetRows: any[] = await (prisma as any).$queryRaw`
+      SELECT DISTINCT unnest("banners") AS "setName" FROM "Unit" WHERE "isCollab" = false AND "excludeFromCollection" = false ORDER BY "setName"
     `;
-
-    // Split banner names into regular sets and collab sets
-    const sets: string[] = [];
-    const collabSets: string[] = [];
-    for (const r of allSets) {
-      const name = r.setName as string;
-      if (name.endsWith(" Collaboration")) {
-        collabSets.push(name);
-      } else {
-        sets.push(name);
-      }
-    }
+    // @ts-ignore
+    const collabSetRows: any[] = await (prisma as any).$queryRaw`
+      SELECT DISTINCT unnest("banners") AS "setName" FROM "Unit" WHERE "isCollab" = true AND "excludeFromCollection" = false ORDER BY "setName"
+    `;
+    const sets: string[] = regularSetRows.map((r: any) => r.setName as string);
+    const collabSets: string[] = collabSetRows.map((r: any) => r.setName as string);
 
     return NextResponse.json({
       units: result,

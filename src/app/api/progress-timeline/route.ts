@@ -89,11 +89,11 @@ export async function GET(req: NextRequest) {
         where: {
           userId,
           formLevel: { gte: 1 },
-          unit: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+          unit: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
         },
       }),
       (prisma as any).unit.count({
-        where: { OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
+        where: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
       }),
       // Story progress — fetch all records to compute granular score
       (prisma as any).userStoryProgress.findMany({

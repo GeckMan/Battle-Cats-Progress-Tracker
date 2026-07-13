@@ -77,7 +77,11 @@ async function computeProgressSummary(
         where: {
           userId,
           formLevel: { gte: 1 },
-          unit: { source: { not: "UNOBTAINABLE" } },
+          // excludeFromCollection: never count Arena of Honor fusion-material
+          // tokens. OR-in null source: units like Li'l Cats have no source
+          // set but are still real, trackable units (source: {not: X} alone
+          // would silently exclude every NULL-source row too).
+          unit: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },
         },
       }),
       // Static totals (use cached if available)
@@ -87,7 +91,7 @@ async function computeProgressSummary(
       staticCounts
         ? Promise.resolve(staticCounts.unitsTotal)
         // @ts-ignore
-        : (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } }),
+        : (prisma as any).unit.count({ where: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] } }),
     ]);
 
   // ----- Story overall (pure computation, no more DB calls)
@@ -181,7 +185,7 @@ export default async function SocialPage() {
     }),
     prisma.meowMedal.count(),
     // @ts-ignore
-    (prisma as any).unit.count({ where: { source: { not: "UNOBTAINABLE" } } }),
+    (prisma as any).unit.count({ where: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] } }),
   ]);
 
   const friendUsers = friendships.map((f) =>

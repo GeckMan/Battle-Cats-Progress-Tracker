@@ -315,7 +315,15 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
 // in migration 20260712000012_resolve_9_deferred_collab_units_from_wiki.
 // Listed here so any future sync run treats that correction as permanent
 // rather than something a matching signal could quietly revert.
-const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([29, 45, 62, 82, 140, 141]);
+//
+// #682 (Spectral Goth Vega) added 2026-07-13: a "Girls & Monsters: Angels
+// of Terror" unit that a March 2026 migration mistakenly swept into the
+// Street Fighter Collaboration list (see migration
+// 20260713000002_fix_spectral_goth_vega_wrong_collab_tag for the full
+// three-source confirmation this was wrong). Listed here too since this
+// exact unit has already been mislabeled by hand once before -- worth the
+// extra permanent protection.
+const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([29, 45, 62, 82, 140, 141, 682]);
 
 interface ParsedUnit {
   unitNumber: number;
@@ -428,6 +436,13 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     const batch = units.slice(i, i + batchSize);
     await Promise.all(
       batch.map((u) => {
+        // Arena of Honor "Spirit of X" fusion-material tokens (the same 21
+        // units in UNIT_NAME_OVERRIDES) aren't real collectible units — set
+        // unconditionally on every sync so this can never regress even if a
+        // future BCData version stops needing the name override for one of
+        // them (e.g. if Ponos ever gives it a real localized name).
+        const excludeFromCollection = u.unitNumber in UNIT_NAME_OVERRIDES;
+
         // For updates: only include category/sortOrder if we have reliable rarity data
         const updateData: Record<string, unknown> = {
           name: u.name,
@@ -435,6 +450,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
           trueName: u.trueName,
           ultraName: u.ultraName,
           formCount: u.formCount,
+          excludeFromCollection,
         };
         if (u.rarityFromData) {
           updateData.category = u.category;
@@ -453,6 +469,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
             category: u.category,
             formCount: u.formCount,
             sortOrder: u.sortOrder,
+            excludeFromCollection,
           },
           update: updateData,
         });

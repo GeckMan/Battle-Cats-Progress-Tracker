@@ -632,12 +632,15 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       if (collab) params.set("hideCollab", "true");
       if (src) params.set("source", src);
       // Handle collab grouping: specific collab selected → filter by that banner
-      // "Collabs" selected with no sub-selection → show all collab units via source
+      // "Collabs" selected with no sub-selection → show all collab units via
+      // the real isCollab field (previously sent source=EVENT_CAPSULE, which
+      // was wrong: plenty of real collabs use other sources, and plenty of
+      // non-collab seasonal units use EVENT_CAPSULE too).
       if (sn === COLLABS_KEY) {
         if (cf) {
           params.set("setName", cf);
         } else {
-          params.set("source", "EVENT_CAPSULE");
+          params.set("onlyCollab", "true");
         }
       } else if (sn) {
         params.set("setName", sn);

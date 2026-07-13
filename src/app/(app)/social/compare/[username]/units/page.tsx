@@ -89,6 +89,7 @@ export default async function CompareUnitsPage({
   const [allUnits, myProgress, theirProgress] = await Promise.all([
     (prisma as any).unit.findMany({
       where: {
+        excludeFromCollection: false,
         OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }],
       },
       orderBy: [{ sortOrder: "asc" }],
