@@ -77,9 +77,11 @@ const RARITY_ACCENT: Record<string, string> = {
   LEGEND_RARE: "border-red-700 text-red-300 bg-red-950/30",
 };
 
+// NOTE: EVENT_CAPSULE used to be labeled "Collab" here, which was actively
+// misleading — see the matching comment in UnitsClient.tsx's SOURCE_LABELS.
 const SOURCE_LABELS: Record<string, string> = {
   RARE_CAPSULE:      "Rare Cat Capsule",
-  EVENT_CAPSULE:     "Collab",
+  EVENT_CAPSULE:     "Event Capsule",
   SEASONAL_EVENT:    "Seasonal Event",
   STAGE_DROP:        "Stage Drop",
   EMPIRE_OF_CATS:    "Empire of Cats",

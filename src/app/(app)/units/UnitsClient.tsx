@@ -85,9 +85,17 @@ const RARITY_ACCENT: Record<string, string> = {
 };
 
 // Human-readable source labels
+// NOTE: EVENT_CAPSULE used to be labeled "Collab" here, which was actively
+// misleading — this source value just means "obtained via an event capsule
+// banner" and is used for plenty of non-collab seasonal units (Li'l cats,
+// Consultant Cat, Tasmanian Giant Crab, Ancient Egg: N202, Blue Shinobi's
+// Lunar New Year capsule, etc.) as well as real collabs. Whether a unit is
+// an actual real-world collaboration is what the separate isCollab field
+// means, not this source value — see the Sets dropdown's "Collabs" option
+// (src/app/api/units/route.ts's onlyCollab param) for that real filter.
 const SOURCE_LABELS: Record<string, string> = {
   RARE_CAPSULE:      "Rare Cat Capsule",
-  EVENT_CAPSULE:     "Collab",
+  EVENT_CAPSULE:     "Event Capsule",
   SEASONAL_EVENT:    "Seasonal Event",
   STAGE_DROP:        "Stage Drop",
   EMPIRE_OF_CATS:    "Empire of Cats",
