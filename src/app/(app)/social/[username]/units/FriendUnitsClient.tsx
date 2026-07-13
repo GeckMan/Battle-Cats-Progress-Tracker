@@ -152,7 +152,10 @@ const WIKI_SUFFIX: Record<string, string> = {
 };
 
 function wikiUrl(unitName: string, category: string) {
-  const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
+  // Don't strip "&" — see the matching comment in UnitsClient.tsx's
+  // wikiUrl() for the full explanation (confirmed 2026-07-13 via 4 real
+  // units whose wiki links 404'd because of this).
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?]/g, "");
   const suffix = WIKI_SUFFIX[category] ?? "Cat";
   return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(${suffix})`;
 }

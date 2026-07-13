@@ -176,7 +176,14 @@ const WIKI_SUFFIX: Record<string, string> = {
 };
 
 function wikiUrl(unitName: string, category: string) {
-  const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
+  // Don't strip "&" — several real unit names contain a literal ampersand
+  // (e.g. "Chika Amatori & Cat", "Takuya & Yuki") and MediaWiki page titles
+  // preserve it as-is; encodeURIComponent below already escapes it to %26
+  // correctly. Confirmed 2026-07-13: stripping it produced a double
+  // underscore and a 404 for every one of those units' wiki links. "#"/"?"
+  // are still stripped since they're genuine URL delimiters, not known to
+  // appear in any real unit name.
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?]/g, "");
   const suffix = WIKI_SUFFIX[category] ?? "Cat";
   return `https://battlecats.miraheze.org/wiki/${encodeURIComponent(slug)}_(${suffix})`;
 }

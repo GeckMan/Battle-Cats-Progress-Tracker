@@ -89,6 +89,28 @@ const CONFIRMED_REAL_COLLAB_FRANCHISES = [
   "fate", "evangelion", "madoka magica", "bikkuriman", "street fighter",
   "hatsune miku", "ranma", "kunio-kun", "metal slug", "tower of saviors",
   "rurouni kenshin", "baki", "sonic the hedgehog", "demon slayer",
+  // Added 2026-07-13 after the second real run of this script surfaced
+  // them (all still using the generic "X Collaboration" internal setName
+  // pattern) -- each independently confirmed real via its own wiki page
+  // and/or an official Ponos social media announcement (web search):
+  // Princess Punt Sweets (a real toy/character brand, see Kerihime #26
+  // etc.), MattShea (a real YouTuber), Merc Storia (a real DeNA mobile
+  // game), Shoumetsu Toshi (a real mobile game, explicitly named as a
+  // Battle Cats collab partner on Yuki Cat #181's own wiki page), Neo
+  // Mushroom Garden (a real LINE mobile game), Pikotaro (a real musician/
+  // YouTuber, PPAP), Crash Fever (a real Sega Networks mobile game), Power
+  // Pro Baseball (a real, long-running Konami baseball game franchise),
+  // World Trigger (a real, famous anime/manga series), Betakkuma and
+  // Mentori (both real LINE Sticker character brands, each with an
+  // official Ponos collab announcement on X), and Shakurel Planet (a real
+  // toy brand, official Ponos collab announcement on X/Facebook, Sept
+  // 2019). This also resolves the three previously-ambiguous units from
+  // task #54 (Shakurel Cat/Lion/Tiger/Panda #497-500, Nekokkuma #433) --
+  // all confirmed real, isCollab=true was already correct, no DB change
+  // needed.
+  "princess punt", "mattshea", "merc storia", "shoumetsu toshi",
+  "mushroom garden", "pikotaro", "crash fever", "power pro baseball",
+  "world trigger", "betakkuma", "mentori", "shakurel",
 ];
 const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>([
   "Rurouni Kenshin Gacha",
@@ -112,7 +134,13 @@ const WIKI_SUFFIX: Record<string, string> = {
   LEGEND_RARE: "Legend_Rare_Cat",
 };
 function wikiPageTitle(unitName: string, category: string): string {
-  const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
+  // Don't strip "&" — see UnitsClient.tsx's wikiUrl() for the full
+  // explanation. Confirmed 2026-07-13: this run's own 4 failed fetches
+  // (Takuya & Yuki #179, Satori Hikami & Cat #384, Kano & Souma #483,
+  // Chika Amatori & Cat #679) were all this exact bug, not a real
+  // "page doesn't exist" — fetchParsedHtml()'s encodeURIComponent(page)
+  // already escapes a literal "&" correctly, so it never needed stripping.
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?]/g, "");
   const suffix = WIKI_SUFFIX[category] ?? "Cat";
   return `${slug}_(${suffix})`;
 }
