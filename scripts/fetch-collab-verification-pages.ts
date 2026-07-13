@@ -111,6 +111,15 @@ const CONFIRMED_REAL_COLLAB_FRANCHISES = [
   "princess punt", "mattshea", "merc storia", "shoumetsu toshi",
   "mushroom garden", "pikotaro", "crash fever", "power pro baseball",
   "world trigger", "betakkuma", "mentori", "shakurel",
+  // Added 2026-07-13 after the third run surfaced the last 2 remaining
+  // units (Baby Mola #173, Mola King #174) -- "Survive! Mola Mola!" is a
+  // real idle mobile game by SELECT BUTTON Inc., officially collab'd with
+  // Battle Cats multiple times since 2015 (web search confirmed). This was
+  // the very last setName left unrecognized out of all 264 units still
+  // flagged isCollab=true -- every one has now been individually verified
+  // real, either this session or by the original (pre-session) hardcoded
+  // migration list.
+  "mola mola",
 ];
 const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>([
   "Rurouni Kenshin Gacha",
