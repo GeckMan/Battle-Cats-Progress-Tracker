@@ -341,12 +341,28 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
 // non-collab elsewhere this session, all inherited that same wrong flag.
 // This is very likely NOT the full extent of the problem -- see the
 // "Audit Obtain Methods" workflow for a systematic sweep of the rest.
+// 19 more added 2026-07-13 (migration
+// 20260713000004_fix_more_iscollab_false_positives_from_sync_evidence),
+// surfaced automatically by checkExistingCollabFlagsAgainstEvidence()'s
+// first real run rather than manual review: "Lucky Capsule", "9th
+// Anniversary Special Capsules", "Summer Break Capsules" (more units from
+// the same event as #670/#813/#822 above), and "June Bride of Devil
+// Capsules" (thematically identical to the already-confirmed-non-collab
+// Halloween/Xmas/Valentine seasonal capsules — no franchise name at all).
 const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([
   29, 45, 62, 82, 140, 141, 682,
   // Li'l Cats permanent set
   63, 70, 74, 79, 80, 81, 100, 104, 109, 122, 128, 132, 176, 183, 227, 244, 282, 303, 329, 343, 501,
   // Summer Break Cats (base/Castaway/Paradise) + Nyanko Rangers
   670, 813, 822, 831,
+  // Lucky Capsule
+  209, 210, 211, 245, 246, 247, 311, 312, 313,
+  // 9th Anniversary Special Capsules
+  184, 342, 375,
+  // More Summer Break Capsules
+  381, 615, 616,
+  // June Bride of Devil Capsules
+  248, 713, 757, 863,
 ]);
 
 interface ParsedUnit {
@@ -631,7 +647,23 @@ const COLLAB_NAME_PATTERN = /collab/i;
 // team-variant categories also don't say "Collab" (-2023/-2027) because it
 // wasn't independently verified this session — flagged for a future manual
 // check instead of guessed at.
-const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>(["Rurouni Kenshin Gacha", "Baki Hanma Capsules"]);
+//
+// Also reused (2026-07-13) by checkExistingCollabFlagsAgainstEvidence() in
+// the OPPOSITE direction — as a set of already-verified-real Unit.setName
+// values, not just bcu-assets row names — to stop flagging Bikkuriman and
+// Street Fighter units as "strong lead" false positives just because their
+// OWN specific gacha row predates or otherwise isn't covered by bcu-assets'
+// Collab category block. "Bikkuriman Chocolate Capsules" added for exactly
+// this reason: confirmed a real collab this session (live app dropdown
+// check, see migration 20260712000012), but every one of its units'
+// individual rows came back as a bcu-assets coverage gap, not a collab
+// tag — which is the SAME already-documented Sengoku Basara-style gap this
+// set exists to paper over, not a new kind of false positive.
+const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>([
+  "Rurouni Kenshin Gacha",
+  "Baki Hanma Capsules",
+  "Bikkuriman Chocolate Capsules",
+]);
 
 function isBcuCollabName(name: string): boolean {
   return COLLAB_NAME_PATTERN.test(name) || BCU_KNOWN_COLLAB_CATEGORIES.has(name);
@@ -1374,7 +1406,13 @@ async function syncCollabFlagsFromCuratedNames(prisma: PrismaClient) {
  */
 async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   const unclassified = await (prisma as any).unit.findMany({
-    where: { isCollab: false, source: null, setName: null },
+    // excludeFromCollection: false — a unit hidden from the entire app
+    // (the Arena of Honor "Spirit of X" fusion tokens) will never show
+    // "How to Obtain: Unknown" to anyone regardless of its source/setName,
+    // so it shouldn't clutter this warning. Confirmed 2026-07-13: without
+    // this, all 21 Spirit units still showed up here even after being
+    // excluded from every user-facing view.
+    where: { isCollab: false, source: null, setName: null, excludeFromCollection: false },
     select: { unitNumber: true, name: true },
     orderBy: { unitNumber: "asc" },
   });
@@ -1455,6 +1493,15 @@ async function checkExistingCollabFlagsAgainstEvidence(
   const weakLeads: string[] = [];
   for (const u of flaggedCollabs) {
     if (confirmedCollabIds.has(u.unitNumber) || MANUALLY_VERIFIED_NOT_COLLAB.has(u.unitNumber)) continue;
+    // Already-recognized real-collab setName (ends in "Collaboration", or
+    // one of the known-but-differently-worded exceptions like "Baki Hanma
+    // Capsules") — its own gacha row not matching bcu-assets' Collab
+    // category is a known coverage gap (see BCU_KNOWN_COLLAB_CATEGORIES),
+    // not evidence of a false positive. Confirmed 2026-07-13: without this
+    // filter, the entire real Street Fighter and Bikkuriman rosters showed
+    // up as "strong lead" false alarms purely because their specific rows
+    // predate/aren't covered by bcu-assets' own Collab block.
+    if (u.setName && isBcuCollabName(u.setName)) continue;
     const entry = `${u.name} (#${u.unitNumber})${u.setName ? ` — setName: "${u.setName}"` : ""}`;
     if (idsWithGachaHistory.has(u.unitNumber)) {
       strongLeads.push(entry);
@@ -1464,16 +1511,14 @@ async function checkExistingCollabFlagsAgainstEvidence(
   }
 
   console.log(
-    `\n  ${strongLeads.length} unit(s) flagged isCollab=true have gacha banner history but NO コラボ/bcu-assets collab signal on any of their rows (strong lead, likely false positive — verify against the unit's own wiki page before correcting):`
+    `\n  ${strongLeads.length} unit(s) flagged isCollab=true have gacha banner history but NO コラボ/bcu-assets collab signal on any of their rows, AND no already-recognized real-collab setName either (strong lead, likely false positive — verify against the unit's own wiki page before correcting):`
   );
-  for (const s of strongLeads.slice(0, 40)) console.log(`    - ${s}`);
-  if (strongLeads.length > 40) console.log(`    …and ${strongLeads.length - 40} more`);
+  for (const s of strongLeads) console.log(`    - ${s}`);
 
   console.log(
     `\n  ${weakLeads.length} unit(s) flagged isCollab=true have NO gacha banner history at all (weak lead — bcu-assets has no opinion either way, check the unit's own wiki page or the Cat Release Order audit instead):`
   );
-  for (const w of weakLeads.slice(0, 40)) console.log(`    - ${w}`);
-  if (weakLeads.length > 40) console.log(`    …and ${weakLeads.length - 40} more`);
+  for (const w of weakLeads) console.log(`    - ${w}`);
 }
 
 /**
