@@ -1,0 +1,34 @@
+name: Fetch Collab Verification Pages
+
+# One-time/manual diagnostic — NOT on a schedule. Automates what had been a
+# manual screenshot-the-wiki-page process: fetches every isCollab=true
+# unit's OWN Battle Cats Wiki page (not just the terse Cat Release Order
+# table row) and prints its intro paragraph(s) directly in this run's log,
+# for a human to read and judge whether it's a real-world franchise
+# collaboration. Only checks units whose setName isn't already a
+# recognized real-collab name (see scripts/fetch-collab-verification-pages.ts
+# for the exact filter). Read-only: makes no database writes and no
+# commits.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Fetch collab-verification wiki pages (read-only)
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/fetch-collab-verification-pages.ts
