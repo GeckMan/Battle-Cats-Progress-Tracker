@@ -36,6 +36,19 @@
  *      checkUnitClassificationCoverage() has been logging all session)
  *      that the wiki has a single, unambiguous obtaining method for --
  *      proposed source + setName fill.
+ *   3. (Added 2026-07-13) The REVERSE of #1: units currently isCollab=true
+ *      whose wiki-listed obtaining method has NO /collab/i text anywhere.
+ *      Confirmed this session that this exact pattern is real, not
+ *      theoretical -- 6 units (Blue Shinobi #82, Squish Ball Cat #140, God
+ *      #141, Masked Cat #29, Maiko Cat #45, Toy Machine Cat #62) were found
+ *      to have isCollab=true from this project's original hardcoded list
+ *      despite their own wiki pages showing no franchise tie-in at all
+ *      (fixed in migration 20260712000012). This bucket is a LEAD, not a
+ *      verdict -- same caution as bucket #1's sibling-match suggestions --
+ *      because a real collab can still be phrased on the wiki without the
+ *      literal word "collab" (e.g. "Rurouni Kenshin Gacha"), so each hit
+ *      here needs its own unit page checked before flipping isCollab, same
+ *      process used for the original 6.
  * A human reviews the report and decides which entries (if any) warrant
  * a real migration, same process used for every other fix this session.
  *
@@ -220,6 +233,10 @@ async function main() {
     // once isCollab is fixed these stop showing up as "mismatches" above,
     // so without this separate pass their naming gap would go invisible.
     const unnamedCollabs: string[] = [];
+    // 4. Reverse of #1 -- units currently isCollab=true whose wiki row has
+    // NO collab-matching text at all. A lead, not a verdict (see big
+    // comment above) -- always cross-check the unit's own wiki page.
+    const possibleFalseCollabs: string[] = [];
     let noWikiRow = 0;
 
     for (const u of units) {
@@ -254,6 +271,12 @@ async function main() {
         unnamedCollabs.push(`${u.name} (#${u.unitNumber}): wiki says "${row.methodLines.join(" | ")}" — ${siblingNote}`);
       }
 
+      if (u.isCollab && !anyCollab) {
+        possibleFalseCollabs.push(
+          `${u.name} (#${u.unitNumber}): isCollab=true but wiki's obtaining method has no collab text: "${row.methodLines.join(" | ")}" (current source=${u.source ?? "null"}, setName=${u.setName ?? "null"}) -- verify against the unit's own wiki page before correcting`
+        );
+      }
+
       if (u.source === null && u.setName === null) {
         const distinctSources = new Set(classified.map((c) => c.source));
         if (classified.length === 1 && classified[0].source) {
@@ -281,6 +304,11 @@ async function main() {
 
     console.log(`\n  ? ${ambiguous.length} unit(s) with no source/setName have multiple or unrecognized wiki method(s), needs a human look:`);
     for (const a of ambiguous) console.log(`    - ${a}`);
+
+    console.log(
+      `\n  ⚠ ${possibleFalseCollabs.length} unit(s) are isCollab=true but the wiki shows no collab text at all (LEAD, not a verdict -- check each unit's own wiki page, same as the 6 confirmed false positives fixed 2026-07-12):`
+    );
+    for (const f of possibleFalseCollabs) console.log(`    - ${f}`);
 
     console.log("\n✓ Audit complete (read-only -- no database writes were made)");
   } finally {

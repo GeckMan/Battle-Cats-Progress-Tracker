@@ -25,7 +25,15 @@ const FORM_BADGE: Record<number, string> = {
 
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
 
-function spriteUrl(unitNumber: number, formIndex: number) {
+function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
+  // Ancient Egg units: base & evolved forms use a shared egg sprite
+  // (non-standard filenames that can't be derived from the unit number).
+  // Kept in sync with the same special case in UnitsClient.tsx and
+  // FriendUnitsClient.tsx so this page doesn't uniquely fail to load these
+  // sprites while the other two views handle them fine.
+  if (unitName?.startsWith("Ancient Egg") && formIndex <= 1) {
+    return `/api/sprite?u=0&f=m`;
+  }
   const letter = FORM_LETTER[formIndex] ?? "f";
   return `/api/sprite?u=${unitNumber}&f=${letter}`;
 }
@@ -348,7 +356,7 @@ function CompareRow({ unit: u }: { unit: CompareUnit }) {
       {/* Sprite */}
       <div className="col-span-1 flex items-center justify-center">
         <img
-          src={spriteUrl(u.unitNumber, Math.max(myDisplayForm, theirDisplayForm))}
+          src={spriteUrl(u.unitNumber, Math.max(myDisplayForm, theirDisplayForm), u.name)}
           alt=""
           width={32}
           height={32}

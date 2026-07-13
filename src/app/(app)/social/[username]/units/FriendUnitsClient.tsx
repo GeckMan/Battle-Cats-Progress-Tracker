@@ -39,6 +39,29 @@ function displayName(unit: UnitRow): string {
   }
 }
 
+/**
+ * Compute the real max form level for a unit based on which form names exist.
+ * formCount from the DB can overcount because BCData has placeholder text for
+ * forms that don't actually exist in-game yet. Kept in sync with the same
+ * helper in UnitsClient.tsx (the owner's own units page) so a friend's True
+ * Form percentage and "does not have a True Form" messaging match what the
+ * unit's owner sees for the exact same underlying data.
+ *
+ * Level 0 = not obtained, 1 = F1 (base), 2 = F2 (evolved), 3 = TF, 4 = UF
+ */
+const PLACEHOLDER_RE = /^[\d_\-.\s]+$/;
+function isRealName(name: string | null): boolean {
+  return !!name && !PLACEHOLDER_RE.test(name);
+}
+
+function realMaxForm(unit: UnitRow): number {
+  let max = 1;
+  if (isRealName(unit.evolvedName)) max = 2;
+  if (isRealName(unit.trueName)) max = 3;
+  if (isRealName(unit.ultraName)) max = 4;
+  return max;
+}
+
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
 const RARITY_ORDER = [
@@ -202,7 +225,7 @@ function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void
           <div className="space-y-1">
             <div className="text-xs text-gray-500 uppercase tracking-wide">Evolution</div>
             <p className="text-sm text-gray-500">
-              {unit.formCount <= 2 ? "This unit does not have a True Form." : "Evolution data not available for this unit."}
+              {realMaxForm(unit) <= 2 ? "This unit does not have a True Form." : "Evolution data not available for this unit."}
             </p>
           </div>
         )}
@@ -222,7 +245,8 @@ function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void
 /* ── Read-only Unit Card ───────────────────────────────────────────────── */
 
 const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInfo?: (unit: UnitRow) => void }) {
-  const level = unit.formLevel;
+  const maxLevel = realMaxForm(unit);
+  const level = Math.min(unit.formLevel, maxLevel); // clamp in case DB has a higher level than available forms
   const displayForm = Math.max(0, level - 1);
   const imgUrl = spriteUrl(unit.unitNumber, displayForm, unit.name);
 
@@ -262,7 +286,18 @@ const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInf
           height={56}
           loading="lazy"
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => { e.currentTarget.style.opacity = "0"; }}
+          onError={(e) => {
+            // If current form sprite doesn't exist, try falling back to previous form
+            const img = e.currentTarget;
+            if (displayForm > 0) {
+              const prevUrl = spriteUrl(unit.unitNumber, displayForm - 1, unit.name);
+              if (img.src !== prevUrl && !img.src.endsWith(prevUrl.split("?")[1])) {
+                img.src = prevUrl;
+                return;
+              }
+            }
+            img.style.opacity = "0";
+          }}
         />
       </div>
       <div className={`text-[10px] font-bold px-1.5 py-0.5 rounded border ${FORM_BADGE[level]}`}>
@@ -495,7 +530,7 @@ function FriendUnitsInner({
 
   const obtained = units.filter((u) => u.formLevel > 0).length;
   const trueForm = units.filter((u) => u.formLevel >= 3).length;
-  const hasTrueForm = units.filter((u) => u.formCount >= 3).length;
+  const hasTrueForm = units.filter((u) => realMaxForm(u) >= 3).length;
 
   const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {
     const rarityUnits = filtered.filter((u) => u.category === rarity);

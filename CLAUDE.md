@@ -64,7 +64,8 @@ src/app/(app)/layout.tsx      — App layout (ThemeProvider, sidebar, right pane
 src/app/(app)/units/          — Units page
 src/app/(app)/dashboard/      — Dashboard
 src/app/(app)/settings/       — Settings (includes theme toggle)
-src/app/(app)/compare/        — User comparison
+src/app/(app)/social/[username]/units/         — Friend's unit list (read-only)
+src/app/(app)/social/compare/[username]/units/ — Side-by-side unit comparison
 src/app/layout.tsx            — Root layout (fonts, global CSS)
 src/app/nerv-theme.css        — NERV theme overrides
 src/lib/theme-context.tsx     — Theme React context
@@ -88,7 +89,7 @@ Game data (units, legend stages, meow medals) is synced from [fieryhenry/BCData]
 - **GitHub Action:** `.github/workflows/sync-bcdata.yml` — runs weekly (Monday 6AM UTC) or manually via workflow_dispatch
 - **Data source:** `game_data/en/<version>/DataLocal/` and `resLocal/` folders (older BCData snapshots use a flat `<version>en/` layout instead — the script falls back to that automatically)
 - **Unit names:** parsed from `resLocal/Unit_Explanation{N}_en.csv` (pipe-delimited, line per form)
-- **Rarity:** guessed from unit ID ranges (Normal 0-8, Special 9-56, default Rare). Can be manually corrected.
+- **Rarity:** read authoritatively from `unitbuy.csv` column 13 (verified against the `bcsfe` community save-editor's own column mapping), sanity-checked against known tier distributions, with a scored fallback scan of `unitbuy.csv`/`nyankoPictureBookData.csv` columns if column 13 looks wrong, and a further fallback that searches older cloned BCData versions if the current version's CSVs lack rarity entirely (this happened for real starting around BCData v15.4.0, which dropped rarity from its CSVs). ID-range guessing (Normal 0-8, Special 9-56, default Rare) only kicks in as an absolute last resort if every one of those strategies fails, and even then never overwrites an existing `category` value.
 - **Legend stages:** parsed from `resLocal/Map_Name.csv` (pipe-delimited subchapter names)
 - **Meow medals:** parsed from `resLocal/medalname.tsv` (tab-delimited `name\tdescription`, one row per medal, in the same order as `DataLocal/medallist.json`'s `iconID` array — used as sortOrder and as the `Medal_NNN.png` image index). Matches existing rows by normalized name (star glyphs/whitespace stripped), not exact string equality — a `consolidateDuplicateMedals()` step runs before every sync as a self-healing safety net in case duplicates ever reappear. Replaces the old `scripts/import-meow-medals-miraheze.ts` wiki scraper as the source of truth for names/descriptions; that script is now legacy/manual-fallback only. Does not touch the `autoKey` field (separate hand-curated auto-completion system).
 - **Meow medal artwork:** BCData has no images at all, only text/JSON — `scripts/sync-medal-images.ts` runs right after `sync-bcdata.ts` in the same workflow and downloads artwork for any medal missing a local file in `public/medals/` from the Battle Cats wiki's Meow_Medals page. The workflow then commits any newly-downloaded PNGs back into the repo (`permissions: contents: write`), so new medal art ships with the next deploy automatically. Best-effort — if the wiki hasn't been updated yet for a brand-new medal, it just logs a warning and leaves that one image missing until a later run finds it.
