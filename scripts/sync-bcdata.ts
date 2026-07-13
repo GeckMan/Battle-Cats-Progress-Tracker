@@ -306,6 +306,26 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
   860: "Spirit of Lone Moon Lunos",
 };
 
+// Name-only overrides for units whose BCData EN Unit_Explanation entry is
+// missing/untranslated for a DIFFERENT reason than the Arena of Honor
+// tokens above — these are real, listed Uber Rares (not fusion-material
+// tokens), so they must NOT be treated as excludeFromCollection the way
+// UNIT_NAME_OVERRIDES is (see `excludeFromCollection = u.unitNumber in
+// UNIT_NAME_OVERRIDES` below — a unit landing in that map is exactly the
+// signal used to hide it from the collection entirely, which would be
+// wrong here). Kept as a separate map for that reason.
+//
+//   - 673 "Cheetah Cat": an intentionally unobtainable-without-hacking Uber
+//     Rare (per the user's own wiki screenshot, 2026-07-13) added in
+//     Version 11.7 — BCData's own EN Unit_Explanation file has no real
+//     entry for it, so it was falling back to literal untranslated
+//     Japanese ("ネコチーター"). It's still a real, intentionally-designed
+//     unit that should appear in the collection list (unlike the Arena of
+//     Honor tokens, which aren't independently obtainable units at all).
+const EXTRA_NAME_OVERRIDES: Record<number, string> = {
+  673: "Cheetah Cat",
+};
+
 // syncCollabFlags()/syncCollabFlagsFromCuratedNames() are deliberately
 // additive-only (never unset isCollab) so a hand-verified TRUE never gets
 // clobbered. That protection is asymmetric, though: there was no equivalent
@@ -414,6 +434,13 @@ const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([
   730,
   // Summer Break Survival Capsules
   765, 766, 767,
+  // Cheetah Cat (#673, setName "Epic Fest") — confirmed via the user's own
+  // wiki screenshot 2026-07-13: an unobtainable-without-hacking Uber Rare,
+  // "the worst cat in the game", zero franchise mention anywhere on its
+  // page. Its wiki page fetch had been failing entirely because our DB
+  // name was untranslated Japanese, not because it needed a collab
+  // verdict — see EXTRA_NAME_OVERRIDES above for the name fix.
+  673,
 ]);
 
 interface ParsedUnit {
@@ -464,7 +491,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
       return name && name !== "＠" ? name : null;
     });
 
-    const name = UNIT_NAME_OVERRIDES[unitNumber] ?? formNames[0];
+    const name = UNIT_NAME_OVERRIDES[unitNumber] ?? EXTRA_NAME_OVERRIDES[unitNumber] ?? formNames[0];
     if (!name) continue; // Skip units with no name
 
     // Use nyankoPictureBookData form count as the authoritative source.

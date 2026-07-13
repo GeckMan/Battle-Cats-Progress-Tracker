@@ -38,6 +38,17 @@
  * (needs DATABASE_URL/DIRECT_DATABASE_URL + real internet access to reach
  * battlecats.miraheze.org — i.e. the "Fetch Collab Verification Pages"
  * GitHub Action, not the sandbox, which cannot reach arbitrary hosts.)
+ *
+ * NAMING: wiki page titles are built from a unit's name + category
+ * (matching UnitsClient.tsx's wikiUrl() exactly), but Unit.name isn't
+ * always the wiki's real English name — e.g. unit #673 sits in our DB as
+ * literal untranslated Japanese ("ネコチーター") because BCData's own EN
+ * Unit_Explanation file had no entry for it (unobtainable content added in
+ * Version 11.7, per the user's own screenshot 2026-07-13 of its wiki page,
+ * titled "Cheetah_Cat_(Uber_Rare_Cat)"). Guessing a slug from that name
+ * 404s. Fixed the same way the user suggested: cross-reference the wiki's
+ * own "Cat Release Order" table (same page audit-obtain-methods.ts already
+ * parses) for each unit's real name before falling back to Unit.name.
  */
 import "dotenv/config";
 import { load } from "cheerio";
@@ -78,6 +89,31 @@ function wikiPageTitle(unitName: string, category: string): string {
   const slug = unitName.replace(/\s+/g, "_").replace(/[#?&]/g, "");
   const suffix = WIKI_SUFFIX[category] ?? "Cat";
   return `${slug}_(${suffix})`;
+}
+
+// ── "Cat Release Order" name lookup (fallback for a wrong/untranslated
+// Unit.name) ─────────────────────────────────────────────────────────────
+// Deliberately duplicated from audit-obtain-methods.ts's own fetch/parse
+// (same reasoning as the COLLAB_NAME_PATTERN duplication above — importing
+// that script isn't safe, it unconditionally runs main() at module load).
+const RELEASE_ORDER_PAGE = "Cat_Release_Order";
+
+function normalizeSpaces(s: string) {
+  return s.replace(/\s+/g, " ").trim();
+}
+
+function parseReleaseOrderNames(html: string): Map<number, string> {
+  const $ = load(html);
+  const names = new Map<number, string>();
+  $("table tr").each((_, tr) => {
+    const tds = $(tr).find("td");
+    if (tds.length < 5) return; // header rows use <th>; every real row has 5 columns
+    const unitNumber = Number(normalizeSpaces($(tds.get(0)).text()));
+    if (!Number.isInteger(unitNumber)) return;
+    const name = normalizeSpaces($(tds.get(2)).text());
+    if (name) names.set(unitNumber, name);
+  });
+  return names;
 }
 
 async function fetchParsedHtml(page: string): Promise<string> {
@@ -132,6 +168,16 @@ async function main() {
   const prisma = new PrismaClient({ adapter: new PrismaPg(pool), log: ["warn", "error"] });
 
   try {
+    console.log("── Fetching Cat Release Order for wiki-confirmed unit names ──");
+    let releaseOrderNames: Map<number, string> = new Map();
+    try {
+      const releaseOrderHtml = await fetchParsedHtml(RELEASE_ORDER_PAGE);
+      releaseOrderNames = parseReleaseOrderNames(releaseOrderHtml);
+      console.log(`  Parsed ${releaseOrderNames.size} name(s) from the wiki table\n`);
+    } catch (e) {
+      console.log(`  ✗ Could not fetch Cat Release Order (${(e as Error).message}) — will rely on Unit.name only\n`);
+    }
+
     console.log("── Finding isCollab=true units without a recognized real-collab setName ──");
     const flaggedCollabs = await (prisma as any).unit.findMany({
       where: { isCollab: true },
@@ -152,10 +198,28 @@ async function main() {
     let fetched = 0;
     let failed = 0;
     for (const u of toCheck) {
-      const title = wikiPageTitle(u.name, u.category);
+      const releaseOrderName = releaseOrderNames.get(u.unitNumber);
+      const primaryName = u.name;
+      const title = wikiPageTitle(primaryName, u.category);
       console.log(`── ${u.name} (#${u.unitNumber}) — setName: ${u.setName ?? "null"} — ${WIKI_BASE}/wiki/${title} ──`);
       try {
-        const html = await fetchParsedHtml(title);
+        let html: string;
+        try {
+          html = await fetchParsedHtml(title);
+        } catch (primaryErr) {
+          // Unit.name can be stale/untranslated (e.g. #673 sat in our DB as
+          // literal Japanese text, 404ing every guess built from it) — retry
+          // once against the wiki's own Cat Release Order name before giving
+          // up, rather than silently failing units whose DB name just
+          // happens to be wrong.
+          if (releaseOrderName && releaseOrderName !== primaryName) {
+            const altTitle = wikiPageTitle(releaseOrderName, u.category);
+            console.log(`  (primary name lookup failed, retrying with Cat Release Order name "${releaseOrderName}" → ${WIKI_BASE}/wiki/${altTitle})`);
+            html = await fetchParsedHtml(altTitle);
+          } else {
+            throw primaryErr;
+          }
+        }
         const paragraphs = extractIntroParagraphs(html);
         if (paragraphs.length === 0) {
           console.log("  (page fetched but no substantive paragraph text found — may need manual review)");
