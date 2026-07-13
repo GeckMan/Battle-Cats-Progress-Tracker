@@ -271,17 +271,19 @@ function compareVersions(a: string, b: string): number {
 // placeholder (e.g. "730_1", "771-1") as the literal name field for these
 // 21 units, not a parsing bug on this project's side -- confirmed
 // 2026-07-12 while investigating why the app's unit search couldn't find
-// anything for "spirit" despite these units existing. They're Arena of
-// Honor "Spirit" fusion-material tokens tied to a specific Uber Rare
-// (used to power that Uber Rare up via dojo ranking rewards) that appear
-// to have never gotten a real localized name from Ponos's own source
-// data, so there's no future BCData version where this would just fix
-// itself. Names below are the Battle Cats Wiki's Cat Release Order page's
-// "Obtaining method" text for each (the only human-readable identifier
-// available for any of them), captured via the "Audit Obtain Methods"
-// workflow. Applied here (not just as a one-off migration) so a future
-// weekly sync's unconditional `name: u.name` upsert doesn't silently
-// revert these back to the placeholder the next time this runs.
+// anything for "spirit" despite these units existing. They're "Spirit of
+// X" entries -- BCData's internal representation of a summoned ability a
+// specific Uber Rare uses in battle (the unit summons its own "Spirit of
+// X" as part of an attack), not an independently obtainable unit of its
+// own -- that appear to have never gotten a real localized name from
+// Ponos's own source data, so there's no future BCData version where this
+// would just fix itself. Names below are the Battle Cats Wiki's Cat
+// Release Order page's "Obtaining method" text for each (the only
+// human-readable identifier available for any of them), captured via the
+// "Audit Obtain Methods" workflow. Applied here (not just as a one-off
+// migration) so a future weekly sync's unconditional `name: u.name` upsert
+// doesn't silently revert these back to the placeholder the next time
+// this runs.
 const UNIT_NAME_OVERRIDES: Record<number, string> = {
   729: "Spirit of Master of Mind Soractes",
   732: "Spirit of Daybreaker Izanagi",
@@ -307,12 +309,13 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
 };
 
 // Name-only overrides for units whose BCData EN Unit_Explanation entry is
-// missing/untranslated for a DIFFERENT reason than the Arena of Honor
-// tokens above — these are real, listed Uber Rares (not fusion-material
-// tokens), so they must NOT be treated as excludeFromCollection the way
-// UNIT_NAME_OVERRIDES is (see `excludeFromCollection = u.unitNumber in
-// UNIT_NAME_OVERRIDES` below — a unit landing in that map is exactly the
-// signal used to hide it from the collection entirely, which would be
+// missing/untranslated for a DIFFERENT reason than the "Spirit of X"
+// summoned-ability entries above — these are real, listed Uber Rares (not
+// summoned-ability placeholders), so they must NOT be treated as
+// excludeFromCollection the way UNIT_NAME_OVERRIDES is (see
+// `excludeFromCollection = u.unitNumber in UNIT_NAME_OVERRIDES` below — a
+// unit landing in that map is exactly the signal used to hide it from the
+// collection entirely, which would be
 // wrong here). Kept as a separate map for that reason.
 //
 //   - 673 "Cheetah Cat": an intentionally unobtainable-without-hacking Uber
@@ -554,8 +557,8 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     const batch = units.slice(i, i + batchSize);
     await Promise.all(
       batch.map((u) => {
-        // Arena of Honor "Spirit of X" fusion-material tokens (the same 21
-        // units in UNIT_NAME_OVERRIDES) aren't real collectible units — set
+        // "Spirit of X" summoned-ability entries (the same 21 units in
+        // UNIT_NAME_OVERRIDES) aren't real collectible units — set
         // unconditionally on every sync so this can never regress even if a
         // future BCData version stops needing the name override for one of
         // them (e.g. if Ponos ever gives it a real localized name).
@@ -1485,7 +1488,7 @@ async function syncCollabFlagsFromCuratedNames(prisma: PrismaClient) {
 async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   const unclassified = await (prisma as any).unit.findMany({
     // excludeFromCollection: false — a unit hidden from the entire app
-    // (the Arena of Honor "Spirit of X" fusion tokens) will never show
+    // (the "Spirit of X" summoned-ability entries) will never show
     // "How to Obtain: Unknown" to anyone regardless of its source/setName,
     // so it shouldn't clutter this warning. Confirmed 2026-07-13: without
     // this, all 21 Spirit units still showed up here even after being

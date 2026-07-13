@@ -77,8 +77,8 @@ async function computeProgressSummary(
         where: {
           userId,
           formLevel: { gte: 1 },
-          // excludeFromCollection: never count Arena of Honor fusion-material
-          // tokens. OR-in null source: units like Li'l Cats have no source
+          // excludeFromCollection: never count the "Spirit of X" summoned-
+          // ability entries. OR-in null source: units like Li'l Cats have no source
           // set but are still real, trackable units (source: {not: X} alone
           // would silently exclude every NULL-source row too).
           unit: { excludeFromCollection: false, OR: [{ source: null }, { source: { not: "UNOBTAINABLE" } }] },

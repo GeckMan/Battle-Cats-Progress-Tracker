@@ -70,9 +70,9 @@ export async function GET(req: Request) {
 
     // Build where clause — no pagination, load all units for the current view
     const where: Record<string, unknown> = {
-      // Arena of Honor "Spirit of X" fusion-material tokens and any other
-      // future non-collectible entries — never part of the tracked
-      // collection, regardless of any other filter selected.
+      // "Spirit of X" summoned-ability entries and any other future
+      // non-collectible entries — never part of the tracked collection,
+      // regardless of any other filter selected.
       excludeFromCollection: false,
     };
     if (category) where.category = category;

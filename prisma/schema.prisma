@@ -301,16 +301,17 @@ model Unit {
   setName     String?                // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
   banners       String[]  @default([]) // all banners this unit can be pulled from (for multi-banner filtering)
   evolutionData Json?                  // { tf?: { xp, items: [{id,name,count}] }, uf?: { xp, items } }
-  // true = not a real collectible cat -- e.g. the 21 Arena of Honor "Spirit
-  // of X" fusion-material tokens (see UNIT_NAME_OVERRIDES in
-  // scripts/sync-bcdata.ts), which exist in BCData's unit table but are
-  // dojo-rank rewards tied to powering up a specific Uber Rare, not
-  // something obtained/leveled like a normal unit. Excluded from every
-  // collection listing, total count, and completion percentage. Confirmed
-  // 2026-07-13: before these units had real names they were invisible to
-  // the app (they happened to fail a placeholder-name regex check), and a
-  // user's friend confirmed that was the correct behavior once the rename
-  // made them visible and inflated the app's unit totals.
+  // true = not a real collectible cat -- e.g. the 21 "Spirit of X" entries
+  // (see UNIT_NAME_OVERRIDES in scripts/sync-bcdata.ts), which exist in
+  // BCData's unit table as internal representations of a summoned ability
+  // certain Uber Rares use in battle (the unit summons its own "Spirit of
+  // X" as part of an attack), not an independently obtainable/leveled unit
+  // of their own. Excluded from every collection listing, total count, and
+  // completion percentage. Confirmed 2026-07-13: before these units had
+  // real names they were invisible to the app (they happened to fail a
+  // placeholder-name regex check), and a user's friend confirmed that was
+  // the correct behavior once the rename made them visible and inflated
+  // the app's unit totals.
   excludeFromCollection Boolean @default(false)
 
   progress UserUnitProgress[]
