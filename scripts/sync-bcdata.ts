@@ -168,6 +168,13 @@ async function main() {
     console.log("\n── Backstopping Collab Flags from Resolved Names ──");
     await syncCollabFlagsFromCuratedNames(prisma);
 
+    // Read-only: re-checks every EXISTING isCollab=true unit against the
+    // same bcu-assets/コラボ evidence used above to detect new ones — the
+    // regular flagging functions are deliberately additive-only and never
+    // do this on their own. See the big comment on the function.
+    console.log("\n── Checking Existing Collab Flags Against Evidence ──");
+    await checkExistingCollabFlagsAgainstEvidence(prisma, dataLocal, bcuNames);
+
     await checkUnitClassificationCoverage(prisma);
     // Re-detect families here (cheap — just re-reads the already-cloned
     // CSVs) so the coverage check can look up debut-row siblings for any
@@ -1386,6 +1393,87 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   console.log(
     `    → These will show "How to Obtain: Unknown" in the app. Set Unit.source/setName manually if known.`
   );
+}
+
+/**
+ * Reverse-direction check for the isCollab false-positive pattern found
+ * 2026-07-13 (Li'l Cats, Summer Break Cats units, Scarf Cat, Spectral Goth
+ * Vega, and 6 others before them) — all traced back to three March 2026
+ * migrations that set isCollab=true from a unit's SOURCE type rather than
+ * verified real-world franchise status. syncCollabFlags()/
+ * syncCollabFlagsFromCuratedNames() are deliberately additive-only (never
+ * unset isCollab), which correctly protects hand-verified TRUEs but also
+ * means the regular sync never re-examines an EXISTING isCollab=true flag
+ * against the same bcu-assets/コラボ evidence it uses to detect NEW ones.
+ * This closes that gap using data this sync already has loaded, no new
+ * data source needed — the two verification sources this project already
+ * built (bcu-assets' Collab category block, cross-referenced here; the Cat
+ * Release Order wiki page, cross-referenced by the separate
+ * audit-obtain-methods.ts script) were always capable of this, they just
+ * hadn't been pointed at the EXISTING list before.
+ *
+ * Read-only — logs findings, makes no writes. Two tiers, because bcu-assets
+ * only has data for units obtained via a real gacha capsule banner
+ * (GatyaDataSet{E,N,R}1.csv) — a unit obtained via stamp/login/drop/serial
+ * code never appears in those files at all, collab or not, so its absence
+ * there is NOT evidence either way:
+ *   1. STRONG lead: the unit appears in gacha banner history at all, but
+ *      none of those rows carry a コラボ label or a bcu-assets "Collab"
+ *      category name. Since bcu-assets DOES have an opinion here and it's
+ *      not "collab", this is real evidence, not just an absence of proof.
+ *   2. WEAK lead: the unit never appears in any gacha banner row at all
+ *      (obtained via stamp/login/drop/serial/unobtainable instead) — bcu-
+ *      assets has no data on it whatsoever, so this only means "can't
+ *      confirm via this source, check the unit's own wiki page instead."
+ */
+async function checkExistingCollabFlagsAgainstEvidence(
+  prisma: PrismaClient,
+  dataLocal: string,
+  bcuNames: BcuGachaNames | null
+) {
+  const confirmedCollabIds = detectCollabUnitIds(dataLocal, bcuNames);
+
+  // Every unit ID appearing anywhere in gacha banner history at all,
+  // regardless of collab status — used to distinguish "bcu-assets checked
+  // this and it's not collab" from "bcu-assets has no data on this unit."
+  const idsWithGachaHistory = new Set<number>();
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) continue;
+    for (const row of parseGatyaSetFile(readFileSync(filePath, "utf-8"))) {
+      for (const id of row.unitIds) idsWithGachaHistory.add(id);
+    }
+  }
+
+  const flaggedCollabs = await (prisma as any).unit.findMany({
+    where: { isCollab: true },
+    select: { unitNumber: true, name: true, setName: true },
+    orderBy: { unitNumber: "asc" },
+  });
+
+  const strongLeads: string[] = [];
+  const weakLeads: string[] = [];
+  for (const u of flaggedCollabs) {
+    if (confirmedCollabIds.has(u.unitNumber) || MANUALLY_VERIFIED_NOT_COLLAB.has(u.unitNumber)) continue;
+    const entry = `${u.name} (#${u.unitNumber})${u.setName ? ` — setName: "${u.setName}"` : ""}`;
+    if (idsWithGachaHistory.has(u.unitNumber)) {
+      strongLeads.push(entry);
+    } else {
+      weakLeads.push(entry);
+    }
+  }
+
+  console.log(
+    `\n  ${strongLeads.length} unit(s) flagged isCollab=true have gacha banner history but NO コラボ/bcu-assets collab signal on any of their rows (strong lead, likely false positive — verify against the unit's own wiki page before correcting):`
+  );
+  for (const s of strongLeads.slice(0, 40)) console.log(`    - ${s}`);
+  if (strongLeads.length > 40) console.log(`    …and ${strongLeads.length - 40} more`);
+
+  console.log(
+    `\n  ${weakLeads.length} unit(s) flagged isCollab=true have NO gacha banner history at all (weak lead — bcu-assets has no opinion either way, check the unit's own wiki page or the Cat Release Order audit instead):`
+  );
+  for (const w of weakLeads.slice(0, 40)) console.log(`    - ${w}`);
+  if (weakLeads.length > 40) console.log(`    …and ${weakLeads.length - 40} more`);
 }
 
 /**
