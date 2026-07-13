@@ -323,7 +323,24 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
 // three-source confirmation this was wrong). Listed here too since this
 // exact unit has already been mislabeled by hand once before -- worth the
 // extra permanent protection.
-const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([29, 45, 62, 82, 140, 141, 682]);
+//
+// 25 more added 2026-07-13 (migration
+// 20260713000003_fix_more_legacy_iscollab_false_positives), all traced to
+// the SAME root cause: three March 2026 migrations that set isCollab=true
+// based on a unit's SOURCE type (Event Capsule/Serial Code/Campaign/
+// Unobtainable) rather than on real-world collaboration status. The full
+// 21-unit "Li'l Cats" permanent gacha set, plus the 3 Summer Break Cats
+// units and the Nyanko Rangers unit already individually confirmed
+// non-collab elsewhere this session, all inherited that same wrong flag.
+// This is very likely NOT the full extent of the problem -- see the
+// "Audit Obtain Methods" workflow for a systematic sweep of the rest.
+const MANUALLY_VERIFIED_NOT_COLLAB = new Set<number>([
+  29, 45, 62, 82, 140, 141, 682,
+  // Li'l Cats permanent set
+  63, 70, 74, 79, 80, 81, 100, 104, 109, 122, 128, 132, 176, 183, 227, 244, 282, 303, 329, 343, 501,
+  // Summer Break Cats (base/Castaway/Paradise) + Nyanko Rangers
+  670, 813, 822, 831,
+]);
 
 interface ParsedUnit {
   unitNumber: number;
