@@ -53,6 +53,7 @@ import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { Pool } from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
+import { load } from "cheerio";
 import { PrismaClient } from "../src/generated/prisma/index.js";
 import { GACHA_EVENT_NAMES } from "./data/gacha-event-names.js";
 
@@ -191,6 +192,14 @@ async function main() {
     // but never got isCollab set — see the big comment on the function.
     console.log("\n── Backstopping Collab Flags from Resolved Names ──");
     await syncCollabFlagsFromCuratedNames(prisma);
+
+    // Backfills `source` (the "How to Obtain" field) from the wiki's own
+    // Cat Release Order table for any unit that still has it null — run
+    // before the coverage checks below so freshly-filled units don't
+    // spuriously show up as still-missing in this same run's logs. Never
+    // touches isCollab — see the big comment on the function.
+    console.log("\n── Backfilling Source from Cat Release Order Wiki Page ──");
+    await syncSourceFromReleaseOrder(prisma);
 
     // Read-only: re-checks every EXISTING isCollab=true unit against the
     // same bcu-assets/コラボ evidence used above to detect new ones — the
@@ -1474,6 +1483,225 @@ async function syncBannerMembership(prisma: PrismaClient, dataLocal: string) {
   );
 }
 
+// ── Source Backfill from the Cat Release Order Wiki Page ───────────────────
+//
+// Added 2026-07-13 after a direct user report: Hanzo the Betrothed (#862)
+// already has setName "June Bride" (from syncEventSets()'s family-clustering)
+// but still showed "How to Obtain: Unknown" in the app, because `source` and
+// `setName` are two completely separate fields and nothing in this pipeline
+// has ever auto-populated `source` for a unit obtained by anything OTHER
+// than a real gacha capsule banner. Every single one of those cases this
+// session (Kaoru Cat, Capsule Cat, Blue Shinobi, God, Masked Cat, Maiko Cat,
+// Toy Machine Cat...) needed its own one-off manual migration — there was no
+// general mechanism at all, just accumulating individual fixes.
+//
+// The Battle Cats Wiki's "Cat Release Order" page has a literal, structured
+// "Obtaining method" column for every unit ID (already treated as ground
+// truth read-only evidence by audit-obtain-methods.ts, which this reuses the
+// same METHOD_PREFIX_MAP classification from — duplicated rather than
+// imported, since audit-obtain-methods.ts also unconditionally runs main()
+// at module load). Unlike isCollab, `source` is a mechanical read of a
+// structured wiki column describing literally how the game hands you the
+// unit — not a real-world-franchise judgment call — so this WRITES it
+// automatically when unambiguous, rather than only logging a proposal for a
+// human to type into a migration by hand. Deliberately scoped narrow:
+//   - Only fills `source` when it's currently NULL — never overwrites.
+//   - Only writes when every method line on the wiki resolves to the SAME
+//     single source via METHOD_PREFIX_MAP — a multi-region unit with a
+//     different method per region is left alone and logged as ambiguous
+//     instead of guessed at.
+//   - NEVER touches isCollab. A method line whose detail text matches
+//     /collab/i is only ever logged as a lead for the existing
+//     fetch-collab-verification-pages.ts pipeline to confirm — real-world
+//     franchise status always needs a human/AI reading the unit's own wiki
+//     page, same bar as everywhere else in this project.
+//   - Only fills setName (when it's also null) if the wiki's own detail text
+//     shares a significant word with an ALREADY-EXISTING setName in this DB
+//     (the same word-overlap heuristic audit-obtain-methods.ts already uses)
+//     — adopts that existing name rather than ever inventing a new label
+//     from wiki phrasing, which is exactly the kind of fragmentation
+//     migration 20260713000007 had to clean up after.
+const RELEASE_ORDER_PAGE = "Cat_Release_Order";
+const OBTAIN_METHOD_COLLAB_PATTERN = /collab/i;
+const OBTAIN_METHOD_PREFIX_MAP: Array<[string, string]> = [
+  ["Rare Cat Capsules", "RARE_CAPSULE"],
+  ["Rare Cat Capsule", "RARE_CAPSULE"],
+  ["Event Cat Capsules", "EVENT_CAPSULE"],
+  ["Event Cat Capsule", "EVENT_CAPSULE"],
+  ["Event Capsules", "EVENT_CAPSULE"],
+  ["Event Capsule", "EVENT_CAPSULE"],
+  ["Stamp Reward", "STAMP_REWARD"],
+  ["Daily Login", "DAILY_LOGIN"],
+  ["Special Sale", "SPECIAL_SALE"],
+  ["External App", "EXTERNAL_APP"],
+  ["Campaign", "SEASONAL_EVENT"],
+  ["Drop", "STAGE_DROP"],
+];
+
+interface ReleaseOrderRow {
+  unitNumber: number;
+  name: string;
+  methodLines: string[];
+}
+
+function normalizeWikiText(s: string): string {
+  return s.replace(/\s+/g, " ").trim();
+}
+
+async function fetchWikiPageHtml(page: string): Promise<string> {
+  const url =
+    "https://battlecats.miraheze.org/w/api.php?action=parse&format=json&prop=text&redirects=1&page=" +
+    encodeURIComponent(page);
+  const res = await fetch(url, {
+    headers: { "User-Agent": "battlecats-progress/1.0", Accept: "application/json" }, // Miraheze can be picky without a UA
+  });
+  if (!res.ok) throw new Error(`HTTP ${res.status} from parse API`);
+  const json = (await res.json()) as any;
+  if (json?.error) throw new Error(`parse API error: ${json.error.info ?? json.error.code}`);
+  const html = json?.parse?.text?.["*"] as string | undefined;
+  if (!html) throw new Error("parse API returned no HTML");
+  return html;
+}
+
+function parseReleaseOrderRows(html: string): ReleaseOrderRow[] {
+  const $ = load(html);
+  const rows: ReleaseOrderRow[] = [];
+  $("table tr").each((_, tr) => {
+    const tds = $(tr).find("td");
+    if (tds.length < 5) return; // header rows use <th>, every real row has 5 columns
+    const unitNumber = Number(normalizeWikiText($(tds.get(0)).text()));
+    if (!Number.isInteger(unitNumber)) return;
+    const name = normalizeWikiText($(tds.get(2)).text());
+    // Preserve line breaks inside the cell (some units have one method line
+    // per region) before flattening to text.
+    const methodCell = $(tds.get(4)).clone();
+    methodCell.find("br").replaceWith("\n");
+    const methodLines = methodCell
+      .text()
+      .split("\n")
+      .map(normalizeWikiText)
+      .filter((l) => l.length > 0);
+    if (!name || methodLines.length === 0) return;
+    rows.push({ unitNumber, name, methodLines });
+  });
+  return rows;
+}
+
+function classifyObtainMethodLine(line: string): { source: string | null; detail: string; isCollabText: boolean } {
+  for (const [prefix, source] of OBTAIN_METHOD_PREFIX_MAP) {
+    if (line.startsWith(prefix)) {
+      const rest = line.slice(prefix.length).replace(/^\s*-\s*/, "").trim();
+      return { source, detail: rest, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(rest) };
+    }
+  }
+  return { source: null, detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+}
+
+const SET_NAME_MATCH_STOPWORDS = new Set(["the", "of", "and", "event", "collaboration", "collab", "1/2"]);
+
+function findExistingSetNameMatch(detail: string, allSetNames: string[]): string | null {
+  const words = detail
+    .toLowerCase()
+    .replace(/[^a-z0-9\s/]/g, " ")
+    .split(/\s+/)
+    .filter((w) => w.length >= 4 && !SET_NAME_MATCH_STOPWORDS.has(w));
+  for (const setName of allSetNames) {
+    const lower = setName.toLowerCase();
+    if (words.some((w) => lower.includes(w))) return setName;
+  }
+  return null;
+}
+
+async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
+  let html: string;
+  try {
+    html = await fetchWikiPageHtml(RELEASE_ORDER_PAGE);
+  } catch (e) {
+    console.log(`  ⚠ Could not fetch Cat Release Order (${(e as Error).message}) — skipping source backfill this run`);
+    reviewWarningCount += 1;
+    return;
+  }
+
+  const rows = parseReleaseOrderRows(html);
+  if (rows.length === 0) {
+    console.log("  ⚠ Parsed 0 row(s) from Cat Release Order — table markup may have changed, skipping source backfill");
+    reviewWarningCount += 1;
+    return;
+  }
+  const byUnitNumber = new Map(rows.map((r) => [r.unitNumber, r]));
+  console.log(`  Parsed ${rows.length} row(s) from the wiki table`);
+
+  const candidates = await (prisma as any).unit.findMany({
+    where: { source: null, excludeFromCollection: false },
+    select: { unitNumber: true, name: true, setName: true },
+  });
+
+  const setNameRows = await (prisma as any).unit.findMany({
+    where: { setName: { not: null } },
+    select: { setName: true },
+  });
+  const allSetNames = [...new Set(setNameRows.map((u: any) => u.setName as string))] as string[];
+
+  let filled = 0;
+  let filledSetNameToo = 0;
+  const stillAmbiguous: string[] = [];
+  const collabLeads: string[] = [];
+
+  for (const u of candidates) {
+    const row = byUnitNumber.get(u.unitNumber);
+    if (!row) continue; // no wiki row at all — left for checkUnitClassificationCoverage() to flag
+
+    const classified = row.methodLines.map(classifyObtainMethodLine);
+    const distinctSources = new Set(classified.map((c) => c.source));
+
+    if (distinctSources.size !== 1 || classified[0].source === null) {
+      stillAmbiguous.push(`${u.name} (#${u.unitNumber}): "${row.methodLines.join(" | ")}"`);
+      continue;
+    }
+
+    const source = classified[0].source!;
+    const updateData: Record<string, unknown> = { source };
+
+    if (!u.setName) {
+      const detail = classified.map((c) => c.detail).filter(Boolean).join(" / ");
+      const existingMatch = detail ? findExistingSetNameMatch(detail, allSetNames) : null;
+      if (existingMatch) {
+        updateData.setName = existingMatch;
+        updateData.banners = [existingMatch];
+        filledSetNameToo++;
+      }
+    }
+
+    await (prisma as any).unit.update({ where: { unitNumber: u.unitNumber }, data: updateData });
+    filled++;
+
+    if (classified.some((c) => c.isCollabText)) {
+      collabLeads.push(
+        `${u.name} (#${u.unitNumber}): wiki text mentions "collab" ("${row.methodLines.join(" | ")}") — source filled, isCollab left untouched, verify via the unit's own wiki page`
+      );
+    }
+  }
+
+  console.log(
+    `  ✓ Filled source for ${filled} unit(s) from the wiki's obtaining method${filledSetNameToo > 0 ? ` (${filledSetNameToo} also matched to an existing setName)` : ""}`
+  );
+
+  if (stillAmbiguous.length > 0) {
+    console.log(
+      `  ⚠ ${stillAmbiguous.length} unit(s) have a wiki row but multiple/unrecognized obtaining method(s), needs a human look: ${stillAmbiguous
+        .slice(0, 10)
+        .join("; ")}${stillAmbiguous.length > 10 ? " …and more" : ""}`
+    );
+    reviewWarningCount += stillAmbiguous.length;
+  }
+
+  if (collabLeads.length > 0) {
+    console.log(`  ⚑ ${collabLeads.length} newly-source-filled unit(s) have collab-sounding wiki text:`);
+    for (const c of collabLeads) console.log(`    - ${c}`);
+    reviewWarningCount += collabLeads.length;
+  }
+}
+
 /**
  * Backstop for isCollab, run AFTER setName/banners are fully resolved above.
  *
@@ -1526,14 +1754,18 @@ async function syncCollabFlagsFromCuratedNames(prisma: PrismaClient) {
 }
 
 /**
- * Surfaces units that still have no way to explain "How to Obtain" in the
- * UI — no source, no set, and not flagged as collab. These previously went
- * silently unnoticed (e.g. a brand-new Uber Rare that isn't a collab but
- * also hasn't been manually assigned a gacha set name yet). Rather than
- * trying to guess a set name from untranslated data, this just makes the
- * gap visible in the weekly sync log so it can be fixed with a 30-second
- * manual edit — the same "flag it, don't guess it" pattern used for
- * Great Advent milestone coverage above.
+ * Surfaces units that will show "How to Obtain: Unknown" in the UI. That
+ * text is driven by `source` ALONE (see UnitsClient.tsx's
+ * `SOURCE_LABELS[unit.source ?? ""] ?? unit.source ?? "Unknown"` — setName
+ * only renders as a smaller secondary line underneath, it's never a
+ * fallback for the main line). This check used to require BOTH source AND
+ * setName to be null, which completely missed exactly this case: Hanzo the
+ * Betrothed (#862) already had setName "June Bride" from family-clustering,
+ * but source was still null, so it silently showed "Unknown" in the app
+ * without ever tripping this warning. Fixed 2026-07-13 after the user
+ * caught it live. Now checks source alone — syncSourceFromReleaseOrder()
+ * above runs first each sync and fills what it unambiguously can from the
+ * wiki, so anything still null here after that genuinely needs a look.
  */
 async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   const unclassified = await (prisma as any).unit.findMany({
@@ -1543,24 +1775,24 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
     // so it shouldn't clutter this warning. Confirmed 2026-07-13: without
     // this, all 21 Spirit units still showed up here even after being
     // excluded from every user-facing view.
-    where: { isCollab: false, source: null, setName: null, excludeFromCollection: false },
-    select: { unitNumber: true, name: true },
+    where: { isCollab: false, source: null, excludeFromCollection: false },
+    select: { unitNumber: true, name: true, setName: true },
     orderBy: { unitNumber: "asc" },
   });
 
   if (unclassified.length === 0) {
-    console.log("  Unit source/set coverage: OK (every unit has a source, a set, or is flagged as collab)");
+    console.log("  Unit source coverage: OK (every non-collab unit has a source set)");
     return;
   }
 
   const preview = unclassified
     .slice(0, 15)
-    .map((u: any) => `${u.name} (#${u.unitNumber})`)
+    .map((u: any) => `${u.name} (#${u.unitNumber})${u.setName ? ` [setName already: "${u.setName}"]` : ""}`)
     .join(", ");
   const more = unclassified.length > 15 ? ` …and ${unclassified.length - 15} more` : "";
-  console.log(`  ⚠ ${unclassified.length} unit(s) have no source, set, or collab classification: ${preview}${more}`);
+  console.log(`  ⚠ ${unclassified.length} unit(s) have no source classification: ${preview}${more}`);
   console.log(
-    `    → These will show "How to Obtain: Unknown" in the app. Set Unit.source/setName manually if known.`
+    `    → These will show "How to Obtain: Unknown" in the app regardless of setName. Set Unit.source manually if known.`
   );
   reviewWarningCount += unclassified.length;
 }
