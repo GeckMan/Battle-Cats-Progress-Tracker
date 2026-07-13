@@ -11,17 +11,27 @@
  * the JP-language tab instead of the English one.
  *
  * WHICH units get checked: every unit currently isCollab=true whose
- * setName isn't already a recognized real-collab name (same
- * isBcuCollabName()/BCU_KNOWN_COLLAB_CATEGORIES check used in
- * sync-bcdata.ts's checkExistingCollabFlagsAgainstEvidence(), duplicated
- * here in the small, deliberately-copied form audit-obtain-methods.ts
- * already uses for its own independent classification constants — keep
- * BCU_KNOWN_COLLAB_CATEGORIES in sync with sync-bcdata.ts by hand if either
- * changes). This is intentionally broader than that function's "strong
- * lead" bucket (no BCData clone or bcu-assets fetch needed at all here) —
- * it also covers units with NO gacha banner history (stamp/login/drop/
- * serial-code units bcu-assets can never have an opinion on), which is
- * exactly the gap this wiki-based check exists to close.
+ * setName doesn't already name a specific, confirmed-real franchise (see
+ * CONFIRMED_REAL_COLLAB_FRANCHISES/BCU_KNOWN_COLLAB_CATEGORIES below).
+ *
+ * FIXED 2026-07-13: this used to skip any setName matching the bare word
+ * /collab/i, mirroring sync-bcdata.ts's isBcuCollabName(). That accidentally
+ * excluded exactly the units whose real-world status is most uncertain —
+ * "Shakurel Planet Collaboration Event", "Princess Punt Sweets
+ * Collaboration", and "Betakkuma Collaboration" all contain the word
+ * "Collaboration" in OUR OWN internal setName label, but that label isn't
+ * external evidence of anything; it's this project's own (possibly stale)
+ * text. An in-house Battle Cats event can be labeled "Collaboration"
+ * internally as a crossover between two of Ponos's own storylines without
+ * ever licensing outside IP — matching the bare word treats our own
+ * uncertain label as if it were a verdict, which is circular. Matching a
+ * SPECIFIC franchise name instead (Fate, Evangelion, Street Fighter, etc.)
+ * is real, external signal; the bare word is not. This is intentionally
+ * broader than checkExistingCollabFlagsAgainstEvidence()'s "strong lead"
+ * bucket in sync-bcdata.ts (no BCData clone or bcu-assets fetch needed at
+ * all here) — it also covers units with NO gacha banner history (stamp/
+ * login/drop/serial-code units bcu-assets can never have an opinion on),
+ * which is exactly the gap this wiki-based check exists to close.
  *
  * Read-only: makes NO database writes, only prints each unit's fetched
  * intro paragraph(s) to the log for a human (or the next Claude session)
@@ -64,14 +74,30 @@ const API_URL = `${WIKI_BASE}/w/api.php`;
 // script has no reason to clone BCData or fetch bcu-assets data itself,
 // so importing sync-bcdata.ts isn't safe anyway (it unconditionally runs
 // main() at module load, cloning BCData as a side effect of import).
-const COLLAB_NAME_PATTERN = /collab/i;
+//
+// A curated list of real, licensed franchise names this session has
+// directly confirmed via bcu-assets' own explicit "Collab" category block
+// (IDs -2000 through at least -2033, see the big comment on
+// BCU_KNOWN_COLLAB_CATEGORIES in sync-bcdata.ts) and/or live in-app
+// dropdown verification. Matching one of these specific proper nouns is a
+// real external signal that a setName is a genuine collab — unlike the
+// bare word "collab"/"Collaboration", which can appear in an internal,
+// unverified setName label for an in-house crossover event that never
+// licensed any outside IP (exactly the bug this list replaces, see the
+// file-level doc comment above).
+const CONFIRMED_REAL_COLLAB_FRANCHISES = [
+  "fate", "evangelion", "madoka magica", "bikkuriman", "street fighter",
+  "hatsune miku", "ranma", "kunio-kun", "metal slug", "tower of saviors",
+  "rurouni kenshin", "baki", "sonic the hedgehog", "demon slayer",
+];
 const BCU_KNOWN_COLLAB_CATEGORIES = new Set<string>([
   "Rurouni Kenshin Gacha",
   "Baki Hanma Capsules",
   "Bikkuriman Chocolate Capsules",
 ]);
 function isRecognizedCollabName(name: string): boolean {
-  return COLLAB_NAME_PATTERN.test(name) || BCU_KNOWN_COLLAB_CATEGORIES.has(name);
+  const lower = name.toLowerCase();
+  return CONFIRMED_REAL_COLLAB_FRANCHISES.some((f) => lower.includes(f)) || BCU_KNOWN_COLLAB_CATEGORIES.has(name);
 }
 
 // Matches the "View on Wiki" link building in UnitsClient.tsx/
