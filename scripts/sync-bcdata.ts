@@ -1536,6 +1536,13 @@ const OBTAIN_METHOD_PREFIX_MAP: Array<[string, string]> = [
   ["External App", "EXTERNAL_APP"],
   ["Campaign", "SEASONAL_EVENT"],
   ["Drop", "STAGE_DROP"],
+  // Added 2026-07-14 after the first live run of this function flagged
+  // Helmet Cat (#833) and Giga-Nyan Rex (#836) as "unrecognized" despite
+  // their wiki text literally reading "Catnip Challenges - 13th
+  // Anniversary" — CATNIP_CHALLENGES is an existing, already-used `source`
+  // value (see SOURCE_LABELS in UnitsClient.tsx and the 19-unit list in
+  // migration 20260303000004), this prefix was just missing from the map.
+  ["Catnip Challenges", "CATNIP_CHALLENGES"],
 ];
 
 interface ReleaseOrderRow {
