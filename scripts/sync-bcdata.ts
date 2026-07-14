@@ -51,6 +51,7 @@ import "dotenv/config";
 import { execSync } from "child_process";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
+import { fileURLToPath } from "url";
 import { Pool } from "pg";
 import { PrismaPg } from "@prisma/adapter-pg";
 import { load } from "cheerio";
@@ -3382,7 +3383,23 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
 }
 
 // ── Run ──────────────────────────────────────────────────────────────────────
-main().catch((e) => {
-  console.error("Sync failed:", e);
-  process.exit(1);
-});
+// Guarded so main() only fires when this file is executed directly (`npx tsx
+// ./scripts/sync-bcdata.ts`, or the weekly GitHub Action) — NOT merely
+// imported. Found 2026-07-14 while tracing a user question about unrelated
+// unit-sort-order data: audit-gacha-names.ts imports cloneOrPull/
+// findLatestVersion/detectEventFamilies/fetchBcuGachaNameMap/
+// BCU_CATEGORY_ALIAS from this module. Without this guard, ES modules
+// execute their ENTIRE top-level body on first import regardless of which
+// specific named bindings are requested — so every run of "Audit Gacha
+// Names" was silently triggering this file's real main() (a full BCData
+// sync with real database writes) as a side effect of the import
+// statement, before the audit script's own read-only logic ever started —
+// directly contradicting that script's own "read-only, no writes" doc
+// comment. This is the standard Node/ESM equivalent of the old CommonJS
+// `if (require.main === module)` check.
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((e) => {
+    console.error("Sync failed:", e);
+    process.exit(1);
+  });
+}
