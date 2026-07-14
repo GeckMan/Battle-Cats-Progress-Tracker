@@ -1,4 +1,19 @@
+import type { Metadata } from "next";
 import AboutClient from "./AboutClient";
+
+// This page doesn't require a login (see robots.ts's comment on why),
+// making it the one page worth its own search-friendly metadata instead of
+// inheriting the generic root layout title/description.
+export const metadata: Metadata = {
+  title: "About — Battle Cats Progress",
+  description:
+    "A fan-made progress tracker for The Battle Cats. Track story chapters, legend stages, meow medals, milestones, and your unit collection, then compare with friends.",
+  openGraph: {
+    title: "About — Battle Cats Progress",
+    description:
+      "A fan-made progress tracker for The Battle Cats. Track story chapters, legend stages, meow medals, milestones, and your unit collection, then compare with friends.",
+  },
+};
 
 export default function AboutPage() {
   return (

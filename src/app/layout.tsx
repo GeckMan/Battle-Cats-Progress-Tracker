@@ -27,6 +27,10 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  // Lets Next.js resolve openGraph/canonical URLs to absolute ones
+  // (https://battlecatsprogress.app/...) instead of relative paths, which
+  // search engines and link-preview crawlers (Discord, Reddit, etc.) need.
+  metadataBase: new URL("https://battlecatsprogress.app"),
   title: "Battle Cats Progress",
   description: "Track your Battle Cats game progress: story chapters, legend stages, medals, milestones, and more.",
   openGraph: {
