@@ -94,18 +94,24 @@ const RARITY_ACCENT: Record<string, string> = {
 // means, not this source value — see the Sets dropdown's "Collabs" option
 // (src/app/api/units/route.ts's onlyCollab param) for that real filter.
 const SOURCE_LABELS: Record<string, string> = {
-  RARE_CAPSULE:      "Rare Cat Capsule",
-  EVENT_CAPSULE:     "Event Capsule",
-  SEASONAL_EVENT:    "Seasonal Event",
-  STAGE_DROP:        "Stage Drop",
-  EMPIRE_OF_CATS:    "Empire of Cats",
-  DAILY_LOGIN:       "Daily Login",
-  CATNIP_CHALLENGES: "Catnip Challenges",
-  SPECIAL_SALE:      "Special Sale",
-  EXTERNAL_APP:      "External App",
-  STAMP_REWARD:      "Stamp Reward",
-  EASTER_EGG:        "Easter Egg",
-  UNOBTAINABLE:      "Unobtainable",
+  RARE_CAPSULE:        "Rare Cat Capsule",
+  EVENT_CAPSULE:       "Event Capsule",
+  SEASONAL_EVENT:      "Seasonal Event",
+  STAGE_DROP:          "Stage Drop",
+  EMPIRE_OF_CATS:      "Empire of Cats",
+  DAILY_LOGIN:         "Daily Login",
+  CATNIP_CHALLENGES:   "Catnip Challenges",
+  SPECIAL_SALE:        "Special Sale",
+  EXTERNAL_APP:        "External App",
+  STAMP_REWARD:        "Stamp Reward",
+  EASTER_EGG:          "Easter Egg",
+  UNOBTAINABLE:        "Unobtainable",
+  // Added 2026-07-14: units unlocked by clearing a specific story chapter
+  // (e.g. Cat God the Great from Cats of the Cosmos Chapter 2) rather than
+  // any kind of capsule/gacha/login mechanic — auto-detected by
+  // sync-bcdata.ts's syncSourceFromReleaseOrder() from the Cat Release
+  // Order wiki page's "<Story> - complete Chapter N" phrasing.
+  STORY_CHAPTER_CLEAR: "Story Chapter Clear",
 };
 
 // Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)

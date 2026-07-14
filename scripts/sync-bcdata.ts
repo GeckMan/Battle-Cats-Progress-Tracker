@@ -1594,7 +1594,19 @@ function parseReleaseOrderRows(html: string): ReleaseOrderRow[] {
   return rows;
 }
 
+// "<Story name> - complete Chapter N: <subchapter>" is a distinct, clearly
+// structured obtaining method (unlocked by clearing a specific story
+// chapter) — confirmed on Cat God the Great (#437, "Cats of the Cosmos -
+// complete Chapter 2: The Passion of Catgod") and Filibuster Cat X (#462,
+// "Cats of the Cosmos - complete Chapter 3: ..."). Checked ahead of the
+// fixed prefix list below since the varying story name (Cats of the
+// Cosmos, The Aku Realms, etc.) can't itself be a static prefix.
+const STORY_CHAPTER_CLEAR_RE = /^.+? - complete Chapter \d+/i;
+
 function classifyObtainMethodLine(line: string): { source: string | null; detail: string; isCollabText: boolean } {
+  if (STORY_CHAPTER_CLEAR_RE.test(line)) {
+    return { source: "STORY_CHAPTER_CLEAR", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+  }
   for (const [prefix, source] of OBTAIN_METHOD_PREFIX_MAP) {
     if (line.startsWith(prefix)) {
       const rest = line.slice(prefix.length).replace(/^\s*-\s*/, "").trim();
@@ -1619,6 +1631,60 @@ function findExistingSetNameMatch(detail: string, allSetNames: string[]): string
   return null;
 }
 
+// ── Individual-Page Fallback for Units the Release Order Table Can't
+//    Resolve ─────────────────────────────────────────────────────────────
+// Added 2026-07-14 after the user compared our output against Superfeline's
+// (#643) own wiki page: the Release Order table's Method column is a
+// *summary* maintained separately from each unit's dedicated page, and can
+// omit real context that page has — Superfeline's row just says "Cat
+// Capsule - Cat Capsule+" with no mention that the capsule doesn't even
+// become available until Cats of the Cosmos Chapter 3 is cleared, a detail
+// only stated on Superfeline's own page. For any unit whose Release Order
+// row doesn't resolve to a single known source, this fetches that unit's
+// own wiki page (same title-building/paragraph-parsing approach as
+// fetch-collab-verification-pages.ts — duplicated rather than imported,
+// since that script also unconditionally runs main() at module load) and
+// logs its intro paragraph alongside the ambiguous Release Order text, so
+// whoever reviews the sync log next has the fuller picture in one place
+// instead of needing to look each one up separately by hand. Best-effort
+// and strictly read-only for this part — it only enriches the log line,
+// it never writes `source` from this free-text page content, since intro
+// prose is far less structured/reliable to parse than the Release Order
+// table's own Method column.
+const WIKI_SUFFIX: Record<string, string> = {
+  NORMAL: "Normal_Cat",
+  SPECIAL: "Special_Cat",
+  RARE: "Rare_Cat",
+  SUPER_RARE: "Super_Rare_Cat",
+  UBER_RARE: "Uber_Rare_Cat",
+  LEGEND_RARE: "Legend_Rare_Cat",
+};
+
+function wikiPageTitle(unitName: string, category: string): string {
+  // Don't strip "&" — see UnitsClient.tsx's wikiUrl() for why (MediaWiki
+  // preserves it, encodeURIComponent already escapes it correctly).
+  const slug = unitName.replace(/\s+/g, "_").replace(/[#?]/g, "");
+  const suffix = WIKI_SUFFIX[category] ?? "Cat";
+  return `${slug}_(${suffix})`;
+}
+
+function extractIntroParagraph(html: string): string | null {
+  const $ = load(html);
+  // Strip the portable-infobox's <style> block first — otherwise its raw
+  // CSS text lands inside a <p> in some page layouts and gets mistaken for
+  // real prose (same issue documented in fetch-collab-verification-pages.ts).
+  $("style, script").remove();
+  for (const el of $("p").toArray()) {
+    const text = $(el).text().replace(/\s+/g, " ").trim();
+    if (text.length >= 15 && !/\{[^{}]*:[^{}]*;/.test(text)) return text;
+  }
+  return null;
+}
+
+function sleepMs(ms: number): Promise<void> {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
 async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
   let html: string;
   try {
@@ -1640,7 +1706,7 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
 
   const candidates = await (prisma as any).unit.findMany({
     where: { source: null, excludeFromCollection: false },
-    select: { unitNumber: true, name: true, setName: true },
+    select: { unitNumber: true, name: true, setName: true, category: true },
   });
 
   const setNameRows = await (prisma as any).unit.findMany({
@@ -1651,7 +1717,7 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
 
   let filled = 0;
   let filledSetNameToo = 0;
-  const stillAmbiguous: string[] = [];
+  const stillAmbiguous: Array<{ unitNumber: number; name: string; category: string; methodLines: string[] }> = [];
   const collabLeads: string[] = [];
 
   for (const u of candidates) {
@@ -1662,7 +1728,7 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
     const distinctSources = new Set(classified.map((c) => c.source));
 
     if (distinctSources.size !== 1 || classified[0].source === null) {
-      stillAmbiguous.push(`${u.name} (#${u.unitNumber}): "${row.methodLines.join(" | ")}"`);
+      stillAmbiguous.push({ unitNumber: u.unitNumber, name: u.name, category: u.category, methodLines: row.methodLines });
       continue;
     }
 
@@ -1695,10 +1761,30 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
 
   if (stillAmbiguous.length > 0) {
     console.log(
-      `  ⚠ ${stillAmbiguous.length} unit(s) have a wiki row but multiple/unrecognized obtaining method(s), needs a human look: ${stillAmbiguous
-        .slice(0, 10)
-        .join("; ")}${stillAmbiguous.length > 10 ? " …and more" : ""}`
+      `  ⚠ ${stillAmbiguous.length} unit(s) have a wiki row but multiple/unrecognized obtaining method(s), needs a human look:`
     );
+    // Best-effort: fetch each ambiguous unit's OWN wiki page and pull its
+    // intro paragraph, since the Release Order table's Method column is a
+    // summary that can omit context the dedicated page has (Superfeline
+    // #643 is the confirmed case: its row just says "Cat Capsule - Cat
+    // Capsule+" with no mention that the capsule is gated behind clearing
+    // Cats of the Cosmos Chapter 3 — only that unit's own page says so).
+    // Never blocks or fails the run on a fetch error — just falls back to
+    // the terse Release Order text for that one unit.
+    for (const u of stillAmbiguous) {
+      const methodText = u.methodLines.join(" | ");
+      let extra = "";
+      try {
+        const pageHtml = await fetchWikiPageHtml(wikiPageTitle(u.name, u.category));
+        const intro = extractIntroParagraph(pageHtml);
+        if (intro) extra = ` | own wiki page says: "${intro}"`;
+      } catch {
+        // Page fetch/parse failed (name mismatch, ampersand, page doesn't
+        // exist, etc.) — fine, just report the Release Order text alone.
+      }
+      console.log(`    - ${u.name} (#${u.unitNumber}): "${methodText}"${extra}`);
+      await sleepMs(400); // polite delay between individual page fetches, matches fetch-collab-verification-pages.ts
+    }
     reviewWarningCount += stillAmbiguous.length;
   }
 

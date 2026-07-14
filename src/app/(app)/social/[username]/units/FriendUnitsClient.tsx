@@ -80,18 +80,21 @@ const RARITY_ACCENT: Record<string, string> = {
 // NOTE: EVENT_CAPSULE used to be labeled "Collab" here, which was actively
 // misleading — see the matching comment in UnitsClient.tsx's SOURCE_LABELS.
 const SOURCE_LABELS: Record<string, string> = {
-  RARE_CAPSULE:      "Rare Cat Capsule",
-  EVENT_CAPSULE:     "Event Capsule",
-  SEASONAL_EVENT:    "Seasonal Event",
-  STAGE_DROP:        "Stage Drop",
-  EMPIRE_OF_CATS:    "Empire of Cats",
-  DAILY_LOGIN:       "Daily Login",
-  CATNIP_CHALLENGES: "Catnip Challenges",
-  SPECIAL_SALE:      "Special Sale",
-  EXTERNAL_APP:      "External App",
-  STAMP_REWARD:      "Stamp Reward",
-  EASTER_EGG:        "Easter Egg",
-  UNOBTAINABLE:      "Unobtainable",
+  RARE_CAPSULE:        "Rare Cat Capsule",
+  EVENT_CAPSULE:       "Event Capsule",
+  SEASONAL_EVENT:      "Seasonal Event",
+  STAGE_DROP:          "Stage Drop",
+  EMPIRE_OF_CATS:      "Empire of Cats",
+  DAILY_LOGIN:         "Daily Login",
+  CATNIP_CHALLENGES:   "Catnip Challenges",
+  SPECIAL_SALE:        "Special Sale",
+  EXTERNAL_APP:        "External App",
+  STAMP_REWARD:        "Stamp Reward",
+  EASTER_EGG:          "Easter Egg",
+  UNOBTAINABLE:        "Unobtainable",
+  // Added 2026-07-14 — see the matching comment in UnitsClient.tsx's
+  // SOURCE_LABELS for the full explanation (story-chapter-clear units).
+  STORY_CHAPTER_CLEAR: "Story Chapter Clear",
 };
 
 const FORM_LETTER = ["f", "c", "s", "u"] as const;
