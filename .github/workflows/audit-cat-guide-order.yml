@@ -1,0 +1,32 @@
+name: Audit Cat Guide Order
+
+# One-time/manual diagnostic — NOT on a schedule. Dumps every unit's raw
+# nyankoPictureBookData.csv row alongside its DB name/category, so the
+# output can be compared by hand against the real in-game Cat Guide
+# screen's display order. Read-only: makes no database writes and no
+# commits. Run from the Actions tab when investigating whether any column
+# in BCData reflects the in-game Cat Guide order (which can differ from
+# plain release/unitNumber order, per a user report).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Run Cat Guide order audit (read-only)
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/audit-cat-guide-order.ts
