@@ -191,8 +191,9 @@ export default function AboutPage() {
             thanks to{" "}
             <strong className="text-gray-200">bvg</strong>,{" "}
             <strong className="text-gray-200">JSDPLAYSBCEN</strong>, and{" "}
-            <strong className="text-gray-200">mranimemeboi</strong> for flagging issues on the site
-            and on Reddit. If you spot something off, let us know &mdash; it helps everyone.
+            <strong className="text-gray-200">mranimemeboi</strong>{" "}
+            for flagging issues on the site and on Reddit. If you spot something off, let us know.
+            It helps everyone.
           </p>
         </section>
 
