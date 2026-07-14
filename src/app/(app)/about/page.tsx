@@ -86,6 +86,18 @@ export default function AboutPage() {
           </h2>
 
           <ChangelogEntry
+            version="1.1"
+            date="July 14, 2026"
+            items={[
+              "Units now show far more accurate \"How to Obtain\" info, auto-synced weekly from the wiki's Cat Release Order page",
+              "Re-verified every unit flagged as a real-world collaboration against its own wiki page, fixing dozens of mistagged units and several miscategorized gacha sets (Bikkuriman, Baki Hanma, Rurouni Kenshin) that had split into two entries in the Sets filter",
+              "Fixed wiki links breaking for units with an \"&\" in their name",
+              "Fixed the Compare button overlapping the Activity & Chat button on a friend's profile page",
+              "Chat & Activity panel opens more reliably on mobile and no longer fights with the on-screen keyboard",
+            ]}
+          />
+
+          <ChangelogEntry
             version="1.0"
             date="July 8, 2026"
             items={[
@@ -167,6 +179,21 @@ export default function AboutPage() {
               "Site launch: Story, Legend, Medals tracking and friend/compare system",
             ]}
           />
+        </section>
+
+        {/* Bug Reports & Feedback */}
+        <section className="space-y-3">
+          <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
+            Thanks for the Bug Reports
+          </h2>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            This site gets better because people take the time to report what&apos;s broken. Big
+            thanks to{" "}
+            <strong className="text-gray-200">bvg</strong>,{" "}
+            <strong className="text-gray-200">JSDPLAYSBCEN</strong>, and{" "}
+            <strong className="text-gray-200">mranimemeboi</strong> for flagging issues on the site
+            and on Reddit. If you spot something off, let us know &mdash; it helps everyone.
+          </p>
         </section>
 
         {/* Credits */}
