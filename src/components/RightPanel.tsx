@@ -42,8 +42,14 @@ export default function RightPanel({
       )}
 
       {/* Drawer */}
+      {/* h-dvh (dynamic viewport height), not h-screen (100vh) — on mobile,
+          100vh is measured against the LARGEST possible viewport (address
+          bar collapsed) and ignores the on-screen keyboard, so the drawer
+          could extend below the actually-visible area and make the chat
+          input hard to reach once the keyboard opens. 100dvh tracks the
+          real visible viewport as the keyboard/browser chrome show/hide. */}
       <aside
-        className={`fixed top-0 right-0 h-screen w-[420px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-40 flex flex-col transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 right-0 h-dvh w-[420px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-40 flex flex-col transition-transform duration-300 ease-in-out ${
           open ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -4,7 +4,8 @@ import { useState, useEffect, useCallback, lazy, Suspense } from "react";
 import { PanelToggleButton } from "./PanelToggleButton";
 
 // Lazy-load the full 1300-line RightPanel — it's only needed when the user opens it
-const RightPanel = lazy(() => import("./RightPanel"));
+const loadRightPanel = () => import("./RightPanel");
+const RightPanel = lazy(loadRightPanel);
 
 const LS_KEY_ACTIVITY = "bc_lastSeenActivity";
 const LS_KEY_CHAT = "bc_lastSeenChat";
@@ -90,6 +91,22 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
     const interval = setInterval(checkUnread, 60000);
     return () => clearInterval(interval);
   }, [checkUnread]);
+
+  // Warm the RightPanel chunk shortly after the app shell mounts, instead of
+  // only ever fetching it on the user's first tap. lazy()'s Suspense
+  // fallback is `null`, so without this, tapping the toggle button on a
+  // fresh page load makes the button disappear with ZERO visual feedback
+  // until the chunk finishes downloading — reported as the panel (chat in
+  // particular) feeling "clunky" to open, especially over a mobile
+  // connection. A short delay keeps this out of the critical initial-paint
+  // path; by the time a user actually reaches for the button, the chunk is
+  // very likely already cached.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      loadRightPanel().catch(() => {});
+    }, 1500);
+    return () => clearTimeout(timer);
+  }, []);
 
   // Presence heartbeat — this component is mounted for the whole authenticated
   // app shell (not just while the panel is open), so it's a reliable place to
