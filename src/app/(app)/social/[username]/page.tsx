@@ -119,7 +119,7 @@ export default async function FriendProfilePage(props: {
   const displayLabel = user.displayName ?? user.username;
 
   return (
-    <div className="p-4 pt-16 md:p-8 space-y-6 w-full">
+    <div className="p-4 pt-16 md:p-8 md:pt-16 space-y-6 w-full">
 
       {/* Header */}
       <div className="flex items-start justify-between gap-4">
