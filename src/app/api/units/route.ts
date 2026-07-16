@@ -170,12 +170,19 @@ export async function GET(req: Request) {
     const sets: string[] = regularSetRows.map((r: any) => r.setName as string);
     const collabSets: string[] = collabSetRows.map((r: any) => r.setName as string);
 
+    // @ts-ignore – AppMeta added in new migration
+    const versionMeta = await (prisma as any).appMeta.findUnique({
+      where: { key: "bcDataVersion" },
+      select: { value: true },
+    });
+
     return NextResponse.json({
       units: result,
       total: result.length,
       sources: allSources.map((r: any) => r.source),
       sets,
       collabSets,
+      bcDataVersion: versionMeta?.value ?? null,
     });
   } catch {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });

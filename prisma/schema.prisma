@@ -403,3 +403,19 @@ model LoginAttempt {
   @@index([createdAt])
   @@index([ip, createdAt])
 }
+
+/**
+ * ---------- App Metadata (generic key/value) ----------
+ * Small store for facts about the app's own state that aren't tied to any
+ * user — currently just the BCData version last synced, so the Units page
+ * can show a real, self-updating "current to game version X" note instead
+ * of a hardcoded string that silently goes stale every time new units ship
+ * (bug report, 2026-07-16, bvg_tbc: the note still said "15.1.1" long after
+ * newer units like Moon Lunos and Vornado had already synced in).
+ */
+
+model AppMeta {
+  key       String   @id
+  value     String
+  updatedAt DateTime @updatedAt
+}

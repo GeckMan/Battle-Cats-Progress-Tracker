@@ -149,6 +149,18 @@ async function main() {
     const latestVersion = findLatestVersion();
     console.log(`Latest EN version: ${latestVersion}`);
 
+    // Record the synced version so the Units page can show a real,
+    // self-updating "current to game version X" note instead of a
+    // hardcoded string (bug report, 2026-07-16, bvg_tbc: the old hardcoded
+    // note still said "15.1.1" long after newer units had already synced
+    // in). Written up front, before any parsing that could fail partway
+    // through, since even a partial sync run did pull real, newer data.
+    await (prisma as any).appMeta.upsert({
+      where: { key: "bcDataVersion" },
+      create: { key: "bcDataVersion", value: latestVersion },
+      update: { value: latestVersion },
+    });
+
     const dataDir = path.join(CLONE_DIR, "game_data", REGION, latestVersion);
     // Fallback for old repo structure (no game_data folder)
     const altDataDir = path.join(CLONE_DIR, `${latestVersion}${REGION}`);
@@ -2774,23 +2786,120 @@ const ZL_MAX = 60;
 
 // ── Crown counts per saga ──────────────────────────────────────────────────
 // SoL and UL: all subchapters have 4 crowns (fully released).
-// ZL: varies by subchapter. Map_option.csv has this data but BCData doesn't
-// extract it, so we hardcode the known values. New ZL subchapters discovered
-// by forward scan default to 1 crown.
+// ZL: varies by subchapter and PONOS periodically raises the ceiling for
+// older subchapters over time (Map_option.csv has this data but BCData
+// doesn't extract it). ZL_TWO_CROWN_NAMES below is a known-good FLOOR from
+// the last time this was hand-verified — fetchZlCrownMap() below scrapes the
+// wiki's own "Available up to N♛ difficulty" note per subchapter so this
+// stops silently drifting out of date the way it did before (bug report,
+// 2026-07-16, bvg_tbc: 2-crown difficulty stopped at "New World Area" on the
+// site but reaches "Garden of Wilted Thoughts" in the live game — this
+// hardcoded set was still the original 5-name list from whenever ZL 2-crown
+// difficulty was first introduced, never extended as PONOS kept raising it).
 const SOL_MAX_CROWNS = 4;
 const UL_MAX_CROWNS = 4;
 
-// ZL subchapters with 2 crowns (the rest have 1)
+// ZL subchapters with 2 crowns as of 2026-07-16 (the rest have 1) — used as
+// the floor when the wiki scrape below is unavailable or fails to parse,
+// and as a safety net getZlMaxCrowns() never regresses below even if the
+// scrape returns something unexpected.
 const ZL_TWO_CROWN_NAMES = new Set([
   "Zero Field",
   "The Edge of Spacetime",
   "Cats Cradle Basin",
   "The Ururuvu Journals",
   "New World Area: Ehen",
+  "Cats of a Common Sea",
+  "Truth in Extremes",
+  "Demon of Deciliter Bay",
+  "Garden of Wilted Thoughts",
 ]);
 
-function getZlMaxCrowns(name: string): number {
-  return ZL_TWO_CROWN_NAMES.has(name) ? 2 : 1;
+// Matches the wiki's own crown-difficulty note, e.g. "Available up to 2♛
+// difficulty." — the crown symbol is a distinctive-enough anchor that this
+// doesn't need to be scoped any more tightly than "the paragraph following
+// a given Sub-chapter heading."
+const ZL_CROWN_NOTE_RE = /Available up to (\d)♛/;
+
+/**
+ * Scrapes https://battlecats.miraheze.org/wiki/Legend_Stages' "Zero Legends"
+ * section for each subchapter's "Available up to N♛ difficulty" note,
+ * keyed by 1-based subchapter number (NOT name — ZL subchapter names have
+ * known minor wording differences between BCData/our DB and the wiki, e.g.
+ * "New World Area: Ehen" vs the wiki's "New World Ehen", but the ordinal
+ * position of a given real-world subchapter is the same everywhere, so
+ * joining on "Sub-chapter N" sidesteps that fuzzy-matching problem entirely).
+ *
+ * Best-effort: returns null on any fetch/parse failure so callers fall back
+ * to the static ZL_TWO_CROWN_NAMES floor above rather than blocking the
+ * whole sync or writing garbage crown counts.
+ */
+async function fetchZlCrownMap(): Promise<Map<number, number> | null> {
+  try {
+    const html = await fetchWikiPageHtml("Legend_Stages");
+    const $ = load(html);
+
+    // cheerio's .text() doesn't insert line breaks between sibling block
+    // elements the way a browser's innerText would, so headings/paragraphs
+    // are collected one at a time and joined with explicit newlines —
+    // otherwise "Sub-chapter 9: Garden of Wilted Thoughts" would run
+    // straight into the description paragraph that follows it with no
+    // separator at all, breaking the regex below.
+    const lines: string[] = [];
+    let inSection = false;
+    $("h2, h3, h4, p, li").each((_, el) => {
+      const tag = ((el as any).tagName ?? "").toLowerCase();
+      const text = normalizeWikiText($(el).text());
+      if (!text) return;
+      if (!inSection) {
+        if ((tag === "h2" || tag === "h3") && text === "Zero Legends") inSection = true;
+        return;
+      }
+      // Any other top-level heading (e.g. "Other Permanent Stages", which
+      // directly follows the last ZL subchapter on both the Miraheze and
+      // Fandom copies of this page) ends the section. "Sub-chapter N: ..."
+      // entries are excluded from this check on purpose in case they turn
+      // out to be headings themselves rather than plain paragraph text.
+      if ((tag === "h2" || tag === "h3") && text !== "Zero Legends" && !/^Sub-chapter \d+/.test(text)) {
+        inSection = false;
+        return;
+      }
+      lines.push(text);
+    });
+
+    if (lines.length === 0) {
+      console.warn("    Could not find a 'Zero Legends' heading on the wiki page — using static ZL_TWO_CROWN_NAMES fallback");
+      return null;
+    }
+
+    const sectionText = lines.join("\n");
+    const subchapterRe = /Sub-chapter (\d+): [^\n]+\n([\s\S]*?)(?=\nSub-chapter \d+:|$)/g;
+    const crownMap = new Map<number, number>();
+    let m: RegExpExecArray | null;
+    while ((m = subchapterRe.exec(sectionText))) {
+      const subchapterNum = Number(m[1]);
+      const crownMatch = ZL_CROWN_NOTE_RE.exec(m[2]);
+      if (crownMatch) crownMap.set(subchapterNum, Number(crownMatch[1]));
+    }
+
+    if (crownMap.size === 0) {
+      console.warn("    Found the 'Zero Legends' section but no 'Available up to N♛ difficulty' notes — using static ZL_TWO_CROWN_NAMES fallback");
+      return null;
+    }
+    console.log(`    Scraped crown difficulty for ${crownMap.size} Zero Legends sub-chapters from the wiki`);
+    return crownMap;
+  } catch (e: any) {
+    console.warn(`    Failed to scrape Zero Legends crown data from the wiki (${e.message}) — using static ZL_TWO_CROWN_NAMES fallback`);
+    return null;
+  }
+}
+
+function getZlMaxCrowns(subchapterNum: number, name: string, wikiCrownMap: Map<number, number> | null): number {
+  const floor = ZL_TWO_CROWN_NAMES.has(name) ? 2 : 1;
+  const scraped = wikiCrownMap?.get(subchapterNum);
+  // Never regress below the known-good static floor even if the scrape
+  // returns something unexpected (e.g. a mis-scoped section boundary).
+  return scraped !== undefined ? Math.max(scraped, floor) : floor;
 }
 
 // ── Great Advent milestone coverage check ───────────────────────────────────
@@ -2829,6 +2938,11 @@ function checkGreatAdventMilestoneCoverage(allNames: string[]) {
 }
 
 async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLocal: string) {
+  // Fetched once up front so both the known-name loop and the new-subchapter
+  // forward scan below can use it — see fetchZlCrownMap()'s own comment for
+  // why this is keyed by subchapter number rather than name.
+  const wikiCrownMap = await fetchZlCrownMap();
+
   // ── Step 1: Parse Map_Name.csv ─────────────────────────────────────────
   const mapNamePath = path.join(resLocal, "Map_Name.csv");
   if (!existsSync(mapNamePath)) {
@@ -2992,7 +3106,7 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     const target = ZL_KNOWN_NAMES[i];
     const found = fuzzyFindName(target, allNames);
     if (found) {
-      subchapters.push({ sortOrder: i, name: found, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(found) });
+      subchapters.push({ sortOrder: i, name: found, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(i + 1, found, wikiCrownMap) });
       zlNameSet.add(found); // Add the ACTUAL name from Map_Name.csv
       if (found !== target) {
         console.log(`    Fuzzy match: "${target}" → "${found}"`);
@@ -3058,7 +3172,11 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       // Found a name that's not SoL, not UL, not ZL, not non-legend.
       // This is likely a new ZL subchapter!
       const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
-      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends", maxCrowns: 1 }); // new ZL defaults to 1 crown
+      // Defaults to 1 crown unless the wiki scrape has a note for this
+      // subchapter number (a brand-new ZL subchapter is almost always
+      // 1-crown-only at launch, but no reason not to pick up day-one data
+      // if the wiki's already been updated).
+      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(sortOrder + 1, nm, wikiCrownMap) });
       zlNameSet.add(nm);
       newZlCount++;
       consecutiveSkips = 0;

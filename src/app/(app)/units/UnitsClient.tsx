@@ -606,6 +606,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
   const [availableCollabSets, setAvailableCollabSets] = useState<string[]>([]);
+  const [bcDataVersion, setBcDataVersion] = useState<string | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [pendingIds, setPendingIds] = useState<Set<string>>(new Set());
@@ -673,6 +674,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       if (data.sources) setAvailableSources(data.sources);
       if (data.sets) setAvailableSets(data.sets);
       if (data.collabSets) setAvailableCollabSets(data.collabSets);
+      if (data.bcDataVersion !== undefined) setBcDataVersion(data.bcDataVersion);
     } catch {
       setError("Failed to load units. Please refresh.");
     } finally {
@@ -880,7 +882,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           Track each cat's form level. Click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
         <p className="text-xs text-gray-600 mt-0.5">
-          Unit data current to game version 15.1.1 · <span className="text-gray-700">Arrow keys to navigate, 0-4 to set form, i for info</span>
+          {bcDataVersion && <>Unit data current to game version {bcDataVersion} · </>}
+          <span className="text-gray-700">Arrow keys to navigate, 0-4 to set form, i for info</span>
         </p>
       </div>
 
