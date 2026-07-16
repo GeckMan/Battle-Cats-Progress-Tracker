@@ -1277,6 +1277,22 @@ export const BCU_CATEGORY_ALIAS: Record<string, string> = {
   "June Bride Gacha": "June Bride",
 };
 
+// Exact member-ID sets (sorted ascending, comma-joined) for the two
+// debut-clustering "conflicts" investigated and confirmed harmless in
+// migration 20260712000002 — see the big comment at the conflicts.push()
+// call site below for the full evidence. Re-confirmed 2026-07-16 after
+// sync run 79890183483 re-flagged this same exact pair (both wiki-verified
+// again: Nekoluga's own "Tales of the Nekoluga" wiki page names it as one
+// of that set's members; Rover Cat and Fencer Cat's own wiki pages say
+// nothing about Fate/stay night at all).
+const KNOWN_HARMLESS_FAMILY_CONFLICTS = new Set<string>([
+  // Nekoluga (#34) + 31 base "Rare Cat Capsule" units sharing its debut row.
+  "30,31,32,33,34,35,36,37,38,39,40,41,46,47,48,49,50,51,52,55,56,58,61,145,146,147,148,149,150,151,152,153",
+  // Rover Cat (#376) / Fencer Cat (#377) + 10 Fate/stay night collab units
+  // sharing their debut row.
+  "362,363,364,365,366,367,368,370,371,372,376,377",
+]);
+
 async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {
   const { families, provenance } = detectEventFamilies(dataLocal);
   if (families.size === 0) {
@@ -1290,6 +1306,7 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
   let filledViaBcu = 0;
   const newFamilies: string[] = [];
   const conflicts: string[] = [];
+  let suppressedKnownHarmless = 0;
 
   for (const [label, memberIds] of families.entries()) {
     if (memberIds.size < 2) continue; // a lone unit isn't a "set" to tie anything to
@@ -1305,6 +1322,35 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
 
     const namedSetNames = new Set(members.map((m: any) => m.setName).filter(Boolean));
     if (namedSetNames.size > 1) {
+      // Some "conflicts" are debut-clustering artifacts, not data errors: a
+      // small number of filler units from the base evergreen capsule pool
+      // can share a historical debut ROW with a completely unrelated,
+      // specifically-named event/collab family purely because BCData
+      // records one row per game-version update, not one row per "theme."
+      // Two exact cases were manually investigated and confirmed harmless
+      // (see migration 20260712000002's write-up, re-confirmed again
+      // 2026-07-16 directly against each unit's own wiki page after this
+      // exact pair resurfaced in sync run 79890183483):
+      //   - Nekoluga (#34, correctly "Tales of the Nekoluga" — its own
+      //     dedicated Rare Cat Capsule sub-banner per the wiki) shares a
+      //     debut row with 31 ordinary base-pool units correctly tagged
+      //     generic "Rare Cat Capsule".
+      //   - Rover Cat (#376) and Fencer Cat (#377) (correctly generic
+      //     "Rare Cat Capsule" — confirmed via each unit's own wiki page,
+      //     neither mentions Fate/stay night at all) share a debut row with
+      //     10 real Fate/stay night [Heaven's Feel] collab units.
+      // Matched by exact member-set content (not the synthetic per-run
+      // family key, which isn't stable across runs) so this only ever
+      // suppresses these two already-reviewed historical rows — any NEW
+      // conflict, including a future rerun of either event that adds a
+      // member, will have a different member set and still get flagged
+      // below for a fresh look.
+      const memberKey = [...memberIds].sort((a, b) => a - b).join(",");
+      if (KNOWN_HARMLESS_FAMILY_CONFLICTS.has(memberKey)) {
+        suppressedKnownHarmless++;
+        continue;
+      }
+
       // Previously only logged the two-or-more conflicting NAMES (e.g.
       // "Brainwashed Cats vs June Bride"), with no way to tell which actual
       // units were involved — useless for actually deciding which name is
@@ -1380,12 +1426,21 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
     console.log(`  ⚠ ${newFamilies.length} event famil(y/ies) have no existing curated name yet: ${preview}${more}`);
     console.log(`    → Translate and set Unit.setName manually for one member; it'll propagate to the rest next sync.`);
   }
+  if (suppressedKnownHarmless > 0) {
+    console.log(`  ${suppressedKnownHarmless} already-reviewed debut-clustering conflict(s) suppressed (see KNOWN_HARMLESS_FAMILY_CONFLICTS)`);
+  }
   if (conflicts.length > 0) {
     console.log(`  ⚠ Possible mislabeling: ${conflicts.length} event famil(y/ies) have members with different existing set names:`);
     for (const c of conflicts) {
       console.log(`    - ${c}`);
     }
     console.log(`    → Worth a manual look — one of these is likely wrong (e.g. a unit filed under the wrong banner).`);
+    // Previously never counted toward reviewWarningCount at all, so a
+    // genuinely NEW conflict (as opposed to the two known-harmless ones
+    // above, which are matched and skipped before reaching this point)
+    // could sit here indefinitely without ever failing the job the way
+    // every other coverage check does.
+    reviewWarningCount += conflicts.length;
   }
 }
 
@@ -1605,6 +1660,19 @@ const OBTAIN_METHOD_PREFIX_MAP: Array<[string, string]> = [
   // value (see SOURCE_LABELS in UnitsClient.tsx and the 19-unit list in
   // migration 20260303000004), this prefix was just missing from the map.
   ["Catnip Challenges", "CATNIP_CHALLENGES"],
+  // Added 2026-07-16 after the weekly sync flagged 3 of the 13th
+  // Anniversary units as "unrecognized obtaining method" — each has its own
+  // dedicated one-off unlock mechanic, confirmed word-for-word against each
+  // unit's own wiki page (see the sync log from run 79890183483):
+  //   - Fedora Cat (#832): "sending Gamatoto on a unique expedition"
+  //   - Goggles Cat (#834): "pressing a special icon in the Cat Guide"
+  //   - Ribbon Cat (#835): "clicking the 13th Anniv. Doge Cake in the
+  //     in-game announcement poster"
+  // Three distinct real mechanics, not variations of an existing bucket —
+  // same "don't force-fit into a nearby generic label" bar as EASTER_EGG.
+  ["Gamatoto Expedition", "GAMATOTO_EXPEDITION"],
+  ["Cat Guide", "CAT_GUIDE_UNLOCK"],
+  ["Event Poster", "EVENT_POSTER"],
 ];
 
 interface ReleaseOrderRow {
@@ -1665,9 +1733,23 @@ function parseReleaseOrderRows(html: string): ReleaseOrderRow[] {
 // Cosmos, The Aku Realms, etc.) can't itself be a static prefix.
 const STORY_CHAPTER_CLEAR_RE = /^.+? - complete Chapter \d+/i;
 
+// "<Story name> - <Stage name> Invasion" is the same kind of "unlocked by
+// clearing a specific stage" method as STORY_CHAPTER_CLEAR_RE above, just
+// for the Invasion-stage variant rather than a numbered story chapter —
+// confirmed on Jagando Jr. (#622, "The Aku Realms - Mount Aku Invasion"),
+// whose own wiki page says he's "unlocked at a 100% chance when beating the
+// Mount Aku/Mount Fuji Invasion." That's mechanically identical to any other
+// guaranteed stage-clear reward, so this maps to the existing STAGE_DROP
+// value rather than inventing a new one (unlike Gamatoto Expedition/Cat
+// Guide/Event Poster below, which are genuinely distinct mechanics).
+const INVASION_CLEAR_RE = /^.+? - .+ Invasion$/i;
+
 function classifyObtainMethodLine(line: string): { source: string | null; detail: string; isCollabText: boolean } {
   if (STORY_CHAPTER_CLEAR_RE.test(line)) {
     return { source: "STORY_CHAPTER_CLEAR", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+  }
+  if (INVASION_CLEAR_RE.test(line)) {
+    return { source: "STAGE_DROP", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
   }
   for (const [prefix, source] of OBTAIN_METHOD_PREFIX_MAP) {
     if (line.startsWith(prefix)) {

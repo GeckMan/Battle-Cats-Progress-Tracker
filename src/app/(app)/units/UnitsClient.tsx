@@ -112,6 +112,14 @@ const SOURCE_LABELS: Record<string, string> = {
   // sync-bcdata.ts's syncSourceFromReleaseOrder() from the Cat Release
   // Order wiki page's "<Story> - complete Chapter N" phrasing.
   STORY_CHAPTER_CLEAR: "Story Chapter Clear",
+  // Added 2026-07-16: three distinct 13th Anniversary one-off unlock
+  // mechanics, auto-detected by sync-bcdata.ts's syncSourceFromReleaseOrder()
+  // from the Cat Release Order wiki page (Fedora Cat #832, Goggles Cat #834,
+  // Ribbon Cat #835). STAGE_DROP already covers the Invasion-clear case
+  // (Jagando Jr. #622) — no new label needed there.
+  GAMATOTO_EXPEDITION: "Gamatoto Expedition",
+  CAT_GUIDE_UNLOCK:    "Cat Guide",
+  EVENT_POSTER:        "Event Poster",
 };
 
 // Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)
