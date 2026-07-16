@@ -236,7 +236,7 @@ async function main() {
 
     // Step 5: Parse and sync meow medal catalog
     console.log("\n── Syncing Meow Medals ──");
-    await syncMeowMedals(prisma, resLocal);
+    await syncMeowMedals(prisma, dataLocal, resLocal);
 
     console.log("\n✓ Sync complete!");
 
@@ -3403,11 +3403,24 @@ async function consolidateDuplicateMedals(prisma: PrismaClient) {
  * Syncs the Meow Medal catalog from resLocal/medalname.tsv.
  *
  * File format: one medal per line, tab-separated `Name\tDescription`, in the
- * same order as DataLocal/medallist.json's `iconID` array (verified 1:1 —
- * both have the same entry count in every version checked so far). That
- * order matches the in-game medal list order, so we reuse it as sortOrder
- * AND as the local image filename index (public/medals/Medal_NNN.png — the
- * 125 checked-in images are numbered by this same position).
+ * same order (by array position) as DataLocal/medallist.json's `iconID`
+ * array — both have the same entry count in every version checked so far,
+ * and that's still used 1:1 for matching each TSV row to its iconID entry
+ * and for the local image filename index (public/medals/Medal_NNN.png).
+ *
+ * BUT raw array/TSV position is NOT the real in-game display order past the
+ * first ~69 entries — bug report from HexagonForce, 2026-07-16: "the medals
+ * begin by following the order and then break pattern and become random."
+ * Confirmed directly against a cached BCData checkout: each iconID entry
+ * has a `line` field (a stable per-medal serial number assigned once, e.g.
+ * "Floor 30"/"Floor 40"/"Floor 50" are line 401/402/403, "Inferno
+ * 30/40/50" are 404/405/406) and sorting entries by `line` ascending
+ * reconstructs clean, sensible thematic groupings, while the raw array
+ * position tracks `line` order faithfully for indices 0-68 and then jumps
+ * around non-monotonically for the rest (e.g. index 69 has line 260 right
+ * after index 68's line 906) — `line` order is what actually matches the
+ * game's own medal list, so THAT'S what sortOrder is derived from below,
+ * not raw position.
  *
  * This replaces the old one-off Miraheze wiki scraper
  * (scripts/import-meow-medals-miraheze.ts) as the source of truth — BCData
@@ -3425,7 +3438,7 @@ async function consolidateDuplicateMedals(prisma: PrismaClient) {
  * separate auto-completion system (see src/app/api/meow-medals/sync/route.ts
  * and the scripts/set-*-autokeys.ts helpers) and is hand-curated per medal.
  */
-async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
+async function syncMeowMedals(prisma: PrismaClient, dataLocal: string, resLocal: string) {
   const medalNamePath = path.join(resLocal, "medalname.tsv");
   if (!existsSync(medalNamePath)) {
     console.log("  medalname.tsv not found — skipping meow medals");
@@ -3434,6 +3447,37 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
 
   const raw = readFileSync(medalNamePath, "utf-8");
   const lines = raw.split("\n").filter((l) => l.trim().length > 0);
+
+  // Best-effort: read medallist.json's per-entry `line` field, keyed by
+  // array position, so each TSV row's sortOrder can be its RANK when all
+  // entries are sorted by `line` ascending rather than its raw position.
+  // Falls back to raw position (the old behavior) if the file is missing,
+  // malformed, or its entry count doesn't match medalname.tsv — a stale or
+  // wrong ordering source shouldn't be trusted over a stable line-index
+  // fallback that's at least self-consistent.
+  let lineRank: number[] | null = null;
+  try {
+    const medalListPath = path.join(dataLocal, "medallist.json");
+    if (existsSync(medalListPath)) {
+      const medalList = JSON.parse(readFileSync(medalListPath, "utf-8"));
+      const iconIds: any[] = medalList?.iconID ?? [];
+      if (iconIds.length === lines.length && iconIds.every((e) => typeof e?.line === "number")) {
+        // rank[i] = position of index i when all indices are sorted by `line`
+        const order = iconIds.map((_, i) => i).sort((a, b) => iconIds[a].line - iconIds[b].line);
+        lineRank = new Array(iconIds.length);
+        order.forEach((originalIdx, rank) => {
+          lineRank![originalIdx] = rank;
+        });
+        console.log(`    Using medallist.json's "line" field for medal display order (${iconIds.length} entries)`);
+      } else {
+        console.warn(`    medallist.json entry count (${iconIds.length}) doesn't match medalname.tsv (${lines.length}), or missing "line" fields — falling back to raw TSV order`);
+      }
+    } else {
+      console.warn("    medallist.json not found — falling back to raw TSV order for medal sortOrder");
+    }
+  } catch (e: any) {
+    console.warn(`    Failed to parse medallist.json (${e.message}) — falling back to raw TSV order for medal sortOrder`);
+  }
 
   type ParsedMedal = { name: string; description: string; sortOrder: number; imageFile: string };
   const medals: ParsedMedal[] = [];
@@ -3446,7 +3490,12 @@ async function syncMeowMedals(prisma: PrismaClient, resLocal: string) {
     const name = parts[0].trim();
     const description = cleanMedalText(parts.slice(1).join("\t"));
     if (!name) continue;
-    medals.push({ name, description, sortOrder: i, imageFile: medalImageFile(i) });
+    // imageFile intentionally still keyed by raw position i, NOT lineRank —
+    // the 127 images already checked into public/medals/ were downloaded
+    // and numbered by raw position, and re-keying this would break every
+    // existing image mapping for no reason (sortOrder is the only field
+    // that actually drives display order on the Medals page).
+    medals.push({ name, description, sortOrder: lineRank ? lineRank[i] : i, imageFile: medalImageFile(i) });
   }
 
   console.log(`  medalname.tsv: ${medals.length} medals`);
