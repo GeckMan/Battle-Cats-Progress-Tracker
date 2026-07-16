@@ -200,6 +200,7 @@ async function main() {
     await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
     await backfillBannersFromSetName(prisma);
+    await syncSuperfestBanner(prisma);
 
     // Backstop: catches units whose setName/banners already say "Collab"
     // (often via family-propagation from a sibling's row, not their own)
@@ -1599,6 +1600,90 @@ async function backfillBannersFromSetName(prisma: PrismaClient) {
   console.log(
     `  ✓ Backfilled ${toFix.length} unit(s) whose setName was missing from banners (Sets filter visibility)`
   );
+}
+
+// SUPERFEST (added version 9.4, per the wiki) is structurally different
+// from every other named set this project tracks: rather than a fixed
+// roster, its own wiki page defines membership by a RULE — "all Uber Rare
+// Cats from every common pool" (i.e. every non-collab, non-seasonal Uber)
+// MINUS a short, explicit exclusion list (seasonal-event Ubers, collab
+// Ubers, Girls & Monsters: Angels of Terror Ubers, and 5 Busters-exclusive
+// units each locked to one specific Busters team stage). That makes it a
+// poor fit for the usual "look up which debut row this unit came from"
+// machinery (there's no such row — Superfest recycles units debuted
+// everywhere else), but a good fit for a straightforward rule-based rebuild
+// every sync, the same way syncBannerMembership() handles multi-banner
+// membership elsewhere. Added 2026-07-16 after HexagonForce's report that
+// "Superfest" was entirely absent from the Sets filter — confirmed via the
+// wiki page (https://battlecats.miraheze.org/wiki/SUPERFEST_(Gacha_Event))
+// rather than assumed.
+//
+// isCollab=false already covers "Collaboration Event Ubers". The seasonal
+// exclusion list below is every holiday/seasonal-capsule setName currently
+// in this DB (Gals of Summer and its variants, Xmas Gals, Halloween
+// Capsules, Valentine Gals, Lunar New Year's Capsules, June Bride and its
+// Devil variant, White Day Capsules, Easter Carnival, Love Letter Capsules,
+// New Moon Capsules, and the three Summer Break Capsules variants) — if a
+// future sync introduces a new seasonal set not yet in this list, it would
+// need adding here too; nothing currently detects that gap automatically.
+const SUPERFEST_SEASONAL_SETNAME_EXCLUSIONS = new Set<string>([
+  "Gals of Summer",
+  "Gals of Summer Blue Ocean",
+  "Gals of Summer Sunshine",
+  "Xmas Gals",
+  "Halloween Capsules",
+  "Valentine Gals",
+  "Lunar New Year's Capsules",
+  "June Bride",
+  "June Bride of Devil Capsules",
+  "White Day Capsules",
+  "Easter Carnival",
+  "Love Letter Capsules",
+  "New Moon Capsules",
+  "Summer Break Capsules",
+  "Summer Break Capsules Paradise",
+  "Summer Break Survival Capsules",
+]);
+
+// The 5 Busters-team-exclusive Ubers named on Superfest's own wiki page —
+// each locked to one specific Busters stage, never in the general pool.
+const SUPERFEST_EXCLUDED_UNIT_NAMES = new Set<string>([
+  "Pai-Pai",
+  "Strike Unit R.E.I.",
+  "Sakura Sonic",
+  "Hell Warden Emma",
+  "Goddess of Light Sirius",
+]);
+
+async function syncSuperfestBanner(prisma: PrismaClient) {
+  const uberRares = await (prisma as any).unit.findMany({
+    where: {
+      category: "UBER_RARE",
+      isCollab: false,
+      excludeFromCollection: false,
+    },
+    select: { unitNumber: true, name: true, setName: true, banners: true },
+  });
+
+  const eligible = uberRares.filter(
+    (u: any) =>
+      !SUPERFEST_EXCLUDED_UNIT_NAMES.has(u.name) &&
+      !(u.setName && SUPERFEST_SEASONAL_SETNAME_EXCLUSIONS.has(u.setName)) &&
+      !(u.banners ?? []).includes("Super Fest")
+  );
+
+  if (eligible.length === 0) {
+    console.log("  Super Fest banner: OK (every eligible Uber Rare already tagged)");
+    return;
+  }
+
+  for (const u of eligible) {
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: { banners: [...(u.banners ?? []), "Super Fest"] },
+    });
+  }
+  console.log(`  ✓ Tagged ${eligible.length} Uber Rare unit(s) with the "Super Fest" banner`);
 }
 
 // ── Source Backfill from the Cat Release Order Wiki Page ───────────────────
