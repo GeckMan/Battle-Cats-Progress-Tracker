@@ -121,11 +121,16 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
     where: { displayName: "Stories of Legend" },
     select: { id: true },
   });
-  const solSubchapters = solSaga
-    ? await prisma.legendSubchapter.findMany({
+  // @ts-ignore — src/generated/prisma checked into the repo lags behind
+  // prisma/schema.prisma locally (regenerated fresh on every Vercel
+  // build, per CLAUDE.md); `maxCrowns` is a real column already used
+  // elsewhere (e.g. legend/Sections.tsx), same workaround as the `as any`
+  // casts in src/app/api/units/route.ts.
+  const solSubchapters: any[] = solSaga
+    ? await (prisma as any).legendSubchapter.findMany({
         where: { sagaId: solSaga.id },
         orderBy: { sortOrder: "asc" },
-        select: { id: true, displayName: true, sortOrder: true },
+        select: { id: true, displayName: true, sortOrder: true, maxCrowns: true },
       })
     : [];
 
@@ -143,15 +148,34 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
   const myMap = new Map(myLegend.map((r) => [r.subchapterId, r]));
   const theirMap = new Map(theirLegend.map((r) => [r.subchapterId, r]));
 
+  // Derive the completion badge from crownMax vs. this subchapter's own
+  // maxCrowns rather than trusting the stored `status` column directly.
+  // Bug report (2026-07-16, bvg_tbc): using the saga-level bulk crown
+  // buttons to mark a whole saga done showed as "in progress" here even
+  // though the crowns were actually maxed, while individually clicking a
+  // single subchapter's own crown buttons correctly showed "completed" —
+  // traced to /api/legend/bulk (pre-fix) always persisting
+  // status="IN_PROGRESS" whenever crownMax was non-null, regardless of
+  // whether that crown value actually maxed the stage out. That endpoint
+  // is now fixed (see /api/legend/bulk), but recomputing here too — the
+  // same way legendSubchapterPercent()/the dashboard already do — means
+  // this page can never drift out of sync with the real crownMax again,
+  // even if some future code path forgets to keep `status` in sync.
+  function deriveStatus(crownMax: number | null | undefined, maxCrowns: number): string {
+    if (crownMax == null) return "NOT_STARTED";
+    return crownMax >= maxCrowns ? "COMPLETED" : "IN_PROGRESS";
+  }
+
   const compareRows: SubchapterCompareRow[] = solSubchapters.map((sc) => {
     const a = myMap.get(sc.id);
     const b = theirMap.get(sc.id);
+    const mc = sc.maxCrowns ?? 4;
     return {
       sortOrder: sc.sortOrder,
       name: sc.displayName,
-      myStatus: a?.status ?? "NOT_STARTED",
+      myStatus: deriveStatus(a?.crownMax, mc),
       myCrown: a?.crownMax ?? 0,
-      theirStatus: b?.status ?? "NOT_STARTED",
+      theirStatus: deriveStatus(b?.crownMax, mc),
       theirCrown: b?.crownMax ?? 0,
     };
   });
