@@ -8,10 +8,33 @@ export type MilestoneDef = {
 };
 
 // NOTE: Stage names are based on in-game naming; edit sortOrder to reorder within a category.
+//
+// CRAZED and MANIC each correspond 1:1 to the 9 basic Normal Cats you start
+// the game with (Cat, Tank, Axe, Gross, Cow, Bird, Fish, Lizard, Titan).
+// Crazed Cats are Super Rare versions of each line's BASE name; Manic Cats
+// are that Crazed cat's Awakening (true-form) evolution, which for several
+// lines has a wholly different name from the base line (e.g. the Cat
+// line's true form is "Mohawk Cat", not "Macho Cat" — Macho is only the
+// EVOLVED form in between). Bug report from HexagonForce, 2026-07-16,
+// confirmed against the wiki's own "Crazed Cat Stages"/"Manic Cats" stage
+// navbox (which lists all 9 real Manic names together) and several
+// individual stage pages (Deathhawk, Vulcanizer, Unjust War, Muscle Party,
+// Lots O' Lion all directly confirm their boss's exact name):
+//   - CRAZED was missing Crazed Tank Cat entirely (a nonexistent "Crazed
+//     Macho Cat" was standing in its place), and had "The Crazed Cats"
+//     pluralized inconsistently with every other entry in the category.
+//   - MANIC had "Manic Mohawk Cat" AND "Manic Macho Cat" as if they were
+//     two different milestones — they're the same cat's true form vs.
+//     evolved form, and only the true form ("Mohawk") is the actual
+//     milestone. Same duplication bug for the Axe line ("Manic Axe Cat"
+//     alongside "Manic Dark Cat", its real true-form name). "Manic Swimmer
+//     Cat" isn't a real unit at all. Net result: the Tank, Gross, Cow, and
+//     Fish lines' real Manic units (Eraser, Macho Legs, Lion, Island) were
+//     completely absent from the list.
 export const MILESTONE_CATALOG: MilestoneDef[] = [
   // ── CRAZED ──────────────────────────────────────────────────────────────────
-  { displayName: "The Crazed Cats",       category: "CRAZED", sortOrder: 1 },
-  { displayName: "The Crazed Macho Cat",  category: "CRAZED", sortOrder: 2 },
+  { displayName: "The Crazed Cat",        category: "CRAZED", sortOrder: 1 },
+  { displayName: "The Crazed Tank Cat",   category: "CRAZED", sortOrder: 2 },
   { displayName: "The Crazed Axe Cat",    category: "CRAZED", sortOrder: 3 },
   { displayName: "The Crazed Gross Cat",  category: "CRAZED", sortOrder: 4 },
   { displayName: "The Crazed Cow Cat",    category: "CRAZED", sortOrder: 5 },
@@ -21,15 +44,15 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "The Crazed Titan Cat",  category: "CRAZED", sortOrder: 9 },
 
   // ── MANIC ───────────────────────────────────────────────────────────────────
-  { displayName: "Manic Mohawk Cat",   category: "MANIC", sortOrder: 1 },
-  { displayName: "Manic Macho Cat",    category: "MANIC", sortOrder: 2 },
-  { displayName: "Manic Axe Cat",      category: "MANIC", sortOrder: 3 },
-  { displayName: "Manic Gross Cat",    category: "MANIC", sortOrder: 4 },
-  { displayName: "Manic Dark Cat",     category: "MANIC", sortOrder: 5 },
-  { displayName: "Manic Flying Cat",   category: "MANIC", sortOrder: 6 },
-  { displayName: "Manic Swimmer Cat",  category: "MANIC", sortOrder: 7 },
-  { displayName: "Manic Lizard Cat",   category: "MANIC", sortOrder: 8 },
-  { displayName: "Manic Titan Cat",    category: "MANIC", sortOrder: 9 },
+  { displayName: "Manic Mohawk Cat",      category: "MANIC", sortOrder: 1 },
+  { displayName: "Manic Eraser Cat",      category: "MANIC", sortOrder: 2 },
+  { displayName: "Manic Dark Cat",        category: "MANIC", sortOrder: 3 },
+  { displayName: "Manic Macho Legs Cat",  category: "MANIC", sortOrder: 4 },
+  { displayName: "Manic Lion Cat",        category: "MANIC", sortOrder: 5 },
+  { displayName: "Manic Flying Cat",      category: "MANIC", sortOrder: 6 },
+  { displayName: "Manic Island Cat",      category: "MANIC", sortOrder: 7 },
+  { displayName: "Manic King Dragon Cat", category: "MANIC", sortOrder: 8 },
+  { displayName: "Manic Jamiera Cat",     category: "MANIC", sortOrder: 9 },
 
   // ── ADVENT (Standard Tier 1) ──────────────────────────────────────────────
   { displayName: "Clionel Ascendant",     category: "ADVENT", sortOrder: 1 },
