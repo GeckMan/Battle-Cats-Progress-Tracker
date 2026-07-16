@@ -223,6 +223,7 @@ async function main() {
     await checkExistingCollabFlagsAgainstEvidence(prisma, dataLocal, bcuNames);
 
     await checkUnitClassificationCoverage(prisma);
+    await checkStoryProgressionUnitsHaveNoSetName(prisma);
     await checkUnitNameSanity(prisma);
     // Re-detect families here (cheap — just re-reads the already-cloned
     // CSVs) so the coverage check can look up debut-row siblings for any
@@ -1744,23 +1745,50 @@ const STORY_CHAPTER_CLEAR_RE = /^.+? - complete Chapter \d+/i;
 // Guide/Event Poster below, which are genuinely distinct mechanics).
 const INVASION_CLEAR_RE = /^.+? - .+ Invasion$/i;
 
-function classifyObtainMethodLine(line: string): { source: string | null; detail: string; isCollabText: boolean } {
+// `matchable` marks whether `detail` is specific enough to safely feed into
+// findExistingSetNameMatch()'s word-overlap check below. Bug found
+// 2026-07-16 from a live screenshot: Jagando Jr. (#622, classified via
+// INVASION_CLEAR_RE, detail = the full raw line "The Aku Realms - Mount Aku
+// Invasion") got auto-assigned setName "Invasion of Poultrio" purely
+// because both texts contain the word "invasion" — a completely unrelated
+// coincidence (Jagando Jr. is a story-progression stage-clear reward, not
+// a member of that gacha set at all). The same risk applies to
+// STORY_CHAPTER_CLEAR_RE's detail, which is likewise the full raw line
+// (e.g. "Cats of the Cosmos - complete Chapter 2: ...") — verified locally
+// that this would ALSO false-match "Battle Cats Gashapon" via the shared,
+// near-meaningless word "cats". Both regex branches return the untouched
+// full line specifically so the log shows real wiki context, but that same
+// full-line text is exactly what makes it unsafe to mine for a setName —
+// unlike the prefix-map branch below, whose `rest` is the wiki's own
+// specific descriptive remainder (e.g. "13th Anniversary"), matchable=false
+// for both regex branches; matchable=true for the prefix-map branch, whose
+// stripped remainder is what this was actually designed for.
+function classifyObtainMethodLine(line: string): { source: string | null; detail: string; isCollabText: boolean; matchable: boolean } {
   if (STORY_CHAPTER_CLEAR_RE.test(line)) {
-    return { source: "STORY_CHAPTER_CLEAR", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+    return { source: "STORY_CHAPTER_CLEAR", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line), matchable: false };
   }
   if (INVASION_CLEAR_RE.test(line)) {
-    return { source: "STAGE_DROP", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+    return { source: "STAGE_DROP", detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line), matchable: false };
   }
   for (const [prefix, source] of OBTAIN_METHOD_PREFIX_MAP) {
     if (line.startsWith(prefix)) {
       const rest = line.slice(prefix.length).replace(/^\s*-\s*/, "").trim();
-      return { source, detail: rest, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(rest) };
+      return { source, detail: rest, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(rest), matchable: true };
     }
   }
-  return { source: null, detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line) };
+  return { source: null, detail: line, isCollabText: OBTAIN_METHOD_COLLAB_PATTERN.test(line), matchable: false };
 }
 
-const SET_NAME_MATCH_STOPWORDS = new Set(["the", "of", "and", "event", "collaboration", "collab", "1/2"]);
+// Expanded 2026-07-16 (see classifyObtainMethodLine's comment above) with
+// generic Battle-Cats-domain nouns that show up across dozens of otherwise
+// unrelated real setNames ("Rare Cat Capsule", "Halloween Capsules",
+// "Battle Cats Gashapon", "Brainwashed Cats", etc.) — these words carry
+// almost no distinguishing signal on their own, so a single-word overlap on
+// any of them is far more likely to be coincidence than a real match.
+const SET_NAME_MATCH_STOPWORDS = new Set([
+  "the", "of", "and", "event", "collaboration", "collab", "1/2",
+  "cats", "cat", "capsule", "capsules", "chapter", "complete", "great",
+]);
 
 function findExistingSetNameMatch(detail: string, allSetNames: string[]): string | null {
   const words = detail
@@ -1879,13 +1907,20 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
     const source = classified[0].source!;
     const updateData: Record<string, unknown> = { source };
 
-    if (!u.setName) {
+    // Only attempt a setName match when EVERY line's detail text is the
+    // specific, stripped remainder from OBTAIN_METHOD_PREFIX_MAP — a
+    // regex-classified line's `detail` is the full raw wiki text (see
+    // classifyObtainMethodLine's comment), which is exactly the kind of
+    // generic phrasing that produced the Jagando Jr. → "Invasion of
+    // Poultrio" false match.
+    if (!u.setName && classified.every((c) => c.matchable)) {
       const detail = classified.map((c) => c.detail).filter(Boolean).join(" / ");
       const existingMatch = detail ? findExistingSetNameMatch(detail, allSetNames) : null;
       if (existingMatch) {
         updateData.setName = existingMatch;
         updateData.banners = [existingMatch];
         filledSetNameToo++;
+        console.log(`    setName match: ${u.name} (#${u.unitNumber}) — detail "${detail}" → "${existingMatch}"`);
       }
     }
 
@@ -2032,6 +2067,47 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
     `    → These will show "How to Obtain: Unknown" in the app regardless of setName. Set Unit.source manually if known.`
   );
   reviewWarningCount += unclassified.length;
+}
+
+// STORY_CHAPTER_CLEAR and the Invasion-stage variant of STAGE_DROP (see
+// INVASION_CLEAR_RE) both mean "unlocked by clearing a specific story
+// stage" — conceptually never a gacha "set" a player pulls from, so these
+// units should never carry a setName at all. Added 2026-07-16 after a live
+// screenshot showed Jagando Jr. (#622) with setName "Invasion of Poultrio"
+// — findExistingSetNameMatch()'s word-overlap heuristic had matched the
+// generic word "invasion" shared with that unrelated real gacha set (fixed
+// at the source in classifyObtainMethodLine/syncSourceFromReleaseOrder
+// above via the new `matchable` gate). This check is the general backstop:
+// it doesn't matter WHICH bug produces a bogus setName on one of these
+// units — this catches it regardless, the same way
+// checkExistingCollabFlagsAgainstEvidence() backstops isCollab. Read-only:
+// flags for a human/AI to confirm and clear via migration, same bar as
+// every other coverage check here (this only ever writes when a human
+// reviews and applies a targeted fix, never auto-clears silently).
+async function checkStoryProgressionUnitsHaveNoSetName(prisma: PrismaClient) {
+  const suspicious = await (prisma as any).unit.findMany({
+    where: {
+      source: { in: ["STORY_CHAPTER_CLEAR", "STAGE_DROP"] },
+      setName: { not: null },
+      excludeFromCollection: false,
+    },
+    select: { unitNumber: true, name: true, source: true, setName: true },
+    orderBy: { unitNumber: "asc" },
+  });
+
+  if (suspicious.length === 0) {
+    console.log("  Story/stage-progression setName check: OK (none of these units carry a setName)");
+    return;
+  }
+
+  console.log(
+    `  ⚠ ${suspicious.length} unit(s) sourced via story/stage-progression still carry a setName — likely a stale word-overlap false match, not a real gacha set membership:`
+  );
+  for (const u of suspicious) {
+    console.log(`    - ${u.name} (#${u.unitNumber}): source=${u.source}, setName="${u.setName}"`);
+  }
+  console.log(`    → Verify against the unit's own wiki page and clear setName/banners via migration if wrong.`);
+  reviewWarningCount += suspicious.length;
 }
 
 // A unit name containing an actual Japanese character (hiragana, katakana,
