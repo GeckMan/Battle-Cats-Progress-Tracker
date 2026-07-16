@@ -5,6 +5,7 @@ import { useSearchParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 import { useLongPress } from "@/lib/hooks/useLongPress";
+import { groupSetNames } from "@/lib/set-categories";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -372,12 +373,19 @@ function FilterSelect({
   label,
   value,
   options,
+  groups,
   onChange,
   labelMap,
 }: {
   label: string;
   value: string;
-  options: string[];
+  // Flat option list — used as-is by filters that don't need sectioning
+  // (e.g. Sources), and as trailing ungrouped extras after `groups` (e.g.
+  // the synthetic "Collabs" entry, which intentionally stands apart from
+  // any category since it opens its own drill-down submenu).
+  options?: string[];
+  // Optional <optgroup> sections, rendered before any flat `options`.
+  groups?: { label: string; sets: string[] }[];
   onChange: (v: string) => void;
   labelMap?: Record<string, string>;
 }) {
@@ -389,7 +397,16 @@ function FilterSelect({
       title={label}
     >
       <option value="">{label}</option>
-      {options.map((opt) => (
+      {groups?.map((g) => (
+        <optgroup key={g.label} label={g.label}>
+          {g.sets.map((opt) => (
+            <option key={opt} value={opt}>
+              {labelMap?.[opt] ?? opt}
+            </option>
+          ))}
+        </optgroup>
+      ))}
+      {options?.map((opt) => (
         <option key={opt} value={opt}>
           {labelMap?.[opt] ?? opt}
         </option>
@@ -633,7 +650,8 @@ function FriendUnitsInner({
           <FilterSelect
             label="All Sets"
             value={setFilter}
-            options={[...availableSets, ...(availableCollabSets.length > 0 ? [COLLABS_KEY] : [])]}
+            groups={groupSetNames(availableSets)}
+            options={availableCollabSets.length > 0 ? [COLLABS_KEY] : []}
             onChange={(v) => { setSetFilter(v); setCollabFilter(""); }}
             labelMap={{ [COLLABS_KEY]: "Collabs" }}
           />
