@@ -80,8 +80,19 @@ export async function GET(req: Request) {
     else if (onlyCollab) where.isCollab = true;
     if (source) {
       where.source = source;
-    } else {
-      // Hide unobtainable units by default — only show when explicitly filtered
+    } else if (!setName) {
+      // Hide unobtainable units by default — only show when explicitly
+      // filtered by source OR by a specific set. Without the `!setName`
+      // check here, picking one of the several real Sets entries that are
+      // entirely discontinued serial-code/promo units (e.g. "Battle Cats
+      // Gashapon" — Toy Machine Cat; "Nyanko Daisensou Lottery Double
+      // Chance Campaign" — Masked Cat; both source=UNOBTAINABLE by design,
+      // see migration 20260712000012) silently returned "No units found"
+      // with no explanation, even though the dropdown itself lists these
+      // sets just fine (its query doesn't filter by source at all). An
+      // explicit set selection is exactly the same kind of "the user asked
+      // for this specific thing" signal that source already gets a bypass
+      // for, so it gets the same treatment.
       // Use OR to include units with NULL source (e.g. Li'l cats)
       where.OR = [
         { source: null },
