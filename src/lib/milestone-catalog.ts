@@ -96,6 +96,22 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Championship Rank 11", category: "CATCLAW", sortOrder: 11 },
   { displayName: "Championship Rank 12", category: "CATCLAW", sortOrder: 12 },
 
+  // ── AWAKENING ─────────────────────────────────────────────────────────────
+  // Requested by HexagonForce (2026-07-16). These are the harder "Awakening"
+  // tier for specific Advent bosses -- a further, separately-unlocked map
+  // beyond that boss's regular ADVENT-category stages above (e.g. Clionel
+  // Dominant unlocks after clearing Clionel Ascendant). Confirmed against
+  // the wiki's own "Advent Cats" stage navbox, which lists all 6 real names
+  // together. Not every Advent boss has one of these yet -- PONOS adds new
+  // ones over time, same as Zero Legends sub-chapters, so this list may
+  // need extending later.
+  { displayName: "Clionel Dominant",     category: "AWAKENING", sortOrder: 1 },
+  { displayName: "River Acheron",        category: "AWAKENING", sortOrder: 2 },
+  { displayName: "Queen's Condemnation", category: "AWAKENING", sortOrder: 3 },
+  { displayName: "Dead by Encore",       category: "AWAKENING", sortOrder: 4 },
+  { displayName: "King Wahwah's Return", category: "AWAKENING", sortOrder: 5 },
+  { displayName: "A Deeper Dream",       category: "AWAKENING", sortOrder: 6 },
+
 ];
 
 /** Human-readable labels and display order for categories */
@@ -103,11 +119,12 @@ export const CATEGORY_META: Record<
   MilestoneCategory,
   { label: string; order: number }
 > = {
-  CRAZED:  { label: "Crazed Cats",            order: 0 },
-  MANIC:   { label: "Manic Cats",             order: 1 },
-  ADVENT:  { label: "Advent Stages",          order: 2 },
-  CATCLAW: { label: "Catclaw Championships",  order: 3 },
-  OTHER:   { label: "Other",                  order: 4 },
+  CRAZED:     { label: "Crazed Cats",            order: 0 },
+  MANIC:      { label: "Manic Cats",             order: 1 },
+  ADVENT:     { label: "Advent Stages",          order: 2 },
+  AWAKENING:  { label: "Awakening Stages",       order: 3 },
+  CATCLAW:    { label: "Catclaw Championships",  order: 4 },
+  OTHER:      { label: "Other",                  order: 5 },
 };
 
 /**

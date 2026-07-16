@@ -158,6 +158,7 @@ export const MilestoneCategory: {
   MANIC: 'MANIC',
   ADVENT: 'ADVENT',
   CATCLAW: 'CATCLAW',
+  AWAKENING: 'AWAKENING',
   OTHER: 'OTHER'
 };
 

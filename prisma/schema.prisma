@@ -47,6 +47,7 @@ enum MilestoneCategory {
   MANIC
   ADVENT
   CATCLAW
+  AWAKENING
   OTHER
 }
 
