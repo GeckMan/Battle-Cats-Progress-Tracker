@@ -108,15 +108,21 @@ export default function Sections({ groups }: { groups: Group[] }) {
   }
 
   async function bulkUpdate(ids: string[], uiCrown: number) {
-    const crownMax = uiCrown === 0 ? null : uiCrown;
+    // Clamp per-row to each subchapter's own maxCrowns rather than writing
+    // the same raw level everywhere — a saga can mix stages with different
+    // crown ceilings (e.g. Zero Legends stages after "Garden of Wilted
+    // Thoughts" only go up to crown 1), so clicking "2" should max those
+    // rows out at crown 1, not write an out-of-range value the per-row
+    // CrownPicker can't display a matching button for.
     const idSet = new Set(ids);
     setData((prev) => prev.map((r) => {
       if (!idSet.has(r.id)) return r;
       const mc = r.subchapter.maxCrowns ?? 4;
+      const crownMax = uiCrown === 0 ? null : Math.min(uiCrown, mc);
       const status = crownMax === null ? "NOT_STARTED" : crownMax >= mc ? "COMPLETED" : "IN_PROGRESS";
       return { ...r, crownMax, status };
     }));
-    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, patch: { crownMax, status: crownMax === null ? "NOT_STARTED" : "IN_PROGRESS" } }) });
+    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, crownLevel: uiCrown }) });
     if (!res.ok) setError("Failed to save.");
   }
 
