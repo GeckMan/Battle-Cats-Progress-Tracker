@@ -48,6 +48,10 @@ enum MilestoneCategory {
   ADVENT
   CATCLAW
   AWAKENING
+  LIL_STAGES
+  LIL_TRIAL
+  MALEVOLENT
+  SUPER_SMASH
   OTHER
 }
 

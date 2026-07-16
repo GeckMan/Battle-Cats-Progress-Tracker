@@ -5,7 +5,7 @@ import { prisma } from "@/lib/prisma";
 import { ensureMilestoneProgress } from "@/lib/ensure-progress";
 import { ensureMilestoneCatalog, CATEGORY_META } from "@/lib/milestone-catalog";
 import MilestonesClient from "./MilestonesClient";
-import type { MilestoneCategory } from "@/generated/prisma/client";
+import type { MilestoneCategory } from "@/lib/milestone-catalog";
 
 export default async function MilestonesPage() {
   const session = await getServerSession(authOptions);

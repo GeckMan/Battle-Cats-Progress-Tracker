@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useTheme } from "@/lib/theme-context";
 import { getThemeColors, pctColor, barFill, type ThemeColors } from "@/lib/theme-colors";
-import type { MilestoneCategory } from "@/generated/prisma/client";
+import type { MilestoneCategory } from "@/lib/milestone-catalog";
 
 export type MilestoneRow = {
   id: string;

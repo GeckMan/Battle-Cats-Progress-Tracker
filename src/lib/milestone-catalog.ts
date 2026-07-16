@@ -1,5 +1,21 @@
-import type { MilestoneCategory } from "@/generated/prisma/client";
+import type { MilestoneCategory as GeneratedMilestoneCategory } from "@/generated/prisma/client";
 import { prisma } from "@/lib/prisma";
+
+// src/generated/prisma checked into the repo lags behind prisma/schema.prisma
+// locally (regenerated fresh on every Vercel build, per CLAUDE.md).
+// LIL_STAGES/LIL_TRIAL/MALEVOLENT/SUPER_SMASH are real enum members already
+// in schema.prisma (see migration 20260716000009_add_lil_and_malevolent_
+// milestone_categories) but the stale local client doesn't know about them
+// yet. Widening the type here — rather than `as any`-ing every call site —
+// keeps every consumer of MilestoneCategory (this file, MilestonesClient.tsx,
+// milestones/page.tsx, which all import it from here) type-safe against the
+// real, current set of values instead of the stale generated one.
+export type MilestoneCategory =
+  | GeneratedMilestoneCategory
+  | "LIL_STAGES"
+  | "LIL_TRIAL"
+  | "MALEVOLENT"
+  | "SUPER_SMASH";
 
 export type MilestoneDef = {
   displayName: string;
@@ -112,6 +128,56 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "King Wahwah's Return", category: "AWAKENING", sortOrder: 5 },
   { displayName: "A Deeper Dream",       category: "AWAKENING", sortOrder: 6 },
 
+  // ── LI'L STAGES ───────────────────────────────────────────────────────────
+  // Requested by Ryan (2026-07-16), prompted by the uploaded "Li'l Cat's
+  // Trial" wiki page, which referenced these as its prerequisite. Confirmed
+  // against the wiki's own "Category:Li'l Stages" listing (9 items) -- the
+  // exact same 9-basic-Normal-Cat-line structure as CRAZED, just unlocking
+  // the True Form of each Li'l Cat instead of a Crazed unit.
+  { displayName: "Li'l Cat Awakens!",    category: "LIL_STAGES", sortOrder: 1 },
+  { displayName: "Li'l Tank Awakens!",   category: "LIL_STAGES", sortOrder: 2 },
+  { displayName: "Li'l Axe Awakens!",    category: "LIL_STAGES", sortOrder: 3 },
+  { displayName: "Li'l Gross Awakens!",  category: "LIL_STAGES", sortOrder: 4 },
+  { displayName: "Li'l Cow Awakens!",    category: "LIL_STAGES", sortOrder: 5 },
+  { displayName: "Li'l Bird Awakens!",   category: "LIL_STAGES", sortOrder: 6 },
+  { displayName: "Li'l Fish Awakens!",   category: "LIL_STAGES", sortOrder: 7 },
+  { displayName: "Li'l Lizard Awakens!", category: "LIL_STAGES", sortOrder: 8 },
+  { displayName: "Li'l Titan Awakens!",  category: "LIL_STAGES", sortOrder: 9 },
+
+  // ── LI'L CAT'S TRIAL ──────────────────────────────────────────────────────
+  // From the user's uploaded "Li'l Cat's Trial" wiki page: unlocked after
+  // clearing all 9 LIL_STAGES above. Each stage cleared raises the Li'l Cat
+  // unit + caps by 5 levels (Path to +45 → +50 → +55 → +60).
+  { displayName: "Path to +45", category: "LIL_TRIAL", sortOrder: 1 },
+  { displayName: "Path to +50", category: "LIL_TRIAL", sortOrder: 2 },
+  { displayName: "Path to +55", category: "LIL_TRIAL", sortOrder: 3 },
+  { displayName: "Path to +60", category: "LIL_TRIAL", sortOrder: 4 },
+
+  // ── MALEVOLENT STAGES ─────────────────────────────────────────────────────
+  // Requested by Ryan (2026-07-16). Confirmed against the wiki's own
+  // "Category:Malevolent Stages" listing (9 items) -- the "evil" structural
+  // counterpart to CRAZED: unlocked after clearing Mount Aku/Mount Fuji in
+  // The Aku Realms, one stage per basic Normal Cat line, each rewarding the
+  // True Form of the corresponding Brainwashed unit.
+  { displayName: "The Malevolent Cat",    category: "MALEVOLENT", sortOrder: 1 },
+  { displayName: "The Malevolent Tank",   category: "MALEVOLENT", sortOrder: 2 },
+  { displayName: "The Malevolent Axe",    category: "MALEVOLENT", sortOrder: 3 },
+  { displayName: "The Malevolent Gross",  category: "MALEVOLENT", sortOrder: 4 },
+  { displayName: "The Malevolent Cow",    category: "MALEVOLENT", sortOrder: 5 },
+  { displayName: "The Malevolent Bird",   category: "MALEVOLENT", sortOrder: 6 },
+  { displayName: "The Malevolent Fish",   category: "MALEVOLENT", sortOrder: 7 },
+  { displayName: "The Malevolent Lizard", category: "MALEVOLENT", sortOrder: 8 },
+  { displayName: "The Malevolent Titan",  category: "MALEVOLENT", sortOrder: 9 },
+
+  // ── SUPER SMASH FAMILIES ──────────────────────────────────────────────────
+  // From the user's uploaded "Super Smash Families" wiki page: unlocked
+  // after clearing all 9 MALEVOLENT stages above -- the wiki describes this
+  // explicitly as "the Malevolent equivalent of Clan of the Maniacs" (i.e.
+  // this category's relationship to MALEVOLENT mirrors MANIC's relationship
+  // to CRAZED). Rewards Rare Tickets on first clear rather than a unit.
+  { displayName: "Treacherous Road (Brutal)", category: "SUPER_SMASH", sortOrder: 1 },
+  { displayName: "Heinous Road (Brutal)",     category: "SUPER_SMASH", sortOrder: 2 },
+
 ];
 
 /** Human-readable labels and display order for categories */
@@ -119,12 +185,16 @@ export const CATEGORY_META: Record<
   MilestoneCategory,
   { label: string; order: number }
 > = {
-  CRAZED:     { label: "Crazed Cats",            order: 0 },
-  MANIC:      { label: "Manic Cats",             order: 1 },
-  ADVENT:     { label: "Advent Stages",          order: 2 },
-  AWAKENING:  { label: "Awakening Stages",       order: 3 },
-  CATCLAW:    { label: "Catclaw Championships",  order: 4 },
-  OTHER:      { label: "Other",                  order: 5 },
+  CRAZED:      { label: "Crazed Cats",            order: 0 },
+  MANIC:       { label: "Manic Cats",             order: 1 },
+  LIL_STAGES:  { label: "Li'l Stages",            order: 2 },
+  LIL_TRIAL:   { label: "Li'l Cat's Trial",       order: 3 },
+  ADVENT:      { label: "Advent Stages",          order: 4 },
+  AWAKENING:   { label: "Awakening Stages",       order: 5 },
+  CATCLAW:     { label: "Catclaw Championships",  order: 6 },
+  MALEVOLENT:  { label: "Malevolent Stages",      order: 7 },
+  SUPER_SMASH: { label: "Super Smash Families",   order: 8 },
+  OTHER:       { label: "Other",                  order: 9 },
 };
 
 /**
@@ -133,9 +203,13 @@ export const CATEGORY_META: Record<
  * Safe to call on every page load.
  */
 export async function ensureMilestoneCatalog() {
-  const existing = await prisma.milestone.findMany({
-    select: { id: true, category: true, displayName: true },
-  });
+  // @ts-ignore — see the MilestoneCategory widening comment above; the
+  // stale local generated client's own Milestone.category type doesn't
+  // include the 4 new values yet, though the real column/enum does.
+  const existing: { id: string; category: MilestoneCategory; displayName: string }[] =
+    await (prisma as any).milestone.findMany({
+      select: { id: true, category: true, displayName: true },
+    });
 
   const catalogSet = new Set(
     MILESTONE_CATALOG.map((m) => `${m.category}||${m.displayName}`)
@@ -149,7 +223,8 @@ export async function ensureMilestoneCatalog() {
     (m) => !haveSet.has(`${m.category}||${m.displayName}`)
   );
   if (missing.length > 0) {
-    await prisma.milestone.createMany({ data: missing });
+    // @ts-ignore — same generated-client lag as above
+    await (prisma as any).milestone.createMany({ data: missing });
   }
 
   // Remove stale entries (no longer in catalog)
