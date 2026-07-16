@@ -205,8 +205,9 @@ export default function AboutPage() {
             This site gets better because people take the time to report what&apos;s broken. Big
             thanks to{" "}
             <strong className="text-gray-200">bvg</strong>,{" "}
-            <strong className="text-gray-200">JSDPLAYSBCEN</strong>, and{" "}
-            <strong className="text-gray-200">mranimemeboi</strong>{" "}
+            <strong className="text-gray-200">JSDPLAYSBCEN</strong>,{" "}
+            <strong className="text-gray-200">mranimemeboi</strong>, and{" "}
+            <strong className="text-gray-200">HexagonForce</strong>{" "}
             for flagging issues on the site and on Reddit. If you spot something off, let us know.
             It helps everyone.
           </p>
