@@ -199,6 +199,7 @@ async function main() {
     console.log("\n── Assigning Gacha Sets ──");
     await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
+    await backfillBannersFromSetName(prisma);
 
     // Backstop: catches units whose setName/banners already say "Collab"
     // (often via family-propagation from a sibling's row, not their own)
@@ -1493,6 +1494,54 @@ async function syncBannerMembership(prisma: PrismaClient, dataLocal: string) {
     updated > 0
       ? `  ✓ Added missing banner membership(s) to ${updated} unit(s) from full historical banner data`
       : "  All detected banner memberships already present — nothing to update"
+  );
+}
+
+/**
+ * Backstop for syncBannerMembership() above: catches any unit whose
+ * `setName` was assigned directly (e.g. by a one-off migration UPDATE, or
+ * any future hand-written fix) without also adding it to `banners`.
+ *
+ * Found 2026-07-16 from a HexagonForce bug report: several real gacha sets
+ * (Dragon Emperors, Pixies, Superfest, NEO Best of the Best, Dark Heroes,
+ * and others) were completely absent from the Units page's Sets filter,
+ * which reads exclusively from `unnest(banners)` — even though every one
+ * of those units' own detail view showed the correct setName. Root cause:
+ * three of this project's biggest historical migrations
+ * (20260303000004_add_source_and_set, 20260303000025_fix_set_names_from_
+ * cat_guide, 20260303000026_fix_set_names_from_gacha_data) set hundreds of
+ * units' setName via raw SQL and never touched banners at all —
+ * syncBannerMembership() only fills banners from units it can resolve
+ * through real gacha banner CSV rows, so it never had a chance to catch
+ * units whose only banner-history rows don't cleanly resolve through
+ * GACHA_EVENT_NAMES (older/JP-only historical data, mostly). This runs
+ * every sync so the same gap can't quietly reopen from some future one-off
+ * setName fix, the same way the "isCollab says Collab but flag is false"
+ * backstop below already guards a conceptually similar split-field gap.
+ */
+async function backfillBannersFromSetName(prisma: PrismaClient) {
+  const candidates = await (prisma as any).unit.findMany({
+    where: { setName: { not: null } },
+    select: { unitNumber: true, setName: true, banners: true },
+  });
+
+  const toFix = candidates.filter(
+    (u: any) => !(u.banners ?? []).includes(u.setName)
+  );
+
+  if (toFix.length === 0) {
+    console.log("  setName/banners consistency: OK (every setName already appears in banners)");
+    return;
+  }
+
+  for (const u of toFix) {
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: { banners: [...(u.banners ?? []), u.setName] },
+    });
+  }
+  console.log(
+    `  ✓ Backfilled ${toFix.length} unit(s) whose setName was missing from banners (Sets filter visibility)`
   );
 }
 
