@@ -2220,10 +2220,9 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
   reviewWarningCount += unclassified.length;
 }
 
-// STORY_CHAPTER_CLEAR and the Invasion-stage variant of STAGE_DROP (see
-// INVASION_CLEAR_RE) both mean "unlocked by clearing a specific story
-// stage" — conceptually never a gacha "set" a player pulls from, so these
-// units should never carry a setName at all. Added 2026-07-16 after a live
+// STORY_CHAPTER_CLEAR means "unlocked by clearing a specific story stage"
+// — conceptually never a gacha "set" a player pulls from, so these units
+// should never carry a setName at all. Added 2026-07-16 after a live
 // screenshot showed Jagando Jr. (#622) with setName "Invasion of Poultrio"
 // — findExistingSetNameMatch()'s word-overlap heuristic had matched the
 // generic word "invasion" shared with that unrelated real gacha set (fixed
@@ -2235,10 +2234,21 @@ async function checkUnitClassificationCoverage(prisma: PrismaClient) {
 // flags for a human/AI to confirm and clear via migration, same bar as
 // every other coverage check here (this only ever writes when a human
 // reviews and applies a targeted fix, never auto-clears silently).
+//
+// Deliberately scoped to STORY_CHAPTER_CLEAR only, NOT STAGE_DROP.
+// STAGE_DROP is also used for plenty of collab-specific bonus-drop units
+// that correctly carry their collab's own setName (e.g. Li'l Shirou →
+// "Fate/Stay Night Collaboration", the 9 Crazed Cat units → "Crazed &
+// Manic Cats") — a real live sync run (2026-07-16) confirmed including
+// STAGE_DROP here produced 37 false positives out of 39 total flags,
+// while every STORY_CHAPTER_CLEAR flag (2/2: Cat God the Great #437,
+// Filibuster Cat X #462) was a genuine word-overlap bug. Broadening this
+// again without a similarly precise signal would just bury real findings
+// in noise.
 async function checkStoryProgressionUnitsHaveNoSetName(prisma: PrismaClient) {
   const suspicious = await (prisma as any).unit.findMany({
     where: {
-      source: { in: ["STORY_CHAPTER_CLEAR", "STAGE_DROP"] },
+      source: "STORY_CHAPTER_CLEAR",
       setName: { not: null },
       excludeFromCollection: false,
     },
