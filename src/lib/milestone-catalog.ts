@@ -16,6 +16,7 @@ export type MilestoneCategory =
   | "LIL_TRIAL"
   | "MALEVOLENT"
   | "SUPER_SMASH"
+  | "AWAKENED_STAGES"
   | "MONTHLY_AWAKENING";
 
 export type MilestoneDef = {
@@ -194,46 +195,51 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Treacherous Road (Brutal)", category: "SUPER_SMASH", sortOrder: 1 },
   { displayName: "Heinous Road (Brutal)",     category: "SUPER_SMASH", sortOrder: 2 },
 
+  // ── AWAKENED STAGES ───────────────────────────────────────────────────────
+  // Requested by Ryan (2026-07-16), from the wiki's "Awakened Stages"
+  // section (17 entries) on its "Special Events" master page -- one-time
+  // stages that unlock the True Form of an older Special Cat. Kept as its
+  // own category, separate from MONTHLY_AWAKENING below: Ryan flagged
+  // that although both accomplish the same end goal (a permanent True
+  // Form unlock), their actual in-game difficulties are very different,
+  // so lumping them together would blur two distinct achievements.
+  { displayName: "Actress Awakens!",    category: "AWAKENED_STAGES", sortOrder: 1 },
+  { displayName: "Samurai Awakens!",    category: "AWAKENED_STAGES", sortOrder: 2 },
+  { displayName: "Boogie Awakens!",     category: "AWAKENED_STAGES", sortOrder: 3 },
+  { displayName: "Ninja Awakens!",      category: "AWAKENED_STAGES", sortOrder: 4 },
+  { displayName: "Box Cat Awaken!",     category: "AWAKENED_STAGES", sortOrder: 5 },
+  { displayName: "Kung-Fu Awakens!",    category: "AWAKENED_STAGES", sortOrder: 6 },
+  { displayName: "Bondage Awakens!",    category: "AWAKENED_STAGES", sortOrder: 7 },
+  { displayName: "Mr. Awakens!",        category: "AWAKENED_STAGES", sortOrder: 8 },
+  { displayName: "Panties Awakens!",    category: "AWAKENED_STAGES", sortOrder: 9 },
+  { displayName: "Tricycle Awakens!",   category: "AWAKENED_STAGES", sortOrder: 10 },
+  { displayName: "Dom Awakens!",        category: "AWAKENED_STAGES", sortOrder: 11 },
+  { displayName: "Zombie Awakens!",     category: "AWAKENED_STAGES", sortOrder: 12 },
+  { displayName: "Sumo Awakens!",       category: "AWAKENED_STAGES", sortOrder: 13 },
+  { displayName: "Skirt Awakens!",      category: "AWAKENED_STAGES", sortOrder: 14 },
+  { displayName: "Flower Cat Awakens!", category: "AWAKENED_STAGES", sortOrder: 15 },
+  { displayName: "Cat Kart Awakens!",   category: "AWAKENED_STAGES", sortOrder: 16 },
+  { displayName: "Catburger Awakens!",  category: "AWAKENED_STAGES", sortOrder: 17 },
+
   // ── MONTHLY AWAKENING STAGES ──────────────────────────────────────────────
-  // Requested by Ryan (2026-07-16). Combines the wiki's "Awakened Stages"
-  // (17 entries) and "Monthly Cats Awakened Stages" (12 entries) sections
-  // from its "Special Events" master page -- both are the same mechanic
-  // (a one-time stage that awakens/unlocks the True Form of a specific
-  // older monthly-capsule Special/Rare Cat), just split across two wiki
-  // sections by era rather than by a real unlock-gate between them (unlike
-  // e.g. LIL_TRIAL/SUPER_SMASH, nothing here requires clearing the other
-  // group first), so they're combined into one category rather than two.
+  // From the wiki's "Monthly Cats Awakened Stages" section (12 entries) --
+  // same one-time True-Form-unlock mechanic as AWAKENED_STAGES above, for
+  // newer monthly-capsule Special/Rare Cats, but kept separate per Ryan
+  // since the two groups' difficulties differ noticeably in-game.
   // Deliberately excludes "Cyclone Cats Awakened Stages" (per Ryan: the
   // Meow Medals catalog already covers that ground).
-  { displayName: "Actress Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 1 },
-  { displayName: "Samurai Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 2 },
-  { displayName: "Boogie Awakens!",         category: "MONTHLY_AWAKENING", sortOrder: 3 },
-  { displayName: "Ninja Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 4 },
-  { displayName: "Box Cat Awaken!",         category: "MONTHLY_AWAKENING", sortOrder: 5 },
-  { displayName: "Kung-Fu Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 6 },
-  { displayName: "Bondage Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 7 },
-  { displayName: "Mr. Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 8 },
-  { displayName: "Panties Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 9 },
-  { displayName: "Tricycle Awakens!",       category: "MONTHLY_AWAKENING", sortOrder: 10 },
-  { displayName: "Dom Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 11 },
-  { displayName: "Zombie Awakens!",         category: "MONTHLY_AWAKENING", sortOrder: 12 },
-  { displayName: "Sumo Awakens!",           category: "MONTHLY_AWAKENING", sortOrder: 13 },
-  { displayName: "Skirt Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 14 },
-  { displayName: "Flower Cat Awakens!",     category: "MONTHLY_AWAKENING", sortOrder: 15 },
-  { displayName: "Cat Kart Awakens!",       category: "MONTHLY_AWAKENING", sortOrder: 16 },
-  { displayName: "Catburger Awakens!",      category: "MONTHLY_AWAKENING", sortOrder: 17 },
-  { displayName: "Evil Cat Awakes!",        category: "MONTHLY_AWAKENING", sortOrder: 18 },
-  { displayName: "Doll Cats Awake!",        category: "MONTHLY_AWAKENING", sortOrder: 19 },
-  { displayName: "Adult Awakes!",           category: "MONTHLY_AWAKENING", sortOrder: 20 },
-  { displayName: "Maiden Awakes!",          category: "MONTHLY_AWAKENING", sortOrder: 21 },
-  { displayName: "Koi Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 22 },
-  { displayName: "Bride Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 23 },
-  { displayName: "Vacation Awakes!",        category: "MONTHLY_AWAKENING", sortOrder: 24 },
-  { displayName: "Salaryman Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 25 },
-  { displayName: "Reindeer Fish Awakens!",  category: "MONTHLY_AWAKENING", sortOrder: 26 },
-  { displayName: "Kung-Fu X Awakens!",      category: "MONTHLY_AWAKENING", sortOrder: 27 },
-  { displayName: "Vengeance Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 28 },
-  { displayName: "Sports Day Awakens!",     category: "MONTHLY_AWAKENING", sortOrder: 29 },
+  { displayName: "Evil Cat Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 1 },
+  { displayName: "Doll Cats Awake!",       category: "MONTHLY_AWAKENING", sortOrder: 2 },
+  { displayName: "Adult Awakes!",          category: "MONTHLY_AWAKENING", sortOrder: 3 },
+  { displayName: "Maiden Awakes!",         category: "MONTHLY_AWAKENING", sortOrder: 4 },
+  { displayName: "Koi Awakens!",           category: "MONTHLY_AWAKENING", sortOrder: 5 },
+  { displayName: "Bride Awakens!",         category: "MONTHLY_AWAKENING", sortOrder: 6 },
+  { displayName: "Vacation Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 7 },
+  { displayName: "Salaryman Awakes!",      category: "MONTHLY_AWAKENING", sortOrder: 8 },
+  { displayName: "Reindeer Fish Awakens!", category: "MONTHLY_AWAKENING", sortOrder: 9 },
+  { displayName: "Kung-Fu X Awakens!",     category: "MONTHLY_AWAKENING", sortOrder: 10 },
+  { displayName: "Vengeance Awakes!",      category: "MONTHLY_AWAKENING", sortOrder: 11 },
+  { displayName: "Sports Day Awakens!",    category: "MONTHLY_AWAKENING", sortOrder: 12 },
 
 ];
 
@@ -251,8 +257,9 @@ export const CATEGORY_META: Record<
   CATCLAW:     { label: "Catclaw Championships",  order: 6 },
   MALEVOLENT:  { label: "Malevolent Stages",      order: 7 },
   SUPER_SMASH: { label: "Super Smash Families",   order: 8 },
-  MONTHLY_AWAKENING: { label: "Monthly Awakening Stages", order: 9 },
-  OTHER:       { label: "Other",                  order: 10 },
+  AWAKENED_STAGES:    { label: "Special Cat Awakened Stages",  order: 9 },
+  MONTHLY_AWAKENING:  { label: "Monthly Cats Awakened Stages",  order: 10 },
+  OTHER:       { label: "Other",                  order: 11 },
 };
 
 /**

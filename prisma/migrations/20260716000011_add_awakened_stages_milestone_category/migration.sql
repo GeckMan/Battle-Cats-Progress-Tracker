@@ -1,0 +1,15 @@
+-- Adds the AWAKENED_STAGES Milestones category. Follow-up to migration
+-- 20260716000010_add_monthly_awakening_milestone_category: Ryan clarified
+-- that the wiki's "Awakened Stages" (17 entries, older Special Cats) and
+-- "Monthly Cats Awakened Stages" (12 entries, newer monthly-capsule Cats)
+-- sections should NOT be combined into one MONTHLY_AWAKENING category as
+-- originally done -- both accomplish the same end goal (a permanent True
+-- Form unlock) but their actual in-game difficulties are very different,
+-- so they're now split into two categories. MONTHLY_AWAKENING keeps the
+-- 12 "Monthly Cats" entries; this migration adds AWAKENED_STAGES for the
+-- 17 entries moved out of it.
+--
+-- The actual catalog rows are inserted/moved by ensureMilestoneCatalog()
+-- from MILESTONE_CATALOG in src/lib/milestone-catalog.ts (called on every
+-- page load), so this migration only needs to add the new enum value.
+ALTER TYPE "MilestoneCategory" ADD VALUE 'AWAKENED_STAGES';
