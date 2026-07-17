@@ -154,12 +154,21 @@ export default function MilestonesClient({ groups }: { groups: CategoryGroup[] }
         </div>
       )}
 
-      {/* ── Category Panels — side by side ─────────────────────────────────── */}
+      {/* ── Category Panels — packed masonry-style, shortest-first ─────────
+          A plain CSS grid sizes every row to its tallest cell, so a huge
+          category (e.g. 22-item Advent Stages) sitting next to small ones
+          (e.g. 2-item Super Smash Families) left large dead space below
+          the short cards before the next row started — looked like the
+          page had ended when it hadn't (reported by Ryan, 2026-07-16).
+          CSS multi-column layout packs each card into whichever column
+          has room next, so short and tall cards interleave tightly with
+          no dead space, and `columns: <width>` (rather than a fixed
+          column count) lets the browser fit fewer, wider columns on
+          narrow/mobile screens automatically instead of needing a
+          separate media query. */}
       <div style={{
-        display: "grid",
-        gridTemplateColumns: `repeat(${Math.min(groups.length, 4)}, 1fr)`,
-        gap: 8,
-        alignItems: "start",
+        columns: "440px",
+        columnGap: 8,
       }}>
         {groups.map((g) => {
           const groupRows = g.rows;
