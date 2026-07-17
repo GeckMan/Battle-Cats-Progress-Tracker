@@ -15,7 +15,8 @@ export type MilestoneCategory =
   | "LIL_STAGES"
   | "LIL_TRIAL"
   | "MALEVOLENT"
-  | "SUPER_SMASH";
+  | "SUPER_SMASH"
+  | "MONTHLY_AWAKENING";
 
 export type MilestoneDef = {
   displayName: string;
@@ -121,12 +122,27 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   // together. Not every Advent boss has one of these yet -- PONOS adds new
   // ones over time, same as Zero Legends sub-chapters, so this list may
   // need extending later.
+  //
+  // Extended 2026-07-16 (Ryan): the wiki's own "Advent Cats Awakened
+  // Stages" listing (under its "Special Events" master page) actually has
+  // a 7th Tier 1 entry -- "Top of the Bog" -- that was missed the first
+  // time, plus an entire Tier 2 (Courts of Agony, NEO Wanwan's Glory, NEO
+  // First Errand) that wasn't tracked at all. Both tiers are the same
+  // AWAKENING mechanic (a harder map for a specific Advent boss), just a
+  // second wave added later, so they stay in this one category rather
+  // than splitting into a separate Tier 2 category.
   { displayName: "Clionel Dominant",     category: "AWAKENING", sortOrder: 1 },
   { displayName: "River Acheron",        category: "AWAKENING", sortOrder: 2 },
   { displayName: "Queen's Condemnation", category: "AWAKENING", sortOrder: 3 },
   { displayName: "Dead by Encore",       category: "AWAKENING", sortOrder: 4 },
   { displayName: "King Wahwah's Return", category: "AWAKENING", sortOrder: 5 },
   { displayName: "A Deeper Dream",       category: "AWAKENING", sortOrder: 6 },
+  { displayName: "Top of the Bog",       category: "AWAKENING", sortOrder: 7 },
+
+  // Tier 2
+  { displayName: "Courts of Agony",      category: "AWAKENING", sortOrder: 8 },
+  { displayName: "NEO Wanwan's Glory",   category: "AWAKENING", sortOrder: 9 },
+  { displayName: "NEO First Errand",     category: "AWAKENING", sortOrder: 10 },
 
   // ── LI'L STAGES ───────────────────────────────────────────────────────────
   // Requested by Ryan (2026-07-16), prompted by the uploaded "Li'l Cat's
@@ -178,6 +194,47 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Treacherous Road (Brutal)", category: "SUPER_SMASH", sortOrder: 1 },
   { displayName: "Heinous Road (Brutal)",     category: "SUPER_SMASH", sortOrder: 2 },
 
+  // ── MONTHLY AWAKENING STAGES ──────────────────────────────────────────────
+  // Requested by Ryan (2026-07-16). Combines the wiki's "Awakened Stages"
+  // (17 entries) and "Monthly Cats Awakened Stages" (12 entries) sections
+  // from its "Special Events" master page -- both are the same mechanic
+  // (a one-time stage that awakens/unlocks the True Form of a specific
+  // older monthly-capsule Special/Rare Cat), just split across two wiki
+  // sections by era rather than by a real unlock-gate between them (unlike
+  // e.g. LIL_TRIAL/SUPER_SMASH, nothing here requires clearing the other
+  // group first), so they're combined into one category rather than two.
+  // Deliberately excludes "Cyclone Cats Awakened Stages" (per Ryan: the
+  // Meow Medals catalog already covers that ground).
+  { displayName: "Actress Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 1 },
+  { displayName: "Samurai Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 2 },
+  { displayName: "Boogie Awakens!",         category: "MONTHLY_AWAKENING", sortOrder: 3 },
+  { displayName: "Ninja Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 4 },
+  { displayName: "Box Cat Awaken!",         category: "MONTHLY_AWAKENING", sortOrder: 5 },
+  { displayName: "Kung-Fu Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 6 },
+  { displayName: "Bondage Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 7 },
+  { displayName: "Mr. Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 8 },
+  { displayName: "Panties Awakens!",        category: "MONTHLY_AWAKENING", sortOrder: 9 },
+  { displayName: "Tricycle Awakens!",       category: "MONTHLY_AWAKENING", sortOrder: 10 },
+  { displayName: "Dom Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 11 },
+  { displayName: "Zombie Awakens!",         category: "MONTHLY_AWAKENING", sortOrder: 12 },
+  { displayName: "Sumo Awakens!",           category: "MONTHLY_AWAKENING", sortOrder: 13 },
+  { displayName: "Skirt Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 14 },
+  { displayName: "Flower Cat Awakens!",     category: "MONTHLY_AWAKENING", sortOrder: 15 },
+  { displayName: "Cat Kart Awakens!",       category: "MONTHLY_AWAKENING", sortOrder: 16 },
+  { displayName: "Catburger Awakens!",      category: "MONTHLY_AWAKENING", sortOrder: 17 },
+  { displayName: "Evil Cat Awakes!",        category: "MONTHLY_AWAKENING", sortOrder: 18 },
+  { displayName: "Doll Cats Awake!",        category: "MONTHLY_AWAKENING", sortOrder: 19 },
+  { displayName: "Adult Awakes!",           category: "MONTHLY_AWAKENING", sortOrder: 20 },
+  { displayName: "Maiden Awakes!",          category: "MONTHLY_AWAKENING", sortOrder: 21 },
+  { displayName: "Koi Awakens!",            category: "MONTHLY_AWAKENING", sortOrder: 22 },
+  { displayName: "Bride Awakens!",          category: "MONTHLY_AWAKENING", sortOrder: 23 },
+  { displayName: "Vacation Awakes!",        category: "MONTHLY_AWAKENING", sortOrder: 24 },
+  { displayName: "Salaryman Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 25 },
+  { displayName: "Reindeer Fish Awakens!",  category: "MONTHLY_AWAKENING", sortOrder: 26 },
+  { displayName: "Kung-Fu X Awakens!",      category: "MONTHLY_AWAKENING", sortOrder: 27 },
+  { displayName: "Vengeance Awakes!",       category: "MONTHLY_AWAKENING", sortOrder: 28 },
+  { displayName: "Sports Day Awakens!",     category: "MONTHLY_AWAKENING", sortOrder: 29 },
+
 ];
 
 /** Human-readable labels and display order for categories */
@@ -194,7 +251,8 @@ export const CATEGORY_META: Record<
   CATCLAW:     { label: "Catclaw Championships",  order: 6 },
   MALEVOLENT:  { label: "Malevolent Stages",      order: 7 },
   SUPER_SMASH: { label: "Super Smash Families",   order: 8 },
-  OTHER:       { label: "Other",                  order: 9 },
+  MONTHLY_AWAKENING: { label: "Monthly Awakening Stages", order: 9 },
+  OTHER:       { label: "Other",                  order: 10 },
 };
 
 /**

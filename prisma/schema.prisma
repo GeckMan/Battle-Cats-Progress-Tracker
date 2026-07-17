@@ -52,6 +52,7 @@ enum MilestoneCategory {
   LIL_TRIAL
   MALEVOLENT
   SUPER_SMASH
+  MONTHLY_AWAKENING
   OTHER
 }
 

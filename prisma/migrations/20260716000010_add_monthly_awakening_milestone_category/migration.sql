@@ -1,0 +1,20 @@
+-- Adds the MONTHLY_AWAKENING Milestones category, requested by Ryan
+-- (2026-07-16) after reviewing a fuller sweep of the wiki's "Special
+-- Events" master page. Combines its "Awakened Stages" (17 entries) and
+-- "Monthly Cats Awakened Stages" (12 entries) sections -- both are the
+-- same one-time True-Form-unlock mechanic for older monthly-capsule
+-- Special/Rare Cats, just split across two wiki sections by era with no
+-- unlock-gate between them, so they're tracked as a single category here.
+-- (Cyclone Cats Awakened Stages was also found in this sweep but
+-- deliberately NOT added -- Ryan confirmed the Meow Medals catalog
+-- already covers that ground.)
+--
+-- The actual catalog rows are inserted by ensureMilestoneCatalog() from
+-- MILESTONE_CATALOG in src/lib/milestone-catalog.ts (called on every
+-- page load), so this migration only needs to add the new enum value.
+--
+-- Kept as its own single-statement migration (rather than bundled with
+-- other enum additions) to exactly match the one migration pattern
+-- that's been confirmed to work cleanly in this project (see
+-- 20260716000005_add_awakening_milestone_category).
+ALTER TYPE "MilestoneCategory" ADD VALUE 'MONTHLY_AWAKENING';
