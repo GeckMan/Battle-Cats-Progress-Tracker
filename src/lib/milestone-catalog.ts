@@ -72,33 +72,23 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Manic King Dragon Cat", category: "MANIC", sortOrder: 8 },
   { displayName: "Manic Jamiera Cat",     category: "MANIC", sortOrder: 9 },
 
-  // ── ADVENT (Standard Tier 1) ──────────────────────────────────────────────
-  { displayName: "Clionel Ascendant",     category: "ADVENT", sortOrder: 1 },
-  { displayName: "River Styx",            category: "ADVENT", sortOrder: 2 },
-  { displayName: "Queen's Coronation",    category: "ADVENT", sortOrder: 3 },
-  { displayName: "Dead on Debut",         category: "ADVENT", sortOrder: 4 },
-  { displayName: "King Wahwah's Revenge", category: "ADVENT", sortOrder: 5 },
-  { displayName: "Deeply Dreaming",       category: "ADVENT", sortOrder: 6 },
-  { displayName: "Blue Impact",           category: "ADVENT", sortOrder: 7 },
-  { displayName: "Bottom of the Swamp",   category: "ADVENT", sortOrder: 8 },
-  { displayName: "Prelude to Ruin",       category: "ADVENT", sortOrder: 9 },
-  { displayName: "Temptation's Symphony", category: "ADVENT", sortOrder: 10 },
-  { displayName: "Rashomon",              category: "ADVENT", sortOrder: 11 },
-
-  // ── ADVENT (Standard Tier 2) ──────────────────────────────────────────────
-  { displayName: "Courts of Torment",     category: "ADVENT", sortOrder: 12 },
-  { displayName: "Papuu's Paradise",      category: "ADVENT", sortOrder: 13 },
-  { displayName: "The Old Queen",         category: "ADVENT", sortOrder: 14 },
-  { displayName: "Wanwan's Glory",        category: "ADVENT", sortOrder: 15 },
-  { displayName: "Z-Onel Rises!",         category: "ADVENT", sortOrder: 16 },
-  { displayName: "First Errand",          category: "ADVENT", sortOrder: 17 },
-
-  // ── GREAT ADVENT ──────────────────────────────────────────────────────────
-  { displayName: "Reign of the Tyrant",       category: "ADVENT", sortOrder: 18 },
-  { displayName: "Invasion of the Swamplord", category: "ADVENT", sortOrder: 19 },
-  { displayName: "Hunt for the Xenobeast",    category: "ADVENT", sortOrder: 20 },
-  { displayName: "Jumbo Invasion",            category: "ADVENT", sortOrder: 21 },
-  { displayName: "Invasion of Poultrio",      category: "ADVENT", sortOrder: 22 },
+  // ── ADVENT — removed 2026-07-20 ──────────────────────────────────────────
+  // Ryan confirmed (after re-checking the current Miraheze wiki rather than
+  // the outdated fandom mirror I'd first pulled from) that all 22 of these
+  // stages already have their own individually-named Meow Medal at the
+  // exact same granularity (Clionel Ascendant -> "Angel's Cruelty", River
+  // Styx -> "Charon's Crossing", ... Hunt for the Xenobeast -> "Xenobeast
+  // Bunaglios", Jumbo Invasion -> "Jumbo Jones", Invasion of Poultrio ->
+  // "Poultrio") -- a true lossless duplicate, unlike Crazed/Manic/
+  // Malevolent/Li'l Stages/Super Smash Families, which only have ONE
+  // combined "clear them all" medal each and so still lose real progress
+  // visibility if removed. Ryan chose to keep those and drop only this
+  // category. ensureMilestoneCatalog() will delete the existing ADVENT
+  // rows (and any user progress on them) the next time the page loads.
+  // ADVENT remains a valid MilestoneCategory enum value in the DB/schema
+  // (dropping a Postgres enum value cleanly isn't worth the risk for what
+  // is purely a "no rows use this anymore" cleanup) -- it just has no
+  // catalog entries pointing to it, so it never renders.
 
   // ── CATCLAW ─────────────────────────────────────────────────────────────────
   { displayName: "Championship Rank 1",  category: "CATCLAW", sortOrder: 1 },
@@ -258,6 +248,10 @@ export const CATEGORY_META: Record<
   MANIC:       { label: "Manic Cats",             order: 1 },
   LIL_STAGES:  { label: "Li'l Stages",            order: 2 },
   LIL_TRIAL:   { label: "Li'l Cat's Trial",       order: 3 },
+  // ADVENT: no MILESTONE_CATALOG entries reference this anymore (removed
+  // 2026-07-20, see comment above) -- kept here only because it's still a
+  // real enum value and this Record's type requires every value to have
+  // an entry. Never actually rendered since no rows exist under it.
   ADVENT:      { label: "Advent Stages",          order: 4 },
   AWAKENING:   { label: "Awakening Stages",       order: 5 },
   CATCLAW:     { label: "Catclaw Championships",  order: 6 },
