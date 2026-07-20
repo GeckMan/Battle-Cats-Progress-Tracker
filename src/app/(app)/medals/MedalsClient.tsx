@@ -197,6 +197,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
 
   const [data, setData] = useState(rows);
   const [syncing, setSyncing] = useState(false);
+  const [reverseSyncing, setReverseSyncing] = useState(false);
 
   const earnedCount = useMemo(() => data.filter((r) => r.earned).length, [data]);
   const pct = data.length ? Math.round((earnedCount / data.length) * 100) : 0;
@@ -210,6 +211,26 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
       }
     } finally {
       setSyncing(false);
+    }
+  }
+
+  // Mirror of handleSync — backfills Legend/Story progress FROM earned
+  // medals instead of the other way around. Requested by Setredid on
+  // Discord (2026-07-19): medals and Legend subchapters are 1:1
+  // syncable, but previously the sync only ran Legend -> Medals, so
+  // anyone who'd marked a medal earned without re-entering the matching
+  // crown level on the Legend tab had no way to close that gap short of
+  // clicking through every subchapter by hand. Only ever raises progress
+  // (never lowers it), see src/app/api/meow-medals/sync-reverse/route.ts.
+  async function handleReverseSync() {
+    setReverseSyncing(true);
+    try {
+      const res = await fetch("/api/meow-medals/sync-reverse", { method: "POST" });
+      if (res.ok) {
+        window.location.reload();
+      }
+    } finally {
+      setReverseSyncing(false);
     }
   }
 
@@ -244,20 +265,38 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
           fontFamily: c.fontSys,
         }}>
           <span>Meow Medals</span>
-          <button
-            type="button"
-            onClick={handleSync}
-            disabled={syncing}
-            style={{
-              fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
-              letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",
-              border: `1px solid ${c.accentDim}`,
-              background: c.accentFill, color: c.accent,
-              cursor: syncing ? "wait" : "pointer", opacity: syncing ? 0.5 : 1,
-            }}
-          >
-            {syncing ? "Syncing..." : "Sync"}
-          </button>
+          <div style={{ display: "flex", gap: 6 }}>
+            <button
+              type="button"
+              onClick={handleSync}
+              disabled={syncing}
+              title="Mark medals earned/unearned based on your current Story and Legend progress"
+              style={{
+                fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
+                letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",
+                border: `1px solid ${c.accentDim}`,
+                background: c.accentFill, color: c.accent,
+                cursor: syncing ? "wait" : "pointer", opacity: syncing ? 0.5 : 1,
+              }}
+            >
+              {syncing ? "Syncing..." : "Sync from Stages"}
+            </button>
+            <button
+              type="button"
+              onClick={handleReverseSync}
+              disabled={reverseSyncing}
+              title="Raise your Story/Legend progress to match any medals you've already marked earned"
+              style={{
+                fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
+                letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",
+                border: `1px solid ${c.borderFaint}`,
+                background: "transparent", color: c.textDim,
+                cursor: reverseSyncing ? "wait" : "pointer", opacity: reverseSyncing ? 0.5 : 1,
+              }}
+            >
+              {reverseSyncing ? "Syncing..." : "Backfill Stages"}
+            </button>
+          </div>
         </div>
 
         <div style={{
