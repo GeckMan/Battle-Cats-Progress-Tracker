@@ -78,21 +78,38 @@ export async function GET(req: Request) {
     if (category) where.category = category;
     if (hideCollab) where.isCollab = false;
     else if (onlyCollab) where.isCollab = true;
+    const unitSelect = {
+      id: true,
+      unitNumber: true,
+      name: true,
+      evolvedName: true,
+      trueName: true,
+      ultraName: true,
+      category: true,
+      formCount: true,
+      sortOrder: true,
+      isCollab: true,
+      source: true,
+      setName: true,
+      evolutionData: true,
+    };
+
     if (source) {
       where.source = source;
-    } else if (!setName) {
-      // Hide unobtainable units by default — only show when explicitly
-      // filtered by source OR by a specific set. Without the `!setName`
-      // check here, picking one of the several real Sets entries that are
-      // entirely discontinued serial-code/promo units (e.g. "Battle Cats
+    } else {
+      // Hide unobtainable units by default, even when browsing a specific
+      // set — a real gacha banner (e.g. "Epic Fest") can genuinely contain
+      // a unit that's flagged source=UNOBTAINABLE (Cheetah Cat #673: "the
+      // worst cat in the game", confirmed via wiki 2026-07-13), and it
+      // shouldn't show up there since it's not actually obtainable from
+      // that banner in practice. Reported by Setredid/Geck on Discord
+      // 2026-07-17. The one legitimate exception — sets that are entirely
+      // made of discontinued serial-code/promo units (e.g. "Battle Cats
       // Gashapon" — Toy Machine Cat; "Nyanko Daisensou Lottery Double
       // Chance Campaign" — Masked Cat; both source=UNOBTAINABLE by design,
-      // see migration 20260712000012) silently returned "No units found"
-      // with no explanation, even though the dropdown itself lists these
-      // sets just fine (its query doesn't filter by source at all). An
-      // explicit set selection is exactly the same kind of "the user asked
-      // for this specific thing" signal that source already gets a bypass
-      // for, so it gets the same treatment.
+      // see migration 20260712000012) — is handled by the fallback query
+      // below rather than by bypassing this filter up front, so a mixed
+      // set never leaks its unobtainable stragglers.
       // Use OR to include units with NULL source (e.g. Li'l cats)
       where.OR = [
         { source: null },
@@ -102,25 +119,28 @@ export async function GET(req: Request) {
     if (setName) where.banners = { has: setName };
 
     // @ts-ignore
-    const allUnits: any[] = await (prisma as any).unit.findMany({
+    let allUnits: any[] = await (prisma as any).unit.findMany({
       where,
       orderBy: [{ sortOrder: "asc" }],
-      select: {
-        id: true,
-        unitNumber: true,
-        name: true,
-        evolvedName: true,
-        trueName: true,
-        ultraName: true,
-        category: true,
-        formCount: true,
-        sortOrder: true,
-        isCollab: true,
-        source: true,
-        setName: true,
-        evolutionData: true,
-      },
+      select: unitSelect,
     });
+
+    // A specific set was picked, no explicit source filter was requested,
+    // and hiding UNOBTAINABLE units left it with nothing at all — this can
+    // only happen for the small number of real sets made entirely of
+    // otherwise-unobtainable units, so fall back to showing them (see
+    // comment above). Any set with at least one real obtainable member
+    // (like "Epic Fest") already returned those from the query above and
+    // never reaches this fallback.
+    if (setName && !source && allUnits.length === 0) {
+      const { OR: _hideUnobtainable, ...whereWithoutHideFilter } = where;
+      // @ts-ignore
+      allUnits = await (prisma as any).unit.findMany({
+        where: whereWithoutHideFilter,
+        orderBy: [{ sortOrder: "asc" }],
+        select: unitSelect,
+      });
+    }
 
     // Filter out placeholder/test units from BCData that have no real names.
     // These have names like "817-1", "733_1", "801-1" (unit number + form index).
