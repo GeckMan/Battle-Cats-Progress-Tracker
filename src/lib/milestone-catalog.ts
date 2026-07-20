@@ -134,7 +134,7 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Courts of Agony",      category: "AWAKENING", sortOrder: 8 },
   { displayName: "NEO Wanwan's Glory",   category: "AWAKENING", sortOrder: 9 },
   { displayName: "NEO First Errand",     category: "AWAKENING", sortOrder: 10 },
-  // Added by Ryan (2026-07-20): two more Tier 2 follow-ups that were
+  // Added by Ryan (2026-07-20): three more Tier 2 follow-ups that were
   // missing -- same mechanic as every other AWAKENING entry (a harder,
   // separately-unlocked map for a specific Advent boss, dropping a True
   // Form), just recurring-availability "Absolute"-difficulty content
@@ -144,11 +144,13 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   // stage drops the True Form of Slime Cat (Jelly Dumpling Cat). Papuu's
   // Paradox follows up "Papuu's Paradise" (Standard Tier 2 Advent, Meow
   // Medal "Vox Deus"); its 2nd stage drops the True Form of Cossack Cat
-  // (Royal Guard Cat). Z-Onel Rises! (the remaining untracked Tier 2
-  // Advent boss) doesn't have a confirmed AWAKENING-tier follow-up yet --
-  // left out until one exists.
+  // (Royal Guard Cat). Z-Onel Resurrected! follows up "Z-Onel Rises!"
+  // (Standard Tier 2 Advent, Meow Medal "Angel of Undeath"); its 2nd
+  // stage drops the True Form of Phantom Cat (Bubble Cat). That's all 6
+  // Standard Tier 2 Advent bosses now accounted for.
   { displayName: "The Eldest Queen",     category: "AWAKENING", sortOrder: 11 },
   { displayName: "Papuu's Paradox",      category: "AWAKENING", sortOrder: 12 },
+  { displayName: "Z-Onel Resurrected!",  category: "AWAKENING", sortOrder: 13 },
 
   // ── LI'L STAGES ───────────────────────────────────────────────────────────
   // Requested by Ryan (2026-07-16), prompted by the uploaded "Li'l Cat's
