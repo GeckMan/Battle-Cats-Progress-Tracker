@@ -197,12 +197,14 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
 
   // ── AWAKENED STAGES ───────────────────────────────────────────────────────
   // Requested by Ryan (2026-07-16), from the wiki's "Awakened Stages"
-  // section (17 entries) on its "Special Events" master page -- one-time
-  // stages that unlock the True Form of an older Special Cat. Kept as its
-  // own category, separate from MONTHLY_AWAKENING below: Ryan flagged
-  // that although both accomplish the same end goal (a permanent True
-  // Form unlock), their actual in-game difficulties are very different,
-  // so lumping them together would blur two distinct achievements.
+  // section (originally 17 entries) on its "Special Events" master page --
+  // one-time stages that unlock the True Form of an older Special Cat.
+  // Kept as its own category, separate from MONTHLY_AWAKENING below: Ryan
+  // flagged that although both accomplish the same end goal (a permanent
+  // True Form unlock), their actual in-game difficulties are very
+  // different, so lumping them together would blur two distinct
+  // achievements. Now 16 entries -- "Catburger Awakens!" was removed
+  // 2026-07-17, see note below (the wiki marks it as removed content).
   { displayName: "Actress Awakens!",    category: "AWAKENED_STAGES", sortOrder: 1 },
   { displayName: "Samurai Awakens!",    category: "AWAKENED_STAGES", sortOrder: 2 },
   { displayName: "Boogie Awakens!",     category: "AWAKENED_STAGES", sortOrder: 3 },
@@ -219,7 +221,11 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Skirt Awakens!",      category: "AWAKENED_STAGES", sortOrder: 14 },
   { displayName: "Flower Cat Awakens!", category: "AWAKENED_STAGES", sortOrder: 15 },
   { displayName: "Cat Kart Awakens!",   category: "AWAKENED_STAGES", sortOrder: 16 },
-  { displayName: "Catburger Awakens!",  category: "AWAKENED_STAGES", sortOrder: 17 },
+  // "Catburger Awakens!" deliberately excluded -- removed content (the
+  // wiki flags it as no longer obtainable), reported by JSDPLAYSBCEN on
+  // Discord 2026-07-17. ensureMilestoneCatalog() will drop the existing
+  // DB row (and any user progress on it) the next time the page loads,
+  // since it's no longer in this catalog array.
 
   // ── MONTHLY AWAKENING STAGES ──────────────────────────────────────────────
   // From the wiki's "Monthly Cats Awakened Stages" section (12 entries) --
