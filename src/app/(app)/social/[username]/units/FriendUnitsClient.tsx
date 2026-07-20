@@ -48,7 +48,7 @@ function displayName(unit: UnitRow): string {
  * Form percentage and "does not have a True Form" messaging match what the
  * unit's owner sees for the exact same underlying data.
  *
- * Level 0 = not obtained, 1 = F1 (base), 2 = F2 (evolved), 3 = TF, 4 = UF
+ * Level 0 = not obtained, 1 = NF (base), 2 = EF (evolved), 3 = TF, 4 = UF
  */
 const PLACEHOLDER_RE = /^[\d_\-.\s]+$/;
 function isRealName(name: string | null): boolean {
@@ -117,7 +117,7 @@ const FORM_BADGE: Record<number, string> = {
 };
 
 const FORM_LABEL: Record<number, string> = {
-  0: "—", 1: "F1", 2: "F2", 3: "TF", 4: "UF",
+  0: "—", 1: "NF", 2: "EF", 3: "TF", 4: "UF",
 };
 
 function cardTint(level: number) {
@@ -189,8 +189,8 @@ function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void
         <div className="space-y-1">
           <div className="text-xs text-gray-500 uppercase tracking-wide">Forms</div>
           <div className="flex flex-col gap-0.5 text-sm">
-            <span className="text-gray-300">F1: {unit.name}</span>
-            {unit.evolvedName && <span className="text-gray-300">F2: {unit.evolvedName}</span>}
+            <span className="text-gray-300">NF: {unit.name}</span>
+            {unit.evolvedName && <span className="text-gray-300">EF: {unit.evolvedName}</span>}
             {unit.trueName && <span className="text-gray-300">TF: {unit.trueName}</span>}
             {unit.ultraName && <span className="text-gray-300">UF: {unit.ultraName}</span>}
           </div>

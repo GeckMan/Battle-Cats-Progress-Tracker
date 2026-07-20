@@ -28,10 +28,14 @@ export const UNIT_CATEGORY_META: Record<string, { label: string; color: string }
 };
 
 /** Form level display info */
+// "NF"/"EF" (Normal Form / Evolved Form) per Setredid's Discord request
+// (2026-07-19) — "F1"/"F2" read as confusing shorthand next to "TF"/"UF",
+// since the first two forms don't otherwise have letter-coded names in
+// the game itself the way True Form and Ultra Form do.
 export const FORM_LEVELS = [
   { level: 0, label: "Not Obtained", short: "—",   color: "bg-gray-700 border-gray-600 text-gray-400" },
-  { level: 1, label: "Form 1",       short: "F1",  color: "bg-yellow-900/60 border-yellow-700 text-yellow-300" },
-  { level: 2, label: "Form 2",       short: "F2",  color: "bg-red-900/60 border-red-700 text-red-300" },
+  { level: 1, label: "Normal Form",  short: "NF",  color: "bg-yellow-900/60 border-yellow-700 text-yellow-300" },
+  { level: 2, label: "Evolved Form", short: "EF",  color: "bg-red-900/60 border-red-700 text-red-300" },
   { level: 3, label: "True Form",    short: "TF",  color: "bg-gray-900 border-gray-500 text-gray-100" },
   { level: 4, label: "Ultra Form",   short: "UF",  color: "bg-purple-900/60 border-purple-500 text-purple-200" },
 ] as const;

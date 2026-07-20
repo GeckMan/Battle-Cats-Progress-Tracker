@@ -35,7 +35,7 @@ type UnitRow = {
  * formCount from the DB can overcount because BCData has placeholder text for
  * forms that don't actually exist in-game yet.
  *
- * Level 0 = not obtained, 1 = F1 (base), 2 = F2 (evolved), 3 = TF, 4 = UF
+ * Level 0 = not obtained, 1 = NF (base), 2 = EF (evolved), 3 = TF, 4 = UF
  * A unit only has a form if its corresponding name field is a real name
  * (not null and not matching a placeholder pattern like "817-1").
  */
@@ -149,8 +149,8 @@ const FORM_BADGE: Record<number, string> = {
 
 const FORM_LABEL: Record<number, string> = {
   0: "—",
-  1: "F1",
-  2: "F2",
+  1: "NF",
+  2: "EF",
   3: "TF",
   4: "UF",
 };
@@ -243,8 +243,8 @@ function UnitDetailPanel({
           title="Forms"
           defaultOpen
           textContent={[
-            `F1: ${unit.name}`,
-            unit.evolvedName ? `F2: ${unit.evolvedName}` : "",
+            `NF: ${unit.name}`,
+            unit.evolvedName ? `EF: ${unit.evolvedName}` : "",
             unit.trueName ? `TF: ${unit.trueName}` : "",
             unit.ultraName ? `UF: ${unit.ultraName}` : "",
           ].filter(Boolean).join(" | ")}
@@ -253,8 +253,8 @@ function UnitDetailPanel({
           extraHeight={8}
         >
           <div className="flex flex-col gap-0.5 text-sm pt-1">
-            <span className="text-gray-300">F1: {unit.name}</span>
-            {unit.evolvedName && <span className="text-gray-300">F2: {unit.evolvedName}</span>}
+            <span className="text-gray-300">NF: {unit.name}</span>
+            {unit.evolvedName && <span className="text-gray-300">EF: {unit.evolvedName}</span>}
             {unit.trueName && <span className="text-gray-300">TF: {unit.trueName}</span>}
             {unit.ultraName && <span className="text-gray-300">UF: {unit.ultraName}</span>}
           </div>
@@ -1055,8 +1055,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           <span className="w-px h-4 bg-gray-700 mx-1" />
           <span className="text-xs text-gray-500">Set to:</span>
           {[
-            { level: 1, label: "F1", color: "border-yellow-700/60 text-yellow-300 hover:bg-yellow-950/50" },
-            { level: 2, label: "F2", color: "border-red-700/60 text-red-300 hover:bg-red-950/50" },
+            { level: 1, label: "NF", color: "border-yellow-700/60 text-yellow-300 hover:bg-yellow-950/50" },
+            { level: 2, label: "EF", color: "border-red-700/60 text-red-300 hover:bg-red-950/50" },
             { level: 3, label: "TF", color: "border-gray-400 text-gray-100 hover:bg-gray-800" },
             { level: 4, label: "UF", color: "border-purple-500/60 text-purple-200 hover:bg-purple-950/50" },
             { level: 0, label: "Clear", color: "border-gray-700 text-gray-400 hover:bg-gray-900" },

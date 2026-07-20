@@ -6,8 +6,8 @@ import { logBulkActivities } from "@/lib/activity-logger";
 import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 const FORM_LABELS: Record<number, string> = {
-  1: "Form 1",
-  2: "Form 2",
+  1: "Normal Form",
+  2: "Evolved Form",
   3: "True Form",
   4: "Ultra Form",
 };

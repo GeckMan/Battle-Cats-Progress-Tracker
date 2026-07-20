@@ -12,7 +12,7 @@ const RARITY_ORDER = [
 ] as const;
 
 const FORM_LABEL: Record<number, string> = {
-  0: "—", 1: "F1", 2: "F2", 3: "TF", 4: "UF",
+  0: "—", 1: "NF", 2: "EF", 3: "TF", 4: "UF",
 };
 
 const FORM_BADGE: Record<number, string> = {
