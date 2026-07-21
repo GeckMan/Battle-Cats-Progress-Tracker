@@ -627,16 +627,36 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [setFilter, setSetFilter] = useState(searchParams.get("set") || "");
   const [collabFilter, setCollabFilter] = useState(searchParams.get("collab") || "");
   const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
-  // "Release Order" (default) sorts by sortOrder — release/unit-ID order
-  // within each rarity. "Cat Guide Order" instead uses catGuideOrder,
+  // "Cat Guide Order" (default, since 2026-07-21) uses catGuideOrder,
   // scraped from the wiki's Cat_Guide page, which reproduces the real
   // in-game Cat Guide screen's grouping/order (confirmed genuinely
   // different from release order — Ryan, 2026-07-21). Falls back to
   // sortOrder for any unit the wiki hasn't caught up to yet (null
   // catGuideOrder), so nothing silently disappears from the grid.
-  const [orderMode, setOrderMode] = useState<"release" | "catGuide">(
-    searchParams.get("order") === "catGuide" ? "catGuide" : "release"
-  );
+  // "Release Order" sorts by sortOrder — release/unit-ID order within
+  // each rarity — and is opt-in.
+  //
+  // Priority for the initial value: an explicit `order` URL param wins
+  // (so shared links behave predictably), then a previously-saved
+  // preference in localStorage (so the toggle sticks across refreshes —
+  // Ryan, 2026-07-21), then the catGuide default.
+  const ORDER_MODE_STORAGE_KEY = "bcp:unitsOrderMode";
+  const [orderMode, setOrderMode] = useState<"release" | "catGuide">(() => {
+    const urlOrder = searchParams.get("order");
+    if (urlOrder === "release" || urlOrder === "catGuide") return urlOrder;
+    if (typeof window !== "undefined") {
+      const saved = window.localStorage.getItem(ORDER_MODE_STORAGE_KEY);
+      if (saved === "release" || saved === "catGuide") return saved;
+    }
+    return "catGuide";
+  });
+
+  // Persist the toggle whenever it changes so it survives a refresh.
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.localStorage.setItem(ORDER_MODE_STORAGE_KEY, orderMode);
+    }
+  }, [orderMode]);
 
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
@@ -673,7 +693,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     if (setFilter) p.set("set", setFilter);
     if (collabFilter) p.set("collab", collabFilter);
     if (searchQuery) p.set("q", searchQuery);
-    if (orderMode === "catGuide") p.set("order", "catGuide");
+    if (orderMode === "release") p.set("order", "release");
     const qs = p.toString();
     router.replace(qs ? `?${qs}` : "/units", { scroll: false });
   }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, router]);
@@ -1023,19 +1043,31 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
         {/* Cat Guide order toggle — sorts within each rarity section by the
             real in-game Cat Guide screen's order (scraped from the wiki)
-            instead of release/unit-ID order. */}
-        <button
-          type="button"
-          onClick={() => setOrderMode((v) => (v === "catGuide" ? "release" : "catGuide"))}
-          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
-            orderMode === "catGuide"
-              ? "bg-amber-950/50 border-amber-700 text-amber-300"
-              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
-          }`}
+            instead of release/unit-ID order. Default is on; the choice is
+            saved to localStorage so it survives a refresh. A real
+            switch-style control rather than a checkbox-button, since this
+            is a binary on/off preference rather than a filter pill. */}
+        <label
+          className="flex items-center gap-2 px-2 py-1.5 rounded border border-gray-700 text-xs text-gray-300 cursor-pointer select-none"
           title="Sort each rarity section by the in-game Cat Guide screen's order instead of release order"
         >
-          <span>{orderMode === "catGuide" ? "✓" : ""} Cat Guide Order</span>
-        </button>
+          <span>Cat Guide Order</span>
+          <button
+            type="button"
+            role="switch"
+            aria-checked={orderMode === "catGuide"}
+            onClick={() => setOrderMode((v) => (v === "catGuide" ? "release" : "catGuide"))}
+            className={`relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors ${
+              orderMode === "catGuide" ? "bg-amber-600" : "bg-gray-600"
+            }`}
+          >
+            <span
+              className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
+                orderMode === "catGuide" ? "translate-x-4" : "translate-x-0.5"
+              }`}
+            />
+          </button>
+        </label>
 
         {/* Collab toggle */}
         <button
