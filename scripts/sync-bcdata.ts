@@ -217,6 +217,13 @@ async function main() {
     console.log("\n── Backfilling Source from Cat Release Order Wiki Page ──");
     await syncSourceFromReleaseOrder(prisma);
 
+    // Backfills the real in-game "Cat Guide" display order (separate from
+    // `sortOrder`) from the wiki's Cat_Guide page — see the big comment on
+    // the function for why this page is unusually scrapable and how the
+    // position is derived.
+    console.log("\n── Syncing Cat Guide Order from Wiki Page ──");
+    await syncCatGuideOrder(prisma);
+
     // Read-only: re-checks every EXISTING isCollab=true unit against the
     // same bcu-assets/コラボ evidence used above to detect new ones — the
     // regular flagging functions are deliberately additive-only and never
@@ -1791,6 +1798,13 @@ async function syncNeoBestOfTheBestBanner(prisma: PrismaClient) {
 //     from wiki phrasing, which is exactly the kind of fragmentation
 //     migration 20260713000007 had to clean up after.
 const RELEASE_ORDER_PAGE = "Cat_Release_Order";
+// The wiki's interactive "Cat Guide" widget (図鑑 replica) -- unlike most
+// pages on this wiki it renders its ENTIRE unit grid as plain server-side
+// <img> tags rather than needing a separate JSON/XHR data source (verified
+// 2026-07-21 from a user-provided HAR capture showing zero data requests,
+// plus a saved page source containing every unit's icon already embedded).
+// See syncCatGuideOrder() below.
+const CAT_GUIDE_PAGE = "Cat_Guide";
 const OBTAIN_METHOD_COLLAB_PATTERN = /collab/i;
 const OBTAIN_METHOD_PREFIX_MAP: Array<[string, string]> = [
   ["Rare Cat Capsules", "RARE_CAPSULE"],
@@ -1850,6 +1864,98 @@ async function fetchWikiPageHtml(page: string): Promise<string> {
   const html = json?.parse?.text?.["*"] as string | undefined;
   if (!html) throw new Error("parse API returned no HTML");
   return html;
+}
+
+/**
+ * Backfills Unit.catGuideOrder from the wiki's Cat_Guide page — the real
+ * in-game "Cat Guide" screen's display position, which our own website's
+ * grid has never matched (a user flagged this 2026-07-16; the BCData CSVs
+ * themselves have no column that reproduces it — see the dead-end
+ * scripts/audit-cat-guide-order.ts).
+ *
+ * Each unit's Normal Form icon on that page is named `Uni<unitNumber>_f00
+ * .png`; the widget renders every rarity tier's full paginated grid up
+ * front (hidden behind Tabber/CSS, not lazy-fetched — confirmed via a
+ * user-provided HAR showing no XHR/JSON requests at all), so the FIRST
+ * occurrence of each unique unitNumber's icon, in document order, is
+ * exactly the real Cat Guide position. Confirmed non-trivial — e.g. unit
+ * IDs 9–23 appear jumbled rather than ascending — so this is genuinely
+ * different information from `sortOrder`, not a relabeling of it.
+ *
+ * Recomputed in full on every run (positions can legitimately shift as
+ * PONOS adds units into an existing Cat Guide grouping) and left null for
+ * any unit the wiki page doesn't cover yet — the Units page falls back to
+ * `sortOrder` for those. Not counted toward reviewWarningCount: this is a
+ * toggle-only convenience ordering, not core obtain-method/collab data, so
+ * lag here is expected/cosmetic rather than something needing a human look.
+ */
+async function syncCatGuideOrder(prisma: PrismaClient) {
+  let html: string;
+  try {
+    html = await fetchWikiPageHtml(CAT_GUIDE_PAGE);
+  } catch (e) {
+    console.log(`  ⚠ Could not fetch the Cat Guide wiki page (${(e as Error).message}) — skipping catGuideOrder this run.`);
+    return;
+  }
+
+  const $ = load(html);
+  const order: number[] = [];
+  const seen = new Set<number>();
+  $("img").each((_, img) => {
+    const src = $(img).attr("src") ?? "";
+    const m = src.match(/Uni(\d+)_f00\.png/);
+    if (!m) return;
+    const unitNumber = Number(m[1]);
+    if (seen.has(unitNumber)) return;
+    seen.add(unitNumber);
+    order.push(unitNumber);
+  });
+
+  if (order.length === 0) {
+    console.log("  ⚠ Cat Guide wiki page parsed but no unit icons were found — skipping (page layout may have changed).");
+    return;
+  }
+
+  const positionByUnit = new Map<number, number>();
+  order.forEach((unitNumber, i) => positionByUnit.set(unitNumber, i + 1));
+
+  // @ts-ignore — catGuideOrder is a brand-new column; the generated client
+  // checked into the repo lags behind prisma/schema.prisma locally (fresh
+  // one regenerated on every Vercel build, per CLAUDE.md).
+  const dbUnits: { id: string; unitNumber: number; excludeFromCollection: boolean }[] =
+    await (prisma as any).unit.findMany({
+      select: { id: true, unitNumber: true, excludeFromCollection: true },
+    });
+
+  const toUpdate = dbUnits.filter((u) => positionByUnit.has(u.unitNumber));
+
+  const batchSize = 50;
+  for (let i = 0; i < toUpdate.length; i += batchSize) {
+    const batch = toUpdate.slice(i, i + batchSize);
+    await Promise.all(
+      batch.map((u) =>
+        // @ts-ignore — same generated-client lag as above
+        (prisma as any).unit.update({
+          where: { id: u.id },
+          data: { catGuideOrder: positionByUnit.get(u.unitNumber)! },
+        })
+      )
+    );
+  }
+
+  const collectibleTotal = dbUnits.filter((u) => !u.excludeFromCollection).length;
+  const matchedCollectible = dbUnits.filter(
+    (u) => !u.excludeFromCollection && positionByUnit.has(u.unitNumber)
+  ).length;
+  console.log(
+    `  ✓ Cat Guide order: matched ${toUpdate.length}/${dbUnits.length} units (${matchedCollectible}/${collectibleTotal} collectible) from ${order.length} unique positions found on the wiki page.`
+  );
+  const missingCollectible = collectibleTotal - matchedCollectible;
+  if (missingCollectible > 0) {
+    console.log(
+      `  (${missingCollectible} collectible unit(s) not yet in the wiki's Cat Guide — they'll fall back to release order until a later sync catches up.)`
+    );
+  }
 }
 
 function parseReleaseOrderRows(html: string): ReleaseOrderRow[] {

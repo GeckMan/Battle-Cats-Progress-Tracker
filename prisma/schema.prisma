@@ -308,6 +308,17 @@ model Unit {
   setName     String?                // gacha set: "Tales of the Nekoluga", "Ultra Souls", etc.
   banners       String[]  @default([]) // all banners this unit can be pulled from (for multi-banner filtering)
   evolutionData Json?                  // { tf?: { xp, items: [{id,name,count}] }, uf?: { xp, items } }
+  // Position in the real in-game "Cat Guide" (図鑑) screen, scraped from the
+  // wiki's Cat_Guide page (see scripts/sync-bcdata.ts's syncCatGuideOrder()).
+  // Deliberately separate from `sortOrder` (release/ID order within rarity,
+  // computed locally) rather than replacing it -- a user (2026-07-16
+  // onward, HexagonForce/Ryan) pointed out the website's grid doesn't match
+  // the real in-game Cat Guide's grouping, and BCData itself has no column
+  // that reproduces it (see scripts/audit-cat-guide-order.ts, a dead end).
+  // Null for any unit the wiki's Cat Guide template hasn't been updated to
+  // include yet (e.g. a very recently-added unit) -- the Units page falls
+  // back to `sortOrder` for those when this ordering is selected.
+  catGuideOrder Int?
   // true = not a real collectible cat -- e.g. the 21 "Spirit of X" entries
   // (see UNIT_NAME_OVERRIDES in scripts/sync-bcdata.ts), which exist in
   // BCData's unit table as internal representations of a summoned ability
@@ -328,6 +339,7 @@ model Unit {
   @@index([source])
   @@index([setName])
   @@index([excludeFromCollection])
+  @@index([catGuideOrder])
 }
 
 model UserUnitProgress {

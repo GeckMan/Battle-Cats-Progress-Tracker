@@ -23,6 +23,7 @@ type UnitRow = {
   category: string;
   formCount: number;
   sortOrder: number;
+  catGuideOrder: number | null;
   isCollab: boolean;
   source: string | null;
   setName: string | null;
@@ -626,6 +627,16 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [setFilter, setSetFilter] = useState(searchParams.get("set") || "");
   const [collabFilter, setCollabFilter] = useState(searchParams.get("collab") || "");
   const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+  // "Release Order" (default) sorts by sortOrder — release/unit-ID order
+  // within each rarity. "Cat Guide Order" instead uses catGuideOrder,
+  // scraped from the wiki's Cat_Guide page, which reproduces the real
+  // in-game Cat Guide screen's grouping/order (confirmed genuinely
+  // different from release order — Ryan, 2026-07-21). Falls back to
+  // sortOrder for any unit the wiki hasn't caught up to yet (null
+  // catGuideOrder), so nothing silently disappears from the grid.
+  const [orderMode, setOrderMode] = useState<"release" | "catGuide">(
+    searchParams.get("order") === "catGuide" ? "catGuide" : "release"
+  );
 
   const [units, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
@@ -662,9 +673,10 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     if (setFilter) p.set("set", setFilter);
     if (collabFilter) p.set("collab", collabFilter);
     if (searchQuery) p.set("q", searchQuery);
+    if (orderMode === "catGuide") p.set("order", "catGuide");
     const qs = p.toString();
     router.replace(qs ? `?${qs}` : "/units", { scroll: false });
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, router]);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, router]);
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
@@ -795,9 +807,21 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     }
   }
 
+  // Cat Guide order — reorders within each rarity section using the real
+  // in-game Cat Guide screen's position instead of release/unit-ID order.
+  // Units the wiki hasn't caught up to yet (null catGuideOrder) fall back
+  // to sortOrder so they still appear, just at their release-order spot.
+  const orderedUnits = orderMode === "catGuide"
+    ? [...units].sort((a, b) => {
+        const av = a.catGuideOrder ?? Number.MAX_SAFE_INTEGER;
+        const bv = b.catGuideOrder ?? Number.MAX_SAFE_INTEGER;
+        return av !== bv ? av - bv : a.sortOrder - b.sortOrder;
+      })
+    : units;
+
   /* Search filter — matches across all form names */
   const filtered = searchQuery
-    ? units.filter((u) => {
+    ? orderedUnits.filter((u) => {
         const q = searchQuery.toLowerCase();
         return (
           u.name.toLowerCase().includes(q) ||
@@ -807,7 +831,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           String(u.unitNumber).includes(searchQuery)
         );
       })
-    : units;
+    : orderedUnits;
 
   // Keep ref in sync for keyboard handler
   filteredRef.current = filtered;
@@ -996,6 +1020,22 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             labelMap={Object.fromEntries(availableCollabSets.map((c) => [c, c.replace(" Collaboration", "")]))}
           />
         )}
+
+        {/* Cat Guide order toggle — sorts within each rarity section by the
+            real in-game Cat Guide screen's order (scraped from the wiki)
+            instead of release/unit-ID order. */}
+        <button
+          type="button"
+          onClick={() => setOrderMode((v) => (v === "catGuide" ? "release" : "catGuide"))}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
+            orderMode === "catGuide"
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+          title="Sort each rarity section by the in-game Cat Guide screen's order instead of release order"
+        >
+          <span>{orderMode === "catGuide" ? "✓" : ""} Cat Guide Order</span>
+        </button>
 
         {/* Collab toggle */}
         <button
