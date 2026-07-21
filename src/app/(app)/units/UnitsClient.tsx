@@ -1041,38 +1041,30 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           />
         )}
 
-        {/* Cat Guide order toggle — sorts within each rarity section by the
-            real in-game Cat Guide screen's order (scraped from the wiki)
-            instead of release/unit-ID order. Default is on; the choice is
-            saved to localStorage so it survives a refresh. A real
-            switch-style control rather than a checkbox-button, since this
-            is a binary on/off preference rather than a filter pill. The
-            label itself flips between the two names (with "(default)"
-            next to Cat Guide Order) so it's clear which state is the
-            baseline and which is the opt-in alternative — Ryan, 2026-07-21. */}
+        {/* Cat Guide order (real in-game Cat Guide screen's grouping,
+            scraped from the wiki) is the untoggled/default state. Toggling
+            this ON switches to Release Order (sortOrder / unit-ID order)
+            instead — the static "Release Order" label names the state the
+            toggle switches TO, so clicking it does what it says
+            — Ryan, 2026-07-21. Choice is saved to localStorage so it
+            survives a refresh. */}
         <label
           className="flex items-center gap-2 px-2 py-1.5 rounded border border-gray-700 text-xs text-gray-300 cursor-pointer select-none"
-          title="Cat Guide Order (the default) sorts each rarity section by the real in-game Cat Guide screen's order. Toggle to switch to Release Order (sortOrder / unit-ID order) instead."
+          title="Units are sorted by the in-game Cat Guide order by default. Toggle to switch to Release Order (sortOrder / unit-ID order) instead."
         >
-          <span>
-            {orderMode === "catGuide" ? (
-              <>Cat Guide Order <span className="text-gray-500">(default)</span></>
-            ) : (
-              "Release Order"
-            )}
-          </span>
+          <span>Release Order</span>
           <button
             type="button"
             role="switch"
-            aria-checked={orderMode === "catGuide"}
+            aria-checked={orderMode === "release"}
             onClick={() => setOrderMode((v) => (v === "catGuide" ? "release" : "catGuide"))}
             className={`relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors ${
-              orderMode === "catGuide" ? "bg-amber-600" : "bg-gray-600"
+              orderMode === "release" ? "bg-amber-600" : "bg-gray-600"
             }`}
           >
             <span
               className={`inline-block h-4 w-4 transform rounded-full bg-white transition-transform ${
-                orderMode === "catGuide" ? "translate-x-4" : "translate-x-0.5"
+                orderMode === "release" ? "translate-x-4" : "translate-x-0.5"
               }`}
             />
           </button>
