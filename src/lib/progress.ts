@@ -18,8 +18,17 @@ export function storyChapterPercent(opts: {
   cleared: boolean;
   treasures: TreasureStatus;
   zombies: ZombieStatus;
+  // The Aku Realms has no new Treasures to collect and no Zombie Outbreak
+  // stages, so weighting those in would cap it at 70% forever no matter
+  // what — pass false here to make "cleared" the whole score instead.
+  hasTreasuresAndZombies?: boolean;
 }) {
   const clearedPart = opts.cleared ? 1 : 0;
+
+  if (opts.hasTreasuresAndZombies === false) {
+    return clearedPart * 100;
+  }
+
   const t = fractionFromTreasure(opts.treasures);
   const z = fractionFromZombie(opts.zombies);
 

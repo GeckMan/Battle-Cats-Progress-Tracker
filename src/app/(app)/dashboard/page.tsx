@@ -6,6 +6,7 @@ import { prisma } from "@/lib/prisma";
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
 import { ensureStoryProgress, ensureMedalProgress, ensureMilestoneProgress } from "@/lib/ensure-progress";
 import { ensureMilestoneCatalog, CATEGORY_META } from "@/lib/milestone-catalog";
+import { ensureStoryChapterCatalog } from "@/lib/story-catalog";
 import DashboardShell from "@/components/DashboardShell";
 
 export default async function DashboardPage() {
@@ -13,8 +14,8 @@ export default async function DashboardPage() {
   if (!session) redirect("/login");
   const userId = session.user.id as string;
 
-  // Ensure milestone catalog exists (idempotent, fast after first call)
-  await ensureMilestoneCatalog();
+  // Ensure milestone/story-chapter catalogs exist (idempotent, fast after first call)
+  await Promise.all([ensureMilestoneCatalog(), ensureStoryChapterCatalog()]);
 
   // Ensure progress rows exist — fire-and-forget, don't block rendering
   // Missing rows simply show as 0% progress until created
@@ -65,7 +66,7 @@ export default async function DashboardPage() {
   const storyRows = storyChapters.map((ch) => {
     const p = ch.progress[0];
     const pct = p
-      ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies })
+      ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies, hasTreasuresAndZombies: ch.arc !== "AkuRealms" })
       : 0;
     return { label: ch.displayName, pct };
   });

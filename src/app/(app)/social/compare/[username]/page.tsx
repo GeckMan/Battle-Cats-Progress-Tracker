@@ -47,7 +47,7 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
 
   const storyPcts = storyChapters.map((ch) => {
     const p = ch.progress[0];
-    return p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies }) : 0;
+    return p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies, hasTreasuresAndZombies: ch.arc !== "AkuRealms" }) : 0;
   });
   const storyOverall = storyPcts.length ? Math.round(storyPcts.reduce((s, p) => s + p, 0) / storyPcts.length) : 0;
 

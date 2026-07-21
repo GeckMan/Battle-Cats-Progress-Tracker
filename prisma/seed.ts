@@ -15,6 +15,13 @@ async function main() {
     { arc: "CotC", chapterNumber: 1, displayName: "Cats of the Cosmos Ch. 1", sortOrder: 201 },
     { arc: "CotC", chapterNumber: 2, displayName: "Cats of the Cosmos Ch. 2", sortOrder: 202 },
     { arc: "CotC", chapterNumber: 3, displayName: "Cats of the Cosmos Ch. 3", sortOrder: 203 },
+
+    // The Aku Realms: a bonus 49-stage chapter, but the wiki itself treats
+    // it as its own single story chapter rather than 3 sub-chapters — kept
+    // in sync with STORY_CHAPTER_CATALOG in src/lib/story-catalog.ts, which
+    // is what actually seeds this row in production (this seed script isn't
+    // part of the Vercel build/deploy path, see CLAUDE.md).
+    { arc: "AkuRealms", chapterNumber: 1, displayName: "The Aku Realms", sortOrder: 301 },
   ];
 
   for (const c of storyChapters) {

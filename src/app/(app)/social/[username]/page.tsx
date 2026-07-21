@@ -66,7 +66,7 @@ export default async function FriendProfilePage(props: {
   });
   const storyRows = storyChapters.map((ch) => {
     const p = ch.progress[0];
-    const pct = p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies }) : 0;
+    const pct = p ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies, hasTreasuresAndZombies: ch.arc !== "AkuRealms" }) : 0;
     return { id: ch.id, name: ch.displayName, pct };
   });
   const storyOverall = storyRows.length

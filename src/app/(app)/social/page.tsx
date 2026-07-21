@@ -98,7 +98,7 @@ async function computeProgressSummary(
   const storyPcts = storyChapters.map((ch) => {
     const p = ch.progress[0];
     return p
-      ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies })
+      ? storyChapterPercent({ cleared: p.cleared, treasures: p.treasures, zombies: p.zombies, hasTreasuresAndZombies: ch.arc !== "AkuRealms" })
       : 0;
   });
   const storyOverall =

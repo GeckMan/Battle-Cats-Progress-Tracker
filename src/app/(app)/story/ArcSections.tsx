@@ -27,6 +27,7 @@ function arcLabel(arc: string) {
   if (arc === "EoC")  return "Empire of Cats";
   if (arc === "ItF")  return "Into the Future";
   if (arc === "CotC") return "Cats of the Cosmos";
+  if (arc === "AkuRealms") return "The Aku Realms";
   return arc;
 }
 
@@ -34,10 +35,23 @@ function arcShort(arc: string) {
   if (arc === "EoC")  return "EoC";
   if (arc === "ItF")  return "ItF";
   if (arc === "CotC") return "CotC";
+  if (arc === "AkuRealms") return "Aku";
   return arc;
 }
 
+// The Aku Realms has no new Treasures to collect and no Zombie Outbreak
+// stages of its own (it's a 49-stage bonus chapter reusing Empire of Cats
+// locations, per the wiki) — it's tracked as a single "cleared" toggle
+// only, so its Treasures/Zombies controls are hidden rather than shown
+// stuck at "None" forever — Ryan, 2026-07-21.
+function arcHasTreasuresAndZombies(arc: string) {
+  return arc !== "AkuRealms";
+}
+
 function rowPct(r: Row) {
+  if (!arcHasTreasuresAndZombies(r.chapter.arc)) {
+    return r.cleared ? 100 : 0;
+  }
   let score = 0;
   if (r.cleared)              score += 34;
   if (r.treasures === "ALL")  score += 33;
@@ -300,6 +314,7 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
           const zombiesAll = rows.filter((r) => r.zombies === "ALL").length;
           const total = rows.length;
           const isOpen = open[g.arc];
+          const hasTZ = arcHasTreasuresAndZombies(g.arc);
 
           return (
             <div key={g.arc} style={{
@@ -351,8 +366,10 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                 }}>
                   {[
                     { label: "Cleared", val: cleared },
-                    { label: "Treasures", val: treasuresAll },
-                    { label: "Zombies", val: zombiesAll },
+                    ...(hasTZ ? [
+                      { label: "Treasures", val: treasuresAll },
+                      { label: "Zombies", val: zombiesAll },
+                    ] : []),
                   ].map((s) => (
                     <span key={s.label}>
                       <span style={{ color: c.accentDim, fontSize: 9, textTransform: "uppercase" }}>{s.label} </span>
@@ -360,8 +377,8 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                     </span>
                   ))}
                   <span style={{ flex: 1 }} />
-                  <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, { cleared: true, treasures: "ALL", zombies: "ALL" })} c={c}>All</BulkBtn>
-                  <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, { cleared: false, treasures: "NONE", zombies: "NONE" })} c={c}>Reset</BulkBtn>
+                  <BulkBtn variant="primary" onClick={() => bulkUpdate(ids, hasTZ ? { cleared: true, treasures: "ALL", zombies: "ALL" } : { cleared: true })} c={c}>All</BulkBtn>
+                  <BulkBtn variant="danger" onClick={() => bulkUpdate(ids, hasTZ ? { cleared: false, treasures: "NONE", zombies: "NONE" } : { cleared: false })} c={c}>Reset</BulkBtn>
                 </div>
               </div>
 
@@ -396,10 +413,14 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                         {/* Controls row */}
                         <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
                           <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
-                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Treasures</span>
-                          <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} c={c} />
-                          <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Zombies</span>
-                          <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} c={c} />
+                          {arcHasTreasuresAndZombies(r.chapter.arc) && (
+                            <>
+                              <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Treasures</span>
+                              <StatusPill value={r.treasures} onChange={(v) => update(r.id, { treasures: v })} c={c} />
+                              <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Zombies</span>
+                              <StatusPill value={r.zombies} onChange={(v) => update(r.id, { zombies: v })} c={c} />
+                            </>
+                          )}
                         </div>
                       </div>
                     );

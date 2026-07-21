@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { redirect } from "next/navigation";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { ensureStoryChapterCatalog } from "@/lib/story-catalog";
 import ArcSections from "./ArcSections";
 
 
@@ -10,6 +11,11 @@ export default async function StoryPage() {
   if (!session) redirect("/login");
 
   const userId = session.user.id as string;
+
+  // Ensure the story-chapter catalog is up to date (e.g. The Aku Realms,
+  // added 2026-07-21) before reading it below — idempotent, fast after the
+  // first call.
+  await ensureStoryChapterCatalog();
 
   const chapters = await prisma.storyChapter.findMany({
     orderBy: { sortOrder: "asc" },
@@ -54,7 +60,7 @@ export default async function StoryPage() {
     },
   }));
 
-  const arcsInOrder = ["EoC", "ItF", "CotC"] as const;
+  const arcsInOrder = ["EoC", "ItF", "CotC", "AkuRealms"] as const;
 
   const groups = arcsInOrder
     .map((arc) => ({
