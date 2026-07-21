@@ -1882,6 +1882,16 @@ async function fetchWikiPageHtml(page: string): Promise<string> {
  * IDs 9–23 appear jumbled rather than ascending — so this is genuinely
  * different information from `sortOrder`, not a relabeling of it.
  *
+ * Exception: the "Ancient Egg: NNNN" catfruit-treasure cats (confirmed
+ * 2026-07-21 via a user screenshot showing one still present on the
+ * wiki's English tab — our original 26-of-26-missed count was wrong, not
+ * the units) all share ONE generic placeholder image (`Uni000_m00.png`,
+ * not a real per-unit `_f00`), so their true unit number can't come from
+ * the filename at all. For those we fall back to matching the cell's
+ * `alt`/link-title text (e.g. "Ancient Egg: N005") against our own
+ * `Unit.name`, which the wiki keeps in lockstep with — confirmed against
+ * the same screenshot showing our DB's NF name is exactly that string.
+ *
  * Recomputed in full on every run (positions can legitimately shift as
  * PONOS adds units into an existing Cat Guide grouping) and left null for
  * any unit the wiki page doesn't cover yet — the Units page falls back to
@@ -1898,6 +1908,27 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
     return;
   }
 
+  // Loaded up front (rather than after parsing, as before) because the
+  // placeholder-image fallback below needs a name → unitNumber index while
+  // walking the page's <img> tags.
+  // @ts-ignore — catGuideOrder is a brand-new column; the generated client
+  // checked into the repo lags behind prisma/schema.prisma locally (fresh
+  // one regenerated on every Vercel build, per CLAUDE.md).
+  const dbUnits: { id: string; unitNumber: number; name: string; excludeFromCollection: boolean }[] =
+    await (prisma as any).unit.findMany({
+      select: { id: true, unitNumber: true, name: true, excludeFromCollection: true },
+    });
+  const dbUnitNumbers = new Set(dbUnits.map((u) => u.unitNumber));
+  const nameToUnitNumber = new Map<string, number>();
+  const ambiguousNames = new Set<string>();
+  for (const u of dbUnits) {
+    if (nameToUnitNumber.has(u.name) && nameToUnitNumber.get(u.name) !== u.unitNumber) {
+      ambiguousNames.add(u.name);
+    } else {
+      nameToUnitNumber.set(u.name, u.unitNumber);
+    }
+  }
+
   const $ = load(html);
   const order: number[] = [];
   const seen = new Set<number>();
@@ -1905,16 +1936,32 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
   // diagnostic logging below (identifying *which* units land on either
   // side of a coverage gap), never written to the DB.
   const wikiNameByUnit = new Map<number, string>();
+  // Placeholder-image cells whose alt text didn't match any current DB
+  // unit name — logged below as a separate diagnostic (these are likely
+  // brand-new treasure units the DB hasn't been seeded with yet, e.g.
+  // "Ancient Egg: N207").
+  const unresolvedPlaceholders = new Map<string, number>();
   $("img").each((_, img) => {
     const src = $(img).attr("src") ?? "";
-    const m = src.match(/Uni(\d+)_f00\.png/);
-    if (!m) return;
-    const unitNumber = Number(m[1]);
+    const alt = ($(img).attr("alt") ?? "").trim();
+    const uniMatch = src.match(/Uni(\d+)_([a-z0-9]+)\.png/i);
+    let unitNumber: number | null = null;
+    if (uniMatch && uniMatch[2].toLowerCase() === "f00") {
+      unitNumber = Number(uniMatch[1]);
+    } else if (uniMatch && alt) {
+      // Same unit-icon sprite folder, but not a real per-unit form-0 icon
+      // (e.g. the shared Ancient Egg placeholder) — resolve via name match.
+      if (alt && nameToUnitNumber.has(alt) && !ambiguousNames.has(alt)) {
+        unitNumber = nameToUnitNumber.get(alt)!;
+      } else if (alt) {
+        unresolvedPlaceholders.set(alt, (unresolvedPlaceholders.get(alt) ?? 0) + 1);
+      }
+    }
+    if (unitNumber === null) return;
     if (seen.has(unitNumber)) return;
     seen.add(unitNumber);
     order.push(unitNumber);
-    const alt = $(img).attr("alt");
-    if (alt) wikiNameByUnit.set(unitNumber, alt.trim());
+    if (alt) wikiNameByUnit.set(unitNumber, alt);
   });
 
   if (order.length === 0) {
@@ -1924,15 +1971,6 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
 
   const positionByUnit = new Map<number, number>();
   order.forEach((unitNumber, i) => positionByUnit.set(unitNumber, i + 1));
-
-  // @ts-ignore — catGuideOrder is a brand-new column; the generated client
-  // checked into the repo lags behind prisma/schema.prisma locally (fresh
-  // one regenerated on every Vercel build, per CLAUDE.md).
-  const dbUnits: { id: string; unitNumber: number; name: string; excludeFromCollection: boolean }[] =
-    await (prisma as any).unit.findMany({
-      select: { id: true, unitNumber: true, name: true, excludeFromCollection: true },
-    });
-  const dbUnitNumbers = new Set(dbUnits.map((u) => u.unitNumber));
 
   const toUpdate = dbUnits.filter((u) => positionByUnit.has(u.unitNumber));
 
@@ -1972,6 +2010,12 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
       `  (${dbOnlyCollectible.length} collectible unit(s) not yet in the wiki's Cat Guide — they'll fall back to release order until a later sync catches up: ` +
         dbOnlyCollectible.map((u) => `#${u.unitNumber} (${u.name})`).join(", ") +
         ")"
+    );
+  }
+  if (unresolvedPlaceholders.size > 0) {
+    const names = [...unresolvedPlaceholders.keys()];
+    console.log(
+      `  (${names.length} placeholder-icon Cat Guide entr${names.length === 1 ? "y" : "ies"} (shared generic image, e.g. the Ancient Egg treasure cats) had no matching unit name in our DB — likely brand-new treasure units not yet seeded: ${names.join(", ")})`
     );
   }
   const wikiOnly = order.filter((n) => !dbUnitNumbers.has(n));
