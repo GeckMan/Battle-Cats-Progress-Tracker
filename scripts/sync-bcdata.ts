@@ -1901,6 +1901,10 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
   const $ = load(html);
   const order: number[] = [];
   const seen = new Set<number>();
+  // Keep the wiki's own alt-text name alongside each position — purely for
+  // diagnostic logging below (identifying *which* units land on either
+  // side of a coverage gap), never written to the DB.
+  const wikiNameByUnit = new Map<number, string>();
   $("img").each((_, img) => {
     const src = $(img).attr("src") ?? "";
     const m = src.match(/Uni(\d+)_f00\.png/);
@@ -1909,6 +1913,8 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
     if (seen.has(unitNumber)) return;
     seen.add(unitNumber);
     order.push(unitNumber);
+    const alt = $(img).attr("alt");
+    if (alt) wikiNameByUnit.set(unitNumber, alt.trim());
   });
 
   if (order.length === 0) {
@@ -1922,10 +1928,11 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
   // @ts-ignore — catGuideOrder is a brand-new column; the generated client
   // checked into the repo lags behind prisma/schema.prisma locally (fresh
   // one regenerated on every Vercel build, per CLAUDE.md).
-  const dbUnits: { id: string; unitNumber: number; excludeFromCollection: boolean }[] =
+  const dbUnits: { id: string; unitNumber: number; name: string; excludeFromCollection: boolean }[] =
     await (prisma as any).unit.findMany({
-      select: { id: true, unitNumber: true, excludeFromCollection: true },
+      select: { id: true, unitNumber: true, name: true, excludeFromCollection: true },
     });
+  const dbUnitNumbers = new Set(dbUnits.map((u) => u.unitNumber));
 
   const toUpdate = dbUnits.filter((u) => positionByUnit.has(u.unitNumber));
 
@@ -1950,10 +1957,29 @@ async function syncCatGuideOrder(prisma: PrismaClient) {
   console.log(
     `  ✓ Cat Guide order: matched ${toUpdate.length}/${dbUnits.length} units (${matchedCollectible}/${collectibleTotal} collectible) from ${order.length} unique positions found on the wiki page.`
   );
-  const missingCollectible = collectibleTotal - matchedCollectible;
-  if (missingCollectible > 0) {
+
+  // Diagnostic detail for both directions of the coverage gap — added
+  // 2026-07-21 after Ryan asked which specific units the summary counts
+  // above referred to. Neither list affects reviewWarningCount (see the
+  // big comment on this function for why this ordering's lag is
+  // cosmetic), it's purely so a human reading the log doesn't have to
+  // separately query the DB or re-scrape the wiki to find out.
+  const dbOnlyCollectible = dbUnits.filter(
+    (u) => !u.excludeFromCollection && !positionByUnit.has(u.unitNumber)
+  );
+  if (dbOnlyCollectible.length > 0) {
     console.log(
-      `  (${missingCollectible} collectible unit(s) not yet in the wiki's Cat Guide — they'll fall back to release order until a later sync catches up.)`
+      `  (${dbOnlyCollectible.length} collectible unit(s) not yet in the wiki's Cat Guide — they'll fall back to release order until a later sync catches up: ` +
+        dbOnlyCollectible.map((u) => `#${u.unitNumber} (${u.name})`).join(", ") +
+        ")"
+    );
+  }
+  const wikiOnly = order.filter((n) => !dbUnitNumbers.has(n));
+  if (wikiOnly.length > 0) {
+    console.log(
+      `  (${wikiOnly.length} position(s) found on the wiki page don't match any current unit in our DB — likely units the wiki's Cat Guide template covers that our BCData-driven roster doesn't yet, or vice versa: ` +
+        wikiOnly.map((n) => `#${n} (${wikiNameByUnit.get(n) ?? "?"})`).join(", ") +
+        ")"
     );
   }
 }
