@@ -94,6 +94,24 @@ export default function AboutPage() {
           </ul>
         </section>
 
+        {/* Bug Reports & Feedback */}
+        <section className="space-y-3">
+          <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
+            Thanks for the Bug Reports
+          </h2>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            This site gets better because people take the time to report what&apos;s broken. Big
+            thanks to{" "}
+            <strong className="text-gray-200">bvg</strong>,{" "}
+            <strong className="text-gray-200">JSDPLAYSBCEN</strong>,{" "}
+            <strong className="text-gray-200">mranimemeboi</strong>,{" "}
+            <strong className="text-gray-200">HexagonForce</strong>, and{" "}
+            <strong className="text-gray-200">Setredid</strong>{" "}
+            for flagging issues on the site and on Reddit. If you spot something off, let us know.
+            It helps everyone.
+          </p>
+        </section>
+
         {/* Changelog */}
         <section className="space-y-4">
           <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
@@ -209,23 +227,6 @@ export default function AboutPage() {
               "Site launch: Story, Legend, Medals tracking and friend/compare system",
             ]}
           />
-        </section>
-
-        {/* Bug Reports & Feedback */}
-        <section className="space-y-3">
-          <h2 className="text-lg font-semibold text-gray-100 border-b border-gray-800 pb-2">
-            Thanks for the Bug Reports
-          </h2>
-          <p className="text-sm text-gray-400 leading-relaxed">
-            This site gets better because people take the time to report what&apos;s broken. Big
-            thanks to{" "}
-            <strong className="text-gray-200">bvg</strong>,{" "}
-            <strong className="text-gray-200">JSDPLAYSBCEN</strong>,{" "}
-            <strong className="text-gray-200">mranimemeboi</strong>, and{" "}
-            <strong className="text-gray-200">HexagonForce</strong>{" "}
-            for flagging issues on the site and on Reddit. If you spot something off, let us know.
-            It helps everyone.
-          </p>
         </section>
 
         {/* Credits */}
