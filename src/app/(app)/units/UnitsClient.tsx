@@ -1046,12 +1046,21 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             instead of release/unit-ID order. Default is on; the choice is
             saved to localStorage so it survives a refresh. A real
             switch-style control rather than a checkbox-button, since this
-            is a binary on/off preference rather than a filter pill. */}
+            is a binary on/off preference rather than a filter pill. The
+            label itself flips between the two names (with "(default)"
+            next to Cat Guide Order) so it's clear which state is the
+            baseline and which is the opt-in alternative — Ryan, 2026-07-21. */}
         <label
           className="flex items-center gap-2 px-2 py-1.5 rounded border border-gray-700 text-xs text-gray-300 cursor-pointer select-none"
-          title="Sort each rarity section by the in-game Cat Guide screen's order instead of release order"
+          title="Cat Guide Order (the default) sorts each rarity section by the real in-game Cat Guide screen's order. Toggle to switch to Release Order (sortOrder / unit-ID order) instead."
         >
-          <span>Cat Guide Order</span>
+          <span>
+            {orderMode === "catGuide" ? (
+              <>Cat Guide Order <span className="text-gray-500">(default)</span></>
+            ) : (
+              "Release Order"
+            )}
+          </span>
           <button
             type="button"
             role="switch"
