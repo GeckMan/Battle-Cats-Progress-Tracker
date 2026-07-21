@@ -101,6 +101,21 @@ export default function AboutPage() {
           </h2>
 
           <ChangelogEntry
+            version="1.2"
+            date="July 21, 2026"
+            items={[
+              "Unit Collection can now sort by the real in-game Cat Guide order (scraped weekly from the wiki) instead of release order — it's the default now, with a saved toggle to switch back",
+              "Milestone Stages page repacked into a tighter masonry layout so category panels use the screen better and it's clearer there's more to scroll",
+              "Removed the Advent Stages milestone category — every stage in it already has an equivalent Meow Medal — and added three missing Awakening Stage follow-ups instead: The Eldest Queen, Papuu's Paradox, and Z-Onel Resurrected!",
+              "Removed \"Catburger Awakens!\" from Awakened Stages — that content has been removed from the game",
+              "Fixed unobtainable units (like Cheetah Cat) showing up when browsing a specific gacha Set",
+              "Medals page: added a \"Backfill Stages\" button — earned Meow Medals can now fill in matching Legend crown and Story treasure/zombie progress, not just the other way around",
+              "Unit form labels changed from \"Form 1/Form 2\" to \"NF/EF\" (Normal Form/Evolved Form)",
+              "Social moved in the sidebar to sit right above About",
+            ]}
+          />
+
+          <ChangelogEntry
             version="1.1"
             date="July 14, 2026"
             items={[
