@@ -512,7 +512,10 @@ function RaritySection({
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
   const accent = RARITY_ACCENT[rarity] ?? "border-gray-600 text-gray-300 bg-gray-900/60";
   const obtained = units.filter((u) => u.formLevel > 0).length;
-  const trueForm = units.filter((u) => u.formLevel >= 3).length;
+  // "Maxed" — obtained AND already at that unit's own highest real form
+  // (see the matching comment on the global stats bar for why this
+  // replaced a flat formLevel >= 3 "TF" count).
+  const maxedForm = units.filter((u) => u.formLevel > 0 && u.formLevel === realMaxForm(u)).length;
 
   return (
     <div className="space-y-2">
@@ -529,7 +532,7 @@ function RaritySection({
         </div>
         <div className="flex items-center gap-4 text-xs opacity-70">
           <span>{obtained} obtained</span>
-          <span>{trueForm} TF</span>
+          <span>{maxedForm} Maxed</span>
         </div>
       </button>
 
@@ -928,8 +931,15 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
   /* Overall stats */
   const obtained = units.filter((u) => u.formLevel > 0).length;
-  const trueForm = units.filter((u) => u.formLevel >= 3).length;
-  const hasTrueForm = units.filter((u) => realMaxForm(u) >= 3).length;
+  // "Maxed" — obtained AND at that unit's own highest real form, rather
+  // than a flat formLevel >= 3 check. Some units cap out at Evolved Form
+  // (no True Form at all) and some go all the way to Ultra Form, so
+  // counting "True Form" specifically both under- and over-counted what
+  // people actually want to track: which units still need evolving
+  // further. Setredid's Discord suggestion, 2026-07-22. The denominator
+  // is `obtained` (not total units) since a unit can only be "maxed" once
+  // you actually have it.
+  const maxedForm = units.filter((u) => u.formLevel > 0 && u.formLevel === realMaxForm(u)).length;
 
   /* Group units by rarity for the "All" tab sectioned view */
   const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {
@@ -981,8 +991,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           <MiniBar value={obtained} total={units.length} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
-          <div className="text-xs text-gray-500 mb-1">True Form</div>
-          <MiniBar value={trueForm} total={hasTrueForm} />
+          <div className="text-xs text-gray-500 mb-1">Maxed</div>
+          <MiniBar value={maxedForm} total={obtained} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">Total</div>

@@ -336,7 +336,10 @@ function RaritySection({
   const label = UNIT_CATEGORY_META[rarity]?.label ?? rarity;
   const accent = RARITY_ACCENT[rarity] ?? "border-gray-600 text-gray-300 bg-gray-900/60";
   const obtained = units.filter((u) => u.formLevel > 0).length;
-  const trueForm = units.filter((u) => u.formLevel >= 3).length;
+  // "Maxed" — obtained AND at that unit's own highest real form. See the
+  // matching comment on UnitsClient.tsx for why this replaced a flat
+  // formLevel >= 3 "TF" count (some units cap at EF, some go to UF).
+  const maxedForm = units.filter((u) => u.formLevel > 0 && u.formLevel === realMaxForm(u)).length;
 
   return (
     <div className="space-y-2">
@@ -352,7 +355,7 @@ function RaritySection({
         </div>
         <div className="flex items-center gap-4 text-xs opacity-70">
           <span>{obtained} obtained</span>
-          <span>{trueForm} TF</span>
+          <span>{maxedForm} Maxed</span>
         </div>
       </button>
 
@@ -558,8 +561,7 @@ function FriendUnitsInner({
   }
 
   const obtained = units.filter((u) => u.formLevel > 0).length;
-  const trueForm = units.filter((u) => u.formLevel >= 3).length;
-  const hasTrueForm = units.filter((u) => realMaxForm(u) >= 3).length;
+  const maxedForm = units.filter((u) => u.formLevel > 0 && u.formLevel === realMaxForm(u)).length;
 
   const grouped = RARITY_ORDER.reduce<Record<string, UnitRow[]>>((acc, rarity) => {
     const rarityUnits = filtered.filter((u) => u.category === rarity);
@@ -614,8 +616,8 @@ function FriendUnitsInner({
           <MiniBar value={obtained} total={units.length} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
-          <div className="text-xs text-gray-500 mb-1">True Form</div>
-          <MiniBar value={trueForm} total={hasTrueForm} />
+          <div className="text-xs text-gray-500 mb-1">Maxed</div>
+          <MiniBar value={maxedForm} total={obtained} />
         </div>
         <div className="border border-gray-700 rounded-lg p-3 bg-black">
           <div className="text-xs text-gray-500 mb-1">Total</div>
