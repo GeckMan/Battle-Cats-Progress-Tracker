@@ -630,6 +630,11 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [setFilter, setSetFilter] = useState(searchParams.get("set") || "");
   const [collabFilter, setCollabFilter] = useState(searchParams.get("collab") || "");
   const [searchQuery, setSearchQuery] = useState(searchParams.get("q") || "");
+  // Shows only obtained units that aren't yet at their own real max form
+  // (see realMaxForm()) — i.e. still have evolving left to do. Client-side
+  // only, since it's derived from data already on each unit row rather
+  // than needing a DB query. Requested by Ryan, 2026-07-22.
+  const [needsEvolving, setNeedsEvolving] = useState(searchParams.get("needsEvolving") === "1");
   // "Cat Guide Order" (default, since 2026-07-21) uses catGuideOrder,
   // scraped from the wiki's Cat_Guide page, which reproduces the real
   // in-game Cat Guide screen's grouping/order (confirmed genuinely
@@ -697,9 +702,10 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     if (collabFilter) p.set("collab", collabFilter);
     if (searchQuery) p.set("q", searchQuery);
     if (orderMode === "release") p.set("order", "release");
+    if (needsEvolving) p.set("needsEvolving", "1");
     const qs = p.toString();
     router.replace(qs ? `?${qs}` : "/units", { scroll: false });
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, router]);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, needsEvolving, router]);
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
@@ -757,6 +763,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     setCollabFilter("");
     setHideCollab(false);
     setSearchQuery("");
+    setNeedsEvolving(false);
     exitSelectionMode();
   }
 
@@ -843,7 +850,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     : units;
 
   /* Search filter — matches across all form names */
-  const filtered = searchQuery
+  const searched = searchQuery
     ? orderedUnits.filter((u) => {
         const q = searchQuery.toLowerCase();
         return (
@@ -855,6 +862,12 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         );
       })
     : orderedUnits;
+
+  /* "Needs Evolving" filter — obtained but not yet at that unit's own
+     real max form. */
+  const filtered = needsEvolving
+    ? searched.filter((u) => u.formLevel > 0 && u.formLevel < realMaxForm(u))
+    : searched;
 
   // Keep ref in sync for keyboard handler
   filteredRef.current = filtered;
@@ -920,7 +933,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   }, [focusedIdx, detailUnit, selectionMode, getGridCols]);
 
   // Reset focus when filters change
-  useEffect(() => { setFocusedIdx(-1); }, [activeCategory, sourceFilter, setFilter, collabFilter, searchQuery, hideCollab]);
+  useEffect(() => { setFocusedIdx(-1); }, [activeCategory, sourceFilter, setFilter, collabFilter, searchQuery, hideCollab, needsEvolving]);
 
   // Scroll focused card into view
   useEffect(() => {
@@ -949,7 +962,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
-  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab;
+  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab || needsEvolving;
 
   return (
     <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
@@ -1092,6 +1105,22 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           title="Collab units come from limited-time events, serial codes, or campaign downloads"
         >
           <span>{hideCollab ? "✓" : ""} Hide Collab</span>
+        </button>
+
+        {/* Needs Evolving toggle — obtained units not yet at their own
+            real max form (see realMaxForm()), requested by Ryan 2026-07-22
+            as a companion to the "Maxed" stat. */}
+        <button
+          type="button"
+          onClick={() => setNeedsEvolving((v) => !v)}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
+            needsEvolving
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+          title="Show only units you own that haven't been evolved to their highest available form"
+        >
+          <span>{needsEvolving ? "✓" : ""} Needs Evolving</span>
         </button>
 
         {/* Select mode toggle */}
