@@ -15,12 +15,15 @@ const FORM_LABEL: Record<number, string> = {
   0: "—", 1: "NF", 2: "EF", 3: "TF", 4: "UF",
 };
 
+// NF white / EF yellow / TF red / UF purple — kept in sync with the same
+// map in UnitsClient.tsx (see its comment for why this is duplicated
+// rather than shared).
 const FORM_BADGE: Record<number, string> = {
   0: "bg-gray-800 border-gray-700 text-gray-500",
-  1: "bg-yellow-950/70 border-yellow-700/60 text-yellow-300",
-  2: "bg-red-950/70 border-red-700/60 text-red-300",
-  3: "bg-gray-900 border-gray-400 text-gray-100",
-  4: "bg-purple-950/70 border-purple-500/60 text-purple-200",
+  1: "bg-gray-100/10 border-gray-300 text-gray-100",
+  2: "bg-yellow-900/60 border-yellow-700 text-yellow-300",
+  3: "bg-red-900/60 border-red-700 text-red-300",
+  4: "bg-purple-900/60 border-purple-500 text-purple-200",
 };
 
 const FORM_LETTER = ["f", "c", "s", "u"] as const;

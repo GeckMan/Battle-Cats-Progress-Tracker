@@ -140,12 +140,17 @@ function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
 
 /* ── Form badge colors ─────────────────────────────────────────────────── */
 
+// NF white / EF yellow / TF red / UF purple — this map used to lag behind
+// unit-catalog.ts's FORM_LEVELS.color (which was updated to this scheme
+// 2026-07-22) since it's a separate, independently-hardcoded copy used
+// for the actual visible badges. Keep both in sync if this ever changes
+// again.
 const FORM_BADGE: Record<number, string> = {
   0: "bg-gray-800 border-gray-700 text-gray-500",
-  1: "bg-yellow-950/70 border-yellow-700/60 text-yellow-300",
-  2: "bg-red-950/70 border-red-700/60 text-red-300",
-  3: "bg-gray-900 border-gray-400 text-gray-100",
-  4: "bg-purple-950/70 border-purple-500/60 text-purple-200",
+  1: "bg-gray-100/10 border-gray-300 text-gray-100",
+  2: "bg-yellow-900/60 border-yellow-700 text-yellow-300",
+  3: "bg-red-900/60 border-red-700 text-red-300",
+  4: "bg-purple-900/60 border-purple-500 text-purple-200",
 };
 
 const FORM_LABEL: Record<number, string> = {
@@ -158,9 +163,9 @@ const FORM_LABEL: Record<number, string> = {
 
 function cardTint(level: number) {
   if (level >= 4) return "bg-purple-950/20 border-purple-500/50";
-  if (level === 3) return "bg-gray-950 border-gray-500/60";
-  if (level === 2) return "bg-red-950/10 border-red-900/40";
-  if (level === 1) return "bg-yellow-950/10 border-yellow-900/40";
+  if (level === 3) return "bg-red-950/10 border-red-900/40";
+  if (level === 2) return "bg-yellow-950/10 border-yellow-900/40";
+  if (level === 1) return "bg-gray-100/5 border-gray-400/30";
   return "bg-black border-gray-800";
 }
 
