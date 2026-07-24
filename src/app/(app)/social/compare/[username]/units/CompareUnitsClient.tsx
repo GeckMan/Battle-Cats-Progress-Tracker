@@ -41,13 +41,19 @@ function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
   return `/api/sprite?u=${unitNumber}&f=${letter}`;
 }
 
-type Tab = "missing" | "ahead" | "behind" | "all";
+type Tab = "missing" | "haveNotThem" | "ahead" | "behind" | "both" | "all";
 
 const TABS: { key: Tab; label: string; desc: string }[] = [
-  { key: "missing", label: "They Have, You Don't", desc: "Units your friend has obtained that you haven't" },
-  { key: "behind",  label: "They're Ahead",        desc: "Units you both have but they have a higher form" },
-  { key: "ahead",   label: "You're Ahead",         desc: "Units you both have but you have a higher form" },
-  { key: "all",     label: "All Units",            desc: "Every unit side-by-side" },
+  { key: "missing",     label: "They Have, You Don't",      desc: "Units your friend has obtained that you haven't" },
+  { key: "haveNotThem", label: "You Have, They Don't",      desc: "Units you've obtained that your friend hasn't" },
+  // "Ahead"/"behind" alone was ambiguous about what it was even comparing —
+  // renamed to spell out that it's specifically about a shared unit where
+  // one of you has evolved it further, not just about who has more units
+  // overall. Ryan, 2026-07-22.
+  { key: "behind",      label: "They're Further Evolved",   desc: "Units you both have, but your friend has evolved theirs further" },
+  { key: "ahead",       label: "You're Further Evolved",    desc: "Units you both have, but you've evolved yours further" },
+  { key: "both",        label: "You Both Have",             desc: "Every unit you've both obtained, at any form level" },
+  { key: "all",         label: "All Units",                 desc: "Every unit side-by-side" },
 ];
 
 /* ── Component ──────────────────────────────────────────────────────────── */
@@ -74,14 +80,19 @@ export default function CompareUnitsClient({
   const theyAhead   = units.filter((u) => u.myForm > 0 && u.theirForm > u.myForm);
   const youAhead    = units.filter((u) => u.theirForm > 0 && u.myForm > u.theirForm);
   const same        = units.filter((u) => u.myForm > 0 && u.theirForm > 0 && u.myForm === u.theirForm);
+  // Every unit you've both obtained, regardless of whose form is higher —
+  // theyAhead + youAhead + same combined.
+  const bothHave    = units.filter((u) => u.myForm > 0 && u.theirForm > 0);
 
   /* ── Filter the active tab's units ── */
   let tabUnits: CompareUnit[];
   switch (activeTab) {
-    case "missing": tabUnits = missing; break;
-    case "behind":  tabUnits = theyAhead; break;
-    case "ahead":   tabUnits = youAhead; break;
-    case "all":     tabUnits = units; break;
+    case "missing":     tabUnits = missing; break;
+    case "haveNotThem": tabUnits = youDontHave; break;
+    case "behind":      tabUnits = theyAhead; break;
+    case "ahead":       tabUnits = youAhead; break;
+    case "both":        tabUnits = bothHave; break;
+    case "all":         tabUnits = units; break;
   }
 
   if (rarityFilter) {
@@ -141,16 +152,18 @@ export default function CompareUnitsClient({
           label="You have, they don't"
           count={youDontHave.length}
           color="border-amber-900 text-amber-400"
+          active={activeTab === "haveNotThem"}
+          onClick={() => setActiveTab("haveNotThem")}
         />
         <SummaryCard
-          label="They're ahead"
+          label="They're further evolved"
           count={theyAhead.length}
           color="border-blue-900 text-blue-400"
           active={activeTab === "behind"}
           onClick={() => setActiveTab("behind")}
         />
         <SummaryCard
-          label="You're ahead"
+          label="You're further evolved"
           count={youAhead.length}
           color="border-amber-900 text-amber-400"
           active={activeTab === "ahead"}
@@ -229,11 +242,15 @@ export default function CompareUnitsClient({
             ? "No units match your search."
             : activeTab === "missing"
               ? `${theirLabel} doesn't have any units you're missing. Nice!`
-              : activeTab === "ahead"
-                ? "You're not ahead on any units."
-                : activeTab === "behind"
-                  ? `${theirLabel} isn't ahead on any units.`
-                  : "No units found."}
+              : activeTab === "haveNotThem"
+                ? `You don't have any units ${theirLabel} is missing.`
+                : activeTab === "ahead"
+                  ? "You haven't evolved any shared units further than they have."
+                  : activeTab === "behind"
+                    ? `${theirLabel} hasn't evolved any shared units further than you have.`
+                    : activeTab === "both"
+                      ? "You don't have any units in common yet."
+                      : "No units found."}
         </div>
       ) : (
         <div className="space-y-6">
