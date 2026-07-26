@@ -131,7 +131,18 @@ export async function GET(req: NextRequest) {
 
     const now = new Date();
     const cursor = new Date(since);
+    // Map of "YYYY-MM-DD" -> index in `days`, built once so each activity
+    // event below is an O(1) lookup instead of an O(days) Array.indexOf
+    // scan. That indexOf was fine when the waveform was capped to a 30-day
+    // window, but became an accidental O(activities × days) hot spot once
+    // the range was widened to full account history (2026-07-08) — for a
+    // long-lived, active account that's potentially hundreds of days times
+    // thousands of activity rows on every single dashboard load, which is
+    // the leading suspect for the Fluid Active CPU spike Ryan flagged
+    // starting right around that release (2026-07-22).
+    const dayIndex = new Map<string, number>();
     while (cursor <= now) {
+      dayIndex.set(cursor.toISOString().slice(0, 10), days.length);
       days.push(cursor.toISOString().slice(0, 10));
       for (const cat of categories) dailyCounts[cat].push(0);
       cursor.setDate(cursor.getDate() + 1);
@@ -139,8 +150,8 @@ export async function GET(req: NextRequest) {
 
     for (const a of activities) {
       const dayStr = a.createdAt.toISOString().slice(0, 10);
-      const dayIdx = days.indexOf(dayStr);
-      if (dayIdx === -1) continue;
+      const dayIdx = dayIndex.get(dayStr);
+      if (dayIdx === undefined) continue;
       const cat = categoryMap[a.type];
       if (cat) dailyCounts[cat][dayIdx]++;
     }
