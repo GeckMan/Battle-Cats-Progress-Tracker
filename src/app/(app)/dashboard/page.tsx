@@ -76,20 +76,28 @@ export default async function DashboardPage() {
       : Math.round(storyRows.reduce((s, r) => s + r.pct, 0) / storyRows.length);
 
   // ── Legend ─────────────────────────────────────────────────────────────────
+  // legendOverall is a flat average across every subchapter (matching the
+  // Legend Stages page's "Completion" stat), NOT an average-of-saga-averages.
+  // The latter double-average previously let small sagas (few subchapters)
+  // skew the overall number disproportionately relative to large sagas,
+  // causing the Dashboard's Legend % to diverge from the Legend Stages page.
+  const allSubchapterPercents: number[] = [];
   const legendRows = sagas.map((s) => {
-    const percents = s.subchapters.map((sc) =>
-      legendSubchapterPercent({
+    const percents = s.subchapters.map((sc) => {
+      const pct = legendSubchapterPercent({
         crownMax: sc.progress[0]?.crownMax ?? null,
         maxCrowns: (sc as any).maxCrowns ?? 4,
-      })
-    );
+      });
+      allSubchapterPercents.push(pct);
+      return pct;
+    });
     const pct = percents.length ? Math.round(percents.reduce((a, b) => a + b, 0) / percents.length) : 0;
     return { label: s.displayName, pct };
   });
   const legendOverall =
-    legendRows.length === 0
+    allSubchapterPercents.length === 0
       ? 0
-      : Math.round(legendRows.reduce((s, r) => s + r.pct, 0) / legendRows.length);
+      : Math.round(allSubchapterPercents.reduce((a, b) => a + b, 0) / allSubchapterPercents.length);
 
   // ── Medals ────────────────────────────────────────────────────────────────
   const medalTotal = medalsWithProgress.length;
