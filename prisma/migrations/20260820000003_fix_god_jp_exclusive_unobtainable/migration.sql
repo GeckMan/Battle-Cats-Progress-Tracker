@@ -1,0 +1,39 @@
+-- Fixes God (Special Cat, #141) incorrectly showing up in the default
+-- Units grid (no source filter applied). Reported by Ryan (2026-08-20) via
+-- a wiki screenshot showing God's page carries BOTH a "JAPANESE EXCLUSIVE"
+-- banner ("This feature is exclusive to the Japanese version of The Battle
+-- Cats") AND an "UNOBTAINABLE" banner ("This feature cannot be obtained in
+-- current versions without hacking").
+--
+-- Root cause: migration 20260303000007_readd_serial_as_unobtainable
+-- originally classified unit 141 (then named "God Secret") as
+-- source=UNOBTAINABLE. Later, 20260712000012_resolve_9_deferred_collab_
+-- units_from_wiki reclassified it to source=DAILY_LOGIN, reasoning that its
+-- historical obtain method -- a Daily Bonus during BCJP's 11.5 Anniversary
+-- event -- was a real, structured mechanism (unlike a pure hack), giving it
+-- "the same treatment as Capsule Cat's Daily Bonus". That was right about
+-- the MECHANISM being real, but missed that this specific event was itself
+-- Japanese-exclusive and is now permanently over -- unlike Capsule Cat,
+-- whose MattShea Daily Bonus ran in the EN version specifically (confirmed
+-- via wiki, 2026-08-20: Capsule Cat's EN unlock was earning it through the
+-- MattShea Collaboration Event proper, not a JP-only mechanic). A unit can
+-- have a "real" obtain method and still be unobtainable for an EN player if
+-- that method never ran outside BCJP.
+--
+-- /api/units's default query (no explicit source param) already excludes
+-- source=UNOBTAINABLE units correctly -- this only needed the underlying
+-- classification corrected, not any query logic change.
+--
+-- Scope note: this migration deliberately does NOT attempt a broader sweep
+-- of every DAILY_LOGIN/STAMP_REWARD/SPECIAL_SALE unit for the same
+-- JP-exclusive-event pattern. Checked Shirou the Cat (#457, source=
+-- DAILY_LOGIN via the Fate/Stay Night Heaven's Feel collab) specifically,
+-- since a JP-exclusive "Shirou" unit was flagged earlier this project --
+-- but that's Shirou Emiya, a separate later Uber Rare unit in the same
+-- franchise; #457 itself checks out as genuinely EN-obtainable. Only God
+-- has a directly wiki-confirmed JP-exclusive + unobtainable banner combo
+-- today; a fuller audit would need per-unit wiki verification the same way,
+-- not a guessed batch update.
+UPDATE "Unit"
+SET "source" = 'UNOBTAINABLE'
+WHERE "unitNumber" = 141 AND "name" = 'God' AND "source" != 'UNOBTAINABLE';
