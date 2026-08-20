@@ -17,7 +17,8 @@ export type MilestoneCategory =
   | "MALEVOLENT"
   | "SUPER_SMASH"
   | "AWAKENED_STAGES"
-  | "MONTHLY_AWAKENING";
+  | "MONTHLY_AWAKENING"
+  | "CLAN_OF_THE_MANIACS";
 
 export type MilestoneDef = {
   displayName: string;
@@ -202,6 +203,22 @@ export const MILESTONE_CATALOG: MilestoneDef[] = [
   { displayName: "Treacherous Road (Brutal)", category: "SUPER_SMASH", sortOrder: 1 },
   { displayName: "Heinous Road (Brutal)",     category: "SUPER_SMASH", sortOrder: 2 },
 
+  // ── CLAN OF THE MANIACS ───────────────────────────────────────────────────
+  // Setredid flagged on Discord (2026-08-06) that CRAZED and MANIC didn't
+  // have their own "Clan of the Maniacs" entry, even though its own
+  // structural counterpart for MALEVOLENT (SUPER_SMASH, above) was already
+  // in the catalog -- this is the CRAZED-side original that SUPER_SMASH was
+  // modeled on, and it was simply missed when SUPER_SMASH got added
+  // 2026-07-16. Unlocked after clearing all 9 original Crazed Cat stages
+  // (excluding Crazed Moneko); 2 stages, first clear of the second awards
+  // the "Frenzied Family" Meow Medal (already tracked separately in the
+  // Meow Medals catalog -- this only covers the stage-clear milestone
+  // itself, same division of labor as every other Awakening-style category
+  // here). Confirmed via two independent wiki-derived sources (2026-08-20):
+  // "The Wild Dance (Deadly)" then "Insane Rhythms (Merciless)".
+  { displayName: "The Wild Dance (Deadly)",      category: "CLAN_OF_THE_MANIACS", sortOrder: 1 },
+  { displayName: "Insane Rhythms (Merciless)",   category: "CLAN_OF_THE_MANIACS", sortOrder: 2 },
+
   // ── AWAKENED STAGES ───────────────────────────────────────────────────────
   // Requested by Ryan (2026-07-16), from the wiki's "Awakened Stages"
   // section (originally 17 entries) on its "Special Events" master page --
@@ -263,20 +280,24 @@ export const CATEGORY_META: Record<
 > = {
   CRAZED:      { label: "Crazed Cats",            order: 0 },
   MANIC:       { label: "Manic Cats",             order: 1 },
-  LIL_STAGES:  { label: "Li'l Stages",            order: 2 },
-  LIL_TRIAL:   { label: "Li'l Cat's Trial",       order: 3 },
+  // Sits right after MANIC, same relationship SUPER_SMASH has to
+  // MALEVOLENT below -- the wiki's own wording ("the Malevolent equivalent
+  // of Clan of the Maniacs") is what ties these two pairs together.
+  CLAN_OF_THE_MANIACS: { label: "Clan of the Maniacs",  order: 2 },
+  LIL_STAGES:  { label: "Li'l Stages",            order: 3 },
+  LIL_TRIAL:   { label: "Li'l Cat's Trial",       order: 4 },
   // ADVENT: no MILESTONE_CATALOG entries reference this anymore (removed
   // 2026-07-20, see comment above) -- kept here only because it's still a
   // real enum value and this Record's type requires every value to have
   // an entry. Never actually rendered since no rows exist under it.
-  ADVENT:      { label: "Advent Stages",          order: 4 },
-  AWAKENING:   { label: "Awakening Stages",       order: 5 },
-  CATCLAW:     { label: "Catclaw Championships",  order: 6 },
-  MALEVOLENT:  { label: "Malevolent Stages",      order: 7 },
-  SUPER_SMASH: { label: "Super Smash Families",   order: 8 },
-  AWAKENED_STAGES:    { label: "Special Cat Awakened Stages",  order: 9 },
-  MONTHLY_AWAKENING:  { label: "Monthly Cats Awakened Stages",  order: 10 },
-  OTHER:       { label: "Other",                  order: 11 },
+  ADVENT:      { label: "Advent Stages",          order: 5 },
+  AWAKENING:   { label: "Awakening Stages",       order: 6 },
+  CATCLAW:     { label: "Catclaw Championships",  order: 7 },
+  MALEVOLENT:  { label: "Malevolent Stages",      order: 8 },
+  SUPER_SMASH: { label: "Super Smash Families",   order: 9 },
+  AWAKENED_STAGES:    { label: "Special Cat Awakened Stages",  order: 10 },
+  MONTHLY_AWAKENING:  { label: "Monthly Cats Awakened Stages",  order: 11 },
+  OTHER:       { label: "Other",                  order: 12 },
 };
 
 /**

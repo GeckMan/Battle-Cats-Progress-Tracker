@@ -1,0 +1,25 @@
+-- Adds the CLAN_OF_THE_MANIACS milestone category, flagged by Setredid on
+-- Discord (2026-08-06): "shouldnt the frenzied family be there too" --
+-- referring to the "Frenzied Family" Meow Medal's underlying stage clears,
+-- which had no Milestones entry even though CRAZED and MANIC (its two
+-- component parts) both already did.
+--
+-- This is the CRAZED-side original that SUPER_SMASH (added
+-- 20260716000009, "the Malevolent equivalent of Clan of the Maniacs" per
+-- the wiki's own wording) was modeled on -- it was simply missed when
+-- SUPER_SMASH got added, since at the time the request was specifically
+-- about the newer Malevolent-side content, not backfilling this original.
+--
+-- 2 stages, unlocked after clearing all 9 original Crazed Cat stages
+-- (excluding Crazed Moneko): "The Wild Dance (Deadly)" and "Insane
+-- Rhythms (Merciless)", the second of which awards the "Frenzied Family"
+-- Meow Medal on first clear. That medal is already tracked separately in
+-- the Meow Medals catalog -- this migration only adds the stage-clear
+-- milestone itself, same division of labor as every other Awakening-style
+-- category here (see e.g. the MONTHLY_AWAKENING vs. Cyclone Cats Meow
+-- Medal split).
+--
+-- The actual catalog rows are inserted by ensureMilestoneCatalog() from
+-- MILESTONE_CATALOG in src/lib/milestone-catalog.ts (called on every page
+-- load), so this migration only needs to add the new enum value.
+ALTER TYPE "MilestoneCategory" ADD VALUE 'CLAN_OF_THE_MANIACS';
