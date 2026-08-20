@@ -1180,7 +1180,11 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             that repurposes clicking a card entirely. */}
         <span className="w-px h-5 bg-gray-700 mx-1" />
 
-        {/* Select mode toggle */}
+        {/* Multi-Select mode toggle — renamed from "Select" (Ryan,
+            2026-08-20) since that label didn't convey that it repurposes
+            clicking a card from cycling its form level to selecting it for
+            a bulk action. Same concern Setredid raised about it blending
+            into the filter row. */}
         <button
           type="button"
           onClick={() => selectionMode ? exitSelectionMode() : setSelectionMode(true)}
@@ -1190,7 +1194,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
               : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
           }`}
         >
-          <span>{selectionMode ? "✓" : ""} Select</span>
+          <span>{selectionMode ? "✓" : ""} Multi-Select</span>
         </button>
 
         <span className="text-xs text-gray-600 ml-auto">
