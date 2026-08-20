@@ -217,6 +217,16 @@ async function main() {
     console.log("\n── Backfilling Source from Cat Release Order Wiki Page ──");
     await syncSourceFromReleaseOrder(prisma);
 
+    // Reclassifies units as UNOBTAINABLE when the wiki's "Japanese
+    // Exclusive Content" category says their release never happened in EN
+    // — catches the case where a unit has a real, structured obtain
+    // mechanism (Daily Login, Stage Drop, etc.) that's nonetheless
+    // unreachable for an EN player because the specific event was JP-only.
+    // Runs after syncSourceFromReleaseOrder() so it sees this run's
+    // freshly-filled sources too. See the big comment on the function.
+    console.log("\n── Checking Japanese-Exclusive Content Wiki Category ──");
+    await syncJapaneseExclusiveFlag(prisma);
+
     // Backfills the real in-game "Cat Guide" display order (separate from
     // `sortOrder`) from the wiki's Cat_Guide page — see the big comment on
     // the function for why this page is unusually scrapable and how the
@@ -1867,6 +1877,38 @@ async function fetchWikiPageHtml(page: string): Promise<string> {
 }
 
 /**
+ * Fetches every page title in a wiki category via the standard MediaWiki
+ * `list=categorymembers` API, following `cmcontinue` pagination tokens
+ * until exhausted. Same User-Agent requirement as fetchWikiPageHtml() above
+ * (Miraheze is picky without one) — a separate function rather than reusing
+ * fetchWikiPageHtml() because this hits a different API action
+ * (`query`/`categorymembers`, not `parse`) with a different response shape.
+ */
+async function fetchCategoryMembers(category: string): Promise<string[]> {
+  const titles: string[] = [];
+  let cmcontinue: string | undefined;
+  do {
+    const url = new URL("https://battlecats.miraheze.org/w/api.php");
+    url.searchParams.set("action", "query");
+    url.searchParams.set("list", "categorymembers");
+    url.searchParams.set("cmtitle", `Category:${category}`);
+    url.searchParams.set("cmlimit", "500");
+    url.searchParams.set("format", "json");
+    if (cmcontinue) url.searchParams.set("cmcontinue", cmcontinue);
+    const res = await fetch(url.toString(), {
+      headers: { "User-Agent": "battlecats-progress/1.0", Accept: "application/json" },
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status} from categorymembers API`);
+    const json = (await res.json()) as any;
+    if (json?.error) throw new Error(`categorymembers API error: ${json.error.info ?? json.error.code}`);
+    const members: { title: string }[] = json?.query?.categorymembers ?? [];
+    for (const m of members) titles.push(m.title);
+    cmcontinue = json?.continue?.cmcontinue as string | undefined;
+  } while (cmcontinue);
+  return titles;
+}
+
+/**
  * Backfills Unit.catGuideOrder from the wiki's Cat_Guide page — the real
  * in-game "Cat Guide" screen's display position, which our own website's
  * grid has never matched (a user flagged this 2026-07-16; the BCData CSVs
@@ -2302,6 +2344,166 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
     console.log(`  ⚑ ${collabLeads.length} newly-source-filled unit(s) have collab-sounding wiki text:`);
     for (const c of collabLeads) console.log(`    - ${c}`);
     reviewWarningCount += collabLeads.length;
+  }
+}
+
+/**
+ * Reclassifies units as source=UNOBTAINABLE when the wiki's own
+ * "Category:Japanese Exclusive Content" listing includes their page AND
+ * they're not obtainable through any live EN mechanism.
+ *
+ * Root cause this closes: a unit can have a perfectly real, structured
+ * historical obtain method (Daily Login, Stage Drop, Stamp Reward, etc.)
+ * that genuinely ran as an event — but if that specific event only ever
+ * ran in the Japanese version, the mechanism being "real" doesn't make the
+ * unit obtainable for an EN player. syncSourceFromReleaseOrder() above (and
+ * various one-off migrations before it) has repeatedly classified units
+ * this way by their obtain MECHANISM alone, without checking whether that
+ * mechanism's specific event was EN-available at all. Found live 2026-08-20
+ * two different ways: God (#141, JP-exclusive BCJP 11.5 Anniversary Daily
+ * Bonus, source had been set to DAILY_LOGIN) and Droid Cat (#77,
+ * JP-exclusive Google Android Collaboration Event item drop, source
+ * STAGE_DROP) both showing up in the default Units grid with no filter
+ * applied, despite the wiki explicitly banner-flagging both pages
+ * "JAPANESE EXCLUSIVE".
+ *
+ * This is NOT the same category as the older, deleted "no English name at
+ * all" JP-only units (see 20260303000021_remove_jp_only_units) — those
+ * never existed in BCU/EN game data in any form and were removed from the
+ * catalog entirely. The units this function targets DO have a real English
+ * name and a real historical release, they're just gated behind a
+ * Japan-only event/mechanic that never ran in EN and (per the wiki's own
+ * "Unobtainable" banner, when present) usually can't be obtained anymore
+ * even by JP players without hacking.
+ *
+ * Deliberately conservative, matching every other backfill function in
+ * this file:
+ *   - Only ever sets source=UNOBTAINABLE; never touches isCollab, setName,
+ *     banners, or anything else on the row.
+ *   - Only acts on a unit whose CURRENT source is one of the "looks real
+ *     but might be JP-only" values (DAILY_LOGIN, STAGE_DROP, STAMP_REWARD,
+ *     SPECIAL_SALE, EXTERNAL_APP, EVENT_CAPSULE, RARE_CAPSULE,
+ *     GAMATOTO_EXPEDITION, EVENT_POSTER, CAT_GUIDE_UNLOCK) — a unit already
+ *     correctly marked UNOBTAINABLE is left alone (no-op), and a unit whose
+ *     source is null is left for syncSourceFromReleaseOrder()/manual review
+ *     rather than jumped ahead of that existing pipeline.
+ *   - Matches category pages to units by exact (name, category) pair via
+ *     wikiPageTitle() — the same title format the release-order/collab
+ *     verification fetchers already rely on — and skips (logs, doesn't
+ *     guess) anything that doesn't resolve to exactly one unit. The
+ *     category page list itself is a mix of unit pages, stage pages, and
+ *     feature pages (only ~a third of the ~625 total members are actual
+ *     units), so most entries are expected to simply not match any
+ *     (name, category) pair in our DB and are silently skipped — that's
+ *     normal, not an error.
+ *   - Every match is logged individually rather than silently applied, and
+ *     every corrected unit counts toward reviewWarningCount, so this run's
+ *     summary/CI annotation surfaces exactly which units changed for a
+ *     human to spot-check against the wiki, the same bar as every other
+ *     classification change in this pipeline.
+ */
+const JP_EXCLUSIVE_ELIGIBLE_SOURCES = new Set([
+  "DAILY_LOGIN",
+  "STAGE_DROP",
+  "STAMP_REWARD",
+  "SPECIAL_SALE",
+  "EXTERNAL_APP",
+  "EVENT_CAPSULE",
+  "RARE_CAPSULE",
+  "GAMATOTO_EXPEDITION",
+  "EVENT_POSTER",
+  "CAT_GUIDE_UNLOCK",
+]);
+
+async function syncJapaneseExclusiveFlag(prisma: PrismaClient) {
+  let titles: string[];
+  try {
+    titles = await fetchCategoryMembers("Japanese_Exclusive_Content");
+  } catch (e) {
+    console.log(`  ⚠ Could not fetch Category:Japanese Exclusive Content (${(e as Error).message}) — skipping this run`);
+    reviewWarningCount += 1;
+    return;
+  }
+  if (titles.length === 0) {
+    console.log("  ⚠ Category:Japanese Exclusive Content returned 0 members — category name may have changed, skipping");
+    reviewWarningCount += 1;
+    return;
+  }
+  console.log(`  Fetched ${titles.length} page(s) from Category:Japanese Exclusive Content`);
+
+  // Reverse WIKI_SUFFIX (e.g. "Special Cat" -> "SPECIAL") so a page title
+  // like "God (Special Cat)" can be split back into (name, category).
+  const SUFFIX_TO_CATEGORY: Record<string, string> = Object.fromEntries(
+    Object.entries(WIKI_SUFFIX).map(([cat, suffix]) => [suffix.replace(/_/g, " "), cat])
+  );
+  const UNIT_TITLE_RE = /^(.+) \(([^)]+)\)$/;
+
+  const candidates: { unitNumber: number; name: string; category: string }[] = [];
+  for (const title of titles) {
+    const m = title.match(UNIT_TITLE_RE);
+    if (!m) continue; // no parenthetical at all — definitely not a unit page
+    const [, name, suffixLabel] = m;
+    const category = SUFFIX_TO_CATEGORY[suffixLabel];
+    if (!category) continue; // parenthetical isn't one of our 6 unit-category suffixes — a stage/feature page
+    candidates.push({ unitNumber: -1, name, category });
+  }
+  console.log(`  ${candidates.length} of those look like unit pages by title shape`);
+
+  const dbUnits: { unitNumber: number; name: string; category: string; source: string | null }[] =
+    await (prisma as any).unit.findMany({
+      where: { excludeFromCollection: false },
+      select: { unitNumber: true, name: true, category: true, source: true },
+    });
+  // Key on (name, category) — the exact pair wikiPageTitle() derives a page
+  // title from — not name alone, since a small number of names repeat
+  // across different rarities/units.
+  const byNameCategory = new Map<string, typeof dbUnits[number][]>();
+  for (const u of dbUnits) {
+    const key = `${u.name}||${u.category}`;
+    if (!byNameCategory.has(key)) byNameCategory.set(key, []);
+    byNameCategory.get(key)!.push(u);
+  }
+
+  const updated: string[] = [];
+  const alreadyUnobtainable: string[] = [];
+  const notEligible: string[] = [];
+  for (const c of candidates) {
+    const matches = byNameCategory.get(`${c.name}||${c.category}`);
+    if (!matches || matches.length !== 1) continue; // no match, or ambiguous — skip rather than guess
+    const unit = matches[0];
+    if (unit.source === "UNOBTAINABLE") {
+      alreadyUnobtainable.push(`${unit.name} (#${unit.unitNumber})`);
+      continue;
+    }
+    if (!unit.source || !JP_EXCLUSIVE_ELIGIBLE_SOURCES.has(unit.source)) {
+      // null source: leave for syncSourceFromReleaseOrder()/manual review.
+      // A source outside our eligible set (e.g. STORY_CHAPTER_CLEAR) is
+      // unusual enough for a JP-exclusive unit that it's worth a human
+      // look rather than an automatic overwrite.
+      notEligible.push(`${unit.name} (#${unit.unitNumber}, source=${unit.source ?? "null"})`);
+      continue;
+    }
+    await (prisma as any).unit.update({
+      where: { unitNumber: unit.unitNumber },
+      data: { source: "UNOBTAINABLE" },
+    });
+    updated.push(`${unit.name} (#${unit.unitNumber}, was ${unit.source})`);
+  }
+
+  if (updated.length > 0) {
+    console.log(`  ⚑ Reclassified ${updated.length} unit(s) as UNOBTAINABLE from the Japanese Exclusive Content wiki category:`);
+    for (const u of updated) console.log(`    - ${u}`);
+    reviewWarningCount += updated.length;
+  } else {
+    console.log("  No units needed reclassifying this run");
+  }
+  if (notEligible.length > 0) {
+    console.log(`  ⚑ ${notEligible.length} unit(s) matched the JP-exclusive category but have an unexpected source — needs a manual look:`);
+    for (const u of notEligible) console.log(`    - ${u}`);
+    reviewWarningCount += notEligible.length;
+  }
+  if (alreadyUnobtainable.length > 0) {
+    console.log(`  (${alreadyUnobtainable.length} matched unit(s) were already correctly UNOBTAINABLE)`);
   }
 }
 
