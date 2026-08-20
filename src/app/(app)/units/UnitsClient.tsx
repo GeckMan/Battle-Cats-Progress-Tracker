@@ -640,6 +640,13 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   // only, since it's derived from data already on each unit row rather
   // than needing a DB query. Requested by Ryan, 2026-07-22.
   const [needsEvolving, setNeedsEvolving] = useState(searchParams.get("needsEvolving") === "1");
+  // Shows only units with formLevel === 0 (never obtained). A plain,
+  // manually-toggled filter like every other one here — it does NOT
+  // reactively hide a card the instant you click it to formLevel 0, since
+  // this only reads state on render, same as needsEvolving. Requested by
+  // Setredid on Discord, 2026-08-06 ("you definitely should add a 'not
+  // obtained' filter").
+  const [notObtained, setNotObtained] = useState(searchParams.get("notObtained") === "1");
   // "Cat Guide Order" (default, since 2026-07-21) uses catGuideOrder,
   // scraped from the wiki's Cat_Guide page, which reproduces the real
   // in-game Cat Guide screen's grouping/order (confirmed genuinely
@@ -708,9 +715,10 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     if (searchQuery) p.set("q", searchQuery);
     if (orderMode === "release") p.set("order", "release");
     if (needsEvolving) p.set("needsEvolving", "1");
+    if (notObtained) p.set("notObtained", "1");
     const qs = p.toString();
     router.replace(qs ? `?${qs}` : "/units", { scroll: false });
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, needsEvolving, router]);
+  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, searchQuery, orderMode, needsEvolving, notObtained, router]);
 
   const allTabs = [{ key: ALL_KEY, label: "All" }, ...categories];
 
@@ -769,6 +777,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     setHideCollab(false);
     setSearchQuery("");
     setNeedsEvolving(false);
+    setNotObtained(false);
     exitSelectionMode();
   }
 
@@ -869,9 +878,13 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     : orderedUnits;
 
   /* "Needs Evolving" filter — obtained but not yet at that unit's own
-     real max form. */
+     real max form. "Not Obtained" filter — never obtained at all. Mutually
+     exclusive by construction (see the onClick handlers below, which clear
+     the other one), so only one of these branches ever actually applies. */
   const filtered = needsEvolving
     ? searched.filter((u) => u.formLevel > 0 && u.formLevel < realMaxForm(u))
+    : notObtained
+    ? searched.filter((u) => u.formLevel === 0)
     : searched;
 
   // Keep ref in sync for keyboard handler
@@ -938,7 +951,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   }, [focusedIdx, detailUnit, selectionMode, getGridCols]);
 
   // Reset focus when filters change
-  useEffect(() => { setFocusedIdx(-1); }, [activeCategory, sourceFilter, setFilter, collabFilter, searchQuery, hideCollab, needsEvolving]);
+  useEffect(() => { setFocusedIdx(-1); }, [activeCategory, sourceFilter, setFilter, collabFilter, searchQuery, hideCollab, needsEvolving, notObtained]);
 
   // Scroll focused card into view
   useEffect(() => {
@@ -967,7 +980,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   }, {});
 
   const showSections = activeCategory === ALL_KEY && !searchQuery;
-  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab || needsEvolving;
+  const hasActiveFilters = sourceFilter || setFilter || collabFilter || hideCollab || needsEvolving || notObtained;
 
   return (
     <div className="p-4 pt-16 md:p-6 space-y-5 w-full">
@@ -1114,10 +1127,13 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
         {/* Needs Evolving toggle — obtained units not yet at their own
             real max form (see realMaxForm()), requested by Ryan 2026-07-22
-            as a companion to the "Maxed" stat. */}
+            as a companion to the "Maxed" stat. Mutually exclusive with
+            Not Obtained (below) since "obtained but not maxed" and "never
+            obtained" can't both be true for the same unit — turning one on
+            clears the other rather than silently AND-ing to an empty grid. */}
         <button
           type="button"
-          onClick={() => setNeedsEvolving((v) => !v)}
+          onClick={() => { setNeedsEvolving((v) => !v); setNotObtained(false); }}
           className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
             needsEvolving
               ? "bg-amber-950/50 border-amber-700 text-amber-300"
@@ -1127,6 +1143,42 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         >
           <span>{needsEvolving ? "✓" : ""} Needs Evolving</span>
         </button>
+
+        {/* Not Obtained toggle — units with formLevel 0 (never obtained).
+            A plain, manually-clicked filter like every other toggle here;
+            it never auto-hides a card mid-interaction, since it's just
+            read on render like needsEvolving. Setredid's Discord request,
+            2026-08-06. */}
+        <button
+          type="button"
+          onClick={() => { setNotObtained((v) => !v); setNeedsEvolving(false); }}
+          className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
+            notObtained
+              ? "bg-amber-950/50 border-amber-700 text-amber-300"
+              : "border-gray-700 text-gray-400 hover:border-gray-500 hover:text-gray-200"
+          }`}
+          title="Show only units you don't have yet"
+        >
+          <span>{notObtained ? "✓" : ""} Not Obtained</span>
+        </button>
+
+        {/* Clear all filters */}
+        {hasActiveFilters && (
+          <button
+            type="button"
+            onClick={clearFilters}
+            className="text-xs text-amber-600 hover:text-amber-400"
+          >
+            Clear filters
+          </button>
+        )}
+
+        {/* Visual break before Select — Setredid (Discord, 2026-08-06)
+            accidentally deselected his whole Uber collection because
+            Select sat flush against the filter toggles and read as one
+            more filter option rather than a distinct interaction mode
+            that repurposes clicking a card entirely. */}
+        <span className="w-px h-5 bg-gray-700 mx-1" />
 
         {/* Select mode toggle */}
         <button
@@ -1140,17 +1192,6 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         >
           <span>{selectionMode ? "✓" : ""} Select</span>
         </button>
-
-        {/* Clear all filters */}
-        {hasActiveFilters && (
-          <button
-            type="button"
-            onClick={clearFilters}
-            className="text-xs text-amber-600 hover:text-amber-400"
-          >
-            Clear filters
-          </button>
-        )}
 
         <span className="text-xs text-gray-600 ml-auto">
           {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
