@@ -110,6 +110,18 @@ export default function AboutPage() {
             for flagging issues on the site and on Reddit. If you spot something off, let us know.
             It helps everyone.
           </p>
+          <p className="text-sm text-gray-400 leading-relaxed">
+            Found a bug or have feedback? DM Geck directly on{" "}
+            <a
+              href="https://discord.gg/3zsm3he8qQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-gray-200"
+            >
+              Discord
+            </a>
+            .
+          </p>
         </section>
 
         {/* Changelog */}
