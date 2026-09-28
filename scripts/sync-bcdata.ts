@@ -1861,12 +1861,31 @@ function normalizeWikiText(s: string): string {
   return s.replace(/\s+/g, " ").trim();
 }
 
+// Miraheze started returning a flat HTTP 403 to every wiki-scraping call in
+// this file starting around 2026-08-24 (confirmed via GitHub Actions run
+// logs: run 80829303280 on 2026-07-21 succeeded cleanly on every wiki fetch;
+// every run since has hit "HTTP 403 from parse/categorymembers API" on all
+// of them). This lines up with the industry-wide wave of wiki/CDN operators
+// tightening Cloudflare bot-management rules against AI-crawler traffic
+// throughout mid-late 2026 — GitHub Actions runners live on well-known
+// datacenter IP ranges, which are exactly what those rules target. Per
+// MediaWiki's own User-Agent policy (https://meta.wikimedia.org/wiki/User-Agent_policy),
+// automated clients are expected to identify themselves with contact info,
+// not just an opaque product token — our previous UA had neither an app URL
+// nor a way to reach us, which is itself a plausible contributor (on top of
+// running from a datacenter IP) to being scored as an anonymous bot. This
+// alone may not be enough to get past a Cloudflare-level IP/fingerprint
+// block, but it's the correct, good-faith fix on our end regardless of
+// whether it fully resolves the 403s.
+const WIKI_USER_AGENT =
+  "BattleCatsProgressTracker/1.0 (+https://battlecatsprogress.app; contact via Discord https://discord.gg/3zsm3he8qQ)";
+
 async function fetchWikiPageHtml(page: string): Promise<string> {
   const url =
     "https://battlecats.miraheze.org/w/api.php?action=parse&format=json&prop=text&redirects=1&page=" +
     encodeURIComponent(page);
   const res = await fetch(url, {
-    headers: { "User-Agent": "battlecats-progress/1.0", Accept: "application/json" }, // Miraheze can be picky without a UA
+    headers: { "User-Agent": WIKI_USER_AGENT, Accept: "application/json" },
   });
   if (!res.ok) throw new Error(`HTTP ${res.status} from parse API`);
   const json = (await res.json()) as any;
@@ -1896,7 +1915,7 @@ async function fetchCategoryMembers(category: string): Promise<string[]> {
     url.searchParams.set("format", "json");
     if (cmcontinue) url.searchParams.set("cmcontinue", cmcontinue);
     const res = await fetch(url.toString(), {
-      headers: { "User-Agent": "battlecats-progress/1.0", Accept: "application/json" },
+      headers: { "User-Agent": WIKI_USER_AGENT, Accept: "application/json" },
     });
     if (!res.ok) throw new Error(`HTTP ${res.status} from categorymembers API`);
     const json = (await res.json()) as any;
@@ -2235,8 +2254,13 @@ async function syncSourceFromReleaseOrder(prisma: PrismaClient) {
   try {
     html = await fetchWikiPageHtml(RELEASE_ORDER_PAGE);
   } catch (e) {
+    // Not counted toward reviewWarningCount: an HTTP-level fetch failure
+    // (e.g. the ongoing Miraheze/Cloudflare 403 block that started around
+    // 2026-08-24 — see the WIKI_USER_AGENT comment above fetchWikiPageHtml)
+    // is an external dependency being unreachable, not something a human/AI
+    // can act on by looking at THIS run's data each week. It's still logged
+    // loudly here so it's visible in the step log if someone's reading it.
     console.log(`  ⚠ Could not fetch Cat Release Order (${(e as Error).message}) — skipping source backfill this run`);
-    reviewWarningCount += 1;
     return;
   }
 
@@ -2420,8 +2444,9 @@ async function syncJapaneseExclusiveFlag(prisma: PrismaClient) {
   try {
     titles = await fetchCategoryMembers("Japanese_Exclusive_Content");
   } catch (e) {
+    // Not counted toward reviewWarningCount — same external-fetch-failure
+    // reasoning as syncSourceFromReleaseOrder() above.
     console.log(`  ⚠ Could not fetch Category:Japanese Exclusive Content (${(e as Error).message}) — skipping this run`);
-    reviewWarningCount += 1;
     return;
   }
   if (titles.length === 0) {
