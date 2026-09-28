@@ -24,6 +24,17 @@ const geistMono = Geist_Mono({
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
+  // The app is always dark (default theme + NERV theme are both dark,
+  // there's no light theme) but never told the browser that. Some mobile
+  // browsers (notably Android Chrome's "force dark"/"simplified dark
+  // theme" for pages that don't declare color-scheme) apply their own
+  // heuristic per-element dark-mode conversion, which can invert PNG unit
+  // icons that have mostly-light subjects on a transparent background —
+  // reported 2026-09-17 by thefigg88 via Discord ("some unit icons are
+  // showing with inverted colors... like Rin Tohsaka, at least for me").
+  // Declaring color-scheme tells the browser we already handle our own
+  // theming, so it stops guessing.
+  colorScheme: "dark",
 };
 
 export const metadata: Metadata = {

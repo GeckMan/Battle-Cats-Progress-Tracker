@@ -1311,6 +1311,22 @@ const KNOWN_HARMLESS_FAMILY_CONFLICTS = new Set<string>([
   // Rover Cat (#376) / Fencer Cat (#377) + 10 Fate/stay night collab units
   // sharing their debut row.
   "362,363,364,365,366,367,368,370,371,372,376,377",
+  // Tropical Kalisa (#274, Blue Ocean) shares a debut row with Midsummer
+  // Rabbit (#275) and Sunny Neneko (#276), both Sunshine — and Summerluga
+  // (#564, Blue Ocean) shares one with Squirtgun Saki (#563), Suntan Cat
+  // (#565), and Lifeguard Cats (#566), all Sunshine. Both pairs kept
+  // resurfacing as "mislabeling" every week (runs 98611812371 and
+  // 98831967984, 2026-09-28) even after being fixed twice over — they're
+  // not errors, they're the real Gals of Summer Sunshine/Blue Ocean split:
+  // confirmed unit-by-unit against the LIVE current rerun by bvg_tbc via
+  // Discord (2026-08-31 and 2026-09-19, the second round specifically
+  // fixing Summerluga/Coastal Explorer Kanna/Seabreeze Coppermine/Midsummer
+  // Rabbit after an earlier fix based on a stale wiki snapshot got them
+  // wrong — see migrations 20260831000001 and 20260831000002). The two
+  // events just happen to share debut rows in BCData the same way
+  // Nekoluga and the Fate/stay night pair above do.
+  "274,275,276",
+  "563,564,565,566",
 ]);
 
 async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {

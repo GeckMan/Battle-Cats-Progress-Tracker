@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* App is always dark (see layout.tsx viewport.colorScheme comment) —
+     declared here too since some browsers key off the CSS property
+     rather than the <meta name="color-scheme"> tag. */
+  color-scheme: dark;
 }
 
 @theme inline {
