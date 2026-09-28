@@ -3792,6 +3792,18 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   const NON_LEGEND_EXACT = new Set([
     "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Weekend",
     "Cat Ticket Chance!", "Facing Danger", "Siege of Hippoe!",
+    // Flagged by Ryan 2026-09-28 as NOT a real Zero Legends subchapter,
+    // despite being picked up by the 2026-09-28 sync's forward scan (it has
+    // no parentheses/VS/Rank/Ch. marker to trip any other filter, so it
+    // read as a plain title-case name indistinguishable from a real ZL
+    // entry). Sits at Map_Name.csv idx 1289, a 41-entry gap after the last
+    // confirmed-real new ZL entry ("Yandere Chemistry" at idx 1247) — no
+    // corroborating mention of it as a stage anywhere on the wiki either,
+    // consistent with it being some other kind of Map_Name.csv row (e.g. a
+    // one-off Catnip Challenge/introductory stage tied to Metal Maiden
+    // Koneko's debut) rather than a Legend Stage. See migration
+    // 20260929000003 for the corresponding DB cleanup.
+    "Koneko Takes the Stage",
   ]);
 
   function isNonLegendName(nm: string): boolean {
