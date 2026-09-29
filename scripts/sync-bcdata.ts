@@ -177,7 +177,7 @@ async function main() {
 
     // Step 3: Parse and sync units
     console.log("\n── Syncing Units ──");
-    await syncUnits(prisma, dataLocal, resLocal);
+    const newUnits = await syncUnits(prisma, dataLocal, resLocal);
 
     // Fetched once and shared by both collab detection and gacha set
     // assignment below — both need the same rowIndex -> resolved-name map
@@ -193,6 +193,19 @@ async function main() {
     // Step 3b: Detect collab units from real gacha banner history
     console.log("\n── Detecting Collab Units ──");
     await syncCollabFlags(prisma, dataLocal, bcuNames);
+
+    // Step 3b-ii: Every OTHER isCollab check in this file only ever
+    // examines units that already went through gacha-banner-based
+    // detection — structurally blind to a brand-new unit obtained via
+    // serial code/external app/stamp, exactly the pattern behind 7 missed
+    // real collaborations found 2026-09-28 (Neo Mushroom Garden, Mentori,
+    // Pikotaro, LINE Pokopang!, Betakkuma, Godzilla, World Trigger — see
+    // migration 20260929000002) that sat unflagged for months until a
+    // player noticed. Scoped to only THIS run's new units (not the whole
+    // roster) so it stays a handful of lines a week, not thousands.
+    if (newUnits.length > 0) {
+      checkNewUnitsForMissingCollabSignal(newUnits, dataLocal);
+    }
 
     // Step 3c: Tie units to their real gacha set/event using banner debut
     // history, and flag any unit still missing a source/set classification
@@ -626,13 +639,17 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
 
   console.log(`  Found ${units.length} units in BCData`);
 
-  // 3. Count existing units in DB
-  const existingCount = await (prisma as any).unit.count();
-  const newUnits = units.length - existingCount;
-  if (newUnits > 0) {
-    console.log(`  ${newUnits} NEW units to add!`);
+  // 3. Diff against existing units in DB — kept as actual unit numbers, not
+  // just a count, so callers (see checkNewUnitsForMissingCollabSignal()
+  // below) can cross-check exactly which units are brand-new this run.
+  const existingUnitNumbers = new Set<number>(
+    (await (prisma as any).unit.findMany({ select: { unitNumber: true } })).map((u: any) => u.unitNumber)
+  );
+  const newUnits = units.filter((u) => !existingUnitNumbers.has(u.unitNumber));
+  if (newUnits.length > 0) {
+    console.log(`  ${newUnits.length} NEW units to add!`);
   } else {
-    console.log(`  No new units (DB has ${existingCount}, BCData has ${units.length})`);
+    console.log(`  No new units (DB has ${existingUnitNumbers.size}, BCData has ${units.length})`);
   }
 
   // 4. Upsert all units
@@ -693,6 +710,7 @@ async function syncUnits(prisma: PrismaClient, dataLocal: string, resLocal: stri
     process.stdout.write(`\r  Upserted ${upserted}/${units.length} units...`);
   }
   console.log(`\n  ✓ ${upserted} units synced`);
+  return newUnits.map((u) => ({ unitNumber: u.unitNumber, name: u.name }));
 }
 
 // ── Collab Detection from Gacha Banner Data ─────────────────────────────────
@@ -2775,16 +2793,12 @@ async function checkUnitNameSanity(prisma: PrismaClient) {
  *      assets has no data on it whatsoever, so this only means "can't
  *      confirm via this source, check the unit's own wiki page instead."
  */
-async function checkExistingCollabFlagsAgainstEvidence(
-  prisma: PrismaClient,
-  dataLocal: string,
-  bcuNames: BcuGachaNames | null
-) {
-  const confirmedCollabIds = detectCollabUnitIds(dataLocal, bcuNames);
-
-  // Every unit ID appearing anywhere in gacha banner history at all,
-  // regardless of collab status — used to distinguish "bcu-assets checked
-  // this and it's not collab" from "bcu-assets has no data on this unit."
+// Every unit ID appearing anywhere in gacha banner history at all,
+// regardless of collab status — used to distinguish "bcu-assets/コラボ
+// checked this and it's not collab" from "this source has no data on this
+// unit at all" (obtained via serial code/external app/stamp instead, which
+// never appears in these files whether or not it's a real collab).
+function getIdsWithGachaHistory(dataLocal: string): Set<number> {
   const idsWithGachaHistory = new Set<number>();
   for (const file of GATYA_SET_FILES) {
     const filePath = path.join(dataLocal, file);
@@ -2793,6 +2807,47 @@ async function checkExistingCollabFlagsAgainstEvidence(
       for (const id of row.unitIds) idsWithGachaHistory.add(id);
     }
   }
+  return idsWithGachaHistory;
+}
+
+/**
+ * Every new unit this run gets one narrow check: does it appear ANYWHERE
+ * in gacha banner history at all? If not, isCollab detection (which only
+ * ever looks at gacha rows) is structurally blind to it — it could be a
+ * real-world collaboration obtained via serial code/external app/stamp and
+ * we'd have no way to know from BCData alone. Added 2026-09-29 after 7 real
+ * collabs (Neo Mushroom Garden, Mentori, Pikotaro, LINE Pokopang!,
+ * Betakkuma, Godzilla, World Trigger) sat unflagged for months until a
+ * player reported it — this surfaces the same class of gap the week a unit
+ * is added instead of relying on someone noticing later. Read-only: logs a
+ * reviewWarningCount item, makes no writes (a human needs to actually check
+ * the unit's own wiki page — silence here means "gacha-based detection has
+ * no opinion," not "confirmed not a collab").
+ */
+function checkNewUnitsForMissingCollabSignal(
+  newUnits: { unitNumber: number; name: string }[],
+  dataLocal: string
+) {
+  const idsWithGachaHistory = getIdsWithGachaHistory(dataLocal);
+  const noSignal = newUnits.filter((u) => !idsWithGachaHistory.has(u.unitNumber));
+  if (noSignal.length === 0) {
+    console.log("  All new units this run appear in gacha banner history — collab detection has a signal for each");
+    return;
+  }
+  console.log(
+    `  ⚠ ${noSignal.length} new unit(s) have NO gacha banner history at all, so collab detection has no signal either way — check each one's own wiki page for a real-world collaboration before assuming not:`
+  );
+  for (const u of noSignal) console.log(`    - ${u.name} (#${u.unitNumber})`);
+  reviewWarningCount += noSignal.length;
+}
+
+async function checkExistingCollabFlagsAgainstEvidence(
+  prisma: PrismaClient,
+  dataLocal: string,
+  bcuNames: BcuGachaNames | null
+) {
+  const confirmedCollabIds = detectCollabUnitIds(dataLocal, bcuNames);
+  const idsWithGachaHistory = getIdsWithGachaHistory(dataLocal);
 
   const flaggedCollabs = await (prisma as any).unit.findMany({
     where: { isCollab: true },
@@ -3570,6 +3625,15 @@ const ZL_KNOWN_NAMES: string[] = [
   "Artisan's Sanctum",
   "Eden of Evolution",
   "New Horizon",
+  // Confirmed real 2026-09-28 (Map_Name.csv idx 1245-1247, immediately
+  // following the previous known entry with no gap) — promoted here from
+  // the forward-scan's pending-confirmation list per the workflow
+  // described at that scan below. "Koneko Takes the Stage" (idx 1289, a
+  // 41-entry gap after these three) was flagged by the same scan but is
+  // NOT a real ZL subchapter (confirmed by Ryan) — see NON_LEGEND_EXACT.
+  "Bento Region",
+  "Haute Horror",
+  "Yandere Chemistry",
 ];
 
 // Max ZL subchapters before we stop scanning for new ones
@@ -3958,11 +4022,28 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
     // non-legend entries were added in between.
     console.log(`    Scanning for new ZL entries from idx ${lastKnownZlIdx + 1} to end of Map_Name.csv (${allNames.length - 1})`);
 
+    // IMPORTANT: this scan is a heuristic over unlabeled data (no section
+    // markers in Map_Name.csv distinguish "real Zero Legends chapter" from
+    // "some other one-off stage name with no parentheses/VS/Rank/Ch.
+    // marker"), and it has been wrong before — "Koneko Takes the Stage"
+    // (2026-09-28) got auto-written as a new ZL subchapter this exact way,
+    // sat live on the site as a real chapter, and needed a manual DB
+    // cleanup migration once a player noticed. As of 2026-09-29 this no
+    // longer writes anything on its own: a candidate is only ever a
+    // *pending* find, surfaced loudly via reviewWarningCount/the failed-job
+    // email every run until a human confirms it (by checking the wiki or
+    // in-game) and promotes it into ZL_KNOWN_NAMES above — the same
+    // confirm-before-trust bar every other ambiguous classification in this
+    // file already uses (collab franchises, JP-exclusive sources, etc).
+    // The cost is a real new ZL chapter sits pending for one cycle instead
+    // of appearing instantly; the benefit is nothing wrong ever reaches a
+    // player's screen unreviewed.
     let newZlCount = 0;
     // Track consecutive non-legend entries to detect when we've left
     // the legend region entirely (avoid scanning thousands of irrelevant entries)
     let consecutiveSkips = 0;
     const MAX_CONSECUTIVE_SKIPS = 100; // stop after 100 consecutive non-legend names
+    const pendingZlNames: { name: string; idx: number }[] = [];
 
     for (let i = lastKnownZlIdx + 1; i < allNames.length && zlFound + newZlCount < ZL_MAX; i++) {
       const nm = allNames[i];
@@ -3972,24 +4053,23 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
       if (ulNameSet.has(nm)) { consecutiveSkips = 0; continue; } // known UL resets counter
       if (isNonLegendName(nm)) { consecutiveSkips++; continue; }
 
-      // Found a name that's not SoL, not UL, not ZL, not non-legend.
-      // This is likely a new ZL subchapter!
-      const sortOrder = ZL_KNOWN_NAMES.length + newZlCount;
-      // Defaults to 1 crown unless the wiki scrape has a note for this
-      // subchapter number (a brand-new ZL subchapter is almost always
-      // 1-crown-only at launch, but no reason not to pick up day-one data
-      // if the wiki's already been updated).
-      subchapters.push({ sortOrder, name: nm, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(sortOrder + 1, nm, wikiCrownMap) });
-      zlNameSet.add(nm);
+      // Found a name that's not SoL, not UL, not ZL, not non-legend, and
+      // not already-excluded — a CANDIDATE new ZL subchapter, not yet
+      // confirmed. Logged and counted, but deliberately NOT pushed into
+      // subchapters (so nothing gets upserted for it this run).
+      pendingZlNames.push({ name: nm, idx: i });
       newZlCount++;
       consecutiveSkips = 0;
-      console.log(`    NEW ZL subchapter: "${nm}" at idx ${i} (sortOrder=${sortOrder})`);
     }
 
-    if (newZlCount > 0) {
-      console.log(`    Discovered ${newZlCount} new ZL subchapters beyond known list`);
+    if (pendingZlNames.length > 0) {
+      console.log(
+        `    ⚠ ${pendingZlNames.length} candidate new ZL subchapter(s) found but NOT yet written — confirm via the wiki/in-game, then add to ZL_KNOWN_NAMES (in order) to make them live:`
+      );
+      for (const p of pendingZlNames) console.log(`      - "${p.name}" at idx ${p.idx}`);
+      reviewWarningCount += pendingZlNames.length;
     } else {
-      console.log(`    No new ZL subchapters found beyond known list`);
+      console.log("    No new ZL subchapters found beyond known list");
     }
   }
 
