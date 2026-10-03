@@ -26,6 +26,10 @@ jobs:
         env:
           DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          # Not a secret (just a channel ID), but kept here rather than
+          # hardcoded in the script so it can be changed without a code edit.
+          DISCORD_CHANNEL_ID: '1542985278833041471'
         run: npx tsx ./scripts/weekly-chat-digest.ts
       - name: Commit digest
         run: |
