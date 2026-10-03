@@ -1,0 +1,45 @@
+name: Weekly Chat Digest
+
+on:
+  schedule:
+    # Sunday 18:00 UTC — ahead of the Cowork scheduled task that reads this
+    # digest, so this week's messages are committed before that task runs.
+    - cron: '0 18 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Generate weekly chat digest
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/weekly-chat-digest.ts
+      - name: Commit digest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add reports/
+          if git diff --cached --quiet; then
+            echo "No digest changes to commit"
+          else
+            git commit -m "chore: weekly chat digest"
+            # See sync-bcdata.yml's same step for why this discard+rebase
+            # sequence is needed (prisma generate re-emits a checked-in file
+            # with a different byte layout, which blocks --rebase otherwise).
+            git checkout -- .
+            git pull --rebase origin main
+            git push
+          fi
