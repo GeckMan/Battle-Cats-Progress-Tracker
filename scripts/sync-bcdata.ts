@@ -4449,6 +4449,59 @@ async function syncMeowMedals(prisma: PrismaClient, dataLocal: string, resLocal:
     process.stdout.write(`\r  Synced ${Math.min(i + batchSize, medals.length)}/${medals.length} medals...`);
   }
   console.log(`\n  ✓ ${created} created, ${updated} matched & updated (${medals.length} total from BCData)`);
+
+  // Catalog-count invariant: the DB should end up with exactly one row per
+  // medalname.tsv entry, no more, no less. Added 2026-10-03 after the
+  // "Newton"/"Newtone" duplicate (merged in migration 20261003000001) sat
+  // undetected for who knows how long — nothing ever checked this, so nobody
+  // but a player manually counting medals in-game would ever have caught
+  // it. A mismatch here means two DB rows are the same real medal under
+  // different-enough spellings that normalizeMedalName() didn't merge them
+  // (if count is high) or a medal failed to sync at all (if count is low).
+  const finalCount = await (prisma as any).meowMedal.count();
+  if (finalCount !== medals.length) {
+    console.log(
+      `  ⚠ MeowMedal row count (${finalCount}) doesn't match medalname.tsv (${medals.length}) after sync — likely an unmerged near-duplicate name (or a failed insert). Checking for near-duplicate names…`
+    );
+    reviewWarningCount += 1;
+    const allNames: string[] = (await (prisma as any).meowMedal.findMany({ select: { name: true } })).map(
+      (r: any) => r.name
+    );
+    for (let i = 0; i < allNames.length; i++) {
+      for (let j = i + 1; j < allNames.length; j++) {
+        const a = normalizeMedalName(allNames[i]);
+        const b = normalizeMedalName(allNames[j]);
+        if (a === b) continue; // would already be caught/merged elsewhere
+        if (levenshteinDistance(a, b) <= 2) {
+          console.log(`    Possible near-duplicate: "${allNames[i]}" vs "${allNames[j]}" — add an alias to MEDAL_NAME_ALIASES if confirmed`);
+        }
+      }
+    }
+  } else {
+    console.log(`  ✓ MeowMedal row count matches medalname.tsv exactly (${finalCount})`);
+  }
+}
+
+// Minimal iterative Levenshtein (edit distance) — used only for the
+// near-duplicate medal-name scan above, where strings are short (medal
+// names) and the comparison set is small (~130), so no need for a library.
+function levenshteinDistance(a: string, b: string): number {
+  const m = a.length;
+  const n = b.length;
+  if (m === 0) return n;
+  if (n === 0) return m;
+  let prev = Array.from({ length: n + 1 }, (_, j) => j);
+  for (let i = 1; i <= m; i++) {
+    const curr = [i];
+    for (let j = 1; j <= n; j++) {
+      curr[j] =
+        a[i - 1] === b[j - 1]
+          ? prev[j - 1]
+          : 1 + Math.min(prev[j - 1], prev[j], curr[j - 1]);
+    }
+    prev = curr;
+  }
+  return prev[n];
 }
 
 // ── Run ──────────────────────────────────────────────────────────────────────
