@@ -4167,19 +4167,38 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
 
 // ── Meow Medal Sync ──────────────────────────────────────────────────────────
 
+// Known medal-name spelling variants across data sources that are the same
+// real medal but differ by more than glyphs/whitespace (so a plain string
+// match can't catch them). Found 2026-09-29: the game's own source text is
+// inconsistent about this enemy's name ("Newton" vs "Newtone" — same
+// inconsistency shows up in unit #802's own name, "Spirit of Master of
+// Logic Newtone", and in the Battle Cats Wiki having separate pages for
+// "Sage of Logic Newton" and "Sage of Logic Newtone"), so BCData's
+// medalname.tsv and the legacy Miraheze-scraped import ended up disagreeing
+// on the medal name too — each new alias found this way should be added
+// here so consolidateDuplicateMedals() (and the regular match-by-name
+// upsert) treat them as one medal going forward, instead of needing another
+// one-off migration each time.
+const MEDAL_NAME_ALIASES: [RegExp, string][] = [[/\bnewtone\b/g, "newton"]];
+
 /**
- * Strips star-glyph decorations, collapses whitespace, and lowercases a
- * medal name so it can be matched regardless of formatting differences
+ * Strips star-glyph decorations, collapses whitespace, lowercases, and
+ * folds known cross-source spelling variants (MEDAL_NAME_ALIASES) so a
+ * medal name can be matched regardless of formatting/spelling differences
  * between data sources (e.g. the retired Miraheze scraper vs BCData's raw
  * text may render the "★ Name ★" decoration with different spacing or a
  * visually-identical-but-different Unicode star character).
  */
 function normalizeMedalName(name: string): string {
-  return name
+  let normalized = name
     .replace(/[★☆✩✪✫✬✭✮✯✰⭐]/g, "")
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
+  for (const [pattern, replacement] of MEDAL_NAME_ALIASES) {
+    normalized = normalized.replace(pattern, replacement);
+  }
+  return normalized;
 }
 
 function medalImageFile(sortOrder: number): string {
