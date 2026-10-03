@@ -53,13 +53,14 @@ function looksLikeBugReport(content: string): boolean {
 }
 
 function lastDigestCutoff(): Date {
-  // Look back 8 days by default (a day of slack past the weekly cadence so
-  // a late/rerun workflow doesn't drop messages posted right at the
-  // boundary) rather than tracking a cursor file — simpler, and reposting
-  // an already-handled message in the digest is harmless since the Cowork
-  // run re-checks live site state before fixing anything anyway.
+  // Runs twice a week (Sun/Wed, see weekly-chat-digest.yml) at a ~3.5 day
+  // cadence — look back 5 days by default (a day and a half of slack so a
+  // late/rerun workflow doesn't drop messages posted right at the boundary)
+  // rather than tracking a cursor file — simpler, and reposting an
+  // already-handled message in the digest is harmless since the Cowork run
+  // re-checks live site state before fixing anything anyway.
   const d = new Date();
-  d.setDate(d.getDate() - 8);
+  d.setDate(d.getDate() - 5);
   return d;
 }
 
@@ -194,12 +195,12 @@ async function main() {
   writeFileSync(filePath, lines.join("\n"));
   console.log(`Wrote ${filePath} (${flagged.length} flagged, ${rest.length} other, ${messages.length} total)`);
 
-  // Keep the reports/ directory from growing forever — retain the last 8
-  // digests (~2 months at a weekly cadence) and prune older ones.
+  // Keep the reports/ directory from growing forever — retain the last 16
+  // digests (~2 months at a twice-weekly cadence) and prune older ones.
   const allDigests = readdirSync(REPORTS_DIR)
     .filter((f) => /^chat-digest-\d{4}-\d{2}-\d{2}\.md$/.test(f))
     .sort();
-  const toRemove = allDigests.slice(0, Math.max(0, allDigests.length - 8));
+  const toRemove = allDigests.slice(0, Math.max(0, allDigests.length - 16));
   for (const f of toRemove) {
     const p = path.join(REPORTS_DIR, f);
     try {

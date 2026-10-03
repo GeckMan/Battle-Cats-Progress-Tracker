@@ -2,9 +2,10 @@ name: Weekly Chat Digest
 
 on:
   schedule:
-    # Sunday 18:00 UTC — ahead of the Cowork scheduled task that reads this
-    # digest, so this week's messages are committed before that task runs.
-    - cron: '0 18 * * 0'
+    # Sunday & Wednesday 18:00 UTC — twice a week, each ahead of the matching
+    # Cowork scheduled task (Monday/Thursday) that reads this digest, so
+    # that run's messages are committed before the task runs.
+    - cron: '0 18 * * 0,3'
   workflow_dispatch:
 
 permissions:
