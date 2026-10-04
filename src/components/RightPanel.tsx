@@ -3,6 +3,7 @@
 import { useEffect, useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { useTheme } from "@/lib/theme-context";
+import { useVisibleInterval } from "@/lib/use-visible-interval";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    RightPanel — sliding drawer on the right edge with Activity + Chat tabs
@@ -365,9 +366,11 @@ function ActivityTab({ scope }: { scope: "friends" | "global" }) {
 
   useEffect(() => {
     fetchOnlineCount();
-    const interval = setInterval(fetchOnlineCount, 30000);
-    return () => clearInterval(interval);
   }, [fetchOnlineCount]);
+  // Panel is already only mounted while open, so this is on top of that —
+  // also skip polling while the tab itself is backgrounded (60s, up from
+  // 30s; see useVisibleInterval's comment re: the Oct 2026 CPU quota fix).
+  useVisibleInterval(fetchOnlineCount, 60000);
 
   // If a page of raw activity collapses into so few grouped rows that the
   // panel isn't even scrollable yet, there'd be no scroll event to ever
@@ -778,23 +781,23 @@ function ChatTab({ currentUserId, isAdmin }: { currentUserId: string; isAdmin: b
 
   useEffect(() => { fetchMessages(); }, [fetchMessages]);
 
-  // Poll for new messages every 30s (reduced from 10s — event-driven refresh on send)
-  useEffect(() => {
-    const interval = setInterval(async () => {
-      try {
-        const res = await fetch(`/api/chat?limit=50`);
-        if (!res.ok) return;
-        const data = await res.json();
-        setMessages((prev) => {
-          const existingIds = new Set(prev.map((m) => m.id));
-          const newMsgs = data.messages.filter((m: ChatMsg) => !existingIds.has(m.id));
-          if (newMsgs.length === 0) return prev;
-          return [...newMsgs, ...prev];
-        });
-      } catch { /* ignore poll errors */ }
-    }, 30000);
-    return () => clearInterval(interval);
+  // Poll for new messages every 60s (up from 30s, and paused while the tab
+  // is backgrounded — see useVisibleInterval's comment re: the Oct 2026 CPU
+  // quota fix) — event-driven refresh on send covers the common case.
+  const pollMessages = useCallback(async () => {
+    try {
+      const res = await fetch(`/api/chat?limit=50`);
+      if (!res.ok) return;
+      const data = await res.json();
+      setMessages((prev) => {
+        const existingIds = new Set(prev.map((m) => m.id));
+        const newMsgs = data.messages.filter((m: ChatMsg) => !existingIds.has(m.id));
+        if (newMsgs.length === 0) return prev;
+        return [...newMsgs, ...prev];
+      });
+    } catch { /* ignore poll errors */ }
   }, []);
+  useVisibleInterval(pollMessages, 60000);
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
@@ -1145,12 +1148,11 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
     }
   }, []);
 
-  // Keep the online roster fresh without requiring a manual refresh —
-  // same cadence as the client's own presence heartbeat.
-  useEffect(() => {
-    const t = setInterval(fetchUsers, 60 * 1000);
-    return () => clearInterval(t);
-  }, [fetchUsers]);
+  // Keep the online roster fresh without requiring a manual refresh.
+  // 120s (up from 60s) and paused while backgrounded — see
+  // useVisibleInterval's comment re: the Oct 2026 CPU quota fix; this tab
+  // is admin-only and low-traffic, so slower refresh is a safe tradeoff.
+  useVisibleInterval(fetchUsers, 120000);
 
   const fetchFriends = useCallback(async () => {
     try {

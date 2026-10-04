@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
 import { useState, useEffect, useCallback } from "react";
 import { useTheme } from "@/lib/theme-context";
+import { useVisibleInterval } from "@/lib/use-visible-interval";
 
 /* ─── Nav items ──────────────────────────────────────────────────────────── */
 
@@ -53,12 +54,14 @@ export default function AppSidebar() {
     } catch { /* ignore */ }
   }, []);
 
-  // Check on mount + poll every 90s (reduced from 30s — friend requests are infrequent)
+  // Check on mount, then poll every 180s (up from 90s) while the tab is
+  // visible — friend requests are infrequent, and this component is mounted
+  // for the whole app shell, so this was a meaningful contributor to the
+  // Oct 2026 CPU-quota shutdown (see useVisibleInterval's comment).
   useEffect(() => {
     checkPending();
-    const interval = setInterval(checkPending, 90000);
-    return () => clearInterval(interval);
   }, [checkPending]);
+  useVisibleInterval(checkPending, 180000);
 
   const isNerv = theme === "nerv";
 

@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useCallback, lazy, Suspense } from "react";
 import { PanelToggleButton } from "./PanelToggleButton";
+import { useVisibleInterval } from "@/lib/use-visible-interval";
 
 // Lazy-load the full 1300-line RightPanel — it's only needed when the user opens it
 const loadRightPanel = () => import("./RightPanel");
@@ -25,72 +26,31 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
   const [unreadActivity, setUnreadActivity] = useState(0);
   const [unreadChat, setUnreadChat] = useState(0);
 
-  // Poll for unread counts
+  // Poll for unread counts — single count-only request (see
+  // src/app/api/unread-counts/route.ts) instead of the old pattern of up to
+  // 4 separate fetches (limit=1 then limit=200 for each of activity/chat).
   const checkUnread = useCallback(async () => {
     try {
-      const [actRes, chatRes] = await Promise.all([
-        fetch("/api/activity?limit=1"),
-        fetch("/api/chat?limit=1"),
-      ]);
-
-      if (actRes.ok) {
-        const data = await actRes.json();
-        const lastSeen = new Date(getLastSeen(LS_KEY_ACTIVITY));
-        // Only count activities from OTHER users as unread notifications
-        const newCount = data.activities.filter(
-          (a: { createdAt: string; userId: string }) =>
-            new Date(a.createdAt) > lastSeen && a.userId !== currentUserId
-        ).length;
-        if (newCount > 0) {
-          const fullRes = await fetch("/api/activity?limit=200");
-          if (fullRes.ok) {
-            const full = await fullRes.json();
-            setUnreadActivity(
-              full.activities.filter(
-                (a: { createdAt: string; userId: string }) =>
-                  new Date(a.createdAt) > lastSeen && a.userId !== currentUserId
-              ).length
-            );
-          }
-        } else {
-          setUnreadActivity(0);
-        }
-      }
-
-      if (chatRes.ok) {
-        const data = await chatRes.json();
-        const lastSeen = new Date(getLastSeen(LS_KEY_CHAT));
-        // Only count messages from OTHER users as unread
-        const newCount = data.messages.filter(
-          (m: { createdAt: string; userId?: string }) =>
-            new Date(m.createdAt) > lastSeen && m.userId !== currentUserId
-        ).length;
-        if (newCount > 0) {
-          const fullRes = await fetch("/api/chat?limit=200");
-          if (fullRes.ok) {
-            const full = await fullRes.json();
-            setUnreadChat(
-              full.messages.filter(
-                (m: { createdAt: string; userId?: string }) =>
-                  new Date(m.createdAt) > lastSeen && m.userId !== currentUserId
-              ).length
-            );
-          }
-        } else {
-          setUnreadChat(0);
-        }
-      }
+      const params = new URLSearchParams({
+        activitySince: getLastSeen(LS_KEY_ACTIVITY),
+        chatSince: getLastSeen(LS_KEY_CHAT),
+      });
+      const res = await fetch(`/api/unread-counts?${params}`);
+      if (!res.ok) return;
+      const data = await res.json();
+      setUnreadActivity(data.unreadActivity ?? 0);
+      setUnreadChat(data.unreadChat ?? 0);
     } catch {
       /* ignore */
     }
-  }, [currentUserId]);
+  }, []);
 
-  // Initial check + poll every 60s (reduced from 15s — refreshes on panel open/close)
+  // Initial check, then poll every 120s while the tab is visible (paused in
+  // the background — see useVisibleInterval's own comment for why).
   useEffect(() => {
     checkUnread();
-    const interval = setInterval(checkUnread, 60000);
-    return () => clearInterval(interval);
   }, [checkUnread]);
+  useVisibleInterval(checkUnread, 120000);
 
   // Warm the RightPanel chunk shortly after the app shell mounts, instead of
   // only ever fetching it on the user's first tap. lazy()'s Suspense
@@ -111,14 +71,13 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
   // Presence heartbeat — this component is mounted for the whole authenticated
   // app shell (not just while the panel is open), so it's a reliable place to
   // ping "I'm here" for the site-wide "online now" count.
-  useEffect(() => {
-    const ping = () => {
-      fetch("/api/presence", { method: "POST" }).catch(() => {});
-    };
-    ping();
-    const interval = setInterval(ping, 60000);
-    return () => clearInterval(interval);
+  const ping = useCallback(() => {
+    fetch("/api/presence", { method: "POST" }).catch(() => {});
   }, []);
+  useEffect(() => {
+    ping();
+  }, [ping]);
+  useVisibleInterval(ping, 60000);
 
   // Mark tab as read when viewing it
   const handleTabChange = useCallback(
