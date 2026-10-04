@@ -1,6 +1,6 @@
 # Weekly chat digest — 2026-10-04
 
-Covers in-site chat and the Discord bug-reports channel since 2026-09-29T18:53:10.826Z. This file is generated automatically by scripts/weekly-chat-digest.ts (see .github/workflows/weekly-chat-digest.yml) — nothing in it has been investigated or verified yet. "Flagged" just means a message contained a crude bug-report-ish keyword; it is not a judgment that anything is actually wrong.
+Covers in-site chat and the Discord bug-reports channel since 2026-09-29T21:08:27.940Z. This file is generated automatically by scripts/weekly-chat-digest.ts (see .github/workflows/weekly-chat-digest.yml) — nothing in it has been investigated or verified yet. "Flagged" just means a message contained a crude bug-report-ish keyword; it is not a judgment that anything is actually wrong.
 
 ## Flagged as possible bug reports (0)
 
