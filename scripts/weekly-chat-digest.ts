@@ -36,7 +36,12 @@ import { existsSync, mkdirSync, readdirSync, writeFileSync } from "fs";
 import path from "path";
 import { seedPrisma as prisma, seedDisconnect } from "../prisma/seed-client.ts";
 
-const REPORTS_DIR = path.join(process.cwd(), "reports");
+// DIGEST_DIR lets the workflow write into a checkout of the dedicated
+// `bug-digests` branch instead of main, so digest commits never move main
+// (no local-repo drift, no pointless Vercel builds per digest).
+const REPORTS_DIR = process.env.DIGEST_DIR
+  ? path.resolve(process.env.DIGEST_DIR)
+  : path.join(process.cwd(), "reports");
 
 // Crude, intentionally-broad net — false positives are fine (a human/AI
 // reviews the digest either way), false negatives are the thing to avoid.
