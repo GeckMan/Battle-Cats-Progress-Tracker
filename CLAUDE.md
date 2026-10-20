@@ -10,7 +10,7 @@ A Battle Cats game progress tracker built with Next.js 16, React 19, TypeScript,
 2. Run `npx tsc --noEmit` to verify TypeScript compiles
 3. `git add` the relevant files (quote paths with parentheses like `"src/app/(app)/..."`)
 4. `git commit` with conventional commit style (`feat:`, `fix:`, `refactor:`, etc.)
-5. `git push origin main` — Vercel auto-deploys from GitHub on push
+5. `sh scripts/safe-push.sh` (or `git push origin main`) — Vercel auto-deploys from GitHub on push. **"remote end hung up unexpectedly" / "unexpected disconnect while reading sideband packet" does NOT mean the push failed** — the sandbox proxy cuts GitHub's response off even when the push is accepted (confirmed 2026-10-20: three "failed" pushes were all on origin/main). Never conclude failure or retry/re-commit from that text alone; `scripts/safe-push.sh` pushes and then verifies via `git ls-remote` that origin/main equals local HEAD. If you push by hand, run `git fetch origin && git status -sb` afterward.
 
 The build script (`package.json`) runs: `prisma generate && prisma migrate deploy && next build`
 
@@ -108,3 +108,5 @@ To run manually: `npx tsx ./scripts/sync-bcdata.ts` (needs DATABASE_URL env var)
 - Neon cold starts can cause Prisma timeouts — retry usually works
 - Prisma generated client is checked into `src/generated/prisma/` — gets regenerated during Vercel build
 - `filelist.txt` is a large auto-generated file, don't bother staging it
+- Stale `.git/*.lock` files (HEAD.lock, index.lock, ORIG_HEAD.lock) can be left behind by a crashed git process in the mounted folder and block every git command; if `pgrep -x git` shows nothing running, they're safe to remove
+- Chat digests (`reports/chat-digest-*.md`) live on the separate `bug-digests` branch, not main, so main doesn't move between your sessions; read them with `git fetch origin bug-digests && git show origin/bug-digests:reports/<file>`
