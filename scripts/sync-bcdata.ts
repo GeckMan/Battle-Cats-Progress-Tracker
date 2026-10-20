@@ -129,6 +129,28 @@ const CATEGORY_SORT_BASE: Record<string, number> = {
 // itself early or skipping any of its own writes.
 let reviewWarningCount = 0;
 
+// Collects the headline "⚠" log lines so the end-of-run summary (and the
+// workflow's failure annotation) can say WHAT needs attention instead of
+// just "N items, see the logs" — added 2026-10 after a run failed weekly on
+// one known item and it wasn't clear at a glance whether anything new had
+// gone wrong. Lines matching INFORMATIONAL_WARNING are known, already-
+// reviewed, or external-outage notes that never count toward
+// reviewWarningCount, so they're left out of the "needs action" list.
+const INFORMATIONAL_WARNING =
+  /Could not fetch|HTTP 40\d|manually verified NOT a real collab|suppressed|skipping this run|skipping source backfill|using static/i;
+const capturedWarnings: string[] = [];
+{
+  const originalLog = console.log.bind(console);
+  console.log = (...args: unknown[]) => {
+    const line = args.map(String).join(" ");
+    const trimmed = line.trim();
+    if (trimmed.startsWith("⚠") && !INFORMATIONAL_WARNING.test(trimmed)) {
+      capturedWarnings.push(trimmed.slice(0, 300));
+    }
+    originalLog(...args);
+  };
+}
+
 // ── Main ─────────────────────────────────────────────────────────────────────
 async function main() {
   const dbUrl = process.env.DIRECT_DATABASE_URL || process.env.DATABASE_URL;
@@ -292,9 +314,23 @@ async function main() {
     // so a review-worthy warning here never blocks anything else from
     // shipping.
     if (reviewWarningCount > 0) {
-      const summary = `Sync completed and all writes succeeded, but ${reviewWarningCount} item(s) across this run's coverage checks need a human/AI look (see the ⚠ lines above) — not a crash, just nothing that should silently go unread.`;
+      const list = capturedWarnings.length
+        ? ` Needs a look: ${capturedWarnings.map((w) => w.replace(/^⚠\s*/, "")).join(" | ")}`
+        : "";
+      const summary = `Sync completed and all writes succeeded, but ${reviewWarningCount} item(s) across this run's coverage checks need a human/AI look — not a crash, just nothing that should silently go unread.${list}`;
       console.log(`\n⚠ ${summary}`);
-      console.log(`::warning::${summary}`);
+      console.log(`::warning::${summary.replace(/\n/g, " ")}`);
+      // Also render the list on the run's summary page as a readable bullet
+      // list (the ::warning:: annotation above is one long line).
+      if (process.env.GITHUB_STEP_SUMMARY && capturedWarnings.length) {
+        const { appendFileSync } = await import("fs");
+        appendFileSync(
+          process.env.GITHUB_STEP_SUMMARY,
+          `## BCData sync: ${reviewWarningCount} item(s) need review\n\n` +
+            capturedWarnings.map((w) => `- ${w.replace(/^⚠\s*/, "")}`).join("\n") +
+            "\n"
+        );
+      }
       process.exitCode = 1;
     } else {
       console.log("\n✓ All coverage checks clean — nothing needs manual review this run.");
@@ -413,6 +449,12 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
   839: "Spirit of Lunos the Luminous",
   855: "Spirit of Master of Selection Darvin",
   860: "Spirit of Lone Moon Lunos",
+  // #875 ("735_1" placeholder) flagged by every weekly sync since v15.6. The
+  // Version 15.6 wiki update page lists it as a new Uber-Super-Rare entry
+  // obtained from a summon, and notes Divine Pegasa ν's conjure now points
+  // to 875 instead of 734 ("Spirit of Pegasa") -- the same summoned-ability
+  // shape as every other entry here, not an independently obtainable unit.
+  875: "Spirit of Divine Pegasa ν",
 };
 
 // Name-only overrides for units whose BCData EN Unit_Explanation entry is
