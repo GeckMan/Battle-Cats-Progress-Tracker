@@ -1371,6 +1371,11 @@ export const BCU_CATEGORY_ALIAS: Record<string, string> = {
   Uberfest: "Uber Fest",
   Epicfest: "Epic Fest",
   "June Bride Gacha": "June Bride",
+  // bvg_tbc (2026-09-28): the Fate collab showed as two entries in the Collabs
+  // dropdown -- v15.6's new Fate units picked up BCU's own category name while
+  // the original roster is "Fate/Stay Night Collaboration". Same franchise;
+  // see migration 20261020000005.
+  "Fate Collab Gacha": "Fate/Stay Night Collaboration",
 };
 
 // Exact member-ID sets (sorted ascending, comma-joined) for the two
