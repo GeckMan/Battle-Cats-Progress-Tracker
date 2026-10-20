@@ -141,11 +141,23 @@ const INFORMATIONAL_WARNING =
 const capturedWarnings: string[] = [];
 {
   const originalLog = console.log.bind(console);
+  // After a captured "⚠" headline, the specific items usually follow as
+  // "    - Name (#N) ..." detail lines — fold the first few into that entry so
+  // the summary names the actual unit(s), not just "1 unit lacks X".
+  let detailBudget = 0;
   console.log = (...args: unknown[]) => {
     const line = args.map(String).join(" ");
     const trimmed = line.trim();
     if (trimmed.startsWith("⚠") && !INFORMATIONAL_WARNING.test(trimmed)) {
       capturedWarnings.push(trimmed.slice(0, 300));
+      detailBudget = 5;
+    } else if (detailBudget > 0 && /^\s+- /.test(line) && capturedWarnings.length) {
+      capturedWarnings[capturedWarnings.length - 1] += ` ${trimmed.slice(0, 120)}`;
+      detailBudget--;
+    } else if (trimmed === "") {
+      // blank line ends a detail block
+    } else {
+      detailBudget = 0;
     }
     originalLog(...args);
   };
