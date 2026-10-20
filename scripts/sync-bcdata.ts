@@ -461,6 +461,9 @@ const UNIT_NAME_OVERRIDES: Record<number, string> = {
   839: "Spirit of Lunos the Luminous",
   855: "Spirit of Master of Selection Darvin",
   860: "Spirit of Lone Moon Lunos",
+  // #876 ("Summon 23" on the wiki's Cat Release Order, 2026-10-20): not in BCData
+  // yet, pre-registered so it doesn't trip the placeholder-name check when it lands.
+  876: "Spirit of Immortal Mitsuhide",
   // #875 ("735_1" placeholder) flagged by every weekly sync since v15.6. The
   // Version 15.6 wiki update page lists it as a new Uber-Super-Rare entry
   // obtained from a summon, and notes Divine Pegasa ν's conjure now points
@@ -1784,23 +1787,22 @@ async function syncSetMembershipBanner(
 }
 
 /**
- * Review-only checks (never writes) on two festival banners that are NOT
- * kept in sync by anything above, found from shroomp's 2026-10-17 report:
- * Jungle Gourmet Tomoe showed up under "Super Fest" (she doesn't belong
- * there) and was missing from "RoyalFest" (which should list every
- * seasonal Uber).
+ * Review-only check (never writes) on the Super Fest banner, which nothing
+ * above keeps pruned. Found from shroomp's 2026-10-17 report: Jungle
+ * Gourmet Tomoe showed up under "Super Fest" (she doesn't belong there).
  *
  *  1. Stale "Super Fest" tags: syncSetMembershipBanner() only ever ADDS the
  *     tag, so a unit whose setName later moved out of the Superfest
  *     allowlist (Tomoe: generic "Cyber Academy Galaxy Gals" -> "Gals of
  *     Summer Blue Ocean") keeps the old tag forever. Flags any such unit.
- *  2. RoyalFest coverage: that banner was only ever hand-seeded from a
- *     static unit-number list (migration 20260304000027, ends at #820), so
- *     every seasonal Uber released since is silently missing from it.
- *     Flags Uber Rares whose setName looks seasonal but lack the tag.
+ * (A second check here, "seasonal Ubers missing RoyalFest", was removed
+ * 2026-10-20: it assumed RoyalFest includes every seasonal Uber, but the
+ * wiki's RoyalFest page lists a specific rotating selection — only Coastal
+ * Explorer Kanna from Gals of Summer, no Tomoe/Hanzo — so it would have
+ * flagged correct data.)
  *
- * Both only log + count toward reviewWarningCount — a human confirms the
- * wiki's RoyalFest/Superfest page and fixes via migration, same
+ * Only logs + counts toward reviewWarningCount — a human confirms against
+ * the wiki's Superfest page and fixes via migration, same
  * confirm-before-write bar as the rest of this file's heuristic checks.
  */
 async function checkSeasonalFestMembership(prisma: PrismaClient) {
@@ -1817,26 +1819,6 @@ async function checkSeasonalFestMembership(prisma: PrismaClient) {
     reviewWarningCount += staleBad.length;
   } else {
     console.log('  "Super Fest" tags: OK (every tagged unit has an allowlisted setName)');
-  }
-
-  const SEASONAL_KW = ["halloween", "easter", "xmas", "christmas", "white day", "valentine", "lunar new year", "june bride", "new moon", "love letter", "gals of summer", "summer break", "year's end"];
-  const ubers = await (prisma as any).unit.findMany({
-    where: { category: "UBER_RARE", isCollab: false, setName: { not: null }, excludeFromCollection: false },
-    select: { unitNumber: true, name: true, setName: true, banners: true },
-  });
-  const missingRoyal = ubers.filter(
-    (u: any) =>
-      SEASONAL_KW.some((kw) => String(u.setName).toLowerCase().includes(kw)) &&
-      !(u.banners ?? []).includes("RoyalFest")
-  );
-  if (missingRoyal.length > 0) {
-    console.log(
-      `  ⚠ ${missingRoyal.length} seasonal Uber Rare unit(s) lack the "RoyalFest" banner — confirm against the wiki's RoyalFest page, then add via migration:`
-    );
-    for (const u of missingRoyal) console.log(`    - ${u.name} (#${u.unitNumber}) — setName "${u.setName}"`);
-    reviewWarningCount += missingRoyal.length;
-  } else {
-    console.log('  "RoyalFest" coverage: OK (every seasonal Uber is tagged)');
   }
 }
 
