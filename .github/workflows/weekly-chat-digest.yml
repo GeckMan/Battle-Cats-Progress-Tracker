@@ -52,7 +52,17 @@ jobs:
       - name: Commit and push digest to bug-digests
         run: |
           cd digest-branch
-          git add -A reports/
+          # Vercel reads vercel.json from the branch being built, so the
+          # copy on main does NOT stop it from building this branch (the
+          # digest pushes kept producing failed Preview deployments). Put
+          # one on this branch too, telling Vercel not to deploy it.
+          cat > vercel.json <<'JSON'
+          {
+            "git": { "deploymentEnabled": { "bug-digests": false } },
+            "ignoreCommand": "exit 0"
+          }
+          JSON
+          git add -A reports/ vercel.json
           if git diff --cached --quiet; then
             echo "No digest changes to commit"
           else
