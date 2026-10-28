@@ -250,6 +250,7 @@ async function main() {
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);
     await syncNeoBestOfTheBestBanner(prisma);
     await checkSeasonalFestMembership(prisma);
+    await reportEvergreenBannerRosterDrift(prisma, dataLocal);
 
     // Backstop: catches units whose setName/banners already say "Collab"
     // (often via family-propagation from a sibling's row, not their own)
@@ -1789,6 +1790,73 @@ async function syncSetMembershipBanner(
     });
   }
   console.log(`  ✓ Tagged ${eligible.length} unit(s) with the "${bannerName}" banner`);
+}
+
+/**
+ * REPORT-ONLY (never writes): compares the Uber/Legend Rare units tagged with
+ * each evergreen Best of the Best banner against the roster in the LATEST
+ * matching GatyaDataSet row, and logs what a reconcile would add/remove.
+ *
+ * Why: syncBannerMembership() only ever ADDS tags, so wrong tags written by
+ * old hand migrations (D'arktanyan / Li'l Valkyrie Dark / Agent Staal on
+ * regular Best of the Best, found 2026-10-26) are never removed, and a
+ * partly-tagged event (Milestone Edition had only Metal Maiden Koneko) is
+ * never completed unless its row resolves. Nothing is auto-changed: the
+ * newest row may not equal the wiki's roster (reruns differ), so a human
+ * compares this output to the wiki, then fixes via migration. If the output
+ * proves reliable over a few runs, make it authoritative.
+ */
+const EVERGREEN_ROSTER_BANNERS = new Set([
+  "Best of the Best",
+  "NEO Best of the Best",
+  "Best of the Best Milestone Edition",
+]);
+
+async function reportEvergreenBannerRosterDrift(prisma: PrismaClient, dataLocal: string) {
+  // banner name -> unit ids from the newest matching row in each file
+  const expected = new Map<string, Set<number>>();
+  for (const file of GATYA_SET_FILES) {
+    const filePath = path.join(dataLocal, file);
+    if (!existsSync(filePath)) continue;
+    const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
+    const newestPerBanner = new Map<string, { unitIds: number[]; rawLineIndex: number }>();
+    for (const row of rows) {
+      if (/ALL/i.test(row.label)) continue;
+      const name = GACHA_EVENT_NAMES[cleanBannerLabel(row.label)];
+      if (!name || !EVERGREEN_ROSTER_BANNERS.has(name)) continue;
+      const prev = newestPerBanner.get(name);
+      if (!prev || row.rawLineIndex > prev.rawLineIndex) {
+        newestPerBanner.set(name, { unitIds: row.unitIds, rawLineIndex: row.rawLineIndex });
+      }
+    }
+    for (const [name, v] of newestPerBanner) {
+      if (!expected.has(name)) expected.set(name, new Set());
+      for (const id of v.unitIds) expected.get(name)!.add(id);
+    }
+  }
+
+  if (expected.size === 0) {
+    console.log("  Evergreen banner roster drift: no matching banner rows found, skipping");
+    return;
+  }
+
+  const units = await (prisma as any).unit.findMany({
+    where: { category: { in: ["UBER_RARE", "LEGEND_RARE"] } },
+    select: { unitNumber: true, name: true, banners: true },
+  });
+
+  for (const [banner, ids] of expected) {
+    const wouldRemove = units.filter((u: any) => (u.banners ?? []).includes(banner) && !ids.has(u.unitNumber));
+    const wouldAdd = units.filter((u: any) => ids.has(u.unitNumber) && !(u.banners ?? []).includes(banner));
+    if (wouldRemove.length === 0 && wouldAdd.length === 0) {
+      console.log(`  "${banner}" roster: matches latest banner row (${ids.size} ids)`);
+      continue;
+    }
+    console.log(`  ⚠ "${banner}" roster differs from its latest GatyaDataSet row (REPORT ONLY, nothing changed):`);
+    for (const u of wouldRemove) console.log(`    - tagged but NOT in latest row: ${u.name} (#${u.unitNumber})`);
+    for (const u of wouldAdd) console.log(`    + in latest row but NOT tagged: ${u.name} (#${u.unitNumber})`);
+    reviewWarningCount += wouldRemove.length + wouldAdd.length;
+  }
 }
 
 /**
