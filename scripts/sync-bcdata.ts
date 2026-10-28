@@ -250,7 +250,7 @@ async function main() {
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);
     await syncNeoBestOfTheBestBanner(prisma);
     await checkSeasonalFestMembership(prisma);
-    await reportEvergreenBannerRosterDrift(prisma, dataLocal);
+    await reportEvergreenBannerRosterDrift(prisma, dataLocal, bcuNames);
 
     // Backstop: catches units whose setName/banners already say "Collab"
     // (often via family-propagation from a sibling's row, not their own)
@@ -1812,7 +1812,7 @@ const EVERGREEN_ROSTER_BANNERS = new Set([
   "Best of the Best Milestone Edition",
 ]);
 
-async function reportEvergreenBannerRosterDrift(prisma: PrismaClient, dataLocal: string) {
+async function reportEvergreenBannerRosterDrift(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {
   // banner name -> unit ids from the newest matching row in each file
   const expected = new Map<string, Set<number>>();
   for (const file of GATYA_SET_FILES) {
@@ -1820,9 +1820,18 @@ async function reportEvergreenBannerRosterDrift(prisma: PrismaClient, dataLocal:
     if (!existsSync(filePath)) continue;
     const rows = parseGatyaSetFile(readFileSync(filePath, "utf-8"));
     const newestPerBanner = new Map<string, { unitIds: number[]; rawLineIndex: number }>();
+    const byRowIndex = file === "GatyaDataSetR1.csv" ? bcuNames?.r : file === "GatyaDataSetE1.csv" ? bcuNames?.e : undefined;
     for (const row of rows) {
+      // The JP-label table alone resolved nothing in the 2026-10-28 run, so
+      // also resolve via bcu-assets' English row names (same source
+      // syncEventSets uses). Log every Best-of-the-Best-looking row so the
+      // real names/row indexes are visible in the log either way.
+      const bcuName = byRowIndex?.get(row.rawLineIndex);
+      const name = GACHA_EVENT_NAMES[cleanBannerLabel(row.label)] ?? (bcuName ? BCU_CATEGORY_ALIAS[bcuName] ?? bcuName : undefined);
+      if (/best of the best|選抜祭|選抜ガチャ/i.test(`${name ?? ""} ${row.label}`)) {
+        console.log(`    [probe] ${file} row ${row.rawLineIndex}: ${row.unitIds.length} ids, label "${row.label}", name "${name ?? ""}"`);
+      }
       if (/ALL/i.test(row.label)) continue;
-      const name = GACHA_EVENT_NAMES[cleanBannerLabel(row.label)];
       if (!name || !EVERGREEN_ROSTER_BANNERS.has(name)) continue;
       const prev = newestPerBanner.get(name);
       if (!prev || row.rawLineIndex > prev.rawLineIndex) {
