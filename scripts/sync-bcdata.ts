@@ -1827,8 +1827,16 @@ async function reportEvergreenBannerRosterDrift(prisma: PrismaClient, dataLocal:
       // syncEventSets uses). Log every Best-of-the-Best-looking row so the
       // real names/row indexes are visible in the log either way.
       const bcuName = byRowIndex?.get(row.rawLineIndex);
-      const name = GACHA_EVENT_NAMES[cleanBannerLabel(row.label)] ?? (bcuName ? BCU_CATEGORY_ALIAS[bcuName] ?? bcuName : undefined);
-      if (/best of the best|選抜祭|選抜ガチャ/i.test(`${name ?? ""} ${row.label}`)) {
+      const rawName = GACHA_EVENT_NAMES[cleanBannerLabel(row.label)] ?? (bcuName ? BCU_CATEGORY_ALIAS[bcuName] ?? bcuName : undefined);
+      // bcu-assets names look like "Best of the Best Gacha" / "Neo Best Of The
+      // Best" (seen in the 2026-10-28 run); normalize to our banner names.
+      const norm = rawName?.toLowerCase().replace(/\bgacha\b/g, "").replace(/\s+/g, " ").trim();
+      const name =
+        norm === "neo best of the best" ? "NEO Best of the Best"
+        : norm === "best of the best" ? "Best of the Best"
+        : norm && /milestone/.test(norm) ? "Best of the Best Milestone Edition"
+        : rawName;
+      if (/best of the best|milestone|celebration|DL記念|選抜祭|選抜ガチャ/i.test(`${name ?? ""} ${row.label}`)) {
         console.log(`    [probe] ${file} row ${row.rawLineIndex}: ${row.unitIds.length} ids, label "${row.label}", name "${name ?? ""}"`);
       }
       if (/ALL/i.test(row.label)) continue;
