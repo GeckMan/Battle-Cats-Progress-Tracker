@@ -25,7 +25,7 @@ import { seedPrisma as prisma, seedDisconnect } from "../prisma/seed-client.ts";
 const DIR = process.env.WIKI_MIRROR_DIR ?? "wiki-branch/wiki-mirror";
 const RARITY: Record<string, string> = { N: "NORMAL", EX: "SPECIAL", RR: "RARE", SR: "SUPER_RARE", UR: "UBER_RARE", LR: "LEGEND_RARE" };
 
-type WikiUnit = { id: number; rarity: string; name: string; page: string; intro: string };
+type WikiUnit = { id: number; rarity: string; name: string; page: string; intro: string; regional: string | null };
 
 const norm = (s: string) =>
   s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9぀-ヿ一-鿿]+/g, "");
@@ -48,7 +48,12 @@ function readWiki(): WikiUnit[] {
     const rarity = (field(block, "rarity") ?? "").toUpperCase();
     const name = field(block, "name1") ?? "";
     if (!Number.isInteger(id) || !name) continue;
-    out.push({ id, rarity, name, page: f.replace(/\.wikitext$/, ""), intro: text.slice(0, i).trim().replace(/\s+/g, " ").slice(0, 240) });
+    const head = text.slice(0, i).trim().replace(/\s+/g, " ");
+    const page = f.replace(/\.wikitext$/, "");
+    // Regional / non-EN-mainline units: wiki banner templates, or a "(Switch ...)" /
+    // "(PC ...)" page (Battle Cats Unite! and PC units reuse or extend the ID space).
+    const flag = head.match(/\{\{(JP|TW|KR|PC|Switch)Exclusive\}\}/i)?.[1] ?? (/\((Switch|PC)_/.test(page) ? page.match(/\((Switch|PC)_/)![1] : null);
+    out.push({ id, rarity, name, page, intro: head.slice(0, 240), regional: flag });
   }
   return out;
 }
@@ -71,13 +76,30 @@ async function main() {
   L.push(`# Wiki fact-check (${new Date().toISOString().slice(0, 10)})`, "");
   L.push(`Wiki unit pages: ${wiki.length}; DB units: ${units.length}. Best ID offset: wiki ID + ${best.off} = unitNumber (${best.hits} names matched exactly).`, "");
 
-  const rarityBad: string[] = [], nameBad: string[] = [], wikiOnly: string[] = [];
+  const rarityBad: string[] = [], nameBad: string[] = [], wikiOnly: string[] = [], regionalOnly: string[] = [];
   const seen = new Set<number>();
-  for (const w of wiki) {
+  // Several wiki pages can share one ID (e.g. "Cat Bros (Switch Special Cat)" reuses
+  // the ID of a mainline unit). Prefer the mainline page: one whose name matches ours,
+  // else any page that isn't a Switch/PC variant.
+  const byId = new Map<number, WikiUnit[]>();
+  for (const w of wiki) byId.set(w.id, [...(byId.get(w.id) ?? []), w]);
+  const chosen: WikiUnit[] = [];
+  for (const [id, pages] of byId) {
+    const u = byNum.get(id + best.off);
+    const pick =
+      (u && pages.find((w) => norm(w.name) === norm(u.name))) ??
+      pages.find((w) => w.regional !== "Switch" && w.regional !== "PC") ??
+      pages[0];
+    chosen.push(pick);
+  }
+  const chosenPages = new Set(chosen.map((w) => w.page));
+  for (const w of chosen) {
     const num = w.id + best.off;
     const u = byNum.get(num);
     if (!u) {
-      if (RARITY[w.rarity]) wikiOnly.push(`- #${num} **${w.name}** (${w.rarity}) — page [[${w.page}]], not in our DB. ${w.intro}`);
+      if (!RARITY[w.rarity]) continue;
+      if (w.regional || /\{\{Unobtainable\}\}/i.test(w.intro)) regionalOnly.push(`${w.name} (#${num}, ${w.regional ?? "unobtainable"})`);
+      else wikiOnly.push(`- #${num} **${w.name}** (${w.rarity}) — [[${w.page}]]. ${w.intro}`);
       continue;
     }
     seen.add(num);
@@ -92,7 +114,7 @@ async function main() {
   if (existsSync(jpPath)) {
     const jp = new Set<string>(JSON.parse(readFileSync(jpPath, "utf8")).map((t: string) => t.replace(/ /g, "_").replace(/[\\/:*?"<>|]/g, "_")));
     for (const w of wiki) {
-      if (!jp.has(w.page)) continue;
+      if (!jp.has(w.page) || !chosenPages.has(w.page)) continue;
       const u = byNum.get(w.id + best.off);
       if (u && u.source !== "UNOBTAINABLE") jpBad.push(`- #${u.unitNumber} ${u.name}: wiki lists it as Japanese Exclusive, DB source is ${u.source ?? "null"}`);
     }
@@ -102,7 +124,8 @@ async function main() {
   section("Rarity disagreements", rarityBad);
   section("Name disagreements", nameBad);
   section("Japanese-exclusive on wiki but obtainable in DB", jpBad);
-  section("On the wiki but not in our DB", wikiOnly);
+  section("On the wiki, no regional flag, not in our DB (likely real EN units we are missing)", wikiOnly);
+  L.push(`Regional/unobtainable wiki-only units, expected to be absent (${regionalOnly.length}): ${regionalOnly.join("; ")}`, "");
   section("In our DB but no wiki page matched", dbOnly);
 
   const report = L.join("\n");
