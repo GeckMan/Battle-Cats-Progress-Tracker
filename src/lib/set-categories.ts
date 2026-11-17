@@ -86,6 +86,7 @@ const SEASONAL_KEYWORDS = [
   "june bride",
   "new moon",
   "love letter",
+  "heartbeat catcademy",
   "gals of summer",
   "summer break",
   "lucky capsule",

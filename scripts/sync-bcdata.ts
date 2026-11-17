@@ -52,6 +52,7 @@ import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
 import { syncUnitsFromWikiMirror, hideUnreleasedEventUnits } from "./wiki-unit-sync.ts";
 import { syncGachaBannersFromWikiMirror } from "./wiki-banner-sync.ts";
+import { syncSourcesFromReleaseOrderMirror } from "./wiki-release-order-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -308,6 +309,11 @@ async function main() {
     // before the coverage checks below so freshly-filled units don't
     // spuriously show up as still-missing in this same run's logs. Never
     // touches isCollab — see the big comment on the function.
+    // Ryan (2026-11-17): follow the wiki. Overwrites a differing source with the
+    // Release Order's when unambiguous (protected/UNOBTAINABLE units excluded).
+    console.log("\n── Matching Sources to the Cat Release Order (wiki mirror) ──");
+    await syncSourcesFromReleaseOrderMirror(prisma, process.env.WIKI_MIRROR_DIR);
+
     console.log("\n── Backfilling Source from Cat Release Order Wiki Page ──");
     await syncSourceFromReleaseOrder(prisma);
 
