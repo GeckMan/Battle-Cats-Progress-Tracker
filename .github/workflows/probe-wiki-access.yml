@@ -1,0 +1,27 @@
+name: Probe wiki access
+
+# One-off diagnostic (manual only): which routes to the Battle Cats wiki data
+# work from a GitHub Actions runner? Results land in the run's summary page.
+# See scripts/probe-wiki-access.ts for what each probe tests and why.
+on:
+  workflow_dispatch:
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund tsx
+      - name: Run probes
+        env:
+          # Optional: a Miraheze Special:BotPasswords credential. Create a
+          # Miraheze account, then Special:BotPasswords (grant "high-volume
+          # editing"-free, read-only rights are enough), and add these as repo
+          # secrets. Leave unset to skip that probe.
+          MIRAHEZE_BOT_USER: ${{ secrets.MIRAHEZE_BOT_USER }}
+          MIRAHEZE_BOT_PASS: ${{ secrets.MIRAHEZE_BOT_PASS }}
+        run: npx tsx ./scripts/probe-wiki-access.ts

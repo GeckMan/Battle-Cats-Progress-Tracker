@@ -272,6 +272,8 @@ async function main() {
     await enforceBannerExclusions(prisma);
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);
     await syncNeoBestOfTheBestBanner(prisma);
+    await pruneBasePoolFromSpecialGachas(prisma);
+    await checkRetiredSetNames(prisma);
     await checkSeasonalFestMembership(prisma);
     await reportEvergreenBannerRosterDrift(prisma, dataLocal, bcuNames);
 
@@ -1770,7 +1772,10 @@ async function backfillBannersFromSetName(prisma: PrismaClient) {
 // Fest", already covered by including those two set names below, rather
 // than needing their own separate list here.
 const SUPERFEST_INCLUDED_SETNAMES = new Set<string>([
-  "Rare Cat Capsule", // base SR/Rare pool — identical list on this page
+  // "Rare Cat Capsule" (the base SR/Rare pool) used to be listed here because the
+  // Superfest wiki page repeats it. Removed 2026-11-17 per Ryan: Super Rares/Rares
+  // that aren't exclusive to a special gacha don't belong in its filter (only
+  // genuinely exclusive units, e.g. seasonal ones like Gloomy Neneko, do).
   "Tales of the Nekoluga",
   "The Dynamites",
   "Sengoku Wargods Vajiras",
@@ -1784,6 +1789,60 @@ const SUPERFEST_INCLUDED_SETNAMES = new Set<string>([
   "Uber Fest",
   "Epic Fest",
 ]);
+
+/**
+ * Ryan's rule (2026-11-17, matches how every other special gacha filter works,
+ * e.g. Air Busters shows only its own exclusive Ubers): the base "Rare Cat
+ * Capsule" Super Rare/Rare pool is filler that shows up in many special
+ * gachas but isn't exclusive to any of them, so it must NOT appear in those
+ * filters -- only in "Rare Cat Capsule" itself. Genuinely exclusive SR/Rares
+ * (seasonal ones like Gloomy Neneko #228, Gals of Summer's Suntan Cat, NEO's
+ * Good-Luck Ebisu #520, collab units) have their own setName, so this
+ * (setName = 'Rare Cat Capsule') never touches them. Deterministic rule, so it
+ * writes; runs every sync because syncBannerMembership() re-adds festival
+ * banners from raw gacha rows. Migration 20261117000003 did the initial cleanup.
+ */
+async function pruneBasePoolFromSpecialGachas(prisma: PrismaClient) {
+  const pool = await (prisma as any).unit.findMany({
+    where: {
+      setName: "Rare Cat Capsule",
+      category: { in: ["RARE", "SUPER_RARE"] },
+      isCollab: false,
+    },
+    select: { unitNumber: true, banners: true },
+  });
+  const dirty = pool.filter((u: any) => (u.banners ?? []).some((b: string) => b !== "Rare Cat Capsule"));
+  if (dirty.length === 0) {
+    console.log("  Base Rare/Super Rare pool: OK (only tagged 'Rare Cat Capsule')");
+    return;
+  }
+  for (const u of dirty) {
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: { banners: ["Rare Cat Capsule"] },
+    });
+  }
+  console.log(`  ✓ Removed special-gacha banner tags from ${dirty.length} base-pool Rare/Super Rare unit(s) (kept only 'Rare Cat Capsule')`);
+}
+
+// Set names that are not real obtain methods per the wiki's Cat Release Order
+// (no unit there lists them) and were retired by migration 20261117000003.
+// Any unit still/again carrying one is flagged for review rather than guessed.
+const RETIRED_SET_NAMES = ["9th Anniversary Special Capsules"];
+
+async function checkRetiredSetNames(prisma: PrismaClient) {
+  const rows = await (prisma as any).unit.findMany({
+    where: { OR: [{ setName: { in: RETIRED_SET_NAMES } }, { banners: { hasSome: RETIRED_SET_NAMES } }] },
+    select: { unitNumber: true, name: true, setName: true },
+  });
+  if (rows.length === 0) {
+    console.log("  Retired set names: OK (no unit carries one)");
+    return;
+  }
+  console.log(`  ⚠ ${rows.length} unit(s) carry a retired set name (the wiki Release Order has no such obtain method) — fix via migration:`);
+  for (const u of rows) console.log(`    - ${u.name} (#${u.unitNumber}) — setName "${u.setName}"`);
+  reviewWarningCount += rows.length;
+}
 
 // Units that must NEVER carry a given banner/setName no matter what the
 // BCData-derived steps above produce -- hand-confirmed corrections that a
