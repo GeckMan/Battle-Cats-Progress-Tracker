@@ -9,7 +9,7 @@
  *
  * The wiki's banner NAMES don't match our banner labels one-to-one (e.g. the River City
  * Ransom event is "Kunio-kun Collaboration" here), so instead of a hand-kept name map the
- * label is learned from our own data: if at least half (min 3) of a page's resolved units
+ * label is learned from our own data: if at least two-thirds (min 3) of a page's resolved units
  * already carry a banner label L (and L isn't the base "Rare Cat Capsule"), then L is that
  * page's label, and any listed unit missing L is given it.
  *
@@ -79,7 +79,9 @@ export async function syncGachaBannersFromWikiMirror(prisma: any, mirrorDir: str
     const ranked = [...votes.entries()].sort((a, b) => b[1] - a[1]);
     if (!ranked.length) continue;
     const [label, count] = ranked[0];
-    if (count < Math.max(3, Math.ceil(members.length / 2))) continue;
+    // Two-thirds, not half: compilation pages (e.g. "Capsule Clearance", 3/5 "Xmas Gals")
+    // would otherwise lend one set's label to unrelated units on the same page.
+    if (count < Math.max(3, Math.ceil((members.length * 2) / 3))) continue;
     if (ranked[1] && ranked[1][1] === count) continue; // tie: ambiguous label, skip
     pagesUsed++;
     console.log(`  · ${f.replace(/\.wikitext$/, "")} → label "${label}" (${count}/${members.length} units' home set)`);
