@@ -52,7 +52,7 @@ import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
 import { syncUnitsFromWikiMirror, hideUnreleasedEventUnits } from "./wiki-unit-sync.ts";
 import { syncGachaBannersFromWikiMirror } from "./wiki-banner-sync.ts";
-import { syncSourcesFromReleaseOrderMirror } from "./wiki-release-order-sync.ts";
+import { syncSourcesFromReleaseOrderMirror, syncSetNamesFromWikiMirror } from "./wiki-release-order-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -313,6 +313,8 @@ async function main() {
     // Release Order's when unambiguous (protected/UNOBTAINABLE units excluded).
     console.log("\n── Matching Sources to the Cat Release Order (wiki mirror) ──");
     await syncSourcesFromReleaseOrderMirror(prisma, process.env.WIKI_MIRROR_DIR);
+    // Set names follow the wiki where it agrees with itself in 2+ places (exceptions kept).
+    await syncSetNamesFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
 
     console.log("\n── Backfilling Source from Cat Release Order Wiki Page ──");
     await syncSourceFromReleaseOrder(prisma);

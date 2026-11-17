@@ -12,14 +12,14 @@
  * and never for PROTECTED units or any UNOBTAINABLE unit (those encode decisions
  * the Release Order line doesn't capture: JP-exclusive, regional, hand-confirmed).
  *
- * Set names are deliberately NOT synced from here: checked against live data on
- * 2026-11-17, the Release Order has typos ("Gaals of Summer"), generic labels
- * ("Seasonal Gacha Banners"), and a Gals of Summer Sunshine/Blue Ocean mix-up
- * that bvg_tbc disproved against the live rerun. Differences are logged only.
+ * Set names: the Release Order alone isn't trusted for them (typos like "Gaals of
+ * Summer", generic "Seasonal Gacha Banners", a Gals of Summer mix-up bvg_tbc disproved
+ * live), so syncSetNamesFromWikiMirror() below only moves a set when a SECOND wiki
+ * source agrees, with an explicit exception list. The ℹ list here shows the rest.
  */
-import { existsSync, readFileSync } from "fs";
+import { existsSync, readFileSync, readdirSync } from "fs";
 import { join } from "path";
-import { norm } from "./wiki-unit-sync.ts";
+import { norm, readUnitPages } from "./wiki-unit-sync.ts";
 
 const PREFIX: Array<[string, string]> = [
   ["Rare Cat Capsules", "RARE_CAPSULE"], ["Rare Cat Capsule", "RARE_CAPSULE"],
@@ -110,4 +110,111 @@ export async function syncSourcesFromReleaseOrderMirror(prisma: any, mirrorDir: 
     for (const d of setDiffs.slice(0, 40)) console.log(`    - ${d}`);
   }
   return changes.length;
+}
+
+/* ───────────────────────── Set names: "the wiki agrees with itself" ─────────────────────────
+ * Ryan (2026-11-17): follow the wiki whenever it agrees in more than one place, and keep an
+ * explicit exception list for what we choose to keep. A unit's home set (setName) is moved to
+ * the Release Order's event name T when a SECOND independent wiki source names the same event:
+ *   • the unit's own page links "[[T (Event Gacha)]]" / "[[T (Gacha Event)]]" / a "...Capsules" page, or
+ *   • T's gacha page lists the unit in its exclusive roster ({{GachaDescription}}).
+ * Wording differences ("Capsules", "Gacha", "Event") don't count as disagreement.
+ * When every unit that moves out of a set goes to the same T, the set's remaining members
+ * (no evidence either way) follow, so a set is never left split in two. Banner tags are renamed
+ * along with it. Collab sets are skipped (curated for the Collabs dropdown), as are the
+ * exceptions below. Capped per run; every change is logged.
+ */
+
+// Kept on purpose even where the wiki agrees with itself:
+//  - Brainwashed Cats: home set = their seasonal gacha, plus a "Brainwashed Cats" banner tag and
+//    their other seasonal banners (the Release Order lumps them under "Seasonal Gacha Banners").
+//  - Gals of Summer Sunshine/Blue Ocean units verified against the live rerun by bvg_tbc.
+//  - Set names other rules key on: RoyalFest (wiki: "Dynasty Fest"), The Almighties, the
+//    Superfest allowlist sets, Uber/Epic Fest, base Rare Cat Capsule.
+export const SET_NAME_EXCEPTION_UNITS = new Set<number>([629, 636, 645, 654, 662, 667, 684, 688, 694, 563, 564, 666, 714]);
+export const SET_NAME_EXCEPTION_SETS = new Set<string>([
+  "RoyalFest", "The Almighties", "Rare Cat Capsule", "Uber Fest", "Epic Fest", "Super Fest", "NEO Best of the Best",
+  "Brainwashed Cats", "Tales of the Nekoluga", "The Dynamites", "Sengoku Wargods Vajiras", "Cyber Academy Galaxy Gals",
+  "Lords of Destruction Dragon Emperors", "Ancient Heroes Ultra Souls", "Justice Strikes Back! Dark Heroes",
+  "Frontline Assault Iron Legion", "Nature's Guardians Elemental Pixies",
+]);
+const MAX_SET_MOVES = 60;
+const coreName = (x: string) => norm(x.replace(/\((Event Gacha|Gacha Event|Removed Gacha Event)\)/gi, "").replace(/\b(Capsules?|Gacha|Event)\b/gi, ""));
+
+export async function syncSetNamesFromWikiMirror(prisma: any, mirrorDir: string | undefined): Promise<number> {
+  const pagesDir = mirrorDir ? join(mirrorDir, "pages") : "";
+  const pairs = pagesDir ? readReleaseOrderPairs(pagesDir) : [];
+  if (!pairs.length) return 0;
+  const units: any[] = await prisma.unit.findMany({ select: { unitNumber: true, name: true, setName: true, banners: true, isCollab: true } });
+  const byName = new Map<string, any[]>();
+  for (const u of units) byName.set(norm(u.name), [...(byName.get(norm(u.name)) ?? []), u]);
+
+  // Source 2a: each unit page's event/capsule links.
+  const pageLinks = new Map<number, string[]>();
+  for (const p of readUnitPages(pagesDir)) {
+    if (p.regional) continue;
+    const links = [...p.head.matchAll(/\[\[([^\]|#]+?)(?:\|[^\]]*)?\]\]/g)].map((m) => m[1].trim()).filter((l) => /\((Event Gacha|Gacha Event)\)|Capsules/i.test(l));
+    pageLinks.set(p.id, [...(pageLinks.get(p.id) ?? []), ...links]);
+  }
+  // Source 2b: gacha roster pages (exclusive list) -> unit names.
+  const rosterOf = new Map<string, string[]>(); // norm(unit name) -> page titles
+  for (const f of readdirSync(pagesDir)) {
+    if (!/\((Gacha_Event|Event_Gacha)\)|Capsules/.test(f) || f.endsWith("_Gallery.wikitext")) continue;
+    const t = readFileSync(join(pagesDir, f), "utf8");
+    for (const m of t.matchAll(/\{\{GachaDescription\|([^}]*)\}\}/g))
+      for (const n of m[1].split("|").map((x) => x.trim()).filter((x) => x && !x.includes("=")))
+        rosterOf.set(norm(n), [...(rosterOf.get(norm(n)) ?? []), f.replace(/\.wikitext$/, "").replace(/_/g, " ")]);
+  }
+
+  // Per-unit agreed target.
+  const target = new Map<number, string>();
+  for (const { name, lines } of pairs) {
+    const c = byName.get(norm(name));
+    if (c?.length !== 1 || lines.length !== 1 || /\((JP|TW|KR|EN)\)/.test(lines[0])) continue;
+    const u = c[0];
+    if (u.isCollab || SET_NAME_EXCEPTION_UNITS.has(u.unitNumber) || (u.setName && SET_NAME_EXCEPTION_SETS.has(u.setName))) continue;
+    const kind = classify(lines[0]);
+    if (kind !== "EVENT_CAPSULE" && kind !== "RARE_CAPSULE") continue;
+    const ev = lines[0].match(/^[^-–]+?\s[-–]\s(.+)$/)?.[1].replace(/\s*\(Removed\)\s*$/i, "").trim();
+    if (!ev || ev.includes("/") || /Seasonal Gacha Banners|gacha event/i.test(ev) || SET_NAME_EXCEPTION_SETS.has(ev)) continue;
+    const second = [...(pageLinks.get(u.unitNumber) ?? []), ...(rosterOf.get(norm(u.name)) ?? [])];
+    if (!second.some((l) => coreName(l) === coreName(ev))) continue; // only one wiki source names it
+    if (u.setName && coreName(u.setName) === coreName(ev)) continue; // same name, only case/punctuation (e.g. wiki's "RED BUSTERS")
+    target.set(u.unitNumber, ev);
+  }
+
+  // Set-level completion: if everyone leaving set S goes to one T, the rest of S follows.
+  const bySet = new Map<string, any[]>();
+  for (const u of units) if (u.setName) bySet.set(u.setName, [...(bySet.get(u.setName) ?? []), u]);
+  const renamedSets = new Map<string, string>();
+  for (const [s, members] of bySet) {
+    const ts = new Set(members.filter((m) => target.has(m.unitNumber)).map((m) => target.get(m.unitNumber)!));
+    if (ts.size !== 1) continue;
+    const t = [...ts][0];
+    const blocked = members.some((m) => !target.has(m.unitNumber) && (m.isCollab || SET_NAME_EXCEPTION_UNITS.has(m.unitNumber)));
+    if (blocked) continue;
+    for (const m of members) target.set(m.unitNumber, t);
+    renamedSets.set(s, t);
+  }
+
+  if (target.size > MAX_SET_MOVES) {
+    console.log(`  ⚠ ${target.size} set-name moves agreed by the wiki (> ${MAX_SET_MOVES}) — applying none; check the mirror/parser`);
+    return 0;
+  }
+  const byNum = new Map<number, any>(units.map((u) => [u.unitNumber, u]));
+  for (const [n, t] of target) {
+    const u = byNum.get(n);
+    const banners = [...new Set((u.banners ?? []).map((b: string) => (b === u.setName ? t : b)).concat(t))];
+    await prisma.unit.update({ where: { unitNumber: n }, data: { setName: t, banners } });
+    console.log(`  ✓ Set #${n} ${u.name}: "${u.setName ?? "none"}" → "${t}" (Release Order + a second wiki source agree)`);
+  }
+  // Units that only carry a fully-renamed set as a secondary banner tag.
+  for (const u of units) {
+    if (target.has(u.unitNumber)) continue;
+    const bs: string[] = u.banners ?? [];
+    if (!bs.some((b) => renamedSets.has(b))) continue;
+    await prisma.unit.update({ where: { unitNumber: u.unitNumber }, data: { banners: [...new Set(bs.map((b) => renamedSets.get(b) ?? b))] } });
+  }
+  console.log(`  Wiki-agreed set names: ${target.size} unit(s) moved${renamedSets.size ? `; sets renamed: ${[...renamedSets].map(([a, b]) => `"${a}"→"${b}"`).join(", ")}` : ""}`);
+  return target.size;
 }
