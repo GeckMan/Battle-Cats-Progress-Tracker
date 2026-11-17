@@ -1,0 +1,38 @@
+name: Mirror wiki
+
+# Mirrors the Battle Cats wiki's wikitext to the `wiki-data` branch (read by the
+# sync, the fact-check and the Cowork bug sweep). Miraheze allowlisted our
+# requests on 2026-11-17 (Phorge task closed by Jenny_on_Wiki; probe run showed
+# HTTP 200 from GitHub runners), so this no longer needs a home PC.
+# Incremental: only changed pages are re-downloaded after the first run.
+# Runs Sunday night so fresh data is there before Monday's 06:00 UTC sync.
+
+on:
+  schedule:
+    - cron: '0 22 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-audit --no-fund tsx
+      - name: Check out the existing wiki-data branch
+        uses: actions/checkout@v4
+        with:
+          ref: wiki-data
+          path: wiki-data-local
+      - name: Mirror the wiki
+        env:
+          WORK_DIR: wiki-data-local
+          MIRAHEZE_BOT_USER: ${{ secrets.MIRAHEZE_BOT_USER }}
+          MIRAHEZE_BOT_PASS: ${{ secrets.MIRAHEZE_BOT_PASS }}
+        run: npx tsx ./scripts/pull-wiki-local.ts
