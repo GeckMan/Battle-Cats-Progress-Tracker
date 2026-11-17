@@ -67,9 +67,9 @@ export default function SignupPage() {
             <div className="text-xs text-gray-500 mt-1">At least 8 characters.</div>
           </div>
 
-          {err && <div className="text-sm text-red-600">{err}</div>}
+          {err && <div role="alert" className="text-sm text-red-400">{err}</div>}
 
-          <button className="w-full rounded-md bg-black text-white py-2 disabled:opacity-50" disabled={loading}>
+          <button className="w-full rounded-md bg-amber-600 hover:bg-amber-500 text-black font-semibold py-2.5 disabled:opacity-50 transition-colors" disabled={loading}>
             {loading ? "Creating..." : "Create account"}
           </button>
         </form>

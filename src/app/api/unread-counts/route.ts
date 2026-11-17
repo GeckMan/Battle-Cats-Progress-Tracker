@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { privateProgressUserIds } from "@/lib/access";
 
 /**
  * GET /api/unread-counts — count-only unread badges for the right panel (one
@@ -52,7 +53,9 @@ export async function GET(req: NextRequest) {
       where: { status: "ACCEPTED", OR: [{ requesterId: userId }, { addresseeId: userId }] },
       select: { requesterId: true, addresseeId: true },
     });
-    const friendIds = friendships.map((f) => (f.requesterId === userId ? f.addresseeId : f.requesterId));
+    const allFriendIds = friendships.map((f) => (f.requesterId === userId ? f.addresseeId : f.requesterId));
+    const hidden = await privateProgressUserIds(allFriendIds); // same rule as /api/activity
+    const friendIds = allFriendIds.filter((id) => !hidden.has(id));
 
     const [unreadActivity, unreadChat] = await Promise.all([
       (prisma as any).activity.count({

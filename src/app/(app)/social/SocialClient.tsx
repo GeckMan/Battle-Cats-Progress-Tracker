@@ -24,6 +24,8 @@ export default function SocialClient({ userId }: { userId: string }) {
   const [outgoing, setOutgoing] = useState<OutgoingReq[]>([]);
   const [friends, setFriends] = useState<FriendRow[]>([]);
   const [loading, setLoading] = useState(true);
+  // Two-step confirm for "Remove friend" (first click arms it, second removes).
+  const [confirmRemove, setConfirmRemove] = useState<string | null>(null);
 
   async function refresh() {
     setLoading(true);
@@ -51,6 +53,16 @@ export default function SocialClient({ userId }: { userId: string }) {
     });
     setQuery("");
     setResults([]);
+    await refresh();
+  }
+
+  async function removeFriendship(friendshipId: string) {
+    await fetch("/api/social/remove", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ friendshipId }),
+    }).catch(() => {});
+    setConfirmRemove(null);
     await refresh();
   }
 
@@ -177,9 +189,18 @@ export default function SocialClient({ userId }: { userId: string }) {
                       <span className="text-xs text-gray-500 ml-1.5">@{r.to.username}</span>
                     </div>
                   </div>
-                  <span className="text-xs border border-amber-900 text-amber-600 rounded-full px-2 py-0.5">
-                    Pending
-                  </span>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs border border-amber-900 text-amber-600 rounded-full px-2 py-0.5">
+                      Pending
+                    </span>
+                    <button
+                      onClick={() => removeFriendship(r.id)}
+                      className="text-xs px-2.5 py-1.5 rounded border border-gray-700 text-gray-400 hover:border-red-800 hover:text-red-300 transition-colors"
+                      aria-label={`Cancel friend request to ${r.to.displayName ?? r.to.username}`}
+                    >
+                      Cancel
+                    </button>
+                  </div>
                 </div>
               ))
             )}
@@ -213,12 +234,26 @@ export default function SocialClient({ userId }: { userId: string }) {
                     <span className="text-gray-500 ml-1.5">@{f.user.username}</span>
                   </Link>
                 </div>
-                <Link
-                  href={`/social/compare/${encodeURIComponent(f.user.username)}`}
-                  className="text-xs px-2.5 py-1 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors"
-                >
-                  Compare →
-                </Link>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href={`/social/compare/${encodeURIComponent(f.user.username)}`}
+                    className="text-xs px-2.5 py-1.5 rounded border border-gray-700 text-gray-400 hover:border-amber-800 hover:text-amber-300 transition-colors"
+                  >
+                    Compare →
+                  </Link>
+                  <button
+                    onClick={() => (confirmRemove === f.id ? removeFriendship(f.id) : setConfirmRemove(f.id))}
+                    onBlur={() => setConfirmRemove((c) => (c === f.id ? null : c))}
+                    className={`text-xs px-2.5 py-1.5 rounded border transition-colors ${
+                      confirmRemove === f.id
+                        ? "border-red-700 text-red-300 bg-red-950/40"
+                        : "border-gray-700 text-gray-500 hover:border-red-800 hover:text-red-300"
+                    }`}
+                    aria-label={`Remove ${f.user.displayName ?? f.user.username} from friends`}
+                  >
+                    {confirmRemove === f.id ? "Confirm remove" : "Remove"}
+                  </button>
+                </div>
               </div>
             ))
           )}

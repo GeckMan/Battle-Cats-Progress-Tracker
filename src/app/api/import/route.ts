@@ -10,6 +10,9 @@ import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
  * Validates all referenced entities exist, then upserts all progress
  * within a single transaction for atomicity.
  */
+// Big imports can take a while (see the transaction timeout below).
+export const maxDuration = 60;
+
 export async function POST(req: Request) {
   try {
     const session = await getServerSession(authOptions);
@@ -259,8 +262,15 @@ export async function POST(req: Request) {
       if (catclawOp) {
         await tx.userCatclawProgress.upsert(catclawOp);
       }
+    }, {
+      // A full backup is ~1,200 upserts run one by one; Prisma's default interactive
+      // transaction timeout (5s) made big imports fail with "No changes were made"
+      // (2026-11-17 audit). Still all-or-nothing, just allowed to finish.
+      timeout: 55000,
+      maxWait: 10000,
     });
   } catch (err) {
+    console.error("[import] transaction failed:", err);
     return NextResponse.json({ error: "Import failed. No changes were made." }, { status: 500 });
   }
 

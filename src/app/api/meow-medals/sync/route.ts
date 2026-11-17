@@ -143,7 +143,13 @@ export async function POST() {
 
     // 7) Batch all upserts in a single transaction instead of N sequential awaits
     const now = new Date();
-    const ops = Array.from(desired.entries()).map(([meowMedalId, earned]) => {
+    // Ratchet only (2026-11-17 audit): "Sync from Stages" marks medals EARNED when the
+    // stage data supports it, but never un-earns one the player already has — before
+    // this it set earned=false for every medal whose stage condition wasn't met, which
+    // wiped medals players had marked by hand. Unchanged rows aren't rewritten.
+    const ops = Array.from(desired.entries())
+      .filter(([meowMedalId, earned]) => earned && !existingByMedal.get(meowMedalId)?.earned)
+      .map(([meowMedalId, earned]) => {
       const existing = existingByMedal.get(meowMedalId);
       // Preserve original earnedAt — only stamp it the first time earned becomes true
       const earnedAt = earned ? (existing?.earnedAt ?? now) : null;
@@ -156,7 +162,7 @@ export async function POST() {
       });
     });
 
-    await prisma.$transaction(ops);
+    if (ops.length) await prisma.$transaction(ops);
 
     return NextResponse.json({
       updated: ops.length,

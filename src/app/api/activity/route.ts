@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { privateProgressUserIds } from "@/lib/access";
 
 export async function GET(req: NextRequest) {
   try {
@@ -10,8 +11,8 @@ export async function GET(req: NextRequest) {
     const userId = session.user.id as string;
 
     const { searchParams } = new URL(req.url);
-    const offset = Math.max(0, Number(searchParams.get("offset") ?? 0));
-    const limit = Math.min(200, Math.max(1, Number(searchParams.get("limit") ?? 100)));
+    const offset = Math.max(0, Number(searchParams.get("offset") ?? 0) || 0);
+    const limit = Math.min(200, Math.max(1, Number(searchParams.get("limit") ?? 100) || 100));
 
     // Get accepted friend IDs (both directions)
     const friendships = await prisma.friendship.findMany({
@@ -26,8 +27,10 @@ export async function GET(req: NextRequest) {
       f.requesterId === userId ? f.addresseeId : f.requesterId
     );
 
-    // Include self + all accepted friends
-    const userIds = [userId, ...friendIds];
+    // Include self + accepted friends, minus friends who set their progress to
+    // PRIVATE (their activity entries name the units/medals/stages they changed).
+    const hidden = await privateProgressUserIds(friendIds);
+    const userIds = [userId, ...friendIds.filter((id) => !hidden.has(id))];
 
     // @ts-ignore – Activity model added in new migration
     const activities = await (prisma as any).activity.findMany({

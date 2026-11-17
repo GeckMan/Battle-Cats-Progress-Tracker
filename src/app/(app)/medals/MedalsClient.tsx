@@ -270,7 +270,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
               type="button"
               onClick={handleSync}
               disabled={syncing}
-              title="Mark medals earned/unearned based on your current Story and Legend progress"
+              title="Mark medals earned based on your current Story and Legend progress (never un-marks medals you already have)"
               style={{
                 fontSize: 10, fontFamily: c.fontSys, fontWeight: 500,
                 letterSpacing: "0.08em", textTransform: "uppercase", padding: "3px 10px",

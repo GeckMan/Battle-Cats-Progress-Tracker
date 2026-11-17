@@ -2,12 +2,13 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { canViewProgress } from "@/lib/access";
 
 /**
  * GET /api/meow-medals?userId=xxx
  * Returns all medals with earned status for the given user.
  * If no userId is provided, returns for the requesting user.
- * Requires friendship (or self) to view another user's medals.
+ * Viewing another user requires friendship and that their progress isn't PRIVATE.
  */
 export async function GET(req: NextRequest) {
   try {
@@ -19,28 +20,11 @@ export async function GET(req: NextRequest) {
     const targetUserId = searchParams.get("userId") ?? viewerId;
     const isSelf = targetUserId === viewerId;
 
-    // If viewing someone else, verify friendship (admins bypass)
+    // Viewing someone else: friendship AND their privacy setting (admins via DB).
     if (!isSelf) {
-      const viewer = await prisma.user.findUnique({
-        where: { id: viewerId },
-        select: { role: true },
-      });
-      const isAdmin = viewer?.role === "ADMIN";
-
-      if (!isAdmin) {
-        const friendship = await prisma.friendship.findFirst({
-          where: {
-            status: "ACCEPTED",
-            OR: [
-              { requesterId: viewerId, addresseeId: targetUserId },
-              { requesterId: targetUserId, addresseeId: viewerId },
-            ],
-          },
-          select: { id: true },
-        });
-        if (!friendship) {
-          return NextResponse.json({ error: "Not friends" }, { status: 403 });
-        }
+      const access = await canViewProgress(viewerId, targetUserId);
+      if (!access.ok) {
+        return NextResponse.json({ error: access.reason === "private" ? "Progress is private" : "Not friends" }, { status: 403 });
       }
     }
 

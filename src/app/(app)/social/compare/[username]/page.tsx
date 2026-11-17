@@ -3,6 +3,7 @@ import Link from "next/link";
 import { redirect, notFound } from "next/navigation";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { canViewProgress } from "@/lib/access";
 import { legendSubchapterPercent, storyChapterPercent } from "@/lib/progress";
 
 type ProgressSummary = {
@@ -64,21 +65,6 @@ async function computeProgressSummary(userId: string): Promise<ProgressSummary> 
   return { overall, storyOverall, legendOverall, medalsOverall, medalsEarned, medalsTotal };
 }
 
-async function areFriendsOrSelf(viewerId: string, otherId: string) {
-  if (viewerId === otherId) return true;
-  const rel = await prisma.friendship.findFirst({
-    where: {
-      status: "ACCEPTED",
-      OR: [
-        { requesterId: viewerId, addresseeId: otherId },
-        { requesterId: otherId, addresseeId: viewerId },
-      ],
-    },
-    select: { id: true },
-  });
-  return Boolean(rel);
-}
-
 /* ── Page ───────────────────────────────────────────────────────────────── */
 
 export default async function ComparePage({ params }: { params: Promise<{ username: string }> }) {
@@ -93,14 +79,16 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
   });
   if (!other) notFound();
 
-  const viewerRole = (session.user as any).role ?? "USER";
-  const isAdmin = viewerRole === "ADMIN";
-  const ok = isAdmin || await areFriendsOrSelf(viewerId, other.id);
-  if (!ok) {
+  // Friendship AND the other player's privacy setting (PRIVATE progress was
+  // ignored here before 2026-11-17); admin checked against the DB.
+  const access = await canViewProgress(viewerId, other.id);
+  if (!access.ok) {
     return (
       <div className="p-8 space-y-4">
         <h1 className="text-2xl font-semibold text-gray-100">Compare</h1>
-        <div className="text-sm text-gray-400">You can only compare with accepted friends.</div>
+        <div className="text-sm text-gray-400">{access.reason === "private"
+            ? `${other.displayName ?? other.username} keeps their progress private.`
+            : "You can only compare with accepted friends."}</div>
         <Link href="/social" className="text-sm text-amber-400 hover:underline">← Back to Social</Link>
       </div>
     );

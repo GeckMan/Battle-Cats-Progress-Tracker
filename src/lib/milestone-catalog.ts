@@ -330,11 +330,26 @@ export async function ensureMilestoneCatalog() {
     await (prisma as any).milestone.createMany({ data: missing });
   }
 
-  // Remove stale entries (no longer in catalog)
+  // Remove stale entries (no longer in catalog) — but ONLY ones no player has any
+  // progress on. Deleting a Milestone cascades to every user's UserMilestoneProgress,
+  // so before 2026-11-17 simply renaming a catalog entry in code silently wiped that
+  // milestone's progress for everyone on the next dashboard load. A stale milestone
+  // that someone has cleared or written notes on is kept (and logged) so the rename
+  // can be handled deliberately with a migration that moves the progress across.
   const staleIds = existing
     .filter((m) => !catalogSet.has(`${m.category}||${m.displayName}`))
     .map((m) => m.id);
   if (staleIds.length > 0) {
-    await prisma.milestone.deleteMany({ where: { id: { in: staleIds } } });
+    const withProgress = await prisma.userMilestoneProgress.findMany({
+      where: { milestoneId: { in: staleIds }, OR: [{ cleared: true }, { notes: { not: null } }] },
+      select: { milestoneId: true },
+      distinct: ["milestoneId"],
+    });
+    const keep = new Set(withProgress.map((r) => r.milestoneId));
+    const safe = staleIds.filter((id) => !keep.has(id));
+    if (safe.length > 0) await prisma.milestone.deleteMany({ where: { id: { in: safe } } });
+    if (keep.size > 0) {
+      console.warn(`[milestone-catalog] ${keep.size} milestone(s) no longer in the catalog still have player progress; kept: ${[...keep].join(", ")}`);
+    }
   }
 }

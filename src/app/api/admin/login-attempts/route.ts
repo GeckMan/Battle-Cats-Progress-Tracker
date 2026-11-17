@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { isDbAdmin } from "@/lib/access";
 
 /**
  * GET /api/admin/login-attempts
@@ -15,7 +16,7 @@ export async function GET(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    if ((session.user as any).role !== "ADMIN") {
+    if (!(await isDbAdmin(session.user.id as string))) { // DB role, not the cached token role
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 

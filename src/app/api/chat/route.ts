@@ -2,6 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { isDbAdmin } from "@/lib/access";
 import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 const MAX_MESSAGE_LENGTH = 500;
@@ -153,7 +154,7 @@ export async function DELETE(req: Request) {
     }
 
     const isOwnMessage = message.userId === userId;
-    const isAdmin = role === "ADMIN";
+    const isAdmin = !isOwnMessage && (await isDbAdmin(userId)); // DB role, not token
     if (!isOwnMessage && !isAdmin) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }

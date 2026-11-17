@@ -2,12 +2,13 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
+import { isDbAdmin } from "@/lib/access";
 
 export async function POST(req: Request) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
-    if ((session.user as any).role !== "ADMIN") {
+    if (!(await isDbAdmin(session.user.id as string))) { // DB role, not the cached token role
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
@@ -34,6 +35,12 @@ export async function POST(req: Request) {
 
     if (!target) {
       return NextResponse.json({ error: "User not found" }, { status: 404 });
+    }
+
+    // Admins can't change another admin's role (2026-11-17 audit): demote-then-delete
+    // was a way for one admin to remove another, including the site owner.
+    if (target.role === "ADMIN") {
+      return NextResponse.json({ error: "Cannot change another admin's role" }, { status: 403 });
     }
 
     // @ts-ignore – role field added in migration

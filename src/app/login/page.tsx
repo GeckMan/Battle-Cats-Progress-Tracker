@@ -1,7 +1,7 @@
 "use client";
 
 import { signIn } from "next-auth/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -9,20 +9,39 @@ export default function LoginPage() {
   const [err, setErr] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
 
+  // Show NextAuth's ?error=... if we land here from a redirect (e.g. an old link).
+  useEffect(() => {
+    const e = new URLSearchParams(window.location.search).get("error");
+    if (e) setErr(e === "CredentialsSignin" ? "Invalid username or password." : "Couldn't log in. Please try again.");
+  }, []);
+
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setErr(null);
     setLoading(true);
 
-    const res = await signIn("credentials", {
-      username,
-      password,
-      redirect: true,
-      callbackUrl: "/dashboard",
-    });
-
-    // signIn redirects; res is usually null when redirect=true
-    if (res?.error) setErr("Invalid username or password.");
+    // redirect:false so a failed login shows a message here instead of silently
+    // reloading the form (it used redirect:true and never read the error).
+    try {
+      const res = await signIn("credentials", {
+        username,
+        password,
+        redirect: false,
+        callbackUrl: "/dashboard",
+      });
+      if (res?.ok && !res.error) {
+        window.location.href = res.url ?? "/dashboard";
+        return;
+      }
+      setErr(
+        res?.status === 429
+          ? "Too many login attempts. Please wait a few minutes and try again."
+          : "Invalid username or password."
+      );
+    } catch {
+      // The login rate limiter answers 429 without the JSON NextAuth expects.
+      setErr("Too many login attempts or a connection problem. Please wait a minute and try again.");
+    }
     setLoading(false);
   }
 
@@ -54,10 +73,10 @@ export default function LoginPage() {
             />
           </div>
 
-          {err && <div className="text-sm text-red-600">{err}</div>}
+          {err && <div role="alert" className="text-sm text-red-400">{err}</div>}
 
           <button
-            className="w-full rounded-md bg-black text-white py-2 disabled:opacity-50"
+            className="w-full rounded-md bg-amber-600 hover:bg-amber-500 text-black font-semibold py-2.5 disabled:opacity-50 transition-colors"
             disabled={loading}
           >
             {loading ? "Logging in..." : "Log in"}

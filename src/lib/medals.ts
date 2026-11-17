@@ -102,11 +102,18 @@ export async function recomputeStoryMedalsForUser(userId: string) {
         })
       : false;
 
+    // Only write when the value actually changes, and keep the original earnedAt
+    // (before 2026-11-17 every story edit re-stamped earnedAt to "now").
+    const current = await prisma.userMeowMedal.findFirst({
+      where: { userId, meowMedalId: medalId },
+      select: { earned: true, earnedAt: true },
+    });
+    if (!current || current.earned === earned) continue;
     await prisma.userMeowMedal.updateMany({
       where: { userId, meowMedalId: medalId },
       data: {
         earned,
-        earnedAt: earned ? new Date() : null,
+        earnedAt: earned ? (current.earnedAt ?? new Date()) : null,
       },
     });
   }
