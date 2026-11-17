@@ -11,7 +11,7 @@
  *
  * Run:   npx tsx ./scripts/pull-wiki-local.ts
  * Env (all optional):
- *   WIKI_NAMESPACES  pipe-separated namespace ids (default "0|10|14": articles, templates, categories)
+ *   WIKI_NAMESPACES  pipe-separated namespace ids (default "0|10|14|828": articles, templates, categories, modules)
  *   DELAY_MS         pause between API requests (default 1000)
  *   NO_PUSH=1        write files only, don't commit/push
  *   WORK_DIR         local mirror checkout (default ./wiki-data-local, git-ignored by living outside src)
@@ -22,7 +22,7 @@ import { execFileSync } from "child_process";
 import { join } from "path";
 import { wikiFetch, WIKI_BASE } from "./wiki-access.ts";
 
-const NAMESPACES = (process.env.WIKI_NAMESPACES ?? "0|10|14").split("|");
+const NAMESPACES = (process.env.WIKI_NAMESPACES ?? "0|10|14|828").split("|");
 const DELAY_MS = Number(process.env.DELAY_MS ?? 1000);
 const WORK_DIR = process.env.WORK_DIR ?? "wiki-data-local";
 const REPO_URL = process.env.REPO_URL ?? "https://github.com/GeckMan/Battle-Cats-Progress-Tracker.git";

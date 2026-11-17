@@ -1,0 +1,62 @@
+name: Wiki fact-check
+
+# Read-only cross-check of the Unit table against the wiki mirror (the
+# `wiki-data` branch, refreshed by scripts/pull-wiki-local.ts from a home IP
+# because Cloudflare challenges GitHub runners). Never writes to the DB.
+# The report goes to the run summary and to bug-digests/reports/ so the
+# Cowork sweep can read it.
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Monday 08:00 UTC, after the 06:00 sync
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  factcheck:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Check out wiki-data and bug-digests
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git worktree add wiki-branch origin/wiki-data
+          if git ls-remote --exit-code --heads origin bug-digests >/dev/null 2>&1; then
+            git worktree add -B bug-digests digest-branch origin/bug-digests
+          else
+            git worktree add --detach digest-branch
+            (cd digest-branch && git checkout --orphan bug-digests && git rm -rf . >/dev/null 2>&1 || true)
+          fi
+          mkdir -p digest-branch/reports
+      - name: Run fact-check
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          WIKI_MIRROR_DIR: wiki-branch/wiki-mirror
+          REPORT_PATH: digest-branch/reports/wiki-factcheck-latest.md
+        run: npx tsx ./scripts/wiki-factcheck.ts
+      - name: Publish report to bug-digests
+        run: |
+          cd digest-branch
+          cat > vercel.json <<'JSON'
+          {
+            "git": { "deploymentEnabled": { "bug-digests": false } },
+            "ignoreCommand": "exit 0"
+          }
+          JSON
+          git add -A reports/ vercel.json
+          if git diff --cached --quiet; then echo "No change"; else
+            git commit -m "chore: wiki fact-check report [skip ci]"
+            git push origin bug-digests
+          fi
