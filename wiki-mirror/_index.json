@@ -7391,10 +7391,6 @@
   "rev": 413178,
   "file": "Crimson_Star_(Cats_of_the_Cosmos)_Outbreak.wikitext"
  },
- "Crimson Vengeance": {
-  "rev": 519471,
-  "file": "Crimson_Vengeance.wikitext"
- },
  "Critical Cat Hit!": {
   "rev": 509856,
   "file": "Critical_Cat_Hit!.wikitext"
@@ -41023,21 +41019,93 @@
   "rev": 406333,
   "file": "Category_魅惑の堕天楼_Floors.wikitext"
  },
- "Module:CSV": {
-  "rev": 495160,
-  "file": "Module_CSV.wikitext"
+ "Module:AbilityIcon": {
+  "rev": 516048,
+  "file": "Module_AbilityIcon.wikitext"
  },
- "Module:CSV/doc": {
-  "rev": 487268,
-  "file": "Module_CSV_doc.wikitext"
+ "Module:AbilityIcon/data": {
+  "rev": 517120,
+  "file": "Module_AbilityIcon_data.wikitext"
  },
- "Module:CatCombo": {
-  "rev": 488560,
-  "file": "Module_CatCombo.wikitext"
+ "Module:AbilityIcon/data/doc": {
+  "rev": 487236,
+  "file": "Module_AbilityIcon_data_doc.wikitext"
  },
- "Module:CatCombo/doc": {
-  "rev": 487091,
-  "file": "Module_CatCombo_doc.wikitext"
+ "Module:AbilityIcon/doc": {
+  "rev": 487107,
+  "file": "Module_AbilityIcon_doc.wikitext"
+ },
+ "Module:AnimationViewer": {
+  "rev": 441903,
+  "file": "Module_AnimationViewer.wikitext"
+ },
+ "Module:AnimationViewer/doc": {
+  "rev": 487170,
+  "file": "Module_AnimationViewer_doc.wikitext"
+ },
+ "Module:Arguments": {
+  "rev": 387163,
+  "file": "Module_Arguments.wikitext"
+ },
+ "Module:Arguments/doc": {
+  "rev": 487894,
+  "file": "Module_Arguments_doc.wikitext"
+ },
+ "Module:Array": {
+  "rev": 486812,
+  "file": "Module_Array.wikitext"
+ },
+ "Module:Array/doc": {
+  "rev": 487438,
+  "file": "Module_Array_doc.wikitext"
+ },
+ "Module:BCNum": {
+  "rev": 501758,
+  "file": "Module_BCNum.wikitext"
+ },
+ "Module:BCNum/doc": {
+  "rev": 487237,
+  "file": "Module_BCNum_doc.wikitext"
+ },
+ "Module:Bucket": {
+  "rev": 390864,
+  "file": "Module_Bucket.wikitext"
+ },
+ "Module:Bucket/doc": {
+  "rev": 487238,
+  "file": "Module_Bucket_doc.wikitext"
+ },
+ "Module:BucketDoc": {
+  "rev": 390876,
+  "file": "Module_BucketDoc.wikitext"
+ },
+ "Module:BucketDoc/doc": {
+  "rev": 487239,
+  "file": "Module_BucketDoc_doc.wikitext"
+ },
+ "Module:BucketGet": {
+  "rev": 390930,
+  "file": "Module_BucketGet.wikitext"
+ },
+ "Module:BucketGet/doc": {
+  "rev": 487240,
+  "file": "Module_BucketGet_doc.wikitext"
+ },
+ "Module:BucketNavbox": {
+  "rev": 391128,
+  "file": "Module_BucketNavbox.wikitext"
+ },
+ "Module:BucketNavbox/doc": {
+  "rev": 501117,
+  "file": "Module_BucketNavbox_doc.wikitext"
+ },
+ "Module:BucketPut": {
+  "rev": 497024,
+  "file": "Module_BucketPut.wikitext"
+ },
+ "Module:BucketPut/doc": {
+  "rev": 487242,
+  "file": "Module_BucketPut_doc.wikitext"
  },
  "Module:CDict": {
   "rev": 498666,
@@ -41046,6 +41114,22 @@
  "Module:CDict/doc": {
   "rev": 487262,
   "file": "Module_CDict_doc.wikitext"
+ },
+ "Module:CRO": {
+  "rev": 489215,
+  "file": "Module_CRO.wikitext"
+ },
+ "Module:CRO/doc": {
+  "rev": 489216,
+  "file": "Module_CRO_doc.wikitext"
+ },
+ "Module:CSV": {
+  "rev": 495160,
+  "file": "Module_CSV.wikitext"
+ },
+ "Module:CSV/doc": {
+  "rev": 487268,
+  "file": "Module_CSV_doc.wikitext"
  },
  "Module:Cache": {
   "rev": 495161,
@@ -41063,109 +41147,13 @@
   "rev": 487244,
   "file": "Module_Cache_storage_doc.wikitext"
  },
- "Module:CRO": {
-  "rev": 489215,
-  "file": "Module_CRO.wikitext"
+ "Module:Cachebuster list": {
+  "rev": 494222,
+  "file": "Module_Cachebuster_list.wikitext"
  },
- "Module:CRO/doc": {
-  "rev": 489216,
-  "file": "Module_CRO_doc.wikitext"
- },
- "Module:CatIcon": {
-  "rev": 488999,
-  "file": "Module_CatIcon.wikitext"
- },
- "Module:CatIcon/doc": {
-  "rev": 487255,
-  "file": "Module_CatIcon_doc.wikitext"
- },
- "Module:CatGuide": {
-  "rev": 489058,
-  "file": "Module_CatGuide.wikitext"
- },
- "Module:CatGuide/doc": {
-  "rev": 487254,
-  "file": "Module_CatGuide_doc.wikitext"
- },
- "Module:Arguments": {
-  "rev": 387163,
-  "file": "Module_Arguments.wikitext"
- },
- "Module:Arguments/doc": {
-  "rev": 487894,
-  "file": "Module_Arguments_doc.wikitext"
- },
- "Module:AnimationViewer": {
-  "rev": 441903,
-  "file": "Module_AnimationViewer.wikitext"
- },
- "Module:AnimationViewer/doc": {
-  "rev": 487170,
-  "file": "Module_AnimationViewer_doc.wikitext"
- },
- "Module:BCNum": {
-  "rev": 501758,
-  "file": "Module_BCNum.wikitext"
- },
- "Module:BCNum/doc": {
-  "rev": 487237,
-  "file": "Module_BCNum_doc.wikitext"
- },
- "Module:AbilityIcon/data": {
-  "rev": 517120,
-  "file": "Module_AbilityIcon_data.wikitext"
- },
- "Module:AbilityIcon/data/doc": {
-  "rev": 487236,
-  "file": "Module_AbilityIcon_data_doc.wikitext"
- },
- "Module:AbilityIcon": {
-  "rev": 516048,
-  "file": "Module_AbilityIcon.wikitext"
- },
- "Module:AbilityIcon/doc": {
-  "rev": 487107,
-  "file": "Module_AbilityIcon_doc.wikitext"
- },
- "Module:Bucket": {
-  "rev": 390864,
-  "file": "Module_Bucket.wikitext"
- },
- "Module:Bucket/doc": {
-  "rev": 487238,
-  "file": "Module_Bucket_doc.wikitext"
- },
- "Module:BucketDoc": {
-  "rev": 390876,
-  "file": "Module_BucketDoc.wikitext"
- },
- "Module:BucketGet": {
-  "rev": 390930,
-  "file": "Module_BucketGet.wikitext"
- },
- "Module:BucketPut": {
-  "rev": 497024,
-  "file": "Module_BucketPut.wikitext"
- },
- "Module:BucketPut/doc": {
-  "rev": 487242,
-  "file": "Module_BucketPut_doc.wikitext"
- },
- "Module:BucketGet/doc": {
-  "rev": 487240,
-  "file": "Module_BucketGet_doc.wikitext"
- },
- "Module:BucketNavbox": {
-  "rev": 391128,
-  "file": "Module_BucketNavbox.wikitext"
- },
- "Module:BucketNavbox/doc": {
-  "rev": 501117,
-  "file": "Module_BucketNavbox_doc.wikitext"
- },
- "Module:BucketDoc/doc": {
-  "rev": 487239,
-  "file": "Module_BucketDoc_doc.wikitext"
+ "Module:Cachebuster list/doc": {
+  "rev": 495752,
+  "file": "Module_Cachebuster_list_doc.wikitext"
  },
  "Module:Cat2": {
   "rev": 489208,
@@ -41179,9 +41167,9 @@
   "rev": 489222,
   "file": "Module_Cat2_images.wikitext"
  },
- "Module:Cat2/string functions": {
-  "rev": 486274,
-  "file": "Module_Cat2_string_functions.wikitext"
+ "Module:Cat2/images/doc": {
+  "rev": 487234,
+  "file": "Module_Cat2_images_doc.wikitext"
  },
  "Module:Cat2/load bulk data": {
   "rev": 501775,
@@ -41191,85 +41179,69 @@
   "rev": 516755,
   "file": "Module_Cat2_load_bulk_data_data.wikitext"
  },
- "Module:Array": {
-  "rev": 486812,
-  "file": "Module_Array.wikitext"
- },
- "Module:Cat2/images/doc": {
-  "rev": 487234,
-  "file": "Module_Cat2_images_doc.wikitext"
+ "Module:Cat2/load bulk data/data/doc": {
+  "rev": 488633,
+  "file": "Module_Cat2_load_bulk_data_data_doc.wikitext"
  },
  "Module:Cat2/load bulk data/doc": {
   "rev": 488906,
   "file": "Module_Cat2_load_bulk_data_doc.wikitext"
  },
+ "Module:Cat2/string functions": {
+  "rev": 486274,
+  "file": "Module_Cat2_string_functions.wikitext"
+ },
  "Module:Cat2/string functions/doc": {
   "rev": 487357,
   "file": "Module_Cat2_string_functions_doc.wikitext"
  },
- "Module:Cat2/load bulk data/data/doc": {
-  "rev": 488633,
-  "file": "Module_Cat2_load_bulk_data_data_doc.wikitext"
+ "Module:CatCombo": {
+  "rev": 488560,
+  "file": "Module_CatCombo.wikitext"
  },
- "Module:Array/doc": {
-  "rev": 487438,
-  "file": "Module_Array_doc.wikitext"
+ "Module:CatCombo/doc": {
+  "rev": 487091,
+  "file": "Module_CatCombo_doc.wikitext"
  },
- "Module:Cachebuster list": {
-  "rev": 494222,
-  "file": "Module_Cachebuster_list.wikitext"
+ "Module:CatGuide": {
+  "rev": 489058,
+  "file": "Module_CatGuide.wikitext"
  },
- "Module:Cachebuster list/doc": {
-  "rev": 495752,
-  "file": "Module_Cachebuster_list_doc.wikitext"
+ "Module:CatGuide/doc": {
+  "rev": 487254,
+  "file": "Module_CatGuide_doc.wikitext"
  },
- "Module:Cats/names.csv": {
-  "rev": 464717,
-  "file": "Module_Cats_names.csv.wikitext"
+ "Module:CatIcon": {
+  "rev": 488999,
+  "file": "Module_CatIcon.wikitext"
  },
- "Module:Cats/images.csv": {
-  "rev": 116564,
-  "file": "Module_Cats_images.csv.wikitext"
+ "Module:CatIcon/doc": {
+  "rev": 487255,
+  "file": "Module_CatIcon_doc.wikitext"
  },
- "Module:Cats/data (old)/doc": {
-  "rev": 487259,
-  "file": "Module_Cats_data_(old)_doc.wikitext"
+ "Module:CatNav": {
+  "rev": 516750,
+  "file": "Module_CatNav.wikitext"
  },
- "Module:Cats/doc": {
-  "rev": 487256,
-  "file": "Module_Cats_doc.wikitext"
+ "Module:CatNav/doc": {
+  "rev": 487093,
+  "file": "Module_CatNav_doc.wikitext"
  },
- "Module:Cats": {
-  "rev": 495173,
-  "file": "Module_Cats.wikitext"
+ "Module:Cat Info": {
+  "rev": 518987,
+  "file": "Module_Cat_Info.wikitext"
  },
- "Module:Cats/data (old)": {
-  "rev": 495175,
-  "file": "Module_Cats_data_(old).wikitext"
+ "Module:Cat Info/doc": {
+  "rev": 516021,
+  "file": "Module_Cat_Info_doc.wikitext"
  },
- "Module:Cats/exclusives.csv": {
-  "rev": 116578,
-  "file": "Module_Cats_exclusives.csv.wikitext"
+ "Module:Cat Info/store": {
+  "rev": 517110,
+  "file": "Module_Cat_Info_store.wikitext"
  },
- "Module:ComboFilter": {
-  "rev": 489062,
-  "file": "Module_ComboFilter.wikitext"
- },
- "Module:ColosseumRule": {
-  "rev": 495178,
-  "file": "Module_ColosseumRule.wikitext"
- },
- "Module:ColosseumRule/doc": {
-  "rev": 487264,
-  "file": "Module_ColosseumRule_doc.wikitext"
- },
- "Module:ColosseumRule/data": {
-  "rev": 495179,
-  "file": "Module_ColosseumRule_data.wikitext"
- },
- "Module:ColosseumRule/data/doc": {
-  "rev": 487265,
-  "file": "Module_ColosseumRule_data_doc.wikitext"
+ "Module:Cat Info/store/doc": {
+  "rev": 517009,
+  "file": "Module_Cat_Info_store_doc.wikitext"
  },
  "Module:Cat Stats 0.1": {
   "rev": 495165,
@@ -41303,14 +41275,6 @@
   "rev": 487252,
   "file": "Module_Cat_Stats_1.1_doc.wikitext"
  },
- "Module:Cat Stats Manual": {
-  "rev": 280452,
-  "file": "Module_Cat_Stats_Manual.wikitext"
- },
- "Module:Cat Stats Manual/doc": {
-  "rev": 283735,
-  "file": "Module_Cat_Stats_Manual_doc.wikitext"
- },
  "Module:Cat Stats 1.2": {
   "rev": 516050,
   "file": "Module_Cat_Stats_1.2.wikitext"
@@ -41319,61 +41283,13 @@
   "rev": 508040,
   "file": "Module_Cat_Stats_1.2_doc.wikitext"
  },
- "Module:ChunkedIterator": {
-  "rev": 391052,
-  "file": "Module_ChunkedIterator.wikitext"
+ "Module:Cat Stats Manual": {
+  "rev": 280452,
+  "file": "Module_Cat_Stats_Manual.wikitext"
  },
- "Module:ChunkedIterator/doc": {
-  "rev": 495177,
-  "file": "Module_ChunkedIterator_doc.wikitext"
- },
- "Module:Cat Info": {
-  "rev": 518987,
-  "file": "Module_Cat_Info.wikitext"
- },
- "Module:Cat Info/doc": {
-  "rev": 516021,
-  "file": "Module_Cat_Info_doc.wikitext"
- },
- "Module:Cats/data2": {
-  "rev": 495176,
-  "file": "Module_Cats_data2.wikitext"
- },
- "Module:Cats/data2/doc": {
-  "rev": 487260,
-  "file": "Module_Cats_data2_doc.wikitext"
- },
- "Module:Cat images/eggs.json": {
-  "rev": 484545,
-  "file": "Module_Cat_images_eggs.json.wikitext"
- },
- "Module:Cats/api": {
-  "rev": 495174,
-  "file": "Module_Cats_api.wikitext"
- },
- "Module:Cats/api/doc": {
-  "rev": 487257,
-  "file": "Module_Cats_api_doc.wikitext"
- },
- "Module:Cats/showdata": {
-  "rev": 441547,
-  "file": "Module_Cats_showdata.wikitext"
- },
- "Module:Cats/showdata/doc": {
-  "rev": 487261,
-  "file": "Module_Cats_showdata_doc.wikitext"
- },
- "Module:Cat renames/names": {
-  "rev": 516448,
-  "file": "Module_Cat_renames_names.wikitext"
- },
- "Module:Cat renames/names/doc": {
-  "rev": 517362,
-  "file": "Module_Cat_renames_names_doc.wikitext"
- },
- "Module:Cats/data/doc": {
-  "rev": 487258,
-  "file": "Module_Cats_data_doc.wikitext"
+ "Module:Cat Stats Manual/doc": {
+  "rev": 283735,
+  "file": "Module_Cat_Stats_Manual_doc.wikitext"
  },
  "Module:Cat images": {
   "rev": 495170,
@@ -41383,21 +41299,9 @@
   "rev": 487245,
   "file": "Module_Cat_images_doc.wikitext"
  },
- "Module:CatNav": {
-  "rev": 516750,
-  "file": "Module_CatNav.wikitext"
- },
- "Module:CatNav/doc": {
-  "rev": 487093,
-  "file": "Module_CatNav_doc.wikitext"
- },
- "Module:Cat renames": {
-  "rev": 489207,
-  "file": "Module_Cat_renames.wikitext"
- },
- "Module:Cat renames/doc": {
-  "rev": 487247,
-  "file": "Module_Cat_renames_doc.wikitext"
+ "Module:Cat images/eggs.json": {
+  "rev": 484545,
+  "file": "Module_Cat_images_eggs.json.wikitext"
  },
  "Module:Cat query helper": {
   "rev": 516456,
@@ -41407,13 +41311,21 @@
   "rev": 495171,
   "file": "Module_Cat_query_helper_doc.wikitext"
  },
- "Module:Cat Info/store": {
-  "rev": 517110,
-  "file": "Module_Cat_Info_store.wikitext"
+ "Module:Cat renames": {
+  "rev": 489207,
+  "file": "Module_Cat_renames.wikitext"
  },
- "Module:Cat Info/store/doc": {
-  "rev": 517009,
-  "file": "Module_Cat_Info_store_doc.wikitext"
+ "Module:Cat renames/doc": {
+  "rev": 487247,
+  "file": "Module_Cat_renames_doc.wikitext"
+ },
+ "Module:Cat renames/names": {
+  "rev": 516448,
+  "file": "Module_Cat_renames_names.wikitext"
+ },
+ "Module:Cat renames/names/doc": {
+  "rev": 517362,
+  "file": "Module_Cat_renames_names_doc.wikitext"
  },
  "Module:Cat renames/names/store": {
   "rev": 517361,
@@ -41423,93 +41335,93 @@
   "rev": 517360,
   "file": "Module_Cat_renames_names_store_doc.wikitext"
  },
- "Module:Enemy Stats (Old)": {
-  "rev": 396214,
-  "file": "Module_Enemy_Stats_(Old).wikitext"
+ "Module:Cats": {
+  "rev": 495173,
+  "file": "Module_Cats.wikitext"
  },
- "Module:Enemy Stats (Old)/doc": {
-  "rev": 487282,
-  "file": "Module_Enemy_Stats_(Old)_doc.wikitext"
+ "Module:Cats/api": {
+  "rev": 495174,
+  "file": "Module_Cats_api.wikitext"
  },
- "Module:EnemiesAppearing/doc": {
-  "rev": 487280,
-  "file": "Module_EnemiesAppearing_doc.wikitext"
+ "Module:Cats/api/doc": {
+  "rev": 487257,
+  "file": "Module_Cats_api_doc.wikitext"
  },
- "Module:EnemiesAppearing": {
-  "rev": 495184,
-  "file": "Module_EnemiesAppearing.wikitext"
+ "Module:Cats/data/doc": {
+  "rev": 487258,
+  "file": "Module_Cats_data_doc.wikitext"
  },
- "Module:Enemies.csv": {
-  "rev": 516756,
-  "file": "Module_Enemies.csv.wikitext"
+ "Module:Cats/data2": {
+  "rev": 495176,
+  "file": "Module_Cats_data2.wikitext"
  },
- "Module:Enemies/data": {
-  "rev": 495183,
-  "file": "Module_Enemies_data.wikitext"
+ "Module:Cats/data2/doc": {
+  "rev": 487260,
+  "file": "Module_Cats_data2_doc.wikitext"
  },
- "Module:Enemies/data/doc": {
-  "rev": 487278,
-  "file": "Module_Enemies_data_doc.wikitext"
+ "Module:Cats/data (old)": {
+  "rev": 495175,
+  "file": "Module_Cats_data_(old).wikitext"
  },
- "Module:Enemies": {
-  "rev": 496853,
-  "file": "Module_Enemies.wikitext"
+ "Module:Cats/data (old)/doc": {
+  "rev": 487259,
+  "file": "Module_Cats_data_(old)_doc.wikitext"
  },
- "Module:Enemies/doc": {
-  "rev": 487277,
-  "file": "Module_Enemies_doc.wikitext"
+ "Module:Cats/doc": {
+  "rev": 487256,
+  "file": "Module_Cats_doc.wikitext"
  },
- "Module:EnemyList": {
-  "rev": 441252,
-  "file": "Module_EnemyList.wikitext"
+ "Module:Cats/exclusives.csv": {
+  "rev": 116578,
+  "file": "Module_Cats_exclusives.csv.wikitext"
  },
- "Module:EnemyList/doc": {
-  "rev": 487283,
-  "file": "Module_EnemyList_doc.wikitext"
+ "Module:Cats/images.csv": {
+  "rev": 116564,
+  "file": "Module_Cats_images.csv.wikitext"
  },
- "Module:Enemy Stats (Old)/traits": {
-  "rev": 407677,
-  "file": "Module_Enemy_Stats_(Old)_traits.wikitext"
+ "Module:Cats/names.csv": {
+  "rev": 464717,
+  "file": "Module_Cats_names.csv.wikitext"
  },
- "Module:Enemy Stats (Old)/traits/doc": {
-  "rev": 487360,
-  "file": "Module_Enemy_Stats_(Old)_traits_doc.wikitext"
+ "Module:Cats/showdata": {
+  "rev": 441547,
+  "file": "Module_Cats_showdata.wikitext"
  },
- "Module:Docbunto": {
-  "rev": 395478,
-  "file": "Module_Docbunto.wikitext"
+ "Module:Cats/showdata/doc": {
+  "rev": 487261,
+  "file": "Module_Cats_showdata_doc.wikitext"
  },
- "Module:Docbunto/doc": {
-  "rev": 487271,
-  "file": "Module_Docbunto_doc.wikitext"
+ "Module:ChunkedIterator": {
+  "rev": 391052,
+  "file": "Module_ChunkedIterator.wikitext"
  },
- "Module:EventTemplates": {
-  "rev": 495186,
-  "file": "Module_EventTemplates.wikitext"
+ "Module:ChunkedIterator/doc": {
+  "rev": 495177,
+  "file": "Module_ChunkedIterator_doc.wikitext"
  },
- "Module:Docbunto/infobox": {
-  "rev": 486967,
-  "file": "Module_Docbunto_infobox.wikitext"
+ "Module:ColosseumRule": {
+  "rev": 495178,
+  "file": "Module_ColosseumRule.wikitext"
  },
- "Module:Docbunto/infobox/doc": {
-  "rev": 487272,
-  "file": "Module_Docbunto_infobox_doc.wikitext"
+ "Module:ColosseumRule/data": {
+  "rev": 495179,
+  "file": "Module_ColosseumRule_data.wikitext"
  },
- "Module:Enemies/traits": {
-  "rev": 414018,
-  "file": "Module_Enemies_traits.wikitext"
+ "Module:ColosseumRule/data/doc": {
+  "rev": 487265,
+  "file": "Module_ColosseumRule_data_doc.wikitext"
  },
- "Module:Enemies/traits/doc": {
-  "rev": 487359,
-  "file": "Module_Enemies_traits_doc.wikitext"
+ "Module:ColosseumRule/doc": {
+  "rev": 487264,
+  "file": "Module_ColosseumRule_doc.wikitext"
  },
- "Module:ERO": {
-  "rev": 495181,
-  "file": "Module_ERO.wikitext"
+ "Module:ComboFilter": {
+  "rev": 489062,
+  "file": "Module_ComboFilter.wikitext"
  },
- "Module:ERO/doc": {
-  "rev": 487284,
-  "file": "Module_ERO_doc.wikitext"
+ "Module:ComboFilter/doc": {
+  "rev": 488544,
+  "file": "Module_ComboFilter_doc.wikitext"
  },
  "Module:CurrentEvents/BannerImages/doc": {
   "rev": 59035,
@@ -41519,13 +41431,45 @@
   "rev": 59038,
   "file": "Module_CurrentEvents_EventImages_doc.wikitext"
  },
- "Module:EventClock": {
-  "rev": 332202,
-  "file": "Module_EventClock.wikitext"
+ "Module:CursedRedirect": {
+  "rev": 495180,
+  "file": "Module_CursedRedirect.wikitext"
  },
- "Module:EventClock/doc": {
-  "rev": 487285,
-  "file": "Module_EventClock_doc.wikitext"
+ "Module:CursedRedirect/doc": {
+  "rev": 487269,
+  "file": "Module_CursedRedirect_doc.wikitext"
+ },
+ "Module:DailyUnit": {
+  "rev": 518986,
+  "file": "Module_DailyUnit.wikitext"
+ },
+ "Module:DailyUnit/doc": {
+  "rev": 487270,
+  "file": "Module_DailyUnit_doc.wikitext"
+ },
+ "Module:Dependency list": {
+  "rev": 501105,
+  "file": "Module_Dependency_list.wikitext"
+ },
+ "Module:Dependency list/doc": {
+  "rev": 487782,
+  "file": "Module_Dependency_list_doc.wikitext"
+ },
+ "Module:Docbunto": {
+  "rev": 395478,
+  "file": "Module_Docbunto.wikitext"
+ },
+ "Module:Docbunto/doc": {
+  "rev": 487271,
+  "file": "Module_Docbunto_doc.wikitext"
+ },
+ "Module:Docbunto/infobox": {
+  "rev": 486967,
+  "file": "Module_Docbunto_infobox.wikitext"
+ },
+ "Module:Docbunto/infobox/doc": {
+  "rev": 487272,
+  "file": "Module_Docbunto_infobox_doc.wikitext"
  },
  "Module:Docbunto/references": {
   "rev": 73963,
@@ -41535,17 +41479,33 @@
   "rev": 135618,
   "file": "Module_Docbunto_references_doc.wikitext"
  },
- "Module:ComboFilter/doc": {
-  "rev": 488544,
-  "file": "Module_ComboFilter_doc.wikitext"
+ "Module:Documentation": {
+  "rev": 487774,
+  "file": "Module_Documentation.wikitext"
  },
- "Module:DailyUnit": {
-  "rev": 518986,
-  "file": "Module_DailyUnit.wikitext"
+ "Module:Documentation/doc": {
+  "rev": 486942,
+  "file": "Module_Documentation_doc.wikitext"
  },
- "Module:DailyUnit/doc": {
-  "rev": 487270,
-  "file": "Module_DailyUnit_doc.wikitext"
+ "Module:DocumentationSubpage": {
+  "rev": 487218,
+  "file": "Module_DocumentationSubpage.wikitext"
+ },
+ "Module:DocumentationSubpage/config": {
+  "rev": 486919,
+  "file": "Module_DocumentationSubpage_config.wikitext"
+ },
+ "Module:DocumentationSubpage/config/doc": {
+  "rev": 487274,
+  "file": "Module_DocumentationSubpage_config_doc.wikitext"
+ },
+ "Module:DocumentationSubpage/doc": {
+  "rev": 487273,
+  "file": "Module_DocumentationSubpage_doc.wikitext"
+ },
+ "Module:DocumentationSubpage/styles.css": {
+  "rev": 486886,
+  "file": "Module_DocumentationSubpage_styles.css.wikitext"
  },
  "Module:DojoRule": {
   "rev": 376600,
@@ -41563,41 +41523,33 @@
   "rev": 487275,
   "file": "Module_DojoRule_doc.wikitext"
  },
- "Module:CursedRedirect": {
-  "rev": 495180,
-  "file": "Module_CursedRedirect.wikitext"
+ "Module:ERO": {
+  "rev": 495181,
+  "file": "Module_ERO.wikitext"
  },
- "Module:CursedRedirect/doc": {
-  "rev": 487269,
-  "file": "Module_CursedRedirect_doc.wikitext"
+ "Module:ERO/doc": {
+  "rev": 487284,
+  "file": "Module_ERO_doc.wikitext"
  },
- "Module:Enemy Stats": {
-  "rev": 503316,
-  "file": "Module_Enemy_Stats.wikitext"
+ "Module:Enemies": {
+  "rev": 496853,
+  "file": "Module_Enemies.wikitext"
  },
- "Module:Enemy Stats/doc": {
-  "rev": 487281,
-  "file": "Module_Enemy_Stats_doc.wikitext"
+ "Module:Enemies.csv": {
+  "rev": 516756,
+  "file": "Module_Enemies.csv.wikitext"
  },
- "Module:DocumentationSubpage": {
-  "rev": 487218,
-  "file": "Module_DocumentationSubpage.wikitext"
+ "Module:Enemies/data": {
+  "rev": 495183,
+  "file": "Module_Enemies_data.wikitext"
  },
- "Module:DocumentationSubpage/config": {
-  "rev": 486919,
-  "file": "Module_DocumentationSubpage_config.wikitext"
+ "Module:Enemies/data/doc": {
+  "rev": 487278,
+  "file": "Module_Enemies_data_doc.wikitext"
  },
- "Module:DocumentationSubpage/styles.css": {
-  "rev": 486886,
-  "file": "Module_DocumentationSubpage_styles.css.wikitext"
- },
- "Module:DocumentationSubpage/config/doc": {
-  "rev": 487274,
-  "file": "Module_DocumentationSubpage_config_doc.wikitext"
- },
- "Module:DocumentationSubpage/doc": {
-  "rev": 487273,
-  "file": "Module_DocumentationSubpage_doc.wikitext"
+ "Module:Enemies/doc": {
+  "rev": 487277,
+  "file": "Module_Enemies_doc.wikitext"
  },
  "Module:Enemies/extras": {
   "rev": 451726,
@@ -41607,41 +41559,65 @@
   "rev": 487279,
   "file": "Module_Enemies_extras_doc.wikitext"
  },
- "Module:Dependency list": {
-  "rev": 501105,
-  "file": "Module_Dependency_list.wikitext"
+ "Module:Enemies/traits": {
+  "rev": 414018,
+  "file": "Module_Enemies_traits.wikitext"
  },
- "Module:Documentation": {
-  "rev": 487774,
-  "file": "Module_Documentation.wikitext"
+ "Module:Enemies/traits/doc": {
+  "rev": 487359,
+  "file": "Module_Enemies_traits_doc.wikitext"
  },
- "Module:Documentation/doc": {
-  "rev": 486942,
-  "file": "Module_Documentation_doc.wikitext"
+ "Module:EnemiesAppearing": {
+  "rev": 495184,
+  "file": "Module_EnemiesAppearing.wikitext"
  },
- "Module:Dependency list/doc": {
-  "rev": 487782,
-  "file": "Module_Dependency_list_doc.wikitext"
+ "Module:EnemiesAppearing/doc": {
+  "rev": 487280,
+  "file": "Module_EnemiesAppearing_doc.wikitext"
  },
- "Module:Job": {
-  "rev": 495191,
-  "file": "Module_Job.wikitext"
+ "Module:EnemyList": {
+  "rev": 441252,
+  "file": "Module_EnemyList.wikitext"
  },
- "Module:Job/doc": {
-  "rev": 487299,
-  "file": "Module_Job_doc.wikitext"
+ "Module:EnemyList/doc": {
+  "rev": 487283,
+  "file": "Module_EnemyList_doc.wikitext"
  },
- "Module:Magnification": {
-  "rev": 431142,
-  "file": "Module_Magnification.wikitext"
+ "Module:Enemy Stats": {
+  "rev": 503316,
+  "file": "Module_Enemy_Stats.wikitext"
  },
- "Module:GachaDescription/descs.csv": {
-  "rev": 515665,
-  "file": "Module_GachaDescription_descs.csv.wikitext"
+ "Module:Enemy Stats/doc": {
+  "rev": 487281,
+  "file": "Module_Enemy_Stats_doc.wikitext"
  },
- "Module:EventTemplates/doc": {
-  "rev": 487287,
-  "file": "Module_EventTemplates_doc.wikitext"
+ "Module:Enemy Stats (Old)": {
+  "rev": 396214,
+  "file": "Module_Enemy_Stats_(Old).wikitext"
+ },
+ "Module:Enemy Stats (Old)/doc": {
+  "rev": 487282,
+  "file": "Module_Enemy_Stats_(Old)_doc.wikitext"
+ },
+ "Module:Enemy Stats (Old)/traits": {
+  "rev": 407677,
+  "file": "Module_Enemy_Stats_(Old)_traits.wikitext"
+ },
+ "Module:Enemy Stats (Old)/traits/doc": {
+  "rev": 487360,
+  "file": "Module_Enemy_Stats_(Old)_traits_doc.wikitext"
+ },
+ "Module:EventClock": {
+  "rev": 332202,
+  "file": "Module_EventClock.wikitext"
+ },
+ "Module:EventClock/doc": {
+  "rev": 487285,
+  "file": "Module_EventClock_doc.wikitext"
+ },
+ "Module:EventTemplates": {
+  "rev": 495186,
+  "file": "Module_EventTemplates.wikitext"
  },
  "Module:EventTemplates/data": {
   "rev": 495187,
@@ -41651,33 +41627,33 @@
   "rev": 487288,
   "file": "Module_EventTemplates_data_doc.wikitext"
  },
- "Module:Lineup": {
-  "rev": 501782,
-  "file": "Module_Lineup.wikitext"
+ "Module:EventTemplates/doc": {
+  "rev": 487287,
+  "file": "Module_EventTemplates_doc.wikitext"
  },
- "Module:Lineup/doc": {
-  "rev": 489061,
-  "file": "Module_Lineup_doc.wikitext"
+ "Module:Fallbacklist": {
+  "rev": 73735,
+  "file": "Module_Fallbacklist.wikitext"
  },
- "Module:Medal/medalname.tsv": {
-  "rev": 502812,
-  "file": "Module_Medal_medalname.tsv.wikitext"
+ "Module:Fallbacklist/doc": {
+  "rev": 135620,
+  "file": "Module_Fallbacklist_doc.wikitext"
  },
- "Module:Medal/data": {
-  "rev": 495194,
-  "file": "Module_Medal_data.wikitext"
+ "Module:File link": {
+  "rev": 476035,
+  "file": "Module_File_link.wikitext"
  },
- "Module:Medal/data/doc": {
-  "rev": 487308,
-  "file": "Module_Medal_data_doc.wikitext"
+ "Module:File link/doc": {
+  "rev": 487289,
+  "file": "Module_File_link_doc.wikitext"
  },
- "Module:Medal": {
-  "rev": 495193,
-  "file": "Module_Medal.wikitext"
+ "Module:Formatnum": {
+  "rev": 495188,
+  "file": "Module_Formatnum.wikitext"
  },
- "Module:Medal/doc": {
-  "rev": 487307,
-  "file": "Module_Medal_doc.wikitext"
+ "Module:Formatnum/doc": {
+  "rev": 487290,
+  "file": "Module_Formatnum_doc.wikitext"
  },
  "Module:GachaBanner": {
   "rev": 489042,
@@ -41695,21 +41671,17 @@
   "rev": 495761,
   "file": "Module_GachaDescription_data_doc.wikitext"
  },
- "Module:Fallbacklist": {
-  "rev": 73735,
-  "file": "Module_Fallbacklist.wikitext"
+ "Module:GachaDescription/descs.csv": {
+  "rev": 515665,
+  "file": "Module_GachaDescription_descs.csv.wikitext"
  },
- "Module:Lexer": {
-  "rev": 73980,
-  "file": "Module_Lexer.wikitext"
+ "Module:GachaDescription2": {
+  "rev": 489024,
+  "file": "Module_GachaDescription2.wikitext"
  },
- "Module:Fallbacklist/doc": {
-  "rev": 135620,
-  "file": "Module_Fallbacklist_doc.wikitext"
- },
- "Module:Lexer/doc": {
-  "rev": 135622,
-  "file": "Module_Lexer_doc.wikitext"
+ "Module:GachaDescription2/doc": {
+  "rev": 489025,
+  "file": "Module_GachaDescription2_doc.wikitext"
  },
  "Module:GachaList": {
   "rev": 489054,
@@ -41719,9 +41691,21 @@
   "rev": 487295,
   "file": "Module_GachaList_doc.wikitext"
  },
- "Module:Lineup/combos2.json": {
-  "rev": 514714,
-  "file": "Module_Lineup_combos2.json.wikitext"
+ "Module:Get renamed cat": {
+  "rev": 516624,
+  "file": "Module_Get_renamed_cat.wikitext"
+ },
+ "Module:Get renamed cat/doc": {
+  "rev": 487296,
+  "file": "Module_Get_renamed_cat_doc.wikitext"
+ },
+ "Module:HiddenNavbox": {
+  "rev": 503367,
+  "file": "Module_HiddenNavbox.wikitext"
+ },
+ "Module:HiddenNavbox/doc": {
+  "rev": 503315,
+  "file": "Module_HiddenNavbox_doc.wikitext"
  },
  "Module:InlineGlobalCSS": {
   "rev": 495190,
@@ -41730,6 +41714,74 @@
  "Module:InlineGlobalCSS/doc": {
   "rev": 487297,
   "file": "Module_InlineGlobalCSS_doc.wikitext"
+ },
+ "Module:Interpolate": {
+  "rev": 431114,
+  "file": "Module_Interpolate.wikitext"
+ },
+ "Module:Interpolate/doc": {
+  "rev": 487298,
+  "file": "Module_Interpolate_doc.wikitext"
+ },
+ "Module:Job": {
+  "rev": 495191,
+  "file": "Module_Job.wikitext"
+ },
+ "Module:Job/doc": {
+  "rev": 487299,
+  "file": "Module_Job_doc.wikitext"
+ },
+ "Module:Json": {
+  "rev": 474168,
+  "file": "Module_Json.wikitext"
+ },
+ "Module:Json/doc": {
+  "rev": 487300,
+  "file": "Module_Json_doc.wikitext"
+ },
+ "Module:Lexer": {
+  "rev": 73980,
+  "file": "Module_Lexer.wikitext"
+ },
+ "Module:Lexer/doc": {
+  "rev": 135622,
+  "file": "Module_Lexer_doc.wikitext"
+ },
+ "Module:Lineup": {
+  "rev": 501782,
+  "file": "Module_Lineup.wikitext"
+ },
+ "Module:Lineup/combos2.json": {
+  "rev": 514714,
+  "file": "Module_Lineup_combos2.json.wikitext"
+ },
+ "Module:Lineup/doc": {
+  "rev": 489061,
+  "file": "Module_Lineup_doc.wikitext"
+ },
+ "Module:LuaWrapper": {
+  "rev": 495192,
+  "file": "Module_LuaWrapper.wikitext"
+ },
+ "Module:LuaWrapper/doc": {
+  "rev": 487302,
+  "file": "Module_LuaWrapper_doc.wikitext"
+ },
+ "Module:Lustache": {
+  "rev": 431660,
+  "file": "Module_Lustache.wikitext"
+ },
+ "Module:Lustache/doc": {
+  "rev": 487303,
+  "file": "Module_Lustache_doc.wikitext"
+ },
+ "Module:Magnification": {
+  "rev": 431142,
+  "file": "Module_Magnification.wikitext"
+ },
+ "Module:Magnification/doc": {
+  "rev": 487452,
+  "file": "Module_Magnification_doc.wikitext"
  },
  "Module:MaterialDrops": {
   "rev": 353807,
@@ -41747,193 +41799,29 @@
   "rev": 487306,
   "file": "Module_MaterialRates_doc.wikitext"
  },
- "Module:LuaWrapper": {
-  "rev": 495192,
-  "file": "Module_LuaWrapper.wikitext"
+ "Module:Medal": {
+  "rev": 495193,
+  "file": "Module_Medal.wikitext"
  },
- "Module:LuaWrapper/doc": {
-  "rev": 487302,
-  "file": "Module_LuaWrapper_doc.wikitext"
+ "Module:Medal/data": {
+  "rev": 495194,
+  "file": "Module_Medal_data.wikitext"
  },
- "Module:GachaDescription2": {
-  "rev": 489024,
-  "file": "Module_GachaDescription2.wikitext"
+ "Module:Medal/data/doc": {
+  "rev": 487308,
+  "file": "Module_Medal_data_doc.wikitext"
  },
- "Module:GachaDescription2/doc": {
-  "rev": 489025,
-  "file": "Module_GachaDescription2_doc.wikitext"
+ "Module:Medal/doc": {
+  "rev": 487307,
+  "file": "Module_Medal_doc.wikitext"
  },
- "Module:Lustache": {
-  "rev": 431660,
-  "file": "Module_Lustache.wikitext"
- },
- "Module:Json": {
-  "rev": 474168,
-  "file": "Module_Json.wikitext"
- },
- "Module:Formatnum": {
-  "rev": 495188,
-  "file": "Module_Formatnum.wikitext"
- },
- "Module:Formatnum/doc": {
-  "rev": 487290,
-  "file": "Module_Formatnum_doc.wikitext"
- },
- "Module:Interpolate": {
-  "rev": 431114,
-  "file": "Module_Interpolate.wikitext"
- },
- "Module:Interpolate/doc": {
-  "rev": 487298,
-  "file": "Module_Interpolate_doc.wikitext"
- },
- "Module:Json/doc": {
-  "rev": 487300,
-  "file": "Module_Json_doc.wikitext"
- },
- "Module:Lustache/doc": {
-  "rev": 487303,
-  "file": "Module_Lustache_doc.wikitext"
- },
- "Module:Get renamed cat": {
-  "rev": 516624,
-  "file": "Module_Get_renamed_cat.wikitext"
- },
- "Module:Get renamed cat/doc": {
-  "rev": 487296,
-  "file": "Module_Get_renamed_cat_doc.wikitext"
- },
- "Module:File link": {
-  "rev": 476035,
-  "file": "Module_File_link.wikitext"
- },
- "Module:File link/doc": {
-  "rev": 487289,
-  "file": "Module_File_link_doc.wikitext"
- },
- "Module:Magnification/doc": {
-  "rev": 487452,
-  "file": "Module_Magnification_doc.wikitext"
- },
- "Module:HiddenNavbox": {
-  "rev": 503367,
-  "file": "Module_HiddenNavbox.wikitext"
- },
- "Module:HiddenNavbox/doc": {
-  "rev": 503315,
-  "file": "Module_HiddenNavbox_doc.wikitext"
- },
- "Module:Sandbox": {
-  "rev": 139509,
-  "file": "Module_Sandbox.wikitext"
- },
- "Module:Sandbox/Brute Bendy": {
-  "rev": 292698,
-  "file": "Module_Sandbox_Brute_Bendy.wikitext"
- },
- "Module:Sandbox/Brute Bendy/doc": {
-  "rev": 48266,
-  "file": "Module_Sandbox_Brute_Bendy_doc.wikitext"
- },
- "Module:Sandbox/Brute Bendy/Learning": {
-  "rev": 73802,
-  "file": "Module_Sandbox_Brute_Bendy_Learning.wikitext"
- },
- "Module:Sandbox/Brute Bendy/Learning/doc": {
-  "rev": 48331,
-  "file": "Module_Sandbox_Brute_Bendy_Learning_doc.wikitext"
- },
- "Module:Sandbox/Brute Bendy/ULC": {
-  "rev": 48625,
-  "file": "Module_Sandbox_Brute_Bendy_ULC.wikitext"
- },
- "Module:Sandbox/Brute Bendy/ULC/doc": {
-  "rev": 48664,
-  "file": "Module_Sandbox_Brute_Bendy_ULC_doc.wikitext"
- },
- "Module:Sandbox/Brute Bendy/UT": {
-  "rev": 48857,
-  "file": "Module_Sandbox_Brute_Bendy_UT.wikitext"
- },
- "Module:Sandbox/Brute Bendy/UT/doc": {
-  "rev": 48879,
-  "file": "Module_Sandbox_Brute_Bendy_UT_doc.wikitext"
- },
- "Module:Sandbox/AAGaming138/TableTest": {
-  "rev": 73800,
-  "file": "Module_Sandbox_AAGaming138_TableTest.wikitext"
- },
- "Module:Sandbox/AAGaming138/TableTest/doc": {
-  "rev": 53233,
-  "file": "Module_Sandbox_AAGaming138_TableTest_doc.wikitext"
- },
- "Module:Nyanko": {
-  "rev": 501768,
-  "file": "Module_Nyanko.wikitext"
- },
- "Module:Nyanko/doc": {
-  "rev": 487317,
-  "file": "Module_Nyanko_doc.wikitext"
- },
- "Module:Sandbox/Brute Bendy/UT1": {
-  "rev": 73805,
-  "file": "Module_Sandbox_Brute_Bendy_UT1.wikitext"
- },
- "Module:Sandbox/Brute Bendy/UT1/doc": {
-  "rev": 487321,
-  "file": "Module_Sandbox_Brute_Bendy_UT1_doc.wikitext"
- },
- "Module:Sandbox/Brute Bendy/Tier": {
-  "rev": 73803,
-  "file": "Module_Sandbox_Brute_Bendy_Tier.wikitext"
- },
- "Module:Sandbox/Brute Bendy/Tier/doc": {
-  "rev": 57026,
-  "file": "Module_Sandbox_Brute_Bendy_Tier_doc.wikitext"
- },
- "Module:NewEnemies": {
-  "rev": 442629,
-  "file": "Module_NewEnemies.wikitext"
- },
- "Module:NewEnemies/doc": {
-  "rev": 487315,
-  "file": "Module_NewEnemies_doc.wikitext"
- },
- "Module:MedalList/medalorder.tsv": {
-  "rev": 502813,
-  "file": "Module_MedalList_medalorder.tsv.wikitext"
+ "Module:Medal/medalname.tsv": {
+  "rev": 502812,
+  "file": "Module_Medal_medalname.tsv.wikitext"
  },
  "Module:MedalList": {
   "rev": 299986,
   "file": "Module_MedalList.wikitext"
- },
- "Module:MedalList/doc": {
-  "rev": 487309,
-  "file": "Module_MedalList_doc.wikitext"
- },
- "Module:Mission": {
-  "rev": 432821,
-  "file": "Module_Mission.wikitext"
- },
- "Module:Mission/doc": {
-  "rev": 487311,
-  "file": "Module_Mission_doc.wikitext"
- },
- "Module:NewTrueForms": {
-  "rev": 495195,
-  "file": "Module_NewTrueForms.wikitext"
- },
- "Module:NewTrueForms/doc": {
-  "rev": 487316,
-  "file": "Module_NewTrueForms_doc.wikitext"
- },
- "Module:NewCats": {
-  "rev": 516051,
-  "file": "Module_NewCats.wikitext"
- },
- "Module:NewCats/doc": {
-  "rev": 488979,
-  "file": "Module_NewCats_doc.wikitext"
  },
  "Module:MedalList/data": {
   "rev": 299971,
@@ -41943,37 +41831,21 @@
   "rev": 487310,
   "file": "Module_MedalList_data_doc.wikitext"
  },
- "Module:RedirectCatNumber": {
-  "rev": 495197,
-  "file": "Module_RedirectCatNumber.wikitext"
+ "Module:MedalList/doc": {
+  "rev": 487309,
+  "file": "Module_MedalList_doc.wikitext"
  },
- "Module:RedirectCatNumber/doc": {
-  "rev": 487318,
-  "file": "Module_RedirectCatNumber_doc.wikitext"
+ "Module:MedalList/medalorder.tsv": {
+  "rev": 502813,
+  "file": "Module_MedalList_medalorder.tsv.wikitext"
  },
- "Module:RedirectEnemyNumber": {
-  "rev": 495198,
-  "file": "Module_RedirectEnemyNumber.wikitext"
+ "Module:Mission": {
+  "rev": 432821,
+  "file": "Module_Mission.wikitext"
  },
- "Module:RedirectEnemyNumber/doc": {
-  "rev": 487319,
-  "file": "Module_RedirectEnemyNumber_doc.wikitext"
- },
- "Module:ProtectSpeciallyCursed": {
-  "rev": 294329,
-  "file": "Module_ProtectSpeciallyCursed.wikitext"
- },
- "Module:ProtectSpeciallyCursed/doc": {
-  "rev": 487167,
-  "file": "Module_ProtectSpeciallyCursed_doc.wikitext"
- },
- "Module:Sandbox/Bloxy97": {
-  "rev": 495755,
-  "file": "Module_Sandbox_Bloxy97.wikitext"
- },
- "Module:Sandbox/Bloxy97/doc": {
-  "rev": 495754,
-  "file": "Module_Sandbox_Bloxy97_doc.wikitext"
+ "Module:Mission/doc": {
+  "rev": 487311,
+  "file": "Module_Mission_doc.wikitext"
  },
  "Module:Navbox": {
   "rev": 517324,
@@ -41991,13 +41863,137 @@
   "rev": 487312,
   "file": "Module_Navbox_doc.wikitext"
  },
- "Module:Sandbox/CursedXyster/Enemies": {
-  "rev": 486986,
-  "file": "Module_Sandbox_CursedXyster_Enemies.wikitext"
+ "Module:NewCats": {
+  "rev": 516051,
+  "file": "Module_NewCats.wikitext"
  },
- "Module:Sandbox/CursedXyster/Enemies/doc": {
-  "rev": 487324,
-  "file": "Module_Sandbox_CursedXyster_Enemies_doc.wikitext"
+ "Module:NewCats/doc": {
+  "rev": 488979,
+  "file": "Module_NewCats_doc.wikitext"
+ },
+ "Module:NewEnemies": {
+  "rev": 442629,
+  "file": "Module_NewEnemies.wikitext"
+ },
+ "Module:NewEnemies/doc": {
+  "rev": 487315,
+  "file": "Module_NewEnemies_doc.wikitext"
+ },
+ "Module:NewTrueForms": {
+  "rev": 495195,
+  "file": "Module_NewTrueForms.wikitext"
+ },
+ "Module:NewTrueForms/doc": {
+  "rev": 487316,
+  "file": "Module_NewTrueForms_doc.wikitext"
+ },
+ "Module:Nyanko": {
+  "rev": 501768,
+  "file": "Module_Nyanko.wikitext"
+ },
+ "Module:Nyanko/doc": {
+  "rev": 487317,
+  "file": "Module_Nyanko_doc.wikitext"
+ },
+ "Module:Paramtest": {
+  "rev": 486814,
+  "file": "Module_Paramtest.wikitext"
+ },
+ "Module:Paramtest/doc": {
+  "rev": 487442,
+  "file": "Module_Paramtest_doc.wikitext"
+ },
+ "Module:ProtectSpeciallyCursed": {
+  "rev": 294329,
+  "file": "Module_ProtectSpeciallyCursed.wikitext"
+ },
+ "Module:ProtectSpeciallyCursed/doc": {
+  "rev": 487167,
+  "file": "Module_ProtectSpeciallyCursed_doc.wikitext"
+ },
+ "Module:RedirectCatNumber": {
+  "rev": 495197,
+  "file": "Module_RedirectCatNumber.wikitext"
+ },
+ "Module:RedirectCatNumber/doc": {
+  "rev": 487318,
+  "file": "Module_RedirectCatNumber_doc.wikitext"
+ },
+ "Module:RedirectEnemyNumber": {
+  "rev": 495198,
+  "file": "Module_RedirectEnemyNumber.wikitext"
+ },
+ "Module:RedirectEnemyNumber/doc": {
+  "rev": 487319,
+  "file": "Module_RedirectEnemyNumber_doc.wikitext"
+ },
+ "Module:Sandbox": {
+  "rev": 139509,
+  "file": "Module_Sandbox.wikitext"
+ },
+ "Module:Sandbox/AAGaming138/TableTest": {
+  "rev": 73800,
+  "file": "Module_Sandbox_AAGaming138_TableTest.wikitext"
+ },
+ "Module:Sandbox/AAGaming138/TableTest/doc": {
+  "rev": 53233,
+  "file": "Module_Sandbox_AAGaming138_TableTest_doc.wikitext"
+ },
+ "Module:Sandbox/Bloxy97": {
+  "rev": 495755,
+  "file": "Module_Sandbox_Bloxy97.wikitext"
+ },
+ "Module:Sandbox/Bloxy97/doc": {
+  "rev": 495754,
+  "file": "Module_Sandbox_Bloxy97_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy": {
+  "rev": 292698,
+  "file": "Module_Sandbox_Brute_Bendy.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/Learning": {
+  "rev": 73802,
+  "file": "Module_Sandbox_Brute_Bendy_Learning.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/Learning/doc": {
+  "rev": 48331,
+  "file": "Module_Sandbox_Brute_Bendy_Learning_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/Tier": {
+  "rev": 73803,
+  "file": "Module_Sandbox_Brute_Bendy_Tier.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/Tier/doc": {
+  "rev": 57026,
+  "file": "Module_Sandbox_Brute_Bendy_Tier_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/ULC": {
+  "rev": 48625,
+  "file": "Module_Sandbox_Brute_Bendy_ULC.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/ULC/doc": {
+  "rev": 48664,
+  "file": "Module_Sandbox_Brute_Bendy_ULC_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/UT": {
+  "rev": 48857,
+  "file": "Module_Sandbox_Brute_Bendy_UT.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/UT/doc": {
+  "rev": 48879,
+  "file": "Module_Sandbox_Brute_Bendy_UT_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/UT1": {
+  "rev": 73805,
+  "file": "Module_Sandbox_Brute_Bendy_UT1.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/UT1/doc": {
+  "rev": 487321,
+  "file": "Module_Sandbox_Brute_Bendy_UT1_doc.wikitext"
+ },
+ "Module:Sandbox/Brute Bendy/doc": {
+  "rev": 48266,
+  "file": "Module_Sandbox_Brute_Bendy_doc.wikitext"
  },
  "Module:Sandbox/CursedXyster/Abilities": {
   "rev": 466354,
@@ -42015,145 +42011,13 @@
   "rev": 487323,
   "file": "Module_Sandbox_CursedXyster_DailyUnit_doc.wikitext"
  },
- "Module:Paramtest": {
-  "rev": 486814,
-  "file": "Module_Paramtest.wikitext"
+ "Module:Sandbox/CursedXyster/Enemies": {
+  "rev": 486986,
+  "file": "Module_Sandbox_CursedXyster_Enemies.wikitext"
  },
- "Module:Paramtest/doc": {
-  "rev": 487442,
-  "file": "Module_Paramtest_doc.wikitext"
- },
- "Module:Sandbox/doc": {
-  "rev": 487320,
-  "file": "Module_Sandbox_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki": {
-  "rev": 516028,
-  "file": "Module_Sandbox_Jenny_on_Wiki.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/doc": {
-  "rev": 515946,
-  "file": "Module_Sandbox_Jenny_on_Wiki_doc.wikitext"
- },
- "Module:String/global": {
-  "rev": 395451,
-  "file": "Module_String_global.wikitext"
- },
- "Module:String/doc": {
-  "rev": 487339,
-  "file": "Module_String_doc.wikitext"
- },
- "Module:Stamps": {
-  "rev": 495215,
-  "file": "Module_Stamps.wikitext"
- },
- "Module:Stamps/doc": {
-  "rev": 487336,
-  "file": "Module_Stamps_doc.wikitext"
- },
- "Module:Stamps.csv": {
-  "rev": 514896,
-  "file": "Module_Stamps.csv.wikitext"
- },
- "Module:Sandbox/SweetDonut0": {
-  "rev": 503587,
-  "file": "Module_Sandbox_SweetDonut0.wikitext"
- },
- "Module:Sandbox/SweetDonut0/doc": {
-  "rev": 54470,
-  "file": "Module_Sandbox_SweetDonut0_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/RecursiveSubst": {
-  "rev": 495304,
-  "file": "Module_Sandbox_Jenny_on_Wiki_RecursiveSubst.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/RecursiveSubst/doc": {
-  "rev": 495305,
-  "file": "Module_Sandbox_Jenny_on_Wiki_RecursiveSubst_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/Annoy": {
-  "rev": 495302,
-  "file": "Module_Sandbox_Jenny_on_Wiki_Annoy.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/Annoy/doc": {
-  "rev": 495303,
-  "file": "Module_Sandbox_Jenny_on_Wiki_Annoy_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/Storage": {
-  "rev": 495306,
-  "file": "Module_Sandbox_Jenny_on_Wiki_Storage.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/Storage/doc": {
-  "rev": 495307,
-  "file": "Module_Sandbox_Jenny_on_Wiki_Storage_doc.wikitext"
- },
- "Module:Stars": {
-  "rev": 431160,
-  "file": "Module_Stars.wikitext"
- },
- "Module:Stars/doc": {
-  "rev": 487338,
-  "file": "Module_Stars_doc.wikitext"
- },
- "Module:Sandbox/SweetDonut0/Catfood": {
-  "rev": 277347,
-  "file": "Module_Sandbox_SweetDonut0_Catfood.wikitext"
- },
- "Module:Sandbox/SweetDonut0/Catfood/doc": {
-  "rev": 59007,
-  "file": "Module_Sandbox_SweetDonut0_Catfood_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/util": {
-  "rev": 495316,
-  "file": "Module_Sandbox_Jenny_on_Wiki_util.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/util/doc": {
-  "rev": 495317,
-  "file": "Module_Sandbox_Jenny_on_Wiki_util_doc.wikitext"
- },
- "Module:Stamps/data": {
-  "rev": 495216,
-  "file": "Module_Stamps_data.wikitext"
- },
- "Module:Stamps/data/doc": {
-  "rev": 487337,
-  "file": "Module_Stamps_data_doc.wikitext"
- },
- "Module:String/global/doc": {
-  "rev": 487340,
-  "file": "Module_String_global_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/data": {
-  "rev": 495312,
-  "file": "Module_Sandbox_Jenny_on_Wiki_data.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/data/doc": {
-  "rev": 495314,
-  "file": "Module_Sandbox_Jenny_on_Wiki_data_doc.wikitext"
- },
- "Module:SpecialBlank": {
-  "rev": 294332,
-  "file": "Module_SpecialBlank.wikitext"
- },
- "Module:SpecialBlank/doc": {
-  "rev": 487377,
-  "file": "Module_SpecialBlank_doc.wikitext"
- },
- "Module:Sandbox/Godly Hydrax": {
-  "rev": 356502,
-  "file": "Module_Sandbox_Godly_Hydrax.wikitext"
- },
- "Module:Sandbox/Godly Hydrax/doc": {
-  "rev": 356473,
-  "file": "Module_Sandbox_Godly_Hydrax_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/data.json": {
-  "rev": 495313,
-  "file": "Module_Sandbox_Jenny_on_Wiki_data.json.wikitext"
- },
- "Module:String": {
-  "rev": 495217,
-  "file": "Module_String.wikitext"
+ "Module:Sandbox/CursedXyster/Enemies/doc": {
+  "rev": 487324,
+  "file": "Module_Sandbox_CursedXyster_Enemies_doc.wikitext"
  },
  "Module:Sandbox/CursedXyster/SeedHelper": {
   "rev": 487431,
@@ -42162,38 +42026,6 @@
  "Module:Sandbox/CursedXyster/SeedHelper/doc": {
   "rev": 487361,
   "file": "Module_Sandbox_CursedXyster_SeedHelper_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/compare": {
-  "rev": 495310,
-  "file": "Module_Sandbox_Jenny_on_Wiki_compare.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/compare/doc": {
-  "rev": 495311,
-  "file": "Module_Sandbox_Jenny_on_Wiki_compare_doc.wikitext"
- },
- "Module:Spirit/data": {
-  "rev": 495214,
-  "file": "Module_Spirit_data.wikitext"
- },
- "Module:Spirit": {
-  "rev": 495213,
-  "file": "Module_Spirit.wikitext"
- },
- "Module:Spirit/doc": {
-  "rev": 487334,
-  "file": "Module_Spirit_doc.wikitext"
- },
- "Module:Spirit/data/doc": {
-  "rev": 487335,
-  "file": "Module_Spirit_data_doc.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/cats2": {
-  "rev": 495308,
-  "file": "Module_Sandbox_Jenny_on_Wiki_cats2.wikitext"
- },
- "Module:Sandbox/Jenny on Wiki/cats2/doc": {
-  "rev": 495309,
-  "file": "Module_Sandbox_Jenny_on_Wiki_cats2_doc.wikitext"
  },
  "Module:Sandbox/CursedXyster/StageList": {
   "rev": 444333,
@@ -42211,9 +42043,101 @@
   "rev": 487362,
   "file": "Module_Sandbox_CursedXyster_Test_doc.wikitext"
  },
- "Module:TemplateStyles once": {
-  "rev": 519426,
-  "file": "Module_TemplateStyles_once.wikitext"
+ "Module:Sandbox/Godly Hydrax": {
+  "rev": 356502,
+  "file": "Module_Sandbox_Godly_Hydrax.wikitext"
+ },
+ "Module:Sandbox/Godly Hydrax/doc": {
+  "rev": 356473,
+  "file": "Module_Sandbox_Godly_Hydrax_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki": {
+  "rev": 516028,
+  "file": "Module_Sandbox_Jenny_on_Wiki.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/Annoy": {
+  "rev": 495302,
+  "file": "Module_Sandbox_Jenny_on_Wiki_Annoy.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/Annoy/doc": {
+  "rev": 495303,
+  "file": "Module_Sandbox_Jenny_on_Wiki_Annoy_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/RecursiveSubst": {
+  "rev": 495304,
+  "file": "Module_Sandbox_Jenny_on_Wiki_RecursiveSubst.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/RecursiveSubst/doc": {
+  "rev": 495305,
+  "file": "Module_Sandbox_Jenny_on_Wiki_RecursiveSubst_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/Storage": {
+  "rev": 495306,
+  "file": "Module_Sandbox_Jenny_on_Wiki_Storage.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/Storage/doc": {
+  "rev": 495307,
+  "file": "Module_Sandbox_Jenny_on_Wiki_Storage_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/cats2": {
+  "rev": 495308,
+  "file": "Module_Sandbox_Jenny_on_Wiki_cats2.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/cats2/doc": {
+  "rev": 495309,
+  "file": "Module_Sandbox_Jenny_on_Wiki_cats2_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/compare": {
+  "rev": 495310,
+  "file": "Module_Sandbox_Jenny_on_Wiki_compare.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/compare/doc": {
+  "rev": 495311,
+  "file": "Module_Sandbox_Jenny_on_Wiki_compare_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/data": {
+  "rev": 495312,
+  "file": "Module_Sandbox_Jenny_on_Wiki_data.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/data.json": {
+  "rev": 495313,
+  "file": "Module_Sandbox_Jenny_on_Wiki_data.json.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/data/doc": {
+  "rev": 495314,
+  "file": "Module_Sandbox_Jenny_on_Wiki_data_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/doc": {
+  "rev": 515946,
+  "file": "Module_Sandbox_Jenny_on_Wiki_doc.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/util": {
+  "rev": 495316,
+  "file": "Module_Sandbox_Jenny_on_Wiki_util.wikitext"
+ },
+ "Module:Sandbox/Jenny on Wiki/util/doc": {
+  "rev": 495317,
+  "file": "Module_Sandbox_Jenny_on_Wiki_util_doc.wikitext"
+ },
+ "Module:Sandbox/SweetDonut0": {
+  "rev": 503587,
+  "file": "Module_Sandbox_SweetDonut0.wikitext"
+ },
+ "Module:Sandbox/SweetDonut0/Catfood": {
+  "rev": 277347,
+  "file": "Module_Sandbox_SweetDonut0_Catfood.wikitext"
+ },
+ "Module:Sandbox/SweetDonut0/Catfood/doc": {
+  "rev": 59007,
+  "file": "Module_Sandbox_SweetDonut0_Catfood_doc.wikitext"
+ },
+ "Module:Sandbox/SweetDonut0/doc": {
+  "rev": 54470,
+  "file": "Module_Sandbox_SweetDonut0_doc.wikitext"
+ },
+ "Module:Sandbox/doc": {
+  "rev": 487320,
+  "file": "Module_Sandbox_doc.wikitext"
  },
  "Module:SiteStats": {
   "rev": 502730,
@@ -42223,45 +42147,81 @@
   "rev": 502726,
   "file": "Module_SiteStats_doc.wikitext"
  },
- "Module:ViewSource": {
-  "rev": 73822,
-  "file": "Module_ViewSource.wikitext"
+ "Module:SpecialBlank": {
+  "rev": 294332,
+  "file": "Module_SpecialBlank.wikitext"
  },
- "Module:Variant": {
-  "rev": 508325,
-  "file": "Module_Variant.wikitext"
+ "Module:SpecialBlank/doc": {
+  "rev": 487377,
+  "file": "Module_SpecialBlank_doc.wikitext"
  },
- "Module:Variant/doc": {
-  "rev": 487349,
-  "file": "Module_Variant_doc.wikitext"
+ "Module:Spirit": {
+  "rev": 495213,
+  "file": "Module_Spirit.wikitext"
  },
- "Module:Utility": {
-  "rev": 495221,
-  "file": "Module_Utility.wikitext"
+ "Module:Spirit/data": {
+  "rev": 495214,
+  "file": "Module_Spirit_data.wikitext"
  },
- "Module:Utility/doc": {
-  "rev": 487347,
-  "file": "Module_Utility_doc.wikitext"
+ "Module:Spirit/data/doc": {
+  "rev": 487335,
+  "file": "Module_Spirit_data_doc.wikitext"
  },
- "Module:Units (old)": {
-  "rev": 495218,
-  "file": "Module_Units_(old).wikitext"
+ "Module:Spirit/doc": {
+  "rev": 487334,
+  "file": "Module_Spirit_doc.wikitext"
  },
- "Module:Units (old)/doc": {
-  "rev": 487343,
-  "file": "Module_Units_(old)_doc.wikitext"
+ "Module:Stamps": {
+  "rev": 495215,
+  "file": "Module_Stamps.wikitext"
  },
- "Module:Upgrade Cost": {
-  "rev": 495220,
-  "file": "Module_Upgrade_Cost.wikitext"
+ "Module:Stamps.csv": {
+  "rev": 514896,
+  "file": "Module_Stamps.csv.wikitext"
  },
- "Module:Upgrade Cost/doc": {
-  "rev": 487346,
-  "file": "Module_Upgrade_Cost_doc.wikitext"
+ "Module:Stamps/data": {
+  "rev": 495216,
+  "file": "Module_Stamps_data.wikitext"
  },
- "Module:Units/cache": {
-  "rev": 451744,
-  "file": "Module_Units_cache.wikitext"
+ "Module:Stamps/data/doc": {
+  "rev": 487337,
+  "file": "Module_Stamps_data_doc.wikitext"
+ },
+ "Module:Stamps/doc": {
+  "rev": 487336,
+  "file": "Module_Stamps_doc.wikitext"
+ },
+ "Module:Stars": {
+  "rev": 431160,
+  "file": "Module_Stars.wikitext"
+ },
+ "Module:Stars/doc": {
+  "rev": 487338,
+  "file": "Module_Stars_doc.wikitext"
+ },
+ "Module:String": {
+  "rev": 495217,
+  "file": "Module_String.wikitext"
+ },
+ "Module:String/doc": {
+  "rev": 487339,
+  "file": "Module_String_doc.wikitext"
+ },
+ "Module:String/global": {
+  "rev": 395451,
+  "file": "Module_String_global.wikitext"
+ },
+ "Module:String/global/doc": {
+  "rev": 487340,
+  "file": "Module_String_global_doc.wikitext"
+ },
+ "Module:TemplateStyles once": {
+  "rev": 519426,
+  "file": "Module_TemplateStyles_once.wikitext"
+ },
+ "Module:TemplateStyles once/doc": {
+  "rev": 501662,
+  "file": "Module_TemplateStyles_once_doc.wikitext"
  },
  "Module:Tierlist": {
   "rev": 490568,
@@ -42271,61 +42231,21 @@
   "rev": 487341,
   "file": "Module_Tierlist_doc.wikitext"
  },
- "Module:Update": {
-  "rev": 495219,
-  "file": "Module_Update.wikitext"
+ "Module:Tobinary": {
+  "rev": 431155,
+  "file": "Module_Tobinary.wikitext"
  },
- "Module:Update/doc": {
-  "rev": 487345,
-  "file": "Module_Update_doc.wikitext"
- },
- "Module:Walkthrough": {
-  "rev": 495225,
-  "file": "Module_Walkthrough.wikitext"
- },
- "Module:Walkthrough/doc": {
-  "rev": 487353,
-  "file": "Module_Walkthrough_doc.wikitext"
- },
- "Module:User error": {
-  "rev": 73755,
-  "file": "Module_User_error.wikitext"
- },
- "Module:Yesno": {
-  "rev": 255949,
-  "file": "Module_Yesno.wikitext"
+ "Module:Tobinary/doc": {
+  "rev": 487342,
+  "file": "Module_Tobinary_doc.wikitext"
  },
  "Module:Unindent": {
   "rev": 73984,
   "file": "Module_Unindent.wikitext"
  },
- "Module:VideoGallery": {
-  "rev": 200198,
-  "file": "Module_VideoGallery.wikitext"
- },
- "Module:VideoGallery/doc": {
-  "rev": 487351,
-  "file": "Module_VideoGallery_doc.wikitext"
- },
  "Module:Unindent/doc": {
   "rev": 135623,
   "file": "Module_Unindent_doc.wikitext"
- },
- "Module:User error/doc": {
-  "rev": 135624,
-  "file": "Module_User_error_doc.wikitext"
- },
- "Module:Yesno/doc": {
-  "rev": 487354,
-  "file": "Module_Yesno_doc.wikitext"
- },
- "Module:Validation": {
-  "rev": 495222,
-  "file": "Module_Validation.wikitext"
- },
- "Module:Validation/doc": {
-  "rev": 487348,
-  "file": "Module_Validation_doc.wikitext"
  },
  "Module:UnitViewer": {
   "rev": 489234,
@@ -42335,25 +42255,9 @@
   "rev": 487092,
   "file": "Module_UnitViewer_doc.wikitext"
  },
- "Module:Variant/descs.csv": {
-  "rev": 395484,
-  "file": "Module_Variant_descs.csv.wikitext"
- },
- "Module:VariantList": {
-  "rev": 495224,
-  "file": "Module_VariantList.wikitext"
- },
- "Module:VariantList/doc": {
-  "rev": 487350,
-  "file": "Module_VariantList_doc.wikitext"
- },
- "Module:Tobinary": {
-  "rev": 431155,
-  "file": "Module_Tobinary.wikitext"
- },
- "Module:Tobinary/doc": {
-  "rev": 487342,
-  "file": "Module_Tobinary_doc.wikitext"
+ "Module:Units/cache": {
+  "rev": 451744,
+  "file": "Module_Units_cache.wikitext"
  },
  "Module:Units/invoke": {
   "rev": 441602,
@@ -42363,12 +42267,108 @@
   "rev": 487344,
   "file": "Module_Units_invoke_doc.wikitext"
  },
+ "Module:Units (old)": {
+  "rev": 495218,
+  "file": "Module_Units_(old).wikitext"
+ },
+ "Module:Units (old)/doc": {
+  "rev": 487343,
+  "file": "Module_Units_(old)_doc.wikitext"
+ },
+ "Module:Update": {
+  "rev": 495219,
+  "file": "Module_Update.wikitext"
+ },
+ "Module:Update/doc": {
+  "rev": 487345,
+  "file": "Module_Update_doc.wikitext"
+ },
+ "Module:Upgrade Cost": {
+  "rev": 495220,
+  "file": "Module_Upgrade_Cost.wikitext"
+ },
+ "Module:Upgrade Cost/doc": {
+  "rev": 487346,
+  "file": "Module_Upgrade_Cost_doc.wikitext"
+ },
+ "Module:User error": {
+  "rev": 73755,
+  "file": "Module_User_error.wikitext"
+ },
+ "Module:User error/doc": {
+  "rev": 135624,
+  "file": "Module_User_error_doc.wikitext"
+ },
+ "Module:Utility": {
+  "rev": 495221,
+  "file": "Module_Utility.wikitext"
+ },
+ "Module:Utility/doc": {
+  "rev": 487347,
+  "file": "Module_Utility_doc.wikitext"
+ },
+ "Module:Validation": {
+  "rev": 495222,
+  "file": "Module_Validation.wikitext"
+ },
+ "Module:Validation/doc": {
+  "rev": 487348,
+  "file": "Module_Validation_doc.wikitext"
+ },
+ "Module:Variant": {
+  "rev": 508325,
+  "file": "Module_Variant.wikitext"
+ },
+ "Module:Variant/descs.csv": {
+  "rev": 395484,
+  "file": "Module_Variant_descs.csv.wikitext"
+ },
+ "Module:Variant/doc": {
+  "rev": 487349,
+  "file": "Module_Variant_doc.wikitext"
+ },
+ "Module:VariantList": {
+  "rev": 495224,
+  "file": "Module_VariantList.wikitext"
+ },
+ "Module:VariantList/doc": {
+  "rev": 487350,
+  "file": "Module_VariantList_doc.wikitext"
+ },
+ "Module:VideoGallery": {
+  "rev": 200198,
+  "file": "Module_VideoGallery.wikitext"
+ },
+ "Module:VideoGallery/doc": {
+  "rev": 487351,
+  "file": "Module_VideoGallery_doc.wikitext"
+ },
+ "Module:ViewSource": {
+  "rev": 73822,
+  "file": "Module_ViewSource.wikitext"
+ },
  "Module:ViewSource/doc": {
   "rev": 487455,
   "file": "Module_ViewSource_doc.wikitext"
  },
- "Module:TemplateStyles once/doc": {
-  "rev": 501662,
-  "file": "Module_TemplateStyles_once_doc.wikitext"
+ "Module:Walkthrough": {
+  "rev": 495225,
+  "file": "Module_Walkthrough.wikitext"
+ },
+ "Module:Walkthrough/doc": {
+  "rev": 487353,
+  "file": "Module_Walkthrough_doc.wikitext"
+ },
+ "Module:Yesno": {
+  "rev": 255949,
+  "file": "Module_Yesno.wikitext"
+ },
+ "Module:Yesno/doc": {
+  "rev": 487354,
+  "file": "Module_Yesno_doc.wikitext"
+ },
+ "Crimson Vengeance": {
+  "rev": 519478,
+  "file": "Crimson_Vengeance.wikitext"
  }
 }
