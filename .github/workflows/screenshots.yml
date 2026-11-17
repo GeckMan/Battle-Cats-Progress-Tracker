@@ -1,0 +1,61 @@
+name: Screenshots
+
+# Captures the live site (phone + desktop, default + NERV theme) with a headless
+# browser logged in as a dedicated preview account, and force-pushes the images to
+# the `screenshots` branch so the Cowork sandbox can look at them. Also a smoke
+# test: console errors / failed requests per page go to report.json + run summary.
+# Runs after every successful production deploy, or on demand.
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      pages:
+        description: "Optional comma list to limit pages (e.g. /units,/settings,panel)"
+        required: false
+        default: ""
+
+permissions:
+  contents: write
+
+concurrency:
+  group: screenshots
+  cancel-in-progress: true
+
+jobs:
+  shoot:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --no-audit --no-fund playwright@1 tsx
+      - run: npx playwright install --with-deps chromium
+      - name: Wait for the new deployment to be live
+        if: ${{ github.event_name == 'deployment_status' }}
+        run: sleep 30
+      - name: Take screenshots
+        env:
+          BASE_URL: https://battlecatsprogress.app
+          PREVIEW_USER: ${{ secrets.PREVIEW_USER }}
+          PREVIEW_PASS: ${{ secrets.PREVIEW_PASS }}
+          PAGES: ${{ github.event.inputs.pages }}
+          OUT_DIR: shots/screenshots
+        run: npx tsx ./scripts/take-screenshots.ts
+      - name: Publish to the screenshots branch (latest only, no history)
+        run: |
+          cd shots
+          cat > vercel.json <<'JSON'
+          {
+            "git": { "deploymentEnabled": { "screenshots": false } },
+            "ignoreCommand": "exit 0"
+          }
+          JSON
+          git init -q
+          git checkout -q --orphan screenshots
+          git add -A
+          git -c user.name="github-actions[bot]" -c user.email="github-actions[bot]@users.noreply.github.com" commit -q -m "chore: screenshots of ${{ github.sha }} [skip ci]"
+          git push -q -f "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" screenshots
