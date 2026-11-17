@@ -5,11 +5,14 @@ name: Mirror wiki
 # requests on 2026-11-17 (Phorge task closed by Jenny_on_Wiki; probe run showed
 # HTTP 200 from GitHub runners), so this no longer needs a home PC.
 # Incremental: only changed pages are re-downloaded after the first run.
-# Runs Sunday night so fresh data is there before Monday's 06:00 UTC sync.
 
 on:
   schedule:
-    - cron: '0 22 * * 0'
+    # Every other day (odd days of the month). Incremental via the wiki's
+    # recent-changes feed (a handful of requests); a full scan runs monthly as
+    # a backstop (scripts/pull-wiki-local.ts, FULL_EVERY_DAYS). A successful run
+    # starts "Sync BCData" automatically (see that workflow's workflow_run).
+    - cron: '0 22 1-31/2 * *'
   workflow_dispatch:
 
 permissions:
@@ -35,4 +38,5 @@ jobs:
           WORK_DIR: wiki-data-local
           MIRAHEZE_BOT_USER: ${{ secrets.MIRAHEZE_BOT_USER }}
           MIRAHEZE_BOT_PASS: ${{ secrets.MIRAHEZE_BOT_PASS }}
+          # set FULL: '1' here (or run locally with FULL=1) to force a full rescan
         run: npx tsx ./scripts/pull-wiki-local.ts

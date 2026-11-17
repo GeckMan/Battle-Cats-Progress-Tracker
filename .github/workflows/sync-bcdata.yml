@@ -1,6 +1,12 @@
 name: Sync BCData
 
 on:
+  # Runs right after every successful "Mirror wiki" run (every other day), so
+  # it always works from fresh wiki data; the Monday cron is a backstop in case
+  # a mirror run fails or is skipped.
+  workflow_run:
+    workflows: ["Mirror wiki"]
+    types: [completed]
   schedule:
     - cron: '0 6 * * 1'
   workflow_dispatch:
@@ -10,6 +16,7 @@ permissions:
 
 jobs:
   sync:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:

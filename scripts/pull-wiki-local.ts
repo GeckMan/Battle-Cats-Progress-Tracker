@@ -14,6 +14,7 @@
  *   WIKI_NAMESPACES  pipe-separated namespace ids (default "0|10|14|828": articles, templates, categories, modules)
  *   DELAY_MS         pause between API requests (default 1000)
  *   NO_PUSH=1        write files only, don't commit/push
+ *   FULL=1           force a full scan instead of the incremental recent-changes run
  *   WORK_DIR         local mirror checkout (default ./wiki-data-local, git-ignored by living outside src)
  *   REPO_URL         default https://github.com/GeckMan/Battle-Cats-Progress-Tracker.git
  */
@@ -27,6 +28,7 @@ const DELAY_MS = Number(process.env.DELAY_MS ?? 1000);
 const WORK_DIR = process.env.WORK_DIR ?? "wiki-data-local";
 const REPO_URL = process.env.REPO_URL ?? "https://github.com/GeckMan/Battle-Cats-Progress-Tracker.git";
 const BATCH = 50;
+const FULL_EVERY_DAYS = Number(process.env.FULL_EVERY_DAYS ?? 30);
 
 const sleep = (ms: number) => new Promise((r) => setTimeout(r, ms));
 const git = (...args: string[]) => execFileSync("git", args, { cwd: WORK_DIR, stdio: ["ignore", "pipe", "inherit"] }).toString().trim();
@@ -116,51 +118,111 @@ async function main() {
   const indexPath = join(dir, "_index.json");
   const oldIndex: Record<string, { rev: number; file: string }> = existsSync(indexPath) ? JSON.parse(readFileSync(indexPath, "utf8")) : {};
 
-  // --- enumerate pages ---
-  let titles: string[] = [];
-  for (const ns of NAMESPACES) {
-    const t = await listTitles(ns);
-    console.log(`namespace ${ns}: ${t.length} pages`);
-    titles.push(...t);
-  }
+  // --- full scan vs incremental (recent changes) ---
+  // Incremental by default: ask the wiki which pages changed since the last run
+  // (list=recentchanges, typically 1-3 requests) and download only those, instead of
+  // checking the revision id of all ~10.6k pages (~210 requests). A full scan still
+  // runs as a backstop: on the first run, with FULL=1, every FULL_EVERY_DAYS, or if
+  // the last run is old enough that recent-changes history might not reach back.
+  const metaPath = join(dir, "_meta.json");
+  const oldMeta: any = existsSync(metaPath) ? JSON.parse(readFileSync(metaPath, "utf8")) : {};
+  const runStart = new Date();
+  const DAY = 24 * 3600 * 1000;
+  const cursor = oldMeta.rcCursor ? new Date(oldMeta.rcCursor) : null;
+  const lastFull = oldMeta.lastFullAt ? new Date(oldMeta.lastFullAt) : null;
+  const full =
+    !!process.env.FULL || !cursor || !lastFull || Object.keys(oldIndex).length === 0 ||
+    runStart.getTime() - lastFull.getTime() > FULL_EVERY_DAYS * DAY ||
+    runStart.getTime() - cursor.getTime() > 25 * DAY;
+  console.log(full ? "Mode: FULL scan (backstop)" : `Mode: incremental — changes since ${cursor!.toISOString()}`);
 
-  // --- current revision ids (cheap, no content), then fetch content for changed pages only ---
-  const revs = new Map<string, number>();
-  for (let i = 0; i < titles.length; i += BATCH) {
-    const batch = titles.slice(i, i + BATCH);
-    const j = await api({ action: "query", prop: "revisions", rvprop: "ids", titles: batch.join("|") });
-    for (const p of j.query.pages) if (p.revisions?.[0]) revs.set(p.title, p.revisions[0].revid);
-    if ((i / BATCH) % 10 === 0) console.log(`  revision ids: ${Math.min(i + BATCH, titles.length)}/${titles.length}`);
-  }
-  const changed = titles.filter((t) => revs.has(t) && oldIndex[t]?.rev !== revs.get(t));
-  console.log(`${changed.length} new/changed pages to download (of ${titles.length})`);
+  let index: Record<string, { rev: number; file: string }> = {};
+  let changedCount = 0;
 
-  const index: Record<string, { rev: number; file: string }> = {};
-  for (const t of titles) if (revs.has(t) && oldIndex[t] && oldIndex[t].rev === revs.get(t)) index[t] = oldIndex[t];
-
-  for (let i = 0; i < changed.length; i += BATCH) {
-    const batch = changed.slice(i, i + BATCH);
-    const j = await api({ action: "query", prop: "revisions", rvprop: "ids|content", rvslots: "main", titles: batch.join("|") });
-    for (const p of j.query.pages) {
-      const r = p.revisions?.[0];
-      const text = r?.slots?.main?.content;
-      if (typeof text !== "string") continue;
-      const file = `${safeName(p.title)}.wikitext`;
-      writeFileSync(join(pagesDir, file), text);
-      index[p.title] = { rev: r.revid, file };
+  if (full) {
+    let titles: string[] = [];
+    for (const ns of NAMESPACES) {
+      const t = await listTitles(ns);
+      console.log(`namespace ${ns}: ${t.length} pages`);
+      titles.push(...t);
     }
-    console.log(`  downloaded ${Math.min(i + BATCH, changed.length)}/${changed.length}`);
-  }
+    const revs = new Map<string, number>();
+    for (let i = 0; i < titles.length; i += BATCH) {
+      const batch = titles.slice(i, i + BATCH);
+      const j = await api({ action: "query", prop: "revisions", rvprop: "ids", titles: batch.join("|") });
+      for (const p of j.query.pages) if (p.revisions?.[0]) revs.set(p.title, p.revisions[0].revid);
+      if ((i / BATCH) % 10 === 0) console.log(`  revision ids: ${Math.min(i + BATCH, titles.length)}/${titles.length}`);
+    }
+    const changed = titles.filter((t) => revs.has(t) && oldIndex[t]?.rev !== revs.get(t));
+    console.log(`${changed.length} new/changed pages to download (of ${titles.length})`);
+    for (const t of titles) if (revs.has(t) && oldIndex[t] && oldIndex[t].rev === revs.get(t)) index[t] = oldIndex[t];
+    for (let i = 0; i < changed.length; i += BATCH) {
+      const batch = changed.slice(i, i + BATCH);
+      const j = await api({ action: "query", prop: "revisions", rvprop: "ids|content", rvslots: "main", titles: batch.join("|") });
+      for (const p of j.query.pages) {
+        const r = p.revisions?.[0];
+        const text = r?.slots?.main?.content;
+        if (typeof text !== "string") continue;
+        const file = `${safeName(p.title)}.wikitext`;
+        writeFileSync(join(pagesDir, file), text);
+        index[p.title] = { rev: r.revid, file };
+      }
+      console.log(`  downloaded ${Math.min(i + BATCH, changed.length)}/${changed.length}`);
+    }
+    changedCount = changed.length;
+    // drop files for pages that no longer exist
+    const keep = new Set(Object.values(index).map((v) => v.file));
+    for (const f of readdirSync(pagesDir)) if (!keep.has(f)) rmSync(join(pagesDir, f));
+  } else {
+    // 10-minute overlap so an edit saved right as the last run started isn't missed.
+    const since = new Date(cursor!.getTime() - 10 * 60 * 1000);
+    const touched = new Set<string>();
+    let cont: Record<string, string> = {};
+    do {
+      const j = await api({
+        action: "query", list: "recentchanges", rcstart: runStart.toISOString(), rcend: since.toISOString(),
+        rcnamespace: NAMESPACES.join("|"), rcprop: "title|loginfo", rctype: "edit|new|log", rclimit: "500", ...cont,
+      });
+      for (const rc of j.query.recentchanges) {
+        touched.add(rc.title); // edits, new pages, deletions, moves (old title)
+        const target = rc.logparams?.target_title;
+        if (target) touched.add(target); // moves (new title)
+      }
+      cont = j.continue ?? {};
+    } while (Object.keys(cont).length);
+    console.log(`${touched.size} page(s) changed since the last run`);
 
-  // --- drop files for pages that no longer exist ---
-  const keep = new Set(Object.values(index).map((v) => v.file));
-  for (const f of readdirSync(pagesDir)) if (!keep.has(f)) rmSync(join(pagesDir, f));
+    index = { ...oldIndex };
+    const list = [...touched];
+    const nsSet = new Set(NAMESPACES.map(Number));
+    for (let i = 0; i < list.length; i += BATCH) {
+      const batch = list.slice(i, i + BATCH);
+      const j = await api({ action: "query", prop: "info|revisions", rvprop: "ids|content", rvslots: "main", titles: batch.join("|") });
+      for (const p of j.query.pages) {
+        const gone = p.missing || p.invalid || p.redirect || !nsSet.has(p.ns);
+        if (gone) {
+          const old = index[p.title];
+          if (old) { rmSync(join(pagesDir, old.file), { force: true }); delete index[p.title]; }
+          continue;
+        }
+        const r = p.revisions?.[0];
+        const text = r?.slots?.main?.content;
+        if (typeof text !== "string") continue;
+        const file = `${safeName(p.title)}.wikitext`;
+        writeFileSync(join(pagesDir, file), text);
+        index[p.title] = { rev: r.revid, file };
+      }
+    }
+    changedCount = touched.size;
+  }
 
   // --- category listings the sync needs ---
   const jp = await categoryMembers("Category:Japanese Exclusive Content");
   writeFileSync(join(dir, "japanese-exclusive.json"), JSON.stringify(jp.sort(), null, 2));
 
   try {
+    // redirects only change when pages do; skip the ~10 requests on a quiet incremental run
+    if (!full && changedCount === 0 && existsSync(join(dir, "redirects.json"))) throw new Error("no page changes this run");
     const redirects = await fetchRedirects();
     writeFileSync(join(dir, "redirects.json"), JSON.stringify(redirects, null, 1));
     console.log(`${Object.keys(redirects).length} redirects mirrored`);
@@ -169,7 +231,15 @@ async function main() {
   }
 
   writeFileSync(indexPath, JSON.stringify(index, null, 1));
-  writeFileSync(join(dir, "_meta.json"), JSON.stringify({ source: "pull-wiki-local.ts", mirroredAt: new Date().toISOString(), pages: Object.keys(index).length, changedThisRun: changed.length }, null, 2));
+  writeFileSync(join(dir, "_meta.json"), JSON.stringify({
+      source: "pull-wiki-local.ts",
+      mirroredAt: new Date().toISOString(),
+      mode: full ? "full" : "incremental",
+      rcCursor: runStart.toISOString(),
+      lastFullAt: full ? runStart.toISOString() : oldMeta.lastFullAt,
+      pages: Object.keys(index).length,
+      changedThisRun: changedCount,
+    }, null, 2));
   writeFileSync(
     join(WORK_DIR, "vercel.json"),
     JSON.stringify({ git: { deploymentEnabled: { "wiki-data": false } }, ignoreCommand: "exit 0" }, null, 2) + "\n"
@@ -179,7 +249,7 @@ async function main() {
 
   git("add", "-A");
   if (!git("status", "--porcelain")) return console.log("No changes since last mirror.");
-  git("-c", "user.name=wiki-mirror", "-c", "user.email=noreply@battlecatsprogress.app", "commit", "-q", "-m", `chore: mirror wiki (${changed.length} changed) [skip ci]`);
+  git("-c", "user.name=wiki-mirror", "-c", "user.email=noreply@battlecatsprogress.app", "commit", "-q", "-m", `chore: mirror wiki (${full ? "full" : "incremental"}, ${changedCount} changed) [skip ci]`);
   git("push", "origin", "wiki-data");
   console.log("Pushed to wiki-data.");
 }
