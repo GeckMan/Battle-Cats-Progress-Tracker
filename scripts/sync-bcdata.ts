@@ -182,6 +182,28 @@ async function main() {
     // Step 2: Find latest EN version
     const latestVersion = findLatestVersion();
     console.log(`Latest EN version: ${latestVersion}`);
+    // BCData is community-maintained and can lag the live game (2026-11:
+    // the app sat on 15.6.x while the game was already on 15.7+, and brand-new
+    // units/banners such as River City Clash's Dark Team weren't in the data).
+    // Surface that instead of leaving it invisible: show the newest EN
+    // versions BCData actually has and how old its latest commit is. Info
+    // only (not counted as a review warning) -- there's nothing to fix on our
+    // side except wait or classify new content by hand.
+    try {
+      const enDir = path.join(CLONE_DIR, "game_data", REGION);
+      if (existsSync(enDir)) {
+        const vs = readdirSync(enDir, { withFileTypes: true })
+          .filter((d) => d.isDirectory() && /^\d+\.\d+\.\d+$/.test(d.name))
+          .map((d) => d.name)
+          .sort(compareVersions);
+        console.log(`  Newest EN versions in BCData: ${vs.slice(-4).join(", ")}`);
+      }
+      const last = execSync("git log -1 --format=%cI", { cwd: CLONE_DIR, stdio: "pipe" }).toString().trim();
+      const ageDays = Math.floor((Date.now() - new Date(last).getTime()) / 86400000);
+      console.log(`  ℹ BCData's latest commit is ${ageDays} day(s) old (${last}). If the live game has updated since, new units/banners can't be detected until BCData catches up — classify them by hand.`);
+    } catch {
+      /* informational only */
+    }
 
     // Record the synced version so the Units page can show a real,
     // self-updating "current to game version X" note instead of a
@@ -247,6 +269,7 @@ async function main() {
     await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
     await backfillBannersFromSetName(prisma);
+    await enforceBannerExclusions(prisma);
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);
     await syncNeoBestOfTheBestBanner(prisma);
     await checkSeasonalFestMembership(prisma);
@@ -1762,6 +1785,46 @@ const SUPERFEST_INCLUDED_SETNAMES = new Set<string>([
   "Epic Fest",
 ]);
 
+// Units that must NEVER carry a given banner/setName no matter what the
+// BCData-derived steps above produce -- hand-confirmed corrections that a
+// one-off migration alone can't make stick if some sync step re-derives the
+// wrong tag (the sync's tag steps only ever ADD, and the origin of a bad tag
+// isn't always visible from here). Each entry names the evidence.
+//   - #834 Green / #835 Pink Nyanko Ranger carried "9th Anniversary Special
+//     Capsules". The wiki's Cat Release Order says they're 13th Anniversary
+//     rewards (Cat Guide / Event Poster), not the 9th anniversary gacha
+//     (reported by shroomp 2026-10-28; confirmed by Ryan 2026-11-17).
+const BANNER_EXCLUSIONS: Record<number, string[]> = {
+  834: ["9th Anniversary Special Capsules"],
+  835: ["9th Anniversary Special Capsules"],
+};
+
+async function enforceBannerExclusions(prisma: PrismaClient) {
+  const nums = Object.keys(BANNER_EXCLUSIONS).map(Number);
+  const rows = await (prisma as any).unit.findMany({
+    where: { unitNumber: { in: nums } },
+    select: { unitNumber: true, name: true, setName: true, banners: true },
+  });
+  let fixed = 0;
+  for (const u of rows) {
+    const bad: string[] = BANNER_EXCLUSIONS[u.unitNumber];
+    const banners: string[] = u.banners ?? [];
+    const hasBadBanner = banners.some((b) => bad.includes(b));
+    const hasBadSet = u.setName != null && bad.includes(u.setName);
+    if (!hasBadBanner && !hasBadSet) continue;
+    await (prisma as any).unit.update({
+      where: { unitNumber: u.unitNumber },
+      data: {
+        banners: banners.filter((b) => !bad.includes(b)),
+        ...(hasBadSet ? { setName: null } : {}),
+      },
+    });
+    fixed++;
+    console.log(`  ✓ Removed excluded banner/set from ${u.name} (#${u.unitNumber}): ${bad.join(", ")} — a sync step re-derived it; look for the source if this repeats`);
+  }
+  if (fixed === 0) console.log("  Banner exclusions: OK (no excluded tags present)");
+}
+
 async function syncSetMembershipBanner(
   prisma: PrismaClient,
   bannerName: string,
@@ -1953,8 +2016,11 @@ const NEO_BEST_OF_THE_BEST_UNIT_NAMES = new Set<string>([
 ]);
 
 async function syncNeoBestOfTheBestBanner(prisma: PrismaClient) {
-  // Base SR/Rare pool — same "Rare Cat Capsule" units as Superfest.
-  await syncSetMembershipBanner(prisma, "NEO Best of the Best", new Set(["Rare Cat Capsule"]));
+  // NOTE (2026-11-17): this used to also tag the whole base "Rare Cat Capsule"
+  // SR/Rare pool as NEO Best of the Best. Ryan's rule (matches every other
+  // banner here): Super Rares/Rares that aren't exclusive to a banner don't
+  // belong in its filter, so only the specific named units below are tagged.
+  // Existing tags were removed by migration 20261117000002; don't re-add.
 
   // Named Uber/Super Rare units, matched by base-form name.
   const candidates = await (prisma as any).unit.findMany({
