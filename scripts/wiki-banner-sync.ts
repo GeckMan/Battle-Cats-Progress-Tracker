@@ -20,7 +20,7 @@
  */
 import { existsSync, readdirSync, readFileSync } from "fs";
 import { join } from "path";
-import { norm } from "./wiki-unit-sync.ts";
+import { norm, readUnitPages } from "./wiki-unit-sync.ts";
 
 const MAX_ADDS = 80;
 const BASE_POOL = "Rare Cat Capsule";
@@ -110,5 +110,66 @@ export async function syncGachaBannersFromWikiMirror(prisma: any, mirrorDir: str
   }
   for (const d of detail.slice(0, 60)) console.log(`  ✓ Banner added from wiki roster: ${d}`);
   console.log(`  Wiki-driven banner membership: ${pending.size} unit(s) updated using ${pagesUsed} gacha page(s)`);
+  return pending.size;
+}
+
+/* ── Pass 2: a unit's own page and a gacha's roster agree ──────────────────────────────
+ * Ryan's rule (2026-11-17): follow the wiki where it agrees with itself in 2+ places. If a
+ * unit's page links a gacha ("[[X (Event Gacha)]]", "[[X (Gacha Event)]]", "...Capsules")
+ * AND that gacha's page lists the unit in its exclusive roster, the unit gets that banner
+ * tag. Catches small banners pass 1 can't learn a label for (e.g. Nyanko Rangers: 1 tagged
+ * unit, while Coin Cat and Mr. Ninja's own pages both say they drop from it).
+ * Label: our existing label with the same core name, else a wiki-name alias, else the wiki
+ * event name. Additive only; dedicated-rule banners and base-pool units skipped; capped.
+ */
+const WIKI_LABEL_ALIASES: Record<string, string> = {
+  "The Almighties The Majestic Zeus": "The Almighties",
+  "Dynasty Fest": "RoyalFest",
+};
+const coreLabel = (x: string) =>
+  norm(x.replace(/\((Event Gacha|Gacha Event|Removed Gacha Event)\)/gi, "").replace(/\b(Capsules?|Gacha|Event|The)\b/gi, ""));
+
+export async function syncBannersFromPageRosterAgreement(prisma: any, mirrorDir: string | undefined): Promise<number> {
+  const pagesDir = mirrorDir ? join(mirrorDir, "pages") : "";
+  if (!mirrorDir || !existsSync(pagesDir)) return 0;
+  const units: any[] = await prisma.unit.findMany({
+    select: { unitNumber: true, name: true, category: true, setName: true, banners: true, excludeFromCollection: true },
+  });
+  const labels = new Set<string>(units.flatMap((u) => u.banners ?? []));
+  const labelByCore = new Map<string, string>([...labels].map((l) => [coreLabel(l), l]));
+  const roster = new Map<string, Set<string>>();
+  for (const f of readdirSync(pagesDir)) {
+    if (!/\((Gacha_Event|Event_Gacha)\)|Capsules/.test(f) || f.endsWith("_Gallery.wikitext")) continue;
+    roster.set(f.replace(/\.wikitext$/, "").replace(/_/g, " "), new Set(exclusiveNames(readFileSync(join(pagesDir, f), "utf8")).map(norm)));
+  }
+  const byNum = new Map<number, any>(units.map((u) => [u.unitNumber, u]));
+  const pending = new Map<number, Set<string>>();
+  const log: string[] = [];
+  for (const p of readUnitPages(pagesDir)) {
+    if (p.regional) continue;
+    const u = byNum.get(p.id);
+    if (!u || u.excludeFromCollection || norm(u.name) !== norm(p.names[0])) continue;
+    if ((u.category === "RARE" || u.category === "SUPER_RARE") && u.setName === BASE_POOL) continue;
+    const links = [...p.head.matchAll(/\[\[([^\]|#]+?)(?:\|[^\]]*)?\]\]/g)].map((m) => m[1].trim()).filter((l) => /\((Event Gacha|Gacha Event)\)|Capsules/i.test(l));
+    for (const l of links) {
+      if (!roster.get(l)?.has(norm(u.name))) continue;
+      const wikiName = l.replace(/\s*\((Event Gacha|Gacha Event)\)\s*$/i, "");
+      const label = WIKI_LABEL_ALIASES[wikiName] ?? labelByCore.get(coreLabel(l)) ?? wikiName;
+      if (DEDICATED_BANNERS.has(label) || (u.banners ?? []).includes(label)) continue;
+      if (!pending.has(u.unitNumber)) pending.set(u.unitNumber, new Set());
+      pending.get(u.unitNumber)!.add(label);
+      log.push(`#${u.unitNumber} ${u.name} + "${label}" (its page links [[${l}]], which lists it)`);
+    }
+  }
+  if (pending.size > MAX_ADDS) {
+    console.log(`  ⚠ ${pending.size} page+roster banner additions (> ${MAX_ADDS}) — applying none`);
+    return 0;
+  }
+  for (const [n, add] of pending) {
+    const u = byNum.get(n);
+    await prisma.unit.update({ where: { unitNumber: n }, data: { banners: [...new Set([...(u.banners ?? []), ...add])] } });
+  }
+  for (const l of log) console.log(`  ✓ Banner added (page + roster agree): ${l}`);
+  console.log(`  Page+roster banner agreement: ${pending.size} unit(s) updated`);
   return pending.size;
 }

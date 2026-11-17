@@ -51,7 +51,9 @@ import "dotenv/config";
 import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
 import { syncUnitsFromWikiMirror, hideUnreleasedEventUnits } from "./wiki-unit-sync.ts";
-import { syncGachaBannersFromWikiMirror } from "./wiki-banner-sync.ts";
+import { syncGachaBannersFromWikiMirror, syncBannersFromPageRosterAgreement } from "./wiki-banner-sync.ts";
+import { syncFormNamesFromWikiMirror } from "./wiki-form-sync.ts";
+import { wikiReleasedZeroLegends } from "./wiki-legend-sync.ts";
 import { syncSourcesFromReleaseOrderMirror, syncSetNamesFromWikiMirror } from "./wiki-release-order-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
@@ -243,6 +245,11 @@ async function main() {
     // is already released in EN but BCData doesn't have yet (see the header of
     // wiki-unit-sync.ts). Runs right after syncUnits so every step below
     // (collab flags, banners, coverage checks) sees these units too.
+    // Form names/count: BCData lags new True/Ultra Forms; re-applied every run
+    // because syncUnits() above rewrites names from BCData.
+    console.log("\n── Matching form names to the wiki ──");
+    await syncFormNamesFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR, new Set(Object.keys(UNIT_NAME_OVERRIDES).map(Number)));
+
     console.log("\n── Adding wiki-confirmed EN units BCData is missing ──");
     const wikiAdds = await syncUnitsFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
     reviewWarningCount += wikiAdds.warnings;
@@ -289,6 +296,7 @@ async function main() {
     // deterministic rules below still have the last word.
     console.log("\n── Wiki-driven banner membership ──");
     await syncGachaBannersFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
+    await syncBannersFromPageRosterAgreement(prisma, process.env.WIKI_MIRROR_DIR);
     await backfillBannersFromSetName(prisma);
     await enforceBannerExclusions(prisma);
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);
@@ -4341,6 +4349,17 @@ async function syncLegendStages(prisma: PrismaClient, dataLocal: string, resLoca
   console.log(`    Found ${zlFound}/${ZL_KNOWN_NAMES.length} in Map_Name.csv`);
   if (zlMissing.length > 0) {
     console.warn(`    Missing ${zlMissing.length} ZL names: ${zlMissing.join(", ")}`);
+  }
+
+  // Sub-chapters past the known list that the wiki mirror shows as released in EN
+  // (BCData lags new versions — see wiki-legend-sync.ts). Same shape as known ones.
+  for (const z of wikiReleasedZeroLegends(process.env.WIKI_MIRROR_DIR)) {
+    if (z.n <= ZL_KNOWN_NAMES.length || zlNameSet.has(z.name)) continue;
+    if (allNames.includes(z.name)) continue; // BCData has it now; the forward scan/known list handles it
+    subchapters.push({ sortOrder: z.n - 1, name: z.name, sagaName: "Zero Legends", maxCrowns: getZlMaxCrowns(z.n, z.name, wikiCrownMap) });
+    zlNameSet.add(z.name);
+    zlFound++;
+    console.log(`    ✓ Zero Legends ${z.n} "${z.name}" added from the wiki (released in EN; BCData doesn't have it yet)`);
   }
 
   if (zlFound > 0) sagaNames.push("Zero Legends");
