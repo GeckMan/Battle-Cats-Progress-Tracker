@@ -64,7 +64,7 @@ async function findDump(): Promise<Candidate | null> {
       encodeURIComponent("battlecats AND (miraheze OR wiki)") +
       "&fl%5B%5D=identifier&rows=50&output=json"
   );
-  for (const d of search?.response?.docs ?? []) if (/battlecats/i.test(d.identifier)) ids.add(d.identifier);
+  for (const d of search?.response?.docs ?? []) if (/battlecats/i.test(d.identifier) && /miraheze/i.test(d.identifier)) ids.add(d.identifier); // other wikis (Fandom, wikihouse) are NOT this wiki
   note(`candidate archive.org items: ${[...ids].join(", ")}`);
 
   const cands: Candidate[] = [];

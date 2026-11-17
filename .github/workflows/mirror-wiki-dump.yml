@@ -6,8 +6,8 @@ name: Mirror wiki dump
 # (same pattern as bug-digests: never moves main, never triggers a deploy).
 
 on:
-  schedule:
-    - cron: '0 3 5 * *'   # monthly, after Miraheze's dump has had time to land
+  # Monthly schedule (cron '0 3 5 * *') is OFF until a Miraheze dump of this
+  # wiki is confirmed to exist on archive.org -- the 2026-11-17 test run found none.
   workflow_dispatch:
 
 permissions:
