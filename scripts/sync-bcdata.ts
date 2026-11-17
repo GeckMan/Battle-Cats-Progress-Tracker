@@ -49,6 +49,7 @@
 
 import "dotenv/config";
 import { execSync } from "child_process";
+import { wikiFetch } from "./wiki-access.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -2220,16 +2221,14 @@ function normalizeWikiText(s: string): string {
 // alone may not be enough to get past a Cloudflare-level IP/fingerprint
 // block, but it's the correct, good-faith fix on our end regardless of
 // whether it fully resolves the 403s.
-const WIKI_USER_AGENT =
-  "BattleCatsProgressTracker/1.0 (+https://battlecatsprogress.app; contact via Discord https://discord.gg/3zsm3he8qQ)";
+// WIKI_USER_AGENT and the optional Miraheze bot-account login now live in
+// ./wiki-access.ts (wikiFetch) so every wiki request shares one session.
 
 async function fetchWikiPageHtml(page: string): Promise<string> {
   const url =
     "https://battlecats.miraheze.org/w/api.php?action=parse&format=json&prop=text&redirects=1&page=" +
     encodeURIComponent(page);
-  const res = await fetch(url, {
-    headers: { "User-Agent": WIKI_USER_AGENT, Accept: "application/json" },
-  });
+  const res = await wikiFetch(url);
   if (!res.ok) throw new Error(`HTTP ${res.status} from parse API`);
   const json = (await res.json()) as any;
   if (json?.error) throw new Error(`parse API error: ${json.error.info ?? json.error.code}`);
@@ -2257,9 +2256,7 @@ async function fetchCategoryMembers(category: string): Promise<string[]> {
     url.searchParams.set("cmlimit", "500");
     url.searchParams.set("format", "json");
     if (cmcontinue) url.searchParams.set("cmcontinue", cmcontinue);
-    const res = await fetch(url.toString(), {
-      headers: { "User-Agent": WIKI_USER_AGENT, Accept: "application/json" },
-    });
+    const res = await wikiFetch(url.toString());
     if (!res.ok) throw new Error(`HTTP ${res.status} from categorymembers API`);
     const json = (await res.json()) as any;
     if (json?.error) throw new Error(`categorymembers API error: ${json.error.info ?? json.error.code}`);

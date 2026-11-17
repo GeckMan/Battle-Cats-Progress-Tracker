@@ -16,9 +16,7 @@
  *   2. miraheze-bot    only if MIRAHEZE_BOT_USER / MIRAHEZE_BOT_PASS are set:
  *                      authenticated API access with a Special:BotPasswords
  *                      credential (Miraheze's documented route for bots)
- *   3. fandom-*        the original Battle Cats wiki on Fandom (different
- *                      host/operator); may carry the same Release Order data
- *   4. archive-*       Miraheze uploads XML dumps of public wikis to
+ *   3. archive-*       Miraheze uploads XML dumps of public wikis to
  *                      archive.org; check one exists for this wiki
  *
  * Usage: npx tsx ./scripts/probe-wiki-access.ts   (see probe-wiki-access.yml)
@@ -84,10 +82,6 @@ async function main() {
   } else {
     rows.push({ probe: "miraheze-bot", status: "SKIP", detail: "MIRAHEZE_BOT_USER / MIRAHEZE_BOT_PASS not set" });
   }
-
-  const F = "https://battle-cats.fandom.com";
-  await probe("fandom-siteinfo", `${F}/api.php?action=query&meta=siteinfo&format=json`);
-  await probe("fandom-release-order", `${F}/api.php?action=parse&page=Cat_Release_Order&prop=sections&format=json`);
 
   await probe(
     "archive-search",

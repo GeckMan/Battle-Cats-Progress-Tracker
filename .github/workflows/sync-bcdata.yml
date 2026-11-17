@@ -34,6 +34,10 @@ jobs:
         env:
           DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          # Optional Miraheze bot account (Special:BotPasswords) — see
+          # scripts/wiki-access.ts. Unset/empty = anonymous requests as before.
+          MIRAHEZE_BOT_USER: ${{ secrets.MIRAHEZE_BOT_USER }}
+          MIRAHEZE_BOT_PASS: ${{ secrets.MIRAHEZE_BOT_PASS }}
         run: npx tsx ./scripts/sync-bcdata.ts
       - name: Fetch any missing medal artwork from the wiki
         env:
