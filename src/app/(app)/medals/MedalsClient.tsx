@@ -197,6 +197,7 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
 
   const [data, setData] = useState(rows);
   const [syncing, setSyncing] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [reverseSyncing, setReverseSyncing] = useState(false);
 
   const earnedCount = useMemo(() => data.filter((r) => r.earned).length, [data]);
@@ -205,9 +206,11 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
   async function handleSync() {
     setSyncing(true);
     try {
-      const res = await fetch("/api/meow-medals/sync", { method: "POST" });
-      if (res.ok) {
+      const res = await fetch("/api/meow-medals/sync", { method: "POST" }).catch(() => null);
+      if (res?.ok) {
         window.location.reload();
+      } else {
+        setError("Sync from Stages failed — check your connection and try again.");
       }
     } finally {
       setSyncing(false);
@@ -241,16 +244,23 @@ export default function MedalsClient({ rows }: { rows: Row[] }) {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ earned }),
-    });
+    }).catch(() => null);
 
-    if (!res.ok) {
+    if (!res || !res.ok) {
       setData((prev) => prev.map((x) => (x.id === id ? { ...x, earned: !earned } : x)));
+      setError("Couldn't save that medal — check your connection and try again.");
     }
   }
 
   return (
     <MedalTooltipProvider>
     <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+      {error && (
+        <div role="alert" style={{ border: `1px solid ${c.alert}`, background: c.alertFill, padding: "6px 10px", fontSize: 12, color: c.alert, display: "flex", alignItems: "center", justifyContent: "space-between", fontFamily: c.fontSys }}>
+          <span>{error}</span>
+          <button onClick={() => setError(null)} aria-label="Dismiss error" style={{ background: "transparent", border: "none", color: c.alert, cursor: "pointer", fontSize: 14, padding: "4px 8px" }}>✕</button>
+        </div>
+      )}
       {/* ── Header Panel ──────────────────────────────────────────────────── */}
       <div style={{
         background: c.panelBg,

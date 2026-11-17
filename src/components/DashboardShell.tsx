@@ -167,7 +167,7 @@ function Section({ title, children }: { title: string; children: React.ReactNode
 function CompactRow({ label, pct, sub }: { label: string; pct: number; sub?: string }) {
   return (
     <div className="flex items-center gap-3">
-      <div className="w-[30%] text-sm text-gray-300 truncate flex-shrink-0">{label}</div>
+      <div className="w-[42%] sm:w-[30%] text-sm leading-tight text-gray-300 line-clamp-2 flex-shrink-0" title={label}>{label}</div>
       <div className="flex-1 h-2 rounded bg-gray-800 overflow-hidden">
         <div className={`h-2 ${barFill(pct)}`} style={{ width: `${pct}%` }} />
       </div>

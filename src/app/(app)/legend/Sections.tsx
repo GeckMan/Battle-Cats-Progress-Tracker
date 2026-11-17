@@ -40,11 +40,11 @@ function CrownPicker({ value, onChange, maxCrowns, c }: { value: number; onChang
   const options = [0, ...Array.from({ length: maxCrowns }, (_, i) => i + 1)];
 
   return (
-    <div style={{ display: "flex", gap: 1, alignItems: "center" }}>
+    <div style={{ display: "flex", gap: 2, alignItems: "center", flexShrink: 0 }}>
       {options.map((n) => {
         const isActive = value === n;
         const base: React.CSSProperties = {
-          width: 24, height: 24, display: "flex", alignItems: "center", justifyContent: "center",
+          width: 30, height: 30, display: "flex", alignItems: "center", justifyContent: "center",
           fontSize: 11, fontWeight: 700, fontFamily: c.fontSys, border: "1px solid",
           cursor: "pointer", transition: "all 0.15s", padding: 0,
         };
@@ -103,8 +103,8 @@ export default function Sections({ groups }: { groups: Group[] }) {
     const status = crownMax === null ? "NOT_STARTED" : crownMax >= mc ? "COMPLETED" : "IN_PROGRESS";
     const prev = row;
     setData((d) => d.map((r) => (r.id === id ? { ...r, crownMax, status } : r)));
-    const res = await fetch("/api/legend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, patch: { crownMax, status } }) });
-    if (!res.ok) { if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r))); setError("Failed to save."); }
+    const res = await fetch("/api/legend", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ id, patch: { crownMax, status } }) }).catch(() => null);
+    if (!res || !res.ok) { if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r))); setError("Couldn't save that change — check your connection and try again."); }
   }
 
   async function bulkUpdate(ids: string[], uiCrown: number) {
@@ -115,6 +115,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
     // rows out at crown 1, not write an out-of-range value the per-row
     // CrownPicker can't display a matching button for.
     const idSet = new Set(ids);
+    const before = data.filter((r) => idSet.has(r.id)); // to revert if the save fails
     setData((prev) => prev.map((r) => {
       if (!idSet.has(r.id)) return r;
       const mc = r.subchapter.maxCrowns ?? 4;
@@ -122,8 +123,13 @@ export default function Sections({ groups }: { groups: Group[] }) {
       const status = crownMax === null ? "NOT_STARTED" : crownMax >= mc ? "COMPLETED" : "IN_PROGRESS";
       return { ...r, crownMax, status };
     }));
-    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, crownLevel: uiCrown }) });
-    if (!res.ok) setError("Failed to save.");
+    const res = await fetch("/api/legend/bulk", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ ids, crownLevel: uiCrown }) }).catch(() => null);
+    if (!res || !res.ok) {
+      // Revert instead of leaving unsaved crowns on screen.
+      const byId = new Map(before.map((r) => [r.id, r]));
+      setData((prev) => prev.map((r) => byId.get(r.id) ?? r));
+      setError("Couldn't save those changes — check your connection and try again.");
+    }
   }
 
   const allRows = data;
@@ -145,7 +151,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
           <span>Legend Progress Overview</span>
           <span style={{ fontSize: 9, color: c.textDim, letterSpacing: "0.08em" }}>{groups.length} SAGAS</span>
         </div>
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 1, background: c.border }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 1, background: c.border }}>
           {[
             { label: "Completion", value: `${globalPct}%`, sub: `${totalSubs} subchapters` },
             { label: "Maxed", value: `${maxedTotal}`, sub: `of ${totalSubs}` },
@@ -169,7 +175,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
       )}
 
       {/* ── Saga Panels — side by side ──────────────────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: `repeat(${sortedGroups.length}, 1fr)`, gap: 8, alignItems: "start" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))", gap: 8, alignItems: "start" }}>
         {sortedGroups.map((g) => {
           const rows = dataBySaga.get(g.sagaId) ?? [];
           const ids = rows.map((r) => r.id);

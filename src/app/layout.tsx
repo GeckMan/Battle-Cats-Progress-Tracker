@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, JetBrains_Mono, Noto_Serif_Display, Saira_Extra_Condensed } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
@@ -17,9 +17,32 @@ const geistMono = Geist_Mono({
   display: "swap",
 });
 
-/* NERV fonts moved to nerv-theme.css @font-face rules —
-   they only download when [data-theme="nerv"] activates the font-family usage.
-   This saves ~150KB+ of font data for non-NERV users (majority). */
+/* NERV theme fonts. Self-hosted by next/font at build time (2026-11-17): the
+   previous hard-coded fonts.gstatic.com file URLs in nerv-theme.css had gone
+   stale and 404'd, so NERV silently fell back to system fonts. preload:false keeps
+   the original intent — the files only download when [data-theme="nerv"] CSS
+   actually uses these families, so default-theme users don't pay for them. */
+const nervSys = JetBrains_Mono({
+  variable: "--font-nerv-sys",
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  preload: false,
+});
+const nervTitle = Noto_Serif_Display({
+  variable: "--font-nerv-title",
+  subsets: ["latin"],
+  weight: ["900"],
+  display: "swap",
+  preload: false,
+});
+const nervStamp = Saira_Extra_Condensed({
+  variable: "--font-nerv-stamp",
+  subsets: ["latin"],
+  weight: ["700"],
+  display: "swap",
+  preload: false,
+});
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -67,7 +90,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${nervSys.variable} ${nervTitle.variable} ${nervStamp.variable} antialiased`}
       >
         {children}
         <Analytics />

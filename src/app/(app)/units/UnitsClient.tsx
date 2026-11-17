@@ -991,9 +991,11 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         <p className="text-sm text-gray-500 mt-0.5">
           Track each cat's form level. Click to cycle, <span className="text-gray-400">Shift+click</span> to jump to max form.
         </p>
-        <p className="text-xs text-gray-600 mt-0.5">
-          {bcDataVersion && <>Unit data current to game version {bcDataVersion} · </>}
-          <span className="text-gray-700">Arrow keys to navigate, 0-4 to set form, i for info</span>
+        <p className="text-xs text-gray-500 mt-0.5">
+          {/* BCData can lag the game; the sync fills newer EN units/forms from the wiki. */}
+          {bcDataVersion && <>Game data {bcDataVersion}+ (newer units added from the wiki)</>}
+          {/* keyboard hints only matter with a keyboard */}
+          <span className="hidden md:inline text-gray-500">{bcDataVersion ? " · " : ""}Arrow keys to navigate, 0-4 to set form, i for info</span>
         </p>
       </div>
 

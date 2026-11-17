@@ -35,7 +35,7 @@ export default function NervDashboard({
   milestoneSummary,
 }: NervDashboardProps) {
   return (
-    <div style={{ padding: "16px", paddingTop: "48px", display: "flex", flexDirection: "column", gap: "4px", width: "100%" }}>
+    <div className="pt-16 md:pt-12" style={{ paddingLeft: "16px", paddingRight: "16px", paddingBottom: "16px", display: "flex", flexDirection: "column", gap: "4px", width: "100%" }}>
       {/* Page title */}
       <h1 style={{ marginBottom: "12px" }}>Dashboard</h1>
 
@@ -63,13 +63,13 @@ export default function NervDashboard({
       <NervWaveform />
 
       {/* ── Story + Legend side by side ─────────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "4px" }}>
         <NervDataPanel title="Story Chapters" tag={`${storyRows.length} CHAPTERS`} rows={storyRows} />
         <NervDataPanel title="Legend Stages" tag={`${legendRows.length} SAGAS`} rows={legendRows} />
       </div>
 
       {/* ── Medals + Milestones side by side ────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "4px" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 300px), 1fr))", gap: "4px" }}>
         <NervDataPanel title={`Meow Medals`} tag={medalSummary} rows={medalCategoryRows} />
         <NervDataPanel title={`Milestone Stages`} tag={milestoneSummary} rows={milestoneCategoryRows} />
       </div>

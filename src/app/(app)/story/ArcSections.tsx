@@ -182,13 +182,15 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
     const prev = data.find((r) => r.id === id);
     setData((d) => d.map((r) => (r.id === id ? { ...r, ...patch } : r)));
 
+    // .catch: a network failure used to throw (unhandled) and leave the
+    // unsaved change on screen as if it had saved.
     const res = await fetch("/api/story", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id, patch }),
-    });
+    }).catch(() => null);
 
-    if (!res.ok) {
+    if (!res || !res.ok) {
       if (prev) setData((d) => d.map((r) => (r.id === id ? prev : r)));
       setError("Failed to save. Please try again.");
     }
@@ -203,9 +205,9 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ids, patch }),
-    });
+    }).catch(() => null);
 
-    if (!res.ok) {
+    if (!res || !res.ok) {
       setError("Failed to save changes. Please refresh the page.");
       setData((prev) => prev.map((r) => {
         const old = prevRows.find((p) => p.id === r.id);
@@ -258,7 +260,7 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
         </div>
 
         <div style={{
-          display: "grid", gridTemplateColumns: "1fr 1fr 1fr 1fr", gap: 1,
+          display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: 1,
           background: c.border,
         }}>
           {[
@@ -304,7 +306,7 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
       )}
 
       {/* ── Arc Panels — side by side like Legend ──────────────────────────── */}
-      <div style={{ display: "grid", gridTemplateColumns: `repeat(${groups.length}, 1fr)`, gap: 8, alignItems: "start" }}>
+      <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(min(100%, 340px), 1fr))", gap: 8, alignItems: "start" }}>
         {groups.map((g) => {
           const rows = dataByArc.get(g.arc) ?? [];
           const ids = rows.map((r) => r.id);
@@ -411,7 +413,7 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                           }}>{rPct}%</span>
                         </div>
                         {/* Controls row */}
-                        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                        <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
                           <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
                           {arcHasTreasuresAndZombies(r.chapter.arc) && (
                             <>
