@@ -51,6 +51,7 @@ import "dotenv/config";
 import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
 import { syncUnitsFromWikiMirror, hideUnreleasedEventUnits } from "./wiki-unit-sync.ts";
+import { syncGachaBannersFromWikiMirror } from "./wiki-banner-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -282,6 +283,11 @@ async function main() {
     console.log("\n── Assigning Gacha Sets ──");
     await syncEventSets(prisma, dataLocal, bcuNames);
     await syncBannerMembership(prisma, dataLocal);
+    // Additive banner membership from the wiki's per-banner exclusive rosters
+    // (see wiki-banner-sync.ts). Before backfill/enforce/prune so the existing
+    // deterministic rules below still have the last word.
+    console.log("\n── Wiki-driven banner membership ──");
+    await syncGachaBannersFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
     await backfillBannersFromSetName(prisma);
     await enforceBannerExclusions(prisma);
     await syncSetMembershipBanner(prisma, "Super Fest", SUPERFEST_INCLUDED_SETNAMES);

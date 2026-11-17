@@ -21,6 +21,7 @@
 import { readdirSync, readFileSync, existsSync, writeFileSync, appendFileSync } from "fs";
 import { join } from "path";
 import { seedPrisma as prisma, seedDisconnect } from "../prisma/seed-client.ts";
+import { readUnitPages, deriveSource, norm as normName } from "./wiki-unit-sync.ts";
 
 const DIR = process.env.WIKI_MIRROR_DIR ?? "wiki-branch/wiki-mirror";
 const RARITY: Record<string, string> = { N: "NORMAL", EX: "SPECIAL", RR: "RARE", SR: "SUPER_RARE", UR: "UBER_RARE", LR: "LEGEND_RARE" };
@@ -62,7 +63,7 @@ async function main() {
   if (!existsSync(join(DIR, "pages"))) throw new Error(`no mirror at ${DIR}`);
   const wiki = readWiki();
   const units: any[] = await (prisma as any).unit.findMany({
-    select: { unitNumber: true, name: true, category: true, source: true, excludeFromCollection: true },
+    select: { unitNumber: true, name: true, category: true, source: true, setName: true, isCollab: true, banners: true, excludeFromCollection: true },
   });
   const byNum = new Map<number, any>(units.map((u) => [u.unitNumber, u]));
 
@@ -120,10 +121,43 @@ async function main() {
     }
   }
 
+  // --- obtain method / set disagreements (report-only; overwriting hand-corrected values is not automatic) ---
+  const sourceBad: string[] = [], setBad: string[] = [], collabBad: string[] = [];
+  const full = readUnitPages(join(DIR, "pages")).filter((p) => !p.regional && !p.unobtainable);
+  const fullById = new Map<number, typeof full>();
+  for (const p of full) fullById.set(p.id, [...(fullById.get(p.id) ?? []), p]);
+  const pageFor = (id: number, u: any) => (fullById.get(id) ?? []).find((p) => norm(p.names[0]) === norm(u.name));
+  const linkVotes = new Map<string, Map<string, number>>();
+  for (const u of units) {
+    const p = pageFor(u.unitNumber - best.off, u);
+    if (!p || !u.setName) continue;
+    for (const l of p.eventLinks) {
+      const m = linkVotes.get(l) ?? new Map<string, number>();
+      m.set(u.setName, (m.get(u.setName) ?? 0) + 1);
+      linkVotes.set(l, m);
+    }
+  }
+  for (const u of units) {
+    if (u.excludeFromCollection) continue;
+    const p = pageFor(u.unitNumber - best.off, u);
+    if (!p) continue;
+    const ws = deriveSource(p.head);
+    if (ws && u.source && ws !== u.source && u.source !== "UNOBTAINABLE") sourceBad.push(`- #${u.unitNumber} ${u.name}: DB source ${u.source}, wiki page reads ${ws} — ${p.head.slice(0, 160)}`);
+    const l = p.eventLinks[0];
+    const top = l ? [...(linkVotes.get(l)?.entries() ?? [])].sort((a, b) => b[1] - a[1]) : [];
+    if (top[0] && top[0][1] >= 3 && u.setName && u.setName !== top[0][0]) setBad.push(`- #${u.unitNumber} ${u.name}: DB set "${u.setName}", but most units linking [[${l}]] use "${top[0][0]}"`);
+    if (top[0] && top[0][1] >= 3 && !u.setName) setBad.push(`- #${u.unitNumber} ${u.name}: no DB set; most units linking [[${l}]] use "${top[0][0]}"`);
+    const wikiCollab = p.eventLinks.some((x) => /Collaboration Event$/.test(x));
+    if (wikiCollab && !u.isCollab) collabBad.push(`- #${u.unitNumber} ${u.name}: wiki page links a Collaboration Event (${p.eventLinks.find((x) => /Collaboration Event$/.test(x))}) but DB isCollab=false`);
+  }
+
   const section = (title: string, rows: string[]) => L.push(`## ${title} (${rows.length})`, "", ...(rows.length ? rows.slice(0, 150) : ["None."]), rows.length > 150 ? `…and ${rows.length - 150} more` : "", "");
   section("Rarity disagreements", rarityBad);
   section("Name disagreements", nameBad);
   section("Japanese-exclusive on wiki but obtainable in DB", jpBad);
+  section("Obtain method: DB source vs the unit's own wiki page", sourceBad);
+  section("Set name: DB vs the set other units from the same event use", setBad);
+  section("Collab flag: wiki links a Collaboration Event but DB isCollab=false", collabBad);
   section("On the wiki, no regional flag, not in our DB (likely real EN units we are missing)", wikiOnly);
   L.push(`Regional/unobtainable wiki-only units, expected to be absent (${regionalOnly.length}): ${regionalOnly.join("; ")}`, "");
   section("In our DB but no wiki page matched", dbOnly);

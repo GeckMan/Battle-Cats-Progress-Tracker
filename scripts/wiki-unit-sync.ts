@@ -46,9 +46,9 @@ const SORT_BASE: Record<string, number> = { NORMAL: 0, SPECIAL: 10000, RARE: 200
 const MAX_ADDS = 25;
 const MONTHS = ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october", "november", "december"];
 
-const norm = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9぀-ヿ一-鿿]+/g, "");
+export const norm = (s: string) => s.toLowerCase().normalize("NFKD").replace(/[^a-z0-9぀-ヿ一-鿿]+/g, "");
 
-type WikiPage = {
+export type WikiPage = {
   id: number; rarity: string; names: string[]; page: string; head: string;
   regional: boolean; unobtainable: boolean; version: string | null; eventLinks: string[];
 };
@@ -59,7 +59,7 @@ function field(block: string, key: string): string | null {
   return v ? v : null;
 }
 
-function readInternationalDates(pagesDir: string): Map<string, Date | null> {
+export function readInternationalDates(pagesDir: string): Map<string, Date | null> {
   const out = new Map<string, Date | null>();
   for (const f of readdirSync(pagesDir)) {
     const v = f.match(/^Version_(\d+\.\d+)_Update\.wikitext$/);
@@ -72,7 +72,7 @@ function readInternationalDates(pagesDir: string): Map<string, Date | null> {
   return out;
 }
 
-function readUnitPages(pagesDir: string): WikiPage[] {
+export function readUnitPages(pagesDir: string): WikiPage[] {
   const out: WikiPage[] = [];
   for (const f of readdirSync(pagesDir)) {
     if (!f.endsWith(".wikitext") || f.endsWith("_Gallery.wikitext")) continue;
@@ -138,7 +138,7 @@ export function eventReleaseStatus(link: string, pagesDir: string, redirects: Re
   return { status: "unknown", reason: `event "${title}" has no EN schedule info` };
 }
 
-function deriveSource(head: string): string | null {
+export function deriveSource(head: string): string | null {
   if (/Catnip Challenges/i.test(head)) return "CATNIP_CHALLENGES";
   if (/special sale/i.test(head)) return "SPECIAL_SALE";
   if (/Rare (Cat )?Capsule/i.test(head)) return "RARE_CAPSULE";
