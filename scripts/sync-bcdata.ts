@@ -2059,11 +2059,18 @@ async function checkSeasonalFestMembership(prisma: PrismaClient) {
   });
   const staleBad = stale.filter((u: any) => !SUPERFEST_INCLUDED_SETNAMES.has(u.setName));
   if (staleBad.length > 0) {
-    console.log(
-      `  ⚠ ${staleBad.length} unit(s) carry a "Super Fest" banner but their setName isn't in the Superfest allowlist (stale tag?):`
-    );
-    for (const u of staleBad) console.log(`    - ${u.name} (#${u.unitNumber}) — setName "${u.setName}"`);
-    reviewWarningCount += staleBad.length;
+    // The allowlist is CLOSED and taken from the wiki's own Superfest page, so a
+    // tag outside it is wrong by definition — remove it (2026-11-17: the first
+    // version of the wiki banner step tagged 38 units "Super Fest" by mistake;
+    // this makes any such stray tag self-correct instead of just alarming).
+    for (const u of staleBad) {
+      const row = await (prisma as any).unit.findUnique({ where: { unitNumber: u.unitNumber }, select: { banners: true } });
+      await (prisma as any).unit.update({
+        where: { unitNumber: u.unitNumber },
+        data: { banners: (row?.banners ?? []).filter((b: string) => b !== "Super Fest") },
+      });
+    }
+    console.log(`  ℹ Removed stale "Super Fest" tag from ${staleBad.length} unit(s) whose setName isn't in the Superfest allowlist: ${staleBad.map((u: any) => `#${u.unitNumber}`).join(", ")}`);
   } else {
     console.log('  "Super Fest" tags: OK (every tagged unit has an allowlisted setName)');
   }

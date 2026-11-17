@@ -24,6 +24,11 @@ import { norm } from "./wiki-unit-sync.ts";
 
 const MAX_ADDS = 80;
 const BASE_POOL = "Rare Cat Capsule";
+// Cross-cutting seasonal/compilation banners with their OWN dedicated, allowlist-based rules in
+// sync-bcdata.ts. They must never be learned as a page's label: units already carrying one of
+// these tags made "Super Fest" win the vote for Best of the Best / Good Riddance / BusterFest
+// pages and the first run tagged 38 units wrongly (2026-11-17).
+const DEDICATED_BANNERS = new Set([BASE_POOL, "Super Fest", "Uber Fest", "Epic Fest", "RoyalFest", "NEO Best of the Best", "Best of the Best", "Superfest"]);
 
 function exclusiveNames(text: string): string[] {
   const out: string[] = [];
@@ -65,11 +70,11 @@ export async function syncGachaBannersFromWikiMirror(prisma: any, mirrorDir: str
     }
     if (members.length < 3) continue;
 
+    // Vote on each unit's HOME set (setName) only, never on banners[] — banners[] is full of
+    // cross-cutting tags that say nothing about which event this page is.
     const votes = new Map<string, number>();
     for (const u of members) {
-      for (const b of new Set<string>([...(u.banners ?? []), ...(u.setName ? [u.setName] : [])])) {
-        if (b !== BASE_POOL) votes.set(b, (votes.get(b) ?? 0) + 1);
-      }
+      if (u.setName && !DEDICATED_BANNERS.has(u.setName)) votes.set(u.setName, (votes.get(u.setName) ?? 0) + 1);
     }
     const ranked = [...votes.entries()].sort((a, b) => b[1] - a[1]);
     if (!ranked.length) continue;
@@ -77,6 +82,7 @@ export async function syncGachaBannersFromWikiMirror(prisma: any, mirrorDir: str
     if (count < Math.max(3, Math.ceil(members.length / 2))) continue;
     if (ranked[1] && ranked[1][1] === count) continue; // tie: ambiguous label, skip
     pagesUsed++;
+    console.log(`  · ${f.replace(/\.wikitext$/, "")} → label "${label}" (${count}/${members.length} units' home set)`);
 
     for (const u of members) {
       if (u.excludeFromCollection) continue;
