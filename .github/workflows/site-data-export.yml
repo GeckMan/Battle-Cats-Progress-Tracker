@@ -1,0 +1,66 @@
+name: Site data export
+
+# Read-only snapshot of the site's public game data (units, legend stages, medals,
+# milestones, story chapters) to the orphan `site-data` branch, so the Cowork
+# sandbox can read what the live site actually contains (it can't reach the DB).
+# NO player data: only game-reference tables, see scripts/export-site-data.ts.
+# Runs after every BCData sync (and weekly as a backstop), so it always reflects
+# the latest migrations + sync writes.
+
+on:
+  workflow_run:
+    workflows: ["Sync BCData"]
+    types: [completed]
+  schedule:
+    - cron: '0 12 * * 1'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+      - run: npm install
+      - run: npx prisma generate
+      - name: Check out the site-data branch into ./site-branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin site-data >/dev/null 2>&1; then
+            git worktree add -B site-data site-branch origin/site-data
+          else
+            git worktree add --detach site-branch
+            (cd site-branch && git checkout --orphan site-data && git rm -rf . >/dev/null 2>&1 || true)
+          fi
+      - name: Export
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          OUT_DIR: site-branch/site-data
+        run: npx tsx ./scripts/export-site-data.ts
+      - name: Commit and push to site-data
+        run: |
+          cd site-branch
+          cat > vercel.json <<'JSON'
+          {
+            "git": { "deploymentEnabled": { "site-data": false } },
+            "ignoreCommand": "exit 0"
+          }
+          JSON
+          # exportedAt changes every run; only commit when the data itself changed
+          git add -A site-data vercel.json
+          if git diff --cached --quiet -- . ':!site-data/_meta.json'; then
+            echo "No data changes"
+          else
+            git commit -m "chore: site data snapshot [skip ci]"
+            git push origin site-data
+          fi
