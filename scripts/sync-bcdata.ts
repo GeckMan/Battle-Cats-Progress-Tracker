@@ -1448,6 +1448,13 @@ const KNOWN_HARMLESS_FAMILY_CONFLICTS = new Set<string>([
   // Nekoluga and the Fate/stay night pair above do.
   "274,275,276",
   "563,564,565,566",
+  // Maneki Cat (#342) + Coin Cat (#375) ("Medal King's Palace") and Mr. Ninja
+  // (#184) ("What's in the Box") share one debut row in BCData with what used
+  // to be the "9th Anniversary Special Capsules" set. Ryan confirmed
+  // 2026-11-17 (against the wiki's Cat Release Order) that set has no units at
+  // all -- it was retired in migration 20261117000003 -- and these three
+  // belong to two separate special gachas. Not a labeling error.
+  "184,342,375",
 ]);
 
 async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: BcuGachaNames | null) {

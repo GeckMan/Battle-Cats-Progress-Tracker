@@ -197,7 +197,6 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
     const m = votes.get(link);
     return m ? [...m.entries()].sort((a, b) => b[1] - a[1])[0][0] : null;
   };
-  const collabSets = new Set(dbUnits.filter((u) => u.isCollab && u.setName).map((u) => u.setName));
 
   const today = new Date();
   const redirPath = join(mirrorDir, "redirects.json");
@@ -224,9 +223,12 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
     const collabLink = p.eventLinks.find((l) => /Collaboration Event$/.test(l));
     let setName: string | null = null;
     for (const l of p.eventLinks) { setName = setForLink(l); if (setName) break; }
-    let isCollab = !!collabLink || (!!setName && collabSets.has(setName));
+    // Collab only on explicit evidence: the unit's own page links a "...Collaboration
+    // Event", or the reused set is itself a "...Collaboration" set. Do NOT infer it from
+    // "some other unit in this set is flagged collab" (that wrongly flagged Hare of Inaba,
+    // an Ancient Heroes Ultra Souls gacha unit, on its first run).
     if (!setName && collabLink) setName = collabLink.replace(/ Event$/, "");
-    if (setName && /Collaboration$/.test(setName)) isCollab = true;
+    const isCollab = !!collabLink || (!!setName && /Collaboration$/.test(setName));
 
     await prisma.unit.create({
       data: {
