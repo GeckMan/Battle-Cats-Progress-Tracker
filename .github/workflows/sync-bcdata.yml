@@ -20,6 +20,15 @@ jobs:
           cache: 'npm'
       - run: npm install
       - run: npx prisma generate
+      - name: Check out the wiki mirror (wiki-data branch)
+        # Produced from a home IP by scripts/pull-wiki-local.ts, because
+        # Cloudflare challenges GitHub runner IPs. Optional: the sync skips
+        # wiki-driven steps if it's missing.
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: wiki-data
+          path: wiki-branch
       - name: Run BCData sync
         id: sync
         # sync-bcdata.ts now exits nonzero when its own coverage checks find
@@ -36,6 +45,7 @@ jobs:
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
           # Optional Miraheze bot account (Special:BotPasswords) — see
           # scripts/wiki-access.ts. Unset/empty = anonymous requests as before.
+          WIKI_MIRROR_DIR: wiki-branch/wiki-mirror
           MIRAHEZE_BOT_USER: ${{ secrets.MIRAHEZE_BOT_USER }}
           MIRAHEZE_BOT_PASS: ${{ secrets.MIRAHEZE_BOT_PASS }}
         run: npx tsx ./scripts/sync-bcdata.ts

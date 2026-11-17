@@ -50,6 +50,7 @@
 import "dotenv/config";
 import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
+import { syncUnitsFromWikiMirror } from "./wiki-unit-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -235,6 +236,14 @@ async function main() {
     // Step 3: Parse and sync units
     console.log("\n── Syncing Units ──");
     const newUnits = await syncUnits(prisma, dataLocal, resLocal);
+
+    // Step 3a: BCData lags the live game, so add any unit the wiki mirror says
+    // is already released in EN but BCData doesn't have yet (see the header of
+    // wiki-unit-sync.ts). Runs right after syncUnits so every step below
+    // (collab flags, banners, coverage checks) sees these units too.
+    console.log("\n── Adding wiki-confirmed EN units BCData is missing ──");
+    const wikiAdds = await syncUnitsFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
+    reviewWarningCount += wikiAdds.warnings;
 
     // Fetched once and shared by both collab detection and gacha set
     // assignment below — both need the same rowIndex -> resolved-name map
