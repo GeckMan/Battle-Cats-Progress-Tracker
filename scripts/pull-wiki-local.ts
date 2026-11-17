@@ -71,6 +71,28 @@ async function categoryMembers(cat: string): Promise<string[]> {
   return out;
 }
 
+/** from-title -> target-title for all main-namespace redirects (mirror skips redirect pages themselves). */
+async function fetchRedirects(): Promise<Record<string, string>> {
+  const idToTitle = new Map<number, string>();
+  let cont: Record<string, string> = {};
+  do {
+    const j = await api({ action: "query", list: "allpages", apnamespace: "0", apfilterredir: "redirects", aplimit: "500", ...cont });
+    for (const p of j.query.allpages) idToTitle.set(p.pageid, p.title);
+    cont = j.continue ?? {};
+  } while (Object.keys(cont).length);
+  const out: Record<string, string> = {};
+  cont = {};
+  do {
+    const j = await api({ action: "query", list: "allredirects", arnamespace: "0", arprop: "ids|title", arlimit: "500", ...cont });
+    for (const r of j.query.allredirects) {
+      const from = idToTitle.get(r.fromid);
+      if (from) out[from] = r.title;
+    }
+    cont = j.continue ?? {};
+  } while (Object.keys(cont).length);
+  return out;
+}
+
 async function main() {
   // --- set up the wiki-data checkout ---
   if (!existsSync(join(WORK_DIR, ".git"))) {
@@ -137,6 +159,14 @@ async function main() {
   // --- category listings the sync needs ---
   const jp = await categoryMembers("Category:Japanese Exclusive Content");
   writeFileSync(join(dir, "japanese-exclusive.json"), JSON.stringify(jp.sort(), null, 2));
+
+  try {
+    const redirects = await fetchRedirects();
+    writeFileSync(join(dir, "redirects.json"), JSON.stringify(redirects, null, 1));
+    console.log(`${Object.keys(redirects).length} redirects mirrored`);
+  } catch (e) {
+    console.log(`  (redirect mirror skipped: ${(e as Error).message})`);
+  }
 
   writeFileSync(indexPath, JSON.stringify(index, null, 1));
   writeFileSync(join(dir, "_meta.json"), JSON.stringify({ source: "pull-wiki-local.ts", mirroredAt: new Date().toISOString(), pages: Object.keys(index).length, changedThisRun: changed.length }, null, 2));

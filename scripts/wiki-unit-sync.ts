@@ -23,6 +23,14 @@
  *   setName  reuse the set that existing units from the SAME event link already
  *            use (so Ryuichi joins "Kunio-kun Collaboration", not a new name);
  *            else "<X> Collaboration" for a collab, else none
+ *
+ * Event-level check (added 2026-11-17 after PAC-MAN): BCData and even the
+ * version notes can contain an event's units BEFORE the event has run in EN
+ * ("content added to international versions" in the 15.7 notes, yet the PAC-MAN
+ * Collaboration Event page says "INT: TBA" / "English Version: ?"). So when a
+ * unit's page links a Collaboration Event, that event's own page must not say
+ * the EN release is TBA/unknown/future — otherwise the unit is NOT added.
+ *
  * If a field can't be derived it is left null rather than guessed — later steps
  * (and the weekly bug sweep) fill it in.
  *
@@ -91,6 +99,45 @@ function readUnitPages(pagesDir: string): WikiPage[] {
   return out;
 }
 
+export type EventStatus = { status: "released" | "not-released" | "unknown"; reason: string };
+
+/** Reads an event page's own EN-release statements. */
+export function eventReleaseStatus(link: string, pagesDir: string, redirects: Record<string, string>, today: Date): EventStatus {
+  const file = (t: string) => join(pagesDir, `${t.replace(/[\\/:*?"<>|]/g, "_").replace(/ /g, "_")}.wikitext`);
+  let title = link;
+  for (let i = 0; i < 3 && redirects[title]; i++) title = redirects[title];
+  const f = file(title);
+  if (!existsSync(f)) return { status: "unknown", reason: `event page "${link}" not in mirror` };
+  const text = readFileSync(f, "utf8");
+
+  // explicit "INT: TBA" / "English Version: ?" => not released in EN yet
+  const intLines = [...text.matchAll(/\bINT:\s*([^\n']*)/gi)].map((m) => m[1].trim());
+  const enSection = text.match(/={2,4}\s*English Version\s*={2,4}\s*\n([\s\S]*?)(?:\n={2,4}|\n\{\{|$)/i)?.[1] ?? null;
+  const dateRe = /([A-Za-z]+)\s+(\d{1,2})(?:st|nd|rd|th)?,?\s*(\d{4})/g;
+  const firstDate = (s: string) => {
+    const m = [...s.matchAll(dateRe)].map((d) => ({ mi: MONTHS.indexOf(d[1].toLowerCase()), d })).find((x) => x.mi >= 0);
+    return m ? new Date(Date.UTC(Number(m.d[3]), m.mi, Number(m.d[2]))) : null;
+  };
+
+  const evidence: Date[] = [];
+  let tba = false;
+  for (const l of intLines) {
+    if (/^(TBA|TBD|\?|N\/A)/i.test(l)) tba = true;
+    const d = firstDate(l);
+    if (d) evidence.push(d);
+  }
+  if (enSection !== null) {
+    const bullets = enSection.split("\n").filter((l) => l.trim().startsWith("*"));
+    if (!bullets.length || bullets.every((b) => /^\*\s*(\?|TBA|TBD)?\s*$/i.test(b.trim()))) tba = true;
+    for (const b of bullets) { const d = firstDate(b); if (d) evidence.push(d); }
+  }
+  const past = evidence.filter((d) => d <= today);
+  if (past.length) return { status: "released", reason: `event "${title}" has an EN date on or before today` };
+  if (evidence.length) return { status: "not-released", reason: `event "${title}" EN date is in the future (${evidence[0].toISOString().slice(0, 10)})` };
+  if (tba) return { status: "not-released", reason: `event "${title}" says EN release is TBA/unknown` };
+  return { status: "unknown", reason: `event "${title}" has no EN schedule info` };
+}
+
 function deriveSource(head: string): string | null {
   if (/Catnip Challenges/i.test(head)) return "CATNIP_CHALLENGES";
   if (/special sale/i.test(head)) return "SPECIAL_SALE";
@@ -153,6 +200,8 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
   const collabSets = new Set(dbUnits.filter((u) => u.isCollab && u.setName).map((u) => u.setName));
 
   const today = new Date();
+  const redirPath = join(mirrorDir, "redirects.json");
+  const redirects: Record<string, string> = existsSync(redirPath) ? JSON.parse(readFileSync(redirPath, "utf8")) : {};
   const candidates = [...mainline.values()].filter((p) => !byNum.has(p.id) && RARITY[p.rarity]).sort((a, b) => a.id - b.id);
   const added: number[] = [];
   let warnings = 0;
@@ -163,6 +212,12 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
     const intl = versions.get(p.version);
     if (!intl || intl > today) { console.log(`  ℹ Skipping wiki unit #${p.id} ${p.names[0]}: Version ${p.version} has no international release date yet`); continue; }
     if (added.length >= MAX_ADDS) { console.log(`  ⚠ More than ${MAX_ADDS} wiki-driven units to add in one run — stopping at ${MAX_ADDS}, rerun/inspect`); warnings++; break; }
+
+    // Event-level check: any linked Collaboration Event that the wiki says is not
+    // (yet) released in EN blocks the add, whatever the version notes say.
+    const collabEvents = p.eventLinks.filter((l) => /Collaboration Event$/.test(l));
+    const blocked = collabEvents.map((l) => eventReleaseStatus(l, pagesDir, redirects, today)).find((r) => r.status === "not-released");
+    if (blocked) { console.log(`  ℹ Skipping wiki unit #${p.id} ${p.names[0]}: ${blocked.reason} — not released in EN yet`); continue; }
 
     const category = RARITY[p.rarity];
     const source = deriveSource(p.head);
@@ -186,4 +241,50 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
   }
   console.log(`  Wiki-driven unit adds: ${added.length}`);
   return { added, warnings };
+}
+
+/**
+ * Units BCData ships early: the English game files can contain a collab's units
+ * before the collab has run in EN (PAC-MAN, found 2026-11-17: in the EN data,
+ * but its wiki event page says "INT: TBA"). syncUnits() upserts everything BCData
+ * has, so such units would show up in the app early. This hides them
+ * (excludeFromCollection = true: out of listings, totals and completion %) while
+ * their collab event isn't released in EN.
+ *
+ * Self-healing without tracking: syncUnits() resets excludeFromCollection on every
+ * run (only the Spirit-of-X overrides stay true), and this runs after it, so the
+ * moment the wiki shows an EN date the unit simply isn't re-hidden next run.
+ * Guards against wiki staleness hiding real units: only RECENT units (added in a
+ * version released internationally within the last 180 days), only when the event
+ * page says TBA/future explicitly, and at most MAX_HIDES per run.
+ */
+const MAX_HIDES = 12;
+export async function hideUnreleasedEventUnits(prisma: any, mirrorDir: string | undefined): Promise<number> {
+  const pagesDir = mirrorDir ? join(mirrorDir, "pages") : "";
+  if (!mirrorDir || !existsSync(pagesDir)) return 0;
+  const pages = readUnitPages(pagesDir);
+  const versions = readInternationalDates(pagesDir);
+  const redirPath = join(mirrorDir, "redirects.json");
+  const redirects: Record<string, string> = existsSync(redirPath) ? JSON.parse(readFileSync(redirPath, "utf8")) : {};
+  const today = new Date();
+  const recentCutoff = new Date(today.getTime() - 180 * 24 * 3600 * 1000);
+
+  const dbUnits: any[] = await prisma.unit.findMany({ where: { excludeFromCollection: false }, select: { unitNumber: true, name: true } });
+  const byNum = new Map<number, any>(dbUnits.map((u) => [u.unitNumber, u]));
+  const hide: Array<{ n: number; label: string }> = [];
+  for (const p of pages.sort((a, b) => Number(a.regional) - Number(b.regional))) {
+    const u = byNum.get(p.id);
+    if (!u || p.regional || norm(p.names[0]) !== norm(u.name) || hide.some((h) => h.n === p.id)) continue;
+    const vDate = p.version ? versions.get(p.version) : null;
+    if (!vDate || vDate < recentCutoff) continue;
+    const ev = p.eventLinks.filter((l) => /Collaboration Event$/.test(l)).map((l) => eventReleaseStatus(l, pagesDir, redirects, today)).find((r) => r.status === "not-released");
+    if (ev) hide.push({ n: p.id, label: `#${p.id} ${u.name}: ${ev.reason}` });
+  }
+  if (hide.length > MAX_HIDES) { console.log(`  ⚠ ${hide.length} units would be hidden as not-yet-released in EN (> ${MAX_HIDES}) — hiding none, inspect the wiki mirror`); return 0; }
+  for (const h of hide) {
+    await prisma.unit.update({ where: { unitNumber: h.n }, data: { excludeFromCollection: true } });
+    console.log(`  ℹ Hidden until released in EN — ${h.label}`);
+  }
+  console.log(`  Units hidden as not-yet-released in EN: ${hide.length}`);
+  return hide.length;
 }

@@ -50,7 +50,7 @@
 import "dotenv/config";
 import { execSync } from "child_process";
 import { wikiFetch } from "./wiki-access.ts";
-import { syncUnitsFromWikiMirror } from "./wiki-unit-sync.ts";
+import { syncUnitsFromWikiMirror, hideUnreleasedEventUnits } from "./wiki-unit-sync.ts";
 import { readdirSync, readFileSync, existsSync } from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
@@ -244,6 +244,10 @@ async function main() {
     console.log("\n── Adding wiki-confirmed EN units BCData is missing ──");
     const wikiAdds = await syncUnitsFromWikiMirror(prisma, process.env.WIKI_MIRROR_DIR);
     reviewWarningCount += wikiAdds.warnings;
+    // BCData can also ship a collab's units BEFORE it has run in EN (PAC-MAN):
+    // hide those until the wiki's event page shows an EN date. Self-healing —
+    // syncUnits() resets the flag every run, so nothing to un-hide later.
+    await hideUnreleasedEventUnits(prisma, process.env.WIKI_MIRROR_DIR);
 
     // Fetched once and shared by both collab detection and gacha set
     // assignment below — both need the same rowIndex -> resolved-name map
