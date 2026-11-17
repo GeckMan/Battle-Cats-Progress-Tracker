@@ -18,6 +18,15 @@ function getLastSeen(key: string): string {
 
 function setLastSeen(key: string) {
   localStorage.setItem(key, new Date().toISOString());
+  // The account-level marker is what actually drives the badge now (see
+  // src/app/api/unread-counts/route.ts); localStorage is kept only as a
+  // fallback for the first check after this change shipped.
+  const tab = key === LS_KEY_CHAT ? "chat" : "activity";
+  fetch("/api/unread-counts", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ tab }),
+  }).catch(() => {});
 }
 
 export default function RightPanelWrapper({ currentUserId, currentUserRole }: { currentUserId: string; currentUserRole: string }) {

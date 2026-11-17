@@ -84,6 +84,11 @@ model User {
   theme           String    @default("default") // "default" | "nerv"
   hasUnleashedCat Boolean   @default(false)
   lastActiveAt    DateTime? // updated by a lightweight heartbeat ping; drives the "online now" count
+  // Per-account "last read" markers for the right panel's unread badges (2026-11-17).
+  // Previously only in localStorage, so any new account/browser/device counted every
+  // message ever posted ("99+" on every login). Null = never set (initialized on first check).
+  chatLastSeenAt     DateTime?
+  activityLastSeenAt DateTime?
   createdAt       DateTime  @default(now())
   updatedAt    DateTime @updatedAt
 

@@ -4,19 +4,23 @@ import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
 
 /**
- * GET /api/unread-counts — combined, count-only replacement for the old
- * RightPanelWrapper pattern of polling /api/activity?limit=1 and
- * /api/chat?limit=1 every 60s, then re-fetching ?limit=200 of either one
- * whenever anything new showed up. That pattern cost up to 4 separate
- * function invocations (each with its own DB round trip) just to answer
- * "how many unread?" — a question a single COUNT query answers directly.
- * This endpoint does it in one invocation, contributing to fixing Vercel
- * Fluid Active CPU quota exhaustion (site repeatedly shut down, Oct 2026).
+ * GET /api/unread-counts — count-only unread badges for the right panel (one
+ * invocation; see the CPU-quota history in git log for why this is count-only).
  *
- * Query params: activitySince, chatSince — ISO timestamps (the client's
- * "last seen" markers, same localStorage keys RightPanelWrapper already
- * tracked). Missing/invalid values default to "count everything."
+ * "Last read" markers are stored PER ACCOUNT on the User row (chatLastSeenAt /
+ * activityLastSeenAt). They used to live only in localStorage, so a new account,
+ * new browser/device, cleared storage or private window counted every message
+ * ever posted and the badge was stuck at "99+" (2026-11-17). Resolution order:
+ *   1. the account's stored marker;
+ *   2. else the browser's legacy localStorage marker (activitySince/chatSince
+ *      params) if it's a real value, so existing users keep their unread state;
+ *   3. else "now" — a fresh account/device starts at 0, not at the whole history.
+ * A marker resolved from 2/3 is saved to the account so it sticks everywhere.
+ *
+ * POST /api/unread-counts  { tab: "chat" | "activity" } — marks that tab read now.
  */
+const FIELD = { chat: "chatLastSeenAt", activity: "activityLastSeenAt" } as const;
+
 export async function GET(req: NextRequest) {
   try {
     const session = await getServerSession(authOptions);
@@ -24,45 +28,59 @@ export async function GET(req: NextRequest) {
     const userId = session.user.id as string;
 
     const { searchParams } = new URL(req.url);
-    const parseDate = (v: string | null) => {
-      if (!v) return new Date(0);
+    const legacy = (v: string | null) => {
+      if (!v) return null;
       const d = new Date(v);
-      return isNaN(d.getTime()) ? new Date(0) : d;
+      // epoch / garbage = "never seen" placeholder from old clients, not a real marker
+      return isNaN(d.getTime()) || d.getTime() <= 0 ? null : d;
     };
-    const activitySince = parseDate(searchParams.get("activitySince"));
-    const chatSince = parseDate(searchParams.get("chatSince"));
+
+    const user = (await (prisma as any).user.findUnique({
+      where: { id: userId },
+      select: { chatLastSeenAt: true, activityLastSeenAt: true },
+    })) as { chatLastSeenAt: Date | null; activityLastSeenAt: Date | null } | null;
+
+    const now = new Date();
+    const chatSince: Date = user?.chatLastSeenAt ?? legacy(searchParams.get("chatSince")) ?? now;
+    const activitySince: Date = user?.activityLastSeenAt ?? legacy(searchParams.get("activitySince")) ?? now;
+
+    const init: Record<string, Date> = {};
+    if (!user?.chatLastSeenAt) init.chatLastSeenAt = chatSince;
+    if (!user?.activityLastSeenAt) init.activityLastSeenAt = activitySince;
 
     const friendships = await prisma.friendship.findMany({
-      where: {
-        status: "ACCEPTED",
-        OR: [{ requesterId: userId }, { addresseeId: userId }],
-      },
+      where: { status: "ACCEPTED", OR: [{ requesterId: userId }, { addresseeId: userId }] },
       select: { requesterId: true, addresseeId: true },
     });
-    const friendIds = friendships.map((f) =>
-      f.requesterId === userId ? f.addresseeId : f.requesterId
-    );
-    const userIds = [userId, ...friendIds];
+    const friendIds = friendships.map((f) => (f.requesterId === userId ? f.addresseeId : f.requesterId));
 
     const [unreadActivity, unreadChat] = await Promise.all([
-      // @ts-ignore – Activity model added in new migration
       (prisma as any).activity.count({
-        where: {
-          userId: { in: userIds, not: userId },
-          createdAt: { gt: activitySince },
-        },
+        where: { userId: { in: friendIds }, createdAt: { gt: activitySince } },
       }),
-      // @ts-ignore – ChatMessage model added in new migration
       (prisma as any).chatMessage.count({
-        where: {
-          userId: { not: userId },
-          createdAt: { gt: chatSince },
-          deletedAt: null,
-        },
+        where: { userId: { not: userId }, createdAt: { gt: chatSince }, deletedAt: null },
       }),
+      Object.keys(init).length
+        ? (prisma as any).user.update({ where: { id: userId }, data: init }).catch(() => {})
+        : Promise.resolve(),
     ]);
 
     return NextResponse.json({ unreadActivity, unreadChat });
+  } catch {
+    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+  }
+}
+
+export async function POST(req: NextRequest) {
+  try {
+    const session = await getServerSession(authOptions);
+    if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const body = await req.json().catch(() => ({}));
+    const field = FIELD[body?.tab as keyof typeof FIELD];
+    if (!field) return NextResponse.json({ error: "Bad tab" }, { status: 400 });
+    await (prisma as any).user.update({ where: { id: session.user.id as string }, data: { [field]: new Date() } });
+    return NextResponse.json({ ok: true });
   } catch {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
