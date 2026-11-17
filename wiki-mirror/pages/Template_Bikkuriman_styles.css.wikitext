@@ -1,0 +1,10 @@
+.ranger-navbox.bikkuriman {
+	--bg-navbox-title: linear-gradient(to right, #46af56 0%, #6dc57a 100%);
+	--bg-sub-table-title: #ffe252;
+	--bg-group-name: #339933;
+
+	--sub-title-color: #000;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

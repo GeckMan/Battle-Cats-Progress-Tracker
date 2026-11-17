@@ -1,0 +1,179 @@
+{{EnemiesAppearing|Gabriel|Angelic Gory|Aku Doge|Aku Gory|CTO Seal}}
+
+{{Stage Info
+|stage name = [[File:Rc018.png]]
+[[File:Mapsn029 00 a en.png]]
+|stage location = [[File:Mapname029 a en.png]]
+|enemies = {{Magnification|Gabriel|0
+|Angelic Gory|0
+|Aku Doge|0
+|Aku Gory|0}}
+|boss = {{Magnification|CTO Seal|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,200
+|max enemies = 50
+|jpname = Revolution Lv.X
+|script = レボリューション Lv.X
+|romaji = Reboryūshon Lv. X
+|star = 1
+|event-chapter = [[November Gauntlet II]]
+|require = Clear [[Worker's Revolution (Monthly Event)|Worker's Revolution]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*2 [[Angelic Gory|Angelic Gories]] spawn after 20 seconds<sup>600f</sup>, delay 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[CTO Seal]] spawns as the boss.
+**4 [[Gabriel]]s spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**5 [[Aku Doge]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Aku Gory|Aku Gories]] spawn, delay 33.33 seconds<sup>1,000f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Revolution Lv.
+! colspan="5" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Angelic Gory]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Aku Gory]]
+! scope="col" |[[CTO Seal]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|100%
+|100%
+|200%
+|100%
+|300%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |12
+|122%
+|111%
+|222%
+|111%
+|322%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |13
+|144%
+|122%
+|244%
+|122%
+|344%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |14
+|166%
+|133%
+|266%
+|133%
+|366%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |15
+|188%
+|144%
+|288%
+|144%
+|388%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|210%
+|155%
+|310%
+|155%
+|410%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |17
+|232%
+|166%
+|332%
+|166%
+|432%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |18
+|254%
+|177%
+|354%
+|177%
+|454%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |19
+|276%
+|188%
+|376%
+|188%
+|476%
+|150
+|Aku [[Catfruit]] Seed +1
+|2,850
+|-
+! scope="row" |20
+|300%
+|200%
+|400%
+|200%
+|500%
+|150
+|Rare Ticket +1
+|2,850
+|-
+|}
+
+==Strategy==
+The high DPS of the Aku Gories combined with CTO Seal's high stats and 100% freeze chance can make this stage a pain at higher levels. Stall the [[:Category:Angel Enemies|Angels]] for cash with Ramen Cat, and once the base is hit lure the faster peons to the enemy base, taking care of CTO Seal once the peons dry up. For CTO Seal himself, bring tankier units like [[Sushi Cat (Super Rare Cat)|Roe Cat]], rather than cheaper meatshields, to protect your [[:Category:Backliner-class Cats|backliners]]. [[:Category:Rusher-class Cats|Rushers]] like [[Express Cat (Super Rare Cat)|Bullet Train Cat]] are also great to chip CTO Seal down.
+
+==='''Recommended Units'''===
+* [[Rocker Cat (Rare Cat)|Ramen Cat]]: Mainly used to stall the [[:Category:Angel Enemies|Angel]] peons in the beginning, he can also tank a few hits from the Aku Gories and Doges in a pinch.
+* [[Adult Cat (Rare Cat)|Prisoner Cat]]: One of the most accessible units for dealing with CTO Seal, as unlike [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] he outranges the otter menace, making him unlikely to be permafrozen with proper protection.
+* [[Carpenter Cat (Rare Cat)|Carpenter Cat]]: While a late-game unit, Carpenter is an amazing choice for this gauntlet thanks to his good health, [[Resistant|Resistance]] to [[:Category:Red Enemies|Red]] and immunity to Freeze.
+* [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: His absurd damage and expendability makes him a good choice for dealing with peons, especially if he has his Double Bounty talent unlocked.
+* [[Sushi Cat (Super Rare Cat)|Roe Cat]]: Near-mandatory for this stage, as it can tank plenty of hits from CTO Seal while also being able to provide some protection against the [[:Category:Aku Enemies|Aku]] peons (assuming Aku Gory doesn't get an absurd amount of Savage Blows).
+* [[Cutter Cat (Super Rare Cat)|Power/Neo Cutter Cat]]: Great for wearing down CTO Seal, with his Massive Damage and Survive abilities. Additionally, his [[Brave Cutter (Combo)|Attack up combo]] with [[Li'l Axe Cat (Special Cat)|Li'l Brave Cat]] can benefit the whole lineup.
+* [[Express Cat (Super Rare Cat)|Maglev/Bullet Train Cat]]: Can get solid chip damage on CTO Seal or kill an annoying peon, earning you some extra cash.
+* [[Master of Life Dr. Nova (Special Cat)|Master of Life Catnova]]: The only non-[[Uber Rare Cats|Uber]] capable of cursing CTO Seal. While she's usable fairly late, she performs admirably in this stage.
+
+===Recommended Ubers===
+* [[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]]: Aside from her absurdly powerful stats, Kasli's [[Curse]] proves mighty useful against CTO Seal, making him significantly less threatening.
+* [[Empress Chronos (Uber Rare Cat)|Chronos the Infinite]]: Chronos can provide momentary relief from the Aku Gories and CTO Seal with her Freeze, while also being immune to Freeze herself.
+* [[Chronos the Bride (Uber Rare Cat)|Wedding Chronos]]: While more RNG-reliant than her regular counterpart, Wedding Chronos is capable of Cursing, Weakening, and Slowing CTO Seal as well as Aku Gory. Do note her lack of immunity to Freeze, however.
+* [[Papaluga (Uber Rare Cat)|Papalan Pasalan]]: Despite being infamously terrible otherwise, Papaluga finds use against CTO Seal thanks to his ability to neuter him via Curse, so long as he is protected by the likes of Roe Cat.
+* [[Tails (Uber Rare Cat)|Tails]]: Tails can simultaneously Curse and Weaken CTO Seal, making him a much smaller threat.
+
+==Reference==
+*https://battlecats-db.com/stage/s24029.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

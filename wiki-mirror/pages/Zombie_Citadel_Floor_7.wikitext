@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Those Guys|Znache|Duche|Zroco|Zir Zeal|Miss Haka}}
+:''Not to be confused with the [[Heavenly Tower/Floor 7|Heavenly Tower]] or [[Infernal Tower/Floor 7|Infernal Tower]] versions of Floor 7.''
+'''Floor 7''' is the seventh floor of [[Zombie Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 06 v en.png]]
+|stage location = [[File:Mapname005 v en.png]]
+|energy = 160
+|enemy castle hp = 270,000 HP
+|enemies = {{Magnification|Those Guys|600%
+|Znache|100%
+|Duche|200%
+|Zroco|100%
+|Zir Zeal|100%}}
+|boss = {{Magnification|Miss Haka|100%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (100%, 1 time)
+|XP = 3,040 XP
+|width = 5,500
+|max enemies = 15
+|jpname = 7th Floor
+|script = 7階
+|romaji = 7 Kai
+|star = 1
+|event-chapter = [[Zombie Citadel]]
+|difficulty = ★6
+|prev stage = [[Zombie Citadel/Floor 6|Floor 6]]
+|next stage = [[Zombie Citadel/Floor 8|Floor 8]]
+}}
+
+==Battleground==
+*10 [[Those Guys]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*5 [[Znache]]s spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Duche]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Miss Haka]] spawns as the boss.
+**Infinite [[Znache]]s spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**5 [[Duche]]s spawn, delay 20 seconds<sup>600f</sup>.
+**2 [[Duche]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+**5 [[Zroco]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**10 [[Zroco]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**3 [[Zir Zeal]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+This stage comes in 2 parts, Early Duche Spam and Base Destruction. The Duches and Zir Zeals are the most annoying enemies in this lineup, but both gets one shot by [[Bahamut Cat (Special Cat)|Bahamut]]. The early Duches essentially make it impossible to have someone at the base to force all the zombies to burrow, especially with the Zrocos present. As such, use Bahamut to clear out the Duche, and use a spammable attacker like [[Rocker Cat (Rare Cat)|Ramen]] to handle the Zrocos. Phase 2 is Base Destruction. This is where the Zir Zeals become a huge threat, as while the first will get deleted by your horde, if you oversend too many units, Miss Haka and the Zeals will waltz up to your base and destroy it. Carefully manage your units so as to send just enough to consistently cause Haka to burrow, and if you have good timing, you can beat their base before Haka beats yours.
+
+==Reference==
+*https://battlecats-db.com/stage/s07005-07.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

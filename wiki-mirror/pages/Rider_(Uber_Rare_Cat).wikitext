@@ -1,0 +1,128 @@
+:''This article is about the Cat Unit. For the enemy, see [[Rider (Enemy)]].''
+'''Rider''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 367
+|rarity = UR
+|name1 = Rider
+|name2 = Rider CC
+}}
+
+==Evolution==
+Evolves into '''Rider CC''' at level 10.
+
+==Strategy/Usage==
+Rider can be used in the same way as [[Ice Cat (Uber Rare Cat)|Ice Cat]], except for [[:Category:Angel Enemies|Angel]] enemies. While her stats are worse, she is still able to permanently freeze Angel enemies just as efficiently. She performs a lot better than [[Juliet Cat (Super Rare Cat)|Juliet Cat]] and [[Cat Toaster (Super Rare Cat)|Cat Toaster]] along with being able to make many Angel heavy stages a lot easier.
+
+{{Job|Classification = Crowd-Controller & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 367
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni367 f00.png
+|Image2 = Uni367 c00.png
+|Name1 = Rider
+|Desc1 = Joining the fight from Fate/stay night [HF]! Her<br>dagger is pledged to her Master, Shinji Matou.<br>Freezes Angels with Area Attacks!
+|Name2 = Rider CC
+|Desc2 = Joining the fight from Fate/stay night [HF]!<br>Excellent  mobility, expert in barrier magecraft.<br>Freezes Angels with Area Attacks!
+|Name1 (JP) = ライダー (Raidā, Rider)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>間桐慎二と契約を交わした騎兵の英霊<br>天使の動きをしばらく止める(範囲攻撃)
+|Transl1 (JP) = Enter from Fate / stay night [HF]!<br>A cavalry hero who signed a contract with Shinji Matou<br>Stop the movement of the angel for a while (range attack)
+|Name2 (JP) = ライダーCC (RaidāCC, RiderCC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>機動力に優れ、結界を張る魔術なども得意とする<br>天使の動きをしばらく止める(範囲攻撃)
+|Transl2 (JP) = Enter from Fate / stay night [HF]!<br>Excellent in mobility and good at magical arts that form barriers<br>Stop the movement of the angel for a while (range attack)
+|Name1 (TW) = Rider
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>與間桐慎二訂定契約，騎兵的英靈<br>必定能讓天使敵人暫時動作停止(範圍攻擊)
+|Name2 (TW) = Rider CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>機動性超高，擅於製造結界等魔術<br>必定能讓天使敵人暫時動作停止(範圍攻擊)
+|Name1 (KR) = 라이더
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>마토 신지와 계약을 맺은 기병 클래스 영령<br>천사의 움직임을 잠깐 멈춘다 (범위 공격)
+|Name2 (KR) = 라이더CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>기동력이 좋고 결계 마술에도 능통하다<br>천사의 움직임을 잠깐 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,400¢
+*Chapter 2: 3,600¢
+*Chapter 3: 4,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rider
+|Normal Base HP = 1650
+|Normal Base AP = 1050
+|Normal Range = 400
+|Normal Foreswing = 40
+|Normal Attack Cooldown = 127
+|Normal Attack Length = 89
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 2400
+|Normal Recharge = 2400
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Rider CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 1500
+|Evolved Range = 400
+|Evolved Foreswing = 40
+|Evolved Attack Cooldown = 127
+|Evolved Attack Length = 89
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 2400
+|Evolved Recharge = 2400
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,650 HP
+|val-Normal-Attack Power = 1,050 damage<br>(188.62 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 167f <sub>5.57 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Normal-Recharge Time = 80 ~ 71.2 seconds
+|val-Normal-MaxHP = 28,050 HP
+|val-Normal-MaxAttack = 17,850 damage<br>(3,206.59 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 25,500 damage<br>(4,580.84 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 167f <sub>5.57 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Evolved-Recharge Time = 80 ~ 71.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni367 f00}}
+
+==Trivia==
+*Rider CC's English description has a double space between the words "Excellent" and "mobility".
+
+==Reference==
+*https://battlecats-db.com/unit/368.html
+
+----
+{{CatNav|Lancer|Gilgamesh}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Freeze ability]]

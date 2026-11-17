@@ -1,0 +1,72 @@
+{{StrategyNeeded}}
+:''This article is about the enemy. For the Cat Unit, see [[Tails (Uber Rare Cat)]].''
+'''Tails''' (テイルス, ''Teirusu'', '''Tails''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Sonic the Hedgehog Collaboration Event]]. He was added in [[Version 14.4 Update|Version 14.4]].
+
+{{Enemy Info
+|name = Tails
+|image = E 731.png
+|first appearance = [[Sonic the Hedgehog Collaboration Event]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+For the most part, Tails serves as supportive sniper, whose high range, 50% [[Weaken]] and expansive [[Long Distance]] reach can impede units from afar, which is further compounded by his 100% [[Explosion]] that can greatly increase his damage. Fortunately, while he might be fast, he is very much reliant on his range and other enemies to keep him safe, due to having a small blindspot, low DPS and an easily exploitable trait.
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Sonic the Hedgehog Collaboration Event#Chemical Plant Zone|Chemical Plant Zone]]:
+**[[A.K.A. Miles Prower]] (100%)
+**[[Kindly Two-Tails]] (200%)
+**[[Sonic's Dependable Pal]] (1,000%)
+**[[Brain-and-Mech Support]] (1,500%)
+**[[High-Flying Partner]] (2,000%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Sonic Battle!|Sonic Battle!]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Tails
+|Health = 16000
+|Attack Power = 500
+|Attack Range = 440
+|Attack Type = Area
+|Time Between Attacks = 231
+|Movement Speed = 15
+|Knockback = 4
+|Foreswing = 38
+|Backswing = 53
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 240~640)<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] Cat Units to 50% for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 440 range
+|Element = Floating
+}}
+
+{{UnitViewer|enemy|bg=Bg240.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+731 e.png|Tails's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/733.html
+
+----
+{{EnemyNav|Sonic|Knuckles}}
+----
+
+{{Sonic the Hedgehog}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Explosion Enemies]]

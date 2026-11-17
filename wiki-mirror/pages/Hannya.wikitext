@@ -1,0 +1,123 @@
+'''Hannya''' (般若我王, ''Hannya Gaō'') is a [[:Category:Red Enemies|Red]] variant of [[The Face]] introduced in the [[:Category:Advent Stages|Advent Stage]] [[Realm of Carnage (Deadly)|River Styx]]. She was added in [[Version 5.3 Update|Version 5.3]]. In [[The Battle Cats Unite!]], she was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Hannya
+|image = E 267.png
+|first appearance = [[Realm of Carnage (Deadly)|River Styx]]<br>
+'''ZL''': [[Neutrino Snowlands|Sub-chapter 2 - Neutrino Snowlands]]
+|money drop = 4,500¢ - 17,775¢
+}}
+
+==Enemy==
+Hannya has a decently fast attack rate, does massive damage and weakens cats to 25% from a range of 800 with no blind spot, this combined with any support in the stages that she appears in make her range and damage all the more threatening.
+
+Unlike the original [[Shy Boy]] and [[The Face]], Hannya is NOT a [[:Category:Floating Enemies|Floating]] enemy.
+
+==Strategy==
+In [[Realm of Carnage (Deadly)|Realm of Carnage]] and [[Wrath of Carnage (Deadly)|Wrath of Carnage]], the only hard part about defeating Hannya is the [[R.Ost]]s that come with her, the sole non-Red enemy in the stage. For R.Ost, it's advised that you use [[Bahamut Cat (Special Cat)|Awakened Bahamut]] during his backswing (the second peck) or after freezing him with the [[Ototo Corps#Thunderbolt|Thunderbolt Cannon]], as explained in [https://youtu.be/DTyCijjxVd4 this video]. [[Sanada Yukimura (Uber Rare Cat)|Sanada Yukimura]] can also deal extreme damage to Hannya or R.Ost, though he will not produce as much damage as Awakened Bahamut - but he will survive longer than Bahamut.
+
+[[:Category:Anti-Red Cats|Anti-Red Cats]] such as [[Fish Cat (Normal Cat)|Island Cat]], [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cat]], [[Swordsman Cat (Rare Cat)|Elemental Duelist Cat]] and [[Sushi Cat (Super Rare Cat)|Fried Shrimp Cat]] are all extremely helpful when fighting this demon, although Hannya will have to be weakened in order for Elemental Duelist at level 33 to survive a hit and you'll have to press your luck with Fried Shrimp Cat's low weaken chance. [[Kuu (Uber Rare Cat)|Divine Kuu γ]] or [[Pai-Pai (Uber Rare Cat)|Pai-Pai]] are especially great options as they have anti-red abilities boosting their effective health and [[Immune to Weaken|weaken immunity]], allowing them to safely tank Hannya's hits. [[Tropical Kalisa (Uber Rare Cat)|Tropical Kalisa]] is extremely useful, as she will be able to deal insane damage to Hannya when timed well.
+
+Beyond Anti-Red specialists, [[:Category:Cats with Weaken Immunity|Weaken-immune units]] such as [[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]] (especially with [[Talents]]) can also be of use against Hannya.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 267
+|Type = Red
+|Image1 = Enemy icon 267.png
+|Name1 = Hannya
+|Desc1 = Wore a creepy mask as a joke, transformed<br>into a flesh-eating demon. That can happen.<br>Breathes pure corruption born of vengeful hate.<br>The normal Face isn't so bad anymore, eh?
+|Name1 (JP) = 般若我王 (Hannya Gaō)
+|Desc1 (JP) = 呪われた般若の面を被ってしまったがゆえに<br>成仏できない魂を喰い集める鬼へと変貌<br>口から吐き出される怨念の魂に触れたものは<br>恐怖で本来の力を出せなくなってしまう
+|Transl1 (JP) = Wore the cursed Hannya mask, transformed into a demon<br>who eats the souls of those who cannot attain<br>enlightenment. Spews grudgeful souls that cause others to<br>lose their full power out of fear.
+|Name1 (TW) = 般若我王
+|Desc1 (TW) = 戴上受到詛咒的般若面具後吞噬了<br>無數無法成佛的靈魂而變成鬼的樣貌<br>若是觸碰到由他口中吐出來的怨魂<br>則會恐懼到無法發揮原本的實力。
+|Name1 (KR) = 반야아왕
+|Desc1 (KR) = 저주받은 반야를 뒤집어쓴 걸로도 모자라<br>성불하지 못하는 혼을 집어삼키는 도깨비로 변모<br>입에서 내뿜는 원념의 혼에 닿으면 무시무시한<br>공포로 원래의 힘을 발휘하지 못하게 된다.
+}}
+
+==Variants==
+{{Variant
+|original = Hannya
+|inherit_desc = yes
+|Masked Okame
+|Sathankhamun VIII
+|Commander Hannya
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 2-6: [[Neutrino Snowlands]] (150%)
+*Stage 17-6: [[Obvious Cache]] (150%)
+*Stage 37-4: [[Kernel Chaos]] (180%)
+
+===[[Special Events|Event Stages]]===
+*River Styx: [[Realm of Carnage (Deadly)]] (100%)
+*[[River Acheron]]:
+**[[Wrath of Carnage (Deadly)]] (100%)
+**[[Revenge of Carnage (Merciless)]] (100%)
+*[[The Angel & The Demon]]: [[Realm of Carnage (Deadly) (Angel & Demon)|Realm of Carnage (Deadly)]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 44|Floor 44]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 44|Floor 44]] (100%)
+*[[Golden Tower]]: [[Golden Tower/Floor 44|Floor 44]] (100%)
+*[[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]: [[Round 2 (Pay Day)|Round 2]] (100%)
+*[[Otherworld Colosseum#Cheap Labor 2|Otherworld Colosseum]]: [[Round 5 (Cheap Labor 2)|Round 5]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Hannya
+|Health = 1000000
+|Attack Power = 36000
+|Attack Range = 800
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 3
+|Knockback = 3
+|Foreswing = 24
+|Backswing = 17
+|Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 25% for 150f <sub>5 seconds</sub>
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+267 e.png|Hannya's spritesheet
+IdleHannya.gif|Hannya's moving animation
+Medal 029.png|Hannya on the ''Charon's Crossing'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*A ''[[wikipedia:Hannya|hannya]]'' is a mask used in [[wikipedia:Noh|Noh]] theater to represent a jealous female demon.
+*Among the first seven [[:Category:Advent Bosses|Advent Bosses]], Hannya appears to represent the sin of envy, as her mask is a symbol of female jealousy.
+*Her gender was confirmed in an official [https://twitter.com/PONOS_EN/status/776236850591723520 Tweet] announcing [[Realm of Carnage (Deadly)|River Styx]], which reads: "Hannya has arrived in #BattleCats... dare you face her down in the new event stage River Styx? Log in on 9/15!"
+*According to her Japanese description, the specific type of demon Hannya became is an ''[[wikipedia:Oni|oni]]'' (鬼). As such, she may have been inspired by the king of the ''oni'', [https://yokai.com/shutendouji/ Shuten dōji], who unwillingly became an ''oni'' after wearing a demonic mask to play pranks. It's said that Shuten dōji could survive even being reduced to a [https://data.ukiyo-e.org/harvard/images/HUAM-INV170251.jpg disembodied head], which is often depicted as red and massive like Hannya.
+*The term used for "attaining enlightenment" in her Japanese description is 成仏 ''jōbutsu'', which specifically refers to achieving Buddhahood; attaining nirvana. This theme of Buddhism would later be carried on with [[Masked Okame]] in [[The Pure Land (Merciless)|The Pure Land]], the celestial realm of a buddha or bodhisattva.
+*In [[Nyanko Daisensou|BCJP]], the debut maps for Hannya and her other Advent Boss variants are all gates:
+**Hannya: River Styx's Japanese name is Jigokumon (地獄門), meaning "Hell Gate".
+**Masked Okame: Courts of Torment's Japanese name is Narakumon (奈落門), meaning "[[wikipedia:Naraka|Naraka]] Gate".
+**Sathankhamun VIII: [[Aku Reincarnation (Merciless)|Rashomon]] (羅生門) is another name of the fallen gate [[wikipedia:Rajōmon|Rajōmon]].
+*Hannya is the first Advent Boss to appear in the main [[Legend Stages]] and the first to ever be fought above 100% strength magnification, both in [[Neutrino Snowlands]].
+*The word Gaō in her Japanese name, Hannya Gaō (般若我王), doesn't mean anything on its own and is just a pun on ''kao'' (顔), meaning "face", though it can rarely also be a person's name. It consists of the kanji for "ego" or "self-assertion" (我) and "king" (王).
+*Hannya, [[Kappy Jr.]] and [[Kappy Kawano]] are the only Advent Bosses to have neither Long Distance nor Omni Strike.
+**While the Kappys both have powerful [[Surge Attack]]s, Hannya has no means of hitting units beyond her attack range.
+*Prior to [[Version 13.3 Update|Version 13.3]], Hannya was one of the few enemies without a space between their name and trait the [[Enemy Guide]]: she was listed as "Hannya(Red)".
+
+==Reference==
+*https://battlecats-db.com/enemy/269.html
+
+----
+{{EnemyNav|Henry|Package Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Advent Bosses]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Zero Legends Enemies]]

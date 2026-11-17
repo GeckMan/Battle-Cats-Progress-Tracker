@@ -1,0 +1,136 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Yankee Cat''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 3.4 Update|Version 3.4]] and was created by a collaboration event between [[Kishidan Collaboration Event|Battle Cats and Kishidan]], this unit is a treasure drop in the Kishidan collaboration stages.
+
+{{Cat Info
+|ID = 167
+|rarity = RR
+|name1 = Yankee Cat
+|name2 = Sukeban Cat
+}}
+
+==Evolution==
+Evolves into '''Sukeban Cat''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role, usually with a lower cost and higher speed. Yankee Cat, however, can be used in [[Restriction Stage]]s that allow [[:Category:Rare Cats|Rare Cats]] (such as [[Wrath of D-Cyclone (Insane)|Wrath of D-Cyclone]]), where there is considerably less competition. Even then, Yankee is still not one of the best options due to its higher cost.
+
+==='''Evolved Form'''===
+Sukeban Cat gains extra stats, however, this does not make her worth the cost increase, as her health still remains very low and even irrelevant in [[Uncanny Legends]] and other late parts of the game. Because of this, the Normal Form should always be used over the Evolved Form.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 167
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni167 f00.png
+|Image2 = Uni167 c00.png
+|Name1 (JP) = ネコヤンキー (Neko Yankī, Yankee Cat)
+|Desc1 (JP) = 都内某小学校でブイブイ言わせてる伝説のツッパリ<br>授業をフケて屋上で一人、捨て猫と昼寝する<br>ちょっとだけ不器用なにゃんこ
+|Transl1 (JP) = Legendary delinquent who is making his mark at a certain elementary school in Tokyo.<br>Skips class on the rooftop to be alone, and to nap with an abandoned cat.<br>A slightly clumsy Cat.
+|Name2 (JP) = ネコスケバン (Neko Sukeban, Sukeban Cat)
+|Desc2 (JP) = アタイのダチをいじめる奴は絶対許さねぇ！<br>が口癖のちまたで有名なマブイにゃんこ<br>仁義を通す強さと乙女の繊細さを持つ(範囲攻撃)
+|Transl2 (JP) = "I'll never forgive anyone who bullies my friends!"<br>is the catchphrase of this cute Cat famous in the streets.<br>Has the strength to uphold a code of honor and the delicacy of a maiden (Area Attack)
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 80円
+*Chapter 2: 120円
+*Chapter 3: 160円
+
+===Evolved Form===
+*Chapter 1: 150円
+*Chapter 2: 225円
+*Chapter 3: 300円
+{{Upgrade Cost|MIX
+|0
+|2,100
+|2,600
+|3,200
+|4,200
+|6,000
+|9,100
+|13,500
+|18,200
+|25,200
+|3,000
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yankee Cat
+|Normal Base HP = 150
+|Normal Base AP = 12
+|Normal Range = 150
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 5
+|Normal KB = 3
+|Normal Cost = 80
+|Normal Recharge = 200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Sukeban Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 6
+|Evolved Range = 120
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 18
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 150
+|Evolved Recharge = 300
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 150 HP
+|val-Normal-Attack Power = 12 damage<br>(9.73 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 6.67 ~ 2 seconds
+|val-Normal-MaxHP = 2,550 HP
+|val-Normal-MaxAttack = 205 damage<br>(166.22 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 102 damage<br>(45.67 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 10 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni167 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/168.html
+
+----
+{{CatNav|Shouchikubai Shiratori|Asiluga}}
+----
+
+{{Kishidan}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]

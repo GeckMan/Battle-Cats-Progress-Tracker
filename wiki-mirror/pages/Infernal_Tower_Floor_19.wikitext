@@ -1,0 +1,65 @@
+{{EnemiesAppearing|Angelic Sleipnir|Gabriel|Relic Doge|Shy Boy|Metal Doge|Bore|Loris|Gentleman Bros.|Bun Bun Black}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 19|Floor 19]].''
+'''Floor 19''' is the 19th floor of [[Infernal Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 18 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 150
+|enemy castle hp = 930,000 HP
+|enemies = {{Magnification|Angelic Sleipnir|100%
+|Gabriel|300%
+|Relic Doge|100%
+|Shy Boy|1,400%
+|Metal Doge|200%
+|Loris|100%
+|Bun Bun Black|300%}}
+|boss = {{Magnification|Bore|250%
+|Gentleman Bros.|200%}}
+|treasure = One of the following (1 time):<br>
+- Bricks +5 (13%)<br>
+- Feathers +5 (13%)<br>
+- Coal +5 (13%)<br>
+- Sprockets +5 (13%)<br>
+- Gold +5 (13%)<br>
+- Meteorite +5 (13%)<br>
+- Beast Bones +5 (13%)<br>
+- Ammonite +5 (9%)
+|XP = 2,850 XP
+|width = 4,000
+|max enemies = 9
+|jpname = 19th Floor
+|script = 19階
+|romaji = 19 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★9
+|prev stage = [[Infernal Tower/Floor 18|Floor 18]]
+|next stage = [[Infernal Tower/Floor 20|Floor 20]]
+}}
+
+==Battleground==
+*1 [[Angelic Sleipnir]] spawns.
+*Infinite [[Gabriel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Relic Doge]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Bore]] spawns as the boss.
+**2 [[Shy Boy]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**Infinite [[Relic Doge]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Metal Doge]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+*When the base reaches 80% HP:
+**1 [[Gentleman Bros. (Enemy)|Gentleman Bros.]] spawns as the boss.
+**15 [[Metal Doge]]s spawn, delay 2~2.67 seconds<sup>60f~80f</sup>.
+**1 [[Loris]] spawns.
+**1 [[Bun Bun Black]] spawns.
+**4 [[Relic Doge]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+
+==Strategy==
+This floor is very similar to the original [[Heavenly Tower/Floor 19|Floor 19]], and subsequently, [[Satan's Bedroom]]. The beginning is the same, aside from having one Relic Doge, and the first wave is the same, except oddly the Bore is actually weaker by 50% mag, and infinitely spawning Relic Doges will start spawning in place of [[I.M. Phace|I.M. Phace]]. The last wave has changed quite a bit however, [[Director Kurosawah]] has been replaced by Gentleman Bros, even more Relic Doges, and a Loris joins as well. A decent [[:Category:Critical Hit Cats|Critical Hitter]] unit should be used to help clear out the Metal Doges, units with [[:Category:Cats with Freeze Immunity|Freeze Immunity]] can be helpful here, [[:Category:Anti-Dark Cats|Anti Darks]], [[:Category:Anti-Red Cats|Reds]], and [[:Category:Anti-Floating Cats|Floatings]] help as well.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-19.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]

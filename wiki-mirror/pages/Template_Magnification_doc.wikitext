@@ -1,0 +1,38 @@
+{{Documentation}}
+Module to display the stats of an enemy at the magnification specified, for use in the infoboxes [[Template:Stage Info|Stage]] and [[Template:Story Info|Story Info]].
+
+==How to use==
+#Write out the name of the first enemy (see [[Module:Enemies/data/doc|here]]) for a list if you get [[:Category:Pages with script errors|script errors]]), then its magnification (doesn't matter if it has commas or % signs; these are preferred for code aesthetics)
+#Do this for each other enemy
+#This then outputs a formatted enemy list like in the example given. Make sure to use the preview option if you're inexperienced with this template.
+
+==Example Usage==
+<pre>
+{{Magnification
+|Doge|1000
+|Doge|1,000
+|Doge|1000%
+|Doge|1,000%
+|Pigge|100%
+|Sho Ayanokoji|100/100%
+|High Priest Mamon|0
+|Swordsman (form 1)|980%
+|Codename "Red Riding"|22%
+}}
+</pre>
+gives<br>
+{{Magnification
+|Doge|1000
+|Doge|1,000
+|Doge|1000%
+|Doge|1,000%
+|Pigge|100%
+|Sho Ayanokoji|100/100%
+|High Priest Mamon|0
+|Swordsman (form 1)|980%
+|Codename "Red Riding"|22%
+}}
+
+==Additional notes==
+*If you specify two values separated by a /, such as in the Ayanokōji Shō example above, you can specify when an enemy has separate HP and attack magnifications
+*If you set the magnification to 0, as in the High Priest Mamon example, no magnification is stated. This behaviour can be used to format [[Catclaw Dojo]] and [[Gauntlet]] stages where due to technical issues on FANDOM's side newlines cause formatting inconsistencies within infoboxes and tables.

@@ -1,0 +1,46 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Choco Capsule}}
+'''Boring if It's Only Tasty''' is the only stage in Choco Capsule Advent. It was added in [[Version 14.2 Update|Version 14.2]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn397 00 s ja.png]]
+|stage location = [[File:Mapname397 s ja.png]]
+|energy = 30
+|enemy castle hp = 1,500 HP
+|enemies = {{Magnification|Choco Capsule|100%}}
+|boss = {{Magnification|Choco Capsule|100%}}
+|treasure = - [[Cat Food]] +30 (100%, 1 time)
+|XP = 570 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Boring if It's Only Tasty
+|script = おいしいだけじゃつまらない
+|romaji = Oishī dake ja Tsumaranai
+|star = 1
+|event-chapter = Choco Capsule Advent
+|difficulty = ★1
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Choco Capsule (Enemy)|Choco Capsule]] spawns after 5.33 seconds<sup>160f</sup>.
+*2 [[Choco Capsule (Enemy)|Choco Capsules]] spawn after 12 seconds<sup>360f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*3 [[Choco Capsule (Enemy)|Choco Capsules]] spawn after 18.67 seconds<sup>560f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*When the base reaches 99% HP:
+**1 [[Choco Capsule (Enemy)|Choco Capsule]] spawns as the boss.
+**2 [[Choco Capsule (Enemy)|Choco Capsules]] spawn as bosses after 2 seconds<sup>60f</sup>, delay 2 seconds<sup>60f</sup>.
+**1 [[Choco Capsule (Enemy)|Choco Capsule]] spawns after 6 seconds<sup>180f</sup>.
+**8 [[Choco Capsule (Enemy)|Choco Capsules]] spawn after 8 seconds<sup>240f</sup>, delay 2.67~4 seconds<sup>80f~120f</sup>.
+**8 [[Choco Capsule (Enemy)|Choco Capsules]] spawn after 10 seconds<sup>300f</sup>, delay 2.67~4 seconds<sup>80f~120f</sup>.
+**5 [[Choco Capsule (Enemy)|Choco Capsules]] spawn after 13.33 seconds<sup>400f</sup>, delay 5.33~10.67 seconds<sup>160f~320f</sup>.
+
+==Strategy==
+A very easy stage any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01397-01.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

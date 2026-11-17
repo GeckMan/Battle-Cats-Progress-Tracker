@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Samurai Doggy|St. Pigge the 2nd|Doge Dark|Shadow Boxer K|Gory Dark|Gory Groom}}
+:''Not to be confused with the [[Infernal Tower]] version of [[Infernal Tower/Floor 13|Floor 13]].''
+'''Floor 13''' is the thirteenth floor of [[Heavenly Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 12 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 120
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|Samurai Doggy|200%
+|St. Pigge the 2nd|200%
+|Doge Dark|200%
+|Shadow Boxer K|100%
+|Gory Dark|100%}}
+|boss = {{Magnification|Gory Groom|300%}}
+|treasure = - [[Catfruit|Purple Catfruit Seed]] +5 (100%, 1 time)
+|XP = 2,280 XP
+|width = 4,900
+|max enemies = 15
+|jpname = 13th Floor
+|script = 13階
+|romaji = 13 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★6
+|prev stage = [[Heavenly Tower/Floor 12|Floor 12]]
+|next stage = [[Heavenly Tower/Floor 14|Floor 14]]
+}}
+
+==Battleground==
+*2 [[Samurai Doggy|Samurai Doggies]] spawn after 41.13 seconds<sup>1,234f</sup>, delay 2 seconds<sup>60f</sup>.
+*2 [[St. Pigge the 2nd]]s spawn after 40 seconds<sup>1,200f</sup>, delay 2 seconds<sup>60f</sup>.
+*5 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gory Groom]] spawns as the boss.
+**5 [[Shadow Boxer K]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**Infinite [[Gory Dark]]s spawn, delay 20 seconds<sup>600f</sup>.
+**8 [[Doge Dark]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+This stage is made almost entirely of [[:Category:Dark Enemies|Dark]] foes, with the exception of St. Pigge the 2nd. They can be dealt with easily, so you should know what this means: mono-teams. Bust out your [[XP Stage]] team and copy it onto another team. Then, do some minor modifications to account for the [[:Category:Red Enemies|Red]] if necessary. Remember that Samurai Doggy is both Dark and Red.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-13.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]

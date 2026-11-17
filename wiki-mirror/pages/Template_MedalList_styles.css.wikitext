@@ -1,0 +1,59 @@
+.medal-list-template {
+	position: relative;
+	width: 672px;
+	height: 560px;
+	margin: 20px 0px;
+	background-image: linear-gradient(to bottom, rgb(180, 180, 180) 0%, rgb(0, 0, 0) 8%, rgb(0, 0, 0) 92%, rgb(180, 180, 180) 100%);
+}
+
+.medal-list-template .medal-count-container {
+	position: absolute;
+	top: 16px;
+	left: 532px;
+	width: 120px;
+	height: 24px;
+	border-radius: 12px;
+	background-color: rgb(200, 200, 200);
+	z-index: 1;
+}
+
+.medal-list-template .medal-count-container .medal-count-unlocked {
+	position: absolute;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 10pt;
+	top: 0px;
+	left: 10px;
+	margin: 0px;
+}
+
+.medal-list-template .medal-count-container .medal-count-amount {
+	position: absolute;
+	color: white;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 10pt;
+	top: 4px;
+	right: 10px;
+	margin: 0px;
+	height: 16px;
+}
+
+.medal-list-template .scrollable-medal-viewer {
+	position: relative;
+	width: 672px;
+	height: 448px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	top: 56px;
+}
+
+.medal-list-template .scrollable-medal-viewer .medal-list-page {
+	position: absolute;
+	left: 0px;
+	width: 672px;
+	height: 448px;
+	padding: 0px 56px;
+	text-align: left;
+}
+
+/* [[Category:Template stylesheets]] */

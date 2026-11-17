@@ -1,0 +1,144 @@
+/* Main table */
+.enemy-dictionary {
+	color: #000;
+	margin: 0;
+	text-align: center;
+	border-radius: 20px;
+	border-bottom: 0 ridge #111133;
+	border: 2px solid #111133;
+	background: linear-gradient(to bottom, #978AC9 0%, #5C5194 50%, #39305A 100%);
+	padding: 5px 0;
+}
+/* Adjust size of icons */
+.enemy-dictionary .enemy-dictionary-icons a img {
+	width: 100px;
+	height: 100px;
+}
+.enemy-dictionary > .tabber > .tabber__header {
+	border-bottom: none;
+	margin-bottom: 5px;
+}
+.enemy-dictionary > .tabber >* .tabber__tabs {
+	justify-content: center;
+	/* gap: 8px 4px; */
+}
+/* Main rarity tabber */
+.enemy-dictionary>.tabber> :first-child .tabber__tab {
+	border-radius: 5px;
+	box-shadow: 0 0 2px black;
+	width: 110px;
+	background-color: #111133;
+	text-align: center;
+	height: 85px;
+	position: relative;
+
+	background-size: 45px;
+	background-repeat: no-repeat;
+	background-position: center 25%;
+
+	position: relative;
+	top: 70%;
+	font-size: 13px;
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	margin: 3px;
+	padding: 4px;
+	padding-top: calc(85px - 25px);
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.enemy-dictionary .tabber .tabber__tab:hover {
+	cursor: pointer;
+}
+.enemy-dictionary .tabber a.tabber__tab:not([aria-selected="true"]) {
+	color: #fff;
+}
+.enemy-dictionary .tabber a.tabber__tab[aria-selected="true"],
+.enemy-dictionary .tabber .tabber a.tabber__tab[aria-selected="true"] {
+	color: hsl(180, 100%, 45%);
+}
+.enemy-dictionary > .tabber > :first-child a.tabber__tab::after {
+	content: "▲";
+	color: #CF1C26;
+}
+.enemy-dictionary > .tabber > :first-child a.tabber__tab[aria-selected="true"]::after {
+	content: "▼";
+}
+/* Content container */
+.enemy-dictionary > .tabber > .tabber__panel {
+	background: #A49FC6;
+	border-radius: 7px;
+	margin: 6px;
+	box-shadow: rgb(68, 68, 68) 0px 0px 2px;
+}
+/* Sub-tabbers */
+.enemy-dictionary .tabber .tabber a.tabber__tab {
+	padding: 1px;
+	margin: 0;
+	border-radius: 7px;
+	border-bottom: 2px solid #CCC8C0;
+	text-align: center;
+	font-family: Comic Sans MS;
+	width: 100%;
+	box-shadow: none;
+}
+.enemy-dictionary .tabber .tabber a.tabber__tab {
+	height: auto;
+	font-size: 12px;
+	font-weight: bold;
+}
+.enemy-dictionary .tabber .tabber .tabber__panel  {
+	padding: 6px;
+}
+/* Backgrounds for tabs */
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(1) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/1/1a/Traitlesstraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(2) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/6/62/Redtraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(3) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/7/79/Floatingtraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(4) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/5/52/Darktraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(5) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/d/df/Metaltraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(6) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/6/60/Angeltraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(7) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/7/72/Alientraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(8) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/0/06/Zombietraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(9) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/d/d0/Relictraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(10) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/9/96/Akutraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(11) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/4/43/Typelesstraiticon.png");
+}
+.enemy-dictionary > .tabber > :first-child .tabber__tab:nth-child(12) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/c/c0/Colossustraiticon.png");
+	animation-name: trait-icons;
+	animation-duration: 12s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes trait-icons {
+	0% { background-image: url("https://static.wikitide.net/battlecatswiki/c/c0/Colossustraiticon.png"); }
+	17% { background-image: url("https://static.wikitide.net/battlecatswiki/6/65/Beasttraiticon.png"); }
+	33% { background-image: url("https://static.wikitide.net/battlecatswiki/d/d9/Sagetraiticon.png"); }
+	50% { background-image: url("https://static.wikitide.net/battlecatswiki/c/c4/Witchtraiticon.png"); }
+	67% { background-image: url("https://static.wikitide.net/battlecatswiki/6/62/EvaAngeltraiticon.png"); }
+	83% { background-image: url("https://static.wikitide.net/battlecatswiki/7/7b/Kaijintraiticon.png"); }
+}
+
+/* [[Category:Template stylesheets]] */

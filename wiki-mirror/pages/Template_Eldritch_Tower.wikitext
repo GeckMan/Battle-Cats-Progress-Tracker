@@ -1,0 +1,19 @@
+<includeonly><onlyinclude>{{#invoke:EventTemplates|main|it|{{{1}}}}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+{{Eldritch Tower|40}}<br/>
+<nowiki>{{Eldritch Tower|40}}</nowiki><br/>
+
+==Specific Aspects==
+Argument is amount of floors cleared
+
+==Usage==
+<pre>
+{{Eldritch Tower|40}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+| {{Eldritch Tower|40}}
+|}
+
+[[Category:Profile templates]]

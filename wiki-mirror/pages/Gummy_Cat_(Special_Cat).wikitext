@@ -1,0 +1,190 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Gummy Cat (Enemy)]].''
+'''Gummy Cat''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.5 Update|Version 8.5]] and can be unlocked by purchasing a special sale which contains Gummy Cat and 30 [[Cat Food]]. It was added to promote Japanese Battle Cats gummies. [[True Form]] added in [[Version 11.6 Update|Version 11.6]] increases health and knockbacks while gaining Behemoth Slayer.
+
+{{Cat Info
+|ID = 479
+|rarity = EX
+|name1 = Gummy Cat
+|name2 = Lucky Cat
+|name3 = Gummy Cat Soda
+}}
+
+==Evolution==
+Evolves into '''Lucky Cat''' at level 10.
+
+Evolves into '''Gummy Cat Soda''' at level 30 using [[Catfruit#Behemoth Stones|Behemoth Stones]] and XP.
+
+==Strategy/Usage==
+==='''Normal/Evolved Form'''===
+Gummy Cat, although having high health compared to most other meatshields, is largely obsolete most of the times in comparison to meatshields such as [[Tank Cat (Normal Cat)|Wall Cat]] or [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank Cat]], due to the simple reason of this unit having an excessively high knockback count of 1,000. This means that it won't stay in the frontline for long at all before getting knocked back. This ruins the whole point of Gummy Cat being a meatshield in the first place. Likewise, it has quite a long recharge time compared to most other traditional meatshields, mostly relegating it to [[User Rank]] or early-game encounters. With all this being said, one of its only redeeming factors is its health, but even that is outclassed by a sufficiently leveled Wall Cat or Crazed Tank Cat.
+
+==='''True Form'''===
+Gummy Cat Soda unfortunately brings very little to the table in terms of improvements. Even with its HP bonus and a rather high chance to dodge with Behemoth Slayer, Gummy Cat Soda is completely unable to take on the ruthless nature of Behemoth enemies. For this cute little treat, it's either dodge or die. By the time you're able to unlock Gummy Cat's True Form, you should already have much better meatshields at your disposal.
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 479
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni479 f00.png
+|Image2 = Uni479 c00.png
+|Image3 = Uni479 s00.png
+|Name1 (JP) = グミネコ (Gumi Neko, Gummy Cat)
+|Desc1 (JP) = 【成分】砂糖・水飴・ゼラチン・濃縮猫汁2％<br>【保存方法】直射日光・高温多湿を避けてください<br>※体力が高くノックバック回数が多い
+|Transl1 (JP) = 【Ingredients】Sugar・Starch Syrup・Gelatin・2% Concentrated Cat Juice<br>【Preservation Method】Avoid direct sunlight, high temperatures and humidity<br>※High strength and many knockbacks
+|Name2 (JP) = ラッキーネコ (Rakkī Neko, Lucky Cat)
+|Desc2 (JP) = 【成分】砂糖・水飴・ゼラチン・ヒゲ・濃縮猫汁22％<br>【保存方法】直射日光が当たる縁側にて保存<br>※見つけた人はラッキーが訪れるという幸運のグミ
+|Transl2 (JP) = 【Ingredients】Sugar・Starch Syrup・Gelatin・Whiskers・22% Concentrated Cat Juice<br>【Preservation Method】Leave on your porch so it can be exposed to direct sunlight<br>※Brings good luck to those who find it
+|Name3 (JP) = グミネコソーダ (Gumi Neko Sōda, Gummy Cat Soda)
+|Desc3 (JP) = 【成分】砂糖・水飴・ゼラチン・ヒゲ・炭酸ガス<br>【保存方法】よく使う出陣スロットに入れて保存<br>※超獣特効を持ち、涼しげな見た目が夏に最適
+|Transl3 (JP) = 【Ingredients】Sugar・Starch Syrup・Gelatin・Whiskers・Carbon Dioxide<br>【Preservation Method】Leave in your favorite battle slot and save<br>※Has Super-Beast Killer and a cool look perfect for summer
+}}
+
+==Cost==
+*Chapter 1: 100円
+*Chapter 2: 150円
+*Chapter 3: 200円
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gummy Cat
+|Normal Base HP = 1000
+|Normal Base AP = 1
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 9
+|Normal KB = 1000
+|Normal Cost = 100
+|Normal Recharge = 444
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Lucky Cat
+|Evolved Base HP = 1000
+|Evolved Base AP = 1
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 18
+|Evolved Speed = 9
+|Evolved KB = 1000
+|Evolved Cost = 100
+|Evolved Recharge = 444
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Gummy Cat Soda
+|True Base HP = 1500
+|True Base AP = 1
+|True Range = 140
+|True Foreswing = 8
+|True Attack Cooldown = 29
+|True Attack Length = 18
+|True Speed = 9
+|True KB = 1500
+|True Cost = 100
+|True Recharge = 444
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = {{AbilityIcon|Behemoth Slayer}} [[Behemoth Slayer]] (20% chance to dodge [[:Category:Behemoth Enemies|Behemoth]] enemies' attacks for 30f <sub>1 second</sub>)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 1 damage<br>(0.81 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 1,000 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 14.8 ~ 6 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 17 damage<br>(13.78 DPS)
+|val-Evolved-Health = 17,000 HP
+|val-Evolved-Attack Power = 17 damage<br>(13.78 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 1,000 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 14.8 ~ 6 seconds
+|val-True-Health = 25,500 HP
+|val-True-Attack Power = 17 damage<br>(13.78 DPS)
+|val-True-Attack Range = 140
+|val-True-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-True-Movement Speed = 9
+|val-True-Knockback = 1,500 times
+|val-True-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-True-Recharge Time = 14.8 ~ 6 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Lucky Cat
+|Evolved Image = Uni479 c00.png
+|True Name = Gummy Cat Soda
+|True Image = Uni479 s00.png
+|True Description = 第３形態への進化で体力が上昇！<br>さらに超獣特効も取得！
+|Catfruit1 = PurpleStone
+|Catfruit2 = RedStone
+|Catfruit3 = BlueStone
+|Catfruit4 = GreenStone
+|Catfruit5 = YellowStone
+|Quantity Catfruit1 = x5
+|Quantity Catfruit2 = x5
+|Quantity Catfruit3 = x5
+|Quantity Catfruit4 = x5
+|Quantity Catfruit5 = x5
+|Quantity XP = 200,000
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+===[[Battle Cats Quest]]===
+Gummy Cat appears as a playable skin.
+<gallery position="center" hideaddbutton="true">
+BCQ gummy cat.png
+</gallery>
+
+{{Gallery|Uni479 f00}}
+
+==Trivia==
+*Gummy Cat has the most knockbacks of any [[Cat Units|Cat Unit]].
+*Gummy Cat was the first unit to require real money to obtain.
+**Because of this, purchasing units with real money was originally a feature exclusive to the [[Nyanko Daisensou|Japanese version]].
+*Unlike the Cat Unit, Gummy Cat's [[Gummy Cat (Enemy)|enemy counterpart]] can be found outside of the Japanese version, in [[Infernal Tower]] and [[Heartbeat Catcademy]] stages.
+*Gummy Cat Soda had the highest chance to dodge [[:Category:Behemoth Enemies|Behemoths]]' attacks amongst all [[:Category:Behemoth Slayer Cats|Behemoth Slayer units]], before being surpassed by Cat Egg Pod's 50% in Version 12.7.
+
+==Reference==
+*https://battlecats-db.com/unit/480.html
+
+----
+{{CatNav|Lumina|Neko-Musume}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Behemoth Slayer Cats]]
+[[Category:Cats requiring Behemoth Stones for True Form]]

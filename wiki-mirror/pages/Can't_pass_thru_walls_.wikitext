@@ -1,0 +1,77 @@
+{{EnemiesAppearing|Pigge|Sir Seal|Kang Roo|One Horn|Those Guys|B.B.Bunny|Dashing Face|Ghost Doge}}
+'''Can't pass thru walls?''' is the third stage in [[Ghostly Houseguests (Monthly Event)|Ghostly Houseguests]].
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn032 02 s en.png]]
+|stage location = [[File:Mapname032 s en.png]]
+|energy = 75
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Pigge|200%
+|Sir Seal|200%
+|Kang Roo|200%
+|One Horn|200%
+|Those Guys|100%
+|B.B.Bunny|100%
+|Ghost Doge|100%}}
+|boss = {{Magnification|Dashing Face|100%}}
+|enemies2 = {{Magnification|Pigge|300%
+|Sir Seal|300%
+|Kang Roo|300%
+|One Horn|300%
+|Those Guys|150%
+|B.B.Bunny|150%
+|Ghost Doge|150%}}
+|boss2 = {{Magnification|Dashing Face|150%}}
+|enemies3 = {{Magnification|Pigge|400%
+|Sir Seal|400%
+|Kang Roo|400%
+|One Horn|400%
+|Those Guys|200%
+|B.B.Bunny|200%
+|Ghost Doge|200%}}
+|boss3 = {{Magnification|Dashing Face|200%}}
+|enemies4 = {{Magnification|Pigge|600%
+|Sir Seal|600%
+|Kang Roo|600%
+|One Horn|600%
+|Those Guys|300%
+|B.B.Bunny|300%
+|Ghost Doge|300%}}
+|boss4 = {{Magnification|Dashing Face|300%}}
+|treasure = - [[Vengeful Cat (Rare Cat)|Vengeful Cat]] (3%, 1 time)
+|XP = 2,250 XP
+|width = 5,600
+|max enemies = 10
+|jpname = Can't a Ghost Get Through a Wall?
+|script = 幽霊って壁抜けできないの？
+|romaji = Yūrei tte Kabe Nukedekinaino ？
+|star = 4
+|event-chapter = [[Ghostly Houseguests (Monthly Event)|Ghostly Houseguests]]
+|difficulty = ★3
+|prev stage = [[But we're on vacation]]
+|next stage = [[Just hit the skies!]]
+}}
+
+==Battleground==
+*Infinite [[Pigge]]s spawn after 8 seconds<sup>240f</sup>, delay 4~24 seconds<sup>120f~720f</sup>.
+*Infinite [[Sir Seal]]s spawn after 16 seconds<sup>480f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*Infinite [[One Horn]]s spawn after 24 seconds<sup>720f</sup>, delay 90~94 seconds<sup>2,700f~2,820f</sup>.
+*Infinite [[Those Guys]] spawn after 20 seconds<sup>600f</sup>, delay 4~12 seconds<sup>120f~360f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+*3 [[Ghost Doge]]s spawn after 40 seconds<sup>1,200f</sup>, delay 60~64 seconds<sup>1,800f~1,920f</sup>.
+*When the base reaches 90% HP:
+**1 [[Dashing Face]] spawns as the boss.
+**Infinite [[Kang Roo]]s spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**3 [[One Horn]]s spawn, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+
+==Strategy==
+Dashing Face has very short range, standing only at 170, plus he drops a ton of money when killed. Stacking [[Salon Cat (Rare Cat)|Paris Cat]] will dispose of him quickly.
+
+==Reference==
+*https://battlecats-db.com/stage/s01032-03.html
+
+{{Monthly}}
+[[Category:Ghostly Houseguests Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

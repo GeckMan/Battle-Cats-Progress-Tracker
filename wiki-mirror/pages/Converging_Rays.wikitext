@@ -1,0 +1,60 @@
+'''Converging Rays''' is the first stage in [[Crash Fever Collaboration Event#Moonlit City|Moonlit City]].
+{{EnemiesAppearing|Celeboodle|Doge Dark|Metal Hippoe|Mobius}}
+{{Stage Info
+|stage name = [[File:rc076.png]]
+[[File:Mapsn042 00 c en.png]]
+|stage location = [[File:Mapname042 c en.png]]
+|energy = 100
+|enemy castle hp = 100,000 HP
+|enemies = {{Magnification|Celeboodle|100%
+|Doge Dark|200%
+|Metal Hippoe|100%}}
+|boss = {{Magnification|Mobius|25%}}
+|enemies2 = {{Magnification|Celeboodle|200%
+|Doge Dark|400%
+|Metal Hippoe|200%}}
+|boss2 = {{Magnification|Mobius|50%}}
+|enemies3 = {{Magnification|Celeboodle|300%
+|Doge Dark|600%
+|Metal Hippoe|300%}}
+|boss3 = {{Magnification|Mobius|75%}}
+|score reward = '''6,500''': 200,000 XP<br>
+'''3,500''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 3,000 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Converging Light
+|script = 収束する光
+|romaji = Shūsoku suru hikari
+|star = 3
+|event = [[Crash Fever Collaboration Event]]
+|event-chapter = [[Crash Fever Collaboration Event#Moonlit City|Moonlit City]]
+|difficulty = ★4
+|prev stage = N/A
+|next stage = [[Fever Time!]]
+}}
+
+==Battleground==
+*Infinite [[Celeboodle]]s spawn after 20 seconds<sup>600f</sup>, delay 106.67 seconds<sup>3,200f</sup>.
+*1 [[Doge Dark]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Doge Dark]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Doge Dark]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mobius (Enemy)|Mobius]] spawns as the boss.
+**1 [[Metal Hippoe]] spawns.
+**4 [[Doge Dark]]s spawn, delay 26.67~28.33 seconds<sup>800f~850f</sup>.
+**4 [[Doge Dark]]s spawn, delay 26.67~28.33 seconds<sup>800f~850f</sup>.
+**4 [[Doge Dark]]s spawn, delay 26.67~28.33 seconds<sup>800f~850f</sup>.
+**4 [[Celeboodle]]s spawn, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+
+==Strategy==
+Any spammable AOE units will take care of the Doge Dark spam in this stage. Mobius has high range but long TBA and quite low damage, so she shouldn't be a worry.
+
+==Reference==
+*https://battlecats-db.com/stage/s02042-01.html
+
+{{Crash Fever}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

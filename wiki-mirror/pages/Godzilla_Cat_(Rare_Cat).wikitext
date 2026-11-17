@@ -1,0 +1,125 @@
+:''Not to be confused with [[Cat Godzilla (Rare Cat)|Cat Godzilla]].''
+'''Godzilla Cat''' is a [[:Category:Rare Cats|Rare Cat]] introduced in [[Version 10.6 Update|Version 10.6]] and could be unlocked by clearing any stage in [[Godzilla Collaboration Event#Godzilla vs Cats|Godzilla vs Cats]] of the [[Godzilla Collaboration Event]].
+
+{{Cat Info
+|ID = 611
+|rarity = RR
+|name1 = Godzilla Cat
+|name2 = Shin Godzilla Cat
+}}
+
+==Evolution==
+Evolves into '''Shin Godzilla Cat''' at level 10.
+
+==Strategy/Usage==
+This unit is unfortunately outclassed by other [[:Category:Anti-Dark Cats|anti-Dark]] units due to its awful stats and [[Single Attack]] attack. Because of that, this unit provides no use compared to other units such as [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], [[Flower Cat (Special Cat)|Bombercat]], [[Salon Cat (Rare Cat)|Cyborg Cat]], and [[Lizard Cat (Normal Cat)|Dragon Cat]]. The latter of them outclass its niche of a ranged attacker, and the former of them outclasses its niche as an anti-Dark unit.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 611
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni611 f00.png
+|Image2 = Uni611 c00.png
+|Name1 = Godzilla Cat
+|Desc1 = A Cat who loves to play Godzilla, rampaging<br>through the city streets meowing furiously.<br>Strong vs. Dark Enemies
+|Name2 = Shin Godzilla Cat
+|Desc2 = Wants to become the king of monsters like Godzilla.<br>Drinks milk daily, hoping to grow to 118.5 meters tall.<br>Strong vs. Dark Enemies
+|Name1 (JP) = ネコゴジラ (Neko Gojira, Cat Godzilla)
+|Desc1 (JP) = ゴジラになりきり怪獣ごっこを楽しむネコ<br>にゃー！と力強い咆哮を上げて街を練り歩く<br>黒い敵にめっぽう強い
+|Transl1 (JP) = A cat who becomes Godzilla and enjoys playing monsters<br>Meow! Roaring powerfully and parading around the city<br>Strong against Dark enemies
+|Name2 (JP) = シン・ネコゴジラ (Shin Nekogojira, Shin Neko Godzilla)
+|Desc2 (JP) = ゴジラのような怪獣王になりたいと願うネコ<br>身長118.5mを目指して毎日牛乳を飲んでいる<br>黒い敵にめっぽう強い
+|Transl2 (JP) = A cat who wants to be a monster king like Godzilla<br>I drink milk every day aiming for a height of 118.5m<br>Strong against Dark enemies
+|Name1 (TW) = 哥吉拉貓
+|Desc1 (TW) = 一隻享受著遊玩扮演哥吉拉遊戲的貓咪<br>以「喵！」的強力吼叫且在街上遊走<br>善於攻擊黑色敵人
+|Name2 (TW) = 正宗哥吉拉貓
+|Desc2 (TW) = 一心想成為哥吉拉般的怪獸王的貓咪<br>目標可以長到118.5m所以每天都會喝牛奶<br>善於攻擊黑色敵人
+|Name1 (KR) = 고양이 고질라
+|Desc1 (KR) = 고질라로 변신해 괴물놀이를 즐기는 고양이<br>냥~! 크게 소리지르며 거리를 행진하다<br>검은 적에 엄청 강하다
+|Name2 (KR) = 신 고양이 고질라
+|Desc2 (KR) = 고질라같은 괴물왕이 되려는 고양이<br>118.5m의 키를 목표로 매일 우유를 마시고 있다<br>검은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 750¢
+*Chapter 2: 1,125¢
+*Chapter 3: 1,500¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Godzilla Cat
+|Normal Base HP = 600
+|Normal Base AP = 435
+|Normal Range = 350
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 133
+|Normal Attack Length = 45
+|Normal Speed = 4
+|Normal KB = 3
+|Normal Cost = 750
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Shin Godzilla Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 435
+|Evolved Range = 350
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 133
+|Evolved Attack Length = 45
+|Evolved Speed = 4
+|Evolved KB = 3
+|Evolved Cost = 750
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 435 damage<br>(87 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 7,395 damage<br>(1,479 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 7,395 damage<br>(1,479 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni611 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/612.html
+
+----
+{{CatNav|Gold Brick Cat|Princess Cat}}
+----
+
+{{Godzilla}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Cats with Strong ability]]

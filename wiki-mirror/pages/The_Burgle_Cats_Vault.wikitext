@@ -1,0 +1,114 @@
+[[File:Img item key.png|thumb|right|The Key for unlocking chests]]
+The '''Vault''' is where the player will store their stolen chests and unlock them, the player can either use keys to unlock the chests, allow the Tank Cat to manually break 50% of the lock over time, or use Cat Food to instantly unlock them. There are traps, accessories and clothing chests that drop the corresponding items upon unlock. Keys get refilled every 10 minutes, and it will stop refilling when the player holds at least 10 keys, the player can also buy Keys with Friend Points.
+
+==Standard Chests Probability==
+Each chest contains 3 items of random rarity and exp amount. The standard probability is as follows:
+
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |
+! scope="col" |NN
+! scope="col" |RR
+! scope="col" |SR
+! scope="col" |UR
+|-
+! scope="row" style="text-align:center;" |[[File:Img treasure 0.png|100px]][[File:Img treasure 4.png|100px]][[File:Img treasure 8.png|100px]]
+|64%<br>12~14 exp
+|30%<br>6~8 exp
+|5%<br>3~3 exp
+|1%<br>1~1 exp
+|-
+! scope="row" style="text-align:center;" |[[File:Img treasure 1.png|100px]][[File:Img treasure 5.png|100px]][[File:Img treasure 9.png|100px]]
+|56%<br>21~25 exp
+|35%<br>13~15 exp
+|8%<br>5~7 exp
+|1%<br>1~1 exp
+|-
+! scope="row" style="text-align:center;" |[[File:Img treasure 2.png|100px]][[File:Img treasure 6.png|100px]][[File:Img treasure 10.png|100px]]
+|47%<br>44~54 exp
+|35%<br>25~31 exp
+|15%<br>8~10 exp
+|3%<br>1~1 exp
+|-
+! scope="row" style="text-align:center;" |[[File:Img treasure 3.png|100px]][[File:Img treasure 7.png|100px]][[File:Img treasure 11.png|100px]]
+|31%<br>158~193 exp
+|32%<br>81~99 exp
+|27%<br>14~17 exp
+|10%<br>1~1 exp
+|}
+
+==Shop Deals exclusives==
+The chests below are only obtainable from the [[The Burgle Cats/Shop|Shop]].
+
+===UR Item Pickup===
+This chest will have increased drop rate on one specific item, its drop rate depends on the player's league
+
+<pre>
+Values below are at League 8
+*Trap Chest: 1.9x - 3.4x chance, league dependent
+NN: 28% 566~692 exp
+RR: 30% 245~299 exp
+SR: 27%   39~47 exp
+UR: 15%     1~1 exp
+*Outfit Chest: 1.5 - 3.2x chance, league dependent
+NN: 28% 566~692 exp
+RR: 30% 245~299 exp
+SR: 27%   39~47 exp
+UR: 15%     1~1 exp
+</pre>
+
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |
+! scope="col" |NN
+! scope="col" |RR
+! scope="col" |SR
+! scope="col" |UR
+|-
+! scope="row" style="text-align:left;" |[[File:Img treasure 15.png|100px]] [[File:Img treasure 16.png|100px]] [[File:Img treasure 17.png|100px]]
+|31%<br>158~193 exp
+|32%<br>81~99 exp
+|27%<br>14~17 exp
+|10%<br>1~1 exp
+|}
+
+===More than SR Item Pickup===
+This chest will only drop SR and UR items.
+
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |
+! scope="col" |NN
+! scope="col" |RR
+! scope="col" |SR
+! scope="col" |UR
+|-
+! scope="row" style="text-align:left;" |[[File:Img treasure 12.png|100px]] [[File:Img treasure 13.png|100px]] [[File:Img treasure 14.png|100px]]
+|
+|
+|80%<br>19~23 exp
+|20%<br>1~1 exp
+|}
+
+===Only UR Items Pickup===
+This chest will drop only UR items.
+
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |
+! scope="col" |NN
+! scope="col" |RR
+! scope="col" |SR
+! scope="col" |UR
+|-
+! scope="row" style="text-align:left;" |[[File:Img treasure 18.png|100px]] [[File:Img treasure 19.png|100px]] [[File:Img treasure 20.png|100px]]
+|
+|
+|
+|100%<br>1~1 exp
+|}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+bg treasureroom.png
+bg treasureroom light.png
+ui treasureroom 00.png
+</gallery>
+
+[[Category:The Burgle Cats]]

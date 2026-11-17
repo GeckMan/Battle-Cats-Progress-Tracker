@@ -1,0 +1,271 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Mega-Mooth|Dagshund|Gabriel|Gory Dark}}
+:''This article is about the original version of Mega Menace. For the newer version's stages, see [[Mega Menace/On Mighty Wings Lv1~20]].''
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[file:Mapsn006 00 a en.png]]
+|stage location = [[File:Mapname007 a en.png]]
+|enemies = - [[Dagshund]]<br>
+- [[Gabriel]]<br>
+- [[Gory Dark]]<br>
+- [[Ms. Sign]] (100%)<br>
+|boss = - [[Mega-Mooth]]
+|restriction = [[No Continues]]
+|width = 5,800
+|max enemies = 20
+|jpname = Flight Lv.X
+|script = 飛来Lv.X
+|romaji = Hirai Lv.X
+|event = [[Mega Menace (Old)]]
+|event-chapter = [[Mega Menace (Old)|Mega Menace!!]]
+|require = Complete [[Into the Future]] Chapter 1
+}}
+
+==Battleground==
+*The enemy base's HP starts at 250,000 and increases by 50,000 with each stage.
+*1 [[Mega-Mooth]] spawns after 6.67 seconds<sup>200f</sup>.
+*7 [[Dagshund]]s spawn after 10 seconds<sup>300f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*15 [[Gabriel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 10~16.67 seconds<sup>300~500f</sup>.
+*10 [[Gory Dark]]s spawn after 33.3 seconds<sup>1,000f</sup>, delay 16.67~23.33 seconds<sup>500~700f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |On
+Mighty Wings
+
+Lv.
+! colspan="5" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy
+cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" style="text-align: center;" |Mega-Mooth
+! rowspan="2" scope="col" |Dagshund
+! rowspan="2" scope="col" |Gabriel
+! rowspan="2" scope="col" |Gory Dark
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+|-
+! scope="row" |21
+|1000%
+|700%
+|100%
+|100%
+|100%
+|70
+|Purple Catfruit Seed +5
+|1,330
+|-
+! scope="row" |22
+|1300%
+|750%
+|110%
+|110%
+|110%
+|70
+|Bricks +3
+|1,330
+|-
+! scope="row" |23
+|1260%
+|800%
+|120%
+|120%
+|120%
+|70
+|XP +500,000
+|1,330
+|-
+! scope="row" |24
+|1390%
+|850%
+|130%
+|130%
+|130%
+|70
+|Leadership +1
+|1,330
+|-
+! scope="row" |25
+|1500%
+|900%
+|150%
+|150%
+|150%
+|90
+|Red Catfruit Seed +5
+|1,710
+|-
+! scope="row" |26
+|1700%
+|960%
+|180%
+|180%
+|180%
+|90
+|Charcoal +3
+|1,710
+|-
+! scope="row" |27
+|1900%
+|1020%
+|210%
+|210%
+|210%
+|90
+|XP +500,000
+|1,710
+|-
+! scope="row" |28
+|2100%
+|1080%
+|240%
+|240%
+|240%
+|90
+|Blue Catfruit Seed +5
+|1,710
+|-
+! scope="row" |29
+|2300%
+|1140%
+|270%
+|270%
+|270%
+|90
+|Feathers +5
+|1,710
+|-
+! scope="row" |30
+|2500%
+|1200%
+|300%
+|300%
+|300%
+|110
+|XP +750,000
+|2,090
+|-
+! scope="row" |31
+|3000%
+|1260%
+|340%
+|340%
+|340%
+|110
+|Green Catfruit Seed +5
+|2,090
+|-
+! scope="row" |32
+|3500%
+|1320%
+|380%
+|380%
+|380%
+|110
+|Beast Bones +5
+|2,090
+|-
+! scope="row" |33
+|4000%
+|1380%
+|420%
+|420%
+|420%
+|110
+|XP +750,000
+|2,090
+|-
+! scope="row" |34
+|4500%
+|1440%
+|460%
+|460%
+|460%
+|110
+|Yellow Catfruit Seed +5
+|2,090
+|-
+! scope="row" |35
+|5000%
+|1500%
+|500%
+|500%
+|500%
+|120
+|Gold +5
+|2,280
+|-
+! scope="row" |36
+|5600%
+|1600%
+|520%
+|520%
+|520%
+|120
+|XP +1,000,000
+|2,280
+|-
+! scope="row" |37
+|6200%
+|1700%
+|540%
+|540%
+|540%
+|120
+|Meteorite +7
+|2,280
+|-
+! scope="row" |38
+|6800%
+|1800%
+|560%
+|560%
+|560%
+|120
+|Epic Catfruit +5
+|2,280
+|-
+! scope="row" |39
+|7400%
+|1900%
+|580%
+|580%
+|580%
+|120
+|Sprockets +10
+|2,280
+|-
+! scope="row" |40
+|8000%
+|2000%
+|600%
+|600%
+|600%
+|130
+|XP +1,500,000
+|2,470
+|}
+
+==Strategies==
+This set of stages involves few, strong enemies, with the difficulty coming from having to defeat them before they pile up, all while Mega-Mooth keeps attacking. For this reason, single target is not quite a problem, meaning that [[Swimmer Cat (Super Rare Cat)|Fishman]], [[Express Cat (Super Rare Cat)|Bullet Train]] and ubers like [[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]] will not be hindered by this ability. Other cats should either be meatshields, mid-range attackers like [[Weightlifter Cat (Super Rare Cat)|Pizza]] and [[Mer-Cat (Rare Cat)|Cameraman]] or part of cat combos, the use of which is highly recommended as these stages do not require much variety in terms of cats.
+
+Recommended Ubers and Legends include: Lufalan Pasalan, [[Kasli the Scourge (Uber Rare Cat)|Ritual Saint Kasli]], various rushers, [[Empress Chronos (Uber Rare Cat)|Chronos]], [[Jeanne (Legend Rare Cat)|Jeanne]], [[Urashima Taro (Uber Rare Cat)|King Gamereon]], [[Sodom (Uber Rare Cat)|Sodom]].
+
+==Walkthrough==
+{{Walkthrough
+|MPccD-JAqpk|Chuck|No Ubers.
+Max slow talent recommended for Cyberpunk
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s24007.html
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Mega Menace Stages]]
+[[Category:Gauntlets]]

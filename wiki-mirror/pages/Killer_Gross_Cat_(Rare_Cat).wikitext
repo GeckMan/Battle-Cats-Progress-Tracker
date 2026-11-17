@@ -1,0 +1,141 @@
+:''This article is about the Cat Unit. For the enemy, see [[Killer Gross Cat (Enemy)]].''
+'''Killer Gross Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when clearing Levels 6, 8 or 10 of [[Horde of Cats]]. It was added in [[Version 14.2 Update|Version 14.2]] for [[Nyanko Daisensou|BCJP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 785
+|rarity = RR
+|name1 = Killer Gross Cat
+|name2 = True Killer Gross Cat
+}}
+
+==Evolution==
+Evolves into '''True Killer Gross Cat''' at level 10.
+
+==Strategy/Usage==
+This is a <u>joke character</u>. Despite its high range, its stats are absolutely terrible, being way too expensive for what it does, so even if you need a Cat with a lot of range, this is not the one to use.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 785
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni785 f00.png
+|Image2 = Uni785 c00.png
+|Name1 = Killer Gross Cat
+|Desc1 = A Gross Cat with its feral side unleashed.<br>Strikes enemies at distance with long, mighty legs.<br>Costs a bit extra to recruit to fight for you.
+|Name2 = True Killer Gross Cat
+|Desc2 = Its feral side has completely overwhelmed it.<br>Takes pride in the attack range of his long legs.<br>Single enemy attacks have exceptional power and range.
+|Name1 (JP) = 殺意のキモネコ (Satsui no Kimoneko, Killer Gross Cat)
+|Desc1 (JP) = 野生の本能を解放したキモネコ<br>長い足でより遠くの敵を攻撃できる遠距離型キャラ<br>従えるには少々お金がかかる
+|Transl1 (JP) = A Gross Cat who unleashed its feral instincts<br>A long distance unit who can attack distant enemies with its long legs<br>Rather expensive to bring under control
+|Name2 (JP) = 真・殺意のキモネコ (Shin Satsui no Kimoneko, True Killer Gross Cat)
+|Desc2 (JP) = 本能の覚醒が止まらないキモネコ<br>長く伸びた自慢の足で遠くの敵もなぎ倒す<br>単発の攻撃力とコストはハイクラス
+|Transl2 (JP) = A Gross Cat whose awakening can't be stopped<br>Its proud, elongated legs can even flatten faraway enemies<br>Singular attack power and cost are premium
+|Name1 (TW) = 殺意噁心貓
+|Desc1 (TW) = 解放野性本能的噁心貓<br>可以攻擊遠處敵人的遠距離攻擊型角色<br>想要他聽話就得花錢
+|Name2 (TW) = 真・殺意噁心貓
+|Desc2 (TW) = 無法停止本性覺醒的噁心貓<br>用自豪的長腿攻擊遠處的敵人<br>單發的攻擊力與生產成本都很高
+|Name1 (KR) = 살의의 징글 고양이
+|Desc1 (KR) = 야생의 본능을 해방한 징글 고양이<br>긴 다리로 보다 멀리 있는 적도 공격 가능한 원거리형 캐릭터<br>길들이기 위해서는 조금 돈이 든다
+|Name2 (KR) = 독기의 징글 고양이
+|Desc2 (KR) = 본능의 각성이 멈추지 않는 징글 고양이<br>길게 뻗은 다리가 자랑이며 멀리 있는 적을 쓰러뜨린다<br>단발의 공격력과 코스트는 하이클래스
+}}
+
+==Cost==
+*Chapter 1: 5,000¢
+*Chapter 2: 7,500¢
+*Chapter 3: 10,000¢
+{{Upgrade Cost
+|MIX
+|0
+|700
+|1,600
+|2,800
+|4,300
+|6,100
+|8,200
+|10,600
+|13,300
+|16,300
+|max = 50
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Killer Gross Cat
+|Normal Base HP = 400
+|Normal Base AP = 100
+|Normal Range = 700
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 37
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 5000
+|Normal Recharge = 330
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = True Killer Gross Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 100
+|Evolved Range = 700
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 37
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 5000
+|Evolved Recharge = 330
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 100 damage<br>(22.39 DPS)
+|val-Normal-Attack Range = 700
+|val-Normal-Attack Frequency = 134f <sub>4.47 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 11 ~ 2.2 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(380.6 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(380.6 DPS)
+|val-Evolved-Attack Range = 700
+|val-Evolved-Attack Frequency = 134f <sub>4.47 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 11 ~ 2.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni785 f00}}
+
+==Trivia==
+*Prior to [[Version 14.6 Update|Version 14.6]], Killer Gross Cat's English description falsely claimed that it had Area Attack. This line was the exact same one as in [[Killer Tank Cat (Rare Cat)|Killer Tank Cat]]'s English description, suggesting it was copied over.
+*Similarly to Killer Cat, Killer Gross Cat appeared in [[Metal Slug Collaboration Event|Metal Slug Defense]] as an enemy and an ally. Unlike in [[The Battle Cats]], its legs were the same size as Gross Cat, it attacked very quickly and had a chance to fire [[Wave Attack]]s.
+*The spritesheet for Killer Gross Cat has an unused effect that is shaped similarly to the Cat's head with two red streaks over its eyes. This effect goes unused, but its existence implies that Killer Gross Cat may have originally had a different attack animation.
+*Killer Gross Cat has the highest standing range of all Rare Cats.
+
+==Reference==
+*https://battlecats-db.com/unit/786.html
+
+----
+{{CatNav|Choco Capsule|The Amazing Catman}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Killer Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]

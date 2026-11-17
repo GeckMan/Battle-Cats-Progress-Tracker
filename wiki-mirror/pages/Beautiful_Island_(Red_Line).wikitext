@@ -1,0 +1,65 @@
+{{DISPLAYTITLE:Beautiful Island}}
+{{TWExclusive}}
+{{EnemiesAppearing|Kang Roo|Squire Rel|Croco|HAPPI}}
+'''Beautiful Island''' is the third stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]].
+
+{{Stage Info
+|stage name = [[File:rc127.png]]
+[[File:Mapsn103 02 c tw.png]]
+|stage location = [[File:Mapname103 c tw.png]]
+|energy = 120
+|enemy castle hp = 75,000 HP
+|enemies = {{Magnification|Kang Roo|400%
+|Squire Rel|400%
+|Croco|400%
+|HAPPI|50%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|enemies2 = {{Magnification|Kang Roo|600%
+|Squire Rel|600%
+|Croco|600%
+|HAPPI|75%}}
+|boss2 = {{Magnification|Squire Rel|150%}}
+|enemies3 = {{Magnification|Kang Roo|800%
+|Squire Rel|800%
+|Croco|800%
+|HAPPI|100%}}
+|boss3 = {{Magnification|Squire Rel|200%}}
+|treasure = - [[HAPPI (Rare Cat)|HAPPI]] (15%, 1 time)
+|score reward = '''6,500''': 100,000 XP<br>
+'''5,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': 25,000 XP
+|XP = 13,200 XP
+|width = 4,400
+|max enemies = 10
+|twname = Beautiful Island
+|twscript = 美麗島
+|twromaji = Měilì Dǎo
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]
+|difficulty = ★4
+|prev stage = [[Central Park]]
+|next stage = [[Kaohsiung Station]]
+}}
+
+==Battleground==
+*1 [[Kang Roo]] spawns after 16.67 seconds<sup>500f</sup>.
+*10 [[Squire Rel]]s (400%) spawn after 20 seconds<sup>600f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*5 [[Squire Rel]]s (400%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*5 [[Squire Rel]]s (400%) spawn after 66.67 seconds<sup>2,000f</sup>, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*5 [[Squire Rel]]s (400%) spawn after 100 seconds<sup>3,000f</sup>, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] (100%) spawns as the boss.
+**Infinite [[Croco]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**4 [[HAPPI (Enemy)|HAPPIs]] spawn, delay 16.67 seconds<sup>500f</sup>.
+
+==Strategy==
+Easy stage, even [[:Category:Normal Cats|Normal Cats]] can beat it.
+
+==Reference==
+*https://battlecats-db.com/stage/s02103-03.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

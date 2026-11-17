@@ -1,0 +1,80 @@
+{{EnemiesAppearing|Bannerman Doge|Cerberus Kids|Aku Doge|Relic Doge|Aku Gory|Revolutionary Nobunaga}}
+'''Despot's Ambition (Merciless)''' is the fourth and final stage in [[Road to Unification#Final Battle! The Rebellious King|Final Battle! The Rebellious King]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn389 03 s en.png]]
+|stage location = [[File:Mapname389 s en.png]]
+|energy = 200
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|Bannerman Doge|4,000%
+|Cerberus Kids|500%
+|Aku Doge|400%
+|Relic Doge|100%
+|Aku Gory|200%}}
+|boss = {{Magnification|Revolutionary Nobunaga|5,000%}}
+|enemies2 = {{Magnification|Bannerman Doge|8,000%
+|Cerberus Kids|1,000%
+|Aku Doge|800%
+|Relic Doge|200%
+|Aku Gory|400%}}
+|boss2 = {{Magnification|Revolutionary Nobunaga|10,000%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +1,250 (100%, unlimited)
+|restriction = [[No Continues]]
+|score reward = '''6,100''': [[Leadership]] +1<br>
+'''4,400''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': [[Catseye]] [Legend] +3
+|XP = 6,000 XP
+|width = 4,700
+|max enemies = 20
+|jpname = Supreme King's Ambition Super Extreme
+|script = 覇王の野望 超極ムズ
+|romaji = Haō no Yabō Chōgokumuzu
+|star = 2
+|event-chapter = [[Road to Unification#Final Battle! The Rebellious King|Final Battle! The Rebellious King]]
+|difficulty = ★10
+|prev stage = [[Despot's Ambition (Deadly)]]
+|next stage = N/A
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*Infinite [[Bannerman Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 16.67 seconds<sup>500f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*3 [[Aku Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Relic Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*1 [[Aku Gory]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Revolutionary Nobunaga]] spawns as the boss.
+**3 [[Aku Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**3 [[Relic Doge]]s spawn, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**3 [[Aku Gory|Aku Gories]] spawn after 6.67 seconds<sup>200f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+
+==Strategy==
+Much of this stage's difficulty comes in the form of Aku Gory, the main pusher and damage dealer of the stage. Similar to the previous stage, however, they do not appear often, spawning almost every minute after the enemy base is hit. Formulating the player's strategy against these consistent spawns is key to victory. For easier stalling, leveling [[Tank Cat (Normal Cat)|dual]] [[Crazed Tank Cat (Super Rare Cat)|erasers]] up to 20+50 and 35 respectively, allows them to survive 3 Aku Gory hits each.
+
+==='''Recommended Units'''===
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]] - Like in all previous encounters, Fishman is still great for scoring quick, cheap damage on the boss as well as other enemies. They can also outrange Aku Gory, meaning with proper stalling they can garner consistent damage. Do be warned, Nobunaga is far stronger in this encounter than in any previous one, meaning players' Fishman can be decimated in a single attack by him.
+*[[Talents|Talented]] [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] - Although Can Can's [[Money Up]] won't be of any use in the slightest, their fast speed, great damage, and range advantage over all the peons allows them to work wonders in this stage. They can also consistently score hits on Nobunaga, albeit only with proper timing.
+*[[Shaman Cat (Rare Cat)|Necro-Dancer Cat]] - Nobunaga '''does not''' have [[Immune to Freeze|Freeze Immunity]], meaning that with a few lucky [[Freeze]] procs from Necro-Dancer, he can easily be perma-frozen. This does require some setup and luck, so the player should only use this as a last resort. However, even with random, one-off Freezes, Necro-Dancer can create great opportunities for other units to quickly chip down the boss's health.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - With just one attack, Bahamut can delete half of Aku Gory's health pool, a massive leap in terms of progress in the stage. His immense damage can also help greatly in chipping the boss, although this requires timing to use him to the fullest.
+
+==='''Recommended Ubers'''===
+*[[Coppermine (Uber Rare Cat)|Divine Coppermine κ]] - Works as a supplement/inconsistent replacement to Necro-Dancer. Beware of her slow speed and non-guaranteed Freeze.
+*[[Iz the Dancer (Uber Rare Cat)|Iz the Alluring Dancer]] - Has enough damage to juggle Aku Gories and can survive a hit from the boss. Also has good enough damage to deal substantial chip.
+
+==Trivia==
+*Since it contains [[Revolutionary Nobunaga]], Despot's Ambition may be a reference to the ''[[wikipedia:Nobunaga's Ambition|Nobunaga's Ambition]]'' series of games.
+*The [[:Category:Aku Enemies|Aku Enemies]] supporting Revolutionary Nobunaga may be a reference to how the real [[wikipedia:Oda Nobunaga|Oda Nobunaga]] is sometimes referred to as the "Demon King of the Sixth Heaven".
+
+==Reference==
+*https://battlecats-db.com/stage/s01389-04.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]
+[[Category:No Continue Stages]]
+[[Category:Stages with Base Barriers]]

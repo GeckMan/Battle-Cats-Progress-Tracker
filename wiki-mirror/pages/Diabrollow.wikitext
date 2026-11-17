@@ -1,0 +1,118 @@
+'''Diabrollow''' (ツバサターン, ''Tsubasatān'', '''Tsubasaturn''') is an [[:Category:Aku Enemies|Aku]]/[[:Category:Sage Enemies|Sage]] variant of [[Brollow]] introduced in [[Resort De La Cospa]]. It was added in [[Version 13.6 Update|Version 13.6]].
+
+{{Enemy Info
+|name = Diabrollow
+|image = E 697.png
+|first appearance = '''ZL:''' [[Pre-Fab Cathedral|Sub-chapter 14 - Pre-Fab Cathedral]]
+|latest appearance = '''ZL:''' [[Meeting of Long and Short|Sub-chapter 21 - Meeting of Long and Short]]
+|money drop = 200¢ - 790¢
+}}
+
+==Enemy==
+Diabrollow is a peon that behaves similarly to Brollow, having somewhat high damage, full backswing, close range and many knockbacks with decent health. Its 100% chance for both knockback and level 3 [[Wave Attack|Mini-Waves]] shouldn't be discounted either, able to extend its reach all the way up to 867.5.
+
+==Strategy==
+The sheer damage, Mini-Wave, and guaranteed knockback all serve to make Diabrollow an annoying pusher, especially when 15 knockbacks allow for even a weak attack to activate a troublesome rebound mechanic. However, a 100% Diabrollow only has 60,000 HP and can thus be one-shot by several damage-dealers. The sooner an attacker such as [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] can reach and attack it, the better. The problem is that Diabrollow is usually spammed in stages that it appears in, and the repeated knockbacks from its Mini-Waves can cause you to rapidly lose ground, allowing the other threats in the stage to push hard. Their constant knockbacks may also keep interrupting the attack animations of nukers like [[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]], preventing them from attacking at all. If they get too numerous, a [[:Category:Wave Shield Cats|Wave Shield]] like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] or [[Immune to Waves|Wave-immune units]] may be required to keep them at bay.
+
+Since Diabrollow's Mini-Waves deal very low damage (2,400 at 100% strength magnification, which isn't even enough to kill a level 45+ [[Slime Cat (Rare Cat)|Jellycat]]), you can use them to your advantage by skipping the backswings of rushers like [[Express Cat (Super Rare Cat)|Bullet Train Cat]] or repositioning backline units that can be hit by it.
+
+While the Sage type does give Diabrollow resistance to all status effects, this will rarely matter, as raw damage is more than enough to defeat it.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 697
+|Type = [[:Category:Aku Enemies|Aku]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 697.png
+|Name1 = Diabrollow
+|Desc1 = Greedy bird that is obsessed with valuables.<br>Created a business selling treasures after picking<br>up a shining stone one day. If the buyer promises<br>to repay their debt, the transaction is complete.
+|Name1 (JP) = ツバサターン (Tsubasatān, Tsubasaturn)
+|Desc1 (JP) = 金目のものに目がない欲深きツバメ。<br>妖しく光る石を拾ったことで宝石の<br>出張買取ビジネスを閃く。出合い頭に<br>受け取った品物の代金は出世払い。
+|Transl1 (JP) = A greedy swallow with an eye for anything valuable.<br>After picking up a mysteriously shining stone, it<br>came up with the idea of starting a business buying<br>and selling jewels on the go. The price of the goods received at the beginning of the meeting is paid after career advancement.
+|Name1 (TW) = 魔王燕
+|Desc1 (TW) = 非常貪愛金色物品的燕子。因為<br>撿到了發出詭異光芒的石頭而開始了<br>到府收購寶石的生意。總是告訴客人<br>收購金額一定會在事業成功後付清。
+|Name1 (KR) = 사탄 제비
+|Desc1 (KR) = 금품이라면 사족을 못쓰는 욕심 많은 제비<br>이상하게 빛나는 돌을 주운 것을 계기로 귀금속 출장<br>매입 사업을 시작. 비싸보이는 물건을 발견하면<br>곧바로 사들이며 구매 대금은 외상으로 달아둔다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 14-1: [[Pre-Fab Cathedral]]
+*Stage 14-3: [[Weedy Garden]]
+*Stage 14-6: [[Costly Emigration]]
+*Stage 15-2: [[Antimatter Jungle]]
+*Stage 15-3: [[Inert Zero Flux]]
+*Stage 16-1: [[Mysterious Captain]]
+*Stage 16-6: [[Smooth Docking]]
+*Stage 17-3: [[Auto-Walk Labyrinth]]
+*Stage 19-6: [[Jetsam Lookout]]
+*Stage 20-2: [[Logical Loneliness]]
+*Stage 21-6: [[Meeting of Long and Short]]
+*Stage 23-5: [[Wicked Clergyman]]
+*Stage 24-3: [[Dreams and Illusions]]
+*Stage 27-2: [[Shoddy Fix]]
+*Stage 29-1: [[The Bulking Grounds]]
+*Stage 31-2: [[Natural Rejection]]
+*Stage 32-3: [[Koala's Rest]]
+*Stage 32-6: [[The Navel of the Cat]]
+*Stage 34-6: [[Cutthroat Collars]]
+*Stage 35-2: [[Pipette of Passion]]
+*Stage 38-1: [[ZL 38-1]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Diabrollow
+|Health = 60000
+|Attack Power = 12000
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 137
+|Movement Speed = 77
+|Knockback = 15
+|Foreswing = 1
+|Backswing = 136
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Element = Aku/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+697 e.png|Diabrollow's spritesheet
+</gallery>
+
+==Trivia==
+*Diabrollow's name is a combination of ''diabolical'', ''diablo'' (Spanish for devil) or ''diavolo'' (Italian for devil) and ''[[Brollow]]''. It may also involve ''diamond'' (referencing the gemstone it carries).
+*Diabrollow's Japanese name, Tsubasatān (ツバサターン, "Tsubasaturn"), is derived from 燕 ''tsubame'' ([[wikipedia:Swallow|swallow]]), 翼 ''tsubasa'' (wing), サターン ''Satān'' (Saturn) and ''Satan''. In this context, "Saturn" does not refer to the planet, but to a [[wikipedia:Saturn (mythology)|Roman deity]] conflated with the Greek Titan [[wikipedia:Cronus|Cronus]], whose sister-wife Rhea gave him a stone that he swallowed thinking it was his sixth child, Zeus, just like how Diabrollow has a [[:Category:Sage Enemies|Sage]] stone in its beak. After Cronus was overthrown by the Olympians, he was banished to [[wikipedia:Tartarus|Tartarus]], a pit of the underworld where the wicked are tormented, hence why Diabrollow is an [[:Category:Aku Enemies|Aku]] enemy.
+**In Japan, the Roman god Saturn is normally called サトゥルヌス ''Saturunusu'' (Saturnus), but Saturn's English name transliterated into Japanese is サターン ''Satān''.
+**Diabrollow's description references how some birds are attracted to and collect shiny objects. This behavior is often misattributed to crows, which relates to Cronus because [[wikipedia:Robert Graves|Robert Graves]] posited that Cronus could mean "crow", like the Latin ''cornix'' and the Greek ''corōne''.
+**Diabrollow is greedy for valuables, while Cronus was greedy for power.
+**Diabrollow appears to have two small, thin horns on its head, which may reference the 19th-century theory tracing Cronus' name to the Semitic root ''qrn'', meaning "horn".
+**Diabrollow's Sage type may refer to how [[wikipedia:Plato|Plato]] etymologized "Cronus" as a compound of κοῦρος (''koûros'', "youth, young man"), καθαρός (''katharós'', "pure"), and νοῦς (''noûs'', "mind, intellect"), thus meaning "he of pure intellect", as described on [https://mythopedia.com/topics/cronus Mythopedia].
+**Cronus' weapon was a scythe, sickle or [[wikipedia:Harpe|harpe]], and Diabrollow's wings are shaped somewhat like the blade of a scythe. Its wings also resemble a huge, gaping maw, befitting a Titan who swallowed his children.
+**Cronus is often confused with the god of time, [[wikipedia:Chronos|Chronos]], and Diabrollow appears in [[Meeting of Long and Short]], the last stage of a [[A Journey of Moments|time-themed sub-chapter]].
+*Diabrollow can be seen as the antithesis of the swallow from "[[wikipedia: The Happy Prince and Other Tales|The Happy Prince]]" by [[wikipedia:Oscar Wilde|Oscar Wilde]]. In the story, a statue of a prince tells a swallow to take his possessions and give them to the poor, including a pair of sapphires from his eyes. The swallow dies in the winter, but his altruism allows him to go to Heaven alongside the prince. While Diabrollow carries a blue gem like the prince's sapphires, it is a demon defined by its greed.
+*Diabrollow's black-and-blue wings may be a reference to ''[[wikipedia:Black saw-wing|Psalidoprocne pristoptera]]'', a species of swallow commonly known as both the black saw-wing and the blue saw-wing.
+*[[Resort De La Cospa]]'s [[wikipedia:Tourist trap|tourist trap]] theme is likely a reference to Diabrollow's greed. "Cospa" in Japanese is コスパ ''kosupa'' (short for コストパフォーマンス ''kosuto pafōmansu'', [[wikipedia:Price–performance ratio|cost-performance]]).
+*Diabrollow's debut stage, [[Pre-Fab Cathedral]], pairs it with [[Two Can]], another greedy bird with [[Wave Attack|Wave]]s.
+
+==Reference==
+*https://battlecats-db.com/enemy/699.html
+
+----
+{{EnemyNav|Boulder|Oldstrich}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Mini-Wave Enemies]]

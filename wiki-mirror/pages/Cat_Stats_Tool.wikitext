@@ -1,0 +1,185 @@
+<div id="cat-stats-tool__loading" style="position: relative; height: 420px;"><div style="position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);">[[File:Loading.gif|200px|link=]]</div></div>
+<div id="cat-stats-tool" style="display: none;">
+	<div id="cat-stats-tool__col-styles"></div>
+	<div id="cat-stats-tool__column-settings"></div>
+	<div id="cat-stats-tool__top">
+		<div id="cat-stats-tool__search-container"></div>
+		<div id="cat-stats-tool__default-level-container"></div>
+		<div id="cat-stats-tool__all-button-container"></div>
+		<div id="cat-stats-tool__clear-button-container"></div>
+	</div>
+	<div id="cat-stats-tool__filter">
+		{| id="cat-stats-tool__filter-options" cellpadding="2" cellspacing="0"
+		! Rarity
+		| id="filter-rarity" |
+		|-
+		! Target
+		| id="filter-target" |
+		|-
+		! Attack
+		| id="filter-attack" |
+		|-
+		! Effect
+		| id="filter-effect" |
+		|-
+		! Ability
+		| id="filter-ability" |
+		|-
+		! Subtrait
+		| id="filter-subtrait" |
+		|-
+		! Immunity
+		| id="filter-immunity" |
+		|- id="filter-talent-row"
+		! Talent
+		| id="filter-talent" |
+		|-
+		! Form
+		| id="filter-form" |
+		|-
+		! Settings
+		| id="filter-settings" |
+		|-
+		! Stats
+		| id="filter-stats" |
+		|-
+		! Controls
+		| id="filter-controls" |
+		|}
+	</div>
+	<div id="cat-stats-tool__table-container">
+		<div class="shadow-left"></div>
+		<div class="shadow-right"></div>
+		<div class="cat-stats-tool__table-bg"></div>
+	</div>
+	<div id="cat-stats-tool__bottom-options">
+		<div id="cat-stats-tool__combo-selector">
+			<div id="cat-stats-tool__combo-options"></div>
+			<div id="cat-stats-tool__combo-list"></div>
+			<div class="cat-stats-tool__table-bg"></div>
+		</div>
+		<div id="cat-stats-tool__foundation">
+			<div id="cat-stats-tool__foundation-level"><span class="level-image" data-value="0"></span></div>
+		</div>
+	</div>
+</div>
+
+{{Clear}}
+
+==Usage==
+'''Expect all values (except otherwise indicated) to take abilities into consideration, as this tool's purpose is to do that for you.''' This is done whenever possible, with the exception of abilities like Dodge that depend on enemies. Note that this page requires JavaScript and will not work if it is disabled. Please refer to a section below if unsure how to use the tool, and feel free to ask a [[The Battle Cats Wiki:Staff|Staff]] member (preferably [[User talk:SweetDonut0|SweetDonut0]]) if you have any unanswered questions. For bug reports, please make them at [[The Battle Cats Wiki:Error Reports|Error Reports]] to ensure that they will be noticed.
+:''For simpler filtering with a more compact view of results, see [[Cat Filter]].''
+
+{{Collapsible}}
+===Reading Stats===
+Health, damage, and DPS stats each have three versions: plain (no superscript), average <sup>avg</sup>, and maximum <sup>max</sup>. Plain stats are the unit's stats at the specified level without accounting for any non-Trait-specific abilities (Trait-specific abilities and global modifiers such as [[Cat Combo]]s are still applied). On the other hand, average and maximum stats account for all enabled abilities, with the latter being a reasonable maximum for the stat if abilities succeed 100% of the time. While only the average values are shown by default to make the table more compact, it can also be worth seeing the other values as well because the difference in the maximum and plain values gives an idea about how consistent the unit's damage output is. These values can also be relevant for health such as for Cats with [[Weaken]] when a target trait is selected.
+
+All durations of time will be shown in the format Nf<sup style="margin-left: 2px;">Ns</sup> where the base value is the number of frames and the superscript shows the equivalent duration in seconds rounded to two decimal points. 30 frames is equal to 1 second.
+
+If you need to copy a stat shown, clicking the cell containing that stat will copy it to the clipboard.
+
+===Sorting Units===
+Once units are added, they can be sorted by certain stats using the small triangles besides the column names in the table header. Clicking once will sort units by that stat in order of greatest to least (alphabetically ascending if the column isn't numerical), and clicking again will invert the order. Another click will revert the units to the order in which they were added to the tool. Units can also be dragged and dropped using the gray icons to change order manually.
+
+===Hiding Columns===
+The checkboxes at the top of the page control what columns are shown if you don't need to see some of them, especially on mobile with limited width. For example, unchecking the "Name" column will hide that column in the tool. On mobile, a small number of columns are hidden by default, specifically Foreswing, Backswing, Attack Cooldown, and Cost.
+
+===Adding and Removing Units===
+To add a unit, search for its name using the search bar in the upper left. If you cannot remember the name of a specific form, it can be switched once a unit is added in a different form. The search bar will also accept the format <code>CRO-00N</code> where <code>CRO</code> is the unit's ID as listed on [[Cat Release Order]] and <code>N</code> is the unit's form as a number starting with 0 for Normal Form. Once a unit is displayed in the tool, it can be duplicated using the blue + button or deleted by the red x button. The yellow Add All button will add all units with any filters applied from the gray filter button just to the right of it (explained below). This will append any new units under any existing units, and the button can instead replace all existing units by the new units by right clicking on desktop or long tapping on mobile. To remove all units, use the gray Clear button in the upper right.
+
+===Filtering Units===
+Filters by rarity, target traits, abilities, talents, stats, and a few other options can be set in a menu that appears after clicking the light gray filter button right next to the Add All button. Trait and ability icons in this menu are 4 state toggles. Any units added from the filter will have at least one of these icons that are colored normally, all of these icons that have a yellow outline, and none of these icons with a red x in the lower right corner. Rarity and form toggles act like plain checkboxes. The Settings row contains additional options for the filter. Checking Only Max Forms will only show each unit's highest form. The middle line selects units that either don't have any Talents, have Talents, or have Ultra Talents, and the bottom line determines whether Talents and Ultra Talents are included in the target and ability filtering. At the bottom of the menu are stat filters, which allow you to specify inclusive lower or upper bounds for the listed stats (HP and damage are base stats). Any options selected can be reverted to their default states by pressing the gray Reset Filter button at the bottom of the filter.
+
+===Selecting Units===
+The filter also can be used to select units using the yellow Select Cats at the bottom of the filter menu, indicated by a yellow outline around the unit's row. When units are selected, the gray Clear button will only remove the select units. Furthermore, options to toggle all for certain abilities, trait buttons, and talent toggles will only apply to the selected units. All units can be unselected with the gray Clear Selection button.
+
+===Unit Levels===
+Stats for a unit at a specific level can be calculated by setting a level using the dark gray input area right beneath the unit images. When new units are added to the tool, the default value for this is initially set to 30, but this can be changed using the input labeled "Default Level". Setting a new default level will not affect the levels of existing units. Plus levels are accepted but not necessary (both 130 and 50+80 work).
+
+===Selecting a Trait===
+By clicking a targeted trait in the Targets column (indicated by a yellow glow on the trait icon), the effective stats for that trait will be shown instead. Due to conflicts with multipliers for traits with and without Fruit Treasures, only one trait can be selected at a time. The Metal trait can be selected regardless of whether it is included as a target trait, and this will replace offensive stats with the actual damage that Metal enemies will take. To select traits for all added units, right click a trait icon.
+
+===Abilities===
+To view details about an ability, hover over (desktop) or tap on (mobile) its icon. This will display any details about an ability in the dark area at the bottom of the tool. Many of them are generic explanations for what the ability does, but abilities with unit-specific effects have additional information not shown in the main unit row. In addition, certain abilities will also be toggles for whether their effects are applied to stats. Sub-trait slayer abilities and Strengthen will be disabled by default, and Wave, Mini-Wave, Surge, Mini-Surge, and Explosion will be enabled by default. These icons can be toggled with a click (desktop) or a long press (mobile).
+
+===Enabling Talents===
+Units that have [[Talents]] will display a Talent toggle in [[True Form]] and [[Ultra Form]], which is seen as an NP icon on the upper right corner of the unit. Turning it on will update stats with all Talents unlocked at maximum levels. Anything changed by the Talents will be indicated by the in-game talent outline. For units with [[Ultra Talents]], clicking the Talent toggle again will activate all Ultra Talents at max levels, with changes indicated by the orange version of the Talent icon outline.
+
+===Talent Orbs===
+Some units will have one or two [[Talent Orbs|Talent Orb]] slots at the rightmost part of the unit info. Clicking on an Orb slot will open a menu at the bottom of the tool to remove or set a new Orb (ability details can still be checked while the menu is open). In the menu, an allowed orb type and grade can be chosen, and the Set Orb button will add an Orb with those parameters. Once the slot has an Orb, it can be removed with the Remove button. An active Orb slot is indicated by a light glow around its border. Orbs will always appear as Traitless Orbs, and this is because while the Orb is equipped in the tool, its effect is reflected on stats regardless of whether a trait is selected.
+
+===Cat Combos===
+To add a [[Cat Combo]], click the yellow/orange Add button in the Combo area beneath the table. Combo effect and strength can be chosen using the select menus to the left of the Add button. Only effects that are relevant to the displayed information are included in the selection, and not all combinations of effects and strengths may exist such as Unit Attack UP (L). If a supplied combo is impossible, it will be indicated by red borders on the combos. Combos can be removed by clicking on them, and the Clear button will remove all added Combos.
+
+===Foundation Damage Reduction===
+The slider on the right side beneath the table will allow you to choose a level for the [[Cat Base]] foundation that reduces damage taken up to 15% at level 20. For the purpose of this tool, this will act as a global health buff without being affected by whether a trait is selected for each unit.
+
+===Saving as a Link===
+If you want to save the tool's settings and units for later or share it with someone, the Copy Link button in the upper left corner of the table will copy a new URL for this page that will show the same data as where you were when the link was copied. Do note that the link is not automatically updated, so you will have to copy after you're done with adding units and changing settings. In addition, only a maximum of 50 units will be saved.
+
+===DPS Graphs===
+Clicking the orange graph button below unit icons will plot that unit's DPS graph underneath the tool. This graph shows the unit's average DPS as a function of range, and it also reflects the unit's settings in the tool like level and abilities. Multiple graphs can be displayed simultaneously, which can be done by simply showing another unit's DPS graph while one is already open. The "Clear DPS Graph" button will reset the graph and remove everything that has been added.
+
+===Light Appearance===
+The checkbox at the top labeled "Simple" changes the appearance of the main part of the stats tool to a simpler one. This option is recommended for older devices which may have some trouble loading all the fancy CSS styling that has been put into the tool, and it can also be a better option for mobile because it is slightly more compact than the normal appearance.
+
+===Beta===
+The beta option at the top is a way for work to be done with the code behind this tool without breaking it for general users. Sometimes, it could have expanded features compared to the regular version but also may be unstable with unexpected bugs. If beta is turned on and something doesn't work properly, try disabling it to see if the issue stays. If there is a problem with the normal version, please report it at [[The Battle Cats Wiki:Error Reports|Error Reports]] so that it can be fixed.
+</div>
+
+==Details==
+Below are some details that are better noted but not crucial for using this tool. Refer to [[Attack Timings]] for information about some of the terminology used on this page.
+
+{{Collapsible}}
+===Custom Ability Icons===
+Official game assets are used for some parts of this page, but not all of the necessary icons are available. As such, fan-made icons are used for [[Multi-Hit]] (made by [[User:AnonymousCrouton|AnonymousCrouton]]), [[Kamikaze]] and [[Immune to Boss Shockwave]] (credits to Battle Cats Ultimate). Also note that the names for these abilities are also fan-made.
+
+===Treasures===
+Max [[Treasure]]s are assumed for all stats. Due to variations in ability effectiveness based on whether [[Cats of the Cosmos]] and [[Into the Future]] Fruit Treasures are obtained, ability uptimes are shown as a range of percentages when applicable (units whose targets vary in having Fruit Treasures). The lower percentage represents uptime without Fruit Treasures, while the upper percentage represents uptime with them.
+
+===Uptime Calculations===
+The uptimes listed are not the basic value of <code>ability duration / attack cycle</code> but rather a more useful percentage that represents the long-term average for the percentage of time when the ability will be active. In other words, if you test a unit in an ideal situation (attacks chain consecutively without entering the idle animation) and take the quotient of time when the ability is active over total time, it should eventually approach the displayed percentage. The steps used to calculate uptimes have been verified to match simulated values, but this is surprisingly tricky to figure out mathematically. As a result, the tool resorts to using an approximation for the specific case where a multi-hit unit's ability duration is longer than triple its attack cycle (i.e. [[Drumcorps Cat (Rare Cat)|Drumcorps Cat]]).
+</div>
+
+==Updates==
+This tool will typically be updated to include new units every version, but there also may be updates that add new features or change how the tool works.
+
+{{Collapsible}}
+===February 17th, 2026===
+Descriptions for abilities with durations now show ranges against traits with Fruit Treasures and those that don't (when applicable). A bug with uptimes and the displayed durations has been fixed as well. In addition, normal form backgrounds have been added for units like Cat whose upgrade menu icons have a transparent background.
+
+===October 23rd, 2025===
+The main feature of this update is DPS graphs. The orange buttons beneath unit icons will display a graph showing the unit's average DPS as a function of range, and this average DPS will take into account various settings such as level, talents, and any selected traits/abilities. In addition, stat calculations for multi-hit units with different ranges have changed. Previously, the plain Attack and DPS cells showed the total damage of all three hits, but now it accurately reflects which hits actually reach standing range.
+</div>
+
+<!--Prevent images added in by JS from appearing as unused-->
+<div class="hideme">
+<gallery>
+AbilityInfoArrow.png
+TalentOutline.png
+UltraTalentOutline.png
+LvLabel.png
+Red x.png
+Form button normal.png
+Form button evolved.png
+Form button true.png
+Form button ultra.png
+GoldenCPU.png
+</gallery>
+</div>
+__NOTOC__
+{{BC Navigation}}
+[[Category:Main]]
+[[Category:Pages using cat stats tool]]
+{{#seo:
+|description = A tool where you can view, compare, and filter Cats by stats.
+|image = GoldenCPU.png
+|image_width = 100
+|image_height = 100
+}}
+<!-- TO DO
+Add spirit info
+Set default levels for each rarity form + add menu to modify these
+Make all levels for selected units changeable
+Allow talents orbs to be set for all selected units-->
+{{Nocomment-perf}}

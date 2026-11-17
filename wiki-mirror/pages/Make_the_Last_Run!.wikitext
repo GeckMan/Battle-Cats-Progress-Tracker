@@ -1,0 +1,56 @@
+{{JPExclusive}}
+{{EnemiesAppearing|White Wind|Red Wind|Dark Wind}}
+'''Make the Last Run!''' is the eigth and final stage in [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]].
+
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn182 07 c ja.png]]
+|stage location = [[File:Mapname182 c ja.png]]
+|energy = 200
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|White Wind|500%
+|Red Wind|500%
+|Dark Wind|500%}}
+|boss = {{Magnification|Dark Wind|1%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''7,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''6,500''': 200,000 XP<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 6,000 XP
+|width = 5,500
+|max enemies = 15
+|jpname = Make the Last Run!
+|script = ラストランを飾れ！
+|romaji = Rasuto Ran o Kazare！
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]
+|difficulty = ★6
+|prev stage = [[The Name Comes from the Race Founder]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[White Wind]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Red Wind]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Dark Wind]] (500%) spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Wind]] (1%) spawns as the boss.
+**5 [[White Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Red Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Dark Wind]]s (500%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+An easy stage. Even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units, the enemies serve practically no threat at all. Although it is recommended to have them to beat at least at level 1+10 so that they have survivability.
+
+==Reference==
+*https://battlecats-db.com/stage/s02182-08.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

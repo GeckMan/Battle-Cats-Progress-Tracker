@@ -1,0 +1,20 @@
+<includeonly><onlyinclude>{{#invoke:Lustache|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+*https://github.com/Olivine-Labs/lustache
+*https://mustache.github.io/mustache.5.html
+
+{{Lustache
+|page = Module:Lineup/combos2.json
+|template = <table class="article-table"><!--
+	--><tr><!--
+		--><th>Name</th><!--
+		--><th>Effect</th><!--
+	--></tr><!--
+--><nowiki>{{#.}}<!--
+	--><tr><!--
+		--><td>[[{{name}} (Combo)|{{name}}]]</td><!--
+		--><td>{{effect}}</td><!--
+	--></tr><!--
+-->{{/.}}</nowiki><!--
+--></table>
+}}

@@ -1,0 +1,140 @@
+{{#invoke:Navbox|main
+|template = Template:Empress
+|title = [[Empress' Research]]
+|navbox_class = empress
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Empress' Report
+|group1.1 = [[Empress' Report 1]]
+|list1.1 =
+*[[Aku Studies 101: Intro]]
+*[[Aku Studies 101: Methods]]
+*[[Aku Studies 101: Field Research]]
+*[[Aku Studies 101: Inquiry]]
+
+|group1.2 = [[Empress' Report 2]]
+|list1.2 =
+*[[Aku Studies 201: Intro]]
+*[[Aku Studies 201: Methods]]
+*[[Aku Studies 201: Field Research]]
+*[[Aku Studies 201: Inquiry]]
+
+|group1.3 = [[Empress' Report 3]]
+|list1.3 =
+*[[Aku Studies 301: Intro]]
+*[[Aku Studies 301: Methods]]
+*[[Aku Studies 301: Field Research]]
+*[[Aku Studies 301: Inquiry]]
+
+|group1.4 = [[Empress' Report 4]]
+|list1.4 =
+*[[Aku Studies 401: Intro]]
+*[[Aku Studies 401: Methods]]
+*[[Aku Studies 401: Field Research]]
+*[[Aku Studies 401: Inquiry]]
+
+|group1.5 = [[Empress' Report 5]]
+|list1.5 =
+*[[Aku Studies 501: Intro]]
+*[[Aku Studies 501: Methods]]
+*[[Aku Studies 501: Field Research]]
+*[[Aku Studies 501: Inquiry]]
+
+|header2 = Empress' Excavation
+|group2.1 = [[Empress' Excavation 1]]
+|list2.1 =
+*[[Archaeology 101: Planning]]
+*[[Archaeology 101: Methods]]
+*[[Archaeology 101: Results]]
+*[[Archaeology 101: Analysis]]
+
+|group2.2 = [[Empress' Excavation 2]]
+|list2.2 =
+*[[Archaeology 201: Planning]]
+*[[Archaeology 201: Methods]]
+*[[Archaeology 201: Results]]
+*[[Archaeology 201: Analysis]]
+
+|group2.3 = [[Empress' Excavation 3]]
+|list2.3 =
+*[[Archaeology 301: Planning]]
+*[[Archaeology 301: Methods]]
+*[[Archaeology 301: Results]]
+*[[Archaeology 301: Analysis]]
+
+|group2.4 = [[Empress' Excavation 4]]
+|list2.4 =
+*[[Archaeology 401: Planning]]
+*[[Archaeology 401: Methods]]
+*[[Archaeology 401: Results]]
+*[[Archaeology 401: Analysis]]
+
+|group2.5 = [[Empress' Excavation 5]]
+|list2.5 =
+*[[Archaeology 501: Planning]]
+*[[Archaeology 501: Methods]]
+*[[Archaeology 501: Results]]
+*[[Archaeology 501: Analysis]]
+
+|header3 = Wicked Cats
+|group3.1 = [[Arcane Confluence]]
+|list3.1 =
+*[[Forbidden Archives]]
+*[[The Astral Plains]]
+*[[Ritual Burns]]
+*[[Otherworld Meadow]]
+
+|group3.2 = [[Servant of Darkness]]
+|list3.2 =
+*[[Dimension Rift]]
+*[[Ultramarine Castle]]
+*[[Dangerous Backwater]]
+*[[Sinister Wasteland]]
+
+|group3.3 = [[Demon's Park]]
+|list3.3 =
+*[[Frozen Wisdom]]
+*[[Cursed Lake]]
+*[[Cave of Magics]]
+*[[Otherworld Forest]]
+
+|group3.4 = [[Wicked Cat]]
+|list3.4 =
+*[[Devil's Nest (Cat)|Devil's Nest]]
+*[[Cats of Evil]]
+
+|group3.5 = [[Wicked Tank]]
+|list3.5 =
+*[[Devil's Nest (Tank)|Devil's Nest]]
+*[[Demon's Wall]]
+
+|group3.6 = [[Wicked Axe]]
+|list3.6 =
+*[[Aku's Nest]]
+*[[The Devil War]]
+
+|group3.7 = Unleashing the Cats
+|list3.7 =
+*[[The Gates of Aku]]
+
+|header17 = Enemies
+|list17 =
+*{{EnemyList
+|Cerberus Kids
+|Aku Gory
+|Wicked Cat
+|Wicked Tank Cat
+|Wicked Axe Cat
+|Medu-san
+|Miz Devil
+|Deathkory
+|Wild Doge
+|Angelic Beast Rajakong
+|Cumulus Gallus
+|Infernal Pegasus Deonil
+|Crocodylidae Kurocroc
+|delimiter = <nowiki />
+*}}
+}}<templatestyles src="Empress/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Empress' Research]]}}<noinclude>[[Category:Navboxes]]</noinclude>

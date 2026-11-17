@@ -1,0 +1,6 @@
+<includeonly><onlyinclude><div style="position: relative; left: calc(50% - 175px); width: 360px; padding: 0px;">
+{| class="border-body" cellpadding="2" cellspacing="0" style="width: 360px; height: 30px; padding: 0px; border-style: solid; border-width: 3px; border-radius: 5px; text-align: center;"
+|-
+! class="border-body" style="width: 150px; height: 30px; padding: 0px; background-color: #{{#ifeq:{{{2|}}}|SoL|f3b600|{{#ifeq:{{{2|}}}|UL|87c529|{{#ifeq:{{{2|}}}|ZL|6385b7|{{#ifeq:{{{2|}}}|C|c200ef|{{#ifeq:{{{2|}}}|EN|c8c22a|{{#ifeq:{{{2|}}}|E|f35000|{{#invoke:Stars|color}}}}}}}}}}}}}}; border-width: 0px 2px 0px 0px; border-style: solid; color: white; font-size: 11pt; text-align: center;" | Map Difficulty
+| class="bg-light1" style="width: 210px; height: 30px; padding: 0px; line-height: 20px; padding-bottom: 3px;" | {{#invoke:Stars|main}}
+|}{{#if:{{{nobutton|a}}}|<div style="position: absolute; top: 5px; left: 365px; transform: scale(0.8); transform-origin: 0% 50%;">[[File:InfoButton.png|link=Stage Difficulties|Info]]</div>|}}</div></onlyinclude></includeonly>{{/doc}}

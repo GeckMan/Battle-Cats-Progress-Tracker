@@ -1,0 +1,61 @@
+'''Cherries''' is an [[Enemy Bases|Enemy Base]] that appears in the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Enemy Info
+|name = Cherries
+|image = E 784.png
+|first appearance = [[PAC-MAN Collaboration Event]]
+|money drop = 0¢ - 0¢
+}}
+
+==Enemy==
+It does nothing despite its special treatment as an animated base, basically acting as a regular base that can be hurt by [[Surge Attack]]s and [[Explosion]]s.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Collaboration Events|Collaboration Stages]]===
+*[[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]]: [[Bonus Stage]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Cherries
+|Health = 10
+|Attack Power = 1
+|Attack Range = 50
+|Attack Type = Single
+|Time Between Attacks = 1000
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 0
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+784 e.png|Cherries' spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/786.html
+
+----
+{{EnemyNav|Giant PAC-MAN|Gavel Base}}
+----
+
+{{Pac-Man}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

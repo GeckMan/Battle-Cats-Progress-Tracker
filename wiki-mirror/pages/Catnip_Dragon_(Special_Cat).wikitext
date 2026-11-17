@@ -1,0 +1,119 @@
+{{JPExclusive}}
+'''Catnip Dragon''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by playing the [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] during the [[JRA Collaboration Event]]. It was added in [[Version 10.10 Update|Version 10.10]]. Like [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]] and [[Catnip Tricky (Special Cat)|Catnip Tricky]], it is capped at level 1, meaning it can only be upgraded using +levels.
+
+{{Cat Info
+|ID = 628
+|rarity = EX
+|name1 = Catnip Dragon
+|name2 = Famous Catnip Dragon
+}}
+
+==Evolution==
+Evolves into '''Famous Catnip Dragon''' at level 1+9.
+
+==Strategy/Usage==
+Use Catnip Dragon like you would use [[Lizard Cat (Normal Cat)|Dragon Cat]]. Their stats are inferior to even a level 20+2 Dragon Cat, which only gets worse once Dragon's [[True Form]] is unlocked, but their Massive Damage ability makes it stronger than anything short of a level 20+88 King Dragon against Dark enemies. Unfortunately, the lack of Area Attack does not combine too well with the rush-down nature of most Dark enemies, reducing Catnip Dragon to a support unit in almost all stages which feature said trait. As a result, they should only be used if their level is disproportionately high compared to that of their variants, resulting in superior stats.
+
+{{Job|Classification = Backliner}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Triple Single|Unit Speed Up (M)|Cat Giraffe Modoki|Catnip Tricky|Catnip Dragon|jpname=３連単}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 628
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni628 f00.png
+|Image2 = Uni628 c00.png
+|Name1 (JP) = ネコノドラゴーン (Nekonono Doragōn, Catnip Dragon)
+|Desc1 (JP) = 短い脚で必死に走る姿が人気の出走ネコ<br>スタミナ勝負では負けなしの二番人気<br>黒い敵に超ダメージ（＋LVのみ強化可能）
+|Transl1 (JP) = Popular runaway cat with short legs and desperate running<br>The second most popular in the stamina race<br>Super damage to Dark enemies (only +LV can be enhanced)
+|Name2 (JP) = 名馬ネコノドラゴーン (Meiba Nekonono Doragōn, Famous Catnip Dragon)
+|Desc2 (JP) = 長い頭身と脚力を活かし二足歩行する出走ネコ<br>長距離にも強くどんなレースでも安定の二番人気<br>黒い敵に超ダメージ（＋LVのみ強化可能）
+|Transl2 (JP) = A bipedal running cat with a long head and strong legs<br>Strong over long distances and a consistent runner-up in any race<br>Super damage to Dark enemies (only +LV can be enhanced)
+}}
+
+==Cost==
+*Chapter 1: 1,000円
+*Chapter 2: 1,500円
+*Chapter 3: 2,000円
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Catnip Dragon
+|Normal Stats Level = 1+30
+|Normal Base HP = 800
+|Normal Base AP = 250
+|Normal Range = 400
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 16
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 1000
+|Normal Recharge = 570
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Famous Catnip Dragon
+|Evolved Stats Level = 1+30
+|Evolved Base HP = 800
+|Evolved Base AP = 250
+|Evolved Range = 400
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 16
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 1000
+|Evolved Recharge = 570
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.1+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 250 damage<br>(59.06 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 19 ~ 10.2 seconds
+|val-Normal-MaxHP = 14,000 HP
+|val-Normal-MaxAttack = 4,375 damage<br>(1,033.46 DPS)
+|val-Evolved-Health = 14,000 HP
+|val-Evolved-Attack Power = 4,375 damage<br>(1,033.46 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 19 ~ 10.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni628 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/629.html
+
+----
+{{CatNav|Catnip Tricky|Brainwashed Cat}}
+----
+
+{{JRA}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

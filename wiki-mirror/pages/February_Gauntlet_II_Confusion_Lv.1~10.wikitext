@@ -1,0 +1,205 @@
+{{EnemiesAppearing|Doge|Zoge|Gabriel|Doge Dark|Aku Doge|Mistress Celeboodle|Dober P.D|Lucky Dags}}
+{{Stage Info
+|stage name = [[File:Rc004.png]]
+[[File:Mapsn040 00 a en.png]]
+|stage location = [[File:Mapname040 a en.png]]
+|enemies = {{Magnification|Doge|0
+|Zoge|0
+|Gabriel|0
+|Doge Dark|0
+|Aku Doge|0
+|Mistress Celeboodle|0
+|Dober P.D|0}}
+|boss = {{Magnification|Lucky Dags|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,500
+|max enemies = 15
+|jpname = Further Summon Lv.X
+|script = さらに召喚 Lv.X
+|romaji = Sarani Shōkan Lv. X
+|star = 1
+|event = [[February Gauntlet II]]
+|event-chapter = [[February Gauntlet II]]
+|require = Clear [[Ritual Confusion (Monthly Event)|Ritual Confusion]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Zoge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*Infinite [[Gabriel]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Aku Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Mistress Celeboodle]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*1 [[Dober P.D]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Lucky Dags]] spawns as the boss after 80 seconds<sup>2,400f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Confusion Lv.
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Lucky Dags]]
+! scope="col" |[[Doge]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Mistress Celeboodle]]
+! scope="col" |[[Dober P.D]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|300%
+|1,800%
+|150%
+|100%
+|400%
+|200%
+|750%
+|100%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |2
+|333%
+|2,044%
+|161%
+|122%
+|444%
+|222%
+|756%
+|106%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |3
+|366%
+|2,288%
+|172%
+|144%
+|488%
+|244%
+|762%
+|112%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |4
+|399%
+|2,532%
+|183%
+|166%
+|532%
+|266%
+|768%
+|118%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |5
+|432%
+|2,776%
+|194%
+|188%
+|576%
+|288%
+|774%
+|124%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |6
+|465%
+|3,020%
+|205%
+|210%
+|620%
+|310%
+|780%
+|130%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |7
+|498%
+|3,264%
+|216%
+|232%
+|664%
+|332%
+|786%
+|136%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |8
+|531%
+|3,508%
+|227%
+|254%
+|708%
+|354%
+|792%
+|142%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |9
+|564%
+|3,752%
+|238%
+|276%
+|752%
+|376%
+|798%
+|148%
+|150
+|Aku [[Catfruit]] Seed +1
+|2,850
+|-
+! scope="row" |10
+|600%
+|4,000%
+|250%
+|300%
+|800%
+|400%
+|800%
+|150%
+|150
+|Rare Ticket +1
+|2,850
+|}
+
+=='''Strategy'''==
+While this stage seems like it might be annoying on paper, most of the major threats spawn on a timer. As such, it's fairly easy to rush the stage with strong [[:Category:Rusher-class Cats|Rushers]] like [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Crazed Cow Cat (Super Rare Cat)|Manic Lion Cat]], [[Swimmer Cat (Super Rare Cat)|Fishman Cat]], and [[Express Cat (Super Rare Cat)|Maglev/Bullet Train Cat]]. It's recommended to time Maglev/Bullet Train so that it hits the first Gabriel and/or Doge Dark for a burst of cash, letting Awakened Bahamut hit the field faster. Bringing a pair of small Attack Up [[Cat Combo]]s (typically some combination of [[Sister Act (Combo)|Sister Act]], [[Tiny Ancient Hunt (Combo)|Tiny Ancient Hunt]], and/or [[Brave Cutter (Combo)|Brave Cutter]]) is advised to make the rush more reliable, especially at higher magnifications.
+
+If you struggle to keep the Dober P.D at the base, then bring [[Glass Cat (Rare Cat)|Glass Cat]] to stun him. Be sure to leave deployment space for Glass Cat and be careful when timing it so that it doesn't hit a peon, especially if Zoge manages to burrow.
+
+==Trivia==
+*Unlike other part II [[Gauntlet]]s, this gauntlet starts at Lv.1 rather than Lv.11. Strangely enough, this anomaly doesn't appear in the original Japanese version, only the English one.
+
+==Reference==
+*https://battlecats-db.com/stage/s24040.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Event]]
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

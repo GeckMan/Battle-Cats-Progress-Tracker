@@ -1,0 +1,70 @@
+{{DISPLAYTITLE:Round 3}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Scissoroo|Bore Jr.|Condemned Peng|Nimoy Bore|General GreGory|Fallen Bear|Elephantidae Papaou|R.Ost}}
+'''Round 3''' is the third stage in [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 02 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,400,000 HP
+|enemies = {{Magnification|Scissoroo|1,200%
+|Bore Jr.|100%
+|Condemned Peng|400%
+|General GreGory|2,500%
+|Fallen Bear|150%
+|Nimoy Bore|800%
+|R.Ost|200%}}
+|boss = {{Magnification|Nimoy Bore|800%
+|Elephantidae Papaou|100%}}
+|enemies2 = {{Magnification|Scissoroo|1,440%
+|Bore Jr.|120%
+|Condemned Peng|480%
+|General GreGory|3,000%
+|Fallen Bear|180%
+|Nimoy Bore|960%
+|R.Ost|240%}}
+|boss2 = {{Magnification|Nimoy Bore|960%
+|Elephantidae Papaou|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,200
+|max enemies = 20
+|jpname = Round 3
+|script = Round 3
+|romaji = Round 3
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 2 (Dirt Cheap)|Round 2]]
+|next stage = [[Round 4 (Dirt Cheap)|Round 4]]
+}}
+
+==Rules==
+{{ColosseumRule|Dirt Cheap}}
+
+==Battleground==
+*2 [[Scissoroo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Bore Jr.]] spawns after 13.33 seconds<sup>400f</sup>.
+*Infinite [[Condemned Peng]]s spawn after 16.67 seconds<sup>500f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Nimoy Bore]] spawns as the boss.
+**3 [[General GreGory|General GreGories]] spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**3 [[Scissoroo]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**1 [[Fallen Bear]] spawns.
+**1 [[Nimoy Bore]] spawns after 30 seconds<sup>900f</sup>.
+*When the base reaches 70% HP:
+**1 [[Elephantidae Papaou]] spawns as the boss.
+**2 [[R.Ost]]s spawn, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+**5 [[Bore Jr.|Bore Jrs]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36016-03.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

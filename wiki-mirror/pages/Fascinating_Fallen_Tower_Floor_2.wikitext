@@ -1,0 +1,46 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Kaijin Doge|B.B.Bunny|Pigge|Sir Seal}}
+'''Floor 2''' is the second floor of [[Fascinating Fallen Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn011 01 v ja.png]]
+|stage location = [[File:Mapname011 v ja.png]]
+|energy = 40
+|enemy castle hp = 5,000 HP
+|enemies = {{Magnification|Kaijin Doge|100%
+|B.B.Bunny|100%
+|Pigge|100%}}
+|boss = {{Magnification|Sir Seal|100%}}
+|treasure = - [[Battle Items#Rich Cat|Rich Cat]] +1 (100%, 1 time)
+|XP = 1,200 XP
+|width = 4,500
+|max enemies = 20
+|jpname = 2nd Floor
+|script = 2階
+|romaji = 2 Kai
+|star = 1
+|event-chapter = [[Fascinating Fallen Tower]]
+|difficulty = ★1
+|prev stage = [[Fascinating Fallen Tower/Floor 1|Floor 1]]
+|next stage = [[Fascinating Fallen Tower/Floor 3|Floor 3]]
+}}
+
+==Rules==
+{{StageRule|13thAnni}}
+
+==Battleground==
+*Infinite [[Kaijin Doge]]s spawn after 0.67 seconds<sup>20f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 20 seconds<sup>600f</sup>, delay 18.67~23.33 seconds<sup>560f~700f</sup>.
+*1 [[Pigge]] spawns after 3.33 seconds<sup>100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sir Seal]] spawns as the boss.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07011-02.html
+
+{{Anniversary}}
+[[Category:魅惑の堕天楼 Floors]]

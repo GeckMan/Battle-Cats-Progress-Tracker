@@ -1,0 +1,137 @@
+:''This article is about the Cat Unit. For the enemy, see [[Sagat (Enemy)]].''
+'''Sagat''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|version 10.0]].
+
+{{Cat Info
+|ID = 574
+|rarity = UR
+|name1 = Sagat
+|name2 = Sagat CC
+}}
+
+==Evolution==
+Evolves into '''Sagat CC''' at level 10.
+
+==Strategy/Usage==
+Sagat is a Street Fighter that takes advantage of the ability Strengthen to an extreme level, which, in most midgame circumstances, is not a negative factor. However, later throughout the game, this problem starts to show more and more. Luckily, he has other defining abilities.
+
+Sagat is built purely as an [[:Category:Anti-Floating Cats|anti-Floating]] nuker, or in wider usage, a midrange generalist. Without Strengthen, he has about 18k DPS against Floating enemies, which isn't ideal for [[Uncanny Legends]] stages and later [[Stories of Legend]] stages. Adding to that, his range of 350 is only decent; as in those later stages, enemies progress frighteningly quickly without a quick counter. With that being said, his below-average attack power gets boosted to up to 28k damage against Floating enemies, which is great!
+
+With that being said, his generalist stats lack overall as a whole, as similar to most [[:Category:Collaboration Event Cats|Collab Cats]], he lacks in overall pure stats, and is not the most ideal generalist. If you have any better generalists, or more spammable cats like [[Mer-Cat (Rare Cat)|Cameraman Cat]], then you could use them in place of him.
+
+The only real issue with this Street Fighter is his reliance on Strengthen; as without it, Sagat is far less effective against both Floating and non-Floating enemies.
+
+{{Job|Classification = Midranger & Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 574
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni574 f00.png
+|Image2 = Uni574 c00.png
+|Name1 = Sagat
+|Desc1 = Joining the fight from Street Fighter V!<br>Ultimate strength and masterful technique. Massive<br>damage vs Floating, stronger after taking damage!
+|Name2 = Sagat CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Crush fools with a Tiger Uppercut! Massive<br>damage vs Floating, stronger after taking damage!
+|Name1 (JP) = サガット (Sagatto, Sagat)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>強靭な肉体と研ぎ澄まされた技を持つ「帝王」<br>浮きに超ダメージを与え、体力低下で攻撃力上昇
+|Transl1 (JP) = Joining the war from Street Fighter V!<br>The "Emperor" has a strong body and finely honed techniques<br>Deals super damage to Floating and increase its attack power as its strength drops.
+|Name2 (JP) = サガットCC (SagattoCC, SagatCC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>「タイガーアッパーカット」で理不尽を打ち砕く<br>浮きに超ダメージを与え、体力低下で攻撃力上昇
+|Transl2 (JP) = Joining the war from Street Fighter V!<br>Crushing the unreasonable with the "Tiger Uppercut"<br>Deals super damage to Floating and increase its attack power as its strength drops.
+|Name1 (TW) = 沙卡特
+|Desc1 (TW) = 從快打旋風V來參戰！<br>擁有強韌身體和最強武術的「帝王」<br>給予飄浮敵人超大傷害，體力減少時攻擊力上升
+|Name2 (TW) = 沙卡特CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>以「猛虎上升切」打破一切不合理<br>給予飄浮敵人超大傷害，體力減少時攻擊力上升
+|Name1 (KR) = 사가트
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>강인한 육체와 갈고 닦은 기술을 가진 제왕<br>떠있는 적에 초 데미지를 입히며 체력 저하로 공격력이 상승
+|Name2 (KR) = 사가트CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>타이거 어퍼컷으로 불합리함을 부숴버린다<br>떠있는 적에 초 데미지를 입히며 체력 저하로 공격력이 상승
+}}
+
+==Cost==
+*Chapter 1: 2,750¢
+*Chapter 2: 4,125¢
+*Chapter 3: 5,500¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sagat
+|Normal Base HP = 3600
+|Normal Base AP = 1050
+|Normal Range = 350
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 111
+|Normal Attack Length = 51
+|Normal Speed = 17
+|Normal KB = 4
+|Normal Cost = 2750
+|Normal Recharge = 2700
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Evolved Name = Sagat CC
+|Evolved Base HP = 3600
+|Evolved Base AP = 1050
+|Evolved Range = 350
+|Evolved Foreswing = 4
+|Evolved Attack Cooldown = 111
+|Evolved Attack Length = 51
+|Evolved Speed = 17
+|Evolved KB = 4
+|Evolved Cost = 2750
+|Evolved Recharge = 2700
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 3,600 HP
+|val-Normal-Attack Power = 1,050 damage<br>(273.91 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 115f <sub>3.83 seconds</sub>
+|val-Normal-Movement Speed = 17
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Normal-Recharge Time = 90 ~ 81.2 seconds
+|val-Normal-MaxHP = 61,200 HP
+|val-Normal-MaxAttack = 17,850 damage<br>(4,656.52 DPS)
+|val-Evolved-Health = 61,200 HP
+|val-Evolved-Attack Power = 17,850 damage<br>(4,656.52 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 115f <sub>3.83 seconds</sub>
+|val-Evolved-Movement Speed = 17
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 4f <sup>0.13s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Evolved-Recharge Time = 90 ~ 81.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni574 f00}}
+
+==Trivia==
+*For his attack, Sagat performs a Tiger Uppercut, an iconic anti-air move similar to Shoryuken.
+
+==Reference==
+*https://battlecats-db.com/unit/575.html
+
+----
+{{CatNav|Vega|M. Bison}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Gacha Cats]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]

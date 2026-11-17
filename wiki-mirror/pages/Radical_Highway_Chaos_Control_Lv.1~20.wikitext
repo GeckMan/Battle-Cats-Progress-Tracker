@@ -1,0 +1,398 @@
+<tabber>
+Chaos Control Lv.1~10=
+{{EnemiesAppearing|Goal Plate Base|B.B.Bunny|Sir Seal|One Horn|Mooth|Shadow}}
+
+{{Stage Info
+|stage name = [[File:E 734.png|200px]]
+[[File:Mapsn023 00 ca en.png]]
+|stage location = [[File:Mapname023 ca en.png]]
+|base = {{Magnification|Goal Plate Base|0}}
+|enemies = {{Magnification|B.B.Bunny|0
+|Sir Seal|0
+|One Horn|0
+|Mooth|0}}
+|boss = {{Magnification|Shadow|0}}
+|restriction = [[No Continues]]
+|width = 4,700
+|max enemies = 20
+|jpname = Chaos Control Lv.X
+|script = カオスコントロール Lv.X
+|romaji = Kaosu Kontorōru Lv.X
+|star = 1
+|event = [[Sonic the Hedgehog Collaboration Event]]
+|event-chapter = [[Radical Highway]]
+|max clears = 3
+}}
+
+==Battleground==
+*The enemy base here is a [[Goal Plate Base (Enemy Base)|Goal Plate Base]].
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*2 [[Sir Seal]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[One Horn]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shadow (Enemy)|Shadow]] spawns as the boss.
+**3 [[Sir Seal]]s spawn, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**2 [[Mooth]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**1 [[One Horn]] spawns after 80 seconds<sup>2,400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Chaos Control
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Goal Plate Base (Enemy Base)|Goal Plate Base]]
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[One Horn]]
+! scope="col" |[[Mooth]]
+! scope="col" |[[Shadow (Enemy)|Shadow]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|800,000%
+|400%
+|400%
+|400%
+|400%
+|100%
+|80,000 HP
+|70
+|250,000 XP
+|1,330 XP
+|-
+! scope="row" |2
+|1,200,000%
+|578%
+|600%
+|600%
+|578%
+|200%
+|120,000 HP
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|1,330 XP
+|-
+! scope="row" |3
+|1,600,000%
+|756%
+|800%
+|800%
+|756%
+|300%
+|160,000 HP
+|70
+|[[Catamin]] [A] +3
+|1,330 XP
+|-
+! scope="row" |4
+|2,000,000%
+|933%
+|1,000%
+|1,000%
+|933%
+|400%
+|200,000 HP
+|70
+|[[Catamin]] [B] +3
+|1,330 XP
+|-
+! scope="row" |5
+|2,400,000%
+|1,111%
+|1,200%
+|1,200%
+|1,111%
+|500%
+|240,000 HP
+|90
+|[[Catamin]] [C] +3
+|1,710 XP
+|-
+! scope="row" |6
+|2,900,000%
+|1,289%
+|1,400%
+|1,400%
+|1,289%
+|600%
+|290,000 HP
+|90
+|500,000 XP
+|1,710 XP
+|-
+! scope="row" |7
+|3,300,000%
+|1,467%
+|1,600%
+|1,600%
+|1,467%
+|700%
+|330,000 HP
+|90
+|[[Cat Capsule|Cat Ticket]] +2
+|1,710 XP
+|-
+! scope="row" |8
+|3,700,000%
+|1,644%
+|1,800%
+|1,800%
+|1,644%
+|800%
+|370,000 HP
+|90
+|[[Leadership]] +1
+|1,710 XP
+|-
+! scope="row" |9
+|4,100,000%
+|1,822%
+|2,000%
+|2,000%
+|1,822%
+|900%
+|410,000 HP
+|90
+|750,000 XP
+|1,710 XP
+|-
+! scope="row" |10
+|4,500,000%
+|2,000%
+|2,200%
+|2,200%
+|2,000%
+|1,000%
+|450,000 HP
+|110
+|[[Cat Capsule|Cat Ticket]] +3
+|2,090 XP
+|}
+
+==Strategy==
+Since the enemies aren't buffed strongly here, it can be beaten by using Melee and Tanker units like [[Fish Cat (Normal Cat)|Island Cat]], [[Titan Cat (Normal Cat)|Jamiera Cat]] and their respective Crazed counterparts.
+
+|-|
+Chaos Control Lv.11~20=
+{{EnemiesAppearing|Goal Plate Base|Gabriel|Heavenly Hippoe|Zoge|Angelic Gory|Zang Roo|Zir Zeal|Shadow}}
+
+{{Stage Info
+|stage name = [[File:E 734.png|200px]]
+[[File:Mapsn023 00 ca en.png]]
+|stage location = [[File:Mapname023 ca en.png]]
+|base = {{Magnification|Goal Plate Base|0}}
+|enemies = {{Magnification|Gabriel|0
+|Heavenly Hippoe|0
+|Zoge|0
+|Angelic Gory|0
+|Zang Roo|0
+|Zir Zeal|0}}
+|boss = {{Magnification|Shadow|0}}
+|restriction = [[No Continues]]
+|width = 4,800
+|max enemies = 20
+|jpname = Chaos Control Lv.X
+|script = カオスコントロール Lv.X
+|romaji = Kaosu Kontorōru Lv.X
+|star = 1
+|event = [[Sonic the Hedgehog Collaboration Event]]
+|event-chapter = [[Radical Highway]]
+|max clears = 3
+}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*The enemy base here is a [[Goal Plate Base (Enemy Base)|Goal Plate Base]].
+*2 [[Gabriel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 13.33 seconds<sup>400f</sup>.
+*2 [[Zoge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shadow (Enemy)|Shadow]] spawns as the boss.
+**Infinite [[Gabriel]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**4 [[Heavenly Hippoe]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**1 [[Angelic Gory]] spawns after 40 seconds<sup>1,200f</sup>.
+**3 [[Zoge]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**1 [[Zang Roo]] spawns after 66.67 seconds<sup>2,000f</sup>.
+**1 [[Zir Zeal]] spawns after 80 seconds<sup>2,400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Chaos Control
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Goal Plate Base (Enemy Base)|Goal Plate Base]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Angelic Gory]]
+! scope="col" |[[Zang Roo]]
+! scope="col" |[[Zir Zeal]]
+! scope="col" |[[Shadow (Enemy)|Shadow]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |11
+|5,700,000%
+|300%
+|300%
+|250%
+|200%
+|200%
+|250%
+|1,300%
+|570,000 HP
+|110
+|[[Leadership]] +1
+|2,090 XP
+|-
+! scope="row" |12
+|6,400,000%
+|322%
+|311%
+|256%
+|211%
+|211%
+|256%
+|1,433%
+|640,000 HP
+|110
+|1,000,000 XP
+|2,090 XP
+|-
+! scope="row" |13
+|7,100,000%
+|344%
+|322%
+|261%
+|222%
+|222%
+|261%
+|1,567%
+|710,000 HP
+|120
+|[[Catfruit|Green Catfruit]] +3
+|2,280 XP
+|-
+! scope="row" |14
+|7,800,000%
+|367%
+|333%
+|267%
+|233%
+|233%
+|267%
+|1,700%
+|780,000 HP
+|120
+|[[Catfruit|Purple Catfruit]] +3
+|2,280 XP
+|-
+! scope="row" |15
+|8,500,000%
+|389%
+|344%
+|272%
+|244%
+|244%
+|272%
+|1,833%
+|850,000 HP
+|130
+|[[Catfruit|Red Catfruit]] +3
+|2,470 XP
+|-
+! scope="row" |16
+|9,200,000%
+|411%
+|356%
+|278%
+|256%
+|256%
+|278%
+|1,967%
+|920,000 HP
+|130
+|[[Catfruit|Blue Catfruit]] +3
+|2,470 XP
+|-
+! scope="row" |17
+|9,900,000%
+|433%
+|367%
+|283%
+|267%
+|267%
+|283%
+|2,100%
+|990,000 HP
+|130
+|[[Catfruit|Yellow Catfruit]] +3
+|2,470 XP
+|-
+! scope="row" |18
+|11,000,000%
+|456%
+|378%
+|289%
+|278%
+|278%
+|289%
+|2,233%
+|1,100,000 HP
+|140
+|[[Catfruit|Epic Catfruit]] +3
+|2,660 XP
+|-
+! scope="row" |19
+|11,600,000%
+|478%
+|389%
+|294%
+|289%
+|289%
+|294%
+|2,367%
+|1,160,000 HP
+|140
+|1,500,000 XP
+|2,660 XP
+|-
+! scope="row" |20
+|12,000,000%
+|500%
+|400%
+|300%
+|300%
+|300%
+|300%
+|2,500%
+|1,200,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850 XP
+|}
+
+==Strategy==
+The enemies in this stage are incredibly dangerous, with Shadow relentlessly laying down fire from afar (500 range with 550 Omni Strike) while they constantly assault the frontline. Given Shadow's very high speed and Slow Immunity, any ground he gains would be difficult to recover (in spite of his 5 knockbacks), and the likes of Cyberpunk are not available. Complicating matters is the appearance of Zang Roo and Zir Zeal, both of whom could burrow far beyond the player's units, potentially reaching and destroying the Cat Base before Shadow even gets there. Thankfully, the peons in the stage will eventually dry up, at which point Shadow can be easily stalled as various units chip away at him.
+
+As with the preceding stages, most of the threats spawn on base hit, so it's theoretically possible to also pin Shadow at the base with [[Flower Cat (Special Cat)|Bomber]] then quickly whittle him down and destroy the base before the other enemies arrive. This can be done with assistance from the Thunderbolt Cannon, all Void Fruit Treasures maxed and a Freeze Up M Combo, ensuring only one Bomber is needed to Perma-Freeze Shadow, provided if the support are dealt with, or if enough DPS can be accumulated to kill off Shadow before the other threats reach Bomber.
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s27023.html
+
+{{Sonic the Hedgehog}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Stages with Base Barriers]]

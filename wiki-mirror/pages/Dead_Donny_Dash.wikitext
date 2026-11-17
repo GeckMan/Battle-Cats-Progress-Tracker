@@ -1,0 +1,93 @@
+'''Dead Donny Dash''' (ダッシュ死太郎 ''Dasshu Shitarō'', '''Shitarō Dash''' [''shi = death'']) is a [[:Category:Zombie Enemies|Zombie]] variant of [[The Face]] introduced in the [[Sports Night (Monthly Event)|Sports Night]] event. He was added in [[Version 7.4 Update|Version 7.4]].
+
+{{Enemy Info
+|name = Dead Donny Dash
+|image = E 425.png
+|appearance = [[Sports Night (Monthly Event)|Sports Night]]<br>
+[[October Gauntlet II]]<br>
+[[Citadel#Zombie|Zombie Citadel]]<br>
+[[Infernal Tower/Floor 18|Infernal Tower - Floor 18]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+The Zombie variant of [[Dashing Face]]. He appears to be a Dashing Face with purple hair that covers up most of his head, sporting a white bandana and purple shoes. Unlike Dashing Face and his legless variants, Dead Donny Dash attacks by flinging his shoe into the air, which then expands and comes crashing down. In practice, he behaves less like Dashing Face and more like a faster [[Tackey]] with Zombie attributes and a smaller blind spot.
+
+==Strategy==
+He's a lot faster than Tackey, so you can let him burrow, get close, and use cats like [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] or [[Express Cat (Super Rare Cat)|Maglev Cat]] to enter his range and destroy him with ease.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Sports Night (Monthly Event)|Sports Night]]:
+**[[Inviting Cemetary]] (100%)
+**[[2 Bodies, 0 Legs]] (100%)
+**[[Fallen Priest]] (150%)
+**[[Hours 'Til Morning]] (200%)
+*[[June Bride of the Devil##04 Yowling Village|#04 Yowling Village]]: [[Salt by the Mouthful]] (100%)
+*[[Zombie Citadel]]: [[Zombie Citadel/Floor 8|Floor 8]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 18|Floor 18]] (250%)
+*[[October Gauntlet II]]:
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.11]] (300%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.12]] (311%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.13]] (322%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.14]] (333%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.15]] (344%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.16]] (355%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.17]] (366%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.18]] (377%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.19]] (388%)
+**[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.MAX]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dead Donny Dash
+|Health = 200000
+|Attack Power = 6000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 147
+|Movement Speed = 25
+|Knockback = 2
+|Foreswing = 44
+|Backswing = 27
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~700)<br>
+{{AbilityIcon|Burrow}} [[Burrow|Burrows]] underground 750 when a Cat enters its range (1 time)<br>
+{{AbilityIcon|Revive}} [[Revive|Revives]] with 100% HP after being dead for 240f <sub>8 seconds</sub> (1 time)
+|Element = Zombie
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+425 e.png|Dead Donny Dash's spritesheet
+Dead Donny Dash.gif|Dead Donny Dash's attack animation
+IdleDeadDonnyDash.gif|Dead Donny Dash's moving animatiin
+</gallery>
+
+==Trivia==
+*Dead Donny Dash is very likely based off of [[wikia:gegegenokitaro:Kitarō|Kitarō]], the titular protagonist of ''[[wikipedia:GeGeGe no Kitarō|GeGeGe no Kitarō]]''. The most obvious similarity is their hairstyles, but there are multiple other connections as well:
+**Both come from the grave: Donny is a Zombie enemy introduced in [[Inviting Cemetary]], while Kitarō was born in a cemetery.
+**Donny attacks by kicking his shoes at [[Cat Units]] and having them reappear on his feet, which is similar to how Kitarō uses his weaponized [[wikia:gegegenokitaro:Geta|Geta]] sandals.
+**The ''GeGeGe no Kitarō'' opening theme mentions "[[Sports Night (Monthly Event)|sports festivals in the graveyard at night]]".
+**The smoking gun is that Donny's first name in Japanese is Shitarō (死太郎); this is spelled and pronounced identically to Kitarō (鬼太郎), except that it swaps ''ki'' (鬼) with ''shi'' (死), meaning "death".
+***Incidentally, the first [[Sports Night (Monthly Event)|Sports Night]] event ended the day before [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou]] was released.
+***His Japanese name may additionally be a reference to ''[[wikipedia:Dash! Yonkuro|Dash! Yonkuro]]'', as ダッシュ死太郎 is not that far off from ダッシュ!四駆郎.
+
+==Reference==
+*https://battlecats-db.com/enemy/427.html
+
+----
+{{EnemyNav|M. Ost|CTO Seal}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zombie Enemies]]
+[[Category:Event Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Burrow ability]]
+[[Category:Enemies with Revive ability]]

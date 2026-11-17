@@ -1,0 +1,70 @@
+:''Not to be confused with [[God (Special Cat)]].''
+'''King's Mimic''' (わんわん大王の化身, ''Wan Wan Daiō no Keshin'', '''Incarnation of [[King Doge|Great King Wan Wan]]''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]. He was added in [[Version 13.0 Update|Version 13.0]].
+
+{{Enemy Info
+|name = King's Mimic
+|image = E 670.png
+|first appearance = [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]
+|money drop = 1,111¢ - 4,388¢
+}}
+
+==Enemy==
+Although this enemy tends to be very durable (especially when [[Cats Stand Together|buf]][[Super-Critical Hit!|fed]]) with 100% chance to freeze your units for 1.33 seconds, he ultimately doesn't prove to be too much of a threat due to having an exploitable trait, poor DPS and low freeze uptime.
+
+==Strategy==
+Try to take him down as quick as you possibly can with high-DPS units like [[Lasvoss (Uber Rare Cat)|Lasvoss]] or [[Hip Hop Cat (Super Rare Cat)|Can Can]] (but [[Wave Attack|Wave attackers]] might need to be used to clear the path for the latter), and Kotatsu, [[Bodhisattva Cat (Super Rare Cat)|Bodhisattva Cat]] & all Anti-Floating units work wonders against him.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]:
+**[[King's Mimic Appears!]] (2%)
+**[[Cat's All-Out Attack!]] (20%)
+**[[Mimic's Nimble Dodge!]] (100%)
+**[[Mimic's Sly Smirk]] (200%)
+**[[Cat Hesitates...]] (400%)
+**[[Mimic's Mockery]] (400%)
+**[[Cat Attempts Escape!]] (600%)
+**[[Mimic Gathers Power]] (600%)
+**[[Cats Stand Together]] (800%)
+**[[Super-Critical Hit!]] (700%)
+*[[Shadows over Doge Kingdom]]:
+**[[Fated Shadows]] (200%)
+**[[Wicked Aura]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = King's Mimic
+|Health = 100000
+|Attack Power = 500
+|Attack Range = 270
+|Attack Type = Area
+|Time Between Attacks = 122
+|Movement Speed = 8
+|Knockback = 2
+|Foreswing = 65
+|Backswing = 26
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -540~540)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 40f <sub>1.33 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+670 e.png|King's Mimic's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/672.html
+
+----
+{{EnemyNav|Jar Base|King Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]

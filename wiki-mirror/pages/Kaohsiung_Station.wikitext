@@ -1,0 +1,60 @@
+{{TWExclusive}}
+{{EnemiesAppearing|HAPPI|Those Guys}}
+'''Kaohsiung Station''' is the fourth stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]].
+
+{{Stage Info
+|stage name = [[File:rc127.png]]
+[[File:Mapsn103 03 c tw.png]]
+|stage location = [[File:Mapname103 c tw.png]]
+|energy = 150
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|HAPPI|100%
+|Those Guys|600%}}
+|boss = {{Magnification|Those Guys|600%}}
+|enemies2 = {{Magnification|HAPPI|150%
+|Those Guys|900%}}
+|boss2 = {{Magnification|Those Guys|900%}}
+|enemies3 = {{Magnification|HAPPI|200%
+|Those Guys|1,200%}}
+|boss3 = {{Magnification|Those Guys|1,200%}}
+|treasure = - [[HAPPI (Rare Cat)|HAPPI]] (25%, 1 time)
+|score reward = '''6,500''': 150,000 XP<br>
+'''4,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': 50,000 XP
+|XP = 18,000 XP
+|width = 4,000
+|max enemies = 20
+|twname = Kaohsiung Station
+|twscript = 高雄車站
+|twromaji = Gāoxióng chēzhàn
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]
+|difficulty = ★5
+|prev stage = [[Beautiful Island (Red Line)|Beautiful Island]]
+|next stage = [[Olympia]]
+}}
+
+==Battleground==
+*1 [[HAPPI (Enemy)|HAPPI]] spawns after 20 seconds<sup>600f</sup>.
+*10 [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 8~12 seconds<sup>240f~360f</sup>.
+*10 [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[Those Guys]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 5.33~8 seconds<sup>160f~240f</sup>.
+*10 [[Those Guys]] spawn after 50 seconds<sup>1,500f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*10 [[Those Guys]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 2.67~4 seconds<sup>80f~120f</sup>.
+*When the base reaches 99% HP:
+**1 [[Those Guys]] spawns as the boss.
+**5 [[HAPPI (Enemy)|HAPPIs]] spawn, delay 23.33 seconds<sup>700f</sup>.
+**7 [[HAPPI (Enemy)|HAPPIs]] spawn, delay 40 seconds<sup>1,200f</sup>.
+**3 [[HAPPI (Enemy)|HAPPIs]] spawn, delay 50~53.33 seconds<sup>1,500f~1,600f</sup>.
+
+==Strategy==
+Even though this stage has only two enemies, they are sent out rather rapidly.  Using a lot of meatshields can help on preventing the enemies from advancing.
+
+==Reference==
+*https://battlecats-db.com/stage/s02103-04.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

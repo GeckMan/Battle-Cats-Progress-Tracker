@@ -1,0 +1,141 @@
+{{ENExclusive}}
+'''Dotty Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by purchasing it from a special sale during the [[Tower of Saviors Collaboration Event]]. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 745
+|rarity = EX
+|name1 = Dotty Cat
+|name2 = Birthday Dotty Cat
+}}
+
+==Evolution==
+Evolves into '''Birthday Dotty Cat''' at level 10.
+
+==Strategy/Usage==
+To put it simply, Dotty Cat is almost entirely outclassed by [[Rocker Cat (Rare Cat)|Ramen Cat]] outside of '''very''' niche situations. It has lower anti-Angel health, since it only has [[Strong Against|Strong]] instead of [[Resistant]], a slower recharge and a higher cost. While it does have higher base health than Ramen Cat, Ramen Cat is able to benefit from + levels, on top of having [[Talents]].
+
+That being said, it is slightly more effective than Ramen Cat against Angels that can Slow or Knockback, such as [[Angelic Sleipnir]], [[Lutrinae Gokurakko]] or [[Sunfish Jones]]. While using it against non-Angel enemies is generally a bad idea, there may be a few cases where its immunities can come in handy, for example when fighting [[Wafer Cat XL (Enemy)|Wafer Cat XL]] or [[Firecracker]], though [[Sumo Cat (Special Cat)|Riceball Cat]] can do the same using Talents.
+
+Overall, this unit is likely not worth spending money on outside of collection, since there are many stronger and more accessible options for its meatshield role.
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 745
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni745 f00.png
+|Image2 = Uni745 c00.png
+|Name1 = Dotty Cat
+|Desc1 = A Cat that wears a squirrel suit.<br>Its rather strange cry is "Bobobi."<br>Strong against Angels
+|Name2 = Birthday Dotty Cat
+|Desc2 = A Cat striving to be loved by humans. What their<br>clothes celebrate is a mystery even to them.<br>Strong against Angels
+|Name1 (TW) = 點點貓 (Diǎndiǎn Māo, Dotdot Cat)
+|Desc1 (TW) = 穿著酷似松鼠玩偶裝的貓咪<br>會發出謎樣的「波波比」叫聲<br>善於攻擊天使敵人
+|Transl1 (TW) = A cat dressed as a squirrel in a doll costume<br>That makes a mysterious "bobble-bobble" sound<br>Good at attacking Angelic enemies
+|Name2 (TW) = 生日派對點點貓 (Shēngrì Pàiduì Māo, Birthday Party Dotdot Cat)
+|Desc2 (TW) = 希望成為易於親近且受大家喜愛的貓咪<br>自己並不清楚這身節慶服裝的由來<br>善於攻擊天使敵人
+|Transl2 (TW) = Wants to be a friendly and popular cat<br>Doesn't know the origin of the costume<br>Good at attacking Angelic enemies
+|Name1 (KR) = 도티 고양이
+|Desc1 (KR) = 다람쥐 같은 작은 동물 인형탈을 쓴 고양이<br>「보보비」하고 이상한 울음 소리를 낸다<br>천사에 엄청 강하다
+|Name2 (KR) = 버스데이 도티 고양이
+|Desc2 (KR) = 붙임성 좋고 모두에게 사랑받고 싶어하는 고양이<br>무엇을 축하하기 위한 의상인지는 모르는 듯 하다<br>천사에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 370¢
+*Chapter 2: 555¢
+*Chapter 3: 740¢
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Dotty Cat
+|Normal Base HP = 1200
+|Normal Base AP = 150
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 20
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 370
+|Normal Recharge = 420
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Evolved Name = Birthday Dotty Cat
+|Evolved Base HP = 1200
+|Evolved Base AP = 150
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 33
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 370
+|Evolved Recharge = 420
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,200 HP
+|val-Normal-Attack Power = 150 damage<br>(121.62 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 14 ~ 5.2 seconds
+|val-Normal-MaxHP = 20,400 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(2,067.57 DPS)
+|val-Evolved-Health = 20,400 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(2,067.57 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 14 ~ 5.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni745 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/746.html
+
+----
+{{CatNav|Felix the Cat Duke Cat|Kenshin Himura}}
+----
+
+{{Tower of Saviors}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Knockback Immunity]]

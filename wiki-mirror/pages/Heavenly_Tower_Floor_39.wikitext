@@ -1,0 +1,67 @@
+{{EnemiesAppearing|Codename "Red Riding"|Elder Sloth|Tackey|Mr. Mole}}
+:''Not to be confused with the [[Infernal Tower]] version of [[Infernal Tower/Floor 39|Floor 39]].''
+'''Floor 39''' is the 39th floor of [[Heavenly Tower]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 38 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 200
+|enemy castle hp = 750,000 HP
+|enemies = {{Magnification|Elder Sloth|300%
+|Tackey|200%
+|Mr. Mole|100%}}
+|boss = {{Magnification|Codename "Red Riding"|200%}}
+|treasure = - 3,000,000 XP (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 6,200
+|max enemies = 15
+|jpname = 39th Floor
+|script = 39階
+|romaji = 39 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★10
+|prev stage = [[Heavenly Tower/Floor 38|Floor 38]]
+|next stage = [[Heavenly Tower/Floor 40|Floor 40]]
+}}
+
+==Battleground==
+*1 [[Codename "Red Riding"]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+*1 [[Elder Sloth]] spawns after 10 seconds<sup>300f</sup>.
+*5 [[Tackey]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*4 [[Mr. Mole]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+The key to this stage is SPEED. Bring units that are as fast as possible, to sneak through the blindspots of Red Riding, Tackey and Mr. Mole. [[Crazed Cow Cat (Super Rare Cat)|Manic Lion Cat]] is a good cat on this level and so are [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], [[Express Cat (Super Rare Cat)|Maglev Cat]] and, especially, [[Curling Cat (Rare Cat)|Cleanerbot Cat]]. Spawning Manic Lions as quickly as possible can overwhelm the Elder Sloth, leaving the rest of the enemies vulnerable to their own blind spots.
+
+Remember to time your units well so Red Riding doesn't snipe them. Additionally, Mr. Mole's [[Knockback|knockback]] will affect all Cats that are not immune, and thus can be abused to reset the attack animations of cats with long backswing, most notably Maglev Cat.
+
+==='''Rush Strategy'''===
+{{Lineup
+|Neneko
+|Moneko
+|Masai Cat
+|Li'l Dragon Cat
+|Manic Lion Cat|30
+|Fishman Cat|40
+|Maglev Cat|40
+|Awakened Bahamut Cat|30
+|Cleanerbot Cat|40
+|Courier Cat|40
+|notes = [[Cool Japan (Combo)|Cool Japan]] or any other two small Attack Up [[Cat Combo]]s will work.
+}}
+
+'''Battle''': Immediately spawn Cleanerbot, then spawn Manic Lion when you can afford him so that you can stall the Elder Sloth. You may upgrade your Worker Cat while stalling, and spawn a Fishman, but try to make sure it doesn't instantly die to Elder Sloth or Mina.
+
+After the boss wave hits, you can start spawning the non combo units. Try to time them all so that Mina doesn't hit them, although this may be difficult in Cleanerbot's case. Manic Lion should be spawned such that it can act as a frontline when there is no Cleanerbot. Maglev should be spawned either after or slightly before Elder Sloth attacks, as this will maximise the amount of times it is hit by Mr. Mole. Timing Maglev is important, as Mr. Mole's knockback can help every one to chain a lot of its extremely powerful attacks and take off a significant portion of Elder Sloth's HP. Minimise use of the [[Cat Cannon]] while Elder Sloth is alive, so that you don't sync the Mr. Moles.
+
+Hopefully, Elder Sloth should fall before Mina is in range of the base. Spawn Bahamut to speed up the process of Tackey removal, then you should just be left with Mina and the Moles. If you have any cats in the blindspot of the Moles and are attacking Mina, do '''not''' use the Cat Cannon. Otherwise, try and use it to get at least a single Manic Lion in the blindspot. Doing so essentially wins the stage, as the only other enemy that can spawn is a single [[Ms. Sign]]. Once Mina is dead, the rest of the stage is completely trivial.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-39.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]
+[[Category:No Continue Stages]]

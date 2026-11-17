@@ -1,0 +1,564 @@
+{{PageImage|XP.png}}
+'''Level-up''' is a feature that allows players to spend XP to improve [[Cat Units]] and Base Upgrades. Level upgrades can be done by entering the [[Upgrade Menu]], scrolling to the desired Cat Unit or Base Upgrade and pressing the "Upgrade!" button.
+
+==Explanation==
+All Cat Units and Base Upgrades start at level 1. Each upgrade increases the level by 1. Levelling up a Cat Unit will increase its health and attack power, while levelling up a Base Upgrade will make it more effective (e.g. levelling up the Study upgrade increases amount of XP earned after [[Battle|battle]]). Every level-up will also raise the player's [[User Rank]] by 1 level. There is a limit to how many times a unit may be upgraded. The level cap is initially 10, but it can be increased all the way up to 50 for most units (60 for [[:Category:Uber Rare Cats|ubers]]) as the player raises their User Rank and progresses through the game.
+
+The XP costs will increase with each upgrade until level 10, at which point they will become multiples of the first 10 levels' costs. These specific multiples are 2 for levels 11-20, 3 for 21-30, and then adds 0.5 to the multiplier every 10 levels after that (so that would be 3.5 for 31-40, 4 for 41-50, 4.5 for 51-60, and beyond, despite no cats being upgradeable past 60). This pattern continues all the way up to the cat's maximum natural level; [[Superfeline (Normal Cat)|Superfeline]] is the only cat to break the pattern and always costs 999,999 for each level.
+
+In addition to standard levels (also known as natural or XP levels), many units can also upgrade to '''plus levels''' (also known as '''+ levels'''). Each plus level is equivalent to a natural level, but the limits for plus levels are different: for example [[Tank Cat (Normal Cat)|Tank Cat]] can be upgraded to level 20 by using XP, but with plus levels its true level cap is 20+90. Plus levels are attained by "using" duplicate Cat Units or Ability Capsules in Cat Storage. As a result, only cats obtainable from gacha (including [[:Category:Normal Cats|Normal]], [[Lucky Capsule|Lucky]] and [[:Category:Gacha Cats|Rare]] capsules) can be upgraded to plus levels.
+
+Levelling up Cat Units can also unlock new forms and abilities: upgrading any Cat Unit to total level 10 will unlock its Evolved Form, and upgrading a Normal Cat to total level 30 (i.e. 20+10) will unlock its [[True Form]]. Other Cats have a minimum level and additional requirements that must be met before their True Forms can be unlocked (20 for [[:Category:Cats requiring Awakening for True Form|cats needing Awakening]]; 30 for [[:Category:Cats requiring Catfruits for True Form|cats needing Catfruit]]). Additionally, certain Uber Rare Cats can unlock [[Ultra Form]]s upon reaching level 60.
+
+During certain [[Million Downloads Event]]s, a "Half XP Cost Event" will appear on Friday, Saturday and Sunday for a few weeks. It halves the XP costs for upgrading all Cat Units and the amount of XP needed to evolve units.
+
+==Level Caps==
+===Normal Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |Original Nine
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level MAX +19
+|None
+|-
+|Level MAX +25
+|[[User Rank]] 1,500
+|-
+|Level MAX +30
+|[[User Rank]] 1,700
+|-
+|Level MAX +35
+|[[User Rank]] 2,900
+|-
+|Level MAX +40
+|[[User Rank]] 3,000
+|-
+|Level MAX +45
+|[[User Rank]] 3,500
+|-
+|Level MAX +50
+|[[User Rank]] 3,550
+|-
+|Level MAX +55
+|[[User Rank]] 4,200
+|-
+|Level MAX +60
+|[[User Rank]] 4,250
+|-
+|Level MAX +65
+|[[User Rank]] 5,050
+|-
+|Level MAX +70
+|[[User Rank]] 5,100
+|-
+|Level MAX +75
+|[[User Rank]] 5,750
+|-
+|Level MAX +80
+|[[User Rank]] 5,800
+|-
+|Level MAX +90
+|[[User Rank]] 9,999
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[Superfeline (Normal Cat)|Superfeline]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level MAX +9
+|None
+|-
+|Level MAX +30
+|[[User Rank]] 10,001
+|-
+|Level MAX +40
+|[[User Rank]] 11,001
+|-
+|Level MAX +50
+|[[User Rank]] 12,001
+|-
+|Level MAX +60
+|[[User Rank]] 13,001
+|-
+|Level MAX +70
+|[[User Rank]] 14,001
+|-
+|Level MAX +80
+|[[User Rank]] 15,001
+|-
+|Level MAX +90
+|[[User Rank]] 16,001
+|}
+
+===Special Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[:Category:Special Cats|Special Cats]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level 30
+|[[User Rank]] 1,600
+|-
+|Level 40 (non-[[:Category:Mythic Cats|Mythic Cats]])
+|[[Catseye]]s
+|-
+|Level 40 (Mythic Cats)
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level 50 (non-Mythic Cats)
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level 50 (Mythic Cats)
+|[[Catseye]]s after completing [[Revival of Origin]]
+|-
+|Level MAX +10 ([[June Bride of the Devil (Event Gacha)|June Bride of the Devil]], [[Monster Hunter Collaboration Event|Monster Hunter]] and [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru]] Cats)
+|None
+|-
+|Level MAX +20 ([[Bikkuriman Collaboration Event|Bikkuriman]] Cats)
+|None
+|-
+|Level MAX +30 ([[Summer Break Cats (Event Gacha)|Summer Break Cats]], [[JRA Collaboration Event/Event Gacha|JRA]], [[Heartbeat Catcademy (Event Gacha)|Heartbeat Catcademy]] Cats)
+|None
+|-
+|Level MAX +60 ([[:Category:Li'l Cats|Li'l Cats]])
+|Complete [[Li'l Cat's Trial]] to increase level cap from +40 to +60
+|-
+! colspan="2" style="text-align: center;" |JRA and Heartbeat Catcademy units may not upgrade past level 1.
+|}
+
+===Rare Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[:Category:Rare Cats|Rare Cats]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level 25
+|[[User Rank]] 900
+|-
+|Level 30
+|[[User Rank]] 1,200
+|-
+|Level 40
+|[[Catseye]]s
+|-
+|Level 50
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level MAX +9
+|None
+|-
+|Level MAX +20
+|[[User Rank]] 1,800
+|-
+|Level MAX +30
+|[[User Rank]] 1,900
+|-
+|Level MAX +40
+|[[User Rank]] 2,300
+|-
+|Level MAX +50
+|[[User Rank]] 3,100
+|-
+|Level MAX +60
+|[[User Rank]] 4,050
+|-
+|Level MAX +70
+|[[User Rank]] 4,600
+|-
+|Level MAX +80
+|[[User Rank]] 5,850
+|}
+
+===Super Rare Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[:Category:Super Rare Cats|Super Rare Cats]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level 25 (non-[[:Category:Crazed Cats|Crazed]])
+|[[User Rank]] 1,000
+|-
+|Level 25 (Crazed)
+|[[User Rank]] 3,600
+|-
+|Level 30 (non-Crazed)
+|[[User Rank]] 1,300
+|-
+|Level 30 (Crazed)
+|[[User Rank]] 3,650
+|-
+|Level 40
+|[[Catseye]]s
+|-
+|Level 50
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level MAX +9
+|None
+|-
+|Level MAX +20
+|[[User Rank]] 2,000
+|-
+|Level MAX +30
+|[[User Rank]] 2,400
+|-
+|Level MAX +40
+|[[User Rank]] 3,200
+|-
+|Level MAX +50
+|[[User Rank]] 4,100
+|-
+|Level MAX +60
+|[[User Rank]] 4,650
+|-
+|Level MAX +70
+|[[User Rank]] 5,900
+|-
+! colspan="2" style="text-align: center;" |[[Metal Cat (Super Rare Cat)|Metal Cat]] can not upgrade past level 20 or to + levels.
+|}
+
+===Uber Rare Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[:Category:Uber Rare Cats|Uber Rare Cats]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level 25
+|[[User Rank]] 1,100
+|-
+|Level 30
+|[[User Rank]] 1,400
+|-
+|Level 40
+|[[Catseye]]s
+|-
+|Level 50
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level 60
+|[[Catseye|Dark Catseyes]] after [[An Ancient Curse]]
+|-
+|Level MAX +9
+|None
+|-
+|Level MAX +20
+|[[User Rank]] 2,100
+|-
+|Level MAX +30
+|[[User Rank]] 2,500
+|-
+|Level MAX +40
+|[[User Rank]] 3,300
+|-
+|Level MAX +50
+|[[User Rank]] 4,150
+|-
+|Level MAX +60
+|[[User Rank]] 4,700
+|-
+|Level MAX +70
+|[[User Rank]] 5,950
+|}
+
+===Legend Rare Cats===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |[[:Category:Legend Rare Cats|Legend Rare Cats]]
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level 25
+|[[User Rank]] 1,110
+|-
+|-
+|Level 30
+|[[User Rank]] 1,410
+|-
+|Level 40
+|[[Catseye]]s
+|-
+|Level 50
+|[[Catseye]]s after completing [[An Ancient Curse]]
+|-
+|Level MAX +9
+|None
+|-
+|}
+
+===Base Upgrades===
+{| class="article-table mw-collapsible mw-collapsed" style="width: 500px;" border="0" cellpadding="1" cellspacing="1"
+! colspan="2" scope="row" style="text-align: center;" |Base Upgrades
+|-
+! scope="col" |Level
+! scope="col" |Requirement
+|-
+|Level 10
+|None
+|-
+|Level 20
+|Complete [[Empire of Cats]] Chapter 2
+|-
+|Level MAX +10
+|None
+|-
+! colspan="2" style="text-align: center;" |The Cat Cannon Range may not upgrade past level 10 or to + levels.
+|}
+
+==Calculating Stats==
+:''Stat calculation is non-trivial and is best done by computer. While this section will try to be as accurate as possible, it may sometimes be more important to just remember a few simple rules that are accurate in most cases.''
+
+Each Cat has an individual value for their base Health and Attack Power. This Initial Stat is used to determine the value of the cat's Health and Attack Power based on their current level.
+
+A level 1 [[Bahamut Cat (Special Cat)|Bahamut Cat]] has 1,500 HP and 5,000 damage. When upgrading it to level 2, it will gain 20% of its initial stats, so it will have 1,800 HP and 6,000 damage. At level 3, it will have 2,100 HP and 7,000 damage. At level <math>n</math>, you could expect Bahamut to have
+
+<math>\text{Stats at level }n = \text{Initial Stat} + (n - 1) \times (\text{Initial Stat} \times 20\%)</math>
+
+For example, at level 4, Bahamut would have <math>1500 + (3 \times 1500 \times 20\%) = 1500 + 900 = 2400</math> HP and <math>5000 + (3 \times 5000 \times 20\%) = 5000 + 3000 = 8000</math> damage.
+
+Due to how stats are represented in game, this calculation must yield an integer, and so the actual calculation would also apply the <math>\operatorname{round}()</math> function to the result.
+
+A neater, equivalent way of writing this calculation is to factor out the initial stat, giving
+
+<math>\text{Stats at level }n = \operatorname{round}\left(\text{Initial Stat} \times \frac{n+4}{5} \right)</math>
+
+===Treasure Bonuses===
+When the [[Main Chapters Levels#Legendary Cat Shield|Legendary Cat Shield]] or [[Main Chapters Levels#Legendary Cat Sword|Legendary Cat Sword]] are activated, their effect gives a direct increase to the value of the corresponding initial HP/attack power stat. This effect is independent of the growth rate calculation, which is used to determine a cat's health and damage at their current level.
+
+With 100% Treasures from one chapter of Empire of Cats, the relevant stats will be multiplied by 1.5. With 100% Treasures from all 3 chapters, the relevant stats will be multiplied by 2.5. Therefore, taking into account Treasure bonuses, the cat's stats at level n will be:
+
+<math>\text{Stats at level }n = \Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \frac{n+4}{5} \right) \times \text{TB} \Bigr\rfloor</math>
+*TB = Treasure Bonus Multiplier = 1.5, 2.0 or 2.5 at 100%, 200% or 300% respectively
+*The symbols ⌊ ⌋ represent the floor function, which essentially removes any decimals from the number between them. For example, <math>\lfloor2.99\rfloor = 2</math>.
+
+:''For most cats, at level 10 they will have 7x their initial stats, 12x at level 20, 17x at 30, 22x at 40, 27x at 50 and 32x at 60. Depending on stat scaling (see below), these numbers may be wildly different. The numbers may also be slightly (and by slightly we mean at most 2, which is almost always negligible) different if one of the initial stats is not a multiple of 5.''
+
+===Higher-Level Cats and Level Reduction Points===
+The above formula will work for most cats at a low level, but will not be accurate at higher levels: the specific mechanism for how levels scale is variable every 10 levels rather than a flat 20%. For example, [[Gacha Cat (Special Cat)|Gacha Cat]]'s levels scale as the following:
+
+{| class="article-table"
+! Level || 1-20 || 21-30 || 31-40 || 41-50 || 51-60 || 61+
+|-
+! Increase || 20% || 60% || 120% || 180% || 20% || 10%
+|}
+
+Until level 20, its stats will align with the above formulae given, so with all EoC Treasures at level 20 its stats would be:
+
+<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \frac{\text{Level}+4}{100 \div \text{Scaling}} \right) \times \text{TB} \Bigr\rfloor</math>
+
+Gacha Cat's base HP is 1,500 and its base attack is 1. Substituting in these stats, as well as 20 for level, 20 for scaling (as per the previous table) and 2.5 for TB, this is:
+
+<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \frac{24}{5} \right) \times 2.5 \Bigr\rfloor = 18,000\text{ HP}, 12\text{ AP}</math>
+
+However, this changes for the next 10 levels, so when upgrading to level 21 it will now receive a 60% boost in stats (as with the boosts up to level 20, this 60% gets applied before the value is rounded), so the calculation will now be:
+
+<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \frac{24}{5} + \text{Initial Stat} \times \frac{\text{Levels after 20}}{100 \div \text{Scaling}} \right) \times \text{TB} \Bigr\rfloor</math>
+
+Substituting in appropriate values, this is
+
+<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \frac{24}{5} + \text{Initial Stat} \times \frac{1}{100 \div 60} \right) \times 2.5 \Bigr\rfloor</math>
+
+<math>\Bigl\lfloor \text{round}\left(1,500 \times \frac{24}{5} + 1,500 \times \frac{1}{100 \div 60} \right) \times 2.5 \Bigr\rfloor = 20,250\text{ HP}</math>
+
+<math>\Bigl\lfloor \operatorname{round}\left(1 \times \frac{24}{5} + 1 \times \frac{1}{100 \div 60} \right) \times 2.5 \Bigr\rfloor = \Bigl\lfloor \operatorname{round}(5.4) \times 2.5 \Bigr\rfloor = \lfloor 5 \times 2.5 \rfloor = 12\text{ AP}</math>
+
+Therefore, at level 21 with all Treasures, Gacha cat will have 20,250 HP and 12 AP.
+
+At level 50, Gacha Cat's stats would be as follows:
+
+<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial} \times \left(\frac{20 + 4}{100 \div 20} + \frac{10}{100 \div 60} + \frac{10}{100 \div 120} + \frac{10}{100 \div 180} \right)\right) \times 2.5 \Bigr\rfloor = 153,000\text{ HP}, 102\text{ AP}</math>
+
+====Reduction Points====
+:''Reduction points are an outdated method of calculating stats, but for most cats they are still accurate, and using reduction points to calculate stats is much easier than the actual calculation.''
+Certain cats like Gacha Cat, [[Principal Cat (Special Cat)|Principal Cat]] and [[Choco Capsule (Special Cat)|Choco Capsule]] are special cases of cats with level scaling where stats increase. For virtually every other cat, a much simpler way of reasoning about a cat's stats at a certain level is to use a "reduction point", where the scaling of the cat's stats goes down from 20% to 10% of the initial stats. Some cats will also have a second reduction point that goes down to 5% of initial stats, as detailed below.
+
+{| class="article-table" style="width: 100%;text-align: center;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="row" |Type
+! scope="col" | (m) 1<sup>st</sup> Reduction Point ( 1/10<sup>th</sup> Initial)
+! scope="col" | (p) 2<sup>nd</sup> Reduction Point ( 1/20<sup>th</sup> Initial)
+|-
+! scope="row" |Normal Cats
+|Level 60
+|<nowiki>-</nowiki>
+|-
+! scope="row" |Special Cats
+|Level 60
+|<nowiki>-</nowiki>
+|-
+!Bahamut Cat
+(Special)
+|Level 30
+|<nowiki>-</nowiki>
+|-
+! scope="row" |Rare Cats
+|Level 70
+|Level 90
+|-
+! scope="row" |Super Rare Cats
+|Level 60
+|Level 80
+|-
+! scope="row" |Crazed Cats
+(Super Rare)
+|Level 20
+|<nowiki>-</nowiki>
+|-
+! scope="row" |Uber Rare Cats
+|Level 60
+|Level 80
+|}
+
+Here is an updated formula for high-leveled Cats between the 1st reduction point (m) and 2nd reduction point (p):
+
+<math>\text{Stats at level }n = \Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \left( \frac{m+4}{5} + \frac{n-m}{10} \right) \right) \times \text{TB} \Bigr\rfloor</math>
+*TB = Treasure Bonus Multiplier = 1.5, 2.0 or 2.5 at 100%, 200% or 300% respectively
+*m is the first reduction point, as listed above; use this formula when m < n < p
+*The symbols ⌊ ⌋ represent the floor function, which is explained above.
+
+Here is the updated formula for very high level and hypermaxed Cats beyond the 2nd reduction point (p):
+
+<math>\text{Stats at level }n = \Bigl\lfloor \operatorname{round}\left(\text{Initial Stat} \times \left( \frac{m+4}{5} + \frac{p-m}{10} + \frac{n-p}{20} \right) \right) \times \text{TB} \Bigr\rfloor</math>
+*TB = Treasure Bonus Multiplier = 1.5, 2.0 or 2.5 at 100%, 200% or 300% respectively
+*m is the first reduction point, and p is the second reduction point; use this formula when n > p.
+*The symbols ⌊ ⌋ represent the floor function, which is explained above.
+
+====Applying the Equations (examples)====
+To illustrate how to apply the equations we provide you with a few examples, using [[Metal Cat (Super Rare Cat)|Metal Cat]], [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]] and [[Ramen Cat]]
+
+Below we provide an understanding of the mechanics of the equation, calculated using [[Metal Cat (Super Rare Cat)|Metal Cat]]'s HP at level 7, 12, 13, 18 and 20 with maximum [[Main Chapters Levels#Legendary Cat Shield|Legendary Cat Shield]] activated.
+{| class="article-table" style="width: 100%;text-align: center;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="row" |Metal Cat
+! scope="col" |1<sup>st</sup> Calculating the Stats
+!Rounding
+! scope="col" |2<sup>nd</sup> Adding the Treasure Bonus
+!Calculated Stat
+|-
+!Level ''n''
+|Initial Stat * ((''n'' + 4)/5) = x
+|round (x)
+|round (x) * TB = y
+|floor (y)
+|-
+! scope="row" |Level 7
+|1 * ((7 + 4)/5) = 2.2
+|2 HP
+|2 * 2.5 = 5.0
+|5 HP
+|-
+!Level 12
+|1 * ((12 + 4)/5) = 3.2
+|3 HP
+|3 * 2.5 = 7.5
+|7 HP
+|-
+! scope="row" |Level 13
+|1 * ((13 + 4)/5) = 3.4
+|3 HP
+|3 * 2.5 = 7.5
+|7 HP
+|-
+! scope="row" |Level 18
+|1 * ((18 + 4)/5) = 4.4
+|4 HP
+|4 * 2.5 = 10.0
+|10 HP
+|-
+! scope="row" |Level 20
+|1 * ((20 + 4)/5) = 4.8
+|5 HP
+|5 * 2.5 = 12.5
+|12 HP
+|}
+<sup>Treasure Bonus Multiplier = 2.5x</sup>
+
+Below are examples using the simple equation for [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]]'s HP at level 20, 25 and 40 with maximum [[Main Chapters Levels#Legendary Cat Shield|Legendary Cat Shield]] activated.
+
+<math>\text{Stats at level }20 = \Bigl\lfloor \operatorname{round}\left(450 \times \frac{24}{5}\right) \times 2.5 \Bigr\rfloor = 5,400 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus Multiplier = 2.5, Initial Stat = 450, and (n+4) = (20+4) = 24.</sup>
+
+<math>\text{Stats at level }25 = \Bigl\lfloor \operatorname{round}\left(450 \times \frac{29}{5}\right) \times 2.5 \Bigr\rfloor = 6,525 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus Multiplier = 2.5, Initial Stat = 450, and (n+4) = (25+4) = 29.</sup>
+
+<math>\text{Stats at level }40 = \Bigl\lfloor \operatorname{round}\left(450 \times \frac{44}{5}\right) \times 2.5 \Bigr\rfloor = 9,900 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus Multiplier = 2.5, Initial Stat = 450, and (n+4) = (40+4) = 44.</sup>
+
+Below are examples for calculating [[Rocker Cat (Rare Cat)|Ramen Cat]]'s HP at level 25, 75 and 95, to showcase how to calculate the stats of a unit that surpasses 1st and/or 2nd reduction point, with maximum [[Main Chapters Levels#Legendary Cat Shield|Legendary Cat Shield]] activated.
+
+<math>\text{Stats at level }25 = \Bigl\lfloor \operatorname{round}\left(1050 \times \frac{29}{5}\right) \times 2.5 \Bigr\rfloor = 15,225 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus Multiplier = 2.5, Initial Stat = 1050, m = 70, p = 90, and (n+4) = (25+4) = 29.</sup>
+
+<math>\text{Stats at level }75 = \Bigl\lfloor \operatorname{round}\left(1050 \times \left(\frac{74}{5} + \frac{5}{10}\right)\right) \times 2.5 \Bigr\rfloor = 40,162 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus Multiplier = 2.5, Initial Stat = 1050, m = 70, p = 90, and (n+4) = 74 which is greater than m, therefore (m+4) = 74 and (n-m) = 5.</sup>
+
+<math>\text{Stats at level }95 = \Bigl\lfloor \operatorname{round}\left(1050 \times \left(\frac{74}{5} + \frac{20}{10} + \frac{5}{20}\right)\right) \times 2.5 \Bigr\rfloor = 44,757 \text{ HP}</math><br>
+<sup>Here, Treasure Bonus = 2.5, Initial Stat = 1050, (n-1) = 94 which is higher than p, therefore (m+4) = 74, (p-m) = 20, and (n-p) = 5.</sup>
+
+==Effect on Base Upgrades==
+*Cat Cannon Power - Increases [[Cat Cannon]] attack power by 50 and Cat Cannon recharge time by 50 frames per level.
+*Cat Cannon Range - Increases Cat Cannon attack range. It starts at 3 Cannon waves (different that regular [[Wave Attack|waves]]) and increases by 1 per level.
+*Cat Cannon Charge - Decreases Cat Cannon recharge time by 50 frames per level.
+*Worker Cat Rate - Increases the rate of income by 3¢ per second per level.
+*Worker Cat Wallet - Increases the [[Worker Cat]]'s wallet, increasing upper limit of income. Adds 100 starting wallet per level, +50 per Worker Cat level while in the stage.
+*Base Defense - Increases the health of the [[Cat Base]] by 1,000 HP per level.
+*Research - decreases Cat recharge time. It has no effect at level 1, but from level 2 and after, recharge time will be decreased by 0.2 seconds (at level 20+10, the recharge time is decreased by 5.8 seconds).
+*Accountant - Increases the money earned when an enemy is defeated. It has no effect at level 1, but from level 2 and after, money earned from enemies will be increased by 5% (at level 20+10, the money drop from enemies is increased by 145%).
+*Study - Increases the amount of XP received when clearing a stage. It has no effect at level 1, but from level 2 and after, XP will be increased by 5% (at level 20+10, the XP received when clearing a stage is increased by 145%).
+*Cat Energy - Increases the limit of [[Cat Energy]] by 10 per level.
+
+==Trivia==
+*[[The Cat God (Special Cat)|The Cat God]] and [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]] are the only characters in the [[Upgrade Menu]] that can't be leveled up through any means.
+*[[:Category:Normal Cats|Normal Cats]] are the only cats that evolve into their True Form automatically by leveling up.
+
+{{BC Navigation}}
+[[Category:Game Features]]

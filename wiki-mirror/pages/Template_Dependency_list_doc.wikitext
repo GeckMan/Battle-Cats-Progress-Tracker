@@ -1,0 +1,12 @@
+{{Documentation}}
+This template is meant to be used on module documentations. This is taken from [[weirdgloop:osw:Template:DependencyList]].
+
+{{t|Dependency list|<Module name>|category=<true/false>}}
+
+All parameters are optional. If <code>Module name</code> is omitted the page name will be used instead; <code>/doc</code> is automatically removed. 
+
+If <code>category</code> is <code>false</code> then no categories will be added to the page, the default value is <code>true</code>.
+
+==Examples==
+{{T|Dependency list|Module:Cat Stats 1.2}}
+{{Dependency list|Module:Cat Stats 1.2|category=false}}

@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Doge|Snache|King's Mimic}}
+'''King's Mimic Appears!''' is the first stage in [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn361 00 s en.png]]
+|stage location = [[File:Mapname361 s en.png]]
+|energy = 20
+|enemy castle hp = 1,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%}}
+|boss = {{Magnification|King's Mimic|2%}}
+|restriction = Max # of Deployable Cats: 10
+|score reward = '''8,800''': 10,000 XP<br>
+'''5,800''': 5,000 XP<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 600 XP
+|width = 3,200
+|max enemies = 7
+|jpname = Incarnation of the Great King Appears!
+|script = 大王の化身があらわれた！
+|romaji = Daiō no Keshin ga Arawareta!
+|star = 1
+|event-chapter = [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Cat's All-Out Attack!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*3 [[Doge]]s spawn after 1.33 seconds<sup>40f</sup>, delay 11.33~16 seconds<sup>340f~480f</sup>.
+*3 [[Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 10.67~13.33 seconds<sup>320f~400f</sup>.
+*Infinite [[Doge]]s spawn after 40 seconds<sup>1,200f</sup>, delay 24~30 seconds<sup>720f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[King's Mimic]] spawns as the boss.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01361-01.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]
+[[Category:Restriction Stages]]

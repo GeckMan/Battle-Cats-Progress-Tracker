@@ -1,0 +1,9 @@
+.ranger-navbox.versions {
+	--bg-navbox-title: linear-gradient(to bottom, hsl(288, 65%, 50%) 0%, hsl(288, 73%, 66%) 100%);
+	--bg-sub-table-title: hsl(275, 43%, 58%);
+	--bg-group-name: hsl(276, 100%, 82%);
+	--title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

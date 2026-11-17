@@ -1,0 +1,78 @@
+{{EnemiesAppearing|Squire Rel|Shy Boy|Teacher Bear|Le'boin|One Horn|Mooth|Assassin Bear}}
+'''Faster Barefoot''' is the fifth stage in [[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]]
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn038 04 s en.png]]
+|stage location = [[File:Mapname038 s en.png]]
+|energy = 90
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Squire Rel|100%
+|Shy Boy|100%
+|Teacher Bear|100%
+|Le'boin|100%
+|One Horn|100%
+|Mooth|100%
+|Assassin Bear|100%}}
+|boss = {{Magnification|Mooth|100%}}
+|enemies2 = {{Magnification|Squire Rel|150%
+|Shy Boy|150%
+|Teacher Bear|150%
+|Le'boin|150%
+|One Horn|150%
+|Mooth|150%
+|Assassin Bear|150%}}
+|boss2 = {{Magnification|Mooth|150%}}
+|enemies3 = {{Magnification|Squire Rel|200%
+|Shy Boy|200%
+|Teacher Bear|200%
+|Le'boin|200%
+|One Horn|200%
+|Mooth|200%
+|Assassin Bear|200%}}
+|boss3 = {{Magnification|Mooth|200%}}
+|enemies4 = {{Magnification|Squire Rel|300%
+|Shy Boy|300%
+|Teacher Bear|300%
+|Le'boin|300%
+|One Horn|300%
+|Mooth|300%
+|Assassin Bear|300%}}
+|boss4 = {{Magnification|Mooth|300%}}
+|treasure = - [[Sports Day Cat (Rare Cat)|Sports Day Cat]] (5%, 1 time)
+|XP = 2,700 XP
+|width = 3,600
+|max enemies = 8
+|jpname = A Legend That Is Barefoot And Fast
+|script = 素足だと速い伝説
+|romaji = Suashida to Hayai Densetsu
+|star = 4
+|event-chapter = [[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]]
+|difficulty = ★4
+|prev stage = [[The Sack Race]]
+|next stage = [[Egg-Glue-Spoon]]
+}}
+
+==Battleground==
+*Infinite [[Squire Rel]]s spawn after 0.07 seconds<sup>2f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*1 [[Shy Boy]] spawns after 0.07 seconds<sup>2f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mooth]] spawns as the boss.
+**Infinite [[Shy Boy]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**Infinite [[Teacher Bear]]s spawn, delay 6~14 seconds<sup>180f~420f</sup>.
+**1 [[Le'boin]] spawns.
+**Infinite [[One Horn]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**Infinite [[Mooth]]s spawn, delay 6~14 seconds<sup>180f~420f</sup>.
+*When the base reaches 80% HP:
+**1 [[Assassin Bear]] spawns.
+
+==Strategy==
+As [[Shy Boy]] spawns immediately, you should immediately slow his progress with [[Cat (Normal Cat)|Macho Cat]] and [[Tank Cat (Normal Cat)|Wall Cat]] and work on it from there. Try to keep some units ready if possible and save your [[Cat Cannon]] for the [[Assassin Bear]]. The moment you see Assassin Bear, don't hesitate the use the Cat Cannon, otherwise it'll wipe out all of your cats very quickly before you even realize it.
+
+==Reference==
+*https://battlecats-db.com/stage/s01038-05.html
+
+{{Monthly}}
+[[Category:Autumn = Sports Day! Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

@@ -1,0 +1,155 @@
+{{Unobtainable}}
+:''Not to be confused with [[Princess Cat (Uber Rare Cat)|Princess Cat]].''
+'''Cat Princess''' is a [[:Category:Special Cats|Special Cat]] introduced in [[Version 1.4 Update|Version 1.4]] and is obtainable during the [[Princess Punt Sweets Collaboration Event]]. It can be unlocked from any of the stages in [[Princess Punt Sweets Collaboration Event#Princess Punt|Princess Punt]].
+
+{{Cat Info
+|ID = 27
+|rarity = EX
+|name1 = Cat Princess
+|name2 = Cat Princess beauty
+}}
+
+==Evolution==
+Evolves into '''Cat Princess beauty''' at level 10.
+
+==Strategy/Usage==
+Cat Princess is nearly identical to [[Kerihime (Special Cat)|Kerihime]], the only difference between them being that Cat Princess has higher damage and DPS. But, once Kerihime's [[True Form]] is obtained, this unit becomes practically worthless. Wedding Kerihime has significantly higher DPS.
+
+{{Job|Classification = User Rank Dump & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 27
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni027 f00.png
+|Image2 = Uni027 c00.png
+|Name1 = Cat Princess
+|Desc1 = A cat who travels the world in order to seek true beauty.<br>He admired a princess he has met in the middle of the<br>journey and bought an item in a wig shop.
+|Name2 = Cat Princess beauty
+|Desc2 = A cat who travels the world in order to seek true beauty.<br>He admired a princess he has met in the middle of the<br>journey and spent an entire fortune on plastic surgery.
+|Name1 (JP) = ネコひめ (Neko Hime, Cat Princess)
+|Desc1 (JP) = 真実の美を求めて地球を旅するネコ<br>旅の途中で出会ったお姫様にあこがれて<br>カツラ屋さんでアイテムを購入した
+|Transl1 (JP) = A Cat who travels the world seeking true beauty<br>He admired a princess during his journey<br>and bought an item at a wig shop
+|Name2 (JP) = ネコひめビューティ (Neko Hime Byūti, Cat Princess Beauty)
+|Desc2 (JP) = 真実の美を求めて地球を旅するネコ<br>旅の途中で出会ったお姫様にあこがれて<br>全財産を整形につぎ込んだ
+|Transl2 (JP) = A Cat who travels the world seeking true beauty<br>He admired a princess during his journey<br>and spent his entire fortune on plastic surgery
+|Name1 (TW) = 貓公主
+|Desc1 (TW) = 爲了追求真正的美而來到地球的貓咪<br>憧憬於在旅途中遇到的公主<br>所以跑去假髮店買了配件來打扮自己
+|Name2 (TW) = 美貓公主
+|Desc2 (TW) = 爲了追求真正的美而來到地球的貓咪<br>憧憬於在旅途中遇到的公主<br>於是把所有家當都拿去給自己整形
+|Name1 (KR) = 고양이 공주
+|Desc1 (KR) = 진실된 미를 추구하며 지구를 여행하는 고양이<br>여행 도중에 만난 공주님을 동경하여<br>가발집에서 아이템을 구입했다
+|Name2 (KR) = 고양이 공주 뷰티
+|Desc2 (KR) = 진실된 미를 추구하며 지구를 여행하는 고양이<br>여행 도중에 만난 공주님을 동경하여<br>자신의 전재산을 성형에 투자했다
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|MIX
+|0
+|13,000
+|17,000
+|21,000
+|24,000
+|27,000
+|30,000
+|35,000
+|40,000
+|50,000
+|18,000
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Princess
+|Normal Base HP = 600
+|Normal Base AP = 450
+|Normal Range = 140
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 83
+|Normal Attack Length = 161
+|Normal Speed = 35
+|Normal KB = 1
+|Normal Cost = 450
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Cat Princess beauty
+|Evolved Base HP = 600
+|Evolved Base AP = 450
+|Evolved Range = 140
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 83
+|Evolved Attack Length = 161
+|Evolved Speed = 35
+|Evolved KB = 1
+|Evolved Cost = 450
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 450 damage<br>(83.85 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 161f <sub>5.37 seconds</sub>
+|val-Normal-Movement Speed = 35
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(159f <sup>5.3s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 7,650 damage<br>(1,425.47 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 7,650 damage<br>(1,425.47 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 161f <sub>5.37 seconds</sub>
+|val-Evolved-Movement Speed = 35
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(159f <sup>5.3s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+===[[Princess Punt Sweets Collaboration Event|Princess Punt Sweets]]===
+Cat Princess beauty appears as a 9★ dress in Princess Punt Sweets, which can be obtained by rolling the collab's gacha. A figurine of Cat Princess also appears as a 3★ accessory that can be obtained by clearing the collab's special treasure ship.
+{| style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid;width:100%;" cellspacing="0" cellpadding="1"
+|-
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:Cat Princess Beauty Dress Icon.png|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:Cat Princess Beauty Dress Static.png|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd" |[[File:Cat Princess Accessory Icon.png|center|200px]]
+|-
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |Dress Icon
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |Model
+| style="width:20%;padding:2px; text-align:center" |Accessory Icon
+|}
+
+{{Gallery|Uni027 f00}}
+
+==Trivia==
+*Even though Cat Princess and [[Princess Cat (Uber Rare Cat)|Princess Cat]] may appear to have the same name in Japanese, that is not the case, as they use different words for "princess" (Cat Princess is Neko Hime, Princess Cat is Neko Ōjo).
+*Cat Princess and [[Kerihime (Special Cat)|Kerihime]] share the record for taking the longest amount of time for a unit to be ported over from BCJP to BCEN, taking an astounding 10 years.
+**Despite this, the names and descriptions for both units, excluding Kerihime's True Form, have existed in the game files ever since their addition, never being re-written in that time (which is why their descriptions resemble those of the original [[Battle Cats (Removed Game)|Battle Cats]]).
+
+==Reference==
+*https://battlecats-db.com/unit/028.html
+
+----
+{{CatNav|Kerihime|Capsule Cat}}
+----
+
+{{Princess Punt}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]

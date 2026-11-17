@@ -1,0 +1,133 @@
+:''Not to be confused with [[Samurai Cat (Special Cat)]] or [[Commander Cat (Special Cat)]].''
+'''Lieutenant Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Download Celebration! (Event Gacha)|Download Celebration!]] Event Gacha. It was added in [[Version 14.0 Update|Version 14.0]].
+
+{{Cat Info
+|ID = 776
+|rarity = EX
+|name1 = Lieutenant Cat
+|name2 = Commander Cat
+}}
+
+==Evolution==
+Evolves into '''Commander Cat''' at level 10.
+
+==Strategy/Usage==
+Commander Cat attempts to be a [[Glass Cat (Rare Cat)|Glass Cat]] or [[Wafer Cat (Special Cat)|Wafer Cat]] clone, but just can't pull it off. Starting with the most important thing, Commander Cat has a laughable 2,040 health at level 30. While this is ''technically'' more than Glass Cat, Glass Cat has the Metal ability, meaning he takes 1 damage from all attacks. Because of this, basically any attack that hits Commander Cat will kill it, and with its measly 140 range, it will get hit by the vast majority of enemies. Next up is the recharge, and it isn't any better. Glass Cat and Wafer Cat both have 24-second recharges, while Commander Cat is stuck with a 48-second recharge. Last is Commander Cat's target traits. Glass Cat targets [[:Category:Traitless Enemies|Traitless]], and Wafer Cat targets all Traited enemies, meanwhile Commander Cat targets only Red and Floating, both of which already have a surplus of reliable counters.
+
+In spite of all its drawbacks, Commander Cat has exactly two strengths over Glass Cat and Wafer Cat. First, it doesn't die after hitting an enemy, which is fairly negligible given its pitiful health, but the second is its Mini-Wave. The Mini-Wave not only gives it a pseudo-Area Attack, but also pierces up to 332.5 range, which prevents peons from getting in the way of its attacks, and even lets it use them as a stepping stone to reach Floating and Red enemies it can't usually hit. But, even considering the Mini-Wave, this unit is still held back too much by its other flaws to be considered remotely good.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 776
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni776 f00.png
+|Image2 = Uni776 c00.png
+|Name1 = Lieutenant Cat
+|Desc1 = Wants to be a vaunted commander of the warring<br>states. Bravery is a reckless charge at the enemy, spear<br>in paw! 100% Freeze to Red/Floating, Mini-Wave.
+|Name2 = Commander Cat
+|Desc2 = Attained the title of Commander after many battles.<br>Charges forward without care, leaving their troops<br>in the dust. 100% Freeze to Red/Floating, Mini-Wave.
+|Name1 (JP) = 見習い武者ネコ (Minarai Musha Neko, Apprentice Warrior Cat)
+|Desc1 (JP) = 戦国の世で成り上がることを夢見るネコ<br>戦場では真っ先に敵陣に突撃する勇猛さを見せる<br>赤い敵と浮いてる敵の動きを必ず止める小波動を放つ
+|Transl1 (JP) = A Cat who dreams of quickly rising to power in the Sengoku period<br>Shows its bravery on the battlefield by charging headfirst into the enemy camp<br>Fires Mini-Waves that are guaranteed to stop the movement of Red and Floating enemies
+|Name2 (JP) = 武将ネコ (Bushō Neko, Commander Cat)
+|Desc2 (JP) = 数々の戦で功績を収めて武将まで上り詰めたネコ<br>後は振り返らない突撃作戦で味方を置き去りにする<br>赤い敵と浮いてる敵の動きを必ず止める小波動を放つ
+|Transl2 (JP) = A Cat who has achieved success in many battles and risen to the rank of commander<br>Afterwards, it is leaving behind its allies with its strategy of charging without looking back<br>Fires Mini-Waves that are guaranteed to stop the movement of Red and Floating enemies
+|Name1 (TW) = 見習武士貓
+|Desc1 (TW) = 夢想在日本戰國時代出人頭地的貓咪<br>在戰場上總是率先衝向敵陣，非常勇猛<br>必定能讓紅色和飄浮敵人動作停止並發射小波動
+|Name2 (TW) = 武將貓
+|Desc2 (TW) = 在許多戰場立下功績，終於晉級至武將的貓咪<br>一去不回頭的突襲作戰常常將友軍拋在後頭<br>必定能讓紅色和飄浮敵人動作停止並發射小波動
+|Name1 (KR) = 졸병 고양이
+|Desc1 (KR) = 전란의 시대에 출세를 꿈꾸는 고양이<br>전장에서 제일 먼저 적진으로 돌격하는 용맹함을 보여 준다<br>반드시 빨간 적과 떠있는 적의 움직임을 멈추고 소파동을 낸다
+|Name2 (KR) = 장수 고양이
+|Desc2 (KR) = 수많은 전투에서 공적을 쌓아 장수의 지위까지 올라간 고양이<br>아군을 남겨 둔 채 뒤도 돌아보지 않고 돌격한다<br>반드시 빨간 적과 떠있는 적의 움직임을 멈추고 소파동을 낸다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Lieutenant Cat
+|Normal Base HP = 100
+|Normal Base AP = 100
+|Normal Range = 140
+|Normal Foreswing = 7
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 201
+|Normal Speed = 20
+|Normal KB = 1
+|Normal Cost = 500
+|Normal Recharge = 1720
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 1 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Evolved Name = Commander Cat
+|Evolved Base HP = 120
+|Evolved Base AP = 112
+|Evolved Range = 140
+|Evolved Foreswing = 7
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 201
+|Evolved Speed = 20
+|Evolved KB = 1
+|Evolved Cost = 500
+|Evolved Recharge = 1720
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 1 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 100 damage<br>(14.93 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 7f <sup>0.23s</sup><br>(194f <sup>6.47s</sup> backswing)
+|val-Normal-Recharge Time = 57.33 ~ 48.53 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(253.73 DPS)
+|val-Evolved-Health = 2,040 HP
+|val-Evolved-Attack Power = 1,905 damage<br>(284.33 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 7f <sup>0.23s</sup><br>(194f <sup>6.47s</sup> backswing)
+|val-Evolved-Recharge Time = 57.33 ~ 48.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni776 f00}}
+
+==Trivia==
+*Lieutenant Cat was originally a [[Catnip Challenges|Mission]] reward during the [[Road to Unification]] Event.
+
+==Reference==
+*https://battlecats-db.com/unit/777.html
+
+----
+{{CatNav|Mech Patrol Axel|Winter General Kaihime}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Mini-Wave Cats]]

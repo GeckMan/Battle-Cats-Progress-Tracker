@@ -1,0 +1,184 @@
+:''For the enemy encountered in the [[Bikkuriman Collaboration Event]], see [[Heracrist (Enemy)]].''
+'''Heracrist''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Bikkuriman Collaboration Event]]. [[True Form]] added in [[Version 13.6 Update|Version 13.6]] swaps target to [[:Category:Relic Enemies|Relic]] and trades [[Immune to Warp|Warp Immunity]] for [[Immune to Curse|Curse Immunity]].
+
+{{Cat Info
+|ID = 471
+|rarity = UR
+|name1 = Heracrist
+|name2 = Perfect Heracrist
+|name3 = Dark Heracrist
+}}
+
+==Evolution==
+Evolves into '''Perfect Heracrist''' at level 10.
+
+Evolves into '''Dark Heracrist''' at level 30.
+
+==Strategy/Usage==
+Heracrist boasts truly insane stats for its recharge and cost, further supplemented by the Strong ability when up against [[:Category:Floating Enemies|Floating]] or [[:Category:Alien Enemies|Alien]] enemies. At level 30 with all [[Treasure#Fruits effect|Fruit Treasures]], it has 255k effective HP and 275k effective damage (35k DPS) against its target traits.
+
+However, this unit has a couple of weaknesses, including its Single Attack, slow attacks, and low speed. so make sure to have [[:Category:Area Attack Cats|Area]]/[[:Category:Wave Attack Cats|wave]] attackers supporting it and wipe out peons. Floating enemies have numerous counters while Aliens have less, but Heracrist nevertheless can be used in a select number of stages to crush any opposition, such as in [[Forest Beasts (Deadly)|Forest Beasts]], where it slice through [[Manic Flying Cat (Enemy)|Manic Flying Cat]] like butter.
+
+==='''True Form'''===
+Dark Heracrist is similarly powerful against Relics as it was against Floating or Alien enemies, but due to Relic Fruits not existing, it can only reach 204k effective HP and 230k damage against Relics. These numbers are obviously still quite impressive, and it will definitely be worth the Elder Fruit. Previous points about needing help from Wave/Surge Attackers like Slime Cat or Brainwashed Gross Cat do still apply, since Dark Heracrist retains its Single Attack in True Form.
+
+{{Job|Classification = Nuker & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 471
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni471 f00.png
+|Image2 = Uni471 c00.png
+|Image3 = Uni471 s00.png
+|Name1 = Heracrist
+|Desc1 = Holy android created by 12 archangels. Rumors<br>say that its powers unbalanced could undo reality.<br>Strong vs. Floating enemies.
+|Name2 = Perfect Heracrist
+|Desc2 = The ultimate sacred weapon created by the highest<br>authority in Heaven to suppress the forces of evil.<br>Strong vs. Alien enemies.
+|Name1 (JP) = ヘラクライスト (Herakuraisuto, Heracrist)
+|Desc1 (JP) = 12天使が創造した聖ボット。悪魔界のウワサによると<br>12の理力均衡を狂わせると急激に減力とか！<br>浮いてる敵にめっぽう強い
+|Transl1 (JP) = A holy bot created by 12 angels. According to rumor of the devil world<br>if you break the balance of 12 forces, you will suddenly lose power!<br>Strong against Floating enemies
+|Name2 (JP) = 完璧ヘラクライスト (Kanpeki herakuraisuto, Perfect Heracrist)
+|Desc2 (JP) = 聖神皇は増力する超悪魔に抗戦すべく、<br>12天使が創造した聖ボットなのだ。<br>エイリアンにめっぽう強い
+|Transl2 (JP) = The Divine God is a holy bot created by 12 angels<br>in order to fight the strengthening super devil<br>Strong against Aliens
+|Name3 (JP) = ブラックライスト (Blakkuraisuto, Dark Heracrist)
+|Desc3 (JP) = 魔力がインプットされたロボット型悪魔<br>圧倒的存在感から魔神皇と呼ばれている？！<br>古代種にめっぽう強い
+|Transl3 (JP) = A robotic devil input with demonic energy<br>Called the demon emperor from its intimidating presence?!<br>Strong against Relics
+|Name1 (TW) = 耶穌大力士
+|Desc1 (TW) = 12天使創造的聖神。根據惡魔界的傳說<br>如果使12個理力平衡亂序了就可能急激烈的減力！<br>善於攻擊飄浮敵人！
+|Name2 (TW) = 完美耶穌大力士
+|Desc2 (TW) = 聖神皇將對抗增力的超惡魔<br>因為是12天使創造的聖神呀！<br>善於攻擊異星戰士
+|Name1 (KR) = 헤라클라이스트
+|Desc1 (KR) = 12천사가 창조한 성봇. 악마계의 소문에 의하면<br>12개의 이력 균형을 무너트리면 급격히 약해진다고!<br>떠있는 적에 매우 강하다
+|Name2 (KR) = 퍼펙트 헤라클라이스트
+|Desc2 (KR) = 성신황은 점점 힘을 키워가는 초악마에<br>대항하기 위해 12천사가 창조한 성봇이다.<br>에이리언에 매우 강하다
+}}
+
+==Cost==
+*Chapter 1: 3,000¢
+*Chapter 2: 4,500¢
+*Chapter 3: 6,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Heracrist
+|Normal Base HP = 6000
+|Normal Base AP = 9000
+|Normal Range = 360
+|Normal Foreswing = 116
+|Normal Attack Cooldown = 121
+|Normal Attack Length = 159
+|Normal Speed = 4
+|Normal KB = 2
+|Normal Cost = 3000
+|Normal Recharge = 2500
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Slow|Immune to Warp}} [[Immune to Slow]] and [[Immune to Warp|Warp]]
+|Evolved Name = Perfect Heracrist
+|Evolved Base HP = 6000
+|Evolved Base AP = 9000
+|Evolved Range = 360
+|Evolved Foreswing = 116
+|Evolved Attack Cooldown = 121
+|Evolved Attack Length = 159
+|Evolved Speed = 4
+|Evolved KB = 2
+|Evolved Cost = 3000
+|Evolved Recharge = 2500
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Slow|Immune to Warp}} [[Immune to Slow]] and [[Immune to Warp|Warp]]
+|True Name = Dark Heracrist
+|True Base HP = 6000
+|True Base AP = 9000
+|True Range = 360
+|True Foreswing = 116
+|True Attack Cooldown = 121
+|True Attack Length = 159
+|True Speed = 4
+|True KB = 2
+|True Cost = 3000
+|True Recharge = 2500
+|True Attack Type = Single
+|True Targets = Relic
+|True Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Slow|Immune to Curse}} [[Immune to Slow]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 6,000 HP
+|val-Normal-Attack Power = 9,000 damage<br>(1,139.24 DPS)
+|val-Normal-Attack Range = 360
+|val-Normal-Attack Frequency = 237f <sub>7.9 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 116f <sup>3.87s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-Normal-Recharge Time = 83.33 ~ 74.53 seconds
+|val-Normal-MaxHP = 102,000 HP
+|val-Normal-MaxAttack = 153,000 damage<br>(19,367.09 DPS)
+|val-Evolved-Health = 102,000 HP
+|val-Evolved-Attack Power = 153,000 damage<br>(19,367.09 DPS)
+|val-Evolved-Attack Range = 360
+|val-Evolved-Attack Frequency = 237f <sub>7.9 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 116f <sup>3.87s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-Evolved-Recharge Time = 83.33 ~ 74.53 seconds
+|val-True-Health = 102,000 HP
+|val-True-Attack Power = 153,000 damage<br>(19,367.09 DPS)
+|val-True-Attack Range = 360
+|val-True-Attack Frequency = 237f <sub>7.9 seconds</sub>
+|val-True-Movement Speed = 4
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 116f <sup>3.87s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-True-Recharge Time = 83.33 ~ 74.53 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Perfect Heracrist
+|Evolved Image = Uni471 c00.png
+|True Name = ブラックライスト
+|True Image = Uni471 s00.png
+|True Description = 第３形態への進化で<br>味方の効果を封じる古代の呪いを無効化し<br>古代種にめっぽう強くなる！
+|Catfruit1 = BlueFruit
+|Catfruit2 = GreenFruit
+|Catfruit3 = ElderFruit
+|Quantity Catfruit1 = x6
+|Quantity Catfruit2 = x6
+|Quantity Catfruit3 = x1
+|Quantity XP = 1,000,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni471 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/472.html
+
+----
+{{CatNav|Satanmaria|Fiendish Nero}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Anti-Relic Cats]]
+[[Category:Cats with Curse Immunity]]

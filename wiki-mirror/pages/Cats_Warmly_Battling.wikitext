@@ -1,0 +1,53 @@
+{{EnemiesAppearing|Package Doge|Ice Doge|Doge Dark|Snowball|Le'mammoth|Mystery Snowmound}}
+'''Cats Warmly Battling''' is the fourth and final stage in [[Snow Doges]].
+
+{{Stage Info
+|stage name = [[File:rc064.png]]
+[[File:Mapsn366 03 s en.png]]
+|stage location = [[File:Mapname366 s en.png]]
+|energy = 200
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|Ice Doge|400%
+|Doge Dark|1,200%
+|Snowball|3,000%
+|Le'mammoth|600%
+|Mystery Snowmound|100%}}
+|boss = {{Magnification|Package Doge|100%}}
+|treasure = - [[Catseye]] [Legend] +3 (100%, 1 time)
+|XP = 3,800 XP
+|width = 5,600
+|max enemies = 20
+|jpname = Cats Have a Great War Over Kotatsu
+|script = ネコはこたつで大戦争
+|romaji = Neko wa Kotatsu de Daisensō
+|star = 1
+|event-chapter = [[Snow Doges]]
+|difficulty = ★10
+|prev stage = [[Doge-Packed Garden]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Package Doge]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+*1 [[Ice Doge]] spawns after 3.33 seconds<sup>100f</sup>.
+*Infinite [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 23.33~36.67 seconds<sup>700f~1,100f</sup>.
+*3 [[Doge Dark]]s spawn after 13.33 seconds<sup>400f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*Infinite [[Snowball]]s spawn after 16.67 seconds<sup>500f</sup>, delay 10~23.33 seconds<sup>300f~700f</sup>.
+*Infinite [[Snowball]]s spawn after 17.33 seconds<sup>520f</sup>, delay 10~23.33 seconds<sup>300f~700f</sup>.
+*Infinite [[Snowball]]s spawn after 18 seconds<sup>540f</sup>, delay 10~23.33 seconds<sup>300f~700f</sup>.
+*4 [[Ice Doge]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*4 [[Ice Doge]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*1 [[Le'mammoth]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*2 [[Mystery Snowmound]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 60 seconds<sup>1,800f</sup>.
+
+==Strategy==
+A combination of anti-traitless and anti-Dark units can make this stage more doable. Bombercat and Pizza Cat are almost necessary against the Mystery Snowmounds, which are essentially just Razorbacks. Octopus cat or other wave-blockers make the Le'mammoth more managable, preventing it from wiping out your meatshields and letting the Razorbacks reach your heavy-hitters.
+
+==Trivia==
+*Prior to [[Version 14.1 Update|Version 14.1]], Doge-Packed Garden used to have this stage's name, however, with this stage's addition, the name of the second stage was changed to Snow Falls Forevermore, causing the names for Doge-Packed Garden and Cats Warmly Battling to be shifted to their respective next stages.
+
+==Reference==
+*https://battlecats-db.com/stage/s01366-04.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

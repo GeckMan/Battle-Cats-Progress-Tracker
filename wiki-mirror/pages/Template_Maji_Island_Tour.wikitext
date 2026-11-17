@@ -1,0 +1,24 @@
+{{#invoke:Navbox|main
+|template = Template:Maji Island Tour
+|title = [[Maji Island Tour Collaboration Event]]
+|navbox_class = maji-island
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Maji Cat & Cat Tour Group (Rare Cat)|Maji Cat & Cat Tour Group]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Maji Cat & Cat Tour Group (Enemy)|Maji Cat & Cat Tour Group]]
+
+|header3 = Stages
+|group3 = Qibao Island - With Maji Cat
+|list3 =
+*[[Travel Is All About Going]]
+*[[Anywhere is Good...Let's Go!]]
+*[[Hand in Hand, Let's Go Together]]
+}}<templatestyles src="Maji Island Tour/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Maji Island Tour]]}}<noinclude>[[Category:Navboxes]]</noinclude>

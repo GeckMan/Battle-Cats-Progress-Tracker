@@ -1,0 +1,163 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Floating Continent (Into the Future)/Outbreak|here]].''
+'''Floating Continent''' is the 47th stage in [[Into the Future]]. [[Nimoy Bore]] debuts here.
+
+{{Story Info
+|stage name = [[File:Wc046.png]]
+|stage location = [[File:Floating Continent.png]]
+'''Into the Future'''
+|energy = 75
+|energy2 = 85
+|energy3 = 95
+|enemy castle hp = 750,000 HP
+|enemy castle hp2 = 750,000 HP
+|enemy castle hp3 = 750,000 HP
+|enemies = {{Magnification|Baa Baa|600%
+|Those Guys|600%
+|Heavenly Hippoe|100%
+|Gabriel|100%
+|Maawth|100%
+|Kroxo|100%
+|Imperator Sael|100%}}
+|boss = {{Magnification|Nimoy Bore|100%}}
+|enemies2 = {{Magnification|Baa Baa|1,200%
+|Those Guys|1,200%
+|Heavenly Hippoe|200%
+|Gabriel|200%
+|Maawth|250%
+|Kroxo|250%
+|Imperator Sael|250%
+|Cyberhorn|100%}}
+|boss2 = {{Magnification|Nimoy Bore|250%}}
+|enemies3 = {{Magnification|Heavenly Hippoe|250%
+|Gabriel|250%
+|Baa Baa|1,800%
+|Those Guys|1,800%
+|Maawth|900%
+|Kroxo|900%
+|Imperator Sael|900%
+|Cyberhorn|600%
+|Nimoy Bore|750%}}
+|boss3 = {{Magnification|Those Guys|1,800%}}
+|treasure = - [[Treasure|Floating Rock]]
+|treasure2 = - [[Treasure|Floating Rock]]
+|treasure3 = - [[Treasure|Floating Rock]]
+|score reward = '''6,500''': Treasure Radar +1<br>
+'''5,500''': [[Cat Food]] +10<br>
+'''4,500''': Cat Ticket +1<br>
+'''3,000''': +125,000 XP
+|score reward2 = '''6,000''': Treasure Radar +1<br>
+'''3,000''': [[Cat Food]] +10<br>
+'''1,500''': Cat Ticket +1<br>
+'''500''': +187,500 XP
+|score reward3 = '''6,000''': Treasure Radar +1<br>
+'''3,000''': [[Cat Food]] +10<br>
+'''1,500''': Cat Ticket +1<br>
+'''500''': +250,000 XP
+|max enemies = 9
+|max enemies2 = 9
+|max enemies3 = 9
+|XP = 14,200 XP
+|width = 6,000
+|jpname = Floating Continent
+|script = 浮遊大陸
+|romaji = Fuyū Tairiku
+|jptreasure = Floating Rock
+|twname = Floating Continent
+|twscript = 浮游大陸
+|twromaji = Fúyóu Dàlù
+|twtreasure = Floating Rock
+|krname = Floating Continent
+|krscript = 부유대륙
+|krromaji = Buyudaelyug
+|krtreasure = Floating Rock
+|chapter = [[Into the Future]]
+|prev stage = [[Brazil (Into the Future)|Brazil]]
+|next stage = [[Moon (Into the Future)|Moon]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Baa Baa|Those Guys|Heavenly Hippoe|Gabriel|Maawth|Kroxo|Imperator Sael|Nimoy Bore}}
+*3 [[Baa Baa]]s spawn after 16.67 seconds<sup>500f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*20 [[Those Guys]] spawn after 18.67 seconds<sup>560f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 31.67 seconds<sup>950f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Gabriel]]s spawn after 50 seconds<sup>1,500f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*3 [[Baa Baa]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*Infinite [[Heavenly Hippoe]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*3 [[Maawth]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 166.67 seconds<sup>5,000f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Kroxo]]s spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 90% HP:
+**Infinite [[Imperator Sael]]s spawn, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*When the base reaches 80% HP:
+**1 [[Nimoy Bore]] spawns as the boss.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Baa Baa|Those Guys|Heavenly Hippoe|Gabriel|Maawth|Kroxo|Imperator Sael|Cyberhorn|Nimoy Bore}}
+*3 [[Baa Baa]]s spawn after 16.67 seconds<sup>500f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*20 [[Those Guys]] spawn after 18.67 seconds<sup>560f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 31.67 seconds<sup>950f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Gabriel]]s spawn after 50 seconds<sup>1,500f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*3 [[Baa Baa]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*Infinite [[Heavenly Hippoe]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*3 [[Maawth]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 166.67 seconds<sup>5,000f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Kroxo]]s spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 90% HP:
+**Infinite [[Imperator Sael]]s spawn, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*When the base reaches 80% HP:
+**1 [[Nimoy Bore]] spawns as the boss.
+**5 [[Cyberhorn]]s spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Heavenly Hippoe|Gabriel|Baa Baa|Those Guys|Maawth|Kroxo|Imperator Sael|Cyberhorn|Nimoy Bore}}
+*1 [[Heavenly Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Gabriel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*Infinite [[Gabriel]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*10 [[Baa Baa]]s spawn after 50 seconds<sup>1,500f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*Infinite [[Those Guys]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Heavenly Hippoe]]s spawn after 100 seconds<sup>3,000f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*3 [[Maawth]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 166.67 seconds<sup>5,000f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Kroxo]]s spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 90% HP:
+**Infinite [[Imperator Sael]]s spawn, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*When the base reaches 80% HP:
+**1 [[Those Guys]] spawns as the boss.
+**1 [[Cyberhorn]] spawns.
+**3 [[Nimoy Bore]]s spawn, delay 50 seconds<sup>1,500f</sup>.
+
+==Strategy==
+Make to sure to activate both the [[Aqua Crystal]] and [[Plasma Crystal]] by gathering [[Treasure]]s from the previous stages. Treat Nimoy Bore as you would a regular [[Bore]], but do not expect to beat him easily without any [[:Category:Crowd-Controller-class Cats|crowd-controllers]] or very heavy meatshielding.
+
+[[Psychocat (Rare Cat)|Psychocat]] and [[Surfer Cat (Super Rare Cat)|Castaway Cat]] are the standard non-[[:Category:Uber Rare Cats|Uber]] choices for keeping Nimoy Bore at bay. Deploy them as frequently as you can. With many Psychocats and/or Castaway Cats and a bit of luck, you can pretty much keep Nimoy Bore from moving at all. With support from powerful attackers such as [[Wheel Cat (Rare Cat)|Solar Cat]], [[Salon Cat (Rare Cat)|Paris Cat]], [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] and [[Hip Hop Cat (Super Rare Cat)|Dancing Flasher Cat]], you can possibly kill the Nimoy Bore in under 30 seconds, just make sure Bahamut Cat doesn't miss and you will be fine.
+
+It is also worth noting that if you have him, [[Hayabusa (Uber Rare Cat)|Oni Hayabusa]] can help greatly on this stage, as his decent knockback chance combined with his slow effect can chop the Nimoy Bore's pushing power down to the likes of a even a [[One Horn]], if even that, making him a pitiful joke of a enemy. However, decent meatshielding is required for him to do his job correctly.
+
+You can stall for money using [[Rocker Cat (Rare Cat)|Ramen Cat]] alone to upgrade your [[Worker Cat]] to level 8 and get enough to spawn as many Ubers as you like. Make sure they do not damage the base! This can help you beat the stage if you do not have one of the aforementioned treasures.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Floating Continent map.png|The Floating Continent on the [[Into the Future]] map
+</gallery>
+
+==Trivia==
+*The Floating Continent's appearance on the map is quite similar to [[wikia:ghibli:Laputa|Laputa]] from the Studio Ghibli movie [[wikipedia:Castle in the Sky|''Castle in the Sky'']]. The enemy base's design could be a reference to the giant Aetherium crystal that makes Laputa float in the first place.
+*In [[The Battle Cats Unite!]], there is a typo with the stage name in the stage select menu, as it's spelled as "Floating Con'''r'''inent" instead of what it should be.
+**The name becomes its intended spelling if one were to play the stage, making it "Floating Continent".
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-47.html
+*https://battlecats-db.com/stage/s03004-47.html
+*https://battlecats-db.com/stage/s03005-47.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,390 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+<tabber>
+Siege Battle Lv.1~10=
+{{EnemiesAppearing|Castle Guard|Castle Horseman|Ashura|Battle Balloon|Dragon Rider|Pretty Cat|Cyclops|Golem}}
+{{Stage Info
+|stage name = [[File:rc055.png]]
+[[File:Mapsn011 00 ca ja.png]]
+|stage location = [[File:Mapname011 ca ja.png]]
+|enemies = {{Magnification|Castle Guard|0
+|Castle Horseman|0
+|Ashura|0
+|Battle Balloon|0
+|Dragon Rider|0
+|Pretty Cat|0
+|Cyclops|0}}
+|boss = {{Magnification|Golem|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 20
+|jpname = Siege Battle Lv.X
+|script = 攻城戦 Lv.X
+|romaji = Osamu Shiroseni Lv.X
+|event = [[Castle & Dragon Collaboration Event]]
+|event-chapter = [[Castle and Dragon Assault!]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*10 [[Castle Guard (Enemy)|Castle Guards]] spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Castle Horseman (Enemy)||Castle Horsemen]] spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*3 [[Ashura (Enemy)|Ashuras]] spawn after 16.67 seconds<sup>500f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*1 [[Battle Balloon (Enemy)|Battle Balloon]] spawns after 23.33 seconds<sup>700f</sup>.
+*2 [[Dragon Rider (Enemy)|Dragon Riders]] spawn after 30 seconds<sup>900f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*2 [[Pretty Cat (Enemy)|Pretty Cats]] spawn after 36.67 seconds<sup>1,100f</sup>, delay 23.33~30 seconds<sup>700f~900f</sup>.
+*1 [[Cyclops (Enemy)|Cyclops]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Golem (Enemy)|Golem]] spawns as the boss after 2 seconds<sup>60f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Siege Battle Lv.
+! colspan="8" style="text-align: center;"|Strength Magnifactions
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+|-
+! scope="col" |[[Golem (Enemy)|Golem]]
+! scope="col" |[[Castle Guard (Enemy)|Castle Guard]]
+! scope="col" |[[Castle Horseman (Enemy)|Castle Horseman]]
+! scope="col" |[[Ashura (Enemy)|Ashura]]
+! scope="col" |[[Battle Balloon (Enemy)|Battle Balloon]]
+! scope="col" |[[Dragon Rider (Enemy)|Dragon Rider]]
+! scope="col" |[[Pretty Cat (Enemy)|Pretty Cat]]
+! scope="col" |[[Cyclops (Enemy)|Cyclops]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|200%
+|200%
+|200%
+|200%
+|100%
+|100%
+|100%
+|70
+|Treasure Radar +1
+|1,330
+|-
+! scope="row" |2
+|133%
+|344%
+|317%
+|261%
+|261%
+|144%
+|144%
+|133%
+|70
+|Purple Catfruit +3
+|1,330
+|-
+! scope="row" |3
+|166%
+|488%
+|434%
+|322%
+|322%
+|188%
+|188%
+|166%
+|70
+|XP +500,000
+|1,330
+|-
+! scope="row" |4
+|199%
+|632%
+|551%
+|383%
+|383%
+|232%
+|232%
+|199%
+|70
+|Cat Ticket +1
+|1,330
+|-
+! scope="row" |5
+|232%
+|776%
+|668%
+|444%
+|444%
+|276%
+|276%
+|232%
+|90
+|Catamin A +3
+|1,710
+|-
+! scope="row" |6
+|265%
+|920%
+|785%
+|505%
+|505%
+|320%
+|320%
+|265%
+|90
+|Red Catfruit +3
+|1,710
+|-
+! scope="row" |7
+|298%
+|1,064%
+|902%
+|566%
+|566%
+|364%
+|364%
+|298%
+|90
+|XP +750,000
+|1,710
+|-
+! scope="row" |8
+|331%
+|1,208%
+|1,019%
+|627%
+|627%
+|408%
+|408%
+|331%
+|90
+|Cat Ticket +2
+|1,710
+|-
+! scope="row" |9
+|364%
+|1,352%
+|1,136%
+|688%
+|688%
+|452%
+|452%
+|364%
+|90
+|Leadership +1
+|1,710
+|-
+! scope="row" |10
+|400%
+|1,500%
+|1,250%
+|750%
+|750%
+|500%
+|500%
+|400%
+|110
+|Catamin B +3
+|2,090
+|}
+|-|
+Siege Battle Lv.11~20=
+{{EnemiesAppearing|Wise Swordsman|Black Thunder Rider|4D Cyclops|Flame Dragon Rider|Kabuki Ashura|Battle UFO|Cyber Pretty Cat|Volcano Golem}}
+{{Stage Info
+|stage name = [[File:rc055.png]]
+[[File:Mapsn011 00 ca ja.png]]
+|stage location = [[File:Mapname011 ca ja.png]]
+|enemies = {{Magnification|Wise Swordsman|0
+|Black Thunder Rider|0
+|4D Cyclops|0
+|Flame Dragon Rider|0
+|Kabuki Ashura|0
+|Battle UFO|0
+|Cyber Pretty Cat|0}}
+|boss = {{Magnification|Volcano Golem|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 8
+|jpname = Siege Battle Lv.X
+|script = 攻城戦 Lv.X
+|romaji = Osamu Shiroseni Lv.X
+|event = [[Castle & Dragon Collaboration Event]]
+|event-chapter = [[Castle and Dragon Assault!]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*5 [[Wise Swordsman (Enemy)|Wise Swordsmen]] spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[Black Thunder Rider (Enemy)|Black Thunder Riders]] spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Volcano Golem (Enemy)|Volcano Golem]] spawns as the boss.
+**Infinite [[Wise Swordsman (Enemy)|Wise Swordsmen]] spawn, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+**Infinite [[Black Thunder Rider (Enemy)|Black Thunder Riders]] spawn, delay 33.33~46.67 seconds<sup>1,000f~1,400f</sup>.
+**1 [[4D Cyclops (Enemy)|4D Cyclops]] spawns.
+**2 [[Flame Dragon Rider (Enemy)|Flaming Dragon Riders]] spawn, delay 20 seconds<sup>600f</sup>.
+**3 [[Black Thunder Rider (Enemy)|Black Thunder Riders]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Wise Swordsman (Enemy)|Wise Swordsmen]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Kabuki Ashura (Enemy)|Kabuki Ashuras]] spawn, delay 20 seconds<sup>600f</sup>.
+**1 [[Battle UFO (Enemy)|Battle UFO]] spawns.
+**3 [[Black Thunder Rider (Enemy)|Black Thunder Riders]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Wise Swordsman (Enemy)|Wise Swordsmen]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Cyber Pretty Cat (Enemy)|Cyber Pretty Cats]] spawn, delay 30 seconds<sup>900f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Siege Battle Lv.
+! colspan="8" style="text-align: center;"|Strength Magnifactions
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+|-
+! scope="col" |[[Volcano Golem (Enemy)|Volcano Golem]]
+! scope="col" |[[Wise Swordsman (Enemy)|Wise Swordsman]]
+! scope="col" |[[Black Thunder Rider (Enemy)|Black Thunder Rider]]
+! scope="col" |[[Kabuki Ashura (Enemy)|Kabuki Ashura]]
+! scope="col" |[[Battle UFO (Enemy)|Battle UFO]]
+! scope="col" |[[Flame Dragon Rider (Enemy)|Flaming Dragon Rider]]
+! scope="col" |[[Cyber Pretty Cat (Enemy)|Cyber Pretty Cat]]
+! scope="col" |[[4D Cyclops (Enemy)|4D Cyclops]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|400%
+|1,500%
+|1,250%
+|750%
+|750%
+|500%
+|500%
+|400%
+|110
+|Blue Catfruit +3
+|2,090
+|-
+! scope="row" |12
+|400%
+|1,583%
+|1,322%
+|789%
+|789%
+|528%
+|528%
+|400%
+|110
+|XP +1,000,000
+|2,090
+|-
+! scope="row" |13
+|400%
+|1,666%
+|1,394%
+|828%
+|828%
+|556%
+|556%
+|400%
+|120
+|Cat Ticket +2
+|2,280
+|-
+! scope="row" |14
+|400%
+|1,749%
+|1,466%
+|867%
+|867%
+|584%
+|584%
+|400%
+|120
+|Green Catfruit +3
+|2,280
+|-
+! scope="row" |15
+|400%
+|1,832%
+|1,538%
+|906%
+|906%
+|612%
+|612%
+|400%
+|130
+|Catamin C +3
+|2,470
+|-
+! scope="row" |16
+|400%
+|1,915%
+|1,610%
+|945%
+|945%
+|640%
+|640%
+|400%
+|130
+|Yellow Catfruit +3
+|2,470
+|-
+! scope="row" |17
+|400%
+|1,998%
+|1,682%
+|984%
+|984%
+|668%
+|668%
+|400%
+|130
+|Leadership +1
+|2,470
+|-
+! scope="row" |18
+|400%
+|2,081%
+|1,754%
+|1,023%
+|1,023%
+|696%
+|696%
+|400%
+|140
+|XP +1,500,000
+|2,660
+|-
+! scope="row" |19
+|400%
+|2,164%
+|1,826%
+|1,062%
+|1,062%
+|724%
+|724%
+|400%
+|140
+|Epic Catfruit +3
+|2,660
+|-
+! scope="row" |20
+|400%
+|2,250%
+|1,900%
+|1,100%
+|1,100%
+|750%
+|750%
+|400%
+|150
+|Rare Ticket +1
+|2,850
+|}
+</tabber>
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s27011.html
+
+{{Castle & Dragon}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

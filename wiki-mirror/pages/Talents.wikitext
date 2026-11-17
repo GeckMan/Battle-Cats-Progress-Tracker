@@ -1,0 +1,732 @@
+{{PageBanner|instinct img01 en.jpg}}
+'''Talents''' (本能 ''Hon'nō'', '''Instincts''') are an upgrade mechanic implemented in the [[Version 8.0 Update]]. Once unlocked by clearing [[Into the Future]] Chapter 3, this mechanic allows players to unlock and develop a selection of (normally) five or six upgrades for certain [[True Form]] cats that are level 30 or above. As a companion mechanic to Talents, [[Talent Orbs]] were introduced in [[Version 9.7 Update|Version 9.7]] and grant units equipped with them increased offensive and/or defensive power against a trait of choice. An expansion to Talents - classified as Ultra Talents - was added in [[Version 12.1 Update|Version 12.1]], allowing certain [[:Category:Uber Rare Cats|Uber Rare Cats]] to unlock one to three additional Talents and equip a second Talent Orb when they are upgraded to level 60 or above. [[Version 15.7 Update|Version 15.7]] further increased the limit of Ultra Talents to six.
+
+==Introduction==
+[[File:Talent 6.png|thumb|150px|NP Coin]]
+:"''Exchange unneeded Cat Units for NP, then use your collected NP to unlock or upgrade new abilities (Talents) for a cat's True Form. Each True Form has a different set of Talents that can be unlocked."'' - In-game description
+Unlocking Talents requires NP, which can be obtained by exchanging Cats or Talent Orbs in Storage after Into the Future Chapter 3 has been completed. The amount of NP awarded is dependent on the item's rarity, with rarer items being worth more NP. However, merging D-grade Talent Orbs into a higher grade always results in a significant loss in NP value.
+
+The amount of NP earned for each unit/Orb is as below:
+{| class="article-table" cellspacing="1" cellpadding="1" border="1"
+|-
+! scope="col"|Unit Rarity
+! scope="col" colspan="2" style="text-align:center;"|NP Value
+|-
+|Normal
+| colspan="2" style="text-align:center;"|1 (default)<br>2 (Cat Capsules+)
+|-
+|Special
+| colspan="2" style="text-align:center;"|1
+|-
+|Rare
+| colspan="2" style="text-align:center;"|5
+|-
+|Super Rare
+| colspan="2" style="text-align:center;"|15
+|-
+|Uber Rare
+| colspan="2" style="text-align:center;"|50
+|-
+|Legend Rare
+| colspan="2" style="text-align:center;"|150
+|-
+! scope="col"|Orb Grade
+! scope="col" style="text-align:center;"|NP Value
+! scope="col" style="text-align:center;"|Merge Change*
+|-
+|D
+| style="text-align:center;"|1
+| style="text-align:center;"|-
+|-
+|C
+| style="text-align:center;"|1
+| style="text-align:center;"|-1
+|-
+|B
+| style="text-align:center;"|2
+| style="text-align:center;"|0 (-2)
+|-
+|A
+| style="text-align:center;"|7
+| style="text-align:center;"|+1 (-5)
+|-
+|S
+| style="text-align:center;"|25
+| style="text-align:center;"|+4 (-11)
+|}
+<sup>* First number represents NP value lost (or gained) by merging from the previous grade, number in parenthesis represents total value loss by merging from D grade.</sup><br>
+To use NP, visit the [[Upgrade Menu]], then select a [[True Form]]ed Cat with Talents and choose which one you would like to unlock or upgrade. Almost all Cats have five or more different Talents to unlock, some of which can be further developed up to nine (or in [[Jurassic Cat (Rare Cat)|Catasaurus]]' case, four) times.
+
+==How to Unlock==
+Each unit's Talents are only available if the unit is in its [[True Form]] or [[Ultra Form]] and a specific stage or chapter has been cleared.
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 100%;"
+|-
+! scope="col" style="text-align:center;" |Category of Cats/Cat Unit
+! scope="col" style="text-align:center;" |Requirement for Talents
+|-
+|[[Valkyrie Cat (Special Cat)|Holy Valkyrie Cat]]
+|Clear [[Valkyrie Cat's Trial]]
+|-
+|[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]
+|Clear [[Bahamut Cat's Trial]]
+|-
+|[[Cat God the Great (Special Cat)|Cat God the Golden]]
+|Clear all [[Zombie Outbreaks]] in [[Cats of the Cosmos]] Chapter 3
+|-
+|[[Filibuster Cat X (Special Cat)|Metafilibuster]]
+|Clear the [[Filibuster Invasion (Cats of the Cosmos)/Outbreak|Filibuster Invasion Outbreak]]
+|-
+|Other
+|Clear [[Into the Future]] Chapter 3
+|}
+
+==Talent Types==
+Theoretically, any target trait or [[Special Abilities|effect/ability]] in the game can become a Talent for units in future updates. However, the abilities listed and described below are exclusive to Talents ('''L''' represents a value equal to the level of the Talent, '''X''' represents a value which differs between units with the same Talent):<br>
+
+===Resistances===
+*'''Resist Weaken:''' Reduces the duration of Weaken effects by (10+6L)%.
+*'''Resist Freeze:''' Reduces the duration of Freeze effects by (10+6L)%.
+*'''Resist Slow:''' Reduces the duration of Slow effects by (10+6L)%.
+*'''Resist Knockback:''' Reduces the push distance of Knockback effects by 5L%. Does not affect the ''duration'' of Knockbacks. '''Only 2 units''' have different growth: [[Juliet Cat (Super Rare Cat)|Juliet the Maiko]]'s push distance reduction is (20+3L)%, while [[Urashima Taro (Uber Rare Cat)|King Gamereon]]'s push distance reduction is (10+6L)%.
+*'''Resist Wave:''' Reduces the damage of wave attacks by 5L%. '''Only 1 unit''' has different growth: [[Mer-Cat (Rare Cat)|Cameraman Cat]]'s wave damage reduction is (20+3L)%.
+*'''Resist Surge:''' Reduces the damage of surge attacks by 5L%.
+*'''Warp Resistant:''' ''Currently unused'', presumably reduces the push/pull distance and/or duration of Warp effects.
+*'''Resist Curse:''' Reduces the duration of Curse effects by (10+6L)%.
+*'''Resist Toxic:''' Reduces the damage of Toxic effects by 5L%.
+
+===Buffs===
+*'''HP Buff:''' Increases the unit's health by 2L%. '''Purchasable Special Cats''' and so far, all [[Mythic Cat|Mythic Cats]] with this talent have different growth: their health increase is 8L%.
+*'''Attack Buff:''' Increases the unit's attack power by 2L%. '''Purchasable Special Cats''' and so far, all Mythic Cats with this talent have different growth: their attack power increase is 8L%.
+*'''Move Speed Up:''' Increases the unit's movement speed by L. '''Only 1 unit''' has different growth: [[Crazed Yuki (Uber Rare Cat)|Crazed Catgirl Yuki]]'s movement speed increase is 2L.
+*'''Improved Knockback:''' ''Currently unused'', presumably increases the unit's number and/or push distance of knockbacks from damage.
+*'''Cost Down:''' Reduces the unit's cost by XL. The value fluctuates with [[Empire of Cats]] Chapters (''Chapter 2 as default:'' Reduced by 1/3rd in Chapter 1, Increased by 1/3rd in Chapter 3).
+*'''Recover Speed Up:''' Reduces the unit's recharge time by XLf. '''Only 3 units''' have different growth: [[Zombie Cat (Special Cat)|Skelecat]] and [[Archer Cat (Rare Cat)|Cataur]]'s recharge time reduction is (X2+XL)f, while [[PPT48 (Uber Rare Cat)|PPT46]]'s recharge time reduction is (X2.5+XL)f.
+*'''Attack Frequency Up:''' Reduces the unit's time between attacks by XLf. Does not affect the length of the unit's attack animation or backswing. ''Currently exclusive to Ultra Talents.''
+
+==Upgrading Costs==
+Upgrade costs for all Talents are broken down into four cost brackets. The first encompasses Talent-exclusive status effect resistances and stat buffs, in addition to upgrading effects or abilities that the unit in question already has. The second encompasses new effects/abilities which can then be upgraded for greater effect. The third (currently only used for Special and Uber Rare Cats) encompasses new and upgradable effects which also unlock a new target trait. Lastly, the fourth encompasses new target traits, as well as effects and abilities that can't be upgraded. A few special exceptions exist, and are listed underneath the following table.
+
+In addition, NP costs are affected by unit rarity, with [[:Category:Rare Cats|Rare Cats]] being the least expensive to unlock Talents, followed by [[:Category:Special Cats|Special]]/[[:Category:Super Rare Cats|Super Rare]] and [[:Category:Uber Rare Cats|Uber Super Rare Cats]]. NP costs for Ultra Talents - exclusive to Uber Super Rare Cats - are even more expensive.
+
+The amount of NP required for each type of Talent, at each rarity is as listed below:
+
+<tabber>
+Special Cats=
+{| border="1" cellspacing="1" cellpadding="1" style="width:725px;" class="article-table"
+|-
+! scope="col" rowspan="2" |Step
+! scope="col" colspan="4" style="text-align:center;"|NP Costs
+|-
+! scope="col" style="text-align:center;"|Resistance/Buff, Preexisting Effect/Ability Upgrade
+! scope="col" style="text-align:center;"|New Effect/Ability (Upgradable)
+! scope="col" style="text-align:center;"|New <br>Effect + Target (Upgradable)
+! scope="col" style="text-align:center;"|New Target/<br>Effect/Ability (No Upgrade)
+|-
+|Unlock
+| style="text-align:center;"|10
+| style="text-align:center;"|50
+| style="text-align:center;"|75
+| style="text-align:center;"|75
+|-
+|Level 2
+| colspan="3" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 3
+| colspan="3" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 4
+| colspan="3" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 5
+| colspan="3" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 6
+| colspan="2" style="text-align:center;"|15
+| style="text-align:center;"|20
+| style="text-align:center;"| -
+|-
+|Level 7
+| colspan="2" style="text-align:center;"|15
+| style="text-align:center;"|20
+| style="text-align:center;"| -
+|-
+|Level 8
+| colspan="2" style="text-align:center;"|15
+| style="text-align:center;"|20
+| style="text-align:center;"| -
+|-
+|Level 9
+| colspan="2" style="text-align:center;"|15
+| style="text-align:center;"|20
+| style="text-align:center;"| -
+|-
+| style="white-space:nowrap;"|Level 10 <!--The extra style setting here keeps the entire first column in line.-->
+| colspan="2" style="text-align:center;white-space:nowrap;"|15 <!--Don't forget this one!-->
+| style="text-align:center;white-space:nowrap;"|20
+| style="text-align:center;"| -
+|-
+|'''Total'''
+| style="text-align:center;"|'''125'''
+| style="text-align:center;"|'''165'''
+| style="text-align:center;"|'''215'''
+| style="text-align:center;"|'''75'''
+|}
+
+|-|Rare Cats=
+{| border="1" cellspacing="1" cellpadding="1" style="width:550px;" class="article-table"
+|-
+! scope="col" rowspan="2" colspan="1"|Step<!--This one goes over the upgrade levels.-->
+! scope="col" rowspan="1" colspan="3" style="text-align:center;"|NP Costs<!--This one goes over each cost category listed below.-->
+|-
+! scope="col" style="text-align:center;"|Resistance/Buff, Preexisting Effect/Ability Upgrade <!--The titles for each category.-->
+! scope="col" style="text-align:center;"|New Effect/Ability (Upgradable) <!--If someone changes this...-->
+! scope="col" style="text-align:center;"|New Target/<br>Effect/Ability (No Upgrade) <!--...make sure they're changed for every tab!-->
+|-
+|Unlock
+| style="text-align:center;"|5
+| style="text-align:center;"|25
+| style="text-align:center;"|50
+|-
+|Level 2
+| rowspan="1" colspan="2" style="text-align:center;"|5 <!--The number(s) at the end are what you actually see.-->
+| style="text-align:center;"| -
+|-
+|Level 3
+| rowspan="1" colspan="2" style="text-align:center;"|5
+| style="text-align:center;"| -
+|-
+|Level 4
+| rowspan="1" colspan="2" style="text-align:center;"|5
+| style="text-align:center;"| -
+|-
+|Level 5
+| rowspan="1" colspan="2" style="text-align:center;"|5
+| style="text-align:center;"| -
+|-
+|Level 6
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 7
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 8
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 9
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+| style="white-space:nowrap;"|Level 10 <!--The extra style setting here keeps the entire first column in line.-->
+| rowspan="1" colspan="2" style="text-align:center;white-space:nowrap;"|10 <!--Don't forget this one!-->
+| style="text-align:center;"| -
+|-
+|'''Total'''
+| style="text-align:center;"|'''75 (25)<sup>1</sup>'''
+| style="text-align:center;"|'''95'''
+| style="text-align:center;"|'''50'''
+|}
+|-|Super Rare Cats=
+{| border="1" cellspacing="1" cellpadding="1" style="width:550px;" class="article-table"
+|-
+! scope="col" rowspan="2" colspan="1"|Step
+! scope="col" rowspan="1" colspan="3" style="text-align:center;"|NP Costs
+|-
+! scope="col" style="text-align:center;"|Resistance/Buff, Preexisting Effect/Ability Upgrade
+! scope="col" style="text-align:center;"|New Effect/Ability (Upgradable)<sup>2</sup>
+! scope="col" style="text-align:center;"|New Target/<br>Effect/Ability (No Upgrade)
+|-
+|Unlock
+| style="text-align:center;"|10
+| style="text-align:center;"|50
+| style="text-align:center;"|75
+|-
+|Level 2
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 3
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 4
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 5
+| rowspan="1" colspan="2" style="text-align:center;"|10
+| style="text-align:center;"| -
+|-
+|Level 6
+| rowspan="1" colspan="2" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 7
+| rowspan="1" colspan="2" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 8
+| rowspan="1" colspan="2" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 9
+| rowspan="1" colspan="2" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+| style="white-space:nowrap;"|Level 10 <!--The extra style setting here keeps the entire first column in line.-->
+| rowspan="1" colspan="2" style="text-align:center;white-space:nowrap;"|15 <!--Don't forget this one!-->
+| style="text-align:center;"| -
+|-
+|'''Total'''
+| style="text-align:center;"|'''125'''
+| style="text-align:center;"|'''165'''
+| style="text-align:center;"|'''75'''
+|}
+
+|-|Uber Super Rare Cats=
+{| border="1" cellspacing="1" cellpadding="1" style="width:725px;" class="article-table"
+|-
+! scope="col" rowspan="2" |Step
+! scope="col" colspan="4" style="text-align:center;"|NP Costs
+|-
+! scope="col" style="text-align:center;"|Resistance/Buff, Preexisting Effect/Ability Upgrade
+! scope="col" style="text-align:center;"|New Effect/Ability (Upgradable)
+! scope="col" style="text-align:center;"|New <br>Effect + Target (Upgradable)<sup>3</sup>
+! scope="col" style="text-align:center;"|New Target/<br>Effect/Ability (No Upgrade)
+|-
+|Unlock
+| style="text-align:center;"|15
+| style="text-align:center;"|75
+| style="text-align:center;"|100
+| style="text-align:center;"|100
+|-
+|Level 2
+| colspan="3" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 3
+| colspan="3" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 4
+| colspan="3" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 5
+| colspan="3" style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 6
+| colspan="2" style="text-align:center;"|20
+| style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 7
+| colspan="2" style="text-align:center;"|20
+| style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 8
+| colspan="2" style="text-align:center;"|20
+| style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 9
+| colspan="2" style="text-align:center;"|20
+| style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+| style="white-space:nowrap;"|Level 10 <!--The extra style setting here keeps the entire first column in line.-->
+| colspan="2" style="text-align:center;white-space:nowrap;"|20 <!--Don't forget this one!-->
+| style="text-align:center;white-space:nowrap;"|25
+| style="text-align:center;"| -
+|-
+|'''Total'''
+| style="text-align:center;"|'''175'''
+| style="text-align:center;"|'''235'''
+| style="text-align:center;"|'''285'''
+| style="text-align:center;"|'''100'''
+|}
+
+|-|Ultra Talents= <!--If another rarity of cat gets Talents, just copy/paste this tab all the way to the |}-->
+{| border="1" cellspacing="1" cellpadding="1" style="width:550px;" class="article-table"
+|-
+! scope="col" rowspan="2" |Step
+! scope="col" colspan="3" style="text-align:center;"|NP Costs
+|-
+! scope="col" style="text-align:center;"|Resistance/Buff, Preexisting Effect/Ability Upgrade
+! scope="col" style="text-align:center;"|New Effect/Ability (Upgradable)
+! scope="col" style="text-align:center;"|New Target/<br>Effect/Ability (No Upgrade)
+|-
+|Unlock
+| style="text-align:center;"|20
+| style="text-align:center;"|100
+| style="text-align:center;"|150
+|-
+|Level 2
+| style="text-align:center;"|20
+| style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 3
+| style="text-align:center;"|20
+| style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 4
+| style="text-align:center;"|20
+| style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 5
+| style="text-align:center;"|20
+| style="text-align:center;"|15
+| style="text-align:center;"| -
+|-
+|Level 6
+| colspan="2" style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 7
+| colspan="2" style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 8
+| colspan="2" style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+|Level 9
+| colspan="2" style="text-align:center;"|25
+| style="text-align:center;"| -
+|-
+| style="white-space:nowrap;"|Level 10 <!--The extra style setting here keeps the entire first column in line.-->
+| colspan="2" style="text-align:center;white-space:nowrap;"|25 <!--Don't forget this one!-->
+| style="text-align:center;"| -
+|-
+|'''Total'''
+| style="text-align:center;"|'''225'''
+| style="text-align:center;"|'''285'''
+| style="text-align:center;"|'''150'''
+|}
+</tabber>
+<sup>1 Only applies to Catasaurus' Critical Talent, which caps at Level 5. Number in parenthesis shows total cost of a five Level Talent.<br>
+2 Also applies to The Kitty of Liberty's Knockback (Alien) Talent.<br>
+3 Does not apply to Paladin Cat's Freeze (Metal) Talent, which is priced the same as an upgradable new ability with no new target.</sup>
+
+==List of Units with Talents and Ultra Talents==
+:''See each unit's article for more information.''
+Note that some Talents have different names than the abilities they unlock. Most are relatively the same, but Attack Up, which is different from Attack Buff, actually gives the unit Strengthen. '''Ultra Talents''' are listed in '''bold'''.
+
+For a list of all units with Ultra Talents, click [[:Category:Cats with Ultra Talents|here]].
+
+===Special===
+{{Collapsible}}
+<u>Purchasable</u>
+*[[Ninja Cat (Special Cat)|Flying Ninja Cat]]: Target Dark, Dodge Attack, Move Speed Up, HP Buff, Attack Buff
+*[[Sumo Cat (Special Cat)|Riceball Cat]]: Immune to Freeze, Immune to Toxic, Immune to Slow, HP Buff, Attack Buff
+*[[Samurai Cat (Special Cat)|Pastry Cat]]: Barrier Breaker, Weaken, Resist Slow, HP Buff, Attack Buff
+*[[Zombie Cat (Special Cat)|Skelecat]]: Weaken, Resist Slow, Recover Speed Up, HP Buff, Attack Buff
+*[[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]]: Massive Damage, Immune to Weaken, Resist Slow, HP Buff, Attack Buff
+*[[Boogie Cat (Special Cat)|Gato Amigo]]: Knockback, Immune to Surge, Resist Freeze, Resist Slow, HP Buff
+*[[Bondage Cat (Special Cat)|Ultimate Bondage Cat]]: Freeze, Dodge Attack, Immune to Slow, HP Buff, Attack Buff
+*[[Dom Cat (Special Cat)|Dark Lazer]]: Wave Attack, Immune to Weaken, Cost Down, HP Buff, Attack Buff
+*[[Kung Fu Cat (Special Cat)|Dancer Cat]]: Surge Attack, Immune to Freeze, Immune to Waves, HP Buff, Attack Buff
+*[[Actress Cat (Special Cat)|Beefcake Cat]]: Attack Up, Immune to Surge, Resist Slow, HP Buff, Attack Buff
+*[[Skirt Cat (Special Cat)|Loincloth Cat]]: Barrier Breaker, Immune to Warp, Weaken Alien, HP Buff, Attack Buff
+*[[Panties Cat (Special Cat)|Lollycat]]: Slow Metal, Immune to Weaken, Resist Freeze, HP Buff, Attack Buff
+*[[Mr. (Special Cat)|Hyper Mr.]]: Knockback Zombie, Immune to Freeze, Immune to Warp, HP Buff, Attack Buff
+<u>Li'l Cats</u>
+*[[Li'l Cat (Special Cat)|Li'l Mohawk Cat]]: Critical, Immune to Waves, Immune to Slow, HP Buff, Attack Buff
+*[[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]]: Resist Toxic, Soulstrike, Dodge Attack [Zombie], HP Buff, Attack Buff
+*[[Li'l Axe Cat (Special Cat)|Li'l Dark Cat]]: Target Aku, Freeze, Resist Surge, HP Buff, Attack Buff
+*[[Li'l Gross Cat (Special Cat)|Li'l Macho Legs Cat]]: Shield Piercing, Knockback, Resist Curse, HP Buff, Attack Buff
+*[[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]]: Shield Piercing, Cost Down, Immune to Surge, HP Buff, Attack Buff
+*[[Li'l Bird Cat (Special Cat)|Li'l Flying Cat]]: Target Relic, Curse Immunity, Curse, HP Buff, Attack Buff
+*[[Li'l Fish Cat (Special Cat)|Li'l Island Cat]]: Target Aku, Wave Attack, Resist Curse, HP Buff, Attack Buff
+*[[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]]: Mini-Wave, Survives, Immune to Surge, HP Buff, Attack Buff
+*[[Li'l Titan Cat (Special Cat)|Li'l Jamiera Cat]]: Shield Piercing, Immune to Weaken, Resist Surge, HP Buff, Attack Buff
+<u>Legend Cats</u>
+*[[Valkyrie Cat (Special Cat)|Holy Valkyrie Cat]]: Attack Up, Freeze, Cost Down, HP Buff, Attack Buff
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Move Speed Up, Immune to Slow, Explosion
+*[[Cat God the Great (Special Cat)|Cat God the Golden]]: Weaken, Dodge Attack, Curse Immunity, HP Buff, Attack Buff
+*[[Filibuster Cat X (Special Cat)|Metafilibuster]]: Massive Damage, Freeze, Recover Speed Up, HP Buff, Attack Buff
+</div>
+
+===Rare===
+{{Collapsible}}
+*[[Pogo Cat (Rare Cat)|Jiangshi Cat]]: Resist Slow, Resist Wave, HP Buff, Attack Buff, Move Speed Up
+*[[Wheel Cat (Rare Cat)|Chill Cat]]: Knockback, Resist Weaken, HP Buff, Attack Buff, Cost Down
+*[[Salon Cat (Rare Cat)|Cyborg Cat]]: Survives, Immune to Toxic, Resist Freeze, HP Buff, Attack Buff
+*[[Jurassic Cat (Rare Cat)|Catasaurus]]: Critical, Resist Knockback, HP Buff, Attack Buff, Cost Down
+*[[Viking Cat (Rare Cat)|Maximum the Fighter]]: Immune to Slow, Resist Curse, Immune to Weaken, Resist Toxic, HP Buff
+*[[Pirate Cat (Rare Cat)|Dread Pirate Catley]]: Survives, Resist Slow, Immune to Waves, HP Buff, Attack Buff
+*[[Thief Cat (Rare Cat)|Goemon Cat]]: Attack Up, Zombie Killer, HP Buff, Attack Buff, Move Speed Up
+*[[Bishop Cat (Rare Cat)|Sanzo Cat]]: Weaken, Slow, Survives, Target Angel, HP Buff
+*[[Fortune Teller Cat (Rare Cat)|Doctor Cat]]: Resist Knockback, Resist Curse, Target Relic, HP Buff, Attack Buff
+*[[Shaman Cat (Rare Cat)|Necro-Dancer Cat]]: Wave Attack, Immune to Toxic, Resist Freeze, HP Buff, Attack Buff
+*[[Witch Cat (Rare Cat)|Enchantress Cat]]: Slow, Survives, Target Zombie, HP Buff, Attack Buff
+*[[Archer Cat (Rare Cat)|Cataur]]: Zombie Killer, Target Zombie, HP Buff, Attack Buff, Recover Speed Up
+*[[Swordsman Cat (Rare Cat)|Elemental Duelist Cat]]: Resist Weaken, Target Angel, HP Buff, Attack Buff, Recover Speed Up
+*[[Cat Gunslinger (Rare Cat)|Rodeo Cat]]: Resist Curse, Target Relic, HP Buff, Attack Buff, Recover Speed Up
+*[[Stilts Cat (Rare Cat)|Acrobat Cats]]: Surge Attack, Immune to Waves, Resist Freeze, HP Buff, Attack Buff
+*[[Tin Cat (Rare Cat)|Robocat]]: Dodge Attack, Immune to Knockback, Resist Curse, HP Buff, Attack Buff
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: Resist Slow, Resist Knockback, Resist Curse, HP Buff, Attack Buff
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]]: Survives, Critical, Resist Wave, HP Buff, Attack Buff
+*[[Psychocat (Rare Cat)|Corrupted Psychocat]]: Weaken, Slow, Resist Freeze, Target Zombie, HP Buff
+*[[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]]: Resist Freeze, Resist Curse, Immune to Waves, HP Buff, Attack Buff
+*[[Gardener Cat (Rare Cat)|Weedwacker Cat]]: Target Aku, Resist Surge, Resist Slow, HP Buff, Attack Buff
+*[[Welterweight Cat (Rare Cat)|Ectoweight Cat]]: Target Alien, Resist Weaken, Savage Blow, HP Buff, Attack Buff
+*[[Rover Cat (Rare Cat)|Catellite]]: Barrier Breaker, Curse Immunity, Resist Knockback, HP Buff, Attack Buff
+*[[Matador Cat (Rare Cat)|Bellydance Cat]]: Target Aku, Slow, Resist Freeze, HP Buff, Attack Buff
+*[[Wushu Cat (Rare Cat)|Shigong Cat]]: Weaken, Warp Immunity, Resist Freeze, HP Buff, Attack Buff
+</div>
+
+===Super Rare===
+{{Collapsible}}
+<u>Rare Cat Capsule</u>
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Extra Bounties, Target Alien, HP Buff, Attack Buff, Move Speed Up
+*[[Sushi Cat (Super Rare Cat)|Roe Cat]]: Resist Freeze, Resist Slow, HP Buff, Attack Buff, Cost Down
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Slow, Survives, Barrier Breaker, Attack Buff, Cost Down
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]: Weaken, Resist Freeze, Resist Slow, Curse Immunity, HP Buff
+*[[Apple Cat (Super Rare Cat)|iCat]]: Resist Slow, Resist Freeze, Move Speed Up, HP Buff, Attack Buff
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Slow, Resist Slow, HP Buff, Attack Buff, Move Speed Up
+*[[Bath Cat (Super Rare Cat)|Luxury Bath Cat]]: Knockback, Resist Weaken, Resist Wave, HP Buff, Attack Buff
+*[[Delinquent Cat (Super Rare Cat)|Ultra Delinquent Cat]]: Attack Up, Savage Blow, Resist Weaken, HP Buff, Attack Buff
+*[[Bodhisattva Cat (Super Rare Cat)|Tathagata Cat]]: Weaken, Slow, HP Buff, Attack Buff, Move Speed Up
+*[[Juliet Cat (Super Rare Cat)|Juliet the Maiko]]: Freeze, Resist Knockback, HP Buff, Attack Buff, Move Speed Up
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: Slow, Wave Attack, HP Buff, Attack Buff, Cost Down
+*[[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]: Weaken, Immune to Knockback, Resist Slow, HP Buff, Attack Buff
+*[[Cat Toaster (Super Rare Cat)|Catophone]]: Barrier Breaker, Target Alien, HP Buff, Attack Buff, Cost Down
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Freeze, Immune to Warp, Resist Curse, HP Buff, Attack Buff
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Savage Blow, Resist Weaken, Resist Curse, HP Buff, Attack Buff
+*[[Fencer Cat (Super Rare Cat)|The Kitty of Liberty]]: Knockback (Alien), Immune to Warp, Resist Curse, HP Buff, Attack Buff
+*[[Nymph Cat (Super Rare Cat)|Fiend Cat]]: Tough Vs, Target Angel, Resist Slow, HP Buff, Attack Buff
+<u>Merc Storia</u>
+*[[Orthos (Super Rare Cat)|Artist Orthos CC]]: Knockback, Immune to Slow, Mini-Surge, HP Buff, Attack Buff
+</div>
+
+===Uber Rare===
+{{Collapsible}}
+<u>The Dynamites</u>
+*[[Ice Cat (Uber Rare Cat)|Ice Crystal Cat]]: Survives, Resist Slow, Curse Immunity, HP Buff, Attack Buff, '''Attack Up''', '''Dodge Attack''', '''Target Metal'''
+*[[Cat Machine (Uber Rare Cat)|Cat Machine Mk 3]]: Freeze, Immune to Knockback, Move Speed Up, HP Buff, Attack Buff, '''Attack Frequency Up''', '''Curse Immunity''', '''Barrier Breaker'''
+*[[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]]: Attack Up, Resist Wave, HP Buff, Attack Buff, Cost Down
+*[[Marauder Cat (Uber Rare Cat)|Paladin Cat]]: Freeze Metal, Zombie Killer, Immune to Slow, HP Buff, Attack Buff
+*[[Baby Cat (Uber Rare Cat)|Cats in the Cradle/Cats in the Stroller]]: Slow, Resist Slow, Curse Immunity, HP Buff, Attack Buff
+*[[Nurse Cat (Uber Rare Cat)|Joyful Nurse Cat]]: Slow, Knockback, Curse Immunity, HP Buff, Attack Buff, '''Sage Slayer''', '''Mini-Surge''', '''Cost Down'''
+*[[Cat Clan Heroes (Uber Rare Cat)|Cat Quest Heroes]]: Dodge Attack, Immune to Toxic, Resist Weaken, HP Buff, Attack Buff
+*[[Lasvoss (Uber Rare Cat)|Lasvoss Reborn]]: Recover Speed Up, Colossus Slayer, Move Speed Up, HP Buff, Attack Buff
+*[[Summoner Satoru (Uber Rare Cat)|Devil Hunter Satoru]]: Survives, Curse Immunity, Knockback Immunity, HP Buff, Attack Buff
+<u>Sengoku Wargods Vajiras</u>
+*[[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]]: Attack Up, Resist Freeze, Resist Slow, HP Buff, Attack Buff
+*[[Maeda Keiji (Uber Rare Cat)|Immortal Keiji]]: Attack Up, Resist Weaken, Cost Down, HP Buff, Attack Buff, '''Target Floating''', '''Wave Attack''', '''Freeze Immunity'''
+*[[Oda Nobunaga (Uber Rare Cat)|Immortal Nobunaga/Phantasmal Nobunaga]]: Survives, Resist Wave, Curse Immunity, HP Buff, Move Speed Up
+*[[Date Masamune (Uber Rare Cat)|Immortal Masamune]]: Knockback, Resist Wave, Immune to Slow, HP Buff, Attack Buff, '''Mini-Wave''', '''Savage Blow''', '''HP Buff +''', '''Sage Slayer'''
+*[[Takeda Shingen (Uber Rare Cat)|Immortal Shingen]]: Barrier Breaker, Target Angel, HP Buff, Attack Buff, Cost Down, '''Target Red''', '''Target Zombie''', '''Target Aku'''
+*[[Uesugi Kenshin (Uber Rare Cat)|Immortal Kenshin/Hellrider Kenshin]]: Target Relic, Curse Immunity, Resist Weaken, HP Buff, Attack Buff
+*[[Imagawa Yoshimoto (Uber Rare Cat)|Immortal Yoshimoto]]: Target Aku, Survives, Resist Freeze, HP Buff, Attack Buff
+*[[Narita Kaihime (Uber Rare Cat)|Immortal Kaihime]]: Weaken, Curse Immunity, Cost Down, HP Buff, Attack Buff
+*[[Amakusa Shiro (Uber Rare Cat)|Immortal Amukasa]]: Dodge Attack, Freeze Immunity, HP Buff, Attack Buff, Recover Speed Up
+<u>Cyber Academy Galaxy Gals</u>
+*[[Windy (Uber Rare Cat)|Divine Windy α/Ultimate Windy α]]: Freeze, Attack Up, Curse Immunity, HP Buff, Attack Buff
+*[[Thundia (Uber Rare Cat)|Divine Thundia β/Ultimate Thundia β]]: Attack Up, Resist Wave, Curse Immunity, HP Buff, Attack Buff
+*[[Kuu (Uber Rare Cat)|Divine Kuu γ]]: Weaken, Resist Wave, Curse Immunity, HP Buff, Attack Buff, '''Attack Frequency Up''', '''Target Relic''', '''Immune to Surge'''
+*[[Kai (Uber Rare Cat)|Divine Kai μ]]: Shield Piercing, Resist Wave, Resist Weaken, Resist Slow, Attack Buff, '''Target Aku''', '''Curse Immunity''', '''HP Buff'''
+*[[Coppermine (Uber Rare Cat)|Divine Coppermine κ]]: Resist Wave, Resist Slow, Cost Down, HP Buff, Attack Buff, '''Attack Frequency Up''', '''Target Zombie''', '''Mini-Surge''', '''HP Buff +''', '''Strong Against''', '''Zombie Killer'''
+*[[Kalisa (Uber Rare Cat)|Divine Kalisa]]: Slow, Curse Immunity, HP Buff, Attack Buff, Move Speed Up
+*[[Twinstars (Uber Rare Cat)|Divine Twinstars Φ]]: Curse Immunity, Slow, Resist Wave, HP Buff, Attack Buff
+*[[Myrcia (Uber Rare Cat)|Divine Myrcia ξ]]: Dodge Attack, Curse Immunity, Immune to Surge, HP Buff, Attack Buff
+*[[Lilin (Uber Rare Cat)|Divine Lilin π]]: Freeze, Weaken Immunity, Resist Slow, HP Buff, Attack Buff
+<u>Lords of Destruction Dragon Emperors</u>
+*[[Megidora (Uber Rare Cat)|God-Emperor Megidora]]: Knockback, Wave Attack, Curse Immunity, HP Buff, Attack Buff, '''Cost Down''', '''Target Metal''', '''Target Relic'''
+*[[Sodom (Uber Rare Cat)|God-Emperor Sodom]]: Weaken, Curse Immunity, Target Relic, HP Buff, Attack Buff, '''Behemoth Slayer''', '''Sage Slayer''', '''Immune to Weaken'''
+*[[Vars (Uber Rare Cat)|God-Emperor Vars]]: Knockback, Curse Immunity, Target Relic, HP Buff, Attack Buff, '''Slow''', '''Attack Frequency Up''', '''Immune to Waves'''
+*[[Kamukura (Uber Rare Cat)|God-Emperor Kamukura]]: Tough Vs, Curse Immunity, Resist Slow, HP Buff, Attack Buff, '''Sage Slayer''', '''Slow''', '''Cost Down'''
+*[[Raiden (Uber Rare Cat)|God-Emperor Raiden]]: Dodge Attack, Immune to Knockback, Resist Freeze, HP Buff, Attack Buff, '''Immune to Slow''', '''Immune to Surge''', '''Behemoth Slayer'''
+*[[Dioramos (Uber Rare Cat)|God-Emperor Dioramos/Ascendant Dioramos]]: Attack Up, Resist Freeze, Resist Weaken, HP Buff, Attack Buff
+*[[Ganglion (Uber Rare Cat)|Ganglion the Unleashed]]: Weaken, Immune to Weaken, Resist Slow, HP Buff, Attack Buff
+*[[Relentless Gladios (Uber Rare Cat)|God-Emperor Gladios]]: Mini-Wave, Survives, Cost Down, HP Buff, Attack Buff
+*[[Hevijak the Wicked (Uber Rare Cat)|God-Emperor Hevijak]]: Attack Up, Wave Immunity, Knockback Immunity, HP Buff, Attack Buff
+<u>Ancient Heroes Ultra Souls</u>
+*[[Momotaro (Uber Rare Cat)|The Peach Devils]]: Weaken, Freeze, Resist Slow, HP Buff, Attack Buff, '''Mini-Wave''', '''Immune to Waves''', '''Knockback'''
+*[[Kasa Jizo (Uber Rare Cat)|Jizo's Mega Castle/Ultra Kasa Jizo]]: Curse Immunity, Immune to Toxic, Resist Surge, HP Buff, Attack Buff
+*[[Princess Kaguya (Uber Rare Cat)|The Chaos Moon/Ultra Kaguya]]: Knockback, Slow, Resist Slow, HP Buff, Attack Buff
+*[[Urashima Taro (Uber Rare Cat)|King Gamereon]]: Slow, Resist Freeze, Resist Knockback, HP Buff, Attack Buff, '''Cost Down''', '''Curse''', '''Immune to Slow'''
+*[[The Grateful Crane (Uber Rare Cat)|Ultima Galaxy Cosmo/Supernova Cosmo]]: Colossus Slayer, Curse, Curse Immunity, HP Buff, Attack Buff
+*[[Kachi-Kachi (Uber Rare Cat)|Kachiyama Assault Brigade]]: Resist Slow, HP Buff, Attack Buff, Cost Down, Recover Speed Up, '''Curse Immunity''', '''Attack Up''', '''Slow'''
+*[[Sarukani (Uber Rare Cat)|The One Hit Wonders]]: Savage Blow, Immune to Toxic, Immune to Freeze, HP Buff, Attack Buff
+*[[Kintaro (Uber Rare Cat)|Kinrangers GigaForce]]: Target Red, Curse, Resist Freeze, HP Buff, Attack Buff
+*[[Shitakiri Sparrow (Uber Rare Cat)|Grand Chunchun Haunters]]: Curse, Resist Wave, Cost Down, HP Buff, Attack Buff
+<u>Dark Heroes</u>
+*[[Akira (Uber Rare Cat)|Inferno Akira]]: Freeze, Attack Up, Survives, HP Buff, Attack Buff, '''Target Aku''', '''Surge Attack'''
+*[[Mekako Saionji (Uber Rare Cat)|Mission Control Mekako]]: Weaken, Knockback, Survives, HP Buff, Attack Buff, '''Dodge''', '''Target Angel'''
+*[[Catman (Uber Rare Cat)|Ultimate Catman]]: Dodge Attack, Immune to Warp, Immune to Freeze, HP Buff, Attack Buff
+*[[The White Rabbit (Uber Rare Cat)|The Grey Fox/The Spectral Cat]]: Immune to Warp, Curse Immunity, Cost Down, HP Buff, Attack Buff
+*[[Warlock and Pierre (Uber Rare Cat)|Mad Doctor Klay]]: Curse Immunity, Immune to Waves, Immune to Warp, HP Buff, Attack Buff, '''Target Traitless''', '''Immune to Surge''', '''Colossus Slayer'''
+*[[Hayabusa (Uber Rare Cat)|Akuma Hayabusa]]: Target Aku, Shield Piercing, Resist Curse, HP Buff, Attack Buff, '''Strong Against''', '''Attack Frequency Up''', '''Immune to Surge'''
+*[[Detective Vigler (Uber Rare Cat)|Section Chief Gravicci/Arcane Commissioner Gravicci]]: Target Relic, Curse Immunity, Resist Freeze, HP Buff, Attack Buff
+*[[Sharpshooter Saki (Uber Rare Cat)|Bad Blaster Saki]]: Strong, Survives, Resist Freeze, HP Buff, Attack Buff, '''Target Dark''', '''Strengthen''', '''Immune to Explosion'''
+*[[White Knight Cyclops (Uber Rare Cat)|Demon Knight Kyklops]]: Attack Up, Cost Down, Immune to Waves, HP Buff, Attack Buff
+<u>The Almighties The Majestic Zeus</u>
+*[[Thunder God Zeus (Uber Rare Cat)|Almighty Zeus]]: Resist Wave, Resist Weaken, Target Zombie, HP Buff, Attack Buff, '''Behemoth Slayer''', '''Slow''', '''生産時間短縮''', '''Immune to Explosion''', '''Zombie Killer'''
+*[[Anubis the Protector (Uber Rare Cat)|Almighty Anubis]]: Surge Attack, Immune to Surge, Barrier Breaker, HP Buff, Attack Buff, '''Attack Frequency Up''', '''Cost Down''', '''Shield Piercing'''
+*[[Radiant Aphrodite (Uber Rare Cat)|Almighty Aphrodite]]: Slow, Resist Curse, Resist Wave, Resist Freeze, Resist Weaken, '''Attack Buff''', '''Attack Frequency Up'''
+*[[Shining Amaterasu (Uber Rare Cat)|Almighty Amaterasu]]: Zombie Killer, Barrier Breaker, Survives, HP Buff, Attack Buff, '''Dodge Attack''', '''Attack Up'''
+*[[Splendid Ganesha (Uber Rare Cat)|Almighty Ganesha]]: Attack Up, Resist Weaken, Immune to Knockback, HP Buff, Attack Buff, '''Attack Frequency Up''', '''Immune to Waves''', '''Immune to Freeze'''
+*[[Wrathful Poseidon (Uber Rare Cat)|Almighty Poseidon]]: Dodge Attack, Resist Freeze, Savage Blow, HP Buff, Attack Buff
+*[[Empress Chronos (Uber Rare Cat)|Almighty Chronos]]: Resist Curse, Resist Slow, Move Speed Up, HP Buff, Attack Buff
+*[[Hades the Punisher (Uber Rare Cat)|Almighty Hades]]: Curse Immunity, Slow Relic, Weaken Relic, HP Buff, Attack Buff
+<u>Frontline Assault Iron Legion</u>
+*[[Mighty Kat-A-Pult (Uber Rare Cat)|CAT-8 Behemoth/CAT-10 Gigapult]]: Slow, Wave Attack, Resist Freeze, HP Buff, Attack Buff
+*[[Mighty Drednot (Uber Rare Cat)|B.C.S. Tigerclaw/B.C.S. Beartooth]]: Dodge Attack, Resist Weaken, Resist Freeze, Soulstrike, HP Buff, Attack Buff
+*[[Mighty Bomburr (Uber Rare Cat)|NEK-02 Air Citadel/NEK-03 Cloud Emperor]]: Attack Up, Immune to Toxic, Resist Freeze, Soulstrike, HP Buff, Attack Buff
+*[[Mighty Rekon Korps (Uber Rare Cat)|Orbital Annihilator Ragnarok]]: Survives, Curse Immunity, Recovery Speed Up, HP Buff, Attack Buff
+*[[Mighty Thermae D-Lux (Uber Rare Cat)|Subterra Sentinels/Subterra Saviors]]: Attack Up, Curse Immunity, Resist Freeze, Soulstrike, HP Buff, Attack Buff
+*[[Mighty Aethur Ltd. (Uber Rare Cat)|Ultra Atlantis Logistix]]: Soulstrike, Slow, Immune to Weaken, Resist Freeze, HP Buff, Attack Buff
+*[[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]]: Colossus Slayer, Surge Immunity, Knockback Immunity, Soulstrike, HP Buff, Attack Buff
+<u>Nature's Guardians Elemental Pixies</u>
+*[[Bora (Uber Rare Cat)|Bazibastra/Bazifenix]]: Attack Up, Resist Weaken, Resist Slow, HP Buff, Attack Buff
+*[[Mizli (Uber Rare Cat)|Mizuririn/Mizunade]]: Slow, Survives, Resist Slow, HP Buff, Attack Buff
+*[[Aer (Uber Rare Cat)|Aervanta/Aervantex]]: Weaken, Dodge Attack, Resist Curse, HP Buff, Attack Buff
+*[[Voli (Uber Rare Cat)|Gigavolta]]: Curse Immunity, Immune to Slow, Immune to Freeze, HP Buff, Attack Buff
+*[[Gravi (Uber Rare Cat)|Gravolodon]]: Target Relic, Curse Immunity, Immune to Knockback, HP Buff, Attack Buff
+<u>Girls & Monsters: Angels of Terror</u>
+*[[Trickster Himeyuri (Uber Rare Cat)|Fox Queen Himeyuri]]: Target Relic, Curse Immunity, Resist Freeze, HP Buff, Attack Buff, '''Mini-Surge''', '''Cost Down'''
+*[[Sea Maiden Ruri (Uber Rare Cat)|Mer-Queen Ruri]]: Target Relic, Curse Immunity, Resist Slow, HP Buff, Attack Buff, '''Dodge Attack''', '''Move Speed Up''', '''Immune to Freeze'''
+*[[Queen Reika (Uber Rare Cat)|Eternal Reika]]: Target Relic, Curse Immunity, Resist Slow, HP Buff, Attack Buff, '''Sage Slayer''', '''Attack Frequency Up''', '''Slow'''
+*[[Wolfchild Deale (Uber Rare Cat)|Jester Queen Deale]]: Knockback, Immune to Waves, Immune to Weaken, HP Buff, Attack Buff, '''Mini-Wave''', '''Colossus Slayer''', '''Curse Immunity'''
+*[[Graveflower Verbena (Uber Rare Cat)|Opulent Verbena]]: Critical, Survive, Resist Freeze, HP Buff, Attack Buff
+*[[Adventurer Kanna (Uber Rare Cat)|Fabled Adventure Girl Kanna]]: Move Speed Up, Survives, Immune to Slow, HP Buff, Attack Buff
+<u>Tales of the Nekoluga</u>
+*[[Nekoluga (Uber Rare Cat)|Ultralan Pasalan]]: Freeze, Resist Wave, HP Buff, Attack Buff, Cost Down, '''Immune to Surge''', '''Survives''', '''Dodge Attack'''
+*[[Asiluga (Uber Rare Cat)|Assassinlan Pasalan]]: Slow, Survives, Dodge Attack, HP Buff, Cost Down
+*[[Kubiluga (Uber Rare Cat)|E. Kubilan Pasalan]]: Slow Metal, Immune to Waves, Resist Surge, HP Buff, Attack Buff
+*[[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]]: Critical, Immune to Weaken, Resist Surge, HP Buff, Attack Buff
+*[[Balaluga (Uber Rare Cat)|Piccolan Pasalan]]: Survives, Weaken, Resist Wave, Resist Surge, HP Buff
+*[[Togeluga (Uber Rare Cat)|Shishilan Pasalan]]: Mini-Wave, Immune to Slow, Resist Weaken, HP Buff, Attack Buff
+*[[Nobiluga (Uber Rare Cat)|Mystican Pasalan]]: Strong Vs. Relic, Survives, Immune to Toxic, HP Buff, Attack Buff
+*[[Papaluga (Uber Rare Cat)|Sukelan Kakulan]]: Mini-Wave, Survives, Resist Wave, HP Buff, Attack Buff
+*[[Furiluga (Uber Rare Cat)|Ragelan Pasalan]]: Strengthen, Survives, Resist Wave, HP Buff, Attack Buff
+<u>Red/Air/Metal/Wave Busters</u>
+*[[Pai-Pai (Uber Rare Cat)|Pai-Pai DX]]: Survives, Slow, Immune to Slow, HP Buff, Attack Buff
+*[[Strike Unit R.E.I. (Uber Rare Cat)|Flight Unit R.E.I.]]: Freeze, Survives, Immune to Toxic, HP Buff, Attack Buff
+*[[Sakura Sonic (Uber Rare Cat)|Sacred Blade Sakura/Sacred Blade Sakura Z]]: Immune to Waves, Immune to Surge, Survives, HP Buff, Attack Buff
+*[[Hell Warden Emma (Uber Rare Cat)|Hell Commissioner Emma]]: Wave Attack, Weaken, Curse Immunity, HP Buff, Attack Buff
+<u>Xmas Gals</u>
+*[[Yuletide Nurse (Uber Rare Cat)|Xmas Spirit Nurse]]: Slow, Immune to Warp, Surge Immunity, HP Buff, Attack Buff
+*[[Keiji Claus (Uber Rare Cat)|Maeda Christmas DX]]: Attack Up, Immune to Surge, Resist Freeze, HP Buff, Attack Buff
+<u>Princess Punt Sweets</u>
+*[[PPT48 (Uber Rare Cat)|PPT46]]: Target Angel, Curse Immunity, Recover Speed Up, HP Buff, Attack Buff
+*[[Crazed Princess Punt (Uber Rare Cat)|Manic Princess Punt]]: Critical, Target Zombie, Zombie Killer, HP Buff, Attack Buff
+*[[HMS Princess (Uber Rare Cat)|HMS Princess II CC]]: Survives, Immune to Weaken, Immune to Waves, HP Buff, Attack Buff
+<u>Merc Storia</u>
+*[[Hearscht (Uber Rare Cat)|Revolutionary Hearscht CC]]: Freeze, Immune to Knockback, Attack Up, HP Buff, Attack Buff
+*[[Mystica (Uber Rare Cat)|Savior Mystica CC]]: Survives, Surge Immunity, Cost Down, HP Buff, Attack Buff
+*[[Michelia (Uber Rare Cat)|Naptime Michelia CC]]: Target Relic, Curse Immunity, Cost Down, HP Buff, Attack Buff
+*[[Eyewaltz (Uber Rare Cat)|Nameless Eyewaltz CC]]: Savage Blow, Weaken Immunity, Knockback Immunity, Resist Slow, HP Buff
+<u>Survive! Mola Mola!</u>
+*[[Mola King (Uber Rare Cat)|Master of the Pacific]]: Dodge Attack (All), Mini-Surge, Attack Buff
+<u>Shoumetsu Toshi</u>
+*[[Mystery Girl Yuki (Uber Rare Cat)|Mystery Catgirl Yuki]]: Knockback, Resist Toxic, Cost Down, HP Buff, Attack Buff
+*[[Crazed Yuki (Uber Rare Cat)|Crazed Catgirl Yuki]]: Move Speed Up, Resist Wave, Survives, HP Buff, Attack Buff
+*[[Lost World Yuki (Uber Rare Cat)|Lost World Catgirl Yuki]]: Target Aku, Resist Surge, Immune to Warp, HP Buff, Attack Buff
+*[[Benevolent Souma (Uber Rare Cat)|Cat-Eared Souma]]: Curse, Dodge Attack, Curse Immunity, HP Buff, Attack Buff
+<u>Fate/Stay Night: Heaven's Feel</u>
+*[[Saber (Uber Rare Cat)|Saber Alter CC]]: Target Relic, Curse Immunity, Wave Attack, HP Buff, Attack Buff
+</div>
+
+==Tips==
+*'''Talents only take effect for a unit's True/Ultra Forms.''' Ergo, if you unlock [[Oda Nobunaga (Uber Rare Cat)|Immortal Nobunaga]]'s Survives Talent then switch his form to Oda Nobunaga or Wargod Nobunaga, he will not survive lethal strikes, while as Phantasmal Nobunaga he still can.
+*Talents and their levels are not capped or disabled by the [[Aku Altar (Enemy Base)|Aku Altar]], so their boosts and effects still apply.
+*Talents which add a new target trait do not overwrite a unit's existing target trait(s) - i.e., a [[Cat Toaster (Super Rare Cat)|Catophone]] with Target [[:Category:Alien Enemies|Alien]] unlocked can still use its [[Slow]] ability on [[:Category:Angel Enemies|Angels]].
+*The best units to exchange for NP are those who are only used for debuffing, like [[Bishop Cat (Rare Cat)|Bishop Cat]], [[Shaman Cat (Rare Cat)|Shaman Cat]] and [[Psychocat (Rare Cat)|Psychocat]], as their base stats are generally too low for them to benefit much from + levels. Keep in mind however that this comes at the cost of not raising [[User Rank]].
+*One of the more efficient methods of accumulating NP is to exchange duplicate [[:Category:Li'l Cats|Li'l Cats]] obtained from Lucky Ticket events, which can be farmed rather quickly and easily by the time you start considering Talents.
+*As of [[Version 11.1 Update|Version 11.1]]'s introduction of Cat Capsules+ unlocked after [[Cats of the Cosmos]] Chapter 3, farming regular Ticket events becomes more viable as each [[:Category:Normal Cats|Normal Cat]] can now sell for 2 NP instead of just 1 NP. In fact, saving duplicate Normal Cats for this doubled NP gain is a good idea, even with how late in the game Cat Capsules+ is available.
+*All Resist Talents stack with Resist [[Talent Orbs|Ability Orbs]], resulting in full immunity with both an A-Rank (Slow, Curse) or S-Rank (Wave, Knockback, Toxic) Resist Orb and a level 10 Resist Talent.
+*While HP Buffs and Attack Buffs are no doubt useful to have, their impact is not worth the NP invested in most cases. Prioritize upgrading your units to the highest level possible and unlocking useful new abilities or buffs such as Move/Recover Speed Up before spending NP on Defense/Attack Buffs. An exception to this are the purchasable Special Cats, as not only do their Talents improve health/attack by 80% instead of 20%, but the stat-oriented ones practically require investment in their Defense and/or Attack Buffs before their other Talents.
+**Similarly, one should seriously consider whether upgrading Resistances is worth doing, as it costs as much or more NP to raise a Resistance to Level 10 than it does to unlock an Immunity for a unit of the same rarity or one rarity higher. Notably, Resist Weaken Level 10 does not prevent being perma-weakened by [[Winged Pigge]], Resist Slow Level 10 does not prevent being perma-slowed by [[Croakley]], Resist Curse Level 10 does not prevent being perma-cursed by a plurality of [[Relic Enemies|Relic]] enemies (not to mention most units with Resist Curse would die in one or two hits to a Relic enemy anyways,) and Resist Wave/Surge/Toxic Level 10 are nigh-universally insufficient at making units viable against enemies with these capabilities. Combining these Talents with the matching [[Ototo Corps|Style]] customization is recommended, though even with the maximum 85% effect reduction (excluding Toxic) many enemies will still have 100% or higher effect uptime.
+*Talents that give units a chance to knockback enemies range from double-edged swords, providing a form of crowd control that can get your units killed in stages with strong backliners, to downright counterproductive, most notably in [[Wheel Cat (Rare Cat)|Chill Cat]]'s case. Likewise, upgrading Move Speed Up on already fast units allows for easier rushing and more lenient timings, but also carries the risk of making them clip right into dangerous enemies' attacks.
+**This is similarly true of Talents that grant units immunity to knockback and warp, as they have the potential to help against certain enemies with these abilities, but will make the unit more vulnerable against other such enemies. If the cat unit in question has low health or many knockbacks (such as [[Mr. (Special Cat)|Hyper Mr.]]), then unlocking these immunities is unlikely to positively affect their performance.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Talents.png|The Talents button<!--This image is the Talents version of [[File:Evolve.png]]-->
+GatyaitemD 07 f.png
+Talents promo.png
+8.0 teaser 1.jpeg|NP in a teaser for [[Version 8.0 Update|Version 8.0]]
+8.0 teaser 3.jpeg|Another teaser revealing the Japanese name of the Talent mechanic and its function
+img045 07 en.png|Unused NP stamp reward (EN)
+img045 07 ja.png|Unused NP stamp reward (JP)
+</gallery>
+
+==Trivia==
+*Though not stated anywhere in-game, NP is shown to be an acronym for "Nyanko Points" in some [[Unimplemented Features|unused]] files, as seen in the gallery above.
+*On the posters announcing the release of Talents in both BCEN and BCJP, an icon can be seen under [[Megidora (Uber Rare Cat)|God-Emperor Megidora]]'s right wing with the text 攻撃力ダウン耐性 (Resist Weaken) written on it, likely being a leftover placeholder for until the actual Resist icon images were made.
+*Excluding Warp, Warp Resistant and Improved Knockback - which appear in the Filter but are unused - the following effects/abilities have yet to appear as Talents: Attacks Only, Insanely Tough, Insane Damage, Base Destroyer, Metal, Wave Shield, Single Attack, Area Attack, Long Distance and Omni Strike. For most of these effects and abilities, the reason is self-evident.
+**Similarly, the collaboration-exclusive [[Puella Magi Madoka Magica Collaboration Event|Witch Killer]] and [[Neon Genesis Evangelion Collaboration Event|EVA Angel Killer]] abilities - which are used but don't appear in the Filter - have not appeared as Talents and almost certainly never will.
+*The first units to have six Talents were [[Mighty Thermae D-Lux (Uber Rare Cat)|Subterra Sentinels]], which received Talents in [[Version 11.3 Update|Version 11.3]]; and [[Mighty Drednot (Uber Rare Cat)|B.C.S. Lionheart]] and [[Mighty Bomburr (Uber Rare Cat)|NEK-02 Air Citadel]], which were retroactively given [[Soulstrike]] Talents in the same update. Later units to receive six Talents were also from the [[Frontline Assault IRON LEGION (Gacha Event)|Frontline Assault IRON LEGION]] event, with [[Mighty Aethur Ltd. (Uber Rare Cat)|Ultra Atlantis Logistix]], [[Mighty Carrowsell (Uber Rare Cat)|Extradimensional Evanz]], and [[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]] each having six, in each case due to the addition of Soulstrike on top of "standard" talents.
+**The first unit to receive only three Talents was [[Mola King (Uber Rare Cat)|Master of the Pacific]] in [[Version 12.5 Update|Version 12.5]].
+*The first units to have six Ultra Talents were [[Coppermine (Uber Rare Cat)|Divine Coppermine κ]] and [[Thunder God Zeus (Uber Rare Cat)|Almighty Zeus]], both receiving three additional Ultra Talents in [[Version 15.7 Update|Version 15.7]].
+*When viewing a unit's abilities and targets, those unlocked through Talents will have differently colored borders around them depending on whether they can still be leveled up: red-and-orange if upgrades are still available, golden if otherwise.
+*There are a multitude of typos and inconsistencies in Talent names and descriptions.
+**While most Effect + Target Trait Talents are simply named "X Trait" (X being the effect in question,) Liberty Cat's Knockback (Alien) and Master of the Pacific's Dodge Attack (All) Talents are written with parenthesis and Li'l Eraser's Dodge Attack [Zombie] Talent is written with square brackets.
+**While most non-buff, non-upgrade Talents are described as "Gain the "X" ability." (including effects), the following Talents are described as "Unlocks the "X" ability.": Dodge Attack, Shield Piercing, Savage Blow, Mini-Wave, Mini-Surge, Surge Attack, Resist Surge, and Resist Toxic. Curse, Colossus Slayer and Behemoth Slayer Talents are similarly described with 'Unlocks', but have no quotation marks around the ability name. Lastly, 'Unlocks' with quotation marks is used for all Effect + Target Talents.
+**While most buff Talents are described as "Unit's X will increase/decrease. Level up to further increase/decrease X!", Recover Speed Up is described as "Unit's recovery time will [sic] shortened. Level up for even faster recovery!" and Attack Frequency Up is described as "Unit's attack frequency is increased. After lvl. up, attacks become even more frequent."
+**The following Talents are named and/or described differently to the effect/ability they unlock:
+<!--NOTE TO FUTURE EDITORS: If possible, please confirm how the "Strong" Talent is described, whether correctly, incorrectly as per the name, or incorrectly in a different way from the name.-->
+{| class="article-table" border="1" cellpadding="1" cellspacing="1" {|
+|-
+! scope="col" |Talent Name/Desc.
+! scope="col" |Actual Name
+|-
+|Strong <!--Verify-->
+|Strong Against
+|-
+|Tough Vs
+|Resistant
+|-
+|Dodge<sup>1</sup>, Immune<sup>2</sup>
+|Dodge Attack<sup>3</sup>
+|-
+|Attack Up<sup>4</sup>
+|Strengthen
+|-
+|Survives<sup>4</sup>
+|Survive
+|-
+|Extra Bounties
+|Money Up
+|-
+|Surge Attack
+|Surge Attacks
+|-
+|Curse Immunity
+|Immune to Curse
+|-
+|Resist Surge
+|Resist Surge Attack
+|-
+|Resist Toxic
+|Resistant to Toxic
+|}
+<sup>1 Talent is named correctly but described incorrectly.<br>
+2 Talent is named correctly but described incorrectly in this way only for Li'l Eraser Cat.<br>
+3 Talent is named and described correctly only for Master of the Pacific.<br>
+4 Talent is named incorrectly but described correctly.</sup>
+*Prior to an unknown version, the Extra Bounties Talent was named Money Up.
+*Prior to [[Version 15.7 Update|Version 15.7]], HP Buff was named Defense Buff.
+
+==See Also==
+*[[Talent Orbs]]: A similar feature also unlocked by clearing [[Into the Future]] Chapter 3.
+
+==Reference==
+*https://battlecats-db.com/unit/ability.html
+
+{{BC Navigation}}
+[[Category:Game Features]]

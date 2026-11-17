@@ -1,0 +1,65 @@
+'''Red Marmod''' is a [[:Category:Red Enemies|Red]] enemy that appears in the [[World Trigger Collaboration Event]]. It was added in [[Version 11.9 Update|Version 11.9]].
+
+{{Enemy Info
+|name = Red Marmod
+|image = E 620.png
+|appearance = [[World Trigger Collaboration Event]]
+|money drop = 100¢ - 395¢
+}}
+
+==Enemy==
+This enemy appears to be a red quadrupedal creature with an eye in its mouth. It has low overall stats. Even with its [[Omni Strike]], the most it can reach are your meatshields. If it does reach your attackers however, it can [[Weaken|weaken]] them for 3 seconds.
+
+==Strategy==
+As long as your World Trigger units are well leveled, these shouldn't be much of a problem. [[Yuma Kuga & Cat (Rare Cat)|Yuma Kuga]] in particular can be used to deal high damage to it, while [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo]] can protect him using his great health.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Collaboration Events|Collaboration Stages]]===
+*[[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]]:
+**[[Training Level 2]]
+**[[Training Level 3]]
+**[[Training Level 4]]
+**[[Training Level 5]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Red Marmod
+|Health = 90000
+|Attack Power = 3000
+|Attack Range = 110
+|Attack Type = Area
+|Time Between Attacks = 59
+|Movement Speed = 8
+|Knockback = 1
+|Foreswing = 20
+|Backswing = 28
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 90f <sub>3 seconds</sub>
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery>
+620 e.png|Red Marmod's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/622.html
+
+----
+{{EnemyNav|Marmod|Black Marmod}}
+----
+
+{{World Trigger}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Weaken ability]]

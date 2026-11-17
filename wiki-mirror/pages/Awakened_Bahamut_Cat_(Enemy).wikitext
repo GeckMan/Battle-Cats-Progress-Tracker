@@ -1,0 +1,66 @@
+:''This article is about the enemy. For the Cat Unit, see [[Bahamut Cat (Special Cat)]]. For the [[:Category:Alien Enemies|Alien]] variant, see [[Raging Bahamut Cat]].''
+'''Awakened Bahamut Cat''' (覚醒のネコムート, ''Kakusei no Nekomūto'', '''Awakened Cathamut''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Bahamut Cat's Trial]]. He is the second enemy version of [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], the first being [[Raging Bahamut Cat]]. He was added in [[Version 14.2 Update|Version 14.2]].
+
+{{Enemy Info
+|name = Awakened Bahamut Cat
+|image = E 717.png
+|appearance = [[Bahamut Cat's Trial]]
+|money drop = 4,444¢ - 17,553¢
+}}
+
+==Enemy==
+Awakened Bahamut Cat is an extreme threat, with already-high base damage that is effectively doubled by his 100% [[Explosion]], not to mention his very fast movement and attack speeds. His Explosion hits up to 575 range, meaning few units are able to fully outrange him. However, Awakened Bahamut Cat has one glaring flaw that makes him possible to beat, as unlike [[Raging Bahamut Cat]], his backswing is long enough to leave an opening for rushers like [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] or [[Express Cat (Super Rare Cat)|Bullet Train Cat]] to sneak in a hit.
+
+==Strategy==
+:''For strategies, see [[Journey to Talent (Bahamut Cat)]].''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Bahamut Cat's Trial]]: [[Journey to Talent (Bahamut Cat)|Journey to Talent]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Awakened Bahamut Cat
+|Health = 2000000
+|Attack Power = 60444
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 93
+|Movement Speed = 60
+|Knockback = 12
+|Foreswing = 5
+|Backswing = 73
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">60,000</span> at 5f <sup>0.17s</sup>, <span class="scaled" data-type="ap">222</span> at 10f <sup>0.33s</sup>, <span class="scaled" data-type="ap">222</span> at 20f <sup>0.67s</sup>)<br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 300 range on 1st hit
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+717 e.png|Awakened Bahamut Cat's spritesheet
+</gallery>
+
+==Trivia==
+*The Cat face in Awakened Bahamut Cat's chest still exists in his spritesheet, the Doge face is simply placed over it.
+
+==Reference==
+*https://battlecats-db.com/enemy/719.html
+
+----
+{{EnemyNav|Holy Valkyrie Cat|Choco Capsule}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Explosion Enemies]]
+[[Category:Mythic Bosses]]

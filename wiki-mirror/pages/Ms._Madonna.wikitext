@@ -1,0 +1,91 @@
+'''Ms. Madonna''' (マドンナ先生 ''Madonna-sensei'', '''Teacher Madonna''') is a [[:Category:Traitless Enemies|Traitless]] enemy introduced in [[Spring for Sensei (Monthly Event)|Spring for Sensei]]. She was added in [[Version 8.3 Update|Version 8.3]].
+
+{{Enemy Info
+|name = Ms. Madonna
+|image = E 442.png
+|appearance = [[Spring for Sensei (Monthly Event)|Spring for Sensei]]<br>
+[[April Gauntlet II]]<br>
+[[Citadel#Traitless|Traitless Citadel]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Ms. Madonna has many knockbacks, short range and an Area Attack with a 100% chance to [[Knockback|knockback]] cats and create a Lv.3 [[Wave Attack]]. This enemy can be dealt with very easily when she's alone, but when supported by heavy hitters such as [[Teacher Bun Bun]] or [[Zang Roo]], she can become quite the nuisance.
+
+==Strategy==
+Due to Ms. Madonna's low damage output, the player can use tanky units like [[Fish Cat (Normal Cat)|Island Cat]] or [[Titan Cat (Normal Cat)|Jamiera Cat]], or [[:Category:Cats with Wave Immunity|Wave Immune cats]] like [[Miyamoku Musashi (Special Cat)|Miyamoku Musashi]]. Note that due to being knocked back with the first attack, [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] will not block the wave attack if it's in Ms. Madonna's range (130 < 200).
+
+You can also use [[:Category:Cats with Knockback Immunity|cats that are immune to knockback]] to prevent the enemies' front line from moving forward. This is especially important in later stages, where there are powerful backliners that could advance. It is best to defeat her as fast as possible as she can become an annoying support for the enemies.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Spring for Sensei (Monthly Event)|Spring for Sensei]]:
+**[[Faculty Change]] (100%)
+**[[You in a Petri Dish]] (150%)
+**[[Dangerous Equations]] (150%)
+**[[Litmus of Love]] (200%)
+**[[U + Me = Photosynthesis]] (300%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2019 Debut]] (200%)
+*[[War on Valentines#Bittersweet Valentine's|Bittersweet Valentine's]]: [[I Actually Hate Chocolate]] (500%)
+*[[Traitless Citadel]]: [[Traitless Citadel/Floor 7|Floor 7]] (100%)
+*[[April Gauntlet II]]:
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.11]] (300%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.12]] (322%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.13]] (344%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.14]] (366%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.15]] (388%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.16]] (410%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.17]] (432%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.18]] (454%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.19]] (476%)
+**[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.MAX]] (500%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.7]] (200%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.8]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ms. Madonna
+|Health = 240000
+|Attack Power = 2400
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 119
+|Movement Speed = 10
+|Knockback = 6
+|Foreswing = 16
+|Backswing = 20
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+442 e.png|Ms. Madonna's spritesheet
+IdleMsMadonna.gif|Ms. Madonna's moving animation
+</gallery>
+
+==Trivia==
+*''Madonna'' (マドンナ) is a slang term for a woman who is adored by many men.
+*Her and [[Doctor K.O.]] are the only [[Kang Roo]] variants that don't have a [[wikipedia:Marsupial#Early development|joey]].
+*She is one of the only [[Kang Roo]] variants to not have [[Multi-Hit]], the other being [[Scissoroo]].
+
+==Reference==
+*https://battlecats-db.com/enemy/444.html
+
+----
+{{EnemyNav|Saber Alter|Mesocosmocyclone}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Wave Attack Enemies]]

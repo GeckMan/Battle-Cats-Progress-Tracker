@@ -1,0 +1,59 @@
+{{#invoke:Navbox|main
+|template = Template:Sonic the Hedgehog
+|title = [[Sonic the Hedgehog Collaboration Event]]
+|navbox_class = sonic
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Sonic (Uber Rare Cat)|Sonic]]
+*[[Tails (Uber Rare Cat)|Tails]]
+*[[Knuckles (Uber Rare Cat)|Knuckles]]
+*[[Shadow (Uber Rare Cat)|Shadow]]
+*[[Sonic Cat (Rare Cat)|Sonic Cat]]
+*[[Tails Cat (Special Cat)|Tails Cat]]
+*[[Shadow Cat (Rare Cat)|Shadow Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Sonic (Enemy)|Sonic]]
+*[[Tails (Enemy)|Tails]]
+*[[Knuckles (Enemy)|Knuckles]]
+*[[Shadow (Enemy)|Shadow]]
+*[[Goal Plate Base (Enemy Base)|Goal Plate Base]]
+
+|header3 = Stages
+|group3 = [[Sonic the Hedgehog Collaboration Event#Green Hill Zone|Green Hill Zone]]
+|list3 =
+*[[Gotta Keep Movin']]
+*[[Promises Kept]]
+*[[Helping Those In Need]]
+*[[Always Sharp, Always Cool]]
+*[[The Fastest Hedgehog Alive]]
+*[[Bonus Stage (StH)|Bonus Stage]]
+
+|group4 = [[Sonic the Hedgehog Collaboration Event#Chemical Plant Zone|Chemical Plant Zone]]
+|list4 =
+*[[A.K.A. Miles Prower]]
+*[[Kindly Two-Tails]]
+*[[Sonic's Dependable Pal]]
+*[[Brain-and-Mech Support]]
+*[[High-Flying Partner]]
+*[[Bonus Stage (StH)|Bonus Stage]]
+
+|group5 = [[Sonic the Hedgehog Collaboration Event#Sky Sanctuary|Sky Sanctuary]]
+|list5 =
+*[[Leave Treasure Hunting to Me!]]
+*[[Punching, Soaring, Climbing!]]
+*[[Sonic's Battle Buddy]]
+*[[Hot-Headed Echidna]]
+*[[Master Emerald's Protector]]
+*[[Bonus Stage (StH)|Bonus Stage]]
+
+|group6 = Radical Highway
+|list6 =
+*[[Radical Highway/Chaos Control Lv.1~20|Chaos Control Lv.1~20]]
+}}<templatestyles src="Sonic the Hedgehog/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Sonic the Hedgehog]]}}<noinclude>[[Category:Navboxes]]</noinclude>

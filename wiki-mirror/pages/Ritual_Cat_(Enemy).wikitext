@@ -1,0 +1,60 @@
+:''This article is about the enemy. For the Cat Unit, see [[Salaryman Cat (Rare Cat)]].''
+'''Ritual Cat''' (ネコ火祭り, ''Neko Hi Matsuri'', '''Cat Fire Festival''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Salaryman Awakes!]]. He was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Enemy Info
+|name = Ritual Cat
+|image = E 279.png
+|appearance = [[Salaryman Awakes!|Salaryman Awakens!]]
+|money drop = 1,250¢ - 4,937¢
+}}
+
+==Enemy==
+Ritual Cat has average health and damage for a typical boss enemy, but makes up for it by appearing in small groups in its awakening stages. It possesses a fast attack rate, an ability to increase 100% attack power at 50% health, and supported by enemies with fast attack rates (such as [[Shy Boy]]) or long range attacks (such as [[Le'noir]]), which can easily break through the player's defence if they are not prepared.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Salaryman Awakes!]]:
+**[[Nine to Five Fever (Expert)]]
+**[[Nine to Five Fever (Insane)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ritual Cat
+|Health = 724300
+|Attack Power = 11111
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 61
+|Movement Speed = 6
+|Knockback = 2
+|Foreswing = 22
+|Backswing = 29
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+279 e.png|Ritual Cat's spritesheet
+IdleRitual.gif|Ritual Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/281.html
+
+----
+{{EnemyNav|Kyuubei|Razorback}}
+----
+
+{{Awakening Stages}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]

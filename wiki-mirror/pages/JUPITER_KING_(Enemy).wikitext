@@ -1,0 +1,61 @@
+:''This article is about the enemy. For the Cat Unit, see [[JUPITER KING (Uber Rare Cat)]].''
+'''JUPITER KING''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Metal Slug Collaboration Event]]. It was added in [[Version 4.3 Update|Version 4.3]].
+
+{{Enemy Info
+|name = JUPITER KING
+|image = E 195.png
+|appearance = [[Metal Slug Collaboration Event]]
+|money drop = 1,800¢ - 7,110¢
+}}
+
+==Enemy==
+The main boss of the Metal Slug Defense stages, Jupiter King, has huge health, high range and high damage, but is pretty slow when it comes to attacking, which results in him working a lot like [[Dark Emperor Nyandam]]. Since his DPS turns out to be quite low, this enemy won't be difficult to defeat once his support is taken care of. What lets him stand out is the ability to knock back cats, but he won't do that often, since he attacks every 13 seconds, so treat this as a minor annoyance.
+
+==Strategy==
+:''For strategies, see [[Jupiter King Convoy]]''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]]: [[Jupiter King Convoy]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = JUPITER KING
+|Health = 250000
+|Attack Power = 7500
+|Attack Range = 570
+|Attack Type = Area
+|Time Between Attacks = 397
+|Movement Speed = 5
+|Knockback = 1
+|Foreswing = 38
+|Backswing = 28
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+195 e.png|JUPITER KING's spritesheet
+IdleJUPITERKING.gif|JUPITER KING's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/197.html
+
+----
+{{EnemyNav|HUGE HERMIT|HI-DO}}
+----
+
+{{Metal Slug}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]

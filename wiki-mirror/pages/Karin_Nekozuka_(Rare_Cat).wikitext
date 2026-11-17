@@ -1,0 +1,125 @@
+:''This article is about the Cat Unit. For the enemy, see [[Karin Nekozuka (Enemy)]].''
+'''Karin Nekozuka''' is a [[:Category:Rare Cats|Rare Cat]] who was implemented in [[Version 6.8 Update|Version 6.8]] and is exclusive to the [[Power Pro Baseball Collaboration Event]]. It is acquired as a drop after beating any of the [[Power Pro Baseball Collaboration Event#Date Chance: Karin|Date Chance: Karin]] stages.
+
+{{Cat Info
+|ID = 389
+|rarity = RR
+|name1 = Karin Nekozuka
+|name2 = Karin Nekozuka CC
+}}
+
+==Evolution==
+Evolves into '''Karin Nekozuka CC''' at level 10.
+
+==Strategy/Usage==
+Reminiscent of [[Shaman Cat (Rare Cat)|Shaman Cat]], Karin Nekozuka has higher speed and range in exchange for a higher cooldown and a longer attack frequency. While Karin can substitute for Shaman early on, she isn't as effective as him, as Shaman can be stacked faster and attacks faster while being able to target the same enemies. Getting Necro-Dancer Cat is merely the final nail in the coffin. The one unique way you could possibly use Karin is to rush into a long-ranged Floating enemy and freeze it, though this requires a higher proc chance than what Karin has and is awfully niche.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 389
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni389 f00.png
+|Image2 = Uni389 c00.png
+|Name1 = Karin Nekozuka
+|Desc1 = Dropping in from PowerPro Baseball!<br>Openminded and cheerful team manager.<br>Chance to freeze Floating enemies.
+|Name2 = Karin Nekozuka CC
+|Desc2 = Dropping in from PowerPro Baseball!<br>Better than anyone at resolving personality conflicts.<br>Chance to freeze Floating enemies.
+|Name1 (JP) = 猫塚かりん
+|Desc1 (JP) = 実況パワフルプロ野球から参戦！<br>自由奔放で陽気なマネージャー<br>たまに浮いてる敵の動きを一瞬止める
+|Transl1 (JP) = Entered from Power Pro Baseball Live!<br>Free-spirited and cheerful manager<br>Sometimes stops the movement of floating enemies for a moment.
+|Name2 (JP) = 猫塚かりんCC
+|Desc2 (JP) = 実況パワフルプロ野球から参戦！<br>実は空気を読む気配りタイプだったりする<br>たまに浮いてる敵の動きを一瞬止める
+|Transl2 (JP) = Entered from Power Pro Baseball Live!<br>She's said to be the attentive type who can read the air.<br>Sometimes stops the movement of floating enemies for a moment.
+|Name1 (TW) = 貓塚花凜
+|Desc1 (TW) = 來自實況野球的新人物！<br>自由奔放活潑的球隊經理<br>偶爾會讓飄浮敵人瞬間動作停止
+|Name2 (TW) = 貓塚花凜CC
+|Desc2 (TW) = 來自實況野球的新人物！<br>其實還蠻懂得察言觀色把握狀況的<br>偶爾會讓飄浮敵人瞬間動作停止
+|Name1 (KR) = 네코즈카 카린
+|Desc1 (KR) = 실황 파워풀 프로야구에서 참전!<br>자유분방하고 발랄한 매니저<br>가끔씩 떠있는 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 네코즈카 카린CC
+|Desc2 (KR) = 실황 파워풀 프로야구에서 참전!<br>실은 분위기를 잘 파악해서 배려하는 타입이기도 하다<br>가끔씩 떠있는 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 330¢
+*Chapter 2: 495¢
+*Chapter 3: 660¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Karin Nekozuka
+|Normal Base HP = 360
+|Normal Base AP = 65
+|Normal Range = 300
+|Normal Foreswing = 14
+|Normal Attack Cooldown = 67
+|Normal Attack Length = 41
+|Normal Speed = 20
+|Normal KB = 3
+|Normal Cost = 330
+|Normal Recharge = 660
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Karin Nekozuka CC
+|Evolved Base HP = 360
+|Evolved Base AP = 65
+|Evolved Range = 300
+|Evolved Foreswing = 14
+|Evolved Attack Cooldown = 67
+|Evolved Attack Length = 41
+|Evolved Speed = 20
+|Evolved KB = 3
+|Evolved Cost = 330
+|Evolved Recharge = 660
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 360 HP
+|val-Normal-Attack Power = 65 damage<br>(24.07 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 14f <sup>0.47s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 22 ~ 13.2 seconds
+|val-Normal-MaxHP = 6,120 HP
+|val-Normal-MaxAttack = 1,105 damage<br>(409.26 DPS)
+|val-Evolved-Health = 6,120 HP
+|val-Evolved-Attack Power = 1,105 damage<br>(409.26 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 14f <sup>0.47s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 22 ~ 13.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni389 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/390.html
+
+----
+{{CatNav|Ren Katagiri|Aoi Hayakawa}}
+----
+
+{{Power Pro Baseball}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

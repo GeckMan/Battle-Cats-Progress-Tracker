@@ -1,0 +1,144 @@
+{{TranslationNeeded}}
+:''This article is about the Cat Unit. For the enemy, see [[Tails (Enemy)]].''
+'''Tails''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Sonic the Hedgehog Collaboration Event]]. He was added in [[Version 14.4 Update|Version 14.4]] for [[Nyanko Daisensou|BJCP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 804
+|rarity = UR
+|name1 = Tails
+|name2 = Tails & Cat
+}}
+
+==Evolution==
+Evolves into '''Tails & Cat''' at level 10.
+
+==Strategy/Usage==
+Tails is a backline Sniper with [[Explosion]], on top of a 75% chance to [[Weaken]] and [[Curse]] [[:Category:Red Enemies|Reds]]/[[:Category:Alien Enemies|Aliens]] for 5 seconds (6 seconds post-treasures).
+
+Weaken is a great crowd-controlling ability on its own, able to significantly impede enemies by reducing their damage. Curse is situational for Reds, as few Non-Collab [[:Category:Red Enemies|Reds]] have abilities. However, [[:Category:Alien Enemies|Aliens]] are heavily reliant on abusing said abilities, with many Starred Aliens specifically having their [[Warp]] disabled.
+
+Keep in mind that Tails has fairly low DPS on his own, even for his range, and also has a small blindspot. His [[Explosion|Explosions]] do help to increase his potential output, but his lack of damage-boosting abilities strictly relegate him to crowd-control. The Explosion doesn't cover his blindspot fully, instead serving as an extension to his primary attack (reaches from 165 to 715), allowing him to potentially tag enemies barely out of his range and slightly increase his uptime to ''~79% on average'', being comparable to [[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]] in terms of CC reach.
+
+Overall, a fantastic counter to [[Into the Future]], [[Cats of the Cosmos]], and can carry players into the Late/Endgame.
+
+{{Job|Classification = Crowd-Controller & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 804
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni804 f00.png
+|Image2 = Uni804 c00.png
+|Name1 = Tails
+|Desc1 = Joining from Sonic the Hedgehog thanks to divine power!<br>Kind-hearted young fox with a pair of tails.<br>May afflict Red/Aliens with debuffs, causes Explosions.
+|Name2 = Tails & Cat
+|Desc2 = Joining from Sonic the Hedgehog thanks to divine power!<br>Divine power... I wonder how it works...<br>May afflict Red/Aliens with debuffs, causes Explosions.
+|Name1 (JP) = テイルス (Teiruzu, Tails)
+|Desc1 (JP) = ソニック・ザ・ヘッジホッグから神さまの力で参戦！<br>2本のシッポを持つ心優しい子ギツネ<br>たまに赤とエイリアンへ妨害効果を与え、爆波を放つ
+|Transl1 (JP) = From Sonic the Hedgehog, Tails joins the battle by the power of God!<br>
+A kind-hearted young fox with two tails.<br>
+Occasionally inflicts debuffs on Red and Alien enemies, and releases an Explosion.
+|Name2 (JP) = テイルス&ネコ (Teiruzu ando Neko, Tails & Cat)
+|Desc2 (JP) = ソニック・ザ・ヘッジホッグから神さまの力で参戦！<br>「神さまの力かぁ、一体どんな技術なんだろう…？」<br>たまに赤とエイリアンへ妨害効果を与え、爆波を放つ
+|Transl2 (JP) = ?
+|Name1 (TW) = 塔爾斯
+|Desc1 (TW) = 藉由神的力量從索尼克來參戰！<br>有兩根尾巴，個性溫柔的小狐狸<br>有時候給予紅敵和異星戰士妨害效果，發射爆波
+|Name2 (TW) = 塔爾斯&貓咪
+|Desc2 (TW) = 藉由神的力量從索尼克來參戰！<br>「神的力量到底是什麼科技呢？」<br>有時候給予紅敵和異星戰士妨害效果，發射爆波
+|Name1 (KR) = 테일즈
+|Desc1 (KR) = 소닉 더 헤지혹에서 신의 힘으로 참전!<br>2개의 꼬리를 가진 마음씨 착한 꼬마 여우<br>가끔 빨간 적과 에이리언에 방해 효과를 주며 폭파를 일으킨다
+|Name2 (KR) = 테일즈&고양이
+|Desc2 (KR) = 소닉 더 헤지혹에서 신의 힘으로 참전!<br>「신의 힘이라니, 대체 어떤 기술일까...?」<br>가끔 빨간 적과 에이리언에 방해 효과를 주며 폭파를 일으킨다
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tails
+|Normal Base HP = 2850
+|Normal Base AP = 750
+|Normal Range = 440
+|Normal Foreswing = 38
+|Normal Attack Cooldown = 189
+|Normal Attack Length = 91
+|Normal Speed = 15
+|Normal KB = 4
+|Normal Cost = 2500
+|Normal Recharge = 3200
+|Normal Attack Type = Area
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 240~640)<br>
+{{AbilityIcon|Weaken}} 75% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Curse}} 75% chance to [[Curse|curse]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 440 range
+|Evolved Name = Tails & Cat
+|Evolved Base HP = 2850
+|Evolved Base AP = 750
+|Evolved Range = 440
+|Evolved Foreswing = 38
+|Evolved Attack Cooldown = 189
+|Evolved Attack Length = 91
+|Evolved Speed = 15
+|Evolved KB = 4
+|Evolved Cost = 2500
+|Evolved Recharge = 3200
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 240~640)<br>
+{{AbilityIcon|Weaken}} 75% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Curse}} 75% chance to [[Curse|curse]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 440 range
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,850 HP
+|val-Normal-Attack Power = 750 damage<br>(99.12 DPS)
+|val-Normal-Attack Range = 440
+|val-Normal-Attack Frequency = 227f <sub>7.57 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 38f <sup>1.27s</sup><br>(53f <sup>1.77s</sup> backswing)
+|val-Normal-Recharge Time = 106.67 ~ 97.87 seconds
+|val-Normal-MaxHP = 48,450 HP
+|val-Normal-MaxAttack = 12,750 damage<br>(1,685.02 DPS)
+|val-Evolved-Health = 48,450 HP
+|val-Evolved-Attack Power = 12,750 damage<br>(1,685.02 DPS)
+|val-Evolved-Attack Range = 440
+|val-Evolved-Attack Frequency = 227f <sub>7.57 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 38f <sup>1.27s</sup><br>(53f <sup>1.77s</sup> backswing)
+|val-Evolved-Recharge Time = 106.67 ~ 97.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni804 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/805.html
+
+----
+{{CatNav|Sonic|Knuckles}}
+----
+
+{{Sonic the Hedgehog}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Explosion Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Curse ability]]

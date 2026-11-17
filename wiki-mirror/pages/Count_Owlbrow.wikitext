@@ -1,0 +1,95 @@
+'''Count Owlbrow''' (まゆげ伯爵 ''Mayu-ge Hakushaku'', '''Count Mayu-ge''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Special Events|Event Stages]]. He was added in [[Version 4.3 Update|Version 4.3]]. In [[The Battle Cats Unite!]], he was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Count Owlbrow
+|image = E 198.png
+|appearance = [[HALLOWEEN EVENT#All Hallows Road|All Hallows Road]]<br>
+[[Elite Corps (Insane)]]<br>
+[[Heavenly Tower/Floor 12|Heavenly Tower - Floor 12]]<br>
+[[Infernal Tower/Floor 12|Infernal Tower - Floor 12]]
+|money drop = 1,600¢ - 6,320¢
+}}
+
+==Enemy==
+This variant of [[Owlbrow]] is much harder than the original, it has over 16 times the health of its predecessor, has longer range than a lot of ranged attackers, and over double the attack power. Additionally, it can knockback and slow your cats. This enemy can be a pain, particularly in [[Elite Corps (Insane)|Elite Corps]], where it will interfere with your efforts to kill the mighty [[Mega Cat (Enemy)|Mega Cat]]. Another notable difference is that it has 2 knockbacks, so you can tell when this enemy has below 50% health.
+
+==Strategy==
+Decent meatshielding will be needed to stall this owl while a stack of ranged cats does work against its massive health. Anti-floating cats with good range like [[Kotatsu Cat (Super Rare Cat)|Kotatsu Cat]], [[Nurse Cat (Uber Rare Cat)|Nurse Cat]], or [[Sodom (Uber Rare Cat)|Sodom]] can effectively control it. Even then, sometimes they'll spawn in swarms, proving to be a dangerous threat.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*Event All-Stars Excellent Celebration!: [[Elite Corps (Insane)]] (200%)
+*[[Halloween Party!##02 Sugar Struggle|#02 Sugar Struggle]]:
+**[[Silver-Tooth Caramel]] (100%)
+**[[Living Cookie Man]] (200%)
+**[[Decrepit Gingerbread House]] (400%)
+*[[Halloween Party!##04 Mischievous Schemes|#04 Mischievous Schemes]]: [[Standstill Earth]] (500%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2015 Debut]] (150%)
+*[[Memories of 2024]]: [[Memories of Fall]] (200%)
+*[[Lunar New Year#Memories of 2025|Memories of 2025]]: [[Memories of Fall (2025)|Memories of Fall]] (200%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 12|Floor 12]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 12|Floor 12]] (200%)
+*[[Golden Tower]]: [[Golden Tower/Floor 12|Floor 12]] (100%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.7]] (150%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.8]] (300%)
+*[[03 Demons' Night Out|#03 Demon's Night Out]]:
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.1]] (50%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.2]] (133%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.3]] (216%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.4]] (299%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.5]] (382%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.6]] (465%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.7]] (548%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.8]] (631%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.9]] (714%)
+**[[03 Demons' Night Out/Parade Lv.1~10|Parade Lv.MAX]] (800%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[HALLOWEEN EVENT#All Hallows Road|All Hallows Road]]:
+**[[Trick or Treatment]] (100%)
+**[[Hello Hello Halloween]] (200%)
+**[[Harvest Festival]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Count Owlbrow
+|Health = 166000
+|Attack Power = 6600
+|Attack Range = 370
+|Attack Type = Area
+|Time Between Attacks = 116
+|Movement Speed = 12
+|Knockback = 2
+|Foreswing = 44
+|Backswing = 72
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+198 e.png|Count Owlbrow's spritesheet
+Dracowlaattackanimation.gif|Count Owlbrow's attack animation
+IdleDrac-Owl-A.gif|Count Owlbrow's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/200.html
+
+----
+{{EnemyNav|Pumpkin Doge|Vlad de Sable}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

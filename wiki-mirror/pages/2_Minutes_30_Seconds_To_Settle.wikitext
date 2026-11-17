@@ -1,0 +1,56 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Red Wind|White Wind|Dark Wind}}
+'''2 Minutes 30 Seconds To Settle''' is the fifth stage in [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]].
+
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn182 04 c ja.png]]
+|stage location = [[File:Mapname182 c ja.png]]
+|energy = 100
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|Red Wind|150%
+|White Wind|150%
+|Dark Wind|150%}}
+|boss = {{Magnification|White Wind|150%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''8,000''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''6,500''': 100,000 XP<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 3,000 XP
+|width = 5,500
+|max enemies = 12
+|jpname = 2 Minutes 30 Seconds To Settle
+|script = 2分30秒の決着
+|romaji = 2 Fun 30 Byō no Kecchaku
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]
+|difficulty = ★4
+|prev stage = [[Attack of the 2500m Turf]]
+|next stage = [[Middle and Long Distance Elite]]
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[Red Wind]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[White Wind]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Dark Wind]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[White Wind]] spawns as the boss.
+**3 [[White Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Red Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Dark Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+A fairly easy stage, even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units, the enemy serves practically no threat at all. Although it is recommended to have them to beat at least at level 1+5 so that they have some survivability.
+
+==Reference==
+*https://battlecats-db.com/stage/s02182-05.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

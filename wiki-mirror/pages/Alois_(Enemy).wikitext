@@ -1,0 +1,90 @@
+:''This article is about the enemy. For the Cat Unit, see [[Alois (Super Rare Cat)]].''
+'''Alois''' (アロイス) is an enemy that only appears in the [[Merc Storia Collaboration Event]]. He was added in [[Version 3.8 Update|Version 3.8]].
+
+{{Enemy Info
+|name = Alois
+|image = E 165.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 250¢ - 987¢
+}}
+
+==Enemy==
+Rather weak on low buffs, but then he becomes a bigger threat on high buff stages in which he can push with a surprising ease.
+
+==Strategy==
+He tends to come in swarms and create a good pushing DPS so tankers aren't the best choice, instead use midrange units with area attack like [[Salon Cat (Rare Cat)|Paris]] to counter them.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Awakens!]]: [[Merc Awakens (Veteran)]] (400%)
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]:
+**[[Alois: Cowards Flight]] (100%)
+**[[Hearscht: Silver Beast]] (1,400%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (1,000%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (1,100%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (1,200%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (1,300%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (1,400%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (1,440%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (1,480%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (1,520%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (1,560%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (1,600%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]:
+**[[Alois: Cowards Flight]] (100%)
+**[[Hearscht: Silver Beast]] (1,400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Alois
+|Health = 5000
+|Attack Power = 450
+|Attack Range = 270
+|Attack Type = Area
+|Time Between Attacks = 54
+|Movement Speed = 12
+|Knockback = 2
+|Foreswing = 28
+|Backswing = 26
+|Ability = -
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|165 e ja.png|MediaWiki:Custom-AnimationViewer/165 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+165 e.png|Alois' spritesheet (EN/KR)
+165 e ja.png|Alois' spritesheet (JP)
+165 e tw.png|Alois's spritesheet (TW)
+IdleAlois.gif|Alois' moving animation
+</gallery>
+
+==Trivia==
+*Unlike most other enemies in the Merc Storia Collaboration Event, Alois is based on a colored version of their Cat Version's Normal Form instead of the Evolved Form.
+
+==Reference==
+*https://battlecats-db.com/enemy/167.html
+
+----
+{{EnemyNav|Cornelia|Healer Cat}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

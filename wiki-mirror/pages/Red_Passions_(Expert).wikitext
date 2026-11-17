@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Sir Seal|B.B.Bunny|One Horn|J.K. Bun Bun}}
+:''Following [[Version 15.2 Update|Version 15.2]], the only way to access this stage is by playing the relevant difficulty line in [[Catfruit Buffet]].''
+'''Red Passions (Expert)''' is the second stage in [[Growing Red]]. Upon completion, the player has a 10% chance to enter [[Catfruit Jubilee]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Red Passions (Expert).png]]
+|stage location = [[File:Mapname002 b en.png]]
+|energy = 200
+|catamins = [[Catamin]] [A] x3
+|enemy castle hp = 360,000 HP
+|enemies = {{Magnification|Sir Seal|800%
+|B.B.Bunny|800%
+|One Horn|800%}}
+|boss = {{Magnification|J.K. Bun Bun|150%}}
+|treasure = - [[Catfruit|Red Catfruit]] +1 (45%, unlimited)<br>
+- [[Catfruit|Red Catfruit Seed]] +1 (43.5%, unlimited)<br>
+- [[Catfruit|Epic Catfruit]] +1 (1.5%, unlimited)
+|XP = 4,000 XP
+|width = 4,500
+|max enemies = 8
+|jpname = Red of Passion (Expert)
+|script = 紅の情熱 激ムズ
+|romaji = Kurenai no Jōnetsu Geki Muzu
+|star = 1
+|event = [[:Category:Catfruit Stages|Catfruit Stages]]
+|event-chapter = [[Growing Red]]
+|difficulty = ★6
+|prev stage = [[Red Passions (Hard)]]
+|next stage = [[Red Passions (Insane)]]<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)
+|occurrence = every Wednesday
+}}
+
+==Battleground==
+*1 [[Sir Seal]] spawns.
+*3 [[Sir Seal]]s spawn after 16.67 seconds<sup>500f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 50 seconds<sup>1,500f</sup>, delay 10~30 seconds<sup>300f~900f</sup>.
+*Infinite [[Sir Seal]]s spawn after 60 seconds<sup>1,800f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[J.K. Bun Bun]] spawns as the boss.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**2 [[One Horn]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+Using [[:Category:Anti-Red Cats|Anti-Red Cats]] like [[Sushi Cat (Super Rare Cat)|Sushi Cat]] and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] to tank and deal damage respectively can take care of this stage pretty easily. Add [[:Category:Meatshield-class Cats|Meatshields]] and Anti-Red [[:Category:Crowd-Controller-class Cats|Crowd-Controllers]] if you find yourself struggling.
+
+==Walkthrough==
+{{Walkthrough
+|K0n-hToEO4A|Kithro Games|No anti-Reds
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01099-02.html
+
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Event Stages]]

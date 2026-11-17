@@ -1,0 +1,73 @@
+<includeonly><onlyinclude><infobox theme="doc">
+	<title source="Title">
+		<default>{{{title|{{#titleparts:{{PAGENAME}}|1|2}}}}}</default>
+	</title>
+	<image source="Image file">
+		<default>{{{image|}}}</default>
+		<alt source="Image caption">
+			<default>{{{caption|}}}</default>
+		</alt>
+		<caption source="Image caption">
+			<default>{{{caption|}}}</default>
+		</caption>
+	</image>
+	<group>
+		<header>Information</header>
+		<data source="Type">
+			<label>Type</label>
+			<default>Lua Module</default>
+		</data>
+		<data source="Status">
+			<label>Status</label>
+			<format>{{{Status}}}</format>
+			<default>{{{status|}}}</default>
+		</data>
+		<!-- <data>
+			<label>{{i18n|getMsg|testharness|suite-status}}</label>
+			<default>{{#invoke:infobox|luaSuite}}</default>
+		</data> -->
+		<data source="Description">
+			<label>Description</label>
+			<default>{{{description|}}}</default>
+		</data>
+		<data source="Author">
+			<label>Author</label>
+			<default>{{{author|}}}</default>
+		</data>
+		<data source="Using code by">
+			<label>Using code by</label>
+			<default>{{{using code by|}}}</default>
+		</data>
+		<data source="Other attribution">
+			<label>Other attribution</label>
+			<default>{{{other attribution|}}}</default>
+		</data>
+		<!-- <data source="Updated">
+			<label>{{i18n|getMsg|infobox|updated}}</label>
+			<default>{{#ifeq:{{FULLPAGENAME}}|Template:Infobox Lua||{{FormatDate
+			| {{Updated|Module:{{#if:1| {{{code| {{common|title|Overrides = Code, code}} }}} }}}}
+			| dateformat = {{{dateformat|}}}
+			| uselang    = {{i18n|getLang}}
+			}}}}</default>
+			<format>{{FormatDate
+			| {{{Updated}}}
+			| dateformat = {{{Dateformat|{{{dateformat|}}}}}}
+			| uselang    = {{i18n|getLang}}
+			}}</format>
+		</data> -->
+		<data source="Code">
+			<label>Code</label>
+			<!-- <default>[[Module:{{#if:1| {{{code| {{common|title|Overrides = Code, code}} }}} }}]]</default>
+			<format>[[Module:{{#if:1| {{{code| {{common|title|Overrides = Code, code}} }}} }}]]</format> -->
+		</data>
+		<data source="Dependencies">
+			<label>Dependencies</label>
+			<default>{{{dependencies|}}}</default>
+		</data>
+		<data source="Examples">
+			<label>Examples</label>
+			<default>{{{examples|}}}</default>
+		</data>
+	</group>
+</infobox></onlyinclude></includeonly>
+See [[w:dev:Template:Infobox Lua]].

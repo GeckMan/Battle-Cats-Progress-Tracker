@@ -1,0 +1,57 @@
+{{DISPLAYTITLE:Squid Bender}}
+{{RemovedContent}}
+{{EnemiesAppearing|Squid|Sardine|Young Man Mola}}
+:''For the new stage, see [[Squid Bender]].''
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn011 00 c en.png]]
+|stage location = [[File:Mapname011 c en.png]]
+|energy = 30
+|enemy castle hp = 4,000 HP
+|enemies = {{Magnification|Squid|100%
+|Sardine|100%
+|Young Man Mola|100%}}
+|boss = {{Magnification|Young Man Mola|100%}}
+|score reward = '''9,000''': 50,000 XP<br>
+'''7,000''': 15,000 XP<br>
+'''3,500''': 5,000 XP<br>
+'''500''': Cat CPU +1
+|XP = 900 XP
+|width = 4,000
+|max enemies = 12
+|jpname = Eating too much squid
+|script = イカ食べ過ぎ
+|romaji = Ika tabe-sugi
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|event-chapter = [[Survive! Mola Mola! Collaboration Event#Survive! Mola Mola!|Survive! Mola Mola!]]
+|prev stage = N/A
+|next stage = [[Mean Morning Sunbeams (Old)|Mean Morning Sunbeams]]
+}}
+
+==Battleground==
+*5 [[Squid (Enemy)|Squid]] spawn after 3 seconds<sup>90f</sup>, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+*5 [[Sardine (Enemy)|Sardines]] spawn after 8 seconds<sup>240f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+*Infinite [[Sardine (Enemy)|Sardines]] spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*When the base reaches 90% HP:
+**1 [[Young Man Mola (Enemy)|Young Man Mola]] spawns as the boss.
+**1 [[Squid (Enemy)|Squid]] spawns.
+**1 [[Sardine (Enemy)|Sardine]] spawns.
+*When the base reaches 80% HP:
+**2 [[Sardine (Enemy)|Sardines]] spawn, delay 6.67 seconds<sup>200f</sup>.
+**2 [[Young Man Mola (Enemy)|Young Man Molas]] spawn, delay 10 seconds<sup>300f</sup>.
+*When the base reaches 70% HP:
+**3 [[Squid (Enemy)|Squid]] spawn, delay 6.67 seconds<sup>200f</sup>.
+**3 [[Sardine (Enemy)|Sardines]] spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Young Man Mola (Enemy)|Young Man Molas]] spawn, delay 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02011-01.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

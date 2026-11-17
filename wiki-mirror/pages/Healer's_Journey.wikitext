@@ -1,0 +1,68 @@
+{{EnemiesAppearing|Celesse|Nono|Olga|Norn|Yoichi}}
+'''Healer's Journey''' is the second stage in [[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn008 01 c en.png]]
+|stage location = [[File:Mapname008 c en.png]]
+|energy = 60
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Celesse|100%
+|Nono|100%
+|Olga|100%
+|Norn|100%}}
+|boss = {{Magnification|Yoichi|100%}}
+|enemies2 = {{Magnification|Celesse|150%
+|Nono|150%
+|Olga|150%
+|Norn|150%}}
+|boss2 = {{Magnification|Yoichi|150%}}
+|enemies3 = {{Magnification|Celesse|200%
+|Nono|200%
+|Olga|200%
+|Norn|200%}}
+|boss3 = {{Magnification|Yoichi|200%}}
+|enemies4 = {{Magnification|Celesse|300%
+|Nono|300%
+|Olga|300%
+|Norn|300%}}
+|boss4 = {{Magnification|Yoichi|300%}}
+|treasure = - [[Healer (Special Cat)|Healer]] (2%, 1 time)
+|score reward = '''7,000''': 20,000 XP<br>
+'''4,000''': 10,000 XP<br>
+'''500''': 5,000 XP
+|XP = 1,800 XP
+|width = 3,600
+|max enemies = 5
+|jpname = Healer's Journey
+|script = 療術士の旅立ち
+|romaji = Ryōjutsu-shi no tabidachi
+|star = 4
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]]
+|difficulty = ★2
+|prev stage = [[Cats After All]]
+|next stage = [[Teraphobic]]
+}}
+
+==Battleground==
+*3 [[Celesse (Enemy)|Celesses]] spawn after 3.33 seconds<sup>100f</sup>, delay 1.33~4 seconds<sup>40f~120f</sup>.
+*Infinite [[Celesse (Enemy)|Celesses]] spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Nono (Enemy)|Nonos]] spawn after 20 seconds<sup>600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Olga (Enemy)|Olga]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Norn (Enemy)|Norns]] spawn after 43.33 seconds<sup>1,300f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Yoichi (Enemy)|Yoichi]] spawns as the boss.
+**10 [[Celesse (Enemy)|Celesses]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**4 [[Norn (Enemy)|Norns]] spawn, delay 1.33~3.33 seconds<sup>40f~100f</sup>.
+
+==Strategy==
+An easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02008-02.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

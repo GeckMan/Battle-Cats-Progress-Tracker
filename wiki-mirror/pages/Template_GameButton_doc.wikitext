@@ -1,0 +1,14 @@
+{{Documentation}}
+
+==Parameters==
+The template requires two parameters. The first is the page to link to, and the second is the full file name of the image to use as the icon. The optional parameters are listed below.
+*<code>alt</code> - Alternative text to display instead of the linked page name
+*<code>scale</code> - Scales down the text horizontally to fit on the button
+*<code>size</code> - For manually setting the image size rather than automatically having it fit within a defined box
+*<code>translate</code> - For adjusting the position of the image for images like enemy bases
+
+==Usage==
+<pre>{{GameButton|Cat Dictionary|CatDic.png}}</pre>
+
+===Result===
+{{GameButton|Cat Dictionary|CatDic.png}}

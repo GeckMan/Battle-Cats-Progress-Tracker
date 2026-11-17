@@ -1,0 +1,107 @@
+'''Tanjiro Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained when beating any stage in [[Demon Slayer: Kimetsu no Yaiba Collaboration Event#Demon Slayer Corps Final Selection|Demon Slayer Corps Final Selection]] during the [[Demon Slayer: Kimetsu no Yaiba Collaboration Event]]. He was added in [[Version 15.1 Update#Version 15.1.1 Update|Version 15.1.1]].
+
+{{Cat Info
+|ID = 848
+|rarity = RR
+|name1 = Tanjiro Cat
+|name2 = Tanjiro Cat CC
+}}
+
+==Evolution==
+Evolves into '''Tanjiro Cat CC''' at level 10.
+
+==Strategy/Usage==
+Tanjiro Cat is such a pathetic excuse of a crowd-controller that it's almost sad, really. His 2.5 second [[Slow]] doesn't even cover his own 4.63 second attack rate, even if you count [[Blood Fruit]] which increases the Slow duration to 3 seconds. But on top of that, he only has a 50% chance to even land a Slow on an enemy in the first place.
+
+Then there's his range. He gets outranged by even a basic peon like [[Sir Seal]]. That's all that needs to be said. The only notable things he has over pre-[[True Form]] [[Witch Cat (Rare Cat)|Witch Cat]] are Area Attack and Health, as well as lower cost, but Witch Cat's True Form covers the health problem, and Area Attack doesn't matter when his only viable targets are [[Bore]], [[One Horn]] and [[Red Cyclone]]. His mediocre health and god-awful DPS combined with his 7.87-second recharge make even his use in [[Underground Labyrinth]] questionable.
+
+{{Job|Classification = User Rank Dump & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 848
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni848 f00.png
+|Image2 = Uni848 c00.png
+|Name1 = Tanjiro Cat
+|Desc1 = Trains hard to join the Demon Slayer Corps, but his<br>lack of decisiveness makes it hard to choose an outfit.<br>Area attacks might Slow Red enemies.
+|Name2 = Tanjiro Cat CC
+|Desc2 = Trains their Breathing Techniques to grow stronger,<br>but dozes off after meditating in cozy places.<br>Area attacks might Slow Red enemies.
+|Name1 (JP) = ネコ炭治郎 (Neko Tanjirō, Tanjirō Cat)
+|Desc1 (JP) = 憧れの鬼殺隊へ入隊するため鍛錬に励むネコ<br>判断が遅く、着る服を選んでいるうちに日が暮れる<br>たまに赤い敵の動きを遅くする(範囲攻撃)
+|Transl1 (JP) = A Cat who admires and trains diligently to join the Demon Slayer Corps<br>Slow to make decisions, the day ends while it's still choosing what to wear<br>Occasionally slows the movement of Red enemies (Area Attack)
+|Name2 (JP) = ネコ炭治郎CC (Neko Tanjirō Shīshī, Tanjirō Cat CC)
+|Desc2 (JP) = 強くなるために呼吸法を体得したネコ<br>居心地の良い場所で集中すると寝息に変わる<br>たまに赤い敵の動きを遅くする(範囲攻撃)
+|Transl2 (JP) = A Cat who mastered a Breathing Style to become stronger<br>When it concentrates in a good, comfortable place, its breath turns into snores<br>Occasionally slows the movement of Red enemies (Area Attack)
+|Name1 (TW) = 炭治郎貓
+|Desc1 (TW) = 為了加入憧憬的鬼殺隊而努力鍛鍊的貓咪<br>判斷很慢，只是選要穿的衣服就選到天黑<br>有時候會使紅色敵人動作變慢(範圍攻擊)
+|Name2 (TW) = 炭治郎貓CC
+|Desc2 (TW) = 為了變強而學會呼吸法的貓咪。但在舒適的<br>地方集中精神時，呼吸聲就會變成鼾聲<br>有時候會使紅色敵人動作變慢(範圍攻擊)
+|Name1 (KR) = 고양이 탄지로
+|Desc1 (KR) = 동경하는 귀살대에 입대하기 위해 단련에 힘쓰는 고양이<br>판단이 느려서 입을 옷을 고르다가 날이 저물어 버린다<br>가끔 빨간 적의 움직임을 느리게 한다 (범위 공격)
+|Name2 (KR) = 고양이 탄지로CC
+|Desc2 (KR) = 강해지기 위해 호흡법을 체득한 고양이<br>편한 장소에서 집중하다 보면 어느새 졸고 있다<br>가끔 빨간 적의 움직임을 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 440¢
+*Chapter 2: 660¢
+*Chapter 3: 880¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tanjiro Cat
+|Normal Base HP = 620
+|Normal Base AP = 170
+|Normal Range = 160
+|Normal Foreswing = 20
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 79
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 440
+|Normal Recharge = 500
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub>
+|Evolved Name = Tanjiro Cat CC
+|Evolved Base HP = 620
+|Evolved Base AP = 170
+|Evolved Range = 160
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 79
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 440
+|Evolved Recharge = 500
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni848 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/849.html
+
+----
+{{CatNav|Li'l Sakonji Urokodaki|Nezuko Cat}}
+----
+
+{{Demon Slayer}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]

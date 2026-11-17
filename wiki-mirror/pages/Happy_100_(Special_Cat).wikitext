@@ -1,0 +1,124 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Happy 100 (Enemy)]].''
+'''Happy 100''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 5.10 Update|Version 5.10]] and can be obtained by logging in during the [[Crash Fever Collaboration Event]].
+
+{{Cat Info
+|ID = 328
+|rarity = EX
+|name1 = Happy 100
+|name2 = Heartful Happy 100
+}}
+
+==Evolution==
+Evolves into '''Heartful Happy 100''' at level 10.
+
+==Strategy/Usage==
+With low health and attack power and not enough range to be anything special, this unit is easily replaceable if you have progressed through [[Empire of Cats]] Chapter 1. Don't bother trying to use her past then.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 328
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni328 f00.png
+|Image2 = Uni328 c00.png
+|Name1 = Happy 100
+|Desc1 = A chipper and bright computer virus,<br>appearing as a guest from Crash Fever.<br>Attacks have Area effect.
+|Name2 = Heartful Happy 100
+|Desc2 = Her dream is to infect the world's systems with<br>joy. Appearing as a guest from Crash Fever.<br>Attacks have Area effect.
+|Name1 (JP) = ハッピー100 (Happī 100, Happy 100)
+|Desc1 (JP) = クラッシュフィーバーから参戦！<br>いつも幸せそうなコンピューターウィルス(範囲攻撃)
+|Transl1 (JP) = Joining the war from Crash Fever!<br>Always-happy computer virus (Area Attack)
+|Name2 (JP) = 幸せ連鎖子ハッピー100 (Shiawase Rensa-ko Happī 100, Happiness Chain Happy 100)
+|Desc2 (JP) = クラッシュフィーバーから参戦！<br>「ハッピー！」という口癖で周りに<br>幸せを振りまく(範囲攻撃)
+|Transl2 (JP) = Joining the war from Crash Fever!<br>Around with the habit of saying "Happy!"<br>being sprinkled (Area Attack)
+|Name1 (TW) = 哈皮100
+|Desc1 (TW) = 來自Crash Fever！<br>總是看起來很幸福的電腦病毒（範圍攻擊）
+|Name2 (TW) = 幸福連鎖哈皮100
+|Desc2 (TW) = 來自Crash Fever！<br>嘴邊總是掛著「哈皮！」<br>不斷向身邊散播幸福（範圍攻擊）
+|Name1 (KR) = 해피100
+|Desc1 (KR) = 크래시 피버에서 참전!<br>언제나 행복해보이는 컴퓨터 바이러스 (범위 공격)
+|Name2 (KR) = 행복 연쇄소녀 해피100
+|Desc2 (KR) = 크래시 피버에서 참전!<br>언제나「♡해피♡」를 입버릇처럼 말하며<br>행복을 온 세상에 뿌리는 소녀 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 480¢
+*Chapter 2: 720¢
+*Chapter 3: 960¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Happy 100
+|Normal Base HP = 400
+|Normal Base AP = 50
+|Normal Range = 300
+|Normal Foreswing = 38
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 75
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 480
+|Normal Recharge = 640
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Heartful Happy 100
+|Evolved Base HP = 400
+|Evolved Base AP = 50
+|Evolved Range = 300
+|Evolved Foreswing = 38
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 75
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 480
+|Evolved Recharge = 640
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 50 damage<br>(20 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 75f <sub>2.5 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 38f <sup>1.27s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Normal-Recharge Time = 21.33 ~ 12.53 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 850 damage<br>(340 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 850 damage<br>(340 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 75f <sub>2.5 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 38f <sup>1.27s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 21.33 ~ 12.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni328 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/329.html
+
+----
+{{CatNav|Belial|Eggy Cat}}
+----
+
+{{Crash Fever}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]

@@ -1,0 +1,124 @@
+'''Homura Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. She was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 295
+|rarity = RR
+|name1 = Homura Cat
+|name2 = Magical Girl Homura Cat
+}}
+
+==Evolution==
+Evolves into '''Magical Girl Homura Cat''' at level 10.
+
+==Strategy/Usage==
+Due to Homura's short range, lack of spammability, low Freeze chance, Single Attack, and low stats, Homura is unable to hold even a candle to [[Flower Cat (Special Cat)|Bombercat]]. Provided you have Bombercat, you will never use her, and instead use her for obtaining a higher [[User Rank]]. Even if you have not gained Bombercat, Homura's long recharge time, low stun chance, and weak stats makes it so that it is probably best to set her aside and progress further in the game to get Bombercat.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 295
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni295 f00.png
+|Image2 = Uni295 c00.png
+|Name1 = Homura Cat
+|Desc1 = A Cat who admires cool and mysterious Magical<br>Girls. She's still too excitable to pull it off though...<br>Might Freeze Dark enemies.
+|Name2 = Magical Girl Homura Cat
+|Desc2 = This Magical Cat made a contract with a suspicious<br>white creature. Don't be intimidated by her toy gun.<br>Might Freeze Dark enemies.
+|Name1 (JP) = ネコほむら (Neko Homura, Homura Cat)
+|Desc1 (JP) = クールで謎の多い魔法少女に憧れるネコ<br>ミステリアスな雰囲気がどうしても出せない<br>たまに黒い敵の動きを一瞬止める
+|Transl1 (JP) = Cat who longs to be a cool and mysterious magical girl.<br>Can't help but create a mysterious atmosphere<br>Sometimes stops the movement of Dark enemies for a moment
+|Name2 (JP) = 魔法少女ネコほむら (Mahō Shōjo Neko Homura, Magical Girl Homura Cat)
+|Desc2 (JP) = 怪しげな白い生き物と契約したネコ魔法少女<br>違法改造したゴム鉄砲で職務質問された<br>たまに黒い敵の動きを一瞬止める
+|Transl2 (JP) = Cat Magical Girl who made a contract with a mysterious white creature<br>Questioned on duty with an illegally modified rubber gun<br>Sometimes stops the movement of Dark enemies for a moment
+|Name1 (TW) = 小焰貓
+|Desc1 (TW) = 一隻對謎幻冷酷魔法少女有憧憬的貓咪<br>但無論如何都呈現不出謎幻的感覺<br>有時候會讓黑色敵人瞬間動作停止
+|Name2 (TW) = 魔法少女小焰貓
+|Desc2 (TW) = 跟一隻詭異白色生物簽訂契約的魔法少女貓咪<br>因非法改造橡皮槍在路上被警盤問<br>有時候會讓黑色敵人瞬間動作停止
+|Name1 (KR) = 고양이 호무라
+|Desc1 (KR) = 쿨한 미스테리 마법소녀를 동경하는 고양이<br>미스테리한 느낌은 아무리해도 나지 않는다…<br>가끔 검은 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 마법소녀 고양이 호무라
+|Desc2 (KR) = 수상한 하얀색 생물과 계약을 맺은 마법소녀<br>불법 개조한 고무 철포때문에 불심 검문을 당했다<br>가끔 검은 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 440¢
+*Chapter 2: 660¢
+*Chapter 3: 880¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Homura Cat
+|Normal Base HP = 900
+|Normal Base AP = 200
+|Normal Range = 120
+|Normal Foreswing = 23
+|Normal Attack Cooldown = 41
+|Normal Attack Length = 51
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 440
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Magical Girl Homura Cat
+|Evolved Base HP = 900
+|Evolved Base AP = 200
+|Evolved Range = 200
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 41
+|Evolved Attack Length = 36
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 440
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 900 HP
+|val-Normal-Attack Power = 200 damage<br>(93.75 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 64f <sub>2.13 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 23f <sup>0.77s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 15,300 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(1,593.75 DPS)
+|val-Evolved-Health = 15,300 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(1,619.05 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni295 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/296.html
+
+----
+{{CatNav|Madoka Cat|Sayaka Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

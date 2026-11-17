@@ -1,0 +1,59 @@
+{{EnemiesAppearing|Haniwanwan|Sir Rel|Shadow Boxer K|Heavenly Hippoe|Doge|Shibalien|Sir Seal|Grand Mage Mimon}}
+'''Stage 113''' is the 113th and final stage in [[Underground Labyrinth]]. It always appears as the 100th and final stage.
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+|stage location = [[File:Mapname000 l en.png]]
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Haniwanwan|100%
+|Sir Rel|150%
+|Shadow Boxer K|300%
+|Heavenly Hippoe|400%
+|Doge|4,000%
+|Shibalien|4,800%
+|Sir Seal|4,000%}}
+|boss = {{Magnification|Grand Mage Mimon|100%}}
+|width = 6,000
+|max enemies = 10
+|star = 1
+|event-chapter = [[Underground Labyrinth]]
+|prev stage = [[Underground Labyrinth/Stage 112|Stage 112]]
+|next stage = N/A
+}}
+
+==Battleground==
+*3 [[Haniwanwan]]s spawn after 50 seconds<sup>1,500f</sup>, delay 66.67~73.33 seconds<sup>2,000f~2,200f</sup>.
+*10 [[Sir Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*4 [[Shadow Boxer K]]s spawn after 50 seconds<sup>1,500f</sup>, delay 63.33~66.67 seconds<sup>1,900f~2,000f</sup>.
+*6 [[Heavenly Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*Infinite [[Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*10 [[Sir Seal]]s spawn after 10 seconds<sup>300f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+*1 [[Grand Mage Mimon]] spawns as the boss after 10 seconds<sup>300f</sup>.
+
+==Strategy==
+The limited spawns of the main threats aren't the toughest challenge. Rather, the real source of difficulty in this stage is the Labyrinth's obstructive mechanics that lock useful units out of rotation, since 99 additional stages must be cleared before it. The absolute minimum amount of units needed is '''343''', but this is deep into statistical impossibility ''(around 1 in a duovigintillion chance, or 10^69)''. Realistically, around '''474''' units are necessary on average, and having more than 500 for safety is highly recommended.
+
+In general, it is important to partition your units wisely, as to never run out of any particular role (meatshield, attacker with high range, barrier breaker, critical hitter etc.), but also using strong units when needed, as to not lose stages (each loss will remove two units, and they cannot be recovered for future attempts). Ultimately, it is perfectly possible (and highly recommended) to keep 6-9 units saved up for this stage specifically and replace whoever was trapped in the previous stage with those.
+
+As for this stage, it consists of a timed boss, limited strong-ish peons and unlimited weaker peons. The win condition is to outlast the strong peons, turning it into a slow endurance battle.
+
+The following units or unit types work well, should the player have them.
+
+*'''Meatshields''' with as many of the following features as possible: high speed, low cost and recharge, 45000 health or more against traitless, survive chance, dodge chance against any relevant trait, enough health to tank at least some peons, slow resist/immunity. [[Stone Cat (Rare Cat)|Stone Cat]], [[Pogo Cat (Rare Cat)|Jiangshi Cat]] and [[Sushi Cat (Super Rare Cat)|Roe Cats]] are good examples, but 2-3 cheaper meatshields will do the job too.
+*'''Attackers'''; ideally covering all the following needs as a collective:
+**[[:Category:Anti-Relic Cats|anti-Relics]] such as [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]] for the Haniwanwan and Sir Rels, who are both able to push a lot if left unchecked. Slapsticks also have the stats for general use.
+**[[:Category:Anti-Relic Cats|anti-Darks]]. Shadow Boxer K has 240,000 HP, an infuriating number of knockbacks and sky-high DPS; defeating all 4 of them quickly is essential to victory. [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] is recommended, but [[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]] and [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]] also work well, if they are available at this point.
+**Strong attackers in general. Mimon will often clear the way for her peons, making it imperative to keep killing said peons before they accumulate. Here are a few suggestions: [[Mer-Cat (Rare Cat)|Cameraman Cat]] (cost efficient and survives a lethal strike), [[Salon Cat (Rare Cat)|Cyborg Cat]] (may also survive and has better range and speed), [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] (helps with money and deals serious damage), [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]] (ignores Haniwanwan's waves and quickly takes down the angels), [[Ancient Egg: N101 (Rare Cat)|Courier Cat]].
+**[[:Category:Wave Attack Cats|Wave]]/[[:Category:Surge Attack Cats|Surge]] and [[:Category:Long Distance Cats|Long Distance]] attackers. They will use their potentially short lifetime to hit more peons and chip at the boss, resulting in precious knockbacks on her happening earlier. [[Talents|Talented]] Pizza Cat in particular works well due to powerful base attacks and wave attacks, in addition to huge damage against Shadow Boxer K in particular. [[Slime Cat (Rare Cat)|Jelly Dumpling Cat]] could also work, but most of the peons can outrange and one-shot him.
+*[[Dogumaru (Special Cat)|Reborn Warrior Dogumaru]] can help tank the boss, as well as holding off the relics. His attacks are also decently powerful, so he can generally leave an impact.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]] works well to freeze the Sir Rel and Haniwanwans, dealing considerable damage on top. Additionally, while the surge does have an element of luck, it is fairly likely to hit and damage some peons and/or the boss herself.
+*Anti-traitless cats in general. Notably, [[EPICFEST (Gacha Event)|EPICFEST]] ubers can do a large number on Mimon should they be able to reach her. [[Mightycat (Rare Cat)|Ironcat]], [[Glass Cat (Rare Cat)|Glass Cat]] and [[Lone Cat and Kitten (Rare Cat)|Tourist Cat]] are all effective if an opening is created.
+*Burst damage units can quickly clear a tough peon composition, reversing the momentum of the fight before being killed. These are mostly [[:Category:Uber Rare Cats|Ubers]], including [[Kuu (Uber Rare Cat)|Divine Kuu]], [[Kalisa (Uber Rare Cat)|Divine Kalisa]], [[Shining Amaterasu (Uber Rare Cat)|Almighty Amaterasu]], [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]] and a lot more.
+*Units with extremely high range and at least some effect on the enemy army, from simple non-terrible damage to valuable debuffs ([[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], some [[Tales of the Nekoluga (Gacha Event)|Lugas]], [[Radiant Aphrodite (Uber Rare Cat)|Megaphrodite]] etc.)
+
+==Reference==
+*https://battlecats-db.com/stage/s33000-113.html
+
+{{SpecialStages List}}
+[[Category:Underground Labyrinth stages]]

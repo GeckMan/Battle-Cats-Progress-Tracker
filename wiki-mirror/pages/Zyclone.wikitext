@@ -1,0 +1,111 @@
+'''Zyclone''' (アンデッドサイクロン, ''Andeddo Saikuron'', '''Undead Cyclone''') is a [[:Category:Zombie Enemies|Zombie]] [[:Category:Cyclones|Cyclone]] introduced in [[Unholy Tempest (Insane)|The Rolling Dead]]. He was added in [[Version 5.6 Update|Version 5.6]].
+
+{{Enemy Info
+|name = Zyclone
+|image = E 294.png
+|first appearance = [[Unholy Tempest (Insane)|The Rolling Dead]]<br>
+'''ZL''': [[Broadleaf Yo-Yo|Sub-chapter 18 - Broadleaf Yo-yo]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Like most [[:Category:Cyclones|Cyclone]]s, Zyclone is slow and short-ranged, but has unmatched attack rate, health, and DPS. He revives infinitely with 4 seconds between revives, but can't burrow, and isn't a [[:Category:Floating Enemies|Floating]] enemy either.
+
+==Strategy==
+It is suggested to use crowd-controllers and ranged attackers, just like against the other Cyclones. Some of the most accessible options for crowd-control include [[Gardener Cat (Rare Cat)|Gardener Cat]], [[Welterweight Cat (Rare Cat)|Welterweight Cat]] and [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]]. However, since this Cyclone can revive infinitely, it is advised to either bring [[:Category:Zombie Killer Cats|Zombie Killers]] (which the aforementioned anti-Zombie units all possess) or to have [[:Category:Rusher-class Cats|rushers]] that can slip by before he revives, such as [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] or [[Express Cat (Super Rare Cat)|Maglev Cat]]. Landing the finishing blow with a Zombie Killer is of utmost importance before Zyclone becomes a prominent threat, especially in [[Revenge of the Unholy (Merciless)|Revenge of the Unholy]], where three of them spawn.
+
+If you have [[Frontline Assault IRON LEGION (Gacha Event)|Frontline Assault IRON LEGION]] units, [[Sarukani (Uber Rare Cat)|Sarukani]], [[Bunny & Canard (Uber Rare Cat)|Disciple Psychoduck]] or other good [[:Category:Anti-Zombie Cats|anti-Zombie]] [[:Category:Uber Rare Cats|Uber Rares]], Zyclone becomes much easier to deal with, as they all have good anti-Zombie abilities that can be put to great use.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 294
+|Type = Zombie
+|Image1 = Enemy icon 294.png
+|Name1 = Zyclone
+|Desc1 = The spirits of those defeated by the<br>Battle Cats have gathered into a<br>vengeful storm. How can you defeat<br>a whirlwind that's already dead?
+|Name1 (JP) = アンデッドサイクロン (Andeddo Saikuron, Undead Cyclone)
+|Desc1 (JP) = 戦いに敗れた者たちの怨念が集まって出来た大渦<br>近づくもの全ての命を掻き取ることで<br>自らの命を何度も蘇らせるおぞましい敵。<br>ゾンビキラーの力で蘇生を防げるというが…
+|Transl1 (JP) = A great vortex formed by the gathered grudges of those defeated in battle.<br>By absorbing the life of all who get near, this creepy enemy can resurrect itself over and over again.<br>It is said that the power of Zombie Killers can prevent revival...
+|Name1 (TW) = 不死旋風
+|Desc1 (TW) = 集結了所有戰敗者們怨念的大渦。<br>靠近他者性命將全部被奪走，<br>自己卻可重生多次的可怕敵人。<br>有「終結不死」能力就可能防止他的重生…
+|Name1 (KR) = 언데드 사이클론
+|Desc1 (KR) = 전쟁에서 패한 자들의 원념이 모여 생긴 거대 소용돌이<br>다가오는 자 모두의 목숨을 빼앗아 자신의 목숨을<br>몇 번이고 이어나가는 무시무시한 적. 좀비 킬러의<br>힘으로 이 끈질긴 목숨을 끊어버릴 수 있을 것인가...
+}}
+
+==Variants==
+{{Variant
+|original = Zyclone
+|inherit_desc = true
+|Li'l Zyclone
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 18-2: [[Broadleaf Yo-Yo]] (100%)
+*Stage 32-5: [[Arbor Aflame]] (120%)
+
+===[[Special Events|Event Stages]]===
+*The Rolling Dead: [[Unholy Tempest (Insane)]] (100%)
+*[[Deadly Carnival III]]: [[Tornado Carnival III (Deadly)]] (100%)
+*[[The Dead Keep Rolling]]:
+**[[Wrath of the Unholy (Deadly)]] (100%)
+**[[Revenge of the Unholy (Merciless)]] (100%)
+*[[Heavenly Tower]]:
+**[[Heavenly Tower/Floor 38|Floor 38]] (100%)
+**[[Heavenly Tower/Floor 42|Floor 42]] (100%)
+*[[Golden Tower]]:
+**[[Golden Tower/Floor 38|Floor 38]] (100%)
+**[[Golden Tower/Floor 42|Floor 42]] (100%)
+*[[Otherworld Colosseum#Cheap Labor 2|Otherworld Colosseum]]: [[Round 5 (Cheap Labor 2)|Round 5]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Zyclone
+|Health = 1222222
+|Attack Power = 44444
+|Attack Range = 120
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 4
+|Knockback = 4
+|Foreswing = 1
+|Backswing = 4
+|Ability = {{AbilityIcon|Revive}} [[Revive|Revives]] with 100% HP after being dead for 120f <sub>4 seconds</sub> (unlimited)
+|Element = Zombie
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+294 e.png|Zyclone's spritesheet
+IdleZyclone.gif|Zyclone's moving animation
+Medal 025.png|Zyclone on the ''Typhoon Z'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Since he has bones in his vortex, was formed from the gathered spirits of those defeated by the Battle Cats, and is nearly unbeatable without [[:Category:Zombie Killer Cats|Zombie Killers]], Zyclone may have been inspired by ''[[wikipedia:Gashadokuro|Gashadokuro]]'', a nigh-indestructible skeletal ''[[wikipedia:Yōkai|yōkai]]'' formed from the gathered bones of those who died in battle or of starvation/famine without being buried.
+*The repetition of the digit 4 in his stats refers to how the kanji for four (四) and the kanji for death (死) can both be read as ''shi''.
+*He is the first [[:Category:Zombie Enemies|Zombie]] enemy to have more than 1 revive.
+*He has the highest DPS of all Zombies and is tied with his nephew [[Li'l Zyclone]] for the fastest attack rate of all Zombies.
+*As Li'l Zyclone's uncle, Zyclone is the only full-sized [[:Category:Cyclones|Cyclone]] to have a confirmed gender.
+*He and Li'l Zyclone are the only Cyclones to have a moving eye, as well as the only Cyclones who do not blink.
+*Prior to [[Version 5.8 Update|Version 5.8]], Zyclone was limited to reviving 99 times.
+
+==Reference==
+*https://battlecats-db.com/enemy/296.html
+
+----
+{{EnemyNav|Lord Gravey|Xmas Pudding Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zombie Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Revive ability]]
+[[Category:Cyclones]]

@@ -1,0 +1,96 @@
+{{EnemiesAppearing|DONALD MORDEN|MARS PEOPLE|MARCO|ALLEN O'NEIL|SV-001|HUGE HERMIT|HI-DO}}
+'''Devils on the Doorstep (Insane)''' is the only stage in [[Metal Slug Collaboration Event#Super Metal Slug Defense|Super Metal Slug Defense]].
+
+{{Stage Info
+|stage name = [[File:rc052.png]]
+[[File:Mapsn022 00 c en.png]]
+|stage location = [[File:Mapname022 c en.png]]
+|energy = 100
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|MARS PEOPLE|1,000%
+|MARCO|1,000%
+|ALLEN O'NEIL|1,500%
+|SV-001|1,000%
+|HUGE HERMIT|600%}}
+|boss = {{Magnification|DONALD MORDEN|100%
+|HI-DO|100%}}
+|enemies2 = {{Magnification|MARS PEOPLE|1,500%
+|MARCO|1,500%
+|ALLEN O'NEIL|2,250%
+|SV-001|1,500%
+|HUGE HERMIT|900%}}
+|boss2 = {{Magnification|DONALD MORDEN|150%
+|HI-DO|150%}}
+|enemies3 = {{Magnification|MARS PEOPLE|2,000%
+|MARCO|2,000%
+|ALLEN O'NEIL|3,000%
+|SV-001|2,000%
+|HUGE HERMIT|1,200%}}
+|boss3 = {{Magnification|DONALD MORDEN|200%
+|HI-DO|200%}}
+|enemies4 = {{Magnification|MARS PEOPLE|2,000%
+|MARCO|2,000%
+|ALLEN O'NEIL|3,000%
+|SV-001|2,000%
+|HUGE HERMIT|1,200%}}
+|boss4 = {{Magnification|DONALD MORDEN|200%
+|HI-DO|200%}}
+|treasure = - [[HYAKUTARO (Rare Cat)|HYAKUTARO]] (100%, 1 time)
+|score reward = '''3,500''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''2,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''1,500''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''500''': 250,000 XP
+|XP = 3,000 XP
+|width = 5,500
+|max enemies = 8
+|jpname = Devil Reverse Morden Super Hard
+|script = デビルリバース・モーデン 超激ムズ
+|romaji = Debiru Ribāsu Mōden Chō Geki Muzu
+|star = 4
+|event = [[Metal Slug Collaboration Event]]
+|event-chapter = [[Metal Slug Collaboration Event#Super Metal Slug Defense|Super Metal Slug Defense]]
+|difficulty = ★8
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[DONALD MORDEN (Enemy)|DONALD MORDEN]] spawns as the boss.
+*10 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 10 seconds<sup>300f</sup>, delay 4~10 seconds<sup>120f~300f</sup>.
+*10 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 13.33 seconds<sup>400f</sup>, delay 6~18 seconds<sup>180f~540f</sup>.
+*3 [[MARCO (Enemy)|MARCOs]] spawn after 20 seconds<sup>600f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[ALLEN O'NEIL (Enemy)|ALLEN O'NEIL]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[SV-001 (Enemy)|SV-001]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[SV-001 (Enemy)|SV-001]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[HI-DO (Enemy)|HI-DO]] spawns as the boss.
+**Infinite [[MARCO (Enemy)|MARCOs]] spawn, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+**Infinite [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+**3 [[HUGE HERMIT (Enemy)|HUGE HERMITs]] spawn, delay 40 seconds<sup>1,200f</sup>.
+**Infinite [[SV-001 (Enemy)|SV-001s]] spawn, delay 66.67~100 seconds<sup>2,000f~3,000f</sup>.
+**1 [[ALLEN O'NEIL (Enemy)|ALLEN O'NEIL]] spawns.
+**3 [[MARCO (Enemy)|MARCOs]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[MARCO (Enemy)|MARCOs]] spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+To get a high score, high damage [[:Category:Area Attack Cats|Area Attackers]] such as [[Salon Cat (Rare Cat)|Cyborg Cat]] are recommended.
+
+==Walkthrough==
+{{Walkthrough
+|-ddYaeYEqoo|Novastrala|
+}}
+
+
+==Gallery==
+<gallery>
+Devils on the Doorstep Hard+++.png|Old stage difficulty
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/stage/s02022-01.html
+
+{{Metal Slug}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

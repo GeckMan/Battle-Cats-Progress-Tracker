@@ -1,0 +1,117 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Honeyto-kun''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 6.8 Update|Version 6.8]] and can be obtained during the [[Honey Toast Café Akihabara Collaboration Event|Honey Toast Café Akihabara]] collaboration event.
+
+{{Cat Info
+|ID = 398
+|rarity = EX
+|name1 = Honeyto-kun
+|name2 = Honeyto-kun & Cat
+}}
+
+==Evolution==
+Evolves into '''Honeyto-kun & Cat''' at level 10.
+
+==Strategy/Usage==
+Honeyto is more or less a weaker [[Rover Cat (Rare Cat)|Rover Cat]], the only differences being an additional knockback and higher cooldown. These weaknesses make Honeyto worse at tanking Aliens due to low endurance and replaceability. While it may be fine early into [[Into the Future]] regardless, it may as well be enemy feed most of the time, both literally and figuratively. A lack of [[Immune to Warp]] too helps nothing, as such an ability becomes a common occurrence with Alien enemies starting with [[Cats of the Cosmos]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 398
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni398 f00.png
+|Image2 = Uni398 c00.png
+|Name1 (JP) = ハニトンくん (Haniton-kun, Honeyto-kun)
+|Desc1 (JP) = ハニトーのマスコットキャラが参戦！<br>ハニトー星からやってきたキャラクター。夢は地球に<br>ハニトーランドを作る事！エイリアンにめっぽう強い
+|Transl1 (JP) = Hanito's mascot character joins the fight!<br>This character comes from the planet Hanito. His dream is to build a<br>Hanito Land on Earth! Very Strong against Aliens
+|Name2 (JP) = ハニトンくん&にゃんこ (Haniton-kun & Nyanko, Honeyto-kun & Cat)
+|Desc2 (JP) = ハニトーのマスコットキャラが参戦！<br>新たなバリエーションを求めてにゃんこをトッピング<br>エイリアンにめっぽう強い
+|Transl2 (JP) = Hanito's mascot character joins the fight!<br>Topped with a kitten for a new variation<br>Hanito Land on Earth! Very Strong against Aliens
+}}
+
+==Cost==
+*Chapter 1: 200円
+*Chapter 2: 300円
+*Chapter 3: 400円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Honeyto-kun
+|Normal Base HP = 600
+|Normal Base AP = 66
+|Normal Range = 120
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 33
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 200
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Honeyto-kun & Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 66
+|Evolved Range = 120
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 33
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 200
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 66 damage<br>(60 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 33f <sub>1.1 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 1,122 damage<br>(1,020 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 1,122 damage<br>(1,020 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 33f <sub>1.1 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni398 f00}}
+
+==Trivia==
+*Honeyto-kun is based off of [[wikipedia:Honey toast|honey toast]].
+
+==Reference==
+*https://battlecats-db.com/unit/399.html
+
+----
+{{CatNav|Sakura Sonic|Mentori}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Honey Toast Café Akihabara]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Anti-Alien Cats]]

@@ -1,0 +1,61 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Doge|Snache|Those Guys|Hippoe|Doge Dark|Mooth}}
+'''Storage Servers''' is the third stage in [[Google Android Collaboration Event#To the Future|To the Future]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn003 02 c en.png]]
+|stage location = [[File:Mapname003 c en.png]]
+|energy = 75
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%
+|Hippoe|100%
+|Doge Dark|100%}}
+|boss = {{Magnification|Mooth|100%}}
+|enemies2 = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%
+|Hippoe|150%
+|Doge Dark|150%}}
+|boss2 = {{Magnification|Mooth|150%}}
+|enemies3 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Hippoe|200%
+|Doge Dark|200%}}
+|boss3 = {{Magnification|Mooth|200%}}
+|treasure = - [[Droid Cat (Rare Cat)|Droid Cat]] (12%, 1 time)
+|XP = 2,250 XP
+|width = 4,200
+|max enemies = 10
+|jpname = Storage Server
+|script = ストレージサーバ
+|romaji = Sutorēji Sāba
+|star = 3
+|event = [[Google Android Collaboration Event]]
+|event-chapter = [[Google Android Collaboration Event#To the Future|To the Future]]
+|difficulty = ★3
+|prev stage = [[Cloud Services]]
+|next stage = [[On Demand]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 2~8 seconds<sup>60f~240f</sup>.
+*100 [[Snache]]s spawn after 10.67 seconds<sup>320f</sup>, delay 13.33~40 seconds<sup>400f~1,200f</sup>.
+*4 [[Hippoe]]s spawn after 8 seconds<sup>240f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*5 [[Doge Dark]]s spawn after 60 seconds<sup>1,800f</sup>, delay 60~100 seconds<sup>1,800f~3,000f</sup>.
+*1 [[Mooth]] spawns as the boss.
+*When the base reaches 99% HP:
+**200 [[Those Guys]] spawn, delay 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02003-03.html
+
+{{Google Android}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

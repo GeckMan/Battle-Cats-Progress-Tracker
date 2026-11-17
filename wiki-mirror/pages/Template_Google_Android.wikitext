@@ -1,0 +1,34 @@
+{{#invoke:Navbox|main
+|template = Template:Google Android
+|title = [[Google Android Collaboration Event]]
+|navbox_class = android
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Droid Cat (Rare Cat)|Droid Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Sakura Android (Enemy)|Sakura Android]]
+
+|header3 = Stages
+|group3 = To the Future
+|list3 =
+*[[Architecture]]
+*[[Cloud Services]]
+*[[Storage Servers]]
+*[[On Demand]]
+*[[Bug Squashing]]
+*[[Bookmarkers]]
+*[[Solid State Rock]]
+*[[Fiber Cookie]]
+
+|group4 = Droid Awakes!
+|list4 =
+*[[ParaDroid (Expert)]]
+*[[ParaDroid (Insane)]]
+}}<templatestyles src="Google Android/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Google Android]]}}<noinclude>[[Category:Navboxes]]</noinclude>

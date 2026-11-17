@@ -1,0 +1,118 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''For the enemy encountered in the [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event]], see [[Kitarou (Enemy)]].''
+'''Kitarou''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.1 Update|Version 8.1]] and can be obtained during the [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event]].
+
+{{Cat Info
+|ID = 453
+|rarity = EX
+|name1 = Kitarou
+|name2 = GeGeGe no Kitarou
+}}
+
+==Evolution==
+Evolves into '''GeGeGe no Kitarou''' at level 10.
+
+==Strategy/Usage==
+Kitatou can help for the [[Zombie Outbreaks]] in [[Empire of Cats]], as he's capable of killing the Zombies quickly. However, because of his pathetic stats and very long recharge time, he will be of no use anywhere else.
+
+{{Job|Classification = Midranger & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 453
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni453 f00.png
+|Image2 = Uni453 c00.png
+|Name1 (JP) = きたろう (Kitarō, Kitarou)
+|Desc1 (JP) = ゆるゲゲから参戦！<br>妖怪の中でもエリートである幽霊族の子孫<br>ゾンビに超ダメージを与える
+|Transl1 (JP) = Joining the war from YuruGeGe!<br>The descendant of the ghost tribe, the elite among yokai<br>Super damage to Zombies
+|Name2 (JP) = ゲゲゲの鬼太郎 (Gegege no Onitarō, GeGeGe no Kitarou)
+|Desc2 (JP) = ゆるゲゲから参戦！<br>強力なリモコン下駄と底知れない妖力を持つ<br>ゾンビに超ダメージを与える
+|Transl2 (JP) = Joining the war from YuruGeGe!<br>Has powerful remote-control geta sandals and unfathomable sorcery power<br>Super damage to Zombies
+}}
+
+==Cost==
+*Chapter 1: 300円
+*Chapter 2: 450円
+*Chapter 3: 600円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kitarou
+|Normal Base HP = 700
+|Normal Base AP = 140
+|Normal Range = 325
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 97
+|Normal Attack Length = 51
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 2400
+|Normal Attack Type = Single
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = GeGeGe no Kitarou
+|Evolved Base HP = 700
+|Evolved Base AP = 175
+|Evolved Range = 350
+|Evolved Foreswing = 14
+|Evolved Attack Cooldown = 111
+|Evolved Attack Length = 82
+|Evolved Speed = 11
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 2400
+|Evolved Attack Type = Single
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 700 HP
+|val-Normal-Attack Power = 140 damage<br>(41.58 DPS)
+|val-Normal-Attack Range = 325
+|val-Normal-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Normal-Recharge Time = 80 ~ 71.2 seconds
+|val-Normal-MaxHP = 11,900 HP
+|val-Normal-MaxAttack = 2,380 damage<br>(706.93 DPS)
+|val-Evolved-Health = 11,900 HP
+|val-Evolved-Attack Power = 2,975 damage<br>(714 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 125f <sub>4.17 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 14f <sup>0.47s</sup><br>(68f <sup>2.27s</sup> backswing)
+|val-Evolved-Recharge Time = 80 ~ 71.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni453 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/454.html
+
+----
+{{CatNav|Primordial Cat|Medama-Oyaji}}
+----
+
+{{Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Zombie Killer Cats]]

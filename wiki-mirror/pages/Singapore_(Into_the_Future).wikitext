@@ -1,0 +1,133 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Singapore (Into the Future)/Outbreak|here]].''
+'''Singapore''' is the 22nd stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc024.png]]
+|stage location = [[File:Singapore.png]]
+'''Into the Future'''
+|energy = 50
+|energy2 = 60
+|energy3 = 70
+|enemy castle hp = 80,000 HP
+|enemy castle hp2 = 120,000 HP
+|enemy castle hp3 = 160,000 HP
+|enemies = {{Magnification|Doge|400%
+|B.B.Bunny|400%
+|Pigge|400%
+|Squire Rel|400%
+|Snache|400%
+|Those Guys|400%
+|Shy Boy|300%}}
+|boss = {{Magnification|Those Guys|400%}}
+|enemies2 = {{Magnification|Doge|800%
+|B.B.Bunny|800%
+|Pigge|800%
+|Squire Rel|800%
+|Snache|800%
+|Those Guys|800%
+|Shy Boy|600%}}
+|boss2 = {{Magnification|Those Guys|800%}}
+|enemies3 = {{Magnification|Doge|1,200%
+|Snache|1,200%
+|Those Guys|1,200%
+|Squire Rel|1,200%
+|Pigge|1,200%
+|B.B.Bunny|1,200%
+|Bore|200%}}
+|boss3 = {{Magnification|Those Guys|1,200%}}
+|treasure = - [[Treasure|Peranakan Bowl]]
+|treasure2 = - [[Treasure|Peranakan Bowl]]
+|treasure3 = - [[Treasure|Peranakan Bowl]]
+|score reward = '''7,000''': [[Cat Food]] +10<br>
+'''5,000''': +67,500 XP
+|score reward2 = '''8,000''': [[Cat Food]] +10<br>
+'''6,500''': +101,250 XP
+|score reward3 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': +135,000 XP
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 10
+|XP = 7,300 XP
+|width = 5,200
+|jpname = Singapore
+|script = シンガポール
+|romaji = Shingapōru
+|jptreasure = Mini Moai statue
+|twname = Singapore
+|twscript = 新加坡
+|twromaji = Xīnjiāpō
+|twtreasure = Nyonya Groceries
+|krname = Singapore
+|krscript = 싱가포르
+|krromaji = Sing-gapoleu
+|krtreasure = Kaya Jam
+|chapter = [[Into the Future]]
+|prev stage = [[Philippines (Into the Future)|Philippines]]
+|next stage = [[Australia (Into the Future)|Australia]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Doge|B.B.Bunny|Pigge|Squire Rel|Snache|Those Guys|Shy Boy}}
+*5 [[Doge]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Pigge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*5 [[Squire Rel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Snache]]s spawn after 50 seconds<sup>1,500f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*5 [[Squire Rel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Pigge]]s spawn after 90 seconds<sup>2,700f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[Those Guys]] spawn after 100 seconds<sup>3,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Squire Rel]]s spawn after 120 seconds<sup>3,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 90% HP:
+**1 [[Those Guys]] spawns as the boss.
+**2 [[Shy Boy]]s spawn, delay 30 seconds<sup>900f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Doge|B.B.Bunny|Pigge|Squire Rel|Snache|Those Guys|Shy Boy}}
+*5 [[Doge]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Pigge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*5 [[Squire Rel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Snache]]s spawn after 50 seconds<sup>1,500f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*5 [[Squire Rel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Pigge]]s spawn after 90 seconds<sup>2,700f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[Those Guys]] spawn after 100 seconds<sup>3,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Squire Rel]]s spawn after 120 seconds<sup>3,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 90% HP:
+**1 [[Those Guys]] spawns as the boss.
+**2 [[Shy Boy]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Doge|Snache|Those Guys|Squire Rel|Pigge|B.B.Bunny|Bore}}
+*10 [[Doge]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Snache]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 30 seconds<sup>900f</sup>.
+*5 [[Squire Rel]]s spawn after 31.67 seconds<sup>950f</sup>, delay 30 seconds<sup>900f</sup>.
+*5 [[Squire Rel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 30 seconds<sup>900f</sup>.
+*When the base reaches 90% HP:
+**1 [[Those Guys]] spawns as the boss.
+**Infinite [[Pigge]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**1 [[Bore]] spawns.
+
+==Strategy==
+==='''Chapter 1 & 2'''===
+No [[:Category:Alien Enemies|Alien]] enemies are present here, so its a lot easier than previous stages.
+
+Use [[Tank Cat (Normal Cat)|Wall Cat]] to hold off the peons as you build your money. When Shy Boy spawns, use [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] and [[Bahamut Cat (Special Cat)|Bahamut Cat]] to deal heavy damage, while using your tanky attackers (e.g. [[Titan Cat (Normal Cat)|Jamiera Cat]], [[Fish Cat (Normal Cat)|Whale Cat]], [[Bath Cat (Super Rare Cat)|Bath Cat]]) to deal some quick damage.
+
+==='''Chapter 3'''===
+Almost the same, but the added Bore can be quite the pain if your cats aren't strong enough, so it is wise to bring [[:Category:Anti-Red Cats|anti-Red]] cats to [[Slow|slow]] or even stop its progress. [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] is a big help on this stage, since a majority of the enemies here are Red, and you should have him at a high level anyways. If one still struggles, bringing more anti-red attackers such as [[Fish Cat (Normal Cat)|Fish Cat]]'s Normal and Crazed variants.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-22.html
+*https://battlecats-db.com/stage/s03004-22.html
+*https://battlecats-db.com/stage/s03005-22.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

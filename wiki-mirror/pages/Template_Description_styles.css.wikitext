@@ -1,0 +1,110 @@
+.unit-desc-table > tbody > .hideme ~ tr {
+	display: none;
+}
+
+.unit-desc .tabber__header {
+	box-shadow: none;
+}
+
+.unit-desc .tabber__tabs {
+	width: max-content;
+	padding-right: 10px;
+	border-radius: 10px 10px 0 0;
+	background: var(--bg-color-creamy-yellow);
+    box-shadow: 0px 55px 20px -45px var(--bg-color-light-orange) inset;
+	gap: 5px;
+}
+
+.unit-desc .tabber__tabs::before {
+	content: "Version:";
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    border-radius: 10px 10px 0 0;
+    font-weight: bold;
+}
+
+.unit-desc .tabber__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.75rem;
+    min-width: 3rem;
+    margin: 5px 0;
+	border-radius: 8px;
+	background-color: var(--bg-color-orange3);
+	color: #fff;
+	font-weight: bold;
+	box-shadow: none;
+	box-sizing: border-box;
+}
+
+.unit-desc .tabber__tab[aria-selected="false"] {
+	background-color: #888;
+}
+
+@media (hover: hover) {
+	.unit-desc .tabber__tab:hover {
+		filter: brightness(0.9);
+	}
+}
+
+.unit-desc-table {
+	position: relative;
+	width: 100%;
+	margin: 0;
+	padding: 5px;
+	border: 0;
+	border-radius: 0 10px 10px 10px;
+	background: var(--bg-color-creamy-yellow);
+}
+
+.unit-desc-table .unit-id,
+.unit-desc-table .unit-type {
+	margin: 0;
+	padding: 3px;
+	background: var(--bg-color-orange);
+	color: #fff;
+}
+
+.unit-desc-table .unit-type > a {
+	color: #fff;
+}
+
+.unit-desc-table .unit-id {
+	border-radius: 5px 0 0 5px;
+}
+
+.unit-desc-table .unit-type {
+	border-radius: 0 5px 5px 0;
+}
+
+.unit-desc-table .unit-name {
+	padding: 1px 10px;
+	background-color: var(--bg-color-orange3);
+	color: #fff;
+}
+
+.unit-desc-table .desc-label {
+	height: 25px;
+	background: var(--bg-color-light1);
+	border: 1px solid #3a3a3a;
+}
+
+.unit-desc-table .desc-text {
+	background: var(--bg-color-light3);
+	border: 1px solid #3a3a3a;
+}
+
+.unit-desc .unit-id {
+	width: min(180px, 25vw);
+}
+
+.unit-desc .unit-image img {
+	/* skins decide to do weird things with images, !important just makes it
+	 * easier to manage */
+	max-width: min(128px, 25vw) !important;
+	max-height: min(128px, 25vw) !important;
+}
+
+/* [[Category:Template stylesheets]] */

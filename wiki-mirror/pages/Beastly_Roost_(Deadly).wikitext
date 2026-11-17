@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Shibalien|Metal One Horn|Kroxo|Croconator|Elizabeth the LVIth|Super Metal Hippoe}}
+'''Beastly Roost (Deadly)''' is the one of the many [[Enigma Stages]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn002 00 h en.png]]
+|stage location = [[File:Mapname002 h en.png]]
+|energy = 100
+|enemy castle hp = 220,000 HP
+|enemies = {{Magnification|Shibalien|1,000%
+|Metal One Horn|200%
+|Kroxo|1,000%
+|Croconator|100%
+|Elizabeth the LVIth|600%}}
+|boss = {{Magnification|Super Metal Hippoe|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +3 (10%, unlimited)<br>
+- [[Cat Capsule|Cat Ticket]] +2 (27%, unlimited)<br>
+- [[Cat Capsule|Cat Ticket]] +1 (63%, unlimited)
+|stage type = [[Enigma Stages|Enigma Stage]]
+|XP = 1,900 XP
+|width = 4,000
+|max enemies = 15
+|jpname = Monster Roost (Intense)
+|script = モンスターのねぐら 極ムズ
+|romaji = Monsutā no Negura Geki Muzu
+|star = 1
+|event-chapter = Ticket Hunter
+|max clears = 1
+|difficulty = ★8
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Shibalien]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Metal One Horn]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Super Metal Hippoe]] spawns as the boss.
+**10 [[Kroxo]]s spawn, delay 20 seconds<sup>600f</sup>.
+**Infinite [[Croconator]]s spawn, delay 1 second<sup>30f</sup>.
+**1 [[Elizabeth the LVIth]] spawns.
+**1 [[Metal One Horn]] spawns.
+
+==Strategy==
+Using a critter such as [[Jurassic Cat (Rare Cat)|Catasaurus]], a wave blocker such as [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] and an unit with good damage, such as [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] is recommended. [[Hoop Cat (Rare Cat)|Hoopmaster Cat]] and [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] are good crowd-controllers for this stage. Additionally, since Elizabeth the LVIth is buffed a decent amount, all [[Anti-unstarred Alien Treasures|Crystals]] from [[Into the Future]] should be obtained before attempting this stage.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|Version 11.5]], Kroxo was set to spawn every 20~2 seconds instead of just 20. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s25002-01.html
+
+{{EnigmaStages}}
+[[Category:Enigma Stages]]

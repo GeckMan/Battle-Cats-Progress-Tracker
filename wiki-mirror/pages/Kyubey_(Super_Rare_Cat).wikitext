@@ -1,0 +1,128 @@
+:''For the enemies encountered in the [[Puella Magi Madoka Magica Collaboration Event]], see [[Kyuubei]] or [[Incubator]].''
+'''Kyubey''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. He was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 293
+|rarity = SR
+|name1 = Kyubey
+|name2 = Kyubey & Cat
+}}
+
+==Evolution==
+Evolves into '''Kyubey & Cat''' at level 10.
+
+==Strategy/Usage==
+Kyubey seems to be a great anti-Alien tank on paper, due to having more than 75k health against them at just level 30 with all [[Enigma Fruit]] Treasures maxed, which is high, especially considering his low cost and recharge time, which can be further aided by research combos. He also works as an attacker against enemies he can outrange, such as [[Nimoy Bore]] and [[Cyberhorn]], as he packs a fair amount of DPS, and his 50% Survive chance potentially allows him to either continue dealing damage or to dismiss one more hit. However, Kyubey's three Knockbacks also weakens his ability to hold the line, even if his range allows him to be a secondary meatshield, as he will stagger and falter easily to damage, with each withstanding less damage than an equal-level [[Rover Cat (Rare Cat)|Catellite]], who also has Warp Immunity. Kyubey also faces competition from [[Ancient Egg: N108 (Super Rare Cat)|Soap Cat]] once it becomes available, as it has only one knockback, higher effective health and a useful Weaken abiliy.
+
+{{Job|Classification = Tanker & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 293
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni293 f00.png
+|Image2 = Uni293 c00.png
+|Name1 = Kyubey
+|Desc1 = From Madoka Magica The Movie -Rebellion-!<br>Make a contract with him and your wish will come true.<br>Tough vs. Aliens, might Survive a lethal attack
+|Name2 = Kyubey & Cat
+|Desc2 = From Madoka Magica The Movie -Rebellion-!<br>He seeks pure-hearted girls dreaming of a miracle.<br>Tough vs. Aliens, might Survive a lethal attack
+|Name1 (JP) = キュゥべえ (Kyūbē, Kyubey)
+|Desc1 (JP) = 魔法少女まどか☆マギカから参戦！<br>契約をすると願い事を１つ叶えてくれる<br>エイリアンに打たれ強く、まれに生き残る
+|Transl1 (JP) = Joining from Puella Magi Madoka ☆ Magica!<br>Grants a wish if you make a contract with it<br>Tough against Aliens, occasionally Survives
+|Name2 (JP) = キュゥべえ&ネコ (Kyūbē & Neko, Kyubey & Cat)
+|Desc2 (JP) = 魔法少女まどか☆マギカから参戦！<br>叶えたい望みがある少女を探している<br>エイリアンに打たれ強く、まれに生き残る
+|Transl2 (JP) = Joining from Puella Magi Madoka ☆ Magica!<br>Looking for a girl who has a wish she wants to grant<br>Tough against Aliens, occasionally Survives
+|Name1 (TW) = 丘比
+|Desc1 (TW) = 從魔法少女小圓來參戰！<br>簽訂契約就可以實現你一個願望唷！<br>對上異星戰士很耐打，死前有機會存活
+|Name2 (TW) = 丘比&貓咪
+|Desc2 (TW) = 從魔法少女小圓來參戰！<br>尋找著有願望等待實現的少女<br>對上異星戰士很耐打，死前有機會存活
+|Name1 (KR) = 큐베
+|Desc1 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>계약하는 대신 소원 한 가지를 들어준다.<br>에이리언에 맷집이 좋고 드물게 살아남는다
+|Name2 (KR) = 큐베&고양이
+|Desc2 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>이루고 싶은 소망을 가진 소녀를 찾고 있는 중<br>에이리언에 맷집이 좋고 드물게 살아남는다
+}}
+
+==Cost==
+*Chapter 1: 440¢
+*Chapter 2: 660¢
+*Chapter 3: 880¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kyubey
+|Normal Base HP = 990
+|Normal Base AP = 390
+|Normal Range = 220
+|Normal Foreswing = 26
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 51
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 440
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Evolved Name = Kyubey & Cat
+|Evolved Base HP = 990
+|Evolved Base AP = 390
+|Evolved Range = 220
+|Evolved Foreswing = 26
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 51
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 440
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 990 HP
+|val-Normal-Attack Power = 390 damage<br>(229.41 DPS)
+|val-Normal-Attack Range = 220
+|val-Normal-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 26f <sup>0.87s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 16,830 HP
+|val-Normal-MaxAttack = 6,630 damage<br>(3,900 DPS)
+|val-Evolved-Health = 16,830 HP
+|val-Evolved-Attack Power = 6,630 damage<br>(3,900 DPS)
+|val-Evolved-Attack Range = 220
+|val-Evolved-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 26f <sup>0.87s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni293 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/294.html
+
+----
+{{CatNav|Kyoko Sakura|Madoka Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Lethal Strike Resistant Cats]]

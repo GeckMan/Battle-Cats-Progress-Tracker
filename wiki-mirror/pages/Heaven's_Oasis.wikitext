@@ -1,0 +1,95 @@
+{{EnemiesAppearing|Doge Dark|Gabriel|Gory Dark|Angelic Gory|R.Ost|Winged Pigge}}
+'''Heaven's Oasis''' is the sixth and final stage in [[Beyond the Savannah]]. [[Winged Pigge]] debuts here.
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn043 05 n en.png]]
+|stage location = [[File:Mapname043 n en.png]]
+|energy = 185
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Doge Dark|800%
+|Gabriel|400%
+|Gory Dark|200%
+|Angelic Gory|200%
+|R.Ost|200%}}
+|boss = {{Magnification|Winged Pigge|100%}}
+|enemies2 = {{Magnification|Doge Dark|960%
+|Gabriel|480%
+|Gory Dark|240%
+|Angelic Gory|240%
+|R.Ost|240%}}
+|boss2 = {{Magnification|Winged Pigge|120%}}
+|enemies3 = {{Magnification|Doge Dark|1,040%
+|Gabriel|520%
+|Gory Dark|260%
+|Angelic Gory|260%
+|R.Ost|260%}}
+|boss3 = {{Magnification|Winged Pigge|130%}}
+|treasure = - 351,500 XP (10%, 1 time)<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 3,515 XP
+|width = 4,500
+|max enemies = 6
+|jpname = The Drinking Fountain Closest to Heaven
+|script = 天国に一番近い水飲み場
+|romaji = Tengoku ni Ichiban Chikai Mizunomi-ba
+|star = 4
+|sub-chapter = [[Beyond the Savannah]]
+|difficulty = ★9
+|prev stage = [[Electrosafari]]
+|next stage = N/A
+}}
+
+==Battleground==
+*2 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 50~50.67 seconds<sup>1,500f~1,520f</sup>.
+*2 [[Gabriel]]s spawn after 10.67 seconds<sup>320f</sup>, delay 50~50.67 seconds<sup>1,500f~1,520f</sup>.
+*2 [[Doge Dark]]s spawn after 11.33 seconds<sup>340f</sup>, delay 50~50.67 seconds<sup>1,500f~1,520f</sup>.
+*2 [[Gabriel]]s spawn after 12 seconds<sup>360f</sup>, delay 50~50.67 seconds<sup>1,500f~1,520f</sup>.
+*1 [[Gory Dark]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Angelic Gory]] spawns after 35 seconds<sup>1,050f</sup>.
+*When the base reaches 99% HP:
+**1 [[Winged Pigge]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**Infinite [[Gabriel]]s spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**1 [[R.Ost]] spawns.
+**3 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Doge Dark]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**5 [[Doge Dark]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**5 [[Gabriel]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+
+==Strategy==
+Thanks to the enemy limit (6), the way the boss fight works is that you'll first see Winged Pigge with a group of Gabriels and Doge Darks, and meet R.Ost only ''after'' killing some of the peons. You can try taking advantage of this fact to make R.Ost spawn as late as possible, and thereby gain more time to face Winged Pigge alone.
+
+Unlike [[St. Pigge the 2nd]], Winged Pigge's attack has a piercing Omni Strike that hits units up to 340 range away from her, almost like a smaller, unavoidable version of [[Elizabeth the LVIth]]'s [[Wave Attack|waves]]. Combined with her 90% weaken, any attacker with under 340 range is effectively useless unless they are [[:Category:Cats with Weaken Immunity|immune to weaken]] or you use crowd-controllers to prevent Winged Pigge from attacking.
+
+==='''Recommended Units'''===
+*In general, strong ranged attackers with over 340 range (e.g., [[Lizard Cat (Normal Cat)|Dragon Cat]], [[Salon Cat (Rare Cat)|Paris Cat]], [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]]) should form the bulk of your lineup.
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: Capable of tanking Winged Pigge along with everything else in the stage very well.
+*[[Ancient Egg: N001 (Special Cat)|Haniwa Cat]]: Cheaper than [[Tank Cat (Normal Cat)|Era]][[Crazed Tank Cat (Super Rare Cat)|sers]] and capable of tanking R.Ost even better than Ramen.
+*[[Catway (Super Rare Cat)|Time Traveller Cat]]/[[Phantom Cat (Rare Cat)|Bubble Cat]]: [[:Category:Anti-Angel Cats|Anti-Angel]] attackers that outrange Winged Pigge. Time Traveller also targets the Doge Darks, is tankier and fares better against R.Ost, but cannot be used in {{4c}} and lacks Weaken Immunity. Bubble is also relatively hard to obtain before beating Stories of Legend, meaning you'll likely get it during Crowned difficulty.
+*[[Food Stall Cat (Rare Cat)|Cafeteria Cat]]: Although only obtainable in early November and only after beating Stories of Legend, it trivializes this stage on higher crown difficulties. It curses [[:Category:Angel Enemies|Angels]] while simultaneously having greater damage output than even [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]. Combine it with a few [[:Category:Area Attack Cats|Area Attackers]] to take down the R.Ost and some meatshields, and you can beat the stage easily.
+*[[Bakery Cat (Rare Cat)|Fried Chicken Cat]]: Difficult to obtain, as you need either very high-level [[:Category:Normal Cats|Normal Cats]] or certain [[:Category:Uber Rare Cats|Ubers]] to beat [[Babies First (Merciless)|Babies First]], but if you do have it, it can permanently curse Winged Pigge, disabling the main threat of the stage.
+*[[Ancient Egg: N110 (Rare Cat)|Farmboy Cat]]: Outranges Winged Pigge and has excellent slow uptime, making him the perfect crowd-controller for dealing with her.
+*Any [[:Category:Long Distance Cats|Long Distance units]] that can sufficiently hit Winged Pigge. Although most of them will not outrange Pigge's Omni Strike, the R.Ost will almost always be in front with Pigge behind, acting as a stepping stone. The best example would be Talented [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], who has enough range to stay safe from Winged Pigge's Omni-Strike and great damage against both Winged Pigge and R.Ost.
+
+==='''Recommended Ubers'''===
+*Any [[EPICFEST (Gacha Event)|EPICFEST]] Ubers: Can quickly take out the R.Ost, essentially removing all the stage's pushing power instantaneously. [[Kasli the Bane (Uber Rare Cat)|Kasli the Bane]] in particular is notable for being able to curse Winged Pigge, and [[Netherworld Nymph Lunacia (Uber Rare Cat)|Netherworld Nymph Lunacia]] is Strong Against Traitless and Angel enemies with the ability to Weaken them, reducing both threats' pushing power greatly.
+*[[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]]: Is Immune to Weaken, and at a decently high level can take enough punishment from R.Ost to get a hit off before being knocked back, taking massive chunks out of its health.
+*[[Lasvoss (Uber Rare Cat)|Ultimate Lasvoss/Lasvoss Reborn]]: Immune to Weaken and has a massive amount of damage per hit. If he lands a Savage Blow, then anywhere from a very large chunk to ALL of the R.Ost's health will disappear, depending on level of course.
+*[[Kintaro (Uber Rare Cat)|Kinrangers GigaForce]]: While their True Form isn't obtainable until after Stories of Legend, they can make the 2- and 3-Crown versions of this stage a joke as they have a high chance to curse and slow Winged Pigge with pretty good uptime.
+
+==Walkthrough==
+{{Walkthrough
+|BJVX5aM6ZLU|Nurse Wuffa|Rich Cat & Cat CPU
+}}
+
+==Trivia==
+*Heaven's Oasis's Japanese name, Tengoku ni Ichiban Chikai Mizunomi-ba (天国に一番近い水飲み場, "The Drinking Fountain Closest to Heaven"), may be a reference to ''[[wikipedia:ja:天国にいちばん近い島|Tengoku ni Ichiban Chikai Shima]]'' (天国に一番近い島, "''The Island Closest to Heaven''"), a travel diary by Katsura Morimura that was later adapted into a television drama and [[wikipedia:The Island Closest to Heaven|movie]].
+
+==Reference==
+*https://battlecats-db.com/stage/s00043-06.html
+
+{{LegendStages}}
+[[Category:Stories of Legend Stages]]
+[[Category:Sub-chapter 44 Stages]]

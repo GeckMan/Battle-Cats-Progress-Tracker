@@ -1,0 +1,313 @@
+All Cats have an innate Evade skill:
+
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |Icon
+! scope="col" |Name
+! scope="col" |Description
+! scope="col" |Skill Specs
+! scope="col" |SP Cost
+|-
+|[[File:Burgle evade.png]]
+|Evade
+|Escape the manor with the selected Cat, recovers 10% Willpower. Will not count towards Cats imprisoned.
+|Evade speed decreases with Slow debuff
+|0
+|}
+
+Besides Evade, most Burgle Cats have a secondary unique ability in battle. All these abilities require SP to use, which can be gained from exploring the Manor. Cats of higher rarities will have more effective abilities.
+
+Below is the list of abilities found in The Burgle Cats. Specs increase base on rarity of the burgle Cat. SP cost decreases linearly base on number of the Cat's duplicates and type of ability (MAX: 10 duplicates).
+
+{| class="article-table sortable" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+! scope="col" |Icon
+! scope="col" |Name
+! scope="col" |Description
+! scope="col" |Skill Specs
+! scope="col" |SP Cost
+|-
+|[[File:Img skillicon alarm.png]]
+|Alarm Clock
+|Set to sound a false alarm in X adjacent rooms after a short delay
+
+:Further Notice: The clock will direct all Doges in its alarm range into the room the clock is placed, due to Doge's behavior, any noise that causes during its trip to the false alarm room will not change its destination.
+|
+NN: 1 room
+
+RR: 2 rooms
+
+SR: 3 rooms
+
+UR: 7 rooms
+|33
+(22)
+|-
+|[[File:Img skillicon damagecut.png]]
+|Resilient
+|Willpower damage will be reduced by X%
+|
+NN: 5%
+
+RR: 10%
+
+SR: 15%
+
+UR: 20%
+|79
+(51)
+|-
+|[[File:Img skillicon damagekaihi.png]]
+|Artful Dodger
+|X% chance to avoid Willpower damage from Traps for Y seconds
+
+:Further notice: This skill only avoid will damage, traps still cause noise and inflict debuffs.
+|
+NN: 100%/3s
+
+RR: 100%/5s
+
+SR: 100%/7s
+
+UR: 100%/9s
+|82
+(53)
+|-
+|[[File:Img skillicon factorysearch.png]]
+|Endless Appetite
+|X random rooms on the Mini-Map will be checked for a Factory.
+
+:Explanation: This skill will always show Factory rooms when searching, once all 9 are found, further usage of this skill will have no effect. It will also let the player know if there is any trap in the Factory rooms.
+|
+NN: 2 rooms
+
+RR: 3 rooms
+
+SR: 4 rooms
+
+UR: 5 rooms
+|46
+(30)
+|-
+|[[File:Img skillicon fusumahanbetsu.png]]
+|Sharp-Eyed
+|Get a X% chance to detect a Fake Vault
+|NN: 35%
+RR: 45%
+
+SR: 55%
+
+UR: 70%
+|53
+(34)
+|-
+|[[File:Img skillicon fusumakanti.png]]
+|Clairvoyant
+|For X seconds, reveals the relative direction of a nearly Vault
+|
+NN: 3s
+
+RR: 5s
+
+SR: 7s
+
+UR: 9s
+|56
+(36)
+|-
+|[[File:Img skillicon hensou.png]]
+|Disguise Kit
+|Disguise yourself as a Doge for X seconds, become invulnerable
+
+:Further Notice: Stepping into any damaging trap will cancel the disguise.
+|
+NN: 5s
+
+RR: 6s
+
+SR: 7s
+
+UR: 8s
+|84
+(55)
+|-
+|[[File:Img skillicon jumpup.png]]
+|Agile
+|Vertical movement will improve by X%
+|
+NN: 5%
+
+RR: 10%
+
+SR: 15%
+
+UR: 20%
+|50
+(32)
+|-
+|[[File:Img skillicon nozokimi.png]]
+|Voyeur
+|Peek into a nearby room. Range increases with higher Rarity.
+|
+|46
+(30)
+|-
+|[[File:Img skillicon nukiashi.png]]
+|Barefeet
+|X% chance that moving up/down will create no Noise.
+|
+NN: 60%
+
+RR: 70%
+
+SR: 80%
+
+UR: 90%
+|62
+(40)
+|-
+|[[File:Img skillicon potion.png]]
+|Cure-All
+|Recovers X% of Willpower and Y% chance to cure debuffs.
+|
+NN: 2%/70%
+
+RR: 3%/80%
+
+SR: 4%/90%
+
+UR: 5%/100%
+|64
+(42)
+|-
+|[[File:Img skillicon shutteropen.png]]
+|Open Sesame
+|X% chance to open a closed shutter you touch.
+|
+NN: 40%
+
+RR: 60%
+
+SR: 80%
+
+UR: 100%
+|74
+(48)
+|-
+|[[File:Img skillicon speedup.png]]
+|Speedy
+|Horizontal movement will improve by X%.
+|
+NN: 5%
+
+RR: 10%
+
+SR: 15%
+
+UR: 20%
+|50
+(32)
+|-
+|[[File:Img skillicon trapsearch.png]]
+|Trap Sense (All)
+|A X% chance to reveal Traps in all rooms surrounding yours.
+|
+NN: 40%
+
+RR: 60%
+
+SR: 80%
+
+UR: 100%
+|45
+(29)
+|-
+|[[File:Img skillicon trapsearch tate.png]]
+|Trap Sense (Vertical)
+|A X% chance to reveal Trap rooms above or below you.
+|
+NN: 40%
+
+RR: 60%
+
+SR: 80%
+
+UR: 100%
+|46
+(30)
+|-
+|[[File:Img skillicon trapsearch yoko.png]]
+|Trap Sense (Horizontal)
+|A X% chance to reveal Trap rooms on your current floor.
+|
+NN: 40%
+
+RR: 60%
+
+SR: 80%
+
+UR: 100%
+|49
+(32)
+|-
+|[[File:Img skillicon wankohypnosis.png]]
+|Mesmerizing
+|Puts Doges to sleep. Effect area up with higher Rarity
+
+:Explanation: Puts Doges into a deep sleep, requiring two incidents of noise to wake them up. Only sleeping Doges are affected when casting this skill.
+<!--Old description: Put a Guard Doge to sleep for X seconds. Even Noise won't wake 'em up!-->
+|<!--NN: 0s-->
+|64
+(42)
+|-
+|[[File:Img skillicon wankokanti.png]]
+|Bionic Ears
+|Shows Guard Doge movement on the Mini-Map for X seconds
+|
+NN: 1s
+
+RR: 5s
+
+SR: 10s
+
+UR: 30s
+|41
+(26)
+|-
+|[[File:Img skillicon wankosearch.png]]
+|Doge Sense
+|Doge Patrols in X nearby rooms will be displayed on the Mini-Map.
+|
+NN: 1 room
+
+RR: 2 rooms
+
+SR: 3 rooms
+
+UR: 4 rooms
+|49
+(32)
+|-
+|style="border-left:5px solid #ffff77"|[[File:Img skillicon invalid debuff.png]]
+|Status Block
+|Negative status effects will be blocked X% of the time.
+|UR: 100%
+|62
+''(40)''
+|-
+|style="border-left:5px solid #ffff77"|[[File:Img skillicon stealth.png]]
+|Invisibility
+|Turn invisible and gain immunity for X seconds.
+
+:Explanation: During the skill duration, the Cat is immune to Guard Doges and traps.
+|UR: 3s
+|96
+''(63)''
+|-
+|style="border-left:5px solid #ffff77"|[[File:Img skillicon trapsearch cross.png]]
+|Trap Radar
+|Detect Doges and Traps in vertical and horizontal rooms.
+|
+|70
+''(44)''
+|}
+{{Gallery|Img skillicon hensou}}
+[[Category:The Burgle Cats]]

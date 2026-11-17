@@ -1,0 +1,125 @@
+{{ENExclusive}}
+:''For the enemy counterpart, see [[Betakkuma (Enemy)]].''
+
+'''Betakkuma''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 7.2 Update|Version 7.2]] that can be acquired as a treasure drop when playing any stage of [[Betakkuma Collaboration Event|Groove Like A Bear]] during the [[Betakkuma Collaboration Event]].
+
+{{Cat Info
+|ID = 432
+|rarity = RR
+|name1 = Betakkuma
+|name2 = Black Betakkuma
+}}
+
+==Evolution==
+Evolves into '''Black Betakkuma''' at level 10.
+
+==Strategy/Usage==
+Although this unit has a low chance to knockback [[:Category:Alien Enemies|Alien]] enemies, it is spammable, so it works quite well in stacks, being able to infinitely knock back [[:Category:Alien Enemies|Aliens]] if RNG favours you well. Treat him as though he were a spammable meatshield with a chance of knocking back Alien enemies, unfortunately this only works on a select few Alien enemies' due to Bettakuma's short range.
+
+As a meatshield, Betakkuma is underwhelming and costly, as his cost of 150¢ is threatening to your [[Worker Cat]] considering his spammabilty. Between his inability to tank hits and everything else, it would be better to just use [[Cat (Normal Cat)|Cat]], [[Tank Cat (Normal Cat)|Tank Cat]], and their [[Crazed Cat (Super Rare Cat)|Crazed]] [[Crazed Tank Cat (Super Rare Cat)|variants]], as they have more survivability than him.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 432
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni432 f00.png
+|Image2 = Uni432 c00.png
+|Name1 = Betakkuma
+|Desc1 = Joining the fight from Betakkuma!<br>Weirdly cute white bear with some slick moves.<br>Might knockback Aliens.
+|Name2 = Black Betakkuma
+|Desc2 = Joining the fight from Betakkuma!<br>Changed colors after training by an assassin's guild.<br>Might knockback Aliens.
+|Name1 (TW) = 賤萌熊 (Shāyì Jiànméng, Cute Bear)
+|Desc1 (TW) = 賤萌熊來參戰！<br>賤萌地激烈擺動身體的爆笑白熊<br>偶爾會打飛異星戰士
+|Transl1 (TW) = Cute bear joins the fight!<br>The hilarious white bear who swings his body around fiercely and cheaply<br>Occasionally pushes back Alien enemies
+|Name2 (TW) = 賤萌黑熊 (Shāyì Jiànméng Xióng, Killer Cute Bear)
+|Desc2 (TW) = 賤萌熊來參戰！<br>拜活躍於黑暗世界的殺手熊為師之後自己也遭染黑了<br>偶爾會打飛異星戰士
+|Transl2 (TW) = Cute bear joins the fight!<br>After studying under the tutelage of a killer bear he himself has been blackened<br>Occasionally pushes back Alien enemies
+|Name1 (KR) = 적극적인 곰
+|Desc1 (KR) = 적극적인 곰 (베타쿠마)에서 참전!<br>깐죽깐죽! 적극적으로 깐죽대는 하얀 곰<br>아주 가끔 에이리언을 날려버린다
+|Name2 (KR) = 블랙 적극적인 곰
+|Desc2 (KR) = 적극적인 곰 (베타쿠마)에서 참전!<br>어둠 세계를 살아가는 암살 곰의 제자가 되어 검게 물들었다.<br>아주 가끔 에이리언을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 100¢
+*Chapter 2: 150¢
+*Chapter 3: 200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Betakkuma
+|Normal Base HP = 200
+|Normal Base AP = 10
+|Normal Range = 140
+|Normal Foreswing = 9
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 11
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 100
+|Normal Recharge = 360
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Black Betakkuma
+|Evolved Base HP = 200
+|Evolved Base AP = 10
+|Evolved Range = 140
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 11
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 100
+|Evolved Recharge = 360
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 10 damage<br>(27.27 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 11f <sub>0.37 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 9f <sup>0.3s</sup><br>(2f <sup>0.07s</sup> backswing)
+|val-Normal-Recharge Time = 12 ~ 3.2 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 170 damage<br>(463.64 DPS)
+|val-Evolved-Health = 3,400 HP
+|val-Evolved-Attack Power = 170 damage<br>(463.64 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 11f <sub>0.37 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(2f <sup>0.07s</sup> backswing)
+|val-Evolved-Recharge Time = 12 ~ 3.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni432 f00}}
+
+==Trivia==
+*Betakkuma is based on the "[https://store.line.me/stickershop/product/1335325/en Aggressive Bear Betakkuma]" LINE sticker pack, which gained popularity after people started copying the strange dances on the sticker pack.
+
+----
+{{CatNav|Detective Vigler|Nekokkuma}}
+----
+
+{{Betakkuma}}
+{{Cats}}
+[[Category:Rare Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Single Attack Cats]]
+[[Category:Cat Units]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]

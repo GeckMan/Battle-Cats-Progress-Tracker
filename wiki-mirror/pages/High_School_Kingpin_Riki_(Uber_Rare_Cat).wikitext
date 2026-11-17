@@ -1,0 +1,144 @@
+'''High School Kingpin Riki''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by purchasing the 11-draw Capsule at the [[Cat Capsule#Rare Capsule|Rare Capsule]] during [[River City Ransom Collaboration Event]]. It was added in [[Version 12.7 Update|Version 12.7]].
+
+{{Cat Info
+|ID = 721
+|rarity = UR
+|name1 = High School Kingpin Riki
+|name2 = Dodgeball Riki
+}}
+
+==Evolution==
+Evolves into '''Dodgeball Riki''' at level 10.
+
+==Strategy/Usage==
+This unit, much like [[Kunio-kun (Uber Rare Cat)|Kunio-kun]], is primarily used for his combo, which boosts your units' health a lot for the single slot it takes, and other efficient combos can be used alongside it with an even greater effect. Stat-wise, it isn't really that useful, and is only a serviceable backliner or tanker in early game.
+
+{{Job|Classification = Tanker & Melee & Combo Slave|EvolvedClass = Sniper & Crowd-Controller & Combo Slave|TrueClass=|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Bring it On!|Unit Defense Up (Sm)|High School Kingpin Riki|jpname=かかってきやがれ！}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 721
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni721 f00.png
+|Image2 = Uni721 c00.png
+|Name1 = High School Kingpin Riki
+|Desc1 = Joining the fight from the River City series!<br>This dependable delinquent leader is Kunio-kun's<br>best friend and greatest rival.
+|Name2 = Dodgeball Riki
+|Desc2 = Joining the fight from the River City series!<br>Capable captain of Hanazono High's dodgeball team.<br>Might knockback enemies. (Area attack)
+|Name1 (JP) = 花園高校番長りき (Hanazono Kōkō Banchō Riki, Hanazono High School Gang Leader Riki)
+|Desc1 (JP) = 熱血硬派くにおくんシリーズから参戦！<br>花園高校をまとめ上げる頼れる番長で<br>くにおくんの親友にして永遠のライバル
+|Transl1 (JP) = Joining from the hot-blooded hardcore Kunio-kun series!<br>A reliable leader who rounds up Hanazono High School<br>Kunio-kun's friend as well as an eternal rival
+|Name2 (JP) = ドッジボール部りき (Dojjibōru-bu Riki, Dodgeball Club Riki)
+|Desc2 (JP) = 熱血硬派くにおくんシリーズから参戦！<br>花園高校チームの仲間を率いる頼れるキャプテン<br>たまに敵をふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining from the hot-blooded hardcore Kunio-kun series!<br>A reliable captain leading teammates in the Hanazono High School team<br>Occasionally Knockbacks enemies (Area Attack)
+|Name1 (TW) = 花園高中老大阿力
+|Desc1 (TW) = 來自熱血硬派國夫君系列！<br>能讓花園高中團結一致的可靠老大<br>國夫君的好友兼宿敵
+|Name2 (TW) = 躲避球社阿力
+|Desc2 (TW) = 來自熱血硬派國夫君系列！<br>率領花園高中躲避球社的社長，非常可靠！<br>有時候可以打飛敵人（範圍攻擊）
+|Name1 (KR) = 화원고교 번장 리키
+|Desc1 (KR) = 열혈경파 쿠니오군 시리즈에서 참전!<br>화원고교를 제패한 믿음직한 번장<br>쿠니오군의 친구이자 영원한 라이벌
+|Name2 (KR) = 피구부 리키
+|Desc2 (KR) = 열혈경파 쿠니오군 시리즈에서 참전!<br>화원고교 팀을 이끄는 믿음직한 캡틴<br>가끔 적을 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,800¢
+*Chapter 2: 2,700¢
+*Chapter 3: 3,600¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = High School Kingpin Riki
+|Normal Base HP = 6000
+|Normal Base AP = 365,365,365
+|Normal Range = 200
+|Normal Foreswing = 5,10,15
+|Normal Attack Cooldown = 53
+|Normal Attack Length = 19
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 1800
+|Normal Recharge = 2000
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (6,205 at 5f <sup>0.17s</sup>, 6,205 at 10f <sup>0.33s</sup>, 6,205 at 15f <sup>0.5s</sup>)
+|Evolved Name = Dodgeball Riki
+|Evolved Base HP = 2400
+|Evolved Base AP = 280,280,280
+|Evolved Range = 450
+|Evolved Foreswing = 8,10,12
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 127
+|Evolved Speed = 24
+|Evolved KB = 3
+|Evolved Cost = 1800
+|Evolved Recharge = 3200
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,760 at 8f <sup>0.27s</sup>, 4,760 at 10f <sup>0.33s</sup>, 4,760 at 12f <sup>0.4s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~451 on 1st hit, 200~575 on 2nd hit, 400~700 on 3rd hit)<br>
+{{AbilityIcon|Knockback}} 10% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 6,000 HP
+|val-Normal-Attack Power = 1,095 damage<br>(483.09 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 68f <sub>2.27 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 66.67 ~ 57.87 seconds
+|val-Normal-MaxHP = 102,000 HP
+|val-Normal-MaxAttack = 18,615 damage<br>(8,212.5 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 14,280 damage<br>(3,373.23 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 24
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(115f <sup>3.83s</sup> backswing)
+|val-Evolved-Recharge Time = 106.67 ~ 97.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni721 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/722.html
+
+----
+{{CatNav|Ancient Egg: N006|Hatsune Miku XVI}}
+----
+
+{{River City Ransom}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:River City Ransom Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with different effective ranges]]
+[[Category:Cats with Knockback ability]]

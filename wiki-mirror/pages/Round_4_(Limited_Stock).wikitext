@@ -1,0 +1,61 @@
+{{DISPLAYTITLE:Round 4}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Relic Doge|Celeboodle|Shadow Boxer K|Ancient Magamojoe|Casaurian Darkjo}}
+'''Round 4''' is the fourth stage in [[Otherworld Colosseum#Limited Stock|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 03 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Doge Dark|1,200%
+|Relic Doge|150%
+|Celeboodle|1,000%
+|Shadow Boxer K|300%
+|Ancient Magamojoe|100%}}
+|boss = {{Magnification|Casaurian Darkjo|100%}}
+|enemies2 = {{Magnification|Doge Dark|1,440%
+|Relic Doge|180%
+|Celeboodle|1,200%
+|Shadow Boxer K|360%
+|Ancient Magamojoe|120%}}
+|boss2 = {{Magnification|Casaurian Darkjo|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,800
+|max enemies = 10
+|jpname = Round 4
+|script = Round 4
+|romaji = Round 4
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Limited Stock|Otherworld Colosseum]]
+|difficulty = ★11
+|prev stage = [[Round 3 (Limited Stock)|Round 3]]
+|next stage = [[Round 5 (Limited Stock)|Round 5]]
+}}
+
+==Rules==
+{{ColosseumRule|Limited Stock}}
+
+==Battleground==
+*2 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[Relic Doge]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Celeboodle]] spawns after 13.33 seconds<sup>400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Casaurian Darkjo]] spawns as the boss.
+**5 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**3 [[Celeboodle]]s spawn after 13.33 seconds<sup>400f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**2 [[Shadow Boxer K]]s spawn after 20 seconds<sup>600f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**1 [[Ancient Magamojoe]] spawns after 40 seconds<sup>1,200f</sup>.
+**4 [[Relic Doge]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36014-04.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

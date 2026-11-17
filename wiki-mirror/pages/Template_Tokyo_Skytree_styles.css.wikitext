@@ -1,0 +1,11 @@
+.ranger-navbox.skytree {
+	--bg-navbox-title: linear-gradient(to right, hsl(207, 100%, 34%) 0%, hsl(207, 100%, 39%) 100%);
+	--bg-sub-table-title: hsl(53, 99%, 45%);
+	--bg-group-name: hsl(210, 100%, 40%);
+
+	--title-color: #eee;
+	--sub-title-color: #000;
+	--group-color: #eee;
+}
+
+/* [[Category:Template stylesheets]] */

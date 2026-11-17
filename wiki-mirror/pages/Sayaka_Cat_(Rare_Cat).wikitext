@@ -1,0 +1,123 @@
+'''Sayaka Cat''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 5.5 Update|Version 5.5]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]].
+
+{{Cat Info
+|ID = 296
+|rarity = RR
+|name1 = Sayaka Cat
+|name2 = Magical Girl Sayaka Cat
+}}
+
+==Evolution==
+Evolves into '''Magical Girl Sayaka Cat''' at level 10.
+
+==Strategy/Usage==
+As an attacker, Sayaka Cat highly underperforms when compared to other Cats, like [[Mer-Cat (Rare Cat)|Cameraman Cat]] and [[Salon Cat (Rare Cat)|Paris Cat]]. With that being said, Sayaka has high enough stats that when stacked and hypermaxed, Sayaka can be used throughout early [[Legend Stages|Stories of Legend]]. Beyond that, Magical Sayaka can contribute to your [[User Rank]], as this Cat does not have enough range to be useful anywhere else.
+
+{{Job|Classification = Melee & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 296
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni296 f00.png
+|Image2 = Uni296 c00.png
+|Name1 = Sayaka Cat
+|Desc1 = A guileless Cat who admires Magical Girls.<br>Visits her sick friend every day without fail.<br>Grows stronger after taking damage!
+|Name2 = Magical Girl Sayaka Cat
+|Desc2 = This Magical Cat made a contract with a suspicious<br>white creature. Wields a magically summoned sword.<br>Grows stronger after taking damage!
+|Name1 (JP) = ネコさやか (Neko Sayaka)
+|Desc1 (JP) = まっすぐな魔法少女に憧れるネコ<br>幼馴染のお見舞いに行くのが日課<br>体力低下で攻撃力上昇
+|Transl1 (JP) = A cat who admires an honest magical girl<br>Visits her childhood friend as a daily routine<br>Increases attack power when health decreases
+|Name2 (JP) = 魔法少女ネコさやか (Mahō Shōjo Neko Sayaka, Magical Girl Cat Sayaka)
+|Desc2 (JP) = 怪しげな白い生き物と契約したネコ魔法少女<br>イケてる剣を手に入れて誰かを斬らずにはいられない<br>体力低下で攻撃力上昇
+|Transl2 (JP) = A magical girl cat who made a contract with a suspicious white creature<br>Cannot help cutting others after getting a good sword<br>Increases attack power when health decreases
+|Name1 (TW) = 沙耶香貓
+|Desc1 (TW) = 一隻對個性直截了當魔法少女有憧憬的貓咪<br>去探望青梅竹馬好友是每天必做的事<br>體力下降時攻擊力上升
+|Name2 (TW) = 魔法少女沙耶香貓
+|Desc2 (TW) = 跟一隻詭異白色生物簽訂契約的魔法少女貓咪<br>入手了一把很不錯的刀後就情不自禁想砍人了！<br>體力下降時攻擊力上升
+|Name1 (KR) = 고양이 사야카
+|Desc1 (KR) = 직진본능의 마법소녀를 동경하는 고양이<br>매일 소꿉친구의 병문안을 가는것이 일과이다<br>체력 저하로 공격력이 상승
+|Name2 (KR) = 마법소녀 고양이 사야카
+|Desc2 (KR) = 수상한 하얀색 생물과 계약을 맺은 마법소녀<br>멋진 검을 손에 넣어 누군가를 베지 않고는 못견딘다.<br>체력 저하로 공격력이 상승
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sayaka Cat
+|Normal Base HP = 980
+|Normal Base AP = 180
+|Normal Range = 180
+|Normal Foreswing = 23
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 51
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 400
+|Normal Recharge = 400
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Evolved Name = Magical Girl Sayaka Cat
+|Evolved Base HP = 980
+|Evolved Base AP = 270
+|Evolved Range = 180
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 41
+|Evolved Attack Length = 37
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 400
+|Evolved Recharge = 400
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 980 HP
+|val-Normal-Attack Power = 180 damage<br>(103.85 DPS)
+|val-Normal-Attack Range = 180
+|val-Normal-Attack Frequency = 52f <sub>1.73 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 23f <sup>0.77s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 16,660 HP
+|val-Normal-MaxAttack = 3,060 damage<br>(1,765.38 DPS)
+|val-Evolved-Health = 16,660 HP
+|val-Evolved-Attack Power = 4,590 damage<br>(2,648.08 DPS)
+|val-Evolved-Attack Range = 180
+|val-Evolved-Attack Frequency = 52f <sub>1.73 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni296 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/297.html
+
+----
+{{CatNav|Homura Cat|Mami Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strengthen ability]]

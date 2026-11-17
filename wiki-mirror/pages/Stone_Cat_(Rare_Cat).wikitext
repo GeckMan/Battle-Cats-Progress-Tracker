@@ -1,0 +1,144 @@
+'''Stone Cat''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 10.2 Update|Version 10.2]] who can be unlocked when beating the [[:Category:Advent Stages|Advent Stage]] [[Possessed by Evil (Merciless)|Prelude to Ruin]] appearing on the '''11th''', '''12th''', '''25th''', and '''26th''' of every month.
+
+{{Cat Info
+|ID = 581
+|rarity = RR
+|name1 = Stone Cat
+|name2 = Boulder Cat
+}}
+
+==Evolution==
+Evolves into '''Boulder Cat''' at level 10.
+
+==Strategy/Usage==
+Stone Cat has very high health for its cost but despawns moments after executing its attack. It is optimal for holding meatshield line in that half a second when a powerful enemy unleashes an attack, such as [[:Category:Advent Bosses|Advent bosses]] with [[Omni Strike]] like [[Daboo of the Dead|Daboo]] and [[Masked Okame]] or [[:Category:Surge Attack Enemies|Surge]] enemies like [[Lord of Ruin Jagando]], [[Kappy Jr.]] or [[St. Dober]] to delay their advance. This emergency line of defense is also usable on [[CyberFace]], [[Brollow]]s, and most other slow-attacking or hard-hitting enemies, or even a heavily buffed Gauntlet Colossus if given the chance.
+
+Due to its short attack animation, Stone Cat won't stick around for more than the minimum time, though its immunities are effective in preventing it from being destroyed or delayed before reaching the frontlines. Like [[Capsule Cat (Special Cat)|Capsule Cat]], he can also be used for starting certain enemies' attack animations; this is useful against ranged foes such as [[THE SLOTH]] or [[Director Kurosawah]] to waste their attack, allowing you to send other units to cripple them.
+
+Stone Cat's usage can also be drastically improved with Research Up [[Cat Combo]]s like [[Biohazard (Combo)|Biohazard]], [[Bony Bone (Combo)|Bony Bone]], [[Cheating Heart? (Combo)|Cheating Heart]], [[Kimono Champs (Combo)|Kimono Champs]] and [[Bad Guys (Combo)|Bad Guys]], with a recharge time more similar to some of your anti-trait specialist [[:Category:Meatshield-class Cats|meatshields]] like [[Wushu Cat (Rare Cat)|Shigong Cat]] or [[Rocker Cat (Rare Cat)|Ramen Cat]], offering universal defense with far greater potential when your meatshields just wouldn't cut it, if not completely demolished by the enemy composition. This cat is also ideal for taking out isolated, low-magnification [[Assassin Bear]]s, as it has a massive amount of health, high speed and only one knockback, whilst dealing just enough damage to kill them immediately.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 581
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni581 f00.png
+|Image2 = Uni581 c00.png
+|Name1 = Stone Cat
+|Desc1 = A mineral-based lifeform recovered by GAMATOTO<br>from deep beneath the earth. Finally made useful<br>after eight years of research. Attacks exactly once.
+|Name2 = Boulder Cat
+|Desc2 = Stone-like primal Cat that is surprisingly fragile,<br>both emotionally and physically. Please take care<br>not to injure its fragile heart. Attacks exactly once.
+|Name1 (JP) = ごろにゃん (Goro Nyan, Goro Nyan)
+|Desc1 (JP) = 地中深くより発掘された岩石っぽい新種のネコ<br>ガマトト探検隊の発見から８年目にして<br>ようやく利用価値が見いだされた(一回攻撃)
+|Transl1 (JP) = New rock-like Cat unearthed from deep underground.<br>Eight years after its discovery by the [[Gamatoto Expedition]],<br>finally found a use for it (one attack).
+|Name2 (JP) = ごろにゃーん (Goro Nyān, Goro Nyaan)
+|Desc2 (JP) = 地底深くでまれに発掘される鉱石っぽいネコ<br>メンタルと物理衝撃にめっぽう弱いので<br>取り扱いには十分注意が必要である(一回攻撃)
+|Transl2 (JP) = An ore-like Cat that is rarely excavated deep underground.<br>It is extremely weak against mental and physical shocks,<br>so be careful when handling it (one attack).
+|Name1 (TW) = 岩貓
+|Desc1 (TW) = 在地下深處被發掘出有點像岩石的新種貓咪<br>被加碼多多探險隊發掘出來的第八年頭<br>終於找到了使用價值(一次攻擊)
+|Name2 (TW) = 礦貓
+|Desc2 (TW) = 在地底深處偶然被發掘出有點像礦石的貓咪<br>不善於物理衝擊與心理層面<br>所以請謹慎使用(一次攻擊)
+|Name1 (KR) = 스톤 고양이
+|Desc1 (KR) = 깊은 땅속에서 발굴된 암석같은 신종 고양이<br>가마토토 탐험대에 의해 발견된지 8년만에<br>드디어 이용 가치가 생겼다 (1회 공격)
+|Name2 (KR) = 볼더 고양이
+|Desc2 (KR) = 깊은 땅속에서 드물게 발굴되는 광석같은 고양이<br>멘탈과 물리 공격에 엄청 약하기 때문에<br>사용할 때는 충분한 주의가 필요하다 (1회 공격)
+}}
+
+==Cost==
+*Chapter 1: 240¢
+*Chapter 2: 360¢
+*Chapter 3: 480¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Stone Cat
+|Normal Base HP = 20000
+|Normal Base AP = 280
+|Normal Range = 140
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 41
+|Normal Speed = 84
+|Normal KB = 1
+|Normal Cost = 240
+|Normal Recharge = 410
+|Normal Attack Type = Single
+|Normal Kamikaze = true
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Surge|Surge]]
+|Evolved Name = Boulder Cat
+|Evolved Base HP = 20000
+|Evolved Base AP = 280
+|Evolved Range = 140
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 41
+|Evolved Speed = 84
+|Evolved KB = 1
+|Evolved Cost = 240
+|Evolved Recharge = 410
+|Evolved Attack Type = Single
+|Evolved Kamikaze = true
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Surge|Surge]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 20,000 HP
+|val-Normal-Attack Power = 280 damage
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = -
+|val-Normal-Movement Speed = 84
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 13.67 ~ 4.87 seconds
+|val-Normal-MaxHP = 340,000 HP
+|val-Normal-MaxAttack = 4,760 damage
+|val-Evolved-Health = 340,000 HP
+|val-Evolved-Attack Power = 4,760 damage
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = -
+|val-Evolved-Movement Speed = 84
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 13.67 ~ 4.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni581 f00}}
+
+==Trivia==
+*Prior to [[Version 10.2 Update|Version 10.2]], this was an unimplemented [[:Category:Special Cats|Special Cat]] that used [[Cat (Normal Cat)|Cat]]'s sprites as placeholders.
+*This is the second Cat Unit to attack once then die, the first being [[Glass Cat (Rare Cat)|Glass Cat]].
+*Prior to [[Version 14.4 Update|Version 14.4]], Stone Cat was the second fastest Cat Unit in the game, only beaten by [[Express Cat (Super Rare Cat)|Bullet Train Cat]].
+*This Cat Unit is tied with [[Wafer Cat (Special Cat)|Wafer Cat]] and [[Hell Warden Emma (Uber Rare Cat)|Hell Commissioner Emma]] for the third highest base health of all units, only beaten by [[Elder Mask Doron (Special Cat)|Cat Mask Doron]] and [[Hades the Punisher (Uber Rare Cat)|Hades the Deathdealer]].
+*This Cat Unit is the second unit to reference [[Gamatoto Expedition|GAMATOTO]], the first being [[Masked Cat (Special Cat)|Masked Cat]].
+
+==Reference==
+*https://battlecats-db.com/unit/582.html
+
+----
+{{CatNav|M. Bison Cat|Hatsune Miku: MM2020 Osaka}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Item Drop Cats]]
+[[Category:Rare Cats]]
+[[Category:Kamikaze Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Weaken Immunity]]
+[[Category:Cats with Surge Immunity]]
+[[Category:Cats with Warp Immunity]]

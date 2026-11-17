@@ -1,0 +1,120 @@
+{{JPExclusive}}
+:''For other uses, see [[Swordsman (disambiguation)]].''
+'''White Swordsman Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a [[Daily Bonus|Stamp Reward]] during the [[Castle & Dragon Collaboration Event]]. It was added in [[Version 7.2 Update|Version 7.2]].
+
+{{Cat Info
+|ID = 434
+|rarity = EX
+|name1 = White Swordsman Cat
+|name2 = Black Swordsman Cat
+}}
+
+==Evolution==
+Evolves into '''Black Swordsman Cat''' at level 10.
+
+==Strategy/Usage==
+This Cat has resistance against [[:Category:Anti-Zombie Cats|Zombies]]. At level 30, White Swordsman Cat has 23,800 health against Zombies along with the cost and recharge time of a Tank Cat. This makes him a usable extra line of defense for most Zombie stages, as against Zombies with his recharge time, is able to provide almost an extra Eraser's level of defense against them.
+
+[[Wushu Cat (Rare Cat)|Wushu Cat]] can do much the same as this unit with Research Up [[Cat Combo]]s like [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]], makes for a more ideal anti-Zombie meatshield due to the higher health, but be wary of the more than doubled cost of this unit and a higher recharge time, leaving this unit better for Zombie stages with higher money, or using them both.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 434
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni434 f00.png
+|Image2 = Uni434 c00.png
+|Name1 (JP) = 白にゃんこ剣士 (Shiro Nyanko Kenshi, White Cat Swordsman)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>にゃんこの武具で気持ちをリフレッシュした剣士<br>ゾンビに打たれ強い
+|Transl1 (JP) = Joining the war from Castle and Dragon!<br>A swordfighter who refreshed his feelings with Cat armor<br>Strong against Zombies
+|Name2 (JP) = 黒にゃんこ剣士 (Kuro Nyanko Kenshi, Black Cat Swordsman)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>黒にゃんこ武具を身にまといせっせこ働く剣士<br>ゾンビに打たれ強い
+|Transl2 (JP) = Joining the war from Castle and Dragon!<br>A swordfighter who works hard wearing black Cat armor<br>Strong against Zombies
+|Name1 (TW) = 白貓劍士
+|Desc1 (TW) = 從城與龍來參戰！<br>穿上貓咪裝備來轉換心情的劍士<br>對上不死生物很耐打
+|Name2 (TW) = 黑貓劍士
+|Desc2 (TW) = 從城與龍來參戰！<br>穿上黑色貓咪裝備勤奮工作的劍士<br>對上不死生物很耐打
+}}
+
+==Cost==
+*Chapter 1: 100円
+*Chapter 2: 150円
+*Chapter 3: 200円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = White Swordsman Cat
+|Normal Base HP = 350
+|Normal Base AP = 10
+|Normal Range = 110
+|Normal Foreswing = 11
+|Normal Attack Cooldown = 47
+|Normal Attack Length = 23
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 100
+|Normal Recharge = 300
+|Normal Attack Type = Single
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Black Swordsman Cat
+|Evolved Base HP = 350
+|Evolved Base AP = 10
+|Evolved Range = 110
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 47
+|Evolved Attack Length = 23
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 100
+|Evolved Recharge = 300
+|Evolved Attack Type = Single
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 350 HP
+|val-Normal-Attack Power = 10 damage<br>(5.17 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 10 ~ 2 seconds
+|val-Normal-MaxHP = 5,950 HP
+|val-Normal-MaxAttack = 170 damage<br>(87.93 DPS)
+|val-Evolved-Health = 5,950 HP
+|val-Evolved-Attack Power = 170 damage<br>(87.93 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 10 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni434 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/435.html
+
+----
+{{CatNav|Nekokkuma|Li'l Valkyrie}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]

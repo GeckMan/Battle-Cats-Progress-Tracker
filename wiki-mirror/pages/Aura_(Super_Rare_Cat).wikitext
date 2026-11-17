@@ -1,0 +1,125 @@
+{{Unobtainable}}
+'''Aura''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 117
+|rarity = SR
+|name1 = Aura
+|name2 = Aura CC
+}}
+
+==Evolution==
+Evolves into '''Aura CC''' at level 10.
+
+==Strategy/Usage==
+This unit is completely useless due to the general attributes of Dark enemies being short-ranged pushers with high damage and many knockbacks, mitigating the need to use specialized knockback units as their high speed allows them to recover ground easily nevertheless. It is essentially a worse [[Tin Cat (Rare Cat)|Tin Cat]] that has less range, attack rate and speed in exchange for area attacks. Still, its damage is too low to be of any meaningful use and cannot falter Dark enemies, while its cooldown is unsalvageable. It is advisable to instead use [[Flower Cat (Special Cat)|Bombercat]] for freezing and powerful attackers of your choice like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] to damage them instead.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 117
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni117 f00.png
+|Image2 = Uni117 c00.png
+|Name1 = Aura
+|Desc1 = Joining the fight from Merc Storia! Normally<br>shy, but if you get her talking about guns...<br>Area attacks might Knockback Dark enemies.
+|Name2 = Aura CC
+|Desc2 = Joining the fight from Merc Storia!<br>Gun maintenance is her number one hobby.<br>Area attacks might Knockback Dark enemies.
+|Name1 (JP) = アウラ (Aura)
+|Desc1 (JP) = メルクストーリアから参戦！<br>恥ずかしがり屋だが、銃の話になると止まらない<br>黒い敵をたまにふっとばす(範囲攻撃)
+|Transl1 (JP) = Joined the war from Merc Storia!<br>Is a shy person, but doesn't stop when talking about guns<br>Sometimes blows away Dark enemies (Area Attack)
+|Name2 (JP) = アウラCC (Aura CC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>趣味は定期メンテナンスという変な趣味を持つ<br>黒い敵をたまにふっとばす(範囲攻撃)
+|Transl2 (JP) = Joined the war from Merc Storia!<br>Has a strange hobby of periodic maintenance<br>Sometimes blows away Dark enemies (Area Attack)
+|Name1 (TW) = 阿烏拉
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>平常非常害羞，但一談到槍就說個不停<br>有時候能打飛黑色敵人(範圍攻擊)
+|Name2 (TW) = 阿烏拉CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>有著定期維護這個古怪的興趣<br>有時候能打飛黑色敵人(範圍攻擊)
+|Name1 (KR) = 아우라
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>부끄럼쟁이지만 총 이야기만 나오면 말릴 수 없다<br>검은 적을 가끔 날려버린다 (범위 공격)
+|Name2 (KR) = 아우라CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>정기 점검이라는 이상한 취미를 가졌다<br>검은 적을 가끔 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,120¢
+*Chapter 2: 1,680¢
+*Chapter 3: 2,240¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Aura
+|Normal Base HP = 960
+|Normal Base AP = 420
+|Normal Range = 280
+|Normal Foreswing = 46
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 111
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 1120
+|Normal Recharge = 1440
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Aura CC
+|Evolved Base HP = 1160
+|Evolved Base AP = 670
+|Evolved Range = 280
+|Evolved Foreswing = 46
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 111
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 1120
+|Evolved Recharge = 1440
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 960 HP
+|val-Normal-Attack Power = 420 damage<br>(113.51 DPS)
+|val-Normal-Attack Range = 280
+|val-Normal-Attack Frequency = 111f <sub>3.7 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 46f <sup>1.53s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Normal-Recharge Time = 48 ~ 39.2 seconds
+|val-Normal-MaxHP = 16,320 HP
+|val-Normal-MaxAttack = 7,140 damage<br>(1,929.73 DPS)
+|val-Evolved-Health = 19,720 HP
+|val-Evolved-Attack Power = 11,390 damage<br>(3,078.38 DPS)
+|val-Evolved-Attack Range = 280
+|val-Evolved-Attack Frequency = 111f <sub>3.7 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 46f <sup>1.53s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Evolved-Recharge Time = 48 ~ 39.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni117 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/118.html
+
+----
+{{CatNav|Fuu|Rei}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Gacha Cats]]

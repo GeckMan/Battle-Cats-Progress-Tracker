@@ -1,0 +1,139 @@
+:''For other uses, see [[Balrog (disambiguation)]].''
+'''Balrog''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 572
+|rarity = UR
+|name1 = Balrog
+|name2 = Balrog CC
+}}
+
+==Evolution==
+Evolves into '''Balrog CC''' at level 10.
+
+==Strategy/Usage==
+Balrog is one of the very few [[:Category:Focused Target Cats|Focused Target Cats]], a class of cat that attacks only a certain trait of enemy, but has enormous stats in return. Balrog's damage and health, while not even comparable to the likes of [[Warlock and Pierre (Uber Rare Cat)|Warlock & Pierre]] or [[Takeda Shingen (Uber Rare Cat)|Takeda Shingen]], are nonetheless amazing enough that he effectively destroys his typing while remaining at a decently safe distance. With that being said, don't expect to use Balrog on stages where he won't attack.
+
+The only class of enemy which Balrog targets, but may falter against is [[:Category:Zombie Enemies|Zombies]]; as some can burrow into his standing range and chip off some of his HP. But that will happen rarely, as Balrog's decent knockback count and quick attack rate can make short work of those that do. Even against the toughest of enemies, like [[Dread Bore]], [[Razorback]], or [[J.K. Bun Bun|J.K. Bun Bun]], he will be able to stand his ground with protection. Additionally, Balrog has the [[Zombie Killer]] ability, which is an absolute must-have for [[:Category:Anti-Zombie Cats|Anti-Zombie Cats]].
+
+This unit has a usefully low cost, but also a long cooldown, making it so he can be sent out early into the battle, which is especially good for Zombie stages, as they are often cash-limited, but he can rarely be stacked or replaced in fights.
+
+{{Job|Classification = Nuker & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 572
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni572 f00.png
+|Image2 = Uni572 c00.png
+|Name1 = Balrog
+|Desc1 = Joining the fight from Street Fighter V!<br>Former pro boxer, steadfast in his convictions.<br>Area Attacks only hit Red/Dark/Zombies!
+|Name2 = Balrog CC
+|Desc2 = Joining the fight from Street Fighter V!<br>His Turn Punch guarantees a quick knockout!<br>Area Attacks only hit Red/Dark/Zombies!
+|Name1 (JP) = バイソン (Baison, Bison)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>自分の欲望に忠実な元ヘビー級のプロボクサー<br>赤、黒、ゾンビにしか攻撃できない(範囲攻撃)
+|Transl1 (JP) = Joining the war from Street Fighter V!<br>Former heavyweight pro boxer who is loyal to his desires.<br>Only attacks Red, Black and Zombies (Area Attack)
+|Name2 (JP) = バイソンCC (BaisonCC, Bison CC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>強烈な「ターンパンチ」で敵をノックアウトする<br>赤、黒、ゾンビにしか攻撃できない(範囲攻撃)
+|Transl2 (JP) = Joining the war from Street Fighter V!<br>Knocks out enemies with a powerful "Turn Punch".<br>Only attacks Red, Black and Zombies (Area Attack)
+|Name1 (TW) = 拜森
+|Desc1 (TW) = 從快打旋風V來參戰！<br>對自我慾望忠實的前重量級職業拳擊手<br>只能攻擊紅色、黑色敵人和不死生物(範圍攻擊)
+|Name2 (TW) = 拜森CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>以猛烈的「迴旋衝刺直拳」擊倒敵人<br>只能攻擊紅色、黑色敵人和不死生物(範圍攻擊)
+|Name1 (KR) = 바이슨
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>자신의 욕망에 충실한 전 헤비급 프로 복서<br>빨간 적, 검은 적, 좀비만 공격할 수 있다 (범위 공격)
+|Name2 (KR) = 바이슨CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>강력한 턴 펀치로 적을 넉아웃시킨다<br>빨간 적, 검은 적, 좀비만 공격할 수 있다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,460¢
+*Chapter 2: 2,190¢
+*Chapter 3: 2,920¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Balrog
+|Normal Base HP = 4000
+|Normal Base AP = 2800
+|Normal Range = 400
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 56
+|Normal Speed = 20
+|Normal KB = 4
+|Normal Cost = 1460
+|Normal Recharge = 4600
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark,Zombie
+|Normal Abilities = {{AbilityIcon|Attacks Only}} [[Attacks Only|Attacks only]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Balrog CC
+|Evolved Base HP = 4000
+|Evolved Base AP = 2800
+|Evolved Range = 400
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 56
+|Evolved Speed = 20
+|Evolved KB = 4
+|Evolved Cost = 1460
+|Evolved Recharge = 4600
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark,Zombie
+|Evolved Abilities = {{AbilityIcon|Attacks Only}} [[Attacks Only|Attacks only]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,000 HP
+|val-Normal-Attack Power = 2,800 damage<br>(622.22 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 135f <sub>4.5 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 153.33 ~ 144.53 seconds
+|val-Normal-MaxHP = 68,000 HP
+|val-Normal-MaxAttack = 47,600 damage<br>(10,577.78 DPS)
+|val-Evolved-Health = 68,000 HP
+|val-Evolved-Attack Power = 47,600 damage<br>(10,577.78 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 135f <sub>4.5 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 153.33 ~ 144.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni572 f00}}
+
+==Trivia==
+*In Japan, and by extension [[Nyanko Daisensou|Nyanko Daisensou]], this Fighter is instead known as [[M. Bison (Uber Rare Cat)|M. Bison]], while Balrog's name was originally assigned to [[Vega (Uber Rare Cat)|Vega]].
+** This was likely done proactively when localizing Street Fighter II to avoid legal trouble from real life boxer Mike Tyson's legal team, as Balrog is based on him.
+*** The title "Boxer" (Balrog), "Claw" ([[Vega (Uber Rare Cat)|Vega]]) and "Dictator" ([[M. Bison (Uber Rare Cat)|M. Bison]]) have been adopted to not cause confusion when referring to these three Shadaloo leaders between Japanese and international players.
+
+==Reference==
+*https://battlecats-db.com/unit/573.html
+
+----
+{{CatNav|E. Honda|Vega}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Focused Target Cats]]
+[[Category:Zombie Killer Cats]]

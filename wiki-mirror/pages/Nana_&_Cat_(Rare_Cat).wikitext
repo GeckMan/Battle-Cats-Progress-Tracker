@@ -1,0 +1,122 @@
+{{JPExclusive}}
+'''Nana & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by completing any stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Red Line|Kaohsiung Metro Red Line]] during the [[Kaohsiung Rapid Transit Collaboration Event]]. She was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 638
+|rarity = RR
+|name1 = Nana & Cat
+|name2 = Nana & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Nana & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Nana & Cat is a decent choice as an anti-[[:Category:Dark Enemies|Dark]] crowd-controller early in the game, as her guaranteed Mini-Waves allow her to affect large groups of Dark enemies with her Slow, although due to her low uptime, it will take a decent stack of them to maintain the effect. Fortunately, her range is just high enough to keep her away from hordes of [[Gory Dark]] and [[Shadow Boxer K|Shadow Boxer K.]], and the pseudo-Area Attack granted by these Mini-Waves gives her a huge advantage over other options at that point like [[Cat Gunslinger (Rare Cat)|Cat Gunslinger]].
+
+However, this is the only area of the game she remains useful. Her reliance on stacking soon becomes a much more noticeable flaw as larger swarms of enemies lower the effectiveness of one's meatshields, and once [[Flower Cat (Special Cat)|Bombercat]] is obtained, Nana quickly loses relevance in any form, as the former is better in just about every way.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 638
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni638 f00.png
+|Image2 = Uni638 c00.png
+|Name1 (JP) = ナナ&ネコ (Nana & Neko, Nana & Cat)
+|Desc1 (JP) = 「たかめ少女」から参戦！高雄メトロのアナウンス<br>担当。情報収集が得意な人見知りの少女<br>必ず黒い敵の動きを一瞬遅くし、小波動を放つ
+|Transl1 (JP) = a Joining the war from "Takame Shoujo"! The announcer for Kaohsiung<br>Metro. A shy girl who is good at gathering information<br>Always slows down the movement of Dark enemies for a moment and releases a small wave
+|Name2 (JP) = ナナ&ネコCC (Nana & Neko CC, Nana & Cat CC)
+|Desc2 (JP) = 「たかめ少女」から参戦！優しい声の持ち主で<br>高雄メトロカスタマーサービス部門のエース<br>必ず黒い敵の動きを一瞬遅くし、小波動を放つ
+|Transl2 (JP) = a Joining the war from "Takame Shoujo"! has a gentle voice<br>and is always the ace of the Takao Metro Customer Service Department<br>Always slows down the movement of Dark enemies for a moment and releases a small wave
+|Name1 (TW) = 耐耐&貓咪
+|Desc1 (TW) = 從「高捷少女」來參戰！擔任高捷電話客服員<br>銀色髮與兔耳造型耳機是個人特色<br>必定能使黑色敵人動作瞬間變慢，發射小波動
+|Name2 (TW) = 耐耐&貓咪CC
+|Desc2 (TW) = 從「高捷少女」來參戰！有優越的絕對音感<br>有輕微的人群恐懼症，私下活躍於網路的歌手<br>必定能使黑色敵人動作瞬間變慢，發射小波動
+}}
+
+==Cost==
+*Chapter 1: 380円
+*Chapter 2: 570円
+*Chapter 3: 760円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nana & Cat
+|Normal Base HP = 540
+|Normal Base AP = 80
+|Normal Range = 210
+|Normal Foreswing = 64
+|Normal Attack Cooldown = 131
+|Normal Attack Length = 101
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 380
+|Normal Recharge = 740
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 45f <sub>1.5 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Evolved Name = Nana & Cat CC
+|Evolved Base HP = 540
+|Evolved Base AP = 80
+|Evolved Range = 210
+|Evolved Foreswing = 64
+|Evolved Attack Cooldown = 131
+|Evolved Attack Length = 101
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 380
+|Evolved Recharge = 740
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 45f <sub>1.5 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 540 HP
+|val-Normal-Attack Power = 80 damage<br>(12.31 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 195f <sub>6.5 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 64f <sup>2.13s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Normal-Recharge Time = 24.67 ~ 15.87 seconds
+|val-Normal-MaxHP = 9,180 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(209.23 DPS)
+|val-Evolved-Health = 9,180 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(209.23 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 195f <sub>6.5 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 64f <sup>2.13s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 24.67 ~ 15.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni638 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/639.html
+
+----
+{{CatNav|Sora & Cat|Emilia & Cat}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Mini-Wave Cats]]

@@ -1,0 +1,69 @@
+{{EnemiesAppearing|Snache|Those Guys|Doge|The 4th Angel}}
+'''State of Emergency''' is the first stage in [[Neon Genesis Evangelion Collaboration Event#Evangelion Activates!|Evangelion Activates!]].
+
+{{Stage Info
+|stage name = [[File:rc103.png]]
+[[File:Mapsn065 00 c en.png]]
+|stage location = [[File:Mapname065 c en 1.png]]
+|energy = 30
+|enemy castle hp = 3,000 HP
+|enemies = {{Magnification|Snache|100%
+|Those Guys|100%
+|Doge|100%}}
+|boss = {{Magnification|The 4th Angel|1%}}
+|enemies2 = {{Magnification|Snache|200%
+|Those Guys|200%
+|Doge|200%}}
+|boss2 = {{Magnification|The 4th Angel|2%}}
+|enemies3 = {{Magnification|Snache|300%
+|Those Guys|300%
+|Doge|300%}}
+|boss3 = {{Magnification|The 4th Angel|3%}}
+|enemies4 = {{Magnification|Snache|400%
+|Those Guys|400%
+|Doge|400%}}
+|boss4 = {{Magnification|The 4th Angel|4%}}
+|treasure = - [[Shinji & Cat (Rare Cat)|Shinji & Cat]] (5%, 1 time)
+|score reward = '''8,000''': 15,000 XP<br>
+'''5,000''': 10,000 XP<br>
+'''500''': 5,000 XP
+|XP = 900 XP
+|width = 3,600
+|max enemies = 10
+|jpname = Under Special Emergency Declaration
+|script = 特別非常事態宣言発令中
+|romaji = Tokubetsu hijō jitai sengen hatsurei-chū
+|star = 4
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Neon Genesis Evangelion Collaboration Event#Evangelion Activates!|Evangelion Activates!]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[NERV]]
+}}
+
+==Battleground==
+*1 [[Snache]] spawns.
+*3 [[Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*1 [[Those Guys]] spawns after 40 seconds<sup>1,200f</sup>.
+*5 [[Snache]]s spawn after 60 seconds<sup>1,800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 90% HP:
+**1 [[The 4th Angel (Enemy)|The 4th Angel]] spawns as the boss.
+**5 [[Those Guys]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**10 [[Those Guys]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**5 [[Doge]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Walkthrough==
+{{Walkthrough
+|rhEjbAHTUC4|Novastrala|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s02065-01.html
+
+{{Neon Genesis Evangelion}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

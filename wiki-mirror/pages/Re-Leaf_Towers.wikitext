@@ -1,0 +1,74 @@
+{{EnemiesAppearing|Surge Base|Those Guys|Kroxo|Metal Doge|Super Metal Hippoe|Project A|Sir Metal Seal}}
+'''Re-Leaf Towers''' is the third stage in [[Ancient Forest Labyrinth]].
+
+{{Stage Info
+|stage name = [[File:E 524.png]]
+[[File:Mapsn035 02 na en.png]]
+|stage location = [[File:Mapname035 na en.png]]
+|energy = 185
+|enemy castle hp = 1,200,000 HP
+|enemy castle hp2 = 1,560,000 HP
+|enemy castle hp3 = 2,040,000 HP
+|base = {{Magnification|Surge Base|80,000%}}
+|enemies = {{Magnification|Those Guys|4,000%
+|Kroxo|2,400%
+|Metal Doge|300%
+|Super Metal Hippoe|300%
+|Project A|2,500%}}
+|boss = {{Magnification|Sir Metal Seal|300%}}
+|base2 = {{Magnification|Surge Base|104,000%}}
+|enemies2 = {{Magnification|Those Guys|5,200%
+|Kroxo|3,120%
+|Metal Doge|390%
+|Super Metal Hippoe|390%
+|Project A|3,250%}}
+|boss2 = {{Magnification|Sir Metal Seal|390%}}
+|base3 = {{Magnification|Surge Base|136,000%}}
+|enemies3 = {{Magnification|Those Guys|6,800%
+|Kroxo|4,080%
+|Metal Doge|510%
+|Super Metal Hippoe|510%
+|Project A|4,250%}}
+|boss3 = {{Magnification|Sir Metal Seal|510%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 7,030 XP
+|width = 4,500
+|max enemies = 10
+|jpname = Twin Re-Leaf Towers
+|script = レ・リーフの双塔
+|romaji = Re Rīfu no Sōtō
+|star = 4
+|sub-chapter = [[Ancient Forest Labyrinth]]
+|difficulty = ★10
+|prev stage = [[Reincarnation Ring]]
+|next stage = [[Canopy Altar]]
+}}
+
+==Battleground==
+*The enemy base here is a [[Surge Base (Enemy Base)|Surge Base]].
+*Infinite [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*3 [[Kroxo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Metal Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Super Metal Hippoe]] spawns after 13.33 seconds<sup>400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sir Metal Seal]] spawns as the boss.
+**6 [[Kroxo]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Project A]] spawns.
+**10 [[Metal Doge]]s spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**3 [[Super Metal Hippoe]]s spawn, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+
+==Strategy==
+First thing you have to do is to make sure to get out of the Surge Base's range. Lure and kill the first Super Metal Hippoe near your base, then stall for as long as you need/can. Once you touch the base, you're going to want to lure and kill the Sir Metal Seal the exact same way. Lure him to your base, and slowly stack critters and crowd controllers like [[Hoop Cat (Rare Cat)|Hoopmaster]] to nearly perma-freeze the metals. A good meatshield for this stage is [[Primordial Cat (Rare Cat)|Future]] with its Insane Resist and low cost, although to truly spam it you're going to want some research combos. Do note that Super Metal Hippoe can potentially knockback your line of meatshields, so you ''can'' bring [[Sumo Cat (Special Cat)|Riceball]] as a knockback immune meatshield, however that isn't exactly necessary.
+
+Dealing with the Project A is easy, since you're going to have a lot of units stacked on the Seal you can use slime to constantly snipe Project A and eventually kill it that way.
+
+==Trivia==
+*This stage's Japanese name translates to "Twin Re-Leaf Towers", but the English name is shortened to "Re-Leaf Towers". The change was likely made to avoid references to the [[wikipedia:World Trade Center (1973–2001)|World Trade Center]].
+*Prior to [[Version 15.3 Update|Version 15.3]], the stage width was set to 4,400. The change was made because of a bug in how [[:Category:Animated Enemy Bases|Animated Bases]] spawn when not set as bosses.
+
+==Reference==
+*https://battlecats-db.com/stage/s13035-03.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 85 Stages]]

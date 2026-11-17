@@ -1,0 +1,129 @@
+'''Wakamiko Cat''' is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the Event Capsule during the [[Bikkuriman Collaboration Event]].
+
+{{Cat Info
+|ID = 475
+|rarity = EX
+|name1 = Wakamiko Cat
+|name2 = Warrior King Cat
+}}
+
+==Evolution==
+Evolves into '''Warrior King Cat''' at level 10.
+
+==Strategy/Usage==
+This is one of the few useful cats in this collab that aren't ubers, as it can be used as a [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] replacement in {{4c}} [[Legend Stages]] with [[:Category:Dark Enemies|Dark]] enemies. However, be wary of its high price if you are using it on non-Dark enemy stages. Furthermore, it is not recommended you use this Cat as a generalist, as its stats are lacking against non-Dark enemies.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 475
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni475 f00.png
+|Image2 = Uni475 c00.png
+|Name1 = Wakamiko Cat
+|Desc1 = Angel born in the Holy Cat realm. Sworn to slay<br>the wicked devil-doges by the power of Light.<br>Strong vs. Dark (Area Attack)
+|Name2 = Warrior King Cat
+|Desc2 = Gathers the divine harmonic forces of the Cats to<br>open the gates to a new realm of holy potential.<br>Strong vs. Dark (Area Attack)
+|Name1 (JP) = ネコ若神子
+|Desc1 (JP) = 聖猫源の中で誕生した天使。光の理力で<br>魔犬を一刀両断のもとに打ち砕くヨ！<br>黒い敵にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = Angel born in the source of the holy cat.
+Break the demon dog under the power of the light with a power of yo!<br>
+Strong against Dark enemies (Area Attack)
+|Name2 (JP) = ネコ神帝
+|Desc2 (JP) = にゃん子導きに相乗聖動が備わり次界への高飛速を<br>始めた猫帝１。勝手に無縁ゾーンへ突入！？<br>黒い敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Cat emperor 1 who began synergetic chrysanthemum guidance with Nyanko and started high-speeding to the next world. Plunge into a zone without permission! ? <br>
+Strong against Dark enemies (Area Attack)
+|Name1 (TW) = 貓咪若神子
+|Desc1 (TW) = 於聖貓源下誕生的天使。用光的理力<br>將魔犬一刀兩斷再加上碎屍萬段！<br>善於攻擊黑色敵人(範圍攻擊)
+|Name2 (TW) = 貓咪神帝
+|Desc2 (TW) = 引導貓咪具備雙重聖動向次界開始高速起飛<br>的貓帝1。擅自突入無緣地帶！？<br>善於攻擊黑色敵人(範圍攻擊)
+|Name1 (KR) = 고양이 약신자
+|Desc1 (KR) = 성묘원에서 탄생한 천사. 빛의 이력으로<br>마견을 일도양단으로 물리치겠다냥!<br>검은 적에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 고양이 신제
+|Desc2 (KR) = 고양이를 이끌기 위해 상승성동이 갖춰진 차계에<br>고속 비행을 시작한 묘제1. 멋대로 무연 존에 돌입!?<br>검은 적에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 820¢
+*Chapter 2: 1,230¢
+*Chapter 3: 1,640¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Wakamiko Cat
+|Normal Base HP = 1280
+|Normal Base AP = 370
+|Normal Range = 250
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 65
+|Normal Attack Length = 43
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 820
+|Normal Recharge = 990
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Warrior King Cat
+|Evolved Base HP = 1280
+|Evolved Base AP = 370
+|Evolved Range = 250
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 65
+|Evolved Attack Length = 43
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 820
+|Evolved Recharge = 990
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,280 HP
+|val-Normal-Attack Power = 370 damage<br>(135.37 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 82f <sub>2.73 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 33 ~ 24.2 seconds
+|val-Normal-MaxHP = 21,760 HP
+|val-Normal-MaxAttack = 6,290 damage<br>(2,301.22 DPS)
+|val-Evolved-Health = 21,760 HP
+|val-Evolved-Attack Power = 6,290 damage<br>(2,301.22 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 82f <sub>2.73 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 33 ~ 24.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni475 f00}}
+
+==Trivia==
+*In the English banner for [[Bikkuriman Collaboration Event/Event Gacha|Bikkuriman Choco Capsules]], Wakamiko Cat's name is misspelled as ''Wakamiko Catt''.
+
+==Reference==
+*https://battlecats-db.com/unit/476.html
+----
+{{CatNav|Rosary Angel|Cat Devil}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]

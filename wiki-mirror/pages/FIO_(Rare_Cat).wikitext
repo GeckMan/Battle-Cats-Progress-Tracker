@@ -1,0 +1,128 @@
+'''FIO''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 218
+|rarity = RR
+|name1 = FIO
+|name2 = FIO CC
+}}
+
+==Evolution==
+Evolves into '''FIO CC''' at level 10.
+
+==Strategy/Usage==
+She is essentially a worse version of [[Psychocat (Rare Cat)|Psychocat]] in every conceivable way. Psychocat has higher range and health, while also having a lower cost and shorter recharge time. The only advantages she has are a quicker attack animation, a faster attack rate and barely higher damage, however her quicker attack rate is mitigated by her slow only being 2 seconds, as opposed to Psychocat's 4 second slow. On top of this, she only has a 20% chance to slow, while Psychocat has a 50% chance. Additionally, Psychocat is also a Rare Cat, meaning they can both be used in {{4c}} stages, meaning there is no possible reason to use her over Psychocat.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 218
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni218 f00.png
+|Image2 = Uni218 c00.png
+|Name1 = FIO
+|Desc1 = Recruited from the Metal Slug series!<br>A demure yet naïve Sgt. Major in the intel<br>division. Might slow Aliens.
+|Name2 = FIO CC
+|Desc2 = Recruited from the Metal Slug series!<br>Easygoing and genuine, a crackshot with<br>handguns. Might slow Aliens.
+|Name1 (JP) = フィオ (Fio)
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>正規軍情報特殊部隊の上級曹長で名門軍人家の一人娘<br>ごくたまにエイリアンの動きを遅くする
+|Transl1 (JP) = Joining from the Metal Slug series!<br>A senior sergeant in the regular military intelligence special forces, the only daughter of a distinguished military family.<br>Very occasionally slows down the movement of aliens
+|Name2 (JP) = フィオCC (FioCC)
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>おっとりした性格でやや天然。ハンドガンで援護する<br>ごくたまにエイリアンの動きを遅くする
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Calm, precise and somewhat natural. Provides cover with a handgun.<br>Very occasionally slows down the movement of aliens
+|Name1 (TW) = 菲歐
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>正規軍情報特殊部隊的軍士長。軍人世家的獨生女<br>偶爾會讓異星戰士的動作變慢
+|Name2 (TW) = 菲歐CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>性格穩重，但有點天然呆。能用手槍進行支援<br>偶爾會讓異星戰士的動作變慢
+|Name1 (KR) = 피오
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>정규군 정보 특수 부대의 상사이자 명문 군인가의 외동딸<br>아주 가끔씩 에이리언의 움직임을 느리게한다
+|Name2 (KR) = 피오CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>차분한 성격이면서도 천진난만! 핸드건으로 엄호한다<br>아주 가끔씩 에이리언의 움직임을 느리게한다
+}}
+
+==Cost==
+*Chapter 1: 660¢
+*Chapter 2: 990¢
+*Chapter 3: 1,320¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = FIO
+|Normal Base HP = 179
+|Normal Base AP = 60
+|Normal Range = 330
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 51
+|Normal Attack Length = 25
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 660
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = FIO CC
+|Evolved Base HP = 230
+|Evolved Base AP = 85
+|Evolved Range = 330
+|Evolved Foreswing = 4
+|Evolved Attack Cooldown = 51
+|Evolved Attack Length = 25
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 660
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 179 HP
+|val-Normal-Attack Power = 60 damage<br>(32.73 DPS)
+|val-Normal-Attack Range = 330
+|val-Normal-Attack Frequency = 55f <sub>1.83 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 3,042 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(556.36 DPS)
+|val-Evolved-Health = 3,910 HP
+|val-Evolved-Attack Power = 1,445 damage<br>(788.18 DPS)
+|val-Evolved-Attack Range = 330
+|val-Evolved-Attack Frequency = 55f <sub>1.83 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 4f <sup>0.13s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni218 f00}}
+
+==Trivia==
+*FIO is based off of [[wikia:metalslug:Fio Germi|Fio Germi]] from the Metal Slug series.
+*FIO's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/219.html
+
+----
+{{CatNav|ERI|SV-001}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]

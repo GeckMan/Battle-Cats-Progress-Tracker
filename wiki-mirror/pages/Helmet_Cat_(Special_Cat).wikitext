@@ -1,0 +1,119 @@
+'''Helmet Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Catnip Challenges]] during the [[Anniversary/13th Year|13th Anniversary]]. It was added in [[Version 15.0 Update|Version 15.0]] for [[Nyanko Daisensou|BCJP]] and in [[Version 15.4 Update|Version 15.4]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 833
+|rarity = EX
+|name1 = Helmet Cat
+|name2 = Yellow Nyanko Ranger
+}}
+
+==Evolution==
+Evolves into '''Yellow Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+This Cat has a unique role as an anti-[[:Category:Dark Enemies|Dark]] tank that can even be used in {{4c}} restriction stages. The lack of proper tanks available for Dark enemies makes their role valuable regardless of their performance; that said, while effective on paper, their recharge time and cost greatly hinder their utility. Dark enemies are notorious for their insanely high DPS which can and will tear through this unit in a matter of seconds, in spite of their high effective health (178,500 at Lv.30, and 283,500 at Lv.50, assuming all [[Void Fruit]] Treasures are maxed). Without a stream of expensive replacements to fill any gaps in the frontline, they cannot hope to stop said threats on its own, let alone in mixed stages where Darks are supported by other nasty enemies, although they could be of use against Darks with longer attack cycles like [[Director Kurosawah]], [[Le'noir]], or [[Two Can]].
+
+Yellow Nyanko Ranger does possess a unique "Wave Immunity" Effect [[Cat Combo|Combo]] that can give themselves and other [[:Category:Nyanko Rangers|Nyanko Rangers]] a niche against [[:Category:Wave Attack Enemies|enemy Wave Attackers]]. Additionally, they can be used to great effect with [[Fedora Cat (Special Cat)|Blue Nyanko Ranger]] and [[Goggles Cat (Special Cat)|Green Nyanko Ranger]] to decrease this unit's recharge rate and cost respectively. The sheer power of these Nyanko Rangers and their Cat Combos/synergies prevents this Cat from being terrible outright, but it only lightly addresses the main problems on top of requiring additional slots.
+
+They continue to struggle later in the game due to rapidly escalating enemy strength magnifications on top of existing competition, with the likes of [[Li'l Gau (Rare Cat)|Crystal Li'l Gau Gau]], [[Nono (Rare Cat)|Frolicking Nono CC]] and [[Jetpack Cat (Rare Cat)|Jetpack Cat]] possessing superior specialist performance. For all of the aforementioned reasons, this cat usually only ever sees a home in the [[Underground Labyrinth]].
+
+{{Job|Classification = Tanker & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Yellow Strike|"Immune to Waves" Effects Activated|Helmet Cat|jpname=イエローパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 833
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni833 f00.png
+|Image2 = Uni833 c00.png
+|Name1 = Helmet Cat
+|Desc1 = The tireless heavy-hitter of the Nyanko Rangers.<br>Nobody has never seen them take a catnap.<br>Tough vs. Dark enemies (Omnistrike)
+|Name2 = Yellow Nyanko Ranger
+|Desc2 = Awaken, Lion Soul! Transform!<br>The Beast Hammer crushes evildoers into dust.<br>Tough vs. Dark enemies (Omnistrike)
+|Name1 (JP) = ヘルメットにゃんこ (Herumetto Nyanko, Helmet Cat)
+|Desc1 (JP) = にゃんこレンジャーの力仕事を一手に担うタフなネコ<br>常に働き続けていて、いつ寝ているのか誰も知らない<br>黒い敵に打たれ強い(全方位攻撃)
+|Transl1 (JP) = This tough Cat is a Nyanko Ranger who handles heavy work with ease<br>Is always seen doing work, so no one knows when it sleeps<br>Resistant to Dark enemies (Omnidirectional Attack)
+|Name2 (JP) = イエローにゃんこ (Ierō Nyanko, Yellow Cat)
+|Desc2 (JP) = ライオンソウルを宿し、にゃんこレンジャー変身！<br>「ヒャクジュウハンマー」で悪の野望を打ち砕く<br>黒い敵に打たれ強い(全方位攻撃)
+|Transl2 (JP) = Channeling the Lion Soul, Nyanko Ranger transform!<br>Demolishes evil ambitions with "The Beasts' Hammer"<br>Resistant to Dark enemies (Omnidirectional Attack)
+|Name1 (TW) = 安全帽貓
+|Desc1 (TW) = 一手包辦貓咪戰隊體力勞動的強悍貓咪<br>總是不停地工作，沒人知道他到底什麼時候睡覺<br>對上黑色敵人很耐打（全方位攻擊）
+|Name2 (TW) = 黃戰士貓
+|Desc2 (TW) = 以寄宿的獅王之魂變身為貓咪戰隊<br>以「百獸之鎚」粉碎邪惡的野心<br>對上黑色敵人很耐打（全方位攻擊）
+|Name1 (KR) = 헬멧 냥코
+|Desc1 (KR) = 냥코 레인저의 육체노동을 맡고 있는 터프한 고양이<br>항상 일하고 있어 대체 언제 자는지 아무도 모른다<br>검은 적에 맷집이 좋다 (전방위 공격)
+|Name2 (KR) = 옐로 냥코
+|Desc2 (KR) = 냥코 레인저 변신! 옐로 라이언!<br>「비스트 해머」로 악의 야망을 깨부순다<br>검은 적에 맷집이 좋다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,100¢
+*Chapter 2: 1,650¢
+*Chapter 3: 2,200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Helmet Cat
+|Normal Base HP = 1900
+|Normal Base AP = 335
+|Normal Range = 140
+|Normal Foreswing = 19
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 42
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 1100
+|Normal Recharge = 700
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~190)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Yellow Nyanko Ranger
+|Evolved Base HP = 2100
+|Evolved Base AP = 435
+|Evolved Range = 140
+|Evolved Foreswing = 19
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 42
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 1100
+|Evolved Recharge = 700
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~190)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni833 f00}}
+
+==Trivia==
+*Although the name of Yellow Nyanko Ranger's hammers (ヒャクジュウハンマー ''Hyakujū Hanmā'') literally translates to "Hundred-Beast Hammer", ''hyakujū'' (百獣) normally doesn't refer to exactly a hundred beasts, but to all or many kinds of beasts/animals. Given Yellow Nyanko Ranger's lion motif, this name is likely a reference to the idiom 百獣の王 ''hyakujū no ō'', which can literally be taken as "king of a hundred beasts", but is actually an idiom most commonly used in reference to the lion, king of the animal kingdom.
+
+==Reference==
+*https://battlecats-db.com/unit/834.html
+
+----
+{{CatNav|Fedora Cat|Goggles Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Resistant ability]]

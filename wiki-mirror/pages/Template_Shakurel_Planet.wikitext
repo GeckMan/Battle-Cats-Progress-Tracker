@@ -1,0 +1,34 @@
+{{#invoke:Navbox|main
+|template = Template:Shakurel Planet
+|title = [[Shakurel Planet Collaboration Event]]
+|navbox_class = shakurel
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Shakurel Cat (Special Cat)|Shakurel Cat]]
+*[[Shakurel Lion (Special Cat)|Shakurel Lion]]
+*[[Shakurel Tiger (Special Cat)|Shakurel Tiger]]
+*[[Shakurel Panda (Special Cat)|Shakurel Panda]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Shakurel Doge]]
+*[[Shakurel Gory]]
+*[[Shakurel Lion (Enemy)|Shakurel Lion]]
+*[[Shakurel Tiger (Enemy)|Shakurel Tiger]]
+*[[Shakurel Panda (Enemy)|Shakurel Panda]]
+*[[Shakurel Face]]
+
+|header3 = Stages
+|group3 = Shakurel Planet
+|list3 =
+*[[The Jaws of Nature]]
+*[[Gnawin' Bones]]
+*[[Chompin' Trees]]
+*[[Munchin' Rocks]]
+*[[The Future Is Chins]]
+}}<templatestyles src="Shakurel Planet/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Shakurel Planet]]}}<noinclude>[[Category:Navboxes]]</noinclude>

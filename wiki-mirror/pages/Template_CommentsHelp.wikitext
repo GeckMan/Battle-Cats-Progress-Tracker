@@ -1,0 +1,12 @@
+:''To use this template, type <code>{{t|CommentsHelp}}</code> as a comment.''
+
+<h3>Images</h3>
+# Either:
+## If the file already exists, find its name
+## If the file doesn't already exist, upload the file at [[Special:Upload]] and make note of the file name
+# Write <code><nowiki>[[File:filename]]</nowiki></code>
+
+e.g. for [[:File:Uni000 f00.png]] you'd write<pre>[[File:Uni000 f00.png]]</pre> which gets you [[File:Uni000 f00.png]]<br>
+If you want to adjust the size, then add the size at the end, e.g. <pre>[[File:AngelicCroaknir.png|300px]]</pre> gives you [[File:AngelicCroaknir.png|300px]]
+
+See more information at [[mw:Help:Images#Rendering a single image]].

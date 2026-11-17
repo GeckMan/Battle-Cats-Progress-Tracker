@@ -1,0 +1,53 @@
+{{EnemiesAppearing|Heavenly Hippoe|Angelic Gory|Gabriel|Mr. Angel|Angelic Sleipnir|Divine Cyclone}}
+'''Floor 26''' is the 26th floor of [[Golden Tower]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 25 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 200
+|enemy castle hp = 680,000 HP
+|enemies = {{Magnification|Heavenly Hippoe|400%
+|Angelic Gory|200%
+|Gabriel|400%
+|Mr. Angel|150%
+|Angelic Sleipnir|200%}}
+|boss = {{Magnification|Divine Cyclone|100%}}
+|treasure = - [[Catseye]] [Rare] +6 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 10
+|jpname = 26th Floor
+|script = 26階
+|romaji = 26 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★9
+|prev stage = [[Golden Tower/Floor 25|Floor 25]]
+|next stage = [[Golden Tower/Floor 27|Floor 27]]
+}}
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*Infinite [[Mr. Angel]]s spawn after 20 seconds<sup>600f</sup>, delay 33.33~46.67 seconds<sup>1,000f~1,400f</sup>.
+*3 [[Gabriel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 0.67~2 seconds<sup>20f~60f</sup>.
+*3 [[Mr. Angel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 3.33~5.33 seconds<sup>100f~160f</sup>.
+*When the base reaches 99% HP:
+**1 [[Divine Cyclone]] spawns as the boss.
+**5 [[Heavenly Hippoe]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**10 [[Angelic Gory|Angelic Gories]] spawn, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**3 [[Gabriel]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**3 [[Mr. Angel]]s spawn, delay 2 seconds<sup>60f</sup>.
+**1 [[Angelic Sleipnir]] spawns.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 26#Strategy|Floor 26]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-26.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]
+[[Category:No Continue Stages]]

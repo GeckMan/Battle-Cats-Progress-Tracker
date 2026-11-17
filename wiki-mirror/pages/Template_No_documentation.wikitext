@@ -1,0 +1,2 @@
+<includeonly>{{documentation|dependency_list=off}}
+<span class='plainlinks'>'''This page does not have any documentation.''' Please consider adding documentation at [[{{#invoke:string|replace|{{FULLPAGENAME}}|/doc}}/doc]]. <nowiki>[</nowiki>[{{fullurl:{{#invoke:string|replace|{{FULLPAGENAME}}|/doc}}/doc|action=edit}} edit]<nowiki>]</nowiki></span>{{#if:{{{dependency_list|}}}||{{dependency_list}}}}[[Category:Pages needing documentation]]</includeonly><noinclude>{{/doc}}</noinclude>

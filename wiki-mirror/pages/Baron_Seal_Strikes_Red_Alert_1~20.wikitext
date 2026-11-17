@@ -1,0 +1,466 @@
+:''Not to be confused with [[Red Alert]].''
+<tabber>
+Red Alert 1~10=
+{{EnemiesAppearing|Doge Dark|Zoge|Gory Dark|Zory|Shadow Boxer K|Zang Roo|Baron Seal}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:mapsn000 00 a en.png]]
+|stage location = [[File:Mapname020 a en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|Zoge|0
+|Gory Dark|0
+|Zory|0
+|Shadow Boxer K|0
+|Zang Roo|0}}
+|boss = {{Magnification|Baron Seal|0}}
+|restriction = [[No Continues]]
+|width = 4,800
+|max enemies = 10
+|jpname = Caution Lv.X
+|script = 警戒Lv.X
+|romaji = Keikai Lv.X
+|event = [[Baron Seal Strikes]]
+|event-chapter = [[Baron Seal Strikes]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*5 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*5 [[Zoge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Gory Dark]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*1 [[Zory]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Baron Seal]] spawns as the boss.
+**4 [[Gory Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 58 seconds<sup>1,740f</sup>.
+**4 [[Zory|Zories]] spawn after 40 seconds<sup>1,200f</sup>, delay 58 seconds<sup>1,740f</sup>.
+**3 [[Shadow Boxer K]]s spawn after 20 seconds<sup>600f</sup>, delay 49.33 seconds<sup>1,480f</sup>.
+**3 [[Zang Roo]]s spawn after 20 seconds<sup>600f</sup>, delay 49.33 seconds<sup>1,480f</sup>.
+**Infinite [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 28 seconds<sup>840f</sup>.
+**Infinite [[Zoge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 28 seconds<sup>840f</sup>.
+**5 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67 seconds<sup>500f</sup>.
+**5 [[Zoge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67 seconds<sup>500f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Red Alert
+! colspan="7" style="text-align: center;"|Strength Magnifications
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! rowspan="2" style="text-align: center;"|Continuation Chance [[Baron Seal Strikes/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Baron Seal]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Gory Dark]]
+! scope="col" |[[Zory]]
+! scope="col" |[[Shadow Boxer K]]
+! scope="col" |[[Zang Roo]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|6,000%
+|500%
+|150%
+|150%
+|100%
+|150%
+|100%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|6,778%
+|556%
+|167%
+|167%
+|122%
+|167%
+|111%
+|60
+|Coal +5
+|1,140
+|3%
+|-
+! scope="row" |3
+|7,556%
+|612%
+|184%
+|184%
+|144%
+|184%
+|122%
+|70
+|500,000 XP
+|1,330
+|7%
+|-
+! scope="row" |4
+|8,334%
+|668%
+|201%
+|201%
+|166%
+|201%
+|133%
+|70
+|Feathers +5
+|1,330
+|11%
+|-
+! scope="row" |5
+|9,112%
+|724%
+|218%
+|218%
+|188%
+|218%
+|144%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|9,890%
+|780%
+|235%
+|235%
+|210%
+|235%
+|155%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|10,668%
+|836%
+|252%
+|252%
+|232%
+|252%
+|166%
+|90
+|Gold +5
+|1,710
+|21%
+|-
+! scope="row" |8
+|11,446%
+|892%
+|269%
+|269%
+|254%
+|269%
+|177%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|12,224%
+|948%
+|286%
+|286%
+|276%
+|286%
+|188%
+|100
+|Meteorite +5
+|1,900
+|27%
+|-
+! scope="row" |10
+|13,000%
+|1,000%
+|300%
+|300%
+|300%
+|300%
+|200%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+These first ten stages are very straightforward. Use the startoff to your advantage by building up cash, then use strong Area Attackers and [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] to keep Baron Seal in check.
+
+==='''Recommended Units'''===
+*Meatshields: Obviously, given the high pushing power of Gauntlet stages, you're going to need meatshields. The best ones here are [[Crazed Cat (Super Rare Cat)|Manic Mohawk]] and [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]].
+*Talented [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: While not too helpful when Baron Seal is on the field, they help tremendously for building money up at the beginning of the stage. Be careful not to underestimate your Can Can's strength, as it's possible for you to have your Can Can prematurely hit the base.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: A strong Area Attacker who works to take care of the Shadow Boxer Ks and Gory Darks. He can also deal decent damage against the Zombie peons.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Housewife Cat is an excellent unit here, being able to apply Slow against the Zories and Zang Roos, as well as being able to hit Baron Seal itself.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: The enemies in these stages are all powerful pushers with high DPS and great speed, so naturally Stone does a great job of keeping them still.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Cyberpunk is a very effective crowd-controller for this stage, since he has an effective ability and has good uptime.
+*[[Ancient Egg: N107 (Rare Cat)|Cat Chief]]: Chief is a very strong unit here, being able to deal huge damage to the Zombie enemies as well as clean up corpses.
+*[[Urs & Fenrir (Special Cat)|Awakened Urs]]: Urs' Colossus Slayer ability allows her to rack up huge DPS against Baron Seal as well as the supporting peons.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Disposable damage to either remove a peon, deal damage against a pushing threat, or even as supporting damage for Baron Seal.
+*Talented [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]]: A boosted LKD works great at supplying damage against Baron Seal. Also has an Attack combo with [[Pogo Cat (Rare Cat)|Jiangshi Cat]], who works as a meatshield.
+
+==='''Recommended Ubers'''===
+*[[Empress Chronos (Uber Rare Cat)|Empress Chronos]]: Chronos' Freeze ability is extremely powerful here, especially in combination with Cyberpunk.
+*[[Shining Amaterasu (Uber Rare Cat)|Shining Amaterasu]]: Every enemy in these stages have a trait, allowing Amaterasu to deal massive amounts of damage to them all at her safe 455 range. If you give her the Zombie Killer talent, she can also keep Zang Roos and Zories down for good.
+*Anti-Red Ubers: Anti-Red Ubers have a chance to connect onto Baron Seal and potentialy speed up the stage. These not only include nukers like [[Pai-Pai (Uber Rare Cat)|Pai-Pai DX]] and [[Thundia (Uber Rare Cat)|Divine Thundia β]], but anti-Red CC like [[Ice Cat (Uber Rare Cat)|Ice Crystal Cat]] and [[Momotaro (Uber Rare Cat)|The Peach Devils]].
+*Colossus Slayer Ubers: Obviously, any Uber with Colossal Slayer gains much higher damage against Baron Seal, helping speed up these stages. In particular, [[Sea Serpent Daliasan (Uber Rare Cat)|God-Emperor Daliasan]], [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]], [[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]], [[Terun (Uber Rare Cat)|Divine Terun ζ]], and [[Cat Tengu (Uber Rare Cat)|Immortal Master Tengu]] are very strong here.
+*Many [[UBERFEST (Gacha Event)|UBERFEST]] with the inclusion of a few [[EPICFEST (Gacha Event)|EPICFEST]] units, like [[Kasli the Bane (Uber Rare Cat)|Kasli the Bane]] and [[King of Doom Phono (Uber Rare Cat)|King of Doom Phono]]: Since all of the enemies here are traited, you can find great use for just about every UBERFEST exclusive here, with the only exception being [[Baby Garu (Uber Rare Cat)|Mighty Aegis Garu]] and [[Iz the Dancer (Uber Rare Cat)|Iz the Alluring Dancer]] due to the extremely aggressive nature of the stage.
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: With his Colossus Slayer Talent, Cosmo not only does crazy damage to Baron Seal, but can cripple the supporting threats. Cosmo's Wave Attack also comboes with his initial hit, which will cause the Zombie threats to take damage and not burrow.
+
+|-|
+Red Alert 11~20=
+{{EnemiesAppearing|Shibalien Elite|Gabriel|Mistress Celeboodle|Star Peng|Cala Maria|Angelic Gory|Baron Seal}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:mapsn000 00 a en.png]]
+|stage location = [[File:Mapname020 a en.png]]
+|enemies = {{Magnification|Shibalien Elite|0
+|Gabriel|0
+|Mistress Celeboodle|0
+|Star Peng|0
+|Cala Maria|0
+|Angelic Gory|0}}
+|boss = {{Magnification|Baron Seal|0}}
+|restriction = [[No Continues]]
+|width = 5,500
+|max enemies = 12
+|jpname = Caution Lv.X
+|script = 警戒Lv.X
+|romaji = Keikai Lv.X
+|event = [[Baron Seal Strikes]]
+|event-chapter = [[Baron Seal Strikes]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*Infinite [[Shibalien Elite]]s spawn after 6.67 seconds<sup>200f</sup>, delay 30.67~34.67 seconds<sup>920f~1,040f</sup>.
+*3 [[Gabriel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 14.67~20 seconds<sup>440f~600f</sup>.
+*6 [[Mistress Celeboodle]]s spawn after 26.67 seconds<sup>800f</sup>, delay 36~40 seconds<sup>1,080f~1,200f</sup>.
+*Infinite [[Star Peng]]s spawn after 100 seconds<sup>3,000f</sup>, delay 37.33~40 seconds<sup>1,120f~1,200f</sup>.
+*3 [[Gabriel]]s spawn after 126.67 seconds<sup>3,800f</sup>, delay 14.67~20 seconds<sup>440f~600f</sup>.
+*3 [[Shibalien Elite]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 14.67~20 seconds<sup>440f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Baron Seal]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+**3 [[Star Peng]]s spawn after 40 seconds<sup>1,200f</sup>, delay 57.33~60 seconds<sup>1,720f~1,800f</sup>.
+**1 [[Cala Maria]] spawns after 3.33 seconds<sup>100f</sup>.
+**Infinite [[Gabriel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 21.33~28 seconds<sup>640f~840f</sup>.
+**1 [[Angelic Gory]] spawns.
+**6 [[Angelic Gory|Angelic Gories]] spawn, delay 48~50.67 seconds<sup>1,440f~1,520f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;"|Red Alert
+! colspan="7" style="text-align: center;"|Strength Magnifications
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! colspan="3" scope="col" style="text-align: center;"|Continuation Chance
+|-
+! scope="col" |[[Baron Seal]]
+! scope="col" |[[Shibalien Elite]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Mistress Celeboodle]]
+! scope="col" |[[Star Peng]]
+! scope="col" |[[Cala Maria]]
+! scope="col" |[[Angelic Gory]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+! scope="col" |[[Baron Seal Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+! scope="col" |[[Baron Seal Strikes/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! scope="col" |[[Baron Seal Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|13,000%
+|350%
+|500%
+|1,200%
+|350%
+|130%
+|250%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|14,000%
+|644%
+|578%
+|1,333%
+|644%
+|143%
+|289%
+|120
+|Beast Bones +5
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|15,000%
+|938%
+|656%
+|1,466%
+|938%
+|156%
+|328%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|16,000%
+|1,232%
+|734%
+|1,599%
+|1,232%
+|169%
+|367%
+|140
+|Sprockets +5
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|17,000%
+|1,526%
+|812%
+|1,732%
+|1,526%
+|182%
+|406%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|18,000%
+|1,820%
+|890%
+|1,865%
+|1,820%
+|195%
+|445%
+|200
+|Ammonite +5
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|19,000%
+|2,114%
+|968%
+|1,998%
+|2,114%
+|208%
+|484%
+|200
+|Bricks +15
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|20,000%
+|2,408%
+|1,046%
+|2,131%
+|2,408%
+|221%
+|523%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|21,000%
+|2,702%
+|1,124%
+|2,264%
+|2,702%
+|234%
+|562%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|22,000%
+|3,000%
+|1,200%
+|2,400%
+|3,000%
+|250%
+|600%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+With eldritch horrors like 250% Cala Maria, 2400% Mistress Celeboodles, 600% Angelic Gories, 1200% Gabriels, and 3000% Star Pengs/Shibalien Elites, these stages take the concept of stages 1-10 and crank it up to the next level. Most of the threats however only spawn base hit, meaning you still are able to build up money. Make sure to pack plenty of meatshields and Ubers, or just about anything that consistently inhibits the enemies' raw strength, as their combined DPS can melt through even [[Stone Cat (Rare Cat)|Boulder Cat]] in the blink of an eye.
+
+==='''Recommended Units'''===
+*Meatshields: There is a ridiculous amount of pushing power here, so make sure to run 4-5 meatshields. Good options here include [[Crazed Cat (Super Rare Cat)|Manic Mohawk Cat]], [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]], [[Pogo Cat (Rare Cat)|Jiangshi Cat]], Boulder Cat, and [[Rocker Cat (Rare Cat)|Ramen Cat]].
+*[[Phantom Cat (Rare Cat)|Bubble Cat]]: Bubble Cat is an extremely effective attacker for these stages, since they work similarly to Housewife, except with Massive Damage to Angels and slightly higher range, which makes them even more effective than Mushroom Cat because they actually outrange Baron Seal.
+*[[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: Given that the Angelic Gories are the hardest part of this level, you naturally will want units to kill them quickly. Packing Massive Damage vs Angels, Mushroom can outrange both Angelic Gory and Gabriel and quickly cripple them.
+*Talented [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: While not too helpful when Baron Seal is on the field, they help tremendously for building money up at the beginning of the stage, as well as dealing serious damage against the Shibalien Elites, Gabriels, Mistress Celeboodles, or Star Pengs.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Works similarly to her performance on stages 1-10, having LD and being able to deal huge damage on the supporting threats with her Savage Blows.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Cyberpunk is even more crucial here given how many threats are on screen at any present time. While many of the enemies here are slow, Gabriel and Angelic Gory are not, so make sure to protect Cyberpunk by ridding these two threats as fast as possible.
+*Talented [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]]: A boosted LKD works great at supplying damage against Baron Seal. Also has an Attack combo with Jiangshi Cat.
+*[[Urs & Fenrir (Special Cat)|Awakened Urs]]: Urs is a great generalist backliner, whose Colossus Slayer ability allows her to rack up huge DPS against Baron Seal as well as the supporting peons. While she is frail, she outranges most enemies here.
+
+==='''Recommended Ubers'''===
+*[[Momotaro (Uber Rare Cat)|The Peach Devils]]: Given how much sheer power is on screen, Peach Devils' Freeze is extremely strong here to reduce Angelic Gory and Baron Seal's pure force, if their Freeze activates.
+*[[Empress Chronos (Uber Rare Cat)|Empress Chronos]]: Similarly to The Peach Devils, Chronos' Freeze is extremely powerful here to give a few seconds of relief.
+*[[Kintaro (Uber Rare Cat)|Kinrangers GigaForce]]: Kintaro not only serves as a good support option for the Gories, but has LD and high piercing range to connect onto the threats present here. With talents, Kinrangers GigaForce can even target Red. Curse isn't too important given Baron Seal's DPS, but Slow definitely is.
+*[[Shining Amaterasu (Uber Rare Cat)|Shining Amaterasu]]: Every enemy in these stages have a trait, allowing Amaterasu to deal massive amounts of damage to them all at her safe 455 range.
+*Many [[UBERFEST (Gacha Event)|UBERFEST]] exclusives with the inclusion of a few [[EPICFEST (Gacha Event)|EPICFEST]] units, like [[Kasli the Bane (Uber Rare Cat)|Kasli the Bane]] and [[King of Doom Phono (Uber Rare Cat)|King of Doom Phono]]: Since all of the enemies here are traited, you can find great use for just about every UBERFEST exclusive here, with the only exception being [[Baby Garu (Uber Rare Cat)|Mighty Aegis Garu]] and [[Iz the Dancer (Uber Rare Cat)|Iz the Alluring Dancer]], as the stage is too aggressive for them to be of any use.
+*Anti-Angel Ubers: The Angelic Gories are the hardest part of the level, so try to kill them quickly. Examples include [[Kasa Jizo (Uber Rare Cat)|Jizo's Mega-Castle]], [[Mami Tomoe (Uber Rare Cat)|Mami Tomoe]], and [[Ushiwakamaru (Legend Rare Cat)|Colossal Benkei]].
+*Anti-Red Nukers: Anti-Red Nukers have a chance to connect onto Baron Seal and potentially speed up the stage. Examples include [[Pai-Pai (Uber Rare Cat)|Pai-Pai DX]], [[EVA Unit-02 (Uber Rare Cat)|Unit-02, Code 777]], and [[Thundia (Uber Rare Cat)|Divine Thundia β]].
+*Colossus Slayer Ubers: Obviously, any Uber with Colossal Slayer gains much higher damage against Baron Seal, helping speed up these stages. In particular, [[Sea Serpent Daliasan (Uber Rare Cat)|God-Emperor Daliasan]], [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]], [[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]], [[Terun (Uber Rare Cat)|Divine Terun ζ]], and [[Cat Tengu (Uber Rare Cat)|Immortal Master Tengu]] are very strong here.
+*[[Wonder MOMOCO (Legend Rare Cat)|Wonder MOMOCO]]: Very similar niche to Peach Devils trading survivability and cooldown for the ability to unleash high-level Waves to freeze Baron Seal and Cala Maria. She also gained Colossal Slayer and immunities to Baron Seal's debuff in True Form giving her even better matchup against it.
+*[[Gaia the Creator (Legend Rare Cat)|Gaia the Creator]]: While a bit hard to use, Gaia's Insane Damage vs. Traited lets her deal extreme amounts of damage here when supported properly.
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: With his Colossal Slayer Talent unlocked, Supernova Cosmo can unleash crazy amounts of damage to every enemy here. Cosmo also has Freeze vs. Angels, which helps considerably against the Angelic Gories and Cala Maria, if she gets within range.
+*[[Talents|Ultra Talented]] [[Wolfchild Deale (Uber Rare Cat)|Jester Queen Deale]]: With Mini-Waves, she can push all of Baron Seals support away from it, given she will knockback at least once. Colossus slayer also allows her to chip at Baron Seal as well.
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24020.html
+
+{{SpecialStages List}}
+[[Category:Baron Seal Strikes Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

@@ -1,0 +1,159 @@
+{{EnemiesAppearing|Gabriel|Kroxo|Cyberhorn|Heavenly Le'saint}}
+
+{{Stage Info
+|stage name = [[File:Rc021.png]]
+[[File:Mapsn022 00 a en.png]]
+|stage location = [[File:Mapname022 a en.png]]
+|enemies = {{Magnification|Gabriel|0
+|Kroxo|0
+|Cyberhorn|0}}
+|boss = {{Magnification|Heavenly Le'saint|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,500
+|max enemies = 8
+|jpname = Homecoming  Lv.X
+|script = 帰省 Lv.X
+|romaji = Kisei  Lv. X
+|event = [[August Gauntlet]]
+|event-chapter = [[August Gauntlet]]
+|require = Clear [[Ghostly Houseguests (Monthly Event)|Ghostly Houseguests]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 10 seconds<sup>300f</sup>, delay 12~24 seconds<sup>360f~720f</sup>.
+*5 [[Kroxo]]s spawn after 20 seconds<sup>600</sup>, delay 40~42 seconds<sup>1,200f~1,260f</sup>.
+*1 [[Cyberhorn]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Heavenly Le'saint]] spawns as the boss.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Not Summer Lv.
+! colspan="4" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Heavenly Le'saint]]
+! scope="col" |[[Kroxo]]
+! scope="col" |[[Cyberhorn]]
+! scope="col" |[[Gabriel]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|200%
+|1,000%
+|600%
+|200%
+|110
+|[[Battle Items#Speed Up|Speed Up]] +2
+|2,090
+|-
+! scope="row" |12
+|211%
+|1,089%
+|644%
+|222%
+|110
+|[[Catamin]] [A] +2
+|2,090
+|-
+! scope="row" |13
+|222%
+|1,178%
+|688%
+|244%
+|120
+|[[Battle Items#Cat CPU|Cat CPU]] +2
+|2,280
+|-
+! scope="row" |14
+|233%
+|1,267%
+|732%
+|266%
+|120
+|[[Battle Items#Rich Cat|Rich Cat]] +2
+|2,280
+|-
+! scope="row" |15
+|244%
+|1,356%
+|776%
+|288%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|255%
+|1,445%
+|820%
+|310%
+|130
+|[[Catamin]] [B] +2
+|2,470
+|-
+! scope="row" |17
+|266%
+|1,534%
+|864%
+|332%
+|140
+|[[Battle Items#Sniper the Cat|Sniper the Cat]] +2
+|2,660
+|-
+! scope="row" |18
+|277%
+|1,623%
+|908%
+|354%
+|140
+|[[Catamin]] [C] +2
+|2,660
+|-
+! scope="row" |19
+|288%
+|1,712%
+|952%
+|376%
+|150
+|Aku [[Catfruit]] Seed +1
+|2,660
+|-
+! scope="row" |20
+|300%
+|1,800%
+|1,000%
+|400%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|-
+|}
+
+==Strategy==
+While the Alien enemies are limited, the Cyberhorn's stats become massively inflated at higher magnifications, reaching 1,200,000 HP at max level. As such, it's not recommended to challenge this gauntlet until all [[Anti-unstarred Alien Treasures]] are obtained.
+
+This is one of the simpler Monthly Gauntlets, as there is a lack of strong peons; it helps that Heavenly Le'saint's Angel typing leaves him prone to being stalled out by [[Rocker Cat (Rare Cat)|Ramen Cat]]. Stall the initial Cyberhorn with anti-Alien crowd controllers (e.g. [[Surfer Cat (Super Rare Cat)|Seafarer Cat]], [[Psychocat (Rare Cat)|Corrupted Psychocat]]), alongside your choice of [[Rover Cat (Rare Cat)|Catellite]] or Soap Cat. Once the base is hit, beat down Heavenly Le'saint with whatever anti-Angel cats you own. Letting him come to your base and defending with Ramen Cat while attacking with any cat outranging him (>320 range, e.g. [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]]) is a pretty good way to get around the Cat Limit.
+
+==='''Recommended Units'''===
+*[[Rocker Cat (Rare Cat)|Ramen Cat]] - Basically mandatory for this stage, as he prevents Heavenly Le'saint from pushing very hard. It's not recommended to use him against the initial starting Cyberhorn, however, especially at higher magnifications.
+*[[Express Cat (Super Rare Cat)|Maglev Cat]] - With its high speed, it can rush into the frontlines and deal huge burst damage to either Heavenly Le'saint or an annoying Gabriel blocking the way.
+*[[Phantom Cat (Rare Cat)|Bubble Cat]] - Though a relatively late-game unit, Bubble Cat is able to comfortably outrange Heavenly Le'saint while chewing through its giant health pool with its Massive Damage vs. Angels.
+
+==='''Recommended Ubers'''===
+*Anti-Angel Nukers - Ubers such as [[Kalisa (Uber Rare Cat)|Divine Kalisa]], [[Ushiwakamaru (Legend Rare Cat)|Colossal Benkei]], [[Voluptuous Peony - Daji (Uber Rare Cat)|Voluptuous Peony - Daji]], [[Sonic (Uber Rare Cat)|Sonic]] and more will help to massively reduce the amount of time it takes to kill Heavenly Le'saint.
+*[[Thunder Jack (Uber Rare Cat)|Thunder Jack]] - Being a unit that has knockback against Aliens and Angels, Thunder Jack can make this stage a joke by stunlocking Le'Saint.
+
+==Reference==
+*https://battlecats-db.com/stage/s24022.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

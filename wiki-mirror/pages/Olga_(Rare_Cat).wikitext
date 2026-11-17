@@ -1,0 +1,128 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Olga (Enemy)]].''
+'''Olga''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 112
+|rarity = RR
+|name1 = Olga
+|name2 = Olga CC
+}}
+
+==Evolution==
+Evolves into '''Olga CC''' at level 10.
+
+==Strategy/Usage==
+Practically being a copy-paste of [[Pirate Cat (Rare Cat)|Pirate Cat]] means that Olga and he can be used interchangeably—not half bad for a measly collab rare. Using both of them simultaneously can prove effective in Red-dominant early-game stages, an example being [[Last Gang]] where [[Dark Emperor Nyandam]] can be stun-locked twice as hard as he would against Pirate normally. As with Pirate, Olga can also help push back melee Red enemies such as [[Bore]].
+
+This fair playing ground is discarded when the player is able to evolve Pirate into Dread Pirate Catley, who gains significant defensive buffs on top of a slightly higher proc chance through stat increases and [[Talents]]. Olga, unable to receive such buffs, is reduced to situational support for Catley, though he usually does his job well enough to not need it. Stages with [[Wave Attack]]s completely ditch the idea of using Olga, as only Catley is able to have [[Immune to Waves|Wave Immunity]]. Olga's only prominent use from there on is in [[Merciless Onslaught]], where low-damage, Red-knockback units are key to defeat the stage.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 112
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni112 f00.png
+|Image2 = Uni112 c00.png
+|Name1 = Olga
+|Desc1 = Joining the fight from Merc Storia!<br>Left her homeland to learn about the world.<br>Small chance to Knockback Red.
+|Name2 = Olga CC
+|Desc2 = Joining the fight from Merc Storia!<br>Has a kind face but a sadistic nature.<br>Small chance to Knockback Red.
+|Name1 (JP) = オルガ (Oruga, Olga)
+|Desc1 (JP) = メルクストーリアから参戦！<br>社会勉強のために国を出たお嬢様<br>ごくたまに赤い敵をふっとばす
+|Transl1 (JP) = Joining the war from Merk Storia!<br>A young lady who left her country to study society<br>Occasionally pushes back Red enemies
+|Name2 (JP) = オルガCC (OrugaCC, OlgaCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>表情に似合わぬサディスティックな性格のお嬢様<br>ごくたまに赤い敵をふっとばす
+|Transl2 (JP) = Joining the war from Merk Storia!<br>A young lady with a sadistic personality that doesn't match her face<br>Occasionally pushes back Red enemies
+|Name1 (TW) = 奧爾加
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>離鄉背井出來體驗社會的大小姐<br>偶爾能打飛紅色敵人
+|Name2 (TW) = 奧爾加CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>可愛的笑容背後有著殘酷個性的大小姐<br>偶爾能打飛紅色敵人
+|Name1 (KR) = 올가
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>세상 물정을 알기 위해 나라를 떠나 온 아가씨<br>아주 가끔 빨간 적을 날려버린다
+|Name2 (KR) = 올가CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>표정과는 어울리지 않게 S취향인 아가씨<br>아주 가끔 빨간 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 320¢
+*Chapter 2: 480¢
+*Chapter 3: 640¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Olga
+|Normal Base HP = 270
+|Normal Base AP = 24
+|Normal Range = 265
+|Normal Foreswing = 20
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 45
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 320
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Olga CC
+|Evolved Base HP = 320
+|Evolved Base AP = 34
+|Evolved Range = 265
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 45
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 320
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 270 HP
+|val-Normal-Attack Power = 24 damage<br>(16 DPS)
+|val-Normal-Attack Range = 265
+|val-Normal-Attack Frequency = 45f <sub>1.5 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 20f <sup>0.67s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 4,590 HP
+|val-Normal-MaxAttack = 407 damage<br>(271.33 DPS)
+|val-Evolved-Health = 5,440 HP
+|val-Evolved-Attack Power = 577 damage<br>(384.67 DPS)
+|val-Evolved-Attack Range = 265
+|val-Evolved-Attack Frequency = 45f <sub>1.5 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni112 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/113.html
+
+----
+{{CatNav|Nono|Norn}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Gacha Cats]]

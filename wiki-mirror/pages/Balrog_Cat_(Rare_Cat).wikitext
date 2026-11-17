@@ -1,0 +1,128 @@
+:''For other uses see [[Balrog (disambiguation)]].''
+'''Balrog Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Cat Capsules]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 577
+|rarity = RR
+|name1 = Balrog Cat
+|name2 = Balrog Cat CC
+}}
+
+==Evolution==
+Evolves into '''Balrog Cat CC''' at level 10.
+
+==Strategy/Usage==
+This cat isn't really good due to single target, low HP and long recharge time for a cheap unit. Its only strength is the high DPS, which is hindered by his low health and long recharge time. Overall, this unit is not viable unless in early game.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 577
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni577 f00.png
+|Image2 = Uni577 c00.png
+|Name1 = Balrog Cat
+|Desc1 = Aiming to take the grand prize and get rich!<br>...but he's been disqualified for repeated fouls.<br>Strong vs. Dark enemies
+|Name2 = Balrog Cat CC
+|Desc2 = An underworld legend with a flawless hook.<br>Can't sleep after fights due to muscle pain.<br>Strong vs. Dark enemies
+|Name1 (JP) = ネコバイソン (Neko Baison, Bison Cat)
+|Desc1 (JP) = 一攫千金を狙う自分の欲望に忠実なネコ<br>試合で反則を連発し、ファイトマネーはいまだゼロ<br>黒い敵にめっぽう強い
+|Transl1 (JP) = A cat faithful to his desire to get rich.<br>He commits a series of penalties during matches, and fight money is still zero.<br>Very strong against Dark enemies.
+|Name2 (JP) = ネコバイソンCC (Neko Baison CC, Bison Cat CC)
+|Desc2 (JP) = 強烈なパンチを武器に闇の世界で生きるネコ<br>豪腕を振るった翌日は筋肉痛で寝込む<br>黒い敵にめっぽう強い
+|Transl2 (JP) = A cat who lives in a world of darkness with a powerful punch as his weapon.<br>The day after swinging his arms, he lies in bed with muscle pains.<br>Very strong against Dark enemies.
+|Name1 (TW) = 拜森貓
+|Desc1 (TW) = 對自我一擲千金目標慾望忠實的貓咪<br>在比賽中不斷犯規，結果還沒拿到半毛出場費<br>善於攻擊黑色敵人
+|Name2 (TW) = 拜森貓CC
+|Desc2 (TW) = 以強烈的打擊爲武器生活在黑暗世界的貓咪<br>大展身手的隔天就是肌肉痠痛一睡不起<br>善於攻擊黑色敵人
+|Name1 (KR) = 고양이 바이슨
+|Desc1 (KR) = 일확천금을 노리는 자신의 욕망에 충실한 고양이<br>시합에서 반칙을 연발하여 파이트 머니는 아직 제로<br>검은 적에 엄청 강하다
+|Name2 (KR) = 고양이 바이슨CC
+|Desc2 (KR) = 강렬한 펀치를 무기로 어둠의 세계에서 살아가는 고양이<br>힘 좀 쓴 다음 날에는 근육통으로 골골댄다<br>검은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 380¢
+*Chapter 2: 570¢
+*Chapter 3: 760¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Balrog Cat
+|Normal Base HP = 570
+|Normal Base AP = 200
+|Normal Range = 300
+|Normal Foreswing = 7
+|Normal Attack Cooldown = 69
+|Normal Attack Length = 37
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 380
+|Normal Recharge = 500
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Balrog Cat CC
+|Evolved Base HP = 570
+|Evolved Base AP = 200
+|Evolved Range = 300
+|Evolved Foreswing = 7
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 37
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 380
+|Evolved Recharge = 500
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 570 HP
+|val-Normal-Attack Power = 200 damage<br>(78.95 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 76f <sub>2.53 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 7f <sup>0.23s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 16.67 ~ 7.87 seconds
+|val-Normal-MaxHP = 9,690 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(1,342.11 DPS)
+|val-Evolved-Health = 9,690 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(1,342.11 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 76f <sub>2.53 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 7f <sup>0.23s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 16.67 ~ 7.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni577 f00}}
+
+==Trivia==
+*In [[Nyanko Daisensou|Nyanko Daisensou]], this Cat is known as [[M. Bison Cat (Rare Cat)|Bison Cat]], with Balrog Cat being [[Vega Cat (Rare Cat)|Vega Cat's]] name.
+
+==Reference==
+*https://battlecats-db.com/unit/578.html
+
+----
+{{CatNav|C. Honda|Vega Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

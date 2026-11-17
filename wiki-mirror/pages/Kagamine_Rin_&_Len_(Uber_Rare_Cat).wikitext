@@ -1,0 +1,138 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[Kagamine Rin & Len (Enemy)]].''
+'''Kagamine Rin & Len''' are an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. They were added in [[Version 9.4 Update|Version 9.4]].
+
+{{Cat Info
+|ID = 537
+|rarity = UR
+|name1 = Kagamine Rin & Len
+|name2 = Kagamine Rin & Len CC
+}}
+
+==Evolution==
+Evolves into '''Kagamine Rin & Len CC''' at level 10.
+
+==Strategy/Usage==
+Kagamine Rin and Len can help controlling Metal enemies with their slow and knockback ability since they have Area Attack which [[Hoop Cat (Rare Cat)|Hoop Cat]] and [[Clockwork Cat (Rare Cat)|Clockwork Cat]] both lack. Just make sure to provide them with proper support as they cannot reposition from [[Super Metal Hippoe]]'s knockback.
+
+Against Dark enemies however, it is better to use [[Flower Cat (Special Cat)|Bombercat]], unless dealing with higher range enemies such as [[Le'noir]] and [[Dark Lazer (Enemy)|Dark Lazer]].
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 537
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni537 f00.png
+|Image2 = Uni537 c00.png
+|Name1 = Kagamine Rin & Len
+|Desc1 = Virtual singers loved by the entire Cat Empire!<br>Powerful and charming twin vocals. Long-range<br>Area attacks might Knockback and Slow Dark/Metal
+|Name2 = Kagamine Rin & Len CC
+|Desc2 = Virtual singers loved by the entire Cat Empire!<br>Voices filled with the dreams of youth. Long-range<br>Area attacks might Knockback and Slow Dark/Metal
+|Name1 (JP) = 鏡音リン&レン (Kagamine Rin & Len)
+|Desc1 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>パワフル＆チャーミングなツインボーカル(遠方範囲)<br>黒い敵とメタルな敵をたまにふっとばして動きを遅くする
+|Transl1 (JP) = Popular virtual singers from the electronic world make an appearance!<br>Powerful and charming twin vocals (Area Attack)<br>Occasionally slows the movement of Black and Metal enemies.
+|Name2 (JP) = 鏡音リン&レンCC (Kagamine Rin & Len)
+|Desc2 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>若さあふれる歌声がフレッシュなツインボーカル(遠方範囲)<br>黒い敵とメタルな敵をたまにふっとばして動きを遅くする
+|Transl2 (JP) = Popular virtual singers from the electronic world make an appearance!<br>Twin vocals with fresh and youthful singing voice (Area Attack)<br>Occasionally slows the movement of Black and Metal enemies.
+|Name1 (TW) = 鏡音鈴&連
+|Desc1 (TW) = 來自虛擬世界的人氣歌手！<br>有活力&魅力的雙子主唱(遠距範圍)<br>有時候打飛黑色和鋼鐵敵人並使動作變慢
+|Name2 (TW) = 鏡音鈴&連CC
+|Desc2 (TW) = 來自虛擬世界的人氣歌手！<br>有著青春洋溢歌聲的清新雙子主唱(遠距範圍)<br>有時候打飛黑色和鋼鐵敵人並使動作變慢
+|Name1 (KR) = 카가미네 린&렌
+|Desc1 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>파워풀&챠밍한 듀오 보컬 (원거리 범위공격)<br>검은 적과 메탈 적을 가끔 날려버리고 움직임을 느리게 한다
+|Name2 (KR) = 카가미네 린&렌CC
+|Desc2 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>풋풋한 목소리가 프레시한 듀오 보컬 (원거리 범위공격)<br>검은 적과 메탈 적을 가끔 날려버리고 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 2,900¢
+*Chapter 2: 4,350¢
+*Chapter 3: 5,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kagamine Rin & Len
+|Normal Base HP = 1950
+|Normal Base AP = 1300
+|Normal Range = 450
+|Normal Foreswing = 71
+|Normal Attack Cooldown = 149
+|Normal Attack Length = 101
+|Normal Speed = 16
+|Normal KB = 6
+|Normal Cost = 2900
+|Normal Recharge = 4000
+|Normal Attack Type = Area
+|Normal Targets = Dark,Metal
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Evolved Name = Kagamine Rin & Len CC
+|Evolved Base HP = 2600
+|Evolved Base AP = 1750
+|Evolved Range = 450
+|Evolved Foreswing = 71
+|Evolved Attack Cooldown = 149
+|Evolved Attack Length = 101
+|Evolved Speed = 16
+|Evolved KB = 6
+|Evolved Cost = 2900
+|Evolved Recharge = 4000
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Metal
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,950 HP
+|val-Normal-Attack Power = 1,300 damage<br>(177.27 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 220f <sub>7.33 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 71f <sup>2.37s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 133.33 ~ 124.53 seconds
+|val-Normal-MaxHP = 33,150 HP
+|val-Normal-MaxAttack = 22,100 damage<br>(3,013.64 DPS)
+|val-Evolved-Health = 44,200 HP
+|val-Evolved-Attack Power = 29,750 damage<br>(4,056.82 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 220f <sub>7.33 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 71f <sup>2.37s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 133.33 ~ 124.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni537 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/538.html
+
+----
+{{CatNav|Sakura Miku|Miku Cat}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with unique death animations]]

@@ -1,0 +1,37 @@
+<includeonly><onlyinclude><ul>
+<li>'''Description''': {{{1}}}</li>
+{{#if:{{{browser|}}}|<li>'''Browser/OS''': {{{browser}}}</li>}}
+{{#if:{{{pages|}}}|<li>'''Pages affected''': {{{pages}}}</li>}}
+{{#if:{{{location|}}}|<li>'''Location''': {{{location}}}</li>}}
+{{#if:{{{skin|}}}|<li>'''Skin''': {{{skin}}}</li>}}
+{{#if:{{{replicate|}}}|<li>'''Steps to replicate''': {{{replicate}}}</li>}}
+{{#if:{{{images|}}}|<li>'''Images''': {{{images}}}</li>}}
+</ul></onlyinclude></includeonly>
+<pre>
+{{Report
+|Description of the error.
+|browser = What browser you are using, as well as the Operating System e.g. Google Chrome, Windows 10
+|pages = Pages that this error occurs on.
+|location = Where abouts on these pages that the error occurs on.
+|skin = Skin you're using (the default skin is called [[mw:Skin:Citizen|Citizen]]).
+|replicate = If the error is something that's not immediately visible (for example an issue with {{t|AnimationViewer}} that only appears after pressing certain buttons) then put here those steps to replicate the issue.
+|images = If you have any images to share here (e.g. screenshots of broken elements or sources to back up your claim) put them here. You can upload images at [[Special:Upload]].
+<gallery>
+Placeholder.png|Broken animation
+Placeholder.png|Broken animation 2
+</gallery>
+}}
+</pre>
+{{Report
+|Description of the error.
+|browser = What browser you are using, as well as the Operating System e.g. Google Chrome, Windows 10
+|pages = Pages that this error occurs on.
+|location = Where abouts on these pages that the error occurs on.
+|skin = Skin you're using (the default skin is called [[mw:Skin:Citizen|Citizen]]).
+|replicate = If the error is something that's not immediately visible (for example an issue with {{t|AnimationViewer}} that only appears after pressing certain buttons) then put here those steps to replicate the issue.
+|images = If you have any images to share here (e.g. screenshots of broken elements or sources to back up your claim) put them here. You can upload images at [[Special:Upload]].
+<gallery>
+Placeholder.png|Broken animation
+Placeholder.png|Broken animation 2
+</gallery>
+}}

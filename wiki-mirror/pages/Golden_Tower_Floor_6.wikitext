@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Doge|B.B.Bunny|Squire Rel|Hippoe|Pigge|Metal Hippoe|St. Pigge the 2nd}}
+'''Floor 6''' is the sixth floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 05 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 80
+|enemy castle hp = 36,000 HP
+|enemies = {{Magnification|Doge|400%
+|B.B.Bunny|400%
+|Squire Rel|400%
+|Hippoe|400%
+|Pigge|400%
+|Metal Hippoe|100%}}
+|boss = {{Magnification|St. Pigge the 2nd|100%}}
+|treasure = - [[Catamin]] [A] +10 (100%, 1 time)
+|XP = 1,520 XP
+|width = 5,200
+|max enemies = 10
+|jpname = 6th Floor
+|script = 6階
+|romaji = 6 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★3
+|prev stage = [[Golden Tower/Floor 5|Floor 5]]
+|next stage = [[Golden Tower/Floor 7|Floor 7]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Squire Rel]]s spawn after 20 seconds<sup>600f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Hippoe]]s spawn after 12 seconds<sup>360f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*3 [[Pigge]]s spawn after 21.33 seconds<sup>640f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[St. Pigge the 2nd]] spawns as the boss.
+**2 [[Metal Hippoe]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 6#Strategy|Floor 6]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-06.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

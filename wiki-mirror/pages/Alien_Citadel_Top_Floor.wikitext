@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Shibalien Elite|Star Peng|General GreGory|Bun Bun Symbiote|Spacefish Jones}}
+'''Top Floor''' is the tenth and final floor of [[Alien Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn005 09 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 200
+|enemy castle hp = 720,000 HP
+|enemies = {{Magnification|Shibalien Elite|2,300%
+|Star Peng|2,300%
+|General GreGory|2,300%
+|Bun Bun Symbiote|300%}}
+|boss = {{Magnification|Spacefish Jones|2,300%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,000
+|max enemies = 7
+|jpname = Top Floor
+|script = 最上階
+|romaji = Saijōkai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★9
+|prev stage = [[Alien Citadel/Floor 9|Floor 9]]
+|next stage = N/A
+}}
+
+==Battleground==
+*5 [[Shibalien Elite]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*3 [[Shibalien Elite]]s spawn after 30 seconds<sup>900f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Star Peng]] spawns after 60 seconds<sup>1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Spacefish Jones]] spawns as the boss.
+**Infinite [[General GreGory|General GreGories]] spawn, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+**2 [[Bun Bun Symbiote]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+**3 [[General GreGory|General GreGories]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Star Peng]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+Due to the insane buffs on the Starred Aliens, it is basically required to have all [[Anti-Starred Alien Treasures]] before attempting this stage.
+
+Use multiple meatshields that are able to solidly stall the enemies, use proc units such as [[Seafarer Cat]] or [[Corrupted Psychocat]] that are able to freeze/slow the enemies well enough, and use units such as [[Can Can Cat]], [[Courier Cat]], etc. that can rush down the enemies before they reach the base in this stage.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-10.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]
+[[Category:No Continue Stages]]

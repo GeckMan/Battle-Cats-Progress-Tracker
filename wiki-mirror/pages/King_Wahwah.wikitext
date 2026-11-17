@@ -1,0 +1,120 @@
+'''King Wahwah''' (チワワン伯爵, ''Chiwawan Hakushaku'', '''Count Chiwawan''') is a [[:Category:Traitless Enemies|Traitless]] enemy introduced in the [[:Category:Advent Stages|Advent Stage]] [[N-1 Grand Prix (Deadly)|King Wahwah's Revenge]]. He was added in [[Version 6.7 Update|Version 6.7]].
+
+{{Enemy Info
+|name = King Wahwah
+|image = E 257.png
+|first appearance = [[N-1 Grand Prix (Deadly)|King Wahwah's Revenge]]<br>'''ZL:''' [[Blessings in Sand|Sub-chapter 7 - Blessings in Sand]]
+|money drop = 9,999¢ - 39,496¢
+}}
+
+==Enemy==
+King Wahwah moves slowly, has high health, great standing range and a massive [[Omni Strike]] area. His devastating attack is evenly distributed into three hits, guaranteed to inflict knockback on each, with very short backswing to easily advance. He has many knockbacks himself that makes it easier to regain ground from him but also increases his survivability, and if he's knocked back during his attack but before his 3rd hit, he'll be able to launch extra hits due to how Multi-Hit works. What makes Wahwah a challenge in [[N-1 Grand Prix (Deadly)|N-1 Grand Prix]] and [[Revenge of N-1 (Merciless)|Revenge of N-1]] is that these stages have restrictions, preventing the use of most units.
+
+==Strategy==
+:''See each stage's article for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 257
+|Type = [[:Category:Traitless Enemies|Traitless]]
+|Image1 = Enemy icon 257.png
+|Name1 = King Wahwah
+|Desc1 = Born in Year 1196 of the cosmic calendar, he<br>earned a crown through his military service and<br>advancement of the sciences. Annoyed that his<br>kid brother is more famous for a reality show.
+|Name1 (JP) = チワワン伯爵 (Chiwawan Hakushaku, Count Chiwawan)
+|Desc1 (JP) = 宇宙暦1196年画家の息子として生まれる。<br>類まれな努力家で伯爵の地位まで上り詰めた<br>芸人でボケ担当。相方はプドール夫人。<br>弟のペロは宇宙NO.1ホストで有名。
+|Transl1 (JP) = Born as the son of a painter in year 1196 of the cosmic calendar.<br>An exceptionally hard worker who ascended to the rank of count,<br>he is a comedian in charge of boke. His partner is [[Mistress Celeboodle|Lady Pudoll]].<br>His younger brother [[Everlord Wanwan|Pero]] is famous for being the NO.1 host in the cosmos.
+|Name1 (TW) = 吉娃娃伯爵
+|Desc1 (TW) = 宇宙曆1196年，作為畫家之子出生。<br>靠著世所罕見的勤勉晉升伯爵職位的藝人。<br>搭擋是異星貴賓，自己擔任被吐嘈一角。<br>其弟汪汪則是有名的宇宙界NO.1男公關
+|Name1 (KR) = 치와와 백작
+|Desc1 (KR) = 우주력 1196년, 화가의 아들로서 태어났다.<br>자수성가하여 백작의 지위까지 올라간<br>엄청난 노력가. 귀여운 외모가 차밍 포인트<br>동생인 페로는 우주 넘버원 호스트로 유명
+}}
+
+==Variants==
+{{Variant
+|original = King Wahwah
+|Everlord Wanwan
+|The [[:Category:Starred Alien Enemies|Starred Alien]] variant of King Wahwah. He behaves very similarly, but has higher health and damage, and most of his damage distributed in the first two hits, with the third being weak while [[Warp|warping]] units back by 2,000 range for over a minute.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 7-5: [[Blessings in Sand]] (100%)
+*Stage 15-6: [[Heaven-Defying Fruit]] (100%)
+*Stage 32-6: [[The Navel of the Cat]] (120%)
+
+===[[Special Events|Event Stages]]===
+*King Wahwah's Revenge: [[N-1 Grand Prix (Deadly)]] (100%)
+*[[King Wahwah's Return]]:
+**[[Revenge of N-1 (Merciless)]] (100%)
+**[[Wrath of the Dogelord (Merciless)]] (100%)
+*[[The King & The Maiden]]: [[N-1 Grand Prix (Deadly) (King & Maiden)|N-1 Grand Prix (Deadly)]] (100%)
+*[[The King & The Angel]]: [[N-1 Grand Prix (Deadly) (King & Angel)|N-1 Grand Prix (Deadly)]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 46|Floor 46]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 46|Floor 46]] (100%)
+*[[Golden Tower]]: [[Golden Tower/Floor 46|Floor 46]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Catclaw Championships#Catclaw Championships Rank 12|Catclaw Championships Rank 12]]: [[Rank-Up Test 1 (Rank 12)|Rank-Up Test 1]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = King Wahwah
+|Health = 1000000
+|Attack Power = 24000
+|Attack Range = 600
+|Attack Type = Area
+|Time Between Attacks = 269
+|Movement Speed = 5
+|Knockback = 25
+|Foreswing = 39
+|Backswing = 16
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">8,000</span> at 39f <sup>1.3s</sup>, <span class="scaled" data-type="ap">8,000</span> at 69f <sup>2.3s</sup>, <span class="scaled" data-type="ap">8,000</span> at 98f <sup>3.27s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -500~1,000)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+257 e.png|King Wahwah's spritesheet
+IdleKingWahWah.gif|King Wahwah's moving animation
+Medal 032.png|King Wahwah on the ''Usurper'' [[Meow Medals|Meow Medal]]
+E 257 Concept.JPG|Concept art of King Wahwah and [[D'artanyan (Uber Rare Cat)|Meow-sketeer]]
+</gallery>
+
+==Trivia==
+*The name Wahwah is a play on ''chihuahua'', the world's smallest breed of dog.
+*Wahwah's Japanese name, Chiwawan (チワワン) is a pun on チワワ ''chiwawa'' (chiahuahua) and ワン ''wan'' (woof).
+*Among the first seven [[:Category:Advent Bosses|Advent Bosses]], King Wahwah appears to represent the sin of pride. Despite being implied to envy his younger brother in his English description, pride is still more likely, as [[Hannya]]'s ''[[wikipedia:Hannya|hannya]]'' mask is already a symbol of jealousy. Wahwah's throne and crown both feature the likeness of a chihuahua (the crown's face can more easily be seen in the [[Media:KingWahwahPoster.jpg|event poster]] for [[N-1 Grand Prix (Deadly)|King Wahwah's Revenge]]) - possibly that of Wahwah himself, indicating that he takes pride in his appearance.
+*He was mentioned by name in [[Mistress Celeboodle]]'s Japanese description 2 years before he was introduced.
+*According to their Japanese descriptions, Mistress Celeboodle and King Wahwah are a [[wikipedia:Manzai|''manzai'']] comedy duo with Mistress Celeboodle as the ''tsukkomi'' (the short-tempered "straight man" who takes things seriously) and King Wahwah as the ''boke'' (the airheaded "funny man" who gets everything wrong).
+**In [[Heaven-Defying Fruit]], Mistress Celeboodle and King Wahwah appear together alongside another comedian, [[Oldstrich]].
+**[[N-1 Grand Prix (Deadly)|N-1 Grand Prix]] is likely named after the [[wikipedia:M-1 Grand Prix|M-1 Grand Prix]], the most prevalent ''manzai'' competition in Japan. The "N" presumably stands for ''nyan'', meaning "meow", while the "1" sounds like ''wan'', meaning "woof".
+**[[Wrath of the Dogelord (Merciless)|Wrath of the Dogelord]]'s Japanese name, King of [[Doge|Wanko]] (キングオブワンコ ''Kingu obu Wanko'', "King of Doggies"), may be a reference to the annual stand-up comedy tournament [[wikipedia:ja:キングオブコント|King of Conte]] (キングオブコント ''Kingu obu Konto'').
+*The combined descriptions of King Wahwah, [[Everlord Wanwan]] and Mistress Celeboodle imply that the little brother mentioned in Wahwah's description is Wanwan, which is not only because Wanwan is a variant of Wahwah but also because Mistress Celeboodle's description states that she married a chihuahua reality TV star. Thus, this leads to Wahwah being Mistress Celeboodle's brother-in-law.
+**This is confirmed in Wahwah's Japanese description, which included the name of his younger brother Wanwan years before he was added.
+*It can be inferred that the two dogs pulling his chariot are a more haggard female [[Dagshund]] and Mistress Celeboodle. Note the bandana worn by the frontmost dog (the bunny ears) and the wig and tufts of hair on the other dog.
+*He has the highest money drop of all [[:Category:Traitless Enemies|Traitless Enemies]], and the second highest in the game along with [[Mega Cat (Enemy)|Mega Cat]], which are only beaten by [[Unit-13's False Evolution]].
+*The enemy ID he uses (257) was unoccupied until [[Version 6.7 Update|Version 6.7]], when he was added to the game, hence why it's so far behind [[Winged Pigge]] (379) and [[Mystic Mask Yulala]] (380), the other enemies from the same update.
+
+==Reference==
+*https://battlecats-db.com/enemy/259.html
+
+----
+{{EnemyNav|Tackey|Codename "Red Riding"}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Knockback ability]]

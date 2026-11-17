@@ -1,0 +1,69 @@
+'''Order/Disorder''' is the third and final stage in [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]].
+{{EnemiesAppearing|Sir Seal|B.B.Bunny|Pigge|One Horn|Happy 100|Belial}}
+{{Stage Info
+|stage name = [[File:rc076.png]]
+[[File:Mapsn041 02 c en.png]]
+|stage location = [[File:Mapname041 c en.png]]
+|energy = 90
+|enemy castle hp = 90,000 HP
+|enemies = {{Magnification|Sir Seal|400%
+|B.B.Bunny|400%
+|Pigge|400%
+|One Horn|400%
+|Happy 100|100%
+|Belial|100%}}
+|boss = {{Magnification|B.B.Bunny|10%}}
+|enemies2 = {{Magnification|Sir Seal|800%
+|B.B.Bunny|800%
+|Pigge|800%
+|One Horn|800%
+|Happy 100|200%
+|Belial|200%}}
+|boss2 = {{Magnification|B.B.Bunny|20%}}
+|enemies3 = {{Magnification|Sir Seal|1,200%
+|B.B.Bunny|1,200%
+|Pigge|1,200%
+|One Horn|1,200%
+|Happy 100|300%
+|Belial|300%}}
+|boss3 = {{Magnification|B.B.Bunny|30%}}
+|score reward = '''6,000''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''3,500''': 50,000 XP<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 2,700 XP
+|width = 4,800
+|max enemies = 10
+|jpname = From Order to Disorder
+|script = 秩序から無秩序へ
+|romaji = Chitsujo Kara Muchitsujo E
+|star = 3
+|event = [[Crash Fever Collaboration Event]]
+|event-chapter = [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]]
+|difficulty = ★4
+|prev stage = [[Explosive Escape]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Sir Seal]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Sir Seal]] spawns after 16.67 seconds<sup>500f</sup>.
+*5 [[B.B.Bunny|B.B.Bunnies]] (400%) spawn after 30 seconds<sup>900f</sup>, delay 0.67~3.33 seconds<sup>20f~100f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] (400%) spawn after 50 seconds<sup>1,500f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*5 [[Pigge]]s spawn after 60 seconds<sup>1,800f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] (400%) spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[B.B.Bunny]] (10%) spawns as the boss.
+**3 [[One Horn]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+**9 [[Happy 100 (Enemy)|Happy 100s]] spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+**3 [[Belial (Enemy)|Belials]] spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+
+==Strategy==
+Seeing as this stage is dominated by Red peons, it is advised to bring some [[:Category:Anti-Red Cats|Anti-Red Cats]]. Otherwise, just bring ranged units to defeat Belial and Happy 100.
+
+==Reference==
+*https://battlecats-db.com/stage/s02041-03.html
+
+{{Crash Fever}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,10 @@
+.ranger-navbox.betakkuma {
+	--bg-navbox-title: linear-gradient(to right, #faadf0 0%, #fccff6 100%);
+	--bg-sub-table-title: #a65966;
+	--bg-group-name: #f76ee4;
+
+	--sub-title-color: #fff;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

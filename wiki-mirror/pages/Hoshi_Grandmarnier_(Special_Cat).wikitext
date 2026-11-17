@@ -1,0 +1,115 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Hoshi Grandmarnier (Enemy)]]. For the stage, see [[Hoshi Grandmarnier]].''
+'''Hoshi Grandmarnier''' is a  [[:Category:Special Cats|Special Cat]] implemented in [[Version 3.4 Update|Version 3.4]] and was created by a collaboration event between [[Kishidan Collaboration Event|Battle Cats and Kishidan]]. He could be unlocked by using the [[Serial Codes|serial code]] from Kishidan's CD (幸せにしかしねーから), which is no longer possible due to the removal of serial codes.
+
+{{Cat Info
+|ID = 165
+|rarity = EX
+|name1 = Hoshi Grandmarnier
+|name2 = Ranma & Cat
+}}
+
+==Evolution==
+Evolves into '''Ranma & Cat''' at level 10.
+
+==Strategy/Usage==
+Hoshi is virtually a weaker [[Kung Fu Cat (Special Cat)|Kung Fu Cat]] on all fronts. Though Hoshi has decent stats, his recharge time massively drags down his usage below most other midrangers, including the aforementioned Kung Fu as well as [[Salon Cat (Rare Cat)|Salon Cat]] and [[Actress Cat (Special Cat)|Actress Cat]]. Even [[Titan Cat (Normal Cat)|Titan Cat]]'s superior stats and useful tankiness put Hoshi's usability in [[Empire of Cats]] into question, the only place Hoshi could even hypothetically be useful.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 165
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni165 f00.png
+|Image2 = Uni165 c00.png
+|Name1 (JP) = 星グランマニエ (Hoshi Grandmarnier, Hoshi Grandmarnier)
+|Desc1 (JP) = ヤンクロックバンド氣志團から参戦！<br>ギター担当の涙のフィフティーン<br>通り名は『薩摩隼人は泣きの竜』
+|Transl1 (JP) = Joining the war from the yankii rock band Kishidan!<br>Tearful fifteen-year-old in charge of the guitar<br>Catchphrase is "The Satsuma Hayato is a crying dragon"<br>
+|Name2 (JP) = ランマ&にゃんこ (Ranma & Nyanko, Ranma & Cat)
+|Desc2 (JP) = ヤンクロックバンド氣志團から参戦！<br>ギター担当の涙のフィフティーン<br>大のスパゲッティ好き(範囲攻撃)
+|Transl2 (JP) = Joining the war from the yankii rock band Kishidan!<br>Tearful fifteen-year-old in charge of the guitar<br>Loves spaghetti (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 1,300円
+*Chapter 2: 1,950円
+*Chapter 3: 2,600円
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hoshi Grandmarnier
+|Normal Base HP = 550
+|Normal Base AP = 830
+|Normal Range = 290
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 161
+|Normal Attack Length = 52
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 1300
+|Normal Recharge = 1300
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Ranma & Cat
+|Evolved Base HP = 550
+|Evolved Base AP = 830
+|Evolved Range = 290
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 161
+|Evolved Attack Length = 52
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 1300
+|Evolved Recharge = 1300
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 550 HP
+|val-Normal-Attack Power = 830 damage<br>(152.76 DPS)
+|val-Normal-Attack Range = 290
+|val-Normal-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 43.33 ~ 34.53 seconds
+|val-Normal-MaxHP = 9,350 HP
+|val-Normal-MaxAttack = 14,110 damage<br>(2,596.93 DPS)
+|val-Evolved-Health = 9,350 HP
+|val-Evolved-Attack Power = 14,110 damage<br>(2,596.93 DPS)
+|val-Evolved-Attack Range = 290
+|val-Evolved-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 43.33 ~ 34.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni165 f00}}
+
+==Trivia==
+*Satsuma Hayato is a nickname for men from Kagoshima Prefecture.
+
+==Reference==
+*https://battlecats-db.com/unit/166.html
+
+----
+{{CatNav|Hitomi Saionji|Shouchikubai Shiratori}}
+----
+
+{{Kishidan}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Serial Code Cats]]

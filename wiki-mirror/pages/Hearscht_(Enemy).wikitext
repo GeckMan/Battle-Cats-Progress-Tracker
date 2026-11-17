@@ -1,0 +1,85 @@
+:''This article is about the enemy. For the Cat Unit, see [[Hearscht (Uber Rare Cat)]].''
+'''Hearscht''' (ハルシュト) is an enemy that only appears in [[Merc Storia Collaboration Event]]. She was added in [[Version 3.8 Update|Version 3.8]].
+
+{{Enemy Info
+|name = Hearscht
+|image = E 163.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+Hearscht's high stats, very high HP, damage, critical chance and range all would have made her extremely threatening. Fortunately, this enemy is single target, so she isn't that much of a threat.
+
+==Strategy==
+Due to having single target, strategies on fighting this enemy are relatively straightforward. One should spam as many meatshields as possible, nullifying her range advantage while stacking on ranged attackers that can safely whittle her down.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Healer Awakens!]]: [[Healer Awakens (Insane)]] (100%)
+*[[Titi Awakens!]]: [[Titi Awakens (Insane)]] (100%)
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]: [[Hearscht: Silver Beast]] (100%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (150% HP/250% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (163% HP/269% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (176% HP/288% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (189% HP/307% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (200% HP/325% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (210% HP/340% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (220% HP/355% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (230% HP/370% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (240% HP/385% AP)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (250% HP/400% AP)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]: [[Hearscht: Silver Beast]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Hearscht
+|Health = 450000
+|Attack Power = 15000
+|Attack Range = 600
+|Attack Type = Single
+|Time Between Attacks = 101
+|Movement Speed = 14
+|Knockback = 5
+|Foreswing = 14
+|Backswing = 49
+|Ability = {{AbilityIcon|Critical}} 40% chance to perform a [[Critical Hit]]
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|163 e ja.png|MediaWiki:Custom-AnimationViewer/163 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+163 e.png|Hearscht's spritesheet (EN/KR)
+163 e ja.png|Hearscht's spritesheet (JP)
+163 e tw.png|Hearscht's spritesheet (TW)
+IdleHearschtJP.gif|Hearscht's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/165.html
+
+----
+{{EnemyNav|Yakuza Vampire|Cornelia}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Critical Hit Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with regional differences]]

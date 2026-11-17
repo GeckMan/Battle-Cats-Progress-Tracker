@@ -1,0 +1,62 @@
+{{EnemiesAppearing|The Thrillerz|Aku Doge|Devil Wife|Lophiiformes Angaburu|Vermilingua Rangmaster|Crocodylidae Kurocroc|Brollow|Zollow}}
+'''Archaeology 501: Methods''' is the second stage in [[Empress' Excavation 5]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn281 01 s en.png]]
+|stage location = [[File:Mapname281 s en.png]]
+|energy = 100
+|enemy castle hp = 1,350,000 HP
+|enemies = {{Magnification|The Thrillerz|200%
+|Aku Doge|600%
+|Devil Wife|500%
+|Lophiiformes Angaburu|100%
+|Vermilingua Rangmaster|100%
+|Brollow|200%
+|Zollow|150%}}
+|boss = {{Magnification|Crocodylidae Kurocroc|100%}}
+|treasure = - [[Catseye]] [Legend] +1 (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 6,000
+|max enemies = 20
+|jpname = Ancient Survey Ⅴ Method
+|script = 遺物調査Ⅴ方法
+|romaji = Ibutsu Chōsa Ⅴ Hōhō
+|star = 1
+|event-chapter = [[Empress' Excavation 5]]
+|max clears = 1
+|difficulty = ★11
+|prev stage = [[Archaeology 501: Planning]]
+|next stage = [[Archaeology 501: Results]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*2 [[The Thrillerz|Thrillerz]] spawn after 3.33 seconds<sup>100f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[Aku Doge]]s spawn after 8 seconds<sup>240f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+*5 [[Devil Wife|Devil Wives]] spawn after 26.67 seconds<sup>800f</sup>, delay 50~53.33 seconds<sup>1,500f~1,600f</sup>.
+*1 [[Lophiiformes Angaburu]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Vermilingua Rangmaster]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*2 [[Aku Doge]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*1 [[Crocodylidae Kurocroc]] spawns as the boss after 113.33 seconds<sup>3,400f</sup>.
+*Infinite [[Brollow]]s spawn after 113.33 seconds<sup>3,400f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*2 [[The Thrillerz|Thrillerz]] spawn after 133.33 seconds<sup>4,000f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*4 [[Zollow]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*When the base reaches 75% HP:
+**1 [[Lophiiformes Angaburu]] spawns.
+**2 [[Aku Doge]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[Zollow]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Strategy==
+Since all the hard stuff is on a timer, your first priority is killing Rangmaster before Kurocroc spawns: with both on screen, it becomes extremely hard for you to win. [[Barrel Cat]] and [[Cat Cactus]] are both Surge Immune and work for the Rangmaster, while units like [[Jelly Dumpling Cat]] can take advantage of the Aku Doges to snipe the Brollows and Zollows. Once Rangmaster's dead, it becomes a standard Kurocroc cleanup that you can use your counters from the previous stage to deal with.
+
+==Reference==
+*https://battlecats-db.com/stage/s01281-02.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

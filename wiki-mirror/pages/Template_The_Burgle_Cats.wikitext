@@ -1,0 +1,18 @@
+{{#invoke:Navbox|main
+|template = Template:The Burgle Cats
+|title = [[The Burgle Cats]]
+|navbox_class = burgle-cats
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Burgle Boss Cat (Retired) (Special Cat)|Burgle Boss Cat (Retired)]]
+
+|header2 = Stages
+|group2 = Nyanko Great Burglar
+|list2 =
+*[[Great Burglar Battle!!]]
+}}<templatestyles src="The Burgle Cats/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:The Burgle Cats]]}}<noinclude>[[Category:Navboxes]]</noinclude>

@@ -1,0 +1,80 @@
+:''For the EVA Angel version of this enemy, see [[Unit-13's False Evolution]]. For the Cat Unit, see [[EVA Unit-13 (Uber Rare Cat)]].''
+'''EVA Unit-13''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 12.4 Update|Version 12.4]].
+
+{{Enemy Info
+|name = EVA Unit-13
+|image = E 647.png
+|money drop = 10,000¢ - 39,500¢
+|appearance = [[Neon Genesis Evangelion Collaboration Event#Final Battle: EVA Unit-13|Final Battle: EVA Unit-13]]
+}}
+
+==Enemy==
+This traitless enemy boasts gargantuan stats, with very high health and extreme damage split into three closely-spaced multi-hits that apply a 5-second slow and generate a level 1 mini-surge even further. It is invulnerable to a variety of effects, has a somewhat fast attack rate, and despite its low range, its Omni Strike ensures nothing sneaks past, so it's vital to time your attackers well and defeat any support that tags along.
+
+==Strategy==
+EVA Unit-13 isn't an EVA Angel, which makes the fight against it that much harder, as next to no anti-Traitless units consistently work against it.
+
+Notably, this enemy is ''not'' Immune to Curse, so a well-timed Curseblast can be used to give your units a window of opportunity.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Neon Genesis Evangelion Collaboration Event#Final Battle: EVA Unit-13|Final Battle: EVA Unit-13]]:
+**[[Something I Must Do]] (20%)
+**[[Grow Up, Shinji]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = EVA Unit-13
+|Health = 3000000
+|Attack Power = 90000
+|Attack Range = 210
+|Attack Type = Area
+|Time Between Attacks = 141
+|Movement Speed = 8
+|Knockback = 3
+|Foreswing = 55
+|Backswing = 76
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">30,000</span> at 55f <sup>1.83s</sup>, <span class="scaled" data-type="ap">30,000</span> at 60f <sup>2s</sup>, <span class="scaled" data-type="ap">30,000</span> at 65f <sup>2.17s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -3,140~460)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Mini-Surge}} 100% chance to create a level 1 [[Surge Attack#Mini-Surge|Mini-Surge]] between 400 and 700 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Surge|Surge]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|spritesheet=710 f.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+710 f.png|EVA Unit-13's spritesheet
+</gallery>
+
+==Trivia==
+*EVA Unit-13 and [[Mass Production EVA (Enemy)|Mass Production EVA]] are the only enemies in the Neon Genesis Evangelion Collaboration Event to not be EVA Angels.
+
+==Reference==
+*https://battlecats-db.com/enemy/649.html
+
+----
+{{EnemyNav|Redhead Muscled Yuki Cat|Clown Base}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Mini-Surge Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Warp Immunity]]
+[[Category:Enemies with unique death animations]]

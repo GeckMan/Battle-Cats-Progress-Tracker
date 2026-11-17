@@ -1,0 +1,261 @@
+'''Rocker Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 3.0 Update|Version 3.0]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]]. [[True Form]] added in [[Version 5.9 Update|Version 5.9]] increases health and attack power. [[Talents]] were added in [[Version 8.5 Update|Version 8.5]].
+
+{{Cat Info
+|ID = 148
+|rarity = RR
+|name1 = Rocker Cat
+|name2 = Artist Cat
+|name3 = Ramen Cat
+}}
+
+==Evolution==
+Evolves into '''Artist Cat''' at level 10.
+
+Evolves into '''Ramen Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Use Rocker Cat as an extra-durable meatshield to protect your other Cats, especially against [[:Category:Angel Enemies|Angel]] enemies. He doesn't work too differently compared to [[Tank Cat (Normal Cat)|Tank Cat]], but he trades cost and spammability for a specialization against a trait and the potential to reach much higher health values. Note that he still won't last long against high DPS enemies, which are prominent among melee Angels.
+
+His fast attacks and strong DPS are the icing on the cake, making him effective at clearing annoying peons or to tank, stall and defeat long-ranged area attackers such as [[Master A.]], [[Camelle]] and [[Sunfish Jones]]. Rocker Cat's fast attack rate allows him to also defeat weak [[:Category:Metal Enemies|Metals]] such as [[Metal Hippoe]], [[Metal Doge]] and [[Croconator]] in a reasonable amount of time. His attack cycle does have one significant downside though: Rocker Cat is prone to knocking enemies away from the attacks of stronger units, thereby hindering overall damage output.
+
+With enough upgrades and Research [[Cat Combo|Combo]]s such as [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]], Rocker Cat can be a very valuable meatshield even in stages with little to no Angels. Prominent examples include [[Deathhawk (Deadly)|Deathhawk]] and [[Tiny Chopper (Deadly)|Tiny Chopper]], where a sufficiently boosted Rocker Cat can stay alive long enough to permanently stall [[Manic Mohawk Cat (Enemy)|Manic Mohawk]] and Master A., or keep [[Li'l Dark Cat (Enemy)|Li'l Dark Cat]] and [[Sunfish Jones]] pinned forever.
+
+==='''True Form'''===
+A high-priority True Form, Ramen Cat gets a notable health increase and a small damage boost, making him even better at what he's already good at. Although the damage boost allows him to chip bosses quicker, it does amplify his tendency to trigger unwanted knockbacks. After a certain point of progression, the issue gets less relevant as enemies' stats get more and more inflated.
+
+==='''Talents'''===
+Ramen Cat relies a lot on his basic stats, so Attack Buff, and more importantly, Defense Buff are good Talents to invest in. Knockback Resistance drastically improves Ramen Cat's effectiveness against [[Angelic Sleipnir]], stages with [[Mr. Mole]] or [[Trolly Blogger]]s and in other situations. It is somewhat situational, but worth investing in regardless. Resist Slow is not as useful, as Ramen Cat is already rather slow and there are very few enemies that pose a threat to him through the slow effect. Resist Curse, mainly comes into play in mid-game stages that combine [[:Category:Relic Enemies|Relic]] and Angel enemies such as [[Rutsborg Vortex]], or Angels and the [[Relic Doge Base (Enemy Base)|Relic Doge Base]]. In this, its function is quite useful with the sheer number of Relic/Angel stages in the mid- to endgame, letting him take a few extra blows from most target traits in said stages for a pretty cheap cost.
+
+==='''Orb'''===
+Resistance to Angels is the best, followed by Defense Up. For Ability Orbs, a Cashback Orb is recommended for optimal general meatshielding, though a good Resistance to Angel Orb will sometimes be preferred in type related matchups. As a generalist meatshield, Ramen Cat would benefit from a Dodge Orb, although to a lesser extent than other options.
+
+{{Job|Classification = Meatshield & Melee}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Deathrock|Cannon Start Level Up (Sm)|Zombie Cat|Rocker Cat|jpname=デスロック}}
+|{{CatCombo|Art History|"Resistant" Effects Up (Sm)|Artist Cat|Michelangelo Cat|jpname=美術教室}}
+|{{CatCombo|Duet|Worker Start Level Up (Sm)|Moneko|Rocker Cat|jpname=デュエット}}
+|{{CatCombo|Headbanger's Ball|Starting Money Up (M)|Cow Cat|Crazed Cow Cat|Rocker Cat|jpname=チームヘッドバンギング}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 148
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni148 f00.png
+|Image2 = Uni148 c00.png
+|Image3 = Uni148 s00.png
+|Name1 = Rocker Cat
+|Desc1 = A peanut farmer's son, became a rocker to<br>avoid coming out about his nut allergies to his<br>family. Resistant to Angelic attacks.
+|Name2 = Artist Cat
+|Desc2 = After album number 2 flopped, tried to get into<br>fine art. Can only draw peanuts, so didn't sell.<br>Resistant to Angelic attacks.
+|Name3 = Ramen Cat
+|Desc3 = Noodles might seem like a simple dish, but<br>they need an artist's touch to master. Flashy<br>prep style also boosts defense vs Angels.
+|Name1 (JP) = ねこロッカー (Neko Rokkā, Rocker Cat)
+|Desc1 (JP) = 音楽なんかやめて豆腐屋を継げと言われているが<br>大豆アレルギーをカミングアウト<br>出来ないでいるロッカー。天使に打たれ強い
+|Transl1 (JP) = A rocker who claimed that it's gonna quit music to<br>inherit the family tofu business, but still can't<br>come out about its soy allergy. Tough against Angels.
+|Name2 (JP) = ねこアーティスト (Neko Ātisuto, Artist Cat)
+|Desc2 (JP) = 曲が売れなくて試しに絵を描いてみたら<br>それも全然売れずムキになって描き続ける<br>豆腐屋のロッカー。天使に打たれ強い
+|Transl2 (JP) = A rocker from the tofu shop who tried painting after<br>its albums flopped. Didn't manage to sell any painting either<br>so it continues to paint with anger. Tough against Angels.
+|Name3 (JP) = ねこラーメン道 (Neko Rāmen-dō, Ramen Cat)
+|Desc3 (JP) = 実家の豆腐屋も継がずにラーメン屋に就職<br>素人は黙っとれが口癖の本格派職人<br>派手な湯切りで客を楽しませる。天使に打たれ強い
+|Transl3 (JP) = Quit its family's tofu business and started working in a ramen shop<br>An authentic craftsman who keeps telling amateurs to shut up<br>Entertains customers using its flashy prep style. Tough against Angels.
+|Name1 (TW) = 搖滾貓
+|Desc1 (TW) = 被要求放棄音樂去繼承豆腐店的貓<br>但是仍然走不出大豆過敏問題<br>對上天使敵人很耐打
+|Name2 (TW) = 藝術家貓
+|Desc2 (TW) = 唱片完全不熱賣而轉行嘗試作畫<br>竟然也失敗而失心瘋繼續畫畫的<br>豆腐店搖滾樂貓。對上天使敵人很耐打
+|Name3 (TW) = 拉麵王貓
+|Desc3 (TW) = 沒繼承自家豆腐店反在拉麵店上班，口頭禪是<br>外行人掂掂！的正宗拉麵職人。誇張的甩麵<br>技術讓客人看了很開心。對上天使敵人很耐打
+|Name1 (KR) = 고양이 로커
+|Desc1 (KR) = 음악 따위 집어 치우고 두부가게를 이으려 하지만<br>콩 알러지 때문에 결심이 서지 않고 있다<br>천사에 맷집이 좋다
+|Name2 (KR) = 고양이 아티스트
+|Desc2 (KR) = 곡이 팔리지 않아 어쩌다가 그림을 그렸더니…<br>역시나 팔리지 않지만 그냥 계속 그리고 있다<br>두부가게 사장님인 로커. 천사에 맷집이 좋다
+|Name3 (KR) = 고양이 라면의 길
+|Desc3 (KR) = 고향의 두부가게를 포기하고 라면가게에 취직<br>훈련은 받지 않았지만 입으로는 최고의 라면장인 화려한<br>면털기로 손님들을 즐겁게 한다.천사에게 맷집이 좋다
+|Name1 (Switch) = Rocker Cat
+|Desc1 (Switch) = A peanut farmer's son, became a rocker to<br>avoid coming out about his nut allergies to his<br>family. Tough vs Angels.
+|Name2 (Switch) = Artist Cat
+|Desc2 (Switch) = After album number 2 flopped, tried to get into<br>fine art. Can only draw peanuts, so didn't sell.<br>Tough vs Angels.
+|Name3 (Switch) = Ramen Cat
+|Desc3 (Switch) = Noodles might seem like a simple dish, but<br>they need an artist's touch to master. Flashy<br>prep style also boosts defense vs Angels.
+}}
+
+==Cost==
+*Chapter 1: 210¢
+*Chapter 2: 315¢
+*Chapter 3: 420¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rocker Cat
+|Normal Base HP = 450
+|Normal Base AP = 32
+|Normal Range = 120
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 210
+|Normal Recharge = 380
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Artist Cat
+|Evolved Base HP = 750
+|Evolved Base AP = 54
+|Evolved Range = 120
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 210
+|Evolved Recharge = 380
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|True Name = Ramen Cat
+|True Base HP = 1050
+|True Base AP = 60
+|True Range = 120
+|True Foreswing = 5
+|True Attack Cooldown = 0
+|True Attack Length = 10
+|True Speed = 8
+|True KB = 1
+|True Cost = 210
+|True Recharge = 380
+|True Attack Type = Single
+|True Targets = Angel
+|True Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50+80<br>Lv.40+20<sup>BCU!</sup>
+|Scaling = 20x7,10x2,5x11
+|Orb = true
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 32 damage<br>(96 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|val-Normal-Recharge Time = 12.67 ~ 3.87 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 545 damage<br>(1,635 DPS)
+|val-Evolved-Health = 12,750 HP
+|val-Evolved-Attack Power = 917 damage<br>(2,751 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+|val-True-Health = 17,850 HP
+|val-True-Attack Power = 1,020 damage<br>(3,060 DPS)
+|val-True-Attack Range = 120
+|val-True-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|val-True-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Artist Cat
+|Evolved Image = Uni148 c00.png
+|True Name = Ramen Cat
+|True Image = Uni148 s00.png
+|True Description = True Form evolution increases Defense,<br>and attack power!
+|Catfruit1 = GreenSeed
+|Catfruit2 = PurpleSeed
+|Catfruit3 = RedSeed
+|Catfruit4 = BlueSeed
+|Catfruit5 = YellowFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x2
+|Quantity Catfruit3 = x2
+|Quantity Catfruit4 = x1
+|Quantity Catfruit5 = x2
+|Quantity XP = 200,000
+}}
+
+==Talents==
+*'''[[Special Abilities#Resist|Resist Slow]]''': Reduces slow duration by 16%, improves by 6% per level up to 70% (Total Cost: 75 NP)
+*'''[[Special Abilities#Resist|Resist Knockback]]''': Reduces knockback push by 5% per level up to 50% (Total Cost: 75 NP)
+*'''[[Special Abilities#Resist|Resist Curse]]''': Reduces curse duration by 16%, improves by 6% per level up to 70% (Total Cost: 75 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 75 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 75 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Nyanko Defence Force]]===
+Rocker Cat and its evolutions appear in Nyanko Defence Force as a Rare team member. It can be obtained through the gacha system.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ねこロッカー (Neko Rokkā, Rocker Cat)
+! scope="row" style="text-align: center;"|ねこアーティスト (Neko Ātisuto, Artist Cat)
+! scope="row" style="text-align: center;"|ねこラーメン道 (Neko Rāmen-dō, Ramen Cat)
+|-
+| colspan="2" |[[File:WC01 T1.png|center|200px]]
+|[[File:WC01 T2.png|center|200px]]
+|[[File:WC01 T3.png|center|200px]]
+|-
+! scope="col" colspan="4" style="text-align: center;"|Stats At Level 30
+|-
+! scope="col" colspan="2" |Rarity
+| colspan="2" |Rare
+|-
+! scope="col" rowspan="3" |Attack
+! scope="col" |3/3 Zodiac Signs
+| colspan="2" |167
+|-
+! scope="col" |2/3 Zodiac Signs
+| colspan="2" |125
+|-
+! scope="col" |1/3 Zodiac Signs
+| colspan="2" |104
+|-
+! scope="col" colspan="2" |Skill
+| colspan="3" |[[File:Skill 21.jpg|50px]] Increases item effect duration by 40%
+|}
+</div>
+
+{{Gallery|Uni148 f00}}
+
+==Trivia==
+*The line, "An authentic craftsman who keeps telling amateurs to shut up," (素人は黙っとれが口癖の本格派職人) in Ramen Cat's Japanese description is a reference to "Amateurs, shut up," (素人は黙っとれ), a Japanese Internet meme associated with TOKIO leader [[wikipedia:Shigeru Joshima|Shigeru Joshima]].
+*In his [[Upgrade Menu]] icon, Ramen Cat's ramen is shown flying outside of his strainer, something that normally only happens when he is attacking or being knocked back.
+*According to [[Media:FamCom 20150401.jpg|this 4koma]], Rocker Cat and [[Cat (Normal Cat)|Mohawk Cat]] are the same Cat.
+*Rocker Cat won the [https://www.youtube.com/watch?v=wvwJQ9TSSTQ 2025 Best True Form Nyaward], with a speech accompanying his victory:
+<blockquote>
+How we feeling out there tonight, Cat Empire?! Lemme hear you say "NYAAAAAA"! This rockstar life takes you to some weird places, and I've had to take on a lot of side gigs. After my second record didn't sell, I learned to express myself in painting. One thing led to another, and at last, I found my calling as a ramen chef! The spirit of a true rock god ain't just about the music. Even a great noodle bowl can shake up society! All us True Forms had to learn that embracing change is the key to realizing your hidden potential! So take it from us: keep exploring, stay passionate, and you'll evolve to be the best you!
+</blockquote>
+
+==Reference==
+*https://battlecats-db.com/unit/149.html
+
+----
+{{CatNav|Tin Cat|Mer-Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Single Attack Cats]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Resist Slow Cats]]
+[[Category:Resist Knockback Cats]]
+[[Category:Resist Curse Cats]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]

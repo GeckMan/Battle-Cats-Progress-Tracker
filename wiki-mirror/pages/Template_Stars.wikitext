@@ -1,0 +1,14 @@
+<includeonly><onlyinclude><span style="padding: 0px 3px; vertical-align: 2px;">{{#invoke:Stars|main}}</span></onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template is for displaying a difficulty level out of 12 stars in-line.
+
+==Parameters==
+''The difficulty works in the exact same way as [[Template:Map Stars]].''
+
+<pre>{{Stars|difficulty}}</pre>
+<code>difficulty</code> is a numerical representation of the map difficulty. It is determined by interpreting the stars in a difficulty as a binary number with the most significant bit on the right (reversed in simple terms) with an empty star being 0 and a filled star being 1. For example, if the 3rd and 8th stars are filled, the number is 2^2 + 2^7 = 132.
+
+==Usage==
+<pre>{{Stars|384}}</pre>
+===Result===
+{{Stars|384}}

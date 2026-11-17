@@ -1,0 +1,60 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Squire Rel|THE SLOTH|Clyde Gory|Pinky Bear|Dagshund}}
+'''Endless Scavenging''' is the sixth stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn272 05 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 100
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Squire Rel|400%
+|Clyde Gory|1,000%
+|Pinky Bear|1,500/700%
+|Dagshund|100%}}
+|boss = {{Magnification|THE SLOTH|100%}}
+|enemies2 = {{Magnification|Squire Rel|600%
+|Clyde Gory|1,500%
+|Pinky Bear|2,250/1,050%
+|Dagshund|150%}}
+|boss2 = {{Magnification|THE SLOTH|150%}}
+|score reward = '''5,800''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1<br>
+'''4,400''': [[Battle Items#Speed Up|Speed Up]] +1<br>
+'''500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1
+|XP = 3,000 XP
+|width = 4,500
+|max enemies = 15
+|jpname = Endless Picking And Eating
+|script = エンドレス拾い食い
+|romaji = En Doresu Hiroigui
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★5
+|prev stage = [[The Hunt for Power Pellets]]
+|next stage = [[Face the Threat]]
+}}
+
+==Battleground==
+*2 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 1 second<sup>30f</sup>.
+*3 [[Squire Rel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 1 second<sup>30f</sup>.
+*4 [[Squire Rel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 1 second<sup>30f</sup>.
+*5 [[Squire Rel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 1 second<sup>30f</sup>.
+*5 [[Squire Rel]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 1 second<sup>30f</sup>.
+*3 [[Squire Rel]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 1 second<sup>30f</sup>.
+*Infinite [[Squire Rel]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 5~8 seconds<sup>150f~240f</sup>.
+*1 [[THE SLOTH]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+*4 [[Clyde Gory|Clyde Gories]] spawn after 16.67 seconds<sup>500f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*1 [[Pinky Bear]] spawns after 50 seconds<sup>1,500f</sup>.
+*2 [[Dagshund]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-06.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

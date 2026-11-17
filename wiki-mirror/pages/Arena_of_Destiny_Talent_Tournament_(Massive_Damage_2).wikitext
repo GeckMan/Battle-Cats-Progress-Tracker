@@ -1,0 +1,111 @@
+{{EnemiesAppearing|Talent Orb Castle|Deathshund|Sir Seal|Golem Sunfish|Cadaver Bear|Relic Doge|Znache|Le'Prude|J.K. Bun Bun|Zang Roo}}
+'''Talent Tournament''' is the 10th [[Arena of Destiny]] of the [[Catclaw Dojo]]. It awards Bronze, Silver and Gold Treasure Chests with [[Talent Orbs|Ability Orbs]].
+
+{{Stage Info
+|stage name = [[File:E 720.png]]
+[[File:Mapsn045 00 r en.png]]
+|stage location = [[File:Mapname045 r en.png]]
+|energy = 10
+|enemy castle hp = Unlimited
+|base = {{Magnification|Talent Orb Castle|0}}
+|enemies = {{Magnification|Deathshund|0
+|Sir Seal|0
+|Relic Doge|0
+|Znache|0
+|Zang Roo|0
+|Cadaver Bear|0}}
+|boss = {{Magnification|Golem Sunfish|0
+|Cadaver Bear|0
+|Le'Prude|0
+|J.K. Bun Bun|0
+|Zang Roo|0
+|Sir Seal|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 20
+|jpname = Fighting Instinct Tournament
+|script = 闘争本能大会
+|romaji = Tōsō Honnō Taikai
+|star = 1
+|dojo-chapter = [[Arena of Destiny]]
+|difficulty = ★9
+|require = Clear [[A New Legend]]
+}}
+
+==Rules==
+{{DojoRule|Massive Damage}}
+
+==Battleground==
+*The enemy base here is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]].
+*2 [[Sir Seal]]s (4,000%) spawn after 160 seconds<sup>4,800f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*2 [[Znache]]s (300%) spawn after 153.33 seconds<sup>4,600f</sup>, delay 10 seconds<sup>300f</sup>.
+*1 [[Deathshund]] (150%) spawns after 140 seconds<sup>4,200f</sup>.
+*1 [[Zang Roo]] (300%) spawns after 133.33 seconds<sup>4,000f</sup>.
+*1 [[Cadaver Bear]] (200%) spawns after 113.33 seconds<sup>3,400f</sup>.
+*1 [[Zang Roo]] (200%) spawns after 100 seconds<sup>3,000f</sup>.
+*3 [[Relic Doge]]s (100%) spawn after 83.33 seconds<sup>2,500f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Zang Roo]] (200%) spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Sir Seal]] (2,400%) spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Znache]] (200%) spawns after 33.33 seconds<sup>1,000f</sup>.
+*2 [[Relic Doge]]s (100%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 10 seconds<sup>300f</sup>.
+*1 [[Znache]] (200%) spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Sir Seal]] (2,400%) spawns after 16.67 seconds<sup>500f</sup>.
+*2 [[Znache]]s (200%) spawn after 10 seconds<sup>300f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*2 [[Relic Doge]]s (100%) spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Sir Seal]] (2,400%) spawns as the boss.
+**2 [[Relic Doge]]s (100%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 100,000 damage:
+**1 [[Zang Roo]] (200%) spawns as the boss.
+**3 [[Relic Doge]]s (150%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 200,000 damage:
+**1 [[Cadaver Bear]] (300%) spawns as the boss.
+**1 [[Sir Seal]] (4,000%) spawns.
+*When the base takes 400,000 damage:
+**1 [[J.K. Bun Bun]] spawns as the boss.
+**2 [[Relic Doge]]s (150%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Deathshund]] (150%) spawns.
+*When the base takes 700,000 damage:
+**1 [[Le'Prude]] (150%) spawns as the boss.
+**3 [[Relic Doge]]s (150%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**2 [[Znache]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,000,000 damage:
+**1 [[Golem Sunfish]] (100%) spawns as the boss.
+**1 [[Deathshund]] (150%) spawns.
+**2 [[Sir Seal]]s (4,000%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,300,000 damage:
+**1 [[Le'Prude]] (200%) spawns as the boss.
+**3 [[Relic Doge]]s (150%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**2 [[Znache]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,600,000 damage:
+**1 [[Cadaver Bear]] (350%) spawns as the boss.
+**1 [[Sir Seal]] (4,000%) spawns.
+*When the base takes 1,900,000 damage:
+**1 [[Golem Sunfish]] (120%) spawns as the boss.
+**1 [[Deathshund]] (180%) spawns.
+**2 [[Sir Seal]]s (4,000%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 2,500,000 damage:
+**1 [[Le'Prude]] (200%) spawns as the boss.
+**3 [[Relic Doge]]s (150%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**2 [[Znache]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 3,000,000 damage:
+**1 [[Cadaver Bear]] (350%) spawns as the boss.
+**1 [[Sir Seal]] (4,000%) spawns.
+*When the base takes 3,500,000 damage:
+**1 [[Golem Sunfish]] (120%) spawns as the boss.
+**1 [[Deathshund]] (180%) spawns.
+**2 [[Sir Seal]]s (4,000%) spawn, delay 10 seconds<sup>300f</sup>.
+
+==Explanation==
+*You have three minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The total points earned from killing enemies will decrease overtime.
+*Unlike other Dojos, this one has a few other differences:
+**Enemies will drop money on defeat.
+**The base will not attack but is still an animated base, meaning [[Surge Attack|Surges]] and [[Explosion]]s can damage it.
+
+==Reference==
+*https://battlecats-db.com/stage/s11045-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

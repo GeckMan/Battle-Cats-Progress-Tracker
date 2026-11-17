@@ -1,0 +1,139 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Monaco (Into the Future)/Outbreak|here]].''
+'''Monaco''' is the 12th stage in [[Into the Future]]. Chapter 1 introduces [[Helmut Krabbe]], while Chapter 3 marks the first appearance of [[Calamary]].
+
+{{Story Info
+|stage name = [[File:Wc034.png]]
+|stage location = [[File:Monaco.png]]
+'''Into The Future'''
+|energy = 38
+|energy2 = 48
+|energy3 = 58
+|enemy castle hp = 25,000 HP
+|enemy castle hp2 = 37,500 HP
+|enemy castle hp3 = 50,000 HP
+|enemies = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Jackie Peng|200%
+|Shibalien|75%
+|Sir Seal|200%}}
+|boss = {{Magnification|Helmut Krabbe|50%}}
+|enemies2 = {{Magnification|Doge|600%
+|Snache|600%
+|Those Guys|600%
+|Jackie Peng|600%
+|Shibalien|250%
+|Sir Seal|600%}}
+|boss2 = {{Magnification|Helmut Krabbe|250%}}
+|enemies3 = {{Magnification|Croco|1,000%
+|Kroxo|250%
+|Jackie Peng|1,000%
+|Helmut Krabbe|500%
+|Ginger Snache|200%
+|Those Guys|1,000%
+|Snache|1,000%}}
+|boss3 = {{Magnification|Calamary|100%}}
+|treasure = - [[Treasure|Formula One Car]]
+|treasure2 = - [[Treasure|Formula One Car]]
+|treasure3 = - [[Treasure|Formula One Car]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': +50,000 XP
+|score reward2 = '''8,000''': [[Cat Food]] +10<br>
+'''7,000''': +75,000 XP
+|score reward3 = '''6,500''': [[Cat Food]] +10<br>
+'''5,500''': +100,000 XP
+|max enemies = 7
+|max enemies2 = 7
+|max enemies3 = 8
+|XP = 4,300 XP
+|width = 3,600
+|jpname = Monaco
+|script = モナコ
+|romaji = Monako
+|jptreasure = Cruiser
+|twname = Spain
+|twscript = 西班牙
+|twromaji = Xībānyá
+|twtreasure = Flamenco Dance
+|krname = Monaco
+|krscript = 모나코
+|krromaji = Monako
+|krtreasure = F1
+|chapter = [[Into the Future]]
+|prev stage = [[Spain (Into the Future)|Spain]]
+|next stage = [[Italy (Into the Future)|Italy]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Doge|Snache|Those Guys|Jackie Peng|Shibalien|Sir Seal|Helmut Krabbe}}
+*10 [[Doge]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*2 [[Doge]]s spawn after 5.33 seconds<sup>160f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*10 [[Snache]]s spawn after 10.67 seconds<sup>320f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*2 [[Those Guys]] spawn after 32 seconds<sup>960f</sup>, delay 6~12 seconds<sup>180f~360f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*5 [[Shibalien]]s spawn after 50 seconds<sup>1,500f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*1 [[Sir Seal]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Those Guys]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 90% HP:
+**1 [[Helmut Krabbe]] spawns as the boss.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Doge|Snache|Those Guys|Jackie Peng|Shibalien|Sir Seal|Helmut Krabbe}}
+*10 [[Doge]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*2 [[Doge]]s spawn after 5.33 seconds<sup>160f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*10 [[Snache]]s spawn after 10.67 seconds<sup>320f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*2 [[Those Guys]] spawn after 23.33 seconds<sup>700f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*5 [[Shibalien]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Sir Seal]] spawns after 51.33 seconds<sup>1,540f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Those Guys]] spawn, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*When the base reaches 90% HP:
+**1 [[Helmut Krabbe]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Croco|Kroxo|Jackie Peng|Helmut Krabbe|Ginger Snache|Those Guys|Snache|Calamary}}
+*10 [[Croco]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*5 [[Kroxo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Jackie Peng]] spawns after 16.67 seconds<sup>500f</sup>.
+*Infinite [[Croco]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*Infinite [[Kroxo]]s spawn after 100 seconds<sup>3,000f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 90% HP:
+**1 [[Calamary]] spawns as the boss.
+**3 [[Helmut Krabbe]]s spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Ginger Snache]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**3 [[Ginger Snache]]s spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**5 [[Snache]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**5 [[Croco]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**3 [[Those Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Snache]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**1 [[Ginger Snache]] spawns.
+**1 [[Ginger Snache]] spawns.
+
+==Strategy==
+==='''Chapters 1 & 2'''===
+If you started playing Into the Future right after obtaining all Superior [[Treasure]]s in [[Empire of Cats]], this is where spamming [[Cow Cat (Normal Cat)|Giraffe Cats]] may not earn you all the [[Timed Score Reward]]s. Helmut Krabbe's Area Attack and attack power allows him to juggle a stack of Giraffe Cats all at once. Instead, spam [[Fish Cat (Normal Cat)|Whale Cats]] or [[:Category:Anti-Alien Cats|anti-Alien cats]] to earn every Timed Score Reward here.
+
+==='''Chapter 3'''===
+Calamary's extreme range and weaken effect are all that stand between you and a surprisingly frail enemy. She may take a long time to defeat, but that time can be drastically reduced by stacking [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cats]] to hit her with [[Wave Attack|waves]]. [[:Category:Cats with Weaken Immunity|Cats with Weaken Immunity]] (like [[Salon Cat (Rare Cat)|Cyborg]]) will also have an easy time getting to her, and [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] can do great damage even if it is affected by Calamary's ability. Use [[Ururun Wolf (Special Cat)|Ururun Cat]]'s rapid Area Attacks for the Ginger Snaches.
+
+==Gallery==
+<gallery>
+Wc035.png|Taiwanese version's base (Italy)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Spain'''; [[Spain (Into the Future)|stage 11]] is France and Monaco is moved to [[Italy (Into the Future)|stage 13]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-12.html
+*https://battlecats-db.com/stage/s03004-12.html
+*https://battlecats-db.com/stage/s03005-12.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

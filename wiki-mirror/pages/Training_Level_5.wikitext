@@ -1,0 +1,52 @@
+{{EnemiesAppearing|Marmod|Red Marmod|Black Marmod}}
+'''Training Level 5''' is the fifth and final stage in [[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]].
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn188 04 c en.png]]
+|stage location = [[File:Mapname188 c en.png]]
+|energy = 200
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Marmod|100%
+|Red Marmod|100%
+|Black Marmod|100%}}
+|boss = {{Magnification|Marmod|1%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|restriction = Unit Restriction: Only [[World Trigger Collaboration Event|World Trigger]] Units
+|XP = 6,000 XP
+|width = 4,500
+|max enemies = 12
+|jpname = Training Level 5
+|script = 訓練レベル5
+|romaji = Kunren Reberu 5
+|star = 1
+|event = [[World Trigger Collaboration Event]]
+|event-chapter = [[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]]
+|difficulty = ★9
+|prev stage = [[Training Level 4]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo & Cat]], [[Yuma Kuga & Cat (Rare Cat)|Yuma Kuga & Cat]] and [[Chika Amatori & Cat (Special Cat)|Chika Amatori & Cat]]
+
+==Battleground==
+*1 [[Marmod]] (100%) spawns after 10 seconds<sup>300f</sup>.
+*1 [[Red Marmod]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Black Marmod]] spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Marmod]] (1%) spawns as the boss.
+**7 [[Marmod]]s (100%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**5 [[Red Marmod]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**3 [[Black Marmod]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+You need level 30 World trigger units by this point, spamming them will almost ensure an easy victory.
+
+==Reference==
+*https://battlecats-db.com/stage/s02188-05.html
+
+{{World Trigger}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]

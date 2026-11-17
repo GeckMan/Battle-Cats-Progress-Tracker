@@ -1,0 +1,13 @@
+.game-numbers {
+	background-image: url("https://static.wikitide.net/battlecatswiki/b/b9/Img001_ja.png");
+	display: inline-block;
+	color: transparent;
+	text-shadow: none;
+}
+
+.game-numbers-orange {
+	background-image: url("https://static.wikitide.net/battlecatswiki/5/56/OrangeNumbers.png");
+	display: inline-block;
+	color: transparent;
+	text-shadow: none;
+}

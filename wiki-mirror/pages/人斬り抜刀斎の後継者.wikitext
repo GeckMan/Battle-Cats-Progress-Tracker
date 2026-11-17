@@ -1,0 +1,52 @@
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|B.B.Bunny|Jackie Peng|Sir Seal|Kang Roo|Makoto Shishio}}
+'''人斬り抜刀斎の後継者''' is the first stage in [[Rurouni Kenshin Collaboration Event#幕末の亡霊・志々雄真実|幕末の亡霊・志々雄真実]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn275 00 c ja.png]]
+|stage location = [[File:Mapname275 c ja.png]]
+|energy = 100
+|enemy castle hp = 100,000 HP
+|enemies = {{Magnification|B.B.Bunny|800%
+|Jackie Peng|600%
+|Sir Seal|800%
+|Kang Roo|600%}}
+|boss = {{Magnification|Makoto Shishio|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 3,000 XP
+|width = 4,500
+|max enemies = 20
+|jpname = ?
+|script = 人斬り抜刀斎の後継者
+|romaji = ?
+|star = 1
+|event = [[Rurouni Kenshin Collaboration Event]]
+|event-chapter = [[Rurouni Kenshin Collaboration Event#幕末の亡霊・志々雄真実|幕末の亡霊・志々雄真実]]
+|prev stage = N/A
+|next stage = [[燃える殺人奇剣・無限刃]]
+}}
+
+==Battleground==
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 3.33 seconds<sup>100f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*5 [[Jackie Peng]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*2 [[Sir Seal]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Makoto Shishio (Enemy)|Makoto Shishio]] spawns as the boss.
+**2 [[Kang Roo]]s spawn, delay 80 seconds<sup>2,400f</sup>.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn after 26.67 seconds<sup>800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Sir Seal]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 73.33 seconds<sup>2,200f</sup>.
+**15 [[B.B.Bunny|B.B.Bunnies]] spawn after 73.33 seconds<sup>2,200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Kang Roo]] spawns after 83.33 seconds<sup>2,500f</sup>.
+**1 [[Sir Seal]] spawns after 86.67 seconds<sup>2,600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02275-01.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]

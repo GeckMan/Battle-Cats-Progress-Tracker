@@ -1,0 +1,61 @@
+{{EnemiesAppearing|Zigge|Znache|Zroco|Bore}}
+'''Frostbite Park''' is the third stage in [[Blizzard Boulevard]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn044 02 n en.png]]
+|stage location = [[File:Mapname044 n en.png]]
+|energy = 150
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Zigge|200%
+|Znache|200%
+|Zroco|200%
+|Bore|300%}}
+|boss = {{Magnification|Zigge|10%}}
+|enemies2 = {{Magnification|Zigge|240%
+|Znache|240%
+|Zroco|240%
+|Bore|360%}}
+|boss2 = {{Magnification|Zigge|12%}}
+|enemies3 = {{Magnification|Zigge|260%
+|Znache|260%
+|Zroco|260%
+|Bore|390%}}
+|boss3 = {{Magnification|Zigge|13%}}
+|treasure = - 285,000 XP (10%, 1 time)<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 2,850 XP
+|width = 5,500
+|max enemies = 15
+|jpname = Chilblains Parking Area
+|script = しもやけパーキングエリア
+|romaji = Shimoyake Pākingu Eria
+|star = 4
+|sub-chapter = [[Blizzard Boulevard]]
+|difficulty = ★9
+|prev stage = [[Leaky Tunnel]]
+|next stage = [[Toasty Turnpike]]
+}}
+
+==Battleground==
+*4 [[Zigge]]s (200%) spawn after 6.67 seconds<sup>200f</sup>, delay 10.67~12.67 seconds<sup>320f~380f</sup>.
+*8 [[Znache]]s spawn after 50 seconds<sup>1,500f</sup>, delay 20 seconds<sup>600f</sup>.
+*8 [[Zroco]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Zigge]] (10%) spawns as the boss.
+**Infinite [[Zigge]]s (200%) spawn, delay 13.33 seconds<sup>400f</sup>.
+**7 [[Zigge]]s (200%) spawn, delay 10.67~12.67 seconds<sup>320f~380f</sup>.
+**2 [[Bore]]s spawn, delay 86.67 seconds<sup>2,600f</sup>.
+
+==Strategy==
+The objective is to fight the Bores while dealing with as few [[:Category:Zombie Enemies|Zombies]] as possible. The first thing you should try to do is to kill all the early ones before hitting the enemy base, so use [[Li'l Tank Cat (Special Cat)|Li'l Tank Cat]] to get them to burrow, as he has the best chance of avoiding Zroco. Alternatively, a fast meatshield or [[Curling Cat (Rare Cat)|Cleanerbot Cat]] will work too. Once they start to un-burrow, don't let them rest and use [[:Category:Zombie Killer Cats|Zombie Killers]] like [[Vaulter Cat (Super Rare Cat)|Polevaulter Cat]] and [[Li'l Bird Cat (Special Cat)|Li'l Flying Cat]] to finish them off. Once you hit the base, just hold off the first Bore with tough [[:Category:Anti-Red Cats|anti-Reds]] like [[Fish Cat (Normal Cat)|Island Cat]], [[Crazed Fish Cat (Super Rare Cat)|Manic Island Cat]], [[Sushi Cat (Super Rare Cat)|Roe Cat]] and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] while you deal with the Zombies, then charge the Bore and kill him. Repeat and you win.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], the unlimited Zigges were set to spawn every 13.3~10 seconds instead of just 13.3. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s00044-03.html
+
+{{LegendStages}}
+[[Category:Stories of Legend Stages]]
+[[Category:Sub-chapter 45 Stages]]

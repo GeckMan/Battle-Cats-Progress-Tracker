@@ -1,0 +1,130 @@
+:''This article is about the Cat Unit. For the enemy, see [[Tasmanian Giant Crab (Enemy)]].''
+'''Tasmanian Giant Crab''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] using Legend Traps. It was added in [[Version 14.5 Update|Version 14.5]].
+
+{{Cat Info
+|ID = 813
+|rarity = EX
+|name1 = Tasmanian Giant Crab
+|name2 = Tasmanian Giant Crab CC
+}}
+
+==Evolution==
+Evolves into '''Tasmanian Giant Crab CC''' at level 10.
+
+==Strategy/Usage==
+Tasmanian Giant Crab is a mediocre [[Barrier Breaker]] that struggles to even do its job. Its abysmally slow speed and low HP oftentimes prevent it from even reaching its target, not to mention its range.
+
+Even if it connects to a target's [[Barrier]], there's no guarantee that its ability even activates, making it unreliable at even the best of times. While it is cheap, Tasmanian Gaint Crab's cooldown is fairly long for how little it accomplishes during its lifespan. It is at least decent at breaking [[UltraBaaBaa]]'s Barrier on occasion, be it during restriction stages or the [[Underground Labyrinth]]. Its damage is also enough to cripple enemies for what it's worth, but landing said damage is very unlikely due to its previously mentioned speed, health and range.
+
+It should only be used on special restriction stage if you don't have a special [[Barrier Breaker]].
+
+{{Job|Classification = Breaker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 813
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni813 f00.png
+|Image2 = Uni813 c00.png
+|Name1 = Tasmanian Giant Crab
+|Desc1 = Dropping in from "Survive! Mola Mola!"<br>World's largest crab... and dangerously tasty.<br>Chance to Break Barriers
+|Name2 = Tasmanian Giant Crab CC
+|Desc2 = Dropping in from "Survive! Mola Mola!"<br>One hit from that sharp right claw and<br>you're out! Chance to Break Barriers
+|Name1 (JP) = タスマニアオオガニ (Tasumaniaōgani, Tasmanian Giant Crab)
+|Desc1 (JP) = 生きろ！マンボウ！から参戦！<br>世界最大の蟹。危険なほどうまい<br>たまにバリアを貫く
+|Transl1 (JP) = Joining from Survive! Mola Mola!<br>The world's biggest crab. Dangerously tasty<br>Sometimes breaks Barriers
+|Name2 (JP) = タスマニアオオガニCC (Tasumaniaōgani Shīshī, Tasmanian Giant Crab CC)
+|Desc2 (JP) = 生きろ！マンボウ！から参戦！<br>必殺の右ハサミに挟まれるとアウトだと思う<br>たまにバリアを貫く
+|Transl2 (JP) = Joining from Survive! Mola Mola!<br>You're probably done for if you get caught by its deadly right claw<br>Sometimes breaks Barriers
+|Name1 (TW) = 巨大擬濱蟹
+|Desc1 (TW) = 從活下去！曼波魚！來參戰。<br>世界上最大的螃蟹，好吃到會上癮<br>有時候能破壞護盾
+|Name2 (TW) = 巨大擬濱蟹CC
+|Desc2 (TW) = 從活下去！曼波魚！來參戰。<br>只要被必殺的右螯夾住就準備再見<br>有時候能破壞護盾
+|Name1 (KR) = 태즈메이니아 대게
+|Desc1 (KR) = 살아남아라!개복치!에서 참전!<br>세계에서 가장 큰 게. 위험한 만큼 맛있다<br>가끔 베리어를 뚫어버린다
+|Name2 (KR) = 태즈메이니아 대게CC
+|Desc2 (KR) = 살아남아라!개복치!에서 참전!<br>그 필살 오른 집게발에 잡히면 끝이다<br>가끔 베리어를 뚫어버린다
+}}
+
+==Cost==
+*Chapter 1: 320¢
+*Chapter 2: 480¢
+*Chapter 3: 640¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tasmanian Giant Crab
+|Normal Base HP = 280
+|Normal Base AP = 1000
+|Normal Range = 180
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 199
+|Normal Attack Length = 8
+|Normal Speed = 5
+|Normal KB = 1
+|Normal Cost = 320
+|Normal Recharge = 660
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Barrier Breaker}} 50% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Tasmanian Giant Crab CC
+|Evolved Base HP = 320
+|Evolved Base AP = 1400
+|Evolved Range = 180
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 199
+|Evolved Attack Length = 8
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 320
+|Evolved Recharge = 660
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Barrier Breaker}} 50% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 280 HP
+|val-Normal-Attack Power = 1,000 damage<br>(150 DPS)
+|val-Normal-Attack Range = 180
+|val-Normal-Attack Frequency = 200f <sub>6.67 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(7f <sup>0.23s</sup> backswing)
+|val-Normal-Recharge Time = 22 ~ 13.2 seconds
+|val-Normal-MaxHP = 4,760 HP
+|val-Normal-MaxAttack = 17,000 damage<br>(2,550 DPS)
+|val-Evolved-Health = 5,440 HP
+|val-Evolved-Attack Power = 23,800 damage<br>(3,570 DPS)
+|val-Evolved-Attack Range = 180
+|val-Evolved-Attack Frequency = 200f <sub>6.67 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(7f <sup>0.23s</sup> backswing)
+|val-Evolved-Recharge Time = 22 ~ 13.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni813 f00}}
+
+==Trivia==
+*Though it, [[Sardine (Special Cat)|Sardine]] and [[Squid (Special Cat)|Squid]] originate from the game [[Survive! Mola Mola! Collaboration Event|Survive! Mola Mola]], the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] event gacha makes no mention of this fact anywhere on its banner or info page.
+
+==Reference==
+*https://battlecats-db.com/unit/814.html
+
+----
+{{CatNav|Victorious Skanda|Mass Production EVA}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Barrier Breaker Cats]]

@@ -1,0 +1,31 @@
+<onlyinclude>{{#if:{{{ 1|}}}|<span id="{{anchorencode:{{{ 1|}}}}}" /><!--
+-->{{#if:{{{ 2|}}}|<span id="{{anchorencode:{{{ 2|}}}}}" /><!--
+-->{{#if:{{{ 3|}}}|<span id="{{anchorencode:{{{ 3|}}}}}" /><!--
+-->{{#if:{{{ 4|}}}|<span id="{{anchorencode:{{{ 4|}}}}}" /><!--
+-->{{#if:{{{ 5|}}}|<span id="{{anchorencode:{{{ 5|}}}}}" /><!--
+-->{{#if:{{{ 6|}}}|<span id="{{anchorencode:{{{ 6|}}}}}" /><!--
+-->{{#if:{{{ 7|}}}|<span id="{{anchorencode:{{{ 7|}}}}}" /><!--
+-->{{#if:{{{ 8|}}}|<span id="{{anchorencode:{{{ 8|}}}}}" /><!--
+-->{{#if:{{{ 9|}}}|<span id="{{anchorencode:{{{ 9|}}}}}" /><!--
+-->{{#if:{{{10|}}}|<span id="{{anchorencode:{{{10|}}}}}" /><!--
+-->{{#if:{{{11|}}}
+    |<div style="background:yellow">[[Template:Anchor]]: too many anchors</div><!--
+-->}}<!--
+-->}} }} }} }} }} }} }} }} }} }}</onlyinclude>
+Use this template to create an anchor to the text, e.g. [[#this line]] will link to this line. {{anchor|this line}}
+
+<pre>
+Use this template to create an anchor to the text, e.g. [[#this line]] will link to this line. {{anchor|this line}}
+</pre>
+
+Always write the template name in lower case. code taken from [[mh:dev:Template:Anchor]].
+
+Example:
+<pre>
+*{{anchor|item 1}} '''Item 1''': item 1 is this
+</pre>
+
+yields:
+*{{anchor|item 1}} '''Item 1''': item 1 is this
+
+and now you can link to [[Template:Anchor#item 1]] and get that item

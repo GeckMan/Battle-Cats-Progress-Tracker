@@ -1,0 +1,70 @@
+<includeonly><onlyinclude>{{safesubst:#invoke:CatCombo|jsonify}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template is used to display [[Cat Combo]]s.
+
+==Usage==
+<pre>
+{{Combos
+|{{CatCombo|name|effect|cat1|cat2|cat3|cat4|cat5|jpname=|link=|restriction=}}
+|{{CatCombo|name|effect|cat1|cat2|cat3|cat4|cat5|jpname=|link=|restriction=}}
+}}
+</pre>
+<code>link</code> is an optional parameter, if the combo has a page already it shouldn't be used (default: <code>name (Combo)</code>). <code>restriction</code> is another optional parameter for combos like [[Red Strike (Combo)]] that need a third line to show which units the combo's effect is restricted to.
+
+The look of the table is done with [[Template:Combos]] and CSS: make sure that if using the table you have <code>class="article-table combo-table"</code> which will apply the styling seen on this page. <code>class="article-table combo-table basic"</code> will display a simplified version of the table as on pages like [[Cat Combo]].
+
+For example usage, see Template:Combos.
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Name",
+			"required": true,
+			"type": "string"
+		},
+		"2": {
+			"label": "Effect",
+			"type": "string",
+			"required": true
+		},
+		"3": {
+			"label": "Cat 1",
+			"type": "string",
+			"required": true
+		},
+		"4": {
+			"label": "Cat 2",
+			"type": "string"
+		},
+		"5": {
+			"label": "Cat 3",
+			"type": "string"
+		},
+		"6": {
+			"label": "Cat 4",
+			"type": "string"
+		},
+		"7": {
+			"label": "Cat 5",
+			"type": "string"
+		},
+		"jpname": {
+			"label": "Name (JP)",
+			"type": "string"
+		},
+		"link": {
+			"label": "Combo page",
+			"description": "If not given then will default to \"<comboname> (Combo)\"",
+			"example": "Cat Army MkII (Removed Combo)",
+			"type": "wiki-page-name"
+		},
+		"restriction": {
+			"description": "For combos like Red Strike",
+			"example": "[[:Category:Nyanko Rangers|Nyanko Rangers]] only"
+		}
+	},
+	"format": "inline"
+}
+</templatedata>

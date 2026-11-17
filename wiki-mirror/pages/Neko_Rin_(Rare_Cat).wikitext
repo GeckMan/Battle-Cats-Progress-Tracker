@@ -1,0 +1,124 @@
+'''Neko Rin''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 10.3 Update|Version 10.3]].
+
+{{Cat Info
+|ID = 592
+|rarity = RR
+|name1 = Neko Rin
+|name2 = Neko Rin CC
+}}
+
+==Evolution==
+Evolves into '''Neko Rin CC''' at level 10.
+
+==Strategy/Usage==
+Neko Rin should be used exclusively on stages with Dark enemies, otherwise her health is too low to tank other types of attacks. She can be used against some Dark enemies to tank them, with 30% dodge chance and 2 second duration, however due to most Dark enemies' very high damage with rapid attacks, unless you have good luck, she is rather useless. To further add on to that fact, [[Talents|Talented]] [[Ninja Cat (Special Cat)|Flying Ninja Cat]] and [[Brainwashed Cat (Super Rare Cat)|Brainwashed Cat]] both outshine her as dodge-based meatshields because of their higher speed stats, much lower costs and cooldown times, and by having more than one target trait.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 592
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni592 f00.png
+|Image2 = Uni592 c00.png
+|Name1 = Neko Rin
+|Desc1 = Die-hard fan of a fresh-faced popstar.<br>Known for gifting fresh oranges to the crowd.<br>Might Dodge attacks from Dark enemies.
+|Name2 = Neko Rin CC
+|Desc2 = Die-hard fan of a charming popstar.<br>Dreams of her voice being heard around the world.<br>Might Dodge attacks from Dark enemies.
+|Name1 (JP) = ネコリン (Neko Rin, Cat Rin)
+|Desc1 (JP) = フレッシュなバーチャル・シンガーに憧れるネコ<br>新鮮なみかんを客席に投げる芸が話題を呼んでいる<br>たまに黒い敵の攻撃を無効化する
+|Transl1 (JP) = Cats yearn to be fresh virtual singers<br>The art of throwing fresh oranges into the audience is getting a lot of attention<br>Occasionally nullifying the attacks of Dark Enemies
+|Name2 (JP) = ネコリンCC (Neko Rin CC, Cat Rin CC)
+|Desc2 (JP) = チャーミングなバーチャル・シンガーに憧れるネコ<br>遠くまで歌声を響かせるために高みを目指す<br>たまに黒い敵の攻撃を無効化する
+|Transl2 (JP) = A cat with a penchant for charming virtual singers<br>Aiming high to make her voice echo far and wide<br>Occasionally nullifies the attacks of Dark Enemies
+|Name1 (TW) = 貓咪鈴
+|Desc1 (TW) = 很憧憬鮮活感十足的虛擬歌手的貓咪<br>最近把新鮮蜜柑丟到觀眾席上的演出梗討論度很高<br>有時候可使黑色敵人的攻擊無效化
+|Name2 (TW) = 貓咪鈴CC
+|Desc2 (TW) = 很憧憬有魅力的虛擬歌手的貓咪<br>爲了歌聲響徹雲霄目標唱得更高<br>有時候可使黑色敵人的攻擊無效化
+|Name1 (KR) = 고양이 린
+|Desc1 (KR) = 프레시한 버추얼 싱어를 동경하는 고양이<br>프레시한 귤을 객석에 던지는 퍼포먼스로 화제몰이 중<br>가끔 검은 적의 공격을 무효화 시킨다
+|Name2 (KR) = 고양이 린CC
+|Desc2 (KR) = 챠밍한 버추얼 싱어를 동경하는 고양이<br>목소리를 멀리까지 내기 위해 높은 곳을 목표로 하고 있다<br>가끔 검은 적의 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 340¢
+*Chapter 2: 510¢
+*Chapter 3: 680¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Neko Rin
+|Normal Base HP = 800
+|Normal Base AP = 200
+|Normal Range = 210
+|Normal Foreswing = 48
+|Normal Attack Cooldown = 47
+|Normal Attack Length = 77
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 340
+|Normal Recharge = 410
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Neko Rin CC
+|Evolved Base HP = 800
+|Evolved Base AP = 200
+|Evolved Range = 210
+|Evolved Foreswing = 48
+|Evolved Attack Cooldown = 47
+|Evolved Attack Length = 77
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 340
+|Evolved Recharge = 410
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 200 damage<br>(63.16 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 95f <sub>3.17 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 48f <sup>1.6s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Normal-Recharge Time = 13.67 ~ 4.87 seconds
+|val-Normal-MaxHP = 13,600 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(1,073.68 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(1,073.68 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 95f <sub>3.17 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 48f <sup>1.6s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Evolved-Recharge Time = 13.67 ~ 4.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni592 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/593.html
+
+----
+{{CatNav|KAITO & Cat|Neko Len}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

@@ -1,0 +1,9 @@
+.ranger-navbox.rurouni-kenshin {
+	--bg-navbox-title: linear-gradient(to right, hsl(12, 91%, 55%) 0%, hsl(12, 91%, 55%) 100%);
+	--bg-sub-table-title: hsl(142, 0%, 55%);
+	--bg-group-name: hsl(12, 91%, 55%);
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

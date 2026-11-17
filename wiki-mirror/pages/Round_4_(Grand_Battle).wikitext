@@ -1,0 +1,64 @@
+{{DISPLAYTITLE:Round 4}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Relic Doge|One Horn|Ragin' Gory|Infernal Pegasus Deonil|Golem Sunfish|Othom|Pigge}}
+'''Round 4''' is the fourth stage in [[Otherworld Colosseum#Grand Battle|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 03 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 2,400,000 HP
+|enemies = {{Magnification|Relic Doge|150%
+|One Horn|4,000%
+|Ragin' Gory|100%
+|Golem Sunfish|100%
+|Othom|100%
+|Pigge|4,000%}}
+|boss = {{Magnification|Infernal Pegasus Deonil|100%}}
+|enemies2 = {{Magnification|Relic Doge|180%
+|One Horn|4,800%
+|Ragin' Gory|120%
+|Golem Sunfish|120%
+|Othom|120%
+|Pigge|4,800%}}
+|boss2 = {{Magnification|Infernal Pegasus Deonil|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 15
+|jpname = Round 4
+|script = Round 4
+|romaji = Round 4
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Grand Battle|Otherworld Colosseum]]
+|difficulty = ★11
+|prev stage = [[Round 3 (Grand Battle)|Round 3]]
+|next stage = [[Round 5 (Grand Battle)|Round 5]]
+}}
+
+==Rules==
+{{ColosseumRule|Grand Battle}}
+
+==Battleground==
+*30 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[One Horn]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Ragin' Gory]] spawns after 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Infernal Pegasus Deonil]] spawns as the boss.
+**2 [[Relic Doge]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**3 [[Ragin' Gory|Ragin' Gories]] spawn, delay 66.67 seconds<sup>2,000f</sup>.
+**1 [[Golem Sunfish]] spawns.
+**1 [[Othom]] spawns after 6.67 seconds<sup>200f</sup>.
+**2 [[One Horn]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**2 [[Pigge]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 66.67 seconds<sup>2,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36017-04.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

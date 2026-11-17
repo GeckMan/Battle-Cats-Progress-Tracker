@@ -1,0 +1,121 @@
+'''Poultrio''' (トリニティ, ''Toriniti'') is a [[:Category:Red Enemies|Red]]/[[:Category:Dark Enemies|Dark]]/[[:Category:Aku Enemies|Aku]] variant of [[R.Ost]] that appears in the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] [[Invasion of Poultrio]]. They were added in [[Version 15.2 Update|Version 15.2]].
+
+{{Enemy Info
+|name = Poultrio
+|image = E 769.png
+|appearance = [[Invasion of Poultrio]]
+|money drop = 4,320¢ - 17,064¢
+}}
+
+==Enemy==
+This unholy trinity has an enormous amount of health, delivers a nonstop flurry of attacks with enough piercing range to hit most midrangers, and boasts blistering speed that allows it to instantly close the distance to the frontline, albeit with slightly lower DPS than most late-game R.Ost variants along with a whopping 20 knockbacks. While its three traits and lack of immunities give it a plethora of weaknesses to exploit, they also grant it three dangerous abilities: a 30% chance to [[Knockback]] units that can weather its blows, a 15% chance to create an [[Explosion]] expanding its area of effect, and a somewhat weak [[Shield]] that fully regenerates on every knockback to significantly resist both raw damage and debuffs. In addition, should it manage to close the distance to the [[Cat Base]], its [[Base Destroyer]] ability will make short work of it.
+
+==Strategy==
+[[Master Uril (Special Cat)|Esoteric Uril]] is almost mandatory to tackle this feathered fiend, as a combination of Slow, Curse, and Strong vs. Aku allow him to weather its blows and keep it from pushing with either its speed or Knockback, though he will need assistance to consistently break its Shield. [[Master of Logic Newtone (Special Cat)|Newtone]] is a good choice for sub-DPS as his 600 range allows him to outrange Poultrio's Explosion, while also being able to inflict Slow and reposition in a pinch.
+
+Despite a wide range of meatshields resisting at least one of Poultrio's three types on paper, its overwhelming pushing power and Knockback renders conventional meatshielding much less effective. Cats with extremely high effective HP and stamina, cats with [[Dodge]], and [[Stone Cat (Rare Cat)|Stone Cat]] can halt its advance, with a talented [[Bondage Cat (Special Cat)|Ultimate Bondage Cat]] being one of the most effective meatshields against it, owing to having a combination of Strong and Dodge vs. Red while being able to momentarily freeze Poultrio when its Shield is down. If one has them, [[Li'l Gau (Rare Cat)|Crystal Li'l Gau Gau]] can resist both the boss' attacks and Knockback, albeit being somewhat slow.
+
+Due to its multiple weaknesses and lack of immunities, status effects can be useful provided their users have enough range or durability to successfully debuff Poultrio while its Shield is down. In particular, it is possible, albeit difficult, to trap Poultrio in a permanent [[Freeze]] loop using units such as [[Apple Cat (Super Rare Cat)|iCat]] or [[Flower Cat (Special Cat)|Bombercat]]. This usually involves breaking the boss' Shield and hitting it from outside its range with an initial Freeze (ie. the [[Thunderbolt]] cannon), then piling as many Freeze units on it as possible during the opening. This is a risky strategy that also requires either a constant stream of DPS or Shield Piercers to constantly break its regenerating Shield and allow Freezes to connect; this ends up somehow being the one niche use-case for [[Li'l Cow Cat (Special Cat)|Li'l Lion Cat's]] shield piercing talent, since it's one of the few spammable shield piercers.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 769
+|Type = [[:Category:Red Enemies|Red]]/[[:Category:Dark Enemies|Dark]]/[[:Category:Aku Enemies|Aku]]
+|Image1 = Enemy icon 769.png
+|Name1 = Poultrio
+|Desc1 = Formed a comedy group simply because birds flock together.<br>They believe in quantity over quality, spamming<br>terrible jokes non-stop until the sheer confusion<br>causes the audience to accidentally laugh.
+|Name1 (JP) = トリニティ (Toriniti)
+|Desc1 (JP) = 鳥ならトリオを組むべきという<br>安直な考えで結成されたトリオ芸人。<br>数うちゃ当たるの精神でボケを連発し<br>たまに爆笑の渦を巻き起こす。
+|Transl1 (JP) = A comedian trio formed based on the simple idea<br>that birds should work together as a trio.<br>Does a series of jokes with an "if you try hard enough, you'll succeed" mentality,<br>occasionally creating a burst of explosive laughter.
+|Name1 (TW) = 三頭鴕鳥
+|Desc1 (TW) = 為了要比一石二鳥更加厲害<br>而隨興組成的三「鳥」組藝人<br>靠著亂槍打鳥的精神不斷耍笨<br>有時候還是能讓台下觀眾笑翻
+|Name1 (KR) = 삼위일조
+|Desc1 (KR) = 「새니까 세엣이 하나!」라는 썰렁한 구호로<br>결성된 트리오 코미디언. 하나는 먹히겠지<br>라는 마인드로 쉴 「새」 없이 드립을 날린다.<br>극히 낮은 확률로 폭소를 일으킨다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Invasion of Poultrio]]:
+**[[Feathergeddon I (Merciless)]]
+**[[Feathergeddon II (Merciless)]]
+**[[Feathergeddon III (Merciless)]]
+**[[Feathergeddon: Swan Song (Brutal)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Poultrio
+|Health = 3600000
+|Attack Power = 23331
+|Attack Range = 290
+|Attack Type = Area
+|Time Between Attacks = 21
+|Movement Speed = 60
+|Knockback = 20
+|Foreswing = 4
+|Backswing = 5
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">7,777</span> at 4f <sup>0.13s</sup>, <span class="scaled" data-type="ap">7,777</span> at 11f <sup>0.37s</sup>, <span class="scaled" data-type="ap">7,777</span> at 16f <sup>0.53s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -420~390)<br>
+{{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])<br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">60,000</span>; regenerates with 100% HP)<br>
+{{AbilityIcon|Explosion}} 15% chance to create an [[Explosion]] at 290 range
+|Element = Red/Dark/Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+769 e.png|Poultrio's spritesheet
+Medal 125.png|Poultrio on the ''Poultrio'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Poultrio's name is a portmanteau of ''poultry'' and ''trio''.
+*Poultrio's Japanese name, トリニティ ''Toriniti'', is a pun on 鳥 ''tori'' (bird) and ''trinity''.
+*Poultrio's Japanese description plays off of how 鳥 ''tori'' (bird) sounds similar to トリオ ''torio'' (trio).
+*Poultrio being a comedy group may reference the comedy trio [[wikipedia:ja:ダチョウ倶楽部|Dachō Club]] (ダチョウ倶楽部 ''Dachō Kurabu'', "Ostrich Club"), which is also referenced by the Japanese names of [[R.Ost]] and [[Pure Gold R.Ost]].
+*With its three heads and [[:Category:Red Enemies|Red]]/[[:Category:Dark Enemies|Dark]]/[[:Category:Aku Enemies|Aku]] typing, Poultrio may represent [https://www.theoi.com/Khthonios/Hekate.html Hecate], a Greek underworld goddess of magic, the Moon, crossroads and the night, represented with three forms, bodies, or heads. She is also associated with dogs, which appear in all stages of [[Invasion of Poultrio]]; one of her familiars is the Trojan Queen [[wikipedia:Hecuba|Hecuba]] transformed into a black dog, which may be referenced by the [[Doge Dark]]s in the [[Feathergeddon I (Merciless)|first]] and [[Feathergeddon: Swan Song (Brutal)|fourth]] stages. Hecate has many epithets, most relevantly Krokopeplos (Κροκόπεπλος, "[[wikipedia:Saffron|saffron]]-cloaked", potentially explaining the Red trait), Nyctipolos (Νυκτιπολος, "night wandering"), Cthonia (Χθωνία, "of the underworld") and Trimorphe (Τρίμορφη, "three-formed"). Its Base Destroyer ability could come from Hecate's father, [[wikipedia:Perses (son of Crius)|Perses]], a Titan god of destruction whose name means "destroyer".
+*Since many of the [[:Category:Advent Bosses|Advent Bosses]] appear to have biblical or demonic inspirations, Poultrio's three heads and Aku trait may reference [[wikipedia:Asmodeus|Asmodeus]], a demon from the deuterocanonical [[wikipedia:Book of Tobit|Book of Tobit]] who is associated with the sin of lust. In demonology, Asmodeus has three heads - one of a human, one of a bull and one of a ram - and the leg of a rooster, which may be why Poultrio is named after poultry despite being an ostrich.
+**The phrase 爆笑の渦 ''bakushō no uzu'' in Poultrio's Japanese description means "clamor of uproarious laughter", but literally translates to "whirlpool of explosive laughter" or "vortex of explosive laughter". Besides its [[Explosion]] ability, this might allude to the whirlwind in the second circle of Hell (lust) in Dante's ''[[wikipedia:Inferno (Dante)|Inferno]]''.
+**Poultrio could also be based on [[wikipedia:Dante's Satan|Dante's Satan]], who has three faces: one red (middle), one a pale yellow (right), and one black (left). Though Poultrio's right head is blue, it does have yellow eyes. Ironically, this triple-faced Satan represents the antithesis of the holy [[wikipedia:Trinity|Trinity]], a word which Poultrio's Japanese name is a pun on.
+**Another demon that may have inspired Poultrio is [[wikipedia:Naberius|Naberius]], a Goetic demon who takes the form of a three-headed dog, a raven, or a black crane.
+*Poultrio being a three-headed bird could reference:
+**[[wikipedia:Trisiras|Trisiras]], an [[wikipedia:Asura|asura]] whose three heads were cut off and became three different birds. In Indian religions, asuras are demon-like beings who oppose the more benevolent gods, the [[wikipedia:Deva (Hinduism)|Devas]], and are associated with many negative emotions and vices such as violence, wrath, pride, envy, and insincerity, although not all asuras are evil.
+**The [[wikipedia:Triple-headed eagle|triple-headed eagle]] in multiple heraldries and [[wikipedia:2 Esdras|2 Esdras]], an apocryphal book of the Old Testament.
+**The [[wikipedia:Ellén Trechend|Ellén Trechend]] from Irish mythology, a three-headed monster whose species is unknown, but frequently interpreted as a bird. In P.W. Joyce's ''A Smaller Social History of Ancient Ireland'', a three-headed vulture, likely the Ellén Trechend, commands a flock of copper-red birds.
+**[https://bulbapedia.bulbagarden.net/wiki/Dodrio_(Pok%C3%A9mon) Dodrio], an ostrich-like Pokémon with three heads.
+*Both Poultrio and [[Killer Cowbird Cat (Enemy)|Killer Cowbird Cat]], another character added in [[Version 15.2 Update|Version 15.2]], are fusions. Poultrio is three comedians in one, while Killer Cowbird Cat is a combination of a [[Cow Cat (Normal Cat)|Cow Cat]] and [[Bird Cat (Normal Cat)|Bird Cat]] who collided.
+*Unlike R.Ost and his other variants, Poultrio only appears to have one claw on each foot.
+*Poultrio is the only R.Ost variant to actually hit multiple times per attack, despite all of the others having animations that imply they should be doing so as well.
+*All of the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] rewards released before Poultrio have effects that target its traits. [[Jetpack Cat (Rare Cat)|Jetpack Cat]], [[Maize Cat (Rare Cat)|Maize Cat]] and [[Carpenter Cat (Rare Cat)|Carpenter Cat]] are resistant to it, while [[Bowler Cat (Rare Cat)|Bowler Cat]] can slow it.
+*Poultrio is the only Great Advent Boss to not be called a "king" in its Japanese description, stage names, nor [[Media:Eve l 262 nyanko images 54fcHPoxyUtPq64TlOAL.png|event poster]].
+*Poultrio is the only Great Advent Boss to have no immunities, though its [[Shield]] makes it immune to crowd-control effects when active.
+*Poultrio and [[Dark Emperor Santa]] are the only [[:Category:Aku Enemies|Aku enemies]] to have more than one trait.
+**Coincidentally, they both are also [[:Category:Red Enemies|Red enemies]].
+
+==Reference==
+*https://battlecats-db.com/enemy/771.html
+
+----
+{{EnemyNav|Le'Prude|Killer Cowbird Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Red Enemies]]
+[[Category:Dark Enemies]]
+[[Category:Aku Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Enemies with Shields]]
+[[Category:Explosion Enemies]]

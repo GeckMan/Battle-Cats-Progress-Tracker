@@ -1,0 +1,73 @@
+{{DISPLAYTITLE:Round 4}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Suidae Piggicus|Zory|J.J. Jackrabbit|Commander Ostromeda|Elizabeth the LVIth|Cadaver Bear|Infernal Pegasus Deonil|Dread Bore}}
+'''Round 4''' is the fourth stage in [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 03 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,600,000 HP
+|enemies = {{Magnification|Suidae Piggicus|100%
+|Zory|300%
+|J.J. Jackrabbit|200%
+|Elizabeth the LVIth|2,400%
+|Cadaver Bear|350%
+|Commander Ostromeda|150%
+|Dread Bore|300%}}
+|boss = {{Magnification|Commander Ostromeda|150%
+|Infernal Pegasus Deonil|100%}}
+|enemies2 = {{Magnification|Suidae Piggicus|120%
+|Zory|360%
+|J.J. Jackrabbit|240%
+|Elizabeth the LVIth|2,880%
+|Cadaver Bear|420%
+|Commander Ostromeda|180%
+|Dread Bore|360%}}
+|boss2 = {{Magnification|Commander Ostromeda|180%
+|Infernal Pegasus Deonil|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,800
+|max enemies = 20
+|jpname = Round 4
+|script = Round 4
+|romaji = Round 4
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]
+|difficulty = ★11
+|prev stage = [[Round 3 (Dirt Cheap)|Round 3]]
+|next stage = [[Round 5 (Dirt Cheap)|Round 5]]
+}}
+
+==Rules==
+{{ColosseumRule|Dirt Cheap}}
+
+==Battleground==
+*1 [[Suidae Piggicus]] spawns.
+*1 [[Zory]] spawns after 3.33 seconds<sup>100f</sup>.
+*3 [[J.J. Jackrabbit]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*Infinite [[J.J. Jackrabbit]]s spawn after 20 seconds<sup>600f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Commander Ostromeda]] spawns as the boss.
+**1 [[Elizabeth the LVIth]] spawns.
+**3 [[Zory|Zories]] spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**1 [[Cadaver Bear]] spawns after 20 seconds<sup>600f</sup>.
+**1 [[Commander Ostromeda]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 70% HP:
+**1 [[Infernal Pegasus Deonil]] spawns as the boss.
+**1 [[Suidae Piggicus]] spawns.
+**1 [[Cadaver Bear]] spawns.
+**4 [[J.J. Jackrabbit]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Dread Bore]] spawns after 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36016-04.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

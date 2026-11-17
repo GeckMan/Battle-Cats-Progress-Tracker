@@ -1,0 +1,118 @@
+'''Jamie Cat''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]]. It is a variant of [[Kung Fu Cat (Special Cat)|Drunken Master Cat]]. He was added in [[Version 14.7 Update|Version 14.7]] for [[Nyanko Daisensou|BCJP]] and [[Version 15.0 Update|Version 15.0]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 829
+|rarity = SR
+|name1 = Jamie Cat
+|name2 = Jamie Cat CC
+}}
+
+==Evolution==
+Evolves into '''Jamie Cat CC''' at level 10.
+
+==Strategy/Usage==
+Jamie Cat is a good [[:Category:Anti-Aku Cats|anti-Aku]] Midranger and a decent generalist who operates similarly to [[Kung Fu Cat (Special Cat)|Drunken Master Cat]] but have completely different stats and abilities. With a solid 4.6k DPS against targets at Lv.30, they function as essentially a better [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]] that target [[:Category:Aku Enemies|Aku]]. Jamie cat have [[Immune to Surge|Surge Immunity]] in addition to high bulk, something of a necessity for a midrange anti-Aku unit to fight against enemies like [[Condemned Peng]] or [[Fallen Bear]] despite not outranging the latter. Another ability that Jamie cat possesses is [[Strengthen]]. This increases Jamie Cat's DPS from 4.6k to 7k against Aku and substantially improve their general usage. Jamie Cat is also much more spammable than other anti-Akus, with a cooldown similar to [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] which allows him to be stacked over time.
+
+However, Jamie Cat's Multi-Hit tends to act as a major hinderence, since Aku shields regenerate on knockback. His DPH is on the lower side, giving him bad matchups against [[Midnite D.]] and [[Ackey]], who prefer to be dealt with in one fell swoop. They also lack [[Shield Piercing]] so make sure to pair them with a [[:Category:Shield Piercing Cats|Shield Piercer]], so that their attacks actually land.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 829
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni829 f00.png
+|Image2 = Uni829 c00.png
+|Name1 = Jamie Cat
+|Desc1 = Adores a Chinatown user of the drunken fist.<br>Everything tastes better coming from its gourd.<br>Strong vs. Aku, stronger after taking damage!
+|Name2 = Jamie Cat CC
+|Desc2 = Only planned to fake being drunk, but ended up<br>drinking too much. Why is his hair so messy?<br>Strong vs. Aku, stronger after taking damage!
+|Name1 (JP) = ネコジェイミー (Neko Jeimī, Jamie Cat)
+|Desc1 (JP) = 中華街を守る酔拳使いの青年に憧れるネコ<br>ひょうたん型の水筒から飲めば何でも酔える気がする<br>悪魔にめっぽう強く、体力減少で攻撃力が上昇する
+|Name2 (JP) = ネコジェイミーCC (Neko Jeimī Shīshi, Jamie Cat CC)
+|Desc2 (JP) = 酔ったふりをしているうちに、本当に酔ったネコ<br>髪を振り乱して戦っているときの記憶はない<br>悪魔にめっぽう強く、体力減少で攻撃力が上昇する
+|Name1 (TW) = 傑米貓
+|Desc1 (TW) = 崇拜用醉拳守護中華街之青年的貓咪<br>只要用葫蘆造型的水壺，似乎喝什麼都能醉<br>善於攻擊惡魔，體力減少攻擊力就會上升
+|Name2 (TW) = 傑米貓CC
+|Desc2 (TW) = 原本是假裝喝醉，結果卻真的醉倒的貓咪<br>完全沒有自己披頭散髮戰鬥時的記憶<br>善於攻擊惡魔，體力減少攻擊力就會上升
+|Name1 (KR) = 고양이 제이미
+|Desc1 (KR) = 취권으로 차이나타운을 지키는 청년을 동경하는 고양이<br>뭐든 호리병에 넣어 마시면 취기가 오를 것만 같다<br>악마에 엄청 강하고 체력이 감소하면 공격력이 상승한다
+|Name2 (KR) = 고양이 제이미CC
+|Desc2 (KR) = 만취한 연기에 심취한 나머지 진짜로 취해 버린 고양이<br>머리를 풀어헤치고 싸울 때는 필름이 끊긴다<br>악마에 엄청 강하고 체력이 감소하면 공격력이 상승한다
+}}
+
+==Cost==
+*Chapter 1: 800¢
+*Chapter 2: 1,200¢
+*Chapter 3: 1,600¢
+
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Jamie Cat
+|Normal Base HP = 1440
+|Normal Base AP = 280,160,400
+|Normal Range = 340
+|Normal Foreswing = 11,15,35
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 61
+|Normal Speed = 10
+|Normal KB = 5
+|Normal Cost = 800
+|Normal Recharge = 640
+|Normal Attack Type = Area
+|Normal Targets = Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,760 at 11f <sup>0.37s</sup>, 2,720 at 15f <sup>0.5s</sup>, 6,800 at 35f <sup>1.17s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 40% health<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Evolved Name = Jamie Cat CC
+|Evolved Base HP = 1800
+|Evolved Base AP = 350,200,500
+|Evolved Range = 340
+|Evolved Foreswing = 11,15,35
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 61
+|Evolved Speed = 10
+|Evolved KB = 5
+|Evolved Cost = 800
+|Evolved Recharge = 640
+|Evolved Attack Type = Area
+|Evolved Targets = Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,950 at 11f <sup>0.37s</sup>, 3,400 at 15f <sup>0.5s</sup>, 8,500 at 35f <sup>1.17s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 40% health<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni829 f00}}
+
+==Trivia==
+*Jamie Cat is the only Cat Unit from the [[Street Fighter Collaboration Event]] without an enemy or Uber variant.
+
+==Reference==
+*https://battlecats-db.com/unit/830.html
+
+----
+{{CatNav|Zangief Cat|Raclesa}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Surge Immunity]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strengthen ability]]

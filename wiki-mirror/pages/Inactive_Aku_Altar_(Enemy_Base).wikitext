@@ -1,0 +1,53 @@
+The '''Inactive Aku Altar''' is an [[Enemy Bases|Enemy Base]]. It was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Inactive Aku Altar
+|image = E 575.png
+|appearance = All stages that had the [[Aku Altar (Enemy Base)|Aku Altar]]
+|money drop = N/A
+}}
+
+==Enemy==
+As the name suggests, it does nothing despite its special treatment as an animated base, basically acting as a regular base that can be hurt by [[Surge Attack]]s and [[Explosion]]s. Appears in place of the [[Aku Altar (Enemy Base)|Aku Altar]] once it gets deactivated by completing the [[Mount Aku (Aku Realm)/Invasion|Mount Aku/Mount Fuji Invasion]].
+
+==Stats==
+{{Enemy Stats
+|Enemy = Inactive Aku Altar
+|Health = 100000
+|Attack Power = 0
+|Attack Range = 0
+|Attack Type = Single
+|Time Between Attacks = 1
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 0
+|Backswing = 1
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+575 e.png|The Inactive Aku Altar's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/577.html
+
+----
+{{EnemyNav|Aku Altar|Large White Ball}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Animated Enemy Bases]]
+[[Category:Typeless Enemies]]
+[[Category:The Aku Realms Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

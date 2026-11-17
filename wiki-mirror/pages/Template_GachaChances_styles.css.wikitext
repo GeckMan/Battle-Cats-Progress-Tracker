@@ -1,0 +1,22 @@
+html .gacha-table {
+	--gacha-rarity-lr: #cef;
+	--gacha-rarity-ur: #fb4;
+	--gacha-rarity-sr: #fd5;
+	--gacha-rarity-rr: #ddd;
+}
+
+html.skin-theme-clientpref-night .gacha-table {
+	--gacha-rarity-lr: #069;
+	--gacha-rarity-ur: #cc8100;
+	--gacha-rarity-sr: #cca300;
+	--gacha-rarity-rr: #888;
+}
+
+@media (prefers-color-scheme: dark) {
+	html.skin-theme-clientpref-os .gacha-table {
+		--gacha-rarity-lr: #069;
+		--gacha-rarity-ur: #cc8100;
+		--gacha-rarity-sr: #cca300;
+		--gacha-rarity-rr: #888;
+	}
+}

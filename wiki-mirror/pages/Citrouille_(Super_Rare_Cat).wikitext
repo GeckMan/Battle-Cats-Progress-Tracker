@@ -1,0 +1,136 @@
+{{Unobtainable}}
+'''Citrouille''' is a Super Rare Cat introduced in [[Version 3.8 Update|Version 3.8]] and was created by a collaboration event between [[Merc Storia Collaboration Event|Merc Storia and Battle Cats]] and can be unlocked by rolling the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the event period.
+
+{{Cat Info
+|ID = 190
+|rarity = SR
+|name1 = Citrouille
+|name2 = Citrouille CC
+}}
+
+==Evolution==
+Evolves into '''Citrouille CC''' at level 10.
+
+==Strategy/Usage==
+Citrouille's generalist stats are rather underwhelming, so he should only be used for his niche.
+
+With a chance of knockback or slow against Red and Dark enemies, Citrouille is immediately comparable to [[Witch Cat (Rare Cat)|Witch Cat]], [[Pirate Cat (Rare Cat)|Pirate Cat]], and [[Tin Cat (Rare Cat)|Tin Cat]]. While these Cats are generally more spammable and attack more frequently, Citrouille's Area Attacks and range give him an advantage over all of them. In spammy stages, this advantage can be quite useful, especially since a stack of Citrouille can both knockback and slow. However, since each status effect only has a 30% chance, Citrouille is not reliable outside of a stack, even with his Area Attacks.
+
+Additionally, while his anti-Red niche is still decent, his anti-Dark niche is far more situational since so many Dark enemies have naturally high knockback counts where raw damage is the way to go. Additionally, [[Flower Cat (Special Cat)|Bombercat]]'s guaranteed freeze is almost always more useful than Citrouille's unreliable slow when it comes to Dark enemies.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 190
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni190 f00.png
+|Image2 = Uni190 c00.png
+|Name1 = Citrouille
+|Desc1 = Joining the fight from Merc Storia! Gentleman of<br>the dark, here thanks to a pact with a certain lad.<br>Might Knockback/Slow Red & Dark (Area)
+|Name2 = Citrouille CC
+|Desc2 = Joining the fight from Merc Storia! An eccentric<br>citizen of the dreamworld. (Area Attacks)<br>Might Knockback/Slow Red & Dark
+|Name1 (JP) = シトルイユ (Shitoruiyu, Citrouille)
+|Desc1 (JP) = メルクストーリアから参戦！<br>ある少年と契約した夜のいきものである紳士(範囲攻撃)<br>たまに赤い敵と黒い敵をふっとばして動きを遅くする
+|Transl1 (JP) = Joined the war from Merc Storia!<br>A gentleman of the night who made a contract with a boy (Area Attack)<br>Occasionally Blows away Red enemies and Dark enemies and Slows their movement
+|Name2 (JP) = シトルイユCC (Shitoruiyu CC, Citrouille CC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>夢の住人のせいか少しずれてる紳士(範囲攻撃)<br>たまに赤い敵と黒い敵をふっとばして動きを遅くする
+|Transl2 (JP) = Joined the war from Merc Storia!<br>A gentleman who is a little off, maybe because of his dreams<br>Occasionally Blows away Red enemies and Dark enemies and Slows their movement
+|Name1 (TW) = 斯托魯伊悠
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>和某個少年交換了契約的夜間生物紳士(範圍攻擊)<br>有時候能打飛紅色與黑色敵人並使其動作變慢
+|Name2 (TW) = 斯托魯伊悠CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>或許因爲來自夢境，而有點異於常人的紳士(範圍攻擊)<br>有時候能打飛紅色與黑色敵人並使其動作變慢
+|Name1 (KR) = 시톨이유
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>어떤 소년과 계약한 밤의 신사 (범위 공격)<br>가끔 빨간 적과 검은 적을 날려버려 움직임을 느리게 한다
+|Name2 (KR) = 시톨이유CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>꿈의 주인인 탓인지 남들과는 조금 다른 신사 (범위 공격)<br>가끔 빨간 적과 검은 적을 날려버려 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 540¢
+*Chapter 2: 810¢
+*Chapter 3: 1,080¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Citrouille
+|Normal Base HP = 320
+|Normal Base AP = 150
+|Normal Range = 360
+|Normal Foreswing = 35
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 61
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 540
+|Normal Recharge = 740
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Citrouille CC
+|Evolved Base HP = 470
+|Evolved Base AP = 200
+|Evolved Range = 360
+|Evolved Foreswing = 35
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 61
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 540
+|Evolved Recharge = 740
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 320 HP
+|val-Normal-Attack Power = 150 damage<br>(23.2 DPS)
+|val-Normal-Attack Range = 360
+|val-Normal-Attack Frequency = 194f <sub>6.47 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 35f <sup>1.17s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 24.67 ~ 15.87 seconds
+|val-Normal-MaxHP = 5,440 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(394.33 DPS)
+|val-Evolved-Health = 7,990 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(525.77 DPS)
+|val-Evolved-Attack Range = 360
+|val-Evolved-Attack Frequency = 194f <sub>6.47 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 35f <sup>1.17s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 24.67 ~ 15.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni190 f00}}
+
+==Trivia==
+*Citrouille means "pumpkin" in French.
+
+==Reference==
+*https://battlecats-db.com/unit/191.html
+
+----
+{{CatNav|Alois|Titi}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Slow ability]]

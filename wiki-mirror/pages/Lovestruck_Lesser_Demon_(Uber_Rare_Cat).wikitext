@@ -1,0 +1,142 @@
+'''Lovestruck Lesser Demon''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[White Day Capsules (Gacha Event)|White Day]] event. It was added in [[Version 11.3 Update|Version 11.3]] and is a variant of [[Lesser Demon Cat (Uber Rare Cat)|Lesser Demon Cat]].
+
+{{Cat Info
+|ID = 648
+|rarity = UR
+|name1 = Lovestruck Lesser Demon
+|name2 = Lovestruck Greater Demon
+}}
+
+==Evolution==
+Evolves into '''Lovestruck Greater Demon''' at level 10.
+
+==Strategy/Usage==
+Lovestruck Lesser Demon has excellent damage and health, as well as the ability to debuff enemies in all sorts of ways, making him excellent against any foe he can pick out. The general idea is to not use him unless the enemy is both not covered by peons all the time and either outranged ([[Bore]] variants)  or lacking in DPS ([[Sunfish Jones]] variants). Although he lacks a [[True Form]], his other forms are a direct upgrade over [[Lesser Demon Cat (Uber Rare Cat)|Greater Demon Cat]], making his usage very similar. However, the lack of a True Form is not to be overlooked, as it means that Lovestruck Greater Demon is expected to be easily overwhelmed in the late game, as winning the power game becomes exponentially harder.
+
+It's also expected that the various debuffs he gives are somewhat inconsistent due to the lack of Area Attack, long cooldown for a debuffer and the effects given can also be harmful at times. Only use him when any effect activating would be beneficial to your current situation, otherwise you might risk a [[Knockback]] activating at an inopportune moment. Despite his high damage and DPS as a Greater Demon Cat variant, it's better to play into his strengths whenever possible.
+
+{{Job|Classification = Melee & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 648
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni648 f00.png
+|Image2 = Uni648 c00.png
+|Name1 = Lovestruck Lesser Demon
+|Desc1 = A fierce-looking punk leader often called Demon.<br>Bashes those he fancies with a bouquet symbolizing<br>his love. Inflicts various negative effects on Traited.
+|Name2 = Lovestruck Greater Demon
+|Desc2 = A wild-hearted punk leader often called Demon.<br>When that heavy bouquet hits you, you'll know what<br>love is. Inflicts various negative effects on Traited.
+|Name1 (JP) = 恋番長・鬼にゃんま (Koi Banchō・Oni Niyanma, Love・Demon Nyanma)
+|Desc1 (JP) = 鬼と呼ばれたコワモテ番長<br>淡い恋心を一輪の花に込め強烈な一撃を繰り出す<br>属性を持つ敵に色んな妨害効果をたまに与える
+|Transl1 (JP) = He calls himself the demon god<br>A flower with a faint love and a strong blow<br>Occasionally gives various disturbing effects to enemies with attributes
+|Name2 (JP) = 恋愛番長・鬼神にゃんま (Koi Renai Banchō・Oni Niyanma, Love Leader・Demon God Nyanma)
+|Desc2 (JP) = 鬼神と呼ばれたワイルドなコワモテ番長<br>重たい花束の一撃は究極の愛のカタチ<br>属性を持つ敵に色んな妨害効果をたまに与える
+|Transl2 (JP) = He was called the demon god and is now a wild and coarse watchman<br>A heavy bouquet of flowers is the ultimate form of love<br>Occasionally gives various disturbing effects to enemies with attributes
+|Name1 (TW) = 愛情番長惡鬼喵魔
+|Desc1 (TW) = 有著可怕的面貌，被稱作惡鬼的番長<br>用寄託了小小心意的一朵花給對方強力的一擊<br>對上有屬性敵人時有時候會給予各種妨害效果
+|Name2 (TW) = 戀愛番長鬼神喵魔
+|Desc2 (TW) = 外型粗曠且面貌兇惡，被稱作鬼神的番長<br>用厚重的花束給予對方一擊是終極的愛的表現<br>對上有屬性敵人時有時候會給予各種妨害效果
+|Name1 (KR) = 사랑대장 도깨비 야옹마
+|Desc1 (KR) = 도깨비라고 불리는 무서운 대장<br>사랑의 감정을 한 송이 꽃에 담아 휘두르는 일격은 강렬<br>가끔 속성을 가진 적에 여러 방해 효과를 준다
+|Name2 (KR) = 연애대장 도깨비신 야옹마
+|Desc2 (KR) = 도깨비신이라고 불리는 터프한 대장<br>묵직한 꽃다발 일격은 사랑의 궁극적인 형태<br>가끔 속성을 가진 적에 여러 방해 효과를 준다
+|Name3 (KR) = 연애대장 도깨비 야옹마
+|Desc3 (KR) = 도깨비신이라고 불리는 터프한 대장<br>묵직한 꽃다발 일격은 사랑의 궁극적인 형태<br>속성을 가진 적에 여러 방해 효과를 가끔 입힌다
+}}
+
+==Cost==
+*Chapter 1: 2,000¢
+*Chapter 2: 3,000¢
+*Chapter 3: 4,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Lovestruck Lesser Demon
+|Normal Base HP = 3900
+|Normal Base AP = 2250
+|Normal Range = 180
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 68
+|Normal Speed = 13
+|Normal KB = 3
+|Normal Cost = 2000
+|Normal Recharge = 1110
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 75f <sub>2.5 seconds</sub>
+|Evolved Name = Lovestruck Greater Demon
+|Evolved Base HP = 3900
+|Evolved Base AP = 2250
+|Evolved Range = 180
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 68
+|Evolved Speed = 13
+|Evolved KB = 3
+|Evolved Cost = 2000
+|Evolved Recharge = 1110
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 75f <sub>2.5 seconds</sub>
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 3,900 HP
+|val-Normal-Attack Power = 2,250 damage<br>(992.65 DPS)
+|val-Normal-Attack Range = 180
+|val-Normal-Attack Frequency = 68f <sub>2.27 seconds</sub>
+|val-Normal-Movement Speed = 13
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 37 ~ 28.2 seconds
+|val-Normal-MaxHP = 66,300 HP
+|val-Normal-MaxAttack = 38,250 damage<br>(16,875 DPS)
+|val-Evolved-Health = 66,300 HP
+|val-Evolved-Attack Power = 38,250 damage<br>(16,875 DPS)
+|val-Evolved-Attack Range = 180
+|val-Evolved-Attack Frequency = 68f <sub>2.27 seconds</sub>
+|val-Evolved-Movement Speed = 13
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 37 ~ 28.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni648 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/649.html
+
+----
+{{CatNav|Terun|Hattori Hanzo}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Slow ability]]

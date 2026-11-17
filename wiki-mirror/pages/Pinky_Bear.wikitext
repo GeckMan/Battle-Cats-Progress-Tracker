@@ -1,0 +1,75 @@
+'''Pinky Bear''' (ピンキークマ先生, ''Pinkī Kuma-sensei'', '''Pinky Teacher Bear''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Enemy Info
+|name = Pinky Bear
+|image = E 781.png
+|first appearance = [[PAC-MAN Collaboration Event]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Essentially a stronger version of [[Teacher Bear]], the only visual difference being a Pinky mask on his head. He boasts [[Knockback]] and [[Slow]] on top of a faster attack rate, which can prove to be annoying for many early game players, especially when buffed, though just like Teacher Bear, doesn't hold much dps on his own and doesn't have enough bulk to live long normally.
+
+==Strategy==
+Fight him like you would in [[Empire of Cats]], i.e., by spamming meatshields like [[Tank Cat (Normal Cat)|Wall Cats]] and stacking [[Lizard Cat (Normal Cat)|Dragon Cats]], the only difference being that he might push harder. Other than that his appearances usually buffing him up to a high level makes it so that you might need an extra meatshield to cover the gaps if his abilities proc too much.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]]:
+**[[Dodge Them Ghosts]] (100%)
+**[[High Score Fruit]] (400%)
+**[[256 Levels to Victory]] (2,500% HP/1,000% AP)
+*[[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]:
+**[[Warp Tunnel's End]] (100%)
+**[[Get those Ghosts]] (200%)
+**[[Endless Scavenging]] (1,500% HP/700% AP)
+**[[Face the Threat]] (2,000% HP/800% AP)
+**[[Pac-Dots or Cat Food?]] (5,000% HP/2,000% AP)
+*[[Giant PAC-MAN Strikes!]]:
+**[[Giant PAC-MAN Strikes!/ROUND 1~10#ROUND 6~10|ROUND 6]] (5,000% HP/2,000% AP)
+**[[Giant PAC-MAN Strikes!/ROUND 1~10#ROUND 6~10|ROUND 7]] (5,250% HP/2,125% AP)
+**[[Giant PAC-MAN Strikes!/ROUND 1~10#ROUND 6~10|ROUND 8]] (5,500% HP/2,250% AP)
+**[[Giant PAC-MAN Strikes!/ROUND 1~10#ROUND 6~10|ROUND 9]] (5,750% HP/2,375% AP)
+**[[Giant PAC-MAN Strikes!/ROUND 1~10#ROUND 6~10|ROUND MAX]] (6,000% HP/2,500% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Pinky Bear
+|Health = 12000
+|Attack Power = 1000
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 77
+|Movement Speed = 4
+|Knockback = 6
+|Foreswing = 8
+|Backswing = 8
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+781 e.png|Pinky Bear's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/783.html
+
+----
+{{EnemyNav|Clyde Gory|Blinky Kory}}
+----
+
+{{Pac-Man}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]

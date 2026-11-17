@@ -1,0 +1,240 @@
+:''Not to be confused with [[Metal Maiden Koneko (Uber Rare Cat)|Metal Maiden Koneko]].''
+'''Koneko''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Best of the Best Milestone Edition (Gacha Event)|Best of the Best Milestone Edition]] gacha event. She was added in [[Version 14.2 Update|Version 14.2]].
+
+{{Cat Info
+|ID = 783
+|rarity = UR
+|name1 = Koneko
+|name2 = Superstar Koneko
+}}
+
+==Evolution==
+Evolves into '''Superstar Koneko''' at level 10.
+
+==Strategy/Usage==
+Using Koneko revolves around understanding your odds. She is essentially a pseudo–slot machine of damage abilities—each triggering independently and creating an overwhelming kaleidoscope of possibilities, from everything activating at once to nothing at all. The only thing that changes between her forms is stats, standing range, cost and recharge.
+
+==='''Normal Form'''===
+Koneko is more spammable, with a relatively short standing range of 250 in comparison to Superstar Koneko's 450. She has an expected DPS of ~6.6k against her target enemy (the one that is hit by her [[Single Attack]]) and ~3.1k DPS to surrounding enemies at Lv.30, with the same abilities as her Evolved Form. Her shorter recharge time makes her generally better for Metal enemies than her Evolved Form, considering the fact that every common Metal is outranged by this form. [[Immune to Waves|Wave Immunity]] can also give her the opportunity to snipe [[Koronium]] (and by extention most of the [[Kory]] variants) from a distance.
+
+It is important to note that her matchups against her target traits are generally far worse than Superstar Koneko's due to a lack of range and damage. Outside of Metals, this makes her only good for peon control against rushers like [[Bore Jr.]] and [[Sir Rel]], or to infiltrate enemy blind spots, as almost every other relevant Traitless and Relic threat outranges her. While she is more spammable, she still has a cooldown of 1 minute. It's not recommended to use this form over the Evolved one, as she fares much worse in every regard despite being far cheaper.
+
+==='''Evolved Form'''===
+Although Superstar Koneko's many abilities complicate things, you can expect an average DPS of ~14.5k to her target enemy, and ~6.8k DPS to surrounding enemies at Lv.30. Given her abilities and probabilities, it's impossible to predict exactly what will happen on each attack; her damage can go from a measly 11.6k per hit to about '''30 times''' that amount at ~349.4k damage if everything connects!
+<!--Calculation of expected DPS at lv.30 with intermediate values rounded to 2 decimal places
+
+Raw Dmg = 11645
+
+Find multipliers for the Critical and Savage Blow multipliers respectively:
+
+Expected = 2 * Raw * Chance + Raw * (1 - Chance) = Raw * (2 * Chance + 1 - Chance) = Raw * (Chance + 1)
+Expected / Raw = Chance + 1
+
+Expected = 3 * Raw * Chance + Raw * (1 - Chance) = Raw * (3 * Chance + 1 - Chance) = Raw * (2 * Chance + 1)
+Expected / Raw = 2 * Chance + 1
+
+Include Critical (12%, x2, multiplier 1.12) and Savage Blow (22%, x3, multiplier 1.44). This is done before Wave, Surge, Explosion as they are carried on.
+
+Intermediate Dmg = Raw Dmg * (1.12) * (1.44) = 18781.06
+
+Calculate additional expected damage from Wave (22%), Surge (22%, level 2), Explosion (22%). Koneko's Surge has a 100% chance of hitting which simplifies this a little.
+
+Wave Dmg = Intermediate Dmg * 0.22 = 4131.83
+Surge Dmg = Intermediate Dmg * 0.22 * 2 = 8263.66
+Explosion Dmg = Intermediate Dmg * 0.22 = 4131.83
+
+These values are summed to get the expected attack.
+
+Expected Dmg = Intermediate Dmg + Wave Dmg + Surge Dmg + Explosion Dmg = 35308.38
+
+Finally, the expected DPS is this divided by attack frequency (then multiplied by 30 if frame count is used).
+
+Expected DPS = 35308.38 / 73 * 30 = 14510.29-->
+
+Her [[Slow]] effect against target traits can be considered a bonus, since none of her other abilities are trait-dependent. Even so, as a backliner this makes her excellent at countering midrangers like [[H. Nah]], [[Mr. Mer]], and [[M. Ost]]/[[R.Ost]], with the Slow uptime approaching 100% depending on her procs. That said, bad luck might sometimes be fatal if no useful abilities proc when you need them.
+
+More often than not you will be using her for general DPS rather than CC, but in both scenarios, her strength (and her detriment) lies in how many of her abilities decide to land. She can be as good or bad as your luck is at that specific moment, which ultimately leaves it up to the player to determine whether her utilities are too inconsistent to be used practically. It can be very easy to overestimate/underestimate what can and can't happen with her. Treat her as a clutch tool, and try to keep her alive as long as possible with other support options like the [[Ototo Corps#Thunderbolt|Thunderbolt Cannon]] to maximize the amount of attacks she can do.
+
+Be mindful of her recharge time: if she dies, she is not coming back for a very long time.
+
+==='''Ability Chances'''===
+<!-- We're not having edit wars. Round everything to 2 s.f.
+Formulae are in Python.
+
+from math import comb, log10, floor
+import re
+def sf(n: float):
+    dp = abs(floor(log10(n)) + 1)
+    search = str(round(float(n) * 100, dp))
+    pattern = r"[0\.]*[1-9]\.*\d"
+    return re.match(pattern, search).group(0) + "%"
+-->''General Ability Activation'': On average, you can expect her to activate at least one ability about '''~67%''' of the time. Since each ability increases DPS in some way, the more that trigger, the merrier.
+<!-- 1 - ((1 - 0.22)**4 * (1 - 0.12)) -->
+
+''AoE Abilities'': The chance to activate at least one AoE ability ([[Wave Attack|Wave]], [[Surge Attack|Surge]], or [[Explosion]]) is '''~53%''' overall.
+<!-- 1 - (1 - 0.22)**3 -->
+
+*One AoE ability: '''~40%''' <!-- 0.22 * (1 - 0.22)**2 * comb(3, 1) -->
+*Two AoE abilities: '''~11%''' <!-- 0.22**2 * (1 - 0.22) * comb(3, 2) -->
+*All three AoE abilities: '''~1.1%''' <!-- 0.22**3 -->
+
+Each individual AoE ability has its own merits and disadvantages in specific situations, so you should know exactly what to look for all at times. Explosions can double dip on enemies knocked back by the initial blast's hit, Wave Attacks don't have a finicky range quirk which means they can consistently hit enemies directly in front of her, and Surge Attacks have the highest DPS by proxy of hitting twice for full damage and creating an area of denial.
+
+''Savage Blows and Critical Hits Solo VS AoE'': On their own, [[Savage Blow|Savage Blows]] and [[Critical Hit]]s are largely inefficient. They typically waste an attack if not bundled with an AoE effect (which compensates for her Single Attack nature). With this, it is worth noting that any given attack has a '''~31%''' chance of containing either a Savage Blow, Critical Hit, or both. In most situations, Savage Blows tend to be more advantageous thanks to their higher damage multiplier.
+<!-- 1 - (1 - 0.22) * (1 - 0.12) -->
+
+''Critical Hit with AoE'': A Critical Hit occurring alongside an AoE ability is '''~6.3%''' (without Critical Hit chance [[Cat Combo]]s). Don't rely on this happening to clear out hordes of Metal enemies. But if it does, the damage is potent enough to nearly wipe out all Metal enemies on the field.
+<!-- (1 - (1 - 0.22)**3) * 0.12 -->
+
+''Savage Blows plus Critical Hits'': Managing to score a Savage Blow and Critical Hit in the same attack leads to a final damage multiplier of 6x Koneko's base attack. On average, this only happens '''~2.6%''' of the time, making it incredibly rare; as discussed previously, this effect can go to waste if there's no AoE to accompany it. Thus, the odds that it also includes any AoE attack make this number drop to a measly '''~1.4%''' chance.
+<!--
+Base: (1 - (1 - 0.22)) * (1 - (1 - 0.12))
+With AoE: (1 - (1 - 0.22)**3) * 0.22 * 0.12
+-->
+
+''All Effects Proc Simultaneously'': The odds that every effect procs at once is only '''0.028%''', or roughly a '''1 in 3,557''' chance per attack. Don't expect this to ever happen: it will take an average of 2 hours and 24 minutes if she's constantly attacking.
+<!-- 0.22 * 0.12 * 0.22 * 0.22 * 0.22 -->
+
+{{Job|Classification = Critter & Sniper & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 783
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni783 f00.png
+|Image2 = Uni783 c00.png
+|Name1 = Koneko
+|Desc1 = Tomboyish Cat dreaming of being an idol adored by<br>crowds of fans. Performs her heart out on stage,<br>amassing more and more fans by the day.
+|Name2 = Superstar Koneko
+|Desc2 = An unexpected breakthrough hit pushed Koneko<br>onto the path of becoming a star. Gives it all for her<br>fans with passionate singing to show her gratitude.
+|Name1 (JP) = こねこ (Koneko)
+|Desc1 (JP) = みんなに愛されて育った<br>アイドルを夢見るおてんば末っ子型にゃんこ<br>いつも全力のパフォーマンスにファンが急増中
+|Transl1 (JP) = A tomboyish, youngest-daughter Cat who grew up loved by everyone<br>and dreams of becoming an idol.<br>Her fan base is growing rapidly thanks to her always giving her all in her performances.
+|Name2 (JP) = 超スターこねこ (Chō Sutā Koneko, Super Star Koneko)
+|Desc2 (JP) = 驚異の人気爆発でスターの道を歩み始めたこねこ<br>ライブでは感謝を込めた全力の歌とダンスで<br>観客のみんなに元気をプレゼント！
+|Transl2 (JP) = Koneko has begun her path to stardom with an astonishing explosion of popularity.<br>At her live shows, she energizes everyone in the audience<br>with her all-out songs and dances full of gratitude!
+|Name1 (TW) = 俏喵
+|Desc1 (TW) = 在大家的愛護下成長<br>夢想成為偶像的活潑小妹妹系貓咪<br>總是盡全力表演的模樣吸引了眾多粉絲
+|Name2 (TW) = 超級明星俏喵
+|Desc2 (TW) = 因為人氣大爆發而步入明星之路的俏喵<br>懷抱感謝的心情在演唱會上賣力唱歌跳舞<br>要讓觀眾們都充滿元氣！
+|Name1 (KR) = 꼬꼬미
+|Desc1 (KR) = 모두에게 사랑받으며 자란<br>아이돌을 꿈꾸는 개구쟁이 막내형 냥코<br>항상 온 힘을 다하는 퍼포먼스에 인기 급상승 중
+|Name2 (KR) = 울트라 스타 꼬꼬미
+|Desc2 (KR) = 폭발적인 인기로 스타로 발돋움하기 시작한 꼬꼬미<br>감사의 마음을 담아 온 힘을 쏟은 노래와 춤으로<br>관객 모두에게 에너지를 선물!
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 99¢
+*Chapter 2: 148¢
+*Chapter 3: 198¢
+
+===Evolved Form===
+*Chapter 1: 1,400¢
+*Chapter 2: 2,100¢
+*Chapter 3: 2,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Koneko
+|Normal Base HP = 1950
+|Normal Base AP = 315
+|Normal Range = 250
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 43
+|Normal Attack Length = 57
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 99
+|Normal Recharge = 1998
+|Normal Attack Type = Single
+|Normal Targets = Traitless,Relic
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Critical}} 12% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Wave Attack}} 22% chance to create a level 2 [[Wave Attack]]<br>
+{{AbilityIcon|Savage Blow}} 22% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Surge Attacks}} 22% chance to create a level 2 [[Surge Attack]] between 200 and 400 range<br>
+{{AbilityIcon|Explosion}} 22% chance to create an [[Explosion]] at 250 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Curse}} [[Immune to Waves]] and [[Immune to Curse|Curse]]
+|Evolved Name = Superstar Koneko
+|Evolved Base HP = 4200
+|Evolved Base AP = 685
+|Evolved Range = 450
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 53
+|Evolved Attack Length = 57
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 1400
+|Evolved Recharge = 5998
+|Evolved Attack Type = Single
+|Evolved Targets = Traitless,Relic
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Critical}} 12% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Wave Attack}} 22% chance to create a level 2 [[Wave Attack]]<br>
+{{AbilityIcon|Savage Blow}} 22% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Surge Attacks}} 22% chance to create a level 2 [[Surge Attack]] between 400 and 600 range<br>
+{{AbilityIcon|Explosion}} 22% chance to create an [[Explosion]] at 450 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Curse}} [[Immune to Waves]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,950 HP
+|val-Normal-Attack Power = 315 damage<br>(129.45 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 66.6 ~ 57.8 seconds
+|val-Normal-MaxHP = 33,150 HP
+|val-Normal-MaxAttack = 5,355 damage<br>(2,200.68 DPS)
+|val-Evolved-Health = 71,400 HP
+|val-Evolved-Attack Power = 11,645 damage<br>(4,785.62 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 199.93 ~ 191.13 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni783 f00}}
+
+==Trivia==
+*The ''neko'' in Moneko's, Neneko's and Koneko's names means "cat", likely referencing the fact that they are ''[[wikipedia:Catgirl|Nekomimi]]'', or people with the ears and tail of a cat.
+**The first two letters in each of their names spell out "Moneko" when put together.
+**According to たまさん, one of The Battle Cats' main artists, Koneko's design was already created by the time Neneko was implemented, but took several years to be added for an unknown reason.<ref>[https://x.com/tamasanp/status/1893341129166246173?s=20]</ref>
+*"Gives it all for her fans" may hint at Superstar Koneko's Savage Blow ability, whose Japanese name (渾身の一撃 ''Konshin no Ichigeki'') translates to "All-Out Blow". 渾身 ''Konshin'' means "(putting in) all one's efforts" or "(using) all one's might".
+*Given [[Teacher Bun Bun]]'s gargoyle-like appearance, the Bun Bun guarding Superstar Koneko may be a reference to how gargoyles were believed to protect against evil.
+*She is the only character who has all three "post-attack area damage" abilities ([[Wave Attack]], [[Surge Attack]] and [[Explosion]]). The same for [[Critical Hit]] and [[Savage Blow]].
+*Koneko is tied with [[Metal Maiden Koneko (Uber Rare Cat)|Metal Maiden Koneko]] for the cheapest cost of any obtainable [[:Category:Uber Rare Cats|Uber Rare Cat]], at only 148¢.
+*Koneko is the only non-collab Uber Rare Cat to be featured in [[Daily Bonus|Login Stamp]] backgrounds and a stage background, appearing in all of the levels in [[Koneko Music Festival#Koneko Takes the Stage|Koneko Takes the Stage]].
+
+==Reference==
+*https://battlecats-db.com/unit/784.html
+
+----
+{{CatNav|Mamoluga|Choco Capsule}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Savage Blow Cats]]
+[[Category:Surge Attack Cats]]
+[[Category:Wave Attack Cats]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Explosion Cats]]

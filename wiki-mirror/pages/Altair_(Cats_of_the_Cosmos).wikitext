@@ -1,0 +1,116 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Altair (Cats of the Cosmos)/Outbreak|here]].''
+'''Altair''' is the 17th stage in [[Cats of the Cosmos]]. [[Ribbo]] is introduced here in Chapter 2.
+
+{{Story Info
+|stage name = [[File:Sc029.png]]
+|stage location = [[File:Altair.png]]
+'''Cats of the Cosmos'''
+|energy = 70
+|energy2 = 80
+|energy3 = 90
+|enemy castle hp = 150,000 HP
+|enemy castle hp2 = 390,000 HP
+|enemy castle hp3 = 490,000 HP
+|enemies = {{Magnification|Le'Solar|100%
+|Those Guys|1,000%
+|Baa Baa|1,000%
+|Hyppoh|250%
+|Imperator Sael|250%
+|Star Peng|100%}}
+|enemies2 = {{Magnification|Le'Solar|200%
+|Those Guys|3,000%
+|Ribbo|100%
+|UltraBaaBaa|100%
+|Imperator Sael|1,200%
+|Star Peng|200%}}
+|enemies3 = {{Magnification|Le'Solar|500%
+|Trolly Blogger|200%
+|Mesocosmocyclone|150%
+|UltraBaaBaa|250%
+|General GreGory|500%}}
+|treasure = - [[Treasure|Hawk]]
+|max enemies = 15
+|restriction = Max # of Deployable Cats: 20
+|restriction2 = Max # of Deployable Cats: 20
+|restriction3 = Max # of Deployable Cats: 20
+|XP = 5,800 XP
+|width = 4,500
+|jpname = Altair
+|script = アルタイル
+|romaji = Arutairu
+|jptreasure = Gourd
+|twname = Altair
+|twscript = 牛郎星
+|twromaji = Niúlángxīng
+|twtreasure = Eagle
+|krname = Gyeonwooseong
+|krscript = 견우성
+|krromaji = Gyeon-useong
+|krtreasure = Eagle
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[Calabash Nebula (Cats of the Cosmos)|Calabash Nebula]]
+|next stage = [[Sirius (Cats of the Cosmos)|Sirius]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 20
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Le'Solar|Those Guys|Baa Baa|Hyppoh|Imperator Sael|Star Peng}}
+*1 [[Le'Solar]] spawns.
+*Infinite [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Those Guys]] spawn after 30 seconds<sup>900f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Those Guys]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Baa Baa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Baa Baa]]s spawn after 120 seconds<sup>3,600f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*5 [[Hyppoh]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*2 [[Imperator Sael]]s spawn after 60 seconds<sup>1,800f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*2 [[Star Peng]]s spawn after 50 seconds<sup>1,500f</sup>, delay 50 seconds<sup>1,500f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Le'Solar|Those Guys|Ribbo|UltraBaaBaa|Imperator Sael|Star Peng}}
+*1 [[Le'Solar]] spawns.
+*Infinite [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Those Guys]] spawn after 30 seconds<sup>900f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Those Guys]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Ribbo]] spawns after 20 seconds<sup>600f</sup>.
+*3 [[UltraBaaBaa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*2 [[Imperator Sael]]s spawn after 60 seconds<sup>1,800f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*5 [[Star Peng]]s spawn after 30 seconds<sup>900f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Le'Solar|Trolly Blogger|Mesocosmocyclone|UltraBaaBaa|General GreGory}}
+*1 [[Le'Solar]] spawns.
+*Infinite [[Trolly Blogger]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 30 seconds<sup>900f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Mesocosmocyclone]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*3 [[UltraBaaBaa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*1 [[General GreGory]] spawns after 30 seconds<sup>900f</sup>.
+
+==Strategy==
+*Due to the presence of Le'Solar, you should pick a damage dealer with over 400 range. [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] is a viable option, though most Ubers above that range would be preferable. Also bring high-damaging cats and [[:Category:Anti-Alien Cats|anti-Aliens]] with freeze/knockback abilities.
+*Always bring a [[:Category:Barrier Breaker Cats|Barrier Breaker]] if possible.
+*Your main goal here is to either kill Le'Solar before backup can arrive to help her, or killing Mesmocosmocyclone, who can teleport your meatshields leaving your damage dealers without protection.
+*Hyppoh and Imperator Sael aren't immediate threats. To kill Le'Solar fast, send out a Barrier Breaker to destroy her [[Barrier]] and use a fast-attacking unit (such as [[Salon Cat (Rare Cat)|Paris Cat]] or [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]]) to take out [[Those Guys]]. Then, you should have saved enough money to send out Awakened Bahamut and kill Le'Solar.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Altair map.png|Altair on the [[Cats of the Cosmos]] map
+</gallery>
+
+==Trivia==
+*In real life, [[wikipedia:Altair|Altair]] is the brightest star in the constellation of Aquila and the 12th-brightest star in the night sky.
+**The aforementioned constellation's name is Latin for "eagle" and represents the bird that carried Zeus/Jupiter's thunderbolts in Greco-Roman mythology, hence the eagle on the enemy base.
+*The eagle's white hood may be a reference to Altaïr Ibn-La'Ahad from the ''Assassin's Creed'' series.
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-17.html
+*https://battlecats-db.com/stage/s03007-17.html
+*https://battlecats-db.com/stage/s03008-17.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Restriction Stages]]

@@ -1,0 +1,47 @@
+{{EnemiesAppearing|Gabriel|Angelic Gory|Angelic Sleipnir}}
+:''Not to be confused with the [[Heavenly Tower/Floor 8|Heavenly Tower]] or [[Infernal Tower/Floor 8|Infernal Tower]] versions of Floor 8.''
+'''Floor 8''' is the eighth floor of [[Angel Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 07 v en.png]]
+|stage location = [[File:Mapname003 v en.png]]
+|energy = 160
+|enemy castle hp = 360,000 HP
+|enemies = {{Magnification|Gabriel|200%
+|Angelic Gory|100%
+|Angelic Sleipnir|100%}}
+|boss = {{Magnification|Gabriel|100%}}
+|treasure = - 750,000 XP (100%, 1 time)
+|XP = 3,040 XP
+|width = 4,500
+|max enemies = 10
+|jpname = 8th Floor
+|script = 8階
+|romaji = 8 Kai
+|star = 1
+|event-chapter = [[Angel Citadel]]
+|difficulty = ★7
+|prev stage = [[Angel Citadel/Floor 7|Floor 7]]
+|next stage = [[Angel Citadel/Floor 9|Floor 9]]
+}}
+
+==Battleground==
+*3 [[Gabriel]]s (200%) spawn after 10 seconds<sup>300f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*3 [[Gabriel]]s (200%) spawn after 11.33 seconds<sup>340f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*3 [[Gabriel]]s (200%) spawn after 13.33 seconds<sup>400f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gabriel]] (100%) spawns as the boss.
+**Infinite [[Gabriel]]s (200%) spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**3 [[Angelic Sleipnir]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+Use [[Rocker Cat (Rare Cat)|Ramen]] to tank and [[Bahamut Cat (Special Cat)|C. Bahamut]] to handle the Slepnirs, as Bahamut outranges them. Ramen can struggle against a horde of Angelic Gories, so you might need to bring some meatshields to help out Ramen.
+
+==Reference==
+*https://battlecats-db.com/stage/s07003-08.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

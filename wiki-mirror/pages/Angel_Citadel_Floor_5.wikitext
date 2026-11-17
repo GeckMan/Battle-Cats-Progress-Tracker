@@ -1,0 +1,47 @@
+{{EnemiesAppearing|Squire Rel|Heavenly Hippoe|Angelic Slug}}
+:''Not to be confused with the [[Heavenly Tower/Floor 5|Heavenly Tower]] or [[Infernal Tower/Floor 5|Infernal Tower]] versions of Floor 5.''
+'''Floor 5''' is the fifth floor of [[Angel Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 04 v en.png]]
+|stage location = [[File:Mapname003 v en.png]]
+|energy = 120
+|enemy castle hp = 120,000 HP
+|enemies = {{Magnification|Squire Rel|400%
+|Heavenly Hippoe|100%}}
+|boss = {{Magnification|Angelic Slug|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +2 (100%, 1 time)
+|XP = 2,280 XP
+|width = 3,600
+|max enemies = 18
+|jpname = 5th Floor
+|script = 5階
+|romaji = 5 Kai
+|star = 1
+|event-chapter = [[Angel Citadel]]
+|difficulty = ★4
+|prev stage = [[Angel Citadel/Floor 4|Floor 4]]
+|next stage = [[Angel Citadel/Floor 6|Floor 6]]
+}}
+
+==Battleground==
+*6 [[Squire Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 9.67~10 seconds<sup>290f~300f</sup>.
+*5 [[Squire Rel]]s spawn after 13.67 seconds<sup>410f</sup>, delay 9.67~10 seconds<sup>290f~300f</sup>.
+*4 [[Squire Rel]]s spawn after 14.33 seconds<sup>430f</sup>, delay 9.67~10 seconds<sup>290f~300f</sup>.
+*3 [[Squire Rel]]s spawn after 15.33 seconds<sup>460f</sup>, delay 9.67~10 seconds<sup>290f~300f</sup>.
+*2 [[Squire Rel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 9.67~10 seconds<sup>290f~300f</sup>.
+*1 [[Squire Rel]] spawns after 18.33 seconds<sup>550f</sup>.
+*When the base reaches 99% HP:
+**1 [[Angelic Slug]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+This stage is essentially [[Slimy Stallions]] except easier as the other Sluggies are not present. Bring [[Rocker Cat (Rare Cat)|Artist Cat]] and you should have an easy win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07003-05.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

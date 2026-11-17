@@ -1,0 +1,47 @@
+{{Documentation}}
+See [[Otherworld Colosseum/rules]] for how this gets used.
+
+<templatedata>
+{
+	"params": {
+		"id": {
+			"type": "number",
+			"required": true,
+			"description": "The \"SpecialRule\" ID"
+		},
+		"name_en": {
+			"type": "string",
+			"description": "Should be copied and pasted directly from game files"
+		},
+		"desc_en": {
+			"type": "string",
+			"description": "Should be copied and pasted directly from game files"
+		},
+		"name_jp": {
+			"type": "string",
+			"required": true,
+			"description": "Should be copied and pasted directly from game files"
+		},
+		"desc_jp": {
+			"type": "string",
+			"required": true,
+			"description": "Should be copied and pasted directly from game files"
+		},
+		"info": {
+			"type": "string",
+			"required": true,
+			"description": "Info about what the rule actually does"
+		}
+	},
+	"description": "Define a rule for the otherworld colosseum.",
+	"paramOrder": [
+		"id",
+		"name_en",
+		"desc_en",
+		"name_jp",
+		"desc_jp",
+		"info"
+	],
+	"format": "{{_\n|_ = _\n}}"
+}
+</templatedata>

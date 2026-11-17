@@ -1,0 +1,126 @@
+{{Unobtainable}}
+:''For other uses see, [[Rei (disambiguation)]].''
+'''Rei''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 118
+|rarity = SR
+|name1 = Rei
+|name2 = Rei CC
+}}
+
+==Evolution==
+Evolves into '''Rei CC''' at level 10.
+
+==Strategy/Usage==
+Rei has decent damage, speed and enough range for controlling large swarms of Black pushers, but meatshields and attackers must be used well because of the borderline range matchups with common Dark enemies. Her rapid attacks and decent proc chance also allow Rei to consistently slow her targets, acting as a better [[Cat Gunslinger (Rare Cat)|Gunslinger]] with less range and more speed. She's outclassed by [[Flower Cat (Special Cat)|Bombercat]] due to his much faster cooldown, higher range and the ability to completely disable Dark enemies, which matters the most against enemies that have higher range like [[Dark Otter]] and [[Le'noir]] which are able to easily counter her. Her only edge as of now is the late-game [[Ragin' Gory]], but she is still serviceable early on if you happen to obtain her before Bombercat.
+
+{{Job|Classification = Crowd-Controller & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 118
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni118 f00.png
+|Image2 = Uni118 c00.png
+|Name1 = Rei
+|Desc1 = Joining the fight from Merc Storia! Her strong<br>emotions cause shocks to people nearby.<br>Area attacks might Slow Dark enemies.
+|Name2 = Rei CC
+|Desc2 = Joining the fight from Merc Storia!<br>Monsters flee from her presence.<br>Area attacks might Slow Dark enemies.
+|Name1 (JP) = レイ (Rei)
+|Desc1 (JP) = メルクストーリアから参戦！<br>感情が高まると感電させちゃう女の子<br>黒い敵の動きをたまに遅くする(範囲攻撃)
+|Transl1 (JP) = Joined the war from Merc Storia!<br>A girl who causes shock to those around from strong emotions<br>Sometimes Slows the movement of Dark enemies (Area Attack)
+|Name2 (JP) = レイCC (Rei CC)
+|Desc2 (JP) = メルクストーリアから参戦！電気を怖がられて<br>モンスターに逃げられてしまう女の子<br>黒い敵の動きをたまに遅くする(範囲攻撃)
+|Transl2 (JP) = Joined the war from Merc Storia! Fearful of her electricity<br>monsters flee from this girl<br>Sometimes Slows the movement of Dark enemies (Area Attack)
+|Name1 (TW) = 雷伊
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>情緒一激動，就會讓人觸電的女孩<br>有時候會讓黑色敵人動作變慢(範圍攻擊)
+|Name2 (TW) = 雷伊CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>因為魔寵害怕電流而一直無法接近他們的女孩<br>有時候會讓黑色敵人動作變慢(範圍攻擊)
+|Name1 (KR) = 레이
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>감정이 격해지면 감전시켜버리는 소녀<br>검은 적의 움직임을 가끔 느리게 한다 (범위 공격)
+|Name2 (KR) = 레이CC
+|Desc2 (KR) = 메르크 스토리아에서 참전! 그녀의 감전을<br>무서워한 몬스터들이 도망가 버린다<br>검은 적의 움직임을 가끔 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,030¢
+*Chapter 2: 1,545¢
+*Chapter 3: 2,060¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rei
+|Normal Base HP = 1400
+|Normal Base AP = 410
+|Normal Range = 194
+|Normal Foreswing = 24
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 63
+|Normal Speed = 14
+|Normal KB = 3
+|Normal Cost = 1030
+|Normal Recharge = 1720
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Slow}} 40% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Rei CC
+|Evolved Base HP = 2100
+|Evolved Base AP = 630
+|Evolved Range = 194
+|Evolved Foreswing = 24
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 63
+|Evolved Speed = 14
+|Evolved KB = 3
+|Evolved Cost = 1030
+|Evolved Recharge = 1720
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Slow}} 40% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,400 HP
+|val-Normal-Attack Power = 410 damage<br>(195.24 DPS)
+|val-Normal-Attack Range = 194
+|val-Normal-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Normal-Movement Speed = 14
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 24f <sup>0.8s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Normal-Recharge Time = 57.33 ~ 48.53 seconds
+|val-Normal-MaxHP = 23,800 HP
+|val-Normal-MaxAttack = 6,970 damage<br>(3,319.05 DPS)
+|val-Evolved-Health = 35,700 HP
+|val-Evolved-Attack Power = 10,710 damage<br>(5,100 DPS)
+|val-Evolved-Attack Range = 194
+|val-Evolved-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Evolved-Movement Speed = 14
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 24f <sup>0.8s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Evolved-Recharge Time = 57.33 ~ 48.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni118 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/119.html
+
+----
+{{CatNav|Aura|Wyvern}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Gacha Cats]]

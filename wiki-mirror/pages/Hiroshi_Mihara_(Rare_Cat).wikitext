@@ -1,0 +1,141 @@
+{{TranslationNeeded}}
+{{TWExclusive}}
+:''For the enemy units, see [[Hiroshi Mihara (Enemy)]] and [[Idol Mihara & Cat (Enemy)]].''
+'''Hiroshi Mihara''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained when beating any stage in [[Shiryouko's Photography Studio|Chasing Dream Idols]] during the [[Hiroshi Mihara Collaboration Event]]. He was added in [[Version 5.8 Update|Version 5.8]] and is based on the Japanese YouTuber who lives in Taiwan, named [https://www.youtube.com/channel/UCCBq7s8VOCyek275uvq5lYQ 三原慧悟] (''Hiroshi Mihara''). [[True Form]] added in [[Version 8.3 Update|Version 8.3]] increases chance to [[Freeze|freeze]] [[:Category:Floating Enemies|Floating]] enemies.
+
+{{Cat Info
+|ID = 320
+|rarity = RR
+|name1 = Hiroshi Mihara
+|name2 = One Two Three ~ Hara Idols Cat
+|name3 = Idol Mihara & Cat
+}}
+
+==Evolution==
+Evolves into '''One Two Three ~ Hara Idols Cat''' at level 10.
+
+Evolves into '''Idol Mihara & Cat''' after completing [[Hiroshi Mihara Awakens!]] (may be dropped on the first stage but guaranteed on the second stage) and is level 20 or above.
+
+==Strategy/Usage==
+Hiroshi simply lacks the stats to be an effective anti-Floating. While he does have [[Area Attack]], decent uptime, and a good proc chance, especially in his [[True Form]], his garishly long cooldown time prevents him from being stacked like [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]]. What sounds like an easy task of stacking three Hiroshis to solve this actually takes more than a minute with no survivability to boot. All in all, Necro-Dancer and [[Bishop Cat (Rare Cat)|Sanzo Cat]] run laps around Hiroshi as they are much more spammable and sustainable.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 320
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni320 f00.png
+|Image2 = Uni320 c00.png
+|Image3 = Uni320 s00.png
+|Name1 (TW) = 三原慧悟
+|Desc1 (TW) = 今年25歲，很高但不帥的偶像中文版限定角色。<br>夢想是成為超級偶像後，在台北小巨蛋開演唱會。<br>有時候會讓飄浮敵人的動作停止（範圍攻擊）
+|Name2 (TW) = 一二三～原偶像貓
+|Desc2 (TW) = 今年25歲，很高但不帥的偶像中文版限定角色。<br>配合過年所以換上喜氣洋洋的服裝來跟大家拜年。<br>有時候會讓飄浮敵人的動作停止（範圍攻擊）
+|Name3 (TW) = 偶像三原&貓咪
+|Desc3 (TW) = 為了實現成為超級偶像的夢想而努力的網紅<br>還不得已帶著一隻自稱拍檔不肯離開的貓咪<br>有時候會讓飄浮敵人的動作停止（範圍攻擊）
+}}
+
+==Cost==
+*Chapter 1: 500元
+*Chapter 2: 750元
+*Chapter 3: 1,000元
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hiroshi Mihara
+|Normal Base HP = 500
+|Normal Base AP = 150
+|Normal Range = 250
+|Normal Foreswing = 39
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 69
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 500
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = One Two Three ~ Hara Idols Cat
+|Evolved Base HP = 500
+|Evolved Base AP = 150
+|Evolved Range = 250
+|Evolved Foreswing = 39
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 69
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 500
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|True Name = Idol Mihara & Cat
+|True Base HP = 500
+|True Base AP = 150
+|True Range = 250
+|True Foreswing = 39
+|True Attack Cooldown = 159
+|True Attack Length = 69
+|True Speed = 8
+|True KB = 3
+|True Cost = 500
+|True Recharge = 1000
+|True Attack Type = Area
+|True Targets = Floating
+|True Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 150 damage<br>(22.73 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 198f <sub>6.6 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 39f <sup>1.3s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(386.36 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(386.36 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 198f <sub>6.6 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 39f <sup>1.3s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+|val-True-Health = 8,500 HP
+|val-True-Attack Power = 2,550 damage<br>(386.36 DPS)
+|val-True-Attack Range = 250
+|val-True-Attack Frequency = 198f <sub>6.6 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 39f <sup>1.3s</sup><br>(30f <sup>1s</sup> backswing)
+|val-True-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni320 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/321.html
+
+----
+{{CatNav|Killer Cat|Nazousagi}}
+----
+
+{{Hiroshi Mihara}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]

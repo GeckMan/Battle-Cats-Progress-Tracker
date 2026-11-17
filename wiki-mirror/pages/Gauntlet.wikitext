@@ -1,0 +1,602 @@
+'''Gauntlets''' (強襲ステージ, ''Kyōshū Sutēji'', '''Assault Stages''') are a type of event introduced in the [[Version 9.3 Update]].
+
+==Overview==
+A Gauntlet is a map containing up to 20 [[No Continues]] stages  that can drop rewards such as [[Battle Items]], [[Catfruit]], [[Cat Capsule|Tickets]], [[Gamatoto Expedition|Catamins]], [[Ototo Corps|Materials]] and [[Leadership]]s when completed for the first time. Players can score up to three victories within the Gauntlet before it becomes inaccessible, and each takes 30 minutes or 1 [[Catamin]] A to refill.
+
+In most Gauntlets, all stages play out the same, but the strength magnifications and enemy base's HP are increased with each stage. Gauntlets also tend to have enemies with separate health and attack magnifications instead of a universal multiplier as a balance.
+
+Similar to [[Heavenly Tower]], [[Infernal Tower]] and [[Legend Quest]], all progress made in a Gauntlet will reset when the event ends, allowing the player to collect the rewards again once the event returns. As of [[Version 12.5 Update|Version 12.5]], Gauntlets also have a checkpoint system that allows the player to start from stage 10 once the player has cleared stage 10, like in the towers and Legend Quest.
+
+==Colossus Gauntlets==
+The Colossus Gauntlets don't follow any specific schedule, and can only be played after clearing [[Into the Future]] Chapter 3. Each contains a unique boss with two types: a regular trait and [[:Category:Colossus Enemies|Colossus]], a special type that makes them weak to [[:Category:Colossus Slayer Cats|Colossus Slayers]]. There are two sets of enemies per Gauntlet, one for Lv.1~10 and another for Lv.11~20.[[File:E 499.png|thumb|[[Baron Seal|Baron Seal]], the first example of a Colossus]]
+
+Beating the stages in these Gauntlets may give you the chance to play one of three Continuation Stages that have a much more consistent drop rate of Strong Effect Up, Tough Effect Up or Massive Damage Up [[Talent Orbs]] for the respective boss's primary trait. The Continuation Stages are always named Cradle Wilderness, Summit Wilderness and Frontier Wilderness, but the level design is different for each Gauntlet.
+
+One of Gauntlets listed below will appear every other week lasting for one week.
+
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Continuations'''
+!scope="row" |'''Boss'''
+!scope="row" |'''1st Appearance'''
+|-
+|[[Baron Seal Strikes]]
+|[[Baron Seal Strikes/Red Alert 1~20|Red Alert 1~20]]
+|*[[Baron Seal Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Baron Seal Strikes/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Baron Seal Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Baron Seal]]
+|'''EN''': January 17th, 2022 to January 31st, 2022<br>'''JP''': October 8th, 2021 to October 15th, 2021
+|-
+|[[Le'Grim Strikes]]
+|[[Le'Grim Strikes/Rampage Lv1~20|Rampage Lv1~20]]
+|*[[Le'Grim Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Le'Grim Strikes/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Le'Grim Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Le'Grim]]
+|'''EN''': December 6th, 2021 to December 13th, 2021<br>'''JP''': October 22nd, 2021 to October 29th, 2021
+|-
+|[[Mega Menace]]
+|[[Mega Menace/On Mighty Wings Lv1~20|On Mighty Wings Lv1~20]]
+|*[[Mega Menace/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Mega Menace/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Mega Menace/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Mega-Mooth]]
+|'''EN''': February 14th, 2022 to February 21st 2022<br>'''JP''': February 25th, 2022 to March 4th 2022
+|-
+|[[Horrorpotamus]]
+|[[Horrorpotamus/Cosmic Juggernaut Lv.1~20|Cosmic Juggernaut Lv.1~20]]
+|*[[Horrorpotamus/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Horrorpotamus/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Horrorpotamus/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Super Hyppoh]]
+|'''EN''': January 10th, 2022 to January 17th, 2022<br>'''JP''': November 8th, 2021 to November 15th, 2021
+|-
+|[[Divine Archangel Strikes]]
+|[[Divine Archangel Strikes/Blessing Lv.1~20|Blessing Lv.1~20]]
+|*[[Divine Archangel Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Divine Archangel Strikes/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Divine Archangel Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Archangel Exiel]]
+|'''EN''': April 25th, 2022 to May 2nd, 2022<br>'''JP''': December 24th, 2021 to December 31st, 2021
+|-
+|[[Big Peng Z Strikes]]
+|[[Big Peng Z Strikes/Wandering Lv.1~20|Wandering Lv.1~20]]
+|*[[Big Peng Z Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Big Peng Z Strikes/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Big Peng Z Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Big Peng Z]]
+|'''EN''': March 21st, 2022 to March 28th, 2022<br>'''JP''': March 25th, 2022 to April 1st, 2022
+|-
+|[[Attack of the Omens]]
+|[[Attack of the Omens/Three Omens Lv.1~20|Three Omens Lv.1~20]]
+|*[[Attack of the Omens/Cradle Wilderness (Deadly)|Cradle Wilderness]]<br>*[[Attack of the Omens/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Attack of the Omens/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Omens]]
+|'''EN''': May 22nd, 2023 to ? <br>'''JP''': ? to ?
+|-
+|[[Gigahaniwan Strikes!]]
+|[[Gigahaniwan Strikes!/Excavation Lv.1~20|Excavation Lv.1~20]]
+|*[[Gigahaniwan Strikes!/Cradle Wilderness|Cradle Wilderness]]<br>*[[Gigahaniwan Strikes!/Summit Wilderness (Merciless)|Summit Wilderness]]<br>*[[Gigahaniwan Strikes!/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|[[Gigahaniwan]]
+|'''EN''': July 1st, 2024 to July 7th, 2024 <br>'''JP''': April 12th, 2024 to April 19th, 2024
+|}
+
+===Continuation Stages===
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="9" style="text-align:center;" | '''Talent Orb Drop Rates'''
+|-
+! scope="col" | Stage
+! scope="col" | Special Effect Orb D
+! scope="col" | Special Effect Orb C
+! scope="col" | Special Effect Orb B
+! scope="col" | Special Effect Orb A
+! scope="col" | Stat Orb D
+! scope="col" | Stat Orb C
+! scope="col" | Stat Orb B
+! scope="col" | Stat Orb A
+|-
+|'''Cradle Wilderness'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|'''-'''
+|'''-'''
+|-
+|'''Summit Wilderness'''
+|'''-'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|'''-'''
+|-
+|'''Frontier Wilderness'''
+|'''-'''
+|'''-'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|}
+:''Special Effect Orbs are Strong Effect, Massive Damage, and Tough Effect Orbs. Stat Orbs are Attack Up and Defense Up Orbs.''
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="4" style="text-align:center;" | '''Appearance %age of Continuation Stage'''
+|-
+!Gauntlet Stage
+!Cradle Wilderness
+!Summit Wilderness
+!Frontier Wilderness
+|-
+|'''Lv.1'''
+|'''1%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.2'''
+|'''3%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.3'''
+|'''7%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.4'''
+|'''11%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.5'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.6'''
+|'''18%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.7'''
+|'''21%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.8'''
+|'''24%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.9'''
+|'''27%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.10'''
+|'''30%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.11'''
+|'''34%'''
+|'''1%'''
+|'''-'''
+|-
+|'''Lv.12'''
+|'''36%'''
+|'''2%'''
+|'''-'''
+|-
+|'''Lv.13'''
+|'''40%'''
+|'''3%'''
+|'''-'''
+|-
+|'''Lv.14'''
+|'''46%'''
+|'''5%'''
+|'''-'''
+|-
+|'''Lv.15'''
+|'''50%'''
+|'''10%'''
+|'''-'''
+|-
+|'''Lv.16'''
+|'''78%'''
+|'''21%'''
+|'''1%'''
+|-
+|'''Lv.17'''
+|'''77%'''
+|'''21%'''
+|'''2%'''
+|-
+|'''Lv.18'''
+|'''72%'''
+|'''25%'''
+|'''3%'''
+|-
+|'''Lv.19'''
+|'''69%'''
+|'''26%'''
+|'''5%'''
+|-
+|'''Lv.20'''
+|'''59%'''
+|'''31%'''
+|'''10%'''
+|}
+
+==Monthly Gauntlets==
+There are two exclusive Gauntlets per month, which follow a naming scheme of "<Month> Gauntlet" and "<Month> Gauntlet II". The first map is unlocked after beating the main event of the month and appears from the 1st to the 16th, while the second is unlocked after beating the corresponding Lucky Ticket G event and appears from the 16th to the start of the next month.
+
+All monthly Gauntlets have a restriction of "Max # Number of Deployable Cats: 10", though in 2021 the June and July Gauntlets had their own unique restrictions instead.
+
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Boss'''
+!scope="row" |'''1st Appearance'''
+!scope="row" |'''Prerequisite'''
+|-
+|[[June Gauntlet]]
+|[[June Gauntlet/Forbidden Lv.1~10|Forbidden Lv.1~10]]
+|[[Gory Groom]]
+|June 1st, 2021 to June 16th, 2021
+|[[The Forbidden Bride (Monthly Event)|The Forbidden Bride]]
+|-
+|[[June Gauntlet II]]
+|[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.11~20]]
+|[[Gorilliam]]
+|June 16th, 2021 to July 1st, 2021
+|[[Forbidden Bride Pt II (Monthly Event)|Forbidden Bride Pt II]]
+|-
+|[[July Gauntlet]]
+|[[July Gauntlet/Summer Lv.1~10|Summer Lv.1~10]]
+|[[Sunny Celeboodle]]
+|July 1st, 2021 to July 16th, 2021
+|[[Never Summer! (Monthly Event)|Never Summer!]]
+|-
+|[[July Gauntlet II]]
+|[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.11~20]]
+|[[Selena]]
+|July 16th, 2021 to August 1st, 2021
+|[[Never Not Summer! (Monthly Event)|Never Not Summer!]]
+|-
+|[[August Gauntlet]]
+|[[August Gauntlet/Houseguests Lv.1~10|Houseguests Lv.1~10]]
+|[[Lord Enma]]
+|August 1st, 2021 to August 16th, 2021
+|[[Ghostly Houseguests (Monthly Event)|Ghostly Houseguests]]
+|-
+|[[August Gauntlet II]]
+|[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.11~20]]
+|[[Heavenly Le'saint]]
+|August 16th, 2021 to September 1st, 2021
+|[[Ghostly Strangers (Monthly Event)|Ghostly Strangers]]
+|-
+|[[September Gauntlet]]
+|[[September Gauntlet/About Town Lv.1~10|About Town Lv.1~10]]
+|[[Mighty Gui Zuli]]
+|September 1st, 2021 to September 16th, 2021
+|[[Old Guys About Town (Monthly Event)|Old Guys About Town]]
+|-
+|[[September Gauntlet II]]
+|[[September Gauntlet II/In The City Lv.11~20|In The City Lv.11~20]]
+|[[The Red Malice]]
+|September 16th, 2021 to October 1st, 2021
+|[[Old Guys in the City (Monthly Event)|Old Guys in the City]]
+|-
+|[[October Gauntlet]]
+|[[October Gauntlet/Sports Day Lv.1~10|Sports Day Lv.1~10]]
+|
+|October 1st, 2021 to October 16th, 2021
+|[[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]]
+|-
+|[[October Gauntlet II]]
+|[[October Gauntlet II/Sports Night Lv.11~20|Sports Night Lv.11~20]]
+|[[Dead Donny Dash]]
+|October 16th, 2021 to November 1st, 2021
+|[[Sports Night (Monthly Event)|Sports Night]]
+|-
+|[[November Gauntlet]]
+|[[November Gauntlet/Labour Lv.1~10|Labour Lv.1~10]]
+|
+|November 1st, 2021 to November 16th, 2021
+|[[Loving Labour (Monthly Event)|Loving Labour]]
+|-
+|[[November Gauntlet II]]
+|[[November Gauntlet II/Revolution Lv.11~20|Revolution Lv.11~20]]
+|[[CTO Seal]]
+|November 16th, 2021 to December 1st, 2021
+|[[Worker's Revolution (Monthly Event)|Worker's Revolution]]
+|-
+|[[December Gauntlet]]
+|[[December Gauntlet/Jingle Cat Lv.1~10|Jingle Cat Lv.1~10]]
+|[[Dark Emperor Santa]]
+|December 1st, 2021 to December 16th, 2021
+|[[Jingle Cat Bell (Monthly Event)|Jingle Cat Bell]]
+|-
+|[[December Gauntlet II]]
+|[[December Gauntlet II/In Space Lv.11~20|In Space Lv.11~20]]
+|[[Satan Claus]]
+|December 16th, 2021 to January 1st, 2021
+|[[Christmas in Space (Monthly Event)|Christmas in Space]]
+|-
+|[[January Gauntlet]]
+|[[January Gauntlet/New Year? Lv.1~10|New Year? Lv.1~10]]
+|
+|January 1st, 2021 to January 16th, 2021
+|[[Happy New Year? (Monthly Event)|Happy New Year?]]
+|-
+|[[January Gauntlet II]]
+|[[January Gauntlet II/Another Year Lv.11~20|Another Year Lv.11~20]]
+|[[Sister Lione]]
+|January 16th, 2021 to February 1st, 2021
+|[[Another New Year (Monthly Event)|Another New Year]]
+|-
+|[[February Gauntlet]]
+|[[February Gauntlet/Happiness Lv.1~10|Happiness Lv.1~10]]
+|[[Lucky Sloth]]
+|February 1st, 2021 to February 16th, 2021
+|[[Ritual Happiness (Monthly Event)|Ritual Happiness]]
+|-
+|[[February Gauntlet II]]
+|[[February Gauntlet II/Confusion Lv.1~10|Confusion Lv.1~10]]
+|[[Lucky Dags]]
+|February 16th, 2021 to March 1st, 2021
+|[[Ritual Confusion (Monthly Event)|Ritual Confusion]]
+|-
+|[[March Gauntlet]]
+|[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.1~10]]
+|[[Bears Be Bare]]
+|March 1st, 2021 to March 16th, 2021
+|[[Bears be Bare (Monthly Event)|Bears be Bare]]
+|-
+|[[March Gauntlet II]]
+|[[March Gauntlet II/Be Back Lv.11~20|Be Back Lv.11~20]]
+|[[Bears Be Back]]
+|March 16th, 2021 to April 1st, 2021
+|[[Bears Be Back (Monthly Event)|Bears be Back]]
+|-
+|[[April Gauntlet]]
+|[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.1~10]]
+|[[Teacher A]]
+|April 1st, 2022 to April 16th, 2022
+|[[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]
+|-
+|[[April Gauntlet II]]
+|[[April Gauntlet II/Sensei! Lv.11~20|Sensei! Lv.11~20]]
+|
+|April 16th, 2022 to May 1st, 2022
+|[[Spring for Sensei (Monthly Event)|Spring for Sensei]]
+|-
+|[[May Gauntlet]]
+|[[May Gauntlet/Sickness Lv.1~10|Sickness Lv.1~10]]
+|
+|May 1st, 2022 to May 16th, 2022
+|[[Love is Sickness (Monthly Event)|Love is Sickness]]
+|-
+|[[May Gauntlet II]]
+|[[May Gauntlet II/Again Lv.11~20|Again Lv.11~20]]
+|[[Haterbaa 2.0]]
+|May 16th, 2022 to June 1st, 2022
+|[[Lovesick Again (Monthly Event)|Lovesick Again]]
+|}
+
+==Seasonal Gauntlets==
+Seasonal Gauntlets are themed around different seasons and holidays. Rewards vary, and most are unlocked after clearing [[Empire of Cats]] Chapter 1 - excluding [[Summer Break Cats (Gauntlet)|Summer Break Cats]], which is available from the beginning.
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Boss(es)'''
+!scope="row" |'''1st Appearance'''
+|-
+|[[A Colossal New Year!]]
+|[[A Colossal New Year!/Year of the Ox Lv.1~10|Year of the Ox Lv.1~10]]
+|[[Cow Doge]]
+|'''EN''': January 1st, 2021 to January 7th, 2021<br>
+'''JP''': January 1st, 2021 to January 8th, 2021
+|-
+|[[A Colossal Valentine's]]
+|[[A Colossal Valentine's/Choco Chaos Lv.1~20|Choco Chaos Lv.1~20]]
+|[[Marching Kory]]
+|'''EN''': February 15th, 2021 to March 1st, 2021<br>
+'''JP''': February 1st, 2021 to February 15th, 2021
+|-
+|[[Suffering Spring!]]
+|[[Suffering Spring!/Eggs of Chaos Lv.1~20|Eggs of Chaos Lv.1~20]]
+|[[Moai Statue (Enemy Base)|Moai Statue]] (Lv.1~20)<br>[[B.B.Bunny]] (Lv.1~10)<br>[[Gabriel]] (Lv.11~20)
+|'''EN''': March 29th, 2021 to April 9th, 2021<br>
+'''JP''': March 29th, 2021 to April 12th, 2021
+|-
+|[[Summer Break Cats (Gauntlet)|Summer Break Cats]]
+|See article for list
+|Common enemies encountered during main progress
+|'''EN''': August 30th, 2021 to September 20th, 2021<br>
+'''JP''': July 21st, 2021 to September 1st, 2021
+|-
+|[[A Colossal New Year! (2021)]]
+|[[A Colossal New Year! (2021)/Year of the Tiger Lv.1~10|Year of the Tiger Lv.1~10]]
+|[[Tiger Doge]]
+|'''EN''': January 1st, 2021 to January 7th, 2021<br>
+'''JP''': January 1st, 2021 to January 8th, 2021
+|-
+|[[Season 1: School Days]]
+|See article for list
+|Common enemies encountered during main progress
+|'''EN''': March 14th, 2022 to April 11th, 2022<br>
+'''JP''': February 28th, 2022 to March 28th, 2022
+|-
+|[[Monthly Event All-Stars Grateful Gathering]]
+|[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10|Grateful XP Lv.1~10]]
+|Various event enemies
+|'''EN''': May 16th, 2022 to June 6th, 2022<br>
+'''JP''': April 25th, 2022 to May 9th, 2022
+|-
+|[[Horde of Cats]]
+|[[Horde of Cats/Bloodthirsty Lv.1~15|Bloodthirsty Lv.1~15]]
+|[[Killer Cat (Enemy)|Killer Cat]]<br>[[Killer Tank Cat (Enemy)|Killer Tank Cat]]
+|'''EN''': August 8th, 2024 to August 15th, 2024<br>
+'''JP''': February 22nd, 2024 to February 29th, 2024
+|}
+
+==Collab Gauntlets==
+Rewards and unlock requirements vary depending on the Gauntlet.
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Boss(es)'''
+!scope="row" |'''1st Appearance'''
+!scope="row" |'''Collab'''
+|-
+|[[Manbosaki Strikes! (Old)|Manbosaki Strikes]]
+|[[Manbosaki Strikes! (Old)/Sudden Death Lv.1~12|Sudden Death 1~12]]
+|[[Ayumi Manbosaki]]
+|'''EN:''' September 13th, 2021 to September 20th, 2021<br>'''JP''': April 6th, 2020 to April 20th, 2020
+|[[Survive! Mola Mola! Collaboration Event|Survive! Mola Mola]]
+|-
+|[[U.F.O. Corps Strikes!]]
+|[[U.F.O. Corps Strikes!/Levels 1~20|Levels 1~20]]◆
+|[[Yakisoba U.F.O. Cat (Enemy)|Yakisoba U.F.O. Cat]] (Lv.1~4)<br>[[Yakisoba Face]] (Lv.5~20)
+|'''JP''': June 5th, 2020 to June 19th, 2020
+|[[Nissin U.F.O. Collaboration Event|Nissin U.F.O.]]
+|-
+|[[Messier's Assault!]]
+|[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv1~20]]
+|[[Messier]]
+|'''EN''': June 1st, 2020 to June 15th, 2020<br>'''JP''': June 1st, 2020 to June 15th, 2020
+|[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]
+|-
+|[[The Devils Strike!]]
+|[[The Devils Strike!/Nether Reaches Lv.1~20|Nether Reaches Lv.1~20]]
+|[[Beastly Nero (Enemy)|Beastly Nero]]<br>[[Super Devil (Enemy)|Super Devil]]<br>[[Satanmaria (Enemy)|Satanmaria]]
+|'''EN''': October 12th, 2020 to October 26th, 2020<br>'''JP''': July 13th, 2020 to July 27th, 2020
+|[[Bikkuriman Collaboration Event|Bikkuriman]]
+|-
+|[[The Angels Strike!]]
+|[[The Angels Strike!/Heaven's Gate Lv.1~20|Heaven's Gate Lv.1~20]]
+|[[Super Zeus (Enemy)|Super Zeus]]<br>[[Heracrist (Enemy)|Heracrist]]<br>[[Shaman Khan (Enemy)|Shaman Khan]]
+|'''EN''': October 15th, 2020 to October 26th, 2020<br>'''JP''': July 15th, 2020 to July 27th, 2020
+|[[Bikkuriman Collaboration Event|Bikkuriman]]
+|-
+|[[Trials of Merc Storia!]]
+|[[Trials of Merc Storia!/Healer & Co. Lv.1~20|Healer & Co. Lv.1~20]]
+|[[Healer (Enemy)|Healer]]
+|'''EN''': April 12th, 2021 to April 26th, 2021<br>'''JP''': October 16th, 2020 to October 30th, 2020
+|[[Merc Storia Collaboration Event|Merc Storia]]
+|-
+|[[Electric Diva Strikes!]]
+|[[Electric Diva Strikes!/Song 1~20|Song 1~20]]◆
+|[[Megurine Luka (Enemy)|Megurine Luka]]
+|'''EN''': January 4th, 2021 to January 18th, 2021<br>'''JP''': December 11th, 2020 to December 26th, 2020
+|[[Hatsune Miku Collaboration Event|Hatsune Miku]]
+|-
+|[[Heralds of The End]]
+|[[Heralds of The End/WARNING Lv.1~20|WARNING Lv.1~20]]
+|[[The 4th Angel (Enemy)|The 4th Angel]] (Lv.1~6)<br>[[The 10th Angel (Enemy)|The 10th Angel]] (Lv.7, Lv.14)<br>[[The 6th Angel (Enemy)|The 6th Angel]] (Lv.8~13)<br>[[The 9th Angel (Enemy)|The 9th Angel]] (Lv.15~20)
+|'''EN''': March 1st, 2021 to March 15th, 2021<br>'''JP''': January 18th, 2021 to February 1st, 2021
+|[[Neon Genesis Evangelion Collaboration Event|Neon Genesis Evangelion]]
+|-
+|[[Test of Might: Ranma 1/2 (Old)]]
+|[[Test of Might: Ranma 1/2 (Old)/Showdown!: Part 1~20|Showdown!: Part 1~20]]
+|[[Ranma Saotome (M) (Enemy)|Ranma Saotome (M)]]
+|'''EN''': May 17th, 2021 to May 31st, 2021<br>'''JP''': April 12th, 2021 to April 26th, 2021
+|[[Ranma 1/2 Collaboration Event|Ranma 1/2]]
+|-
+|[[Walpurgisnacht (Gauntlet)|Walpurgisnacht]]
+|[[Walpurgisnacht (Gauntlet)/Stagebuilding Witch: Cycle 1~10|Stagebuilding Witch: Cycle 1~10]]
+|[[Walpurgisnacht (Enemy)|Walpurgisnacht]]
+|September 16th, 2021 to September 27th, 2021
+|[[Puella Magi Madoka Magica Collaboration Event|Puella Magi Madoka Magica]]
+|-
+|[[Aim GI Nyanko Horse Racing]]
+|[[Aim GI Nyanko Horse Racing/Levels 1~20|Levels 1~20]]◆
+|Common enemies encountered during main progress
+|'''JP''': October 15th, 2021 to November 1st, 2021
+|[[JRA Collaboration Event|JRA]]
+|}
+
+◆ See article for stage names
+
+==Miscellaneous Gauntlets==
+The two Gauntlets currently in this section consist of all [[Duel Stages]] and [[Tag Arena Stages]] respectively, but without any [[Timed Score Reward]]s. Despite having no standby period or [[No Continues]] restriction, they are officially considered as Gauntlets and use the same type of ID as all other Gauntlets in the [[Event Release Order]].
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Boss'''
+!scope="row" |'''1st Appearance'''
+|-
+|[[Duel Stages Challenge]]
+|See article for list
+|Common enemies encountered during main progress
+|'''EN''': June 24th, 2022 to July 4th, 2022<br>'''JP''': June 13th, 2022 to June 27th, 2022
+|-
+|[[Tag Arena Challenge]]
+|See article for list
+|Common enemies encountered during main progress
+|'''EN''': July 5th, 2022 to July 15th, 2022<br>'''JP''': July 11th, 2022 to July 25th, 2022
+|}
+
+==Legacy Gauntlets==
+These are older versions of the early Colossus Gauntlets. Despite being phased out, these maps can still be found in the game's files, though are unlikely to ever see the light of day again.
+{| class="article-table" style="width: 100%" border="0" cellpadding="1" cellspacing="1"
+|-
+!scope="row" |'''Name'''
+!scope="row" |'''Stages'''
+!scope="row" |'''Boss'''
+!scope="row" |'''1st Appearance'''
+|-
+|[[Baron Seal Strikes (Old)]]
+|'''Baron Seal Strikes!''' ([[Baron Seal Strikes (Old)/Red Alert 1~20|Red Alert 1~20]])<br>'''Baron Seal Strikes!!''' ([[Baron Seal Strikes (Old)/Red Alert 21~40|Red Alert 21~40]])<br>'''Baron Seal Strikes!!!''' ([[Baron Seal Strikes (Old)/Red Alert 41~60|Red Alert 41~60]])
+|[[Baron Seal]]
+|'''EN''': April 13th, 2020 to April 27th, 2020<br>'''JP''': February 14th, 2020 to February 28th, 2020
+|-
+|[[Le'Grim Strikes (Old)]]
+|'''Le'Grim Strikes!''' ([[Le'Grim Strikes (Old)/Rampage Lv1~20|Rampage Lv1~20]])<br>'''Le'Grim Strikes!!''' ([[Le'Grim Strikes (Old)/Rampage Lv21~40|Rampage Lv21~40]])<br>'''Le'Grim Strikes!!!''' ([[Le'Grim Strikes (Old)/Rampage Lv41~60|Rampage Lv41~60]])
+|[[Le'Grim]]
+|'''EN''': July 6th, 2020 to July 20th, 2020<br>'''JP''': May 1st, 2020 to May 15th, 2020
+|-
+|[[Mega Menace (Old)]]
+|'''Mega Menace!''' ([[Mega Menace (Old)/On Mighty Wings Lv1~20|On Mighty Wings Lv1~20]])<br>'''Mega Menace!!''' ([[Mega Menace (Old)/On Mighty Wings Lv21~40|On Mighty Wings Lv21~40]])<br>'''Mega Menace!!!''' ([[Mega Menace (Old)/On Mighty Wings Lv41~60|On Mighty Wings Lv41~60]])
+|[[Mega-Mooth]]
+|'''EN''': September 14th, 2020 to September 28th, 2020<br>'''JP''': June 19th, 2020 to July 3rd, 2020
+|-
+|[[Horrorpotamus (Old)]]
+|'''Horrorpotamus!''' ([[Horrorpotamus (Old)/Cosmic Juggernaut Lv.1~20|Cosmic Juggernaut Lv.1~20]])<br>'''Horrorpotamus!!''' ([[Horrorpotamus (Old)/Cosmic Juggernaut Lv.21~40|Cosmic Juggernaut Lv.21~40]])<br>'''Horrorpotamus!!!''' ([[Horrorpotamus (Old)/Cosmic Juggernaut Lv.41~60|Cosmic Juggernaut Lv.41~60]])
+|[[Super Hyppoh]]
+|'''EN''': November 18th, 2020 to December 2nd, 2020<br>'''JP''': July 31st, 2020 to August 14th, 2020
+|-
+|[[Horde of Cats (Old)]]
+|[[Horde of Cats (Old)/Bloodthirsty Lv.1~10|Bloodthirsty Lv.1~10]]
+|[[Killer Cat (Enemy)|Killer Cat]]
+|'''EN''': February 21st, 2022 to February 28th, 2022<br>
+'''JP''': February 21st, 2022 to February 28th, 2022
+|-
+|[[Horde of Tank Cats]]
+|[[Horde of Tank Cats/Deadly Protection Lv.1~10|Deadly Protection Lv.1~10]]
+|[[Killer Cat (Enemy)|Killer Cat]]<br>[[Killer Tank Cat (Enemy)|Killer Tank Cat]]
+|'''EN''': February 22nd, 2023 to March 1st, 2023<br>
+'''JP''': February 22nd, 2023 to March 1st, 2023
+|}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Map025.png|The map used in many of the Gauntlets
+Rc136.png|The enemy base used in all of the main Gauntlets
+</gallery>
+
+==Trivia==
+*The map used in many of the Gauntlets (shown in the gallery above) appears to be based on a map of the Japanese city of Kyoto, especially the river.
+*Gauntlets and [[Heavenly Tower/Floor 41|Floor 41]] of the [[Heavenly Tower]] are currently the only [[Leadership]]-dropping stages not only found after clearing the whole map.
+*There was no official English name for this type of stage until [[Version 10.6 Update|Version 10.6]], which introduced the first Monthly Gauntlets.
+*In the English changelog for [[Version 12.5 Update|Version 12.5]], the Gauntlets with their own [[:Category:Colossus Enemies|Colossus]] bosses were officially named "Colossus Gauntlets".
+*The [[Manbosaki Strikes! (Old)|original version]] of Manbosaki Strikes! was the only Gauntlet to have 12 stages.
+*Prior to [[Version 11.4 Update|Version 11.4]], Gauntlets were locked for 30 minutes immediately upon each clear, rather than a total of 90 minutes after three.
+*[[Great Angel Chibinel]] is the only enemy in a Colossus [[Gauntlet]] to not get incrementally buffed, appearing at 100% in [[Attack of the Omens/Three Omens Lv.1~20|Three Omens Lv.1~10]].
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

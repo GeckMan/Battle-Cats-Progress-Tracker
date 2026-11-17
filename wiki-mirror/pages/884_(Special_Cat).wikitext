@@ -1,0 +1,95 @@
+{{LimitedContent}}
+'''884-1''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Catnip Challenges]] during the [[Anniversary/14th Year|14th Anniversary]]. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Cat Info
+|ID = 884
+|rarity = EX
+|name1 = 884-1
+|name2 = 884-2
+}}
+
+==Evolution==
+Evolves into '''884-2''' at level 10.
+
+==Strategy/Usage==
+It's easy to look at 884-2's stats and abilities and immediately assume it to be entirely outclassed by [[Wushu Cat (Rare Cat)|Shigong Cat]]. While this is true to a degree, it actually works synergistically with Shigong to create a much thicker line of meatshields, the likes of which hordes of Zombies will find very difficult to penetrate. At only Lv.36 does 884-2 surpass the HP of a Lv.20+90 [[Tank Cat (Normal Cat)|Eraser Cat]] (26,700 HP), and at Lv.50 it ends up with a very respectable 36,450 effective HP. This HP threshold is nothing to sneeze at, as it allows 884-2 to survive a surprising amount of interactions, such as a hit from [[Death Angel Z-Onel]]/[[Daboo of the Dead]], two hits from 350% [[Cadaver Bear]], as well as many smaller attacks from peons like [[Zang Roo]], [[Zir Zeal]], and [[Zory]] to name a few. 884-2's only real weakness is its low base HP, which can sometimes make it an inferior pick to [[Talents|Talented]] [[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]] in certain mixed stages. Regardless, this convicted felon's not that bad when you get to know them.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 884
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni884 f00.png
+|Image2 = Uni884 c00.png
+|Name1 (JP) = 監獄タンクネコ (Kangoku Tanku Neko, Prisoner Tank Cat)
+|Desc1 (JP) = 監獄の近くで白黒しま模様の服を着ていたため<br>脱獄犯と間違われて投獄されたネコ<br>ゾンビに打たれ強い
+|Name2 (JP) = 脱獄ネコカベ (Datsugoku Neko Kabe, Jailbreak Wall Cat)
+|Desc2 (JP) = ホームシックになり脱獄を決意したネコ<br>帰宅後にやりたい事は衣替え<br>ゾンビに打たれ強い
+}}
+
+==Cost==
+*Chapter 1: 100¢
+*Chapter 2: 150¢
+*Chapter 3: 200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = 884-1
+|Normal Base HP = 220
+|Normal Base AP = 6
+|Normal Range = 110
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 28
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 100
+|Normal Recharge = 260
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Special Abilities#Resistant|Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Special Abilities#Zombie Killer|Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Slow}} [[Special Abilities#Immune to Slow|Immune to Slow]]
+|Evolved Name = 884-2
+|Evolved Base HP = 270
+|Evolved Base AP = 6
+|Evolved Range = 110
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 28
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 100
+|Evolved Recharge = 260
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Special Abilities#Resistant|Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Special Abilities#Zombie Killer|Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Slow}} [[Special Abilities#Immune to Slow|Immune to Slow]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni884 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/885.html
+
+----
+{{CatNav|883-1|885-1}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Zombie Killer Cats]]

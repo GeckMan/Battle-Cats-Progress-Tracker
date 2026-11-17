@@ -1,0 +1,133 @@
+:''For other uses, see [[Cat Bros (disambiguation)]].''
+The '''Cat Bros''' are a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 8.8 Update|Version 8.8]] and can be unlocked when beating any stage in [[The Battle Cats Unite! (Special Event)|The Battle Cats Unite!]].
+
+{{Cat Info
+|ID = 501
+|rarity = RR
+|name1 = Cat Bros
+|name2 = Baka Cat Bros
+|key1 = Cat Bros R
+}}
+
+==Evolution==
+Evolves into '''Baka Cat Bros''' at level 10.
+
+==Strategy/Usage==
+Cat Bros are not a very good meatshield outside of [[Empire of Cats]] and early [[Legend Stages]]. After that, their health, cost, knockback count and recharge time combine to make them decent at best, even against Traitless foes. Although they can be improved through Research and Resistant [[Cat Combo]]s, there are better options that do not need combos to be used. Once other anti-Traitless meatshields like [[Ancient Egg: N001 (Special Cat)|Haniwa Cat]] or [[Brainwashed Tank Cat (Super Rare Cat)|Brainwashed Wall Cat]] are obtained, these two can be forgotten.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 501
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni501 f00.png
+|Image2 = Uni501 c00.png
+|Name1 = Cat Bros
+|Desc1 = Joining the fight from The Battle Cats Unite!<br>We love games and are Super friends!<br>Tough vs Traitless enemies! (Area Attack)
+|Name2 = Baka Cat Bros
+|Desc2 = Joining the fight from The Battle Cats Unite!<br>Even when we grow up, we'll never stop playing!<br>Tough vs Traitless enemies! (Area Attack)
+|Name1 (JP) = ネコ兄弟S (Neko Kyōdai S, Cat Brothers S)
+|Desc1 (JP) = Switch版「ふたりで！にゃんこ大戦争」記念キャラ<br>ゲーム大好き、どこでもいっしょなスーパー仲良し兄弟<br>属性を持たない敵に打たれ強い(範囲攻撃)
+|Transl1 (JP) = Commemorating the Switch version, "Together! The Great Cat War".<br>Super-close brothers who love to play games and go everywhere together.<br>Strong against Traitless enemies (Area Attack)
+|Name2 (JP) = ネコバカ兄弟S (Neko Baka Kyōdai S, Baka Cat Brothers S)
+|Desc2 (JP) = Switch版「ふたりで！にゃんこ大戦争」記念キャラ<br>大人になっても一緒にゲームをする仲良しファミリー<br>属性を持たない敵に打たれ強い(範囲攻撃)
+|Transl2 (JP) = Commemorating the Switch version, "Together! The Great Cat War".<br>A close family who play games together even when they grow up.<br>Strong against Traitless enemies (Area Attack)
+|Name1 (TW) = 貓咪兄弟S
+|Desc1 (TW) = Switch版「兩人一起！貓咪大戰爭」的紀念角色<br>最喜歡玩遊戲，在哪都一起的超級好兄弟<br>對上沒有屬性的敵人很耐打(範圍攻擊)
+|Name2 (TW) = 貓咪笨呆兄弟S
+|Desc2 (TW) = Switch版「兩人一起！貓咪大戰爭」的紀念角色<br>就算變成大人也一起玩遊戲的和睦家族<br>對上沒有屬性的敵人很耐打(範圍攻擊)
+|Name1 (KR) = 고양이 형제S
+|Desc1 (KR) = Switch판 「둘이서! 냥코 대전쟁」 기념 캐릭터<br>게임을 좋아하고, 언제나 함께인 사이좋은 형제<br>속성을 가지지 않은 적에게 맷집이 좋다 (범위 공격)
+|Name2 (KR) = 고양이 바보 형제S
+|Desc2 (KR) = Switch판 「둘이서! 냥코 대전쟁」 기념 캐릭터<br>어른이 되어도 함께 게임을 하는 사이좋은 패밀리<br>속성을 가지지 않은 적에게 맷집이 좋다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Bros
+|Normal Base HP = 300
+|Normal Base AP = 200
+|Normal Range = 140
+|Normal Foreswing = 37
+|Normal Attack Cooldown = 83
+|Normal Attack Length = 62
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 400
+|Normal Attack Type = Area
+|Normal Targets = Traitless
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Baka Cat Bros
+|Evolved Base HP = 300
+|Evolved Base AP = 200
+|Evolved Range = 140
+|Evolved Foreswing = 37
+|Evolved Attack Cooldown = 83
+|Evolved Attack Length = 62
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 400
+|Evolved Attack Type = Area
+|Evolved Targets = Traitless
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 200 damage<br>(50 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 120f <sub>4 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 37f <sup>1.23s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(850 DPS)
+|val-Evolved-Health = 5,100 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(850 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 120f <sub>4 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 37f <sup>1.23s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni501 f00}}
+
+==Trivia==
+*''Baka'' (馬鹿) is a Japanese word meaning "stupid", "stupidity", or "idiot".
+*Baka Cat Bros' name, outfits and hairstyles reference the [https://youtu.be/wf04tHHXZmE Baka Brothers] from the comedy variety show [[wikipedia:ja:ドリフ大爆笑|''Dorifu Daibakushō'']].
+*In [[Version 8.8 Update|Version 8.8]], the Cat Bros were shown in the [[Cat Guide]] between [[Cat Kart R (Rare Cat)|Cat Kart R]] and [[Pumpcat (Rare Cat)|Pumpcat]], though they were removed from the Cat Guide in [[Version 8.9 Update|Version 8.9]].
+**Despite still lacking an entry, their stage became available sometime after [[Version 11.10 Update|Version 11.10]], making them the second obtainable unit without an entry, the first being [[Evangelist Cat (Uber Rare Cat)|Evangelist Cat]] outside of BCKR.
+**In [[Version 12.0 Update|Version 12.0]], Cat Bros re-received their Cat Guide entry, also getting a slightly altered description, stating they join the fight from "The Battle Cats Unite!" instead of "The Battle Cats Together!"
+*Unlike [[Cat Kart R (Rare Cat)|Cat Kart R]], they are actually available in the game they promote.
+*Unlike their [[Cat Bros (Switch Special Cat)|Switch counterpart]], they target traitless enemies instead of red enemies.
+
+==Reference==
+*https://battlecats-db.com/unit/502.html
+
+----
+{{CatNav|Shakurel Panda|Myrcia}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]

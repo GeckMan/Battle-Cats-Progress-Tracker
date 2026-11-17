@@ -1,0 +1,62 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Neko Hakase (Special Cat)]].''
+'''Neko Hakase''' (ネコ博士) is an enemy that appears in the [[Cat Busters Collaboration Event]]. She was added in [[Version 5.6 Update|Version 5.6]].
+
+{{Enemy Info
+|name = Neko Hakase
+|image = E 302.png
+|appearance = [[Cat Busters Collaboration Event]]
+|money drop = 450円 - 1,778円
+}}
+
+==Enemy==
+A melee attacker with relatively low health and 20% chance to perform a [[Critical Hit]]. The chance for a Critical Hit doesn't matter too much due to her pathetic damage and Single Attack.
+
+==Strategy==
+Pretty much any attacker can outrange this enemy, so it shouldn't be too much to deal with. Even those units who can't outrange her can just brush the low damage off or avoid it entirely because of her Single Attack. Just don't bring any [[:Category:Cats with Metal ability|Metal]] Cats as they will die from the [[Critical Hit]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Cat Busters Collaboration Event#Charge! Cat Busters|Charge! Cat Busters]]:
+**[[A World With Only Cats]] (10%)
+**[[Stolen Time Machine]] (30%)
+**[[Chasing The Mouse]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Neko Hakase
+|Health = 30000
+|Attack Power = 900
+|Attack Range = 145
+|Attack Type = Single
+|Time Between Attacks = 50
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 11
+|Backswing = 14
+|Ability = {{AbilityIcon|Critical}} 20% chance to perform a [[Critical Hit]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+302 e.png|Neko Hakase's spritesheet
+IdleNekoHase.gif|Neko Hakase's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/304.html
+
+----
+{{EnemyNav|W (form 3)|Miss Haka}}
+----
+{{Cat Busters}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Critical Hit Enemies]]
+[[Category:Single Attack Enemies]]

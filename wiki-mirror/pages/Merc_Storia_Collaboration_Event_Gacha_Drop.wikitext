@@ -1,0 +1,33 @@
+{{PageBanner|Gatya bnr925 en.png|gacha}}
+Listed all possible drops when the player spins this collaboration gacha.
+
+==Chances==
+{{GachaChances
+|UberChance = 5%
+|SuperChance = 25%
+|RareChance = 70%
+}}
+
+==Event==
+{| class="gacha-table" cellpadding="0" cellspacing="4"
+|-
+| class="gacha-table-heading" style="background-color: var(--gacha-rarity-ur);" | ▼Uber Super Rare
+|-
+{{GachaDescription|Wyvern|Hearscht|Cornelia|Juvens|Mystica|Michelia|Todomeki|Eyewaltz|Taitenki}}
+|-
+| class="gacha-table-heading" style="background-color: var(--gacha-rarity-sr);" | ▼Super Rare
+|-
+{{GachaList|Aura|Rei|Alois|Citrouille|Orthos}}
+|-
+| class="gacha-table-heading" style="background-color: var(--gacha-rarity-rr);" | ▼Rare
+|-
+{{GachaList|Celesse|Nono|Olga|Norn|Yoichi|Serum|Fuu}}
+|}
+
+{{Gallery|Gatya_btn13}}
+
+==Reference==
+*https://battlecats-db.com/unit/lot008.html
+
+{{Gacha Events}}
+[[Category:Gacha Event]]

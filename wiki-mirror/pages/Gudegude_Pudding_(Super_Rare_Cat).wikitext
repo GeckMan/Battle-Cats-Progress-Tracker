@@ -1,0 +1,126 @@
+{{JPExclusive}}
+:This article is about the Cat Unit. For the enemy, see [[Gudegude à la mode (Enemy)]].
+'''Gudegude Pudding''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was implemented in [[Version 6.2 Update|Version 6.2]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Gudetama Collaboration Event]].
+
+{{Cat Info
+|ID = 349
+|rarity = SR
+|name1 = Gudegude Pudding
+|name2 = Gudegude à la mode
+}}
+
+==Evolution==
+Evolves into '''Gudegude à la mode''' at level 10.
+
+==Strategy/Usage==
+This cute duo of pudding and cat aren't all that bad for collab unit standards. You can think of this unit as a weaker version of [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]. If you have all [[Fruit Treasures|Void Fruit Treasure]], this cat can do 34,000 damage at Lv. 30 using its [[Massive Damage|massive damage ability.]] You could use both this cat and [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] to do some serious damage to [[:Category:Dark Enemies|Dark]] enemies. Not a bad unit.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 349
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni349 f00.png
+|Image2 = Uni349 c00.png
+|Name1 (JP) = ぐでぐでプリン (Gude Gude Purin, Gude Gude Pudding)
+|Desc1 (JP) = 人気キャラクターぐでたまが参戦！<br>歩くのほんとむりだから～<br>黒い敵に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Popular character Gudetama participates!<br>It's really hard to walk~<br>Deals super damage to Dark enemies (Range Attack)
+|Name2 (JP) = ぐでぐでアラモード (Gude Gude Ara Mōdo, Ala Mode)
+|Desc2 (JP) = 人気キャラクターぐでたまが参戦！<br>急ブレーキやめれ～<br>黒い敵に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Popular character Gudetama participates!<br>Stop suddenly braking~<br>Deals super damage to Dark enemies (Range Attack)
+|Name1 (TW) = 慵懶布丁蛋黃哥
+|Desc1 (TW) = 人氣蛋黃哥懶得參戰…<br>哥真的走不動了～<br>能對黑色敵人造成超大傷害(範圍攻擊)
+|Name2 (TW) = 焦糖布丁蛋黃哥
+|Desc2 (TW) = 人氣蛋黃哥懶得參戰…<br>不要緊急剎車啦～<br>能對黑色敵人造成超大傷害(範圍攻擊)
+|Name1 (KR) = 구데구데 푸딩
+|Desc1 (KR) = 인기 캐릭터 구데타마 참전!<br>걷는 건 정말 싫다니까...<br>검은 적에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 구데구데 아라모드
+|Desc2 (KR) = 인기 캐릭터 구데타마 참전!<br>급브레이크는 안돼...<br>검은 적에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 900円
+*Chapter 2: 1,350円
+*Chapter 3: 1,800円
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gudegude Pudding
+|Normal Base HP = 1500
+|Normal Base AP = 500
+|Normal Range = 250
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 91
+|Normal Speed = 6
+|Normal KB = 2
+|Normal Cost = 900
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Gudegude à la mode
+|Evolved Base HP = 1500
+|Evolved Base AP = 500
+|Evolved Range = 250
+|Evolved Foreswing = 10
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 91
+|Evolved Speed = 6
+|Evolved KB = 2
+|Evolved Cost = 900
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 500 damage<br>(164.84 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(81f <sup>2.7s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 25,500 HP
+|val-Normal-MaxAttack = 8,500 damage<br>(2,802.2 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 8,500 damage<br>(2,802.2 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 10f <sup>0.33s</sup><br>(81f <sup>2.7s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni349 f00}}
+
+==Trivia==
+*Their second form's name is a reference [[wikipedia:ja:プリンアラモード|Pudding à la mode]].
+
+==Reference==
+*https://battlecats-db.com/unit/350.html
+
+----
+{{CatNav|Gudetama Plate|Nisetama Army}}
+----
+
+{{Gudetama}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with unique death animations]]

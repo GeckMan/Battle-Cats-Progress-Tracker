@@ -1,0 +1,128 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Serum (Enemy)]].''
+'''Serum''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event|Merc Storia]] collaboration event. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 115
+|rarity = RR
+|name1 = Serum
+|name2 = Serum CC
+}}
+
+==Evolution==
+Evolves into '''Serum CC''' at level 10.
+
+==Strategy/Usage==
+Serum is similar to [[Tin Cat (Rare Cat)|Tin Cat]] in the fact that many [[:Category:Dark Enemies|Dark]] enemies like [[Gory Dark]] or [[Shadow Boxer K]] already have many knockbacks, so knocking them back more won't help.
+
+She can be used to knockback [[Le'noir]], [[Dark Otter]] or [[Director Kurosawah]], but even for this limited usage, [[Flower Cat (Special Cat)|Bombercat]], [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] and/or [[Teacher BearCat (Rare Cat)|Assassin BearCat]] all outclass her in some way or another. Unfortunately, due to these factors, there is little to no usage for Serum in the game.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 115
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni115 f00.png
+|Image2 = Uni115 c00.png
+|Name1 = Serum
+|Desc1 = Joining the fight from Merc Storia!<br>Loyal to her master in the Sky Country.<br>Small chance to Knockback Dark enemies.
+|Name2 = Serum CC
+|Desc2 = Joining the fight from Merc Storia! Known<br>among the people for devotion to justice!<br>Small chance to Knockback Dark enemies.
+|Name1 (JP) = セラム (Seramu, Serum)
+|Desc1 (JP) = メルクストーリアから参戦！<br>空の国にいる主人に忠誠を誓った少女<br>ごくたまに黒い敵をふっとばす
+|Transl1 (JP) = Joining the war from Merc Storia!<br>A girl who has sworn allegiance to her master in the land of the sky<br>Occasionally pushes back Dark enemies
+|Name2 (JP) = セラムCC (SeramuCC, SerumCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>生粋の天界の民で正義感にあふれている少女<br>ごくたまに黒い敵をふっとばす
+|Transl2 (JP) = Joining the war from Merc Storia!<br>A genuine citizen of the heavens with a strong sense of justice<br>Occasionally pushes back Dark enemies
+|Name1 (TW) = 賽拉姆
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>效忠位於空之國的主人的少女<br>偶爾能打飛黑色敵人
+|Name2 (TW) = 賽拉姆CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>地道的天空之民，充滿正義感的少女<br>偶爾能打飛黑色敵人
+|Name1 (KR) = 세럼
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>하늘의 나라에 있는 주인에게 충성을 맹세한 소녀<br>아주 가끔 검은 적을 날려버린다
+|Name2 (KR) = 세럼CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>순수 혈통의 천계의 백성으로 정의감 넘치는 소녀<br>아주 가끔 검은 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 340¢
+*Chapter 2: 510¢
+*Chapter 3: 680¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Serum
+|Normal Base HP = 305
+|Normal Base AP = 120
+|Normal Range = 250
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 89
+|Normal Attack Length = 49
+|Normal Speed = 16
+|Normal KB = 6
+|Normal Cost = 340
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Serum CC
+|Evolved Base HP = 350
+|Evolved Base AP = 155
+|Evolved Range = 250
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 89
+|Evolved Attack Length = 49
+|Evolved Speed = 16
+|Evolved KB = 6
+|Evolved Cost = 340
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 305 HP
+|val-Normal-Attack Power = 120 damage<br>(33.96 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 106f <sub>3.53 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 5,185 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(577.36 DPS)
+|val-Evolved-Health = 5,950 HP
+|val-Evolved-Attack Power = 2,635 damage<br>(745.75 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 106f <sub>3.53 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni115 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/116.html
+
+----
+{{CatNav|Yoichi|Fuu}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Gacha Cats]]

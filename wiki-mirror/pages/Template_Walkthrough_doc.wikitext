@@ -1,0 +1,63 @@
+{{Documentation}}
+==Usage==
+<pre>
+{{Walkthrough
+|ID of YouTube video
+|Name of player
+|Any additional notes about the strategy
+}}
+</pre>
+
+==Examples==
+<tabber>
+Standard usage=
+<pre>
+{{Walkthrough
+|WaGGRDv82vM
+|Game Movie.net
+|2 Crown
+}}
+</pre>
+===Result===
+{{Walkthrough
+|WaGGRDv82vM
+|Game Movie.net
+|2 Crown
+}}
+
+|-|
+With 2 videos=
+<pre>
+{{Walkthrough
+|WaGGRDv82vM|Boogle|
+|dqBqO1HQj9w|Regit|No Gacha
+}}
+</pre>
+===Result===
+{{Walkthrough
+|WaGGRDv82vM|Boogle|
+|dqBqO1HQj9w|Regit|No Gacha
+}}
+
+|-|
+With a lot of videos=
+<pre>
+{{Walkthrough
+|dqBqO1HQj9w|Nurse Wuffa
+|Items: [[Battle Items#Rich Cat|Rich Cat]], [[Battle Items#Cat CPU|Cat CPU]]<br>
+[[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]] can be replaced by [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]]
+|WaGGRDv82vM|DanieA|
+|KscxtlXblh0|Lucas IV|With commentary
+|UrcQdY8rsVg|Lucas IV|Ft. [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] level 40
+}}
+</pre>
+===Result===
+{{Walkthrough
+|dqBqO1HQj9w|Nurse Wuffa
+|Items: [[Battle Items#Rich Cat|Rich Cat]], [[Battle Items#Cat CPU|Cat CPU]]<br>
+[[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]] can be replaced by [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]]
+|WaGGRDv82vM|DanieA|
+|KscxtlXblh0|Lucas IV|With commentary
+|UrcQdY8rsVg|Lucas IV|Ft. [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] level 40
+}}
+</tabber>

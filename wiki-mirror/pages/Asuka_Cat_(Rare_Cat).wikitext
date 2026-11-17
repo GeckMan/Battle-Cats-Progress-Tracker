@@ -1,0 +1,135 @@
+:''For the other Asuka from the same Gacha, see [[Asuka Langley (Super Rare Cat)]].''
+'''Asuka Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was unlocked in [[Version 6.10 Update|Version 6.10]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event|Evangelion Collaboration Event]].
+
+{{Cat Info
+|ID = 407
+|rarity = RR
+|name1 = Asuka Cat
+|name2 = Apron Asuka
+}}
+
+==Evolution==
+Evolves into '''Apron Asuka''' at level 10.
+
+==Strategy/Usage==
+Asuka Cat is meant to be a tank against Red enemies, but lacks the health or DPS to be comparable to the likes of [[Viking Cat (Rare Cat)|Maximum the Fighter]] or [[Swordsman Cat (Rare Cat)|Elemental Duelist Cat]]. Her only real use is on 4-crown stages dominated by Red enemies, as support for anti-Red damage dealers like Elemental Duelist Cat.
+
+{{Job|Classification = Melee & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 407
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni407 f00.png
+|Image2 = Uni407 c00.png
+|Name1 = Asuka Cat
+|Desc1 = Cat who pilots EVA Unit-02. Flies into<br>a rage easily when she feels slighted.<br>Tough vs / Massive Damage to Red.
+|Name2 = Apron Asuka
+|Desc2 = She is slowly warming up to her comrades.<br>Has a habit of burning her tongue easily.<br>Tough vs / Massive Damage to Red.
+|Name1 (JP) = ネコアスカ
+|Desc1 (JP) = エヴァンゲリオン２号機パイロットに憧れるネコ<br>素直になれなくてつい暴れてしまう<br>赤い敵に打たれ強く、超ダメージを与える
+|Transl1 (JP) = Cat longing for Evangelion Unit 2 pilot<br>
+I can't be honest and go wild<br>
+Strongly struck by red enemies and extremely damaging
+|Name2 (JP) = エプロンネコアスカ
+|Desc2 (JP) = みんなと少し打ち解けてきたネコ<br>猫舌なので味見が苦手<br>赤い敵に打たれ強く、超ダメージを与える
+|Transl2 (JP) = A cat that has a little talk with everyone<br>
+Not good at tasting because it is a cat tongue<br>
+Strongly struck by red enemies and extremely damaging
+|Name1 (TW) = 明日香貓
+|Desc1 (TW) = 夢想成為EVA2號機駕駛員的貓咪<br>老是不聽話大吵大鬧<br>對上紅色敵人很耐打，可以給予其超大傷害
+|Name2 (TW) = 圍裙明日香貓
+|Desc2 (TW) = 漸漸能與大家融洽相處的貓咪<br>因為怕燙，每次做菜要試嘗都很辛苦<br>對上紅色敵人很耐打，可以給予其超大傷害
+|Name1 (KR) = 고양이 아스카
+|Desc1 (KR) = 에반게리온 2호기의 파일럿을 동경하는 고양이<br>솔직하지 못한 성격 탓에 금세 난폭해진다<br>빨간 적에 맷집이 좋고 초 데미지를 입힌다
+|Name2 (KR) = 에이프런 고양이 아스카
+|Desc2 (KR) = 조금씩 모두에게 마음을 열고 있는 고양이<br>뜨거운 걸 잘 먹지 못해 간 보기가 힘들다<br>빨간 적에 맷집이 좋고 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Asuka Cat
+|Normal Base HP = 600
+|Normal Base AP = 260
+|Normal Range = 180
+|Normal Foreswing = 66
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 98
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Apron Asuka
+|Evolved Base HP = 600
+|Evolved Base AP = 295
+|Evolved Range = 180
+|Evolved Foreswing = 66
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 111
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 260 damage<br>(79.59 DPS)
+|val-Normal-Attack Range = 180
+|val-Normal-Attack Frequency = 98f <sub>3.27 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 66f <sup>2.2s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 4,420 damage<br>(1,353.06 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 5,015 damage<br>(1,355.41 DPS)
+|val-Evolved-Attack Range = 180
+|val-Evolved-Attack Frequency = 111f <sub>3.7 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 66f <sup>2.2s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni407 f00}}
+
+==Trivia==
+*[[Version 7.1 Update|Version 7.1]] increased Apron Asuka's attack power by about 13%.
+
+==Reference==
+*https://battlecats-db.com/unit/408.html
+
+----
+{{CatNav|Rei Cat|Mari Cat}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Resistant ability]]

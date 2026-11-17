@@ -1,0 +1,40 @@
+<onlyinclude><infobox theme="enemy_infobox_2018">
+	<title source="name"/>
+    <image source="image"/>
+	<group>
+		<header>Information</header>
+		<data source="first appearance">
+			<label>First Appearance:</label>
+		</data>
+		<data source="appearance">
+			<label>Appearances:</label>
+		</data>
+		<data source="money drop">
+			<label>Money Drop:</label>
+		</data>
+		<data>
+			<label>Variant Of:</label>
+			<default>{{#if:{{{novariants|}}}||<!--
+
+				See [[Template:Variant]] for how variant data gets stored.
+				`novariants` is used on [[Project:Enemy Structure Page]].
+
+				-->{{#invoke:Bucket|get|variant|select=page_name, original<!--
+				-->|where=variant.variant = "{{{name}}}"|format=userformat<!--
+
+				^ possibly causes an issue on [[Codename "Red Riding"]] but so far
+				only enemy structure page has had script errors.
+
+				-->|userformat=[[%page_name%|%original%]]|delimiter=, <nowiki /><!--
+				-->|default=<nowiki />}}<!--
+
+				`nowiki`s preserve the spacing.
+
+			-->}}</default>
+		</data>
+	</group>
+</infobox><templatestyles src="Enemy Info/styles.css" /><!--
+{{#invoke:Bucket|put|enemy
+|+templateargs = id, name
+}}
+--></onlyinclude>{{/doc}}

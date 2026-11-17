@@ -1,0 +1,141 @@
+:''Not to be confused with [[Barrier]]s or [[Base Barrier]]s.''
+An '''Aku Shield''' or '''Shield''' (悪魔シールド ''Akuma Shīrudo'', '''Devil Shield''') is a defensive ability possessed by certain [[:Category:Aku Enemies|Aku Enemies]]. [[File:devilshield.gif|thumb|right|[[Aku Doge|Aku Doge]] displaying his Shield]]
+
+==Explanation==
+A Shield is omnipresent until destroyed, but is only visible when attacked. It begins with a specific amount of HP depending on the enemy and absorbs all damage directed to the unit until destruction, ignoring excess damage. Unlike [[Barrier]]s, Shield HP scales with strength magnification. When the bearer receives a damage-based knockback, their Shield will regenerate with a specific percentage of their base HP, again varying depending on the enemy, unless the enemy dies from the hit. Shielded enemies are impervious to damage and debuffs, regardless of source, with damage being redirected to the Shield and everything else being nullified, but attacking them can still generate [[Wave Attack|Waves]], [[Surge Attack|Surges]] and [[Explosion]]s. Although Shields prevent status effects from being inflicted, a Shield's regeneration will not cancel any that are already active.
+
+Since Shields lose HP like an enemy would, any cat that can attack Aku is theoretically capable of breaking any Shield. [[:Category:Shield Piercing Cats|Some Cat Units]] have "[[Shield Piercing]]", which functions similarly to Barrier Breakers against barriers on Starred Aliens, giving a set chance to destroy shields instantly and dealing damage to the enemy directly, though this does not prohibit regeneration.
+
+Non-damage-based knockbacks, such as those from [[Sniper the Cat]] or [[Ururun Wolf (Special Cat)|Ururun Wolf]], are unable to force Shields to regenerate. An important note is that the [[Ototo Corps#Breakerblast|Breakerblast Cannon]] ''cannot'' destroy Shields in one hit like it does Barriers.
+
+Overall, the biggest difference between Shields and Barriers is that Barriers are a one-time hurdle that needs a powerful hit or Barrier Breaker, but ignores damage otherwise, while Shields offer a constant buff to enemies' HP, while granting them immunity to effects most of the time.
+
+==Enemies==
+{| class="article-table mw-collapsible" cellpadding="1"
+|-
+! scope="col" |'''Enemy'''
+! scope="col" |'''Base Shield HP'''
+! scope="col" |'''Regeneration %'''
+|-
+! scope="row" |[[Aku Doge]]
+|4,500
+|50%
+|-
+! scope="row" |[[Le'Behemoth]]
+|800,000
+|50%*
+|-
+! scope="row" |[[Fallen Bear]]
+|250,000
+|50%
+|-
+! scope="row" |[[Wicked Face]]
+|322,000
+|100%
+|-
+! scope="row" |[[Aku Cyclone]]
+|1,666,666
+|100%
+|-
+! scope="row" |[[Wicked Cat (Enemy)|Wicked Cat]]
+|4,800
+|50%
+|-
+! scope="row" |[[Wicked Axe Cat (Enemy)|Wicked Axe Cat]]
+|200,000
+|50%
+|-
+! scope="row" |[[Dark Priest Mamon]]
+|1,200,000
+|50%
+|-
+! scope="row" |[[High Priest Mamon]]
+|1,800,000
+|100%
+|-
+! scope="row" |[[Lord of Ruin Jagando]]
+|1,800,000
+|100%
+|-
+! scope="row" |[[Possessed Empress]]
+|1,200,000
+|100%
+|-
+! scope="row" |[[Miz Devil]]
+|15,000
+|50%*
+|-
+! scope="row" |[[Midnite D.]]
+|80,000
+|50%
+|-
+! scope="row" |[[Ackey]]
+|450,000
+|100%
+|-
+! scope="row" |[[Deathkory]]
+|600,000
+|100%
+|-
+! scope="row" |[[THE FOLIVOREAN]]
+|50,000
+|50%
+|-
+! scope="row" |[[Vermilingua Rangmaster]]
+|400,000
+|50%
+|-
+! scope="row" |[[Malevolent Mohawk Cat]]
+|48,000
+|100%
+|-
+! scope="row" |[[Malevolent Dark Cat]]
+|700,000
+|100%
+|-
+! scope="row" |[[Malevolent Lion Cat]]
+|40,000
+|100%
+|-
+! scope="row" |[[Malevolent Flying Cat]]
+|1,340,000
+|100%
+|-
+! scope="row" |[[Malevolent King Dragon Cat]]
+|70,000
+|100%
+|-
+! scope="row" |[[Malevolent Jamiera Cat]]
+|500,000
+|100%
+|-
+! scope="row" |[[Malizabeth]]
+|30,000
+|0%
+|-
+! scope="row" |[[Emperor Warumongar]]
+|2,500
+|50%
+|-
+! scope="row" |[[Poultrio]]
+|60,000
+|100%
+|-
+! scope="row" |[[Marquis Clionius]]
+|750,000
+|100%
+|-
+! colspan="3" style="text-align: center;" |*Le'Behemoth's and Miz Devil's Shields have a regeneration value of 50% in the game's code, but in practice their Shields never regenerate because they each only have one knockback.
+|}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Skill014.png|A Shield's spritesheet
+</gallery>
+
+==Trivia==
+*[[Malevolent Mohawk Cat]] has the highest number of knockbacks for any enemy with a Shield and thus the highest number of Shield regenerations in the game.
+*Hitting a Shield will not cause vibration when Battle Vibration is enabled.
+
+[[Category:Game Features]]
+[[Category:Special Abilities]]

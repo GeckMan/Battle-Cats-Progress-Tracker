@@ -1,0 +1,129 @@
+{{PageBanner|Fate sns img01.jpg}}
+:''For more uses of "Sakura" see [[Sakura (disambiguation)]].''
+'''Li'l Sakura''' is a [[:Category:Special Cats|Special Cat]] that can be obtained when beating any stage in [[Fate/Stay Night: Heaven's Feel Collaboration Event#The Hidden Grail War|The Hidden Grail War]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event]]. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 374
+|rarity = EX
+|name1 = Li'l Sakura
+|name2 = Li'l Sakura CC
+}}
+
+==Evolution==
+Evolves into '''Li'l Sakura CC''' at level 10.
+
+==Strategy/Usage==
+Li'l Sakura is very much like [[Moneko (Special Cat)|Moneko]]: an early game critter, and completely outclassed by [[Jurassic Cat (Rare Cat)|Catasaurus]]. If that wasn't enough, this unit also has an extremely long cooldown time for its terrible stats, meaning it has no use apart from very early game metals like [[Metal Hippoe]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 374
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni374 f00.png
+|Image2 = Uni374 c00.png
+|Name1 = Li'l Sakura
+|Desc1 = Joining the fight from Fate/stay night [HF]!<br>Admires Shirou, takes care of the Emiya<br>household. Area Attacks might Critical.
+|Name2 = Li'l Sakura CC
+|Desc2 = Joining the fight from Fate/stay night [HF]! "If I<br>became a bad person, would you forgive me?"<br>Area Attacks might Critical.
+|Name1 (JP) = ちび桜 (Chibi Sakura, Little Sakura)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>士郎に憧れる少女。衛宮家の家事を担当している<br>ごくたまにクリティカル攻撃を出す(範囲攻撃)
+|Transl1 (JP) = Joining the war from Fate/stay night [HF]!<br>A girl who admires Shirou. She is in charge of the Emiya family's household chores<br>Sometimes does a Critical attack (Area Attack)
+|Name2 (JP) = ちび桜CC (Chibi SakuraCC, Little SakuraCC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>「もしわたしが悪い人になったら、許せませんか？」<br>ごくたまにクリティカル攻撃を出す(範囲攻撃)
+|Transl2 (JP) = Joining the war from Fate/stay night [HF]!<br>"If I become a bad person, will you not forgive me?"<br>Sometimes does a Critical attack (Area Attack)
+|Name1 (TW) = 小小櫻
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>崇拜士郎的少女。在衛宮家幫忙家務<br>偶爾會發出會心一擊（範圍攻擊）
+|Name2 (TW) = 小小櫻CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>「如果我成為惡人，你會原諒我嗎?」<br>偶爾會發出會心一擊（範圍攻擊）
+|Name1 (KR) = 꼬마 사쿠라
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>시로를 동경하는 소녀. 에미야가의 가사를 담당하고 있다<br>아주 가끔 크리티컬을 낸다 (범위 공격)
+|Name2 (KR) = 꼬마 사쿠라CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>「만약 제가 나쁜 사람이 된다면 용서 못 하시겠죠?」<br>아주 가끔 크리티컬을 낸다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Sakura
+|Normal Base HP = 600
+|Normal Base AP = 100
+|Normal Range = 190
+|Normal Foreswing = 44
+|Normal Attack Cooldown = 85
+|Normal Attack Length = 70
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 400
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 10% chance to perform a [[Critical Hit]]
+|Evolved Name = Li'l Sakura CC
+|Evolved Base HP = 600
+|Evolved Base AP = 100
+|Evolved Range = 190
+|Evolved Foreswing = 44
+|Evolved Attack Cooldown = 85
+|Evolved Attack Length = 70
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 400
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 10% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 100 damage<br>(23.26 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 129f <sub>4.3 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 44f <sup>1.47s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(395.35 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(395.35 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 129f <sub>4.3 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 44f <sup>1.47s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni374 f00}}
+
+==Trivia==
+*Prior to [[Version 15.4 Update|Version 15.4]] introducing The Hidden Grail War, Li'l Sakura was unlocked through a [[Daily Bonus]].
+
+==Reference==
+*https://battlecats-db.com/unit/375.html
+
+----
+{{CatNav|Li'l Shirou|Coin Cat}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Critical Hit Cats]]

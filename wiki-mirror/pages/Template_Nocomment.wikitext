@@ -1,0 +1,8 @@
+<onlyinclude>{{#if:{{{notext|}}}||:'''Comments on this article have been locked, {{#if: {{{1|}}}| for the following reason(s):|}} ''{{{1|no reason provided}}}.'''''}}<span style="display:none;"><no-comment-streams/></span></onlyinclude>
+
+;Description
+:Disables comments on a page.
+;Syntax
+:Type <span style="font-family: Courier;">{{t|nocomment|reason}}</span> on the page to be disable them.'''
+
+[[Category:General wiki templates]]

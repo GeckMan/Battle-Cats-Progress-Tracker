@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Hippoe|Zoge|Kang Roo|Zroco|Zory}}
+:''Not to be confused with the [[Heavenly Tower/Floor 2|Heavenly Tower]] or [[Infernal Tower/Floor 2|Infernal Tower]] versions of Floor 2.''
+'''Floor 2''' is the second floor of [[Zombie Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 01 v en.png]]
+|stage location = [[File:Mapname005 v en.png]]
+|energy = 80
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Hippoe|100%
+|Zoge|20%
+|Kang Roo|100%
+|Zroco|20%}}
+|boss = {{Magnification|Zory|20%}}
+|treasure = - 100,000 XP (100%, 1 time)
+|XP = 1,520 XP
+|width = 4,000
+|max enemies = 15
+|jpname = 2nd Floor
+|script = 2階
+|romaji = 2 Kai
+|star = 1
+|event-chapter = [[Zombie Citadel]]
+|difficulty = ★3
+|prev stage = [[Zombie Citadel/Floor 1|Floor 1]]
+|next stage = [[Zombie Citadel/Floor 3|Floor 3]]
+}}
+
+==Battleground==
+*3 [[Hippoe]]s spawn, delay 20 seconds<sup>600f</sup>.
+*3 [[Zoge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Kang Roo]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Zory]] spawns as the boss.
+**3 [[Kang Roo]]s spawn, delay 20 seconds<sup>600f</sup>.
+**5 [[Zroco]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07005-02.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

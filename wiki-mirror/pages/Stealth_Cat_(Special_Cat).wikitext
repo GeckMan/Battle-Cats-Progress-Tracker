@@ -1,0 +1,129 @@
+{{KRExclusive}}
+'''Stealth Cat''' is a [[:Category:Special Cats|Special Cat]]. This unit was the winner of   [[PONOS Campaigns/The OutCats|The OutCats]] campaign for the Korean Version, voted for by fans. It was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 788
+|rarity = EX
+|name1 = Stealth Cat
+|name2 = Surprise Stealth Cat
+}}
+
+==Evolution==
+Evolves into '''Surprise Stealth Cat''' at level 10.
+
+==Strategy/Usage==
+Stealth Cat is borderline useless in most situations due to a combination of Single Attack, painfully low range, mediocre speed and very long backswing, usually precluding it from attacking more than once. It can act as good counterplay to [[One Horn]]/[[Bore]] in Normal Form and [[Cyberhorn]]/[[Nimoy Bore]] in Evolved Form, but that's as far as it goes, and superior alternative CC units already exist. A 28-second recharge time puts the last nail in its coffin.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 788
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni788 f00.png
+|Image2 = Uni788 c00.png
+|Name1 (KR) = 상자 고양이 (Sangja Goyangi, Box Cat)
+|Desc1 (KR) = 아웃캣츠 오디션에서 1위로 뽑힌 고양이<br>친환경 소재 상자로 사회적으로 주목받고 있다<br>빨간 적을 날려버리고 움직임을 느리게 한다
+|Transl1 (KR) = Cat voted number one in OutCats auditions,<br>gaining social attention for its eco-friendly box<br>Slows and knocks back Red enemies
+|Name2 (KR) = 깜짝상자 고양이 (Kkamjjak Sangja Goyangi, Surprise Box Cat)
+|Desc2 (KR) = 우승자의 기분을 맛보기 위해 화려한 상자로 옮긴 고양이<br>모두를 놀라게 해주려다 친환경이라는 본래의 의미를 잃어버렸다<br>에이리언을 날려버리고 움직임을 느리게 한다
+|Transl2 (KR) = Moved to a fancy box to feel like a winner<br>Trying to wow everyone, it lost its original meaning of being green<br>Slows and knocks back Alien enemies
+}}
+
+==Cost==
+*Chapter 1: 360원
+*Chapter 2: 540원
+*Chapter 3: 720원
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Stealth Cat
+|Normal Base HP = 450
+|Normal Base AP = 200
+|Normal Range = 160
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 8001
+|Normal Speed = 15
+|Normal KB = 1
+|Normal Cost = 360
+|Normal Recharge = 1100
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback]] target traits<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]] and [[Immune to Warp|Warp]]
+|Evolved Name = Surprise Stealth Cat
+|Evolved Base HP = 450
+|Evolved Base AP = 200
+|Evolved Range = 160
+|Evolved Foreswing = 10
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 8021
+|Evolved Speed = 15
+|Evolved KB = 1
+|Evolved Cost = 360
+|Evolved Recharge = 1100
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback]] target traits<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]] and [[Immune to Warp|Warp]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 200 damage<br>(0.75 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 8,001f <sub>266.7 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(7,991f <sup>266.37s</sup> backswing)
+|val-Normal-Recharge Time = 36.67 ~ 27.87 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(12.75 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(12.72 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 8,021f <sub>267.37 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 10f <sup>0.33s</sup><br>(8,011f <sup>267.03s</sup> backswing)
+|val-Evolved-Recharge Time = 36.67 ~ 27.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni788 f00}}
+
+==Trivia==
+*Stealth Cat's concept may be a reference to how [[wikia:metalgear:Cardboard box|cardboard boxes]] are used in the ''[[wikipedia:Metal Gear|Metal Gear]]'' series of games.
+*Surprise Stealth Cat is based off of the [[wikipedia:Jack-in-the-box|jack-in-the-box]] toy.
+**Surprise Stealth Cat also happens to bear a striking resemblance to a finalist from the [[PONOS Campaigns/YourBattleCat Design Contest|#YourBattleCat Design Contest]], even down to the stars on the box, though this may be a coincidence.
+*Surprise Stealth Cat's paint job is reminiscent of [[:Category:Starred Alien Enemies|Starred Aliens]].
+*Surprise Stealth Cat has the second longest attack frequency in the game, being beaten out by only [[Ancient Egg: N112 (Rare Cat)|Cat Egg Pod]].
+
+==Reference==
+*https://battlecats-db.com/unit/789.html
+
+----
+{{CatNav|Netherworld Nymph Lunacia|Baki Hanma}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Weaken Immunity]]

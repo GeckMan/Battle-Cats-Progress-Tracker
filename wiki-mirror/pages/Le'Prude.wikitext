@@ -1,0 +1,98 @@
+'''Le'Prude''' (アカンゾウ, ''Akanzou'') is a [[:Category:Red Enemies|Red]] variant of [[Le'boin]] that appears in [[Zero Legends]]. They were introduced in [[Version 15.2 Update|Version 15.2]].
+
+{{Enemy Info
+|name = Le'Prude
+|image = E 768.png
+|first appearance = '''ZL:''' [[Synthol Swamp|Sub-chapter 29 - Synthol Swamp]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+Le'Prude has enormous bulk and a comparatively faster attack rate to most other non-event-exclusive Le'boin variants. Their lower damage is made up for by a combination of 400 range [[Omni Strike]] and guaranteed [[Explosion]]s, giving them phenomenal reach which allows them to hit all the way up to 675 range and easily advance due to low standing range of 250. This, as well as the lingering hitboxes of Explosions, makes for a potent pusher who can easily repel fragile units like [[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]. In addition, Le'Prude's [[Immune to Freeze|Immunity to Freeze]] renders it impossible to stop them from attacking, particularly countering the likes of [[Apple Cat (Super Rare Cat)|iCat]] or [[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]].
+
+==Strategy==
+Le'Prude's relatively fast attacks and lingering hitboxes from Explosions make it nearly impossible to approach them with units that have lacking health or survivability, notably making [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] a risky choice. Units that can tank the hits without being knocked back, such as those with [[Strong]], [[Resistant]] or [[Insanely Tough]] against Red, are more effective; some such units include [[Talents|Talented]] [[Dom Cat (Special Cat)|Dark Lazer]], [[Fish Cat (Normal Cat)|Island Cat]], [[Crazed Fish Cat (Super Rare Cat)|Manic Island Cat]], and [[Sushi Cat (Super Rare Cat)|Roe Cat]], the latter of which can also Weaken Le'Prude to neutralize their damage.
+
+Also keep in mind that while Le'Prude's base health and damage aren't incredibly high, they're buffed to 200% in [[Zero Legends]], giving them a whopping '''2.8 ''million''''' health and 21,600 damage. As such, taking them out will not be easy and they are nearly impossible to rush down in any way, shape, or form. This also means that Le'Prude can serve as both an attacker and a tank for ranged enemies, therefore, depending on the enemies that accompany Le'Prude, you may need high pierce from [[:Category:Long Distance Cats|Long Distance]]/[[:Category:Omni Strike Cats|Omni Strike]]/[[:Category:Wave Attack Cats|Wave]]/[[:Category:Surge Attack Cats|Surge]]/[[:Category:Explosion Cats|Explosion]] units to nullify their tanking potential.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 768
+|Type = [[:Category:Red Enemies|Red]]
+|Image1 = Enemy icon 768.png
+|Name1 = Le'Prude
+|Desc1 = A Morals Committee officer who turns bright red<br>whenever they see something naughty. They strictly<br>confiscate all "improper" items, but only to update<br>their own massive secret collection at home.
+|Name1 (JP) = アカンゾウ (Akanzou)
+|Desc1 (JP) = エッチなものを見ると真っ赤になって<br>取り締まりを行う風紀委員のゾウ。<br>本当は興味津々で、没収した戦利品は<br>自分の秘蔵コレクションにしている。
+|Transl1 (JP) = A member of the public morals committee, this elephant<br>turns bright red when it sees the lewd things it cracks down on.<br>It's actually very curious about its confiscated loot,<br>keeping it in its own treasured collection.
+|Name1 (TW) = 臉紅澎湃
+|Desc1 (TW) = 擔任風紀委員的大象，一看到色色的<br>東西就會全身變紅並立刻進行取締。<br>實際上是充滿好奇心，將沒收的<br>戰利品通通當作自己的秘密收藏
+|Name1 (KR) = 압수다옹
+|Desc1 (KR) = 야한 걸 보면 새빨개져서<br>전부 압수해 버리는 선도부 코끼리.<br>사실은 누구보다 관심이 많아서 압수한 전리품을<br>자신의 비밀 컬렉션에 채워 넣고 있다.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 29-4: [[Synthol Swamp]] (200%)
+*Stage 29-6: [[Side Chest Isle]] (200%)
+*Stage 31-1: [[Origin Outback]] (200%)
+*Stage 34-1: [[Bristle Bodysuit]] (200%)
+*Stage 36-2: [[Merry-Go-Roundcake]] (200%)
+
+===[[Special Events|Event Stages]]===
+*[[Otherworld Colosseum#Dirt Cheap 2|Otherworld Colosseum]]: [[Round 2 (Dirt Cheap 2)|Round 2]] (150%)
+*[[Koneko Music Festival#Koneko Takes the Stage|Koneko Takes the Stage]]: [[No Shoving!]] (100%, 150%, 200%, 250%, 300%, 350%, 400%, 450%, 500%, 550%, 600%, 650%, 700%, 750%, 800%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Destiny]]: [[Arena of Destiny/Talent Tournament (Massive Damage 2)|Talent Tournament]] (150%, 200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Le'Prude
+|Health = 1400000
+|Attack Power = 10800
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 87
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 8
+|Backswing = 8
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~400)<br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 400 range<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+768 e.png|Le'Prude's spritesheet
+</gallery>
+
+==Trivia==
+*A prude is someone opposed to or sensitive to anything naughty. It also happens to contain the word ''rud'' (redness; to redden).
+*Le'Prude's Japanese name, アカンゾウ ''Akanzou'', may be derived from 赤 ''aka'' (red), あかん ''akan'' (a [[wikipedia:Kansai dialect|Kansai]] term for "unacceptable", "forbidden", "not allowed" or "no good"), 簡素 ''kanso'' (simple/plain, referencing Le'Prude's minimal design changes from [[Le'boin]]), 感想 ''kansō'' (impressions, thoughts or reactions), ぞ ''zo'' (a masculine sentence-ending particle that indicates emphasis, sometimes for a warning or threat) and 像 ''zō'' (elephant).
+*Le'Prude may have been inspired by the [https://youtu.be/xRwIykRc5Dw red elephants] of [[wikipedia:Tsavo|Tsavo]], Kenya, whose skin gains a red hue from the iron-oxide-rich soil that accumulates on them. These distinctive elephants are one of the most iconic features of [https://www.britannica.com/place/Tsavo-National-Park Tsavo National Park].
+*Le'Prude is the first non-event enemy since [[Le'noir]] (from [[Version 3.5 Update|Version 3.5]]) whose design is purely a recolor of another enemy.
+**Incidentally, both are variants of Le'boin.
+
+==Reference==
+*https://battlecats-db.com/enemy/770.html
+
+----
+{{EnemyNav|Eyes of Forced Unconscious Sleep|Poultrio}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zero Legends Enemies]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Explosion Enemies]]

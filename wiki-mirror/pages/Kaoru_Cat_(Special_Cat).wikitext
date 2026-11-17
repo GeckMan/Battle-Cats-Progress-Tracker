@@ -1,0 +1,128 @@
+:''For other uses, see [[Kaoru (disambiguation)]].''
+'''Kaoru Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a Stamp Reward during the [[Rurouni Kenshin Collaboration Event]]. It was added in [[Version 13.4 Update|Version 13.4]].
+
+{{Cat Info
+|ID = 753
+|rarity = EX
+|name1 = Kaoru Cat
+|name2 = Swordscat Kaoru
+}}
+
+==Evolution==
+Evolves into '''Swordscat Kaoru''' at level 10.
+
+==Strategy/Usage==
+Kaoru Cat suffers from having an awkward mix of stats, like a hybrid between a meatshield and a crowd-controller. This means that it isn't great at doing either, having range that is too high to protect melee units like [[Teacher BearCat (Rare Cat)|Assassin BearCat]], but not high enough to stay safe if the enemies push forward. For this reason, it's better to use either [[Flower Cat (Special Cat)|Bombercat]], who can just freeze Dark enemies at a higher range, [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]], who has a much more consistent weaken at a higher range, on top of targetting all non-[[:Category:Metal Enemies|Metal]] enemies, or [[Neko Rin (Rare Cat)|Neko Rin]], who has a higher dodge chance, lower recharge time and lower cost. It's also worth noting that Kaoru Cat has [[Single Attack]], which is obviously a poor choice for an anti-[[:Category:Dark Enemies|Dark]] unit, since Dark enemies are typically spammed.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 753
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni753 f00.png
+|Image2 = Uni753 c00.png
+|Name1 = Kaoru Cat
+|Desc1 = Head instructor of a swordscatship dojo<br>which still hasn't had a single student as of yet.<br>Rarely Weakens Dark, Dodges attacks.
+|Name2 = Swordscat Kaoru
+|Desc2 = A novice cook and sword instructor, striving to teach<br>a new generation the Sword that Gives Life.<br>Rarely Weakens Dark, Dodges attacks.
+|Name1 (JP) = ネコ薫 (Neko Kaoru, Kaoru Cat)
+|Desc1 (JP) = 剣術道場の師範代に憧れるネコ<br>道場を開いたはいいものの門下生はまだいない<br>まれに黒い敵の攻撃力を下げ、攻撃を無効化する
+|Transl1 (JP) = A Cat who admires the deputy master of a swordsmanship dojo<br>Despite opening its own dojo, has no students yet<br>Occasionally lowers the attack power of Dark enemies and nullifies attacks
+|Name2 (JP) = 剣術小町ネコ薫 (Kenjutsu Komachi Neko Kaoru, Kenjutsu Komachi Kaoru Cat)
+|Desc2 (JP) = ネコを活かす剣を教える剣術道場の<br>師範代になったネコ。料理の腕は門下生レベル<br>まれに黒い敵の攻撃力を下げ、攻撃を無効化する
+|Transl2 (JP) = A Cat who became the deputy master of a swordsmanship dojo<br>teaching sword techniques honoring Cats. Its cooking skills are at the level of its students<br>Occasionally lowers the attack power of Dark enemies and nullifies attacks
+|Name1 (TW) = 神谷薰貓
+|Desc1 (TW) = 崇拜劍術道場代理師父的貓咪<br>雖然開設了道場，但還沒有弟子<br>有機會使黑色敵人攻擊力下降，攻擊無效化
+|Name2 (TW) = 劍道之花神谷薰貓
+|Desc2 (TW) = 在教導以劍救貓的劍術道場擔任<br>代理師父的貓咪。廚藝則還是新手等級<br>有機會使黑色敵人攻擊力下降，攻擊無效化
+|Name1 (KR) = 고양이 카미야 카오루
+|Desc1 (KR) = 검술 도장의 사범 대리를 동경하는 고양이<br>도장을 운영 중이지만 아직 문하생은 없다<br>드물게 검은 적의 공격력을 낮추고 공격을 무효화한다
+|Name2 (KR) = 미녀 검술가 고양이 카오루
+|Desc2 (KR) = 고양이를 살리는 검을 가르치는 검술 도장의<br>사범 대리가 된 고양이. 요리 실력은 문하생 수준<br>드물게 검은 적의 공격력을 낮추고 공격을 무효화한다
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kaoru Cat
+|Normal Base HP = 700
+|Normal Base AP = 120
+|Normal Range = 220
+|Normal Foreswing = 26
+|Normal Attack Cooldown = 43
+|Normal Attack Length = 46
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 520
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Weaken}} 20% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Dodge Attack}} 20% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Swordscat Kaoru
+|Evolved Base HP = 700
+|Evolved Base AP = 120
+|Evolved Range = 220
+|Evolved Foreswing = 26
+|Evolved Attack Cooldown = 43
+|Evolved Attack Length = 46
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 520
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Weaken}} 20% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Dodge Attack}} 20% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 700 HP
+|val-Normal-Attack Power = 120 damage<br>(52.17 DPS)
+|val-Normal-Attack Range = 220
+|val-Normal-Attack Frequency = 69f <sub>2.3 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 26f <sup>0.87s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Normal-Recharge Time = 17.33 ~ 8.53 seconds
+|val-Normal-MaxHP = 11,900 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(886.96 DPS)
+|val-Evolved-Health = 11,900 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(886.96 DPS)
+|val-Evolved-Attack Range = 220
+|val-Evolved-Attack Frequency = 69f <sub>2.3 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 26f <sup>0.87s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 17.33 ~ 8.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni753 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/754.html
+
+----
+{{CatNav|Kenshin Cat|Akechi Mitsuhide}}
+----
+
+{{Rurouni Kenshin}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]
+[[Category:Cats with Weaken ability]]

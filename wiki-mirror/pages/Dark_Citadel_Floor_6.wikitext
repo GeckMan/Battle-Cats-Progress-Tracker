@@ -1,0 +1,42 @@
+{{EnemiesAppearing|Doge Dark|Gory Dark|Lucky Dags}}
+:''Not to be confused with the [[Heavenly Tower/Floor 6|Heavenly Tower]] or [[Infernal Tower/Floor 6|Infernal Tower]] versions of Floor 6.''
+'''Floor 6''' is the sixth floor of [[Dark Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 05 v en.png]]
+|stage location = [[File:Mapname002 v en 2.png]]
+|energy = 120
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|Doge Dark|100%
+|Gory Dark|100%}}
+|boss = {{Magnification|Lucky Dags|100%}}
+|treasure = - 400,000 XP (100%, 1 time)
+|XP = 2,280 XP
+|width = 5,400
+|max enemies = 30
+|jpname = 6th Floor
+|script = 6階
+|romaji = 6 Kai
+|star = 1
+|event-chapter = [[Dark Citadel]]
+|difficulty = ★5
+|prev stage = [[Dark Citadel/Floor 5|Floor 5]]
+|next stage = [[Dark Citadel/Floor 7|Floor 7]]
+}}
+
+==Battleground==
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Gory Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Lucky Dags]] spawns as the boss.
+**3 [[Gory Dark]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+Although the Lucky Dags may look threatening, its single target makes it so one can just spam meatshields and DPS units to beat this stage easily.
+
+==Reference==
+*https://battlecats-db.com/stage/s07002-06.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

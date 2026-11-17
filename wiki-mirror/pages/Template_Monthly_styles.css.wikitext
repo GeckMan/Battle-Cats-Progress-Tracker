@@ -1,0 +1,8 @@
+.ranger-navbox.monthly {
+	--bg-navbox-title: linear-gradient(to right, hsl(50, 67%, 51%) 0%, hsl(50, 86%, 51%) 50%, hsl(50, 67%, 51%) 100%);
+	--bg-sub-table-title: #dcc44c;
+	--bg-group-name: #e4d277;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

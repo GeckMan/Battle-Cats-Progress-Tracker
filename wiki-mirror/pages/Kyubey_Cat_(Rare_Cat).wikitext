@@ -1,0 +1,138 @@
+'''Kyubey Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtaineed when beating any stage in [[Puella Magi Madoka Magica Collaboration Event#Be A Magical Girl II|Be a Magical Girl II]] during the [[Puella Magi Madoka Magica Collaboration Event]]. It was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 301
+|rarity = RR
+|name1 = Kyubey Cat
+|name2 = Tank Kyubey Cat
+}}
+
+==Evolution==
+Evolves into '''Tank Kyubey Cat''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role without relevant differences in quality. Kyubey Cat, however, is unique in that it can sometimes survive a lethal strike for a negligible extra cost of 15¢, plus it can be used in {{4c}} stages, where there is considerably less competition.
+
+==='''Evolved Form'''===
+Kyubey Tank gains extra stats but less speed; however, this does not make it worth the cost increase, as its health still remains very low and even irrelevant during [[Uncanny Legends]] and other late parts of the game. Because of this, the Normal Form should always be used over the Evolved Form.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 301
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni301 f00.png
+|Image2 = Uni301 c00.png
+|Name1 = Kyubey Cat
+|Desc1 = A ruthless Cat wearing a cute animal costume.<br>Seeking girls who have a wish they want granted.<br>Might Survive a lethal attack.
+|Name2 = Tank Kyubey Cat
+|Desc2 = A ruthless Cat wearing a cute animal costume.<br>Evolved for improved stylishness and adorability.<br>Might Survive a lethal attack.
+|Name1 (JP) = ネコキュゥべえ (Neko Kyūbē, Kyubey Cat)
+|Desc1 (JP) = 可愛い小動物の皮をかぶった冷酷なネコ<br>叶えたい望みがある少女を探している<br>たまに生き残る
+|Transl1 (JP) = Ruthless cat in the clothing of a cute little animal<br>Looking for a little girl who has a wish she wants to fulfill<br>Sometimes survives
+|Name2 (JP) = タンクキュゥべえ (Tanku Kyūbē, Tank Kyubey)
+|Desc2 (JP) = 可愛い小動物の皮をかぶった冷酷なネコ<br>進化してずぶとさに磨きをかけた<br>たまに生き残る(範囲攻撃)
+|Transl2 (JP) = Ruthless cat in the clothing of a cute little animal<br>Evolved and refined to the point of obstinacy<br>Sometimes survives (ranged attacks)
+|Name1 (TW) = 丘比貓
+|Desc1 (TW) = 一隻披著可愛動物毛皮的冷酷貓咪<br>尋找著有願望等待實現的少女<br>有時候會死前存活
+|Name2 (TW) = 坦克丘比
+|Desc2 (TW) = 一隻披著可愛動物毛皮的冷酷貓咪<br>進化後更加精練了！<br>有時候會死前存活(範圍攻擊)
+|Name1 (KR) = 고양이 큐베
+|Desc1 (KR) = 귀여운 동물의 가죽을 쓴 냉혹한 고양이<br>이루고 싶은 소망을 가진 소녀를 찾고 있는 중<br>가끔씩 살아남는다
+|Name2 (KR) = 탱크 큐베
+|Desc2 (KR) = 귀여운 동물의 가죽을 쓴 냉혹한 고양이<br>진화하여 몸무게로 승부를 겨루고자 한다<br>가끔씩 살아남는다 (범위 공격)
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 60¢
+*Chapter 2: 90¢
+*Chapter 3: 120¢
+
+===Evolved Form===
+*Chapter 1: 120¢
+*Chapter 2: 180¢
+*Chapter 3: 240¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kyubey Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 60
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Survive}} 40% chance to [[Survive|survive]] a lethal strike
+|Evolved Name = Tank Kyubey Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 2
+|Evolved Range = 110
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 19
+|Evolved Speed = 7
+|Evolved KB = 1
+|Evolved Cost = 120
+|Evolved Recharge = 240
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Survive}} 40% chance to [[Survive|survive]] a lethal strike
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 35 damage<br>(15.67 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(11f <sup>0.37s</sup> backswing)
+|val-Evolved-Recharge Time = 8 ~ 2 seconds
+}}
+
+{{UnitViewer|cat|bg=Bg038.png}}
+
+{{Gallery|Uni301 f00}}
+
+==Trivia==
+*Prior to [[Version 10.9 Update|Version 10.9]], Kyubey Cat was obtained from the old versions of Witch's Labyrinth: Rose Garden Witch, Witch's Labyrinth: Dessert Witch and Witch's Labyrinth: Box Witch, which only had 2 stages, were all identically named "Witch's Labyrinth", and dropped Kyubey Cat instead of XP.
+
+==Reference==
+*https://battlecats-db.com/unit/302.html
+
+----
+{{CatNav|Li'l Homura|Lilith Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Lethal Strike Resistant Cats]]

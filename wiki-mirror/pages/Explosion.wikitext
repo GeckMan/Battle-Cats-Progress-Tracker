@@ -1,0 +1,35 @@
+:''Not to be confused with [[Wave Attack]]s or [[Surge Attack]]s.''
+'''Explosions''' (爆波, ''Bakuha'', '''Explosive Waves''') are a [[Special Abilities|special ability/effect]] in [[The Battle Cats]]. They can be created by certain [[:Category:Explosion Cats|Cat Units]] and [[:Category:Explosion Enemies|Enemy Units]] at a set chance. This ability was added in [[Version 13.7 Update|Version 13.7]].
+[[File:14.4 Explosion.gif|thumb|right|[[Perry Duche]] creating an Explosion]]
+
+==Explanation==
+Like [[Wave Attack]]s and [[Surge Attack]]s, Explosions hit all enemies/cats in their range, but don't affect bases (excluding [[:Category:Animated Enemy Bases|animated ones]] not immune to it, in which they're hit by the blast that hits first, but not any subsequent blasts), and their damage is based on their creator's attack power; they will also retain any special ability/effect that the original attack had. Explosions differ in that they consist of a three-part blast that expands left and right rather than just moving forward or staying in one spot. The blasts each have a 10f / 0.33s startup delay and remain on the battlefield for 15f / 0.5s.
+*10f / 0.33s after the triggering attack the initial blast covers an area of 150 Range and deals 100% of the user's attack power as damage. It pierces 75 range forward from where it spawned and 75 range backward to cover the area of 150 as previously mentioned.
+*10f / 0.33s after the first blast, two more blasts appear covering the next 100 range to the left & right of the initial blast, dealing 70% of the initial attack's damage.
+*10f / 0.33s after the second set of blasts, another two appear covering the next 100 range on either side, dealing 40% of the initial attack's damage.
+
+So in total, the Explosion ability has a forward and backward piercing range of 275, totaling up to 550 range.
+
+Unlike Waves and Surges, Explosions do not have levels. The only variable they have is their '''spawn point''', which differs from unit to unit, and therefore affects their potential coverage.
+
+Despite looking similar, Explosions are '''entirely separate''' from Waves and Surges; abilities like [[:Category:Cats with Wave Immunity|Immune to Waves]] and [[:Category:Counter-Surge Cats|Counter-Surge]] are irrelevant against Explosions.
+
+==Notes==
+*Explosions are only generated if their user's attack connects with an opposing unit or base.
+*Explosions operate at a delay, and they have a separate hitbox from the attack which triggered them, meaning that if the unit which created the Explosions is knocked back, killed, or interrupted in any way after triggering the Explosion, the Explosions will still spawn and deal damage independently.
+*[[:Category:Cats with Explosion Immunity|Units with "Immune to Explosions" abilities]] take no damage from Explosions. However, they are still vulnerable to the attack that generates the Explosion.
+*Explosions carry any other [[Special Abilities|abilities]] that the original hit has. For example, [[Master of Life Dr. Nova (Special Cat)|Master of Life Dr. Nova]]'s Explosions can slow and curse Traited enemies, deal 1.2x damage against [[:Category:Sage Enemies|Sages]] and ignore Sages' resistances.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Skill021.png|Sprites of a Cat Unit's Explosion
+Skill022.png|Sprites of an Enemy Unit's Explosion
+Nova Explosion.gif|[[Sage of Life Dr. Nova]] creating an Explosion (pre-[[Version 14.4 Update|14.4]])
+</gallery>
+
+==Trivia==
+*[[Sage of Life Dr. Nova]] and [[Master of Life Dr. Nova (Special Cat)|Master of Life Dr. Nova]] were the first enemy and Cat respectively to have Explosion Attacks.
+*Prior to [[Version 14.4 Update|Version 14.4]], the third blasts of an Explosion were visually larger, though they still covered the same range.
+
+[[Category:Game Features]]
+[[Category:Special Abilities]]

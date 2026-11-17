@@ -1,0 +1,42 @@
+{{EnemiesAppearing|B.B.Bunny|Sir Seal|Pigge|Heavenly Hippoe}}
+'''Floor 3''' is the third floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 02 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 40
+|enemy castle hp = 15,000 HP
+|enemies = {{Magnification|B.B.Bunny|100%
+|Sir Seal|100%
+|Pigge|100%}}
+|boss = {{Magnification|Heavenly Hippoe|10%}}
+|treasure = - [[Battle Items#Rich Cat|Rich Cat]] +2 (100%, 1 time)
+|XP = 760 XP
+|width = 4,800
+|max enemies = 10
+|jpname = 3rd Floor
+|script = 3階
+|romaji = 3 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★2
+|prev stage = [[Golden Tower/Floor 2|Floor 2]]
+|next stage = [[Golden Tower/Floor 4|Floor 4]]
+}}
+
+==Battleground==
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 20 seconds<sup>600f</sup>, delay 2~10 seconds<sup>60f~300f</sup>.
+*Infinite [[Sir Seal]]s spawn after 60 seconds<sup>1,800f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*Infinite [[Pigge]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Heavenly Hippoe]] spawns as the boss.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 3#Strategy|Floor 3]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-03.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

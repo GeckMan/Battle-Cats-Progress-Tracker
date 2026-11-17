@@ -1,0 +1,118 @@
+{{JPExclusive}}
+'''Kamen Rider Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Shin Japan Heroes Universe Collaboration Event#Rescue! Kamen Rider Cat|Rescue! Kamen Rider Cat]]. It was added in [[Version 12.2 Update|Version 12.2]].
+
+{{Cat Info
+|ID = 701
+|rarity = RR
+|name1 = Kamen Rider Cat
+|name2 = Shin Kamen Rider Cat
+}}
+
+==Evolution==
+Evolves into '''Shin Kamen Rider Cat''' at level 10.
+
+==Strategy/Usage==
+Kamen Rider Cat can be described as a weaker version of [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] but with better range. However, the thing that brings it down from decent to bad is its Single Target. Single Target makes its Long Distance ability worse than useless, since it means it likely won't be able to take advantage of its piercing range. As previously mentioned, Courier Cat is a much, much better alternative.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 701
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni701 f00.png
+|Image2 = Uni701 c00.png
+|Name1 (JP) = にゃんこ仮面ライダー (Nyanko Kamen Raidā, Cat Kamen Rider)
+|Desc1 (JP) = 憧れのヒーロー「仮面ライダー」になりきるネコ<br>組織からオーグメンテーションを受けたと話している<br>赤い敵に打たれ強く、超ダメージを与える(遠方攻撃)
+|Transl1 (JP) = A Cat who became its admired hero "Kamen Rider"<br>Says that it received augmentation from the organization<br>Tough against Red enemies, deals Super damage (Long Range Attack)
+|Name2 (JP) = シン・仮面ライダーにゃんこ (Shin・Kamen Raidā Nyanko, True・Kamen Rider Cat)
+|Desc2 (JP) = 憧れのヒーロー「仮面ライダー」になりきるネコ<br>普通自動二輪免許取得のため教習所に通っている<br>赤い敵に打たれ強く、超ダメージを与える(遠方攻撃)
+|Transl2 (JP) = A Cat who became its admired hero "Kamen Rider"<br>Goes to driving school for a regular motorcycle license<br>Tough against Red enemies, deals Super damage (Long Range Attack)
+}}
+
+==Cost==
+*Chapter 1: 450円
+*Chapter 2: 675円
+*Chapter 3: 900円
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kamen Rider Cat
+|Normal Base HP = 290
+|Normal Base AP = 390
+|Normal Range = 300
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 95
+|Normal Attack Length = 93
+|Normal Speed = 11
+|Normal KB = 2
+|Normal Cost = 450
+|Normal Recharge = 520
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 150~400)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Shin Kamen Rider Cat
+|Evolved Base HP = 290
+|Evolved Base AP = 390
+|Evolved Range = 300
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 95
+|Evolved Attack Length = 93
+|Evolved Speed = 11
+|Evolved KB = 2
+|Evolved Cost = 450
+|Evolved Recharge = 520
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 150~400)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 290 HP
+|val-Normal-Attack Power = 390 damage<br>(89.31 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(57f <sup>1.9s</sup> backswing)
+|val-Normal-Recharge Time = 17.33 ~ 8.53 seconds
+|val-Normal-MaxHP = 4,930 HP
+|val-Normal-MaxAttack = 6,630 damage<br>(1,518.32 DPS)
+|val-Evolved-Health = 4,930 HP
+|val-Evolved-Attack Power = 6,630 damage<br>(1,518.32 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(57f <sup>1.9s</sup> backswing)
+|val-Evolved-Recharge Time = 17.33 ~ 8.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni701 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/702.html
+
+----
+{{CatNav|Ancient Egg: N005|Cat Godzilla}}
+----
+
+{{Shin Japan Heroes Universe}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

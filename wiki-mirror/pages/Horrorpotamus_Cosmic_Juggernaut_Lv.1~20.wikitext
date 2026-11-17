@@ -1,0 +1,427 @@
+<tabber>
+Cosmic Juggernaut 1~10=
+{{EnemiesAppearing|Zoge|Heavenly Hippoe|Camelle|Super Hyppoh}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn009 00 a en.png]]
+|stage location = [[File:Mapname035 a en.png]]
+|enemies = {{Magnification|Zoge|0
+|Heavenly Hippoe|0
+|Camelle|0}}
+|boss = {{Magnification|Super Hyppoh|0}}
+|restriction = [[No Continues]]
+|width = 5,200
+|max enemies = 6
+|jpname = Invasion Lv.X
+|script = 侵略Lv.X
+|romaji = Shinryaku Lv.X
+|event = [[Horrorpotamus]]
+|event-chapter = [[Horrorpotamus]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*Infinite [[Zoge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*2 [[Heavenly Hippoe]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Super Hyppoh]] spawns as the boss.
+**3 [[Heavenly Hippoe]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Camelle]] spawns.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Cosmic Juggernaut
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! rowspan="2" style="text-align: center;" |Continuation Chance [[Horrorpotamus/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Super Hyppoh]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Camelle]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|45,000%
+|200%
+|250%
+|250%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|50,000%
+|211%
+|267%
+|267%
+|60
+|Bricks +5
+|1,140
+|3%
+|-
+! scope="row" |3
+|55,000%
+|222%
+|284%
+|284%
+|70
+|XP +500,000
+|1,330
+|7%
+|-
+! scope="row" |4
+|60,000%
+|233%
+|301%
+|301%
+|70
+|Coal +5
+|1,330
+|11%
+|-
+! scope="row" |5
+|65,000%
+|244%
+|318%
+|318%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|70,000%
+|255%
+|335%
+|355%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|75,000%
+|266%
+|352%
+|352%
+|90
+|Feathers +5
+|1,710
+|21%
+|-
+! scope="row" |8
+|80,000%
+|277%
+|369%
+|369%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|85,000%
+|288%
+|386%
+|386%
+|100
+|Gold +5
+|1,900
+|27%
+|-
+! scope="row" |10
+|90,000%
+|300%
+|400%
+|400%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+Even though there's not really much going on in these set of ten stages, Super Hyppoh is still a menace of a pusher, so don't get too relaxed.
+
+==='''Recommended Units'''===
+*[[Teacher BearCat (Rare Cat)|Cadaver BearCat]]: Removes Zoges before they can interfere too much.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Your main saving grace to prevent Super Hyppoh from doing too much. The generous startoff means you can freely stack two Cyberpunks to just wall Hyppoh forever after you hit the base.
+*[[Red Riding Mina (Special Cat)|Awakened Mina]]: Good non-Uber sniper to deal with Camelle.
+
+==='''Recommended Ubers'''===
+*Snipers in general are valuable to try and remove Camelle quickly. [[Sea Serpent Daliasan (Uber Rare Cat)|Sea King Daliasan]], [[Radiant Aphrodite (Uber Rare Cat)|Megaphrodite]], [[Child of Destiny Phono (Uber Rare Cat)|King of Destiny Phonoa]], and [[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]] are good units to use here.
+
+|-|
+Cosmic Juggernaut 11~20=
+{{EnemiesAppearing|Trolly Blogger|Doge Dark|Super Hyppoh|Tackey|Celeboodle|Croconator}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn009 00 a en.png]]
+|stage location = [[File:Mapname035 a en.png]]
+|enemies = {{Magnification|Trolly Blogger|0
+|Doge Dark|0
+|Tackey|0
+|Celeboodle|0
+|Croconator|0}}
+|boss = {{Magnification|Super Hyppoh|0}}
+|restriction = [[No Continues]]
+|width = 6,200
+|max enemies = 12
+|jpname = Invasion Lv.X
+|script = 侵略Lv.X
+|romaji = Shinryaku Lv.X
+|event = [[Horrorpotamus]]
+|event-chapter = [[Horrorpotamus]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*Infinite [[Trolly Blogger]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Super Hyppoh]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*2 [[Tackey]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 80 seconds<sup>2,400f</sup>.
+*3 [[Celeboodle]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+*2 [[Croconator]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*3 [[Croconator]]s spawn after 146.67 seconds<sup>4,400f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*2 [[Croconator]]s spawn after 233.33 seconds<sup>7,000f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Cosmic Juggernaut Lv.
+! colspan="7" style="text-align: center;" |Strength Magnifications
+! rowspan="3" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! colspan="3" rowspan="2" |Continuation Chance
+|-
+! colspan="2" scope="col" style="text-align: center;" |[[Super Hyppoh]]
+! rowspan="2" scope="col" |[[Trolly Blogger]]
+! rowspan="2" scope="col" |[[Doge Dark]]
+! rowspan="2" scope="col" |[[Tackey]]
+! rowspan="2" scope="col" |[[Celeboodle]]
+! rowspan="2" scope="col" |[[Croconator]]
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+![[Horrorpotamus/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+![[Horrorpotamus/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+![[Horrorpotamus/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|90,000%
+|70,000%
+|300%
+|1,200%
+|200%
+|1,000%
+|130%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|95,556%
+|72,222%
+|333%
+|1,267%
+|222%
+|1,057%
+|138%
+|120
+|Beast Bones +5
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|101,112%
+|74,444%
+|366%
+|1,334%
+|244%
+|1,134%
+|146%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|106,668%
+|76,666%
+|399%
+|1,401%
+|266%
+|1,201%
+|154%
+|140
+|Sprockets +5
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|112,224%
+|78,888%
+|432%
+|1,468%
+|288%
+|1,268%
+|162%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|117,780%
+|81,110%
+|465%
+|1,535%
+|310%
+|1,335%
+|170%
+|200
+|Ammonite +5
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|123,336%
+|83,332%
+|498%
+|1,602%
+|332%
+|1,402%
+|178%
+|200
+|Meteorite +15
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|128,892%
+|85,554%
+|531%
+|1,669%
+|354%
+|1,469%
+|186%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|134,448%
+|87,776%
+|564%
+|1,736%
+|376%
+|1,536%
+|194%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|140,000%
+|90,000%
+|600%
+|1,800%
+|400%
+|1,600%
+|200%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+Notably, everything in this stage spawns on a timer, and can be cheesed by spamming specific boosted DPS units like Can Can (preferably boosted by Attack Up Combos) to destroy the base before Super Hyppoh spawns.
+
+The likes of [[Jetpack Cat (Rare Cat)|Jetpack Cat]], [[Slime Cat (Rare Cat)|Jelly Dumpling Cat]], and [[Elder Mask Doron (Special Cat)|Awakened Doron]] indeed ease the stage, but Super Hyppoh's pushing power is no laughing matter when other enemies enter the fray, and so she remains a difficult adversary even until this day.
+
+==='''Recommended Units'''===
+*[[Jetpack Cat (Rare Cat)|Jetpack Cat]]: The largest source of powercreep for Super Hyppoh, Jetpack walls Hyppoh for a very long time owing it to his [[Colossus Slayer]] combined with his [[Resistant|Resistance]] against Aliens. Jetpack also targets Black, so the Tackeys and Doge Darks aren't of much concern either. The only thing he's vulnerable to here is Celeboodle, whose high damage will ensure an instant kill on Jetpack. Research Combos can further improve Jetpack's effectiveness.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: With his Slow Talent fully upgraded, Cyberpunk can help stalling all threats here by engaging and impeding them at extreme range. Just make sure not to let the Tackeys push too hard, or he'll be a thing of the past.
+*[[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]]: Combines very well with Cyberpunk to give even stronger crowd-control against Hyppoh. Despite having Single Attack and low Slow Uptime, Sniper's attacks also have the Knockback ability to recover ground against Super Hyppoh.
+*[[Crazed Cat (Super Rare Cat)|Crazed Cat]]/[[Crazed Tank Cat (Super Rare Cat)|Manic Eraser]]: Crazed Cat and Manic Eraser have the same speed, meaning with good timing you can alternate them to stall Hyppoh, however they die easily to every enemy here. Once Jetpack Cat is obtained, they can be ditched altogether.
+*[[Rover Cat (Rare Cat)|Catellite]]: With Tackey messing stuff up, you'll need to run a third meatshield assuming you don't have Jetpack. At level 42 with your Cats of the Cosmos [[Enigma Fruit]] Treasures maxed from all 3 chapters, Catellite is able barely survive a single Hyppoh hit, but on such low health that even Trolly Blogger can kill it. Boost further for best results.
+*[[Stone Cat (Rare Cat)|Stone Cat]]: Powerful staller who can give relief to the persistent pushing power present in this perplexingly painful level due to having extreme health and Slow Immunity.
+*[[Metal Cat (Super Rare Cat)|Metal Cat]]: For those lucky enough to own Metal Cat, he is incredibly good here, as he can deny a large number of hits from Super Hyppoh and Celeboodle thanks his Metal ability, which allows him to take only 1 damage from all non-Critical hits. Having 12 HP means he won't last too long, but he's still helpful to have around.
+*[[Ancient Egg: N005 (Special Cat)|Hitman Cat]]: A strong unit whose main purpose is removing Celeboodle, but won't contribute much more than that and can be replaced by other units.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Very consistent attacker who can deal with supporting peons and clear out Trolly Bloggers.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: Not the most consistent unit, but assuming you don't have much in your arsenal Pizza gets strong value if he can connect onto the peons. His [[Wave Attack]] [[Talents|Talent]] is also able to hit Tackey if you're lucky enough.
+*[[Slime Cat (Rare Cat)|Slime/Jelly Dumpling Cat]]: Can abuse Croconator and Celeboodle to unleash a powerful Wave Attack. If you have Slime's True Form, he becomes even better through his increased Wave level, allowing him to even hit Tackey if the stars align right. Using Jelly Dumpling with a well-timed Thunderbolt can even turn a losing battle on its heel as it cripples the peons and chips Super Hyppoh.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Strong unit to deal with Celeboodle and Doge Dark for [[Money Up]], but pretty useless against everything else, as its 5 knockbacks and long foreswing prevents it from actually hitting Super Hyppoh.
+*[[Express Cat (Super Rare Cat)|Bullet Train]]: Free damage to remove any one threat present, whether that be Celeboodle, Doge Dark, or Hyppoh herself. Make sure to time it well, because it dies to a single hit by most enemies at higher gauntlet levels.
+*Talented [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]]: Another unit similar to Can Can Cat whose main purpose will be to remove Doge Dark. Orb farmers reap extra rewards here, since at level 50, with max HP talent and a Grade A Alien Defense Up orb, Heavy Assault C.A.T. survives a Super Hyppoh hit. It's perfectly fine if you don't have this luxury available, though.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: Another source of powercreep, Awakened Doron is a kamikaze unit whose extreme health, Immunities and 600-range Omni Strike ensures his attack will usually connect and spawn his level 3 Surge, which, while inconsistent, can deal fairly high damage combined with Colossus Slayer.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: Much like Doron, Naala's True Form has Colossus Slayer that improves its matchups versus Super Hyppoh, with LD attacks that can potentially snipe Tackey behind her. Its lower range also works in its favor to avoid Tackey's attacks.
+*[[Urs & Fenrir (Special Cat)|Awakened Urs]]: Similar to Awakened Naala, but requires more caution as Tackey is able to hit them.
+*[[Ancient Egg: N108 (Super Rare Cat)|Soap Cat]]: Similar to Jetpack Cat, Soap Cat is a high-health unit that can tank Hyppoh as well as [[Weaken]] her to benefit your other units, but doesn't work as well as Jetpack as Doge Darks and Celeboodles will melt through it in seconds.
+*[[Li'l Lizard Cat (Special Cat)|Talented Li'l King Dragon Cat]]: Strong backliner unit that outranges Super Hyppoh. Only use if boosted and Talented properly.
+
+==='''Recommended Ubers'''===
+*Ubers from the [[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|ELEMENTAL PIXIES]] gacha: Notably [[Bora (Uber Rare Cat)|Bazibastra]], [[Voli (Uber Rare Cat)|Gigavolta]], [[Gravi (Uber Rare Cat)|Gravolodon]], [[Bliza (Uber Rare Cat)|Blizarena]] and [[Lumina (Legend Rare Cat)|Luminalia]] help a ton against Hyppoh. You'll need to boost them, though; level 30 units won't be nearly enough to handle these stages. [[Mizli (Uber Rare Cat)|Mizli]] finds good use here; her Knockback and Slow can push the boss back, allowing your Tackey counters an opening. Her Ultra Form improves her consistency, as well as dealing a bit of chip damage (100,000+ damage).
+*[[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]]: Deals [[Massive Damage]] to the Tackey, ensuring their quick demise and speeding up this stage by a ton. You will need to create an opening for him, however.
+*[[Yuletide Nurse (Uber Rare Cat)|Xmas Spirit Nurse]]: A very risky unit to use. As she outranges the Hippos omnistrike by 95, and she's able to push the Hippo away for a short time so your units can attack Tackey, and can deal some solid damage to the peons besides Croconator. However, do note that she's very frail, can get sniped by Tackey, and can easily get killed by a slight push. But if you protect her well she can be a decent option.
+*[[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]]: As the Colossus Slayer, Goddess of Sunrise Sirius has a build designed to decimate this level. Her [[Strong Against]] combined with Colossal Slayer gives her great offense and defense against this stage.
+*[[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]]/[[One-Eyed Asuka (Uber Rare Cat)|Blue-Eyed Asuka]]: Delivers high damage against everything, and can abuse the peons as a stepping stone. Blue-Eyed Asuka can work especially well due to her [[Colossus Slayer]].
+*[[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]]: Amazing for stopping the Super Hyppoh and keeping her off your units as they deal with the other units. She also has decent health and damage against her as well, allowing her to be good defense and offense.
+*Ultra Talented [[Warlock and Pierre (Uber Rare Cat)|Mad Doctor Klay]]: For endgame players looking to speedrun this stage, Mad Doctor Klay is absolutely broken here with his high damage vs. Alien, and Colossus Slayer Ultra Talents—his Target Traitless allowing him to kill Celeboodle as well.
+*[[Takeda Shingen (Uber Rare Cat)|Immortal Shingen]]: Able to deal big damage to the Super Hyppoh and Tackey. However you need to clear most peons, as he can't hit all but one of them.
+*[[Imagawa Yoshimoto (Uber Rare Cat)|Immortal Yoshimoto]]: A strong unit for dealing with Tackey. His [[Weaken]] is really effective at debuffing it, making Tackey deal less damage. His [[Strong Against]] ability gives Yoshimoto good damage against Tackey and Dark Doges but also giving him better bulk to withstand Tackey's attacks better. But keep in mind that his base health is very low.
+*[[Musashi Miyamoto (Legend Rare Cat)|Immortal Miyamoto]]: Not held down by his Single Attack here due to the lack of enemies present here. Immortal Miyamoto is able to deal [[Insane Damage]] against the Tackeys, while slowly chipping at Hyppoh with his Colossus Slayer ability.
+*[[Daybreaker Izanagi (Legend Rare Cat)|Dawnbringer Izanagi]]: While he does get outranged by Hyppoh, with stepping stones he can demolish Hyppoh herself and Tackey too. His conjure can also add some breathing room + additional damage to said enemies
+*[[Kyojuro Rengoku (Uber Rare Cat)|Kyojuro Rengoku CC]]: With high speed, good range, and fast attack speed, Rengoku can effectively slip into Tackey's blindspot and deal heavy damage to Super Hyppoh, especially while strengthened.
+*[[Adventurer Kanna (Uber Rare Cat)|Fabled Adventure Girl Kanna]]: Kanna can deal with the Tackeys, dealing massive damage against them, while also outranging Super Hyppoh's Omnistrike.
+
+==Walkthrough==
+{{Walkthrough
+|VSWG_gbYuGk
+|eraser
+|Cheese, uses boosted Super Rares (+8)
+}}
+
+</tabber>
+
+
+==Reference==
+*https://battlecats-db.com/stage/s24035.html
+
+{{SpecialStages List}}
+[[Category:Horrorpotamus Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

@@ -1,0 +1,80 @@
+{{EnemiesAppearing|Incubator|Doge|Snache|Croco|Zoge|Znache|Zroco}}
+'''You Are Naive About War''' is the third stage in [[Puella Magi Madoka Magica Collaboration Event#Be a Magical Girl II|Be a Magical Girl II]].
+
+{{Stage Info
+|stage name = [[File:rc152.png]]
+[[File:Mapsn174 02 c en.png]]
+|stage location = [[File:Mapname174 c en.png]]
+|energy = 100
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Incubator|400%
+|Doge|400%
+|Snache|400%
+|Croco|400%
+|Zoge|50%
+|Znache|50%
+|Zroco|50%}}
+|boss = {{Magnification|Snache|100%}}
+|enemies2 = {{Magnification|Incubator|800%
+|Doge|800%
+|Snache|800%
+|Croco|800%
+|Zoge|100%
+|Znache|100%
+|Zroco|100%}}
+|boss2 = {{Magnification|Snache|200%}}
+|enemies3 = {{Magnification|Incubator|1,200%
+|Doge|1,200%
+|Snache|1,200%
+|Croco|1,200%
+|Zoge|150%
+|Znache|150%
+|Zroco|150%}}
+|boss3 = {{Magnification|Snache|300%}}
+|enemies4 = {{Magnification|Incubator|1,200%
+|Doge|1,200%
+|Snache|1,200%
+|Croco|1,200%
+|Zoge|150%
+|Znache|150%
+|Zroco|150%}}
+|boss4 = {{Magnification|Snache|300%}}
+|treasure = - [[Kyubey Cat (Rare Cat)|Kyubey Cat]] (25%, 1 time)
+|score reward = '''500''': 200,000 XP
+|XP = 3,000 XP
+|width = 5,000
+|max enemies = 30
+|jpname = I Think The Fight Is Too Sweet
+|script = 戦いを甘く考えすぎだよ
+|romaji = Tatakai o Amaku Kangaesugidayo
+|star = 4
+|event = [[Puella Magi Madoka Magica Collaboration Event]]
+|event-chapter = [[Puella Magi Madoka Magica Collaboration Event#Be a Magical Girl II|Be a Magical Girl II]]
+|difficulty = ★5
+|prev stage = [[I Don't Understand You]]
+|next stage = [[So, What Do You Wish For?]]
+}}
+
+==Battleground==
+*1 [[Incubator]] spawns after 6.67 seconds<sup>200f</sup>.
+*10 [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*10 [[Snache]]s (400%) spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*10 [[Croco]]s spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Snache]] (100%) spawns as the boss.
+**5 [[Zoge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**4 [[Znache]]s spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Zroco]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+**3 [[Incubator]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**6 [[Incubator]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**9 [[Incubator]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+
+==Strategy==
+Even on {{4c}}, the mini waves aren't super threatening, and can't reach [[Bahamut Cat (Special Cat)|Bahamut]], so by spamming meatshields and a single Bahamut, you can clear this stage.
+
+==Reference==
+*https://battlecats-db.com/stage/s02174-03.html
+
+{{Puella Magi Madoka Magica}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

@@ -1,0 +1,186 @@
+{{EnemiesAppearing|Bore|Wall Doge|Bakoo|Kang Roo}}
+'''Bombergirl (Deadly)''' is an [[:Category:Advent Stages|Advent Stage]] appearing on the '''9th''', '''10th''', '''23rd''', and '''24th''' of every month. Upon completion, players have a 30% chance to unlock [[Lone Cat and Kitten (Rare Cat)|Lone Cat and Kitten]]. This is a [[No Continues]] stage. It was added in [[Version 7.5 Update|Version 7.5]].
+
+{{Stage Info
+|stage name = [[File:rc003.png]]
+[[File:Mapsn177 00 s en.png]]
+|stage location = [[File:Mapname177 s en.png]]
+|energy = 200
+|catamins = [[Catamin]] [B] x1
+|enemy castle hp = 800,000 HP
+|enemies = {{Magnification|Bore|300%
+|Wall Doge|400%
+|Kang Roo|3,000%}}
+|boss = {{Magnification|Bakoo|100%}}
+|treasure = - [[Lone Cat and Kitten (Rare Cat)|Lone Cat and Kitten]] (30%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|abyssal reward = '''2 Clears:''' [[Catseye]] [Uber Rare] +10<br>
+'''3 Clears:''' [[Catseye]] [Uber Rare] +15<br>
+'''4 Clears:''' [[Catseye]] [Dark] +3<br>
+'''5 Clears:''' [[Catseye]] [Dark] +3
+|width = 4,200
+|max enemies = 10
+|jpname = Bombergirl (Extreme)
+|script = バクダン娘 極ムズ
+|romaji = Bakudan Musume Goku Muzu
+|star = 1
+|event-chapter = Deeply Dreaming
+|difficulty = ★9
+|prev stage = N/A
+|next stage = N/A
+|require = Complete [[Into the Future]] Chapter 3
+|occurrence = 9th, 10th, 23rd and 24th of any month
+}}
+
+==Battleground==
+*1 [[Bore]] spawns after 3.33 seconds<sup>100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Bakoo]] spawns as the boss.
+**2 [[Bore]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+**20 [[Wall Doge]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+**1 [[Kang Roo]] spawns.
+
+==Strategy==
+The key to this stage is to abuse Bakoo's low standing range, health and very high knockback count to constantly force her back before she can even attack, then destroy everything else. You'll need either the normal cannon or Breakerblast to interrupt Bakoo's first attack. Alternatively, you can exploit her low speed by hitting the base with one unit after defeating Bore, then luring the second to your base so you can stack units without fearing further Bakoo attacks. Do not bring fast meatshields.
+
+==='''Recommended Units'''===
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]] - One of the best units for this stage with good stats, LD and massive damage to Red enemies. When well-supported, can tear Bore to pieces and in a small stack can accumulate enough damage to stun-lock Bakoo.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]/[[Nymph Cat (Super Rare Cat)|Nymph Cat]] - Serves a similar purpose to Courier but only as generalist LD attackers.
+*[[Apple Cat (Super Rare Cat)|iCat]]/[[Sushi Cat (Super Rare Cat)|Roe Cat]] - Useful for dealing with Bore while you stack other units. They work better than meatshields, mostly because these keep Bore in place and allow you to actually build up momentum, reducing the risks of either it or Bakoo pushing.
+*[[Flower Cat (Special Cat)|Bombercat]] - Ironically to the stage name, Bombercat is great for disabling Bakoo and giving your units a larger damage window before Bakoo can attack again. You may want to clear out the Bores first, however.
+*[[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]] - Similar to an LD unit, except with no blindspot (provided there is a stepping stone, of course). His waves can help dealing damage to Bakoo, making it easier for your other units to knock her back before she can land an attack.
+*[[Brainwashed Gross Cat (Super Rare Cat)|Brainwashed Sexy Legs]] - Very similar to Crazed Sexy Legs, except with a surge instead of waves, which can be slightly less consistent, but it works.
+*[[Pirate Cat (Rare Cat)|Dread Pirate Catley]] - One of the very best ways to deal with the Bore. With his extremely consistent Knockback ability, high range, and quick cooldown, you can quickly build a big stack of him on the starting Bore and stack LD attackers like Courier Cat or Vaulter/Nymph Cat on it, practically disabling Bakoo once you hit the base.
+*[[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]] - Can be used as crowd-control for the first Bore, he can replace iCat for this role.
+*[[Matador Cat (Rare Cat)|Matador Cat]] - Can be of particular use for the first Bore, as it Dodge ability can stop him from pushing for a short while. He is also useful during the boss phase, given his naturally decent base HP.
+
+==='''Recommended Ubers'''===
+*[[Hattori Hanzo (Uber Rare Cat)|Hattori Hanzo]] - His fast attack rate and Freeze against Dark allows him to juggle Bakoo relatively easily. Not only that, he himself is Immune to Freeze.
+
+==Missions==
+{{MissionTable
+|{{Mission|Limited Festival Invasion Missions<br>Clear the "Deeply Dreaming" stage!|1 [[Cat Ticket]](s)|catticket|type = special}}
+|{{Mission|Limited Festival Invasion Missions<br>Clear "Deeply Dreaming" 1 times using only unevolved 1st Forms|3 [[Catseye]] [Legend](s)|legendeye|type = special}}
+}}
+
+==Abyssal Strategy==
+The following lineups are designed to work on their own; however, it is recommended and encouraged to add to them as you see fit. Certain [[:Category:Uber Rare Cats|Uber Rares]] can dramatically simplify the stage, so don't be afraid to include them alongside these strategies.
+
+{{Lineup
+|Manic Macho Legs|30
+|iCat|30
+|Quarterback Cat|30
+|name = Lineup 1
+}}
+
+'''Difficulty:''' ★☆☆☆☆
+
+'''Battle:''' When Bore is about to reach your base, send out iCat to Freeze him and tank a hit. Bore will knock iCat behind the base, where you can then wait out the rest of his recharge to achieve a permafreeze. Then, stack Quarterback Cats to hell and back; they are surprisingly competent as snipers and directly target Bakoo. Once you reach about 8 of them, start spamming Manic Macho Legs and even more iCats to quickly finish off Bore and initiate the boss wave. To the save you the trouble of guessing, it is the third Quarterback hit that triggers the boss wave (second at Lv.36+ or when evolved into Gridiron Cat), so time your Cat Cannon/[[Ototo Corps#Breakerblast|Breakerblast]] with that in mind. At this point, just keep swarming the enemies with your units and they will be put soundly to bed.
+
+{{Lineup
+|Doctor Cat
+|Island Cat
+|Manic Island Cat|30
+|Thaumaturge Cat|30
+|Elemental Duelist Cat|30
+|Maglev Cat|30
+|Medalist Cat|30
+|Roe Cat|50
+|name = Lineup 2
+}}
+
+'''Difficulty:''' ★★☆☆☆
+
+'''Battle:''' At Lv.50, Roe Cat will have just enough effective HP to facetank if Bore is Weakened. Keep spamming Roe until two manage to stack up, then spawn a single Thaumaturge Cat and start stacking Medalist Cats. Without [[Battle Items#Rich Cat|Rich Cat]], you will barely generate enough income to support spamming both at a moderate rate, but if push comes to shove, prioritize sending out Roe first. When Bore dies, the instant income will allow you to start spamming Thaumaturge Cats for the boss wave. You don't want your Medalist Cats getting too close to the enemy base since it can ruin the chain, so cycle out Maglev Cat before they reach it (more precisely, moderately ahead of the Roes such that Bore can kill the Maglev and have some time to push up before being walled by them to prevent Bakoo from prematurely starting an attack before the last of the Medalists catch up) and time the Cat Cannon to knock Bakoo out of her attack animation, whereupon you can watch her get stunlocked to death. Cleanup after Bakoo perishes will prove too difficult for Roe and Medalist alone, so start spamming Elemental Duelist Cats and Manic Island Cats to quickly eviscerate the Bores and claim your victory.
+
+{{Lineup
+|Li'l Island Cat
+|Enchantress Cat|30
+|Bellydance Cat|50
+|Pizza Cat|30
+|talent4 = Wave Attack Lv. 10
+|name = Lineup 3
+|notes = If you own [[Evil Cat (Rare Cat)|Gentleman Bros]], he can be used alongside Freeze combos to better control the Bores.
+}}
+
+'''Difficulty:''' ★★★☆☆
+
+'''Battle:''' Admittedly, the opening requires a good string of Bellydance Dodges and Enchantress Slows in order to build up a proper stack of meatshields/crowd-control. Luckily, you're able to exit out of the stage within the first 10 seconds without penalty in case things go south immediately. As soon as things are set up in the meatshielding department, start spawning in Pizza Cats to chip Bore bown while letting your units gradually build up. Once Bore dies, allow the Bellydancers to start the boss wave, but <u>don't reset Bakoo's attack animation this time</u>. You need to build enough space for your Pizza Cats to reach the frontlines before Bakoo does, so let the Kang Roo and Bore make their way to you. Start spamming Enchantress Cats alongside your other cats to make Slow procs more consistent. You've basically won by now, since Bakoo will be knocked back by every single Pizza Wave.
+
+{{Lineup
+|Miss NENEKO
+|Miss Moneko
+|Dread Pirate Catley|30
+|talent3 = Survive Lv. 10
+|Dark Lazer|50
+|talent4 = Wave Attack Lv. 10, Attack Buff Lv. 5, Defense Buff Lv. 5
+|name = Lineup 4
+|notes = Sister Act is not required, but makes the strategy more consistent.
+}}
+
+'''Difficulty:''' ★★☆☆☆
+
+'''Battle:''' Start the battle by spamming Dread Pirate Catleys. If all goes well, Bore will begin knocking them back into each other, creating a makeshift stack that will begin continuously knocking him back. Keep spamming Catleys until you max out on cash, then pivot over to spamming Dark Lazers. These units are very expensive, so you literally cannot afford to spam both without either a Rich Cat or Dark Lazer's Cost Down Talent. Bore should usually die right before making contact with the enemy base, supplying you with enough cash to let you spam both of your units again, and leaving you with a nice stack of Dark Lazers. As always, knock Bakoo out of her attack animation (only happens if Dark Lazer triggers the boss), then watch in awe as, with good enough luck, Dark Lazer completely shreds everything in sight.
+
+{{Lineup
+|Jiangshi Cat
+|Li'l King Dragon Cat
+|Power Driller Cat
+|Prof. Cat Jobs
+|Maximum the Fighter|40
+|Can Can Cat|30
+|Courier Cat|40
+|Housewife Cat|30
+|name = Lineup 5
+|notes = [[Talents|Talented]] [[Ninja Cat (Special Cat)|Flying Ninja Cat]] or [[Bondage Cat (Special Cat)|Bondage Cat]] are superior picks over Maximum the Fighter.
+}}
+
+'''Difficulty:''' ★★☆☆☆
+
+'''Battle:''' Use Prof. Cat Jobs to perma-weaken Bore while he's attacking the Cat Base, then start stacking Housewife Cats. (It's possible to lose here if he dodges Prof. Cat Jobs' attack while rebounding, so keep that in mind.) Once Bore is about to bite the dust, start spamming the rest of your non-combo slaves. Courier Cat will be the one to initiate the boss wave, but <u>don't reset Bakoo's attack animation this time</u>; the space it creates is essential in allowing your units to build up and stunlock her to death. If all goes well, your Can Can Cats will hold Bore off while the rest of your piercers snipe Bakoo to death.
+
+{{Lineup
+|Jiangshi Cat
+|Li'l King Dragon Cat
+|Power Driller Cat
+|Prof. Cat Jobs|30
+|Courier Cat|30
+|Awakened Bahamut Cat|40
+|talent6 = Explosions Lv. 10
+|name = Alternative Baha Blast strategy
+|cannon = Thunderbolt
+}}
+
+'''Difficulty:''' ★★☆☆☆
+
+'''Battle:''' Like any good Advent Stage, Talented Awakened Bahamut Cat can chain the boss to death relatively easily. Permaweaken Bore with Prof. Cat Jobs while he's attacking the Cat Base, then summon Bahamut. As soon as Bahamut kills Bore, send out a Courier Cat to get as far as possible before Bahamut finishes his backswing. Start spamming Jiangshi Cats too.
+
+The following sequence of events should play out in order:
+
+#Bahamut hits the base, creating an Explosion that kills most of the starting peons.
+#He rebounds from the boss shockwave, then hits Bore.
+#Bore hits him.
+#'''Use your Thunderbolt here, that way Bahamut doesn't get hit by Bore again on the following attack.'''
+#Bahamut recoils, hitting Bore again and causing him to stagger.
+#Your Courier Cat moves in front of Bahamut, briefly protecting him from taking another hit.
+#Bahamut and Bore exchange hits at the same time.
+#Bahamut rebounds onto Bore, finally killing him and leaving Bakoo open.
+
+One last Baha Blast should take care of her. Try to take out the enemy base before Bore #2 spawns. If your Bahamut is Lv.50, an entirely different chain will play out, but it should still lead to an identical situation (with Bore dead). However, the Thunderbolt timing needs to be adjusted to after Bore's first stagger.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Sleepy.png|Event Poster (EN)
+</gallery>
+
+==Trivia==
+*Bombergirl's seemingly arbitrary name is a pun that only works in Japanese. The Japanese word for bomb, ''bakudan'', happens to contain the word ''baku'', which can refer to either a [[wikipedia:Malayan tapir|Malayan tapir]], or a [[wikipedia:Baku (mythology)|dream-eating mythical creature]], both of which served as inspirations for [[Bakoo]]'s design.
+*Deeply Dreaming's Japanese name is "Yoru wa Mijikashi Yume Miyo Otome" (夜は短し夢見よ乙女), which can be translated as "Night Is Short, Dream On Maiden"; this is a reference to the novel and animated film ''[[wikipedia:Night Is Short, Walk On Girl|Night Is Short, Walk On Girl]]'' (夜は短し歩けよ乙女), which in turn are based on the 1915 ballad "[[wikipedia:Gondola no Uta|Gondola no Uta]]".
+
+==Reference==
+*https://battlecats-db.com/stage/s01177-01.html
+
+{{Advent}}
+[[Category:Event Stages]]
+[[Category:No Continue Stages]]

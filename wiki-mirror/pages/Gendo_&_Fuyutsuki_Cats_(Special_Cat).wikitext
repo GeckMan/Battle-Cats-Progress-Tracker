@@ -1,0 +1,124 @@
+'''Gendo & Fuyutsuki Cats''' are a [[:Category:Special Cats|Special Cat]] that can be obtained as a [[Daily Bonus|Stamp Reward]] on the 5th day of the [[Neon Genesis Evangelion Collaboration Event]]. They were added in [[Version 6.10 Update|Version 6.10]].
+
+{{Cat Info
+|ID = 403
+|rarity = EX
+|name1 = Gendo & Fuyutsuki Cats
+|name2 = Moon Gendo & Fuyutsuki Cats
+}}
+
+==Evolution==
+Evolves into '''Moon Gendo & Fuyutsuki Cats''' at level 10.
+
+==Strategy/Usage==
+Due to Gendo & Fuyutsuki Cats' weak attack power and health, they won't be good for much other than new players. However, their short cooldown and low cost makes them a decent cat to use as a meatshield, mainly in [[Empire of Cats]] or early 4-crown stages in [[Stories of Legend]].
+
+Overall, Gendo & Fuyutsuki Cats are very similar to [[Tank Cat (Normal Cat)|Tank Cat]], but trade attack speed with attack power.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 403
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni403 f00.png
+|Image2 = Uni403 c00.png
+|Name1 = Gendo & Fuyutsuki Cats
+|Desc1 = Leader and deputy commander of NERV.<br>Out to complete their goal by any means.<br>(Area Attack)
+|Name2 = Moon Gendo & Fuyutsuki Cats
+|Desc2 = On the moon for the final stage of their<br>plan. They trust each other fully.<br>(Area Attack)
+|Name1 (JP) = ネコゲンドウ&ネコ冬月 (Neko Gendō & Neko Fuyutsuki, Cat Gendo & Cat Fuyutsuki)
+|Desc1 (JP) = 特務機関ネルフの最高司令官と副司令官に憧れるネコ<br>ネコ補完計画完遂のためには<br>ありとあらゆる手段を用いる(範囲攻撃)
+|Transl1 (JP) = Cats yearn to be the Supreme Commander and Deputy Commander of the special agency NERV<br>For the completion of the Feline Complementary Programme<br>use all possible means (Ranged Attack)
+|Name2 (JP) = 月のネコゲンドウ&ネコ冬月 (Tsuki no Neko Gendō & Neko Fuyutsuki, Moon Cat Gendo & Cat Fuyutsuki)
+|Desc2 (JP) = 月面を視察する最高司令官と副司令官に憧れるネコ<br>口数は少ないがお互いを信頼している<br>どこに行くにもいつでも一緒(範囲攻撃)
+|Transl2 (JP) = Cats yearn to be the Supreme Commander and Deputy Commander who inspects the moon's surface<br>They trust each other although they don't say much<br>Always together wherever they go (Range Attack)
+|Name1 (TW) = 源堂貓與冬月貓
+|Desc1 (TW) = 嚮往特務機關NERV最高司令和<br>副司令的貓咪，為執行<br>貓咪補完計畫不擇手段(範圍攻擊)
+|Name2 (TW) = 月之源堂貓&冬月貓
+|Desc2 (TW) = 嚮往視察月面的最高司令和<br>副司令的貓咪，話雖少但互相信賴<br>到哪都一起行動(範圍攻擊)
+|Name1 (KR) = 고양이 겐도&후유츠키
+|Desc1 (KR) = 특무 기관 NERV의 최고사령관과 부사령관을 동경하는<br>고양이. 고양이 보완 계획 완수를 위해서는<br>어떠한 수단도 가리지 않는다 (범위 공격)
+|Name2 (KR) = 달의 고양이 겐도&후유츠키
+|Desc2 (KR) = 달의 표면을 감시하는 최고사령관과 부사령관을 동경하는<br>고양이. 대화는 별로 없지만 서로를 매우 신뢰하고 있다<br>어딜가도 언제나 함께 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 150¢
+*Chapter 2: 225¢
+*Chapter 3: 300¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gendo & Fuyutsuki Cats
+|Normal Base HP = 600
+|Normal Base AP = 30
+|Normal Range = 110
+|Normal Foreswing = 39
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 77
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 150
+|Normal Recharge = 300
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Moon Gendo & Fuyutsuki Cats
+|Evolved Base HP = 600
+|Evolved Base AP = 30
+|Evolved Range = 110
+|Evolved Foreswing = 39
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 77
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 150
+|Evolved Recharge = 300
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 30 damage<br>(11.69 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 77f <sub>2.57 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 39f <sup>1.3s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Normal-Recharge Time = 10 ~ 2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 510 damage<br>(198.7 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 510 damage<br>(198.7 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 77f <sub>2.57 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 39f <sup>1.3s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Evolved-Recharge Time = 10 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni403 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/404.html
+
+----
+{{CatNav|Shinji & Cat|Giraffe Unit-01}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Area Attack Cats]]

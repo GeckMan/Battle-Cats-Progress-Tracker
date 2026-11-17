@@ -1,0 +1,333 @@
+'''Delinquent Cat''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]]. It was added in [[Version 2.0 Update|Version 2.0]]. [[True Form]] added in [[Version 7.2 Update|Version 7.2]] increases health and range, reduces recharge time and gains [[:Category:Relic Enemies|Relic]] target and [[Immune to Curse|Curse Immunity]]. [[Talents]] were added in [[Version 9.10 Update|Version 9.10]].
+
+{{Cat Info
+|ID = 31
+|rarity = SR
+|name1 = Delinquent Cat
+|name2 = Angry Delinquent Cat
+|name3 = Ultra Delinquent Cat
+}}
+
+==Evolution==
+Evolves into '''Angry Delinquent Cat''' at level 10.
+
+Evolves into '''Ultra Delinquent Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Delinquent Cat has high health, decent range and high DPS, along with the ability to freeze Floating enemies and a multi-hit to increase his activation chance. Adding onto this, because a lot of short-ranged bosses are [[:Category:Floating Enemies|Floating]], Delinquent Cat is useful for a large number of early stages and, when decently leveled, he can take on many of the [[:Category:Cyclones|Cyclone]], [[Teacher Bun Bun|Bun Bun]] and [[The Face|Face]] variants. However, his use drastically falls off after early-game, as [[Mer-Cat (Rare Cat)|Cameraman Cat]] stacks replace him for DPS, while [[Bishop Cat (Rare Cat)|Sanzo Cat]] or [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]] replace him as anti-Floating crowd-controllers due to their more reliable abilities, shorter cooldown and cheaper cost.
+
+==='''True Form'''===
+Although Ultra Delinquent Cat has higher range, curse immunity, more health and can additionally freeze [[:Category:Relic Enemies|Relic]] enemies, the usefulness of these abilities is questionable due to him still having all the faults of his previous form, which are his low chance to freeze and long recharge time preventing reliable stacking. Most Relics also outrange him, so he can only consistently freeze [[Oldhorn]], [[Relic Doge]], [[Sir Rel]] and the [[Primeval Cyclone]], or in stages where Floating enemies are backed by the [[Relic Doge Base (Enemy Base)|Relic Doge Base]] and you must fight within range of it. You won't be using this True Form often, so it is recommended to prioritize spending your Elder [[Catfruit]] on more versatile units like [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]], [[Ururun Wolf (Special Cat)|Awakened Ururun]] and [[Red Riding Mina (Special Cat)|Awakened Mina]].
+
+However, when it comes to Floating-Relics mixed stages, he proves to be decently useful, an example of this kind of stage is [[Efficient Timewasting]], which has almost all Bun Bun variants, including [[Relic Bun-Bun]].
+
+==='''Talents'''===
+There isn't much to say about Ultra Delinquent Cat's Talents, for all do the same thing: make Delinquent a better generalist. If you do decide to invest in Ultra Delinquent Cat anyways, it is important to mention that at most, with Strengthen and Savage Blow, Ultra Delinquent Cat's DPS can reach up to 7,200, three times that of a typical Super Rare! Do keep in mind that his Savage Blow chance is only 10% at most. Multi-Hit does increase the activation chance of the Savage Blow significantly, but the chances are too low regardless for him to be effective. His relatively low survivability stays, along with the high cost and long cooldown, keeping him below the levels reachable by his competition, notably [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], another Super Rare Crowd-Controlling generalist with Savage Blow as a Talent, who has a lower cooldown, higher standing (and piercing) range and overall more reliability. Overall, Ultra Delinquent Cat is not worth investing into as better generalists and crowd-controllers exist who can easily replace his niche.
+
+==='''Orb'''===
+Attack Up vs Floating or Attack Up vs Relics are the only viable orbs.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Cat High|"Weaken" Effects Up (Sm)|Banner Cat|Delinquent Cat|Maiden Cat|jpname=にゃんこ学園}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 31
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni031 f00.png
+|Image2 = Uni031 c00.png
+|Image3 = Uni031 s00.png
+|Name1 = Delinquent Cat
+|Desc1 = Bizarre and unrivaled bad-boy ruling the Cat schoolyard.<br>Ready to show THE WORLD his spiritual power.<br>Area Attacks might Freeze Floating enemies.
+|Name2 = Angry Delinquent Cat
+|Desc2 = Became the incarnation of rage after Dad ate<br>the last ice cream bar left in the family fridge.<br>Area Attacks might Freeze Floating enemies.
+|Name3 = Ultra Delinquent Cat
+|Desc3 = Unruly Cat who channels pure fury into his fists.<br>Shakes down other toughs for change to buy ice cream.<br>Area Attacks might Freeze Floating & Relics.
+|Name1 (JP) = ネコ番長 (Neko Banchō, Bancho Cat)
+|Desc1 (JP) = 学校では敵無しのちょいワルにゃんこ<br>浮いてる敵をたまに一瞬止める(範囲攻撃)
+|Transl1 (JP) = A tough little Cat with no enemies at school<br>Sometimes stops Floating enemies for a moment (Area Attack)
+|Name2 (JP) = 怒りのネコ番長 (Ikari no Neko Banchō, Angry Bancho Cat)
+|Desc2 (JP) = 冷蔵庫のアイスクリームを父親に<br>食べられて怒りに目覚めたちょいワルにゃんこ<br>浮いてる敵をたまに一瞬止める(範囲攻撃)
+|Transl2 (JP) = A tough little Cat who awakened angrily because<br>his dad ate his ice cream that was in the fridge<br>Sometimes stops Floating enemies for a moment (Area Attack)
+|Name3 (JP) = 押忍！ネコ番長 (Osu! Neko Banchō, "Yes Sir!" Bancho Cat)
+|Desc3 (JP) = 怒りを拳に込めて戦うちょいワルにゃんこ<br>今日も拾い集めたパチンコ玉をアイスと交換<br>浮いてる敵と古代種をたまに一瞬止める(範囲攻撃)
+|Transl3 (JP) = A tough little Cat who fights with his fists full of rage<br>Traded the the pachinko balls today he won for ice cream<br>Sometimes stops Floating enemies and Ancients for a moment (Area Attack)
+|Name1 (TW) = 貓咪番長
+|Desc1 (TW) = 在學校裡沒人是對手的壞貓咪<br>有時候讓飄浮敵人瞬間動作停止（範圍攻擊）
+|Name2 (TW) = 憤怒的貓咪番長
+|Desc2 (TW) = 冰箱裡的冰淇淋被老爸吃掉後<br>就開始變得憤怒的超壞貓咪<br>有時候讓飄浮敵人瞬間動作停止（範圍攻擊）
+|Name3 (TW) = 押忍！貓咪番長
+|Desc3 (TW) = 將怒氣握滿拳頭的小壞壞貓<br>今天也撿了很多小鋼珠準備去換冰棒<br>偶爾會讓飄浮敵人與古代種瞬間動作停止(範圍攻擊)
+|Name1 (KR) = 고양이 일진
+|Desc1 (KR) = 학교에서는 무서울 게 없는 불량 냥코<br>떠있는 적을 가끔 잠깐 멈춘다 (범위 공격)
+|Name2 (KR) = 분노의 고양이 일진
+|Desc2 (KR) = 냉장고의 아이스크림을 아빠가<br>먹어버려 분노에 눈을 뜬 불량 냥코<br>떠있는 적을 가끔 잠깐 멈춘다 (범위 공격)
+|Name3 (KR) = 격노의 고양이 일진
+|Desc3 (KR) = 분노를 주먹에 눌러담아 싸우는 불량 냥코<br>오늘도 길에서 주운 동전으로 아이스크림을 사먹는다<br>떠있는 적과 고대종을 가끔 잠깐 멈춘다 (범위 공격)
+|Name1 (3DS) = Delinquent Cat
+|Desc1 (3DS) = Known as the Bancho of Cat School.<br>Might stop Floating (Area Atk)
+|Name2 (3DS) = Brawler Cat
+|Desc2 (3DS) = Throwing a fit of rage because his dad<br>ate his ice cream that was in the fridge.<br>Might stop Floating (Area Atk)
+}}
+
+==Cost==
+*Chapter 1: 1,000¢
+*Chapter 2: 1,500¢
+*Chapter 3: 2,000¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+<tabber>
+Mobile Version=
+{{Cat Stats 1.2
+|Normal Name = Delinquent Cat
+|Normal Base HP = 1000
+|Normal Base AP = 145,145,145
+|Normal Range = 250
+|Normal Foreswing = 18,30,46
+|Normal Attack Cooldown = 51
+|Normal Attack Length = 73
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 1000
+|Normal Recharge = 1720
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,465 at 18f <sup>0.6s</sup>, 2,465 at 30f <sup>1s</sup>, 2,465 at 46f <sup>1.53s</sup>)<br>
+{{AbilityIcon|Freeze}} 16% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Angry Delinquent Cat
+|Evolved Base HP = 1200
+|Evolved Base AP = 255,255,255
+|Evolved Range = 250
+|Evolved Foreswing = 18,30,46
+|Evolved Attack Cooldown = 51
+|Evolved Attack Length = 66
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 1000
+|Evolved Recharge = 1720
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,335 at 18f <sup>0.6s</sup>, 4,335 at 30f <sup>1s</sup>, 4,335 at 46f <sup>1.53s</sup>)<br>
+{{AbilityIcon|Freeze}} 16% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|True Name = Ultra Delinquent Cat
+|True Base HP = 1800
+|True Base AP = 255,255,255
+|True Range = 280
+|True Foreswing = 18,30,46
+|True Attack Cooldown = 51
+|True Attack Length = 66
+|True Speed = 8
+|True KB = 3
+|True Cost = 1000
+|True Recharge = 1290
+|True Attack Type = Area
+|True Targets = Floating,Relic
+|True Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,335 at 18f <sup>0.6s</sup>, 4,335 at 30f <sup>1s</sup>, 4,335 at 46f <sup>1.53s</sup>)<br>
+{{AbilityIcon|Freeze}} 16% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Freeze|Immune to Curse}} [[Immune to Freeze]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 435 damage<br>(134.54 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 97f <sub>3.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 57.33 ~ 48.53 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 7,395 damage<br>(2,287.11 DPS)
+|val-Evolved-Health = 20,400 HP
+|val-Evolved-Attack Power = 13,005 damage<br>(4,022.16 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 97f <sub>3.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 57.33 ~ 48.53 seconds
+|val-True-Health = 30,600 HP
+|val-True-Attack Power = 13,005 damage<br>(4,022.16 DPS)
+|val-True-Attack Range = 280
+|val-True-Attack Frequency = 97f <sub>3.23 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 18f <sup>0.6s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-True-Recharge Time = 43 ~ 34.2 seconds
+}}
+|-|
+Nintendo Switch Version=
+{{Cat Stats 1.2
+|Normal Name = Delinquent Cat
+|Normal Base HP = 1000
+|Normal Base AP = 145,145,145
+|Normal Range = 250
+|Normal Foreswing = 18,30,46
+|Normal Attack Cooldown = 51
+|Normal Attack Length = 73
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 1000
+|Normal Recharge = 1720
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,465 at 18f <sup>0.6s</sup>, 2,465 at 30f <sup>1s</sup>, 2,465 at 46f <sup>1.53s</sup>)<br>
+{{AbilityIcon|Freeze}} 40% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Angry Delinquent Cat
+|Evolved Base HP = 1200
+|Evolved Base AP = 255,255,255
+|Evolved Range = 250
+|Evolved Foreswing = 18,30,46
+|Evolved Attack Cooldown = 51
+|Evolved Attack Length = 66
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 1000
+|Evolved Recharge = 1720
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,335 at 18f <sup>0.6s</sup>, 4,335 at 30f <sup>1s</sup>, 4,335 at 46f <sup>1.53s</sup>)<br>
+{{AbilityIcon|Freeze}} 40% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.40+20
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+}}
+</tabber>
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Angry Delinquent Cat
+|Evolved Image = Uni031 c00.png
+|True Name = Ultra Delinquent Cat
+|True Image = Uni031 s00.png
+|True Description = True Form evolution increases all stats!<br>Plus, gains the power to freeze Relic enemies<br>and becomes immune to enemy Curses.
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = RedFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = ElderFruit
+|Quantity Catfruit1 = x4
+|Quantity Catfruit2 = x1
+|Quantity Catfruit3 = x1
+|Quantity Catfruit4 = x2
+|Quantity Catfruit5 = x1
+|Quantity XP = 500,000
+}}
+
+==Talents==
+*'''[[Strengthen|Attack Up]]''': Adds 5% attack power at 67% health, increases by 5% per level up to 50% (Total Cost: 165 NP)
+*'''[[Savage Blow]]''': Adds a 1% chance to perform a savage blow (3x damage), improves by 1% per level up to 10% (Total Cost: 165 NP)
+*'''[[Special Abilities#Resist|Resist Weaken]]''': Reduces weaken duration by 16%, improves by 6% per level up to 70% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 125 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Delinquent Cat and its evolution appear in Shoumetsu Toshi as a fire type unit introduced in the fourth collaboration between the two games. It appears in the collaboration gacha during the event duration and can only be obtained through it.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ネコ番長 (Neko Banchō, Bancho Cat)
+! scope="row" style="text-align: center;"|怒りのネコ番長 (Ikari no Neko Banchō, Angry Bancho Cat)
+|-
+| colspan="2" |[[File:ST Delinquent Cat.png|center|300px]]
+|[[File:ST Angry Delinquent Cat.png|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats At Level 35
+! scope="col" style="text-align: center;"|Stats At Level 99
+|-
+! scope="col" |Rarity
+|★4
+|★5
+|-
+! scope="col" |Health
+|1,442
+|2,754
+|-
+! scope="col" |Attack
+|688
+|1,395
+|-
+! scope="col" |Recovery
+|46
+|64
+|-
+! scope="col" |Single Skill
+| colspan="2" |Attack power x7 attack (Fire) then in exhange<br>ally's recovery power DOWN 100% for 15 seconds<br>(It will not be overwritten if it is already activated)
+|-
+! scope="col" |Leadership Skill
+| colspan="2" |Doubles the attack power of ally fire attribute souls<br>Increase HP by 1.2
+|}
+</div>
+
+{{Gallery|Uni031 f00}}
+
+==Trivia==
+*[[Version 2.0 Update#Version 2.0.6 Update|Version 2.0.6]] increased Delinquent Cat's freeze chance from 10% to 40%.
+*Prior to [[The Battle Cats|BCEN]] [[Version 3.6 Update|Version 3.6]], Delinquent Cat's name was misspelled as Deliquent Cat.
+*Prior to [[Version 4.7 Update|Version 4.7]], Angry Delinquent Cat was a part of another [[Cat Combo]] called [[Shonen Manga (Removed Combo)|Shonen Manga]].
+*He is one of the many Cats who were given [[Multi-Hit]] in [[Version 6.0 Update|Version 6.0]].
+**The addition of Multi-Hit caused his Freeze chance to be reduced from 40% to 16%.
+*Prior to [[Version 15.7 Update|Version 15.7]], Delinquent Cat's descriptions read as follows:
+<pre>Delinquent Cat
+Known as the Bancho of Cat School.
+Might freeze Floating enemies (Area Attack)</pre>
+<pre>Angry Delinquent Cat
+Throwing a fit of rage because his dad
+ate his ice cream that was in the fridge.
+Might freeze Floating enemies (Area Attack)</pre>
+<pre>Ultra Delinquent Cat
+A naughty Cat known as king of the Angry Fist.
+Loves pachinko, trades his winnings for ice cream.
+Might freeze Floating/Relics (Area Attack)</pre>
+*Delinquent Cat is a direct reference to [[jojowiki:Jotaro Kujo|Jotaro Kujo]] from ''[[wikipedia:JoJo's Bizarre Adventure|JoJo's Bizarre Adventure]]''.
+**Jotaro debuted as a delinquent, and they both wear similar attire.
+**His attack animation is identical to how Jotaro uses his Stand, [[jojowiki:Star Platinum|Star Platinum]].
+**After the events of ''[[wikipedia:Stardust Crusaders|Stardust Crusaders]]'', Jotaro's Stand can stop time for 2 seconds, just like how Delinquent Cat can freeze [[:Category:Floating Enemies|Floating Enemies]] for 2 seconds.
+**Also during ''Stardust Crusaders'', Jotaro Kujo was able to move in spite of his final opponent freezing time, which is referenced by Angry Delinquent Cat's immunity to Freeze.
+**Delinquent Cat's updated description in [[Version 15.7 Update|Version 15.7]] also calls him ''bizarre'' and references Dio's Stand, [[jojowiki:The World|The World]].
+*While Jotaro Kujo is undoubtedly the main inspiration for his design, Angry Delinquent Cat could also be a reference to Masami Iwaki from ''[[wikipedia:Dokaben|Dokaben]]'', whose typical look includes a student cap that meshes with his hair and a two-leaved twig in his mouth.
+*Ultra Delinquent Cat's Japanese name, Osu! Neko Bancho (押忍！ネコ番長, "'Yes Sir!' Bancho Cat"), is a reference to to the pachislo machine series ''[[wikipedia:ja:押忍!番長|Osu! Bancho]]'' (押忍!番長). One of its characters, [https://dic.pixiv.net/a/轟金剛 Kongou Todoroki], is a Jotaro lookalike with long hair similar to that of Ultra Delinquent Cat's "Stand". Ultra Delinquent Cat's description even mentions pachinko in the Japanese Version.
+*Ultra Delinquent Cat's English description mentions a "tough", meaning a rude and violent person, especially a gangster.
+*The text that appears in Delinquent Cat's attack animation is にゃ and ニャ, the onomatopoeia ''nya'' (meow) written in hiragana and katakana respectively.
+*The text that appears in Angry Delinquent Cat's attack animation is the kanji for rage, 怒, which in this context can be read as ''do'' or be short for 怒り ''ikari'' (anger), the first word in Angry Delinquent Cat's Japanese name.
+*The text that appears in Ultra Delinquent Cat's attack animation is 押忍 ''osu'', which is used as an informal greeting between close male friends like "Yo!" or "Hey, man!" and as an interjection in martial arts contexts like "Yes, sir!" or "Understood!"
+*Despite the Catfruit Evolution stating that the True Form increases all stats, it only increases range and health.
+*In [[The Battle Cats POP!]], Angry Delinquent Cat is called Brawler Cat.
+
+==Reference==
+*https://battlecats-db.com/unit/032.html
+
+----
+{{CatNav|Bodhisattva Cat|Hip Hop Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Anti-Relic Cats]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Talents]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Savage Blow Cats]]
+[[Category:Resist Weaken Cats]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]

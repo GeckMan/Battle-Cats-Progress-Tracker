@@ -1,0 +1,130 @@
+'''Ryuichi''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by purchasing the 11-draw Capsule at the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[River City Ransom Collaboration Event]]. He was added in [[Version 15.6 Update|Version 15.6]].
+
+{{Cat Info
+|ID = 874
+|rarity = UR
+|name1 = Ryuichi
+|name2 = Ryuichi & Ryuji
+}}
+
+==Evolution==
+Evolves into '''Ryuichi & Ryuji''' at level 10.
+
+==Strategy/Usage==
+Like the other [[River City Ransom Collaboration Event|River City]] [[Uber Rare Cats]], Ryuichi changes significantly between forms and has a single-slot [[Cat Combo]], but unlike them, he also gains a second one in his Evolved Form. While he does have a Move Speed Up Combo, the low stats and very poor uptime on his [[Weaken]] in Normal Form are generally not worth sacrificing the second Combo for, unless the super-backliner range is absolutely necessary to chip down enemies.
+
+===Evolved Form===
+Ryuichi & Ryuji gain much higher HP, slightly higher damage, a faster attack rate but much lower range compared to their Normal form, allowing them to become a wall for other units, and a [[Savage Blow]] making their damage more acceptable for a melee unit, there is a 65.7% chance for them to inflict atleast one Savage Blow per attack cycle, making their average DPS much higher. While the weaken chance is lowered, they also gain [[Multi-Hit]] to compensate, if all three hits connect, there is a 48.8% chance to inflict Weaken once per attack cycle. Their third hit pierces over 300 range from their detection range to  help with potentially weakening and chip enemies far in the backline. They also gain an extra [[Cat Combo]] to increase starting money, which along with their Move Speed Up Combo and their own high movespeed, low cost and low cooldown (the low cooldown making them come back faster and gain value) which fits well into a [[:Category:Rusher-class Cats|Rusher]] play-style, even if the unit itself is mediocre.
+
+{{Job|Classification = Super-Backliner & Crowd-Controller & Combo Slave|EvolvedClass = Melee & Crowd-Controller & Combo Slave|TrueClass=|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Welcome!|Unit Speed Up (Sm)|Ryuichi|jpname=よくきたな！}}
+|{{CatCombo|Only one of us leaves!|Starting Money Up (Sm)|Ryuichi & Ryuji|jpname=いきてはかえさん！}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 874
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni874 f00.png
+|Image2 = Uni874 c00.png
+|Name1 = Ryuichi
+|Desc1 = Joining from the River City series!<br>One of two tough brothers transferred in from Hattori Academy.<br>Might Weaken Traited enemies with Area attacks.
+|Name2 = Ryuichi & Ryuji
+|Desc2 = Joining from the River City series!<br>The Double Dragons are the baddest brothers around, thanks to ninja training.<br>Chance of Savage Blows/Weakning Traited. (Long-Range Area)
+|Name1 (JP) = りゅういち (Ryūichi)
+|Desc1 (JP) = 熱血硬派くにおくんシリーズから参戦！<br>服部学園から転校してきた最強兄弟のひとり<br>たまに属性を持つ敵の攻撃力を下げる(範囲攻撃)
+|Transl1 (JP) = Joining the war from the Hot-Blooded Kunio-kun series!<br>One of the strongest brothers, transferred from Hattori Academy<br>Occasionally lowers the attack power of Traited enemies (Area Attack)
+|Name2 (JP) = りゅういち&りゅうじ (Ryūichi & Ryūji)
+|Desc2 (JP) = 熱血硬派くにおくんシリーズから参戦！忍者の教育を<br>受けて育った最強のダブルドラゴン兄弟(遠方範囲攻撃)<br>たまに属性を持つ敵の攻撃力を下げ、渾身の一撃を放つ
+|Transl2 (JP) = Joining the war from the Hot-Blooded Kunio-kun series! The strongest<br>Double Dragon brothers, raised through ninja training (Long Distance Area Attack)<br>Occasionally lowers the attack power of Traited enemies and releases an All-Out Blow
+|Name1 (TW) = 龍一
+|Desc1 (TW) = 來自熱血硬派國夫君系列！<br>從服部學園轉學過來的最強兄弟之一<br>有時候能使有屬性敵人的攻擊力下降（範圍攻擊）
+|Name2 (TW) = 龍一&龍二
+|Desc2 (TW) = 來自熱血硬派國夫君系列！接受忍者教育長大的<br>最強雙截龍兄弟（遠距範圍攻擊）。有時候能使<br>有屬性敵人的攻擊力下降，施放渾身一擊
+|Name1 (KR) = 류이치
+|Desc1 (KR) = 열혈경파 쿠니오군 시리즈에서 참전!<br>핫토리학원에서 전학 온 최강 형제 중 한 명<br>가끔 속성을 가진 적의 공격력을 낮춘다 (범위 공격)
+|Name2 (KR) = 류이치 & 류지
+|Desc2 (KR) = 열혈경파 쿠니오군 시리즈에서 참전! 닌자 교육을 받은<br>최강의 더블 드래곤 형제 (원거리 범위공격)<br>가끔 속성을 가진 적의 공격력을 낮추고 혼신의 일격을 낸다
+}}
+
+==Cost==
+*Chapter 1: 2,000¢
+*Chapter 2: 3,000¢
+*Chapter 3: 4,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ryuichi
+|Normal Base HP = 2000
+|Normal Base AP = 770
+|Normal Range = 550
+|Normal Foreswing = 21
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 49
+|Normal Speed = 20
+|Normal KB = 4
+|Normal Cost = 2000
+|Normal Recharge = 3300
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub>
+|Evolved Name = Ryuichi & Ryuji
+|Evolved Base HP = 6600
+|Evolved Base AP = 250,250,320
+|Evolved Range = 250
+|Evolved Foreswing = 9,17,36
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 64
+|Evolved Speed = 20
+|Evolved KB = 3
+|Evolved Cost = 2000
+|Evolved Recharge = 2800
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 9f <sup>0.3s</sup>, 4,250 at 17f <sup>0.57s</sup>, 5,440 at 36f <sup>1.2s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~251 on 1st hit, 1~251 on 2nd hit, 1~551 on 3rd hit)<br>
+{{AbilityIcon|Weaken}} 20% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Savage Blow}} 30% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni874 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/875.html
+
+----
+{{CatNav|Metal Maiden Koneko|Hare of Inaba}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:River City Ransom Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Long Distance Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with different effective ranges]]
+[[Category:Savage Blow Cats]]

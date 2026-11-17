@@ -1,0 +1,79 @@
+'''Shin Godzilla''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Godzilla Collaboration Event]]. It was added in [[Version 10.6 Update|Version 10.6]].
+
+{{Enemy Info
+|name = Shin Godzilla
+|image = E 550.png
+|appearance = [[Godzilla Collaboration Event]]
+|money drop = 1,954¢ - 7,718¢
+}}
+
+==Enemy==
+Shin Godzilla is a unique enemy, having very low stats at 100% strength magnification, however, most of the stages in the [[Godzilla Collaboration Event]] buff Shin Godzilla to such an extreme point that he can obliterate your base in only a few hits, which is supported by his [[Base Destroyer]] ability. Along with this, Shin Godzilla also has an insane [[Long Distance]] reach and immunities to many effects, making it near impossible to interrupt its attack. Luckily, Shin Godzilla also has [[Multi-Hit]] which can even save you in some stages if you are lucky enough to knock it back before your base is destroyed. Shin Godzilla is also comparable to [[The 6th Angel (Enemy)|The 6th Angel]] in many ways and although he may look black, he is actually a traitless enemy.
+
+==Strategy==
+Due to its abnormally big blindspot, it is recommended to rush him down as fast as possible with fast units like [[Express Cat (Super Rare Cat)|Bullet Train Cat]] and [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] before Shin Godzilla approaches your base. A good thing to note is that if he detects a cat in his [[Hitbox|standing range]], then he will immediately start to attack, making it so if you manage to get a unit into its blindspot, it won't be able to move forward until it's dead. Don't rely on this tactic though, as for some stages, it can destroy your base even from its own base. This means that killing it in 1-2 hits is necessary.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Godzilla Collaboration Event#Godzilla: Final Assault|Godzilla: Final Assault]]: [[God of Destruction (Merciless)]] (26,000% HP/200,000% AP)
+*[[Godzilla Collaboration Event#Godzilla vs Cats|Godzilla vs Cats]]:
+**[[The Leviathan Rises]] (100% HP/30% AP)
+**[[Disaster Response HQ]] (8,000% HP/200,000% AP)
+**[[Climactic Cat Clash]] (18,600% HP/5,000% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Shin Godzilla
+|Health = 500
+|Attack Power = 600
+|Attack Range = 3800
+|Attack Type = Area
+|Time Between Attacks = 425
+|Movement Speed = 3
+|Knockback = 1
+|Foreswing = 130
+|Backswing = 101
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">200</span> at 130f <sup>4.33s</sup>, <span class="scaled" data-type="ap">200</span> at 170f <sup>5.67s</sup>, <span class="scaled" data-type="ap">200</span> at 210f <sup>7s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 2,300~3,800)<br>
+{{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+550 e.png|Shin Godzilla's spritesheet
+IdleShinGodzilla.gif|Shin Godzilla's walking animation
+</gallery>
+
+==Trivia==
+*Shin Godzilla has the longest standing range of any enemy in the game.
+**Shin Godzilla also has the second highest max [[Long Distance]] range in the game, with [[Filibuster Obstructa]] and [[Metafilibuster (Enemy)|Metafilibuster]] in first place.
+*This enemy, the three Winds ([[White Wind|White]], [[Red Wind|Red]], [[Dark Wind|Dark]]), [[Wafer Cat XL (Enemy)|Wafer Cat XL]] and [[Elder Flame Doron]] are the only enemies which don't have a soul when they die.
+*This enemy's base money drop of 1,954¢ is a reference to the year the first [[wikipedia:Godzilla (franchise)|Godzilla]] film was released.
+*Shin Godzilla in [[God of Destruction (Merciless)]] has 1,200,000 AP, the highest out of any collab enemy.
+
+==Reference==
+*https://battlecats-db.com/enemy/552.html
+
+----
+{{EnemyNav|Ragin' Gory|Elder Flame Doron}}
+----
+
+{{Godzilla}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Multi-Hit Enemies]]

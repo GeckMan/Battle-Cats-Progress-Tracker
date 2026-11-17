@@ -1,0 +1,101 @@
+{{EnemiesAppearing|Kroxo|Imperator Sael|Shadow Boxer K|Elizabeth the LVIth|Aku Doge|Devil Wife|Fallen Bear|LeMurr|Loris|Corrupted Valkyrie}}
+'''Muddy Fjord''' is the fourth stage in [[Cats Cradle Basin]]. This stage is a remake of the [[Moon (Into the Future)|Moon]] from [[Into the Future]] Chapter 2. [[Corrupted Valkyrie]] and [[Devil Wife]] make their first appearances in [[Zero Legends]] here.
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn002 03 nd en.png]]
+|stage location = [[File:Mapname002 nd en.png]]
+|energy = 210
+|enemy castle hp = 1,050,000 HP
+|enemies = {{Magnification|Kroxo|2,400%
+|Imperator Sael|2,400%
+|Shadow Boxer K|300%
+|Elizabeth the LVIth|2,400%
+|Aku Doge|250%
+|Devil Wife|600%
+|Fallen Bear|200%
+|LeMurr|2,400%
+|Loris|150%
+|Aku Doge|600%}}
+|boss = {{Magnification|Corrupted Valkyrie|300%}}
+|enemies2 = {{Magnification|Kroxo|2,880%
+|Imperator Sael|2,880%
+|Shadow Boxer K|360%
+|Elizabeth the LVIth|2,880%
+|Aku Doge|300%
+|Devil Wife|720%
+|Fallen Bear|240%
+|LeMurr|2,880%
+|Loris|180%
+|Aku Doge|720%}}
+|boss2 = {{Magnification|Corrupted Valkyrie|360%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 11,970 XP
+|width = 5,000
+|max enemies = 16
+|jpname = Muddy Mountain Stream
+|script = 泥まみれ渓流
+|romaji = Doromamire Keiryū
+|star = 2
+|sub-chapter = [[Cats Cradle Basin]]
+|difficulty = ★11
+|prev stage = [[Loony Lakeside]]
+|next stage = [[Hopscotch Peak]]
+}}
+
+==Battleground==
+*3 [[Kroxo]]s spawn, delay 3~5 seconds<sup>90f~150f</sup>.
+*1 [[Imperator Sael]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Imperator Sael]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Shadow Boxer K]] spawns after 20 seconds<sup>600f</sup>.
+*4 [[Shadow Boxer K]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+*1 [[Elizabeth the LVIth]] spawns after 133.33 seconds<sup>4,000f</sup>.
+*When the base reaches 99% HP:
+**5 [[Aku Doge]]s (250%) spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**Infinite [[Kroxo]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**Infinite [[Devil Wife|Devil Wives]] spawn, delay 83.33~86.67 seconds<sup>2,500f~2,600f</sup>.
+**Infinite [[Devil Wife|Devil Wives]] spawn, delay 166.67~173.33 seconds<sup>5,000f~5,200f</sup>.
+*When the base reaches 70% HP:
+**1 [[Corrupted Valkyrie]] spawns as the boss.
+**1 [[Fallen Bear]] spawns.
+**10 [[Kroxo]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**Infinite [[LeMurr]]s spawn, delay 66.67~73.33 seconds<sup>2,000f~2,200f</sup>.
+**1 [[Loris]] spawns.
+**3 [[Imperator Sael]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**10 [[Aku Doge]]s (600%) spawn, delay 0.07 seconds<sup>2f</sup>.
+**10 [[Kroxo]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+While this is largely a remake of Into the Future Chapter 2's Moon, there are some key differences.
+
+The first is that a single buffed Elizabeth the LVIth spawns on a timer regardless of base health. This means that the player can stall to wait for her and take her out without any of the supporting enemies. While she does take over 2 minutes to spawn, it can greatly alleviate the pressure of the boss wave. Killing Elizabeth is also made easier by the fact that the main boss wave is separate from the 99% trigger for Devil Wife spawns; Cats left behind from dealing with the first Shadow Boxer K can be quickly wiped out by their death Surges.
+
+The second, and more important, difference, is the presence of non-[[:Category:Alien Enemies|Alien]] enemies, namely Fallen Bear, Devil Wife, and Loris. Infinite Devil Wives spawn, though only a single Fallen Bear and Loris are present. The inclusion of Devil Wives effectively requires [[:Category:Cats with Surge Immunity|Surge-immune units]], as their Surges can tear through non-immune defenses with terrifying ease. Fallen Bear is troublesome because of the presence of tough frontliners and a [[Shield]] that few units can brute-force or pierce as a result. Loris is also a troublesome backliner, providing some chip damage but mostly serving to curse the Cats who would need to control the Aliens. Aku Doge is also here, but is mostly just another peon among much stronger threats.
+
+Finally, only a limited number of enemies spawn before the base is hit. This means that stalling at the start, while still possible, may be more difficult.
+
+[[Stone Cat (Rare Cat)|Stone Cat]] is great for temporarily stopping the enemies, especially in a Death Surge from Devil Wife. [[Elder Mask Doron (Special Cat)|Doron]] can hit the backlines and hit a large amount of peons at once while freezing Loris. [[Elder Beast Naala (Special Cat)|Awakened Naala]] is not likely to survive long due to its standing range and the pushing power of the enemies, but can do a lot of damage to Loris in the time that it's alive. [[Ancient Egg: N000 (Special Cat)|Luza]] doesn't do anything special, but will do major damage to Loris should Luza manage to hit it. Once Loris is down, thus dealing with the problem of it hitting your backlines and Cursing your crowd control units, the stage becomes a good deal easier, as it's easier to reach Fallen Bear with your Shield Piercers and slowing/freezing Corrupted Valkyrie is more feasible.
+
+==='''Recommended Units'''===
+
+* [[Pied Piper Cat (Rare Cat)|Brass Cat]]: With 50% Mini-Wave, and 60% shield pierce, It's only a 30% chance for Brass cat to snipe Fallen Bear's shield, and it's unlikely he'll miss, because Fallen Bear sits well within his Wave range. His decent range allows some hits, but Loris will screw him up if they're not kept in check. Overall, a great unit for this stage and helps remove Fallen Bear early, which makes the stage get easier tenfold.
+* [[Jetpack Cat (Rare Cat)|Jetpack Cat]]: Jetpack Cat serves as a bulky and spammable Anti Alien/Dark meatshield who can help deal with the Shadow Boxer K and some of the peons + Corrupted Valkyrie. Thanks to there being no enemies that can warp, his only weakness is eliminated, but watch out for Loris and Fallen Bear, as they can tear through him easily.
+* [[Rover Cat (Rare Cat)|Catellite]]: Just like Jetpack, only more ineffective without gargantuan plus level upgrades. His cheaper cost can save a bit of money, but it's nothing to write home about. It's best to use him in tandem with Manic Eraser because he isn't as bulky nor spammable as Jetpack, which can get him killed fast, still great to use regardless.
+* [[Maize Cat (Rare Cat)|Cone Cat]]: While not as effective in this stage as Jetpack nor Catellite, he stalls Fallen Bear and Loris greatly, though they should already be killed by your LD units and shield piercers. If kept alive until Valkyrie's death however, he can stall them near indefinitely, and is still a versatile option if you have an extra slot left. He helps tank the Devil Wive's death surge and her attacks as well, so keep that in mind.
+
+==='''Recommended Ubers'''===
+
+* [[Lone Moon Lunos (Uber Rare Cat)|Lunos the Eclipsed]]: He's ridiculously proficient at tanking and can be cycled out again the moment he dies. Combined with his knockback, no ground will be lost by the enemies. His Conjure also nukes any profitable enemy and does considerable damage to the main threats, while also sniping Loris and Fallen Bear.
+* [[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: Supernova Cosmo can trivialize this stage with the support of constant meatshield flow. His level 10 Wave Attacks strike any and all backliners and his guaranteed Knockback and Freeze pushes back Corrupted Valkyrie, if his 200k effective damage wasn't enough to stagger all the enemies. Just make sure to kill Elizabeth the LVIth before base hit so that her waves aren't troublesome for Cosmo.
+
+==Trivia==
+*Muddy Fjord's Japanese name, Doromamire Keiryū (泥まみれ渓流), can be translated as "Muddy Mountain Stream", but is also a pun on ''[[wikipedia:ja:ケイドロ|dorokei]]'', a Japanese variation of tag in which players are split into two groups: cops and robbers. When a robber is caught by a cop, they are taken to a pre-determined location that serves as a "prison" and remain there for the rest of the game unless tagged by another robber, freeing them. The game ends when everyone on the robbers' team is imprisoned.
+*In all versions except [[Nyanko Daisensou|BCJP]], Muddy Fjord can be considered [[Devil Wife]]'s first appearance overall, as [[Attack of the Omens]] was not released outside of Japan until May 22nd, 2023, while [[Cats Cradle Basin]] was made available worldwide on May 17th.
+*While Corrupted Valkyrie technically has a higher buff here than in [[Moon (Into the Future)|her first appearance]], this magnification is an illusion. She has 1,666,665 HP and 21,000 attack in this stage. With the [[Treasure]]s obtainable by her first appearance and none of the Chapter 3 Treasures being accessible at that point, the Corrupted Valkyrie in that stage would have those exact same stats.
+
+==Reference==
+*https://battlecats-db.com/stage/s34002-04.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 101 Stages]]
+[[Category:Zero Legends Stages]]

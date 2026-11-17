@@ -1,0 +1,125 @@
+'''Li'l Baki''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a Stamp Reward during the [[Baki Hanma Collaboration Event]]. They were added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 795
+|rarity = EX
+|name1 = Li'l Baki
+|name2 = Li'l Baki CC
+}}
+
+==Evolution==
+Evolves into '''Li'l Baki CC''' at level 10.
+
+==Strategy/Usage==
+Interestingly, Li'l Baki has the [[Metal Killer]] ability, something of a rarity among non-[[:Category:Uber Rare Cats|Ubers]]. However, the HP taken is a measly 5%, making Li'l Baki largely ineffective against every single Metal enemy in the game, save for [[Metal Cyclone]].
+
+Li'l Baki's abysmal standing range, DPS, and Single Attack does little to remedy this issue.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 795
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni795 f00.png
+|Image2 = Uni795 c00.png
+|Name1 = Li'l Baki
+|Desc1 = Joining from Baki! Young fighter who aims to challenge<br>their father, known as "the strongest thing alive."<br>Has the Metal Killer ability.
+|Name2 = Li'l Baki CC
+|Desc2 = Joining from Baki! Overcame many trials, wearing the<br>scars of many past battles like medals.<br>Has the Metal Killer ability.
+|Name1 (JP) = ちび刃牙 (Chibi Baki)
+|Desc1 (JP) = 「範馬刃牙」から参戦ッッ！<br>"地上最強の生物"の異名を持つ父親に挑む若き格闘家<br>メタルキラー能力を持つ
+|Transl1 (JP) = Joining the war from "Baki Hanma"!!!<br>Young martial artist challenging their father, who is known as the Strongest Creature on the Earth<br>Has the Metal Killer ability
+|Name2 (JP) = ちび刃牙CC (Chibi Baki CC)
+|Desc2 (JP) = 「範馬刃牙」から参戦ッッ！幾多の戦場を<br>乗り越えた肉体には無数の傷が刻まれている<br>メタルキラー能力を持つ
+|Transl2 (JP) = Joining the war from "Baki Hanma"!!! His body<br>has countless scars from many battles<br>Has the Metal Killer ability
+|Name1 (TW) = 小小刃牙
+|Desc1 (TW) = 從「範馬刃牙」來參戰！年輕的格鬥家<br>要挑戰有著「地表最強生物」別名的父親<br>有鋼鐵殺手能力
+|Name2 (TW) = 小小刃牙CC
+|Desc2 (TW) = 從「範馬刃牙」來參戰！那經歷過了<br>無數戰鬥的肉體有著數不清的傷痕<br>有鋼鐵殺手能力
+|Name1 (KR) = 꼬맹이 바키
+|Desc1 (KR) = 「한마 바키」에서 참전! "지상 최강의 생물"로<br>불리는 아버지에게 도전하는 젊은 격투가<br>메탈 킬러 능력을 가졌다
+|Name2 (KR) = 꼬맹이 바키CC
+|Desc2 (KR) = 「한마 바키」에서 참전! 수 많은 전장을 이겨낸<br>신체에는 셀 수 없을 정도의 상처로 가득하다<br>메탈 킬러 능력을 가졌다
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Baki
+|Normal Base HP = 680
+|Normal Base AP = 140
+|Normal Range = 200
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 43
+|Normal Attack Length = 43
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 420
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 5% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Evolved Name = Li'l Baki CC
+|Evolved Base HP = 680
+|Evolved Base AP = 140
+|Evolved Range = 200
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 43
+|Evolved Attack Length = 43
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 420
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 5% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 680 HP
+|val-Normal-Attack Power = 140 damage<br>(71.19 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 11,560 HP
+|val-Normal-MaxAttack = 2,380 damage<br>(1,210.17 DPS)
+|val-Evolved-Health = 11,560 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(1,210.17 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni795 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/796.html
+
+----
+{{CatNav|Ogre Cat|Baki Cat}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Metal Killer Cats]]

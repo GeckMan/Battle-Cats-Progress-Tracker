@@ -1,0 +1,59 @@
+{{JPExclusive}}
+:''This article is about the enemy, for the Cat Units, see [[Nebaaru-kun (Special Cat)]].''
+'''Nebaaru-kun''' (ねば～る君) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Nebaaru-kun and Nyanpazuru Collaboration Event]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Nebaaru-kun
+|appearance = [[Nebaaru-kun and Nyanpazuru Collaboration Event]]
+|image = E 241.png
+|money drop = 1,000円 - 3,950円
+}}
+
+==Enemy==
+This enemy has high health, decent damage, long range and a 75% chance to [[Slow|slow]] your cats for 3 seconds. However, this seemingly tough reputation gets shattered due to his somewhat long attack rate.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nebaaru-kun and Nyanpazuru Collaboration Event#Protecting Cats|Protecting Cats]]:
+**[[I'll Protect You Too Nebaaru-kun]] (50%)
+**[[Together Protecting Cats]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Nebaaru-kun
+|Health = 120000
+|Attack Power = 5000
+|Attack Range = 420
+|Attack Type = Area
+|Time Between Attacks = 207
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 28
+|Backswing = 73
+|Ability = {{AbilityIcon|Slow}} 75% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+241 e.png|Nebaaru-kun's spritesheet
+IdleNebaaru-Kun.gif|Nebaaru-kun's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/243.html
+
+----
+{{EnemyNav|Setsuko|Manic Mohawk Cat}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

@@ -1,0 +1,138 @@
+'''White Butler Vigler''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[White Day Capsules (Gacha Event)|White Day]] gacha event. He was added in [[Version 12.1 Update|Version 12.1]] and is a variant of [[Detective Vigler (Uber Rare Cat)|Detective Vigler]].
+
+{{Cat Info
+|ID = 693
+|rarity = UR
+|name1 = White Butler Vigler
+|name2 = Black Butler Vigler
+}}
+
+==Evolution==
+Evolves into '''Black Butler Vigler''' at level 10.
+
+==Strategy/Usage==
+White Butler Vigler has the same stats as the original [[Detective Vigler (Uber Rare Cat)|Vigler]], but, as normal, seasonal units have different targets. His abilities are all a coin flip, so with a 10-second attack cycle and long foreswing, he could just do nothing half the time. You may think that targeting Dark and Red enemies isn't a good niche, because you could use [[Flower Cat (Special Cat)|Bombercat]] or [[Apple Cat (Super Rare Cat)|iCat]] instead; while those units are good at what they do, they tend to struggle against hordes of peons/support, or enemies that outrange them. He also has the ability to hit enemies even when they are protected, thanks to his Wave Attacks.
+
+Shield Piercing is somewhat random at a 50% chance, but ranged Shield Piercing is especially rare, which could prove to be of great use in his niches.
+
+{{Job|Classification = Crowd-Controller & Breaker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 693
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni693 f00.png
+|Image2 = Uni693 c00.png
+|Name1 = White Butler Vigler
+|Desc1 = A demon detective who is on undercover investigation<br>"Personal feelings have no place in an investigation."<br>Wave Attacks may Freeze Red and Aku.
+|Name2 = Black Butler Vigler
+|Desc2 = Nearing the end of its investigation, unwittingly finds<br>true love which may jeopardize its efforts.<br>Wave Attacks may Freeze Dark and Aku.
+|Name1 (JP) = 白執事探偵ヴィグラー (Shiro Shitsuji Tantē Vigurā, White Butler Detective Vigler)
+|Desc1 (JP) = とある屋敷への潜入捜査でお嬢様の執事に扮した<br>魔界の探偵。探偵の鉄則は「捜査に私情は禁物」<br>たまに赤い敵と悪魔の動きを止め波動を放つ
+|Transl1 (JP) = This demon world detective was an undercover agent in a mansion and disguised himself as the<br>servant of a lady. Detectives have the strict rule "personal feelings are forbidden in investigations"<br>Occasionally Stops movement of Red enemies and Devils and releases Waves
+|Name2 (JP) = 黒執事探偵グラヴィー (Kuro Shitsuji Tantē Guravī, Black Butler Detective Gravie)
+|Desc2 (JP) = 潜入捜査も大詰めになり事件の核心に近付く探偵<br>無意識に揺れ動く恋心のせいで最終任務が難航中<br>たまに黒い敵と悪魔の動きを止め波動を放つ
+|Transl2 (JP) = The detective approaches the heart of the case as he nears the end of his undercover investigation<br>The final mission is going rough because of his unconsciously swaying love<br>Occasionally Stops of movement of Dark enemies and Devils and releases Waves
+|Name1 (TW) = 白執事偵探吳仲力
+|Desc1 (TW) = 魔界的偵探，為了潛入某豪宅進行搜查而扮成<br>大小姐的執事。偵探的鐵則是「搜查不可有感情」<br>有時候讓紅色敵人與惡魔動作停止、可發射波動
+|Name2 (TW) = 黑執事偵探吳仲力
+|Desc2 (TW) = 在潛入搜查中逐漸逼近事件關鍵人物的偵探<br>卻因為動了感情而導致最終任務沒有進展<br>有時候讓黑色敵人與惡魔動作停止、可發射波動
+|Name1 (KR) = 백집사 탐정 비그라
+|Desc1 (KR) = 어느 저택을 조사하기 위해 아가씨의 집사로 위장한 마계 탐정<br>「사적인 감정은 배제하라」가 탐정의 철칙<br>가끔 빨간 적과 악마의 움직임을 멈추고 파동을 낸다
+|Name2 (KR) = 흑집사 탐정 그라비
+|Desc2 (KR) = 잠입 조사도 막바지에 이르러 사건의 핵심에 다다른 탐정<br>어느새 싹튼 사랑의 감정 때문에 최종 임무가 난항을 겪고 있다<br>가끔 검은 적과 악마의 움직임을 멈추고 파동을 낸다
+}}
+
+==Cost==
+*Chapter 1: 2,940¢
+*Chapter 2: 4,410¢
+*Chapter 3: 5,880¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = White Butler Vigler
+|Normal Base HP = 2800
+|Normal Base AP = 1800
+|Normal Range = 360
+|Normal Foreswing = 120
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 311
+|Normal Speed = 15
+|Normal KB = 6
+|Normal Cost = 2940
+|Normal Recharge = 3200
+|Normal Attack Type = Area
+|Normal Targets = Red,Aku
+|Normal Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Shield Piercing}} 50% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Evolved Name = Black Butler Vigler
+|Evolved Base HP = 2800
+|Evolved Base AP = 1800
+|Evolved Range = 360
+|Evolved Foreswing = 120
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 311
+|Evolved Speed = 15
+|Evolved KB = 6
+|Evolved Cost = 2940
+|Evolved Recharge = 3200
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Aku
+|Evolved Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Shield Piercing}} 50% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,800 HP
+|val-Normal-Attack Power = 1,800 damage<br>(173.63 DPS)
+|val-Normal-Attack Range = 360
+|val-Normal-Attack Frequency = 311f <sub>10.37 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 120f <sup>4s</sup><br>(191f <sup>6.37s</sup> backswing)
+|val-Normal-Recharge Time = 106.67 ~ 97.87 seconds
+|val-Normal-MaxHP = 47,600 HP
+|val-Normal-MaxAttack = 30,600 damage<br>(2,951.77 DPS)
+|val-Evolved-Health = 47,600 HP
+|val-Evolved-Attack Power = 30,600 damage<br>(2,951.77 DPS)
+|val-Evolved-Attack Range = 360
+|val-Evolved-Attack Frequency = 311f <sub>10.37 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 120f <sup>4s</sup><br>(191f <sup>6.37s</sup> backswing)
+|val-Evolved-Recharge Time = 106.67 ~ 97.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni693 f00}}
+
+==Trivia==
+*Contrary to his name, Black Butler Vigler more closely resembles [[Detective Vigler (Uber Rare Cat)|Inspector Gabriel]] than Detective Vigler.
+
+==Reference==
+*https://battlecats-db.com/unit/694.html
+
+----
+{{CatNav|Issun Boshi|Brainwashed Titan Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Wave Attack Cats]]
+[[Category:Shield Piercing Cats]]
+[[Category:Cats with Surge Immunity]]

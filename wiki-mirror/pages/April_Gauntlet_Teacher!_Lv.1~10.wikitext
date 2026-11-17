@@ -1,0 +1,173 @@
+{{EnemiesAppearing|B.B.Bunny|Otta-smack-u|Duche|One Horn|Teacher A}}
+
+{{Stage Info
+|stage name = [[File:Rc018.png]]
+[[File:Mapsn046 00 a en.png]]
+|stage location = [[File:Mapname046 a en.png]]
+|enemies = {{Magnification|B.B.Bunny|0
+|Otta-smack-u|0
+|Duche|0
+|One Horn|0}}
+|boss = {{Magnification|Teacher A|0}}
+|restriction = [[No Continues]]<br>
+Max # of Deployable Cats: 10
+|width = 4,500
+|max enemies = 8
+|jpname = It's Spring! Lv.X
+|script = 春だよ！ Lv.X
+|romaji = Harudayo！Lv. X
+|event = [[April Gauntlet]]
+|event-chapter = [[April Gauntlet]]
+|require = Clear [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*10 [[B.B.Bunny|B.B.Bunnies]] spawn after 1.33 seconds<sup>40f</sup>, delay 6~8 seconds<sup>180f~240f</sup>.
+*2 [[Otta-smack-u]]s spawn after 5.33 seconds<sup>160f</sup>, delay 13.33~14.67 seconds<sup>400f~440f</sup>.
+*10 [[Duche]]s spawn after 32 seconds<sup>960f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Otta-smack-u]] spawns after 38 seconds<sup>1,140f</sup>.
+*When the base reaches 99% HP:
+**1 [[Teacher A]] spawns as the boss.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**5 [[Otta-smack-u]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Duche]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[One Horn]] spawns.
+**2 [[One Horn]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Teacher! Lv.
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Otta-smack-u]]
+! scope="col" |[[Duche]]
+! scope="col" |[[One Horn]]
+! scope="col" |[[Teacher A]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|400%
+|100%
+|100%
+|400%
+|150%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|556%
+|111%
+|111%
+|556%
+|200%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|712%
+|122%
+|122%
+|712%
+|250%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|868%
+|133%
+|133%
+|868%
+|300%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|1,024%
+|144%
+|144%
+|1,024%
+|350%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|1,180%
+|155%
+|155%
+|1,180%
+|400%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|1,336%
+|166%
+|166%
+|1,366%
+|450%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|1,492%
+|177%
+|177%
+|1,492%
+|500%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|1,648%
+|188%
+|188%
+|1,648%
+|550%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|1,800%
+|200%
+|200%
+|1,800%
+|600%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+The main threat in these stages are the early deployment of [[Otta-smack-u]], which will quickly defeat you if allowed to build up. A method to defeat these stages relies on saving up money to quickly summon [[Bahamut Cat (Special Cat)|Bahamut Cat]] before the Otta-smack-u can destroy your base. You may wish to use Cat-Combos that provide you with Worker Cat Level UP, such as the "[[Cat Army (Combo)|Cat Army]]" Combo.
+
+Firstly, start by sending out meatshield cats such as [[Cat (Normal Cat)|Cat]] or [[Tank Cat (Normal Cat)|Tank Cat]] accompanied by a few long range cats (like [[Lizard Cat (Normal Cat)|Lizard Cat]]). Due to the Stage Restriction, try to deploy at least one long range/heavy hitter, with the rest being Cat & Tank Cats. This will allow you to defeat a few of the [[B.B.Bunny]]'s, giving you valuable money to use. Now, try to level up your Worker Cat while constantly spamming meatshields. When Worker Cat level ups cost above 2000, stop buying them and start to save up for Bahamut Cat. Make sure to only deploy Bahamut Cat when all three Otta-smack-u are piled up together, to easily take them all out without having to worry about Bahamut Cat's long attack recharge time.
+
+After hitting the enemy base, your goal is to defend Bahamut Cat and any long range cats you have on the battlefield. This is particularly difficult due to the Stage Restriction. A good compromise is to have Bahamut Cat with two long range units with the rest being meatshields.
+
+==Reference==
+*https://battlecats-db.com/stage/s24046.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]
+[[Category:Event Stages]]
+[[Category:Event]]

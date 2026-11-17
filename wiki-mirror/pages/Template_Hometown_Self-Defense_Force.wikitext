@@ -1,0 +1,29 @@
+{{#invoke:Navbox|main
+|template = Template:Hometown Self-Defense Force
+|title = [[Hometown Self-Defense Force Collaboration Event]]
+|navbox_class = hometown
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Type 10 (Special Cat)|Type 10]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Type 10 (Hometown Self-Defense Force)|Type 10]]
+
+|header3 = Stages
+|group3 = Hometown Self-Defense Force
+|list3 =
+*[[Suddenly Second Class]]
+*[[Corporal Pirikara]]
+*[[Sergeant Chakkari]]
+*[[Master Sergeant Yorudemo]]
+*[[Lieutenant Kakeashi]]
+*[[Major Jeje]]
+*[[Colonel Enyakora]]
+*[[Intense Chief of Staff]]
+}}<templatestyles src="Hometown Self-Defense Force/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Hometown Self-Defense Force]]}}<noinclude>[[Category:Navboxes]]</noinclude>

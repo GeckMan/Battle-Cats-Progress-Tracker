@@ -1,0 +1,56 @@
+{{EnemiesAppearing|Bannerman Doge|Snache|Baa Baa|Jackie Peng}}
+:''For the [[Invasion Stage]], see [[Ahosan Domain/Doge's Rebellion|here]].''
+'''Ahosan Domain''' is the second stage in [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]].
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn385 01 s en.png]]
+|stage location = [[File:Mapname385 s en.png]]
+|energy = 20
+|enemy castle hp = 5,000 HP
+|enemies = {{Magnification|Bannerman Doge|100%
+|Snache|100%
+|Baa Baa|100%
+|Jackie Peng|100%}}
+|boss = {{Magnification|Bannerman Doge|100%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +40 (100%, unlimited)
+|score reward = '''8,200''': [[Battle Items#Speed Up|Speed Up]] +1<br>
+'''7,800''': 25,000 XP<br>
+'''500''': 15,000 XP
+|XP = 380 XP
+|width = 3,800
+|max enemies = 15
+|jpname = Volcano Province
+|script = 阿火山国
+|romaji = Akazan Koku
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]]
+|difficulty = ★1
+|prev stage = [[Satsuma Imo Domain]]
+|next stage = [[Mentai Domain]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*3 [[Bannerman Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*3 [[Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Bannerman Doge]] spawns as the boss.
+**6 [[Baa Baa]]s spawn after 0.67 seconds<sup>20f</sup>, delay 2~8.67 seconds<sup>60f~260f</sup>.
+**4 [[Jackie Peng]]s spawn after 1.33 seconds<sup>40f</sup>, delay 5.33~8.67 seconds<sup>160f~260f</sup>.
+**Infinite [[Bannerman Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+A relatively easy stage. Bring any [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Trivia==
+*Ahosan Domain is named after the prefix 阿 ''a'' and 火山 ''kazan'' (volcano). ''Ho'' is one of the ''[[wikipedia:Kanji#Kun'yomi (native reading)|kun]]'' readings of 火, and the stage's name ignores the ''[[wikipedia:Rendaku|rendaku]]'' that normally causes 山 to be read as ''zan'' instead of ''san''.
+
+==Reference==
+*https://battlecats-db.com/stage/s01385-02.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

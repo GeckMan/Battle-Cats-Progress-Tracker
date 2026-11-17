@@ -1,0 +1,127 @@
+'''Ren Katagiri''' is a [[:Category:Rare Cats|Rare Cat]] that was updated to [[Version 6.8 Update|Version 6.8]] and is exclusive to the [[Power Pro Baseball Collaboration Event]]. She is acquired as a drop after beating the [[Power Pro Baseball Collaboration Event#Date Chance: Ren|Date Chance: Ren Stages]].
+
+{{Cat Info
+|ID = 388
+|rarity = RR
+|name1 = Ren Katagiri
+|name2 = Ren Katagiri CC
+}}
+
+==Evolution==
+Evolves into '''Ren Katagiri CC''' at level 10.
+
+==Strategy/Usage==
+Ren's attack power is too low to act as a reliable zombie killer, relegating her to a narrow niche of zombie knockbacker- a niche already filled by [[Welterweight Cat (Rare Cat)|Welterweight Cat]]. However, she is not useless, as this effect can be used to greatly help against zombie bosses like [[Miss Haka]] and [[Big Sal]] to prevent them from annihilating your base. When used as support for strong zombie killers like the [[Frontline Assault IRON LEGION (Gacha Event)|IRON LEGION]] ubers, Ren's little niche can greatly help against hard zombie bosses. Unfortunately, because of her low range and attack power, she will not be used outside of her niche.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 388
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni388 f00.png
+|Image2 = Uni388 c00.png
+|Name1 = Ren Katagiri
+|Desc1 = Dropping in from PowerPro Baseball!<br>Eager manager who's always two steps behind the hero.<br>Chance to knockback Zombies.
+|Name2 = Ren Katagiri CC
+|Desc2 = Dropping in from PowerPro Baseball!<br>Her devotion is just a bit too much sometimes.<br>Chance to knockback Zombies.
+|Name1 (JP) = 片桐恋
+|Desc1 (JP) = 実況パワフルプロ野球から参戦！<br>いつも主人公を追っかけている後輩マネージャー<br>たまにゾンビをふっとばす
+|Transl1 (JP) = Entered from Power Pro Baseball Live!<br>A junior manager who is always chasing after the main character.<br>She sometimes knocks away zombies!
+|Name2 (JP) = 片桐恋CC
+|Desc2 (JP) = 実況パワフルプロ野球から参戦！<br>彼女の愛はとても重い<br>たまにゾンビをふっとばす
+|Transl2 (JP) = Entered from Power Pro Baseball Live!<br>Her love is very serious.<br>She sometimes knocks away zombies!
+|Name1 (TW) = 片桐戀
+|Desc1 (TW) = 來自實況野球的新人物！<br>緊追主角不放的球隊經理學妹<br>偶爾會打飛不死生物
+|Name2 (TW) = 片桐戀CC
+|Desc2 (TW) = 來自實況野球的新人物！<br>她的愛過於沉重・・・<br>偶爾會打飛不死生物
+|Name1 (KR) = 카타기리 렌
+|Desc1 (KR) = 실황 파워풀 프로야구에서 참전!<br>언제나 주인공을 쫓아다니는 후배 매니저<br>가끔씩 좀비를 날려버린다
+|Name2 (KR) = 카타기리 렌CC
+|Desc2 (KR) = 실황 파워풀 프로야구에서 참전!<br>그녀의 사랑은 너무나 뜨겁다<br>가끔씩 좀비를 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ren Katagiri
+|Normal Base HP = 500
+|Normal Base AP = 60
+|Normal Range = 200
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 32
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 760
+|Normal Attack Type = Single
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Ren Katagiri CC
+|Evolved Base HP = 500
+|Evolved Base AP = 60
+|Evolved Range = 200
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 32
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 760
+|Evolved Attack Type = Single
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 60 damage<br>(56.25 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 32f <sub>1.07 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(956.25 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 1,020 damage<br>(956.25 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 32f <sub>1.07 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni388 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/389.html
+
+----
+{{CatNav|Misaki Konno|Karin Nekozuka}}
+----
+
+{{Power Pro Baseball}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Zombie Killer Cats]]

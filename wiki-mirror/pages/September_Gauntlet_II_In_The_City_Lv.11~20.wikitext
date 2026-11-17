@@ -1,0 +1,180 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Aku Doge|Pigge|Shy Boy|Doge Dark|Le'noir|The Red Malice}}
+
+{{Stage Info
+|stage name = [[File:Rc011.png]]
+[[File:Mapsn024 00 a en.png]]
+|stage location = [[File:Mapname024 a en.png]]
+|enemies = {{Magnification|Aku Doge|0
+|Pigge|0
+|Shy Boy|0
+|Doge Dark|0
+|Le'noir|0}}
+|boss = {{Magnification|The Red Malice|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,200
+|max enemies = 8
+|jpname = Revengers Lv.X
+|script = Revengers Lv.X
+|romaji = Revengers Lv.X
+|event = [[September Gauntlet II]]
+|event-chapter = [[September Gauntlet II]]
+|require = Clear [[Old Guys in the City (Monthly Event)|Old Guys in the City]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*1 [[Aku Doge]] spawns after 6.67 seconds<sup>200f</sup>.
+*3 [[Pigge]]s spawn after 0.07 seconds<sup>0f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Shy Boy]] spawns after 20 seconds<sup>600f</sup>.
+* Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~16.67 seconds<sup>300f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[The Red Malice]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+**3 [[Aku Doge]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+**Infinite [[Pigge]]s spawn after 0.07 seconds<sup>0f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Le'noir]] spawns after 26.67 seconds<sup>800f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+!rowspan="2" scope="col" style="text-align: center;" |In The City Lv.
+!colspan="6" style="text-align: center;" |Strength magnifications
+!rowspan="2" style="text-align: center;" |Energy Cost
+!colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+!scope="col" |[[Aku Doge]]
+!scope="col" |[[Pigge]]
+!scope="col" |[[Shy Boy]]
+!scope="col" |[[Doge Dark]]
+!scope="col" |[[Le'noir]]
+!scope="col" |[[The Red Malice]]
+!scope="col" |Treasure
+!scope="col" |Base XP
+|-
+!scope="row" |11
+|200%
+|1,800%
+|800%
+|400%
+|100%
+|250%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |12
+|222%
+|1,933%
+|889%
+|444%
+|111%
+|261%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |13
+|244%
+|2,066%
+|978%
+|488%
+|122%
+|272%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |14
+|266%
+|2,199%
+|1,067%
+|532%
+|133%
+|283%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |15
+|288%
+|2,332%
+|1,156%
+|576%
+|144%
+|294%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|310%
+|2,465%
+|1,245%
+|620%
+|155%
+|305%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |17
+|332%
+|2,598%
+|1,334%
+|664%
+|166%
+|316%
+| 140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |18
+|354%
+|2,731%
+|1,423%
+|708%
+|177%
+|327%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |19
+|376%
+|2,846%
+|1,512%
+|742%
+|188%
+|338%
+|150
+|Cat Jobs +2
+|2,850
+|-
+! scope="row" |20
+|400%
+|3,000%
+|1,600%
+|800%
+|200%
+|350%
+|150
+|Rare Ticket +1
+|2,850
+|-
+|}
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s24024.html
+
+==Trivia==
+This is the only monthly gauntlet II that does not reward 1 Aku Catfruit Seed upon completion of the second to last stage - instead rewarding two Cat Jobs
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

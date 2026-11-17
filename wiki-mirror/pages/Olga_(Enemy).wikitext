@@ -1,0 +1,89 @@
+:''This article is about the enemy. For the Cat Unit, see [[Olga (Rare Cat)]].''
+'''Olga''' (オルガ ''Oruga'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Enemy Info
+|name = Olga
+|image = E 090.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 600¢ - 2370¢
+}}
+
+==Enemy==
+She has higher health and damage than [[Nono (Enemy)|Nono]], as well as more standing range. However, she has a longer attack frequency and low movement speed.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]]:
+**[[Cats After All]] (100%)
+**[[Healer's Journey]] (100%)
+**[[A Strange Bottled Girl]] (300%)
+**[[Subjugated Cats]] (300%)
+*[[Healer Awakens!]]: [[Healer Awakens (Expert)]] (800%)
+*[[Titi Awakens!]]: [[Titi Awakens (Veteran)]] (600%)
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[Blade Ritual]] (600%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.1|Healer & Co. Lv.1]] (400%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.2]] (600%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.3]] (800%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.4]] (1,000%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.5]] (1,200%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.6]] (1,360%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.7]] (1,520%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.8]] (1,680%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.9]] (1,840%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.10]] (2,000%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[Blade Ritual]] (600%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Olga
+|Health = 2400
+|Attack Power = 240
+|Attack Range = 310
+|Attack Type = Area
+|Time Between Attacks = 89
+|Movement Speed = 10
+|Knockback = 2
+|Foreswing = 20
+|Backswing = 25
+|Ability = -
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|090 e ja.png|MediaWiki:Custom-AnimationViewer/090 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+090 e.png|Olga's spritesheet (EN/KR)
+090 e ja.png|Olga's spritesheet (JP)
+090 e tw.png|Olga's spritesheet (TW)
+IdleOlgaJP.gif|Olga's moving animation
+</gallery>
+
+==Trivia==
+*Olga, [[Nono (Enemy)|Nono]], [[Norn (Enemy)|Norn]], [[Yoichi (Enemy)|Yoichi]], [[Aura (Enemy)|Aura]] and [[Healer (Enemy)|Healer]] were originally [[:Category:Typeless Enemies|Typeless]] instead of [[:Category:Traitless Enemies|Traitless]]. This seems to have changed in [[Version 6.5 Update|Version 6.5]], [[Version 6.6 Update|6.6]] or [[Version 6.7 Update|6.7]].
+
+==Reference==
+*https://battlecats-db.com/enemy/092.html
+
+----
+{{EnemyNav|Nono|Norn}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

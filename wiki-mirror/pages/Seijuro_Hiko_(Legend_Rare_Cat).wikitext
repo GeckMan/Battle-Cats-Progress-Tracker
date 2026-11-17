@@ -1,0 +1,103 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Seijuro Hiko (Enemy)]].''
+'''Seijuro Hiko''' is a [[:Category:Legend Rare Cats|Legend Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event/Gacha Drop|Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Cat Info
+|ID = 881
+|rarity = LR
+|name1 = Seijuro Hiko
+|name2 = Seijuro Hiko CC
+}}
+
+==Evolution==
+Evolves into '''Seijuro Hiko CC''' at level 10.
+
+==Strategy/Usage==
+Seijuro Hiko is very simple: he stays in the back and dishes out ludicrously high DPS, reaching 249,900 damage and ~35,197 DPS at Lv.30 (or 396,890 damage and 55,900 DPS at Lv.50). It goes without saying that these numbers are phenomenal, and he outranges a majority of basic targets with relative ease, even possessing [[Barrier Breaker]] for Starred Aliens. The Floating trait in particular is loaded with high-pressure melees that sometimes boast health ranges in the multi-millions, making Seijuro a perfect candidate for ripping huge chunks off their lifespan. With his [[Freeze]]'s uptime at ~33%, he can supercede the need for a dedicated crowd-controller entirely depending on the situation at hand. He's particularly good for [[Into the Future]] and [[Cats of the Cosmos]], where he can render many Alien roadblocks like [[Raging Bahamut Cat]] basically worthless.
+
+However, Seijuro is not without his faults. He is highly susceptible to pierce of any kind, and has almost no resistances to speak of outside of [[Immune to Weaken]] and [[Immune to Slow|Slow]]—good for [[Calamary]], as well as [[Queen B]]/[[Croakley]] respectively. While he's not squishy, his knockback count allows him no opportunity to leverage his bulk against most Wavers or Surgers either, so he gets juggled to death relatively easily if you're not careful. Furthermore, his lack of pierce stands out given his mediocre foreswing animation; just like [[Shining Amaterasu (Uber Rare Cat)|Shining Amaterasu]], he actually has to hit an enemy for his high burst damage to matter. Seijuro attacks fast enough that it isn't too big of a problem, but he still won't be winning any gold medals for getting thwarted by an inconspicuously placed [[Gabriel]]. Regardless, these issues usually amount to nothing more than tedium, especially since you can get your value's worth out of him in just a few good swings. Consider yourself lucky if you end up with him.
+
+{{Job|Classification = Nuker & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 881
+|Type = [[:Category:Legend Rare Cats|Legend Rare Cat]]
+|Image1 = Uni881 f00.png
+|Image2 = Uni881 c00.png
+|Name1 (JP) = 比古清十郎
+|Desc1 (JP) = 「るろうに剣心」から参戦！<br>飛天御剣流の第十三代目継承者で剣心の師匠<br>浮きとエイリアンに極ダメージを与え、一瞬動きを止める
+|Name2 (JP) = 比古清十郎CC
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>強靭な肉体から繰り出される剣術は圧倒的な力を誇る<br>浮きとエイリアンに極ダメージを与え、一瞬動きを止める
+}}
+
+==Cost==
+*Chapter 1: 3,100¢
+*Chapter 2: 4,650¢
+*Chapter 3: 6,200¢
+{{Upgrade Cost|LR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Seijuro Hiko
+|Normal Base HP = 5000
+|Normal Base AP = 2000
+|Normal Range = 460
+|Normal Foreswing = 56
+|Normal Attack Cooldown = 157
+|Normal Attack Length = 127
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 3100
+|Normal Recharge = 4400
+|Normal Attack Type = Area
+|Normal Targets = Floating,Alien
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Insane Damage}} Deals [[Insane Damage|insane damage]] to target traits<br>
+{{AbilityIcon|Immune to Slow|Immune to Weaken}} [[Immune to Slow]] and [[Immune to Weaken|Weaken]]
+|Evolved Name = Seijuro Hiko CC
+|Evolved Base HP = 5600
+|Evolved Base AP = 2450
+|Evolved Range = 460
+|Evolved Foreswing = 56
+|Evolved Attack Cooldown = 157
+|Evolved Attack Length = 127
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 3100
+|Evolved Recharge = 4400
+|Evolved Attack Type = Area
+|Evolved Targets = Floating,Alien
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Insane Damage}} Deals [[Insane Damage|insane damage]] to target traits<br>
+{{AbilityIcon|Immune to Slow|Immune to Weaken}} [[Immune to Slow]] and [[Immune to Weaken|Weaken]]
+|Lv.MAX = Lv.50+9
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni881 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/882.html
+
+----
+{{CatNav|Makoto Shishio|882-1}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Legend Rare Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Weaken Immunity]]
+[[Category:Barrier Breaker Cats]]
+[[Category:Cats with Insane Damage ability]]

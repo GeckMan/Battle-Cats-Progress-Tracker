@@ -1,0 +1,135 @@
+{{PCExclusive}}
+'''Mimiluga''' is a [[:Category:Uber Rare Cats|Uber Rare Cat]] that is exclusive to the VIP [[Tales of the Nekoluga (Gacha Event)|Tales of the Nekoluga]] Gacha, only available in the [[Minna de Nyanko Daisensou|PC version]].
+
+{{Cat Info
+|ID = 915
+|rarity = UR
+|version = PC
+|name1 = Mimiluga
+|name2 = Mimilan Pasalan
+|image1 = 10915 1.png
+|image2 = 10915 2.png
+}}
+
+==Evolution==
+Evolves into '''Mimilan Pasalan''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+This form is <u>useless by design</u>. Similarly to the other cats from Tales of the Nekoluga, this Cat is not meant to be used until it evolves.
+
+==='''Evolved Form'''===
+Use him if you're feeling lucky. The core of his performance relies on how many status effects he inflicts when he's present. If he performs a [[Critical Hit]], he can wipe out an entire wave of Metal enemies instantly, and its range may be very helpful for dealing with enemies that have under 400 range, due to having a decent damage output for its range. Do note that this Mimilan Pasalan is quite fragile compared to other Uber Rares. You'll most certainly regret if you don't protect him properly, so using the [[Tank Cat (Normal Cat)|Eraser Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]] duo is a good idea.
+
+{{Job|Classification = N/A|EvolvedClass = Crowd-Controller & Super-Backliner|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 915<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10915 f00.png
+|Image2 = Uni10915 c00.png
+|Name1 (JP) = ミミルガ (Mimiruga, Mimiluga)
+|Desc1 (JP) = ネコなのか何なのか、<br>まったく正体不明の謎のキャラクター<br>進化させると…
+|Transl1 (JP) = Whether it's a cat or something else,<br>a character of completely unknown identity<br>When you evolve it...
+|Name2 (JP) = ミミランパサラン (Mimiran Pasaran, Mimilan Pasalan)
+|Desc2 (JP) = ネコなのか何なのか、<br>まったく正体不明の謎のキャラクター<br>攻撃時、様々な妨害攻撃をたまに与える(範囲攻撃)
+|Transl2 (JP) = Whether it's a cat or something else,<br>a character of completely unknown identity<br>When attacking, sometimes inflicts a variety of interference attacks (Range Attacks)
+}}
+
+==Cost==
+*Chapter 1: 3,000円
+*Chapter 2: 4,500円
+*Chapter 3: 6,000円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+{{Cat Stats Manual
+|Normal Name = Mimiluga
+|Normal Health = 500 HP
+|Normal Attack Power = 150 damage<br>(64.29 DPS)
+|Normal Attack Range = 140
+|Normal Attack Frequency = 70f <sub>2.33 seconds</sub>
+|Normal Movement Speed = 4
+|Normal Knockback = 5 times
+|Normal Attack Animation = 13f <sup>0.43s</sup>
+|Normal Recharge Time = 33.33 ~ 24.53 seconds
+|Normal MaxHP = 8,500 HP
+|Normal MaxAttack = 2,550 damage<br>(1,092.86 DPS)
+|Normal Attack Type = Single Attack
+|Normal Abilities = [[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only)
+|Evolved Name = Mimilan Pasalan
+|Evolved Health = 20,400 HP
+|Evolved Attack Power = 48,450 damage<br>(3,855.44 DPS)
+|Evolved Attack Range = 650
+|Evolved Attack Frequency = 377f <sub>12.57 seconds</sub>
+|Evolved Movement Speed = 4
+|Evolved Knockback = 1 time
+|Evolved Attack Animation = 110f <sup>3.67s</sup>
+|Evolved Recharge Time = 333.67 ~ 324.87 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = 30% chance to [[Freeze|freeze]] all enemies for 120f <sub>4 seconds</sub><br>
+30% chance to [[Slow|slow]] all enemies for 150f <sub>5 seconds</sub><br>
+30% chance to [[Weaken|weaken]] all enemies to 50% for 150f <sub>5 seconds</sub><br>
+30% chance to [[Knockback|knockback]] all enemies<br>
+30% chance to perform a [[Critical Hit]]<br>
+[[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only)
+|Lv.MAX = Lv.40
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10915_f.png|MediaWiki:Custom-AnimationViewer/PC915_f.json}}
+|-|Evolved=
+{{AnimationViewer|10915_c.png|MediaWiki:Custom-AnimationViewer/PC915_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10915 f00}}
+
+==Reference==
+*https://gamebiz.jp/?p=217861
+
+----
+{{CatNav|Kitaro Cat & Nezumi-Otoko Cat|Natsu Mikan}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Cat Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Critical Hit Cats]]

@@ -1,0 +1,28 @@
+{{#invoke:Navbox|main
+|template = Template:Hiroshi Mihara
+|title = [[Hiroshi Mihara Collaboration Event]]
+|navbox_class = hiroshi-mihara
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Hiroshi Mihara (Rare Cat)|Hiroshi Mihara]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Hiroshi Mihara (Enemy)|Hiroshi Mihara]]
+*[[Idol Mihara & Cat (Enemy)|Idol Mihara & Cat]]
+
+|header3 = Stages
+|group3 = Chasing Dream Idols
+|list3 =
+*[[Shiryouko's Photography Studio]]
+
+|group4 = Hiroshi Mihara Awakens!
+|list4 =
+*[[Road to Hiroshi Evolution (Easy)]]
+*[[Road to Hiroshi Evolution (Normal)]]
+}}<templatestyles src="Hiroshi Mihara/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Hiroshi Mihara]]}}<noinclude>[[Category:Navboxes]]</noinclude>

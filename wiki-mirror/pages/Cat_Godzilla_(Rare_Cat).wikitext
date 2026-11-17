@@ -1,0 +1,120 @@
+{{JPExclusive}}
+:''Not to be confused with [[Godzilla Cat (Rare Cat)|Godzilla Cat]].''
+
+'''Cat Godzilla''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Shin Japan Heroes Universe Collaboration Event#Rescue! Cat Godzilla|Rescue! Cat Godzilla]]. It was added in [[Version 12.2 Update|Version 12.2]].
+
+{{Cat Info
+|ID = 702
+|rarity = RR
+|name1 = Cat Godzilla
+|name2 = Shin Cat Godzilla
+}}
+
+==Evolution==
+Evolves into '''Shin Cat Godzilla''' at level 10.
+
+==Strategy/Usage==
+Cat Godzilla is essentially [[Archer Cat (Rare Cat)|Cataur]] with worse speed and range in exchange for all around better stats against Floating. Floating enemies tend to have few knockbacks, so Multi-Hit is not as big of a deal as it would be against other traits. It is overall outclassed by [[Mer-Cat (Rare Cat)|Cameraman Cat]], but it can have use in early-game.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 702
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni702 f00.png
+|Image2 = Uni702 c00.png
+|Name1 (JP) = ゴジラにゃんこ (Gojira Nyanko, Godzilla Cat)
+|Desc1 (JP) = 憧れのヒーロー「ゴジラ」になりきるネコ<br>海から突然現れては海水浴客を驚かせている<br>浮いてる敵に打たれ強く、超ダメージを与える
+|Transl1 (JP) = A Cat who became its admired hero "Godzilla"<br>Surprises beachgoers by suddenly appearing from the sea<br>Tough against Floating enemies, deals Super damage
+|Name2 (JP) = シン・ゴジラにゃんこ (Shin・Gojira Nyanko, True・Godzilla Cat)
+|Desc2 (JP) = 憧れのヒーロー「ゴジラ」になりきるネコ<br>ありあまるパワーで街の空き缶を潰して回る<br>浮いてる敵に打たれ強く、超ダメージを与える
+|Transl2 (JP) = A Cat who became its admired hero "Godzilla"<br>Goes around the city crushing empty cans with more than enough power<br>Tough against Floating enemies, deals Super damage
+}}
+
+==Cost==
+*Chapter 1: 440円
+*Chapter 2: 660円
+*Chapter 3: 880円
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Godzilla
+|Normal Base HP = 320
+|Normal Base AP = 160,160,160
+|Normal Range = 310
+|Normal Foreswing = 41,65,90
+|Normal Attack Cooldown = 91
+|Normal Attack Length = 122
+|Normal Speed = 4
+|Normal KB = 2
+|Normal Cost = 440
+|Normal Recharge = 540
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,720 at 41f <sup>1.37s</sup>, 2,720 at 65f <sup>2.17s</sup>, 2,720 at 90f <sup>3s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Shin Cat Godzilla
+|Evolved Base HP = 320
+|Evolved Base AP = 160,160,160
+|Evolved Range = 310
+|Evolved Foreswing = 41,65,90
+|Evolved Attack Cooldown = 91
+|Evolved Attack Length = 122
+|Evolved Speed = 4
+|Evolved KB = 2
+|Evolved Cost = 440
+|Evolved Recharge = 540
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,720 at 41f <sup>1.37s</sup>, 2,720 at 65f <sup>2.17s</sup>, 2,720 at 90f <sup>3s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 320 HP
+|val-Normal-Attack Power = 480 damage<br>(79.56 DPS)
+|val-Normal-Attack Range = 310
+|val-Normal-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 41f <sup>1.37s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 18 ~ 9.2 seconds
+|val-Normal-MaxHP = 5,440 HP
+|val-Normal-MaxAttack = 8,160 damage<br>(1,352.49 DPS)
+|val-Evolved-Health = 5,440 HP
+|val-Evolved-Attack Power = 8,160 damage<br>(1,352.49 DPS)
+|val-Evolved-Attack Range = 310
+|val-Evolved-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 41f <sup>1.37s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 18 ~ 9.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni702 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/703.html
+
+----
+{{CatNav|Kamen Rider Cat|Evangelion Cat}}
+----
+
+{{Shin Japan Heroes Universe}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

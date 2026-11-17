@@ -1,0 +1,209 @@
+{{PageBanner|Version 5.0 5.jpg}}
+
+==Release Dates==
+*'''Japanese:''' April 1st, 2016
+*'''International:''' April 22nd, 2016
+
+==Cats==
+Added 2 new units, CRO ranges from 268~269:
+{{Update|mode=cats
+|Red Riding Mina
+|[[File:Mapname027 n en.png|200px|link=Weak & Mildly Acidic]]
+|Baby Gao
+|[[file:Gatya bnr88 en.png|400px|link=UBERFEST (Gacha Event)]]
+}}
+
+*Added 26 new [[True Form]]s:
+{{Collapsible}}
+{{Update|mode=trueforms
+|Bodhisattva Cat
+|'''Range:''' 270 → 300<br>
+{{AbilityIcon|Weaken|size=40|nolink=on}} 0% → 30% to 50% for 120f<sup>4s</sup>
+|Nekoluga
+|'''ATT:''' 17,000 → 34,000 (+100%)<br>
+'''DPS:''' 897.89 → 1,795.77 (+100%)<br>
+{{AbilityIcon|Freeze|size=40|nolink=on}} 0% → 100% 60f<sup>2s</sup><br>
+|Bath Cat
+|'''HP:''' 11,900 → 20,400 (+71.43%)<br>
+'''DPS:''' 1,577.32 → 2,125 (+34.72%)<br>
+'''Atk Freq:''' 6.47s → 4.8s<br>
+'''Atk Cooldown:'''' 5.3s → 3.63s
+|Ice Cat
+|'''ATT:''' 22,100 → 30,600 (+38.46%)<br>
+'''DPS:''' 3,622.95 → 5,016.39 (+38.46%)<br>
+'''Range:''' 325 → 425<br>
+{{AbilityIcon|Freeze|size=40|nolink=on}} 50% → 100%
+|Lesser Demon Cat
+|'''HP:''' 49,300 → 66,300 (+34.48%)<br>
+'''ATT:''' 38,250 → 63,750 (+66.67%)<br>
+'''DPS:''' 16,875 → 28,125 (+66.67%)
+|Viking Cat
+|'''HP:''' 13,005 → 26,010 (+100%)<br>
+{{AbilityIcon|Area Attack|size=40|nolink=on}}
+|Pirate Cat
+|'''HP:''' 5,950 → 15,300 (+157.14%)<br>
+'''Range:''' 270 → 300<br>
+{{AbilityIcon|Knockback|size=40|nolink=on}} 30% → 40%
+|Fortune Teller Cat
+|'''HP:''' 6,425 → 12,852 (+100.03%)<br>
+{{AbilityIcon|Knockback|size=40|nolink=on}} 30% → 40%
+|Baby Cat
+|'''HP:''' 88,400 → 105,400 (+19.23%)<br>
+'''Range:''' 140 → 240<br>
+'''Speed:''' 9 → 12<br>
+{{AbilityIcon|Wave Attack|size=40|nolink=on}} 0% → 100%
+|Maeda Keiji
+|'''HP:''' 64,600 → 98,600 (+52.63%)<br>
+'''DPS:''' 3,489.47 → 6,027.27 (+72.73%)<br>
+'''Range:''' 250 → 320<br>
+'''Atk Freq:''' 6.33s → 3.67s<br>
+'''Atk Cooldown:'''' 5.97s → 3.3s<br>
+{{AbilityIcon|Strengthen|size=40|nolink=on}} at 30% → 50% health
+|Windy
+|'''HP:''' 25,500 → 51,000 (+100%)<br>
+'''ATT:''' 43,435 → 68,935 (+58.71%)<br>
+'''DPS:''' 3,193.75 → 5,068.75 (+58.71%)<br>
+'''Range:''' 420 → 450<br>
+'''Speed:''' 6 → 12
+|Thundia
+|'''HP:''' 25,500 → 51,000 (+100%)<br>
+'''ATT:''' 43,435 → 68,935 (+58.71%)<br>
+'''DPS:''' 3,282.24 → 5,209.19 (+58.71%)<br>
+'''Range:''' 410 → 440<br>
+'''Speed:''' 5 → 10
+|Megidora
+|'''HP:''' 64,600 → 81,600 (+26.32%)<br>
+'''ATT:''' 25,466 → 29,716 (+16.69%)<br>
+'''DPS:''' 5,305.42 → 6,190.83 (+16.69%)<br>
+'''Range:''' 410 → 425<br>
+'''Speed:''' 15 → 20
+|Crazed Cat
+|'''HP:''' 5,220 → 6,380 (+22.22%)<br>
+'''ATT:''' 405 → 492 (+21.48%)<br>
+'''DPS:''' 328.38 → 398.92 (+21.48%)<br>
+'''Speed:''' 20 → 28
+|Crazed Tank Cat
+|'''HP:''' 15,660 → 18,995 (+21.3%)<br>
+'''Speed:''' 16 → 20
+|Crazed Axe Cat
+|'''HP:''' 10,440 → 12,615 (+20.83%)<br>
+'''ATT:''' 1,885 → 3,190 (+69.23%)<br>
+'''DPS:''' 2,094.44 → 3,5544.44 (+69.23%)
+|Crazed Gross Cat
+|'''HP:''' 20,880 → 25,375 (+21.53%)<br>
+{{AbilityIcon|Wave Attack|size=40|nolink=on}} Level 3 → 4
+|Crazed Cow Cat
+|'''Speed:''' 50 → 66
+|Crazed Bird Cat
+|'''ATT:''' 8,612 → 10,497 (+21.89%)<br>
+'''DPS:''' 4,532.63 → 5,337.46 (+17.76%)<br>
+'''Range:''' 205 → 220<br>
+'''Atk Freq:''' 1.9s → 1.97s<br>
+'''Foreswing''': 0.6s → 0.67s<br>
+'''Backswing''': 0.77s → 0.7s
+|Crazed Fish Cat
+|'''HP:''' 36,540 → 44,370 (+21.43%)<br>
+'''ATT:''' 9,395 → 11,425 (+21.61%)<br>
+'''DPS:''' 5,317.92 → 6,466.98 (+21.61%)
+|Crazed Lizard Cat
+|'''ATT:''' 10,440 → 12,760 (+22.22%)<br>
+'''DPS:''' 2,466.14 → 3,014.17 (+22.22%)<br>
+'''Range:''' 400 → 415<br>
+|Crazed Titan Cat
+|'''HP:''' 52,200 → 63,800 (+22.22%)<br>
+{{AbilityIcon|Wave Attack|size=40|nolink=on}} 10% → 15%
+|Koi Cat
+|'''Speed:''' 10 → 25<br>
+{{AbilityIcon|Area Attack|size=40|nolink=on}}
+|Madam Bride
+|'''HP:''' 19,380 → 29,070 (+50%)<br>
+{{AbilityIcon|Survive|size=40|nolink=on}} 0% → 100%<br>
+{{AbilityIcon|Immune to Warp|size=40|nolink=on}}
+|Momotaro
+|'''HP:''' 54,400 → 68,000 (+25%)<br>
+'''ATT:''' 12,750 → 19,550 (+53.33%)<br>
+'''DPS:''' 2,833.33 → 4,344.44 (+53.33%)<br>
+'''Range:''' 405 → 435<br>
+'''Speed:''' 44 → 48<br>
+{{AbilityIcon|Freeze|size=40|nolink=on}} 30% → 40%
+|Akira
+|'''Backswing''': 1.6s → 1.47s<br>
+[[File:Alientraiticon.png|40px|link=]]<br>
+{{AbilityIcon|Strong Against|size=40|nolink=on}}<br>
+{{AbilityIcon|Strengthen|size=40|nolink=on}} Removed
+}}
+</div>
+{{clear}}
+
+==Enemies==
+{{Update|mode=enemies
+|Manic Mohawk Cat
+|Manic Eraser Cat
+|Manic Dark Cat
+|Manic Macho Legs
+|Manic Lion Cat
+|Manic Flying Cat
+|Manic Island Cat
+|Manic King Dragon
+|Manic Jamiera Cat
+|Kiss and Koi
+|Madam the Savannah
+|Two Can
+|Codename "Red Riding"
+}}
+
+==Stages==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+|-
+! scope="row" |[[Stories of Legend]]
+|[[File:Mapname027 n en.png|200px|link=Weak & Mildly Acidic]]
+|-
+! scope="row" |[[Special Events|Events]]
+|[[File:Mapname004 b en.png|200px|link=Growing Green]] [[File:Mapname003 b en.png|200px|link=Growing Purple]] [[File:Mapname002 b en.png|200px|link=Growing Red]] [[File:Mapname001 b en.png|200px|link=Growing Blue]] [[File:Mapname000 b en.png|200px|link=Growing Yellow]] [[File:Mapname102 s en.png|200px|link=Deathhawk (Deadly)]] [[File:Mapname103 s en.png|200px|link=Vulcanizer (Deadly)]] [[File:Mapname104 s en.png|200px|link=Unjust War (Deadly)]] [[File:Mapname105 s en.png|200px|link=Muscle Party (Deadly)]] [[File:Mapname106 s en.png|200px|link=Lots O' Lion (Deadly)]] [[File:Mapname107 s en.png|200px|link=Forest Beasts (Deadly)]] [[File:Mapname108 s en.png|200px|link=Ogre Island (Deadly)]] [[File:Mapname109 s en.png|200px|link=Draconian (Deadly)]] [[File:Mapname110 s en.png|200px|link=Resident Feline (Deadly)]] [[File:Mapname111 s en.png|200px|link=Bad to Worse]] [[File:Mapname112 s en.png|200px|link=Day of Judgement]] [[File:Mapname114 s en.png|200px|link=Techneurosis]]
+|}
+
+===Stage Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+! scope="col" |Changes
+|-
+! scope="row" rowspan="2" |3 Star Additions
+|[[File:Mapname023 n en.png|200px|link=Battle Royale]]
+|'''Magnification:''' x1 → x1.4
+|}
+
+==Gacha Events==
+===Banner Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Banner
+! scope="col" |Added Units
+! scope="col" |Removed Units
+|-
+|[[file:Gatya bnr88 en.png|400px|link=UBERFEST (Gacha Event)]]
+|<center>{{CatIcon|Baby Gao|size=80px}}</center>
+|<center>N/A</center>
+|}
+
+==Miscellaneous==
+*Added [[Catseye]] feature.
+*Added [[Catfruit]] feature.
+*Added [[Gamatoto Expedition]] feature.
+*[[Cat Combo]]s in lineups can now be viewed as triggered in the [[Cat Combo]] book.
+*Fixed the amount of energy when using Cat Food to recover.
+*[[User Rank]] rewards can now be viewed.
+
+==Gallery==
+<gallery>
+Version 5.0 5.jpg|Update Banner (EN)
+bnr_update5_02.png|Update Banner (JP)
+update5_img14.jpg|Update Poster (JP)
+</gallery>
+
+{{Versions}}

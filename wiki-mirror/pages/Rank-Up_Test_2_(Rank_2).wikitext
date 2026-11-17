@@ -1,0 +1,56 @@
+{{EnemiesAppearing|Catclaw Castle|Doge|Teacher Bear|Le'boin}}
+'''Rank-Up Test 2''' is the second stage in [[Catclaw Championships#Catclaw Championships Rank 2|Catclaw Championships Rank 2]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:E 710.png]]
+[[File:Mapsn001 01 g en.png]]
+|stage location = [[File:Mapname001 g en.png]]
+|energy = 0
+|enemy castle hp = 25,000 HP
+|base = {{Magnification|Catclaw Castle|250,000%}}
+|enemies = {{Magnification|Doge|100%
+|Teacher Bear|100%
+|Le'boin|100%}}
+|treasure = - [[Leadership]] +3 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 10 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Promotion Exam 2
+|script = 昇段試験２
+|romaji = Shōdan Shiken 2
+|star = 1
+|dojo-chapter = [[Catclaw Championships#Catclaw Championships Rank 2|Catclaw Championships Rank 2]]
+|prev stage = [[Rank-Up Test 1 (Rank 2)|Rank-Up Test 1]]
+|next stage = [[Rank-Up Test 3 (Rank 2)|Rank-Up Test 3]]
+}}
+
+==Restrictions==
+*This stage uses [[Empire of Cats]] Chapter 1 deploy costs.
+*Fixed Lineup: [[Cat (Normal Cat)|Macho Cat]], [[Tank Cat (Normal Cat)|Wall Cat]], [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Titan Cat (Normal Cat)|Mythical Titan Cat]].
+
+==Battleground==
+*The enemy base here is a [[Catclaw Castle (Enemy Base)|Catclaw Castle]].
+*4 [[Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Teacher Bear]] spawns after 30 seconds<sup>900f</sup>.
+*Infinite [[Doge]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*8 [[Doge]]s spawn after 63.33 seconds<sup>1,900f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Le'boin]] spawns after 66.67 seconds<sup>2,000f</sup>.
+
+==Strategy==
+To beat this stage, you'll have to learn two different aspects of the game: the '''Endurance''' and '''Range''' of your cats. [[Titan Cat (Normal Cat)|Mythical Titan]] has high health and a single knockback, which means it can tank several hits from the Le'Boin. However, Teacher Bear does too much damage for the Titan to be a viable choice against it, and that is where [[Lizard Cat (Normal Cat)|Dragon Cat]] comes in. Dragon is able to '''outrange''' teacher bear, being able to deal damage to it while standing at a safe distance to not get hit.
+
+Using this knowledge, you can start stacking dragon cats at the beginning of the stage before the Teacher Bear spawns, and kill it before the Le'Boin spawns. The dragons are not effective against the Le'Boin, as they have the same standing range, and Le'Boin has high damage. This is where Mythical Titan comes in. Mythical Titan can tank several hits from Le'boin before dying, which will chip down the elephant over time. Once Le'Boin is dead, you've won the stage.
+
+==Hints==
+The first hint can be viewed within the Enemies Appearing window before beginning the stage. The second only appears as a defeat message when failing it.
+*Against ranged attacker {{Color|Blue|Teacher Bear,}}<br>use Long-range units like {{Color|Blue|Lizard Cat}}.<br>Versus hard-hitting enemies like {{Color|Blue|Le'boin}},<br>tough units like {{Color|Blue|Titan Cat}} are the answer.<br>Leverage a Cat Unit's strengths to win!
+*Dragon Cat can attack from a distance,<br>making them effective against Teacher Bear!<br>Send out Mythical Titan Cat against Le'boin to<br>overwhelm with high vitality and defense!
+
+==Reference==
+*https://battlecats-db.com/stage/s37001-02.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]
+[[Category:No Continue Stages]]
+[[Category:Restriction Stages]]

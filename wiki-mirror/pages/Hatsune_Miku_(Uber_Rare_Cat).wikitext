@@ -1,0 +1,134 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Hatsune Miku''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 9.4 Update|Version 9.4]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]].
+
+{{Cat Info
+|ID = 535
+|rarity = UR
+|name1 = Hatsune Miku
+|name2 = Hatsune Miku CC
+}}
+
+==Evolution==
+Evolves into '''Hatsune Miku CC''' at level 10.
+
+==Strategy/Usage==
+Hatsune Miku is a multi-purpose unit, acting as a midrange rusher, attacker and, to some extent, a tanker versus her effective traits. Her effective damage is enough to one-shot annoying peons such as [[Ginger Snache]], [[Gabriel]], [[Mr. Angel]] and [[Brollow]], but it still results in low DPS for her range. Her weaken ability helps her live longer, but the duration is low. She doesn't work well as a tanker due to having too many knockbacks for one, and not having a lot of effective health compared to most other tankers. Although she could fit as a rusher, the average speed for one would be 30 or higher. Overall, despite being a multi-purpose unit, she is the master of none.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 535
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni535 f00.png
+|Image2 = Uni535 c00.png
+|Name1 = Hatsune Miku
+|Desc1 = Virtual singer loved by the entire Cat Empire!<br>Cute & stylish electric pop diva. (Area Attack)<br>Strong vs. & Weakens Red, Floating, Angels.
+|Name2 = Hatsune Miku CC
+|Desc2 = Virtual singer loved by the entire Cat Empire!<br>Her voice is famous around the globe. (Area Attack)<br>Strong vs. & Weakens Red, Floating, Angels.
+|Name1 (JP) = 初音ミク
+|Desc1 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>ポップでキュートな歌姫(範囲攻撃)<br>赤、浮き、天使にめっぽう強く、攻撃力を一瞬下げる
+|Transl1 (JP) = Popular virtual singer from the electronic world makes an appearance!<br>Popular and cute diva (Area Attack)<br>Strong against Red, Floating and Angels, guaranteed to weaken their damage
+|Name2 (JP) = 初音ミクCC
+|Desc2 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>清楚で可憐な歌声が魅力的な歌姫(範囲攻撃)<br>赤、浮き、天使にめっぽう強く、攻撃力を一瞬下げる
+|Transl2 (JP) = Popular virtual singer from the electronic world makes an appearance!<br>A charming diva with a beautiful voice (Area Attack)<br>Strong against Red, Floating and Angels, guaranteed to weaken their damage
+|Name1 (TW) = 初音未來
+|Desc1 (TW) = 來自虛擬世界的人氣歌手！<br>俏皮又可愛的電子歌姬(範圍攻擊)<br>善於攻擊紅,飄浮,天使敵,使瞬間攻擊力下降
+|Name2 (TW) = 初音未來CC
+|Desc2 (TW) = 來自虛擬世界的人氣歌手！<br>"清楚而可愛"歌聲是魅力的電子歌姬(範圍攻擊)<br>善於攻擊紅,飄浮,天使敵,使瞬間攻擊力下降
+|Name1 (KR) = 하츠네 미쿠
+|Desc1 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>팝하고 큐트한 전자 여가수 (범위 공격)<br>빨간, 떠있는 적, 천사에 엄청 강하고 공격력을 순간 낮춘다
+|Name2 (KR) = 하츠네 미쿠CC
+|Desc2 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>청순가련한 목소리가 매력적인 전자 여가수 (범위 공격)<br>빨간, 떠있는 적, 천사에 엄청 강하고 공격력을 순간 낮춘다
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hatsune Miku
+|Normal Base HP = 1900
+|Normal Base AP = 950
+|Normal Range = 350
+|Normal Foreswing = 49
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 101
+|Normal Speed = 15
+|Normal KB = 4
+|Normal Cost = 2600
+|Normal Recharge = 2400
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Angel
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 60f <sub>2 seconds</sub>
+|Evolved Name = Hatsune Miku CC
+|Evolved Base HP = 2500
+|Evolved Base AP = 1250
+|Evolved Range = 350
+|Evolved Foreswing = 49
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 101
+|Evolved Speed = 15
+|Evolved KB = 4
+|Evolved Cost = 2600
+|Evolved Recharge = 2400
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Angel
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,900 HP
+|val-Normal-Attack Power = 950 damage<br>(169.64 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 168f <sub>5.6 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 49f <sup>1.63s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Normal-Recharge Time = 80 ~ 71.2 seconds
+|val-Normal-MaxHP = 32,300 HP
+|val-Normal-MaxAttack = 16,150 damage<br>(2,883.93 DPS)
+|val-Evolved-Health = 42,500 HP
+|val-Evolved-Attack Power = 21,250 damage<br>(3,794.64 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 168f <sub>5.6 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 49f <sup>1.63s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Evolved-Recharge Time = 80 ~ 71.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni535 f00}}
+
+==Trivia==
+*This is one of the few non-legend rare units that has a unique death animation, the others being the other Ubers from Miku's collab, Evangelion collab ubers and the Moneko/Neneko variants.
+
+==Reference==
+*https://battlecats-db.com/unit/536.html
+
+----
+{{CatNav|Hades the Punisher|Sakura Miku}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with unique death animations]]

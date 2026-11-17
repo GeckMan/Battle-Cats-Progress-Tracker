@@ -1,0 +1,126 @@
+{{Unobtainable}}
+:''For the enemy encountered in the [[Merc Storia Collaboration Event]], see [[Yoichi (Enemy)]].''
+'''Yoichi''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. He was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 114
+|rarity = RR
+|name1 = Yoichi
+|name2 = Yoichi CC
+}}
+
+==Evolution==
+Evolves into '''Yoichi CC''' at level 10.
+
+==Strategy/Usage==
+This unit is completely useless. Although it has decent range at 340, its stats and abilities are pathetic. Single target units do not fare well against Dark enemies due to their extremely high damage and low range, meaning it will barely have any effect in action. It is completely outclassed by many other reliable anti-Dark units such as [[Flower Cat (Special Cat)|Bombercat]], [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] and [[Teacher BearCat (Rare Cat)|Assassin BearCat]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 114
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni114 f00.png
+|Image2 = Uni114 c00.png
+|Name1 = Yoichi
+|Desc1 = Joining the fight from Merc Storia!<br>A genteel youth with a reckless nature.<br>Small chance to Slow Dark enemies.
+|Name2 = Yoichi CC
+|Desc2 = Joining the fight from Merc Storia! Enjoys<br>drinking under the moon, but he's a light-weight.<br>Small chance to Slow Dark enemies.
+|Name1 (JP) = よいち (Yoichi)
+|Desc1 (JP) = メルクストーリアから参戦！<br>普段はちょっととぼけた礼儀正しい青年<br>ごくたまに黒い敵の動きを遅くする
+|Transl1 (JP) = Joining the war from Merc Storia!<br>A young man who enjoys moonshine but gets drunk easily<br>Occasionally slows down Dark enemies
+|Name2 (JP) = よいちCC (YoichiCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>月見酒が趣味だがすぐに酔ってしまう青年<br>ごくたまに黒い敵の動きを遅くする
+|Transl2 (JP) = Joining the war from Merc Storia!<br>A polite young man who is usually a bit of a jerk<br>Occasionally slows down Dark enemies
+|Name1 (TW) = 優依
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>平常是個有點恍神，但卻殷勤有禮的青年<br>偶爾會讓黑色敵人動作變慢
+|Name2 (TW) = 優依CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>喜歡喝酒賞月但每次都一下子就喝醉的青年<br>偶爾會讓黑色敵人動作變慢
+|Name1 (KR) = 요이치
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>평소엔 약간 엉뚱하지만 예의는 바른 청년<br>아주 가끔 검은 적의 움직임을 느리게 한다
+|Name2 (KR) = 요이치CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>달을 보며 술을 마시는 것이 취미지만 금방 취해버린다<br>아주 가끔 검은 적의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 740¢
+*Chapter 2: 1,110¢
+*Chapter 3: 1,480¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yoichi
+|Normal Base HP = 195
+|Normal Base AP = 98
+|Normal Range = 340
+|Normal Foreswing = 34
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 57
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 740
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Yoichi CC
+|Evolved Base HP = 265
+|Evolved Base AP = 138
+|Evolved Range = 340
+|Evolved Foreswing = 34
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 57
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 740
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 195 HP
+|val-Normal-Attack Power = 98 damage<br>(40.27 DPS)
+|val-Normal-Attack Range = 340
+|val-Normal-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 34f <sup>1.13s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 3,315 HP
+|val-Normal-MaxAttack = 1,665 damage<br>(684.25 DPS)
+|val-Evolved-Health = 4,505 HP
+|val-Evolved-Attack Power = 2,345 damage<br>(963.7 DPS)
+|val-Evolved-Attack Range = 340
+|val-Evolved-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 34f <sup>1.13s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni114 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/115.html
+
+----
+{{CatNav|Norn|Serum}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Gacha Cats]]

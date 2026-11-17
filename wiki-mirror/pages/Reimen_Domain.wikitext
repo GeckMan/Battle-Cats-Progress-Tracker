@@ -1,0 +1,58 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Bannerman Doge|Doge Dark|Otta-smack-u|Shadow Boxer K|Le'noir}}
+:''For the [[Invasion Stage]], see [[Reimen Domain/Doge's Rebellion|here]].''
+'''Reimen Domain''' is the eighth stage in [[Road to Unification#Road to Unification Pt. 2|Road to Unification Pt. 2]].
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Mapsn388 07 s en.png]]
+|stage location = [[File:Mapname388 s en.png]]
+|energy = 180
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Bannerman Doge|1,200%
+|Doge Dark|400%
+|Otta-smack-u|300%
+|Shadow Boxer K|150%}}
+|boss = {{Magnification|Le'noir|100%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +360 (100%, unlimited)
+|score reward = '''5,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''3,800''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': 200,000 XP
+|XP = 3,420 XP
+|width = 4,000
+|max enemies = 7
+|jpname = Cold Noodle Province
+|script = 冷麺国
+|romaji = Reimen Koku
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 2|Road to Unification Pt. 2]]
+|difficulty = ★7
+|prev stage = [[Settanbo Domain]]
+|next stage = [[Tsukai Domain]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*Infinite [[Bannerman Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*4 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'noir]] spawns as the boss.
+**8 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 40~53.33 seconds<sup>1,200f~1,600f</sup>.
+**2 [[Otta-smack-u]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20 seconds<sup>600f</sup>.
+**2 [[Shadow Boxer K]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+
+==Strategy==
+-
+
+==Trivia==
+*Reimen Domain is named after the Japanese word 冷麺 ''reimen'' (''[[wikipedia:naengmyeon|naengmyeon]]'', a Korean cold noodle dish).
+**In particular, the stage likely points to [[wikipedia:Morioka reimen|Morioka reimen]], a local dish of the capital city of [[wikipedia:Iwate Prefecture|Iwate Prefecture]] where the stage is located on the in-game map.
+
+==Reference==
+*https://battlecats-db.com/stage/s01388-08.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

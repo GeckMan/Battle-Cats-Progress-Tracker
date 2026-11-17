@@ -1,0 +1,101 @@
+'''Deathkory''' (デスコアラッキョ, ''Desu Koarakkyo'', '''Death Koalakkyo''') is an [[:Category:Aku Enemies|Aku]] variant of [[Kory]] that appears in [[Legend Stages]]. He was added in [[Version 11.0 Update|Version 11.0]].
+
+{{Enemy Info
+|name = Deathkory
+|image = E 588.png
+|first appearance = [[Aku Studies 501: Inquiry]]<br>
+'''UL''': [[Burning Crimson|Sub-chapter 41 - Burning Crimson]]
+|latest appearance = '''ZL:''' [[Euler Archipelago|Sub-chapter 15 - Euler Archipelago]]
+|money drop = 900¢ - 3,555¢
+}}
+
+==Enemy==
+Deathkory is an extremely resilient foe with very high damage, 100% chance to produce a level 6 wave attack and a tough shield. His health goes up to 3,670,000 if you don't use any [[:Category:Shield Piercing Cats|Shield Piercers]]. He however attacks slower than his other variants.
+
+==Strategy==
+Deathkory's Waves and Shield are equally threatening. His low range means you can continue to abuse ranged [[:Category:Wave Shield Cats|Wave Shields]], but melee ones will not work at all due to his very high damage. Either way, any should be used to buy your Shield Piercing units more time to destroy his shield, after which he becomes ironically much easier to deal with, as he has more knockbacks than [[Berserkory]].
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 588
+|Type = [[:Category:Aku Enemies|Aku]]
+|Image1 = Enemy icon 588.png
+|Name1 = Deathkory
+|Desc1 = An anarchic Kory fronting a deathcore<br>metal band. Never afraid to throw down in<br>the pit, banned from many venues for firing<br>Wave attacks into unsuspecting audiences.
+|Name1 (JP) = デスコアラッキョ (Desukoarakkyo, DeathKoalakkyo)
+|Desc1 (JP) = 過激なヘヴィメタバンドの一員として<br>注目を集めるエキセントリックコアラ。<br>ライブハウスごと「波動」でぶっ壊し<br>音楽業界から追放された。
+|Transl1 (JP) = This eccentric koala has been getting attention<br>as a member of an extreme heavy metal band.<br>Destroyed an entire live house with his "waves".<br>Now he is banned from the music industry.
+|Name1 (TW) = 惡魔無尾熊球
+|Desc1 (TW) = 作為一名重金屬音樂成員<br>吸引人們注意的怪異無尾熊。<br>以「波動」破壞每個搖滾現場<br>因此遭到音樂界放逐。
+|Name1 (KR) = 데스 코알락교
+|Desc1 (KR) = 과격한 헤비메탈 밴드의 일원으로<br>주목을 받고 있는 익센트릭 코알라<br>매번 라이브 하우스를 '파동'으로 망가뜨려<br>음악업계에서 추방되었다
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 41-2: [[Burning Crimson]] (100%)
+*Stage 46-5: [[Titanic Steakhouse]] (100%)
+
+===[[Zero Legends]]===
+*Stage 9-4: [[Aimless Dialogue]] (100%)
+*Stage 15-5: [[Euler Archipelago]] (100%)
+*Stage 25-2: [[No-Returns Library]] (120%)
+*Stage 32-3: [[Koala's Rest]] (120%)
+*Stage 37-5: [[Fishcake Fortress]] (120%)
+
+===[[Special Events|Event Stages]]===
+*[[Empress' Report 5]]: [[Aku Studies 501: Inquiry]] (100%)
+*[[Aku Citadel]]: [[Aku Citadel/Floor 9|Floor 9]] (100%)
+*[[Otherworld Colosseum#Cooldown Equality|Otherworld Colosseum]]: [[Round 3 (Cooldown Equality)|Round 3]] (100%)
+*[[Otherworld Colosseum#Mega Cat Cannon 2|Otherworld Colosseum]]: [[Round 2 (Mega Cat Cannon 2)|Round 2]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Deathkory
+|Health = 1270000
+|Attack Power = 23500
+|Attack Range = 190
+|Attack Type = Area
+|Time Between Attacks = 100
+|Movement Speed = 5
+|Knockback = 4
+|Foreswing = 21
+|Backswing = 9
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 6 [[Wave Attack]]<br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">600,000</span>; regenerates with 100% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+588 e.png|Deathkory's spritesheet
+IdleDeathkory.gif|Deathkory's walking animation
+</gallery>
+
+==Trivia==
+*He is likely a reference to [[wikipedia:Paul Stanley|Paul Stanley]], who was the guitarist of the world-famous rock band [[wikipedia:Kiss (band)|Kiss]].
+**Since [[Kory]] and [[Berserkory]] wield axes, Deathkory's weapon being a guitar may be a reference to how the word ''axe'' can also refer to a musician's particular instrument, especially a rock musician's guitar.
+**Deathkory's guitar appears to have three tuning pegs, meaning it's ''technically'' a [[wikipedia:Cigar box guitar|cigar box guitar]], a guitar that has only three strings.
+*Deathkory's name is a play on ''deathcore'', an extreme metal subgenre combining elements of death metal and metalcore.
+**His Japanese name makes the same pun, but relies on ''core'' and ''koa(la)'' being homophones in Japanese.
+*He was technically an event enemy for a short time, as his only appearance at first was in [[Empress' Report 5]].
+
+==Reference==
+*https://battlecats-db.com/enemy/590.html
+
+----
+{{EnemyNav|Ackey|Masked Grandmaster Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Aku Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemies with Shields]]

@@ -1,0 +1,69 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Baa Baa|Zoge|Squire Rel|Zroco|Zigge|Zir Zeal|Nana & Doge}}
+'''Lush Greenery At Central Park Station''' is the fourth stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Red Line|Kaohsiung Metro Red Line]].
+
+{{Stage Info
+|stage name = [[File:rc156.png]]
+[[File:Mapsn183 03 c ja.png]]
+|stage location = [[File:Mapname183 c ja.png]]
+|energy = 150
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Baa Baa|400%
+|Zoge|30%
+|Squire Rel|400%
+|Zroco|30%
+|Zigge|30%
+|Zir Zeal|30%}}
+|boss = {{Magnification|Nana & Doge|100%}}
+|enemies2 = {{Magnification|Baa Baa|600%
+|Zoge|45%
+|Squire Rel|600%
+|Zroco|45%
+|Zigge|45%
+|Zir Zeal|45%}}
+|boss2 = {{Magnification|Nana & Doge|150%}}
+|enemies3 = {{Magnification|Baa Baa|800%
+|Zoge|60%
+|Squire Rel|800%
+|Zroco|60%
+|Zigge|60%
+|Zir Zeal|60%}}
+|boss3 = {{Magnification|Nana & Doge|200%}}
+|treasure = - [[Nana & Cat (Rare Cat)|Nana & Cat]] (25%, 1 time)
+|score reward = '''7,500''': 200,000 XP<br>
+'''4,500''': 100,000 XP<br>
+'''500''': 40,000 XP
+|XP = 18,000 XP
+|width = 4,500
+|max enemies = 12
+|jpname = Lush Greenery At Central Park Station
+|script = レ緑豊かな中央公園駅
+|romaji = Midori Yutakana Chūōkōen Eki
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Red Line|Kaohsiung Metro Red Line]]
+|difficulty = ★5
+|prev stage = [[For Leisure Facilities Kusanagi Station]]
+|next stage = [[A Beautiful Station Formosa Boulevard Station]]
+}}
+
+==Battleground==
+*5 [[Baa Baa]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+*5 [[Zoge]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*5 [[Squire Rel]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Nana & Doge]] spawns as the boss.
+**5 [[Zroco]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**3 [[Zigge]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Zir Zeal]] spawns.
+
+==Strategy==
+Any [[:Category:Anti-Zombie Cats|Anti-Zombie]] or [[Zombie Killer]] Cat can easily deal with the [[:Category:Zombie Enemies|Zombie Enemies]] here. The main threat is Nana & Doge, as she has 120,000 health and 5,000 damage as well as a guaranteed chance to cause a mini-wave to slow Cat units. Using any [[:Category:Wave Shield Cats|Wave Shield Cats]] can instantly nullify her mini-wave, allowing your attacking units to deal mass damage to her.
+
+==Reference==
+*https://battlecats-db.com/stage/s02183-04.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

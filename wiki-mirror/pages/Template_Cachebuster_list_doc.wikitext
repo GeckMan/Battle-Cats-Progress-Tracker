@@ -1,0 +1,21 @@
+{{Documentation}}
+Get a list of cachebusters. Will return a JSON map of pages and revision IDs.
+
+<pre>
+|{{Cachebuster list|Battle Cats Wiki|Cat Dictionary|enemy_Dictionary}}
+</pre>
+
+yields
+
+{{#tag:syntaxhighlight
+|{{Cachebuster list|Battle Cats Wiki|Cat Dictionary|enemy_Dictionary}}
+|lang=html
+}}
+
+More readable version:
+
+{{#tag:pre
+|{{Cachebuster list|Battle Cats Wiki|Cat Dictionary|enemy_Dictionary}}
+}}
+
+Note: REVISIONID is expensive, so each page added to the cachebuster list will add to the expensive parser function count. If REVISIONID is used for the same page twice, it only counts as one expensive function, so for example despite using Cachebuster list twice with 3 pages each, this page has 4 expensive parser functions (syntaxhighlight is expensive).

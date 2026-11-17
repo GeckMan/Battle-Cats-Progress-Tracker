@@ -1,0 +1,9 @@
+.ranger-navbox.world-trigger {
+	--bg-navbox-title: linear-gradient(to right, hsl(196, 88%, 31%) 0%, hsl(196, 88%, 35%) 100%);
+	--bg-sub-table-title: hsl(240, 6%, 24%);
+	--bg-group-name: hsl(180, 88%, 31%);
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

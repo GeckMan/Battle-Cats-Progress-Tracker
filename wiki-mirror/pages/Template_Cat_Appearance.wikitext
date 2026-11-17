@@ -1,0 +1,32 @@
+<onlyinclude><templatestyles src="Cat_Appearance/styles.css" /><infobox theme="cat-appearance">
+    <title source="Cat Unit Number">
+        <format>'''[[Cat Release Order|Cat Unit]]<span style="color: #006CAF"> # </span>{{#invoke:string|padleft|{{{Cat Unit Number}}}|3|0}}<br>'''''{{{cat category}}}'''''</format>
+    </title>
+    <panel>
+        <section>
+            <label>{{{Normal Form name}}}</label>
+            <data source="image1">
+                <format>[[File:{{{image1}}}|300px|center|alt=A screenshot of {{{Normal Form name}}}]]</format>
+            </data>
+        </section>
+        <section>
+            <label>{{{Evolved Form name}}}</label>
+            <data source="image2">
+                <format>[[File:{{{image2}}}|300px|center|alt=A screenshot of {{{Evolved Form name}}}]]</format>
+            </data>
+        </section>
+        <section>
+            <label>{{{True Form name}}}</label>
+            <data source="image3">
+                <format>[[File:{{{image3}}}|300px|center|alt=A screenshot of {{{True Form name}}}]]</format>
+            </data>
+        </section>
+        <section>
+            <label>{{{Ultra Form name}}}</label>
+            <data source="image4">
+                <format>[[File:{{{image4}}}|300px|center|alt=A screenshot of {{{Ultra Form name}}}]]</format>
+            </data>
+        </section>
+    </panel>
+</infobox></onlyinclude>
+Old version of [[Template:Cat Info]], see [[Special:Permalink/424955]] for docs on using this version.

@@ -1,0 +1,51 @@
+{{#invoke:Navbox|main
+|template = Template:Gudetama
+|title = [[Gudetama Collaboration Event]]
+|navbox_class = gudetama
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Gudetama Cat (Special Cat)|Gudetama Cat]]
+*[[Gudetama Plate (Rare Cat)|Gudetama Plate]]
+*[[Gudegude Pudding (Super Rare Cat)|Gudegude Pudding]]
+*[[Nisetama Army (Uber Rare Cat)|Nisetama Army]]
+*[[Gude-Cat Machine (Uber Rare Cat)|Gude-Cat Machine]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Gudetama Plate (Enemy)|Gudetama Plate]]
+*[[Gudegude à la mode (Enemy)|Gudegude à la mode]]
+*[[Nisetama Army (Enemy)|Nisetama Army]]
+*[[Gude-Doge Machine]]
+*[[Gudebene Cat (Enemy)|Gudebene Cat]]
+
+|header3 = Stages
+|group3 = I Am Gudegude
+|list3 =
+*[[You Can Boil It]]
+*[[You Can Grill It]]
+*[[It's Good To Have It Raw]]
+
+|group4 = I Can Eat It Anyway
+|list4 =
+*[[Lots of Clinging]]
+*[[Stability Orientation]]
+*[[Good Morning]]
+
+|group5 = Gudegude Is Busy
+|list5 =
+*[[Life Is Serious]]
+*[[I Can't Beat It Myself]]
+*[[I Don't Want To Grow Up]]
+*[[I Can't Do It]]
+*[[Seriously Starting Next Year]]
+
+|group6 = Gudetama Cat Awakens!
+|list6 =
+*[[Road to Gudetama Cat Evolution (Veteran)]]
+*[[Road to Gudetama Cat Evolution (Insane)]]
+}}<templatestyles src="Gudetama/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Gudetama]]}}<noinclude>[[Category:Navboxes]]</noinclude>

@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Coffin Zoge|The Thrillerz|Zomboe|Formicidaean Ariant|Zir Zeal|Cumulus Gallus|Zamelle}}
+'''Archaeology 301: Methods''' is the second stage in [[Empress' Excavation 3]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn279 01 s en.png]]
+|stage location = [[File:Mapname279 s en.png]]
+|energy = 100
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|Coffin Zoge|300%
+|The Thrillerz|200%
+|Zomboe|300%
+|Formicidaean Ariant|200%
+|Zir Zeal|300%
+|Zamelle|300%}}
+|boss = {{Magnification|Cumulus Gallus|100%}}
+|treasure = - [[Catseye]] [Legend] +1 (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 4,200
+|max enemies = 12
+|jpname = Ancient Survey III Method
+|script = 遺物調査Ⅲ方法
+|romaji = Ibutsu Chōsa Ⅲ Hōhō
+|star = 1
+|event-chapter = [[Empress' Excavation 3]]
+|max clears = 1
+|difficulty = ★10
+|prev stage = [[Archaeology 301: Planning]]
+|next stage = [[Archaeology 301: Results]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*5 [[Coffin Zoge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[The Thrillerz|Thrillerz]] spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*2 [[Zomboe]]s spawn after 20 seconds<sup>600f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*Infinite [[The Thrillerz|Thrillerz]] spawn after 93.33 seconds<sup>2,800f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Cumulus Gallus]] spawns as the boss.
+**7 [[Coffin Zoge]]s spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**6 [[Formicidaean Ariant]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**5 [[Zomboe]]s spawn after 26.67 seconds<sup>800f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**2 [[Zir Zeal]]s spawn, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**1 [[Zamelle]] spawns after 20 seconds<sup>600f</sup>.
+
+==Strategy==
+Use [[Shigong Cat]] with Research [[Cat Combo]]s as your main meatshield, and make sure to lure the enemies to your base to prevent clogging the cat limit of 15. Long distance attackers can help damage Cumulus Gallus and anti-Zombie midrangers/backliners (such as [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] and [[Urs & Fenrir (Special Cat)|Urs & Minka]]) will help defeat the Formicidaean Ariant and Zir Zeals. This stage becomes quite easy when the Cumulus Gallus is defeated.
+
+==Reference==
+*https://battlecats-db.com/stage/s01279-02.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

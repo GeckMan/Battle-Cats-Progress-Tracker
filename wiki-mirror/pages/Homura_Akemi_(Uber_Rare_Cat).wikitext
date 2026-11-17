@@ -1,0 +1,208 @@
+'''Homura Akemi''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was implemented in [[Version 5.5 Update|Version 5.5]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. [[True Form]] added in [[Version 14.1 Update#Version 14.1.1 Update|Version 14.1.1]] increases damage, time between attacks, attack animation, and grants [[:Category:Red Enemies|Red]] and [[:Category:Aku Enemies|Aku]] targetting, [[Long Distance]] and [[Strong Against]].
+
+{{Cat Info
+|ID = 289
+|rarity = UR
+|name1 = Homura Akemi
+|name2 = Homura & Cat
+|name3 = Devil Homura
+}}
+
+==Evolution==
+Evolves into '''Homura & Cat''' at level 10.
+
+Evolves into '''Devil Homura''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Homura's main selling points are her above average range combined with overall fair stats. As is usually the case, [[Flower Cat (Special Cat)|Bombercat]] outperforms Homura in the realm of anti-Dark CC, so her Freeze shouldn't be viewed as anything more than an extra perk. Her attack power is good for how fast she attacks, and is useful in most situations. Her range is just enough to keep her out of immediate danger from common backliners such as [[THE SLOTH]] and [[Master A.]]
+
+==='''True Form'''===
+Devil Homura's role has shifted dramatically: from being a primarily crowd control based unit against Dark enemies, to a [[Long Distance]] [[:Category:Red Enemies|Red]]/[[:Category:Dark Enemies|Dark]]/[[:Category:Aku Enemies|Aku]] backliner with crowd-control capabilities. In many ways, she now functions as an entirely different unit.
+
+While her standing range remains the same, her Long Distance is by far the most important change when discussing her True Form's performance. With a nearly non-existent blind spot, her LD should be viewed much like Omni Strike. This dramatically improves her matchups against midrange and backline enemies: including [[Professor A.]], [[Le'boin]] variants, and [[Fallen Bear]]. It doesn't restrict her usage against the notoriously aggressive Darks and Akus either. Furthermore, she's a rebound unit, so she can take advantage of enemies that repeatedly stagger her, and get successive attacks on them.
+
+Devil Homura also receives [[Strong Against]], increasing her DPS to a solid ~9,300 vs. Dark and ~7,750 vs. Aku at Lv.30 (14,700 and 12,300 at Lv50). It also helps her shrug off some of the punishment that comes with that role (especially since Aku threats tend to abuse [[Death Surge]]s). However, it is important to note that she lacks any relevant Immunities, meaning enemies like [[Two Can]], [[Berserkory]], or even [[Sinner Snache]]s/[[Condemned Peng]]s can continuously pick her off relatively easily with their pierce, in a manner similar to [[Lilin (Uber Rare Cat)|Lilin]]. The absence of [[Shield Piercing]] further dulls her performance against Aku, requiring other suitable units to bypass them.
+
+Her [[Freeze|Freeze]] should still be viewed as a bonus, as it is inconsistent at the best of times, and only reaches a 50% uptime with her extended attack cycle, if it activates at all. Fortunately, her long foreswing animation is not much of a problem due to the ludicrously high forward-pierce and inner-range of her Long Distance reach, she doesn't usually miss an attack.
+
+Overall, Devil Homura is an incredible upgrade over her previous forms. Given the True Form's relatively low Catfruit cost and versatile performance, she is a valuable investment for any player looking for a unit that remains effective well into late-game.
+
+{{Job|Classification = Backliner & Crowd-Controller|TrueClass = Crowd-Controller & Sniper|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 289
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni289 f00.png
+|Image2 = Uni289 c00.png
+|Image3 = Uni289 s00.png
+|Name1 = Homura Akemi
+|Desc1 = From Madoka Magica The Movie -Rebellion-!<br>A cool-headed and mysterious Magical Girl.<br>Area attacks might Freeze Dark enemies
+|Name2 = Homura & Cat
+|Desc2 = From Madoka Magica The Movie -Rebellion-!<br>A Magical Girl who can command time itself.<br>Area attacks might Freeze Dark enemies
+|Name3 = Devil Homura
+|Desc3 = From Puella Magi Madoka Magica! Devilish<br>being disrupting the Law of Cycles to alter reality.<br>Long-range, Strong vs. Red/Dark/Aku, may Freeze.
+|Name1 (JP) = 暁美ほむら (Akemi Homura)
+|Desc1 (JP) = 魔法少女まどか☆マギカから参戦！<br>言動に謎が多いクールな魔法少女<br>たまに黒い敵の動きを止める(範囲攻撃)
+|Transl1 (JP) = Joining from Puella Magi Madoka Magica!<br>A cool Magical Girl who acts mysteriously<br>Occasionally Freezes Dark enemies (Area Attack)
+|Name2 (JP) = ほむら&ネコ (Homura & Neko, Homura & Cat)
+|Desc2 (JP) = 魔法少女まどか☆マギカから参戦！<br>時間を操る魔法少女<br>たまに黒い敵の動きを止める(範囲攻撃)
+|Transl2 (JP) = Joining from Puella Magi Madoka Magica!<br>A Magical Girl who can manipulate time<br>Occasionally Freezes Dark enemies (Area Attack)
+|Name3 (JP) = 悪魔ほむら (Akuma Homura, Devil Homura)
+|Desc3 (JP) = 魔法少女まどか☆マギカから参戦！円環の理の<br>摂理を乱し、世界を改変した悪魔のような存在<br>赤と黒と悪魔にめっぽう強く、たまに停止する(遠方範囲)
+|Transl3 (JP) = Joining from Puella Magi Madoka Magica! Having disrupted the<br>Law of Cycles, she is a devilish existence that altered the world<br>Strong against Red, Black and Devil enemies, and occasionally Freezes them (Long Distance Area)
+|Name1 (TW) = 曉美焰
+|Desc1 (TW) = 從魔法少女小圓來參戰！<br>言行充滿謎又冷酷的魔法少女<br>有時候會讓黑色敵人動作停止(範圍攻擊)
+|Name2 (TW) = 小焰&貓咪
+|Desc2 (TW) = 從魔法少女小圓來參戰！<br>操縱時間的魔法少女<br>有時候會讓黑色敵人動作停止(範圍攻擊)
+|Name3 (TW) = 惡魔焰
+|Desc3 (TW) = 從魔法少女小圓來參戰！干擾圓環之理的<br>法則並改變世界，如同惡魔般的存在。善於攻擊<br>紅敵、黑敵和惡魔，有時候使其動作停止(遠方範圍)
+|Name1 (KR) = 아케미 호무라
+|Desc1 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>미스터리한 언행의 쿨한 마법소녀<br>가끔 검은 적의 움직임을 순간 멈춘다 (범위 공격)
+|Name2 (KR) = 호무라&고양이
+|Desc2 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>시간을 조종하는 마법소녀<br>가끔 검은 적의 움직임을 순간 멈춘다 (범위 공격)
+|Name3 (KR) = 악마 호무라
+|Desc3 (KR) = 마법소녀 마도카☆마기카에서 참전! 원환의 이치의<br>섭리를 어지럽혀, 세계를 개변한 악마와 같은 존재<br>빨간, 검은 적, 악마에 엄청 강하고 가끔 정지시킨다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 2,980¢
+*Chapter 2: 4,470¢
+*Chapter 3: 5,960¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Homura Akemi
+|Normal Base HP = 2830
+|Normal Base AP = 2030
+|Normal Range = 455
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 169
+|Normal Attack Length = 76
+|Normal Speed = 11
+|Normal KB = 3
+|Normal Cost = 2980
+|Normal Recharge = 4200
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Homura & Cat
+|Evolved Base HP = 2830
+|Evolved Base AP = 2030
+|Evolved Range = 455
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 169
+|Evolved Attack Length = 81
+|Evolved Speed = 11
+|Evolved KB = 3
+|Evolved Cost = 2980
+|Evolved Recharge = 4200
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|True Name = Devil Homura
+|True Base HP = 2830
+|True Base AP = 2470
+|True Range = 455
+|True Foreswing = 103
+|True Attack Cooldown = 0
+|True Attack Length = 244
+|True Speed = 11
+|True KB = 3
+|True Cost = 2980
+|True Recharge = 4200
+|True Attack Type = Area
+|True Targets = Red,Dark,Aku
+|True Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 205~655)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,830 HP
+|val-Normal-Attack Power = 2,030 damage<br>(306.03 DPS)
+|val-Normal-Attack Range = 455
+|val-Normal-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(46f <sup>1.53s</sup> backswing)
+|val-Normal-Recharge Time = 140 ~ 131.2 seconds
+|val-Normal-MaxHP = 48,110 HP
+|val-Normal-MaxAttack = 34,510 damage<br>(5,202.51 DPS)
+|val-Evolved-Health = 48,110 HP
+|val-Evolved-Attack Power = 34,510 damage<br>(5,202.51 DPS)
+|val-Evolved-Attack Range = 455
+|val-Evolved-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 140 ~ 131.2 seconds
+|val-True-Health = 48,110 HP
+|val-True-Attack Power = 41,990 damage<br>(5,162.7 DPS)
+|val-True-Attack Range = 455
+|val-True-Attack Frequency = 244f <sub>8.13 seconds</sub>
+|val-True-Movement Speed = 11
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 103f <sup>3.43s</sup><br>(141f <sup>4.7s</sup> backswing)
+|val-True-Recharge Time = 140 ~ 131.2 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Homura & Cat
+|Evolved Image = Uni289 c00.png
+|True Name = Devil Homura
+|True Image = Uni289 s00.png
+|True Description = True Form evolution is Strong vs. Red,<br>Black and Aku enemies! Also gains<br>Long-range Area attacks!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = EpicFruit
+|Catfruit4 = AkuFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x3
+|Quantity Catfruit3 = x3
+|Quantity Catfruit4 = x1
+|Quantity XP = 1,000,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni289 f00}}
+
+==Trivia==
+*She was given [[Immune to Slow|Slow Immunity]] in [[Version 10.9 Update|Version 10.9]].
+**This was likely done to improve her matchup against [[Walpurgisnacht (Enemy)|Walpurgisnacht]].
+*Homura Akemi and [[Madoka Kaname (Uber Rare Cat)|Madoka Kaname]]'s spritesheets have a hidden [[Tank Cat (Normal Cat)|Tank Cat]] face that is obscured by their heads.
+
+==Reference==
+*https://battlecats-db.com/unit/290.html
+
+----
+{{CatNav|Madoka Kaname|Sayaka Miki}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Witch Killer Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Strong ability]]

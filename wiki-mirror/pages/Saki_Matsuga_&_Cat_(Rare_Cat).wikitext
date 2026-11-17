@@ -1,0 +1,114 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Saki Matsuga & Doge]].''
+'''Saki Matsuga & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 7.0 Update|Version 7.0]] and was obtainable during the [[Get On! Kyoto City Subway Collaboration Event]].
+
+{{Cat Info
+|ID = 423
+|rarity = RR
+|name1 = Saki Matsuga & Cat
+|name2 = Saki Matsuga & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Saki Matsuga & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Saki Matsuga is a decent crowd-controller on paper, but sadly fails due to two major reasons. Her guaranteed weaken with nearly full uptime (assuming you have all [[Fruit Treasures]]) would be good, if not for the existence of [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]]. Thaumaturge has full uptime, higher range, quicker recharge, more targeted traits, and even access to [[Talents]]. The second reason she fails is because Weaken typically isn't all that useful, especially when there are powerful options for anti-Red crowd-controllers like [[Apple Cat (Super Rare Cat)|iCat]] and [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 423
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni423 f00.png
+|Image2 = Uni423 c00.png
+|Name1 (JP) = 松賀咲&ネコ
+|Desc1 (JP) = 「地下鉄に乗るっ」から参戦！地下鉄で通学する女の子<br>太秦萌の幼なじみで陸上部に所属している<br>必ず赤い敵の攻撃力を下げる
+|Transl1 (JP) = Joining the war from "Get on the Subway"! A girl who goes to school by underground<br>She is a childhood friend of [[Moe Uzumasa & Cat (Rare Cat)|Moe Uzumasa]] and is a member of the track and field club<br>Always lowers the attack power of Red enemies
+|Name2 (JP) = 松賀咲&ネコＣＣ
+|Desc2 (JP) = 「地下鉄に乗るっ」から参戦！<br>トレーニングの一環で階段を使うことを心掛けている<br>必ず赤い敵の攻撃力を下げる
+|Transl2 (JP) = Joining the war from "Get on the Subway"!<br>Tries to use the stairs as part of her training<br>Always lowers the attack power of Red enemies
+}}
+
+==Cost==
+*Chapter 1: 320円
+*Chapter 2: 480円
+*Chapter 3: 640円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Saki Matsuga & Cat
+|Normal Base HP = 480
+|Normal Base AP = 80
+|Normal Range = 260
+|Normal Foreswing = 55
+|Normal Attack Cooldown = 135
+|Normal Attack Length = 111
+|Normal Speed = 16
+|Normal KB = 4
+|Normal Cost = 320
+|Normal Recharge = 720
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Saki Matsuga & Cat CC
+|Evolved Base HP = 480
+|Evolved Base AP = 80
+|Evolved Range = 260
+|Evolved Foreswing = 55
+|Evolved Attack Cooldown = 135
+|Evolved Attack Length = 111
+|Evolved Speed = 16
+|Evolved KB = 4
+|Evolved Cost = 320
+|Evolved Recharge = 720
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 80 damage<br>(12.63 DPS)
+|val-Normal-Attack Range = 260
+|val-Normal-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 55f <sup>1.83s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Normal-Recharge Time = 24 ~ 15.2 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(214.74 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(214.74 DPS)
+|val-Evolved-Attack Range = 260
+|val-Evolved-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 55f <sup>1.83s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Evolved-Recharge Time = 24 ~ 15.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni423 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/424.html
+
+----
+{{CatNav|Moe Uzumasa & Cat|Misa Ono & Cat}}
+----
+
+{{Get On! Kyoto City Subway}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]

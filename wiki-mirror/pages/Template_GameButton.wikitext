@@ -1,0 +1,18 @@
+<includeonly><onlyinclude><div class="gb-template-wrapper main-page-portal-wrapper"><!--
+	-->[[{{{1}}}]]<!--
+	--><div class="gb-template-icon main-page-portal-icon {{#if:{{{size|}}}|custom-size|}}" style="translate: {{{translate|0 0}}};"><!--
+		-->[[File:{{{2|Placeholder.png}}}|link=|alt=|class=gb-template-icon-image main-page-portal-icon-image|{{{size|55px}}}]]<!--
+	--></div><!--
+	--><div class="gb-template-text main-page-portal-text"><!--
+		--><div class="text-outline-wrapper" style="scale: {{{scale|1}}} 1;"><!--
+			--><div class="text-outline"><!--
+				--><div class="text-outline-bg" style="interactivity: inert;"><!--
+					-->{{{alt|{{{1}}}}}}<!--
+				--></div><!--
+				--><div class="text-outline-visible"><!--
+					-->{{{alt|{{{1}}}}}}<!--
+				--></div><!--
+			--></div><!--
+		--></div><!--
+	--></div><!--
+--></div>{{#html:GameButton|once=true}}</onlyinclude></includeonly>{{/doc}}

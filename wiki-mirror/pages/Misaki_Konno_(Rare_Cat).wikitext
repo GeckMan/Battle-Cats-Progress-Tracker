@@ -1,0 +1,125 @@
+:''For the enemy version see [[Misaki Konno (Enemy)]].''
+'''Misaki Konno''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 6.8 Update|Version 6.8]] and is exclusive to the [[Power Pro Baseball Collaboration Event]]. It is acquired as a drop after beating the [[Power Pro Baseball Collaboration Event#Date Chance: Misaki|Date Chance: Misaki Stages]].
+
+{{Cat Info
+|ID = 387
+|rarity = RR
+|name1 = Misaki Konno
+|name2 = Misaki Konno CC
+}}
+
+==Evolution==
+Evolves into '''Misaki Konno CC''' at level 10.
+
+==Strategy/Usage==
+It acts as a decent tank for early [[Into the Future]] levels, but gets more irrelevant as you progress due to it's extremely long recharge time and lack of niche compared to [[Rover Cat (Rare Cat)|Rover Cat]], who is more easily accessible and more spammable.
+
+{{Job|Classification = Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 387
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni387 f00.png
+|Image2 = Uni387 c00.png
+|Name1 = Misaki Konno
+|Desc1 = Dropping in from PowerPro Baseball!<br>A bright and energetic manager.<br>Tough defense vs. Alien enemies.
+|Name2 = Misaki Konno CC
+|Desc2 = Dropping in from PowerPro Baseball!<br>No one can motivate a player like her!<br>Tough defense vs. Alien enemies.
+|Name1 (JP) = 紺野美崎
+|Desc1 (JP) = 実況パワフルプロ野球から参戦！<br>明るく元気いっぱいのマネージャー<br>エイリアンに打たれ強い
+|Transl1 (JP) = Entered from Power Pro Baseball Live!<br>Bright and energetic manager.<br>Tough against alien attacks!
+|Name2 (JP) = 紺野美崎CC
+|Desc2 (JP) = 実況パワフルプロ野球から参戦！<br>部員のモチベーションをあげるのが得意<br>エイリアンに打たれ強い
+|Transl2 (JP) = Entered from Power Pro Baseball Live!<br>Good at motivating team members.<br>Tough against alien attacks!
+|Name1 (TW) = 紺野美崎
+|Desc1 (TW) = 來自實況野球的新人物！<br>活潑充滿朝氣的球隊經理<br>對上異星戰士很耐打
+|Name2 (TW) = 紺野美崎CC
+|Desc2 (TW) = 來自實況野球的新人物！<br>強項是帶動選手們的幹勁<br>對上異星戰士很耐打
+|Name1 (KR) = 콘노 미사키
+|Desc1 (KR) = 실황 파워풀 프로야구에서 참전!<br>언제나 밝고 활기찬 매니저<br>에이리언에 맷집이 좋다
+|Name2 (KR) = 콘노 미사키CC
+|Desc2 (KR) = 실황 파워풀 프로야구에서 참전!<br>부원들의 사기를 높이는 것이 특기<br>에이리언에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Misaki Konno
+|Normal Base HP = 900
+|Normal Base AP = 250
+|Normal Range = 125
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 65
+|Normal Speed = 10
+|Normal KB = 1
+|Normal Cost = 300
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Misaki Konno CC
+|Evolved Base HP = 900
+|Evolved Base AP = 250
+|Evolved Range = 125
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 65
+|Evolved Speed = 10
+|Evolved KB = 1
+|Evolved Cost = 300
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 900 HP
+|val-Normal-Attack Power = 250 damage<br>(115.38 DPS)
+|val-Normal-Attack Range = 125
+|val-Normal-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 15,300 HP
+|val-Normal-MaxAttack = 4,250 damage<br>(1,961.54 DPS)
+|val-Evolved-Health = 15,300 HP
+|val-Evolved-Attack Power = 4,250 damage<br>(1,961.54 DPS)
+|val-Evolved-Attack Range = 125
+|val-Evolved-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni387 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/388.html
+
+----
+{{CatNav|Sairi Nijitani|Ren Katagiri}}
+----
+
+{{Power Pro Baseball}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]

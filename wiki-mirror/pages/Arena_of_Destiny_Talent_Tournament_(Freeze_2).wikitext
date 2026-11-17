@@ -1,0 +1,147 @@
+{{EnemiesAppearing|Talent Orb Castle|Gabriel|Heavenly Hippoe|Angelic Beast Rajakong|Shadow Boxer K|Le'Behemoth|Razorback|Devil Wife|Aku Doge|Tackey}}
+'''Talent Tournament''' is the 48th [[Arena of Honor]] of the [[Catclaw Dojo]]. It awards Mysterious Bronze, Silver and Golden Treasure Chests with Ability [[Talent Orbs|Orbs]].
+
+{{Stage Info
+|stage name = [[File:E 720.png]]
+[[File:Mapsn047 00 r en.png]]
+|stage location = [[File:Mapname047 r en.png]]
+|energy = 10
+|enemy castle hp = Unlimited
+|base = {{Magnification|Talent Orb Castle|0}}
+|enemies = {{Magnification|Gabriel|0
+|Heavenly Hippoe|0
+|Shadow Boxer K|0
+|Devil Wife|0
+|Aku Doge|0
+|Tackey|0
+|Angelic Beast Rajakong|0
+|Le'Behemoth|0}}
+|boss = {{Magnification|Angelic Beast Rajakong|0
+|Le'Behemoth|0
+|Razorback|0
+|Devil Wife|0
+|Tackey|0
+|Shadow Boxer K|0
+|Aku Doge|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 20
+|jpname = Fighting Instinct Tournament
+|script = 闘争本能大会
+|romaji = Tōsō Honnō Taikai
+|star = 1
+|dojo-chapter = [[Arena of Destiny]]
+}}
+
+==Rules==
+{{DojoRule|Freeze}}
+
+==Battleground==
+*The enemy base here is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]].
+*1 [[Heavenly Hippoe]] (300%) spawns after 160 seconds<sup>4,800f</sup>.
+*1 [[Devil Wife]] (400%) spawns after 153.33 seconds<sup>4,600f</sup>.
+*2 [[Aku Doge]]s (300%) spawn after 140 seconds<sup>4,200f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Angelic Beast Rajakong]] spawns after 133.33 seconds<sup>4,000f</sup>.
+*2 [[Gabriel]]s (400%) spawn after 113.33 seconds<sup>3,400f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Heavenly Hippoe]] (300%) spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Le'Behemoth]] (100%) spawns after 83.33 seconds<sup>2,500f</sup>.
+*1 [[Shadow Boxer K]] (200%) spawns after 60 seconds<sup>1,800f</sup>.
+*2 [[Aku Doge]]s (300%) spawn after 50 seconds<sup>1,500f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Aku Doge]] (300%) spawns after 33.33 seconds<sup>1,000f</sup>.
+*2 [[Gabriel]]s (300%) spawn after 26.67 seconds<sup>800f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Heavenly Hippoe]] (300%) spawns after 10 seconds<sup>300f</sup>.
+*2 [[Gabriel]]s (300%) spawn after 6.67 seconds<sup>200f</sup>, delay 10 seconds<sup>300f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Aku Doge]] (400%) spawns as the boss.
+**1 [[Gabriel]] (400%) spawns.
+*When the base takes 60,000 damage:
+**1 [[Gabriel]] (400%) spawns.
+**1 [[Aku Doge]] (400%) spawns.
+*When the base takes 70,000 damage:
+**1 [[Gabriel]] (400%) spawns.
+*When the base takes 100,000 damage:
+**1 [[Shadow Boxer K]] (200%) spawns as the boss.
+**1 [[Gabriel]] (400%) spawns.
+*When the base takes 110,000 damage:
+**1 [[Gabriel]] (400%) spawns.
+*When the base takes 120,000 damage:
+**1 [[Gabriel]] (400%) spawns.
+*When the base takes 200,000 damage:
+**1 [[Tackey]] spawns as the boss.
+*When the base takes 220,000 damage:
+**1 [[Tackey]] spawns.
+*When the base takes 400,000 damage:
+**1 [[Razorback]] spawns as the boss.
+**2 [[Gabriel]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 420,000 damage:
+**1 [[Gabriel]] (500%) spawns.
+*When the base takes 440,000 damage:
+**1 [[Gabriel]] (500%) spawns.
+*When the base takes 700,000 damage:
+**1 [[Devil Wife]] (400%) spawns as the boss.
+**2 [[Aku Doge]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 720,000 damage:
+**1 [[Devil Wife]] (100%) spawns.
+*When the base takes 1,000,000 damage:
+**1 [[Le'Behemoth]] (100%) spawns as the boss.
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 1,100,000 damage:
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 1,300,000 damage:
+**1 [[Angelic Beast Rajakong]] spawns as the boss.
+**1 [[Heavenly Hippoe]] (400%) spawns.
+*When the base takes 1,600,000 damage:
+**1 [[Razorback]] spawns as the boss.
+**2 [[Gabriel]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 1,650,000 damage:
+**1 [[Gabriel]] (500%) spawns.
+*When the base takes 1,700,000 damage:
+**1 [[Gabriel]] (500%) spawns.
+*When the base takes 2,000,000 damage:
+**1 [[Devil Wife]] (500%) spawns as the boss.
+**2 [[Aku Doge]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 2,100,000 damage:
+**1 [[Devil Wife]] (500%) spawns.
+*When the base takes 2,500,000 damage:
+**1 [[Le'Behemoth]] (200%) spawns as the boss.
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 2,600,000 damage:
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 3,000,000 damage:
+**1 [[Angelic Beast Rajakong]] spawns as the boss.
+**2 [[Gabriel]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Heavenly Hippoe]] (400%) spawns.
+*When the base takes 3,500,000 damage:
+**1 [[Devil Wife]] (500%) spawns as the boss.
+**2 [[Aku Doge]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 3,600,000 damage:
+**1 [[Devil Wife]] (500%) spawns.
+*When the base takes 4,000,000 damage:
+**1 [[Razorback]] spawns as the boss.
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 4,100,000 damage:
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 4,500,000 damage:
+**1 [[Le'Behemoth]] (200%) spawns as the boss.
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 4,600,000 damage:
+**1 [[Shadow Boxer K]] (300%) spawns.
+*When the base takes 5,000,000 damage:
+**1 [[Angelic Beast Rajakong]] spawns as the boss.
+**2 [[Gabriel]]s (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Heavenly Hippoe]] (400%) spawns.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*Unlike other Dojos, this one has a few other differences:
+**Enemies will drop money on defeat.
+**The base will not attack but is still an animated base, meaning Surges and Explosions can damage it.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Reference==
+*https://battlecats-db.com/stage/s11047-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

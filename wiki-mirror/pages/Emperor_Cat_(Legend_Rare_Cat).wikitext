@@ -1,0 +1,156 @@
+:''For the enemy encountered in [[Possessed by Evil (Merciless)|Possessed by Evil]], see [[Evil Emperor Cat]].''
+'''Emperor Cat''' is a [[:Category:Legend Rare Cats|Legend Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Dynasty Fest (Gacha Event)|Dynasty Fest]] event. He was added in [[Version 10.10 Update|Version 10.1]].
+
+{{Cat Info
+|ID = 586
+|rarity = LR
+|name1 = Emperor Cat
+|name2 = Tyrant Cat
+}}
+
+==Evolution==
+Evolves into '''Tyrant Cat''' at level 10.
+
+==Strategy/Usage==
+Emperor Cat has two main selling points: range and abilities. While he is able to outrange [[Camelle]], it is very inconsistent due to only outranging him by one. He can also provide great support against any army, thanks to his many abilities. Thus, Emperor should be used as a backline supporter, not differently than how [[Li'l Nyandam (Special Cat)|Li'l Nyandam]] is usually used. Protect him well and do not bother using him if you expect him to get hit a lot by [[Wave Attack|waves]], [[Surge Attack|surges]] or [[:Category:Long Distance Enemies|Long Distance Enemies]].
+
+This unit has the flaw of being unreliable; though he has a 76% (or 75.99% if you want to be exact) chance of inflicting any given debuff, it's never guaranteed that what he inflicts is beneficial to the player's current needs, similarly to [[Good-Luck Ebisu (Super Rare Cat)|Good-Luck Ebisu]] and [[Mimiluga (PC Uber Rare Cat)|Mimiluga]]. On another note, his debuff downtime is 5.2 seconds without [[Fruit Treasures]]; but do not underestimate him, as he is protected by his exceptional range, making his abilities still viable.
+
+{{Job|Classification = Crowd-Controller & Super-Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 586
+|Type = [[:Category:Legend Rare Cats|Legend Rare Cat]]
+|Image1 = Uni586 f00.png
+|Image2 = Uni586 c00.png
+|Name1 = Emperor Cat
+|Desc1 = By braving the ancient forest, he obtained peerless<br>magical power that allowed him to tame all of Catkind.<br>Area atks inflict negative status on Traited enemies.
+|Name2 = Tyrant Cat
+|Desc2 = The uncanny magics came at an unseen cost, and<br>a piece of his soul is consumed with every battle.<br>Area atks inflict negative status on Traited enemies.
+|Name1 (JP) = ネコ王子 (Neko Ōji, Cat Prince)
+|Desc1 (JP) = いにしえの深き森で未知なる力を得たネコの国の王子<br>圧倒的な魔力ですべてのネコを手懐けたという<br>属性を持つ敵に色んな妨害効果をたまに与える(範囲攻撃)
+|Transl1 (JP) = Prince of the land of Cats who has obtained an unknown power in the depths of the ancient forest.<br>It is said that he tamed all of Catkind with his overwhelming magical power.<br>Occasionally inflicts various negative effects on Traited enemies (Area Attack)
+|Name2 (JP) = ネコ国王 (Neko Kokuō, Cat King)
+|Desc2 (JP) = 異界より生じた不可思議な力を手にした国王ネコ<br>果てなき戦いに身を投じる中で魔力に蝕まれていく<br>属性を持つ敵に色んな妨害効果をたまに与える(範囲攻撃)
+|Transl2 (JP) = King Cat who has obtained a mysterious power from another world.<br>He has thrown himself into an endless battle, being consumed by magical power.<br>Occasionally inflicts various negative effects on Traited enemies (Area Attack)
+|Name1 (TW) = 貓咪王子
+|Desc1 (TW) = 在古老深山森林中獲得了未知力量的貓咪國王子<br>用壓倒性的魔力馴服了所有的貓咪<br>對上有屬性敵人時有時候會給予各種妨害效果(範圍攻擊)
+|Name2 (TW) = 貓咪國王
+|Desc2 (TW) = 獲得了從異界生出的不可思議力量的貓咪國王<br>投身於無休止的戰爭中魔力將遭持續侵蝕<br>對上有屬性敵人時有時候會給予各種妨害效果(範圍攻擊)
+|Name1 (KR) = 고양이 왕자
+|Desc1 (KR) = 고대의 깊은 숲에서 미지의 힘을 손을 넣은 고양이 나라의 왕자<br>압도적인 마력으로 모든 고양이들을 길들였다고 한다<br>속성을 가진 적에 여러 방해 효과를 가끔 입힌다 (범위 공격)
+|Name2 (KR) = 고양이 국왕
+|Desc2 (KR) = 이세계에서 생긴 불가사의한 힘을 손에 넣은 국왕 고양이<br>끝 없는 전투에 몸을 던지며 마력에 침식되어 간다<br>속성을 가진 적에 여러 방해 효과를 가끔 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,000¢
+*Chapter 2: 4,500¢
+*Chapter 3: 6,000¢
+{{Upgrade Cost|LR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Emperor Cat
+|Normal Base HP = 2400
+|Normal Base AP = 2100
+|Normal Range = 551
+|Normal Foreswing = 103
+|Normal Attack Cooldown = 173
+|Normal Attack Length = 133
+|Normal Speed = 5
+|Normal KB = 4
+|Normal Cost = 3000
+|Normal Recharge = 5100
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub>
+|Evolved Name = Tyrant Cat
+|Evolved Base HP = 3200
+|Evolved Base AP = 2700
+|Evolved Range = 551
+|Evolved Foreswing = 103
+|Evolved Attack Cooldown = 173
+|Evolved Attack Length = 133
+|Evolved Speed = 5
+|Evolved KB = 4
+|Evolved Cost = 3000
+|Evolved Recharge = 5100
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50+9
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,400 HP
+|val-Normal-Attack Power = 2,100 damage<br>(228.26 DPS)
+|val-Normal-Attack Range = 551
+|val-Normal-Attack Frequency = 276f <sub>9.2 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 103f <sup>3.43s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 170 ~ 161.2 seconds
+|val-Normal-MaxHP = 40,800 HP
+|val-Normal-MaxAttack = 35,700 damage<br>(3,880.43 DPS)
+|val-Evolved-Health = 54,400 HP
+|val-Evolved-Attack Power = 45,900 damage<br>(4,989.13 DPS)
+|val-Evolved-Attack Range = 551
+|val-Evolved-Attack Frequency = 276f <sub>9.2 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 103f <sup>3.43s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 170 ~ 161.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni586 f00}}
+
+==Trivia==
+*There is a substantial amount of evidence to suggest that Emperor Cat wasn't just planned to drop from [[Uncanny Legends]], but was also going to serve as a counterpart to [[Li'l Nyandam (Special Cat)|Li'l Nyandam]]:
+**From [[Version 10.0 Update|Version 10.0]] to [[Version 10.2 Update|Version 10.2]], [[Evil Emperor Cat]]'s ID was used by a placeholder enemy named コニャンダム亜種 ''Ko Nyandamu Ashu'' ("[[Li'l Nyandam (Enemy)|Li'l Nyandam]] Variant").
+**[[Stone Cat (Rare Cat)|Stone Cat]] and [[Possessed by Evil (Merciless)|Possessed by Evil]]'s [[Backgrounds|background]] were also added prematurely in 10.0, but Stone Cat was a placeholder [[:Category:Mythic Cats|Mythic Cat]] instead of a [[:Category:Rare Cats|Rare Cat]] and the background had a different colour scheme closer to that of [[Saint Red Fox]].
+**These placeholders were added in the same update as [[Dawn of the Beginning]], whose Japanese name is the opposite of [[Dead End Night]]'s. Dawn of the Beginning also comes 9 sub-chapters after [[Urs & Fenrir (Special Cat)|Urs & Fenrir]] in [[The Gelatin Mines]], which was 9 sub-chapters after [[Depths of My Heart]].
+**Emperor Cat has the same range, movement speed and slow chance as allied Li'l Nyandam while Evil Emperor Cat's Omni Strike gives him the same reach as enemy Li'l Nyandam.
+**Evil Emperor Cat is a [[:Category:Relic Enemies|Relic]], the same trait as all other Uncanny Legends drops ([[Relic Bun-Bun]], [[Dogumaru (Enemy)|Dogumaru]], [[Urs & Fenrir (Enemy)|Urs & Fenrir]], [[Elder Flame Doron]] and [[Ultima Beast Naala]]).
+**Before [[Possessed Empress]] was introduced, Evil Emperor Cat stood out as the only [[:Category:Advent Bosses|Advent Boss]] to be the enemy version of a [[Cat Units|Cat Unit]]. Likewise, Emperor Cat is to this day the only [[:Category:Legend Rare Cats|Legend Rare Cat]] to have an enemy counterpart.
+*The magic he uses is presumably Relic power, as it's described as [[Uncanny Legends|uncanny]] and comes from an ancient forest, and it is the mastery of this power that resulted in him becoming Evil Emperor Cat.
+**If the ancient forest mentioned in his description is in fact [[Sacred Forest]], that would mean the final sub-chapter of Uncanny Legends was teased a whole 2 years before its release.
+*The heads of the creatures that emerge from Tyrant Cat's portal appear to be based on [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] or [[Li'l Valkyrie (Uber Rare Cat)|Li'l Valkyrie]].
+*Emperor Cat is the only Legend Rare Cat to not use a darkened version of their icon when viewing drops for the banners he appears in.
+
+==Reference==
+*https://battlecats-db.com/unit/587.html
+
+----
+{{CatNav|Baby Garu|Sweet Aphrodite}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Legend Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with unique death animations]]

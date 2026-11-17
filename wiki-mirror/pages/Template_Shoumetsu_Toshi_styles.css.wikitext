@@ -1,0 +1,9 @@
+.ranger-navbox.shoumetsu-toshi {
+	--bg-navbox-title: linear-gradient(to right, hsl(305, 50%, 70%) 0%, hsl(305, 50%, 76%) 100%);
+	--bg-sub-table-title: #5b43a0;
+	--bg-group-name: hsl(305, 54%, 50%);
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

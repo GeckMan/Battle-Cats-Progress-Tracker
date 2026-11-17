@@ -1,0 +1,1394 @@
+'''Traps''' are the player's tools to defend their treasures from other players. Each mansion is given 3 Guard Doges and 2 Hidden Doges initially; the player can then apply additional traps to increase its security. Each trap requires a certain amount of '''Trap Points''', the player can place at most 12 additional traps and with an accumulation of 35 trap points. The player can get and upgrade traps from Trap chests and daily deals.
+<!--
+TO-DO
+- if possible, get the parameters of each level of each trap
+-->
+
+==Trap Overview==
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" | Name
+! scope="col" | Image
+! scope="col" | Rarity
+! scope="col" | League
+! scope="col" | Trap Points
+! scope="col" | Description and Explanation
+|-
+|'''Guard Doge'''
+|[[File:Img trap wanko.png|center|100px]]
+|N/A
+|1
+|0
+|Reacts to noise and will arrest the player's Cat upon contact when it's awake. If in the process of moving, either toward a noise source or back to its position, it ignores all other noise until it falls asleep again. The Guard Doge's movement, if needed to go both horizontally and vertically, is random.
+|-
+|'''Hidden Doge'''
+|[[File:Trap nisehusuma.png|center|100px]]
+|N/A
+|1
+|0
+|Immediately arrests the Cat that opened it. Will immediately open when the real treasure of the mansion is acquired, essentially becoming a Guard Doge. After arresting a Cat in either way, it leaves for good.
+|-
+|'''Poisonous Shroom'''<br>(毒キノコ)
+|[[File:Img trap poisonousmushroom.png|center|100px]]
+|NN
+|1
+|2
+|
+:''Inhaling spores lowers Willpower for a short time. No one knows the medical basis for why this happens. It tastes great fried with butter.''
+
+Inflicts the Will Drain debuff, which deals low and continuous damage for a moderate amount of time upon contact.
+|-
+|'''Empty Can'''<br>(空きカン)
+|[[File:Img trap akikan.png|center|100px]]
+|NN
+|1
+|3
+|
+:''Someone forgot to throw away their trash. Remember kids, it's important to recycle. Stepping on it creates noise to your left and right.''
+
+Deals moderate damage and cause noise on 2 rooms to the left and right of current room upon triggering.
+|-
+|'''Caltrops'''<br>(まきびし)
+|[[File:Img trap makibishi.png|center|100px]]
+|NN
+|1
+|2
+|
+:''Ninja Cat forgot to clean up after herself. Just rubber, but the pointy bits still hurt when stepped on! Imagine if it was actual steel!''
+
+Deals low and continuous damage while in the same room.
+|-
+|'''Bucket'''<br>(バケツ)
+|[[File:Img trap bucket.png|center|100px]]
+|RR
+|1
+|3
+|
+:''The maid is air-drying this to prevent mold. Cats get easily stuck in this, making noise in two rooms to the side, above or below.''
+
+Traps the Cat and causes noise in 2 rooms to the left and right. Hides the Cat from Guard Doges, but forces the player to tap multiple times to free the Cat, with each tap dealing light damage. Once the Cat is free, causes noise in 2 rooms above and below.
+|-
+|'''Fortune Teller'''<br>(占い師)
+|[[File:Img trap uranai.png|center|100px]]
+|SR
+|1
+|2
+|
+:''A mystic otter who predicts the location of Cats with a crystal bought at a flea market.<br> Encountering him earns you unwanted love advice.''
+
+Might deal heavy damage when leaving the room it is in.
+|-
+|'''Spike Switch'''<br>(トゲトゲスイッチ)
+|[[File:Img trap side.png|center|100px]]
+|RR
+|1
+|3
+|
+:''Hit the switch and get poked with sharp plastic! Can be seen from outside thanks to a design flaw. Activated when entering from the left or right rooms.''
+
+Deals heavy damage upon entering the room horizontally, but does nothing when entering vertically. This trap is visible from adjacent rooms.
+|-
+|'''Banana Peel'''<br>(バナナの皮)
+|[[File:Img trap banana.png|center|100px]]
+|SR
+|2
+|3
+|
+:''No one knows who ate the banana. Slipping on it makes noise in all rooms on the floor below. They take it away to the guard post after that.''
+
+Deals moderate damage and causes noise to the whole floor below it.
+|-
+|'''Spiderweb'''<br>(蜘蛛の巣)
+|[[File:Img trap spiderweb.png|center|100px]]
+|NN
+|2
+|2
+|
+:''The web looks delicate, but if you're caught, you'll be tangled and slowed. Good news: it also exfoliates your skin!''
+
+Tangles the Cat in a spider web, which requires tapping to escape and inflicts the Agility Down debuff for an amount of time upon escaping; the Cat can't be arrested when entangled.
+|-
+|'''Traffic Light'''<br>(信号機)
+|[[File:Img trap trafficlight.png|center|100px]]
+|SR
+|2
+|3
+|
+:''Installed for a spring safety campaign. Moving left/right is forbidden on a red light. Do not cross when the green light flashes.''
+
+Stays on red most of the time. The red light starts as soon as the battle begins. When red, prevents the Cat from entering or leaving the room horizontally. When green, allows free movement. When flickering, allows movement, but deals heavy damage if the Cat is still crossing by the time it becomes red.
+|-
+|'''Rare Capsule'''<br>(レアガチャ)
+|[[File:Img trap raregatya.png|center|100px]]
+|RR
+|2
+|3
+|
+:''A "Probability-Type Joy Delivery Pod". Still in the testing phase so it may malfunction. Get spun and confused after touching.''
+
+Traps the Cat for a very small amount of time, hiding it from Doges. Leaves the Cat with the Confused debuff, which might cause it to move in a random direction for its next movement (unless the effect time is over, then it wears off). Levels increase the chance of Confused. Prevents noise when approached vertically.
+|-
+|'''Apple Tree'''<br>(リンゴの木)
+|[[File:Img trap apple.png|center|100px]]
+|RR
+|2
+|3
+|
+:''Grows higher as it drops more apples. Even with surprisingly high sugar content, its fruit is very popular with dieters.''
+
+Deals significant damage upon entering the room. Upon entering the room again, damage is increased, then increased again for the third time and any subsequent ones. The number of apples visible acts as an indicator.
+|-
+|'''Apprentice Magician''' (見習いマジシャン)
+|[[File:Img trap owlmagician.png|center|100px]]
+|SR
+|2
+|2
+|
+:''Trainee illusionist who acts like a master. Successful magic tricks create noise in the facing direction.''
+
+Has a chance to deal light damage and cause noise in the direction of exiting its room. Its range will increase with higher levels.
+|-
+|'''Icy Floor'''<br>(氷の床)
+|[[File:Img trap ice.png|center|100px]]
+|RR
+|3
+|2
+|
+:''A failed ice skating rink. Oh well. Slide through this room into the next. (3x) Break it by entering from above/below.''
+
+Causes the Cat to slip into the next room when entering horizontally. Breaks after 3 uses. When entering vertically, or if attempting to slide into a closed shutter (or an open exit without the chest), it will break and deal moderate damage.
+|-
+|'''Electric Rail'''<br>(ビリビリ線)
+|[[File:Img trap lightning.png|center|100px]]
+|SR
+|3
+|3
+|
+:''Ingenious electrical trap based on a retro toy. Get a nasty shock if the metal bits touch! Prevents movement to above/below when active.''
+
+Prevents the Cat from moving vertically when in this room for an amount of time. The current turns off after a while and back on after a bit, dealing moderate damage if the Cat is in the process of leaving (this is highly unlikely). Unlike the Traffic Light, the timer starts from entering the room and resets after leaving.
+|-
+|'''Fake Coin'''<br>(ニセ小判)
+|[[File:Img trap fakecoin.png|center|100px]]
+|NN
+|3
+|3
+|
+:''Trolls drop these to trap greedy travellers. Remember, counterfeiting is a crime! Speed decreased for a set amount of time.''
+
+Deals moderate damage, distracts the Cat for a moment, and inflicts Agility Down debuff for a long time. It is visible from other rooms, however, it looks like a full coin pile. However, it is slightly discoloured and stops sparkling when visiting the Shrine or the Vault.
+|-
+|'''[[Ms. Sign]]'''<br>(カンバン娘)
+|[[File:Img trap kanbanmusume.png|center|100px]]
+|NN
+|4
+|3
+|
+:''A committed egalitarian, her philosophy is "No Cat above any other Cat!" Stops you from moving to rooms above/below.''
+
+Deals heavy damage upon moving vertically. Does nothing when leaving horizontally.
+|-
+|'''Toy Hammer'''<br>(ピコピコハンマー, Pikopiko Hammer)
+|[[File:Img trap hammer.png|center|100px]]
+|UR
+|4
+|3
+|
+:''A squeaky rubber hammer, the perfect defense! Starts low, then creates noise to left/right once you exit to another room.''
+
+Deals light damage and causes noise 2 rooms to the left and right when a Cat leaves this room horizontally. Does nothing when leaving vertically.
+|-
+|'''Tatamigaeshi'''<br>(畳返し)
+|[[File:Img trap tatami.png|center|100px]]
+|SR
+|4
+|3
+|
+:''A Ninja Doge who mastered the surprise tatami bash. Especially painful to Cats with high Agility. Smacks the sense out of you for a short time.''
+
+Deals significant damage and inflicts the Confused debuff when entering horizontally, and it deals higher damage to Cats with higher Horizontal Speed. Does not activate when entering vertically.
+|-
+|'''Doge Balloon'''<br>(わんこバルーン)
+|[[File:Img trap balloon.png|center|100px]]
+|RR
+|4
+|3
+|
+:''Everyone loves a fun oversized balloon! Inflates suddenly to startling effect when it pops! SP decreases while in the same room.''
+
+While standing in this room, the balloon will inflate, pop and be replaced to repeat the process. Deals heavy damage upon popping and reduces the Cat's Skill Points while in the same room. Upgrading this also decreases inflating time. Slowly deflates to default state after leaving.
+|-
+|'''UFO'''
+|[[File:Img trap ufo.png|center|100px]]
+|RR
+|5
+|3
+|
+:''Mystery spacecraft that got lost into the Manor. Emits waves that cause memory loss... Skills will cost even more SP to use.''
+
+Causes the map to be reset and drains the Cat's Skill Points. Prevents noise when approached vertically.
+|-
+|'''Loud Speaker'''<br>(ケルベロススピーカー, Cerberus Speaker)
+|[[File:Img trap cerberus.png|center|100px]]
+|SR
+|5
+|4
+|
+:''Wanko Industries's standard 3.0ch model. Set up for the Doges' morning calisthenics. Creates noise in all rooms on that floor.''
+
+Upon entering, deals moderate damage and causes noise on the whole floor where it is placed.
+|-
+|'''Hornet Nest'''<br>(ハチの巣, Beehive)
+|[[File:Img trap doronbee.png|center|100px]]
+|UR
+|5
+|9
+|
+:''Magnificent hive that has stood for years. Wasps don't like being bothered, so stay back or you'll get chased until you escape (Once)''
+
+Deals light damage and forces the Cat to retreat from the manor, essentially acting as a forced Evade button. The trap is destroyed afterward, and the animation is long enough for a Guard Doge to come arrest the Cat from a horizontal adjacent room.
+|-
+|'''Haunter'''<br>(金縛りおばけ, Sleep Ghost)
+|[[File:Img trap debuffcurse.png|center|100px]]
+|NN
+|5
+|4
+|
+:''Doge ancestor long gone to the afterlife. Possesses victims so he can try the latest mobile games. Binds movement temporarily.''
+
+Gives the Possessed debuff upon entering, causing the Cat to be blocked in place, unable to move or react for a bit upon reaching the next room.
+|-
+|'''Manhole'''<br>(マンホール)
+|[[File:Img trap manhole.png|center|100px]]
+|SR
+|6
+|3
+|
+:''Placed here for a [[Jackie Peng]] stunt for a cancelled film. He's still inside... Stepping on him creates noise in all rooms!''
+
+Deals moderate damage and causes noise on the whole column where this trap is placed, simply put, it's the vertical version of the Loudspeaker. Prevents noise 1 room left and right when approached vertically.
+|-
+|'''Bomberdoge'''<br>(ボムわんこ, Bomb Doge)
+|[[File:Img trap bombwanko.png|center|100px]]
+|UR
+|6
+|4
+|
+:''Cheap, mass-produced robot guard. Chases you like any Doge, but upon arrival malfunctions explosively without fail (Once).''
+
+Another Guard Doge, except instead of arresting you, it will explode upon contact, dealing massive damage and disappearing for good. Moves faster, but can't arrest Cats, for the rest, it acts the same way. Keep in mind that it still explodes Cats with Disguise Kit activated.
+|-
+|'''Curser'''<br>(スキル封じおばけ, Skill Sealing Ghost)
+|[[File:Img trap debuffskill.png|center|100px]]
+|NN
+|6
+|2
+|
+:''Doge ancestor who passed away on the toilet. Takes out the shame of embarrassing death on others by cancelling their Skills for a time.''
+
+Gives a debuff that disables the Cat's skill for a good amount of time. This also cancels any skill currently in effect (except for Status Blocker).
+|-
+|'''Unending Bell'''<br>(除夜の鐘, Temple Bell)
+|[[File:Img trap templebell.png|center|100px]]
+|RR
+|6
+|5
+|
+:''A bell used to ring in the New Year! Hit it repeatedly to increase the volume! Don't overdo it, remember life's important things.''
+
+Traps the Cat and deals moderate damage. Hides the Cat from Guard Doges, but forces the player to tap multiple times to free the Cat, with each tap making noise 1 room in each direction. Tapping slowly keeps the range stable, while tapping too quickly increases it to a 3x3, then 5x5.
+|-
+|'''Messenger Pigeon'''<br>(伝書鳩, Carrier Pigeon)
+|[[File:Img trap pigeon.png|center|100px]]
+|SR
+|7
+|3
+|
+:''Groupie bird who only hangs out on famous statues. Keeps in shape by avoiding birdseed. Sounds alarms in all diagonal rooms.''
+
+Deals moderate damage with a somewhat long animation and causes noise diagonally with no range limit. Prevents noise 1 room left and right when approached vertically.
+|-
+|'''MechaDoge'''<br>(わんこロイド, Doge Droid)
+|[[File:Img trap patrol mechawanko.png|center|100px]]
+|UR
+|7
+|5
+|
+:''Older-model AI Doge with faulty sensors. Moves fast, but can't turn around once it gets going. Sound detection features are also prone to errors.''
+
+Does not respond to noise, but will detect any Cat in its room if facing it and approach with high speed. It moves back and forth in its room with a recharging time when changing direction by facing forward. This trap can be seen from adjacent rooms and will arrest the Cat upon contact. When this trap is recharging, it's possible to sneak by.
+|-
+|'''Patrol [[Dark Emperor Nyandam|Nyandam]]'''<br>(警備ニャンダム, Security Nyandam)
+|[[File:Img trap nyandam.png|center|100px]]
+|UR
+|8
+|5
+|
+:''Regional manager of the security company. Can't be bothered to chase you, but he'll sound the alarm for every other patrol to come.''
+
+Deals moderate damage and causes noise in all rooms.
+|}
+
+==Referenced Stats==
+<!-- Note to editors: Leave the -- on invalid trap levels so the tables and its content alignment can appear properly -->
+Similar to outfits and accessories, each trap's level cap depends on its rarity.
+
+* Level 10 for NN.
+* Level 9 for RR
+* Level 8 for SR
+* Level 6 for UR
+
+'''Poison Shroom'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap poisonousmushroom.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Effect Time (Sec)
+|
+|
+|
+|
+|15
+|15
+|15
+|15
+|15
+|15
+|-
+! scope="row" |Will Drain
+|
+|
+|
+|
+|30
+|38
+|48
+| 59
+|71
+|85
+|}
+'''Empty Can'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap akikan.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|
+|
+|158
+|198
+|229
+|282
+|342
+| 409
+|}
+'''Bucket'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap bucket.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|9
+|10
+|14
+|16
+|21
+|24
+|29
+|33
+| -
+|-
+! scope="row" |Escape Taps
+|
+|7
+|8
+|8
+|9
+|9
+|10
+|10
+|11
+| -
+|}
+'''Caltrops'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap makibishi.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|
+|
+|83
+|109
+|140
+|176
+| 216
+|261
+|}
+'''Fortune Teller'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap uranai.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|170
+|213
+|287
+|386
+|509
+|658
+|831
+|
+| -
+| -
+|}
+'''Spike Switch'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap side.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|
+|326
+|434
+|563
+|714
+|886
+|1080
+| -
+|}
+'''Banana Peel'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap banana.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|114
+|139
+|
+|220
+|276
+|
+|
+| -
+| -
+|}
+'''Spiderweb'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap spiderweb.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Effect Time (Sec)
+|
+|
+|
+|
+|
+|12.5
+|13
+|13.5
+|14
+|14.5
+|-
+! scope="row" |Slow %
+|
+|
+|
+|
+|
+|35
+|36
+|37
+|38
+|39
+|-
+! scope="row" |Escape Taps
+|
+|
+|
+|
+|
+|13
+| 13
+|14
+|14
+|15
+|}
+'''Traffic Light'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap trafficlight.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|175
+|213
+|266
+|334
+|417
+|
+|
+| -
+| -
+|-
+! scope="row" |Stop Time (Sec)
+|
+|12
+|14
+|16
+|18
+|20
+|
+|
+| -
+| -
+|}
+'''Rare Capsule'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap raregatya.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Effect Time (Sec)
+|
+|7
+|7.5
+|8
+|8.5
+|9
+|9.5
+|10
+|10.5
+| -
+|-
+! scope="row" |Confuse %
+|
+|33
+|36
+|39
+|42
+|45
+|48
+|51
+|54
+| -
+|}
+'''Apple Tree'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap apple.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage #1
+|
+|
+|
+|180
+|238
+|310
+|
+|492
+|603
+| -
+|-
+! scope="row" |Will Damage #2
+|
+|
+|
+|158
+|209
+|272
+|
+|431
+|528
+| -
+|-
+! scope="row" |Will Damage #3
+|
+|
+|
+|113
+|149
+|194
+|
+|308
+|377
+| -
+|}
+'''Apprentice Magician'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap owlmagician.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|66
+|82
+|109
+|146
+|194
+|253
+|
+|
+| -
+| -
+|-
+! scope="row" |Range (Rooms)
+|1
+|1
+|1
+|2
+|2
+|2
+|3
+|3
+| -
+| -
+|}
+'''Icy Floor'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap ice.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|162
+|214
+|281
+|362
+|459
+|570
+|696
+| -
+|}
+'''Electric Rail'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap lightning.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|201
+|267
+|356
+|466
+|598
+|
+|
+| -
+| -
+|-
+! scope="row" |Shock Time (Sec)
+|
+|4.5
+|5
+|5.5
+|6.0
+|6.5
+|
+|
+| -
+| -
+|}
+'''Fake Coin'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap fakecoin.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|
+|
+|
+|236
+|296
+|365
+|444
+|531
+|-
+! scope="row" |Effect Time (Sec)
+|
+|
+|
+|
+|
+|12.5
+|13
+|13.5
+|14
+|14.5
+|-
+! scope="row" |Slow %
+|
+|
+|
+|
+|
+|35
+|36
+|37
+|38
+|39
+|}
+'''Ms. Sign'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap kanbanmusume.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|
+|
+|380
+|488
+|613
+|755
+|915
+|1093
+|}
+'''Toy Hammer'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap hammer.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|197
+|220
+|258
+|311
+|
+|
+| -
+| -
+| -
+| -
+|}
+'''Tatamigaeshi'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap tatami.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Base Will Damage
+|156
+|189
+|243
+|319
+|417
+|537
+|
+|
+| -
+| -
+|-
+! scope="row" |Effect Time (Sec)
+|9
+|9.5
+|10
+|10.5
+|11
+|11.5
+|
+|
+| -
+| -
+|-
+! scope="row" |Confuse %
+|42
+|45
+|48
+|51
+|54
+|57
+|
+|
+| -
+| -
+|}
+'''Doge Balloon'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap balloon.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|259
+|350
+|466
+|608
+|776
+|971
+|1190
+| -
+|-
+|-
+! scope="row" |Skill Drain
+|
+|
+|4
+|5
+|6
+|7
+|8
+|9
+|10
+| -
+|-
+|-
+! scope="row" |Inflating Speed
+|
+|
+|160
+|170
+|180
+|190
+|200
+|210
+|220
+| -
+|-
+|}
+'''UFO'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap ufo.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Skill Drain
+|
+|
+|50
+|55
+|60
+|65
+|70
+|75
+|80
+| -
+|}
+'''Loudspeaker'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap cerberus.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|103
+|
+|154
+|199
+|257
+|327
+|
+|
+| -
+| -
+|}
+'''Hornet Nest'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap doronbee.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|163
+|197
+|254
+|334
+|
+|
+| -
+| -
+| -
+| -
+|}
+'''Haunter'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap debuffcurse.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Effect Time (Sec)
+|
+|
+|0.8
+|8.9
+|1.0
+|1.1
+|1.2
+|1.3
+|1.4
+|
+|}
+'''Manhole'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap manhole.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|102
+|118
+|
+|182
+|230
+|289
+|
+|
+| -
+| -
+|}
+'''Bomberdoge'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap bombwanko.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|683
+|786
+| 977
+|
+|
+|
+| -
+| -
+| -
+| -
+|-
+! scope="row" |Rush Speed
+|63
+|67
+|71
+|
+|
+|
+| -
+| -
+| -
+| -
+|}
+'''Curser'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap debuffskill.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Effect Time (Sec)
+|
+|
+|17
+|19
+|21
+|23
+|25
+|27
+|30
+|33
+|}
+'''Unending Bell'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap templebell.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" | 9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|
+|
+|128
+|163
+|208
+| 263
+|328
+|403
+|488
+| -
+|-
+! scope="row" |Escape Taps
+|
+|
+|7
+|8
+|8
+|9
+|9
+| 10
+|10
+| -
+|}
+'''Messenger Pigeon'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap pigeon.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|84
+|118
+|145
+|182
+|230
+|
+|
+|
+| -
+| -
+|}
+'''MechaDoge'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap patrol mechawanko.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Recharge Time (Sec)
+|3.5
+|3
+| 2.5
+|
+|
+|
+| -
+| -
+| -
+| -
+|-
+! scope="row" |Rush Speed
+|104
+|112
+|120
+|
+|
+|
+| -
+| -
+| -
+| -
+|}
+'''Security Nyandam'''
+{| class="article-table" border="0" cellspacing="1" cellpadding="1" style="width:100%;"
+|-
+! scope="col" |[[File:Img trap nyandam.png|center|100px]]
+! scope="col" |1
+! scope="col" |2
+! scope="col" |3
+! scope="col" |4
+! scope="col" |5
+! scope="col" |6
+! scope="col" |7
+! scope="col" |8
+! scope="col" |9
+! scope="col" |10
+|-
+! scope="row" |Will Damage
+|103
+|166
+|258
+|
+|
+|
+| -
+| -
+| -
+| -
+|}
+
+==Unused Traps==
+<gallery>
+Img trap alarm.png|Possibly an early version of the Loud Speaker
+Img trap nebaneba.png|Possibly an early version of the Haunter, name suggests to immobilize the Cat
+Img trap paint.png|Unknown paint trap, possibly an early version of the Curser
+</gallery>
+
+==Reference==
+
+*https://ameblo.jp/chocolovesanma/entry-12534675498.html
+
+[[Category:The Burgle Cats]]

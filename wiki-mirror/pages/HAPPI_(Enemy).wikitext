@@ -1,0 +1,65 @@
+{{TWExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[HAPPI (Rare Cat)]].''
+'''HAPPI''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Kaohsiung Rapid Transit Collaboration Event]].
+
+{{Enemy Info
+|name = HAPPI
+|image = E 465.png
+|appearance = [[Kaohsiung Rapid Transit Collaboration Event]]
+|money drop = 400元 - 1,580元
+}}
+
+==Enemy==
+HAPPI can be considered a weaker version of [[Brollow]] with [[Knockback|knockback]] and [[Omni Strike]].
+
+==Strategy==
+Use attackers and meatshields. Not much trouble to deal with it.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]:
+**[[Taroko Park]] (1%)
+**[[Central Park]] (22%)
+**[[Beautiful Island (Red Line)|Beautiful Island]] (50%)
+**[[Kaohsiung Station]] (100%)
+**[[Olympia]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = HAPPI
+|Health = 120000
+|Attack Power = 4500
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 30
+|Knockback = 2
+|Foreswing = 1
+|Backswing = 120
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+465 e.png|HAPPI's spritesheet
+IdleHAPPI.gif|HAPPI's moving animation
+</gallery>
+
+----
+{{EnemyNav|Unit-13's False Evolution|HAPPI & Maji Cat & Cat}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

@@ -1,0 +1,117 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit, for the enemy, see [[Pochi (Enemy)]].''
+'''Pochi''' is a [[:Category:Special Cats|Special Cat]] that could be obtained from the [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru Collaboration]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Cat Info
+|ID = 263
+|rarity = EX
+|name1 = Pochi
+|name2 = Tank Pochi
+}}
+
+==Evolution==
+Evolves into '''Tank Pochi '''at level 10.
+
+==Strategy/Usage==
+The only thing worth knowing about Pochi is how poor of an attempt he is to make a [[:Category:Critical Hit Cats|Critter]]. Pochi lacks everything that a critter needs. He is spammable, sure, but his chance is nonexistent, his speed isn't fast enough, and his range is too low. This means that his otherwise good spammability doesn't allow him to be a useful critical hitter. Putting [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]] doesn't help this aspect either, as spammability is the only thing he has, and it's nullified by everything bad about him. If you want a critter, you should just invest in [[Jurassic Cat (Rare Cat)|Catasaurus]], especially with [[Talents]]. Other good units would be [[Space Cat (Rare Cat)|Space Cat]], [[Marauder Cat (Uber Rare Cat)|Paladin Cat]] and [[Catornado (Super Rare Cat)|Catornado]]. At the very least, he can help with [[User Rank]], but that's the lowest you can go.
+
+You are best using him as an attacker very early on. His attack power is decent, and his attack rate is great. He can help you with the [[Empire of Cats]] stages quite a bit, at least until you face off against [[Teacher Bun Bun]]. After that, he's immediately useless.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 263
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni263 f00.png
+|Image2 = Uni263 c00.png
+|Name1 (JP) = ポチ
+|Desc1 (JP) = にゃんパズルから参戦！<br>やんちゃだけど本当は寂しがり屋<br>たまにクリティカル
+|Transl1 (JP) = Joined the war from NYAN puzzle!<br>Naughty, but truth is that it gets lonely easily.<br>Sometimes critical.
+|Name2 (JP) = タンクポチ
+|Desc2 (JP) = にゃんパズルから参戦！<br>拾ってくれた女の子にもらった絆創膏を大切にしている<br>たまにクリティカル
+|Transl2 (JP) = Joined the war from NYAN puzzle!<br>It cherishes the bandage which got picked up by a girl.<br>Sometimes critical.
+}}
+
+==Cost==
+*Chapter 1: 340円
+*Chapter 2: 510円
+*Chapter 3: 680円
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Pochi
+|Normal Base HP = 450
+|Normal Base AP = 90
+|Normal Range = 150
+|Normal Foreswing = 20
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 67
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 340
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 2% chance to perform a [[Critical Hit]]
+|Evolved Name = Tank Pochi
+|Evolved Base HP = 600
+|Evolved Base AP = 120
+|Evolved Range = 150
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 67
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 340
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 2% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 90 damage<br>(40.3 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 20f <sup>0.67s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(685.07 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(913.43 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni263 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/264.html
+
+----
+{{CatNav|Nyamusu|Kuromi}}
+
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]

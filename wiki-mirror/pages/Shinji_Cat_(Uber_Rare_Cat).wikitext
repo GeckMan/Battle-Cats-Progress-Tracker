@@ -1,0 +1,135 @@
+:''Not to be confused with [[Shinji & Cat (Rare Cat)]].''
+'''Shinji Cat''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] who was added in [[Version 6.10 Update|Version 6.10]] and was part of the [[Neon Genesis Evangelion Collaboration Event]]. It is a variant of Baby Cat.
+
+{{Cat Info
+|ID = 415
+|rarity = UR
+|name1 = Shinji Cat
+|name2 = Toji & Kensuke Cats
+}}
+
+==Evolution==
+Evolves into '''Toji & Kensuke Cats''' at level 10.
+
+==Strategy/Usage==
+Similarly to [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]], Shinji Cat is used as a short-range tank to deal quick and high wave damage.
+
+Despite having lower health, speed and slightly lower DPS than Cats in the Cradle, Shinji Cat has a lower cost, faster attack rate and [[Wave Attack]]s in all forms rather than just in [[True Form]] without a hefty Catfruit investment, making him slightly better in some situations, especially early on or against [[:category:Metal Enemies|Metal]] enemies. However, as KB effects can knock metals away from your short-ranged critical hitters, it isn't of any use for them once you start acquiring reliable counters since it has no hope of eliminating metals directly.
+
+Shinji Cat excels in stages where he can get a clean hit off due to it featuring enemies with LDs or low attack frequencies. Enemies such as [[Dolphina]], and [[Dark Emperor Nyandam]] are good examples of this. Enemies with Omni Strike are also vulnerable, as they tend to move closer than they should be, hence causing them to take damage from the wave attack.
+
+Despite his ability, it is not actually useful against [[:Category:Dark Enemies|Dark]] enemies because the vast majority of them stagger very easily to his raw damage, although it can still be used to recover ground against the likes of [[Le'noir]]. For Metals, his lack of Critical Hits ironically improves its utility, and can greatly hinder  various metals, such as [[Metal Cyclone]] and [[Sir Metal Seal]].
+
+{{Job|Classification = Waver}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 415
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni415 f00.png
+|Image2 = Uni415 c00.png
+|Name1 = Shinji Cat
+|Desc1 = A Cat who becomes paralyzed by fear.<br>When bullied, EVA comes to his defense!<br>Knockback vs. Metal/Dark, with Wave Attack!
+|Name2 = Toji & Kensuke Cats
+|Desc2 = Cats who can't resist their curious nature.<br>When bullied, EVA comes to their defense!<br>Knockback vs. Metal/Dark, with Wave Attack!
+|Name1 (JP) = ネコシンジ (Neko Shinji, Cat Shinji)
+|Desc1 (JP) = 一人では何もできない臆病なにゃんこ<br>いじめると汎用ネコ型決戦兵器が出現(範囲攻撃)<br>たまにメタルな敵と黒い敵をふっとばし、波動を放つ
+|Transl1 (JP) = Cowardly kitten who can't do anything on his own<br>When bullied a general-purpose feline battle weapon appears (Range Attack)<br>Sometimes it pushes Metal and Dark enemies, and releases a wave of energy
+|Name2 (JP) = ネコトウジ&ネコケンスケ (Neko Tōji & Neko Kensuke, Neko Kensuke & Neko Toji)
+|Desc2 (JP) = 一人では何もできない好奇心旺盛なにゃんこ達<br>いじめると汎用ネコ型決戦兵器が出現(範囲攻撃)<br>たまにメタルな敵と黒い敵をふっとばし、波動を放つ
+|Transl2 (JP) = Curious kittens who can't do anything on their own<br>When bullied a general-purpose feline battle weapon appears (Range Attack)<br>Sometimes it pushes Metal and Dark enemies, and releases a wave of energy
+|Name1 (TW) = 真嗣貓
+|Desc1 (TW) = 一個人什麼都不會的膽小鬼貓咪<br>被欺負時就會出現泛用貓型決戰兵器(範圍攻擊)<br>有時候打飛鋼鐵敵人和黑色敵人，並發射波動
+|Name2 (TW) = 冬二貓&劍介貓
+|Desc2 (TW) = 一個人什麼都不會的好奇寶寶貓咪們<br>被欺負時就會出現泛用貓型決戰兵器(範圍攻擊)<br>有時候打飛鋼鐵敵人和黑色敵人，並發射波動
+|Name1 (KR) = 고양이 신지
+|Desc1 (KR) = 혼자서는 아무 것도 못하는 겁쟁이 고양이<br>괴롭히면 범용 고양이형 결전 병기가 출현 (범위 공격)<br>가끔 메탈 적과 검은 적을 날려버리고 파동을 뿜어낸다
+|Name2 (KR) = 고양이 토우지&켄스케
+|Desc2 (KR) = 혼자서는 아무 것도 못하는 호기심 왕성한 고양이들<br>괴롭히면 범용 고양이형 결전 병기가 출현 (범위 공격)<br>가끔 메탈 적과 검은 적을 날려버리고 파동을 뿜어낸다
+}}
+
+==Cost==
+*Chapter 1: 2,000¢
+*Chapter 2: 3,000¢
+*Chapter 3: 4,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shinji Cat
+|Normal Base HP = 5700
+|Normal Base AP = 2250
+|Normal Range = 240
+|Normal Foreswing = 60
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 104
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 2000
+|Normal Recharge = 2000
+|Normal Attack Type = Area
+|Normal Targets = Dark,Metal
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 2 [[Wave Attack]]
+|Evolved Name = Toji & Kensuke Cats
+|Evolved Base HP = 5700
+|Evolved Base AP = 2250
+|Evolved Range = 240
+|Evolved Foreswing = 60
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 91
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 2000
+|Evolved Recharge = 2000
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Metal
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 2 [[Wave Attack]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 5,700 HP
+|val-Normal-Attack Power = 2,250 damage<br>(339.2 DPS)
+|val-Normal-Attack Range = 240
+|val-Normal-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 60f <sup>2s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Normal-Recharge Time = 66.67 ~ 57.87 seconds
+|val-Normal-MaxHP = 96,900 HP
+|val-Normal-MaxAttack = 38,250 damage<br>(5,766.33 DPS)
+|val-Evolved-Health = 96,900 HP
+|val-Evolved-Attack Power = 38,250 damage<br>(5,766.33 DPS)
+|val-Evolved-Attack Range = 240
+|val-Evolved-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 60f <sup>2s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 66.67 ~ 57.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni415 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/416.html
+
+----
+{{CatNav|EVA Unit-02|Moon Operators}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Wave Attack Cats]]

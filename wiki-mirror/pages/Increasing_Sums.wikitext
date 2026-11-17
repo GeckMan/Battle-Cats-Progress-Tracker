@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Large Iron Ball|Large White Ball|Large Red Ball}}
+'''Increasing Sums''' is the fifth stage in [[New Year's Bling]].
+
+{{Stage Info
+|stage name = [[File:rc041.png]]
+[[File:Mapsn286 04 s en.png]]
+|stage location = [[File:Mapname286 s en.png]]
+|energy = 180
+|enemy castle hp = 120,000 HP
+|enemies = {{Magnification|Large Iron Ball|150%
+|Large White Ball|6,000%
+|Large Red Ball|600%}}
+|boss = {{Magnification|Large Red Ball|1%}}
+|enemies2 = {{Magnification|Large Iron Ball|225%
+|Large White Ball|9,000%
+|Large Red Ball|900%}}
+|boss2 = {{Magnification|Large Red Ball|1%}}
+|enemies3 = {{Magnification|Large Iron Ball|300%
+|Large White Ball|12,000%
+|Large Red Ball|1,200%}}
+|boss3 = {{Magnification|Large Red Ball|2%}}
+|treasure = - 275,000 XP (100%, 1 time)<br>
+- 137,500 XP (20%, unlimited)
+|XP = 25,000 XP
+|width = 4,500
+|max enemies = 15
+|jpname = The Amount of Money Goes Up Every Year
+|script = 年々上がる金額
+|romaji = Nennen Agaru Kingaku
+|star = 3
+|event-chapter = [[New Year's Bling]]
+|difficulty = ★5
+|prev stage = [[Brotherly Income Gap]]
+|next stage = [[Gifting Burden]]<br>
+[[Lucky! New Year's Loot!]] (''Continuation Stage'', 5%)
+}}
+
+==Battleground==
+*1 [[Large Iron Ball]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Large White Ball]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Large Red Ball]] (600%) spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Large Red Ball]] (1%) spawns as the boss.
+**7 [[Large White Ball]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**5 [[Large Red Ball]]s (600%) spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**3 [[Large Iron Ball]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+==Strategy==
+The balls still don't pose any threat, and are easily taken out in droves by Area Attackers like [[Salon Cat (Rare Cat)|Paris Cat]] or [[Bird Cat (Normal Cat)|The Flying Cat]]. The Iron Balls don't necessitate any Critical Hitters either, just brute-force their HP with [[Cow Cat (Normal Cat)|Lion Cat]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01286-05.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

@@ -1,0 +1,114 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Neko Hakase (Enemy)]].''
+'''Neko Hakase''' is a [[:Category:Special Cats|Special Cat]] that can be obtained during the [[Cat Busters Collaboration Event]] by clearing Cat Busters' collaboration stage with 28,500 points. It was added in [[Version 5.6 Update|Version 5.6]].
+
+{{Cat Info
+|ID = 309
+|rarity = EX
+|name1 = Neko Hakase
+|name2 = Neko Hakase and Cat
+}}
+
+==Evolution==
+Evolves into '''Neko Hakase and Cat''' at level 10.
+
+==Strategy/Usage==
+This Cat is not good due to its bad stats, range, and Single Target. However, it can attack fast and recharges quickly, on top of the Critical Hits this Cat can be used as a weaker, lower range version of [[Jurassic Cat (Rare Cat)|Jurassic Cat]]. Otherwise, it can contribute to your army through [[User Rank]].
+
+{{Job|Classification = User Rank Dump & Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 309
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni309 f00.png
+|Image2 = Uni309 c00.png
+|Name1 (JP) = ネコ博士 (Neko Hakase, Cat Professor)
+|Desc1 (JP) = キャットバスターズから参戦！<br>タイムマシンを発明した好奇心旺盛な天才科学者<br>たまにクリティカル攻撃を放つ
+|Transl1 (JP) = Joined from Cat Busters!<br>A genius scientist full of curiosity a who invented a time machine<br>Occasionally releases a Critical attack
+|Name2 (JP) = ネコ博士&ネコ (Neko Hakase & Neko, Cat Professor & Cat)
+|Desc2 (JP) = キャットバスターズから参戦！<br>発明したタイムマシンをネズミに奪われた天才科学者<br>マシンを取り戻す旅に出る。たまにクリティカル攻撃を放つ
+|Transl2 (JP) = Joined from Cat Busters!<br>A genius scientist who had its time machine stolen by a mouse<br>On a journey to take back the machine. Occasionally releases a critical attack
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Neko Hakase
+|Normal Base HP = 570
+|Normal Base AP = 90
+|Normal Range = 160
+|Normal Foreswing = 11
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 25
+|Normal Speed = 14
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 500
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 2% chance to perform a [[Critical Hit]]
+|Evolved Name = Neko Hakase and Cat
+|Evolved Base HP = 570
+|Evolved Base AP = 90
+|Evolved Range = 160
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 25
+|Evolved Speed = 14
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 500
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 2% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 570 HP
+|val-Normal-Attack Power = 90 damage<br>(54 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 50f <sub>1.67 seconds</sub>
+|val-Normal-Movement Speed = 14
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Normal-Recharge Time = 16.67 ~ 7.87 seconds
+|val-Normal-MaxHP = 9,690 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(918 DPS)
+|val-Evolved-Health = 9,690 HP
+|val-Evolved-Attack Power = 1,530 damage<br>(918 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 50f <sub>1.67 seconds</sub>
+|val-Evolved-Movement Speed = 14
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Evolved-Recharge Time = 16.67 ~ 7.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni309 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/310.html
+
+----
+{{CatNav|Gardener Cat|Yuletide Nurse}}
+----
+
+{{Cat Busters}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Single Attack Cats]]

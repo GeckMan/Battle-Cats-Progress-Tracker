@@ -1,0 +1,122 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit, for the enemy, see [[Nebaaru-kun (Enemy)]].''
+'''Nebaaru-kun''' is a [[:Category:Special Cats|Special Cat]] that could be obtained from the [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru Collaboration]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Cat Info
+|ID = 266
+|rarity = EX
+|name1 = Nebaaru-kun
+|name2 = Nebaaru-kun and Cat
+}}
+
+==Evolution==
+Evolves into '''Nebaaru-kun and Cat''' at level 10.
+
+==Strategy/Usage==
+This oddly animated nattō mascot falls into the same fate as most other collaboration units, pathetic stats and terrible ability.
+
+Its 30% chance to Slow Floating Enemies for three seconds could be useful early-game for dealing with [[Teacher Bun Bun]], but as soon as you get [[Bishop Cat (Rare Cat)|Sanzo Cat]] this unit becomes completely worthless.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 266
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni266 f00.png
+|Image2 = Uni266 c00.png
+|Name1 (JP) = ねば～る君
+|Desc1 (JP) = 茨城県非公認ゆるきゃらが参戦！<br>「納豆」と「茨城」と「子どもたち」を応援する納豆の妖精<br>たまに浮いてる敵の動きを遅くする(範囲攻撃)
+|Transl1 (JP) = Unapproved Ibaraki-ken YURU yew enters the war!<br>The sprite of fermented soybeans who supports "fermented soybeans", "Ibaraki" and "children"<br>Sometimes the movement of the enemy who floats is made late (area attack).
+|Name2 (JP) = ねば～る君とにゃんこ
+|Desc2 (JP) = 茨城県非公認ゆるきゃらが参戦！<br>好きな映画は『ネバーエンディングストーリー』らしい<br>たまに浮いてる敵の動きを遅くする(範囲攻撃)
+|Transl2 (JP) = Unapproved Ibaraki-ken YURU yew enters the war!<br>A favorite movie seems to be "Never Ending Story".<br>Sometimes the movement of the enemy who floats is made late (area attack).
+}}
+
+==Cost==
+*Chapter 1: 600円
+*Chapter 2: 900円
+*Chapter 3: 1,200円
+{{Upgrade Cost|EX5}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nebaaru-kun
+|Normal Base HP = 610
+|Normal Base AP = 310
+|Normal Range = 225
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 105
+|Normal Attack Length = 101
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 640
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Nebaaru-kun and Cat
+|Evolved Base HP = 820
+|Evolved Base AP = 420
+|Evolved Range = 225
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 105
+|Evolved Attack Length = 101
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 640
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 610 HP
+|val-Normal-Attack Power = 310 damage<br>(69.92 DPS)
+|val-Normal-Attack Range = 225
+|val-Normal-Attack Frequency = 133f <sub>4.43 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(73f <sup>2.43s</sup> backswing)
+|val-Normal-Recharge Time = 21.33 ~ 12.53 seconds
+|val-Normal-MaxHP = 10,370 HP
+|val-Normal-MaxAttack = 5,270 damage<br>(1,188.72 DPS)
+|val-Evolved-Health = 13,940 HP
+|val-Evolved-Attack Power = 7,140 damage<br>(1,610.53 DPS)
+|val-Evolved-Attack Range = 225
+|val-Evolved-Attack Frequency = 133f <sub>4.43 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(73f <sup>2.43s</sup> backswing)
+|val-Evolved-Recharge Time = 21.33 ~ 12.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni266 f00}}
+
+==Trivia==
+*Nebarru-kun is based on nattō (sticky fermented soybeans), and is the mascot for Ibaraki Prefecture.
+*Nebarru-kun & Cat's description directly mentions the film [[wikipedia:The NeverEnding Story (film)|The NeverEnding Story]].
+
+==Reference==
+*https://battlecats-db.com/unit/267.html
+
+----
+{{CatNav|Setsuko|Catornado}}
+
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]

@@ -1,0 +1,67 @@
+{{EnemiesAppearing|Metal Hippoe|Squire Rel|Lophiiformes Angaburu|Mr. Angel|Wild Doge|Crocodylidae Kurocroc|Croakley|Bore Jr.}}
+'''Archaeology 501: Analysis''' is the fourth and final stage in [[Empress' Excavation 5]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn281 03 s en.png]]
+|stage location = [[File:Mapname281 s en.png]]
+|energy = 100
+|enemy castle hp = 1,700,000 HP
+|enemies = {{Magnification|Metal Hippoe|300%
+|Squire Rel|5,000%
+|Lophiiformes Angaburu|150%
+|Mr. Angel|300%
+|Wild Doge|200%
+|Croakley|150%
+|Bore Jr.|150%}}
+|boss = {{Magnification|Crocodylidae Kurocroc|100%}}
+|treasure = - [[Ancient Egg: N006 (Special Cat)|Ancient Egg: N006]] (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 4,800
+|max enemies = 20
+|jpname = Ancient Survey Ⅴ Analysis
+|script = 遺物調査Ⅴ分析
+|romaji = Ibutsu Chōsa Ⅴ Bunseki
+|star = 1
+|event-chapter = [[Empress' Excavation 5]]
+|max clears = 1
+|difficulty = ★11
+|prev stage = [[Archaeology 501: Results]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*1 [[Metal Hippoe]] spawns.
+*5 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 2~5.33 seconds<sup>60f~160f</sup>.
+*1 [[Lophiiformes Angaburu]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Mr. Angel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Wild Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Crocodylidae Kurocroc]] spawns as the boss.
+**2 [[Wild Doge]]s spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**2 [[Metal Hippoe]]s spawn, delay 80~83.33 seconds<sup>2,400f~2,500f</sup>.
+**1 [[Croakley]] spawns.
+**3 [[Bore Jr.|Bore Jrs]] spawn after 13.33 seconds<sup>400f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+**5 [[Squire Rel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**5 [[Squire Rel]]s spawn after 35.33 seconds<sup>1,060f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**5 [[Squire Rel]]s spawn after 37.33 seconds<sup>1,120f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**5 [[Squire Rel]]s spawn after 39.33 seconds<sup>1,180f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**3 [[Mr. Angel]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+Metal Hippoe is not a strong pusher and has low HP for a metal enemy, so it's best to NOT bring a crit unit so you can abuse it as a stepping stone for LD attackers. Units with large piercing range work best which mostly consists of Ubers but just about any will work.
+
+[[Jetpack Cat (Rare Cat)|Jetpack Cat]] is the best meatshield to use as it stalls Crocodylidae Kurocroc indefinitely when Bore Jr. and Wild Doge aren't bothering your Cats. As such you should have counters to use on reaction to these two such as [[Express Cat (Super Rare Cat)|Bullet Train Cat]] or [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]. Watch out for Croakley when spawning any non [[Immune to Slow|Slow Immune]] units as Cat limit is a major concern.
+It will be a long stage so don't expect it to go fast. Be patient and you'll win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01281-04.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

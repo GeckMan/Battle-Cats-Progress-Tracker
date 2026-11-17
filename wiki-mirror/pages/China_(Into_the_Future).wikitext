@@ -1,0 +1,109 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[China (Into the Future)/Outbreak|here]].''
+'''China''' is the 3rd stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc043.png]]
+|stage location = [[File:China.png]]
+'''Into The Future'''
+|energy = 32
+|energy2 = 42
+|energy3 = 52
+|enemy castle hp = 6,000 HP
+|enemy castle hp2 = 9,000 HP
+|enemy castle hp3 = 12,000 HP
+|enemies = {{Magnification|Those Guys|150%
+|Snache|150%
+|B.B.Bunny|150%
+|Pigge|150%
+|Jackie Peng|150%
+|Gory|150%}}
+|enemies2 = {{Magnification|Those Guys|400%
+|Snache|400%
+|B.B.Bunny|400%
+|Pigge|400%
+|Jackie Peng|400%
+|Gory|400%}}
+|enemies3 = {{Magnification|Those Guys|800%
+|Snache|800%
+|B.B.Bunny|800%
+|Pigge|800%
+|Jackie Peng|800%
+|Gory|800%}}
+|treasure = - [[Treasure|Panda Cub]]
+|treasure2 = - [[Treasure|Panda Cub]]
+|treasure3 = - [[Treasure|Panda Cub]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': Speed Up +1
+|score reward2 = '''9,000''': [[Cat Food]] +10<br>
+'''7,000''': Speed Up +1
+|score reward3 = '''9,000''': [[Cat Food]] +10<br>
+'''7,500''': Speed Up +1
+|max enemies = 6
+|max enemies2 = 6
+|max enemies3 = 12
+|XP = 1,600 XP
+|width = 5,600
+|jpname = China
+|script = 中国
+|romaji = Chūgoku
+|jptreasure = Shark Fin
+|twname = Taiwan
+|twscript = 台灣
+|twromaji = Táiwān
+|twtreasure = Pearl Milk Tea
+|krname = China
+|krscript = 중국
+|krromaji = Jung-gug
+|krtreasure = Panda
+|chapter = [[Into the Future]]
+|prev stage = [[Korea (Into the Future)|Korea]]
+|next stage = [[Mongolia (Into the Future)|Mongolia]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Those Guys|Snache|B.B.Bunny|Pigge|Jackie Peng|Gory}}
+*Infinite [[Those Guys]] spawn after 4 seconds<sup>120f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Snache]]s spawn after 12 seconds<sup>360f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 20 seconds<sup>600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Pigge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*3 [[Jackie Peng]]s spawn after 44 seconds<sup>1,320f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 90% HP:
+**3 [[Those Guys]] spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+**1 [[Gory]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Those Guys|Snache|B.B.Bunny|Pigge|Jackie Peng|Gory}}
+*Infinite [[Those Guys]] spawn after 3 seconds<sup>90f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*Infinite [[Snache]]s spawn after 4 seconds<sup>120f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 8 seconds<sup>240f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Pigge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*3 [[Jackie Peng]]s spawn after 22 seconds<sup>660f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*When the base reaches 90% HP:
+**1 [[Gory]] spawns.
+
+==Strategy==
+Spamming [[Cow Cat (Normal Cat)|Giraffe Cats]] is enough to beat this stage and collect all the Score Rewards.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Wc043 tw.png|Taiwanese version's base (Taiwan)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Taiwan''' and China is moved to [[Mongolia (Into the Future)|stage 4]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-03.html
+*https://battlecats-db.com/stage/s03004-03.html
+*https://battlecats-db.com/stage/s03005-03.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

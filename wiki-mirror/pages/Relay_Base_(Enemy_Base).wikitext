@@ -1,0 +1,63 @@
+'''Relay Base''' is an [[Enemy Bases|enemy base]] that appears in the [[River City Stages]]. It was added in [[Version 12.7 Update|Version 12.7]].
+
+{{Enemy Info
+|name = Relay Base
+|image = E 657.png
+|first appearance = [[River City Stages]]
+|money drop = N/A
+}}
+
+==Enemy==
+It does nothing despite its special treatment as an animated base, basically acting as a regular base that can be hurt by [[Surge Attack]]s and [[Explosion]]s.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[400m Relay: Fast Start]] (250,000%)
+**[[800m Relay: Fast Start]] (1,200,000%)
+**[[1600m Relay: Fast Start]] (6,000,000%)
+**[[400m Relay: Second Fastest]] (500,000%)
+**[[800m Relay: Second Fastest]] (2,500,000%)
+**[[1600m Relay: Second Fastest]] (7,500,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Relay Base
+|Health = 10
+|Attack Power = 1
+|Attack Range = 50
+|Attack Type = Single
+|Time Between Attacks = 1000
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 0
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+657 e.png|Relay Base's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/659.html
+
+----
+{{EnemyNav|Hatsune Miku XVI|Mini Angel Cyclone}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Animated Enemy Bases]]

@@ -1,0 +1,123 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For the enemy seen in the [[Yurudrasil Collaboration Event]], see [[Goddess of Abundance - Freya (Enemy)]].''
+'''Goddess of Abundance - Freya''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was added in [[Version 4.4 Update|Version 4.4]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Yurudrasil Collaboration Event]].
+
+{{Cat Info
+|ID = 235
+|rarity = SR
+|name1 = Goddess of Abundance - Freya
+|name2 = Goddess of Abundance - Freya CC
+}}
+
+==Evolution==
+Evolves into '''Goddess of Abundance - Freya CC''' at level 10.
+
+==Strategy/Usage==
+Being a Super Rare crowd-controller with unusually long range may sound interesting at first, but in actuality, Freya has issues that drag her down. One is her poor total uptime, only worked around by stacking many of her at once over a lengthy period of time. Curiously, her abysmally low DPS can come into play, letting her stack up on a bulky enemy and hardly making a dent in its health. Another issue is her target types; Dark enemies are already countered by [[Flower Cat (Special Cat)|Bombercat]] and even [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]'s [[Slow|Slow]] [[Talents|Talent]], and Angels are countered by [[Bishop Cat (Rare Cat)|Sanzo Cat]] most of the time, though, rarely, being able to outrange [[Angelic Sleipnir]] can have its perks. If long-ranged crowd-control support is needed and can be stacked, [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] is and has always been the best option.
+
+{{Job|Classification = Crowd-Controller & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 235
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni235 f00.png
+|Image2 = Uni235 c00.png
+|Name1 (JP) = 豊穣の女神フレイヤ (Hōjō no megami Fureiya)
+|Desc1 (JP) = ゆるドラシルから参戦！<br>様々な種族から厚い信頼を得ている豊穣の女神<br>黒い敵と天使の動きをたまに遅くする(範囲攻撃)
+|Transl1 (JP) = Joining the war from Yurudrasil!<br>Fertility goddess who enjoys the deep trust of various races<br>Occasionally slows down Black and Angel enemies (Area Attack)
+|Name2 (JP) = 豊穣の女神フレイヤCC (Hōjō no megami FureiyaCC)
+|Desc2 (JP) = ゆるドラシルから参戦！<br>今日もキレながら上司にツッコミを入れる神界の常識人<br>黒い敵と天使の動きをたまに遅くする(範囲攻撃)
+|Transl2 (JP) = Joining the war from Yurudrasil!<br>A woman of common sense in the divine world, who today still snaps and tuts at her boss<br>Occasionally slows down Black and Angel enemies (Area Attack)
+|Name1 (KR) = 풍요의 여신 프레이야
+|Desc1 (KR) = 유루드라실에서 참전!<br>여러 종족에게 열렬한 신뢰를 얻고 있는 풍요의 여신<br>가끔 검은 적과 천사의 움직임을 느리게 한다 (범위 공격)
+|Name2 (KR) = 풍요의 여신 프레이야CC
+|Desc2 (KR) = 유루드라실에서 참전!<br>오늘도 대폭발하여 상사에게 태클을 거는 신계의 정상인<br>가끔 검은 적과 천사의 움직임을 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 550円
+*Chapter 2: 825円
+*Chapter 3: 1,100円
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Goddess of Abundance - Freya
+|Normal Base HP = 470
+|Normal Base AP = 65
+|Normal Range = 400
+|Normal Foreswing = 40
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 73
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 550
+|Normal Recharge = 760
+|Normal Attack Type = Area
+|Normal Targets = Dark,Angel
+|Normal Abilities = {{AbilityIcon|Slow}} 40% chance to [[Slow|slow]] target traits for 100f <sub>3.33 seconds</sub>
+|Evolved Name = Goddess of Abundance - Freya CC
+|Evolved Base HP = 670
+|Evolved Base AP = 90
+|Evolved Range = 400
+|Evolved Foreswing = 40
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 73
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 550
+|Evolved Recharge = 760
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Angel
+|Evolved Abilities = {{AbilityIcon|Slow}} 40% chance to [[Slow|slow]] target traits for 100f <sub>3.33 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 470 HP
+|val-Normal-Attack Power = 65 damage<br>(9.8 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 7,990 HP
+|val-Normal-MaxAttack = 1,105 damage<br>(166.58 DPS)
+|val-Evolved-Health = 11,390 HP
+|val-Evolved-Attack Power = 1,530 damage<br>(230.65 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni235 f00}}
+
+==Trivia==
+*Goddess of Abundance - Freya is based on the Norse goddess [[wikipedia:Freyja|Freyja]].
+
+==Reference==
+*https://battlecats-db.com/unit/236.html
+
+----
+{{CatNav|Junior God Suruzu|God of War - Odin}}
+----
+
+{{Yurudrasil}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]

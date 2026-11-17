@@ -1,0 +1,75 @@
+{{EnemiesAppearing|One Horn|B.B.Bunny|Squire Rel|Pigge|Gory|Sir Seal|Master Da Xun}}
+'''Escaping the Home''' is the third stage in [[Old Guys About Town (Monthly Event)|Old Guys About Town]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn036 02 s en.png]]
+|stage location = [[File:Mapname036 s en.png]]
+|energy = 75
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|One Horn|200%
+|B.B.Bunny|100%
+|Squire Rel|100%
+|Pigge|200%
+|Gory|200%
+|Sir Seal|200%}}
+|boss = {{Magnification|Master Da Xun|100%}}
+|enemies2 = {{Magnification|One Horn|300%
+|B.B.Bunny|150%
+|Squire Rel|150%
+|Pigge|300%
+|Gory|300%
+|Sir Seal|300%}}
+|boss2 = {{Magnification|Master Da Xun|150%}}
+|enemies3 = {{Magnification|One Horn|400%
+|B.B.Bunny|200%
+|Squire Rel|200%
+|Pigge|400%
+|Gory|400%
+|Sir Seal|400%}}
+|boss3 = {{Magnification|Master Da Xun|200%}}
+|enemies4 = {{Magnification|One Horn|600%
+|B.B.Bunny|300%
+|Squire Rel|300%
+|Pigge|600%
+|Gory|600%
+|Sir Seal|600%}}
+|boss4 = {{Magnification|Master Da Xun|300%}}
+|treasure = - [[Kung Fu Cat X (Rare Cat)|Kung Fu Cat X]] (3%, 1 time)
+|XP = 2,250 XP
+|width = 3,600
+|max enemies = 10
+|jpname = Escape the Elderly Housing with Care 5 times
+|script = 老人ホームを5回脱出
+|romaji = Rōjin hōmu o 5-kai dasshutsu
+|star = 4
+|event-chapter = [[Old Guys About Town (Monthly Event)|Old Guys About Town]]
+|difficulty = ★3
+|prev stage = [[Day Job = Boxers]]
+|next stage = [[300 Years Probation]]
+}}
+
+==Battleground==
+*1 [[One Horn]] spawns after 10 seconds<sup>300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 0.07 seconds<sup>2f</sup>, delay 4~10 seconds<sup>120f~300f</sup>.
+*Infinite [[Squire Rel]]s spawn after 0.07 seconds<sup>2f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*10 [[Pigge]]s spawn after 2 seconds<sup>60f</sup>, delay 2~12 seconds<sup>60f~360f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 4 seconds<sup>120f</sup>, delay 2~13.33 seconds<sup>60f~400f</sup>.
+*Infinite [[Squire Rel]]s spawn after 6 seconds<sup>180f</sup>, delay 4~10 seconds<sup>120f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Master Da Xun]] spawns as the boss.
+**Infinite [[One Horn]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 0.67~2 seconds<sup>20f~60f</sup>.
+**Infinite [[Sir Seal]]s spawn, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**Infinite [[Pigge]]s spawn, delay 3.33~4.67 seconds<sup>100f~140f</sup>.
+
+==Strategy==
+Use Area Attackers such as [[Salon Cat (Rare Cat)|Paris Cat]] for Master Da Xun. Close ranged units are welcome as well due to Master Da Xun's minimal range of 180.
+
+==Reference==
+*https://battlecats-db.com/stage/s01036-03.html
+
+{{Monthly}}
+[[Category:Old Guys about Town Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

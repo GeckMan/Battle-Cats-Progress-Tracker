@@ -1,0 +1,143 @@
+{{SwitchExclusive}}
+{{JPExclusive}}
+'''Mallet Cat''' is a Special Cat that was added in [[The Battle Cats Unite!/Patch 1.0.4 Update|Patch 1.0.4]] and is exclusive to the [[The Battle Cats Unite!|Nintendo Switch Version]] of [[The Battle Cats]]. With [[The Battle Cats Unite!/Versus Mode|Versus Mode]] being added via free update, Mallet Cat was sold as promotional material along with the Official Limited Time Edition The Battle Cats Unite Combo Case to incentivize players to buy the game physically starting July 16, 2020. A Package Version Bonus without the Nintendo Switch case was later released in December 3, 2020 which would distribute Mallet Cat once more. In December 9, 2021, when the [[The Battle Cats Unite!/Patch 1.0.5 Update|English language patch]] released, the Package Version bonus came to Southeast Asia region giving SEA players a chance to obtain Mallet Cat as well. In [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]], Mallet Cat was given the ability to target Zombies. As of now, Mallet Cat is ''<u>only</u>'' available in the '''Japanese''' ('''JP''') and '''Southeast Asia''' ('''SEA''') versions.
+
+{{Cat Info
+|ID = 399
+|rarity = EX
+|version = Switch
+|name1 = Mallet Cat
+|name2 = Harisen Cat
+|image1 = Picohan cat.png
+|image2 = Harisen Cat.png
+}}
+
+==Evolution==
+Evolves into '''Harisen Cat''' at level 10.
+
+==Strategy/Usage==
+Mallet Cat has the range of most melee units, giving it many bad matchups towards traited enemies that can outrange your melee cats. Since the purpose of this cat is to crowd control via knockback, its pathetic range, recharge, and TBA make it unbearable to use outside of the [[Empire of Cats]] chapter given how many enemies can rush or outrange Mallet Cat. This unit, however, has some strong uses in [[Cats of the Cosmos]] if you can stack as many Mallet Cats as possible; due to [[:Category:Cyclones|Cyclone]]s appearing in the final chapter, Mallet Cat can be proven useful in supplementing crowd control as it can outrange all four cyclones. After that, Mallet Cat can be stowed away to collect dust forever.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 399<sup>Switch</sup>
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni10399 f00.png
+|Image2 = Uni10399 c00.png
+|Name1 = Mallet Cat
+|Desc1 = Attacks make a noise so adorable that his<br>targets don't even mind getting bonked.<br>Chance to Knockback Traited enemies.
+|Name2 = Harisen Cat
+|Desc2 = Attacks make a noise so sharp that his<br>targets wince even though it doesn't hurt that much.<br>Chance to Knockback Traited enemies.
+|Name1 (JP) = ネコピコハン (Neko Pikohan, Cat Squeaky Hammer)
+|Desc1 (JP) = 叩くと音の出る伝説のハンマーを手に入れたネコ<br>強固なヘルメットでライバルからの反撃に備える<br>たまに属性を持つ敵をふっとばす
+|Transl1 (JP) = A Cat with a legendary hammer that makes a sound when used<br>and a strong helmet to prepare for counterattacks from rivals<br>Occasionally knocks back Traited enemies
+|Name2 (JP) = ネコハリセン (Neko Harisen, Cat Harisen)
+|Desc2 (JP) = 叩くと音が鳴り響く伝説のハリセンを手に入れたネコ<br>強固な石頭でライバルからのツッコミに備える<br>たまに属性を持つ敵をふっとばす
+|Transl2 (JP) = A Cat with a legendary harisen that makes a sound when used<br>and a head as thick as a rock to prepare for ''tsukkomi'' from rivals<br>Occasionally knocks back Traited enemies
+}}
+
+==Cost==
+*All Chapters: 360¢
+*[[Legend Stages|Stories of Legend]]: 540¢
+{{Upgrade Cost|MIX
+|0
+|2,000
+|3,200
+|4,800
+|6,800
+|9,200
+|12,000
+|15,200
+|18,800
+|22,800
+|3,000
+|max = 30
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mallet Cat
+|Normal Base HP = 360
+|Normal Base AP = 90
+|Normal Range = 250
+|Normal Foreswing = 24
+|Normal Attack Cooldown = 68
+|Normal Attack Length = 52
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 540
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie
+|Normal Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Harisen Cat
+|Evolved Base HP = 360
+|Evolved Base AP = 90
+|Evolved Range = 250
+|Evolved Foreswing = 24
+|Evolved Attack Cooldown = 68
+|Evolved Attack Length = 52
+|Evolved Speed = 16
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 540
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie
+|Evolved Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.30
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+==Animations==
+<tabber>
+1P=
+<div class="unit-viewer">
+{{#tag:tabber|
+Normal=
+{{AnimationViewer|10399 f.png|MediaWiki:Custom-AnimationViewer/NS399 f.json}}
+{{!}}-{{!}}Evolved=
+{{AnimationViewer|10399 c.png|MediaWiki:Custom-AnimationViewer/NS399 c.json}}
+}}
+</div>
+|-|2P=
+<div class="unit-viewer">
+{{#tag:tabber|
+Normal=
+{{AnimationViewer|399 f 2P.png|MediaWiki:Custom-AnimationViewer/NS399 f.json}}
+{{!}}-{{!}}Evolved=
+{{AnimationViewer|10399 c 2P.png|MediaWiki:Custom-AnimationViewer/NS399 c.json}}
+}}
+</div>
+</tabber>
+
+{{Gallery|Uni10399 f00}}
+
+==Trivia==
+*A ''[[wikipedia:Harisen|harisen]]'' is a Japanese paper fan most commonly used in [[wikipedia:Manzai|''manzai'']] comedy, in which the ''tsukkomi'' (the short-tempered "straight man" who takes things seriously) may hit the ''boke'' (the airheaded "funny man" who gets everything wrong) on the head with a ''harisen'' in response to their jokes or idiocy. The term ''tsukkomi'', also used in Harisen Cat's Japanese description, refers to when the secondary comedian "butts in" on their partner's act by reacting to, pointing out, or calling out their ridiculousness.
+*This is the only cat unit in any version of [[The Battle Cats]] to change color depending on the player. In the VS and Play Together modes of [[The Battle Cats Unite!]], Player 1's Mallet Cat has a red headband and mallet, which are blue for Player 2's Mallet Cat. For Harisen Cat, his tracksuit and his ''harisen''<nowiki>'</nowiki>s pivot are what change color. In single player, it will always be red.
+
+==External links==
+*https://corocoro.jp/news/134021/
+
+----
+<p style="text-align:center;">[[Cat Release Order|Units Release Order]]:</p>
+
+<p style="text-align:center;">'''[[Undies Cat Jr. (Switch Special Cat)|&lt;&lt; Undies Cat Jr.]] | [[Manga Cat (Switch Special Cat)|Manga Cat &gt;&gt;]]'''</p>
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Single Attack Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Serial Code Cats]]
+[[Category:Special Cats]]

@@ -1,0 +1,443 @@
+<tabber>Wandering 1~10=
+{{EnemiesAppearing|Shibalien|Imperator Sael|Gabriel|Heavenly Hippoe|Scissoroo|Big Peng Z}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn038 00 a en.png]]
+|stage location = [[File:Mapname038 a en.png]]
+|enemies = {{Magnification|Shibalien|0
+|Imperator Sael|0
+|Gabriel|0
+|Heavenly Hippoe|0
+|Scissoroo|0}}
+|boss = {{Magnification|Big Peng Z|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 10
+|jpname = Wandering Lv.X
+|script = 徘徊 Lv.X
+|romaji = Haikai Lv.X
+|event = [[Big Peng Z Strikes]]
+|event-chapter = [[Big Peng Z Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*4 [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*1 [[Imperator Sael]] spawns after 10 seconds<sup>300f</sup>.
+*4 [[Gabriel]]s spawn after 30 seconds<sup>900f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 30 seconds<sup>900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Big Peng Z]] spawns as the boss.
+**Infinite [[Gabriel]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**Infinite [[Shibalien]]s spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**3 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Shibalien]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**3 [[Scissoroo]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Wandering Lv.
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! rowspan="2" style="text-align: center;"|Continuation Chance [[Big Peng Z Strikes/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Big Peng Z]]
+! scope="col" |[[Shibalien]]
+! scope="col" |[[Imperator Sael]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Scissoroo]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|60%
+|1,000%
+|1,000%
+|200%
+|200%
+|600%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|76%
+|1,156%
+|1,156%
+|222%
+|222%
+|667%
+|60
+|Bricks +5
+|1,140
+|3%
+|-
+! scope="row" |3
+|92%
+|1,312%
+|1,312%
+|244%
+|244%
+|734%
+|70
+|500,000 XP
+|1,330
+|7%
+|-
+! scope="row" |4
+|108%
+|1,468%
+|1,468%
+|266%
+|266%
+|801%
+|70
+|Coal +5
+|1,330
+|11%
+|-
+! scope="row" |5
+|124%
+|1,624%
+|1,624%
+|288%
+|288%
+|868%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|140%
+|1,780%
+|1,780%
+|310%
+|310%
+|935%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|156%
+|1,936%
+|1,936%
+|332%
+|332%
+|1,002%
+|90
+|Feathers +5
+|1,710
+|21%
+|-
+! scope="row" |8
+|172%
+|2,092%
+|2,092%
+|354%
+|354%
+|1,069%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|188%
+|2,248%
+|2,248%
+|376%
+|376%
+|1,136%
+|100
+|Gold +5
+|1,900
+|27%
+|-
+! scope="row" |10
+|200%
+|2,400%
+|2,400%
+|400%
+|400%
+|1,200%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+These first ten stages are designed to showcase Big Peng Z as an enemy and can easily be solved with brute force. Focus on killing the Scissoroos and chipping down Big Peng Z and you should be able to secure a relatively easy win.
+
+==='''Recommended Units'''===
+*[[Bakery Cat (Rare Cat)|Fried Chicken Cat]]: With a very consistent anti-Alien/Zombie Curse ability at midrange, Fried Chicken Cat's LD can easily connect onto Big Peng Z and disable his Toxic ability, even behind other threats, trivializing the stage as long as other units are brought along to defeat the nasty peons.
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Seafarer's decent generalist stats and 40% Freeze ability versus Aliens allows him to easily shut down the Aliens, as he can outrange them reliably.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Housewife's strong LD ability and Zombie Killer, combined with her damage if a Savage Blow hits makes her essential here, since Big Peng Z's low standing range of 150 often causes him to walk into her range, where her Slow ability, if it activates, can greatly impede him.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: If you're really struggling here, you can use Cyberpunk to Slow the boss and all of the enemies, allowing you to take your time while you chip the boss down.
+*[[Brainwashed Fish Cat (Super Rare Cat)|Brainwashed Island Cat]]: Completely destroys this stage, being able to tank huge amounts of damage from Big Peng Z and having the Curse ability against Big Peng Z as well as having decent generalist stats. Brainwashed Island is best sent out after most of the peons are gone.
+
+==='''Recommended Ubers'''===
+*Any unit with Toxic Immune, Curse vs. Zombies, or both will alleviate the stage's difficulty as long as they can deny Big Peng Z's Toxic ability. Examples include [[Mighty Carrowsell (Uber Rare Cat)|Extradimensional Envanz]] and [[Bliza (Uber Rare Cat)|Blizarena]].
+|-|
+Wandering 11~20=
+{{EnemiesAppearing|Owlbrow|Doge Dark|Brollow|Shadow Boxer K|Zigge|Zory|Big Peng Z}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn038 00 a en.png]]
+|stage location = [[File:Mapname038 a en.png]]
+|enemies = {{Magnification|Owlbrow|0
+|Doge Dark|0
+|Brollow|0
+|Shadow Boxer K|0
+|Zigge|0
+|Zory|0}}
+|boss = {{Magnification|Big Peng Z|0}}
+|restriction = [[No Continues]]
+|width = 5,700
+|max enemies = 6
+|jpname = Wandering Lv.X
+|script = 徘徊 Lv.X
+|romaji = Haikai Lv.X
+|event = [[Big Peng Z Strikes]]
+|event-chapter = [[Big Peng Z Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*1 [[Owlbrow]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Owlbrow]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Owlbrow]] spawns after 56.67 seconds<sup>1,700f</sup>.
+*5 [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Big Peng Z]] spawns as the boss.
+**5 [[Brollow]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+**2 [[Brollow]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**3 [[Doge Dark]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Shadow Boxer K]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**3 [[Zigge]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**2 [[Zory|Zories]] spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Wandering Lv.
+! colspan="7" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! colspan="3" scope="col" style="text-align: center;"|Continuation Chance
+|-
+! scope="col" |[[Big Peng Z]]
+! scope="col" |[[Owlbrow]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Brollow]]
+! scope="col" |[[Shadow Boxer K]]
+! scope="col" |[[Zigge]]
+! scope="col" |[[Zory]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+! scope="col" |[[Big Peng Z Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+! scope="col" |[[Big Peng Z Strikes/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! scope="col" |[[Big Peng Z Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|200%
+|1,200%
+|1,200%
+|200%
+|300%
+|300%
+|300%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|211%
+|1,267%
+|1,267%
+|222%
+|333%
+|333%
+|333%
+|120
+|Meteorite +5
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|222%
+|1,334%
+|1,334%
+|244%
+|366%
+|366%
+|366%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|233%
+|1,401%
+|1,401%
+|266%
+|399%
+|399%
+|399%
+|140
+|Sprockets +5
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|244%
+|1,468%
+|1,468%
+|288%
+|432%
+|432%
+|432%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|255%
+|1,535%
+|1,535%
+|310%
+|465%
+|465%
+|465%
+|200
+|Ammonite +5
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|266%
+|1,602%
+|1,602%
+|332%
+|498%
+|498%
+|498%
+|200
+|Beast Bones +15
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|277%
+|1,669%
+|1,669%
+|354%
+|531%
+|531%
+|531%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|288%
+|1,736%
+|1,736%
+|376%
+|564%
+|564%
+|564%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|300%
+|1,800%
+|1,800%
+|400%
+|600%
+|600%
+|600%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+
+==Strategy==
+Despite the increase in difficulty in following stages,  Big Peng Z's Gauntlet is still widely considered the easiest when met with the proper strategy. The main obstacle lies not in the boss, but rather funding shortages and skyrocketing magnifications on the supporting threats which can easily advance if Big Peng Z nukes a group of units. Bringing a level 20+ Holy Blast is highly recommended, as it can force the zombies to surface and finish off Big Peng Z from afar if a Zombie Killer didn't land the final hit.
+
+The startoff is extremely generous with only three Owlbrows and five Doge Darks, which actually does allow for a Ms. Sign cheese if tackling the stage proves impossible otherwise. It's obviously important to hold them off, but refrain from actually pushing so the Holy Blast recharges just in time for the first Zory.
+
+On base hit, Big Peng Z, Brollows, as well as Black and Zombie threats will emerge. Fire the Holy Blast Cannon when the Zory burrows, then let them push a little. From here, Slow the enemies with Cyberpunk and try to get Fried Chicken or just Pizza and Housewife hits in. Your main goal is to play defensive and prevent the enemies from pushing too hard, then eliminate Big Peng Z and clear the stage.
+
+==='''Recommended Units'''===
+*[[Talents|Talented]] [[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]]: With Talents and boosting, Li'l Eraser becomes a very strong unit here given his Dodge and spammability. Also has a Defence combo with Cameraman Cat.
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]]: Camera's Strong ability against Floating specifically gives her a good role here to unleash DPS against the Zombies and more importantly those nasty Brollows. Also has a Defence combo with Li'l Eraser Cat.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Slime's True Form grants him a variety of bonuses which all help here: a higher Wave level lets him snipe Brollows, the range increase allows him to hit Zory and higher speed gets him to the frontline quicker. Pre True Form also works, but you're going to need to watch out more for incoming Brollows.
+*[[Teacher BearCat (Rare Cat)|Cadaver BearCat]] / [[Ancient Egg: N107 (Rare Cat)|Cat Chief]]: Both units to be brought along solely for the supporting Zombie enemies, but can get hits onto Big Peng Z if you have someone with Curse.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: A unit solely to deal with Brollow and the starting Owlbrows, which can be quite the threat if left unchecked, but replaceable otherwise.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: An excellent midranger with Massive Damage versus Black, Pizza's devastating attacks can nuke Doge Dark into utter oblivion, and also works well against Shadow Boxer K. If his Wave talent has been invested into, Pizza might be able to even snipe the Black threats behind Big Peng Z and hinder them greatly if he didn't kill them outright.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Similar to her performance on stages 1-10, Housewife maintains her relevancy here given her huge damage and Zombie Killer ability.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: A very important unit to bring along here, Cyberpunk's Slow allows the otherwise hard-pushing enemies to be stuck in place. If some of the Zombie enemies can't get hit by Cyberpunk's attack and he's about to fire, you can use your Holy Blast to push them back and have them be hit by Cyberpunk's laser.
+*[[Brainwashed Fish Cat (Super Rare Cat)|Brainwashed Island Cat]]: Brainwashed Island carries here hard, being able to demolish the Zigges and Zories as well as Curse Big Peng Z. Just watch out for the Brollows. Brainwashed Island is best used when there are few non-Zombie peons left on screen.
+*[[Bakery Cat (Rare Cat)|Fried Chicken Cat]]: If you have Bakery's True Form, you win instantly. With an incredibly fast uptime, having a single Fried Chicken Cat connect onto Big Peng Z is a win for you, although you do need to mind his slow mobility and vulnerability to the other enemies. Even if you don't have his True Form, Boomerang can work here in a desperate scenario.
+
+===Recommended Ubers===
+*[[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]]: Kasli is designed to destroy this stage, as her level 3 Surge Attacks provide a great deal damage and her Curse effect has excellent uptime, rapidly whittling away the peons and rendering the boss completely helpless. She can't Z-Kill Big Peng Z, but it's not too difficult for her to hold off the other threats until the Holy Blast recharges.
+*[[One-Eyed Asuka (Uber Rare Cat)|Blue-Eyed Asuka]]: Asuka can be treated like Kasli, but her unique differences allow her to crush Big Peng Z even harder than her non-collab counterpart. With her Toxic Immunity, She won't immediately melt to pieces if her Curse fails to hit Big Peng Z in time, which is especially important due to her slightly lower Curse uptime. More notably, she has Colossus Slayer, giving her inflated stats against the boss, allowing her to put him 6 feet under even faster.
+*[[Mighty Carrowsell (Uber Rare Cat)|Extradimensional Envanz]]: Being Resistant to Black/Zombie enemies with Immunity to Toxic, Zombie Killer and Colossus Slayer, Envanz can tank an incredible amount of damage from the main threats and put its 50% Slow for 4 seconds to good use. If that wasn't enough, its 100% 8-second Curse has near full uptime, giving Big Peng Z and Zigge no chance to disrupt other units. Envanz doesn't provide much in the way of damage, so back it up with other DPS units.
+*Talented [[Sarukani (Uber Rare Cat)|The One-Hit Wonders]]: With Talents, One-Hit Wonders becomes a very good unit here, being able to deal heavy damage to the Zombies as well as being Toxic Immune.
+*[[Bliza (Uber Rare Cat)|Blizarena]]: Blizarena's buffs from her True Form make her a good asset here, with her Colossus Slayer, Toxic Immunity, and Zombie Killer. However, she doesn't target Black, so you'll need to support her on that aspect.
+*[[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]]: Vega is also capable of shutting down this stage, given she is Strong against Traited enemies and has 50% chance to Weaken them to 50% on her second hit for 5 seconds. Her Toxic Immunity and Colossus Slayer only sweeten the deal further.
+*[[Lasvoss (Uber Rare Cat)|Lasvoss Reborn]]: With Toxic Immunity and Big Peng Z's low damage, Lasvoss can potentially connect despite having mediocre range, and quickly deplete Big Peng Z's health, making way for a Holy Blast to rub it right off the stage.
+*[[Mighty Kat-A-Pult (Uber Rare Cat)|CAT-10 Gigapult]]: Gigapult's extreme stats, LD, and Wave through Talents makes him a hard counter for this stage, being able to knock out the Dark enemies as well as being able to Weaken the Zigges and Zories.
+*Talented [[Kasa Jizo (Uber Rare Cat)|Ultra Kasa Jizo]]: With his immune to toxic talent, Ultra Kasa Jizo can be extremely powerful. He is very spammable and powerful, even more so against the threat of the SBK. Even without his talents, he can survive 3 hits from the boss, thus still being very powerful altough considerably less broken.
+*[[Mighty Thermae D-Lux (Uber Rare Cat)|Subterra Saviors]]: With their Ultra Form, they receive a longer freeze uptime, forwards and backwards pierce increasing by 50 each, toxic immune, an incredible 50% increase to their health, and relic targeting (which is not very relevant here). With these new benefits, the Saviors become extremely viable here, taking a very respectable amount of health against Zombies, freezing them and easily outright killing them. Plus, with their substantial increase to their health, the Saviors become extremely resilient and long-lasting, making their impact that much greater. Even further, if one were to have their strengthen talent, their new bulk can allow them to utilize it effectively, turning their dps from respectable to significant even outside of their target traits. If something runs in front of them, their newfound forward pierce can still allow them to hit Big Pen Z and their extreme backwards pierce can comfortably clear burrowed Zombies. Furthermore, they work very well in tandem with Gigapult since they have similar range and speed. If one were to have this Ultra Form, they will find this gauntlet much easier than without.</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24038.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Event Stages]]
+[[Category:Event]]

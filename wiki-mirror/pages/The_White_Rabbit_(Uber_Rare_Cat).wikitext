@@ -1,0 +1,301 @@
+'''The White Rabbit''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 4.2 Update|Version 4.2]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Justice Strikes Back! Dark Heroes (Gacha Event)|Justice Strikes Back! Dark Heroes]] and [[RED BUSTERS (Gacha Event)|RED BUSTERS]] events. [[True Form]] added in [[Version 6.10 Update|Version 6.10]] has a 100% chance to [[Knockback|knockback]] and [[Weaken|weaken]] [[:Category:Red Enemies|Red]] and [[:Category:Alien Enemies|Alien]] enemies. [[Talents]] were added in [[Version 10.5 Update|Version 10.5]]. [[Ultra Form]] added in [[Version 13.4 Update|Version 13.4]] increases health, attack power and frequency and gains Strong Against, Slow, [[Sage Slayer]], [[Multi-Hit]] and [[Long Distance]], and removes the Knockback ability.
+
+{{Cat Info
+|ID = 212
+|rarity = UR
+|name1 = The White Rabbit
+|name2 = The Black Cat
+|name3 = The Grey Fox
+|name4 = The Spectral Cat
+}}
+
+==Evolution==
+Evolves into '''The Black Cat''' at level 10.
+
+Evolves into '''The Grey Fox''' at level 30 using [[Catfruit]] and XP.
+
+Evolves into '''The Spectral Cat''' at level 60 using [[Catfruit]], [[Catfruit#Behemoth Stones|Behemoth Stones]] and XP.
+
+==Strategy/Usage==
+Regardless of her forms, her range and stats lend herself to generalist usage, though she is still not all that great at being a generalist backliner. You can take advantage of her long range and use her against tanky ranged enemies like [[Le'boin]], [[Le'noir]], [[Le'Solar]] and [[THE SLOTH]] to chip away damage.
+
+If you manage to get this cat early on, use her in [[Into the Future]], as all of her forms give you a wide variety of [[:Category:Anti-Alien Cats|abilities against Aliens]]. Additionally, she outranges both [[Corrupted Valkyrie]] and [[Raging Bahamut Cat|Raging Bahamut]]. Her anti-Alien abilities can continue to be useful in [[Cats of the Cosmos]].
+
+==='''Normal Form'''===
+The White Rabbit is effective in stalling armies of Red and Alien enemies, allowing your other cat units to slowly finish them off. It is best not to rely on her if the target is fast and short ranged, like [[Shy Boy]] or ([[Nimoy Bore|Nimoy]]) [[Bore]], as other stallers ([[Surfer Cat (Super Rare Cat)|Surfer Cat]], [[Witch Cat (Rare Cat)|Witch Cat]] etc.) tend to offer better crowd control; rather, White Rabbit shines as support for such units or against messier situations, like a stage such as [[Berserk (Insane)|Berserk]] and [[Unjust War (Deadly)|Unjust War]], or stages with a variety of Aliens. Her good health and many knockbacks will allow her to stand around long enough to make a difference. In endgame, this form falls a bit behind due to her low uptime, which tends not to be enough in truly difficult stages.
+
+==='''Evolved Form'''===
+The Black Cat can be used to deal decent damage to Aliens and Reds. Use of this form is not highly recommended as her initial DPS is low, but her range and resilience may result in a satisfying performance against certain medium-good ranged foes, namely Corrupted Valkyrie. Note that this form still faces competition from her own first form, whose slow has a tendency to be preferable more often than not.
+
+==='''True Form'''===
+The Grey Fox can be used in a similar manner to her Normal Form, in being able to control hordes of Alien or Red enemies who can't be controlled too well. The abilities allow her to push everything back, regaining precious terrain in stages where slow tug of war-like battles happen, all while weakening the initial "charge-back" of the knocked back enemies. Ideal situations in which to use this feature are rare, plus such a unit only really works in armies with lots of disposable units at the core. She synergizes badly with most other Ubers.
+
+==='''Ultra Form'''===
+With her range and stats at level 60, The Spectral Cat becomes a solid generalist attacker, even more solid when against Red and Alien enemies. However, her multi-hit LD attacks and somewhat slow attack rate can put a hamper on her DPS, especially when her attacks are split into multiple ranges and only overlap in 385-466 range.
+
+Regardless, even enemies taking a single attack will be slowed and weakened for almost 5 seconds, which is impressive crowd-controlling on top of her solid performance for her range. In addition, she gets the [[Sage Slayer]] ability, which is useful against [[Doctor K.O.]] and [[Techn-Old Hyena]], being able to prevent them from pushing as hard alongside dealing even more damage to them.
+
+==='''Talents'''===
+[[Immune to Warp]] offers a situational advantage against some [[:Category:Starred Alien Enemies|Starred Aliens]], making her better in presence of [[Everlord Wanwan]], [[Gardeneel Bros.]] or [[Project A]]. Due to her not needing much damage for a knockback, however, it'll rarely come into play. Similarly, [[Immune to Curse|Curse Immunity]] can be useful in stages that combine [[:Category:Relic Enemies|Relics]] with Red/Alien enemies, as well as those stages featuring the [[Relic Doge Base (Enemy Base)|Relic Doge Base]]. However, these stages are rather sparse and her range lets her avoid many Relics anyway.
+
+Cost Down, HP Buff and Attack Buff are basic general improvements, the benefits of which should be clear. It is worth noting that Gray Fox is not exactly a combat unit though, making it so the NP is often better spent on other units. These talents do little to fix her problems, but they may be worth sparing a thought for if you are lacking units with such good range.
+
+{{Job|Classification = Backliner & Crowd-Controller|EvolvedClass = Backliner|TrueClass = Backliner & Crowd-Controller|UltraClass = Sniper & Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Heart Beat|"Slow" Effects Up (Sm)|The White Rabbit|Rope Jump Cat|jpname=心がぴょんぴょん}}
+|{{CatCombo|Under Arrest|"Slow" Effects Up (Sm)|The White Rabbit|Prisoner Cat|jpname=タイホしちゃうぞ☆}}
+|{{CatCombo|Gang of Killers|Bounty Up (Sm)|The Black Cat|Red Riding Mina|jpname=暗殺者コンビ}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 212
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni212 f00.png
+|Image2 = Uni212 c00.png
+|Image3 = Uni212 s00.png
+|Image4 = Uni212 u00.png
+|Name1 = The White Rabbit
+|Desc1 = A notorious spy who insists on cosplaying during<br>every heist. She's never failed a mission, though…<br>100% chance of slowing Alien/Red. (Area Attack)
+|Name2 = The Black Cat
+|Desc2 = Operative of the infamous Cat assassin's guild, there<br>and gone without a single trace. Delivers pizza as a<br>cover. Strong area damage against Alien/Red.
+|Name3 = The Grey Fox
+|Desc3 = Commander of the F.O.X. intelligence agency,<br>she ruthlessly directs a global network of expert<br>killers. Area atks knockback+weaken Alien/Red.
+|Name4 = The Spectral Cat
+|Desc4 = Wears many masks in pursuit of those that would<br>disturb the peace. Strong against, Slows and Weakens<br>Aliens and Red with Area attacks. Sage Slayer.
+|Name1 (JP) = ホワイトラビット (Howaito Rabitto, White Rabbit)
+|Desc1 (JP) = 秘密警察｢ラビッツ｣のメンバーである彼女は<br>検挙率100％のおとり捜査で有名なコスプレ刑事<br>エイリアンと赤い敵の動きを必ず遅くする(範囲攻撃)
+|Transl1 (JP) = A member of the mysterious group "The Rabbits".<br>Actually just a famous cosplayer.<br>Slows down the movement of Red and Aliens.
+|Name2 (JP) = ブラックキャット (Burakku Kyatto, Black Cat)
+|Desc2 (JP) = 暗殺黒猫団｢キャッツ｣のメンバーでもある彼女は<br>決して足跡を残さない華麗なる殺し屋であり運び屋<br>エイリアンと赤い敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Happens to also be an assassin in the "Dark Cat Organization".<br>An excellent killer that never leaves any tracks behind.<br>Strong against Red and Alien enemies.
+|Name3 (JP) = グレーフォックス (Gurē Fokkusu, Grey Fox)
+|Desc3 (JP) = 諜報機関「フォックス」の指揮官でもある彼女は<br>優れた話術で無理難題を部下に遂行させる(範囲攻撃)<br>エイリアンと赤い敵を必ずふっとばして攻撃力を下げる
+|Transl3 (JP) = She is the commander of the intelligence agency "Fox"<br>Let subordinates carry out difficult tasks with excellent speech (range attack)<br>Always blow off aliens and red enemies to reduce attack power
+|Name4 (JP) = スペクトルキャット (Supekutoru Kyatto, Spector Cat)
+|Desc4 (JP) = 数多の顔を使い分け、世界の秩序を乱す巨悪を追い詰めた<br>真のヒーロー。超賢者特効を持ち、エイリアンと赤い敵に<br>めっぽう強く攻撃力を下げて動きを遅くする(範囲攻撃)
+|Transl4 (JP) = A true heroine who chased down the great evil disrupting the world's order using numerous disguises. She possesses a super-sage effect, and is exceptionally strong against Aliens and Red enemies, lowering their attack power and slowing their movement (area attack).
+|Name1 (TW) = 白兔女俠
+|Desc1 (TW) = 是秘密警察「拉比滋」的成員之一<br>以檢舉力100%的威嚇搜查出名的變裝女刑警。<br>必定能使異星戰士和紅色敵人動作變慢（範圍攻擊）
+|Name2 (TW) = 黑貓女俠
+|Desc2 (TW) = 是暗殺黑貓團「卡滋」的成員之一<br>犯罪絕不留下痕跡的華麗殺手。<br>善於攻擊異星戰士和紅色敵人（範圍攻擊）
+|Name3 (TW) = 灰狐女俠
+|Desc3 (TW) = 是諜報機關「法克斯」的指揮官<br>用三寸不爛之舌説服部下進行各種艱難任務（範圍攻擊）<br>必定打飛異星戰士和紅色敵人並使其攻擊力下降
+|Name4 (TW) = 鎧貓女俠
+|Desc4 (TW) = 透過多重身份，將擾亂世界秩序的惡勢力逼到絕境的<br>真正英雄。有超賢者特效，善於攻擊異星戰士和<br>紅色敵人並使其攻擊力下降且動作變慢（範圍攻擊）
+|Name1 (KR) = 화이트 래빗
+|Desc1 (KR) = 비밀경찰 「래빗츠」의 멤버<br>검거율 100%의 함정 수사로 유명한 코스프레 형사<br>반드시 에이리언과 빨간 적의 움직임을 느리게 한다 (범위 공격)
+|Name2 (KR) = 블랙 캣
+|Desc2 (KR) = 암살 흑고양이단 「캣츠」의 멤버<br>절대 흔적을 남기지 않는 화려한 살인 청부업자<br>에이리언과 빨간 적에 엄청 강하다 (범위 공격)
+|Name3 (KR) = 그레이 폭스
+|Desc3 (KR) = 첩보 기관 「폭스」의 지휘관<br>뛰어난 화술로 부하들을 능수능란하게 다루는 베테랑 (범위 공격)<br>반드시 에이리언과 빨간 적을 날려버리고 공격력을 낮춘다
+|Name4 (KR) = 스펙트르 캣
+|Desc4 (KR) = 다양한 신분을 이용해 세계의 질서를 해치는 거대한 악을 추적해 온<br>진정한 히어로. 초현자 특효를 가지고 에이리언과 빨간 적에<br>엄청 강하며 공격력을 낮추고 움직임을 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,550¢
+*Chapter 2: 5,325¢
+*Chapter 3: 7,100¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = The White Rabbit
+|Normal Base HP = 2880
+|Normal Base AP = 1980
+|Normal Range = 465
+|Normal Foreswing = 43
+|Normal Attack Cooldown = 239
+|Normal Attack Length = 95
+|Normal Speed = 11
+|Normal KB = 6
+|Normal Cost = 3550
+|Normal Recharge = 4500
+|Normal Attack Type = Area
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 140f <sub>4.67 seconds</sub>
+|Evolved Name = The Black Cat
+|Evolved Base HP = 2880
+|Evolved Base AP = 1980
+|Evolved Range = 465
+|Evolved Foreswing = 43
+|Evolved Attack Cooldown = 239
+|Evolved Attack Length = 95
+|Evolved Speed = 11
+|Evolved KB = 6
+|Evolved Cost = 3550
+|Evolved Recharge = 4500
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|True Name = The Grey Fox
+|True Base HP = 2880
+|True Base AP = 1980
+|True Range = 465
+|True Foreswing = 43
+|True Attack Cooldown = 239
+|True Attack Length = 97
+|True Speed = 11
+|True KB = 6
+|True Cost = 3550
+|True Recharge = 4500
+|True Attack Type = Area
+|True Targets = Red,Alien
+|True Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Ultra Name = The Spectral Cat
+|Ultra Base HP = 4000
+|Ultra Base AP = 1980,460,460
+|Ultra Range = 465
+|Ultra Foreswing = 43,53,63
+|Ultra Attack Cooldown = 199
+|Ultra Attack Length = 106
+|Ultra Speed = 11
+|Ultra KB = 6
+|Ultra Cost = 3550
+|Ultra Recharge = 4500
+|Ultra Attack Type = Area
+|Ultra Targets = Red,Alien
+|Ultra Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (63,360 at 43f <sup>1.43s</sup>, 14,720 at 53f <sup>1.77s</sup>, 14,720 at 63f <sup>2.1s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~466 on 1st hit, 285~550 on 2nd hit, 385~650 on 3rd hit)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 140f <sub>4.67 seconds</sub><br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Sage Slayer}} [[Sage Slayer]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 2,880 HP
+|val-Normal-Attack Power = 1,980 damage<br>(210.64 DPS)
+|val-Normal-Attack Range = 465
+|val-Normal-Attack Frequency = 282f <sub>9.4 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 43f <sup>1.43s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Normal-Recharge Time = 150 ~ 141.2 seconds
+|val-Normal-MaxHP = 48,960 HP
+|val-Normal-MaxAttack = 33,660 damage<br>(3,580.85 DPS)
+|val-Evolved-Health = 48,960 HP
+|val-Evolved-Attack Power = 33,660 damage<br>(3,580.85 DPS)
+|val-Evolved-Attack Range = 465
+|val-Evolved-Attack Frequency = 282f <sub>9.4 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 43f <sup>1.43s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Evolved-Recharge Time = 150 ~ 141.2 seconds
+|val-True-Health = 48,960 HP
+|val-True-Attack Power = 33,660 damage<br>(3,580.85 DPS)
+|val-True-Attack Range = 465
+|val-True-Attack Frequency = 282f <sub>9.4 seconds</sub>
+|val-True-Movement Speed = 11
+|val-True-Knockback = 6 times
+|val-True-Attack Animation = 43f <sup>1.43s</sup><br>(54f <sup>1.8s</sup> backswing)
+|val-True-Recharge Time = 150 ~ 141.2 seconds
+|val-Ultra-Health = 128,000 HP
+|val-Ultra-Attack Power = 92,800 damage<br>(10,625.95 DPS)
+|val-Ultra-Attack Range = 465
+|val-Ultra-Attack Frequency = 262f <sub>8.73 seconds</sub>
+|val-Ultra-Movement Speed = 11
+|val-Ultra-Knockback = 6 times
+|val-Ultra-Attack Animation = 43f <sup>1.43s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-Ultra-Recharge Time = 150 ~ 141.2 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = The Black Cat
+|Evolved Image = Uni212 c00.png
+|True Name = The Grey Fox
+|True Image = Uni212 s00.png
+|True Description = True Form Evolution gains the<br>ability to knockback and weaken<br>Red and Alien enemies!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x4
+|Quantity Catfruit2 = x6
+|Quantity Catfruit3 = x6
+|Quantity Catfruit4 = x2
+|Quantity Catfruit5 = x3
+|Quantity XP = 1,000,000
+|Ultra Name = The Spectral Cat
+|Ultra Image = Uni212 u00.png
+|Ultra Description = Ultra Form Evolution gains<br>improved traits, widened attack<br>range, and Sage Slayer!
+|Catfruit1 Ultra = RedGem
+|Catfruit2 Ultra = PurpleGem
+|Catfruit3 Ultra = BlueStone
+|Catfruit4 Ultra = GoldSeed
+|Quantity Catfruit1 Ultra = x2
+|Quantity Catfruit2 Ultra = x2
+|Quantity Catfruit3 Ultra = x5
+|Quantity Catfruit4 Ultra = x1
+|Quantity XP Ultra = 2,000,000
+}}
+
+==Talents==
+*'''[[Immune to Warp]]''' (Cost: 100 NP)
+*'''[[Immune to Curse|Curse Immunity]]''' (Cost: 100 NP)
+*'''[[Special Abilities#Stat Enhancements|Cost Down]]''': Reduces cost by 40/60/80¢ per level up to 400/600/800¢ (Total Cost: 175 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 175 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 175 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+===[[Princess Punt Sweets Collaboration Event|Princess Punt Sweets]]===
+The White Rabbit's Normal and Evolved Form outfits can be obtained as drop rewards for clearing the stage "The beauty, the goddess and the gold cat" (と女神のネコアタック).
+{| style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid;width:100%;" cellspacing="0" cellpadding="1"
+|-
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:The White Rabbit Dress Icon.png|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:The White Rabbit Dress Icon 2.png|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd" |[[File:The White Rabbit Dress Static.png|center|200px]]
+|-
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |The White Rabbit's dress icon
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |The Black Cat's dress icon
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |Models
+|}
+
+{{Gallery|Uni212 f00}}
+
+==Trivia==
+*The White Rabbit wields a CETME-L and a MAC-11.
+*Prior to [[Version 4.7 Update|Version 4.7]], The White Rabbit was a part of three other [[Cat Combo]]s: [[Merchant + Courier (Removed Combo)|Merchant + Courier]], [[Cosplayers (Removed Combo)|Cosplayers]] and [[Tortoise and Hare (Removed Combo)|Tortoise and Hare]].
+*Her Normal Form may be a reference to [[wikipedia:White Rabbit (song)|the song of the same name]] by Jefferson Airplane.
+*Her Evolved Form and Ultra Form are very likely references to [[wikipedia:Catwoman|Catwoman]] from the Batman series, as she and [[Catman (Uber Rare Cat)|Catman]] are in the same set.
+*Her True Form may be a reference to [[wikia:metalgear:Gray Fox|Gray Fox]] from the Metal Gear series, as both have similar names and connections to covert intelligence agencies.
+==Reference==
+*https://battlecats-db.com/unit/213.html
+
+----
+{{CatNav|Li'l Axe Cat|Catburger}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Sage Slayer Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with different effective ranges]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Ultra Form]]
+[[Category:Cats with Talents]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Cost Down Talent]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]

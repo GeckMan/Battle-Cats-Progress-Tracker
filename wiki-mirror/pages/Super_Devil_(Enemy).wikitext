@@ -1,0 +1,91 @@
+:''This article is about the enemy. For the Cat Unit, see [[Super Devil (Uber Rare Cat)]].''
+'''Super Devil''' (スーパーデビル, ''Sūpā Debiru'', '''Super Devil''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Bikkuriman Collaboration Event]]. He was added in [[Version 8.5 Update|Version 8.5]].
+
+{{Enemy Info
+|name = Super Devil
+|image = E 452.png
+|appearance = [[Bikkuriman Collaboration Event]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Super Devil is not very powerful, but can slow cats for 4 whole seconds with long distance attacks. Its damage can also be problematic when magnified, making it act almost like a stronger [[Tackey]].
+
+==Strategy==
+Super Devil's main weakness is its blind spot, which makes this unit very vulnerable to rushers, especially those with a short backswing like [[Crazed Cow Cat (Super Rare Cat)|Manic Lion Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Bikkuriman Collaboration Event#Spirit War|Spirit War]]: [[World at War]] (100%)
+*[[Bikkuriman Collaboration Event#Bikkuriman Choco|Bikkuriman Choco]]:
+**[[Devils & Angels]] (30%)
+**[[A Box of Dreams]] (150%)
+**[[Shining Surprise]] (300%)
+*[[Devilish Illusion]]: [[A Tower Piercing the Sky (Hard)]] (100%)
+*[[The Devils Strike!]]:
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.1~4|Nether Reaches Lv.1]] (20%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.1~4|Nether Reaches Lv.2]] (80%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.1~4|Nether Reaches Lv.3]] (140%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.1~4|Nether Reaches Lv.4]] (200%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.5~9|Nether Reaches Lv.5]] (250%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.5~9|Nether Reaches Lv.6]] (280%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.5~9|Nether Reaches Lv.7]] (310%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.5~9|Nether Reaches Lv.8]] (340%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.5~9|Nether Reaches Lv.9]] (370%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.10~14|Nether Reaches Lv.10]] (400%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.10~14|Nether Reaches Lv.11]] (480%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.10~14|Nether Reaches Lv.12]] (560%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.10~14|Nether Reaches Lv.13]] (640%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.10~14|Nether Reaches Lv.14]] (720%)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.15]] (800% HP/1,000% AP)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.16]] (840% HP/1,040% AP)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.17]] (880% HP/1,080% AP)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.18]] (920% HP/1,120% AP)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.19]] (960% HP/1,160% AP)
+**[[The Devils Strike!/Nether Reaches Lv.1~20#Nether Reaches Lv.15~20|Nether Reaches Lv.20]] (1,000% HP/1,200% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Super Devil
+|Health = 50000
+|Attack Power = 1500
+|Attack Range = 666
+|Attack Type = Area
+|Time Between Attacks = 239
+|Movement Speed = 4
+|Knockback = 2
+|Foreswing = 60
+|Backswing = 61
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~800)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+452 e.png|Super Devil's spritesheet
+IdleSuperDevil.gif|Super Devil's moving animation
+</gallery>
+
+==Trivia==
+*This enemy is not an [[:Category:Aku Enemies|Aku]] enemy despite its name.
+
+==Reference==
+*https://battlecats-db.com/enemy/454.html
+
+----
+{{EnemyNav|Maji Cat & Cat Tour Group|Satanmaria}}
+----
+
+{{Bikkuriman}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]

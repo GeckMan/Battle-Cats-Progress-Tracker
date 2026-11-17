@@ -1,0 +1,130 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Italy (Into the Future)/Outbreak|here]].''
+'''Italy''' is the 13th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc033.png]]
+|stage location = [[File:Italy.png]]
+'''Into The Future'''
+|energy = 40
+|energy2 = 50
+|energy3 = 60
+|enemy castle hp = 32,000 HP
+|enemy castle hp2 = 48,000 HP
+|enemy castle hp3 = 64,000 HP
+|enemies = {{Magnification|Snache|200%
+|Doge|200%
+|B.B.Bunny|200%
+|One Horn|200%
+|Squire Rel|200%
+|Le'boin|200%}}
+|enemies2 = {{Magnification|Snache|600%
+|Doge|600%
+|B.B.Bunny|600%
+|One Horn|600%
+|Squire Rel|600%
+|Le'boin|600%}}
+|enemies3 = {{Magnification|Doge Dark|400%
+|Le'boin|1,000%
+|Cyberhorn|200%
+|Ginger Snache|200%
+|B.B.Bunny|1,000%}}
+|treasure = - [[Treasure|Cannoli]]
+|treasure2 = - [[Treasure|Cannoli]]
+|treasure3 = - [[Treasure|Cannoli]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''8,500''': [[Cat Food]] +10<br>
+'''7,000''': Cat CPU +1
+|score reward3 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': Cat CPU +1
+|max enemies = 10
+|max enemies2 = 10
+|max enemies3 = 10
+|XP = 4,600 XP
+|width = 4,000
+|jpname = Italy
+|script = イタリア
+|romaji = Itaria
+|jptreasure = Pizza
+|twname = Monaco
+|twscript = 摩納哥
+|twromaji = Mónàgē
+|twtreasure = F1 Car
+|krname = Italy
+|krscript = 이탈리아
+|krromaji = Beomyuda
+|krtreasure = Pasta
+|chapter = [[Into the Future]]
+|prev stage = [[Monaco (Into the Future)|Monaco]]
+|next stage = [[Greece (Into the Future)|Greece]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Snache|Doge|B.B.Bunny|One Horn|Squire Rel|Le'boin}}
+*Infinite [[Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*Infinite [[Doge]]s spawn after 15 seconds<sup>450f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*8 [[B.B.Bunny|B.B.Bunnies]] spawn after 30 seconds<sup>900f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[One Horn]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*Infinite [[Squire Rel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Le'boin]] spawns after 90 seconds<sup>2,700f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 110 seconds<sup>3,300f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 113.33 seconds<sup>3,400f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 116.67 seconds<sup>3,500f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Snache|Doge|B.B.Bunny|One Horn|Squire Rel|Le'boin}}
+*Infinite [[Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 5~16.67 seconds<sup>150f~500f</sup>.
+*Infinite [[Doge]]s spawn after 15 seconds<sup>450f</sup>, delay 5~16.67 seconds<sup>150f~500f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 30 seconds<sup>900f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*1 [[One Horn]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Squire Rel]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*2 [[Le'boin]]s spawn after 60 seconds<sup>1,800f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 73.33 seconds<sup>2,200f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 76.67 seconds<sup>2,300f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 80 seconds<sup>2,400f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[One Horn]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Doge Dark|Le'boin|Cyberhorn|Ginger Snache|B.B.Bunny}}
+*5 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 22 seconds<sup>660f</sup>.
+*5 [[Doge Dark]]s spawn after 12 seconds<sup>360f</sup>, delay 22 seconds<sup>660f</sup>.
+*3 [[Le'boin]]s spawn after 16.67 seconds<sup>500f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*1 [[Cyberhorn]] spawns after 30 seconds<sup>900f</sup>.
+*5 [[Ginger Snache]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20 seconds<sup>600f</sup>.
+*5 [[Ginger Snache]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 20 seconds<sup>600f</sup>.
+*1 [[Cyberhorn]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 76.67 seconds<sup>2,300f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 80 seconds<sup>2,400f</sup>, delay 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+==='''Chapter 1 & 2'''===
+Kill off the One Horn and Le'boin with [[Valkyrie Cat (Special Cat)|True Valkyrie Cat]], [[Lizard Cat (Normal Cat)|Dragon Cat]], [[Gross Cat (Normal Cat)|Sexy Legs Cat]] and other cats with good range.
+
+You can also rush this stage with [[Cow Cat (Normal Cat)|Giraffe Cat]]s before the One Horn spawns.
+
+==='''Chapter 3'''===
+This stage isn't too bad, just a combination of [[Lizard Cat (Normal Cat)|Dragon Cats]] for Le'boin, and midrangers like [[Gross Cat (Normal Cat)|Macho Leg Cat]] to deal with Cyberhorn as well as the peons.
+
+==Gallery==
+<gallery>
+Wc034.png|Taiwanese version's base (Monaco)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Monaco'''; [[Monaco (Into the Future)|stage 12]] is Spain and Italy is moved to [[Greece (Into the Future)|stage 14]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-13.html
+*https://battlecats-db.com/stage/s03004-13.html
+*https://battlecats-db.com/stage/s03005-13.html
+*https://battlecats-db.com/stage/s03003z-13.html
+*https://battlecats-db.com/stage/s03004z-13.html
+*https://battlecats-db.com/stage/s03005z-13.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

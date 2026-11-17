@@ -1,0 +1,28 @@
+.ranger-navbox.main-chapters,
+.ranger-navbox.main-chapters table.navbox {
+	--bg-navbox-title: linear-gradient(#8c8bc4, #bebce0);
+	--bg-group-name: #f8c70c;
+
+	--title-color: white;
+	--sub-title-color: black;
+}
+.ranger-navbox.main-chapters .ranger-header.eoc {
+	background: linear-gradient(135deg, #ffb847 0%, #ffa500 35%, #ffa500 65%, #ffb847 100%);
+}
+.ranger-navbox.main-chapters .ranger-header.itf {
+	background: linear-gradient(135deg, #aec8ee 0%, #94AEF7 35%, #94AEF7 65%, #aec8ee 100%);
+}
+.ranger-navbox.main-chapters .ranger-header.cotc {
+	background: linear-gradient(135deg, #c690c6 0%, #C084C0 35%, #C084C0 65%, #c690c6 100%);
+}
+.ranger-navbox.main-chapters .ranger-header.aku {
+	background: linear-gradient(135deg, #6688CA 0%, #567bc5 35%, #567bc5 65%, #6688ca 100%);
+}
+.ranger-navbox.main-chapters .ranger-header.pop {
+	background: linear-gradient(135deg, #ff9b9b 0%, #ffa88c 35%, #ffa88c 65%, #ff9b9b 100%);
+}
+.ranger-navbox.main-chapters .ranger-header.unite {
+	background: linear-gradient(135deg, #b4ecb4 0%, #b4ecb4 35%, #b4ecb4 65%, #b4ecb4 100%);
+}
+
+/* [[Category:Template stylesheets]] */

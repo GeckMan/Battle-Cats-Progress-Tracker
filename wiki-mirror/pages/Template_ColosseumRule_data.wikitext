@@ -1,0 +1,17 @@
+<includeonly><!--
+-->{{#invoke:Bucket|put|special_rule
+|+templateargs = id, name_en, desc_en, name_jp, desc_jp
+|id-type = integer
+|info = {{nonowiki|{{{info|}}}}}
+|rule_prefix = SpecialRule
+|rule_type = colosseum
+}}<!--
+--></includeonly><!--
+-->*'''JP name''':  {{{name_jp}}}
+*'''JP desc''':  {{{desc_jp}}}{{#if:{{{name_en|<noinclude>true</noinclude>}}}|
+*'''EN name''':  {{{name_en}}}<!---->}}{{#if:{{{desc_en|<noinclude>true</noinclude>}}}|
+*'''EN desc''':  {{{desc_en}}}<!---->}}
+{{#invoke:ColosseumRule|_info|{{nonowiki|{{{info}}}}}<!---->}}<!--
+-->{{#if:{{{info_arg1|}}}|
+{{#invoke:ColosseumRule|_list_rule_params}}<!--
+-->}}<noinclude>{{/doc}}</noinclude>

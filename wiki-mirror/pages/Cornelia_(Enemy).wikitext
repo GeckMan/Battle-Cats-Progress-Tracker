@@ -1,0 +1,90 @@
+:''This article is about the enemy. For the Cat Unit, see [[Cornelia (Uber Rare Cat)]].''
+'''Cornelia''' (コーネリア) is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Merc Storia Collaboration Event]]. She was added in [[Version 3.8 Update|Version 3.8]].
+
+{{Enemy Info
+|name = Cornelia
+|image = E 164.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 300¢ - 1,185¢
+}}
+
+==Enemy==
+This enemy is a medium-type peon with moderate health and range but ridiculously low attack power. It shouldn't pose much of a threat at all simply due to its terrible offensive abilities.
+
+==Strategy==
+Corenlia mostly just serves as a tank which can be easily cleared with [[Bahamut Cat (Special Cat)|Bahamut Cat]] or other units with high damage.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Healer Awakens!]]:
+**[[Healer Awakens (Expert)]] (100%)
+**[[Healer Awakens (Insane)]] (200%)
+*[[Merc Awakens!]]: [[Merc Awakens (Veteran)]] (100%)
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]:
+**[[Cornelia: Heaven's Grace]] (100%)
+**[[Hearscht: Silver Beast]] (100%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (600%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (675%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (750%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (825%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (900%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (960%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (1,020%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (1,080%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (1,140%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (1,200%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]:
+**[[Cornelia: Heaven's Grace]] (100%)
+**[[Hearscht: Silver Beast]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Cornelia
+|Health = 99999
+|Attack Power = 900
+|Attack Range = 430
+|Attack Type = Area
+|Time Between Attacks = 152
+|Movement Speed = 13
+|Knockback = 3
+|Foreswing = 53
+|Backswing = 21
+|Ability = -
+|Element = Floating
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|164 e ja.png|MediaWiki:Custom-AnimationViewer/164 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+164 e.png|Cornelia's spritesheet (EN/KR)
+164 e ja.png|Cornelia's spritesheet (JP)
+164 e tw.png|Cornelia's spritesheet (TW)
+IdleCornelia.gif|Cornelia's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/166.html
+
+----
+{{EnemyNav|Hearscht|Alois}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

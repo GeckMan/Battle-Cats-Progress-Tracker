@@ -1,0 +1,55 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Croco|Kang Roo|Gary Gory|Rain D.|Camelle}}
+'''Textbook Free''' is the sixteenth stage in [[Season 1: School Days]].
+
+{{Stage Info
+|stage name = [[File:rc007.png]]
+[[File:Mapsn048 15 a en.png]]
+|stage location = [[File:Mapname048 a en.png]]
+|energy = 160
+|enemy castle hp = 240,000 HP
+|enemies = {{Magnification|Croco|600%
+|Kang Roo|600%
+|Gary Gory|200%
+|Rain D.|100%}}
+|boss = {{Magnification|Camelle|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +1 (15%)<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +2 (70%)<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +3 (15%)
+|XP = 3,040 XP
+|width = 4,000
+|max enemies = 10
+|jpname = East To Get To And From School
+|script = 置き勉でらくらく登下校
+|romaji = Oki Tsutomude Rakuraku Tō Gekō
+|star = 1
+|event = [[Heartbeat Catcademy]]
+|event-chapter = [[Season 1: School Days]]
+|max clears = 3
+|difficulty = ★6
+|prev stage = [[Barely Passing]]
+|next stage = [[Cleaning with Her]]
+}}
+
+==Battleground==
+*5 [[Croco]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*5 [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Croco]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Kang Roo]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Kang Roo]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Camelle]] spawns as the boss.
+**Infinite [[Croco]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**5 [[Gary Gory|Gary Gories]] spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Rain D.|Rain Ds]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s24048-16.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Gauntlets]]

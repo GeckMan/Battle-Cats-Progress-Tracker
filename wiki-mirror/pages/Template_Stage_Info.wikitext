@@ -1,0 +1,295 @@
+<infobox theme="stage-info">
+   <data source="stage name"/>
+   <data source="stage location"/>
+   <group collapse="closed">
+      <header>Stage Information</header>
+         <panel>
+         <section>
+          <label>{{#ifexpr: {{{star|1}}} >=2|1 Crown|}}</label>
+            <data source="energy"><label>Energy:</label></data>
+            <data source="catamins"><label>Catamins:</label></data>
+            <data source="cost"><label>Cost:</label>></data>
+            <data source="enemy castle hp"><label>Enemy Base's Health:</label></data>
+            <data source="base"><label>Enemy Base:</label></data>
+            <data source="enemies"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+            <data source="boss"><label>Enemy Boss:</label></data>
+            <data source="treasure"><label>Treasure:</label></data>
+         </section>
+         <section>
+         <label>{{#ifexpr: {{{star|1}}} >=2|2 Crowns|}}</label>
+            <data source="energy2"><label>Energy:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{energy}}}|}}</default></data>
+            <data source="catamins2"><label>Catamins:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{catamins}}}|}}</default></data>
+            <data source="cost2"><label>Cost:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{cost}}}|}}</default></data>
+            <data source="enemy castle hp2"><label>Enemy Base's Health:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{enemy castle hp}}}|}}</default></data>
+            <data source="base2"><label>Enemy Base:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{base}}}|}}</default></data>
+            <data source="enemies2"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+            <data source="boss2"><label>Enemy Boss:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{boss}}}|}}</default></data>
+            <data source="treasure2"><label>Treasure:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=2|{{{treasure}}}|}}</default></data>
+         </section>
+         <section>
+         <label>{{#ifexpr: {{{star|1}}} >=3|3 Crowns|}}</label>
+            <data source="energy3"><label>Energy:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{energy}}}|}}</default></data>
+            <data source="catamins3"><label>Catamins:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{catamins}}}|}}</default></data>
+            <data source="cost3"><label>Cost:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{cost}}}|}}</default></data>
+            <data source="enemy castle hp3"><label>Enemy Base's Health:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{enemy castle hp}}}|}}</default></data>
+            <data source="base3"><label>Enemy Base:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{base}}}|}}</default></data>
+            <data source="enemies3"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+            <data source="boss3"><label>Enemy Boss:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{boss}}}|}}</default></data>
+            <data source="treasure3"><label>Treasure:</label>
+               <default>{{#ifexpr: {{{star|1}}} >=3|{{{treasure}}}|}}</default></data>
+         </section>
+         <section>
+         <label>{{#ifexpr: {{{star|1}}} =4|4 Crowns|}}</label>
+            <data source="energy4"><label>Energy:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{energy}}}|}}</default></data>
+            <data source="catamins4"><label>Catamins:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{catamins}}}|}}</default></data>
+            <data source="cost4"><label>Cost:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{cost}}}|}}</default></data>
+            <data source="enemy castle hp4"><label>Enemy Base's Health:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{enemy castle hp}}}|}}</default></data>
+            <data source="base4"><label>Enemy Base:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{base}}}|}}</default></data>
+            <data source="enemies4"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{enemies}}}|}}</default></data>
+            <data source="boss4"><label>Enemy Boss:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{boss}}}|}}</default></data>
+            <data source="treasure4"><label>Treasure:</label>
+               <default>{{#ifexpr: {{{star|1}}} =4|{{{treasure}}}|}}</default></data>
+         </section>
+         </panel>
+   </group>
+   <group collapse="closed">
+      <header>Misc. Information</header>
+      <data source="restriction"><label>Restriction:</label></data>
+      <data source="time limit"><label>Time limit:</label></data>
+      <data source="stage type"><label>Stage Type:</label></data>
+      <data source="score reward"><label>Score Rewards:</label></data>
+      <data source="abyssal reward"><label>Abyssal Rewards:</label></data>
+      <data source="XP"><label>XP earned:</label></data>
+      <data source="width"><label>Stage Width:</label></data>
+      <data source="max enemies"><label>Max number of Enemies:</label></data>
+   </group>
+   <group collapse="closed">
+      <header>Japanese Version Information</header>
+      <data source="jpname"><label>JP Name:</label></data>
+      <data source="script"><label>Script:</label></data>
+      <data source="romaji"><label>Romaji:</label></data>
+   </group>
+   <group collapse="closed">
+      <header>Taiwanese Version Information</header>
+      <data source="twname"><label>TW Name:</label></data>
+      <data source="twscript"><label>Script:</label></data>
+      <data source="twromaji"><label>Romanization:</label></data>
+   </group>
+   <group collapse="closed">
+      <header>Korean Version Information</header>
+      <data source="krname"><label>KR Name:</label></data>
+      <data source="krscript"><label>Script:</label></data>
+      <data source="krromaji"><label>Revised Romanization:</label></data>
+   </group>
+   <group collapse="closed">
+      <header>Location Information</header>
+          	        <data source="star"><label>Max ♛ Difficulty</label><format>{{#switch: {{{star}}}
+| 1 = 1♛
+| 2 = 2♛
+| 3 = 3♛
+| 4 = 4♛
+| #default = 1♛}}</format></data>
+    	<data source="event"><label>Event's Name:</label></data>
+    	<data source="event-chapter"><label>Event Map:</label></data>
+    	<data source="dojo-chapter">
+<label>Dojo Map:</label></data>
+    	<data source="sub-chapter"><label>Sub-chapter:</label></data>
+    	<data source="max clears"><label>Max Clears Per Appearance:</label></data>
+    	<data source="difficulty"><label>Difficulty:</label></data>
+    	<data source="prev stage"><label>Prev. Stage:</label></data>
+    	<data source="next stage"><label>Next Stage:</label></data>
+    	<data source="require"><label>Requirement:</label></data>
+    	<data source="occurrence"><label>Schedule:</label></data>
+    </group>
+</infobox>
+<noinclude>
+==Usage==
+<tabber>
+SoL/UL=
+<pre>
+{{Stage Info
+|stage name = 
+|stage location = 
+|energy = 
+|base = <!--Usually Unused-->
+|enemies = 
+|boss = 
+|enemies2 = 
+|boss2 = 
+|enemies3 = 
+|boss3 = 
+|enemies4 = <!--Sometimes Unused-->
+|boss4 = <!--Sometimes Unused-->
+|treasure = 
+|XP = 
+|width = 
+|max enemies = 
+|jpname = 
+|script = 
+|romaji = 
+|star = 
+|sub-chapter = 
+|difficulty = 
+|prev stage = 
+|next stage = 
+}}
+
+</pre>
+|-|
+All Parameters=
+<pre>
+{{Stage Info
+|stage name = 
+|stage location = 
+|energy = 
+|energy2 = 
+|energy3 = 
+|energy4 = 
+|catamins = 
+|catamins2 = 
+|catamins3 = 
+|catamins4 = 
+|cost = 
+|cost2 = 
+|cost3 = 
+|cost4 = 
+|enemy castle hp = 
+|enemy castle hp2 = 
+|enemy castle hp3 = 
+|enemy castle hp4 = 
+|base = 
+|enemies = 
+|boss = 
+|base2 = 
+|enemies2 = 
+|boss2 = 
+|base3 = 
+|enemies3 = 
+|boss3 = 
+|base4 = 
+|enemies4 = 
+|boss4 = 
+|treasure = 
+|treasure2 = 
+|treasure3 = 
+|treasure4 = 
+|restriction = 
+|time limit = 
+|stage type = 
+|score reward = 
+|abyssal reward = 
+|XP = 
+|width = 
+|max enemies = 
+|jpname = 
+|script = 
+|romaji = 
+|twname = 
+|twscript = 
+|twromaji = 
+|krname = 
+|krscript = 
+|krromaji = 
+|star = 
+|event = 
+|event-chapter = 
+|dojo-chapter = 
+|sub-chapter = 
+|max clears = 
+|difficulty = 
+|prev stage = 
+|next stage = 
+|require = 
+|occurrence = 
+}}
+</pre>
+To see this:
+
+{{Stage Info
+|stage name = This is a test
+|stage location = This is a test
+|energy = This is a test
+|energy2 = This is a test
+|energy3 = This is a test
+|energy4 = This is a test
+|catamins = This is a test
+|catamins2 = This is a test
+|catamins3 = This is a test
+|catamins4 = This is a test
+|cost = This is a test
+|cost2 = This is a test
+|cost3 = This is a test
+|cost4 = This is a test
+|enemy castle hp = This is a test
+|enemy castle hp2 = This is a test
+|enemy castle hp3 = This is a test
+|enemy castle hp4 = This is a test
+|base = This is a test
+|enemies = This is a test
+|boss = This is a test
+|base2 = This is a test
+|enemies2 = This is a test
+|boss2 = This is a test
+|base3 = This is a test
+|enemies3 = This is a test
+|boss3 = This is a test
+|base4 = This is a test
+|enemies4 = This is a test
+|boss4 = This is a test
+|treasure = This is a test
+|treasure2 = This is a test
+|treasure3 = This is a test
+|treasure4 = This is a test
+|restriction = This is a test
+|time limit = This is a test
+|stage type = This is a test
+|score reward = This is a test
+|abyssal reward = This is a test
+|XP = This is a test
+|width = This is a test
+|max enemies = This is a test
+|jpname = This is a test
+|script = This is a test
+|romaji = This is a test
+|twname = This is a test
+|twscript = This is a test
+|twromaji = This is a test
+|krname = This is a test
+|krscript = This is a test
+|krromaji = This is a test
+|star = This is a test
+|event = This is a test
+|event-chapter = This is a test
+|dojo-chapter = This is a test
+|sub-chapter = This is a test
+|max clears = This is a test
+|difficulty = This is a test
+|prev stage = This is a test
+|next stage = This is a test
+|require = This is a test
+|occurrence = This is a test
+}}
+
+</tabber>
+[{{fullurl:{{ns:Template}}:{{PAGENAME}}}}?action=purge Click here to refresh the preview above]
+</noinclude>

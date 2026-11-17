@@ -1,0 +1,62 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Setsuko (Special Cat)]].''
+'''Setsuko''' (せつ子) is an enemy appearing in [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun & Nyan Puuzle]] Collaboration Event. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Setsuko
+|appearance = [[Nebaaru-kun and Nyanpazuru Collaboration Event]]
+|image = E 240.png
+|money drop = 750円 - 2,962円
+}}
+
+==Enemy==
+An enemy with rather average health, damage and range as well as a 50% chance to knockback the player's [[Cat Units]]. This enemy also has Area Attack making its knockback slightly deadly.<br>
+Since this cat only appears in one stage, there isn't much to fear about it.
+
+==Strategy==
+Units that outrange this cat can help very much, especially units that are [[:Category:Cats with Knockback Immunity|Immune to Knockback]] so that 50% proc chance will do absolutely nothing to them. However, its 6,000 damage will chip away your unit's health little by little, no matter how high level they are.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nebaaru-kun and Nyanpazuru Collaboration Event#Protecting Cats|Protecting Cats]]: [[Together Protecting Cats]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Setsuko
+|Health = 70000
+|Attack Power = 6000
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 149
+|Movement Speed = 5
+|Knockback = 1
+|Foreswing = 30
+|Backswing = 51
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|spritesheet=265 f.png}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+265 f.png|Setsuko's spritesheet
+IdleSetsuko.gif|Setsuko's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/242.html
+
+----
+{{EnemyNav|Kuromi|Nebaaru-kun}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Area Attack Enemies]]

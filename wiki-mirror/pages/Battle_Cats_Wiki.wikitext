@@ -1,0 +1,126 @@
+<div class="main-page-wrapper"> __NOTOC__ __NOEDITSECTION__
+
+<!-- intro has no inline styles because the styling is maybe slightly overly complex -->
+<div class="intro"><div class="intro-inner"><!--
+--><div class="wiki-title"><div class="cat-speech-bubble"><!--
+    --><div class="welcome">Welcome to the '''Battle Cats Wiki'''!</div><!--
+    --><div class="site-stats">This wiki has '''{{SiteStats|NUMBEROFARTICLES}}''' pages, '''{{SiteStats|NUMBEROFACTIVEUSERS}}''' active Users and '''{{SiteStats|NUMBEROFEDITS}}''' total contributions!</div><!--
+    --><div class="main-buttons"><!--
+        --><div id="main-button-changes" class="main-button">[[Special:RecentChanges|Recent Changes]]</div><!--
+        --><div id="main-button-discord" class="main-button">[{{DiscordLink}} Wiki Discord]</div><!--
+    --></div><!--
+    --><div class="menu-cat-quote">{{SplashText}}</div><!--
+--></div></div><!--
+--><div class="announcement-cat">[[File:BCWikiLogo.png|class=wiki-logo|link=|alt=The Battle Cats Wiki]][[File:Announcement cat.png|180px|class=menu-cat|link=]]</div>
+</div></div>
+<!--
+<div class="citizen-search-trigger">who else hates stylised tables raise your hand</div>
+-->
+<div class="section section-version">
+<div class="section-heading-wrapper"><span class="section-heading">Current Version</span></div>
+<div class="version-grid">
+<div class="section-content" style="grid-area: ver-jp"><!--
+--><div class="mini-heading">[[Nyanko Daisensou]]: [[Version 16.0 Update|Version 16.0]] (November 9th, 2026)</div><!--
+--><div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-update"><poem>
+■ Added a friend invitation feature
+When an invited friend clears specific missions, both players receive rewards
+※The feature is available after clearing [[Cambodia (Empire of Cats)|Cambodia/Miyazaki]] in Empire of Cats Chapter 1
+※Missions will be displayed after entering an invitation code
+※Invitation codes can only be from players within 7 days of starting the game
+■ Added an [[Kalisa (Uber Rare Cat)|Ultra Form]]
+■ Added Talents and Ultra Talents to some characters
+■ Added a [[ZL 38|new map]] to Legend Stages and higher difficulties on existing maps
+■ Miscellaneous
+New User Rank rewards
+New Cat Combos
+Light feature improvements
+■ Bug fixes
+</poem></div><!--
+--></div>
+<div class="section-content" style="grid-area: ver-en; display: flex; flex-direction: column;"><!--
+--><div class="mini-heading">[[The Battle Cats]]: [[Version 15.7 Update|Version 15.7]] (October 27th, 2026)</div><!--
+--><div class="mw-collapsible mw-collapsed" id="mw-customcollapsible-update" style="height: 100%; display: flex; flex-direction: column;"><poem>
+■ Treasure Gauge added!
+Clear a stage for a guaranteed Superior Treasure when the Treasure Gauge is filled up!
+The gauge can be filled by various means such as clearing stages.
+<nowiki>*</nowiki> Only available for stages with Treasures.
+<nowiki>*</nowiki> Stages unrelated to Treasures will also fill the gauge.
+■ New True Forms/Ultra Forms
+■ New Talents/Ultra Talents
+■ New Legend Map/Stage Difficulties/Rank Rewards/CatCombos
+■ Minor Bug Fixes and Feature Revisions
+</poem><div class="more-info" style="text-align: right; margin-top: auto;">''For more info, see our [[Game Updates|list of all versions]].''</div></div><!--
+--></div><!--
+--><div class="section-content" style="grid-area: ver-toggle; text-align: center; padding: 0; font-size: 1em;"><span class="mw-customtoggle-update mw-collapsible" id="mw-customcollapsible-update" style="font-family: Verdana; color: var(--theme-link-color);" role="button">['''Show what's new''']</span></div>
+</div></div>
+
+<div class="section section-portal">
+<div class="section-heading-wrapper"><span class="section-heading">Wiki Content</span></div>
+<div class="section-content" style="text-align: center">
+<div class="mini-heading">- Units -</div>{{UnitPortal}}
+<div class="mini-heading" style="margin: 4px 0;">- Stages -</div>{{StagePortal}}
+<div class="mini-heading" style="margin: 4px 0;">- Other -</div>{{OtherPortal}}
+<div class="mini-heading" style="margin: 4px 0;">- Wiki -</div>{{WikiPortal}}
+</div></div>
+
+<div class="section section-events">
+<div class="section-heading-wrapper"><span class="section-heading">Events</span></div>
+{{CurrentEvents|margin=3}}
+</div>
+
+<div class="section section-news">
+<div class="section-heading-wrapper"><span class="section-heading">Announcements</span></div>
+<div class="main-flex-columns"><div class="section-content">
+<div class="mini-heading">- Notices -</div>
+
+==='''Notice About HGT Errors'''===
+HGT errors may occur if your phone/tablet clock has been manually changed, if you travelled to a different time zone, or if your network connection was particularly unstable during daily update. Ensure that your device time settings are set to Auto, that you are in an area with a strong network connection, and please don't make any further changes to your time settings. You should start receiving your energy and login bonuses again soon.
+*Please wait up to 48 hours for restoration to occur.
+**For EN PONOS support, send an e-mail to support_en@bc01.ponos.net.
+**For JP PONOS support, send an e-mail to support_jp@bc01.ponos.net.
+**For TW PONOS support, send an e-mail to support_tw@bc01.ponos.net.
+**For KR PONOS support, send an e-mail to support_ko@bc01.ponos.net.
+'''DO NOT''' attempt to solve the issue by deleting or reinstalling the app without starting a Save Data Transfer from the Settings menu first—PONOS will not be able to help you recover any of your progress/purchases!
+
+*Recovering a lost account:
+**'''[https://docs.google.com/document/d/1t-D04TX7BrUuBFGnVOQSZoiuHTDTak01FO7QV64kBp4/edit?usp=sharing Guide]'''
+*Users may submit inquires to PONOS here:
+**'''[https://ponosgames.com/information/appli/battlecats/contact/en/contact.html English].'''
+**'''[https://ponosgames.com/information/appli/battlecats/contact/contact.html Japanese].'''
+**'''[https://ponosgames.com/information/appli/battlecats/contact/kr/contact.html Korean].'''
+**'''[https://ponosgames.com/information/appli/battlecats/contact/tw/contact.html Taiwanese].'''
+</div><div class="section-content">
+<div class="mini-heading">- Wiki News -</div>
+{{The Battle Cats Wiki:Announcements}}
+
+<span style="float: right;">''For older announcements, see our [[The Battle Cats Wiki:Announcements|announcements]] page.''</div>
+</div></div>
+
+<div class="section section-editing">
+<div class="section-heading-wrapper"><span class="section-heading">Contributing</span></div>
+<div class="section-content" style="display: flex; align-items: center;"><!--
+    -->[[File:SuperfelineNotice.png|90px|class=editing-cat|link=]]<!--
+    --><div style="text-align: center;">Anyone with an account can contribute! Good places to find articles that need work are [[:Category:Stubs|stubs]], [[:Category:Articles needing strategies|articles needing strategies]] and [[:Category:Translation requests|translation requests]], but small changes like grammar fixes still matter. Even [[The Battle Cats Wiki:Error Reports|reporting mistakes]] helps if you aren't sure how to fix something yourself! Check out our [[Help:Contributing|help page]] for more information.</div><!--
+--></div>
+</div>
+
+<div class="section section-extra">
+<div class="section-heading-wrapper"><span class="section-heading">Daily Units</span></div>
+<div class="main-flex-columns">
+<div class="section-content" style="flex: 1 1 0; text-align: center; font-weight: bold;"><!--
+    --><div class="mini-heading" style="margin-bottom: 4px;">- Enemy -</div><!--
+    -->{{DailyUnit|enemy}}<!--
+--></div>
+<div class="section-content" style="flex: 1 1 0; text-align: center; font-weight: bold;"><!--
+    --><div class="mini-heading" style="margin-bottom: 4px;">- Cat -</div><!--
+    -->{{DailyUnit|cat}}<!--
+--></div>
+</div>
+</div>
+</div>
+[[Category:Battle Cats Wiki]]
+[[Category:Main page]]
+{{Nocomment|notext=true}}{{#seo:
+|description = The unofficial Battle Cats wiki that's up to date with stats, descriptions, stages, calculators and more. Anyone can edit and help contribute to this resource for The Battle Cats, a completely free-to-play mobile game with an easy system recommended for people of all ages.
+|image = BCWikiLogo.png
+}}

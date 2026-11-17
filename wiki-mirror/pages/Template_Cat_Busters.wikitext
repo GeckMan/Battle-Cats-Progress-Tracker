@@ -1,0 +1,24 @@
+{{#invoke:Navbox|main
+|template = Template:Cat Busters
+|title = [[Cat Busters Collaboration Event]]
+|navbox_class = cat-busters
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Neko Hakase (Special Cat)|Neko Hakase]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Neko Hakase (Enemy)|Neko Hakase]]
+
+|header3 = Stages
+|group3 = Cat Busters Charge!
+|list3 =
+*[[A World With Only Cats]]
+*[[Stolen Time Machine]]
+*[[Chasing The Mouse]]
+}}<templatestyles src="Cat Busters/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Cat Busters]]}}<noinclude>[[Category:Navboxes]]</noinclude>

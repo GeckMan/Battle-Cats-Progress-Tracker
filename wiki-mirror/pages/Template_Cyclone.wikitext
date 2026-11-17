@@ -1,0 +1,110 @@
+{{#invoke:Navbox|main
+|template = Template:Cyclone
+|title = [[:Category:Cyclone Stages|Cyclone Stages]]
+|navbox_class = cyclone
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Solo Fights
+|list1.1 =
+*[[Attack on R-Cyclone (Expert)]]
+*[[Attack on D-Cyclone (Expert)]]
+*[[Attack on W-Cyclone (Expert)]]
+*[[Oncoming Maelstrom (Expert)]]
+*[[Attack on Titanium (Insane)]]
+*[[Black Hole Rising (Insane)]]
+*[[Oncoming Storm (Insane)]]
+*[[Unholy Tempest (Insane)]]
+*[[The Wormhole Opens (Deadly)]]
+*[[Charybdis' Mouth (Merciless)]]
+*[[Wrath of Hell (Deadly)]]
+
+|header2 = Dual Fights
+|group2.1 = [[Bad to Worse]]
+|list2.1 =
+*[[Tragedy in Red (Insane)]]
+*[[Doom Paradise (Insane)]]
+
+|group2.2 = [[Day of Judgement]]
+|list2.2 =
+*[[Explosion in the Sky (Insane)]]
+*[[Acts of Cat-God (Insane)]]
+
+|group2.3 = [[Techneurosis]]
+|list2.3 =
+*[[Nuts 'n' Bolts (Expert)]]
+*[[Space is the Place (Insane)]]
+
+|header3 = Awakening Fights
+|group3.1 = [[Crimson Vengeance]]
+|list3.1 =
+*[[Wrath of R-Cyclone (Insane)]]
+*[[Revenge of R-Cyclone (Deadly)]]
+
+|group3.2 = [[NEO Darkness Heaven]]
+|list3.2 =
+*[[Wrath of D-Cyclone (Insane)]]
+*[[Revenge of D-Cyclone (Deadly)]]
+
+|group3.3 = [[Peerless Too]]
+|list3.3 =
+*[[Wrath of W-Cyclone (Insane)]]
+*[[Revenge of W-Cyclone (Deadly)]]
+
+|group3.4 = [[Wrath of the Divine]]
+|list3.4 =
+*[[Wrath of A-Cyclone (Insane)]]
+*[[Revenge of A-Cyclone (Deadly)]]
+
+|group3.5 = [[Bitter Irony]]
+|list3.5 =
+*[[Wrath of Titanium (Deadly)]]
+*[[Revenge of Titanium (Deadly)]]
+
+|group3.6 = [[Dimension of Delirium]]
+|list3.6 =
+*[[Wrath of Black Hole (Deadly)]]
+*[[Revenge of Black Hole (Deadly)]]
+
+|group3.7 = [[Red Sky at Night]]
+|list3.7 =
+*[[Wrath of Red Sky (Deadly)]]
+*[[Revenge of Red Sky (Merciless)]]
+
+|group3.8 = [[The Dead Keep Rolling]]
+|list3.8 =
+*[[Wrath of the Unholy (Deadly)]]
+*[[Revenge of the Unholy (Merciless)]]
+
+|group3.9 = [[The 3rd Dimension]]
+|list3.9 =
+*[[Wrath of the Wormhole (Merciless)]]
+*[[Revenge of the Wormhole (Merciless)]]
+
+|group3.10 = [[Typhoon Nihil]]
+|list3.10 =
+*[[Creation's Gyre (Merciless)]]
+*[[Extinction's Vortex (Merciless)]]
+
+|group3.11 = [[The Greatest Diablo]]
+|list3.11 =
+*[[Wrath of Hell (Merciless)]]
+*[[Fury of Hell (Merciless)]]
+
+|header50 = Enemies
+|list50 =
+*{{EnemyList
+|Red Cyclone
+|White Cyclone
+|Dark Cyclone
+|Metal Cyclone
+|Divine Cyclone
+|Cosmic Cyclone
+|The Perfect Cyclone
+|Super Cosmic Cyclone
+|Primeval Cyclone
+|Aku Cyclone
+|delimiter = <nowiki />
+*}}
+}}<templatestyles src="Cyclone/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[category:Cyclone Stages]]}}<noinclude>[[Category:Navboxes]]</noinclude>

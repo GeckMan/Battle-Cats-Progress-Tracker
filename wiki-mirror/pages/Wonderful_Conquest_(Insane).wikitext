@@ -1,0 +1,105 @@
+{{EnemiesAppearing|Fireworks Guys (High-Yield)|Dashing Face|Lord Enma|Pigge Back|Marching Kory|Mighty Gui Zuli|Hermit Peng|Master Da Xun}}
+'''Wonderful Conquest (Insane)''' is a [[:Category:Monthly Event All-Stars Stages|Monthly Event All-Stars Stage]] that features enemies from Monthly Events. It was added in [[Version 4.2 Update|Version 4.2]].
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn070 00 s en.png]]
+|stage location = [[File:Mapname070 s en.png]]
+|energy = 100
+|enemy castle hp = 882,000 HP
+|enemies = {{Magnification|Fireworks Guys (High-Yield)|100%
+|Dashing Face|300%
+|Lord Enma|400%
+|Pigge Back|1,000%
+|Hermit Peng|600%
+|Master Da Xun|600%}}
+|boss = {{Magnification|Marching Kory|500%
+|Mighty Gui Zuli|400%}}
+|enemies2 = {{Magnification|Fireworks Guys (High-Yield)|150%
+|Dashing Face|450%
+|Lord Enma|600%
+|Pigge Back|1,500%
+|Hermit Peng|900%
+|Master Da Xun|900%}}
+|boss2 = {{Magnification|Marching Kory|750%
+|Mighty Gui Zuli|600%}}
+|enemies3 = {{Magnification|Fireworks Guys (High-Yield)|200%
+|Dashing Face|600%
+|Lord Enma|800%
+|Pigge Back|2,000%
+|Hermit Peng|1,200%
+|Master Da Xun|1,200%}}
+|boss3 = {{Magnification|Marching Kory|1,000%
+|Mighty Gui Zuli|800%}}
+|treasure = - 1,000,000 XP (20%, unlimited)
+|XP = 1,900 XP
+|width = 4,200
+|max enemies = 4
+|jpname = Wonderful Conquest! Insane
+|script = ワンダフル制覇！ 超激ムズ
+|romaji = Wandafuru Seiha！ Chō Geki Muzu
+|star = 3
+|event-chapter = Monthly Event All-Stars Wonderful Celebration!
+|difficulty = ★8
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*6 [[Fireworks Guys (High-Yield)]] spawn, delay 3.33~4 seconds<sup>100f~120f</sup>.
+*Infinite [[Fireworks Guys (High-Yield)]] spawn after 2 seconds<sup>60f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*5 [[Dashing Face]]s spawn after 20.67 seconds<sup>620f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*Infinite [[Dashing Face]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 40~53.33 seconds<sup>1,200f~1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Marching Kory]] spawns as the boss.
+**1 [[Mighty Gui Zuli]] spawns as the boss.
+**1 [[Lord Enma]] spawns.
+**Infinite [[Pigge Back]]s spawn, delay 6~18 seconds<sup>180f~540f</sup>.
+**4 [[Pigge Back]]s spawn, delay 0.07~0.33 seconds<sup>2f~10f</sup>.
+**1 [[Lord Enma]] spawns.
+**1 [[Hermit Peng]] spawns.
+**1 [[Master Da Xun]] spawns.
+
+==Strategy==
+Strong meatshielding is highly recommended. Dashing Face and the Old Masters can be taken down with long-ranged attackers behind [[Tank Cat (Normal Cat)|Eraser Cat]], [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall]], and [[Pogo Cat (Rare Cat)|Jiangshi Cat]], but Lord Enma is best dealt with from far away like with [[Nerd Cat (Super Rare Cat)|Hacker Cat]] or Other Long Distance cats. Martin is a stronger variant of [[Kory]], but lacks the original's waves, making him vulnerable to a powerful stack of [[Salon Cat (Rare Cat)|Paris]] and [[Figure Skating Cats (Super Rare Cat)|Drama]] Cats.
+
+A way to finish this stage fairly easily is to wait for the Fireworks Guys to reach your base, and then send out any long range Cats (ex. [[Red Riding Mina (Special Cat)|Mina]]). This will allow them to slowly stack up, as they will be unable to hit the fireworks. It is recommended to bring a Speed Up upgrade as most of these Cats' recharge times are quite long.
+
+==='''Strategy 1 ([[Cheese]], Speedrun)'''===
+This strategy is for those who wish to farm XP, since this stage, on average, will give 214000xp, which is a massive amount for a stage this cheap. This strat is not recommended for 2 or 3 crowns and requires moderately high levels. It can still be used for a first clear, but LD stacking is recommended above this.
+
+{{Lineup
+|A Gift of Cats
+|Sashimi Cat
+|Sushi Cat
+|Li'l Dragon Cat
+|Jiangshi Cat
+|Manic Eraser Cat|45+
+|Eraser Cat
+|notes = The remaining units will vary depending on how you want to perform this cheese.
+}}
+
+The idea is simple, start spamming Manic Erasers after 3-5 seconds and never stop. If you start too early, too late, or deploy other units, you will be unable to perform the cheese. Luckily, the ideal window to spawn the units is quite wide. Level 45-50 M. Eraser is already enough to win the stage, as they will beat the Fireworks Guys, then cause the Dashing Faces to spawn and keep them behind the base, thus keeping the enemy limit clogged, even as the base loses health. If Manic Eraser is only around level 30-40, spamming both Erasers is required; if even that isn't enough, or you want to be safer, replace some of the combos for Defense Up. Of course, if you want to make this faster, you have 3 options:
+
+#'''Fastest but riskiest way: '''Add one or more Cat Units with fast movement speed and/or high DPS, it's risky as you must pay attention to never slow down with the meatshields and spam as hard as you can for a while, but there is potential to be much faster, plus it's not Uber reliant. If you use this method, do the same as the previous one, but pay attention to the meatshields and bring some units as a backup plan in case things go wrong and you need to beat the stage normally. After the forth Dashing Face appears, feel free to summon your fast attacker when available, while making sure to have enough money for the meatshields. If things go wrong consinstently, the cause may be cats clipping due to speed, so replace the units responsible with others.
+#'''Safe and fast way: '''Add Cats with high DPS, fast speed if possible and, most importantly, Single Attack. [[Crazed Axe Cat (Super Rare Cat)|Manic Dark]], [[Lesser Demon Cat (Uber Rare Cat)|Balrog]], [[Swimmer Cat (Super Rare Cat)|Swimmer]], [[Hip Hop Cat (Super Rare Cat)|Can Can]], [[Kung Fu Cat X (Rare Cat)|Iron Claw X]] and many others can be used. If you pick this method, the approach is the same as the previous one, but it's safer to use as the Dashing Faces will not die as fast when you lower the meatshield spam rate, so you have time to recover by using the [[Ototo Corps|Breakerblast Cannon]] once it's available. You also do not need units as a safety net if you are confident in your ability to spam meatshields, as units with Single Attack will not hit the Dashing Faces even if they clip a bit into the base.
+#'''Slowest way:''' First use the money to set up a safety net, such as [[Kubiluga (Uber Rare Cat)|Kubilan]] or [[Cat God the Great (Special Cat)|Cat God]], while stalling the enemies, then proceed like in the first, second or third method. If you wish to farm XP here despite having pretty low levels, this may be the best way for you, as you are less likely to hold the enemies back, so the safety net may be required.
+
+==Walkthrough==
+{{Walkthrough
+|1dD0V8Smrxs|ScamsRUs|
+}}
+
+==Appears==
+*August 11, 2015 to August 15, 2015 (during [[Million Downloads Event/20 Million|20 Million Downloads Event]] JP)
+*August 17, 2018 to August 19, 2018 (during 37 Million Downloads Event EN)
+
+==Trivia==
+*This is one of the few stages in the game where the two opposing sides can stand idle and never hit each other: by sending out [[:Category:Focused Target Cats|Units]] with [[Attacks Only]] to block the Firework Guys at the start, the two sides will stand and stare at each other, never attacking the other.
+
+==Reference==
+*https://battlecats-db.com/stage/s01070-01.html
+
+{{SpecialStages List}}
+[[Category:Monthly Event All-Stars Stages]]
+[[Category:Event Stages]]

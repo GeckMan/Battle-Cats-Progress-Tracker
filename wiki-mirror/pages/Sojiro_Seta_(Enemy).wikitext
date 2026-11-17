@@ -1,0 +1,71 @@
+{{JPExclusive}}
+{{Stub}}
+:''This article is about the enemy. For the Cat Unit, see [[Sojiro Seta (Uber Rare Cat)]].''
+'''Sojiro Seta''' (瀬田宗次郎, ''Seta Sōjirō'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Enemy Info
+|name = Sojiro Seta
+|image = E 789.png
+|first appearance = [[Rurouni Kenshin Collaboration Event]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Rurouni Kenshin Collaboration Event#天剣・瀬田宗次郎|天剣・瀬田宗次郎]]:
+**[[新月村・志々雄の館]] (20%)
+**[[神速同士の対決]] (100%)
+**[[抜刀術の打ち合い]] (1,400%)
+**[[勝負あり、かな]] (3,200% HP/2,500% AP)
+**[[できたらまた戦ってください]] (8,500% HP/4,000% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/The Swords of Meiji|The Swords of Meiji]] (2,000% HP/1,500% AP, 6,000% HP/3,200% AP, 8,500% HP/4,000% AP, 10,000% HP/5,000% AP, 12,000% HP/6,000% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sojiro Seta
+|Health = 10000
+|Attack Power = 1500
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 189
+|Movement Speed = 10
+|Knockback = 5
+|Foreswing = 60
+|Backswing = 71
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">500</span> at 60f <sup>2s</sup>, <span class="scaled" data-type="ap">500</span> at 65f <sup>2.17s</sup>, <span class="scaled" data-type="ap">500</span> at 70f <sup>2.33s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~450)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+789 e.png|Sojiro Seta's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/791.html
+
+----
+{{EnemyNav|Anji Yukyuzan|Makoto Shishio}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Weaken ability]]

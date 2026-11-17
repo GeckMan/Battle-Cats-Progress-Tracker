@@ -1,0 +1,66 @@
+{{EnemiesAppearing|Angel Fanboy|Gabriel|Heavenly Hippoe|Divine Cyclone}}
+'''Oncoming Maelstrom (Expert)''' is the 4th [[:Category:Cyclone Stages|Cyclone Stage]]. It was added in [[Version 2.7 Update|Version 2.7]] and appears every Saturday. Upon completion, players have a 30% chance to unlock [[Clockwork Cat (Rare Cat)|Clockwork Cat]].
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn039 00 s en.png]]
+|stage location = [[File:Mapname039 s en.png]]
+|energy = 200
+|catamins = [[Catamin]] [A] x2
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Angel Fanboy|100%
+|Gabriel|100%
+|Heavenly Hippoe|100%}}
+|boss = {{Magnification|Divine Cyclone|100%}}
+|treasure = - [[Clockwork Cat (Rare Cat)|Clockwork Cat]] (30%, 1 time)
+|XP = 3,800 XP
+|width = 6,000
+|max enemies = 8
+|script = 進撃の天渦 激ムズ
+|romaji = Shingeki no Ten Uzu Geki Muzu
+|star = 1
+|event-chapter = Wrath of Heaven
+|difficulty = ★7
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Heavenly Hippoe]]s spawn after 16.67 seconds<sup>500f</sup>, delay 23.33~33.33 seconds<sup>700f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Divine Cyclone]] spawns as the boss.
+**1 [[Angel Fanboy]] spawns.
+**3 [[Gabriel]]s spawn, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**Infinite [[Gabriel]]s spawn, delay 13.33~23.33 seconds<sup>400f~700f</sup>.
+
+==Strategy==
+Due to Divine Cyclone's extremely high DPS and lack of knockbacks, the use of Anti-Angel Units with slow, freeze, or knockback abilities is mandatory. Talented [[Bishop Cat (Rare Cat)|Sanzo Cat]] trivializes this stage. If you don't have their talents, then you must rely on [[Stilts Cat (Rare Cat)|Stilts Cat]] or the 2 [[Juliet Cat (Super Rare Cat)|Super]] [[Cat Toaster (Super Rare Cat)|Rares]] that target Angels instead.
+
+[[Ancient Heroes ULTRA SOULS (Gacha Event)|ULTRA SOULS]] Ubers in their first form are very helpful in this stage, as their anti-Angel abilities will either help kill the Cyclone faster (e.g. [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]], [[Issun Boshi (Uber Rare Cat)|Issun Boshi]], [[Ushiwakamaru (Legend Rare Cat)|Ushiwakamaru]]) or, especially if you don't have talented Sanzo Cat, serve as powerful crowd-controllers (e.g. [[The Grateful Crane (Uber Rare Cat)|The Grateful Crane]], [[Princess Kaguya (Uber Rare Cat)|Princess Kaguya]], [[Momotaro (Uber Rare Cat)|Momotaro]]).
+
+==Trivia==
+*Oncoming Maelstrom was the first level added to the game to contain Angel enemies.
+
+==Missions==
+{{MissionTable
+|{{Mission|Cyclone Festival Missions<br>Clear the "Wrath of Heaven" stage!|+1000000 XP(s)|xp|type = special}}
+|{{Mission|Cyclone Festival Missions<br>Clear "Wrath of Heaven" 1 times using 8+ Rare Cats.|3 [[Catseye]] [Uber Rare](s)|ubereye|type = special}}
+}}
+
+==Walkthrough==
+{{Walkthrough
+|hGp2EK6k_EY|Channel63|[[True Form]]s + Gacha
+}}
+
+==Gallery==
+<gallery hideaddbutton="true">
+divine cyclone stage en.png
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/stage/s01039-01.html
+
+{{Cyclone}}
+
+[[Category:Event Stages]]

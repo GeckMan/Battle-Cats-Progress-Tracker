@@ -1,0 +1,99 @@
+'''Killer Axe Cat Base''' is an [[Enemy Bases|enemy base]] that appears in [[Horde of Cats]]. It was added in [[Version 13.2 Update|Version 13.2]].
+
+{{Enemy Info
+|name = Killer Axe Cat Base
+|image = E 678.png
+|first appearance = [[Horde of Cats]]
+|money drop = N/A
+}}
+
+==Enemy==
+This base fires off lightning strikes that reach up to a massive 2,000 range every so often. Though it certainly doesn't have the best stats, it often appears with extreme buffs and proves to be just as threatening as anything it's supporting.
+
+==Strategy==
+The stages that it currently appears in have a width of either 3,600 or 4,100, so it will start attacking either directly in front of the [[Cat Base]], or a small distance away from it.
+
+The damage dealt ranges from 5,000 per hit up to 13,000 depending on its current strength magnification. [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]] needs to be at least level 32 to survive a maximum strength hit, and [[Tank Cat (Normal Cat)|Eraser Cat]] needs to at least level 20+43. Alternatively, you can bring meatshields with [[Survive]] (such as [[Kyubey Cat (Rare Cat)|Kyubey Cat]] or [[Pogo Cat (Rare Cat)|Jiangshi Cat]]), or alternatively you can use more disposable units such as Cat variants or [[Stone Cat (Rare Cat)|Stone Cat]] to bait the base's attack before advancing.
+
+It is best to avoid tanky and/or slow units like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] and [[Mer-Cat (Rare Cat)|Cameraman Cat]] on stages containing this base, since it will be quite difficult to keep them alive when they'll likely get hit for more than half of their health if not just outright vaporized every ten or so seconds. Some units such as [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]] can survive 1 hit when at high enough levels (typically 45+,) but it is generally better to rely on cheaper, faster and more disposable attackers like [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] or [[Slime Cat (Rare Cat)|Slime Cat]].
+
+Additionally, in all of its current stages, there is a small blind spot between the end of its attack range and the Cat Base. Taking advantage of this and fighting in that tiny area can help to massively reduce the difficulty of the Gauntlet, as long as you have [[Flower Cat (Special Cat)|Bombercat]] to prevent the enemies from pushing too hard.
+
+Since this base has a [[Multi-Hit]] similar to [[Elder Beast Naala (Special Cat)|Elder Beast Naala]], fast units like [[Cow Cat (Normal Cat)|Cow Cat]] and [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]] can speed past the attacks, taking minimal damage.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Memories of 2024]]: [[Memories of Winter Page 2]] (1,250%)
+*[[Lunar New Year#Memories of 2025|Memories of 2025]]: [[Memories of Winter Page 2 (2025)|Memories of Winter Page 2]] (1,500%)
+*[[Horde of Cats]]:
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.6~10|Bloodthirsty Lv.6]] (1,000%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.6~10|Bloodthirsty Lv.7]] (1,250%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.6~10|Bloodthirsty Lv.8]] (1,500%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.6~10|Bloodthirsty Lv.9]] (1,750%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.6~10|Bloodthirsty Lv.10]] (2,000%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.11~15|Bloodthirsty Lv.11]] (2,250%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.11~15|Bloodthirsty Lv.12]] (2,338%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.11~15|Bloodthirsty Lv.13]] (2,425%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.11~15|Bloodthirsty Lv.14]] (2,513%)
+**[[Horde of Cats/Bloodthirsty Lv.1~15#Bloodthirsty Lv.11~15|Bloodthirsty Lv.MAX]] (2,600%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Killer Axe Cat Base
+|Health = 30000
+|Attack Power = 1500
+|Attack Range = 2000
+|Attack Type = Area
+|Time Between Attacks = 559
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 42
+|Backswing = 24
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">500</span> at 42f <sup>1.4s</sup>, <span class="scaled" data-type="ap">500</span> at 45f <sup>1.5s</sup>, <span class="scaled" data-type="ap">500</span> at 48f <sup>1.6s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 750~1,250 on 2nd hit, 1,500~2,000 on 3rd hit)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: 0~500 on 1st hit)<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+==Animations==
+<tabber>
+EN=
+{{UnitViewer|enemy|noheading=true}}
+|-|JP=
+{{UnitViewer|enemy|678|json=MediaWiki:Custom-AnimationViewer/678_e_jp.json|noheading=true}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+678 e.png|Killer Axe Cat Base's spritesheet
+</gallery>
+
+==Trivia==
+*Prior to [[Version 14.2 Update|Version 14.2]], the Killer Axe Cat Base had no gaps in its attack range, attacked once every 9.9 seconds and dealt 600 damage.
+**Despite the fact that all versions of the game received the stat changes for the Killer Axe Cat Base, only the Japanese version had the altered Killer Axe Cat Base attack animation until [[Version 14.7 Update|Version 14.7]].
+*The Killer Axe Cat Base is the only [[:Category:Killer Cats|Killer Cat]] enemy to not be obtainable as a [[Cat Units|Cat Unit]].
+
+==Reference==
+*https://battlecats-db.com/enemy/680.html
+
+----
+{{EnemyNav|Sage of Mind Soractes|Dogenstein}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with different effective ranges]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Animated Enemy Bases]]

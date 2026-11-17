@@ -1,0 +1,127 @@
+{{TranslationNeeded}}
+'''Shadow Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Sonic the Hedgehog Collaboration Event]]. It was added in [[Version 14.4 Update|Version 14.4]] for [[Nyanko Daisensou|BJCP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 809
+|rarity = RR
+|name1 = Shadow Cat
+|name2 = Shadow Cat CC
+}}
+
+==Evolution==
+Evolves into '''Shadow Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit is a Metal meatshield comparable to the likes of [[Rope Jump Cat (Rare Cat)|Noodle Cats]] and [[Primordial Cat (Rare Cat)|Modern Cat]]. However, Shadow Cat has the potential to outperform both of them in certain situations thanks to its status as a gacha unit with access to +Levels—it only needs to Lv.50+8 to surpass even a maxed out Future Cat. Despite its high cost, Shadow Cat has the stats and speed necessary to function as a supplemental meatshield, used alongside [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]] and Modern Cat. It is worth noting that this unit's recharge time is quite long; just like Future Cat, the use of [[Cat Combo]]s is recommended to make it a more reliable meatshield. Once Future Cat is obtained, she tends to over''shadow'' this unit's performance thanks to her [[Insanely Tough]] ability and far lower cost.
+
+Regardless, Shadow Cat remains as a valuable option for certain restriction stages as well as the [[Underground Labyrinth]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 809
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni809 f00.png
+|Image2 = Uni809 c00.png
+|Name1 = Shadow Cat
+|Desc1 = Cat who adores a specific ultimate lifeform.<br>Regularly dyes their fur black to emulate their hero.<br>Tough vs Metal.
+|Name2 = Shadow Cat CC
+|Desc2 = Cat who uses a jewel's power to warp space-time to<br>such a degree that the current year is now unknown.<br>Tough vs Metal.
+|Name1 (JP) = ネコシャドウ (Neko Shadou, Shadow Cat)
+|Desc1 (JP) = 究極生命体の黒きハリネズミに憧れるネコ<br>外見維持に定期的な白髪染めが欠かせない<br>メタルな敵に打たれ強い
+|Transl1 (JP) = ?
+|Name2 (JP) = ネコシャドウCC (Neko Shadou Shīshī, Shadow Cat CC)
+|Desc2 (JP) = 手にした宝石の力で時空をゆがめるネコ<br>時空をゆがめすぎて今年が何年かよくわからない<br>メタルな敵に打たれ強い
+|Transl2 (JP) = ?
+|Name1 (TW) = 夏特貓
+|Desc1 (TW) = 對究極生命體的黑刺蝟充滿憧憬的貓咪<br>為了維持造型必須定期染髮<br>對上鋼鐵敵人很耐打
+|Name2 (TW) = 夏特貓CC
+|Desc2 (TW) = 獲得了寶石並用其力量讓時空扭曲的貓咪<br>因為過度扭曲時空連現在是幾年都不知道<br>對上鋼鐵敵人很耐打
+|Name1 (KR) = 고양이 섀도우
+|Desc1 (KR) = 궁극의 생명체인 검은 고슴도치를 동경하는 고양이<br>정기적으로 새치 염색을 하며 외모 유지에 신경쓰고 있다<br>메탈 적에 맷집이 좋다
+|Name2 (KR) = 고양이 섀도우CC
+|Desc2 (KR) = 손에 넣은 보석의 힘으로 시공간을 왜곡시키는 고양이<br>너무 왜곡시킨 나머지 올해가 몇년인지 잘 모른다<br>메탈 적에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 200¢
+*Chapter 2: 300¢
+*Chapter 3: 400¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shadow Cat
+|Normal Base HP = 600
+|Normal Base AP = 20
+|Normal Range = 150
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 45
+|Normal Speed = 22
+|Normal KB = 1
+|Normal Cost = 200
+|Normal Recharge = 390
+|Normal Attack Type = Single
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Shadow Cat CC
+|Evolved Base HP = 800
+|Evolved Base AP = 30
+|Evolved Range = 150
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 45
+|Evolved Speed = 22
+|Evolved KB = 1
+|Evolved Cost = 200
+|Evolved Recharge = 390
+|Evolved Attack Type = Single
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 20 damage<br>(12.77 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Normal-Movement Speed = 22
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 13 ~ 4.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 340 damage<br>(217.02 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 510 damage<br>(325.53 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Evolved-Movement Speed = 22
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 13 ~ 4.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni809 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/810.html
+
+----
+{{CatNav|Tails Cat|Agent Staal}}
+----
+
+{{Sonic the Hedgehog}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]

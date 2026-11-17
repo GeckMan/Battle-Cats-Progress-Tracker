@@ -1,0 +1,7 @@
+.ranger-navbox.monster-hunter {
+	--bg-navbox-title: linear-gradient(to right, hsl(12, 77%, 25%) 0%, hsl(12, 77%, 32%) 100%);
+	--bg-sub-table-title: #7e7727;
+	--bg-group-name: hsl(15, 70%, 41%);
+}
+
+/* [[Category:Template stylesheets]] */

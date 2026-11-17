@@ -1,0 +1,21 @@
+<includeonly><onlyinclude><div style="display: inline-block; text-align: center; line-height: 1em;"><div class="floatnone noresize" style="position: relative; margin-left:auto; margin-right:auto; "><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 80px; top: 11px; padding: 0; border-radius: 0px;"><!--
+	--><span style="white-space:nowrap;"><span style="text-align: right; color: #FFFFFF; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 25pt;"> </span> <span style="text-align: right; color: #FFD301; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 25pt;">{{BCNum|{{{1|}}}|mode=orange-xl|size=38}}</span></span><!--
+--></div>[[File:Userrank.png|link=User Rank|alt=|]]</div><!--
+--></div></onlyinclude></includeonly>
+{{Rank|20000}}
+
+<nowiki>{{Rank|20000}}</nowiki><br>
+<nowiki>{{Rank|User Rank}}</nowiki><br>
+
+==Usage==
+<pre>
+{{Rank|20000}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+| {{Rank|20000}}
+|}
+
+[[Category:Cosmetic templates]]

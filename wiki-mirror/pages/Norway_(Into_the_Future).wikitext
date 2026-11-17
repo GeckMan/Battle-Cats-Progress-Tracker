@@ -1,0 +1,97 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Norway (Into the Future)/Outbreak|here]].''
+'''Norway''' is the 6th stage in [[Into the Future]]. [[Hyppoh]] is introduced here.
+
+{{Story Info
+|stage name = [[File:Wc040.png]]
+|stage location = [[File:Norway.png]]
+'''Into The Future'''
+|energy = 34
+|energy2 = 44
+|energy3 = 54
+|enemy castle hp = 15,000 HP
+|enemy castle hp2 = 22,500 HP
+|enemy castle hp3 = 30,000 HP
+|enemies = {{Magnification|Hippoe|150%
+|Those Guys|150%}}
+|boss = {{Magnification|Hyppoh|35%}}
+|enemies2 = {{Magnification|Hippoe|600%
+|Those Guys|600%}}
+|boss2 = {{Magnification|Hyppoh|250%}}
+|enemies3 = {{Magnification|Hippoe|1,000%
+|Those Guys|1,000%
+|Hyppoh|500%}}
+|boss3 = {{Magnification|Those Guys|1,000%}}
+|treasure = - [[Treasure|Viking Boat]]
+|treasure2 = - [[Treasure|Viking Boat]]
+|treasure3 = - [[Treasure|Viking Boat]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''6,500''': Cat Ticket +1<br>
+'''5,000''': +35,000 XP
+|score reward2 = '''9,000''': [[Cat Food]] +10<br>
+'''8,000''': Cat Ticket +1<br>
+'''6,000''': +52,500 XP
+|score reward3 = '''8,000''': [[Cat Food]] +10<br>
+'''7,500''': Cat Ticket +1<br>
+'''7,000''': +70,000 XP
+|max enemies = 4
+|max enemies2 = 4
+|max enemies3 = 6
+|XP = 2,500 XP
+|width = 3,800
+|jpname = Norway
+|script = ノルウェー
+|romaji = Noruwē
+|jptreasure = High Tax
+|twname = Russia
+|twscript = 俄羅斯
+|twromaji = Èluósī
+|twtreasure = Russian Pie
+|krname = Norway
+|krscript = 노르웨이
+|krromaji = Noleuwei
+|krtreasure = Viking
+|chapter = [[Into the Future]]
+|prev stage = [[Russia (Into the Future)|Russia]]
+|next stage = [[United Kingdom (Into the Future)|United Kingdom]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Hippoe|Those Guys|Hyppoh}}
+*1 [[Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*Infinite [[Hippoe]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base reaches 90% HP:
+**1 [[Hyppoh]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Hippoe|Those Guys|Hyppoh}}
+*1 [[Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*Infinite [[Hippoe]]s spawn after 30 seconds<sup>900f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base reaches 90% HP:
+**1 [[Those Guys]] spawns as the boss.
+**3 [[Hyppoh]]s spawn, delay 3~6 seconds<sup>90f~180f</sup>.
+
+==Strategy==
+Do not use [[Bird Cat (Normal Cat)|UFO Cat]], [[Titan Cat (Normal Cat)|Mythical Titan Cat]] or [[Wheel Cat (Rare Cat)|Solar Cat]] - all three are outranged by Hyppoh.
+
+Try to build up to a maxed [[Worker Cat]] and wallet before stacking as many [[Gross Cat (Normal Cat)|Sexy Legs Cats]] and [[Lizard Cat (Normal Cat)|Dragon Cats]] as possible. Once Hyppoh spawns, your ranged attackers should be able to overwhelm her as long as you protect them with [[Cat (Normal Cat)|Macho Cats]] and [[Tank Cat (Normal Cat)|Wall Cats]]. If you still can't win, getting more [[Treasure]]s and [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] should do the trick.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Wc041.png|Taiwanese version's base (Russia)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Russia'''; [[Russia (Into the Future)|stage 5]] is Mongolia and Norway is moved to [[United Kingdom (Into the Future)|stage 7]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-06.html
+*https://battlecats-db.com/stage/s03004-06.html
+*https://battlecats-db.com/stage/s03005-06.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,132 @@
+{{Unobtainable}}
+'''Calette''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was introduced in [[Version 8.7 Update|Version 8.7]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Princess Punt Sweets Collaboration Event]].
+
+{{Cat Info
+|ID = 485
+|rarity = UR
+|name1 = Calette
+|name2 = Calette CC
+}}
+
+==Evolution==
+Evolves into '''Calette CC''' at level 10.
+
+==Strategy/Usage==
+Realistically, this unit's usage is limited at best. The superior generalist value from readily attainable [[:Category:Mythic Cats|Mythic Cats]] such as [[Ururun Wolf (Special Cat)|Ururun Cat]] and [[Red Riding Mina (Special Cat)|Crimson Mina]] outshines her in many situations. However, it is worth noting that her recharge rate is noticeably shorter, giving her an edge in replaceability.
+
+If her niche in and of itself were more powerful, then perhaps her usage would be realistically understandable. Many short-ranged Angel enemies are countered by either [[Talents|Talented]] [[Bishop Cat (Rare Cat)|Sanzo Cat]]'s unmatched spammability, or [[Juliet Cat (Super Rare Cat)|Juliet the Maiko]]'s high range depending on what the situation calls for. The same applies to Aliens, where [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] is more expendable and can retain a near-100% uptime on Freeze if two are out on the field (which is not very difficult to achieve). Additionally, Talented [[Psychocat (Rare Cat)|Corrupted Psychocat]] offers a another useful skillset with much less risk involved despite his Single Attack. Zombies are especially a lost cause, as she is almost entirely outperformed by [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], functioning as a diet version of Calette with a generally better ability, more stacking potential as both a DPS and support, as well as pierce. This isn't mentioning how Zombies can burrow into her relatively easily. There is merit to using Calette in mixed-trait stages featuring a plethora of the aforementioned traits, providing extra assurance from the safety of the backline. However, these cases are seldom, so treat her as a last line of defense if the going gets rough.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 485
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni485 f00.png
+|Image2 = Uni485 c00.png
+|Name1 = Calette
+|Desc1 = Fourth of four sisters from Princess Punt Sweets.<br>Her pranks often push Princess Punt's buttons.<br>100% chance to Weaken Angels/Zombies/Aliens.
+|Name2 = Calette CC
+|Desc2 = Fourth of four sisters from Princess Punt Sweets.<br>Infamous prankster who steals money and Cats.<br>100% chance to Weaken Angels/Zombies/Aliens.
+|Name1 (JP) = カレット (Karetto)
+|Desc1 (JP) = ケリ姫スイーツに登場するアラカルテット四姉妹の四女<br>悪戯好きでケリ姫によくちょっかいを出している<br>必ず天使とゾンビとエイリアンの攻撃力を下げる
+|Transl1 (JP) = The fourth daughter of the four sisters of the Alacartette in Kerihime Sweets<br>She likes to play pranks and often messes with Kerihime<br>Always lowers the attack power of Angels, Zombies and Aliens
+|Name2 (JP) = カレットCC (Karetto CC)
+|Desc2 (JP) = ケリ姫スイーツに登場するアラカルテット四姉妹の四女<br>金品強奪、にゃんこ誘拐未遂と札付きの悪戯っ娘<br>必ず天使とゾンビとエイリアンの攻撃力を下げる
+|Transl2 (JP) = The fourth daughter of the four sisters of the Alacartette in Kerihime Sweets<br>She has robbed money, attempted to kidnap a kitten, and is a prankster with a bad reputation<br>Always lowers the attack power of Angels, Zombies and Aliens
+|Name1 (TW) = 卡蕾特
+|Desc1 (TW) = 公主踢騎士Sweets中登場的阿拉卡爾媞特<br>四姊妹的四妹。喜歡惡作劇而常常騷擾飛踢公主<br>必定能使天使、不死生物和異星戰士攻擊力下降
+|Name2 (TW) = 卡蕾特CC
+|Desc2 (TW) = 公主踢騎士Sweets中登場的阿拉卡爾媞特<br>四姊妹的四妹。會搶寶物、誘拐貓咪的惡作劇女孩<br>必定能使天使、不死生物和異星戰士攻擊力下降
+|Name1 (KR) = 카렛트
+|Desc1 (KR) = 발차기 공주 돌격대에 등장하는 아라 콰르텟 네자매 중 넷째<br>장난을 좋아해서 발차기 공주에게 자주 장난친다<br>반드시 천사, 좀비, 에이리언의 공격력을 낮춘다
+|Name2 (KR) = 카렛트CC
+|Desc2 (KR) = 발차기 공주 돌격대에 등장하는 아라 콰르텟 네자매 중 넷째<br>금품 강탈, 냥코 유괴 미수로 유명한 장난꾸러기<br>반드시 천사, 좀비, 에이리언의 공격력을 낮춘다
+}}
+
+==Cost==
+*Chapter 1: 2,400¢
+*Chapter 2: 3,600¢
+*Chapter 3: 4,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Calette
+|Normal Base HP = 1800
+|Normal Base AP = 1200
+|Normal Range = 410
+|Normal Foreswing = 72
+|Normal Attack Cooldown = 163
+|Normal Attack Length = 116
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 2400
+|Normal Recharge = 2100
+|Normal Attack Type = Area
+|Normal Targets = Angel,Alien,Zombie
+|Normal Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Calette CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 1600
+|Evolved Range = 410
+|Evolved Foreswing = 72
+|Evolved Attack Cooldown = 163
+|Evolved Attack Length = 116
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 2400
+|Evolved Recharge = 2100
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Alien,Zombie
+|Evolved Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,800 HP
+|val-Normal-Attack Power = 1,200 damage<br>(153.19 DPS)
+|val-Normal-Attack Range = 410
+|val-Normal-Attack Frequency = 235f <sub>7.83 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 72f <sup>2.4s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Normal-Recharge Time = 70 ~ 61.2 seconds
+|val-Normal-MaxHP = 30,600 HP
+|val-Normal-MaxAttack = 20,400 damage<br>(2,604.26 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 27,200 damage<br>(3,472.34 DPS)
+|val-Evolved-Attack Range = 410
+|val-Evolved-Attack Frequency = 235f <sub>7.83 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 72f <sup>2.4s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Evolved-Recharge Time = 70 ~ 61.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni485 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/486.html
+
+----
+{{CatNav|Li'l Valkyrie Dark|Hina}}
+----
+
+{{Princess Punt}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Collaboration Event Cats]]

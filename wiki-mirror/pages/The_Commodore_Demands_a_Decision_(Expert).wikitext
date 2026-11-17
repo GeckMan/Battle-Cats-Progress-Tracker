@@ -1,0 +1,58 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Kang Roo|Pigeon de Sable|Perry Duche|Kory}}
+'''The Commodore Demands a Decision (Expert)''' is the second stage in [[Anniversary/12 1/2 Year#Please Open the Country|Please Open the Country]].
+
+{{Stage Info
+|stage name = [[File:rc018.png]]
+[[File:Mapsn401 01 s ja.png]]
+|stage location = [[File:Mapname401 s ja.png]]
+|energy = 100
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Kang Roo|600%
+|Pigeon de Sable|100%
+|Kory|200%}}
+|boss = {{Magnification|Perry Duche|1,000%}}
+|enemies2 = {{Magnification|Kang Roo|1,200%
+|Pigeon de Sable|200%
+|Kory|400%}}
+|boss2 = {{Magnification|Perry Duche|2,000%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +500 (100%, unlimited)
+|score reward = '''4,600''': [[Catamin]] [A] +1<br>
+'''4,250''': [[Road to Unification#Mechanics|War Funds]] +2,500<br>
+'''3,900''': 300,000 XP<br>
+'''2,200''': [[Road to Unification#Mechanics|War Funds]] +1,250<br>
+'''500''': [[Leadership]] +1
+|XP = 1,900 XP
+|width = 5,200
+|max enemies = 10
+|jpname = ?
+|script = 決断を迫る提督 激ムズ
+|romaji = ?
+|star = 2
+|event-chapter = [[Anniversary/12 1/2 Year#Please Open the Country|Please Open the Country]]
+|difficulty = ★6
+|prev stage = [[The Commodore Demands a Decision (Normal)]]
+|next stage = [[The Commodore Demands a Decision (Deadly)]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*1 [[Kang Roo]] spawns after 6.67 seconds<sup>200f</sup>.
+*4 [[Pigeon de Sable]]s spawn after 9.33 seconds<sup>280f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[Perry Duche]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+*4 [[Pigeon de Sable]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*1 [[Pigeon de Sable]] spawns after 56 seconds<sup>1,680f</sup>.
+*1 [[Kory]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Kang Roo]] spawns after 83.33 seconds<sup>2,500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01401-02.html
+
+{{Anniversary}}
+[[Category:Event Stages]]

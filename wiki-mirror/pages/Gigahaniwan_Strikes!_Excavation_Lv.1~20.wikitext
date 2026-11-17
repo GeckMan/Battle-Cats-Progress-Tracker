@@ -1,0 +1,478 @@
+<tabber>
+Excavation Lv.1~10=
+{{EnemiesAppearing|Doge Dark|Dark Otter|Relic Doge|Gigahaniwan|Sir Rel|Maawth|Nimoy Bore}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn065 00 a en.png]]
+|stage location = [[File:Mapname065 a en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|Dark Otter|0
+|Relic Doge|0
+|Sir Rel|0
+|Maawth|0
+|Nimoy Bore|0}}
+|boss = {{Magnification|Gigahaniwan|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 20
+|jpname = Excavation Lv.X
+|script = 出土 Lv.X
+|romaji = Shutsudo Lv.X
+|event = [[Gigahaniwan Strikes!]]
+|event-chapter = [[Gigahaniwan Strikes!]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*4 [[Doge Dark]]s spawn after 5.33 seconds<sup>160f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Dark Otter]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[Relic Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gigahaniwan]] spawns as the boss.
+**4 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**3 [[Relic Doge]]s spawn after 5.33 seconds<sup>160f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Sir Rel]] spawns after 6.67 seconds<sup>200f</sup>.
+**2 [[Maawth]]s spawn after 6.67 seconds<sup>200f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+**2 [[Nimoy Bore]]s spawn after 8.67 seconds<sup>260f</sup>, delay 83.33~86.67 seconds<sup>2,500f~2,600f</sup>.
+**4 [[Doge Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**3 [[Doge Dark]]s spawn after 80 seconds<sup>2,400f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**4 [[Relic Doge]]s spawn after 82 seconds<sup>2,460f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[Sir Rel]]s spawn after 83.33 seconds<sup>2,500f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[Dark Otter]]s spawn after 86.67 seconds<sup>2,600f</sup>, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+**3 [[Sir Rel]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**3 [[Doge Dark]]s spawn after 153.33 seconds<sup>4,600f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**4 [[Relic Doge]]s spawn after 153.33 seconds<sup>4,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[Sir Rel]]s spawn after 153.33 seconds<sup>4,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="3" scope="col" style="text-align: center;" |Excavation Lv.
+! colspan="8" style="text-align: center;"|Strength Magnifications
+! rowspan="3" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! rowspan="3" style="text-align: center;"|Continuation Chance [[Gigahaniwan Strikes!/Cradle Wilderness|(Cradle)]]
+|-
+! colspan="2" scope="col" style="text-align: center;" |[[Gigahaniwan]]
+! rowspan="2" scope="col" |[[Doge Dark]]
+! rowspan="2" scope="col" |[[Dark Otter]]
+! rowspan="2" scope="col" |[[Relic Doge]]
+! rowspan="2" scope="col" |[[Sir Rel]]
+! rowspan="2" scope="col" |[[Maawth]]
+! rowspan="2" scope="col" |[[Nimoy Bore]]
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" scope="col" |Base XP
+|-
+!HP
+!AP
+|-
+! scope="row" |1
+|100%
+|100%
+|800%
+|200%
+|100%
+|100%
+|1,200%
+|600%
+|60
+|[[Catamin]] [A] +3
+|1,140 XP
+|1%
+|-
+! scope="row" |2
+|122%
+|106%
+|844%
+|206%
+|106%
+|106%
+|1,244%
+|622%
+|60
+|Bricks +7
+|1,140 XP
+|3%
+|-
+! scope="row" |3
+|144%
+|112%
+|888%
+|212%
+|112%
+|112%
+|1,288%
+|644%
+|70
+|500,000 XP
+|1,330 XP
+|7%
+|-
+! scope="row" |4
+|166%
+|118%
+|932%
+|218%
+|118%
+|118%
+|1,332%
+|666%
+|70
+|Feathers +7
+|1,330 XP
+|11%
+|-
+! scope="row" |5
+|188%
+|124%
+|976%
+|224%
+|124%
+|124%
+|1,376%
+|688%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520 XP
+|15%
+|-
+! scope="row" |6
+|210%
+|130%
+|1,020%
+|230%
+|130%
+|130%
+|1,420%
+|710%
+|80
+|[[Catamin]] [B] +3
+|1,520 XP
+|18%
+|-
+! scope="row" |7
+|232%
+|136%
+|1,064%
+|236%
+|136%
+|136%
+|1,464%
+|732%
+|90
+|Coal +7
+|1,710 XP
+|21%
+|-
+! scope="row" |8
+|254%
+|142%
+|1,108%
+|242%
+|142%
+|142%
+|1,508%
+|754%
+|90
+|1,000,000 XP
+|1,710 XP
+|24%
+|-
+! scope="row" |9
+|276%
+|148%
+|1,152%
+|248%
+|148%
+|148%
+|1,552%
+|776%
+|100
+|Sprockets +7
+|1,900 XP
+|27%
+|-
+! scope="row" |10
+|300%
+|150%
+|1,200%
+|250%
+|150%
+|150%
+|1,600%
+|800%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900 XP
+|30%
+|-
+|}
+
+==Strategies==
+These ten stages aren't very threatening on their own with the relative weak support backing Gigahaniwanwan. Still, it would be advisable to bring specialists that can handle them so Gigahanwanwan can be engaged as soon as possible.
+
+==='''Recommended Units'''===
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Hits both Relic Doge and Doge Dark, as well as Sir Rel. Also chips down Nimoy Bore and Gigahaniwan during its TBA, and even works as CC for Nimoy if you got Can Can's Target Alien [[Talents|Talent]].
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: Pizza's Massive vs. Dark shreds through Dark Otter quickly.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]: Blocks Gigahaniwan's Level 4 Waves from Cursing or applying CC effects onto your units that can't outrange Gigahaniwan.
+
+|-|
+Excavation Lv.11~20=
+{{EnemiesAppearing|Gigahaniwan|Jackie Peng|Mooth|Golem Sunfish|Gabriel|Lutrinae Gokurakko|Sir Rel}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn065 00 a en.png]]
+|stage location = [[File:Mapname065 a en.png]]
+|enemies = {{Magnification|Jackie Peng|0
+|Mooth|0
+|Golem Sunfish|0
+|Gabriel|0
+|Lutrinae Gokurakko|0
+|Sir Rel|0}}
+|boss = {{Magnification|Gigahaniwan|0}}
+|restriction = [[No Continues]]
+|width = 5,600
+|max enemies = 20
+|jpname = Excavation Lv.X
+|script = 出土 Lv.X
+|romaji = Shutsudo Lv.X
+|event = [[Gigahaniwan Strikes!]]
+|event-chapter = [[Gigahaniwan Strikes!]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,550,000 and increases by 50,000 with each stage.
+*1 [[Gigahaniwan]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Mooth]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 86.67~90 seconds<sup>2,600f~2,700f</sup>.
+*1 [[Golem Sunfish]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*7 [[Gabriel]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*5 [[Gabriel]]s spawn after 75.33 seconds<sup>2,260f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*3 [[Lutrinae Gokurakko]]s spawn after 80 seconds<sup>2,400f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*5 [[Sir Rel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*Infinite [[Mooth]]s spawn after 250 seconds<sup>7,500f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="3" scope="col" style="text-align: center;" |Excavation Lv.
+! colspan="8" style="text-align: center;"|Strength Magnifications
+! rowspan="3" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! colspan="3" scope="col" style="text-align: center;"|Continuation Chance
+|-
+! colspan="2" scope="col" style="text-align: center;" |[[Gigahaniwan]]
+! rowspan="2" scope="col" |[[Jackie Peng]]
+! rowspan="2" scope="col" |[[Mooth]]
+! rowspan="2" scope="col" |[[Golem Sunfish]]
+! rowspan="2" scope="col" |[[Gabriel]]
+! rowspan="2" scope="col" |[[Lutrinae Gokurakko]]
+! rowspan="2" scope="col" |[[Sir Rel]]
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" scope="col" |Base XP
+! rowspan="2" scope="col" |[[Gigahaniwan Strikes!/Cradle Wilderness|Cradle Wilderness (Deadly)]]
+! rowspan="2" scope="col" |[[Gigahaniwan Strikes!/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! rowspan="2" scope="col" |[[Gigahaniwan Strikes!/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+!HP
+!AP
+|-
+! scope="row" |11
+|300%
+|150%
+|3,000%
+|4,000%
+|100%
+|400%
+|200%
+|150%
+|110
+|[[Catamin]] [C] +3
+|2,090 XP
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|322%
+|172%
+|3,222%
+|4,111%
+|106%
+|422%
+|211%
+|156%
+|120
+|Gold +7
+|2,280 XP
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|344%
+|194%
+|3,444%
+|4,222%
+|112%
+|444%
+|222%
+|162%
+|130
+|1,500,000 XP
+|2,470 XP
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|366%
+|216%
+|3,666%
+|4,333%
+|118%
+|466%
+|233%
+|168%
+|140
+|Meteorite +7
+|2,660 XP
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|388%
+|238%
+|3,888%
+|4,444%
+|124%
+|488%
+|244%
+|174%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850 XP
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|410%
+|260%
+|4,110%
+|4,555%
+|130%
+|510%
+|255%
+|180%
+|200
+|Beast Bones +7
+|3,800 XP
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|432%
+|282%
+|4,332%
+|4,666%
+|136%
+|532%
+|266%
+|186%
+|200
+|Ammonite +15
+|3,800 XP
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|454%
+|304%
+|4,554%
+|4,777%
+|142%
+|554%
+|277%
+|192%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800 XP
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|476%
+|326%
+|4,776%
+|4,888%
+|148%
+|576%
+|288%
+|198%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800 XP
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|500%
+|350%
+|5,000%
+|5,000%
+|150%
+|600%
+|300%
+|200%
+|200
+|[[Catseye]] [Dark] +1
+|3,800 XP
+|59%
+|31%
+|10%
+|-
+|}
+
+==Strategy==
+This stage combines very deadly enemies including Golem Sunfish to snipe, curse and freeze your backliners, Lutrinae Gokurakko to push and knockback your units, and Sir Rels appearing now and then to add more pressure. Gigahaniwan itself, despite having relatively low DPS for a Gauntlet boss, still shouldn't be underestimated, as its surprisingly high range of 350 allows it to hit most ranged Wave Shields, and its Curse Immunity prevents its abilities from being disabled. Certain UL Legend True Forms will prove extremely helpful in the fight, as even optimal Ubers may suffer at times. The Mooths and Jackie Pengs serve to provide resources, but with Gigahaniwanwan and Gokurakko applying pressure, actually hitting them is easier said than done. Even without Gigahaniwanwan and Gokurakko, the fight isn't quite over, as Golem Sunfish can potentially snipe and destroy the base if given enough time. As such, most strategies aim to keep the fight away from the base to account for Gokurakko's interference.
+
+==='''Recommended Units'''===
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]: Despite being outranged by Gigahaniwan, Octopus remains a viable choice here as a disposable Wave Shield that can dismiss many Wave Attacks from Gigahaniwanwan, though its lack of Knockback Immunity means it isn't always consistent. Octopus can also stall Mooth, and, with the Curse Immunity talent, shrug off Golem Sunfish's attacks as well, since the latter is also a Floating enemy.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: A cost-efficient unit with Single Attacks and great raw stats, Can Can is best used to pick off the nasty Sir Rels, Gabriels and to snipe Jackie Pengs with the Extra Money talent bringing in more income, as the Mooths can be difficult to reach.
+*[[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]: Combined with Octopus and Doron, a slapping stack of Slapsticks can land a ton of damage on Gigahaniwan and also deal with Sir Rel.
+*[[Stone Cat (Rare Cat)|Stone Cat]]: With its extreme health as well as Immunity to Waves/Knockback/Slow/Weaken/Freeze, Stone can easily pin the threats in place during its brief lifetime and reduce the amount of ground lost.
+*[[Maize Cat (Rare Cat)|Maize Cat]]: Having Resistant against Relics and Colossus Slayer, this unit is a definite pick as a meatshield for this stage to stall Gigahaniwan and the Sir Rels that come out.
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: Ramen not only tanks against Gokurakko, but against Gigahaniwan as well. If you have Uber Research Combos or a very boosted Ramen, he can even serve as your sole meatshield.
+*[[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: With Massive Damage to Angels, Mushroom Cat can rip huge chunks off Gokurakko and Gabriel with every hit, and its Wave Immunity keeps it safe from Gigahaniwanwan's Wave Attacks.
+*[[Ancient Egg: N110 (Rare Cat)|Farmboy Cat]]: A surprisingly useful unit here, he can deal with Gokurakko as effectively as Mushroom due to his Wave Immunity and very consistent anti-Angel Slow ability at midrange. Single Attack isn't too much of a concern, as other peons are unlikely to interfere.
+*[[Food Stall Cat (Rare Cat)|Cafeteria Cat]]: Players who are attempting to challenge these stages would have most likely cleared CotC 2 and [[An Ancient Curse]] to acquire this True Form. Cafeteria Cat is essentially a Mushroom Cat that trades range, Wave Immunity and Area Attack for Curse Immunity, much higher damage and speed. While the loss of Wave Immunity is very significant, this can be compensated partially with timing and speed. Single Attack isn't much of an issue, either, since the peons take quite a while to catch up, and it still has the range to hit the nasty Angels nonetheless. Its 50% chance to Curse Angels for 3 seconds potentially allows it to disable Gokurakko's Knockback ability, making it much less of a threat to any tanks in play. It has enough HP to survive one Gigahaniwanwan hit even with 350% Attack Power, and its own Curse Immunity means it will not lose its own abilities whatsoever.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]] - Being Strong Against Relics with Curse/Wave Immunity, Colossus Slayer and 100% chance to Weaken them to 50% for 4 seconds, Naala is particularly suited to this fight, as its closely-spaced LD attacks can do a fair bit of damage to the Relics here and reach up to 700 range. Naala doesn't outrange Gigahaniwanwan (300<350) and will not be able to deal with Gokurakko, but its status effects will still hinder the boss greatly.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]] - Doron's 8-second anti-Relic Freeze/Knockback synergizes particularly well with his Colossus Slayer ability and level 3 Surge, being able to recover ground against both Golem Sunfish and Gigahaniwanwan (who has only one Knockback, but isn't Immune to this effect) with increased damage versus the latter. His extreme health, 600-range Omni Strike and Immunity to Knockback/Freeze/Weaken/Curse/Slow further improves his consistency, and the Surge can land some chip damage on other threats too. His cooldown is short enough to allow multiple deployments, but not enough for Gokurakko's Surge duplication to matter, as the Surge spawns at 400-1000 range, and in many cases will miss Gokurakko entirely.
+*[[Idi:N (Special Cat)|Idi:N2/Idi:NX]]: Idi is a powerful specialist rusher whose Massive/Insane Damage (for players who have cleared Revival of Origin and [[The Face of God/Invasion|The Face of God Invasion]]) vs. Relics can speed up the fight substantially by removing huge amounts of Gigahaniwan's HP every time she connects, especially when aided by Freeze effects that allow her to get more hits in. With enough luck, she can quite possibly defeat Gigahaniwanwan before the Gokurakkos even pose a threat. She also has her uses against Golem Sunfish and the Relics in continuation stages.
+
+==='''Recommended Ubers'''===
+*[[Lasvoss (Uber Rare Cat)|Lasvoss Reborn]] - Lasvoss is very easy to use here due to easily having enough bulk to reach Gigahaniwanwan, even despite being outranged, and his Immunity to Waves/Weaken/Slow/Knockback/Freeze helps him in quickly reaching the boss. His 30% Savage Blow and 50% Strengthen at 30% health aren't consistent, even when aided by his 100% chance to Survive a lethal strike, but when he lands one he can deal significant damage to anything within range, and his base damage is still significant enough to easily justify usage even when not considering these. Lasvoss works best with his Attack/Defense Buff talents fully upgraded, optionally aided by Move Speed Up and Colossus Slayer to maximize the value he provides, as he is rather expensive. Lasvoss also happens to be part of the [[Bad Guys (Combo)|Bad Guys]] research combo, which forms an excellent synergy with more disposable units.
+*[[Mighty Kat-A-Pult (Uber Rare Cat)|CAT-10 Gigapult]]: Boasting VERY high stats and powerful abilities against Relics, this unit's Ultra Form absolutely dunks on this stage. It can take several hits from Golem Sunfish, Gigahaniwan and Sir Rel, and not to mention it still deals great DPS to the other traits. While it may be vulnerable to Gokurakko's knockback and is susceptible to Waves and other debuffs that Gigahaniwan inflicts, as long as you can protect it, you will definitely have no problems here.
+*[[Dioramos (Uber Rare Cat)|Ascendant Dioramos]]: Having extremely high stats and crowd-controlling capability versus angels, this unit's Ultra Form can be of service to handle Gokurakko and Gigahaniwan in general. Dioramos doesn't have any immunities here though, so  take a little bit of caution when using him.
+*[[Baby Gao (Uber Rare Cat)|Mighty Lord Gao]]: Surprisingly, Gao functions well as a generalist backliner here, as all enemies in this stage possess a trait (which he is Strong Against), and he outranges everything but Golem Sunfish, not to to mention his Wave Immunity. However, as mentioned before, he cannot avoid Golem Sunfish's first hit (480<650), which carries a Curse effect that disables his Strong ability with a very long uptime.
+*[[Gravi (Uber Rare Cat)|Talented Gravolodon]]: With talents like Relic targeting and Curse Immunity, Gravolodon can easily hold off Gigahaniwan and Golem Sunfish for a while. With a good damage output and a Level 4 Wave Attack, he can also deal good damage to the Golem Sunfish, who tends to be behind Gigahaniwan. The occasional peons can also be used as stepping stones for his waves. Knockback Immunity also prevents him from being pushed back when Gokurakko is on the field or if Gigahaniwan procs a KB. If you have him invested he definitely won't be ''monkeying'' around, he's a ''solid'' unit for this stage and can go ''bananas'' if used right. Be wary that he's still vulnerable to Gigahaniwan's Freeze, so having an upgraded Thunderbolt Style, if available, to reduce the freeze time might be a good idea. He also lacks Angel targeting, so you may also want to hold off on deploying him until Gokurakko has been taken care of, or else he might be holding on by a ''vine''.
+*[[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]]: Very good nuker that can decimate chunks of Gigahaniwan's HP at a time. He does struggle reaching the boss, though.
+*[[Trixi the Merc (Uber Rare Cat)|Trixi the Revenant]]: Trixi's Freeze vs. Relics comes in clutch well here, as she can very easily stutter Gigahaniwan, letting your supporting units get hits onto Gigahaniwan that they probably wouldn't have been able to do. Trixi also has very high DPS vs Relics, which speeds up clears of this stage.
+*[[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]]: With a standing range of 400, she is one of the only viable wave blockers to deal against Gigahaniwan. Her [[Freeze]] and [[Strong]] against Relic is also very useful here, as she is able to deal with Gigahaniwan, Sir Rel and Golem Sunfish if they are on the range of her explosion, although you do have to protect her from Gokurakko well, as they can deal insanely high damage and even kill her if she is not protected well.
+*[[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]] - While his slow has poor uptime, Phono does provide DPS and CC from extreme range that buys valuable time for other units. Just beware that any Mini-Surges duped by Gokurakko can stun-lock units since they carry Gokurakko's Knockback ability as well.
+*[[Squire Luno (Uber Rare Cat)|Squire Luno/Lunos the Luminous]] - With the abundance of high-profit peons, Lunos thrives within this stage. Not even including the Conjure, his immunities and target traits all do exceptionally well in this stage, keeping Gigahaniwan and Gokurakko in check. Do mind pushing them back into Golem Sunfish's range and using mini-surge on Goku.
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24065.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

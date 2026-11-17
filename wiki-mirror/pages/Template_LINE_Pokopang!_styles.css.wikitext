@@ -1,0 +1,7 @@
+.ranger-navbox.pokopang {
+	--bg-navbox-title: linear-gradient(to right, hsl(11, 93%, 53%) 0%, hsl(11, 93%, 60%) 100%);
+	--bg-sub-table-title: #f5a764;
+	--bg-group-name: hsl(14, 85%, 50%);
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,69 @@
+{{JPExclusive}}
+{{Stub}}
+:''This article is about the enemy. For the Cat Unit, see [[Seijuro Hiko (Legend Rare Cat)]].''
+'''Seijuro Hiko''' (比古清十郎, ''Hiko Seijūrō'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Enemy Info
+|name = Seijuro Hiko
+|image = E 791.png
+|first appearance = [[Rurouni Kenshin Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Rurouni Kenshin Collaboration Event#挑戦！飛天御剣流修業|挑戦！飛天御剣流修業]]:
+**[[この俺から一本取ってみろ]] (100%)
+**[[本気で打ち込んで来い]] (120% HP/100% AP)
+**[[俺が教えられるのはここまでだ]] (150% HP/100% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/The Swords of Meiji|The Swords of Meiji]] (100%, 120%, 150%, 180%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Seijuro Hiko
+|Health = 1600000
+|Attack Power = 100000
+|Attack Range = 410
+|Attack Type = Area
+|Time Between Attacks = 225
+|Movement Speed = 12
+|Knockback = 2
+|Foreswing = 56
+|Backswing = 71
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~510)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 200% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+791 e.png|Seijuro Hiko's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/793.html
+
+----
+{{EnemyNav|Makoto Shishio|E-792}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Strengthen ability]]

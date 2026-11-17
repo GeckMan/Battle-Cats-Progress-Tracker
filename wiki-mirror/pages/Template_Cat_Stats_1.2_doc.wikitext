@@ -1,0 +1,34 @@
+{{Documentation}}
+This template is designed to be filled in using code. If you just want a simple template, use {{t|Cat Stats Manual}}.
+
+Compared to {{t|Cat Stats 1.1}}, this version displays trait targets as icons when passed to the <code>Targets</code> parameter. The module recognizes a trait if its name (capitalized like "Red") is a substring in the argument. The preferred format is a comma-separated list without any spaces like <code>Red,Floating,Relic</code>, and pass <code>-</code> if the form does not have any target traits.
+
+==Parameters==
+This module uses Lua, and every parameter (except for name, abilities and Lv.MAX) must follow a specific format, otherwise unexpected results/script errors might occur.
+
+See [[Module:{{PAGENAME}}#raw_form]] for a list of parameters for each form. These will be of the form <code><Form> <parameter></code>, e.g. <code>Normal Name</code>. Normal and Evolved forms are required. All parameters not listed as optional must be entered, otherwise a script error will be thrown.
+
+===Other parameters===
+There are three other parameters that are not form-specific:
+*'''Scaling''': scaling should be written as it is in the game file <code>unitlevel.csv</code>. For example, <code>20,20,20,20,20,20,10,10,10,10,10,10,10,10,10,10,10,10,10,10</code>. You can also use the <code>x</code> shorthand, so that example is equivalent to <code>20x6,10x14</code>.
+*'''Lv.MAX''': there is no code that relies on this being special, so you can put whatever you want here (as long as you put ''something''). Simply the maximum level you can get the cat to. You don't have to get this one from code, for example [[Killer Cat (Rare Cat)|Killer Cat]]'s maximum level is technically 50+70 (but you can only get it to 50), and [[Catburger (Special Cat)|Catburger]]'s maximum level differs between EN and JP so you can manually put both languages in there.
+*'''Orb''': simple [[Module:Yesno|Yesno]] flag that indicates whether true/ultra form have [[Talent Orbs]] available.
+
+==Validation==
+This template has been written with validation in mind, mainly to avoid issues when mass-updating pages with the new version. Validation can be enabled with the <code>|validation = on</code> switch. Validation is completely optional, but is recommended for main namespace pages.
+
+A validation parameter is of the form <code>val-<Form>-<Heading></code>, e.g. <code>val-Evolved-Movement Speed</code>. Validation parameters cover all visible fields except name, special abilities, attack type and Lv.MAX. Health, Attack Power, Attack Range, etc.), because the bottom row aren't affected by code anyway. The name of each heading is what is displayed specifically for the first form (i.e. the health parameter is "Health" and not "Health (Lv.30)" or something). In addition, there are <code>val-Normal-MaxHP</code> and <code>val-Normal-MaxAttack</code>, which cover the max level HP and max level attack for the normal form.
+
+All of these validation parameters can be used exactly the same as the old parameters from Cat Stats Manual. If any validation parameter is not the same as what the Lua code has generated, then a script error will be thrown.
+
+==Template versioning==
+This module has an unusually large amount of intertwined parameters; changing even a heading could break the template on hundreds of pages. Therefore, this template will use a rudimentary versioning system. The basic principle is that after updating the module behind this template, make sure to check [[:Category:Pages with script errors]]. If updating the module has caused any cats to have a script error, then you should revert the change to the module.
+
+If your breaking change to the module was a simple bug fix, and it's only broken the template on a select few pages, you can probably get away with quietly updating those few pages to work with the new version. Otherwise, you'll need to create a new version. Basically what you'll need to do is decide on a version number&mdash;e.g. if updating from 0.1 you would want the new version to either be 0.2 or 1.0; the exact number is up to you, but please be sensible and don't increase the major version unless the new version is completely different&mdash;then copy all of the old template's pages to the new number (e.g. copy "Template:Cat Stats 0.1" to "Template:Cat Stats 0.2"; '''''do not move them'''''). Now, you will have two copies of the same template; your code that broke the old version can now safely be placed in the new version's module. If you want to make a page use the new version of the code, you will have to physically update (or, more realistically, use a script to edit) that page to use that new version.
+
+Essentially, the main premise is that if a certain input works on a certain version of this template, that input will ''always'' work on that version of the template. By creating a new version, old code can still use the old version exactly as it did before without change, but you can also write new code with new features.
+
+Also, update "[[Template:Cat Stats/versions]]" every time; explain what's new, removed, changed, especially the stuff that made you require a new version.
+
+==Example usage==
+{{Cat Stats 1.2/examples}}

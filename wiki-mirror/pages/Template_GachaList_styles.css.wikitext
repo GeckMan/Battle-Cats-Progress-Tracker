@@ -1,0 +1,3 @@
+.cropped-icon img {
+	transform: translateX(-6px) translateY(-13px);
+}

@@ -1,0 +1,1141 @@
+Listed below are all the '''special abilities and effects''' in [[The Battle Cats]]. The effects of some abilities can be improved by getting the [[Fruit Treasures]], equipping certain [[Talent Orbs]] or the activation of certain [[Cat Combo]]s.
+
+==Attack Types==
+Attack Types determine how and when a unit attacks. All characters have either Single Attack or Area Attack.
+
+===Single Attack===
+Units with this ability will only damage the closest target in their attack range. If two or more targets are at the same distance, a random one takes the damage.
+
+{| class="article-table"
+| [[File:Zukan icon21 en.png|center]]
+| ''Cats'': Only one enemy within range will be hit by this Unit's attacks.
+''Enemies'': Only one Cat Unit within range will be hit by this Enemy's attacks.
+|-
+| [[File:Zukan icon21.png|center]]
+| ''Cats'': キャラクターの攻撃範囲内にいる敵キャラクター１体にダメージを与えます。
+''Enemies'': 敵キャラクターの攻撃範囲内にいるキャラクター1体にダメージを与えます
+|}
+
+For a list of Cats with Single Attack, see [[:Category:Single Attack Cats|here]].
+
+For a list of enemies with Single Attack, see [[:Category:Single Attack Enemies|here]].
+
+===Area Attack===
+Units with this ability will damage all enemies within range.
+
+{| class="article-table"
+| [[File:Zukan icon17 en.png|center]]
+| ''Cats'': All units within the unit's set attack field will take damage from its strikes.
+''Enemies'': All Cat Units within the enemy's set attack field take damage from its strikes.
+|-
+| [[File:Zukan icon17.png|center]]
+| ''Cats'': キャラクターの攻撃範囲内にいる敵キャラクター全てにダメージを与えます
+''Enemies'': 敵キャラクターの攻撃範囲内にいる全てのキャラクターにダメージを与えます
+|}
+
+For a list of Cats with Area Attack, see [[:Category:Area Attack Cats|here]].
+
+For a list of enemies with Area Attack, see [[:Category:Area Attack Enemies|here]].
+
+===Multi-Hit===
+:''This ability was added in [[Nyanko Daisensou|BCJP]] 6.0 and is not shown in the filter.''
+
+This ability lets units perform up to two additional hits during their foreswing. The amount of damage dealt for each hit and when they occur vary among units.
+
+Since the additional hits are all part of the same animation, being knocked back before the final hit can be executed will force the unit to start over from the first hit. Some units have abilities that activate only on certain hits of their attack, such as [[Crazed Moneko (Special Cat)|Crazed Moneko]], who deals 3 attacks in one cycle and only does a [[Critical Hit]] on her last hit.
+
+For multi-hit attackers, the bonus damage from Attack Up [[Talent Orbs|Orbs]] is divided using the same formula as the multi-hit. For example, [[Nobiluga (Uber Rare Cat)|Mystican Pasalan]] has an initial attack stat (i.e. the value at level 1 with no [[Treasure]]s or [[Talents]]) of 2,400, with a multi-hit attack that deals 50% damage on the first hit and 50% on the second hit; the result is that an Attack Up S Orb (initial attack stat x5) would add 6,000 damage to the first hit and 6,000 to the second hit for a total of 12,000 extra damage.
+
+For a full list of Cats with "Multi-Hit", see [[:Category:Multi-Hit Cats|here]].
+
+For a full list of enemies with "Multi-Hit", see [[:Category:Multi-Hit Enemies|here]].
+
+===Long Distance===
+Can either be a '''Single Attack''' or '''Area Attack''', units with this ability have a set area that damages enemies within when attacking. They have a minimum effective range in the positives and cannot harm any enemies closer to them, but they may hit further than their standing range too, making them much more effective at clearing the way. For example, [[Nerd Cat (Super Rare Cat)|Nerd Cat]] stands at 1,200 range but may hit enemies up to 1,500 range away.
+
+When reaching the enemy base, Long Distance will stop at the minimum effective range rather than attack range. Therefore, when reaching the enemy base, single-target units with Long Distance will only be able to hit said base, unless an enemy is perfectly aligned with the base, in which case it strikes one of them at random.
+
+Some characters, such as [[Casaurian Ahirujo]] and [[Elder Beast Naala (Special Cat)|Naala]], have a minimum effective range of 1. While this doesn't matter much due to all units having at least 100 standing range, this also gives them a blind spot should an opposing unit clip into their hitbox, and they will stand dangerously close to the opposing side's base, leaving them open to all sorts of attacks.
+
+Note that while the ability's icon says "Long-Range", long range and Long Distance are two separate concepts, and not every character with one has the other. [[Asiluga (Uber Rare Cat)|Assassinlan Pasalan]] has a high range stat (1,250), but lacks Long Distance, while [[J.J. Jackrabbit]] has Long Distance, but a low range stat (150) and average maximum LD range (250).
+
+To better understand how this ability functions, see [[Hitbox]].
+
+{| class="article-table"
+| [[File:Zukan icon18 en.png|center]]
+| ''Cats'': Units at long distance will receive damage, but attacks may miss units at closer range.
+''Enemies'': Enemy attacks strike Cat units at long distance, but may miss units at closer range.
+|-
+| [[File:Zukan icon18.png|center]]
+| ''Cats'': より遠方の敵を攻撃できるが近くの敵に攻撃が当たりません
+''Enemies'': より遠方のキャラクターに攻撃できるが近くのキャラクターに攻撃が当たりません
+|}
+
+For a list of Cats with the "Long Distance" ability, see [[:Category:Long Distance Cats|here]].
+
+For a list of enemies with the "Long Distance" ability, see [[:Category:Long Distance Enemies|here]].
+
+===Omni Strike===
+:''This ability was added in [[Version 6.10 Update|Version 6.10]].''
+Also known as '''Omnistrike''' or '''Omni-Strike''', this ability is similar to Long Distance, but the minimum effective range is always negative (or 0) instead; the maximum effective range still varies based on the unit, which can give them a form of "piercing range" without a blind spot. Cat Units rarely have such a luxury, so for them Omni Strike is primarily used for hitting [[:Category:Zombie Enemies|Zombies]] that burrow past them; the caveat is that units with Omni Strike can only damage enemies behind them if a target ahead is within their attack range for them to attack.
+
+All Cats and almost all enemies with Omni Strike currently use Area Attacks, except rare cases like [[Mega Baa Baa]] and [[Balrog (Enemy)]].
+
+Some units, such as [[Baby Garu (Uber Rare Cat)|Mighty Aegis Garu]] and [[Masked Okame]], have less than -320 inner range (320 is the size of a hitbox), causing them to have a blind spot within their hitbox where they cannot damage opposing units that somehow clip inside, notably Zombies, warped Cats, or very fast units clipping a knocked back opponent.
+
+When close to the enemy base, units with this ability will stop at their maximum effective range instead of their standing range (if a unit has a Multi-Hit attack with varying ranges, this will always be based on the hit with the least max range of all the hits). A great example of this is [[Cat God the Great (Special Cat)|Cat God the Great]], whose extremely long-ranged Omni Strikes can be used to cheese short-length stages while being safe in the back.
+
+To better understand how this ability functions, see [[Hitbox]].
+
+{| class="article-table"
+| [[File:Zukan icon28 en.png|80px|center]]
+| ''Cats'': Attacks enemies both ahead and behind unit in a wide area.
+''Enemies'': Enemy attacks Cat Units both ahead and behind Enemy in a wide area.
+|-
+| [[File:Zukan icon28.png|center]]
+| ''Cats'': 自身の前方から後方まで広い範囲にいる敵を攻撃できます
+''Enemies'': 敵キャラクターの前方から後方まで広い範囲にいるキャラクターを攻撃できます
+|}
+
+For a list of Cats with "Omni Strike", see [[:Category:Omni Strike Cats|here]].
+
+For a list of enemies with "Omni Strike", see [[:Category:Omni Strike Enemies|here]].
+
+==Trait-targeting Abilities==
+Abilities in this section are listed next to '''Effect''' (効果, ''Kōka'') in the filter - with the exception of Toxic and Drain, which aren't listed there at all. They only affect indicated enemy types (targets), which vary depending on the unit. The Curse effect disables all abilities in this section.
+
+Trait-targeting abilities used by cats with multiple targeted traits do not stack against multi-traited enemies such as [[Shy Boy]] and [[Bears Be Back]]. If the [[Fruit Treasures]] are not at an equal amount when used against such enemies (e.g., [[Blood Fruit]] at 100% and [[Sky Fruit]] at 200% against a [[:Category:Red Enemies|Red]]/[[:Category:Floating Enemies|Floating]] enemy), the Fruit Treasure with a higher % will take priority.
+
+Trait-targeting abilities that affect "all enemies" (e.g., [[Asiluga (Uber Rare Cat)|Asilan Pasalan]]'s Slow) do not work against [[:Category:Typeless Enemies|Typeless]], [[:Category:Witch Enemies|Witch]] and [[:Category:EVA Angel Enemies|EVA Angel]] enemies, which can't be "targeted" by these abilities in the same way as standard types like [[:Category:Traitless Enemies|Traitless]] and Red.
+
+===Weaken===
+Cats with this ability can decrease specific types of enemies' attack power, while enemies will weaken all cats. Effectiveness, duration and chance vary among units, with weakening units to 50% of their base attack power being the most common effect. The [[Fruit Treasures]] increase the duration of the effect against certain enemy traits by 20%. Although the icon for Weaken overrides the one for Strengthen, strengthened units under Weaken will still get the damage boost.
+
+This ability is affected by '''"Weaken" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon01.png|center]]
+| ''Cats'': Indicated enemy types will have their attack power reduced for a set period.
+''Enemies'': Targeted Cats will have their attack power reduced for a set period.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターの攻撃力を一定時間下げる事ができます
+''Enemies'': キャラクターの攻撃力を一定時間下げます
+|}
+
+For a list of Cats with the "Weaken" ability, see [[:Category:Cats with Weaken ability|here]].
+
+For a list of enemies with the "Weaken" ability, see [[:Category:Enemies with Weaken ability|here]].
+
+===Freeze===
+Also known as '''Stop''', units with this ability can freeze enemies of specific types in place for a time, stopping both movement and attack animations. Although the icon for Freeze overrides the one for Slow, this effect does '''not''' prohibit the application of status effects. Freeze does '''not''' stop a unit's "Time Between Attacks" timer, only active attack animations. The activation chance and effect duration vary among units. The [[Fruit Treasures]] increase the duration of the effect against certain enemy traits by 20%.
+
+This ability is affected by '''"Freeze" Cat Combos'''.
+
+The Thunderbolt [[Cat Cannon]] can freeze all enemies. The Holy Blast [[Cat Cannon]] has this effect against all [[:Category:Zombie Enemies|Zombies]].
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon03.png|center]]
+| ''Cats'': Indicated enemy types will become unable to move for a set amount of time.
+''Enemies'': Targeted Cats become unable to move temporarily.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターの動きを一定時間止める事ができます
+''Enemies'': キャラクターの動きを一定時間止めます
+|}
+
+For a list of Cats with the "Freeze" ability, see [[:Category:Cats with Freeze ability|here]].
+
+For a list of enemies with the "Freeze" ability, see [[:Category:Enemies with Freeze ability|here]].
+
+===Slow===
+Units with this ability can slow enemies of specific types down to a speed value of 0.5 (7.5 range per second, 0.25 range per frame) temporarily. It has no effect against those with 0 speed, like [[Package Doge]]. Although the icon for Freeze overrides the one for Slow, units that are frozen can still be inflicted by Slow, and existing Slow duration is not overwritten. The [[Fruit Treasures]] increase the duration of the effect against certain enemy traits by 20%.
+
+This ability is affected by '''"Slow" Cat Combos'''.
+
+The Slow Beam [[Cat Cannon|Cannon]] also has this effect.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon04.png|center]]
+| ''Cats'': Indicated enemy types will have their speed reduced for a set amount of time.
+''Enemies'': Movement speed of Targeted Cats is temporarily reduced.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターの移動速度を一定時間下げる事ができます
+''Enemies'': キャラクターの移動速度を一定時間下げます
+|}
+
+For a list of Cats with the "Slow" ability, see [[:Category:Cats with Slow ability|here]].
+
+For a list of enemies with the "Slow" ability, see [[:Category:Enemies with Slow ability|here]].
+
+===Attacks Only===
+Cats with this ability will only hit bases and enemies of the specified type, and will not attack if there aren't suitable targets. When Cursed, they will only attack enemy bases, since they are counted as [[:Category:Typeless Enemies|Typeless]] enemies. If said unit can generate a [[Surge Attack]] and hits a suitable enemy, the Surge will still damage all enemies.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon08.png|center]]
+| Attacks by this unit will only cause damage to a specific type of enemy target.
+|-
+| ターゲットとなる敵キャラクターにのみ攻撃を行う事ができます
+|}
+
+For a list of Cats with the "Attacks Only" ability, see [[:Category:Focused Target Cats|here]].
+
+===Strong Against===
+Sometimes called '''Strong''', units with this ability will inflict 1.5x damage and only take 0.5x damage from specific enemy traits. The [[Fruit Treasures]] increase the damage bonus to 1.8x and reduce the damage penalty to 0.4x.
+
+This ability is affected by '''"Strong" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon09.png|center]]
+| Indicated enemy types will take extra damage, with damage received from that type also reduced.
+|-
+| ターゲットとなる敵キャラクターに与えるダメージが上がり、受けるダメージが軽減されます
+|}
+
+For a list of Cats with the "Strong Against" ability, see [[:Category:Cats with Strong ability|here]].
+
+===Resistant===
+Also known as '''Tough''', units with this ability take only 1/4 damage against specific enemy traits. The [[Fruit Treasures]] reduce it to 1/5 damage taken.
+
+This ability is affected by '''"Resistant" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon10.png|center]]
+| Damage received from indicated enemy|types will be reduced significantly.
+|-
+| ターゲットとなる敵キャラクターから,受けるダメージを大幅に軽減します
+|}
+
+For a list of Cats with the "Resistant" ability, see [[:Category:Cats with Resistant ability|here]].
+
+===Insanely Tough===
+Cat Units with this ability take only 1/6 of an enemy's total damage, making them incredibly durable against the type of enemy listed. The [[Fruit Treasures]] reduce the damage taken from certain enemy types to 1/7, but no Combos or [[Talent Orbs]] affect it.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon30.png|center]]
+| Reduces damage taken from target enemies|by an incredible amount.
+|-
+| ターゲットとなる敵キャラクターから受けるダメージを超大幅に軽減します
+|}
+
+For a list of Cats with the "Insanely Tough" ability, see [[:Category:Cats with Insanely Tough ability|here]].
+
+===Massive Damage===
+Units with this ability will inflict 3x damage to specific enemy traits. The [[Fruit Treasures]] increase the effect against certain enemy traits to 4x damage.
+
+This ability is affected by '''"Massive Damage" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon12.png|center]]
+| Indicated enemy types will take much more damage from unit attacks.
+|-
+| ターゲットとなる敵キャラクターに与えるダメージが大幅に上がります
+|}
+
+For a list of Cats with the "Massive Damage" ability, see [[:Category:Cats with Massive Damage ability|here]].
+
+===Insane Damage===
+Units with this ability will inflict 5x damage to certain types of enemies, making their attacks devastating against said targets. The [[Fruit Treasures]] increase the effect against certain enemy types to 6x damage, but no Combos or [[Talent Orbs]] affect it.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon31.png|center]]
+| Massively increases damage to target enemies by an incredible amount.
+|-
+| ターゲットとなる敵キャラクターに与えるダメージが超大幅に上がります
+|}
+
+For a list of Cats with the "Insane Damage" ability, see [[:Category:Cats with Insane Damage ability|here]]
+
+===Knockback===
+Units with this ability can push enemies of specific traits back, while enemies will push back all cats. The ability has a set chance to activate and varies between units. This effect is completely separate from the "''Knockback''" caused by %HP loss (or "''Stagger''" in technical terms), as well as flinching caused by the default [[Cat Cannon]], Holy Blast and Sniper the Cat. It will also be overwritten by said "''Knockback''" ("''Stagger''") effect if both are caused by the same attack.
+
+The animation of a knockback lasts for 11 frames, and units don't have a hitbox for the duration of it. The default knockback distance is 165 distance and the [[Fruit Treasures]] increase the knockback distance by up to 30% (214.5), while [[:Category:Sage Enemies|Sages]]' resistance reduces it by 70%. By contrast, damage-based knockbacks have 24f immunity and 345 distance, default [[Cat Cannon]]/[[Sniper the Cat]] knockbacks have 11f immunity and 55 distance, and boss shockwave knockbacks have 47f immunity and approximately 735 distance.
+
+This ability is affected by '''"Knockback" Cat Combos'''.
+
+The Breakerblast Cannon has this effect as well.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon13.png|center]]
+| ''Cats'': Unit has a set chance to push indicated enemy types back towards their base.
+''Enemies'': Attacks have a chance to push back Cat units.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターを一定確率で遠くへふっとばします
+''Enemies'': キャラクターを一定確率で遠くへふっとばします
+|}
+
+For a list of Cats with the "Knockback" ability, see [[:Category:Cats with Knockback ability|here]].
+
+For a list of enemies with the "Knockback" ability, see [[:Category:Enemies with Knockback ability|here]].
+
+===Warp===
+An ability exclusive to enemies despite appearing in the Cat Guide's filter. Depending on the success chance and attack type of the enemy, one or a group of Cats that get hit will disappear from the battlefield for a specific amount of time - provided they do not flinch or perish from the attack - and reappear a specific distance ahead or behind their original position. The duration and distance vary depending on the enemy; as of [[Version 15.2 Update|15.2]], [[Everlord Wanwan]] has both the highest warp distance (2000) and longest abduction time (66.67s). Cats being warped still count toward the Cat Deploy Limit. A unit with Sage Slayer that is warped by a [[Sage]] enemy will have their warp timer reduced by 70%, although warp distance isn't affected.
+
+Since knockback takes priority over warp, units with very high knockback counts such as [[Gummy Cat (Special Cat)|Gummy Cat]] and [[Aku Researcher (Rare Cat)|Aku Researcher]] will not be warped under most circumstances.
+
+{| class="article-table"
+| rowspan="2" |[[File:Warp.png|80px|center]]
+| ''Cats'': Attacks may cause enemies to be Warped.
+''Enemies'': Cat units struck by enemy attacks may be Warped.
+|-
+| ''Cats'': 敵キャラクターをワープさせます
+''Enemies'': キャラクターをワープさせます
+|}
+
+For a list of all Enemies with the "Warp" ability, see [[:Category:Enemies with Warp ability|here]].
+
+===Curse===
+:''This ability was added in [[Version 7.0 Update|Version 7.0]].''
+Units with this ability have a chance to Curse enemies of specific traits, with the duration varying based on the unit. This effect completely nullifies the vast majority of the target's special abilities (if any) until the Curse ends, including '''Weaken''', '''Freeze''', '''Slow''', '''Attacks Only''', '''Strong Against''', '''Resistant''', '''Insanely Tough''', '''Massive Damage''', '''Insane Damage''', '''Knockback''', '''Dodge Attack''', '''Warp''', '''Curse''' (ironically), '''Toxic''' and '''Drain'''. [[Talent Orbs]] and abilities that aren't limited by trait target (Critical, Money Up, Zombie Killer etc.) are not subject to this. Since this ability functions by removing trait targets from Cat units, Cats with the "Target Only" ability will '''only''' attack enemy bases. The [[Fruit Treasures]] increase the duration of the effect against certain enemy traits by 20%.
+
+Curse is applied after damage, meaning the initial hit from a Cursing enemy will not ignore defensive abilities like Resistant. For example, [[Miko Mitama (Uber Rare Cat)|Miko Mitama]] will take reduced damage from [[Relic Bun-Bun]] the first time it hits her, then take full damage from subsequent attacks due to losing her [[:Category:Relic Enemies|Relic]] Resistance.
+
+Cursed units will display a small colored flame icon beside them to indicate that they have been afflicted with a Curse; green on Cats, yellow on enemies.
+
+The Curseblast Cannon also has this effect.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon36.png|center]]
+| ''Cats'': Enemy cannot inflict negative status effects for a short time.
+''Enemies'': Cat unit cannot inflict negative status effects for a short time.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターの「効果」を一定時間封じる事ができます
+''Enemies'': ターゲットとなるキャラクターの「効果」を一定時間封じます
+|}
+
+For a list of Cats with the "Curse" ability, see [[:Category:Cats with Curse ability|here]].
+
+For a list of enemies with the "Curse" ability, see [[:Category:Enemies with Curse ability|here]].
+
+===Dodge Attack===
+:''This ability was added in [[Version 8.9 Update|Version 8.9]].''
+Cats with this ability have a chance to take no damage from an enemy of a specific type and become immune to attacks from all targeted types for a set amount of time thereafter, while enemies will simply dodge any attack and become immune to all damage sources. When a unit successfully dodges an attack, a small yellow shield icon will briefly appear beside them, which disappears after their immunity ends. If a unit is hit by multiple opposing units on the same frame, the game will check each hit in unit spawn order until Dodge is triggered. Any damage from checks that failed to trigger Dodge will still be taken, but any checks made after Dodge triggers will be nullified. This can cause a unit to take damage and possibly die to a targeted enemy despite Dodge triggering. Dodge may also activate from [[Wave Attack|Waves]], [[Surge Attack|Surges]], and [[Explosion|Explosions]] that they are immune to, despite not taking damage from the attack. The [[Fruit Treasures]] increase the duration of the effect against certain enemy traits by 20%.
+
+The Behemoth Slayer ability also has this effect, but does not target enemies by trait, instead protecting the unit from [[:Category:Behemoth Enemies|Behemoths]] when it activates. Since Behemoth Slayer is not considered a trait-specific ability, it isn't affected by Curse like the normal Dodge Attack.
+
+Every second copy of a unit deployed with a Dodge Attack [[Talent Orbs|Talent Orb]] has a 1-10% chance to dodge attacks from all enemies for 1 second, including non-standard types like [[:Category:Typeless Enemies|Typeless]], [[:Category:Witch Enemies|Witch]] and [[:Category:EVA Angel Enemies|EVA Angel]]. Units with pre-existing Dodge Attack abilities will have both theirs and the Orb's as entirely separate abilities.
+
+[[:Category:Cats with Conjure ability|Units]] with the [[Special Abilities#Conjure|Conjure]] ability can spawn a kamikaze unit once per cycle, which despawns after attacking, but has 100% chance to dodge all attacks. This ensures it cannot perish to enemy fire and will always function properly.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon33.png|center]]
+| ''Cats'': Temporarily avoids all damage from attacks from the target enemy type.
+''Enemies'': Temporarily avoids all damage from attacks from the target Cat Unit type.
+|-
+| ''Cats'': ターゲットとなる敵キャラクターから一定時間ダメージを受けなくなります
+''Enemies'': ターゲットとなるキャラクターから一定時間ダメージを受けなくなります
+|}
+
+For a list of Cats with the "Dodge Attack" ability, see [[:Category:Cats with Dodge Attack ability|here]].
+
+As of [[Version 15.2 Update|15.2]], only two enemies have this ability, them being [[MikuDoge]] & [[Li'l Doge]].
+
+===Toxic===
+:''This ability was added in [[Version 9.1 Update|Version 9.1]].''
+This ability is currently exclusive to enemies, but can be disabled by Curse like a trait-targeting ability. Enemies with this ability have a set chance to do a Toxic attack, indicated by the attack producing a purple splatter effect and a unique sound effect. Toxic attacks deal additional bonus damage equal to a certain percentage of their target's maximum HP along with the enemies' base damage as well, which varies depending on the enemy. Toxic damage bypasses the Metal ability and other damage-reducing abilities such as Resistant, but has no effect on bases.
+
+Although the player does not have access to this ability, the Holy Blast Cannon exhibits a similar effect on Zombies, as it also deals damage based on their maximum HP.
+
+{| class="article-table"
+| rowspan="2" |[[File:Toxic.png|80px|center]]
+| Deals damage to a Cat unit relative to its max health.
+|-
+| キャラクターの最大体力に応じた割合ダメージを与えます
+|}
+
+For a list of enemies with the "Toxic" ability, see [[:Category:Enemies with Toxic ability|here]].
+
+===Drain===
+:''This ability was added in [[Version 15.3 Update|Version 15.3]]''.
+Exclusive to enemies, an enemy with the Drain ability's attacks have a set chance to increase the target's ongoing cooldown by a listed percentage of its current cooldown, delaying the time until they can be redeployed. The effect stacks additively if the attack hits multiple of the same cat; for instance, if two of the same cat are hit by an attack with a Drain effect of 50%, their cooldown progress will be fully regressed. The ability is indicated by the attack producing a blue vortex effect and a unique sound effect.
+
+Cats that are currently available to deploy (i.e., not on cooldown) will not be affected.
+
+As of [[Version 15.6 Update|15.6]], only two enemies have this ability, them being [[Sage of Selection Darvin]] & [[Marquis Clionius]].
+
+{| class="article-table"
+| rowspan="2" |[[File:CooldownReset.png|80px|center]]
+| Being attacked by this unit extends target unit type cooldowns by a set percentage.
+|-
+| キャラクターの生産時間が割合で延長されます
+|}
+
+==Neutral Abilities==
+Abilities in this section are listed next to '''Ability''' (能力, ''Nōryoku'') in the filter - excluding enemy-specific abilities. Neutral abilities work against '''all''' enemy types when applicable (with the exceptions of Metal Killer, Colossus Slayer, Behemoth Slayer, Sage Slayer, Witch Killer and EVA Angel Killer, which do not "target" them in the same way as Effects), and therefore are not disabled by Curse.
+
+===Strengthen===
+Also known as '''Attack Up''', units with this ability will receive an attack power boost once their health drops to a specified amount, which persists until death. Although the icon for Weaken overrides the one for Strengthen, strengthened units under Weaken will still deal increased damage. Using [[The Cat God (Special Cat)|The Cat God]]'s Healing Oasis Miracle will deactivate the ability until the unit reaches the specified health threshold again.
+
+This ability is affected by '''"Strengthen" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon02.png|center]]
+| ''Cats'': After this unit's health falls below a set amount, it's attacks grow much stronger.
+''Enemies'': After their health falls below a set amount, this enemy's attacks grow much stronger.
+|-
+| ''Cats'': この能力を持ったキャラクターの体力が一定以下になると、攻撃力が上がります
+''Enemies'': この能力を持った敵キャラクターの体力が一定以下になると、攻撃力が上がります
+|}
+
+For a list of Cats with the "Strengthen" ability, see [[:Category:Cats with Strengthen ability|here]].
+
+For a list of enemies with the "Strengthen" ability, see [[:Category:Enemies with Strengthen ability|here]].
+
+===Survive===
+Also known as '''Survives''', units with this ability have a set chance to survive a single lethal strike. When this activates, the unit is knocked back with 1 HP left, indicated by a flashing muscle man symbol. Using [[The Cat God (Special Cat)|The Cat God]]'s Healing Oasis Miracle will not reset the ability.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon05.png|center]]
+| ''Cats'': After this unit's health falls below zero, it may heal itself by a small amount.
+''Enemies'': After their health falls below zero, this enemy may heal itself by a small amount.
+|-
+| ''Cats'': キャラクターの体力が無くなる攻撃を受けた時に一定確率で一度だけ倒されずに持ちこたえます
+''Enemies'': 敵キャラクターの体力が無くなる攻撃を受けた時に一定確率で一度だけ倒れずに持ちこたえます
+|}
+
+For a list of Cats with the "Survive" ability, see [[:Category:Lethal Strike Resistant Cats|here]].
+
+For a list of enemies with the "Survive" ability, see [[:Category:Lethal Strike Resistant Enemies|here]].
+
+===Base Destroyer===
+Any unit with this ability inflicts 4x damage to the opposing base.
+
+[[Warlock and Pierre (Uber Rare Cat)|Warlock and Pierre]] is the first and currently the only Cat Unit to have this ability in the mobile version, however in the removed [[Minna de Nyanko Daisensou|PC version]], [[Honda Tadakatsu (PC Uber Rare Cat)|Honda Tadakatsu]] had the ability as well.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon06.png|center]]
+| ''Cats'': If this unit is attacking an enemy Base, its attacks will do much more damage.
+''Enemies'': This enemy's attack damage inflicted on the Cat Base is greatly increased.
+|-
+| ''Cats'': 敵城を攻撃した時に与えるダメージが大きく上がります
+''Enemies'': にゃんこ城を攻撃した時に与えるダメージが大きく上がります
+|}
+
+For a list of enemies with the "Base Destroyer" ability, see [[:Category:Base Destroyer Enemies|here]].
+
+===Critical===
+Units with this ability can do a [[Critical Hit]], which is indicated by producing a burst of yellow stars with a unique sound effect. Critical Hits inflict 2x damage on all targets and ignore the "'''Metal'''" ability that reduces all damage taken to 1.
+
+This ability is affected by '''"Critical Chance" Cat Combos'''.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon07.png|center]]
+| ''Cats'': Attacks by this unit have a set chance of extra damage and can hurt Metal enemies.
+''Enemies'': This enemy's attacks have a set chance to inflict increased damage, and ignore Metal Cats' protection against standard damage.
+|-
+| ''Cats'': 一定確率で通常より高いダメージの攻撃を放ち、「メタルな敵」に対して通常ダメージを与えます
+''Enemies'': 一定確率で通常より高いダメージの攻撃を放ち、「メタル」能力を持つキャラクターに通常ダメージを与えます
+|}
+
+For a list of Cats with the "Critical Hit" ability, see [[:Category:Critical Hit Cats|here]].
+
+For a list of enemies with the "Critical Hit" ability, see [[:Category:Critical Hit Enemies|here]].
+
+===Burrow===
+:''This ability was added in [[Version 5.6 Update|Version 5.6]] and is not shown in the filter.''
+An ability exclusive to [[:Category:Zombie Enemies|Zombie Enemies]]. Enemies with this ability will burrow underground when a Cat enters their range. Before going underground, enemies will perform a brief animation which leaves them vulnerable; if knocked back during said animation, their burrow will be canceled.
+
+Underground enemies are invulnerable until they resurface, which happens after reaching the [[Cat Base]] or a certain distance depending on the enemy.
+
+Most Zombies can only burrow '''once''', others never, but [[The Thrillerz]] can do this '''twice''', while [[Miss Haka]] and [[Big Sal]] can burrow '''as many times as they please'''. Since enemies set as bosses will immediately start an attack if a Cat Unit is within their range when they spawn, Zombie bosses that spawn under such conditions will first attack rather than burrowing, even Miss Haka and Big Sal.
+
+As of [[Version 15.0 Update|15.0]], [[Znache]] and [[Zir Zeal]] have the longest burrow distance '''(1500)''', while [[Zroco]] has the shortest '''(375)'''.
+
+''The Holy Blast [[Cat Cannon]] can damage underground enemies and force them to resurface immediately.''
+
+For a list of enemies with the "Burrow" ability, see [[:Category:Enemies with Burrow ability|here]].
+
+===Revive===
+:''This ability was added in Version 5.6 and is not shown in the filter.''
+This ability is exclusive to certain [[:Category:Zombie Enemies|Zombie Enemies]], and allows them to come back to life after a set amount of time. Upon death, enemies that can ''still'' revive will not drop any money, and will leave behind a purple puddle with a bone and skull to indicate where they will respawn. The puddle is harmless and cannot be hit or targeted by units without the Soulstrike ability, but still counts towards the enemy limit. Enemies with this ability have varying revival time, revive limit and remaining %HP after respawn. Any status effects inflicted are also passed on when the enemy does revive, although this is only apparent on those with very short revival delays or if a Soulstrike unit that has such abilities attacks the Zombie. Immunities carry over to Zombies' remains (e.g., the [[Ototo Corps#Breakerblast|Breakerblast Cannon]] cannot push back the remains of knockback-immune Zombies).
+
+As of [[Version 15.0 Update|15.0]], [[Death Angel Z-Onel]] has the shortest revival time '''(0.5s)''', while [[Formicidaean Ariant]] has the longest '''(24s)'''. Most enemies respawn with either '''50%''' or '''100%''' HP, except for [[Inumusha]], [[Big Peng Z]] and [[Daboo of the Dead]], which respawn with '''25%''', '''10%''' and '''10%''' HP respectively.
+
+For a list of enemies with the "Revive" ability, see [[:Category:Enemies with Revive ability|here]].
+
+===Metal===
+Units with this ability take only 1 damage per hit. '''Toxic''' attacks, [[Critical Hit]]s and [[The Cat God (Special Cat)|The Cat God]]'s Wrath of God miracle ignore this ability.
+
+[[Metal Cat (Super Rare Cat)|Metal Cat]], [[Glass Cat (Rare Cat)|Glass Cat]] and the [[Ototo Corps#Iron Wall Cat|Iron Wall Cat]] are currently the only Cat Units to be Metal, while all [[:Category:Metal Enemies|Metal Enemies]] have this ability.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon15.png|center]]
+| Damage from most attacks is reduced significantly, but the unit will remain vulnerable to Critical strikes.
+|-
+| いかなる攻撃もダメージを最小に食い止めますがクリティカル攻撃に弱いです
+|}
+
+For a list of enemies with the "Metal" ability, see [[:Category:Metal Enemies|here]].
+
+===Zombie Killer===
+:''This ability was added in Version 5.6.''
+A [[:Category:Zombie Enemies|Zombie]] won't revive if a Zombie Killer does the final blow, which is indicated by a blue flash with a unique sound cue. The visual and sound effects from this ability will be present even if a Zombie can't revive anymore. Most [[:Category:Anti-Zombie Cats|anti-Zombies]] have this ability, which is completely appropriate as some powerful Zombie enemies have infinite revives.
+
+The Holy Blast [[Cat Cannon]] also has this ability.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon25.png|center]]
+| Units with this ability can prevent Zombie enemies from reviving.
+|-
+| この能力を持つキャラクターがゾンビ属性の敵にトドメをさすと蘇生を防ぐことができます
+|}
+
+For a list of Cats with the "Zombie Killer" ability, see [[:Category:Zombie Killer Cats|here]].
+
+===Metal Killer===
+:''This ability was added in [[Version 13.3 Update|Version 13.3]]''
+Units with this ability will take off a set percentage of a [[:Category:Metal Enemies|Metal]] enemy's current health with every attack (similar to the [[Ototo Corps|Waterblast Cat Cannon]]) in addition to whatever damage it would have dealt normally (unless a Critical Hit also occurs, the attack itself still does only 1 damage), with successive hits leading to diminishing returns. In the case that multiple Metal Killer units hit a Metal enemy on the same frame, the effect stacks multiplicatively (Ex: 2 hits with 10% Metal Killer will deal 19% current HP). This effect is indicated by a burst of green stars.
+
+Prior to [[Version 13.4 Update|Version 13.4]], Metal Killer instead stacked additively when multiple units hit a Metal enemy on the same frame, allowing a sufficiently large stack of Metal Killers to instantly eliminate it.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon47.png|center]]
+| Deals damage to Metal enemies relative to the target enemy's remaining health.
+|-
+| メタルな敵に対する攻撃成功時、敵の現在体力に応じた割合ダメージを与えることができます
+|}
+
+For a full list of Cats with the "Metal Killer" ability, see [[:Category:Metal Killer Cats|here]].
+
+===Soulstrike===
+:''This ability was added in [[Version 11.3 Update|Version 11.3]].''
+Units with this ability can detect and attack [[:Category:Zombie Enemies|Zombie Enemies]] that are temporarily dead. The Zombies' remains are treated as having the same amount of health that they would revive with (i.e., a fallen [[Zoge]] is treated as having 50% of his HP, while Daboo of the Dead has 10%), and any damage dealt to them will carry over if they revive. All units with this ability also have Zombie Killer (except for [[Talents|Talented]] [[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]]), so it's only useful for cleaning up corpses left behind by non-Zombie Killers, especially those with infinite revives which non-Zombie Killers have no hopes of eliminating on their own. Should a Soulstrike unit without Zombie Killer land the final hit on a Zombie corpse that has infinite revives, it will simply create a new corpse.
+
+The Holy Blast Cannon and the Breakerblast Cannon were both given this ability in [[Version 11.6 Update|Version 11.6]].
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon41 HQ.png|80px|center]]
+| Attacks can deliver damage to temporarily "dead" Zombie enemies.
+|-
+| 仮死状態のゾンビ属性の敵に攻撃することができます
+|}
+
+For a list of Cats with the "Soulstrike" ability, see [[:Category:Soulstrike Cats|here]].
+
+===Barrier===
+:''This ability was added in [[Version 6.5 Update|Version 6.5]].''
+A [[Barrier]] is a defensive ability exclusive to certain [[:Category:Starred Alien Enemies|Starred Aliens]]. Enemies with Barriers are protected by a red, rhombus-shaped crystal which fully blocks all attacks that are weaker than its limit, and can only be normally broken by one blow with power greater than its limit. An animation of the Barrier materializing and flashing is shown when an attack of insufficient strength hits the Barrier, and another one of the Barrier cracking and falling apart when it breaks. When a Barrier is destroyed, the attack that broke it is still considered blocked and has no effect on the unit, unless the attack was from a Barrier Breaker. Attacks of insufficient strength cannot affect the protected unit in any way, including debuffs that the attack would have inflicted.
+
+Each enemy with this ability has a different Barrier limit. As of [[Version 15.0 Update|15.0]], [[Youcan]] and [[UltraBaaBaa]] are tied for the toughest Barrier limit, at 266,000, while [[Corporal Weyland]] has the lowest at 2,500. The Barrier includes damage-related effects during damage calculation, such as Massive Damage, Savage Blow, etc, although any effects with visual effects will not show them.
+
+The health of Barriers, unlike that of [[Shield]]s, is '''fixed''' and doesn't change with strength magnification.
+
+{| class="article-table"
+| rowspan="2" |[[File:Barrier.png|80px|center]]
+| Creates a Barrier preventing attack damage and effects. Destroyed with Barrier Breaker or damage.
+|-
+| ダメージと妨害の効果を受けないバリアを張りますバリアブレイカーや耐久値を超える一撃を受けると壊れます
+|}
+
+For a list of enemies with the "Barrier" ability, see [[:Category:Enemies with Barriers|here]].
+
+===Aku Shield===
+:''This ability was added in [[Version 10.8 Update|Version 10.8]].''
+This ability gives certain [[:Category:Aku Enemies|Aku Enemies]] a [[Shield]]. Superficially similar to Barriers, enemies with Shields are protected by a blue, eye-shaped rune which functions as additional HP; a Shield absorbs all incoming damage in place of the enemy, and will be broken when its HP is completely depleted. An animation of the Shield materializing and flashing is shown when an attack hits the Shield, and another one of the Shield cracking and falling apart indicates when it breaks. When a Shield is destroyed, any excess damage and other effects from the attack that broke it will be completely negated, unless the attack was from a Shield Piercer. While an enemy's Shield is active, attacks cannot damage or affect the protected unit in any way, including debuffs the attack would have inflicted.
+
+Shields also regenerate with a specific percentage of their maximum HP when their users suffer a damage-based knockback, unless it dies in that hit. Every enemy has a different maximum Shield HP and regeneration percentage upon knockback; unlike Barriers, Shield HP also scales proportionately to enemy strength magnifications.
+
+{| class="article-table"
+| rowspan="2" |[[File:Shield.png|80px|center]]
+| Creates a Shield preventing attack damage and effects. Destroyed with Shield Piercing or damage.
+|-
+| ダメージと妨害の効果を受けない悪魔シールドを張りますシールドブレイカーや耐久値の無くなる攻撃を受けると壊れます
+|}
+
+For a list of enemies with the "Shield" ability, see [[:Category:Enemies with Shields|here]].
+
+===Barrier Breaker===
+:''This ability was added in Version 6.5.''
+The counter ability for [[Barrier]]s. Cats with this ability can randomly destroy any Barrier, even ones for which their raw attack would never be enough. This is indicated by a unique animation where the Barrier shatters violently as opposed to cracking apart when normally destroyed. If a Barrier Breaker unit manages to break a Barrier, the attack that destroyed the Barrier will deal full damage to the enemy and can inflict relevant effects. Some Cats have a 100% chance to break Barriers, like [[Fencer Cat (Super Rare Cat)|Fencer Cat]], while others only have a chance to do so.
+
+Barrier Breaker has no effect against the [[Base Barrier]]s that protect enemy bases in stages such as [[Anniversary/11 1/2 Year|Disaster in the Wan Wan Kingdom]], which can only be destroyed by defeating the boss linked to them.
+
+The Breakerblast Cannon also causes this effect and has a 100% chance of doing so.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon26.png|center]]
+| Has a chance to nullify enemy barriers and deliver huge damage upon break.
+|-
+| バリアを持つ敵を攻撃すると一定確率でバリアを破壊し破壊時の攻撃でダメージも与えます
+|}
+
+For a list of Cats with the "Barrier Breaker" ability, see [[:Category:Barrier Breaker Cats|here]].
+
+===Shield Piercing===
+:''This ability was added in [[Version 10.8 Update|Version 10.8]].''
+The counter ability for [[Shield]]s. Units with this ability have a chance to instantly destroy Shields regardless of their attack power and deal their normal attack and effects to said enemy, indicated by a unique animation where the Shield shatters violently as opposed to cracking apart when normally destroyed. This does not block Shields from regenerating for applicable enemies.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon39.png|center]]
+| Attacks have set chance to nullify Aku Shields and deliver huge damage.
+|-
+| 悪魔シールドを持つ敵を攻撃すると一定確率で悪魔シールドを破壊し破壊時の攻撃でダメージも与えます
+|}
+
+For a list of Cats with the "Shield Piercing" ability, see [[:Category:Shield Piercing Cats|here]].
+
+===Savage Blow===
+:''This ability was added in [[Version 8.8 Update|Version 8.8]].''
+This ability is similar to [[Critical Hit]], giving the unit a set chance to perform a "Savage Blow" that deals extra damage, indicated by the attack producing a burst of red sparks and a unique sound effect similar to a whip crack. Unlike Critical Hits, however, Savage Blows do not ignore Metal units' ability of "one hit = 1 damage." The damage increase can vary depending on the unit, but all current examples of this ability have a 3x damage multiplier except for [[Malevolent Jamiera Cat]] and [[Possessed Silver Nyanko Ranger]], who both deal 6x damage.
+
+[[Narita Kaihime (Uber Rare Cat)|Narita Kaihime]] is the first unit to have this ability, while [[Akane Tendo (Enemy)|Akane Tendo]] was the first enemy to have it.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon32.png|center]]
+| ''Cats'': Set chance to deal a large amount of extra damage.
+''Enemies'': Set chance to increase attack damage greatly.
+|-
+| ''Cats'': 一定確率で通常より高いダメージの攻撃を放ちます
+''Enemies'': 一定確率で通常より高いダメージの攻撃を放ちます
+|}
+
+For a list of Cats with the "Savage Blow" ability, see [[:Category:Savage Blow Cats|here]].
+
+For a list of enemies with the "Savage Blow" ability, see [[:Category:Savage Blow Enemies|here]].
+
+===Money Up===
+Also known as '''Extra Bounties''', units with this ability double the amount of money gained from enemies they defeat. Contrary to the description, Money Up affects all enemies and cannot be disabled by Curse.
+
+Bounty Up [[Cat Combo]]s have a similar effect that applies to all cats.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon11.png|center]]
+| Money rewards from defeating indicated enemy types will be increased.
+|-
+| この能力を持つキャラクターが敵を倒した時に通常より多くのお金をもらえます
+|}
+
+For a list of Cats with the "Money Up" ability, see [[:Category:Cats with Money Up ability|here]].
+
+===Wave Attack===
+Also known as '''Wave''', units with this ability can create [[Wave Attack]]s, but only when their attack connects. See the Wave Attack article for more information.
+
+The waves are ''pink'' when emitted by cats and ''blue'' by enemies. Wave Attacks can inherit most other properties of the normal attack (namely abilities), but will never hit bases. Units with '''Immune to Waves''', '''Wave Shield''' or '''Resist Wave''' abilities receive no or less damage from Waves.
+
+The standard Cat Cannon unleashes a Wave Attack.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon14.png|center]]
+| ''Cats'': Attacks will strike all enemies in range, delivering extra damage from the energy wave released.
+''Enemies'': Attacks strike all Cat units in range, with wave energy delivering extra damage.
+|-
+| ''Cats'': 攻撃成功時、範囲内にいる全ての敵に追加ダメージを与える波動を放つ事ができます
+''Enemies'': 攻撃成功時、範囲内にいる全てのキャラクターに追加ダメージを与える波動を放ちます
+|}
+
+For a list of Cats with the "Wave Attack" ability, see [[:Category:Wave Attack Cats|here]].
+
+For a list of enemies with the "Wave Attack" ability, see [[:Category:Wave Attack Enemies|here]].
+
+===Mini-Wave===
+:''This ability was added in [[Version 10.1 Update|Version 10.1]].''
+Units with this ability can create smaller [[Wave Attack]]s, but only when their attack connects. Mini-Waves share most properties with regular waves, but they travel at double the speed and only carry 20% of the original attack's damage. Units with '''Immune to Waves''', '''Wave Shield''' or '''Resist Wave''' abilities receive no or less damage from Mini-Waves.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon38.png|center]]
+| ''Cats'': Successful attacks may deliver extra damage to enemies within range as a small Wave strike.
+''Enemies'': Successful attacks may deliver extra damage to Cats within range as a small Wave strike.
+|-
+| ''Cats'': 攻撃成功時、範囲内にいるすべての敵に追加ダメージを与える小さい波動を放つ事ができます
+''Enemies'': 攻撃成功時、範囲内にいる全てのキャラクターに追加ダメージを与える小さい波動を放ちます
+|}
+
+For a list of Cats with the "Mini-Wave" ability, see [[:Category:Mini-Wave Cats|here]].
+
+For a list of enemies with the "Mini-Wave" ability, see [[:Category:Mini-Wave Enemies|here]]
+
+===Surge Attacks===
+:''This ability was added in [[Version 9.2 Update|Version 9.2]].''
+Also known as '''Surge''', a [[Surge Attack]] is a long-distance, lingering attack that generates randomly in a given area when an attack connects. When the unit lands a hit, it has a chance to release a large, geyser-like blast which deals the same damage as the initial attack every 20f. There are different parameters which establish where the Surge Attack spawns and how long it lasts:
+*Level of the Surge Attack determines how long it will linger on the field for. A Lv.1 Surge lasts for 20f; each level increases the duration by 20f and allows the Surge to hit the same target one more time.
+*Area of effect: Every unit with this ability has a designated area where a Surge Attack can appear; this value is independent from the attack range and will determine the minimum and maximum range in which the attack can appear, covering about 200px.
+
+Despite looking similar, Surge Attacks are completely different from [[Wave Attack]]s; Immune to Waves, Wave Shield and Resist Wave will not protect against them, but '''Immune to Surge''' and '''Resist Surge''' do. Many [[:Category:Animated Enemy Bases|Animated Bases]], which don't take Wave damage, will usually be harmed by Surges as they were not retroactively given Surge Immunity.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon34.png|center]]
+| ''Cats'': Successful attacks deal extra damage to random sections in their attack area.
+''Enemies'': Successful attacks deal extra damage to random sections of their attack area.
+|-
+| ''Cats'': 攻撃成功時、ランダムな場所に追加ダメージを与える烈波を放つ事ができます
+''Enemies'': 攻撃成功時、ランダムな場所に追加ダメージを与える烈波を放ちます
+|}
+
+For a list of Cats with the "Surge Attacks" ability, see [[:Category:Surge Attack Cats|here]].
+
+For a list of enemies with the "Surge Attacks" ability, see [[:Category:Surge Attack Enemies|here]].
+
+===Mini-Surge===
+:''This ability was added in [[Version 12.3 Update|Version 12.3]].''
+Units with this ability can create smaller [[Surge Attack]]s, but only when their attack connects. Mini-Surges share most properties with regular Surge Attacks, but they only carry 20% of the original attack's damage. Units with the '''Immune to Surge''' or '''Resist Surge''' abilities receive no or less damage from Mini-Surges.
+
+[[King of Doom Phono (Uber Rare Cat)|King of Doom Phono]] is the first [[Cat Units|Cat Unit]] to have this ability.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon43.png|center]]
+| ''Cats'': Successful attacks release a small Surge that delivers extra damage to a random point.
+''Enemies'': Successful attacks release a small Surge that delivers extra damage to a random point.
+|-
+| ''Cats'': 攻撃成功時、ランダムな場所に追加ダメージを与える小さい烈波を放つ事ができます
+''Enemies'': 攻撃成功時、ランダムな場所に追加ダメージを与える小さい烈波を放ちます
+|}
+
+For a list of Cats with the "Mini-Surge" ability, see [[:Category:Mini-Surge Cats|here]].
+
+For a list of enemies with the "Mini-Surge" ability, see [[:Category:Mini-Surge Enemies|here]].
+
+===Death Surge===
+Death Surge is an ability exclusive to certain [[:Category:Aku Enemies|Aku Enemies]]. Units with this ability have a set chance to spawn a Surge Attack when killed. Visually, this is represented by a unique Aku soul instead of a regular white soul emerging. Like any Surge, the Death Surge has a specific level and spawn area depending on the enemy. However, it is not affected by any Weaken or Curse that may have been applied before their creator's demise as these effects are immediately cleansed upon the unit's death.
+
+{| class="article-table"
+| rowspan="2" |[[File:DeathSurge.png|80px|center]]
+| This enemy may unleash a Surge attack upon death.
+|-
+| 敵キャラクターが倒された時に一定確率で烈波を放ちます
+|}
+
+For a list of enemies with the "Death Surge" ability, see [[:Category:Death Surge Enemies|here]].
+
+===Counter-Surge===
+:''This ability was added in [[Version 12.4 Update|Version 12.4]].''
+Counter-Surge is an ability that allows certain units to create their own Surge Attacks whenever a Surge hits them. If the same Surge hits multiple times, it triggers a counter only once, but if multiple surges from the same multi-hit attack hit, all will result in a counter. Visually, this is represented by a one-eyed soul with a colored aura (blue for cats, pink for enemies) appearing above the user, jittering for a moment, and firing off a Surge from its eye before returning to the user's body, taking a total of 1.7 seconds to execute. The Surge's level, type (Mini or normal) and spawn range are inherited from the attack that triggered it, while damage, debuffs and other effects come from enemy itself; when used by multi-hit characters like [[Kappy Kawano]], the damage is equal to the first hit of their attack. Unlike with Death Surge, Weaken and Curse remain fully effective
+
+Note that units with Counter-Surge are still vulnerable to Surges, as they must be hit directly by a Surge generated from a normal attack for activation and not a duped Surge, so the ability can't loop. For example, if an enemy with a [[Shield]] and Counter-Surge gets hit by a Surge that does not punch through its Shield and damage it, the enemy won't dupe the Surge. Likewise, if an enemy with Counter-Surge dupes a Surge and hits a cat unit with the same ability, the latter won't return fire by spawning another Surge even if the duped Surge damages it. If a unit has both Surge Immune and Counter-Surge, such as when equipping a Single Counter-Surge [[Talent Orbs|Talent Orb]] on a unit with Surge Immune, Counter-Surge doesn't function at all.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon44.png|center]]
+| ''Cats'': When struck by a Surge Attack from an enemy, strikes back with a Surge Attack of its own.
+''Enemies'': When struck by Cat's Surge Attack, this enemy strikes back with a Surge Attack of its own.
+|-
+| ''Cats'': 敵からの烈波攻撃でダメージを受けた時敵に烈波攻撃を放ち返します
+''Enemies'': キャラクターの烈波攻撃でダメージを受けた時キャラクターに烈波攻撃を放ち返します
+|}
+
+For a list of Cats with the "Counter-Surge" ability, see [[:Category:Counter-Surge Cats|here]].
+
+For a list of enemies with the "Counter-Surge" ability, see [[:Category:Counter-Surge Enemies|here]].
+
+===Explosion===
+:''This ability was added in [[Version 13.7 Update|Version 13.7]].''
+Units with this ability can create an [[Explosion]] - a [[Wave Attack|Wave]]-like effect which deals damage in a three-part blast that expands left and right. The initial blast deals 100% of the user's attack power as damage, the two that appear adjacent to the initial blast deal 70% each, and the two that appear next to those deal 40%. Explosions have a fixed spawn point that varies from unit to unit; the range they cover is 150 for the first blast and 100 for the others.
+
+Like Surge Attacks, most [[:Category:Animated Enemy Bases|Animated Bases]] which won't take Wave damage are not retroactively given Explosion Immunity and can be damaged by them.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon48.png|center]]
+| ''Cats'': Unleashes a damaging explosion which spreads to the left and right of a successful attack.
+''Enemies'': Unleashes a damaging explosion which spreads to the left and right of a successful attack.
+|-
+| ''Cats'': 攻撃成功時、左右に広がりながら追加ダメージを与える爆波を放つ事ができます
+''Enemies'': 攻撃成功時、左右に広がりながら追加ダメージを与える爆波を放ちます
+|}
+
+For a list of Cats with the "Explosion" ability, see [[:Category:Explosion Cats|here]].
+
+For a list of Enemies with the "Explosion" ability, see [[:Category:Explosion Enemies|here]].
+
+===Wave Shield===
+:''This ability was added in [[Version 5.6 Update|Version 5.6]].''
+Units with this ability not only have immunity to [[Wave Attack]] damage, but will also cancel the Wave Attack on contact. Any units behind will not be harmed by the Wave Attack.
+
+Upon touching a Wave Attack, units with this ability will briefly display a red hexagonal barrier in front of them to indicate that the waves have been stopped.
+
+Since Wave Attacks only deal damage when a wave blast reaches its ''hit frame'', if the blast is nullified before so, units that are in the front but within the area of said blast will also not be harmed.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon24.png|center]]
+| This Unit can negate Wave Attacks and protect units behind them from their effect.
+|-
+| このキャラクターより後ろへ波動が届かないように波動を打ち消し、波動ダメージも無効化します
+|}
+
+For a list of Cats with the "Wave Shield" ability, see [[:Category:Wave Shield Cats|here]].
+
+===Conjure===
+:''This ability was added in [[Version 13.1 Update|Version 13.1]].''
+15 frames after deploying a unit with this ability, the text "Conjure!" will appear on its icon. The player can tap on the icon again to "Conjure" a spirit at no cost. This can be done only once per recharge cycle. Once that is done, both the Conjured spirit and parent unit can no longer be deployed unless the latter has been destroyed, although the parent unit's cooldown continues normally. As such, each specific Conjurer may only have up to one instance of themselves present at all times except via certain [[Otherworld Colosseum]] rulesets which spawn multiple copies of a unit at once. In this case, triggering Conjure will activate the ability on all copies of the unit currently on the field. If the parent unit is defeated before the spirit could be spawned, the "Conjure!" indicator disappears, and it will not be available until the next cycle. Though every spirit and its effects are unique, most have the same damage (45,900 with all treasures at level 30, scales with unit level, but not Plus Levels), range (800) and attack animation ([[Mamoluga (Uber Rare Cat)#Spirit|Mamoluga's Spirit]] has 1300 range and a different attack animation, [[Squire Luno (Uber Rare Cat)|Squire Luno's Spirit]] has 600 range and 15,300 damage). 
+
+The Conjured spirit is immune to Boss Shockwaves and has a 100% chance to dodge all attacks, including from animated bases and collab-exclusive traits. This ensures that it cannot die and its attack will not be disrupted, as it will despawn after that. This also allows for many cheese strategies to be possible. In addition, the Conjured unit occupies a spot in the Cat Limit and cannot be deployed when it is full.
+
+When Conjured, the spirit appears 150 range behind the Conjurer, with some exceptions. The spirit cannot be Conjured behind the [[Cat Base]] (all units are deployed 100 distance behind the Cat Base), and attempting to do so causes the spirit to spawn exactly at the base. In addition, if the Conjurer is sufficiently close to the enemy base, the spirit will spawn farther behind the Conjurer so that the spirit's range reaches exactly to the enemy base, and will not hit anything behind it. If a Conjurer is in the process of being Warped by an enemy unit, the spirit will spawn based on the Conjurer's last stable position.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon45.png|center]]
+| Tap the icon to summons a spirit that attacks foes. Unit can only be deployed one at a time.
+|-
+| 出撃中にアイコンをタップで敵を攻撃する精霊を召喚します能力の代償としてステージに同時出撃できない特性を持ちます
+|}
+
+For a list of Cats with the "Conjure" ability, see [[:Category:Cats with Conjure ability|here]].
+
+===Shortened Cooldown===
+:''This ability was added in [[Version 15.7 Update|Version 15.7]].''
+On every other deployment of a unit with this ability, a set percentage of their cooldown will be skipped. This skipped portion of the cooldown can still be regressed by enemy Drain effects. This ability cannot stack with its [[Talent Orbs|Talent Orb]] equivalent, as doing so will immediately unequip the Talent Orb and render it unusable.
+{| class="article-table"
+| rowspan="2" |[[File:Recoverspeedupability.png|80px|center]]
+| Reduces unit deployment cooldown. Activates every 2 deployments. (Does not stack)
+|-
+| ?
+|}
+
+For a list of Cats with the "Shortened Cooldown" ability, see [[:Category:Cats with Shortened Cooldown ability|here]].
+
+===Colossus Slayer===
+:''This ability was added in [[Version 11.2 Update|Version 11.2]].''
+Units with this ability deal 1.6x damage to and take 0.7x damage from [[:Category:Colossus Enemies|Colossus Enemies]]. These stack with anti-trait abilities, but not with Colossus Slayer [[Talent Orbs]], as all Colossus Slayer Talent Orbs' effects are either equal to or weaker than bonuses provided by the Colossus Slayer ability, causing it to overwrite them in most cases.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon40.png|center]]
+| Increases attack damage and defense versus Colossal enemies.
+|-
+| 超生命体に対して与えるダメージが上がり受けるダメージが軽減されます
+|}
+
+For a list of Cats with the "Colossus Slayer" ability, see [[:Category:Colossus Slayer Cats|here]].
+
+===Behemoth Slayer===
+:''This ability was added in [[Version 11.5 Update|Version 11.5]].''
+Units with this ability deal 2.5x damage to [[:Category:Behemoth Enemies|Behemoth Enemies]], take 0.6x damage from Behemoths and have a set chance to dodge their attacks. These stack with anti-trait abilities.
+
+The dodge effect's chance and duration vary from unit to unit, but is usually a 5% chance to dodge for 1 second. The only current exceptions to this are [[Awa-Odori Cat (Rare Cat)|Gorgeous Groovin' Cat]] (8%), [[Gummy Cat (Special Cat)|Gummy Cat Soda]] (20%), [[Urs & Fenrir (Special Cat)|Awakened Urs]] (30%), and [[Ancient Egg: N112 (Rare Cat)|Cat Egg Pod]] (50%, 2 seconds)
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon42.png|center]]
+| Greatly boosts attack damage and defense vs Behemoths, with a chance to Dodge.
+|-
+| 超獣に対して与えるダメージが大きく上がり受けるダメージが軽減され、たまに攻撃を回避します
+|}
+
+For a list of Cats with the "Behemoth Slayer" ability, see [[:Category:Behemoth Slayer Cats|here]].
+
+===Sage Slayer===
+:''This ability was added in [[Version 13.1 Update|Version 13.1]].''
+Units with this ability deal 1.2x damage against [[:Category:Sage Enemies|Sage Enemies]], take 0.5x damage from Sages, ignore their debuff resistances (-70% duration for Weaken, Freeze, Slow and Curse, -70% push distance for Knockback), and gain 70% resistance to debuffs inflicted by Sages, including Warp (Warp distance is not affected) and Drain but excluding Toxic. The stat multipliers stack with anti-trait abilities and the debuff resistance stacks multiplicatively with existing debuff resist Talents.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon46.png|center]]
+| Increases damage dealt to Sages. Reduces damage received and effects of debuffs. Also negates enemy Sage debuff immunity.
+|-
+| 超賢者に対して与えるダメージが少し上がり受けるダメージと、妨害の効果を軽減しますさらに超賢者の持つ妨害耐性を無効にします
+|}
+
+For a list of Cats with the "Sage Slayer" ability, see [[:Category:Sage Slayer Cats|here]].
+
+===Kamikaze===
+:''This ability has no official name. It was added in [[Version 6.7 Update|Version 6.7]].''
+Units with this ability perish after completing an attack and produce no soul when they are destroyed. Enemies with this ability will not drop any funds unless they are killed by regular damage. On stages with enemy spawns tied to unit death counts, the game will not register Cat unit deaths to this ability either. Such units tend to have high defensive stats or other abilities to ensure their attack will connect properly.
+
+[[:Category:Cats with Conjure ability|Units]] with the [[Special Abilities#Conjure|Conjure]] ability can spawn a kamikaze spirit attached to them once per cycle.
+
+For a list of Cats with the "Kamikaze" ability, see [[:Category:Kamikaze Cats|here]].
+
+For a list of Enemies with the "Kamikaze" ability, see [[:Category:Kamikaze Enemies|here]].
+
+==Immunities==
+Immunities are a subset of neutral abilities. They are listed next to '''Ability''' in the filter, and are not disabled by the Curse effect.
+
+===Immune to Weaken===
+:''This ability was added in [[Version 5.3 Update|Version 5.3]].''
+Units with this ability cannot be weakened by enemies. Upon being hit by an attack that would inflict '''Weaken''', they will briefly display a blue barrier in front of them to indicate that the effect has been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon20.png|center]]
+| ''Cats'': Enemy attacks will not weaken the attacks of this unit.
+''Enemies'': Cat unit attacks will not Weaken the attacks of this enemy.
+|-
+| ''Cats'': 敵キャラクターからの「攻撃力ダウン」効果を受けません
+''Enemies'': キャラクターからの「攻撃力ダウン」効果を受けません
+|}
+
+For a list of Cats with the "Immune to Weaken" ability, see [[:Category:Cats with Weaken Immunity|here]].
+
+For a list of enemies with the "Immune to Weaken" ability, see [[:Category:Enemies with Weaken Immunity|here]].
+
+===Immune to Freeze===
+:''This ability was added in Version 5.3.''
+Units with this ability cannot be stopped by opposing freeze abilities. Upon being hit by an attack that would inflict '''Freeze''', they will briefly display a blue barrier in front of them to indicate that the effect has been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon22.png|center]]
+| ''Cats'': Enemy attacks will not freeze the movement of this unit.
+''Enemies'': Cat unit attacks will not Freeze the movement of this enemy.
+|-
+| ''Cats'': 敵キャラクターからの「動きを止める」効果を受けません
+''Enemies'': キャラクターからの「動きを止める」効果を受けません
+|}
+
+For a list of Cats with the "Immune to Freeze" ability, see [[:Category:Cats with Freeze Immunity|here]].
+
+For a list of enemies with the "Immune to Freeze" ability, see [[:Category:Enemies with Freeze Immunity|here]].
+
+===Immune to Slow===
+:''This ability was added in Version 5.3.''
+Units with this ability cannot be slowed down by enemies. Upon being hit by an attack that would inflict '''Slow''', they will briefly display a blue barrier in front of them to indicate that the effect has been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon23.png|center]]
+| ''Cats'': Enemy attacks will not cause slowdown against this unit.
+''Enemies'': Cat unit attacks will not Slow the movement of this enemy.
+|-
+| ''Cats'': 敵キャラクターからの「動きを遅くする」効果を受けません
+''Enemies'': キャラクターからの「動きを遅くする」効果を受けません
+|}
+
+For a list of Cats with the "Immune to Slow" ability, see [[:Category:Cats with Slow Immunity|here]].
+
+For a list of enemies with the "Immune to Slow" ability, see [[:Category:Enemies with Slow Immunity|here]].
+
+===Immune to Knockback===
+:''This ability was added in Version 5.3.''
+Units with this ability are unaffected by opposing '''Knockback''' abilities. However, this does not prevent then from flinching by health loss, [[Sniper the Cat]], the default Cat Cannon or Zombies hit by Holy Blast. Upon being hit by an attack that would inflict knockback, units with this ability will briefly display a blue barrier in front of them to indicate that the effect has been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon19.png|center]]
+| ''Cats'': Enemy attacks will not cause this unit to be knocked back.
+''Enemies'': Cat unit attacks will not cause this enemy to be Knocked back.
+|-
+| ''Cats'': 敵キャラクターからの「ふっとばす」効果を受けません
+''Enemies'': キャラクターからの「ふっとばす」効果を受けません
+|}
+
+For a list of Cats with the "Immune to Knockback" ability, see [[:Category:Cats with Knockback Immunity|here]].
+
+For a list of enemies with the "Immune to Knockback" ability, see [[:Category:Enemies with Knockback Immunity|here]].
+
+===Immune to Waves===
+:''This ability was added in [[Version 4.6 Update|Version 4.6]].''
+Units with this ability cannot be hit by an opposing [[Wave Attack]], including Mini-Waves. When a wave hits them, these units will display a small shield beside them.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon16.png|center]]
+| ''Cats'': This unit does not take damage from Wave attacks.
+''Enemies'': This enemy does not suffer damage from Wave attacks.
+|-
+| ''Cats'': 敵からの波動攻撃でダメージを受けません
+''Enemies'': キャラクターからの波動攻撃でダメージを受けません
+|}
+
+For a list of Cats with the "Immune to Waves" ability, see [[:Category:Cats with Wave Immunity|here]].
+
+For a list of enemies with the "Immune to Waves" ability, see [[:Category:Enemies with Wave Immunity|here]].
+
+===Immune to Surge===
+:''This ability was added in [[Version 9.5 Update|Version 9.5]].''
+Formerly known as '''Evade Surge''', this ability completely negates [[Surge Attack|Surge]] damage for its user, including Mini-Surges. When hit by a Surge Attack, units with this ability will briefly have a small blue shield icon appear beside them, indicating that they have taken no damage from the Surge.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon37.png|center]]
+| ''Cats'': Does not take Surge damage caused by enemy attacks.
+''Enemies'': This enemy does not take damage from Cat units' Surge attacks.
+|-
+| ''Cats'': 敵からの烈波攻撃でダメージを受けません
+''Enemies'': キャラクターからの烈波攻撃でダメージを受けません
+|}
+
+For a list of Cats with the "Immune to Surge" ability, see [[:Category:Cats with Surge Immunity|here]].
+
+For a list of enemies with the "Immune to Surge" ability, see [[:Category:Enemies with Surge Immunity|here]].
+
+===Immune to Explosions===
+:''This ability was added in [[Version 13.7 Update|Version 13.7]].''
+Units with this ability cannot be hit by an opposing [[Explosion]]. When an Explosion hits them, these units will display a small shield beside them.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon49.png|center]]
+| ''Cats'': Does not take damage from enemy Explosions.
+''Enemies'': Does not take damage from the Explosion effect of attacks.
+|-
+| ''Cats'': 敵からの爆波攻撃でダメージを受けません
+''Enemies'': キャラクターからの爆波攻撃でダメージを受けません
+|}
+
+For a list of Cats with the "Immune to Explosions" ability, see [[:Category:Cats with Explosion Immunity|here]].
+
+For a list of enemies with the "Immune to Explosions" ability, see [[:Category:Enemies with Explosion Immunity|here]].
+
+===Immune to Warp===
+Formerly known as '''Warp Blocker''', units with this ability cannot be warped by enemies. Upon being hit by an attack that would inflict '''Warp''', units with this ability will briefly display a blue barrier in front of them to indicate that the effect had been negated. Despite the fact that there is no way to Warp enemies, several enemies still have this immunity.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon27.png|center]]
+| ''Cats'': Enemy Warp abilities do not affect this unit.
+''Enemies'': Cat Unit Warp abilities do not affect this enemy.
+|-
+| ''Cats'': 敵キャラクターからの「ワープ」効果を受けません
+''Enemies'': キャラクターからの「ワープ」効果を受けません
+|}
+
+For a list of Cats with the "Immune to Warp" ability, see [[:Category:Cats with Warp Immunity|here]].
+
+For a list of enemies with the "Immune to Warp" ability, see [[:Category:Enemies with Warp Immunity|here]].
+
+===Immune to Curse===
+:''This ability was added in [[Version 7.0 Update|Version 7.0]].''
+Also known as '''Curse Immunity''', units with this ability cannot be cursed by enemies. Upon being hit by an attack that would inflict '''Curse''', they will briefly display a blue barrier in front of them to indicate that the effect has been negated.
+
+Most [[:Category:Anti-Relic Cats|anti-Relic units]] have this ability, such as they could function normally even when under fire as almost all [[:Category:Relic Enemies|Relics]] have a 100% curse chance with at least 100% uptime.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon29.png|center]]
+| ''Cats'': Immune to temporary status effects inflicted by enemy Curses.
+''Enemies'': Cat Unit Curse abilities do not affect this enemy.
+|-
+| ''Cats'': 敵キャラクターから一時的に「効果」を封じられる「古代の呪い」を受けません
+''Enemies'': キャラクターからの一時的に「効果」を封じる「呪い」を受けません
+|}
+
+For a list of Cats with the "Immune to Curse" ability, see [[:Category:Cats with Curse Immunity|here]].
+
+For a list of enemies with the "Immune to Curse" ability, see [[:Category:Enemies with Curse Immunity|here]].
+
+===Immune to Toxic===
+:''This ability was added in [[Version 9.3 Update|Version 9.3]].''
+Cats with this ability will not receive Toxic damage. Upon being hit by an attack that would inflict '''Toxic''' damage, cats with this ability will briefly display a blue barrier in front of them to indicate that the effect had been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon35.png|center]]
+| Immune to Toxic effects of enemy attacks!
+|-
+| 敵からの毒撃でダメージを受けません
+|}
+
+For a list of Cats with the "Immune to Toxic" ability, see [[:Category:Cats with Toxic Immunity|here]].
+
+===Immune to Drain===
+:''This ability was added in [[Version 15.6 Update|Version 15.6]].''
+Cats with this ability cannot have their recharge time affected. Upon being hit by an attack that would inflict '''Drain''', cats with this ability will briefly display a blue barrier in front of them to indicate that the effect had been negated.
+
+{| class="article-table"
+| rowspan="2" |[[File:Zukan icon50.png|center]]
+| Immune to status effects inflicted by enemy Drain abilities.
+|-
+| 敵からの攻撃で「遅延」効果を受けません。
+|}
+
+For a list of Cats with the "Immune to Drain" ability, see [[:Category:Cats with Drain Immunity|here]].
+
+===Immune to Boss Shockwave===
+:''This ability has no official name. It was added in [[Version 6.0 Update|Version 6.0]].''
+
+Cats with this ability are unaffected by the global knockback that occurs when a boss enemy spawns.
+
+The [[Ototo Corps#Iron Wall|Iron Wall Cat]], [[Meditation Cat (Special Cat)|Meditation Cat]], [[Mamoluga (Uber Rare Cat)|Mamolan Pasalan]] and Conjured spirits are currently the only units to have this ability.
+
+==Collaboration-exclusive Abilities==
+Collaboration-exclusive abilities do not appear in the filter. None of them are disabled by the Curse effect.
+
+===Witch Killer===
+:''This ability was added in [[Version 5.5 Update|Version 5.5]].''
+Witch Killer is exclusive to units from the [[Puella Magi Madoka Magica Collaboration Event|Madoka Magica Collaboration Event]]. Any unit with this ability deals x5 damage to and takes 1/10 damage from [[:Category:Witch Enemies|Witches]].
+
+This ability is affected by the special '''"[[My Very Best Friend (Combo)|My Very Best Friend]]" Combo''', which multiplies the effects of this ability by 5. While this Combo is active, Witch Killers will inflict '''x25''' damage and only take '''1/50''' damage from Witch enemies.
+
+{| class="article-table"
+| rowspan="2" |[[File:WitchKiller.png|80px|center]]
+| Huge attack and defense boost vs Witch enemies found in Madoka Magica Collab stages.
+|-
+| まどか☆マギカコラボに登場する魔女へ与えるダメージが上がり、受けるダメージが軽減されます
+|}
+
+For a list of Cats with the "Witch Killer" ability, see [[:Category:Witch Killer Cats|here]].
+
+===EVA Angel Killer===
+:''This ability was added in [[Version 6.10 Update|Version 6.10]].''
+EVA Angel Killer is exclusive to units from the [[Neon Genesis Evangelion Collaboration Event]]. Any unit with this ability deals x5 damage to and takes 1/5 damage from [[:Category:EVA Angel Enemies|EVA Angels]].
+
+This ability is affected by the unique '''"[[You Will Find Happiness (Combo)|You Will Find Happiness]]" Combo.''' While this Combo is active, EVA Angel Killers will inflict '''x25''' damage and only take '''1/25''' damage from EVA Angels.
+
+{| class="article-table"
+| rowspan="2" |[[File:Epicability2.png|80px|center]]
+| Delivers extra damage to / takes less damage from Evangelion Collab bosses
+|-
+| エヴァンゲリオンコラボに登場する使徒へ与えるダメージが上がり、受けるダメージが軽減されます
+|}
+
+For a list of Cats with the "EVA Angel Killer" ability, see [[:Category:EVA Angel Killer Cats|here]].
+
+==Talent-exclusive Abilities==
+===Resist===
+A series of partial resistances to negative effects, these are unique to units' Talents. They are weaker versions of the "Immune" abilities, reducing the effect of debuffs by a certain percentage depending on Talent level. The maximum reduction is -50% for knockback distance as well as damage from Waves, Surges and Toxic. The other effects are reduced by up to -70%. If combined with the respective Talent Orb, the effects will additively stack up to a full immunity at 100% resistance.
+*Warp Resistant (currently unused)
+*[[:Category:Resist Weaken Cats|Resist Weaken]]
+*[[:Category:Resist Freeze Cats|Resist Freeze]]
+*[[:Category:Resist Slow Cats|Resist Slow]]
+*[[:Category:Resist Knockback Cats|Resist Knockback]]
+*[[:Category:Resist Wave Cats|Resist Wave]]
+*[[:Category:Resist Curse Cats|Resist Curse]]
+*[[:Category:Resist Toxic Cats|Resistant to Toxic]]
+*[[:Category:Resist Surge Cats|Resist Surge Attack]]
+
+===Stat Enhancements===
+Modifies certain stat parameters by a set value or a percentage, depending on the Talent level.
+*[[:Category:Cats with HP Buff Talent|HP Buff]] (up to +20%, +80% for [[:Category:Special Cats|Special Cats]] unlocked with [[Cat Food]], [[Valkyrie Cat (Special Cat)|Holy Valkyrie Cat]], [[Cat God the Great (Special Cat)|Cat God the Golden]] and [[Filibuster Cat X (Special Cat)|Metafilibuster]])
+*[[:Category:Cats with HP Buff+ Talent|HP Buff+]] (Up to +50% for [[Coppermine (Uber Rare Cat)|Divine Coppermine κ]], or +100% for [[Date Masamune (Uber Rare Cat)|Immortal Masamune]])
+*[[:Category:Cats with Attack Buff Talent|Attack Buff]] (up to +20%, or +80% for Special Cats unlocked with Cat Food, Holy Valkyrie Cat, Cat God the Golden and Metafilibuster)
+*[[:Category:Cats with Attack Buff+ Talent|Attack Buff+]] (currently unused)
+*[[:Category:Cats with Move Speed Up Talent|Move Speed Up]]
+*Improved Knockback (currently unused)
+*[[:Category:Cats with Cost Down Talent|Cost Down]]
+*[[:Category:Cats with Recover Speed Up Talent|Recover Speed Up]]
+*[[:Category:Cats with Attack Frequency Up Talent|Attack Frequency Up]]
+
+==Notes==
+*'''1f (frame) is a 1/30 second, thus 30f is 1 second.'''
+
+{{Gallery|Zukan icon49}}
+
+==Trivia==
+*Prior to [[Version 11.2 Update|Version 11.2]], the abilities and effects in the filter were lumped together into one big block, rather than having them separated by "Abilities" and "Effects" like in later versions.
+**The more organized filter introduced in 11.2 was always present in [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou|YuruGeGe]], making it one of the few YuruGeGe-exclusive features to be added to [[The Battle Cats]].
+*Despite being the oldest enemy type, [[:Category:Traitless Enemies|Traitless]] wasn't shown in the filter until version 11.2.
+**However, from [[Version 8.0 Update|Version 8.0]] to [[Version 11.1 Update|11.1]], an unused "W" (White) icon could be found in the game's files.[[File:White icon.png|thumb|Unused original Traitless icon]]
+*The closest thing to an official name for Multi-Hit is "chain attack" from [[Queen Reika (Uber Rare Cat)|Queen Reika]]'s description in the [[Girls & Monsters: Angels of Terror (Gacha Event)|Girls & Monsters]] event info, or "multi-attack" from [[Crustaceous Scissorex]]' description.
+*The Witch Killer icon was added to [[The Battle Cats|BCEN]]'s files in the same update as BCJP, [[Version 5.5 Update|5.5]], even though BCEN would not receive the [[Puella Magi Madoka Magica Collaboration Event|Madoka Magica Collab]] until June 2019, or nearly 3 years thereafter.
+*Insane Damage, Critical and Savage Blow all had their icons changed in [[Version 8.9 Update|Version 8.9]].
+<gallery>
+OldInsaneDamage.png|Insane Damage icon before 8.9
+OldCritical.png|Critical icon before 8.9
+OldSavageBlow.png|Savage Blow icon before 8.9
+</gallery>
+*All Wave-related abilities had their icons changed in [[Version 12.3 Update|Version 12.3]].
+<gallery>
+Wave Attack.png|Wave Attack icon before 12.3
+Miniwaveability.png|Mini-Wave icon before 12.3
+Wave Shield.png|Wave Shield icon before 12.3
+Immune to Waves.png|Immune to Waves icon before 12.3
+OldResistWave.png|Resist Wave icon before 12.3
+</gallery>
+
+*Many abilities used to have different names:
+**Immune to Waves named Unharmed by Waves until [[Version 8.10 Update|Version 8.10]].
+**Besides Immune to Waves, the "Immune to X" abilities were named "Resist X" until Version 8.10, temporarily overlapping with the Talent-exclusive "Resist Xs" introduced in Version 8.0.
+**Immune to Warp and Immune to Surge were named Warp Blocker and Evade Surge until [[Version 12.4 Update|12.4]].
+***The name Warp Blocker is still used in the descriptions of certain units such as [[Rover Cat (Rare Cat)|Rover Cat]] and in Talent menus such as [[Mr. (Special Cat)|Hyper Mr.]]'s.
+**EVA Angel Killer was named Eva Angel Killer until [[Version 14.7 Update|Version 14.7]].
+**Money Up was named Extra Money until an unknown version.
+*Many abilities were rebalanced or replaced in [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou|YuruGeGe]]:
+**Slow only reduced units' speed by 66%, but also tripled their time between attacks.
+**Curse was replaced by Seal (封印 ''Fūin''), which worked the same, but also disabled Yaba-Yaba (the ability to spawn minions upon defeating an enemy), even though Yaba-Yaba wasn't a trait-targeting ability.
+**[[Barrier]]s were replaced by Forcefields (結界 ''Kekkai''), pentagrams which could only be destroyed by a Forcefield Breaker, not damage, and would be visible at all times, even when not being attacked.
+**[[Wave Attack]]s in YuruGeGe originally didn't inherit special effects. However, this was later changed in an update.
+**[[Surge Attack]]s were replaced by Secret Arts (秘術 ''Hijutsu''), which could have different effects/abilities and damage values from the attack that created them, as well as different designs and animations depending on the unit.
+**Wave Shield only had a set chance to block waves, although the value was still 100% for most units.
+**Burrow was replaced by Shadowization (影化 ''Kage-ka''), which worked the same, but caused its user to disappear into a smoky shadow that could still be seen moving across the ground, making it possible to determine their location before they resurface.
+*Despite being exclusive to enemies, the Warp ability has been displayed in the filter since [[Version 8.0 Update|Version 8.0]].
+**At an unknown date, [[Sunrise Doge]] became the first enemy to be given Immunity to Warp, which effectively changed nothing in regards to normal gameplay.
+*[[Mesocosmocyclone]]'s negative warp enables it to teleport cats behind the enemy base under rare circumstances. [https://youtu.be/N_G5hryrIG8 When this happens], the cats will continue to walk forward until they go off-screen, disappearing from the [[battle]] but still counting towards the Cat Deploy Limit.
+**Due to the nature of binary data, [[wikipedia:Integer Overflow|overflow]] will cause a unit past the enemy base to eventually teleport behind the [[Cat Base]] if left long enough, and eventually return to the fight. This phenomenon is seen in [https://www.youtube.com/watch?v=qdzAifKBYWU this video].
+*The portals created when a unit is being warped resemble the portals from the game ''[[wikipedia:Portal (video game)|Portal]]'' in that the initial portal is orange while the secondary portal is blue.
+*The soul that appears when the Counter-Surge ability activates resembles the top of the [[Surge Base (Enemy Base)|Surge Base]] (which itself is modeled after the [[wikipedia:Monument to the Revolution of the people of Moslavina|Monument to the Revolution of the people of Moslavina]] in Croatia), as well as the boss [[wikia:kirby:0²|0²]] from ''[[wikia:kirby:Kirby 64: The Crystal Shards|Kirby 64: The Crystal Shards]]''.
+*Kamikaze, Omni Strike and Multi-Hit were first introduced in [[Kumanchu Royale]].
+*Surge Attacks, Mini-Surge and [[Explosion]] are the only abilities to have the same descriptions for enemies as they do for cats.
+*Immune to Explosions' enemy description was added in [[Version 13.7 Update|Version 13.7]], but was unused until [[Version 14.3 Update|Version 14.3]], which added [[Baki Hanma (Enemy)|Baki Hanma]].
+*In the files for the [[Enemy Guide]], there is an unused description for an ability named Immune to Damage. The ability has no icon in the files, isn't used by any enemy, and is not the same as Dodge Attack. The exact version it was added in is unknown, but it is placed before Toxic, which indicates it was before [[Version 9.1 Update|Version 9.1]]. In the [[Cat Guide]], the text is replaced by a placeholder.
+:''【Immune to Damage】<br>This enemy does not take attack damage.''
+*As of an unknown version, characters with 0 speed, such as [[Package Doge]], will no longer move forward when slowed.
+*[[Retsu Kaioh (Uber Rare Cat)|Retsu Kaioh]], [[Komori (Uber Rare Cat)|Komori]], [[Juri (Uber Rare Cat)|Juri]] and [[Metal Maiden Koneko (Uber Rare Cat)|Metal Maiden Koneko]] are the only units to have Behemoth Slayer in Normal/Evolved Form rather than gaining it from a [[True Form]], [[Talents|Talent]] or Ultra Talent.
+*Like Surge Attacks, Explosions have a parameter for a range in which they can spawn, but all current Explosion units have the width of this range set to 0.
+*Prior to [[Version 13.4 Update|Version 13.4]], hitting a regenerated Aku Shield except via Shield Pierce would immediately cleanse all debuffs on the enemy regardless of remaining duration. This was presumably a bug.
+
+{{BC Navigation}}
+[[Category:Game Features]]
+[[Category:Special Abilities]]
+{{Nocomment-perf}}

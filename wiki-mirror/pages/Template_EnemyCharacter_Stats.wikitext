@@ -1,0 +1,74 @@
+<onlyinclude><includeonly>{{#ifeq:{{NAMESPACENUMBER}}|0|{{#invoke:Enemy Stats (Old)|cat|{{{Element}}}<!----->}}}}</includeonly>
+<div class="overflow-shadow">
+{|cellpadding="3" cellspacing="1" align="center" class="stats-table" style="width:100%;line-height:normal;font-size:95%;-moz-border-radius:5px;border-radius:5px;border:2px solid #000000; background-color: #000000; box-sizing: border-box;"
+! colspan="7" style="font-size:16px;color:white;background-color:#FF6811;"|'''{{{Enemy}}}'''
+|- class="bg-light4"
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Health'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Attack Power'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Attack Range'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Attack Frequency'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Movement Speed'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Knockback'''
+| style="text-align:center;width:120px;border-bottom:1px solid #000000; border-bottom:1px solid #000000;"|'''Attack Animation'''
+|- class="bg-light3"
+| style="text-align:center;"|{{{Health}}}
+| style="text-align:center;"|{{{Attack Power}}}
+| style="text-align:center;"|{{{Attack Range}}}
+| style="text-align:center;"|{{{Time between attacks}}}
+| style="text-align:center;"|{{{Movement Speed}}}
+| style="text-align:center;"|{{{Knockback}}}
+| style="text-align:center;"|{{{Occurrence}}}
+|- class="bg-light4"
+! colspan="6" style="text-align:center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Special Ability'''
+! colspan="6" style="text-align: center;width:120px;border-bottom:1px solid #000000;border-bottom:1px solid #000000;"|'''Type'''
+|- class="bg-light3"
+| colspan="6" style="text-align:left;"|{{{Ability}}}
+| colspan="1" style="text-align:center;"|{{#invoke:Enemy Stats (Old)|link|{{{Element}}}<!----->}}
+|-
+|}</div></onlyinclude>
+----
+==All Parameters==
+<pre>
+{{EnemyCharacter Stats
+|Enemy =
+|Health =
+|Attack Power =
+|Attack Range =
+|Time between attacks =
+|Movement Speed =
+|Knockback =
+|Occurrence =
+|Ability =
+|Element =
+}}
+</pre>
+
+==Example Usage==
+<pre>
+{{EnemyCharacter Stats
+|Enemy = Doge
+|Health = 90 HP
+|Attack Power = 8 damage<br>(5.11 DPS)
+|Attack Range = 110<br>([[Single Attack]])
+|Time between attacks = 47f <sub>1.57 seconds</sub>
+|Movement Speed = 5
+|Knockback = 3 times
+|Occurrence = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|Ability = -
+|Element = Traitless
+}}
+</pre>
+
+===Gives===
+{{EnemyCharacter Stats
+|Enemy = Doge
+|Health = 90 HP
+|Attack Power = 8 damage<br>(5.11 DPS)
+|Attack Range = 110<br>([[Single Attack]])
+|Time between attacks = 47f <sub>1.57 seconds</sub>
+|Movement Speed = 5
+|Knockback = 3 times
+|Occurrence = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|Ability = -
+|Element = Traitless
+}}

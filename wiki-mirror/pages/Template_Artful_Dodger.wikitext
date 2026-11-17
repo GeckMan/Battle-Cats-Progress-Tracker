@@ -1,0 +1,22 @@
+X% chance to avoid Willpower damage from Traps for Y seconds.<br />
+:'''Skill Specs''':
+:*NN: 100%/3s
+:*RR: 100%/5s
+:*SR: 100%/7s
+:*UR: 100%/9s
+:'''SP Cost''': 82 ~ 53
+<noinclude>[[category:Burgle Cats Skill Data Templates]]
+==Documentation==
+This template is used in the Burgle Cats namespace, along with [[Template:BurgleCatsSkillDetail]] inside a span tag to show the information of a burgle ability.
+
+===Syntax===
+<code><nowiki><span class="burgle-ability-tooltip" data-skillname="{{1}}">{{2}}</span></nowiki></code>
+
+Whereas:
+*<nowiki>{{1}}</nowiki> is the skill name needed to show information of, all possible names are listed in [[:category:Burgle Cats Skill Data Templates]].
+*<nowiki>{{2}}</nowiki> is the content that will be wrapped, when hover over will show a burgle skill's information template.
+===Example===
+Input: <nowiki><code><span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span></code></nowiki>
+
+Output: <span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span>
+</noinclude>

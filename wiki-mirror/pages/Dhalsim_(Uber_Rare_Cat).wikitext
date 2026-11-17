@@ -1,0 +1,130 @@
+:''This article is about the Cat Unit. For the enemy, see [[Dhalsim (Enemy)]].''
+'''Dhalsim''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 516
+|rarity = UR
+|name1 = Dhalsim
+|name2 = Dhalsim CC
+}}
+
+==Evolution==
+Evolves into '''Dhalsim CC''' at level 10.
+
+==Strategy/Usage==
+Dhalsim, at first glance, may appear to have a great niche of crippling [[:Category:Traitless Enemies|Traitless]] enemies, as they are notorious for having tough frontliners such as [[R.Ost]], [[Rain D.]] and [[Otta-smack-u]]. While it is true that he is able to weaken them from a safe range, he's not without competition, primarily being [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]], who has practically the same range as him, and is more spammable on top of having 100% Weaken uptime despite having Single Attack. It doesn't help that Dhalsim's closely spaced multi-hits does little to extent his ability uptime.
+
+Even longer if range is needed, [[Driller Cat (Super Rare Cat)|Driller Cat]] is another superior alternative due to having even more range, a significantly stronger Weaken and also being able to reach 100% uptime through [[Cat Combo]]s in True Form. This means that sadly, if you have Thaumaturge Cat or Driller Cat, you're likely never going to need or want to use Dhalsim. Outside of traitless threats, he is of little to no utility due to having low range and stats.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 516
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni516 f00.png
+|Image2 = Uni516 c00.png
+|Name1 = Dhalsim
+|Desc1 = Joining the fight from Street Fighter V!<br>Mystic who has mastered the arts of yoga.<br>100% Weaken vs Traitless (Area Attack)
+|Name2 = Dhalsim CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Calls upon Agni to command holy fires.<br>100% Weaken vs Traitless (Area Attack)
+|Name1 (JP) = ダルシム (Darushimu, Dalsim)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>ヨーガの奇跡で変幻自在に戦うインドの修行僧<br>属性を持たない敵の攻撃力を必ず下げる(範囲攻撃)
+|Transl1 (JP) = Participate in Street Fighter V!<br>An Indian monk fighting eccentrically with a yoga miracle<br>Always reduce the attack power of enemies without attributes (Range Attack)
+|Name2 (JP) = ダルシムCC (DarushimuCC, DalsimCC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>火神アグニの力を借り幻の炎を自在に操る<br>属性を持たない敵の攻撃力を必ず下げる(範囲攻撃)
+|Transl2 (JP) = Participate in Street Fighter V!<br>Control the phantom flame freely with the help of the Fire God Agni<br>Always reduce the attack power of enemies without attributes (Range Attack)
+|Name1 (TW) = 塔爾錫
+|Desc1 (TW) = 從快打旋風V來參戰！<br>因瑜珈的奇蹟變幻自如的印度修行僧<br>必定讓無屬性敵人攻擊力下降(範圍攻擊)
+|Name2 (TW) = 塔爾錫CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>借火神阿格尼的力量自在操縱幻之炎<br>必定讓無屬性敵人攻擊力下降(範圍攻擊)
+|Name1 (KR) = 달심
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>요가 기술로 자유자재로 싸우는 인도의 수행승<br>속성을 가지지 않은 적의 공격력을 반드시 낮춘다 (범위 공격)
+|Name2 (KR) = 달심CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>불의 신 아그니의 힘을 빌려 불꽃을 자재로 다룬다<br>속성을 가지지 않은 적의 공격력을 반드시 낮춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Dhalsim
+|Normal Base HP = 4200
+|Normal Base AP = 580,580,580
+|Normal Range = 350
+|Normal Foreswing = 8,15,22
+|Normal Attack Cooldown = 173
+|Normal Attack Length = 37
+|Normal Speed = 6
+|Normal KB = 5
+|Normal Cost = 2500
+|Normal Recharge = 3000
+|Normal Attack Type = Area
+|Normal Targets = Traitless
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (9,860 at 8f <sup>0.27s</sup>, 9,860 at 15f <sup>0.5s</sup>, 9,860 at 22f <sup>0.73s</sup>)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub>
+|Evolved Name = Dhalsim CC
+|Evolved Base HP = 4200
+|Evolved Base AP = 580,580,580
+|Evolved Range = 350
+|Evolved Foreswing = 8,15,22
+|Evolved Attack Cooldown = 173
+|Evolved Attack Length = 37
+|Evolved Speed = 6
+|Evolved KB = 5
+|Evolved Cost = 2500
+|Evolved Recharge = 3000
+|Evolved Attack Type = Area
+|Evolved Targets = Traitless
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (9,860 at 8f <sup>0.27s</sup>, 9,860 at 15f <sup>0.5s</sup>, 9,860 at 22f <sup>0.73s</sup>)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,200 HP
+|val-Normal-Attack Power = 1,740 damage<br>(267.69 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 195f <sub>6.5 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Normal-Recharge Time = 100 ~ 91.2 seconds
+|val-Normal-MaxHP = 71,400 HP
+|val-Normal-MaxAttack = 29,580 damage<br>(4,550.77 DPS)
+|val-Evolved-Health = 71,400 HP
+|val-Evolved-Attack Power = 29,580 damage<br>(4,550.77 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 195f <sub>6.5 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Evolved-Recharge Time = 100 ~ 91.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni516 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/517.html
+
+----
+{{CatNav|Blanka|Ken}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Multi-Hit Cats]]

@@ -1,0 +1,140 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Baki Hanma (Enemy)]].''
+'''Baki Hanma''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 789
+|rarity = UR
+|name1 = Baki Hanma
+|name2 = Baki Hanma CC
+}}
+
+==Evolution==
+Evolves into '''Baki Hanma CC''' at level 10.
+
+==Strategy/Usage==
+An interesting unit with a bizarre set of abilities, Baki functions as an [[:Category:Anti-Aku Cats|anti-Aku]] crowd-controller with a 30% chance of [[Shield Piercing]] and a 75% chance to [[Knockback]] Aku enemies. In this respect, he operates similarly to [[Summoner Satoru (Uber Rare Cat)|Devil Hunter Satoru]], but with a far higher attack rate and no [[Long Distance]] attacks. However, he lacks immunity to [[Surge Attack|Surges]] and has an abysmal health pool; the immunities he does have are irrelevant against Aku, [[:Category:Metal Enemies|Metal]] and [[:Category:Zombie Enemies|Zombies]]. While his other abilities are questionable, they do improve his generalist usage—although his [[Critical Hit]] chance is still too low to be used optimally on Metals.
+
+All in all, Baki is not well-suited to tackle and grapple with Aku enemies. While his generalist damage is quite good, especially at 450 range and with such a short cooldown, it faces heavy competition in lategame from the likes of [[Urs & Fenrir (Special Cat)|Urs & Minka]], with their ability to [[Weaken]] all enemies. Even with his high range he is extraordinarily fragile, vulnerable to enemies that even lightly graze him, which makes him risky to use against Zombies.
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 789
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni789 f00.png
+|Image2 = Uni789 c00.png
+|Name1 = Baki Hanma
+|Desc1 = Joining from Baki! Young Champion of the<br>Underground Arena who has won many fierce<br>battles. May Knockback Aku and Pierce Shields.
+|Name2 = Baki Hanma CC
+|Desc2 = Joining from Baki! Desires strength to<br>defeat his father Yujiro Hanma.<br>May Knockback Aku and Pierce Shields.
+|Name1 (JP) = 範馬刃牙 (Hanma Baki, Baki Hanna)
+|Desc1 (JP) = 「範馬刃牙」から参戦ッッ！数多の死闘を<br>くぐり抜けた地下闘技場の若きチャンピオン<br>たまに悪魔をふっとばし悪魔シールドを貫く
+|Transl1 (JP) = Joining the war from "Baki Hanma"!!! Young Champion of the<br>Underground Arena who has survived many fierce battles<br>Occasionally knocks back Devils and pierces Devil Shields
+|Name2 (JP) = 範馬刃牙CC (Hanma Baki CC, Baki Hanma CC)
+|Desc2 (JP) = 「範馬刃牙」から参戦ッッ！<br>その強さへの探求は父親・範馬勇次郎に勝つために。<br>たまに悪魔をふっとばし悪魔シールドを貫く
+|Transl2 (JP) = Joining the war from "Baki Hanma"!!!<br>Pursues strength to defeat his father, Yuujirou Hanma.<br>Occasionally knocks back Devils and pierces Devil Shields
+|Name1 (TW) = 範馬刃牙
+|Desc1 (TW) = 從「範馬刃牙」來參戰！在地下競技場的<br>多次死鬥脫穎而出的年輕冠軍<br>有時候能打飛惡魔並破壞惡魔盾
+|Name2 (TW) = 範馬刃牙CC
+|Desc2 (TW) = 從「範馬刃牙」來參戰！為了打倒父親<br>範馬勇次郎而不斷尋求變強的方法<br>有時候能打飛惡魔並破壞惡魔盾
+|Name1 (KR) = 한마 바키
+|Desc1 (KR) = 「한마 바키」에서 참전! 수많은 사투를<br>거친 지하투기장의 젊은 챔피언<br>가끔 악마를 날려버리고 악마 쉴드를 뚫어버린다
+|Name2 (KR) = 한마 바키CC
+|Desc2 (KR) = 「한마 바키」에서 참전! 강함에 대한 추구는<br>아버지 한마 유지로를 이기기 위함이다<br>가끔 악마를 날려버리고 악마 쉴드를 뚫어버린다
+}}
+
+==Cost==
+*Chapter 1: 3,100¢
+*Chapter 2: 4,650¢
+*Chapter 3: 6,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Baki Hanma
+|Normal Base HP = 2300
+|Normal Base AP = 650
+|Normal Range = 450
+|Normal Foreswing = 7
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 63
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 3100
+|Normal Recharge = 2600
+|Normal Attack Type = Area
+|Normal Targets = Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 75% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Shield Piercing}} 30% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Slow|Immune to Explosions}} [[Immune to Slow]] and [[Immune to Explosions|Explosions]]
+|Evolved Name = Baki Hanma CC
+|Evolved Base HP = 2600
+|Evolved Base AP = 812
+|Evolved Range = 450
+|Evolved Foreswing = 7
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 63
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 3100
+|Evolved Recharge = 2600
+|Evolved Attack Type = Area
+|Evolved Targets = Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 75% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Shield Piercing}} 30% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Slow|Immune to Explosions}} [[Immune to Slow]] and [[Immune to Explosions|Explosions]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,300 HP
+|val-Normal-Attack Power = 650 damage<br>(309.52 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 7f <sup>0.23s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Normal-Recharge Time = 86.67 ~ 77.87 seconds
+|val-Normal-MaxHP = 39,100 HP
+|val-Normal-MaxAttack = 11,050 damage<br>(5,261.9 DPS)
+|val-Evolved-Health = 44,200 HP
+|val-Evolved-Attack Power = 13,805 damage<br>(6,573.81 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 7f <sup>0.23s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Evolved-Recharge Time = 86.67 ~ 77.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni789 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/790.html
+
+----
+{{CatNav|Stealth Cat|Retsu Kaioh}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Explosion Immunity]]
+[[Category:Critical Hit Cats]]
+[[Category:Shield Piercing Cats]]
+[[Category:Zombie Killer Cats]]

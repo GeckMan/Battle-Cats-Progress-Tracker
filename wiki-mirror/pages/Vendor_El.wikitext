@@ -1,0 +1,78 @@
+'''Vendor El''' (売り子エル ''Uriko Eru'', '''Vendor El''') is a [[:Category:Traitless Enemies|Traitless]] enemy introduced in [[A Cultured Festival]]. It was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Enemy Info
+|name = Vendor El
+|image = E 282.png
+|appearance = [[A Cultured Festival]]<br>
+[[Megaton Blast (Insane)|Event All-Stars Grand Jubilee!]]<br>
+[[Infernal Tower/Floor 4|Infernal Tower - Floor 4]]
+|money drop = 480¢ - 1,896¢
+}}
+
+==Enemy==
+A bigger [[Chickful A]] wearing a carnival fryer. It has a faster attack rate than its normal counterpart, but it is much weaker and has less range. It is also slightly faster and has only two knockbacks instead of three. Unlike Chickful A, it is not an [[:Category:Angel Enemies|Angel]] enemy. It also has a 50% chance to reduce your cats' attack power by 50%. Not too much of a problem alone, but can be a huge threat when stacked and buffed. Bring cats that outrange it such as [[Salon Cat (Rare Cat)|Paris Cat]] to deal damage to it, and use [[:Category:Nuker-class Cats|nukers]] such as [[Bahamut Cat (Special Cat)|Bahamut Cat]] to deal with huge hordes.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*Event All-Stars Grand Jubilee!: [[Megaton Blast (Insane)]] (300%)
+*[[A Cultured Festival]]:
+**[[Burnt to Perfection]] (50%)
+**[[Not Quite Organic]] (100%)
+**[[Always In the Red]] (300%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2016 Debut]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 4|Floor 4]] (200%)
+*[[Traitless Citadel]]: [[Traitless Citadel/Floor 3|Floor 3]] (50%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 3~4|Grateful XP Lv.3]] (200%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 3~4|Grateful XP Lv.4]] (300%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[A Cultured Festival#A Cultured Festival 2|A Cultured Festival]]:
+**[[Burnt to Perfection (Old)|Burnt to Perfection]] (50%)
+**[[Not Quite Organic (Old)|Not Quite Organic]] (100%)
+**[[Always In the Red (Old)|Always In the Red]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Vendor El
+|Health = 96000
+|Attack Power = 3600
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 61
+|Movement Speed = 10
+|Knockback = 2
+|Foreswing = 32
+|Backswing = 29
+|Ability = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] Cat Units to 50% for 150f <sub>5 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+282 e.png|Vendor El's spritesheet
+Chickafryattackanimation.gif|Vendor El's attack animation
+IdleChickaFry.gif|Vendor El's walking animation
+</gallery>
+
+==Trivia==
+*Prior to [[Version 13.3 Update|Version 13.3]], when all [[:Category:Event Enemies|event enemies]] were added to the [[Enemy Guide]], Vendor El was named "Chicka Fry" in the event poster for [[A Cultured Festival]].
+*Vendor El's name is derived from the Japanese name of [[Chickful A]], Angel Hioko<u>el</u> (天使ヒオコエル ''Tenshi Hiokoeru'').
+
+==Reference==
+*https://battlecats-db.com/enemy/284.html
+
+----
+{{EnemyNav|Festival Sign Girl|Dummy}}
+----
+
+{{Enemies}}
+[[Category:Event Enemies]]
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Weaken ability]]

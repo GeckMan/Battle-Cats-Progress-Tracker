@@ -1,0 +1,141 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Toy Machine Cat''' is a [[:Category:Special Cats|Special Cat]] that could be unlocked by inputting 3 [[Main Menu#Presents For Friends Invitation|serial codes]] from The Battle Cats [[wikipedia:Gashapon|gashapon]] machine which are only found in Japan. It was added in [[Version 2.0 Update#Version 2.0.5 Update|Version 2.0.5]]. It is now unobtainable due to the fact that serial codes can no longer be input to the game. This unit is, however, obtainable on the [[The Battle Cats Unite!|Nintendo Switch version]] when rolling the [[Cat Capsule]] 30 times then winning any stage in-game.
+
+{{Cat Info
+|ID = 62
+|rarity = EX
+|name1 = Toy Machine Cat
+|name2 = Vendor Cat
+}}
+
+==Evolution==
+Evolves into '''Vendor Cat''' at level 10.
+
+==Strategy/Usage==
+Like most special meatshields, this one isn't very good. Low damage and low health, tries to act like [[Tank Cat (Normal Cat)|Eraser Cat]] but has half the stats. Therefore, it should only should be used as a filler meatshield when there aren't any others, as 75円 meatshields generally perform better.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 62
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni062 f00.png
+|Image2 = Uni062 c00.png
+|Name1 = Toy Machine Cat
+|Desc1 = Plastic capsule toy machine.<br>A Cat that got into a tank (Area attack).<br>Shielded, so a bit more sturdy than Tank Cat.
+|Name2 = Vendor Cat
+|Desc2 = Plastic capsule toy machine.<br>Longer Cat that got into a tank (Area attack).<br>Shielded, so a bit more sturdy than Tank Cat.
+|Name1 (JP) = ネコポン (neko pon)
+|Desc1 (JP) = プラスチック製のガシャポンマシンに<br>入りこんだタンクネコ(範囲攻撃)<br>覆われている分、タンクネコより少し頑丈
+|Transl1 (JP) = A tank cat that has entered<br>a plastic gashapon machine (Ranged Attack)<br>A little sturdier than a Tank Cat because it's covered
+|Name2 (JP) = ネコポニョン (neko ponyon)
+|Desc2 (JP) = プラスチック製のガシャポンマシンに<br>入りこんだ少し長めのタンクネコ(範囲攻撃)<br>覆われている分、タンクネコより少し頑丈
+|Transl2 (JP) = Slightly longer tank cat that has entered<br>a plastic gashapon machine (Ranged Attack)<br>A little sturdier than a Tank Cat because it's covered
+|Name1 (TW) = 轉蛋機貓
+|Desc1 (TW) = 鑽進塑膠製轉蛋機的<br>坦克貓（範圍攻擊）<br>被包覆的部位比坦克貓堅硬一點
+|Name2 (TW) = 長型轉蛋機貓
+|Desc2 (TW) = 鑽進塑膠製轉蛋機的<br>長型坦克貓（範圍攻擊）<br>被包覆的部位比坦克貓堅硬一點
+|Name1 (KR) = 고양이퐁
+|Desc1 (KR) = 플라스틱제의 뽑기머신에<br>들어간 탱크 고양이 (범위 공격)<br>캡슐에 들어가 있어 탱크 고양이보다 조금 튼튼
+|Name2 (KR) = 고양이뽀용
+|Desc2 (KR) = 플라스틱제의 뽑기머신에<br>들어간 조금 긴 탱크 고양이 (범위 공격)<br>캡슐에 들어가 있어 탱크 고양이보다 조금 튼튼
+|Name1 (Switch) = Toy Machine Cat
+|Desc1 (Switch) = A Cat that somehow got stuck in a<br>plastic capsule toy machine. (Area Attack).<br>A bit Tougher than Tank Cat.
+|Name2 (Switch) = Vendor Cat
+|Desc2 (Switch) = Taller Cat that got stuck in a<br>plastic capsule toy machine. (Area attack).<br>A big Tougher than Tank Cat.
+}}
+
+==Cost==
+*Chapter 1: 100円
+*Chapter 2: 150円
+*Chapter 3: 200円
+{{Upgrade Cost|MIX
+|0
+|2,500
+|4,000
+|6,000
+|8,500
+|11,500
+|15,000
+|19,000
+|23,500
+|28,500
+|2,600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Toy Machine Cat
+|Normal Base HP = 450
+|Normal Base AP = 10
+|Normal Range = 110
+|Normal Foreswing = 9
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 29
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 100
+|Normal Recharge = 240
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Vendor Cat
+|Evolved Base HP = 450
+|Evolved Base AP = 10
+|Evolved Range = 110
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 29
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 100
+|Evolved Recharge = 240
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50<br>Lv.30<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 10 damage<br>(4.41 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 68f <sub>2.27 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 9f <sup>0.3s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Normal-Recharge Time = 8 ~ 2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 170 damage<br>(75 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 170 damage<br>(75 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 68f <sub>2.27 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 8 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni062 f00}}
+
+==Trivia==
+*Toy Machine Cat is based off of [[wikipedia:Gashapon|Gachapon]] machines, especially since they dispense miniature [[Capsule Cat (Special Cat)|Capsule Cats]] in their Evolved Form.
+
+==Reference==
+*https://battlecats-db.com/unit/063.html
+
+----
+{{CatNav|Sushi Cat|Sports Day Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Area Attack Cats]]

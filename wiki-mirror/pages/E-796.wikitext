@@ -1,0 +1,66 @@
+{{LimitedContent}}
+{{Stub}}
+'''E-796''' (看守帝王ニャンダム, ''Kanshu Teiō Nyandamu'', '''Guard Emperor Nyandam''') is a [[:Category:Red Enemies|Red]] variant of [[Dark Emperor Nyandam]] that appears in [[Anniversary/14th Year|14th Anniversary]] stages. He was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Enemy Info
+|name = E-796
+|image = E 796.png
+|first appearance = ?
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+?
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = E-796
+|Health = 2000000
+|Attack Power = 9500
+|Attack Range = 500
+|Attack Type = Area
+|Time Between Attacks = 183
+|Movement Speed = 3
+|Knockback = 3
+|Foreswing = 104
+|Backswing = 29
+|Ability = {{AbilityIcon|Knockback}} 75% chance to [[Special Abilities#Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Freeze}} 75% chance to [[Special Abilities#Freeze|freeze]] Cat Units for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Slow}} 75% chance to [[Special Abilities#Slow|slow]] Cat Units for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Weaken}} 75% chance to [[Special Abilities#Weaken|weaken]] Cat Units to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Mini-Surge}} 100% chance to create a level 3 [[Surge Attack#Mini-Surge|Mini-Surge]] between 400 and 900 range
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+796 e.png|E-796's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/798.html
+
+----
+{{EnemyNav|E-795|E-797}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Red Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Mini-Surge Enemies]]

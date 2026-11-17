@@ -1,0 +1,106 @@
+'''Great Ape Luza''' (超猿獣ルーザ, ''Chō Enjū Rūza'', '''Super Ape-Beast Luza''') is a [[:Category:Relic Enemies|Relic]]/[[:Category:Behemoth Enemies|Behemoth]] enemy found in [[Humanity Catified]]. It is one of the two enemy versions of [[Ancient Egg: N000 (Special Cat)|Ape Lord Luza]], the other being [[Zero Luza]]. It was added in [[Version 12.0 Update|Version 12.0]].
+
+{{Enemy Info
+|name = Great Ape Luza
+|image = E 628.png
+|first appearance = '''UL''': [[Reign of the Ape Lord|Sub-chapter 48 - Reign of the Ape Lord]]
+|latest appearance = '''UL''': [[Birth of True Man|Sub-chapter 48 - Birth of True Man]]
+|money drop = 5,555¢ - 21,942¢
+}}
+
+==Enemy==
+Great Ape Luza, despite having the exploitable Behemoth attribute, still should not be underestimated. It fires off powerful, far-reaching multi-hits, destroying even the most durable units in a couple of cycles with only a small opening to sneak through. It only has 4 knockbacks, with immunity to [[Wave Attack|waves]] and a lot of health, which makes it all the more difficult, and can be extremely dangerous once the nasty support enemies enter the fray.
+
+==Strategy==
+Great Ape Luza appears in three different stages, each featuring its own challenging set of enemies. However, there are still some units who can work well against this beast in all three. Notably, this enemy is only encountered after beating [[Atonement for Sin]], so the [[True Form]]s of most of the Uncanny Legends units will be quite useful.
+* [[Dogumaru (Special Cat)|Reborn Warrior Doguemon]] can tank Luza quite well with his Relic resistance and Behemoth Slayer, though the other Behemoths fighting alongside Luza can put considerable pressure. His positive matchup against [[Wild Doge]] and [[Cumulus Gallus]] also helps in [[Ape Lord's Revenge]].
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]] can get off a powerful [[Surge Attack]] for free. While the surge does need some luck to land against Luza, it can deal considerable damage, especially at level 40. Luza is not immune to surges, freeze, or knockback, so Doron is especially useful for regaining ground. Doron's surge can also deal considerable damage to supporting enemies provided they aren't immune to surges themselves.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]] has solid use, being strong against Relics with a guaranteed 50% weaken and Behemoth Slayer. Weakening Luza makes it that much easier to handle.
+*[[Idi:N (Special Cat)|Idi:N2]] can be used to deal an immediate burst of damage whenever Luza isn't protected by other enemies. Doron's freeze can create a solid opening for this quick burst of damage. However, Idi:N2 is less consistent than other options as she cannot tank them, resulting in less damage overall.
+*[[Master Uril (Special Cat)|Esoteric Uril]]'s Strong against Relics and Behemoth Slayer allow him to tank several hits from Luza and both abilities allow him to inflict over 25,000 damage per hit at Level 40, and even more with the Surge. In addition, Uril can also Slow and Curse Luza and is quite easy to replace in True Form.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 628
+|Type = Relic/Behemoth
+|Image1 = Enemy icon 628.png
+|Name1 = Great Ape Luza
+|Desc1 = A large ape that has guarded the Sacred Woods<br>since ancient times. Considered the origin of<br>humans. Can stand against Behemoths that<br>wield the Ancient Curse.
+|Name1 (JP) = 超猿獣ルーザ (Chō Enjū Rūza, Super Ape-Beast Luza)
+|Desc1 (JP) = 太古の昔から神樹を守り続けてきた大猿。<br>人類の起源とされる存在であり<br>「古代の呪い」を放つ「超獣」に<br>対抗できる者が勝機を見出すであろう。
+|Transl1 (JP) = A great ape who has been protecting the [[Sacred Forest|divine tree]] since ancient times.<br>It is considered to be the origin of humanity.<br>Those who can stand up to "Super-Beasts" that<br>release "Ancient Curses" have a chance of winning.
+|Name1 (TW) = 超猿獸露薩
+|Desc1 (TW) = 自遠古以來一直守護著神木的巨猿<br>被當作是人類的祖先。<br>針對會使用「古代詛咒」的「超獸」<br>準備好對策的話，或許就能掌握勝機。
+|Name1 (KR) = 초원수 루자
+|Desc1 (KR) = 태곳적부터 신단수를 지켜온 거대 원숭이<br>인류의 기원으로 여겨지는 존재이며<br>「고대의 저주」를 내는 「초수」에게 맞설 수<br>있는 자만이 승기를 잡을 것이다
+}}
+
+==Variants==
+{{Variant
+|original = Great Ape Luza
+|Zero Luza
+|A much stronger variant of Great Ape Luza that is a [[:Category:Colossus Enemies|Colossal]] enemy instead of a Behemoth, with better stats, range, freeze immunity and the ability to strengthen by 100% at 33% health.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 48-6: [[Reign of the Ape Lord]]
+*Stage 48-7: [[Ape Lord's Revenge]]
+*Stage 48-8: [[Birth of True Man]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Great Ape Luza
+|Health = 2500000
+|Attack Power = 90000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 244
+|Movement Speed = 6
+|Knockback = 4
+|Foreswing = 60
+|Backswing = 35
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">45,000</span> at 60f <sup>2s</sup>, <span class="scaled" data-type="ap">45,000</span> at 67f <sup>2.23s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~700 on 2nd hit)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -400~400 on 1st hit)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Element = Relic/Behemoth
+}}
+
+{{UnitViewer|enemy|bg=Bg191.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+628 e.png|Great Ape Luza's spritesheet
+</gallery>
+
+==Trivia==
+*Although it sounds similar to ''loser'', the name Luza (ルーザ) is most likely derived from the Japanese word for monkey (猿 ''saru''), which becomes ''zaru'' in certain compound words due to ''[[wikipedia:Rendaku|rendaku]]''.
+*Since it's a [[:Category:Behemoth Enemies|Behemoth]], Great Ape Luza may have been inspired by ''Monster Hunter Rise: Sunbreak''<nowiki>'</nowiki>s [[wikia:monsterhunter:Garangolm|Garangolm]], a huge, grey-and-green gorilla-like monster associated with nature. Despite trading the Behemoth type for [[:Category:Colossus Enemies|Colossus]], its stronger variant [[Zero Luza]] shows further parallels to Garangolm, including heavily armored arms, eye color when attacking (red), and becoming more dangerous when its health drops below a certain threshold.
+*Great Ape Luza's English description appears to have been mistranslated. It says that Luza itself can stand against Behemoths that wield the Ancient Curse, whereas the original Japanese description subtly suggests the use of units with [[:Category:Behemoth Slayer Cats|Behemoth Slayer]] and [[:Category:Cats with Curse Immunity|Curse Immunity]] (i.e., [[Dogumaru (Special Cat)|Reborn Warrior Doguemon]], [[Urs & Fenrir (Special Cat)|Awakened Urs]], [[Elder Mask Doron (Special Cat)|Awakened Doron]] and [[Elder Beast Naala (Special Cat)|Awakened Naala]], which have both of these abilities and become available upon clearing [[Atonement for Sin]], the stage before Luza's debut).
+
+==Reference==
+*https://battlecats-db.com/enemy/630.html
+
+----
+{{EnemyNav|Ancient Magamojoe|Zero Luza}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Relic Enemies]]
+[[Category:Behemoth Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with different effective ranges]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemy Cats]]
+[[Category:Mythic Bosses]]

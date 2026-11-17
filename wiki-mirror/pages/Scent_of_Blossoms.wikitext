@@ -1,0 +1,65 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Glowstick Guys|MikuDoge|Kroxo|LeMurr|Hatsune Miku|Sakura Miku}}
+'''Scent of Blossoms''' is the second stage in [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]].
+{{Stage Info
+|stage name = [[File:rc139.png]]
+[[File:Mapsn128 01 c en.png]]
+|stage location = [[File:Mapname128 c en.png]]
+|energy = 200
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Glowstick Guys|100%
+|MikuDoge|50%
+|Kroxo|100%
+|LeMurr|100%
+|Hatsune Miku|100%
+|Sakura Miku|50%}}
+|enemies2 = {{Magnification|Glowstick Guys|150%
+|MikuDoge|75%
+|Kroxo|150%
+|LeMurr|150%
+|Hatsune Miku|150%
+|Sakura Miku|75%}}
+|enemies3 = {{Magnification|Glowstick Guys|200%
+|MikuDoge|100%
+|Kroxo|200%
+|LeMurr|200%
+|Hatsune Miku|200%
+|Sakura Miku|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Battle Items#Speed Up|Speed Up]] +2<br>
+- [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+- [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+- [[Battle Items#Cat CPU|Cat CPU]] +2<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+- [[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|XP = 6,000 XP
+|width = 5,500
+|max enemies = 10
+|jpname = Flower Incense
+|script = 花の色香
+|romaji = Hana no Iroka
+|star = 3
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]
+|difficulty = ★6
+|prev stage = [[Spring Popstar]]
+|next stage = [[Sakura Dance]]
+}}
+
+==Battleground==
+*Infinite [[Glowstick Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[MikuDoge]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[Kroxo]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*4 [[LeMurr]]s spawn after 20 seconds<sup>600f</sup>, delay 30 seconds<sup>900f</sup>.
+*1 [[Hatsune Miku (Enemy)|Hatsune Miku]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Sakura Miku (Enemy)|Sakura Miku]] spawns after 43.33 seconds<sup>1,300f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02128-02.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

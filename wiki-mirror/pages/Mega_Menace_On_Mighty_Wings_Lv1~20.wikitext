@@ -1,0 +1,450 @@
+<tabber>
+On Mighty Wings Lv.1~10=
+{{EnemiesAppearing|Mega-Mooth|Dagshund|Gabriel|Gory Dark}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn006 00 a en.png]]
+|stage location = [[File:Mapname034 a en.png]]
+|enemies = {{Magnification|Dagshund|0
+|Gabriel|0
+|Gory Dark|0}}
+|boss = {{Magnification|Mega-Mooth|0}}
+|restriction = [[No Continues]]
+|width = 5,800
+|max enemies = 20
+|jpname = Flight Lv.X
+|script = 飛来Lv.X
+|romaji = Hirai Lv.X
+|star = 1
+|event-chapter = [[Mega Menace]]
+|max clears = 3
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*1 [[Mega-Mooth]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+*7 [[Dagshund]]s spawn after 10 seconds<sup>300f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*15 [[Gabriel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*10 [[Gory Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |On Mighty Wings
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! rowspan="2" style="text-align: center;" |Continuation Chance [[Mega Menace/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Mega-Mooth]]
+! scope="col" |[[Dagshund]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Gory Dark]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|2,500% HP/1,200% AP
+|300%
+|300%
+|300%
+|550,000 HP
+|60
+|[[Catamin]] [A] +3
+|1,140 XP
+|1%
+|-
+! scope="row" |2
+|2,778% HP/1,233% AP
+|322%
+|322%
+|322%
+|600,000 HP
+|60
+|Bricks +5
+|1,140 XP
+|3%
+|-
+! scope="row" |3
+|3,056% HP/1,266% AP
+|344%
+|344%
+|344%
+|650,000 HP
+|70
+|500,000 XP
+|1,330 XP
+|7%
+|-
+! scope="row" |4
+|3,334% HP/1,299% AP
+|366%
+|366%
+|366%
+|700,000 HP
+|70
+|Coal +5
+|1,330 XP
+|11%
+|-
+! scope="row" |5
+|3,612% HP/1,332% AP
+|388%
+|388%
+|388%
+|750,000 HP
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520 XP
+|15%
+|-
+! scope="row" |6
+|3,890% HP/1,365% AP
+|410%
+|410%
+|410%
+|800,000 HP
+|80
+|[[Catamin]] [B] +3
+|1,520 XP
+|18%
+|-
+! scope="row" |7
+|4,168% HP/1,398% AP
+|432%
+|432%
+|432%
+|850,000 HP
+|90
+|Gold +5
+|1,710 XP
+|21%
+|-
+! scope="row" |8
+|4,446% HP/1,431% AP
+|454%
+|454%
+|454%
+|900,000 HP
+|90
+|1,000,000 XP
+|1,710 XP
+|24%
+|-
+! scope="row" |9
+|4,724% HP/1,464% AP
+|476%
+|476%
+|476%
+|950,000 HP
+|100
+|Meteorite +5
+|1,900 XP
+|27%
+|-
+! scope="row" |10
+|5,000% HP/1,500% AP
+|500%
+|500%
+|500%
+|1,000,000 HP
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900 XP
+|30%
+|}
+
+==Strategy==
+This stage is extremely barren and only consists of Mega-Mooth with a few peons once in a while, though they shouldn't be taken lightly if they do spawn, as they're generally tanky and boast high DPS.
+
+==='''Recommended Units'''===
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Fishman's fast foreswing, high speed and Massive Damage versus Floating allows it to easily cripple or even outright kill Mega-Mooth whenever if the peons aren't around, potentially enabling other units to rush the stage with terrifying ease.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: With the range and speed buffs from his True Form, Dumpling is able to hit Dagshund and create a Wave that chips down Mega-Mooth and the peons.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Bahamut's extremely high damage can allow him to severely cripple either a peon or Mega-Mooth itself.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Can Double Bounty the Gabriel for a quick cash boost.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: Don't underestimate the Gory Dark here, as he hits 500% on the final stage. Pizza can deal serious damage to the Gory as well as hit Dagshund.
+
+|-|
+On Mighty Wings Lv.11~20=
+{{EnemiesAppearing|Zroco|Zomboe|Zigge|Zory|Professor A.|Pigeon de Sable|Brollow|Mega-Mooth}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn006 00 a en.png]]
+|stage location = [[File:Mapname034 a en.png]]
+|enemies = {{Magnification|Zroco|0
+|Zomboe|0
+|Zigge|0
+|Zory|0
+|Professor A.|0
+|Pigeon de Sable|0
+|Brollow|0}}
+|boss = {{Magnification|Mega-Mooth|0}}
+|restriction = [[No Continues]]
+|width = 6,000
+|max enemies = 20
+|jpname = Flight Lv.X
+|script = 飛来Lv.X
+|romaji = Hirai Lv.X
+|star = 1
+|event-chapter = [[Mega Menace]]
+|max clears = 3
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*Infinite [[Zroco]]s spawn after 3.33 seconds<sup>100f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*2 [[Zomboe]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*Infinite [[Pigeon de Sable]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~266.67 seconds<sup>500f~8,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mega-Mooth]] spawns as the boss.
+**2 [[Zigge]]s spawn, delay 50~56.67 seconds<sup>1,500f~1,700f</sup>.
+**2 [[Zory|Zories]] spawn, delay 60~63.33 seconds<sup>1,800f~1,900f</sup>.
+**1 [[Professor A.]] spawns.
+**8 [[Pigeon de Sable]]s spawn, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**8 [[Brollow]]s spawn, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**8 [[Brollow]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**3 [[Brollow]]s spawn, delay 10 seconds<sup>300f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |On Mighty Wings
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! colspan="3" style="text-align: center;" |Continuation Chance
+|-
+! scope="col" |[[Zroco]]
+! scope="col" |[[Zomboe]]
+! scope="col" |[[Zigge]]
+! scope="col" |[[Zory]]
+! scope="col" |[[Professor A.]]
+! scope="col" |[[Pigeon de Sable]]
+! scope="col" |[[Brollow]]
+! scope="col" |[[Mega-Mooth]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+! style="text-align: center;" |[[Mega Menace/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+! style="text-align: center;" |[[Mega Menace/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! style="text-align: center;" |[[Mega Menace/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|250%
+|250%
+|250%
+|250%
+|110%
+|250%
+|200%
+|5,000% HP/1,500% AP
+|1,050,000 HP
+|110
+|[[Catamin]] [C] +3
+|2,090 XP
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|289%
+|289%
+|289%
+|289%
+|114%
+|289%
+|222%
+|5,556% HP/1,611% AP
+|1,100,000 HP
+|120
+|Beast Bones +5
+|2,280 XP
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|328%
+|328%
+|328%
+|328%
+|118%
+|328%
+|244%
+|6,112% HP/1,722% AP
+|1,150,000 HP
+|130
+|1,500,000 XP
+|2,470 XP
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|367%
+|367%
+|367%
+|367%
+|122%
+|367%
+|266%
+|6,668% HP/1,833% AP
+|1,200,000 HP
+|140
+|Sprockets +5
+|2,660 XP
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|406%
+|406%
+|406%
+|406%
+|126%
+|406%
+|288%
+|7,224% HP/1,944% AP
+|1,250,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850 XP
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|445%
+|445%
+|445%
+|445%
+|130%
+|445%
+|310%
+|7,780% HP/2,055% AP
+|1,300,000 HP
+|200
+|Ammonite +5
+|3,800 XP
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|484%
+|484%
+|484%
+|484%
+|134%
+|484%
+|332%
+|8,336% HP/2,166% AP
+|1,350,000 HP
+|200
+|Feathers +15
+|3,800 XP
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|523%
+|523%
+|523%
+|523%
+|138%
+|523%
+|354%
+|8,892% HP/2,277% AP
+|1,400,000 HP
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800 XP
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|562%
+|562%
+|562%
+|562%
+|142%
+|562%
+|376%
+|9,448% HP/2,388% AP
+|1,450,000 HP
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800 XP
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|600%
+|600%
+|600%
+|600%
+|150%
+|600%
+|400%
+|10,000% HP/2,500% AP
+|1,500,000 HP
+|200
+|[[Catseye]] [Dark] +1
+|3,800 XP
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+Whereas the first ten stages were extremely relaxed, the remaining ten stages pull absolutely no punches. With a boosted Professor A. sniping all of your units, a ridiculous amount of overbuffed Zombies that will tear through your defenses, Brollows that can speedclip through your meatshields and Pigeon de Sable creating Waves that deny easy Jelly Dumpling hits, they are usually considered one of the harder Gauntlet stages.
+
+The startoff of this stage is surprisingly rough. Starting from level 18 Zrocos are able to instantly defeat Manic Erasers and survive a hit from even a level 50 Cadaver BearCat. At level 19+, even normal Erasers can be destroyed instantly. Do your best to prevent your base from getting hit by anything, since even one Zroco hit at level 20 is 30,000 less HP on your base to live the Zombie assault. If you're using Cyberpunk strategies, have Manic Eraser trigger the burrow on the Zomboes and lure the Zombies to your base, then send out Cyberpunk. Try to Z-Kill the two Zomboes before you hit the base, but remember Wave units will usually miss the Brollows coming out of the base if they trigger the boss Wave. Be sure to preserve as much ground as possible, or it's easy to lose to the Zombies even after defeating Mega-Mooth/Professor A.
+
+==='''Recommended Units'''===
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - Bahamut admittedly is a subpar option here since he's quite frail and perishes easily, but this is partially alleviated by his Move Speed Up and Explosion talents, which are available right after CotC 3 completion. With a well-timed Thunderbolt that lands on Professor A. and Mega-Mooth immediately after base hit, Bahamut's Explosions can do quite a number on the first few Zombie peons, Professor A. and Mega-Mooth. Of course, that isn't his only use, as other windows of opportunities are also available later on.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: A suicide unit who stands at 400 with an Omni Strike reaching 600 and Colossus Slayer, Doron's extreme health ensures he can deliver some chip damage, with his level 3 Surge packing enough punch to kill or heavily damage the Brollows that run into it.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: Naala's high stats, LD, and Colossus Slayer allows it to work very well here.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: A staple on these Gauntlet stages, Stone's high health can help you to chip a Brollow down or force a Zombie enemy to burrow early. As it despawns shortly after attacking, it is unlikely to inadvertently hit the base and cause the remaining threats to spawn.
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]]: Camera's slow speed, high damage, stackability and Strong vs. Floating allow her to be a very strong counter to the Brollows. Also has a combo with Li'l Eraser Cat for more health.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: A surprisingly good unit here. Courier's raw stats help against the Pigeons, and since the Professor A. is only 150% Courier can work to chip him down once Mega-Mooth is dead.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Take caution using Jelly Dumpling here, as Pigeon de Sable's Wave is deceptively long, so it has to rely on Zrocos or Brollows to get Wave Attacks off, unless a Wave Shield blocks them.
+*[[Ancient Egg: N107 (Rare Cat)|Cat Chief]]/[[Teacher BearCat (Rare Cat)|Cadaver BearCat]]: Spammable Zombie Killers that help immensely here. While Cadaver BearCat is easier to obtain and has higher damage against Zombies, he won't work on Zory and can't do anything against corpses.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Even a Gauntlet staple like Cyberpunk faces some challenge here. Cyberpunk is able to Slow both Mega-Mooth and Professor A. but a Zombie enemy either unburrowing or reviving underneath him results in instant death.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Fishman's stats allows him to clear out a Pigeon or Brollow with ease. Works extremely well against the Continuation stages.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]: Octo's high health against Floating as well as having Wave Blocker allows him to be a powerful defensive unit here, and of course, he is rather useful in the continuation stages as a tanker specialist.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: There might not be any Darks in this stage, but Pizza's range, damage, bulk, and Wave Attack allows him to be a powerful melee unit for dealing with the Zories.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]]: Housewife's Zombie Killer as well as high damage allows her to be a strong sniper unit here. If she procs a Savage Blow, she can deal huge damage against a Pigeon or Brollow.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Quick rusher that can chip off a good amount of health from a Brollow or one-shot a Pigeon.
+*[[Metal Cat (Super Rare Cat)|Metal Cat]]: A powerful defensive unit here, especially for the Brollows. Take caution using him against the Pigeons or Zombies, as his 12 HP can drain very quickly.
+*[[Master of Logic Newtone (Special Cat)|Master of Logic Mewtone]]: Mewtone completely destroys this stage, with a very high standing range of 600 and an Omni Strike that reaches 900. His 100% chance to Slow Floating and Red enemies for 5 seconds allows him to control Brollows, Professor A. and Mega-Mooth quite effectively, and his level 5 Mini-Wave can slightly improve his uptime. He also has a Conjure that inflicts Knockback to further delay the nasty enemies. He just needs cover from anti-Zombie specialists.
+
+==='''Recommended Ubers'''===
+*[[Sea Serpent Daliasan (Uber Rare Cat)|God-Emperor Daliasan]]: Designed to help destroy this stage. Daliasan's bulk, high damage, Slow vs. Floating, Colossus Slayer and range combine to make a unit that can easily carry you through these stages.
+*[[Mighty Aethur Ltd. (Uber Rare Cat)|Ultra Atlantis Logistix]]: This unit's spammability helps them a ton, making them a slightly more heavy version of Cadaver BearCat here. Logistix's Omni Strike and Soulstrike Talent help them clean up Corpses or unburrowed Zombies as well.
+*Anti-Zombie Ubers: Examples include [[Mighty Thermae D-Lux (Uber Rare Cat)|Subterra Sentinels]] and [[Mighty Kat-A-Pult (Uber Rare Cat)|CAT-10 Gigapult]]. Using someone to clear the Zombie waves make this stage a lot easier and allow you to start attacking Mega-Mooth head-on.
+*Colossal Slayer Ubers: Units like [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]], [[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]] and [[One-Eyed Asuka (Uber Rare Cat)|Blue-Eyed Asuka]] can deal high damage to Mega-Mooth and finish these stages quickly.
+*LD Snipers: Examples include [[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]], [[Splendid Ganesha (Uber Rare Cat)|Almighty Ganesha]] and [[EVA Unit-02 (Uber Rare Cat)|EVA Unit-02]]. These units can snipe Mega-Mooth, Professor A., or both and allow you to beat this stage fast.
+*Superbackliners: Examples include [[Lucifer the Fallen (Uber Rare Cat)|Almighty Lucifer]], [[Child of Destiny Phono (Uber Rare Cat)|King of Destiny Phonoa]], and [[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]]. These units with their high range can allow them to kill everyone here from a safe distance. Make sure to protect them well against the Zombies, though.
+*Anti-Floating tanks like [[High Lord Babel (Legend Rare Cat)|God-Emperor Babel]] and [[Kai (Uber Rare Cat)|Divine Kai μ]] can use their already-high base health to their advantage here and wall most of the enemies here for high periods of time.
+*[[Windy (Uber Rare Cat)|Ultimate Windy α]]: Ultimate Windy α deals Insane Damage to Floating at a very safe range of 510 that keeps her away from Professor A. (only outranges by 9) and Mega-Mooth's Omni Strikes (up to 470). One or two well-placed hits can quite literally delete Mega-Mooth from existence, leaving the remaining pushers to other specialists.
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: Although Cosmo isn't great with all the nasty Zombies burrowing, he does possess a very impressive standing range of 800 (with an Omni Strike reaching up to 1050) that will most likely catch every single enemy in the stage when he attacks, with the subsequent level 10 Wave delivering further destruction through his very high damage. If that wasn't enough, Cosmo also has a 100% chance to Knockback and Freeze Floating enemies for 5 seconds to impede Mega-Mooth, which is further improved with the Colossus Slayer talent.
+*[[Daybreaker Izanagi (Legend Rare Cat)|Dawnbringer Izanagi]]: Izanagi's extremely high damage per hit allows him to snipe most of the backline enemies from a relatively safe distance. Also has a Conjure for support.
+*[[Baby Cat (Uber Rare Cat)|Cats in the Stroller]]: Cats in the Stroller is a powerful attacker due to its extremely high burst damage. Combined with Level 3 Wave Attacks enabling it to consistently reach Professor A. and Mega-Mooth by attacking the nasty peons, packing enough punch to instantly kill off the Pigeons and Brollows. Despite its short standing range of 240, it can actually outrange most other enemies here, only requiring other units or a well-timed Thunderbolt strike to hold the line due to its long foreswing.
+
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24034.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Mega Menace Stages]]
+[[Category:Gauntlets]]

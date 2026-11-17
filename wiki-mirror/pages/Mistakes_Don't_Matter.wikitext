@@ -1,0 +1,74 @@
+{{EnemiesAppearing|Doge Base|Chocolate Doge|Ice Doge|Wall Doge|Snowball|Wafer Cat XL|Pigeon de Sable}}
+'''Mistakes Don't Matter''' is the fourth stage in [[River City Stages#River City Challenge Course|River City Challenge Course]].
+
+{{Stage Info
+|stage name = [[File:E 315.png]]
+[[File:Mapsn261 03 s en.png]]
+|stage location = [[File:Mapname261 s en 2.png]]
+|energy = 125
+|enemy castle hp = 300,000 HP
+|enemy castle hp2 = 450,000 HP
+|enemy castle hp3 = 600,000 HP
+|base = {{Magnification|Doge Base|20,000%}}
+|enemies = {{Magnification|Chocolate Doge|200%
+|Ice Doge|200%
+|Wall Doge|100%
+|Wafer Cat XL|100%
+|Pigeon de Sable|100%}}
+|boss = {{Magnification|Snowball|100%}}
+|base2 = {{Magnification|Doge Base|30,000%}}
+|enemies2 = {{Magnification|Chocolate Doge|300%
+|Ice Doge|300%
+|Wall Doge|150%
+|Wafer Cat XL|150%
+|Pigeon de Sable|150%}}
+|boss2 = {{Magnification|Snowball|150%}}
+|base3 = {{Magnification|Doge Base|40,000%}}
+|enemies3 = {{Magnification|Chocolate Doge|400%
+|Ice Doge|400%
+|Wall Doge|200%
+|Wafer Cat XL|200%
+|Pigeon de Sable|200%}}
+|boss3 = {{Magnification|Snowball|200%}}
+|score reward = '''4,000''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''2,000''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': [[Catamin]] [C] +1
+|XP = 3,750 XP
+|width = 3,500
+|max enemies = 100
+|jpname = Being Last Award
+|script = 迷ったで賞
+|romaji = Mayottade Shō
+|star = 3
+|event = [[River City Stages]]
+|event-chapter = [[River City Stages#River City Challenge Course|River City Challenge Course]]
+|difficulty = ★6
+|prev stage = [[Overcome The Odds]]
+|next stage = [[Good Effort]]
+}}
+
+==Battleground==
+*The enemy base here is a [[Doge Base (Enemy Base)|Doge Base]].
+*5 [[Pigeon de Sable]]s spawn after 10 seconds<sup>300f</sup>, delay 0.53~1.13 seconds<sup>16f~34f</sup>.
+*When the base reaches 95% HP:
+**1 [[Snowball]] spawns as the boss.
+**7 [[Wafer Cat XL (Enemy)|Wafer Cat XL]]s spawn, delay 1 second<sup>30f</sup>.
+*When the base reaches 90% HP:
+**1 [[Snowball]] spawns as the boss.
+**3 [[Ice Doge]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+**1 [[Chocolate Doge]] spawns.
+*When the base reaches 85% HP:
+**1 [[Snowball]] spawns as the boss.
+**1 [[Chocolate Doge]] spawns.
+**3 [[Ice Doge]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+**5 [[Wall Doge]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+
+==Strategy==
+None of the enemies here are pushers except for the Chocolate Doge. Still, a general tanker such as [[Rocker Cat (Rare Cat)|Artist Cat]] can perma stall the Chocolate Doge, and the other two doges involved, trivializing the stage. To beat the Pigeon de Sables that spawn at the beginning, [[Salon Cat (Rare Cat)|Paris Cat]] is your best bet, as they will stack up and surge spam any meatshields, making them glass cannons. Even if you lack Paris Cat, any decent midranger can beat them.
+
+==Reference==
+*https://battlecats-db.com/stage/s01261-04.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

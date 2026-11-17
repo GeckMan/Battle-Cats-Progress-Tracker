@@ -1,0 +1,58 @@
+{{DISPLAYTITLE:Mean Morning Sunbeams}}
+{{RemovedContent}}
+{{EnemiesAppearing|Squid|Sardine|Young Man Mola|Tasmanian Giant Crab|Mola King}}
+:''For the new stage, see [[Mean Morning Sunbeams]].''
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn011 01 c en.png]]
+|stage location = [[File:Mapname011 c en.png]]
+|energy = 60
+|enemy castle hp = 60,000 HP
+|enemies = {{Magnification|Squid|200%
+|Sardine|200%
+|Young Man Mola|200%
+|Tasmanian Giant Crab|100%}}
+|boss = {{Magnification|Mola King|100%}}
+|score reward = ''9,000'': 150,000 XP<br>
+''7,500'': Cat Ticket +1 <br>
+''4,500'': 50,000 XP<br>
+''2,000'': Rich Cat +1 <br>
+''500'': Speed Up +1
+|XP = 1,800 XP
+|width = 4,000
+|max enemies = 15
+|jpname = The morning Sun is too strong
+|script = 朝日が強すぎて
+|romaji = Asahi ga tsuyo sugite
+|star = 1
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|event-chapter = [[Survive! Mola Mola! Collaboration Event#Survive! Mola Mola!|Survive! Mola Mola!]]
+|difficulty = ★3
+|prev stage = [[Squid Bender (Old)|Squid Bender]]
+|next stage = [[Life Ain't Easy, Kid (Old)|Life Ain't Easy, Kid]]
+}}
+
+==Battleground==
+*10 [[Squid (Enemy)|Squid]] spawn after 3 seconds<sup>90f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 6 seconds<sup>180f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*5 [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 10 seconds<sup>300f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*Infinite [[Sardine (Enemy)|Sardines]] spawn after 100 seconds<sup>3,000f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*Infinite [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 133.33 seconds<sup>4,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*When the base reaches 99% HP:
+**5 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn, delay 53.33~66.67 seconds<sup>1,600f~2,000f</sup>.
+*When the base reaches 90% HP:
+**1 [[Mola King (Enemy)|Mola King]] spawns as the boss.
+**5 [[Young Man Mola (Enemy)|Young Man Molas]] spawn, delay 6.67 seconds<sup>200f</sup>.
+**2 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02011-02.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,54 @@
+{{PageImage|XP.png}}
+'''XP''' (an acronym or abbreviation derived from e'''X'''perience '''P'''oints) is a type of currency in Battle Cats. XP is gained from completing stages and spent on upgrading cats and special skills. No XP is awarded if the player escapes or is defeated.
+
+The amount of XP gained from the end of each battle follows a formula which is dependent on several factors:
+
+'''The base XP''' is a number assigned to each stage. The stages in story mode follow a simple formula: the base experience increases by 300 each stage. [[Korea (Empire of Cats)|Korea]], the first stage, begins at 1000 XP. Event stages have varying base XP.
+
+'''The number of times 'cleared'''' for each stage is shown in the world map. As the Base Menu Cat says, "If you keep fighting in the same stages, you'll get less XP every time!" For example, each time a EoC/ItF/CotC stage is replayed, the XP awarded is reduced by 1/14. From the 15th battle, this reduction stops such that 1/14 of the initial base XP is awarded. Other modifiers still apply.
+
+'''Study''' is a Special Skill which may be upgraded up to level 30. Each upgrade increases the XP by 5%, which stacks additively. As Study can be upgraded 29 times, the maximum multiplier is 145%. It is recommended to max this skill out before Chapter 1 is completed.
+
+'''Treasure bonuses''' such as from the philosopher stone can increase the amount of XP when a stage is cleared. These are activated when every [[treasure]] from a collection is acquired. The bonus from each collection is shown as 100% when all the treasures are of 'Superior' quality. This indicates that the bonus is maxed, however, it does not necessarily translate to a 100% increase in the XP award. See [[Treasure]] for explanation.
+
+The '''[[Battle Items#Cat Jobs|Cat Jobs]]''' [[Battle Items|Battle Item]] gives 150% experience upon stage clear.
+
+'''Study Power Up''' [[Cat Combo|'''Cat Combos''']] such as [[Good Jobs! (Combo)|Good Jobs!]] can increase the amount of XP when a stage is cleared by a bonus percentage, depending on the level of the Cat Combo.
+
+Due to rounding errors, the exact XP awarded might differ slightly from the formula shown below.
+
+==Formula==
+The general formula:
+
+<math>\text{XP} = \text{BaseXP} \cdot \text{ClearModifier} \cdot (1 + 0.05 \cdot (\text{StudyLevel} - 1) + \text{TreasureBonuses}) \cdot (1 + \text{CatJobs} \cdot 50\%) \cdot (1 + \text{StudyUpCombos})</math>
+
+For example, clearing [[Refined Palate (Insane)|XP Megablitz]] with Study level 30, full EoC and CotC treasures, a Cat Jobs battle item and the Good Jobs! cat combo will yield XP: <math display="inline">\text{XP} = 104,000 \cdot 1 \cdot (1 + 0.05 \cdot (30 - 1) + 50\% \cdot 3 + 25\% \cdot 3) \cdot (1 + 1 \cdot 50\%) \cdot (1 + 10\%) = 806,520</math>
+
+Note that the definition of <math display="inline">\text{ClearModifier}</math> differs for some type of stages. See below.
+
+'''Empire of Cats''' stages:
+
+<math>\text{ClearModifier} = \frac{\text{max}(1, 14 - \text{PreviousClear})}{14}</math>
+
+For example, if the player is clearing Jamaica for the 5th time, and has a Study upgrade level of 20+5 and has obtained all Philosopher's Stone at 100%, the expected XP is <math display="inline">11,500 \cdot (14 - 4) \div 14 \cdot (1 + 0.05 \cdot 24 + 0.5 \cdot 3) \approx 30,395</math>.
+
+'''Stories of Legend''' stages:
+
+<math>\text{ClearModifier} = \frac{9 \cdot \text{max}(1, 5 - \text{PreviousClear})}{5}</math>
+
+For example, if the player is clearing Lovely Minerals for the 4th time, and has a Study upgrade of level 20+4 and has obtained all Philosopher's Stone at 100%, the expected XP is <math display="inline">1,330 \cdot (5 - 3) \div 5 \cdot 9 \cdot (1 + 0.05 \cdot 23 + 0.5 \cdot 3) \approx 17,476</math>.
+
+'''Catfruit''' stages, '''cat ticket''' stages and some '''event''' stages:
+
+<math>\text{ClearModifier} = 1</math>
+
+For example, if the player is clearing [[Super Metal Hippoe (Expert)]] has a Study upgrade of level 20+4 and has obtained all Philosopher's Stone at 100%, no matter how many times the player has cleared the said stage, the expected XP remains unchanged as <math display="inline">6,666 \cdot (1 + 0.05 \cdot 23 + 0.5 \cdot 3) \approx 24,330</math>.
+
+For example, if the player is clearing VS BLANKA (a stage in New Challenger of [[Street Fighter Collaboration Event]]) for the first time and has Study upgrade of level 20+5 and has obtained all Philosopher's Stone at 100%, the expected XP is <math display="inline">12,000 \cdot (1 + 0.05 \cdot 24 + 0.5 \cdot 3) \approx 44,400</math>.
+
+==Known Caveats==
+*In Catfruit Buffet, although each individual stage (including Jubilee) should give 4000 XP, cases have been observed where the stages give less than that (i.e. 3850) despite the player having Study and Treasures.
+*The player can only have up to 99,999,999 XP at any given moment. At this absolute maximum, any additional earned XP is lost.
+
+{{BC Navigation}}
+[[Category:Game Features]]

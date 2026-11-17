@@ -1,0 +1,82 @@
+:''For the Cat Unit, see [[Crazed Moneko (Special Cat)]]. Not to be confused with [[Corrupted Moneko (Enemy)|Corrupted Moneko]].''
+'''Crazed Moneko''' (狂乱のもねこ ''Kyōran no Moneko'', '''Crazed Moneko''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[in JAPAN (Crazed Moneko)|in JAPAN]] and [[in LONDON]]. She was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Enemy Info
+|name = Crazed Moneko
+|image = E 396.png
+|money drop = 999¢ - 3,946¢
+|appearance = [[in JAPAN (Crazed Moneko)|in JAPAN]]
+[[in LONDON]]
+}}
+
+==Enemy==
+Crazed Moneko has low range, many knockbacks and a multi-hit attack with a 100% chance of creating a Lv. 5 [[Wave Attack]] on the third hit that has a 50% [[Critical Hit|Critical Chance]].
+
+==Strategy==
+When fighting Crazed Moneko by herself, it is sufficient to send out no meatshields or only an occasional [[Crazed Cat (Super Rare Cat)|Crazed Macho Cat]] to trigger her attack animation. As long as no units with a range under 240 are deployed during her attack, she will be unable to produce a [[Wave Attack]], making her much less of a threat. When there are other enemies on the battlefield, then just enough meatshields must be deployed to keep your backline attackers safe without allowing her to hit anything with her last attack.
+
+It is ill-advised to use [[Metal Cat (Super Rare Cat)|Metal Cat]] or other meatshields/close-ranged attackers that can survive the first two hits of Crazed Moneko's attack without getting knocked back, as they can easily give her a chance to unleash her Wave, and Metal Cat is at risk of being destroyed by a Critical Hit. The only [[:Category:Wave Shield Cats|Wave Shields]] that won't backfire on the player are [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]], [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku: MM2020 Tokyo]], [[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]], and [[Mighty Kristul Muu (Legend Rare Cat)|Doom Engine Pandora]], as they have enough range to avoid her attacks.
+
+==Variants==
+{{Variant
+|original = Crazed Moneko
+|Corrupted Moneko
+|Corrupted Moneko has identical stats to Crazed Moneko, the only difference being that Corrupted Moneko appears at 100% strength magnification while Crazed Moneko only appears at 12% and 50%.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Crazed Moneko]]:
+**[[in JAPAN (Crazed Moneko)|in JAPAN]] (12%)
+**[[in LONDON]] (50%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Crazed Moneko
+|Health = 2400000
+|Attack Power = 60000
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 181
+|Movement Speed = 5
+|Knockback = 12
+|Foreswing = 4
+|Backswing = 42
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">20,000</span> at 4f <sup>0.13s</sup>, <span class="scaled" data-type="ap">20,000</span> at 19f <sup>0.63s</sup>, <span class="scaled" data-type="ap">20,000</span> at 139f <sup>4.63s</sup>)<br>
+{{AbilityIcon|Critical}} 50% chance to perform a [[Critical Hit]] on 3rd hit<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 5 [[Wave Attack]] on 3rd hit
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+396 e.png|Crazed Moneko's spritesheet
+Battle soul 007.png|Crazed Moneko's death spritesheet
+IdleCrazedMoneko.gif|Crazed Moneko's moving animation
+</gallery>
+
+==Trivia==
+*At 100% strength magnification, Crazed Moneko has the exact same stats as [[Corrupted Moneko (Enemy)|Corrupted Moneko]]. The difference is that Crazed Moneko only appears at 12% or 50% strength magnification, while Corrupted Moneko is at full strength in all of her appearances.
+*Along with Corrupted Moneko, she was the first enemy to have an ability that only activates on one part of a multi-hit attack.
+
+==Reference==
+*https://battlecats-db.com/enemy/398.html
+
+----
+{{EnemyNav|The 10th Angel|Corrupted Moneko}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Critical Hit Enemies]]
+[[Category:Enemies with unique death animations]]

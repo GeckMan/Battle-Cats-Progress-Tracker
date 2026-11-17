@@ -1,0 +1,62 @@
+'''Speaker Base''' is an [[Enemy Bases|Enemy Base]] that appears in [[Koneko Music Festival#Koneko Takes the Stage|Koneko Takes the Stage]]. It was added in [[Version 15.6 Update|Version 15.6]].
+
+{{Enemy Info
+|name = Speaker Base
+|image = 787 e.png
+|first appearance = [[Koneko Music Festival#Koneko Takes the Stage|Koneko Takes the Stage]]
+|money drop = 0¢ - 0¢
+}}
+
+==Enemy==
+It does nothing despite its special treatment as an animated base, basically acting as a regular base that can be hurt by [[Surge Attack]]s and [[Explosion]]s.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Koneko Music Festival#Koneko Takes the Stage|Koneko Takes the Stage]]:
+**[[No Shoving!]]
+**[[No Stage Diving!]]
+**[[No Moshing!]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Speaker Base
+|Health = 10
+|Attack Power = 1
+|Attack Range = 10
+|Attack Type = Single
+|Time Between Attacks = 1000
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 0
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+787 e.png|Speaker Base's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/789.html
+
+----
+{{EnemyNav|Marquis Clionius|Anji Yukyuzan (Enemy)}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

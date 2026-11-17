@@ -1,0 +1,78 @@
+:''For the Cat Unit, see [[Crazed Moneko (Special Cat)]]. Not to be confused with [[Crazed Moneko (Enemy)]].''
+'''Corrupted Moneko''' (狂乱のスターもねこ ''Kyōran no Sutā Moneko'', '''Crazed Star Moneko''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[in THE MOON]] and [[Heavenly Tower]] [[Heavenly Tower/Floor 47|Floor 47]]. She was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Enemy Info
+|name = Corrupted Moneko
+|image = E 397.png
+|money drop = 999¢ - 3,946¢
+|appearance = [[in THE MOON]]<br>
+[[Heavenly Tower/Floor 47|Heavenly Tower - Floor 47]]<br>
+[[Infernal Tower/Floor 47|Infernal Tower - Floor 47]]
+}}
+
+==Enemy==
+Corrupted Moneko has low range, many knockbacks and a multi-hit attack with a 100% chance of creating a Lv. 5 [[Wave Attack]] on the third hit. Unlike [[Crazed Moneko (Special Cat)|her cat counterpart]], the enemy version can only [[Critical Hit]] at a 50% chance while the allied version is able to Critical Hit at a 100% chance. However, if she manages to make a Critical Hit and a Wave Attack at the same time, the resulting damage will reach '''40,000''', which will wipe out most units.
+
+==Strategy==
+When fighting Corrupted Moneko by herself, it is sufficient to send out no meatshields or only an occasional [[Crazed Cat (Super Rare Cat)|Crazed Macho Cat]] to trigger her attack animation. As long as no units with a range under 240 are deployed during her attack, she will be unable to produce a [[Wave Attack]], making her much less of a threat. When there are other enemies on the battlefield, then just enough meatshields must be deployed to keep your backline attackers safe without allowing her to hit anything with her last attack.
+
+It is ill-advised to use [[Metal Cat (Super Rare Cat)|Metal Cat]] or other meatshields/close-ranged attackers who can survive the first two hits of Corrupted Moneko's attack, as they can easily give her a chance to unleash her Wave Attack. The only [[:Category:Wave Shield Cats|Wave Shields]] that won't backfire on the player are [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]], [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku: MM2020 Tokyo]], [[Yamii (Uber Rare Cat)|Yaminora]], [[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]], and [[Mighty Kristul Muu (Legend Rare Cat)|Doom Engine Pandora]]. However, if you can time [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] just right, and repeatedly sent him out whenever he's ready, you may be able to get in a loop where he avoids the first attacks, then gets in Corrupted Moneko's range and blocks the guaranteed wave. In her [[in THE MOON]] encounter, This may be ruined by the constant appearance of [[Cyberhorn]] and [[Bore]].
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Crazed Moneko]]: [[in THE MOON]]
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 47|Floor 47]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 47|Floor 47]]
+*[[Golden Tower]]: [[Golden Tower/Floor 47|Floor 47]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Corrupted Moneko
+|Health = 2400000
+|Attack Power = 60000
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 181
+|Movement Speed = 5
+|Knockback = 12
+|Foreswing = 4
+|Backswing = 42
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">20,000</span> at 4f <sup>0.13s</sup>, <span class="scaled" data-type="ap">20,000</span> at 19f <sup>0.63s</sup>, <span class="scaled" data-type="ap">20,000</span> at 139f <sup>4.63s</sup>)<br>
+{{AbilityIcon|Critical}} 50% chance to perform a [[Critical Hit]] on 3rd hit<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 5 [[Wave Attack]] on 3rd hit
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+397 e.png|Corrupted Moneko's spritesheet
+Battle soul 007.png|Corrupted Moneko's death spritesheet
+IdleCorruptedMoneko.gif|Corrupted Moneko's moving animation
+</gallery>
+
+==Trivia==
+*At 100% strength magnification, Corrupted Moneko has the exact same stats as [[Crazed Moneko (Enemy)|Crazed Moneko]]. The difference is that Crazed Moneko only appears at 12% or 50% strength magnification, while Corrupted Moneko is at full strength in all of her appearances.
+*Along with Crazed Moneko, she was the first enemy to have an ability that only activates on one part of a multi-hit attack.
+
+==Reference==
+*https://battlecats-db.com/enemy/399.html
+
+----
+{{EnemyNav|Crazed Moneko|Glowstick Guys}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Critical Hit Enemies]]
+[[Category:Enemies with unique death animations]]

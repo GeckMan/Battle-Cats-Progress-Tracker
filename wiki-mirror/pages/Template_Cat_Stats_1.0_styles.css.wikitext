@@ -1,0 +1,219 @@
+.detailed-cat-stats-controls {
+	width: 100%;
+	margin: 10px 0;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid var(--theme-border-color);
+}
+
+.detailed-cat-stats-controls th {
+	padding: 2px;
+	background: var(--theme-page-background-color--secondary);
+}
+
+.detailed-cat-stats-controls input,
+.detailed-cat-stats-controls button {
+	margin-top: 3px;
+}
+
+.detailed-cat-stats-controls input {
+	max-width: 5rem;
+	padding: 4px 0;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.detailed-cat-stats-controls button {
+	padding: 3px 6px;
+	background: var(--theme-page-background-color--secondary);
+	border-radius: 5px;
+	border: 1px solid var(--theme-page-text-color);
+	cursor: pointer;
+}
+
+@media (hover: hover) {
+	.detailed-cat-stats-controls button:hover {
+		filter: brightness(0.95);
+	}
+}
+	
+
+.detailed-cat-stats-form {
+	display: grid;
+	width: 100%;
+	border-radius: 0;
+	border: 3px solid #000;
+	border-left-width: 2px;
+	border-bottom-width: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.detailed-cat-stats-form.first-form {
+	border-radius: 5px 5px 0 0;
+}
+
+.detailed-cat-stats-form.final-form {
+	border-bottom-width: 3px;
+	border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 601px) {
+	.detailed-cat-stats-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modlabh modvalh modvalh modlaba modlaba modvala modvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil lababil"
+			"valabil valabil valabil valabil valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-form.orb-valid {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modvalh modlaba modvala orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil lababil"
+			"valabil valabil valabil valabil valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-form.final-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modlabh modvalh modvalh modlaba modlaba modvala modvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil labmax "
+			"valabil valabil valabil valabil valabil valabil valabil valmax ";
+	}
+
+	.detailed-cat-stats-form.orb-valid.final-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modvalh modlaba modvala orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil labmax "
+			"valabil valabil valabil valabil valabil valabil valabil valmax ";
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.detailed-cat-stats-table {
+		font-size: 0.8rem;
+	}
+
+	.detailed-cat-stats-form {
+		grid-template-areas:
+			"name    name    name    name   "
+			"modlabh modvalh modlaba modvala"
+			"orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps "
+			"labbase valhpb  valapb  valdpsb"
+			"labcalc valhpc  valapc  valdpsc"
+			"labac   labac   valac   valac  "
+			"labfore valfore labacd  valacd "
+			"labfore valfore labback valback"
+			"labat   labkb   labrng  labspd "
+			"valat   valkb   valrng  valspd "
+			"labrech labrech labcost labcost"
+			"valrech valrech valcost valcost"
+			"labmax  labmax  labmax  labmax "
+			"valmax  valmax  valmax  valmax "
+			"lababil lababil lababil lababil"
+			"valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-table .detailed-cat-stats-form .cell-mod:nth-child(6) {
+		border-width: 1px 0 0 1px;
+	}
+}
+
+.detailed-cat-stats-form .stats-table-cell {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 3px;
+	border: 0 solid #000;
+	border-width: 1px 0 0 1px;
+}
+
+.detailed-cat-stats-form .cell-name {
+	color: white;
+	background-color: #FF6811;
+	border: solid #000;
+	border-width: 0 0 1px 1px;
+	font-weight: bold;
+}
+
+.detailed-cat-stats-form .cell-mod {
+	background: var(--theme-page-background-color--secondary);
+	border-width: 1px 0 0 1px;
+}
+
+.detailed-cat-stats-form .cell-mod ~ .cell-mod {
+	border-width: 1px 0 0 0;
+}
+
+.detailed-cat-stats-form .cell-label {
+	background: var(--bg-color-light4);
+	font-weight: bold;
+}
+
+.detailed-cat-stats-form .cell-value {
+	background: var(--bg-color-light3);
+}
+
+.detailed-cat-stats-table .time-toggle::after {
+	content: "f";
+}
+
+.detailed-cat-stats-table.duration-seconds .time-toggle::after {
+	content: "s";
+}
+
+.detailed-cat-stats-form .stats-table-cell.abilities {
+	display: block;
+	text-align: left;
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities:not(.abilities-empty) {
+	font-size: 0;
+	text-align: center;
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities > * {
+	display: none;
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities > span[typeof="mw:File"] {
+	display: inline;
+}
+
+.detailed-cat-stats-form input {
+	width: 3rem;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* [[Category:Template stylesheets]] */

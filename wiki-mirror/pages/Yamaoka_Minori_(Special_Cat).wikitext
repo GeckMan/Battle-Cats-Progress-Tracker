@@ -1,0 +1,134 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Yamaoka Minori''' is a [[:Category:Special Cats|Special Cat]] that could be unlocked by using a [[Serial Codes|Serial Code]] (みの - りん). She was added in [[Version 3.8 Update|Version 3.8]]. As of [[Version 4.3 Update|Version 4.3]], she is now unobtainable because Serial Codes can no longer be input to the game.
+
+{{Cat Info
+|ID = 192
+|rarity = EX
+|name1 = Yamaoka Minori
+|name2 = Queen Minori
+}}
+
+==Evolution==
+Evolves into '''Queen Minori''' at level 10.
+
+==Strategy/Usage==
+Yamaoka Minori is entirely outclassed by [[Onmyoji Cat (Rare Cat)|Onmyoji Cat]] due to her pathetic range and staggering recharge time.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 192
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni192 f00.png
+|Image2 = Uni192 c00.png
+|Name1 (JP) = 山岡実乃里 (Yamaoka Minori)
+|Desc1 (JP) = ポノスがスポンサーのレースチームを応援する<br>にゃんこ大戦争ガールズ！<br>たまに敵の攻撃力をダウンさせる
+|Transl1 (JP) = PONOS supports sponsor's lace team.<br>She's playing an active part as cat at great war of girls!<br>Sometimes lowers the enemies offensive power.
+|Name2 (JP) = クイーンみのりん (Kuīn Minorin, Queen Minorin)
+|Desc2 (JP) = 特技がバルーンアートの「みのりん」は<br>にゃんこ大戦争ガールズ！<br>たまに敵の攻撃力をダウンさせる
+|Transl2 (JP) = Specializes in a balloon art.<br>She's playing an active part as cat at great war of girls!<br>Sometimes lowers the enemies offensive power.
+}}
+
+==Cost==
+*Chapter 1: 99円
+*Chapter 2: 148円
+*Chapter 3: 198円
+{{Upgrade Cost|MIX
+|0
+|100
+|3,100
+|7,100
+|12,100
+|18,100
+|25,100
+|33,100
+|42,100
+|52,100
+|100
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yamaoka Minori
+|Normal Base HP = 350
+|Normal Base AP = 90
+|Normal Range = 150
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 57
+|Normal Speed = 4
+|Normal KB = 3
+|Normal Cost = 99
+|Normal Recharge = 1998
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Queen Minori
+|Evolved Base HP = 550
+|Evolved Base AP = 140
+|Evolved Range = 150
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 57
+|Evolved Speed = 4
+|Evolved KB = 3
+|Evolved Cost = 99
+|Evolved Recharge = 1998
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 350 HP
+|val-Normal-Attack Power = 90 damage<br>(21.26 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Normal-Recharge Time = 66.6 ~ 57.8 seconds
+|val-Normal-MaxHP = 5,950 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(361.42 DPS)
+|val-Evolved-Health = 9,350 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(562.2 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Evolved-Recharge Time = 66.6 ~ 57.8 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni192 f00}}
+
+==Trivia==
+* Yamaoka Minori is based on a [[PONOS Corporation|PONOS]] staff member of the same name, who participated in "Gals Paradise 2015".
+
+==Reference==
+*https://battlecats-db.com/unit/193.html
+----
+{{CatNav|Titi|Nakamura Kanae}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

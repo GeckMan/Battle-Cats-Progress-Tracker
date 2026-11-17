@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Catclaw Castle|Metal Hippoe|Those Guys}}
+'''Rank-Up Test 1''' is the first stage in [[Catclaw Championships#Catclaw Championships Rank 3|Catclaw Championships Rank 3]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:E 710.png]]
+[[File:Mapsn002 00 g en.png]]
+|stage location = [[File:Mapname002 g en.png]]
+|energy = 0
+|enemy castle hp = 60,000 HP
+|base = {{Magnification|Catclaw Castle|600,000%}}
+|enemies = {{Magnification|Those Guys|150%}}
+|boss = {{Magnification|Metal Hippoe|100%}}
+|treasure = - [[Leadership]] +3 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 10 XP
+|width = 5,400
+|max enemies = 20
+|jpname = Promotion Exam 1
+|script = 昇段試験１
+|romaji = Shōdan Shiken 1
+|star = 1
+|dojo-chapter = [[Catclaw Championships#Catclaw Championships Rank 3|Catclaw Championships Rank 3]]
+|prev stage = N/A
+|next stage = [[Rank-Up Test 2 (Rank 3)|Rank-Up Test 2]]
+}}
+
+==Restrictions==
+*Fixed lineup: [[Cat (Normal Cat)|Macho Cat]], [[Moneko (Special Cat)|Miss Moneko]] and [[Jurassic Cat (Rare Cat)|Jurassic Cat Sitter]].
+
+==Battleground==
+*The enemy base here is a [[Catclaw Castle (Enemy Base)|Catclaw Castle]].
+*1 [[Metal Hippoe]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+
+==Strategy==
+This stage introduces the Metal trait: a trait in which the enemies take only 1 damage from all attacks except critical attacks.
+
+You are supplied with multiple critical attackers, [[Moneko (Special Cat)|Miss Moneko]] and [[Jurassic Cat (Rare Cat)|Jurassic Cat]]. While Moneko isn't very spammable, Jurassic Cat is. Keep sending out both and you'll win once one of them lands a crit.
+
+==Hints==
+The first hint can be viewed within the Enemies Appearing window before beginning the stage. The second only appears as a defeat message when failing it.
+*Machine-like Metal enemies<br>take very little damage.<br>To deal with them, deploy units with the<br>{{Color|Blue|Critical}} ability.
+*Deploy Macho Cat to protect<br>Miss MONEKO and<br>Jurassic Cat Sitter!
+
+==Reference==
+*https://battlecats-db.com/stage/s37002-01.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]
+[[Category:No Continue Stages]]
+[[Category:Restriction Stages]]

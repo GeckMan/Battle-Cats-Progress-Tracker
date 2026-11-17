@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Shibalien|Hyppoh|Helmut Krabbe|Maawth|Nimoy Bore}}
+:''Not to be confused with the [[Heavenly Tower/Floor 8|Heavenly Tower]] or [[Infernal Tower/Floor 8|Infernal Tower]] versions of Floor 8.''
+'''Floor 8''' is the eighth floor of [[Alien Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 07 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 160
+|enemy castle hp = 360,000 HP
+|enemies = {{Magnification|Shibalien|250%
+|Hyppoh|250%
+|Helmut Krabbe|250%
+|Maawth|250%
+|Nimoy Bore|250%}}
+|boss = {{Magnification|Shibalien|1%}}
+|treasure = - 750,000 XP (100%, 1 time)
+|XP = 3,040 XP
+|width = 4,800
+|max enemies = 10
+|jpname = 8th Floor
+|script = 8階
+|romaji = 8 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★7
+|prev stage = [[Alien Citadel/Floor 7|Floor 7]]
+|next stage = [[Alien Citadel/Floor 9|Floor 9]]
+}}
+
+==Battleground==
+*7 [[Shibalien]]s (250%) spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[Hyppoh]]s spawn after 10 seconds<sup>300f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*3 [[Helmut Krabbe]]s spawn after 10 seconds<sup>300f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[Shibalien]]s (250%) spawn after 60 seconds<sup>1,800f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien]] (1%) spawns as the boss.
+**5 [[Hyppoh]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Maawth]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**2 [[Nimoy Bore]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+
+==Strategy==
+This stage is relatively easy with all [[:Category:Anti-unstarred Alien Treasures|Anti-unstarred Alien Treasures]], as they allow you to use units like [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to quickly deal with Nimoy Bore and Maawth as well as any other attackers to completely anihilate this stage. Make sure to bring [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] or [[Psychocat (Rare Cat)|Psychocat]] for crowd-control, and you're good to go.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-08.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

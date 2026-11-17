@@ -1,0 +1,102 @@
+:''For the Cat Unit, see [[Hermit Cat (Special Cat)]]. For the stronger boss, see [[Masked Grandmaster Cat (Enemy)]].''
+'''Hermit Cat''' (ネコ仙人, ''Neko Sennin'', '''Cat Hermit''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears on the [[Heavenly Tower/Floor 30|30th]] and [[Heavenly Tower/Floor 49|49th]] floors of the [[Heavenly Tower]]. Defeating him on Floor 30 will unlock his [[Hermit Cat (Special Cat)|Cat Unit counterpart]] via [[Catnip Challenges]]. He was added in [[Version 6.2 Update|Version 6.2]]. In [[The Battle Cats Unite!]], he was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Hermit Cat
+|image = E 354.png
+|appearance = [[Heavenly Tower/Floor 30|Heavenly Tower - Floor 30]]<br>
+[[Heavenly Tower/Floor 49|Heavenly Tower - Floor 49]]
+|money drop = 2,222¢ - 8,776¢
+}}
+
+==Enemy==
+Hermit Cat has extreme health along with a three-part multi-hit, each of which inflicts 22,222 damage and creates a Lv.5 [[Wave Attack]] on hit. He is a mid-range attacker and needs to be knocked back 12 times before death. He isn't threatening on his own, but the peons on Floor 30 can prove a handful and particularly lethal with him backing them.
+
+==Strategy==
+:''For strategies, see [[Heavenly Tower/Floor 30|Floor 30]] and [[Heavenly Tower/Floor 49|Floor 49]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 354
+|Type = [[:Category:Traitless Enemies|Traitless]]
+|Image1 = Enemy icon 354.png
+|Name1 = Hermit Cat
+|Desc1 = At the top of the Heavenly Tower, this living<br>legend of martial arts awaits the worthy.<br>Loves to humble rich kids who think they can<br>just buy enlightenment. Loves pink lemonade.
+|Name1 (JP) = ネコ仙人 (Neko Sennin, Cat Hermit)
+|Desc1 (JP) = にゃんこ塔に住みついている武術の極意を<br>マスターした伝説の仙人。たどり着いた者に<br>実戦を挑み、稽古をつけるバイトをしている。<br>好きな食べ物は苺大福。
+|Transl1 (JP) = Legendary hermit who mastered the<br>secret of martial arts and lives in a [[Heavenly Tower|Cat Tower]]. Works part-time challenging those who reach him<br>to battle and giving them training.<br>His favorite food is strawberry daifuku.
+|Name1 (TW) = 貓咪仙人
+|Desc1 (TW) = 隱居在貓咪塔中，領悟了武術<br>真髓的傳說仙人。以對來訪者<br>進行實戰訓練及修練作爲打工。<br>最愛吃草莓麻糬。
+|Name1 (KR) = 고양이 신선
+|Desc1 (KR) = 냥코탑에 눌러 살고 있는 무술의 극의를<br>마스터한 전설의 신선. 혼자만 이 탑을<br>신선의 탑이라고 부르고 있다.<br>좋아하는 음식은 설렁탕.
+}}
+
+==Variants==
+{{Variant
+|original = Hermit Cat
+|Masked Grandmaster Cat
+|A [[:Category:Relic Enemies|Relic]] variant of Hermit Cat that appears on [[Infernal Tower/Floor 30|Floor 30]] and [[Heavenly Tower/Floor 49|Floor 49]] of the [[Infernal Tower]]. Has the same amount of health, but deals even more damage and can curse every Cat Unit he hits.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Heavenly Tower]]:
+**[[Heavenly Tower/Floor 30|Floor 30]]
+**[[Heavenly Tower/Floor 49|Floor 49]]
+*[[Golden Tower]]:
+**[[Golden Tower/Floor 30|Floor 30]]
+**[[Golden Tower/Floor 49|Floor 49]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Hermit Cat
+|Health = 4000000
+|Attack Power = 66666
+|Attack Range = 255
+|Attack Type = Area
+|Time Between Attacks = 79
+|Movement Speed = 8
+|Knockback = 12
+|Foreswing = 27
+|Backswing = 27
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">22,222</span> at 27f <sup>0.9s</sup>, <span class="scaled" data-type="ap">22,222</span> at 34f <sup>1.13s</sup>, <span class="scaled" data-type="ap">22,222</span> at 52f <sup>1.73s</sup>)<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 5 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg064.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+354 e.png|Hermit Cat's spritesheet
+Hermitenemy.gif|Hermit Cat's animations
+</gallery>
+
+==Trivia==
+*Hermit Cat is a reference to [[wikia:dragonball:Korin|Korin]] from the ''Dragon Ball'' series. Just like Korin, he is a cat who lives on top of a [[Heavenly Tower|Giant Tower]], carries a walking stick, and is deceptively powerful.
+**The ''[[wikipedia:Daifuku|mame daifuku]]'' mentioned in [[Hermit Cat (Special Cat)|allied Hermit Cat]]'s Japanese description is a sweet rice cake with azuki beans or soybeans mixed into it. This may be another reference to Korin, who is known as the farmer of the legendary [[wikia:dragonball:Senzu Beans|Senzu Beans]], which  have incredible regenerative properties.
+**[[Masked Grandmaster Cat (Enemy)|Masked Grandmaster Cat]]'s mask greatly resembles that of [[wikia:dragonball:Grandpa Gohan|Grandpa Gohan]], another character from ''Dragon Ball''.
+*As of [[Version 6.7 Update|Version 6.7]], Hermit Cat's description is outdated, as [[Heavenly Tower/Floor 30|Floor 30]] is no longer the top of the [[Heavenly Tower]].
+*"Loves to humble rich kids who think they can just buy enlightenment" may be a reference to how Floor 30 initially required a high amount of skill compared to other stages without certain units, as most of the [[:Category:Uber Rare Cats|Uber Rare Cats]] that existed at the time of its release are ineffective there.
+*Hermit Cat's Japanese description implies that the [[Battle|battle]] against him is a form of training.
+
+==Reference==
+*https://battlecats-db.com/enemy/356.html
+
+----
+{{EnemyNav|Nisetama Army|Croakley}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Mythic Bosses]]

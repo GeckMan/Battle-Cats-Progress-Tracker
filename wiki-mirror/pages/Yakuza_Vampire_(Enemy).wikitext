@@ -1,0 +1,66 @@
+{{JPExclusive}}
+:''For the Cat Unit, see [[Mob Cat (Special Cat)]]. For the weaker boss, see [[Mob Cat (Enemy)]].''
+'''Yakuza Vampire''' (ヤクザヴァンパイア, ''Yakuza Vanpaia'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Yakuza Apocalypse Collaboration Event]]. It was added in [[Version 3.5 Update|Version 3.5]].
+
+{{Enemy Info
+|name = Yakuza Vampire
+|image = E 162.png
+|appearance = [[Yakuza Apocalypse Collaboration Event]]
+|money drop = 893円 - 3,527円
+}}
+
+==Enemy==
+Just like [[Mob Cat (Enemy)|Mob Cat]], this enemy has rather low stats except for its health, so units like [[Lizard Cat (Normal Cat)|Dragon Cat]] are easily able to deal with the unit standing at a safe distance. Its 20% chance to [[Freeze|freeze]] cats isn't much to take note of as due to its low range, it is most likely to only freeze the player's meatshields and not much else.
+
+==Strategy==
+Use three or four meatshields, such as [[Cat (Normal Cat)|Macho Cat]], [[Tank Cat (Normal Cat)|Wall Cat]] or [[Boogie Cat (Special Cat)|Samba Cat]]. You should also use cats that can outrange it like [[Lizard Cat (Normal Cat)|Dragon Cat]] or [[Gross Cat (Normal Cat)|Sexy Legs Cat]]. Units such as [[Mer-Cat (Rare Cat)|Cameraman Cat]] or [[Titan Cat (Normal Cat)|Jamiera Cat]] are not as effective due to being outranged, this wouldn't be a problem if it weren't for Yakuza Vampire's [[Freeze|freeze]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Yakuza Apocalypse Collaboration Event#Yakuza Apocalypse|Yakuza Apocalypse]]:
+**[[When Bitten, Everyone Is A Yakuza]] (100%)
+**[[The Great Summit War!!]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Yakuza Vampire
+|Health = 40000
+|Attack Power = 1200
+|Attack Range = 255
+|Attack Type = Area
+|Time Between Attacks = 87
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 18
+|Backswing = 13
+|Ability = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+VampireThingy.gif|Yakuza Vampire's animation
+162 e.png|Yakuza Vampire's spritesheet
+</gallery>
+
+==Trivia==
+*Yakuza Vampire's minimum money drop of 893 is the ''[[wikipedia:Goroawase|goroawase]]'' number for ''yakuza''. The word ''yakuza'' originates from the traditional card game ''[[wikipedia:Oicho-Kabu|Oicho-Kabu]]'', in which 8-9-3 (ya-ku-sa) is considered one of the worst possible hands to have.
+
+==Reference==
+*https://battlecats-db.com/enemy/164.html
+
+----
+{{EnemyNav|Mob Cat|Hearscht}}
+----
+
+{{Yakuza Apocalypse}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Area Attack Enemies]]

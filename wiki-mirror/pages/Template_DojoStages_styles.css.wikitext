@@ -1,0 +1,10 @@
+.ranger-navbox.dojo {
+	--bg-navbox-title: linear-gradient(to bottom, #bf663f 0%, #ad5d39 100%);
+	--bg-sub-table-title: linear-gradient(135deg, #633520 0%, #7d4329 100%);
+	--bg-group-name: #ce8a5f;
+
+	--group-color: #000;
+	--title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

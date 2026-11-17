@@ -1,0 +1,469 @@
+<tabber>
+Healer & Co. Lv.1=
+{{EnemiesAppearing|Celesse|Nono|Olga|Norn|Yoichi|Aura|Rei|Wyvern|Healer}}
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn004 00 ca en.png]]
+|stage location = [[File:Mapname004 ca en.png]]
+|energy = 70
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Celesse|600%
+|Nono|600%
+|Olga|400%
+|Norn|400%
+|Yoichi|400%
+|Aura|100%
+|Rei|100%
+|Wyvern|50%}}
+|boss = {{Magnification|Healer|100%}}
+|treasure = - [[Battle Items#Treasure Radar|Treasure Radar]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 1,330 XP
+|width = 5,000
+|max enemies = 12
+|jpname = Healer and Friends Lv.1
+|script = 癒術士と仲間たち Lv.1
+|romaji = Shi to Nakama-tachi Lv.1
+|star = 1
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Trials of Merc Storia!]]
+|max clears = 3
+|difficulty = ★5
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*5 [[Celesse (Enemy)|Celesses]] spawn, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+*5 [[Nono (Enemy)|Nonos]] spawn after 6 seconds<sup>180f</sup>, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+*5 [[Olga (Enemy)|Olgas]] spawn after 12 seconds<sup>360f</sup>, delay 23.33~36.67 seconds<sup>700f~1,100f</sup>.
+*5 [[Norn (Enemy)|Norns]] spawn after 20 seconds<sup>600f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Yoichi (Enemy)|Yoichis]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*2 [[Aura (Enemy)|Auras]] spawn after 30 seconds<sup>900f</sup>, delay 30 seconds<sup>900f</sup>.
+*4 [[Rei (Enemy)|Reis]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Wyvern (Enemy)|Wyvern]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Healer (Enemy)|Healer]] spawns as the boss after 13.33 seconds<sup>400f</sup>.
+
+|-|
+Healer & Co. Lv.2~10=
+{{EnemiesAppearing|Celesse|Nono|Olga|Norn|Yoichi|Aura|Rei|Wyvern|Healer}}
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn004 00 ca en.png]]
+|stage location = [[File:Mapname004 ca en.png]]
+|enemies = {{Magnification|Celesse|0
+|Nono|0
+|Olga|0
+|Norn|0
+|Yoichi|0
+|Aura|0
+|Rei|0
+|Wyvern|0}}
+|boss = {{Magnification|Healer|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 12
+|jpname = Healer and Friends Lv.X
+|script = 癒術士と仲間たち Lv.X
+|romaji = Shi to Nakama-tachi Lv.X
+|star = 1
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Trials of Merc Storia!]]
+|max clears = 3
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*5 [[Celesse (Enemy)|Celesses]] spawn, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+*5 [[Nono (Enemy)|Nonos]] spawn after 6 seconds<sup>180f</sup>, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+*5 [[Olga (Enemy)|Olgas]] spawn after 12 seconds<sup>360f</sup>, delay 23.33~36.67 seconds<sup>700f~1,100f</sup>.
+*5 [[Norn (Enemy)|Norns]] spawn after 20 seconds<sup>600f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Yoichi (Enemy)|Yoichis]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*2 [[Aura (Enemy)|Auras]] spawn after 30 seconds<sup>900f</sup>, delay 30 seconds<sup>900f</sup>.
+*4 [[Rei (Enemy)|Reis]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Wyvern (Enemy)|Wyvern]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Healer (Enemy)|Healer]] spawns as the boss after 10 seconds<sup>300f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Healer & Co.
+! colspan="9" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Celesse (Enemy)|Celesse]]
+! scope="col" |[[Nono (Enemy)|Nono]]
+! scope="col" |[[Olga (Enemy)|Olga]]
+! scope="col" |[[Norn (Enemy)|Norn]]
+! scope="col" |[[Yoichi (Enemy)|Yoichi]]
+! scope="col" |[[Aura (Enemy)|Aura]]
+! scope="col" |[[Rei (Enemy)|Rei]]
+! scope="col" |[[Wyvern (Enemy)|Wyvern]]
+! scope="col" |[[Healer (Enemy)|Healer]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |2
+|900%
+|900%
+|600%
+|600%
+|600%
+|175%
+|175%
+|75% HP/88% AP
+|175%
+|300,000 HP
+|70
+|[[Catfruit|Purple Catfruit]] +3
+|1,330 XP
+|-
+! scope="row" |3
+|1,200%
+|1,200%
+|800%
+|800%
+|800%
+|250%
+|250%
+|100% HP/126% AP
+|250%
+|350,000 HP
+|70
+|500,000 XP
+|1,330 XP
+|-
+! scope="row" |4
+|1,500%
+|1,500%
+|1,000%
+|1,000%
+|1,000%
+|325%
+|325%
+|125% HP/164% AP
+|325%
+|400,000 HP
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|1,330 XP
+|-
+! scope="row" |5
+|1,800%
+|1,800%
+|1,200%
+|1,200%
+|1,200%
+|400%
+|400%
+|150% HP/200% AP
+|400%
+|450,000 HP
+|90
+|[[Catamin]] [A] +3
+|1,710 XP
+|-
+! scope="row" |6
+|2,040%
+|2,040%
+|1,360%
+|1,360%
+|1,360%
+|480%
+|480%
+|160% HP/220% AP
+|480%
+|500,000 HP
+|90
+|[[Catfruit|Red Catfruit]] +3
+|1,710 XP
+|-
+! scope="row" |7
+|2,280%
+|2,280%
+|1,520%
+|1,520%
+|1,520%
+|560%
+|560%
+|170% HP/240% AP
+|560%
+|550,000 HP
+|90
+|750,000 XP
+|1,710 XP
+|-
+! scope="row" |8
+|2,520%
+|2,520%
+|1,680%
+|1,680%
+|1,680%
+|640%
+|640%
+|180% HP/260% AP
+|640%
+|600,000 HP
+|90
+|[[Cat Capsule|Cat Ticket]] +2
+|1,710 XP
+|-
+! scope="row" |9
+|2,760%
+|2,760%
+|1,840%
+|1,840%
+|1,840%
+|720%
+|720%
+|190% HP/280% AP
+|720%
+|650,000 HP
+|90
+|[[Leadership]] +1
+|1,710 XP
+|-
+! scope="row" |10
+|3,000%
+|3,000%
+|2,000%
+|2,000%
+|2,000%
+|800%
+|800%
+|200% HP/300% AP
+|800%
+|700,000 HP
+|110
+|[[Catamin]] [B] +3
+|2,090 XP
+|}
+
+|-|
+Healer & Co. Lv.11~20=
+{{EnemiesAppearing|Serum|Alois|Orthos|Fuu|Cornelia|Michelia|Hearscht|Todomeki|Healer}}
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn004 00 ca en.png]]
+|stage location = [[File:Mapname004 ca en.png]]
+|enemies = {{Magnification|Serum|0
+|Alois|0
+|Orthos|0
+|Fuu|0
+|Cornelia|0
+|Michelia|0
+|Hearscht|0
+|Todomeki|0}}
+|boss = {{Magnification|Healer|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 10
+|jpname = Healer and Friends Lv.X
+|script = 癒術士と仲間たち Lv.X
+|romaji = Shi to Nakama-tachi Lv.X
+|star = 1
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Trials of Merc Storia!]]
+|max clears = 3
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*5 [[Serum (Enemy)|Serums]] spawn after 18 seconds<sup>540f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*5 [[Alois (Enemy)|Aloises]] spawn after 6 seconds<sup>180f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*5 [[Orthos (Enemy)|Orthos]] spawn after 50 seconds<sup>1,500f</sup>, delay 30~40 seconds<sup>900f~1,200f</sup>.
+*2 [[Fuu (Enemy)|Fuus]] spawn after 20 seconds<sup>600f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*1 [[Cornelia (Enemy)|Cornelia]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Michelia (Enemy)|Michelia]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Hearscht (Enemy)|Hearscht]] spawns after 120 seconds<sup>3,600f</sup>.
+*1 [[Todomeki (Enemy)|Todomeki]] spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Healer (Enemy)|Healer]] spawns as the boss after 20 seconds<sup>600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Healer & Co.
+! colspan="9" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Serum (Enemy)|Serum]]
+! scope="col" |[[Alois (Enemy)|Alois]]
+! scope="col" |[[Orthos (Enemy)|Orthos]]
+! scope="col" |[[Fuu (Enemy)|Fuu]]
+! scope="col" |[[Cornelia (Enemy)|Cornelia]]
+! scope="col" |[[Michelia (Enemy)|Michelia]]
+! scope="col" |[[Hearscht (Enemy)|Hearscht]]
+! scope="col" |[[Todomeki (Enemy)|Todomeki]]
+! scope="col" |[[Healer (Enemy)|Healer]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |11
+|1,000%
+|1,000%
+|1,000%
+|600%
+|600%
+|600%
+|150% HP/250% AP
+|250%
+|820% HP/840% AP
+|750,000 HP
+|110
+|[[Catfruit|Blue Catfruit]] +3
+|2,090 XP
+|-
+! scope="row" |12
+|1,100%
+|1,100%
+|1,100%
+|675%
+|675%
+|675%
+|163% HP/269% AP
+|269%
+|840% HP/880% AP
+|800,000 HP
+|110
+|1,000,000 XP
+|2,090 XP
+|-
+! scope="row" |13
+|1,200%
+|1,200%
+|1,200%
+|750%
+|750%
+|750%
+|176% HP/288% AP
+|288%
+|860% HP/920% AP
+|850,000 HP
+|120
+|[[Cat Capsule|Cat Ticket]] +2
+|2,280 XP
+|-
+! scope="row" |14
+|1,300%
+|1,300%
+|1,300%
+|825%
+|825%
+|825%
+|189% HP/307% AP
+|307%
+|880% HP/960% AP
+|900,000 HP
+|120
+|[[Catfruit|Green Catfruit]] +3
+|2,280 XP
+|-
+! scope="row" |15
+|1,400%
+|1,400%
+|1,400%
+|900%
+|900%
+|900%
+|200% HP/325% AP
+|325%
+|900% HP/1,000% AP
+|950,000 HP
+|130
+|[[Catamin]] [C] +3
+|2,470 XP
+|-
+! scope="row" |16
+|1,440%
+|1,440%
+|1,440%
+|960%
+|960%
+|960%
+|210% HP/340% AP
+|340%
+|920% HP/1,040% AP
+|1,000,000 HP
+|130
+|[[Catfruit|Yellow Catfruit]] +3
+|2,470 XP
+|-
+! scope="row" |17
+|1,480%
+|1,480%
+|1,480%
+|1,020%
+|1,020%
+|1,020%
+|220% HP/355% AP
+|355%
+|940% HP/1,080% AP
+|1,050,000 HP
+|130
+|[[Leadership]] +1
+|2,470 XP
+|-
+! scope="row" |18
+|1,520%
+|1,520%
+|1,520%
+|1,080%
+|1,080%
+|1,080%
+|230% HP/370% AP
+|370%
+|960% HP/1,120% AP
+|1,100,000 HP
+|140
+|1,500,000 XP
+|2,660 XP
+|-
+! scope="row" |19
+|1,560%
+|1,560%
+|1,560%
+|1,140%
+|1,140%
+|1,140%
+|240% HP/385% AP
+|385%
+|980% HP/1,160% AP
+|1,150,000 HP
+|140
+|[[Catfruit|Epic Catfruit]] +3
+|2,660 XP
+|-
+! scope="row" |20
+|1,600%
+|1,600%
+|1,600%
+|1,200%
+|1,200%
+|1,200%
+|250% HP/400% AP
+|400%
+|1,000% HP/1,200% AP
+|1,200,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850 XP
+|}
+</tabber>
+
+==Strategy==
+You will need plenty of meatshields for this stage, preferably fast ones such as [[Crazed Cat (Super Rare Cat)|Crazed Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank Cat]]. You may even need a Rich Cat due to the fact that all of the enemies spawn on a timer. Healer and Wyvern are the main threats. For Healer, any attackers with above 310 range will be helpful. For Wyvern, it is recommended you stall it until Healer is killed before proceeding with it. Once you do take care of Healer, [[Bahamut Cat (Special Cat)|Awakened Bahamut]] and [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] can be used to deal burst damage. Once Wyvern is down, all thats left is to destroy the enemy base while holding off the peons of course.
+
+==Reference==
+*https://battlecats-db.com/stage/s27004.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

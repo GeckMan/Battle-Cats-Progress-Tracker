@@ -1,0 +1,124 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy unit, see [[Nisetama Army (Enemy)]].''
+'''Nisetama Army''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 6.2 Update|Version 6.2]] and was created by a [[Gudetama Collaboration Event|collaboration]] between Battle Cats and Sanrio's Gudetama (Hello Sanrio). During the collaboration event, this unit was available via the [[Cat Capsule#Rare Capsule|Rare Capsule]].
+
+{{Cat Info
+|ID = 350
+|rarity = UR
+|name1 = Nisetama Army
+|name2 = Nisetama Cat Army
+}}
+
+==Evolution==
+Evolves into '''Nisetama Cat Army''' at level 10.
+
+==Strategy/Usage==
+Aside from its goofy appearance, Nisetama Army is just average. Nisetama is faster and stronger than pre-[[True Form]] [[Ururun Wolf (Special Cat)|Ururun Wolf]] but has less range, which is decent enough, and his [[Knockback|Knockback]] can help with melee Red and Alien enemies like [[Bore]], [[One Horn]], and [[Cyberhorn]]. Better options spring up once you progress in the game, particularly Awakened Ururun and better Knockback Ubers like [[Raiden (Uber Rare Cat)|God-Emperor Raiden]] and [[Mizli (Uber Rare Cat)|Mizuririn]]. Nisetama loses usefulness due to being an older, boring Uber with no truly strong skills.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 350
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni350 f00.png
+|Image2 = Uni350 c00.png
+|Name1 (JP) = ニセたま軍団 (Nise tama gundan, Nise Tama Corps)
+|Desc1 (JP) = 人気キャラクターぐでたまが参戦！<br>ニセたまさん、はりきってんね～<br>たまに赤い敵とエイリアンをふっとばす(範囲攻撃)
+|Transl1 (JP) = Popular character from Gudetama participates!<br>Fake Tama-san, I'm sorry ~<br>Occasionally blows red enemies and aliens (range attack)
+|Name2 (JP) = ネコニセたま軍団 (Neko nise tama gundan, Neko Nise Tama Corps)
+|Desc2 (JP) = 人気キャラクターぐでたまが参戦！<br>その恰好、おしゃれだとおもってんの～？<br>たまに赤い敵とエイリアンをふっとばす(範囲攻撃)
+|Transl2 (JP) = Popular character from Gudetama participates!<br>Do you think it looks fashionable?<br>Occasionally blows red enemies and aliens (range attack)
+|Name1 (TW) = 蛋黃人軍團
+|Desc1 (TW) = 人氣蛋黃哥懶得參戰…<br>蛋黃人還真充滿幹勁～！<br>有時候打飛紅色敵人和異星戰士（範圍攻擊）
+|Name2 (TW) = 貓咪蛋黃人軍團
+|Desc2 (TW) = 人氣蛋黃哥懶得參戰…<br>貓咪裝很潮嗎？<br>有時候打飛紅色敵人和異星戰士（範圍攻擊）
+|Name1 (KR) = 니세타마 군단
+|Desc1 (KR) = 인기 캐릭터 구데타마 참전!<br>힘을 내요, 니세타마씨~<br>가끔 빨간 적과 에이리언을 날려버린다 (범위 공격)
+|Name2 (KR) = 니세타마 냥코군단
+|Desc2 (KR) = 인기 캐릭터 구데타마 참전!<br>냥코쫄쫄이가 잘 어울려요, 니세타마씨~<br>가끔 빨간 적과 에이리언을 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,700円
+*Chapter 2: 4,050円
+*Chapter 3: 5,400円
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nisetama Army
+|Normal Base HP = 2700
+|Normal Base AP = 1399
+|Normal Range = 410
+|Normal Foreswing = 58
+|Normal Attack Cooldown = 71
+|Normal Attack Length = 89
+|Normal Speed = 24
+|Normal KB = 5
+|Normal Cost = 2700
+|Normal Recharge = 3800
+|Normal Attack Type = Area
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Nisetama Cat Army
+|Evolved Base HP = 2700
+|Evolved Base AP = 1399
+|Evolved Range = 410
+|Evolved Foreswing = 58
+|Evolved Attack Cooldown = 71
+|Evolved Attack Length = 84
+|Evolved Speed = 24
+|Evolved KB = 5
+|Evolved Cost = 2700
+|Evolved Recharge = 3800
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,700 HP
+|val-Normal-Attack Power = 1,399 damage<br>(325.35 DPS)
+|val-Normal-Attack Range = 410
+|val-Normal-Attack Frequency = 129f <sub>4.3 seconds</sub>
+|val-Normal-Movement Speed = 24
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 58f <sup>1.93s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 126.67 ~ 117.87 seconds
+|val-Normal-MaxHP = 45,900 HP
+|val-Normal-MaxAttack = 23,782 damage<br>(5,530.7 DPS)
+|val-Evolved-Health = 45,900 HP
+|val-Evolved-Attack Power = 23,782 damage<br>(5,530.7 DPS)
+|val-Evolved-Attack Range = 410
+|val-Evolved-Attack Frequency = 129f <sub>4.3 seconds</sub>
+|val-Evolved-Movement Speed = 24
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 58f <sup>1.93s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 126.67 ~ 117.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni350 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/351.html
+
+----
+{{CatNav|Gudegude Pudding|Twinstars}}
+----
+
+{{Gudetama}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Cats with unique death animations]]

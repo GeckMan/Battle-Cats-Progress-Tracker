@@ -1,0 +1,71 @@
+{{EnemiesAppearing|Wild Doge|Owlbrow|Maawth|Spacefish Jones|Calamary|Casaurian Darkjo}}
+'''Lava Caves Area 5''' is the fifth stage in [[Jinfore Volcano]]. It is unlocked after clearing [[Two Great Shadows]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn002 04 q en 1.png]]
+|stage location = [[File:Mapname002 q en.png]]
+|energy = 250
+|enemy castle hp = 850,000 HP
+|enemies = {{Magnification|Wild Doge|200%
+|Owlbrow|1,200%
+|Maawth|2,400%
+|Spacefish Jones|2,500%
+|Calamary|500%}}
+|boss = {{Magnification|Casaurian Darkjo|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Stone]] +1 (19%)<br>
+- [[Catfruit#Behemoth Stones|Red Behemoth Stone]] +1 (19%)<br>
+- [[Catfruit#Behemoth Stones|Blue Behemoth Stone]] +1 (19%)<br>
+- [[Catfruit#Behemoth Stones|Green Behemoth Stone]] +1 (19%)<br>
+- [[Catfruit#Behemoth Stones|Yellow Behemoth Stone]] +1 (24%)
+|XP = 7,500 XP
+|width = 4,800
+|max enemies = 10
+|jpname = Hot Mountain Path Area 5
+|script = 熱風山道 エリア5
+|romaji = Neppū Sandō Eria 5
+|star = 1
+|event-chapter = [[Jinfore Volcano]]
+|max clears = 1
+|difficulty = ★10
+|prev stage = [[Magma Tunnel Area 4]]
+|next stage = [[Lava Caves Area 6]]
+|require = Clear [[Two Great Shadows|Peril in the Volcano]]
+|occurrence = *Monday, Thursday: 19:00~23:00
+*Tuesday, Friday, Sunday: 07:00~11:00
+*Wednesday, Saturday: 12:00~16:00
+}}
+
+==Battleground==
+*3 [[Wild Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*2 [[Owlbrow]]s spawn after 16.67 seconds<sup>500f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[Maawth]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Casaurian Darkjo]] spawns as the boss.
+**Infinite [[Wild Doge]]s spawn, delay 23.33~30 seconds<sup>700f~900f</sup>.
+**3 [[Wild Doge]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Owlbrow]]s spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**1 [[Spacefish Jones]] spawns.
+**1 [[Calamary]] spawns.
+
+==Strategy==
+When entering the stage, the best option is to try and stack your wallet as much as possible. Using [[Maglev Cat]] to stall the Wild Doges may be helpful.
+
+Using anti-Floating units like [[Octopus Cat]] can help with dealing with the Owlbrows and the highly buffed Maawth.
+
+Once you touch the base, you will be greeted with two pushing forces: Casaurian Darkjo and Calamary. Units like [[Courier Cat]] and [[Pizza Cat]] can help with clearing both enemies.
+
+Aside from them, your biggest concern is Spacefish Jones. Unless you have all anti-starred alien treasures it will take a while to take him down. Using [[Seafarer Cat]] to try and freeze Jones is a valid tactic only if the supporting forces are defeated first. Try to cycle Courier and an additional melee unit to keep the Wild Doges away. If you get low on money, reduce your forces to units like Maglev or [[Can Can Cat]]. Make sure to keep up your defenses or else the Wild Doges will demolish your forces.
+
+==Gallery==
+<gallery>
+Mapsn002 04 q en.png|Pre-[[Version 11.6 Update|11.6]] map name
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/stage/s31002-05.html
+
+{{Guerrilla}}
+[[Category:Behemoth Culling]]
+[[Category:Event Stages]]

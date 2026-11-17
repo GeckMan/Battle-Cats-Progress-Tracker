@@ -1,0 +1,127 @@
+{{Unobtainable}}
+{{JPExclusive}}
+'''Felyne''' is a [[:Category:Special Cats|Special Cat]] created by a collaboration event between [[Monster Hunter Collaboration Event|Battle Cats and Monster Hunter]]. It was added in [[Version 4.2 Update|Version 4.2]]. This unit can be unlocked by completing collaboration quests in the Monster Hunter Big Game Hunting Quest app.
+
+{{Cat Info
+|ID = 204
+|rarity = EX
+|name1 = Felyne
+|name2 = Felyne & Melynx
+}}
+
+==Strategy/Usage==
+==='''Normal Form'''===
+While Felyne's spammability and rapid attacks are great qualities for a crowd-controller, the rest of its kit massively works against it. Felyne's pathetic HP and range make it difficult to maintain a stack against nearly anything. Its targeted trait being [[:Category:Dark Enemies|Dark]] makes this even worse considering that Dark enemies are often spammed and thus require [[:Category:Area Attack Cats|Area Attackers]] to be properly stalled, and main threats like [[Shadow Boxer K]] and [[Gory Dark]] outrange Felyne and easily wipe it out. Even if [[Flower Cat (Special Cat)|Bombercat]] hasn't been acquired yet, [[Cat Gunslinger (Rare Cat)|Cat Gunslinger]] and even [[Tin Cat (Rare Cat)|Tin Cat]] are more worthy of use.
+
+==='''Evolved Form'''===
+Felyne & Melynx go on to target a slightly more suitable trait. They just barely outrange [[Bore]] and [[One Horn]], but such enemies are still threats without primary crowd-control such as [[Witch Cat (Rare Cat)|Witch Cat]] or [[Apple Cat (Super Rare Cat)|Apple Cat]], and other Red enemies like [[Shy Boy]] outrange them. [[Sushi Cat (Super Rare Cat)|Sushi Cat]] is by far a better choice against Red enemies, as they have Area Attack to apply Weaken to multiple enemies at once and impressive bulk to tank them—none of which Felyne & Melynx have.
+
+{{Job|Classification = Crowd-Controller & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 204
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni204 f00.png
+|Image2 = Uni204 c00.png
+|Name1 (JP) = アイルー (Airū)
+|Desc1 (JP) = モンハン 大狩猟クエストから参戦！<br>狩りのオトモも出来るネコそっくりの種族<br>LVが上がりやすく、黒い敵の攻撃力を下げる
+|Transl1 (JP) = Joining the war from Monster Hunter Big Game Hunting Quest!<br>A species that looks just like a cat and can serve as a hunting companion.<br>Increases LV easily and lowers the attack power of Dark enemies
+|Name2 (JP) = アイルー&メラルー (Airū & Merarū)
+|Desc2 (JP) = モンハン 大狩猟クエストから参戦！<br>やんちゃなメラルーも連れてにゃんこ達のオトモへ<br>LVが上がりやすく、赤い敵の攻撃力を下げる
+|Transl2 (JP) = Joining the war from Monster Hunter Big Game Hunting Quest!<br>Now the naughty Melynx joins the Cat Army!<br>Increases LV easily and lowers the attack power of Red enemies
+}}
+
+==Cost==
+*Chapter 1: 250円
+*Chapter 2: 375円
+*Chapter 3: 500円
+{{Upgrade Cost|MIX
+|0
+|700
+|1100
+|1700
+|2400
+|3200
+|4200
+|5400
+|6700
+|8200
+|800}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Felyne
+|Normal Base HP = 250
+|Normal Base AP = 55
+|Normal Range = 160
+|Normal Foreswing = 12
+|Normal Attack Cooldown = 37
+|Normal Attack Length = 35
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 250
+|Normal Recharge = 300
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Felyne & Melynx
+|Evolved Base HP = 250
+|Evolved Base AP = 55
+|Evolved Range = 160
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 37
+|Evolved Attack Length = 35
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 250
+|Evolved Recharge = 300
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 250 HP
+|val-Normal-Attack Power = 55 damage<br>(33.67 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 12f <sup>0.4s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Normal-Recharge Time = 10 ~ 2 seconds
+|val-Normal-MaxHP = 4,250 HP
+|val-Normal-MaxAttack = 935 damage<br>(572.45 DPS)
+|val-Evolved-Health = 4,250 HP
+|val-Evolved-Attack Power = 935 damage<br>(572.45 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 12f <sup>0.4s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Evolved-Recharge Time = 10 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni204 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/205.html
+
+----
+{{CatNav|Kachi-Kachi|Sheria - Kirin}}
+----
+
+{{Monster Hunter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

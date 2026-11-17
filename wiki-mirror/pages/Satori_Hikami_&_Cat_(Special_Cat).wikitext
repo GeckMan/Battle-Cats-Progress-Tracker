@@ -1,0 +1,130 @@
+'''Satori Hikami & Cat''' is a Special Cat that was introduced in [[Version 6.8 Update|Version 6.8]] and was part of the [[Power Pro Baseball Collaboration Event]]. She was made to advertise the collaboration between the two franchises and to incentivize players to spread awareness about the event. Once players reached 3000 shares and likes on their [https://twitter.com/PONOS_EN/status/958897870563930112 #BattleCatsPlayBall Twitter Campaign] from February 1st, 2018 to February 7, 2018, Satori Hikami & Cat would be given to all players starting on February 15th.
+
+{{Cat Info
+|ID = 384
+|rarity = EX
+|name1 = Satori Hikami & Cat
+|name2 = Satori Hikami & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Satori Hikami & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Hikami is an interesting cat, as she has the ability to knockback [[:Category:Red Enemies|Red]] enemies, albeit at a small 30% chance. Her recharge rate is decent, as she can be spammed at an interval of about ten seconds. However, her range is abysmal, meaning almost all enemies within [[Legend Stages|Stories of Legend]] subchapters and [[Special Events|Event Stages]] will eliminate her quickly.
+
+With proper meatshielding from cats like [[Cat (Normal Cat)|Cat]], [[Crazed Cat (Super Rare Cat)|Crazed Cat]], [[Tank Cat (Normal Cat)|Wall Cat]], and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]], she might be able to get some hits in before she dies, although that is the only thing she will do.
+
+Otherwise, because of her low range, she is not ideal for use in most stages as an attacker, so it is best to use others like [[Salon Cat (Rare Cat)|Salon Cat]] or [[Mer-Cat (Rare Cat)|Cameraman Cat]].
+
+Keep in mind that if you are thinking of using her purely for niche, there is a much better readily available cat: [[Pirate Cat (Rare Cat)|Dread Pirate Cately]], or Pirate Cat. Catley has a greater chance to knockback dangerous enemies like [[Bore]] and [[Berserkory]], and [[Talents]] making him readily useable and more flexible than this cat. Additionally, Catley has more range than Satori.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 384
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni384 f00.png
+|Image2 = Uni384 c00.png
+|Name1 = Satori Hikami & Cat
+|Desc1 = Dropping in from PowerPro Baseball!<br>This manager plays it cool, but actually has a heart of gold.<br>Chance to knockback Red enemies.
+|Name2 = Satori Hikami & Cat CC
+|Desc2 = Dropping in from PowerPro Baseball!<br>An aikido blackbelt with catlike reflexes.<br>Chance to knockback Red enemies.
+|Name1 (JP) = 氷上聡里&ネコ (Hikami Satoshi Sato & Neko, Satori Hikami & Cat)
+|Desc1 (JP) = 実況パワフルプロ野球から参戦！<br>クールに見えて、実は気配り上手なマネージャー<br>たまに赤い敵をふっとばす
+|Transl1 (JP) = Joining the war from Powerful Pro Baseball!<br>She looks cool, but she's actually a very attentive manager<br>Occasionally pushes back Red enemies
+|Name2 (JP) = 氷上聡里&ネコCC (Hikami Satoshi Sato & NekoCC, Satori Hikami & CatCC)
+|Desc2 (JP) = 実況パワフルプロ野球から参戦！<br>運動神経抜群で合気道の達人<br>たまに赤い敵をふっとばす
+|Transl2 (JP) = Joining the war from Powerful Pro Baseball!<br>Athletic and a master of Aikido<br>Occasionally pushes back Red enemies
+|Name1 (TW) = 冰上聰里&貓咪
+|Desc1 (TW) = 來自實況野球的新人物！<br>看似冷酷，實際上是很貼心的球隊經理<br>有時候會打飛紅色敵人
+|Name2 (TW) = 冰上聰里&貓咪CC
+|Desc2 (TW) = 來自實況野球的新人物！<br>運動神經優秀還是合氣道高手<br>有時候會打飛紅色敵人
+|Name1 (KR) = 히카미 사토리&냥코
+|Desc1 (KR) = 실황 파워풀 프로야구에서 참전!<br>차가워 보이지만 실은 배려심 넘치는 매니저<br>가끔씩 빨간 적을 날려버린다
+|Name2 (KR) = 히카미 사토리&냥코CC
+|Desc2 (KR) = 실황 파워풀 프로야구에서 참전!<br>운동 신경이 우수한 합기도의 달인<br>가끔씩 빨간 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 320¢
+*Chapter 2: 480¢
+*Chapter 3: 640¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Satori Hikami & Cat
+|Normal Base HP = 540
+|Normal Base AP = 90
+|Normal Range = 160
+|Normal Foreswing = 21
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 51
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 320
+|Normal Recharge = 660
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Satori Hikami & Cat CC
+|Evolved Base HP = 540
+|Evolved Base AP = 90
+|Evolved Range = 160
+|Evolved Foreswing = 21
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 51
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 320
+|Evolved Recharge = 660
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 540 HP
+|val-Normal-Attack Power = 90 damage<br>(52.94 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 21f <sup>0.7s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 22 ~ 13.2 seconds
+|val-Normal-MaxHP = 9,180 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(900 DPS)
+|val-Evolved-Health = 9,180 HP
+|val-Evolved-Attack Power = 1,530 damage<br>(900 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 21f <sup>0.7s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 22 ~ 13.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni384 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/385.html
+
+----
+{{CatNav|Masked Yulala|Akio Yabe}}
+----
+
+{{Power Pro Baseball}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]

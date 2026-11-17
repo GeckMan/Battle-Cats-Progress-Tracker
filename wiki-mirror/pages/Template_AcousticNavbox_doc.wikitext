@@ -1,0 +1,23 @@
+;Description
+:This template is used to show the various types of navbox available on the wiki.
+
+{{AcousticNavbox}}
+
+==CSS vars==
+<syntaxhighlight lang="css">
+:is(.navbox, .navbox-composite).name {
+	--bg-td-1: #fff;
+	--bg-td-2: hsl(208, 100%, 90%);
+
+	--bg-navbox-title: linear-gradient(to right,#ab362b 0%,#ce473b 100%);
+	--bg-sub-table-title: #a4c739;
+	--bg-group-name: #f78a50;
+	--bg-group-member: #ce8a5f;
+
+	--th-group-name-width: 150px;
+
+	--title-color: var(--color-min-contrast);
+	--sub-title-color: var(--title-color);
+	--group-color: var(--color-max-contrast);
+}
+</syntaxhighlight>

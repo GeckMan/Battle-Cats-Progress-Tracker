@@ -1,0 +1,24 @@
+<includeonly><onlyinclude><templatestyles src="CurrentEvents/styles.css" /><div class="current-events" id="current-events" data-margin-days="{{{margin|365}}}"">{{Cachebuster list|Template:CurrentEvents/Images.json|Template:CurrentEvents/Schedule.json}}<tabber>
+Gacha=
+{| class="bg-light3" style="margin: auto; width: 100%; border-collapse: separate; padding: 2px; clear: both; border-radius: 6px; text-align: center;"
+! style="background-color: var(--theme-accent-color); border-radius: 6px; border: 0; color: var(--color-max-contrast);"|- Gacha -
+|-
+| style="font-size: 14px;" | <div class="current-events-gacha"></div>
+|}
+|-|Special Events=
+{| class="bg-light3" style="margin: auto; width: 100%; border-collapse: separate; padding: 2px; clear: both; border-radius: 6px; text-align: center;"
+! style="background-color: var(--theme-accent-color); border-radius: 6px; border: 0; color: var(--color-max-contrast);"|- Special Events -
+|-
+| style="font-size: 14px;" | <div class="current-events-event"></div>
+|}
+|-|Recurring Events=
+{| class="bg-light3" style="margin: auto; width: 100%; border-collapse: separate; padding: 2px; clear: both; border-radius: 6px; text-align: center;"
+! style="background-color: var(--theme-accent-color); border-radius: 6px; border: 0; color: var(--color-max-contrast);"|- Current -
+|-
+| style="font-size: 14px;" | <div class="current-events-recurring-current"></div>
+|-
+! style="background-color: var(--theme-accent-color); border-radius: 6px; border: 0; color: var(--color-max-contrast);"|- Upcoming -
+|-
+| style="font-size: 14px;" | <div class="current-events-recurring-upcoming"></div>
+|}
+</tabber></div>[[Category:Pages using CurrentEvents]]</onlyinclude></includeonly>{{/doc}}

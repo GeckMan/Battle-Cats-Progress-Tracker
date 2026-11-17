@@ -1,0 +1,234 @@
+<tabber>
+Bite for Bite Lv.1~5=
+{{EnemiesAppearing|Snache|Those Guys|Hippoe|Jack Hammer}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn021 00 ca en.png]]
+|stage location = [[File:Mapname021 ca en.png]]
+|enemies = {{Magnification|Snache|0
+|Those Guys|0
+|Hippoe|0}}
+|boss = {{Magnification|Jack Hammer|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = Devouring Each Other Lv.X
+|script = 喰らい合い Lv.X
+|romaji = Kurai Ai Lv.X
+|star = 1
+|event = [[Baki Hanma Collaboration Event]]
+|event-chapter = [[Vs Jack Hammer]]
+|max clears = 3
+}}
+
+==Battleground==
+*3 [[Snache]]s spawn after 4.67 seconds<sup>140f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*5 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Hippoe]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Hippoe]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Hippoe]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Jack Hammer (Enemy)|Jack Hammer]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**5 [[Hippoe]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Bite for Bite Lv.
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Snache]]
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Hippoe]]
+! scope="col" |[[Jack Hammer (Enemy)|Jack Hammer]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|100%
+|5,000 HP
+|50
+|[[Cat Capsule|Cat Ticket]] +1
+|950 XP
+|-
+! scope="row" |2
+|200%
+|200%
+|200%
+|700%
+|40,000 HP
+|70
+|Legendary Dumbbells +1
+|1,330 XP
+|-
+! scope="row" |3
+|400%
+|400%
+|400%
+|1,000%
+|80,000 HP
+|80
+|[[Catamin]] [A] +3
+|1,520 XP
+|-
+! scope="row" |4
+|600%
+|600%
+|600%
+|1,800%
+|150,000 HP
+|90
+|Legendary Dumbbells +1
+|1,710 XP
+|-
+! scope="row" |5
+|800%
+|800%
+|800%
+|3,500%
+|200,000 HP
+|100
+|[[Cat Capsule|Cat Ticket]] +1
+|1,900 XP
+|}
+
+==Strategy==
+These stages are super easy and serve as a demonstration for what Jack Hammer as an enemy does. Spam tankers like [[Manic Island Cat]] and [[Manic Jamiera Cat]] until you win.
+
+|-|
+Bite for Bite Lv.6~10=
+{{EnemiesAppearing|Doge Dark|Zoge|Znache|Zang Roo|Dark Otter|Jack Hammer}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn021 00 ca en.png]]
+|stage location = [[File:Mapname021 ca en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|Zoge|0
+|Znache|0
+|Zang Roo|0
+|Dark Otter|0}}
+|boss = {{Magnification|Jack Hammer|0}}
+|restriction = [[No Continues]]
+|width = 5,500
+|max enemies = 30
+|jpname = Devouring Each Other Lv.X
+|script = 喰らい合い Lv.X
+|romaji = Kurai Ai Lv.X
+|star = 1
+|event = [[Baki Hanma Collaboration Event]]
+|event-chapter = [[Vs Jack Hammer]]
+|max clears = 3
+}}
+
+==Battleground==
+*1 [[Doge Dark]] spawns after 6.67 seconds<sup>200f</sup>.
+*6 [[Zoge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*2 [[Doge Dark]]s spawn after 13.33 seconds<sup>400f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Znache]]s spawn after 20 seconds<sup>600f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Jack Hammer (Enemy)|Jack Hammer]] spawns as the boss.
+**2 [[Zang Roo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 93.33 seconds<sup>2,800f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Dark Otter]]s spawn, delay 66.67 seconds<sup>2,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Bite for Bite Lv.
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Znache]]
+! scope="col" |[[Zang Roo]]
+! scope="col" |[[Dark Otter]]
+! scope="col" |[[Jack Hammer (Enemy)|Jack Hammer]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |6
+|400%
+|150%
+|150%
+|100%
+|100%
+|5,000% HP/4,000% AP
+|400,000 HP
+|110
+|Legendary Dumbbells +1
+|2,090 XP
+|-
+! scope="row" |7
+|600%
+|200%
+|200%
+|100%
+|100%
+|8,000% HP/6,000% AP
+|600,000 HP
+|120
+|[[Catamin]] [B] +3
+|2,280 XP
+|-
+! scope="row" |8
+|800%
+|250%
+|250%
+|200%
+|200%
+|12,000% HP/8,000% AP
+|800,000 HP
+|140
+|Legendary Dumbbells +2
+|2,660 XP
+|-
+! scope="row" |9
+|1,000%
+|300%
+|300%
+|200%
+|250%
+|20,000% HP/12,000% AP
+|1,000,000 HP
+|150
+|[[Catamin]] [C] +3
+|2,850 XP
+|-
+! scope="row" |10
+|1,200%
+|300%
+|300%
+|300%
+|300%
+|30,000% HP/15,000% AP
+|1,200,000 HP
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800 XP
+|}
+
+==Strategy==
+When you hit the base, do so with [[Talents|Talented]] [[Awakened Bahamut Cat]] to get his full Explosion off and deal huge amounts of damage to Jack Hammer. The Zang Roos here can be [[Ototo Corps|Holy Blasted]], drastically reducing their pushing power, while the Dark Otters can be countered with [[Pizza Cat]] and meatshielding. While Jack Hammer does have extremely high stats for the last few stages, this isn't much of a problem and mainly serves as a hindrance in terms of building your lineup, encouraging you to use quicker cooldown units like [[Can Can Cat]] and [[Jelly Dumpling Cat]] instead of Ubers, as well as potentially units with Survive like [[Cameraman Cat]].
+
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s27021.html
+
+{{Baki Hanma}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

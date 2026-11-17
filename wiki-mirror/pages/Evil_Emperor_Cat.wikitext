@@ -1,0 +1,101 @@
+:''Not to be confused with [[Emperor Cat (Legend Rare Cat)]].''
+'''Evil Emperor Cat''' (悪のネコ帝王, ''Aku no Neko Teiō'', '''Evil Cat Emperor''') is [[Emperor Cat (Legend Rare Cat)|Emperor Cat]], consumed by [[:Category:Relic Enemies|Relic]] power and possessed by a malevolent force. He appears in the [[:Category:Advent Stages|Advent Stage]] [[Possessed by Evil (Merciless)|Prelude to Ruin]]. He was added in [[Version 10.2 Update|Version 10.2]].
+
+{{Enemy Info
+|name = Evil Emperor Cat
+|image = E 535.png
+|appearance = [[Possessed by Evil (Merciless)|Prelude to Ruin]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Like most [[:Category:Advent Bosses|Advent Bosses]], his great range together with his many abilities leave him to be a support unit rather than the main threat. 520 range means that almost every cat sent out to fight him will be gravely crippled with his Freeze and Curse abilities, rendering them vulnerable to the [[Capy]] and [[Oldhorn]]. Evil Emperor Cat also possesses [[Omni Strike]] with a range of -630~620 and a Lv.2 [[Surge Attack]], making his debuffs all the more difficult to avoid. However, for an Advent Boss, his DPS is surprisingly low, and it's mostly the other pushers presenting a threat.
+
+==Strategy==
+:''See [[Possessed by Evil (Merciless)]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 535
+|Type = [[:Category:Relic Enemies|Relic]]
+|Image1 = Enemy icon 535.png
+|Name1 = Evil Emperor Cat
+|Desc1 = The promised lord of Cats, consumed by<br>pride in his mastery of elder forest sorceries.<br>Now the king of ruin, he lashes out at this<br>decadent world with furious Surges and Curses.
+|Name1 (JP) = 悪のネコ帝王 (Aku no Neko Teiō, Evil Cat Emperor)
+|Desc1 (JP) = 深き森でいにしえの強大な魔力に蝕まれ<br>ついには自我を失ったネコの国の統治者。<br>滅びの呪いと烈波を際限なく放ち<br>破滅の王として世界に終止符を打つ。
+|Transl1 (JP) = The ruler of the land of Cats, who has been corrupted by<br>the ancient magical power in the deep forest and<br>finally lost his self. He unleashes an endless stream of<br>Curses and Intense Waves of destruction, bringing a whole rest* to the world as the King of Ruin.<br>*Whole rest, meaning no note in a bar in music, symbolized the end of the world
+|Name1 (TW) = 惡之貓帝王
+|Desc1 (TW) = 被古老深山森林中強大魔力所侵蝕<br>最終失去了自我的貓咪國統治者。<br>無止境的發射滅亡詛咒與烈波<br>作爲破滅之王替世界畫上句點。
+|Name1 (KR) = 악의 고양이 제왕
+|Desc1 (KR) = 깊은 숲에서 고대의 강대한 마력에 침식되어<br>급기야는 자아를 잃어버리고만 고양이 나라의 통치자<br>끊임없이 멸망의 저주와 파멸을 내며<br>파멸의 왕으로서 세계에 종지부를 찍으려 한다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Prelude to Ruin: [[Possessed by Evil (Merciless)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Evil Emperor Cat
+|Health = 1200000
+|Attack Power = 6666
+|Attack Range = 520
+|Attack Type = Area
+|Time Between Attacks = 276
+|Movement Speed = 6
+|Knockback = 8
+|Foreswing = 103
+|Backswing = 30
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -630~620)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 45f <sub>1.5 seconds</sub><br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 3 [[Surge Attack]] between 600 and 900 range
+|Element = Relic
+}}
+
+{{UnitViewer|enemy|bg = Bg147_new.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+535 e.png|Evil Emperor Cat's spritesheet
+green nyandam.gif|Evil Emperor Cat's animations
+Medal 087.png|Evil Emperor Cat on the ''Road to Ruin'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Based on [[Possessed by Evil (Merciless)|Possessed by Evil]]'s Japanese name, Possessed by the Demon King, the one controlling Evil Emperor Cat may be [[Infernal Tyrant Nyandam]], whose Japanese name is Great Demon King Nyandam.
+*If the first seven [[:Category:Advent Bosses|Advent Bosses]] are the Seven Deadly Sins, then Evil Emperor Cat may represent Judas, as he is a traitor to the Cat Army who became possessed by an analogue of Satan.
+*There is a substantial amount of evidence to suggest that he was originally meant to be an [[Uncanny Legends]] boss who would unlock [[Emperor Cat (Legend Rare Cat)|Emperor Cat]] when defeated, acting as a counterpart to [[Li'l Nyandam (Special Cat)|Li'l Nyandam]].
+**From [[Version 10.0 Update|Version 10.0]] to [[Version 10.2 Update|Version 10.2]], his ID was used by a placeholder enemy named コニャンダム亜種 ''Ko Nyandamu Ashu'' ("[[Li'l Nyandam (Enemy)|Li'l Nyandam]] Variant").
+**[[Stone Cat (Rare Cat)|Stone Cat]] and Possessed by Evil's [[Backgrounds|background]] were also added prematurely in 10.0, but Stone Cat was a placeholder [[:Category:Mythic Cats|Mythic Cat]] instead of a [[:Category:Rare Cats|Rare Cat]] and the background had a different color scheme closer to that of [[Saint Red Fox]]. [[File:Bg147.png|thumb|right|Older Prelude to Ruin background]]
+**[[Urs & Fenrir (Enemy)|Urs & Fenrir]] are a variant of [[Ururun Wolf (Enemy)|Ururun Wolf]], so [[PONOS Corporation|PONOS]] may have intended to keep this trend going with the other [[:Category:Mythic Cats|Mythic Cats]] from [[Legend Stages/SoL|Stories of Legend]].
+**These placeholders were added in the same update as [[Dawn of the Beginning]], whose Japanese name is the opposite of [[Dead End Night]]'s. Dawn of the Beginning also comes 9 sub-chapters after [[Urs & Fenrir (Special Cat)|Urs & Fenrir]] in [[The Gelatin Mines]], which was 9 sub-chapters after [[Depths of My Heart]].
+**Emperor Cat has the same range, movement speed and slow chance as allied Li'l Nyandam while Evil Emperor Cat's Omni Strike gives him the same reach as enemy Li'l Nyandam.
+**Evil Emperor Cat is a [[:Category:Relic Enemies|Relic]], the same trait as all Uncanny Legends drops.
+**Before [[Possessed Empress]] was introduced, Evil Emperor Cat stood out as the only [[:Category:Advent Bosses|Advent Boss]] to be the enemy version of a [[Cat Units|Cat Unit]]. Likewise, Emperor Cat is to this day the only [[:Category:Legend Rare Cats|Legend Rare Cat]] to have an enemy counterpart.
+*Prior to the [[Version 10.2 Update|Version 10.2.1 Update]], he had a Level 3 [[Surge Attack]] with a distance of 150~255, lasting for 60f.
+*Since they were only released one update apart, it is possible that he is the titular "Dark Lord" of [[Dark Lord's Decree]].
+*His attack stat resembles the well-known [[wikipedia:Number of the beast|Number of the Beast]].
+
+==Reference==
+*https://battlecats-db.com/enemy/537.html
+
+----
+{{EnemyNav|8th Anniversary Dummy|Megurine Luka}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Event Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Surge Attack Enemies]]

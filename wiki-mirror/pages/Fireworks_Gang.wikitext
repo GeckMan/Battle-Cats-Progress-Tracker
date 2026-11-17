@@ -1,0 +1,61 @@
+'''Fireworks Gang''' (大花火職人, ''Ōhanabi Shokunin'', '''Jumbo Fireworks Craftsmen''') is a [[:Category:Traitless Enemies|Traitless]] variant of [[Those Guys]] that appears in Fireworks Spectacular!. They were added in [[Version 14.6 Update|Version 14.6]].
+
+{{Enemy Info
+|name = Fireworks Gang
+|image = E 742.png
+|first appearance = [[Fireworks! (Deadly)|Fireworks Spectacular!]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Functioning identically to a [[:Category:Cyclones|Cyclone]] but even stronger because of [[Omni Strike]], these guys boast a very high DPS and attack rate, though can be tanked, with a gargantuan health pool. They can pierce up to 400 range and only stop when a Cat gets as close as 250 range or immediately when reaching the Cat Base, effectively creating an area of denial blocking out melee and midrange units. They can also splash [[Surge Attack|Mini-Surges]] that reach up to 625, which deal very minor damage but still can make stalling even more difficult, and can reach even most super-backliners, chipping continuously on occasion. Because of this, Fireworks Gang has a staggering pushing power and will be a huge threat in any stage they are in.
+
+==Strategy==
+Do not attempt to use any unit under 250 range as they will just cause this freak to attack and start shredding your entire frontline if you can't tank the damage. Instead, you can use long ranged CC units like [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], [[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]], and [[Lone Cat and Kitten (Rare Cat)|Tourist Cat]]. Surge Immune units are good against Fireworks Gang; however, sufficient health is necessary to avoid rapid obliteration. As long as the Fireworks Gang is constantly slowed, you can safely use backliners like [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]] to deal damage. Just make sure to deal with its support.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*Fireworks Spectacular!:
+**[[Fireworks! (Deadly)]] (100%)
+**[[Fireworks! (Merciless)]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Fireworks Gang
+|Health = 1300000
+|Attack Power = 3700
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 7
+|Knockback = 5
+|Foreswing = 1
+|Backswing = 4
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -850~400)<br>
+{{AbilityIcon|Mini-Surge}} 20% chance to create a level 1 [[Surge Attack#Mini-Surge|Mini-Surge]] between 150 and 650 range
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+742 e.png|Fireworks Gang's spritesheet
+</gallery>
+
+==Trivia==
+*Fireworks Gang has the fastest attack rate of any non-[[:Category:Cyclones|Cyclone]] unit, attacking just as fast as one.
+
+==Reference==
+*https://battlecats-db.com/enemy/744.html
+
+----
+{{EnemyNav|Whiskingmeister|Jumbo Jones}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]

@@ -1,0 +1,110 @@
+'''Divine Cyclone''' (エンジェルサイクロン, ''Enjeru Saikuron'', '''Angel Cyclone''') is an [[:Category:Angel Enemies|Angel]] [[:Category:Cyclones|Cyclone]] introduced in [[Oncoming Maelstrom (Expert)|Oncoming Maelstrom]]. It was added in [[Version 2.7 Update|Version 2.7]].
+
+{{Enemy Info
+|name = Divine Cyclone
+|image = E 112.png
+|first appearance = [[Oncoming Maelstrom (Expert)|Wrath of Heaven]]<br>
+'''ZL''': [[Theheckareyou Island|Sub-chapter 5 - Theheckareyou Island]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Divine Cyclone's gimmick is being the first [[:Category:Cyclones|Cyclone]] to lack the [[:Category:Floating Enemies|Floating]] trait, requiring specialized [[:Category:Anti-Angel Cats|anti-Angel units]] to counter it. Beyond that, it has all the typical attributes of a Cyclone: non-stop attacks and extreme health and DPS offset by pitiful range and somewhat low speed.
+
+==Strategy==
+You can easily take advantage of its short range by using [[:Category:Cats with Knockback ability|cats with knockback]], [[:Category:Cats with Slow ability|slow]] or [[:Category:Cats with Freeze ability|freeze]] abilities against Angels. Examples of these are [[Stilts Cat (Rare Cat)|Stilts Cat]], [[Cat Toaster (Super Rare Cat)|Cat Toaster]] or [[Juliet Cat (Super Rare Cat)|Juliet Cat]], respectively. As for damage dealers, almost anything will work in [[Oncoming Maelstrom (Expert)|Oncoming Maelstrom]], [[Wrath of A-Cyclone (Insane)|Wrath of A-Cyclone]] and [[Tornado Carnival (Deadly)|Tornado Carnival]] if you can keep it pinned down, while in [[Revenge of A-Cyclone (Deadly)|Revenge of A-Cyclone]] you should focus on units that continually knockback the [[Rain D.|Rain Ds]] from behind the frontlines.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 112
+|Type = Angel
+|Image1 = Enemy icon 112.png
+|Name1 = Divine Cyclone
+|Desc1 = A wrathful being who cleanses evil<br>with the force of a typhoon.<br>Take care: Angels won't be harmed<br>by anti-Floating attacks!
+|Name1 (JP) = エンジェルサイクロン (Enjeru Saikuron, Angel Cyclone)
+|Desc1 (JP) = 世の中を変わらない吸引力で<br>浄化し続ける恐ろしい天使。<br>また天使は浮いてる敵属性の特殊攻撃を<br>無効化するので注意が必要。
+|Transl1 (JP) = A terrifying Angel who continues to purify<br>the world with its relentless suction power.<br>Also, be aware that Angels are immune to anti-Floating special attacks.
+|Name1 (TW) = 天使旋風
+|Desc1 (TW) = 以他那無法影響世界的吸引力<br>持續進行淨化的天使。<br>另外，還能把對飄浮敵人的特殊攻擊<br>無效化，需要特別注意。
+|Name1 (KR) = 엔젤 사이클론
+|Desc1 (KR) = 이 세상을 무시무시한 흡입력으로<br>정화해 나가는 어마어마한 천사.<br>또한 천사는 떠있는 적 속성의 특수 공격을<br>무효화하므로 주의가 필요.
+}}
+
+==Variants==
+{{Variant
+|original = Divine Cyclone
+|inherit_desc = true
+|Mini Angel Cyclone
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 5-3: [[Theheckareyou Island]] (150%)
+*Stage 36-3: [[Sinister Sorbet]] (180%)
+
+===[[Special Events|Event Stages]]===
+*Wrath of Heaven: [[Oncoming Maelstrom (Expert)]] (100%)
+*[[Deadly Carnival!]]: [[Tornado Carnival (Deadly)]] (100%)
+*[[Day of Judgement]]: [[Acts of Cat-God (Insane)]] (100%)
+*[[Wrath of the Divine]]:
+**[[Wrath of A-Cyclone (Insane)]] (100%)
+**[[Revenge of A-Cyclone (Deadly)]] (100%)
+*[[Heavenly Tower]]:
+**[[Heavenly Tower/Floor 26|Floor 26]] (100%)
+**[[Heavenly Tower/Floor 42|Floor 42]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 26|Floor 26]] (100%)
+*[[Golden Tower]]:
+**[[Golden Tower/Floor 26|Floor 26]] (100%)
+**[[Golden Tower/Floor 42|Floor 42]] (100%)
+*[[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]: [[Round 4 (Pay Day)|Round 4]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Divine Cyclone
+|Health = 1399999
+|Attack Power = 76000
+|Attack Range = 70
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 4
+|Ability = -
+|Element = Angel
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Divine Cyclone(bcp).png|Divine Cyclone's Enemy Guide entry in [[The Battle Cats POP!]]
+112 e.png|Divine Cyclone's spritesheet
+IdleDivineCyclone.gif|Divine Cyclone's moving animation
+Medal 021.png|Divine Cyclone on the ''Holy Squall'' [[Meow Medals|Meow Medal]]
+FamCom 20150404.jpg|Divine Cyclone in the 4/4/2015 [[Nyanko Daisensou 4Koma & Strategy App|4Koma]]
+</gallery>
+
+==Trivia==
+*Divine Cyclone appears to be based on [[Wikipedia:Seraph|Seraphim]]: high-ranking and extraordinarily powerful divine beings whose jobs it is to serve and worship God at His throne.
+**Seraphim can be best described as "winged beasts"—often depicted with many eyes—whose very presence purifies evil by a burning and all-consuming flame, much like Divine Cyclone.
+*[[Mini Angel Cyclone]]'s Japanese description states that she is Divine Cyclone's daughter.
+*Although its English name starts with a "D", Divine Cyclone appears in stages called [[Wrath of A-Cyclone (Insane)|Wrath of A-Cyclone]] and [[Revenge of A-Cyclone (Deadly)|Revenge of A-Cyclone]]. This is likely attributable to poor localization, since Divine Cyclone's Japanese name is Angel Cyclone. The same also applies to its smaller variant, which is named "Mini Angel Cyclone" in [[The Battle Cats|BCEN]] rather than "Mini Divine Cyclone" in accordance with the original.
+*Divine Cyclone has the highest DPS, shortest range, fastest attack rate and biggest halo of all Angels.
+
+==Reference==
+*https://battlecats-db.com/enemy/114.html
+
+----
+{{EnemyNav|Pigge Back|Heavenly Hippoe}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Angel Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Cyclones]]

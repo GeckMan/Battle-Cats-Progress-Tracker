@@ -1,0 +1,62 @@
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge|Pigge|Sir Seal|Anji Yukyuzan|One Horn}}
+'''破壊の極意・二重の極み''' is the second stage in [[Rurouni Kenshin Collaboration Event#破戒僧・悠久山安慈|破戒僧・悠 久山安慈]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn273 01 c ja.png]]
+|stage location = [[File:Mapname273 c ja.png]]
+|energy = 100
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Doge|400%
+|Pigge|400%
+|Sir Seal|400%
+|One Horn|400%}}
+|boss = {{Magnification|Anji Yukyuzan|200%}}
+|enemies2 = {{Magnification|Doge|600%
+|Pigge|600%
+|Sir Seal|600%
+|One Horn|600%}}
+|boss2 = {{Magnification|Anji Yukyuzan|300%}}
+|treasure = - 50,000 XP (10%, unlimited)<br>
+- 40,000 XP (27%, unlimited)<br>
+- 30,000 XP (63%, unlimited)
+|XP = 40,000 XP
+|width = 4,000
+|max enemies = 12
+|jpname = ?
+|script = 破壊の極意・二重の極み
+|romaji = ?
+|star = 2
+|event = [[Rurouni Kenshin Collaboration Event]]
+|event-chapter = [[Rurouni Kenshin Collaboration Event#破戒僧・悠久山安慈|破戒僧・悠久山安慈]]
+|prev stage = [[森の出会い]]
+|next stage = [[救世のために編み出した秘伝]]
+}}
+
+==Battleground==
+*5 [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Pigge]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Sir Seal]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Anji Yukyuzan (Enemy)|Anji Yukyuzan]] spawns as the boss.
+**3 [[Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[One Horn]] spawns.
+**3 [[Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Sir Seal]] spawns after 26.67 seconds<sup>800f</sup>.
+**1 [[Pigge]] spawns after 40 seconds<sup>1,200f</sup>.
+**1 [[One Horn]] spawns after 53.33 seconds<sup>1,600f</sup>.
+**1 [[Pigge]] spawns after 133.33 seconds<sup>4,000f</sup>.
+**2 [[Doge]]s spawn after 60 seconds<sup>1,800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**Infinite [[Doge]]s spawn after 100 seconds<sup>3,000f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02273-02.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]

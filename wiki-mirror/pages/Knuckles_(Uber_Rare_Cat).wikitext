@@ -1,0 +1,144 @@
+{{TranslationNeeded}}
+:''This article is about the Cat Unit. For the enemy, see [[Knuckles (Enemy)]].''
+'''Knuckles''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Sonic the Hedgehog Collaboration Event]]. He was added in [[Version 14.4 Update|Version 14.4]] for [[Nyanko Daisensou|BJCP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 805
+|rarity = UR
+|name1 = Knuckles
+|name2 = Knuckles & Cat
+}}
+
+==Evolution==
+Evolves into '''Knuckles & Cat''' at level 10.
+
+==Strategy/Usage==
+Knuckles is a high‑HP, speedy midranger with very high DPS. The main issue plaguing this unit is his [[Multi-Hit|Multi‑Hit]], which interferes with his rather low DPH. Despite this, he is cheap and has enough bulk to tank a good number of attacks for his cost. His [[Immune to Weaken|Immunity to Weaken]] and [[Immune to Waves|Immunity to Waves]] are somewhat situational, but can make him a decent soft counter to stages featuring [[Berserkory]]/[[Hannya]]. Due to the lack of notable matchups beyond these two enemies, these abilities mainly serve to make him viable in certain mixed stages relying on ability spam.
+
+Knuckles is better used on [[:Category:Red Enemies|Red]] or [[:Category:Zombie Enemies|Zombie]]‑heavy stages—like [[Red Passions (Insane)]], [[Frontier Shrine (Merciless)/Zombie|Necro Frontier]], [[Rotten Refuge]], or [[Ancestral Ways]]—that don't feature many other traits. This is especially true given his somewhat long recharge time, nearly two whole minutes.
+
+Overall, he's a solid midranger who remains useful until late/endgame.
+
+{{Job|Classification = Midranger & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 805
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni805 f00.png
+|Image2 = Uni805 c00.png
+|Name1 = Knuckles
+|Desc1 = Joining from Sonic the Hedgehog thanks to divine power!<br>One punch from this echidna can pulverize a boulder.<br>Strong vs. Red and Zombies.
+|Name2 = Knuckles & Cat
+|Desc2 = Joining from Sonic the Hedgehog thanks to divine power!<br>Heh! I'll take on any Cat that comes my way!<br>Strong vs. Red and Zombies.
+|Name1 (JP) = ナックルズ (Nakkuruzu, Knuckles)
+|Desc1 (JP) = ソニック・ザ・ヘッジホッグから神さまの力で参戦！<br>強烈なパンチで岩をも砕く、豪快パワフルハリモグラ<br>赤い敵とゾンビにめっぽう強い
+|Transl1 (JP) = ?
+|Name2 (JP) = ナックルズ&ネコ (Nakkuruzu ando Neko, Knuckles & Cat)
+|Desc2 (JP) = ソニック・ザ・ヘッジホッグから神さまの力で参戦！<br>「へっ！ネコでも何でもまとめて相手してやらぁ！」<br>赤い敵とゾンビにめっぽう強い
+|Transl2 (JP) = ?
+|Name1 (TW) = 納克魯斯
+|Desc1 (TW) = 藉由神的力量從索尼克來參戰！<br>強力的拳頭連岩石也能擊碎，豪爽力大的針鼴<br>善於攻擊紅色敵人和不死生物
+|Name2 (TW) = 納克魯斯&貓咪
+|Desc2 (TW) = 藉由神的力量從索尼克來參戰！<br>「不管是貓咪還是誰，我一次全部解決！」<br>善於攻擊紅色敵人和不死生物
+|Name1 (KR) = 너클즈
+|Desc1 (KR) = 소닉 더 헤지혹에서 신의 힘으로 참전!<br>강력한 펀치로 바위도 부수는 호쾌하고 파워풀한 가시두더지<br>빨간 적과 좀비에 엄청 강하다
+|Name2 (KR) = 너클즈&고양이
+|Desc2 (KR) = 소닉 더 헤지혹에서 신의 힘으로 참전!<br>「고양이든 뭐든 전부 상대해 주마!」<br>빨간 적과 좀비에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 1,700¢
+*Chapter 2: 2,550¢
+*Chapter 3: 3,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Knuckles
+|Normal Base HP = 4500
+|Normal Base AP = 280,280,280
+|Normal Range = 350
+|Normal Foreswing = 10,20,30
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 54
+|Normal Speed = 35
+|Normal KB = 2
+|Normal Cost = 1700
+|Normal Recharge = 3800
+|Normal Attack Type = Area
+|Normal Targets = Red,Zombie
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,760 at 10f <sup>0.33s</sup>, 4,760 at 20f <sup>0.67s</sup>, 4,760 at 30f <sup>1s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~400)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Waves|Immune to Weaken}} [[Immune to Waves]] and [[Immune to Weaken|Weaken]]
+|Evolved Name = Knuckles & Cat
+|Evolved Base HP = 4500
+|Evolved Base AP = 280,280,280
+|Evolved Range = 350
+|Evolved Foreswing = 10,20,30
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 54
+|Evolved Speed = 35
+|Evolved KB = 2
+|Evolved Cost = 1700
+|Evolved Recharge = 3800
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Zombie
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,760 at 10f <sup>0.33s</sup>, 4,760 at 20f <sup>0.67s</sup>, 4,760 at 30f <sup>1s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~400)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Waves|Immune to Weaken}} [[Immune to Waves]] and [[Immune to Weaken|Weaken]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,500 HP
+|val-Normal-Attack Power = 840 damage<br>(466.67 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 54f <sub>1.8 seconds</sub>
+|val-Normal-Movement Speed = 35
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-Normal-Recharge Time = 126.67 ~ 117.87 seconds
+|val-Normal-MaxHP = 76,500 HP
+|val-Normal-MaxAttack = 14,280 damage<br>(7,933.33 DPS)
+|val-Evolved-Health = 76,500 HP
+|val-Evolved-Attack Power = 14,280 damage<br>(7,933.33 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 54f <sub>1.8 seconds</sub>
+|val-Evolved-Movement Speed = 35
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 10f <sup>0.33s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-Evolved-Recharge Time = 126.67 ~ 117.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni805 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/806.html
+
+----
+{{CatNav|Tails|Shadow}}
+----
+
+{{Sonic the Hedgehog}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Multi-Hit Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Weaken Immunity]]
+[[Category:Cats with Wave Immunity]]

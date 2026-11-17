@@ -1,0 +1,123 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Gudetama Plate (Enemy)]].''
+'''Gudetama Plate''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 6.2 Update|Version 6.2]] and can be unlocked in the [[Gudetama Collaboration Event]].
+
+{{Cat Info
+|ID = 348
+|rarity = RR
+|name1 = Gudetama Plate
+|name2 = Gudetama Bacon Plate
+}}
+
+==Evolution==
+Evolves into '''Gudetama Bacon Plate''' at level 10.
+
+==Strategy/Usage==
+Gudetama Plate sadly does not serve up a satisfying main course as a meatshield. With a 4.20 second cooldown, it can only be used as a solo meatshield if you use it with a side of Research Combos. Even then, it's nowhere near satisfying enough as a solo meatshield to distract the enemies due to its 10,200 HP. Its $360 cost also isn't justified due to how low-quality the 'meat' part of the meatshield is. As an Anti-Floating meatshield, 40,800 HP does help it retain some dignity but it can only be used as a third meatshield. Overall, not a great pull. Fortunately, he can be used as a solo meatshield in floating stages or just to clear out weak peons because of his okay DPS.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 348
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni348 f00.png
+|Image2 = Uni348 c00.png
+|Name1 (JP) = ぐでたまプレート (Gudetama Purēto, Gudetama Plate)
+|Desc1 (JP) = 人気キャラクターぐでたまが参戦！<br>ネコにかつがれてもやる気出ないんだわ～<br>浮いてる敵に打たれ強い
+|Transl1 (JP) = Popular character Gudetama participates! I'm<br>not motivated even if I'm carried by a cat~<br>Tough against floating enemies
+|Name2 (JP) = ぐでたまベーコンプレート (Gudetama Bēkon Purēto, Gudetama Bacon Plate)
+|Desc2 (JP) = 人気キャラクターぐでたまが参戦！<br>どれだけ揺らされてもおはようございません<br>浮いてる敵に打たれ強い
+|Transl2 (JP) = Popular character Gudetama participates!<br>How much shaken is not Good morning also<br>Tough against floating enemies
+|Name1 (TW) = 來盤蛋黃哥
+|Desc1 (TW) = 人氣蛋黃哥懶得參戰…<br>哥被貓咪扛著也一樣打不起勁～<br>對上飄浮敵人很耐打
+|Name2 (TW) = 來盤培根蛋黃哥
+|Desc2 (TW) = 人氣蛋黃哥懶得參戰…<br>晃的再厲害哥也一樣不想起床<br>對上飄浮敵人很耐打
+|Name1 (KR) = 구데타마 플레이트
+|Desc1 (KR) = 인기 캐릭터 구데타마 참전!<br>고양이가 떠받들어 줘도 의욕 없어...<br>떠있는 적에 맷집이 좋다
+|Name2 (KR) = 구데타마 베이컨
+|Desc2 (KR) = 인기 캐릭터 구데타마 참전!<br>베이컨 밖은 위험해...<br>떠있는 적에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 240円
+*Chapter 2: 360円
+*Chapter 3: 480円
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gudetama Plate
+|Normal Base HP = 600
+|Normal Base AP = 240
+|Normal Range = 150
+|Normal Foreswing = 21
+|Normal Attack Cooldown = 97
+|Normal Attack Length = 59
+|Normal Speed = 12
+|Normal KB = 1
+|Normal Cost = 240
+|Normal Recharge = 380
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Gudetama Bacon Plate
+|Evolved Base HP = 600
+|Evolved Base AP = 240
+|Evolved Range = 150
+|Evolved Foreswing = 21
+|Evolved Attack Cooldown = 97
+|Evolved Attack Length = 59
+|Evolved Speed = 12
+|Evolved KB = 1
+|Evolved Cost = 240
+|Evolved Recharge = 380
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 240 damage<br>(61.02 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 118f <sub>3.93 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 21f <sup>0.7s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Normal-Recharge Time = 12.67 ~ 3.87 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(1,037.29 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 4,080 damage<br>(1,037.29 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 118f <sub>3.93 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 21f <sup>0.7s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni348 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/349.html
+
+----
+{{CatNav|Gudetama Cat|Gudegude Pudding}}
+----
+
+{{Gudetama}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with unique death animations]]

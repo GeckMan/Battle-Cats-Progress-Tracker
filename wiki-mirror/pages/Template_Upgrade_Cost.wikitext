@@ -1,0 +1,14 @@
+<includeonly><onlyinclude>{{#ifeq:{{{2}}}|NF||==Upgrade Cost==}}
+{{#switch:{{{1}}}
+|RR = {{safesubst:#invoke:Upgrade Cost|main|0|8,000|12,200|17,800|24,800|33,200|43,000|54,200|66,800|80,800|10,000}}
+|SR = {{safesubst:#invoke:Upgrade Cost|main|0|8,200|12,400|17,800|24,800|42,400|64,500|93,000|148,000|298,000|12,500}}
+|UR = {{safesubst:#invoke:Upgrade Cost|main|0|9,800|14,800|21,800|42,500|64,300|93,200|118,000|197,400|513,500|15,600|max=60}}
+|LR = {{safesubst:#invoke:Upgrade Cost|main|0|9,800|14,800|21,800|42,500|64,300|93,200|118,000|197,400|513,500|15,600}}
+|EXL = {{safesubst:#invoke:Upgrade Cost|main|0|9,800|14,800|21,800|42,500|64,300|93,200|118,000|197,400|513,500|15,600}}
+|EX1 = {{safesubst:#invoke:Upgrade Cost|main|0|2,000|3,200|4,800|6,800|9,200|12,000|15,200|18,800|22,800|3,000}}
+|EX2 = {{safesubst:#invoke:Upgrade Cost|main|0|3,500|6,200|9,800|14,300|19,700|26,000|33,200|41,300|50,300|4,000}}
+|EX3 = {{safesubst:#invoke:Upgrade Cost|main|0|2,500|4,000|6,000|8,500|11,500|15,000|19,000|23,500|28,500|2,600}}
+|EX4 = {{safesubst:#invoke:Upgrade Cost|main|0|5,600|8,540|12,460|17,360|23,240|30,100|37,940|46,760|56,560|7,000}}
+|EX5 = {{safesubst:#invoke:Upgrade Cost|main|0|5,740|8,680|12,460|17,360|29,680|45,150|65,100|103,600|208,600|8,750}}
+|MIX = {{safesubst:#invoke:Upgrade Cost|main}}}}{{#ifeq:{{{2}}}|NF||
+*''Level 30-59 upgrades cost [[Catseye]]s: 30-44 and 50-54 = 1 Catseye, 45-49 and 55-59 = 2 Catseyes''}}</onlyinclude></includeonly>{{/doc}}

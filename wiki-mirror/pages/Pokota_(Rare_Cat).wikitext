@@ -1,0 +1,124 @@
+:''This article is about the Cat Unit. For the enemy, see [[Pokota (Enemy)]].''
+'''Pokota''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 7.0 Update|Version 7.0]] and can be acquired as a [[Timed Stage Reward]] when completing [[Rabbit's Mischief]] with a score of 5,000 or more during the [[LINE Pokopang! Collaboration Event]].
+
+{{Cat Info
+|ID = 419
+|rarity = RR
+|name1 = Pokota
+|name2 = Pokota CC
+}}
+
+==Evolution==
+Evolves into '''Pokota CC''' at level 10.
+
+==Strategy/Usage==
+This bunny has no meaning or use in the game other than to boost [[User Rank]]. The best it can do is offer some support in early [[Empire of Cats]] stages like [[Korea (Empire of Cats)|Korea]] or [[Japan (Empire of Cats)|Japan]], as it will falter and die to any real threat, like [[Dark Emperor Nyandam]]. Unfortunately, no amount of boost will save it from this fate either, as its base stats are too low.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 419
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni419 f00.png
+|Image2 = Uni419 c00.png
+|Name1 = Pokota
+|Desc1 = Joining the fight from LINE Pokopang!<br>Rabbity defender of justice who'll<br>do anything to help his friends!
+|Name2 = Pokota CC
+|Desc2 = Joining the fight from LINE Pokopang!<br>His mission in life is to bring joy<br>to his fellow woodland creatures.
+|Name1 (JP) = ポコタ (Pokota)
+|Desc1 (JP) = ポコパンから参戦！<br>ポコ森に住む陽気なウサギ。友達思いで正義感が強い
+|Transl1 (JP) = Joining the war from Pokopang!<br>A cheerful rabbit who lives in Poko Forest. Has a strong sense of justice with his friends
+|Name2 (JP) = ポコタＣＣ (PokotaCC)
+|Desc2 (JP) = ポコパンから参戦！<br>仲間の動物達を楽しませることに使命感を感じている
+|Transl2 (JP) = Joining the war from Pokopang!<br>Feel a sense of mission to entertain his fellow animals
+|Name1 (TW) = POKOTA
+|Desc1 (TW) = 從Pokopang來參戰！<br>住在波可森林的活潑兔子。<br>重視朋友，正義感強烈。
+|Name2 (TW) = POKOTA CC
+|Desc2 (TW) = 從Pokopang來參戰！<br>有著要讓森林的動物朋友們<br>都可以很快樂的使命感。
+|Name1 (KR) = POKOTA
+|Desc1 (KR) = 포코팡에서 참전!<br>포코 숲에 사는 활발한 토끼.<br>우정을 중요시하고 정의감이 넘친다.
+|Name2 (KR) = POKOTA CC
+|Desc2 (KR) = 포코팡에서 참전!<br>숲속 친구들을 즐겁게 하는 것에 사명감을 느낀다
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Pokota
+|Normal Base HP = 450
+|Normal Base AP = 80,80
+|Normal Range = 375
+|Normal Foreswing = 52,57
+|Normal Attack Cooldown = 97
+|Normal Attack Length = 75
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 530
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,360 at 52f <sup>1.73s</sup>, 1,360 at 57f <sup>1.9s</sup>)
+|Evolved Name = Pokota CC
+|Evolved Base HP = 450
+|Evolved Base AP = 80,80
+|Evolved Range = 375
+|Evolved Foreswing = 52,57
+|Evolved Attack Cooldown = 97
+|Evolved Attack Length = 75
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 530
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,360 at 52f <sup>1.73s</sup>, 1,360 at 57f <sup>1.9s</sup>)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 160 damage<br>(31.17 DPS)
+|val-Normal-Attack Range = 375
+|val-Normal-Attack Frequency = 154f <sub>5.13 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 52f <sup>1.73s</sup><br>(18f <sup>0.6s</sup> backswing)
+|val-Normal-Recharge Time = 17.67 ~ 8.87 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 2,720 damage<br>(529.87 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 2,720 damage<br>(529.87 DPS)
+|val-Evolved-Attack Range = 375
+|val-Evolved-Attack Frequency = 154f <sub>5.13 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 52f <sup>1.73s</sup><br>(18f <sup>0.6s</sup> backswing)
+|val-Evolved-Recharge Time = 17.67 ~ 8.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni419 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/420.html
+
+----
+{{CatNav|Crazed Moneko|Ovis}}
+----
+
+{{LINE Pokopang!}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]

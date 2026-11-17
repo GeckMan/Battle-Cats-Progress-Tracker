@@ -1,0 +1,152 @@
+{{JPExclusive}}
+:''For other uses, see [[Swordsman (disambiguation)]].''
+'''Castle Guard''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Because I'm Human]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. He was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 increases [[Strengthen]] damage from +50% to +150%.
+
+{{Cat Info
+|ID = 249
+|rarity = RR
+|name1 = Castle Guard
+|name2 = Sailor Swordsman
+|name3 = Wise Swordsman
+}}
+
+==Evolution==
+Evolves into '''Sailor Swordsman''' at level 10.
+
+Evolves into '''Wise Swordsman''' when obtained from [[Road to Swordsman Evolution (Easy)|Road to Swordsman Evolution]] and is level 20 or above.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of Cats able to perform it without relevant differences in quality. Swordsman, however, can be used in {{4c}} and [[Castle & Dragon Collaboration Event#Castle Dragon VS Castle Dragon|Castle Dragon VS Castle Dragon]] stages, where there is considerably less competition.
+
+==='''True Form'''===
+Wise Swordsman gets his Strengthen power tripled. This changes nothing about him. Most enemies will kill him in one hit, and those weak enough not to are not threats.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 249
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni249 f00.png
+|Image2 = Uni249 c00.png
+|Image3 = Uni249 s00.png
+|Name1 (JP) = 剣士
+|Desc1 (JP) = 城とドラゴンから参戦！<br>低コストで召喚できる基本キャラ<br>体力低下で攻撃力上昇
+|Transl1 (JP) = Joined the war from "Castle and Dragon"!<br>Basic character that can be summoned at a low cost.<br>Attack force increases, when strength is reduced.
+|Name2 (JP) = セーラー服剣士
+|Desc2 (JP) = 城とドラゴンから参戦！<br>突然召喚されほうきで攻撃することになった剣士<br>体力低下で攻撃力上昇
+|Transl2 (JP) = Joined the war from "Castle and Dragon"!<br>Swordsman had to attack with a broom because he was suddenly summoned.<br>Attack force increases, when strength is reduced.
+|Name3 (JP) = 明王の剣士
+|Desc3 (JP) = 城とドラゴンから参戦！<br>退魔の神剣を得て明王となるまでになった剣士<br>体力低下で攻撃力大幅上昇
+|Transl3 (JP) = Joined the war from "Castle and Dragon"!<br>A swordsman who gained the God Sword of Defeat and became the Ming King.<br>Attack force increases, when strength is reduced.
+|Name1 (TW) = 劍士
+|Desc1 (TW) = 從城與龍來參戰！<br>可以低價召喚的基本角色<br>體力下降時攻擊力上升
+|Name2 (TW) = 水手服劍士
+|Desc2 (TW) = 從城與龍來參戰！<br>突然被召喚而來，使用掃把攻擊的劍士<br>體力下降時攻擊力上升
+|Name3 (TW) = 明王劍士
+|Desc3 (TW) = 從城與龍來參戰！<br>得到有退魔之力的神劍成為明王的劍士<br>體力下降時攻擊力大幅上升
+}}
+
+==Cost==
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Castle Guard
+|Normal Base HP = 100
+|Normal Base AP = 10
+|Normal Range = 140
+|Normal Foreswing = 11
+|Normal Attack Cooldown = 35
+|Normal Attack Length = 23
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Evolved Name = Sailor Swordsman
+|Evolved Base HP = 100
+|Evolved Base AP = 10
+|Evolved Range = 140
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 35
+|Evolved Attack Length = 23
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 50
+|Evolved Recharge = 150
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|True Name = Wise Swordsman
+|True Base HP = 100
+|True Base AP = 10
+|True Range = 140
+|True Foreswing = 11
+|True Attack Cooldown = 35
+|True Attack Length = 23
+|True Speed = 9
+|True KB = 2
+|True Cost = 50
+|True Recharge = 150
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 150% at 50% health
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 10 damage<br>(6.52 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 46f <sub>1.53 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 170 damage<br>(110.87 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 170 damage<br>(110.87 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 46f <sub>1.53 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 5 ~ 2 seconds
+|val-True-Health = 1,700 HP
+|val-True-Attack Power = 170 damage<br>(110.87 DPS)
+|val-True-Attack Range = 140
+|val-True-Attack Frequency = 46f <sub>1.53 seconds</sub>
+|val-True-Movement Speed = 9
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-True-Recharge Time = 5 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni249 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/250.html
+
+----
+{{CatNav|Undead Cat|Castle Horseman}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Cats requiring Awakening for True Form]]

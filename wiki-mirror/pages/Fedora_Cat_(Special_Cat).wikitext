@@ -1,0 +1,113 @@
+'''Fedora Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from sending [[Gamatoto Expedition|Gamatoto]] on a [[Gamatoto Expedition#Event|unique expedition]] during the [[Anniversary/13th Year|13th Anniversary]]. It was added in [[Version 15.0 Update|Version 15.0]] for [[Nyanko Daisensou|BCJP]] and in [[Version 15.4 Update|Version 15.4]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 832
+|rarity = EX
+|name1 = Fedora Cat
+|name2 = Blue Nyanko Ranger
+}}
+
+==Evolution==
+Evolves into '''Blue Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+This Cat is a spammable anti-[[:Category:Red Enemies|Red]] DPS unit that faces heavy competition from other Cats, namely [[Ancient Egg: N101 (Rare Cat)|Courier Cat]]. Blue Nyanko Ranger's primary advantage lies in their gargantuan standing range when compared to most cats of their kind; however, in practice, this range advantage is hardly notable. Most common Red enemies are melee attackers, which other [[:Category:Anti-Red Cats|anti-Red cats]] like Courier Cat or [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cat]] can easily outrange (or tank), making Blue Nyanko Ranger's range inconsequential outside of problematic mixed stages with midranged enemies. Other dangerous Red enemies, such as [[Professor A.]], [[Raynard]], or [[Two Can]], either outrange this cat, or have abilities that let them hit Blue Nyanko Ranger from a large effective distance, rendering their standing range pointless. They ultimately fall short of Courier Cat's likeness in every regard due to the latter's piercing attacks, spammability, and superior DPS.
+
+Despite Blue Nyanko Ranger's underwhelming performance as an attacker, they do have a use in their powerful Research Power XL [[Cat Combo|Combo]] that can reduce the long recharge rates of the other [[:Category:Nyanko Rangers|Nyanko Rangers]] as well as its own. This does not work for non-Ranger units, but it may be worth bringing this unit for their Combo alone if using other Nyanko Rangers. Additionally, [[Helmet Cat (Special Cat)|Yellow Nyanko Ranger]]'s Cat Combo can provide Blue Nyanko Ranger with Wave Immunity, which gives them a niche as an attacker against Two Can and [[Berserkory]] in {{4c}} restriction stages where most [[:Category:Wave Shield Cats|Wave Shields]] are not available.
+
+Overall, this Cat is mainly useful in the early-game before unlocking other powerful anti-Red attackers, in the [[Underground Labyrinth]] as a Courier sidegrade, or to reduce the recharge of other Nyanko Rangers. While Blue Nyanko Ranger isn't bad per se, there is little reason to use them over their alternatives.
+
+{{Job|Classification = Midranger & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Blue Strike|Research Power Up (XL)|Fedora Cat|jpname=ブルーパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 832
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni832 f00.png
+|Image2 = Uni832 c00.png
+|Name1 = Fedora Cat
+|Desc1 = The brains of the Nyanko Rangers.<br>Chooses battle plans for the coolest possible victory.<br>Area Attacks deal Massive damage to Red.
+|Name2 = Blue Nyanko Ranger
+|Desc2 = Awaken, Tiger Soul! Transform!<br>The Blue Blaster's bullets pierce the darkness.<br>Area Attacks deal Massive damage to Red.
+|Name1 (JP) = ハットにゃんこ (Hatto Nyanko, Hat Cat)
+|Desc1 (JP) = にゃんこレンジャーの策略に長けたクールなネコ<br>いつでも自分が一番かっこよく見える作戦を考えている<br>赤い敵に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = This cool Cat is a Nyanko Ranger who's good with strategy<br>Always plans to make itself look the best<br>Deals Massive Damage against Red enemies (Area Attack)
+|Name2 (JP) = ブルーにゃんこ (Burū Nyanko, Blue Cat)
+|Desc2 (JP) = タイガーソウルを宿し、にゃんこレンジャー変身！<br>「ブルーブラスター」の弾丸が闇を撃ち抜く<br>赤い敵に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Channeling the Tiger Soul, Nyanko Ranger transform!<br>Bullets from "Blue Blaster" pierce through the dark<br>Deals Massive Damage against Red enemies (Area Attack)
+|Name1 (TW) = 禮帽貓
+|Desc1 (TW) = 在戰隊中擅長擬定策略的冷酷系貓咪<br>總是在思考什麼樣的作戰能讓自己看起來最帥<br>可以給予紅色敵人超大傷害（範圍攻擊）
+|Name2 (TW) = 藍戰士貓
+|Desc2 (TW) = 以寄宿的猛虎之魂變身為貓咪戰隊<br>「藍焰爆能槍」的子彈將貫穿黑暗<br>可以給予紅色敵人超大傷害（範圍攻擊）
+|Name1 (KR) = 페도라 냥코
+|Desc1 (KR) = 냥코 레인저의 책략가를 맡고 있는 시크한 고양이<br>언제나 자기가 가장 멋지게 보일 작전을 생각한다<br>빨간 적에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 블루 냥코
+|Desc2 (KR) = 냥코 레인저 변신! 블루 타이거!<br>「블루 블래스터」의 탄환이 어둠을 관통한다<br>빨간 적에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 700¢
+*Chapter 2: 1,050¢
+*Chapter 3: 1,400¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Fedora Cat
+|Normal Base HP = 800
+|Normal Base AP = 400
+|Normal Range = 360
+|Normal Foreswing = 13
+|Normal Attack Cooldown = 129
+|Normal Attack Length = 41
+|Normal Speed = 15
+|Normal KB = 2
+|Normal Cost = 700
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Blue Nyanko Ranger
+|Evolved Base HP = 1000
+|Evolved Base AP = 460
+|Evolved Range = 360
+|Evolved Foreswing = 13
+|Evolved Attack Cooldown = 129
+|Evolved Attack Length = 39
+|Evolved Speed = 15
+|Evolved KB = 2
+|Evolved Cost = 700
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni832 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/833.html
+
+----
+{{CatNav|Scarf Cat|Helmet Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

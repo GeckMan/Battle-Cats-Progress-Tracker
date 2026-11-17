@@ -1,0 +1,64 @@
+{{LimitedContent}}
+{{Stub}}
+:''Not to be confused with [[Ancient Egg: N111 (Super Rare Cat)|Cop Cat]].''
+'''E-795''' (看守長ビッグワン, ''Kanshuchō Bigguwan'', '''Chief Guard Bigwan''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Anniversary/14th Year|14th Anniversary]] stages. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Enemy Info
+|name = E-795
+|image = E 795.png
+|first appearance = ?
+|money drop = 750¢ - 2,962¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+?
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = E-795
+|Health = 200000
+|Attack Power = 12000
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 93
+|Movement Speed = 8
+|Knockback = 3
+|Foreswing = 14
+|Backswing = 39
+|Ability = {{AbilityIcon|Omni Strike}} [[Special Abilities#Omni Strike|Omni Strike]] (Effective range: -320~250)<br>
+{{AbilityIcon|Critical}} 50% chance to perform a [[Critical Hit]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+795 e.png|E-795's spritesheet
+</gallery>
+
+==Trivia==
+*In spite of having [[Omni Strike]], the ability does nothing in practice. E-794 does not pierce beyond its standing range, and its backwards range (-320) is the size of its [[Hitbox|hitbox]], which means it behaves identically to a non-Omni Strike unit.
+
+==Reference==
+*https://battlecats-db.com/enemy/797.html
+
+----
+{{EnemyNav|E-794|E-796}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Critical Hit Enemies]]

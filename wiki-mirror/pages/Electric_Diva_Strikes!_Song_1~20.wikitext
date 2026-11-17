@@ -1,0 +1,360 @@
+{{EnemiesAppearing|MikuDoge|Squire Rel|Kang Roo|Glowstick Guys|Kagamine Rin & Len|Hatsune Miku|MikuBear|MikuGory|Megurine Luka}}
+
+{{Stage Info
+|stage name = [[File:rc138.png]]
+[[File:Mapsn005 19 ca en.png]]
+|stage location = [[File:Mapname005 ca en.png]]
+|enemies = {{Magnification|MikuDoge|0
+|Squire Rel|0
+|Kang Roo|0
+|Glowstick Guys|0
+|Kagamine Rin & Len|0
+|Hatsune Miku|0
+|MikuBear|0
+|MikuGory|0}}
+|boss = {{Magnification|Megurine Luka|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 8
+|jpname = X Song
+|script = X Song
+|romaji = X Song
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Electric Diva Strikes!]]
+|require = Complete [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*10 [[MikuDoge|MikuDoges]] spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*5 [[Squire Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 1.67~5 seconds<sup>50f~150f</sup>.
+*1 [[Kang Roo]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Glowstick Guys]] spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+**Infinite [[MikuDoge|MikuDoges]] spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+**1 [[Kagamine Rin & Len (Enemy)|Kagamine Rin & Len]] spawns.
+**3 [[Glowstick Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Glowstick Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**1 [[Hatsune Miku (Enemy)|Hatsune Miku]] spawns.
+**3 [[Glowstick Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Glowstick Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[MikuBear|MikuBears]] spawn, delay 50 seconds<sup>1,500f</sup>.
+**4 [[MikuGory|MikuGories]] spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Megurine Luka (Enemy)|Megurine Luka]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 100%;"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Song
+! colspan="9" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy
+cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Megurine Luka (Enemy)|Megurine Luka]]
+! scope="col" |[[MikuDoge]]
+! scope="col" |[[Squire Rel]]
+! scope="col" |[[Kang Roo]]
+! scope="col" |[[Glowstick Guys]]
+! scope="col" |[[Hatsune Miku (Enemy)|Hatsune Miku]]
+! scope="col" |[[Kagamine Rin & Len (Enemy)|Kagamine Rin & Len]]
+! scope="col" |[[MikuGory]]
+! scope="col" |[[MikuBear]]
+! scope="col" |Treasure
+!Base XP
+|-
+! scope="row" |1st
+|5%
+|2%
+|100%
+|100%
+|100%
+|5%
+|3%
+|2%
+|2%
+|30
+|Treasure Radar +1
+|570
+|-
+! scope="row" |2nd
+|15%
+|5%
+|150%
+|150%
+|100%
+|15%
+|8%
+|5%
+|5%
+|40
+|Catamin A +3
+|760
+|-
+! scope="row" |3rd
+|30%
+|12%
+|250%
+|250%
+|100%
+|30%
+|15%
+|12%
+|12%
+|50
+|Cat Ticket +1
+|950
+|-
+! scope="row" |4th
+|60%
+|24%
+|400%
+|400%
+|100%
+|60%
+|30%
+|24%
+|24%
+|60
+|Bricks +5
+|1,140
+|-
+! scope="row" |5th
+|100%
+|40%
+|600%
+|600%
+|100%
+|100%
+|50%
+|40%
+|40%
+|70
+|XP +250,000
+|1,330
+|-
+! scope="row" |6th
+|140%
+|56%
+|840%
+|840%
+|100%
+|140%
+|70%
+|56%
+|56%
+|70
+|Catamin B +3
+|1,330
+|-
+! scope="row" |7th
+|180%
+|72%
+|1,080%
+|1,080%
+|100%
+|180%
+|90%
+|72%
+|72%
+|80
+|Feathers +5
+|1,520
+|-
+! scope="row" |8th
+|220%
+|88%
+|1,320%
+|1,320%
+|100%
+|220%
+|110%
+|88%
+|88%
+|80
+|Coal +5
+|1,520
+|-
+! scope="row" |9th
+|260%
+|104%
+|1,560%
+|1,560%
+|100%
+|260%
+|130%
+|104%
+|104%
+|80
+|Cat Ticket +2
+|1,520
+|-
+! scope="row" |10th
+|300%
+|120%
+|1,800%
+|1,800%
+|100%
+|300%
+|150%
+|120%
+|120%
+|90
+|XP +500,000
+|1,710
+|-
+! scope="row" |11th
+|390%
+|156%
+|2,240%
+|2,240%
+|100%
+|390%
+|195%
+|156%
+|156%
+|90
+|Catamin C +3
+|1,710
+|-
+! scope="row" |12th
+|480%
+|192%
+|2,680%
+|2,680%
+|100%
+|480%
+|240%
+|192%
+|192%
+|100
+|Sprockets +5
+|1,900
+|-
+! scope="row" |13th
+|570%
+|228%
+|3,120%
+|3,120%
+|100%
+|570%
+|285%
+|228%
+|228%
+|100
+|Gold +5
+|1,900
+|-
+! scope="row" |14th
+|660%
+|264%
+|3,560%
+|3,560%
+|100%
+|660%
+|330%
+|264%
+|264%
+|100
+|Cat Ticket +3
+|1,900
+|-
+! scope="row" |15th
+|750%
+|300%
+|4,000%
+|4,000%
+|100%
+|750%
+|375%
+|300%
+|300%
+|110
+|XP +750,000
+|2,090
+|-
+! scope="row" |16th
+|800%
+|320%
+|4,400%
+|4,400%
+|100%
+|800%
+|400%
+|320%
+|320%
+|110
+|Meteorite +5
+|2,090
+|-
+! scope="row" |17th
+|850%
+|340%
+|4,800%
+|4,800%
+|100%
+|850%
+|425%
+|340%
+|340%
+|130
+|Leadership +1
+|2,470
+|-
+! scope="row" |18th
+|900%
+|360%
+|5,200%
+|5,200%
+|100%
+|900%
+|450%
+|360%
+|360%
+|130
+|Beast Bones +5
+|2,470
+|-
+! scope="row" |19th
+|950%
+|380%
+|5,600%
+|5,600%
+|100%
+|950%
+|475%
+|380%
+|380%
+|130
+|XP +1,000,000
+|2,470
+|-
+! scope="row" |Last
+|1,000%
+|400%
+|6,000%
+|6,000%
+|100%
+|1,000%
+|500%
+|400%
+|400%
+|150
+|Rare Cat Ticket +1
+|2,850
+|}
+
+==Strategy==
+[[Kagamine Rin & Len (Enemy)|Kagamine Rin & Len]] have the greatest range of the 3 bosses with a max range of 640, [[Megurine Luka (Enemy)|Megurine Luka]] hits to 500. So when attempting the later levels you'll want units with high range or the Long Distance ability E.g [[Nerd Cat (Super Rare Cat)|Cyberpunk]]. The best strategy is to stall the [[Kang Roo]] so that you can stack these LD units at the start.
+
+==Reference==
+*https://battlecats-db.com/stage/s27005.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

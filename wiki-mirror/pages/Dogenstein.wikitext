@@ -1,0 +1,128 @@
+'''Dogenstein''' (名賢わんこ, ''Meiken Wanko'', '''Renowned Doggy''') is a [[:Category:Traitless Enemies|Traitless]]/[[:Category:Sage Enemies|Sage]] variant of [[Doge]] introduced in [[Stratospheric Pathway]]. He was added in [[Version 13.2 Update|Version 13.2]].
+
+{{Enemy Info
+|name = Dogenstein
+|image = E 679.png
+|first appearance = '''ZL''': [[Permission to Land|Sub-chapter 10 - Permission to Land]]
+|latest appearance = '''ZL''': [[Obvious Cache|Sub-chapter 17 - Obvious Cache]]
+|money drop = 250¢ - 987¢
+}}
+
+==Enemy==
+Dogenstein acts similarly to [[Doge Dark]], but is slightly slower, has [[Area Attack]], doesn't stand still for as long after attacking, and has overall highly improved stats. Combined with his [[:Category:Sage Enemies|Sage]] typing, these attributes make it difficult to slow down his progress. He also has a 35% chance to [[Freeze]] Cat Units and a decently fast attack rate, giving him extreme DPS.
+
+Compared to the 150% [[Relic Doge]]s, 600% [[Aku Doge]]s and 200% [[Wild Doge]]s encountered in early Zero Legends, Dogenstein has lower attack power, DPS and speed, but even higher health.
+
+==Strategy==
+[[:Category:Sage Slayer Cats|Sage Slayers]] with [[:Category:Anti-Traitless Cats|anti-Traitless]] abilities can be effective, as they can stop Dogestein from moving forth and stopping him from freezing your units (e.g. [[Bowler Cat (Rare Cat)|Bowler Cat]], which has a decent [[Slow]] effect that can almost perma-slow by itself). To counter his Freeze ability, a constant flow of meatshields should negate it, since he only has a meager 120 range. However, it will still be problematic if he reaches your main attackers, as 10,000 base damage and over 8,500 base DPS is still something big to worry about. Use any unit with high damage against Traitless to shred this enemy to pieces.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 679
+|Type = [[:Category:Traitless Enemies|Traitless]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 679.png
+|Name1 = Dogenstein
+|Desc1 = Depressed after failing their final exams,<br>found a charm of wisdom tucked in a comic.<br>Now overthinking everything, he is doomed<br>to always fail tests after running out of time.
+|Name1 (JP) = 名賢わんこ (Meiken Wanko, Renowned Doggy)
+|Desc1 (JP) = 雑誌の最後に載っていた奇跡のお守りを<br>肌身離さず身につけている浪人生わんこ。<br>お守りパワーで試験問題の裏の裏まで<br>読みすぎてしまい今年も浪人が確定。
+|Transl1 (JP) = A [[Doge]] who failed the university entrance exam.<br>Always carries the miraculous charm that appeared at the end of a magazine.<br>Thanks to the power of this charm, he overthinks exam questions<br>and goes beyond the obvious meaning, leading him to fail the entrance exam this year as well.
+|Name1 (TW) = 名賢狗仔
+|Desc1 (TW) = 重考生狗仔。身上隨時都帶著<br>雜誌廣告所宣傳的奇蹟護身符。<br>用護身符的力量過度解讀了考題<br>背後的涵義，導致今年又再次落榜。
+|Name1 (KR) = 견자 멍뭉이
+|Desc1 (KR) = 잡지 부록으로 받은 부적을 한시도 몸에서<br>떼지 않고 지니고 다니는 N수생 멍뭉이.<br>부적의 힘으로 문제 출제 의도까지 읽어내지만<br>의도를 안다고 정답을 맞추는 건 아니라 올해도 N수 확정
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 10-1: [[Permission to Land]]
+*Stage 10-2: [[Steps Great and Small]]
+*Stage 10-4: [[Small Inlet, Large Field]]
+*Stage 10-6: [[Prairie Harbor]]
+*Stage 11-2: [[One-Second Photo]]
+*Stage 11-6: [[Phantom Bluebird]]
+*Stage 12-2: [[Pointed Lakeshore]]
+*Stage 12-6: [[Pop-pop Wonderland]]
+*Stage 13-3: [[Pollution Isolation]]
+*Stage 13-4: [[Nonsense Mutation]]
+*Stage 13-5: [[Accidental Toxicity]]
+*Stage 13-6: [[Heartful Homunculus]]
+*Stage 14-3: [[Weedy Garden]]
+*Stage 15-1: [[Fleming Seaway]]
+*Stage 15-3: [[Inert Zero Flux]]
+*Stage 15-6: [[Heaven-Defying Fruit]]
+*Stage 16-4: [[Automatic Avoidance]]
+*Stage 16-6: [[Smooth Docking]]
+*Stage 17-1: [[Incompetent Watchman]]
+*Stage 17-6: [[Obvious Cache]]
+*Stage 18-1: [[Bamboocopter Launch]]
+*Stage 18-4: [[Waterweed Trumpet]]
+*Stage 18-6: [[Beloved Waterfall]]
+*Stage 19-3: [[Renovated Shipwreck]]
+*Stage 20-1: [[Intellectual Pursuit]]
+*Stage 22-3: [[Tiramisu Cliffs]]
+*Stage 23-5: [[Wicked Clergyman]]
+*Stage 23-6: [[Round-trip to Heaven]]
+*Stage 25-2: [[No-Returns Library]]
+*Stage 27-3: [[Miraculously On Time]]
+*Stage 28-5: [[Unicorn Flats]]
+*Stage 28-6: [[Drag-Inn]]
+*Stage 29-5: [[Boulder Shoulder]]
+*Stage 30-1: [[Aquatic Avant-garde]]
+*Stage 31-5: [[The Cullosseum]]
+*Stage 31-6: [[Endless Forms Most Beautiful]]
+*Stage 32-1: [[A Vast Red Waste]]
+*Stage 32-5: [[Arbor Aflame]]
+*Stage 33-6: [[Leftover Limbo]]
+*Stage 34-4: [[Snackable Shirts]]
+*Stage 35-1: [[Codependent Compound]]
+*Stage 36-3: [[Sinister Sorbet]]
+*Stage 37-6: [[Bowl of Bliss]]
+*Stage 38-5: [[ZL 38-5]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dogenstein
+|Health = 120000
+|Attack Power = 10000
+|Attack Range = 120
+|Attack Type = Area
+|Time Between Attacks = 35
+|Movement Speed = 18
+|Knockback = 3
+|Foreswing = 6
+|Backswing = 12
+|Ability = {{AbilityIcon|Freeze}} 35% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+679 e.png|Dogenstein's spritesheet
+</gallery>
+
+==Trivia==
+*The word 名賢 ''Meiken'' in Dogenstein's Japanese name (名賢わんこ ''Meiken Wanko'') means renowned, but also sounds just like 名犬, meaning fine dog.
+*His design and English name appear to pay homage to the German scientist [[:wikipedia:Albert Einstein|Albert Einstein]]. Though born in Germany, Einstein stayed in the US for the last 22 years of his life, correlating with the American theme of [[Stratospheric Pathway]].
+**Dogenstein is the only enemy in [[Heaven-Defying Fruit]] who is not described as a comedian in Japanese. His presence there along with the "Heaven-Defying" in the stage's name and ゆらぎ ''Yuragi'' (Fluctuation) in [[Restricted Area]]'s Japanese name may reference Albert Einstein's quote criticizing quantum fluctuations, "[[wikipedia:Hidden-variable theory#"God does not play dice"|God does not play dice]]".
+**His name may also reference the fictional scientist [[wikipedia:Victor Frankenstein|Victor Frankenstein]].
+
+==Reference==
+*https://battlecats-db.com/enemy/681.html
+
+----
+{{EnemyNav|Killer Axe Cat Base|Tarsiriel}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]

@@ -1,0 +1,116 @@
+'''Cosmic Cyclone''' (スペースサイクロン ''Supēsu Saikuron'', '''Space Cyclone''') is an [[:Category:Alien Enemies|Alien]]/[[:Category:Floating Enemies|Floating]] [[:Category:Cyclones|Cyclone]] that appears in [[Event Stages]] and [[Zero Legends]]. It was added in [[Version 4.0 Update|Version 4.0]].
+
+{{Enemy Info
+|name = Cosmic Cyclone
+|image = E 179.png
+|first appearance = [[Black Hole Rising (Insane)|Dimension of Despair]]<br>
+'''ZL''': [[Mirage Meadow|Sub-chapter 7 - Mirage Meadow]]
+|money drop = 999¢ - 3,946¢
+}}
+
+==Enemy==
+It has above-average range for a [[:Category:Cyclones|Cyclone]], with two dangerous abilities: it is able to [[Weaken|weaken]] cats' attack power to 10% (assuming they survive its attack), and it doubles its attack power at 450,000 HP (30%). It is highly recommended to use [[:Category:Anti-Alien Cats|anti-Alien cats]] and [[:Category:Anti-Floating Cats|anti-Floating cats]] to take this Cyclone down, but make sure to check their ranges in comparison to Cosmic Cyclone before using them.
+
+Before attempting to fight this enemy, it is also recommended to have all [[Anti-unstarred Alien Treasures]] from at least the first and second chapters of [[Into the Future]] to reduce its attack power and health, making it more manageable.
+
+==Strategy==
+[[Bishop Cat (Rare Cat)|Sanzo Cat]] and pre-[[True Form]] [[Shaman Cat (Rare Cat)|Shaman Cat]] only have 10 more range than Cosmic Cyclone, so counting on them may be a liability, but [[Ururun Wolf (Special Cat)|Ururun Cat]], [[Psychocat (Rare Cat)|Neo Psychocat]] and [[Surfer Cat (Super Rare Cat)|Castaway Cat]] create a very strong team against it. [[Lizard Cat (Normal Cat)|King Dragon Cat]] and [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragons]] as well as [[Gross Cat (Normal Cat)|Macho Leg Cats]] can be stacked up to dish out huge amounts of damage. [[Li'l Gross Cat (Special Cat)|Li'l Macho Legs Cat]] can be useful for knocking it back, but other effects are generally preferred.
+
+Units from the [[Justice Strikes Back! Dark Heroes (Gacha Event)|Dark Heroes]] and [[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|ELEMENTAL PIXIES]] events can help a lot against this enemy, such as [[Mizli (Uber Rare Cat)|Mizli]], [[Voli (Uber Rare Cat)|Voli]], [[Akira (Uber Rare Cat)|Akira]], [[Warlock and Pierre (Uber Rare Cat)|Warlock and Pierre]], [[The White Rabbit (Uber Rare Cat)|The White Rabbit]], etc.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 179
+|Type = Alien/Floating
+|Image1 = Enemy icon 179.png
+|Name1 = Cosmic Cyclone
+|Desc1 = A nebula storm born from a black hole,<br>it rips apart anything that gets close.<br>Best block and attack from behind cover!<br>Attacks get stronger after taking damage.
+|Name1 (JP) = スペースサイクロン (Supēsu Saikuron, Space Cyclone)
+|Desc1 (JP) = ブラックホールより生まれし宇宙の大渦。<br>近づくものすべてを崩壊させる恐ろしい敵。<br>遠距離から妨害出来れば勝機が見える!?<br>自らの消滅が近づくと破壊力が増すという。
+|Transl1 (JP) = A cosmic great vortex born from a black hole.<br>This dreadful enemy collapses anything that approaches close enough.<br>Maybe attacking from a distance can help you win!?<br>It is said to increase its destructive power when its end draws near.
+|Name1 (TW) = 異星旋風
+|Desc1 (TW) = 由黑洞中誕生的宇宙大漩渦。<br>一靠近就會被破壞殆盡的恐怖敵人。<br>若能從遠距離來妨礙他的話或許還有勝算!?<br>自己快消滅時破壞力就會增強
+|Name1 (KR) = 스페이스 사이클론
+|Desc1 (KR) = 블랙홀에서 태어난 우주의 거대 소용돌이.<br>다가오는 자는 모두 붕괴시켜버리는 무시무시한 적<br>원거리에서 방해한다면 이길 수 있을지도!?<br>소멸의 위기를 느끼면 파괴력이 증폭된다고 한다.
+}}
+
+==Variants==
+{{Variant
+|original = Cosmic Cyclone
+|inherit_desc = true
+|Super Cosmic Cyclone
+|Mesocosmocyclone
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 7-2: [[Mirage Meadow]] (150%)
+*Stage 24-6: [[Dozing Love]] (200%)
+
+===[[Special Events|Event Stages]]===
+*Dimension of Despair: [[Black Hole Rising (Insane)]] (100%)
+*[[Techneurosis]]: [[Space is the Place (Insane)]] (150%)
+*[[Deadly Carnival II]]: [[Tornado Carnival II (Deadly)]] (100%)
+*[[Dimension of Delirium]]:
+**[[Wrath of Black Hole (Deadly)]] (100%)
+**[[Revenge of Black Hole (Deadly)]] (100%)
+*[[Heavenly Tower]]:
+**[[Heavenly Tower/Floor 34|Floor 34]] (200%)
+**[[Heavenly Tower/Floor 42|Floor 42]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 42|Floor 42]] (100%)
+*[[Golden Tower]]:
+**[[Golden Tower/Floor 34|Floor 34]] (200%)
+**[[Golden Tower/Floor 42|Floor 42]] (100%)
+*[[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]: [[Round 3 (Pay Day)|Round 3]] (100%)
+*[[Otherworld Colosseum#Rarity Draft: Duo|Otherworld Colosseum]]: [[Round 3 (Rarity Draft: Duo)|Round 3]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Cosmic Cyclone
+|Health = 1499999
+|Attack Power = 9999
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 4
+|Knockback = 3
+|Foreswing = 1
+|Backswing = 4
+|Ability = {{AbilityIcon|Weaken}} 10% chance to [[Weaken|weaken]] Cat Units to 10% for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 200% at 30% health
+|Element = Alien/Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+179 e.png|Cosmic Cyclone's spritesheet
+IdleCosmicCyclone.gif|Cosmic Cyclone's moving animation
+Medal 023.png|Cosmic Cyclone on the ''Alien Weather'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Cosmic Cyclone has the highest DPS of all [[:Category:Alien Enemies|Aliens]].
+*Cosmic Cyclone has the lowest money drop out of all the major [[:Category:Cyclones|Cyclones]].
+*Prior to [[The Battle Cats|BCEN]] [[Version 12.5 Update|12.5]], the [[Enemy Guide]] entries for Cosmic Cyclone, [[Maawth]], [[I.M. Phace]] and [[Cli-One]] listed their traits as "([[:Category:Alien Enemies|Alien]], [[:Category:Floating Enemies|Floating]])" instead of "(Alien/Floating)".
+
+==Reference==
+*https://battlecats-db.com/enemy/181.html
+
+----
+{{EnemyNav|Elizabeth the LVIth|Galactic Overseer Nyandam}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zero Legends Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Alien Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Cyclones]]

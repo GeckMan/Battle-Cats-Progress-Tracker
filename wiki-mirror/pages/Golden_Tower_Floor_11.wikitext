@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Dark Emperor Nyandam|Pigge Back|Pigge|B.B.Bunny|Lord Enma|Christmas D.|Dark Emperor Santa}}
+'''Floor 11''' is the 11th floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 10 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 120
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Pigge Back|400%
+|Pigge|400%
+|B.B.Bunny|400%
+|Lord Enma|100%
+|Christmas D.|100%}}
+|boss = {{Magnification|Dark Emperor Nyandam|400%
+|Dark Emperor Santa|200%}}
+|treasure = - [[Catamin]] [C] +6 (100%, 1 time)
+|XP = 2,280 XP
+|width = 4,300
+|max enemies = 8
+|jpname = 11th Floor
+|script = 11階
+|romaji = 11 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★5
+|prev stage = [[Golden Tower/Floor 10|Floor 10]]
+|next stage = [[Golden Tower/Floor 12|Floor 12]]
+}}
+
+==Battleground==
+*1 [[Dark Emperor Nyandam]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+*2 [[Pigge Back]]s spawn after 0.07 seconds<sup>2f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Pigge]]s spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 6.67 seconds<sup>200f</sup>, delay 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Emperor Santa]] spawns as the boss.
+**3 [[Pigge Back]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**1 [[Lord Enma]] spawns.
+**3 [[Christmas D.|Christmas Ds]] spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 11#Strategy|Floor 11]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-11.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

@@ -1,0 +1,27 @@
+{{#invoke:Navbox|main
+|template = Template:Neo Mushroom Garden
+|title = [[Neo Mushroom Garden Collaboration Event]]
+|navbox_class = mushroom
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Funghi (Rare Cat)|Funghi]]
+*[[Tanky (Special Cat)|Tanky]]
+*[[White Cat (Special Cat)|White Cat]]
+*[[Fortressy (Special Cat)|Fortressy]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Funghi (Enemy)|Funghi]]
+
+|header3 = Stages
+|group3 = A Fungal Challenge
+|list3 =
+*[[Fungal Dominance]]
+*[[King of the Table]]
+*[[Funghi Wasn't Built In a Day]]
+}}<templatestyles src="Neo Mushroom Garden/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Neo Mushroom Garden]]}}<noinclude>[[Category:Navboxes]]</noinclude>

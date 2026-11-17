@@ -1,0 +1,106 @@
+{{EnemiesAppearing|Scissoroo|Kroxo|Shibalien|Gory Dark|Doge Dark|Shadow Boxer K|Dark Otter}}
+'''Gestalt, Decay''' is the second stage in [[Body & Soul]]. [[Kroxo]] makes his first [[Stories of Legend]] appearance here.
+
+{{Stage Info
+|stage name = [[File:rc007.png]]
+[[File:Mapsn026 01 n en.png]]
+|stage location = [[File:Mapname026 n en.png]]
+|energy = 90
+|enemy castle hp = 800,000 HP
+|enemies = {{Magnification|Scissoroo|800%
+|Kroxo|1,600%
+|Shibalien|3,200%
+|Gory Dark|300%
+|Doge Dark|800%
+|Shadow Boxer K|300%
+|Dark Otter|200%}}
+|boss = {{Magnification|Shibalien|3,200%}}
+|enemies2 = {{Magnification|Scissoroo|960%
+|Kroxo|1,920%
+|Shibalien|3,840%
+|Gory Dark|360%
+|Doge Dark|960%
+|Shadow Boxer K|360%
+|Dark Otter|240%}}
+|boss2 = {{Magnification|Shibalien|3,840%}}
+|enemies3 = {{Magnification|Scissoroo|1,120%
+|Kroxo|2,240%
+|Shibalien|4,480%
+|Gory Dark|420%
+|Doge Dark|1,120%
+|Shadow Boxer K|420%
+|Dark Otter|280%}}
+|boss3 = {{Magnification|Shibalien|4,480%}}
+|treasure = - 171,000 XP (10%, 1 time)<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 1,710 XP
+|width = 4,000
+|max enemies = 15
+|jpname = Gestalt, Decay
+|script = ゲシュタルト、崩壊
+|romaji = Geshutaruto, Hōkai
+|star = 4
+|sub-chapter = [[Body & Soul]]
+|difficulty = ★8
+|prev stage = [[Sunset's Howl]]
+|next stage = [[Warrior's Dawn]]
+}}
+
+==Battleground==
+*1 [[Scissoroo]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Kroxo]]s spawn after 30 seconds<sup>900f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*5 [[Shibalien]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien]] spawns as the boss.
+**Infinite [[Gory Dark]]s spawn, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**10 [[Shadow Boxer K]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**10 [[Shadow Boxer K]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**3 [[Dark Otter]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**5 [[Gory Dark]]s spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**3 [[Doge Dark]]s spawn, delay 2~3 seconds<sup>60f~90f</sup>.
+**5 [[Kroxo]]s spawn, delay 2~3 seconds<sup>60f~90f</sup>.
+**5 [[Shibalien]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**10 [[Kroxo]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**8 [[Shibalien]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**5 [[Scissoroo]]s spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**3 [[Scissoroo]]s spawn, delay 2~3 seconds<sup>60f~90f</sup>.
+**1 [[Scissoroo]] spawns.
+
+==Strategy==
+Although there are some powerful [[:Category:Alien Enemies|Alien]] enemies at the beginning, they can easily be stalled if you have all [[Treasure#Unstarred Alien stats decrease|anti-unstarred Alien Treasures]]. '''''Only''''' bring dedicated [[:Category:Anti-Alien Cats|anti-Alien cats]] if they actually prove to be difficult, as you want all the firepower you can get for the [[:Category:Dark Enemies|Dark]] enemies. Since the main threats don't spawn until the Aliens are defeated, try to lure the second wave of Scissoroos in front of the [[Cat Base]] so you can build up an army before facing the Dark enemies.
+
+The combined DPS of the Shadow Boxer Ks and Gory Darks will rip through even the tankiest of cats. In fact, almost every heavy attacker will only get to kill a few of the Boxers/Gories before dying, especially slower ones like [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]], [[Li'l Nyandam (Special Cat)|Li'l Nyandam]] and [[Togeluga (Uber Rare Cat)|Togelan Pasalan]]. If you have to use one, choose a fast attacker such as [[Ururun Wolf (Special Cat)|Ururun Cat]].
+
+Since most heavy attackers are just wasted slots, focus on cheaper ones with [[:Category:Area Attack Cats|Area Attack]]/[[:Category:Wave Attack Cats|Waves]]/[[:Category:Surge Attack Cats|Surges]] and quick attack speed, like [[Salon Cat (Rare Cat)|Paris Cat]], [[Mer-Cat (Rare Cat)|Cameraman Cat]], [[Surfer Cat (Super Rare Cat)|Castaway Cat]], [[Figure Skating Cats (Super Rare Cat)|Drama Cats]], [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]], [[Vaulter Cat (Super Rare Cat)|Polevaulter Cat]], [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]], [[Crazed Bird Cat (Super Rare Cat)|Crazed UFO Cat]] ([[True Form]] recommended), [[Catway (Super Rare Cat)|Drone Cat]] and [[Brainwashed Gross Cat (Super Rare Cat)|Brainwashed Sexy Legs Cat]]. Using a [[Battle Items#Cat CPU|Cat CPU]] will allow you to spam them more easily.
+
+No matter what, do not use any form of [[Rocker Cat (Rare Cat)|Rocker Cat]], [[Wheel Cat (Rare Cat)|Solar Cat]], any [[Titan Cat (Normal Cat)|Titan]] [[Crazed Titan Cat (Super Rare Cat)|Cat]] [[Li'l Titan Cat (Special Cat)|variant]], [[Psychocat (Rare Cat)|Psychocat]] nor anybody else with short range or Single Attack (with a few exceptions). While all the enemies are outranged by Awakened Bahamut Cat, their pushing power is so high that he ends up being near-useless unless you can keep the enemies frozen.
+
+If you have [[Flower Cat (Special Cat)|Bombercat]], use him. As long as you can keep them alive, the Dark enemies' threat level will be next to none once you have two unsynced Bombercats on the screen.
+
+==='''Recommended Ubers'''===
+Generally, any [[:Category:Uber Rare Cats|Uber Rare Cat]] that attacks fast and/or is [[:Category:Anti-Dark Cats|anti-Dark]] should do well, but below this will have more specified examples of good Ubers to use in this stage. Note that most, if not all [[:Category:Tanker-class Cats|tankers]] do not do well here, as the Dark enemies' DPS are absurdly high. Obviously, any [[UBERFEST (Gacha Event)|UBERFEST]] exclusive will make this stage a breeze.
+*[[Uesugi Kenshin (Uber Rare Cat)|Wargod Kenshin]]: Her powerful [[Knockback]] ability is able to keep many of the Dark enemies at bay here, as well as doing some good damage to them from range.
+*[[Twinstars (Uber Rare Cat)|Twinstars, Type Φ]]: Does [[Massive Damage|Masive Damage]] to Aliens and Darks. Multi-Hit can juggle most Darks around, dramatically reducing their pushing power.
+*[[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]]: His Normal Form is a spammable attacker that will melt the Darks in this stage within seconds.
+*[[Bora (Uber Rare Cat)|Bora]]: If you are having trouble killing the Alien enemies before the Dark enemies appear, Bora will make that a lot easier, but is generally not recommended for the Dark enemies' phase.
+*[[Takeda Shingen (Uber Rare Cat)|Wargod Shingen]]: An Attacks Only unit that can hurt both traits in the stage. If protected well, his 120K+ damage at level 30 can reduce them to rubble.
+*[[Saber (Uber Rare Cat)|Saber]]: Her fast, hard-hitting, piercing [[Long Distance]] attack makes her usage similar to Twinstars in this stage, just without the massive damage ability.
+*[[Ryu (Uber Rare Cat)|Ryu]]: A fast-attacking generalist, his range allows him to pierce the Dark enemies' defenses easily, along with his [[Savage Blow|Savage Blows]].
+
+==Walkthrough==
+{{Walkthrough
+|WPKvj35YnkY|Evan c|[[Mer-Cat (Rare Cat)|Cameraman Cat]] is recommended over [[Gross Cat (Normal Cat)|Macho Leg Cat]]
+}}
+
+==Trivia==
+*''Gestalt'' is a word meaning "something greater than the sum of its parts".
+*Gestalt, Decay is a reference to the psychological phenomenon [[wikipedia:Gestaltzerfall|Gestaltzerfall]], also known as Gestalt decomposition. When one is exposed to words or character patterns for a prolonged period of time, it may appear to them that the shapes are decomposing or "decaying" into their constituting parts.
+*Gestalt, Decay and the Japanese names of [[Body & Soul]] (心と体、繋ぐもの ''Kokoro to Karada, Tsunagu Mono'', "Mind and Body, That Which Connects") and [[At Least I'm a Cat]] (せめて、ネコらしく ''Semete, Nekorashiku'', "At Least, Be a Cat") follow a similar format to most ''[[Neon Genesis Evangelion Collaboration Event|Neon Genesis Evangelion]]'' episode titles - note the commas. This may be because Body & Soul and [[Weak & Mildly Acidic]] are the 27th and 28th [[Stories of Legend]] sub-chapters, and ''Neon Genesis Evangelion'' has 26 episodes in the series plus two in ''[https://wiki.evageeks.org/The_End_of_Evangelion End of Evangelion]''.
+
+==Reference==
+*https://battlecats-db.com/stage/s00026-02.html
+
+{{LegendStages}}
+[[Category:Stories of Legend Stages]]
+[[Category:Sub-chapter 27 Stages]]

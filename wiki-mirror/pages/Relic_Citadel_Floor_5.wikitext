@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Sir Rel|Loris|Othom|Mr. Puffington}}
+:''Not to be confused with the [[Heavenly Tower/Floor 5|Heavenly Tower]] or [[Infernal Tower/Floor 5|Infernal Tower]] versions of Floor 5.''
+'''Floor 5''' is the fifth floor of [[Relic Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 04 v en.png]]
+|stage location = [[File:Mapname009 v en.png]]
+|energy = 240
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Sir Rel|100%
+|Loris|100%
+|Mr. Puffington|100%}}
+|boss = {{Magnification|Othom|100%}}
+|treasure = - [[Catseye]] [Legend] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 4,560 XP
+|width = 4,000
+|max enemies = 10
+|jpname = 5th Floor
+|script = 5階
+|romaji = 5 Kai
+|star = 1
+|event-chapter = [[Relic Citadel]]
+|difficulty = ★10
+|prev stage = [[Relic Citadel/Floor 4|Floor 4]]
+|next stage = [[Relic Citadel/Floor 6|Floor 6]]
+}}
+
+==Battleground==
+*Infinite [[Sir Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*2 [[Sir Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Loris]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Othom]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+**3 [[Sir Rel]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+**3 [[Sir Rel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**3 [[Sir Rel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**3 [[Sir Rel]]s spawn after 120 seconds<sup>3,600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Loris|Lorises]] spawn after 13.33 seconds<sup>400f</sup>, delay 13.33 seconds<sup>400f</sup>.
+**2 [[Mr. Puffington]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+
+==Strategy==
+This entire stage dies to you spamming [[Slapstick Cats]]. Add a few meatshields like [[Modern Cat]] and maybe Strong Up combos if your Slapsticks aren't boosted enough and that should be enough for a free win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07009-05.html
+
+{{SpecialStages List}}
+[[Category:Citadel Floors]]
+[[Category:No Continue Stages]]

@@ -1,0 +1,10 @@
+.ranger-navbox.jra {
+	--bg-navbox-title: linear-gradient(to right, hsl(81, 98%, 40%) 0%, hsl(81, 98%, 47%) 100%);
+	--bg-sub-table-title: #fcdf42;
+	--bg-group-name: hsl(75, 96%, 56%);
+
+	--sub-title-color: #000;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

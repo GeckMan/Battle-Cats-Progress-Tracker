@@ -1,0 +1,102 @@
+'''Kappy Kawano''' (川野かわわっぱ, ''Kawano Kawawappa'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] [[Invasion of the Swamplord]]. He was added in [[Version 12.5 Update|Version 12.5]].
+
+{{Enemy Info
+|name = Kappy Kawano
+|image = E 653.png
+|appearance = [[Invasion of the Swamplord]]
+|money drop = 2,500¢ - 9,875¢
+}}
+
+==Enemy==
+This enemy works very much like [[Kappy Jr.]] He has massive health and deals extreme damage at mid-range split into three closely-spaced multi-hits, each causing a [[Surge Attack]] that can hit much further than Kawano himself. If that wasn't enough, he is immune to weaken and replicates any Surges hitting him, dealing damage equivalent to his first hit. He is slower, tougher and has fewer knockbacks, but there is still a significant delay between his attacks.
+
+==Strategy==
+Kappy Jr.'s old man may seem terrifying at first, with his great reach, very high damage, and the ability to spawn up to THREE Surge Attacks which can easily crush anything short of [[:Category:Cats with Surge Immunity|Surge-immune units]]. However, Kappy Kawano's attack rate sits at a staggering 7 seconds, almost thrice of his son. This means that despite his immense damage, stalling this enemy isn't hard when he's by himself. Due to his decently long foreswing, you can potentially let the peons of the first three stages push a little bit to try and make him miss, but don't rely on this as you can find yourself getting overwhelmed by them.
+
+Any units with immunity to Surges can help immensely, both for stalling and damaging Kappy Kawano. Some great units to use for him are [[Talents|Talented]] [[Boogie Cat (Special Cat)|Gato Amigo]], [[Ancient Egg: N003 (Special Cat)|Cat Cactus]] and Talented [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]].
+
+Things get complicated in [[Ghost King Finale (Brutal)|Ghost King Finale]], where after the base is hit, a [[Golem Sunfish]] and Kawano himself will both spawn, with Kappy Jr. arriving after 60 seconds as well. Do as much damage as you can to Kawano before Jr. spawns, as the father-son duo will start pushing insanely hard once they are both on the field, especially with the Golem Sunfish occasionally nuking out your attackers.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 653
+|Type = [[:Category:Traitless Enemies|Traitless]]
+|Image1 = Enemy icon 653.png
+|Name1 = Kappy Kawano
+|Desc1 = Domesticated grand yokai living in the marshes.<br>A mighty strike empowered by a bitter melon<br>diet makes him fearsome enemy outside the<br>home, but inside his wife keeps him in check.
+|Name1 (JP) = 川野かわわっぱ (Kawano Kawawappa)
+|Desc1 (JP) = 山奥の沼に暮らす所帯持ちの大妖怪。<br>自家製ゴーヤと強靭な肉体から繰り出す<br>恐るべき一撃は外では無敵だが<br>家庭ではかかあ天下で肩身が狭い。
+|Transl1 (JP) = A great ''yōkai'' who lives in a swamp deep in the mountains and has a family<br>Unstoppable when he's outside, delivering<br>fearsome attacks with his homegrown bitter melon and robust body,<br>but at home, his extremely overbearing wife makes him feel unable to hold his head high.
+|Name1 (TW) = 爸氣妖怪河童
+|Desc1 (TW) = 住在深山沼澤且已經成家立業的大妖怪。<br>用自家種的苦瓜配合壯碩身材<br>所施展的攻擊讓他在外無人能敵，<br>但回到家中則是凡事都聽太太的。
+|Name1 (KR) = Mr.가아아파
+|Desc1 (KR) = 깊은 산 속 늪에서 사는 대요괴 가장<br>강인한 육체로 직접 재배한 여주를 휘두르는<br>무서운 일격으로 무적이라 불리지만<br>사실은 공처가이다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Invasion of the Swamplord]]:
+**[[Ghost King I (Deadly)]]
+**[[Ghost King II (Merciless)]]
+**[[Ghost King III (Merciless)]]
+**[[Ghost King Finale (Brutal)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Kappy Kawano
+|Health = 2600000
+|Attack Power = 114000
+|Attack Range = 380
+|Attack Type = Area
+|Time Between Attacks = 211
+|Movement Speed = 12
+|Knockback = 4
+|Foreswing = 60
+|Backswing = 39
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">38,000</span> at 60f <sup>2s</sup>, <span class="scaled" data-type="ap">38,000</span> at 66f <sup>2.2s</sup>, <span class="scaled" data-type="ap">38,000</span> at 72f <sup>2.4s</sup>)<br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 1 [[Surge Attack]] between 150 and 1,000 range<br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]] (When hit by a [[Surge Attack]], creates its own Surge of equal level and spawn range)<br>
+{{AbilityIcon|Immune to Weaken}} [[Immune to Weaken]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+653 e.png|Kappy Kawano's spritesheet
+Medal 108.png|Kappy Kawano on the ''Sanzu Swamp Guardian'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Kappy Kawano may have been inspired by [[wikipedia:Kuzenbo|Kuzenbo]], the king of the ''[[wikipedia:Kappa (folklore)|kappa]]'' in Japanese mythology.
+*Kappy Kawano could be a reference to two different fictional fathers:
+**One is [http://stat.ameba.jp/user_images/20160617/20/yoko5137/a2/f8/j/o0480084413675182605.jpg Mr. Yumeno], Sally's father from the first ever magical girl anime, [[wikipedia:Sally the Witch|''Sally the Witch'']]. The hairstyle and color match up, both have overbearing wives, and the surnames Yumeno and Kawano are both spelled with the kanji 野 in Japanese. Interestingly enough, Mr. Yumeno is also known as the Maō (魔王, "Demon King"), while his own father is referred to as the Daimaō (大魔王, "Great Demon King"), a title also held by the previous Great [[:Category:Advent Bosses|Advent Boss]], [[Infernal Tyrant Nyandam]], in [[Nyanko Daisensou|BCJP]].
+**Another possibility is the ''Tekken'' character [[wikia:tekken:Heihachi Mishima|Heihachi Mishima]], who not only has a similar hairstyle to Kawano, but is also highly muscular, adept at fighting, and can wear a ''[[wikipedia:Fundoshi|fundoshi]]'' (traditional Japanese loincloth) in ''Tekken 7''<nowiki>'</nowiki>s [[wikia:tekken:Tekken 7 DLC|DLC]]. The extremely overbearing wife mentioned in Kawano's Japanese description could be referring to [[wikia:tekken:Devil Kazumi|Devil Kazumi]], a powerful alter-ego of Heihachi's wife [[wikia:tekken:Kazumi Mishima|Kazumi]] who tried to kill her husband.
+*Kawano (川野) is a common Japanese surname spelled using the kanji for "river" (川) and "plains", "field", "rustic", or "civilian life" (野).
+*Kappy Kawano was foreshadowed by the [[Media:Eve l 078 11 en.png|event poster]] for the 2023 [[Summer Break Cats]] event, which shows a cat using a cucumber as fishing bait.
+*His English description has a typo: it says his bitter melon diet "makes him fearsome enemy" when it should say, "makes him ''a'' fearsome enemy".
+*Speed and attack rate are the only things Kappy Kawano is weaker in than his [[Kappy Jr.|son]].
+*He has the highest base attack power of any Traitless enemy.
+
+==Reference==
+*https://battlecats-db.com/enemy/655.html
+
+----
+{{EnemyNav|Lophiiformes Angaburu|Mega Baa Baa}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Surge Attack Enemies]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Counter-Surge Enemies]]

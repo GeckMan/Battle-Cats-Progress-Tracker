@@ -1,0 +1,131 @@
+{{PCExclusive}}
+'''Entangled Wooden Horse Javelins''' was an [[:Category:Uber Rare Cats|Uber Rare Cat]] that is exclusive to the VIP [[Frontline Assault IRON LEGION (Gacha Event)|Frontline Assault IRON LEGION]], only available in the [[Minna de Nyanko Daisensou|PC version]].
+
+{{Cat Info
+|ID = 909
+|rarity = UR
+|version = PC
+|name1 = Entangled Wooden Horse Javelins
+|name2 = Surprise Trojan Fortress
+|image1 = 10909 1.png
+|image2 = 10909 2.png
+}}
+
+==Evolution==
+Evolves into '''Surprise Trojan Fortress''' at level 10.
+
+==Strategy/Usage==
+With their long range, high stats and crowd-controlling abilities, this unit absolutely excels against its' targeted traits. It outranges almost every single Zombie and Metal enemy, aside from a few rare cases like [[Zamelle]] or [[Daboo of the Dead|Daboo]], who are very infrequent. While having slow and knockback may seem to cause the infamous "[[Mizli (Uber Rare Cat)|Mizli]] Syndrome", Zombie or Metal-focused stages tend to not have many backliners. Sadly, this unit can't use its' absolutely nuclear damage against Metal enemies, since it lacks the ability to generate [[Critical Hit]]s.
+
+Make sure to use it in its first form, since it attacks much quicker and thus has more DPS.
+
+{{Job|Classification = Nuker & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 909<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10909 f00.png
+|Image2 = Uni10909 c00.png
+|Name1 (JP) = 絡繰木馬ジャベリンズ (Karakuri Mokuba Jaberinzu, Entangled Wooden Horse Javelins)
+|Desc1 (JP) = 遥か古の時代、大戦を終結させた伝説的最終兵器<br>ゾンビとメタルな敵とにゃんこ軍団しか攻撃できないが<br>必ず吹き飛ばし、必ず動きを遅くする(範囲攻撃)
+|Transl1 (JP) = The legendary final weapon that ended the Great War in ancient times<br>Can only attack Zombies, Metal enemies and Nyanko Army<br>Always pushes them away and always slows them down (Range Attack)
+|Name2 (JP) = 奇襲要塞トロイア (Kishū Yōsai Toroia, Surprise Fortress Troia)
+|Desc2 (JP) = 凄まじい衝撃波で敵を殲滅する失われた超古代最終兵器<br>ゾンビとメタルな敵とにゃんこ軍団しか攻撃できないが<br>必ず吹き飛ばし、必ず動きを遅くする(範囲攻撃)
+|Transl2 (JP) = The lost super-ancient ultimate weapon that destroys enemies with its tremendous shockwaves<br>Can only attack Zombies, Metal enemies and Nyanko Army<br>Always pushes them away and always slows them down (Range Attack)
+}}
+
+==Cost==
+*Chapter 1: 3,200円
+*Chapter 2: 4,800円
+*Chapter 3: 6,400円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+:''Note: these stats are an approximation.''
+{{Cat Stats 1.1
+|Normal Name = Entangled Wooden Horse Javelins
+|Normal Base HP = 4800
+|Normal Base AP = 4000
+|Normal Range = 440
+|Normal Foreswing = 100
+|Normal Attack Cooldown = 251
+|Normal Attack Length = 159
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 3200
+|Normal Recharge = 5700
+|Normal Attack Type = Area
+|Normal Abilities = [[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only)<br>
+100% chance to [[Slow|slow]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]]s and [[:Category:Metal Enemies|Metal]] enemies for 280f <sub>9.33 seconds</sub><br>
+100% chance to [[Knockback|knockback]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]]s and [[:Category:Metal Enemies|Metal]] enemies<br>
+[[Attacks Only|Attacks only]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]] and [[:Category:Metal Enemies|Metal]] enemies<br>
+[[Zombie Killer]]
+|Evolved Name = Surprise Trojan Fortress
+|Evolved Base HP = 4800
+|Evolved Base AP = 4000
+|Evolved Range = 440
+|Evolved Foreswing = 130
+|Evolved Attack Cooldown = 307
+|Evolved Attack Length = 249
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 3200
+|Evolved Recharge = 5700
+|Evolved Attack Type = Area
+|Evolved Abilities = [[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only)<br>
+100% chance to [[Slow|slow]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]]s and [[:Category:Metal Enemies|Metal]] enemies for 280f <sub>9.33 seconds</sub><br>
+100% chance to [[Knockback|knockback]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]]s and [[:Category:Metal Enemies|Metal]] enemies<br>
+[[Attacks Only|Attacks only]] [[:Category:Cat Units|Cats]] (PvP only), [[:Category:Zombie Enemies|Zombie]] and [[:Category:Metal Enemies|Metal]] enemies<br>
+[[Zombie Killer]]
+|Lv.MAX = Lv.40
+|Scaling = 20x20
+|Orb = false
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10909_f.png|MediaWiki:Custom-AnimationViewer/PC909_f.json}}
+|-|Evolved=
+{{AnimationViewer|10909_c.png|MediaWiki:Custom-AnimationViewer/PC909_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10909 f00}}
+
+==Reference==
+*https://seesaawiki.jp/battlecatswiki/d/%cd%ed%b7%ab%cc%da%c7%cf%a5%b8%a5%e3%a5%d9%a5%ea%a5%f3%a5%ba
+
+----
+{{CatNav|Issun Boushi|Wise Empress Nobel}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Cat Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Focused Target Cats]]

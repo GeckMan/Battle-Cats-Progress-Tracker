@@ -1,0 +1,139 @@
+'''Maize Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Invasion of the Swamplord]] appearing on the '''13th''', '''14th''', '''27th''', and '''28th''' days of every month. It was added in [[Version 12.5 Update|Version 12.5]].
+
+{{Cat Info
+|ID = 718
+|rarity = RR
+|name1 = Maize Cat
+|name2 = Cone Cat
+}}
+
+==Evolution==
+Evolves into '''Cone Cat''' at level 10.
+
+==Strategy/Usage==
+Maize Cat is an extremely useful specialist meatshield, sharing many similarities with [[Rocker Cat (Rare Cat)|Ramen Cat]], its Anti-Angel equivalent. A level 30 Maize Cat has '''74.8k''' effective health against Relic and Aku, with further boosts against Colossal threats of these traits like [[Zero Luza]] and [[Omens]]. It also has immunity to curse and freeze, which actually improves its potency as a meatshield quite a lot as a surprising number of Relic and Aku enemies have the freeze ability, while curse immunity is obviously important for any short ranged anti-Relic unit. The main difference in usage between Maize Cat and Ramen Cat is that its high speed makes it easier to protect distant units, but it can't maintain a thick line of defense and therefore cannot be your only source of protection, even with the help of [[Cat Combo]]s such as [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]] as they'll all just rush forward, whereas the likes of [[Primordial Cat (Rare Cat)|Future Cat]] don't tend to wander far. This means it's best to use Maize Cat with another meatshield like [[Stone Cat (Rare Cat)|Rock Cat]] or [[Manic Eraser Cat|Manic Eraser]] for better defense.
+
+The main downside to Maize Cat is its hefty cost of 375, which is quite high for a spammable meatshield. This doesn't necessarily make it a cash drain, but spamming it may make it harder to save money for more expensive cats. It also lacks immunity to surges and status effects, which makes it vulnerable to Aku threats in general and the likes of [[M. Ost|M. Ost]]. All in all, Maize Cat is a very potent meatshield against its targeted traits, making it a welcome addition to your team.
+
+{{Job|Classification = Meatshield & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 718
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni718 f00.png
+|Image2 = Uni718 c00.png
+|Name1 = Maize Cat
+|Desc1 = A refreshing plant-cat stuffed with juiciness.<br>Take a bite and you'll get bits stuck in your teeth.<br>Tough vs Relic/Aku, with Colossus Slayer.
+|Name2 = Cone Cat
+|Desc2 = Traffic-cone cat often seen at construction sites.<br>Ecofriendly object made from corn-based plastic.<br>Tough vs Relic/Aku, with Colossus Slayer.
+|Name1 (JP) = ネコもろこし (Neko Morokoshi, Corn Cat)
+|Desc1 (JP) = みずみずしい実がぎっしりと詰まったネコ科の野菜<br>かじりついて食べると歯に皮や種が挟まってしまう<br>超生命体特効を持ち、古代種と悪魔に打たれ強い
+|Transl1 (JP) = Juicy fruits tightly packed in a vegetable of the Feline family<br>When bitten into, the skin and seeds tend to get stuck in your teeth<br>Has Super-Lifeform Killer and is Tough against Ancients and Devils
+|Name2 (JP) = にゃんコーン (Nyankōn, Nyancone)
+|Desc2 (JP) = 工事現場でよく見られるネコ科のロードコーン<br>トウモロコシから作られる合成樹脂を原料としている<br>超生命体特効を持ち、古代種と悪魔に打たれ強い
+|Transl2 (JP) = A road cone of the Feline family commonly seen at construction sites<br>It is made from synthetic resin derived from corn<br>Has Super-Lifeform Killer and is Tough against Ancients and Devils
+|Name1 (TW) = 玉蜀黍貓
+|Desc1 (TW) = 全身都是豐碩果實的貓科蔬菜<br>拿來食用時，皮和種子很容易卡到牙縫間<br>有超生命體特效，對上古代種和惡魔很耐打
+|Name2 (TW) = 三角錐貓
+|Desc2 (TW) = 經常會在施工現場看到的貓科三角錐<br>原料是用玉米所製成的塑膠<br>有超生命體特效，對上古代種和惡魔很耐打
+|Name1 (KR) = 고양이 옥수수
+|Desc1 (KR) = 알이 탱글탱글하고 실한 고양이과 야채<br>먹으면 이빨 사이에 껍질과 씨가 잔뜩 낀다<br>초생명체 특효. 고대종과 악마에 맷집이 좋다
+|Name2 (KR) = 냥코콘
+|Desc2 (KR) = 공사 현장에서 자주 목격되는 고양이과 안전콘<br>원료는 옥수수로 만든 합성 수지<br>초생명체 특효. 고대종과 악마에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 250¢
+*Chapter 2: 375¢
+*Chapter 3: 500¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Maize Cat
+|Normal Base HP = 1100
+|Normal Base AP = 90,90,90
+|Normal Range = 170
+|Normal Foreswing = 17,22,27
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 52
+|Normal Speed = 20
+|Normal KB = 1
+|Normal Cost = 250
+|Normal Recharge = 380
+|Normal Attack Type = Single
+|Normal Targets = Relic,Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,530 at 17f <sup>0.57s</sup>, 1,530 at 22f <sup>0.73s</sup>, 1,530 at 27f <sup>0.9s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Colossus Slayer}} [[Colossus Slayer]] (Deals 1.6x damage to [[:Category:Colossus Enemies|Colossus]] enemies, only takes 0.7x damage)<br>
+{{AbilityIcon|Immune to Freeze|Immune to Curse}} [[Immune to Freeze]] and [[Immune to Curse|Curse]]
+|Evolved Name = Cone Cat
+|Evolved Base HP = 1100
+|Evolved Base AP = 90,90,90
+|Evolved Range = 170
+|Evolved Foreswing = 17,22,27
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 52
+|Evolved Speed = 20
+|Evolved KB = 1
+|Evolved Cost = 250
+|Evolved Recharge = 380
+|Evolved Attack Type = Single
+|Evolved Targets = Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,530 at 17f <sup>0.57s</sup>, 1,530 at 22f <sup>0.73s</sup>, 1,530 at 27f <sup>0.9s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Colossus Slayer}} [[Colossus Slayer]] (Deals 1.6x damage to [[:Category:Colossus Enemies|Colossus]] enemies, only takes 0.7x damage)<br>
+{{AbilityIcon|Immune to Freeze|Immune to Curse}} [[Immune to Freeze]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,100 HP
+|val-Normal-Attack Power = 270 damage<br>(94.19 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 86f <sub>2.87 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 12.67 ~ 3.87 seconds
+|val-Normal-MaxHP = 18,700 HP
+|val-Normal-MaxAttack = 4,590 damage<br>(1,601.16 DPS)
+|val-Evolved-Health = 18,700 HP
+|val-Evolved-Attack Power = 4,590 damage<br>(1,601.16 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 86f <sub>2.87 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni718 f00}}
+
+==Trivia==
+*Maize Cat's design and walking animation are very similar to the maize-dog hybrid [https://prcdn.freetls.fastly.net/release_image/36495/479/36495-479-647e9c8f2eb0c7eb8ff11aa42b4c15db-3900x3605.png?format=jpeg&auto=webp&quality=85%2C65&width=1950&height=1350&fit=bounds Wankōn] (わんコーン, "Wancorn") from one of [[PONOS Corporation|PONOS]]' other games, [https://web.archive.org/web/20260514172222/https://www.ponos.jp/games/no-longer-momotaro/ No Longer MOMOTARO] (桃太郎失格). Cone Cat also has a similar Japanese name: Nyankōn (にゃんコーン, "Nyancorn" or "Nyancone"), which is ''Wankōn'' with ''nyan'' (meow) instead of ''wan'' (woof). No Longer MOMOTARO was released January 17th, 2022, only 7 months before Version 12.6 added Maize Cat to [[Nyanko Daisensou|BCJP]] (August 23rd, 2022).
+*Maize Cat's evolution into Cone Cat may play off of how コーン ''kōn'' can mean "corn" or "cone", as well as the fact that corn byproducts in real life can be processed for further applications, sometimes replacing plastic items for environmental concerns.
+
+==Reference==
+*https://battlecats-db.com/unit/719.html
+
+----
+{{CatNav|Ancient Egg: N110|Tekachi}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Colossus Slayer Cats]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Curse Immunity]]

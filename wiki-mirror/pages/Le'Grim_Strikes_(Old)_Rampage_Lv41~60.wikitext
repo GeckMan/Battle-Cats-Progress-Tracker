@@ -1,0 +1,290 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Trolly Blogger|Le'Grim|Owlbrow|H. Nah|Zuche}}
+:''This article is about the original version of Le'Grim Strikes. For the newer version's stages, see [[Le'Grim Strikes/Rampage Lv1~20]].''
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn003 00 a en.png]]
+|stage location = [[File:Mapname005 a en.png]]
+|enemies = - [[Trolly Blogger]]<br>
+- [[Owlbrow]]<br>
+- [[H. Nah]]<br>
+- [[Zuche]]
+|boss = - [[Le'Grim]]
+|restriction = [[No Continues]]
+|width = 6,200
+|max enemies = 20
+|jpname = Rampage Lv.X
+|script = 暴走Lv.X
+|romaji = Bōsō Lv.X
+|event = [[Le'Grim Strikes (Old)]]
+|event-chapter = [[Le'Grim Strikes (Old)|Le'Grim Strikes!!!]]
+|require = Complete [[Cats of the Cosmos]] Chapter 1
+}}
+
+==Battleground==
+*The enemy base's HP starts at 800,000 and increases by 40,000 with each stage.
+*Unlimited [[Trolly Blogger]]s spawn after 10 seconds<sup>300f</sup>, delay between them is 6.67~13.33 seconds<sup>200f~400f</sup>.
+*The boss, [[Le'Grim]], spawns after 26.67 seconds<sup>800f</sup>.
+*3 [[Owlbrow]]s spawn after 30 seconds<sup>900f</sup>, delay between them is 38.67~45.33 seconds<sup>1,160~1,360f</sup>; 3 more spawn with the same delay after 200 seconds<sup>6,000f</sup>.
+*2 [[H. Nah]]s spawn after 30 seconds<sup>200f</sup> and 173.33 seconds<sup>5,200f</sup> respectively.
+*2 [[Zuche]]s spawn after 40 seconds<sup>1,200f</sup>, delay between them is 45.33~49.33 seconds<sup>1,360~1,480f</sup>; 2 more spawn with the same delay after 213.33 seconds<sup>6,400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Rampage
+! colspan="6" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy
+cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" |Le'Grim
+! rowspan="2" scope="col" |Trolly Blogger
+! rowspan="2" scope="col" |Owlbrow
+! rowspan="2" scope="col" |H. Nah
+! rowspan="2" scope="col" |Zuche
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base
+XP
+|-
+!HP
+!AP
+|-
+! scope="row" |41
+|7000%
+|1800%
+|200%
+|1000%
+|200%
+|100%
+|100
+|Yellow Catfruit +5
+|1,900
+|-
+! scope="row" |42
+|7250%
+|1980%
+|230%
+|1050%
+|230%
+|130%
+|100
+|XP +1,000,000
+|1,900
+|-
+! scope="row" |43
+|7500%
+|2160%
+|260%
+|1100%
+|260%
+|160%
+|100
+|Feathers +5
+|1,900
+|-
+! scope="row" |44
+|7750%
+|2340%
+|290%
+|1150%
+|290%
+|190%
+|100
+|Leadership +4
+|1,900
+|-
+! scope="row" |45
+|8000%
+|2500%
+|300%
+|1200%
+|300%
+|200%
+|120
+|Green Catfruit +5
+|2,280
+|-
+! scope="row" |46
+|8400%
+|2640%
+|320%
+|1240%
+|320%
+|220%
+|120
+|XP +1,000,000
+|2,280
+|-
+! scope="row" |47
+|8800%
+|2780%
+|340%
+|1280%
+|340%
+|240%
+|120
+|Gold +10
+|2,280
+|-
+! scope="row" |48
+|9200%
+|2920%
+|360%
+|1320%
+|360%
+|260%
+|120
+|Cat Ticket +4
+|2,280
+|-
+! scope="row" |49
+|9600%
+|3060%
+|380%
+|1360%
+|380%
+|280%
+|120
+|Blue Catfruit +5
+|2,280
+|-
+! scope="row" |50
+|10000%
+|3200%
+|400%
+|1400%
+|400%
+|300%
+|130
+|XP +1,500,000
+|2,470
+|-
+! scope="row" |51
+|10500%
+|3320%
+|420%
+|1460%
+|410%
+|320%
+|130
+|Beast Bones +10
+|2,470
+|-
+! scope="row" |52
+|11000%
+|3440%
+|440%
+|1520%
+|420%
+|340%
+|130
+|Red Catfruit +5
+|2,470
+|-
+! scope="row" |53
+|11500%
+|3560%
+|460%
+|1580%
+|430%
+|360%
+|130
+|XP +1,500,000
+|2,470
+|-
+! scope="row" |54
+|12000%
+|3680%
+|480%
+|1640%
+|440%
+|380%
+|130
+|Meteorite +15
+|2,470
+|-
+! scope="row" |55
+|12500%
+|3800%
+|500%
+|1700%
+|450%
+|400%
+|140
+|Purple Catfruit +5
+|2,660
+|-
+! scope="row" |56
+|13000%
+|3940%
+|520%
+|1760%
+|460%
+|420%
+|140
+|XP +1,500,000
+|2,660
+|-
+! scope="row" |57
+|13500%
+|4080%
+|540%
+|1820%
+|470%
+|440%
+|140
+|Sprockets +20
+|2,660
+|-
+! scope="row" |58
+|14000%
+|4220%
+|560%
+|1880%
+|480%
+|460%
+|140
+|Epic Catfruit Seed +1
+|2,660
+|-
+! scope="row" |59
+|14500%
+|4360%
+|580%
+|1940%
+|490%
+|480%
+|140
+|XP +3,000,000
+|2,660
+|-
+! scope="row" |60
+|15000%
+|4500%
+|600%
+|2000%
+|500%
+|500%
+|150
+|Rare Cat Ticket +3
+|2,850
+|}
+
+==Strategies==
+Due to the high attack power of the enemies, as well as Le'Grim's short animation, it is strongly recommended to rely on many cheap meatshields as protection unless attempting a permafreeze or cheese approach.
+
+Players who own [[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]] are strongly recommended to use him, as he demolishes the support enemies while chipping constantly at the boss. Strategies involving this Uber or any other who outranges the boss should involve a tight defence as well as the use of the cannon ([[Ototo Corps|Breakerblast or Holy Blast]]) mainly as a mean to prevent Zuche from burrowing and attacking said unit.
+
+==Walkthrough==
+{{Walkthrough
+|MPaT7c0rR7w|Chuck|Lv60 No Ubers, Hacker Cat
+|mwoelno5S_o|Chuck|Lv60 No Ubers, No Hacker Cat
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s24005.html
+{{SpecialStages List}}
+[[Category:Le'Grim Strikes Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

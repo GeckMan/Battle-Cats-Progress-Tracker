@@ -1,0 +1,306 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Doge|One Horn|Sir Seal|B.B.Bunny|Baron Seal|Gory}}
+:''This article is about the original version of Baron Seal Strikes. For the newer version's stages, see [[Baron Seal Strikes/Red Alert 1~20]].''
+:''Not to be confused with [[Red Alert]].''
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn000 00 a en.png]]
+|stage location = [[File:Mapname000 a en.png]]
+|enemies = {{Magnification|Doge|0
+|One Horn|0
+|Sir Seal|0
+|B.B.Bunny|0
+|Gory|0}}
+|boss = {{Magnification|Baron Seal|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 12
+|jpname = Caution Lv.X
+|script = 警戒Lv.X
+|romaji = Keikai Lv.X
+|star = 1
+|event-chapter = [[Baron Seal Strikes (Old)/Red Alert 1~20|Baron Seal Strikes!]]
+|max clears = 1
+|require = Complete [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 14.67~23.33 seconds<sup>440f~700f</sup>.
+*1 [[One Horn]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Sir Seal]] spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Sir Seal]] spawns after 160 seconds<sup>4,800f</sup>.
+*1 [[Sir Seal]] spawns after 213.33 seconds<sup>6,400f</sup>.
+*1 [[Sir Seal]] spawns after 286.67 seconds<sup>8,600f</sup>.
+*5 [[B.B.Bunny|B.B.Bunnies]] spawn after 6.67 seconds<sup>200f</sup>, delay 16~18.67 seconds<sup>480f~560f</sup>.
+*When the base reaches 99% HP:
+**1 [[Baron Seal]] spawns as the boss.
+**Infinite [[Gory|Gories]] spawn, delay 28.67~32 seconds<sup>860f~960f</sup>.
+**2 [[Gory|Gories]] spawn, delay 18.67~23.33 seconds<sup>560f~700f</sup>.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 18.67~25.33 seconds<sup>560f~760f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Red Alert
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Doge]]
+! scope="col" |[[One Horn]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Baron Seal]]
+! scope="col" |[[Gory]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|100%
+|100%
+|100%
+|30,000 HP
+|30
+|[[Battle Items#Speed Up|Speed Up]] +1
+|570 XP
+|-
+! scope="row" |2
+|110%
+|110%
+|110%
+|110%
+|150%
+|110%
+|60,000 HP
+|30
+|30,000 XP
+|570 XP
+|-
+! scope="row" |3
+|120%
+|120%
+|120%
+|120%
+|200%
+|120%
+|90,000 HP
+|40
+|[[Battle Items#Cat CPU|Cat CPU]] +1
+|760 XP
+|-
+! scope="row" |4
+|130%
+|130%
+|130%
+|130%
+|250%
+|130%
+|120,000 HP
+|40
+|40,000 XP
+|760 XP
+|-
+! scope="row" |5
+|150%
+|150%
+|150%
+|150%
+|300%
+|150%
+|150,000 HP
+|50
+|[[Catamin]] [A] +1
+|950 XP
+|-
+! scope="row" |6
+|220%
+|220%
+|220%
+|220%
+|600%
+|220%
+|180,000 HP
+|50
+|50,000 XP
+|950 XP
+|-
+! scope="row" |7
+|290%
+|290%
+|290%
+|290%
+|900%
+|290%
+|210,000 HP
+|50
+|[[Battle Items#Rich Cat|Rich Cat]] +1
+|950 XP
+|-
+! scope="row" |8
+|360%
+|360%
+|360%
+|360%
+|1,200%
+|360%
+|240,000 HP
+|50
+|60,000 XP
+|950 XP
+|-
+! scope="row" |9
+|430%
+|430%
+|430%
+|430%
+|1,500%
+|430%
+|270,000 HP
+|50
+|[[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|950 XP
+|-
+! scope="row" |10
+|500%
+|500%
+|500%
+|500%
+|1,800%
+|500%
+|300,000 HP
+|60
+|70,000 XP
+|1,140 XP
+|-
+! scope="row" |11
+|600%
+|600%
+|600%
+|600%
+|2,140%
+|600%
+|330,000 HP
+|60
+|[[Cat Capsule|Cat Ticket]] +1
+|1,140 XP
+|-
+! scope="row" |12
+|700%
+|700%
+|700%
+|700%
+|2,480%
+|700%
+|360,000 HP
+|60
+|100,000 XP
+|1,140 XP
+|-
+! scope="row" |13
+|800%
+|800%
+|800%
+|800%
+|2,820%
+|800%
+|390,000 HP
+|60
+|[[Catamin]] [B] +1
+|1,140 XP
+|-
+! scope="row" |14
+|900%
+|900%
+|900%
+|900%
+|3,160%
+|900%
+|420,000 HP
+|60
+|200,000 XP
+|1,140 XP
+|-
+! scope="row" |15
+|1,000%
+|1,000%
+|1,000%
+|1,000%
+|3,500%
+|1,000%
+|450,000 HP
+|80
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|1,520 XP
+|-
+! scope="row" |16
+|1,160%
+|1,160%
+|1,300%
+|1,160%
+|3,900%
+|1,400%
+|480,000 HP
+|80
+|500,000 XP
+|1,520 XP
+|-
+! scope="row" |17
+|1,320%
+|1,320%
+|1,600%
+|1,320%
+|4,300%
+|1,800%
+|510,000 HP
+|80
+|[[Battle Items#Cat Jobs|Cat Jobs]] +1
+|1,520 XP
+|-
+! scope="row" |18
+|1,480%
+|1,480%
+|1,900%
+|1,480%
+|4,700%
+|2,200%
+|540,000 HP
+|100
+|750,000 XP
+|1,900 XP
+|-
+! scope="row" |19
+|1,640%
+|1,640%
+|2,200%
+|1,640%
+|5,100%
+|2,600%
+|570,000 HP
+|100
+|[[Catamin]] [C] +1
+|1,900 XP
+|-
+! scope="row" |20
+|1,800%
+|1,800%
+|2,500%
+|1,800%
+|5,500%
+|3,000%
+|600,000 HP
+|100
+|1,000,000 XP
+|1,900 XP
+|}
+
+==Reference==
+*https://battlecats-db.com/stage/s24000.html
+{{SpecialStages List}}
+[[Category:Baron Seal Strikes Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

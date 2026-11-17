@@ -1,0 +1,169 @@
+==Release Dates==
+*'''Japanese:''' July 1st 2016
+*'''International:''' July 11th, 2016
+
+==Cats==
+Added 9 new units, CRO ranges from 272, 274~280 and 282:
+{{Update|mode=cats
+|Splendid Ganesha
+|[[File:Gatya bnr82.png|400px|link=The Almighties The Majestic Zeus (Gacha Event)]]
+|Tropical Kalisa
+|[[File:Gatya bnr85.png|400px|link=Gals of Summer (Removed Gacha Event)]]
+|Midsummer Rabbit
+|-
+|Sunny Neneko
+|-
+|Funghi
+|[[File:Mapname029 c en.png|200px|link=Neo Mushroom Garden Collaboration Event]]
+|Tanky
+|{{Stamps|Tanky|Neo Mushroom Garden Collaboration Event}}
+|White Cat
+|{{Stamps|White Cat|Neo Mushroom Garden Collaboration Event}}
+|Fortressy
+|{{Stamps|Fortressy|Neo Mushroom Garden Collaboration Event}}
+|Awa-Odori Cat
+|[[File:Mapname115 s en.png|200px|link=Summer in Catland]]
+}}
+
+*Added 7 new [[True Form]]s:
+{{Update|mode=trueforms
+|Pogo Cat
+|'''ATT:''' 1,275 → 1,785 (+40%)<br>
+'''DPS:''' 780.61 → 1,082.86 (+40%)<br>
+'''Cost:''' 240¢/360¢/480¢ → 160¢/240¢/320¢<br>
+{{AbilityIcon|Survive|size=40|nolink=on}} 50% → 100%
+|Archer Cat
+|'''HP:''' 4,080 → 6,120 (+50%)<br>
+'''ATT:''' 1,665 → 2,500 (+50.15%)<br>
+'''DPS:''' 693.75 → 1,041.67 (+50.15%)<br>
+'''Range:''' 340 → 390<br>
+'''Speed:''' 10 → 13
+|Swordsman Cat
+|'''HP:''' 11,050 → 17,000 (+53.85%)<br>
+'''ATT:''' 1,870 → 3,400 (+81.82%)<br>
+'''DPS:''' 1,700 → 3,090.91 (+81.82%)
+|Kuu
+|'''HP:''' 39,100 → 73,100 (+86.96%)<br>
+'''ATT:''' 62,900 → 79,900 (+27.03%)<br>
+'''DPS:''' 3,500.93 → 5,222.22 (+49.17%)<br>
+'''Range:''' 380 → 410<br>
+'''Atk Freq:''' 17.97s → 15.3s<br>
+'''Atk Cooldown:''' 15.97s → 13.3s<br>
+{{AbilityIcon|Immune to Weaken|size=40|nolink=on}}
+|Vacation Queen
+|'''ATT:''' 10,844 → 10,845 (+0.01%)<br>
+'''DPS:''' 1,651.52 → 2,804.74 (+69.84%)<br>
+'''Range:''' 220 → 250<br>
+'''Atk Freq:''' 6.57s → 3.87s<br>
+'''Foreswing:''' 2.6s → 2.67s<br>
+'''Backswing:''' 0.7s → 1.2s<br>
+'''Atk Cooldown:''' 3.57s → 0s<br>
+'''Speed:''' 6 → 9<br>
+{{AbilityIcon|Knockback|size=40|nolink=on}} 0% → 40%<br>
+{{AbilityIcon|Multi-Hit|size=40|nolink=on}} Removed
+|Vengeful Cat
+|'''ATT:''' 1,665 → 3,332 (+100.12%)<br>
+'''DPS:''' 214.38 → 429.01 (+100.12%)<br>
+'''Backswing:''' 1.17s → 2.23s<br>
+'''Recharge:''' 3.2s → 9.2s<br>
+{{AbilityIcon|Long Distance|size=40|nolink=on}} Range 350 → 275~425
+|Princess Kaguya
+|'''HP:''' 37,400 → 47,600 (+27.27%)<br>
+'''ATT:''' 40,800 → 51,000 (+25%)<br>
+'''DPS:''' 4,418.77 → 5,523.47 (+25%)<br>
+'''Range:''' 425 → 455<br>
+{{AbilityIcon|Slow|size=40|nolink=on}} 50% → 100%
+}}
+
+==Enemies==
+{{Update|mode=enemies
+|Kite Cat
+|Boraphim
+|Ritual Drum Doge
+|Festive Otter
+|Funghi
+}}
+
+==Stages==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+|-
+! scope="row" |[[Legend Stages|Stories of Legend]]
+|[[File:Mapname029 n en.png|200px|link=Shadow Cosmopolis]]
+|-
+! scope="row" |[[Special Events|Events]]
+|[[File:Mapname089 s en.png|200px|link=Vacation Awakes!]] [[File:Mapname090 s en.png|200px|link=Vengeance Awakes!]] [[File:Mapname115 s en.png|200px|link=Summer in Catland]]
+|-
+! scope="row" |[[Collaboration Events|Collaboration]]
+| [[File:Mapname029 c en.png|200px|link=Neo Mushroom Garden Collaboration Event]]
+|}
+
+===Stage Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+! scope="col" |Changes
+|-
+! scope="row" |2 Star Additions
+|[[File:Mapname027 n en.png|200px|link=Weak & Mildly Acidic]]
+|'''Magnification:''' x1 → x1.2
+|-
+! scope="row" |3 Star Additions
+|[[File:Mapname025 n en.png|200px|link=Sea Polluter]]
+|'''Magnification:''' x1 → x1.4
+|}
+
+==Cat Combos==
+{{Combos|basic=1
+|{{CatCombo|Sweep the Area|Cannon Recharge Up (Sm)|Mr.|Raiden|jpname=一斉掃射}}
+|{{CatCombo|Steel Saviors|"Resistant" Effects Up (Sm)|Cat-o-tron|Cat Machine|jpname=鋼の救世主}}
+|{{CatCombo|Galactic Travel|Unit Speed Up (Sm)|Space Cat|Super Galaxy Cosmo|jpname=銀河を駆ける}}
+|{{CatCombo|Struck by Lightning|"Massive Damage" Effects Up (Sm)|Thundia|Skelecat|jpname=雷に打たれて}}
+|{{CatCombo|Neckless Chic|"Knockback" Effects Up (Sm)|Jamiera Cat|Balalan Pasalan|jpname=首なしスタイル}}
+|{{CatCombo|Blue Lagoon|Bounty Up (Sm)|Guardian Gamereon|Island Cat|jpname=南国諸島}}
+|{{CatCombo|Dog Gods|Cannon Attack Up (Sm)|Ururun Wolf|Anubis the Protector|jpname=犬神様}}
+|{{CatCombo|Volcanic Fury|Cannon Start Level Up (M)|Takeda Shingen|Manic Island Cat|jpname=風林火山}}
+}}
+
+==Gacha Events==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Button
+! scope="col" |Banner
+|-
+|[[File:Gatya btn20.png|link=]]
+|[[File:Gatya bnr85.png|400px|link=Gals of Summer (Removed Gacha Event)]]
+|}
+
+===Banner Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Banner
+! scope="col" |Added Units
+! scope="col" |Removed Units
+|-
+|[[File:Gatya bnr82.png|400px|link=The Almighties The Majestic Zeus (Gacha Event)]]
+|<center>{{CatIcon|Splendid Ganesha|size=80px}}</center>
+|<center>N/A</center>
+|}
+
+==Miscellaneous==
+*Added 5 new [[User Rank]] rewards:
+**3,050 grants 1 Epic Catfruit.
+**3,150 grants 3 Special Catseyes.
+**3,250 grants 3 Rare Catseyes.
+**3,350 grants 3 Super Rare Catseyes.
+**3,450 grants 3 Uber Rare Catseyes.
+*Increased [[Gamatoto Expedition|Gamatoto]] level cap to 43.
+*Collecting User Rank Rewards now fully refills [[Energy]].
+*Ads can now be watched to recover Energy.
+
+==Reference==
+*https://m.gamer.com.tw/forum/C.php?bsn=23772&snA=7704&bpage=1&ltype=
+
+{{Versions}}

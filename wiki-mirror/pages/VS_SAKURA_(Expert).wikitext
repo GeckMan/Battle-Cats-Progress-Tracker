@@ -1,0 +1,51 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Gabriel|Sakura}}
+'''VS SAKURA (Expert)''' is one of the [[Street Fighter Collaboration Event#New Challenger|New Challenger]] stages.
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn190 00 c en.png]]
+|stage location = [[File:Mapname148 c en.png]]
+|energy = 200
+|enemy castle hp = 300,000 HP
+|enemies = {{Magnification|Doge Dark|200%
+|Gabriel|100%}}
+|boss = {{Magnification|Sakura|100%}}
+|treasure = - 400,000 XP (100%, 1 time)
+|XP = 36,000 XP
+|width = 4,500
+|max enemies = 12
+|jpname = VS Sakura Intense
+|script = VSさくら 激ムズ
+|romaji = VS Sakura Geki Muzu
+|star = 1
+|event = [[Street Fighter Collaboration Event]]
+|event-chapter = [[Street Fighter Collaboration Event/New Challenger|New Challenger]]
+|difficulty = ★6
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Doge Dark]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Gabriel]] spawns after 13.33 seconds<sup>400f</sup>.
+*2 [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*2 [[Gabriel]]s spawn after 30 seconds<sup>900f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*3 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 1~2 seconds<sup>30f~60f</sup>.
+*3 [[Gabriel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 1~2 seconds<sup>30f~60f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sakura (Enemy)|Sakura]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+**Infinite [[Gabriel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+**15 [[Doge Dark]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**15 [[Gabriel]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02255-01.html
+
+{{Street Fighter}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

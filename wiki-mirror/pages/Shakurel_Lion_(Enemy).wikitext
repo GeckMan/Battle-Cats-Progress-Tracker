@@ -1,0 +1,65 @@
+{{ENExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Shakurel Lion (Special Cat)]].''
+'''Shakurel Lion''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Shakurel Planet Collaboration Event]] and the [[Catclaw Dojo]]. It was added in [[Version 8.8 Update|Version 8.8]].
+
+{{Enemy Info
+|name = Shakurel Lion
+|image = E 473.png
+|appearance = [[Shakurel Planet Collaboration Event]]<br>
+[[Arena of Honor/Attack of the Shakurels|Attack of the Shakurels]]
+|money drop = 500¢ - 1,975¢
+}}
+
+==Enemy==
+Shakurel Lion has low health and attack power, along with low range and a somewhat slow attack rate. Ability-wise, he [[Strengthen|strengthens]] by 100% when he is below 50% HP.
+
+==Strategy==
+This enemy isn't threatening. Any [[:Category:Normal Cats|Normal Cats]] will make short work of him, as well as strong [[:Category:Area Attack Cats|area attackers]] such as [[Salon Cat (Rare Cat)|Paris Cat]] or [[Figure Skating Cats (Super Rare Cat)|Drama Cats]]. Do not worry about his strengthen, since his base attack power is low enough that it barely makes a difference.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Shakurel Planet Collaboration Event#Shakurel Planet|Shakurel Planet]]:
+**[[Gnawin' Bones]] (30%)
+**[[Chompin' Trees]] (100%)
+**[[The Future Is Chins]] (200%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Attack of the Shakurels|Attack of the Shakurels]] (50%, 200%, 400%, 500%, 600%, 700%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Shakurel Lion
+|Health = 36000
+|Attack Power = 1500
+|Attack Range = 140
+|Attack Type = Area
+|Time Between Attacks = 66
+|Movement Speed = 8
+|Knockback = 2
+|Foreswing = 19
+|Backswing = 9
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+473 e.png|Shakurel Lion's spritesheet
+IdleShakurelLion.gif|Shakurel Lion's moving animation
+</gallery>
+
+----
+{{EnemyNav|Shakurel Face|Shakurel Tiger}}
+----
+
+{{Shakurel Planet}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Area Attack Enemies]]

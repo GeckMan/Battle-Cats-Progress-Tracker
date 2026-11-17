@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Bannerman Doge|Croco|B.B.Bunny|Baa Baa|Le'boin|Pigge|Sir Seal}}
+:''For the [[Invasion Stage]], see [[Fuku Domain/Doge's Rebellion|here]].''
+'''Fuku Domain''' is the fourth stage in [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]].
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Mapsn385 03 s en.png]]
+|stage location = [[File:Mapname385 s en.png]]
+|energy = 40
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Bannerman Doge|100%
+|Croco|100%
+|B.B.Bunny|100%
+|Baa Baa|100%
+|Pigge|100%
+|Sir Seal|100%}}
+|boss = {{Magnification|Le'boin|100%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +80 (100%, unlimited)
+|score reward = '''8,200''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''7,000''': 35,000 XP<br>
+'''500''': 25,000 XP
+|XP = 760 XP
+|width = 4,000
+|max enemies = 15
+|jpname = Lucky Province
+|script = 福之国
+|romaji = Fuku no Kuni
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]]
+|difficulty = ★2
+|prev stage = [[Mentai Domain]]
+|next stage = [[Daidai Domain]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*6 [[Bannerman Doge]]s spawn, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*6 [[Croco]]s spawn after 5.33 seconds<sup>160f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 12 seconds<sup>360f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*3 [[Baa Baa]]s spawn after 20 seconds<sup>600f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'boin]] spawns as the boss.
+**Infinite [[Bannerman Doge]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**3 [[Pigge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Sir Seal]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+An easy stage that can be beaten by spamming [[Super Mr.]].
+
+==Trivia==
+*Fuku Domain is named after the Japanese word 福 ''fuku'' (luck; fortune).
+
+==Reference==
+*https://battlecats-db.com/stage/s01385-04.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

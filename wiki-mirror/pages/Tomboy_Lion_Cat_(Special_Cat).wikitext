@@ -1,0 +1,132 @@
+'''Tomboy Lion Cat''' is a [[:Category:Special Cats|Special Cat]] added in [[Version 11.3 Update|Version 11.3]] that can be obtained from the [[Heartbeat Catcademy (Event Gacha)|Heartbeat Catcademy]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]].
+
+{{Cat Info
+|ID = 651
+|rarity = EX
+|name1 = Tomboy Lion Cat
+|name2 = Iron-Masked Lion Cat
+}}
+
+==Evolution==
+Evolves into '''Iron-Masked Lion Cat''' at level 10.
+
+==Strategy/Usage==
+Tomboy Lion Cat is fast in both attacks and movement, so her usage is similar to that of the normal [[Cow Cat (Normal Cat)|Lion Cat]]. The issue lies in her stats: early in the game, not enough + levels can realistically be obtained to make up for the level cap being 1, while later on her stats will instead be insufficient, regardless of level or her ability.
+
+{{Job|Classification = User Rank Dump & Rusher}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Catcademy Anthem|Research Power Up (L)|Secret Crush Cat|Tomboy Lion Cat|Chalkboard Eraser Cat|Class Rep Cat|Principal Cat|jpname=にゃんこ学園校歌斉唱}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 651
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni651 f00.png
+|Image2 = Uni651 c00.png
+|Name1 = Tomboy Lion Cat
+|Desc1 = Burst from the door each morning, still eating<br>toast as she rushes to meet her crush on the<br>road to school. Strong vs. Dark enemies.
+|Name2 = Iron-Masked Lion Cat
+|Desc2 = Inherited the legendary Girl Boss mask! Sends<br>slow walkers flying as she bolts to make it to<br>class on time. Strong vs. Dark enemies.
+|Name1 (JP) = おてんばネコライオン (Otenba Neko Raion, Tomboy Cat Lion)
+|Desc1 (JP) = 毎日遅刻寸前で登校するあわてんぼうなネコ<br>曲がり角での出会いを夢見て今日も全力疾走<br>黒い敵にめっぽう強い
+|Transl1 (JP) = A rash Cat who is nearly late to school every day.<br>Today she runs as fast as she can, dreaming of meeting someone around the corner.<br>Strong against Dark enemies.
+|Name2 (JP) = 鉄仮面ネコライオン (Tekkamen Neko Raion, Iron-Masked Cat Lion)
+|Desc2 (JP) = 伝説のスケバンから鉄仮面を授けられたネコ<br>通学を邪魔する学生たちは全て蹴散らす<br>黒い敵にめっぽう強い
+|Transl2 (JP) = A Cat who was given an iron mask by a legendary delinquent schoolgirl.<br>Scatters students who get in her way to school.<br>Strong against Dark enemies.
+|Name1 (TW) = 淘氣獅子貓
+|Desc1 (TW) = 每天都趕在遲到前進校門，冒冒失失的貓咪<br>今天也期待能在轉角遇見愛而全力奔跑<br>善於攻擊黑色敵人
+|Name2 (TW) = 鐵假面獅子貓
+|Desc2 (TW) = 得到傳說中的女番長賜予了鐵假面的貓咪<br>會將擋到她上下學路線的學生全部踢飛<br>善於攻擊黑色敵人
+|Name1 (KR) = 말괄량이 고양이 라이온
+|Desc1 (KR) = 매일 지각 직전에 등교하는 덜렁대는 고양이<br>길 모퉁이에서 누군가와 마주치는걸 꿈꾸며 전력 질주<br>검은 적에 엄청 강하다
+|Name2 (KR) = 철가면 고양이 라이온
+|Desc2 (KR) = 전설의 불량 여고생에게 철가면을 받은 고양이<br>통학길을 가로막는 학생들을 모두 물리친다<br>검은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tomboy Lion Cat
+|Normal Stats Level = 1+29
+|Normal Base HP = 500
+|Normal Base AP = 12
+|Normal Range = 140
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 28
+|Normal KB = 5
+|Normal Cost = 500
+|Normal Recharge = 270
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Iron-Masked Lion Cat
+|Evolved Stats Level = 1+29
+|Evolved Base HP = 500
+|Evolved Base AP = 12
+|Evolved Range = 140
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 28
+|Evolved KB = 5
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.1+55
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 12 damage<br>(36 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 28
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 9 ~ 2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 205 damage<br>(615 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 205 damage<br>(615 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 28
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni651 f00}}
+
+==Trivia==
+*Her appearance is a reference to a common trope in anime and manga, where a student is late for class, so they run to school while holding whatever they had for breakfast with their mouth, usually bread or toast.
+*Iron-Masked Lion Cat is a reference to Yoko Godai from the television series [[wikipedia:Sukeban Deka#Television series|''Sukeban Deka II: The Legend of the Girl In The Iron Mask'']], a schoolgirl who spent most of her life wearing a similar iron mask. Even her uniform has the same exact colors.
+
+==Reference==
+*https://battlecats-db.com/unit/652.html
+
+----
+{{CatNav|Secret Crush Cat|Chalkboard Eraser Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

@@ -1,0 +1,118 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Alaska (Into the Future)/Outbreak|here]].''
+'''Alaska''' is the 40th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc006.png]]
+|stage location = [[File:Alaska.png]]
+'''Into The Future'''
+|energy = 57
+|energy2 = 67
+|energy3 = 77
+|enemy castle hp = 200,000 HP
+|enemy castle hp2 = 300,000 HP
+|enemy castle hp3 = 400,000 HP
+|enemies = {{Magnification|Squire Rel|600%
+|Those Guys|600%
+|Shibalien|100%
+|Jackie Peng|600%
+|Imperator Sael|100%
+|Sir Seal|600%}}
+|enemies2 = {{Magnification|Squire Rel|1,200%
+|Shibalien|250%
+|Jackie Peng|1,200%
+|Gabriel|200%
+|Imperator Sael|250%
+|Angelic Gory|100%}}
+|boss2 = {{Magnification|Squire Rel|1,200%}}
+|enemies3 = {{Magnification|Squire Rel|1,800%
+|Shibalien|600%
+|Jackie Peng|1,800%
+|Gabriel|250%
+|Imperator Sael|600%
+|Angelic Gory|150%}}
+|boss3 = {{Magnification|Squire Rel|1,800%}}
+|treasure = - [[Treasure|Dogsled]]
+|treasure2 = - [[Treasure|Dogsled]]
+|treasure3 = - [[Treasure|Dogsled]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': Cat CPU +1
+|score reward3 = '''6,000''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|max enemies = 10
+|max enemies2 = 10
+|max enemies3 = 10
+|XP = 12,700 XP
+|width = 5,200
+|jpname = Alaska
+|script = アラスカ
+|romaji = Arasuka
+|jptreasure = Fur
+|twname = Alaska
+|twscript = 阿拉斯加
+|twromaji = Ālāsījiā
+|twtreasure = Dog Sledding
+|krname = Alaska
+|krscript = 알래스카
+|krromaji = Allaeseuka
+|krtreasure = Dog Sledding
+|chapter = [[Into the Future]]
+|prev stage = [[Las Vegas (Into the Future)|Las Vegas]]
+|next stage = [[Canada (Into the Future)|Canada]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Squire Rel|Those Guys|Shibalien|Jackie Peng|Imperator Sael|Sir Seal}}
+*20 [[Squire Rel]]s spawn, delay 0.67~1 seconds<sup>20f~30f</sup>.
+*Infinite [[Those Guys]] spawn after 20 seconds<sup>600f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Shibalien]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*5 [[Imperator Sael]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 16~24 seconds<sup>480f~720f</sup>.
+*5 [[Sir Seal]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 16~24 seconds<sup>480f~720f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Squire Rel]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Squire Rel|Shibalien|Jackie Peng|Gabriel|Imperator Sael|Angelic Gory}}
+*20 [[Squire Rel]]s spawn, delay 0.67~1 seconds<sup>20f~30f</sup>.
+*Infinite [[Shibalien]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Gabriel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Squire Rel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**3 [[Imperator Sael]]s spawn, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn, delay 12~24 seconds<sup>360f~720f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn, delay 16.67~50 seconds<sup>500f~1,500f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Squire Rel|Shibalien|Jackie Peng|Gabriel|Imperator Sael|Angelic Gory}}
+*20 [[Squire Rel]]s spawn, delay 0.67~1 seconds<sup>20f~30f</sup>.
+*Infinite [[Shibalien]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Gabriel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Squire Rel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**5 [[Imperator Sael]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 13.33~40 seconds<sup>400f~1,200f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+The Imperator Saels and Sir Seals can be dealt with using high-range units like [[Gross Cat (Normal Cat)|Macho Leg Cat]] and [[Lizard Cat (Normal Cat)|King Dragon Cat]]. If you have [[Rover Cat (Rare Cat)|Rover Cat Mk II]] or [[Swordsman Cat (Rare Cat)|Sword Master Cat]]
+
+==='''Chapters 2 & 3'''===
+There are more threatening enemies in this stage, like Angelic Gory and Gabriel, so tankers like [[Rocker Cat (Rare Cat)|Artist Cat]] are recommended alongside midrangers and backliners. [[Cow Cat (Normal Cat)|Giraffe Cat]] and/or [[Crazed Cow Cat (Super Rare Cat)|Crazed Giraffe]] are useful for clearing the peons.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-40.html
+*https://battlecats-db.com/stage/s03004-40.html
+*https://battlecats-db.com/stage/s03005-40.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

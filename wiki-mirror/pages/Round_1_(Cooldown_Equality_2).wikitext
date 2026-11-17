@@ -1,0 +1,74 @@
+{{DISPLAYTITLE:Round 1}}
+{{EnemiesAppearing|Oldhorn|Gabriel|Baa Baa|Kang Roo|Hackey|Boraphim}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Cooldown Equality 2|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Oldhorn|100%
+|Gabriel|500%
+|Baa Baa|4,000%
+|Kang Roo|4,000%
+|Hackey|200%
+|Boraphim|100%}}
+|enemies2 = {{Magnification|Oldhorn|120%
+|Gabriel|600%
+|Baa Baa|4,800%
+|Kang Roo|4,800%
+|Hackey|240%
+|Boraphim|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 20
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Cooldown Equality 2|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Cooldown Equality 2)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Cooldown Equality}}
+
+==Battleground==
+*2 [[Oldhorn]]s spawn after 6.67 seconds<sup>200f</sup>, delay 86.67 seconds<sup>2,600f</sup>.
+*Infinite [[Gabriel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*5 [[Baa Baa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*5 [[Baa Baa]]s spawn after 30 seconds<sup>900f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*5 [[Baa Baa]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*5 [[Baa Baa]]s spawn after 76.67 seconds<sup>2,300f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*2 [[Kang Roo]]s spawn after 86.67 seconds<sup>2,600f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*5 [[Baa Baa]]s spawn after 100 seconds<sup>3,000f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*1 [[Hackey]] spawns after 106.67 seconds<sup>3,200f</sup>.
+*1 [[Boraphim]] spawns after 126.67 seconds<sup>3,800f</sup>.
+*2 [[Kang Roo]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*1 [[Boraphim]] spawns after 140 seconds<sup>4,200f</sup>.
+*5 [[Baa Baa]]s spawn after 123.33 seconds<sup>3,700f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*2 [[Kang Roo]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*5 [[Baa Baa]]s spawn after 146.67 seconds<sup>4,400f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*5 [[Baa Baa]]s spawn after 170 seconds<sup>5,100f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*When the base reaches 90% HP:
+**1 [[Boraphim]] spawns.
+
+==Strategy==
+Welcome to the "new" Otherworld Colosseum, which...isn't even that new considering PONOS reused a Colosseum restriction. Every unit in your lineup has the exact same cooldown (500 frames, or 16.67 seconds), meaning you're encouraged to use Super Rares for your main damage and defensive options, as well as Uber Rares which quickly become extremely unbalanced from their short cooldown.
+
+This stage starts with two Oldhorns and a few Baa Baas, with a Boraphim after around two minutes, another Boraphim a few seconds after that, and a Hackey complicating any lure strategies you might have in mind. The best way to win is to use the starting Oldhorn to stack up anti-Angel CC units like [[Juliet the Maiko]], [[Sanzo Cat]] and [[Farmboy Cat]], while stacking sniper units to chip down Hackey like [[Jelly Dumpling Cat]]. It may be tempting to rush this stage, but at 90% base health there's another Boraphim. Only rush this stage if your units are strong enough to take down a Boraphim quickly. The Oldhorn's mostly alone, so generic anti-Relic CC like [[Master Uril (Special Cat)|Master Uril]] will be enough for him.
+
+===Recommended Ubers===
+*[[Thunder Jack (Uber Rare Cat)|Thunder Jack]]: Thunder Jack's fast attacks and rapid KB vs. Angel enemies allows him to be a strong unit for subduing Boraphim if you want to rush this level.
+*Anti-Angel CC: Examples include [[The Peach Devils]], [[Mitama the Oracle]], and [[Fox Queen Himeyuri]].
+
+==Reference==
+*https://battlecats-db.com/stage/s36006-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

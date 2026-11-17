@@ -1,0 +1,123 @@
+:''This article is about the Cat Unit. For the enemy, see [[Mentori (Enemy)]].''
+'''Mentori''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 6.9 Update|Version 6.9]] that can be acquired as a treasure drop when playing any stage of [[Mentori Collaboration Event#Mentori's Masterplan|Mentori's Masterplan]] during the [[Mentori Collaboration Event]].
+
+{{Cat Info
+|ID = 399
+|rarity = RR
+|name1 = Mentori
+|name2 = Mentori CC
+}}
+
+==Evolution==
+Evolves into '''Mentori CC''' at level 10.
+
+==Strategy/Usage==
+There are many better options for tanking or protecting your other cats from Floating enemies such as [[Kotatsu Cat (Super Rare Cat)|Kotatsu Cat]]. Mentori may still find some use on 4-crown stages as an anti-Floating meatshield, but even then though it's still a waste of a slot.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 399
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni399 f00.png
+|Image2 = Uni399 c00.png
+|Name1 = Mentori
+|Desc1 = Dropping in from MENTORI! Trust me,<br>talking to it is more trouble than it's worth..<br>Tough vs Floating Enemies
+|Name2 = Mentori CC
+|Desc2 = Dropping in from MENTORI! This weird<br>bird specializes in obnoxious interjections.<br>Tough vs Floating Enemies
+|Name1 (JP) = めんトリ (Mentori)
+|Desc1 (JP) = めんトリから参戦！<br>話しかけると面倒くさそうに相槌をうってくれる<br>浮いてる敵に打たれ強い
+|Transl1 (JP) = Joining the war from Mentori!<br>When talking to him, he gives you a tedious nod<br>Resists damage from Floating enemies
+|Name2 (JP) = めんトリCC (Mentori CC)
+|Desc2 (JP) = めんトリから参戦！やる気がある時は大げさで<br>ちょっぴりうさんくさい相槌を見せることも<br>浮いてる敵に打たれ強い
+|Transl2 (JP) = Joining the war from Mentori! When you're motivated you exaggerate<br>You can also show a bit of a fishy gesture<br>Resists damage from Floating enemies
+|Name1 (TW) = 懶得鳥
+|Desc1 (TW) = 懶得鳥你來來來參戰！<br>跟他搭話就會露出一副懶樣點頭回應你<br>對上飄浮敵人很耐打
+|Name2 (TW) = 懶得鳥CC
+|Desc2 (TW) = 懶得鳥你來來來參戰！<br>幹勁來時就會很浮誇的猛點頭回應你<br>對上飄浮敵人很耐打
+|Name1 (KR) = Mentori
+|Desc1 (KR) = Mentori에서 참전!<br>말을 걸면 귀찮은 듯이 리액션을 해준다<br>떠있는 적에 맷집이 좋다
+|Name2 (KR) = Mentori CC
+|Desc2 (KR) = Mentori에서 참전! 의욕이 있을 때는 호들갑을 떨며<br>어딘지 수상쩍은 리액션을 해준다<br>떠있는 적에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 225¢
+*Chapter 2: 450¢
+*Chapter 3: 675¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mentori
+|Normal Base HP = 540
+|Normal Base AP = 15
+|Normal Range = 120
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Mentori CC
+|Evolved Base HP = 540
+|Evolved Base AP = 15
+|Evolved Range = 120
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 540 HP
+|val-Normal-Attack Power = 15 damage<br>(45 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 9,180 HP
+|val-Normal-MaxAttack = 255 damage<br>(765 DPS)
+|val-Evolved-Health = 9,180 HP
+|val-Evolved-Attack Power = 255 damage<br>(765 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni399 f00}}
+
+----
+{{CatNav|Honeyto-kun|Imoto}}
+----
+
+{{Mentori}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with regional differences]]

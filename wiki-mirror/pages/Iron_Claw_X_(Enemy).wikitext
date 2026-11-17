@@ -1,0 +1,62 @@
+:''This article is about the enemy. For the Cat Unit, see [[Kung Fu Cat X (Rare Cat)]].''
+'''Iron Claw X''' (剛拳にゃんこG Tsuyoshi Ken Nyanko G, '''Goken Cat G''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Kung-Fu X Awakens!]]. He was added in [[Version 5.3 Update|Version 5.3]].
+
+{{Enemy Info
+|name = Iron Claw X
+|image = E 265.png
+|appearance = [[Kung-Fu X Awakens!]]
+|money drop = 2,200¢ - 8,690¢
+}}
+
+==Enemy==
+This enemy has massive health and attack power, a fast attack rate, long range, and has a 100% chance to knockback whatever that survives these attacks. He isn't too threatening due to single target, but can still be annoying in groups.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Kung-Fu X Awakens!]]:
+**[[Old Master (Expert)]]
+**[[Old Master (Insane)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Iron Claw X
+|Health = 1200000
+|Attack Power = 40000
+|Attack Range = 410
+|Attack Type = Single
+|Time Between Attacks = 61
+|Movement Speed = 6
+|Knockback = 5
+|Foreswing = 11
+|Backswing = 26
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">8,000</span> at 11f <sup>0.37s</sup>, <span class="scaled" data-type="ap">2,000</span> at 15f <sup>0.5s</sup>, <span class="scaled" data-type="ap">30,000</span> at 35f <sup>1.17s</sup>)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+265 e.png|Iron Claw X's spritesheet
+IdleIronClawX.gif|Iron Claw X's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/267.html
+
+----
+{{EnemyNav|Funghi|Henry}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemy Cats]]

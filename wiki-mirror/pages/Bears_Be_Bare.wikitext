@@ -1,0 +1,107 @@
+:''Not to be confused with the [[Bears be Bare (Monthly Event)|event]] of the same name.''
+'''Bears Be Bare''' (クマトーク, ''Kumatōku'', '''Bear Talk''') are a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Special Events|Event Stages]]. They were added in [[Version 2.1 Update#Version 2.1.3 Update|Version 2.1.3]].
+
+{{Enemy Info
+|name = Bears Be Bare
+|image = E 067.png
+|appearance = [[Bears be Bare (Monthly Event)|Bears be Bare]]<br>
+[[Bears Be Back (Monthly Event)|Bears Be Back]]<br>
+[[March Gauntlet]]<br>
+[[Miracle Tactics! (Insane)]]<br>
+[[Total War: Spring Special]]<br>
+[[Citadel#Traitless|Traitless Citadel]]
+|money drop = 3000¢ - 11850¢
+}}
+
+==Enemy==
+The bearbershop quintet. They have mediocre health but get knocked back quite often, so be wary when relying on a heavy hitter, as they will likely miss. Their attack is quite slow, long-ranged and has a 100% chance to knockback [[Cat Units]]. They dash forward extremely fast before stopping to attack, similarly to [[Cats in a Box (Special Cat)|Cats in a Box]] or [[Doge Dark]]. Individually not very powerful, they are support troops to push you back so others can advance.
+
+==Strategy==
+This enemy is not very powerful or dangerous. Because they are mainly just a support unit, they do not require much to defeat. Use any decent attackers to knock them back. Be wary, for as soon as they are knocked back, they attack again!
+
+Use [[Lizard Cat (Normal Cat)|Dragon Cat]], [[Salon Cat (Rare Cat)|Paris Cat]], [[Titan Cat (Normal Cat)|Mythical Titan Cat]], or any fair-health attacker to defeat this enemy.
+
+==Variants==
+{{Variant
+|original = Bears Be Bare
+|inherit_desc = true
+|Bears Be Back
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Bears be Bare (Monthly Event)|Bears be Bare]]:
+**[[Bees with Ears]] (100%)
+**[[Arming Bears]] (100%)
+**[[Going Bipolar]] (150%)
+**[[Fighting Bearhanded]] (150%, 200%)
+**[[Can't Bear Anymore]] (200%)
+*Monthly Event All-Stars Miracle Celebration!: [[Miracle Tactics! (Insane)]] (100%)
+*[[Bears Be Back (Monthly Event)|Bears Be Back]]:
+**[[2 Much 2 Bear]] (250%)
+**[[Bear in Mind]] (500%)
+*[[Total War: Spring Special]]:
+**[[Rites of Spring: Basic (Veteran)]] (150%)
+**[[Rites of Spring: Advanced (Insane)]] (200%)
+**[[Rites of Spring: Exalted (Deadly)]] (300%)
+**[[Rites of Spring: Supreme (Deadly)]] (600%)
+*[[Traitless Citadel]]: [[Traitless Citadel/Floor 5|Floor 5]] (100%)
+*[[March Gauntlet]]:
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.1]] (150%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.2]] (189%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.3]] (228%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.4]] (267%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.5]] (306%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.6]] (345%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.7]] (384%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.8]] (423%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.9]] (462%)
+**[[March Gauntlet/Be Bare Lv.1~10|Be Bare Lv.10]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Bears Be Bare
+|Health = 50000
+|Attack Power = 2800
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 101
+|Movement Speed = 35
+|Knockback = 10
+|Foreswing = 15
+|Backswing = 86
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+067 e.png|Bears Be Bare's spritesheet
+Audience Bears.gif|Bears Be Bare's attack animation
+IdleAudienceBears.gif|Bears Be Bare's moving animation
+Medal 040.png|Bears Be Bare on the ''Unbearable'' [[Meow Medals|Meow Medal]]
+Medal 080.png|Bears Be Bare, [[Teacher A]] and [[Samurai Doggy]] on the ''Rites of Spring'' Meow Medal
+</gallery>
+
+==Trivia==
+*In the [[Media:Eve l 003 en.png|event poster]] for [[Bears be Bare (Monthly Event)|Bears be Bare]], this enemy is referred to as Audience Bears, which was the only name they had until they were added to the [[Enemy Guide]] in [[Version 13.3 Update|Version 13.3]].
+*Their Japanese name, "Bear Talk" (クマトーク ''Kumatōku''), is most likely a reference to the comedy-focused talk show ''[[wikipedia:Ametalk!|Ametalk!]]'' (アメトーーク ''Ametōku''), as the Japanese names of the [[Bears be Bare (Monthly Event)|Bears be Bare]] and [[Bears Be Back (Monthly Event)|Bears Be Back]] stages also tend to be themed around comedy.
+*This enemy's concept may be a pun based on the multiple meanings of the Japanese word ''hinadan''. The most common meaning is a tiered stand used to display ''hina-ningyō'' during ''[[wikipedia:Hinamatsuri|Hinamatsuri]]'' - the basis of the Bears be Bare event - but can also refer to tiered seats/platforms for kabuki musicians or ministers in the National Diet, which are similar to Bears Be Bare's bleachers.
+
+==Reference==
+*https://battlecats-db.com/enemy/069.html
+
+----
+{{EnemyNav|Lucky Sloth|Monkey King}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]

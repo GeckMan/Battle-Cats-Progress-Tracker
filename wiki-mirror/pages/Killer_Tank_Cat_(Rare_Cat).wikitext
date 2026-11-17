@@ -1,0 +1,137 @@
+:''This article is about the Cat Unit. For the enemy, see [[Killer Tank Cat (Enemy)]].''
+'''Killer Tank Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when clearing Levels 2, 4 or 9 of [[Horde of Cats]]. It was added in [[Version 12.1 Update|Version 12.1]].
+
+{{Cat Info
+|ID = 695
+|rarity = RR
+|name1 = Killer Tank Cat
+|name2 = True Killer Tank Cat
+}}
+
+==Evolution==
+Evolves into '''True Killer Tank Cat''' at level 10.
+
+==Strategy/Usage==
+This is a <u>joke character</u>. He has the stats of a meatshield, but an insanely high cost (tied for the highest in the game!), which makes him, by far, the least cost-efficient cat you could ever use in a stage, alongside the first and second forms of his [[Killer Cat (Rare Cat)|rounder brother]]. Unlike Killer Cat though, he lacks any [[Cat Combo]]s, making him mostly worthless outside of [[User Rank]]. One last perk about him is his usefulness in obtaining [[Meow Medals]] that require spending lots of money on units, such as ''Nouveau Riche''.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 695
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni695 f00.png
+|Image2 = Uni695 c00.png
+|Name1 = Killer Tank Cat
+|Desc1 = A Tank Cat with its feral side unleashed. It is itching<br>for a fight, even though it can't tear wet tissue paper.<br>Costs a bit extra to recruit to fight for you. (Area Atk.)
+|Name2 = True Killer Tank Cat
+|Desc2 = Its feral side has completely overwhelmed it. Its cost<br>does not measure up to its improved defenses, nor its<br>low power (Area Atk.)
+|Name1 (JP) = 殺意のタンクネコ (Satsui no Tanku Neko, Killer Tank Cat)
+|Desc1 (JP) = 野生の本能を解放したタンクネコ<br>テンションは最高潮でも攻撃力はスズメの涙<br>従えるには少々お金がかかる(範囲攻撃)
+|Transl1 (JP) = A Tank Cat that unleashed its wild instinct<br>Tension is at its maximum but has hardly any attack power<br>It costs a little money to recruit (Ranged Attack)
+|Name2 (JP) = 真・殺意のタンクネコ (Shin・Satsui no Tanku Neko, True・Killer Tank Cat)
+|Desc2 (JP) = 本能の覚醒が止まらないタンクネコ<br>磨きがかかった盾性能にコストが見合わず<br>攻撃力もあいかわらず(範囲攻撃)
+|Transl2 (JP) = A Tank Cat that can't stop its awakened instinct<br>Its cost doesn't fit its polished shield abilities<br>Attack power doesn't change (Ranged Attack)
+|Name1 (TW) = 殺意坦克貓
+|Desc1 (TW) = 解放野性本能的坦克貓<br>情緒超嗨但攻擊力跟弱雞差不多<br>想要他聽話就得花錢(範圍攻擊)
+|Name2 (TW) = 真・殺意坦克貓
+|Desc2 (TW) = 無法停止本性覺醒的坦克貓<br>鍛鍊出的防禦能力與所需費用不成正比<br>攻擊力還是老樣子(範圍攻擊)
+|Name1 (KR) = 살의의 탱크 고양이
+|Desc1 (KR) = 야생의 본능을 해방한 탱크 고양이<br>엄청나게 텐션이 높지만 공격력은 새 발의 피<br>길들이기 위해서는 조금 돈이 든다 (범위 공격)
+|Name2 (KR) = 독기의 탱크 고양이
+|Desc2 (KR) = 본능의 각성이 멈추지 않는 탱크 고양이<br>갈고 닦은 방패 성능에 비해 가성비는 별로...<br>공격력도 거기서 거기 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 5,000¢
+*Chapter 2: 7,500¢
+*Chapter 3: 10,000¢
+{{Upgrade Cost|MIX
+|0
+|700
+|1600
+|2800
+|4300
+|6100
+|8200
+|10600
+|13300
+|16300
+|800
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Killer Tank Cat
+|Normal Base HP = 400
+|Normal Base AP = 2
+|Normal Range = 110
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 16
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 5000
+|Normal Recharge = 240
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = True Killer Tank Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 2
+|Evolved Range = 110
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 16
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 5000
+|Evolved Recharge = 240
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 2 damage<br>(0.9 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 8 ~ 2 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 35 damage<br>(15.67 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 35 damage<br>(15.67 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 8 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni695 f00}}
+
+==Trivia==
+*Similarly to Killer Cat, Killer Tank Cat appeared in [[Metal Slug Collaboration Event|Metal Slug Defense]] as an enemy and an ally. Unlike in [[The Battle Cats]], it was a black version of Wall Cat instead of Tank Cat.
+
+==Reference==
+*https://battlecats-db.com/unit/696.html
+
+----
+{{CatNav|Brainwashed Titan Cat|Class Rep Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Killer Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Area Attack Cats]]

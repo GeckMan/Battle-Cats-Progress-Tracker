@@ -1,0 +1,114 @@
+{{ENExclusive}}
+'''Shakurel Cat''' is a [[:Category:Special Cats|Special Cat]] introduced in [[Version 8.8 Update|Version 8.8]] and was unlocked as a Stamp Reward during the [[Shakurel Planet Collaboration Event]].
+
+{{Cat Info
+|ID = 497
+|rarity = EX
+|name1 = Shakurel Cat
+|name2 = Shakurel Macho Cat
+}}
+
+==Evolution==
+Evolves into '''Shakurel Macho Cat''' at level 10.
+
+==Strategy/Usage==
+Shakurel Cat can be used in much the same way as [[Cat (Normal Cat)|Cat]], but it has two glaring drawbacks. The first is that it costs 60% more that Cat and most other Cat clones, and the second is that it moves at half the speed of Cat. On top of this, it lacks any useful stat bonuses or abilities which could redeem it in spite of its flaws. As a result, Shakurel Cat is generally a bad choice for an extra Cat-like meatshield, and only grows exponentially worse in stages which are lengthier and require more meatshields to be spawned, or in stages where money management is very important.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 497
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni497 f00.png
+|Image2 = Uni497 c00.png
+|Name1 = Shakurel Cat
+|Desc1 = With extinction looming, this Cat<br>will survive by evolving a mightier jaw.
+|Name2 = Shakurel Macho Cat
+|Desc2 = Sometimes a jaw isn't enough?<br>Get swole for MORE POWER!
+|Name1 (TW) = 戽斗貓
+|Desc1 (TW) = 為瀕臨絕種前做好準備<br>將下巴進化了的貓咪
+|Name2 (TW) = 戽斗健美貓
+|Desc2 (TW) = 具備飽經鍛鍊的<br>肌肉與下巴的貓咪
+|Name1 (KR) = 주걱턱 고양이
+|Desc1 (KR) = 절멸의 위기에 대처하여<br>턱을 진화시킨 고양이
+|Name2 (KR) = 주걱턱 고양이 빌더
+|Desc2 (KR) = 철저히 단련된 근육과 주걱턱을<br>겸비한 고양이
+}}
+
+==Cost==
+*Chapter 1: 80¢
+*Chapter 2: 120¢
+*Chapter 3: 160¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shakurel Cat
+|Normal Base HP = 150
+|Normal Base AP = 8
+|Normal Range = 150
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 27
+|Normal Attack Length = 13
+|Normal Speed = 5
+|Normal KB = 3
+|Normal Cost = 80
+|Normal Recharge = 200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Shakurel Macho Cat
+|Evolved Base HP = 150
+|Evolved Base AP = 8
+|Evolved Range = 150
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 27
+|Evolved Attack Length = 13
+|Evolved Speed = 5
+|Evolved KB = 3
+|Evolved Cost = 80
+|Evolved Recharge = 200
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 150 HP
+|val-Normal-Attack Power = 8 damage<br>(6.86 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 35f <sub>1.17 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(5f <sup>0.17s</sup> backswing)
+|val-Normal-Recharge Time = 6.67 ~ 2 seconds
+|val-Normal-MaxHP = 2,550 HP
+|val-Normal-MaxAttack = 135 damage<br>(115.71 DPS)
+|val-Evolved-Health = 2,550 HP
+|val-Evolved-Attack Power = 135 damage<br>(115.71 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 35f <sub>1.17 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(5f <sup>0.17s</sup> backswing)
+|val-Evolved-Recharge Time = 6.67 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni497 f00}}
+
+----
+{{CatNav|Narita Kaihime|Shakurel Lion}}
+----
+
+{{Shakurel Planet}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]

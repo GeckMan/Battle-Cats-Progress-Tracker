@@ -1,0 +1,134 @@
+'''Calligraphy Cat''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 11.0 Update|Version 11.0]] who can be unlocked when beating the [[:Category:Advent Stages|Advent Stage]] [[Aku Reincarnation (Merciless)|Rashomon]] appearing on the '''11th''', '''12th''', '''25th''' and '''26th''' of every month.
+
+{{Cat Info
+|ID = 630
+|rarity = RR
+|name1 = Calligraphy Cat
+|name2 = Tea Master Cat
+}}
+
+==Evolution==
+Evolves into '''Tea Master Cat''' at Level 10.
+
+==Strategy/Usage==
+Calligraphy Cat can be considered a '''much''' more situational version of pre-[[Talents]] [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]. In comparison to them, Tea Master Cat has lower range, lower stats, and a slower recharge on top of [[Single Attack]], but has immunities to [[Wave Attack]]s and [[Surge Attack]]s, a lower cost, and {{4c}} usability in exchange. His Surge and Wave immunities usually aren't that useful since enemies with these abilities typically feature extreme damage or outrange him, but they work well against the [[Surge Base (Enemy Base)|Surge Base]] and [[Doge Base (Enemy Base)|Doge Base]], and can allow him to avoid the waves from [[Haniwanwan]] (though Haniwanwan is usually dealt with using Wave Blockers).
+
+He can also see some actual use in [[Infernal Tower]]'s [[Infernal Tower/Floor 30|30th floor]], since he's Strong against [[Masked Grandmaster Cat (Enemy)|Masked Grandmaster Cat]], and immune to both his Waves and the [[Sinner Snache]]s' [[Surge Attack#Death Surge|Death Surges]]. That's about the limit of his usefulness, though, because in most other situations, he's outclassed by Slapsticks. For example, in the [[Infernal Tower/Floor 50|50th floor]] of Infernal Tower, Slapsticks is typically used over Calligraphy in spite of his Surge Immunity because of their superior range, damage output and Area Attack.
+
+Tragically, Calligraphy Cat can't even catch a break in {{4c}}, where Slapsticks can't be used. There, better options such as [[Cossack Cat (Rare Cat)|Royal Guard Cat]] or [[Bakery Cat (Rare Cat)|Fried Chicken Cat]] do miles better than him in terms of usefulness against Relics. That's not even mentioning the [[True Form]]s of [[Uncanny Legends]] drop units, such as [[Elder Mask Doron (Special Cat)|Awakened Doron]], [[Elder Beast Naala (Special Cat)|Awakened Naala]], [[Ancient Egg: N000 (Special Cat)|Ape Lord Luza]] or [[Idi:N (Special Cat)|Idi:NX]], who are infinitely more useful anti-Relic units than Calligraphy Cat. In the end, Calligraphy Cat is a near-useless unit held back by horrendous stats even when factoring in Strong.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 630
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni630 f00.png
+|Image2 = Uni630 c00.png
+|Name1 = Calligraphy Cat
+|Desc1 = Artist whose signature style involves a gigantic<br>brush and many scratched-out errors (since he<br>can't spell). Strong vs Relic enemies
+|Name2 = Tea Master Cat
+|Desc2 = Makes industrial-sized servings of tea using a custom<br>whisk, sending out free cups to the whole Cat Empire.<br>Strong vs Relic enemies, Immune to Waves/Surge
+|Name1 (JP) = ネコ書道 (Neko Shodō, Cat Calligraphy)
+|Desc1 (JP) = 特大の筆で豪快な書をしたためるネコ<br>誤字・脱字が多いのがたまにキズ<br>古代種にめっぽう強い
+|Transl1 (JP) = A cat who writes bold calligraphy with an oversized brush.<br>Has a tendency to make many typos and omissions<br>Strong against Ancient species
+|Name2 (JP) = ネコ茶道 (Neko Sadō, Cat Tea Ceremony)
+|Desc2 (JP) = 特注の茶せんを使って大量の茶の湯を振る舞うネコ<br>四畳半の茶室から全国に向けて無料配送(一部地域除く)<br>古代種にめっぽう強く、波動・烈波を無効にする
+|Transl2 (JP) = A cat serving large amounts of tea using a custom-made tea spiral<br>Free delivery from a four-and-a-half-mat tea room to the whole country (excluding some areas)<br>Strong against ancient species, nullifying Waves and Intense Waves
+|Name1 (TW) = 書道貓
+|Desc1 (TW) = 以特大號毛筆大膽寫書法的貓<br>缺點是有時候會出現錯字或缺字<br>善於攻擊古代種
+|Name2 (TW) = 茶道貓
+|Desc2 (TW) = 以特製的茶筅大量刷茶攪拌的貓<br>全台免運優惠(偏遠地區除外)<br>善於攻擊古代種、使波動・烈波無效
+|Name1 (KR) = 고양이 서예
+|Desc1 (KR) = 특대 붓으로 호탕하게 글을 쓰는 고양이<br>오자, 탈자가 많은 것이 가끔 흠이다<br>고대종에 엄청 강하다
+|Name2 (KR) = 고양이 다도
+|Desc2 (KR) = 특별 주문한 차선으로 대량의 차를 우려내는 고양이<br>작은 다실에서 전국으로 배송 무료 (일부 지역 제외)<br>고대종에 엄청 강하고 파동, 열파를 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 340¢
+*Chapter 2: 510¢
+*Chapter 3: 680¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Calligraphy Cat
+|Normal Base HP = 300
+|Normal Base AP = 145
+|Normal Range = 330
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 47
+|Normal Attack Length = 55
+|Normal Speed = 10
+|Normal KB = 1
+|Normal Cost = 340
+|Normal Recharge = 520
+|Normal Attack Type = Single
+|Normal Targets = Relic
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Curse}} [[Immune to Curse]]
+|Evolved Name = Tea Master Cat
+|Evolved Base HP = 380
+|Evolved Base AP = 225
+|Evolved Range = 330
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 47
+|Evolved Attack Length = 55
+|Evolved Speed = 10
+|Evolved KB = 1
+|Evolved Cost = 340
+|Evolved Recharge = 520
+|Evolved Attack Type = Single
+|Evolved Targets = Relic
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Waves|Immune to Curse|Immune to Surge}} [[Immune to Waves]], [[Immune to Curse|Curse]] and [[Immune to Surge|Surge]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 145 damage<br>(66.92 DPS)
+|val-Normal-Attack Range = 330
+|val-Normal-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Normal-Recharge Time = 17.33 ~ 8.53 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 2,465 damage<br>(1,137.69 DPS)
+|val-Evolved-Health = 6,460 HP
+|val-Evolved-Attack Power = 3,825 damage<br>(1,765.38 DPS)
+|val-Evolved-Attack Range = 330
+|val-Evolved-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 17.33 ~ 8.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni630 f00}}
+
+==Trivia==
+*Prior to [[Version 11.0 Update|Version 11.0]], this was an unimplemented [[:Category:Special Cats|Special Cat]] that used [[Cat (Normal Cat)|Cat]]'s sprites as placeholders.
+
+==Reference==
+*https://battlecats-db.com/unit/631.html
+
+----
+{{CatNav|Brainwashed Cat|Yamii}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Cats with Surge Immunity]]

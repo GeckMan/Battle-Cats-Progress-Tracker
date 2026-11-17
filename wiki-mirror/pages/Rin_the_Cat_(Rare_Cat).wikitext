@@ -1,0 +1,128 @@
+:''Not to be confused with [[Rin Tohsaka (Uber Rare Cat)]].''
+'''Rin the Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 371
+|rarity = RR
+|name1 = Rin the Cat
+|name2 = Mage Rin Cat
+}}
+
+==Evolution==
+Evolves into '''Mage Rin Cat''' at level 10.
+
+==Strategy/Usage==
+Despite her high proc chance, Rin the Cat has many flaws making her a poor crowd-control unit. Foremost, she has [[Single Attack]], making her difficult to use against groups of [[General GreGory|General GreGories]] and [[Star Peng]]s who would sometimes warrant the use of [[Knockback|Knockback]]. Even then, Knockback tends to fare badly against Aliens as they usually come with backliners. [[Psychocat (Rare Cat)|Psychocat]] and [[Surfer Cat (Super Rare Cat)|Surfer Cat]] remain staples of Alien crowd-control and function as such better than Rin the Cat could. If you would ever want to knock back Aliens for any reason, [[Ancient Egg: N105 (Rare Cat)|Racquet Cat]], unlike Rin the Cat, has the [[Area Attack]] and pierce to do so effectively.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 371
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni371 f00.png
+|Image2 = Uni371 c00.png
+|Name1 = Rin the Cat
+|Desc1 = A Cat possessing elegance unrivaled at her<br>school. Beauty extends to behavior befitting<br>an honor student. Might knockback Aliens.
+|Name2 = Mage Rin Cat
+|Desc2 = Endlessly seeks to improve on herself.<br>Lashes out when she feels her weakness<br>might be exposed. Might knockback Aliens.
+|Name1 (JP) = ネコ凛 (Neko Rin, Rin the Cat)
+|Desc1 (JP) = とある学園の優雅な美少女に憧れるネコ<br>優等生であるべく美しい振る舞いから勉強中<br>たまにエイリアンをふっとばす
+|Transl1 (JP) = A Cat admiring an elegant and beautiful girl from a certain school<br>Studying elegant behavior fit for an honor student<br>Sometimes knocks back Aliens
+|Name2 (JP) = 魔術師ネコ凛 (Majutsu-shi Neko Rin, Mage Rin the Cat)
+|Desc2 (JP) = 優雅さに磨きをかけたネコ<br>本番に弱いのがたまにキズ<br>たまにエイリアンをふっとばす
+|Transl2 (JP) = A Cat with a refined grace<br>Only problem is that she doesn't do well under pressure<br>Sometimes knocks back Aliens
+|Name1 (TW) = 貓咪凜
+|Desc1 (TW) = 崇拜著某學園中優雅的美少女<br>學習著一名資優生該有的美妙舉止<br>有時候會打飛異星戰士
+|Name2 (TW) = 魔術師貓咪凜
+|Desc2 (TW) = 優雅完美的貓咪<br>正式上場很弱有時候會受傷<br>有時候會打飛異星戰士
+|Name1 (KR) = 고양이 린
+|Desc1 (KR) = 어느 학원의 우아한 소녀를 동경하는 고양이<br>모범생이 꼭 갖춰야 할 아름다운 몸가짐부터 공부 중<br>가끔 에이리언을 날려버린다
+|Name2 (KR) = 마술사 고양이 린
+|Desc2 (KR) = 우아함을 연마하고 있는 고양이<br>실전에 약한 게 옥에 티<br>가끔 에이리언을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rin the Cat
+|Normal Base HP = 810
+|Normal Base AP = 150
+|Normal Range = 275
+|Normal Foreswing = 12
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 51
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Mage Rin Cat
+|Evolved Base HP = 810
+|Evolved Base AP = 150
+|Evolved Range = 275
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 51
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 810 HP
+|val-Normal-Attack Power = 150 damage<br>(49.45 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 12f <sup>0.4s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 13,770 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(840.66 DPS)
+|val-Evolved-Health = 13,770 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(840.66 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 12f <sup>0.4s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni371 f00}}
+
+==Trivia==
+*Prior to [[Version 15.7 Update|Version 15.7]], Rin the Cat's description contained a typo; "A Cat" was written as "An Cat".
+
+==Reference==
+*https://battlecats-db.com/unit/372.html
+
+----
+{{CatNav|Sakura the Cat|Illya the Cat}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]

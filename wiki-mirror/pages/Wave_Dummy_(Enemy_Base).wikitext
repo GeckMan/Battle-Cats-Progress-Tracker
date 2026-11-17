@@ -1,0 +1,81 @@
+'''Wave Dummy''' is an animated [[Enemy Bases|Enemy Base]] found in the [[Ranking Dojo]]. It was added in [[Version 13.5 Update|Version 13.5]].
+
+{{Enemy Info
+|name = Wave Dummy
+|image = E 693 en.png
+|first appearance = [[Arena of Power/Waves of Attack|Arena of Honor]]
+}}
+
+==Enemy==
+Compared to its other variants, the [[Dummy (Enemy Base)|Dummy]] and [[Artillery Dummy (Enemy Base)|Artillery Dummy]], the Wave Dummy takes much longer to attack, but fires off an extremely powerful Lv.20 Wave Attack when it does, wiping out every single unit on the field unless they are immune to waves or are a wave shield.
+
+==Strategy==
+To prevent this menacing scarecrow from wiping the field clean of cats you should bring wave immune units, or preferably a wave blocker. Other than that just use units that outrange it so they don't die.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Catclaw Dojo]]===
+*[[Arena of Power]]: [[Arena of Power/Waves of Attack|Waves of Attack]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Wave Dummy
+|Health = 100
+|Attack Power = 999999
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 709
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 10
+|Backswing = 27
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 20 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+==Animations==
+<tabber>
+Japanese=
+{{UnitViewer|enemy|bg=Bg043.png|noheading=true}}
+|-|English=
+{{AnimationViewer|693 e en.png|bg=Bg043.png|MediaWiki:Custom-AnimationViewer/693 e.json}}
+|-|Korean=
+{{AnimationViewer|693 e kr.png|bg=Bg043.png|MediaWiki:Custom-AnimationViewer/693 e kr.json}}
+|-|Taiwanese=
+{{AnimationViewer|693 e tw.png|bg=Bg043.png|MediaWiki:Custom-AnimationViewer/693 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+693 e.png|Wave Dummy's spritesheet (JP)
+693 e en.png|Wave Dummy's spritesheet (EN)
+693 e kr.png|Wave Dummy's spritesheet (KR)
+693 e tw.png|Wave Dummy's spritesheet (TW)
+E 693.png|BCJP Appearance
+E 693 tw.png|BCTW Appearance
+</gallery>
+
+==Trivia==
+*It is tied with the [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]] and the [[Doge Base (Enemy Base)|Doge Base]] for the highest [[Wave Attack]] level in the game.
+
+==Reference==
+*https://battlecats-db.com/enemy/695.html
+
+----
+{{EnemyNav|Doctor K.O.|Techn-Old Hyena}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with regional differences]]

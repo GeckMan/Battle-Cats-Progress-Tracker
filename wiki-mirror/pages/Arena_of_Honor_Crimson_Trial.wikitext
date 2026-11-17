@@ -1,0 +1,251 @@
+{{EnemiesAppearing|Dummy|B.B.Bunny|Dober P.D|Gabriel|Angelic Gory|Professor A.|Chickful A|Angelic Sleipnir|St. Pigge the 2nd|Bore}}
+'''Crimson Trial''' is the first [[Arena of Honor]] of the [[Catclaw Dojo]].
+
+{{Stage Info
+|stage name = [[File:E 283.png]]
+[[File:Mapsn000 00 r en.png]]
+|stage location = [[File:Mapname000 r en.png]]
+|energy = 30
+|enemy castle hp = Unlimited
+|base = {{Magnification|Dummy|0}}
+|enemies = {{Magnification|B.B.Bunny|0
+|Gabriel|0
+|Angelic Gory|0
+|Chickful A|0
+|St. Pigge the 2nd|0}}
+|boss = {{Magnification|Dober P.D|0
+|Professor A.|0
+|Angelic Sleipnir|0
+|Bore|0
+|Angelic Gory|0
+|St. Pigge the 2nd|0
+|Gabriel|0
+|B.B.Bunny|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 12
+|jpname = Red Mark Tournament
+|script = 赤てん大会
+|romaji = Akaten Taikai
+|star = 1
+|dojo-chapter = [[Arena of Honor]]
+|difficulty = ★2
+}}
+
+==Battleground==
+*The enemy base here is a [[Dummy (Enemy Base)|Dummy]].
+*4 [[B.B.Bunny|B.B.Bunnies]] (100%) spawn after 5 seconds<sup>150f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] (100%) spawn after 66.67 seconds<sup>2,000f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base takes 500 damage:
+**1 [[B.B.Bunny]] (100%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (100%) spawn, delay 3.33~8 seconds<sup>100f~240f</sup>.
+*When the base takes 1,000 damage:
+**1 [[Gabriel]] (100%) spawns as the boss.
+*When the base takes 5,000 damage:
+**1 [[St. Pigge the 2nd]] (100%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (100%) spawn, delay 3.33~8 seconds<sup>100f~240f</sup>.
+*When the base takes 9,000 damage:
+**1 [[Gabriel]] (100%) spawns as the boss.
+**2 [[Gabriel]]s (100%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 14,000 damage:
+**1 [[Angelic Gory]] (100%) spawns as the boss.
+*When the base takes 23,000 damage:
+**1 [[St. Pigge the 2nd]] (200%) spawns as the boss.
+**2 [[Gabriel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**4 [[B.B.Bunny|B.B.Bunnies]] (100%) spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+*When the base takes 35,000 damage:
+**1 [[Angelic Gory]] (100%) spawns as the boss.
+**3 [[Gabriel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Bore]] (100%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 80,000 damage:
+**1 [[Angelic Sleipnir]] (100%) spawns as the boss.
+**3 [[Gabriel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 120,000 damage:
+**1 [[Dober P.D]] (100%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 170,000 damage:
+**1 [[Bore]] (150%) spawns as the boss.
+**5 [[Gabriel]]s (200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (300%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 220,000 damage:
+**1 [[Angelic Sleipnir]] (150%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (1,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (100%) spawns.
+*When the base takes 270,000 damage:
+**1 [[Professor A.]] (100%) spawns as the boss.
+**3 [[Gabriel]]s (200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (200%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 320,000 damage:
+**1 [[Dober P.D]] (150%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (1,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 370,000 damage:
+**1 [[Bore]] (200%) spawns as the boss.
+**5 [[Gabriel]]s (300%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (600%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 420,000 damage:
+**1 [[Angelic Sleipnir]] (200%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (150%) spawns.
+*When the base takes 470,000 damage:
+**1 [[Professor A.]] (150%) spawns as the boss.
+**3 [[Gabriel]]s (300%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (300%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 520,000 damage:
+**1 [[Dober P.D]] (200%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 570,000 damage:
+**1 [[Bore]] (250%) spawns as the boss.
+**5 [[Gabriel]]s (400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (900%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 620,000 damage:
+**1 [[Angelic Sleipnir]] (250%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (200%) spawns.
+*When the base takes 670,000 damage:
+**1 [[Professor A.]] (200%) spawns as the boss.
+**3 [[Gabriel]]s (400%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (400%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 720,000 damage:
+**1 [[Dober P.D]] (250%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 820,000 damage:
+**1 [[Bore]] (300%) spawns as the boss.
+**5 [[Gabriel]]s (500%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (1,200%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 920,000 damage:
+**1 [[Angelic Sleipnir]] (300%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (250%) spawns.
+*When the base takes 1,020,000 damage:
+**1 [[Professor A.]] (250%) spawns as the boss.
+**3 [[Gabriel]]s (500%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (500%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 1,120,000 damage:
+**1 [[Dober P.D]] (300%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (2,800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 1,220,000 damage:
+**1 [[Bore]] (350%) spawns as the boss.
+**5 [[Gabriel]]s (600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (1,500%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 1,320,000 damage:
+**1 [[Angelic Sleipnir]] (350%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (3,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (300%) spawns.
+*When the base takes 1,420,000 damage:
+**1 [[Professor A.]] (300%) spawns as the boss.
+**3 [[Gabriel]]s (600%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (600%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 1,520,000 damage:
+**1 [[Dober P.D]] (350%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (3,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 1,620,000 damage:
+**1 [[Bore]] (400%) spawns as the boss.
+**5 [[Gabriel]]s (700%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (1,800%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 1,720,000 damage:
+**1 [[Angelic Sleipnir]] (400%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (3,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (350%) spawns.
+*When the base takes 1,820,000 damage:
+**1 [[Professor A.]] (350%) spawns as the boss.
+**3 [[Gabriel]]s (700%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (700%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 1,920,000 damage:
+**1 [[Dober P.D]] (400%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (3,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 2,020,000 damage:
+**1 [[Bore]] (450%) spawns as the boss.
+**5 [[Gabriel]]s (800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (2,100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 2,120,000 damage:
+**1 [[Angelic Sleipnir]] (450%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (400%) spawns.
+*When the base takes 2,220,000 damage:
+**1 [[Professor A.]] (400%) spawns as the boss.
+**3 [[Gabriel]]s (800%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (800%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 2,320,000 damage:
+**1 [[Dober P.D]] (450%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 2,420,000 damage:
+**1 [[Bore]] (500%) spawns as the boss.
+**5 [[Gabriel]]s (900%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (2,400%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 2,520,000 damage:
+**1 [[Angelic Sleipnir]] (500%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (450%) spawns.
+*When the base takes 2,620,000 damage:
+**1 [[Professor A.]] (450%) spawns as the boss.
+**3 [[Gabriel]]s (900%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (900%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 2,720,000 damage:
+**1 [[Dober P.D]] (500%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 2,820,000 damage:
+**1 [[Bore]] (550%) spawns as the boss.
+**5 [[Gabriel]]s (1,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (2,700%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 2,920,000 damage:
+**1 [[Angelic Sleipnir]] (550%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (500%) spawns.
+*When the base takes 3,020,000 damage:
+**1 [[Professor A.]] (500%) spawns as the boss.
+**3 [[Gabriel]]s (1,000%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (1,000%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 3,120,000 damage:
+**1 [[Dober P.D]] (550%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (4,800%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 3,220,000 damage:
+**1 [[Bore]] (600%) spawns as the boss.
+**5 [[Gabriel]]s (1,100%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (3,000%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 3,320,000 damage:
+**1 [[Angelic Sleipnir]] (600%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (5,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (550%) spawns.
+*When the base takes 3,420,000 damage:
+**1 [[Professor A.]] (550%) spawns as the boss.
+**3 [[Gabriel]]s (1,100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (1,100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 3,520,000 damage:
+**1 [[Dober P.D]] (600%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (5,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 3,620,000 damage:
+**1 [[Bore]] (650%) spawns as the boss.
+**5 [[Gabriel]]s (1,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[St. Pigge the 2nd]]s (3,300%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 3,720,000 damage:
+**1 [[Angelic Sleipnir]] (650%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (5,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**1 [[Chickful A]] (600%) spawns.
+*When the base takes 3,820,000 damage:
+**1 [[Professor A.]] (600%) spawns as the boss.
+**3 [[Gabriel]]s (1,200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] (1,200%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 3,920,000 damage:
+**1 [[Dober P.D]] (650%) spawns as the boss.
+**10 [[B.B.Bunny|B.B.Bunnies]] (5,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other Battle Items.
+*The base has unlimited health and can attack Cats that are close to it.
+*You gain no money for defeating enemies.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Trivia==
+*The word ''akaten'' in Crimson Trial's Japanese name, Akaten Taikai (赤てん大会, "Red Mark Tournament"), refers to a failing mark/grade in a test such as an exam.
+
+==Reference==
+*https://battlecats-db.com/stage/s11000-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

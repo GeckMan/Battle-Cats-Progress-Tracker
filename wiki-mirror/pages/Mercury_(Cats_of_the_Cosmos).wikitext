@@ -1,0 +1,126 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Mercury (Cats of the Cosmos)/Outbreak|here]].''
+'''Mercury''' is the 6th stage in [[Cats of the Cosmos]].
+
+{{Story Info
+|stage name = [[File:Sc040.png]]
+|stage location = [[File:Mercury.png]]
+'''Cats of the Cosmos'''
+|energy = 54
+|energy2 = 64
+|energy3 = 74
+|enemy castle hp = 90,000 HP
+|enemy castle hp2 = 330,000 HP
+|enemy castle hp3 = 430,000 HP
+|enemies = {{Magnification|Kang Roo|800%
+|Squire Rel|800%
+|Croco|800%
+|Hyppoh|250%
+|Shibalien Elite|100%
+|Star Peng|100%}}
+|enemies2 = {{Magnification|Kang Roo|2,000%
+|Squire Rel|2,000%
+|Croco|2,000%
+|UltraBaaBaa|100%
+|Shibalien Elite|150%
+|Star Peng|150%}}
+|enemies3 = {{Magnification|Kid Tappa|200%
+|Squire Rel|3,000%
+|Croco|3,000%
+|Scissoroo|600%
+|Shibalien Elite|400%
+|Star Peng|400%}}
+|treasure = - [[Treasure|Water]]
+|max enemies = 15
+|restriction = Max # of Deployable Cats: 20
+|restriction2 = Max # of Deployable Cats: 20
+|restriction3 = Max # of Deployable Cats: 20
+|XP = 2,500 XP
+|width = 4,800
+|jpname = Mercury
+|script = 水星
+|romaji = Suisei
+|jptreasure = Water
+|twname = Mercury
+|twscript = 水星
+|twromaji = Shuǐxīng
+|twtreasure = Water
+|krname = Mercury
+|krscript = 수성
+|krromaji = Suseong
+|krtreasure = Water
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[Venus (Cats of the Cosmos)|Venus]]
+|next stage = [[Sun (Cats of the Cosmos)|Sun]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 20
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Kang Roo|Squire Rel|Croco|Hyppoh|Shibalien Elite|Star Peng}}
+*5 [[Kang Roo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*10 [[Squire Rel]]s spawn after 8.33 seconds<sup>250f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[Hyppoh]]s spawn after 26.67 seconds<sup>800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Shibalien Elite]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Shibalien Elite]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Shibalien Elite]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 16.67 seconds<sup>500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Star Peng]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Star Peng]] spawns after 63.33 seconds<sup>1,900f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Kang Roo|Squire Rel|Croco|UltraBaaBaa|Shibalien Elite|Star Peng}}
+*5 [[Kang Roo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*10 [[Squire Rel]]s spawn after 8.33 seconds<sup>250f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[UltraBaaBaa]]s spawn after 26.67 seconds<sup>800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Shibalien Elite]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Shibalien Elite]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Shibalien Elite]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 16.67 seconds<sup>500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Star Peng]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Star Peng]] spawns after 63.33 seconds<sup>1,900f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Kid Tappa|Squire Rel|Croco|Scissoroo|Shibalien Elite|Star Peng}}
+*2 [[Kid Tappa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*10 [[Squire Rel]]s spawn after 8.33 seconds<sup>250f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[Scissoroo]]s spawn after 26.67 seconds<sup>800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Shibalien Elite]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Shibalien Elite]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Shibalien Elite]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 16.67 seconds<sup>500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Star Peng]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Star Peng]] spawns after 63.33 seconds<sup>1,900f</sup>.
+
+==Strategy==
+[[Wheel Cat (Rare Cat)|Chill Cat]] does well here when aided by [[Ururun Wolf (Special Cat)|Ururun Cat]] as well as meatshields, namely [[Pogo Cat (Rare Cat)|Jiangshi Cat]], [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank]] or [[Rover Cat (Rare Cat)|Rover Cat Mk II]]. If the Aliens keep pushing through, bring a crowd controller such as [[Psychocat (Rare Cat)|Psychocat]] or [[Surfer Cat (Super Rare Cat)|Castaway Cat]]. [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]] does well to snipe threats in all three chapters.
+
+At this point, the [[Stellar Garnet]] can be unlocked. If not already obtained, and you happen to be struggling here, it is recommended that you collect it to keep tougher Starred Aliens down.
+
+Don't forget to bring a [[:Category:Barrier Breaker Cats|Barrier Breaker]] for the UltraBaaBaa in Ch.2.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Mercury map.png|Mercury on the [[Cats of the Cosmos]] map
+Nicecolor.jpeg|Mercury's base in [[The Battle Cats POP!]]
+</gallery>
+
+==Trivia==
+*Mercury's enemy base being made of water is a reference to the Japanese name of the planet Mercury, Suisei (水星, "Water Star").
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-06.html
+*https://battlecats-db.com/stage/s03007-06.html
+*https://battlecats-db.com/stage/s03008-06.html
+
+{{StoryMode Stages}}
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Main Chapters Levels]]
+[[Category:Restriction Stages]]

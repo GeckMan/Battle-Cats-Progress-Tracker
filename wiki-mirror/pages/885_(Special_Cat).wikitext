@@ -1,0 +1,107 @@
+{{LimitedContent}}
+'''885-1''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Catnip Challenges]] during the [[Anniversary/14th Year|14th Anniversary]]. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Cat Info
+|ID = 885
+|rarity = EX
+|name1 = 885-1
+|name2 = 885-2
+}}
+
+==Evolution==
+Evolves into '''885-2''' at level 10.
+
+==Strategy/Usage==
+885-2 often finds itself stuck between a rock and a hard place; the rock in this analogy being [[Rocker Cat (Rare Cat)|Ramen Cat]] and the hard place being [[Wushu Cat (Rare Cat)|Shigong Cat]]. Seriously, it's a Greek tragedy, the hand this little guy was dealt, as these two powerhouses have 885-2 almost entirely outclassed outside of a few niche situations. Comparing their stats at Lv.30, Ramen and Shigong's base HP range from ~16k-~20k depending on their [[Talents]], which at first glance, this cat's 58,650 base HP surpasses well over twofold. However, its knockback count cuts its endurance by two, meaning it only tanks 29,375 damage before each reposition. This isn't much better endurance than either of the aforementioned meatshields, especially not for 1,650¢. Its damage is also noticeably worse than both Ramen and Shigong's, and the 18-second recharge rate just adds insult to injury. It does have [[Wave Immunity]] going for it, giving it genuine leverage against [[Youcan]] if the circumstances call for it.
+
+Realistically, its best use case is within mixed Angel/Zombie stages like [[Microscope Bridge]], where its range advantage allows it to function as a secondary layer of protection behind your main line. Even here, it doesn't particularly justify its price tag, since you can achieve much more by using said cash on another attacker. Its absence likely won't be felt either way; there are surely superior methods to harden your defenses without repeatedly taking out a loan all for this dollar store "tank". Furthermore, it only loses relevance as your Ramen and Shigong Cats gain even higher potential stats through +levels, eventually leaving 885-2 in their dust. It's good for early-midgame [[Zombie Outbreaks]] stages—before unlocking Shigong Cat—but that's as far as it goes.
+
+{{Job|Classification = Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 885
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni885 f00.png
+|Image2 = Uni885 c00.png
+|Name1 (JP) = 監獄ちびネコ (Kangoku Chibi Neko, Li'l Prisoner Cat)
+|Desc1 (JP) = 監獄で生まれ育った小さなネコ<br>巧みに看守の目をかいくぐりながら生活している<br>独学で習得した機械工作が得意
+|Name2 (JP) = 脱獄ちびネコアーマー (Kangoku Chibi Neko Āmā, Li'l Prisoner Cat Armor)
+|Desc2 (JP) = 外の世界を見てみたくて脱獄を決意した小さなネコ<br>監獄の廃材を集めて作ったメカで仲間をサポートする<br>天使とゾンビに打たれ強く、ごくたまにクリティカル
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+
+===Evolved Form===
+*Chapter 1: 1,100¢
+*Chapter 2: 1,650¢
+*Chapter 3: 2,200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = 885-1
+|Normal Base HP = 500
+|Normal Base AP = 50
+|Normal Range = 140
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 46
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 800
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = 885-2
+|Evolved Base HP = 3450
+|Evolved Base AP = 300
+|Evolved Range = 230
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 65
+|Evolved Speed = 22
+|Evolved KB = 2
+|Evolved Cost = 1100
+|Evolved Recharge = 800
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Zombie
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Special Abilities#Omni Strike|Omni Strike]] (Effective range: -320~280)<br>
+{{AbilityIcon|Resistant}} [[Special Abilities#Resistant|Resistant]] to target traits<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Zombie Killer}} [[Special Abilities#Zombie Killer|Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Waves}} [[Special Abilities#Immune to Waves|Immune to Waves]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni885 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/886.html
+
+----
+{{CatNav|884-1|886-1}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Critical Hit Cats]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Zombie Killer Cats]]

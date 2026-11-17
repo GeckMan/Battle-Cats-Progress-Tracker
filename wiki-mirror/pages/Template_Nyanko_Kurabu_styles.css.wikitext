@@ -1,0 +1,28 @@
+.nyanko-club-template {
+	display: inline-block;
+	text-align: center;
+	line-height: 1em;
+}
+
+.nyanko-club-template .element-container {
+	position: relative;
+	width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.nyanko-club-template .superpositioned {
+	display: inline-block;
+	overflow: hidden;
+	position: absolute;
+	padding: 0;
+	border-radius: 0px;
+}
+
+.nyanko-club-template .superpositioned .medal-text {
+	position: absolute;
+	right: 5px;
+	bottom: 4px;
+}
+
+/* [[Category:Template stylesheets]] */

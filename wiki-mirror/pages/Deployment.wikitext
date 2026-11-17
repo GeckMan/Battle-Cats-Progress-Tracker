@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Pigge|The Face}}
+'''Deployment''' is the third stage in [[Anniversary/10th Year#Pt. 5: Musical Parade|Pt. 5: Musical Parade]]. This stage is an exact copy of [[Helpful Cat (Hard)]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn323 02 s en.png]]
+|stage location = [[File:Mapname323 s en.png]]
+|energy = 120
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Doge|400%
+|Snache|400%
+|Those Guys|400%
+|Pigge|400%}}
+|boss = {{Magnification|The Face|200%}}
+|enemies2 = {{Magnification|Doge|600%
+|Snache|600%
+|Those Guys|600%
+|Pigge|600%}}
+|boss2 = {{Magnification|The Face|300%}}
+|enemies3 = {{Magnification|Doge|800%
+|Snache|800%
+|Those Guys|800%
+|Pigge|800%}}
+|boss3 = {{Magnification|The Face|400%}}
+|treasure = - 100,000 XP (100%, 1 time)<br>
+- 50,000 XP (20%, unlimited)
+|XP = 13,400 XP
+|width = 3,600
+|max enemies = 8
+|jpname = Leaving for the Front
+|script = 出陣
+|romaji = Shutsujin
+|star = 3
+|event-chapter = [[Anniversary/10th Year#Pt. 5: Musical Parade|Pt. 5: Musical Parade]]
+|difficulty = ★4
+|prev stage = [[Cat Army, Unite!]]
+|next stage = [[World Invasion]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Snache]]s spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Those Guys]] spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Pigge]]s spawn, delay 24~37.33 seconds<sup>720f~1,120f</sup>.
+*When the base reaches 70% HP:
+**1 [[The Face]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 1~6 seconds<sup>30f~180f</sup>.
+**5 [[Pigge]]s spawn, delay 0.07~0.13 seconds<sup>2f~4f</sup>.
+
+==Strategy==
+Even on {{3c}} difficulty, this stage shouldn't be too much trouble, as The Face moves slowly. Bring [[:Category:Area Attack Cats|Area Attackers]] for the Pigges and [[:Category:Anti-Floating Cats|anti-Floating Cats]] for The Face.
+
+==Reference==
+*https://battlecats-db.com/stage/s01323-03.html
+
+{{Anniversary}}
+[[Category:Event Stages]]

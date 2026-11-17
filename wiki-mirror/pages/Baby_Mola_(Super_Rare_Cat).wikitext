@@ -1,0 +1,209 @@
+:''For the enemy encountered in the [[Survive! Mola Mola! Collaboration Event]], see [[Young Man Mola (Enemy)]].''
+'''Baby Mola''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was introduced in [[Version 3.5 Update|Version 3.5]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Survive! Mola Mola! Collaboration Event]]. [[True Form]] added in [[Version 9.4 Update|Version 9.4]] (JP) and [[Version 10.4 Update|Version 10.4]] (Global) significantly improves recharge time. [[Talents]] were added in [[Version 15.5 Update|Version 15.5]].
+
+{{Cat Info
+|ID = 173
+|rarity = SR
+|name1 = Baby Mola
+|name2 = Young Man Mola
+|name3 = Citizen Mola
+}}
+
+==Evolution==
+Evolves into '''Young Man Mola''' at level 10.
+
+Evolves into '''Citizen Mola''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Baby Mola/Young Man Mola is effectively a glass cannon version of ([[Crazed Lizard Cat (Super Rare Cat)|Manic]]) [[Lizard Cat (Normal Cat)|King Dragon Cat]]. While its health is almost zero and attack power/range aren't on Manic King Dragon's level, its fast attack rate allows a Baby Mola at Lvl.30 nearly match the DPS of a Lvl.20+80 King Dragon and exceed that of a Lvl.30 Manic King Dragon. In addition, its recharge rate is ~15% faster, though Dragon Cat recharges faster, and the cost is nearly 1/4th lower, allowing Young Man Mola to be stacked more quickly and cheaply. In any stage where the enemies cannot hit them consistently, they are a viable replacement for the Dragons.
+
+==='''True Form'''===
+Citizen Mola has their recharge time improved to the point that even Dragon Cat cannot keep up, allowing for even faster stacking. Unfortunately, Citizen Mola retains the extreme fragility of their previous forms, so they are still limited in use to stages where the player is confident they won't be immediately crushed. Such stages being those with an absence of [[:Category:Wave Attack Enemies|waves]], [[:Category:Long Distance Enemies|Long Distance enemies]], or [[:Category:Zombie Enemies|Zombie]] enemies.
+
+==='''Talents'''===
+These Talents may look bizarre, and that's because they are. No stat buffs this time around, it's all crowd-control that turns them into a spammable Good luck Ebisu; each Talent is identical in activation rate, uptime, and NP cost, save for Knockback. Fully investing in Citizen Mola's talents turns them into a debuffing monster, especially if stacked as enemies simply cannot advance due to the constant debuffs applied. Their priority entirely depends on the innate value of each ability when compared to one another, as well as their synergies. In order of performance:
+#If you want to seriously invest into Citizen Mola, '''[[Freeze]]''' should be your first priority because of just how comically powerful the ability to Freeze all traits is on such a spammable backliner. Any stage with enemies that don't outrange Citizen Mola can be swept by this Talent alone if you play your cards right. Getting a good stack of Citizen Molas set up essentially means CC-hell for even the most powerful melees/midrangers.
+#'''[[Freeze|Slow]]''' is worse than Freeze in most aspects, but pairs exceptionally well with it. If an enemy isn't procced with Freeze, it can still get Slowed, and both abilities hold an enemy in place until Citizen Mola's next attack cycle. It's basically crowd-control insurance, making it way easier to stack him.
+#One of Citizen Mola's biggest limiting factors is their Single Attack, which can make it difficult for them to shake off large hordes of tanky enemies. '''[[Knockback]]''' attenuates this issue by allowing your stack the ability to protect itself. A good stack of Citizen Molas is more than capable of keeping entire armies at bay, especially when paired with Freeze and Slow. Do note that this Talent can make it difficult to use him with other units.
+#'''[[Weaken]]''' is a third layer of defense that specifically protects your meatshields instead of holding threats in place like Slow and Freeze. If you don't wish to unlock Knockback, Weaken can be a good alternative to preserve potential synergies with other cats. The ability comes with its own set of advantages against strong bosses who only need a single breakthrough to cause a mass extinction event; so, even if nothing else activates, the threat will still have to make it past your meatshields and tanks while Weakened.
+#Finally, '''[[Curse]]''' is situational at the best of times, and only helps when enemies rely primarily on abilities to push, like [[M. Ost]] or [[Star Peng]]. Your other Talents will usually cover that front well enough, though, and the option to use appropriate meatshields for the occasion is always there. The NP sink is just not worth it a lot of the time.
+
+==='''Orb'''===
+Due to Citizen Mola's low HP, Defense Orbs do practically nothing. If you want to target a specific trait, an S grade Attack Orb will increase Citizen Mola's damage by ~18.5% at Lv 50.
+
+For those willing to investing in Citizen Mola, the Cost Down Orb works especially well on them, with their low cooldown (especially with research combos), and somewhat costly price.
+As a bonus, the opportunity cost of using Cost Down on Citizen Mola is relatively low, as every meatshield would rather have the Cash Back Orb, and most other units have ready made Effect Orbs, or are too cost effective to be worth putting it on. If you don't plan on using it for specifically Cyborg, consider equiping Citizen Mola with the Cost Down Orb.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 173
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni173 f00.png
+|Image2 = Uni173 c00.png
+|Image3 = Uni173 s00.png
+|Name1 = Baby Mola
+|Desc1 = Dropping in from "Survive! Mola Mola!"<br>The lone survivor of 300,000,000 brothers -<br>the ocean's a harsh realm, man.
+|Name2 = Young Man Mola
+|Desc2 = Playing life on Hard Mode, a Mola Mola<br>is always within sight of paradise.<br>Attacks from range by screaming… then dying.
+|Name3 = Citizen Mola
+|Desc3 = Vanishes as soon as it sees a larger fish. Or it<br>would, if it didn't take so long to turn about and run.<br>What looks like a beard is really just parasites.
+|Name1 (JP) = 厨房マンボウ (Chūbō Manbō, Kitchen Sunfish)
+|Desc1 (JP) = 生きろ！マンボウ！から参戦！<br>厳しい海の世界で３億匹の兄弟はみな死んだが<br>たった一匹生き残ったマンボウ
+|Transl1 (JP) = Joining the war from Live! Sunfish!<br>In the harsh world of the sea 300 million of the brothers have all died<br>But only one sunfish survived
+|Name2 (JP) = 工房マンボウ (Kōbō Manbō, Studio Sunfish)
+|Desc2 (JP) = 天国に１番近い生き物、魚生ハードモードなどの<br>呼び名を持つ悲しいくらいにからだのよわいマンボウ<br>叫び声で遠距離攻撃できるがすぐ死ぬ
+|Transl2 (JP) = The closest one to heaven, the hardest mode of fish life<br>It's a sadly frail sunfish<br>They can attack at long range with a scream but die quickly
+|Name3 (JP) = 社会の一員 (Shakai no Ichiin, Society Member)
+|Desc3 (JP) = 自分より大きな魚をみることは、もはやなくなった<br>その分小回りがきかなくなってしまったマンボウ<br>ひげのようにみえるものは実は寄生虫である
+|Transl3 (JP) = No longer sees fish bigger, than them<br>The sunfish has lost its ability to move around<br>What looks like whiskers are actually parasites
+|Name1 (TW) = 廚房曼波魚
+|Desc1 (TW) = 從活下去！曼波魚！來參戰。<br>嚴酷的大海中已經有３億同伴死亡<br>他是僅存的一隻曼波魚
+|Name2 (TW) = 工房曼波魚
+|Desc2 (TW) = 離天國最近的生物<br>常被說魚在冏途等，是隻體弱多病的曼波魚<br>可遠距離以叫聲攻擊不過屬於易死體質
+|Name3 (TW) = 社會的一員
+|Desc3 (TW) = 再也見不到比自己大的魚了<br>也變得不太敏捷了的曼波魚<br>看起來像是鬍鬚的東西其實是寄生蟲
+|Name1 (KR) = 어린이 개복치
+|Desc1 (KR) = 살아남아라!개복치!에서 참전!<br>엄격한 바다 세계에서 3억마리의 동료는 모두 죽었지만<br>단 한마리 살아남은 개복치
+|Name2 (KR) = 젊은이 개복치
+|Desc2 (KR) = 천국에서 가장 가까운 생물, 물고기의 삶 하드모드<br>그런 예가 있을 정도로 몸이 약한 개복치<br>괴성으로 초 원거리 공격을 할 수 있지만 금방 죽어버린다
+|Name3 (KR) = 사회의 일원
+|Desc3 (KR) = 자기보다 큰 물고기는 더 이상 볼 수 없어졌다<br>그 대신 방향 전환이 어려워진 개복치<br>수염처럼 보이는 건 사실 기생충이다
+}}
+
+==Cost==
+*Chapter 1: 760¢
+*Chapter 2: 1,140¢
+*Chapter 3: 1,520¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Baby Mola
+|Normal Base HP = 1
+|Normal Base AP = 488
+|Normal Range = 401
+|Normal Foreswing = 11
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 91
+|Normal Speed = 7
+|Normal KB = 1
+|Normal Cost = 760
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Young Man Mola
+|Evolved Base HP = 2
+|Evolved Base AP = 688
+|Evolved Range = 401
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 91
+|Evolved Speed = 7
+|Evolved KB = 1
+|Evolved Cost = 760
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Citizen Mola
+|True Base HP = 2
+|True Base AP = 688
+|True Range = 401
+|True Foreswing = 11
+|True Attack Cooldown = 79
+|True Attack Length = 91
+|True Speed = 7
+|True KB = 1
+|True Cost = 760
+|True Recharge = 500
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 1 HP
+|val-Normal-Attack Power = 488 damage<br>(160.88 DPS)
+|val-Normal-Attack Range = 401
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(80f <sup>2.67s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 17 HP
+|val-Normal-MaxAttack = 8,295 damage<br>(2,734.62 DPS)
+|val-Evolved-Health = 35 HP
+|val-Evolved-Attack Power = 11,695 damage<br>(3,855.49 DPS)
+|val-Evolved-Attack Range = 401
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(80f <sup>2.67s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+|val-True-Health = 35 HP
+|val-True-Attack Power = 11,695 damage<br>(3,855.49 DPS)
+|val-True-Attack Range = 401
+|val-True-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-True-Movement Speed = 7
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 11f <sup>0.37s</sup><br>(80f <sup>2.67s</sup> backswing)
+|val-True-Recharge Time = 16.67 ~ 7.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Young Man Mola
+|Evolved Image = Uni173 c00.png
+|True Name = Citizen Mola
+|True Image = Uni173 s00.png
+|True Description = True form evolution shortens<br>cooldown time after deployments!
+|Catfruit1 = EpicFruit
+|Quantity Catfruit1 = x3
+|Quantity XP = 200,000
+}}
+
+==Talents==
+*'''[[Weaken]]''': Adds a 30% chance to weaken all traits to 50% for 9f <sup>0.3s</sup>, improves by 9f <sup>0.3s</sup> per level up to 90f <sup>3s</sup> (Total Cost: 235 NP)
+*'''[[Freeze]]''': Adds a 30% chance to freeze all traits for 9f <sup>0.3s</sup>, improves by 9f <sup>0.3s</sup> per level up to 90f <sup>3s</sup> (Total Cost: 235 NP)
+*'''[[Slow]]''': Adds a 30% chance to slow all traits for 9f <sup>0.3s</sup>, improves by 9f <sup>0.3s</sup> per level up to 90f <sup>3s</sup> (Total Cost: 235 NP)
+*'''[[Knockback]]''': Adds a 3% chance to knockback all traits, improves chance by 3% per level up to 30% (Total Cost: 235 NP)
+*'''[[Curse]]''': Adds a 30% chance to curse all traits for 9f <sup>0.3s</sup>, improves by 9f <sup>0.3s</sup> per level up to 90f <sup>3s</sup> (Total Cost: 235 NP)
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni173 f00}}
+
+==Trivia==
+*As opposed to Mola King, Baby Mola doesn't skip any step in its evolution and instead follows the same pattern as in the game (In ''Survive! Mola Mola, Baby Mola evolves into Young Man Mola but Mola King doesn't evolve into Living Legend)''
+*Despite being called Baby Mola, it resembles the Kid Mola far more than the Baby Mola.
+*Its low HP is a clear reference to how easy sunfish die (which is also a running gag and main story driver of ''Survive! Mola Mola'' where the main objective is to avoid killing the sunfish).
+*Common mola is another way of saying sunfish, and "mola mola" is the scientific name.
+
+==Reference==
+*https://battlecats-db.com/unit/174.html
+
+----
+{{CatNav|Li'l Nyandam|Mola King}}
+----
+
+{{Survive! Mola Mola!}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Curse ability]]
+[[Category:Cats with regional differences]]

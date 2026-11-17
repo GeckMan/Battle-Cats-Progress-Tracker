@@ -1,0 +1,125 @@
+{{Unobtainable}}
+'''Celesse''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 110
+|rarity = RR
+|name1 = Celesse
+|name2 = Celesse CC
+}}
+
+==Evolution==
+Evolves into '''Celesse CC''' at level 10.
+
+==Strategy/Usage==
+Celesse nearly mirrors [[Witch Cat (Rare Cat)|Witch Cat]] apart from having slightly higher HP. This isn't particularly bad, as both are able to reliably Slow Red enemies like [[Bore]] (and even more so when used together). However, Witch eventually gains the upper hand due to getting higher range and slow time in her [[True Form]], whilst also getting another trait target and [[Survive]] with [[Talents]].
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 110
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni110 f00.png
+|Image2 = Uni110 c00.png
+|Name1 = Celesse
+|Desc1 = Joining the fight from Merc Storia! Kind-<br>hearted girl who will do anything for others.<br>Small chance to Slow Red enemies.
+|Name2 = Celesse CC
+|Desc2 = Joining the fight from Merc Storia!<br>Her fan club grows daily across the land.<br>Small chance to Slow Red enemies.
+|Name1 (JP) = セレス (Seresu, Ceres)
+|Desc1 (JP) = メルクストーリアから参戦！<br>どんなことでも受け止める、心優しき少女<br>ごくたまに赤い敵の動きを遅くする
+|Transl1 (JP) = Joined the war from Merc Storia!<br>A gentle and kind girl who accepts anything<br>Very occasionally Slows movement of Red enemies
+|Name2 (JP) = セレスCC (Seresu CC, Ceres CC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>いつのまにか非公認のファンクラブができている<br>ごくたまに赤い敵の動きを遅くする
+|Transl2 (JP) = Joined the war from Merc Storia!<br>When she realized, an unofficial fan club had formed<br>Very occasionally Slows movement of Red enemies
+|Name1 (TW) = 賽蕾絲
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>不論遇到任何事都會接受的善良少女<br>偶爾使紅色敵人動作變慢
+|Name2 (TW) = 賽蕾絲CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>不知道什麼時候就有了非正式的粉絲團<br>偶爾使紅色敵人動作變慢
+|Name1 (KR) = 세레스
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>어떤 것도 다 받아주는 상냥한 소녀<br>아주 가끔 빨간 적의 움직임을 느리게 한다
+|Name2 (KR) = 세레스CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>언제부터인가 비공식 팬클럽이 생겼다<br>아주 가끔 빨간 적의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 290¢
+*Chapter 2: 435¢
+*Chapter 3: 580¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Celesse
+|Normal Base HP = 392
+|Normal Base AP = 47
+|Normal Range = 200
+|Normal Foreswing = 26
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 57
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 290
+|Normal Recharge = 380
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Celesse CC
+|Evolved Base HP = 532
+|Evolved Base AP = 88
+|Evolved Range = 200
+|Evolved Foreswing = 26
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 57
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 290
+|Evolved Recharge = 380
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 392 HP
+|val-Normal-Attack Power = 47 damage<br>(21.69 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 26f <sup>0.87s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 12.67 ~ 3.87 seconds
+|val-Normal-MaxHP = 6,665 HP
+|val-Normal-MaxAttack = 800 damage<br>(369.23 DPS)
+|val-Evolved-Health = 9,045 HP
+|val-Evolved-Attack Power = 1,495 damage<br>(690 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 26f <sup>0.87s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni110 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/111.html
+
+----
+{{CatNav|Madam Bride|Nono}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]

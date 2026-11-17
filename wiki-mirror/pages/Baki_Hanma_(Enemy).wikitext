@@ -1,0 +1,85 @@
+:''This article is about the enemy. For the Cat Unit, see [[Baki Hanma (Uber Rare Cat)]].''
+'''Baki Hanma''' (範馬刃牙, ''Hanma Baki'', '''Baki Hanma''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Enemy Info
+|name = Baki Hanma
+|image = E 724.png
+|first appearance = [[Baki Hanma Collaboration Event]]
+|money drop = 4,500¢ - 17,775¢
+}}
+
+==Enemy==
+Baki Hanma is a powerful pusher that can reach up to 450 range, enough to hit many backliners like [[Crazed Bahamut Cat]], while his reduced standing range allows him to pierce through defense and advance more deeply with ease. Combining his Omni Strike with a fast attack rate, he's able to constantly juggle units with slower attacks and push forward with even more ease, with a cherry on top as a 5% chance to land a Critical Hit and double his effective damage. Baki also has an Immunity to Slow and Explosions, which counters both [[Cyberpunk Cat]] and Talented [[Awakened Bahamut Cat]], making him extremely dangerous on stages like the Arena of Honor.
+
+==Strategy==
+Since Baki will constantly juggle units, the best way to counter him is to use fast rushers with a low foreswing like [[Bullet Train Cat]] or [[Courier Cat]], or use tankers with Knockback Immunity.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Baki Hanma Collaboration Event#Strongest Things Alive|Strongest Things Alive]]:
+**[[Son of the Strongest Thing]] (250%)
+**[[Champion of the Underground Arena]] (3,500%)
+*[[Vs Baki Hanma]]:
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.1~5|The Strongest Student Lv.1]] (100%)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.1~5|The Strongest Student Lv.2]] (1,250% HP/560% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.1~5|The Strongest Student Lv.3]] (1,650% HP/750% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.1~5|The Strongest Student Lv.4]] (2,500% HP/1,150% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.1~5|The Strongest Student Lv.5]] (6,000% HP/2,700% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.6~10|The Strongest Student Lv.6]] (12,000% HP/3,600% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.6~10|The Strongest Student Lv.7]] (16,500% HP/4,950% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.6~10|The Strongest Student Lv.8]] (21,000% HP/6,300% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.6~10|The Strongest Student Lv.9]] (25,500% HP/7,650% AP)
+**[[Vs Baki Hanma/The Strongest Student Lv.1~10#The Strongest Student Lv.6~10|The Strongest Student Lv.MAX]] (30,000% HP/9,000% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/The Strongest Things|The Strongest Things]] (300%, 3,000%, 4,000%, 5,000%, 6,000%, 7,000%, 8,000%, 9,000%, 10,000%, 11,000%, 12,000%, 13,000%, 14,000%, 15,000%, 16,000%, 17,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Baki Hanma
+|Health = 4000
+|Attack Power = 380
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 63
+|Movement Speed = 12
+|Knockback = 3
+|Foreswing = 7
+|Backswing = 56
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -50~450)<br>
+{{AbilityIcon|Knockback}} 75% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Immune to Slow|Immune to Explosions}} [[Immune to Slow]] and [[Immune to Explosions|Explosions]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg236.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+724 e.png|Baki Hanma's spritesheet
+</gallery>
+
+==Trivia==
+*Baki Hanma is the first enemy to be immune to [[Explosion]]s.
+
+==Reference==
+*https://battlecats-db.com/enemy/726.html
+
+----
+{{EnemyNav|Commander Ostromeda|Retsu Kaioh}}
+----
+
+{{Baki Hanma}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Critical Hit Enemies]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Explosion Immunity]]

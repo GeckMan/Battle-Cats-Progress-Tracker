@@ -1,0 +1,79 @@
+{{LimitedContent}}
+{{Stub}}
+'''E-792''' (ミニハリケーンサイクロン, ''Mini Harikēn Saikuron'', '''Mini Hurricane Cyclone''') is a [[:Category:Floating Enemies|Floating]] [[:Category:Cyclones|Cyclone]] and variant of [[The Perfect Cyclone]] that appears in [[Zero Legends]]. She was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Enemy Info
+|name = E-792
+|image = e 792.png
+|first appearance = '''ZL:''' [[ZL 38-1|Sub-chapter 38 - ZL 38-1]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Very similar to the original, this resilient midranger relies on her Long Distance attacks to apply pressure, which reaches all the way to 520 range, further compounded by a 2-second 25% Weaken at 100% chance and a very fast attack cycle essentially giving it full uptime. Though her blindspot isn't negligible, getting there is often easier said than done. 
+
+==Strategy==
+Anything capable of outranging her will work wonders. [[Master of Logic Newtone (Special Cat)|Master of Logic Newtone]] is especially handy due to his great DPS and ability to [[Slow]] Floating enemies on top of already impressive piercing. [[:Category:Uber Rare Cats|Uber]] alternatives such as [[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]] will perform similarly well, even being able to [[Curse]] her with [[Talents]]. Just make sure whatever you use does not get weakened.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 792
+|Type = [[:Category:Floating Enemies|Floating]]
+|Image1 = Enemy icon 792.png
+|Name1 (JP) = ミニハリケーンサイクロン (Mini Harikēn Saikuron, Mini Hurricane Cyclone)
+|Desc1 (JP) = 暴風を身にまとう猛烈な大渦の姪っ子。<br>つい荒々しい言動で突き放してしまう<br>気難しいお年頃。不意に近付かれると<br>か弱い乙女な一面を見せるという。
+|Transl1 (JP) = Niece of a furious great vortex wreathed in a windstorm.<br>She's at a difficult age, absentmindedly pushing away others<br>with harsh words and actions. It is said that she reveals a delicate, maidenly side when one suddenly gets close to her.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 240% strength magnification.
+===[[Zero Legends]]===
+*Stage 38-1: [[ZL 38-1]]
+*Stage 38-4: [[ZL 38-4]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = E-792
+|Health = 270000
+|Attack Power = 580
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 6
+|Knockback = 3
+|Foreswing = 1
+|Backswing = 4
+|Ability = {{AbilityIcon|Long Distance}} [[Special Abilities#Long Distance|Long Distance]] (Effective range: 220~520)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Special Abilities#Weaken|weaken]] Cat Units to 25% for 60f <sub>2 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+792 e.png|E-792's spritesheet
+</gallery>
+
+==Trivia==
+*E-792 and [[Mini Angel Cyclone]] are the only [[:Category:Cyclones|Cyclones]] who are confirmed to be female.
+*Although E-792's Japanese description says she pushes others away, she doesn't have the Knockback ability, as 突き放し ''tsukihanashi'' typically refers to ''socially'' pushing others away; distancing oneself from others. It can also mean "to treat coldly".
+
+==Reference==
+*https://battlecats-db.com/enemy/794.html
+
+----
+{{EnemyNav|Seijuro Hiko|E-793}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Cyclones]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Weaken ability]]

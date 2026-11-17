@@ -1,0 +1,38 @@
+{{Documentation}}
+This template is a profile template used for displaying [[Meow Medals]] similarly to the in-game screen. The medals are arranged in pages containing 20 medals each, requiring vertical scrolling to view other pages. Hovering over an image of a meow medal shows its name.
+
+==Parameters==
+<pre>
+{{MedalList|Medal Name 1|Medal Name 2|Medal Name 3| ... |partial = number 1, number 2, number3, ...}}
+</pre>
+The listed medal names should be typed without stars and with accurate spelling and capitalization. The meow medals with these names will be shown as unlocked and counted to show the number of unlocked meow medals at the upper right corner of the template.
+
+The optional parameter <code>partial</code> is for displaying meow medals that have been partially revealed (only the rarity). This takes a list of numbers that tell the position of each medal that is partially revealed. The position of a medal is determined by counting horizontally from top to bottom and left to right, starting at the top left corner on each page. For example, the medal on page 2 in the 1st row and 3rd column has position 23. List the positions separated by commas and optional spaces, but do not include any characters other than numbers, commas, and spaces.
+
+In the case where a medal is included in <code>partial</code> while being passed as a normal argument, the medal shows as unlocked. All medals that are not named in the arguments remain unknown.
+
+==Examples==
+<tabber>
+Full List=
+<pre>
+{{MedalList|Builder of Empires|Builder of Empires 2|Builder of Empires 3|Undead Slayer|Undead Slayer 2|Undead Slayer 3|World of Darkness|The Future Is Ours|The Future Is Ours 2|The Future Is Ours 3|...And Stay Dead|...And Stay Dead 2|...And Stay Dead 3|Cosmos Conquistador|Cosmos Conquistador 2|Cosmos Conquistador 3|Dead Stars|Dead Stars II|Dead Stars III|No More Worlds to Conquer?|No More Worlds to Conquer? Z|I Am Legend|I Am Legend 2|I Am Legend 3|I Am Legend 4|Elder Annihilator|I Am Uncanny Legend 1|I Am Uncanny Legend 2|I Am Uncanny Legend 3|I Am Uncanny Legend 4|Lifeform's Mysterious Attack|Red Horizon|Dark Skies|White Winds|Holy Squall|Storm of Steel|Alien Weather|Perfect Threat|Typhoon Z|Storm of Evil|Dimensional Rift|Ancient Tempest|Angel's Cruelty|Charon's Crossing|Uncrowned|The Big Z|Usurper|Time to Wake Up|Comet Celeb|Murky Details|Road to Ruin|Alluring Composition|Tormented|Vox Deus|Ancient Dynasty|Cosmic Wanwan|Angel of Undeath|Helping Out|Lock the Gates|Infernal Tyrant Nyandam|Sanzu Swamp Guardian|Xenobeast Bunaglios|Jumbo Jones|Poultrio|Crazy Enough to Work|Manic Episodes|Frenzied Family|Your Own Size|Malevolence|Heinous Family|Another Year|Ritually Speaking|Unbearable|Young Love|Ambition's End|Man and Wife?|Holidays in the Sun|Who You Gonna Call?|Respect Your Elders|Work Up a Sweat|On Strike|A Catsmas Miracle|Rites of Spring|Song of Summer|Feast of Fall|Dance of Winter|Year-Round|Floor 30|Floor 40|Floor 50|Inferno 30|Inferno 40|Inferno 50|A True Master|Underground B100F|Baron Wasted|Le'Grim Reaped|Mega Massacre|Hyppoh Hysteria|Big Peng in the Neck|Exiel Exterminated|Omens|Gigahaniwan Tamed|Behemoth Culling|Making Money|Making Money 2|Nouveau Riche|Nouveau Riche 2|One Percenter|One Percenter 2|World Traveller|Innovator|Ranked|May I Assist You?|Forest Child|Tiny Nemesis|Under the Hood|Ronin's Redemption|Buns of Steel|Heart of Clay|Clan Urs|Go With Doron|Naala Problem|Lord Luza|Soractes|Newton|Darvin}}
+</pre>
+===Result===
+{{MedalList|Builder of Empires|Builder of Empires 2|Builder of Empires 3|Undead Slayer|Undead Slayer 2|Undead Slayer 3|World of Darkness|The Future Is Ours|The Future Is Ours 2|The Future Is Ours 3|...And Stay Dead|...And Stay Dead 2|...And Stay Dead 3|Cosmos Conquistador|Cosmos Conquistador 2|Cosmos Conquistador 3|Dead Stars|Dead Stars II|Dead Stars III|No More Worlds to Conquer?|No More Worlds to Conquer? Z|I Am Legend|I Am Legend 2|I Am Legend 3|I Am Legend 4|Elder Annihilator|I Am Uncanny Legend 1|I Am Uncanny Legend 2|I Am Uncanny Legend 3|I Am Uncanny Legend 4|Lifeform's Mysterious Attack|Red Horizon|Dark Skies|White Winds|Holy Squall|Storm of Steel|Alien Weather|Perfect Threat|Typhoon Z|Storm of Evil|Dimensional Rift|Ancient Tempest|Angel's Cruelty|Charon's Crossing|Uncrowned|The Big Z|Usurper|Time to Wake Up|Comet Celeb|Murky Details|Road to Ruin|Alluring Composition|Tormented|Vox Deus|Ancient Dynasty|Cosmic Wanwan|Angel of Undeath|Helping Out|Lock the Gates|Infernal Tyrant Nyandam|Sanzu Swamp Guardian|Xenobeast Bunaglios|Jumbo Jones|Poultrio|Crazy Enough to Work|Manic Episodes|Frenzied Family|Your Own Size|Malevolence|Heinous Family|Another Year|Ritually Speaking|Unbearable|Young Love|Ambition's End|Man and Wife?|Holidays in the Sun|Who You Gonna Call?|Respect Your Elders|Work Up a Sweat|On Strike|A Catsmas Miracle|Rites of Spring|Song of Summer|Feast of Fall|Dance of Winter|Year-Round|Floor 30|Floor 40|Floor 50|Inferno 30|Inferno 40|Inferno 50|A True Master|Underground B100F|Baron Wasted|Le'Grim Reaped|Mega Massacre|Hyppoh Hysteria|Big Peng in the Neck|Exiel Exterminated|Omens|Gigahaniwan Tamed|Behemoth Culling|Making Money|Making Money 2|Nouveau Riche|Nouveau Riche 2|One Percenter|One Percenter 2|World Traveller|Innovator|Ranked|May I Assist You?|Forest Child|Tiny Nemesis|Under the Hood|Ronin's Redemption|Buns of Steel|Heart of Clay|Clan Urs|Go With Doron|Naala Problem|Lord Luza|Soractes|Newton|Darvin}}
+
+|-|Some Unlocked=
+<pre>
+{{MedalList|No More Worlds to Conquer?|Perfect Threat|Infernal Tyrant Nyandam|Your Own Size|Year-Round|One Percenter|May I Assist You?|Heart of Clay}}
+</pre>
+===Result===
+{{MedalList|No More Worlds to Conquer?|Perfect Threat|Infernal Tyrant Nyandam|Your Own Size|Year-Round|One Percenter|May I Assist You?|Heart of Clay}}
+
+|-|Partial Parameter=
+<pre>
+{{MedalList|Builder of Empires|Builder of Empires 2|Builder of Empires 3|Undead Slayer|Undead Slayer 2|Undead Slayer 3|partial = 8, 9, 16}}
+</pre>
+===Result===
+{{MedalList|Builder of Empires|Builder of Empires 2|Builder of Empires 3|Undead Slayer|Undead Slayer 2|Undead Slayer 3|partial = 8, 9, 16}}
+</tabber>
+
+[[Category:Cosmetic templates]]

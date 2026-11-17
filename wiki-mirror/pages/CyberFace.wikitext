@@ -1,0 +1,107 @@
+'''CyberFace''' (メタルカオル君 ''Metaru Kaoru-kun'') is a [[:Category:Metal Enemies|Metal]] variant of [[The Face]] that appears in [[Legend Stages]].
+
+{{Enemy Info
+|name = CyberFace
+|image = E 058.png
+|first appearance = [[Steel Visage (Deadly)|Facing Danger]]<br>
+'''SoL''': [[Knights of the Round|Sub-chapter 28 - Knights of the Round]]
+|latest appearance = '''ZL''': [[Uneducated Sophist|Sub-chapter 9 - Uneducated Sophist]]
+|money drop = 550¢ - 2,172¢
+}}
+
+==Enemy==
+CyberFace has insane attack power, very low health, high speed, a 90% chance to create a Lv.8 [[Wave Attack]] reaching to a range of 2,135, a 30% chance to [[Knockback|knockback]] cats, and the [[Base Destroyer]] ability. Its only weaknesses are [[Critical Hit]]s and its slow attack rate, meaning most [[:Category:Critical Hit Cats|Critical Hitters]] will easily one-shot CyberFace if given the opportunity.
+
+It is often used similarly to [[Assassin Bear]] as a makeshift time limit or failure condition, typically being spammed after a certain amount of time has passed, or when the enemy limit is not kept filled. For that purpose, it also has the added property of not being vulnerable to the [[Cat Cannon]] or most lucky/lingering attacks.
+
+While it may look like a [[:Category:Floating Enemies|Floating]] enemy, it's actually walking - according to its description, its dozen plasma legs are invisible to the player.
+
+==Strategy==
+Using [[:Category:Wave Shield Cats|Wave Shields]] like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] will allow your Critical Hitters to have a chance of hitting CyberFace without getting decimated by its wave. [[Catornado (Super Rare Cat)|Hurricat]] completely obliterates CyberFace due to his insanely high probability of [[Critical Hit]]s. Just remember not to completely rely on him, as he will perish instantly if he doesn't crit.
+
+[[Rei Uzumasa & Cat (Special Cat)|Rei Uzumasa & Cat]], [[Sunny Neneko (Super Rare Cat)|Sunny Neneko]], or [[Cheerleader Cat (Super Rare Cat)|Cheerleader Cat]] can annihilate CyberFace 100% of the time, but be sure to keep them from wasting their attacks on anything else. [[Crazed Moneko (Special Cat)|Crazed Moneko]] can also work, but due to her long foreswing and low range, she won't be as effective as the others. [[Million-Dollar Cat (Special Cat)|Million-Dollar Cat]] can take out a 100% CyberFace in two attacks with its guaranteed Crits, or one if above level 46.
+
+[[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]] can keep this enemy far enough away from the [[Cat Base]] to prevent a game over if timed well, plus his rapid attacks can deal some good damage. Be wary though, for a poorly timed Li'l Lion can cause a massive gap in the line of defense. [[Metal Cat (Super Rare Cat)|Metal Cat]] is very effective against CyberFace, as he requires a set amount of hits to be killed. This allows you to get another cat behind Metal Cat that can deal enough damage to kill the CyberFace, but be wary, as CyberFace's knockback ability can push Metal Cat back.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 058
+|Type = Metal
+|Image1 = Enemy icon 058.png
+|Name1 = CyberFace
+|Desc1 = A relic of humanity's final war, this cyborg<br>crushes all to dust with enhanced jaw strength.<br>Seems to float, but actually scampers around<br>on a dozen plasma legs invisible to the eye.
+|Name1 (JP) = メタルカオル君 (Metaru Kaoru-kun)
+|Desc1 (JP) = 人類の存亡をかけ開発された顔型決戦兵器。<br>放たれる「波動」はすべてを無に帰す。<br>浮いてるように見えるが光学迷彩仕様の<br>12本の足は肉眼で見ることが出来ない。
+|Transl1 (JP) = A face-model decisive battle weapon developed for humanity's survival.<br>Releases "waves" that reduce all to naught.<br>Appears to float, but has 12 legs with optical<br>camouflage that are invisible to the naked eye.
+|Name1 (TW) = 鋼鐵臉君
+|Desc1 (TW) = 賭上全人類的存亡而開發的臉型決戰兵器。<br>會用波動將一切化爲虛無。<br>看起來好像浮在空中，但實際上用了光學迷彩<br>所以肉眼才看不到那12隻腳。
+|Name1 (KR) = 메탈 대갈이 군
+|Desc1 (KR) = 인류의 존망을 걸고 개발 된 얼굴형 결전병기.<br>뿜어내는 「파동」은 모든것을 無로 되돌려 버린다.<br>떠있는 것 처럼 보이지만 광학미채사양의<br>12개의 다리는 육안으로는 볼 수 없다.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 28-2: [[Knights of the Round]] (100%)
+*Stage 42-5: [[Baroque Beasts]] (1,000%)
+
+===[[Uncanny Legends]]===
+*Stage 10-5: [[Shocking Exile]] (100%)
+*Stage 19-4: [[Nighttime Lure]] (100%)
+*Stage 33-5: [[Overnight Overtime]] (100%)
+*Stage 44-2: [[Night of the Hustler]] (100%)
+
+===[[Zero Legends]]===
+*Stage 9-1: [[Uneducated Sophist]] (100%)
+
+===[[Special Events|Event Stages]]===
+*Facing Danger: [[Steel Visage (Deadly)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = CyberFace
+|Health = 299
+|Attack Power = 99999
+|Attack Range = 140
+|Attack Type = Area
+|Time Between Attacks = 231
+|Movement Speed = 32
+|Knockback = 1
+|Foreswing = 32
+|Backswing = 12
+|Ability = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])<br>
+{{AbilityIcon|Wave Attack}} 90% chance to create a level 8 [[Wave Attack]]
+|Element = Metal
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+058 e.png|CyberFace's spritesheet
+IdleCyberFace.gif|CyberFace's moving animation
+</gallery>
+
+==Trivia==
+*The name CyberFace may be a pun on ''cyberspace''.
+*Like [[Metal Cyclone]] and [[Teacher Cybear]], CyberFace was present in the game data for an indeterminate length of time before it was implemented.
+*CyberFace was originally exclusive to [[Steel Visage (Deadly)|Facing Danger]], meaning it was technically an event enemy for some time.
+*Prior to [[Version 5.8 Update|Version 5.8]], CyberFace moved at 42 speed rather than 32.
+
+==Reference==
+*https://battlecats-db.com/enemy/060.html
+
+----
+{{EnemyNav|Teacher Cybear|Sir Metal Seal}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Metal Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Wave Attack Enemies]]

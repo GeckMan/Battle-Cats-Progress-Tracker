@@ -1,0 +1,97 @@
+:''This article is about the enemy. For the Cat Unit, see [[Guile (Uber Rare Cat)]].''
+
+'''Guile''' is an enemy unit that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]].
+
+{{Enemy Info
+|name = Guile
+|image = E 482.png
+|first appearance = [[Impregnable Fortress (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Very high health, average damage and range as well as a guaranteed chance to [[Slow]] the players [[Cat Units]]. This fighter isn't much of a threat due to all stages he appears in have him at a low magnification or 100%, excluding [[The Clawed Rondo (Hard)|The Clawed Rondo]] which has him at 110% and [[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] of which his highest is at 200% magnification.
+
+==Strategy==
+As usual bring units that can outrange him, since his range is only at 420 there is a large variety of [[Cat Units]] to use. The same goes for units that are [[:Category:Cats with Slow Immunity|Immune to Slow]] and are [[:Category:Anti-Traitless Cats|Anti-Traitless]].<br>
+For the Street Fighter stages he appears at low to 100% magnifications all-round making him no big threat.<br>
+In his [[Street Fighter Collaboration Event#New Challenger|New Challenger]] stages the Easy stage is no big deal and the same can be said for the Expert stage.<br>
+However for the [[Ranking Dojo]] stage, he will appear at low magnifications and later on high magnifications capping at 200% which may not even appear if the player takes too long.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[Impregnable Fortress (Easy)|Impregnable Fortress]] (2%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]:
+**[[Iron Cyclone (Normal)|Iron Cyclone]] (7%)
+**[[Impregnable Fortress (Normal)|Impregnable Fortress]] (35%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]:
+**[[Impregnable Fortress (Hard)|Impregnable Fortress]] (90%)
+**[[Illuminating Flame (Hard)|Illuminating Flame]] (100%)
+**[[Warrior of Nature (Hard)|Warrior of Nature]] (100%)
+**[[The Clawed Rondo (Hard)|The Clawed Rondo]] (110%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS GUILE (Easy)]] (2%)
+**[[VS GUILE (Expert)]] (100%)
+*[[Street Fighter Collaboration Event#Street Fighter - VERY HARD -|Street Fighter - VERY HARD -]]:
+**[[Land & Sky Lv.1]] (150%)
+**[[Land & Sky Lv.2]] (187%)
+**[[Land & Sky Lv.3]] (225%)
+**[[Land & Sky Lv.4]] (262%)
+**[[Land & Sky Lv.MAX]] (300%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter (Easy)|Street Fighter (Easy)]]: [[Impregnable Fortress (Easy)|Impregnable Fortress]] (2%)
+*[[Street Fighter Collaboration Event#Street Fighter (Normal)|Street Fighter (Normal)]]:
+**[[Iron Cyclone (Normal)|Iron Cyclone]] (7%)
+**[[Impregnable Fortress (Normal)|Impregnable Fortress]] (35%)
+*[[Street Fighter Collaboration Event#Street Fighter (Hard)|Street Fighter (Hard)]]:
+**[[Impregnable Fortress (Hard)|Impregnable Fortress]] (90%)
+**[[Illuminating Flame (Hard)|Illuminating Flame]] (100%)
+**[[Warrior of Nature (Hard)|Warrior of Nature]] (100%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS GUILE (Easy)]] (2%)
+**[[VS GUILE (Expert)]] (100%)
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest (Oldest)|I Seek the Strongest]] (20%, 50%, 80%, 110%, 140%, 170%, 200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Guile
+|Health = 400000
+|Attack Power = 10500
+|Attack Range = 420
+|Attack Type = Area
+|Time Between Attacks = 120
+|Movement Speed = 18
+|Knockback = 2
+|Foreswing = 25
+|Backswing = 33
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">5,250</span> at 25f <sup>0.83s</sup>, <span class="scaled" data-type="ap">5,250</span> at 33f <sup>1.1s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub> on 2nd hit
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+482 e.png|Guile's spritesheet
+IdleGuile.gif|Guile's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/484.html
+
+----
+{{EnemyNav|Chun-Li|Zangief}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemy Units]]

@@ -1,0 +1,148 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemies, see [[Castle Horseman (Enemy)]] and [[Black Thunder Rider (Enemy)]].''
+'''Castle Horseman''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Running Through The Battlefield]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 gains more speed.
+
+{{Cat Info
+|ID = 250
+|rarity = RR
+|name1 = Castle Horseman
+|name2 = Forest Horsemen Cavalry
+|name3 = Black Thunder Rider
+}}
+
+==Evolution==
+Evolves into '''Forest Horsemen Cavalry''' at level 10.
+
+Evolves into '''Black Thunder Rider''' when obtained from the [[Road to Horsemen Cavalry Evolution (Easy)|Road to Horsemen Cavalry Evolution]] stage and is level 20 or above.
+
+==Strategy/Usage==
+This Cat can be used as a rusher, similarly to how [[Cow Cat (Normal Cat)|Lion Cat]] is used, with the only difference being that you hope he dies quickly to protect your other Cats. Otherwise, the most use this Cat will help your army with is [[User Rank]], assuming you have nothing cheaper to invest in.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 250
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni250 f00.png
+|Image2 = Uni250 c00.png
+|Image3 = Uni250 s00.png
+|Name1 (JP) = 騎馬兵
+|Desc1 (JP) = 城とドラゴンから参戦！<br>戦場を駆け抜け敵を斬りつける！
+|Transl1 (JP) = Joined the war from Castle and Dragon!<br>Runs across the battlefield and slashes enemies
+|Name2 (JP) = 森の騎馬兵
+|Desc2 (JP) = 城とドラゴンから参戦！<br>森の住民となり駿馬と共に生きる騎馬兵
+|Transl2 (JP) = Joined the war from Castle and Dragon!<br>A cavalryman who became a forest resident and lives with a fast horse
+|Name3 (JP) = 迅雷の黒騎馬兵
+|Desc3 (JP) = 城とドラゴンから参戦！<br>疾風の黒馬にまたがり迅雷の名を手にした騎馬兵
+|Transl3 (JP) = Joined the war from Castle and Dragon!<br>A cavalryman who straddled the black horse of Gale and got the name of Thunder
+|Name1 (TW) = 騎馬兵
+|Desc1 (TW) = 從城與龍來參戰！<br>穿梭於戰場斬退敵人！
+|Name2 (TW) = 森之騎兵
+|Desc2 (TW) = 從城與龍來參戰！<br>移居森林，與駿馬共生的騎馬兵
+|Name3 (TW) = 勇猛黑騎兵
+|Desc3 (TW) = 從城與龍來參戰！<br>以疾風黑馬為坐騎，人稱勇猛黑騎兵
+}}
+
+==Cost==
+*Chapter 1: 500円
+*Chapter 2: 750円
+*Chapter 3: 1,000円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Castle Horseman
+|Normal Base HP = 450
+|Normal Base AP = 58
+|Normal Range = 140
+|Normal Foreswing = 20
+|Normal Attack Cooldown = 19
+|Normal Attack Length = 32
+|Normal Speed = 25
+|Normal KB = 5
+|Normal Cost = 500
+|Normal Recharge = 270
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Forest Horsemen Cavalry
+|Evolved Base HP = 450
+|Evolved Base AP = 58
+|Evolved Range = 140
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 19
+|Evolved Attack Length = 32
+|Evolved Speed = 25
+|Evolved KB = 5
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Black Thunder Rider
+|True Base HP = 450
+|True Base AP = 58
+|True Range = 140
+|True Foreswing = 20
+|True Attack Cooldown = 19
+|True Attack Length = 32
+|True Speed = 35
+|True KB = 5
+|True Cost = 500
+|True Recharge = 270
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 58 damage<br>(44.62 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 39f <sub>1.3 seconds</sub>
+|val-Normal-Movement Speed = 25
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 20f <sup>0.67s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 9 ~ 2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 985 damage<br>(757.69 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 985 damage<br>(757.69 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 39f <sub>1.3 seconds</sub>
+|val-Evolved-Movement Speed = 25
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+|val-True-Health = 7,650 HP
+|val-True-Attack Power = 985 damage<br>(757.69 DPS)
+|val-True-Attack Range = 140
+|val-True-Attack Frequency = 39f <sub>1.3 seconds</sub>
+|val-True-Movement Speed = 35
+|val-True-Knockback = 5 times
+|val-True-Attack Animation = 20f <sup>0.67s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-True-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni250 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/251.html
+
+----
+{{CatNav|Castle Guard|Ashura}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats requiring Awakening for True Form]]

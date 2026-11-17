@@ -1,0 +1,111 @@
+{{PCExclusive}}
+'''Neko-Musume Cat''' is an [[:Category:Special Cats|Special Cat]] that is exclusive to the GeGeGe no Kitarou Collaboration Event, only available in the [[Minna de Nyanko Daisensou|PC version]]. Its debut date is unknown. Currently, not much is known about this unit.
+
+{{Cat Info
+|ID = 913
+|rarity = EX
+|version = PC
+|name1 = Neko-Musume Cat
+|name2 = Neko-Musume Cat CC
+|image1 = 10913 1.png
+|image2 = 10913 2.png
+}}
+
+==Evolution==
+Evolves into '''Neko-Musume Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit shares similar stats with [[Rei Cat (Rare Cat)|Rei Cat]], however, it is much more useful due to its traits appearing more often. It doesn't have much use against Floating enemies, since it will heavily struggle to reach them with its slow speed and poor range. However, the story is much different against Zombies. Its Resistance and Massive damage give it even better stats against them than [[Li'l Bird Cat (Special Cat)|Li'l Flying Cat]], on top of its' higher range. Depending on how many Anti-Zombie [[Fruit Treasures]] you have, even one of these could output anywhere from 4,050 to 5,400 DPS at level 30.
+
+{{Job|Classification = Melee & Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 913<sup>PC</sup>
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni10913 f00.png
+|Image2 = Uni10913 c00.png
+|Name1 (JP) = ねこ娘ネコ (Neko Musume Neko, Neko Musume Cat)
+|Desc1 (JP) = 俊敏な動きと鋭い爪と牙を持つ有名な半妖怪に憧れるネコ<br>容姿は程遠いが爪での攻撃は似てきたかもしれない<br>浮いている敵とゾンビに対して打たれ強く、超ダメージ
+|Transl1 (JP) = A cat who admires a famous half-demon with agile movements and sharp claws and fangs<br>Not quite the same in appearance, but perhaps more similar in claw attacks<br>Striking and super damage against Floating enemies and Zombies
+|Name2 (JP) = ねこ娘ネコCC (Neko Musume Neko CC, Neko Musume Cat CC)
+|Desc2 (JP) = 俊敏な動きと鋭い爪と牙を持つ有名な半妖怪に憧れるネコ<br>容姿は程遠いが爪での攻撃は似てきたかもしれない<br>浮いている敵とゾンビに対して打たれ強く、超ダメージ
+|Transl2 (JP) = A cat who admires a famous half-demon with agile movements and sharp claws and fangs<br>Not quite the same in appearance, but perhaps more similar in claw attacks<br>Striking and super damage against Floating enemies and Zombies
+}}
+
+==Cost==
+*Chapter 1: 410円
+*Chapter 2: 615円
+*Chapter 3: 820円
+
+==Stats==
+:''Note: some fields are unknown. The attack cycle is 85f long, but the distribution is unknown. Foreswing is left as 85 here so DPS can be correct.''
+{{Cat Stats 1.2
+|Normal Name = Neko-Musume Cat
+|Normal Base HP = 575
+|Normal Base AP = 225
+|Normal Range = 190
+|Normal Foreswing = 85 <!--unknown, cycle is 85f-->
+|Normal Attack Cooldown = 0 <!--unknown, cycle is 85f-->
+|Normal Attack Length = 0 <!--unknown, cycle is 85f-->
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 410
+|Normal Recharge = 480
+|Normal Attack Type = Area
+|Normal Targets = Floating,Zombie
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]]
+|Evolved Name = Neko-Musume Cat CC
+|Evolved Base HP = 575
+|Evolved Base AP = 225
+|Evolved Range = 190
+|Evolved Foreswing = 85
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 0
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 410
+|Evolved Recharge = 480
+|Evolved Attack Type = Area
+|Evolved Targets = Floating,Zombie
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]]
+|Lv.MAX = Lv.40
+|Scaling = 20x20
+|Orb = false
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10913_f.png|MediaWiki:Custom-AnimationViewer/PC913_f.json}}
+|-|Evolved=
+{{AnimationViewer|10913_c.png|MediaWiki:Custom-AnimationViewer/PC913_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10913 f00}}
+
+==Reference==
+*http://seesaawiki.jp/battlecatswiki/d/%a4%cd%a4%b3%cc%bc%a5%cd%a5%b3
+*https://www.youtube.com/watch?v=A___OqklEVY
+
+----
+{{CatNav|Cat Maid|Kitaro Cat & Nezumi-Otoko Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Resistant ability]]

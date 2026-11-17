@@ -1,0 +1,64 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Bannerman Doge|Pigge|One Horn|B.B.Bunny|Teacher Bear|Commander Hannya}}
+'''Demon-Masked Lord (Veteran)''' is the first stage in [[Road to Unification#Engage! Commander Hannya|Engage! Commander Hannya]].
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn387 00 s en.png]]
+|stage location = [[File:Mapname387 s en.png]]
+|energy = 100
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Bannerman Doge|400%
+|Pigge|400%
+|One Horn|400%
+|B.B.Bunny|400%
+|Teacher Bear|400%}}
+|boss = {{Magnification|Commander Hannya|100%}}
+|enemies2 = {{Magnification|Bannerman Doge|800%
+|Pigge|800%
+|One Horn|800%
+|B.B.Bunny|800%
+|Teacher Bear|800%}}
+|boss2 = {{Magnification|Commander Hannya|200%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +200 (100%, unlimited)
+|score reward = '''8,100''': [[Catamin]] [A] +1<br>
+'''6,000''': [[Road to Unification#Mechanics|War Funds]] +1,250<br>
+'''3,900''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''2,200''': [[Road to Unification#Mechanics|War Funds]] +2,500<br>
+'''500''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''500''': 200,000 XP
+|XP = 3,000 XP
+|width = 4,500
+|max enemies = 10
+|jpname = Demon-Masked General Super Advanced
+|script = 鬼面の猛将 超上級
+|romaji = Kimen no Mōshō Chōjōkyū
+|star = 2
+|event-chapter = [[Road to Unification#Engage! Commander Hannya|Engage! Commander Hannya]]
+|difficulty = ★5
+|prev stage = N/A
+|next stage = [[Demon-Masked Lord (Insane)]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*Infinite [[Bannerman Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+*2 [[Pigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*1 [[One Horn]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Commander Hannya]] spawns as the boss.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**3 [[Pigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**2 [[Teacher Bear]]s spawn after 0.07 seconds<sup>2f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+
+==Strategy==
+Even though a [[Hannya]] variant is in this stage, it should be decently easy regardless. You can just spam [[Courier Cat]] with research combos. Other anti-red or anti-Dark cats such as [[Can Can Cat|Can Can]] or [[Pizza Cat]] can also work, though anti-Red holds more merit due to [[Commander Hannya|Cmdr. Hannya]] being the only Dark enemy.
+
+==Reference==
+*https://battlecats-db.com/stage/s01387-01.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

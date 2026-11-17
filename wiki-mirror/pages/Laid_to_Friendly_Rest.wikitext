@@ -1,0 +1,101 @@
+{{EnemiesAppearing|Ghost Doge|Aku Doge|Zoge|Gabriel|Doge Dark|Shibalien|Gorilliam|Gory Groom}}
+'''Laid to Friendly Rest''' is the tenth and final stage in [[01 The Ghost Chapel|#01 The Ghost Chapel]].
+
+{{Stage Info
+|stage name = [[File:rc159.png]]
+[[File:Mapsn052 09 a en.png]]
+|stage location = [[File:Mapname052 a en.png]]
+|energy = 200
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Ghost Doge|1,800%
+|Aku Doge|300%
+|Zoge|200%
+|Gabriel|200%
+|Doge Dark|400%
+|Shibalien|1,000%
+|Gorilliam|500%
+|Gory Groom|500%}}
+|boss = {{Magnification|Doge Dark|100%}}
+|treasure = - [[June Bride of the Devil (Event Gacha)|Holy Water]] +3 (100%, 1 time)<br>
+- [[June Bride of the Devil (Event Gacha)|Holy Water]] +2 (25%, unlimited)<br>
+- [[June Bride of the Devil (Event Gacha)|Holy Water]] +3 (75%, unlimited)
+|XP = 6,000 XP
+|width = 5,500
+|max enemies = 30
+|jpname = Buddhahood With Everyone
+|script = Laid
+|romaji = Minna de Nakayoku Jōbutsu
+|star = 1
+|event-chapter = [[01 The Ghost Chapel|#01 The Ghost Chapel]]
+|max clears = 3
+|difficulty = ★8
+|prev stage = [[Holy Water from the Tap]]
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Ghost Doge]]s spawn after 0.67 seconds<sup>20f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*5 [[Aku Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10 seconds<sup>300f</sup>.
+*5 [[Zoge]]s spawn after 10 seconds<sup>300f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] (100%) spawns as the boss.
+**10 [[Gabriel]]s spawn, delay 10 seconds<sup>300f</sup>.
+**10 [[Doge Dark]]s (400%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**15 [[Shibalien]]s spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+**5 [[Aku Doge]]s spawn, delay 10 seconds<sup>300f</sup>.
+**1 [[Gorilliam]] spawns.
+**1 [[Gory Groom]] spawns.
+
+==Strategy==
+While [[Self-Playing Organ]] is incredibly fast, this stage has a much better Holy Water to Energy ratio, so farming this stage is best for getting lots of Holy Water quickly. Because both bosses have pretty high stats, you'll need to either rush down the base or just kill both bosses with lots of meatshields and Bahamut.
+
+==='''Strategy 1 (No Ubers, 60s)'''===
+{{Lineup
+|Manic Mohawk Cat
+|Manic Eraser Cat|50
+|Crazed Axe Cat
+|Crazed Gross Cat
+|Manic Lion Cat|20
+|Jelly Dumpling Cat|50
+|Can Can Cat|50
+|Courier Cat|50
+|Heavy Assault C.A.T.|50
+|Awakened Bahamut Cat|40
+|talent7 = Extra Bounties, Move Speed Up 10
+|talent9 = Massive Damage, Attack Buff 10
+|talent10 = Explosion 10, Move Speed Up 10
+|name = Bahamut Chain
+|cannon = Thunderbolt
+|notes = [https://www.youtube.com/watch?v=UWYeqXd0UkY Reference video]. C.A.T. is replaceable by Uber rusher options like Yukimura or Blanka.
+}}
+
+This is pretty simple to execute. Jelly Dumpling and Courier are able to tear through the peons, and with three meatshields (Manic Mohawk, Manic Eraser, and Manic Lion), Bahamut will always be able to get hits on either the peons or the bosses and deliver insanely high damage. Alongside your other rusher support, the bosses should die fairly quickly and you should have a decently fast clear.
+
+==='''Strategy 2 (Uber Combos, 35s)'''===
+{{Lineup
+|Richest Cat
+|?
+|?
+|?
+|?
+|?
+|Jelly Dumpling Cat|50
+|Green Shell Cat|50
+|Bullet Train Cat|50
+|Awakened Bahamut Cat|50
+|talent10 = Explosion 10, Move Speed Up 10
+|name = Bahamut Iron Wall Base Cheese
+|cannon = Iron Wall 20
+|notes = [https://www.youtube.com/watch?v=QD29SQIWlJA Reference video]. Use your best Starting Cannon (M) combos available.
+}}
+
+This strategy relies on using Iron Wall and Green Shell to wall all the enemies, while Bahamut and warped Bullet Trains nuke the base. Immediately send out Slime, then at 1600¢, send out Green Shell. When done correctly, Slime will trade with Aku Doge and die, while Green Shell will hit a peon and sit near the base. When you hit 4500¢, send out Bahamut as fast as possible. Bahamut will hit an Aku Doge and kill it. Once this happens, prefire the Iron Wall and send Bullet Train. Bahamut will then hit the base, nuke all the peons, and Green Shell will reattack while the enemies just hit the Iron Wall. From here, Bahamut now has free reign to nuke the base, while your Bullet Train from earlier will hit the base, get warped by Gorilliam, and then hit the base again, resulting in a quick clear.
+
+This lineup has a free slot in it. Because the base dies so fast, there really isn't much point adding anything besides extremely quick Uber rushers like [[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]] or [[Blanka (Uber Rare Cat)|Blanka]]. If you do have them, just deploy them when the boss shockwave plays for some more free damage.
+
+==Reference==
+*https://battlecats-db.com/stage/s24052-10.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Gauntlets]]

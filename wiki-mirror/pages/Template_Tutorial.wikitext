@@ -1,0 +1,13 @@
+{{#invoke:Navbox|main
+|template = Template:Tutorial
+|title = [[Tutorial Collaboration Event]]
+|navbox_class = tutorial
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Tutorial Cat (Special Cat)|Tutorial]]
+}}<templatestyles src="Tutorial/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Tutorial]]}}<noinclude>[[Category:Navboxes]]</noinclude>

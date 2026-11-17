@@ -1,0 +1,125 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Fuu (Enemy)]].''
+'''Fuu''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 116
+|rarity = RR
+|name1 = Fuu
+|name2 = Fuu CC
+}}
+
+==Evolution==
+Evolves into '''Fuu CC''' at level 10.
+
+==Strategy/Usage==
+This unit works similarly to [[Flower Cat (Special Cat)|Flower Cat]], with similar range, but is overall not useful simply due to Dark enemies spawning in gargantuan swarms which a Single Target unit cannot hope to disable. Flower Cat's [[True Form]], Bombercat, outshines it entirely.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 116
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni116 f00.png
+|Image2 = Uni116 c00.png
+|Name1 = Fuu
+|Desc1 = Joining the fight from Merc Storia! A lass from<br>the Sky Country, horned due to her mixed blood.<br>Might Freeze Dark enemies.
+|Name2 = Fuu CC
+|Desc2 = Joining the fight from Merc Storia! Taking grand-<br>dad's teachings to heart, she travels the world.<br>Might Freeze Dark enemies.
+|Name1 (JP) = フウ (Fuu)
+|Desc1 (JP) = メルクストーリアから参戦！<br>天空の民だが混血であるため頭部に角が生えている<br>たまに黒い敵の動きを一瞬止める
+|Transl1 (JP) = Joined the war from Merc Storia!<br>Is one of the sky people but has a horn due to her mixed blood<br>Occasionally Stops the movement of Dark enemies for a moment
+|Name2 (JP) = フウCC (Fuu CC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>祖父の言葉を聞いて世界中を見て回ることを決意<br>たまに黒い敵の動きを一瞬止める
+|Transl2 (JP) = Joined the war from Merc Storia!<br>Decided to travel all over the world after hearing her grandfather's words<br>Occasionally Stops the momvement of Dark enemies for a moment
+|Name1 (TW) = 弗舞
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>天空之民，但因爲是混血所以頭上長角<br>有時候會讓黑色敵人瞬間動作停止
+|Name2 (TW) = 弗舞CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>聽了祖父的話而決定去看看世界各地<br>有時候會讓黑色敵人瞬間動作停止
+|Name1 (KR) = 후우
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>천공의 백성이지만 혼혈이라 머리에 뿔이 나있다<br>가끔 검은 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 후우CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>할아버지의 말을 듣고 전세계를 돌아보기로 결심<br>가끔 검은 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Fuu
+|Normal Base HP = 295
+|Normal Base AP = 48
+|Normal Range = 244
+|Normal Foreswing = 31
+|Normal Attack Cooldown = 27
+|Normal Attack Length = 63
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Fuu CC
+|Evolved Base HP = 365
+|Evolved Base AP = 78
+|Evolved Range = 244
+|Evolved Foreswing = 31
+|Evolved Attack Cooldown = 27
+|Evolved Attack Length = 63
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 295 HP
+|val-Normal-Attack Power = 48 damage<br>(22.86 DPS)
+|val-Normal-Attack Range = 244
+|val-Normal-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 31f <sup>1.03s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 5,015 HP
+|val-Normal-MaxAttack = 815 damage<br>(388.1 DPS)
+|val-Evolved-Health = 6,205 HP
+|val-Evolved-Attack Power = 1,325 damage<br>(630.95 DPS)
+|val-Evolved-Attack Range = 244
+|val-Evolved-Attack Frequency = 63f <sub>2.1 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni116 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/117.html
+
+----
+{{CatNav|Serum|Aura}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Gacha Cats]]

@@ -1,0 +1,99 @@
+:''This article is about the enemy. For the Cat Unit, see [[Dogumaru (Special Cat)]].''
+'''Dogumaru''' (土偶戦士ドグ丸, ''Dogūsenshi Dogumaru'', '''Dogū Warrior Dogumaru''') is a [[:Category:Relic Enemies|Relic]] enemy introduced in [[Primitive Souls]], the final stage in [[Depths of My Heart]]. He is the enemy version of [[Dogumaru (Special Cat)|Dogumaru]]. He was added in [[Version 8.4 Update|Version 8.4]].
+
+{{Enemy Info
+|name = Dogumaru
+|image = E 450.png
+|appearance =
+|first appearance='''UL''': [[Primitive Souls|Sub-chapter 12 - Primitive Souls]]
+|latest appearance='''UL''': [[Atonement for Sin|Sub-chapter 48 - Atonement for Sin]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Dogumaru appears to be a half-human, half-horse clay statue bearing the green gem often found on Relic enemies. He attacks by charging a pulse before firing it at the ground, creating a green explosion. His red eyes glare during his attack animation.
+
+This enemy behaves like a stronger version of [[Manic King Dragon (Enemy)|Manic King Dragon]], having greater stats, delivering [[Omni Strike|Omni Strikes]] that reach up to 700 range at a shorter but still high standing range of 500, as well as inflicting a 20-second curse. Due to his fast attacks, long reach and piercing range, it's difficult to attack him safely. His main weakness is his somewhat low DPS for a Relic, but keep in mind that in all of his appearances, Dogumaru is never alone. When introduced into 2~{{3c}}, his danger increases significantly and can no longer easily be beaten without a dedicated strategy or powerful [[:Category:Uber Rare Cats|Ubers]].
+
+Despite levitating, Dogumaru is not considered a [[:Category:Floating Enemies|Floating]] enemy.
+
+==Strategy==
+:''See each stage's article for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 450
+|Type = [[:Category:Relic Enemies|Relic]]
+|Image1 = Enemy icon 450.png
+|Name1 = Dogumaru
+|Desc1 = An ancient fighter excavated by the Doges.<br>Clay body looks weak but is reinforced with<br>Relic power. His human top was mistakenly<br>attached to a horse body, but it still works(?)
+|Name1 (JP) = 土偶戦士ドグ丸 (Dogūsenshi Dogumaru, Dogū Warrior Dogumaru)
+|Desc1 (JP) = わんこ軍団が掘り出した古代戦士。<br>ハニワだと思われているが実は土偶。<br>偶然そばに落ちてた馬土偶の下半身を<br>間違ってくっつけられた不遇の戦士。
+|Transl1 (JP) = An ancient warrior excavated by the Doge Army.<br>Thought to be a haniwa, but in fact he is a dogū.<br>An unfortunate warrior who was mistakenly attached to the<br>lower body of the horse dogū that had fallen beside him.
+|Name1 (TW) = 土偶喵丸
+|Desc1 (TW) = 狗仔軍團挖出來的古代戰士。<br>被誤以為是埴輪但其實真的是土偶。<br>遭到錯接在偶然掉落附近的<br>"馬土偶下半身"上的不幸戰士。
+|Name1 (KR) = 토우전사 도그마루
+|Desc1 (KR) = 멍뭉이 군단이 발굴해낸 고대 전사<br>하니와처럼 보이지만 사실은 흙으로 만든 인형<br>옆에 있던 흙 말 인형의 다리로 하반신을 착각해서<br>붙여진 거라는 불운의 스토리...
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 12-6: [[Primitive Souls]]
+*Stage 48-1: [[Soul in the Idol]]
+*Stage 48-5: [[Atonement for Sin]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dogumaru
+|Health = 1000000
+|Attack Power = 9000
+|Attack Range = 500
+|Attack Type = Area
+|Time Between Attacks = 86
+|Movement Speed = 15
+|Knockback = 3
+|Foreswing = 52
+|Backswing = 34
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -500~700)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 600f <sub>20 seconds</sub>
+|Element = Relic
+}}
+
+{{UnitViewer|enemy|bg=Bg096.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+450 e.png|Dogumaru's spritesheet
+Green mkd.gif|Dogumaru's animations
+Bg268.png|Dogumaru, Cat God and Michelangelo Cat in [[Billionaire's Bidding|Billonaire's Bidding]] background.
+</gallery>
+
+==Trivia==
+*He is based on [[wikipedia:Dogū#Shakōkidogū|''Shakōkidogū'']], the most well-known variety of clay ''dogū'' figurines from prehistoric Japan.
+**The word ''maru'' (丸) in Dogumaru's name can mean "full" or "whole" in Japanese. This may refer to how being attached to a horse statue's lower body has made Dogumaru complete again, as ''Shakōkidogū'' in real life are seldom found with all of their limbs intact.
+*Since the end of [[Uncanny Legends]] involves the [[Great Ape Luza|origin of humanity]], Dogumaru may represent myths of [[wikipedia:Creation of life from clay|creation of life from clay]], many of which state that the first human(s) were made from clay.
+*For a few reasons, Dogumaru could potentially be a nod to [https://youtu.be/Ne4qy1MwVDo Hanimaru] from the children's television program [[wikipedia:ja:おーい!はに丸|''Ōi! Hanimaru'']]:
+**Both combine the name of an ancient Japanese clay figurine with 丸 ''maru'' (Hanimaru is ''[[wikipedia:Haniwa|haniwa]]'', Dogumaru is ''dogū'').
+**As an enemy, Dogumaru's Japanese description mentions that he was thought to be a ''haniwa''.
+**Hanimaru is usually seen with his horse ''haniwa'' Hinbei, while enemy Dogumaru's Japanese description states that he was mistakenly attached to the lower body of a horse ''dogū'' that had fallen beside him.
+
+==Reference==
+*https://battlecats-db.com/enemy/452.html
+
+----
+{{EnemyNav|Haterbaa 2.0|Maji Cat & Cat Tour Group}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Mythic Bosses]]

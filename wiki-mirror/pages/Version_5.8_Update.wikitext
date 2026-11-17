@@ -1,0 +1,129 @@
+==Release Dates==
+*'''Japanese:''' January 18th, 2017
+*'''International:''' January 26th, 2017
+
+==Cats==
+Added 4 new units, CRO ranges from 318~321:
+{{Update|mode=cats
+|Miko Mitama
+|[[File:Gatya bnr168 en.png|400px|link=UBERFEST (Gacha Event)]]
+|Killer Cat
+|[[File:Mapname127 s en.png|200px|link=Day of the Cat]]
+|Hiroshi Mihara
+|[[File:Mapname039 c tw.png|200px|link=Hiroshi Mihara Collaboration Event]]
+|Nazousagi
+|[[File:Mapname040 c ja.png|200px|link=Nazousagi Collaboration Event]]
+}}
+
+*Added 2 new [[True Form]]s:
+{{Update|mode=trueforms
+|Raiden
+|'''HP:''' 51,000 → 68,000<br>
+'''Range:''' 385 → 415<br>
+'''Speed:''' 12 → 15<br>
+[[File:Strong Against.png]] [[File:Redtraiticon.png|40px]]
+|Togeluga
+|'''HP:''' 850 → 51,000<br>
+'''DPS:''' 2,550 → 3,000<br>
+'''TBA:''' 20s → 17s<br>
+'''Knockback:''' 1 → 100<br>
+[[File:Strengthen.png]]:''' 1% health → 99% health<br>
+[[File:Immune to Waves.png]]
+}}
+
+==Enemies==
+{{Update|mode=enemies
+|Coffin Zoge
+|Zamelle
+|Killer Cat
+|Corrupted Cat Base
+|Hiroshi Mihara
+|Nazousagi
+}}
+
+
+==Stages==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+|-
+! scope="row" |[[Main Chapters Levels|Main Chapters]]
+|[[File:EoC3OMenuButton.png|200px|link=Zombie Outbreaks]]
+|-
+! scope="row" |[[Stories of Legend]]
+|[[File:Mapname035 n en.png|200px|link=Mouseyland]]
+|-
+! scope="row" |[[Special Events|Events]]
+|[[File:Mapname127 s en.png|200px|link=Day of the Cat]]
+|-
+! scope="row" rowspan="2" |[[Collaboration Events|Collaboration]]
+|[[File:Mapname039 c tw.png|200px|link=Hiroshi Mihara Collaboration Event]]
+|-
+|[[File:Mapname040 c ja.png|200px|link=Nazousagi Collaboration Event]]
+|}
+
+===Stage Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+! scope="col" |Changes
+|-
+! scope="row" |2 Star Additions
+|[[File:Mapname033 n en.png|200px|link=Suburbs of the Dead]]
+|'''Magnification:''' x1 → x1.2
+|-
+! scope="row" |3 Star Additions
+|[[File:Mapname031 n en.png|200px|link=Kombu Cape]]
+|'''Magnification:''' x1 → x1.4
+|-
+! scope="row" |4 Star Additions
+|[[File:Mapname010 n en.png|200px|link=Neverending Cat Story]] [[File:Mapname011 n en.png|200px|link=Castle of Fish]] [[File:Mapname012 n en.png|200px|link=Sushi Island]]
+|'''Magnification:''' x1 → x3<br>
+'''Restrictions:''' Only [[:Category:Special Cats|Special]] and [[:Category:Rare Cats|Rare]] Units
+|-
+! scope="row" |Miscellaneous
+|[[File:Mapsn033 05 n en.png|200px|link=Silenced Meowing]]
+|[[Shadow Boxer K]]: 3 after 5 seconds<sup>150f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup> → 3 after 10 seconds<sup>300f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup><br>
+[[Gory Dark]] spawns after 50 seconds → 60 seconds<br>
+Removed 3 [[Zory|Zories]] spawned at 99% of the enemy base's HP
+|}
+
+==Cat Combos==
+{{Combos|basic=1
+|{{CatCombo|Black & White|Worker Max Up (Sm)|Killer Cat|Cat|jpname=}}
+|{{CatCombo|Royal Submariner|Worker Start Level Up (Sm)|Wrathful Poseidon|Madam King|jpname=}}
+|{{CatCombo|Cutting Edge|Unit Speed Up (Sm)|Strike Unit R.E.I.|Drone Cat|jpname=}}
+}}
+
+==Gacha Events==
+===Banner Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Banner
+! scope="col" |Added Units
+! scope="col" |Removed Units
+|-
+|[[File:Gatya bnr168 en.png|400px|link=UBERFEST (Gacha Event)]]
+|[[File:Uni318 f00.png|link=Miko Mitama (Uber Rare Cat)]]
+|<center>N/A</center>
+|}
+
+==Miscellaneous==
+*Drop rates for [[Catfruit]] changed on Insane stages, applies to [[Catfruit Buffet]] but not [[Catfruit Jubilee]].
+*Certain cat units target [[:Category:Zombie Enemies|Zombie Enemies]] and/or gain [[Zombie Killer]] as well as other changes.
+**[[Delinquent Cat (Super Rare Cat)|Delinquent Cat]] receives Immune to Freeze.
+**[[Sumo Cat (Special Cat)|Riceball Cat]] receives Immune to Knockback.
+**[[Kung Fu Cat (Special Cat)|Dancer Cat]] receives Immune to Weaken.
+*[[CyberFace]] now moves at 32 speed instead of 42.
+*[[Zyclone]] now revives infinitely instead of only 99 times.
+*[[Miss Haka]] and [[Big Sal]] now burrow infinitely instead of only 9,999 times.
+
+==Gallery==
+<gallery position="center" hideaddbutton="true" bordercolor="transparent">
+God-Emperor Raiden teaser.png|A teaser featuring [[Raiden (Uber Rare Cat)|God-Emperor Raiden]]
+</gallery>
+
+{{Versions}}

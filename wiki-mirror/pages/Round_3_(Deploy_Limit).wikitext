@@ -1,0 +1,64 @@
+{{DISPLAYTITLE:Round 3}}
+{{EnemiesAppearing|Pigeon de Sable|Mooth|Brollow|Angelic Gory|Winged Pigge|Sunfish Jones}}
+'''Round 3''' is the third stage in [[Otherworld Colosseum#Deploy Limit|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 02 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Pigeon de Sable|300%
+|Mooth|4,000%
+|Brollow|150%
+|Angelic Gory|200%
+|Winged Pigge|100%}}
+|boss = {{Magnification|Sunfish Jones|100%}}
+|enemies2 = {{Magnification|Pigeon de Sable|360%
+|Mooth|4,800%
+|Brollow|180%
+|Angelic Gory|240%
+|Winged Pigge|120%}}
+|boss2 = {{Magnification|Sunfish Jones|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,000
+|max enemies = 20
+|jpname = Round 3
+|script = Round 3
+|romaji = Round 3
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Deploy Limit|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 2 (Deploy Limit)|Round 2]]
+|next stage = [[Round 4 (Deploy Limit)|Round 4]]
+}}
+
+==Rules==
+{{ColosseumRule|Deploy Limit}}
+
+==Battleground==
+*5 [[Pigeon de Sable]]s spawn after 8 seconds<sup>240f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Mooth]] spawns after 18.67 seconds<sup>560f</sup>.
+*3 [[Brollow]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Angelic Gory|Angelic Gories]] spawn after 36.67 seconds<sup>1,100f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sunfish Jones]] spawns as the boss.
+**1 [[Winged Pigge]] spawns.
+**4 [[Angelic Gory|Angelic Gories]] spawn, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+**5 [[Brollow]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+
+==Strategy==
+Uh oh, Winged Pigge's here. Except she's unbuffed, meaning even if you're fresh out of SoL this shouldn't be hard to clear.
+
+At the start, try to burn all of the Pigeons and Brollows using [[Octopus Cat]] as well as dealing with the one Angelic Gory using [[Ramen Cat]] and either [[Food Stall Cat (Rare Cat)|Cafeteria]] or [[Mushroom Cat|Mushroom]]. When you hit the base, lure Winged Pigge and start beating her up with generic ranged units like [[Time Traveller Cat]], [[Crazed Lizard Cat (Super Rare Cat)|Manic King Dragon]], and backliners, while adding CC units like [[Farmboy Cat]] or [[Cyberpunk Cat]] just in case your Ramen stack fails you. There's still five Brollows and Angelic Gories after you hit the base, meaning you really want to kill Pigge before things get too chaotic. Once that's done, Sunfish Jones is still left, which is actually pretty hard to kill given how many units you've used to kill Winged Pigge. Because of this, Cafeteria's extremely strong in this stage specifically. If you missed Cafeteria's Awakening stage, [[Can Can Cat]] can work here. Remember to save some units just in case an Angelic Gory or Brollow randomly jumpscares you while you're hitting the base.
+
+===Recommended Ubers===
+*Anything to kill Winged Pigge quickly. Examples include [[Sea Serpent Daliasan (Uber Rare Cat)|Daliasan]], [[Jizo's Mega-Castle]], [[Thunder Jack (Uber Rare Cat)|Thunder Jack]] and [[Dynasaurus Cat (Uber Rare Cat)|Dynasaurus]].
+
+==Reference==
+*https://battlecats-db.com/stage/s36005-03.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

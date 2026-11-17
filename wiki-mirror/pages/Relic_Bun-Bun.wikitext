@@ -1,0 +1,120 @@
+:''For the Cat Unit, see [[Mecha-Bun (Special Cat)]]. For the weaker boss that must be beaten first, see [[Mecha-Bun (Enemy)]].''
+'''Relic Bun-Bun''' (真レジェンドブンブン, ''Shin Rejendo Bun-Bun'', '''True Legend Bun-Bun''') is a [[:Category:Relic Enemies|Relic]] variant of [[Mecha-Bun (Enemy)|Mecha-Bun]] introduced in the first stage of [[Uncanny Legends]], [[An Ancient Curse]]. It is the enemy version of [[Mecha-Bun (Special Cat)|Ultimate Mecha-Bun]]. It was added in [[Version 7.0 Update|Version 7.0]].
+
+{{Enemy Info
+|name = Relic Bun-Bun
+|image = E 406.png
+|first appearance = '''UL''': [[An Ancient Curse|Sub-chapter 1 - An Ancient Curse]]
+|latest appearance = '''ZL''': [[Pineapple Merchant|Sub-chapter 11 - Pineapple Merchant]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+The first boss of Uncanny Legends, Relic Bun-Bun has a 100% to curse your units, disabling their trait-targeting [[Special Abilities|abilities]] ([[Massive Damage|massive damage]], [[Weaken|weaken]], etc.) for a short period of time, though all other abilities are unaffected ([[Wave Attack]]s, [[Critical Hit]]s, etc.). Unlike most other variants of [[Teacher Bun Bun]], it isn't [[:Category:Floating Enemies|Floating]], making it that much more difficult to counter.
+
+Other than what is stated above, this enemy is very similar to [[Mecha-Bun (Enemy)|Mecha-Bun]]. It is different in that it deals half as much damage, gets knocked back half as many times, has longer [[Omni Strike]] reach, and moves slower.
+
+==Strategy==
+With huge DPS, an Omni Strike that increases its effective range, a 10-second Curse and 3,000,000 HP, this enemy is extremely dangerous. Its sheer DPS warrants the use of specialist meatshields like [[Primordial Cat (Rare Cat)|Modern Cat]] to stall, optionally aided by Research [[Cat Combo|Combos]]. For attackers, use [[:Category:Anti-Relic Cats|anti-Relics]] that can outrange it, preferrably with other useful abilities, like [[Miyamoku Musashi (Special Cat)|Awakened Musashi]], [[Red Riding Mina (Special Cat)|Awakened Mina]], [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], [[Master Uril (Special Cat)|Mystic Uril]], [[Medusa Cat (Rare Cat)|Twintail Medusa Cat]], and [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]. In its later appearances where it is backed by a multitude of nasty enemies, the assistance of [[Elder Mask Doron (Special Cat)|Cat Mask Doron]] and Uril are absolutely necessary to cripple its advance.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 406
+|Type = [[:Category:Relic Enemies|Relic]]
+|Image1 = Enemy icon 406.png
+|Name1 = Relic Bun-Bun
+|Desc1 = An unstoppable artifact who mercilessly crushes<br>any intruder into the realm of the ancients.<br>The prophecies speak of some who can resist<br>the dark curses this guardian places on its foes.
+|Name1 (JP) = 真レジェンドブンブン (Shin Rejendo Bun-Bun, True Legend Bun-Bun)
+|Desc1 (JP) = いにしえの地に踏み入れるものを<br>容赦なく殴り続ける古代の番人。<br>特殊効果を封印する「古代の呪い」が<br>効かない者たちがいるらしいが...
+|Transl1 (JP) = An ancient guardian who mercilessly beats down<br>anything that steps foot into the ancient lands.<br>It appears that there are some who are unaffected<br>by the "Ancient Curse" that seals special abilities...
+|Name1 (TW) = 真傳奇噴噴
+|Desc1 (TW) = 是個只要你敢踏入遠古之地裡<br>就毫不留情打爆你的太古護衛。<br>可以封印特殊效果的「古代詛咒」<br>據說對某些人沒用喔...
+|Name1 (KR) = 신 레전드 맴매
+|Desc1 (KR) = 고대의 땅에 발을 들인 자를 자비 없이<br>응징해버리는 고대의 파수꾼.<br>특수 효과를 봉인하는 고대의 저주에<br>걸리지 않는 자들이 있다는 소문이...
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 1-1: [[An Ancient Curse]] (100%)
+*Stage 10-6: [[The Red Cat Gambit]] (100%)
+*Stage 23-5: [[A Boat Too Far]] (100%)
+*Stage 34-5: [[Khao Man Guys]] (100%)
+*Stage 39-1: [[Aku Altar's Seal]] (100%)
+*Stage 46-3: [[Aven-Jazz Cafe]] (100%)
+*Stage 47-6: [[Neverending Footsteps]] (100%)
+
+===[[Zero Legends]]===
+*Stage 3-3: [[Loony Lakeside]] (100%)
+*Stage 11-4: [[Pineapple Merchant]] (100%)
+*Stage 21-4: [[Efficient Timewasting]] (120%)
+*Stage 27-3: [[Miraculously On Time]] (120%)
+*Stage 33-6: [[Leftover Limbo]] (120%)
+
+===[[Special Events|Event Stages]]===
+*[[Relic Citadel]]: [[Relic Citadel/Floor 6|Floor 6]] (100%)
+*[[Otherworld Colosseum#Trust Fund|Otherworld Colosseum]]: [[Round 5 (Trust Fund)|Round 5]] (100%)
+*[[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]: [[Round 3 (Pay Day)|Round 3]] (100%)
+*[[Otherworld Colosseum#Half-Off+: Special|Otherworld Colosseum]]: [[Round 4 (Half-Off+: Special)|Round 4]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Relic Bun-Bun
+|Health = 3000000
+|Attack Power = 11111
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 13
+|Knockback = 5
+|Foreswing = 10
+|Backswing = 6
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~300)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub>
+|Element = Relic
+}}
+
+{{UnitViewer|enemy}}
+
+==Existence Elsewhere==
+===Nyanko Defence Force===
+In [[Nyanko Defence Force]], Relic Bun-Bun had multiple new variants that could be fought as Raid Bosses.
+{| style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid;width:100%;" cellspacing="0" cellpadding="1"
+|-
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" | [[File:NDFRelicBunBun.png|center|130px]]
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" | [[File:Lava Relic Bun Bun.PNG|center|100px]]
+| style="padding:2px;border-bottom:1px solid #ddd" | [[File:relic umbral bun bun.png|center|100px]]
+|-
+| style="width:20%;padding:2px;border-bottom:1px solid #ddd;border-right:1px solid #ddd; text-align:center" | General Relic Bun-Bun<br>(古代の　大将 ぶんぶん先生)
+| style="width:20%;padding:2px;border-bottom:1px solid #ddd;border-right:1px solid #ddd; text-align:center" | Lava Relic Bun-Bun
+| style="width:20%;padding:2px; text-align:center" | Umbral Relic Bun-Bun<br>(古代 闇 ぶんぶん先生)
+|}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+406 e.png|Relic Bun-Bun's spritesheet
+Green teacher.gif|Relic Bun-Bun's animations
+</gallery>
+
+==Trivia==
+*Relic Bun-Bun's description is accurate to its debut. It is stated to be a guardian of the realm of the [[:Category:Relic Enemies|ancients]], and it appears in the first [[Uncanny Legends]] stage, [[An Ancient Curse]]. The description also references cats that are [[Immune to Curse]], specifically the [[Stories of Legend]] [[Mythic Cat]]s that gain [[True Form]]s after beating [[Eldritch Forces]].
+*Relic Bun-Bun, the first boss of Uncanny Legends, has several similarities to [[Zero Luza]], the final boss of Uncanny Legends. Both are ancient guardians that have Omni Strike and attack with their fists, both are variants of the bosses preceding them (Relic Bun-Bun is a variant of [[Mecha-Bun (Enemy)|Mecha-Bun]], Zero Luza is a variant of [[Great Ape Luza]]), and both attack "mercilessly" (though their Japanese descriptions use different words for "merciless": 容赦なく ''yōshanaku'' and 無慈悲 ''mujihi'', respectively).
+*Relic Bun-Bun and [[Xenobeast Bunaglios]] are the only variants of [[Teacher Bun Bun]] that don't have the [[:Category:Floating Enemies|Floating]] trait.
+
+==Reference==
+*https://battlecats-db.com/enemy/408.html
+
+----
+{{EnemyNav|Mecha-Bun|Relic Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Relic Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Curse ability]]

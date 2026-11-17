@@ -1,0 +1,28 @@
+{{#invoke:Navbox|main
+|template = Template:Godzilla
+|title = [[Godzilla Collaboration Event]]
+|navbox_class = godzilla
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Godzilla Cat (Rare Cat)|Godzilla Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Shin Godzilla]]
+
+|header3 = Stages
+|group3 = Godzilla: Final Assault
+|list3 =
+*[[God of Destruction (Merciless)]]
+
+|group4 = Godzilla vs Cats
+|list4 =
+*[[The Leviathan Rises]]
+*[[Disaster Response HQ]]
+*[[Climactic Cat Clash]]
+}}<templatestyles src="Godzilla/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Godzilla]]}}<noinclude>[[Category:Navboxes]]</noinclude>

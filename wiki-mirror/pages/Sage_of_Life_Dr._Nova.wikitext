@@ -1,0 +1,98 @@
+:''This article is about the enemy. For the Cat Unit, see [[Master of Life Dr. Nova (Special Cat)]].''
+'''Sage of Life Dr. Nova''' (生命の賢者Dr.ノーヴァ, ''Seimei no Kenja Dr. Nōva'', '''Sage of Life Dr. Nova''') is a [[:Category:Relic Enemies|Relic]]/[[:Category:Sage Enemies|Sage]] enemy found in the [[Revival of Origin/Invasion|Revival of Origin Invasion]] which appears after clearing all [[Uncanny Legends]] sub-chapters on 4-Crown difficulty. Completing the stage will unlock Dr. Nova's [[:Category:Mythic Cats|Mythic Cat]] counterpart, [[Master of Life Dr. Nova (Special Cat)|Master of Life Dr. Nova]]. She was added in [[Version 13.7 Update|Version 13.7]].
+
+{{Enemy Info
+|name = Sage of Life Dr. Nova
+|image = E 699.png
+|first appearance = '''UL: [[Revival of Origin/Invasion|Sub-chapter 49 - Revival of Origin Invasion]]
+|money drop = 9,999¢ - 39,496¢
+}}
+
+==Enemy==
+The true final boss of Uncanny Legends, Dr. Nova has an immense 5 million HP and massively damaging Long Distance attacks that are guaranteed to Slow and Curse targets hit, albeit with a blind spot that permits melee units to attack unopposed. As if that weren't enough, each hit also produces an [[Explosion]] that can more than triple her already high damage, extend the duration of her debuffs, and greatly expand her attack area, with the blast being wide enough to pierce into her own blind spot and destroy everything there even if she doesn't directly hit them. In addition, the debuff resistances granted by her Sage type make her considerably harder to push back or stall with [[:Category:Anti-Relic Cats|anti-Relic units]] like the [[:Category:Mythic Cats|Mythic Cats]].
+
+==Strategy==
+:''See [[Revival of Origin/Invasion]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 699
+|Type = [[:Category:Relic Enemies|Relic]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 699.png
+|Name1 = Sage of Life Dr. Nova
+|Desc1 = The result of an ancient scientist's work to<br>create a super-being to surpass humanity.<br>After guiding the Cats to another dimension,<br>their ego was consumed by a strange crystal.
+|Name1 (JP) = 生命の賢者Dr.ノーヴァ (Seimei no Kenja Dr. Nōva, Sage of Life Dr. Nova)
+|Desc1 (JP) = 人類を超える完全な生命の創造を目指し<br>太古の世界へ渡った研究者の成れの果て。<br>にゃんこ軍団を異次元へと導いた後、<br>研究中の結晶に自我を奪われてしまった。
+|Transl1 (JP) = A wreck of her former self. This researcher<br>came to the ancient world aiming to create perfect life surpassing humanity.<br>After guiding the Cat Army to another dimension,<br>she lost her ego to the crystal in her studies.
+|Name1 (TW) = 生命賢者Dr. 諾瓦
+|Desc1 (TW) = 為了創造超越人類的完美生命，<br>前往古代世界的研究者的最後模樣。<br>將貓咪軍團引導至異次元之後，<br>被研究中的結晶奪去了自我意識。
+|Name1 (KR) = 생명의 현자 Dr.노바
+|Desc1 (KR) = 인류를 뛰어넘는 완전한 생명의 창조를 목표로<br>태고의 세계로 떠난 연구자의 말로.<br>냥코 군단을 이차원으로 인도한 후<br>연구 중이던 결정에 자아를 빼앗겨 버렸다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 49-IN: [[Revival of Origin/Invasion|Revival of Origin Invasion]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sage of Life Dr. Nova
+|Health = 5000000
+|Attack Power = 99999
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 219
+|Movement Speed = 7
+|Knockback = 8
+|Foreswing = 60
+|Backswing = 71
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~650)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 999f <sub>33.3 seconds</sub><br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 350 range
+|Element = Relic/Sage
+}}
+
+{{UnitViewer|enemy|bg=Bg227.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+699 e.png|Sage of Life Dr. Nova's spritesheet
+Medal 118.png|Sage of Life Dr. Nova on the ''Lifeform's Mysterious Attack'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*''Nova'' is an astronomical term for a star that suddenly becomes much brighter and then returns to its original luminosity over a period of time. ''Nova'' is also the feminine form of the Latin word ''novus'', meaning "new".
+*She may be based on various plant-related mythical humanoids such as the [[wikipedia:Dryad|dryad]], [[wikipedia:Hamadryad|hamadryad]] and [https://www.dandwiki.com/wiki/Alraune_(5e_Race) alraune].
+*She may be the ancient god from the [[Uncanny Legends]] ending, as she appears in [[Sacred Forest]] and her description states that she guided the Cat Army to another dimension, while the Uncanny Legends ending states that an ancient god appeared from a golden tree and told the Cat Army to find a [[:Category:Sage Enemies|Sage]] in another world.
+*Since her description says she wants to create perfect life, Dr. Nova is likely the master of [[Idi:Ne]], whose own Japanese description says her master's wish for the birth of perfect life is close to being realized.
+**It is also implied that she had some involvement in the [[Laboratory of Relics]], and thus, every [[:Category:Colossus Enemies|Colossus]] enemy besides [[Zero Luza]].
+*"The result of an ancient scientist's work to create a super-being to surpass humanity" appears to be a mistranslation. 成れの果て ''narenohate'' is an expression referring to the mere shadow of one's former self or the ruin of what one once was, but on its own, 果て ''hate'' means "end" or result", which may be what led to the confusing English localization. Since she has "Dr." in her name and is referred to as a researcher in her allied forms' descriptions, it's likely that Dr. Nova herself is a ruined scientist who worked to create a super-being (implied to be Idi:Ne), rather than being a separate scientist's creation.
+*She is the first enemy to have the [[Explosion]] ability.
+*She is the only Sage enemy to appear in Uncanny Legends.
+*She has the highest health out of any [[:Category:Relic Enemies|Relic]] and tied with [[Sage of Selection Darvin]] for the highest health for any [[:Category:Sage Enemies|Sage]] enemy, and the third highest health of all enemies, behind [[Malevolent Eraser Cat]] and [[Nutcracker Witch (Enemy)|Nutcracker Witch]].
+*She has a lower ID than Idi:Ne despite requiring more progress to encounter.
+
+==Reference==
+*https://battlecats-db.com/enemy/701.html
+
+----
+{{EnemyNav|Oldstrich|Idi:Ne}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Explosion Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Mythic Bosses]]

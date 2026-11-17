@@ -1,0 +1,120 @@
+'''Paperboy Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by beating the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] [[Invasion of Poultrio]] appearing on the '''1st''', '''2nd''', '''15th''' and '''16th''' days of every month. He was added in [[Version 15.2 Update|Version 15.2]].
+
+{{Cat Info
+|ID = 851
+|rarity = RR
+|name1 = Paperboy Cat
+|name2 = Bargain Cat
+}}
+
+==Evolution==
+Evolves into '''Bargain Cat''' at level 10.
+
+==Strategy/Usage==
+A fantastic [[Long Distance]] midrange rusher, boasting [[Insane Damage]] against [[:Category:Relic Enemies|Relic]] and [[:Category:Aku Enemies|Aku]]. Think of Paperboy Cat as a sort of [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] against his targets, rushing in to do sizable damage, especially if both hits connect—which they often will! Against targets at Lv.50, Bargain Cat does upwards of ''67,500 damage per attack cycle'', or ''14,780 effective DPS'', which is over two times higher than [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]' at equal levels VS. Relics, and for a much lower cost. Because of this, it's worthwhile to stack him as much as you can if a stage allows it. Spammable attackers against Aku are few and far between, with his only rivals being [[Nymph Cat (Super Rare Cat)|Fiend Cat]] and [[Ancient Egg: N006 (Special Cat)|Fallen Bear Cat]], units lacking viability either through irrelevant crowd-control or extremely impractical applicability respectively.
+
+Just as much Paperboy Cat's damage, his high range is immensely valuable for such a spammable rusher, especially in {{4c}} settings where not even [[Condemned Peng]]s or [[M. Ost]]s can hope to reach them. [[Immune to Surge|Immunity to Surge]] gives them good matchups VS. most Aku, and even facilitates usage against the [[Surge Base (Enemy Base)|Surge Base]] or as a generalist unit against enemies like [[St. Dober]]. While his damage against non-targets is on the lower side, he makes up for it through sheer versatility, and is a worthwhile reward for slaying the [[Poultrio|three-headed beast]].
+
+{{Job|Classification = Rusher & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 851
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni851 f00.png
+|Image2 = Uni851 c00.png
+|Name1 = Paperboy Cat
+|Desc1 = Delivers news and dread to those who stayed up all night.<br>The faint hum of the engine is the sound of a ruined sleep<br>schedule. Insane damage vs. Aku and Relics.(Long-Range/Area)
+|Name2 = Bargain Cat
+|Desc2 = A legendary shopper who appears at every flash sale. Rides<br>the bike directly through the store aisles to grab deals<br>first. Insane damage vs. Aku and Relics.(Long-Range/Area)
+|Name1 (JP) = ネコ新聞 (Neko Shinbun, Newspaper Cat)
+|Desc1 (JP) = 夜更かしした者に朝の訪れをお知らせするネコ<br>かすかに聞こえるエンジン音は絶望を与える<br>古代種と悪魔に極ダメージを与える(遠方範囲)
+|Transl1 (JP) = A Cat who announces the arrival of morning to those who stayed up late<br>The faint sound of his engine brings despair<br>Deals extreme damage to Ancient Species and Devils (Long Distance Area)
+|Name2 (JP) = ネコセール (Neko Sēru, Sale Cat)
+|Desc2 (JP) = 特売セールがあると必ず現れる伝説のネコ<br>バイクのまま店内を駆け抜けて買い物を済ませる<br>古代種と悪魔に極ダメージを与える(遠方範囲)
+|Transl2 (JP) = Legendary Cat who always appears during special sales<br>Quickly rides through stores on a motorcycle to finish shopping<br>Deals extreme damage to Ancient Species and Devils (Long Distance Area)
+|Name1 (TW) = 送報貓
+|Desc1 (TW) = 向熬夜的人宣告早晨來臨的貓咪<br>若有似無的引擎聲讓人充滿絕望<br>給予古代種與惡魔極度傷害(遠距範圍攻擊)
+|Name2 (TW) = 特賣貓
+|Desc2 (TW) = 一有特賣活動就一定會出現的傳說貓咪<br>會騎著摩托車衝進賣場穿梭並完成購物<br>給予古代種與惡魔極度傷害(遠距範圍攻擊)
+|Name1 (KR) = 고양이 신문
+|Desc1 (KR) = 밤을 샌 이들에게 아침이 왔음을 알리는 고양이<br>어렴풋이 들리는 엔진 소리가 절망을 선사한다<br>고대종과 악마에 극 데미지를 입힌다 (원거리 범위공격)
+|Name2 (KR) = 고양이 세일
+|Desc2 (KR) = 세일을 하는 곳에는 반드시 나타난다는 전설의 고양이<br>스쿠터를 탄 채 건물 안을 달리며 장을 본다<br>고대종과 악마에 극 데미지를 입힌다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Paperboy Cat
+|Normal Base HP = 780
+|Normal Base AP = 250,250
+|Normal Range = 330
+|Normal Foreswing = 15,50
+|Normal Attack Cooldown = 87
+|Normal Attack Length = 91
+|Normal Speed = 25
+|Normal KB = 2
+|Normal Cost = 500
+|Normal Recharge = 500
+|Normal Attack Type = Area
+|Normal Targets = Relic,Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 15f <sup>0.5s</sup>, 4,250 at 50f <sup>1.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~331 on 1st hit, 230~430 on 2nd hit)<br>
+{{AbilityIcon|Insane Damage}} Deals [[Insane Damage|insane damage]] to target traits<br>
+{{AbilityIcon|Immune to Curse|Immune to Surge}} [[Immune to Curse]] and [[Immune to Surge|Surge]]
+|Evolved Name = Bargain Cat
+|Evolved Base HP = 780
+|Evolved Base AP = 250,250
+|Evolved Range = 330
+|Evolved Foreswing = 15,50
+|Evolved Attack Cooldown = 87
+|Evolved Attack Length = 91
+|Evolved Speed = 25
+|Evolved KB = 2
+|Evolved Cost = 500
+|Evolved Recharge = 500
+|Evolved Attack Type = Area
+|Evolved Targets = Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 15f <sup>0.5s</sup>, 4,250 at 50f <sup>1.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~331 on 1st hit, 230~430 on 2nd hit)<br>
+{{AbilityIcon|Insane Damage}} Deals [[Insane Damage|insane damage]] to target traits<br>
+{{AbilityIcon|Immune to Curse|Immune to Surge}} [[Immune to Curse]] and [[Immune to Surge|Surge]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni851 f00}}
+
+==Trivia==
+*Paperboy Cat was first made obtainable in [[Nyanko Daisensou|BCJP]] on February 27th, 2026.
+*Paperboy Cat is the only [[:Category:Advent Stages#Great Advent Stages|Great Advent]] drop to not have a Slayer ability.
+
+==Reference==
+*https://battlecats-db.com/unit/852.html
+
+----
+{{CatNav|Fuma Kotaro|Killer Cowbird Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Insane Damage ability]]
+[[Category:Cats with Surge Immunity]]

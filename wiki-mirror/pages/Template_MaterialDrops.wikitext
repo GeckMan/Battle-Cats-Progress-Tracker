@@ -1,0 +1,17 @@
+<includeonly><onlyinclude>{{{noheading|===Max Drop Counts===}}}
+{{#invoke:MaterialDrops|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template is meant to be used alongside [[Template:MaterialRates]]. Data comes from DropItem.csv.
+
+==Parameters==
+This parameter takes 12 unnamed parameters and 3 named ones. The first 4 unnamed parameters specify the factor to multiply by in each crown difficulty, and the remaining 8 are max drop counts per stage. <code>crowns</code> and <code>stages</code> each specify the number of available crowns and stages in the subchapter respectively. <code>noheading</code> hides the heading automatically included in this template if anything is passed to it.
+
+==Usage==
+<pre>
+{{MaterialDrops|0.75|1|1.25|1.25|3|3|3|3|3|4|4|4|crowns=3|stages=6|noheading=}}
+</pre>
+
+===Result===
+{{MaterialDrops|0.75|1|1.25|1.25|3|3|3|3|3|4|4|4|crowns=3|stages=6|noheading=}}
+
+[[Category:Content templates]]

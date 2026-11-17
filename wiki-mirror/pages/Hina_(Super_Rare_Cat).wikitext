@@ -1,0 +1,124 @@
+{{Unobtainable}}
+'''Hina''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was introduced in [[Version 8.7 Update|Version 8.7]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Princess Punt Sweets Collaboration Event]].
+
+{{Cat Info
+|ID = 486
+|rarity = SR
+|name1 = Hina
+|name2 = Swordswoman Hina
+}}
+
+==Evolution==
+Evolves into '''Swordswoman Hina'''  at level 10.
+
+==Strategy/Usage==
+Hina attempts to excuse her underwhelming stats and range with a lengthy level five [[Wave Attack|wave attack]], which is longer than that of [[Crazed Gross Cat (Super Rare Cat)|Crazed Gross Cat]] and even its [[True Form]]. However, Crazed Gross remains a better option. Even though Hina has better cooldown, Crazed Gross has better range and 3.5x more DPS, making a stack of them stronger and more sustainable against longer-ranged enemies. Hina's wave length remains uncontested despite this and can (albeit quite slowly) chip at faraway backliners or further-back peons that Crazed Gross/Manic Macho legs may not reach. This changes when the player obtains [[Hermit Cat (Special Cat)|Masked Grandmaster Cat]]. While Grandmaster also has higher cooldown, he boasts nearly the same range and wave length but has far greater DPS and HP as well as [[Area Attack]] and the ability to be used in 4 crown [[Legend Stages]]. Where you can use Hina, you can use Masked Grandmaster Cat with greater impact on the battle.
+
+{{Job|Classification = Waver}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 486
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni486 f00.png
+|Image2 = Uni486 c00.png
+|Name1 = Hina
+|Desc1 = Hero joining from Princess Punt Sweets.<br>Guardian blade of the four Alaquartet Sisters.<br>100% chance of Wave Attack.
+|Name2 = Swordswoman Hina
+|Desc2 = Hero joining from Princess Punt Sweets.<br>Well-liked hard worker with good social skills.<br>100% chance of Wave Attack.
+|Name1 (JP) = ひな (Hina)
+|Desc1 (JP) = ケリ姫スイーツに登場するキャラクター<br>アラカルテット四姉妹に仕えていた女剣士<br>必ず波動を放つ
+|Transl1 (JP) = A character that appears in Princess Punt Sweets<br>A female swordswoman who served four sisters<br>Always creates a Wave
+|Name2 (JP) = 剣士ひな (Kenshi Hina, Swordswoman Hina)
+|Desc2 (JP) = ケリ姫スイーツに登場するキャラクター<br>働き者で人当りが良く、みんなの人気者<br>必ず波動を放つ
+|Transl2 (JP) = A character that appears in Princess Punt Sweets<br>Hard worker, good per capita, popular with everyone<br>Always creates a Wave
+|Name1 (TW) = 姬娜
+|Desc1 (TW) = 公主踢騎士Sweets中出現的角色<br>曾侍奉阿拉卡爾媞特四姊妹的女劍士<br>必定能發射波動
+|Name2 (TW) = 劍士姬娜
+|Desc2 (TW) = 公主踢騎士Sweets中出現的角色<br>工作熱心且對人親切，相當受大家歡迎<br>必定能發射波動
+|Name1 (KR) = 히나
+|Desc1 (KR) = 발차기 공주 돌격대에 등장하는 캐릭터<br>아라 콰르텟 네자매를 섬기던 여검사<br>반드시 파동을 낸다
+|Name2 (KR) = 검사 히나
+|Desc2 (KR) = 발차기 공주 돌격대에 등장하는 캐릭터<br>성실하고 성격이 좋아 인기가 많다<br>반드시 파동을 낸다
+}}
+
+==Cost==
+*Chapter 1: 480¢
+*Chapter 2: 720¢
+*Chapter 3: 960¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hina
+|Normal Base HP = 1170
+|Normal Base AP = 100
+|Normal Range = 275
+|Normal Foreswing = 32
+|Normal Attack Cooldown = 147
+|Normal Attack Length = 91
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 480
+|Normal Recharge = 1200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Wave Attack}} 100% chance to create a level 5 [[Wave Attack]]
+|Evolved Name = Swordswoman Hina
+|Evolved Base HP = 1560
+|Evolved Base AP = 125
+|Evolved Range = 275
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 147
+|Evolved Attack Length = 91
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 480
+|Evolved Recharge = 1200
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Wave Attack}} 100% chance to create a level 5 [[Wave Attack]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,170 HP
+|val-Normal-Attack Power = 100 damage<br>(16.76 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 32f <sup>1.07s</sup><br>(59f <sup>1.97s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 19,890 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(284.92 DPS)
+|val-Evolved-Health = 26,520 HP
+|val-Evolved-Attack Power = 2,125 damage<br>(356.15 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 32f <sup>1.07s</sup><br>(59f <sup>1.97s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni486 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/487.html
+
+----
+{{CatNav|Calette|EVA Unit-08}}
+----
+
+{{Princess Punt}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Wave Attack Cats]]
+[[Category:Collaboration Event Cats]]

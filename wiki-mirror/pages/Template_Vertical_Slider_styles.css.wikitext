@@ -1,0 +1,65 @@
+.slides-frame {
+	border: 6px solid white;
+	box-shadow: 1px 1px 4px black;
+	width: 98%;
+	border-radius: 10px;
+	max-width: 640px;
+	height: 360px;
+	overflow: hidden;
+	position: relative;
+	margin: 8px auto;
+}
+.slides {
+	animation: slideUp 15s alternate infinite;
+	position: relative;
+}
+.slide {
+	width: 640px;
+	height: 360px;
+	font-size: 0;
+}
+.slide-1 {
+	background-image: url("https://static.miraheze.org/battlecatswiki/8/89/Site-community-image.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.slide-2 {
+	background-image: url("https://static.miraheze.org/battlecatswiki/3/3a/Announce1.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.slide-3 {
+	background-image: url("https://static.miraheze.org/battlecatswiki/2/24/Announce2.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.slide-4 {
+	background-image: url("https://static.miraheze.org/battlecatswiki/f/f7/Announce3.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.slide-5 {
+	background-image: url("https://static.miraheze.org/battlecatswiki/4/4f/Announce4.png");
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
+@keyframes slideUp {
+	0% { bottom: 0; }
+	15% { bottom: 0; }
+	20% { bottom: 360px; }
+	35% { bottom: 360px; }
+	40% { bottom: 720px; }
+	55% { bottom: 720px; }
+	60% { bottom: 1080px; }
+	75% { bottom: 1080px; }
+	80% { bottom: 1440px; }
+	100% { bottom: 1440px; }
+}
+
+/* [[Category:Template stylesheets]] */

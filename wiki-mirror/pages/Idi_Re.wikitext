@@ -1,0 +1,108 @@
+:''This article is about the enemy. For the Cat Unit, see [[Idi:N (Special Cat)]].''
+:''For the form that appears in the [[The Face of God/Invasion|The Face of God Invasion]], see [[Idi:Ne]].''
+'''Idi:Re''' (イディ:Re, '''''Idi:Re''''') is a [[:Category:Relic Enemies|Relic]] enemy found in the [[Eldritch Forces/Invasion|Eldritch Forces Invasion]] which appears after clearing all [[Stories of Legend]] sub-chapters on 4-Crown difficulty. Completing the stage will unlock Idi:Re's [[:Category:Mythic Cats|Mythic Cat]] counterpart, [[Idi:N (Special Cat)|Idi:N]]. She was added in [[Version 9.9 Update|Version 9.9]].
+
+{{Enemy Info
+|name = Idi:Re
+|image = E 526.png
+|appearance = '''SoL''': [[Eldritch Forces/Invasion|Sub-chapter 49 - Eldritch Forces Invasion]]
+|money drop = 9,000¢ - 35,550¢
+}}
+
+==Enemy==
+She has extreme health, damage and movement speed, with [[Omni Strike]] attacks that extend past her surprisingly short standing range. Her attack power doubles at 50% HP, though she could already OHKO most units even pre-strengthen, so you can use the strengthen as an indicator to see how close she is to death. She has 33 knockbacks and a long backswing which makes her reasonably easy to stall when by herself, but once a peon gets in the way, she's sure to move forward. Because of her high movement speed, close range and instant retaliation after a knockback, she will often be uncomfortably close to the [[Cat Base]]. However, the main difficulty of her stage comes from the peons and 4-Crown restrictions found within it.
+
+Despite appearing to levitate, she's not a [[:Category:Floating Enemies|Floating]] enemy, as stated in her description.
+
+==Strategy==
+:''See [[Eldritch Forces/Invasion]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 526
+|Type = Relic
+|Image1 = Enemy icon 526.png
+|Name1 = Idi:Re
+|Desc1 = Subject 002   (Paleobacterial Lifeform)<br>Combat Potential: Immeasurable.<br>Despite appearance, Floating trait not present<br>Output corresponds to weakened capacity
+|Name1 (JP) = イディ:Re (Idi:Re)
+|Desc1 (JP) = 検体No.002　状態：良好　古ノ微生物検出<br>戦闘エネルギー値：計測不能<br>浮遊確認スルモ浮イテル敵ニ該当セズ<br>キャパシティ低下デ出力上昇傾向アリ
+|Transl1 (JP) = Specimen No.002. Condition: Good. Paleobacteria detected.<br>Combat energy: Immeasurable.<br>Levitation confirmed, but isn't a Floating enemy.<br>Power output tends to increase as capacity is decreased.
+|Name1 (TW) = 異弟:Re
+|Desc1 (TW) = 檢體No.002　狀態：良好　古微生物檢出<br>戰鬥能量值：無法計測<br>確認為浮游但不列為飄浮敵人<br>能量下降時攻擊會有上升傾向
+|Name1 (KR) = 이디:Re
+|Desc1 (KR) = 검체No.002, 상태: 양호, 고대 미생물 검출<br>전투 에너지: 계측 불가<br>떠있는 것으로 확인되나 떠있는 적에 해당하지 않음.<br>능력 저하로 출력 상승 경향 있음
+}}
+
+==Variants==
+{{Variant
+|original = Idi:Re
+|Idi:Ne
+|A much weaker Idi:Re that has 1/6 as much health, half the attack power and no Strengthen ability, but is immune to [[Wave Attack|Waves]] and [[Surge Attack|Surges]]. After clearing [[Eldritch Forces/Invasion|Eldritch Forces Invasion]] and [[Revival of Origin]], she appears in [[The Face of God]], spawning countless times throughout its [[The Face of God/Invasion|Invasion stage]].
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Stories of Legend]]===
+*Stage 49-IN: [[Eldritch Forces/Invasion|Eldritch Forces Invasion]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Idi:Re
+|Health = 3333333
+|Attack Power = 99999
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 141
+|Movement Speed = 44
+|Knockback = 33
+|Foreswing = 4
+|Backswing = 137
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~300)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 600f <sub>20 seconds</sub>
+|Element = Relic
+}}
+
+{{UnitViewer|enemy|bg=Bg138.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+526 e.png|Idi:Re's spritesheet
+Legendmap anim000.png|Idi:Re in Eldritch Forces Invasion's map spritesheet
+green flying white thing.gif|Idi:Re's animations
+</gallery>
+
+==Trivia==
+*The name Idi may be derived from ''ID'', ''[[wikipedia:Id, ego and superego|id]]'', ''[[wikipedia:Eden|Eden]]'', 遺伝 ''iden'' (genetic heredity), アイディア ''aidia'' (idea), アイディアル ''aidiaru'' (ideal), or アイディリック ''aidirikku'' (idyllic).
+*"Re" may stand for ''[[:Category:Relic Enemies|Relic]]'', ''ready'' (referring to her high movement speed and attack speed), ''repeat'' (as in "repeat of [[Idi:Ne]]", which would imply that Ne came before Re chronologically), ''retaliate'' (referring to how she can immediately strike again after a knockback), or レジェンド ''rejendo'' (legend).
+*Her gender is confirmed by the description of the ''Elder Annihilator'' [[Meow Medals|Meow Medal]]: "Defeat Idi:Re and clear her stage."
+*While Idi:Re's description states that she is Subject 002 (検体No.002, "Specimen No.002" in Japanese), the identity of Subject 001 is unknown. It may be:
+**[[Relic Doge]], the only other [[:Category:Relic Enemies|Relic]] to appear in the [[Laboratory of Relics]].
+**[[Ancient Egg: N001 (Special Cat)|Ancient Egg: N001]], which would imply that Idi:Re hatched from the missing Ancient Egg: N002.
+**[[Gigahaniwan]], as it is a Relic enhanced through genome editing in the Laboratory of Relics (though it does not appear there), while Idi:Re is also a Relic and may have been created synthetically.
+*In Japanese, Idi:Re and Idi:Ne have very different descriptions from other enemies, using exclusively kanji and katakana, even for words that would normally be spelled using hiragana.
+*She and Relic Doge are the only Relic enemies to appear in [[Stories of Legend]], both in the [[Eldritch Forces/Invasion|Eldritch Forces Invasion]].
+*She has the second-highest attack power and money drop of any Relic enemy, only beaten by [[Zero Luza]]. She is also tied with [[Idi:Ne]] for the highest movement speed of all Relic enemies.
+*Idi:Re, [[Ghost Doge]], [[Ghost Snache]], [[Ghost Baa Baa]] and [[Angel Fanboy]] are the only enemies in Stories of Legend that do not appear in Uncanny Legends.
+**Idi:Re is the only one that was not introduced in an event stage.
+
+==Reference==
+*https://battlecats-db.com/enemy/528.html
+
+----
+{{EnemyNav|Super Hyppoh|Zollow}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Relic Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Mythic Bosses]]

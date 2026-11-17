@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Snache|Squire Rel|White Wind|Sir Seal|Le'boin}}
+'''Torrential Rain''' is the only stage in [[Summer Break Cats Castaway#Unprecedented Forecasts|Unprecedented Forecasts]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc008.png]]
+[[File:Mapsn405 00 s en.png]]
+|stage location = [[File:Mapname405 s en.png]]
+|energy = 150
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Snache|150%
+|Squire Rel|150%
+|White Wind|100%
+|Sir Seal|150%
+|Le'boin|150%}}
+|treasure = - [[Summer Break Cats Castaway (Event Gacha)|Legend Trap]] +2 (100%, unlimited)
+|restriction = [[No Continues]]
+|XP = 4,500 XP
+|width = 4,600
+|max enemies = 20
+|jpname = Torrential Rain
+|script = 豪雨発生
+|romaji = Goū Hassei
+|star = 1
+|event-chapter = [[Summer Break Cats Castaway#Unprecedented Forecasts|Unprecedented Forecasts]]
+|max clears = 1
+|difficulty = ★3
+|prev stage = N/A
+|next stage = [[Thunderstorm Warning]] (''Continuation Stage'')
+}}
+
+==Battleground==
+*Infinite [[Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*5 [[White Wind]]s spawn after 16.67 seconds<sup>500f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*3 [[Sir Seal]]s spawn after 26.67 seconds<sup>800f</sup>, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+*1 [[Le'boin]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*2 [[White Wind]]s spawn after 60 seconds<sup>1,800f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Walkthrough==
+{{Walkthrough
+|KwM703OznSY|Novatrala|
+}}
+
+==Trivia==
+*Prior to [[Version 15.3 Update|Version 15.3]], the stage width was set to 4,500. The change was made because of a bug in how [[:Category:Animated Enemy Bases|Animated Bases]] spawn when not set as bosses.
+
+==Reference==
+*https://battlecats-db.com/stage/s01405-01.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

@@ -1,0 +1,52 @@
+{{#invoke:Navbox|main
+|template = Template:Pac-Man
+|title = [[PAC-MAN Collaboration Event]]
+|navbox_class = pac-man
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[PAC-MAN (Special Cat)|PAC-MAN]]
+*[[Blinky Cat (Special Cat)|Blinky Cat]]
+*[[Inky Cat (Special Cat)|Inky Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Inky Doge]]
+*[[Clyde Gory]]
+*[[Pinky Bear]]
+*[[Blinky Kory]]
+*[[Giant PAC-MAN]]
+*[[Cherries (Enemy Base)]]
+
+|header3 = Stages
+|group3.1 = PAC-MAN Arrives!
+|list3.1 =
+*[[Pac-Dots in the Maze]]
+*[[Bellyful of Pac-Dots]]
+*[[Dodge Them Ghosts]]
+*[[High Score Fruit]]
+*[[Power Pellet Comeback]]
+*[[Ghosts on the Run]]
+*[[256 Levels to Victory]]
+
+|group3.2 = PAC-MAN & Cat
+|list3.2 =
+*[[Objects in Motion]]
+*[[Warp Tunnel's End]]
+*[[Get those Ghosts]]
+*[[A Straight Line's Beauty]]
+*[[The Hunt for Power Pellets]]
+*[[Endless Scavenging]]
+*[[Face the Threat]]
+*[[Invitation to a High Score]]
+*[[Pac-Dots or Cat Food?]]
+*[[Fit to Burst]]
+
+|group3.3 = [[Giant PAC-MAN Strikes!]]
+|list3.3 =
+*[[Giant PAC-MAN Strikes!/ROUND 1~10|ROUND 1~10]]
+}}<templatestyles src="Pac-Man/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Pac-Man]]}}<noinclude>[[Category:Navboxes]]</noinclude>

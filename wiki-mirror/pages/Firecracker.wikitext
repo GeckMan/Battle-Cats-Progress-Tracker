@@ -1,0 +1,96 @@
+'''Firecracker''' (花火玉, ''Hanabidama'', '''Firework Ball''') is a [[:Category:Red Enemies|Red]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 11.2 Update|Version 11.2]].
+
+{{Enemy Info
+|name = Firecracker
+|image = E 598.png
+|appearance = [[Festival Cats: Lunar New Year's]]<br>
+[[Monthly Event All-Stars Grateful Gathering]]
+|money drop = 150¢ - 593¢
+}}
+
+==Enemy==
+This enemy has rather low health and attack power, even at high magnifications. Combined with its abysmal range, its only purpose is to temporarily knockback and slow a few meatshields that happened to be on the frontlines. Notably, however, its attack covers an area double the size of its attack range, meaning it will always be able to hit a few meatshields or other short-ranged cats ahead of its target.
+
+==Strategy==
+It generally isn't much of a threat as its overall stats are simply ignorable.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[New Year's Bling]]: [[Lucky! New Year's Loot!]] (400%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2022 Debut]] (9,000%)
+*[[Lunar New Year Sale Scuffle]]: [[Spendy Postage]] (7,500%)
+*[[Festival Cats: Lunar New Year's]]:
+**[[Lunar New Year Already?]] (60%)
+**[[Flashy Fireworks Display]] (60%)
+**[[Cast Out Evil with a Bang]] (100%)
+**[[Begging for Gifts]] (100%)
+**[[Pray for Long Life]] (100%, 400%)
+**[[Acrobatic Lion Dance]] (400%)
+**[[Decorate for Luck]] (400%)
+**[[Auspicious Red Lantern]] (800%)
+**[[Stuffed with Dumplings]] (1,500%)
+**[[Long Road Home]] (100%, 6,000%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.1]] (100%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.2]] (200%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 3~4|Grateful XP Lv.3]] (400%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 3~4|Grateful XP Lv.4]] (800%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 5~6|Grateful XP Lv.5]] (1,500%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 5~6|Grateful XP Lv.6]] (3,000%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.7]] (4,500%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 7~8|Grateful XP Lv.8]] (6,000%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.9]] (7,500%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.MAX]] (9,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Firecracker
+|Health = 500
+|Attack Power = 50
+|Attack Range = 75
+|Attack Type = Area
+|Time Between Attacks = 85
+|Movement Speed = 20
+|Knockback = 1
+|Foreswing = 8
+|Backswing = 77
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 30f <sub>1 second</sub>
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor = transparent>
+598 e.png|Firecracker's spritesheet
+Battle soul 017.png|Firecracker's death spritesheet
+IdleFirework.gif|Firecracker's animations
+FireworkAnimation.gif|Firecrackers creating a firework display
+</gallery>
+
+==Trivia==
+*This enemy is based off of the Yonshakudama firework shell, which broke a record for the largest firework shell in the world.
+**This is also shown with its death animation which creates a huge firework.
+*Firecracker, [[Super Metal Hippoe]] and [[Metafilibuster (Enemy)|Metafilibuster]] are the only enemy units whose knockback animations have multiple frames.
+**[[Dark Emperor Nyandam]], [[Director Kurosawah]], [[Skelecat (Enemy)|Skelecat]], [[Gato Amigo (Enemy)|Gato Amigo]], [[Manic Lion Cat (Enemy)|Manic Lion Cat]] and [[The 9th Angel (Enemy)|The 9th Angel]] are all internally set to have knockback animations that last more than 1 frame, however they still remain static when knocked back.
+
+==Reference==
+*https://battlecats-db.com/enemy/600.html
+
+----
+{{EnemyNav|Emilia & Doge|Ultima Beast Naala}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with unique death animations]]

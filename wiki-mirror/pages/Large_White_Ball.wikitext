@@ -1,0 +1,94 @@
+'''Large White Ball''' (大玉 (白) ''Ōdama (Shiro)'', '''Large Ball (White)''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Large White Ball
+|image = E 576.png
+|appearance = [[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]<br>
+[[New Year's Bling]]<br>
+[[Infernal Tower/Floor 6|Infernal Tower - Floor 6]]
+|money drop = 50¢ - 197¢
+}}
+
+==Enemy==
+By itself this enemy is quite weak, but when it starts appearing in huge groups, it's not as easy. Its Freeze can be very annoying, though it won't hit much besides the meatshields.
+
+==Strategy==
+The best way to deal with huge groups of these enemies is by using [[:Category:Area Attack Cats|Area Attackers]] with over 200 range, such as [[Figure Skating Cats (Super Rare Cat)|Figure Skating Cats]], [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], and [[Ururun Wolf (Special Cat)|Ururun]].
+
+==Variants==
+{{Variant
+|original = Large White Ball
+|Large Red Ball
+|A [[:Category:Red Enemies|Red]] variant that has a 100% chance to knockback along with slightly higher base stats and speed.
+|Large Iron Ball
+|A [[:Category:Metal Enemies|Metal]] variant that has a 100% chance to slow Cat Units. It has much lower HP, but has higher attack and lower speed compared to its Traitless cousin.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]:
+**[[Runaway Ball]] (10%, 100%)
+**[[Red vs White]] (4,000%)
+**[[Whose Ball is This?]] (6,000%)
+**[[Hats Blown Away]] (1%, 10,000%)
+**[[Can't Stop Now]] (100%, 12,000%)
+*[[New Year's Bling]]:
+**[[Long-Awaited Gifts]] (10%, 100%)
+**[[Brotherly Income Gap]] (4,000%)
+**[[Increasing Sums]] (6,000%)
+**[[Grandpa's Lettering]] (1%, 10,000%)
+**[[No Gift This Year]] (100%, 12,000%)
+**[[Lucky! New Year's Loot!]] (2,000%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2021 Debut]] (24,000%)
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[400m Relay: Fast Start]] (1,000%)
+**[[800m Relay: Fast Start]] (10,000%)
+**[[1600m Relay: Fast Start]] (12,000%)
+**[[1600m Relay: Anchor Leg]] (24,000%)
+*[[Memories of 2024]]: [[Memories of Fall Page 2]] (4,000%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 6|Floor 6]] (18,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Large White Ball
+|Health = 500
+|Attack Power = 50
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 15
+|Knockback = 5
+|Foreswing = 8
+|Backswing = 143
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -600~200)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+576 e.png|Large White Ball's spritesheet
+IdleWhiteBall.gif|Large White Ball's moving animation
+</gallery>
+
+==Trivia==
+*This enemy, as well as [[Large Red Ball]] and [[Large Iron Ball]], are based on the Japanese Sports Day event Oodama Korogashi.
+
+==Reference==
+*https://battlecats-db.com/enemy/578.html
+
+----
+{{EnemyNav|Inactive Aku Altar|Large Red Ball}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]

@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Miz Devil|Condemned Peng|Doge Dark|Razorback|Camelle}}
+'''Aku Studies 501: Intro''' is the first stage in [[Empress' Report 5]]. This stage can only be cleared once.
+
+{{Stage Info
+|stage name = [[File:rc149.png]]
+[[File:Mapsn276 00 s en.png]]
+|stage location = [[File:Mapname276 s en.png]]
+|energy = 100
+|enemy castle hp = 870,000 HP
+|enemies = {{Magnification|Miz Devil|300%
+|Condemned Peng|400%
+|Doge Dark|1,000%
+|Razorback|100%}}
+|boss = {{Magnification|Camelle|300%}}
+|treasure = - [[Catamin]] [C] +3 (100%, 1 time)
+|XP = 1,900 XP
+|width = 3,800
+|max enemies = 6
+|jpname = Devil Research V Introduction
+|script = 悪魔研究Ⅴ序論
+|romaji = Akuma Kenkyū V Joron
+|star = 1
+|event-chapter = [[Empress' Report 5]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = N/A
+|next stage = [[Aku Studies 501: Methods]]
+|require = Complete [[Empress' Report 4]]
+|occurrence = - Monday, Friday: 19:00~21:00<br>
+- Tuesday, Saturday: 22:00~24:00<br>
+- Wednesday: 08:00~10:00<br>
+- Thursday, Sunday: 12:00~14:00
+}}
+
+==Battleground==
+*5 [[Miz Devil]]s spawn after 10 seconds<sup>300f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*1 [[Condemned Peng]] spawns after 13.33 seconds<sup>400f</sup>.
+*4 [[Doge Dark]]s spawn after 23.33 seconds<sup>700f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Camelle]] spawns as the boss.
+**8 [[Miz Devil]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**3 [[Condemned Peng]]s spawn, delay 43.33~50 seconds<sup>1,300f~1,500f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**1 [[Razorback]] spawns.
+
+==Strategy==
+==='''Recommended Units'''===
+*[[Fencer Cat (Super Rare Cat)|The Kitty of Liberty]] - While he may initially seem like a strange choice considering there are no [[Barrier]]s present in the level, his unique combination of tankiness, damage and range work quite well for this level. He can dish out pretty decent damage to the Condemned Pengs while outranging them by a decent margin. His one knockback also means he won't get juggled by Camelle, unlike most other midrangers.
+*[[Flower Cat (Special Cat)|Bombercat]] - Bombercat is a fairly obvious pick, as it is one of the few consistent Razorback counters. Using Freeze Up [[Cat Combo]]s is highly recommended, since Camelle will likely kill any stack of Bombercats when Razorback gets knocked back.
+*[[Talents|Talented]] [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] - Deals high damage to Razorback with his [[Wave Attack]]s, and can deal with the Condemned Pengs. The same thing can be said about [[Slime Cat (Rare Cat)|Slime Cat]].
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - Deals with the Camelle and can pierce the Condemned Pengs with Talents.
+*[[Rugby Cat (Rare Cat)|Gridiron Cat]] - Having Strong Against Dark and Aku, he is tailor-made to deal with most of the threats in this stage. He has enough range to safely hit Condemned Peng, and is a viable pick if one doesn't have Pizza Cat's Talents. But he comes from [[Dogsville (Merciless)|a fairly challenging Advent]], which means having him for this stage is unlikely.
+
+==Reference==
+*https://battlecats-db.com/stage/s01276-01.html
+
+{{Empress}}
+[[Category:Event Stages]]

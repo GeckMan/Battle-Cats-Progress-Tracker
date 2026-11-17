@@ -1,0 +1,48 @@
+{{#invoke:Navbox|main
+|template = Template:World Trigger
+|title = [[World Trigger Collaboration Event]]
+|navbox_class = world-trigger
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo & Cat]]
+*[[Yuma Kuga & Cat (Rare Cat)|Yuma Kuga & Cat]]
+*[[Chika Amatori & Cat (Special Cat)|Chika Amatori & Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Osamu Mikumo & Doge]]
+*[[Yuma Kuga & Doge]]
+*[[Marmod]]
+*[[Red Marmod]]
+*[[Black Marmod]]
+
+|header3 = Stages
+|group3 = Battle! Tamakoma Second's Leader
+|list3 =
+*[[I can't refuse to fight.]]
+*[[Just One More Battle]]
+*[[I'll Do What I Must]]
+*[[After-Battle Introspection]]
+*[[I'm No Hero]]
+
+|group4 = Battle! Tamakoma Second's Ace
+|list4 =
+*[[People make up the stupidest lies.]]
+*[[This'll Be Easy]]
+*[[Fleeing is a Part of Battle]]
+*[[Defeat in Aimless Wandering]]
+*[[No Time for Slacking]]
+
+|group5 = Vs Training Marmod
+|list5 =
+*[[Training Level 1]]
+*[[Training Level 2]]
+*[[Training Level 3]]
+*[[Training Level 4]]
+*[[Training Level 5]]
+}}<templatestyles src="World Trigger/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:World Trigger]]}}<noinclude>[[Category:Navboxes]]</noinclude>

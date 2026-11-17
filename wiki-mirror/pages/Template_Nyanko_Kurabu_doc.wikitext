@@ -1,0 +1,29 @@
+{{Documentation}}
+{{Nyanko Kurabu|Normal|103|f|31376|94|277|2|531|215|1|1|1|0}}
+
+<nowiki>{{Nyanko Kurabu|Normal|103|f|31376|94|277|2|531|215|1|1|1|0}}</nowiki><br>
+<nowiki>{{Nyanko Kurabu|Card|</nowiki>[[Cat Release Order|CRO]]<nowiki>|Form|User Rank|Medal|Hour|Minutes|Cats|Enemies|Platinum Medals|Gold Medals|Silver Medals|Bronze Medals}}</nowiki><br>
+
+==Card==
+*Normal - No [[Catclaw Championships]] Rank
+**Normal1~12 - Catclaw Championships Rank Obtained
+*Gold
+**Gold1~12 - WIP
+
+==Form==
+*f = first
+*c = evolved
+*s = true
+*u = ultra
+
+==Usage==
+<pre>
+{{Nyanko Kurabu|Normal5|103|f|31376|94|277|2|531|215|1|1|1|0}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+| {{Nyanko Kurabu|Normal5|103|f|31376|94|277|20|531|215|1|1|1|0}}
+|}
+
+[[Category:Cosmetic templates]]

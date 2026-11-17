@@ -1,0 +1,7 @@
+.ranger-navbox.puzzle-bonanza {
+	--bg-navbox-title: linear-gradient(to right, hsl(7, 95%, 84%) 0%, hsl(7, 95%, 84%) 100%);
+	--bg-sub-table-title: hsl(70, 68%, 57%);
+	--bg-group-name: hsl(55, 100%, 51%);
+}
+
+/* [[Category:Template stylesheets]] */

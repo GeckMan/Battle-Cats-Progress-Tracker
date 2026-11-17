@@ -1,0 +1,124 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Belial (Enemy)]].''
+'''Belial''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was implemented in [[Version 5.10 Update|Version 5.10]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Crash Fever Collaboration Event]].
+
+{{Cat Info
+|ID = 327
+|rarity = SR
+|name1 = Belial
+|name2 = Reckless Belial
+}}
+
+==Evolution==
+Evolves into '''Reckless Belial''' at level 10.
+
+==Strategy/Usage==
+Belial has somewhat decent stats, but is bogged down by his high cost and even higher recharge time. On top of that, his strengthen barely increases his damage, and he has no abilities to help him survive an enemy's attacks, like [[Survive]] or [[Strong Against|Strong]]. To put it bluntly, he's not really good.
+
+{{Job|Classification = Midranger & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 327
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni327 f00.png
+|Image2 = Uni327 c00.png
+|Name1 = Belial
+|Desc1 = An AI who ruthlessly hunts down all threats to<br>the peace of ALICE, dropping in from Crash Fever.<br>Grows much stronger as he takes damage. (Area)
+|Name2 = Reckless Belial
+|Desc2 = A fierce, fanatical guardian of ALICE's order.<br>A special guest from Crash Fever. Grows<br>much stronger as he takes damage. (Area Atk)
+|Name1 (JP) = ベリアル (Beriaru, Belial)
+|Desc1 (JP) = クラッシュフィーバーから参戦！<br>ALICEの重犯罪者を取り締まっているAI<br>体力減少で攻撃力上昇(範囲攻撃)
+|Transl1 (JP) = Joining the war from Crash Fever!<br>AI cracking down on serious criminals in ALICE<br>Attack power increases with health decrease (Range Attack)
+|Name2 (JP) = 猛進の大逆者ベリアル (Mōshin no Saigyakusha Beriaru, Raging Rebellious Belial)
+|Desc2 (JP) = クラッシュフィーバーから参戦！<br>犯罪者に制裁を加えるも独断行動が多い熱血漢<br>体力減少で攻撃力上昇(範囲攻撃)
+|Transl2 (JP) = Joining the war from Crash Fever!<br>A hot-blooded man who sanctions criminals but often acts arbitrarily<br>Attack power increases with health decrease (Range Attack)
+|Name1 (TW) = 貝利亞
+|Desc1 (TW) = 來自Crash Fever！<br>追緝ALICE所有重刑犯的AI<br>體力減少攻擊力就會上升（範圍攻擊）
+|Name2 (TW) = 猛進大叛徒貝利亞
+|Desc2 (TW) = 來自Crash Fever！<br>就算獨斷也要懲罰罪犯的熱血男子<br>體力減少攻擊力就會上升（範圍攻擊）
+|Name1 (KR) = 벨리알
+|Desc1 (KR) = 크래시 피버에서 참전!<br>ALICE의 중범죄자를 단속하고 있는 AI<br>체력감소에 따라 공격력이 상승 (범위 공격)
+|Name2 (KR) = 맹진하는 대반역자 벨리알
+|Desc2 (KR) = 크래시 피버에서 참전!<br>독단으로 행동하며 범죄자에게 제재를 가하는 열혈한<br>체력감소에 따라 공격력이 상승 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 1,200¢
+*Chapter 2: 1,800¢
+*Chapter 3: 2,400¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Belial
+|Normal Base HP = 950
+|Normal Base AP = 300
+|Normal Range = 300
+|Normal Foreswing = 56
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 121
+|Normal Speed = 33
+|Normal KB = 6
+|Normal Cost = 1200
+|Normal Recharge = 1800
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Evolved Name = Reckless Belial
+|Evolved Base HP = 1450
+|Evolved Base AP = 450
+|Evolved Range = 300
+|Evolved Foreswing = 56
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 121
+|Evolved Speed = 33
+|Evolved KB = 6
+|Evolved Cost = 1200
+|Evolved Recharge = 1800
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 950 HP
+|val-Normal-Attack Power = 300 damage<br>(74.38 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 121f <sub>4.03 seconds</sub>
+|val-Normal-Movement Speed = 33
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 56f <sup>1.87s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Normal-Recharge Time = 60 ~ 51.2 seconds
+|val-Normal-MaxHP = 16,150 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(1,264.46 DPS)
+|val-Evolved-Health = 24,650 HP
+|val-Evolved-Attack Power = 7,650 damage<br>(1,896.69 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 121f <sub>4.03 seconds</sub>
+|val-Evolved-Movement Speed = 33
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 56f <sup>1.87s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Evolved-Recharge Time = 60 ~ 51.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni327 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/328.html
+
+----
+{{CatNav|Mobius|Happy 100}}
+----
+
+{{Crash Fever}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Gacha Cats]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strengthen ability]]

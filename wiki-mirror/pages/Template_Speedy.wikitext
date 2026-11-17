@@ -1,0 +1,22 @@
+Horizontal movement will improve by X%.<br />
+:'''Skill Specs''':
+:*NN: 5%
+:*RR: 10%
+:*SR: 15%
+:*UR: 20%
+:'''SP Cost''': 50 ~ 32
+<noinclude>[[category:Burgle Cats Skill Data Templates]]
+==Documentation==
+This template is used in the Burgle Cats namespace, along with [[Template:BurgleCatsSkillDetail]] inside a span tag to show the information of a burgle ability.
+
+===Syntax===
+<code><nowiki><span class="burgle-ability-tooltip" data-skillname="{{1}}">{{2}}</span></nowiki></code>
+
+Whereas:
+*<nowiki>{{1}}</nowiki> is the skill name needed to show information of, all possible names are listed in [[:category:Burgle Cats Skill Data Templates]].
+*<nowiki>{{2}}</nowiki> is the content that will be wrapped, when hover over will show a burgle skill's information template.
+===Example===
+Input: <nowiki><code><span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span></code></nowiki>
+
+Output: <span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span>
+</noinclude>

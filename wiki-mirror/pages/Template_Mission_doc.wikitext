@@ -1,0 +1,101 @@
+{{Documentation}}
+This template is used to display a [[Catnip Challenges]] Mission. It is powered by [[Module:Mission]] and relies on being used inside {{t|MissionTable}}.
+
+==Parameters==
+<pre>
+==Missions==
+{{MissionTable
+|{{Mission|requirement|reward|image|type = }}
+}}
+</pre>
+The first parameter is the explanation of the requirement for completing the mission. Next, the second parameter is the reward obtained when completing the mission. The third parameter specifies the image to use, accepting a string such that the file <code>Stamp reward <image>.png</code> exists or alternatively a full file name including the file extension. The <code>type</code> parameter is used to specify the mission type (main, weekly, monthly, special). The background color is different for each type, and the default is set to main. It is necessary for the template to be put in a table, and as many templates as necessary can be included in one table.
+
+Below is a table of reward names with the corresponding image parameters for the stamp reward images. See the "Image" column of [[Module:Stamps.csv]] for a full list.
+{| class="article-table"
+! Item Name
+! Image Parameter
+|-
+| Cat Food
+| food
+|-
+| XP
+| xp
+|-
+| Cat Ticket
+| catticket
+|-
+| Rare Ticket
+| rareticket
+|-
+| Platinum Ticket
+| platinumticket
+|-
+| Legend Ticket
+| legendticket
+|-
+| Platinum Shard
+| shard
+|-
+| New Cat unit
+| misc
+|-
+| True Form
+| true
+|}
+
+==Example==
+<pre>
+==Missions==
+{{MissionTable
+|{{Mission|Level up one Cat the [[Upgrade Menu]]!<br>(Tap the "Power Up!" button to upgrade a Cat)|Cat Food +20|food}}
+|{{Mission|Complete all Level 2 Stories of [[Stories of Legend]] to complete this mission.|Platinum Ticket +1|platinumticket}}
+|{{Mission|Clear XP reward stages 5 times!<br>(Check applicable stages in Mission details: 0 of 5)|Cat Ticket +1|catticket|type = weekly}}
+|{{Mission|Defeat [[Gory]] at Empire of Cats Ch. 2<br>(Once at any Empire of Cats Ch. 2 stage)|Sniper the Cat +1|sniper|type = monthly}}
+|{{Mission|Clear "Lovesick Again" stages 5 times!<br>Clear any Lovesick Again stage: 0 of 5|Cat Ticket +1|catticket|type = special}}
+}}
+</pre>
+===Result===
+==Missions==
+{{MissionTable
+|{{Mission|Level up one Cat the [[Upgrade Menu]]!<br>(Tap the "Power Up!" button to upgrade a Cat)|Cat Food +20|food}}
+|{{Mission|Complete all Level 2 [[Stories of Legend]] Stages to complete this mission.|Platinum Ticket +1|platinumticket}}
+|{{Mission|Clear XP reward stages 5 times!<br>(Check applicable stages in Mission details: 0 of 5)|Cat Ticket +1|catticket|type = weekly}}
+|{{Mission|Defeat [[Gory]] at Empire of Cats Ch. 2<br>(Once at any Empire of Cats Ch. 2 stage)|Sniper the Cat +1|sniper|type = monthly}}
+|{{Mission|Clear "Lovesick Again" stages 5 times!<br>Clear any Lovesick Again stage: 0 of 5|Cat Ticket +1|catticket|type = special}}
+}}
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Requirement",
+			"type": "string",
+			"required": true,
+			"description": "Requirement to complete the mission"
+		},
+		"2": {
+			"label": "Reward",
+			"type": "string",
+			"required": true,
+			"description": "Reward for completing the mission"
+		},
+		"3": {
+			"label": "Image",
+			"required": true,
+			"description": "See the \"Image\" column of Module:Stamps.csv for a full list.",
+			"type": "string"
+		},
+		"type": {
+			"type": "string",
+			"description": "Type of mission (affects background)",
+			"suggestedvalues": [
+				"special",
+				"weekly",
+				"monthly"
+			]
+		}
+	}
+}
+</templatedata>
+<includeonly>[[Category:Content templates]]</includeonly>

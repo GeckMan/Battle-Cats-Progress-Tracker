@@ -1,0 +1,350 @@
+<infobox theme="stage-info">
+    <data source="stage name"/>
+    <data source="stage location"/>
+    <group collapse="closed">
+        <header>Stage Information</header>
+        <panel>
+            <section>
+            <label>{{#ifexpr:{{{chapters|3}}}>=2|Chapter 1}}</label>
+                <data source="energy"><label>Energy:</label></data>
+                <data source="enemy castle hp"><label>Enemy Base's Health:</label></data>
+                <data source="base"><label>Enemy Base:</label></data>
+                <data source="enemies"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="boss"><label>Enemy Boss:</label></data>
+                <data source="treasure"><label>Treasure:</label></data>
+                <data source="score reward"><label>Score Rewards:</label></data>
+                <data source="max enemies"><label>Max number of Enemies:</label></data>
+                <data source="restriction"><label>Restriction:</label></data>
+            </section>
+            <section>
+            <label>{{#ifexpr:{{{chapters|3}}}>=2|Chapter 2}}</label>
+                <data source="energy2"><label>Energy:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{energy}}}}}</default></data>
+                <data source="enemy castle hp2"><label>Enemy Base's Health:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{enemy castle hp}}}}}</default></data>
+                <data source="base2"><label>Enemy Base:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{base}}}}}</default></data>
+                <data source="enemies2"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="boss2"><label>Enemy Boss:</label></data>
+                <data source="treasure2"><label>Treasure:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{treasure}}}}}</default></data>
+                <data source="score reward2"><label>Score Rewards:</label></data>
+                <data source="max enemies2"><label>Max number of Enemies:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{max enemies}}}}}</default></data>
+                <data source="restriction2"><label>Restriction:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=2|{{{restriction}}}}}</default></data>
+            </section>
+            <section>
+            <label>{{#ifexpr:{{{chapters|3}}}>=3|Chapter 3}}</label>
+                <data source="energy3"><label>Energy:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{energy}}}}}</default></data>
+                <data source="enemy castle hp3"><label>Enemy Base's Health:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{enemy castle hp}}}}}</default></data>
+                <data source="base3"><label>Enemy Base:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{base}}}}}</default></data>
+                <data source="enemies3"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="boss3"><label>Enemy Boss:</label></data>
+                <data source="treasure3"><label>Treasure:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{treasure}}}}}</default></data>
+                <data source="score reward3"><label>Score Rewards:</label></data>
+                <data source="max enemies3"><label>Max number of Enemies:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{max enemies}}}}}</default></data>
+                <data source="restriction3"><label>Restriction:</label>
+                    <default>{{#ifexpr:{{{chapters|3}}}>=3|{{{restriction}}}}}</default></data>
+            </section>
+        </panel>
+    </group>
+    <group collapse="closed">
+        <header>Outbreak Information</header>
+        <panel>
+            <section>
+            <label>{{#ifexpr:{{{zombiechapters|3}}}>=2|Chapter 1|}}</label>
+                <data source="zombieenergy"><label>Energy:</label></data>
+                <data source="zombieenemy castle hp"><label>Enemy Base's Health:</label></data>
+                <data source="zombiebase"><label>Enemy Base:</label></data>
+                <data source="zombieenemies"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="zombieboss"><label>Enemy Boss:</label></data>
+                <data source="zombietreasure"><label>Treasure:</label></data>
+                <data source="zombiemax enemies"><label>Max number of Enemies:</label></data>
+                <data source="zombierestriction"><label>Restriction:</label></data>
+            </section>
+            <section>
+            <label>{{#ifexpr:{{{zombiechapters|3}}}>=2|Chapter 2|}}</label>
+                <data source="zombieenergy2"><label>Energy:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=2|{{{zombieenergy}}}|}}</default></data>
+                <data source="zombieenemy castle hp2"><label>Enemy Base's Health:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=2|{{{zombieenemy castle hp}}}|}}</default></data>
+                <data source="zombiebase2"><label>Enemy Base:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=2|{{{zombiebase}}}|}}</default></data>
+                <data source="zombieenemies2"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="zombieboss2"><label>Enemy Boss:</label></data>
+                <data source="zombietreasure2"><label>Treasure:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=2|{{{zombietreasure}}}|}}</default></data>
+                <data source="zombiemax enemies2"><label>Max number of Enemies:</label></data>
+                <data source="zombierestriction2"><label>Restriction:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=2|{{{zombierestriction}}}|}}</default></data>
+            </section>
+            <section>
+            <label>{{#ifexpr:{{{zombiechapters|3}}}>=3|Chapter 3|}}</label>
+                <data source="zombieenergy3"><label>Energy:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=3|{{{zombieenergy}}}|}}</default></data>
+                <data source="zombieenemy castle hp3"><label>Enemy Base's Health:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=3|{{{zombieenemy castle hp}}}|}}</default></data>
+                <data source="zombiebase3"><label>Enemy Base:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=3|{{{zombiebase}}}|}}</default></data>
+                <data source="zombieenemies3"><label><abbr title="The number after each enemy is its strength magnification" style="cursor: help;">Enemies</abbr>:</label></data>
+                <data source="zombieboss3"><label>Enemy Boss:</label></data>
+                <data source="zombietreasure3"><label>Treasure:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=3|{{{zombietreasure}}}|}}</default></data>
+                <data source="zombiemax enemies3"><label>Max number of Enemies:</label></data>
+                <data source="zombierestriction3"><label>Restriction:</label>
+                    <default>{{#ifexpr:{{{zombiechapters|3}}}>=3|{{{zombierestriction}}}|}}</default></data>
+            </section>
+        </panel>
+    </group>
+    <group collapse="closed">
+        <header>Misc. Information</header>
+        <data source="stage type"><label>Stage Type:</label></data>
+        <data source="XP"><label>XP earned:</label></data>
+        <data source="width"><label>Stage Width:</label></data>
+    </group>
+    <group collapse="closed">
+        <header>Japanese Version Information</header>
+        <data source="jpname"><label>JP Name:</label></data>
+        <data source="script"><label>Script:</label></data>
+        <data source="romaji"><label>Romaji:</label></data>
+        <data source="jptreasure"><label>JP Treasure:</label></data>
+    </group>
+    <group collapse="closed">
+        <header>Taiwanese Version Information</header>
+        <data source="twname"><label>TW Name:</label></data>
+        <data source="twscript"><label>Script:</label></data>
+        <data source="twromaji"><label>Romanization:</label></data>
+        <data source="twtreasure"><label>TW Treasure:</label></data>
+    </group>
+    <group collapse="closed">
+        <header>Korean Version Information</header>
+        <data source="krname"><label>KR Name:</label></data>
+        <data source="krscript"><label>Script:</label></data>
+        <data source="krromaji"><label>Revised Romanization:</label></data>
+        <data source="krtreasure"><label>KR Treasure:</label></data>
+    </group>
+    <group collapse="closed">
+        <header>Location Information</header>
+        <data source="chapter"><label>Chapter:</label></data>
+        <data source="prev stage"><label>Prev. Stage:</label></data>
+        <data source="next stage"><label>Next Stage:</label></data>
+    </group>
+</infobox>
+<noinclude>
+
+==Usage==
+<tabber>
+All Parameters=
+<pre>
+{{Story Info
+|stage name =
+|stage location =
+|energy =
+|energy2 =
+|energy3 =
+|enemy castle hp =
+|enemy castle hp2 =
+|enemy castle hp3 =
+|base =
+|base2 =
+|base3 =
+|enemies =
+|enemies2 =
+|enemies3 =
+|boss =
+|boss2 =
+|boss3 =
+|treasure =
+|treasure2 =
+|treasure3 =
+|score reward = <!--ItF Only-->
+|score reward2 = <!--ItF Only-->
+|score reward3 = <!--ItF Only-->
+|max enemies =
+|max enemies2 =
+|max enemies3 =
+|restriction = <!--CotC Only-->
+|restriction2 = <!--CotC Only-->
+|restriction3 = <!--CotC Only-->
+|chapters = <!--Aku Realms Only-->
+|zombieenergy = <!--Outbreaks Only-->
+|zombieenergy2 = <!--Outbreaks Only-->
+|zombieenergy3 = <!--Outbreaks Only-->
+|zombieenemy castle hp = <!--Outbreaks Only-->
+|zombieenemy castle hp2 = <!--Outbreaks Only-->
+|zombieenemy castle hp3 = <!--Outbreaks Only-->
+|zombiebase = <!--Outbreaks Only-->
+|zombiebase2 = <!--Outbreaks Only-->
+|zombiebase3 = <!--Outbreaks Only-->
+|zombieenemies = <!--Outbreaks Only-->
+|zombieenemies2 = <!--Outbreaks Only-->
+|zombieenemies3 = <!--Outbreaks Only-->
+|zombieboss = <!--Outbreaks Only-->
+|zombieboss2 = <!--Outbreaks Only-->
+|zombieboss3 = <!--Outbreaks Only-->
+|zombietreasure = <!--Outbreaks Only-->
+|zombietreasure2 = <!--Outbreaks Only-->
+|zombietreasure3 = <!--Outbreaks Only-->
+|zombiemax enemies = <!--Outbreaks Only-->
+|zombiemax enemies2 = <!--Outbreaks Only-->
+|zombiemax enemies3 = <!--Outbreaks Only-->
+|zombierestriction = <!--Outbreaks Only-->
+|zombierestriction2 = <!--Outbreaks Only-->
+|zombierestriction3 = <!--Outbreaks Only-->
+|zombiechapters = <!--Outbreaks Only, not needed if 3 chapters -->
+|stage type = <!--Invasions Only-->
+|XP =
+|width =
+|jpname =
+|script =
+|romaji =
+|jptreasure =
+|twname =
+|twscript =
+|twromaji =
+|twtreasure =
+|krname =
+|krscript =
+|krromaji =
+|krtreasure =
+|chapter =
+|prev stage =
+|next stage =
+}}
+</pre>
+|-|Example Usage=
+<pre>
+{{Story Info
+|stage name = [[File:Ec045 2 en.png]]
+|stage location = [[File:Korea.png]]
+'''Empire of Cats'''
+|energy = 5
+|energy2 = 15
+|energy3 =  25
+|enemy castle hp = 1,000 HP
+|enemy castle hp2 = 2,000 HP
+|enemy castle hp3 = 3,000 HP
+|enemies = {{Magnification|Doge|100%}}
+|enemies2 = {{Magnification|Doge|150%}}
+|enemies3 = {{Magnification|Doge|400%}}
+|treasure = - [[Treasure|Kimchi]]
+- [[Tank Cat (Normal Cat)|Tank Cat]] (100%, 1 time)
+|treasure2 = - [[Treasure|Kimchi]]
+|treasure3 = - [[Treasure|Kimchi]]
+|max enemies = 3
+|max enemies2 = 3
+|max enemies3 = 3
+|score reward = '''1''': 1 Cat Ticket
+|score reward2 = '''2''': 1 Rare Ticket
+|score reward3 = '''3''': 1 Platinum Ticket
+|restriction = Deploy from Row 1 only
+|restriction2 = Max # of Deployable Cats: 10
+|restriction3 = Only Rare and Super Rare
+|zombieenergy = 5
+|zombieenergy2 = 15
+|zombieenergy3 = 25
+|zombieenemy castle hp = 10,000 HP
+|zombieenemy castle hp2 = 30,000 HP
+|zombieenemy castle hp3 = 45,000 HP
+|zombieenemies = {{Magnification|Zoge|20%
+|Doge|200%}}
+|zombieenemies2 = {{Magnification|Zoge|30%
+|Doge|400%}}
+|zombieenemies3 = {{Magnification|Zoge|50%
+|Doge|600%}}
+|zombietreasure = - [[Treasure|Kimchi]]
+- [[Cat Food]] +10
+|zombiemax enemies = 6
+|zombiemax enemies2 = 6
+|zombiemax enemies3 = 6
+|stage type = Invasion
+|XP = 1,000 XP
+|width = 3,600
+|jpname = Nagasaki Prefecture
+|script = 長崎県
+|romaji = Nagasaki Ken
+|jptreasure = Castella
+|twname = Taiwan
+|twscript = 台湾
+|twromaji = Taewān
+|twtreasure = Pineapple Pastry
+|krname = Korea
+|krscript = 한민국
+|krromaji = Hangug
+|krtreasure = Kimchi
+|chapter = [[Empire of Cats]]
+|prev stage = N/A
+|next stage = [[Mongolia (Empire of Cats)|Mongolia]]
+}}
+</pre>
+
+===Result===
+{{Story Info
+|stage name = [[File:Ec045 2 en.png]]
+|stage location = [[File:Korea.png]]
+'''Empire of Cats'''
+|energy = 5
+|energy2 = 15
+|energy3 =  25
+|enemy castle hp = 1,000 HP
+|enemy castle hp2 = 2,000 HP
+|enemy castle hp3 = 3,000 HP
+|enemies = {{Magnification|Doge|100%}}
+|enemies2 = {{Magnification|Doge|150%}}
+|enemies3 = {{Magnification|Doge|400%}}
+|treasure = - [[Treasure|Kimchi]]
+- [[Tank Cat (Normal Cat)|Tank Cat]] (100%, 1 time)
+|treasure2 = - [[Treasure|Kimchi]]
+|treasure3 = - [[Treasure|Kimchi]]
+|max enemies = 3
+|max enemies2 = 3
+|max enemies3 = 3
+|score reward = '''1''': 1 Cat Ticket
+|score reward2 = '''2''': 1 Rare Ticket
+|score reward3 = '''3''': 1 Platinum Ticket
+|restriction = Deploy from Row 1 only
+|restriction2 = Max # of Deployable Cats: 10
+|restriction3 = Only Rare and Super Rare
+|zombieenergy = 5
+|zombieenergy2 = 15
+|zombieenergy3 = 25
+|zombieenemy castle hp = 10,000 HP
+|zombieenemy castle hp2 = 30,000 HP
+|zombieenemy castle hp3 = 45,000 HP
+|zombieenemies = {{Magnification|Zoge|20%
+|Doge|200%}}
+|zombieenemies2 = {{Magnification|Zoge|30%
+|Doge|400%}}
+|zombieenemies3 = {{Magnification|Zoge|50%
+|Doge|600%}}
+|zombietreasure = - [[Treasure|Kimchi]]
+- [[Cat Food]] +10
+|zombiemax enemies = 6
+|zombiemax enemies2 = 6
+|zombiemax enemies3 = 6
+|stage type = Invasion
+|XP = 1,000 XP
+|width = 3,600
+|jpname = Nagasaki Prefecture
+|script = 長崎県
+|romaji = Nagasaki Ken
+|jptreasure = Castella
+|twname = Taiwan
+|twscript = 台湾
+|twromaji = Taewān
+|twtreasure = Pineapple Pastry
+|krname = Korea
+|krscript = 한민국
+|krromaji = Hangug
+|krtreasure = Kimchi
+|chapter = [[Empire of Cats]]
+|prev stage = N/A
+|next stage = [[Mongolia (Empire of Cats)|Mongolia]]
+}}
+</tabber>

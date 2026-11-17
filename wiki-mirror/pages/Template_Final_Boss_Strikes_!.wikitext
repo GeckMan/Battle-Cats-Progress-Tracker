@@ -1,0 +1,28 @@
+{{#invoke:Navbox|main
+|template = Template:Final Boss Strikes?!
+|title = [[Final Boss Strikes?! Collaboration Event]]
+|navbox_class = lasvoss
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Cabaret Cat (Special Cat)|Cabaret Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Mega Cat (Enemy)|Mega Cat]]
+*[[Mega Cat EX (Enemy)|Mega Cat EX]]
+
+|header3 = Stages
+|group3 = Final Boss Strikes?!
+|list3 =
+*[[Let's GOOO!|Let's GOOO! <(@0@)>]]
+
+|group4 = Cabaret Cat Awakens!
+|list4 =
+*[[Crescendo (Veteran)]]
+*[[Crescendo (Insane)]]
+}}<templatestyles src="Final Boss Strikes?!/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Final Boss Strikes?!]]}}<noinclude>[[Category:Navboxes]]</noinclude>

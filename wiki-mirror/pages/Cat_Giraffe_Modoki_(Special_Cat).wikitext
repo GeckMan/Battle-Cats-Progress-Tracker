@@ -1,0 +1,122 @@
+{{JPExclusive}}
+'''Cat Giraffe Modoki''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by playing the [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] during the [[JRA Collaboration Event]]. It was added in the [[Version 10.10 Update]]. Like [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]], it is capped at level 1, meaning it can only be upgraded using +levels.
+
+{{Cat Info
+|ID = 626
+|rarity = EX
+|name1 = Cat Giraffe Modoki
+|name2 = Suruma Cat Giraffe Modoki
+}}
+
+==Evolution==
+Evolves into '''Suruma Cat Giraffe Modoki''' at level 1+9.
+
+==Strategy/Usage==
+The only use for Cat Giraffe Modoki outside of the collab stages and their [[Cat Combo|Combo]] lies in [[User Rank]], as they are completely outclassed by [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]] even against Red enemies.
+
+{{Job|Classification = Combo Slave & Rusher}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Triple Single|Unit Speed Up (M)|Cat Giraffe Modoki|Catnip Tricky|Catnip Dragon|jpname=３連単}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 626
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni626 f00.png
+|Image2 = Uni626 c00.png
+|Name1 (JP) = ネコキリンモドキ (Neko Kirin Modoki, Cat Giraffe Modoki)
+|Desc1 (JP) = 親譲りの足の速さがキラリと光る出走ネコ<br>ネコキリンのサラブレッドでぶっちぎりの一番人気<br>赤い敵にめっぽう強い（＋LVのみ強化可能）
+|Transl1 (JP) = A runner-up cat with the speed of a parent<br>The most popular thoroughbred of the cat giraffes<br>Strong against red enemies (only +LV can be enhanced)
+|Name2 (JP) = 駿馬ネコキリンモドキ (Shunme Neko Kirin Modoki, Suruma Cat Giraffe Modoki)
+|Desc2 (JP) = 血統にも騎手にも恵まれた駿足の出走ネコ<br>足の速さで右に出る者はおらず不動の一番人気<br>赤い敵にめっぽう強い（＋LVのみ強化可能）
+|Transl2 (JP) = A cat with a good pedigree and a good rider<br>No one is faster than him and he is the most popular<br>Strong against red enemies (only +LV can be enhanced)
+}}
+
+==Cost==
+*Chapter 1: 500円
+*Chapter 2: 750円
+*Chapter 3: 1,000円
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Giraffe Modoki
+|Normal Stats Level = 1+30
+|Normal Base HP = 450
+|Normal Base AP = 12
+|Normal Range = 140
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 30
+|Normal KB = 5
+|Normal Cost = 500
+|Normal Recharge = 270
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Evolved Name = Suruma Cat Giraffe Modoki
+|Evolved Stats Level = 1+30
+|Evolved Base HP = 450
+|Evolved Base AP = 12
+|Evolved Range = 140
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 30
+|Evolved KB = 5
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.1+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 12 damage<br>(36 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 9 ~ 2 seconds
+|val-Normal-MaxHP = 7,875 HP
+|val-Normal-MaxAttack = 210 damage<br>(630 DPS)
+|val-Evolved-Health = 7,875 HP
+|val-Evolved-Attack Power = 210 damage<br>(630 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni626 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/627.html
+
+----
+{{CatNav|Furiluga|Catnip Tricky}}
+----
+
+{{JRA}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Freeze Immunity]]

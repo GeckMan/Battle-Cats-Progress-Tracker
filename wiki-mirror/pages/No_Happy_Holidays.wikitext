@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Hippoe}}
+'''No Happy Holidays''' is the first stage in [[Happy New Year? (Monthly Event)|Happy New Year?]].
+
+{{Stage Info
+|stage name = [[File:rc029.png]]
+[[File:Mapsn011 00 s en.png]]
+|stage location = [[File:Mapname011 s en.png]]
+|energy = 30
+|enemy castle hp = 10,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%
+|Hippoe|100%}}
+|enemies2 = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%
+|Hippoe|150%}}
+|enemies3 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Hippoe|200%}}
+|enemies4 = {{Magnification|Doge|300%
+|Snache|300%
+|Those Guys|300%
+|Hippoe|300%}}
+|treasure = - [[Adult Cat (Rare Cat)|Adult Cat]] (1%, 1 time)
+|XP = 900 XP
+|width = 4,000
+|max enemies = 5
+|jpname = Zero New Year's Cards Again
+|script = 今年も年賀状ゼロ
+|romaji = Kotoshi mo Nengajō Zero
+|star = 4
+|event-chapter = [[Happy New Year? (Monthly Event)|Happy New Year?]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Holiday Diet Fail]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 2~8 seconds<sup>60f~240f</sup>.
+*100 [[Snache]]s spawn after 10.67 seconds<sup>320f</sup>, delay 13.33~40 seconds<sup>400f~1,200f</sup>.
+*200 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*When the base reaches 70% HP:
+**10 [[Those Guys]] spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+**2 [[Hippoe]]s spawn, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01011-01.html
+
+{{Monthly}}
+[[Category:Happy New Year? Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

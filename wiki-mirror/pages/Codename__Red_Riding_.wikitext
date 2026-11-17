@@ -1,0 +1,96 @@
+:''This article is about the enemy. For the Cat Unit, see [[Red Riding Mina (Special Cat)]].''
+'''Codename "Red Riding"''' (わんこずきんミーニャ ''Wanko Zukin Mīnya'', '''Dog Hood Minya''') is a [[:Category:Traitless Enemies|Traitless]] enemy introduced in [[Learned to Love]], which has a chance to unlock her [[:Category:Mythic Cats|Mythic Cat]] counterpart [[Red Riding Mina (Special Cat)|Red Riding Mina]] when completed. She was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Codename "Red Riding"
+|image = E 258.png
+|first appearance = '''SoL''': [[Learned to Love|Sub-chapter 28 - Learned to Love]]
+|latest appearance = '''UL''': [[Hell's All-Stars|Sub-chapter 38 - Hell's All-Stars]]
+|money drop = 5,000¢ - 19,750¢
+}}
+
+==Enemy==
+This enemy's attack cycle lasts a little more than 20 seconds, but these [[Long Distance]] attacks can hit up to 3,700 range away from her, so try to prevent her from advancing more than 1/5th of the battlefield, as she will easily hit the [[Cat Base]]. If she does hit the base, though, you still have some time to beat her before it's too late, as her DPS is pretty low for a Long Distance enemy. She also has a huge blind spot of 2,800 and no immunities, which can be exploited by some units.
+
+In [[Learned to Love]] and [[Learned to Hate]], you can lure her to your base so that her attack hits the base without killing any cats that you deploy. However, in order for this to work, you have to synchronize and kill the [[H. Nah]]s quickly and rush towards "Red Riding" before the [[Le'noir]]s and [[Sunfish Jones]] get in the way. On higher difficulties, [[Cat Combo]]s may be required to deal with the H. Nahs before it's too late.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 258
+|Type = Traitless
+|Image1 = Enemy icon 258.png
+|Name1 = Codename "Red Riding"
+|Desc1 = A wandering forest girl hired as an assassin<br>by the Dog Army. Feared by the Cat Army for<br>ruthlessly using any tactic necessary to<br>make the kill. Even a long-distance bazooka!
+|Name1 (JP) = わんこずきんミーニャ (Wanko Zukin Mīnya, Dog Hood Minya)
+|Desc1 (JP) = わんこ軍団に雇われた森ガール系暗殺者。<br>任務遂行のためならどんな卑怯な手でも使う。<br>超遠距離から攻撃出来るバズーカで<br>にゃんこ城を狙撃してくる厄介な敵。
+|Transl1 (JP) = A forest girl assassin hired by the [[Doge]] Army.<br> Will use even the most unfair tactics to complete her mission.<br>An annoying enemy whose bazooka can snipe the<br>Cat Base from uber long distance.
+|Name1 (TW) = 狗仔紅帽咪娜
+|Desc1 (TW) = 狗仔軍團所雇用的森林女孩系刺客。<br>為執行任務會使用任何卑鄙的手段。<br>是個會用火箭砲對貓咪城進行超遠距離攻擊<br>不可輕忽的危險敵人。
+|Name1 (KR) = 멍뭉이 냥미
+|Desc1 (KR) = 멍뭉이 군단에 고용된 내숭계 암살자<br>임무 수행을 위해서라면 어떠한 비겁한 수라도 쓴다<br>초원거리에서 공격할 수 있는 바주카로<br>냥코 성을 저격해 오는 귀찮은 적
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 28-6: [[Learned to Love]] (100%)
+
+===[[Uncanny Legends]]===
+*Stage 38-3: [[Learned to Hate]] (100%)
+*Stage 38-6: [[Hell's All-Stars]] (100%)
+
+===[[Zero Legends]]===
+*Stage 24-6: [[Dozing Love]] (200%)
+
+===[[Special Events|Event Stages]]===
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 39|Floor 39]] (200%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 39|Floor 39]] (200%)
+*[[Golden Tower]]: [[Golden Tower/Floor 39|Floor 39]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Codename "Red Riding"
+|Health = 1200000
+|Attack Power = 22222
+|Attack Range = 1500
+|Attack Type = Area
+|Time Between Attacks = 601
+|Movement Speed = 5
+|Knockback = 1
+|Foreswing = 76
+|Backswing = 69
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 2,800~3,700)
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+258 e.png|Codename "Red Riding"'s spritesheet
+IdleCodenameRedRiding.gif|Codename "Red Riding"'s moving animation
+</gallery>
+
+==Trivia==
+*Other than resembling the famously known folktale character [[wikipedia:Little Red Riding Hood|Little Red Riding Hood]], Codename "Red Riding"'s  appearance, personality, and arsenal may be inspired by the ''[[wikia:dark-stalkers:Vampire Savior: The Lord of Vampire|Vampire Savior]]'' character [[wikia:capcom:Baby Bonnie Hood|Baby Bonnie Hood]], who dons an innocent "red riding hood" appearance but in reality is a psychopath. She appears with devilish eyes whenever she is seen attacking, similar to "Red Riding". Hidden in her basket are various weaponry, such as landmines, an Uzi, or, just like "Red Riding", a bazooka.
+**The way [[Red Riding Mina (Special Cat)|Awakened Mina]]'s animals cower in fear when Mina is attacking is also reminiscent of how Baby Bonnie Hood's dog Harry cowers in fear when she attacks.
+*She uses an exploding [[Doge Dark]] as a rocket, which is replaced by a [[Killer Cat (Rare Cat)|Killer Cat]] when she joins the Cat Army.
+*She has the largest blind spot in the game, at 2,800.
+
+==Reference==
+*https://battlecats-db.com/enemy/260.html
+
+----
+{{EnemyNav|King Wahwah|Takuya and Lovely Yuki}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Mythic Bosses]]

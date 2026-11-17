@@ -1,0 +1,120 @@
+{{ENExclusive}}
+'''Felix the Cat Duke Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a Stamp Reward during the [[Tower of Saviors Collaboration Event]]. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 744
+|rarity = EX
+|name1 = Felix the Cat Duke Cat
+|name2 = Mercenary Leader Felix Cat
+}}
+
+==Evolution==
+Evolves into '''Mercenary Leader Felix Cat''' at level 10.
+
+==Strategy/Usage==
+Although his 100% chance for a Critical Hit may sound useful on paper, like [[Million-Dollar Cat (Special Cat)|Million-Dollar Cat]] before him, his horrible damage ruined any chance he had at being good. On top of poor damage, he also has low health, even lower range and a decently long recharge time. As a result, he is usually not worth bringing outside of very specific stages, like [[Steel Visage (Deadly)|Facing Danger]] and [[Forged to Kill (Deadly)|Forged to Kill]] (with support), where he actually excels as a much faster and more accessible [[Cheerleader Cat (Super Rare Cat)|Cheerleader Cat]]. This is his only niche.
+
+{{Job|Classification = Critter & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 744
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni744 f00.png
+|Image2 = Uni744 c00.png
+|Name1 = Felix the Cat Duke Cat
+|Desc1 = A Cat that has become a noble thief. Skilled<br>at disguise, yet somehow always gets unmasked.<br>100% chance for Critical damage.
+|Name2 = Mercenary Leader Felix Cat
+|Desc2 = A Cat that has become head of a mercenary band.<br>Their motto is "Help the weak, crush the strong."<br>100% chance for Critical damage.
+|Name1 (TW) = 貓公爵 ‧ 費利克斯貓 (Māo Gōngjué ‧ Fèilìkèsī Māo, Duke Cat ‧ Felix Cat)
+|Desc1 (TW) = 化身為某個義賊的貓咪<br>明明專長是偽裝卻總是會立刻露出馬腳<br>必定能使出會心一擊
+|Transl1 (TW) = A cat disguised as a burglar<br>Who specalises in disguises but always reveals himself right away<br>Always lands a Critical attack
+|Name2 (TW) = 傭兵貓團長 ‧ 費利克斯貓 (Yōng Bīng Māo Tuánzhǎng ‧ Fèilìkèsī Māo, Mercenary Cat Leader ‧ Felix Cat)
+|Desc2 (TW) = 化身為某個傭兵團團長的貓咪<br>鋤強扶弱是他的座右銘<br>必定能使出會心一擊
+|Transl2 (TW) = As the leader of a mercenary troupe<br>The cat's motto is to help the weak<br>Always lands a Critical attack
+|Name1 (KR) = 공작 펠릭스 고양이
+|Desc1 (KR) = 어떤 의적으로 변장한 고양이<br>변장이 특기이지만 금방 정체를 들키고 만다<br>반드시 크리티컬 공격을 낸다
+|Name2 (KR) = 용병단장 펠릭스 고양이
+|Desc2 (KR) = 어떤 용병단 단장으로 변장한 고양이<br>약한 자를 돕고 강한 자를 꺾는다가 좌우명<br>반드시 크리티컬 공격을 낸다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Felix the Cat Duke Cat
+|Normal Base HP = 400
+|Normal Base AP = 24
+|Normal Range = 200
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 219
+|Normal Attack Length = 74
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 1240
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]
+|Evolved Name = Mercenary Leader Felix Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 24
+|Evolved Range = 200
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 219
+|Evolved Attack Length = 77
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 1240
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 24 damage<br>(2.82 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 255f <sub>8.5 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Normal-Recharge Time = 41.33 ~ 32.53 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 407 damage<br>(47.88 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 407 damage<br>(47.88 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 255f <sub>8.5 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Evolved-Recharge Time = 41.33 ~ 32.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni744 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/745.html
+
+----
+{{CatNav|Madhead|Dotty Cat}}
+----
+
+{{Tower of Saviors}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]

@@ -1,0 +1,63 @@
+{{EnemiesAppearing|Sinner Snache|Wild Doge|Maawth|Condemned Peng|Infernal Pegasus Deonil|Cumulus Gallus|Ursamajor}}
+'''Archaeology 401: Results''' is the third stage in [[Empress' Excavation 4]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn280 02 s en.png]]
+|stage location = [[File:Mapname280 s en.png]]
+|energy = 100
+|enemy castle hp = 1,150,000 HP
+|enemies = {{Magnification|Sinner Snache|500%
+|Wild Doge|200%
+|Maawth|2,400%
+|Condemned Peng|400%
+|Cumulus Gallus|100%
+|Ursamajor|1,600%}}
+|boss = {{Magnification|Infernal Pegasus Deonil|100%}}
+|treasure = - [[Battle Items#Sniper the Cat|Sniper the Cat]] +3 (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 5,000
+|max enemies = 20
+|jpname = Ancient Survey Ⅳ Results
+|script = 遺物調査Ⅳ成果
+|romaji = Ibutsu Chōsa Ⅳ Seika
+|star = 1
+|event-chapter = [[Empress' Excavation 4]]
+|max clears = 1
+|difficulty = ★11
+|prev stage = [[Archaeology 401: Methods]]
+|next stage = [[Archaeology 401: Analysis]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*9 [[Sinner Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Wild Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*1 [[Maawth]] spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Condemned Peng]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*2 [[Maawth]]s spawn after 60 seconds<sup>1,800f</sup>, delay 110~113.33 seconds<sup>3,300f~3,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Infernal Pegasus Deonil]] spawns as the boss.
+**1 [[Cumulus Gallus]] spawns.
+**Infinite [[Sinner Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**4 [[Wild Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+**2 [[Condemned Peng]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**2 [[Ursamajor]]s spawn after 90 seconds<sup>2,700f</sup>, delay 60~63.33 seconds<sup>1,800f~1,900f</sup>.
+
+==Strategy==
+There are limited peons that spawn prior to the boss wave, so stalling to build up your wallet is actually quite easy, and will heavily benefit you.
+
+After that, the stage is exceedingly simple. Cumulus Gallus is supported by Deonil, the occasional peon and, eventually, two Ursamajors. None of these threats have significant pushing power. A Lv.50 [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] can be spammed using Research [[Cat Combo]]s to very quickly get rid of the Behemoths, ideally without meatshielding so that Deonil has less chances to Freeze oncoming Couriers. [[Stone Cat (Rare Cat)|Stone Cat]] and [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] will handle the supporting peons with relative ease.
+
+From there, chip down Ursamajors gradually, or chain them using [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01280-03.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

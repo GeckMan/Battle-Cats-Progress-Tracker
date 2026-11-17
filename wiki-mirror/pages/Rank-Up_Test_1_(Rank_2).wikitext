@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Catclaw Castle|Croco|Squire Rel|Pigge|Gory|Sir Seal}}
+'''Rank-Up Test 1''' is the first stage in [[Catclaw Championships#Catclaw Championships Rank 2|Catclaw Championships Rank 2]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:E 710.png]]
+[[File:Mapsn001 00 g en.png]]
+|stage location = [[File:Mapname001 g en.png]]
+|energy = 0
+|enemy castle hp = 20,000 HP
+|base = {{Magnification|Catclaw Castle|200,000%}}
+|enemies = {{Magnification|Croco|100%
+|Squire Rel|100%
+|Pigge|100%
+|Gory|100%
+|Sir Seal|100%}}
+|boss = {{Magnification|Sir Seal|100%}}
+|treasure = - 100,000 XP (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 10 XP
+|width = 4,000
+|max enemies = 20
+|jpname = Promotion Exam 1
+|script = 昇段試験１
+|romaji = Shōdan Shiken 1
+|star = 1
+|dojo-chapter = [[Catclaw Championships#Catclaw Championships Rank 2|Catclaw Championships Rank 2]]
+|prev stage = N/A
+|next stage = [[Rank-Up Test 2 (Rank 2)|Rank-Up Test 2]]
+}}
+
+==Restrictions==
+*This stage uses [[Empire of Cats]] Chapter 1 deploy costs.
+
+==Battleground==
+*The enemy base here is a [[Catclaw Castle (Enemy Base)|Catclaw Castle]].
+*1 [[Croco]] spawns after 2 seconds<sup>60f</sup>.
+*5 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*8 [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*3 [[Pigge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[Squire Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*4 [[Gory|Gories]] spawn after 40 seconds<sup>1,200f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*1 [[Sir Seal]] spawns as the boss after 40 seconds<sup>1,200f</sup>.
+*1 [[Sir Seal]] spawns after 53.33 seconds<sup>1,600f</sup>.
+
+==Strategy==
+This stage is a harder variant of the previous stage, featuring hard-pushing enemies. This is a stage that aims to teach the player about killing enemies for their cash drop, then using the cash gained to spawn more units to deal with the tougher enemies. You can make this easier by levelling up your '''accounting''', which increases the amount of money dropped from killing enemies.
+
+==Hints==
+This hint only appears as a defeat message upon losing the stage.
+*Level up Accounting from the Upgrade menu<br>to increase Money earned by defeating<br>enemies. Money is the end all, be all!
+
+==Reference==
+*https://battlecats-db.com/stage/s37001-01.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]
+[[Category:No Continue Stages]]
+[[Category:Restriction Stages]]

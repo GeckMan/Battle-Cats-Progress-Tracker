@@ -1,0 +1,133 @@
+:''Not to be confused with [[Kuwagata Cat (Switch Special Cat)]] or [[Kabuto Cat (Special Cat)]].''
+'''Kuwagata Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Summer Break Cats (Event Gacha)|Summer Break Cats]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] using Legend Nets. It was added in [[Version 10.7 Update|Version 10.7]].
+
+{{Cat Info
+|ID = 616
+|rarity = EX
+|name1 = Kuwagata Cat
+|name2 = King Kuwagata Cat
+}}
+
+==Evolution==
+Evolves into '''King Kuwagata Cat''' at Level 10.
+
+==Strategy/Usage==
+Kuwagata Cat can be seen as a lesser version of [[Viking Cat (Rare Cat)|Viking Cat]] that targets different traits. Its lackluster damage makes it mainly a meatshield, although its not-so-impressive health prevents him from being of much use in [[:Category:Alien Enemies|Alien]] stages except for very early stages in [[Into the Future]] and VERY niche stages in [[Cats of the Cosmos]] like [[Urura (Cats of the Cosmos)|Urura]] as [[Rover Cat (Rare Cat)|Catellite]] outclasses him in both stats and cost effectiveness, but, with enough grinding, its + levels can make him worthwhile for most of the game.
+
+It has little use due to the presence of alternatives, but may prove extremely important in some 4-crowns [[Legend Stages]], even better if paired with research combos or Catellite.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 616
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni616 f00.png
+|Image2 = Uni616 c00.png
+|Name1 = Kuwagata Cat
+|Desc1 = An armored Cat who loves melon rinds.<br>Can only be caught with a special net.<br>Strong vs Floating & Alien enemies
+|Name2 = King Kuwagata Cat
+|Desc2 = Champion of Summer with a sturdy, shiny<br>body. Keeps fighting even after the match<br>is over. Strong vs Floating & Alien enemies
+|Name1 (JP) = クワガタネコ (Kuwagata Neko, Kuwagata Stag Cat)
+|Desc1 (JP) = 砂糖水とスイカの皮に集まる習性を持ち<br>捕まえるには特別な虫取り網が必要なネコ<br>浮いてる敵とエイリアンにめっぽう強い
+|Transl1 (JP) = They are attracted to sugar water and watermelon rinds<br>They need a special insect net to catch them<br>Extremely resistant to floating enemies and aliens
+|Name2 (JP) = キングクワガタネコ (Kingu Kuwagata Neko, King Kuwagata Stag Cat)
+|Desc2 (JP) = 鈍くボディを光らせる真夏の覇者<br>好戦的な気性のせいで虫相撲ではいつも場外乱闘<br>浮いてる敵とエイリアンにめっぽう強い
+|Transl2 (JP) = The champion of midsummer with a dull glow on his body<br>His belligerent temper makes him a constant brawler in insect wrestling<br>Extremely resistant to floating enemies and aliens
+|Name1 (TW) = 鍬形貓
+|Desc1 (TW) = 有聚集於糖水與西瓜皮旁的習性<br>想捕捉就需要用特別的捕蟲網才行<br>善於攻擊飄浮敵人與異星戰士
+|Name2 (TW) = 王者鍬形貓
+|Desc2 (TW) = 身上自帶光芒的真夏王者<br>好戰個性使牠總在昆蟲相撲比賽中場外亂鬥<br>善於攻擊飄浮敵人與異星戰士
+|Name1 (KR) = 사슴벌레 고양이
+|Desc1 (KR) = 설탕물과 수박 껍질을 모으는 습관을 가진<br>특수한 벌레 채집망으로만 잡을 수 있는 고양이<br>떠있는 적과 에이리언에 엄청 강하다
+|Name2 (KR) = 킹 사슴벌레 고양이
+|Desc2 (KR) = 둔한 몸뚱이에서 빛을 내는 한여름의 승자, 싸우기 좋아하는<br>성격 탓에 늘 벌레 스모대회밖에서 난투를 벌이고 있다.<br>떠있는 적과 에이리언에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kuwagata Cat
+|Normal Base HP = 600
+|Normal Base AP = 120
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 18
+|Normal Speed = 15
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 410
+|Normal Attack Type = Single
+|Normal Targets = Floating,Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = King Kuwagata Cat
+|Evolved Base HP = 750
+|Evolved Base AP = 150
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 18
+|Evolved Speed = 15
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 410
+|Evolved Attack Type = Single
+|Evolved Targets = Floating,Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.50+45
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 120 damage<br>(76.6 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 13.67 ~ 4.87 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(1,302.13 DPS)
+|val-Evolved-Health = 12,750 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(1,627.66 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 13.67 ~ 4.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni616 f00}}
+
+==Trivia==
+*Kuwagata Cat gets its name from ''kuwagata'', stylized antlers typically seen on [[:wikipedia:Kabuto|kabuto]] helmets. Kuwagata is also the Japanese word for stag beetle.
+*For the first run of [[Summer Break Cats Paradise (Event Gacha)|Summer Break Cats Paradise]], Kuwagata Cat was obtained from it, rather than from Summer Break Cats.
+
+==Reference==
+*https://battlecats-db.com/unit/617.html
+
+----
+{{CatNav|Kabuto Cat|Summoner Satoru}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Slow Immunity]]

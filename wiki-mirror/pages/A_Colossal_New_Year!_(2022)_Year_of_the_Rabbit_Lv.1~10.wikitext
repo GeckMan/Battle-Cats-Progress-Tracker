@@ -1,0 +1,137 @@
+{{EnemiesAppearing|Rabbit Doge|Sunrise Doge}}
+
+{{Stage Info
+|stage name = [[File:rc041.png]]
+[[File:Mapsn059 00 a en.png]]
+|stage location = [[File:Mapname059 a en.png]]
+|enemies = {{Magnification|Rabbit Doge|0}}
+|boss = {{Magnification|Sunrise Doge|100%}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = Year of the Rabbit Lv.X
+|script = 卯年 Lv.X
+|romaji = Udoshi Lv.X
+|event-chapter = [[A Colossal New Year! (2022)|A Colossal New Year!]]
+|require = Complete ?
+}}
+
+==Battleground==
+*10 [[Rabbit Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~16 seconds<sup>300f~480f</sup>.
+*12 [[Rabbit Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 6~12 seconds<sup>180f~360f</sup>.
+*14 [[Rabbit Doge]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*16 [[Rabbit Doge]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 4~8 seconds<sup>120f~240f</sup>.
+*1 [[Sunrise Doge]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 100%;"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Year of the Rabbit Lv.
+! colspan="2" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Sunrise Doge]]
+! scope="col" |[[Rabbit Doge]]
+! scope="col" |Treasure
+!Base XP
+|-
+!scope="row" |1
+|100%
+|2%
+|2,023
+|30
+|[[Cat Capsule|Cat Ticket]] +1
+|570
+|-
+!scope="row" |2
+|100%
+|15%
+|22,023
+|40
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|760
+|-
+!scope="row" |3
+|100%
+|75%
+|52,023
+|50
+|[[Battle Items#Cat Jobs|Cat Jobs]] +1
+|950
+|-
+!scope="row" |4
+|100%
+|175%
+|92,023
+|60
+|250,000 XP
+|1,140
+|-
+!scope="row" |5
+|100%
+|300%
+|162,023
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|1,330
+|-
+!scope="row" |6
+|100%
+|600%
+|272,023
+|80
+|500,000 XP
+|1,520
+|-
+!scope="row" |7
+|100%
+|1,200%
+|402,023
+|90
+|[[Battle Items#Rich Cat|Rich Cat]] +1
+|1,710
+|-
+!scope="row" |8
+|100%
+|1,600%
+|552,023
+|100
+|[[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|1,900
+|-
+!scope="row" |9
+|100%
+|2,000%
+|752,023
+|110
+|1,000,000 XP
+|2,090
+|-
+!scope="row" |10
+|100%
+|2,500%
+|1,002,023
+|120
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,280
+|}
+
+==Strategy==
+[[Sunrise Doge]] is a metal enemy, so use fast critical hitters like [[Catornado (Super Rare Cat)|Catornado]], [[Jurassic Cat (Rare Cat)|Jurassic Cat]] or, better, [[Crazed Moneko (Special Cat)|Crazed Moneko]] to defeat it as soon as possible, as to avoid dealing with him and more than one Rabbit Doge at once. The Rabbit Doges can be easily defeated with [[:Category:Rusher-class Cats|Rusher]] units, most preferably [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]; who, at level 30, can one-shot every enemy consistently. However, on Level 10, the Rabbit Doges can actually survive from a level 30 Awakened Bahamut's first hit.
+
+To stall the enemies, bring many meatshields and/or a good staller for traitless ([[Suntan Cat (Super Rare Cat)|Suntan]], [[Healer (Special Cat)|Healer Cat]] etc.). [[Curling Cat (Rare Cat)|Cleanerbot Cat]] is also useful, but gets shredded too quickly in the last stages.
+
+When it comes to attackers, [[Teacher BearCat (Rare Cat)|Teacher BearCat]] shines the most, but it is easy enough to win by just stacking any midranger with area attack, such as [[Mer-Cat (Rare Cat)|Cameraman]], as long as they don't cost too much.
+
+A good strategy that will easily beat Level 10 is equip 7-8 spammable cheap meatshields, and Awakened Bahamut Cat. Cat CPU and Rich Cat are recommended. When you enter battle, save up around 4500 cents. Spam a bit of meatshields so Bahamut doesn't rush forward and die, then buy Awakened Bahamut. Turn on CPU, and sit back while your meatshields shred through Angry Sun.
+
+==Reference==
+*https://battlecats-db.com/stage/s24059.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Event]]
+[[Category:Event Stages]]

@@ -1,0 +1,85 @@
+:''This article is about the enemy. For the Cat Unit, see [[Orthos (Super Rare Cat)]].''
+'''Orthos''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Merc Storia Collaboration Event]]. He was added in [[Version 6.2 Update|Version 6.2]].
+
+{{Enemy Info
+|name = Orthos
+|image = E 348.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 250¢ - 987¢
+}}
+
+==Enemy==
+A very weak enemy that mostly just serves as meatshields for stronger enemies like [[Todomeki (Enemy)|Todomeki]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]:
+**[[Feathered]] (100%)
+**[[On Holy Wings]] (100%)
+**[[Blade Ritual]] (600%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (1,000%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (1,100%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (1,200%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (1,300%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (1,400%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (1,440%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (1,480%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (1,520%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (1,560%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (1,600%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]:
+**[[Feathered]] (100%)
+**[[On Holy Wings]] (100%)
+**[[Blade Ritual]] (600%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Orthos
+|Health = 4800
+|Attack Power = 400
+|Attack Range = 270
+|Attack Type = Area
+|Time Between Attacks = 67
+|Movement Speed = 16
+|Knockback = 3
+|Foreswing = 16
+|Backswing = 25
+|Ability = -
+|Element = Floating
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|348 e ja.png|MediaWiki:Custom-AnimationViewer/348 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+348 e.png|Orthos' spritesheet (EN/KR)
+348 e ja.png|Orthos' spritesheet (JP)
+348 e tw.png|Orthos' spritesheet (TW)
+IdleOrutosoJP.gif|Orthos's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/350.html
+
+----
+{{EnemyNav|Titi Cat|Michelia}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

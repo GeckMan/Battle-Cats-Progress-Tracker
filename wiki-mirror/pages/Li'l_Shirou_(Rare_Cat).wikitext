@@ -1,0 +1,130 @@
+:''For the other Shirou from the same event, see [[Shirou the Cat (Special Cat)]].''
+'''Li'l Shirou''' is a [[:Category:Rare Cats|Rare Cat]] that was introduced in [[Version 6.6 Update|Version 6.6]] and is unlockable by beating any fixed [[Fate/Stay Night: Heaven's Feel Collaboration Event|Fate/Stay Night: Heaven's Feel]] collaboration event stage.
+
+{{Cat Info
+|ID = 373
+|rarity = RR
+|name1 = Li'l Shirou
+|name2 = Li'l Shirou CC
+}}
+
+==Evolution==
+Evolves into '''Li'l Shirou CC''' at level 10.
+
+==Strategy/Usage==
+Li'l Shirou is completely unusable for a anti-trait meatshield or attacker due to having long cooldown, awkward range and low DPS. While it does have decent health, the overall extreme aggression of black pushers will even overwhelm specialist meatshields like [[Nono (Rare Cat)|Nono]] and [[Ancient Egg: N103 (Rare Cat)|Gas Mask Cat]] or tanks like [[Maeda Keiji (Uber Rare Cat)|Keiji]] in seconds if given the chance. While it is true that most black threats can be countered by disabling them with [[Flower Cat (Special Cat)|Bomber]], Li'l Shirou cannot even serve as your second line of defense if they indeed break free and cannot be quickly replaced to efficiently stall them in a pinch. Even as a melee unit, Li'l Shirou is outclassed by a talented [[Dom Cat (Special Cat)|Dark Lazer]], who has lower range and single target, but a much faster attack rate and overall DPS which allows her to handle tougher enemies better.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 373
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni373 f00.png
+|Image2 = Uni373 c00.png
+|Name1 = Li'l Shirou
+|Desc1 = Joining the fight from Fate/stay night [HF]!<br>Dreams of defending justice like his adopted<br>father. Tough vs. Dark enemies.
+|Name2 = Li'l Shirou CC
+|Desc2 = Joining the fight from Fate/stay night [HF]!<br>Joined the Holy Grail War after summoning<br>his Servant, Saber. Tough vs. Dark enemies.
+|Name1 (JP) = ちび士郎 (Chibi Shirō, Chibi Shirou)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>養父の影響で正義の味方を目指す少年<br>黒い敵に打たれ強い
+|Transl1 (JP) = Participate in Fate / stay night [HF]!
+A boy who wants to be a friend of justice under the influence of his adoptive father
+|Name2 (JP) = ちび士郎CC (Chibi Shirō CC, Chibi Shirou CC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>偶然セイバーを召喚し、聖杯戦争に巻き込まれる<br>黒い敵に打たれ強い
+|Transl2 (JP) = Participate in Fate / stay night [HF]!
+Summons Saber by chance and gets involved in the Holy Grail War
+Strong hit by Dark enemies
+|Name1 (TW) = 小小士郎
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>受養父影響立志成為正義一方的少年<br>對上黑色敵人很耐打
+|Name2 (TW) = 小小士郎CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>偶然召喚Saber，捲入戰爭中<br>對上黑色敵人很耐打
+|Name1 (KR) = 꼬마 시로
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>양아버지의 영향으로 정의의 사자가 되고자 하는 소년<br>검은 적에 맷집이 좋다
+|Name2 (KR) = 꼬마 시로CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>우연히 세이버를 소환하여 성배전쟁에 휘말렸다<br>검은 적에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 600¢
+*Chapter 2: 900¢
+*Chapter 3: 1200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Shirou
+|Normal Base HP = 750
+|Normal Base AP = 150,150
+|Normal Range = 275
+|Normal Foreswing = 28,33
+|Normal Attack Cooldown = 105
+|Normal Attack Length = 59
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 1000
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,550 at 28f <sup>0.93s</sup>, 2,550 at 33f <sup>1.1s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Li'l Shirou CC
+|Evolved Base HP = 750
+|Evolved Base AP = 150,150
+|Evolved Range = 275
+|Evolved Foreswing = 28,33
+|Evolved Attack Cooldown = 105
+|Evolved Attack Length = 59
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 1000
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,550 at 28f <sup>0.93s</sup>, 2,550 at 33f <sup>1.1s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 750 HP
+|val-Normal-Attack Power = 300 damage<br>(65.22 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 138f <sub>4.6 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 12,750 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(1,108.7 DPS)
+|val-Evolved-Health = 12,750 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(1,108.7 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 138f <sub>4.6 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni373 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/374.html
+
+----
+{{CatNav|Illya the Cat|Li'l Sakura}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Cats with Resistant ability]]

@@ -1,0 +1,88 @@
+:''This article's name is not official.''
+The '''Relic Doge Base''' is an animated [[Enemy Bases|Enemy Base]] that only appears in [[Uncanny Legends]] and [[Zero Legends]]. It first appears in [[Cats in the Stars]], the final stage of [[Morningstar Isle]]. It was added in [[Version 9.7 Update|Version 9.7]].
+
+{{Enemy Info
+|name = Relic Doge Base
+|image = E 522.png
+|first appearance = '''UL''': [[Cats in the Stars|Sub-chapter 26 - Cats in the Stars]]
+|latest appearance = '''ZL''': [[Putrid Prison|Sub-chapter 13 - Putrid Prison]]
+|money drop = N/A
+}}
+
+==Enemy==
+This base can do a very weak attack from 2000 range that will [[Curse|curse]] all cats in its range. Like other animated bases, it is immune to all effects besides [[Surge Attack|Surges]] and [[Explosion]]s, and is a [[:Category:Typeless Enemies|Typeless]] enemy, not a [[:Category:Relic Enemies|Relic]].
+
+==Strategy==
+[[:Category:Cats with Curse Immunity|Curse-immune cats]] are helpful along with any [[:Category:Resist Curse Cats|Resist Curse Cats]] if you have spare NP lying around. These aside, the Relic Doge Base has two other weaknesses. Its curse lacks 100% uptime, and so leaves your units with a window of opportunity, more so if you time them well. In all its appearances one can simply choose to fight outside of its range, preventing it from spoiling an attack. Units that can fire [[:Category:Surge Attack Cats|Surges]] and/or [[:Category:Explosion Cats|Explosions]] can deal some extra damage to it, due to the aforementioned lack of Immunity to those abilites.
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 26-6: [[Cats in the Stars]] (50,000%)
+*Stage 27-1: [[The Prince's Woods]] (50,000%)
+*Stage 27-3: [[Wicked Beauty]] (40,000%)
+*Stage 27-5: [[Guild of Masks]] (50,000%)
+*Stage 32-1: [[Spiralling Ring]] (40,000%)
+*Stage 32-2: [[Payday the 13th]] (40,000%)
+*Stage 32-3: [[Normal Activity]] (40,000%)
+*Stage 32-4: [[Darkened House]] (40,000%)
+*Stage 32-5: [[Internal Scream]] (40,000%)
+*Stage 32-6: [[A Pile of Guts]] (40,000%)
+*Stage 41-5: [[Fire Kingdom Dynamite]] (40,000%)
+*Stage 46-1: [[Stylist Mononoke]] (40,000%)
+*Stage 46-6: [[Inn-Dependence Day]] (40,000%)
+
+===[[Zero Legends]]===
+*Stage 13-2: [[Putrid Prison]] (40,000%)
+*Stage 32-2: [[Shadows Abound]] (50,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Relic Doge Base
+|Health = 3000
+|Attack Power = 1
+|Attack Range = 2000
+|Attack Type = Area
+|Time Between Attacks = 451
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 100
+|Backswing = 31
+|Ability = {{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+:''*Note that these are the Relic Doge Base's stats at 100% strength magnification; it does not appear below 40,000% strength magnification in any stage it appears in.''
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+522 e.png|The Relic Doge Base's spritesheet
+green doggy base.gif|The Relic Doge Base's attack animation
+</gallery>
+
+==Trivia==
+*The Relic Doge Base is one of the five non-[[:Category:Relic Enemies|Relic]] enemies to have the Curse ability, the others being [[Master Uril (Enemy)|Master Uril]], [[Malevolent Dark Cat]], [[Cafeteria Cat (Enemy)|Cafeteria Cat]] and [[Sage of Selection Darvin]].
+**Relic Doge Base is exceptional among these, as they resemble a Relic enemy and are only not one because bases cannot have standard traits.
+
+==Reference==
+*https://battlecats-db.com/enemy/524.html
+
+----
+{{EnemyNav|Johnnyleon|Happy Birthday Cake}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Animated Enemy Bases]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

@@ -1,0 +1,22 @@
+{{Documentation}}
+For writing the rules of [[Otherworld Colosseum]] stages.
+
+==Usage==
+<pre>
+{{ColosseumRule|Trust Fund}}
+</pre>
+yields
+{{ViewSource|{{ColosseumRule|Trust Fund}}}}
+
+E.g. see [[Round 1 (Trust Fund)]].
+
+<pre>
+{{ColosseumRule|Uniform Motion|12}}
+</pre>
+yields
+{{ViewSource|{{ColosseumRule|Uniform Motion|12}}}}
+
+E.g. see [[Round 1 (Uniform Motion)]].
+
+==Updating data==
+Data is taken from [[Otherworld Colosseum/rules]], which uses the [[Template:ColosseumRule/data|ColosseumRule/data]] template.

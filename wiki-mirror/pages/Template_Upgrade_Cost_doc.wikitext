@@ -1,0 +1,74 @@
+{{Documentation}}
+__NOTOC__
+Template for XP tables, more tables may be added in the future.
+<tabber>
+Preset Tables=
+__NOEDITSECTION__
+==Instruction==
+<pre>{{Upgrade Cost|RR}} = Standard Rare Cats
+{{Upgrade Cost|SR}} = Standard Super Rare Cats
+{{Upgrade Cost|UR}} = Standard Uber Rare Cats
+{{Upgrade Cost|LR}} = Standard Legend Rare Cats
+{{Upgrade Cost|EXL}} = Standard Legend Cats
+{{Upgrade Cost|EX1}} = Unusual XP Table 1
+{{Upgrade Cost|EX2}} = Unusual XP Table 2
+{{Upgrade Cost|EX3}} = Unusual XP Table 3
+{{Upgrade Cost|EX4}} = Unusual XP Table 4
+{{Upgrade Cost|EX5}} = Unusual XP Table 5</pre>
+==Table List==
+{{#tag:tabber|
+Common Tables=
+<b style="font-size:20px">Standard Rare Cats</b>{{Upgrade Cost|RR|NF}}
+
+<b style="font-size:20px">Standard Super Rare Cats</b>{{Upgrade Cost|SR|NF}}
+
+<b style="font-size:20px">Standard Uber Rare Cats</b>{{Upgrade Cost|UR|NF}}
+
+<b style="font-size:20px">Standard Legend Rare Cats</b>{{Upgrade Cost|LR|NF}}
+
+<b style="font-size:20px">Standard Legend Cats</b>{{Upgrade Cost|EXL|NF}}
+{{!}}-{{!}}
+Unusual Tables=
+<b style="font-size:20px">XP Table 1</b>{{Upgrade Cost|EX1|NF}}
+
+<b style="font-size:20px">XP Table 2</b>{{Upgrade Cost|EX2|NF}}
+
+<b style="font-size:20px">XP Table 3</b>{{Upgrade Cost|EX3|NF}}
+
+<b style="font-size:20px">XP Table 4</b>{{Upgrade Cost|EX4|NF}}
+
+<b style="font-size:20px">XP Table 5</b>{{Upgrade Cost|EX5|NF}}
+}}
+|-|
+Manual Input Table=
+__NOEDITSECTION__
+==Documentation==
+<pre>{{Upgrade Cost|MIX}} = Manual Input XP Table</pre>
+A blank XP table used to input values manually. Use when units don't follow a preset XP pattern.
+==Demonstration==
+Example: [[Crazed Cat (Super Rare Cat)|Crazed Cat]]
+<pre>{{Upgrade Cost|MIX
+|0
+|64,000
+|66,000
+|69,000
+|72,000
+|75,000
+|79,000
+|83,000
+|88,000
+|94,000
+|124,000}}</pre>
+{{Upgrade Cost|MIX
+|0
+|64,000
+|66,000
+|69,000
+|72,000
+|75,000
+|79,000
+|83,000
+|88,000
+|94,000
+|124,000}}
+</tabber>

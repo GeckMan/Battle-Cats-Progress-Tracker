@@ -1,0 +1,23 @@
+{{#invoke:Navbox|main
+|template = Template:Y! Mobile
+|title = [[Y! Mobile Collaboration Event]]
+|navbox_class = y-mobile
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Futenyan (Rare Cat)|Futenyan]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Futenyan (Enemy)|Futenyan]]
+
+|header3 = Stages
+|group3 = Futenyan Appears
+|list3 =
+*[[Too Much Cat]]
+*[[Further Fellow Cat]]
+}}<templatestyles src="Y! Mobile/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Y! Mobile]]}}<noinclude>[[Category:Navboxes]]</noinclude>

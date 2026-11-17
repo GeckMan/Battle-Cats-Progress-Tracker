@@ -1,0 +1,86 @@
+{{EnemiesAppearing|Rain D.|Doge Dark|Gabriel|Duche|Heavenly Hippoe|Gory Dark|Christmas D.}}
+'''War on Xmas''' is the fifth and final stage in [[MERRY CATMAS!#Jolly St. Nick|Jolly St. Nick]].
+
+{{Stage Info
+|stage name = [[File:rc054.png]]
+[[File:Mapsn081 04 s en.png]]
+|stage location = [[File:Mapname081 s en.png]]
+|energy = 100
+|enemy castle hp = 450,000 HP
+|enemies = {{Magnification|Rain D.|150%
+|Doge Dark|100%
+|Gabriel|200%
+|Duche|100%
+|Gabriel|100%
+|Doge Dark|200%
+|Heavenly Hippoe|100%
+|Gory Dark|100%
+|Christmas D.|200%}}
+|boss = {{Magnification|Duche|100%}}
+|enemies2 = {{Magnification|Rain D.|225%
+|Doge Dark|150%
+|Gabriel|300%
+|Duche|150%
+|Gabriel|150%
+|Doge Dark|300%
+|Heavenly Hippoe|150%
+|Gory Dark|150%
+|Christmas D.|300%}}
+|boss2 = {{Magnification|Duche|150%}}
+|enemies3 = {{Magnification|Rain D.|300%
+|Doge Dark|200%
+|Gabriel|400%
+|Duche|200%
+|Gabriel|200%
+|Doge Dark|400%
+|Heavenly Hippoe|200%
+|Gory Dark|200%
+|Christmas D.|400%}}
+|boss3 = {{Magnification|Duche|200%}}
+|treasure = - [[A Gift of Cats (Rare Cat)|A Gift of Cats]] (10%, 1 time)
+|score reward = '''7,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''4,500''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''2,500''': 250,000 XP<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 3,000 XP
+|width = 4,500
+|max enemies = 8
+|jpname = Christmas on the Battlefield
+|script = 戦場のクリスマス
+|romaji = Senjō no kurisumasu
+|star = 3
+|event = [[MERRY CATMAS!]]
+|event-chapter = [[MERRY CATMAS!#Jolly St. Nick|Jolly St. Nick]]
+|difficulty = ★7
+|prev stage = [[Coup d'Workshop]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Rain D.]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Rain D.]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Rain D.]] spawns after 80 seconds<sup>2,400f</sup>.
+*Infinite [[Doge Dark]]s (100%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Gabriel]]s (200%) spawn after 66.67 seconds<sup>2,000f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*Infinite [[Duche]]s spawn after 100 seconds<sup>3,000f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Duche]] spawns as the boss.
+**3 [[Gabriel]]s (100%) spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**3 [[Doge Dark]]s (200%) spawn, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+**3 [[Gory Dark]]s spawn, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+**5 [[Christmas D.|Christmas Ds]] spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+To prevent all of the other reindeer from overwhelming you, it is helpful to wait 80 seconds for all the Rain D.'s to spawn and kill them first before hitting the base. They can be stalled by alternating cheap meatshields so that multiple aren't killed by the same attack, and then using stacked [[Long Distance]] units to continuously knockback them. The same strategy works with the base hit bosses and support, although playing more aggressively helps to control the burst of enemies, especially since Christmas D.'s are weak to the multitude of fast [[Anti-Red Cats]], most notably [[Courier Cat]]
+
+==Trivia==
+*War on Xmas's Japanese name, Christmas on the Battlefield, is a reference to ''Merry Christmas on the Battlefield'', the Japanese name of the movie ''[[wikipedia:Merry Christmas, Mr. Lawrence|Merry Christmas, Mr. Lawrence]]''.
+
+==Reference==
+*https://battlecats-db.com/stage/s01081-05.html
+
+{{SpecialStages List}}
+[[Category:Christmas Stages]]
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

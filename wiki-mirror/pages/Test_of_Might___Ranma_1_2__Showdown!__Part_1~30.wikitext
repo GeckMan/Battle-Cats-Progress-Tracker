@@ -1,0 +1,725 @@
+<tabber>
+Showdown!: Part 1~10 =
+{{EnemiesAppearing|Croco|Gory|Sir Seal|Ryoga Hibiki|Akane Tendo|Ranma Saotome (M)}}
+
+{{Stage Info
+|stage name = [[File:rc145.png]]
+[[File:Mapsn008 00 ca en.png]]
+|stage location = [[File:Mapname012 ca en.png]]
+|enemies = {{Magnification|Croco|0
+|Gory|0
+|Sir Seal|0
+|Ryoga Hibiki|0
+|Akane Tendo|0}}
+|boss = {{Magnification|Ranma Saotome (M)|0}}
+|restriction = [[No Continues]]
+|width = 4,500
+|max enemies = 9
+|jpname = Showdown! PART.X
+|script = 対決！PART.X
+|romaji = Taiketsu！PART.X
+|event = [[Ranma 1/2 Collaboration Event]]
+|event-chapter = [[Test of Might: "Ranma 1/2"]]
+|require = Complete [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*The base HP starts at 30,000, increases to 60,000, then 100,000. After that, it increases by 50,000 with each stage.
+*10 [[Croco]]s spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*1 [[Gory]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Sir Seal]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ranma Saotome (M) (Enemy)|Ranma Saotome (M)]] spawns as the boss.
+**1 [[Ryoga Hibiki (Enemy)|Ryoga Hibiki]] spawns.
+**1 [[Akane Tendo (Enemy)|Akane Tendo]] spawns.
+**2 [[Gory|Gories]] spawn, delay 10 seconds<sup>300f</sup>.
+**2 [[Sir Seal]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 10 seconds<sup>300f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Showdown!: Part
+! colspan="9" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" style="text-align: center;" |Ryoga Hibiki
+! colspan="2" scope="col" style="text-align: center;" |Akane Tendo
+! colspan="2" scope="col" style="text-align: center;" |Ranma Saotome (M)
+! rowspan="2" scope="col" |Croco
+! rowspan="2" scope="col" |Gory
+! rowspan="2" scope="col" |Sir Seal
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+|-
+! scope="row" |1
+|5%
+|3%
+|5%
+|3%
+|5%
+|3%
+|100%
+|100%
+|100%
+|30
+|Treasure Radar +1
+|570
+|-
+! scope="row" |2
+|29%
+|9%
+|29%
+|9%
+|29%
+|9%
+|175%
+|175%
+|175%
+|40
+|Catamin [A] +3
+|760
+|-
+! scope="row" |3
+|53%
+|15%
+|53%
+|15%
+|53%
+|15%
+|250%
+|250%
+|250%
+|50
+|Cat Ticket +1
+|950
+|-
+! scope="row" |4
+|77%
+|21%
+|77%
+|21%
+|77%
+|21%
+|325%
+|325%
+|325%
+|60
+|Bricks +5
+|1,140
+|-
+! scope="row" |5
+|100%
+|25%
+|100%
+|25%
+|100%
+|25%
+|400%
+|400%
+|400%
+|70
+|XP +250,000
+|1,330
+|-
+! scope="row" |6
+|116%
+|40%
+|116%
+|40%
+|116%
+|40%
+|560%
+|560%
+|560%
+|70
+|Catamin [B] +3
+|1,330
+|-
+! scope="row" |7
+|132%
+|55%
+|132%
+|55%
+|132%
+|55%
+|720%
+|720%
+|720%
+|80
+|Feathers +5
+|1,520
+|-
+! scope="row" |8
+|148%
+|70%
+|148%
+|70%
+|148%
+|70%
+|880%
+|880%
+|880%
+|80
+|Coal +5
+|1,520
+|-
+! scope="row" |9
+|164%
+|85%
+|164%
+|85%
+|164%
+|85%
+|1,040%
+|1,040%
+|1,040%
+|80
+|Cat Ticket +2
+|1,520
+|-
+! scope="row" |10
+|180%
+|100%
+|180%
+|100%
+|180%
+|100%
+|1,200%
+|1,200%
+|1,200%
+|90
+|XP +500,000
+|1,710
+|}
+
+|-|
+Showdown!: Part 11~20 =
+{{EnemiesAppearing|B.B.Bunny|Pigge|Squire Rel|Those Guys|Mousse|Shampoo|Ryoga Hibiki|Akane Tendo|Ranma Saotome (M)}}
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn008 00 ca en.png]]
+|stage location = [[File:Mapname012 ca en.png]]
+|enemies = {{Magnification|B.B.Bunny|0
+|Pigge|0
+|Squire Rel|0
+|Those Guys|0
+|Mousse|0
+|Shampoo|0
+|Ryoga Hibiki|0
+|Akane Tendo|0}}
+|boss = {{Magnification|Ranma Saotome (M)|0}}
+|restriction = [[No Continues]]
+|width = 4,500
+|max enemies = 9
+|jpname = Showdown! PART.X
+|script = 対決！PART.X
+|romaji = Taiketsu！PART.X
+|event = [[Ranma 1/2 Collaboration Event]]
+|event-chapter = [[Test of Might: "Ranma 1/2"]]
+|require = Complete [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*The base HP starts at 500,000, it increases by 50,000 with each stage.
+*10 [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150~300f</sup>.
+*1 [[Pigge]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Pigge]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Pigge]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ranma Saotome (M) (Enemy)|Ranma Saotome (M)]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 5~10 seconds<sup>150~300f</sup>.
+**Infinite [[Those Guys]] spawn, delay 5~10 seconds<sup>150~300f</sup>.
+**1 [[Mousse (Enemy)|Mousse]] spawns.
+**1 [[Shampoo (Enemy)|Shampoo]] spawns.
+**1 [[Ryoga Hibiki (Enemy)|Ryoga Hibiki]] spawns.
+**1 [[Akane Tendo (Enemy)|Akane Tendo]] spawns.
+**6 [[Pigge]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**12 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**12 [[Those Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Showdown!: Part
+! colspan="14" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" style="text-align: center;" |Mousse
+! colspan="2" scope="col" style="text-align: center;" |Shampoo
+! colspan="2" scope="col" style="text-align: center;" |Ryoga Hibiki
+! colspan="2" scope="col" style="text-align: center;" |Akane Tendo
+! colspan="2" scope="col" style="text-align: center;" |Ranma Saotome (M)
+! rowspan="2" scope="col" |B.B.Bunny
+! rowspan="2" scope="col" |Pigge
+! rowspan="2" scope="col" |Squire Rel
+! rowspan="2" scope="col" |Those Guys
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+|-
+! scope="row" |11
+|120%
+|90%
+|120%
+|90%
+|120%
+|90%
+|120%
+|90%
+|220%
+|90%
+|1,360%
+|1,360%
+|1,360%
+|1,360%
+|90
+|Catamin [C] +3
+|1,710
+|-
+! scope="row" |12
+|145%
+|111%
+|145%
+|111%
+|145%
+|111%
+|145%
+|111%
+|265%
+|111%
+|1,520%
+|1,520%
+|1,520%
+|1,520%
+|100
+|Sprockets +5
+|1,900
+|-
+! scope="row" |13
+|170%
+|132%
+|170%
+|132%
+|170%
+|132%
+|170%
+|132%
+|310%
+|132%
+|1,680%
+|1,680%
+|1,680%
+|1,680%
+|100
+|Gold +5
+|1,900
+|-
+! scope="row" |14
+|195%
+|153%
+|195%
+|153%
+|195%
+|153%
+|195%
+|153%
+|355%
+|153%
+|1,840%
+|1,840%
+|1,840%
+|1,840%
+|100
+|Cat Ticket +3
+|1,900
+|-
+! scope="row" |15
+|220%
+|175%
+|220%
+|175%
+|220%
+|175%
+|220%
+|175%
+|400%
+|175%
+|2,000%
+|2,000%
+|2,000%
+|2,000%
+|110
+|XP +750,000
+|2,090
+|-
+! scope="row" |16
+|240%
+|187%
+|240%
+|187%
+|240%
+|187%
+|240%
+|187%
+|440%
+|187%
+|2,200%
+|2,200%
+|2,200%
+|2,200%
+|110
+|Meteorite +5
+|2,090
+|-
+! scope="row" |17
+|260%
+|199%
+|260%
+|199%
+|260%
+|199%
+|260%
+|199%
+|480%
+|199%
+|2,400%
+|2,400%
+|2,400%
+|2,400%
+|130
+|Leadership +1
+|2,470
+|-
+! scope="row" |18
+|280%
+|211%
+|280%
+|211%
+|280%
+|211%
+|280%
+|211%
+|520%
+|211%
+|2,600%
+|2,600%
+|2,600%
+|2,600%
+|130
+|Beast Bones +5
+|2,470
+|-
+! scope="row" |19
+|300%
+|223%
+|300%
+|223%
+|300%
+|223%
+|300%
+|223%
+|560%
+|223%
+|2,800%
+|2,800%
+|2,800%
+|2,800%
+|130
+|XP +1,000,000
+|2,470
+|-
+! scope="row" |20
+|320%
+|235%
+|320%
+|235%
+|320%
+|235%
+|320%
+|235%
+|600%
+|235%
+|3,000%
+|3,000%
+|3,000%
+|3,000%
+|150
+|Rare Ticket +1
+|2,850
+|}
+
+|-|
+Showdown!: Part 21~30 =
+{{EnemiesAppearing|Gabriel|Doge Dark|Akane Tendo|Ryoga Hibiki|Mousse|Ranma Saotome (M)|Shampoo}}
+
+{{Stage Info
+|stage name = [[File:rc017.png]]
+[[File:Mapsn008 00 ca en.png]]
+|stage location = [[File:Mapname012 ca en.png]]
+|enemies = {{Magnification|Gabriel|0
+|Doge Dark|0
+|Mousse|0
+|Ranma Saotome (M)|0
+|Ryoga Hibiki|0
+|Akane Tendo|0}}
+|boss = {{Magnification|Shampoo|0}}
+|restriction = [[No Continues]]
+|width = 5,500
+|max enemies = 7
+|jpname = Showdown! PART.X
+|script = 対決！PART.X
+|romaji = Taiketsu！PART.X
+|event = [[Ranma 1/2 Collaboration Event]]
+|event-chapter = [[Test of Might: "Ranma 1/2"]]
+|require = Complete [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*The base HP starts at 1,000,000, it increases by 50,000 with each stage.
+*5 [[Gabriel]]s spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150~300f</sup>.
+*5 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shampoo (Enemy)|Shampoo]] spawns as the boss.
+**1 [[Akane Tendo (Enemy)|Akane Tendo]] spawns.
+**1 [[Ryoga Hibiki (Enemy)|Ryoga Hibiki]] spawns.
+**1 [[Mousse (Enemy)|Mousse]] spawns.
+**1 [[Ranma Saotome (M) (Enemy)|Ranma Saotome (M)]] spawns.
+**22 [[Doge Dark]]s spawn.
+**22 [[Gabriel]]s spawn.
+**Infinite [[Doge Dark]]s spawn, delay 6.67~13.33 seconds<sup>200~400f</sup>.
+**Infinite [[Gabriel]]s spawn, delay 6.67~13.33 seconds<sup>200~400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Showdown!: Part
+! colspan="12" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" style="text-align: center;" |Mousse
+! colspan="2" scope="col" style="text-align: center;" |Shampoo
+! colspan="2" scope="col" style="text-align: center;" |Ryoga Hibiki
+! colspan="2" scope="col" style="text-align: center;" |Akane Tendo
+! colspan="2" scope="col" style="text-align: center;" |Ranma Saotome (M)
+! rowspan="2" scope="col" |Doge Dark
+! rowspan="2" scope="col" |Gabriel
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+!HP
+!AP
+|-
+! scope="row" |21
+|320%
+|235%
+|320%
+|235%
+|320%
+|235%
+|320%
+|235%
+|600%
+|235%
+|800%
+|400%
+|150
+|Catseyes [Special] +5
+|2,850
+|-
+! scope="row" |22
+|338%
+|246%
+|338%
+|246%
+|338%
+|246%
+|338%
+|246%
+|633%
+|246%
+|844%
+|411%
+|160
+|Catseyes [Rare] +5
+|3,040
+|-
+! scope="row" |23
+|356%
+|257%
+|356%
+|257%
+|356%
+|257%
+|356%
+|257%
+|666%
+|257%
+|888%
+|422%
+|160
+|Catseyes [Super Rare] +5
+|3,040
+|-
+! scope="row" |24
+|374%
+|268%
+|374%
+|268%
+|374%
+|268%
+|374%
+|268%
+|699%
+|268%
+|932%
+|433%
+|170
+|XP +1,250,000
+|3,230
+|-
+! scope="row" |25
+|392%
+|279%
+|392%
+|279%
+|392%
+|279%
+|392%
+|279%
+|732%
+|279%
+|976%
+|444%
+|170
+|Rare Ticket +1
+|3,230
+|-
+! scope="row" |26
+|410%
+|290%
+|410%
+|290%
+|410%
+|290%
+|410%
+|290%
+|765%
+|290%
+|1,200%
+|455%
+|180
+|Catseyes [Uber Rare] +5
+|3,420
+|-
+! scope="row" |27
+|428%
+|301%
+|428%
+|301%
+|428%
+|301%
+|428%
+|301%
+|798%
+|301%
+|1,064%
+|466%
+|180
+|Catseyes [Legend] +3
+|3,420
+|-
+! scope="row" |28
+|446%
+|312%
+|446%
+|312%
+|446%
+|312%
+|446%
+|312%
+|831%
+|312%
+|1,108%
+|477%
+|190
+|Ammonite +5
+|3,610
+|-
+! scope="row" |29
+|464%
+|323%
+|464%
+|323%
+|464%
+|323%
+|464%
+|323%
+|864%
+|323%
+|1,152%
+|488%
+|190
+|XP +1,500,000
+|3,610
+|-
+! scope="row" |30
+|480%
+|335%
+|480%
+|335%
+|480%
+|335%
+|480%
+|335%
+|900%
+|335%
+|1,200%
+|500%
+|200
+|Rare Ticket +1
+|3,800
+|}
+
+</tabber>
+
+==Strategy==
+Beyond level 10, bursting down Ranma Saotome (M) is essential, otherwise their backliners will destroy your backline. If you have enough [[:Category:Rusher-class Cats|rushers]] you should be able to knock him back once or twice before all the main collab bosses all appear. [[:Category:Wave Shield Cats|Wave Shield]] units like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] can be helpful, but lower-ranged ones are susceptible to be hit by Akane Tendo.
+
+==Reference==
+*https://battlecats-db.com/stage/s27012.html
+
+{{Ranma 1/2}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

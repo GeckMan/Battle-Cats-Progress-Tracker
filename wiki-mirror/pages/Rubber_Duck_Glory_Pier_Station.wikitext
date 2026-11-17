@@ -1,0 +1,61 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Squire Rel|Jackie Peng|Mooth|Emilia & Doge}}
+'''Rubber Duck Glory Pier Station''' is the second stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Light Rail|Kaohsiung Metro Light Rail]].
+{{Stage Info
+|stage name = [[File:rc157.png]]
+[[File:Mapsn184 01 c ja.png]]
+|stage location = [[File:Mapname184 c ja.png]]
+|energy = 75
+|enemy castle hp = 12,000 HP
+|enemies = {{Magnification|Squire Rel|100%
+|Jackie Peng|100%
+|Mooth|100%}}
+|boss = {{Magnification|Emilia & Doge|12%}}
+|enemies2 = {{Magnification|Squire Rel|150%
+|Jackie Peng|150%
+|Mooth|150%}}
+|boss2 = {{Magnification|Emilia & Doge|18%}}
+|enemies3 = {{Magnification|Squire Rel|200%
+|Jackie Peng|200%
+|Mooth|200%}}
+|boss3 = {{Magnification|Emilia & Doge|24%}}
+|treasure = - [[Emilia & Cat (Rare Cat)|Emilia & Cat]] (10%, 1 time)
+|score reward = '''8,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''5,000''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 2,250 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Rubber Duck Glory Pier Station
+|script = ラバーダックの光榮碼頭駅
+|romaji = Kokusai Kūkō Takao Kunigiwakijō Eki
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Light Rail|Kaohsiung Metro Light Rail]]
+|difficulty = ★2
+|prev stage = [[Transfer Station Hamasen Station]]
+|next stage = [[Sidewalk Origin Cianjhen Star Station]]
+}}
+
+==Battleground==
+*10 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Jackie Peng]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Jackie Peng]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Jackie Peng]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*1 [[Jackie Peng]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Emilia & Doge]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**4 [[Jackie Peng]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Mooth]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02184-02.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

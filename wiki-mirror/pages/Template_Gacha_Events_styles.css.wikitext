@@ -1,0 +1,26 @@
+.ranger-navbox.gacha-events {
+	--bg-navbox-title: linear-gradient(to bottom, #FFD700 0%, #EFD332 100%);
+
+	--title-color: #000;
+	--group-color: #000;
+}
+
+.ranger-navbox.gacha-events .ranger-header.normal {
+	background: linear-gradient(135deg, #c0c0c0 0%, #d3d3d3 25%, #d7d3d3 50%, #dcdcdc 75%, #c0c0c0 100%);
+}
+
+.ranger-navbox.gacha-events .ranger-header.rare {
+	background: linear-gradient(135deg, #ffa500 0%, #ffd700 25%, #FFF200 50%, #ffd700 75%, #ffa500 100%);
+}
+.ranger-navbox.gacha-events .ranger-group.rare {
+	background: oklch(92% 0.21 110);
+}
+
+.ranger-navbox.gacha-events .ranger-header.event {
+	background: linear-gradient(135deg, #dc143c 0%, #ff0000 25%, #f74100 50%, #ff0000 75%, #dc143c 100%);
+}
+.ranger-navbox.gacha-events .ranger-group.event {
+	background: #ffa07a;
+}
+
+/* [[Category:Template stylesheets]] */

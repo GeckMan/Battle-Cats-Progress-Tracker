@@ -1,0 +1,146 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Retsu Kaioh (Enemy)]].''
+'''Retsu Kaioh''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 790
+|rarity = UR
+|name1 = Retsu Kaioh
+|name2 = Retsu Kaioh CC
+}}
+
+==Evolution==
+Evolves into '''Retsu Kaioh CC''' at level 10.
+
+==Strategy/Usage==
+Retsu is intended to be a Red/Alien crowd controller, specifically tailored to [[:Category:Behemoth Enemies|Behemoths]]. However, he performs impressively even outside of his intended niche. He is capable of outranging many relevant target traits, while carrying high enough damage to play an attacking role in your lineup. If that wasn't enough, his immunity to [[Wave Attack|Waves]] even allows him usage against notoriously tricky [[:Category:Wave Attack Enemies|Wave Attackers]] such as [[Berserkory]], [[Elizabeth the LVIth]], [[Two Can]], and others.
+
+Against Behemoths, Retsu's performance sees a noticeable spike: Even though [[Casaurian Ahirujo]] is [[Immune to Freeze]], his DPS against Red Behemoths shoots up to 19,530 at level 30; Wave Immunity allows him to comfortably outrange [[Infernal Pegasus Deonil]], who isn't Immune to Freeze; and despite the fact that [[Crustaceous Scissorex]] outranges him through its [[Long Distance]] attacks, Retsu has more than enough effective HP to tank its attacks for extended periods of time.
+
+Overall, Retsu is a nifty unit to own. Although his [[Freeze]] rate is rather subpar, he makes up for it through his standout utility in many situations.
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 790
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni790 f00.png
+|Image2 = Uni790 c00.png
+|Name1 = Retsu Kaioh
+|Desc1 = Fighter who gained the title of Kaioh, the highest<br>mark in Chinese martial arts. Behemoth Slayer,<br>Strong vs. and may Freeze Red and Aliens.
+|Name2 = Retsu Kaioh CC
+|Desc2 = Joining from Baki! The greatest genius in the<br>4000-year history of Chinese martial arts pugilists.<br>Strong vs. and may Freeze Red and Aliens.
+|Name1 (JP) = 烈海王 (Retsu Kaiō, Kaiou Retsu)
+|Desc1 (JP) = 「範馬刃牙」から参戦ッッ！中国武術界における<br>高位の称号・海王を名に持つ拳雄。超獣特効を持ち<br>赤とエイリアンにめっぽう強くたまに動きを止める
+|Transl1 (JP) = Joining the war from "Baki Hanma"!!!<br>Master of the fist who holds the title of Kaiou, a<br>high-ranking title in the Chinese Kenpo world. Has Super-Beast Slayer,<br>very strong against Red and Aliens, occasionally stops their movement
+|Name2 (JP) = 烈海王CC (Retsu Kaiō CC, Kaiou Retsu)
+|Desc2 (JP) = 「範馬刃牙」から参戦ッッ！4000年を誇る中国拳法の<br>歴史上No.1といわれる天才。超獣特効を持ち<br>赤とエイリアンにめっぽう強くたまに動きを止める
+|Transl2 (JP) = Joining the war from "Baki Hanma"!!!<br>A genius said to be No.1 in the 4000-year history<br>of Chinese Kenpo. Has Super-Beast Slayer,<br>very strong against Red and Aliens, occasionally stops their movement
+|Name1 (TW) = 烈海王
+|Desc1 (TW) = 從「範馬刃牙」來參戰！有著中國武術界<br>頂點的稱號「海王」的拳雄。有超獸特效<br>善於攻擊紅敵與異星戰士，有時候能使其動作停止
+|Name2 (TW) = 烈海王CC
+|Desc2 (TW) = 從「範馬刃牙」來參戰！被稱作中國拳法<br>4000年歷史以來第一人的天才。有超獸特效<br>善於攻擊紅敵與異星戰士，有時候能使其動作停止
+|Name1 (KR) = 레츠 카이오
+|Desc1 (KR) = 「한마 바키」에서 참전! 중국무술계의<br>최고 칭호인 카이오를 부여받은 권웅. 초수 특효.<br>빨간 적과 에이리언에 엄청 강하고 가끔 움직임을 멈춘다
+|Name2 (KR) = 레츠 카이오CC
+|Desc2 (KR) = 「한마 바키」에서 참전! 4000년을 자랑하는<br>중국 권법의 역사상 넘버원이라 불리는 천재. 초수 특효.<br>빨간 적과 에이리언에 엄청 강하고 가끔 움직임을 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Retsu Kaioh
+|Normal Base HP = 1800
+|Normal Base AP = 900
+|Normal Range = 470
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 141
+|Normal Speed = 12
+|Normal KB = 4
+|Normal Cost = 2600
+|Normal Recharge = 4400
+|Normal Attack Type = Area
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Savage Blow}} 5% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Behemoth Slayer}} [[Behemoth Slayer]] (5% chance to dodge [[:Category:Behemoth Enemies|Behemoth]] enemies' attacks for 30f <sub>1 second</sub>)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Evolved Name = Retsu Kaioh CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 1200
+|Evolved Range = 470
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 141
+|Evolved Speed = 12
+|Evolved KB = 4
+|Evolved Cost = 2600
+|Evolved Recharge = 4400
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Savage Blow}} 10% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Behemoth Slayer}} [[Behemoth Slayer]] (5% chance to dodge [[:Category:Behemoth Enemies|Behemoth]] enemies' attacks for 30f <sub>1 second</sub>)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,800 HP
+|val-Normal-Attack Power = 900 damage<br>(191.49 DPS)
+|val-Normal-Attack Range = 470
+|val-Normal-Attack Frequency = 141f <sub>4.7 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(111f <sup>3.7s</sup> backswing)
+|val-Normal-Recharge Time = 146.67 ~ 137.87 seconds
+|val-Normal-MaxHP = 30,600 HP
+|val-Normal-MaxAttack = 15,300 damage<br>(3,255.32 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 20,400 damage<br>(4,340.43 DPS)
+|val-Evolved-Attack Range = 470
+|val-Evolved-Attack Frequency = 141f <sub>4.7 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(111f <sup>3.7s</sup> backswing)
+|val-Evolved-Recharge Time = 146.67 ~ 137.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni790 f00}}
+
+==Trivia==
+*In ''[[Baki Hanma Collaboration Event|Baki]]'', 海王 ''Kaiō'' is normally romanized as [[wikia:baki:Kaiou|Kaiou]], yet the collab in [[The Battle Cats]] has it romanized as Kaioh.
+*Retsu Kaioh is the first unit to have [[Behemoth Slayer]] in their Normal and Evolved Form.
+
+==Reference==
+*https://battlecats-db.com/unit/791.html
+
+----
+{{CatNav|Baki Hanma|Kaoru Hanayama}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Savage Blow Cats]]
+[[Category:Behemoth Slayer Cats]]
+[[Category:Cats with Wave Immunity]]

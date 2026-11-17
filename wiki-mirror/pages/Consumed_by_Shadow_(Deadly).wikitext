@@ -1,0 +1,73 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Squire Rel|Hyppoh|Helmut Krabbe|Imperator Sael|Zigge|Znache|Zoge|Saber Alter}}
+'''Consumed by Shadow (Deadly)''' is the second stage in [[Holy War: Saber Alter]].
+
+{{Stage Info
+|stage name = [[File:rc042.png]]
+[[File:Mapsn087 01 c en.png]]
+|stage location = [[File:Mapname087 c en.png]]
+|energy = 150
+|enemy castle hp = 750,000 HP
+|enemies = {{Magnification|Squire Rel|2,000%
+|Hyppoh|1,400%
+|Helmut Krabbe|1,400%
+|Imperator Sael|1,400%
+|Zigge|200%
+|Znache|200%
+|Zoge|200%}}
+|boss = {{Magnification|Saber Alter|100%}}
+|enemies2 = {{Magnification|Squire Rel|3,000%
+|Hyppoh|2,100%
+|Helmut Krabbe|2,100%
+|Imperator Sael|2,100%
+|Zigge|300%
+|Znache|300%
+|Zoge|300%}}
+|boss2 = {{Magnification|Saber Alter|150%}}
+|treasure = - [[Saber the Cat (Special Cat)|Saber the Cat]]'s [[True Form]] (50%, 1 time)
+|score reward = '''4,100''': 250,000 XP<br>
+'''2,400''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''500''': 100,000 XP
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 12
+|jpname = Knight in the Shadow Extreme
+|script = 影に落ちた騎士王 極ムズ
+|romaji = Kage ni Ochita Kishiō Goku Muzu
+|star = 2
+|event = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|event-chapter = [[Holy War: Saber Alter]]
+|difficulty = ★9
+|prev stage = [[Consumed by Shadow (Veteran)]]
+|next stage = [[Consumed by Shadow (Merciless)]]
+}}
+
+==Battleground==
+*20 [[Squire Rel]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*3 [[Hyppoh]]s spawn after 16.67 seconds<sup>500f</sup>, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*2 [[Helmut Krabbe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base reaches 99% HP:
+**1 [[Saber Alter (Enemy)|Saber Alter]] spawns as the boss.
+**2 [[Imperator Sael]]s spawn, delay 50 seconds<sup>1,500f</sup>.
+**3 [[Zigge]]s spawn, delay 30~40 seconds<sup>900f~1,200f</sup>.
+**6 [[Znache]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**Infinite [[Zoge]]s spawn, delay 30~40 seconds<sup>900f~1,200f</sup>.
+**Infinite [[Squire Rel]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+
+==Strategy==
+-
+
+==Walkthrough==
+{{Walkthrough
+|VhGihogZtjo|Novastrala|Starts at 0:51
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s02087-02.html
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Awakening Stages}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Awakening Stages]]
+[[Category:Timed Score Stages]]

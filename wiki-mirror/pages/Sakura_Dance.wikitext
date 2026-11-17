@@ -1,0 +1,73 @@
+{{EnemiesAppearing|Glowstick Guys|MikuDoge|MikuGory|MikuBear|Hatsune Miku|Sakura Miku}}
+'''Sakura Dance''' is the final stage in the [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]] stages.
+
+{{Stage Info
+|stage name = [[File:rc139.png]]
+[[File:Mapsn128 02 c en.png]]
+|stage location = [[File:Mapname128 c en.png]]
+|energy = 300
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Glowstick Guys|100%
+|MikuDoge|100%
+|MikuGory|100%
+|MikuBear|100%
+|Hatsune Miku|200%}}
+|boss = {{Magnification|Sakura Miku|100%}}
+|enemies2 = {{Magnification|Glowstick Guys|150%
+|MikuDoge|150%
+|MikuGory|150%
+|MikuBear|150%
+|Hatsune Miku|300%}}
+|boss2 = {{Magnification|Sakura Miku|150%}}
+|enemies3 = {{Magnification|Glowstick Guys|200%
+|MikuDoge|200%
+|MikuGory|200%
+|MikuBear|200%
+|Hatsune Miku|400%}}
+|boss3 = {{Magnification|Sakura Miku|200%}}
+|treasure = One of the following (unlimited):<br>
+- [[Battle Items#Speed Up|Speed Up]] +4<br>
+- [[Battle Items#Treasure Radar|Treasure Radar]] +2<br>
+- [[Battle Items#Rich Cat|Rich Cat]] +2<br>
+- [[Battle Items#Cat CPU|Cat CPU]] +4<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +2<br>
+- [[Battle Items#Sniper the Cat|Sniper the Cat]] +2
+|XP = 9,000 XP
+|width = 6,000
+|max enemies = 15
+|jpname = Sakura Dancing Sound
+|script = 桜舞う音色
+|romaji = Sakura Mau Neiro
+|star = 3
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]
+|difficulty = ★7
+|prev stage = [[Scent of Blossoms]]
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Glowstick Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[MikuDoge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[MikuGory|MikuGories]] spawn after 3.33 seconds<sup>100f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sakura Miku (Enemy)|Sakura Miku]] spawns as the boss.
+**15 [[MikuDoge]]s spawn, delay 10 seconds<sup>300f</sup>.
+**15 [[MikuDoge]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**2 [[MikuGory|MikuGories]] spawn, delay 13.33 seconds<sup>400f</sup>.
+**4 [[MikuGory|MikuGories]] spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**2 [[MikuBear]]s spawn, delay 30 seconds<sup>900f</sup>.
+**1 [[Hatsune Miku (Enemy)|Hatsune Miku]] spawns.
+
+==Strategy==
+Tanky high damage units with relatively short attack animations and short range make this level much easier. [[Rocker Cat (Rare Cat)|Ramen Cat]] is one such example.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], the first group of MikuDoges had a spawn pattern of 10~6.7 seconds instead of just 10. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s02128-03.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

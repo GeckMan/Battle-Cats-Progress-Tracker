@@ -1,0 +1,115 @@
+{{JPExclusive}}
+:''For other uses see, [[Rei (disambiguation)]].''
+'''Rei Uzumasa & Cat ''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 7.0 Update|Version 7.0]] and can be obtained as a login reward during the [[Get On! Kyoto City Subway Collaboration Event]].
+
+{{Cat Info
+|ID = 425
+|rarity = EX
+|name1 = Rei Uzumasa & Cat
+|name2 = Rei Uzumasa & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Rei Uzumasa & Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit has a similar role to [[Sunny Neneko (Super Rare Cat)|Sunny Neneko]], being an early-game counter against Metal enemies, particularly against ones with low health such as [[Metal Hippoe]], [[Pure Gold R.Ost]] and [[CyberFace|Cyberface]]. Due to her awful attack power, it's not recommended to use her against more powerful Metal Enemies such as [[Super Metal Hippoe]] or [[Sir Metal Seal]].
+
+Her use in mid to late-game is basically nonexistent as she's easily replaced by [[Cheerleader Cat (Super Rare Cat)|Cheerleader Cat]], who has much better health and damage. However, she is a Special Cat, so she may have use in 4-Crown stages if no alternatives are available.
+
+{{Job|Classification = Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 425
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni425 f00.png
+|Image2 = Uni425 c00.png
+|Name1 (JP) = 太秦麗&ネコ
+|Desc1 (JP) = 「地下鉄に乗るっ」から参戦！太秦萌の憧れの姉<br>語学力を生かし、京都市内で学芸員として働いている<br>必ずクリティカル攻撃を放つ
+|Transl1 (JP) = Joining the war from "Get on the Subway"! [[Moe Uzumasa & Cat (Rare Cat)|Moe Uzumasa]]'s longing sister<br>She uses her language skills to work as a curator in Kyoto City<br>Always unleashes a critical attack
+|Name2 (JP) = 太秦麗&ネコＣＣ
+|Desc2 (JP) = 「地下鉄に乗るっ」から参戦！<br>そこそこの酒豪で終電ギリギリまで飲むこともある<br>必ずクリティカル攻撃を放つ
+|Transl2 (JP) = Joining the war from "Get on the Subway"!<br>She's a bit of a drinker and sometimes drinks until the very last train<br>Always unleashes a Critical attack
+}}
+
+==Cost==
+*Chapter 1: 300円
+*Chapter 2: 450円
+*Chapter 3: 600円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rei Uzumasa & Cat
+|Normal Base HP = 300
+|Normal Base AP = 36
+|Normal Range = 300
+|Normal Foreswing = 68
+|Normal Attack Cooldown = 315
+|Normal Attack Length = 115
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 1200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]
+|Evolved Name = Rei Uzumasa & Cat CC
+|Evolved Base HP = 300
+|Evolved Base AP = 36
+|Evolved Range = 300
+|Evolved Foreswing = 68
+|Evolved Attack Cooldown = 315
+|Evolved Attack Length = 115
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 1200
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 36 damage<br>(2.82 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 383f <sub>12.77 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 68f <sup>2.27s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 612 damage<br>(47.94 DPS)
+|val-Evolved-Health = 5,100 HP
+|val-Evolved-Attack Power = 612 damage<br>(47.94 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 383f <sub>12.77 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 68f <sup>2.27s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni425 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/426.html
+
+----
+{{CatNav|Misa Ono & Cat|Mecha-Bun}}
+----
+
+{{Get On! Kyoto City Subway}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Single Attack Cats]]

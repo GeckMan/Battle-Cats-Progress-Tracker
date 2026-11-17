@@ -1,0 +1,163 @@
+{{JPExclusive}}
+:''This article is about the Cat unit, for the Enemy Unit, see [[Golem (Enemy)]] and [[Volcano Golem (Enemy)]].''
+'''Golem''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a [[Daily Bonus|Stamp Reward]] during the [[Castle & Dragon Collaboration Event]]. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 increased [[Slow]] chance.
+
+{{Cat Info
+|ID = 256
+|rarity = EX
+|name1 = Golem
+|name2 = Rabbit Golem
+|name3 = Volcano Golem
+}}
+
+==Evolution==
+Evolves into '''Rabbit Golem''' at level 10.
+
+Evolves into '''Volcano Golem''' when obtained from [[Road to Golem Evolution (Hard)|Road to Golem Evolution]] and is level 20 or above.
+
+==Strategy/Usage==
+Being the most expensive unit in the collab, his stats are very powerful for it; he is best used in [[Castle & Dragon Collaboration Event#Castle Dragon VS Castle Dragon|Castle Dragon VS Castle Dragon]] and early {{4c}} stages in [[Legend Stages|Stories of Legend]] where better alternatives are unavailable. Although his chance to slow all non-Floating enemies looks decent at first glance, his attack rate makes said ability very unreliable. Even with a fast attack rate, he would not be able to inflict the slow debuff all that well.
+
+{{Job|Classification = User Rank Dump & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 256
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni256 f00.png
+|Image2 = Uni256 c00.png
+|Image3 = Uni256 s00.png
+|Name1 (JP) = ゴーレム (Gōremu, Golem)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>巨大な拳から一撃を繰り出す。口癖で語尾に「アゴ」がつく<br>たまに浮いてる敵以外の動きを遅くする(範囲攻撃)
+|Transl1 (JP) = Joined the war from Castle & Dragon!<br>His hits come from his huge fists. Has a habit of adding "jaw" to the end of sentences<br>Occasionally Slows the movement of non-Floating enemies (Area Attack)
+|Name2 (JP) = うさぎゴーレム (Usagi Gōremu, Rabbit Golem)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>巨大うさぎとなったゴーレム<br>たまに浮いてる敵以外の動きを遅くする(範囲攻撃)
+|Transl2 (JP) = Joined the war from Castle & Dragon!<br>Golem became a huge rabbit<br>Occasionally Slows the movement of non-Floating enemies (Area Attack)
+|Name3 (JP) = ボルケーノゴーレム (Borukēno Gōremu, Volcano Golem)
+|Desc3 (JP) = 城とドラゴンから参戦！<br>火山の化身となったゴーレム<br>たまに浮いてる敵以外の動きを遅くする(範囲攻撃)
+|Transl3 (JP) = Joined the war from Castle & Dragon!<br>Golem became the incarnation of a volcano<br>Occasionally Slows the movement of non-Floating enemies (Area Attack)
+|Name1 (TW) = 巨魔像
+|Desc1 (TW) = 從城與龍來參戰！<br>用巨大的拳頭使出強力一擊。說話最後都會加一句「下巴」<br>有時候會讓飄浮以外的敵人動作變慢(範圍攻擊)
+|Name2 (TW) = 巨大兔玩偶魔像
+|Desc2 (TW) = 從城與龍來參戰！<br>變成一隻大兔子的巨魔像<br>有時候會讓飄浮以外的敵人動作變慢(範圍攻擊)
+|Name3 (TW) = 火山巨魔像
+|Desc3 (TW) = 從城與龍來參戰！<br>成為火山化身的巨魔像<br>有時候會讓飄浮以外的敵人動作變慢(範圍攻擊)
+}}
+
+==Cost==
+*Chapter 1: 1,600円
+*Chapter 2: 2,400円
+*Chapter 3: 3,200円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Golem
+|Normal Base HP = 1500
+|Normal Base AP = 875
+|Normal Range = 415
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 349
+|Normal Attack Length = 33
+|Normal Speed = 4
+|Normal KB = 1
+|Normal Cost = 1600
+|Normal Recharge = 2400
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Slow}} 10% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Rabbit Golem
+|Evolved Base HP = 1500
+|Evolved Base AP = 875
+|Evolved Range = 415
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 349
+|Evolved Attack Length = 33
+|Evolved Speed = 4
+|Evolved KB = 1
+|Evolved Cost = 1600
+|Evolved Recharge = 2400
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Slow}} 10% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|True Name = Volcano Golem
+|True Base HP = 1500
+|True Base AP = 875
+|True Range = 415
+|True Foreswing = 16
+|True Attack Cooldown = 349
+|True Attack Length = 33
+|True Speed = 4
+|True KB = 1
+|True Cost = 1600
+|True Recharge = 2400
+|True Attack Type = Area
+|True Targets = Red,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|True Abilities = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 875 damage<br>(71.92 DPS)
+|val-Normal-Attack Range = 415
+|val-Normal-Attack Frequency = 365f <sub>12.17 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 80 ~ 71.2 seconds
+|val-Normal-MaxHP = 25,500 HP
+|val-Normal-MaxAttack = 14,875 damage<br>(1,222.6 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 14,875 damage<br>(1,222.6 DPS)
+|val-Evolved-Attack Range = 415
+|val-Evolved-Attack Frequency = 365f <sub>12.17 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 80 ~ 71.2 seconds
+|val-True-Health = 25,500 HP
+|val-True-Attack Power = 14,875 damage<br>(1,222.6 DPS)
+|val-True-Attack Range = 415
+|val-True-Attack Frequency = 365f <sub>12.17 seconds</sub>
+|val-True-Movement Speed = 4
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-True-Recharge Time = 80 ~ 71.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni256 f00}}
+
+==Trivia==
+*Prior to [[Version 12.6 Update|Version 12.6]], Golem was unlocked by completing the Beginner Stage in the Castle & Dragon app during the collab period.
+*Golem being unable to slow Floating enemies references the fact that it couldn't target airborne enemies in its source game.
+
+==Reference==
+*https://battlecats-db.com/unit/257.html
+
+----
+{{CatNav|Cyclops|Thunder God Zeus}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats requiring Awakening for True Form]]

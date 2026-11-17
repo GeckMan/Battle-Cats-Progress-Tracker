@@ -1,0 +1,132 @@
+'''Happosai''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. He was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 601
+|rarity = SR
+|name1 = Happosai
+|name2 = Happosai (Lewd)
+}}
+
+==Evolution==
+Evolves into '''Happosai (Lewd)''' at level 10.
+
+==Strategy/Usage==
+Like the anime character he depicts, Happosai is an unconventional unit with some knacks. His stats are most similar to [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]], though his most notable strengths over her are in damage and speed, meaning he can serve as a serviceable attacker before the acquisition of Pizza Cat and his [[Talents]]. Happosai's actual selling point, however, is his [[Knockback]] ability against three whole traits. Red, Floating, and Zombie contain a variety of enemies Happosai can defend against, such as [[Bore]], [[Teacher Bun Bun]] and his variants, [[Zir Zeal]], [[Zang Roo]], and (with mixed results) [[Lord Gravey]]. His trait flexibility can occasionally give him an edge over other crowd controllers if multiple of his targets are present in a stage as well as the general advantage of [[Area Attack]] and a good proc chance. His unusually high speed can help with quickly getting into action, though it may get him in a sticky situation if he clips into an enemy. While the three traits he counters already have a wealth of respectable crowd-control options, Happosai manages to work well as a pusher that does its job when other units might not cut it.
+
+{{Job|Classification = Crowd-Controller & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 601
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni601 f00.png
+|Image2 = Uni601 c00.png
+|Name1 = Happosai
+|Desc1 = Joining from "Ranma 1/2"! Founder of Anything<br>Goes style, who even Ranma cannot challenge.<br>Area atks might Knockback Red/Floating/Zombies.
+|Name2 = Happosai (Lewd)
+|Desc2 = Joining from "Ranma 1/2"! A troublesome<br>letch with a habit of stealing underwear...<br>Area atks might Knockback Red/Floating/Zombies.
+|Name1 (JP) = 八宝斉 (Happōsai)
+|Desc1 (JP) = 『らんま1/2』より参戦！武術の達人で無差別格闘流の開祖<br>圧倒的な闘気で乱馬であっても対抗することは難しい<br>たまに赤、浮き、ゾンビをふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining the war from Ranma 1/2! Master of martial arts and founder of the Anything Goes style.<br>His overwhelming fighting spirit makes it difficult for even [[Ranma Saotome (M) (Uber Rare Cat)|Ranma]] to contend with him.<br>Occasionally knocks back Red, Floating and Zombies (Area Attack)
+|Name2 (JP) = 八宝斉(エロじじい) (Happōsai (Ero Jijī), Happōsai (Lewd Geezer))
+|Desc2 (JP) = 『らんま1/2』より参戦！比類なきスケベでコレクションは<br>女子の下着。本能のまま行動し周囲に甚大な迷惑をかける<br>たまに赤、浮き、ゾンビをふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining the war from Ranma 1/2! Unbeaten at lechery, with a collection of<br>women's underwear. Acts on his instincts, causing a lot of trouble for those around him.<br>Occasionally knocks back Red, Floating and Zombies (Area Attack)
+|Name1 (TW) = 八寶齋
+|Desc1 (TW) = 從「亂馬1/2」來參戰！！無差別格鬥流元祖的武術高手。<br>極深的功夫就連亂馬也難以對抗。<br>有時候能打飛紅、飄浮敵與不死生物(範圍攻擊)
+|Name2 (TW) = 八寶齋(色鬼)
+|Desc2 (TW) = 從「亂馬1/2」來參戰！不折不扣的色鬼嗜好收集<br>女性內褲。按本能行事所以常帶給周圍困擾。<br>有時候能打飛紅、飄浮敵與不死生物(範圍攻擊)
+|Name1 (KR) = 핫포사이
+|Desc1 (KR) = 『란마 1/2』에서 참전! 무술의 달인으로 무차별 격투류의 개조.<br>압도적인 실력으로 란마조차 대항하기 힘들다.<br>가끔 빨간 적과 떠있는 적, 좀비를 날려버린다 (범위 공격)
+|Name2 (KR) = 핫포사이(변태 할아범)
+|Desc2 (KR) = 『란마 1/2』에서 참전! 엄청난 변태로 취미는 여자 속옷 모으기.<br>본능대로 행동하여 주위에 막대한 폐를 끼친다.<br>가끔 빨간 적과 떠있는 적, 좀비를 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 780¢
+*Chapter 2: 1,170¢
+*Chapter 3: 1,560¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Happosai
+|Normal Base HP = 1470
+|Normal Base AP = 490,490
+|Normal Range = 270
+|Normal Foreswing = 44,52
+|Normal Attack Cooldown = 81
+|Normal Attack Length = 94
+|Normal Speed = 30
+|Normal KB = 3
+|Normal Cost = 780
+|Normal Recharge = 780
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Zombie
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,330 at 44f <sup>1.47s</sup>, 8,330 at 52f <sup>1.73s</sup>)<br>
+{{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Happosai (Lewd)
+|Evolved Base HP = 1470
+|Evolved Base AP = 490,490
+|Evolved Range = 270
+|Evolved Foreswing = 44,52
+|Evolved Attack Cooldown = 81
+|Evolved Attack Length = 94
+|Evolved Speed = 30
+|Evolved KB = 3
+|Evolved Cost = 780
+|Evolved Recharge = 780
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Zombie
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,330 at 44f <sup>1.47s</sup>, 8,330 at 52f <sup>1.73s</sup>)<br>
+{{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,470 HP
+|val-Normal-Attack Power = 980 damage<br>(221.05 DPS)
+|val-Normal-Attack Range = 270
+|val-Normal-Attack Frequency = 133f <sub>4.43 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 44f <sup>1.47s</sup><br>(42f <sup>1.4s</sup> backswing)
+|val-Normal-Recharge Time = 26 ~ 17.2 seconds
+|val-Normal-MaxHP = 24,990 HP
+|val-Normal-MaxAttack = 16,660 damage<br>(3,757.89 DPS)
+|val-Evolved-Health = 24,990 HP
+|val-Evolved-Attack Power = 16,660 damage<br>(3,757.89 DPS)
+|val-Evolved-Attack Range = 270
+|val-Evolved-Attack Frequency = 133f <sub>4.43 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 44f <sup>1.47s</sup><br>(42f <sup>1.4s</sup> backswing)
+|val-Evolved-Recharge Time = 26 ~ 17.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni601 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/602.html
+
+----
+{{CatNav|Mousse (Duck)|Ukyo Kuonji (GR)}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Rusher-class Cats]]

@@ -1,0 +1,24 @@
+{{#invoke:Navbox|main
+|template = Template:Mentori
+|title = [[Mentori Collaboration Event]]
+|navbox_class = mentori
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Imoto (Special Cat)|Imoto]]
+*[[Mentori (Rare Cat)|Mentori]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Mentori (Enemy)|Mentori]]
+
+|header3 = Stages
+|group3 = Mentori's Masterplan
+|list3 =
+*[[Mental Manipulations]]
+*[[Not A Penguin]]
+}}<templatestyles src="Mentori/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Mentori]]}}<noinclude>[[Category:Navboxes]]</noinclude>

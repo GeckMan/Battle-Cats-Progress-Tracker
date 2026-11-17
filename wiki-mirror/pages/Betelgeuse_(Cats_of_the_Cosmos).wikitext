@@ -1,0 +1,130 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Betelgeuse (Cats of the Cosmos)/Outbreak|here]].''
+'''Betelgeuse''' is the 22nd stage in [[Cats of the Cosmos]].
+
+{{Story Info
+|stage name = [[File:Sc024.png]]
+|stage location = [[File:Betelgeuse.png]]
+'''Cats of the Cosmos'''
+|energy = 71
+|energy2 = 81
+|energy3 = 91
+|enemy castle hp = 160,000 HP
+|enemy castle hp2 = 400,000 HP
+|enemy castle hp3 = 500,000 HP
+|enemies = {{Magnification|Heavenly Hippoe|150%
+|Gabriel|150%
+|Angelic Gory|150%
+|Shibalien Elite|100%
+|Scissoroo|100%
+|Mistress Celeboodle|100%}}
+|boss = {{Magnification|Heavenly Hippoe|150%}}
+|enemies2 = {{Magnification|Heavenly Hippoe|200%
+|UltraBaaBaa|100%
+|Gabriel|200%
+|Angelic Gory|200%
+|Shibalien Elite|200%
+|Scissoroo|250%
+|Mistress Celeboodle|800%}}
+|boss2 = {{Magnification|Heavenly Hippoe|200%}}
+|enemies3 = {{Magnification|Heavenly Hippoe|300%
+|Gabriel|300%
+|Angelic Gory|200%
+|Shibalien Elite|500%
+|Scissoroo|600%}}
+|boss3 = {{Magnification|Mesocosmocyclone|150%}}
+|treasure = - [[Treasure|Orion's Belt]]
+|max enemies = 10
+|restriction = Deploy from Row 1 only
+|restriction2 = Deploy from Row 1 only
+|restriction3 = Deploy from Row 1 only
+|XP = 7,300 XP
+|width = 3,600 (Chapters 1, 2 and 3)<br>
+4,700 (Outbreaks)
+|jpname = Betelgeuse
+|script = ベテルギウス
+|romaji = Beterugiusu
+|jptreasure = Orion
+|twname = Betelgeuse
+|twscript = 參宿四
+|twromaji = Sānsùsì
+|twtreasure = Orion
+|krname = Betelgeuse
+|krscript = 베텔게우스
+|krromaji = Betelge-useu
+|krtreasure = Orion
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[Aldebaran (Cats of the Cosmos)|Aldebaran]]
+|next stage = [[Deneb (Cats of the Cosmos)|Deneb]]
+}}
+
+==Restrictions==
+Deploy from Row 1 only
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Heavenly Hippoe|Gabriel|Angelic Gory|Shibalien Elite|Scissoroo|Mistress Celeboodle}}
+*1 [[Heavenly Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*Infinite [[Gabriel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*1 [[Angelic Gory]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Scissoroo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Heavenly Hippoe]] spawns as the boss.
+**1 [[Mistress Celeboodle]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**1 [[Angelic Gory]] spawns.
+**2 [[Gabriel]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Heavenly Hippoe|UltraBaaBaa|Gabriel|Angelic Gory|Shibalien Elite|Scissoroo|Mistress Celeboodle}}
+*1 [[Heavenly Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*1 [[UltraBaaBaa]] spawns after 6.67 seconds<sup>200f</sup>.
+*Infinite [[Gabriel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*1 [[Angelic Gory]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Scissoroo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Heavenly Hippoe]] spawns as the boss.
+**1 [[Mistress Celeboodle]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**1 [[Angelic Gory]] spawns.
+**2 [[Gabriel]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+**3 [[UltraBaaBaa]]s spawn, delay 10 seconds<sup>300f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Heavenly Hippoe|Gabriel|Angelic Gory|Shibalien Elite|Scissoroo|Mesocosmocyclone}}
+*1 [[Heavenly Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*Infinite [[Gabriel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*1 [[Angelic Gory]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*Infinite [[Shibalien Elite]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Scissoroo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mesocosmocyclone]] spawns as the boss.
+**2 [[Gabriel]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+This stage is trivial as the aliens are unbuffed, meaning the only threats are the angels. Because of this, [[Rocker Cat (Rare Cat)|Ramen Cat]] can basically do this stage by himself, as he has 71k to 89k effective health against angels. After this, just back it up with any stackable attacker such as [[Mer-Cat (Rare Cat)|Cameraman Cat]], [[Salon Cat (Rare Cat)|Cyborg Cat]], or any of the [[Lizard Cat (Normal Cat)|Dragon Cat]] or [[Gross Cat (Normal Cat)|Macho Leg Cat]] variants.
+
+==='''Chapter 2'''===
+You can use a similar strategy to the one used in  chapter 1, as there is almost no diffrence besides the UltraBaaBaa. Make sure to bring Kitty of Liberty or another barrier breaker to deal with UltraBaaBaa. Mistress Celeboodle has a 800% buff, but this doesn't prevent your units from easily killing her, so she is not a threat.
+
+==='''Chapter 3'''===
+This stage can be done with minimal effort, as the actual threat appears on base hit, meaning you have time to save money and deploy your heavy attackers. You can use [[Rocker Cat (Rare Cat)|Ramen Cat]] to tank damage from the angel peons, as his resistance to angels allows him to tank an insane amount of hits from all angel peons. You can also use high damage dealers such as [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to quickly kill the [[Mesocosmocyclone]] and deal high damage to the other peons, allowing your units to destroy the base.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Betelgeuse map.png|Betelgeuse on the [[Cats of the Cosmos]] map
+</gallery>
+
+==Trivia==
+*In real life, [[wikipedia:Betelgeuse|Betelgeuse]] is the ninth-brightest star in the night sky and the second-brightest star in the constellation of [[wikipedia:Orion (constellation)|Orion]], the stage's [[Treasure]]. It is one of the largest and most luminous stars visible to the naked eye.
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-22.html
+*https://battlecats-db.com/stage/s03007-22.html
+*https://battlecats-db.com/stage/s03008-22.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Restriction Stages]]

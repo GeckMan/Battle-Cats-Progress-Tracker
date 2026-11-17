@@ -1,0 +1,73 @@
+:''This article is about the enemy. For the Cat Unit, see [[Li'l Tank Cat (Special Cat)]].''
+'''Li'l Eraser Cat''' (ちびゴムネコ ''Chibi Gomu Neko'', '''Chibi Rubber Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy first found in [[Tiny Will (Deadly)|Li'l Tank Awakens!]]. It was added in [[Version 5.10 Update|Version 5.10]].
+
+{{Enemy Info
+|name = Li'l Eraser Cat
+|image = E 323.png
+|appearance = [[Tiny Will (Deadly)|Li'l Tank Awakens!]]
+[[Path to +60| Li'l Cat's Trial]]
+|money drop = 2,370¢ - 9,362¢
+}}
+
+==Enemy==
+Li'l Eraser Cat has lower stats than [[Crazed Tank Cat (Enemy)|Crazed Tank Cat]] and [[Manic Eraser Cat (Enemy)|Manic Eraser Cat]], with the similar attack style of slamming itself to the ground. Unlike those two, however, you are only able to use Special and Rare cats while fighting him. A notable difference that separates himself from his Crazed and Manic counterparts is that he loses his [[Base Destroyer]] ability, but has a faster attack rate in exchange.
+
+==Strategy==
+:''See [[Tiny Will (Deadly)]] and [[Path to +60]] for each stage's strategy.''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Li'l Tank Awakens!: [[Tiny Will (Deadly)]]
+*[[Li'l Cat's Trial]]: [[Path to +60]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Li'l Eraser Cat
+|Health = 2400000
+|Attack Power = 30240
+|Attack Range = 390
+|Attack Type = Area
+|Time Between Attacks = 57
+|Movement Speed = 2
+|Knockback = 1
+|Foreswing = 8
+|Backswing = 8
+|Ability = -
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Japanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Taiwanese=
+{{AnimationViewer|323 e tw.png|MediaWiki:Custom-AnimationViewer/323 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+323 e.png|Li'l Eraser Cat's spritesheet (EN/KR/JP)
+323 e tw.png|Li'l Eraser Cat's spritesheet (TW)
+IdleLi'lEraser.gif|Li'l Eraser Cat's moving animation
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, Li'l Eraser Cat doesn't have the word "NEKO" on its wrapper. The same also applies to [[Manic Eraser Cat (Enemy)|Manic Eraser Cat]] as well as their [[Li'l Tank Cat (Special Cat)|Cat]] [[Crazed Tank Cat (Super Rare Cat)|counterparts]].
+
+==Reference==
+*https://battlecats-db.com/enemy/325.html
+
+----
+{{EnemyNav|Li'l Mohawk Cat|Li'l Dark Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

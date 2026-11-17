@@ -1,0 +1,7 @@
+.ranger-navbox.miku {
+	--bg-navbox-title: linear-gradient(to right, hsl(326, 99%, 45%) 0%, hsl(326, 99%, 50%) 100%);
+	--bg-sub-table-title: #31899b;
+	--bg-group-name: hsl(320, 90%, 60%);
+}
+
+/* [[Category:Template stylesheets]] */

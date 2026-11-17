@@ -1,0 +1,16 @@
+{{Documentation}}
+
+==Usage==
+<pre>
+{{SiteStats|NUMBEROFARTICLES}}
+</pre>
+{{SiteStats|NUMBEROFARTICLES}}
+
+This template serves to prevent parser cache issues on the main page.
+
+==Data==
+<noinclude>{{#invoke:SiteStats|store
+|NUMBEROFARTICLES
+|NUMBEROFACTIVEUSERS
+|NUMBEROFEDITS
+}}{{#cacheuntil:23:00}}</noinclude><includeonly>Hidden on template page</includeonly>

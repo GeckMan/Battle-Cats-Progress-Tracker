@@ -1,0 +1,67 @@
+:''This article is about the enemy. For the Cat Unit, see [[Evil Cat (Rare Cat)]].''
+'''Gentleman Bros.''' (ネコ紳士同盟 ''Neko Shinshi Dōmei'', "'''Gentleman Alliance Cats'''") is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Evil Cat Awakes!|Evil Cat Awakens!]] and [[Infernal Tower]]. They were added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Gentleman Bros.
+|appearance = [[Evil Cat Awakes!]]
+[[Infernal Tower/Floor 19|Infernal Tower - Floor 19]]
+|image = E 231.png
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+This enemy has high health, long range, decent damage and attack rate, and a 100% chance to freeze Cat Units.
+
+==Strategy==
+Although they have very high range and the Freeze ability, their uptime is less than 50% meaning that units with less than 500 range still have a chance against them. Rushers are effective as well because Gentleman Bros' attack power is not that great either. If you do own any units with above 500 range, they will be very useful against it.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Evil Cat Awakes!]]:
+**[[Something Wicked (Expert)]] (100%)
+**[[Something Wicked (Insane)]] (150%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 19|Floor 19]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Gentleman Bros.
+|Health = 750000
+|Attack Power = 4000
+|Attack Range = 499
+|Attack Type = Area
+|Time Between Attacks = 209
+|Movement Speed = 6
+|Knockback = 3
+|Foreswing = 18
+|Backswing = 28
+|Ability = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+231 e.png|Gentleman Bros.' spritesheet
+IdleGentlemenBros.gif|Gentleman Bros.' moving animation
+</gallery>
+
+==Trivia==
+*By hacking to make [[Kung-Fu X Awakens!|event map 1091]] appear before it was fully implemented, the Gentleman Bros. could once be fought alongside [[Cruel Angel Clionel]] in an [https://youtube.com/watch?v=Sxgc-WCp-bA unfinished stage] with the placeholder name その１ (''Sono 1'', lit. "That 1"), which later became [[Old Master (Expert)]].
+
+==Reference==
+*https://battlecats-db.com/enemy/233.html
+
+----
+{{EnemyNav|Prisoner Cat|Cruel Angel Clionel}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]

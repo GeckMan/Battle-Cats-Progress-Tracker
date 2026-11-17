@@ -1,0 +1,127 @@
+'''Kenshin Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating any stage in [[Rurouni Kenshin Collaboration Event#Rurouni Kenshin|Rurouni Kenshin]] during the [[Rurouni Kenshin Collaboration Event]]. It was added in [[Version 13.4 Update|Version 13.4]].
+
+{{Cat Info
+|ID = 752
+|rarity = RR
+|name1 = Kenshin Cat
+|name2 = Battosai Cat
+}}
+
+==Evolution==
+Evolves into '''Battosai Cat''' at level 10.
+
+==Strategy/Usage==
+Kenshin Cat attempts to be a combination of [[Rover Cat (Rare Cat)|Rover Cat]] and [[Viking Cat (Rare Cat)|Viking Cat]], however, sadly fails to be good at being either. While it does have slightly lower base health than pre-[[True Form]] Viking Cat, it does have one less knockback. However, Viking Cat's True Form still outclasses Kenshin, as it gains over DOUBLE Kenshin's health. Rover Cat has a significantly lower cost than Kenshin Cat, on top of having one knockback and Warp Immunity, which lets it actually be useful against Starred Aliens. The True Form only further widens the gap between the two, giving Rover Cat even more immunities and an even lower cost.
+
+To summarize, Kenshin Cat is a poor clone of Rover Cat and Viking Cat, and likely won't ever see use outside of early [[Empire of Cats]], [[Into the Future]] and [[Underground Labyrinth]].
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 752
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni752 f00.png
+|Image2 = Uni752 c00.png
+|Name1 = Kenshin Cat
+|Desc1 = With a scar tattoo and replica sakabato, this Cat<br>cosplays as a wandering swordsman they idolize.<br>Strong against Red and Aliens.
+|Name2 = Battosai Cat
+|Desc2 = A scarred Cat, feared as the Can-kiri Battosai<br>by those who would steal Cat Food.<br>Strong against Red and Aliens.
+|Name1 (JP) = ネコ剣心 (Neko Kenshin, Kenshin Cat)
+|Desc1 (JP) = 流浪の剣客に憧れるネコ。頬の傷のタトゥーと<br>逆刃刀の購入で無一文になり放浪している<br>赤い敵とエイリアンにめっぽう強い
+|Transl1 (JP) = A cat who admires the wandering swordsman. Wandering penniless after purchasing a tattoo of a<br>scar on its cheek and a reverse-edged sword<br>Exceptionally strong against red enemies and aliens
+|Name2 (JP) = ネコ抜刀斎 (Neko Battōtoki, Battosai Cat)
+|Desc2 (JP) = 放浪の旅を続けるうちに心身が荒んできたネコ<br>ネコカンを狙う「缶切り抜刀斎」と恐れられている<br>赤い敵とエイリアンにめっぽう強い
+|Transl2 (JP) = A Cat whose mind and body hardened as it continues to wonder<br>Feared as 'Can Opener Battosai' who targets cans of Catfood<br>Exceptionally strong against red enemies and aliens
+|Name1 (TW) = 劍心貓
+|Desc1 (TW) = 崇拜流浪劍客的貓咪。因為購買臉頰的<br>刀疤紋身和逆刃刀而身無分文，四處漂泊。<br>善於攻擊紅色敵人與異星戰士
+|Name2 (TW) = 拔刀齋貓
+|Desc2 (TW) = 不斷漂泊而逐漸身心俱疲的貓咪。被稱作<br>想要貓罐頭的「開罐拔刀齋」而為人所懼<br>善於攻擊紅色敵人與異星戰士
+|Name1 (KR) = 고양이 켄신
+|Desc1 (KR) = 나그네 검객을 동경하는 고양이. 십자 흉터 타투 시술과<br>역날검 구입으로 빈털터리가 되어 방랑 중<br>빨간 적과 에이리언에 엄청 강하다
+|Name2 (KR) = 고양이 발도재
+|Desc2 (KR) = 방랑 여행으로 인해 몸과 마음이 황폐해진 고양이<br>고양이 통조림을 노리는 「통잡이 발도재」로 불린다<br>빨간 적과 에이리언에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 380¢
+*Chapter 2: 570¢
+*Chapter 3: 760¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kenshin Cat
+|Normal Base HP = 680
+|Normal Base AP = 210
+|Normal Range = 155
+|Normal Foreswing = 31
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 66
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 380
+|Normal Recharge = 380
+|Normal Attack Type = Single
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Battosai Cat
+|Evolved Base HP = 680
+|Evolved Base AP = 210
+|Evolved Range = 155
+|Evolved Foreswing = 31
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 66
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 380
+|Evolved Recharge = 380
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 680 HP
+|val-Normal-Attack Power = 210 damage<br>(95.45 DPS)
+|val-Normal-Attack Range = 155
+|val-Normal-Attack Frequency = 66f <sub>2.2 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 31f <sup>1.03s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Normal-Recharge Time = 12.67 ~ 3.87 seconds
+|val-Normal-MaxHP = 11,560 HP
+|val-Normal-MaxAttack = 3,570 damage<br>(1,622.73 DPS)
+|val-Evolved-Health = 11,560 HP
+|val-Evolved-Attack Power = 3,570 damage<br>(1,622.73 DPS)
+|val-Evolved-Attack Range = 155
+|val-Evolved-Attack Frequency = 66f <sub>2.2 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni752 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/753.html
+
+----
+{{CatNav|Li'l Yahiko|Kaoru Cat}}
+----
+
+{{Rurouni Kenshin}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

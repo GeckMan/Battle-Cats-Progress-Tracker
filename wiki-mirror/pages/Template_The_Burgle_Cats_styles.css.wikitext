@@ -1,0 +1,7 @@
+.ranger-navbox.burgle-cats {
+	--bg-navbox-title: linear-gradient(to right, hsl(16, 31%, 32%) 0%, hsl(16, 31%, 37%) 100%);
+	--bg-sub-table-title: hsl(113, 33%, 37%);
+	--bg-group-name: hsl(16, 40%, 45%);
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,142 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Broton (Cats of the Cosmos)/Outbreak|here]].''
+'''Broton''' is the 43rd stage in [[Cats of the Cosmos]].
+
+{{Story Info
+|stage name = [[File:Sc003.png]]
+|stage location = [[File:Broton.png]]
+'''Cats of the Cosmos'''
+|energy = 80
+|energy2 = 90
+|energy3 = 100
+|enemy castle hp = 320,000 HP
+|enemy castle hp2 = 560,000 HP
+|enemy castle hp3 = 660,000 HP
+|enemies = {{Magnification|Shibalien|200%
+|Snache|1,800%
+|Those Guys|1,800%
+|Kroxo|600%
+|Squire Rel|1,800%
+|Gabriel|250%
+|Doge Dark|400%
+|Ginger Snache|200%}}
+|enemies2 = {{Magnification|Shibalien|1,400%
+|Snache|3,000%
+|Those Guys|3,000%
+|Kroxo|1,400%
+|Squire Rel|3,000%
+|Gabriel|300%
+|Doge Dark|600%
+|UltraBaaBaa|100%
+|Ginger Snache|300%}}
+|enemies3 = {{Magnification|Shibalien Elite|2,300%
+|Snache|4,000%
+|Those Guys|4,000%
+|Kroxo|1,800%
+|Squire Rel|4,000%
+|Gabriel|300%
+|Doge Dark|800%
+|Mesocosmocyclone|800%
+|Ginger Snache|300%}}
+|treasure = - [[Treasure|Transmission]]
+|max enemies = 50
+|max enemies3 = 40
+|restriction = Max # of Deployable Cats: 10
+|restriction2 = Max # of Deployable Cats: 10
+|restriction3 = Max # of Deployable Cats: 10
+|XP = 13,600 XP
+|width = 5,000
+|jpname = Planet Choibatron
+|script = チョイバトロン星
+|romaji = Choibatoron-sei
+|jptreasure = Trance
+|twname = Chaobotan Star
+|twscript = 超博坦星
+|twromaji = Chāobótǎn Xīng
+|twtreasure = Deformed
+|krname = Jjomae Broton Seong
+|krscript = 쪼매바로톤성
+|krromaji = Jjomae Baloton Seong
+|krtreasure = Transformers
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[Gorigori (Cats of the Cosmos)|Gorigori]]
+|next stage = [[Crimson Star (Cats of the Cosmos)|Crimson Star]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Shibalien|Snache|Those Guys|Kroxo|Squire Rel|Gabriel|Doge Dark|Ginger Snache}}
+*Infinite [[Shibalien]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Snache]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Those Guys]] spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*20 [[Kroxo]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Squire Rel]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*20 [[Gabriel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 2~10 seconds<sup>60f~300f</sup>.
+*20 [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 2~10 seconds<sup>60f~300f</sup>.
+*20 [[Ginger Snache]]s spawn, delay 3.33~13.33 seconds<sup>100f~400f</sup>.
+*15 [[Gabriel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 0.07 seconds<sup>2f</sup>.
+*15 [[Doge Dark]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 0.07 seconds<sup>2f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Shibalien|Snache|Those Guys|Kroxo|Squire Rel|Gabriel|Doge Dark|UltraBaaBaa|Ginger Snache}}
+*Infinite [[Shibalien]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Snache]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Those Guys]] spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*20 [[Kroxo]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Squire Rel]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*10 [[Gabriel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 2~10 seconds<sup>60f~300f</sup>.
+*10 [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 2~10 seconds<sup>60f~300f</sup>.
+*5 [[UltraBaaBaa]]s spawn after 16.67 seconds<sup>500f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*20 [[Ginger Snache]]s spawn, delay 3.33~13.33 seconds<sup>100f~400f</sup>.
+*10 [[Gabriel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 0.07 seconds<sup>2f</sup>.
+*10 [[Doge Dark]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 0.07 seconds<sup>2f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Shibalien Elite|Snache|Those Guys|Kroxo|Squire Rel|Gabriel|Doge Dark|Mesocosmocyclone|Ginger Snache}}
+*10 [[Shibalien Elite]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[Snache]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*Infinite [[Those Guys]] spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*10 [[Kroxo]]s spawn, delay 4~12 seconds<sup>120f~360f</sup>.
+*Infinite [[Squire Rel]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+*10 [[Gabriel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 4~14 seconds<sup>120f~420f</sup>.
+*10 [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 4~14 seconds<sup>120f~420f</sup>.
+*2 [[Mesocosmocyclone]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 66.67 seconds<sup>2,000f</sup>.
+*10 [[Ginger Snache]]s spawn, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+
+==Strategy==
+==='''Chapter 1 & 2'''===
+This is a unique stage, in which a variety of peons spawn in mass numbers and there is no specific main threat. There is a restriction in place to not make this stage too easy. Bring any strong [[:Category:Area Attack Cats|Area Attackers]] (specifically [[Salon Cat (Rare Cat)|Paris]]/[[Figure Skating Cats (Super Rare Cat)|Drama]] & [[Surfer Cat (Super Rare Cat)|Castaway]] as they have adequate range) and [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]]. Meatshield when necessary. Some examples of meatshields are [[Rocker Cat (Rare Cat)|Artist Cat]], [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cats]] or [[Crazed Titan Cat (Super Rare Cat)|Crazed M. Titan Cat]] due to their high health, [[Wave Attack]]s, speed or attack speed. Don't overdo it or else you'll hit the deploy limit and can't protect your existing cats.
+
+Nearly any Area Attack [[:Category:Uber Rare Cats|Uber Rares]] can help. Soon enough, you'll have enough attacking cats that you don't need meatshields at all. Just keep spamming those attackers.
+
+Surge attackers help similarly. If one happens to have [[Brainwashed Gross Cat (Super Rare Cat)|Brainwashed Gross]] or any uber with surges, they can also obliterate the waves of peons, acting as a meat grinder that melts the miscellaneous enemies.
+
+In Chapter 2, remember to bring a [[:Category:Barrier Breaker Cats|Barrier Breaker]] for the UltraBaaBaas.
+
+==='''Chapter 3'''===
+The general idea is to survive the long waves of Dark Doges, Gabriels, and both Mesocosmocyclones to win the stage. [[Psychocat (Rare Cat)|Neo Psychocat]], [[Rover Cat (Rare Cat)|Catellite]], and [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] are no-brainers against the Mesocosmocyclones for their respective [[Slow|slow]], [[Immune to Warp]] and [[Freeze|freeze]] abilities, while [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] is recommended to do the killing. If one happens to have [[Slime Cat (Rare Cat)|Slime Cat]], they help massively against this stage due to their high-damage wave attacks clearing a majority of the peons.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Broton map.png|Broton on the [[Cats of the Cosmos]] map
+</gallery>
+
+==Trivia==
+*In [[The Battle Cats POP!]], this stage is called '''Baroton'''.
+*Broton makes a few references to the ''[[wikipedia:Transformers|Transformers]]'' franchise:
+**Its Japanese name, Planet Choibatron, sounds similar to [https://tfwiki.net/wiki/Cybertron_(planet) Cybertron], the Transformers' home planet, which it vaguely resembles.
+**The yellow car on its base is reminiscent of [[wikipedia:Bumblebee (Transformers)|Bumblebee]], one of the franchise's major characters.
+**Its [[Treasure]] in the Korean version is quite literally Transformers.
+*Prior to [[Version 11.5 Update|version 11.5]], the Mesocosmocyclones in Chapter 3 were set to spawn 66.7~33.3 seconds apart instead of just 66.7. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-43.html
+*https://battlecats-db.com/stage/s03007-43.html
+*https://battlecats-db.com/stage/s03008-43.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Restriction Stages]]

@@ -1,0 +1,9 @@
+.ranger-navbox.dragon-league {
+	--bg-navbox-title: linear-gradient(to right, #ff700a 0%, #ff8833 100%);
+	--bg-sub-table-title: #014bb8;
+	--bg-group-name: #ff9041;
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

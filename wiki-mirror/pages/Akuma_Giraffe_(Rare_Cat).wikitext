@@ -1,0 +1,134 @@
+:''For other uses, see [[Akuma (disambiguation)|Akuma]].''
+'''Akuma Giraffe''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be obtained as a drop reward in stages from the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 518
+|rarity = RR
+|name1 = Akuma Giraffe
+|name2 = Akuma Lion
+}}
+
+==Evolution==
+Evolves into '''Akuma Lion''' at level 10.
+
+==Strategy/Usage==
+This cat is one of those collaboration units that are used almost solely for [[User Rank]]. Its wave immunity is nice, but its horrible stats prevent it from being of much use against most enemies. Its only other conceivable use as a ranged meatshield on Heavenly Tower [[Heavenly Tower/Floor 30|Floor 30]], and even then, it's outclassed by talented [[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]]. As a rusher, it is outclassed by Lion and Manic Lion because they can actually hit units that are in front of them. Otherwise, its only relevance is being used on early [[Stories of Legend]] 4-crown stages, where the enemies aren't buffed enough to be dangerous; as a cheap knockoff of [[Cow Cat (Normal Cat)|Cow Cat]].
+
+{{Job|Classification = Rusher & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 518
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni518 f00.png
+|Image2 = Uni518 c00.png
+|Name1 = Akuma Giraffe
+|Desc1 = Giraffe Cat awoke filled with killing spirit.<br>All who witness his new look tremble.<br>Strong vs Traitless, Immune to Waves! (Long-Range)
+|Name2 = Akuma Lion
+|Desc2 = A Cat consumed by bloodlust, rushing into<br>battle smelling of weaklings he has crushed.<br>Strong vs Traitless, Immune to Waves! (Long-Range)
+|Name1 (JP) = ゴウキリン (Gōkirin, Goukiraffe)
+|Desc1 (JP) = 殺意の波動に目覚めてしまったキリンネコ<br>その禍々しい姿は見るものを震え上がらせる<br>属性を持たない敵にめっぽう強く、波動を無効(遠方範囲)
+|Transl1 (JP) = A giraffe cat that has awakened to a wave of killing intent<br>Its hideous appearance makes the viewers tremble<br>Extremely strong against non-attribute enemies, disabling waves (Far Range)
+|Name2 (JP) = ゴウキライオン (Gōkiraion, Goukilion)
+|Desc2 (JP) = 殺意の波動を解放し、真の姿に変貌したネコ<br>弱き者との死合いを嗅ぎつけ全速力で駆け付ける<br>属性を持たない敵にめっぽう強く、波動を無効(遠方範囲)
+|Transl2 (JP) = The cat that released a wave of killing intent and transformed into its true form<br>Sniffing out a fight to the death with the weak, they rush in at full speed<br>Extremely strong against non-attribute enemies, disabling waves (Far Range)
+|Name1 (TW) = 豪鬼長頸鹿
+|Desc1 (TW) = 因"殺意的波動"清醒的長頸鹿貓<br>那個不吉利的樣子讓人不寒而慄<br>善於攻擊無屬性敵人,使波動無效(遠距範圍)
+|Name2 (TW) = 豪鬼獅子
+|Desc2 (TW) = 解放"殺意的波動"銳變全新面貌的貓咪<br>與若者的死鬥全力探出前進衝刺<br>善於攻擊無屬性敵人,使波動無效(遠距範圍)
+|Name1 (KR) = 고우키 기린
+|Desc1 (KR) = 살의의 파동에 눈떠버린 기린 고양이<br>그 불길한 모습은 보는 자를 떨게 만든다 (원거리 범위공격)<br>속성을 가지지 않은 적에 엄청 강하고 파동을 무효
+|Name2 (KR) = 고우키 라이온
+|Desc2 (KR) = 살의의 파동을 해방하고 진정한 모습으로 변모한 고양이<br>약한 자와의 진검승부에는 전속력으로 달려간다<br>속성을 가지지 않은 적에 엄청 강하고 파동을 무효 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 560¢
+*Chapter 2: 840¢
+*Chapter 3: 1,120¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Akuma Giraffe
+|Normal Base HP = 500
+|Normal Base AP = 50
+|Normal Range = 300
+|Normal Foreswing = 35
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 47
+|Normal Speed = 35
+|Normal KB = 5
+|Normal Cost = 560
+|Normal Recharge = 780
+|Normal Attack Type = Area
+|Normal Targets = Traitless
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~400)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Evolved Name = Akuma Lion
+|Evolved Base HP = 500
+|Evolved Base AP = 50
+|Evolved Range = 300
+|Evolved Foreswing = 35
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 47
+|Evolved Speed = 35
+|Evolved KB = 5
+|Evolved Cost = 560
+|Evolved Recharge = 780
+|Evolved Attack Type = Area
+|Evolved Targets = Traitless
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~400)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 50 damage<br>(31.91 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Normal-Movement Speed = 35
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 35f <sup>1.17s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 26 ~ 17.2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 850 damage<br>(542.55 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 850 damage<br>(542.55 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Evolved-Movement Speed = 35
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 35f <sup>1.17s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 26 ~ 17.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni518 f00}}
+
+==Trivia==
+*His description used to state that he had Wave Shield and Omni Strike, despite having Wave Immunity and Long Distance instead. The Omni Strike was changed to Long Distance in [[Version 11.10 Update|Version 11.10]], and Wave Shield was changed to Wave Immunity in [[Version 12.0 Update|Version 12.0]].
+**Akuma Giraffe's descriptions were again rewritten in [[Version 14.5 Update|Version 14.5]], as "Wave Immunity" was changed to "Immune to Waves".
+
+==Reference==
+*https://battlecats-db.com/unit/519.html
+
+----
+{{CatNav|Ken|Lasvoss}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Wave Immunity]]

@@ -1,0 +1,129 @@
+'''Sagat Cat''' is a [[:Category:Rare Cats|Rare Cat]] who is unlocked by rolling [[Cat Capsule|Rare Cat Capsules]] during [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 579
+|rarity = RR
+|name1 = Sagat Cat
+|name2 = Sagat Cat CC
+}}
+
+==Evolution==
+Evolves into '''Sagat Cat CC''' at level 10.
+
+==Strategy/Usage==
+Sagat Cat mainly suffers from mediocre stats and single target, even with his ability bolstering his stats against Floating enemies. [[Mer-Cat (Rare Cat)|Mer-Cat]] entirely outclasses Sagat Cat, even in her first form. She hits harder than Sagat and can be spammed more easily. While Sagat has almost double Mer-Cat's bulk at the same level, he also has nearly double her cooldown. Additionally, Mer-Cat has the Survive ability, meaning that while she has less health, she can survive hits that even Sagat Cat can't.
+
+While his immunity to waves may be useful, he can only really use it if he was spammable enough to be a good anti-wave meatshield or have the stats to do something when surviving longer because of this wave immunity. Unfortunately, because neither applies to Sagat Cat, he is outclassed in his wave-immune niche by [[Talents|Talented]] [[Pirate Cat (Rare Cat)|Catley]] just as he is outclassed in his anti-Floating niche by Mer-Cat. Additionally, [[Gold Cat (Super Rare Cat)|Glittering Gold Cat]] and Talented [[Li'l Cat (Special Cat)|Li'l Mohawk Cat]] outclass them both as a wave-immune meatshield.
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 579
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni579 f00.png
+|Image2 = Uni579 c00.png
+|Name1 = Sagat Cat
+|Desc1 = A prideful Cat known as The Emperor.<br>His personal Muay Thai style is undefeated.<br>Strong vs Floating, Immune to Waves!
+|Name2 = Sagat Cat CC
+|Desc2 = Foolish defiance of the weak will not be tolerated.<br>Seeks a higher reason to achieve true strength.<br>Strong vs Floating, Immune to Waves!
+|Name1 (JP) = ネコサガット (Neko Sagatto, Sagat Cat)
+|Desc1 (JP) = 「帝王」と呼ばれてみたい誇り高きネコ<br>自己流のムエタイで地元では無戦無敗を誇る<br>浮きにめっぽう強く、波動ダメージを無効にする
+|Transl1 (JP) = I'd like to be called "The Emperor," a proud feline<br>self-styled Muay Thai who is undefeated in his hometown and undefeated in his own right<br>Very strong against Floating enemies, nullifies wave damage
+|Name2 (JP) = ネコサガットCC (Neko Sagatto CC, Sagat Cat CC)
+|Desc2 (JP) = 理不尽や弱者苛めを許さない誇り高きネコ<br>誰かに隠された靴下を探し求め旅を続けている<br>浮きにめっぽう強く、波動ダメージを無効にする
+|Transl2 (JP) = A proud feline who won't tolerate unreasonableness or tormenting the weak<br>who is on a quest to find a sock hidden by someone else<br>Very strong against Floating enemies, nullifies wave damage
+|Name1 (TW) = 沙卡特貓
+|Desc1 (TW) = 想被稱呼為「帝王」的驕傲貓咪<br>以自創的泰拳在家鄉無戰無敗引以為豪<br>善於攻擊飄浮敵人，波動傷害無效
+|Name2 (TW) = 沙卡特貓CC
+|Desc2 (TW) = 絕不容忍不合理或欺負弱小的驕傲貓咪<br>持續著尋找被某人藏起來的襪子之旅<br>善於攻擊飄浮敵人，波動傷害無效
+|Name1 (KR) = 고양이 사가트
+|Desc1 (KR) = 제왕이라 불려보고 싶은 긍지 높은 고양이<br>자신만의 무에타이로 고향에서는 무전무패를 자랑한다<br>떠있는 적에 엄청 강하고 파동 데미지를 무효화시킨다
+|Name2 (KR) = 고양이 사가트CC
+|Desc2 (KR) = 불합리함과 약자를 괴롭히는 것을 참지 못하는 긍지 높은 고양이<br>누군가가 숨겨 놓은 양말을 찾기 위한 여행을 계속하고 있다<br>떠있는 적에 엄청 강하고 파동 데미지를 무효화시킨다
+}}
+
+==Cost==
+*Chapter 1: 390¢
+*Chapter 2: 585¢
+*Chapter 3: 780¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sagat Cat
+|Normal Base HP = 660
+|Normal Base AP = 72
+|Normal Range = 275
+|Normal Foreswing = 13
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 26
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 390
+|Normal Recharge = 470
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Evolved Name = Sagat Cat CC
+|Evolved Base HP = 660
+|Evolved Base AP = 72
+|Evolved Range = 275
+|Evolved Foreswing = 13
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 26
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 390
+|Evolved Recharge = 470
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 660 HP
+|val-Normal-Attack Power = 72 damage<br>(83.08 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 26f <sub>0.87 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 13f <sup>0.43s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Normal-Recharge Time = 15.67 ~ 6.87 seconds
+|val-Normal-MaxHP = 11,220 HP
+|val-Normal-MaxAttack = 1,225 damage<br>(1,413.46 DPS)
+|val-Evolved-Health = 11,220 HP
+|val-Evolved-Attack Power = 1,225 damage<br>(1,413.46 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 26f <sub>0.87 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 13f <sup>0.43s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 15.67 ~ 6.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni579 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/580.html
+
+----
+{{CatNav|Vega Cat|M. Bison Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Wave Immunity]]

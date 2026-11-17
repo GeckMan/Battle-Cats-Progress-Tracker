@@ -1,0 +1,80 @@
+:''This article is about the enemy. For the Cat Unit, see [[The 6th Angel (Uber Rare Cat)]].''
+'''The 6th Angel''' is a [[:Category:EVA Angel Enemies|EVA Angel]] enemy that appears in the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Enemy Info
+|name = The 6th Angel
+|money drop = 5,000¢ - 19,750¢
+|image = E 393.png
+|appearance = [[Neon Genesis Evangelion Collaboration Event]]
+}}
+
+==Enemy==
+This slow enemy stands at a very high 1,000 range that is effectively doubled by an Omni Strike reaching 2,000 ahead of it. With decent stats, Base Destroyer and somewhat high damage, it tends to be a huge threat in all of its appearances, but its long attack cycle often prevents it from actually pushing on its own.
+
+==Strategy==
+Like [[Codename "Red Riding"]], you must keep her far away from your base at all costs, as Omni Strike units stand at their maximum range against bases, and Base Destroyer enables her to quickly demolish it. Thankfully, the stages she appears in are very long, giving you a bit of breathing room. Tanky and fast units like [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]] or [[Titan Cat (Normal Cat)|Jamiera Cat]] are able to stall her well under the correct conditions.
+
+You can also use the [[You Will Find Happiness (Combo)|You Will Find Happiness Cat]] Combo coupled with cats with the [[:Category:EVA Angel Killer Cats|EVA Angel Killer]] ability to defeat her. If your EVA Angel Killer [[:Category:Uber Rare Cats|Ubers]] are at around level 15+ they won't struggle much, if at all.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Neon Genesis Evangelion Collaboration Event#Decisive Battle!|Decisive Battle!]]:
+**[[Futagoyama Fortress]] (5%)
+**[[Pre-fire Sequence]] (20%)
+**[[High-Order Energy]] (30%)
+**[[Don't Say Farewell]] (50%)
+**[[Start by Smiling]] (100%)
+*[[Heralds of The End]]:
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.8]] (3,000%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.9]] (3,300%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.10]] (3,600%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.11]] (3,900%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.12]] (4,200%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.8~13|WARNING Lv.13]] (4,500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = The 6th Angel
+|Health = 100000
+|Attack Power = 15000
+|Attack Range = 1000
+|Attack Type = Area
+|Time Between Attacks = 359
+|Movement Speed = 2
+|Knockback = 2
+|Foreswing = 130
+|Backswing = 106
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -2,500~2,000)<br>
+{{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])
+|Element = EVA Angel
+}}
+
+{{UnitViewer|enemy|spritesheet=549 f.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+549 f.png|The 6th Angel's spritesheet
+IdleRamiel.gif|The 6th Angel's moving animation
+</gallery>
+
+==Trivia==
+*Prior to [[Version 14.7 Update|Version 14.7]] of the [[The Battle Cats|English Version]], this enemy was named "Ramiel".
+
+==Reference==
+*https://battlecats-db.com/enemy/395.html
+
+----
+{{EnemyNav|The 4th Angel|The 9th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Base Destroyer Enemies]]
+[[Category:EVA Angel Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

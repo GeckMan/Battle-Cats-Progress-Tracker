@@ -1,0 +1,83 @@
+{{EnemiesAppearing|Yoichi|Olga|Norn|Orthos|Michelia|Todomeki}}
+'''Blade Ritual''' is the third and final stage in [[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]].
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn086 02 c en.png]]
+|stage location = [[File:Mapname086 c en.png]]
+|energy = 90
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Yoichi|600%
+|Olga|600%
+|Norn|600%
+|Orthos|600%
+|Michelia|300%}}
+|boss = {{Magnification|Todomeki|100%}}
+|enemies2 = {{Magnification|Yoichi|900%
+|Olga|900%
+|Norn|900%
+|Orthos|900%
+|Michelia|450%}}
+|boss2 = {{Magnification|Todomeki|150%}}
+|enemies3 = {{Magnification|Yoichi|1,200%
+|Olga|1,200%
+|Norn|1,200%
+|Orthos|1,200%
+|Michelia|600%}}
+|boss3 = {{Magnification|Todomeki|200%}}
+|enemies4 = {{Magnification|Yoichi|1,800%
+|Olga|1,800%
+|Norn|1,800%
+|Orthos|1,800%
+|Michelia|900%}}
+|boss4 = {{Magnification|Todomeki|300%}}
+|restriction = Cat Deploy Cost: Only 3,000¢ or less<br>
+4-Crown: Max # of Deployable Cats: 10
+|score reward = '''4,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''2,000''': 150,000 XP<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 2,700 XP
+|width = 4,200
+|max enemies = 6
+|jpname = Devil's Ritual
+|script = 鬼鎮めの儀式
+|romaji = Oni shizume no gishiki
+|star = 4
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]
+|difficulty = ★6
+|prev stage = [[On Holy Wings]]
+|next stage = N/A
+}}
+
+==Restrictions==
+*Cat Deploy Cost: Only 3,000¢ or less
+*4-Crown: Max # of Deployable Cats: 10
+
+==Battleground==
+*1 [[Yoichi (Enemy)|Yoichi]] spawns.
+*Infinite [[Olga (Enemy)|Olgas]] spawn after 12 seconds<sup>360f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*3 [[Norn (Enemy)|Norns]] spawn after 20 seconds<sup>600f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*1 [[Yoichi (Enemy)|Yoichi]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Yoichi (Enemy)|Yoichi]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Todomeki (Enemy)|Todomeki]] spawns as the boss.
+**3 [[Orthos (Enemy)|Orthos]] spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**8 [[Orthos (Enemy)|Orthos]] spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[Michelia (Enemy)|Michelia]] spawns.
+
+==Strategy==
+Due to the cost restriction, and an extra deployment number restriction at 4-Crown, Todomeki will be the main threat, with a somewhat high range of 370 and high stats comparing to usable units. Thus, it's recommended to use:
+*Rushers with high attack power. With Floating enemies playing the main role, [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] can get one or few powerful hits off against exposed enemies if the timing is successful. [[Express Cat (Super Rare Cat)|Maglev Cat]] also helps and can instantly strike a hit.
+*Attackers with high standing range (more than 370 to avoid Todomeki's deadly attacks and safely attack back), like [[Lizard Cat (Normal Cat)|King Dragon]] and his variants.
+*Units with forms of piercing attacks like Long Distance or Waves can snipe Todomeki. Unless they can stand at more than 370 range by themselves, some units may need the presence of enemies with shorter range as stepping stones to safely hit Todomeki, or they may suicidally rush into Todomeki's attacks due to having less standing range.
+*Units to defend against attacks from enemies. Meatshields only work well before the extra restriction from 4-Crown come in. However, units with high individual health can help with 4-Crown, like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]], who excels here as most of the damage is from Floating enemies.
+
+==Reference==
+*https://battlecats-db.com/stage/s02086-03.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]
+[[Category:Restriction Stages]]

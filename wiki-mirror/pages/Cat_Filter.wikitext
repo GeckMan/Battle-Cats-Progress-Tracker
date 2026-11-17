@@ -1,0 +1,149 @@
+<templatestyles src="Template:FilterIconInfo/styles.css" />
+<div class="cat-filter-container">
+<div style="width: 100%; overflow-x: auto;">
+{| cellpadding="0" cellspacing="0" align="center" style="margin-bottom: 20px; background: #BBB; border-radius: 10px; border: 3px solid var(--color-max-contrast); padding: 0px; max-width: 520px; box-sizing:border-box;"
+|-
+! colspan="2" style="border-bottom: 2px solid #444; background: linear-gradient(#EEE 50%, #CCC 85%); border-radius: 8px 8px 0px 0px;" |<div style="scale: 0.72;">[[File:Text Filter.png|link=]]</div>
+|- style="border-bottom: 2px solid #333;"
+! style="padding: 8px; border-right: 2px solid #CCC; color: #333;" | Rarity
+|
+<div class="filter-data-wrapper">
+    <div id="filter-rarity-nn" class="cat-filter-icon-button" data-name="Normal">[[File:Rarity button normal.png|143px|link=|Normal]]</div>
+    <div id="filter-rarity-ex" class="cat-filter-icon-button" data-name="Special">[[File:Rarity button special.png|143px|link=|Special]]</div>
+    <div id="filter-rarity-rr" class="cat-filter-icon-button" data-name="Rare">[[File:Rarity button rare.png|143px|link=|Rare]]</div>
+    <div id="filter-rarity-sr" class="cat-filter-icon-button" data-name="Super Rare">[[File:Rarity button super.png|143px|link=|Super Rare]]</div>
+    <div id="filter-rarity-ur" class="cat-filter-icon-button" data-name="Uber Rare">[[File:Rarity button uber.png|143px|link=|Uber Rare]]</div>
+    <div id="filter-rarity-lr" class="cat-filter-icon-button" data-name="Legend Rare">[[File:Rarity button legend.png|143px|link=|Legend Rare]]</div>
+</div>
+|-
+! style="padding: 8px; border-right: 2px solid #CCC; color: #333;" |Target
+|
+<div class="filter-data-wrapper">
+    <div id="filter-target-red" class="cat-filter-icon-button" data-name="Red">[[File:Redtraiticon.png|40px|link=|Target Red]]</div>
+    <div id="filter-target-floating" class="cat-filter-icon-button" data-name="Floating">[[File:Floatingtraiticon.png|40px|link=|Target Floating]]</div>
+    <div id="filter-target-dark" class="cat-filter-icon-button" data-name="Dark">[[File:Darktraiticon.png|40px|link=|Target Dark]]</div>
+    <div id="filter-target-metal" class="cat-filter-icon-button" data-name="Metal">[[File:Metaltraiticon.png|40px|link=|Target Metal]]</div>
+    <div id="filter-target-angel" class="cat-filter-icon-button" data-name="Angel">[[File:Angeltraiticon.png|40px|link=|Target Angel]]</div>
+    <div id="filter-target-alien" class="cat-filter-icon-button" data-name="Alien">[[File:Alientraiticon.png|40px|link=|Target Alien]]</div>
+    <div id="filter-target-zombie" class="cat-filter-icon-button" data-name="Zombie">[[File:Zombietraiticon.png|40px|link=|Target Zombie]]</div>
+    <div id="filter-target-relic" class="cat-filter-icon-button" data-name="Relic">[[File:Relictraiticon.png|40px|link=|Target Relic]]</div>
+    <div id="filter-target-aku" class="cat-filter-icon-button" data-name="Aku">[[File:Akutraiticon.png|40px|link=|Target Aku]]</div>
+    <div id="filter-target-traitless" class="cat-filter-icon-button" data-name="Traitless">[[File:Traitlesstraiticon.png|40px|link=|Target Traitless]]</div>
+</div>
+|-
+! style="padding: 8px; border-right: 2px solid #CCC; color: #333;" |Attack
+|
+<div class="filter-data-wrapper">
+    <div id="filter-attack-single" class="cat-filter-icon-button" data-name="Single Attack" data-desc="Only one enemy within range will be hit by this Unit's attacks.">[[File:Single Attack.png|40px|link=|Single Attack]]</div>
+    <div id="filter-attack-area" class="cat-filter-icon-button" data-name="Area Attack" data-desc="All units within the unit's set attack field will take damage from its strikes.">[[File:Zukan icon17 en.png|40px|link=|Area Attack]]</div>
+    <div id="filter-attack-long" class="cat-filter-icon-button" data-name="Long Distance" data-desc="Units at long distance will receive damage, but attacks may miss units at closer range.">[[File:Zukan icon18 en.png|40px|link=|Long Distance]]</div>
+    <div id="filter-attack-omni" class="cat-filter-icon-button" data-name="Omni Strike" data-desc="Attacks enemies both ahead and behind unit in a wide area.">[[File:Zukan icon28 en.png|40px|link=|Omni Strike]]</div>
+</div>
+|-
+! style="padding: 8px; border-right: 2px solid #CCC; color: #333;" |Ability
+|
+<div class="filter-data-wrapper">
+    <div id="filter-trait-weaken" class="cat-filter-icon-button" data-name="Weaken" data-desc="Indicated enemy types will have their attack power reduced for a set period.">[[File:Weaken.png|40px|link=|Weaken]]</div>
+    <div id="filter-trait-freeze" class="cat-filter-icon-button" data-name="Freeze" data-desc="Indicated enemy types will become unable to move for a set amount of time.">[[File:Freeze.png|40px|link=|Freeze]]</div>
+    <div id="filter-trait-slow" class="cat-filter-icon-button" data-name="Slow" data-desc="Indicated enemy types will have their speed reduced for a set amount of time.">[[File:Slow.png|40px|link=|Slow]]</div>
+    <div id="filter-trait-attacks-only" class="cat-filter-icon-button" data-name="Attacks Only" data-desc="Attacks by this unit will only cause damage to a specific type of enemy target.">[[File:Attacks Only.png|40px|link=|Attacks Only]]</div>
+    <div id="filter-trait-strong" class="cat-filter-icon-button" data-name="Strong Against" data-desc="Indicated enemy types will take extra damage, with damage received from that type also reduced.">[[File:Strong Against.png|40px|link=|Strong Against]]</div>
+    <div id="filter-trait-resistant" class="cat-filter-icon-button" data-name="Resistant" data-desc="Damage received from indicated enemy types will be reduced significantly.">[[File:Resistant.png|40px|link=|Resistant]]</div>
+    <div id="filter-trait-insanely-tough" class="cat-filter-icon-button" data-name="Insanely Tough" data-desc="Reduces damage taken from target enemies by an incredible amount.">[[File:Insanely tough.png|40px|link=|Insanely Tough]]</div>
+    <div id="filter-trait-massive-damage" class="cat-filter-icon-button" data-name="Massive Damage" data-desc="Indicated enemy types will take much more damage from unit attacks.">[[File:Massive Damage.png|40px|link=|Massive Damage]]</div>
+    <div id="filter-trait-insane-damage" class="cat-filter-icon-button" data-name="Insane Damage" data-desc="Massively increases damage to target enemies by an incredible amount.">[[File:Insane damage.png|40px|link=|Insane Damage]]</div>
+    <div id="filter-trait-knockback" class="cat-filter-icon-button" data-name="Knockback" data-desc="Unit has a set chance to push indicated enemy types back towards their base.">[[File:Knockback.png|40px|link=|Knockback]]</div>
+    <div id="filter-trait-warp" class="cat-filter-icon-button" data-name="Warp" data-desc="Attacks may cause enemies to be Warped.">[[File:Warp.png|40px|link=|Warp]]</div>
+    <div id="filter-trait-curse" class="cat-filter-icon-button" data-name="Curse" data-desc="Enemy cannot inflict negative status effects for a short time.">[[File:Unitcurseicon.png|40px|link=|Curse]]</div>
+    <div id="filter-trait-dodge" class="cat-filter-icon-button" data-name="Dodge Attack" data-desc="Temporarily avoids all damage from attacks from the target enemy type.">[[File:Dodge.png|40px|link=|Dodge Attack]]</div>
+    <div id="filter-neutral-strengthen" class="cat-filter-icon-button" data-name="Strengthen" data-desc="After this unit's health falls below a set amount, its attacks grow much stronger.">[[File:Strengthen.png|40px|link=|Strengthen]]</div>
+    <div id="filter-neutral-survive" class="cat-filter-icon-button" data-name="Survive" data-desc="After this unit's health falls below zero, it may heal itself by a small amount.">[[File:Survive.png|40px|link=|Survive]]</div>
+    <div id="filter-neutral-base-destroyer" class="cat-filter-icon-button" data-name="Base Destroyer" data-desc="If this unit is attacking an enemy Base, its attacks will do much more damage.">[[File:Base Destroyer.png|40px|link=|Base Destroyer]]</div>
+    <div id="filter-neutral-critical" class="cat-filter-icon-button" data-name="Critical" data-desc="Attacks by this unit have a set chance of extra damage and can hurt Metal enemies.">[[File:Zukan icon07.png|40px|link=|Critical]]</div>
+    <div id="filter-neutral-metal-killer" class="cat-filter-icon-button" data-name="Metal Killer" data-desc="Deals damage equal to a set percentage of a target Metal enemy's remaining health.">[[File:Zukan icon47.png|40px|link=|Metal Killer]]</div>
+    <div id="filter-neutral-zombie-killer" class="cat-filter-icon-button" data-name="Zombie Killer" data-desc="Units with this ability can prevent Zombie enemies from reviving.">[[File:Zukan icon25.png|40px|link=|Zombie Killer]]</div>
+    <div id="filter-neutral-soulstrike" class="cat-filter-icon-button" data-name="Soulstrike" data-desc='Attacks can deliver damage to temporarily "dead" Zombie enemies.'>[[File:Zukan icon41.png|40px|link=|Soulstrike]]</div>
+    <div id="filter-neutral-barrier-breaker" class="cat-filter-icon-button" data-name="Barrier Breaker" data-desc="Has a chance to nullify enemy barriers and deliver huge damage upon break.">[[File:Barrier Breaker.png|40px|link=|Barrier Breaker]]</div>
+    <div id="filter-neutral-shield-piercing" class="cat-filter-icon-button" data-name="Shield Piercing" data-desc="Attacks have set chance to nullify Aku Shields and deliver huge damage.">[[File:Zukan icon39.png|40px|link=|Shield Piercing]]</div>
+    <div id="filter-neutral-savage-blow" class="cat-filter-icon-button" data-name="Savage Blow" data-desc="Set chance to deal a large amount of extra damage.">[[File:Savage blow.png|40px|link=|Savage Blow]]</div>
+    <div id="filter-neutral-extra-money" class="cat-filter-icon-button" data-name="Money Up" data-desc="Money rewards from defeating indicated enemy types will be increased.">[[File:Extra Money.png|40px|link=|Money Up]]</div>
+    <div id="filter-neutral-metal-ability" class="cat-filter-icon-button" data-name="Metal" data-desc="Damage from most attacks is reduced significantly, but the unit will remain vulnerable to Critical strikes.">[[File:Metal.png|40px|link=|Metal]]</div>
+    <div id="filter-neutral-mini-wave" class="cat-filter-icon-button" data-name="Mini-Wave" data-desc="Successful attacks may deliver extra damage to enemies within range as a small Wave strike.">[[File:Zukan icon38.png|40px|link=|Mini-Wave]]</div>
+    <div id="filter-neutral-wave" class="cat-filter-icon-button" data-name="Wave Attack" data-desc="Attacks will strike all enemies in range, delivering extra damage from the energy wave released.">[[File:Zukan icon14.png|40px|link=|Wave]]</div>
+    <div id="filter-neutral-mini-surge" class="cat-filter-icon-button" data-name="Mini-Surge" data-desc="Successful attacks release a small Surge that delivers extra damage to a random point.">[[File:Zukan icon43.png|40px|link=|Mini-Surge]]</div>
+    <div id="filter-neutral-surge" class="cat-filter-icon-button" data-name="Surge Attacks" data-desc="Successful attacks deal extra damage to random sections in their attack area.">[[File:Volcano effect.png|40px|link=|Surge]]</div>
+    <div id="filter-neutral-counter-surge" class="cat-filter-icon-button" data-name="Counter-Surge" data-desc="This Unit can create a Surge attack of equal type, level, and spawn range when hit by a Surge attack.">[[File:Zukan icon44.png|40px|link=|Counter-Surge]]</div>
+    <div id="filter-neutral-explosion" class="cat-filter-icon-button" data-name="Explosion" data-desc="Unleashes a damaging explosion which spreads to the left and right of a successful attack.">[[File:Zukan icon48.png|40px|link=|Explosion]]</div>
+    <div id="filter-neutral-wave-shield" class="cat-filter-icon-button" data-name="Wave Shield" data-desc="This Unit can negate Wave Attacks and protect units behind them from their effect.">[[File:Zukan icon24.png|40px|link=|Wave Shield]]</div>
+    <div id="filter-neutral-conjure" class="cat-filter-icon-button" data-name="Conjure" data-desc="Tap the icon to summons a spirit that attacks foes. Unit can only be deployed one at a time.">[[File:Zukan icon45.png|40px|link=|Conjure]]</div>
+    <div id="filter-neutral-cooldown-cut" class="cat-filter-icon-button" data-name="Cooldown Cut" data-desc="Reduces recharge time by a set percentage every second deployment.">[[File:Zukan icon51.png|40px|link=|Cooldown Cut]]</div>
+    <div id="filter-neutral-colossus-slayer" class="cat-filter-icon-button" data-name="Colossus Slayer" data-desc="Increases attack damage and defense versus Colossal enemies.">[[File:BaronKillerAbility.png|40px|link=|Colossus Slayer]]</div>
+    <div id="filter-neutral-behemoth-slayer" class="cat-filter-icon-button" data-name="Behemoth Slayer" data-desc="Increases attack damage and defense vs Behemoths, with a chance to Dodge.">[[File:Zukan icon42.png|40px|link=|Behemoth Slayer]]</div>
+    <div id="filter-neutral-sage-slayer" class="cat-filter-icon-button" data-name="Sage Slayer" data-desc="Increases damage dealt to Sages. Reduces damage received and effects of debuffs. Also negates enemy Sage debuff immunity.">[[File:Zukan icon46.png|40px|link=|Sage Slayer]]</div>
+    <div id="filter-collab-witch-killer" class="cat-filter-icon-button" data-name="Witch Killer" data-desc="Huge attack and defense boost vs Witch enemies found in Madoka Magica Collab stages.">[[File:WitchKiller.png|40px|link=|Witch Killer]]</div>
+    <div id="filter-collab-eva-angel-killer" class="cat-filter-icon-button" data-name="EVA Angel Killer" data-desc="Delivers extra damage to / takes less damage from Evangelion Collab bosses.">[[File:Epicability2.png|40px|link=|EVA Angel Killer]]</div>
+    <div id="filter-neutral-immune-weaken" class="cat-filter-icon-button" data-name="Immune to Weaken" data-desc="Enemy attacks will not weaken the attacks of this unit.">[[File:Weaken Immunity.png|40px|link=|Immune to Weaken]]</div>
+    <div id="filter-neutral-immune-freeze" class="cat-filter-icon-button" data-name="Immune to Freeze" data-desc="Enemy attacks will not freeze the movement of this unit.">[[File:Freeze Immunity.png|40px|link=|Immune to Freeze]]</div>
+    <div id="filter-neutral-immune-slow" class="cat-filter-icon-button" data-name="Immune to Slow" data-desc="Enemy attacks will not cause slowdown against this unit.">[[File:Slow Immunity.png|40px|link=|Immune to Slow]]</div>
+    <div id="filter-neutral-immune-knockback" class="cat-filter-icon-button" data-name="Immune to Knockback" data-desc="Enemy attacks will not cause this unit to be knocked back.">[[File:Knockback Immunity.png|40px|link=|Immune to Knockback]]</div>
+    <div id="filter-neutral-immune-waves" class="cat-filter-icon-button" data-name="Immune to Waves" data-desc="This unit does not take damage from Wave attacks.">[[File:Zukan icon16.png|40px|link=|Immune to Waves]]</div>
+    <div id="filter-neutral-immune-surge" class="cat-filter-icon-button" data-name="Immune to Surge" data-desc="Does not take Surge damage caused by enemy attacks.">[[File:Surge Immune.png|40px|link=|Immune to Surge]]</div>
+    <div id="filter-neutral-immune-explosion" class="cat-filter-icon-button" data-name="Immune to Explosions" data-desc="Does not take damage from enemy Explosions.">[[File:Zukan icon49.png|40px|link=|Immune to Explosions]]</div>
+    <div id="filter-neutral-immune-warp" class="cat-filter-icon-button" data-name="Immune to Warp" data-desc="Enemy Warp abilities do not affect this unit.">[[File:Warp Blocker.png|40px|link=|Immune to Warp]]</div>
+    <div id="filter-neutral-immune-curse" class="cat-filter-icon-button" data-name="Immune to Curse" data-desc="Immune to temporary status effects inflicted by enemy Curses.">[[File:Epicability1.png|40px|link=|Immune to Curse]]</div>
+    <div id="filter-neutral-immune-toxic" class="cat-filter-icon-button" data-name="Immune to Toxic" data-desc="Immune to Toxic effects of enemy attacks!">[[File:Poison immune.png|40px|link=|Immune to Toxic]]</div>
+</div>
+|-
+! style="padding: 8px; border-right: 2px solid #CCC; color: #333;" | Talent
+|
+<div class="filter-data-wrapper">
+    <div id="filter-talent-resist-weaken" class="cat-filter-icon-button" data-name="Resist Weaken" data-desc="Weaken effects caused by enemies are less likely to take effect.">[[File:Resistweakenability.png|40px|link=|Resist Weaken]]</div>
+    <div id="filter-talent-resist-freeze" class="cat-filter-icon-button" data-name="Resist Freeze" data-desc="Freeze effects caused by enemies are less likely to take effect.">[[File:Resistfreezeability.png|40px|link=|Resist Freeze]]</div>
+    <div id="filter-talent-resist-slow" class="cat-filter-icon-button" data-name="Resist Slow" data-desc="Slow effects caused by enemies are less likely to take effect.">[[File:Resistslowability.png|40px|link=|Resist Slow]]</div>
+    <div id="filter-talent-resist-knockback" class="cat-filter-icon-button" data-name="Resist Knockback" data-desc="Knockback effects caused by enemies are less likely to take effect.">[[File:Resistknockbackability.png|40px|link=|Resist Knockback]]</div>
+    <div id="filter-talent-resist-wave" class="cat-filter-icon-button" data-name="Resist Wave" data-desc="Enemy Wave attacks cause less damage.">[[File:Resistwaveability.png|40px|link=|Resist Wave]]</div>
+    <div id="filter-talent-resist-surge" class="cat-filter-icon-button" data-name="Resist Surge Attack" data-desc="Less damage from Enemy Surge attacks.">[[File:Surgeresistability.png|40px|link=|Resist Surge]]</div>
+    <div id="filter-talent-resist-warp" class="cat-filter-icon-button" data-name="Warp Resistant" data-desc="Warp effects caused by enemies are less likely to take effect.">[[File:Resistwarpability.png|40px|link=|Resist Warp]]</div>
+    <div id="filter-talent-resist-curse" class="cat-filter-icon-button" data-name="Resist Curse" data-desc="Curse effects caused by enemies are less likely to take effect.">[[File:Resistcurseability.png|40px|link=|Resist Curse]]</div>
+    <div id="filter-talent-resist-toxic" class="cat-filter-icon-button" data-name="Resistant to Toxic" data-desc="Toxic effects caused by enemies are less likely to take effect.">[[File:Resisttoxicability.png|40px|link=|Resist Toxic]]</div>
+    <div id="filter-talent-defense-up" class="cat-filter-icon-button" data-name="Defense Buff" data-desc="Base defense is permanently raised.">[[File:Defenseupability.png|40px|link=|Defense Up]]</div>
+    <div id="filter-talent-attack-up" class="cat-filter-icon-button" data-name="Attack Buff" data-desc="Base attack is permanently raised.">[[File:Attackupability.png|40px|link=|Attack Up]]</div>
+    <div id="filter-talent-move-speed-up" class="cat-filter-icon-button" data-name="Move Speed Up" data-desc="Unit will move faster.">[[File:Movespeedupability.png|40px|link=|Move Speed Up]]</div>
+    <div id="filter-talent-improved-knockback" class="cat-filter-icon-button" data-name="Improved Knockback" data-desc="Chance of Knockback is increased.">[[File:Improvedknockbackability.png|40px|link=|Improved Knockback]]</div>
+    <div id="filter-talent-cost-down" class="cat-filter-icon-button" data-name="Cost Down" data-desc="Unit's deploy cost is decreased.">[[File:Costdownability.png|40px|link=|Cost Down]]</div>
+    <div id="filter-talent-recover-speed-up" class="cat-filter-icon-button" data-name="Recover Speed Up" data-desc="Unit will be available for deployment sooner.">[[File:Recoverspeedupability.png|40px|link=|Recover Speed Up]]</div>
+    <div id="filter-talent-attack-freq-up" class="cat-filter-icon-button" data-name="Attack Frequency Up" data-desc="Time between attacks is shortened.">[[File:Attackfrequpability.png|40px|link=|Attack Frequency Up]]</div>
+    <div id="filter-talent-defense-up-plus" class="cat-filter-icon-button" data-name="Defense Buff Plus" data-desc="Base defense is permanently raised by a significant amount.">[[File:Skill71.png|40px|link=|Defense Up Plus]]</div>
+    <div id="filter-talent-attack-up-plus" class="cat-filter-icon-button" data-name="Attack Buff Plus" data-desc="Base attack is permanently raised by a significant amount.">[[File:Skill70.png|40px|link=|Attack Up Plus]]</div>
+</div>
+|-
+| colspan="2" style="padding: 4px; border-top: 2px solid #444; background: linear-gradient(#EEE 30%, #CCC 70%); border-radius: 0px 0px 8px 8px; position: relative; text-align: center;" |<span id="filter-toggle-andor" title="Toggle AND/OR Filtering" style="position: absolute; left: 10px; top: 50%; transform: translate(0%, -50%);"></span><div id="filter-toggle-talent" class="cat-filter-icon-button cat-filter-icon-button-talent" style="position: absolute; left: 76px; top: 50%; transform: scale(0.39) translate(0%, -50%); transform-origin: 0% 0%;" data-name="Toggle Talent Inclusion">[[File:Talent 6.png|link=|Talent Toggle]]</div><div id="filter-toggle-ultratalent" class="cat-filter-icon-button cat-filter-icon-button-ultratalent" style="position: absolute; left: 105px; top: 50%; transform: scale(0.234) translate(0%, -50%); transform-origin: 0% 0%;" data-name="Toggle Ultra Talent Inclusion">[[File:DarkCatseye.png|link=|Ultra Talent Toggle]]</div><span id="filter-submit-button" title="Show Filter Results"></span><span id="filter-clear-button" title="Clear filter selections and result" style="position: absolute; right: 10px; top: 50%; transform: translate(0%, -50%);"></span><span style="height:12px;display: inline-block;"></span>
+|}
+</div>
+
+<div id="filter-no-results" style="display: none; width: 300px; height: 60px; margin: 0 auto 20px auto; padding: 8px; border: 1px solid var(--color-min-contrast); outline: 2px solid var(--color-max-contrast); background: linear-gradient(#444 0%, #222 100%); color: yellow; text-align: center; font-weight: bold; line-height: 20px;">No Units match these Filter<br>conditions! Try another search!</div>
+<div id="filter-result" style="display: none; margin-bottom: 20px"></div>
+
+</div>
+
+{{Clear}}
+
+==Usage==
+This page has the capability to show an array of cat deploy icons given a set of selected filter options and a few settings. Cats such as the Iron Wall Cat and [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]] are not displayed in addition to PC and Switch exclusive units. If the icons do not load properly (they show as broken images), clicking the Search button again may allow them to load properly.
+
+To choose filters, click the buttons for target traits and abilities, and select the checkboxes for rarities. The on and off status of any selection button is indicated by coloring; grayed out buttons are not selected, and colored buttons are selected. At the bottom left of the filter, there is a switch to toggle between AND and OR filtering. OR filtering will show units with any of the selected abilities and target traits, and AND filtering only shows units with all of the selected abilities and target traits. Note that the filtering of unit rarities is unaffected by the AND/OR toggle.
+
+In addition, there are two buttons located to the right of the AND/OR toggle (an NP icon and a Dark Catseye). These are the Talent and Ultra Talent inclusion buttons. Enabling Talent inclusion has the filter show any units matching the specified filters including abilities added by regular Talents in addition to abilities that the Normal, Evolved, True and Ultra (if applicable) Forms have. The Ultra Talent inclusion button works in the same way, but it only includes abilities from Ultra Talents and does not include regular Talents.
+
+Clicking the Search button submits the filter options and shows the unit icons below the filter. This output area can be scrolled vertically if the height is not enough to show all units. In addition, the height of the output area can be adjusted if desired. Furthermore, the unit icons will transition between forms when hovering the mouse over the output area. This space can be hidden by the Clear button, which also removes all filter option selections.
+
+:''For filtering by stats, see [[Cat Stats Tool]].''
+
+{{BC Navigation}}
+[[Category:Main]]
+[[Category:Pages using cat filter]]
+[[Category:Pages using tooltips]]
+{{#seo:
+|description = A tool to find Cats by rarities, abilities, and target traits.
+|image = Magnifyingglass.png
+}}

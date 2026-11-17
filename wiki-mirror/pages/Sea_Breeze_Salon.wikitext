@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Bore|Nimoy Bore|Boraphim}}
+'''Sea Breeze Salon''' is the second stage in [[Cutpurse Coast]].
+
+{{Stage Info
+|stage name = [[File:rc007.png]]
+[[File:Mapsn037 01 n en.png]]
+|stage location = [[File:Mapname037 n en.png]]
+|energy = 140
+|enemy castle hp = 990,000 HP
+|enemies = {{Magnification|Bore|150%
+|Nimoy Bore|400%}}
+|boss = {{Magnification|Boraphim|100%}}
+|enemies2 = {{Magnification|Bore|180%
+|Nimoy Bore|480%}}
+|boss2 = {{Magnification|Boraphim|120%}}
+|enemies3 = {{Magnification|Bore|195%
+|Nimoy Bore|520%}}
+|boss3 = {{Magnification|Boraphim|130%}}
+|treasure = - 266,000 XP (10%, 1 time)<br>
+- [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 2,660 XP
+|width = 5,500
+|max enemies = 7
+|jpname = Hair Salon Sea Breeze
+|script = ヘアーサロン潮風
+|romaji = Heā Saron Shiokaze
+|star = 4
+|sub-chapter = [[Cutpurse Coast]]
+|difficulty = ★9
+|prev stage = [[Swim Meet]]
+|next stage = [[Deep Sea Dying]]
+}}
+
+==Battleground==
+*1 [[Bore]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Nimoy Bore]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*2 [[Bore]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*2 [[Nimoy Bore]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base reaches 99% HP:
+**1 [[Boraphim]] spawns as the boss.
+**10 [[Bore]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**10 [[Nimoy Bore]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+
+==Strategy==
+You should aim to use 3~4 [[:Category:Meatshield-class Cats|meatshields]] in this stage, as well as good [[:Category:Anti-Red Cats|anti-Red]], [[:Category:Anti-Alien Cats|Alien]] and [[:Category:Anti-Angel Cats|Angel]] [[:Category:Crowd-Controller-class Cats|crowd-controllers]] such as [[Apple Cat (Super Rare Cat)|iCat]], [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] and [[Talents|talented]] [[Sanzo Cat]]. [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] works well against any of the enemies to help your meatshields stall until your crowd-controllers can either attack again or be redeployed. Also, bring good [[:Category:Area Attack Cats|Area Attackers]] such as [[Catway (Super Rare Cat)|Drone Cat]] and [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to deal with the wave of enemies that appear when you hit the base. For more information, see the video below.
+
+==Walkthrough==
+{{Walkthrough
+|9-y3cdtt7WY|Lucas IV|Commentary
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s00037-02.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 38 Stages]]
+[[Category:Stories of Legend Stages]]

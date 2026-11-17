@@ -1,0 +1,62 @@
+{{JPExclusive}}
+:''This article is about the enemy, for the Cat Unit, see [[Nyamusu (Special Cat)]].''
+'''Nyamusu''' (ニャームス Nyāmusu) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Nebaaru-kun and Nyanpazuru Collaboration Event]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Nyamusu
+|appearance = [[Nebaaru-kun and Nyanpazuru Collaboration Event]]
+|image = E 237.png
+|money drop = 1,500円 - 5,925円
+}}
+
+==Enemy==
+An enemy with rather high health, average damage and range as well as a high chance to freeze the players [[Cat Units]]. This enemy also has Area Attack making its freeze more deadly than it should be. In its debut stage she is at a very low magnification of 1%, making its initial stats pitifully lower than what they are in its second debut.
+
+==Strategy==
+Units that outrange this cat can help very much, as well as units that are [[:Category:Cats with Freeze Immunity|Cats with Freeze Immunity]] so that 75% proc chance will do absolutely nothing to them. However it's 8,000 will chip away your units health little by little no matter how high level they are.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nebaaru-kun and Nyanpazuru Collaboration Event#Protecting Cats|Protecting Cats]]:
+**[[Protecting with Cat Puzzle]] (1%)
+**[[Together Protecting Cats]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Nyamusu
+|Health = 140000
+|Attack Power = 8000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 239
+|Movement Speed = 7
+|Knockback = 2
+|Foreswing = 50
+|Backswing = 26
+|Ability = {{AbilityIcon|Freeze}} 75% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+237 e.png|Nyamusu's spritesheet
+IdleNyamusu.gif|Nyamusu's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/239.html
+
+----
+{{EnemyNav|The Perfect Cyclone|Pochi}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Area Attack Enemies]]

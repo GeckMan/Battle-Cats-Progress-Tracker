@@ -1,0 +1,135 @@
+:''This article is about the Cat Unit. For the enemy, see [[Blanka (Enemy)]].''
+'''Blanka''' is a [[:Category:Uber Rare Cats|Uber Rare Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 515
+|rarity = UR
+|name1 = Blanka
+|name2 = Blanka CC
+}}
+
+==Evolution==
+Evolves into '''Blanka CC''' at level 10.
+
+==Strategy/Usage==
+Blanka is an incredibly powerful kamikaze rusher that's comparable to many other units within this niche, such as [[Sanada Yukimura (Uber Rare Cat)|Yukimura]] and Awakened Bahamut in that he's a fragile unit with low cooldown and cost, yet capable of dealing great damage. For non-Aliens, this number goes up to 204,000 if his full backswing cooldown is abused properly, and when against aliens this can shoot up to 816,000. His Omni Strike and Barrier Breaker only make things better, as despite his low range, he is able to hit further than other rushers, and Starred Aliens' Barriers are no match when he strikes.
+
+{{Job|Classification = Rusher & Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 515
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni515 f00.png
+|Image2 = Uni515 c00.png
+|Name1 = Blanka
+|Desc1 = Joining the fight from Street Fighter V!<br>Gentle defender of the Amazon forests.<br>Massive Omnistrike damage vs Aliens
+|Name2 = Blanka CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Strikes with a chaotic Rolling Attack!<br>Massive Omnistrike damage vs Aliens
+|Name1 (JP) = ブランカ (Buranka, Blanca)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>アマゾンの大自然で育った心やさしい戦士<br>エイリアンに超ダメージを与える(全方位攻撃)
+|Transl1 (JP) = Participate in Street Fighter V!
+A friendly warrior who grew up in the Amazon nature<br>
+Cause super damage to aliens (omnidirectional attack)
+|Name2 (JP) = ブランカCC (BurankaCC, BlancaCC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>野性味あふれる「ローリングアタック」で敵を粉砕<br>エイリアンに超ダメージを与える(全方位攻撃)
+|Transl2 (JP) = Participate in Street Fighter V!
+Crush enemies with the wild rolling "Rolling Attack"<br>
+Cause super damage to aliens (omnidirectional attack)
+|Name1 (TW) = 布蘭卡
+|Desc1 (TW) = 從快打旋風V來參戰！<br>亞馬遜大自然中成長的善良戰士<br>能給予異星戰士超大傷害(全方位攻擊)
+|Name2 (TW) = 布蘭卡CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>以野性十足的"翻滾攻擊"粉碎敵人<br>能給予異星戰士超大傷害(全方位攻擊)
+|Name1 (KR) = 블랑카
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>아마존의 대자연에서 자란 상냥한 전사<br>에이리언에 초 데미지를 입힌다 (전방위 공격)
+|Name2 (KR) = 블랑카CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>야성미 넘치는 롤링 어택으로 적을 분쇄<br>에이리언에 초 데미지를 입힌다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,200¢
+*Chapter 2: 3,300¢
+*Chapter 3: 4,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Blanka
+|Normal Base HP = 2400
+|Normal Base AP = 1500
+|Normal Range = 150
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 93
+|Normal Speed = 55
+|Normal KB = 8
+|Normal Cost = 2200
+|Normal Recharge = 2000
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~300)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Blanka CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 1500
+|Evolved Range = 150
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 93
+|Evolved Speed = 55
+|Evolved KB = 8
+|Evolved Cost = 2200
+|Evolved Recharge = 2000
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -100~300)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,400 HP
+|val-Normal-Attack Power = 1,500 damage<br>(483.87 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 93f <sub>3.1 seconds</sub>
+|val-Normal-Movement Speed = 55
+|val-Normal-Knockback = 8 times
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(88f <sup>2.93s</sup> backswing)
+|val-Normal-Recharge Time = 66.67 ~ 57.87 seconds
+|val-Normal-MaxHP = 40,800 HP
+|val-Normal-MaxAttack = 25,500 damage<br>(8,225.81 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 25,500 damage<br>(8,225.81 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 93f <sub>3.1 seconds</sub>
+|val-Evolved-Movement Speed = 55
+|val-Evolved-Knockback = 8 times
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(88f <sup>2.93s</sup> backswing)
+|val-Evolved-Recharge Time = 66.67 ~ 57.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni515 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/516.html
+
+----
+{{CatNav|Zangief|Dhalsim}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Barrier Breaker Cats]]

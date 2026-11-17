@@ -1,0 +1,63 @@
+:''This article is about the enemy. For the Cat Unit, see [[Coco (Rare Cat)]].''
+'''Coco''' (ココ) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[LINE Pokopang! Collaboration Event]]. He was added in [[Version 7.0 Update|Version 7.0]].
+
+{{Enemy Info
+|name = Coco
+|image = E 401.png
+|appearance = [[LINE Pokopang! Collaboration Event]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Coco fulfills the status role of the Pokopang group, as he has a guaranteed chance to weaken your Cat Units. Coco's weaken duration lasts for 100 frames and Coco attacks every 97 frames, so it is possible for cats to get stuck in a weaken lock if they are not knocked back. At his highest strength ([[Rainbow Blast!]] at 3 crown difficulty), he has 240,000 health and 20,000 attack power.
+
+==Strategy==
+Stacking [[Lizard Cat (Normal Cat)|King Dragon Cats]] is sufficient for dealing with Coco if he is alone, because King Dragon Cat outranges him and has enough firepower for the job. A level 60 King Dragon Cat will kill a 200% Coco in twenty hits if protected. But if [[Pokota (Enemy)|Pokota]] is also present, then it may be better to have a heavy-hitting cat like [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] occupy the backline instead.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[LINE Pokopang! Collaboration Event#Poko Forest Friends!|Poko Forest Friends!]]: [[Bear's Bashfulness]] (6%)
+*[[LINE Pokopang! Collaboration Event#Trio from the Woods|Trio from the Woods]]:
+**[[Collecting Cherries]] (30%)
+**[[Rainbow Blast!]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Coco
+|Health = 120000
+|Attack Power = 10000
+|Attack Range = 330
+|Attack Type = Area
+|Time Between Attacks = 97
+|Movement Speed = 10
+|Knockback = 2
+|Foreswing = 50
+|Backswing = 47
+|Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 100f <sub>3.33 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+401 e.png|Coco's spritesheet
+IdleCoco.gif|Coco's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/403.html
+
+----
+{{EnemyNav|Ovis|Moe Uzumasa & Doge}}
+----
+
+{{LINE Pokopang!}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

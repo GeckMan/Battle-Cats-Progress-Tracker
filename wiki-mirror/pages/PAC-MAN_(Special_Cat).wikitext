@@ -1,0 +1,133 @@
+'''PAC-MAN''' is a [[:Category:Special Cats|Special Cat]] that can be purchased from a special sale during the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Cat Info
+|ID = 866
+|rarity = EX
+|name1 = PAC-MAN
+|name2 = Cat PAC-MAN
+}}
+
+==Evolution==
+Evolves into '''Cat PAC-MAN''' at level 10.
+
+==Strategy/Usage==
+PAC-MAN is a specialist anti-Red/Zombie tank, highly comparable to [[Sushi Cat (Super Rare Cat)|Fried Shrimp Cat]]. Prior to the latter's True Form, Pac Man actually has a considerable stat advantage against Reds and doesn't rely on Weaken procs to pick up the slack—especially with his "Resistant" Effects Up [[Cat Combo]]. Zombies, in particular, don't have a reliable tank outside of [[Li'l Sakonji Urokodaki (Super Rare Cat)|Collaboration Gachas]] either, making him exceptionally valuable in that regard. Furthermore, he's available in {{4c}} restriction stages thanks to him being a Special Cat.
+
+As you progress in the game, however, PAC-MAN begins losing considerable steam. Against Reds, Roe Cat basically outperforms him in every metric, while becoming even cheaper with [[Talents]]. [[Wushu Cat (Rare Cat)|Shigong Cat]]'s status as a disposable meatshield is actually more advantageous in many situations, since Zombies tend to be quite stringent with cash drops. More often than not, it is unsustainable to spend such capital on a pure tank, whose range is so low it completely exposes the unit to non-target peons like [[Doge Dark]]. He's not useless by any means, but the alternatives are just better-suited to their niches than PAC-MAN.
+
+However, his Cat Combo completely flips things on their head. You can use PAC-MAN with the aforementioned cats to boost their effective HP even more, plus you gain access to a reliable back-up tank that you can deploy alongside Shigong Cat, [[Carpenter Cat (Rare Cat)|Carpenter Cat]], or Roe Cat if the situation calls for it. This can even apply to meatshields/tanks of other traits like [[Rocker Cat (Rare Cat)|Ramen Cat]], [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]], [[Maize Cat (Rare Cat)|Maize Cat]], [[Jetpack Cat (Rare Cat)|Jetpack Cat]], and what have you. It is a very versatile 1-slot Cat Combo, and singlehandedly makes PAC-MAN worth considering for purchase.
+
+{{Job|Classification = Tanker & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|PAC-MAN Fever|"Resistant" Effects Up (Sm)|PAC-MAN|jpname=パックマンフィーバー}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 866
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni866 f00.png
+|Image2 = Uni866 c00.png
+|Name1 = PAC-MAN
+|Desc1 = Joining from "PAC-MAN"! This cheerful fellow<br>will happily chomp anything and everything!<br>Tough vs. Red/Zombies.
+|Name2 = Cat PAC-MAN
+|Desc2 = A joyful, round and yellow Cat who<br>loves munching Cat Food most of all!<br>Tough vs. Red/Zombies.
+|Name1 (JP) = パックマン (Pakkuman, Pac-Man)
+|Desc1 (JP) = 「パックマン」から参戦！いつも元気でハッピー<br>なんでもパクパクと食べるのが大好き！<br>赤い敵とゾンビに打たれ強い
+|Transl1 (JP) = Entering from 'Pac-Man'! Always energetic and happy<br>loves eating a mouthful of anything!<br>Resilient against Red enemies and Zombies
+|Name2 (JP) = パックマンネコ (Pakkuman Neko, Pac-Man Cat)
+|Desc2 (JP) = いつも元気でハッピーな黄色くてまるい体のネコ<br>ネコカンばかりパクパクと食べるのが大好き！<br>赤い敵とゾンビに打たれ強い
+|Transl2 (JP) = A yellow and circular cat that's always energetic and happy<br>loves only eating a mouthful of cat food!<br>Resilient against Red enemies and Zombies
+|Name1 (TW) = PAC-MAN
+|Desc1 (TW) = 從《PAC-MAN》來參戰！總是活力充沛又開朗<br>最喜歡把各種東西通通吃光光！<br>對上紅色敵人和不死生物很耐打
+|Name2 (TW) = PAC-MAN貓
+|Desc2 (TW) = 總是活力充沛又開朗的圓滾滾黃色貓咪<br>最喜歡一股腦地把貓罐頭吃個精光！<br>對上紅色敵人和不死生物很耐打
+|Name1 (KR) = PAC-MAN
+|Desc1 (KR) = 「PAC-MAN」에서 참전! 언제나 활기차고 해피!<br>뭐든 와구와구 먹는 게 제일 좋아!<br>빨간 적과 좀비에 맷집이 좋다
+|Name2 (KR) = PAC-MAN 고양이
+|Desc2 (KR) = 언제나 활기차며 해피한 노랗고 둥근 몸의 고양이<br>고양이 통조림을 와구와구 먹는 게 제일 좋아!<br>빨간 적과 좀비에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 820¢
+*Chapter 2: 1,230¢
+*Chapter 3: 1,640¢
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = PAC-MAN
+|Normal Base HP = 2400
+|Normal Base AP = 28
+|Normal Range = 100
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 9
+|Normal Speed = 28
+|Normal KB = 2
+|Normal Cost = 820
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = Red,Zombie
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Cat PAC-MAN
+|Evolved Base HP = 2400
+|Evolved Base AP = 28
+|Evolved Range = 100
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 9
+|Evolved Speed = 28
+|Evolved KB = 2
+|Evolved Cost = 820
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Zombie
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni866 f00}}
+
+==Trivia==
+*PAC-MAN is tied with [[Li'l Clops Cat Egg (Special Cat)|Li'l Clops Cat Egg]], [[:Category:Ancient Eggs|Ancient Eggs]], [[Wafer Cat (Special Cat)|Wafer Cat]] and [[Li'l Tank Cat (Special Cat)|Li'l Tank Cat]] for the lowest standing range of any Cat Unit in the game (barring the unobtainable [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]]).
+
+==Reference==
+*https://battlecats-db.com/unit/867.html
+
+----
+{{CatNav|True Assassin|Blinky Cat}}
+----
+
+{{Pac-Man}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Zombie Killer Cats]]

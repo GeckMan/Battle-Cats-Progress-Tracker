@@ -1,0 +1,26 @@
+{{#invoke:Navbox|main
+|template = Template:Nazousagi
+|title = [[Nazousagi Collaboration Event]]
+|navbox_class = nazousagi
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Nazousagi (Special Cat)|Nazousagi]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Nazousagi (Enemy)|Nazousagi]]
+
+|header3 = Stages
+|group3 = Nazousagi Advent!?
+|list3 =
+*[[A World Dominated by Mystery]]
+*[[Signature Lemonade]]
+*[[Nazo VS Helikutsu]]
+*[[The Four Riddles]]
+*[[Resolved by Physical Attack]]
+}}<templatestyles src="Nazousagi/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Nazousagi]]}}<noinclude>[[Category:Navboxes]]</noinclude>

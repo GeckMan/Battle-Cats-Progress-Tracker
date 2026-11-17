@@ -1,0 +1,52 @@
+{{#invoke:Navbox|main
+|template = Template:Metal Slug
+|title = [[Metal Slug Collaboration Event]]
+|navbox_class = metal-slug
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[HYAKUTARO (Rare Cat)|HYAKUTARO]]
+*[[MARCO (Rare Cat)|MARCO]]
+*[[TARMA (Rare Cat)|TARMA]]
+*[[FIO (Rare Cat)|FIO]]
+*[[ERI (Rare Cat)|ERI]]
+*[[MARS PEOPLE (Rare Cat)|MARS PEOPLE]]
+*[[ALLEN O'NEIL (Super Rare Cat)|ALLEN O'NEIL]]
+*[[SV-001 (Super Rare Cat)|SV-001]]
+*[[JUPITER KING (Uber Rare Cat)|JUPITER KING]]
+*[[DONALD MORDEN (Uber Rare Cat)|DONALD MORDEN]]
+*[[HI-DO (Uber Rare Cat)|HI-DO]]
+*[[HUGE HERMIT (Uber Rare Cat)|HUGE HERMIT]]
+*[[SOL DAE ROKKER (Uber Rare Cat)|SOL DAE ROKKER]]
+
+|group2 = Enemy Units
+|list2 =
+*[[MARCO (Enemy)|MARCO]]
+*[[MARS PEOPLE (Enemy)|MARS PEOPLE]]
+*[[ALLEN O'NEIL (Enemy)|ALLEN O'NEIL]]
+*[[SV-001 (Enemy)|SV-001]]
+*[[JUPITER KING (Enemy)|JUPITER KING]]
+*[[DONALD MORDEN (Enemy)|DONALD MORDEN]]
+*[[HI-DO (Enemy)|HI-DO]]
+*[[HUGE HERMIT (Enemy)|HUGE HERMIT]]
+*[[SOL DAE ROKKER (Enemy)|SOL DAE ROKKER]]
+
+|header3 = Stages
+|group3 = Metal Slug Defense
+|list3 =
+*[[Immortal Allen O'Neil]]
+*[[Attack on Huge Hermit]]
+*[[Jupiter King Convoy]]
+
+|group4 = Super Metal Slug
+|list4 =
+*[[Devils on the Doorstep (Insane)]]
+
+|group5 = METAL SLUG STRIKES!
+|list5 =
+*[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 1~10]]
+}}<templatestyles src="Metal Slug/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Metal Slug]]}}<noinclude>[[Category:Navboxes]]</noinclude>

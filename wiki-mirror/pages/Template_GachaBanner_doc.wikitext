@@ -1,0 +1,134 @@
+{{Documentation}}
+This template is used to display information about an Uber set in [[:Category:Uber Rare Cats]].
+
+==Parameters==
+<pre>
+{{GachaBanner|Set Name|bnr = |color = |text = |units =
+Unit1
+Unit2
+Unit3
+...
+}}
+</pre>
+
+The first parameter is unnamed and takes the name of the Uber set. The full name must be entered exactly as it is done in the title of the page for the set.
+
+<code>bnr</code> is an ID for the image of the banner. The banner images are in the format <code>Gatya bnr<ID>.png</code>. For Event Gacha, use <code>event</code> instead with an ID in the format <code>Gatya e bnr<ID>.png</code>. If the image name does not match the aforementioned patterns, use <code>image</code> while passing the full file name.
+
+<code>color</code> specifies the color of the background of the template as raw CSS. It can be a linear gradient, a hexadecimal color code or an rgb triple. No colon or semicolon is necessary.
+
+<code>text</code> is an optional parameter used when the units section is supposed to have plain text rather than the unit images. Some text needs to be passed as an argument for it to work. When this is on, the argument passed to <code>units</code> is directly used as the text.
+
+<code>units</code> lists the Ubers in the set by First Form name. They are to be put on a line after <code>|units =</code> searated by newlines. If the set has a PC exclusive Uber, put it last.
+
+==Usage==
+<tabber>
+Normal Banner=
+<pre>
+{{GachaBanner|The Dynamites|bnr = 741|color = linear-gradient(#FFFB4A, #CE0203)|units = 
+Ice Cat
+Cat Machine
+Lesser Demon Cat
+Marauder Cat
+Baby Cat
+Nurse Cat
+Cat Clan Heroes
+Lasvoss
+Summoner Satoru
+Cat Tengu
+Cat Maid
+}}
+</pre>
+===Result===
+{{GachaBanner|The Dynamites|bnr = 741|color = linear-gradient(#FFFB4A, #CE0203)|units = 
+Ice Cat
+Cat Machine
+Lesser Demon Cat
+Marauder Cat
+Baby Cat
+Nurse Cat
+Cat Clan Heroes
+Lasvoss
+Summoner Satoru
+Cat Tengu
+Cat Maid
+}}
+
+|-|No Ultra Forms=
+<pre>
+{{GachaBanner|Puella Magi Madoka Magica|bnr = 642|color = linear-gradient(#EF868C,#361856)|units =
+Madoka Kaname
+Homura Akemi
+Sayaka Miki
+Mami Tomoe
+Kyoko Sakura
+Bebe
+}}
+</pre>
+===Result===
+{{GachaBanner|Puella Magi Madoka Magica|bnr = 642|color = linear-gradient(#EF868C,#361856)|units =
+Madoka Kaname
+Homura Akemi
+Sayaka Miki
+Mami Tomoe
+Kyoko Sakura
+Bebe
+}}
+
+|-|With Text=
+<pre>
+{{GachaBanner|Platinum Capsules|bnr = 174|color = linear-gradient(#DDAFE1, #ACDCD1, #ACDCD1, #E5EAC2)|text = on|units = 
+The player needs to use Platinum Tickets to enter this event. Platinum Tickets can be bought with real money during short time periods. Each Platinum Ticket guarantees an Uber Rare Cat from the Regular Pools.
+}}
+</pre>
+===Result===
+{{GachaBanner|Platinum Capsules|bnr = 174|color = linear-gradient(#DDAFE1, #ACDCD1, #ACDCD1, #E5EAC2)|text = on|units = 
+The player needs to use Platinum Tickets to enter this event. Platinum Tickets can be bought with real money during short time periods. Each Platinum Ticket guarantees an Uber Rare Cat from the Regular Pools.
+}}
+
+|-|Event Gacha=
+<pre>
+{{GachaBanner|Summer Break Cats|event = 20|color = #87CEEB|units =
+Kabuto Cat
+Kuwagata Cat
+Farmer Cat
+Ancient Egg: N202
+Lizard Cat
+}}
+</pre>
+===Result===
+{{GachaBanner|Summer Break Cats|event = 20|color = #87CEEB|units =
+Kabuto Cat
+Kuwagata Cat
+Farmer Cat
+Ancient Egg: N202
+Lizard Cat
+}}
+
+|-|Custom Image=
+<pre>
+{{GachaBanner|Lucky Capsules|image = Lucky ticket event.png|color = #F2888B|units =
+Li'l Cat
+Li'l Tank Cat
+Li'l Axe Cat
+Li'l Gross Cat
+Li'l Cow Cat
+Li'l Bird Cat
+Li'l Fish Cat
+Li'l Lizard Cat
+Li'l Titan Cat
+}}
+</pre>
+===Result===
+{{GachaBanner|Lucky Capsules|image = Lucky ticket event.png|color = #EE4B2B|units =
+Li'l Cat
+Li'l Tank Cat
+Li'l Axe Cat
+Li'l Gross Cat
+Li'l Cow Cat
+Li'l Bird Cat
+Li'l Fish Cat
+Li'l Lizard Cat
+Li'l Titan Cat
+}}
+</tabber>

@@ -1,0 +1,143 @@
+'''A Gift of Cats''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.5 Update|Version 4.5]] and has a chance to be unlocked when beating any stage in [[Santa Claws at Work!#Night 1: Santa Claws at Work|Night 1: Santa Claws at Work]].
+
+{{Cat Info
+|ID = 244
+|rarity = RR
+|name1 = A Gift of Cats
+|name2 = Cat's Gift
+}}
+
+==Evolution==
+Evolves into '''Cat's Gift''' at level 10.
+
+==Strategy/Usage==
+Although this unit has a relatively low chance of freeze (30%), its nimble movement speed allows it to reach enemies quickly, and slip into blindspots easily (most notable for [[Cruel Angel Clionel]]). However, in many other situations, [[Juliet Cat (Super Rare Cat)|Juliet the Maiko]] or [[Talents|talented]] [[Bishop Cat (Rare Cat)|Sanzo Cat]] are better due to their stackability, Area Attacks, and longer range.
+
+{{Job|Classification = Crowd-Controller & Rusher}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Reindeer's Gift|Starting Money Up (Sm)|Reindeer Fish Cat|A Gift of Cats|jpname=トナカイのプレゼント}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 244
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni244 f00.png
+|Image2 = Uni244 c00.png
+|Name1 = A Gift of Cats
+|Desc1 = A lovely holiday gift from Santa.<br>Can you guess what's inside?<br>Occasionally freezes Angelic enemies.
+|Name2 = Cat's Gift
+|Desc2 = A lovely holiday gift from the Cat Army.<br>Something is bumping around inside…<br>Occasionally freezes Angelic enemies.
+|Name1 (JP) = ネコのプレゼント
+|Desc1 (JP) = サンタさんからのクリスマスプレゼント<br>何が入っているかはお楽しみ♪<br>ごくたまに天使の動きを一瞬止める
+|Transl1 (JP) = Christmas presents from Santa Claus!<br>You can't wait to see what's in the box!♪<br>Very occasionally, they stop the angel's movement for a moment.
+|Name2 (JP) = ネコプレゼント
+|Desc2 (JP) = にゃんこ軍団からのクリスマスプレゼント<br>何が入っているかはお楽しみ♪<br>ごくたまに天使の動きを一瞬止める
+|Transl2 (JP) = Christmas Present from the Kitten Army!<br>You can't wait to see what's in the box!♪<br>Very occasionally, they stop the angel's movement for a moment.
+|Name1 (TW) = 聖誕禮物貓
+|Desc1 (TW) = 聖誕老人送的禮物<br>裡面放的是什麼先不告訴你♪<br>偶爾會讓天使敵人瞬間動作停止
+|Name2 (TW) = 聖誕貓禮物
+|Desc2 (TW) = 貓咪軍團送的禮物<br>裡面放的是什麼先不告訴你♪<br>偶爾會讓天使敵人瞬間動作停止
+|Name1 (KR) = 고양이의 선물
+|Desc1 (KR) = 산타할아버지에게 받은 크리스마스 선물<br>뭐가 들어 있을지 기대된다냥♪<br>아주 가끔 천사의 움직임을 순간 멈춘다
+|Name2 (KR) = 고양이 선물
+|Desc2 (KR) = 냥코 군단에게 받은 크리스마스 선물<br>뭐가 들어 있을지 기대된다냥♪<br>아주 가끔씩 천사의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 550¢
+*Chapter 2: 825¢
+*Chapter 3: 1,100¢
+{{Upgrade Cost|MIX
+|0
+|8,000
+|12,200
+|17,800
+|24,800
+|33,200
+|43,000
+|54,200
+|66,800
+|110,800
+|10,000
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = A Gift of Cats
+|Normal Base HP = 700
+|Normal Base AP = 175
+|Normal Range = 160
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 101
+|Normal Speed = 30
+|Normal KB = 3
+|Normal Cost = 550
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Cat's Gift
+|Evolved Base HP = 800
+|Evolved Base AP = 175
+|Evolved Range = 160
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 35
+|Evolved Attack Length = 96
+|Evolved Speed = 30
+|Evolved KB = 3
+|Evolved Cost = 550
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 700 HP
+|val-Normal-Attack Power = 175 damage<br>(51.98 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(93f <sup>3.1s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 11,900 HP
+|val-Normal-MaxAttack = 2,975 damage<br>(883.66 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 2,975 damage<br>(929.69 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 96f <sub>3.2 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(90f <sup>3s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni244 f00}}
+
+==Trivia==
+*A Gift of Cats is a variant of [[Cats in a Box (Special Cat)|Cats in a Box]], and Cat's Gift is a variant of [[Apple Cat (Super Rare Cat)|Apple Cat]].
+*"A Gift of Cats" is similar to Cats in a Box's old name: "A Pack of Cats".
+
+==Reference==
+*https://battlecats-db.com/unit/245.html
+
+----
+{{CatNav|Holy Coppermine|Li'l Gross Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

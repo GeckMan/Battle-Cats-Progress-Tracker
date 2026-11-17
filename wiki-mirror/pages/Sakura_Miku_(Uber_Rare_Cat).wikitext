@@ -1,0 +1,133 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Sakura Miku''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 9.4 Update|Version 9.4]].
+
+{{Cat Info
+|ID = 536
+|rarity = UR
+|name1 = Sakura Miku
+|name2 = Sakura Miku CC
+}}
+
+==Evolution==
+Evolves into '''Sakura Miku CC''' at level 10.
+
+==Strategy/Usage==
+Sakura Miku can provide proper support in Alien stages due to her high standing range with far piercing and inner range combined with [[Freeze]] ability. Due to the low uptime of her freeze, Sakura Miku's role is to reduce pressure at the backlines, rather than to perma-freeze. Her barrier breaking chance is rather low, so it should not be relied upon.
+
+Sakura Miku can also be a decent generalist sniper, as her damage and DPS are not bad for her range and her survivability is great thanks to her good knockback count.
+
+{{Job|Classification = Sniper & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 536
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni536 f00.png
+|Image2 = Uni536 c00.png
+|Name1 = Sakura Miku
+|Desc1 = Virtual singer loved by the entire Cat Empire!<br>Cute & stylish diva dressed for spring! Long-range<br>Area attacks Freeze Aliens, might break Barriers.
+|Name2 = Sakura Miku CC
+|Desc2 = Virtual singer loved by the entire Cat Empire!<br>Diva who dances among the cherry blossoms.<br>Area attacks Freeze Aliens, might break Barriers.
+|Name1 (JP) = 桜ミク (Sakura Miku)
+|Desc1 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>春の訪れを知らせる特別な歌姫(遠方範囲攻撃)<br>エイリアンの動きを一瞬止め、たまにバリアを貫く
+|Transl1 (JP) = Popular virtual singer from the electronic world makes an appearance!<br>A special diva who announces the coming of Spring (Long Distance Attack)<br>Freezes the movement of Aliens for a short period of time, occasionally breaks Barriers.
+|Name2 (JP) = 桜ミクCC (Sakura Miku CC)
+|Desc2 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>桜舞う春の歌を届ける特別な歌姫(遠方範囲攻撃)<br>エイリアンの動きを一瞬止め、たまにバリアを貫く
+|Transl2 (JP) = Popular virtual singer from the electronic world makes an appearance!<br>A special diva who delivers the song of Spring cherry blossoms dance (Long Distance Attack)<br>Freezes the movement of Aliens for a short period of time, occasionally breaks Barriers.
+|Name1 (TW) = 櫻花未來
+|Desc1 (TW) = 來自虛擬世界的人氣歌手！<br>宣告春天到來的特別歌姬(遠距範圍攻擊)<br>使異星戰士瞬間動作停止，有時候能破壞護盾
+|Name2 (TW) = 櫻花未來CC
+|Desc2 (TW) = 來自虛擬世界的人氣歌手！<br>帶來櫻花舞動春天歌曲的特別歌姬(遠距範圍攻擊)<br>使異星戰士瞬間動作停止，有時候能破壞護盾
+|Name1 (KR) = 사쿠라 미쿠
+|Desc1 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>봄의 시작을 알리는 특별한 여가수 (원거리 범위공격)<br>에이리언의 움직임을 순간 멈추고 가끔 베리어를 뚫어버린다
+|Name2 (KR) = 사쿠라 미쿠CC
+|Desc2 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>벚꽃 흩날리는 봄의 노래를 전하는 특별한 여가수 (원거리 범위공격)<br>에이리언의 움직임을 순간 멈추고 가끔 베리어를 뚫어버린다
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sakura Miku
+|Normal Base HP = 1650
+|Normal Base AP = 950
+|Normal Range = 500
+|Normal Foreswing = 89
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 139
+|Normal Speed = 5
+|Normal KB = 5
+|Normal Cost = 2600
+|Normal Recharge = 3600
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~750)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Sakura Miku CC
+|Evolved Base HP = 2200
+|Evolved Base AP = 1250
+|Evolved Range = 500
+|Evolved Foreswing = 89
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 139
+|Evolved Speed = 5
+|Evolved KB = 5
+|Evolved Cost = 2600
+|Evolved Recharge = 3600
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~750)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,650 HP
+|val-Normal-Attack Power = 950 damage<br>(169.64 DPS)
+|val-Normal-Attack Range = 500
+|val-Normal-Attack Frequency = 168f <sub>5.6 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 89f <sup>2.97s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 120 ~ 111.2 seconds
+|val-Normal-MaxHP = 28,050 HP
+|val-Normal-MaxAttack = 16,150 damage<br>(2,883.93 DPS)
+|val-Evolved-Health = 37,400 HP
+|val-Evolved-Attack Power = 21,250 damage<br>(3,794.64 DPS)
+|val-Evolved-Attack Range = 500
+|val-Evolved-Attack Frequency = 168f <sub>5.6 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 89f <sup>2.97s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 120 ~ 111.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni536 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/537.html
+
+----
+{{CatNav|Hatsune Miku|Kagamine Rin & Len}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Barrier Breaker Cats]]

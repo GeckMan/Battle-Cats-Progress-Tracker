@@ -1,0 +1,323 @@
+{{EnemiesAppearing|Ayumi Manbosaki|Sardine|Squid|Young Man Mola|Mola King|Tasmanian Giant Crab}}
+
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn129 00 c en.png]]
+|stage location = [[File:Mapname129 c en.png]]
+|enemies = {{Magnification|Sardine|0
+|Squid|0
+|Young Man Mola|0
+|Mola King|0
+|Tasmanian Giant Crab|0}}
+|boss = {{Magnification|Ayumi Manbosaki|0}}
+|restriction = [[No Continues]]
+|width = 3,200
+|max enemies = 30
+|jpname = Sudden Death Lv.X
+|script = Totsuzen no Shi
+|romaji = 突然の死 Lv.X
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|event-chapter = [[Manbosaki Strikes!]]
+|max clears = 3
+}}
+
+==Battleground==
+*1 [[Ayumi Manbosaki]] spawns as the boss after 5 seconds<sup>150f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 56.67 seconds<sup>1,700f</sup>, delay 2.67~5.33 seconds<sup>80f~160f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 60 seconds<sup>1,800f</sup>, delay 2.67~5.33 seconds<sup>80f~160f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 96.67 seconds<sup>2,900f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 100 seconds<sup>3,000f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*Infinite [[Sardine (Enemy)|Sardines]] spawn after 60 seconds<sup>1,800f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*9 [[Mola King (Enemy)|Mola Kings]] spawn after 26.67 seconds<sup>800f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 20 seconds<sup>600f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 80 seconds<sup>2,400f</sup>, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 80.67 seconds<sup>2,420f</sup>, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 160 seconds<sup>4,800f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 160.67 seconds<sup>4,820f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 161.33 seconds<sup>4,840f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*Infinite [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 240 seconds<sup>7,200f</sup>, delay 50~100 seconds<sup>1,500f~3,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Sudden Death
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Ayumi Manbosaki]]
+! scope="col" |[[Sardine (Enemy)|Sardine]]
+! scope="col" |[[Squid (Enemy)|Squid]]
+! scope="col" |[[Young Man Mola (Enemy)|Young Man Mola]]
+! scope="col" |[[Mola King (Enemy)|Mola King]]
+! scope="col" |[[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|2%
+|15%
+|15%
+|100% HP/15% AP
+|10%
+|10%
+|10,000 HP
+|30
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|570 XP
+|-
+! scope="row" |2
+|8%
+|50%
+|50%
+|100% HP/50% AP
+|25%
+|25%
+|30,000 HP
+|40
+|[[Catamin]] [A] +3
+|760 XP
+|-
+! scope="row" |3
+|30%
+|200%
+|200%
+|200%
+|100%
+|150%
+|60,000 HP
+|50
+|[[Cat Capsule|Cat Ticket]] +1
+|950 XP
+|-
+! scope="row" |4
+|65%
+|400%
+|400%
+|400%
+|250%
+|375%
+|120,000 HP
+|60
+|Bricks +5
+|1,140 XP
+|-
+! scope="row" |5
+|100%
+|600%
+|600%
+|600%
+|400%
+|600%
+|180,000 HP
+|70
+|250,000 XP
+|1,330 XP
+|-
+! scope="row" |6
+|273%
+|1,160%
+|1,160%
+|1,160%
+|773%
+|1,160%
+|240,000 HP
+|70
+|[[Catamin]] [B] +3
+|1,330 XP
+|-
+! scope="row" |7
+|446%
+|1,720%
+|1,720%
+|1,720%
+|1,146%
+|1,720%
+|300,000 HP
+|80
+|Feathers +5
+|1,520 XP
+|-
+! scope="row" |8
+|619%
+|2,280%
+|2,280%
+|2,280%
+|1,519%
+|2,280%
+|375,000 HP
+|80
+|Coal +5
+|1,520 XP
+|-
+! scope="row" |9
+|792%
+|2,840%
+|2,840%
+|2,840%
+|1,892%
+|2,840%
+|450,000 HP
+|80
+|[[Cat Capsule|Cat Ticket]] +2
+|1,520 XP
+|-
+! scope="row" |10
+|965%
+|3,400%
+|3,400%
+|3,400%
+|2,265%
+|3,400%
+|525,000 HP
+|90
+|500,000 XP
+|1,710 XP
+|-
+! scope="row" |11
+|1,138%
+|3,960%
+|3,960%
+|3,960%
+|2,638%
+|3,960%
+|600,000 HP
+|90
+|[[Catamin]] [C] +3
+|1,710 XP
+|-
+! scope="row" |12
+|1,311%
+|4,520%
+|4,520%
+|4,520%
+|3,011%
+|4,520%
+|675,000 HP
+|100
+|Sprockets +5
+|1,900 XP
+|-
+! scope="row" |13
+|1,484%
+|5,080%
+|5,080%
+|5,080%
+|3,384%
+|5,080%
+|750,000 HP
+|100
+|Gold +5
+|1,900 XP
+|-
+! scope="row" |14
+|1,657%
+|5,640%
+|5,640%
+|5,640%
+|3,757%
+|5,640%
+|825,000 HP
+|100
+|[[Cat Capsule|Cat Ticket]] +3
+|1,900 XP
+|-
+! scope="row" |15
+|1,830%
+|6,200%
+|6,200%
+|6,200%
+|4,130%
+|6,200%
+|900,000 HP
+|110
+|750,000 XP
+|2,090 XP
+|-
+! scope="row" |16
+|2,003%
+|6,760%
+|6,760%
+|6,760%
+|4,503%
+|6,760%
+|1,000,000 HP
+|110
+|Meteorite +5
+|2,090 XP
+|-
+! scope="row" |17
+|2,176%
+|7,320%
+|7,320%
+|7,320%
+|4,876%
+|7,320%
+|1,100,000 HP
+|130
+|[[Leadership]] +1
+|2,470 XP
+|-
+! scope="row" |18
+|2,349%
+|7,880%
+|7,880%
+|7,880%
+|5,249%
+|7,880%
+|1,200,000 HP
+|130
+|Beast Bones +5
+|2,470 XP
+|-
+! scope="row" |19
+|2,522%
+|8,440%
+|8,440%
+|8,440%
+|5,622%
+|8,440%
+|1,300,000 HP
+|130
+|1,000,000 XP
+|2,470 XP
+|-
+! scope="row" |20
+|2,700%
+|9,000%
+|9,000%
+|9,000%
+|6,000%
+|9,000%
+|1,400,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850 XP
+|}
+
+==Strategy==
+Ayumi Manbosaki has a very slow attack rate while both Mola King and Baby Mola have Single Target. As such, they are vulnerable to disposable units who can be easily replaced and deal lots of damage that will accumulate over time. Instead, the main threats are the large Crab swarms that can cover the ranged threats and push with terrifying ease. Using cheap meatshields like [[Crazed Cat (Super Rare Cat)|Manic Mohawk]] and [[Stone Cat (Rare Cat)|Stone]] are definitely recommended over Erasers and Tankers, as later stages of the Gauntlet feature overbuffed enemies that can cut through any amount of health in a matter of seconds, making durable units completely useless. Likewise, any disposable Anti-Red units that can demolish Crab swarms are also good to bring, ( [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] in particular works very well here).
+
+A very effective strategy to combat the Crabs is to use [[Elder Mask Doron (Special Cat)|Cat Mask Doron/Awakened Doron]]. Doron's incredibly high health allows him to withstand damage from the crab stack, even on Lv. MAX, which allows all the crabs to sync and attack Doron. After all the crabs have synced positions, you can use Awakened Bahamut to destroy the crabs, even more so with explosion talent. An alternative is [[Cutter Cat (Super Rare Cat)| Neo Cutter Cat]], as his high damage per hit against red when strengthened can kill the crabs or at least severely cripple them. Level 50 is needed for this to work well on the higher difficulties. You can use a unit like [[Slime Cat (Rare Cat)|Slime/Jelly Dumpling]] with the Thunderbolt cannon to deal the remaining damage to the crabs.
+
+Cyberstacking is an effective (albeit time consuming) way to beat these stages. The strategy is very straightforward: players can use anti-Red tanks and attackers like [[Sushi Cat (Super Rare Cat)|Roe Cat]], [[Hip Hop Cat (Super Rare Cat)|Can-Can Cat]], and [[Crazed Fish Cat (Super Rare Cat)|Manic Island Cat]] to deal with the Crabs, while meatshielding and stacking [[Nerd Cat (Super Rare Cat)|Cyberpunk Cats]] to beat the stage. After a while, the waves of Crabs become fewer in numbers and Mola Kings stop spawning, so it is less important to use your anti-Red units. Other helpful units are [[Mer-Cat (Rare Cat)|Cameraman]] for meatshielding and DPS, [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]] to tank around 2 shots from the Manbosaki and deal damage, and [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] or [[Slime Cat (Rare Cat)|Jelly Cat]] to clear out the peons. This strategy takes a lot of patience, and you can expect to spend upwards of 7 minutes per stage with this, so a Speed Up is recommended.
+
+There is a free strategy involving [[Prof. Cat Jobs]] with a speed-up combo. Lure the boss into the base and wait for it to attack,  use disposable attackers to clear the way for Cat Jobs and right before the boss attacks, he will weaken him. Summon rushers like [[Awakened Bahamut Cat]] and [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]] and the boss should die quickly. Enjoy your free Rare Ticket!
+
+An alternative strategy is using [[Cat God the Great (Special Cat)|Cat God the Great]] paired with a tanky [[:Category:Uber Rare Cats|Uber Rare]] cat like [[Kai (Uber Rare Cat)|Divine Kai μ]] to halt Ayumi Manbosaki's progression so it is easier to use Cat God's [[Omni Strike]] and [[Knockback]] abilities to hit the enemies behind the base and use his high damage to destroy it easily on levels 1 to 18. Just make sure to keep a constant stream of meatshields, as Cat God is a sitting duck between attacks and is very easy to kill during that time.
+
+If you want to use a safer version of that strategy, using [[The 10th Angel (Uber Rare Cat)|The 10th Angel]] is a viable option, as it has more Omni Strike range than Cat God. Be careful if you are thinking of using this strategy however, as The 10th Angel has a about a fifth of the damage of Cat God, and no Knockback ability to keep itself alive, so support from talented Cyberpunk Cat is very necessary. You can also opt to use both Cat God & The 10th Angel in tandem, for more damage and an easier win.
+
+==Reference==
+*https://battlecats-db.com/stage/s27013.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

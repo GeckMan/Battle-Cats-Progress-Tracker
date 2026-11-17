@@ -1,0 +1,83 @@
+'''Angelic Slug''' (なめ（天使）, ''Name (Tenshi)'') is an [[:Category:Angel Enemies|Angel]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 6.1 Update|Version 6.1]].
+
+{{Enemy Info
+|name = Angelic Slug
+|image = E 343.png
+|appearance = [[Sliming to Victory]]<br>
+[[Citadel#Angel|Angel Citadel]]<br>
+[[Infernal Tower/Floor 16|Infernal Tower - Floor 16]]
+|money drop = 800¢ - 3,160¢
+}}
+
+==Enemy==
+On top of having superior stats compared to [[Red Slug]] and [[Black Slug]], it also has higher range, making it a decent threat if well-protected.
+
+==Strategy==
+Luckily, it is the slowest of the three Slugs, allowing you to defeat its support before it gets to you. [[Rocker Cat (Rare Cat)|Artist Cat]] is perfect for stalling it, and from there simply stack mid-ranged cats to kill it.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Sliming to Victory]]:
+**[[Stormcloud Stakes]] (100%)
+**[[Paradise Derby]] (300%)
+**[[Slimy Stallions]] (300%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2017 Debut]] (300%)
+*[[Angel Citadel]]:
+**[[Angel Citadel/Floor 4|Floor 4]] (100%)
+**[[Angel Citadel/Floor 5|Floor 5]] (100%)
+**[[Angel Citadel/Floor 7|Floor 7]] (100%)
+**[[Angel Citadel/Top Floor|Top Floor]] (300%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 16|Floor 16]] (300%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.9]] (400%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.MAX]] (600%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Sliming to Victory#Sliming to Victory 2|Sliming to Victory]]:
+**[[Stormcloud Stakes (Old)|Stormcloud Stakes]] (100%)
+**[[Paradise Derby (Old)|Paradise Derby]] (300%)
+**[[Slimy Stallions (Old)|Slimy Stallions]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Angelic Slug
+|Health = 75000
+|Attack Power = 3300
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 66
+|Movement Speed = 6
+|Knockback = 3
+|Foreswing = 27
+|Backswing = 11
+|Ability = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Angel
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+343 e.png|Angelic Slug's spritesheet
+IdleSluggyAngel.gif|Angelic Slug's moving animation
+</gallery>
+
+==Trivia==
+*In the [[Media:Eve l 051 en.png|event poster]] for [[Sliming to Victory]], [[Red Slug]], [[Black Slug]] and Angelic Slug are all referred to as Sluggy, which was the only name they had until they were added to the [[Enemy Guide]] in [[Version 13.3 Update|Version 13.3]].
+*The Slugs' Japanese name is the first half of the Japanese word for slug, ''namekuji''.
+
+==Reference==
+*https://battlecats-db.com/enemy/345.html
+
+----
+{{EnemyNav|Black Slug|Cat Kart P}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Angel Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

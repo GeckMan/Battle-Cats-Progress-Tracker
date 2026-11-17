@@ -1,0 +1,66 @@
+'''World War ALICE''' is the third and final stage in [[Crash Fever Collaboration Event#Moonlit City|Moonlit City]].
+{{EnemiesAppearing|Those Guys|Gory Dark|Otta-smack-u|Belial|Happy 100|Mobius}}
+{{Stage Info
+|stage name = [[File:rc076.png]]
+[[File:Mapsn042 02 c en.png]]
+|stage location = [[File:Mapname042 c en.png]]
+|energy = 150
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Those Guys|800%
+|Gory Dark|100%
+|Otta-smack-u|200%
+|Belial|200%
+|Happy 100|500%}}
+|boss = {{Magnification|Mobius|100%}}
+|enemies2 = {{Magnification|Those Guys|1,600%
+|Gory Dark|200%
+|Otta-smack-u|400%
+|Belial|400%
+|Happy 100|1,000%}}
+|boss2 = {{Magnification|Mobius|200%}}
+|enemies3 = {{Magnification|Those Guys|2,400%
+|Gory Dark|300%
+|Otta-smack-u|600%
+|Belial|600%
+|Happy 100|1,500%}}
+|boss3 = {{Magnification|Mobius|300%}}
+|score reward = '''5,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''2,000''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 4,500 XP
+|width = 4,200
+|max enemies = 9
+|jpname = ALICE Great War
+|script = ALICE大戦争
+|romaji = ALICE dai sensō
+|star = 3
+|event = [[Crash Fever Collaboration Event]]
+|event-chapter = [[Crash Fever Collaboration Event#Moonlit City|Moonlit City]]
+|difficulty = ★6
+|prev stage = [[Fever Time!]]
+|next stage = N/A
+}}
+
+==Battleground==
+*15 [[Those Guys]] spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*30 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mobius (Enemy)|Mobius]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**5 [[Gory Dark]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**8 [[Otta-smack-u]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**5 [[Those Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Belial (Enemy)|Belials]] spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Happy 100 (Enemy)|Happy 100s]] spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**3 [[Those Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+The easy, profitable start off can be used to stack up large numbers of slow [[Anti-Floating Cats]] to kill two of the special event enemies quickly, or general attackers to deal with the support, with higher HP values being useful since outranging Mobius is difficult. Otherwise sending out attackers and Meatshields like normal will kill the stage, along with any accrued stacks, and even if pushed back the enemies will still filleted away as they advance.
+
+==Reference==
+*https://battlecats-db.com/stage/s02042-03.html
+
+{{Crash Fever}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

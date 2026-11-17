@@ -1,0 +1,62 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Kuromi (Special Cat)]].''
+'''Kuromi''' (クロミ) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Nebaaru-kun and Nyanpazuru Collaboration Event]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Kuromi
+|image = E 239.png
+|appearance = [[Nebaaru-kun and Nyanpazuru Collaboration Event]]
+|money drop = 150円 - 592円
+}}
+
+==Enemy==
+Kuromi is a black kitten with bright yellow eyes. This enemy has fairly low damage and range, plus a single target multi-hit. It isn't much of a threat due to these attributes.
+
+==Strategy==
+As Kuromi is Single Target, it doesn't pose a huge threat to your cats. You can easily take it down using high DPS, spammable cats such as [[Salon Cat (Rare Cat)|Salon Cat]] or [[Figure Skating Cats (Super Rare Cat)|Drama Cats]] combined with some meatshields to defeat it.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nebaaru-kun and Nyanpazuru Collaboration Event#Protecting Cats|Protecting Cats]]:
+**[[Protecting with Cat Puzzle]] (1%)
+**[[Together Protecting Cats]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Kuromi
+|Health = 12000
+|Attack Power = 3000
+|Attack Range = 150
+|Attack Type = Single
+|Time Between Attacks = 31
+|Movement Speed = 15
+|Knockback = 4
+|Foreswing = 11
+|Backswing = 12
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">1,500</span> at 11f <sup>0.37s</sup>, <span class="scaled" data-type="ap">1,500</span> at 19f <sup>0.63s</sup>)
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|spritesheet=264 f.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+264 f.png|Kuromi's spritesheet
+IdleKuromi.gif|Kuromi's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/241.html
+
+----
+{{EnemyNav|Pochi|Setsuko}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Single Attack Enemies]]

@@ -1,0 +1,115 @@
+{{JPExclusive}}
+'''Sorakara''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 9.0 Update|Version 9.0]] and can be obtained during the [[Tokyo Skytree Collaboration Event]].
+
+{{Cat Info
+|ID = 524
+|rarity = RR
+|name1 = Sorakara
+|name2 = Sorakara & Cat
+}}
+
+==Evolution==
+Evolves into '''Sorakara & Cat''' at level 10.
+
+==Strategy/Usage==
+Sorakara serves as a very average midranger, with no truly outlying features. Her aforementioned decent health and range allow her to stand between front and backlines and serve as extra damage when need be, plus, with her HP being over 10k, if you're even willing to invest into her, she can survive at least one hit from an enemy that is able to land an attack. Her standing range of 350 means she can avoid some semi-distanced threats, though none are necessarily notable. Her most defining feature, however, is her ability to perform Savage Blows. Her proc chance isn't too bad, as she attacks an average of every four seconds, which is relatively quick. With savage blows, Sorakara deals around 7k damage, and if you can stack them, which is rather easy to do with their somewhat low cost and fast-ish cooldown, isn't too bad, though that's if you aren't comparing her to superior midrangers like [[Shaman Cat (Rare Cat)|Necro-dancer]], [[Onmyoji Cat (Rare Cat)|Thaumaturge]], and [[Mer-Cat (Rare Cat)|Cameraman]].
+
+What is truly drawing her back from being useful is her Single Target. This heavily draws back her potential as she can only hit one thing at a time. Even with Savage Blows she can only pick off weaker targets. Furthermore, 2k attack with Single Target isn't effective at all, which can be displayed when she's used in most stages. Her ineffectiveness could be solved if she had Area Attack, which would turn her into more of a decent complimentary unit to other midrangers and backliners (Sort of like how [[Baby Mola (Super Rare Cat)|Baby Mola]] is to the Dragons).
+
+Overall, Sorakara isn't too much of a use. She can either be used for [[User Rank]], or, if you're for some reason willing to invest into her, using her as an empty slot replacement to get a small bit of extra damage.
+
+{{Job|Classification = User Rank Dump & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 524
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni524 f00.png
+|Image2 = Uni524 c00.png
+|Name1 (JP) = ソラカラちゃん (Sora kara-chan)
+|Desc1 (JP) = 「東京スカイツリー」から参戦！<br>好奇心旺盛でステキな発見にワクワクする女の子<br>たまに渾身の一撃を放つ
+|Transl1 (JP) = Joining the war from "Tokyo Skytree"!<br>A girl who is curious and excited to discover wonderful things<br>Occasionally strikes a savage blow
+|Name2 (JP) = ソラカラちゃん&ネコ (Sora kara-chan& neko)
+|Desc2 (JP) = ステキな発見ができたり、うれしいことが<br>あったりするとあたまの星がキラキラキラとひかる<br>たまに渾身の一撃を放つ
+|Transl2 (JP) = A wonderful discovery, a joyful experience<br>the star in my head twinkles when I see one<br>Occasionally strikes a savage blow
+}}
+
+==Cost==
+*Chapter 1: 500円
+*Chapter 2: 750円
+*Chapter 3: 1,000円
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sorakara
+|Normal Base HP = 634
+|Normal Base AP = 126
+|Normal Range = 350
+|Normal Foreswing = 33
+|Normal Attack Cooldown = 77
+|Normal Attack Length = 51
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 500
+|Normal Recharge = 500
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Savage Blow}} 20% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Evolved Name = Sorakara & Cat
+|Evolved Base HP = 634
+|Evolved Base AP = 126
+|Evolved Range = 350
+|Evolved Foreswing = 33
+|Evolved Attack Cooldown = 77
+|Evolved Attack Length = 51
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 500
+|Evolved Recharge = 500
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Savage Blow}} 20% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 634 HP
+|val-Normal-Attack Power = 126 damage<br>(34.36 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 110f <sub>3.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 33f <sup>1.1s</sup><br>(18f <sup>0.6s</sup> backswing)
+|val-Normal-Recharge Time = 16.67 ~ 7.87 seconds
+|val-Normal-MaxHP = 10,777 HP
+|val-Normal-MaxAttack = 2,142 damage<br>(584.18 DPS)
+|val-Evolved-Health = 10,777 HP
+|val-Evolved-Attack Power = 2,142 damage<br>(584.18 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 110f <sub>3.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 33f <sup>1.1s</sup><br>(18f <sup>0.6s</sup> backswing)
+|val-Evolved-Recharge Time = 16.67 ~ 7.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni524 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/525.html
+
+----
+{{CatNav|Wushu Cat|Kintaro}}
+----
+
+{{Tokyo Skytree}}
+{{Cats}}
+[[Category:Single Attack Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Savage Blow Cats]]
+[[Category:Cat Units]]

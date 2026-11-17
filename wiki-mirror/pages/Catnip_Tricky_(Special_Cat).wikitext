@@ -1,0 +1,118 @@
+{{JPExclusive}}
+'''Catnip Tricky''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by playing the [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] during the [[JRA Collaboration Event]]. It was added in [[Version 10.10 Update|Version 10.10]]. Like [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]], it is capped at level 1, meaning it can only be upgraded using +levels.
+
+{{Cat Info
+|ID = 627
+|rarity = EX
+|name1 = Catnip Tricky
+|name2 = Tenma Catnip Tricky
+}}
+
+==Evolution==
+Evolves into '''Tenma Catnip Tricky''' at level 1+9.
+
+==Strategy/Usage==
+With its terrible everything besides DPS even at level 1+30, just about any decent [[:Category:Area Attack Cats|Area Attacker]] with the same or lower cost can replace it, from [[Crazed Bird Cat (Super Rare Cat)|Crazed Bird Cat]] to [[Mer-Cat (Rare Cat)|Cameraman Cat]].
+
+{{Job|Classification = Combo Slave & Melee}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Triple Single|Unit Speed Up (M)|Cat Giraffe Modoki|Catnip Tricky|Catnip Dragon|jpname=３連単}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 627
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni627 f00.png
+|Image2 = Uni627 c00.png
+|Name1 (JP) = ネコノトリッキー (Nekono Torikkī, Catnip Tricky)
+|Desc1 (JP) = 風向き次第でスピードが大きく変わる出走ネコ<br>追い風で試合を大番狂わせに持ち込み三番人気<br>(範囲攻撃)(＋LVのみ強化可能)
+|Transl1 (JP) = Runaway cat whose speed depends greatly on the direction of the wind<br>A tailwind brings the game to a big turnout and is the third most popular<br>(Range Attack) (only +LV can be enhanced)
+|Name2 (JP) = 天馬ネコノトリッキー (Tenma Nekono Torikkī, Tenma Catnip Tricky)
+|Desc2 (JP) = 風を味方につけて好走する出走ネコ<br>少しの風でコース外へ飛ばされ、いつも三番人気<br>(範囲攻撃)(＋LVのみ強化可能)
+|Transl2 (JP) = Runaway cat runs well with the wind on his side<br>The slightest breeze sends him off the track and he is always the third favourite<br>(Range Attack) (only +LV can be enhanced)
+}}
+
+==Cost==
+*Chapter 1: 650円
+*Chapter 2: 975円
+*Chapter 3: 1,300円
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Catnip Tricky
+|Normal Stats Level = 1+30
+|Normal Base HP = 450
+|Normal Base AP = 215
+|Normal Range = 170
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 14
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 650
+|Normal Recharge = 250
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Evolved Name = Tenma Catnip Tricky
+|Evolved Stats Level = 1+30
+|Evolved Base HP = 450
+|Evolved Base AP = 215
+|Evolved Range = 170
+|Evolved Foreswing = 10
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 14
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 650
+|Evolved Recharge = 250
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.1+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 215 damage<br>(131.63 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 8.33 ~ 2 seconds
+|val-Normal-MaxHP = 7,875 HP
+|val-Normal-MaxAttack = 3,762 damage<br>(2,303.27 DPS)
+|val-Evolved-Health = 7,875 HP
+|val-Evolved-Attack Power = 3,762 damage<br>(2,303.27 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 10f <sup>0.33s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 8.33 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni627 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/628.html
+
+----
+{{CatNav|Cat Giraffe Modoki|Catnip Dragon}}
+----
+
+{{JRA}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback Immunity]]

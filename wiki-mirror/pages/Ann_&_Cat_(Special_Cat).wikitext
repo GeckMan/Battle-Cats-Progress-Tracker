@@ -1,0 +1,117 @@
+{{JPExclusive}}
+'''Ann & Cat''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked as a [[Daily Bonus|Stamp Reward]] during the [[Kaohsiung Rapid Transit Collaboration Event]]. She was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 640
+|rarity = EX
+|name1 = Ann & Cat
+|name2 = Ann & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Ann & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Despite Ann & Cat's optimal range for the job of freezing [[:Category:Metal Enemies|Metal]] enemies, she has way too many major flaws to work well as a proper crowd-controller. Metal stages often love to spam [[Metal Doge]]s, rendering her completely useless on these stages due to Single Target attacks, and even in the few stages that don't do this, her abysmal Freeze uptime forces her to rely on much stacking, a difficult task to pull off against heavy pushers like [[Super Metal Hippoe]]. She also finds herself badly outclassed by [[Hoop Cat (Rare Cat)|Hoop Cat]] and talented [[Panties Cat (Special Cat)|Lollycat]], the former for its greater uptime and higher stats and the latter for its Area Attack and stackability.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 640
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni640 f00.png
+|Image2 = Uni640 c00.png
+|Name1 (JP) = ジェアー&ネコ (Jeā & Neko, Jair & Cat)
+|Desc1 (JP) = 「たかめ少女」から参戦！高雄メトロの整備担当<br>いつもスパナを持ち歩くメンテナンスエンジニア<br>必ずメタルな敵の動きを一瞬止める
+|Transl1 (JP) = Joining the war from "Takame Shoujo"! Kaohsiung Metro's maintenance manager<br>maintenance engineer who always carries a wrench<br>Always stops Metal enemies for a moment
+|Name2 (JP) = ジェアー&ネコCC (Jeā & Neko CC, Jair & Cat CC)
+|Desc2 (JP) = 「たかめ少女」から参戦！メンテナンスのため<br>青いジャケットの中に様々な工具を揃えている<br>必ずメタルな敵の動きを一瞬止める
+|Transl2 (JP) = Joining the war from "Takame Shoujo"! For maintenance purposes<br>she carries a variety of tools in her blue jacket<br>Always stops Metal enemies for a moment
+|Name1 (TW) = 婕兒&貓咪
+|Desc1 (TW) = 從「高捷少女」來參戰！擔任維修工程師<br>棕色髮與攜帶扳手是個人特色<br>必定能使鋼鐵敵人瞬間動作停止
+|Name2 (TW) = 婕兒&貓咪CC
+|Desc2 (TW) = 從「高捷少女」來參戰！是耐耐的狂粉<br>藍色夾克裡藏著各式各樣的維修工具<br>必定能使鋼鐵敵人瞬間動作停止
+}}
+
+==Cost==
+*Chapter 1: 350円
+*Chapter 2: 525円
+*Chapter 3: 700円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ann & Cat
+|Normal Base HP = 420
+|Normal Base AP = 55
+|Normal Range = 300
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 91
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 860
+|Normal Attack Type = Single
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Evolved Name = Ann & Cat CC
+|Evolved Base HP = 420
+|Evolved Base AP = 55
+|Evolved Range = 300
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 91
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 860
+|Evolved Attack Type = Single
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 420 HP
+|val-Normal-Attack Power = 55 damage<br>(8.82 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 187f <sub>6.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Normal-Recharge Time = 28.67 ~ 19.87 seconds
+|val-Normal-MaxHP = 7,140 HP
+|val-Normal-MaxAttack = 935 damage<br>(150 DPS)
+|val-Evolved-Health = 7,140 HP
+|val-Evolved-Attack Power = 935 damage<br>(150 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 187f <sub>6.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Evolved-Recharge Time = 28.67 ~ 19.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni640 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/641.html
+
+----
+{{CatNav|Emilia & Cat|Iz the Dancer}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

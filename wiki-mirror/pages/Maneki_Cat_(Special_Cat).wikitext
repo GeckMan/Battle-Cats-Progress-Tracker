@@ -1,0 +1,133 @@
+'''Maneki Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by playing the [[Summer Break Cats Paradise (Event Gacha)|Summer Break Cats Paradise]] and [[Medal King's Palace (Event Gacha)|Medal King's Palace]] Event Gachas. It was added in [[Version 6.1 Update|Version 6.1]].
+
+{{Cat Info
+|ID = 342
+|rarity = EX
+|name1 = Maneki Cat
+|name2 = Neo Maneki Cat
+}}
+
+==Evolution==
+Evolves into '''Neo Maneki Cat''' at level 10.
+
+==Strategy/Usage==
+Maneki Cat's sole usage is earning extra money when defeating an enemy. The addition of it being included in [[Thanks for All (Combo)|Thanks for All]], a 1-Slot [[Cat Combo]], can increase the money drop of the enemy by 10%, so the [[Money Up]] ability will increase the enemies' money drop to 2.2x rather than just 2x its original. However, due to its short range, weak stats and single target attacks, it won't be viable outside of the early [[Empire of Cats]] stages as there are better units that can replace this unit, such as [[Express Cat (Super Rare Cat)|Express Cat]].
+
+{{Job|Classification = Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Thanks for All|Bounty Up (Sm)|Maneki Cat|jpname=感謝御礼}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 342
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni342 f00.png
+|Image2 = Uni342 c00.png
+|Name1 = Maneki Cat
+|Desc1 = For this small-business Cat, the customer is king.<br>Always invests its profits back in the store.<br>Get more money when defeating enemies!
+|Name2 = Neo Maneki Cat
+|Desc2 = This Cat is thankful for you supporting it's business!<br>He'll thank you by fighting any enemy that troubles you.<br>Get more money when defeating enemies!
+|Name1 (JP) = ネコまねき (Neko Maneki, Cat Imitation)
+|Desc1 (JP) = 日頃のご愛顧に感謝を込めるネコ<br>持ち主にささやかな福を招くという<br>敵を倒したときにお金を多くもらえる
+|Transl1 (JP) = A cat to thank for your patronage<br>They say it brings a little good fortune to the owner<br>Gain more money when defeating an enemy
+|Name2 (JP) = ネコまねき・寿 (Neko Maneki・Kotobuki, Cat Imitation・Longevity)
+|Desc2 (JP) = みなさまの愛で立派に育ったネコ<br>お礼に満腹の幸せをお届け<br>敵を倒したときにお金を多くもらえる
+|Transl2 (JP) = A cat that has grown up to be a great cat thanks to your love<br>Delivers a full belly of happiness in return<br>Gain more money when defeating an enemy
+|Name1 (TW) = 招財貓
+|Desc1 (TW) = 對大眾的愛戴充滿感謝的貓<br>據說可以替主人招來一些福氣<br>打倒敵人的時候可以得到很多金錢
+|Name2 (TW) = 貓神抱稻
+|Desc2 (TW) = 在大眾的關愛下成長的貓<br>為回饋大眾將帶給大家滿滿食糧<br>打倒敵人的時候可以得到很多金錢
+|Name1 (KR) = 은혜 갚는 고양이
+|Desc1 (KR) = 평소 받은 사랑에 보답하는 고양이<br>주인에게 소소한 복을 가져다준다고 한다<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+|Name2 (KR) = 축복 고양이
+|Desc2 (KR) = 사람들의 사랑으로 훌륭하게 자란 고양이<br>답례로 모두에게 행복을 전달한다<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Maneki Cat
+|Normal Base HP = 450
+|Normal Base AP = 99
+|Normal Range = 200
+|Normal Foreswing = 34
+|Normal Attack Cooldown = 69
+|Normal Attack Length = 49
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 640
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = Neo Maneki Cat
+|Evolved Base HP = 450
+|Evolved Base AP = 99
+|Evolved Range = 200
+|Evolved Foreswing = 34
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 49
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 640
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.50+45
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 99 damage<br>(28.83 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 103f <sub>3.43 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 34f <sup>1.13s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Normal-Recharge Time = 21.33 ~ 12.53 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 1,682 damage<br>(489.9 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 1,682 damage<br>(489.9 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 103f <sub>3.43 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 34f <sup>1.13s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Evolved-Recharge Time = 21.33 ~ 12.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni342 f00}}
+
+==Trivia==
+*Maneki Cat was originally unlockable via the [[Cat Beacon]] feature, for those who paid a visit to PONOS's booth at the 5th BitSummit Indie Game Festival with a smartphone that has already cleared the first chapter of [[Empire of Cats]]. It was later made obtainable through the [[What's in the Box (Event Gacha)|What's in the Box]] Event Gacha that was added in [[Version 11.0 Update|Version 11.0]] for [[Nyanko Daisensou]]'s [[Anniversary/9th Year|9th Anniversary]] event.
+*Maneki Cat gets its name and design from [[wikipedia:Maneki-neko|maneki-neko]], figures of white Cats holding [[wikipedia:Koban (coin)|koban]] in a similar fashion to Maneki Cat.
+*Maneki Cat was the rarest cat in the game, with only 30 people receiving it from the BitSummit event, before it became obtainable in the [[What's in the Box (Event Gacha)|What's in the Box]] Gacha.
+*[[Blue Shinobi (Special Cat)|Blue Shinobi]], [[Undead Cat (Special Cat)|Undead Cat]], Maneki Cat, [[Mr. Ninja (Special Cat)|Mr. Ninja]] and [[Firecracker Cat (Special Cat)|Firecracker Cat]] are the few units that were exclusive to the [[Nyanko Daisensou]] before being added globally via gacha event.
+
+==Reference==
+*https://battlecats-db.com/unit/343.html
+
+----
+{{CatNav|Lost World Yuki|Slug Jockey Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Cat Beacon Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Special Cats]]
+[[Category:Cats with Money Up ability]]
+[[Category:Single Attack Cats]]

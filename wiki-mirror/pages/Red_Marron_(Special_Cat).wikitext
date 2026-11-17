@@ -1,0 +1,130 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Red Marron''' is a [[:Category:Special Cats|Special Cat]] that could be obtained during the [[Nyanko Daisensou|Battle Cats]] x [[Million Arthur Collaboration Event|Million Arthur]] x [[Dragon Poker Collaboration Event|Dragon Poker]] collaboration event. It was added in [[Version 2.2 Update#Version 2.2.4 Update|Version 2.2.4]].
+
+{{Cat Info
+|ID = 102
+|rarity = EX
+|name1 = Red Marron
+|name2 = Red Marron CC
+}}
+
+==Evolution==
+Evolves into '''Red Marron CC''' at level 10.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned in mass to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role. Red Marron, however, can be used in {{4c}} stages, where there is considerably less competition.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 102
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni102 f00.png
+|Image2 = Uni102 c00.png
+|Name1 (JP) = レッドマローン (Reddomarōn, Red Malone)
+|Desc1 (JP) = ドラゴンポーカーから参戦！<br>安価で生産できるキャラクター<br>数で押し切りたいときは超使える
+|Transl1 (JP) = Joining the war from Dragon Poker!<br>Inexpensive character to produce<br>Super useful when you want to outnumber your opponents
+|Name2 (JP) = レッドマローンCC (Reddo MarōnCC, Red MaloneCC)
+|Desc2 (JP) = ドラゴンポーカーから参戦！<br>安価で生産できるキャラクター<br>数で押し切りたいときは超使える
+|Transl2 (JP) = Joining the war from Dragon Poker!<br>Inexpensive character to produce<br>Super useful when you want to outnumber your opponents
+|Name1 (KR) = 레드 마론
+|Desc1 (KR) = 드래곤 파티에서 참전!<br>저가생산 가능한 캐릭터<br>숫자로 해치워버리고 싶을 땐 굉장히 쓸만하다
+|Name2 (KR) = 래드 마론CC
+|Desc2 (KR) = 드래곤 파티에서 참전!<br>저가생산 가능한 캐릭터<br>머릿수로 해치워버리고 싶을 땐 굉장히 쓸만하다
+}}
+
+==Cost==
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+{{Upgrade Cost|MIX
+|0
+|900
+|1,800
+|3,000
+|4,500
+|6,300
+|8,400
+|10,800
+|13,500
+|16,500
+|1,200
+|max = 50
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Red Marron
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 19
+|Normal Attack Length = 35
+|Normal Speed = 10
+|Normal KB = 4
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Red Marron CC
+|Evolved Base HP = 100
+|Evolved Base AP = 8
+|Evolved Range = 140
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 19
+|Evolved Attack Length = 35
+|Evolved Speed = 10
+|Evolved KB = 4
+|Evolved Cost = 50
+|Evolved Recharge = 150
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 135 damage<br>(109.46 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 5 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni102 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/103.html
+
+----
+{{CatNav|Clone Elle|Cabaret Cat}}
+----
+
+{{Dragon Poker}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]

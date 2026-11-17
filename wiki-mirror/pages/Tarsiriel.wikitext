@@ -1,0 +1,104 @@
+'''Tarsiriel''' (天使メガミエル, ''Tenshi Megamieru'', '''Angel Megamiel''') is an [[:Category:Angel Enemies|Angel]]/[[:Category:Sage Enemies|Sage]] variant of [[LeMurr]] introduced in [[Stratospheric Pathway]]. They were added in [[Version 13.2 Update|Version 13.2]].
+
+{{Enemy Info
+|name = Tarsiriel
+|image = E 680.png
+|first appearance = '''ZL''': [[Prairie Harbor|Sub-chapter 10 - Prairie Harbor]]
+|latest appearance = '''ZL''': [[Cheerful Heretic|Sub-chapter 17 - Cheerful Heretic]]
+|money drop = 750¢ - 2,962¢
+}}
+
+==Enemy==
+Tarsiriel is similar to [[Loris]], albeit with higher health but a notably shorter standing range and Long Distance reach. However, this enemy can be more problematic by Slowing instead of Cursing, giving them some similarity to [[Croakley]]. The similarity also extends to a 100% chance to effectively perma-slow, though the [[Ototo Corps|Slow Beam Style]] can bring the uptime under 100%.
+
+==Strategy==
+Due to Tarsiriel's Long Distance specifications, they can only attack when a Cat is already in Tarsiriel's blind spot or Tarsiriel is in position to snipe the [[Cat Base]]. As such, they're easy to handle when alone, but can be a problem when backing tough frontline and midrange enemies. This, as well as their Sage type, makes [[:Category:Crowd-Controller-class Cats|crowd-control options]] rather ineffective unless the crowd-control unit happens to be an [[:Category:Anti-Angel Cats|anti-Angel]] [[:Category:Sage Slayer Cats|Sage Slayer]], such as [[Master of Mind Soractes (Special Cat)|Master of Mind Catcrates]]. That aside, speedy or [[:Category:Cats with Slow Immunity|slow-immune Cats]] are optimal for getting inside the blind spot and avoiding the perma-slow.
+
+Since Tarsiriel's Sage type keeps them from being pushed far by knockback effects, firing the [[Ototo Corps#Breakerblast|Breakerblast]] to push non-Sage enemies behind Tarsiriel is a good way to leave them open to attack.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 680
+|Type = [[:Category:Angel Enemies|Angel]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 680.png
+|Name1 = Tarsiriel
+|Desc1 = After getting the wrong lens prescription,<br>tripped and fell onto the rock now stuck in<br>their forehead. To enter Heaven's gates,<br>one must first defeat them in a battle of wits.
+|Name1 (JP) = 天使メガミエル (Tenshi Megamieru, Angel Megamiel)
+|Desc1 (JP) = 度の合わないメガネのせいで転び<br>落ちていた石が額にめりこんだメガネザル。<br>そのまま天国へ旅立った後は召されてきた<br>者たちを見境なく論破している。
+|Transl1 (JP) = Due to loosely fitting glasses, this<br>tarsier tripped on a stone that got lodged into its forehead.<br>After leaving for Heaven, it indiscriminately refutes<br>those who have been called there.
+|Name1 (TW) = 天使眼鏡猴人
+|Desc1 (TW) = 因眼鏡度數不合而跌倒，<br>石頭還卡進額頭裡的眼鏡猴。<br>就這樣過世而到了天國的他，<br>只要有人來到天國就會去辯駁對方。
+|Name1 (KR) = 천사 글래시엘
+|Desc1 (KR) = 도수가 맞지 않는 안경을 쓰다 넘어져<br>떨어져있던 돌이 머리에 박힌 원숭이.<br>그대로 천국으로 간 뒤 소환된 자들과<br>밤샘토론으로 논쟁을 즐기고 있다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 10-6: [[Prairie Harbor]]
+*Stage 11-1: [[Meandering Road]]
+*Stage 11-2: [[One-Second Photo]]
+*Stage 13-5: [[Accidental Toxicity]]
+*Stage 14-3: [[Weedy Garden]]
+*Stage 15-2: [[Antimatter Jungle]]
+*Stage 16-3: [[Proposal at Sea]]
+*Stage 17-4: [[Cheerful Heretic]]
+*Stage 19-6: [[Jetsam Lookout]]
+*Stage 20-1: [[Intellectual Pursuit]]
+*Stage 22-3: [[Tiramisu Cliffs]]
+*Stage 26-4: [[Dictionary Estate]]
+*Stage 28-6: [[Drag-Inn]]
+*Stage 31-3: [[The Dogma Divide]]
+*Stage 33-6: [[Leftover Limbo]]
+*Stage 37-6: [[Bowl of Bliss]]
+*Stage 38-5: [[ZL 38-5]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Tarsiriel
+|Health = 650000
+|Attack Power = 5500
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 130
+|Movement Speed = 8
+|Knockback = 6
+|Foreswing = 11
+|Backswing = 9
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 420~770)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 150f <sub>5 seconds</sub>
+|Element = Angel/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+680 e.png|Tarsiriel's spritesheet
+</gallery>
+
+==Trivia==
+*Tarsiriel's name is a combination of ''[[wikipedia:Tarsier|tarsier]]'' (a nocturnal primate with big eyes and long hind limbs) and ''El'' (the Hebrew word for God, commonly used as a suffix in angel names).
+*Tarsiriel's Japanese name, Megamiel (メガミエル ''Megamieru''), is a combination of 目が見える ''megamieru'' (to be able to see), 眼鏡 ''megane'' (glasses), 眼鏡猿 ''meganezaru'' (tarsier), ''El'' and possibly 女神 ''megami'' (goddess).
+*Since many [[:Category:Sage Enemies|Sages]] are based on historical figures and Tarsiriel debuts in [[Stratospheric Pathway]], an American-themed sub-chapter, Tarsiriel may be based on an American historical figure. The focus given to their glasses might allude to [[wikipedia:Benjamin Franklin|Benjamin Franklin]], a Founding Father who invented bifocals, while the closest known match for their design is [[wikipedia:Peter Cooper|Peter Cooper]], an inventor and industrialist best known for creating America's first steam locomotive, ''[[wikipedia:Tom Thumb (locomotive)|Tom Thumb]]''.
+*Tarsiriel bears a slight resemblance to Brazilian educator and philosopher [[wikipedia:Paulo Freire|Paulo Freire]].
+*Tarsiriel's description and [[:Category:Angel Enemies|Angel]]/Sage typing may reference [[wikipedia:Saint Peter|St. Peter]], an Apostle of Jesus whose name means "stone"; St. Peter is often portrayed as Heaven's gatekeeper and greeter awaiting those who reach the [[wikipedia:Pearly gates|pearly gates]], as he was promised the [[wikipedia:Keys of Heaven|Keys of Heaven]] in the Bible.
+
+==Reference==
+*https://battlecats-db.com/enemy/682.html
+
+----
+{{EnemyNav|Dogenstein|Artillery Dummy}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Angel Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]

@@ -1,0 +1,109 @@
+'''Ancient Magamojoe''' (超古獣マガモジョー, ''Chō Kojū Magamojō'', '''Super Ancient Beast Magamojō''') is a [[:Category:Relic Enemies|Relic]]/[[:Category:Behemoth Enemies|Behemoth]] variant of [[Casaurian Ahirujo]] that appears in [[Legend Stages]]. He was added in [[Version 12.0 Update|Version 12.0]].
+
+{{Enemy Info
+|name = Ancient Magamojoe
+|image = E 627.png
+|first appearance = [[Cursed Flaming Party|Peril in the Volcano III]]<br>'''ZL''': [[A Whole New World|Sub-chapter 1 - A Whole New World]]
+|latest appearance = '''ZL''': [[Hole Lotta Somethin'|Sub-chapter 5 - Hole Lotta Somethin']]
+|money drop = 2,100¢ - 8,295¢
+}}
+
+==Enemy==
+This dastardly duck has enormous health and attack power, and though his [[Multi-Hit]] works the same as that of [[Casaurian Ahirujo]] and [[Casaurian Darkjo|Darkjo]], those in the range of the last hit are damaged the most. Additionally, he has a 50% chance to spawn a Level 2 [[Surge Attack]] on his last hit that could appear anywhere up to 750 range. Combined with his immunities to [[Slow]], Surges, and worst of all, [[Knockback]], this enemy can ravage both your frontline ''and'' backline if not defeated fast enough.
+
+==Strategy==
+Magamojoe pushes even harder than his other variants, and his Relic trait makes him quite the handful, as few accessible units could counter Relic Behemoths, not to mention the presence of other support units that can block usual counters like [[Idi:N (Special Cat)|Idi:NX]] (although her Surge immunity allows her to sprint past and deal heavy damage just as Magamojoe's multi-hits conclude) and Surges wiping out your weaker units. It's also very difficult to regain ground against his Knockback and Slow immunities, so in many cases you would prefer luring him with better positioning. Having [[Elder Mask Doron (Special Cat)|Awakened Doron]], [[Elder Beast Naala (Special Cat)|Awakened Naala]], and [[Dogumaru (Special Cat)|Reborn Warrior Doguemon]] will definitely ease the fight, thanks to their anti-Relic/Behemoth abilities coming into play and allowing them to somewhat tank him.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 627
+|Type = [[:Category:Relic Enemies|Relic]]/[[:Category:Behemoth Enemies|Behemoth]]
+|Image1 = Enemy icon 627.png
+|Name1 = Ancient Magamojoe
+|Desc1 = Old-fashioned duck with three children in tow.<br>Has a tendency to fly off the handle. A strict<br>parent that raises ducklings to one day leave<br>the nest. Sends money to his youngest duckling.
+|Name1 (JP) = 超古獣マガモジョー (Chō Kojū Magamojō, Super Ancient Beast Magamojō)
+|Desc1 (JP) = 三匹のアヒルを子に持つ昔かたぎのカモ。<br>烈波でちゃぶ台を返すワイルドな教育で<br>子供達を立派に巣立たせたがんこ親父。<br>末っ子には毎月おこづかいを送っている。
+|Transl1 (JP) = Old-fashioned duck with three ducklings.<br>A stubborn father whose children all left the nest<br>because of his wild style of education that often knocks<br>over the dining table with Intense Waves.<br>Sends his youngest child allowance every month.
+|Name1 (TW) = 超古獸摩鴨喬
+|Desc1 (TW) = 有著三隻鴨小孩，相當老派的鴨子。<br>用發射烈波來翻桌等破天荒的<br>教育方式將孩子帶大的頑固父親。<br>每個月都會給老么零用錢。
+|Name1 (KR) = 초고대수 오리야크
+|Desc1 (KR) = 세 아이를 키워낸 고지식한 야생 오리<br>열파로 종아리를 때리는 엄격한 교육으로<br>아이들을 훌륭하게 키워낸 고집 센 아버지<br>막내에게는 매달 용돈을 보내주고 있다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 1-1: [[A Whole New World]]
+*Stage 5-8: [[Hole Lotta Somethin']]
+
+===[[Special Events|Event Stages]]===
+*[[Mining Epic]]: [[Seven Lights of Doom (Merciless)]]
+*Peril in the Volcano III: [[Cursed Flaming Party]]
+*[[Relic Citadel]]: [[Relic Citadel/Floor 9|Floor 9]]
+*[[Jinfore Volcano]]: [[Erupting Cavern Area 18]]
+*[[Otherworld Colosseum#Mega Cat Cannon|Otherworld Colosseum]]: [[Round 5 (Mega Cat Cannon)|Round 5]]
+*[[Otherworld Colosseum#Limited Stock|Otherworld Colosseum]]: [[Round 4 (Limited Stock)|Round 4]]
+*[[Otherworld Colosseum#Uber Clearance 2|Otherworld Colosseum]]: [[Round 4 (Uber Clearance 2)|Round 4]]
+
+===[[Catclaw Dojo]]===
+*[[Catclaw Championships#Catclaw Championships Rank 12|Catclaw Championships Rank 12]]: [[Rank-Up Test 3 (Rank 12)|Rank-Up Test 3]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ancient Magamojoe
+|Health = 2200000
+|Attack Power = 35000
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 66
+|Movement Speed = 13
+|Knockback = 3
+|Foreswing = 10
+|Backswing = 34
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">10,000</span> at 10f <sup>0.33s</sup>, <span class="scaled" data-type="ap">10,000</span> at 21f <sup>0.7s</sup>, <span class="scaled" data-type="ap">15,000</span> at 32f <sup>1.07s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~251 on 1st hit, 1~301 on 2nd hit, 1~351 on 3rd hit)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 90f <sub>3 seconds</sub> on 3rd hit<br>
+{{AbilityIcon|Surge Attacks}} 50% chance to create a level 2 [[Surge Attack]] between 150 and 750 range on 3rd hit<br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow|Immune to Surge}} [[Immune to Knockback]], [[Immune to Slow|Slow]] and [[Immune to Surge|Surge]]
+|Element = Relic/Behemoth
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+627 e.png|Ancient Magamojoe's spritesheet
+</gallery>
+
+==Trivia==
+*The name Magamojoe (マガモジョー ''Magamojō'') may be derived from 真鴨 ''magamo'' ([[wikipedia:Mallard|mallard duck]]), ''mojo'' (plural ''mojos'' or ''mojoes''; a magic spell or hex, referencing his Curse ability), イビルジョー ''Ibirujō'' (the Japanese name of ''Monster Hunter''<nowiki>'</nowiki>s [[wikia:monsterhunter:Deviljho|Deviljho]]) and ジョー ''jō'' (jaw, referring to his large beak). Like Magamojoe, both male mallard ducks and Deviljho have a prominent green coloration.
+*His crest, beak shape, arms and feathers all resemble those of [[wikia:monsterhunter:Kulu-Ya-Ku|Kulu-Ya-Ku]], a Bird Wyvern introduced in ''Monster Hunter World''. Fittingly, Kulu-Ya-Ku is a very early-game monster, and Magamojoe debuts in the very first stage of [[Legend Stages# Zero Legends|Zero Legends]]. His lack of the "Casaurian" prefix from [[Casaurian Ahirujo]] and [[Casaurian Darkjo]]'s names may be because Kulu-Ya-Ku, unlike [[wikia:monsterhunter:Yian Garuga|Yian Garuga]], is not a close relative of [[wikia:monsterhunter:Yian Kut-Ku|Yian Kut-Ku]].
+*His Japanese description is a reference to the [[wikipedia:Star of the Giants|''Star of the Giants'']] character [[wikia:kyojin-no-hoshi:Ittetsu Hoshi|Ittetsu Hoshi]], who also looks after three children, has a cruel and unorthodox style of education, and is very infamous for a [[wikia:kyojin-no-hoshi:Iconic Kyojin no Hoshi scenes that are mostly parodied#Chabudai Gaeshi|scene]] where he slapped his son [[wikia:kyojin-no-hoshi:Hyūma Hoshi|Hyūma]] and knocked over the dinner table at the same time.
+*He and [[Ultima Beast Naala]] are the only Behemoths to share the same title in their Japanese names. Both are titled ''Chō Kojū'' (超古獣, "Super Ancient Beast").
+*It can be assumed that Ancient Magamojoe's three children are the three Bird Brothers mentioned in [[Casaurian Darkjo]]'s description.
+*Although Casaurian Ahirujo, Casaurian Darkjo and Ancient Magamojoe all have ジョー ''jō'' in their Japanese names, it was romanized inconsistently in English: "jo" for the Casaurians, "joe" for Magamojoe.
+
+==Reference==
+*https://battlecats-db.com/enemy/629.html
+
+----
+{{EnemyNav|10th Anniversary Dummy|Great Ape Luza}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zero Legends Enemies]]
+[[Category:Relic Enemies]]
+[[Category:Behemoth Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Surge Attack Enemies]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with different effective ranges]]

@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Skelecat|Squire Rel}}
+'''Shambling Along (Expert)''' is the first stage in [[Zombie Awakens!]].
+
+{{Stage Info
+|stage name = [[File:rc042.png]]
+[[File:Mapsn054 00 s en.png]]
+|stage location = [[File:Mapname054 s en.png]]
+|energy = 150
+|enemy castle hp = 750,000 HP
+|enemies = {{Magnification|Skelecat|100%
+|Squire Rel|100%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|treasure = - [[Zombie Cat (Special Cat)|Zombie Cat]]'s [[True Form]] (5%, 1 time)
+|XP = 4,000 XP
+|width = 4,800
+|max enemies = 12
+|jpname = Road to Zombie Evolution (Intense)
+|script = ゾンビ進化への道 激ムズ
+|romaji = Zonbi Shinka e no Michi Geki Muzu
+|star = 1
+|event-chapter = [[Zombie Awakens!]]
+|difficulty = ★7
+|prev stage = N/A
+|next stage = [[Shambling Along (Insane)]]
+|require = Complete [[Empire of Cats]] Chapter 2
+|occurrence = - The 9th day in any month (07:00~14:00)
+- The 10th day in any month (17:00~00:00)
+}}
+
+==Battleground==
+*5 [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*1 [[Skelecat (Enemy)|Skelecat]] spawns after 4.67 seconds<sup>140f</sup>.
+*5 [[Squire Rel]]s spawn after 22 seconds<sup>660f</sup>, delay 2~4.67 seconds<sup>60f~140f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**Infinite [[Skelecat (Enemy)|Skelecats]] spawn, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**20 [[Skelecat (Enemy)|Skelecats]] spawn, delay 2~8 seconds<sup>60f~240f</sup>.
+**20 [[Skelecat (Enemy)|Skelecats]] spawn, delay 4~12 seconds<sup>120f~360f</sup>.
+**20 [[Skelecat (Enemy)|Skelecats]] spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**20 [[Skelecat (Enemy)|Skelecats]] spawn, delay 6~18 seconds<sup>180f~540f</sup>.
+**1 [[Skelecat (Enemy)|Skelecat]] spawns.
+
+==Strategy==
+This is arguably one of the easiest [[:Category:Awakening Stages|Awakening Stages]] due to the underwhelming health of each Skelecat (only 25,000 HP). Large groups of them can be easily demolished with Area Attack units or a large stack of [[Lizard Cat (Normal Cat)|Dragon Cats]] and [[Gross Cat (Normal Cat)|Sexy Legs Cats]]. The aforementioned units' [[True Form]]s will help out tremendously if you have them.
+
+==Walkthrough==
+{{Walkthrough
+|We8Xc3r0cbg|Lasaga|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01054-01.html
+
+{{Awakening Stages}}
+[[Category:Zombie Awakens!]]
+[[Category:Awakening Stages]]
+[[Category:Event Stages]]

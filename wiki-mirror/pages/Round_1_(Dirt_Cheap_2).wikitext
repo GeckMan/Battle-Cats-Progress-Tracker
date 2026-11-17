@@ -1,0 +1,68 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Zigge|Aku Doge|Znache|Aku Gory|Miz Devil|Wicked Face|Dread Bore|Le'Behemoth}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Dirt Cheap 2|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Zigge|300%
+|Aku Doge|400%
+|Znache|300%
+|Aku Gory|200%
+|Miz Devil|400%
+|Dread Bore|300%
+|Le'Behemoth|200%}}
+|boss = {{Magnification|Wicked Face|150%}}
+|enemies2 = {{Magnification|Zigge|360%
+|Aku Doge|480%
+|Znache|360%
+|Aku Gory|240%
+|Miz Devil|480%
+|Dread Bore|360%
+|Le'Behemoth|240%}}
+|boss2 = {{Magnification|Wicked Face|180%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 20
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Dirt Cheap 2|Otherworld Colosseum]]
+|prev stage = N/A
+|next stage = [[Round 2 (Dirt Cheap 2)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Dirt Cheap}}
+
+==Battleground==
+*2 [[Zigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*5 [[Aku Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*3 [[Znache]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*1 [[Aku Gory]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Wicked Face]] spawns as the boss.
+**3 [[Zigge]]s spawn, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**10 [[Miz Devil]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**8 [[Znache]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**3 [[Zigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**Infinite [[Aku Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**3 [[Aku Gory|Aku Gories]] spawn after 20 seconds<sup>600f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**2 [[Dread Bore]]s spawn after 13.33 seconds<sup>400f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+**1 [[Le'Behemoth]] spawns after 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36028-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

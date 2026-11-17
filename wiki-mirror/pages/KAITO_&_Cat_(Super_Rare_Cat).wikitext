@@ -1,0 +1,130 @@
+'''KAITO & Cat''' are a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. They were added in [[Version 10.3 Update|Version 10.3]].
+
+{{Cat Info
+|ID = 591
+|rarity = SR
+|name1 = KAITO & Cat
+|name2 = KAITO & Cat CC
+}}
+
+==Evolution==
+Evolves into '''KAITO & Cat CC''' at level 10.
+
+==Strategy/Usage==
+KAITO should be used to tank zombie enemies, as it has lots of health for them specifically. His DPS is low so he shouldn't be used for damage. He has low amounts of knockbacks so he can tank effectively, and he has rather good cooldown for his role.
+
+{{Job|Classification = Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 591
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni591 f00.png
+|Image2 = Uni591 c00.png
+|Name1 = KAITO & Cat
+|Desc1 = Virtual singer loved by the entire Cat Empire!<br>A talented singer with a wide vocal range.<br>Tough vs. Zombies, with Area Attack.
+|Name2 = KAITO & Cat CC
+|Desc2 = Virtual singer loved by the entire Cat Empire.<br>Blessed with expressive, manly voice.<br>Tough vs. Zombies, with Area Attack.
+|Name1 (JP) = KAITO&ネコ (KAITO & Neko, KAITO & Cat)
+|Desc1 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>多彩な楽曲を歌いこなす可能性を秘めたボーカル<br>ゾンビに打たれ強い(範囲攻撃)
+|Transl1 (JP) = A popular virtual singer from the electronic world!<br>A vocalist with the potential to sing a wide variety of songs<br>Resistant to Zombies (Ranged Attack)
+|Name2 (JP) = KAITO&ネコCC (KAITO & Neko CC, KAITO & Cat CC)
+|Desc2 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>高い表現力を備えた歌声が特徴的な男性ボーカル<br>ゾンビに打たれ強い(範囲攻撃)
+|Transl2 (JP) = A popular virtual singer from the electronic world!<br>Male vocalist with a highly expressive singing voice<br>Resistant to zombies (ranged attacks)
+|Name1 (TW) = KAITO&貓咪
+|Desc1 (TW) = 來自虛擬世界的人氣歌手！<br>潛在能演唱多彩樂曲可能性的唱將<br>對上不死生物很耐打(範圍攻擊)
+|Name2 (TW) = KAITO&貓咪CC
+|Desc2 (TW) = 來自虛擬世界的人氣歌手！<br>具有高度表現能力歌聲特色的男性歌手<br>對上不死生物很耐打(範圍攻擊)
+|Name1 (KR) = KAITO&고양이
+|Desc1 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>다채로운 음악을 소화할 수 있는 가능성을 지닌 보컬<br>좀비에 맷집이 좋다 (범위 공격)
+|Name2 (KR) = KAITO&고양이CC
+|Desc2 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>수준 높은 표현력을 갖춘 목소리가 특징적인 남성 보컬<br>좀비에 맷집이 좋다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 780¢
+*Chapter 2: 1,170¢
+*Chapter 3: 1,560¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = KAITO & Cat
+|Normal Base HP = 1900
+|Normal Base AP = 350
+|Normal Range = 250
+|Normal Foreswing = 65
+|Normal Attack Cooldown = 105
+|Normal Attack Length = 121
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 820
+|Normal Recharge = 820
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = KAITO & Cat CC
+|Evolved Base HP = 2500
+|Evolved Base AP = 450
+|Evolved Range = 250
+|Evolved Foreswing = 65
+|Evolved Attack Cooldown = 105
+|Evolved Attack Length = 121
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 820
+|Evolved Recharge = 820
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,900 HP
+|val-Normal-Attack Power = 350 damage<br>(61.76 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 170f <sub>5.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 65f <sup>2.17s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Normal-Recharge Time = 27.33 ~ 18.53 seconds
+|val-Normal-MaxHP = 32,300 HP
+|val-Normal-MaxAttack = 5,950 damage<br>(1,050 DPS)
+|val-Evolved-Health = 42,500 HP
+|val-Evolved-Attack Power = 7,650 damage<br>(1,350 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 170f <sub>5.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 65f <sup>2.17s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Evolved-Recharge Time = 27.33 ~ 18.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni591 f00}}
+
+==Trivia==
+*Prior to [[Version 13.1 Update|Version 13.1]], this unit was called "Kaito & Cat".
+
+==Reference==
+*https://battlecats-db.com/unit/592.html
+
+----
+{{CatNav|Snow Miku 2021|Neko Rin}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Zombie Killer Cats]]

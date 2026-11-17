@@ -1,0 +1,8 @@
+.ranger-navbox.daily {
+	--bg-navbox-title: linear-gradient(to right, hsl(110, 36%, 53%) 0%, hsl(131, 53%, 65%) 50%, hsl(110, 36%, 53%) 100%);
+	--bg-sub-table-title: #92D582;
+	--bg-group-name: #A4DBA3;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

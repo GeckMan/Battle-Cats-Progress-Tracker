@@ -1,0 +1,56 @@
+{{Documentation}}
+This template is used to display animations. For the template used on most unit pages that is specifically for unit animations, see [[Template:UnitViewer]]. The image shown in the viewer can be copied or saved on desktop after right clicking.
+
+==Explanation==
+The area in the bottom left corner is the control menu, and most controls for the animation are there. Starting from the top, there is an input field that takes a file name on the wiki to show as the background image of the viewer (see [[Backgrounds]] for a list of all of them). If this field is left blank, the viewer uses a transparent background. A full hex code can also be supplied, and this will display that color as the background. The select menu beside the "Mode" text is for selecting the type of animation to show. When the animation is playing, some of these options will be replaced by buttons because they are not meant to be played continuously. These buttons play the corresponding animation once. When the animation is paused, there will be another element at the bottom of the control menu with the text "Frame". This specifies which frame in the animation to show in the viewer.
+
+In the upper right corner, there are a few buttons. The topmost button with the text "Hide" or "Show" is for toggling the visibility of all other elements if they obstruct the view of the unit. The button in the middle with the plus sign is for zooming in, and the bottom button with the minus sign is for zooming out. The arrow buttons in the bottom right are used to move the screen. Note that it moves the viewer's point of view rather than the displayed image.
+
+If the viewer is used on desktop, the computer mouse can be used to scroll within the viewer when enabled by clicking the inner content of the animation viewer. This is shown by an interior shadow outlining the border of the viewer. Clicking again after enabling it disables it. This is done so that the original scrolling of the page and the interior scrolling within the viewer don't interfere with each other. On mobile, the unit can be dragged around by touch after enabling viewer scrolling. This is the same on desktop using the mouse to drag, but it works without having to tap the viewer. Resizing the viewer is done by dragging its bottom right corner.
+
+==Parameters==
+<pre>
+{{AnimationViewer|spritesheet|json|bg = (optional)|frame = (optional)}}
+</pre>
+
+This template requires two parameters. <code>spritesheet</code> takes a file name of an image on the wiki to use as the animation's spritesheet, and <code>json</code> takes the full name of the json page containing the animation's data.
+
+There are an additional two optional named parameters. <code>bg</code> is used to override any default configurations for the animation viewer's background, and it takes a full file name of an existing background image on the wiki (technically any image will work). <code>frame</code> sets the viewer's initial frame. Usually this is 0, which is the parameter's default value, but there can be certain cases where it is preferable to load the animation in its middle. For example, Spirits' animations begin as nothing, so it makes more sense to set 65 as their initial frames when they are visible nicely.
+
+==Animation Data==
+The viewer requires a specific format for its data pages, and for it to make sense, it helps to have a basic understanding of how animations are put together. In addition to a spritesheet, there are three other components that are necessary to display an animation: imgcut, mamodel, and maanim files. imgcut files define cutouts from the spritesheet to use as textures for the sprites. Next, mamodel files define the actual sprites that each have a texture taken from imgcut as well as numerous attributes for the sprites' positions, angles, opacity, etc. Essentially, an mamodel file creates the basic model for an animation. Then, maanim files contain rules that modify the sprites' attributes to create frames.
+
+Animation data pages are json files formatted like this:
+
+<pre>
+{
+	"imgcut": [
+		...
+	],
+	"maamodel": [
+		...
+	],
+	"maanim": [
+		{
+			"name": ...,
+			"type": "continuous/once",
+			"data": [
+				...
+			]
+		},
+		...
+	]
+}			
+</pre>
+
+Because every animation currently on the wiki only uses one imgcut and one mamodel file, those files broken down into arrays are assigned directly to keys for imgcut and maamodel. However, there can be multiple maanim files (units generally have four of them), and they also differ in how they are displayed in the viewer. For flexibility, the maanim data files are stored as objects instead of directly passing the data. Each object in the array for maanim has three key-value pairs: <code>name</code> for the animation's name, <code>type</code> for whether it should be played continuously or end automatically after a certain number of frames, and <code>data</code> for the actual maanim data. This format must be strictly followed because the JavaScript for this template reads through these items and uses the information to create some of the viewer's UI elements.
+
+It is important to note that while the viewer assumes that only one imgcut and spritesheet are used for the animation because that is how unit animations work, other animations can use multiple spritesheets and imgcut files such as the Gamatoto animations. Those animations are currently incompatible with the viewer.
+
+==Usage==
+<pre>
+{{AnimationViewer|000_f.png|MediaWiki:Custom-AnimationViewer/000_f.json}}
+</pre>
+
+===Result===
+{{AnimationViewer|000_f.png|MediaWiki:Custom-AnimationViewer/000_f.json}}

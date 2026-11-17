@@ -1,0 +1,45 @@
+<includeonly><onlyinclude>{{{noheading|==Materials==
+}}}{| class="article-table" style="text-align: center;"
+|- {{#if:{{{hidenormal|a}}}||class="hideme"}}
+! None
+! Bricks
+[[File:Brick small.png|center]]
+! Feathers
+[[File:Feather small.png|center]]
+! Coal
+[[File:Coals small.png|center]]
+! Sprockets
+[[File:Sprockets small.png|center]]
+! Gold
+[[File:Gold small.png|center]]
+! Meteorite
+[[File:Meteorite small.png|center]]
+! Beast Bones
+[[File:Beast Bones small.png|center]]
+! Ammonite
+[[File:Relic Fossil Small.png|center]]
+|- {{#if:{{{hidenormal|a}}}||class="hideme"}}
+| {{{1}}}%
+{{#invoke:MaterialRates|normal}}
+|- {{#if:{{{10|}}}||class="hideme"}}
+! {{#if:{{{hidenormal|a}}}||None}}
+! Brick Z
+[[File:Brick Z small.png|center]]
+! Feathers Z
+[[File:Feather Z small.png|center]]
+! Coal Z
+[[File:Coals Z small.png|center]]
+! Sprockets Z
+[[File:Sprockets Z small.png|center]]
+! Gold Z
+[[File:Gold Z small.png|center]]
+! Meteorite Z
+[[File:Meteorite Z small.png|center]]
+! Beast Bones Z
+[[File:Beast Bones Z small.png|center]]
+! Ammonite Z
+[[File:Relic Fossil Z small.png|center]]
+|- {{#if:{{{10|}}}||class="hideme"}}
+| {{#if:{{{hidenormal|a}}}||{{{1}}}%}}
+{{#invoke:MaterialRates|extra}}
+|}</onlyinclude></includeonly>{{/doc}}

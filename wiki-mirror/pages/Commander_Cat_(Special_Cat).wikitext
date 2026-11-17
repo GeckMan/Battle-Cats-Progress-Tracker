@@ -1,0 +1,123 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Possessed Gold Nyanko Ranger]]. Not to be confused with [[Lieutenant Cat (Special Cat)]] or [[Gold Cat (Super Rare Cat)]].''
+'''Commander Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by beating [[Fascinating Fallen Tower/Floor 20|Floor 20]] of the [[Fascinating Fallen Tower]]. She was added in [[Version 15.3 Update|Version 15.3]].
+
+{{Cat Info
+|ID = 858
+|rarity = EX
+|name1 = Commander Cat
+|name2 = Gold Nyanko Ranger
+|key1 = Commander Cat (13th)
+<!--
+Note note: the following paragraphs were written before [[Special:Diff/434782]] so the stuff about "Gold Cat" no longer applies.
+
+Note as this page is linked in the docs for key1/key2 in the Cat Info template: both the names "Commander Cat" and "Gold Cat" are already used by other units (respectively these are [[Lieutenant Cat (Special Cat)]] and [[Gold Cat (Super Rare Cat)]]), which means that any template like {{CatCombo}} (which you can see below) need to have a way to differentiate between whether you're talking about this cat or those other two.
+
+The solution is to use these "key" parameters, so that the central storage thing knows that "Gold Cat" refers to the original, while "Gold Cat (13th)" refers to this cat. Separating out keys and names means the infobox can show this unit's evolved form as "Gold Cat" without causing any confusion with any [[Module:Cats]]-based templates.
+-->
+}}
+
+==Evolution==
+Evolves into '''Gold Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+An anti-[[:Category:Angel Enemies|Angel]]/[[:Category:Aku Enemies|Aku]] crowd-controller with very high pierce through [[Wave Attack]]s. They can reach up to 533 range and have a 40% chance to [[Knockback]] target traits, making Gold Nyanko Ranger a genuinely decent anti-Angel crowd-controller for the early-game where many aren't readily available. But, unfortunately, she tends to become obsolete once [[Bishop Cat (Rare Cat)|Sanzo Cat]]'s Target Angel [[Talents|Talent]] is unlocked. In truth, Knockback is a fairly middling ability, and given Gold Nyanko Ranger's long recharge, she cannot hope to hold the lines on her own against hordes of Angels unless very well-protected. Against Aku, she doesn't fare much better, since many of the more dangerous Aku have [[Shield]]s which negate her Knockback entirely. This makes her decent for frontline enemies like [[Aku Gory]] or [[Devil Wife]], but nearly useless against most other Aku.
+
+[[Gold Silver Strike (Combo)|Gold Silver Strike]] does see powerful synergy with [[Scarf Cat (Special Cat)|Red Nyanko Ranger]] against Aku, where it allows the [[:Category:Nyanko Rangers|Nyanko Rangers]] to survive nasty [[Death Surge]]s. It gives Red Nyanko Ranger viability against enemies which would have instantly evaporated it with Surge Attacks like [[Medu-san]] and the [[Surge Base (Enemy Base)|Surge Base]]. It is situationally useful on [[Ribbon Cat (Special Cat)|Pink Nyanko Ranger]] for similar reasons, and Gold Nyanko Ranger can even contribute a great deal with her crowd-controlling alongside the other Rangers.
+
+Despite having great taste in color, Gold Nyanko Ranger is borderline unnecessary/outperformed by better units later in the game. She can find utility against enemies like [[St. Dober]] or Medu-san with her [[Cat Combo]], but struggles when pressured, especially with her painfully low HP. She meets a similar fate to [[Barista Cat (Special Cat)|Silver Nyanko Ranger]] in the [[Underground Labyrinth]] most of the time.
+
+{{Job|Classification = Crowd-Controller & Sniper}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Gold Silver Strike|"Immune to Surge" Effects Activated|Barista Cat|Commander Cat (13th)|jpname=キンギンパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 858
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni858 f00.png
+|Image2 = Uni858 c00.png
+|Name1 (JP) = 司令官にゃんこ (Shireikan Nyanko, Commander Cat)
+|Desc1 (JP) = にゃんこレンジャーを率いる才色兼備な司令官<br>作戦会議にはリモートで出席。天使と悪魔を<br>たまにふっとばし、必ず波動を放つ(範囲攻撃)
+|Transl1 (JP) = An intelligent and beautiful female commander who leads the Nyanko Rangers<br>Attends strategy meetings remotely.<br>Occasionally knocks back Angels and Devils, guaranteed to release a Wave (Area Attack)
+|Name2 (JP) = ゴールドにゃんこ (Gōrudo Nyanko, Gold Cat)
+|Desc2 (JP) = フォックスソウルを宿し、にゃんこレンジャー変身！<br>「コガネロッド」に込めた祈りで悪しき力を祓う<br>天使と悪魔をたまにふっとばし、必ず波動を放つ(範囲攻撃)
+|Transl2 (JP) = Channeling the Fox Soul, Nyanko Ranger transform!<br>Exorcises evil forces with the prayers put into the "Gold Rod"<br>Occasionally knocks back Angels and Devils, guaranteed to release a Wave (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Commander Cat
+|Normal Base HP = 560
+|Normal Base AP = 120
+|Normal Range = 310
+|Normal Foreswing = 45
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 86
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 500
+|Normal Recharge = 1020
+|Normal Attack Type = Area
+|Normal Targets = Angel,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 2 [[Wave Attack]]<br>
+{{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Gold Nyanko Ranger
+|Evolved Base HP = 700
+|Evolved Base AP = 150
+|Evolved Range = 310
+|Evolved Foreswing = 45
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 86
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 500
+|Evolved Recharge = 1020
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 2 [[Wave Attack]]<br>
+{{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni858 f00}}
+
+==Trivia==
+*Despite [[Ribbon Cat (Special Cat)|Ribbon Cat]]'s Japanese description claiming she is the only female [[:Category:Nyanko Rangers|Nyanko Ranger]] (紅一点 ''kōitten'' means the only female member of a group), Commander Cat's Japanese description contains the word 才色兼備 ''saishokukenbi'', meaning a woman who is both intelligent and beautiful.
+*Unlike the first five Nyanko Rangers, Gold Nyanko Ranger and [[Barista Cat (Special Cat)|Silver Nyanko Ranger]] channel the souls of canids (fox and tanuki, respectively) rather than felids. This may be because they start as the enemies [[Possessed Gold Nyanko Ranger]] and [[Possessed Silver Nyanko Ranger]], and many other enemies are dogs.
+*The Japanese names of Gold Nyanko Ranger and the [[:Category:Super Rare Cats|Super Rare]] unit [[Gold Cat (Super Rare Cat)|Gold Cat]] both translate to "Gold Cat", but aren't the same. Gold Nyanko Ranger's is ゴールドにゃんこ ''Gōrudo Nyanko'', while Gold Cat's is 金ネコ ''Kin Neko''.
+
+==Reference==
+*https://battlecats-db.com/unit/859.html
+
+----
+{{CatNav|Barista Cat|Lone Moon Lunos}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Wave Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

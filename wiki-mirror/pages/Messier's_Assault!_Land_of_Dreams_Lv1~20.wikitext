@@ -1,0 +1,300 @@
+{{EnemiesAppearing|Messier|Gabriel|Those Guys|Heavenly Hippoe|Shadow Boxer K}}
+{{Stage Info
+|stage name = [[File:rc142.png]]
+[[File:Mapsn000 00 ca en.png]]
+|stage location = [[File:Mapname000 ca en.png]]
+|enemies = {{Magnification|Gabriel|0
+|Those Guys|0
+|Heavenly Hippoe|0
+|Shadow Boxer K|0}}
+|boss = {{Magnification|Messier|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 10
+|jpname = World of Dreams Lv.X
+|script = 夢の世界 Lv.X
+|romaji = Yume no Sekai Lv.X
+|event = [[Shoumetsu Toshi Collaboration Event]]
+|event-chapter = [[Messier's Assault!]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 250,000 and increases by 50,000 with each stage.
+*1 [[Messier]] spawns as the boss after 13.33 seconds<sup>400f</sup>.
+*Infinite [[Gabriel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>
+*Infinite [[Those Guys]] spawn after 23.33 seconds<sup>700f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*8 [[Gabriel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Heavenly Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 42.67~46.67 seconds<sup>1,280~1,400f</sup>.
+*5 [[Shadow Boxer K]]s spawn after 40 seconds<sup>1,200f</sup>, delay 65.33~68 seconds<sup>1,960~2,040f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Land of Dreams Lv
+! colspan="6" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" |Messier
+! rowspan="2" scope="col" |Those Guys
+! rowspan="2" scope="col" |Shadow Boxer K
+! rowspan="2" scope="col" |Heavenly Hippoe
+! rowspan="2" scope="col" |Gabriel
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base
+XP
+|-
+!HP
+!AP
+|-
+! scope="row" |1
+|100%
+|100%
+|600%
+|50%
+|50%
+|100%
+|70
+|Purple Catfruit Seed +5
+|1,330
+|-
+! scope="row" |2
+|140%
+|130%
+|900%
+|90%
+|90%
+|140%
+|70
+|Red Catfruit Seed +5
+|1,330
+|-
+! scope="row" |3
+|180%
+|160%
+|1,200%
+|130%
+|130%
+|180%
+|70
+|XP +500,000
+|1,330
+|-
+! scope="row" |4
+|220%
+|190%
+|1,500%
+|170%
+|170%
+|220%
+|70
+|Leadership +1
+|1,330
+|-
+! scope="row" |5
+|250%
+|200%
+|1,800%
+|200%
+|200%
+|250%
+|90
+|Blue Catfruit Seed +5
+|1,710
+|-
+! scope="row" |6
+|320%
+|220%
+|2,200%
+|220%
+|240%
+|300%
+|90
+|Green Catfruit Seed +5
+|1,710
+|-
+! scope="row" |7
+|390%
+|240%
+|2,600%
+|240%
+|280%
+|350%
+|90
+|XP+750,000
+|-
+! scope="row" |8
+|460%
+|260%
+|3,000%
+|260%
+|320%
+|400%
+|90
+|Yellow Catfruit Seed +5
+|1,710
+|-
+! scope="row" |9
+|530%
+|280%
+|3,400%
+|280%
+|360%
+|450%
+|90
+|Purple Catfruit +5
+|1,710
+|-
+! scope="row" |10
+|600%
+|300%
+|4,000%
+|300%
+|400%
+|500%
+|110
+|Cat Ticket +1
+|2,090
+|-
+! scope="row" |11
+|640%
+|310%
+|4,200%
+|310%
+|410%
+|520%
+|110
+|Red Catfruit +5
+|2,090
+|-
+! scope="row" |12
+|680%
+|320%
+|4,400%
+|320%
+|420%
+|540%
+|110
+|Blue Catfruit +5
+|2,090
+|-
+! scope="row" |13
+|720%
+|330%
+|4,600%
+|330%
+|430%
+|560%
+|120
+|Leadership +1
+|2,280
+|-
+! scope="row" |14
+|760%
+|340%
+|4,800%
+|340%
+|440%
+|580%
+|120
+|Green Catfruit +5
+|2,280
+|-
+! scope="row" |15
+|800%
+|350%
+|5,000%
+|350%
+|450%
+|600%
+|130
+|XP+1,000,000
+|2,470
+|-
+! scope="row" |16
+|840%
+|360%
+|5,200%
+|360%
+|460%
+|620%
+|130
+|Yellow Catfruit +5
+|2,470
+|-
+! scope="row" |17
+|880%
+|370%
+|5,400%
+|370%
+|470%
+|640%
+|130
+|[[Catseye]] [Legend] +3
+|2,470
+|-
+! scope="row" |18
+|920%
+|380%
+|5,600%
+|380%
+|480%
+|660%
+|140
+|XP +1,500,000
+|2,660
+|-
+! scope="row" |19
+|960%
+|390%
+|5,800%
+|390%
+|490%
+|680%
+|140
+|Epic Catfruit +5
+|2,660
+|-
+! scope="row" |20
+|1,000%
+|410%
+|6,000%
+|400%
+|500%
+|700%
+|150
+|Rare Cat Ticket +1
+|2,850
+|}
+
+==Strategy==
+Messier isn't actually very threatening due to the slow attack rate, but the nasty peons can be a handful and become outright deadly if her Omni Strike catches many of your units at once. For this reason, disposable specialists capable of removing them are necessary to make them manageable.
+
+===Recommended Units===
+*[[Swimmer Cat (Super Rare Cat)|Fishman]] - Fishman's very high speed (works even without [[Talents]]) works well with its low cooldown and cost, not to mention its massive damage ability against Floating enemies. It can easily exploit openings between Messier's attacks and quickly deal heavy damage from there. When used properly, Fishman can even finish Messier before the stage becomes too difficult.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can]] - Can Can requires the Move Speed Up and Extra Money Talents to be worthwhile, able to also deal heavy damage and snipe Gabriels for additional resources.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk]] - Cyberpunk can be used as a support unit to delay all threats in the stage with his AOE LD attacks that slow them on hit for up to 4 seconds when Talented. As long as they're kept within range, They shouldn't be able to advance much.
+*[[Stone Cat (Rare Cat)|Stone]] - Stone can be used as a supplementary meatshield to bait Messier's attacks while also blocking the peons, as despite only persisting briefly, its extreme health ensures nothing gets by.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza]] - Pizza's good stats and massive damage to Dark enemies combined means despite its slow speed, it can often survive a Messier hit (before Strengthen activation) and get a clean hit or two on [[Shadow Boxer K]] (especially with the Wave Attack Talent), gravely damaging if not outright killing her.
+
+===Recommended Ubers===
+*[[Baby Cat (Uber Rare Cat)|Cradle]] - Cradle has 30% chance to knockback Floating enemies and has 100% chance to produce a Level 2 Wave Attack. Due to this unit's low cooldown and cost for its high stats, it can be used for occasional damage bursts and may even recover ground. Since many peons in the stage are pretty tanky, getting a hit off wouldn't be hard either.
+*[[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]]/[[Count Yukimura (Uber Rare Cat)|Count Yukimura]] - Yukimura and his Halloween variant both have the massive damage ability, targeting Dark and Floating enemies respectively. As disposable rushers with good stats and low cooldown, they can be used to great effect against their target traits.
+*[[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]] - Lufalan is able to outrange Messier's Omni Strike (720 vs 600) and deals heavy damage, with critical hits to dramatically speed up the fight. Its long cooldown, low health and single target however mean it is best used when Messier's closer to the cat base, buying time for it to deal extra damage before the peons get in the way. Even if they do, however, Lufalan's damage isn't wasted as Shadow Boxer K and Heavenly Hippoe are both resilient.
+*[[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]] - Greater Balrog should be fully Talented save for Wave Resist. As a disposable single-target melee attacker, Greater Balrog's extreme damage output should not be dismissed. When strengthened, he can destroy any peon very quickly, buying additional time to damage or even destroy Messier.
+*[[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]] - Kasa Jizo's first form is rather useful, being a disposable midranger with decent stats, low cost and cooldown with massive damage against Angels and Darks.
+
+==Trivia==
+*Prior to [[Version 11.7 Update|version 11.7]], stages 10, 13 and 17 had different rewards:
+**Lv10 would drop 4 [[Cat Capsule|Cat Tickets]].
+**Lv13 would drop 4 [[Leadership]]s.
+**Lv17 would drop 5 Epic [[Catfruit]] Seeds.
+
+==Reference==
+*https://battlecats-db.com/stage/s27000.html
+
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

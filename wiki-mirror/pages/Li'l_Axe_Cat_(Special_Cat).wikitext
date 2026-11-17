@@ -1,0 +1,211 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[Li'l Dark Cat (Enemy)]]''
+'''Li'l Axe Cat''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 4.2 Update|Version 4.2]] and can be unlocked by playing the [[Lucky Capsule]]. [[True Form]] added in [[Version 5.10 Update|Version 5.10]] increases health, range and attack power, as well as changing its targeted trait to [[:Category:Angel Enemies|Angel]]. [[Talents]] were added in [[Version 10.9 Update|Version 10.9]].
+
+{{Cat Info
+|ID = 211
+|rarity = EX
+|name1 = Li'l Axe Cat
+|name2 = Li'l Brave Cat
+|name3 = Li'l Dark Cat
+}}
+
+==Evolution==
+Evolves into '''Li'l Brave Cat''' at level 10.
+
+Evolves into '''Li'l Dark Cat''' when obtained from [[Tiny Chopper (Deadly)|Li'l Axe Awakens!]] and is level 20 or above.
+
+==Strategy/Usage==
+==='''Normal/Evolved Form'''===
+Due to being the Li'l version of a [[:Category:Normal Cats|Normal Cat]], Li'l Axe Cat suffers from a severe lack of good basic stats, which makes him underperform greatly in his field. For this reason, usage of Li'l Axe Cat prior to unlocking his True Form is not recommended. However, including him in Row 1 with [[Cutter Cat (Super Rare Cat)|Power Cutter Cat]] will create one of the most efficient [[Cat Combo]]s in the game: [[Brave Cutter (Combo)|Brave Cutter]]. An Attack Up (Sm) for just two units is extremely helpful. Combined with [[Sister Act (Combo)|Sister Act]], you can achieve a greater bonus than [[Cool Japan (Combo)|Cool Japan]] while using the same number of slots!
+
+==='''True Form'''===
+Li'l Dark Cat greatly improves his stats and becomes anti-[[:Category:Angel Enemies|Angel]], but this doesn't help much due to his mediocre stats. His matchups against Angels are extremely poor, as he can only outrange [[Gabriel]], [[Divine Cyclone]] and [[St. Dober]]. Even as a meatshield he is outclassed by [[Rocker Cat (Rare Cat)|Ramen Cat]] (who is pretty much required to beat [[Tiny Chopper (Deadly)|Tiny Chopper]], the stage required for this True Form). Li'l Dark Cat is still stronger than his prior forms even against [[:Category:Red Enemies|Red]] enemies, so, if there is no other option but to use him due to circumstances (restrictions, somehow not owning anything better, etc.), there is never a reason to revert his form.
+
+==='''Talents'''===
+Li'l Dark Cat's '''Target [[:Category:Aku Enemies|Aku]]''' Talent combined with his '''Freeze''' Talent can make it a viable option in stages featuring Aku enemies that he can approach, as he can potentially paralyze them, and the chance isn't that low considering his disposability. However, the [[Aku Altar (Enemy Base)|Aku Altar]] present in many such stages places a major handicap on Li'l Dark's stats, and his range continues to hinder his utility. '''Attack Buff''' and '''HP Buff''' can't do much to help with his low stats, and '''Resist Surge''' is equally pointless, as he doesn't have the health to tank any Surges.
+
+==='''Orb'''===
+Li'l Dark Cat has too low stats to make an effect orb do anything of note.
+Death Mini-Surge or Single Surge Counter can give him a slight use to freeze crowds of Angels and Aku, but it's quite inconsistent, and you'd probably get better results from something else.
+
+Resist Surge could see use when paired with the Target Aku and Resist Surge Talents, though that would be a large investment for a weaker Cactus.
+
+{{Job|Classification = Meatshield & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Attack of the Li'ls|Unit Speed Up (M)|Li'l Cat|Li'l Tank Cat|Li'l Axe Cat|Li'l Gross Cat|Li'l Cow Cat|jpname=進撃のちびネコ}}
+|{{CatCombo|Brave Cutter|Unit Attack Up (Sm)|Power Cutter Cat|Li'l Brave Cat|jpname=ユウチョキン}}
+|{{CatCombo|Micro Fighters|"Strong" Effects Up (Sm)|Li'l Brave Cat|Thor Cat|jpname=ミクロファイター}}
+|{{CatCombo|Dark Contract|Starting Money Up (L)|Illusory Guardian Vega|Dark Lazer|Li'l Dark Cat|Assassin BearCat|jpname=闇を秘めし契約者}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 211
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni211 f00.png
+|Image2 = Uni211 c00.png
+|Image3 = Uni211 s00.png
+|Name1 = Li'l Axe Cat
+|Desc1 = A tiny guy with dreams of becoming that<br>combat maniac who's strong against Red.
+|Name2 = Li'l Brave Cat
+|Desc2 = A tiny guy with dreams of becoming that<br>hero wannabe who's strong against Red.
+|Name3 = Li'l Dark Cat
+|Desc3 = A tiny guy with dreams of becoming that<br>decent dark knight wannabe Cat.<br>Mighty power against Angels.
+|Name1 (JP) = ちびバトルネコ (Chibi Batoru Neko, Chibi Battle Cat)
+|Desc1 (JP) = 戦闘向きのキャラ<br>を目指して成長中のちびにゃんこ<br>｢赤い敵｣にめっぽう強い
+|Transl1 (JP) = A tiny Cat growing up with dreams of<br>becoming a battle-crazed character.<br>Strong against "Red enemies"
+|Name2 (JP) = ちび勇者ネコ (Chibi Yūsha Neko, Chibi Brave Cat)
+|Desc2 (JP) = 勇者にあこがれる戦闘向きのキャラ<br>を目指して成長中のちびにゃんこ<br>｢赤い敵｣にめっぽう強い
+|Transl2 (JP) = A tiny Cat growing up with dreams of becoming<br>a battle-crazed character, longing to be a hero.<br>Strong against "Red enemies"
+|Name3 (JP) = ちび暗黒ネコ (Chibi Ankoku Neko, Chibi Dark Cat)
+|Desc3 (JP) = 成長してモンスターハントに<br>憧れるようになった戦闘向きのちびにゃんこ<br>天使にめっぽう強い
+|Transl3 (JP) = A tiny battle-crazed Cat who grew up<br>and started longing for a monster hunt.<br>Strong against Angels.
+|Name1 (TW) = 小小戰鬥貓
+|Desc1 (TW) = 目標是可以成為<br>戰鬥型的角色<br>善於攻擊「紅色敵人」
+|Name2 (TW) = 小小勇者貓
+|Desc2 (TW) = 目標是可以成為<br>他崇拜勇者的戰鬥型角色<br>善於攻擊「紅色敵人」
+|Name3 (TW) = 小小暗黑貓
+|Desc3 (TW) = 成長後轉為崇拜怪物獵人<br>的戰鬥型小貓<br>善於攻擊天使敵人
+|Name1 (KR) = 꼬맹이 배틀 고양이
+|Desc1 (KR) = 전투용 캐릭터<br>를 목표로 성장 중인 꼬맹이 냥코<br>빨간 적에 엄청 강하다
+|Name2 (KR) = 꼬맹이 용사 고양이
+|Desc2 (KR) = 용사를 동경하는 전투용 캐릭터<br>를 목표로 성장 중인 꼬맹이 냥코<br>빨간 적에 엄청 강하다
+|Name3 (KR) = 꼬맹이 암흑 고양이
+|Desc3 (KR) = 성장하여 몬스터 헌터를 동경하게 된<br>전투형 꼬맹이 냥코<br>천사에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 200¢
+*Chapter 2: 300¢
+*Chapter 3: 400¢
+{{Upgrade Cost|MIX
+|0
+|630
+|1,260
+|2,100
+|3,150
+|4,410
+|5,880
+|7,560
+|9,450
+|11,550
+|840
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Axe Cat
+|Normal Base HP = 80
+|Normal Base AP = 25
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 19
+|Normal Attack Length = 16
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 200
+|Normal Recharge = 210
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Li'l Brave Cat
+|Evolved Base HP = 80
+|Evolved Base AP = 25
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 19
+|Evolved Attack Length = 16
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 200
+|Evolved Recharge = 210
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|True Name = Li'l Dark Cat
+|True Base HP = 400
+|True Base AP = 50
+|True Range = 150
+|True Foreswing = 8
+|True Attack Cooldown = 19
+|True Attack Length = 16
+|True Speed = 10
+|True KB = 3
+|True Cost = 200
+|True Recharge = 300
+|True Attack Type = Single
+|True Targets = Angel
+|True Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+60
+|Scaling = 20x6,10x14
+|Orb = true
+|validation = on
+|val-Normal-Health = 80 HP
+|val-Normal-Attack Power = 25 damage<br>(27.78 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 27f <sub>0.9 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 7 ~ 2 seconds
+|val-Normal-MaxHP = 1,360 HP
+|val-Normal-MaxAttack = 425 damage<br>(472.22 DPS)
+|val-Evolved-Health = 1,360 HP
+|val-Evolved-Attack Power = 425 damage<br>(472.22 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 27f <sub>0.9 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 7 ~ 2 seconds
+|val-True-Health = 6,800 HP
+|val-True-Attack Power = 850 damage<br>(944.44 DPS)
+|val-True-Attack Range = 150
+|val-True-Attack Frequency = 27f <sub>0.9 seconds</sub>
+|val-True-Movement Speed = 10
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-True-Recharge Time = 10 ~ 2 seconds
+}}
+
+==Talents==
+''Accessible at level '''30'''''
+
+*'''Target [[:Category:Aku Enemies|Aku]]''' (Cost: 75 NP)
+*'''[[Freeze|Freeze]]''': Adds a 20% chance to freeze for 24f <sup>0.8s</sup>, improves by 4f <sup>0.13s</sup> per level up to 60f <sup>2s</sup> (Total Cost: 165 NP)
+*'''[[Special Abilities#Resist|Resist Surge]]''': Reduces surge damage by 5% per level up to 50% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 125 NP)
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni211 f00}}
+
+==Trivia==
+*Li'l Dark Cat's equipment is based on the [[wikia:monsterhunter:Catspaw|Catspaw]] weapon from the ''Monster Hunter'' series. His Japanese description alludes to this by saying he wants to go on a monster hunt.
+
+==Reference==
+*https://battlecats-db.com/unit/212.html
+
+----
+{{CatNav|Li'l Tank Cat|The White Rabbit}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Li'l Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats requiring Awakening for True Form]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Talents]]
+[[Category:Anti-Aku Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Resist Surge Cats]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]

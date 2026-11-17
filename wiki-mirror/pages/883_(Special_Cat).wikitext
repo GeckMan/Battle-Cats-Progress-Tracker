@@ -1,0 +1,92 @@
+{{LimitedContent}}
+'''883-1''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Catnip Challenges]] during the [[Anniversary/14th Year|14th Anniversary]]. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Cat Info
+|ID = 883
+|rarity = EX
+|name1 = 883-1
+|name2 = 883-2
+}}
+
+==Evolution==
+Evolves into '''883-2''' at level 10.
+
+==Strategy/Usage==
+High standing range and good anti-[[:Category:Floating Enemies|Floating]] crowd-control, 883-2 is fairly decent in the early-midgame. She can be stacked to permanently [[Weaken]] [[Teacher Bun Bun]] variants, and pierces all the way up to 733 range via guaranteed level 3 [[Wave Attack#Mini-Waves|Mini-Waves]], allowing 883-2 to easily snipe incoming threats from a distance. That said, she loses much of her viability the moment Bun Buns stop being threats, and somewhere along the line she's rendered obsolete by [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]], which doesn't bode well.
+
+{{Job|Classification = Crowd-Controller & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 883
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni883 f00.png
+|Image2 = Uni883 c00.png
+|Name1 (JP) = 監獄ネコガール (Kangoku Neko Gāru, Prisoner Girl Cat)
+|Desc1 (JP) = 監獄で一番かわいいと評判のネコ<br>とびきりの愛嬌で怖い看守さえも魅了する<br>たまに浮いてる敵の攻撃力を下げ、小波動を放つ
+|Name2 (JP) = 脱獄ネコガール (Datsugoku Neko Gāru, Jailbreak Girl Cat)
+|Desc2 (JP) = 最新の美容医療を受けるため脱獄を決意したネコ<br>計画や準備などは仲間のネコにおまかせ<br>たまに浮いてる敵の攻撃力を下げ、小波動を放つ
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = 883-1
+|Normal Base HP = 400
+|Normal Base AP = 80
+|Normal Range = 320
+|Normal Foreswing = 54
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 129
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 600
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Special Abilities#Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub>
+|Evolved Name = 883-2
+|Evolved Base HP = 450
+|Evolved Base AP = 100
+|Evolved Range = 320
+|Evolved Foreswing = 54
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 129
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Special Abilities#Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni883 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/884.html
+
+----
+{{CatNav|882-1|884-1}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Mini-Wave Cats]]
+[[Category:Cats with Weaken ability]]

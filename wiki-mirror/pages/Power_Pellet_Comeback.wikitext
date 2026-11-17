@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Doge Dark|Inky Doge|Gory Dark|Kang Roo|Blinky Kory}}
+'''Power Pellet Comeback''' is the fifth stage in [[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]].
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn271 04 c en.png]]
+|stage location = [[File:Mapname271 c en.png]]
+|energy = 110
+|enemy castle hp = 120,000 HP
+|enemies = {{Magnification|Doge Dark|100%
+|Inky Doge|2,000%
+|Gory Dark|100%
+|Kang Roo|400%}}
+|boss = {{Magnification|Blinky Kory|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1 (40%)<br>
+- [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +2 (60%)
+|XP = 3,300 XP
+|width = 3,800
+|max enemies = 12
+|jpname = The Tables Have Turned! Power Cookie
+|script = 形勢逆転！パワークッキー
+|romaji = Keisei Gyakuten！Pawā Kukkī
+|star = 1
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]]
+|difficulty = ★5
+|prev stage = [[High Score Fruit]]
+|next stage = [[Ghosts on the Run]]<br>
+[[Bonus Stage]] (''Continuation Stage'', 10%)
+}}
+
+==Battleground==
+*3 [[Doge Dark]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*5 [[Inky Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Gory Dark]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Blinky Kory]] spawns as the boss.
+**Infinite [[Inky Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**1 [[Kang Roo]] spawns after 13.33 seconds<sup>400f</sup>.
+**1 [[Gory Dark]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+Blinky Kory is not a formidable enemy here, as his [[Mini-Wave]]s can be tanked easily by [[Fish Cat (Normal Cat)|Whale Cat]] and don't deal enough damage to bother sturdier meatshields like [[Tank Cat (Normal Cat)|Wall Cat]]. Simply use [[Valkyrie Cat (Special Cat)|True Valkyrie Cat]] to clear the way for your Whales to wreak havoc.
+
+==Reference==
+*https://battlecats-db.com/stage/s02271-05.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}

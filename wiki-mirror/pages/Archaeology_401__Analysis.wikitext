@@ -1,0 +1,61 @@
+{{EnemiesAppearing|Baa Baa|Wild Doge|Mooth|Ragin' Gory|Angelic Beast Rajakong|Dark Emperor Nyandam|Infernal Pegasus Deonil}}
+'''Archaeology 401: Analysis''' is the fourth and final stage in [[Empress' Excavation 4]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn280 03 s en.png]]
+|stage location = [[File:Mapname280 s en.png]]
+|energy = 100
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Baa Baa|4,000%
+|Wild Doge|200%
+|Mooth|4,000%
+|Ragin' Gory|100%
+|Angelic Beast Rajakong|100%
+|Dark Emperor Nyandam|2,800%}}
+|boss = {{Magnification|Infernal Pegasus Deonil|100%}}
+|treasure = - [[Ancient Egg: N005 (Special Cat)|Ancient Egg: N005]] (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 5,300
+|max enemies = 15
+|jpname = Ancient Survey Ⅳ Analysis
+|script = 遺物調査Ⅳ分析
+|romaji = Ibutsu Chōsa Ⅳ Bunseki
+|star = 1
+|event-chapter = [[Empress' Excavation 4]]
+|max clears = 1
+|difficulty = ★11
+|prev stage = [[Archaeology 401: Results]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*Infinite [[Baa Baa]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*8 [[Wild Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*6 [[Mooth]]s spawn after 10 seconds<sup>300f</sup>, delay 50~53.33 seconds<sup>1,500f~1,600f</sup>.
+*3 [[Ragin' Gory|Ragin' Gories]] spawn after 43.33 seconds<sup>1,300f</sup>, delay 73.33~76.67 seconds<sup>2,200f~2,300f</sup>.
+*1 [[Angelic Beast Rajakong]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*1 [[Dark Emperor Nyandam]] spawns after 63.33 seconds<sup>1,900f</sup>.
+*1 [[Infernal Pegasus Deonil]] spawns as the boss after 80 seconds<sup>2,400f</sup>.
+*When the base reaches 75% HP:
+**2 [[Wild Doge]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**2 [[Ragin' Gory|Ragin' Gories]] spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+
+==Strategy==
+Even with the use of [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]], killing Rajakong in the 34 second time span before Deonil appears is near impossible, and dealing with both of them at the same time is an arduous task. Instead, a rush approach to the stage is recommended.
+
+Kill the first Wild Doge as fast as possible and take on the first Mooth using [[Swimmer Cat (Super Rare Cat)|Fishman Cat]], then use that money to summon [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] ([[Explosion]] [[Talent]] highly recommended). Deploy all the support you can fit in the 15 cat limit to take on the base as fast as possible. Rajakong will still spawn, but should be stalled behind the base with [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]], [[Stone Cat (Rare Cat)|Boulder Cat]], or other fast meatshields until Bahamut can finish the stage. It may take a few tries but this approach should make the stage much easier.
+
+If you still decide on fighting Rajakong and Deonil, [[Rocker Cat (Rare Cat)|Ramen Cat]] at high levels and/or with Research [[Cat Combo]]s is mandatory, the same can be said about Mushroom Cat and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], as they are needed to take down the main threats of the stage. [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] can deal with Ragin' Gory.
+
+==Reference==
+*https://battlecats-db.com/stage/s01280-04.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

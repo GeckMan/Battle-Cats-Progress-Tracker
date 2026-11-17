@@ -1,0 +1,115 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Neko-Musume (Enemy)]].''
+'''Neko-Musume''' is a [[:Category:Rare Cats|Rare Cat]] that was introduced in [[Version 8.5 Update|Version 8.5]] and can be dropped from any stage in [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event#Yuru-i! Neko-Musume Attacks!|Yuru-i! Neko-Musume Attacks!]] during the [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event]].
+
+{{Cat Info
+|ID = 480
+|rarity = RR
+|name1 = Neko-Musume
+|name2 = Cat Neko-Musume
+}}
+
+==Evolution==
+Evolves into '''Cat Neko-Musume''' at level 10.
+
+==Strategy/Usage==
+With an outstandingly long recharge time and range that hardly outranges anything, Neko-Musume is a complete mess of a unit. None of her stats stand out to give her an actual role, and if they did, her cooldown virtually shuts down any idea of using her. [[Titan Cat (Normal Cat)|Titan Cat]] is superior to her by all means outside of speed due to generally higher stats and a more tolerable cooldown.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 480
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni480 f00.png
+|Image2 = Uni480 c00.png
+|Name1 (JP) = ねこ娘 (Neko Musume, Cat Girl)
+|Desc1 (JP) = ゆるゲゲから参戦！<br>普段は人間社会にとけこむ人の姿をしたネコの妖怪
+|Transl1 (JP) = Joining the war from YuruGeGe!<br>A cat yokai that usually takes the form of a person who blends in with human society
+|Name2 (JP) = ネコねこ娘 (Neko Neko Musume, Cat Cat Girl)
+|Desc2 (JP) = ゆるゲゲから参戦！<br>手なずけたボス猫とともに日光浴スポットを探す<br>範囲攻撃を取得
+|Transl2 (JP) = Joining the war from YuruGeGe!<br>Looking for a sunbathing spot with her tamed boss cat<br>Gains Area Attack
+}}
+
+==Cost==
+*Chapter 1: 660円
+*Chapter 2: 990円
+*Chapter 3: 1,320円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Neko-Musume
+|Normal Base HP = 1000
+|Normal Base AP = 320
+|Normal Range = 160
+|Normal Foreswing = 13
+|Normal Attack Cooldown = 51
+|Normal Attack Length = 28
+|Normal Speed = 15
+|Normal KB = 2
+|Normal Cost = 660
+|Normal Recharge = 2250
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Cat Neko-Musume
+|Evolved Base HP = 1300
+|Evolved Base AP = 420
+|Evolved Range = 160
+|Evolved Foreswing = 14
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 31
+|Evolved Speed = 15
+|Evolved KB = 2
+|Evolved Cost = 660
+|Evolved Recharge = 2250
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 320 damage<br>(150 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 64f <sub>2.13 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 13f <sup>0.43s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Normal-Recharge Time = 75 ~ 66.2 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 5,440 damage<br>(2,550 DPS)
+|val-Evolved-Health = 22,100 HP
+|val-Evolved-Attack Power = 7,140 damage<br>(2,580.72 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 14f <sup>0.47s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 75 ~ 66.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni480 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/481.html
+
+----
+{{CatNav|Gummy Cat|Doktor Heaven}}
+----
+
+{{Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]

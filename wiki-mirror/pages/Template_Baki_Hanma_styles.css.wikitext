@@ -1,0 +1,10 @@
+.ranger-navbox.baki {
+	--bg-navbox-title: linear-gradient(to right, hsl(356, 97%, 44%) 0%, hsl(354, 100%, 45%) 100%);
+	--bg-sub-table-title: hsl(8, 33%, 14%);
+	--bg-group-name: hsl(352, 94%, 32%);
+
+	--sub-title-color: hsl(0, 0%, 85%);
+	--group-color: hsl(0, 0%, 100%);
+}
+
+/* [[Category:Template stylesheets]] */

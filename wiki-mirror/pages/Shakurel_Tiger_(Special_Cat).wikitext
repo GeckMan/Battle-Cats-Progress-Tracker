@@ -1,0 +1,119 @@
+{{ENExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Shakurel Tiger (Enemy)]].''
+'''Shakurel Tiger''' is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 8.8 Update|Version 8.8]] and can be unlocked by purchasing a special sale which contains Shakurel Tiger and 400 [[Cat Food]] during the [[Shakurel Planet Collaboration Event]].
+
+{{Cat Info
+|ID = 499
+|rarity = EX
+|name1 = Shakurel Tiger
+|name2 = Shakurel Tiger CC
+}}
+
+==Evolution==
+Evolves into '''Shakurel Tiger CC''' at level 10.
+
+==Strategy/Usage==
+Although his attack power looks promising, it is severely hindered by his high recharge time, lacking HP, and low range. Early game he can find a use but he quickly falls off after EoC. It's barrier break is completely rendered useless by it's low range and proc chance as well, so overall this unit's only use is filling user rank.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 499
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni499 f00.png
+|Image2 = Uni499 c00.png
+|Name1 = Shakurel Tiger
+|Desc1 = Joining the fight from Shakurel Planet!<br>I would have liked to grow wings, but<br>instead I evolved a powerful chin.
+|Name2 = Shakurel Tiger CC
+|Desc2 = Joining the fight from Shakurel Planet!<br>Hey, where are the stripes on my jaw?!<br>Can't those Cats do anything right?
+|Name1 (TW) = 戽斗老虎
+|Desc1 (TW) = 從戽斗星球來參戰！<br>如下巴添翼！
+|Name2 (TW) = 戽斗老虎CC
+|Desc2 (TW) = 從戽斗星球來參戰！<br>煩惱下巴沒有紋路，<br>每週找貓咪商量3次
+|Name1 (KR) = 주걱턱 호랑이
+|Desc1 (KR) = 주걱턱 행성에서 참전!<br>호랑이에 날개가 아니라 호랑이에 주걱턱!
+|Name2 (KR) = 주걱턱 호랑이CC
+|Desc2 (KR) = 주걱턱 행성에서 참전!<br>턱에 줄무늬가 없는 게 고민<br>주 3회 고양이와 상담하고 있다
+}}
+
+==Cost==
+*Chapter 1: 750¢
+*Chapter 2: 1,125¢
+*Chapter 3: 1,500¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shakurel Tiger
+|Normal Base HP = 1550
+|Normal Base AP = 375
+|Normal Range = 160
+|Normal Foreswing = 19
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 28
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 750
+|Normal Recharge = 1120
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]<br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Shakurel Tiger CC
+|Evolved Base HP = 2100
+|Evolved Base AP = 500
+|Evolved Range = 160
+|Evolved Foreswing = 19
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 28
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 750
+|Evolved Recharge = 1120
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]<br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,550 HP
+|val-Normal-Attack Power = 375 damage<br>(193.97 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 19f <sup>0.63s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Normal-Recharge Time = 37.33 ~ 28.53 seconds
+|val-Normal-MaxHP = 26,350 HP
+|val-Normal-MaxAttack = 6,375 damage<br>(3,297.41 DPS)
+|val-Evolved-Health = 35,700 HP
+|val-Evolved-Attack Power = 8,500 damage<br>(4,396.55 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 19f <sup>0.63s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Evolved-Recharge Time = 37.33 ~ 28.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni499 f00}}
+
+----
+{{CatNav|Shakurel Lion|Shakurel Panda}}
+----
+
+{{Shakurel Planet}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Barrier Breaker Cats]]
+[[Category:Wave Attack Cats]]

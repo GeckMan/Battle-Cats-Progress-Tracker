@@ -1,0 +1,293 @@
+[[File:Voli.gif|center]]
+'''Voli''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] added in [[Version 6.9 Update|Version 6.9]] obtainable via the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|ELEMENTAL PIXIES]] gacha event. [[True Form]] added in [[Version 8.8 Update|Version 8.8]] increases health, attack power and gains extra [[Freeze|freeze]] time. [[Ultra Form]] added in [[Version 15.7 Update|Version 15.7]] further increases health and attack power, marginally shortens attack frequency and backswing, and grants [[Multi-Hit]], [[Long Distance]] and [[Immune to Drain|Drain Immunity]]. [[Talents]] were added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 401
+|rarity = UR
+|name1 = Voli
+|name2 = Volta
+|name3 = Gigavolta
+|name4 = Teravolta
+}}
+
+==Evolution==
+Evolves into '''Volta''' at level 10.
+
+Evolves into '''Gigavolta''' at level 30 using [[Catfruit]] and XP.
+
+Evolves into '''Teravolta''' at level 60 using [[Behemoth Stone]]s, [[Catfruit]], and XP.
+
+==Strategy/Usage==
+A very solid anti-Alien crowd-controller, Voli can be stacked to easily perma[[Freeze|freeze]] Aliens which is super useful for both [[Into the Future]] and [[Cats of the Cosmos]]. Volta gains the extra damage but cannot easily permafreeze them as efficiently as the first form. Voli can be super useful in stages like [[The Wormhole Opens (Deadly)|The Wormhole Opens]], as permafreezing is easy with this cat. [[Black Hole Rising (Insane)|Black Hole Rising]] is another Cyclone Stage where Voli does extremely well. Its Evolved Form works excellently with [[Surfer Cat (Super Rare Cat)|Seafarer Cat]], and both can Freeze Alien enemies to a point where they are non-threats, however oftentimes Seafarer alone can be enough, so think carefully about whether spending the extra slot for Voli is worth it.
+
+==='''True Form'''===
+Gigavolta improves just enough to justify getting this True Form if you need it. The HP and Damage buffs are fairly inconsequential on a crowd-controller like it; whether Gigavolta deals 4.2k or 5.6K DPS, it hardly changes noteworthy interactions. However, its Freeze uptime is upgraded from ~50% to ~61% (~60 to ~74% with [[Fruit Treasures]]), which is the most noteworthy improvement, and is definitely noticeable in application. If you genuinely need it to be a better anti-Alien CC, Gigavolta could be a bang for your buck.
+
+==='''Ultra Form'''===
+Teravolta gains a two-part Long Distance [[Multi-Hit]] that extends its effective reach up to 520 range on second hit, at the cost of a small blind spot. This actually boosts its Freeze's uptime all the way up to ~85% for targets struck by both attacks, though they only overlap from 270-371 range. This means it can finally reach a 100% Freeze uptime on Aliens when aided by a few Freeze Up [[Cat Combo]]s. Teravolta also gains even more HP and Damage buffs, bringing it in line with late game Uber standards; while they're a welcome improvement, its stats are still not a very outstanding quality, especially given its mediocre standing range. While the unit appears "okay" in a vacuum, it's good to consider that most stages at this point in the game are littered with volatile enemies that have the potential to completely deny Teravolta's effective usage. It cannot withstand even a light tap from many non-targets in endgame, and it lacks any resistances to pierce whatsoever, rendering this poor pixie a sitting duck to any enemy looking to pick a fight from afar. A hyper-specialist crowd-controller with no other remarkable attributes is ill-suited to contend for your precious [[Catseye|Dark Catseyes]] and [[Catfruit|Behemoth Stones]] when many better Ultra Form options are usually readily available. Only truly invest if you have spare [[Catseye|Dark Catseyes]] leftover and unlocked the Ultra Forms and Ultra Talents of units with higher priority. 
+
+[[Immune to Drain|Drain Immunity]] is also a wash since Teravolta lacks Sage Slayer, leaving the unit fairly vulnerable against [[Sage of Selection Darvin]] in [[Endless Forms Most Beautiful]]. It can help during the [[Commander Ostromeda]] phases of the fight, since Teravolta will be off cooldown every cycle thanks to the immunity, but that's really all it does.
+
+==='''Talents'''===
+Gigavolta gets various immunities for his Talents. As a result, they only improve very specific interactions and tend to do absolutely nothing for most others. They are generally not recommended as a result, but unlocking all three of them notably counters [[Haniwanwan]] and [[Golem Sunfish]] for whatever that's worth.
+
+'''[[Immune to Curse]]''' is intended to help in mixed Relic stages, however, the best solution to avoid getting Cursed is to avoid taking damage entirely. In Gigavolta's case, the Relics that already outrange him are butchering him too quickly for the immunity to realistically matter, which makes this Talent only really good as safety net if it's struck by a hurdling [[Sir Rel]]. For 100 NP, a situational safety net like this is not worth it. The most notable use case for this Talent outside of Relics is in Endless Forms Most Beautiful, where Teravolta retains its anti-Alien abilities against Sage of Selection Darvin.
+
+'''[[Immune to Slow]]''' makes it so you don't need to time it against [[Queen B]], [[Croakley]], and [[Crustaceous Scissorex]]. Truthfully, he has enough speed for this investment to simply be unnecessary in most situations. There are a few niche enemies that it could help against, namely in [[Great Angel Chibinel]] and [[Super Hyppoh]], but these aren't relevant enough to reasonably consider.
+
+'''[[Immune to Freeze]]''' is a much more oppressive ability than Slow, and actually has a good set of matchup improvements to make it potentially worth unlocking in dire straits. It completely counters [[I.M. Phace]], [[Maawth]], and [[Henry]] even when tanking direct hits. In spite of it being Gigavolta's best immunity, it does not justify its NP cost when planning around said problematic enemies usually suffices well enough.
+
+'''Attack Buff''' and '''Defense Buff''' are not very worthwhile if you're not planning on unlocking Gigavolta's Ultra Form, since its stats still leave plenty to be desired after the hefty NP sink. Even with the Ultra Form where its stats improve considerably, you're probably better off spending the NP somewhere else.
+
+{{Job|Classification = Crowd-Controller|UltraClass = Crowd-Controller & Sniper}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|High Voltage|Unit Speed Up (Sm)|Voli|Catway|jpname=暴走高圧バッテリー}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 401
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni401 f00.png
+|Image2 = Uni401 c00.png
+|Image3 = Uni401 s00.png
+|Image4 = Uni401 u00.png
+|Name1 = Voli
+|Desc1 = Cosmic thunder, brought to life!<br>Summons lightning for a chance<br>to Freeze Aliens with Area attacks.
+|Name2 = Volta
+|Desc2 = With lightning that rends the sky,<br>it annihilates enemy Barriers. Tough vs.<br>Aliens, Freezes with Area attacks.
+|Name3 = Gigavolta
+|Desc3 = A mighty spirit who channels power from the<br>storm that will eventually consume the cosmos.<br>Tough vs. Aliens, 100% chance to Freeze.
+|Name4 = Teravolta
+|Desc4 = Supreme lightning spirit wielding the universe's energy.<br>The blinding flash illuminates the darkest depths of space!<br>Tough vs./Freezes Aliens and breaks Barriers.
+|Name1 (JP) = 雷の精霊ボルト (Kaminari no Seirei Boruto, Lightning Spirit Volt)
+|Desc1 (JP) = 宇宙の果てからやって来た雷の精霊<br>降り立った星に雷の源を宿すと言われている<br>たまにエイリアンの動きを止める
+|Transl1 (JP) = The spirit of lightning who came from the edges of the universe<br>It is said that the planets it visits bear origins of lightning<br>Occasionally stops the movement of Aliens
+|Name2 (JP) = 天雷の精霊ピカボルト (Tenrai no Seirei Pikaboruto, Thunder Spirit Pikavolt)
+|Desc2 (JP) = 月を引き裂くほどの迅雷を操る精霊<br>荒れ狂うイカヅチはバリアをも貫く力を持つ<br>エイリアンに打たれ強く、動きを必ず止める
+|Transl2 (JP) = A spirit wielding lightning strong enough to tear apart the moon<br>The raging lightning bolts even have the power to penetrate Barriers<br>Tough against Aliens, guaranteed to stop their movement
+|Name3 (JP) = 天雷の精霊王ギガボルト (Tenrai no Seirei-Ō Gigaboruto, Thunder Spirit King Gigavolt)
+|Desc3 (JP) = 宇宙の果てまで照らす強大な力を持つ迅雷の精霊王<br>宇宙を横断する雷光はバリアを貫く力を持ち<br>エイリアンに打たれ強く、動きを必ず止める
+|Transl3 (JP) = The thunder spirit king possessing the power to even illuminate the entire universe<br>Its lightning bolts that flash across space can penetrate barriers<br>Tough against Aliens, guaranteed to stop their movement
+|Name4 (JP) = 天雷の大精霊テラボルタ (Tenrai no Daiseirei Teraboruta, Great Thunder Spirit Teravolta)
+|Desc4 (JP) = 雷の力を司る大精霊。全宇宙のエネルギーを集約した<br>雷光は宇宙空間をあまねく照らす。エイリアンに<br>打たれ強く、動きを必ず止めバリアを貫く
+|Transl4 (JP) = Great spirit who controls the power of lightning. Illuminates the depths of space<br>with lightning concentrated from the energy of the entire universe.<br>Tough against Aliens, guaranteed to stop their movement and penetrate Barriers
+|Name1 (TW) = 雷精靈波特
+|Desc1 (TW) = 來自宇宙盡頭的雷精靈<br>據説每個星球的第一道雷都是其帶來的<br>有時候會讓異星戰士動作停止
+|Name2 (TW) = 天雷精靈皮卡波特
+|Desc2 (TW) = 執掌著勢如劈月的迅雷<br>其狂暴的閃電能破壞護盾<br>對上異星戰士很耐打，必定能使其動作停止
+|Name3 (TW) = 天雷精靈王基加波特
+|Desc3 (TW) = 照亮宇宙盡頭持有強大力量的迅雷精靈王<br>跨越宇宙的雷光擁有破壞護盾的力量<br>對上異星戰士很耐打，必定能使其動作停止
+|Name4 (TW) = 天雷大精靈泰拉波特
+|Desc4 (TW) = 執掌雷電力量的大精靈。將以全宇宙的能量<br>凝聚而成的雷光照耀整個宇宙。對上異星戰士<br>很耐打，必定使其動作停止，還能破壞護盾
+|Name1 (KR) = 번개의 정령 볼트
+|Desc1 (KR) = 우주에서 온 번개의 정령<br>내려선 별에 번개의 근원을 불어넣는다고 한다<br>가끔 에이리언의 움직임을 멈춘다
+|Name2 (KR) = 벼락의 정령 피카볼트
+|Desc2 (KR) = 달을 두 동강 낼 정도의 벼락을 다루는 정령<br>무섭게 내리꽂는 벼락은 베리어도 뚫어버리는 힘을 가졌다<br>에이리언에 맷집이 좋고 반드시 움직임을 멈춘다
+|Name3 (KR) = 벼락의 정령왕 기가볼트
+|Desc3 (KR) = 우주의 끝까지 비추는 강력한 힘을 가진 벼락의 정령왕<br>우주를 횡단하는 번개는 베리어도 뚫어버리는 힘을 가졌다<br>에이리언에 맷집이 좋고 반드시 움직임을 멈춘다
+|Name4 (KR) = 벼락의 대정령 테라볼타
+|Desc4 (KR) = 벼락의 힘을 관장하는 대정령. 온 우주의 에너지를 집약한 뇌광은<br>한 점의 어둠도 남기지 않고 우주 공간을 비춘다. 에이리언에<br>맷집이 좋고 반드시 움직임을 멈추며 베리어를 뚫어버린다
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 750¢
+*Chapter 2: 1,125¢
+*Chapter 3: 1,500¢
+
+===Evolved/True/Ultra Form===
+*Chapter 1: 2,550¢
+*Chapter 2: 3,825¢
+*Chapter 3: 5,100¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Voli
+|Normal Base HP = 1100
+|Normal Base AP = 775
+|Normal Range = 320
+|Normal Foreswing = 60
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 101
+|Normal Speed = 15
+|Normal KB = 3
+|Normal Cost = 750
+|Normal Recharge = 750
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Warp}} [[Immune to Warp]]
+|Evolved Name = Volta
+|Evolved Base HP = 2600
+|Evolved Base AP = 1475
+|Evolved Range = 370
+|Evolved Foreswing = 60
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 101
+|Evolved Speed = 20
+|Evolved KB = 3
+|Evolved Cost = 2550
+|Evolved Recharge = 2750
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Immune to Warp}} [[Immune to Warp]]
+|True Name = Gigavolta
+|True Base HP = 3200
+|True Base AP = 2000
+|True Range = 370
+|True Foreswing = 60
+|True Attack Cooldown = 119
+|True Attack Length = 101
+|True Speed = 20
+|True KB = 3
+|True Cost = 2550
+|True Recharge = 2750
+|True Attack Type = Area
+|True Targets = Alien
+|True Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 110f <sub>3.67 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Immune to Warp}} [[Immune to Warp]]
+|Ultra Name = Teravolta
+|Ultra Base HP = 3800
+|Ultra Base AP = 2000,500
+|Ultra Range = 370
+|Ultra Foreswing = 60,79
+|Ultra Attack Cooldown = 99
+|Ultra Attack Length = 111
+|Ultra Speed = 20
+|Ultra KB = 3
+|Ultra Cost = 2550
+|Ultra Recharge = 2750
+|Ultra Attack Type = Area
+|Ultra Targets = Alien
+|Ultra Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (64,000 at 60f <sup>2s</sup>, 16,000 at 79f <sup>2.63s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~371 on 1st hit, 270~520 on 2nd hit)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 110f <sub>3.67 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Immune to Warp|Immune to Drain}} [[Immune to Warp]] and [[Immune to Drain|Drain]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 1,100 HP
+|val-Normal-Attack Power = 775 damage<br>(129.89 DPS)
+|val-Normal-Attack Range = 320
+|val-Normal-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 60f <sup>2s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Normal-Recharge Time = 25 ~ 16.2 seconds
+|val-Normal-MaxHP = 18,700 HP
+|val-Normal-MaxAttack = 13,175 damage<br>(2,208.1 DPS)
+|val-Evolved-Health = 44,200 HP
+|val-Evolved-Attack Power = 25,075 damage<br>(4,202.51 DPS)
+|val-Evolved-Attack Range = 370
+|val-Evolved-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 60f <sup>2s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Evolved-Recharge Time = 91.67 ~ 82.87 seconds
+|val-True-Health = 54,400 HP
+|val-True-Attack Power = 34,000 damage<br>(5,698.32 DPS)
+|val-True-Attack Range = 370
+|val-True-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-True-Movement Speed = 20
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 60f <sup>2s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-True-Recharge Time = 91.67 ~ 82.87 seconds
+|val-Ultra-Health = 121,600 HP
+|val-Ultra-Attack Power = 80,000 damage<br>(13,483.15 DPS)
+|val-Ultra-Attack Range = 370
+|val-Ultra-Attack Frequency = 178f <sub>5.93 seconds</sub>
+|val-Ultra-Movement Speed = 20
+|val-Ultra-Knockback = 3 times
+|val-Ultra-Attack Animation = 60f <sup>2s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Ultra-Recharge Time = 91.67 ~ 82.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Volta
+|Evolved Image = Uni401 c00.png
+|True Name = Gigavolta
+|True Image = Uni401 s00.png
+|True Description = True Form evolution gains improved<br>defense and attack. Plus, increased<br>length of Freeze effect vs Alien enemies!
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x4
+|Quantity Catfruit2 = x4
+|Quantity Catfruit3 = x7
+|Quantity Catfruit4 = x3
+|Quantity Catfruit5 = x3
+|Quantity XP = 1,000,000
+|Ultra Name = Teravolta
+|Ultra Image = Uni401 u00.png
+|Ultra Description = Ultra Form evolution gains improved HP<br>and Long-Range attack!<br>Plus, gains Immunity to Drain!
+|Catfruit1 Ultra = BlueGem
+|Catfruit2 Ultra = YellowGem
+|Quantity Catfruit1 Ultra = x2
+|Quantity Catfruit2 Ultra = x1
+|Quantity XP Ultra = 2,000,000
+}}
+
+==Talents==
+*'''[[Immune to Curse|Curse Immunity]]''' (Cost: 100 NP)
+*'''[[Immune to Slow]]''' (Cost: 100 NP)
+*'''[[Immune to Freeze]]''' (Cost: 100 NP)
+*'''[[Special Abilities#Stat Enhancements|Defense Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 175 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 175 NP)
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni401 f00}}
+
+==Trivia==
+*Prior to [[Version 15.7 Update|Version 15.7]], the Freeze ability wasn't capitalized in its first two Forms' descriptions while "vs." lacked the abbreviating period in the second and third.
+*Volta's name references a famous scientist who studied electricity [[wikipedia:Alessandro Volta|Alessandro Volta]], after whom the unit of electricity "Volt" is named after.
+*Volta's Japanese name, 天雷の精霊''ピカ''ボルト (Tenrai no Seirei ''Pika''volt), references the term "Pika" which means light or electricity in the Japanese language.
+*A gigavolt is a billion Volts, referencing the True Form being more powerful than before.
+**A teravolt is a trillion Volts, referencing their Ultra Form being their most powerful form.
+*Voli is the only Pixie whose Evolved Form moves faster than its Normal Form.
+
+==Reference==
+*https://battlecats-db.com/unit/402.html
+
+----
+{{CatNav|Imoto|Shinji & Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Gacha Cats]]
+[[Category:Uber Rare Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Barrier Breaker Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]
+[[Category:Cats with Ultra Form]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with different effective ranges]]
+[[Category:Cats with Drain Immunity]]

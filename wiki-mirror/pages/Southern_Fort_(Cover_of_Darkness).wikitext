@@ -1,0 +1,50 @@
+{{DISPLAYTITLE:Southern Fort}}
+{{EnemiesAppearing|Dark Otter|Gory Dark}}
+:''Not to be confused with [[Southern Fort]].''
+'''Southern Fort''' is the fifth stage in [[Cover of Darkness]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn287 04 s en.png]]
+|stage location = [[File:Mapname287 s en.png]]
+|energy = 110
+|enemy castle hp = 300,000 HP
+|enemies = {{Magnification|Dark Otter|150%
+|Gory Dark|200%}}
+|boss = {{Magnification|Gory Dark|1%}}
+|score reward = '''3,900''': 400,000 XP<br>
+'''2,500''': 300,000 XP<br>
+'''2,100''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 3,300 XP
+|width = 5,800
+|max enemies = 40
+|jpname = South Castle
+|script = 南の城
+|romaji = Minami no Shiro
+|star = 1
+|event = [[Dark Descent Stages|Dark Descent]]
+|event-chapter = [[Cover of Darkness]]
+|max clears = 1
+|difficulty = ★7
+|prev stage = [[Western Walk (Cover of Darkness)|Western Walk]]
+|next stage = [[Northern Crater (Cover of Darkness)|Northern Crater]]
+}}
+
+==Battleground==
+*1 [[Gory Dark]] (200%) spawns after 30 seconds<sup>900f</sup>.
+*1 [[Dark Otter]] spawns after 3.33 seconds<sup>100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gory Dark]] (1%) spawns as the boss.
+**10 [[Dark Otter]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**20 [[Gory Dark]]s (200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Dark Otter]]s spawn, delay 3.33~4.67 seconds<sup>100f~140f</sup>.
+
+==Strategy==
+Standard Black Stage. Bring [[:Category:Anti-Dark Cats|anti-Dark]] Units to subdue the enemies decently quickly. Bring meatshields to prevent them from pushing, and you win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01287-05.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

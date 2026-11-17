@@ -1,0 +1,124 @@
+'''Mami Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. She was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 297
+|rarity = RR
+|name1 = Mami Cat
+|name2 = Magical Girl Mami Cat
+}}
+
+==Evolution==
+Evolves into '''Magical Girl Mami Cat''' at level 10.
+
+==Strategy/Usage==
+Magical Girl Mami Cat has the same range as [[Mer-Cat (Rare Cat)|Cameraman Cat]] and a relatively fast cooldown, however her low DPS and [[Single Attack]] render her near useless in her niche outside of early-game stages. Even enemies she can perform somewhat well against (e.g. [[Sunfish Jones]]) have better counters in her rarity, such as [[Food Stall Cat (Rare Cat)|Cafeteria Cat]] and [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]. This means she is usually only helpful for [[User Rank]] purposes.
+
+{{Job|Classification = User Rank Dump & Melee|EvolvedClass = User Rank Dump & Midranger|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 297
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni297 f00.png
+|Image2 = Uni297 c00.png
+|Name1 = Mami Cat
+|Desc1 = A wise guardian Cat who admires Magical Girls.<br>Gets excited whenever she sees a pretty ribbon.<br>Delivers massive damage to Angels.
+|Name2 = Magical Girl Mami Cat
+|Desc2 = This Magical Cat made a contract with a suspicious<br>white creature. Gets dizzy after using Tiro Finale.<br>Delivers massive damage to Angels.
+|Name1 (JP) = ネコマミ (Neko Mami, Mami Cat)
+|Desc1 (JP) = 面倒見のいい先輩魔法少女に憧れるネコ<br>リボンを見る度に飛びつきたくなる衝動を抑えている<br>天使に超ダメージを与える
+|Transl1 (JP) = A Cat who admires a caring magical girl<br>Holds back its urge to fly at ribbons every time it sees one<br>Deals Super damage to Angels
+|Name2 (JP) = 魔法少女ネコマミ (Mahō Shōjo Neko Mami, Magical Girl Mami Cat)
+|Desc2 (JP) = 怪しげな白い生き物と契約したネコ魔法少女<br>必殺技「ティロ・フィニャーレ」をお見舞いする<br>天使に超ダメージを与える
+|Transl2 (JP) = A magical girl cat who made a contract with a suspicious white creature<br>Shows off the ultimate move "Tiro Finale"<br>Deals Super damage to Angels
+|Name1 (TW) = 麻美貓
+|Desc1 (TW) = 一隻對擅長照顧後輩的學姊魔法少女有憧憬的貓咪<br>壓抑著看到緞帶就想飛出攻擊的衝動<br>可以給予天使敵人超大傷害
+|Name2 (TW) = 魔法少女麻美貓
+|Desc2 (TW) = 跟一隻詭異白色生物簽訂契約的魔法少女貓咪<br>以必殺技「Tiro Finale」痛擊對手<br>可以給予天使敵人超大傷害
+|Name1 (KR) = 고양이 마미
+|Desc1 (KR) = 후배 사랑이 넘치는 선배 마법소녀를 동경하는 고양이<br>리본을 볼 때마다 덤벼들려는 마음을 억제하고 있다<br>천사에 초 데미지를 입힌다
+|Name2 (KR) = 마법소녀 고양이 마미
+|Desc2 (KR) = 수상한 하얀색 생물과 계약을 맺은 마법소녀<br>필살기 「티로 피냥레」 로 한방 날린다<br>천사에 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 430¢
+*Chapter 2: 645¢
+*Chapter 3: 860¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mami Cat
+|Normal Base HP = 800
+|Normal Base AP = 240
+|Normal Range = 200
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 56
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 430
+|Normal Recharge = 450
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Magical Girl Mami Cat
+|Evolved Base HP = 800
+|Evolved Base AP = 240
+|Evolved Range = 250
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 75
+|Evolved Attack Length = 51
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 430
+|Evolved Recharge = 450
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 240 damage<br>(75.79 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 95f <sub>3.17 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 15 ~ 6.2 seconds
+|val-Normal-MaxHP = 13,600 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(1,288.42 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 4,080 damage<br>(1,288.42 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 95f <sub>3.17 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 15 ~ 6.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni297 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/298.html
+
+----
+{{CatNav|Sayaka Cat|Kyoko Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

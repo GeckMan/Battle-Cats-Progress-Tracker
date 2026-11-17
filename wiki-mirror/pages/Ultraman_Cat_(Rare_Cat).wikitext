@@ -1,0 +1,115 @@
+{{JPExclusive}}
+'''Ultraman Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Shin Japan Heroes Universe Collaboration Event#Rescue! Ultraman Cat|Rescue! Ultraman Cat]]. It was added in [[Version 12.2 Update|Version 12.2]].
+
+{{Cat Info
+|ID = 704
+|rarity = RR
+|name1 = Ultraman Cat
+|name2 = Shin Ultraman Cat
+}}
+
+==Evolution==
+Evolves into '''Shin Ultraman Cat''' at level 10.
+
+==Strategy/Usage==
+During the early game, this unit may be of some use against Dark enemies such as [[Doge Dark]], though such situations are sparse in the early game. After that, however, his single target and mediocre-at-best stats keep him from seeing any serious use outside of the [[Underground Labyrinth]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 704
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni704 f00.png
+|Image2 = Uni704 c00.png
+|Name1 (JP) = ウルトラマンにゃんこ (Urutoraman Nyanko, Ultraman Cat)
+|Desc1 (JP) = 憧れのヒーロー「ウルトラマン」になりきるネコ<br>外星人たちからの脅威に備え今日も自宅をパトロール<br>黒い敵に打たれ強く、超ダメージを与える
+|Transl1 (JP) = A Cat who became its admired hero "Ultraman"<br>Patrolling its home again today preparing for threats from extraterrestrial beings<br>Tough against Dark enemies, deals Super damage
+|Name2 (JP) = シン・ウルトラマンにゃんこ (Shin・Urutoraman Nyanko, True・Ultraman Cat)
+|Desc2 (JP) = 光の星からやって来た「ウルトラマン」になりたい<br>ネコ。巨大化目指して毎日手足を引っ張っている<br>黒い敵に打たれ強く、超ダメージを与える
+|Transl2 (JP) = A Cat who wants to become "Ultraman" who came from the<br>planet of light. Pulls its limbs everyday with a goal to become huge<br>Tough against Dark enemies, deals Super damage
+}}
+
+==Cost==
+*Chapter 1: 500円
+*Chapter 2: 750円
+*Chapter 3: 1,000円
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ultraman Cat
+|Normal Base HP = 250
+|Normal Base AP = 280
+|Normal Range = 325
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 89
+|Normal Attack Length = 47
+|Normal Speed = 5
+|Normal KB = 2
+|Normal Cost = 500
+|Normal Recharge = 610
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Shin Ultraman Cat
+|Evolved Base HP = 250
+|Evolved Base AP = 280
+|Evolved Range = 325
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 89
+|Evolved Attack Length = 47
+|Evolved Speed = 5
+|Evolved KB = 2
+|Evolved Cost = 500
+|Evolved Recharge = 610
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 250 HP
+|val-Normal-Attack Power = 280 damage<br>(79.25 DPS)
+|val-Normal-Attack Range = 325
+|val-Normal-Attack Frequency = 106f <sub>3.53 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 20.33 ~ 11.53 seconds
+|val-Normal-MaxHP = 4,250 HP
+|val-Normal-MaxAttack = 4,760 damage<br>(1,347.17 DPS)
+|val-Evolved-Health = 4,250 HP
+|val-Evolved-Attack Power = 4,760 damage<br>(1,347.17 DPS)
+|val-Evolved-Attack Range = 325
+|val-Evolved-Attack Frequency = 106f <sub>3.53 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 20.33 ~ 11.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni704 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/705.html
+
+----
+{{CatNav|Evangelion Cat|King of Doom Phono}}
+----
+
+{{Shin Japan Heroes Universe}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

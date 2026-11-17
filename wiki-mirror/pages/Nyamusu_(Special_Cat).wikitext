@@ -1,0 +1,117 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit, for the enemy, see [[Nyamusu (Enemy)]].''
+'''Nyamusu''' is a [[:Category:Special Cats|Special Cat]] that could be obtained from the [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru Collaboration]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Cat Info
+|ID = 262
+|rarity = EX
+|name1 = Nyamusu
+|name2 = Neko Nyamusu
+}}
+
+==Evolution==
+Evolves into '''Neko Nyamusu '''at level 10.
+
+==Strategy/Usage==
+Nyamusu is mainly a medium range attacker, with good stats for her cost. Although the lack of + levels prevents her to be on par with certain other Rare Cats, she can still be used as an extra, to aid other damage dealers on the field. Not to mention that, due to availability, this unit can be really strong early on.
+
+To make use of her freeze ability for Red enemies, mass-summon meatshields to protect her, like [[Tank Cat (Normal Cat)|Tank Cat]] or the [[Crazed Cat (Super Rare Cat)|Crazed]] [[Crazed Tank Cat (Super Rare Cat)|Cats]]. Even though [[Apple Cat (Super Rare Cat)|iCat]], who has a guaranteed freeze, exists, Nyamusu's range advantage and individual stackability make her useful in [[Legend Stages#Crown Difficulty|4 Crown]] Stories of Legend as a replacement.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 262
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni262 f00.png
+|Image2 = Uni262 c00.png
+|Name1 (JP) = ニャームス
+|Desc1 (JP) = にゃんパズルから参戦！<br>ポチと一緒にネコの国に住んでいる<br>赤い敵の動きをたまに止める(範囲攻撃)
+|Transl1 (JP) = Joined the war from NYAN puzzle!<br>Lives in a country of a cat with Pochi.<br>Red enemies movement is sometimes stopped (area attack).
+|Name2 (JP) = ネコニャームス
+|Desc2 (JP) = にゃんパズルから参戦！<br>一番好きな魚はのどぐろ<br>赤い敵の動きをたまに止める(範囲攻撃)
+|Transl2 (JP) = Joined the war from  NYAN puzzle!<br>The favorite fish is Helicolenus hilgendorfi.<br>Red enemies movement is sometimes stopped (area attack).
+}}
+
+==Cost==
+*Chapter 1: 560円
+*Chapter 2: 840円
+*Chapter 3: 1,120円
+{{Upgrade Cost|EX5}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nyamusu
+|Normal Base HP = 520
+|Normal Base AP = 240
+|Normal Range = 300
+|Normal Foreswing = 50
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 76
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 560
+|Normal Recharge = 600
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Neko Nyamusu
+|Evolved Base HP = 700
+|Evolved Base AP = 320
+|Evolved Range = 300
+|Evolved Foreswing = 50
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 76
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 560
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 520 HP
+|val-Normal-Attack Power = 240 damage<br>(48.32 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 149f <sub>4.97 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 50f <sup>1.67s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 8,840 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(821.48 DPS)
+|val-Evolved-Health = 11,900 HP
+|val-Evolved-Attack Power = 5,440 damage<br>(1,095.3 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 149f <sub>4.97 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 50f <sup>1.67s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni262 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/263.html
+
+----
+{{CatNav|Hayabusa|Pochi}}
+
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]

@@ -1,0 +1,52 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Dark Wind}}
+'''Enforcement Sistance・Turf 3000m''' is the second stage in [[JRA Collaboration Event#Kikuka Award (GI)|Kikuka Award (GI)]].
+
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn180 01 c ja.png]]
+|stage location = [[File:Mapname180 c ja.png]]
+|energy = 80
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|Dark Wind|75%}}
+|boss = {{Magnification|Dark Wind|1%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''8,000''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''7,000''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 2,400 XP
+|width = 6,000
+|max enemies = 15
+|jpname = Enforcement Sistance・Turf 3000m
+|script = 施行距離・芝3000m
+|romaji = Shikō Kyori・Shiba 3000m
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Kikuka Award (GI)|Kikuka Award (GI)]]
+|difficulty = ★3
+|prev stage = [[Conclusion of the Classic Triple Crown]]
+|next stage = [[The Strongest Horse will Win]]
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[Dark Wind]] (75%) spawns after 10 seconds<sup>300f</sup>.
+*1 [[Dark Wind]] (75%) spawns after 30 seconds<sup>900f</sup>.
+*1 [[Dark Wind]] (75%) spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Wind]] (1%) spawns as the boss.
+**5 [[Dark Wind]]s (75%) spawn, delay 4 seconds<sup>120f</sup>.
+
+==Strategy==
+A very easy stage, even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units, the enemy serves practically no threat at all.
+
+==Reference==
+*https://battlecats-db.com/stage/s02180-02.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

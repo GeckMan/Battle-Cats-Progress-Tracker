@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Glowstick Guys|Snache|Croco|Squire Rel|Hatsune Miku XVI}}
+'''A Future Born Today''' is the second stage in [[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]].
+
+{{Stage Info
+|stage name = [[File:rc138.png]]
+[[File:Mapsn210 01 c en.png]]
+|stage location = [[File:Mapname210 c en.png]]
+|energy = 75
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Glowstick Guys|100%
+|Snache|200%
+|Croco|200%
+|Squire Rel|200%}}
+|boss = {{Magnification|Hatsune Miku XVI|8%}}
+|treasure = - [[Cat Food]] +30 (100%, 1 time)
+|XP = 2,250 XP
+|width = 4,000
+|max enemies = 45
+|jpname = The Future to Be Created
+|script = これから生まれる未来
+|romaji = Korekara Umareru Mirai
+|star = 1
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]]
+|difficulty = ★3
+|prev stage = [[Virtual Singer's Journey]]
+|next stage = [[Growing Creativity]]
+}}
+
+==Battleground==
+*15 [[Glowstick Guys]] spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+*15 [[Glowstick Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*15 [[Glowstick Guys]] spawn after 20 seconds<sup>600f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*Infinite [[Glowstick Guys]] spawn after 30 seconds<sup>900f</sup>, delay 4~12 seconds<sup>120f~360f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hatsune Miku XVI (Enemy)|Hatsune Miku XVI]] spawns as the boss.
+**25 [[Snache]]s spawn, delay 1.33~4 seconds<sup>40f~120f</sup>.
+**35 [[Croco]]s spawn, delay 1~3 seconds<sup>30f~90f</sup>.
+**45 [[Squire Rel]]s spawn, delay 0.67~2 seconds<sup>20f~60f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02210-02.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

@@ -1,0 +1,64 @@
+:''Not to be confused with [[Brainwashed Fish Cat (Super Rare Cat)|Brainwashed Fish Cat]].''
+'''Malevolent Island Cat''' is an [[:Category:Aku Enemies|Aku]] enemy that appears in [[Adrift in Fear (Merciless)|The Malevolent Fish]]. It was added in [[Version 12.7 Update|Version 12.7]].
+
+{{Enemy Info
+|name = Malevolent Island Cat
+|image = E 666.png
+|first appearance = [[Adrift in Fear (Merciless)|The Malevolent Fish]]
+|money drop = 520¢ - 2,054¢
+}}
+
+==Enemy==
+This somewhat tanky enemy deals huge damage at mid-range with its rapid attacks, and its singular knockback makes it difficult to ward off. What makes it worse are its [[Counter-Surge]] and level 1 [[Death Surge]], as they're both guaranteed to hit much further than Malevolent Island Cat itself and wreck further havoc in your ranks. Combine that with any support and they're a true nightmare to behold.
+
+==Strategy==
+Alone, this enemy is not a threat. However, since it produces a guaranteed Death Surge, bringing [[:Category:Cats with Surge Immunity|Surge-immune]] meatshields like [[Ancient Egg: N003 (Special Cat)|Cat Cactus]] can help maintain the front line of support.
+
+Because of its Aku trait and lack of immunities, this enemy can be weakened thanks to a variety of crowd control effects. Notable units that match up favorably against it include [[Nymph Cat (Super Rare Cat)|Fiend Cat]] and [[Summoner Satoru (Uber Rare Cat)|Devil Hunter Satoru]], or Surge-immune attackers such as [[Talents|Talented]] [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]].
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*The Malevolent Fish: [[Adrift in Fear (Merciless)]]
+*[[Super Smash Families]]: [[Treacherous Road (Brutal)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Malevolent Island Cat
+|Health = 327000
+|Attack Power = 17750
+|Attack Range = 260
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 10
+|Backswing = 8
+|Ability = {{AbilityIcon|Death Surge}} 100% chance to create a level 1 [[Surge Attack]] between 250 and 750 range upon death<br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]] (When hit by a [[Surge Attack]], creates its own Surge of equal level and spawn range)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+666 e.png|Malevolent Island Cat's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/668.html
+
+----
+{{EnemyNav|Malevolent Flying Cat|Malevolent King Dragon Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Death Surge Enemies]]
+[[Category:Counter-Surge Enemies]]

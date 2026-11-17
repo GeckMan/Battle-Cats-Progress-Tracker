@@ -1,0 +1,88 @@
+{{EnemiesAppearing|Metal Hippoe|Metal Snache|Super Metal Hippoe|THE METAL SLOTH|Pure Gold R.Ost}}
+'''A Distant Road''' is the third and final stage in [[Silver Week]].
+
+{{Stage Info
+|stage name = [[File:rc088.png]]
+[[File:Mapsn154 02 s en.png]]
+|stage location = [[File:Mapname154 s en.png]]
+|energy = 100
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Metal Hippoe|100%
+|Metal Snache|200%
+|Super Metal Hippoe|100%
+|THE METAL SLOTH|200%
+|Pure Gold R.Ost|100%}}
+|boss = {{Magnification|Metal Snache|10%}}
+|treasure = - [[Cat Capsule#Lucky Capsules|Lucky Ticket]] +3 (100%, 1 time)<br>
+- [[Cat Capsule#Lucky Capsules|Lucky Ticket]] +3 (40%, unlimited)<br>
+- [[Cat Capsule#Lucky Capsules|Lucky Ticket]] +1 (60%, unlimited)
+|XP = 1,900 XP
+|width = 3,200
+|max enemies = 7
+|jpname = Distant Road
+|script = はるかな道
+|romaji = Harukana Michi
+|star = 1
+|event-chapter = [[Silver Week]]
+|difficulty = ★6
+|prev stage = [[Silver Anniversary]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Metal Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*2 [[Metal Hippoe]]s spawn after 30 seconds<sup>900f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*3 [[Metal Hippoe]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Metal Snache]] (10%) spawns as the boss.
+**Infinite [[Metal Snache]]s (200%) spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**1 [[Super Metal Hippoe]] spawns.
+**3 [[Metal Snache]]s (200%) spawn, delay 0.07 seconds<sup>2f</sup>.
+**1 [[THE METAL SLOTH]] spawns.
+**3 [[Metal Hippoe]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Metal Snache]]s (200%) spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Pure Gold R.Ost]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+This stage can be beaten easily with [[Catornado (Super Rare Cat)|Hurricat]] or units with guaranteed [[Critical Hit]]s. If you don't have either, [[Moneko (Special Cat)|Miss Moneko]], [[Space Cat (Rare Cat)|Major Space Cat]], [[Jurassic Cat (Rare Cat)|Jurassic Cat Sitter]] and [[Cow Cat (Normal Cat)|Lion Cat]] are still enough to beat the stage, but it could take many attempts.
+
+The main problem encountered while playing the stage is the stack of [[:Category:Metal Enemies|Metal Enemies]]. You'll need fast [[:Category:Area Attack Cats|Area Attackers]] to dispatch those Metal Hippoes and Steel Snakes, and ranged [[:Category:Critical Hit Cats|Critical Hitters]] like Major Space Cat or most of the Critical Hit [[:Category:Uber Rare Cats|Ubers]] to land hits on everything else.
+
+For those looking to farm Lucky Tickets, this stage only gets relatively quick clears with Uber Cannon Start combos such as [[Classic Headwear (Combo)|Classic Headwear]]. If one so
+happens to not have any, waiting for a different Lucky Ticket stage to appear is probably a good option.
+
+==='''Strategy 1 (20s)'''===
+{{Lineup
+|Richest Cat
+|?
+|?
+|?
+|?
+|Manic Eraser Cat
+|Boulder Cat
+|Manic Lion Cat
+|Million-Dollar Cat
+|Awakened Bahamut Cat
+|talent10 = Max Explosion, Max Move Speed Up
+|name = Manic Lion Thunderbolt + Uber Combos
+|cannon = Thunderbolt
+|notes = This only works if you have two 2-slot Cannon Start Medium combos, which are restricted to Ubers. Bahamut requires an extra hit to destroy the base if he is at level 40 compared to level 50. Green Shell Cat can be substituted instead of Manic Eraser and Manic Lion, in which case you would send it out at the same timing as Manic Lion below.
+}}
+
+Send out Million-Dollar Cat, then send out a Manic Eraser around 750c. Once the Metal Hippoe dies, immediately send out Manic Lion and fire the Thunderbolt cannon as soon as it is available. As soon as Bahamut is ready, send him out and watch him beat up the entire base instead of hitting the Metal Snaches.  The timing is a bit annoying to get right, but once you master it you should be able to very consistently clear this stage.
+
+==Walkthrough==
+{{Walkthrough
+|5yNHqw8nu2k|croso|Showcases Strategy 1
+|gnGnAMWjdSU|WaffleCat|No Ubers/Bahamut Talents, 45s
+}}
+
+==Trivia==
+*Since it's part of [[Silver Week]], A Distant Road is most likely a reference to "giniro no hanaka michi" ("a silver-colored distant road"), a lyric from the song "[https://youtu.be/zOwtTZxBaMs Giniro no Michi]" by the vocal quartet [[wikipedia:ja:ダークダックス|DARK DUCKS]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01154-03.html
+
+{{Seasonal}}
+[[Category:Silver Week Stages]]
+[[Category:Event Stages]]

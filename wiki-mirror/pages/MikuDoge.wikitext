@@ -1,0 +1,107 @@
+:''This enemy has no official name.''
+'''MikuDoge''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. It was added in [[Version 9.4 Update|Version 9.4]].
+
+{{Enemy Info
+|name = MikuDoge
+|image = E 503.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 45¢ - 177¢
+}}
+
+==Enemy==
+This enemy is a faster and stronger variant of [[Doge]] with a small chance to [[Dodge Attack|dodge attacks]] from Cat Units.
+
+==Strategy==
+Spamming meatshields against this enemy may be inadvisable as they could activate its dodge ability without dealing much damage themselves. Otherwise, treat it just as you would a regular Doge.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#Hatsune Miku|Hatsune Miku]]: [[Electric Diva]] (1%)
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+**[[in EUROPE]] (100%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Spring Popstar]] (25%)
+**[[Scent of Blossoms]] (50%)
+**[[Sakura Dance]] (100%)
+*[[Hatsune Miku Collaboration Event#SNOW MIKU|SNOW MIKU]]: [[World of Snow]] (40%)
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]]: [[Growing Creativity]] (40%)
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 2|Weekend Concert: Day 2]]: [[Dear Creators]] (250%)
+*[[Electric Diva Strikes!]]:
+**[[Electric Diva Strikes!/Song 1~20|1st Song]] (2%)
+**[[Electric Diva Strikes!/Song 1~20|2nd Song]] (5%)
+**[[Electric Diva Strikes!/Song 1~20|3rd Song]] (12%)
+**[[Electric Diva Strikes!/Song 1~20|4th Song]] (24%)
+**[[Electric Diva Strikes!/Song 1~20|5th Song]] (40%)
+**[[Electric Diva Strikes!/Song 1~20|6th Song]] (56%)
+**[[Electric Diva Strikes!/Song 1~20|7th Song]] (72%)
+**[[Electric Diva Strikes!/Song 1~20|8th Song]] (88%)
+**[[Electric Diva Strikes!/Song 1~20|9th Song]] (104%)
+**[[Electric Diva Strikes!/Song 1~20|10th Song]] (120%)
+**[[Electric Diva Strikes!/Song 1~20|11th Song]] (156%)
+**[[Electric Diva Strikes!/Song 1~20|12th Song]] (192%)
+**[[Electric Diva Strikes!/Song 1~20|13th Song]] (228%)
+**[[Electric Diva Strikes!/Song 1~20|14th Song]] (264%)
+**[[Electric Diva Strikes!/Song 1~20|15th Song]] (300%)
+**[[Electric Diva Strikes!/Song 1~20|16th Song]] (320%)
+**[[Electric Diva Strikes!/Song 1~20|17th Song]] (340%)
+**[[Electric Diva Strikes!/Song 1~20|18th Song]] (360%)
+**[[Electric Diva Strikes!/Song 1~20|19th Song]] (380%)
+**[[Electric Diva Strikes!/Song 1~20|Last Song]] (400%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/MikuMiku Music Fest|MikuMiku Music Fest]] (1%, 2%, 10%, 15%, 50%, 100%, 125%, 175%, 200%, 250%, 275%, 300%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+**[[in EUROPE]] (100%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Spring Popstar]] (25%)
+**[[Scent of Blossoms]] (50%)
+**[[Sakura Dance]] (100%)
+*[[Hatsune Miku Collaboration Event#Hatsune Miku's Birthday!|Hatsune Miku's Birthday!]]: [[♪ Birthday Party ♪]] (1%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = MikuDoge
+|Health = 3000
+|Attack Power = 1500
+|Attack Range = 110
+|Attack Type = Single
+|Time Between Attacks = 18
+|Movement Speed = 18
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 10
+|Ability = {{AbilityIcon|Dodge Attack}} 20% chance to [[Dodge Attack|dodge attacks]] from Cat Units for 30f <sub>1 second</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+503 e.png|MikuDoge's spritesheet
+IdleMikuDoge.gif|MikuDoge's moving animation
+</gallery>
+
+==Trivia==
+*This is the first enemy to have the Dodge Attack ability.
+
+==Reference==
+*https://battlecats-db.com/enemy/505.html
+
+----
+{{EnemyNav|Kagamine Rin & Len|MikuGory}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Dodge Attack ability]]
+[[Category:Single Attack Enemies]]

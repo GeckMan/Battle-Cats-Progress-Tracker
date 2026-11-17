@@ -1,0 +1,61 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Bannerman Doge|Croco|Jackie Peng|Gory|Kang Roo|Teacher Bear|Master A.}}
+:''For the [[Invasion Stage]], see [[Taka Domain/Doge's Rebellion|here]].''
+'''Taka Domain''' is the third stage in [[Road to Unification#Road to Unification Pt. 2|Road to Unification Pt. 2]].
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Mapsn388 02 s en.png]]
+|stage location = [[File:Mapname388 s en.png]]
+|energy = 130
+|enemy castle hp = 100,000 HP
+|enemies = {{Magnification|Bannerman Doge|400%
+|Croco|400%
+|Jackie Peng|400%
+|Gory|400%
+|Kang Roo|400%
+|Teacher Bear|300%}}
+|boss = {{Magnification|Master A.|100%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +260 (100%, unlimited)
+|score reward = '''7,400''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''5,500''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 2,470 XP
+|width = 4,000
+|max enemies = 10
+|jpname = High Rise Province
+|script = 高層国
+|romaji = Kōsō Koku
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 2|Road to Unification Pt. 2]]
+|difficulty = ★5
+|prev stage = [[Ocha Domain]]
+|next stage = [[Nyaku Domain]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*Infinite [[Bannerman Doge]]s spawn after 0.67 seconds<sup>20f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*10 [[Croco]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Jackie Peng]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Gory|Gories]] spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Master A.]] spawns as the boss.
+**2 [[Gory|Gories]] spawn after 26.67 seconds<sup>800f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Kang Roo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**2 [[Teacher Bear]]s spawn after 6.67 seconds<sup>200f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+
+==Strategy==
+-
+
+==Trivia==
+*Taka Domain is named after the Japanese word 高 ''taka'' (tall; high).
+
+==Reference==
+*https://battlecats-db.com/stage/s01388-03.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

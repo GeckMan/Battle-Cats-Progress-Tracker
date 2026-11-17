@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Snache|Inky Doge|Those Guys|Kang Roo|Le'boin|Pinky Bear}}
+'''Warp Tunnel's End''' is the second stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn272 01 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 40
+|enemy castle hp = 15,000 HP
+|enemies = {{Magnification|Snache|400%
+|Inky Doge|600%
+|Those Guys|400%
+|Kang Roo|200%
+|Le'boin|200%}}
+|boss = {{Magnification|Pinky Bear|100%}}
+|enemies2 = {{Magnification|Snache|600%
+|Inky Doge|900%
+|Those Guys|600%
+|Kang Roo|300%
+|Le'boin|300%}}
+|boss2 = {{Magnification|Pinky Bear|150%}}
+|score reward = '''6,500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1<br>
+'''3,200''': 40,000 XP<br>
+'''500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1
+|XP = 1,200 XP
+|width = 4,500
+|max enemies = 20
+|jpname = The Other Side of The Warp Tunnel
+|script = ワープトンネルの向こう側
+|romaji = Wāpu Tonneru no Mukōgawa
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★3
+|prev stage = [[Objects in Motion]]
+|next stage = [[Get those Ghosts]]
+}}
+
+==Battleground==
+*Infinite [[Snache]]s spawn after 5 seconds<sup>150f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*3 [[Inky Doge]]s spawn after 12 seconds<sup>360f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*5 [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Kang Roo]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Pinky Bear]] spawns as the boss.
+**5 [[Those Guys]] spawn, delay 6.67~8 seconds<sup>200f~240f</sup>.
+**1 [[Le'boin]] spawns after 6.67 seconds<sup>200f</sup>.
+**2 [[Kang Roo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**Infinite [[Inky Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-02.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

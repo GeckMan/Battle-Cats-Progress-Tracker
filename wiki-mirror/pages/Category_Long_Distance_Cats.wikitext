@@ -1,0 +1,17 @@
+These cats have a special ability called [[Long Distance]].
+
+This ability gives the unit a set distance or area which its attack affects. This value varies from each unit. It still has a "trigger range" where the unit will stop to attack.
+
+: ''Example'': [[Red Riding Mina (Special Cat)|Red Riding Mina]]'s effective range is from 300~600, but her trigger range is 435.
+
+A Long Distance cat has at least three important parameters:
+* '''Standing range''': Safety. How far the cat usually stands away from enemy units. A higher value usually means more safety for the cat when the enemy army is advancing.
+* '''Blindspot''': Unsafety. How close enemy units have to get to avoid being attacked by the cat. A lower value means more safety for the cat.
+* '''Piercing range''': Backline killing. How far into the back of the enemy line the cat unit can hit, calculated from the most up-front enemy unit, or "<code>max range - standing range</code>". A larger value means capability of killing enemy units with greater range even when they are behind meatshields. This is the defining parameter of a [[:Category:Sniper-class Cats|sniper]], as snipers are used to damage enemies in the backline. I.e. a sniper with zero piercing range can be viewed as a Melee unit.
+
+==Trivia== 
+*The first cat to receive this ability was [[Nerd Cat (Super Rare Cat)|Nerd Cat]].
+
+==Reference==
+*https://battlecats-db.com/unit/sp_far.html
+[[Category:Cats by ability]]

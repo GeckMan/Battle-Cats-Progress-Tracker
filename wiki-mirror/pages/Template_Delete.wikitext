@@ -1,0 +1,15 @@
+<onlyinclude>{| class="stubcat" style="overflow:hidden;clear:both;height:115px;width:560px;border:2px solid white;border-radius:15px;padding:0px 10px;background:#21312c;background-image:-webkit-linear-gradient(top,#81312c 0%,#aa6963 100%);background-image:linear-gradient(to bottom,#81312c 0%,#aa6963 100%);background-repeat:no-repeat;background-position:0 0;background-size:auto auto;margin:2px auto;box-shadow:1px 1px 2px #000;width:570px"
+| class="nomobile" style="position:relative;left:-13px;position:relative;bottom:-5px"| [[File:LizardNotice.png|link=|bottom|150px|class=notpageimage]]
+| style="padding-left:20px;margin-top:5px;color:white;font-size:15px;line-height:16px;"|
+
+<div class="catbox_text_container"><div class="catbox_text warning_text" style="text-indent:-18px;">~ Nyanko, the target seems to be a pointless article! Remember to check [[Special:Whatlinkshere/{{FULLPAGENAME}}|what links here]] and [{{fullurl:{{FULLPAGENAME}}|action=history}} the page history] before deleting.</div>
+
+<div class="catbox_text_container"><div class="catbox_text warning_text" style="text-indent:-18px;">~ We live in a world where there is more and more information, and less and less meaning...</div></div>
+|}<includeonly>[[Category:Candidates for deletion]]</includeonly></onlyinclude>
+
+;Description
+:This template is used to mark pages for deletion, categorizing them in [[:Category:Candidates for deletion]].
+;Syntax
+:Type <span style="font-family: Courier;">{{t|delete|reason}}</span> on the page to be deleted.'''
+
+[[Category:Page notices]]

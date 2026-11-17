@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Kroxo|Imperator Sael|Ursamajor|Elizabeth the LVIth}}
+:''Not to be confused with the [[Heavenly Tower/Floor 7|Heavenly Tower]] or [[Infernal Tower/Floor 7|Infernal Tower]] versions of Floor 7.''
+'''Floor 7''' is the seventh floor of [[Alien Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 06 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 160
+|enemy castle hp = 270,000 HP
+|enemies = {{Magnification|Kroxo|100%
+|Imperator Sael|100%
+|Ursamajor|100%
+|Elizabeth the LVIth|100%}}
+|boss = {{Magnification|Kroxo|1%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (100%, 1 time)
+|XP = 3,040 XP
+|width = 4,200
+|max enemies = 10
+|jpname = 7th Floor
+|script = 7階
+|romaji = 7 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★6
+|prev stage = [[Alien Citadel/Floor 6|Floor 6]]
+|next stage = [[Alien Citadel/Floor 8|Floor 8]]
+}}
+
+==Battleground==
+*4 [[Kroxo]]s (100%) spawn after 3.33 seconds<sup>100f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*4 [[Kroxo]]s (100%) spawn after 4.33 seconds<sup>130f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*4 [[Kroxo]]s (100%) spawn after 6 seconds<sup>180f</sup>, delay 19.33~20 seconds<sup>580f~600f</sup>.
+*1 [[Imperator Sael]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*1 [[Imperator Sael]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Kroxo]] (1%) spawns as the boss.
+**Infinite [[Kroxo]]s (100%) spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Ursamajor]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**2 [[Elizabeth the LVIth]]s spawn, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+
+==Strategy==
+Having 2 crystals is required, but getting 3 makes this a lot easier. Any more and the stage is a cakewalk, as the enemies barely can do anything. [[Octopus Cat]] trivializes the stage, as it makes it so much easier to get a Bahamut to clip most of the hp of the Elizabeth, and general tankers can easily stave off the Ursamajors to prevent them from pushing when the Elizabeth is behind them.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-07.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

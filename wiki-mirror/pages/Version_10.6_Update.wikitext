@@ -1,0 +1,153 @@
+{{PageBanner|Other l 002 en.png|event}}
+
+==Release Dates==
+*'''Japanese:''' May 31st, 2021
+*'''International:''' June 28th, 2021
+
+==Cats==
+Added 3 new units, CRO ranges from 611~613:
+{{Update|mode=cats
+|Godzilla Cat
+|[[File:Mapname172 c en.png|200px|link=Godzilla Collaboration Event]]
+|Princess Cat
+|[[File:Gatya bnr602.png|400px|link=RoyalFest (Gacha Event)]]
+|Elder Mask Doron
+|[[File:Mapname035 na en.png|200px|link=Ancient Forest Labyrinth]]
+}}
+
+*Added 6 new [[True Form]]s:
+{{Update|mode=trueforms
+|Driller Cat
+|'''DPS:''' 1.114.75 → 1,980.58<br>
+'''TBA:''' 6.1s → 3.43s<br>
+[[File:Strong Against.png]]
+|Piledriver Cat
+|'''ATT:''' 14,280 → 17,850<br>
+'''DPS:''' 1,785 → 2,231.25<br>
+'''Recharge:''' 57.87s → 41.2s
+|Cutter Cat
+|'''ATT:''' 4,250 → 5,100<br>
+'''DPS:''' 1,053.72 → 1,264.46<br>
+[[File:Immune to Waves.png]]
+|Backhoe Cat
+|[[File:Volcano effect.png]] 0% → 50%
+|Miter Saw Cat
+|'''HP:''' 17,000 → 25,500<br>
+'''ATT:''' 1,190 → 1,360<br>
+'''DPS:''' 3,966.67 → 4,533.33<br>
+[[File:Barrier Breaker.png]] 0% → 20%
+|Gravi
+|'''HP:''' 96,390 → 120,190<br>
+'''ATT:''' 23,970 → 30,770<br>
+'''DPS:''' 3,995 → 5,128.33<br>
+[[File:Zukan icon14.png|40px]] Level 3 → 4
+}}
+
+*Added [[Talents]] for 3 Cat Units:
+{{Update|mode=talents
+|Salon Cat
+|[[File:Survive.png]] Upgrades chance to survive lethal strikes by 5% per level up to 50%<br>
+[[File:Poison immune.png]] Toxic Immunity<br>
+[[File:Resistfreezeability.png]] Reduces freeze duration by 16%, increases by 6% per level up to 70%<br>
+[[File:Defenseupability.png]] Upgrades health by 2% per level up to 20%<br>
+[[File:Attackupability.png]] Upgrades attack power by 2% per level up to 20%
+|Cat Machine
+|[[File:Freeze.png]] Adds 50% chance to freeze for 39f<sub>1.3 seconds</sub>, increased by 12f<sub>0.4 seconds</sub> per level up to 120f<sub>4 seconds</sub><br>
+[[File:Knockback Immunity.png]] Knockback Immunity<br>
+[[File:Movespeedupability.png]] Gains 1 movement speed per level up to 10<br>
+[[File:Defenseupability.png]] Upgrades health by 2% per level up to 20%<br>
+[[File:Attackupability.png]] Upgrades attack power by 2% per level up to 20%
+|Sea Maiden Ruri
+|[[File:Relictraiticon.png|40px]] Target Relic<br>
+[[File:Epicability1.png]] Curse Immunity<br>
+[[File:Resistslowability.png]] Reduces slow duration by 16%, increases 6% per level up to 70%<br>
+[[File:Defenseupability.png]] Upgrades health by 2% per level up to 20%<br>
+[[File:Attackupability.png]] Upgrades attack power by 2% per level up to 20%
+}}
+
+==Enemies==
+{{Update|mode=enemies
+|Shin Godzilla
+|Elder Flame Doron}}
+
+==Stages==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+|-
+! scope="row" |[[Uncanny Legends]]
+|[[File:Mapname035 na en.png|200px|link=Ancient Forest Labyrinth]]
+|-
+! scope="row" |[[Special Events|Events]]
+|[[File:Mapname251 s en.png|200px|link=The Angel & The Demon]] [[File:Mapname252 s en.png|200px|link=The Queen & The Dead]] [[File:Mapname253 s en.png|200px|link=The King & The Maiden]] [[File:Mapname254 s en.png|200px|link=Joy of 60 Million!]]
+|-
+! scope="row" |[[Gauntlet]]
+|[[File:Mapname015 a en.png|200px|link=June Gauntlet]] [[File:Mapname016 a en.png|200px|link=June Gauntlet II]] [[File:Mapname017 a en.png|200px|link=July Gauntlet]] [[File:Mapname018 a en.png|200px|link=July Gauntlet II]]
+|-
+! scope="row" |[[Collaboration Events|Collaboration]]
+|[[File:Mapname171 c en.png|200px|link=Godzilla Collaboration Event]] [[File:Mapname172 c en.png|200px|link=Godzilla Collaboration Event]]
+|}
+
+===Stage Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+! scope="col" |Changes
+|-
+! scope="row" rowspan="4" |Miscellaneous
+|[[File:Mapname234 s en.png|200px|link=Total War: Spring Special]]
+|[[File:Mapname234 s en 2.png|200px|link=Total War: Spring Special]]
+|-
+|[[File:Mapname235 s en.png|200px|link=Total War: Summer Special]]
+|[[File:Mapname235 s en 2.png|200px|link=Total War: Summer Special]]
+|-
+|[[File:Mapname236 s en.png|200px|link=Total War: Fall Special]]
+|[[File:Mapname236 s en 2.png|200px|link=Total War: Fall Special]]
+|-
+|[[File:Mapname237 s en.png|200px|link=Total War: Winter Special]]
+|[[File:Mapname237 s en 2.png|200px|link=Total War: Winter Special]]
+|}
+
+==Cat Combos==
+{{Combos|basic=1
+|{{CatCombo|Dragon Driller|"Weaken" Effects Up (Sm)|Power Driller Cat|Li'l Dragon Cat|jpname=}}
+|{{CatCombo|Mythic Driver|"Knockback" Effects Up (Sm)|Power Piledriver Cat|Li'l Mythical Titan|jpname=}}
+|{{CatCombo|Brave Cutter|Unit Attack Up (Sm)|Power Cutter Cat|Li'l Brave Cat|jpname=}}
+|{{CatCombo|Whale Digger|"Critical" Rate Up (Sm)|Power Backhoe Cat|Li'l Whale Cat|jpname=}}
+|{{CatCombo|Sexy Sawer|"Resistant" Effects Up (Sm)|Power Saw Cat|Li'l Sexy Legs Cat|jpname=}}
+}}
+
+==Gacha Events==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Button
+! scope="col" |Banner
+|-
+|[[File:Gatya btn50.png|link=]]
+|[[File:Gatya bnr602.png|400px|link=RoyalFest (Gacha Event)]]
+|}
+
+==Meow Medals==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="row" |Icon
+! scope="col" |Name
+! scope="col" |Description
+|-
+|[[File:Medal 088.png]]
+|Go With Doron
+|Unlock [[Elder Mask Doron (Special Cat)|Elder Mask Doron]]
+|}
+
+==Miscellaneous==
+*Added 3 new [[User Rank]] rewards:
+**13,900 grants 5 Uber [[Catseye]]s.
+**14,000 grants 1 [[Cat Capsule#Rare Capsule|Rare Ticket]].
+**14,100 grants +20 Bricks.
+*Added 1 new item: Platinum Shards.
+
+{{Versions}}

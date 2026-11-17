@@ -1,0 +1,45 @@
+{{EnemiesAppearing|Metal Snache|Squire Rel|Metal Hippoe}}
+'''Hard Restart Lv.2''' is the second stage in [[Machines in Revolt]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn349 01 s en.png]]
+|stage location = [[File:Mapname349 s en.png]]
+|energy = 60
+|enemy castle hp = 25,000 HP
+|enemies = {{Magnification|Metal Snache|100%
+|Squire Rel|100%}}
+|boss = {{Magnification|Metal Hippoe|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 1,800 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Reboot Lv.2
+|script = 再起動 Lv.2
+|romaji = Saikidō Lv.2
+|star = 1
+|event-chapter = [[Machines in Revolt]]
+|max clears = 1
+|difficulty = ★3
+|prev stage = [[Hard Restart Lv.1]]
+|next stage = [[Hard Restart Lv.3]]
+}}
+
+==Battleground==
+*1 [[Metal Snache]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Metal Snache]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Metal Snache]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Metal Hippoe]] spawns as the boss.
+**3 [[Metal Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+**3 [[Metal Snache]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+
+==Strategy==
+An easy stage that only really requires the Normal Cats. If one is worried about the Metal Hippoe, [[Moneko (Special Cat)|Moneko]] (the first critical hitter you likely will unlock) will suffice.
+
+==Reference==
+*https://battlecats-db.com/stage/s01349-02.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

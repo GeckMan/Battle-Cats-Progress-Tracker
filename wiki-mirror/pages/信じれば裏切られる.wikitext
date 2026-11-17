@@ -1,0 +1,51 @@
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Zroco|Celeboodle|Croco|Makoto Shishio|Zang Roo|Cadaver Bear}}
+'''信じれば裏切られる''' is the third stage in [[Rurouni Kenshin Collaboration Event#幕末の亡霊・志々雄真実|幕末の亡霊・志々雄真実]].
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn275 02 c ja.png]]
+|stage location = [[File:Mapname275 c ja.png]]
+|energy = 150
+|enemy castle hp = 750,000 HP
+|enemies = {{Magnification|Zroco|200%
+|Celeboodle|600%
+|Croco|3,000%
+|Zang Roo|200%
+|Cadaver Bear|150%}}
+|boss = {{Magnification|Makoto Shishio|155%}}
+|treasure = - [[Catseye]] [Uber Rare] +2 (100%, 1 time)
+|XP = 4,500 XP
+|width = 5,500
+|max enemies = 15
+|jpname = ?
+|script = 信じれば裏切られる
+|romaji = ?
+|star = 1
+|event = [[Rurouni Kenshin Collaboration Event]]
+|event-chapter = [[Rurouni Kenshin Collaboration Event#幕末の亡霊・志々雄真実|幕末の亡霊・志々雄真実]]
+|prev stage = [[燃える殺人奇剣・無限刃]]
+|next stage = [[俺は熱くてしょうがねえ]]
+}}
+
+==Battleground==
+*Infinite [[Zroco]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Celeboodle]] spawns after 10 seconds<sup>300f</sup>.
+*2 [[Zroco]]s spawn after 30 seconds<sup>900f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Makoto Shishio (Enemy)|Makoto Shishio]] spawns as the boss.
+**10 [[Croco]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Celeboodle]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**2 [[Zang Roo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 66.67 seconds<sup>2,000f</sup>.
+**1 [[Cadaver Bear]] spawns after 100 seconds<sup>3,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02275-03.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]

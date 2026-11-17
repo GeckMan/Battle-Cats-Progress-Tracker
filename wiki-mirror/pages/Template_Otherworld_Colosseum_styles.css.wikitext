@@ -1,0 +1,8 @@
+.ranger-navbox.otherworldcolosseum {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 98%, 18%) 0%, hsl(10, 100%, 62%) 50%, hsl(0, 98%, 18%) 100%);
+	--bg-group-name: linear-gradient(to right, hsl(29, 48%, 17%) 0%, hsl(33, 51%, 62%) 100%);
+	--title-color: #fff;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

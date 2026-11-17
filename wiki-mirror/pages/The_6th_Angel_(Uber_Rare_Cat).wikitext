@@ -1,0 +1,142 @@
+:''For the enemy encountered in the [[Neon Genesis Evangelion Collaboration Event]], see [[The 6th Angel (Enemy)|The 6th Angel]].''
+'''The 6th Angel''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event|Evangelion Collaboration Event]]. She was added in [[Version 10.2 Update|Version 10.2]].
+
+{{Cat Info
+|ID = 549
+|rarity = UR
+|name1 = The 6th Angel
+|name2 = 6th Angel Cat
+}}
+
+==Evolution==
+Evolves into '''6th Angel Cat''' at level 10.
+
+==Strategy/Usage==
+The 6th Angel is a dangerous anti-[[:Category:Floating Enemies|Floating]] nuker with a small blindspot, a high standing range of 500 bolstered by its [[Long Distance]] reaching up to 1500, slowing those that survive to inhibit their pushing power, though the uptime is too low and should not be relied upon. Its low DPS, extreme cooldown and long attack cycle of nearly 23 seconds precludes general use (even though it can snipe the enemy base with terrifying ease) and its [[Dodge Attack|Dodge]] is obviously inconsistent, but this is bumped up with its [[Massive Damage]] ability versus Floating and a 100% level 3 [[Surge Attack]]. Assuming both the main attack and all hits from the Surge connect, it can potentially deal up to 544,000 damage to Floating at just level 30, and 864,000 at level 50, although in practice this tends to be lower due to its wide spawn area.
+
+{{Job|Classification = Sniper & Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 549
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni549 f00.png
+|Image2 = Uni549 c00.png
+|Name1 = The 6th Angel
+|Desc1 = Terrifying being appearing with unknown intent. An<br>ever-shifting form of incomprehensible power. Massive<br>Long-Range Area damage & Slow vs Floating enemies.
+|Name2 = 6th Angel Cat
+|Desc2 = A Cat Army-produced replica of the 6th Angel. Already<br>forgot what their original form looks like. Massive<br>Long-Range Area damage & Slow vs Floating enemies.
+|Name1 (JP) = 第６の使徒 (Dai Roku no Shito, The Sixth Apostle)
+|Desc1 (JP) = 人類の前に現れた未知なる異形の生命体<br>姿を目まぐるしく変形させ、高威力の加粒子砲を放つ<br>浮いてる敵に超ダメージを与え、動きを遅くする(遠方範囲)
+|Transl1 (JP) = A strange, unidentified form of life that has appeared before mankind<br>transforming its form and unleashing a high-powered particle cannon<br>dealing super damage to floating enemies and slowing them down (Far Range Attack)
+|Name2 (JP) = 第６のネコ使徒 (Dai Roku no Neko Shito, The Sixth Cat Apostle)
+|Desc2 (JP) = 第６の使徒を模したネコの造りし生命体<br>姿を目まぐるしく変形させ、元の姿をよく忘れる<br>浮いてる敵に超ダメージを与え、動きを遅くする(遠方範囲)
+|Transl2 (JP) = A lifeform created by a cat that resembles the 6th Apostle<br>it changes its form so rapidly that it often forgets its original form<br>it deals super damage to floating enemies and slows their movement (Far Range Attack)
+|Name1 (TW) = 第6使徒
+|Desc1 (TW) = 出現在人類面前的未知異形生命體<br>外觀可眼花撩亂般變形，發射高威力的加粒子砲<br>可以給予飄浮敵人超大傷害、使動作變慢(遠距範圍)
+|Name2 (TW) = 第6貓使徒
+|Desc2 (TW) = 仿造第6使徒造的貓咪生命體<br>外觀可眼花撩亂般變形，常忘了原本樣貌<br>可以給予飄浮敵人超大傷害、使動作變慢(遠距範圍)
+|Name1 (KR) = 제6사도
+|Desc1 (KR) = 인류 앞에 나타난 미지의 이형 생명체<br>모습을 빠르게 변형시켜 고위력의 가립자포를 낸다<br>떠있는 적에 초 데미지를 입히며 움직임을 느리게 한다 (원거리 범위공격)
+|Name2 (KR) = 제6사도 고양이
+|Desc2 (KR) = 제6사도를 본떠 만든 고양이 생명체<br>모습을 빠르게 변형시켜 원래의 모습을 자주 깜빡한다<br>떠있는 적에 초 데미지를 입히며 움직임을 느리게 한다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 2,550¢
+*Chapter 2: 3,825¢
+*Chapter 3: 5,100¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = The 6th Angel
+|Normal Base HP = 1500
+|Normal Base AP = 2000
+|Normal Range = 500
+|Normal Foreswing = 130
+|Normal Attack Cooldown = 553
+|Normal Attack Length = 236
+|Normal Speed = 5
+|Normal KB = 1
+|Normal Cost = 2550
+|Normal Recharge = 8000
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~1,500)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Dodge Attack}} 50% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 3 [[Surge Attack]] between 450 and 1,250 range
+|Evolved Name = 6th Angel Cat
+|Evolved Base HP = 1500
+|Evolved Base AP = 2000
+|Evolved Range = 500
+|Evolved Foreswing = 130
+|Evolved Attack Cooldown = 553
+|Evolved Attack Length = 236
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 2550
+|Evolved Recharge = 8000
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~1,500)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Dodge Attack}} 50% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 3 [[Surge Attack]] between 450 and 1,250 range
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 2,000 damage<br>(87.85 DPS)
+|val-Normal-Attack Range = 500
+|val-Normal-Attack Frequency = 683f <sub>22.77 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 130f <sup>4.33s</sup><br>(106f <sup>3.53s</sup> backswing)
+|val-Normal-Recharge Time = 266.67 ~ 257.87 seconds
+|val-Normal-MaxHP = 25,500 HP
+|val-Normal-MaxAttack = 34,000 damage<br>(1,493.41 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 34,000 damage<br>(1,493.41 DPS)
+|val-Evolved-Attack Range = 500
+|val-Evolved-Attack Frequency = 683f <sub>22.77 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 130f <sup>4.33s</sup><br>(106f <sup>3.53s</sup> backswing)
+|val-Evolved-Recharge Time = 266.67 ~ 257.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni549 f00}}
+
+==Trivia==
+*This unit is tied with [[Nerd Cat (Super Rare Cat)|Nerd Cat]] for the highest [[Long Distance]] reach of any cat unit, at 1,500.
+**If counting [[:Category:PC Exclusive Content|PC Exclusive]] units, it and Nerd Cat would be tied for second place, behind [[Natsu Mikan (PC Uber Rare Cat)|Nouryou Natsu Mikan]]'s maximum LD reach of 3,000.
+
+==Reference==
+*https://battlecats-db.com/unit/550.html
+
+----
+{{CatNav|The 4th Angel|The 10th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Dodge Attack ability]]
+[[Category:Surge Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with unique death animations]]

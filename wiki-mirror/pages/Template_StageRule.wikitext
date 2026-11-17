@@ -1,0 +1,17 @@
+<includeonly><onlyinclude>{{#if:this bit is only here to strip out whitespace|{{#switch:{{{1}}}
+|12thAnni = Start with 4,500¢, plus 1¢ for every "War Fund" item that the player has collected. Gain no money from the [[Worker Cat]] or any [[Cat Combo]]s.
+|13thAnni = Start with 4,500¢, plus 1¢ for every "経費" item that the player has collected. Gain no money from the [[Worker Cat]] or any [[Cat Combo]]s.
+|Summer = Start with 1,000,000¢, plus all units are set to 50% of their recharge time. Gain no money from the [[Worker Cat]] or any [[Cat Combo]]s. The deploy cost of all units increases by 200% of initial cost with each deploy.
+|FeverRush = Fever Gauge fills up based on Event Points earned during battle, when full you enter "Fever Mode" for a certain period of time during Fever Mode, cat unit cooldown is set to 0 earn Event Points by defeating enemies, the amount is determined by [Production Cost × Event Point Multiplier]<br>Cost Reduction Talents does not affect amount of Event Points earned.
+|RougeLike = You do not bring your own cats. Start with a small lineup given automatically, clear a stage, pick a new cat, pick a power-up, and continue forward. Every win makes the lineup stronger. Lose once, or clear the last stage, and the whole thing resets and you start over from the starter lineup.<br>Talents are disabled when this rule is in effect.
+|#default = Invalid StageRule: {{{1}}}[[Category:StageRule errors]]
+}}}}</onlyinclude></includeonly>
+Displays stage rules. See the source of this page for valid inputs.
+
+==Usage==
+<pre>
+{{StageRule|12thAnni}}
+</pre>
+yields
+
+{{StageRule|12thAnni}}

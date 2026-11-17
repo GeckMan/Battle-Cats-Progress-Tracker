@@ -1,0 +1,54 @@
+{{Documentation}}
+==All Parameters==
+<pre>
+{{Enemy Stats
+|Enemy =
+|Health =
+|Attack Power =
+|Attack Range =
+|Attack Type =
+|Time Between Attacks =
+|Movement Speed =
+|Knockback =
+|Foreswing =
+|Backswing =
+|Ability =
+|Element =
+}}
+</pre>
+
+==Example Usage==
+<pre>
+{{Enemy Stats
+|Enemy = Doge
+|Health = 90
+|Attack Power = 8
+|Attack Range = 110
+|Attack Type = Single
+|Time Between Attacks = 47
+|Movement Speed = 5
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 10
+|Ability = -
+|Element = Traitless
+}}
+</pre>
+
+===Gives===
+{{Enemy Stats
+|Enemy = Doge
+|Health = 90
+|Attack Power = 8
+|Attack Range = 110
+|Attack Type = Single
+|Time Between Attacks = 47
+|Movement Speed = 5
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 10
+|Ability = -
+|Element = Traitless
+}}
+
+[[Category:Content templates]]

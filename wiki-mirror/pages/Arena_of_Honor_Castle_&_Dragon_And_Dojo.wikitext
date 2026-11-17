@@ -1,0 +1,140 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Dummy|Ashura|Cyclops|Castle Guard|Castle Horseman|Pretty Cat|Battle Balloon|Dragon Rider|Golem}}
+'''Castle & Dragon And Dojo''' is the tenth [[Arena of Honor]] of the [[Catclaw Dojo]].
+
+{{Stage Info
+|stage name = [[File:E 283 ja.png]]
+[[File:Mapsn009 00 r ja.png]]
+|stage location = [[File:Mapname005 r ja.png]]
+|energy = 30
+|enemy castle hp = Unlimited
+|base = {{Magnification|Dummy|0}}
+|enemies = {{Magnification|Ashura|0
+|Cyclops|0
+|Castle Horseman|0
+|Pretty Cat|0
+|Battle Balloon|0
+|Castle Guard|0
+|Dragon Rider|0}}
+|boss = {{Magnification|Castle Guard|0
+|Castle Horseman|0
+|Golem|0
+|Cyclops|0
+|Battle Balloon|0
+|Ashura|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 12
+|jpname = Castle and Dragon and Dojo
+|script = 城とドラゴンと道場
+|romaji = Shiro to Doragon to Dōjō
+|star = 1
+|event = [[Castle & Dragon Collaboration Event]]
+|dojo-chapter = ランキングの間
+|difficulty = ★2
+}}
+
+==Battleground==
+*The enemy base here is a [[Dummy (Enemy Base)|Dummy]].
+*Infinite [[Castle Guard (Enemy)|Castle Guards]] (100%) spawn after 60 seconds<sup>1,800f</sup>, delay 53.33~80 seconds<sup>1,600f~2,400f</sup>.
+*Infinite [[Castle Guard (Enemy)|Castle Guards]] (100%) spawn, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*When the base takes 1,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**3 [[Castle Horseman (Enemy)|Castle Horsemen]] (100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 6,000 damage:
+**1 [[Ashura (Enemy)|Ashura]] (100%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 18,000 damage:
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (200%) spawns as the boss.
+**6 [[Castle Horseman (Enemy)|Castle Horsemen]] (200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 45,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Dragon Rider (Enemy)|Dragon Riders]] (200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Pretty Cat (Enemy)|Pretty Cats]] (200%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 90,000 damage:
+**1 [[Cyclops (Enemy)|Cyclops]] (100%) spawns as the boss.
+**2 [[Ashura (Enemy)|Ashuras]] (300%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 150,000 damage:
+**1 [[Golem (Enemy)|Golem]] (100%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (1,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Dragon Rider (Enemy)|Dragon Riders]] (300%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 240,000 damage:
+**1 [[Castle Horseman (Enemy)|Castle Horseman]] (10%) spawns as the boss.
+**5 [[Castle Horseman (Enemy)|Castle Horsemen]] (900%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**4 [[Pretty Cat (Enemy)|Pretty Cats]] (300%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Battle Balloon (Enemy)|Battle Balloons]] (450%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (450%) spawns.
+*When the base takes 360,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Ashura (Enemy)|Ashuras]] (600%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**2 [[Cyclops (Enemy)|Cyclopes]] (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 480,000 damage:
+**1 [[Golem (Enemy)|Golem]] (300%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (2,400%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Dragon Rider (Enemy)|Dragon Riders]] (400%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 600,000 damage:
+**1 [[Castle Horseman (Enemy)|Castle Horseman]] (10%) spawns as the boss.
+**5 [[Castle Horseman (Enemy)|Castle Horsemen]] (1,200%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**4 [[Pretty Cat (Enemy)|Pretty Cats]] (400%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Battle Balloon (Enemy)|Battle Balloons]] (800%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (800%) spawns.
+*When the base takes 720,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Ashura (Enemy)|Ashuras]] (800%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**2 [[Cyclops (Enemy)|Cyclopes]] (400%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 840,000 damage:
+**1 [[Golem (Enemy)|Golem]] (400%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (3,000%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Dragon Rider (Enemy)|Dragon Riders]] (500%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 960,000 damage:
+**1 [[Castle Horseman (Enemy)|Castle Horseman]] (10%) spawns as the boss.
+**5 [[Castle Horseman (Enemy)|Castle Horsemen]] (1,500%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**4 [[Pretty Cat (Enemy)|Pretty Cats]] (500%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Battle Balloon (Enemy)|Battle Balloons]] (1,000%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (1,000%) spawns.
+*When the base takes 1,080,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Ashura (Enemy)|Ashuras]] (1,000%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**2 [[Cyclops (Enemy)|Cyclopes]] (500%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,200,000 damage:
+**1 [[Golem (Enemy)|Golem]] (500%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (3,600%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Dragon Rider (Enemy)|Dragon Riders]] (600%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 1,320,000 damage:
+**1 [[Castle Horseman (Enemy)|Castle Horseman]] (10%) spawns as the boss.
+**5 [[Castle Horseman (Enemy)|Castle Horsemen]] (1,800%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**4 [[Pretty Cat (Enemy)|Pretty Cats]] (600%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Battle Balloon (Enemy)|Battle Balloons]] (1,200%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (1,200%) spawns.
+*When the base takes 1,440,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Ashura (Enemy)|Ashuras]] (1,200%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**2 [[Cyclops (Enemy)|Cyclopes]] (600%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,560,000 damage:
+**1 [[Golem (Enemy)|Golem]] (600%) spawns as the boss.
+**5 [[Castle Guard (Enemy)|Castle Guards]] (4,200%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Dragon Rider (Enemy)|Dragon Riders]] (700%) spawn, delay 6.67 seconds<sup>200f</sup>.
+*When the base takes 1,680,000 damage:
+**1 [[Castle Horseman (Enemy)|Castle Horseman]] (10%) spawns as the boss.
+**5 [[Castle Horseman (Enemy)|Castle Horsemen]] (2,100%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**4 [[Pretty Cat (Enemy)|Pretty Cats]] (700%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Battle Balloon (Enemy)|Battle Balloons]] (1,400%) spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Battle Balloon (Enemy)|Battle Balloon]] (1,400%) spawns.
+*When the base takes 1,800,000 damage:
+**1 [[Castle Guard (Enemy)|Castle Guard]] (10%) spawns as the boss.
+**5 [[Ashura (Enemy)|Ashuras]] (1,400%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**2 [[Cyclops (Enemy)|Cyclopes]] (700%) spawn, delay 10 seconds<sup>300f</sup>.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The base has unlimited health and can attack Cats that are close to it.
+*You gain no money for defeating enemies.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Reference==
+*https://battlecats-db.com/stage/s11009-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

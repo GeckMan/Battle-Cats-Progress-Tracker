@@ -1,0 +1,52 @@
+.stat-input-table {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 4px;
+}
+
+.statcalc .stats-table .inputfield, .stat-input-table .inputfield {
+	background: var(--bg-color-gray);
+	border-radius: 5px;
+}
+.statcalc .stats-table .inputfield:focus, .stat-input-table .inputfield:focus {
+	background: var(--color-min-contrast);
+}
+.statcalc .stats-table td {
+	background-color: var(--bg-color-light4);
+}
+
+.statcalc table.mw-collapsed ~ .stats-table table .stat-calc-on,
+.statcalc table.mw-collapsed~* .stats-table table .stat-calc-on {
+	display: none;
+}
+
+.statcalc table:not(.mw-collapsed) ~ .stats-table table .stat-calc-off,
+.statcalc table:not(.mw-collapsed)~* .stats-table table .stat-calc-off {
+	display: none;
+}
+
+.statcalc table.mw-collapsed ~ .stats-table table td.hideme,
+.statcalc table.mw-collapsed~* .stats-table table td.hideme {
+	display: table-cell;
+}
+
+.statcalc table.mw-collapsed ~ .stats-table table td.hideme ~ td.hidden,
+.statcalc table.mw-collapsed ~ * .stats-table table td.hideme ~ td.hidden,
+.statcalc table.mw-collapsed ~ .stats-table table span.multihit + span,
+.statcalc table:not(.mw-collapsed)~.stats-table table span.multihit {
+	display: none !important;
+}
+
+.client-darkmode>.theme-light .statcalc .inputfield {
+	color: #000
+}
+
+.stat-input-table {
+	background: rgb(from var(--theme-page-dynamic-color-1) r g b / 0.02);
+}
+
+.stat-input-table th {
+	background: rgb(from var(--theme-page-dynamic-color-1) r g b / 0.04);
+}
+
+/* [[Category:Template stylesheets]] */

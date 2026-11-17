@@ -1,0 +1,65 @@
+:''For the Cat Unit, see [[Saber (Uber Rare Cat)]]. Not to be confused with [[Saber (Enemy)]].''
+'''Saber Alter''' (セイバーオルタ) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Fate/Stay Night: Heaven's Feel Collaboration Event]]. She was added in [[Version 8.2 Update|Version 8.2]].
+
+{{Enemy Info
+|name = Saber Alter
+|image = E 441.png
+|appearance = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Saber Alter is an enemy that has massive health, a Lv.3 [[Wave Attack]] and a powerful [[Omni Strike]]. Her base damage is fairly moderate, but with the wave, it jumps up to 16,000 damage, which is quite a formidable number for her fast attack rate and movement speed. Her weaknesses are her large knockback count and fairly low base range.
+
+==Strategy==
+[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] is recommended to be used against her, as Octopus can block the waves she creates. Otherwise, tankers like [[Curling Cat (Rare Cat)|Cleanerbot Cat]] or [[Sushi Cat (Super Rare Cat)|Roe Cat]] are ideal; or [[:Category:Anti-Traitless Cats|anti-Traitless cats]] such as [[Mightycat (Rare Cat)|Supercat]], who is able to both block her waves and [[Weaken|weaken]] her.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Holy War: Saber Alter]]:
+**[[Consumed by Shadow (Veteran)]] (15%)
+**[[Consumed by Shadow (Deadly)]] (100%)
+**[[Consumed by Shadow (Merciless)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Saber Alter
+|Health = 1200000
+|Attack Power = 8000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 69
+|Movement Speed = 40
+|Knockback = 8
+|Foreswing = 15
+|Backswing = 54
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -375~375)<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+441 e.png|Saber Alter's spritesheet
+IdleSaberAlter.gif|Saber Alter's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/443.html
+
+----
+{{EnemyNav|Bears Be Back|Ms. Madonna}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]

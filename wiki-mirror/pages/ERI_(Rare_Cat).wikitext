@@ -1,0 +1,129 @@
+'''ERI''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 217
+|rarity = RR
+|name1 = ERI
+|name2 = ERI CC
+}}
+
+==Evolution==
+Evolves into '''ERI CC''' at level 10.
+
+==Strategy/Usage==
+ERI is much like a faster-attacking [[Wheel Cat (Rare Cat)|Wheel Cat]] but unfortunately has the same weaknesses as it. As with Wheel, ERI only outranges melee Aliens like Cyberhorn and Nimoy Bore, and only does so reliably with [[Surfer Cat (Super Rare Cat)|Castaway/Seafarer Cat]] or other [[Freeze|Freeze]] units. Other than potentially being useful in [[Cats of the Cosmos]], both can be used to chip at backliners or slip into the blindspots of [[Long Distance]] attackers, though that is it. Wheel gets the extra range and cooldown it strongly needs to counter more enemies upon becoming Chill Cat, something ERI doesn't have and is promptly outclassed by.
+
+{{Job|Classification = Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 217
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni217 f00.png
+|Image2 = Uni217 c00.png
+|Name1 = ERI
+|Desc1 = Recruited from the Metal Slug series!<br>Staff sergeant in the Intel division.<br>Might cause massive damage to Aliens (Area Atk)
+|Name2 = ERI CC
+|Desc2 = Recruited from the Metal Slug series!<br>Demolitions, survival, spying - she's mastered it all!<br>Might cause massive damage to Aliens (Area Atk)
+|Name1 (JP) = エリ (Eri)
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>正規軍情報特殊部隊の二等軍曹<br>エイリアンに超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Joining from the Metal Slug series!<br>Technical sergeant of regular forces.<br>Deals super damage against Aliens (Area Attack)
+|Name2 (JP) = エリCC (EriCC)
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>サバイバルもスパイもこなすメンフィスの爆弾娘<br>エイリアンに超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Has a Memphite daughter who likes survival and spying.<br>Deals super damage against Aliens (Area Attack)
+|Name1 (TW) = 英里
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>正規軍情報特殊部隊的下士<br>能對異星戰士造成超大傷害（範圍攻擊）
+|Name2 (TW) = 英里CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>精通求生及諜報技能的孟菲斯炸彈女<br>能對異星戰士造成超大傷害（範圍攻擊）
+|Name1 (KR) = 에리
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>정규군 정보 특수 부대의 이등 교관<br>에이리언에게 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 에리CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>서바이벌, 스파이 모두 완벽히 소화하는 멤피스의 폭탄녀<br>에이리언에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 665¢
+*Chapter 2: 997¢
+*Chapter 3: 1,330¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = ERI
+|Normal Base HP = 500
+|Normal Base AP = 96
+|Normal Range = 170
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 23
+|Normal Attack Length = 21
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 665
+|Normal Recharge = 600
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = ERI CC
+|Evolved Base HP = 650
+|Evolved Base AP = 140
+|Evolved Range = 170
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 23
+|Evolved Attack Length = 21
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 665
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 96 damage<br>(99.31 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 29f <sub>0.97 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 1,632 damage<br>(1,688.28 DPS)
+|val-Evolved-Health = 11,050 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(2,462.07 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 29f <sub>0.97 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(15f <sup>0.5s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni217 f00}}
+
+==Trivia==
+*ERI is based off of [[wikia:metalslug:Eri Kasamoto|Eri Kasamoto]] from the Metal Slug series.
+*ERI's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+*Although ERI's descriptions claim she ''might'' cause massive damage, massive damage is not a chance-based ability and will always occur.
+
+==Reference==
+*https://battlecats-db.com/unit/218.html
+
+----
+{{CatNav|TARMA|FIO}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

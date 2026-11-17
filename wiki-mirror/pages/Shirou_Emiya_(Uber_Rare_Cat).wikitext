@@ -1,0 +1,112 @@
+'''Shirou Emiya''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. He was added in [[Version 15.4 Update|Version 15.4]].
+
+{{Cat Info
+|ID = 864
+|rarity = UR
+|name1 = Shirou Emiya
+|name2 = Shirou Emiya CC
+}}
+
+==Evolution==
+Evolves into '''Shirou Emiya CC''' at level 10.
+
+==Strategy/Usage==
+Shirou Emiya is disgustingly powerful. His main attack consists of two closely spaced Multi-Hits, with each creating a level 4 [[Wave Attack]] that reaches up to 933 range. This splits his 204k effective burst damage (362k at Lv.50) between four hits. Because of this, the second half of his Multi-Hit has a tendency to miss if the first hit and Wave end up staggering every enemy. This sometimes makes him inconsistent to use, as there's a chance one or more of these hits end up missing. Each individual hit is still very strong, regardless of how many connect. While he is indeed less effective against Wave Immune threats, many backline enemies that aren't will still be easily decimated, with [[Sunfish Jones]] and [[Professor A.]] being prime examples.
+
+At his highest potential, Shirou's DPS is ludicrous. To put things into perspective, a Lv.60 [[Baby Cat (Uber Rare Cat)|Cats in the Stroller]] deals ~22,375 DPS, which is already on the upper end for Wavers; Shirou exceeds this threshold at merely Lv.43, assuming everything connects. This is without mentioning the fact that he is a superbackliner with '''560 range''', further complemented by decent survivability through his base HP and knockback count (although Stroller has an advantage in disposability). With all of this in mind, the aim of the game is to lure as many enemies into his attacking range by the time he finishes his drawn-out foreswing animation. The tankier the enemies, the better his overall output is. Try to consider his matchups carefully so that he doesn't whiff Multi-Hits as often, especially given his 12.5-second attack cycle—not that it holds him back much either way.
+
+Shirou's immunities are nothing to write home about, but [[Immune to Knockback|Knockback]] and [[Immune to Freeze|Freeze Immunity]] do give him a better matchup in stages containing [[Mr. Mole]] and [[Henry]] respectively. He does require extensive protection due to his long recharge time.
+
+{{Job|Classification = Nuker & Waver & Super-Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 864
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni864 f00.png
+|Image2 = Uni864 c00.png
+|Name1 = Shirou Emiya
+|Desc1 = From Fate/stay night [HF]!<br>Youth fighting in the Grail War to defend Sakura Matou.<br>Area attacks unleash Waves.
+|Name2 = Shirou Emiya CC
+|Desc2 = From Fate/stay night [HF]!<br>Inherited Archer's left arm after the loss of his own.<br>Area attacks unleash Waves.
+|Name1 (JP) = 衛宮 士郎
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>間桐桜を守るために聖杯戦争で戦う少年<br>必ず波動を放つ(範囲攻撃)
+|Name2 (JP) = 衛宮 士郎CC
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>左腕を失うが、アーチャーの腕を受け継いだ<br>必ず波動を放つ(範囲攻撃)
+|Name1 (TW) = 衛宮士郎
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>為了守護間桐櫻而參加聖杯戰爭的少年<br>必定能發射波動(範圍攻擊)
+|Name2 (TW) = 衛宮士郎CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>失去左手，但繼承了Archer的手臂<br>必定能發射波動(範圍攻擊)
+|Name1 (KR) = 에미야 시로
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>마토 사쿠라를 지키기 위해 성배전쟁에 참가한 소년<br>반드시 파동을 낸다 (범위 공격)
+|Name2 (KR) = 에미야 시로CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>왼팔을 잃고 아처의 팔을 이어받았다<br>반드시 파동을 낸다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,200¢
+*Chapter 2: 4,800¢
+*Chapter 3: 6,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shirou Emiya
+|Normal Base HP = 3200
+|Normal Base AP = 2400,2400
+|Normal Range = 560
+|Normal Foreswing = 154,159
+|Normal Attack Cooldown = 215
+|Normal Attack Length = 206
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 3200
+|Normal Recharge = 5400
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (40,800 at 154f <sup>5.13s</sup>, 40,800 at 159f <sup>5.3s</sup>)<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 4 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze}} [[Immune to Knockback]] and [[Immune to Freeze|Freeze]]
+|Evolved Name = Shirou Emiya CC
+|Evolved Base HP = 4000
+|Evolved Base AP = 3000,3000
+|Evolved Range = 560
+|Evolved Foreswing = 154,159
+|Evolved Attack Cooldown = 215
+|Evolved Attack Length = 206
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 3200
+|Evolved Recharge = 5400
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (51,000 at 154f <sup>5.13s</sup>, 51,000 at 159f <sup>5.3s</sup>)<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 4 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze}} [[Immune to Knockback]] and [[Immune to Freeze|Freeze]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni864 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/865.html
+
+----
+{{CatNav|The Invisible Cat|True Assassin}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Collaboration Event Cats]]
+[[Category:Uber Rare Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Wave Attack Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]

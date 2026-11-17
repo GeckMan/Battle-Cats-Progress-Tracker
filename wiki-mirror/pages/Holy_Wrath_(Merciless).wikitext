@@ -1,0 +1,59 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Gabriel|Heavenly Hippoe|Chickful A|Winged Pigge|Cala Maria}}
+'''Holy Wrath (Merciless)''' is one of 7 [[Continuation Stage]]s that the player can access after beating [[An Elder Secret (Merciless)]], the only stage in [[Growing Strange]]. Completing this stage yields an [[Catfruit|Elder Catfruit Seed]], or at a 1% chance, an [[Catfruit|Elder Catfruit]].
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn022 03 ex en.png]]
+|stage location = [[File:Mapname162 s en.png]]
+|energy = N/A
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Gabriel|400%
+|Heavenly Hippoe|400%
+|Chickful A|200%
+|Winged Pigge|100%
+|Cala Maria|100%}}
+|boss = {{Magnification|Gabriel|10%}}
+|treasure = - [[Catfruit|Elder Catfruit]] (1%, unlimited)<br>
+- [[Catfruit|Elder Catfruit Seed]] (99%, unlimited)
+|XP = 6,000 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Ancient Heavenly World Extreme
+|script = 太古の天上界 極ムズ
+|romaji = Taiko no Tenjōkai Goku Muzu
+|event-chapter = [[Growing Strange]]
+|difficulty = Merciless
+|prev stage = N/A
+|next stage = N/A
+|require = Random after beating [[An Elder Secret (Merciless)]]
+|occurrence = Every day at set times
+}}
+
+==Battleground==
+*Infinite [[Gabriel]]s (400%) spawn after 3.33 seconds<sup>100f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gabriel]] (10%) spawns as the boss.
+**1 [[Chickful A]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**2 [[Winged Pigge]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+**1 [[Cala Maria]] spawns.
+**5 [[Gabriel]]s (400%) spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+[[Rocker Cat (Rare Cat)|Ramen Cat]] is one of the best choices here, being able to be used in both [[An Elder Secret (Merciless)|An Elder Secret]]  and this stage.
+
+==Walkthrough==
+{{Walkthrough
+|X7Iuau0dn54|WaffleCat|No Ubers
+}}
+
+==Trivia==
+*Prior to [[Version 8.0 Update|Version 8.0]], there were 2 [[Chickful A]]s in this stage instead of 1, the second [[Winged Pigge]] spawned after 40 seconds instead of 26.67 seconds, and there was no limit to how many additional [[Gabriel]]s would spawn during the boss fight.
+
+==Reference==
+*https://battlecats-db.com/stage/s01162-01ex04.html
+
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Continuation Stages]]

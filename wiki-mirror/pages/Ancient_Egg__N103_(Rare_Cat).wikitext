@@ -1,0 +1,201 @@
+'''Ancient Egg: N103''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Catnip Challenges]] after completing 15 [[Behemoth Culling]] stages for the first time. It was added in [[Version 11.6 Update|Version 11.6]]. [[True Form]] massively increases overall stats, increases cost and recharge time, and gains Behemoth Slayer and [[Immune to Toxic|Toxic Immunity]].
+
+{{Cat Info
+|ID = 663
+|rarity = RR
+|name1 = Ancient Egg: N103
+|name2 = Dark Egg: N103
+|name3 = Gas Mask Cat
+}}
+
+==Evolution==
+Evolves into '''Dark Egg: N103''' at level 10.
+
+Evolves into '''Gas Mask Cat''' at level 30 using [[Catfruit#Behemoth Stones|Behemoth Stones]] and XP.
+
+==Strategy/Usage==
+==='''Normal/Evolved Form'''===
+These forms are <u>useless by design</u>. Similarly to the other [[:Category:Ancient Eggs|Ancient Eggs]], this unit is not meant to be used before its True Form. However, due to its somewhat low cost and quick recharge, it may be used as an emergency meatshield in [[Underground Labyrinth]] or [[Legend Quest]] if you have no use for its True Form.
+
+==='''True Form'''===
+Gas Mask Cat is a powerful meatshield that can tank up to '''71.4k''' damage from Dark enemies at level 30 (with all three [[Void Fruit]]s maxed). Although Dark enemies are notorious for their high DPS typically denying these options, anti-Dark meatshields have definitively proven their place in the meta, namely [[Li'l Gau (Rare Cat)|Li'l Gau]] and [[Nono (Rare Cat)|Nono]]. Incidentally, Gas Mask Cat serves a partially similar purpose to Nono, acting as a secondary defense. Its very long standing range as a meatshield means it will stand behind your meatshields and hold ground as an emergency defense in case Dark enemies break through, providing grace time to get things back under control. Because of this, its longer recharge time for a meatshield can be forgiven.
+
+It's important to note that Gas Mask Cat has higher range than [[Flower Cat (Special Cat)|Bombercat]], meaning a breakthrough will kill off your Bombercats before your Gas Mask Cats, so you might prefer using other anti-Dark meatshields at times. Against non-Dark Behemoths, it is only able to tank 23.8k damage, but a whopping '''119k''' damage against [[Ragin' Gory]], [[Crocodylidae Kurocroc]], and [[Casaurian Darkjo]], who it also counters with its Toxic immunity.
+
+{{Job|Classification = User Rank Dump & Meatshield|TrueClass = Meatshield & Tanker|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Wicked Flames|Unit Defense Up (M)|God-Emperor Hevijak|Gas Mask Cat|Radical Cat|jpname=邪龍黒炎波}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 663
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni000 m00.png
+|Image2 = Uni004 m01.png
+|Image3 = Uni663 s00.png
+|Name1 = Ancient Egg: N103
+|Desc1 = A mysterious lifeform that takes the form of an egg.<br>Dirt clings to its surface after many years, and<br>erosion reveals the words N103 carved into it...
+|Name2 = Dark Egg: N103
+|Desc2 = A mysterious lifeform that takes the form of a dark egg.<br>There appears to be faint signs of life inside.<br>Tough vs. Dark enemies.
+|Name3 = Gas Mask Cat
+|Desc3 = A Cat who wears a gas mask to stave off its allergies.<br>It burns down any and all plants that it is allergic to.<br>Tough vs. Dark enemies, Behemoth Slayer.
+|Name1 (JP) = 古びたタマゴ:N103 (Furubita Tamago:N103, Ancient Egg: N103)
+|Desc1 (JP) = タマゴのような形をした謎の物体<br>長い歳月を経て土がこびりつき風化している<br>「N103」と小さく刻まれているように見えるが…
+|Transl1 (JP) = Mysterious object shaped like an egg<br>weathered by soil sticking to it over a long period of time<br>It appears to have "N103" inscribed in small letters...
+|Name2 (JP) = 黒いタマゴ:N103 (Kuroi Tamago:N103, Black Egg:N103)
+|Desc2 (JP) = 黒いボディを現したタマゴのような物体<br>内部に微かな生命反応があるようだ<br>黒い敵に打たれ強い
+|Transl2 (JP) = The egg-like object's black body has been revealed<br>There appears to be a faint sign of life inside<br>Tough against Black enemies.
+|Name3 (JP) = ネコガスマスク (Neko Gasu Masuku, Cat Gas Mask)
+|Desc3 (JP) = 花粉症がひどくてマスクを装着したネコ<br>アレルギー反応をする植物は全て焼き払う<br>黒い敵に打たれ強く、超獣特効を持つ
+|Transl3 (JP) = A Cat with hay fever so bad it wears a mask<br>Burns down any plant it's allergic to<br>Tough against Black enemies, with Super-Beast Killer
+|Name1 (TW) = 遠古的蛋：N103
+|Desc1 (TW) = 外形像蛋的謎樣物體<br>經年累月附著了塵土且遭受風化<br>上頭似乎刻有「N103」的小小字樣
+|Name2 (TW) = 黑色的蛋：N103
+|Desc2 (TW) = 現出黑色外殼，如蛋一般的物體<br>裡面似乎有微弱的生命跡象反應<br>對上黑色敵人很耐打
+|Name3 (TW) = 防毒面具貓
+|Desc3 (TW) = 因為嚴重花粉症而戴上面具的貓咪<br>會將引起過敏的植物全部燒毀<br>對上黑色敵人很耐打，有超獸特效
+|Name1 (KR) = 오래된 알: N103
+|Desc1 (KR) = 알 모양을 한 정체불명의 물체<br>오랜 세월 동안 흙이 달라붙어 풍화되었다<br>「N103」이라고 작게 각인이 되어있는 듯한데...
+|Name2 (KR) = 검은 알: N103
+|Desc2 (KR) = 검은 모습을 드러낸 알 모양의 물체<br>내부에 미약한 생명체 반응이 감지되고 있다<br>검은 적에 맷집이 좋다
+|Name3 (KR) = 고양이 방독면
+|Desc3 (KR) = 꽃가루 알레르기가 심해 마스크를 쓴 고양이<br>알레르기의 원인인 식물을 모두 불태워버린다<br>검은 적에 맷집이 좋고 초수 특효를 가졌다
+}}
+
+==Cost==
+===Normal/Evolved Form===
+*Chapter 1: 120¢
+*Chapter 2: 180¢
+*Chapter 3: 240¢
+
+===True Form===
+*Chapter 1: 340¢
+*Chapter 2: 510¢
+*Chapter 3: 680¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ancient Egg: N103
+|Normal Base HP = 100
+|Normal Base AP = 2
+|Normal Range = 100
+|Normal Foreswing = 32
+|Normal Attack Cooldown = 439
+|Normal Attack Length = 76
+|Normal Speed = 5
+|Normal KB = 1
+|Normal Cost = 120
+|Normal Recharge = 200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Dark Egg: N103
+|Evolved Base HP = 100
+|Evolved Base AP = 2
+|Evolved Range = 100
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 439
+|Evolved Attack Length = 76
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 120
+|Evolved Recharge = 200
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|True Name = Gas Mask Cat
+|True Base HP = 840
+|True Base AP = 180
+|True Range = 250
+|True Foreswing = 20
+|True Attack Cooldown = 85
+|True Attack Length = 44
+|True Speed = 8
+|True KB = 1
+|True Cost = 340
+|True Recharge = 450
+|True Attack Type = Single
+|True Targets = Dark
+|True Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Behemoth Slayer}} [[Behemoth Slayer]] (5% chance to dodge [[:Category:Behemoth Enemies|Behemoth]] enemies' attacks for 30f <sub>1 second</sub>)<br>
+{{AbilityIcon|Immune to Toxic}} [[Immune to Toxic]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 2 damage<br>(0.13 DPS)
+|val-Normal-Attack Range = 100
+|val-Normal-Attack Frequency = 471f <sub>15.7 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 32f <sup>1.07s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Normal-Recharge Time = 6.67 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 35 damage<br>(2.23 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 35 damage<br>(2.23 DPS)
+|val-Evolved-Attack Range = 100
+|val-Evolved-Attack Frequency = 471f <sub>15.7 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 32f <sup>1.07s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Evolved-Recharge Time = 6.67 ~ 2 seconds
+|val-True-Health = 14,280 HP
+|val-True-Attack Power = 3,060 damage<br>(874.29 DPS)
+|val-True-Attack Range = 250
+|val-True-Attack Frequency = 105f <sub>3.5 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 20f <sup>0.67s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-True-Recharge Time = 15 ~ 6.2 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Dark Egg: N103
+|Evolved Image = Uni004 m01.png
+|True Name = Gas Mask Cat
+|True Image = Uni663 s00.png
+|True Description = True Form evolution reveals its final form!<br>Also gains Behemoth Slayer!
+|Catfruit1 = PurpleStone
+|Catfruit2 = RedStone
+|Catfruit3 = BlueStone
+|Quantity Catfruit1 = x15
+|Quantity Catfruit2 = x15
+|Quantity Catfruit3 = x1
+|Quantity XP = 200,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni663 s00}}
+
+==Trivia==
+*Prior to [[Version 15.3 Update|Version 15.3]], the Evolved Form was named "Black Egg: N103".
+**The "Dark Egg" name is also used by [[Ancient Egg: N201 (Special Cat)|Dark Egg: N201]] and [[Ancient Egg: N109 (Rare Cat)|Dark Egg: N109]], who both target [[:Category:Aku Enemies|Aku]] and not [[:Category:Dark Enemies|Dark]].
+*Gas Mask Cat could be a reference to [[wikipedia:Akira Toriyama|Akira Toriyama]], who draws himself wearing a Gas Mask.
+
+==Reference==
+*https://battlecats-db.com/unit/664.html
+
+----
+{{CatNav|Brainwashed Cow Cat|Ancient Egg: N104}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Ancient Eggs]]
+[[Category:Rare Cats]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Behemoth Slayer Cats]]
+[[Category:Cats with Toxic Immunity]]
+[[Category:Cats requiring Behemoth Stones for True Form]]

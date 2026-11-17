@@ -1,0 +1,129 @@
+{{Unobtainable}}
+{{ENExclusive}}
+'''Trash Cat''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked from the [[Catnip Challenges]] after beating [[Sender Unknown|Mystery Package]] during the 88.88M Downloads Worldwide Event. This unit was the winner of the [[The Battle Cats|English]] and Taiwanese Versions' [[PONOS Campaigns/The OutCats|The OutCats]] campaigns, voted for by fans. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 740
+|rarity = EX
+|name1 = Trash Cat
+|name2 = Mimic Cat
+}}
+
+==Evolution==
+Evolves into '''Mimic Cat''' at level 10.
+
+==Strategy/Usage==
+Trash Cat is a specialized midranger that deals Massive Damage to Zombies and can hit their corpses thanks to its Soulstrike ability. Trash Cat has strong supplementary DPS and can even outrange or counter notable enemies such as [[Lord Gravey]], [[Miss Haka]], [[Zyclone]], and [[Johnnyleon]]. One of its downsides is that it has rather subpar health and if a Zombie were to burrow or revive where Trash Cat is currently residing, Trash Cat is nearly guaranteed to die. Another weakness is its long attack animation which can lead to missed hits or make it vulnerable to any oncoming enemies that can strike it. It's important to keep Trash Cat alive with meatshields so that it may have the ability to stack and easily hit zombies from a distance.
+
+As soon as you unlock [[Ancient Egg: N107 (Rare Cat)|Cat Chief]], [[Teacher BearCat (Rare Cat)|Cadaver BearCat]] or [[Talents|Talented]] [[Archer Cat (Rare Cat)|Cataur]], Trash Cat becomes outclassed, but can still be used in select stages such as [[The Haunted 1LDK]].
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 740
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni740 f00.png
+|Image2 = Uni740 c00.png
+|Name1 = Trash Cat
+|Desc1 = Won over fans to emerge as the top OutCat,<br>despite the stench (which isn't THAT bad anyhow).<br>Massive damage Area attacks vs Zombies.
+|Name2 = Mimic Cat
+|Desc2 = Moving into a chest has made them feel more<br>treasured. Remains unopened due to lingering stench.<br>Massive damage Area Attacks vs Zombies.
+|Name1 (TW) = 垃圾桶貓
+|Desc1 (TW) = 在投票活動中獲選為浪貓代表的貓咪。那獨特的<br>味道讓大家不敢靠近，但自己卻毫不在意<br>給予不死生物超大傷害(範圍攻擊)
+|Name2 (TW) = 寶箱貓
+|Desc2 (TW) = 為了體驗貓生勝利組的滋味而移居寶箱的貓咪<br>由於散發著那獨特的味道，所以沒有人想打開<br>給予不死生物超大傷害(範圍攻擊)
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Trash Cat
+|Normal Base HP = 400
+|Normal Base AP = 555
+|Normal Range = 300
+|Normal Foreswing = 41
+|Normal Attack Cooldown = 287
+|Normal Attack Length = 111
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 400
+|Normal Recharge = 730
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Soulstrike}} [[Soulstrike]]
+|Evolved Name = Mimic Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 555
+|Evolved Range = 300
+|Evolved Foreswing = 41
+|Evolved Attack Cooldown = 287
+|Evolved Attack Length = 111
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 400
+|Evolved Recharge = 730
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Soulstrike}} [[Soulstrike]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 555 damage<br>(50.76 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 328f <sub>10.93 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 41f <sup>1.37s</sup><br>(70f <sup>2.33s</sup> backswing)
+|val-Normal-Recharge Time = 24.33 ~ 15.53 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 9,435 damage<br>(862.96 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 9,435 damage<br>(862.96 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 328f <sub>10.93 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 41f <sup>1.37s</sup><br>(70f <sup>2.33s</sup> backswing)
+|val-Evolved-Recharge Time = 24.33 ~ 15.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni740 f00}}
+
+==Trivia==
+*Trash Cat's evolution may be based on the saying "One man's trash is another man's treasure."
+*Mimic Cat is a reference to the [[wikipedia:Mimic (Dungeons & Dragons)|Mimic]], a treasure chest-mimicking monster from ''[[wikipedia:Dungeons & Dragons|Dungeons & Dragons]]''.
+*Prior to [[Version 13.4 Update|Version 13.4]], there was an error in Mimic Cat's description stating that it had "Tough vs [[:Category:Zombie Enemies|Zombies]]", when in reality it lacks that ability.
+*Mimic Cat's treasure chest heavily resembles the [[Battle Items#Treasure Radar|Treasure Radar]].
+*Trash Cat loosely resembles a finalist from the [[PONOS Campaigns/YourBattleCat Design Contest|#YourBattleCat Design Contest]].
+
+==Reference==
+*https://battlecats-db.com/unit/741.html
+
+----
+{{CatNav|Izanami of Dusk|Voluptuous Peony - Daji}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Soulstrike Cats]]

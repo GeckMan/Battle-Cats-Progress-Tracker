@@ -1,0 +1,34 @@
+<includeonly><onlyinclude><div style="display: inline-block; text-align: center; line-height: 1em;"><div class="floatnone noresize" style="position: relative; height:250px; width: 110px; margin-left:auto; margin-right:auto; "><!--
+--><div style="left: 10px; top: 10px; display: inline-block; overflow: hidden; position: absolute; padding: 0; border-radius: px;"></div><!--
+--><div style="left: -2px; top: 0px; display: inline-block; overflow: hidden; position: absolute; padding: 0; border-radius: 0px;">[[File:{{{2|}}}_Style.png|110px|link=Ototo Corps|alt=|]]</div><!--
+--><div style="left: 0px; top: 1px; display: inline-block; overflow: hidden; position: absolute; padding: 0; border-radius: 0px;">[[File:{{{3|}}}_Cannon.png|110px|link=Ototo Corps|alt=|]]</div><!--
+--><div style="left: 12px; top: 225px; display: inline-block; position: absolute; padding: 0; border-radius: 0px;"><!--
+	--><span style="white-space:nowrap;"><span style="text-align: right; color: #DEB338; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 18pt;">Level</span> <span style="text-align: right; color: #FFD301; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; font-size: 18pt;">{{{4|}}}</span></span><!--
+--></div><!--
+-->[[File:{{{1|}}}_Foundation.png|110px|link=Ototo Corps|alt=|]]</div></div></onlyinclude></includeonly>
+{{Ototo|Default|Default|Default|20}}
+
+<nowiki>{{Ototo|Default|Slow|Thunderbolt|30}}</nowiki><br>
+<nowiki>{{Ototo|Foundation|Style|Cannon|level}}</nowiki><br>
+
+==Cannons==
+*Default
+*Slow
+*Iron
+*Thunderbolt
+*Waterblast
+*Holy
+*Breakerblast
+*Curseblast
+
+==Usage==
+<pre>
+{{Ototo|Default|Slow|Curseblast|30}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+| {{Ototo|Default|Slow|Curseblast|30}}
+|}
+
+[[Category:Cosmetic templates]]

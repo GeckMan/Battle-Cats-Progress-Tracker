@@ -1,0 +1,103 @@
+:''This article is about the enemy. For the Cat Unit, see [[Master of Mind Soractes (Special Cat)]].''
+'''Sage of Mind Soractes''' (論の賢者ソラクティス, ''Ron no Kenja Sorakutisu'', '''Sage of Theory Soractis''') is a [[:Category:Floating Enemies|Floating]]/[[:Category:Sage Enemies|Sage]] enemy that appears in [[Zero Legends]]. He is the enemy version of [[Master of Mind Soractes (Special Cat)|Master of Mind Soractes]]. He was added in [[Version 13.1 Update|Version 13.1]].
+
+{{Enemy Info
+|name = Sage of Mind Soractes
+|image = E 677.png
+|appearance = '''ZL''': [[Adherence to Virtue|Sub-chapter 9 - Adherence to Virtue]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+Soractes is one of the, if not the hardest pusher in the game. He is incredibly aggressive, rushing up to the frontline upon spawning and firing rapid attacks. While he only has 250 range, his huge DPS allows him to shred the frontline quickly, with his Omni Strike extending his reach to 430 and putting midranged backliners out of the question. This is topped off with a 30% chance to Freeze for 2 seconds, with his fast attacks giving it deadly consistency and uptime.
+
+Soractes is also the first enemy to have the Sage type, which reduces the distance of all knockback effects and the duration of all debuffs applied to him by 70% unless they are inflicted by [[:Category:Sage Slayer Cats|Sage Slayers]], making it nearly impossible to get him off the [[Cat Base]] once he has locked onto it.
+
+==Strategy==
+:''See [[Adherence to Virtue]] for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 677
+|Type = [[:Category:Floating Enemies|Floating]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 677.png
+|Name1 = Sage of Mind Soractes
+|Desc1 = Sage of high rank who studies the world from<br>another realm. Reached accord with humankind,<br>dispensing wisdom unto them. Insatiable thirst<br>for knowledge ensured a fated meeting with Cats
+|Name1 (JP) = 論の賢者ソラクティス (Ron no Kenja Sorakutisu, Sage of Theory Soractis)
+|Desc1 (JP) = 遥か高位の異次元から現世を観測し<br>人類に干渉し知恵を与えていた超賢者。<br>飽くなき知識欲を満たすため彷徨い続け<br>にゃんこ軍団という未知の存在と遭遇。
+|Transl1 (JP) = A Super-Sage who is observing this world from a far higher<br>dimension and interfered with and gave wisdom to humankind.<br>Continuing to wander to satisfy his insatiable desire for<br>knowledge, he encounters an unknown entity called the Cat Army.
+|Name1 (TW) = 論之賢者蘇拉格底
+|Desc1 (TW) = 從極高層次的異次元來到這裡觀測世界，<br>干涉並給予了人類智慧的超賢者。<br>為了滿足無限的求知慾而四處徘徊時，<br>遇到了貓咪軍團這個未知的存在。
+|Name1 (KR) = 논리의 현자 소라크테스
+|Desc1 (KR) = 머나먼 다른 차원에서 세계를 관측하고<br>인류에 간섭하여 지식을 전달한 초현자.<br>끝 없는 지식욕을 채우기 위해 방황하던 중<br>냥코 군단이란 미지의 존재와 조우했다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 9-6: [[Adherence to Virtue]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sage of Mind Soractes
+|Health = 4000000
+|Attack Power = 24000
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 21
+|Movement Speed = 18
+|Knockback = 10
+|Foreswing = 12
+|Backswing = 9
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -430~430)<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Floating/Sage
+}}
+
+{{UnitViewer|enemy|bg=Bg210.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+677 e.png|Sage of Mind Soractes' spritesheet
+Medal 114.png|Sage of Mind Soractes on the ''Soractes'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Soractes' name may be a portmanteau of 空 ''sora'' (sky/the air, correlating with his [[:Category:Floating Enemies|Floating]] trait) and ''[[wikipedia:Socrates|Socrates]]'', an ancient Greek philosopher. While Soractes' Japanese name is written in katakana, the kanji 空 can also be read as ''kara'' or ''kū'', meaning emptiness or the void/aether element in ''[[wikipedia:Godai|godai]]'', a set of five elements in Japanese Buddhist philosophy.
+**Soractes' Japanese name is also very similar to ''practice'' (possibly referring to how he is only the first [[:Category:Sage Enemies|Sage]] and first major [[Zero Legends]] boss; i.e., [[Adherence to Virtue]] is a practice round compared to what comes next):
+***ソラクティス ''Sorakutisu'' (Soractis) → プラクティス ''purakutisu'' (practice)
+**Continuing with the topic of philosophy, his pose is seemingly based on the famous 20th century sculpture of [[wikipedia:The Thinker|The Thinker]], or on [https://commons.wikimedia.org/wiki/File:Statues_of_Plato_(left)_and_Socrates_(right)_by_Leonidas_Drosis_at_the_Academy_of_Athens.jpg this statue] of Socrates.
+**In real life, Socrates was known to have had an upturned nose and bulging eyes, yet Soractes ironically has neither.
+**Soractes' seemingly empty head may allude to "I know that I know nothing," a famous saying widely attributed to Socrates.
+***This saying is directly referenced by [[Master of Mind Soractes (Special Cat)|Master of Mind Catcrates]]' Korean description, which states that all he knows about cats is that he knows nothing about them.
+**Adherence to Virtue may refer to [[wikipedia:Virtue ethics|virtue ethics]], an ethical theory that has its roots in ancient Greece with Socrates, who believed virtue is equivalent to knowledge.
+*The capital (top) of Soractes' column appears to combine all three [[wikipedia:Classical orders|orders]] of ancient Greek architecture: [[wikipedia:Doric order|Doric]], [[wikipedia:Ionic order|Ionic]] and [[wikipedia:Corinthian order|Corinthian]].
+*According to the Japanese descriptions of Sage of Mind Soractes, [[Sage of Logic Newtone]] and [[Sage of Selection Darvin]], the world they are observing is specifically the [[wikipedia:Present life|present life]] (現世 ''gen sei'', ''utsushi yo''), a concept in certain religions such as Shinto and Buddhism.
+*Sage of Mind Soractes can be seen as a foil to [[The Face]]:
+**Both are mid-ranged Floating enemies that are predominantly white.
+**The Face's diet caused him to lose everything but his face, whereas Soractes has a full body but lacks a face.
+**The Face is extremely slow in both movement speed and attack rate, whereas Soractes moves quickly and attacks non-stop.
+**Both are bosses of the 48th stages of Japan. The [[Nyanko Daisensou|Japanese version]] of [[Empire of Cats]] takes place across the 47 prefectures of Japan and [[wikipedia:Iriomote Island|Iriomote Island]] rather than various countries and the [[Moon (Empire of Cats)|Moon]], while Adherence to Virtue is the 48th and last Zero Legends stage to take place in a [[Media:Map040.png|jumbled up and mirrored Japan]].
+**Adherence to Virtue's [https://youtu.be/_KhgY0ArzW4 theme] contains the leitmotif of "[https://youtu.be/5yyyqU-Y7lA Lunar Battle]", which first plays against The Face.
+**Both are the first major bosses of their respective areas (if one does not count [[Metafilibuster (Enemy)|Metafilibuster]] as the first major boss of Zero Legends).
+
+==Reference==
+*https://battlecats-db.com/enemy/679.html
+
+----
+{{EnemyNav|Dragon Doge|Killer Axe Cat Base}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Mythic Bosses]]

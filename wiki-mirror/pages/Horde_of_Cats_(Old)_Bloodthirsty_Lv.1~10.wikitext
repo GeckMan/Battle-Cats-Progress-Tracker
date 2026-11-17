@@ -1,0 +1,211 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Corrupted Cat Base|Killer Cat}}
+<tabber>
+Bloodthirsty Lv.1 =
+{{Stage Info
+|stage name = [[File:E 312.png]]
+[[File:Mapsn042 00 a en.png]]
+|stage location = [[File:Mapname042 a en.png]]
+|base = - [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+|boss = - [[Killer Cat (Enemy)|Killer Cat]]
+|restriction = [[No Continues]]
+|width = 5,200
+|max enemies = 2
+|jpname = Murderous Intention Lv.X
+|script = 殺意 Lv.X
+|romaji = Satsui Lv.X
+|event = [[Horde of Cats]]
+|event-chapter = [[Horde of Cats]]
+|require = ?
+}}
+
+==Battleground==
+*The enemy base here is a [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]].
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Bloodthirsty Lv.
+! colspan="2" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="3" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+! scope="col" |[[Killer Cat (Enemy)|Killer Cat]]
+! scope="col" |Treasure
+! scope="col" |Timed Score
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|50%
+|50
+|[[Killer Cat (Rare Cat)|Killer Cat]] (5%, 1 time)
+|500: Speed Up +1
+|950
+|}
+
+|-|
+Bloodthirsty Lv.2~7 =
+{{Stage Info
+|stage name = [[File:E 312.png]]
+[[File:Mapsn042 00 a en.png]]
+|stage location = [[File:Mapname042 a en.png]]
+|base = - [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+|enemies = - [[Killer Cat (Enemy)|Killer Cat]]
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 6
+|jpname = Murderous Intention Lv.X
+|script = 殺意 Lv.X
+|romaji = Satsui Lv.X
+|event = [[Horde of Cats]]
+|event-chapter = [[Horde of Cats]]
+|require = ?
+}}
+
+==Battleground==
+*The enemy base here is a [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]].
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 63.33 seconds<sup>1,900f</sup>.
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 76.67 seconds<sup>2,300f</sup>.
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 77.33 seconds<sup>2,320f</sup>.
+*1 [[Killer Cat (Enemy)|Killer Cat]] spawns after 78 seconds<sup>2,340f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Bloodthirsty Lv.
+! colspan="2" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="3" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+! scope="col" |[[Killer Cat (Enemy)|Killer Cat]]
+! scope="col" |Treasure
+! scope="col" |Timed Score
+! scope="col" |Base XP
+|-
+! scope="row" |2
+|700%
+|170%
+|70
+|[[Killer Cat (Rare Cat)|Killer Cat]] (10%, 1 time)
+|500: Cat CPU +1
+|1,330
+|-
+! scope="row" |3
+|2,000%
+|1,200%
+|80
+|[[Killer Cat (Rare Cat)|Killer Cat]] (20%, 1 time)
+|500: XP +50,000
+|1,520
+|-
+! scope="row" |4
+|5,600%
+|2,560%
+|90
+|[[Killer Cat (Rare Cat)|Killer Cat]] (50%, 1 time)
+|500: Cat Jobs +1
+|1,710
+|-
+! scope="row" |5
+|9,200%
+|3,920%
+|100
+|[[Killer Cat (Rare Cat)|Killer Cat]] (100%, 1 time)
+|500: Sniper the Cat +1
+|1,900
+|-
+! scope="row" |6
+|12,800%
+|5,280%
+|110
+|N/A
+|500: Cat Ticket +1
+|2,090
+|-
+! scope="row" |7
+|16,400%
+|6,640%
+|120
+|N/A
+|500: Catamin [A] +3
+|2,280
+|}
+
+|-|
+Bloodthirsty Lv.8~10 =
+{{Stage Info
+|stage name = [[File:E 312.png]]
+[[File:Mapsn042 00 a en.png]]
+|stage location = [[File:Mapname042 a en.png]]
+|base = - [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+|enemies = - [[Killer Cat (Enemy)|Killer Cat]]
+|restriction = [[No Continues]]
+|width = 3,000
+|max enemies = 40
+|jpname = Murderous Intention Lv.X
+|script = 殺意 Lv.X
+|romaji = Satsui Lv.X
+|event = [[Horde of Cats]]
+|event-chapter = [[Horde of Cats]]
+|require = ?
+}}
+
+==Battleground==
+*The enemy base here is a [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]].
+*Infinite [[Killer Cat (Enemy)|Killer Cats]] spawn after 20 seconds<sup>600f</sup>, delay 120 seconds<sup>3,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Killer Cat (Enemy)|Killer Cat]] spawns.
+**45 [[Killer Cat (Enemy)|Killer Cats]] spawn, delay 1.33~2 seconds<sup>40f~60f</sup>.
+**30 [[Killer Cat (Enemy)|Killer Cats]] spawn, delay 2.67~4 seconds<sup>80f~120f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Bloodthirsty Lv.
+! colspan="2" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]]
+! scope="col" |[[Killer Cat (Enemy)|Killer Cat]]
+! scope="col" |Timed Score
+! scope="col" |Base XP
+|-
+! scope="row" |8
+|20,000%
+|8,000%
+|140
+|500: Catamin [B] +3
+|2,660
+|-
+! scope="row" |9
+|30,000%
+|11,000%
+|150
+|500: Catamin [C] +3
+|2,850
+|-
+! scope="row" |10
+|40,000%
+|16,000%
+|200
+|500: Cat Ticket +1
+|3,800
+|}
+
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24042.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Timed Score Stages]]

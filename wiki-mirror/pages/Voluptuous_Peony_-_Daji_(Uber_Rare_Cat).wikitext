@@ -1,0 +1,127 @@
+{{TranslationNeeded}}
+{{ENExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Voluptuous Peony - Daji (Enemy)]].''
+'''Voluptuous Peony - Daji''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Tower of Saviors Collaboration Event]]. She was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 741
+|rarity = UR
+|name1 = Voluptuous Peony - Daji
+|name2 = Daji & Cat
+}}
+
+==Evolution==
+Evolves into '''Daji & Cat''' at level 10.
+
+==Strategy/Usage==
+Daji is a simple unit, she stays in the back and, if well protected, she will sometimes land a powerful attack that will heavily cripple any Angel or Floating enemy caught in the blast, all while dealing acceptable damage to other enemies. In addition to her Massive damage ability, Daji also has a brief, yet guaranteed Slow effect that can help meatshields push further into the enemy frontlines after she attacks. All in all, while she isn't an especially outstanding unit stat-wise, she can still serve a perfectly good performance in almost any general or anti-Floating/Angel lineup.
+
+{{Job|Classification = Nuker & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 741
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni741 f00.png
+|Image2 = Uni741 c00.png
+|Name1 = Voluptuous Peony - Daji
+|Desc1 = Joining the Cat Army from Tower of Saviors!<br>Mystical nine-tailed fox commanding powerful magic.<br>Massive damage to/Slows Angels and Floating.
+|Name2 = Daji & Cat
+|Desc2 = Joining the Cat Army from Tower of Saviors!<br>Wields sensuous and illusory magic.<br>Massive damage to/Slows Angels and Floating.
+|Name1 (TW) = 染香綺狐 ‧ 妲己
+|Desc1 (TW) = 從神魔之塔來參戰！<br>法力高強的九尾妖狐。可以給予飄浮和<br>天使敵人超大傷害、必定能讓其動作瞬間變慢！
+|Transl1 (TW) = ?
+|Name2 (TW) = 染香綺狐 ‧ 妲己&貓咪
+|Desc2 (TW) = 從神魔之塔來參戰！<br>擅長使用幻術、媚術和各類法術。可以給予飄浮和<br>天使敵人超大傷害、必定能讓其動作瞬間變慢！
+|Transl2 (TW) = ?
+|Name1 (KR) = 염향기호 다지
+|Desc1 (KR) = Tower of Saviors에서 참전! 매우 강한 마력을<br>지닌 구미호. 떠있는 적과 천사에 초 데미지를 입히며<br>움직임을 순간 느리게 한다 (범위 공격)
+|Name2 (KR) = 염향기호 다지&고양이
+|Desc2 (KR) = Tower of Saviors에서 참전! 환술, 매혹과 같은<br>다양한 마법을 자유자재로 구사한다. 떠있는 적과 천사에<br>초 데미지를 입히며 움직임을 순간 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,880¢
+*Chapter 2: 4,320¢
+*Chapter 3: 5,760¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Voluptuous Peony - Daji
+|Normal Base HP = 2700
+|Normal Base AP = 2250
+|Normal Range = 450
+|Normal Foreswing = 45
+|Normal Attack Cooldown = 203
+|Normal Attack Length = 93
+|Normal Speed = 10
+|Normal KB = 4
+|Normal Cost = 2880
+|Normal Recharge = 4160
+|Normal Attack Type = Area
+|Normal Targets = Floating,Angel
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Daji & Cat
+|Evolved Base HP = 2700
+|Evolved Base AP = 2250
+|Evolved Range = 450
+|Evolved Foreswing = 45
+|Evolved Attack Cooldown = 203
+|Evolved Attack Length = 93
+|Evolved Speed = 10
+|Evolved KB = 4
+|Evolved Cost = 2880
+|Evolved Recharge = 4160
+|Evolved Attack Type = Area
+|Evolved Targets = Floating,Angel
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,700 HP
+|val-Normal-Attack Power = 2,250 damage<br>(272.18 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 248f <sub>8.27 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 45f <sup>1.5s</sup><br>(48f <sup>1.6s</sup> backswing)
+|val-Normal-Recharge Time = 138.67 ~ 129.87 seconds
+|val-Normal-MaxHP = 45,900 HP
+|val-Normal-MaxAttack = 38,250 damage<br>(4,627.02 DPS)
+|val-Evolved-Health = 45,900 HP
+|val-Evolved-Attack Power = 38,250 damage<br>(4,627.02 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 248f <sub>8.27 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 45f <sup>1.5s</sup><br>(48f <sup>1.6s</sup> backswing)
+|val-Evolved-Recharge Time = 138.67 ~ 129.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni741 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/742.html
+
+----
+{{CatNav|Trash Cat|Mollyanna Cat}}
+----
+
+{{Tower of Saviors}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Massive Damage ability]]

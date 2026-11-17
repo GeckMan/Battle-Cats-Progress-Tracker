@@ -1,0 +1,152 @@
+'''Agent Staal''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[NEO Best of the Best (Gacha Event)|NEO Best of the Best]] gacha event. He was added to BCTW and BCKR in [[Version 14.4 Update|Version 14.4]], [[The Battle Cats|BCEN]] in [[Version 14.6 Update|Version 14.6]] and [[Nyanko Daisensou|BCJP]] in [[Version 15.0 Update|Version 15.0]].
+
+{{Cat Info
+|ID = 810
+|rarity = UR
+|name1 = Agent Staal
+|name2 = Edgemaster Staal
+}}
+
+==Evolution==
+Evolves into '''Edgemaster Staal''' at level 10.
+
+==Strategy/Usage==
+With his incredible attack rate and DPS especially against his target traits, Staal is a force to be reckoned with, similar to [[Trixi the Merc (Uber Rare Cat)|Trixi the Revenant]].
+
+Staal has a unique Crowd-Controller role given his kit; the duration is extremely short, but is made up for the high chance to proc and insane attack rate. Against all of his traits, enemies who are easily outranged will have a hard time catching up to him thanks to his attack and debuff proc rate. His Critter niche is nothing to be brushed off, either, as his rapid attack rate makes up for the low chance, and this can be increased with Critical Combos, too. Against Aku, he is absolutely strong, being able to pierce through shields and stay safe from Death Surges many Aku enemies are notorious for, and he can definitely tank Aku enemies if they ever get close and reposition safely.
+
+However, even with his perks, he does have weaknesses, notably the lack of Curse immunity which can greatly hinder him especially in [[Legend Stages|Uncanny Legends]] and against the likes of [[Malevolent Dark Cat]], and that his damage per hit is rather low. Despite these, he is still an incredibly valuable unit against his traits and should not be underestimated.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 810
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni810 f00.png
+|Image2 = Uni810 c00.png
+|Name1 = Agent Staal
+|Desc1 = Mercenary who sold out his allies for fortune and power.<br>His godlike bladework is Strong vs Metal/Zombies/Aku.<br>May Slow and unleash Mini-Waves.
+|Name2 = Edgemaster Staal
+|Desc2 = Obtained untold power through cybernetic implants.<br>This combination of man and machine is Strong vs<br>Metal/Zombies/Aku, may Slow, unleashes Mini-Waves.
+|Name1 (JP) = エージェント・スタール
+|Desc1 (JP) = 富と権力のため仲間を裏切った元傭兵<br>鬼神の如き剣技はメタルとゾンビと悪魔に<br>めっぽう強く、たまに動きを遅くし、小波動を放つ
+|Name2 (JP) = エッジマスター・スタール
+|Desc2 (JP) = サイバネティクス手術により強大な力を手にした傭兵<br>機械と肉体の融合による剣技はメタルとゾンビと悪魔に<br>めっぽう強く、たまに動きを遅くし、小波動を放つ
+|Name1 (TW) = 頂尖特務史塔爾
+|Desc1 (TW) = 為了財富與權力而背叛同伴的前傭兵。有著<br>鬼神般的高超劍術。善於攻擊鋼鐵敵人、惡魔<br>與不死生物，有時候使動作變慢，發射小波動
+|Name2 (TW) = 王牌特務史塔爾
+|Desc2 (TW) = 透過模控學的手術獲得強大力量的傭兵。運用著<br>融合機械與肉體的劍術。善於攻擊鋼鐵敵人<br>惡魔與不死生物，有時候使動作變慢，發射小波動
+|Name1 (KR) = 에이전트 스탈 (Eijeonteu Seutal, Agent Staal)
+|Desc1 (KR) = 부와 권력을 위해 동료를 배신한 전직 용병<br>귀신과도 같은 검술은 메탈, 좀비, 악마에 엄청 강하고<br>가끔 움직임을 느리게 하고, 소파동을 낸다
+|Transl1 (KR) = A ghostly former mercenary who betrayed his comrades for wealth and power<br>his ghostly swordsmanship is extremely strong against metal, zombies,<br>and demons, slowing their movements to a crawl
+|Name2 (KR) = 블레이드 마스터 스탈 (Beulleideu Maseuteo Seutal, Blade Master Staal)
+|Desc2 (KR) = 사이버네틱스 수술을 받고 더 강력한 힘을 얻은 용병<br>기계와 융합시킨 검술은 메탈, 좀비, 악마에 엄청 강하고<br>가끔 움직임을 느리게 하며 소파동을 낸다
+|Transl2 (KR) = Fused with a mercenary mech that has undergone cybernetics surgery to make it even more powerful<br>his mecha-fused swordsmanship is extremely strong against metal, zombies, and demons,<br>slowing their movements to a crawl
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Agent Staal
+|Normal Base HP = 5800
+|Normal Base AP = 80,80,80
+|Normal Range = 320
+|Normal Foreswing = 3,6,9
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 17
+|Normal Speed = 11
+|Normal KB = 4
+|Normal Cost = 2500
+|Normal Recharge = 3200
+|Normal Attack Type = Area
+|Normal Targets = Metal,Zombie,Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,360 at 3f <sup>0.1s</sup>, 1,360 at 6f <sup>0.2s</sup>, 1,360 at 9f <sup>0.3s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 20f <sub>0.67 seconds</sub><br>
+{{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Mini-Wave}} 30% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Shield Piercing}} 5% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Freeze|Immune to Surge}} [[Immune to Freeze]] and [[Immune to Surge|Surge]]
+|Evolved Name = Edgemaster Staal
+|Evolved Base HP = 7000
+|Evolved Base AP = 100,100,100
+|Evolved Range = 320
+|Evolved Foreswing = 3,6,9
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 17
+|Evolved Speed = 11
+|Evolved KB = 4
+|Evolved Cost = 2500
+|Evolved Recharge = 3200
+|Evolved Attack Type = Area
+|Evolved Targets = Metal,Zombie,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,700 at 3f <sup>0.1s</sup>, 1,700 at 6f <sup>0.2s</sup>, 1,700 at 9f <sup>0.3s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 20f <sub>0.67 seconds</sub><br>
+{{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Mini-Wave}} 30% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Shield Piercing}} 5% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s<br>
+{{AbilityIcon|Immune to Freeze|Immune to Surge}} [[Immune to Freeze]] and [[Immune to Surge|Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 5,800 HP
+|val-Normal-Attack Power = 240 damage<br>(423.53 DPS)
+|val-Normal-Attack Range = 320
+|val-Normal-Attack Frequency = 17f <sub>0.57 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 3f <sup>0.1s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 106.67 ~ 97.87 seconds
+|val-Normal-MaxHP = 98,600 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(7,200 DPS)
+|val-Evolved-Health = 119,000 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(9,000 DPS)
+|val-Evolved-Attack Range = 320
+|val-Evolved-Attack Frequency = 17f <sub>0.57 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 3f <sup>0.1s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 106.67 ~ 97.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni810 f00}}
+
+==Trivia==
+*[[Trixi the Merc (Uber Rare Cat)|Trixi the Merc]] and Agent Staal are tied for the fastest attack rate of all Cats by technicality, as the previous record-holder [[Catornado (Super Rare Cat)|Catornado]] attacks three times in 18 frames, while they attack 3 times in 17 frames.
+
+==Reference==
+*https://battlecats-db.com/unit/811.html
+
+----
+{{CatNav|Shadow Cat|Victorious Skanda}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Surge Immunity]]
+[[Category:Mini-Wave Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Shield Piercing Cats]]

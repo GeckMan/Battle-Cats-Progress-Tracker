@@ -1,0 +1,70 @@
+{{EnemiesAppearing|Heavenly Hippoe|Angelic Gory|Gabriel|Mr. Angel|Angelic Sleipnir|Relic Doge|Othom|Divine Cyclone}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 26|Floor 26]].''
+'''Floor 26''' is the 26th floor of [[Infernal Tower]].
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 25 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 200
+|enemy castle hp = 880,000 HP
+|enemies = {{Magnification|Heavenly Hippoe|400%
+|Angelic Gory|300%
+|Gabriel|500%
+|Mr. Angel|200%
+|Angelic Sleipnir|250%
+|Relic Doge|100%
+|Othom|100%}}
+|boss = {{Magnification|Divine Cyclone|100%}}
+|treasure = One of the following (1 time):<br>
+- Bricks +5 (13%)<br>
+- Feathers +5 (13%)<br>
+- Coal +5 (13%)<br>
+- Sprockets +5 (13%)<br>
+- Gold +5 (13%)<br>
+- Meteorite +5 (13%)<br>
+- Beast Bones +5 (13%)<br>
+- Ammonite +5 (9%)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 10
+|jpname = 26th Floor
+|script = 26階
+|romaji = 26 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★10
+|prev stage = [[Infernal Tower/Floor 25|Floor 25]]
+|next stage = [[Infernal Tower/Floor 27|Floor 27]]
+}}
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*Infinite [[Mr. Angel]]s spawn after 20 seconds<sup>600f</sup>, delay 33.33~46.67 seconds<sup>1,000f~1,400f</sup>.
+*3 [[Gabriel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 0.67~2 seconds<sup>20f~60f</sup>.
+*3 [[Mr. Angel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 3.33~5.33 seconds<sup>100f~160f</sup>.
+*When the base reaches 99% HP:
+**1 [[Divine Cyclone]] spawns as the boss.
+**5 [[Heavenly Hippoe]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+**5 [[Angelic Gory|Angelic Gories]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**3 [[Gabriel]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**3 [[Mr. Angel]]s spawn, delay 2 seconds<sup>60f</sup>.
+**1 [[Angelic Sleipnir]] spawns.
+**10 [[Relic Doge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[Othom]] spawns.
+
+==Strategy==
+Treat this stage as [[Rutsborg Vortex]] but with the added Divine Cyclone. Use [[Mer-Cat (Rare Cat)|Cameraman]] because Othom's a Floating enemy and it can take 1 hit before getting [[Curse]]d again. Using Talented [[Bishop Cat (Rare Cat)|Sanzo Cat]] is an option as well, but its range doesn't make it an ideal choice here. A Talented [[Nerd Cat (Super Rare Cat)|Cyberpunk]] is a solid choice for this stage, because of its range and slow uptime. An alternative strategy is to lure Othom, rush him with [[Idi:N (Special Cat)|Idi:N]] and [[Elder Mask Doron (Special Cat)|Elder Mask Doron]], and kill him before the Divine Cyclone even comes close.
+
+==Walkthrough==
+{{Walkthrough
+|JKbj2eO1jAw|WaffleCat|Uberless
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-26.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]
+[[Category:No Continue Stages]]

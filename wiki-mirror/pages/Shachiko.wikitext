@@ -1,0 +1,99 @@
+'''Shachiko''' (シャチコ, ''Shachiko'') is a [[:Category:Relic Enemies|Relic]]/[[:Category:Sage Enemies|Sage]] variant of [[Dolphina]] that appears in [[Zero Legends]]. It was added in [[Version 14.2 Update|Version 14.2]].
+
+{{Enemy Info
+|name = Shachiko
+|image = E 715.png
+|first appearance = '''ZL:''' [[Bamboocopter Launch|Sub-chapter 18 - Bamboocopter Launch]]
+|latest appearance = '''ZL:''' [[Waterweed Trumpet|Sub-chapter 18 - Waterweed Trumpet]]
+|money drop = 900¢ - 3,555¢
+}}
+
+==Enemy==
+Shachiko behaves much like [[Dolphina]], albeit with different ranges (stands at 190, hits at 250~550), a guaranteed 6-second curse and all the debuff resistances that come with being a [[:Category:Sage Enemies|Sage]]. Its base damage isn't particularly high, at only 12k compared to a 200% Dolphina's 15k.
+
+==Strategy==
+Similarly to Dolphina, minimize how many times Shachiko can survive by dealing high damage in one hit, or alternatively, abuse its high knockback count to juggle it with frequent and high enough damage to prevent it from even doing anything. [[Idi:N (Special Cat)|Idi:NX]] in particular is incredibly effective, stacking the damage multipliers of Insane Damage vs. Relic and Sage Slayer to kill Shachiko in just two hits at level 50. To minimize wasted attacks, a good strategy is to lure Shachiko to your base and then use Idi:NX to blow it up with ease.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 715
+|Type = [[:Category:Relic Enemies|Relic]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 715.png
+|Name1 = Shachiko
+|Desc1 = Ancient aquatic beast with a ravenous<br>appetite. After eating a strange stone, it<br>became much more proficient at catching fish.<br>Many species are now endangered as a result.
+|Name1 (JP) = シャチコ (Shachiko)
+|Desc1 (JP) = 獰猛ですごい食欲の古代魚。<br>海底で見つけた不思議な石を食べた瞬間<br>頭の回転が速くなり、更に漁技術が向上。<br>海域の魚が絶滅寸前に陥っている。
+|Transl1 (JP) = A ferocious ancient fish with an incredible appetite.<br>After eating a mysterious stone it found on the ocean floor,<br>its mind became quicker and its fishing technique improved.<br>The fish in its area are on the verge of extinction.
+|Name1 (TW) = 遠古虎鯨
+|Desc1 (TW) = 非常兇猛且食欲旺盛的古代魚。<br>把在海底發現的神祕石頭吃下肚後<br>頭腦變得超好，捕魚技術也大幅進步，<br>但也造成同海域的魚類們瀕臨絕種。
+|Name1 (KR) = 범자
+|Desc1 (KR) = 엄청난 식욕을 자랑하는 사나운 고대어.<br>해저에서 발견한 이상한 돌을 먹은 순간<br>두뇌 회전이 빨라지고 사냥 기술도 향상.<br>주변 해역의 물고기가 멸종위기에 처했다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 18-1: [[Bamboocopter Launch]]
+*Stage 18-2: [[Broadleaf Yo-Yo]]
+*Stage 18-4: [[Waterweed Trumpet]]
+*Stage 19-3: [[Renovated Shipwreck]]
+*Stage 20-2: [[Logical Loneliness]]
+*Stage 22-3: [[Tiramisu Cliffs]]
+*Stage 25-6: [[Motley Assembly]]
+*Stage 27-3: [[Miraculously On Time]]
+*Stage 29-3: [[Physique Mystique]]
+*Stage 31-4: [[Tree of Strife]]
+*Stage 33-2: [[Bridge of Forgotten Sporks]]
+*Stage 36-2: [[Merry-Go-Roundcake]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Shachiko
+|Health = 1100000
+|Attack Power = 12000
+|Attack Range = 190
+|Attack Type = Area
+|Time Between Attacks = 103
+|Movement Speed = 40
+|Knockback = 30
+|Foreswing = 44
+|Backswing = 30
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 180f <sub>6 seconds</sub>
+|Element = Relic/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+715 e.png|Shachiko's spritesheet
+</gallery>
+
+==Trivia==
+*Shachiko's name may be derived from the two readings of the kanji 鯱: ''shachi'' ([[wikipedia:Orca|orca]]) and ''[[wikipedia:Shachihoko|shachihoko]]'' (a fearsome, fish-like monster that can swallow massive amounts of water with a single gulp and hold it in its belly); as well as 古 ''ko'' (old) and 子 ''ko'' (common suffix in female given names, such as [[wikipedia:Sachiko|Sachiko]]). Ironically, ''shachihoko'' statues were often placed on ancient rooftops to ward against fire, yet Shachiko inflicts the Curse effect, whose icon resembles a flame.
+**Shachiko also sounds similar to 社畜 ''shachiku'' (an overworked and exploited employee; a wage slave), which may fit in with the work-related descriptions of [[Dolphina]] (oversleeps for work) and [[Kid Tappa]] (his girlfriend said he should get a real job).
+*Shachiko's [[:Category:Sage Enemies|Sage]] type may be a reference to how orcas are known for their intelligence and adaptability, with highly developed communication, memory, hunting and problem-solving skills.
+*Shachiko may have some connection to [[Golem Sunfish]], another aquatic [[:Category:Relic Enemies|Relic]] enemy. Golem Sunfish was sealed to the ocean depths by a sage but resurfaced from the ocean floor, which is where Shachiko's Japanese description says it found the Sage stone it ate.
+*Although Shachiko's Japanese description calls it a fish, orcas are cetaceans. This implies that Shachiko is not actually an orca, but a piscine species that superficially resembles one, possibly as a result of [[wikipedia:Convergent evolution|convergent evolution]] or some form of [[wikipedia:Mimicry|mimicry]]. The English version does not call it a fish at all.
+*The term 古代魚 ''[[wikipedia:ja:古代魚|kodaigyo]]'' in Shachiko's Japanese description literally translates to "ancient fish", but can also be used as a general term for fish considered "[[wikipedia:Living fossil|living fossils]]" of the Paleozoic and Mesozoic periods, particularly [[wikipedia:Osteichthyes|bony fish]] such as [[wikipedia:Coelacanth|coelacanths]] (though it does not have a strict definition).
+*Shachiko's spritesheet contains an unused blue motion blur effect likely intended to appear during its attack animation.
+
+==Reference==
+*https://battlecats-db.com/enemy/717.html
+
+----
+{{EnemyNav|Xenobeast Bunaglios|Holy Valkyrie Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Curse ability]]

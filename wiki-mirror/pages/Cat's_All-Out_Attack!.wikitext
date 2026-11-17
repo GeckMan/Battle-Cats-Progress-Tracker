@@ -1,0 +1,53 @@
+{{EnemiesAppearing|Doge|Hippoe|B.B.Bunny|Sir Seal|Pigge|King's Mimic}}
+'''Cat's All-Out Attack!''' is the second stage in [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn361 01 s en.png]]
+|stage location = [[File:Mapname361 s en.png]]
+|energy = 40
+|enemy castle hp = 25,000 HP
+|enemies = {{Magnification|Doge|150%
+|Hippoe|150%
+|B.B.Bunny|150%
+|Sir Seal|150%
+|Pigge|150%}}
+|boss = {{Magnification|King's Mimic|20%}}
+|restriction = Max # of Deployable Cats: 10
+|score reward = '''7,700''': 20,000 XP<br>
+'''6,300''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 1,200 XP
+|width = 4,400
+|max enemies = 9
+|jpname = Cat Attacks!
+|script = ネコのこうげき！
+|romaji = Neko no Kōgeki
+|star = 1
+|event-chapter = [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]
+|difficulty = ★3
+|prev stage = [[King's Mimic Appears!]]
+|next stage = [[Mimic's Nimble Dodge!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 5.33~13.33 seconds<sup>160f~400f</sup>.
+*5 [[Hippoe]]s spawn after 2 seconds<sup>60f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 20 seconds<sup>600f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*5 [[Sir Seal]]s spawn after 30 seconds<sup>900f</sup>, delay 20 seconds<sup>600f</sup>.
+*5 [[Pigge]]s spawn after 40 seconds<sup>1,200f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[King's Mimic]] spawns as the boss after 16.67 seconds<sup>500f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01361-02.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]
+[[Category:Restriction Stages]]

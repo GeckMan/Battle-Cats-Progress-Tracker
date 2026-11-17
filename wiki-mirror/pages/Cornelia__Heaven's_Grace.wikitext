@@ -1,0 +1,73 @@
+{{EnemiesAppearing|Nono|Celesse|Norn|Serum|Cornelia}}
+'''Cornelia: Heaven's Grace''' is the second stage in [[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]].
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn085 01 c en.png]]
+|stage location = [[File:Mapname085 c en.png]]
+|energy = 120
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Nono|100%
+|Celesse|100%
+|Norn|100%
+|Serum|100%}}
+|boss = {{Magnification|Cornelia|100%}}
+|enemies2 = {{Magnification|Nono|150%
+|Celesse|150%
+|Norn|150%
+|Serum|150%}}
+|boss2 = {{Magnification|Cornelia|150%}}
+|enemies3 = {{Magnification|Nono|200%
+|Celesse|200%
+|Norn|200%
+|Serum|200%}}
+|boss3 = {{Magnification|Cornelia|200%}}
+|enemies4 = {{Magnification|Nono|300%
+|Celesse|300%
+|Norn|300%
+|Serum|300%}}
+|boss4 = {{Magnification|Cornelia|300%}}
+|treasure = - 50,000 XP (10%, unlimited)
+|score reward = '''7,500''': 100,000 XP<br>
+'''4,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': 25,000 XP
+|XP = 13,200 XP
+|width = 5,000
+|max enemies = 12
+|jpname = Kooneria, Heavenly Visitor!
+|script = 天涯の訪問者！コーネリア
+|romaji = Tengai no hōmon-sha! Kōneria
+|star = 4
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]
+|difficulty = ★3
+|prev stage = [[Alois: Cowards Flight]]
+|next stage = [[Hearscht: Silver Beast]]
+}}
+
+==Battleground==
+*1 [[Nono (Enemy)|Nono]] spawns after 8 seconds<sup>240f</sup>.
+*1 [[Celesse (Enemy)|Celesse]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Norn (Enemy)|Norn]] spawns after 2 seconds<sup>60f</sup>.
+*1 [[Serum (Enemy)|Serum]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Celesse (Enemy)|Celesses]] spawn after 22 seconds<sup>660f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Nono (Enemy)|Nonos]] spawn after 24 seconds<sup>720f</sup>, delay 13.33~30 seconds<sup>400f~900f</sup>.
+*3 [[Serum (Enemy)|Serums]] spawn after 80 seconds<sup>2,400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*4 [[Norn (Enemy)|Norns]] spawn after 60 seconds<sup>1,800f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Cornelia (Enemy)|Cornelia]] spawns as the boss.
+**4 [[Serum (Enemy)|Serums]] spawn, delay 62~66 seconds<sup>1,860f~1,980f</sup>.
+**Infinite [[Celesse (Enemy)|Celesses]] spawn, delay 60~62 seconds<sup>1,800f~1,860f</sup>.
+**Infinite [[Nono (Enemy)|Nonos]] spawn, delay 58~60 seconds<sup>1,740f~1,800f</sup>.
+**5 [[Norn (Enemy)|Norns]] spawn, delay 64~68 seconds<sup>1,920f~2,040f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02085-02.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,53 @@
+{{EnemiesAppearing|White Wind|Log}}
+'''Hunt for Sustenance''' is the first stage in [[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]].
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn382 00 s en.png]]
+|stage location = [[File:Mapname382 s en.png]]
+|energy = 30
+|enemy castle hp = 1,500 HP
+|enemies = {{Magnification|White Wind|5%
+|Log|5%}}
+|boss = {{Magnification|Log|5%}}
+|enemies2 = {{Magnification|White Wind|7%
+|Log|7%}}
+|boss2 = {{Magnification|Log|7%}}
+|enemies3 = {{Magnification|White Wind|10%
+|Log|10%}}
+|boss3 = {{Magnification|Log|10%}}
+|score reward = '''7,000''': 50,000 XP<br>
+'''5,700''': [[Summer Break Cats Castaway (Event Gacha)|Legend Trap]] +1<br>
+'''500''': [[Summer Break Cats Castaway (Event Gacha)|Legend Trap]] +2
+|XP = 570 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Searching for Food
+|script = 食料を求めて
+|romaji = Shokuryou o Motomete
+|star = 3
+|event-chapter = [[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Current-Carried Cats]]
+}}
+
+==Battleground==
+*1 [[White Wind]] spawns after 3.33 seconds<sup>100f</sup>.
+*Infinite [[White Wind]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Log]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+**3 [[White Wind]]s spawn after 0.07 seconds<sup>2f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**5 [[Log]]s spawn after 2 seconds<sup>60f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+**3 [[Log]]s spawn after 2.67 seconds<sup>80f</sup>, delay 4~12 seconds<sup>120f~360f</sup>.
+**Infinite [[Log]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01382-01.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

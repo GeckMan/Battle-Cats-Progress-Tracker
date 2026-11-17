@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Hippoe|Squire Rel}}
+'''Gotta Warm Up First''' is the first stage in [[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]].
+
+{{Stage Info
+|stage name = [[File:rc022.png]]
+[[File:Mapsn038 00 s en.png]]
+|stage location = [[File:Mapname038 s en.png]]
+|energy = 30
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Hippoe|80%}}
+|boss = {{Magnification|Squire Rel|80%}}
+|enemies2 = {{Magnification|Hippoe|120%}}
+|boss2 = {{Magnification|Squire Rel|120%}}
+|enemies3 = {{Magnification|Hippoe|160%}}
+|boss3 = {{Magnification|Squire Rel|160%}}
+|enemies4 = {{Magnification|Hippoe|240%}}
+|boss4 = {{Magnification|Squire Rel|240%}}
+|treasure = - [[Sports Day Cat (Rare Cat)|Sports Day Cat]] (1%, 1 time)
+|XP = 900 XP
+|width = 4,000
+|max enemies = 8
+|jpname = Cats First Exercise
+|script = にゃんこ体操第一
+|romaji = Nyanko taisō daiichi
+|star = 4
+|event-chapter = [[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Awkward Entrance]]
+}}
+
+==Battleground==
+*1 [[Hippoe]] spawns after 0.07 seconds<sup>2f</sup>.
+*Infinite [[Hippoe]]s spawn after 20 seconds<sup>600f</sup>, delay 6~20 seconds<sup>180f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**5 [[Hippoe]]s spawn, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+
+==Strategy==
+Simply rush this stage with [[Cow Cat (Normal Cat)|Cow Cat]]. The enemies aren't even at 100% buff, so they're very easy to beat.
+
+==Reference==
+*https://battlecats-db.com/stage/s01038-01.html
+
+{{Monthly}}
+[[Category:Autumn = Sports Day! Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

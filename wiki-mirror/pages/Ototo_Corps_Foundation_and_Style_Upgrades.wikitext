@@ -1,0 +1,38 @@
+Each Foundation of the non-default bases has an effect of reducing all deployed Cat units' damage taken from a specific trait. Similarly, each Style component gives [[Special Abilities#Resist|Resistance]] against a specific ability. These effects are only unlocked when each part is upgraded to level 1; just building them will not give any effects in battle. The percentages for effects of all Foundation and Style types begin from 0.75% at level 1 and increase by 0.75% per level up to 15% at level 20. Note that Foundations do not reduce damage taken by the base.
+
+Target Trait resistance and Wave/Surge resistance can stack: for example, against [[Red EnerG]], with the Waterblast Style and Foundation equipped, his Surge damage would be reduced to 72.25% of his base damage, and direct hit damage to 85%.
+
+{| class="article-table"
+|-
+! Base Type
+! Foundation Target Trait
+! Style Resistance Ability
+|-
+! scope="row" | Slow Beam
+| Floating
+| Slow
+|-
+! scope="row" | Iron Wall
+| Black
+| Waves
+|-
+! scope="row" | Thunderbolt
+| Angels
+| Freeze
+|-
+! scope="row" | Waterblast
+| Red
+| Surge
+|-
+! scope="row" | Holy Blast
+| Zombies
+| Weaken
+|-
+! scope="row" | Breakerblast
+| Aliens
+| Toxic
+|-
+! scope="row" | Curseblast
+| Relic
+| Curse
+|}

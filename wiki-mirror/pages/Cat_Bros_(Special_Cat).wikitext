@@ -1,0 +1,132 @@
+{{Unobtainable}}
+:''For other uses, see [[Cat Bros (disambiguation)]].''
+'''Cat Bros''' is a [[:Category:Special Cats|Special Cat]] that was obtainable by clearing [[We're Number One|For the Fans]]. It was added in [[Version 2.2 Update#Version 2.2.7 Update|Version 2.2.7]]. In [[The Battle Cats Unite!]], it is obtainable by clearing any stage with the following lineup: [[Cat (Normal Cat)|Macho Cat]], [[Tank Cat (Normal Cat)|Wall Cat]], and [[Axe Cat (Normal Cat)|Brave Cat]].
+
+{{Cat Info
+|ID = 108
+|rarity = EX
+|name1 = Cat Bros
+|name2 = Secret Base
+|key1 = Cat Bros EX
+}}
+
+==Evolution==
+Evolves into '''Secret Base '''at level 10.
+
+==Strategy/Usage==
+The Cat Bros can be considered a slightly improved [[Bird Cat (Normal Cat)|Bird Cat]], having the same speed, range and knockbacks with DPS just over a level 20+9 Bird Cat. Once Bird Cat's [[True Form]] is unlocked, however, you can safely disregard this unit, because even a level 20+10 Flying Cat renders them obsolete.
+
+{{Job|Classification = User Rank Dump & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 108
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni108 f00.png
+|Image2 = Uni108 c00.png
+|Name1 = Cat Bros
+|Desc1 = Living happily in a plastic bubble.<br>No need for the outside world!!!<br>(Don't make them a role model, kids…)
+|Name2 = Secret Base
+|Desc2 = A homemade fortress as resilient as the $0.75<br>budget allows. Tough against various attacks,<br>except moisture… a bit weak against that.
+|Name1 (JP) = にゃんこ３兄弟 (Nyanko 3 Kyōdai, 3 Cat Brothers)
+|Desc1 (JP) = プラスチック製のガシャポンカプセルに<br>入った仲良しにゃんこ３兄弟(範囲攻撃)<br>良い子はマネしちゃダメ！絶対！
+|Transl1 (JP) = These 3 Cats are siblings who live<br>in a plastic gachapon capsule (Area Attack)<br>Don't try to imitate them, kids! Absolutely not!
+|Name2 (JP) = 秘密要塞ネコロス (Himitsu Yōsai Nekorosu, Secret Fortress Nekross)
+|Desc2 (JP) = ３兄弟の英知を結集して作られた<br>秘密要塞ネコロス(範囲攻撃)<br>メイン装甲がダンボールなので湿気に弱い
+|Transl2 (JP) = Made through the combined wisdom of 3 siblings.<br>Secret Fortress Nekross (Area Attack)<br>Since the main armor is cardboard, it's weak to moisture.
+|Name1 (TW) = 貓咪三兄弟
+|Desc1 (TW) = 裝在轉蛋殼裡的三隻兄弟(範圍攻擊)<br>我們有練過<br>好孩子千萬不要模仿唷！
+|Name2 (TW) = 秘密要塞貓克羅斯
+|Desc2 (TW) = 集合了貓咪三兄弟的智慧與能力<br>打造出來的秘密要塞貓克羅斯(範圍攻擊)<br>外面裝甲是紙箱所以容易受潮
+|Name1 (KR) = 냥코 3형제
+|Desc1 (KR) = 플라스틱제의 뽑기 캡슐에<br>들어간 사이좋은 냥코 3형제 (범위 공격)<br>착한 아이는 따라하면 안된다냥!
+|Name2 (KR) = 비밀요새 마기로스
+|Desc2 (KR) = 3명의 지혜를 모아 만들어 낸<br>비밀요새 마기로스 (범위 공격)<br>메인 장갑이 박스라서 습기에 약하다
+}}
+
+==Cost==
+*Chapter 1: 680¢
+*Chapter 2: 1,020¢
+*Chapter 3: 1,360¢
+{{Upgrade Cost|EX3}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Bros
+|Normal Base HP = 320
+|Normal Base AP = 263
+|Normal Range = 170
+|Normal Foreswing = 32
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 54
+|Normal Speed = 10
+|Normal KB = 4
+|Normal Cost = 680
+|Normal Recharge = 290
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Secret Base
+|Evolved Base HP = 320
+|Evolved Base AP = 263
+|Evolved Range = 170
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 54
+|Evolved Speed = 10
+|Evolved KB = 4
+|Evolved Cost = 680
+|Evolved Recharge = 290
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50<br>Lv.30<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 320 HP
+|val-Normal-Attack Power = 263 damage<br>(86.7 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 32f <sup>1.07s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 9.67 ~ 2 seconds
+|val-Normal-MaxHP = 5,440 HP
+|val-Normal-MaxAttack = 4,470 damage<br>(1,473.63 DPS)
+|val-Evolved-Health = 5,440 HP
+|val-Evolved-Attack Power = 4,470 damage<br>(1,473.63 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 32f <sup>1.07s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 9.67 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni108 f00}}
+
+==Trivia==
+*Cat Bros was formerly unlocked by inputting a [[Serial Codes|Serial Code]] until the feature was removed in [[Version 4.3 Update|Version 4.3]].
+*In the English version, a special [[PONOS Campaigns/You're Number One!|campaign event]] was held from March 21st, 2017 to April 21st, 2017 which would incentivize players to help [[PONOS Corporation|PONOS]] reach 111,111 followers on their Facebook page. Once the campaign was successful, from May 1, 2017 to May 9, 2017, the event stage [[We're Number One|For the Fans]] went live, which would drop Cat Bros.
+*Cat Bros' [[wikipedia:Gashapon|gachapon]] capsule is nearly identical to [[Capsule Cat (Special Cat)|Capsule Cat]]'s.
+*Cat Bros' Japanese name, Nyanko 3 Kyōdai ("Cat 3 Brothers") is a reference to the children's song "[[wikipedia:Dango 3 Kyodai|Dango 3 Kyōdai]]" ("Dango 3 Brothers").
+*Secret Base's Japanese name, Secret Fortress Nekross, is a reference to the anime ''[[wikipedia:Super Dimension Fortress Macross|Super Dimension Fortress Macross]]''.
+*In the Nintendo Switch port, if the save file were to be edited where Cat Bros is forced into its True Form state, it leaves a template slot in its place with placeholder "@" symbols on its name and description. Summoning it will result in spawning an effect before disappearing afterwards.
+
+==Reference==
+*https://battlecats-db.com/unit/109.html
+
+----
+{{CatNav|Coppermine|Madam Bride}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Area Attack Cats]]

@@ -1,0 +1,20 @@
+<onlyinclude><loggedin>{| class="stubcat" style="overflow:hidden;clear:both;height:115px;max-width:570px;border:2px solid white;border-radius:15px;padding:0px 10px;background:#21312c;background-image:-webkit-linear-gradient(top,#21312c 0%,#4a6963 100%);background-image:linear-gradient(to bottom,#21312c 0%,#4a6963 100%);background-repeat:no-repeat;background-position:0 0;background-size:auto auto;margin:2px auto;box-shadow:1px 1px 2px #000;"
+| class="nomobile" style="position:relative;bottom:-5px;"| [[File:Titantemplate.png|link=|bottom|120px|class=notpageimage|alt=]]
+| style="padding-left:20px;margin-top:5px;color:white;font-size:15px;line-height:16px;"|
+<!-- WARNING part-->
+<div class="catbox_text_container"><div class="catbox_text warning_text" style="text-indent:-18px;">~ Nyanko, this article seems to be in need of a translation!</div>
+
+<!-- QUOTE part 1-->
+<div class="catbox_text" style="text-indent:-18px;">~ Show off your skills to {{SITENAME}} by [{{fullurl:{{FULLPAGENAME}}|action=edit}} translating it], all while following our [[Battle Cats Wiki:Community Guidelines/Editing Guidelines|Editing Policy]], of course. </div>
+
+<!-- QUOTE part 2-->
+<div class="catbox_text nomobile" style="text-indent:-18px;">~ Please make sure not to use any online translation service!</div>
+</div>
+|}</loggedin>{{#ifeq: {{NAMESPACENUMBER}} | 0 | <includeonly>[[Category:Translation requests]]</includeonly> }}</onlyinclude>
+
+;Description
+:This template will categorize articles that include it into [[:Category:Translation requests]], and mark it with a translation needed template.
+;Syntax
+:Type <code>{{t|TranslationNeeded}}</code> at the start of an article.
+
+[[Category:Page notices]]

@@ -1,0 +1,106 @@
+'''Raynard''' (ごん兵衛, '''''Gonbei''''') is a [[:Category:Red Enemies|Red]] enemy that appears in [[Legend Stages]]. He was added in [[Version 10.3 Update|Version 10.3]].
+
+{{Enemy Info
+|name = Raynard
+|image = E 541.png
+|first appearance = '''UL''': [[Cathode Influencer|Sub-chapter 33 - Cathode Influencer]]
+|latest appearance = '''ZL''': [[Euler Archipelago|Sub-chapter 15 - Euler Archipelago]]
+|money drop = 600¢ - 2,370¢
+}}
+
+==Enemy==
+Raynard is a white fox wearing a red robe made from the hide of some poor [[Pigge]]. The Piggeskin makes him a Red enemy. This enemy is a very niche one, hiding behind frontliners and backliners alike with his huge range. He deals a bit more damage than a 100% [[Tackey]], but additionally creates a Lv.3 [[Surge Attack|Surge]] at a random spot within his massive attack area, effectively acting as a weaker, mobile [[Surge Base (Enemy Base)|Surge Base]].
+
+==Strategy==
+[[:Category:Rusher-class Cats|Rusher-class units]] are great at killing Raynard, most specifically level 40 [[Bahamut Cat (Special Cat)|Awakened Bahamut]]— as with any Attack Up [[Cat Combo|Combo]] can one-shot Raynard with good timing. Even for a [[:Category:Long Distance Enemies|Long Distance enemy]], his stats are weak. Unfortunately, they are amplified x4 with his Surge Attack giving him a noticeable 39.2k DPH/5,136 DPS.
+
+Individually and even more so when he's in groups, Raynard acts similarly to the [[Surge Base (Enemy Base)|Surge Base]]. Alone, one is unreliable and will rarely hit your units, being consistently inconsistent with passable RNG. In groups, however, Raynards become a dangerous threat as all created Surges have 125 outward piercing range and 250 inner range, and in numbers this may be enough to decimate stacks, a valid threat which should be rushed as previously mentioned. The few frames of blue vapor indicate the end of his telegraph for his attack, so manage your cash carefully before he or his posse hits.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 541
+|Type = Red
+|Image1 = Enemy icon 541.png
+|Name1 = Raynard
+|Desc1 = Learning Surge Attack from an online course,<br>this fox accidentally hit Pigge with a wave while<br>illegally practicing in the park. Now in disguise<br>to avoid getting spotted by the cops...
+|Name1 (JP) = ごん兵衛 (Gonbei)
+|Desc1 (JP) = オンライン授業で烈波を修得中のキツネ。<br>法律で禁じられている屋外練習中に<br>烈波がブタヤロウを直撃。証拠隠滅のため<br>服に仕立て上げて着ている。
+|Transl1 (JP) = This fox is learning Intense Waves from an online course.<br>Accidentally got a direct hit on [[Pigge|Bastard Pig]] with an<br>Intense Wave while illegally practicing outdoors.<br>To hide the evidence, he made it into clothes and is wearing it.
+|Name1 (TW) = 狐兵衛
+|Desc1 (TW) = 透過遠距教學課程學習烈波中的狐狸。<br>在執行法律禁止的戶外練習時<br>烈波直接擊中豬野郎，<br>為了要消滅證據就做成衣服來穿。
+|Name1 (KR) = 폭시
+|Desc1 (KR) = 온라인 수업으로 열파를 습득 중인 여우<br>법으로 금지된 야외 연습 중에 열파가<br>돼지새끼를 직격. 증거인멸을 위해<br>옷으로 만들어 입고 있다
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 33-6: [[Cathode Influencer]] (100%)
+*Stage 34-3: [[Kuala Lum-Pool]] (100%)
+*Stage 35-3: [[Organic Chromosomes]] (100%)
+*Stage 36-4: [[Canopy Altar]] (100%)
+*Stage 40-2: [[Breathtaking Waves]] (100%)
+
+===[[Zero Legends]]===
+*Stage 2-2: [[Zero Horizon]] (100%)
+*Stage 9-2: [[A Life of Antithesis]] (100%)
+*Stage 15-5: [[Euler Archipelago]] (100%)
+*Stage 24-1: [[Lying Somniloquy]] (120%)
+*Stage 30-5: [[Sluggish Sketching]] (120%)
+*Stage 34-5: [[Thunderous Trilby]] (120%)
+
+===[[Special Events|Event Stages]]===
+*[[Invasion of the Swamplord]]: [[Ghost King III (Merciless)]] (100%)
+*[[Jinfore Volcano]]: [[Infernal Crater Area 14]] (100%)
+*[[Otherworld Colosseum#Special Clearance|Otherworld Colosseum]]: [[Round 3 (Special Clearance)|Round 3]] (100%)
+*[[Otherworld Colosseum#Grand Battle|Otherworld Colosseum]]: [[Round 1 (Grand Battle)|Round 1]] (100%)
+*[[Otherworld Colosseum#Half-Off+: Special|Otherworld Colosseum]]: [[Round 3 (Half-Off+: Special)|Round 3]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Raynard
+|Health = 98000
+|Attack Power = 9800
+|Attack Range = 1700
+|Attack Type = Area
+|Time Between Attacks = 229
+|Movement Speed = 4
+|Knockback = 4
+|Foreswing = 90
+|Backswing = 44
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~1,700)<br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 3 [[Surge Attack]] between 150 and 1,900 range
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+541 e.png|Raynard's spritesheet
+Raynard.gif|Raynard's attack animation
+IdleRaytard.gif|Raynard's walking animation
+</gallery>
+
+==Trivia==
+*The name Raynard quite literally means "fox" in French, but the "ay" replacing the "e".
+**Raynard may also be a reference to [[wikipedia:Reynard the Fox|Reynard the Fox]].
+*His Japanese name, Gonbei, is a portmanteau of ''Gon'', as in [[wikipedia:Gon, the Little Fox|''Gon, the Little Fox'']], and ''Donbei'', as in [https://www.nissinfoods.com.hk/eng/products/nissin-donbei/nissin-donbei-kitsune-udon Nissin Donbei Kitsune Udon] (''kitsune'' means "fox").
+*There is an error in Raynard's English description, stating that he used a [[Wave Attack]] instead of a [[Surge Attack]] when he accidentally hit [[Pigge]]. This is likely a mistranslation resulting from how Surge Attack's Japanese name (烈波 ''Reppa'') translates to "Intense Wave".
+
+==Reference==
+*https://battlecats-db.com/enemy/543.html
+
+----
+{{EnemyNav|Snow Miku 2021|Ranma Saotome (M)}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Surge Attack Enemies]]

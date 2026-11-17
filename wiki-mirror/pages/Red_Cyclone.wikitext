@@ -1,0 +1,141 @@
+'''Red Cyclone''' (レッドサイクロン, ''Reddo Saikuron'', '''Red Cyclone''') is a [[:Category:Red Enemies|Red]]/[[:Category:Floating Enemies|Floating]] [[:Category:Cyclones|Cyclone]] introduced in [[Attack on R-Cyclone (Expert)|Crimson Catastrophe]]. It was added in [[Version 2.2 Update#Version 2.2.3 Update|Version 2.2.3]].
+
+{{Enemy Info
+|name = Red Cyclone
+|image = E 064.png
+|first appearance = [[Attack on R-Cyclone (Expert)|Crimson Catastrophe]]<br>
+'''ZL:''' [[Aimless Dialogue|Sub-chapter 9 - Aimless Dialogue]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Red Cyclone deals absurd damage and attacks non-stop, destroying anything it touches in less than a second. However, it has one of the shortest ranges in the game, somewhat slow speed, and two exploitable traits.
+
+==Strategy==
+Because of its extreme DPS, the use of [[:Category:Anti-Red Cats|anti-Red]]/[[:Category:Anti-Floating Cats|anti-Floating]] units with crowd-control abilities ([[:Category:Cats with Freeze ability|freeze]], [[:Category:Cats with Slow ability|slow]] or [[:Category:Cats with Knockback ability|knockback]]) are absolutely necessary to impede it. Examples include [[Witch Cat (Rare Cat)|Witch Cat]], [[Bishop Cat (Rare Cat)|Bishop Cat]], [[Pirate Cat (Rare Cat)|Pirate Cat]], [[Bodhisattva Cat (Super Rare Cat)|Bodhisattva Cat]], [[Apple Cat (Super Rare Cat)|Apple Cat]] and [[Fortune Teller Cat (Rare Cat)|Fortune Teller Cat]]. Just be warned that if you only use Pirate Cat and/or Fortune Teller Cat for knockback effects, your stack will gradually clip into Red Cyclone as it gets knocked back and potentially die all at once unless Red Cyclone can be quickly frozen/defeated before it attacks.
+
+In Floors 21 of the [[Heavenly Tower/Floor 21|Heavenly]] and [[Infernal Tower/Floor 21|Infernal]] Towers, things are made slightly more complicated by the addition of [[Christmas D.|Christmas Ds]] that can wipe out your stacks, so use [[:Category:Long Distance Cats|Long Distance Cats]] such as [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]] and [[Red Riding Mina (Special Cat)|Red Riding Mina]] to knock them back behind the frontlines, or longer-ranged crowd-control options backed by meatshields that stall these enemies briefly.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 064
+|Type = Red/Floating
+|Image1 = Enemy icon 064.png
+|Name1 = Red Cyclone
+|Desc1 = The relentless assault of wind<br>keeps curious gawkers far away.<br>If only there was some way to stop<br>or stun it - a counterattack chance?
+|Name1 (JP) = レッドサイクロン (Reddo Saikuron, Red Cyclone)
+|Desc1 (JP) = 超高速回転による連続攻撃は<br>いかなる者もよせつけない。<br>動きを止めたり、押し返す手段があれば<br>何とか攻略できるかも！？
+|Transl1 (JP) = No one can stop its<br>continuous attack by super high-speed rotation.<br>If you have the means to stop its movement or push it back,<br>you may be able to somehow defeat it!?
+|Name1 (TW) = 赤色旋風
+|Desc1 (TW) = 超高速旋轉的連續攻擊<br>讓任何人都無法接近。<br>如果有辦法阻止或反彈攻擊<br>說不定可以反敗為勝！？
+|Name1 (KR) = 레드 사이클론
+|Desc1 (KR) = 초고속 회전에 의한 연속 공격은<br>어떠한 녀석도 다가오지 못하게 한다.<br>움직임을 멈추거나, 밀어버릴 수만 있다면<br>어떻게든 공략할 수 있을지도!?
+}}
+
+==Variants ==
+{{Variant
+|original = Red Cyclone
+|Dark Cyclone
+|Its damage per hit is quite low, but its 20% chance to [[Knockback|knockback]] Cat Units somewhat makes up for it. However, Dark Cyclone itself gets knocked back up to 10 times. It appears in [[Attack on D-Cyclone (Expert)|Heaven of Darkness]] and [[NEO Darkness Heaven]].
+|White Cyclone
+|Very similar to Red Cyclone in terms of stats, but with more knockbacks. Its lack of a secondary trait may make it slightly harder to counter than the previous Cyclones. It appears in [[Attack on W-Cyclone (Expert)|Peerless]] and [[Peerless Too]].
+|Divine Cyclone
+|The first non-[[:Category:Floating Enemies|Floating]] Cyclone; units such as [[Stilts Cat (Rare Cat)|Stilts Cat]], [[Cat Toaster (Super Rare Cat)|Cat Toaster]] and [[Juliet Cat (Super Rare Cat)|Juliet Cat]] are needed to keep it at bay. It appears in [[Oncoming Maelstrom (Expert)|Wrath of Heaven]] and [[Wrath of the Divine]].
+|Metal Cyclone
+|It has the highest health of any [[:Category:Metal Enemies|Metal]] enemy, making [[Critical Hit]]s a necessity to defeat it. Moves very slowly, and has as many knockbacks as [[Dark Cyclone]]. It appears in [[Attack on Titanium (Insane)|Sweet Irony]] and [[Bitter Irony]].
+|Cosmic Cyclone
+|It has significantly longer range than most Cyclones, though not enough to reach [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]] or [[Psychocat (Rare Cat)|Psychocat]], and strengthens by 200% at 30% health. It appears in [[Black Hole Rising (Insane)|Dimension of Despair]] and [[Dimension of Delirium]].
+|The Perfect Cyclone
+|Has extreme range and very high DPS compared to other enemies with similar range, although not much for a Cyclone. Due to its Long Distance ability, it is vulnerable to tanks with enough health and few enough knockbacks to enter its blind spot, like [[Titan Cat (Normal Cat)|Jamiera Cat]], [[Crazed Titan Cat (Super Rare Cat)|Crazed Titan Cat]] and [[Kotatsu Cat (Super Rare Cat)|Kotatsu Cat]]. It appears in [[Oncoming Storm (Insane)|Red Sky at Morning]] and [[Red Sky at Night]].
+|Zyclone
+|A Cyclone that can revive with 100% health an unlimited number of times. To win against it, the player will need to defeat it with [[:Category:Zombie Killer Cats|Zombie Killers]] or sneak units past it before it can revive. Unlike most [[:Category:Zombie Enemies|Zombies]], it can't burrow past Cat Units. It appears in [[Unholy Tempest (Insane)|The Rolling Dead]] and [[The Dead Keep Rolling]].
+|Super Cosmic Cyclone
+|This Cyclone is a [[:Category:Starred Alien Enemies|Starred Alien]], which means its difficulty will vary depending on one's [[Anti-Starred Alien Treasures]]. Its damage is fairly low regardless of Treasures, but it Warps cats back with every attack. It has even longer range than [[Cosmic Cyclone]]: enough to hit [[Surfer Cat (Super Rare Cat)|Surfer Cat]], but still not enough to reach [[Psychocat (Rare Cat)|Psychocat]]. It appears in [[The Wormhole Opens (Deadly)|The 2nd Dimension]] and [[The 3rd Dimension]].
+|Primeval Cyclone
+|A [[:Category:Relic Enemies|Relic]] Cyclone that has the highest health and movement speed of any full-sized Cyclone, and increases its attack power by 200% after reaching 50% health. It appears in [[Charybdis' Mouth (Merciless)|Typhoon Nemo]] and [[Typhoon Nihil]].
+|Mesocosmocyclone
+|A very strong [[:Category:Starred Alien Enemies|Starred Alien]] peon that warps Cat Units ''forward'' with every hit, while also having fast movement speed, short range and non-stop attacks. As such, it can push at terrifying speeds when not met with crowd-controllers or [[:Category:Cats with Warp Immunity|Cats with Warp Immunity]]. It appears in [[Cats of the Cosmos]] Chapter 3 and [[Legend Stages]].
+|Li'l Zyclone
+|A [[:Category:Zombie Enemies|Zombie]] enemy that has high health and burrows far, but has somewhat low DPS; his main role is to intercept the flow of meatshields. Unlike [[Zyclone]], he can only revive once. He appears in [[Into the Future]] Chapter 3 [[Zombie Outbreaks]] and [[Uncanny Legends]].
+|Aku Cyclone
+|Moves very slowly but has above-average range for a Cyclone, 4 knockbacks and a [[Shield]] with as much health as the Cyclone itself: 1,666,666, effectively giving it 8,333,330 HP. Topping this off is its [[:Category:Aku Enemies|Aku]] trait, leaving players with few reliable means of stalling it in its first appearance without [[:Category:Uber Rare Cats|Uber Rare Cats]]. The only silver lining is that its damage per hit is relatively low compared to other Cyclones. It appears in [[Wrath of Hell (Deadly)|The Great Diablo]] and [[The Greatest Diablo]].
+|Mini White Cyclone
+|A [[:Category:Floating Enemies|Floating]] enemy with even higher health than [[Li'l Zyclone]] and 120k DPS, which is balanced out by single-target attacks and even lower speed than [[White Cyclone]]. He appears in [[Zero Legends]].
+|Mini Angel Cyclone
+|An [[:Category:Angel Enemies|Angel]] enemy that's not as deadly as [[Mesocosmocyclone]] nor as resilient as [[Li'l Zyclone]], but can potentially hit further and even more frequently than other Cyclones with a 25% chance of creating a level 1 [[Mini-Surge]] at 150-750 range. She appears in [[Zero Legends]].
+|E-792
+|A [[:Category:Floating Enemies|Floating]] enemy that uses Long Distance attacks like [[The Perfect Cyclone]], but with shorter reach, standing range and damage. She also has a 100% chance to weaken units to 25% for 2 seconds, effectively perma-weakening them with her non-stop attacks. She appears in [[Zero Legends]].
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 9-4: [[Aimless Dialogue]] (200%)
+
+===[[Special Events|Event Stages]]===
+*Crimson Catastrophe: [[Attack on R-Cyclone (Expert)]] (100%)
+*[[Deadly Carnival!]]: [[Tornado Carnival (Deadly)]] (100%)
+*[[Bad to Worse]]: [[Tragedy in Red (Insane)]] (200%)
+*[[Crimson Vengeance]]:
+**[[Wrath of R-Cyclone (Insane)]] (100%)
+**[[Revenge of R-Cyclone (Deadly)]] (200%)
+*[[Heavenly Tower]]:
+**[[Heavenly Tower/Floor 21|Floor 21]] (200%)
+**[[Heavenly Tower/Floor 42|Floor 42]] (100%)
+*[[Infernal Tower]]:
+**[[Infernal Tower/Floor 21|Floor 21]] (200%)
+**[[Infernal Tower/Floor 42|Floor 42]] (100%)
+*[[Golden Tower]]:
+**[[Golden Tower/Floor 21|Floor 21]] (200%)
+**[[Golden Tower/Floor 42|Floor 42]] (100%)
+*[[Otherworld Colosseum#Cheap Labor 2|Otherworld Colosseum]]: [[Round 1 (Cheap Labor 2)|Round 1]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Catclaw Championships#Catclaw Championships Rank 6|Catclaw Championships Rank 6]]: [[Rank-Up Test 1 (Rank 6)|Rank-Up Test 1]] (100%)
+</div>
+
+==Stats ==
+{{Enemy Stats
+|Enemy = Red Cyclone
+|Health = 999999
+|Attack Power = 92000
+|Attack Range = 90
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 4
+|Ability = -
+|Element = Red/Floating
+}}
+
+{{UnitViewer|enemy}}
+
+{{Gallery|Enemy icon 064}}
+
+==Trivia==
+*Originally, Red Cyclone was spawned much closer to its base; the cats that attacked the base would not be harmed. As of [[Version 2.0 Update|Version 2.0]], Red Cyclone is spawned further from its base.
+*Even though they were introduced around the same time, Red Cyclone has several unrelated enemies' IDs between it and [[White Cyclone]]: [[Lione Hippoe]], [[Lucky Sloth]], [[Bears Be Bare]] and [[Monkey King (Enemy)|Monkey King]].
+**Furthermore, Red Cyclone is the first [[:Category:Cyclones|Cyclone]] in the [[Enemy Release Order]], but the first Cyclone Cat in the [[Cat Release Order]] is [[Bronze Cat (Rare Cat)|Bronze Cat]], which unlocks after defeating [[Dark Cyclone]].
+*Red Cyclone has:
+**The highest attack power of all [[:Category:Red Enemies|Red Enemies]] and Cyclones.
+**The fastest attack rate of all Red enemies.
+**The third-highest attack power of all [[:Category:Floating Enemies|Floating Enemies]], with [[Filibuster Obstructa]] and [[Metafilibuster (Enemy)|Metafilibuster]] in second and first place respectively.
+**The second-highest DPS of all enemies, beaten only by [[Teacher Cybear]].
+
+==Reference==
+*https://battlecats-db.com/enemy/066.html
+
+----
+{{EnemyNav|Dark Emperor Santa|Lione Hippoe}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Red Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Cyclones]]

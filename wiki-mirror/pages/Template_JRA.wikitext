@@ -1,0 +1,55 @@
+{{#invoke:Navbox|main
+|template = Template:JRA
+|title = [[JRA Collaboration Event]]
+|navbox_class = jra
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]]
+*[[Catnip Tricky (Special Cat)|Catnip Tricky]]
+*[[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+|group2 = Enemy Units
+|list2 =
+*[[White Wind]]
+*[[Red Wind]]
+*[[Dark Wind]]
+
+|header3 = Stages
+|group3 = Autumn Flower Award (GI)
+|list3 =
+*[[The Final Race Of The Triple Crown of Mares]]
+*[[A Race for 3-year-old Mares Only]]
+*[[An Early Clock Game]]
+
+|group4 = Kikuka Award (GI)
+|list4 =
+*[[Conclusion of the Classic Triple Crown]]
+*[[Enforcement Distance・Turf 3000m]]
+*[[The Strongest Horse will Win]]
+
+|group5 = Emperor's Award (Autumn) (GI)
+|list5 =
+*[[The Highest Honor For an Old Horse]]
+*[[A Race With Tradition and History]]
+*[[Aim for the Autumn Shield]]
+
+|group6 = Arima Kinen (GI)
+|list6 =
+*[[Decide On a Racehorse by Fan Voting]]
+*[[The Biggest Grand Prix at The End Of The Year]]
+*[[Prize Money Is The Highest In Japan at 300 Million Yen]]
+*[[Attack of the 2500m Turf]]
+*[[2 Minutes 30 Seconds To Settle]]
+*[[Middle and Long Distance Elite]]
+*[[The Name Comes from the Race Founder]]
+*[[Make the Last Run!]]
+
+|group7 = Aim GI Nyanko Horse Racing
+|list7 =
+*[[Aim GI Nyanko Horse Racing/Levels 1~20|Stages 1~20]]
+}}<templatestyles src="JRA/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:JRA]]}}<noinclude>[[Category:Navboxes]]</noinclude>

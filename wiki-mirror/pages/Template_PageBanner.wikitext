@@ -1,0 +1,12 @@
+<includeonly><onlyinclude><templatestyles src="PageBanner/styles.css" /><div class="page-banner" style="width: min(100%, {{#invoke:String|replace|{{{width|700px}}}|px}}px);">[[File:{{{1|BCWikiLogo.png}}}]]</div>{{#seo:
+|image = {{{1|BCWikiLogo.png}}}
+|description = {{{description|}}}
+}}</onlyinclude></includeonly>
+<!--KEEP THIS IN SYNC WITH [[Template:ResponsiveImage]]!!!-->
+This template is used for images shown at the top of pages, such as gacha banners and event images. It also automatically includes the #seo parser function to set the page image and a description if provided. Another benefit of this template is that it is styled to shrink properly on devices with smaller widths so that the image does not overflow.
+
+The proper shrinking effect can also be achieved using {{t|ResponsiveImage}}. If the image you want to scale is not at the top of the page above the lead paragraph, use ResponsiveImage.
+
+==Usage==
+<pre>{{PageBanner|File name|width=}}</pre>
+The first parameter takes the name of the file to use as the page banner with the file extension included, and the <code>width</code> parameter is the maximum width of the image in px set to a default of 700px. No other values are necessary as the CSS preserves the image's aspect ratio.

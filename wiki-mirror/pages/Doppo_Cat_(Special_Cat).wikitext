@@ -1,0 +1,127 @@
+'''Doppo Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Baki Hanma Collaboration Event/Event Gacha|Event Capsule]] during the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 798
+|rarity = EX
+|name1 = Doppo Cat
+|name2 = Doppo Cat CC
+}}
+
+==Evolution==
+Evolves into '''Doppo Cat CC''' at level 10.
+
+==Strategy/Usage==
+Doppo Cat is viable throughout [[Empire of Cats]] and early [[Stories of Legend]]. Otherwise, his [[Freeze]] activation rate is terribly low, too much to be optimal for any situation. Once [[Witch Cat (Rare Cat)|Witch Cat]] is obtained, she tends to outclass him in almost any relevant situation due to her spammability and fast attack rate.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 798
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni798 f00.png
+|Image2 = Uni798 c00.png
+|Name1 = Doppo Cat
+|Desc1 = Cat aiming to head the Shinshinkai. Right eye taken<br>from a beggar is receiving medical care. May Freeze<br>Red enemies with Long-range Area attacks.
+|Name2 = Doppo Cat CC
+|Desc2 = Cat who idolizes a famed fighter who fells tigers<br>barehanded. Spins wild yarns about fights it had no part<br>in. Long-range Area attacks May Freeze Red enemies.
+|Name1 (JP) = ネコ独歩 (Neko Doppo, Cat Doppo)
+|Desc1 (JP) = 実戦空手・神心会の総帥を目指すネコ<br>右目はものもらいの治療中<br>たまに赤い敵の動きを一瞬止める(遠方範囲攻撃)
+|Transl1 (JP) = A Cat who aims to become the head of the Shinshinkai Karate School<br>His right eye is currently undergoing treatment for a stye<br>Occasionally stops the movement of Red enemies (Long Distance Area Attack)
+|Name2 (JP) = ネコ独歩CC
+|Desc2 (JP) = トラを素手で倒した伝説の格闘家に憧れるネコ<br>さも目撃したかのように戦いの様子を語るのが得意<br>たまに赤い敵の動きを一瞬止める(遠方範囲攻撃)
+|Transl2 (JP) = This Cat admires a legendary martial artists who defeated a tiger with his bare hands<br>Good at talking about battles as if he had witnessed them <br>Occasionally stops the movement of Red enemies (Long Distance Area Attack)
+|Name1 (TW) = 獨步貓
+|Desc1 (TW) = 目標成為實戰空手道「神心會」館長的貓咪<br>右眼因為長了針眼而正在治療中<br>有時候能使紅色敵人瞬間動作停止(遠距範圍攻擊)
+|Name2 (TW) = 獨步貓CC
+|Desc2 (TW) = 對空手打倒老虎的傳說格鬥家充滿憧憬的貓咪<br>擅長將沒看過的戰鬥描述的好像親眼見證一樣<br>有時候能使紅色敵人瞬間動作停止(遠距範圍攻擊)
+|Name1 (KR) = 고양이 돗포
+|Desc1 (KR) = 실전 가라테, 신심회의 총수를 목표로 하는 고양이.<br>오른쪽 눈은 눈병으로 치료 중.<br>가끔 빨간 적의 움직임을 순간 멈춘다 (원거리 범위공격)
+|Name2 (KR) = 고양이 돗포CC
+|Desc2 (KR) = 호랑이를 맨손으로 쓰러뜨린 전설의 격투가를 동경하는 고양이.<br>마치 직접 본 것처럼 싸움의 상황을 설명하는 것이 특기.<br>가끔 빨간 적의 움직임을 순간 멈춘다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Doppo Cat
+|Normal Base HP = 350
+|Normal Base AP = 100
+|Normal Range = 300
+|Normal Foreswing = 32
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 54
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 500
+|Normal Recharge = 700
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~375)<br>
+{{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Doppo Cat CC
+|Evolved Base HP = 350
+|Evolved Base AP = 100
+|Evolved Range = 300
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 54
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 500
+|Evolved Recharge = 700
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~375)<br>
+{{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50+20
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 350 HP
+|val-Normal-Attack Power = 100 damage<br>(22.9 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 32f <sup>1.07s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 5,950 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(389.31 DPS)
+|val-Evolved-Health = 5,950 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(389.31 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 32f <sup>1.07s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni798 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/799.html
+
+----
+{{CatNav|Kaioh Cat|Mighty Morta-Loncha}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Long Distance Cats]]

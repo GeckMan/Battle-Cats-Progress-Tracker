@@ -1,0 +1,11 @@
+.page-banner {
+	margin: auto;
+	text-align: center;
+}
+
+.page-banner .mw-file-element {
+	height: auto !important;
+	max-width: 100%;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Red Wind|Log}}
+:''For the half anniversary stage, see [[Tree Strike Trial (13 1/2)]].''
+'''Tree Strike Trial''' is the first stage in [[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]].
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn413 00 s en.png]]
+|stage location = [[File:Mapname413 s en.png]]
+|energy = 30
+|enemy castle hp = 3,000 HP
+|enemies = {{Magnification|Red Wind|10%
+|Log|5%}}
+|boss = {{Magnification|Log|5%}}
+|treasure = - 30,000 XP (10%, unlimited)<br>
+- 20,000 XP (27%, unlimited)<br>
+- 10,000 XP (63%, unlimited)
+|XP = 10,000 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Wood Training
+|script = 木の修行
+|romaji = Ki no Shugyō
+|star = 1
+|event-chapter = [[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Wind Slash Trial]]
+}}
+
+==Battleground==
+*1 [[Red Wind]] spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Log]] spawns as the boss.
+**2 [[Red Wind]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Log]]s spawn after 2 seconds<sup>60f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**5 [[Log]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01413-01.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

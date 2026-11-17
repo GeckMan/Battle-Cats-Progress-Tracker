@@ -1,0 +1,244 @@
+<tabber>
+A Noble Evil Lv.1~5=
+{{EnemiesAppearing|Kaijin Doge|Squire Rel|Pigge|Kang Roo|Madam Peng|Baron Face}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn075 00 a en.png]]
+|stage location = [[File:Mapname075 a en.png]]
+|enemies = {{Magnification|Kaijin Doge|0
+|Squire Rel|0
+|Pigge|0
+|Kang Roo|0
+|Madam Peng|0}}
+|boss = {{Magnification|Baron Face|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = A Noble Evil Lv.X
+|script = 高貴なる悪 Lv.X
+|romaji = Kōki naru Aku Lv.X
+|star = 1
+|event-chapter = [[Ep. 2: The Face of Evil]]
+|max clears = 3
+}}
+
+==Battleground==
+*2 [[Kaijin Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*3 [[Squire Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Pigge]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Kang Roo]] spawns after 40 seconds<sup>1,200f</sup>.
+*2 [[Squire Rel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*2 [[Madam Peng]]s spawn after 80 seconds<sup>2,400f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*Infinite [[Squire Rel]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*1 [[Pigge]] spawns after 106.67 seconds<sup>3,200f</sup>.
+*5 [[Kaijin Doge]]s spawn after 120 seconds<sup>3,600f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*1 [[Baron Face]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |A Noble Evil
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Kaijin Doge]]
+! scope="col" |[[Squire Rel]]
+! scope="col" |[[Pigge]]
+! scope="col" |[[Kang Roo]]
+! scope="col" |[[Madam Peng]]
+! scope="col" |[[Baron Face]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|150%
+|150%
+|150%
+|150%
+|100%
+|100%
+|25,000 HP
+|40
+|100,000 XP
+|1,200 XP
+|-
+! scope="row" |2
+|263%
+|263%
+|263%
+|263%
+|175%
+|275%
+|40,000 HP
+|50
+|[[Cat Capsule|Cat Ticket]] +1
+|1,500 XP
+|-
+! scope="row" |3
+|375%
+|375%
+|375%
+|375%
+|250%
+|450%
+|60,000 HP
+|60
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +2
+|1,800 XP
+|-
+! scope="row" |4
+|488%
+|488%
+|488%
+|488%
+|325%
+|625%
+|80,000 HP
+|70
+|[[Catamin]] [A] +2
+|2,100 XP
+|-
+! scope="row" |5
+|600%
+|600%
+|600%
+|600%
+|400%
+|800%
+|100,000 HP
+|80
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +2
+|2,400 XP
+|}
+
+==Strategy==
+An easy stage. Stack up [[Goggles Cat (Special Cat)|Green Nyanko Rangers]] on the opening peons, then just swarm Baron Face with [[Fish Cat (Normal Cat)|Whale Cats]] and [[Fedora Cat (Special Cat)|Blue Nyanko Rangers]] while he's Frozen for an easy win. Be wary of enemy scaling, as things ramp up fairly quickly.
+
+|-|
+A Noble Evil Lv.6~10=
+{{EnemiesAppearing|Those Guys|Madam Peng|Kaijin Doge|Malizabeth|Archbaron Face}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn075 00 a en.png]]
+|stage location = [[File:Mapname075 a en.png]]
+|enemies = {{Magnification|Those Guys|0
+|Madam Peng|0
+|Kaijin Doge|0
+|Malizabeth|0}}
+|boss = {{Magnification|Archbaron Face|0}}
+|restriction = [[No Continues]]
+|width = 4,500
+|max enemies = 20
+|jpname = A Noble Evil Lv.X
+|script = 高貴なる悪 Lv.X
+|romaji = Kōki naru Aku Lv.X
+|star = 1
+|event-chapter = [[Ep. 2: The Face of Evil]]
+|max clears = 3
+}}
+
+==Battleground==
+*3 [[Those Guys]] spawn after 6.67 seconds<sup>200f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*4 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*2 [[Madam Peng]]s spawn after 20 seconds<sup>600f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*Infinite [[Kaijin Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[Malizabeth]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Those Guys]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Malizabeth]]s spawn after 80 seconds<sup>2,400f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*4 [[Madam Peng]]s spawn after 93.33 seconds<sup>2,800f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*8 [[Those Guys]] spawn after 183.33 seconds<sup>5,500f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Archbaron Face]] spawns as the boss after 13.33 seconds<sup>400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |A Noble Evil
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Madam Peng]]
+! scope="col" |[[Kaijin Doge]]
+! scope="col" |[[Malizabeth]]
+! scope="col" |[[Archbaron Face]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |6
+|400%
+|400%
+|800%
+|100%
+|100%
+|150,000 HP
+|100
+|[[Catamin]] [B] +2
+|3,000 XP
+|-
+! scope="row" |7
+|750%
+|500%
+|1,350%
+|175%
+|125%
+|190,000 HP
+|120
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +3
+|3,600 XP
+|-
+! scope="row" |8
+|1,100%
+|600%
+|1,900%
+|250%
+|150%
+|230,000 HP
+|150
+|[[Catamin]] [C] +2
+|4,500 XP
+|-
+! scope="row" |9
+|1,450%
+|700%
+|2,450%
+|325%
+|175%
+|260,000 HP
+|180
+|250,000 XP
+|5,400 XP
+|-
+! scope="row" |10
+|1,800%
+|800%
+|3,000%
+|400%
+|200%
+|300,000 HP
+|200
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +3
+|6,000 XP
+|}
+
+==Strategy==
+Stack up [[Goggles Cat (Special Cat)|Green Nyanko Rangers]] and [[Ribbon Cat (Special Cat)|Pink Nyanko Rangers]] on Those Guys and Madam Peng. Once Malizabeth makes her way to the frontlines, kill her with [[Scarf Cat (Special Cat)|Red Nyanko Ranger]] to hopefully allow your Green Nyanko Rangers to permafreeze Archbaron Face. At this point, spam [[Fedora Cat (Special Cat)|Blue Nyanko Rangers]] and [[Fish Cat (Normal Cat)|Whale Cats]] alongside the occasional Red Nyanko Ranger to handle Malizabeth. Even as Archbaron Face is knocked back, he'll usually just be frozen again by your Green Nyanko Rangers again.
+</tabber>
+
+==Walkthrough==
+{{Walkthrough
+|aO0zP3jWf8U|Novastrala|Only features strongest and weakest A Noble Evil Lv.s
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s24075.html
+
+{{Anniversary}}
+
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

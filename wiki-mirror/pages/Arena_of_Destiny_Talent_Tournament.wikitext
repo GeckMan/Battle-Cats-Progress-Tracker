@@ -1,0 +1,124 @@
+{{EnemiesAppearing|Talent Orb Castle|Mr. Puffington|Sir Rel|Crustaceous Scissorex|Gabriel|Bun Bun Symbiote|Great Angel Chibinel|St. Dober|Scissoroo|Othom}}
+'''Talent Tournament''' is the first [[Arena of Destiny]] of the [[Catclaw Dojo]]. It awards Bronze, Silver and Gold Treasure Chests with [[Talent Orbs|Ability Orbs]].
+
+{{Stage Info
+|stage name = [[File:E 720.png]]
+[[File:Mapsn030 00 r en.png]]
+|stage location = [[File:Mapname030 r en.png]]
+|energy = 10
+|enemy castle hp = Unlimited
+|base = {{Magnification|Talent Orb Castle|0}}
+|enemies = {{Magnification|Mr. Puffington|0
+|Sir Rel|0
+|Gabriel|0
+|Bun Bun Symbiote|0
+|Great Angel Chibinel|0
+|Scissoroo|0
+|Othom|0
+|Crustaceous Scissorex|0}}
+|boss = {{Magnification|Crustaceous Scissorex|0
+|St. Dober|0
+|Great Angel Chibinel|0
+|Bun Bun Symbiote|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 20
+|jpname = Fighting Instinct Tournament
+|script = 闘争本能大会
+|romaji = Tōsō Honnō Taikai
+|star = 1
+|dojo-chapter = [[Arena of Destiny]]
+|difficulty = ★9
+|require = Clear [[A New Legend]]
+}}
+
+==Rules==
+{{DojoRule|Massive Damage}}
+
+==Battleground==
+*The enemy base here is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]].
+*1 [[Scissoroo]] (1,200%) spawns after 156.67 seconds<sup>4,700f</sup>.
+*1 [[Othom]] spawns after 156.67 seconds<sup>4,700f</sup>.
+*2 [[Sir Rel]]s (150%) spawn after 156.67 seconds<sup>4,700f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*2 [[Gabriel]]s (500%) spawn after 156.67 seconds<sup>4,700f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*2 [[Gabriel]]s (500%) spawn after 123.33 seconds<sup>3,700f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Sir Rel]]s (150%) spawn after 116.67 seconds<sup>3,500f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*2 [[Gabriel]]s (500%) spawn after 103.33 seconds<sup>3,100f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Mr. Puffington]] (100%) spawns after 106.67 seconds<sup>3,200f</sup>.
+*1 [[Scissoroo]] (1,200%) spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Great Angel Chibinel]] spawns after 100 seconds<sup>3,000f</sup>.
+*2 [[Gabriel]]s (500%) spawn after 93.33 seconds<sup>2,800f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*2 [[Sir Rel]]s (100%) spawn after 93.33 seconds<sup>2,800f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Crustaceous Scissorex]] (100%) spawns after 80 seconds<sup>2,400f</sup>.
+*Infinite [[Gabriel]]s (300%) spawn after 73.33 seconds<sup>2,200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Scissoroo]] (800%) spawns after 66.67 seconds<sup>2,000f</sup>.
+*2 [[Gabriel]]s (300%) spawn after 60 seconds<sup>1,800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Scissoroo]] (800%) spawns after 60 seconds<sup>1,800f</sup>.
+*3 [[Sir Rel]]s (100%) spawn after 50 seconds<sup>1,500f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*2 [[Scissoroo]]s (800%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Gabriel]]s (300%) spawn after 26.67 seconds<sup>800f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Scissoroo]]s (800%) spawn after 23.33 seconds<sup>700f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Gabriel]]s (300%) spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Othom]] spawns.
+*When the base takes 100,000 damage:
+**4 [[Gabriel]]s (300%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 200,000 damage:
+**2 [[Sir Rel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 210,000 damage:
+**2 [[Sir Rel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 400,000 damage:
+**1 [[Bun Bun Symbiote]] (200%) spawns as the boss.
+*When the base takes 700,000 damage:
+**4 [[Gabriel]]s (300%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 710,000 damage:
+**1 [[Scissoroo]] (1,400%) spawns.
+*When the base takes 1,000,000 damage:
+**1 [[St. Dober]] (100%) spawns as the boss.
+**1 [[Mr. Puffington]] (100%) spawns.
+*When the base takes 1,200,000 damage:
+**4 [[Gabriel]]s (300%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 1,400,000 damage:
+**1 [[Crustaceous Scissorex]] (100%) spawns as the boss.
+**1 [[Othom]] spawns.
+*When the base takes 1,500,000 damage:
+**1 [[Scissoroo]] (1,400%) spawns.
+*When the base takes 1,600,000 damage:
+**5 [[Gabriel]]s (500%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 1,700,000 damage:
+**1 [[Great Angel Chibinel]] spawns as the boss.
+**1 [[Mr. Puffington]] (100%) spawns.
+*When the base takes 2,000,000 damage:
+**1 [[Scissoroo]] (1,400%) spawns.
+*When the base takes 2,100,000 damage:
+**2 [[Sir Rel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 2,500,000 damage:
+**1 [[Crustaceous Scissorex]] (100%) spawns as the boss.
+**1 [[Bun Bun Symbiote]] (400%) spawns.
+*When the base takes 3,000,000 damage:
+**2 [[Sir Rel]]s (150%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 3,500,000 damage:
+**1 [[St. Dober]] (150%) spawns as the boss.
+**1 [[Great Angel Chibinel]] spawns.
+*When the base takes 4,000,000 damage:
+**1 [[Bun Bun Symbiote]] (500%) spawns.
+*When the base takes 4,100,000 damage:
+**8 [[Gabriel]]s (500%) spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base takes 5,000,000 damage:
+**1 [[Crustaceous Scissorex]] (150%) spawns as the boss.
+**1 [[Mr. Puffington]] (150%) spawns.
+**3 [[Sir Rel]]s (150%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Explanation==
+*You have three minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The total points earned from killing enemies will decrease overtime.
+*Unlike other Dojos, this one has a few other differences:
+**Enemies will drop money on defeat.
+**The base will not attack but is still an animated base, meaning [[Surge Attack|Surges]] and [[Explosion]]s can damage it.
+
+==Reference==
+*https://battlecats-db.com/stage/s11030-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

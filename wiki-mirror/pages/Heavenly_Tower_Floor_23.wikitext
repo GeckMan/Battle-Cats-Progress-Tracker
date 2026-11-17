@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Shibalien|I.M. Phace|Calamary|Alpacky|Pastry Cat}}
+:''Not to be confused with the [[Infernal Tower]] version of [[Infernal Tower/Floor 23|Floor 23]].''
+'''Floor 23''' is the 23rd floor of [[Heavenly Tower]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 22 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 200
+|enemy castle hp = 640,000 HP
+|enemies = {{Magnification|Shibalien|3,200%
+|I.M. Phace|1,000%
+|Calamary|300%
+|Alpacky|300%}}
+|boss = {{Magnification|Pastry Cat|200%}}
+|treasure = - [[Catfruit|Yellow Catfruit]] +3 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 5
+|jpname = 23rd Floor
+|script = 23階
+|romaji = 23 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★9
+|prev stage = [[Heavenly Tower/Floor 22|Floor 22]]
+|next stage = [[Heavenly Tower/Floor 24|Floor 24]]
+}}
+
+==Battleground==
+*Infinite [[Shibalien]]s spawn after 0.07 seconds<sup>2f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[I.M. Phace]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Shibalien]] spawns after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Shibalien]] spawns after 80 seconds<sup>2,400f</sup>.
+*Infinite [[Shibalien]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Pastry Cat (Enemy)|Pastry Cat]] spawns as the boss.
+**1 [[I.M. Phace]] spawns.
+**1 [[Calamary]] spawns.
+**1 [[Alpacky]] spawns.
+
+==Strategy==
+This is a simple Alien stage with Pastry Cat as an annoying frontline threat. Pastry only has 235 range, so the name of the game simply becomes killing Pastry while chipping down Alpacky at the same time. Long-range units like [[Little Leaguer Cat (Super Rare Cat)|Golfer Cat]], [[Nymph Cat (Super Rare Cat)|Medalist Cat]] and [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] are great here for that purpose. Pastry's 2.8 million health and high DPS can be threatning, so ways to control him like [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] or a Traitless meatshield like [[Ancient Egg: N001 (Special Cat)|Haniwa Cat]] are advised.
+
+==Walkthrough==
+{{Walkthrough
+|風雲にゃんこ塔 23階|にゃんこ大戦争(貓咪大戰爭)Battle Cats|
+|ovwV2Ge9cSw|にゃんこ大戦争(貓咪大戰爭)Battle Cats|
+|iWzLLMaYa-o|にゃんこ大戦争(貓咪大戰爭)Battle Cats|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-23.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]
+[[Category:No Continue Stages]]

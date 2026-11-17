@@ -1,0 +1,69 @@
+:''This article is about the enemy. For the Cat Unit, see [[Food Stall Cat (Rare Cat)]].''
+'''Cafeteria Cat''' (ネコ給食当番, ''Neko Kyūshokutōban'', '''Cat School Lunch Duty''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Food Stall Cat Awakes!]]. They were added in [[Version 13.7 Update|Version 13.7]].
+
+{{Enemy Info
+|name = Cafeteria Cat
+|image = E 701.png
+|appearance = [[Food Stall Cat Awakes!]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+Cafeteria Cat may look like a joke similarly to most other Awakened Cats, until you realize why exactly you can only fight this enemy after [[Stories of Legend]]. With a guaranteed chance to [[Curse]] any surviving cat for 3 seconds and also having the [[Immune to Slow|Immunity to Slow]], this boss will rush down your frontlines with an [[Omni Strike]] that can reach many units if not careful.
+
+==Strategy==
+Cafeteria's backswing is pretty long, allowing you to use fast units like [[Jelly Dumpling Cat]] to sneak in hits. [[Dogumaru (Special Cat)|Dogumaru]] is also useful to tank hits while having Curse Immunity to block Cafeteria's Curse.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Food Stall Cat Awakes!]]:
+**[[Stalled Evolution 1 (Merciless)]]
+**[[Stalled Evolution 2 (Merciless)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Cafeteria Cat
+|Health = 1700000
+|Attack Power = 25000
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 83
+|Movement Speed = 25
+|Knockback = 8
+|Foreswing = 12
+|Backswing = 71
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -250~300)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+701 e.png|Cafeteria Cat's spritesheet
+</gallery>
+
+==Trivia==
+*Cafeteria Cat is based on the fact that in most Japanese schools, students will put on white coats and caps, then [[wikipedia:School lunch in Japan#Current|collect and deliver]] the school's lunches to their classrooms.
+*Cafeteria Cat is one of the five non-[[:Category:Relic Enemies|Relic]] enemies to have the Curse ability, the others being [[Master Uril (Enemy)|Master Uril]], the [[Relic Doge Base (Enemy Base)|Relic Doge Base]], [[Malevolent Dark Cat]] and [[Sage of Selection Darvin]].
+
+==Reference==
+*https://battlecats-db.com/enemy/703.html
+
+----
+{{EnemyNav|Idi:Ne|Bannerman Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemy Cats]]

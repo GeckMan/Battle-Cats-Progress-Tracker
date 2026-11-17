@@ -1,0 +1,124 @@
+{{ENExclusive}}
+'''Nekokkuma''' is a [[:Category:Special Cats|Special Cat]] unlocked by logging in during the [[Betakkuma Collaboration Event]]. It was added in [[Version 7.2 Update|Version 7.2]].
+
+{{Cat Info
+|ID = 433
+|rarity = EX
+|name1 = Nekokkuma
+|name2 = Killer Nekokkuma
+}}
+
+==Evolution==
+Evolves into '''Killer Nekokkuma''' at level 10.
+
+==Strategy/Usage==
+Since this unit has such a low chance to knockback Dark enemies, it almost always fails to do so due to its low stats, most notably range. Can overall be seen as a bootleg version of [[Tin Cat (Rare Cat)|Tin Cat]] or as a meatshield with double cost for virtually no benefit. Due to not being good at either of his possible roles, the use of this unit is not recommended. His niche is also useless since Dark enemies already have a high knockback count.
+
+Due to its rapid attack rate, it can be somewhat good for taking out [[Metal Hippoe]]s and, in some stages, [[Metal Doge]]s. Otherwise, he's good for [[User Rank]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 433
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni433 f00.png
+|Image2 = Uni433 c00.png
+|Name1 = Nekokkuma
+|Desc1 = Inspired by a weirdly cute white<br>bear, has mastered those slick moves.<br>Might Knockback Dark enemies.
+|Name2 = Killer Nekokkuma
+|Desc2 = Embracing its savage instincts, it<br>rains rapid-fire blows on its enemy.<br>Might Knockback Dark enemies.
+|Name1 (TW) = 賤萌貓 (Jiànméng Māo, Cute Cat)
+|Desc1 (TW) = 受到"賤萌地激烈擺動身體的爆笑白熊"的影響<br>就學會了這種激烈扭動的貓咪<br>偶爾會打飛黑色敵人
+|Transl1 (TW) = Influenced by the "hilarious white bear who wiggles its body so fiercely"<br>Learned to wiggle fiercely as a cat<br>Occasionally pushes back Dark enemies
+|Name2 (TW) = 殺意賤萌貓 (Shāyì Jiànméng Māo, Killer Cute Cat)
+|Desc2 (TW) = 解放野性本能後激烈扭動的貓咪<br>敏捷的出拳可把敵人打得滿地找牙呢！<br>偶爾會打飛黑色敵人
+|Transl2 (TW) = A cat that twists and turns after unleashing its wild instincts<br>Agile punches that will knock your enemy's teeth out!<br>Occasionally pushes back Dark enemies
+|Name1 (KR) = 냥코쿠마
+|Desc1 (KR) = 적극적으로 깐죽대는 하얀 곰의 영향을 받아<br>끈적대는 움직임을 습득한 고양이<br>아주 가끔 검은 적을 날려버린다
+|Name2 (KR) = 살의의 냥코쿠마
+|Desc2 (KR) = 야생의 본능을 깨워 끈적하게 움직이는 고양이<br>빠르게 날리는 주먹으로 적을 망신창이로 만든다<br>아주 가끔 검은 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 100¢
+*Chapter 2: 150¢
+*Chapter 3: 200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nekokkuma
+|Normal Base HP = 200
+|Normal Base AP = 10
+|Normal Range = 140
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 11
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 100
+|Normal Recharge = 360
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Killer Nekokkuma
+|Evolved Base HP = 200
+|Evolved Base AP = 10
+|Evolved Range = 140
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 11
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 100
+|Evolved Recharge = 360
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 10 damage<br>(27.27 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 11f <sub>0.37 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(6f <sup>0.2s</sup> backswing)
+|val-Normal-Recharge Time = 12 ~ 3.2 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 170 damage<br>(463.64 DPS)
+|val-Evolved-Health = 3,400 HP
+|val-Evolved-Attack Power = 170 damage<br>(463.64 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 11f <sub>0.37 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(6f <sup>0.2s</sup> backswing)
+|val-Evolved-Recharge Time = 12 ~ 3.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni433 f00}}
+
+==Trivia==
+*Neko means cat and kuma means bear. Nekokkuma is Cat Bear while Killer Nekokkuma is Killer Cat Bear. Each of them have the corresponding Cat's head.
+*The "weirdly cute white bear" mentioned in this unit's description is [[Betakkuma (Rare Cat)|Betakkuma]], who is also described as a "weirdly cute white bear". Strangely, although Nekokkuma means Cat Bear, it takes human body (lower) half of Betakkuma rather than the bear (upper) half.
+
+----
+{{CatNav|Betakkuma|White Swordsman Cat}}
+----
+
+{{Betakkuma}}
+{{Cats}}
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Special Cats]]
+[[Category:Cat Units]]
+[[Category:Collaboration Event Cats]]
+[[Category:Stamp Reward Cats]]

@@ -1,0 +1,44 @@
+During every [[battle]], '''Enemy Units''' will spawn from the [[Enemy Bases|enemy base]] and attempt to destroy the player's [[Cat Base]]. As of {{CurrentVer}}, there are over 700 different enemies, each found in different areas of the game.
+
+==Attributes==
+===Abilities===
+:''See [[Special Abilities]].''
+
+===Types and Traits===
+In addition to stats and abilities, each enemy has at least one '''type'''. An enemy's types determine which units' abilities will affect it, and some also have unique abilities or other properties. Types can be grouped into three distinct categories:
+
+'''Standard''': The most common types in the game, listed in the filter and affected by abilities that target "all enemies", such as [[Li'l Nyandam (Special Cat)|Li'l Nyandam]]'s slow and [[Balaluga (Uber Rare Cat)|Balalan Pasalan]]'s freeze. Includes [[:Category:Red Enemies|Red]], [[:Category:Dark Enemies|Dark]], [[:Category:Floating Enemies|Floating]], [[:Category:Metal Enemies|Metal]], [[:Category:Angel Enemies|Angel]], [[:Category:Alien Enemies|Alien]], [[:Category:Zombie Enemies|Zombie]], [[:Category:Aku Enemies|Aku]] and [[:Category:Relic Enemies|Relic]] and [[:Category:Traitless Enemies|Traitless]].
+
+'''Traits''': Includes all standard types except for Traitless. Affected by abilities that target "traited enemies" or "all traits", such as [[Miko Mitama (Uber Rare Cat)|Miko Mitama]]'s resistance and [[Wafer Cat (Special Cat)|Wafer Cat]]'s slow.
+
+'''Special''': Uncommon types that aren't counted as traits, these enemies are usually limited to a few stages or even collabs. These types are not targeted by most type-specific abilities, even those that supposedly target all enemies. Some of them always overlap with a standard type like Traitless or Red, giving players a way to use said abilities on them regardless. Includes [[:Category:Typeless Enemies|Typeless]], [[:Category:Colossus Enemies|Colossus]], [[:Category:Behemoth Enemies|Behemoth]], [[:Category:Sage Enemies|Sage]], [[:Category:Kaijin Enemies|Kaijin]], [[:Category:Witch Enemies|Witch]] and [[:Category:EVA Angel Enemies|EVA Angel]].
+
+===Stats===
+Each enemy has its own '''stats''', like Cat Units. However, the attack power and HP of enemies can change depending on the strength magnification (see below).
+
+===Strength Magnifications===
+Every stage assigns enemies a '''strength magnification''' (also known as a '''buff''') which can change their HP and attack power. For example, a [[Doge]] at 100% strength magnification has its default stats (90 HP/8 damage) while the same enemy at a 200% buff would have 200% of, or twice, its base stats (180 HP/16 damage). In general, the further you progress in the game, the higher the strength magnifications are. While most enemies are fought at 100% when introduced, there are exceptions: [[Dark Emperor Nyandam]], for example, is buffed to 150% in his [[Moon (Empire of Cats)|first appearance]], and is never seen at 100% outside of [[Soul Leasing]].
+
+Strength magnification can also increase or decrease [[Shield]] HP, but other stats and abilities such as speed, attack rate, [[Barrier]] HP, etc. are unaffected.
+
+As of [[Version 9.5 Update|Version 9.5]], some stages can have enemies whose health and attack power are given separate magnifications. For example, a Doge with 200% HP and 150% attack power would have 100% more health than normal but only deal 50% more damage. However, this feature is quite rare to see outside the [[Gauntlet]]s.
+
+===Bosses===
+Many stages contain enemies set as bosses, giving them several unique properties. Depending on the stage, bosses may spawn on timers or when the enemy base reaches a set amount of HP (typically 99%). If the base would lose all its HP before the boss gets to spawn, the base will have 1 HP and the boss will spawn, unless the enemy limit is full or the boss spawns on a timer. Bosses have the following differences from normal enemies:
+*Unlike other enemies, bosses spawn a different distance ahead of the base depending on what the base's design is. See [[Enemy Bases]] for each base's boss spawn distance.
+*When a boss spawns, it will produce a '''"Boss Shockwave"''' which knocks back all Cat Units on the battlefield, except for [[:Category:Cats with Boss Shockwave Immunity|cats with Boss Shockwave Immunity]]. This boss shockwave knocks back Cat Units more slowly but also much farther than regular knockbacks, disabling their [[Hitbox|hitbox]] for 47 frames and pushing them back by a distance of approximately 735. Immunity to Knockback does not protect from boss shockwaves, nor does Resist Knockback affect the distance.
+** In certain stages, the boss shockwave will be accompanied by a noticeable screen shake effect. Stages with this effect include the final bosses of [[Game Chapters]], major boss stages in the [[Legend Stages]] (mostly those with an associated [[:Category:Mythic Cats|Mythic Cat]] unlock), and [[:Category:Advent Stages|Great Advent Stages]].
+*In [[:Category:Stages with Base Barriers|some stages]], the enemy base is protected by a "[[Base Barrier]]" which renders it impervious to damage until the boss linked to it is defeated. In stages where the boss only spawns after damaging the base, the Base Barrier is not present until the boss spawns. This feature was introduced in [[Version 13.3 Update|Version 13.3]] and first used in the [[Anniversary/11 1/2 Year|Disaster in the Wan Wan Kingdom]] stages ([[Nyanko Daisensou|BCJP]]) and [[Professional Babbler (Merciless)|Professional Babbler]] (other versions).
+*If a unit is within a boss's range when it spawns, the boss will immediately begin an attack. This applies even for [[:Category:Zombie Enemies|Zombies]] with the Burrow ability, such as [[Miss Haka]] and [[Big Sal]].
+*Bosses cannot be knocked back behind the enemy base, making it harder to avoid fighting them.
+*If the player loses a battle while a boss is alive, the remaining % of the boss's HP will be shown in the game over screen.
+*Which enemies are considered bosses depends on the stage. For example, [[THE SLOTH]] is a boss in [[Salty is Seawater]] and his [[Enticing Tunnels|next]] [[Thriller Bridge|two]] appearances, is a normal enemy in [[Tactical War Tuna]] and [[Dumpy Cave]], and is a boss again in [[Crunchy Wall]].
+*Unlike in most games, a boss is not always the main threat of a stage. This status can be assigned to any enemy, even peons like [[Squire Rel]] or [[Doge Dark]], mainly for a formation disruption.
+
+==See also==
+*[[Enemy Dictionary]]
+*[[Enemy Release Order]]
+
+{{Enemies}}
+{{BC Navigation}}
+[[Category:Game Features]]

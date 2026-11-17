@@ -1,0 +1,7 @@
+<includeonly><onlyinclude>{{#seo:|image={{{1|Site-community-image-wiki.png}}}}}</onlyinclude></includeonly>
+This template is used to manually set the page image of a certain page. To use it, enter the full file name of the image you want to set as a parameter, and insert the template at the very top of the page. If no file name is supplied, it uses the image below as the default.
+
+[[File:Site-community-image-wiki.png|400px]]
+
+==Example==
+<pre>{{PageImage|BCWikiLogo.png}}</pre>

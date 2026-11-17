@@ -1,0 +1,101 @@
+{{EnemiesAppearing|Croco|Manic Island Cat|Berserkory|Brollow}}
+'''Ogre Island (Deadly)''' is a special stage that was added in [[Version 5.0 Update|Version 5.0]] and is available on the '''21st''' and the '''26th''' of every month if the player has previously completed all [[:Category:Crazed Cat Stages|Crazed Cat Stages]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc057.png]]
+[[File:Mapsn108 00 s en.png]]
+|stage location = [[File:Mapname108 s en.png]]
+|energy = 200
+|catamins = [[Catamin]] [A] x4
+|enemy castle hp = 999,999 HP
+|enemies = {{Magnification|Croco|3,000%
+|Manic Island Cat|100%
+|Berserkory|100%
+|Brollow|100%}}
+|boss = {{Magnification|Croco|200%}}
+|treasure = - [[Crazed Fish Cat (Super Rare Cat)|Crazed Fish Cat]]'s [[True Form]] (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 4,000 XP
+|width = 4,400
+|max enemies = 20
+|jpname = Ogre Island DX Extreme
+|script = 鬼ヶ島DX 極ムズ
+|romaji = Onigashima DX Goku Muzu
+|twname = Monster Island (Extreme)
+|twscript = 鬼島DX 極難
+|twromaji = Guǐdǎo DX Jí Nán
+|star = 1
+|event-chapter = Fish Maniac
+|difficulty = ★9
+|prev stage = N/A
+|next stage = N/A
+|require = Complete all 9 [[:Category:Crazed Cat Stages|Crazed Cat]] stages
+|occurrence = The 21st day of each month<br>
+The 26th day of each month
+}}
+
+==Battleground==
+*Infinite [[Croco]]s (3,000%) spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*10 [[Croco]]s (3,000%) spawn, delay 0.67~3.33 seconds<sup>20f~100f</sup>.
+*1 [[Manic Island Cat (Enemy)|Manic Island Cat]] spawns.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 34 seconds<sup>1,020f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 34.67 seconds<sup>1,040f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 133.33 seconds<sup>4,000f</sup>, delay 80 seconds<sup>2,400f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 134.33 seconds<sup>4,030f</sup>, delay 80 seconds<sup>2,400f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 135 seconds<sup>4,050f</sup>, delay 80 seconds<sup>2,400f</sup>.
+*Infinite [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn after 135.67 seconds<sup>4,070f</sup>, delay 80 seconds<sup>2,400f</sup>.
+*3 [[Brollow]]s spawn after 250 seconds<sup>7,500f</sup>, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+*4 [[Brollow]]s spawn after 316.67 seconds<sup>9,500f</sup>, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+*5 [[Brollow]]s spawn after 400 seconds<sup>12,000f</sup>, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+*10 [[Brollow]]s spawn after 500 seconds<sup>15,000f</sup>, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+*When the base reaches 99% HP:
+**1 [[Croco]] (200%) spawns as the boss.
+**3 [[Manic Island Cat (Enemy)|Manic Island Cats]] spawn, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**1 [[Berserkory]] spawns.
+
+==Strategy==
+The fewer [[Wave Attack|Waves]] the Berserkory releases, the better; the Manic Island Cats can help by making him miss, but don't keep too many alive or you may find yourself being overwhelmed by them. Your lineup will be similar to what you may have used in [[Fish Hell (Insane)]], but with [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]] replacing [[Lizard Cat (Normal Cat)|Dragon Cat]] or [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon]]; and, instead of a [[:Category:Critical Hit Cats|Critical Hitter]], bring [[Pirate Cat (Rare Cat)|Dread Pirate Catley]] or another strong [[:Category:Anti-Red Cats|anti-Red Cat]]. More DPS is needed against the tougher Islands.
+
+<u>DO NOT BRING MELEE ATTACKERS!</u> The Manic Island Cats' DPS will crush melee units before they can even get a hit on, and even if they manage to get a hit on, their impact is insignificant compared to ranged attackers, making them nothing but a cash drain and a waste of slots. As a bonus point, when the Berserkory comes out, any melee attacker would walk into Berserkory's range and trigger a wave.
+
+It is recommended not to bring fast meatshields like [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser]] or [[Crazed Cat (Super Rare Cat)|Manic Mohawk]]. Slow meatshields, like [[Cat (Normal Cat)|Mohawk Cat]] and [[Boogie Cat (Special Cat)|Gato Amigo]] will be killed by the islands before Berserkory can hit them, therefore not letting him do his wave attack.
+
+==='''Recommended Units'''===
+*[[Lifeguard Cats (Super Rare Cat)|Sweet Bro Cats]] - Has wave immunity, LD, and the ability to slow the islands, keep them back and allowing strats such as freezing [[Berserkory]] with [[Apple Cat (Super Rare Cat)|iCat]] since the islands won't be able to reach him. Even if such strategies are not viable they will still provide good support and damage.
+*[[Ancient Egg: N001 (Special Cat)|Haniwa Cat]] - A very bulky anti-Traitless meatshield who is beneficially slow and takes many hits from the Manic Islands.
+*[[Pirate Cat (Rare Cat)|Dread Pirate Catley]] - A very safe and consistent unit to use for this stage for Berserkory, his high range and knockback can allow you to avoid him further. The Wave Immunity talent can add an extra layer of protection, but you don't need it.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]] - One of the best no gacha anti-red specialists, he will be able to completely shred Berserkory's HP when he comes out. However, do '''NOT''' use him against the Manic Islands prior to base hit, as he will get destroyed and be a waste of your money. Do note he is less safe to use compared to Catley, as you're constantly fighting Berserkory head-on rather than avoiding him.
+*[[Salon Cat (Rare Cat)|Cyborg Cat]] - Even though money in this stage can be tight, a stack of Cyborgs will eventually accumulate enough DPS to quickly kill the Manic Islands, easily earning you more money as you play the stage. However, if your more cost efficient midrangers listed below are at a higher level or have ubers that nuke the Manic Islands very quickly, use them instead.
+*[[Vaulter Cat (Super Rare Cat)|Housewife Cat]], [[Figure Skating Cats (Super Rare Cat)|Drama Cats]], [[Nymph Cat (Super Rare Cat)|Medalist Cat]], [[Brainwashed Gross Cat (Super Rare Cat)|Brainwashed Gross Cat]] - These midrangers stack up to provide extra DPS, this is to help the cyborgs kill the Manic Islands quicker and potentially help beat the stage before the Brollows come out.
+*[[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] - Another good midranger to use in this stage, Manic Macho Legs' wave attack will help in chipping down the Manic Islands, as well as killing the Crocos at the beginning of the stage to quickly earn enough money to start stacking DPS units.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] - A spammable wave blocker that can intercept Berserkory's devastating waves, but it will also cause him to attack due to being outranged and will die to Manic Islands. Only bring this if you kill the Manic Islands too quickly for them to kill your meatshields to bait Berserkory into whiffing.
+*[[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] - An good backline nuker to aid in beating the stage, Bahamut's attacks are enough to severely cripple any Manic Islands, and will aid in killing the Berserkory faster. However, since his TBA is high, heavy support is required to keep him alive. He is replacable with better Ubers, if applicable.
+
+==='''Recommended Ubers'''===
+*[[:Category:Anti-Traitless Cats|Anti-Traitless]] Ubers - Can make short work of the Manic Islands. However, dealing with them will make Berserkory connect more hits, which means you will have to bring Octopus Cat to alleviate this.
+*Ubers with Wave Shield ability - a [[:Category:Wave Shield Cats|Wave Shield]] unit can be helpful against Berserkory. Ranged Wave Shields like [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]], [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku MM2020 Tokyo]], and [[Mighty Kristul Muu (Legend Rare Cat)|Doom Engine Pandora]] are recommended since melee Wave Shields such as [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] will be shredded by the Manic Islands.
+*[[:Category:Cats with Massive Damage ability|Massive Damage]]/[[:Category:Cats with Insane Damage ability|Insane Damage]] vs Red units - They quickly get rid of Berserkory, who is arguably the biggest threat in the stage. Many of them also count with proper stats outside of Reds, so they can help out against the Manic Islands too.
+*[[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]] - More cost efficient Cyborg. Use him in his first form.
+*[[:Category:Anti-Red Cats|Anti-Red]] Ubers - Any [[:Category:Anti-Red Cats|anti-Red Ubers]] such as [[Pai-Pai (Uber Rare Cat)|Pai-Pai]], [[The White Rabbit (Uber Rare Cat)|The White Rabbit]], [[Raiden (Uber Rare Cat)|Raiden]], [[Ice Cat (Uber Rare Cat)|Ice Cat]], [[Momotaro (Uber Rare Cat)|The Peach Angels]], [[Kuu (Uber Rare Cat)|Kuu]] and [[Kamukura (Uber Rare Cat)|Kamukura]].
+
+==Walkthrough==
+{{Walkthrough
+|dqBqO1HQj9w|Nurse Wuffa|Items: [[Battle Items#Rich Cat|Rich Cat]], [[Battle Items#Cat CPU|Cat CPU]]<br>[[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]] can be replaced by [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]]
+|WaGGRDv82vM|DanieA|
+|KscxtlXblh0|Lucas IV|Catley strat, with commentary
+|UrcQdY8rsVg|Lucas IV|Ft. [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] level 40
+}}
+
+==Trivia==
+*Ogre Island's Japanese name, Ogre Island DX, may be a reference to ''The Legend of Zelda: The Dreaming Island DX'', the Japanese name of [[wikipedia:The Legend of Zelda: Link's Awakening|''The Legend of Zelda: Link's Awakening DX'']].
+
+==Reference==
+*https://battlecats-db.com/stage/s01108-01.html
+
+{{Crazed}}
+{{Awakening Stages}}
+[[Category:Crazed Cat Stages]]
+[[Category:Awakening Stages]]
+[[Category:No Continue Stages]]
+[[Category:Event Stages]]

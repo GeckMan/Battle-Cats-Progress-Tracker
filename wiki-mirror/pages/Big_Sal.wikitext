@@ -1,0 +1,116 @@
+'''Big Sal''' (オオさん ''Ō-san'') is a [[:Category:Zombie Enemies|Zombie]] enemy that appears in [[Legend Stages]]. He was added in [[Version 5.7 Update|Version 5.7]].
+
+{{Enemy Info
+|name = Big Sal
+|image = E 304.png
+|first appearance = '''SoL''': [[The Infected King|Sub-chapter 35 - The Infected King]]
+|latest appearance = '''ZL''': [[Sine-Cosine Mine|Sub-chapter 8 - Sine-Cosine Mine]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Big Sal is like an upgraded [[Miss Haka]] - he burrows infinitely until he reaches the [[Cat Base]], and has only one knockback to boot, while also reviving once with 50% health. With Base Destroyer and upwards of 120k attack in most of his appearances, it's effectively guaranteed that he'll destroy the base in one hit if allowed to complete his attack animation. However, he moves very slowly on the battlefield and has short range.
+
+==Strategy==
+The traditional strategy to deal with him alone is to mass-produce units with high DPS like [[Titan Cat (Normal Cat)|Jamiera Cat]], [[Crazed Bird Cat (Super Rare Cat)|Crazed UFO Cat]] and [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cat]] to inflict as much damage as possible between burrows, and use [[Bahamut Cat (Special Cat)|Awakened Bahamut]] only after he revives to kill him off. Another strategy for a lone Sal is to use [[Freshman Cat Jobs (Super Rare Cat)|Prof. Cat Jobs]], who can weaken his damage to 1%, preventing him from destroying the base easily. In levels such as [[Deep Sea Dying]], however, Big Sal is spawned in hordes, so you'll have to press your luck with the [[Surge Attack|Surge]] created by Prof. Cat Jobs' [[True Form]] or rush the stage before the threats spawn.
+
+Units such as [[Piledriver Cat (Super Rare Cat)|Power Piledriver Cat]], [[Welterweight Cat (Rare Cat)|Heavyweight Cat]], [[Meditation Cat (Special Cat)|Paragon Cat]] and [[Mighty Bomburr (Uber Rare Cat)|NEK-0 Sky Fortress]] can keep Big Sal away from the base with their knockback abilities. NEK-0 Sky Fortress can even solo him, provided if it gets one hit in, meaning that you can't spawn other units or Sal will burrow and cause NEK-0 Sky Fortress to miss its attack.
+
+Stacking any other crowd-controller who can freeze Zombies is another way to deal with Big Sal. [[Gardener Cat (Rare Cat)|Lumbercat]] is one of the best for this job, and when paired with [[Healer (Special Cat)|Healer Cat CC]] in [[The Infected King]], they can easily permafreeze him. Lumbercat might also get the last hit in due to his high attack rate, swiftly finishing him off.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 304
+|Type = Zombie
+|Image1 = Enemy icon 304.png
+|Name1 = Big Sal
+|Desc1 = Best leave this lazybones be, he'll<br>chomp anyone who disturbs his naptime.<br>Or worse: he'll tell you neverending stories<br>about his minor league baseball career.
+|Name1 (JP) = オオさん (Ō-san)
+|Desc1 (JP) = 目を開けることすら嫌がる面倒くさがり屋の<br>オオサンショウウオ。プロ野球現役時代は<br>「４本足打法」でチームを優勝に導いた。<br>引退してもタッチを逃れて潜る癖は治らない。
+|Transl1 (JP) = This giant salamander is a troublesome lazybones who doesn't<br>even want to open his eyes. During his pro<br>baseball career, he led his team to victory with his "4-legged batting style".<br>Even in retirement, he hasn't ditched his habit of escaping touch and diving underground.
+|Name1 (TW) = 不死大鯢
+|Desc1 (TW) = 連張開眼睛都嫌麻煩的<br>超怕麻煩大鯢魚。<br>職業棒球時代曾以「4腳打法」率領隊伍優勝。<br>引退後也改不了那挖地道來躲避觸殺的習慣。
+|Name1 (KR) = 아좀씨
+|Desc1 (KR) = 눈 뜨는 것조차 귀찮아 죽는 심각한 귀차니스트<br>현역 프로 야구 선수 시절에는 「4발 타법」으로 팀을<br>우승으로 이끌었었다. 은퇴한 지금도 터치를 피해<br>땅속으로 숨는 버릇은 아직도 고쳐지지 않는 중.
+}}
+
+==Variants==
+{{Variant
+|original = Big Sal
+|Axoloty
+|Big Sal's [[:Category:Starred Alien Enemies|Starred Alien]] variant. It has a [[Barrier]] with 10k HP and can create lethal Lv.10 [[Wave Attack]]s from a distance, but has a backswing lasting over 4 minutes. This backswing is the only delay between attacks that it has, so each of its 5 knockbacks gives it another chance to strike.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 35-6: [[The Infected King]] (200%)
+*Stage 38-3: [[Deep Sea Dying]] (100%)
+*Stage 48-3: [[Glory of Glories]] (200%)
+
+===[[Uncanny Legends]]===
+*Stage 9-3: [[Loach Breach]] (200%)
+*Stage 16-3: [[Hangover Couch]] (200%)
+*Stage 24-4: [[Despotism at Home]] (200%)
+*Stage 29-1: [[Slumbering Cavern]] (250%)
+*Stage 34-1: [[Angkor S.W.A.T.]] (250%)
+*Stage 40-1: [[Toy Boat Graveyard]] (250%)
+
+===[[Zero Legends]]===
+*Stage 8-4: [[Sine-Cosine Mine]] (250%)
+*Stage 27-2: [[Shoddy Fix]] (300%)
+
+===[[Special Events|Event Stages]]===
+*[[Resident Undead]]: [[Mutation Lv.9]] (200%)
+*[[Otherworld Colosseum#Super Rare Sale|Otherworld Colosseum]]: [[Round 3 (Super Rare Sale)|Round 3]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Big Sal
+|Health = 300000
+|Attack Power = 60000
+|Attack Range = 120
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 3
+|Knockback = 1
+|Foreswing = 111
+|Backswing = 40
+|Ability = {{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])<br>
+{{AbilityIcon|Burrow}} [[Burrow|Burrows]] underground 250 when a Cat enters its range (unlimited)<br>
+{{AbilityIcon|Revive}} [[Revive|Revives]] with 50% HP after being dead for 120f <sub>4 seconds</sub> (1 time)
+|Element = Zombie
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+304 e.png|Big Sal's spritesheet
+SadSal.gif|Big Sal's animations
+</gallery>
+
+==Trivia==
+*He is a [[wikipedia:Japanese giant salamander|Japanese giant salamander]], the third-largest amphibian in the world. This endangered species has poor eyesight and extremely slow metabolisms, but their skin is covered in special sensory cells that can pick up on vibrations made by their prey. They can also open their mouths very wide, though not as much as Big Sal. His undead nature and Revive ability are an exaggeration of salamanders' regenerative abilities; a colloquialism for the Japanese giant salamander is ''[https://yokai.com/hanzaki/ hanzaki]'', for how it was once believed that they could even survive being cut in half (''han''),
+*His Japanese name, Ō-san (オオさん), may be derived from 大山椒魚 ''Ōsanshōuo'' (Japanese giant salamander), 大 ''ō'' (big), おっさん ''ossan'' (a derogatory term for a middle-aged or old man), さん ''-san'' (an honorific roughly equivalent to Mr. or Ms.) and ''[[wikipedia:Sadaharu Oh|Sadaharu Oh]]''. Both Big Sal and Oh are retired baseball players, and the "4-legged batting style" (4本足打法) in Big Sal's Japanese description is a reference to the "flamingo" leg kick or "[[wikipedia:ja:一本足打法|1-legged batting style]]" (1本足打法) that Oh is famous for.
+*His spritesheet contains an unused black [[Wave Attack]]-like effect, later used in [[Axoloty]]'s attack animation.
+*Prior to [[Version 5.8 Update|Version 5.8]], Big Sal was limited to burrowing 9,999 times.
+*In the Spanish translation of the game, Big Sal is named ''Peréz Ozo'', treating him as if he were a [[:Category:Zombie Enemies|Zombie]] variant of [[THE SLOTH]] ''(Peréz Oso).''
+
+==Reference==
+*https://battlecats-db.com/enemy/306.html
+
+----
+{{EnemyNav|Miss Haka|Pikotaro}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zombie Enemies]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Enemies with Burrow ability]]
+[[Category:Enemies with Revive ability]]

@@ -1,0 +1,12 @@
+:''See [[Omni Strike|Special Abilities]] and [[Hitbox]] page for more explanation.''
+This ability gives the unit a set distance or area which its attack affects, both forwards and '''backwards''' <u>without a blindspot</u> unlike the [[:Category:Long Distance Cats|Long Distance]] ability, which only allows units to pierce forward. This value varies from each unit. It still has a "trigger range" which will cause the unit to initiate its attack animation, and is either equal or less than its maximum effective range. For example: [[Cat God the Great (Special Cat)|Cat God the Awesome]]'s effective range is from -850~850, but his standing range is only 350 when facing enemies, much shorter than his maximum reach by 500 (this amount is called "piercing range"). However, when the enemy Base is approached, he'll immediately strike the base once his maximum effective range of 850 is reached instead, which enables certain "cheese" strategies. Essentially, Omni Strike with less standing range than maximum range is a feature that sees similar utility to Long Distance in sniping enemies further ahead, but without the caveat of being forced to stand closer to the enemy Base.
+
+An Omni Strike unit has three important parameters:
+
+*'''Negative blindspot:''' This only exists in cats and enemies with the Omni Strike ability. It is the part of the <u>detection box</u> behind a unit's <u>hurtbox</u> that isn't covered by the <u>hitbox</u>. Its existence is not well known and rarely comes into play, but it could lead to some enemies or cats being stuck on an opponent that they can't hit, especially against zombies. Its size is the difference between 320 (for all cats and enemies alike) and the negative reach, so Blanka's negative blindspot is 320-100=220.
+*'''Negative piercing range:''' Only exists in cats and enemies with the Omni Strike ability. It is the part of the hitbox that extends in the negatives, further back than the detection box. Its size is the difference between the negative reach and 320, so Piledriver's negative piercing range is 600-320=280.
+*'''Triggering range:''' Effectively the standing range of a unit, this is the range that a unit's Omni Strike attack will trigger conditionally. For example, since Cat God the Awesome stands at 350, he will attack once an enemy walks within 350 range or less of him. 
+
+==Reference==
+*https://battlecats-db.com/unit/sp_far_ed.html
+[[Category:Cats by ability]]

@@ -1,0 +1,113 @@
+{{JPExclusive}}
+'''Cat Boy''' is a [[:Category:Special Cats|Special Cat]] based on the mascot of [[Battle Cats TV]]. He was added in [[Version 9.5 Update|Version 9.5]] of [[Nyanko Daisensou]]. Starting from September 19th, 2020, Cat Boy can be obtained from [https://ponos.s3.amazonaws.com/information/appli/battlecats/question/nyankoTV_202003.html this site]. He was added to celebrate the official [[Battle Cats TV]] channel getting 150,000 subscribers.
+
+{{Cat Info
+|ID = 542
+|rarity = EX
+|name1 = Cat Boy
+|name2 = Cat Student
+}}
+
+==Evolution==
+Evolves into '''Cat Student''' at level 10.
+
+==Strategy/Usage==
+This young boy is sadly entirely useless outside of [[Empire of Cats]] due to low stats and no abilities. His only use is for his combo, which is pretty useless as well.
+
+{{Job|Classification = Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|I Want To Be A Teacher|Cannon Recharge Up (Sm)|Cat Boy|jpname=先生になりたいでにゃ～る}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 542
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni542 f00.png
+|Image2 = Uni542 c00.png
+|Name1 (JP) = ネコ少年 (Neko Shōnen, Cat Boy)
+|Desc1 (JP) = 年中短パンで過ごすわんぱく少年<br>将来の夢は学校の先生になること
+|Transl1 (JP) = A young boy who wears shorts all year round<br>His dream is to become a school teacher
+|Name2 (JP) = ネコ学生 (Neko Gakusei, Cat Student)
+|Desc2 (JP) = 猫田大学を目指して猛勉強する受験生<br>先生になるためがんばるのでにゃ～る
+|Transl2 (JP) = A student studying hard at Nekota University.<br>Will do his best to become a teacher.
+}}
+
+==Cost==
+*Chapter 1: 350円
+*Chapter 2: 525円
+*Chapter 3: 700円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Boy
+|Normal Base HP = 400
+|Normal Base AP = 100
+|Normal Range = 350
+|Normal Foreswing = 35
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 76
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 530
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Cat Student
+|Evolved Base HP = 400
+|Evolved Base AP = 100
+|Evolved Range = 350
+|Evolved Foreswing = 35
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 76
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 530
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 100 damage<br>(17.24 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 174f <sub>5.8 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 35f <sup>1.17s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Normal-Recharge Time = 17.67 ~ 8.87 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(293.1 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(293.1 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 174f <sub>5.8 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 35f <sup>1.17s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Evolved-Recharge Time = 17.67 ~ 8.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni542 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/543.html
+----
+{{CatNav|Yakisoba Cat|Kasli the Bane}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Single Attack Cats]]

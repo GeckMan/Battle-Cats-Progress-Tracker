@@ -1,0 +1,215 @@
+'''Nymph Cat''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was added in [[Version 9.0 Update|Version 9.0]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]]. [[True Form]] added in [[Version 10.9 Update|Version 10.9]] grants higher health and a chance to [[Knockback]] [[:Category:Aku Enemies|Aku]] enemies. [[Talents]] were added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 522
+|rarity = SR
+|name1 = Nymph Cat
+|name2 = Medalist Cat
+|name3 = Fiend Cat
+}}
+
+==Evolution==
+Evolves into '''Medalist Cat''' at level 10.
+
+Evolves into '''Fiend Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Nymph Cat's primary use is to inflict long-ranged Area Attacks, as she lacks any other [[Special Abilities]]. Compared to [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]], her health and standing range are lower and she has a larger [[Hitbox#Subdivisions|blind spot]], but she inflicts more damage, attacks faster and more frequently, costs slightly less and recharges slightly faster, basically acting as a more aggressive version of Vaulter. As is the case with most [[:Category:Long Distance Cats|Long Distance Cats]], defending her should be a priority. The use of meatshields or tanks who let enemy frontliners live to act as stepping stones is most recommended when using this unit.
+
+==='''True Form'''===
+Nymph's previously pathetic survivability is much improved by an increase of health by more than 50% in [[True Form]]. This makes Fiend Cat's usage as an individual unit even better than before, but as with other forms should not be freely sent without any forethought. His original usage as a Long Distance rusher is drastically improved, allowing him the possibility of sneaking into the range of a tough backliner, and dealing damage to them a few times.
+
+Against Aku, Fiend Cat might be used to gain terrain on heavily [[Shield]]ed bosses while their Shields are down and can be quite effective against the [[Aku Cyclone]], although he generally tends to struggle against them due to low health, and some Aku enemies having [[Surge Attack]]s or another type of piercing range. Beware that Fiend Cat does not have Shield Piercing – you will need the backup of [[:Category:Shield Piercing Cats|Shield Piercing Cats]] in order to fulfill his potential as a sniper.
+
+He does face competition with [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], who has higher standing range, an anti-[[:Category:Zombie Enemies|Zombie]] niche and a potential higher damage output with the [[Savage Blow]] talent unlocked, but Fiend has better advantages with his better Long Distance reach and higher base DPS.
+
+==='''Talents'''===
+'''Tough Vs''' greatly increases Fiend Cat's survivability even more. While he normally likes to snipe danger from afar with his Long Distance, this [[Talents|Talent]] can give him more of a fighting chance whenever Aku enemies do push into his blind spot and whenever Akus create Death Surges on top of him.
+
+'''Target [[:Category:Angel Enemies|Angel]]''' on the other hand, means that Fiend Cat can not only tank more hits from aggressive Angel pushers, but also push them back with a Long Distance attack that can possibly work against the likes of [[Angelic Sleipnir]] and [[Chickful A]] in particular, making him ten thousand times better an investment than a similar [[:Category:Rare Cats|Rare]] unit, [[Stilts Cat (Rare Cat)|Acrobat Cats]]. Due to their lack of Shields, Angel enemies are more vulnerable to Fiend Cat's knockbacks than Aku enemies, so consider unlocking this Talent if you need more anti-Angel defense. This also synergizes well with Tough Vs, giving him a better chance at living even if he gets hit by hard-hitting Angels like [[Angelic Gory]].
+
+'''Attack Buff''' and '''Defense Buff''' are decent abilities. However, like with most other units, the [[Catseye]] route should take priority over these Talents. Additionally, the Tough Vs Talent should obviously be unlocked before even considering the Defense Buff Talent. If you are especially fond of using him, then deciding to invest into either of these will massively increase his usage by increasing the margin of DPS per stack, which synergises particularly well if you boost him in addition to that investment.
+
+'''Resist Slow''' is a situational ability. It could potentially see some use against [[Condemned Peng]], but Fiend Cat doesn't last long enough for this Talent to be worthwhile and all other Aku/Angel enemies with the Slow ability outrange Fiend and can kill him in one hit. Overall, do not invest in this ability.
+
+As a whole, his Talents are a significant improvement for an already situationally outclassed if not good unit to begin with, and can be considered a worthy use of your NP.
+
+==='''Orb'''===
+Fiend Cat, against Aku enemies don't rely much on health or damage, but you can give him an Attack Up vs Aku or Angel. If you unlocked his Tough vs Talent, use Resistant to Aku or Angel orb is the best.
+
+{{Job|Classification = Midranger & Sniper|TrueClass = Midranger & Crowd-Controller|UltraClass =}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 522
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni522 f00.png
+|Image2 = Uni522 c00.png
+|Image3 = Uni522 s00.png
+|Name1 = Nymph Cat
+|Desc1 = Some rude "hero" dropped his axes right in her pond.<br>No time for litterbugs, no matter how handsome they<br>might be! Long Range Area attacks.
+|Name2 = Medalist Cat
+|Desc2 = Somehow this Cat qualified for the tournament...<br>Somehow she won Gold. An investigation is<br>underway. Long-range Area Attacks.
+|Name3 = Fiend Cat
+|Desc3 = Overcome by suffering, this warrior gave himself up<br>to the Aku and now butchers foes with twin axes.<br>Long-range Area attacks might Knockback Aku
+|Name1 (JP) = 泉のネコ女神 (Izumi no Neko Megami, Fountain Goddess Cat)
+|Desc1 (JP) = 斧を落としたものにチャンスを与える泉のネコ<br>嘘をつく敵には容赦なくその斧をぶん投げる<br>(遠方範囲攻撃)
+|Transl1 (JP) = Fountain Cat who gives a chance to those who drop their axes,<br>which she mercilessly throws at enemies who lie.<br>(Long Distance Area Attack)
+|Name2 (JP) = ネコメダリスト (Neko Medarisuto, Medalist Cat)
+|Desc2 (JP) = 代理で出場した何かの大会でマグレ優勝したネコたち<br>思い入れのないメダルはお客さんにプレゼント<br>(遠方範囲攻撃)
+|Transl2 (JP) = Filling in for someone else, these Cats won the tournament championship by pure luck.<br>They give customers their inadvertently-earned medals as presents.<br>(Long Range Attack)
+|Name3 (JP) = ネコ魔神 (Neko Majin, Evil Spirit Cat)
+|Desc3 (JP) = 体と心に傷を負い、悪の力を手に入れた魔の戦士<br>行く手を阻む者は容赦なく二刀流の斧で切り裂く<br>たまに悪魔をふっとばす(遠方範囲攻撃)
+|Transl3 (JP) = A demon warrior with a scarred body and mind, who has acquired the power of evil.<br>Dual-wields axes to cut down anyone who stands in his way.<br>Occasionally knocks back Devils (Long Distance Area Attack)
+|Name1 (TW) = 湖中女神貓
+|Desc1 (TW) = 給予斧頭掉進湖中者機會的貓咪<br>對於說謊敵人毫不客氣飛丟斧頭<br>(遠距範圍攻擊)
+|Name2 (TW) = 奪牌貓
+|Desc2 (TW) = 替代出場參加某大賽僥倖優勝的貓咪們<br>沒意義的獎牌則是送給觀眾們<br>(遠距範圍攻擊)
+|Name3 (TW) = 貓咪魔神
+|Desc3 (TW) = 身心受傷，入手了惡的力量的魔戰士<br>對於攔截者將使出二刀流的斧頭劈裂<br>偶爾會打飛惡魔(遠距範圍攻擊)
+|Name1 (KR) = 고양이 금도끼은도끼
+|Desc1 (KR) = 도끼를 빠트린 자에게 기회를 주는 고양이<br>거짓말을 하는 적에게는 자비없이 도끼를 던져버린다<br>(원거리 범위공격)
+|Name2 (KR) = 고양이 메달리스트
+|Desc2 (KR) = 대리로 출장한 어떤 대회에서 어쩌다보니 우승한 고양이들<br>애정따위 없는 메달은 너나 가지세요<br>(원거리 범위공격)
+|Name3 (KR) = 고양이 마신
+|Desc3 (KR) = 몸과 마음에 상처를 입어 악의 힘을 획득한 악마 전사<br>앞길을 가로막는 자는 가차 없이 도끼로 찢어버리다.<br>가끔 악마를 날려버린다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 650¢
+*Chapter 2: 975¢
+*Chapter 3: 1,300¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nymph Cat
+|Normal Base HP = 360
+|Normal Base AP = 275,275
+|Normal Range = 300
+|Normal Foreswing = 35,44
+|Normal Attack Cooldown = 101
+|Normal Attack Length = 109
+|Normal Speed = 16
+|Normal KB = 4
+|Normal Cost = 650
+|Normal Recharge = 800
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,675 at 35f <sup>1.17s</sup>, 4,675 at 44f <sup>1.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)
+|Evolved Name = Medalist Cat
+|Evolved Base HP = 480
+|Evolved Base AP = 375,375
+|Evolved Range = 300
+|Evolved Foreswing = 35,44
+|Evolved Attack Cooldown = 101
+|Evolved Attack Length = 99
+|Evolved Speed = 16
+|Evolved KB = 4
+|Evolved Cost = 650
+|Evolved Recharge = 800
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (6,375 at 35f <sup>1.17s</sup>, 6,375 at 44f <sup>1.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)
+|True Name = Fiend Cat
+|True Base HP = 750
+|True Base AP = 375,375
+|True Range = 300
+|True Foreswing = 35,44
+|True Attack Cooldown = 101
+|True Attack Length = 99
+|True Speed = 16
+|True KB = 4
+|True Cost = 650
+|True Recharge = 800
+|True Attack Type = Area
+|True Targets = Aku
+|True Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (6,375 at 35f <sup>1.17s</sup>, 6,375 at 44f <sup>1.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 360 HP
+|val-Normal-Attack Power = 550 damage<br>(113.79 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 145f <sub>4.83 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 35f <sup>1.17s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 6,120 HP
+|val-Normal-MaxAttack = 9,350 damage<br>(1,934.48 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 12,750 damage<br>(2,637.93 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 145f <sub>4.83 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 35f <sup>1.17s</sup><br>(55f <sup>1.83s</sup> backswing)
+|val-Evolved-Recharge Time = 26.67 ~ 17.87 seconds
+|val-True-Health = 12,750 HP
+|val-True-Attack Power = 12,750 damage<br>(2,637.93 DPS)
+|val-True-Attack Range = 300
+|val-True-Attack Frequency = 145f <sub>4.83 seconds</sub>
+|val-True-Movement Speed = 16
+|val-True-Knockback = 4 times
+|val-True-Attack Animation = 35f <sup>1.17s</sup><br>(55f <sup>1.83s</sup> backswing)
+|val-True-Recharge Time = 26.67 ~ 17.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Medalist Cat
+|Evolved Image = Uni522 c00.png
+|True Name = Fiend Cat
+|True Image = Uni522 s00.png
+|True Description = True Form evolution gains improved<br>defense and Knockback vs Aku.
+|Catfruit1 = AkuSeed
+|Catfruit2 = EpicFruit
+|Quantity Catfruit1 = x2
+|Quantity Catfruit2 = x3
+|Quantity XP = 500,000
+}}
+
+==Talents==
+*'''[[Resistant|Tough Vs]]''' (Cost: 75 NP)
+*'''Target [[:Category:Angel Enemies|Angel]]''' (Cost: 75 NP)
+*'''[[Special Abilities#Resist|Resist Slow]]''': Reduces slow duration by 16%, improves by 6% per level up to 70% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 125 NP)
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni522 f00}}
+
+==Trivia==
+*Nymph Cat and its various forms are based on the well known fable of the [[wikipedia:The Honest Woodcutter|honest woodcutter]]. What remains consistent across its many variations is that a woodcutter lost his axe in water, then a mystical entity surfaces, holding a golden and silver axe, which he denies ownership of. When he is offered his own axe, he claims it, and was additionally given the other two axes as a reward for his honesty. Later on, less scrupulous individuals attempt the same thing, but lie, thus receiving nothing. The specific version referenced by this unit and her Japanese description involves a Nymph presenting both the valuable axes at once.
+
+==Reference==
+*https://battlecats-db.com/unit/523.html
+
+----
+{{CatNav|Medusa Cat|Wushu Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Cats with Resistant ability]]
+[[Category:Anti-Angel Cats]]
+[[Category:Resist Slow Cats]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]

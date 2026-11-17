@@ -1,0 +1,85 @@
+{{EnemiesAppearing|Squire Rel|Kang Roo|Assassin Bear|Mooth|Those Guys|Shy Boy|The Face}}
+'''Higher Score''' is a [[No Continues]] stage in '''Challenge Battle''', a mini-game unlocked after completing Chapter 1 of [[Empire of Cats]]. Two new enemies debut here: [[Shy Boy]] and [[Assassin Bear]]. It had its own button in the [[Main Menu]] until [[Version 6.2 Update|Version 6.2]], when it was temporarily removed from the game. As of [[Version 6.3 Update|Version 6.3]], Challenge Battle is found at the end of the "Special Stages" list in [[Legend Stages]].
+
+{{Stage Info
+|stage name = [[File:Ec048 en.png]]
+[[File:Mapsn000 00 m en.png]]
+|stage location = [[File:Mapname000 m en.png]]
+|energy = 0
+|enemy castle hp = 100,000 HP
+|enemies = {{Magnification|Squire Rel|100%
+|Kang Roo|100%
+|Assassin Bear|100%
+|Mooth|100%
+|Those Guys|100%
+|Shy Boy|100%
+|The Face|100%}}
+|restriction = [[No Continues]]
+|XP = 0 XP
+|width = 6,000
+|max enemies = 20
+|jpname = Challenge the High Score!
+|script = ハイスコアに挑戦！
+|romaji = Hai Sukoa ni Chōsen!
+|star = 1
+|event-chapter = Challenge Battle
+|difficulty = ★3
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Squire Rel]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**2 [[Kang Roo]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**8 [[Kang Roo]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+*When the base reaches 90% HP:
+**1 [[Assassin Bear]] spawns.
+**1 [[Mooth]] spawns.
+**1 [[Mooth]] spawns.
+**Infinite [[Those Guys]] spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+*When the base reaches 85% HP:
+**1 [[Shy Boy]] spawns.
+*When the base reaches 60% HP:
+**Infinite [[Squire Rel]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**1 [[Shy Boy]] spawns.
+**1 [[Shy Boy]] spawns.
+**1 [[The Face]] spawns.
+*When the base reaches 10% HP:
+**1 [[Assassin Bear]] spawns.
+
+==Strategy==
+To someone who has just finished [[Empire of Cats]], this stage shouldn't be that difficult.
+
+At the beginning of the stage, make sure to not shoot the Cat Cannon until you see the Assassin Bear come out, as the Cannon will likely be your only method of killing the Assassin Bear. Deal with the other enemies using strong area attackers such as [[Valkyrie Cat (Special Cat)|Valkyrie]] or [[Bahamut Cat (Special Cat)|Bahamut]], and you'll beat the stage eventually.
+
+==Gallery==
+<gallery position="center" hideaddbutton="true" bordercolor="transparent">
+Challenge Mode Score.jpg|A screenshot of this mode in a previous version.
+pre 6.2 Challenge Mode.jpg|Taken from the last update it was still available.
+Challenge Battle Old Name.jpg|A screenshot from before the stage was renamed to Higher Score
+Challenge Start.jpg|Battle Start!
+Typical Challenge Accepted.jpg|Victory!!
+Challenge Mode Button BCPOP.png|Challenge Mode button in [[The Battle Cats POP!|BCPOP]]
+Challenge Battle New Score BCPOP.png|New high score screen in BCPOP
+6.2 Neo Dojo.jpg|What Challenge Battle's spot was taken by. Challenge Battle is now in Legend Stages.
+Feats of Strength.png|Unused Feats of Strength header
+</gallery>
+
+==Trivia==
+*From [[Version 6.3 Update|Version 6.3]] up until it was removed in [[Version 7.0 Update|Version 7.0]], a header for stages called "Feats of Strength" existed in the files, presumably meant for this stage. It was likely removed because no other stages were made for the category.
+*Before it was moved to Legend Stages, Challenge Battle's unit costs were the same as in [[Empire of Cats]] Chapter 1 (50% less than usual).
+*When [[Version 15.2 Update|Version 15.2]] released, Challenge Battle could very briefly be found above the original [[Catfruit]] stages before they were replaced by [[Growing Catfruit]].
+*Challenge Battle is one of the oldest stages in the entire game, having existed ever since the original flip phone version of the game, [[Ganso!! Nyanko Daisensou]].
+*Challenge Battle was the only stage to appear in both Ganso!! Nyanko Daisensou and [[Kumanchu Royale]], albeit with different enemies in each game.
+*Challenge Battle can be considered the first stage in the game to contain a [[:Category:Dark Enemies|Dark]] enemy, although [[Assassin Bear]] was originally [[:Category:Traitless Enemies|Traitless]].
+*In [[The Battle Cats POP!]], this stage was simply called "Challenge".
+*Despite being present in both [[The Battle Cats POP!]] and mobile versions, Challenge Battle is absent from [[The Battle Cats Unite!]], though it appears in the game files as the 49th stage in each Main Chapter.
+
+==Reference==
+*https://battlecats-db.com/stage/s12000-01.html
+
+{{StoryMode Stages}}
+{{BC Navigation}}
+[[Category:Game Features]]
+[[Category:No Continue Stages]]

@@ -1,0 +1,91 @@
+'''Gorilliam''' (ゴリ男氏 ''Gorio-shi'') is an [[:Category:Alien Enemies|Alien]] enemy introduced in [[Forbidden Bride Pt II (Monthly Event)|Forbidden Bride Pt II]]. He was added in [[Version 7.1 Update|Version 7.1]].
+
+{{Enemy Info
+|name = Gorilliam
+|image = E 411.png
+|appearance = [[Forbidden Bride Pt II (Monthly Event)|Forbidden Bride Pt II]]<br>
+[[June Gauntlet II]]<br>
+[[Infernal Tower/Floor 17|Infernal Tower - Floor 17]]
+|money drop = 1,800¢ - 7,110¢
+}}
+
+==Enemy==
+This enemy is similar to [[Gory Groom]], except with more health, less damage and fewer knockbacks. He also gains the ability to warp your cats. With his rapid attack rate, he can break through your defenses easily.
+
+==Strategy==
+[[:Category:Cats with Freeze ability|Cat Units with freeze abilities]] ([[Surfer Cat (Super Rare Cat)|Surfer Cat]], [[Balaluga (Uber Rare Cat)|Balalan Pasalan]], [[Akira (Uber Rare Cat)|Akira]], etc.) can do wonders as they can stop him from destroying your front lines and warping them back. [[:Category:Cats with Warp Immunity|Cats with Warp Immunity]] can not be Warped and therefore prevent Gorilliam from pushing through your lines, or at least slow him down.
+
+When Gorilliam is given higher buffs in later stages, Cats with Warp Immunity start to become useless, as his damage is enough to kill or knockback most meatshields in 1 hit, in which case it is best to just use [[Psychocat (Rare Cat)|Psychocat]] or Surfer Cat to stop him from moving forward. [[:Category:Anti-Alien Cats|Anti-Alien Cats]] with Massive Damage/Insane Damage (except for [[Wheel Cat (Rare Cat)|Chill Cat]] because of poor range) could also help to make quick work of Gorilliam.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Forbidden Bride Pt II (Monthly Event)|Forbidden Bride Pt II]]:
+**[[The Ex Appears]] (100%)
+**[[Awkward S.O.]] (130%)
+**[[Family Feuding]] (250%)
+**[[Double Proposal]] (450%)
+**[[Show Me The Stars]] (950%)
+*[[Alien Citadel]]: [[Alien Citadel/Floor 9|Floor 9]] (950%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 17|Floor 17]] (900%)
+*[[June Gauntlet II]]:
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.11]] (500%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.12]] (556%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.13]] (612%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.14]] (668%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.15]] (724%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.16]] (780%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.17]] (836%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.18]] (892%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.19]] (948%)
+**[[June Gauntlet II/Forbidden II Lv.11~20|Forbidden II Lv.Max]] (1,000%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.9]] (900%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.MAX]] (1,100%)
+*[[01 The Ghost Chapel|#01 The Ghost Chapel]]: [[Laid to Friendly Rest]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Gorilliam
+|Health = 200000
+|Attack Power = 2025
+|Attack Range = 225
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 15
+|Knockback = 4
+|Foreswing = 6
+|Backswing = 10
+|Ability = {{AbilityIcon|Warp}} 50% chance to [[Warp|warp]] Cat Units back by 500 range for 10f <sub>0.33 seconds</sub>
+|Element = Alien
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+411 e.png|Gorilliam's spritesheet
+IdleGorilliam.gif|Gorilliam's moving animation
+</gallery>
+
+==Trivia==
+*His Japanese name, Gorio-shi (ゴリ男氏), may be a pun on ''gorioshi'' (鮴押し), a slang term meaning "to do something with force or pressure".
+*Due to a bug in the [[Version 10.6 Update]], Gorilliam's name in French was "[[Gory]] Alien". Alien is his trait, but the word alien appears nowhere in his name, rather being a portmanteau of ''gorilla'' and ''William''.
+*Gorilliam, [[Satan Claus]], [[Bears Be Back]] and [[Commander Ostromeda]] are the only [[:Category:Unstarred Alien Enemies|unstarred Aliens]] with the Warp ability.
+**Commander Ostromeda is the only one to have a description and the only one who was not introduced in a Lucky Ticket G event.
+
+==Reference==
+*https://battlecats-db.com/enemy/413.html
+
+----
+{{EnemyNav|Gudebene Cat|Sir Rel}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Alien Enemies]]
+[[Category:Unstarred Alien Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Warp ability]]

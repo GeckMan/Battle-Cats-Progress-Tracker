@@ -1,0 +1,67 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Gory Dark|Ovis|Pokota|Coco}}
+'''Rainbow Blast!''' is the third and final stage in [[LINE Pokopang! Collaboration Event#Trio from the Woods|Trio from the Woods]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn070 02 c en.png]]
+|stage location = [[File:Mapname070 c en.png]]
+|energy = 200
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|Doge Dark|400%
+|Gory Dark|200%
+|Ovis|100%
+|Pokota|200%
+|Coco|100%}}
+|boss = {{Magnification|Doge Dark|10%}}
+|enemies2 = {{Magnification|Doge Dark|600%
+|Gory Dark|300%
+|Ovis|150%
+|Pokota|300%
+|Coco|150%}}
+|boss2 = {{Magnification|Doge Dark|15%}}
+|enemies3 = {{Magnification|Doge Dark|800%
+|Gory Dark|400%
+|Ovis|200%
+|Pokota|400%
+|Coco|200%}}
+|boss3 = {{Magnification|Doge Dark|20%}}
+|treasure = - 150,000 XP (10%, unlimited)
+|score reward = '''6,500''': 250,000 XP<br>
+'''3,000''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''500''': 75,000 XP
+|XP = 30,000 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Special Skill! Rainbow Bomb!
+|script = 必殺！レインボー爆弾！
+|romaji = Hissatsu! Reinbō Bakudan!
+|star = 3
+|event = [[LINE Pokopang! Collaboration Event]]
+|event-chapter = [[LINE Pokopang! Collaboration Event#Trio from the Woods|Trio from the Woods]]
+|difficulty = ★6
+|prev stage = [[Collecting Cherries]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Doge Dark]] (400%) spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Gory Dark]] spawns after 13.33 seconds<sup>400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] (10%) spawns as the boss.
+**Infinite [[Doge Dark]]s (400%) spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**4 [[Gory Dark]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**2 [[Ovis (Enemy)|Ovises]] spawn, delay 26.67 seconds<sup>800f</sup>.
+**3 [[Pokota (Enemy)|Pokotas]] spawn, delay 20 seconds<sup>600f</sup>.
+**2 [[Coco (Enemy)|Cocos]] spawn, delay 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02070-03.html
+
+{{LINE Pokopang!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

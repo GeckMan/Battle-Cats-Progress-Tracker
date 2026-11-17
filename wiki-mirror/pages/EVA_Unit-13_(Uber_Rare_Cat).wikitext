@@ -1,0 +1,137 @@
+:''For the enemy encountered in the [[Neon Genesis Evangelion Collaboration Event]], see [[EVA Unit-13 (Enemy)]].''
+'''EVA Unit-13''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event|Neon Genesis Evangelion]] collaboration event. It was added in [[Version 12.4 Update|Version 12.4]].
+
+{{Cat Info
+|ID = 710
+|rarity = UR
+|name1 = EVA Unit-13
+|name2 = EVA Unit-13 & Cat
+}}
+
+==Evolution==
+Evolves into '''EVA Unit-13 & Cat''' at level 10.
+
+==Strategy/Usage==
+EVA Unit-13 is a serviceable counter to Aku threats with all the necessary abilities, being Strong Against them and its Surge Immunity dismisses one of their common gimmicks. Its stats and fast attack rate allow it to swiftly respond to these threats, and it outranges the vast majority of them while being able to tank some hits, proving to be a good match-up. Its general DPS is mediocre, but more than enough in early to mid-game, as well as certain late-game surge stages. However, its Mini-Surges tend not to do much and are best treated as a bonus. Its multi-hit is also worth mentioning, as while many Aku threats, especially Shielded ones, are difficult to ward off with brute force, when it does cause a target to be knocked back it may deny EVA Unit-13 from spawning a surge or hitting targets, reducing its overall DPS, and the unit itself has no option against enemy Shields, so support from others may still be necessary when it enters play.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 710
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni710 f00.png
+|Image2 = Uni710 c00.png
+|Name1 = EVA Unit-13
+|Desc1 = Recruited from EVANGELION! EVA model with a<br>double-entry system piloted by Shinji and Kaworu.<br>Strong against Aku with Mini-Surge (Area Atk)
+|Name2 = EVA Unit-13 & Cat
+|Desc2 = Recruited from EVANGELION! Unit piloted<br>by Gendo in EVANGELION 3.0+1.0.<br>Strong against Aku with small Mini-Surge (Area Atk)
+|Name1 (JP) = エヴァ第１３号機 (Eva Dai 13 Gō-ki, Eva Unit 13)
+|Desc1 (JP) = エヴァンゲリオンから参戦！　シンジとカヲルが<br>乗っていたダブルエントリーシステムの機体<br>悪魔にめっぽう強く、たまに小烈波を放つ(範囲攻撃)
+|Transl1 (JP) = Joining from Evangelion! The unit with a<br>double-entry system that Shiji and Kaworu controlled<br>Very Strong against Devils, occasionally releases Mini-Surges (Area Attack)
+|Name2 (JP) = エヴァ第１３号機&ネコ (Eva Dai 13 Gō-ki & Neko, Eva Unit 13 and Cat)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>『シン・エヴァ』で碇ゲンドウが搭乗し戦った機体<br>悪魔にめっぽう強く、たまに小烈波を放つ(範囲攻撃)
+|Transl2 (JP) = Joining from Evangelion!<br>The unit controlled by Gendo Ikari who fought in "Shin Eva"<br>Very Strong against Devils, occasionally releases Mini-Surges (Area Attack)
+|Name1 (TW) = EVA第13號機
+|Desc1 (TW) = 從新世紀福音戰士來參戰！由真嗣和薰<br>所駕駛的複座式駕駛的機體<br>善於攻擊惡魔，有時候發射小烈波(範圍攻擊)
+|Name2 (TW) = EVA第13號機&貓咪
+|Desc2 (TW) = 從新世紀福音戰士來參戰！碇源堂在「福音戰士<br>新劇場版：終」中戰鬥時所搭乘的機體<br>善於攻擊惡魔，有時候發射小烈波(範圍攻擊)
+|Name1 (KR) = 에바 13호기
+|Desc1 (KR) = 에반게리온에서 참전! 신지와 카오루가 탑승한<br>더블 엔트리 시스템 기체<br>악마에 엄청 강하고 가끔 소열파를 낸다 (범위 공격)
+|Name2 (KR) = 에바 13호기&고양이
+|Desc2 (KR) = 에반게리온에서 참전!<br>『신 에반게리온』에서 이카리 겐도가 탑승해 싸운 기체<br>악마에 엄청 강하고 가끔 소열파를 낸다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,880¢
+*Chapter 2: 4,320¢
+*Chapter 3: 5,760¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = EVA Unit-13
+|Normal Base HP = 4800
+|Normal Base AP = 480,480,480
+|Normal Range = 460
+|Normal Foreswing = 55,60,65
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 141
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 2880
+|Normal Recharge = 5200
+|Normal Attack Type = Area
+|Normal Targets = Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,160 at 55f <sup>1.83s</sup>, 8,160 at 60f <sup>2s</sup>, 8,160 at 65f <sup>2.17s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Mini-Surge}} 50% chance to create a level 1 [[Surge Attack#Mini-Surge|Mini-Surge]] between 400 and 700 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Evolved Name = EVA Unit-13 & Cat
+|Evolved Base HP = 4800
+|Evolved Base AP = 480,480,480
+|Evolved Range = 460
+|Evolved Foreswing = 55,60,65
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 141
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 2880
+|Evolved Recharge = 5200
+|Evolved Attack Type = Area
+|Evolved Targets = Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,160 at 55f <sup>1.83s</sup>, 8,160 at 60f <sup>2s</sup>, 8,160 at 65f <sup>2.17s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Mini-Surge}} 50% chance to create a level 1 [[Surge Attack#Mini-Surge|Mini-Surge]] between 400 and 700 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,800 HP
+|val-Normal-Attack Power = 1,440 damage<br>(306.38 DPS)
+|val-Normal-Attack Range = 460
+|val-Normal-Attack Frequency = 141f <sub>4.7 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 55f <sup>1.83s</sup><br>(76f <sup>2.53s</sup> backswing)
+|val-Normal-Recharge Time = 173.33 ~ 164.53 seconds
+|val-Normal-MaxHP = 81,600 HP
+|val-Normal-MaxAttack = 24,480 damage<br>(5,208.51 DPS)
+|val-Evolved-Health = 81,600 HP
+|val-Evolved-Attack Power = 24,480 damage<br>(5,208.51 DPS)
+|val-Evolved-Attack Range = 460
+|val-Evolved-Attack Frequency = 141f <sub>4.7 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 55f <sup>1.83s</sup><br>(76f <sup>2.53s</sup> backswing)
+|val-Evolved-Recharge Time = 173.33 ~ 164.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni710 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/711.html
+
+----
+{{CatNav|One-Eyed Asuka|Betrothed Balaluga}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:EVA Angel Killer Cats]]
+[[Category:Mini-Surge Cats]]
+[[Category:Cats with Surge Immunity]]

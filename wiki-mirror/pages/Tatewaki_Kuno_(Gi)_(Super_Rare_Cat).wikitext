@@ -1,0 +1,138 @@
+'''Tatewaki Kuno (Gi)''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. He was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 603
+|rarity = SR
+|name1 = Tatewaki Kuno (Gi)
+|name2 = Tatewaki Kuno
+}}
+
+==Evolution==
+Evolves into '''Tatewaki Kuno''' at level 10.
+
+==Strategy/Usage==
+Tatewaki has good slow chance with multi-hit, but unfortunately not 100% uptime. It is still decent, though. His knockback ability, however, is very situational. Sometimes, when there is no backliner, it can be quite beneficial, however Angel enemies usually appear with some sort of backliner or midranger, where the knockback ability can hinder your chances to beat the stage. In these situations, Tatewaki's dodge can kick in and save him, but this requires a lot of luck to pull off. For the same reason, the dodge ability should not be relied on and treated as a bonus. Even if Tatewaki does not die, your stack will.
+
+Tatewaki Kuno is best described as unit similar to [[Surfer Cat (Super Rare Cat)|Surfer Cat]] in terms of generalist usage, with [[:Category:Angel Enemies|anti-angel]] crowd controlling abilities. However, while Tatewaki has higher health and DPS. On the other hand, Surfer has faster cooldown, more knockbacks, lower cost and the [[Survive]] ability, meaning it is recommended to use Surfer Cat over him.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 603
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni603 f00.png
+|Image2 = Uni603 c00.png
+|Name1 = Tatewaki Kuno (Gi)
+|Desc1 = Joining from "Ranma 1/2"! Rising star of the<br>kendo world, and hopelessly in love with Akane.<br>Chance to Slow/Knockback and Dodge Angels!
+|Name2 = Tatewaki Kuno
+|Desc2 = Joining from "Ranma 1/2"! In love with girl Ranma<br>at first sight, still shamelessly pursuing Akane.<br>Chance to Slow/Knockback and Dodge Angels!
+|Name1 (JP) = 九能帯刀(道着) (Kyū Nō Taitō （Dōgi）, Kuno obi sword (Keikogi))
+|Desc1 (JP) = 『らんま1/2』より参戦！剣道部の主将であり自称高校剣道界<br>期待の超新星。あかねに惚れている<br>たまに天使をふっとばして遅くし、攻撃を無効化する
+|Transl1 (JP) = Joining the war from Ranma 1/2! He is the captain of the kendo club and a self-proclaimed super rising star in the world of high school kendo<br>He is a promising supernova. He is in love with Akane<br>Sometimes knocks back Angels, slows them down and nullifies their attacks
+|Name2 (JP) = 九能帯刀 (Kyū Nō Taitō, Kuno obi sword)
+|Desc2 (JP) = 『らんま1/2』より参戦！女性に変身した乱馬にも一目ぼれして<br>おり、あかねも諦められず二股をかけようとする<br>たまに天使をふっとばして遅くし、攻撃を無効化する
+|Transl2 (JP) = Joining the war from Ranma 1/2! He also has a crush on Ranma, who has transformed into a woman<br>and Akane can't give up on him, so she tries to double-cross him<br>Sometimes knocks back Angels, slows them down and nullifies their attacks
+|Name1 (TW) = 九能帶刀(道服)
+|Desc1 (TW) = 從「亂馬1/2」來參戰！劍道部的主將且自稱是高校<br>劍道界超受期待的新星。喜歡著小茜。<br>有時候能打飛天使敵人並使動作變慢、攻擊無效化
+|Name2 (TW) = 九能帶刀
+|Desc2 (TW) = 從「亂馬1/2」來參戰！愛上變身為女生的亂馬，<br>但也喜歡小茜所以算是同時愛兩女。<br>有時候能打飛天使敵人並使動作變慢、攻擊無效化
+|Name1 (KR) = 쿠노 타테와키(도복)
+|Desc1 (KR) = 『란마 1/2』에서 참전! 검도부 주장이며 자칭 고교 검도계의<br>떠오르는 샛별. 아카네에게 반해있다.<br>가끔 천사를 날려버려 느리게 하고 공격을 무효화 시킨다
+|Name2 (KR) = 쿠노 타테와키
+|Desc2 (KR) = 『란마 1/2』에서 참전! 여자로 변한 란마에게도 첫 눈에 반했지만<br>아카네도 포기하지 못하고 양다리를 걸치려고 한다<br>가끔 천사를 날려버려 느리게 하고 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 900¢
+*Chapter 2: 1,350¢
+*Chapter 3: 1,800¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tatewaki Kuno (Gi)
+|Normal Base HP = 1350
+|Normal Base AP = 338,338,338
+|Normal Range = 260
+|Normal Foreswing = 14,25,35
+|Normal Attack Cooldown = 107
+|Normal Attack Length = 86
+|Normal Speed = 11
+|Normal KB = 3
+|Normal Cost = 900
+|Normal Recharge = 960
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,745 at 14f <sup>0.47s</sup>, 5,745 at 25f <sup>0.83s</sup>, 5,745 at 35f <sup>1.17s</sup>)<br>
+{{AbilityIcon|Knockback}} 15% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 15% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Dodge Attack}} 10% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Evolved Name = Tatewaki Kuno
+|Evolved Base HP = 1350
+|Evolved Base AP = 338,338,338
+|Evolved Range = 260
+|Evolved Foreswing = 14,25,35
+|Evolved Attack Cooldown = 107
+|Evolved Attack Length = 86
+|Evolved Speed = 11
+|Evolved KB = 3
+|Evolved Cost = 900
+|Evolved Recharge = 960
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,745 at 14f <sup>0.47s</sup>, 5,745 at 25f <sup>0.83s</sup>, 5,745 at 35f <sup>1.17s</sup>)<br>
+{{AbilityIcon|Knockback}} 15% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Slow}} 15% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Dodge Attack}} 10% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,350 HP
+|val-Normal-Attack Power = 1,014 damage<br>(214.23 DPS)
+|val-Normal-Attack Range = 260
+|val-Normal-Attack Frequency = 142f <sub>4.73 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 14f <sup>0.47s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 32 ~ 23.2 seconds
+|val-Normal-MaxHP = 22,950 HP
+|val-Normal-MaxAttack = 17,235 damage<br>(3,641.2 DPS)
+|val-Evolved-Health = 22,950 HP
+|val-Evolved-Attack Power = 17,235 damage<br>(3,641.2 DPS)
+|val-Evolved-Attack Range = 260
+|val-Evolved-Attack Frequency = 142f <sub>4.73 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 14f <sup>0.47s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 32 ~ 23.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni603 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/604.html
+
+----
+{{CatNav|Ukyo Kuonji (GR)|Ranma Cat (M)}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Dodge Attack ability]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Area Attack Cats]]

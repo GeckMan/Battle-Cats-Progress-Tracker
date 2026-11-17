@@ -1,0 +1,64 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Medama-Oyaji (Special Cat)]].''
+'''Medama-Oyaji''' (目玉おやじ, Lit. "Eyeball Father") is an enemy that appears in the [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event]]. He was added in [[Version 8.5 Update|Version 8.5]].
+
+{{Enemy Info
+|name = Medama-Oyaji
+|image = E 459.png
+|appearance = [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event|Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou]]
+|money drop = 1,000円 - 3,950円
+}}
+
+==Enemy==
+The tankiest enemy that appears in the event. This walking eyeball supports somewhat high health, extremely pitiful damage and rather quick attacks. His weaken isn't anything to be feared about as it only weakens the players units to 50% for one second, however with his fast attacks it nearly permanently weakens them.
+
+==Strategy==
+As usual, use anything that can outrange this enemy. If for any reason the weaken effect makes you think he is a threat, bring [[Cat Units]] that are [[:Category:Cats with Weaken Immunity|Immune to Weaken]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event#Yuru-i GeGeGe no Kitarou|Yuru-i GeGeGe no Kitarou]]:
+**[[A Big Turnaround with Hyakki Yagyō!]] (100%)
+**[[Gross-cute? Dull-cute?]] (700%)
+**[[Save Japan from Dangerous Youkai!]] (900%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Medama-Oyaji
+|Health = 35000
+|Attack Power = 800
+|Attack Range = 210
+|Attack Type = Area
+|Time Between Attacks = 83
+|Movement Speed = 8
+|Knockback = 3
+|Foreswing = 24
+|Backswing = 27
+|Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+459 e.png|Medama-Oyaji's spritesheet
+IdleEyeballFather.gif|Medama-Oyaji's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/461.html
+
+----
+{{EnemyNav|Kitarou|Neko-Musume}}
+----
+
+{{Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Area Attack Enemies]]

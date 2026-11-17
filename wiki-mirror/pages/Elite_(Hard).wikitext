@@ -1,0 +1,51 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Helmut Krabbe|Duche|Assassin Bear}}
+:''For the new stage, see [[Duel Under the Stars (Elite)]].''
+'''Elite (Hard)''' is the second stage in [[Duel Stages#Duel Under the Stars|Duel Under the Stars]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn212 01 s en.png]]
+|stage location = [[File:Mapname212 s en.png]]
+|energy = 60
+|enemy castle hp = 55,000 HP
+|enemies = {{Magnification|Assassin Bear|1,000%}}
+|boss = {{Magnification|Helmut Krabbe|100%
+|Duche|100%}}
+|restriction = Max # of Deployable Cats: 1
+|score reward = '''5,500''': 120,000 XP<br>
+'''3,500''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': 30,000 XP
+|XP = 1,800 XP
+|width = 5,800
+|max enemies = 1
+|jpname = Main Force (Advanced)
+|script = 中堅 上級
+|romaji = Chūken Jōkyū
+|star = 1
+|event = [[Duel Stages]]
+|event-chapter = [[Duel Stages#Duel Under the Stars|Duel Under the Stars]]
+|difficulty = ★5
+|prev stage = [[Vanguard (Hard)]]
+|next stage = [[Commander (Veteran)]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 1
+
+==Battleground==
+*1 [[Helmut Krabbe]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+*1 [[Duche]] spawns as the boss.
+*Infinite [[Assassin Bear]]s spawn after 900 seconds<sup>27,000f</sup>, delay 900 seconds<sup>27,000f</sup>.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], the Assassin Bears were set to spawn every 900~86.7 seconds instead of just 900. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s01212-02.html
+
+{{SpecialStages List}}
+[[Category:Duel Stages]]
+[[Category:Timed Score Stages]]
+[[Category:Restriction Stages]]
+[[Category:Event Stages]]

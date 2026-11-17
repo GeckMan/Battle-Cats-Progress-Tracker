@@ -1,0 +1,7 @@
+.ranger-navbox.river-city {
+	--bg-navbox-title: linear-gradient(to right, hsl(34, 99%, 38%) 0%, hsl(34, 99%, 43%) 100%);
+	--bg-sub-table-title: #ff7830;
+	--bg-group-name: hsl(34, 66%, 51%);
+}
+
+/* [[Category:Template stylesheets]] */

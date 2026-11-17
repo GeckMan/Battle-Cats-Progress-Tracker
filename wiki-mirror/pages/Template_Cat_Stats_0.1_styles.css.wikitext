@@ -1,0 +1,49 @@
+.cat-stats-table {
+	width: 100%;
+	border: 3px solid var(--theme-page-text-color);
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.cat-stats-table td {
+	border: 0 solid var(--theme-page-text-color);
+	border-width: 1px 0 0 1px;
+}
+
+.cat-stats-table .cell-name {
+	padding: 1px;
+	background-color: #FF6811;
+	color: #fff;
+	border-bottom-width: 1px;
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+.cat-stats-table .cell-label {
+	background: var(--bg-color-light4);
+	font-weight: bold;
+	white-space: nowrap;
+}
+
+.cat-stats-table .cell-value {
+	background: var(--bg-color-light3);
+}
+
+.cat-stats-table td:first-child {
+	border-left-width: 0;
+}
+
+.cat-stats-table tr:first-child td {
+	border-top-width: 0;
+}
+
+.cat-stats-table tr.final-row:last-child td {
+	border-bottom-width: 0;
+}
+
+.cat-stats-table tr.final-row td.abilities {
+	text-align: left;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,131 @@
+'''Ranma Cat (M)''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by beating any stage in [[Ranma 1/2 Collaboration Event#Rumble in the Tendo Dojo|Rumble in the Tendo Dojo]] during the [[Ranma 1/2 Collaboration Event]]. He was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 604
+|rarity = RR
+|name1 = Ranma Cat (M)
+|name2 = Ranma Cat (F)
+}}
+
+==Evolution==
+Evolves into '''Ranma Cat (F)''' at level 10.
+
+==Strategy/Usage==
+This unit, like [[Akane Cat (Rare Cat)|Akane Cat]], has too low stats and range to be useful outside of early-game. Its only usable stats are at level 30 and above, and by that point you should invest in more powerful cats such as [[Bishop Cat (Rare Cat)|Sanzo Cat]] or [[Mer-Cat (Rare Cat)|Cameraman Cat]], in which you will get much more usage from than either form of Ranma Cat.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 604
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni604 f00.png
+|Image2 = Uni604 c00.png
+|Name1 = Ranma Cat (M)
+|Desc1 = Die hard fan of Anything Goes Martial Arts.<br>Cat Fist technique is deadly at close range.<br>Massive damage to Floating, with chance to Slow!
+|Name2 = Ranma Cat (F)
+|Desc2 = Turned into a lady Cat for some reason. Can't<br>figure out why, looking for a way to turn back.<br>Chance to Slow and Dodge Floating attacks.
+|Name1 (JP) = ネコ乱馬(男) (Neko Ranba（Otoko）, Cat Ranma (Male))
+|Desc1 (JP) = 無差別格闘早乙女流の達人を目指すネコ高校生<br>得意技の「猫拳」でご近所をドタバタの渦に巻き込む<br>浮いてる敵に超ダメージを与え、たまに動きを遅くする
+|Transl1 (JP) = A cat high school student who aims to become a master of the indiscriminate Saotome style of fighting<br>His signature move, the "Cat Fist," sends the neighborhood into a whirlwind of slapstick!<br>Deals super damage to Floating Enemies and sometimes slows them down
+|Name2 (JP) = ネコらんま(女) (Neko Ranba（Onna）, Cat Ranma (Female))
+|Desc2 (JP) = いつの間にか性別が女に変わってしまった格闘家ネコ<br>原因が思い当たらず男に戻る方法を探している<br>たまに浮いてる敵の動きを遅くし、攻撃を無効化する
+|Transl2 (JP) = This is the first time I've ever seen a fighter cat whose gender has somehow changed to female<br>I can't think of any reason for it, and I'm looking for a way to change back to a man<br>Occasionally slows down Floating Enemies and nullifies their attacks
+|Name1 (TW) = 貓亂馬(男)
+|Desc1 (TW) = 目標無差別格鬥早乙女流高手的貓咪高校生。<br>以拿手的「貓拳」把近鄰搞的吵吵鬧鬧一團亂。<br>可以給予飄浮敵人超大傷害，有時候使動作變慢
+|Name2 (TW) = 貓亂馬(女)
+|Desc2 (TW) = 突然發現變成了女生的格鬥家貓咪。<br>想不起原因正在尋找變回男生的方法。<br>有時候使飄浮敵人的動作變慢，攻擊無效化
+|Name1 (KR) = 고양이 란마(남)
+|Desc1 (KR) = 무차별 격투 사오토메류의 달인을 목표로 하는 고등학생 고양이.<br>특기인 '묘권'으로 근방을 소용돌이로 끌어들인다.<br>떠있는 적에 초 데미지를 입히며 가끔 움직임을 느리게 한다
+|Name2 (KR) = 고양이 란마(여)
+|Desc2 (KR) = 어느새 성별이 여자로 바뀌어 버린 격투가 고양이.<br>원인을 찾지 못한 채 남자로 돌아갈 방법을 찾고 있다.<br>가끔 떠있는 적의 움직임을 느리게 하고 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 480¢
+*Chapter 2: 720¢
+*Chapter 3: 960¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ranma Cat (M)
+|Normal Base HP = 780
+|Normal Base AP = 55,55,55
+|Normal Range = 230
+|Normal Foreswing = 16,21,26
+|Normal Attack Cooldown = 47
+|Normal Attack Length = 35
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 480
+|Normal Recharge = 540
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (935 at 16f <sup>0.53s</sup>, 935 at 21f <sup>0.7s</sup>, 935 at 26f <sup>0.87s</sup>)<br>
+{{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Ranma Cat (F)
+|Evolved Base HP = 780
+|Evolved Base AP = 55,55,55
+|Evolved Range = 230
+|Evolved Foreswing = 16,21,26
+|Evolved Attack Cooldown = 47
+|Evolved Attack Length = 35
+|Evolved Speed = 16
+|Evolved KB = 3
+|Evolved Cost = 480
+|Evolved Recharge = 540
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (935 at 16f <sup>0.53s</sup>, 935 at 21f <sup>0.7s</sup>, 935 at 26f <sup>0.87s</sup>)<br>
+{{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 780 HP
+|val-Normal-Attack Power = 165 damage<br>(67.81 DPS)
+|val-Normal-Attack Range = 230
+|val-Normal-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Normal-Recharge Time = 18 ~ 9.2 seconds
+|val-Normal-MaxHP = 13,260 HP
+|val-Normal-MaxAttack = 2,805 damage<br>(1,152.74 DPS)
+|val-Evolved-Health = 13,260 HP
+|val-Evolved-Attack Power = 2,805 damage<br>(1,152.74 DPS)
+|val-Evolved-Attack Range = 230
+|val-Evolved-Attack Frequency = 73f <sub>2.43 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Evolved-Recharge Time = 18 ~ 9.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni604 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/605.html
+
+----
+{{CatNav|Tatewaki Kuno (Gi)|Akane Cat}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Dodge Attack ability]]

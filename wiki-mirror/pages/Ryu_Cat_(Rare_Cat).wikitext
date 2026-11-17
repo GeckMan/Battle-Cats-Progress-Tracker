@@ -1,0 +1,127 @@
+'''Ryu Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be obtained as a drop reward in event stages during the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 508
+|rarity = RR
+|name1 = Ryu Cat
+|name2 = Ryu Cat CC
+}}
+
+==Evolution==
+Evolves into '''Ryu Cat CC''' at level 10.
+
+==Strategy/Usage==
+Ryu Cat is pretty much a better pre-[[True Form]] [[Flower Cat (Special Cat)|Flower Cat]] with better HP, range, attack rate, and freeze uptime, but worse cooldown and slower movement speed. However, Ryu Cat suffers from the same issues as Flower Cat: it has an unreliable proc rate, and single target attacks. The problem only gets worse when you later get Bombercat who has a guaranteed chance of freezing and Area Attacks, making Ryu Cat become outclassed very easily.
+
+However, before [[Flower Cat (Special Cat)|Bombercat]] is obtained, stacking him up behind a large amount of meatshields can effectively counter [[Doge Dark]]s, sometimes [[Gory Dark]]s, and, if there's only one or two, and you can still heavily meatshield, [[Shadow Boxer K]]s. But he still has the problem that Dark Enemies, similar to Angel Enemies, are aggressive pushers that are meant to quickly destroy your units, with a highly damaging, rapid attack.
+
+The only real reason to use this unit is if you don't have any better units to choose from for freezing Dark Enemies, (like Bombercat.) though he can at least be properly used for levelling up your [[User Rank]].
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 508
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni508 f00.png
+|Image2 = Uni508 c00.png
+|Name1 = Ryu Cat
+|Desc1 = A Cat endlessly training to fight the strongest<br>warriors. Sadly, none seem to be around now.<br>Might Freeze Dark enemies.
+|Name2 = Ryu Cat CC
+|Desc2 = I hoped to meet one warrior stronger than me.<br>Sadly, everyone seems to fit that description.<br>Might Freeze Dark enemies.
+|Name1 (JP) = ネコリュウ (Neko-Ryu)
+|Desc1 (JP) = 強いやつと戦うため、修業の日々を送るネコ<br>出不精なので強いやつにはまだ会えた試しがない<br>たまに黒い敵の動きを止める
+|Transl1 (JP) = A cat that spends his days training to fight a strong guy<br>I'm lazy, so I haven't tried to meet a strong guy yet.<br>Occasionally stop the movement of Dark enemies
+|Name2 (JP) = ネコリュウCC (Neko-Ryu CC)
+|Desc2 (JP) = 俺より強いやつに会いたくて旅を続けるネコ<br>俺より強いやつにしか会えず０勝２２連敗中<br>たまに黒い敵の動きを止める
+|Transl2 (JP) = A cat that keeps traveling because he wants to meet someone stronger than me<br>I can only meet someone stronger than me, 0 wins and 22 consecutive losses<br>Occasionally stop the movement of Dark enemies
+|Name1 (TW) = 隆貓
+|Desc1 (TW) = 為了與強者戰鬥每天苦行修練<br>但因個性懶散還沒遇見所以沒得挑戰<br>有時候會讓黑色敵人動作停止
+|Name2 (TW) = 隆貓CC
+|Desc2 (TW) = 為了去見"比我更強的傢伙"而持續旅行中<br>未料都見到"比我更強的傢伙"所以目前0勝22連敗<br>有時候會讓黑色敵人動作停止
+|Name1 (KR) = 고양이 류
+|Desc1 (KR) = 강한 녀석과 싸우기 위해 매일 수련 중인 고양이<br>엄청난 집돌이로 아직도 강한 녀석을 만난 적이 없다<br>가끔 검은 적의 움직임을 멈춘다
+|Name2 (KR) = 고양이 류CC
+|Desc2 (KR) = 나보다 강한 녀석을 만나고 싶어 여행을 계속하는 고양이<br>나보다 강한 녀석만 만나 0승 22연패 중<br>가끔 검은 적의 움직임을 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ryu Cat
+|Normal Base HP = 490
+|Normal Base AP = 40
+|Normal Range = 350
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 38
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 540
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Ryu Cat CC
+|Evolved Base HP = 490
+|Evolved Base AP = 40
+|Evolved Range = 350
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 38
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 540
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 490 HP
+|val-Normal-Attack Power = 40 damage<br>(27.27 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 44f <sub>1.47 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Normal-Recharge Time = 18 ~ 9.2 seconds
+|val-Normal-MaxHP = 8,330 HP
+|val-Normal-MaxAttack = 680 damage<br>(463.64 DPS)
+|val-Evolved-Health = 8,330 HP
+|val-Evolved-Attack Power = 680 damage<br>(463.64 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 44f <sub>1.47 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(23f <sup>0.77s</sup> backswing)
+|val-Evolved-Recharge Time = 18 ~ 9.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni508 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/509.html
+
+----
+{{CatNav|Mightycat|Chun-Li Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Collaboration Event Cats]]

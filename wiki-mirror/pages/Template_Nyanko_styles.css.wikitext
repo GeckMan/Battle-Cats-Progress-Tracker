@@ -1,0 +1,37 @@
+div.nyanko {
+	display: inline-block;
+	position: relative;
+}
+
+div.nyanko > p {
+	white-space: nowrap;
+	position: absolute;
+	color: #deb338;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 8pt;
+	left: 8px;
+	top: -2px;
+	margin: 0;
+}
+
+div.nyanko > p > b {
+	font-size: 16px;
+	font-weight: unset;
+	color: #ffd301;
+}
+
+div.nyanko > :last-child img {
+	width: 25px;
+	height: 26px;
+	position: absolute;
+	left: 68px;
+	top: 55px;
+}
+
+div.nyanko > :first-child img {
+	width: 90px;
+	height: 90px;
+	position: static;
+}
+
+/* [[Category:Template stylesheets]] */

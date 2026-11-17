@@ -1,0 +1,7 @@
+.ranger-navbox.nebaaru {
+	--bg-navbox-title: linear-gradient(to right, hsl(28, 100%, 60%) 0%, hsl(28, 100%, 66%) 100%);
+	--bg-sub-table-title: #fa60b0;
+	--bg-group-name: hsl(32, 100%, 53%);
+}
+
+/* [[Category:Template stylesheets]] */

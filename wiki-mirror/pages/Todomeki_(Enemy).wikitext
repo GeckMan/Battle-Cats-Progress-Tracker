@@ -1,0 +1,87 @@
+:''This article is about the enemy. For the Cat Unit, see [[Todomeki (Uber Rare Cat)]].''
+
+'''Todomeki''' (とどめき) is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Merc Storia Collaboration Event]]. She was added in [[Version 6.2 Update|Version 6.2]].
+
+{{Enemy Info
+|name = Todomeki
+|image = E 350.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 1,250¢ - 4,937¢
+}}
+
+==Enemy==
+Todomeki has the highest initial stats among the 3 new characters with a whopping 320,000 HP and 8000 damage output. She can also slow all Cats for 4 seconds with a 50% chance. She has relatively high range which makes it hard to outrange her reliably without using rushers to chip her down or using peons as stepping stones to snipe her with Long-Distance attacks, Waves, Surges and/or Explosions.
+
+==Strategy==
+Since she fights alone in most of her encounters, you can rush her down with units such as [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] and [[Swimmer Cat (Super Rare Cat)|Fishman Cat]], whom the latter exploits easily thanks to her Floating trait. In cases she acts as support rather than the main threat, use snipers such as [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] to snipe her from behind.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[Blade Ritual]] (100%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (250%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (269%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (288%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (307%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (325%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (340%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (355%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (370%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (385%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (400%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Weak of Spirit|Weak of Spirit]] (50%, 100%, 150%, 200%, 250%, 300%, 350%, 400%, 450%, 500%, 550%, 600%, 650%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[Blade Ritual]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Todomeki
+|Health = 320000
+|Attack Power = 8000
+|Attack Range = 370
+|Attack Type = Area
+|Time Between Attacks = 107
+|Movement Speed = 11
+|Knockback = 2
+|Foreswing = 22
+|Backswing = 45
+|Ability = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Floating
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|350 e ja.png|MediaWiki:Custom-AnimationViewer/350 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+350 e.png|Todomeki's spritesheet (EN/KR)
+350 e ja.png|Todomeki's spritesheet (JP)
+350 e tw.png|Todomeki's spritesheet (TW)
+IdleTodokemiJP.gif|Todomeki's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/352.html
+
+----
+{{EnemyNav|Michelia|Gudetama Plate}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

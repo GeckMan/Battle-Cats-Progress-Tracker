@@ -1,0 +1,399 @@
+<tabber>
+Rampage 1~10=
+
+{{EnemiesAppearing|Le'Grim|Doge Dark|St. Pigge the 2nd|Rain D.}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn003 00 a en.png]]
+|stage location = [[File:Mapname027 a en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|St. Pigge the 2nd|0
+|Rain D.|0}}
+|boss = {{Magnification|Le'Grim|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 15
+|jpname = Reckless Runaway Lv.X
+|script = 暴走Lv.X
+|romaji = Bōsō Lv.X
+|event = [[Le'Grim Strikes]]
+|event-chapter = [[Le'Grim Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*1 [[Le'Grim]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 12~18.67 seconds<sup>360f~560f</sup>.
+*4 [[St. Pigge the 2nd]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 58.67~61.33 seconds<sup>1,760f~1,840f</sup>.
+*2 [[Rain D.|Rain Ds]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 86.67 seconds<sup>2,600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Rampage
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="3" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! rowspan="3" |Continuation Chance [[Le'Grim Strikes/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! colspan="2" scope="col" style="text-align: center;" | Le'Grim
+! rowspan="2" scope="col" |Doge Dark
+! rowspan="2" scope="col" |St. Pigge the 2nd
+! rowspan="2" scope="col" |Rain D.
+! rowspan="2" scope="col" |Treasures
+! rowspan="2" scope="col" |Base XP
+|-
+!HP
+!AP
+|-
+! scope="row" | 1
+|2,500%
+|1,200%
+|600%
+|800%
+|300%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|3,111%
+|1,344%
+|644%
+|933%
+|322%
+|60
+|Bricks +5
+|1,140
+|3%
+|-
+! scope="row" |3
+|3,722%
+|1,488%
+|688%
+|1,066%
+|344%
+|70
+|500,000 XP
+|1,330
+|7%
+|-
+! scope="row" |4
+|4,333%
+|1,632%
+|732%
+|1,199%
+|366%
+|70
+|Feathers +5
+|1,330
+|11%
+|-
+! scope="row" |5
+|4,944%
+|1,776%
+|776%
+|1,332%
+|388%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|5,555%
+|1,920%
+|820%
+|1,465%
+|410%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|6,166%
+|2,064%
+|864%
+|1,598%
+|432%
+|90
+|Gold +5
+|1,710
+|21%
+|-
+! scope="row" |8
+|6,777%
+|2,208%
+|908%
+|1,731%
+|454%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|7,388%
+|2,352%
+|952%
+|1,864%
+|476%
+|100
+|Meteorite +5
+|1,900
+|27%
+|-
+! scope="row" |10
+|8,000%
+|2,500%
+|1,000%
+|2,000%
+|500%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+Try to permafreeze Le'Grim using [[Flower Cat (Special Cat)|Bombercat]], by using the initial Doge Darks to gather a few Bombercats as well as meatshields. Once you kill the Doge Darks, Le'Grim will hit the meatshields, and your unsynced Bombercats will permafreeze Le'Grim. You can then continue to spam meatshields as well as units like Talented [[Cats in a Box (Special Cat)|Heavy Assault C.A.T]] as well as [[Talents|Talented]] [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to rush down this stage and kill Le'Grim before Rain.D poses any serious threat.
+
+==Walkthrough==
+{{Walkthrough
+|VzvFlltzYbc|Chuck|Old Lv40 {{=}} New Lv10
+}}
+
+|-|
+Rampage 11~20=
+
+{{EnemiesAppearing|Trolly Blogger|Le'Grim|Owlbrow|H. Nah|Zuche}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn003 00 a en.png]]
+|stage location = [[File:Mapname027 a en.png]]
+|enemies = {{Magnification|Trolly Blogger|0
+|Owlbrow|0
+|H. Nah|0
+|Zuche|0}}
+|boss = {{Magnification|Le'Grim|0}}
+|restriction = [[No Continues]]
+|width = 6,200
+|max enemies = 20
+|jpname = Reckless Runaway Lv.X
+|script = 暴走Lv.X
+|romaji = Bōsō Lv.X
+|event = [[Le'Grim Strikes]]
+|event-chapter = [[Le'Grim Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*Infinite [[Trolly Blogger]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Le'Grim]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+*3 [[Owlbrow]]s spawn after 30 seconds<sup>900f</sup>, delay 38.67~45.33 seconds<sup>1,160f~1,360f</sup>.
+*1 [[H. Nah]] spawns after 40 seconds<sup>1,200f</sup>.
+*2 [[Zuche]]s spawn after 40 seconds<sup>1,200f</sup>, delay 45.33~49.33 seconds<sup>1,360f~1,480f</sup>.
+*1 [[H. Nah]] spawns after 173.33 seconds<sup>5,200f</sup>.
+*3 [[Owlbrow]]s spawn after 200 seconds<sup>6,000f</sup>, delay 38.67~45.33 seconds<sup>1,160f~1,360f</sup>.
+*2 [[Zuche]]s spawn after 213.33 seconds<sup>6,400f</sup>, delay 45.33~49.33 seconds<sup>1,360f~1,480f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Rampage
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="3" style="text-align: center;" | Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! colspan="3" rowspan="2" |Continuation Chance
+|-
+! colspan="2" scope="col" |Le'Grim
+! rowspan="2" scope="col" |Trolly Blogger
+! rowspan="2" scope="col" |Owlbrow
+! rowspan="2" scope="col" |H. Nah
+! rowspan="2" scope="col" |Zuche
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+![[Le'Grim Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+![[Le'Grim Strikes/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+![[Le'Grim Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|8,000%
+|2,500%
+|300%
+|1,200%
+|300%
+|200%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|8,778%
+|2,722%
+|333%
+|1,289%
+|322%
+|233%
+|120
+|Beast Bones +5
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|9,556%
+|2,944%
+|366%
+|1,378%
+|344%
+|266%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|10,334%
+|3,166%
+|399%
+|1,467%
+|366%
+|299%
+|140
+|Sprockets +5
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|11,112%
+|3,388%
+|432%
+|1,556%
+|388%
+|332%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|11,890%
+|3,610%
+|465%
+|1,645%
+|410%
+|365%
+|200
+|Ammonite +5
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" | 17
+|12,668%
+|3,832%
+|498%
+|1,734%
+|432%
+|398%
+|200
+|Coal +15
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|13,446%
+|4,054%
+|531%
+|1,823%
+|454%
+|431%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" | 19
+|14,224%
+|4,276%
+|564%
+|1,912%
+|476%
+|464%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|15,000%
+|4,500%
+|600%
+|2,000%
+|500%
+|500%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+While not hard, Le'Grim's enormous healthpool means each stage is going to take a while. Every enemy here can be stalled in place with the power of [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], except for Zuche, who even at 500% quickly falls to [[Teacher BearCat (Rare Cat)|Cadaver BearCat]]. Do note that Zuche doesn't die in a single hit against BearCat.  Due to all the enemies besides Le'Grim and Zuche having long backswings, the main supporting threats, H. Nah and Owlbrow, can be stalled with just 3-4 meatshields. Spamming four meatshields, Cyberpunk, BearCat when needed, and chipping down at Le'Grim using spammable attackers like [[Gross Cat (Normal Cat)|Macho Legs Cat]], [[Slime Cat (Rare Cat)|Jelly Dumpling Cat]], [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] and [[Talents|Talented]] [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]] is enough for a win.
+
+Alternatively as detailed in one of the video guides, it is possible to permafreeze Le'Grim and pin him at the base with meticulous timing, Worker Start Up [[Cat Combo]]s and Bombercat. Meatshields can protect them from H.Nah and Owlbrow while Long Distance units like [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] destroy the base without having to defeat Le'Grim. The only necessary units are Courier Cat, Bombercat, [[Crazed Cat (Super Rare Cat)|Manic Mohawk Cat]]. Cadaver BearCat and Jelly Dumpling Cat are recommended for better handling Zuche and the Trolly Bloggers respectively; Zuche can be taken care of with a well-timed [[Ototo Corps#Holy Blast|Holy Blast]]
+
+==='''Recommended Units'''===
+*[[Flower Cat (Special Cat)|Bombercat]] - With 100% chance to Freeze Darks for 2 seconds, Bomber is the heart of many non-Uber cheese strategies, and can certainly make Le'Grim himself a pushover if it connects, as its Freeze reaches full uptime with a Freeze Up M Combo like [[Gross!!! (Combo)|Gross!!!]] and all Void Fruits maxed. Le'Grim has only one knockback, so he will not be able to reposition, leaving him helpless against stacks of DPS units cutting through his HP in less than a minute. That said, Bomber will require support and lots of meatshields to prevent the enemies from reaching it. Bomber's Freeze also makes it valuable in the continuation stages as most Darks there have low range.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]] - With large bursts of damage through its level 7 Wave Attacks, Jelly Dumpling is one of the better means of hitting and chipping enemies here, as it can quite possibly attack Trolly Blogger/Zuche or slip in and land a hit during H.Nah or Owlbrow's backswing. Despite the unit's fragility, Jelly Dumpling's damage adds up fairly quickly, especially considering Owlbrow's low health. Jelly Dumpling is equally useful in the continuation stages, as its Waves can deal large quantities of chip damage to groups of Darks, chipping those that hide behind the rest.
+*[[Teacher BearCat (Rare Cat)|Cadaver BearCat]] - When sufficiently leveled, they can one shot the Zuches. However, an Attack Up (Sm) Combo is needed for Lv. 19 and an Attack Up (M) for Lv. 20. Be careful with your wallet if using them, as they can drain your wallet quickly.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - While Bahamut isn't all that great here, his Explosion Talent bumps up his damage significantly, enough to force even a 500% H.Nah to stagger on hit if both his attack and Explosion connect at level 40. It is also enough to instantly eliminate a 2000% Owlbrow, but he's better off used against H. Nah while other units take out Zuche and Owlbrow so Bomber has a clear shot. If successful, Bahamut's sheer DPS can make quick work of Le'Grim, and his high speed makes him relatively easy to time. Players who have completed [[Revival of Origin]] should consider upgrading Bahamut to at least level 44, as this enables him to survive one attack from even a 500% H. Nah. Bahamut's DPS is also useful in the continuation stages, and will absolutely demolish the melee Darks if supported properly.
+
+==='''Recommended Ubers'''===
+*[[Oda Nobunaga (Uber Rare Cat)|Immortal Nobunaga]] - With a 100% chance to Freeze Darks for 8 seconds, Nobunaga can greatly ease the fight. At level 44 or above, he can survive one hit from Le'Grim even at Lvl MAX, and once he gets his Freeze in simply spam other attackers and meatshields to keep H. Nah and Owlbrow from attacking him.
+*[[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]] - Since few peons appear in the stage, as long as Zuche is properly dealt with Lufalan has no trouble demolishing the supporting enemies as well as Le'Grim with its very high range and damage.
+*[[Musashi Miyamoto (Legend Rare Cat)|Immortal Miyamoto]] - Despite his very high True Form cost, Immortal Miyamoto can easily demolish Le'Grim, possessing Insane Damage/Resistance to Darks alongside Colossus Slayer, while Slow Immunity allows him to simply shrug off Le'Grim's slow effect. Furthermore, he has the range to safely engage the other threats, and his single attack isn't too much of an issue with the scarcity of enemies here.
+*[[Shadow (Uber Rare Cat)|Shadow]] -  Being a collab unit, Shadow is harder to obtain, but is a strong pick for this gauntlet's second half， thanks to his rapid attacks as well as Massive Damage ability against Darks and Zombies in addition to Zombie Killer. Despite his usual tendency to speed clip (95 speed), this is mostly offset by the fact Le'Grim has only one knockback and cannot reposition, which allows him to abuse his range advantage (480 < 520) and rain fire from afar. His fragility is his main issue, as he needs to be at level 31 or above to survive a single hit from a 600% Zuche, and is instantly destroyed by Le'Grim if he is reached.
+
+==Walkthrough==
+{{Walkthrough
+|MPaT7c0rR7w|Chuck|Old Lv60 {{=}} New Lv20
+|mwoelno5S_o|Chuck|Old Lv60 {{=}} New Lv20, no Cyberpunk
+|18FU2ZSJFMM|Duoo|Bombercat + Courier cheese, also covers continuation stages
+}}
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24027.html
+
+{{SpecialStages List}}
+[[Category:Le'Grim Strikes Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

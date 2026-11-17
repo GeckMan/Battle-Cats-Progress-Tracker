@@ -1,0 +1,129 @@
+'''Kaioh Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Baki Hanma Collaboration Event/Event Gacha|Event Capsule]] during the [[Baki Hanma Collaboration Event]]. They were added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 797
+|rarity = EX
+|name1 = Kaioh Cat
+|name2 = Kaioh Cat CC
+}}
+
+==Evolution==
+Evolves into '''Kaioh Cat CC''' at level 10.
+
+==Strategy/Usage==
+Kaioh Cat's usage is severely undermined by their unreasonably long recharge time. As a unit, they can be decent in early [[Stories of Legend]], but beyond that point they tend to be to be outperformed by more spammable options like [[Mer-Cat (Rare Cat)|Commando Cat]] (and eventually Cameraman Cat). Against Dark enemies it's a similar story, but with [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]], especially when [[Talents|Talented]].
+
+{{Job|Classification = Rusher & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 797
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni797 f00.png
+|Image2 = Uni797 c00.png
+|Name1 = Kaioh Cat
+|Desc1 = Cat who titled themselves the 2nd strongest master of<br>Chinese Kenpo. Can crush a polished mud ball in one<br>strike. Area atks. deal Massive damage to Floating/Dark.
+|Name2 = Kaioh Cat CC
+|Desc2 = Cat training to excel at Chinese martial arts. After much<br>study, can now walk across 6 inches of water.<br>Area atks. deal Massive damage to Floating/Dark.
+|Name1 (JP) = ネコ海王 (Neko Kaiō, Cat Kaiou)
+|Desc1 (JP) = 中国拳法の歴史上No.2を名乗る自称天才ネコ<br>ピカピカに磨き上げた泥団子を一撃で粉砕する実力者<br>浮いてる敵と黒い敵に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Self-proclaimed genius Cat who calls themselves No.2 in the history of Chinese Kenpo<br>A powerful figure who can shatter shiny, polished dorodangos with one blow<br>Deals super damage to Floating and Dark enemies (Area Attack)
+|Name2 (JP) = ネコ海王CC (Neko Kaiō CC, Cat Kaiou CC)
+|Desc2 (JP) = 高度な中国武術を極めるため修行に励むネコ<br>特訓の成果で水の上を15センチ走る事ができる<br>浮いてる敵と黒い敵に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = A Cat who trains hard to master advanced Chinese martial arts<br>Thanks to special training, they can run 15 centimeters across water<br>Deals super damage to Floating and Dark enemies (Area Attack)
+|Name1 (TW) = 海王貓
+|Desc1 (TW) = 自稱天才且是中國拳法史上第二人的貓咪<br>實力足以一拳粉碎研磨光滑的泥巴球<br>可以給予飄浮敵人與黑色敵人超大傷害(範圍攻擊)
+|Name2 (TW) = 海王貓CC
+|Desc2 (TW) = 為了精通高深的中國武術而努力修行的貓咪<br>特訓後的成果是可以在水上行走15公分<br>可以給予飄浮敵人與黑色敵人超大傷害(範圍攻擊)
+|Name1 (KR) = 고양이 카이오
+|Desc1 (KR) = 중국 권법의 역사상 넘버투라 주장하는 자칭 천재 고양이.<br>조그만 흙덩이를 한방에 부숴버리는 실력자.<br>떠있는 적과 검은 적에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 고양이 카이오CC
+|Desc2 (KR) = 고도의 중국 무술을 마스터하기 위해 수행 중인 고양이.<br>특훈의 성과로 물 위를 15cm 정도 달릴 수 있다<br>떠있는 적과 검은 적에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kaioh Cat
+|Normal Base HP = 480
+|Normal Base AP = 190
+|Normal Range = 250
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 131
+|Normal Speed = 36
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = Floating,Dark
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Kaioh Cat CC
+|Evolved Base HP = 480
+|Evolved Base AP = 190
+|Evolved Range = 250
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 131
+|Evolved Speed = 36
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = Floating,Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+20
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 190 damage<br>(43.51 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Normal-Movement Speed = 36
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(123f <sup>4.1s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 3,230 damage<br>(739.69 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 3,230 damage<br>(739.69 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Evolved-Movement Speed = 36
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(123f <sup>4.1s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni797 f00}}
+
+==Trivia==
+*In ''[[Baki Hanma Collaboration Event|Baki]]'', 海王 ''Kaiō'' is normally romanized as [[wikia:baki:Kaiou|Kaiou]], yet the collab in [[The Battle Cats]] has it romanized as Kaioh, possibly to avoid confusion with the stage [[Kaiou (Cats of the Cosmos)|Kaiou]].
+*Kaioh Cat's Normal Form descriptions reference [[wikipedia:Dorodango|dorodangos]], polished balls of mud that are infamously fragile.
+
+==Reference==
+*https://battlecats-db.com/unit/798.html
+
+----
+{{CatNav|Baki Cat|Doppo Cat}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

@@ -1,0 +1,86 @@
+{{EnemiesAppearing|Puffsley's Comet|Corporal Weyland|Project A|Star Peng}}
+'''Pufferfish Pulsar (Merciless)''' is the first stage in [[Azure Annihilation]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn433 00 s en.png]]
+|stage location = [[File:Mapname433 s en.png]]
+|energy = 200
+|enemy castle hp = 999,999 HP
+|enemies = {{Magnification|Corporal Weyland|2,400%
+|Project A|2,400%
+|Star Peng|2,400%}}
+|boss = {{Magnification|Puffsley's Comet|100%}}
+|treasure = - 1,000,000 XP (100%, 1 time)
+|restriction = Cat Deploy Cost: Only 2,000¢ or less<br>
+[[No Continues]]
+|XP = 6,000 XP
+|width = 5,000
+|max enemies = 12
+|jpname = River Pig Planetes Super Extreme
+|script = リバーピッグプラネテス 超極ムズ
+|romaji = Ribā Piggu Puranetesu Chō Goku Muzu
+|star = 1
+|event-chapter = [[Azure Annihilation]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Spiky Supercluster (Merciless)]]
+}}
+
+==Restrictions==
+Cat Deploy Cost: Only 2,000¢ or less
+
+==Battleground==
+*1 [[Puffsley's Comet]] spawns as the boss after 20 seconds<sup>600f</sup>.
+*3 [[Corporal Weyland]]s spawn after 50 seconds<sup>1,500f</sup>, delay 40~50 seconds<sup>1,200f~1,500f</sup>.
+*1 [[Project A]] spawns after 80 seconds<sup>2,400f</sup>.
+*4 [[Star Peng]]s spawn after 26.67 seconds<sup>800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*4 [[Star Peng]]s spawn after 100 seconds<sup>3,000f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*4 [[Star Peng]]s spawn after 160 seconds<sup>4,800f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*Infinite [[Star Peng]]s spawn after 206.67 seconds<sup>6,200f</sup>, delay 40~50 seconds<sup>1,200f~1,500f</sup>.
+
+==Strategy==
+This stage is an exact copy of [[Puffer Planet (Merciless)|Puffer Planet]], though with a restriction in place. Due to the restriction, the player can no longer rely on [[Bahamut Cat (Special Cat)|Awakened Bahamut]], [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], or almost all [[:Category:Uber Rare Cats|Uber Rares]] to win the battle. This requires you to shift your lineup towards using more [[Cat Combo|Research]]-based strategies involving spamming cheap units.
+
+==='''Key Units'''===
+*[[Rover Cat (Rare Cat)|Catellite]]: A boosted Catellite alongside Research combos will be your best friend, being Immune to Warp and having high stats against Aliens. Make sure it's above level 40 so that it can tank a Puffsley hit.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Jelly Dumpling's level 7 [[Wave Attack]]s are incredibly punishing to the enemies here, having extremely high damage. In particular, they can chip down Weyland and cause Puffsley to rebound.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Can Can is vital to this stage, having extremely high stats as well as being able to get Money Up kills off Star Peng. You don't need Can Can's Target [[:Category:Alien Enemies|Alien]] [[Talents|Talent]], but it helps considerably against Puffsley and sole Pengs.
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Seafarer has pretty decent generalist stats, but more importantly has a high chance to Freeze Aliens as well as a guaranteed Survive, making him very cost effective for Star Peng swarms. Getting Seafarer's '''Freeze Up''' Talent increases his chance to Freeze by 20%, making him even more reliable.
+
+==='''Useful Units'''===
+*[[Wheel Cat (Rare Cat)|Chill Cat]]: Chill has extremely high DPS against Aliens, but suffers from being a huge cash drain regardless whether or not you own Chill's Cost Down Talent. If you're going to use Chill, try and at least boost him to 40 so that he can actually deal some damage.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: Research Boulder is pretty strong here to stall a bunch of Star Pengs, but don't use it against Puffsley as it'll cause Puffsley to rebound and obliterate your units.
+*[[Bakery Cat (Rare Cat)|Fried Chicken Cat]]: Fried Chicken's damage isn't much to write home about, but his guaranteed Curse against Aliens disables the Star Peng and Project A's extremely annoying Warp, allowing you to use units like Soap and Jetpack without much issue.
+*[[Cossack Cat (Rare Cat)|Royal Guard Cat]]: At level 50 with a Defense Up (Sm) combo, Royal Guard can survive a Puffsley hit, which makes him incredibly powerful alongside Research Combos. While he can beat the entire stage with Research Combos, using him in a normal lineup is not recommended due to him being a massive cash drain for most lineups. Especially considering the lack of reliable cash supplies here, it is best to use Guard only if you are seeking to spam solely him to beat this stage.
+*[[Jetpack Cat (Rare Cat)|Kinjirou Cat]]: Like Catellite, but with higher health against Aliens. Use it with Cursing support to make it effective.
+*[[Miter Saw Cat (Super Rare Cat)|Neo Saw Cat]]: Neo Saw has extremely high stats against Aliens, both offensively and defensively.
+*[[Ancient Egg: N108 (Super Rare Cat)|Soap Cat]]: Soap is like an [[:Category:Anti-Alien Cats|anti-Alien]] [[Sushi Cat (Super Rare Cat)|Roe Cat]], so it'll wall Aliens pretty well. Take caution that Soap isn't Warp-immune, so you might need to support it with units that can curse Aliens.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Bullet Train has high damage and Money Up, but recharges somewhat slowly. If you're not sure what to put in an empty slot, Bullet Train is a fine option.
+
+==='''Lineup'''===
+{{Lineup
+|Skelecat
+|Hyper Mr.
+|Necro-Dancer Cat
+|Li'l Mohawk Cat
+|Catasaurus
+|Royal Guard Cat|50
+|name = Royal Guard Spam
+|notes = If you have Uber Research combos, try adding Speed combos to make Guard's Puffsley interaction more consistent.
+|items = Rich Cat
+}}
+
+'''Battle:''' While this might seem really easy to pull off, you need to continuously spam Royal Guards when they're off cooldown. Hesitating will result in your Guards not juggling Puffsley, and Puffsley will attack your Guard stack and cause you to lose. Spamming Guards is already a massive cash drain, so there's really no recovering from this occuring. When done correctly, the Guards will continuously juggle Puffsley while he's at the base and kill him with ease, and then obliterate the base soon after.
+
+==Walkthrough==
+{{Walkthrough|IvU3alOYI_s|Novastrala|}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01433-01.html
+
+{{Advent}}
+{{Awakening Stages}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]
+[[Category:No Continue Stages]]

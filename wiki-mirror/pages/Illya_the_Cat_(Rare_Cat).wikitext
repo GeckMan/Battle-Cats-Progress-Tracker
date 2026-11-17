@@ -1,0 +1,122 @@
+:''For the other Illya from the same Gacha, see [[Illyasviel (Uber Rare Cat)]].''
+'''Illya the Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 372
+|rarity = RR
+|name1 = Illya the Cat
+|name2 = Snow Faerie Illya
+}}
+
+==Evolution==
+Evolves into '''Snow Faerie Illya''' at level 10.
+
+==Strategy/Usage==
+This unit has little use, easily being outclassed by the [[True Form]] of [[Witch Cat (Rare Cat)|Enchantress Cat]] for [[Slow|slowing]] [[:Category:Red Enemies|Red]] enemies, and most other [[:Category:Crowd-Controller-class Cats|crowd-controllers]] for Red enemies outperforming Illya in her niche as well.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 372
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni372 f00.png
+|Image2 = Uni372 c00.png
+|Name1 = Illya the Cat
+|Desc1 = An uncanny Cat with silver hair and red eyes.<br>Once tried to care for a small bird.<br>Might Slow Red enemies.
+|Name2 = Snow Faerie Illya
+|Desc2 = Inheritor of the blood of a venerable House.<br>Recently purchased new winter clothes.<br>Might Slow Red enemies.
+|Name1 (JP) = ネコイリヤ (Nekoiriya, Illya the Cat)
+|Desc1 (JP) = 銀色の髪と赤い瞳の少女に憧れるネコ<br>手始めに小鳥を飼ってみた<br>たまに赤い敵の動きを遅くする
+|Transl1 (JP) = A cat longing for a girl with silver hair and red eyes<br>First of all, I tried a small bird<br>Occasionally slow down the movement of red enemies
+|Name2 (JP) = 雪の妖精ネコイリヤ (Yuki no yōsei nekoiriya, Snow Faerie Illya)
+|Desc2 (JP) = 古き血筋で由緒正しき名をもつ<br>と思いこんでいるネコ。最近冬服を新調した<br>たまに赤い敵の動きを遅くする
+|Transl2 (JP) = An old bloodline with a proper name<br>A cat that thinks. New winter clothes recently<br>Occasionally slow down the movement of red enemies
+|Name1 (TW) = 伊莉雅貓
+|Desc1 (TW) = 崇拜著紅眼銀色頭髮的少女<br>最近開始試著養小鳥<br>有時候會使紅色敵人動作變慢
+|Name2 (TW) = 雪中妖精伊莉雅貓
+|Desc2 (TW) = 長久以來認為自己的名字有著古老血脈<br>與歷史淵源。最新買了很多冬裝<br>有時候會使紅色敵人動作變慢
+|Name1 (KR) = 고양이 이리야
+|Desc1 (KR) = 은발에 빨간 눈동자를 가진 소녀를 동경하는 고양이<br>우선 작은 새를 키워 봤다<br>가끔 빨간 적의 움직임을 느리게 한다
+|Name2 (KR) = 눈의 요정 고양이 이리야
+|Desc2 (KR) = 유서 깊은 가문의 이름을 가졌다고 믿고 있는 고양이<br>최근 겨울옷을 장만했다<br>가끔 빨간 적의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 340¢
+*Chapter 2: 510¢
+*Chapter 3: 680¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Illya the Cat
+|Normal Base HP = 550
+|Normal Base AP = 99
+|Normal Range = 200
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 63
+|Normal Attack Length = 46
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 340
+|Normal Recharge = 400
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Snow Faerie Illya
+|Evolved Base HP = 550
+|Evolved Base AP = 99
+|Evolved Range = 250
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 65
+|Evolved Attack Length = 46
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 340
+|Evolved Recharge = 400
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 550 HP
+|val-Normal-Attack Power = 99 damage<br>(34.94 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 85f <sub>2.83 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 9,350 HP
+|val-Normal-MaxAttack = 1,682 damage<br>(593.65 DPS)
+|val-Evolved-Health = 9,350 HP
+|val-Evolved-Attack Power = 1,682 damage<br>(593.65 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 85f <sub>2.83 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni372 f00}}
+
+----
+{{CatNav|Rin the Cat|Li'l Shirou}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]

@@ -1,0 +1,125 @@
+'''Coin Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by playing the [[Nyanko Rangers (Event Gacha)|Nyanko Rangers]] Event Gacha. It was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 375
+|rarity = EX
+|name1 = Coin Cat
+|name2 = Macho Coin Cat
+}}
+
+==Evolution==
+Evolves into '''Macho Coin Cat''' at level 10.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role. Coin Cat, however, can be used in {{4c}} stages, where there is considerably less competition. Do not expect Coin Cat to take a hit from any enemy and live.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 375
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni375 f00.png
+|Image2 = Uni375 c00.png
+|Name1 = Coin Cat
+|Desc1 = An invaluable collectors item!<br>Only 9 billion were produced!
+|Name2 = Macho Coin Cat
+|Desc2 = A memorial item imbued with Cat<br>gratitude. Every third Coin Cat earns<br>you... another Coin Cat.
+|Name1 (JP) = 記念ネコ (Kinen Neko, Memorial Cat)
+|Desc1 (JP) = 感謝の気持ちを込めて発行された記念のネコ<br>９０００億万枚限定生産品
+|Transl1 (JP) = A memorial cat issued with gratitude<br>A limited edition product with only 9 quadrillion produced
+|Name2 (JP) = 記念ネコビルダー (Kinen Nekobirudā, Memorial Cat Builder)
+|Desc2 (JP) = 感謝の気持ちを込めて発行された記念のネコの中に<br>３枚に１枚の確率で混ざっているレアコイン<br>３枚集めると記念ネコと交換可
+|Transl2 (JP) = One of three memorial cats issued<br>with gratitude are these rare coins<br>Three of these are exchangeable with a memorial cat
+|Name1 (TW) = 紀念幣貓
+|Desc1 (TW) = 抱著滿滿感恩的心發行的紀念貓咪<br>限定生產數９０００億枚
+|Name2 (TW) = 紀念幣健美貓
+|Desc2 (TW) = 抱著滿滿感恩的心發行的紀念貓咪中<br>3枚中就會出現1枚的稀有紀念幣<br>收集3枚可以交換一枚紀念幣貓
+|Name1 (KR) = 기념주화 고양이
+|Desc1 (KR) = 감사의 마음을 담아 발행된 기념주화 고양이<br>9000억만 개 한정 생산
+|Name2 (KR) = 기념주화 고양이 빌더
+|Desc2 (KR) = 감사의 마음을 담아 발행된 기념주화 고양이 중에서<br>3분의 1의 확률로 섞여 있는 레어 주화<br>3개를 모으면 기념주화 고양이와 교환 가능
+}}
+
+==Cost==
+*Chapter 1: 50¢
+*Chapter 2: 75¢
+*Chapter 3: 100¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Coin Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 33
+|Normal Attack Length = 24
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Macho Coin Cat
+|Evolved Base HP = 100
+|Evolved Base AP = 8
+|Evolved Range = 140
+|Evolved Foreswing = 4
+|Evolved Attack Cooldown = 33
+|Evolved Attack Length = 24
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 50
+|Evolved Recharge = 150
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50+50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 135 damage<br>(109.46 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 4f <sup>0.13s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 5 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni375 f00}}
+
+==Trivia==
+*Prior to the [[Anniversary/9th Year|9th Anniversary]], Coin Cat was obtained from [[Daily Bonus|Daily Bonuses]] during [[Anniversary|Anniversaries]].
+*Despite what Macho Coin Cat's descriptions claim, rolling 3 Coin Cats in an Event Gacha does not do anything special.
+
+==Reference==
+*https://battlecats-db.com/unit/376.html
+
+----
+{{CatNav|Li'l Sakura|Rover Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Event Capsule Cats]]

@@ -1,0 +1,63 @@
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Squire Rel|Gory Dark|Shadow Boxer K|Sojiro Seta}}
+'''抜刀術の打ち合い''' is the third stage in [[Rurouni Kenshin Collaboration Event#天剣・瀬田宗次郎|天剣・瀬田宗次郎]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn274 02 c ja.png]]
+|stage location = [[File:Mapname274 c ja.png]]
+|energy = 80
+|enemy castle hp = 120,000 HP
+|enemies = {{Magnification|Doge Dark|100%
+|Squire Rel|400%
+|Gory Dark|100%
+|Shadow Boxer K|100%}}
+|boss = {{Magnification|Sojiro Seta|1,400%}}
+|enemies2 = {{Magnification|Doge Dark|150%
+|Squire Rel|600%
+|Gory Dark|150%
+|Shadow Boxer K|150%}}
+|boss2 = {{Magnification|Sojiro Seta|2,100%}}
+|score reward = '''5,900''': 100,000 XP<br>
+'''4,200''': 20,000 XP<br>
+'''500''': [[Catamin]] [B] +3
+|XP = 2,400 XP
+|width = 4,200
+|max enemies = 20
+|jpname = ?
+|script = 抜刀術の打ち合い
+|romaji = ?
+|star = 2
+|event = [[Rurouni Kenshin Collaboration Event]]
+|event-chapter = [[Rurouni Kenshin Collaboration Event#天剣・瀬田宗次郎|天剣・瀬田宗次郎]]
+|prev stage = [[神速同士の対決]]
+|next stage = [[勝負あり、かな]]
+}}
+
+==Battleground==
+*2 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*3 [[Squire Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6~8 seconds<sup>180f~240f</sup>.
+*1 [[Gory Dark]] spawns after 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sojiro Seta (Enemy)|Sojiro Seta]] spawns as the boss.
+**1 [[Gory Dark]] spawns.
+**15 [[Squire Rel]]s spawn, delay 4~6 seconds<sup>120f~180f</sup>.
+**3 [[Squire Rel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+**2 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**1 [[Gory Dark]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**2 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**1 [[Shadow Boxer K]] spawns after 46.67 seconds<sup>1,400f</sup>.
+**1 [[Gory Dark]] spawns after 60 seconds<sup>1,800f</sup>.
+**2 [[Doge Dark]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**Infinite [[Doge Dark]]s spawn after 93.33 seconds<sup>2,800f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02274-03.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]

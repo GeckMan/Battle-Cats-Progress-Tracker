@@ -1,0 +1,140 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[Zangief (Enemy)]].''
+'''Zangief''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 514
+|rarity = UR
+|name1 = Zangief
+|name2 = Zangief CC
+}}
+
+==Evolution==
+Evolves into '''Zangief CC''' at level 10.
+
+==Strategy/Usage==
+Thanks to his massive negative range, Zangief can be a decent all-rounder unit against [[:Category:Zombie Enemies|Zombies]], although you might just want to draw from the [[Frontline Assault IRON LEGION (Gacha Event)|IRON LEGION]] pool instead as his lack of a consistent defensive ability (20% chance for dodge) and long recharge time hinder his usage a lot, especially for a tank. Considering that, there's also the issue of his stats as they are not ideal enough to handle high damage Zombie enemies like [[Cadaver Bear]], [[Dread Bore]] or [[Lord Gravey]].
+
+{{Job|Classification = Tanker & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 514
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni514 f00.png
+|Image2 = Uni514 c00.png
+|Name1 = Zangief
+|Desc1 = Joining the fight from Street Fighter V!<br>A towering wrestler called "Red Cyclone".<br>Omnistrike, might avoid Zombie damage
+|Name2 = Zangief CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Submit to the force of his Cyclone Lariat!<br>Omnistrike, might avoid Zombie damage
+|Name1 (JP) = ザンギエフ (Zangiefu, Zangief)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>「赤きサイクロン」の異名を持つ巨漢のプロレスラー<br>たまにゾンビからの攻撃を無効化する(全方位攻撃)
+|Transl1 (JP) = Participate in Street Fighter V!<br>A giant professional wrestler with the nickname "Red Cyclone"<br>Occasionally disables zombie attacks (omnidirectional attacks)
+|Name2 (JP) = ザンギエフCC (ZangiefuCC, ZangiefCC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>「サイクロンラリアット」で敵を確実に仕留める<br>たまにゾンビからの攻撃を無効化する(全方位攻撃)
+|Transl2 (JP) = Participate in Street Fighter V!<br>Defeat enemies with "Cyclone Lariat"<br>Occasionally disables zombie attacks (omnidirectional attacks)
+|Name1 (TW) = 桑吉爾夫
+|Desc1 (TW) = 從快打旋風V來參戰！<br>又名"紅色旋風"的巨漢摔角手<br>有時候可使不死生物的攻擊無效化(全方位攻擊)
+|Name2 (TW) = 桑吉爾夫CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>使出絕招"旋風十字拳"徹底擊敵<br>有時候可使不死生物的攻擊無效化(全方位攻擊)
+|Name1 (KR) = 장기에프
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>붉은 사이클론이란 이명을 가진 거한의 프로레슬러<br>가끔 좀비의 공격을 무효화한다 (전방위 공격)
+|Name2 (KR) = 장기에프CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>사이클론 래리어트로 적을 확실하게 물리친다<br>가끔 좀비의 공격을 무효화한다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,800¢
+*Chapter 2: 4,200¢
+*Chapter 3: 5,600¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Zangief
+|Normal Base HP = 8000
+|Normal Base AP = 1000,1000
+|Normal Range = 210
+|Normal Foreswing = 3,18
+|Normal Attack Cooldown = 85
+|Normal Attack Length = 40
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 2800
+|Normal Recharge = 3600
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (17,000 at 3f <sup>0.1s</sup>, 17,000 at 18f <sup>0.6s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -840~210)<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Dodge Attack}} 20% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Evolved Name = Zangief CC
+|Evolved Base HP = 8000
+|Evolved Base AP = 1000,1000
+|Evolved Range = 210
+|Evolved Foreswing = 3,18
+|Evolved Attack Cooldown = 85
+|Evolved Attack Length = 40
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 2800
+|Evolved Recharge = 3600
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (17,000 at 3f <sup>0.1s</sup>, 17,000 at 18f <sup>0.6s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -840~210)<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Dodge Attack}} 20% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 8,000 HP
+|val-Normal-Attack Power = 2,000 damage<br>(582.52 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 103f <sub>3.43 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 3f <sup>0.1s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 120 ~ 111.2 seconds
+|val-Normal-MaxHP = 136,000 HP
+|val-Normal-MaxAttack = 34,000 damage<br>(9,902.91 DPS)
+|val-Evolved-Health = 136,000 HP
+|val-Evolved-Attack Power = 34,000 damage<br>(9,902.91 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 103f <sub>3.43 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 3f <sup>0.1s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 120 ~ 111.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni514 f00}}
+
+==Trivia==
+*Zangief has the fourth longest negative range of all Cats, behind [[Cat God the Great (Special Cat)|Cat God the Great]], [[Betrothed Balaluga (Uber Rare Cat)|Betrothed Balaluga]] and [[Elder Mask Doron (Special Cat)|Elder Mask Doron]].
+
+==Reference==
+*https://battlecats-db.com/unit/515.html
+
+----
+{{CatNav|Guile|Blanka}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Area Attack Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Dodge Attack ability]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Uber Rare Cats]]

@@ -1,0 +1,134 @@
+:''For other uses, see [[M. Bison (disambiguation)]].''
+'''M. Bison Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|version 10.0]].
+
+{{Cat Info
+|ID = 580
+|rarity = RR
+|name1 = M. Bison Cat
+|name2 = M. Bison Cat CC
+}}
+
+==Evolution==
+Evolves into '''M. Bison Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit has decent range for a Rare Cat, but has relatively low stats even at level 30, meaning he is only usable against [[:Category:Alien Enemies|Aliens]], although his offensive or defensive capabilities are not up to par with other, similar units even against his niche, especially considering his quite high price. With all this being said, the best way this cat can contribute is through boosting up your [[User Rank]].
+
+{{Job|Classification = Midranger & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 580
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni580 f00.png
+|Image2 = Uni580 c00.png
+|Name1 = M. Bison Cat
+|Desc1 = Wielding psycho-power, this deadly Cat aims to<br>tear down this world to build a new paradise.<br>Strong vs Aliens, with Long-Range Area Atk
+|Name2 = M. Bison Cat CC
+|Desc2 = The villainous leader of an evil secret society,<br>controlling the global Cat Food smuggling cartel.<br>Strong vs Aliens, with Long-Range Area Atk
+|Name1 (JP) = ネコベガ (Neko Bega, Vega Cat)
+|Desc1 (JP) = サイコパワーを身に付けた最終最凶なネコ<br>ネコと地球に優しい世界征服を目論む<br>エイリアンにめっぽう強い(遠方範囲攻撃)
+|Transl1 (JP) = The last and most terrible Cat to ever acquire Psycho Power.<br>Plotting to conquer the world in a Cat-and-Earth-friendly way.<br>Very strong against Alien enemies (Long Distance Area Attack)
+|Name2 (JP) = ネコベガCC (Neko Bega CC, Vega Cat CC)
+|Desc2 (JP) = 悪の秘密結社を率いる極悪非道な総帥<br>ネコカンの密輸売買など、様々な悪事に手を染める<br>エイリアンにめっぽう強い(遠方範囲攻撃)
+|Transl2 (JP) = A diabolical general who leads an evil secret society.<br>He is involved in a variety of evil activities, including the smuggling and trafficking of Cat Food.<br>Very strong against Alien enemies (Long Distance Area Attack)
+|Name1 (TW) = 貝卡貓
+|Desc1 (TW) = 擁有精神力量於一身的最終最兇貓咪<br>謀劃著和貓咪征服這個美好世界<br>善於攻擊異星戰士(遠距範圍攻擊)
+|Name2 (TW) = 貝卡貓CC
+|Desc2 (TW) = 領導著邪惡秘密社團的極惡非道統帥<br>染指各種壞事，例如走私買賣貓罐頭等<br>善於攻擊異星戰士(遠距範圍攻擊)
+|Name1 (KR) = 고양이 베가
+|Desc1 (KR) = 사이코 파워를 자신의 것으로 만든 최종최흉 고양이<br>고양이와 지구에 친화적인 세계정복을 노린다<br>에이리언에 엄청 강하다 (원거리 범위공격)
+|Name2 (KR) = 고양이 베가CC
+|Desc2 (KR) = 악의 비밀결사를 이끄는 극악무도한 총수<br>고양이 통조림의 밀수 판매 등 여러 어둠의 일에 몸 담고 있다<br>에이리언에 엄청 강하다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 580¢
+*Chapter 2: 870¢
+*Chapter 3: 1,160¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = M. Bison Cat
+|Normal Base HP = 510
+|Normal Base AP = 355
+|Normal Range = 300
+|Normal Foreswing = 34
+|Normal Attack Cooldown = 123
+|Normal Attack Length = 113
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 580
+|Normal Recharge = 700
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~375)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Barrier Breaker}} 20% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = M. Bison Cat CC
+|Evolved Base HP = 510
+|Evolved Base AP = 355
+|Evolved Range = 300
+|Evolved Foreswing = 34
+|Evolved Attack Cooldown = 123
+|Evolved Attack Length = 113
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 580
+|Evolved Recharge = 700
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~375)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Barrier Breaker}} 20% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 510 HP
+|val-Normal-Attack Power = 355 damage<br>(67.83 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 157f <sub>5.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 34f <sup>1.13s</sup><br>(79f <sup>2.63s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 8,670 HP
+|val-Normal-MaxAttack = 6,035 damage<br>(1,153.18 DPS)
+|val-Evolved-Health = 8,670 HP
+|val-Evolved-Attack Power = 6,035 damage<br>(1,153.18 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 157f <sub>5.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 34f <sup>1.13s</sup><br>(79f <sup>2.63s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni580 f00}}
+
+==Trivia==
+*In [[Nyanko Daisensou|Nyanko Daisensou]], this Cat is known as [[Vega Cat (Rare Cat)|Vega Cat]], with Bison Cat being [[Balrog Cat (Rare Cat)|Balrog Cat's]] name.
+
+==Reference==
+*https://battlecats-db.com/unit/581.html
+
+----
+{{CatNav|Sagat Cat|Stone Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Barrier Breaker Cats]]

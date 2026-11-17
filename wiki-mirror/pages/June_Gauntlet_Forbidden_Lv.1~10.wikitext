@@ -1,0 +1,184 @@
+{{EnemiesAppearing|B.B.Bunny|Sir Seal|Gabriel|Shy Boy|Heavenly Hippoe|Gory Groom}}
+
+{{Stage Info
+|stage name = [[File:Rc013.png]]
+[[File:Mapsn015 00 a en.png]]
+|stage location = [[File:Mapname015 a en.png]]
+|enemies = {{Magnification|B.B.Bunny|0
+|Sir Seal|0
+|Gabriel|0
+|Shy Boy|0
+|Heavenly Hippoe|0}}
+|boss = {{Magnification|Gory Groom|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,500
+|max enemies = 6
+|jpname = Forbidden Lv.X
+|script = 禁断 Lv.X
+|romaji = Kindan Lv. X
+|event = [[June Gauntlet]]
+|event-chapter = [[June Gauntlet]]
+|require = Clear [[The Forbidden Bride (Monthly Event)|The Forbidden Bride]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*The enemy base's HP starts at 75,000 and increases by 25,000 with each stage.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Sir Seal]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Gabriel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gory Groom]] spawns as the boss.
+**5 [[Gabriel]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[Shy Boy]] spawns.
+**2 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 3.33 seconds<sup>100f</sup>.
+**3 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 3.33 seconds<sup>100f</sup>.
+**3 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 3.33 seconds<sup>100f</sup>.
+**2 [[Heavenly Hippoe]]s spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Forbidden Lv.
+! colspan="6" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Shy Boy]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Gory Groom]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|400%
+|400%
+|100%
+|400%
+|100%
+|100%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|556%
+|556%
+|117%
+|489%
+|117%
+|156%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|712%
+|712%
+|134%
+|578%
+|134%
+|212%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|868%
+|868%
+|151%
+|667%
+|151%
+|268%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|1,024%
+|1,024%
+|168%
+|756%
+|168%
+|324%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|1,180%
+|1,180%
+|185%
+|845%
+|185%
+|380%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|1,336%
+|1,336%
+|202%
+|934%
+|202%
+|436%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|1,492%
+|1,492%
+|219%
+|1,023%
+|219%
+|492%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|1,648%
+|1,648%
+|236%
+|1,112%
+|236%
+|548%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|1,800%
+|1,800%
+|250%
+|1,200%
+|250%
+|600%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+All enemies have very short range, which means that most [[:Category:Anti-Red Cats|anti-Red cats]], [[:Category:Anti-Angel Cats|anti-Angel cats]] and [[:Category:Anti-Dark Cats|anti-Dark cats]] will do well in this stage. Some good examples are [[Hip Hop Cat (Super Rare Cat)|Hip Hop Cat]], [[Apple Cat (Super Rare Cat)|iCat]], [[Witch Cat (Rare Cat)|Witch Cat]], [[Bath Cat (Super Rare Cat)|Sexy Bathtub Cat]], [[Rocker Cat (Rare Cat)|Artist Cat]], [[Juliet Cat (Super Rare Cat)|Juliet Cat]] and [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]]. If you are later in the game however, most of these stages can be easily rushed.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], this stage had a restriction of "only [[:Category:Normal Cats|Normal]], [[:Category:Special Cats|Special]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]] units", rather than a Cat Deploy Limit of 10.
+
+==Reference==
+*https://battlecats-db.com/stage/s24015.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

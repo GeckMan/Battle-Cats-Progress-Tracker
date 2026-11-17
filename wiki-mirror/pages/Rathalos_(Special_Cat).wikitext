@@ -1,0 +1,128 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''For the enemy encountered in [[Monster Hunter Collaboration Event]], see [[Rathalos (Enemy)]].''
+'''Rathalos''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 4.2 Update|Version 4.2]] and can be unlocked by playing the Event Gacha during [[Monster Hunter Collaboration Event]].
+
+{{Cat Info
+|ID = 206
+|rarity = EX
+|name1 = Rathalos
+|name2 = Rathalos & Cat
+}}
+
+==Evolution==
+Evolves into '''Rathalos & Cat''' at level 10.
+
+==Strategy/Usage==
+Rathalos is entirely outclassed by [[Bahamut Cat (Special Cat)|Bahamut Cat]]. Bahamut Cat has higher range and more damage, which are two of the most important stats for a backliner. The only advantages Rathalos has are a marginally higher speed, health and recharge time, a quicker attack rate and a slightly lower cost, which don't add up to make it better than Bahamut Cat. Rathalos also costs much more to upgrade than Bahamut, making it even worse.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 206
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni206 f00.png
+|Image2 = Uni206 c00.png
+|Name1 (JP) = リオレウス
+|Desc1 (JP) = モンハン 大狩猟クエストから参戦！<br>火炎ブレスで敵を焼きつくす、空の王者と称される火竜<br>(範囲攻撃)
+|Transl1 (JP) = Joined the war from Monster Hunter big hunting Quest!<br>A fire dragon that burns enemies with flame breath and is said to be the king of the sky<br>(Ranged attack)
+|Name2 (JP) = リオレウス&にゃんこ
+|Desc2 (JP) = モンハン 大狩猟クエストから参戦！<br>空の王者を召喚し強力な火力を手に入れたにゃんこ<br>(範囲攻撃)
+|Transl2 (JP) = Joined the war from Monster Hunter big hunting Quest!<br>The cat which has strong firepower summoned a champion in the sky.<br>(Ranged attack)
+}}
+
+==Cost==
+*Chapter 1: 2,550円
+*Chapter 2: 3,825円
+*Chapter 3: 5,100円
+{{Upgrade Cost|MIX
+|0
+|6,860
+|10,360
+|15,260
+|29,750
+|45,010
+|65,240
+|82,600
+|138,180
+|359,450
+|10,920
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rathalos
+|Normal Base HP = 1455
+|Normal Base AP = 755
+|Normal Range = 405
+|Normal Foreswing = 74
+|Normal Attack Cooldown = 135
+|Normal Attack Length = 121
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 2550
+|Normal Recharge = 3600
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Rathalos & Cat
+|Evolved Base HP = 1855
+|Evolved Base AP = 955
+|Evolved Range = 405
+|Evolved Foreswing = 74
+|Evolved Attack Cooldown = 135
+|Evolved Attack Length = 121
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 2550
+|Evolved Recharge = 3600
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,455 HP
+|val-Normal-Attack Power = 755 damage<br>(108.37 DPS)
+|val-Normal-Attack Range = 405
+|val-Normal-Attack Frequency = 209f <sub>6.97 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 74f <sup>2.47s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Normal-Recharge Time = 120 ~ 111.2 seconds
+|val-Normal-MaxHP = 24,735 HP
+|val-Normal-MaxAttack = 12,835 damage<br>(1,842.34 DPS)
+|val-Evolved-Health = 31,535 HP
+|val-Evolved-Attack Power = 16,235 damage<br>(2,330.38 DPS)
+|val-Evolved-Attack Range = 405
+|val-Evolved-Attack Frequency = 209f <sub>6.97 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 74f <sup>2.47s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Evolved-Recharge Time = 120 ~ 111.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni206 f00}}
+
+==Trivia==
+*In the main Monster Hunter games, [[wikia:monsterhunter:Rathalos|Rathalos]] is a Flying Wyvern monster, its fire breath is one of its main attacks, and it is referred to as the King of the Skies, which may possibly explain its range difference from its similar counterpart, [[Rathian (Special Cat)|Rathian]].
+
+==Reference==
+*https://battlecats-db.com/unit/207.html
+
+----
+{{CatNav|Sheria - Kirin|Rathian}}
+----
+
+{{Monster Hunter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]

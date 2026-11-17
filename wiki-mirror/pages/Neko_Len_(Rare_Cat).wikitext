@@ -1,0 +1,126 @@
+'''Neko Len''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. He was added in [[Version 10.3 Update|Version 10.3]].
+
+{{Cat Info
+|ID = 593
+|rarity = RR
+|name1 = Neko Len
+|name2 = Neko Len CC
+}}
+
+==Evolution==
+Evolves into '''Neko Len CC''' at level 10.
+
+==Strategy/Usage==
+Neko Len should be used in exclusively metal stages, as his HP is rather low otherwise. He can be used to tank metal enemies, and thanks to his 20 speed (same as [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser]]) he can protect your units decently well. His dodge chance is 30% and lasts 2 seconds, so he is rather reliant on chance, however being able to stall Metal enemies completely for 2 seconds can work well in some cases. Very effective against [[Metal Doge]]s, as their damage is usually not rather high and their attack rate is fast.
+
+However, if one happens to own [[Primordial Cat (Rare Cat)|Modern Cat]], then this unit will see little use.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 593
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni593 f00.png
+|Image2 = Uni593 c00.png
+|Name1 = Neko Len
+|Desc1 = Die-hard fan of a powerful popstar.<br>Adolescence has recently developed his voice.<br>Might Dodge attacks from Metal enemies.
+|Name2 = Neko Len CC
+|Desc2 = Die-hard fan of a dignified popstar.<br>Touring the world in a handmade banana boat.<br>Might Dodge attacks from Metal enemies.
+|Name1 (JP) = ネコレン (Neko Len, Cat Len)
+|Desc1 (JP) = パワフルなバーチャル・シンガーに憧れるネコ<br>思春期まっさかりで最近声変わりを果たした<br>たまにメタルな敵の攻撃を無効化する
+|Transl1 (JP) = A cat with a penchant for powerful virtual singers<br>In the throes of puberty and has recently undergone a voice change<br>Occasionally nullifies the attacks of Metal Enemies
+|Name2 (JP) = ネコレンCC (Neko Len CC, Cat Len CC)
+|Desc2 (JP) = 凛々しい少年声のバーチャル・シンガーに憧れるネコ<br>手作りのバナナボートでワールドツアーを敢行中<br>たまにメタルな敵の攻撃を無効化する
+|Transl2 (JP) = A cat who admires virtual singers with dignified boy voices<br>Currently on a world tour in a handmade banana boat<br>Occasionally nullifies the attacks of Metal Enemies
+|Name1 (TW) = 貓咪連
+|Desc1 (TW) = 很憧憬有活力的虛擬歌手的貓咪<br>正值青春期的結果就是變聲了<br>有時候可使鋼鐵敵人的攻擊無效化
+|Name2 (TW) = 貓咪連CC
+|Desc2 (TW) = 很憧憬酷酷少年聲的虛擬歌手的貓咪<br>以親手做的香蕉船正在進行世界巡演中<br>有時候可使鋼鐵敵人的攻擊無效化
+|Name1 (KR) = 고양이 렌
+|Desc1 (KR) = 파워풀한 버추얼 싱어를 동경하는 고양이<br>사춘기가 한창이라 최근에 목소리가 변했다<br>가끔 메탈 적의 공격을 무효화 시킨다
+|Name2 (KR) = 고양이 렌CC
+|Desc2 (KR) = 늠름한 소년 목소리의 버추얼 싱어를 동경하는 고양이<br>손수 만든 바나나 보트로 월드 투어 감행 중<br>가끔 메탈 적의 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Neko Len
+|Normal Base HP = 870
+|Normal Base AP = 225
+|Normal Range = 125
+|Normal Foreswing = 3
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 87
+|Normal Speed = 20
+|Normal KB = 2
+|Normal Cost = 350
+|Normal Recharge = 410
+|Normal Attack Type = Single
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Neko Len CC
+|Evolved Base HP = 870
+|Evolved Base AP = 225
+|Evolved Range = 125
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 87
+|Evolved Speed = 20
+|Evolved KB = 2
+|Evolved Cost = 350
+|Evolved Recharge = 410
+|Evolved Attack Type = Single
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 870 HP
+|val-Normal-Attack Power = 225 damage<br>(77.59 DPS)
+|val-Normal-Attack Range = 125
+|val-Normal-Attack Frequency = 87f <sub>2.9 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 3f <sup>0.1s</sup><br>(84f <sup>2.8s</sup> backswing)
+|val-Normal-Recharge Time = 13.67 ~ 4.87 seconds
+|val-Normal-MaxHP = 14,790 HP
+|val-Normal-MaxAttack = 3,825 damage<br>(1,318.97 DPS)
+|val-Evolved-Health = 14,790 HP
+|val-Evolved-Attack Power = 3,825 damage<br>(1,318.97 DPS)
+|val-Evolved-Attack Range = 125
+|val-Evolved-Attack Frequency = 87f <sub>2.9 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(82f <sup>2.73s</sup> backswing)
+|val-Evolved-Recharge Time = 13.67 ~ 4.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni593 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/594.html
+
+----
+{{CatNav|Neko Rin|Mighty Aethur Ltd.}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

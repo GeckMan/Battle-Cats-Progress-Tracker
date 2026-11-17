@@ -1,0 +1,7 @@
+.ranger-navbox.street-fighter {
+	--bg-navbox-title: linear-gradient(to right, hsl(31, 77%, 54%) 0%, hsl(31, 77%, 60%) 100%);
+	--bg-sub-table-title: hsl(1, 93%, 52%);
+	--bg-group-name: hsl(35, 72%, 45%);
+}
+
+/* [[Category:Template stylesheets]] */

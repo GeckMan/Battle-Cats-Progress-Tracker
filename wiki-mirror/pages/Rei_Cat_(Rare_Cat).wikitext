@@ -1,0 +1,134 @@
+:''For other uses, see [[Rei (disambiguation)]].''
+'''Rei Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 6.10 Update|Version 6.10]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]].
+
+{{Cat Info
+|ID = 406
+|rarity = RR
+|name1 = Rei Cat
+|name2 = Ayanami Cat (TBC)
+}}
+
+==Evolution==
+Evolves into '''Ayanami Cat (TBC)''' at level 10.
+
+==Strategy/Usage==
+Rei Cat's quick attacks with resistance basically makes her a slightly worse [[Rocker Cat (Rare Cat)|Rocker Cat]]. If you don't have Rocker Cat, this is your closest bet. She can form a good shield when used alongside Rocker Cat, making her particularly helpful in [[Legend Stages#Crown Difficulty|4-crown]] stages. Using Research Up combos like [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]] is recommended when using her, as Rei Cat has a somewhat-long cooldown of 6.87 seconds.
+
+She's also kind of like a slower, tankier [[Food Stall Cat (Rare Cat)|Delivery Cat]]. Delivery Cat has 21 speed, while Rei has 8 speed. Although they both have similar health, Rei has resistant to angels. Overall, a pretty good pull.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 406
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni406 f00.png
+|Image2 = Uni406 c00.png
+|Name1 = Rei Cat
+|Desc1 = Cat who pilots EVA Unit-00. Gendo's<br>glasses are her cherished treasure.<br>Tough vs / Massive Damage to Angels.
+|Name2 = Ayanami Cat (TBC)
+|Desc2 = She lost all memory of the black plugsuit.<br>There is nothing for her but her duty.<br>Tough vs / Massive Damage to Angels.
+|Name1 (JP) = ネコレイ (Neko Rei, Cat Rei)
+|Desc1 (JP) = エヴァンゲリオン零号機パイロットに憧れるネコ<br>ネコゲンドウに貰ったメガネを大切にしている<br>天使に打たれ強く、超ダメージを与える
+|Transl1 (JP) = A cat who yearns to be an Evangelion Unit Zero pilot<br>She keeps the glasses given to her by Nekogendou<br>Resists damage, deals Super Damage to Angel enemies
+|Name2 (JP) = ネコアヤナミレイ（仮称） (Neko Ayanami Rei (Kashō), Cat Ayanami Rei (Tentative Name))
+|Desc2 (JP) = 黒いプラグスーツを着た記憶を失くしたネコ<br>命令以外のことは何もしない<br>天使に打たれ強く、超ダメージを与える
+|Transl2 (JP) = A cat in a black plug suit who has lost her memory<br>Doesn't do anything except what he's told<br>Resists damage, deals Super Damage to Angel enemies
+|Name1 (TW) = 零貓
+|Desc1 (TW) = 夢想成為EVA零號機駕駛員的貓咪<br>非常珍惜源堂貓送的眼鏡<br>對上天使敵人很耐打，可以給予其超大傷害
+|Name2 (TW) = 綾波零貓（暫稱）
+|Desc2 (TW) = 身著黑色作戰服，失去記憶的貓咪<br>除了命令以外什麼都不做<br>對上天使敵人很耐打，可以給予其超大傷害
+|Name1 (KR) = 고양이 레이
+|Desc1 (KR) = 에반게리온 영호기의 파일럿을 동경하는 고양이<br>고양이 겐도에게 받은 안경을 소중히 하고 있다<br>천사에 맷집이 좋고 초 데미지를 입힌다
+|Name2 (KR) = 고양이 아야나미 레이 (가칭) (가칭)
+|Desc2 (KR) = 검은 플러그 슈트를 입은 기억을 잃은 고양이<br>명령 이외에는 아무 것도 하지 않는다<br>천사에 맷집이 좋고 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 410¢
+*Chapter 2: 615¢
+*Chapter 3: 820¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rei Cat
+|Normal Base HP = 575
+|Normal Base AP = 225
+|Normal Range = 190
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 57
+|Normal Attack Length = 47
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 410
+|Normal Recharge = 470
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Ayanami Cat (TBC)
+|Evolved Base HP = 575
+|Evolved Base AP = 225
+|Evolved Range = 190
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 57
+|Evolved Attack Length = 47
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 410
+|Evolved Recharge = 470
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 575 HP
+|val-Normal-Attack Power = 225 damage<br>(79.41 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 85f <sub>2.83 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Normal-Recharge Time = 15.67 ~ 6.87 seconds
+|val-Normal-MaxHP = 9,775 HP
+|val-Normal-MaxAttack = 3,825 damage<br>(1,350 DPS)
+|val-Evolved-Health = 9,775 HP
+|val-Evolved-Attack Power = 3,825 damage<br>(1,350 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 85f <sub>2.83 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Evolved-Recharge Time = 15.67 ~ 6.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni406 f00}}
+
+==Trivia==
+*During the 3rd part of the Neon Genesis Evangelion Collab, another design for Ayanami Cat (TBC) can be seen behind the doors in the [[Cat Base Menu]].
+*Although Rei Cat throws a red book in her Normal Form's attack animation and a purple book in her Evolved Form's attack animation, a sprite for the red book still exists in her Evolved Form's spritesheet.
+
+==Reference==
+*https://battlecats-db.com/unit/407.html
+
+----
+{{CatNav|Kaworu & Cat|Asuka Cat}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Resistant ability]]

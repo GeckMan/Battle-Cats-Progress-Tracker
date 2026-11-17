@@ -1,0 +1,127 @@
+'''HYAKUTARO''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be unlocked when beating any stage in [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]] or [[Metal Slug Collaboration Event#Super Metal Slug Defense|Super Metal Slug Defense]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 214
+|rarity = RR
+|name1 = HYAKUTARO
+|name2 = HYAKUTARO CC
+}}
+
+==Evolution==
+Evolves into '''HYAKUTARO CC''' at level 10.
+
+==Strategy/Usage==
+This unit is essentially an even worse version of pre-[[True Form]] [[Pogo Cat (Rare Cat)|Pogo Cat]]. Not only does he have an even higher cost, but he also has two more problems: he has a slightly higher range, meaning he will struggle to protect [[:Category:Melee-class Cats|Melee]]-ranged Cats, and he also has a 4.5 second recharge—even more than [[Rocker Cat (Rare Cat)|Rocker Cat]]'s recharge! Because of these reasons, most Cats will do his job better as a meatshield.
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 214
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni214 f00.png
+|Image2 = Uni214 c00.png
+|Name1 = HYAKUTARO
+|Desc1 = Recruited from the Metal Slug series!<br>An elite commando masked as a typical POW<br>Might survive lethal attacks. (Area Atk)
+|Name2 = HYAKUTARO CC
+|Desc2 = Recruited from the Metal Slug series!<br>Lays down cover fire for the Cats with gas<br>bombs. Might survive lethal attacks. (Area Atk)
+|Name1 (JP) = 百太郎
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>捕虜に見えるが実際は特殊部隊の凄腕<br>まれに生き残る(範囲攻撃)
+|Transl1 (JP) = Joining from the Metal Slug series!<br>He seems like a prisoner but he actually is working for special forces.<br>Sometimes survives lethal strike (ranged attack)
+|Name2 (JP) = 百太郎CC
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>気弾でにゃんこ達を援護してくれる<br>まれに生き残る(範囲攻撃)
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Supports Cats with gas bullets.<br>Sometimes survives lethal strike (ranged attack)
+|Name1 (TW) = 百太郎
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>看起來是俘虜，但其實是特殊部隊中的能手<br>死前有機會存活（範圍攻擊）
+|Name2 (TW) = 百太郎CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>能用氣彈從後方進行掩護<br>死前有機會存活（範圍攻擊）
+|Name1 (KR) = 햐쿠타로
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>포로로 보이지만 실제로는 특수 부대의 엘리트<br>때때로 살아남는다 (범위 공격)
+|Name2 (KR) = 햐쿠타로CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>기탄으로 냥코들을 지원해준다<br>때때로 살아남는다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = HYAKUTARO
+|Normal Base HP = 480
+|Normal Base AP = 80
+|Normal Range = 190
+|Normal Foreswing = 39
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 67
+|Normal Speed = 12
+|Normal KB = 2
+|Normal Cost = 300
+|Normal Recharge = 400
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Evolved Name = HYAKUTARO CC
+|Evolved Base HP = 480
+|Evolved Base AP = 80
+|Evolved Range = 190
+|Evolved Foreswing = 39
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 67
+|Evolved Speed = 12
+|Evolved KB = 2
+|Evolved Cost = 300
+|Evolved Recharge = 400
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 80 damage<br>(20.34 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 118f <sub>3.93 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 39f <sup>1.3s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(345.76 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(345.76 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 118f <sub>3.93 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 39f <sup>1.3s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni214 f00}}
+
+==Trivia==
+*HYAKUTARO is based on [[wikia:metalslug:Hyakutaro Ichimonji|Hyakutaro Ichimonji]] from the Metal Slug series.
+*HYAKUTARO's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/215.html
+
+----
+{{CatNav|Catburger|MARCO}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Lethal Strike Resistant Cats]]

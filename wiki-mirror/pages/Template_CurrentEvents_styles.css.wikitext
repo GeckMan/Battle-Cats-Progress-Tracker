@@ -1,0 +1,52 @@
+.current-events .tabber__indicator {
+	display: none;
+}
+
+.current-events .tabber__header {
+	box-shadow: none;
+}
+
+.current-events .tabber .tabber__header .tabber__tabs {
+	background: transparent;
+	padding: 3px 0;
+	text-align: center;
+	margin: 0 0 5px 0;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 2px 0;
+}
+
+.current-events .tabber .tabber__tabs .tabber__tab {
+	margin: 0;
+	height: auto;
+}
+
+.current-events .tabber .tabber__tab {
+	background: var(--bg-color-light2);
+	border: none;
+	font-size: 13px;
+	font-weight: bold;
+	margin: 0;
+	padding: 6px 12px;
+	box-shadow: none;
+}
+
+.current-events .tabber .tabber__tab:first-child {
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.current-events .tabber .tabber__tab:last-child {
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+}
+
+.current-events .tabber__tab[aria-selected="true"] {
+	background: var(--bg-color-light4);
+}
+
+.current-events .tabber__tab:active {
+	background: linear-gradient(#74B3FB, #4D8EF2);
+}
+
+/* [[Category:Template stylesheets]] */

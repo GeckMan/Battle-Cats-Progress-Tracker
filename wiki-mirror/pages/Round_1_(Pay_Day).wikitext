@@ -1,0 +1,61 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Kroxo|Angelic Sleipnir|Puffsley's Comet|Boraphim|Tackey|Casaurian Darkjo|Puffzerker}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,600,000 HP
+|enemies = {{Magnification|Kroxo|2,400%
+|Angelic Sleipnir|250%
+|Boraphim|100%
+|Tackey|200%
+|Casaurian Darkjo|100%
+|Puffzerker|150%}}
+|boss = {{Magnification|Puffsley's Comet|100%}}
+|enemies2 = {{Magnification|Kroxo|2,880%
+|Angelic Sleipnir|300%
+|Boraphim|120%
+|Tackey|240%
+|Casaurian Darkjo|120%
+|Puffzerker|180%}}
+|boss2 = {{Magnification|Puffsley's Comet|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,900
+|max enemies = 20
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Pay Day)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Pay Day}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*20 [[Kroxo]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Angelic Sleipnir]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Puffsley's Comet]] spawns as the boss after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Boraphim]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Tackey]] spawns after 93.33 seconds<sup>2,800f</sup>.
+*1 [[Casaurian Darkjo]] spawns after 106.67 seconds<sup>3,200f</sup>.
+*1 [[Puffzerker]] spawns after 120 seconds<sup>3,600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36015-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

@@ -1,0 +1,124 @@
+'''Kyoko Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. She was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 298
+|rarity = RR
+|name1 = Kyoko Cat
+|name2 = Magical Girl Kyoko Cat
+}}
+
+==Evolution==
+Evolves into '''Magical Girl Kyoko Cat''' at level 10.
+
+==Strategy/Usage==
+Due to her extremely short range and inconsistent procs, Kyoko Cat should not be used unless in early game. She gets outperformed by [[Onmyoji Cat (Rare Cat)|Thaumaturge]] and should only be used for [[User Rank]].
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 298
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni298 f00.png
+|Image2 = Uni298 c00.png
+|Name1 = Kyoko Cat
+|Desc1 = A Cat who admires Magical Girls with endless<br>appetite. Don't waste good food or you'll get it!<br>Might Weaken Red enemies.
+|Name2 = Magical Girl Kyoko Cat
+|Desc2 = This Magical Cat made a contract with a suspicious<br>white creature. Made her spear in shop class.<br>Might Weaken Red enemies.
+|Name1 (JP) = ネコ杏子 (Neko Kyouko)
+|Desc1 (JP) = 食いしん坊な魔法少女に憧れるネコ<br>食べ物は決して粗末にしない<br>たまに赤い敵の攻撃力をダウンさせる
+|Transl1 (JP) = A Cat that admires a Magical Girl who loves food<br>Never wastes food<br>Occasionally Weakens Red enemies
+|Name2 (JP) = 魔法少女ネコ杏子 (Mahō shōjo neko Kyouko, Magical Girl Neko Kyouko)
+|Desc2 (JP) = 怪しげな白い生き物と契約したネコ魔法少女<br>伸びる槍はホームセンターで材料をそろえた手作り品<br>たまに赤い敵の攻撃力をダウンさせる
+|Transl2 (JP) = A Magical Girl cat who made a contract with a suspicious white creature<br>Her extending spear is handmade from materials at the home improvement store<br>Occasionally Weakens Red enemies
+|Name1 (TW) = 杏子貓
+|Desc1 (TW) = 一隻對貪吃的魔法少女有憧憬的貓咪<br>絕對不會糟蹋食物<br>有時候能降低紅色敵人的攻擊力
+|Name2 (TW) = 魔法少女杏子貓
+|Desc2 (TW) = 跟一隻詭異白色生物簽訂契約的魔法少女貓咪<br>可彎曲的長槍是在五金行買材料的DIY作品<br>有時候能降低紅色敵人的攻擊力
+|Name1 (KR) = 고양이 쿄코
+|Desc1 (KR) = 먹방 마법소녀를 동경하는 고양이<br>음식은 절대 함부로 대하지 않는다<br>가끔 빨간 적의 공격력을 다운시킨다
+|Name2 (KR) = 마법소녀 고양이 쿄코
+|Desc2 (KR) = 수상한 하얀색 생물과 계약을 맺은 마법소녀<br>늘어나는 창은 인테리어샵에서 구입한 재료로 만든 수제품<br>가끔 빨간 적의 공격력을 다운시킨다
+}}
+
+==Cost==
+*Chapter 1: 410¢
+*Chapter 2: 615¢
+*Chapter 3: 820¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kyoko Cat
+|Normal Base HP = 925
+|Normal Base AP = 225
+|Normal Range = 150
+|Normal Foreswing = 23
+|Normal Attack Cooldown = 49
+|Normal Attack Length = 71
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 410
+|Normal Recharge = 430
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = Magical Girl Kyoko Cat
+|Evolved Base HP = 925
+|Evolved Base AP = 225
+|Evolved Range = 200
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 57
+|Evolved Attack Length = 28
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 410
+|Evolved Recharge = 430
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 925 HP
+|val-Normal-Attack Power = 225 damage<br>(93.75 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 72f <sub>2.4 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 23f <sup>0.77s</sup><br>(48f <sup>1.6s</sup> backswing)
+|val-Normal-Recharge Time = 14.33 ~ 5.53 seconds
+|val-Normal-MaxHP = 15,725 HP
+|val-Normal-MaxAttack = 3,825 damage<br>(1,593.75 DPS)
+|val-Evolved-Health = 15,725 HP
+|val-Evolved-Attack Power = 3,825 damage<br>(1,593.75 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 72f <sub>2.4 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 14.33 ~ 5.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni298 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/299.html
+
+----
+{{CatNav|Mami Cat|Li'l Madoka}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

@@ -1,0 +1,61 @@
+:''This article is about the enemy. For the Cat Unit, see [[Holy Phoenix (Uber Rare Cat)]].''
+'''Head Rococo''' is an [[:Category:Angel Enemies|Angel]] enemy that appears in the [[Bikkuriman Collaboration Event]]. He was added in [[Version 8.5 Update|Version 8.5]].
+
+{{Enemy Info
+|name = Head Rococo
+|image = E 456.png
+|appearance = [[Bikkuriman Collaboration Event]]
+|money drop = 4,500¢ - 17,775¢
+}}
+
+==Enemy==
+This enemy has a massive DPS of 18,518 and can easily plow through your defenses if you're not careful. It also possesses relatively high speed and an [[Omni Strike]] reaching from -350 to 425 range! It also has a guaranteed chance to [[Freeze|freeze]] your cats for 4 seconds, making it a very good pusher. However, it has one weakness; its somewhat long attack animation.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Yamato Awakens!]]:
+**[[Inherited Ambition (Veteran)]] (17%)
+**[[Inherited Ambition (Deadly)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Head Rococo
+|Health = 1500000
+|Attack Power = 50000
+|Attack Range = 325
+|Attack Type = Area
+|Time Between Attacks = 81
+|Movement Speed = 18
+|Knockback = 4
+|Foreswing = 31
+|Backswing = 50
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~425)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Angel
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+456 e.png|Head Rococo's spritesheet
+IdleHeadRococo.gif|Head Rococo's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/458.html
+
+----
+{{EnemyNav|Beastly Nero|Gummy Cat}}
+----
+
+{{Bikkuriman}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Angel Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]

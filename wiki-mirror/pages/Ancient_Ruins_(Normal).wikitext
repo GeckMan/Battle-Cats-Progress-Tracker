@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Hippoe|Snache|Metal Hippoe|Mooth|Gory|Gabriel}}
+'''Ancient Ruins (Normal)''' is the first stage in [[Strait of Wings]].
+
+{{Stage Info
+|stage name = [[File:rc017.png]]
+[[File:Mapsn152 00 s en.png]]
+|stage location = [[File:Mapname152 s en.png]]
+|energy = 100
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Hippoe|100%
+|Snache|100%
+|Metal Hippoe|100%
+|Mooth|100%
+|Gory|100%
+|Gabriel|100%}}
+|boss = {{Magnification|Snache|100%}}
+|treasure = One of the following (unlimited):<br>
+- Feathers +2 (7.7%)<br>
+- Gold +2 (7.7%)<br>
+- Sprockets +2 (7.7%)<br>
+- Feathers +1 (25.7%)<br>
+- Gold +1 (25.7%)<br>
+- Sprockets +1 (25.7%)
+|XP = 1,900 XP
+|width = 4,800
+|max enemies = 9
+|jpname = Ancient Ruins (Normal)
+|script = 古代文明の遺跡 中級
+|star = 1
+|event-chapter = [[Strait of Wings]]
+|difficulty = ★3
+|prev stage = N/A
+|next stage = [[Ancient Ruins (Veteran)]]
+}}
+
+==Battleground==
+*Infinite [[Hippoe]]s spawn after 0.07 seconds<sup>2f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Snache]]s spawn after 0.07 seconds<sup>2f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Metal Hippoe]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Mooth]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Gory|Gories]] spawn after 60 seconds<sup>1,800f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Snache]] spawns as the boss.
+**10 [[Snache]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[Metal Hippoe]] spawns.
+**3 [[Gabriel]]s spawn, delay 23.33 seconds<sup>700f</sup>.
+
+==Strategy==
+Build up your Worker Cat, then start to use [[Rocker Cat (Rare Cat)|Artist Cat]] or [[Cow Cat (Normal Cat)|Giraffe Cat]] to take down the Metal Hippoes. Since Artist Cat is anti-Angel, you can use him against the Gabriels while something strong like [[Titan Cat (Normal Cat)|Mythical Titan Cat]] takes them down.
+
+You can use critical hitters like [[Jurassic Cat (Rare Cat)|Jurassic Cat]] to get rid of Metal Hippoe and use Artist Cat for the Gabriels. Stack [[Lizard Cat (Normal Cat)|Dragon Cat]] to get rid of Gories.
+
+==Reference==
+*https://battlecats-db.com/stage/s01152-01.html
+
+{{Guerrilla}}
+[[Category:Builder's Blitz Stages]]
+[[Category:Event Stages]]

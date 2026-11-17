@@ -1,0 +1,134 @@
+'''Frozen Rose Cat''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[White Day Capsules (Gacha Event)|White Day]] gacha event. It was added in [[Version 13.2 Update|Version 13.2]], and is the White Day variant of [[Ice Cat (Uber Rare Cat)|Ice Cat]].
+
+{{Cat Info
+|ID = 736
+|rarity = UR
+|name1 = Frozen Rose Cat
+|name2 = Arctic Bloom Cat
+}}
+
+==Evolution==
+Evolves into '''Arctic Bloom Cat''' at level 10.
+
+==Strategy/Usage==
+Frozen Rose Cat is ultimately underwhelming. Like most anti-Zombie Ubers, they have excellent compatibility against zombie midrangers and melee threats, but Frozen Rose's lack of base health, defensive abilities and vulnerability to zombie abilities can easily dismiss their only relevant strengths.
+
+They are a variant of Ice Cat, who's a solid Backlining Crowd-Controlling unit with a similar ability, and they have a very promising niche that freezes Zombies with a good chance of activation and decent uptime. Despite this, their range doesn't save them from being annihilated by their target trait.
+
+First of all, even though they have decent range on paper, considering that almost all Zombie enemies can burrow, their range can be bypassed easily by many Zombies that would end up either inside or past their hitbox, resulting in either their death, or them being clipped through. You may be able to bypass this with meatshielding, which triggers the burrow, but it's almost impossible to properly do with Zombies that burrow more than once. Their attack animation is painfully long, and mostly the enemies would burrow past or get past your meatshields by then, making their attack miss Zombies anyway.
+
+Their slow immune is interesting, which can really help against the likes of Croakley, but their three matchups against [[Daboo of the Dead|Daboo]], [[Lophiiformes Angaburu|Angaburu]] and [[Zomboe]] are not great. Daboo is Immune to Freeze (though they could still be of some use against Zombie peons that support Daboo in [[Parade of the Dead (Deadly)|Parade of the Dead]]/[[Prisoner's Progress (Merciless)|Prisoner's Progress]]) and hits with 800 range Omni Strikes that spell out doom for them. Zomboe burrows, and Angaburu can rip through them with its frequently spawning Mini-Surges. Thus, they cannot counter many Zombies on late game stages, as they are decimated very easily by Zombies, and they only have a subpar and situational usage as a Crowd-Controlling Semi-Nuker for Zombie Outbreak stages from Empire of Cats and early Into the Future.
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 736
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni736 f00.png
+|Image2 = Uni736 c00.png
+|Name1 = Frozen Rose Cat
+|Desc1 = Beguiling luminary of a wintry kingdom, they are<br>the epitome of timeless cool who, with one icy<br>stare, can sometimes Freeze Zombies (Area Atk)
+|Name2 = Arctic Bloom Cat
+|Desc2 = Return gifts to their Valentine's admirers always hit,<br>thanks to an innate awareness of the feminine heart.<br>May sometimes Freeze Zombies (Area Atk)
+|Name1 (JP) = ネコアイスホワイトスター (Neko Aisu Howaito Sutā, White Star Ice Cat)
+|Desc1 (JP) = 氷の世界で一世を風靡するイケメン男装少女<br>美しくクールな立ち振る舞いと冷たい眼差しで<br>ゾンビの動きをたまにしばらく止める(範囲攻撃)
+|Transl1 (JP) = A handsome cross-dressing girl who dominates the world of ice<br>With her beautiful, cool demeanor and cold gaze, she<br>occasionally stops the movement of Zombies for a while (Area Attack)
+|Name2 (JP) = ネコアイストップスター (Neko Aisu Toppu Sutā, Top Star Ice Cat)
+|Desc2 (JP) = 乙女心を完璧に理解した必殺のお返しで<br>ホワイトデーの話題をかっさらうスター男装少女<br>ゾンビの動きをたまにしばらく止める(範囲攻撃)
+|Transl2 (JP) = A cross-dressing star who steals the spotlight with a perfect understanding of a maiden's heart,<br>delivering a deadly gift and stealing the conversation on White Day<br>Occasionally stops the movement of Zombies for a while (Area Attack)
+|Name1 (TW) = 冰雪白星貓
+|Desc1 (TW) = 在冰雪世界風靡一時的俊俏男裝女孩<br>有著美麗、帥氣又優雅的舉止和冷漠的眼神<br>有時候讓不死生物暫時動作停止(範圍攻擊)
+|Name2 (TW) = 冰雪巨星貓
+|Desc2 (TW) = 徹底了解少女心並用完美的回禮<br>在白色情人節成為話題焦點的巨星級男裝女孩<br>有時候讓不死生物暫時動作停止(範圍攻擊)
+|Name1 (KR) = 고양이 아이스 화이트스타
+|Desc1 (KR) = 얼음 세계에서 인기 급상승 중인 꽃미남 남장 여자<br>아름답고 쿨한 몸짓과 차가운 눈빛으로<br>가끔 좀비의 움직임을 잠깐 멈춘다 (범위 공격)
+|Name2 (KR) = 고양이 아이스 톱스타
+|Desc2 (KR) = 여심을 녹이는 필살 팬 서비스로<br>화이트 데이를 장악한 스타 꽃미남 남장 여자<br>가끔 좀비의 움직임을 잠깐 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,200¢
+*Chapter 2: 3,300¢
+*Chapter 3: 4,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Frozen Rose Cat
+|Normal Base HP = 1400
+|Normal Base AP = 1100
+|Normal Range = 375
+|Normal Foreswing = 54
+|Normal Attack Cooldown = 129
+|Normal Attack Length = 71
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 2200
+|Normal Recharge = 2000
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Freeze}} 75% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Arctic Bloom Cat
+|Evolved Base HP = 1800
+|Evolved Base AP = 1550
+|Evolved Range = 425
+|Evolved Foreswing = 54
+|Evolved Attack Cooldown = 129
+|Evolved Attack Length = 71
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 2200
+|Evolved Recharge = 2000
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Freeze}} 75% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,400 HP
+|val-Normal-Attack Power = 1,100 damage<br>(180.33 DPS)
+|val-Normal-Attack Range = 375
+|val-Normal-Attack Frequency = 183f <sub>6.1 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 54f <sup>1.8s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 66.67 ~ 57.87 seconds
+|val-Normal-MaxHP = 23,800 HP
+|val-Normal-MaxAttack = 18,700 damage<br>(3,065.57 DPS)
+|val-Evolved-Health = 30,600 HP
+|val-Evolved-Attack Power = 26,350 damage<br>(4,319.67 DPS)
+|val-Evolved-Attack Range = 425
+|val-Evolved-Attack Frequency = 183f <sub>6.1 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 54f <sup>1.8s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 66.67 ~ 57.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni736 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/737.html
+
+----
+{{CatNav|Principal Cat|Floral Kalisa}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Slow Immunity]]

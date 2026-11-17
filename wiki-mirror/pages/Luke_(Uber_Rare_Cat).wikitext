@@ -1,0 +1,144 @@
+:''This article is about the Cat Unit. For the enemy, see [[Luke (Enemy)]].''
+'''Luke''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event/Red Team Gacha Drop|Street Fighter Collaboration Event]]. He was added in [[Version 11.9 Update|Version 11.9]].
+
+{{Cat Info
+|ID = 681
+|rarity = UR
+|name1 = Luke
+|name2 = Luke CC
+}}
+
+==Evolution==
+Evolves into '''Luke CC''' at level 10.
+
+==Strategy/Usage==
+Think of Luke as a Street Fighter edition of [[Baby Gao (Uber Rare Cat)|Mighty Lord Gao]] - high range, [[Strong Against]] traited enemies, and 5% chance to strike a Savage Blow, though he has lower range and lack of wave immunity, but has [[Shield Piercing]] in exchange.
+
+Luke is overall a good ranged unit. He can safely attack enemies from his high range, with nearly 8k DPS against traited and 102,000 Effective Health at Level 30, and additional 5% chance of Savage Blow, which like Gao's crit provides extra damage every now and then. His high health also allows him to survive heavy attacks.
+
+Luke also has quick movement speed. However, his high speed could cause him to step into the enemy's territory when the Cat Cannon is fired, to his own detriment.
+
+Luke's [[Shield Piercing]] ability makes him a good generalist against long-ranged [[Shield|Shielded]] [[:Category:Aku Enemies|Aku]] enemies such as [[Wicked Face]], [[Fallen Bear]] and [[Lord of Ruin Jagando]], if Shield Piercing ever activates. However, his rapid attacks can still deal a lot of damage to [[Shield]]s. The problem is that Luke also lacks [[Immune to Surge|Surge Immunity]], meaning [[Surge Attack#Death Surge|Aftermaths]] will harm or kill him.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 681
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni681 f00.png
+|Image2 = Uni681 c00.png
+|Name1 = Luke
+|Desc1 = Joining the fight from Street Fighter V!<br>Excitable young man who spars like a trained soldier.<br>Strong against Traited enemies (Area Attack)
+|Name2 = Luke CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Punishes his enemy with fierce "Flash Knuckles."<br>Strong against Traited enemies (Area Attack)
+|Name1 (JP) = ルーク (Rūku, Luke)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>軍隊仕込みの総合格闘技で戦う少しお調子者の青年<br>属性を持つ敵にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = Joined from Street Fighter V!<br>A boy who fights at mixed martial arts taught by the army<br>Strong against enemies with traits (Area Attack)
+|Name2 (JP) = ルークCC (Rūku CC, Luke CC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>「フラッシュナックル」で強烈な拳を敵に叩き込む<br>属性を持つ敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joined from Street Fighter V!<br>With "Flash Knuckle", pounds enemies with a strong fist<br>Strong against enemies with traits (Area Attack)
+|Name1 (TW) = 路克
+|Desc1 (TW) = 從快打旋風V來參戰！<br>用軍中所學的綜合格鬥技戰鬥，容易自滿的青年<br>善於攻擊有屬性敵人(範圍攻擊)
+|Name2 (TW) = 路克CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>用"閃光拳"的強烈拳擊來打倒對手<br>善於攻擊有屬性敵人(範圍攻擊)
+|Name1 (KR) = 루크
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>군대에서 익힌 종합 격투기로 싸우는 조금 껄렁한 청년<br>속성을 가진 적에게 엄청 강하다 (범위 공격)
+|Name2 (KR) = 루크CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>플래시 너클로 강력한 주먹을 적에게 때려 박는다<br>속성을 가진 적에게 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,200¢
+*Chapter 2: 4,800¢
+*Chapter 3: 6,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Luke
+|Normal Base HP = 4000
+|Normal Base AP = 1100
+|Normal Range = 400
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 97
+|Normal Attack Length = 59
+|Normal Speed = 22
+|Normal KB = 3
+|Normal Cost = 3200
+|Normal Recharge = 4000
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Savage Blow}} 5% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Shield Piercing}} 10% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s
+|Evolved Name = Luke CC
+|Evolved Base HP = 4000
+|Evolved Base AP = 1100
+|Evolved Range = 400
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 97
+|Evolved Attack Length = 59
+|Evolved Speed = 22
+|Evolved KB = 3
+|Evolved Cost = 3200
+|Evolved Recharge = 4000
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Savage Blow}} 5% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies<br>
+{{AbilityIcon|Shield Piercing}} 10% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,000 HP
+|val-Normal-Attack Power = 1,100 damage<br>(294.64 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 112f <sub>3.73 seconds</sub>
+|val-Normal-Movement Speed = 22
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Normal-Recharge Time = 133.33 ~ 124.53 seconds
+|val-Normal-MaxHP = 68,000 HP
+|val-Normal-MaxAttack = 18,700 damage<br>(5,008.93 DPS)
+|val-Evolved-Health = 68,000 HP
+|val-Evolved-Attack Power = 18,700 damage<br>(5,008.93 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 112f <sub>3.73 seconds</sub>
+|val-Evolved-Movement Speed = 22
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Evolved-Recharge Time = 133.33 ~ 124.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni681 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/682.html
+
+----
+{{CatNav|Sakura|Spectral Goth Vega}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Gacha Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Savage Blow Cats]]
+[[Category:Shield Piercing Cats]]

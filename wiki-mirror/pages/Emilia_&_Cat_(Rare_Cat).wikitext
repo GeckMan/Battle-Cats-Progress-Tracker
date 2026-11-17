@@ -1,0 +1,120 @@
+{{JPExclusive}}
+'''Emilia & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by completing any stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Light Rail|Kaohsiung Metro Light Rail]] during the [[Kaohsiung Rapid Transit Collaboration Event]]. She was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 639
+|rarity = RR
+|name1 = Emilia & Cat
+|name2 = Emilia & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Emilia & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Unlike the other units found in her collab, Emilia & Cat has rather good uptime on her Freeze against [[:Category:Angel Enemies|Angel]] enemies thanks to her multi-hit attack, making it significantly easier in theory to get a reliable perma-freeze out of her. Unfortunately, she remains ineffective due to her terrible stats and range, which limit her usage to [[Heavenly Hippoe]], [[Angelic Gory]], and [[Boraphim]]. Her Single-Target attacks cut this down even further, as the former two tend to spawn in large numbers, making her way too situational to see proper usage. By the time the player is seeing Angel enemies, they'll likely also have [[Juliet Cat (Super Rare Cat)|Juliet Cat]] or [[Rocker Cat (Rare Cat)|Rocker Cat]], both of which are way better at stopping the advancement of these enemies, so the only usage Emilia will have by then is as User Rank.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 639
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni639 f00.png
+|Image2 = Uni639 c00.png
+|Name1 (JP) = エミリア&ネコ (Emiria & Neko, Emilia & Cat)
+|Desc1 (JP) = 「たかめ少女」から参戦！高雄メトロの運転士<br>問題が発生する前に解決する敏腕スタッフ<br>必ず天使の動きを一瞬止める
+|Transl1 (JP) = Joining the war from "Takame Shoujo"! Kaohsiung Metro's driver<br>a talented staff member who solves problems before they occur<br>Always stops Angel Enemies for a moment
+|Name2 (JP) = エミリア&ネコCC (Emiria & Neko CC, Emilia & Cat CC)
+|Desc2 (JP) = 「たかめ少女」から参戦！台湾人とドイツ人のハーフ<br>たかめ少女一の常識人で、鋭い洞察力の持ち主<br>必ず天使の動きを一瞬止める
+|Transl2 (JP) = Joining the war from "Takame Shoujo"! Half Taiwanese and half German<br>the most sensible and perceptive of the Takame girls<br>Always stops Angel Enemies for a moment
+|Name1 (TW) = 艾米莉亞&貓咪
+|Desc1 (TW) = 從「高捷少女」來參戰！職位是司機員<br>紅與橘的瀏海髮夾加金髮是個人特色<br>必定能使天使敵人瞬間動作停止
+|Name2 (TW) = 艾米莉亞&貓咪CC
+|Desc2 (TW) = 從「高捷少女」來參戰！台德混血兒<br>科學力主義信奉者，對自己的身高有些在意<br>必定能使天使敵人瞬間動作停止
+}}
+
+==Cost==
+*Chapter 1: 330円
+*Chapter 2: 495円
+*Chapter 3: 660円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Emilia & Cat
+|Normal Base HP = 490
+|Normal Base AP = 30,30,30
+|Normal Range = 250
+|Normal Foreswing = 41,51,61
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 128
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 330
+|Normal Recharge = 780
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (510 at 41f <sup>1.37s</sup>, 510 at 51f <sup>1.7s</sup>, 510 at 61f <sup>2.03s</sup>)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Evolved Name = Emilia & Cat CC
+|Evolved Base HP = 490
+|Evolved Base AP = 30,30,30
+|Evolved Range = 250
+|Evolved Foreswing = 41,51,61
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 128
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 330
+|Evolved Recharge = 780
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (510 at 41f <sup>1.37s</sup>, 510 at 51f <sup>1.7s</sup>, 510 at 61f <sup>2.03s</sup>)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 490 HP
+|val-Normal-Attack Power = 90 damage<br>(13.5 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 200f <sub>6.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 41f <sup>1.37s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Normal-Recharge Time = 26 ~ 17.2 seconds
+|val-Normal-MaxHP = 8,330 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(229.5 DPS)
+|val-Evolved-Health = 8,330 HP
+|val-Evolved-Attack Power = 1,530 damage<br>(229.5 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 200f <sub>6.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 41f <sup>1.37s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Evolved-Recharge Time = 26 ~ 17.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni639 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/640.html
+
+----
+{{CatNav|Nana & Cat|Ann & Cat}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Multi-Hit Cats]]

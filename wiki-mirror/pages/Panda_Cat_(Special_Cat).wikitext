@@ -1,0 +1,123 @@
+'''Panda Cat''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by opening a daily login reward from the [[Ranma 1/2 Collaboration Event]]. It was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 606
+|rarity = EX
+|name1 = Panda Cat
+|name2 = Genma Cat
+}}
+
+==Evolution==
+Evolves into '''Genma Cat''' at level 10.
+
+==Strategy/Usage==
+Basically a [[Thief Cat (Rare Cat)|Thief Cat]] with higher attack power but a much slower attack rate and higher cost, meaning there is little usage for this unit outside of very early-game. His Single Target only makes things worse, further limiting his usage.
+
+{{Job|Classification = Melee & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 606
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni606 f00.png
+|Image2 = Uni606 c00.png
+|Name1 = Panda Cat
+|Desc1 = A Cat who admires the Saotome school master,<br>and always trains wearing a cute panda outfit.<br>Collects Extra Money after defeating enemies!
+|Name2 = Genma Cat
+|Desc2 = A Cat who admires the Saotome school master.<br>Sold his panda outfit for a cool martial arts gi.<br>Collects Extra Money after defeating enemies!
+|Name1 (JP) = ネコパンダ (Neko Panda, Cat Panda)
+|Desc1 (JP) = 無差別格闘早乙女流の開祖に憧れて<br>パンダのキグルミをいつも身につけているネコ<br>敵を倒したときにお金を多くもらえる
+|Transl1 (JP) = Admires the founder of the indiscriminate fighting Saotome style<br>A cat who always wears a panda kigurumi<br>Gets more money when defeating his enemies
+|Name2 (JP) = ネコ玄馬 (Neko Genba, Cat Genma)
+|Desc2 (JP) = 無差別格闘早乙女流の開祖になりたくて<br>パンダのキグルミを売って道着を購入したネコ<br>敵を倒したときにお金を多くもらえる
+|Transl2 (JP) = A cat who wants to become the founder of the indiscriminate fighting Saotome style<br>So they sold their panda kigurumi to buy a robe<br>Gets more money when defeating his enemies
+|Name1 (TW) = 貓熊貓
+|Desc1 (TW) = 對無差別格鬥早乙女流元祖有憧憬<br>總是隨身帶著熊貓玩偶裝的貓咪。<br>打倒敵人的時候可以得到很多金錢
+|Name2 (TW) = 貓玄馬
+|Desc2 (TW) = 因為想當無差別格鬥早乙女流元祖<br>賣了熊貓玩偶裝買了道服的貓咪。<br>打倒敵人的時候可以得到很多金錢
+|Name1 (KR) = 고양이 판다
+|Desc1 (KR) = 무차별 격투 사오토메류의 개조를 동경하여<br>판다 인형옷을 항상 입고 있는 고양이.<br>적을 쓰러트리면 머니를 많이 얻는다
+|Name2 (KR) = 고양이 겐마
+|Desc2 (KR) = 무차별 격투 사오토메류의 개조가 되고 싶어<br>판다 인형옷을 팔아 도복을 구입한 고양이.<br>적을 쓰러트리면 머니를 많이 얻는다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 600¢
+*Chapter 3: 900¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Panda Cat
+|Normal Base HP = 555
+|Normal Base AP = 480
+|Normal Range = 225
+|Normal Foreswing = 37
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 56
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = Genma Cat
+|Evolved Base HP = 555
+|Evolved Base AP = 480
+|Evolved Range = 225
+|Evolved Foreswing = 37
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 56
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 555 HP
+|val-Normal-Attack Power = 480 damage<br>(73.47 DPS)
+|val-Normal-Attack Range = 225
+|val-Normal-Attack Frequency = 196f <sub>6.53 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 37f <sup>1.23s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 9,435 HP
+|val-Normal-MaxAttack = 8,160 damage<br>(1,248.98 DPS)
+|val-Evolved-Health = 9,435 HP
+|val-Evolved-Attack Power = 8,160 damage<br>(1,248.98 DPS)
+|val-Evolved-Attack Range = 225
+|val-Evolved-Attack Frequency = 196f <sub>6.53 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 37f <sup>1.23s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni606 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/607.html
+
+----
+{{CatNav|Akane Cat|Adventurer Kanna}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Cats with Money Up ability]]
+[[Category:Single Attack Cats]]

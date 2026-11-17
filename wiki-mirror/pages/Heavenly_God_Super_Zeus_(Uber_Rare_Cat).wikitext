@@ -1,0 +1,121 @@
+{{JPExclusive}}
+:''For other uses, see [[Zeus (disambiguation)]].''
+'''Heavenly God Super Zeus''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Bikkuriman Collaboration Event]]. He is an anti-[[:Category:Angel Enemies|Angel]] and [[:Category:Aku Enemies|Aku]] variant of [[Thunder God Zeus (Uber Rare Cat)|Thunder God Zeus]] that was added in [[Version 13.6 Update|Version 13.6]].
+
+{{Cat Info
+|ID = 762
+|rarity = UR
+|name1 = Heavenly God Super Zeus
+|name2 = Giga Almighty God Super Zeus
+}}
+
+==Evolution==
+Evolves into '''Giga Almighty God Super Zeus''' at level 10.
+
+==Strategy/Usage==
+Super Zeus is a strange unit; he has a ton of HP but a rather miserable DPS for his super long recharge time. He can still find some use, though, as his DPS is greater than [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] and his [[Slow]] ability makes [[Aku Gory]] much less of a threat. Due to the limited selection of anti-Aku, you'll likely want to use him against Aku, but there are better anti-Angel options out there. [[Surge Attack#Counter-Surge|Counter-Surge]] is not likely to be an ability to trigger often, due to Super Zeus being a backliner.
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 762
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni762 f00.png
+|Image2 = Uni762 c00.png
+|Name1 (JP) = 天空神スーパーゼウス (Tenkūshin Sūpā Zeusu, Heavenly God Super Zeus)
+|Desc1 (JP) = 天空の最高神は喧嘩別れの恐妻を追いかけ不在！<br>この緊急事態に全能の神ゼウスが王座強奪？！<br>天使と悪魔に打たれ強く、烈波を放ち返す(範囲攻撃)
+|Transl1 (JP) = The supreme god of the heavens is away chasing his furious wife after a fight!<br>The almighty god Zeus takes his throne during this crisis?!<br>Tough against Angels and Aku, Reflects Surges (Area Attack)
+|Name2 (JP) = ギガント全能神スーパーゼウス (Giganto Zennōshin Sūpā Zeusu, Giga Almighty God Super Zeus)
+|Desc2 (JP) = にゃんこ界でもトップに君臨する全能の神は、全ての<br>ネコをねじふせるオールマイティの切り札かもヨ！！<br>天使と悪魔に打たれ強く、烈波を放ち返す(範囲攻撃)
+|Transl2 (JP) = The all-powerful god who also reigns over the Cat universe<br>might be an almighty method to subdue the Cats!!<br>Tough against Angels and Aku, Reflects Surges (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 3,300¢
+*Chapter 2: 4,950¢
+*Chapter 3: 6,600¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Heavenly God Super Zeus
+|Normal Base HP = 3200
+|Normal Base AP = 1360
+|Normal Range = 480
+|Normal Foreswing = 64
+|Normal Attack Cooldown = 115
+|Normal Attack Length = 131
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 3300
+|Normal Recharge = 4800
+|Normal Attack Type = Area
+|Normal Targets = Angel,Aku
+|Normal Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]]
+|Evolved Name = Giga Almighty God Super Zeus
+|Evolved Base HP = 4000
+|Evolved Base AP = 1700
+|Evolved Range = 480
+|Evolved Foreswing = 64
+|Evolved Attack Cooldown = 115
+|Evolved Attack Length = 131
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 3300
+|Evolved Recharge = 4800
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Aku
+|Evolved Abilities = {{AbilityIcon|Slow}} 75% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 3,200 HP
+|val-Normal-Attack Power = 1,360 damage<br>(227.93 DPS)
+|val-Normal-Attack Range = 480
+|val-Normal-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 64f <sup>2.13s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Normal-Recharge Time = 160 ~ 151.2 seconds
+|val-Normal-MaxHP = 54,400 HP
+|val-Normal-MaxAttack = 23,120 damage<br>(3,874.86 DPS)
+|val-Evolved-Health = 68,000 HP
+|val-Evolved-Attack Power = 28,900 damage<br>(4,843.58 DPS)
+|val-Evolved-Attack Range = 480
+|val-Evolved-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 64f <sup>2.13s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Evolved-Recharge Time = 160 ~ 151.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni762 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/763.html
+
+----
+{{CatNav|Gunduros|Dynasaurus Cat}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Counter-Surge Cats]]

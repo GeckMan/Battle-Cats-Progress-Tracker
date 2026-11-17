@@ -1,0 +1,7 @@
+<onlyinclude><abbr style="cursor:help" title="The reward is only available one time, but the map will reset the reward status immediately upon clearing, effectively making it unlimited"><nowiki>*</nowiki></abbr></onlyinclude>
+
+If a map's "max clears" value is 1, then once you clear a stage in the map the map will be sent into reset mode. If the map has a "cooldown" value (notably [[Gauntlet]]s, who usually have 3 max clears and a 30 minute cooldown), then reset mode will mean the stage cannot be played until the cooldown runs out; if the map does not have a "cooldown" then reset mode will mean the stage becomes unavailable until the next time the event appears (e.g. [[Facing Danger]], [[Merciless XP!]], [[Journey to Talent (Bahamut Cat)|Journey to Talent]]).
+
+Another map property is the "reset type", which determines what happens once the map becomes unavailable (see [[Stage Rewards]]). This can be resetting  rewards (i.e. a one-time drop can be obtained again the next time the map appears), map progress, or the progress towards the "max clears" value.
+
+Putting together these mechanics, there are stages like [[Taste of Success (Merciless)]] or any stage in [[XP Bonanza!]], where technically the biggest reward (the one that can be obtained with a [[Treasure Radar]]) can only drop once, but their map has a "max clears" of 1, no "cooldown", and a "reset type" that resets the stage rewards. Therefore, in practice, every time the player clears the stage they can receive the biggest reward again, effectively making the biggest reward an unlimited drop.

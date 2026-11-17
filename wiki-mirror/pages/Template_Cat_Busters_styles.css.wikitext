@@ -1,0 +1,9 @@
+.ranger-navbox.cat-busters {
+	--bg-navbox-title: linear-gradient(to right, #f788a2 0%, #f8a0b4 100%);
+	--bg-sub-table-title: #ffbb99;
+	--bg-group-name: #ee6391;
+
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

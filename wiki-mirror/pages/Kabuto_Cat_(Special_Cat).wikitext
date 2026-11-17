@@ -1,0 +1,133 @@
+:''Not to be confused with [[Kabuto Cat (Switch Special Cat)]] or [[Kuwagata Cat (Special Cat)]].''
+'''Kabuto Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Summer Break Cats (Event Gacha)|Summer Break Cats]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] using Legend Nets. It was added in [[Version 10.7 Update|Version 10.7]].
+
+{{Cat Info
+|ID = 615
+|rarity = EX
+|name1 = Kabuto Cat
+|name2 = Golden Kabuto Cat
+}}
+
+==Evolution==
+Evolves into '''Golden Kabuto Cat''' at level 10.
+
+==Strategy/Usage==
+Kabuto Cat can be seen as a lesser version of [[Viking Cat (Rare Cat)|Viking Cat]] with [[:Category:Dark Enemies|Dark]] as an extra target. Stat-wise, it is rather mediocre, but, with enough grinding, its + levels can make him worthwhile for most of the game. Its stats, early on, are relatively good, but it should still be used in stages that do not feature major threats of other traits.
+
+Its lackluster damage makes it mainly a meatshield, but, thanks to his strength, speed and recharge, it can do a good job and may prove extremely important in some 4-crowns [[Legend Stages]], even better if paired with research combos or Thor Cat.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 615
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni615 f00.png
+|Image2 = Uni615 c00.png
+|Name1 = Kabuto Cat
+|Desc1 = An armored Cat who loves oak sap.<br>Can't be caught using a normal net.<br>Strong vs. Red/Dark enemies
+|Name2 = Golden Kabuto Cat
+|Desc2 = The mighty one-horned King of Summer.<br>Undefeated in the insect sumo tournament.<br>Strong vs. Red/Dark enemies
+|Name1 (JP) = カブトネコ (Kabuto Neko, Kabuto Beetle Cat)
+|Desc1 (JP) = クヌギの木から出る樹液に集まる習性を持ち<br>ふつうの虫取り網では捕まえられない幻のネコ<br>赤い敵と黒い敵にめっぽう強い
+|Transl1 (JP) = They are often found collecting around oak sap and<br>are legendary Cats that can't be caught with normal nets<br>Strong against Red and Dark enemies
+|Name2 (JP) = ゴールデンオオカブトネコ (Gōruden Ōkabuto Neko, Golden Giant Kabuto Cat)
+|Desc2 (JP) = 大きな一本の角を持つ真夏の王者<br>虫相撲大会では無戦無勝の負けなしを誇る<br>赤い敵と黒い敵にめっぽう強い
+|Transl2 (JP) = The king of summer, having a single big horn<br>Boasts an unbeaten record in bug sumo tournaments<br>Strong against Red and Dark enemies
+|Name1 (TW) = 獨角貓
+|Desc1 (TW) = 有聚集於麻櫟樹液旁的習性<br>用普通的捕蟲網可是捉不到的夢幻貓咪<br>善於攻擊紅色和黑色敵人
+|Name2 (TW) = 黃金獨角貓
+|Desc2 (TW) = 頭部有一支巨型犄角的真夏王者<br>自豪在昆蟲相撲比賽中保持不敗<br>善於攻擊紅色和黑色敵人
+|Name1 (KR) = 장수풍뎅이 고양이
+|Desc1 (KR) = 상수리나무의 수액을 채집하는 습관을 가진<br>일반 벌레 채집망으로 잡을 수 없는 환상의 고양이<br>빨간 적과 검은 적에 엄청 강하다
+|Name2 (KR) = 골드 장수풍뎅이 고양이
+|Desc2 (KR) = 한개의 큰 뿔을 가지고 있는 한여름의 왕자<br>곤충 씨름대회에서 부전으로 무승무패를 자랑하고 있다<br>빨간 적과 검은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kabuto Cat
+|Normal Base HP = 600
+|Normal Base AP = 120
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 18
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 360
+|Normal Recharge = 410
+|Normal Attack Type = Single
+|Normal Targets = Red,Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Evolved Name = Golden Kabuto Cat
+|Evolved Base HP = 750
+|Evolved Base AP = 150
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 18
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 360
+|Evolved Recharge = 410
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.50+45
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 120 damage<br>(76.6 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 13.67 ~ 4.87 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(1,302.13 DPS)
+|val-Evolved-Health = 12,750 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(1,627.66 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 47f <sub>1.57 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 13.67 ~ 4.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni615 f00}}
+
+==Trivia==
+*Kabuto Cat is named after [[:wikipedia:Kabuto|kabuto]], a type of helmet worn by Japanese warriors.
+*For the first run of [[Summer Break Cats Paradise (Event Gacha)|Summer Break Cats Paradise]], Kabuto Cat was obtained from it, rather than from Summer Break Cats.
+
+==Reference==
+*https://battlecats-db.com/unit/616.html
+
+----
+{{CatNav|Kaguya of the Coast|Kuwagata Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Freeze Immunity]]

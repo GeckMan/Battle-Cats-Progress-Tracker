@@ -1,0 +1,58 @@
+{{LimitedContent}}
+{{Stub}}
+'''E-793''' (看守わんこ, ''Kanshu Wanko'', '''Guard Doge''') is a [[:Category:Traitless Enemies|Traitless]] variant of [[Doge]] that appears in [[Anniversary/14th Year|14th Anniversary]] stages. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Enemy Info
+|name = E-793
+|image = E 793.png
+|first appearance = ?
+|money drop = 15¢ - 59¢
+}}
+
+==Enemy==
+This weak enemy behaves identically to Doge, with the only difference being a 1-second Freeze at 50% chance.
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+?
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = E-793
+|Health = 90
+|Attack Power = 8
+|Attack Range = 110
+|Attack Type = Single
+|Time Between Attacks = 47
+|Movement Speed = 5
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 10
+|Ability = {{AbilityIcon|Freeze}} 50% chance to [[Special Abilities#Freeze|freeze]] Cat Units for 30f <sub>1 second</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+793 e.png|E-793's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/795.html
+
+----
+{{EnemyNav|E-792|E-794}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Enemies with Freeze ability]]

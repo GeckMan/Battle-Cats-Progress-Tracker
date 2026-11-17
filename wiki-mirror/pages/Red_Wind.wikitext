@@ -1,0 +1,112 @@
+'''Red Wind''' (風 (赤) ''Kaze (Aka)'', '''Wind (Red)''') is a [[:Category:Red Enemies|Red]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.10 Update|Version 10.10]].
+
+{{Enemy Info
+|name = Red Wind
+|image = E 581.png
+|money drop = 250¢ - 987¢
+|appearance = [[JRA Collaboration Event]]<br>
+[[Heartbeat Catcademy#List of Stages|Weekend: Confession]]<br>
+[[Monthly Event All-Stars Grateful Gathering]]
+}}
+
+==Enemy==
+Red Wind has pathetically low stats and is nearly identical to [[White Wind]], with the minor difference of having the weaken ability instead of knockback and having the Red trait. Just like Wind though, he's almost always fought in stages with heavy unit restrictions.
+
+==Strategy==
+Somehow Red Wind is even more of a pushover than the original, as most of the time his weaken ability will just affect either [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]] or [[Chalkboard Eraser Cat (Special Cat)|Chalkboard Eraser Cat]], neither of which do much damage anyways.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Heartbeat Catcademy#Weekend: Confession 3|Weekend: Confession]]:
+**[[Courageous Call (Red)|Courageous Call]] (10%)
+**[[The Dreaded Reply (Red)|The Dreaded Reply]] (1%, 200%)
+**[["Just Friends?"]] (1%, 500%)
+*[[Heartbeat Catcademy#Season 4: Graduation Day|Season 4: Graduation Day]]:
+**[[Waiting at the Spot]] (10%)
+**[[She Actually Came?!]] (1%, 75%)
+**[[Scattered Sakura]] (150%)
+**[[Moral Support]] (1%, 300%)
+**[[Unheard Confession]] (400%)
+**[[No Longer Single?]] (500%)
+*[[Summer Break Cats#Bug Sumo Preliminaries|Bug Sumo Preliminaries]]: [[Match: Jonokuchi]] (100%)
+*[[Summer Break Cats#Bug Sumo Semifinals|Bug Sumo Semifinals]]: [[Match: Ozeki]] (300%)
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[800m Relay: Fast Start]] (500%)
+**[[400m Relay: Second Fastest]] (200%)
+**[[1600m Relay: Second Fastest]] (700%)
+**[[1600m Relay: Anchor Leg]] (800%)
+*[[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]]:
+**[[Current-Carried Cats]] (150%)
+**[[Unbroken Rock, Broken Heart]] (500%)
+*[[Memories of 2024]]: [[Memories of Spring Page 2]] (10%)
+*[[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Tree Strike Trial]] (10%)
+**[[Wind Slash Trial]] (100%)
+**[[Brute Force Trial]] (500%)
+*[[Anniversary/13 1/2 Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Tree Strike Trial (13 1/2)|Tree Strike Trial]] (10%)
+**[[Wind Slash Trial (13 1/2)|Wind Slash Trial]] (100%)
+**[[Brute Force Trial (13 1/2)|Brute Force Trial]] (500%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.1]] (100%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.2]] (300%)
+
+===[[Collaboration Events|Collaboration Stages]]===
+*[[JRA Collaboration Event#Emperor's Award (Autumn) (GI)|Emperor's Award (Autumn) (GI)]]:
+**[[The Highest Honor For an Old Horse]] (10%)
+**[[A Race With Tradition and History]] (1%, 200%)
+**[[Aim for the Autumn Shield]] (1%, 500%)
+*[[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]:
+**[[Decide On a Racehorse by Fan Voting]] (10%)
+**[[Prize Money Is The Highest In Japan at 300 Million Yen]] (1%, 75%)
+**[[2 Minutes 30 Seconds To Settle]] (150%)
+**[[Middle and Long Distance Elite]] (1%, 300%)
+**[[The Name Comes from the Race Founder]] (400%)
+**[[Make the Last Run!]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Red Wind
+|Health = 5000
+|Attack Power = 100
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 13
+|Movement Speed = 8
+|Knockback = 3
+|Foreswing = 2
+|Backswing = 11
+|Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Surge|Surge]]
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+581 e.png|Red Wind's spritesheet
+IdleRedWind.gif|Red Wind's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/583.html
+
+----
+{{EnemyNav|White Wind|Dark Wind}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Red Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Warp Immunity]]

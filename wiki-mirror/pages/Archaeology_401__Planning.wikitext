@@ -1,0 +1,68 @@
+{{EnemiesAppearing|Relic Doge|Pigeon de Sable|Wild Doge|Sir Rel|Capy|Infernal Pegasus Deonil}}
+'''Archaeology 401: Planning''' is the first stage in [[Empress' Excavation 4]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn280 00 s en.png]]
+|stage location = [[File:Mapname280 s en.png]]
+|energy = 100
+|enemy castle hp = 1,050,000 HP
+|enemies = {{Magnification|Relic Doge|100%
+|Pigeon de Sable|300%
+|Wild Doge|200%
+|Sir Rel|100%
+|Capy|150%}}
+|boss = {{Magnification|Infernal Pegasus Deonil|100%}}
+|treasure = - [[Catamin]] [A] +3 (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 4,800
+|max enemies = 15
+|jpname = Ancient Survey Ⅳ Plan
+|script = 遺物調査Ⅳ計画
+|romaji = Ibutsu Chōsa Ⅳ Keikaku
+|star = 1
+|event-chapter = [[Empress' Excavation 4]]
+|max clears = 1
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Archaeology 401: Methods]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*2 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Pigeon de Sable]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Wild Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*2 [[Sir Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Capy]] spawns after 30 seconds<sup>900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Infernal Pegasus Deonil]] spawns as the boss.
+**3 [[Wild Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+**10 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**6 [[Sir Rel]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+**1 [[Capy]] spawns after 76.67 seconds<sup>2,300f</sup>.
+
+==Strategy==
+[[Sushi Cat (Super Rare Cat)|Roe Cat]] and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] are almost necessary in this stage (Lv.40+ is recommended). For the start, use [[Cossack Cat (Rare Cat)|Royal Guard Cats]] or [[Figure Skating Cats (Super Rare Cat)|Slapstick  Cats]] for the Relic Doge, and [[Express Cat (Super Rare Cat)|Bullet Train]] on the Pigeon de Sable or Wild Doge to finish it off with Courier.
+Then send out Roe Cat and spam Couriers. Having at least 2 Roe Cats at a time is recommended. Any [[Immune to Waves|Wave Immune]] Uber that outranges Infernal Pegasus Deonil will work wonders. Otherwise, your best bet is to chip him with Courier.
+
+==='''Recommended Units'''===
+*[[Cossack Cat (Rare Cat)|Royal Guard Cat]]: Is immune to waves and has decent bulk, allowing it to juggle Sir Rel and stop Sir Rel from cursing anti-red tanks. Also dispatches Relic Doge fairly quickly.
+*[[Sushi Cat (Super Rare Cat)|Roe Cat]]: An essential unit for this stage, Roe Cat tanks both Deonil and Capy, but is vulnerable to Wild Doge's damage and Sir Rel/Relic Doge's curse.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Like many other stages in the game, Talented Can Can does well here, dealing heavy damage to peons and earning extra money from those it defeats.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Courier is a no-brainer pick for this stage. It reaps the benefits of Deonil's Red/Behemoth typing, dealing 10x damage to Deonil, as well as dealing good damage vs. Wild Doge and Capy.
+*[[Curling Cat (Rare Cat)|Green Shell Cat]]: Nowhere near as essential as other picks on this list, but can be helpful to protect Roe Cat from the non-red enemies in the stage while other attackers take them out.
+
+==='''Recommended Ubers'''===
+*[[Cat Machine (Uber Rare Cat)|Cat Machine Mk 3]]: This is an amazing alternative to Roe Cat. Cat Machine's Wave Shield can protect backliners if they aren't wave immune, this vastly increases versatility if you don't have many backliners. Unfortunately, the curse weakness still remains.
+
+==Reference==
+*https://battlecats-db.com/stage/s01280-01.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

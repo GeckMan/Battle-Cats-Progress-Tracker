@@ -1,0 +1,42 @@
+{{#invoke:Navbox|main
+|template = Template:Crash Fever
+|title = [[Crash Fever Collaboration Event]]
+|navbox_class = crash-fever
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Happy 100 (Special Cat)|Happy 100]]
+*[[Belial (Super Rare Cat)|Belial]]
+*[[Mobius (Uber Rare Cat)|Mobius]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Happy 100 (Enemy)|Happy 100]]
+*[[Belial (Enemy)|Belial]]
+*[[Mobius (Enemy)|Mobius]]
+
+|header3 = Stages
+|group3 = Gates of ALICE
+|list3 =
+*[[Virus of Love]]
+*[[Explosive Escape]]
+*[[Order/Disorder]]
+
+|group4 = Moonlit City
+|list4 =
+*[[Converging Rays]]
+*[[Fever Time!]]
+*[[World War ALICE]]
+
+|group5 = Queen Rampant
+|list5 =
+*[[Sudden Rampage (Normal)]]
+*[[Synthetic Hubris (Hard)]]
+*[[Chaos Construct (Veteran)]]
+*[[Abandoned Future (Expert)]]
+*[[Tangible Existence (Deadly)]]
+}}<templatestyles src="Crash Fever/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Crash Fever]]}}<noinclude>[[Category:Navboxes]]</noinclude>

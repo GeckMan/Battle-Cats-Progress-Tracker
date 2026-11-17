@@ -1,0 +1,172 @@
+:''Not to be confused with [[Kaworu Cat (Rare Cat)]].''
+'''Kaworu & Cat''' is a [[:Category:Special Cats|Special Cat]] obtained as a Stamp Reward during the [[Neon Genesis Evangelion Collaboration Event]]. They were added in [[Version 6.10 Update|Version 6.10]]. [[True Form]] also added in Version 6.10 increases range and gains area attack, but has a slightly slower attack rate.
+
+{{Cat Info
+|ID = 405
+|rarity = EX
+|name1 = Kaworu & Cat
+|name2 = Plug Suit Kaworu
+|name3 = Moon Kaworu
+}}
+
+==Evolution==
+Evolves into '''Plug Suit Kaworu''' at level 10.
+
+Evolves into '''Moon Kaworu''' when obtained from [[The 10th Angel Strikes!]] (may be dropped on the first stage but guaranteed on the second stage) and is level 20 or above.
+
+==Strategy/Usage==
+There is little use for Kaworu & Cat due to his overall low stats, with there being much better units that have the same niche like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] or [[Teacher BearCat (Rare Cat)|Assassin BearCat]]. Due to this, his only relevant use is his [[Cat Combo]], which boosts the [[EVA Angel Killer]] ability to deal '''x25''' damage and take '''1/25''' damage from [[:Category:EVA Angel Enemies|EVA Angels]].
+
+{{Job|Classification = Melee & Combo Slave|TrueClass = Midranger & Combo Slave|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|You Will Find Happiness|"EVA Angel Killer" Effects Up (XL)|Shinji & Cat|Kaworu & Cat|jpname=今度こそ君を幸せに}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 405
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni405 f00.png
+|Image2 = Uni405 c00.png
+|Image3 = Uni405 s00.png
+|Name1 = Kaworu & Cat
+|Desc1 = Recruited from EVANGELION!<br>A strange boy with a mysterious smirk.<br>Massive damage to Dark enemies.
+|Name2 = Plug Suit Kaworu
+|Desc2 = Recruited from EVANGELION!<br>Thought by others to be an EVA pilot.<br>Massive damage to Dark enemies.
+|Name3 = Moon Kaworu
+|Desc3 = Recruited from EVANGELION!<br>Seems to have known Shinji for a long<br>while. Massive area damage to Dark.
+|Name1 (JP) = ちびカヲル (Chibi Kaworu)
+|Desc1 (JP) = エヴァンゲリオンから参戦！<br>ミステリアスな雰囲気漂う不思議な少年<br>黒い敵に超ダメージを与える
+|Transl1 (JP) = Participating from Evangelion!<br>A mysterious boy with a mysterious atmosphere<br>Deals super damage to Dark enemies
+|Name2 (JP) = プラグスーツのちびカヲル (Puragu Sūtsu no Chibi Kaworu, Plug Suit Chibi Kaworu)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>エヴァのパイロットだと思われる謎の少年<br>黒い敵に超ダメージを与える
+|Transl2 (JP) = Participating from Evangelion!<br>A mysterious boy who seems to be an Eva pilot<br>Deauls super damage to Dark enemies
+|Name3 (JP) = 月の少年ちびカヲル (Tsuki no Shounen Chibi Kaworu, Moon Boy Chibi Kaworu)
+|Desc3 (JP) = エヴァンゲリオンから参戦！<br>シンジのことを前から知っているようだが・・・<br>黒い敵に超ダメージを与える(範囲攻撃)
+|Transl3 (JP) = Participating from Evangelion!<br>Seems to have known Shinji from before...<br>Deals super damage to Dark enemies
+|Name1 (TW) = 小小薰
+|Desc1 (TW) = 從新世紀福音戰士來參戰！<br>充滿神秘感的奇妙少年<br>能夠對黑色敵人造成超大傷害
+|Name2 (TW) = 作戰服小小薰
+|Desc2 (TW) = 從新世紀福音戰士來參戰！<br>大家都以為他是EVA駕駛員的神秘少年<br>能夠對黑色敵人造成超大傷害
+|Name3 (TW) = 月下少年薰
+|Desc3 (TW) = 從新世紀福音戰士來參戰！<br>似乎早就知道真嗣這號人物・・・<br>能夠對黑色敵人造成超大傷害(範圍攻擊)
+|Name1 (KR) = 꼬맹이 카오루
+|Desc1 (KR) = 에반게리온에서 참전!<br>미스테리한 분위기의 묘한 소년<br>검은 적에 초 데미지를 입힌다
+|Name2 (KR) = 플러그 슈트 꼬맹이 카오루
+|Desc2 (KR) = 에반게리온에서 참전!<br>에바의 파일럿으로 추측되는 수수께끼의 소년<br>검은 적에 초 데미지를 입힌다
+|Name3 (KR) = 달의 소년 꼬맹이 카오루
+|Desc3 (KR) = 에반게리온에서 참전!<br>신지를 예전부터 알고 있는 것 같다...<br>검은 적에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kaworu & Cat
+|Normal Base HP = 570
+|Normal Base AP = 255
+|Normal Range = 175
+|Normal Foreswing = 48
+|Normal Attack Cooldown = 103
+|Normal Attack Length = 93
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 1000
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)
+|Evolved Name = Plug Suit Kaworu
+|Evolved Base HP = 570
+|Evolved Base AP = 255
+|Evolved Range = 175
+|Evolved Foreswing = 48
+|Evolved Attack Cooldown = 103
+|Evolved Attack Length = 95
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 1000
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)
+|True Name = Moon Kaworu
+|True Base HP = 570
+|True Base AP = 255
+|True Range = 250
+|True Foreswing = 60
+|True Attack Cooldown = 107
+|True Attack Length = 108
+|True Speed = 8
+|True KB = 3
+|True Cost = 300
+|True Recharge = 1000
+|True Attack Type = Area
+|True Targets = Dark
+|True Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 570 HP
+|val-Normal-Attack Power = 255 damage<br>(50.66 DPS)
+|val-Normal-Attack Range = 175
+|val-Normal-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 48f <sup>1.6s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 9,690 HP
+|val-Normal-MaxAttack = 4,335 damage<br>(861.26 DPS)
+|val-Evolved-Health = 9,690 HP
+|val-Evolved-Attack Power = 4,335 damage<br>(861.26 DPS)
+|val-Evolved-Attack Range = 175
+|val-Evolved-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 48f <sup>1.6s</sup><br>(47f <sup>1.57s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+|val-True-Health = 9,690 HP
+|val-True-Attack Power = 4,335 damage<br>(778.74 DPS)
+|val-True-Attack Range = 250
+|val-True-Attack Frequency = 167f <sub>5.57 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 60f <sup>2s</sup><br>(48f <sup>1.6s</sup> backswing)
+|val-True-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni405 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/406.html
+
+----
+{{CatNav|Giraffe Unit-01|Rei Cat}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:EVA Angel Killer Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Cats requiring Awakening for True Form]]

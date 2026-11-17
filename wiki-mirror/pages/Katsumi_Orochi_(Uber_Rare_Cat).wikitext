@@ -1,0 +1,132 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Katsumi Orochi (Enemy)]].''
+'''Katsumi Orochi''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 792
+|rarity = UR
+|name1 = Katsumi Orochi
+|name2 = Katsumi Orochi CC
+}}
+
+==Evolution==
+Evolves into '''Katsumi Orochi CC''' at level 10.
+
+==Strategy/Usage==
+A very simple [[:Category:Anti-Red Cats|Red]]/[[:Category:Anti-Alien Cats|Alien]] nuker, equipped with [[Barrier Breaker]]. Katsumi functions adequately at his intended role; his quick attack rate makes him especially useful against [[:Category:Starred Alien Enemies|Starred Aliens]], specifically as a counter to [[UltraBaaBaa]]. He has a high enough standing range to counter most relevant threats, and his blazing fast foreswing almost guarantees his attacks always land. However, Katsumi lacks any relevant immunities and has terrible HP, so be sure to protect him well.
+
+{{Job|Classification = Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 792
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni792 f00.png
+|Image2 = Uni792 c00.png
+|Name1 = Katsumi Orochi
+|Desc1 = Adopted son of Doppo Orochi who inherited Shinshinkai<br>as its young leader. Breaks Barriers and deals<br>Massive damage to Red and Aliens with area attacks!
+|Name2 = Katsumi Orochi CC
+|Desc2 = Lethal weapon of the karate world with apex strength<br>and ability. Breaks Barriers and deals Massive<br>damage to Red and Aliens with area attacks!
+|Name1 (JP) = 愚地克巳 (Orochi Katsumi, Katsumi Orochi)
+|Desc1 (JP) = 「範馬刃牙」から参戦ッッ！愚地独歩の養子で<br>神心会を引き継いだ若きリーダー。バリアを貫き<br>赤い敵とエイリアンに超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Joining the war from "Baki Hanma"!!! Doppo Orochi's adopted son,<br>he took over as Shinshinkai leader. Pierces Barriers,<br>deals super damage to Red enemies and Aliens (Area Attack)
+|Name2 (JP) = 愚地克巳CC (Orochi Katsumi CC, Katsumi Orochi CC)
+|Desc2 (JP) = 「範馬刃牙」から参戦ッッ！規格外の身体能力と<br>類稀な才能を持つ空手界の最終兵器。バリアを貫き<br>赤い敵とエイリアンに超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Joining the war from "Baki Hanma"!!! The karate world's ultimate weapon, with extraordinary physical ability and<br>exceptionally rare talent. Pierces Barriers,<br>deals super damage to Red enemies and Aliens (Area Attack)
+|Name1 (TW) = 愚地克巳
+|Desc1 (TW) = 從「範馬刃牙」來參戰！愚地獨步的養子<br>繼承神心會的年輕領袖。能破壞護盾<br>可以給予紅色敵人與異星戰士超大傷害(範圍攻擊)
+|Name2 (TW) = 愚地克巳CC
+|Desc2 (TW) = 從「範馬刃牙」來參戰！空手道界的最終兵器<br>擁有超乎常人的身體素質與極少見的才能。能破壞<br>護盾，可以給予紅敵與異星戰士超大傷害(範圍攻擊)
+|Name1 (KR) = 오로치 카츠미
+|Desc1 (KR) = 「한마 바키」에서 참전! 오로치 돗포의 양자로<br>신심회를 이끄는 젊은 리더. 베리어를 뚫어버리고<br>빨간 적과 에이리언에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 오로치 카츠미CC
+|Desc2 (KR) = 「한마 바키」에서 참전! 규격 외의 신체능력과 보기 드문<br>재능을 가진 가라테계의 최종 병기. 베리어를 뚫어버리고<br>빨간 적과 에이리언에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Katsumi Orochi
+|Normal Base HP = 1800
+|Normal Base AP = 1250
+|Normal Range = 450
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 179
+|Normal Attack Length = 36
+|Normal Speed = 9
+|Normal KB = 5
+|Normal Cost = 2600
+|Normal Recharge = 4000
+|Normal Attack Type = Area
+|Normal Targets = Red,Alien
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Katsumi Orochi CC
+|Evolved Base HP = 2200
+|Evolved Base AP = 1650
+|Evolved Range = 450
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 179
+|Evolved Attack Length = 36
+|Evolved Speed = 9
+|Evolved KB = 5
+|Evolved Cost = 2600
+|Evolved Recharge = 4000
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Alien
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,800 HP
+|val-Normal-Attack Power = 1,250 damage<br>(203.8 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 184f <sub>6.13 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 133.33 ~ 124.53 seconds
+|val-Normal-MaxHP = 30,600 HP
+|val-Normal-MaxAttack = 21,250 damage<br>(3,464.67 DPS)
+|val-Evolved-Health = 37,400 HP
+|val-Evolved-Attack Power = 28,050 damage<br>(4,573.37 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 184f <sub>6.13 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 133.33 ~ 124.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni792 f00}}
+
+==Trivia==
+*Katsumi Orochi's description used to state that he pierces "[[:Category:Aku Enemies|Aku]] [[Barrier]]s", yet all [[:Category:Enemies with Barriers|enemies with Barriers]] are [[:Category:Starred Alien Enemies|Starred Aliens]], not Aku. This may be because the translators conflated him with the previous unit, [[Kaoru Hanayama (Uber Rare Cat)|Kaoru Hanayama]], who pierces Aku [[Shield]]s. This error was later fixed.
+
+==Reference==
+*https://battlecats-db.com/unit/793.html
+
+----
+{{CatNav|Kaoru Hanayama|Jack Hammer}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Barrier Breaker Cats]]

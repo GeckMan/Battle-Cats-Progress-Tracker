@@ -1,0 +1,8 @@
+.ranger-navbox.advent {
+	--bg-navbox-title: linear-gradient(to right, hsl(230, 80%, 20%) 0%, hsl(198, 94%, 53%) 50%, hsl(230, 80%, 20%) 100%);
+	--bg-sub-table-title: #0E63B3;
+	--bg-group-name: hsl(198, 94%, 53%);
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

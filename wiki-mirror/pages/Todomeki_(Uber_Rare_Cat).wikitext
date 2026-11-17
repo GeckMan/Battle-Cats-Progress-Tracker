@@ -1,0 +1,131 @@
+{{Unobtainable}}
+:''For the enemy encountered in the [[Merc Storia Collaboration Event]], see [[Todomeki (Enemy)]].''
+'''Todomeki''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 6.2 Update|Version 6.2]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]].
+
+{{Cat Info
+|ID = 346
+|rarity = UR
+|name1 = Todomeki
+|name2 = Todomeki CC
+}}
+
+==Evolution==
+Evolves into '''Todomeki CC''' at level 10.
+
+==Strategy/Usage==
+Todomeki is your average crowd-control Uber. Her generalist qualities are somewhere between [[Ururun Wolf (Special Cat)|Ururun Cat]] and Awakened Ururun, so she would be used more for her crowd-control than damage. Her most similar non-Uber counterpart is [[Talents|Talented]] [[Psychocat (Rare Cat)|Corrupted Psychocat]], both slowing Alien and Zombie enemies. The advantage Todomeki has are [[Area Attack|Area attacks]] with higher range, meaning she can better counter [[Ursamajor]] and [[Cadaver Bear]] while easily dealing with large crowds. Despite severe competition from other, arguably better Ubers such as [[Mekako Saionji (Uber Rare Cat)|Mission Control Mekako]] and various [[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|ELEMENTAL PIXIES]] along with the Super Rare units [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] and [[Surfer Cat (Super Rare Cat)|Seafarer Cat]], Todomeki remains a valid answer to her trait targets, especially if the above units haven't been obtained yet.
+
+{{Job|Classification = Crowd-Controller & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 346
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni346 f00.png
+|Image2 = Uni346 c00.png
+|Name1 = Todomeki
+|Desc1 = Joining the fight from Merc Storia! Japanese<br>maiden searching this world for her brother.<br>Area attacks might Slow Aliens/Zombies
+|Name2 = Todomeki CC
+|Desc2 = Joining the fight from Merc Storia! Treasures<br>the kimono gifted by her dear brother.<br>Area attacks might Slow Aliens/Zombies
+|Name1 (JP) = とどめき (Todomeki)
+|Desc1 (JP) = メルクストーリアから参戦！<br>現世に留まり、兄を探し続ける和の国の少女<br>たまにエイリアンとゾンビの動きを遅くする(範囲攻撃)
+|Transl1 (JP) = Participation from Merc Storia!<br>A Japanese girl who stays in this world and keeps searching for her older brother<br>Sometimes slows down the movement of aliens and zombies (Area Attack)
+|Name2 (JP) = とどめきCC (TodomekiCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>愛する兄からの贈り物の着物を大切にしている<br>たまにエイリアンとゾンビの動きを遅くする(範囲攻撃)
+|Transl2 (JP) = Participation from Merc Storia!<br>I value the kimono of a gift from my beloved brother<br>Sometimes slow down the movement of aliens and zombies (Area Attack)
+|Name1 (TW) = 留姬
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>留在現世一直尋找其兄長的和之國少女<br>有時候會讓異星戰士和不死生物的動作變慢(範圍攻擊)
+|Name2 (TW) = 留姬CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>非常珍惜著最愛的兄長送給她的和服<br>有時候會讓異星戰士和不死生物的動作變慢(範圍攻擊)
+|Name1 (KR) = 토도메키
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>현세에 남아 오빠를 찾아다니는 화의 나라의 소녀<br>가끔 에이리언과 좀비의 움직임을 느리게 한다 (범위 공격)
+|Name2 (KR) = 토도메키CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>사랑하는 오빠가 선물한 기모노를 소중히 하고 있다<br>가끔 에이리언과 좀비의 움직임을 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Todomeki
+|Normal Base HP = 1700
+|Normal Base AP = 1380
+|Normal Range = 440
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 175
+|Normal Attack Length = 67
+|Normal Speed = 11
+|Normal KB = 4
+|Normal Cost = 2600
+|Normal Recharge = 4000
+|Normal Attack Type = Area
+|Normal Targets = Alien,Zombie
+|Normal Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Todomeki CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 1980
+|Evolved Range = 440
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 175
+|Evolved Attack Length = 67
+|Evolved Speed = 11
+|Evolved KB = 4
+|Evolved Cost = 2600
+|Evolved Recharge = 4000
+|Evolved Attack Type = Area
+|Evolved Targets = Alien,Zombie
+|Evolved Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,700 HP
+|val-Normal-Attack Power = 1,380 damage<br>(210.15 DPS)
+|val-Normal-Attack Range = 440
+|val-Normal-Attack Frequency = 197f <sub>6.57 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Normal-Recharge Time = 133.33 ~ 124.53 seconds
+|val-Normal-MaxHP = 28,900 HP
+|val-Normal-MaxAttack = 23,460 damage<br>(3,572.59 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 33,660 damage<br>(5,125.89 DPS)
+|val-Evolved-Attack Range = 440
+|val-Evolved-Attack Frequency = 197f <sub>6.57 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Evolved-Recharge Time = 133.33 ~ 124.53 seconds
+}}
+
+
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni346 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/347.html
+----
+{{CatNav|Michelia|Gudetama Cat}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]

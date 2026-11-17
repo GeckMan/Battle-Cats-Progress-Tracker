@@ -1,0 +1,148 @@
+{{JPExclusive}}
+:''For the enemy units found in the [[Castle & Dragon Collaboration Event]], see [[Battle Balloon (Enemy)]] or [[Battle UFO (Enemy)]].''
+'''Battle Balloon''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Pretend to Watch]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 slightly increased range.
+
+{{Cat Info
+|ID = 252
+|rarity = RR
+|name1 = Battle Balloon
+|name2 = Pirate Battle Balloon
+|name3 = Battle UFO
+}}
+
+==Evolution==
+Evolves into '''Pirate Battle Balloon''' at level 10.
+
+Evolves into '''Battle UFO''' when obtained from [[Road to Battle Balloon Evolution (Normal)|Road to Battle Balloon Evolution]] and is level 20 or above.
+
+==Strategy/Usage==
+This unit is essentially a worse version of [[Salon Cat (Rare Cat)|Paris Cat]] in all but a few aspects. It does have its uses though; it can increase your [[User Rank]], and it can be stacked in very early [[Legend Stages|Stories of Legend]] stages for some DPS. Otherwise, it's useless beyond that point.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 252
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni252 f00.png
+|Image2 = Uni252 c00.png
+|Image3 = Uni252 s00.png
+|Name1 (JP) = バトルバルーン (Batoru Barūn, Battle Balloon)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>上空攻撃を得意とするが<br>何故か高度が上がらず苦戦中(範囲攻撃)
+|Transl1 (JP) = Joining the war from Castle and Dragon!<br>Is good at air strikes<br>But for some reason they can't gain altitude and are struggling (Range Attack)
+|Name2 (JP) = 海賊バトルバルーン (Kaizoku Batoru Barūn, Pirate Battle Balloon)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>大空の海賊船で竜火砲を放つが<br>やはり何故か低空飛行(範囲攻撃)
+|Transl2 (JP) = Joining the war from Castle and Dragon!<br>A pirate ship in the sky firing a dragon fire cannon<br>But for some reason it still flies low (Range Attack)
+|Name3 (JP) = バトルバルーンUFO (Batoru Barūn UFO, Battle Balloon UFO)
+|Desc3 (JP) = 城とドラゴンから参戦！<br>ＵＦＯで光線砲をおみまいするも<br>やはり高度は低いまま(範囲攻撃)
+|Transl3 (JP) = Joining the war from Castle and Dragon!<br>A UFO with a ray gun<br>But still has low altitude (Range Attack)
+|Name1 (TW) = 戰鬥熱氣球
+|Desc1 (TW) = 從城與龍來參戰！<br>最擅長空中攻擊，<br>但不知道為什麼高度老是上不去(範圍攻擊)
+|Name2 (TW) = 海盜戰鬥熱氣球
+|Desc2 (TW) = 從城與龍來參戰！<br>從飛行海盜船上發射龍火炮<br>但不知道為什麼還是飛得很低(範圍攻擊)
+|Name3 (TW) = UFO戰鬥熱氣球
+|Desc3 (TW) = 從城與龍來參戰！<br>從UFO上發射光線炮<br>可是飛行高度還是一樣低(範圍攻擊)
+}}
+
+==Cost==
+*Chapter 1: 900円
+*Chapter 2: 1,350円
+*Chapter 3: 1,800円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Battle Balloon
+|Normal Base HP = 1000
+|Normal Base AP = 65
+|Normal Range = 360
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 33
+|Normal Speed = 5
+|Normal KB = 1
+|Normal Cost = 900
+|Normal Recharge = 960
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Pirate Battle Balloon
+|Evolved Base HP = 1000
+|Evolved Base AP = 65
+|Evolved Range = 360
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 33
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 900
+|Evolved Recharge = 960
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Battle UFO
+|True Base HP = 1000
+|True Base AP = 65
+|True Range = 380
+|True Foreswing = 16
+|True Attack Cooldown = 39
+|True Attack Length = 33
+|True Speed = 5
+|True KB = 1
+|True Cost = 900
+|True Recharge = 960
+|True Attack Type = Area
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 65 damage<br>(35.45 DPS)
+|val-Normal-Attack Range = 360
+|val-Normal-Attack Frequency = 55f <sub>1.83 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 32 ~ 23.2 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 1,105 damage<br>(602.73 DPS)
+|val-Evolved-Health = 17,000 HP
+|val-Evolved-Attack Power = 1,105 damage<br>(602.73 DPS)
+|val-Evolved-Attack Range = 360
+|val-Evolved-Attack Frequency = 55f <sub>1.83 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 32 ~ 23.2 seconds
+|val-True-Health = 17,000 HP
+|val-True-Attack Power = 1,105 damage<br>(602.73 DPS)
+|val-True-Attack Range = 380
+|val-True-Attack Frequency = 55f <sub>1.83 seconds</sub>
+|val-True-Movement Speed = 5
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 16f <sup>0.53s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-True-Recharge Time = 32 ~ 23.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni252 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/253.html
+
+----
+{{CatNav|Ashura|Dragon Rider}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats requiring Awakening for True Form]]

@@ -1,0 +1,114 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Makoto Shishio (Enemy)]].''
+'''Makoto Shishio''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event/Gacha Drop|Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Cat Info
+|ID = 880
+|rarity = UR
+|name1 = Makoto Shishio
+|name2 = Makoto Shishio CC
+}}
+
+==Evolution==
+Evolves into '''Makoto Shishio CC''' at level 10.
+
+==Strategy/Usage==
+Makoto Shishio is a bona-fide bruiser with solid all-around stats. His main selling point is the sheer scaling of the numbers he brings to the table: 14,535 DPS against targets at Lv.30 (23,085 at Lv.50) with a 100% [[Strengthen]] at 30% HP bringing his output to 32,300 (51,300) accounting for his [[Cat Combo]]. This isn't mentioning the fact that he has 488,750 effective HP against targets through [[Strong Against]] (776,250 at level 50). These stats aren't anything to sneeze at, and he does well enough to absolutely obliterate many stages via complete stat-stomp, but he comes with various caveats. For one, he only has one knockback, so no repositioning whatsoever outside of enemy abilities. Even with his gargantuan health pool, it only takes one unfortunate series of events to send him back to the bleachers. To make matters worse, he stays contemplating his terrible life choices for almost 6 minutes before recharging. Treat him like a [[Tales of the Nekoluga (Gacha Event)|Nekoluga]] in that sense; you only get one shot with him, so you better make it count. You'll also want to keep enemies a good distance away from him at all times, since his output drops considerably at close quarters because of how [[Explosion]] operates. [[Slow]] helps him with that, but it's unreliable at the best of times and he desperately needs the supplemental support from other cats to shake off tankier enemies like [[Cyberhorn]] and [[St. Dober]].
+
+With all of that said, he can easily be worth the hassle, as the solution to many seemingly complex stages can be to  simply outstat the main threats. Such is apparent in stages like [[No Plan A (Deadly)|No Plan A]], [[Banana Genomes]], [[Beyond the Hadal]], and so forth. He holds his own very well in ideal circumstances, and the Angel/Alien combo is surprisingly common from [[Into the Future]] and onwards. [[Wave Immunity]] is also a very nice add-on that lets him work better against [[Youcan]] and [[Angelic Beast Rajakong]] amongst other common untargeted Wavers like [[Pigeon de Sable]], though [[Explosion Immunity]] is only really good for [[Xenobeast Bunaglios]]' Brutal Advent stages. As a result, he has decently good viability across the board.
+
+{{Job|Classification = Midranger & Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|地獄の国盗り|"Strengthen" Effects Up (Sm)|Makoto Shishio|jpname=地獄の国盗り}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 880
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni880 f00.png
+|Image2 = Uni880 c00.png
+|Name1 (JP) = 志々雄真実
+|Desc1 (JP) = 「るろうに剣心」から参戦！<br>「弱肉強食」を信念に国盗りを企む男(全方位攻撃)<br>天使とエイリアンにめっぽう強く、必ず爆波を放つ
+|Name2 (JP) = 志々雄真実CC
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>壱の秘剣「焔霊」で炎燃える斬撃を放つ(全方位攻撃)<br>天使とエイリアンにめっぽう強く、必ず爆波を放つ
+}}
+
+==Cost==
+*Chapter 1: 3,700¢
+*Chapter 2: 5,550¢
+*Chapter 3: 7,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Makoto Shishio
+|Normal Base HP = 9200
+|Normal Base AP = 760
+|Normal Range = 350
+|Normal Foreswing = 41
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 83
+|Normal Speed = 10
+|Normal KB = 1
+|Normal Cost = 3700
+|Normal Recharge = 10000
+|Normal Attack Type = Area
+|Normal Targets = Angel,Alien
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~500)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 30% health<br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 350 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Explosions}} [[Immune to Waves]] and [[Immune to Explosions|Explosions]]
+|Evolved Name = Makoto Shishio CC
+|Evolved Base HP = 11500
+|Evolved Base AP = 950
+|Evolved Range = 350
+|Evolved Foreswing = 41
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 83
+|Evolved Speed = 10
+|Evolved KB = 1
+|Evolved Cost = 3700
+|Evolved Recharge = 10000
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Alien
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~500)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 30% health<br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 350 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Explosions}} [[Immune to Waves]] and [[Immune to Explosions|Explosions]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni880 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/881.html
+
+----
+{{CatNav|Sojiro Seta|Seijuro Hiko}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Explosion Cats]]
+[[Category:Cats with Explosion Immunity]]

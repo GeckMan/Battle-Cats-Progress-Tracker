@@ -1,0 +1,161 @@
+'''Gacha Cat''' is a [[:Category:Special Cats|Special Cat]] that was added in the [[Version 9.7 Update|Version 9.7]]. This cat can be unlocked by purchasing it from a special sale during the game's [[Anniversary]].
+
+{{Cat Info
+|ID = 558
+|rarity = EX
+|name1 = Gacha Cat
+|name2 = Lucky Gacha Cat
+}}
+
+==Evolution==
+Evolves into '''Lucky Gacha Cat''' at level 10.
+
+==Strategy/Usage==
+At level 50, Gacha Cat has 153,000 HP, making him effectively a bootleg version of [[Curling Cat (Rare Cat)|Green Shell Cat]]: a cheap, but strong tank that can hold the line still for a short while. His speed and need for boost, however, make it rather ineffective at that, especially before he receives such boost (level 50 is not available prior to beating [[Relic Bun-Bun]]), due to his low stats and the unusual way at which they grow. Ignore the chance to knockback, as that is way too inconsistent to ever be relevant.
+
+{{Job|Classification = Tanker & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Spinning Out|Starting Money Up (Sm)|Gacha Cat|jpname=回っております}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 558
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni558 f00.png
+|Image2 = Uni558 c00.png
+|Name1 = Gacha Cat
+|Desc1 = Escaped the Capsule  Machine to celebrate<br>another year of fun! Spin, spin, and spin some<br>more! Might Knockback enemies.
+|Name2 = Lucky Gacha Cat
+|Desc2 = You fool! This isn't even my luckiest form!<br>Is there such a thing as TOO much spinning?<br>Might Knockback enemies.
+|Name1 (JP) = レアガチャネコ (Reagachaneko, Rare Gacha Cat)
+|Desc1 (JP) = 記念を祝ってステージに登場したレアガチャのネコ<br>いつもより多めに回しております！<br>ごくたまに敵をふっとばす
+|Transl1 (JP) = A Rare Cat Capsule that appeared on stage to celebrate the anniversary.<br>It's spinning a lot more than usual!<br>Occasionally knocks back enemies.
+|Name2 (JP) = 福引ガチャネコ (Fukubiki Gachaneko, Lottery Gacha Cat)
+|Desc2 (JP) = より縁起よい見た目で登場！<br>いつもより余計に回しております！<br>ごくたまに敵をふっとばす
+|Transl2 (JP) = Appeared with a more auspicious look!<br>It's spinning a lot more than usual!<br>Occasionally knocks back enemies.
+|Name1 (TW) = 稀有轉蛋貓
+|Desc1 (TW) = 為了慶祝而於關卡中登場的稀有轉蛋貓<br>轉的次數仔細看～有比平常多唷！<br>偶爾會打飛敵人
+|Name2 (TW) = 招福轉蛋貓
+|Desc2 (TW) = 以比平常更有福相的面貌登場！<br>轉的次數仔細看～沒必要轉的時候也在轉！<br>偶爾會打飛敵人
+|Name1 (KR) = 레어 뽑기 고양이
+|Desc1 (KR) = 기념을 축하하며 스테이지에 등장한 레어 뽑기의 그 고양이<br>평소보다 좀 더 많이 돌고 있다냥!<br>아주 가끔 적을 날려버린다
+|Name2 (KR) = 럭키 뽑기 고양이
+|Desc2 (KR) = 조금 더 럭키한 모습으로 등장!<br>평소보다 쓸데없이 더 많이 돌고 있다냥!<br>아주 가끔 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 700¢
+*Chapter 2: 1,050¢
+*Chapter 3: 1,400¢
+{{Upgrade Cost|MIX
+|0
+|100
+|3,100
+|7,100
+|12,100
+|18,100
+|25,100
+|33,100
+|42,100
+|52,100
+|100
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gacha Cat
+|Normal Base HP = 1500
+|Normal Base AP = 1
+|Normal Range = 120
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 4
+|Normal KB = 1
+|Normal Cost = 700
+|Normal Recharge = 2100
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Warp}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Warp|Warp]]
+|Evolved Name = Lucky Gacha Cat
+|Evolved Base HP = 1500
+|Evolved Base AP = 1
+|Evolved Range = 120
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 4
+|Evolved KB = 1
+|Evolved Cost = 700
+|Evolved Recharge = 2100
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 5% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Warp}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Warp|Warp]]
+|Lv.MAX = Lv.50
+|Scaling = 20x2,60,120,180,20,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 1 damage<br>(3 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Normal-Recharge Time = 70 ~ 61.2 seconds
+|val-Normal-MaxHP = 40,500 HP
+|val-Normal-MaxAttack = 27 damage<br>(81 DPS)
+|val-Evolved-Health = 40,500 HP
+|val-Evolved-Attack Power = 27 damage<br>(81 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Evolved-Recharge Time = 70 ~ 61.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni558 f00}}
+
+==Trivia==
+*Gacha Cat's English description contains an error, as there are two spaces between the words Capsule and Machine.
+*Lucky Gacha Cat's English description may be referencing Frieza's transformation dialogue from ''[[wikia:dragonball:Dragon Ball Z|Dragon Ball Z]]''.
+**It may also be a reference to the Lucky G capsule, stating that his Evolved Form is not even the "luckiest" one.
+*Despite Gacha Cat's name, it is not a gacha unit.
+*Gacha Cat, [[Principal Cat (Special Cat)|Principal Cat]] and [[Choco Capsule (Special Cat)|Choco Capsule]] are currently the only cats to have level scaling above 20%.
+
+==Reference==
+*https://battlecats-db.com/unit/559.html
+
+----
+{{CatNav|Heavenly Jack|Hell Warden Emma}}
+----
+
+{{Cats}}
+[[Category:IAP Cats]]
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Warp Immunity]]

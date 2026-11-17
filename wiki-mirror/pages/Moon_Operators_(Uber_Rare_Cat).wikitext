@@ -1,0 +1,134 @@
+'''Moon Operators''' are an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was implemented in [[Version 6.10 Update|Version 6.10]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. It is a variant of [[Princess Kaguya (Uber Rare Cat)|The Death Moon]].
+
+{{Cat Info
+|ID = 416
+|rarity = UR
+|name1 = Moon Operators
+|name2 = NERV Moon
+}}
+
+==Evolution==
+Evolves into '''NERV Moon''' at level 10.
+
+==Strategy/Usage==
+The Moon Operators' slow ability can be useful in certain situations, coupled with their good range, average DPS and [[:Category:Zombie Killer Cats|Zombie Killer]] ability.
+
+Unlike their cousin [[Princess Kaguya (Uber Rare Cat)|The Chaos Moon]], the Moon Operators are not able to outrange notable enemies due to their lower range, but the Slow ability has a 100% chance in all forms rather just the [[True Form]].
+
+The Slow effect they provide can be used with [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to kill [[Bore]]s much more efficiently without Bahamut dying.
+
+Useful early game in your road to obtaining [[Bahamut Cat (Special Cat)|Awakened Bahamut]] and [[Ururun Cat|Ururun Wolf]] as some stages on the way ([[Mexico (Into the Future)|ITF 3 Mexico]] or [[The Great Escaper]]) have [[Bore]]s protected by a crowd of enemies. Typical [[:Category:Red Enemies|Red]] crowd-controllers like [[Witch Cat (Rare Cat)|Sorceress/Enchantress Cat]] and [[Pirate Cat (Rare Cat)|Pirate Cat]] are single target while [[Apple Cat (Super Rare Cat)|iCat]] is close ranged. Moon Operators have no problems slowing the Bores in these stages provided they are protected by [[:Category:Meatshield-class Cats|meatshields]]. However, once these cats are [[True Form|true formed]] or have Research Up [[Cat Combo]]s like [[Biohazard (Combo)|Biohazard]] or [[Bony Bone (Combo)|Bony Bone]] applied in battle, their spammability allows them to outclass the Moon Operators.
+
+{{Job|Classification = Backliner & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 416
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni416 f00.png
+|Image2 = Uni416 c00.png
+|Name1 = Moon Operators
+|Desc1 = Operators for the secret agency NERV,<br>providing support for the EVA pilots.<br>Area attacks slow Red/Zombies.
+|Name2 = NERV Moon
+|Desc2 = Elite command of the NERV agency.<br>An effective team since their school days.<br>Area attacks slow Red/Zombies.
+|Name1 (JP) = ゼロムーンオペレーターズ (Zeromūn'operētāzu, Zero Moon Operators)
+|Desc1 (JP) = 特務機関のオペレーターを務めるネコ達<br>息の合ったコンビネーションで作戦をサポートする<br>赤い敵とゾンビの動きを必ず遅くする(範囲攻撃)
+|Transl1 (JP) = Cats acting as operators of special agencies<br>Support the mission with a well-balanced combination<br>Always Slows down Red enemies and Zombies (Ranged Attack)
+|Name2 (JP) = ファーストムーンネルフ (Fāsutomūn'nerufu, First Moon NERV)
+|Desc2 (JP) = 特務機関の指揮官を務めるエリートのネコ達<br>学生時代のしがらみを乗り越えて作戦を遂行する<br>赤い敵とゾンビの動きを必ず遅くする(範囲攻撃)
+|Transl2 (JP) = Elite cats in command of a special agency<br>Overcoming the ties of school days to carry out operations<br>Always Slows down Red enemies and Zombies (Ranged Attack)
+|Name1 (TW) = 通訊聯絡機零月
+|Desc1 (TW) = 擔任特務機關聯絡員的貓咪們<br>默契十足地攜手合作來支援作戰<br>必定能讓紅色敵人與不死生物動作變慢(範圍攻擊)
+|Name2 (TW) = 作戰指揮機初月
+|Desc2 (TW) = 擔任特務機關指揮官的精英貓咪們<br>克服學生時代的阻礙並執行作戰<br>必定能讓紅色敵人與不死生物動作變慢(範圍攻擊)
+|Name1 (KR) = 제로문 오퍼레이터즈
+|Desc1 (KR) = 특무 기관의 오퍼레이터로 일하게 된 고양이들<br>엄청난 콤비네이션으로 작전을 서포트한다<br>빨간 적과 좀비의 움직임을 반드시 느리게 한다 (범위 공격)
+|Name2 (KR) = 퍼스트문 NERV
+|Desc2 (KR) = 특무 기관의 지휘관으로 일하게 된 엘리트 고양이들<br>학생 때의 아픔을 극복하고 작전을 수행한다.<br>빨간 적과 좀비의 움직임을 반드시 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,250¢
+*Chapter 2: 4,875¢
+*Chapter 3: 6,500¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Moon Operators
+|Normal Base HP = 2500
+|Normal Base AP = 2500
+|Normal Range = 450
+|Normal Foreswing = 98
+|Normal Attack Cooldown = 179
+|Normal Attack Length = 161
+|Normal Speed = 7
+|Normal KB = 4
+|Normal Cost = 3250
+|Normal Recharge = 4400
+|Normal Attack Type = Area
+|Normal Targets = Red,Zombie
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 110f <sub>3.67 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = NERV Moon
+|Evolved Base HP = 2500
+|Evolved Base AP = 2500
+|Evolved Range = 450
+|Evolved Foreswing = 98
+|Evolved Attack Cooldown = 179
+|Evolved Attack Length = 161
+|Evolved Speed = 7
+|Evolved KB = 4
+|Evolved Cost = 3250
+|Evolved Recharge = 4400
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Zombie
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 110f <sub>3.67 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,500 HP
+|val-Normal-Attack Power = 2,500 damage<br>(270.76 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 277f <sub>9.23 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 98f <sup>3.27s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Normal-Recharge Time = 146.67 ~ 137.87 seconds
+|val-Normal-MaxHP = 42,500 HP
+|val-Normal-MaxAttack = 42,500 damage<br>(4,602.89 DPS)
+|val-Evolved-Health = 42,500 HP
+|val-Evolved-Attack Power = 42,500 damage<br>(4,602.89 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 277f <sub>9.23 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 98f <sup>3.27s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Evolved-Recharge Time = 146.67 ~ 137.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni416 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/417.html
+
+----
+{{CatNav|Shinji Cat|Mighty Thermae D-Lux}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Zombie Killer Cats]]

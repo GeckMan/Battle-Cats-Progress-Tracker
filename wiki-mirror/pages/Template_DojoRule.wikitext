@@ -1,0 +1,18 @@
+<includeonly><onlyinclude>'''{{#invoke:DojoRule|header|{{{1}}}}}'''<br>
+''{{#invoke:DojoRule|ingame|{{{1}}}}}''
+
+{{#invoke:DojoRule|info|{{{1}}}}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+For writing the rules of [[Arena of Destiny]] stages.
+
+==Usage==
+<pre>
+{{DojoRule|Weaken}}
+</pre>
+yields
+{{ViewSource|{{DojoRule|Weaken}}}}
+
+E.g. see [[Arena of Destiny/Talent Tournament]].
+
+==Updating data==
+Edit [[Module:DojoRule/data]] directly.

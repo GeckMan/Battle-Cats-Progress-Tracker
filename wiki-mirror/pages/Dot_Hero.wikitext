@@ -1,0 +1,62 @@
+{{JPExclusive}}
+'''Dot Hero''' is a [[:Category:Red Enemies|Red]] enemy that appears in the [[Dot Heroes Collaboration Event]]. It was added in [[Version 8.9 Update|Version 8.9]].
+
+{{Enemy Info
+|name = Dot Hero
+|image = E 476.png
+|money drop = 450円 - 1,777円
+|appearance = [[Dot Heroes Collaboration Event]]
+}}
+
+==Enemy==
+Simply stall Dot Hero while using cats that outrange it such as [[Bahamut Cat (Special Cat)|Bahamut Cat]] to kill it. Just be careful of its knockback ability.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Dot Heroes Collaboration Event#Dot Heroes|Dot Heroes]]:
+**[[The Hero to be Born is a Dot]] (2%)
+**[[Only One Dot in the World]] (23%)
+**[[But Always This Dot]] (100%)
+**[[3D But With Dots]] (150%)
+**[[Games Are All About Dots]] (1%, 150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dot Hero
+|Health = 90000
+|Attack Power = 2500
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 65
+|Movement Speed = 25
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 19
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+476 e.png|Dot Hero's spritesheet
+Idle3dDotHero.gif|Dot Hero's running animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/478.html
+
+----
+{{EnemyNav|Shakurel Panda|Mr. Puffington}}
+----
+
+{{Dot Heroes}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Area Attack Enemies]]

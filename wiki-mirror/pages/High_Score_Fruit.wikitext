@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Inky Doge|Pigge|Croco|Clyde Gory|Sir Seal|Pinky Bear}}
+'''High Score Fruit''' is the fourth stage in [[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn271 03 c en.png]]
+|stage location = [[File:Mapname271 c en.png]]
+|energy = 90
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Inky Doge|1,000%
+|Pigge|400%
+|Croco|400%
+|Clyde Gory|400%
+|Sir Seal|400%}}
+|boss = {{Magnification|Pinky Bear|400%}}
+|treasure = One of the following (unlimited):<br>
+- [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1 (70%)<br>
+- [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +2 (30%)
+|XP = 2,700 XP
+|width = 4,000
+|max enemies = 12
+|jpname = High Score for Fruit
+|script = フルーツで高得点
+|romaji = Furūtsu de Kō Tokuten
+|star = 1
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]]
+|difficulty = ★4
+|prev stage = [[Dodge Them Ghosts]]
+|next stage = [[Power Pellet Comeback]]<br>
+[[Bonus Stage]] (''Continuation Stage'', 10%)
+}}
+
+==Battleground==
+*5 [[Inky Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Pigge]] spawns after 13.33 seconds<sup>400f</sup>.
+*3 [[Croco]]s spawn after 23.33 seconds<sup>700f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Clyde Gory]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Pinky Bear]] spawns as the boss.
+**8 [[Inky Doge]]s spawn, delay 8~10 seconds<sup>240f~300f</sup>.
+**1 [[Clyde Gory]] spawns.
+**Infinite [[Croco]]s spawn after 3.33 seconds<sup>100f</sup>, delay 5~8 seconds<sup>150f~240f</sup>.
+**2 [[Inky Doge]]s spawn after 5 seconds<sup>150f</sup>, delay 8~10 seconds<sup>240f~300f</sup>.
+**1 [[Sir Seal]] spawns after 10 seconds<sup>300f</sup>.
+**3 [[Inky Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 5~8 seconds<sup>150f~240f</sup>.
+**2 [[Sir Seal]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**2 [[Clyde Gory|Clyde Gories]] spawn after 43.33 seconds<sup>1,300f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+
+==Strategy==
+A very easy stage. Stacking [[Lizard Cat (Normal Cat)|Dragon Cats]] is your key to victory here. Bring [[Fish Cat (Normal Cat)|Whale Cat]] to deal with the Red enemies.
+
+==Reference==
+*https://battlecats-db.com/stage/s02271-04.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}

@@ -1,0 +1,57 @@
+{{Clear}}[[Category:Pages using classic navboxes]]
+{| class="mw-collapsible mw-collapsed navbox" cellpadding=2 cellspacing=0
+|-
+! colspan=2 | Basic
+|-
+! Heading 1
+| Item 1
+|-
+! Heading 2
+| Item 2
+|}
+{{Clear}}
+{| class="mw-collapsible mw-collapsed navbox" cellpadding=2 cellspacing=0
+|-
+! colspan=3 | With groups
+|-
+! class="group" rowspan=2 | Grouped heading 1
+! class="group-member" | Sub-heading 1
+| Item 1
+|-
+! class="group-member" | Sub-heading 2
+| Item 2
+|-
+! colspan=2 | Heading 1
+| Item 3
+|}
+{{Clear}}
+{| class="mw-collapsible mw-collapsed navbox" cellpadding=2 cellspacing=0
+! colspan=3 | With sub-titles
+|-
+! colspan=3 | Sub-title 1
+|-
+! Heading 1
+| Item 1
+|-
+! colspan=5 | Pure data, no groups
+|-
+| colspan=5 | Item 2
+|}
+{{Clear}}
+{| class="mw-collapsible mw-collapsed navbox-composite" cellpadding=2 cellspacing=0
+! colspan=3 | With sub-tables
+|-
+|
+{| class="mw-collapsible mw-collapsed navbox" cellspacing="0"
+! colspan=3 | Sub-table 1
+|-
+! Heading 1
+| Item 1
+|}
+{| class="mw-collapsible mw-collapsed navbox" cellspacing="0"
+! colspan=5 | Sub-table 2
+|-
+! Heading 2
+| Item 2
+|}
+|}

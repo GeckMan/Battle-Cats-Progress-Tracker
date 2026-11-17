@@ -1,0 +1,8 @@
+.ranger-navbox.awakening {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 0%, 0%) 0%, hsl(0, 100%, 50%) 50%, hsl(0, 0%, 0%) 100%);
+	--bg-sub-table-title: #FF4242;
+	--title-color: #fff;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

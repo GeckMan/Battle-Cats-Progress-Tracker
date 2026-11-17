@@ -1,0 +1,12 @@
+<includeonly><onlyinclude>*{{2c}} difficulty for this sub-chapter multiplies enemy strength magnifications by {{{1}}}%.{{#if:{{{2|}}}|
+*{{3c}} difficulty for this sub-chapter multiplies enemy strength magnifications by {{{2}}}%.|}}{{#if:{{{3|}}}|
+*{{4c}} difficulty for this sub-chapter {{#ifeq:{{{3}}}|100|makes no change to enemy strength magnifications|multiplies enemy strength magnifications by {{{3}}}%}} and only allows [[:Category:Special Cats|Special Cats]] and [[:Category:Rare Cats|Rare Cats]] to be deployed.|}}</onlyinclude></includeonly>
+==Usage==
+<pre>{{LegendDiff|150|200|300}}</pre>
+gives
+{{LegendDiff|150|200|300}}
+
+If difficulty is less than {{4c}} then this doesn't display higher magnifications.
+<pre>{{LegendDiff|100}}</pre>
+gives
+{{LegendDiff|100}}

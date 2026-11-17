@@ -1,0 +1,44 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Hippoe|Squire Rel}}
+'''Athletic Meet''' is the first stage in [[Autumn = Sports Day! (Monthly Event)#Autumn Sports Day|Autumn Sports Day]].
+
+{{Stage Info
+|stage name = [[File:rc022.png]]
+[[File:Mapsn008 00 s en.png]]
+|stage location = [[File:Mapname008 s en.png]]
+|energy = 50
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Hippoe|100%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|enemies2 = {{Magnification|Hippoe|150%}}
+|boss2 = {{Magnification|Squire Rel|150%}}
+|enemies3 = {{Magnification|Hippoe|200%}}
+|boss3 = {{Magnification|Squire Rel|200%}}
+|treasure = - [[Sports Day Cat (Rare Cat)|Sports Day Cat]] (1%, 1 time)
+|XP = 1,500 XP
+|width = 4,000
+|max enemies = 8
+|jpname = Intense! Athletic Meet
+|script = 激アツ！運動会
+|romaji = Geki Atsu! Undōkai
+|star = 3
+|event-chapter = [[Autumn = Sports Day! (Monthly Event)#Autumn Sports Day|Autumn Sports Day]]
+|difficulty = ★2
+|prev stage = N/A
+|next stage = [[Anti Halloween]]
+}}
+
+==Battleground==
+*1 [[Hippoe]] spawns.
+*Infinite [[Hippoe]]s spawn after 20 seconds<sup>600f</sup>, delay 6~20 seconds<sup>180f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**5 [[Hippoe]]s spawn, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+
+==Reference==
+*https://battlecats-db.com/stage/s01008-01.html
+
+{{Monthly}}
+[[Category:Autumn = Sports Day! Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

@@ -1,0 +1,197 @@
+:''Attacks against Starred Aliens are much more powerful!''
+The '''Anti-Starred Alien Treasures''' are a type of [[Treasure]] found in [[Cats of the Cosmos]]. This group includes the [[Stellar Garnet]], [[Phoebe Beryl]], [[Lunar Citrine]], [[Ganymede Topaz]] and [[Callisto Amethyst]]. As their name suggests, they debuff [[:Category:Starred Alien Enemies|Starred Aliens]], which makes them some of the most important Treasures in the game as Starred Aliens are massively buffed without them, even more so than unstarred Aliens without [[Anti-unstarred Alien Treasures|their own Treasures]].
+
+Enemy stats shown on this wiki are with '''all''' anti-Starred Alien Treasures.
+
+==Effect==
+These Treasures decrease the initial 1600% stat magnification applied to all Starred Aliens' base health and base attack power as indicated in the descriptions above.
+
+For example, a hypothetical [[:Category:Alien Enemies|Starred Alien]] has base health and attack power of 1,000, but the default stat magnification applied to Starred Alien base stats is 1600%, making the enemy's health and damage from each hit 16,000.
+
+Each fully activated [[Stellar Garnet]], [[Phoebe Beryl]], [[Lunar Citrine]], [[Ganymede Topaz]] and [[Callisto Amethyst]] Treasure set reduces the 1600% default magnification by -100% (additively) such that the Starred Alien's base attack power is always 1,000 but the default magnification effect applied to produce the enemy health and damage output is reduced as shown below.
+
+{| class="article-table" style="width: 100%;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="row" style="width: 25%;" | Activated Treasure Effect
+! scope="row" style="width: 25%;" | Starred Alien Base Health / Attack Stat
+! scope="row" style="width: 25%;" | Starred Alien Stat Magnification Applied
+! scope="row" style="width: 25%;" | Starred Alien Effective Health / Attack
+|-
+! - 0%
+|1,000
+|1,600%
+|16,000
+|-
+!
+- 300%
+|1,000
+|1,300%
+|13,000
+|-
+! - 600%
+|1,000
+|1,000%
+|10,000
+|-
+! - 900%
+|1,000
+|700%
+|7,000
+|-
+! - 1200%
+|1,000
+|400%
+|4,000
+|-
+! - 1500%
+|1,000
+|100%
+|1,000
+|}
+
+==Requirements==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 65%;"
+|-
+! scope="col" colspan="3" style="text-align: center;"|Stellar Garnet
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-1
+|[[Earth (Cats of the Cosmos)|Earth]]
+|Humanity
+|-
+|3-X-2
+|[[Mars (Cats of the Cosmos)|Mars]]
+|Martian Ruins
+|-
+|3-X-3
+|[[Jupiter (Cats of the Cosmos)|Jupiter]]
+|Gasses
+|-
+|3-X-4
+|[[Saturn (Cats of the Cosmos)|Saturn]]
+|Mystery Rings
+|-
+|3-X-5
+|[[Venus (Cats of the Cosmos)|Venus]]
+|Gilded Stone
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 65%;"
+|-
+! scope="col" colspan="3" style="text-align: center;"|Phoebe Beryl
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-10
+|[[Triton (Cats of the Cosmos)|Triton]]
+|Nitrogen
+|-
+|3-X-11
+|[[Pluto (Cats of the Cosmos)|Pluto]]
+|Darkness
+|-
+|3-X-12
+|[[Red Rectangle (Cats of the Cosmos)|Red Rectangle]]
+|Geometry
+|-
+|3-X-13
+|[[Eskimo Nebula (Cats of the Cosmos)|Eskimo Nebula]]
+|Parka
+|-
+|3-X-14
+|[[Catseye Nebula (Cats of the Cosmos)|Catseye Nebula]]
+|Glint
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 65%;"
+|-
+! scope="col" colspan="3" style="text-align: center;"|Lunar Citrine
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-19
+|[[Canopus (Cats of the Cosmos)|Canopus]]
+|Keel
+|-
+|3-X-20
+|[[Vega (Cats of the Cosmos)|Vega]]
+|Zither
+|-
+|3-X-21
+|[[Aldebaran (Cats of the Cosmos)|Aldebaran]]
+|Bull
+|-
+|3-X-22
+|[[Betelgeuse (Cats of the Cosmos)|Betelgeuse]]
+|Orion's Belt
+|-
+|3-X-23
+|[[Deneb (Cats of the Cosmos)|Deneb]]
+|Swan
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 65%;"
+|-
+! scope="col" colspan="3" style="text-align: center;"|Ganymede Topaz
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-28
+|[[Buutara (Cats of the Cosmos)|Buutara]]
+|Humanoids
+|-
+|3-X-29
+|[[Moskandag (Cats of the Cosmos)|Moskandag]]
+|Hope
+|-
+|3-X-30
+|[[Corona (Cats of the Cosmos)|Corona]]
+|Pop Idol
+|-
+|3-X-31
+|[[Soba IV (Cats of the Cosmos)|Soba IV]]
+|Tangy Sauce
+|-
+|3-X-32
+|[[Plumpit (Cats of the Cosmos)|Plumpit]]
+|Pickled Veggies
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 65%;"
+|-
+! scope="col" colspan="3" style="text-align: center;"|Callisto Amethyst
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-37
+|[[Aguham (Cats of the Cosmos)|Aguham]]
+|Spaceship
+|-
+|3-X-38
+|[[Somolon (Cats of the Cosmos)|Somolon]]
+|Confetti
+|-
+|3-X-39
+|[[Ababwa (Cats of the Cosmos)|Ababwa]]
+|Mushrooms
+|-
+|3-X-40
+|[[Titan (Cats of the Cosmos)|Titan]]
+|Ominous Face
+|-
+|3-X-41
+|[[Skelling (Cats of the Cosmos)|Skelling]]
+|The Force
+|}
+
+==Trivia==
+*Most of these treasures' nomenclature consist of natural satellite and a gemstone, e.g. "Phoebe Beryl" is named after [[wikipedia:Phoebe (moon)|Phoebe]], a moon of Saturn, and [[wikipedia:Beryl#Golden beryl and heliodor|Beryl]], a gemstone that has a golden colored variant. The sole exception is "Stellar Garnet" in which Stellar means "star". The only thing connecting it to moons is that moons can be found by [[wikipedia:Occultation#Occultations by the Moon|stellar occultation]], otherwise known as the solar eclipse.
+{{Treasures}}
+[[Category:Treasures]]

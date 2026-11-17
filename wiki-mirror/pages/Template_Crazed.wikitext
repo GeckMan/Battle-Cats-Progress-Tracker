@@ -1,0 +1,71 @@
+{{#invoke:Navbox|main
+|template = Template:Crazed
+|title = [[Crazed Cats (origin)|Crazed/Manic Stages]]
+|navbox_class = crazed
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Crazed Stages
+|list1 =
+*[[Dark Souls (Insane)|The Crazed Cat]]
+*[[Absolute Defense (Insane)|The Crazed Tank]]
+*[[Berserk (Insane)|The Crazed Axe]]
+*[[Festival Gross (Insane)|The Crazed Gross]]
+*[[Head Shaker (Insane)|The Crazed Cow]]
+*[[Flappy Cat (Insane)|The Crazed Bird]]
+*[[Fish Hell (Insane)|The Crazed Fish]]
+*[[Mammals? (Insane)|The Crazed Lizard]]
+*[[Crazy Cats (Insane)|The Crazed Titan]]
+
+|header2 = Manic Stages
+|list2 =
+*[[Deathhawk (Deadly)|Cat Maniac]]
+*[[Vulcanizer (Deadly)|Tank Maniac]]
+*[[Unjust War (Deadly)|Axe Maniac]]
+*[[Muscle Party (Deadly)|Gross Maniac]]
+*[[Lots O' Lion (Deadly)|Cow Maniac]]
+*[[Forest Beasts (Deadly)|Bird Maniac]]
+*[[Ogre Island (Deadly)|Fish Maniac]]
+*[[Draconian (Deadly)|Lizard Maniac]]
+*[[Resident Feline (Deadly)|Titan Maniac]]
+
+|header3 = Other Stages
+|group3 = [[Clan of the Maniacs]]
+|list3 =
+*[[The Wild Dance (Deadly)]]
+*[[Insane Rhythms (Merciless)]]
+
+|group4 = [[Crazed Moneko]]
+|list4 =
+*[[In JAPAN (Crazed Moneko)|in JAPAN]]
+*[[In LONDON|in LONDON]]
+*[[In NEW YORK|in NEW YORK]]
+*[[In THE MOON|in THE MOON]]
+
+|header5 = Enemies
+|list5 =
+*{{EnemyList
+|Crazed Cat
+|Crazed Tank Cat
+|Crazed Axe Cat
+|Crazed Gross Cat
+|Crazed Cow Cat
+|Crazed Bird Cat
+|Crazed Fish Cat
+|Crazed Lizard Cat
+|Crazed Titan Cat
+|Manic Mohawk Cat
+|Manic Eraser Cat
+|Manic Dark Cat
+|Manic Macho Legs
+|Manic Lion Cat
+|Manic Flying Cat
+|Manic Island Cat
+|Manic King Dragon
+|Manic Jamiera Cat
+|Crazed Moneko
+|Corrupted Moneko
+|delimiter = <nowiki />
+*}}
+}}<templatestyles src="Crazed/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0}}<noinclude>[[Category:Navboxes]]</noinclude>

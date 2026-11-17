@@ -1,0 +1,68 @@
+{{JPExclusive}}
+'''Emilia & Doge''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Kaohsiung Rapid Transit Collaboration Event]]. They were added in [[Version 11.1 Update|Version 11.1]].
+
+{{Enemy Info
+|name = Emilia & Doge
+|image = E 597.png
+|appearance = [[Kaohsiung Rapid Transit Collaboration Event]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+This enemy has decent stats and an [[Omni Strike]] that allows it to reach up to 300 range. their [[Freeze|freeze]] ability isn't much of a threat as its uptime is terrible.
+
+==Strategy==
+Spam your standard meatshields and use attackers like [[Gross Cat (Normal Cat)|Sexy Legs Cat]], [[Salon Cat (Rare Cat)|Paris Cat]], and anything else you think will help. they only really have their health going for them, so just wait them out and they will die. [[Bahamut Cat (Special Cat)|Bahamut Cat]] can speed up the process, but he's far from needed.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Light Rail|Kaohsiung Metro Light Rail]]:
+**[[Transfer Station Hamasen Station]] (1%)
+**[[Rubber Duck Glory Pier Station]] (12%)
+**[[Sidewalk Origin Cianjhen Star Station]] (35%)
+**[[Swaying On the Train To the Triumphant Two Holy Stations]] (100%)
+**[[Last Stop Kaisyuan Rueitian Station]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Emilia & Doge
+|Health = 135000
+|Attack Power = 7500
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 128
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 41
+|Backswing = 67
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">2,500</span> at 41f <sup>1.37s</sup>, <span class="scaled" data-type="ap">2,500</span> at 51f <sup>1.7s</sup>, <span class="scaled" data-type="ap">2,500</span> at 61f <sup>2.03s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~300)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 50f <sub>1.67 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+597 e.png|Emilia & Doge's spritesheet
+IdleEmilia&Doge.gif|Emilia & Doge's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/599.html
+
+----
+{{EnemyNav|Nana & Doge|Firecracker}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Omni Strike Enemies]]

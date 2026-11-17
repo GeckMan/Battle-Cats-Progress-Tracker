@@ -1,0 +1,95 @@
+'''Heavenly Le'saint''' (大天使エルファント, ''Daitenshi Erufanto'', '''Archangel Eruphant''') is an [[:Category:Angel Enemies|Angel]] variant of [[Le'boin]] that appears in [[Special Events|Event Stages]]. It was added in [[Version 7.3 Update|Version 7.3]].
+
+{{Enemy Info
+|name = Heavenly Le'saint
+|image = E 421.png
+|money drop = 4,590¢ - 18,130¢
+|appearance = [[Ghostly Strangers (Monthly Event)|Ghostly Strangers]]<br>
+[[August Gauntlet II]]<br>
+[[Citadel#Angel|Angel Citadel]]<br>
+[[Infernal Tower/Floor 16|Infernal Tower - Floor 16]]
+}}
+
+==Enemy==
+Heavenly Le'saint has a faster attack rate than both [[Le'boin]] and [[Lord Enma]], with higher health, attack power and a [[Strengthen|strengthen]] ability that raises his attack power by 100% at 50% HP. However, Le'saint's attack animation is longer than that of any other Le'boin variant and he has 80 less range than the regular Le'boin.
+
+==Strategy==
+Since Heavenly Le'saint has even shorter range than Lord Enma, more units can outrange it and defeat it when paired with meatshields such as [[Tank Cat (Normal Cat)|Eraser Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]]. Some attackers that can outrange him are [[Salon Cat (Rare Cat)|Paris Cat]], [[Lizard Cat (Normal Cat)|Dragon Cat]], and [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]].
+
+Instead of using traditional meatshields, another alternative is to use [[Rocker Cat (Rare Cat)|Artist Cat]] because of his sturdiness, attack power and resistance against Angels, making him the perfect fit to defeat this Angelic titan when paired with the ranged attackers mentioned above.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Ghostly Strangers (Monthly Event)|Ghostly Strangers]]:
+**[[Dad's Back to Heaven]] (100%)
+**[[Long Line at Cerberus]] (150%)
+**[[Charon's Overbooked]] (200%)
+**[[Still on Vacation]] (250%)
+**[[See You Next Year]] (300%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2018 Debut]] (100%)
+*[[Angel Citadel]]:
+**[[Angel Citadel/Floor 7|Floor 7]] (100%)
+**[[Angel Citadel/Floor 9|Floor 9]] (200%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 16|Floor 16]] (400%)
+*[[August Gauntlet II]]:
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.11]] (200%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.12]] (211%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.13]] (222%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.14]] (233%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.15]] (244%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.16]] (255%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.17]] (266%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.18]] (277%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.19]] (288%)
+**[[August Gauntlet II/Strangers Lv.11~20|Strangers Lv.MAX]] (300%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.9]] (300%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.MAX]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Heavenly Le'saint
+|Health = 600000
+|Attack Power = 12000
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 50
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 29
+|Backswing = 11
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Angel
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+421 e.png|Heavenly Le'saint's spritesheet
+IdleLe'Saint.gif|Heavenly Le'saint's walking animation
+</gallery>
+
+==Trivia==
+*Heavenly Le'saint's Japanese name, 大天使エルファント ''Daitenshi Erufanto'' ("Archangel Eruphant") is a pun combining エル ''eru'' (''El'', the Hebrew word for God) with エレファント ''erefanto'' (elephant).
+*Heavenly Le'saint, [[Archangel Exiel]] and [[Great Angel Chibinel]] all have the word 大天使 ''daitenshi'' (archangel; lit. "great angel") in their Japanese names.
+**Heavenly Le'saint is the only one who isn't a [[:Category:Colossus Enemies|Colossus]].
+*The kanji on Heavenly Le'saint's forehead is 天, meaning "heaven" or "sky".
+*Despite consisting of both a [[Le'boin]] and a [[Doge]], there's only one halo, which may imply that one of them is not actually an [[:Category:Angel Enemies|Angel]].
+*He received the name Heavenly Le'Saint when he was added to the [[Enemy Guide]] in [[Version 13.3 Update|Version 13.3]]. The [[Media:Eve l 020 en.png|event poster]] for [[Ghostly Strangers (Monthly Event)|Ghostly Strangers]] refers to him as just Le'saint, while the [[Media:August Gauntlet II Splash.png|event poster]] for [[August Gauntlet II]] calls him heavenly Le'Saint, but without "heavenly" being meant as part of his name, as "h" isn't capitalized and the event's description still just says Le'Saint.
+
+==Reference==
+*https://battlecats-db.com/enemy/423.html
+
+----
+{{EnemyNav|Loris|The Red Malice}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Angel Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]

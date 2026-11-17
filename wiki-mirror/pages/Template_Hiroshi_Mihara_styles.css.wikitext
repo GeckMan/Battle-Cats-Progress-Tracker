@@ -1,0 +1,7 @@
+.ranger-navbox.hiroshi-mihara {
+	--bg-navbox-title: linear-gradient(to right, hsl(3, 99%, 66%) 0%, hsl(3, 99%, 73%) 100%);
+	--bg-sub-table-title: #626893;
+	--bg-group-name: hsl(12, 72%, 62%);
+}
+
+/* [[Category:Template stylesheets]] */

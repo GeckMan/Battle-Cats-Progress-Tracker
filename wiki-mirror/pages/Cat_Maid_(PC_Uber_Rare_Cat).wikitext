@@ -1,0 +1,127 @@
+{{PCExclusive}}
+'''Cat Maid''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that is exclusive to the VIP [[THE DYNAMITES (Gacha Event)|THE DYNAMITES]], only available in the [[Minna de Nyanko Daisensou|PC version]].
+
+{{Cat Info
+|ID = 912
+|rarity = UR
+|version = PC
+|name1 = Cat Maid
+|name2 = Cat Maid SP
+|image1 = 10912 1.png
+|image2 = 10912 2.png
+}}
+
+==Evolution==
+Evolves into '''Cat Maid SP''' at level 10.
+
+==Strategy/Usage==
+This unit is an interesting take on [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]], with Cat Maid having a similar build but different tools at her disposal. Both have an emphasis on strong base damage while being easy to replace in battle.
+
+Despite both having about the same base damage, Cats in the Cradle's attacks always produce [[Wave Attack|Waves]], effectively giving him pierce and twice the damage of Cat Maid against most enemies. This makes Cat Maid's generalist damage pale in comparison, and even more considering that other nukers like [[Thundia (Uber Rare Cat)|Divine Thundia β]] also have better base damage.
+
+Cat Maid's advantage over Cats in the Cradle, however, is her trait and debuff immunity abilities, especially [[Massive Damage]] to two traits. Floating and Zombie enemies are often melee enemies—precisely the type of enemy vulnerable to Cat Maid's 200k effective damage at level 30. For Zombie enemies, Cat Maid's immunities can be convenient against enemies like [[Zir Zeal]] attempting to impede her, and another Cat Maid can quickly be spawned for tough zombies who got past the preceding one. Peons may bait attacks from her, so it's important to time her correctly. Floating enemy counters may be crowded, but Cat Maid has not much of an issue defeating many of them, whether they be [[Teacher Bun Bun]] variants or debuffer midrangers such as [[Maawth]] or [[I.M. Phace]]. While Cats in the Cradle is an all-around nuker, Cat Maid competes by focusing on specialist values.
+
+{{Job|Classification = Nuker & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 912<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10912 f00.png
+|Image2 = Uni10912 c00.png
+|Name1 (JP) = ねこメイド (Neko Meido, Cat Maid)
+|Desc1 (JP) = どんなイタズラも見逃してくれる心優しきメイドさん<br>学生時代にとある部隊に所属していたらしい(範囲攻撃)<br>ゾンビと浮いてる敵とにゃんこ軍団に超ダメージ
+|Transl1 (JP) = A kind-hearted maid who will overlook any kind of mischief<br>She used to be a member of a troop when she was in school (Ranged Attack)<br>Deals super damage to Zombies and Floating enemies and kitten armies
+|Name2 (JP) = ねこメイドSP (Neko Meido SP, Cat Maid SP)
+|Desc2 (JP) = 昔取った杵柄で隠密活動をするメイドさん<br>最近ご主人様に友達ができたらしい(範囲攻撃)<br>ゾンビと浮いてる敵とにゃんこ軍団に超ダメージ
+|Transl2 (JP) = A maid who uses her old skills to do covert work<br>It seems her master has recently made a friend (Ranged Attack)<br>Deals super damage to Zombies and Floating enemies and kitten armies
+}}
+
+==Cost==
+*Chapter 1: 2,300円
+*Chapter 2: 3,450円
+*Chapter 3: 4,600円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+{{Cat Stats Manual
+|Normal Name = Cat Maid
+|Normal Health = 6100 HP
+|Normal Attack Power = 1850 damage<br>(228.4 DPS)
+|Normal Attack Range = 260
+|Normal Attack Frequency = 243f <sub>8.1 seconds</sub>
+|Normal Movement Speed = 6
+|Normal Knockback = 2 times
+|Normal Attack Animation = 72f <sub>2.4 seconds</sub>
+|Normal Recharge Time = 64.7 seconds
+|Normal MaxHP = 103,700 HP
+|Normal MaxAttack = 31,450 damage<br>(3,882.72 DPS)
+|Normal Attack Type = Area Attack
+|Normal Abilities = Deals [[Massive Damage|massive damage]] to [[:Category:Cat Units|Cats]], [[:Category:Floating Enemies|Floating]] and [[:Category:Zombie Enemies|Zombie]] enemies<br>
+[[Resistant]] to [[:Category:Cat Units|Cats]]<br>
+[[Immune to Freeze]] and [[Slow]]<br>
+[[Zombie Killer]]
+|Evolved Name = Cat Maid SP
+|Evolved Health = 122,400 HP
+|Evolved Attack Power = 48,450 damage<br>(5,981.48 DPS)
+|Evolved Attack Range = 260
+|Evolved Attack Frequency = 243f <sub>8.1 seconds</sub>
+|Evolved Movement Speed = 6
+|Evolved Knockback = 2 times
+|Evolved Attack Animation = 72f <sub>2.4 seconds</sub>
+|Evolved Recharge Time = 64.7 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = Deals [[Massive Damage|massive damage]] to [[:Category:Cat Units|Cats]], [[:Category:Floating Enemies|Floating]] and [[:Category:Zombie Enemies|Zombie]] enemies<br>
+[[Resistant]] to [[:Category:Cat Units|Cats]]<br>
+[[Immune to Freeze]] and [[Slow]]<br>
+[[Zombie Killer]]
+|Lv.MAX = Lv.40
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10912_f.png|MediaWiki:Custom-AnimationViewer/PC912_f.json}}
+|-|Evolved=
+{{AnimationViewer|10912_c.png|MediaWiki:Custom-AnimationViewer/PC912_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10912 f00}}
+
+==Reference==
+*https://seesaawiki.jp/battlecatswiki/d/%a4%cd%a4%b3%a5%e1%a5%a4%a5%c9
+*https://www.youtube.com/watch?v=l08x-5fXkD0
+
+----
+{{CatNav|Battle God Odin|Neko-Musume Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Cat Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Resistant ability]]

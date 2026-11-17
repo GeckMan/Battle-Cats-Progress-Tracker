@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Snache|Metal Snache|Pure Gold R.Ost|R.Ost}}
+'''Hard Restart Lv.8''' is the eighth stage in [[Machines in Revolt]].
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn349 07 s en.png]]
+|stage location = [[File:Mapname349 s en.png]]
+|energy = 150
+|enemy castle hp = 550,000 HP
+|enemies = {{Magnification|Snache|3,000%
+|Metal Snache|200%
+|Pure Gold R.Ost|150%
+|R.Ost|200%}}
+|boss = {{Magnification|Metal Snache|200%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 16
+|jpname = Reboot Lv.8
+|script = 再起動 Lv.8
+|romaji = Saikidō Lv.8
+|star = 1
+|event-chapter = [[Machines in Revolt]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = [[Hard Restart Lv.7]]
+|next stage = [[Hard Restart Lv.9]]
+}}
+
+==Battleground==
+*3 [[Snache]]s spawn, delay 4~10 seconds<sup>120f~300f</sup>.
+*3 [[Metal Snache]]s spawn, delay 4~10 seconds<sup>120f~300f</sup>.
+*6 [[Snache]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 2~5 seconds<sup>60f~150f</sup>.
+*6 [[Metal Snache]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 2~5 seconds<sup>60f~150f</sup>.
+*Infinite [[Snache]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 6~18 seconds<sup>180f~540f</sup>.
+*When the base reaches 99% HP:
+**1 [[Metal Snache]] spawns as the boss.
+**Infinite [[Metal Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 18~54 seconds<sup>540f~1,620f</sup>.
+**4 [[Pure Gold R.Ost]]s spawn, delay 20 seconds<sup>600f</sup>.
+**2 [[R.Ost]]s spawn after 3.33 seconds<sup>100f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+
+==Strategy==
+This level is all about building up a stack of Cats strong enough to defeat the numerous Pure Gold and regular R.Osts. Stacking up strong attackers on the initial Metal Snaches is the best way to build up said stack.
+
+==='''Recommended Units'''===
+*[[Lifeguard Cats (Super Rare Cat)|Lifeguard Cats]]: Their [[Slow]] vs Traitless and [[Long Distance]] combine to make them a great choice for this level. Their Long Distance prevents them from wasting an attack on a Pure Gold R.Ost or Metal Snache, allowing them to slow the R.Osts from behind other enemies. Their slow then allows your Critters to focus on attacking the Pure Gold R.Osts, preventing them from wasting attacks on the Traitless R.Osts. Beware of their long recharge time and unimpressive health, though.
+*[[Ancient Egg: N005 (Special Cat)|Hitman Cat]]: While he can be hard to obtain, he removes almost all of the difficulty from this stage. He will destroy the R.Osts effortlessly, leaving only the Pure Gold R.Osts to deal with. Plus, he also doesn't rely on an inconsistent slow ability.
+*[[Million-Dollar Cat (Special Cat)|Million-Dollar Cat]]: With their quick foreswing and long range, they can potentially snipe the Pure Gold R.Ost that spawns on base hit, which will massively reduce the difficulty of this stage. However, if they miss said attack, they're not likely to do much else.
+*[[Jagando Jr. (Special Cat)|Lord of Ruin Jagando Jr.]]: Similarly to Lifeguard Cats, Jagando can Crowd-Control the Traitless R.Osts, allowing your Critters to focus on damaging the Pure Gold R.Osts, though he is more effective due to his Knockback. He also feature some impressive stats with his [[Strong Against|Strong]] against Traitless and [[Surge Attack]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01349-08.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

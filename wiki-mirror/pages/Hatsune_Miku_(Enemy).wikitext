@@ -1,0 +1,99 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Hatsune Miku''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 9.4 Update|Version 9.4]].
+
+{{Enemy Info
+|name = Hatsune Miku
+|image = E 500.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+She has mildly high HP, fair speed, fair attack power, and [[Weaken|weakens]] [[Cat Units]], making melee units less effective against her. Stack [[Classification#Ranger|ranged units]] like [[Gross Cat (Normal Cat)|Gross Cat]] or [[Lizard Cat (Normal Cat)|Lizard Cat]] or time units like [[Swimmer Cat (Super Rare Cat)|Swimmer Cat]] to defeat her. Any cats with the [[Long Distance|Long Distance ability]] will be helpful against her.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#Hatsune Miku|Hatsune Miku]]:
+**[[Electric Diva]] (1%)
+**[[Sing with a Smile]] (25%)
+**[[Future is Virtual]] (50%)
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (50%)
+**[[in EUROPE]] (200%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Scent of Blossoms]] (100%)
+**[[Sakura Dance]] (200%)
+*[[Electric Diva Strikes!]]:
+**[[Electric Diva Strikes!/Song 1~20|1st Song]] (5%)
+**[[Electric Diva Strikes!/Song 1~20|2nd Song]] (15%)
+**[[Electric Diva Strikes!/Song 1~20|3rd Song]] (30%)
+**[[Electric Diva Strikes!/Song 1~20|4th Song]] (60%)
+**[[Electric Diva Strikes!/Song 1~20|5th Song]] (100%)
+**[[Electric Diva Strikes!/Song 1~20|6th Song]] (140%)
+**[[Electric Diva Strikes!/Song 1~20|7th Song]] (180%)
+**[[Electric Diva Strikes!/Song 1~20|8th Song]] (220%)
+**[[Electric Diva Strikes!/Song 1~20|9th Song]] (260%)
+**[[Electric Diva Strikes!/Song 1~20|10th Song]] (300%)
+**[[Electric Diva Strikes!/Song 1~20|11th Song]] (390%)
+**[[Electric Diva Strikes!/Song 1~20|12th Song]] (480%)
+**[[Electric Diva Strikes!/Song 1~20|13th Song]] (570%)
+**[[Electric Diva Strikes!/Song 1~20|14th Song]] (660%)
+**[[Electric Diva Strikes!/Song 1~20|15th Song]] (750%)
+**[[Electric Diva Strikes!/Song 1~20|16th Song]] (800%)
+**[[Electric Diva Strikes!/Song 1~20|17th Song]] (850%)
+**[[Electric Diva Strikes!/Song 1~20|18th Song]] (900%)
+**[[Electric Diva Strikes!/Song 1~20|19th Song]] (950%)
+**[[Electric Diva Strikes!/Song 1~20|Last Song]] (1,000%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/MikuMiku Music Fest|MikuMiku Music Fest]] (15%, 100%, 200%, 225%, 275%, 300%, 350%, 375%, 400%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (50%)
+**[[in EUROPE]] (200%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Scent of Blossoms]] (100%)
+**[[Sakura Dance]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Hatsune Miku
+|Health = 100000
+|Attack Power = 6500
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 128
+|Movement Speed = 10
+|Knockback = 4
+|Foreswing = 49
+|Backswing = 52
+|Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 25% for 90f <sub>3 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+500 e.png|Hatsune Miku's spritesheet
+IdleHatsuneMiku.gif|Hatsune Miku's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/502.html
+
+----
+{{EnemyNav|Baron Seal|Sakura Miku}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

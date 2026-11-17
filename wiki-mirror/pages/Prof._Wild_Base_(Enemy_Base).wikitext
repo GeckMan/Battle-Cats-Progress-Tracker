@@ -1,0 +1,68 @@
+The '''Prof. Wild Base''' is an animated [[Enemy Bases|enemy base]] that appears in [[Prof. Wild's Challenge]]. It was added in [[Version 6.8 Update|Version 6.8]].
+
+{{Enemy Info
+|name = Prof. Wild Base
+|image = E 386.png
+|appearance = [[Prof. Wild's Challenge]]
+|money drop = N/A
+}}
+
+==Enemy==
+It is immune to most negative effects, like other bases. It has very long attack range, about 1/3 the field of the first stage it appears in.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Prof. Wild's Challenge]]:
+**[[Willing Sacrifice (Veteran)]] (1,200%)
+**[[Willing Sacrifice (Deadly)]] (3,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Prof. Wild Base
+|Health = 10000
+|Attack Power = 100
+|Attack Range = 750
+|Attack Type = Area
+|Time Between Attacks = 299
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 36
+|Backswing = 13
+|Ability = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+386 e.png|The Prof. Wild Base's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/388.html
+
+----
+{{EnemyNav|Hater|Hackey}}
+----
+
+{{Power Pro Baseball}}
+{{Enemies}}
+
+
+[[Category:Enemy Units]]
+[[Category:Animated Enemy Bases]]
+[[Category:Typeless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

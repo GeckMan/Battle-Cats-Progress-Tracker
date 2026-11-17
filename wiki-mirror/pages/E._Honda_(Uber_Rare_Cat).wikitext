@@ -1,0 +1,133 @@
+:''This article is about the Cat Unit. For the enemy, see [[E. Honda (Enemy)]].''
+'''E. Honda''' is a [[:Category:Uber Rare Cats|Uber Rare Cat]] unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 571
+|rarity = UR
+|name1 = E. Honda
+|name2 = E. Honda CC
+}}
+
+==Evolution==
+Evolves into '''E. Honda CC''' at level 10.
+
+==Strategy/Usage==
+At first glance, E. Honda looks like a great tank unit. His resistance and knockback abilities are pretty useful, given that many angels are short-ranged pushers, and his knockback can impede them. Unfortunately, his range is too high for him to protect melee units, and despite having a relatively short cooldown, his health and damage aren't particularly high, not to mention his high speed forces your other units to catch up, leaving little opportunities for them to deal damage. The knockback ability can even cause them to miss their attacks.
+
+What's more, he faces extreme competition from the more accessible [[Rocker Cat (Rare Cat)|Ramen]], who, despite being a meatshield, is a much better specialist with his disposability, as well as lower range, instead leaving your offense to any other attackers you may have.
+
+{{Job|Classification = Tanker & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 571
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni571 f00.png
+|Image2 = Uni571 c00.png
+|Name1 = E. Honda
+|Desc1 = Joining the fight from Street Fighter V!<br>The world will know the majestic art of Sumo!<br>Tough vs Angels, with 100% Knockback! (Area Atk)
+|Name2 = E. Honda CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Flying onto the world stage with a Super Head Ram!<br>Tough vs Angels, with 100% Knockback! (Area Atk)
+|Name1 (JP) = エドモンド本田 (Edomondo Honda)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>相撲を「わあるどわいど」にするために戦う剛腕力士<br>天使に打たれ強く、必ずふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining the war from Street Fighter V!<br>A strong wrestler who fights to make sumo "worldwide"<br>Tough against Angels, guaranteed to knock them back (Area Attack)
+|Name2 (JP) = エドモンド本田CC (Edomondo HondaCC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>「スーパー頭突き」で世界への道を切り開く<br>天使に打たれ強く、必ずふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining the war from Street Fighter V!<br>Paving the way for the world with "Super Head Butt"<br>Tough against Angels, guaranteed to knock them back (Area Attack)
+|Name1 (TW) = E. HONDA
+|Desc1 (TW) = 從快打旋風V來參戰！<br>為向「全世界」展示國技相撲而戰的大力士<br>對上天使敵人很耐打，且必定能打飛(範圍攻擊)
+|Name2 (TW) = E. HONDA CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>用絕招「超級頭鎚」開創通往世界的道路<br>對上天使敵人很耐打，且必定能打飛(範圍攻擊)
+|Name1 (KR) = E. Honda
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>스모의 세계화를 위해 싸우는 장사<br>천사에 맷집이 좋고 반드시 날려버린다 (범위 공격)
+|Name2 (KR) = E. Honda CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>슈퍼 박치기로 세계로의 길을 개척한다<br>천사에 맷집이 좋고 반드시 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,450¢
+*Chapter 2: 3,675¢
+*Chapter 3: 4,900¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = E. Honda
+|Normal Base HP = 7500
+|Normal Base AP = 750
+|Normal Range = 230
+|Normal Foreswing = 3
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 91
+|Normal Speed = 63
+|Normal KB = 3
+|Normal Cost = 2450
+|Normal Recharge = 3000
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = E. Honda CC
+|Evolved Base HP = 7500
+|Evolved Base AP = 750
+|Evolved Range = 230
+|Evolved Foreswing = 3
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 91
+|Evolved Speed = 63
+|Evolved KB = 3
+|Evolved Cost = 2450
+|Evolved Recharge = 3000
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 7,500 HP
+|val-Normal-Attack Power = 750 damage<br>(247.25 DPS)
+|val-Normal-Attack Range = 230
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 63
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 3f <sup>0.1s</sup><br>(88f <sup>2.93s</sup> backswing)
+|val-Normal-Recharge Time = 100 ~ 91.2 seconds
+|val-Normal-MaxHP = 127,500 HP
+|val-Normal-MaxAttack = 12,750 damage<br>(4,203.3 DPS)
+|val-Evolved-Health = 127,500 HP
+|val-Evolved-Attack Power = 12,750 damage<br>(4,203.3 DPS)
+|val-Evolved-Attack Range = 230
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 63
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 3f <sup>0.1s</sup><br>(88f <sup>2.93s</sup> backswing)
+|val-Evolved-Recharge Time = 100 ~ 91.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni571 f00}}
+
+==Trivia==
+*For his attack, E. Honda performs Sumo Headbutt, a unique special move, and Honda's most iconic.
+
+==Reference==
+*https://battlecats-db.com/unit/572.html
+
+----
+{{CatNav|Skull Rider Vars|Balrog}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Resistant ability]]

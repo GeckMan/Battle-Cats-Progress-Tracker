@@ -1,0 +1,124 @@
+'''Fuma Kotaro''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Sengoku Wargods Vajiras (Gacha Event)|Sengoku Wargods Vajiras]] gacha event. He was added in [[Version 15.2 Update|Version 15.2]].
+
+{{Cat Info
+|ID = 850
+|rarity = UR
+|name1 = Fuma Kotaro
+|name2 = Wargod Kotaro
+}}
+
+==Evolution==
+Evolves into '''Wargod Kotaro''' at level 10.
+
+==Strategy/Usage==
+A backline crowd-controller for [[:Category:Red Enemies|Red]], [[:Category:Dark Enemies|Dark]] and [[:Category:Angel Enemies|Angel]] enemies with a 100% chance to [[Slow]] targets for 3.17 seconds on average if both attacks land on the same enemy (at a 57% uptime). However, [[Explosion]]s can bring this up to over ~65% if it activates on his second hit.
+
+Notably, his status as a backline rusher makes him a responsive unit in many stages against his targets, which are jam-packed with hyper-aggressive pushers all around. Though his uptime leaves much to be desired, he can hold [[St. Dober]]s and [[Winged Pigge]]s in place for other attackers, keep several [[Bore#Variants|Bore]] variants from wreaking too much havoc, or deal with overwhelming [[Angelic Gory|Angelic Gory]]/[[Shadow Boxer K]] spam, especially given the lingering hitboxes of his occasional Explosions catching incoming or rebounding enemies. However, this should not be relied on as a constant as Kotaro only has a 50% chance to trigger Explosions with each hit.
+
+Kotaro's stats are generally sub-standard, having a very similar output to pre-TF [[Ururun Wolf (Special Cat)|Ururun Wolf]]—accounting for Explosion procs—while having a long cooldown on top of it. These stats are by no means terrible, and he gets the job done when it comes down to it, but his crowd-control should be the primary reason you use this Uber. Generally speaking, most non-Ubers options such as [[Bishop Cat (Rare Cat)|Sanzo Cat]] and [[Flower Cat (Special Cat)|Bombercat]] will suffice in handling these threats.
+
+{{Job|Classification = Backliner & Rusher & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 850
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni850 f00.png
+|Image2 = Uni850 c00.png
+|Name1 = Fuma Kotaro
+|Desc1 = Head of a ninja clan, possessed by a great serpent<br>via the cursed Ninjutsu Scroll. Area attacks Slow Red/Dark<br>and Angels, with a chance of Explosions.
+|Name2 = Wargod Kotaro
+|Desc2 = A prodigy who mastered the Ninjutsu Scroll. Creates<br>chaos with the great serpent's might. Area attacks Slow<br>Red/Dark/Angels, with a chance of Explosions.
+|Name1 (JP) = 風魔小太郎 (Fūma Kotarō)
+|Desc1 (JP) = 伝説の巻物「にゃん術書」の呪いにより<br>大蛇に取り憑かれた忍者一族の首領(範囲攻撃)<br>赤、黒、天使の動きを遅くし、たまに爆波を放つ
+|Transl1 (JP) = A ninja clan's leader possessed by a great serpent<br>due to the curse of the legendary scroll "Nyanjutsu Manual" (Area Attack)<br>Slows the movement of Red, Black and Angels, occasionally fires Explosive Waves
+|Name2 (JP) = 蛇神・風魔小太郎 (Hebigami Fūma Kotarō, Snake God Fūma Kotarō)
+|Desc2 (JP) = 伝説の巻物「にゃん術書」を我が物として<br>大蛇の力を巧みに操る忍術の天才(範囲攻撃)<br>赤、黒、天使の動きを遅くし、たまに爆波を放つ
+|Transl2 (JP) = Ninjutsu genius who manipulates the great serpent's power<br>as his own with the legendary scroll "Nyanjutsu Manual" (Area Attack)<br>Slows the movement of Red, Black and Angels, occasionally fires Explosive Waves
+|Name1 (TW) = 風魔小太郎
+|Desc1 (TW) = 遭到傳說的卷軸「貓咪術書」詛咒，而被大蛇<br>附身的忍者一族之首領。會使紅色、黑色與<br>天使敵人動作變慢，有時候會發射爆波(範圍攻擊)
+|Name2 (TW) = 蛇神・風魔小太郎
+|Desc2 (TW) = 將傳說的卷軸「貓咪術書」化為己物，巧妙地<br>操縱大蛇的忍術天才。會使紅色、黑色與<br>天使敵人動作變慢，有時候會發射爆波(範圍攻擊)
+|Name1 (KR) = 타니와
+|Desc1 (KR) = 전설의 두루마리 「냥코 술서」의 저주로 인해<br>거대한 뱀이 빙의한 닌자 일족의 두령 (범위 공격)<br>빨간 적, 검은 적, 천사를 느리게 하고 가끔 폭파를 일으킨다
+|Name2 (KR) = 분노의 타니와
+|Desc2 (KR) = 전설의 두루마리 「냥코 술서」를 독파하고<br>뱀의 힘을 능수능란하게 구사하는 인술의 천재 (범위 공격)<br>빨간 적, 검은 적, 천사를 느리게 하고 가끔 폭파를 일으킨다
+}}
+
+==Cost==
+*Chapter 1: 2,650¢
+*Chapter 2: 3,975¢
+*Chapter 3: 5,300¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Fuma Kotaro
+|Normal Base HP = 3500
+|Normal Base AP = 350,350
+|Normal Range = 410
+|Normal Foreswing = 10,45
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 166
+|Normal Speed = 42
+|Normal KB = 4
+|Normal Cost = 2650
+|Normal Recharge = 3900
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark,Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,950 at 10f <sup>0.33s</sup>, 5,950 at 45f <sup>1.5s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 50f <sub>1.67 seconds</sub><br>
+{{AbilityIcon|Explosion}} 50% chance to create an [[Explosion]] at 410 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Evolved Name = Wargod Kotaro
+|Evolved Base HP = 4300
+|Evolved Base AP = 450,450
+|Evolved Range = 410
+|Evolved Foreswing = 10,45
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 166
+|Evolved Speed = 42
+|Evolved KB = 4
+|Evolved Cost = 2650
+|Evolved Recharge = 3900
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark,Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (7,650 at 10f <sup>0.33s</sup>, 7,650 at 45f <sup>1.5s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 50f <sub>1.67 seconds</sub><br>
+{{AbilityIcon|Explosion}} 50% chance to create an [[Explosion]] at 410 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni850 f00}}
+
+==Trivia==
+*Prior to [[Version 15.7 Update|Version 15.7]], Fuma Kotaro's English description contained an error where it said "Area attacks Slow Red/Dark. and Angels" instead of either "Slow Red, Dark and Angels" or "Slow Red/Dark/Angels".
+*Fuma Kotaro first became obtainable in [[Nyanko Daisensou|BCJP]] on March 20th, 2026.
+*[[wikipedia:Fūma Kotarō|Fūma Kotarō]] was the leader of the Fūma ninja clan in the [[wikipedia:Sengoku period|Sengoku era]]. The name Fūma Kotarō was actually a title adopted by every Fūma leader as a pseudonym, but the most famous is the fifth, who is often portrayed as part-''[[wikipedia:Oni|oni]]'' and/or a rival to [[wikipedia:Hattori Hanzō|Hattori Hanzō]] in fiction.
+*Nyanjutsu (にゃん術) is a pun on にゃん ''nyan'' (meow) and 忍術 ''[[wikipedia:Ninjutsu|ninjutsu]]''.
+
+==Reference==
+*https://battlecats-db.com/unit/851.html
+
+----
+{{CatNav|Nezuko Cat|Paperboy Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Surge Immunity]]
+[[Category:Explosion Cats]]

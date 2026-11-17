@@ -1,0 +1,50 @@
+{{EnemiesAppearing|Fireworks Guys (High-Yield)|Fireworks Guys (Low-Yield)|Firecracker}}
+'''Pray for Long Life''' is the fifth stage in [[Festival Cats: Lunar New Year's]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn041 04 a en.png]]
+|stage location = [[File:Mapname041 a en.png]]
+|energy = 90
+|enemy castle hp = 60,000 HP
+|enemies = {{Magnification|Fireworks Guys (High-Yield)|100%
+|Fireworks Guys (Low-Yield)|100%
+|Firecracker|400%}}
+|boss = {{Magnification|Firecracker|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Lunar New Year (Event Gacha)|Legendary Charm]] +1 (90%, unlimited)<br>
+- [[Lunar New Year (Event Gacha)|Legendary Charm]] +2 (10%, unlimited)
+|XP = 2,700 XP
+|width = 4,500
+|max enemies = 40
+|jpname = Pray for Long Life
+|script = 挨拶回りは長寿祈願
+|romaji = Aisatsu Mawari wa Chōju Kigan
+|star = 1
+|event-chapter = [[Festival Cats: Lunar New Year's]]
+|max clears = 3
+|difficulty = ★3
+|prev stage = [[Begging for Gifts]]
+|next stage = [[Acrobatic Lion Dance]]
+}}
+
+==Battleground==
+*Infinite [[Fireworks Guys (High-Yield)]] spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*Infinite [[Fireworks Guys (Low-Yield)]] spawn after 5 seconds<sup>150f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*5 [[Firecracker]]s (400%) spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Firecracker]]s (400%) spawn after 26.67 seconds<sup>800f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Firecracker]] (100%) spawns as the boss.
+**Infinite [[Firecracker]]s (400%) spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+**40 [[Firecracker]]s (400%) spawn, delay 0.67~3.33 seconds<sup>20f~100f</sup>.
+**20 [[Firecracker]]s (400%) spawn, delay 0.67~3.33 seconds<sup>20f~100f</sup>.
+
+==Strategy==
+A rather easy stage, just bring the [[:Category:Normal Cats|Normal Cats]] for an easy win.
+
+==Reference==
+*https://battlecats-db.com/stage/s24041-05.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Gauntlets]]

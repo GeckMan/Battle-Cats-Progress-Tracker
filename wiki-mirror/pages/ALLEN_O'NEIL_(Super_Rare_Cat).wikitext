@@ -1,0 +1,129 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[ALLEN O'NEIL (Enemy)]].''
+'''ALLEN O'NEIL''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 220
+|rarity = SR
+|name1 = ALLEN O'NEIL
+|name2 = ALLEN O'NEIL CC
+}}
+
+==Evolution==
+Evolves into '''ALLEN O'NEIL CC''' at level 10.
+
+==Strategy/Usage==
+ALLEN O'NEIL is essentially a slightly better version of [[Lizard Cat (Normal Cat)|King Dragon Cat]], which is great considering that the main strategy with Dragon Cat and its variants is to stack as many as possible. Sadly, although he does look promising with his [[Survive|Survive]] ability, his damage is half the damage of other Dragon Cat variants, meaning that he should be replaced with [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]] or [[Brainwashed Lizard Cat (Super Rare Cat)|Brainwashed Dragon Cat]] once either are obtained.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 220
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni220 f00.png
+|Image2 = Uni220 c00.png
+|Name1 = ALLEN O'NEIL
+|Desc1 = Recruited from the Metal Slug series!<br>Feared by allies and foes alike as the<br>"Demon Sergeant" Survives one lethal strike.
+|Name2 = ALLEN O'NEIL CC
+|Desc2 = Recruited from the Metal Slug series!<br>Shirtless even in subzero temperatures.<br>Survives one lethal strike.
+|Name1 (JP) = アレン・オニール (Aren onīru)
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>敵味方問わず恐れられているモーデン軍の「オニ軍曹」<br>1度だけ生き残る
+|Transl1 (JP) = Joining from the Metal Slug series!<br>The "Sergeant Oni" of Morden's army, feared by friend and foe alike.<br>Survives only once
+|Name2 (JP) = アレン・オニールCC (Aren onīruCC)
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>雪山でも上半身裸で現れる不死身の軍曹<br>1度だけ生き残る
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Immortal sergeant who appears in snowy mountains without a shirt.<br>Survives only once
+|Name1 (TW) = 艾倫‧歐尼爾
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>不分敵我，人人皆懼的莫丁軍「鬼軍曹」<br>死前可以存活一次
+|Name2 (TW) = 艾倫‧歐尼爾CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>就算在雪山也一樣光著上身的無敵軍曹<br>死前可以存活一次
+|Name1 (KR) = 알렌 오닐
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>적, 아군 모두가 두려워하는 모덴군의 「귀신 교관」<br>딱 1번 살아남을 수 있다
+|Name2 (KR) = 알렌 오닐CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>눈보라 속에서도 상반신을 탈의한 채 나타나는 불사신 교관<br>딱 1번 살아남을 수 있다
+}}
+
+==Cost==
+*Chapter 1: 1,050¢
+*Chapter 2: 1,575¢
+*Chapter 3: 2,100¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = ALLEN O'NEIL
+|Normal Base HP = 1000
+|Normal Base AP = 300
+|Normal Range = 400
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 106
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 1050
+|Normal Recharge = 770
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Survive}} 100% chance to [[Survive|survive]] a lethal strike
+|Evolved Name = ALLEN O'NEIL CC
+|Evolved Base HP = 1125
+|Evolved Base AP = 342
+|Evolved Range = 400
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 106
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 1050
+|Evolved Recharge = 770
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Survive}} 100% chance to [[Survive|survive]] a lethal strike
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 300 damage<br>(75 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 120f <sub>4 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(105f <sup>3.5s</sup> backswing)
+|val-Normal-Recharge Time = 25.67 ~ 16.87 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(1,275 DPS)
+|val-Evolved-Health = 19,125 HP
+|val-Evolved-Attack Power = 5,815 damage<br>(1,453.75 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 120f <sub>4 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(105f <sup>3.5s</sup> backswing)
+|val-Evolved-Recharge Time = 25.67 ~ 16.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni220 f00}}
+
+==Trivia==
+*ALLEN O'NEIL is based off of [[wikia:metalslug:Allen O'Neil|Allen O'Neil]] from the Metal Slug series.
+*ALLEN O'NEIL's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+*ALLEN O'NEIL's survive ability is a reference to him reappearing in most ''Metal Slug'' games despite dying in every battle.
+
+==Reference==
+*https://battlecats-db.com/unit/221.html
+
+----
+{{CatNav|SV-001|MARS PEOPLE}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Lethal Strike Resistant Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Gacha Cats]]

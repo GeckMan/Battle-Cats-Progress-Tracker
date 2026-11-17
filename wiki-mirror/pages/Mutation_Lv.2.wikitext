@@ -1,0 +1,45 @@
+{{EnemiesAppearing|Zomboe|Znache|Gory|Zigge}}
+'''Mutation Lv.2''' is the second stage in [[Resident Undead]].
+
+{{Stage Info
+|stage name = [[File:rc006.png]]
+[[File:Mapsn336 01 s en.png]]
+|stage location = [[File:Mapname336 s en.png]]
+|energy = 60
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Zomboe|20%
+|Znache|20%
+|Gory|200%
+|Zigge|20%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 1,800 XP
+|width = 6,000
+|max enemies = 10
+|jpname = Mutation Lv.2
+|script = 突然変異Lv.2
+|romaji = Totsuzen Hen'i Lv.2
+|star = 1
+|event-chapter = [[Resident Undead]]
+|max clears = 1
+|difficulty = ★3
+|prev stage = [[Mutation Lv.1]]
+|next stage = [[Mutation Lv.3]]
+}}
+
+==Battleground==
+*1 [[Zomboe]] spawns.
+*Infinite [[Znache]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*5 [[Gory|Gories]] spawn after 20 seconds<sup>600f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*1 [[Zigge]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**3 [[Gory|Gories]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Strategy==
+A fairly easy stage since the zombie enemies are only at 20% magnification. Bring a couple of ranged attackers such as [[Lizard Cat (Normal Cat)|Dragon]] and [[Salon Cat (Rare Cat)|Paris]]. [[:Category:Anti-Zombie Cats|Anti-Zombie]] units such as [[Wushu Cat (Rare Cat)|Wushu]] are also useful there.
+
+
+==Reference==
+*https://battlecats-db.com/stage/s01336-02.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

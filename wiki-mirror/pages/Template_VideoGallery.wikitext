@@ -1,0 +1,21 @@
+<includeonly><onlyinclude><templatestyles src="VideoGallery/styles.css" />{{#invoke:VideoGallery|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template displays a gallery of YouTube videos with captions beneath them.
+
+==Usage==
+<pre>
+{{VideoGallery
+|Aw2nz5iO5e0|WE ARE THE OUTCATS
+|VpNJUvQk8eI|The OutCats 2024 Audition Tape Collection
+|DG89-42ond8|
+|A_N-5X5vwzA|Audition Tape -113- Trash Cat for The Battle Cats
+}}
+</pre>
+
+===Result===
+{{VideoGallery
+|Aw2nz5iO5e0|WE ARE THE OUTCATS
+|VpNJUvQk8eI|The OutCats 2024 Audition Tape Collection
+|DG89-42ond8|
+|A_N-5X5vwzA|Audition Tape -113- Trash Cat for The Battle Cats
+}}

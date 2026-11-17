@@ -1,0 +1,22 @@
+<includeonly><onlyinclude>{{safesubst:#invoke:CatIcon|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template displays Cat deploy images given a list of Cat names. The template differentiates forms, and there is no limit (realistically) to the number of Cats that can be listed.
+
+==Example==
+<tabber>
+Default=
+<pre>
+{{CatIcon|Cat|Eraser Cat|Ryu CC|D'artanyan|Malevolent Mad-Duck|Cheetah Cat}}
+</pre>
+
+===Result===
+{{CatIcon|Cat|Eraser Cat|Ryu CC|D'artanyan|Malevolent Mad-Duck|Cheetah Cat}}
+|-|
+Sized=
+<pre>
+{{CatIcon|Cat|Eraser Cat|Ryu CC|D'artanyan|Malevolent Mad-Duck|Cheetah Cat|size=80px}}
+</pre>
+
+===Result===
+{{CatIcon|Cat|Eraser Cat|Ryu CC|D'artanyan|Malevolent Mad-Duck|Cheetah Cat|size=80px}}
+</tabber>

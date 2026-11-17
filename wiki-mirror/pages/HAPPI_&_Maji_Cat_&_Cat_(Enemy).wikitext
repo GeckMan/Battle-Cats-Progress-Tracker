@@ -1,0 +1,66 @@
+{{TWExclusive}}
+'''HAPPI & Maji Cat & Cat''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Kaohsiung Rapid Transit Collaboration Event]].
+
+{{Enemy Info
+|name = HAPPI & Maji Cat & Cat
+|image = E 466.png
+|appearance = [[Kaohsiung Rapid Transit Collaboration Event]]
+|money drop = 500元 - 1,975元
+}}
+
+==Enemy==
+This enemy is similar to [[Merc & Cat]], but weaker attacks in exhange for more HP. It's omni shouldn't do much other than hitting Basic Cat and counterparts.
+
+==Strategy==
+Anything that deals damage should work along with meatshields. Bringing along cats with rebound attack like [[Express Cat (Super Rare Cat)|Maglev Cat]] or [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] will take this enemy down much faster.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Kaohsiung Rapid Transit Orange Line]]:
+**[[Sizihwan]] (25%)
+**[[Yanchengpu]] (25%)
+**[[Beautiful Island (Orange Line)|Beautiful Island]] (100%)
+**[[Weiwuying]] (200%)
+**[[Dadong]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = HAPPI & Maji Cat & Cat
+|Health = 150000
+|Attack Power = 6000
+|Attack Range = 75
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 30
+|Knockback = 2
+|Foreswing = 1
+|Backswing = 120
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 150f <sub>5 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+466 e.png|HAPPI & Maji Cat & Cat's spritesheet
+IdleHAPPI&MajiCat&Cat.gif|HAPPI & Maji Cat & Cat's moving animation
+</gallery>
+
+----
+{{EnemyNav|HAPPI|Chocolate Cat}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

@@ -1,0 +1,126 @@
+{{ENExclusive}}
+'''Mollyanna Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Tower of Saviors Collaboration Event]]. She was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 742
+|rarity = RR
+|name1 = Mollyanna Cat
+|name2 = Mesmerizing Tune - Mollyanna
+}}
+
+==Evolution==
+Evolves into '''Mesmerizing Tune - Mollyanna''' at level 10.
+
+==Strategy/Usage==
+Mollyanna Cat is a usable Collaboration Cat, surprisingly enough. Her main competition is [[Gardener Cat (Rare Cat)|Weedwacker Cat]], who has a higher, but very inconsistent, freeze uptime. Despite this, she has a faster recharge and much higher range, allowing her to be stacked much easier than Weedwacker Cat. Should she be stacked with good timing, she could almost perma-stun zombies that have either already burrowed or cannot burrow. Her higher range even allows her to work against [[Lord Gravey]], though she is much worse against [[Miss Haka]] and [[Big Sal]] in exchange.
+
+Note that she has a higher speed in her Evolved Form. Because she can't deal with [[Burrow|burrowing]] Zombies thanks to her long foreswing, her Evolved Form is typically preferred.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 742
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni742 f00.png
+|Image2 = Uni742 c00.png
+|Name1 = Mollyanna Cat
+|Desc1 = Longs to be a guide in the Tower of Saviors.<br>Recently started work in streaming.<br>Sometimes Freezes Zombies.
+|Name2 = Mesmerizing Tune - Mollyanna
+|Desc2 = A Cat made popular thanks to streaming.<br>Performs energetically for her loyal fans.<br>Sometimes Freezes Zombies.
+|Name1 (TW) = 莫莉安娜貓 (Mòlìānnà Māo, Mollyanna Cat)
+|Desc1 (TW) = 對神魔之塔的導遊工作有所憧憬的貓咪<br>最近偷偷開始直播活動的樣子<br>有時候會讓不死生物瞬間動作停止
+|Transl1 (TW) = A cat who dreams to be a tour guide in the Tower of Saviors.<br>It seems that it has been secretly broadcasting live events recently.<br>Sometimes freeze zombies.
+|Name2 (TW) = 一曲傾心・莫莉安娜貓 (Yī Qū Qīngxīn・Mòlìānnà Māo, Mesmerizing Tune - Mollyanna Cat)
+|Desc2 (TW) = 因為直播活動而逐漸累積人氣的貓咪<br>用唱歌和表演將自己的活力傳遞給粉絲<br>有時候會讓不死生物瞬間動作停止
+|Transl2 (TW) = The Cat gradually gained popularity through broadcasting events.<br>Transferred energy to her fans with songs and performance.<br>Sometimes freeze zombies.
+|Name1 (KR) = 모리아나 고양이
+|Desc1 (KR) = Tower of Saviors의 가이드를 동경하는 고양이<br>최근 몰래 인터넷 방송을 시작했다<br>가끔 좀비의 움직임을 순간 멈춘다
+|Name2 (KR) = 일곡경심 모리아나 고양이
+|Desc2 (KR) = 인터넷 방송 덕분에 조금씩 인기 상승 중인 고양이<br>노래와 연기를 좋아하며 팬들에게 활력을 준다<br>가끔 좀비의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mollyanna Cat
+|Normal Base HP = 360
+|Normal Base AP = 70
+|Normal Range = 310
+|Normal Foreswing = 34
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 56
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 530
+|Normal Attack Type = Single
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Mesmerizing Tune - Mollyanna
+|Evolved Base HP = 360
+|Evolved Base AP = 70
+|Evolved Range = 310
+|Evolved Foreswing = 34
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 56
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 530
+|Evolved Attack Type = Single
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 360 HP
+|val-Normal-Attack Power = 70 damage<br>(37.5 DPS)
+|val-Normal-Attack Range = 310
+|val-Normal-Attack Frequency = 56f <sub>1.87 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 34f <sup>1.13s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 17.67 ~ 8.87 seconds
+|val-Normal-MaxHP = 6,120 HP
+|val-Normal-MaxAttack = 1,190 damage<br>(637.5 DPS)
+|val-Evolved-Health = 6,120 HP
+|val-Evolved-Attack Power = 1,190 damage<br>(637.5 DPS)
+|val-Evolved-Attack Range = 310
+|val-Evolved-Attack Frequency = 56f <sub>1.87 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 34f <sup>1.13s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 17.67 ~ 8.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni742 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/743.html
+
+----
+{{CatNav|Voluptuous Peony - Daji|Madhead}}
+----
+
+{{Tower of Saviors}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Freeze ability]]

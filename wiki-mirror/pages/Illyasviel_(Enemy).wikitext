@@ -1,0 +1,65 @@
+:''This article is about the enemy. For the Cat Unit, see [[Illyasviel (Uber Rare Cat)]].''
+'''Illyasviel''' (遠坂 凛) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Fate/Stay Night: Heaven's Feel Collaboration Event]]. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Enemy Info
+|name = Illyasviel
+|image = E 374.png
+|appearance = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+She has higher stats than [[Rin Tohsaka (Enemy)|Rin Tohsaka]], but isn't a major threat, as she has low attack power and slow attack rate, decent range and HP, with an inconsistent [[Slow]] ability. Overall only a threat to early game players.
+
+==Strategy==
+Illyasviel has a Multi-Hit that reaches 400 range, so most backliners like [[Bahamut Cat (Special Cat)|Bahamut Cat]] cleanly outrange her. Her Slow only has a 30% activation chance, so it can be considered a non-issue in most circumstances.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#The Holy Grail War|The Holy Grail War]]:
+**[[Manor Ruins]] (15%)
+**[[Inconspicuous Trap]] (30%)
+**[[Beginning of the End]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Illyasviel
+|Health = 100000
+|Attack Power = 5600
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 118
+|Movement Speed = 7
+|Knockback = 3
+|Foreswing = 71
+|Backswing = 29
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">2,800</span> at 71f <sup>2.37s</sup>, <span class="scaled" data-type="ap">2,800</span> at 89f <sup>2.97s</sup>)<br>
+{{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+374 e.png|Illyasviel's spritesheet
+IdleIllyasviel.gif|Illyasviel's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/376.html
+
+----
+{{EnemyNav|Rin Tohsaka|Youcan}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemy Units]]

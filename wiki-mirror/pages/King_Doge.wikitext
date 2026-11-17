@@ -1,0 +1,71 @@
+:''For other uses, see [[God (disambiguation)]].
+'''King Doge''' (わんわん大王, ''Wan Wan Daiō'', '''Great King Wan Wan''') is a [[:Category:Metal Enemies|Metal]] enemy that appears in [[King Doge's Ambition|Final Battle: King Doge!]]. He was added in [[Version 13.0 Update|Version 13.0]].
+
+{{Enemy Info
+|name = King Doge
+|image = E 671.png
+|first appearance = [[King Doge's Ambition|Final Battle: King Doge!]]
+|money drop = 1,111¢ - 4,388¢
+}}
+
+==Enemy==
+This slow enemy is essentially harmless. Though it has a somewhat fast attack rate and hits from extreme range, it simply doesn't inflict enough damage to meaningfully dent most formations, and when units get within range they can quickly whittle down its very low health pool despite its Metal trait. As such, it mostly relies on other threats to create pressure.
+
+==Strategy==
+On its own this enemy is rather straightforward, since even a formation of Basic Cats can demolish it easily and its minuscule health doesn't even warrant the use of a [[:Category:Critical Hit Cats|Critical Hitter]].
+
+==Variants==
+{{Variant
+|original = King Doge
+|inherit_desc = true
+|Possessed King Doge
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 200% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Anniversary/11th Year#Final Battle: King Doge!|Final Battle: King Doge!]]: [[King Doge's Ambition]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = King Doge
+|Health = 20
+|Attack Power = 3
+|Attack Range = 1000
+|Attack Type = Area
+|Time Between Attacks = 201
+|Movement Speed = 2
+|Knockback = 1
+|Foreswing = 90
+|Backswing = 51
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">1</span> at 90f <sup>3s</sup>, <span class="scaled" data-type="ap">1</span> at 120f <sup>4s</sup>, <span class="scaled" data-type="ap">1</span> at 150f <sup>5s</sup>)
+|Element = Metal
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+671 e.png|King Doge's spritesheet (EN)
+671 e ja.png|King Doge's spritesheet (JP)
+</gallery>
+
+==Trivia==
+*King Doge's Japanese name, Wan Wan, is a pun on "One One" (referring to how he was created for the 11th anniversary event) and ''wan'', the Japanese onomatopoeia for a dog's bark.
+*The texts appearing in the attack animation are "祝" "11" "周年", meaning "Celebration of the 11th anniversary".
+
+==Reference==
+*https://battlecats-db.com/enemy/673.html
+
+----
+{{EnemyNav|King's Mimic|11th Anniv. Doge Cake}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Metal Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]

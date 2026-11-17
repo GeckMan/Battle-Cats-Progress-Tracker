@@ -1,0 +1,9 @@
+.ranger-navbox.yakuza-apocalypse {
+	--bg-navbox-title: linear-gradient(to right, hsl(44, 30%, 46%) 0%, hsl(44, 30%, 51%) 100%);
+	--bg-sub-table-title: hsl(37, 39%, 88%);
+	--bg-group-name: hsl(50, 40%, 45%);
+
+	--sub-title-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

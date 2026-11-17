@@ -1,0 +1,154 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Masked Cat''' is a [[:Category:Special Cats|Special Cat]] introduced in [[Version 1.5 Update|Version 1.5]] of [[Nyanko Daisensou]]. It was only obtainable via [[Serial Codes]] and must be obtained from the Nyanko Daisensou Lottery Double Chance Campaign. As of [[Version 4.3 Update|Version 4.3]], it became impossible to obtain this unit due to the feature to input serial codes were removed. In [[The Battle Cats Unite!]], it became obtainable by opening the game between 10 p.m. and 11:59 p.m.
+
+{{Cat Info
+|ID = 29
+|rarity = EX
+|name1 = Masked Cat
+|name2 = Luchador Cat
+}}
+
+==Evolution==
+Evolves into '''Luchador Cat''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meat shield role is quite valuable, if not for the wide selection of cats able to perform this role without relevant differences in quality. Masked Cat, however, can be used in 4-crown stages, where there is considerably less competition. This is his only use.
+
+==='''Evolved Form'''===
+Due to the low stats, this form is not recommended as it is considerably worse than any possible alternative in about every way, resulting in him being a bad investment of money. Could still be of use in early-mid [[Empire of Cats]], but, after that, it is best to revert this cat to Normal Form and only use that.
+
+{{Job|EvolvedClass = Melee|Classification = Meatshield|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 29
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni029 f00.png
+|Image2 = Uni029 c00.png
+|Name1 = Masked Cat
+|Desc1 = Wears the mask which he borrowed without permission<br>from the adventurer Gamatoto who found the mask.<br>His only capability is wearing the mask though.
+|Name2 = Luchador Cat
+|Desc2 = Finally became a wrestler.<br>Due to his class change, his talents<br>have increased considerably. (Area)
+|Name1 (JP) = マスクオブネコ (Masuku obu Neko, Mask of Cat)
+|Desc1 (JP) = ついに伝説のマスクを入手した冒険者ガマトト<br>から無断で借りたマスクをかぶって参戦<br>性能はもちろんマスクをかぶっただけである
+|Transl1 (JP) = Joined wearing a legendary mask that he secretly borrowed<br>from the adventurer Gamatoto who finally found it<br>His capabilities are still the same with the mask
+|Name2 (JP) = ネコレスラー (Neko Resurā, Wrestler Cat)
+|Desc2 (JP) = ついにレスラー界へ進出した冒険者ガマトト<br>のブログでコメントを書き込むのが最近の日課<br>クラスチェンジすると性能が大きく変化(範囲攻撃)
+|Transl2 (JP) = Finally got into the wrestling industry<br>Posting comments on adventurer Gamatoto's blog became his daily routine<br>Changing form caused performance to significantly change
+|Name1 (TW) = 面具貓
+|Desc1 (TW) = 傳說面具終於入手的假象冒險者<br>沒經過同意就戴面具參戰<br>性能就是…多了副面具罷了
+|Name2 (TW) = 摔角選手貓
+|Desc2 (TW) = 終於進入摔角界的假象冒險者<br>最近沉迷於每天寫部落格<br>轉職後性能會大幅變化（範圍攻擊）
+|Name1 (KR) = 마스크 오브 고양이
+|Desc1 (KR) = 드디어 전설의 마스크를 입수한 모험자 가마토토<br>에게 무단으로 빌린 마스크를 쓰고 참전<br>마스크의 성능은... 그냥 멋있어 보여 쓴 것뿐임
+|Name2 (KR) = 고양이 레슬러
+|Desc2 (KR) = 드디어 레슬러계에 진출한 모험자 가마토토<br>의 블로그에 코멘트를 다는게 최근의 일과<br>클래스 체인지 하면 성능이 크게 변화 (범위 공격)
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+
+===Evolved Form===
+*Chapter 1: 650円
+*Chapter 2: 975円
+*Chapter 3: 1,300円
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Masked Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Luchador Cat
+|Evolved Base HP = 500
+|Evolved Base AP = 140
+|Evolved Range = 150
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 49
+|Evolved Attack Length = 26
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 650
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50<br>Lv.30<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(1,065.67 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni029 f00}}
+
+==Trivia==
+*Masked Cat is likely a reference to [[wikipedia:The Mask of Zorro|The Mask of Zorro]] as Masked Cat's translated Japanese name, Mask of Cat, is similar to the film's name. The masks worn by Zorro and the Cat are also designed similarly and both leave the mouth and eyes uncovered. Additionally, in [[Battle Cats (Removed Game)|Battle Cats]], Masked Cat's description stated that it stole the mask from Harrison, which is likely a nod to the film's Harrison Love.
+*[[Gamatoto Expedition|Gamatoto]] is mentioned in Masked Cat's description, even though he wasn't implemented at that point yet.
+**Masked Cat's description didn't mention Gamatoto in [[Battle Cats (Removed Game)|Battle Cats]], making it possible that the reference was only added once Gamatoto was.
+*This Cat unit is the first to reference Gamatoto, the second being [[Stone Cat (Rare Cat)|Stone Cat]].
+*One of the skins in [[Battle Cats Quest]] is named Masked Cat, although that cat bears no real resemblance to this one.
+*Not counting [[:Category:Collaboration Event Cats|Collaboration Cats]], [[Capsule Cat (Special Cat)|Capsule Cat]] and Masked Cat are tied for the oldest existing Special Cats without [[True Form]]s.
+
+==Reference==
+*https://battlecats-db.com/unit/030.html
+
+----
+{{CatNav|Capsule Cat|Bodhisattva Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]

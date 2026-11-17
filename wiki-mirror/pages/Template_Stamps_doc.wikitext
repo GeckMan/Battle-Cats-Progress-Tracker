@@ -1,0 +1,84 @@
+{{Documentation}}
+Template to display login stamps during events and such. See [[Module:Stamps/doc]] for information on how to update the available stamps.
+
+==Usage==
+<pre>{{Stamps|bg=|gradient=|item1|item1description|item2|item2description|...}}</pre>
+
+==Example Usage==
+<tabber>
+Without Bg=
+<pre>
+{{Stamps|Treasure Radar|[[Treasure Radar]] + 654
+|Rich Cat|Multiple [[Rich Cat]]s
+|Shakurel Cat|chin
+}}
+</pre>
+
+===Result===
+{{Stamps|Treasure Radar|[[Treasure Radar]] + 654
+|Rich Cat|Multiple [[Rich Cat]]s
+|Shakurel Cat|chin
+}}
+
+|-|With Bg=
+<pre>
+{{Stamps|bg=0
+|Speed Up|"[[Battle Items#Speed Up|Speed Up]]" power up +5
+|Rich Cat|"[[Battle Items#Rich Cat|Rich Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Cat CPU|"[[Battle Items#Cat CPU|Cat CPU]]" power up +3
+|Cat Ticket|"[[Normal Cat Capsule|Cat Ticket]]" +2
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Treasure Radar|"[[Battle Items#Treasure Radar|Treasure Radar]]" power up +1
+|Sniper the Cat|"[[Battle Items#Sniper the Cat|Sniper the Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+}}
+</pre>
+
+===Result===
+{{Stamps|bg=0
+|Speed Up|"[[Battle Items#Speed Up|Speed Up]]" power up +5
+|Rich Cat|"[[Battle Items#Rich Cat|Rich Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Cat CPU|"[[Battle Items#Cat CPU|Cat CPU]]" power up +3
+|Cat Ticket|"[[Normal Cat Capsule|Cat Ticket]]" +2
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Treasure Radar|"[[Battle Items#Treasure Radar|Treasure Radar]]" power up +1
+|Sniper the Cat|"[[Battle Items#Sniper the Cat|Sniper the Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+}}
+
+|-|With Gradient=
+<pre>
+{{Stamps|gradient=linear-gradient(#000 0%, #f00 40%, #f00 60%, #000 100%)
+|Speed Up|"[[Battle Items#Speed Up|Speed Up]]" power up +5
+|Rich Cat|"[[Battle Items#Rich Cat|Rich Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Cat CPU|"[[Battle Items#Cat CPU|Cat CPU]]" power up +3
+|Cat Ticket|"[[Normal Cat Capsule|Cat Ticket]]" +2
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Treasure Radar|"[[Battle Items#Treasure Radar|Treasure Radar]]" power up +1
+|Sniper the Cat|"[[Battle Items#Sniper the Cat|Sniper the Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+}}
+</pre>
+
+===Result===
+{{Stamps|gradient=linear-gradient(#000 0%, #f00 40%, #f00 60%, #000 100%)
+|Speed Up|"[[Battle Items#Speed Up|Speed Up]]" power up +5
+|Rich Cat|"[[Battle Items#Rich Cat|Rich Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Cat CPU|"[[Battle Items#Cat CPU|Cat CPU]]" power up +3
+|Cat Ticket|"[[Normal Cat Capsule|Cat Ticket]]" +2
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+|Treasure Radar|"[[Battle Items#Treasure Radar|Treasure Radar]]" power up +1
+|Sniper the Cat|"[[Battle Items#Sniper the Cat|Sniper the Cat]]" power up +4
+|Rare Ticket|"[[Cat Capsule#Rare Capsule|Rare Ticket]]" +1
+}}
+</tabber>
+
+==All items==
+{{#invoke:Stamps|demo|code}}
+
+===Result===
+{{#invoke:Stamps|demo}}

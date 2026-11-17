@@ -1,0 +1,109 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Possessed Silver Nyanko Ranger]].''
+'''Barista Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by beating [[Fascinating Fallen Tower/Floor 10|Floor 10]] of the [[Fascinating Fallen Tower]]. It was added in [[Version 15.3 Update|Version 15.3]].
+
+{{Cat Info
+|ID = 857
+|rarity = EX
+|name1 = Barista Cat
+|name2 = Silver Nyanko Ranger
+}}
+
+==Evolution==
+Evolves into '''Silver Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+This Cat is an anti-[[:Category:Angel Enemies|Angel]] DPS with a very fast attack rate. Against Angels, it possesses a solid 6,500 DPS with a decently high standing range. This is good for countering Angels in the early-game, such as [[Angelic Gory]] and [[Boraphim]], especially when you don't have any better answers. However, it quickly loses steam as soon as you unlock [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]], who tends to outclass it in terms of damage and spammability, while also having Area Attack to boot. While Silver Nyanko Ranger is tankier, its recharge rate is subpar even with [[Fedora Cat (Special Cat)|Blue Nyanko Ranger]]'s [[Blue Strike (Combo)|Combo]], and it costs a lot to deploy even with [[Goggles Cat (Special Cat)|Green Nyanko Ranger]]'s [[Green Strike (Combo)|Combo]]. There's little reason to use Silver Nyanko Ranger outside of its speed, which can allow it to sneak into enemy blind spots like [[Ange Lackey]]. However, even in this regard, [[Food Stall Cat (Rare Cat)|Cafeteria Cat]] is better overall unit for that job.
+
+[[Gold Silver Strike (Combo)|Gold Silver Strike]] does see powerful synergy with [[Scarf Cat (Special Cat)|Red Nyanko Ranger]] against [[:Category:Aku Enemies|Aku]] enemies, where it allows the [[:Category:Nyanko Rangers|Nyanko Rangers]] to survive nasty [[Death Surge]]s. It gives Red Nyanko Ranger viability against enemies which would have instantly evaporated it with Surge Attacks like [[Medu-san]] and the [[Surge Base (Enemy Base)|Surge Base]]. It is situationally useful on [[Ribbon Cat (Special Cat)|Pink Nyanko Ranger]] for similar reasons, but keep in mind, the Combo does take up 2 slots, and Silver Nyanko Ranger won't be contributing much to those fights. This Combo also lets it become a soft-counter to [[St. Dober]] for strategies that involve brute-forcing him.
+
+Silver Nyanko Ranger can still serve as additional DPS alongside the units that outclass it, but in most situations, their acquisition means its demotion to [[Underground Labyrinth]] fodder.
+
+{{Job|Classification = Rusher & Midranger}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Gold Silver Strike|"Immune to Surge" Effects Activated|Barista Cat|Commander Cat (13th)|jpname=キンギンパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 857
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni857 f00.png
+|Image2 = Uni857 c00.png
+|Name1 (JP) = バリスタにゃんこ (Barisuta Nyanko, Barista Cat)
+|Desc1 (JP) = レンジャー御用達の「喫茶にゃんこ」のマスター<br>裏の顔は作戦を練るにゃんこレンジャーの副司令官<br>天使にめっぽう強く、たまに渾身の一撃を放つ
+|Transl1 (JP) = Master of "Café Nyanko", which is popular with the Rangers<br>Its secret identity is the deputy commander of the Nyanko Rangers who devises their strategies<br>Very Strong against Angels, occasionally releases an All-Out Blow
+|Name2 (JP) = シルバーにゃんこ (Shirubā Nyanko, Silver Cat)
+|Desc2 (JP) = タヌキソウルを宿し、にゃんこレンジャー変身！<br>「シロガネドリル」で勝利への筋道を示す<br>天使にめっぽう強く、たまに渾身の一撃を放つ
+|Transl2 (JP) = Channeling the Tanuki Soul, Nyanko Ranger transform!<br>Shows the path to victory with the "Silver Drill"<br>Very Strong against Angels, occasionally releases an All-Out Blow
+}}
+
+==Cost==
+*Chapter 1: 750¢
+*Chapter 2: 1,125¢
+*Chapter 3: 1,500¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Barista Cat
+|Normal Base HP = 1120
+|Normal Base AP = 52
+|Normal Range = 290
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 11
+|Normal Speed = 20
+|Normal KB = 2
+|Normal Cost = 750
+|Normal Recharge = 940
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Savage Blow}} 10% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Evolved Name = Silver Nyanko Ranger
+|Evolved Base HP = 1400
+|Evolved Base AP = 65
+|Evolved Range = 290
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 11
+|Evolved Speed = 20
+|Evolved KB = 2
+|Evolved Cost = 750
+|Evolved Recharge = 940
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Savage Blow}} 10% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni857 f00}}
+
+==Trivia==
+*Unlike the first five [[:Category:Nyanko Rangers|Nyanko Rangers]], Silver Nyanko Ranger and [[Commander Cat (Special Cat)|Gold Nyanko Ranger]] channel the souls of canids (tanuki and fox, respectively) rather than felids. This may be because they start as the enemies [[Possessed Silver Nyanko Ranger]] and [[Possessed Gold Nyanko Ranger]], and many other enemies are dogs.
+
+==Reference==
+*https://battlecats-db.com/unit/858.html
+
+----
+{{CatNav|Nyanko Village Cat|Commander Cat (13th)}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Savage Blow Cats]]

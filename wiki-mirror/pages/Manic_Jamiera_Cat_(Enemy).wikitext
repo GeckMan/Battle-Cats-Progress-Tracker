@@ -1,0 +1,71 @@
+:''For the Cat Unit, see [[Crazed Titan Cat (Super Rare Cat)]]. For the weaker boss that must be defeated first, see [[Crazed Titan Cat (Enemy)]].''
+'''Manic Jamiera Cat''' (大狂乱のネコジャラミ ''Dai Kyōran no Neko Jarami'', '''Insane Jarami Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy found in [[Resident Feline (Deadly)|Titan Maniac]]. He was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Manic Jamiera Cat
+|image = E 250.png
+|appearance = [[Resident Feline (Deadly)|Titan Maniac]]
+[[Infernal Tower/Floor 37|Infernal Tower - Floor 37]]
+|money drop = 2,125¢ - 8,394¢
+}}
+
+==Enemy==
+This enemy is the Goliath to your David. He has incredibly high health and attack (though, oddly, not as much as the much smaller [[Manic Eraser Cat (Enemy)|Manic Eraser]] and [[Manic Mohawk Cat (Enemy)|Manic Mohawk]]), and a 1-in-4 chance, ''with '''every''' attack'', to fire off a level 7 [[Wave Attack]]. Due to his high attack power, it will kill most Cats that aren't immune to waves, and the few survivors will be low on health or [[Slow|slowed]] for a long time.
+
+==Strategy==
+Stacked [[Figure Skating Cats (Super Rare Cat)|Drama Cats]], [[Salon Cat (Rare Cat)|Cyborg Cats]], and [[Lizard Cat (Normal Cat)|Dragon Cats]] can lay the hurt on him, but they will probably die if he does a [[Wave Attack]].
+
+You can stall him just like your own Crazed Titan Cat by making it miss. The Gory groups help you accomplish this by eliminating your meatshields that Manic Jamiera would have attacked, as if an enemy misses their initial attack, the wave won't happen.
+
+Using [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] or [[Cat Machine (Uber Rare Cat)|Cat Machine Mk3]] to negate Jamiera's Wave Attack will not guarantee that your ranged attackers will survive. Because of Jamiera's sheer damage and the units' inability to outrange the boss, Octopus will only be able to block the wave within a small window, and Cat Machine's survivability depends on if Manic Jamiera slows him or not. Also be wary that if the boss creates a wave on the same hit that your wave blocker dies to or gets knocked back from, their hitbox will despawn, and every unit behind will get destroyed.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Titan Maniac: [[Resident Feline (Deadly)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 37|Floor 37]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manic Jamiera Cat
+|Health = 3560000
+|Attack Power = 22000
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 81
+|Movement Speed = 4
+|Knockback = 5
+|Foreswing = 47
+|Backswing = 34
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Wave Attack}} 25% chance to create a level 7 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+250 e.png|Manic Jamiera Cat's spritesheet
+IdleManicJamiera.gif|Manic Jamiera Cat's walking animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/252.html
+
+----
+{{EnemyNav|Manic King Dragon|Kiss and Koi}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemy Cats]]

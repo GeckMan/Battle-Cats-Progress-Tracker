@@ -1,0 +1,135 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Dubai (Into the Future)/Outbreak|here]].''
+'''Dubai''' is the 16th stage in [[Into the Future]]. [[Imperator Sael]] debuts here in Chapter 1, [[Cyberhorn]] in Chapter 2, and [[Alpacky]] in Chapter 3.
+
+{{Story Info
+|stage name = [[File:Wc030.png]]
+|stage location = [[File:Dubai.png]]
+'''Into the Future'''
+|energy = 50
+|energy2 = 60
+|energy3 = 70
+|enemy castle hp = 40,000 HP
+|enemy castle hp2 = 60,000 HP
+|enemy castle hp3 = 80,000 HP
+|enemies = {{Magnification|Pigge|300%
+|B.B.Bunny|300%
+|Squire Rel|300%
+|Shibalien|90%
+|Gory|300%}}
+|boss = {{Magnification|Imperator Sael|60%}}
+|enemies2 = {{Magnification|Pigge|800%
+|B.B.Bunny|800%
+|Gory|800%
+|Imperator Sael|250%
+|Shibalien|250%
+|Mooth|800%}}
+|boss2 = {{Magnification|Cyberhorn|100%}}
+|enemies3 = {{Magnification|One Horn|1,200%
+|Cyberhorn|200%
+|Shibalien|500%
+|Pigge|1,200%
+|B.B.Bunny|1,200%}}
+|boss3 = {{Magnification|Alpacky|100%}}
+|treasure = - [[Treasure|Skyscraper]]
+|treasure2 = - [[Treasure|Skyscraper]]
+|treasure3 = - [[Treasure|Skyscraper]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''6,500''': Cat Ticket +1<br>
+'''5,000''': Rich Cat +1
+|score reward2 = '''8,000''': [[Cat Food]] +10<br>
+'''7,500''': Cat Ticket +1<br>
+'''7,000''': Rich Cat +1
+|score reward3 = '''6,500''': [[Cat Food]] +10<br>
+'''6,000''': Cat Ticket +1<br>
+'''5,500''': Rich Cat +1
+|max enemies = 6
+|max enemies2 = 7
+|max enemies3 = 8
+|XP = 5,500 XP
+|width = 3,600 (Chapters 1 and 2)<br>
+5,000 (Chapter 3)
+|jpname = Dubai
+|script = ドバイ
+|romaji = Dobai
+|jptreasure = Resort Area
+|twname = Turkey
+|twscript = 土耳其
+|twromaji = Tǔ'ěrqí
+|twtreasure = Belly Dance
+|krname = Dubai
+|krscript = 두바이
+|krromaji = Dubai
+|krtreasure = Skyscraper
+|chapter = [[Into the Future]]
+|prev stage = [[Turkey (Into the Future)|Turkey]]
+|next stage = [[India (Into the Future)|India]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Pigge|B.B.Bunny|Squire Rel|Shibalien|Gory|Imperator Sael}}
+*Infinite [[Pigge]]s spawn after 0.07 seconds<sup>2f</sup>, delay 36.67 seconds<sup>1,100f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~30 seconds<sup>500f~900f</sup>.
+*Infinite [[Squire Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Shibalien]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*3 [[Gory|Gories]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*3 [[Gory|Gories]] spawn after 56 seconds<sup>1,680f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien]] spawns.
+**1 [[Shibalien]] spawns.
+*When the base reaches 80% HP:
+**1 [[Imperator Sael]] spawns as the boss.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Pigge|B.B.Bunny|Gory|Imperator Sael|Shibalien|Mooth|Cyberhorn}}
+*Infinite [[Pigge]]s spawn after 0.07 seconds<sup>2f</sup>, delay 36.67 seconds<sup>1,100f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 13.33 seconds<sup>400f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Gory]] spawns after 21.33 seconds<sup>640f</sup>.
+*1 [[Gory]] spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Imperator Sael]] spawns after 30 seconds<sup>900f</sup>.
+*Infinite [[Shibalien]]s spawn after 50 seconds<sup>1,500f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*2 [[Mooth]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*When the base reaches 80% HP:
+**1 [[Cyberhorn]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|One Horn|Cyberhorn|Alpacky|Shibalien|Pigge|B.B.Bunny}}
+*1 [[One Horn]] spawns.
+*1 [[Cyberhorn]] spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Alpacky]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+*Infinite [[Shibalien]]s spawn after 30 seconds<sup>900f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*Infinite [[Shibalien]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*3 [[Pigge]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 50 seconds<sup>1,500f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+Don't spawn anything at first and wait for your money to get a bit higher. When the [[Pigge]] gets close to your base, try and stall her while you save up enough money to spawn [[Bahamut Cat (Special Cat)|Bahamut Cat]]. Keep spawning meatshields. Bahamut will take care of most things in the level, and kill [[Imperator Sael]] in 2 - 3 hits based on his level and your [[Treasure]]s.
+
+==='''Chapter 2'''===
+If one has units that can Knockback or Perma-Freeze Aliens, such as [[Surfer Cat (Super Rare Cat)|Castaway Cat]] or the uber, [[Hayabusa (Uber Rare Cat)|Oni Hayabusa]], use them.
+
+==='''Chapter 3'''===
+Units that can tank or outrange Alpacky such as [[Titan Cat (Normal Cat)|Jamiera Cat]] or [[Nerd Cat (Super Rare Cat)|Hacker Cat]] respectively are invaluable if not mandatory. Treat this like a normal Camelle, but make sure to save your Cat Cannon for when she gets to 1% HP. With a little luck, one may be able to freeze Alpacky outright by stacking [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] on the Cyberhorn.
+
+==Gallery==
+<gallery>
+Wc031.png|Taiwanese version's base (Turkey)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Turkey'''; [[Turkey (Into the Future)|stage 15]] is Greece and Dubai is moved to [[India (Into the Future)|stage 17]].
+*Along with [[Moon (Empire of Cats)|Iriomote Island]] ([[Empire of Cats]] stage 48 in [[Nyanko Daisensou|BCJP]]), it is the only stage to change [[backgrounds]] between chapters: in Chapters 1 and 2 it takes place in a ruined city like [[China (Into the Future)|China]], while in Chapter 3 it becomes a wintry snowscape.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-16.html
+*https://battlecats-db.com/stage/s03004-16.html
+*https://battlecats-db.com/stage/s03005-16.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

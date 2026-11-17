@@ -1,0 +1,137 @@
+:''For other uses, see [[Jack (disambiguation)]].''
+'''Jack Hammer''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Baki Hanma Collaboration Event]]. He was added in [[Version 14.3 Update|Version 14.3]].
+
+{{Cat Info
+|ID = 793
+|rarity = UR
+|name1 = Jack Hammer
+|name2 = Jack Hammer CC
+}}
+
+==Evolution==
+Evolves into '''Jack Hammer CC''' at level 10.
+
+==Strategy/Usage==
+Jack serves as a surprisingly powerful crowd-controller against his target traits, being one of the few units with the [[Metal Killer]] ability, this time taking 18% of a Metal enemy's current HP. Not only that, he maintains an almost 100% uptime on his [[Weaken]], and a forward-piercing [[Omni Strike]] that allows him to snipe incoming enemies. Together, these abilities make him a proficient counter against high HP Metals such as [[Sir Metal Seal]], [[Super Metal Hippoe]], and [[Metal Cyclone]], while still allowing him to handle weaker Metal peons effectively.
+
+Against Zombies, however, his performance is less than stellar, as many are able to burrow in between his attack cycles. Jack's damage leaves a lot to be desired—while enough to knockback most Zombies, it is typically never enough to kill them outright. This makes his [[Zombie Killer]] ability situational; he has only the bare necessities to function ''decently'' in mixed stages featuring Zombie and Metal enemies, but never as your dedicated Zombie crowd controller.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 793
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni793 f00.png
+|Image2 = Uni793 c00.png
+|Name1 = Jack Hammer
+|Desc1 = Baki's half-brother who'll do whatever it takes to<br>gain strength. Metal Killer with 100% chance to<br>Weaken Zombies and Metal enemies!
+|Name2 = Jack Hammer CC
+|Desc2 = His oppressive bite strength can crush even<br>a coconut. Metal Killer with 100% chance to<br>Weaken Zombies and Metal enemies!
+|Name1 (JP) = ジャック・ハンマー (Jakku Hanmā, Jack Hammer)
+|Desc1 (JP) = 「範馬刃牙」から参戦ッッ！強くなるためなら手段を<br>選ばない刃牙の腹違いの兄。メタルキラーを持ち<br>必ずメタルな敵とゾンビの攻撃力を下げる
+|Transl1 (JP) = Joining the war from "Baki Hanma"!!! [[Baki Hanma (Uber Rare Cat)|Baki]]'s half-brother who will stop at nothing<br>to become stronger. Has Metal Killer,<br>guaranteed to lower attack power of Metal enemies and Zombies
+|Name2 (JP) = ジャック・ハンマーCC (Jakku Hanmā CC, Jack Hammer CC)
+|Desc2 (JP) = 「範馬刃牙」から参戦ッッ！圧倒的な咬筋力は<br>ヤシの実をも噛み砕く。メタルキラーを持ち<br>必ずメタルな敵とゾンビの攻撃力を下げる
+|Transl2 (JP) = Joining the war from "Baki Hanma"!!! With overwhelming masseter muscle strength,<br>he can crunch even a coconut. Has Metal Killer,<br>guaranteed to lower attack power of Metal enemies and Zombies
+|Name1 (TW) = 傑克・範馬
+|Desc1 (TW) = 從「範馬刃牙」來參戰！與刃牙同父異母的哥哥<br>為了變強會不擇手段。有鋼鐵殺手能力<br>必定能讓鋼鐵敵人與不死生物的攻擊力下降
+|Name2 (TW) = 傑克・範馬CC
+|Desc2 (TW) = 從「範馬刃牙」來參戰！那壓倒性的<br>咬合力連椰子殼也能咬碎。有鋼鐵殺手能力<br>必定能讓鋼鐵敵人與不死生物的攻擊力下降
+|Name1 (KR) = 잭 한마
+|Desc1 (KR) = 「한마 바키」에서 참전! 강해지기 위해서는 수단을<br>가리지 않는 바키의 이복형. 메탈 킬러를 가지고<br>반드시 메탈 적과 좀비의 공격력을 낮춘다.
+|Name2 (KR) = 잭 한마CC
+|Desc2 (KR) = 「한마 바키」에서 참전! 압도적인 교합력은<br>코코넛도 쪼갤 정도다. 메탈 킬러를 가지고<br>반드시 메탈 적과 좀비의 공격력을 낮춘다.
+}}
+
+==Cost==
+*Chapter 1: 3,250¢
+*Chapter 2: 4,875¢
+*Chapter 3: 6,500¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Jack Hammer
+|Normal Base HP = 5400
+|Normal Base AP = 1380
+|Normal Range = 380
+|Normal Foreswing = 40
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 86
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 3250
+|Normal Recharge = 4500
+|Normal Attack Type = Area
+|Normal Targets = Metal,Zombie
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -480~480)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 18% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Evolved Name = Jack Hammer CC
+|Evolved Base HP = 6700
+|Evolved Base AP = 1780
+|Evolved Range = 380
+|Evolved Foreswing = 40
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 86
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 3250
+|Evolved Recharge = 4500
+|Evolved Attack Type = Area
+|Evolved Targets = Metal,Zombie
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -480~480)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)<br>
+{{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 18% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 5,400 HP
+|val-Normal-Attack Power = 1,380 damage<br>(208.04 DPS)
+|val-Normal-Attack Range = 380
+|val-Normal-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(46f <sup>1.53s</sup> backswing)
+|val-Normal-Recharge Time = 150 ~ 141.2 seconds
+|val-Normal-MaxHP = 91,800 HP
+|val-Normal-MaxAttack = 23,460 damage<br>(3,536.68 DPS)
+|val-Evolved-Health = 113,900 HP
+|val-Evolved-Attack Power = 30,260 damage<br>(4,561.81 DPS)
+|val-Evolved-Attack Range = 380
+|val-Evolved-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(46f <sup>1.53s</sup> backswing)
+|val-Evolved-Recharge Time = 150 ~ 141.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni793 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/794.html
+
+----
+{{CatNav|Katsumi Orochi|Ogre Cat}}
+----
+
+{{Baki Hanma}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Metal Killer Cats]]

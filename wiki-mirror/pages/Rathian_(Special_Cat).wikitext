@@ -1,0 +1,138 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Rathian (Enemy)]].''
+'''Rathian''' is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 4.2 Update|Version 4.2]] and can be unlocked by playing the Event Capsule during the [[Monster Hunter Collaboration Event]].
+
+{{Cat Info
+|ID = 207
+|rarity = EX
+|name1 = Rathian
+|name2 = Rathian & Cat
+}}
+
+==Evolution==
+Evolves into '''Rathian & Cat''' at level 10.
+
+==Strategy/Usage==
+Rathian is all in all just a budget [[Urs & Fenrir (Special Cat)|Urs & Fenrir]]. Despite having a better cooldown by a good margin, her stats are worse than theirs and their [[Ururun Wolf (Special Cat)|descendant]]'s, especially in range. Her [[Weaken|Weaken]], like Urs', is a nice bonus but nothing substantial or something [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] can't do. Generally, most midrangers such as [[Figure Skating Cats (Super Rare Cat)|Drama Cats]] and [[Talents|Talented]] [[Kung Fu Cat (Special Cat)|Dancer Cat]] are far more useful, and [[Empire of Cats]] and early-game [[Legend Stages]] are the only places Rathian performs decently due to lack of alternative options.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 207
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni207 f00.png
+|Image2 = Uni207 c00.png
+|Name1 (JP) = リオレイア (Rioreia)
+|Desc1 (JP) = モンハン 大狩猟クエストから参戦！<br>強靭な尻尾で敵をなぎ倒す、陸の女王と称される火竜<br>たまに敵の攻撃力を下げる(範囲攻撃)
+|Transl1 (JP) = Joined the war from Monster Hunter big hunting Quest!<br>A fire dragon that defeats enemies with a strong tail and is called the Queen of the Land<br>Occasionally reduces the enemy's attack power (area attack).
+|Name2 (JP) = リオレイア&にゃんこ (Rioreia & Nyanko, Rioreia & Cat)
+|Desc2 (JP) = モンハン 大狩猟クエストから参戦！<br>陸の女王を召喚し強力な力を手に入れたにゃんこ<br>たまに敵の攻撃力を下げる(範囲攻撃)
+|Transl2 (JP) = Joined the war from Monster Hunter big hunting Quest!<br>A cat who summoned the Queen of the Land and gained strong powers<br>Occasionally reduces the enemy's attack power (area attack).
+}}
+
+==Cost==
+*Chapter 1: 2,400円
+*Chapter 2: 3,600円
+*Chapter 3: 4,800円
+{{Upgrade Cost|MIX
+|0
+|6,860
+|10,360
+|15,260
+|29,750
+|45,010
+|65,240
+|82,600
+|138,180
+|359,450
+|10,920}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rathian
+|Normal Base HP = 1840
+|Normal Base AP = 840
+|Normal Range = 320
+|Normal Foreswing = 45
+|Normal Attack Cooldown = 115
+|Normal Attack Length = 101
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 2400
+|Normal Recharge = 3600
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Rathian & Cat
+|Evolved Base HP = 2340
+|Evolved Base AP = 1190
+|Evolved Range = 320
+|Evolved Foreswing = 45
+|Evolved Attack Cooldown = 115
+|Evolved Attack Length = 101
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 2400
+|Evolved Recharge = 3600
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,840 HP
+|val-Normal-Attack Power = 840 damage<br>(157.5 DPS)
+|val-Normal-Attack Range = 320
+|val-Normal-Attack Frequency = 160f <sub>5.33 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 45f <sup>1.5s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Normal-Recharge Time = 120 ~ 111.2 seconds
+|val-Normal-MaxHP = 31,280 HP
+|val-Normal-MaxAttack = 14,280 damage<br>(2,677.5 DPS)
+|val-Evolved-Health = 39,780 HP
+|val-Evolved-Attack Power = 20,230 damage<br>(3,793.12 DPS)
+|val-Evolved-Attack Range = 320
+|val-Evolved-Attack Frequency = 160f <sub>5.33 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 45f <sup>1.5s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Evolved-Recharge Time = 120 ~ 111.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni207 f00}}
+
+==Trivia==
+*In the main Monster Hunter games, Rathian is a Flying Wyvern monster, its poisonous tail club is one of its main attacks, and it is referred to as the Queen of the Land, which may possibly explain its range difference from its similar counterpart, [[Rathalos (Special Cat)|Rathalos]].
+*Rathian's poisonous barbs are likely why they were given the Weaken ability in The Battle Cats, as Rathian was released before the conception of the Toxic ability.
+
+==Reference==
+*https://battlecats-db.com/unit/208.html
+
+----
+{{CatNav|Rathalos|Kirin Cat}}
+----
+
+{{Monster Hunter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]

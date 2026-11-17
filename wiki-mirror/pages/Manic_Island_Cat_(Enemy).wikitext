@@ -1,0 +1,68 @@
+:''For the Cat Unit, see [[Crazed Fish Cat (Super Rare Cat)]]. For the weaker boss that must be beaten first, see [[Crazed Fish Cat (Enemy)]].''
+'''Manic Island Cat''' (大狂乱のネコ島 ''Dai Kyōran no Neko Shima'', '''Insane Island Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy found in [[Ogre Island (Deadly)|Fish Maniac]]. It was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Manic Island Cat
+|image = E 248.png
+|appearance = [[Ogre Island (Deadly)|Fish Maniac]]
+[[Infernal Tower/Floor 35|Infernal Tower - Floor 35]]
+|money drop = 520¢ - 2,054¢
+}}
+
+==Enemy==
+This enemy has mediocre health and insane DPS, so you have to treat it like a less durable [[R.Ost]] with only 1 knockback but more DPS. You'll have to deploy many meatshields and rangers when warding them off. This enemy's biggest weaknesses lie in its low range and speed.
+
+==Strategy==
+Due to Manic Island Cat's high DPS but somewhat low-ish health, the best way to deal with it is to spam [[:Category:Area Attack Cats|Area Attackers]] that can outrange it like [[Salon Cat (Rare Cat)|Cyborg Cat]] or [[Figure Skating Cats (Super Rare Cat)|Drama/Slapsticks Cats]]. It will still probably advance and kill some of your stack, but killing a stack of these will allow you to recover your losses and spam more of them.
+
+[[Ogre Island (Deadly)|Ogre Island]] is the first stage in which Manic Island Cat appears in, which has a [[Berserkory]] in it. Naturally, any ranged [[:Category:Wave Shield Cats|Wave Shield]] units are optimal, namely [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku: MM2020 Tokyo]] or [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]]. Because of the Manic Island's extreme DPS at close range, [[Octopus Cat]] will be unable to consistently block Berserkory's waves.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Fish Maniac: [[Ogre Island (Deadly)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 35|Floor 35]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manic Island Cat
+|Health = 227000
+|Attack Power = 10200
+|Attack Range = 260
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 6
+|Knockback = 1
+|Foreswing = 10
+|Backswing = 8
+|Ability = {{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+248 e.png|Manic Island Cat's spritesheet
+IdleManicIsland.gif|Manic Island Cat's moving animation
+</gallery>
+
+==Trivia==
+*Along with its [[Crazed Fish Cat (Enemy)|Crazed counterpart]], Manic Island Cat has the lowest [[Critical Hit|Critical]] chance of all enemies.
+
+==Reference==
+*https://battlecats-db.com/enemy/250.html
+
+----
+{{EnemyNav|Manic Flying Cat|Manic King Dragon}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Critical Hit Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]

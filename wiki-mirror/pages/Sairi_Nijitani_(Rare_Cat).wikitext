@@ -1,0 +1,127 @@
+:''For the enemy encountered in the [[Power Pro Baseball Collaboration Event]], see [[Sairi Nijitani (Enemy)]].''
+'''Sairi Nijitani''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 6.8 Update|Version 6.8]] and is exclusive to the [[Power Pro Baseball Collaboration Event]]. It is acquired after beating the [[Power Pro Baseball Collaboration Event#Date Chance: Sairi|Date Chance: Sairi Stages]].
+
+{{Cat Info
+|ID = 386
+|rarity = RR
+|name1 = Sairi Nijitani
+|name2 = Sairi Nijitani CC
+}}
+
+==Evolution==
+Evolves into '''Sairi Nijitani CC''' at level 10.
+
+==Strategy/Usage==
+While her 50% [[Weaken|weaken]] effect is solid, she has a very long recharge time with Single Target. Like [[Stilts Cat (Rare Cat)|Stilts Cat]], she is only useful for fighting single bosses that have low range like [[Boraphim]] and [[Angelic Gory]]. However, since many Angels have high enough attack power to render the weaken effect negligible, Sairi is rarely helpful, and can be replaced by [[Bishop Cat (Rare Cat)|Sanzo Cat]] once he is [[Talents|Talented]].
+
+Notably, she has Single Target in all forms, which renders her useless against hordes of enemies.
+
+{{Job|Classification=Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 386
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni386 f00.png
+|Image2 = Uni386 c00.png
+|Name1 = Sairi Nijitani
+|Desc1 = Dropping in from PowerPro Baseball!<br>Blesses all players with her maternal care.<br>Chance to weaken Angel enemies.
+|Name2 = Sairi Nijitani CC
+|Desc2 = Dropping in from PowerPro Baseball!<br>Always puts others' needs before her own.<br>Chance to weaken Angel enemies.
+|Name1 (JP) = 虹谷彩理 (Nijitani Sairi, Sairi Nijitani)
+|Desc1 (JP) = 実況パワフルプロ野球から参戦！<br>慈愛と母性に満ちたマネージャー<br>たまに天使の攻撃力をダウンさせる
+|Transl1 (JP) = Entered from Powerful Pro Baseball Live!<br>A manager filled with compassion and motherly love!<br>Occasionally downgrades the attack power of angels
+|Name2 (JP) = 虹谷彩理CC (Nijitani SairiCC, Sairi NijitaniCC)
+|Desc2 (JP) = 実況パワフルプロ野球から参戦！<br>自分より他人の世話を優先してしまいがち<br>たまに天使の攻撃力をダウンさせる
+|Transl2 (JP) = Entered from Powerful Pro Baseball Live!<br>Tends to prioritize taking care of others over herself.<br>Occasionally downgrades the attack power of angels
+|Name1 (TW) = 虹谷彩理
+|Desc1 (TW) = 來自實況野球的新人物！<br>散發母性慈愛的球隊經理<br>有時候會讓天使敵人的攻擊力下降
+|Name2 (TW) = 虹谷彩理CC
+|Desc2 (TW) = 來自實況野球的新人物！<br>總是先替他人著想<br>有時候會讓天使敵人的攻擊力下降
+|Name1 (KR) = 니지타니 사이리
+|Desc1 (KR) = 실황 파워풀 프로야구에서 참전!<br>자애와 모성이 넘치는 매니저<br>가끔씩 천사의 공격력을 다운시킨다
+|Name2 (KR) = 니지타니 사이리CC
+|Desc2 (KR) = 실황 파워풀 프로야구에서 참전!<br>자기 자신보다는 남을 더 챙기는 경향이 있다<br>가끔씩 천사의 공격력을 다운시킨다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sairi Nijitani
+|Normal Base HP = 450
+|Normal Base AP = 45
+|Normal Range = 340
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 93
+|Normal Attack Length = 55
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 720
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = Sairi Nijitani CC
+|Evolved Base HP = 450
+|Evolved Base AP = 45
+|Evolved Range = 340
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 93
+|Evolved Attack Length = 55
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 720
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 45 damage<br>(12.27 DPS)
+|val-Normal-Attack Range = 340
+|val-Normal-Attack Frequency = 110f <sub>3.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Normal-Recharge Time = 24 ~ 15.2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 765 damage<br>(208.64 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 765 damage<br>(208.64 DPS)
+|val-Evolved-Attack Range = 340
+|val-Evolved-Attack Frequency = 110f <sub>3.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Evolved-Recharge Time = 24 ~ 15.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni386 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/387.html
+
+----
+{{CatNav|Akio Yabe|Misaki Konno}}
+----
+
+{{Power Pro Baseball}}
+{{Cats}}
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cat Units]]
+[[Category:Rare Cats]]

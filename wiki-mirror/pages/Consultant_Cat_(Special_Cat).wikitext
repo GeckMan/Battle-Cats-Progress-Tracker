@@ -1,0 +1,130 @@
+'''Consultant Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Summer Break Cats Paradise (Event Gacha)|Summer Break Cats Paradise Event Gacha]]. He was added in [[Version 14.6 Update|Version 14.6]].
+
+{{Cat Info
+|ID = 822
+|rarity = EX
+|name1 = Consultant Cat
+|name2 = Business Partner Cat
+}}
+
+==Evolution==
+Evolves into '''Business Partner Cat''' at level 10.
+
+==Strategy/Usage==
+A decently spammable [[:Category:Anti-Metal Cats|anti-Metal]] DPS and crowd controller, boasting the [[Metal Killer]] ability, this time taking 10% of a [[:Category:Metal Enemies|Metal]] enemy's current HP every hit. His attack rate and standing range lets him comfortably outrange and reliably damage almost every relevant Metal enemy in the game, from [[Metal Cyclone]] to [[Sir Metal Seal]].
+
+There are a few things to note, however: his [[Single Attack]] causes him to struggle immensely in mixed (or just generally spammy) stages; while he does outrange most Metals, his standing range is not very high, and his HP means he cannot tank any amount of damage whatsoever, giving him horrible survivability; [[Money Up]] is almost cosmetic, due to the nature of the Metal Killer ability only ever taking 10% of a target's '''current HP''', he will typically not be landing the final blow unless deliberately set up. Regardless, he remains a valuable asset for {{4c}} stages, but should never be your main source of Metal DPS in a stage.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 822
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni822 f00.png
+|Image2 = Uni822 c00.png
+|Name1 = Consultant Cat
+|Desc1 = The savior of countless business ventures, they have no<br>equal when it comes to bringing profit and success to a<br>company. Metal Killer, may Slow Metal enemies.
+|Name2 = Business Partner Cat
+|Desc2 = Has no equal when it comes to maximizing profit and<br>minimizing losses by any means necessary.<br>Metal Killer, may Slow Metal enemies.
+|Name1 (JP) = ネココンサルタント (Neko Konsarutanto, Consultant Cat)
+|Desc1 (JP) = 数々の事業を成功させた実績を持つと噂のビジネスマン<br>利益計算と立ち回りの早さで右に出る者はいない<br>メタルキラーを持ち、たまにメタルな敵を遅くする
+|Transl1 (JP) = A businessman who is rumored to have a track record of success in many businesses<br>No one can match his speed of profit calculation and tactical maneuvers<br>Has Metal Killer, occasionally slows Metal enemies
+|Name2 (JP) = ネコビジネスパートナー (Neko Bijinesu Pātonā, Business Partner Cat)
+|Desc2 (JP) = お金儲けのためなら手段を選ばないと噂のビジネスマン<br>損得勘定と変わり身の早さで右に出る者はいない<br>メタルキラーを持ち、たまにメタルな敵を遅くする
+|Transl2 (JP) = A businessman who is rumored to use any means necessary to make money<br>No one can match his speed of gain-and-loss calculation and adaptability<br>Has Metal Killer, occasionally slows Metal enemies
+|Name1 (TW) = 顧問貓
+|Desc1 (TW) = 據說是成功經手許多事業的商界人士<br>計算盈虧及靈機應變的速度可是無人能及<br>有鋼鐵殺手能力，有時候能使鋼鐵敵人動作變慢
+|Name2 (TW) = 經營夥伴貓
+|Desc2 (TW) = 據說是為了賺錢而不擇手段的商業人士<br>計算得失和見風轉舵的速度可是無人能及<br>有鋼鐵殺手能力，有時候能使鋼鐵敵人動作變慢
+|Name1 (KR) = 고양이 컨설턴트
+|Desc1 (KR) = 여러 사업을 성공시킨 경험이 있다고 하는 비즈니스맨<br>이익 계산과 임기응변에 있어서는 따라올 자가 없다<br>메탈 킬러 능력을 가지고 가끔 메탈 적을 느리게 한다
+|Name2 (KR) = 고양이 비즈니스 파트너
+|Desc2 (KR) = 돈벌이를 위해서는 수단을 가리지 않는다는 비즈니스맨<br>이해타산과 배임 행위에 있어서는 따라올 자가 없다<br>메탈 킬러 능력을 가지고 가끔 메탈 적을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 460¢
+*Chapter 2: 690¢
+*Chapter 3: 920¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Consultant Cat
+|Normal Base HP = 580
+|Normal Base AP = 90
+|Normal Range = 250
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 65
+|Normal Attack Length = 46
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 460
+|Normal Recharge = 800
+|Normal Attack Type = Single
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies<br>
+{{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 10% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Evolved Name = Business Partner Cat
+|Evolved Base HP = 720
+|Evolved Base AP = 115
+|Evolved Range = 250
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 65
+|Evolved Attack Length = 46
+|Evolved Speed = 16
+|Evolved KB = 3
+|Evolved Cost = 460
+|Evolved Recharge = 800
+|Evolved Attack Type = Single
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies<br>
+{{AbilityIcon|Metal Killer}} [[Metal Killer]] (Deals 10% of [[:Category:Metal Enemies|Metal]] enemies' current HP on hit)
+|Lv.MAX = Lv.50+15
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 580 HP
+|val-Normal-Attack Power = 90 damage<br>(32.53 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 9,860 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(553.01 DPS)
+|val-Evolved-Health = 12,240 HP
+|val-Evolved-Attack Power = 1,955 damage<br>(706.63 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Evolved-Recharge Time = 26.67 ~ 17.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni822 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/823.html
+
+----
+{{CatNav|Seaside Pegasa|Manager Cat & Clerk Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Metal Killer Cats]]
+[[Category:Cats with Money Up ability]]
+[[Category:Cats with Slow ability]]

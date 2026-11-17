@@ -1,0 +1,132 @@
+'''Ukyo Kuonji (GR)''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. She was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 602
+|rarity = SR
+|name1 = Ukyo Kuonji (GR)
+|name2 = Ukyo Kuonji
+}}
+
+==Evolution==
+Evolves into '''Ukyo Kuonji''' at level 10.
+
+==Strategy/Usage==
+This cat is best used as a crowd controller for groups of metal enemies, as, despite the low attack rate and long cooldown, she can still affect the whole swarm, possibly making the difference between them getting through your defenses or not. See the critical hit chance as nothing more than a small bonus. Her Knockback Immunity is concerning, as it prevents her from repositioning from [[Super Metal Hippoe]]'s knockback effect.
+
+If the threat is a single, powerful metal enemy, however, this unit becomes outclassed by [[Drumcorps Cat (Rare Cat)|Drumcorps Cat]], making the latter the better option, thanks to having the same ability, but better cooldown and attack rate.
+
+{{Job|Classification = Crowd-Controller & Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 602
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni602 f00.png
+|Image2 = Uni602 c00.png
+|Name1 = Ukyo Kuonji (GR)
+|Desc1 = Joining from "Ranma 1/2"! Ranma's OTHER<br>fiancee, a commanding fighter (with a girlish heart).<br>Chance to Weaken Metal, might Critical.
+|Name2 = Ukyo Kuonji
+|Desc2 = Joining from "Ranma 1/2"! Polished her fighting<br>skills cooking okonomiyaki at her shop.<br>Chance to Weaken Metal, might Critical.
+|Name1 (JP) = 久遠寺右京(男装) (Kuonji Ukyō （Dansō）, Ukyo Kuonji (Men's Clothing))
+|Desc1 (JP) = 『らんま1/2』より参戦！らんまのもう一人の許嫁<br>男勝りな性格だが、時折女の子らしい一面も<br>たまにメタルな敵の攻撃力を下げ、ごくたまにクリティカル
+|Transl1 (JP) = Joining the war from Ranma 1/2! Ranma's other ex-wife<br>She has a masculine personality, but also has a girlish side at times<br>Occasionally lowers the attack power of Metal Enemies, and only occasionally critical
+|Name2 (JP) = 久遠寺右京 (Kuonji Ukyō, Ukyo Kuonji)
+|Desc2 (JP) = 『らんま1/2』より参戦！子供の頃からお好み焼きを武術とし<br>特訓してきた。お好み焼き屋「うっちゃん」を営む<br>たまにメタルな敵の攻撃力を下げ、ごくたまにクリティカル
+|Transl2 (JP) = Joining the war from Ranma 1/2! She has been training Okonomiyaki as a martial art since she was a child.<br> She runs the okonomiyaki shop "Ucchan"<br>Occasionally lowers the attack power of Metal Enemies, and only occasionally critical
+|Name1 (TW) = 久遠寺右京(男裝)
+|Desc1 (TW) = 從「亂馬1/2」來參戰！亂馬的另一位未婚妻。<br>個性比較像男孩但有偶爾也會露出女孩的一面。<br>有時候能使鋼鐵敵攻擊力下降，偶爾使出會心一擊
+|Name2 (TW) = 久遠寺右京
+|Desc2 (TW) = 從「亂馬1/2」來參戰！從小以大阪燒為武術<br>特訓過來的。經營大阪燒店。<br>有時候能使鋼鐵敵攻擊力下降，偶爾使出會心一擊
+|Name1 (KR) = 쿠온지 우쿄(남장)
+|Desc1 (KR) = 『란마 1/2』에서 참전! 란마의 또 다른 약혼자.<br>남자다운 성격이지만 때때로 여자다운 모습도.<br>가끔 메탈 적의 공격력을 낮추고 아주 가끔 크리티컬
+|Name2 (KR) = 쿠온지 우쿄
+|Desc2 (KR) = 『란마 1/2』에서 참전! 어렸을 때부터 오코노미야키를 무술로<br>하여 특훈을 해왔다. 오코노미야키 가게를 운영 중.<br>가끔 메탈 적의 공격력을 낮추고 아주 가끔 크리티컬
+}}
+
+==Cost==
+*Chapter 1: 760¢
+*Chapter 2: 1,140¢
+*Chapter 3: 1,520¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ukyo Kuonji (GR)
+|Normal Base HP = 1500
+|Normal Base AP = 600
+|Normal Range = 275
+|Normal Foreswing = 44
+|Normal Attack Cooldown = 149
+|Normal Attack Length = 75
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 760
+|Normal Recharge = 840
+|Normal Attack Type = Area
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Evolved Name = Ukyo Kuonji
+|Evolved Base HP = 1500
+|Evolved Base AP = 600
+|Evolved Range = 275
+|Evolved Foreswing = 44
+|Evolved Attack Cooldown = 149
+|Evolved Attack Length = 75
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 760
+|Evolved Recharge = 840
+|Evolved Attack Type = Area
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 600 damage<br>(93.26 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 193f <sub>6.43 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 44f <sup>1.47s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 28 ~ 19.2 seconds
+|val-Normal-MaxHP = 25,500 HP
+|val-Normal-MaxAttack = 10,200 damage<br>(1,585.49 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 10,200 damage<br>(1,585.49 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 193f <sub>6.43 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 44f <sup>1.47s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 28 ~ 19.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni602 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/603.html
+
+----
+{{CatNav|Happosai|Tatewaki Kuno (Gi)}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Critical Hit Cats]]
+[[Category:Cats with Knockback Immunity]]

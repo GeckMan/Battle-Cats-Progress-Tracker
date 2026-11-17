@@ -1,0 +1,139 @@
+:''For other uses, see [[Vega (disambiguation)]].''
+'''Vega''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Cat Capsules]] during [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 573
+|rarity = UR
+|name1 = Vega
+|name2 = Vega CC
+}}
+
+==Evolution==
+Evolves into '''Vega CC''' at level 10.
+
+==Strategy/Usage==
+Vega is an Uber Rare that freezes [[:Category:Metal Enemies|Metal]] enemies and sometimes delivers a [[Critical Hit]]. At first glance with his 100% freeze rate, 30% Critical chance and Long Distance ability, this unit may seem a very good [[:Category:Anti-Metal Cats|anti-Metal cat]] but it's not quite the case. Simply put, Long Distance has the purpose of making units good against backliners like [[Master A.]] as it allows them to pierce beyond the enemy frontline. This is however useless for Vega because no Metal backliners exist, meaning that only the negative aspect of him having a blind spot remains. On the bright side, his high knockback count nullifies this a bit.
+
+This also means that without the support of good crowd-controllers such as the drops from the [[:Category:Cyclone Stages|Cyclone Stages]], Vega will only be able to hit his targets at most a couple times before they get too close. Additionally, his critical hit rate of 30% is not high enough to be relied upon without adequate protection.
+
+Outside of his Metal niche, Vega is barely usable but not recommended, as his awful DPS usually prevents him from being worth bringing along.
+
+{{Job|Classification = Critter & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 573
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni573 f00.png
+|Image2 = Uni573 c00.png
+|Name1 = Vega
+|Desc1 = Joining the fight from Street Fighter V!<br>A pure narcissist who strives to fight beautifully.<br>Freezes Metal, Long-Range Strikes might Critical!
+|Name2 = Vega CC
+|Desc2 = Joining the fight from Street Fighter V!<br>Dance with death using a "Flying Barcelona Attack"<br>Freezes Metal, Long-Range Strikes might Critical!
+|Name1 (JP) = バルログ (Barurogu, Balrog)
+|Desc1 (JP) = ストリートファイターVから参戦！<br>「美」こそ最上のものと信じるナルシスト<br>メタルな敵の動きを止め、たまにクリティカル(遠方範囲)
+|Transl1 (JP) = Joining the war from Street Fighter V!<br>A narcissist who believes that "beauty" is supreme!<br>Stops the movement of Metal enemies, occasionally Criticals (Long Distance)
+|Name2 (JP) = バルログCC (BaruroguCC, Balrog CC)
+|Desc2 (JP) = ストリートファイターVから参戦！<br>「フライングバルセロナアタック」で華麗に舞う<br>メタルな敵の動きを止め、たまにクリティカル(遠方範囲)
+|Transl2 (JP) = Joining the war from Street Fighter V!<br>Dances brilliantly during his "Flying Barcelona Attack".<br>Stops the movement of Metal enemies, occasionally Criticals (Long Distance)
+|Name1 (TW) = 巴洛克
+|Desc1 (TW) = 從快打旋風V來參戰！<br>視「美」為絕對的華麗自戀貴公子<br>使鋼鐵敵人動作停止，有時候可會心一擊(遠距範圍)
+|Name2 (TW) = 巴洛克CC
+|Desc2 (TW) = 從快打旋風V來參戰！<br>華麗揮舞「巴塞隆納飛行攻擊」<br>使鋼鐵敵人動作停止，有時候可會心一擊(遠距範圍)
+|Name1 (KR) = 발로그
+|Desc1 (KR) = 스트리트 파이터V에서 참전!<br>아름다움이야말로 최고라 믿는 나르시스트<br>메탈 적의 움직임을 멈추고 가끔 크리티컬 (원거리 범위공격)
+|Name2 (KR) = 발로그CC
+|Desc2 (KR) = 스트리트 파이터V에서 참전!<br>플라잉 바르셀로나 어택으로 화려하게 춤춘다<br>메탈 적의 움직임을 멈추고 가끔 크리티컬 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 2,700¢
+*Chapter 2: 4,050¢
+*Chapter 3: 5,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Vega
+|Normal Base HP = 2500
+|Normal Base AP = 600
+|Normal Range = 450
+|Normal Foreswing = 48
+|Normal Attack Cooldown = 127
+|Normal Attack Length = 106
+|Normal Speed = 25
+|Normal KB = 5
+|Normal Cost = 2700
+|Normal Recharge = 4200
+|Normal Attack Type = Area
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 350~800)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Critical}} 30% chance to perform a [[Critical Hit]]
+|Evolved Name = Vega CC
+|Evolved Base HP = 2500
+|Evolved Base AP = 600
+|Evolved Range = 450
+|Evolved Foreswing = 48
+|Evolved Attack Cooldown = 127
+|Evolved Attack Length = 106
+|Evolved Speed = 25
+|Evolved KB = 5
+|Evolved Cost = 2700
+|Evolved Recharge = 4200
+|Evolved Attack Type = Area
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 350~800)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Critical}} 30% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,500 HP
+|val-Normal-Attack Power = 600 damage<br>(102.86 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 175f <sub>5.83 seconds</sub>
+|val-Normal-Movement Speed = 25
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 48f <sup>1.6s</sup><br>(58f <sup>1.93s</sup> backswing)
+|val-Normal-Recharge Time = 140 ~ 131.2 seconds
+|val-Normal-MaxHP = 42,500 HP
+|val-Normal-MaxAttack = 10,200 damage<br>(1,748.57 DPS)
+|val-Evolved-Health = 42,500 HP
+|val-Evolved-Attack Power = 10,200 damage<br>(1,748.57 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 175f <sub>5.83 seconds</sub>
+|val-Evolved-Movement Speed = 25
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 48f <sup>1.6s</sup><br>(58f <sup>1.93s</sup> backswing)
+|val-Evolved-Recharge Time = 140 ~ 131.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni573 f00}}
+
+==Trivia==
+*In Japan, and by extension [[Nyanko Daisensou|Nyanko Daisensou]], this Fighter is instead known as [[Balrog (Uber Rare Cat)|Balrog]], while Vega's name was originally assigned to [[M. Bison (Uber Rare Cat)|M. Bison]].
+** This was likely done proactively when localizing Street Fighter II to avoid legal trouble from real life boxer Mike Tyson's legal team, though perhaps they say Bison's original name as not threatening enough to western players, and more fitting for the ego-drunk fighter.
+*** The title "Boxer" ([[Balrog (Uber Rare Cat)|Balrog]]), "Claw" (Vega) and "Dictator" ([[M. Bison (Uber Rare Cat)|M. Bison]]) have been adopted to not cause confusion when referring to these three Shadaloo leaders between Japanese and international players.
+
+==Reference==
+*https://battlecats-db.com/unit/574.html
+
+----
+{{CatNav|Balrog|Sagat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Critical Hit Cats]]

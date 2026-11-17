@@ -1,0 +1,141 @@
+'''EVA Unit-08''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event|Evangelion Collaboration Event]]. It was added in [[Version 8.7 Update#Update 8.7.5|Version 8.7.5]].
+
+{{Cat Info
+|ID = 487
+|rarity = UR
+|name1 = EVA Unit-08
+|name2 = EVA Unit-08 & Cat
+}}
+
+==Evolution==
+Evolves into '''EVA Unit-08 & Cat''' at level 10.
+
+==Strategy/Usage==
+EVA Unit-08's debuffs are unreliable if you want one specific debuff, but with multi-hit attack and 20% of chance of either freeze, weaken or knockback makes it a good [[:Category:Anti-Floating Cats|anti-Floating]] unit regardless. Its knockback is a double-edged sword, as while it is useful against most Floating enemies, it can be bad when there are strong backliners in a stage. EVA Unit-08 pushing too much will make it a easy target for backline enemies, so you will have to use it wisely.
+
+As with any [[:Category:Long Distance Cats|Long Distance Cat]], a viable strategy in some stages is to stack EVA Unit-08s at the beginning and let them all loose once you have the desired amount; even the toughest Floating enemies won't stand much of a chance against 2 or 3 EVA-08s stacked. Take note that this strategy will work only if the initial peons are weak ones like [[Doge]]s or [[Those Guys]].
+
+{{Job|Classification = Sniper & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 487
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni487 f00.png
+|Image2 = Uni487 c00.png
+|Name1 = EVA Unit-08
+|Desc1 = Recruited from EVANGELION!<br>Anti-NERV production model maintained by WILLE.<br>Long-range debuffs versus Floating enemies!
+|Name2 = EVA Unit-08 & Cat
+|Desc2 = Recruited from EVANGELION! Wields a variety<br>of weapons but specializes in providing cover fire.<br>Long-range debuffs versus Floating enemies!
+|Name1 (JP) = エヴァ８号機 (Eva 8 Gō-ki, Eva Unit 8)
+|Desc1 (JP) = エヴァンゲリオンから参戦！<br>反ネルフ組織であるヴィレが改修・運用する機体<br>浮いてる敵に3種の妨害効果をたまに発揮する(遠方範囲)
+|Transl1 (JP) = Joining from Evangelion!<br>A unit used and maintained by WILLE, an anti-NERV organization<br>Occasionally inflicts 3 types of interference effects to Floating enemies
+|Name2 (JP) = エヴァ８号機&ネコ (Eva 8 Gō-ki & Neko, Eva Unit 8 & Cat)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>様々な銃器を使いこなし、援護射撃を得意とする<br>浮いてる敵に3種の妨害効果をたまに発揮する(遠方範囲)
+|Transl2 (JP) = Joining from Evangelion!<br>Utilizes various firearms, is suited for backup cover<br>Occasionally inflicts 3 types of interference effects to Floating enemies
+|Name1 (TW) = EVA8號機
+|Desc1 (TW) = 從新世紀福音戰士來參戰！<br>反NERV組織WILLE改造並且運用的機體<br>對上飄浮敵人的3種妨害效果有時候會發揮(遠距範圍)
+|Name2 (TW) = EVA8號機&貓咪
+|Desc2 (TW) = 從新世紀福音戰士來參戰！<br>能使用多種槍械並擅長援護射撃<br>對上飄浮敵人的3種妨害效果有時候會發揮(遠距範圍)
+|Name1 (KR) = 에바 8호기
+|Desc1 (KR) = 에반게리온에서 참전!<br>반NERV 조직의 빌레가 수리・ 운용하는 기체<br>공중에 있는 적에게 3가지 방해 효과를 가끔씩 발휘한다 (원거리 범위)
+|Name2 (KR) = 에바 8호기 & 고양이
+|Desc2 (KR) = 에반게리온에서 참전!<br>여러 가지 총기 사용에 능숙하며 원호 사격이 특기이다<br>공중에 있는 적에게 3가지 방해 효과를 가끔씩 발휘한다 (원거리 범위)
+}}
+
+==Cost==
+*Chapter 1: 3,050¢
+*Chapter 2: 4,575¢
+*Chapter 3: 6,100¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = EVA Unit-08
+|Normal Base HP = 3600
+|Normal Base AP = 640,640,640
+|Normal Range = 450
+|Normal Foreswing = 44,50,56
+|Normal Attack Cooldown = 183
+|Normal Attack Length = 106
+|Normal Speed = 13
+|Normal KB = 4
+|Normal Cost = 3050
+|Normal Recharge = 4600
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (10,880 at 44f <sup>1.47s</sup>, 10,880 at 50f <sup>1.67s</sup>, 10,880 at 56f <sup>1.87s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~700)<br>
+{{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Weaken}} 20% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)
+|Evolved Name = EVA Unit-08 & Cat
+|Evolved Base HP = 3600
+|Evolved Base AP = 640,640,640
+|Evolved Range = 450
+|Evolved Foreswing = 44,50,56
+|Evolved Attack Cooldown = 183
+|Evolved Attack Length = 106
+|Evolved Speed = 13
+|Evolved KB = 4
+|Evolved Cost = 3050
+|Evolved Recharge = 4600
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (10,880 at 44f <sup>1.47s</sup>, 10,880 at 50f <sup>1.67s</sup>, 10,880 at 56f <sup>1.87s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~700)<br>
+{{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Weaken}} 20% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 3,600 HP
+|val-Normal-Attack Power = 1,920 damage<br>(241 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 239f <sub>7.97 seconds</sub>
+|val-Normal-Movement Speed = 13
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 44f <sup>1.47s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 153.33 ~ 144.53 seconds
+|val-Normal-MaxHP = 61,200 HP
+|val-Normal-MaxAttack = 32,640 damage<br>(4,097.07 DPS)
+|val-Evolved-Health = 61,200 HP
+|val-Evolved-Attack Power = 32,640 damage<br>(4,097.07 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 239f <sub>7.97 seconds</sub>
+|val-Evolved-Movement Speed = 13
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 44f <sup>1.47s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 153.33 ~ 144.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni487 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/488.html
+
+----
+{{CatNav|Hina|AAA Wunder}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:EVA Angel Killer Cats]]

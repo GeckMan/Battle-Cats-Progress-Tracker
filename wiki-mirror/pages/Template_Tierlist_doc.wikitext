@@ -1,0 +1,343 @@
+{{Documentation}}
+As a note, please do not take any examples on this page as factual information about game content as they are solely for the purpose of demonstrating the usage of this template.
+
+==Basic Usage==
+This template is a profile template that is used for generating a tierlist. Its basic usage is simple and intuitive, only needing to state tier names and items in the tierlist with additional settings to make the tierlist more elaborate. For each tier, an argument containing " Tier" is passed such that the following items are included in that tier. Below is an example of a basic tierlist for Cats:
+
+<tabber>
+Source=
+<pre>
+{{Tierlist
+|S Tier
+|Cat|Tank Cat
+|A Tier
+|King Dragon Cat
+|B Tier
+|Axe Cat|Lion Cat|Mythical Titan Cat
+}}
+</pre>
+
+|-|Result=
+{{Tierlist
+|S Tier
+|Cat|Tank Cat
+|A Tier
+|King Dragon Cat
+|B Tier
+|Axe Cat|Lion Cat|Mythical Titan Cat
+}}
+</tabber>
+
+==Modes==
+The template has five different modes to deal with different items in the tierlist. They are <code>cat</code>, <code>enemy</code>, <code>image</code>, <code>text</code>, and <code>user</code>. The first was explained in the section above, requiring accurate Cat names to be typed as arguments. Similarly, the <code>enemy</code> mode takes enemy names and displays enemy icons. The other two modes, <code>image</code> and <code>text</code> directly include the inputs in the tierlist as wikitext. The difference between the two is that the former uses space as a separator and the latter uses a comma and a space as a separator. This is because each separator makes more sense with each usage (you wouldn't want to see commas with images). The final mode, <code>user</code>, takes usernames. The tabs below show examples for each mode.
+
+<tabber>
+cat=
+<pre>
+{{Tierlist
+|S Tier
+|Eraser Cat|Island Cat
+|A Tier
+|Mohawk Cat|Macho Leg Cat|King Dragon Cat
+}}
+</pre>
+===Result===
+{{Tierlist
+|S Tier
+|Eraser Cat|Island Cat
+|A Tier
+|Mohawk Cat|Macho Leg Cat|King Dragon Cat
+}}
+
+|-|enemy=
+<pre>
+{{Tierlist
+|SS Tier
+|Li'l Doge
+|S Tier
+|Doge|Snache
+|mode = enemy
+}}
+</pre>
+===Result===
+{{Tierlist
+|SS Tier
+|Li'l Doge
+|S Tier
+|Doge|Snache
+|mode = enemy
+}}
+
+|-|image=
+<pre>
+{{Tierlist
+|S Tier
+|[[File:Mapname000 nd en.png]]|[[File:Mapname048 na en.png{{!}}80px]]
+|A Tier
+|[[File:Medal 000.png]]
+|mode = image
+}}
+</pre>
+===Result===
+{{Tierlist
+|S Tier
+|[[File:Mapname000 nd en.png]]|[[File:Mapname048 na en.png{{!}}80px]]
+|A Tier
+|[[File:Medal 000.png]]
+|mode = image
+}}
+
+|-|text=
+<pre>
+{{Tierlist
+|S Tier
+|1729
+|A Tier
+|33550336
+|D Tier
+|7
+|mode = text
+}}
+</pre>
+
+===Result===
+{{Tierlist
+|S Tier
+|1729
+|A Tier
+|33550336
+|D Tier
+|7
+|mode = text
+}}
+
+|-|user=
+<pre>
+{{Tierlist
+|N/A Tier
+|SweetDonut0
+|mode = user
+}}
+</pre>
+
+===Result===
+{{Tierlist
+|N/A Tier
+|SweetDonut0
+|mode = user
+}}
+</tabber>
+
+==Parameters==
+Many parameters exist to make the tierlist customizable. Below are explanations of each:
+*<code>title</code> puts a title row on the top of the tierlist, the argument is directly used as the title.
+*<code>mode</code> specifies the mode for the tierlist, explained in the points below.
+**<code>mode = cat</code> displays icons for each cat specified by exact name. Differentiates forms.
+**<code>mode = enemy</code> displays enemy icons for each enemy specified by exact name.
+**<code>mode = image</code> displays images with regular wikitext separated by spaces.
+**<code>mode = text</code> displays wikitext separated by commas.
+**<code>mode = user</code> displays profile images and linked usernames.
+*<code>color</code> sets the color of the column for tier names.
+**<code>color = custom</code> allows any colors to be used from top to bottom in hex codes, if not enough colors are not supplied for all rows, default heading cell color is used for remaining rows.
+**<code>color = linear</code> puts a linear gradient between the two supplied colors (in hexadecimal) starting from the topmost row to the bottommost row.
+**<code>color = rainbow</code> automatically applies a gradient that makes the rows be in a rainbow with red at the top and magenta at the bottom.
+*<code>notier</code> removes the text " Tier" that is put in the heading cells for each tier. Inserting any text works, but it can't be empty. This parameter makes it possible to name the tiers to any text that doesn't include " Tier".
+*<code>normaltier</code> Disables the formatting done on tier names and makes them normal text when tiers have colors.
+*<code>size</code> scales images by the given factor in modes <code>cat</code> and <code>enemy</code>.
+*<code>separator</code> sets a custom separator for items in the tierlist in case something other than " " or ", " is wanted.
+*<code>textcolor</code> sets text color as some form of color that can be used in raw CSS (hexadecimal codes work).
+*<code>background</code> sets the color for the background of the right column for the items.
+*<code>titlecss</code> allows raw css for the title cell to be inserted.
+*<code>tablecss</code> allows raw css for the entire tierlist to be inserted.
+
+==Examples==
+Below are several example usages of the template:
+
+<tabber>
+Example 1=
+<pre>
+{{Tierlist
+|title = Normal Cat Tierlist
+|S Tier
+|Eraser Cat|Island Cat
+|A Tier
+|Mohawk Cat|Macho Leg Cat|King Dragon Cat
+}}
+</pre>
+===Result===
+{{Tierlist
+|title = Normal Cat Tierlist
+|S Tier
+|Eraser Cat|Island Cat
+|A Tier
+|Mohawk Cat|Macho Leg Cat|King Dragon Cat
+}}
+
+|-|Example 2=
+<pre>
+{{Tierlist
+|SS Tier
+|Li'l Cat
+|S Tier
+|Li'l Cat
+|A+ Tier
+|Li'l Cat
+|A Tier
+|Li'l Cat
+|B Tier
+|Li'l Cat
+|C Tier
+|Li'l Cat
+|D Tier
+|Li'l Cat
+|Li'l Tier
+|Li'l Cat
+|color = rainbow
+|size = 0.4
+|normaltier = on
+}}
+</pre>
+===Result===
+{{Tierlist
+|SS Tier
+|Li'l Cat
+|S Tier
+|Li'l Cat
+|A+ Tier
+|Li'l Cat
+|A Tier
+|Li'l Cat
+|B Tier
+|Li'l Cat
+|C Tier
+|Li'l Cat
+|D Tier
+|Li'l Cat
+|Li'l Tier
+|Li'l Cat
+|color = rainbow
+|size = 0.4
+|normaltier = on
+}}
+
+|-|Example 3=
+<pre>
+{{Tierlist
+|SS Tier
+|Li'l Cat
+|S Tier
+|Li'l Cat
+|A+ Tier
+|Li'l Cat
+|A Tier
+|Li'l Cat
+|B Tier
+|Li'l Cat
+|C Tier
+|Li'l Cat
+|D Tier
+|Li'l Cat
+|Li'l Tier
+|Li'l Cat
+|color = linear #FC6663 #87CDEE
+|size = 0.4
+}}
+</pre>
+===Result===
+{{Tierlist
+|SS Tier
+|Li'l Cat
+|S Tier
+|Li'l Cat
+|A+ Tier
+|Li'l Cat
+|A Tier
+|Li'l Cat
+|B Tier
+|Li'l Cat
+|C Tier
+|Li'l Cat
+|D Tier
+|Li'l Cat
+|Li'l Tier
+|Li'l Cat
+|color = linear #FC6663 #87CDEE
+|size = 0.4
+}}
+
+|-|Example 4=
+<pre>
+{{Tierlist
+|SS Tier
+|Li'l Doge
+|S Tier
+|Doge|Snache
+|mode = enemy
+}}
+</pre>
+===Result===
+{{Tierlist
+|SS Tier
+|Li'l Doge
+|S Tier
+|Doge|Snache
+|mode = enemy
+}}
+
+|-|Example 5=
+<pre>
+{{Tierlist
+|title = Some Integers
+|Taxicab Number Tier
+|1729
+|Perfect Number Tier
+|33550336
+|Single Digit Prime Tier
+|7
+|mode = text
+|color = custom #ffbcde #bcffde #bcdeff
+|notier = on
+|normaltier = on
+|background = none
+}}
+</pre>
+===Result===
+{{Tierlist
+|title = Some Integers
+|Taxicab Number Tier
+|1729
+|Perfect Number Tier
+|33550336
+|Single Digit Prime Tier
+|7
+|mode = text
+|color = custom #ffbcde #bcffde #bcdeff
+|notier = on
+|normaltier = on
+|background = none
+}}
+
+|-|Example 6=
+<pre>
+{{Tierlist
+|title = My Tierlist
+|Creator of this Template Tier
+|SweetDonut0
+|mode = user
+|notier = on
+|background = none
+}}
+</pre>
+===Result===
+{{Tierlist
+|title = My Tierlist
+|Creator of this Template Tier
+|SweetDonut0
+|mode = user
+|notier = on
+|background = none
+}}
+</tabber>
+<includeonly>
+[[Category:Cosmetic templates]]
+</includeonly>

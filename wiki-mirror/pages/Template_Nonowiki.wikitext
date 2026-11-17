@@ -1,0 +1,3 @@
+<includeonly><onlyinclude>{{#invoke:LuaWrapper|unstripnowiki|{{{1|}}}}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+{{Nonowiki|<nowiki>{{Usage}}</nowiki>}}

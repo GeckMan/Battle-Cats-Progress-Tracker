@@ -1,0 +1,26 @@
+{{Documentation}}
+This template is used to display the enemies appearing in a stage, for use at the top of a page below other templates, if any.
+
+==How to Use==
+*Using the information from the stage's battleground data and write out the enemies in order.
+**Click on the [https://battlecats-db.com/ DB] link on the bottom of the page if you do not have this readily available.
+*Do not include the trait or magnification of each enemy in the template.
+*Do not include [[Ms. Sign]].
+*Visit [[Module:Enemies.csv|here]] for a list of usable enemies if you get [[:Category:Pages with script errors|script errors]] or if you are unsure about an enemy name.
+
+==Example Usage==
+===Stage Info===
+{{Magnification|Doge|0
+|Snache|0
+|Pigge|0
+|Midnite D.|0}}
+
+===Written like this===
+<pre>
+{{EnemiesAppearing|Doge|Snache|Pigge|Midnite D.}}
+</pre>
+
+===Result===
+{{EnemiesAppearing|Doge|Snache|Pigge|Midnite D.}}
+
+[[Category:Content templates]]

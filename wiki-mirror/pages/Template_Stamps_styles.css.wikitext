@@ -1,0 +1,28 @@
+.login-stamps {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.login-stamps > div {
+	background: #f9bd00;
+	width: 125px;
+	height: 125px;
+	border: solid black 3px;
+	box-shadow: 3px 3px 2px #c1bcb5, inset 2px 2px 1px #f7dc6e, inset -2px -2px 1px #694701;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+}
+.login-stamps > div img {
+	position: relative;
+	top: 8px;
+	box-shadow: -1px -1px 1px #694701, 1px 1px 1px #e4e29b;
+	overflow: hidden;
+	max-width: 99px !important;
+	max-height: 66px !important;
+}
+
+/* [[Category:Template stylesheets]] */

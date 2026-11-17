@@ -1,0 +1,230 @@
+{{StrategyNeeded}}
+<tabber>
+Cultural Exchange Lv.1~5=
+{{EnemiesAppearing|South Seas Doge|Jackie Peng|Hippoe|South Seas Otter}}
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn072 00 a en.png]]
+|stage location = [[File:Mapname072 a en.png]]
+|enemies = {{Magnification|South Seas Doge|0
+|Jackie Peng|0
+|Hippoe|0}}
+|boss = {{Magnification|South Seas Otter|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = Cultural Exchange Lv.X
+|script = 異文化交流 Lv.X
+|romaji = Ibunka Kōryū Lv.X
+|star = 1
+|event-chapter = [[Island Defenders!]]
+|max clears = 3
+}}
+
+==Battleground==
+*4 [[South Seas Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*1 [[Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[South Seas Otter]] spawns as the boss.
+**2 [[South Seas Doge]]s spawn, delay 2 seconds<sup>60f</sup>.
+**Infinite [[South Seas Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**2 [[Jackie Peng]]s spawn after 6.67 seconds<sup>200f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+**2 [[Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Cultural Exchange Lv.
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[South Seas Doge]]
+! scope="col" |[[Jackie Peng]]
+! scope="col" |[[Hippoe]]
+! scope="col" |[[South Seas Otter]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|100%
+|5,000 HP
+|30
+|50,000 XP
+|900 XP
+|-
+! scope="row" |2
+|575%
+|375%
+|375%
+|400%
+|54,000 HP
+|40
+|100,000 XP
+|1,200 XP
+|-
+! scope="row" |3
+|1,050%
+|650%
+|650%
+|1,200%
+|100,000 HP
+|50
+|[[Cat Capsule|Cat Ticket]] +1
+|1,500 XP
+|-
+! scope="row" |4
+|1,525%
+|925%
+|925%
+|2,200%
+|150,000 HP
+|60
+|250,000 XP
+|1,800 XP
+|-
+! scope="row" |5
+|2,000%
+|1,200%
+|1,200%
+|4,500%
+|200,000 HP
+|70
+|500,000 XP
+|2,100 XP
+|}
+
+==Strategy==
+-
+
+|-|
+Cultural Exchange Lv.6~10=
+{{EnemiesAppearing|South Seas Doge|Doge Dark|Helmut Krabbe|Gory Dark|Ursamajor|South Seas Otter}}
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn072 00 a en.png]]
+|stage location = [[File:Mapname072 a en.png]]
+|enemies = {{Magnification|South Seas Doge|0
+|Doge Dark|0
+|Helmut Krabbe|0
+|Gory Dark|0
+|Ursamajor|0}}
+|boss = {{Magnification|South Seas Otter|0}}
+|restriction = [[No Continues]]
+|width = 5,500
+|max enemies = 20
+|jpname = Cultural Exchange Lv.X
+|script = 異文化交流 Lv.X
+|romaji = Ibunka Kōryū Lv.X
+|star = 1
+|event-chapter = [[Island Defenders!]]
+|max clears = 3
+}}
+
+==Battleground==
+*Infinite [[South Seas Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*6 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+*6 [[Doge Dark]]s spawn after 57.33 seconds<sup>1,720f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+*3 [[Helmut Krabbe]]s spawn after 16.67 seconds<sup>500f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*1 [[Helmut Krabbe]] spawns after 100 seconds<sup>3,000f</sup>.
+*2 [[Gory Dark]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*2 [[Gory Dark]]s spawn after 123.33 seconds<sup>3,700f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Ursamajor]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+*1 [[South Seas Otter]] spawns as the boss after 30 seconds<sup>900f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Cultural Exchange Lv.
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[South Seas Doge]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Helmut Krabbe]]
+! scope="col" |[[Gory Dark]]
+! scope="col" |[[Ursamajor]]
+! scope="col" |[[South Seas Otter]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |6
+|3,000%
+|400%
+|500%
+|200%
+|250%
+|7,000% HP/5,000% AP
+|300,000 HP
+|80
+|[[Catseye]] [Special] +1
+|2,400 XP
+|-
+! scope="row" |7
+|4,750%
+|600%
+|975%
+|225%
+|588%
+|10,250% HP/6,250% AP
+|480,000 HP
+|90
+|[[Catseye]] [Rare] +1
+|2,700 XP
+|-
+! scope="row" |8
+|6,500%
+|800%
+|1,450%
+|250%
+|925%
+|13,500% HP/7,500% AP
+|650,000 HP
+|100
+|[[Catseye]] [Super Rare] +1
+|3,000 XP
+|-
+! scope="row" |9
+|8,250%
+|1,000%
+|1,925%
+|275%
+|1,263%
+|16,750% HP/8,750% AP
+|830,000 HP
+|110
+|[[Catseye]] [Uber Rare] +1
+|3,300 XP
+|-
+! scope="row" |10
+|10,000%
+|1,200%
+|2,400%
+|300%
+|1,600%
+|20,000% HP/10,000% AP
+|1,000,000 HP
+|120
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,600 XP
+|}
+
+==Strategy==
+-
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24072.html
+
+{{Seasonal}}
+
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

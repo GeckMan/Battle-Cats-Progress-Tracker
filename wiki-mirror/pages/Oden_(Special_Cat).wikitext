@@ -1,0 +1,118 @@
+{{JPExclusive}}
+'''Oden''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 4.4 Update|Version 4.4]] and was created by a collaboration event between [[Yurudrasil Collaboration Event|Battle Cats and YuruDora]]. This Unit can be unlocked by playing the collaboration dungeon in YuruDora during the event period.
+
+{{Cat Info
+|ID = 231
+|rarity = EX
+|name1 = Oden
+|name2 = Oden CC
+}}
+
+==Evolution==
+Evolves into '''Oden CC''' at level 10.
+
+==Strategy/Usage==
+To avoid sugarcoating it, [[Rocker Cat (Rare Cat)|Rocker Cat]] outclasses Oden in every way. Faster and more powerful attacks. Higher defense. Cheaper cost. Faster cooldown. Oden may have higher range than Rocker, though that hardly matters. Oden's attacks are too weak, even against angels. In addition, even with this range advantage, he barely outranges any enemies of note. Even ignoring the existence of Rocker, Oden's stats are nowhere near enough to justify the 375円 to deploy this UR dump.
+
+{{Job|Classification = User Rank Dump & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 231
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni231 f00.png
+|Image2 = Uni231 c00.png
+|Name1 (JP) = おでん
+|Desc1 (JP) = ゆるドラシルから参戦！<br>ヴァルハラ神殿に出没する謎のおじさん。実は最高神<br>天使にめっぽう強い
+|Transl1 (JP) = Joined the war from YuruDora!<br>A mysterious uncle that haunts the Temple of Valhalla. Actually the Supreme God<br>He's strong against angels.
+|Name2 (JP) = おでんCC
+|Desc2 (JP) = ゆるドラシルから参戦！<br>「はたらきたくないでござる」が口癖のだらしない神の長<br>天使にめっぽう強い
+|Transl2 (JP) = Joined the war from YuruDora!<br>"I don't want to work." The chief of gods who is sloppy in the habit of talking.<br>He's strong against angels.
+|Name1 (KR) = 오뎅
+|Desc1 (KR) = 유루드라실에서 참전!<br>발할라 신전에 출몰하는 아저씨. 실은 최고 신.<br>천사에 엄청 강하다
+|Name2 (KR) = 오뎅CC
+|Desc2 (KR) = 유루드라실에서 참전!<br>「일하기 싫도다」가 입버릇인 허술한 신.<br>천사에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 250円
+*Chapter 2: 375円
+*Chapter 3: 500円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Oden
+|Normal Base HP = 175
+|Normal Base AP = 48
+|Normal Range = 255
+|Normal Foreswing = 11
+|Normal Attack Cooldown = 69
+|Normal Attack Length = 21
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 250
+|Normal Recharge = 400
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Oden CC
+|Evolved Base HP = 175
+|Evolved Base AP = 48
+|Evolved Range = 255
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 21
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 250
+|Evolved Recharge = 400
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 175 HP
+|val-Normal-Attack Power = 48 damage<br>(18 DPS)
+|val-Normal-Attack Range = 255
+|val-Normal-Attack Frequency = 80f <sub>2.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 2,975 HP
+|val-Normal-MaxAttack = 815 damage<br>(305.62 DPS)
+|val-Evolved-Health = 2,975 HP
+|val-Evolved-Attack Power = 815 damage<br>(305.62 DPS)
+|val-Evolved-Attack Range = 255
+|val-Evolved-Attack Frequency = 80f <sub>2.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni231 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/232.html
+
+----
+{{CatNav|Spooky Thundia|Junior God of Light - Valkyrie}}
+----
+
+{{Yurudrasil}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

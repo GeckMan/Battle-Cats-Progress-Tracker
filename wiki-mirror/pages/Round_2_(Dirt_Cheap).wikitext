@@ -1,0 +1,72 @@
+{{DISPLAYTITLE:Round 2}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Metal Doge|Doge Dark|Ragin' Gory|Two Can|Tackey|Metal One Horn|Dober P.D|Rain D.|Master A.}}
+'''Round 2''' is the second stage in [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 01 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Metal Doge|300%
+|Doge Dark|1,000%
+|Ragin' Gory|100%
+|Tackey|200%
+|Metal One Horn|300%
+|Rain D.|500%
+|Master A.|2,000%}}
+|boss = {{Magnification|Two Can|300%
+|Dober P.D|150%}}
+|enemies2 = {{Magnification|Metal Doge|360%
+|Doge Dark|1,200%
+|Ragin' Gory|120%
+|Tackey|240%
+|Metal One Horn|360%
+|Rain D.|600%
+|Master A.|2,400%}}
+|boss2 = {{Magnification|Two Can|360%
+|Dober P.D|180%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 20
+|jpname = Round 2
+|script = Round 2
+|romaji = Round 2
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 1 (Dirt Cheap)|Round 1]]
+|next stage = [[Round 3 (Dirt Cheap)|Round 3]]
+}}
+
+==Rules==
+{{ColosseumRule|Dirt Cheap}}
+
+==Battleground==
+*2 [[Metal Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*Infinite [[Doge Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Ragin' Gory|Ragin' Gories]] spawn after 16.67 seconds<sup>500f</sup>, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Two Can]] spawns as the boss.
+**3 [[Metal Doge]]s spawn, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**1 [[Tackey]] spawns.
+**1 [[Metal One Horn]] spawns.
+*When the base reaches 70% HP:
+**1 [[Dober P.D]] spawns as the boss.
+**2 [[Metal One Horn]]s spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**3 [[Rain D.|Rain Ds]] spawn, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+**1 [[Master A.]] spawns.
+**2 [[Ragin' Gory|Ragin' Gories]] spawn, delay 80~83.33 seconds<sup>2,400f~2,500f</sup>.
+**5 [[Metal Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36016-02.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

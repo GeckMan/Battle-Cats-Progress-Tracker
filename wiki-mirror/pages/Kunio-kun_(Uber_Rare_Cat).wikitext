@@ -1,0 +1,136 @@
+'''Kunio-kun''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by purchasing the 11-draw Capsule at the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[River City Ransom Collaboration Event]]. He was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Cat Info
+|ID = 624
+|rarity = UR
+|name1 = Kunio-kun
+|name2 = Dodgeball Kunio-kun
+}}
+
+==Evolution==
+Evolves into '''Dodgeball Kunio-kun''' at level 10.
+
+==Strategy/Usage==
+The most unique feature about this unit is his single-slot [[Cat Combo|combo]] which increases [[Worker Cat]]'s starting level by 2. This is an extremely efficient combo for the amount of space it takes, even beating [[Rich Cat III (Super Rare Cat)|Richest Cat]] (+500 starting funds and +1 Worker starting level) when it comes to monetary advantage on cash-tight stages, and arguably the biggest benefit that having this unit will provide. It can also be further augmented with other combos to grant your worker a huge starting level boost, such as [[Itchy Riches (Combo)|Itchy Riches]], [[Cat Transport (Combo)|Cat Transport]] and [[Longnecks (Combo)|Longnecks]]. Aside from that, this unit, although not that powerful when it comes to stats in either form, can be switched between completely different forms, offering the player two different options for what to do with him.
+
+==='''Normal Form'''===
+Kunio-kun is a melee attacker similar to [[Titan Cat (Normal Cat)|Titan Cat]], with both decent health and damage. His multi-hit makes him ideal not only for damage, but also to tank while shaking off peons often, though not too efficiently, seeing the very short interval between the multiple hits.
+
+==='''Evolved Form'''===
+Dodgeball Kunio-Kun changes his usage completely, basically becoming a different unit. His now impressive range is his new main feature, which allows him to snipe enemies from a safe distance, switching from protecting others to being the one in need of protection. If that is granted, however, he will last a long time, doing damage from the back. His speed will lead him into danger though, so avoid using the [[Cat Cannon]] while he is idle, as he might sprint too far forwards for his own good. Although his damage isn't great and his health is very low in this form, he makes up for it with an impressively low cost for such stats, allowing him to often be a good investment.
+
+{{Job|Classification = Melee & Combo Slave |EvolvedClass = Super-Backliner & Sniper & Combo Slave|TrueClass=|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Don't Mess With Me!|Worker Start Level Up (M)|Kunio-kun|jpname=なめんなよ！}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 624
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni624 f00.png
+|Image2 = Uni624 c00.png
+|Name1 = Kunio-kun
+|Desc1 = Joining the fight from the River City series!<br>Bad-boy who defends the weak and defies the strong!
+|Name2 = Dodgeball Kunio-kun
+|Desc2 = Joining the fight from the River City series!<br>Plays dodgeball to train his body for taking on<br>the world! Long-range Area strikes!
+|Name1 (JP) = 熱血硬派くにおくん (Nekketsu Kōha Kunio-kun, Renegade Kunio-kun)
+|Desc1 (JP) = 熱血硬派くにおくんシリーズから参戦！<br>弱きを助け強きをくじく正義の不良(範囲攻撃)
+|Transl1 (JP) = From the hot-blooded hardcore Kuniokun series!<br>A righteous delinquent who helps the weak and discourages the strong (Ranged Attack)
+|Name2 (JP) = ドッジボール部くにおくん (Dojji Bōru Bu Kunio-kun, Dodge Ball Club Kunio-kun)
+|Desc2 (JP) = 熱血硬派くにおくんシリーズから参戦！<br>運動不足解消で始めたドッジボールで世界制覇！<br>(遠方範囲攻撃)
+|Transl2 (JP) = From the hot-blooded hardcore Kuniokun series!<br>He started playing dodgeball to get rid of his lack of exercise, and now he's conquering the world!<br>(Long Ranged Attack)
+|Name1 (TW) = 熱血硬派國夫君
+|Desc1 (TW) = 來自熱血硬派國夫君系列！<br>打擊強者幫助弱者的不良正義！(範圍攻擊)
+|Name2 (TW) = 躲避球社國夫君
+|Desc2 (TW) = 來自熱血硬派國夫君系列！<br>為消除運動不足開始躲避球而稱霸世界！<br>(遠距範圍攻擊)
+|Name1 (KR) = 열혈경파 쿠니오군
+|Desc1 (KR) = 열혈경파 쿠니오군 시리즈에서 참전!<br>약자를 도와 강자를 꺾는 정의의 불량배
+|Name2 (KR) = 피구부 쿠니오군
+|Desc2 (KR) = 열혈경파 쿠니오군 시리즈에서 참전!<br>운동 부족 해소로 시작한 피구로 세계 제패!<br>(원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 1,900¢
+*Chapter 2: 2,850¢
+*Chapter 3: 3,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kunio-kun
+|Normal Base HP = 5400
+|Normal Base AP = 360,360,360
+|Normal Range = 200
+|Normal Foreswing = 4,8,12
+|Normal Attack Cooldown = 55
+|Normal Attack Length = 16
+|Normal Speed = 20
+|Normal KB = 3
+|Normal Cost = 1900
+|Normal Recharge = 1800
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (6,120 at 4f <sup>0.13s</sup>, 6,120 at 8f <sup>0.27s</sup>, 6,120 at 12f <sup>0.4s</sup>)
+|Evolved Name = Dodgeball Kunio-kun
+|Evolved Base HP = 1800
+|Evolved Base AP = 750
+|Evolved Range = 500
+|Evolved Foreswing = 26
+|Evolved Attack Cooldown = 123
+|Evolved Attack Length = 87
+|Evolved Speed = 30
+|Evolved KB = 3
+|Evolved Cost = 1900
+|Evolved Recharge = 3000
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~700)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 5,400 HP
+|val-Normal-Attack Power = 1,080 damage<br>(483.58 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 60 ~ 51.2 seconds
+|val-Normal-MaxHP = 91,800 HP
+|val-Normal-MaxAttack = 18,360 damage<br>(8,220.9 DPS)
+|val-Evolved-Health = 30,600 HP
+|val-Evolved-Attack Power = 12,750 damage<br>(2,567.11 DPS)
+|val-Evolved-Attack Range = 500
+|val-Evolved-Attack Frequency = 149f <sub>4.97 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 26f <sup>0.87s</sup><br>(61f <sup>2.03s</sup> backswing)
+|val-Evolved-Recharge Time = 100 ~ 91.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni624 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/625.html
+
+----
+{{CatNav|Pied Piper Cat|Furiluga}}
+----
+
+{{River City Ransom}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:River City Ransom Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Long Distance Cats]]

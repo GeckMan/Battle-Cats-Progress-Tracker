@@ -1,0 +1,99 @@
+:''This article is about the enemy. For the Cat Unit, see [[Wafer Cat (Special Cat)]].''
+'''Wafer Cat XL''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Enemy Info
+|name = Wafer Cat XL
+|image = E 548.png
+|appearance = [[Wafer Cat Advent]]<br>
+[[River City Stages]]<br>
+[[Infernal Tower/Floor 9|Infernal Tower - Floor 9]]<br>
+[[War on Valentines]]
+|money drop = 2¢ - 8¢
+}}
+
+==Enemy==
+This enemy dies once after attacking, similar to [[Glass Cat (Rare Cat)|Glass Cat]], however has a 100% chance to [[Slow|slow]] cats for 10 seconds and a 100% chance to [[Knockback|knockback]] cats along with an [[Omni Strike]] attack that can reach up to 125 maximum range. It has almost a million health and immunities to most debuffs, meaning it will almost always be able to attack your cats, causing them to be applied with deadly effects.
+
+==Strategy==
+Don't bother trying to kill this enemy. Instead, bait his attacks with something along the lines of [[Tank Cat (Normal Cat)|Tank Cat]] so he doesn't hit your important units. Alternatively, you can use slow and knockback immune units to ignore its effect on the battlefield completely, or you can use units who only resist/are immune to slow and take advantage of Wafer Cat XL's knockback to ensure their safety.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Wafer Cat Advent]]:
+**[[Vanilla Flavor 1st Sheet]]
+**[[Vanilla Flavor 2nd Sheet]]
+**[[Vanilla Flavor 3rd Sheet]]
+**[[Vanilla Flavor 4th Sheet]]
+**[[Vanilla Flavor Last Sheet]]
+*[[River City Stages#River City Challenge Course|River City Challenge Course]]:
+**[[Aim for the Top]]
+**[[Power On Through]]
+**[[Overcome The Odds]]
+**[[Mistakes Don't Matter]]
+**[[Good Effort]]
+*[[War on Valentines#From Your Junior|From Your Junior]]: [[I've Watched You From Afar]]
+*[[War on Valentines#From Your Senpai|From Your Senpai]]: [[My Homemade Sweets]]
+*[[War on Valentines#From A Childhood Friend|From A Childhood Friend]]: [[Well, Have This Then]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 9|Floor 9]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Wafer Cat XL
+|Health = 999999
+|Attack Power = 1
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 67
+|Movement Speed = 20
+|Knockback = 1
+|Foreswing = 12
+|Backswing = 55
+|Kamikaze = true
+|Ability = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -375~125)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+548 e.png|Wafer Cat XL's spritesheet
+BIGWafer.gif|Wafer Cat XL's animations
+</gallery>
+
+==Trivia==
+*This is the first enemy to die after attacking once.
+*During the [[Version 10.4 Update]], there is a bug where if [[Battle Items#Sniper the Cat|Sniper the Cat]] hits just as it attacks, the unit will somehow remain there and do nothing until it loses all of its health.
+**This was fixed in the Version 10.4.1 Update.
+*If this enemy hits a cat with either [[Strong Against]], [[Resistant]], or [[Insanely Tough]] vs. Traitless, it will not inflict Knockback. This is due to Wafer Cat XL's 1 base attack, as it is effectively reduced to 0 by these abilities' damage reduction effects.
+**Interestingly enough, Slow is still applied.
+
+==Reference==
+*https://battlecats-db.com/enemy/550.html
+
+----
+{{EnemyNav|Mr. Mer|Ragin' Gory}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Traitless Enemies]]
+[[Category:Kamikaze Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

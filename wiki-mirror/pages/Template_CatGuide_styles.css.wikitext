@@ -1,0 +1,40 @@
+.cat-guide {
+	position: relative;
+	width: 640px;
+	margin: 20px 0px;
+}
+
+.cat-guide .cat-guide-dots {
+	position: absolute;
+	top: -50px;
+	left: 0px;
+	width: 100%;
+	text-align: center;
+	color: black;
+}
+
+.cat-guide .rarity-button {
+	position: absolute;
+	top: -25px;
+	left: 394px;
+	height: 20px;
+	width: 140px;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	line-height: 20px;
+}
+
+.cat-guide .units-panel {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	width: 540px;
+	height: 290px;
+	z-index: 2;
+	text-align: left;
+	text-align: left;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,158 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemies, see [[Ashura (Enemy)]] and [[Kabuki Ashura (Enemy)]].''
+'''Ashura''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Trouble Talking To Girls...]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 marginally improves [[Knockback]] chance.
+
+{{Cat Info
+|ID = 251
+|rarity = RR
+|name1 = Ashura
+|name2 = Warrior Ashura
+|name3 = Kabuki Ashura
+}}
+
+==Evolution==
+Evolves into '''Warrior Ashura''' at level 10.
+
+Evolves into '''Kabuki Ashura''' when obtained from [[Road to Ashura Evolution (Easy)|Road to Ashura Evolution]] and is level 20 or above.
+
+==Strategy/Usage==
+Ashura is a jack of all trades, master of none when it comes to Knocking back enemies. While it does target every trait, it falls short in the stats department with low range and health. It may be serviceable early on for certain [[:Category:Cyclones|Cyclones]], or stages like [[Merciless Onslaught]], but specialized Cats tend to be much more effective due to higher overall stats. [[Fortune Teller Cat (Rare Cat)|Doctor Cat]] has higher health and range, [[Bean Cats (Special Cat)|Val Val Cat]] has [[Resistant]] and a [[Wave Attack]], [[Ancient Egg: N105 (Rare Cat)|Racquet Cat]] has piercing, and all have a higher chance to Knockback than even Ashura's True Form.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 251
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni251 f00.png
+|Image2 = Uni251 c00.png
+|Image3 = Uni251 s00.png
+|Name1 (JP) = アシュラ (Ashura)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>四本の棍棒から叩きつける攻撃は強烈<br>ごくたまにメタルな敵以外をふっとばす
+|Transl1 (JP) = Joining from Castle & Dragon!<br>The attacks from slamming the four clubs are intense<br>Occasionally knocks back non-Metal enemies
+|Name2 (JP) = 武者アシュラ (Musha Ashura)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>棍棒から刀へ。四刀流を極め戦へと向かうアシュラ<br>ごくたまにメタルな敵以外をふっとばす
+|Transl2 (JP) = Joining from Castle & Dragon!<br>Changed from clubs to katanas. Ashura perfected the style of quad-wielding and is heading to battle<br>Occasionally knocks back non-Metal enemies
+|Name3 (JP) = 傾奇者アシュラ (Kabukimono Ashura)
+|Desc3 (JP) = 城とドラゴンから参戦！<br>修羅王の刀を手にし羅喉の面をかぶったアシュラ<br>ごくたまにメタルな敵以外をふっとばす
+|Transl3 (JP) = Joining from Castle & Dragon!<br>Ashura gained the sword of asurendra and put on the mask of Rahu<br>Occasionally knocks back non-Metal enemies
+|Name1 (TW) = 阿修羅
+|Desc1 (TW) = 從城與龍來參戰！<br>揮舞手中的四根棍棒使出強烈的攻擊<br>偶爾會打飛鋼鐵以外的敵人
+|Name2 (TW) = 武者阿修羅
+|Desc2 (TW) = 從城與龍來參戰！<br>將棍棒換成了刀。為了追求四刀流的極限而戰的阿修羅<br>偶爾會打飛鋼鐵以外的敵人
+|Name3 (TW) = 羅睺阿修羅
+|Desc3 (TW) = 從城與龍來參戰！<br>手握修羅王之刀，臉戴羅睺面具的阿修羅<br>偶爾會打飛鋼鐵以外的敵人
+}}
+
+==Cost==
+*Chapter 1: 650円
+*Chapter 2: 975円
+*Chapter 3: 1,300円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ashura
+|Normal Base HP = 600
+|Normal Base AP = 250
+|Normal Range = 175
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 42
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 650
+|Normal Recharge = 450
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Warrior Ashura
+|Evolved Base HP = 600
+|Evolved Base AP = 250
+|Evolved Range = 175
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 42
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 650
+|Evolved Recharge = 450
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|True Name = Kabuki Ashura
+|True Base HP = 600
+|True Base AP = 250
+|True Range = 175
+|True Foreswing = 16
+|True Attack Cooldown = 59
+|True Attack Length = 42
+|True Speed = 7
+|True KB = 2
+|True Cost = 650
+|True Recharge = 450
+|True Attack Type = Single
+|True Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|True Abilities = {{AbilityIcon|Knockback}} 25% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 250 damage<br>(100 DPS)
+|val-Normal-Attack Range = 175
+|val-Normal-Attack Frequency = 75f <sub>2.5 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 15 ~ 6.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 4,250 damage<br>(1,700 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 4,250 damage<br>(1,700 DPS)
+|val-Evolved-Attack Range = 175
+|val-Evolved-Attack Frequency = 75f <sub>2.5 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 15 ~ 6.2 seconds
+|val-True-Health = 10,200 HP
+|val-True-Attack Power = 4,250 damage<br>(1,700 DPS)
+|val-True-Attack Range = 175
+|val-True-Attack Frequency = 75f <sub>2.5 seconds</sub>
+|val-True-Movement Speed = 7
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 16f <sup>0.53s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-True-Recharge Time = 15 ~ 6.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni251 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/252.html
+
+----
+{{CatNav|Castle Horseman|Battle Balloon}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats requiring Awakening for True Form]]

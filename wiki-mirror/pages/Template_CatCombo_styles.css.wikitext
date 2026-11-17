@@ -1,0 +1,109 @@
+table.combo-table .combo-table-image {
+	display: none !important;
+	/* Due to how collapsibles work the tables on [[Cat Combo]] have an inline
+	 * style, so this must be !important */
+	border: none;
+}
+
+table.combo-table .combo-table-basic img {
+	/* overrides inline size of 128px added on mobile */
+	width: 64px !important;
+	height: 64px !important;
+}
+
+@media screen and (min-width: 700px) {
+	table.combo-table:not(.basic) .combo-table-image {
+		display: block !important;
+	}
+
+	table.combo-table:not(.basic) {
+		background: url("https://static.wikitide.net/battlecatswiki/d/dd/Unknown.png");
+		border-radius: 5px;
+	}
+
+	table.combo-table:not(.basic) tbody {
+		padding: 12px 0px;
+		display: block;
+	}
+
+	table.combo-table:not(.basic) th {
+		display: none;
+	}
+
+	table.combo-table:not(.basic) td {
+		border: none;
+		padding: 0 16px;
+	}
+
+	table.combo-table img[alt="ComboBackground.png"] {
+		opacity: 0.75;
+	}
+
+	table.combo-table:not(.basic) a {
+		color: #FBFBFC;
+	}
+
+	.mw-parser-output table.combo-table .new {
+		color: var(--theme-alert-color);
+	}
+
+	table.combo-table:not(.basic) .combo-table-basic {
+		display: none;
+	}
+
+	table.combo-table:not(.basic) .unit-icon img {
+		width: 70px !important;
+		height: 70px !important;
+	}
+}
+
+.combo-image-main {
+	position: relative;
+	width: 600px;
+	line-height: 1;
+	margin: 5px 0;
+}
+
+.combo-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+
+.combo-image-main .combo-name,
+.combo-image-main .combo-effect,
+.combo-image-main .combo-restrict {
+	text-align: center;
+	width: 254px;
+	color: #FBFBFC;
+	font-weight: bold;
+	font-family: helvetica;
+	z-index: 1;
+}
+
+.combo-image-main .combo-name {
+	font-size: 17.5px;
+}
+
+.combo-image-main .combo-effect,
+.combo-image-main .combo-restrict {
+	font-size: 13px;
+}
+
+.combo-image-main .unit-icon {
+	position: absolute;
+	top: -5px;
+	z-index: 2;
+}
+
+.combo-image-main .blank-placeholder {
+	position: absolute;
+	bottom: 3px;
+	z-index: 1;
+}
+
+/* [[Category:Template stylesheets]] */

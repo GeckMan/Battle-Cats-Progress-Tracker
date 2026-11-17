@@ -1,0 +1,122 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Las Vegas (Into the Future)/Outbreak|here]].''
+'''Las Vegas''' is the 39th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc007.png]]
+|stage location = [[File:Las Vegas.png]]
+'''Into The Future'''
+|energy = 58
+|energy2 = 68
+|energy3 = 78
+|enemy castle hp = 180,000 HP
+|enemy castle hp2 = 270,000 HP
+|enemy castle hp3 = 360,000 HP
+|enemies = {{Magnification|Gory|600%
+|Doge|600%
+|Snache|600%
+|Mooth|600%
+|Shadow Boxer K|100%
+|Croco|600%}}
+|enemies2 = {{Magnification|Mooth|1,200%
+|Doge|1,200%
+|Snache|1,200%
+|Shadow Boxer K|150%
+|Gory|1,200%
+|Croco|1,200%}}
+|enemies3 = {{Magnification|Le'noir|100%
+|Mooth|1,800%
+|Doge|1,800%
+|Snache|1,800%
+|Doge Dark|400%
+|Gory|1,800%
+|Shadow Boxer K|200%
+|Croco|1,800%}}
+|treasure = - [[Treasure|Poker Chips]]
+|treasure2 = - [[Treasure|Poker Chips]]
+|treasure3 = - [[Treasure|Poker Chips]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +95,000 XP
+|score reward2 = '''7,500''': [[Cat Food]] +10<br>
+'''6,500''': +142,500 XP
+|score reward3 = '''6,500''': [[Cat Food]] +10<br>
+'''5,500''': +190,000 XP
+|max enemies = 9
+|max enemies2 = 9
+|max enemies3 = 9
+|XP = 12,400 XP
+|width = 4,400
+|jpname = Las Vegas
+|script = ラスベガス
+|romaji = Rasubegasu
+|jptreasure = Slot Machine
+|twname = Las Vegas
+|twscript = 拉斯維加斯
+|twromaji = Lāsī Wéijiāsī
+|twtreasure = Colored Chips
+|krname = Las Vegas
+|krscript = 라스베이거스
+|krromaji = Laseubeigeoseu
+|krtreasure = Poker Chips
+|chapter = [[Into the Future]]
+|prev stage = [[Hollywood (Into the Future)|Hollywood]]
+|next stage = [[Alaska (Into the Future)|Alaska]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Gory|Doge|Snache|Mooth|Shadow Boxer K|Croco}}
+*3 [[Gory|Gories]] spawn after 12 seconds<sup>360f</sup>, delay 29.33~58.67 seconds<sup>880f~1,760f</sup>.
+*Infinite [[Doge]]s spawn after 18 seconds<sup>540f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Mooth]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Mooth]] spawns after 30 seconds<sup>900f</sup>.
+*3 [[Shadow Boxer K]]s spawn after 60 seconds<sup>1,800f</sup>, delay 30 seconds<sup>900f</sup>.
+*3 [[Shadow Boxer K]]s spawn after 61.33 seconds<sup>1,840f</sup>, delay 30 seconds<sup>900f</sup>.
+*10 [[Croco]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Mooth|Doge|Snache|Shadow Boxer K|Gory|Croco}}
+*1 [[Mooth]] spawns after 8 seconds<sup>240f</sup>.
+*1 [[Mooth]] spawns after 12 seconds<sup>360f</sup>.
+*10 [[Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Shadow Boxer K]]s spawn after 30 seconds<sup>900f</sup>, delay 30 seconds<sup>900f</sup>.
+*3 [[Gory|Gories]] spawn after 40 seconds<sup>1,200f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*10 [[Croco]]s spawn after 60 seconds<sup>1,800f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*10 [[Croco]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Le'noir|Mooth|Doge|Snache|Doge Dark|Gory|Shadow Boxer K|Croco}}
+*1 [[Le'noir]] spawns.
+*1 [[Mooth]] spawns after 8 seconds<sup>240f</sup>.
+*1 [[Mooth]] spawns after 12 seconds<sup>360f</sup>.
+*10 [[Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*3 [[Doge Dark]]s spawn after 23.33 seconds<sup>700f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*3 [[Gory|Gories]] spawn after 40 seconds<sup>1,200f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*1 [[Shadow Boxer K]] spawns after 50 seconds<sup>1,500f</sup>.
+*Infinite [[Croco]]s spawn after 60 seconds<sup>1,800f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Croco]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Doge Dark]]s spawn after 100 seconds<sup>3,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+
+==Strategy==
+==='''Chapter 1 '''===
+Use 3-4 meatshields with [[Bahamut Cat (Special Cat)|Bahamut]] and tanky attackers (like [[Titan Cat (Normal Cat)|Mythical Titan Cat]]) against the Shadow Boxer Ks. [[:Category:Anti-Dark Cats|Anti-Dark Cats]] such as [[Flower Cat (Special Cat)|Cooldown Cat]] and [[Cat Gunslinger (Rare Cat)|Cat Eastwood]] are recommended, and you could bring in an anti-Dark [[:Category:Uber Rare Cats|Uber]] if you have one. Bringing ranged attackers to counter the Mooths is not necessary as they tend to die quickly. Any [[:Category:Crowd-Controller-class Cats|Crowd-Control]] Ubers you may have are handy for stopping the Shadow Boxer Ks. If you have her, [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]] is a great attacker for the Shadow Boxer Ks; if you don't have any anti-Dark Cats, high-DPS cats like [[Salon Cat (Rare Cat)|Paris Cat]] can kill the Shadow Boxer Ks quickly.
+
+Shadow Boxer Ks only spawn after ~30 seconds and not when you hit the base, so you can just simply rush the stage by killing the Mooths with cats such as [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] and defeat the base within 30 seconds.
+
+==='''Chapter 2 '''===
+Same as Chapter 1's strategy, but use some more damage-dealers like Ring Girl Cat or [[Figure Skating Cats (Super Rare Cat)|Drama Cats]] to get a lot of hits in for the SBKs, as they rush faster and plow through your meatshields faster.
+
+==='''Chapter 3'''===
+Use the Mooths to build up your money in the beginning. [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs Cat]] does a good job with killing them, along with some tanky units. Fast damage-dealers like Paris Cat, Drama Cats, and [[Valkyrie Cat (Special Cat)|Holy Valkyrie]] are almost a necessity. For Le'noir, you can either use tanky attackers, or get in some quick hits with [[Cow Cat (Normal Cat)|Lion Cat]]/[[Crazed Cow Cat (Super Rare Cat)|Crazed Giraffe]], etc. Cats that outrange Le'noir and are anti-Dark would be extremely helpful. Ubers like Sanada Yukimura, when timed correctly, can ensure a high timed score.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-39.html
+*https://battlecats-db.com/stage/s03004-39.html
+*https://battlecats-db.com/stage/s03005-39.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

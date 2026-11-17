@@ -1,0 +1,63 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Manager Cat & Clerk Cat (Special Cat)]].''
+'''Manager Cat & Clerk Cat''' (ネコ店長＆ネコ店員, ''Neko Tenchō & Neko Ten'in'', '''Manager Cat & Clerk Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Welcome to the Nyanko Daishoten!]] They were added in [[Version 14.7 Update|Version 14.7]].
+
+{{Enemy Info
+|name = Manager Cat & Clerk Cat
+|image = E 746.png
+|first appearance = [[Welcome to the Nyanko Daishoten!]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Having low stats and range, this enemy's main characteristic is their guaranteed Freeze, but their horrid range combined with the pitiful damage leaves them as fodder for your DPS units. While they get heavily magnified in their appearances, their highest magnification at 10,000% just barely reaches 1K DPS, so they shouldn't be a major threat.
+
+==Strategy==
+[[Tank Cat (Normal Cat)|Wall Cat]] is enough to stall this enemy, and you can vaporize them with [[Bird Cat (Normal Cat)|UFO Cat]]. In addition, Cats with the [[:Category:Cats with Money Up ability|Money Up]] ability can be used to great effect because their money drop is unusually high for an enemy of their status. [[Thief Cat (Rare Cat)|Thief Cat]] is the most accessible unit with Money Up, but [[Hip Hop Cat (Super Rare Cat)|Can Can]] (with their Money Up [[Talents|Talent]]) or [[Express Cat (Super Rare Cat)|Express Cat]] are stronger options.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Welcome to the Nyanko Daishoten!]]:
+**[[Selling Official Battle Cats Merch!]] (100%)
+**[[Lots of New Arrivals!]] (200%)
+**[[What You Want, Guaranteed!]] (3,000%)
+**[[Looking Forward to Your Next Visit!]] (10,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manager Cat & Clerk Cat
+|Health = 1700
+|Attack Power = 60
+|Attack Range = 130
+|Attack Type = Area
+|Time Between Attacks = 115
+|Movement Speed = 10
+|Knockback = 2
+|Foreswing = 16
+|Backswing = 30
+|Ability = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg248.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+746 e.png|Manager Cat & Clerk Cat's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/748.html
+
+----
+{{EnemyNav|Darkmadillo|Cammy}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Enemy Cats]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]

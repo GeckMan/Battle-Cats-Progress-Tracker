@@ -1,0 +1,12 @@
+{| align="center" style="{{#if:{{{width|}}}|width:{{{width}}};|}}" class="cquote" style="margin:0;"
+| width="45px" valign="top" style="color:#dba879; font-size:45px; font-family:'Times New Roman'; font-weight:bold; text-align:left; padding:9px 10px 0px 10px;" | “
+| valign="top" style="padding:4px 10px 5px 10px; font-family:'Lato'; font-size:95%;" | {{{1|Insert the text of the quote here, without quotation marks.}}}
+| width="20" valign="bottom" style="color:#dba879; font-size:40px;font-family:'Lato',serif;font-weight:bold;text-align:right;padding:10px 10px 0px 10px;" | ”
+|-
+{{#if:{{{2|}}}{{{3|}}}|
+{{!}} colspan="3" style="padding-top: 0" <!--VERTICAL SPACING of Citation to quote, was originally 10px on Wikimedia-->{{!}} {{#if:{{{2|<noinclude>Origin</noinclude>}}}|<p style="font-size:smaller;line-height:1em;text-align: right"><cite style="font-style:normal;">—{{{2}}}{{#if:{{{3|<noinclude>Source</noinclude>}}}|, {{{3}}}}}</cite></p>}}
+}}
+|}
+<noinclude>
+[[Category:Templates]]
+</noinclude>

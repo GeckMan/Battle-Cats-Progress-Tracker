@@ -1,0 +1,21 @@
+{| cellpadding="1" cellspacing="1" style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid; text-align:left; width:300px; background-color:white"
+|-
+! style="text-align:center; padding:2px; border-bottom:1px solid #ddd;"| {{{1}}}
+|-
+| {{{{{1}}}}}
+|}
+<noinclude>[[category:Burgle Cats Skill Data Templates]]
+==Documentation==
+This template is used in the Burgle Cats namespace, along with a valid skill name listed in [[:category:Burgle Cats Skill Data Templates]], inside a span tag to show the information of a burgle ability.
+
+===Syntax===
+<code><nowiki><span class="burgle-ability-tooltip" data-skillname="{{1}}">{{2}}</span></nowiki></code>
+
+Whereas:
+*<nowiki>{{1}}</nowiki> is the skill name needed to show information of, all possible names are listed in [[:category:Burgle Cats Skill Data Templates]].
+*<nowiki>{{2}}</nowiki> is the content that will be wrapped, when hover over will show a burgle skill's information template.
+===Example===
+Input: <nowiki><code><span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span></code></nowiki>
+
+Output: <span class="burgle-ability-tooltip" data-skillname="Barefeet">Hover over this text.</span>
+</noinclude>

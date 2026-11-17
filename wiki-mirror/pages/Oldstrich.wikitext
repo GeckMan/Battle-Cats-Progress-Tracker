@@ -1,0 +1,97 @@
+:''Not to be confused with [[M. Ost]].''
+'''Oldstrich''' (ダ・チョー老, ''Da・Chōrō'') is a [[:Category:Zombie Enemies|Zombie]]/[[:Category:Sage Enemies|Sage]] variant of [[R.Ost]] that appears in [[Zero Legends]]. He was added in [[Version 13.7 Update|Version 13.7]].
+
+{{Enemy Info
+|name = Oldstrich
+|image = E 698.png
+|first appearance = '''ZL:''' [[Fleming Seaway|Sub-chapter 15 - Fleming Seaway]]
+|latest appearance = '''ZL:''' [[Beloved Waterfall|Sub-chapter 18 - Beloved Waterfall]]
+|money drop = 1,080¢ - 4,266¢
+}}
+
+==Enemy==
+Oldstrich is by far one of the deadliest ostriches in the game. This husk of a comedian is even stronger and more relentless of a pusher than a 300% [[R.Ost]], having considerably higher stats, more speed, only 4 knockbacks, and 300 range to hit most non-[[:Category:Uber Rare Cats|Uber]] [[:Category:Zombie Killer Cats|Zombie Killers]], with none of the drawbacks that make [[M. Ost]] less of a threat. To counter tankers and specialist meatshields like [[Wushu Cat (Rare Cat)|Shigong Cat]], he also comes with a 20% chance to deal 20% Toxic damage on every attack to melt anything he can't overwhelm with raw damage. Combined with his 70% resistance to all debuffs and infinite revives if not Zombie-Killed, Oldstrich will tear through your defense if not swiftly dispatched.
+
+==Strategy==
+This feathered fiend's long range and fast attacks make most non-Uber anti-Zombie units ineffective, while most [[:Category:Cats with Toxic Immunity|Toxic-immune units]] will not be able to permanently kill it due to lacking Zombie Killer. [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] and [[Talents|Talented]] [[Archer Cat (Rare Cat)|Cataur]] are some of the only non-Uber Zombie Killers that can outrange it, making them good options even with Oldstrich being able to shrug off Housewife's Slow. A combination of [[Wushu Cat (Rare Cat)|Shigong Cat]] to stall it and [[Bakery Cat (Rare Cat)|Fried Chicken Cat]] to disable its Toxic ability with Curse can hold it in place, although a stack of Fried Chicken Cats are needed to maintain full uptime, and the duo may struggle if it comes with other traited enemies. Likewise, a stack of Talented [[Psychocat (Rare Cat)|Corrupted Psychocats]] can assist with their Slow and Weaken Talents, though they do not have Zombie Killer. [[Brainwashed Fish Cat (Super Rare Cat)|Brainwashed Island Cat]] is a great option against Oldstrich, being Strong against Zombies with Toxic Immunity, allowing him to potentially land one or two attacks.
+
+A high level Holy Blast can be used to chip at Oldstrich or even Z-Kill it, albeit requiring some guessing to estimate when it's low enough for the final blow. A Level 30 Holy Blast will deal 15% of its HP, meaning that it'll be able to kill it slightly after its third knockback at 25% HP, with a few more moments of attacking to deal the remaining 10% damage.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 698
+|Type = [[:Category:Zombie Enemies|Zombie]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 698.png
+|Name1 = Oldstrich
+|Desc1 = Immortal comedian who traded all feelings for<br>the ultimate punchline. Chronic amnesia<br>results in a string of forgotten jokes during<br>performances, but it doesn't seem too worried.
+|Name1 (JP) = ダ・チョー老 (Da・Chōrō)
+|Desc1 (JP) = 不死になったことで感情と引き換えに<br>あらゆるお笑いの知識を得たピン芸人。<br>記憶力の衰えによりライブ中にネタを<br>よく飛ばすものの、本人的には無問題。
+|Transl1 (JP) = A solo comedian who traded his emotions<br>for knowledge of all things comedy by becoming immortal.<br>Due to his declining memory, he often skips over material during<br>live performances, but that is no problem for him.
+|Name1 (TW) = 不死老鴕鳥
+|Desc1 (TW) = 因為得到不死之身，將感情拿去換取<br>所有搞笑知識的單口搞笑藝人。<br>因為記憶力衰退，經常在表演中忘記橋段，<br>但本人不覺得是什麼大問題。
+|Name1 (KR) = 언데드 타조
+|Desc1 (KR) = 불사의 존재가 되어 감정을 잃어버린 대신<br>다양한 개그 노하우를 획득한 코미디언.<br>기억력 감퇴로 생방송 중 아찔한 실수를 계속하지만<br>본인은 그다지 신경쓰지 않는다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 15-1: [[Fleming Seaway]]
+*Stage 15-4: [[Tropical Entropy]]
+*Stage 15-6: [[Heaven-Defying Fruit]]
+*Stage 16-2: [[The Locked Suite]]
+*Stage 16-5: [[Pirates Breaking Rank]]
+*Stage 18-6: [[Beloved Waterfall]]
+*Stage 19-6: [[Jetsam Lookout]]
+*Stage 23-4: [[Lively Spirits]]
+*Stage 26-6: [[Temple of Manga]]
+*Stage 32-2: [[Shadows Abound]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Oldstrich
+|Health = 1600000
+|Attack Power = 23000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 17
+|Movement Speed = 22
+|Knockback = 4
+|Foreswing = 4
+|Backswing = 13
+|Ability = {{AbilityIcon|Revive}} [[Revive|Revives]] with 50% HP after being dead for 180f <sub>6 seconds</sub> (unlimited)<br>
+{{AbilityIcon|Toxic}} 20% chance to perform a [[Toxic]] attack (takes 20% of Cat Units' maximum health)
+|Element = Zombie/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+698 e.png|Oldstrich's spritesheet
+</gallery>
+
+==Trivia==
+*His Japanese name, Da Chōrō (ダ・チョー老), may be a pun on 駝鳥 ''dachō'' (ostrich), 超 ''chō'' (super), 老 ''rō'' (old age), 長老 ''chōrō'' (an elder) and possibly the Italian musical term ''[[wikipedia:Da capo|da capo]]'' ("from the beginning").
+**The "Da" may also be a reference to Italian polymath [[wikipedia:Leonardo da Vinci|Leonardo da Vinci]]. Da Vinci was a pioneering anatomist who dissected more than 30 human corpses and extensively studied the skeletal structures, muscles and organs of both humans and other vertebrates, including birds, which may play into Oldstrich's [[:Category:Zombie Enemies|Zombie]] trait. His Toxic ability could allude to how da Vinci [https://www.acs.org/pressroom/presspacs/2023/october/mona-lisa-hides-a-surprising-mix-of-toxic-pigments.html used toxic pigments] when painting the ''[[wikipedia:Mona Lisa|Mona Lisa]]'', while his Japanese description mentions him losing his emotions, which could reference da Vinci's fascination with emotions and attempts to identify their source, and gaining knowledge of all kinds of comedy, just as da Vinci was versed in many fields of knowledge.
+*Oldstrich's skeletal structure differs greatly from [https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-023-03665-6/figures/1 that of an actual ostrich].
+*Oldstrich and [[Casaurian Darkjo]] are the only enemies with a non-guaranteed [[Toxic]] ability.
+
+==Reference==
+*https://battlecats-db.com/enemy/700.html
+
+----
+{{EnemyNav|Diabrollow|Sage of Life Dr. Nova}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zombie Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Revive ability]]
+[[Category:Enemies with Toxic ability]]

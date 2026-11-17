@@ -1,0 +1,130 @@
+'''Ritsuko Akagi''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. She was added in [[Version 8.7 Update#Update 8.7.5|Version 8.7.5]].
+
+{{Cat Info
+|ID = 490
+|rarity = SR
+|name1 = Ritsuko Akagi
+|name2 = First Officer Ritsuko
+}}
+
+==Evolution==
+Evolves into '''First Officer Ritsuko''' at level 10.
+
+==Strategy/Usage==
+Akagi can find the most usage in [[Into the Future]], sharing similar stats with [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] as well as also crowd-controlling Alien enemies. Her [[Weaken]] lasts for a good while, though the same can be said about the time she takes to attack. Regardless, use her as you would Surfer and Into the Future will be just the more tolerable.
+
+Once that saga has been beaten, however, Akagi's usefulness starts to drop. Surfer, now with his [[True Form]], Seafarer Cat, finally meets her stats and then some, with guaranteed [[Survive]] and faster attacks that match Akagi's damage output. It is also noted that [[Freeze]] is a far more powerful ability than Weaken. If anything, she can be used as support for Seafarer against the dangerous [[Mesocosmocyclone]], though [[Psychocat (Rare Cat)|Corrupted Psychocat]] already fills that role with the [[Slow]] ability and also Weaken with [[Talents]].
+
+{{Job|Classification = Midranger & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 490
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni490 f00.png
+|Image2 = Uni490 c00.png
+|Name1 = Ritsuko Akagi
+|Desc1 = Recruited from EVANGELION! Cool researcher<br>from NERV's technical development team.<br>Area attacks might Weaken Aliens.
+|Name2 = First Officer Ritsuko
+|Desc2 = Recruited from EVANGELION! After becoming<br>a WILLE officer, treats Shinji coolly.<br>Area attacks might Weaken Aliens.
+|Name1 (JP) = ちびリツコ (Chibi Ritsuko, Little Ritsuko)
+|Desc1 (JP) = エヴァンゲリオンから参戦！<br>ネルフ技術開発部に所属する、クールな女性研究者<br>たまにエイリアンの攻撃力を下げる(範囲攻撃)
+|Transl1 (JP) = Joining the war from Evangelion!<br>A cool researcher, who belongs to the NERV Technology Development Department<br>Sometimes lowers the attack power of Aliens (Range Attack)
+|Name2 (JP) = ヴンダー副長のちびリツコ (Vundā Fukuchō no Chibi Ritsuko, Wunder Deputy Head Little Ritsuko)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>反ネルフ組織ヴィレの幹部として、シンジに冷徹に振舞う<br>たまにエイリアンの攻撃力を下げる(範囲攻撃)
+|Transl2 (JP) = Joining the war from Evangelion!<br>As a leader of the anti-NERV organization Wille, she acts coldly towards Shinji<br>Sometimes lowers the attack power of Aliens (Area Attack)
+|Name1 (TW) = 小小律子
+|Desc1 (TW) = 從新世紀福音戰士來參戰！<br>所屬NERV技術開發部，冷靜的女性研究員<br>有時候會讓異星戰士的攻擊力下降(範圍攻擊)
+|Name2 (TW) = Wunder副長小小律子
+|Desc2 (TW) = 從新世紀福音戰士來參戰！<br>做為反NERV組織WILLE的幹部，對真嗣冷静而透徹<br>有時候會讓異星戰士的攻擊力下降(範圍攻擊)
+|Name1 (KR) = 꼬맹이 리츠코
+|Desc1 (KR) = 에반게리온에서 참전!<br>NERV 기술 개발부에 소속된 쿨한 여성 연구자<br>가끔씩 에이리언의 공격을 낮춘다 (범위 공격)
+|Name2 (KR) = 분더 부함장 꼬맹이 리츠코
+|Desc2 (KR) = 에반게리온에서 참전!<br>반NERV 조직 빌레의 간부로써 신지에게는 냉철하다<br>가끔씩 에이리언의 공격을 낮춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 750¢
+*Chapter 2: 1,125¢
+*Chapter 3: 1,500¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ritsuko Akagi
+|Normal Base HP = 1600
+|Normal Base AP = 1200
+|Normal Range = 300
+|Normal Foreswing = 67
+|Normal Attack Cooldown = 123
+|Normal Attack Length = 131
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 750
+|Normal Recharge = 860
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Immune to Weaken|Immune to Warp}} [[Immune to Weaken]] and [[Immune to Warp|Warp]]
+|Evolved Name = First Officer Ritsuko
+|Evolved Base HP = 1600
+|Evolved Base AP = 1200
+|Evolved Range = 300
+|Evolved Foreswing = 67
+|Evolved Attack Cooldown = 123
+|Evolved Attack Length = 131
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 750
+|Evolved Recharge = 860
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub><br>
+{{AbilityIcon|Immune to Weaken|Immune to Warp}} [[Immune to Weaken]] and [[Immune to Warp|Warp]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,600 HP
+|val-Normal-Attack Power = 1,200 damage<br>(189.47 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 67f <sup>2.23s</sup><br>(64f <sup>2.13s</sup> backswing)
+|val-Normal-Recharge Time = 28.67 ~ 19.87 seconds
+|val-Normal-MaxHP = 27,200 HP
+|val-Normal-MaxAttack = 20,400 damage<br>(3,221.05 DPS)
+|val-Evolved-Health = 27,200 HP
+|val-Evolved-Attack Power = 20,400 damage<br>(3,221.05 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 67f <sup>2.23s</sup><br>(64f <sup>2.13s</sup> backswing)
+|val-Evolved-Recharge Time = 28.67 ~ 19.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni490 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/491.html
+
+----
+{{CatNav|Misato Katsuragi|Rei Ayanami (???)}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats with Weaken Immunity]]

@@ -1,0 +1,125 @@
+{{Unobtainable}}
+:''For the enemy encountered in the [[Merc Storia Collaboration Event]], see [[Alois (Enemy)]].''
+'''Alois''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was implemented in [[Version 3.8 Update|Version 3.8]] and was created by a collaboration event between [[Merc Storia Collaboration Event|Merc Storia and Battle Cats]] and can be unlocked by rolling the [[Cat Capsule| Rare Cat Capsule]] during the event period.
+
+{{Cat Info
+|ID = 189
+|rarity = SR
+|name1 = Alois
+|name2 = Alois CC
+}}
+
+==Evolution==
+Evolves into '''Alois CC''' at level 10.
+
+==Strategy/Usage==
+Alois does not fare well alongside more relevant crowd-controllers despite functioning okay in a vacuum. Many angels either have many knockbacks (like [[Angelic Gory]]) or outrange Alois (like [[Angelic Sleipnir|Angelic Slepnir]]), so Alois can only work effectively against bulky melee enemies such as [[Boraphim]] and [[Heavenly Hippoe]]. These kinds of enemies already have a strong counter, [[Bishop Cat (Rare Cat)|Sanzo Cat]]. On top of knockback being more supplementary crowd-control, especially at a somewhat low rate, Sanzo can stack and apply [[Slow|Slow]] (and [[Weaken|Weaken]] with [[Talents]]) much more often to impede foes. Alois could work, however, to occasionally reposition [[St. Dober]] so your Sanzo stack can continue stalling him, even though this is a very niche use. Still, Talented [[Nymph Cat (Super Rare Cat)|Fiend Cat]] does the same thing and more, with [[Knockback|Knockback]] at a higher frequency, pierce to counter more types of angel enemies, and actually respectable durability and support DPS.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 189
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni189 f00.png
+|Image2 = Uni189 c00.png
+|Name1 = Alois
+|Desc1 = Joining the fight from Merc Storia! Master<br>sorcerer cursed for unknown reasons.<br>Area attacks might Knockback Angels.
+|Name2 = Alois CC
+|Desc2 = Joining the fight from Merc Storia! Recovered<br>treasured items thanks to loyal disciples.<br>Area attacks might Knockback Angels.
+|Name1 (JP) = アロイス (Aroisu, Alois)
+|Desc1 (JP) = メルクストーリアから参戦！<br>ある理由で呪われてしまった凄腕魔術師<br>たまに天使をふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining the war from  Merc Storia!<br>An amazing magician who has been cursed for some reason<br>Sometimes pushes back Angels (Area Attack)
+|Name2 (JP) = アロイスCC (AroisuCC, AloisCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>弟子のお陰で大切なものを取り戻した魔術師<br>たまに天使をふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining the war from  Merc Storia!<br>A sorcerer who has regained something precious thanks to his apprentice<br>Sometimes pushes back Angels (Area Attack)
+|Name1 (TW) = 阿洛伊斯
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>因爲某種原因而遭到詛咒的超強魔法師<br>有時候能打飛天使敵人(範圍攻擊)
+|Name2 (TW) = 阿洛伊斯CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>托弟子的福，終於取回了他重要的東西<br>有時候能打飛天使敵人(範圍攻擊)
+|Name1 (KR) = 알로이스
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>어떤 이유로 저주에 걸려버린 엄청난 솜씨의 마술사<br>가끔 천사를 날려버린다 (범위 공격)
+|Name2 (KR) = 알로이스CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>제자 덕분에 소중한 것을 되찾은 마술사<br>가끔 천사를 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 780¢
+*Chapter 2: 1,170¢
+*Chapter 3: 1,560¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Alois
+|Normal Base HP = 500
+|Normal Base AP = 240
+|Normal Range = 351
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 54
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 780
+|Normal Recharge = 620
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Alois CC
+|Evolved Base HP = 600
+|Evolved Base AP = 340
+|Evolved Range = 351
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 54
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 780
+|Evolved Recharge = 620
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 240 damage<br>(56.69 DPS)
+|val-Normal-Attack Range = 351
+|val-Normal-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 20.67 ~ 11.87 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(963.78 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 5,780 damage<br>(1,365.35 DPS)
+|val-Evolved-Attack Range = 351
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 20.67 ~ 11.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni189 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/190.html
+----
+{{CatNav|Mystica|Citrouille}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Gacha Cats]]

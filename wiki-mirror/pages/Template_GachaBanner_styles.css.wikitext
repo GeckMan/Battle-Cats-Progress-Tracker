@@ -1,0 +1,92 @@
+.gacha-banner {
+	position: relative;
+	max-width: 730px;
+	margin: auto;
+	border: 2px solid silver;
+	border-radius: 25px;
+	overflow: hidden;
+	text-align: center;
+	color: black;
+}
+
+.gacha-banner .gacha-name {
+	position: relative;
+	width: min-content;
+	min-width: 350px;
+	padding: 0 40px;
+	margin: 10px auto;
+	border-radius: 4px;
+	border: 2px solid black;
+	outline: white solid 2px;
+	text-align: center;
+	white-space: nowrap;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.gacha-banner .gacha-name.mw-collapsed {
+	display: none;
+}
+
+.gacha-banner .arrow-box {
+	position: absolute;
+	right: 4px;
+	top: 0;
+	margin: 0;
+}
+
+.gacha-banner .unit-container {
+	position: relative;
+	left: 5%;
+	width: 90%;
+	text-align: center;
+	line-height: 0;
+}
+
+.gacha-banner .text-container {
+	position: relative;
+	left: 10%;
+	width: 80%;
+	margin-top: 15px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	text-align: left;
+	color: black;
+}
+
+.gacha-banner .collapsible-units img {
+	width: 80px !important; /* overwrite inline style on mobile */
+	height: 80px !important; /* overwrite inline style on mobile */
+}
+
+.gacha-banner .gacha-buttons img {
+	margin: 3px;
+	border-radius: 25px;
+	border: 2.5px solid #000;
+	width: 150px;
+	height: auto;
+}
+
+.gacha-banner .rotate-button img {
+	width: 50px !important; /* overwrite inline style on mobile */
+	height: 50px !important; /* overwrite inline style on mobile */
+}
+
+.gacha-banner .banner-image img {
+	width: calc(100% - 80px);
+	height: auto !important; /* overwrite inline style on mobile */
+}
+
+@media screen and (max-width: 850px) {
+	.gacha-banner .banner-image img {
+		width: calc(100% - 40px) !important; /* overwrite inline style on mobile */
+	}
+}
+
+@media screen and (max-width: 425px) {
+	div[class^='mw-customtoggle-icon'] {
+		min-width: initial !important; /* overwrite inline style */
+		max-width: 90%;
+	}
+}
+
+/* [[Category:Template stylesheets]] */

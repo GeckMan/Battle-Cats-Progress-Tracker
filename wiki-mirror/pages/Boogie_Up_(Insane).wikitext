@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Gato Amigo|Angelic Sleipnir|Bore}}
+'''Boogie Up (Insane)''' is the second and final stage in [[Boogie Awakens!]].
+
+{{Stage Info
+|stage name = [[File:rc043.png]]
+[[File:Mapsn057 01 s en.png]]
+|stage location = [[File:Mapname057 s en.png]]
+|energy = 150
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Gato Amigo|200%
+|Gato Amigo|300%
+|Angelic Sleipnir|100%
+|Bore|220%}}
+|boss = {{Magnification|Gato Amigo|10%}}
+|treasure = - [[Boogie Cat (Special Cat)|Boogie Cat]]'s [[True Form]] (100%, 1 time)
+|XP = 4,000 XP
+|width = 4,200
+|max enemies = 13
+|jpname = Road to Fever Evolution (Super-Intense)
+|script = フィーバー進化への道 超激ムズ
+|romaji = Fībā Shinka e no Michi Chō Geki Muzu
+|star = 1
+|event-chapter = [[Boogie Awakens!]]
+|difficulty = ★8
+|prev stage = [[Boogie Up (Expert)]]
+|next stage = N/A
+|require = Complete [[Empire of Cats]] Chapter 2
+|occurrence = - The 11th day in any month (07:00~14:00)
+- The 12th day in any month (17:00~00:00)
+}}
+
+==Battleground==
+*1 [[Gato Amigo (Enemy)|Gato Amigo]] (200%) spawns after 0.67 seconds<sup>20f</sup>.
+*7 [[Gato Amigo (Enemy)|Gato Amigos]] (200%) spawn after 20 seconds<sup>600f</sup>, delay 18~22 seconds<sup>540f~660f</sup>.
+*7 [[Gato Amigo (Enemy)|Gato Amigos]] (200%) spawn after 24 seconds<sup>720f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*5 [[Gato Amigo (Enemy)|Gato Amigos]] (200%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 23.33~33.33 seconds<sup>700f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gato Amigo (Enemy)|Gato Amigo]] (10%) spawns as the boss.
+**Infinite [[Gato Amigo (Enemy)|Gato Amigos]] (300%) spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**10 [[Gato Amigo (Enemy)|Gato Amigos]] (300%) spawn, delay 4~12 seconds<sup>120f~360f</sup>.
+**10 [[Gato Amigo (Enemy)|Gato Amigos]] (300%) spawn, delay 18~28 seconds<sup>540f~840f</sup>.
+**10 [[Gato Amigo (Enemy)|Gato Amigos]] (300%) spawn, delay 21.33~30 seconds<sup>640f~900f</sup>.
+**Infinite [[Gato Amigo (Enemy)|Gato Amigos]] (300%) spawn, delay 8~16 seconds<sup>240f~480f</sup>.
+**Infinite [[Angelic Sleipnir]]s spawn, delay 120~123.33 seconds<sup>3,600f~3,700f</sup>.
+**Infinite [[Bore]]s spawn, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+
+==Strategy==
+Having [[Bahamut Cat (Special Cat)|Bahamut Cat]] will be enough to clear out the waves of Gato Amigos in this stage. To kill the Bore, anti-Red crowd-control units such as [[Apple Cat (Super Rare Cat)|iCat]] or [[Witch Cat (Rare Cat)|Enchantress Cat]] are recommended, however not entirely necessary if you have enough damage.
+
+The Angelic Sleipnir will be quite difficult to reach, but they spawn with a two minute delay. Tankier units are recommended to reach and kill them, like [[Titan Cat (Normal Cat)|Jamiera Cat]]. Having Awakened Bahamut Cat makes quick work of Sleipnir through Bahamut chaining, however that requires clearing ItF 3.
+
+==Trivia==
+*Prior to [[Version 9.10 Update|Version 9.10]], there used to be a mistake inside the stage on the top-left corner. The stage name was labeled as "[[Oh Yokozuna! (Insane)]]", which is the name for the second stage of [[Sumo Awakens!]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01057-02.html
+
+{{Awakening Stages}}
+[[Category:Awakening Stages]]
+[[Category:Boogie Awakens!]]

@@ -1,0 +1,65 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Brollow|The Face|Razorback|Li'l Bun Bun|Tackey|Le'noir}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Uniform Motion|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Doge Dark|1,200%
+|Brollow|200%
+|The Face|2,000%
+|Li'l Bun Bun|1,000%
+|Tackey|250%
+|Razorback|150%
+|Le'noir|200%}}
+|boss = {{Magnification|Razorback|150%}}
+|enemies2 = {{Magnification|Doge Dark|1,440%
+|Brollow|240%
+|The Face|2,400%
+|Li'l Bun Bun|1,200%
+|Tackey|300%
+|Razorback|180%
+|Le'noir|240%}}
+|boss2 = {{Magnification|Razorback|180%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,200
+|max enemies = 30
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Uniform Motion|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Uniform Motion)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Uniform Motion|12}}
+
+==Battleground==
+*Infinite [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*3 [[Brollow]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[The Face]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Razorback]] spawns as the boss after 46.67 seconds<sup>1,400f</sup>.
+*5 [[Li'l Bun Bun]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*3 [[Brollow]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*2 [[Tackey]]s spawn after 86.67 seconds<sup>2,600f</sup>, delay 100~103.33 seconds<sup>3,000f~3,100f</sup>.
+*4 [[Brollow]]s spawn after 120 seconds<sup>3,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*1 [[Razorback]] spawns after 133.33 seconds<sup>4,000f</sup>.
+*1 [[Le'noir]] spawns after 150 seconds<sup>4,500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36011-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

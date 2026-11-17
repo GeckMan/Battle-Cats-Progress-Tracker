@@ -1,0 +1,169 @@
+{{Unobtainable}}
+'''Yuki Cat''' is a [[:Category:Special Cats|Special Cat]] that could be obtained as a Stamp Reward during the [[Shoumetsu Toshi Collaboration Event]]. She was added in [[Version 3.6 Update|Version 3.6]].
+
+{{Cat Info
+|ID = 181
+|rarity = EX
+|name1 = Yuki Cat
+|name2 = Lovely Yuki Cat
+}}
+
+==Evolution==
+Evolves into '''Lovely Yuki Cat''' at level 10.
+
+==Strategy/Usage==
+This unit can be helpful in the early game if you do not own anything better such as [[Shaman Cat (Rare Cat)|Shaman cat]]. It has longer range, but shorter uptime and TBA than Shaman, so it can be used as a secondary layer of them in case your Shaman stack falls, which can happen easily in [[Moon (Empire of Cats)|Moon Chapter 3]] against [[Teacher Bun Bun]], as Shaman outranges it by 50, but Yuki outranges by 140. This leads to it being a decent Bun Bun counter as long as the peons are taken care of. However, it falls off after early game because the large presence of [[Bishop Cat (Rare Cat)|Sanzo Cat]] and [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] completely outclasses it.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 181
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni181 f00.png
+|Image2 = Uni181 c00.png
+|Name1 = Yuki Cat
+|Desc1 = Girl lost during the city's destruction, reborn as<br>a Cat but retaining all her mysterious powers.<br>Small chance to Freeze Floating.
+|Name2 = Lovely Yuki Cat
+|Desc2 = Girl who became a Cat after the city's destruction,<br>now slowly regaining her former charisma.<br>Small chance to Freeze Floating.
+|Name1 (JP) = ゆきにゃん
+|Desc1 (JP) = "消滅"から奇跡的に生還した少女、に影響を受け<br>見よう見まねで不思議な力と飛行能力を習得したにゃんこ<br>ごくたまに浮いてる敵の動きを一瞬止める
+|Transl1 (JP) = The girl who reached miraculously form" extinction".<br>The cat which acquired strange power and flight ability by watching others.<br>Might stop the movement of the flouting enemy.
+|Name2 (JP) = ビューティゆきにゃん
+|Desc2 (JP) = "消滅"から奇跡的に生還した少女、に見た目も<br>近づくため、美容整形で美しく進化したにゃんこ<br>ごくたまに浮いてる敵の動きを一瞬止める
+|Transl2 (JP) = The girl who reached miraculously form" extinction".<br>This cat evolved beautifully by a cosmetic surgery.<br>Might stop the movement of the flouting enemy.
+|Name1 (TW) = 小雪貓
+|Desc1 (TW) = 受"從消滅中奇跡生還的少女"的影響<br>靠模仿學會了飛行與有了不可思議的力量<br>偶爾會讓飄浮敵人瞬間動作停止
+|Name2 (TW) = 美腿小雪貓
+|Desc2 (TW) = 為了與"從消滅中奇跡生還的少女"更像<br>靠著醫美整形讓自己美麗再進化的貓。<br>偶爾會讓飄浮敵人瞬間動作停止
+|Name1 (KR) = 고양이 유키
+|Desc1 (KR) = 소멸에서 기적적으로 살아남은 소녀에 영향을 받아<br>혼자서 불가사의한 힘과 비행 능력을 습득한 고양이<br>아주 가끔 떠있는 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 뷰티 고양이 유키
+|Desc2 (KR) = 소멸에서 기적적으로 살아남은 소녀와 외모도<br>비슷해지기 위해 성형으로 아름답게 진화한 고양이<br>아주 가끔 떠있는 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yuki Cat
+|Normal Base HP = 180
+|Normal Base AP = 40
+|Normal Range = 340
+|Normal Foreswing = 41
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 81
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 490
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Lovely Yuki Cat
+|Evolved Base HP = 180
+|Evolved Base AP = 40
+|Evolved Range = 340
+|Evolved Foreswing = 41
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 81
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 490
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 180 HP
+|val-Normal-Attack Power = 40 damage<br>(14.81 DPS)
+|val-Normal-Attack Range = 340
+|val-Normal-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 41f <sup>1.37s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 16.33 ~ 7.53 seconds
+|val-Normal-MaxHP = 3,060 HP
+|val-Normal-MaxAttack = 680 damage<br>(251.85 DPS)
+|val-Evolved-Health = 3,060 HP
+|val-Evolved-Attack Power = 680 damage<br>(251.85 DPS)
+|val-Evolved-Attack Range = 340
+|val-Evolved-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 41f <sup>1.37s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 16.33 ~ 7.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Yuki Cat and her evolution appear in Shoumetsu Toshi as a light and dark type unit introduced in the first collaboration between the two games. She can be obtained through playing Shoumetsu Toshi during the collaboration period.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ゆきにゃん (Yuki Nyan, Yuki Cat)
+! scope="row" style="text-align: center;"|ビューティゆきにゃん (Byūti Yuki Nyan, Beauty Yuki Cat)
+|-
+| colspan="2" |[[File:ST Yuki Cat.png|center|300px]]
+|[[File:ST Lovely Yuki Cat.png|center|300px]]
+|-
+! scope="col" colspan="3" style="text-align: center;"|Stats At Level 70
+|-
+! scope="col" |Rarity
+|★4
+|★4
+|-
+! scope="col" |Health
+|1,293
+|1,359
+|-
+! scope="col" |Attack
+|1,102
+|1,112
+|-
+! scope="col" |Recovery
+|151
+|129
+|-
+! scope="col" |Single Skill
+|Recover 5,000 HP
+|Negaets damage from traps or falls for a short period of time
+|-
+! scope="col" |Leadership Skill
+|The attack power of your ally's light elemental soul is increased by x1.5
+|The attack power of your ally's dark elemental soul is increased by x1.5
+|}
+</div>
+
+{{Gallery|Uni181 f00}}
+
+==Trivia==
+*Prior to [[Version 12.3 Update|Version 12.3]], Yuki Cat would be unlocked by completing missions in the Shoumetsu Toshi app.
+
+==Reference==
+*https://battlecats-db.com/unit/182.html
+
+----
+{{CatNav|Mystery Girl Yuki|Cuckoo Crew 12}}
+----
+
+{{Shoumetsu Toshi}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

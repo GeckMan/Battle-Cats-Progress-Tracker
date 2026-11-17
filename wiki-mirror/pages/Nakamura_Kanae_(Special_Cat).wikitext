@@ -1,0 +1,134 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Nakamura Kanae''' is a [[:Category:Special Cats|Special Cat]] that could be unlocked by using a [[Serial Codes|Serial Code]] (か - に). She was added in [[Version 3.8 Update|Version 3.8]]. As of [[Version 4.3 Update|Version 4.3]], she is now unobtainable because Serial Codes can no longer be input to the game.
+
+{{Cat Info
+|ID = 193
+|rarity = EX
+|name1 = Nakamura Kanae
+|name2 = Queen Kanae
+}}
+
+==Evolution==
+Evolves into '''Queen Kanae''' at level 10.
+
+==Strategy/Usage==
+Nakamura Kanae is entirely outclassed by [[Onmyoji Cat (Rare Cat)|Onmyoji Cat]] due to her pathetic range and staggering recharge time.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 193
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni193 f00.png
+|Image2 = Uni193 c00.png
+|Name1 (JP) = 中村奏絵 (Nakamura Kanae)
+|Desc1 (JP) = ポノスがスポンサーのレースチームを応援する<br>にゃんこ大戦争ガールズ！<br>たまに敵の攻撃力をダウンさせる
+|Transl1 (JP) = PONOS supports sponsor's lace team.<br>She's playing an active part as a cat at great war of girls!<br>Sometimes lowers the enemies offensive power.
+|Name2 (JP) = クイーンかにー (Kuīn Kani, Queen Kani)
+|Desc2 (JP) = 食べられるカニも大好きな「かにー」は<br>にゃんこ大戦争ガールズ！<br>たまに敵の攻撃力をダウンさせる
+|Transl2 (JP) = Likes eating crabs.<br>She's playing an active part as cat at great war of girls!<br>Sometimes lowers the enemies offensive power.
+}}
+
+==Cost==
+*Chapter 1: 99円
+*Chapter 2: 148円
+*Chapter 3: 198円
+{{Upgrade Cost|MIX
+|0
+|100
+|3,100
+|7,100
+|12,100
+|18,100
+|25,100
+|33,100
+|42,100
+|52,100
+|100
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nakamura Kanae
+|Normal Base HP = 300
+|Normal Base AP = 100
+|Normal Range = 150
+|Normal Foreswing = 28
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 57
+|Normal Speed = 4
+|Normal KB = 3
+|Normal Cost = 99
+|Normal Recharge = 1998
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Queen Kanae
+|Evolved Base HP = 500
+|Evolved Base AP = 150
+|Evolved Range = 150
+|Evolved Foreswing = 28
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 57
+|Evolved Speed = 4
+|Evolved KB = 3
+|Evolved Cost = 99
+|Evolved Recharge = 1998
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 100 damage<br>(23.62 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 28f <sup>0.93s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Normal-Recharge Time = 66.6 ~ 57.8 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(401.57 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(602.36 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 28f <sup>0.93s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Evolved-Recharge Time = 66.6 ~ 57.8 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni193 f00}}
+
+==Trivia==
+*Nakamura Kanae is based on a [[PONOS Corporation|PONOS]] staff member of the same name, who participated in "Gals Paradise 2015".
+
+==Reference==
+*https://battlecats-db.com/unit/194.html
+----
+{{CatNav|Yamaoka Minori|Akira}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

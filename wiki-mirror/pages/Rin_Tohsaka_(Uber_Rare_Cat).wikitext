@@ -1,0 +1,134 @@
+:''This article is about the Cat Unit. For the enemy, see [[Rin Tohsaka (Enemy)]].''
+:''For the other Rin from the same event, see [[Rin the Cat (Rare Cat)]].''
+'''Rin Tohsaka''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 363
+|rarity = UR
+|name1 = Rin Tohsaka
+|name2 = Rin Tohsaka CC
+}}
+
+==Evolution==
+Evolves into '''Rin Tohsaka CC''' at level 10.
+
+==Strategy/Usage==
+First off, it is worth getting out of the way that Rin Tohsaka doesn't have much usage against zombies, despite her range and decent ability against them, as zombies are too aggressive for her.
+
+Her stats work better against aliens, where she can be great to prevent an army from pushing too hard into Cat backlines, all while providing good damage.
+
+Outside of her niche, Tohsaka is a fine generalist with good overall stats.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 363
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni363 f00.png
+|Image2 = Uni363 c00.png
+|Name1 = Rin Tohsaka
+|Desc1 = Joining the fight from Fate/stay night [HF]! Seeks<br>the Holy Grail with her summoned Archer. Chance<br>to knockback Aliens/Zombies, with Area Attack!
+|Name2 = Rin Tohsaka CC
+|Desc2 = Joining the fight from Fate/stay night [HF]! Classmate<br>of Shirou, heir to the Tohsaka lineage. Chance<br>to knockback Aliens/Zombies, with Area Attack!
+|Name1 (JP) = 遠坂 凛 (Tousaka Rin)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>アーチャーを召喚し聖杯戦争に挑む<br>たまにエイリアンとゾンビをふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining in from Fate / stay night [HF]!<br>Summoned Archer and challenged the Holy Grail War.<br>Occasionally knocks away aliens and zombies (range attack)
+|Name2 (JP) = 遠坂 凛CC (Tousaka Rin CC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>衛宮士郎の同級生で、冬木の管理者・遠坂の継承者<br>たまにエイリアンとゾンビをふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining in from Fate / stay night [HF]!<br>Shiro Emiya's classmate, manager of Fuyuki, successor of the Tohsaka lineage.<br>Occasionally knocks away aliens and zombies (range attack)
+|Name1 (TW) = 遠坂凜
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>召喚Archer並參加聖杯戰爭<br>有時候會打飛異星戰士與不死生物(範圍攻擊)
+|Name2 (TW) = 遠坂凜CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>衛宮士郎的同級生，冬木的管理者與遠坂的繼承者<br>有時候會打飛異星戰士與不死生物(範圍攻擊)
+|Name1 (KR) = 토오사카 린
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>아처를 소환하여 성배전쟁에 참가한다<br>가끔 에이리언과 좀비를 날려버린다 (범위 공격)
+|Name2 (KR) = 토오사카 린CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전! 에미야 시로의 친구이자<br>후유키의 관리자이며 토오사카 가문의 후계자<br>가끔 에이리언과 좀비를 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,840¢
+*Chapter 2: 4,260¢
+*Chapter 3: 5,680¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rin Tohsaka
+|Normal Base HP = 1850
+|Normal Base AP = 1500
+|Normal Range = 450
+|Normal Foreswing = 88
+|Normal Attack Cooldown = 113
+|Normal Attack Length = 121
+|Normal Speed = 11
+|Normal KB = 4
+|Normal Cost = 2840
+|Normal Recharge = 4000
+|Normal Attack Type = Area
+|Normal Targets = Alien,Zombie
+|Normal Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Rin Tohsaka CC
+|Evolved Base HP = 2600
+|Evolved Base AP = 2100
+|Evolved Range = 450
+|Evolved Foreswing = 88
+|Evolved Attack Cooldown = 113
+|Evolved Attack Length = 121
+|Evolved Speed = 11
+|Evolved KB = 4
+|Evolved Cost = 2840
+|Evolved Recharge = 4000
+|Evolved Attack Type = Area
+|Evolved Targets = Alien,Zombie
+|Evolved Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,850 HP
+|val-Normal-Attack Power = 1,500 damage<br>(223.88 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 88f <sup>2.93s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Normal-Recharge Time = 133.33 ~ 124.53 seconds
+|val-Normal-MaxHP = 31,450 HP
+|val-Normal-MaxAttack = 25,500 damage<br>(3,805.97 DPS)
+|val-Evolved-Health = 44,200 HP
+|val-Evolved-Attack Power = 35,700 damage<br>(5,328.36 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 88f <sup>2.93s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Evolved-Recharge Time = 133.33 ~ 124.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni363 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/364.html
+
+----
+{{CatNav|Saber|Illyasviel}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Zombie Killer Cats]]

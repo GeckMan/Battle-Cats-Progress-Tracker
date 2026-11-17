@@ -1,0 +1,55 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Croco|Hippoe|Squire Rel|Zroco|Zigge|Zomboe|M. Bison}}
+'''VS M. BISON (Insane)''' is one of the [[Street Fighter Collaboration Event#New Challenger|New Challenger]] stages.
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn147 00 c en.png]]
+|stage location = [[File:Mapname147 c en.png]]
+|energy = 200
+|enemy castle hp = 360,000 HP
+|enemies = {{Magnification|Croco|1,200%
+|Hippoe|1,200%
+|Squire Rel|1,200%
+|Zroco|150%
+|Zigge|150%
+|Zomboe|150%}}
+|boss = {{Magnification|M. Bison|100%}}
+|treasure = - 500,000 XP (100%, 1 time)
+|XP = 36,000 XP
+|width = 4,000
+|max enemies = 10
+|jpname = VS Bison Super Intense
+|script = VSバイソン 超激ムズ
+|romaji = VS Baison Chō Geki Muzu
+|star = 1
+|event = [[Street Fighter Collaboration Event]]
+|event-chapter = [[Street Fighter Collaboration Event/New Challenger|New Challenger]]
+|difficulty = ★7
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*15 [[Croco]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*1 [[Hippoe]] spawns.
+*1 [[Hippoe]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Hippoe]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[M. Bison (Enemy)|M. Bison]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**Infinite [[Hippoe]]s spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**6 [[Zroco]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Zigge]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**2 [[Zomboe]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02253-01.html
+
+{{Street Fighter}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

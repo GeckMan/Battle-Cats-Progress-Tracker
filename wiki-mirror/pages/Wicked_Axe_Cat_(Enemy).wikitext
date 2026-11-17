@@ -1,0 +1,69 @@
+:''Not to be confused with the stage [[Wicked Axe]], its Cat counterpart [[Brainwashed Axe Cat (Super Rare Cat)|Brainwashed Axe Cat]] or [[Malevolent Dark Cat]].''
+'''Wicked Axe Cat''' (邪悪なバトルネコ ''Jaakuna Batoru Neko'', '''Wicked Battle Cat''') is an [[Axe Cat (Normal Cat)|Axe Cat]]-turned-[[:Category:Aku Enemies|Aku]]. It is introduced in the [[Wicked Axe]] event, which is unlocked after clearing [[Demon's Park]]. Although [[Brainwashed Axe Cat (Super Rare Cat)|Brainwashed Axe Cat]] is visually an allied counterpart of Wicked Axe Cat, it is not obtained by defeating this enemy, but rather from [[:Category:Seasonal Gacha Events|seasonal]] [[Cat Capsule#Rare Capsule|Rare Capsule]] events. It was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Wicked Axe Cat
+|image = E 563.png
+|appearance = [[Wicked Axe]]<br>
+[[The Gates of Aku]]<br>
+[[Infernal Tower]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Wicked Axe Cat is a fast-attacking, mid-ranged powerhouse that basically acts as a nerfed [[Crazed Axe Cat (Enemy)|Crazed Axe Cat]] with the [[:Category:Aku Enemies|Aku]] trait and a rather strong [[Shield]] in place of the freeze ability. It also strengthens by 100% when on the last of its three knockbacks.
+
+==Strategy==
+The Shield more than doubles Wicked Axe Cat's effective health, so bringing [[:Category:Shield Piercing Cats|Shield Piercers]] is recommended to take care of it. Due to the threat posed by this enemy's damage, it is also recommended to use plenty of meatshields and avoid short-ranged attackers, instead relying on cats with over 360 range, like [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Bahamut Cat (Special Cat)|Bahamut Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Wicked Axe]]:
+**[[Aku's Nest]] (100%)
+**[[The Devil War]] (150%)
+*Unleashing the Cats: [[The Gates of Aku]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 48|Floor 48]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Wicked Axe Cat
+|Health = 300000
+|Attack Power = 3500
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 7
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 8
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 34% health<br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">200,000</span>; regenerates with 50% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+563 e.png|Wicked Axe Cat's spritesheet
+IdleWickedAxeCat.gif|Wicked Axe Cat's moving animation
+</gallery>
+
+==Reference==
+
+*https://battlecats-db.com/enemy/565.html
+
+----
+{{EnemyNav|Wicked Tank Cat|E-564}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Shields]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemy Cats]]

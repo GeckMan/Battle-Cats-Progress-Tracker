@@ -1,0 +1,7 @@
+.ranger-navbox.mentori {
+	--bg-navbox-title: linear-gradient(to right, hsl(240, 30%, 64%) 0%, hsl(240, 30%, 72%) 100%);
+	--bg-sub-table-title: #59cd09;
+	--bg-group-name: hsl(230, 35%, 56%);
+}
+
+/* [[Category:Template stylesheets]] */

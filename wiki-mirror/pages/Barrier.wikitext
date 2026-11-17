@@ -1,0 +1,56 @@
+:''Not to be confused with [[Shield]]s or [[Base Barrier]]s.''
+A '''Barrier''' (バリア ''Baria'', '''Barrier''') is a defensive ability possessed by certain [[:Category:Starred Alien Enemies|Starred Alien Enemies]]. [[File:barriershow.gif|thumb|right|[[UltraBaaBaa|UltraBaaBaa]] displaying her Barrier]]
+
+==Explanation==
+Enemies with this ability are protected by a red, rhombus-shaped crystal that fully blocks all attacks that are weaker than its limit, protecting the unit with the Barrier from any damage or effect coming with the attack. The player needs to land one strike with high enough power to break it, which is the upper limit it can protect the enemy. An animation of the Barrier materializing and flashing is shown when an attack of insufficient strength hits the Barrier and another one of the Barrier cracking and falling apart when it breaks. When a Barrier is destroyed, the attack that broke it is still considered blocked and has no effect on the unit. The Barrier includes damage-related effects/abilities during damage calculation, such as Massive Damage, Savage Blow, etc.
+
+[[:Category:Barrier Breaker Cats|Barrier Breaker Cats]] have a set chance to instantly destroy Barriers regardless of their attack power; when they proc, their attacks will hit the unit through the Barrier and destroy it at the same time. The [[Ototo Corps#Breakerblast|Breakerblast Cannon]] is guaranteed to break the Barriers of all enemies hit.
+
+Unlike the [[Shield]]s of [[:Category:Aku Enemies|Aku Enemies]], Barrier HP is a set value that does not scale with strength magnification.
+
+==Enemies==
+{| class="article-table mw-collapsible" cellpadding="1"
+|-
+! scope="col" |'''Enemy'''
+! scope="col" |'''Barrier Limit'''
+|-
+! scope="row" |[[General GreGory]]
+|6,000
+|-
+! scope="row" |[[Le'Solar]]
+|40,000
+|-
+! scope="row" |[[Corporal Weyland]]
+|2,500
+|-
+! scope="row" |[[Spacefish Jones]]
+|12,000
+|-
+! scope="row" |[[Youcan]]
+|266,000
+|-
+! scope="row" |[[UltraBaaBaa]]
+|266,000
+|-
+! scope="row" |[[Kid Tappa]]
+|15,000
+|-
+! scope="row" |[[Ribbo]]
+|65,000
+|-
+! scope="row" |[[Axoloty]]
+|10,000
+|}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Barrierspritesheet.png|A Barrier's spritesheet
+6.3 Barrier.png|Unused early Barrier spritesheet
+</gallery>
+
+==Trivia==
+*Although Barriers were implemented in [[Version 6.5 Update|Version 6.5]], audio and sprites for them could be found in the game's files as early as [[Version 6.3 Update|Version 6.3]]. The pre-release Barriers had a different design, which most notably was blue instead of red; this may have been changed so that they would be easier to see against the already-blue skin of their [[:Category:Alien Enemies|Alien]] bearers.
+*Hitting a Barrier will not cause vibration when Battle Vibration is enabled.
+
+[[Category:Game Features]]
+[[Category:Special Abilities]]

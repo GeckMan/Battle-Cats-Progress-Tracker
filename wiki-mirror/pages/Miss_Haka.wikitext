@@ -1,0 +1,128 @@
+'''Miss Haka''' (墓手花子, ''Hakate Hanako'') is a [[:Category:Zombie Enemies|Zombie]] enemy that appears in [[Zombie Outbreaks]] and [[Legend Stages]]. She was added in [[Version 5.6 Update|Version 5.6]]. In [[The Battle Cats Unite!]], she was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Miss Haka
+|image = E 303.png
+|first appearance = '''EoC''': [[Moon (Empire of Cats)/Outbreak|Chapter 2 - Moon/Iriomote Outbreak]]<br>'''SoL''': [[The Haunted 1LDK|Sub-Chapter 36 - The Haunted 1LDK]]<br>'''ItF''': [[Moon (Into the Future)/Outbreak|Chapter 2 - Moon Outbreak]]
+|latest appearance = '''ZL:''' [[Soybean Graveyard|Sub-chapter 12 - Soybean Graveyard]]
+|money drop = 2,500¢ - 9,875¢
+}}
+
+==Enemy==
+Miss Haka looks similar to [[Lord Gravey]] and has similar stats, even being capable of reviving once at full health, but is able to [[Burrow]] infinitely until she's at the [[Cat Base]]. Of course, the balancing factor is that despite being tanky, she has a very high knockback count of 24.
+
+==Strategy==
+Miss Haka is often used to snipe the player's base by burrowing past all their units, but as with [[:Category:Enemies with Burrow ability|enemies that can burrow]], she is vulnerable when diving into the ground and resurfacing, which potentially allows a unit to hit her and accumulate damage. The [[Holy Blast]] notably can exploit this to great effect, as it deals significantly higher damage to burrowed Zombies and forces them to resurface. Melee units with short foreswings such as [[Titan Cat (Normal Cat)|Jamiera Cat]] or [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] are ideal for the task, provided if she doesn't burrow early due to meatshields getting in the way or if said units reach and hit her immediately. If she gets to the base, though, all is not lost, as brute force or [[:Category:Crowd-Controller-class Cats|crowd-controllers]] like [[Welterweight Cat (Rare Cat)|Heavyweight Cats]] can still push her away. Likewise, you can even win the stage by destroying the enemy base without having to deal with her.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 303
+|Type = [[:Category:Zombie Enemies|Zombie]]
+|Image1 = Enemy icon 303.png
+|Name1 = Miss Haka
+|Desc1 = Zoge's wife was supposed to be<br>buried here, but she's still alive at<br>158 and it seems like someone<br>else took over the open real estate.
+|Name1 (JP) = 墓手花子 (Hakate Hanako)
+|Desc1 (JP) = わんこの叔母のお墓。に間違って埋葬された誰か。<br>旦那がセクハラで連行されてしまってからは<br>悠々自適生活を送り158歳まで生きた超シニア。<br>埋葬後も死にきれず墓を背負い遊び回っている。
+|Transl1 (JP) = The grave of [[Doge]]'s aunt. Someone else was buried in it by accident.<br>After her husband was taken away for sexual harassment,<br>this super senior lived a carefree life until 158.<br>Unable to fully die even after being buried, she plays around while carrying the grave on her back.
+|Name1 (TW) = 墓手花子
+|Desc1 (TW) = 以為是狗仔姨媽之墓・・・那,是埋了誰呀！？<br>自從丈夫因騷擾案遭到拘留後<br>就過著悠閒生活直到158歲的超級銀髮族。<br>被埋葬後仍精神不死的背著墓碑四處遊玩。
+|Name1 (KR) = 묘비석
+|Desc1 (KR) = 멍뭉이 숙모...로 착각당해 매장된 누군가.<br>남편이 성희롱으로 연행되고 난 뒤부터<br>유유자적한 생활을 보내 158세까지 산 초고령 할머니<br>매장 후에도 살아남아 묘석을 방패로 실컷 노는 중.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Empire of Cats]] [[Zombie Outbreaks|Outbreaks]]===
+*Stage 2-48: [[Moon (Empire of Cats)/Outbreak|Moon]] (30%)
+*Stage 3-48: [[Moon (Empire of Cats)/Outbreak|Moon]] (50%)
+
+===[[Into the Future]] [[Zombie Outbreaks|Outbreaks]]===
+*Stage 2-48: [[Moon (Into the Future)/Outbreak|Moon]] (200%)
+*Stage 3-48: [[Moon (Into the Future)/Outbreak|Moon]] (150%)
+
+===[[Stories of Legend]]===
+*Stage 36-6: [[The Haunted 1LDK]] (200%)
+
+===[[Uncanny Legends]]===
+*Stage 18-6: [[Slave to Instinct]] (300%)
+*Stage 29-3: [[Second Unlife]] (300%)
+*Stage 36-5: [[Sappy Underpass]] (300%)
+
+===[[Zero Legends]]===
+*Stage 12-1: [[Soybean Graveyard]] (300%)
+*Stage 26-2: [[Poetic Death]] (360%)
+*Stage 31-5: [[The Cullosseum]] (360%)
+
+===[[Special Events|Event Stages]]===
+*[[June Bride of the Devil##04 Yowling Village|#04 Yowling Village]]: [[Life, Death, Hide, Seek]] (100%)
+*[[Resident Undead]]: [[Mutation Lv.6]] (100%)
+*[[June Bride of the Devil#Weekend Honeymoon #2|Weekend Honeymoon #2]]: [[Mother-In-Law Offering]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 27|Floor 27]] (200%)
+*[[Zombie Citadel]]: [[Zombie Citadel/Floor 7|Floor 7]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 27|Floor 27]] (300%)
+*[[Golden Tower]]: [[Golden Tower/Floor 27|Floor 27]] (200%)
+*[[Island of Hidden Treasure]]: [[Rotten Dawn]] (100%)
+*[[Otherworld Colosseum#Cheap Labor|Otherworld Colosseum]]: [[Round 5 (Cheap Labor)|Round 5]] (300%)
+
+===[[Enigma Stages]]===
+*Necro Cradle: [[Cradle Shrine (Deadly)/Zombie|Cradle Shrine (Deadly)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Miss Haka
+|Health = 720000
+|Attack Power = 25000
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 60
+|Movement Speed = 4
+|Knockback = 24
+|Foreswing = 22
+|Backswing = 38
+|Ability = {{AbilityIcon|Burrow}} [[Burrow|Burrows]] underground 500 range when a Cat enters its range (unlimited)<br>
+{{AbilityIcon|Revive}} [[Revive|Revives]] with 100% HP after being dead for 240f <sub>8 seconds</sub> (1 time)
+|Element = Zombie
+}}
+
+==Animations==
+<tabber>
+English=
+{{AnimationViewer|303 e en.png|MediaWiki:Custom-AnimationViewer/303 e.json}}
+|-|Japanese=
+{{UnitViewer|enemy|noheading=true}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+HakaJP.png|HD Miss Haka (JP)
+303 e en.png|Miss Haka's spritesheet (EN)
+303 e.png|Miss Haka's spritesheet (JP)
+IdleMissHaka.gif|Miss Haka's moving animation (JP)
+</gallery>
+
+==Trivia==
+*''Haka'' (墓) is a Japanese word meaning "grave" or "tomb", so Miss Haka's name means Miss Grave.
+**In [[Nyanko Daisensou|BCJP]], this kanji appears on her grave instead of "RIP".
+*During her attack animation, Miss Haka's hands appear to be posed for dog [[wikipedia:Shadowgraphy (performing art)|hand shadows]].
+*She is apparently [[Lord Gravey]]'s wife. Their Japanese names share the surname Hakate (墓手), and Lord Gravey's Japanese description mentions that he was accused of sexual harassment, while Miss Haka's says her husband was taken in for that same reason.
+*If counting her as an [[Empire of Cats]] enemy, then she and Lord Gravey are the only ones to have no variants.
+*Prior to [[Version 5.8 Update|Version 5.8]], Miss Haka was limited to burrowing 9,999 times.
+*Ironically, Miss Haka has a higher strength magnification in [[Into the Future]] Chapter 2's [[Moon (Into the Future)|Moon]] [[Zombie Outbreaks|Zombie Outbreak]] (200%) than in Chapter 3's (150%).
+
+==Reference==
+*https://battlecats-db.com/enemy/305.html
+
+----
+{{EnemyNav|Neko Hakase|Big Sal}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zombie Enemies]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Burrow ability]]
+[[Category:Enemies with Revive ability]]
+[[Category:Enemies with regional differences]]

@@ -1,0 +1,183 @@
+{{JPExclusive}}
+'''Li'l Clops Cat Egg''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by purchasing it from a special sale during the [[Castle & Dragon Collaboration Event]]. It was added in [[Version 9.9 Update|Version 9.9]]. [[True Form]] added in [[Version 11.2 Update|Version 11.2]] gains a 20% chance to perform a [[Savage Blow]].
+
+{{Cat Info
+|ID = 567
+|rarity = EX
+|name1 = Li'l Clops Cat Egg
+|name2 = Li'l Clops Cat
+|name3 = Lightning Li'l Clops Cat
+}}
+
+==Evolution==
+Evolves into '''Li'l Clops Cat''' at level 10.
+
+Evolves into '''Lightning Li'l Clops Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+This form is ''useless by design''. This Cat is not meant to be used until it evolves. Note that unlike the similar [[:Category:Ancient Eggs|Ancient Eggs]], this form recharges too slowly to be used as a meatshield.
+
+==='''Evolved Form'''===
+Li'l Clops Cat essentially serves as an anti-Traitless version of [[Viking Cat (Rare Cat)|Thor Cat]] with similar stats and similar pitfalls. This role is pretty valuable if you manage to obtain it early on, considering the lack of anti-Traitless options at that point in the game. At level 30, it has 36,720 HP against Traitless enemies, which is enough to hold its own against early-game threats like [[R.Ost]] and [[Master A.]], though you should beware that it has 2 knockbacks and no immunity to [[Wave Attack]]s or Crowd-Control effects. Li'l Clops also has a notably longer than average recharge and can be quite expensive to spam with its 540¢ cost.
+
+Beware that while Li'l Clops Cat is a somewhat decent meatshield, especially in {{4c}} or [[Castle & Dragon Collaboration Event#Castle Dragon VS Castle Dragon|Castle Dragon VS Castle Dragon]], you do need to spend real money to obtain it, which is not ideal because of the fact it gets outclassed later on. Once either [[Ancient Egg: N001 (Special Cat)|Haniwa Cat]] or [[Brainwashed Tank Cat (Super Rare Cat)|Brainwashed Wall Cat]] are obtained, there is little need for this unit.
+
+==='''True Form'''===
+The True Form doesn't change much about this unit, the Savage Blow ability doesn't do much other than increasing its effective DPS by roughly 50%. The flaws present in the previous form still apply, meaning Li'l Clops remains niche.
+
+{{Job|Classification = User Rank Dump|EvolvedClass = Meatshield|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 567
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni567 f00.png
+|Image2 = Uni567 c00.png
+|Image3 = Uni567 s00.png
+|Name1 (JP) = チビクロプスネコタマゴ (Chibikuropusu Neko Tamago, Li'l Clops Cat Egg)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>ネコの形をした謎のタマゴ。ふ化すると…？
+|Transl1 (JP) = Joining the war from Castle and Dragon!<br>A mysterious egg in the shape of a Cat. When it hatches...?
+|Name2 (JP) = チビクロプスネコ (Chibikuropusu Neko, Li'l Clops Cat)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>地元じゃ負け知らずの看板キャラに憧れるネコ<br>属性を持たない敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joining the war from Castle and Dragon!<br>This Cat admires a flagship character who's unbeatable in his hometown.<br>Extremely strong against Traitless enemies (Area Attack)
+|Name3 (JP) = 雷電のチビクロプスネコ (Raiden no Chibikuropusu Neko, Lightning Li'l Clops Cat)
+|Desc3 (JP) = 城とドラゴンから参戦！破壊力がピカイチの<br>看板キャラになりきるネコ。属性を持たない<br>敵にめっぽう強く、たまに渾身の一撃を放つ
+|Transl3 (JP) = Joining the war from Castle and Dragon!<br>A Cat who became a flagship character with top-class destructive power.<br>Extremely strong against Traitless enemies, occasionally unleashes a full-force blow.
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Clops Cat Egg
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 100
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 63
+|Normal Attack Length = 36
+|Normal Speed = 1
+|Normal KB = 1
+|Normal Cost = 360
+|Normal Recharge = 800
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Li'l Clops Cat
+|Evolved Base HP = 1080
+|Evolved Base AP = 108
+|Evolved Range = 140
+|Evolved Foreswing = 11
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 24
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 360
+|Evolved Recharge = 440
+|Evolved Attack Type = Area
+|Evolved Targets = Traitless
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|True Name = Lightning Li'l Clops Cat
+|True Base HP = 1080
+|True Base AP = 108
+|True Range = 140
+|True Foreswing = 11
+|True Attack Cooldown = 29
+|True Attack Length = 24
+|True Speed = 10
+|True KB = 2
+|True Cost = 360
+|True Recharge = 440
+|True Attack Type = Area
+|True Targets = Traitless
+|True Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Savage Blow}} 20% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(3.69 DPS)
+|val-Normal-Attack Range = 100
+|val-Normal-Attack Frequency = 65f <sub>2.17 seconds</sub>
+|val-Normal-Movement Speed = 1
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(34f <sup>1.13s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(62.31 DPS)
+|val-Evolved-Health = 18,360 HP
+|val-Evolved-Attack Power = 1,835 damage<br>(1,376.25 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 40f <sub>1.33 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+|val-True-Health = 18,360 HP
+|val-True-Attack Power = 1,835 damage<br>(1,376.25 DPS)
+|val-True-Attack Range = 140
+|val-True-Attack Frequency = 40f <sub>1.33 seconds</sub>
+|val-True-Movement Speed = 10
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 11f <sup>0.37s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-True-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Li'l Clops Cat
+|Evolved Image = Uni567 c00.png
+|True Name = Lightning Li'l Clops Cat
+|True Image = Uni567 s00.png
+|True Description = 第３形態への進化で<br>たまに渾身の一撃を放つ能力を取得！
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = RedFruit
+|Catfruit4 = BlueFruit
+|Catfruit5 = YellowFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x3
+|Quantity Catfruit3 = x3
+|Quantity Catfruit4 = x3
+|Quantity Catfruit5 = x3
+|Quantity XP = 200,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni567 f00}}
+
+==Trivia==
+*Li'l Clops Cat Egg, [[Li'l Tank Cat (Special Cat)|Li'l Tank Cat]], [[Wafer Cat (Special Cat)|Wafer Cat]], [[PAC-MAN (Special Cat)|PAC-MAN]] and the [[:Category:Ancient Eggs|Ancient Eggs]] have the lowest range of any Cat Unit, barring the unobtainable [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]].
+*Excluding immobile cats (such as the [[Ototo Corps#Iron Wall|Iron Wall Cat]]), Li'l Clops Cat Egg is the slowest Cat Unit in the game, tied with [[Mighty Kristul Muu (Legend Rare Cat)|Mighty Kristul Muu]] and [[Freshman Cat Jobs (Super Rare Cat)|Freshman Cat Jobs]].
+*Despite being exclusive to [[Nyanko Daisensou|BCJP]] and BCTW, the English name of this unit can be found in the game files.
+*Li'l Clops Cat Egg's evolution is a nod to how units in Castle & Dragon are unlocked by hatching eggs.
+*He is the first [[:Category:IAP Cats|IAP Cat]] to get a True Form.
+
+==Reference==
+*https://battlecats-db.com/unit/568.html
+
+----
+{{CatNav|Lifeguard Cats|Idi:N}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Cats with Strong ability]]
+[[Category:Savage Blow Cats]]
+[[Category:Cats requiring Catfruits for True Form]]

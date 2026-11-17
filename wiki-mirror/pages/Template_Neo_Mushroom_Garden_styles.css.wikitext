@@ -1,0 +1,9 @@
+.ranger-navbox.mushroom {
+	--bg-navbox-title: linear-gradient(to right, hsl(16, 31%, 37%) 0%, hsl(16, 31%, 40%) 100%);
+	--bg-sub-table-title: #f3d4b3;
+	--bg-group-name: hsl(16, 31%, 50%);
+
+	--sub-title-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

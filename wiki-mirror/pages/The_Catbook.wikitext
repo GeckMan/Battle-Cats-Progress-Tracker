@@ -1,0 +1,84 @@
+{{EnemiesAppearing|Croco|Snache|Those Guys|Pigge|Baa Baa|One Horn|Gory|Le'boin}}
+'''The Catbook''' is the third stage in [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]].
+
+{{Stage Info
+|stage name = [[File:rc016.png]]
+[[File:Mapsn026 02 s en.png]]
+|stage location = [[File:Mapname026 s en.png]]
+|energy = 75
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Croco|100%
+|Snache|100%
+|Those Guys|100%
+|Pigge|200%
+|Baa Baa|300%
+|One Horn|100%
+|Gory|300%}}
+|boss = {{Magnification|Le'boin|400%}}
+|enemies2 = {{Magnification|Croco|150%
+|Snache|150%
+|Those Guys|150%
+|Pigge|300%
+|Baa Baa|450%
+|One Horn|150%
+|Gory|450%}}
+|boss2 = {{Magnification|Le'boin|600%}}
+|enemies3 = {{Magnification|Croco|200%
+|Snache|200%
+|Those Guys|200%
+|Pigge|400%
+|Baa Baa|600%
+|One Horn|200%
+|Gory|600%}}
+|boss3 = {{Magnification|Le'boin|800%}}
+|enemies4 = {{Magnification|Croco|300%
+|Snache|300%
+|Those Guys|300%
+|Pigge|600%
+|Baa Baa|900%
+|One Horn|300%
+|Gory|900%}}
+|boss4 = {{Magnification|Le'boin|1,200%}}
+|treasure = - [[Maiden Cat (Rare Cat)|Maiden Cat]] (3%, 1 time)
+|XP = 2,250 XP
+|width = 4,600
+|max enemies = 12
+|jpname = 5 Sentiments Per Second
+|script = 秒速５センチメンタル
+|romaji = Byōsoku Go Senchimentaru
+|star = 4
+|event-chapter = [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]
+|difficulty = ★3
+|prev stage = [[I can feel it]]
+|next stage = [[P.S Cat Loves You]]
+}}
+
+==Battleground==
+*Infinite [[Croco]]s spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+*5 [[Croco]]s spawn, delay 0.07~3.33 seconds<sup>2f~100f</sup>.
+*100 [[Snache]]s spawn after 0.07 seconds<sup>2f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*200 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+*Infinite [[Pigge]]s spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*3 [[Baa Baa]]s spawn after 20 seconds<sup>600f</sup>, delay 1.33~3.33 seconds<sup>40f~100f</sup>.
+*When the base reaches 50% HP:
+**1 [[Le'boin]] spawns as the boss.
+**Infinite [[Croco]]s spawn, delay 3.33~4 seconds<sup>100f~120f</sup>.
+**4 [[Croco]]s spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+**2 [[One Horn]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[One Horn]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Gory|Gories]] spawn, delay 1.33 seconds<sup>40f</sup>.
+
+==Strategy==
+If you have [[Salon Cat (Rare Cat)|Paris Cat]], bring her to help control the One Horns.
+
+==Trivia==
+*The Catbook's Japanese name, 5 Sentiments Per Second, is a reference to the anime movie ''[[wikipedia:5 Centimeters Per Second|5 Centimeters Per Second]]''.
+
+==Reference==
+*https://battlecats-db.com/stage/s01026-03.html
+
+{{Monthly}}
+[[Category:Teacher! It's Spring Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

@@ -1,0 +1,7 @@
+.ranger-navbox.gudetama {
+	--bg-navbox-title: linear-gradient(to right, hsl(48, 99%, 52%) 0%, hsl(48, 99%, 62%) 100%);
+	--bg-sub-table-title: #ffe563;
+	--bg-group-name: hsl(50, 100%, 45%);
+}
+
+/* [[Category:Template stylesheets]] */

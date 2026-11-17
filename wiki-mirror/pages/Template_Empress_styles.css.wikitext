@@ -1,0 +1,8 @@
+.ranger-navbox.empress {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 0%, 0%) 0%, hsl(204, 53%, 58%) 50%, hsl(0, 0%, 0%) 100%);
+	--bg-sub-table-title: #285A79;
+	--bg-group-name: hsl(60, 100%, 50%);
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

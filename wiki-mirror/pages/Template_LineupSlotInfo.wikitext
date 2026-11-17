@@ -1,0 +1,6 @@
+<onlyinclude>{| cellpadding="1" cellspacing="1" style="margin: 2px 0px; padding: 3px; border-radius: 5px; border: 1px var(--bg-color-gray) solid; text-align: left; width: 240px; background-color: var(--color-min-contrast);"
+|-
+! style="text-align: center; padding: 2px; border-bottom: 1px solid var(--bg-color-gray);" | {{#ifeq:{{{1}}}|?|???|{{{1}}}}}
+|-
+| {{#ifeq:{{{1}}}|?|style="text-align: center;"|}} | {{#ifeq:{{{1}}}|?|Insert a unit of choice if not otherwise specified.|'''Level:''' {{#if:{{{2|}}}|{{{2}}}|Unspecified}}{{#if:{{{3|}}}|<br>'''Talents:''' {{{3}}}|}}}}
+|}</onlyinclude>{{/doc}}

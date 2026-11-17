@@ -1,0 +1,44 @@
+{{EnemiesAppearing|Vlad de Sable|Count Owlbrow|Teacher Bun Bun}}
+'''Floor 12''' is the 12th floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 11 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 120
+|enemy castle hp = 180,000 HP
+|enemies = {{Magnification|Vlad de Sable|100%
+|Count Owlbrow|100%}}
+|boss = {{Magnification|Teacher Bun Bun|600%}}
+|treasure = - [[Catfruit|Green Catfruit Seed]] +10 (100%, 1 time)
+|XP = 2,280 XP
+|width = 4,900
+|max enemies = 9
+|jpname = 12th Floor
+|script = 12階
+|romaji = 12 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★6
+|prev stage = [[Golden Tower/Floor 11|Floor 11]]
+|next stage = [[Golden Tower/Floor 13|Floor 13]]
+}}
+
+==Battleground==
+*Infinite [[Vlad de Sable]]s spawn after 0.07 seconds<sup>2f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Vlad de Sable]]s spawn after 0.33 seconds<sup>10f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Count Owlbrow]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Teacher Bun Bun]] spawns as the boss.
+**Infinite [[Vlad de Sable]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**Infinite [[Vlad de Sable]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Count Owlbrow]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 12#Strategy|Floor 12]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-12.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

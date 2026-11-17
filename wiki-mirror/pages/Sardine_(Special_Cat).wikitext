@@ -1,0 +1,133 @@
+:''This article is about the Cat Unit. For the enemy, see [[Sardine (Enemy)]].''
+'''Sardine''' is a [[:Category:Special Cats|Special Cat]] that can obtained from the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] using Legend Traps. It was added in [[Version 13.6 Update|Version 13.6]].
+
+{{Cat Info
+|ID = 766
+|rarity = EX
+|name1 = Sardine
+|name2 = Sardine CC
+}}
+
+==Evolution==
+Evolves into '''Sardine CC''' at level 10.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role, usually with a lower cost.
+
+Sardine, however, has the ability to [[Dodge Attack|dodge]] Floating enemies. This doesn't help it much though, since the chance is so laughably low. It might be somewhat useful in pure-Floating stages, but other than that, it's better to use cheaper meatshields, such as [[Catburger (Special Cat)|Catburger]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 766
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni766 f00.png
+|Image2 = Uni766 c00.png
+|Name1 = Sardine
+|Desc1 = Dropping in from "Survive! Mola Mola!"<br>Sunfish eat them whole to grow, and quickly at that!<br>Small chance to nullify damage from Floating.
+|Name2 = Sardine CC
+|Desc2 = Dropping in from "Survive! Mola Mola!" Tiny bones<br>can get stuck in sunfish throats to fester and kill the fish.<br>Small chance to nullify damage from Floating.
+|Name1 (JP) = イワシ (Iwashi, Sardine)
+|Desc1 (JP) = 生きろ！マンボウ！から参戦！<br>マンボウはイワシを骨ごと食べてすくすく育つ<br>ごくまれに浮いてる敵の攻撃を無効化する
+|Transl1 (JP) = Joining from Survive! Mola Mola!<br>A mola grows from eating sardines and their bones<br>Very occasionally Nullifies attacks from Floating enemies
+|Name2 (JP) = イワシCC (Iwashi CC, Sardine CC)
+|Desc2 (JP) = 生きろ！マンボウ！から参戦！マンボウは食道も弱く<br>イワシの小さな骨が刺さって化膿して死ぬ<br>ごくまれに浮いてる敵の攻撃を無効化する
+|Transl2 (JP) = Joining from Survive! Mola Mola! A mola can die from an<br>infection caused by sardine bones stabbing its weak esophagus<br>Very occasionally Nullifies attacks from Floating enemies
+|Name1 (TW) = 沙丁魚
+|Desc1 (TW) = 從活下去！曼波魚！來參戰。<br>曼波魚會將沙丁魚的骨頭都吃下去來幫助成長<br>偶爾可使飄浮敵人的攻擊無效化。
+|Name2 (TW) = 沙丁魚CC
+|Desc2 (TW) = 從活下去！曼波魚！來參戰。曼波魚食道<br>也很軟弱，扎了沙丁魚的小小的刺會化膿而死。<br>偶爾可使飄浮敵人的攻擊無效化
+|Name3 (TW) = 從活下去！曼波魚！來參戰。曼波魚食道
+|Desc3 (TW) = 也很軟弱，扎了沙丁魚的小小的刺會化膿而死。<br>偶爾可使飄浮敵人的攻擊無效化
+|Name1 (KR) = 정어리
+|Desc1 (KR) = 살아남아라!개복치!에서 참전!<br>개복치는 정어리를 뼈째로 먹고 쑥쑥 자란다<br>극히 드물게 떠있는 적의 공격을 무효화한다
+|Name2 (KR) = 정어리CC
+|Desc2 (KR) = 살아남아라!개복치!에서 참전! 개복치는 식도도<br>약해서 정어리의 잔뼈에 찔려 고름이 생겨 죽는다<br>극히 드물게 떠있는 적의 공격을 무효화한다
+|Name3 (KR) = 살아남아라!개복치!에서 참전! 개복치는 식도도
+|Desc3 (KR) = 약해서 정어리의 잔뼈에 찔려 고름이 생겨 죽는다<br>극히 드물게 떠있는 적의 공격을 무효화한다
+}}
+
+==Cost==
+*Chapter 1: 60¢
+*Chapter 2: 90¢
+*Chapter 3: 120¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sardine
+|Normal Base HP = 70
+|Normal Base AP = 7
+|Normal Range = 125
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 57
+|Normal Attack Length = 22
+|Normal Speed = 10
+|Normal KB = 1
+|Normal Cost = 60
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 5% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Sardine CC
+|Evolved Base HP = 90
+|Evolved Base AP = 9
+|Evolved Range = 125
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 57
+|Evolved Attack Length = 22
+|Evolved Speed = 10
+|Evolved KB = 1
+|Evolved Cost = 60
+|Evolved Recharge = 150
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 5% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+20
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 70 HP
+|val-Normal-Attack Power = 7 damage<br>(3.56 DPS)
+|val-Normal-Attack Range = 125
+|val-Normal-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,190 HP
+|val-Normal-MaxAttack = 120 damage<br>(61.02 DPS)
+|val-Evolved-Health = 1,530 HP
+|val-Evolved-Attack Power = 152 damage<br>(77.29 DPS)
+|val-Evolved-Attack Range = 125
+|val-Evolved-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 5 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni766 f00}}
+
+==Trivia==
+*Though it, [[Squid (Special Cat)|Squid]] and [[Tasmanian Giant Crab (Special Cat)|Tasmanian Giant Crab]] originate from the game [[Survive! Mola Mola! Collaboration Event|Survive! Mola Mola]], the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] event gacha makes no mention of this fact anywhere on its banner or info page.
+
+==Reference==
+*https://battlecats-db.com/unit/767.html
+
+----
+{{CatNav|Ancient Egg: N206|Squid}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

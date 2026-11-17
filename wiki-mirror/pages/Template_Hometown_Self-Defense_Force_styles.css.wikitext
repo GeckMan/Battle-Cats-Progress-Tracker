@@ -1,0 +1,7 @@
+.ranger-navbox.hometown {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 0%, 40%) 0%, hsl(0, 0%, 47%) 100%);
+	--bg-sub-table-title: hsl(0, 0%, 74%);
+	--bg-group-name: hsl(0, 0%, 60%);
+}
+
+/* [[Category:Template stylesheets]] */

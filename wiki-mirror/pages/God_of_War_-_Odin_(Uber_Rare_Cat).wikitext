@@ -1,0 +1,124 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For other uses, see [[Odin (disambiguation)]].''
+'''God of War - Odin''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 4.4 Update|Version 4.4]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Yurudrasil Collaboration Event]].
+
+{{Cat Info
+|ID = 236
+|rarity = UR
+|name1 = God of War - Odin
+|name2 = God of War - Odin CC
+}}
+
+==Evolution==
+Evolves into '''God of War - Odin CC''' at level 10.
+
+==Strategy/Usage==
+God of War Odin is an interesting Angel nuker. While he doesn't have the raw firepower of stronger nukers such as [[Kasa Jizo (Uber Rare Cat)|Jizo's Mega Castle]] or [[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]], he makes up for it with a severely lower cooldown. Getting two of Odin on the field doesn't take very long, and their rather high effective HP will let them have their stay on the battlefield. He easily outranges and picks on many Angel enemy types, moreso with the HP, even at level 30, to brush off the attacks of [[Cruel Angel Clionel]] and take punishment from two entire [[St. Dober]] [[Surge Attack|Surges]] and still live!
+
+When considering other anti-Angels with low cooldown, however, [[Kalisa (Uber Rare Cat)|Divine Kalisa]] becomes a strong contender for having more than twice the DPS of Odin and a cooldown that's even lower. They both their own strengths, with Kalisa having brute force and Odin having sustainability, so either can be chosen based on the player's needs for a stage and both do very well against Angels regardless.
+
+{{Job|Classification = Nuker & Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 236
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni236 f00.png
+|Image2 = Uni236 c00.png
+|Name1 (JP) = 軍神オーディン (Gunshin ōdin, War God Odin)
+|Desc1 (JP) = ゆるドラシルから参戦！<br>戦場に立ったヴァルハラの神々を統べる主神<br>天使に打たれ強く、超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Joined the battle from Yurudrasil!<br>The main god who controls the gods of Valhalla on the battlefield<br>When struck, remains strong, super-damage is given to angels (Area Attack)
+|Name2 (JP) = 軍神オーディンCC (Gunshin ōdinCC, War God OdinCC)
+|Desc2 (JP) = ゆるドラシルから参戦！<br>本気を出した最高神。その隻眼に睨まれた者の未来はない<br>天使に打たれ強く、超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Joined the battle from Yurudrasil!<br>The supreme god who got serious. There is no future for those who are stared at by that eye.<br>When struck, remains strong, super-damage is given to angels (Area Attack)
+|Name1 (KR) = 군신 오딘
+|Desc1 (KR) = 유루드라실에서 참전!<br>전장의 발할라 신들을 통솔하는 최고 신<br>천사에 맷집이 좋고 초 데미지를 준다 (범위 공격)
+|Name2 (KR) = 군신 오딘CC
+|Desc2 (KR) = 유루드라실에서 참전!<br>진지함을 되찾은 최고 신. 그의 외눈에 찍힌 자의 미래는 없다.<br>천사에 맷집이 좋고 초 데미지를 준다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,800円
+*Chapter 2: 4,200円
+*Chapter 3: 5,600円
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = God of War - Odin
+|Normal Base HP = 1370
+|Normal Base AP = 1200
+|Normal Range = 425
+|Normal Foreswing = 54
+|Normal Attack Cooldown = 199
+|Normal Attack Length = 81
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 2800
+|Normal Recharge = 2500
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = God of War - Odin CC
+|Evolved Base HP = 2390
+|Evolved Base AP = 1950
+|Evolved Range = 425
+|Evolved Foreswing = 54
+|Evolved Attack Cooldown = 199
+|Evolved Attack Length = 81
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 2800
+|Evolved Recharge = 2500
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,370 HP
+|val-Normal-Attack Power = 1,200 damage<br>(142.29 DPS)
+|val-Normal-Attack Range = 425
+|val-Normal-Attack Frequency = 253f <sub>8.43 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 54f <sup>1.8s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 83.33 ~ 74.53 seconds
+|val-Normal-MaxHP = 23,290 HP
+|val-Normal-MaxAttack = 20,400 damage<br>(2,418.97 DPS)
+|val-Evolved-Health = 40,630 HP
+|val-Evolved-Attack Power = 33,150 damage<br>(3,930.83 DPS)
+|val-Evolved-Attack Range = 425
+|val-Evolved-Attack Frequency = 253f <sub>8.43 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 54f <sup>1.8s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 83.33 ~ 74.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni236 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/237.html
+
+----
+{{CatNav|Goddess of Abundance - Freya|Freshman Cat Jobs}}
+----
+
+{{Yurudrasil}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

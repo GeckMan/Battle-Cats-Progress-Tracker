@@ -1,0 +1,70 @@
+{{EnemiesAppearing|Mooth|Squire Rel|Hippoe|Those Guys|Pigge|B.B.Bunny|Christmas D.}}
+'''Sleepless Children''' is the second stage in [[Santa Claws at Work!#Night 1: Santa Claws at Work|Night 1: Santa Claws at Work]].
+
+{{Stage Info
+|stage name = [[File:rc054.png]]
+[[File:Mapsn325 01 s en.png]]
+|stage location = [[File:Mapname325 s en.png]]
+|energy = 50
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Mooth|100%
+|Squire Rel|100%
+|Hippoe|100%
+|Those Guys|100%
+|Pigge|100%
+|B.B.Bunny|100%}}
+|boss = {{Magnification|Christmas D.|20%}}
+|enemies2 = {{Magnification|Mooth|150%
+|Squire Rel|150%
+|Hippoe|150%
+|Those Guys|150%
+|Pigge|150%
+|B.B.Bunny|150%}}
+|boss2 = {{Magnification|Christmas D.|30%}}
+|enemies3 = {{Magnification|Mooth|200%
+|Squire Rel|200%
+|Hippoe|200%
+|Those Guys|200%
+|Pigge|200%
+|B.B.Bunny|200%}}
+|boss3 = {{Magnification|Christmas D.|40%}}
+|treasure = - [[A Gift of Cats (Rare Cat)|A Gift of Cats]] (2%, 1 time)
+|score reward = '''7,000''': 75,000 XP<br>
+'''4,000''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 1,500 XP
+|width = 5,200
+|max enemies = 9
+|jpname = Children Awake
+|script = 寝ない子供
+|romaji = Nenai Kodomo
+|star = 3
+|event-chapter = [[Santa Claws at Work!#Night 1: Santa Claws at Work|Night 1: Santa Claws at Work]]
+|difficulty = ★2
+|prev stage = [[5000 Presents per Sec.]]
+|next stage = [[Returning Gifts]]
+}}
+
+==Battleground==
+*1 [[Mooth]] spawns after 20 seconds<sup>600f</sup>.
+*3 [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Squire Rel]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Hippoe]]s spawn after 40 seconds<sup>1,200f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*1 [[Mooth]] spawns after 80 seconds<sup>2,400f</sup>.
+*Infinite [[Those Guys]] spawn after 83.33 seconds<sup>2,500f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Squire Rel]]s spawn after 100 seconds<sup>3,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 90% HP:
+**1 [[Christmas D.]] spawns as the boss.
+**1 [[Pigge]] spawns.
+**3 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+Ranged attackers like [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] will help here, since they can easily kill the Blitzen as long as you send some [[Tank Cat (Normal Cat)|Wall Cats]] to protect them. [[Fish Cat (Normal Cat)|Whale Cat]] can also be helpful, as all of the boss wave enemies are [[:Category:Red Enemies|Red]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01325-02.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

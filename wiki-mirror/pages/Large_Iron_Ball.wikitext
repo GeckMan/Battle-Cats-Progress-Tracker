@@ -1,0 +1,85 @@
+'''Large Iron Ball''' (大玉 (鉄), ''Ōdama (Tetsu)'', '''Large Ball (Iron)''') is a [[:Category:Metal Enemies|Metal]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Large Iron Ball
+|image = E 578.png
+|appearance = [[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]<br>
+[[New Year's Bling]]<br>
+[[Infernal Tower/Floor 6|Infernal Tower - Floor 6]]
+|money drop = 150¢ - 592¢
+}}
+
+==Enemy==
+Much like the other Balls from the event, it's really weak by itself, but quite tough in groups, particularly when buffed. By nature of having the Metal trait and one knockback, it is the tankiest of the Balls, but has slow speed.
+
+==Strategy==
+Quick attackers such as [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]] or [[Rocker Cat (Rare Cat)|Rocker Cat]] can chip its health pretty fast, and any [[Critical Hit]] will take it out instantly no matter what due to its pathetic 20 health, so units like [[Catornado (Super Rare Cat)|Catornado]] are perfect for defeating them. With its abysmal range of 100, you can also easily use [[Volley Cat (Rare Cat)|Curry Cat]] or [[Talents|Talented]] [[Panties Cat (Special Cat)|Lollycat]] to slow it down.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]:
+**[[Special 100kg Ball]] (10%, 100%)
+**[[Whose Ball is This?]] (150%)
+**[[Covered in Dust]] (200%)
+**[[Can't Stop Now]] (300%)
+*[[New Year's Bling]]:
+**[[Where's My Money, Mom?]] (10%, 100%)
+**[[Increasing Sums]] (150%)
+**[[Gifting Burden]] (200%)
+**[[No Gift This Year]] (300%)
+**[[Lucky! New Year's Loot!]] (100%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2021 Debut]] (600%)
+*[[Machines in Revolt]]: [[Hard Restart Lv.3]] (100%)
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[1600m Relay: Fast Start]] (300%)
+**[[400m Relay: Anchor Leg]] (100%)
+**[[800m Relay: Anchor Leg]] (300%)
+**[[1600m Relay: Anchor Leg]] (600%)
+*[[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]: [[Iron Orb Trial]] (100%)
+*[[Anniversary/13 1/2 Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]: [[Iron Orb Trial (13 1/2)|Iron Orb Trial]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 6|Floor 6]] (450%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Large Iron Ball
+|Health = 20
+|Attack Power = 2500
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 5
+|Knockback = 1
+|Foreswing = 8
+|Backswing = 143
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -600~200)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 75f <sub>2.5 seconds</sub>
+|Element = Metal
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+578 e.png|Large Iron Ball's spritesheet
+IdleMetalBall.gif|Large Iron Ball's moving animation
+</gallery>
+
+==Trivia==
+*This enemy, as well as [[Large White Ball]] and [[Large Red Ball]], are based on the Japanese Sports Day event Oodama Korogashi.
+
+==Reference==
+*https://battlecats-db.com/enemy/580.html
+
+----
+{{EnemyNav|Large Red Ball|Incubator}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Metal Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]

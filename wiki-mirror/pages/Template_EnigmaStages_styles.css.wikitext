@@ -1,0 +1,9 @@
+.ranger-navbox.enigma {
+	--bg-navbox-title: linear-gradient(to bottom, #f4f05a 0%, #e4e04f 100%);
+	--bg-group-name: #eae76f;
+
+	--title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,135 @@
+:''This article is about the Cat Unit. For the enemy, see [[Gilgamesh (Enemy)]].''
+'''Gilgamesh''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. He was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 368
+|rarity = UR
+|name1 = Gilgamesh
+|name2 = Gilgamesh CC
+}}
+
+==Evolution==
+Evolves into '''Gilgamesh CC''' at level 10.
+
+==Strategy/Usage==
+Gilgamesh can be used in much the same way as [[Splendid Ganesha (Uber Rare Cat)|Splendid Ganesha]], except with two notable differences. The first is that Gilgamesh has lower DPS due to Ganesha's higher attack percentage increase. The second is that Gilgamesh performs multi-hit attacks, dividing his damage into three equal parts.
+
+Since his multiple hits are grouped so tightly, Gilgamesh has no chance of hitting a target with all three hits if they are knocked back. For the same reason, enemies are unlikely to move into his attack range between his first and last hit. As a result, Gilgamesh's effective DPS will be only 42~83% of Ganesha's against some enemies, rendering his multi-hit quirk far more of a curse than a blessing. Unfortunately, his small inner range does not help his case.
+
+{{Job|Classification = Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 368
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni368 f00.png
+|Image2 = Uni368 c00.png
+|Name1 = Gilgamesh
+|Desc1 = Joining the fight from Fate/stay night [HF]! Inscrutible<br>young man with an air of invincibility. Long-range<br>Area attacks gets stronger after taking damage!
+|Name2 = Gilgamesh CC
+|Desc2 = Joining the fight from Fate/stay night [HF]! 8th<br>incarnation of a Spirit that shouldn't exist. Long-<br>range attacks gets stronger after taking damage!
+|Name1 (JP) = ギルガメッシュ (Gilgamesh)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>不敵な笑みで現れた謎の青年<br>体力低下で攻撃力上昇(遠方範囲攻撃)
+|Transl1 (JP) = Joining the war from Fate/stay night [HF]!<br>Mysterious young man who appears with a fearless smile<br>Attack power increases when health is lowered (Long Distance Area Attack)
+|Name2 (JP) = ギルガメッシュCC (Gilgamesh CC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>その正体は存在しないはずの8人目の英霊<br>体力低下で攻撃力上昇(遠方範囲攻撃)
+|Transl2 (JP) = Joining the war from Fate/stay night [HF]!<br>Heroic Spirit who should not exist<br>Attack power increases when health is lowered (Long Distance Area Attack)
+|Name1 (TW) = Gilgamesh
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>面帶微笑現身的神秘少年<br>體力下降時攻擊力上升(遠距範圍攻擊)
+|Name2 (TW) = Gilgamesh CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>應該是不存在的第八名英靈<br>體力下降時攻擊力上升(遠距範圍攻擊)
+|Name1 (KR) = 길가메시
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>오만한 미소와 함께 나타난 수수께끼의 청년<br>체력이 감소하면 공격력이 상승한다 (원거리 범위공격)
+|Name2 (KR) = 길가메시CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>그 정체는 존재할 리 없는 8번째 영령<br>체력이 감소하면 공격력이 상승한다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 3,000¢
+*Chapter 2: 4,500¢
+*Chapter 3: 6,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Gilgamesh
+|Normal Base HP = 2500
+|Normal Base AP = 530,530,530
+|Normal Range = 390
+|Normal Foreswing = 64,68,74
+|Normal Attack Cooldown = 187
+|Normal Attack Length = 111
+|Normal Speed = 10
+|Normal KB = 4
+|Normal Cost = 3000
+|Normal Recharge = 3800
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (9,010 at 64f <sup>2.13s</sup>, 9,010 at 68f <sup>2.27s</sup>, 9,010 at 74f <sup>2.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 325~725)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 75% health
+|Evolved Name = Gilgamesh CC
+|Evolved Base HP = 3600
+|Evolved Base AP = 770,770,770
+|Evolved Range = 390
+|Evolved Foreswing = 64,68,74
+|Evolved Attack Cooldown = 187
+|Evolved Attack Length = 111
+|Evolved Speed = 10
+|Evolved KB = 4
+|Evolved Cost = 3000
+|Evolved Recharge = 3800
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (13,090 at 64f <sup>2.13s</sup>, 13,090 at 68f <sup>2.27s</sup>, 13,090 at 74f <sup>2.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 325~725)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 75% health
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,500 HP
+|val-Normal-Attack Power = 1,590 damage<br>(182.76 DPS)
+|val-Normal-Attack Range = 390
+|val-Normal-Attack Frequency = 261f <sub>8.7 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 64f <sup>2.13s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Normal-Recharge Time = 126.67 ~ 117.87 seconds
+|val-Normal-MaxHP = 42,500 HP
+|val-Normal-MaxAttack = 27,030 damage<br>(3,106.9 DPS)
+|val-Evolved-Health = 61,200 HP
+|val-Evolved-Attack Power = 39,270 damage<br>(4,513.79 DPS)
+|val-Evolved-Attack Range = 390
+|val-Evolved-Attack Frequency = 261f <sub>8.7 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 64f <sup>2.13s</sup><br>(37f <sup>1.23s</sup> backswing)
+|val-Evolved-Recharge Time = 126.67 ~ 117.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni368 f00}}
+
+==Trivia==
+*Prior to [[Version 15.6 Update|Version 15.6]], both of Gilgamesh's forms' descriptions misspelled "attacks" as "atttacks".
+
+==Reference==
+*https://battlecats-db.com/unit/369.html
+
+----
+{{CatNav|Rider|Saber the Cat}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Long Distance Cats]]

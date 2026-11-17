@@ -1,0 +1,8 @@
+<includeonly><onlyinclude><div class="animation-container" data-spritesheet="{{{1}}}" data-json="{{{2}}}" data-json-revisionid="{{REVISIONID:{{{2}}}}}" data-default-bg="{{{bg|}}}" data-initial-frame="{{{frame|0}}}" data-bg-type="{{{bgtype|stage}}}" data-bg-align="{{{bgalign|bottom}}}"><!--
+	--><div class="viewer-bottom-left"><div class="viewer-menu"></div></div><!--
+	--><div class="viewer-info-text viewer-settings-menu"><span class="fallback"><strong class="error">Animation viewer has not loaded!</strong></span><span class="viewer-text-real" style="display:none"><span class="nomobile">In addition to the viewer buttons, the mouse can be used to drag around the unit, and clicking the viewer background enables zooming with a trackpad or mouse wheel.</span><span class="mobileonly">Dragging and zooming in/out can be done with touch gestures after tapping the viewer background, indicated by an inner shadow.</span><br>To change the background, enter the file name of a background image (a list can be found at [[Backgrounds]]). Clearing the field will give a transparent background. For more info on this template, see [[Template:AnimationViewer#Explanation|explanation]].</span></div><!--
+	--><div class="inner-box-shadow" style="display: none; position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 2; box-shadow: inset 0 0 4px #000; pointer-events: none;"></div><!--
+--></div>
+{{#invoke:AnimationViewer|image}}[[Category:Pages using animation viewer]]<div class="hiddenlink" style="display:none !important">[[File:{{{1}}}]][[{{{2}}}]]</div></onlyinclude></includeonly>{{/doc}}
+
+[[Category:Content templates]]

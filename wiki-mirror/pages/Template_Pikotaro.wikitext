@@ -1,0 +1,22 @@
+{{#invoke:Navbox|main
+|template = Template:Pikotaro
+|title = [[Pikotaro Collaboration Event]]
+|navbox_class = pikotaro
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[PIKOTARO (Rare Cat)|PIKOTARO]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Pikotaro (Enemy)|Pikotaro]]
+
+|header3 = Stages
+|group3 = PPAP
+|list3 =
+*[[PPAP]]
+}}<templatestyles src="Pikotaro/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Pikotaro]]}}<noinclude>[[Category:Navboxes]]</noinclude>

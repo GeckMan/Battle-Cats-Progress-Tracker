@@ -1,0 +1,119 @@
+{{ENExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Shakurel Panda (Enemy)]].''
+'''Shakurel Panda''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.8 Update|Version 8.8]] and can be unlocked by purchasing a special sale which contains Shakurel Panda and 500 [[Cat Food]] during the [[Shakurel Planet Collaboration Event]].
+
+{{Cat Info
+|ID = 500
+|rarity = EX
+|name1 = Shakurel Panda
+|name2 = Shakurel Panda CC
+}}
+
+==Evolution==
+Evolves into '''Shakurel Panda CC''' at level 10.
+
+==Strategy/Usage==
+This cat's Health and Damage are actually a bit good for early game and even mid game, but late game, Zombies just get way too strong for him, killing him almost instantly, not even mentioning his single target and long recharge and gets outclassed by Vaulter Cat, Ubers and other cats.
+
+{{Job|Classification = Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 500
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni500 f00.png
+|Image2 = Uni500 c00.png
+|Name1 = Shakurel Panda
+|Desc1 = Joining the fight from Shakurel Planet!<br>Leaves just don't satisfy anymore... maybe<br>bones, trees and rocks are more filling.
+|Name2 = Shakurel Panda CC
+|Desc2 = Joining the fight from Shakurel Planet!<br>Even though I can now chew up bones,<br>trees and rocks, I can't give up on bamboo.
+|Name1 (TW) = 戽斗熊貓
+|Desc1 (TW) = 從戽斗星球來參戰！<br>雖然有下巴後骨頭木頭岩石都可以輕易進食，<br>但唯獨竹葉還是不能離手！
+|Name2 (TW) = 戽斗熊貓CC
+|Desc2 (TW) = 從戽斗星球來參戰！<br>雖然有下巴後骨頭木頭岩石都可以輕易進食，<br>但唯獨竹子還是不能離手！
+|Name1 (KR) = 주걱턱 팬더
+|Desc1 (KR) = 주걱턱 행성에서 참전!<br>뼈다귀도 나무도 암석도 먹을 수 있게 되었지만<br>대나무만은 끊지 못하고 있다
+|Name2 (KR) = 주걱턱 팬더CC
+|Desc2 (KR) = 주걱턱 행성에서 참전!<br>뼈다귀도 나무도 암석도 먹을 수 있게 되었지만<br>역시 참대나무가 최고
+}}
+
+==Cost==
+*Chapter 1: 850¢
+*Chapter 2: 1,275¢
+*Chapter 3: 1,700¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shakurel Panda
+|Normal Base HP = 1800
+|Normal Base AP = 450
+|Normal Range = 140
+|Normal Foreswing = 25
+|Normal Attack Cooldown = 35
+|Normal Attack Length = 29
+|Normal Speed = 6
+|Normal KB = 2
+|Normal Cost = 850
+|Normal Recharge = 1200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Shakurel Panda CC
+|Evolved Base HP = 2450
+|Evolved Base AP = 600
+|Evolved Range = 140
+|Evolved Foreswing = 25
+|Evolved Attack Cooldown = 35
+|Evolved Attack Length = 29
+|Evolved Speed = 6
+|Evolved KB = 2
+|Evolved Cost = 850
+|Evolved Recharge = 1200
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,800 HP
+|val-Normal-Attack Power = 450 damage<br>(225 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 60f <sub>2 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 25f <sup>0.83s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 30,600 HP
+|val-Normal-MaxAttack = 7,650 damage<br>(3,825 DPS)
+|val-Evolved-Health = 41,650 HP
+|val-Evolved-Attack Power = 10,200 damage<br>(5,100 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 60f <sub>2 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 25f <sup>0.83s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni500 f00}}
+
+----
+{{CatNav|Shakurel Tiger|Cat Bros R}}
+----
+
+{{Shakurel Planet}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Zombie Killer Cats]]
+[[Category:Wave Attack Cats]]

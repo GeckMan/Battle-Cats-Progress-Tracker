@@ -1,0 +1,62 @@
+{{EnemiesAppearing|Cli-One|Henry|Nimoy Bore|Doge|Trolly Blogger}}
+'''Close Encounters''' is the fifth stage in [[Axis of Evil]]. [[Cli-One]] makes her first [[Stories of Legend]] appearance here.
+
+{{Stage Info
+|stage name = [[File:rc006.png]]
+[[File:Mapsn032 04 n en.png]]
+|stage location = [[File:Mapname032 n en.png]]
+|energy = 120
+|enemy castle hp = 990,000 HP
+|enemies = {{Magnification|Henry|100%
+|Nimoy Bore|800%
+|Doge|400%
+|Trolly Blogger|200%}}
+|boss = {{Magnification|Cli-One|2,000%}}
+|enemies2 = {{Magnification|Henry|120%
+|Nimoy Bore|960%
+|Doge|480%
+|Trolly Blogger|240%}}
+|boss2 = {{Magnification|Cli-One|2,400%}}
+|enemies3 = {{Magnification|Henry|140%
+|Nimoy Bore|1,120%
+|Doge|560%
+|Trolly Blogger|280%}}
+|boss3 = {{Magnification|Cli-One|2,800%}}
+|treasure = - 228,000 XP (10%, 1 time)<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 2,280 XP
+|width = 3,200
+|max enemies = 8
+|jpname = Cosmos Exploitation Bureau
+|script = 宇宙開発局
+|romaji = Uchū Kaihatsu-kyoku
+|star = 4
+|sub-chapter = [[Axis of Evil]]
+|difficulty = ★9
+|prev stage = [[Celestial Seas]]
+|next stage = [[The Spy Who Pet Me]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~12 seconds<sup>200f~360f</sup>.
+*When the base reaches 99% HP:
+**1 [[Cli-One]] spawns as the boss.
+**1 [[Henry]] spawns.
+**1 [[Nimoy Bore]] spawns.
+**Infinite [[Trolly Blogger]]s spawn, delay 6.67~8 seconds<sup>200f~240f</sup>.
+
+==Strategy==
+Your objective is going to be killing the enemies that come out of the base one by one. Due to the presence of Henry, it's best you try to avoid any base damage at all prior to hitting the enemy base, as Henry can snipe your base no matter where he is on the field. Use the time before base hit to get a max [[Worker Cat]] and wallet. Once you hit the base, prioritize killing Nimoy Bore first, as he will be the biggest pusher, as well as your biggest source of money in the stage. Once Nimoy Bore is dead, you are free to choose between killing Cli-One or Henry. Do note, taking too long to kill Henry will result in your base being destroyed, so be mindful of that.
+
+==Trivia==
+*Close Encounters is a reference to ''[[wikipedia:Close Encounters of the Third Kind|Close Encounters of the Third Kind]]'', an American science fiction film directed by [[wikipedia:Steven Spielberg|Steven Spielberg]] which heavily involves aliens.
+*Like all [[Axis of Evil]] stages, Close Encounters has a Russian-themed Japanese name. In this case, Uchū Kaihatsu-kyoku (宇宙開発局) translates to "Cosmos Exploitation Bureau", alluding to the Russian space agency [[wikipedia:Roscosmos|Roscosmos]].
+*Prior to [[Version 11.5 Update|version 11.5]], Doge was set to spawn every 13.3~6.7 seconds instead of just 13.3. It didn't work properly because the maximum times were lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s00032-05.html
+
+{{LegendStages}}
+[[Category:Stories of Legend Stages]]
+[[Category:Sub-chapter 33 Stages]]

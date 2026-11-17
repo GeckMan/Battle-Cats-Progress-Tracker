@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Celeboodle|Mr. Puffington|Croakley|Puffzerker|Puffsley's Comet}}
+'''Snores and Prayers''' is the fourth stage in [[Sleeping Chasm]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn023 03 nd en.png]]
+|stage location = [[File:Mapname023 nd en.png]]
+|energy = 180
+|enemy castle hp = 2,000,000 HP
+|enemies = {{Magnification|Celeboodle|1,200%
+|Mr. Puffington|120%
+|Croakley|180%
+|Puffzerker|250%}}
+|boss = {{Magnification|Puffsley's Comet|120%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 10,260 XP
+|width = 5,500
+|max enemies = 10
+|jpname = Snoring Prayer
+|script = いびき祈祷
+|romaji = Ibiki Kitō
+|star = 1
+|sub-chapter = [[Sleeping Chasm]]
+|difficulty = ★12
+|prev stage = [[Dreams and Illusions]]
+|next stage = [[No Sleeping In]]
+}}
+
+==Battleground==
+*6 [[Celeboodle]]s spawn after 3.33 seconds<sup>100f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*3 [[Mr. Puffington]]s spawn after 20 seconds<sup>600f</sup>, delay 80~86.67 seconds<sup>2,400f~2,600f</sup>.
+*1 [[Croakley]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Puffzerker]] spawns after 73.33 seconds<sup>2,200f</sup>.
+*1 [[Puffsley's Comet]] spawns as the boss after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 90% HP:
+**1 [[Puffzerker]] spawns.
+
+==Strategy==
+While this stage might appear circular in gameplay, stopping the velocity of all three pufferfishes at the same time with [[Stone Cat (Rare Cat)|Boulder Cat]] and [[Master of Logic Newtone (Special Cat)|Newtone]] is not a particularly viable option thanks to Puffzerker's [[:Category:Red Enemies|Red]] trait letting them get Slowed by Newtone and de-syncing them, allowing the three balls to demonstrate Newton's First Law, with your units as test subjects. Because of this, you'll have to play this stage normally by using specific counter units for each mass present here.
+
+The first pufferfish, Mr. Puffington, will quickly die to a good [[Idi:N (Special Cat)|Idi:NX]], although given his 120% strength magnification you'll need any Attack Up (Sm) [[Cat Combo]] like [[Brave Cutter (Combo)|Brave Cutter]] in order to one-shot him. Once Puffington dies, Idi should be able to kill the Celeboodle that spawns next, then get relatively tangential near the enemy base. Once Puffsley spawns and kills your Idi, let him roll in a relatively uniform velocity near your base, then use the power of [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] alongside meatshields to severely damage Puffsley. A Puffzerker should come in after a bit and enact an elastic collision with your Bahamut: at this point, start stalling the horde as well as you can with your meatshields. If you found spare room regarding your lineup, the best units to use here are [[Express Cat (Super Rare Cat)|Bullet Train Cat]] or [[Elder Mask Doron (Special Cat)|Awakened Doron]] to specifically wear them down during this period. By the time the next Puffington rolls in, Idi should be fully recharged. After she hits and kills Puffington, your next goal is removing what little health Puffsley should have with support from [[Cossack Cat (Rare Cat)|Royal Guard Cat]], [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] or [[Miter Saw Cat (Super Rare Cat)|Neo Saw Cat]]. After this is accomplished, clean up the Puffzerker and the Croakley and beat the stage, although do be careful of the extra Puffzerker on base hit.
+
+==Reference==
+*https://battlecats-db.com/stage/s34023-04.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 122 Stages]]
+[[Category:Zero Legends Stages]]

@@ -1,0 +1,289 @@
+div.lineup-template {
+	margin: 10px 0px;
+}
+
+.lineup-template .desktop-mode {
+	display: inline-flex;
+	flex-direction: row;
+	border-style: solid;
+	border-width: 1px;
+	border-color: rgb(153, 131, 82);
+	background-color: rgb(200, 179, 117);
+}
+
+.lineup-template .desktop-mode .main-part {
+	position: relative;
+	width: 532px;
+	height: auto;
+	padding: 0px;
+}
+
+.lineup-template .desktop-mode .main-part .lineup-name-box {
+	position: absolute;
+	top: 5px;
+	left: 7px;
+	width: auto;
+	height: 20px;
+	border-radius: 10px;
+	padding: 0px 10px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 9.5pt;
+	overflow: hidden;
+	line-height: 20px;
+}
+
+.lineup-template .desktop-mode .main-part .lineup-slots-background {
+	position: absolute;
+	top: 40px;
+	left: 75px;
+}
+
+.lineup-template .desktop-mode .main-part .page-1-marker {
+	position: absolute;
+	top: 67px;
+	left: 12px;
+}
+
+.lineup-template .desktop-mode .main-part .page-2-marker {
+	position: absolute;
+	top: 128px;
+	left: 12px;
+}
+
+.lineup-template .desktop-mode .main-part .units-container {
+	position: static;
+	height: 172px;
+}
+
+.lineup-template .desktop-mode .units {
+	position: relative;
+	top: 10px;
+	left: 0px;
+}
+
+.lineup-template .desktop-mode .units .slot-img-container {
+	position: absolute;
+	overflow: hidden;
+	width: 80px;
+	height: 54px;
+	top: 15px;
+	z-index: 1;
+}
+
+/* THERE ARE SO MANY DIVS */
+.lineup-template .desktop-mode .units .slot-img-container .slot-inner-container {
+	position: absolute;
+	top: -13px;
+	left: -5px;
+	z-index: 2;
+}
+
+.lineup-template .units .slot-base .unit-level {
+	margin: 0;
+	white-space: nowrap;
+	position: absolute;
+	color: #deb338;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 9pt;
+	left: 2px;
+	padding: 1px;
+	/* padding means shadow doesn't get cut off */
+}
+
+.lineup-template .desktop-mode .main-part .combos-container {
+	position: static;
+	height: 114px;
+}
+
+.lineup-template .desktop-mode .main-part .combos-container .combos {
+	position: absolute;
+	top: 175px;
+	left: 12px;
+	width: 506px;
+	height: 100px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.lineup-template .combos .combos-tab-title {
+	position: absolute;
+	top: 0px;
+	left: calc(50% - 70px);
+	height: 24px;
+	width: 140px;
+	border-radius: 0px 0px 10px 10px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	font-size: 9.5pt;
+}
+
+.lineup-template .combos .combos-row-container {
+	position: absolute;
+	top: 32px;
+	left: 0px;
+	width: 100%;
+	height: 70px;
+	overflow-x: auto;
+	overflow-y: hidden;
+	text-align: left;
+}
+
+.lineup-template .combos .combo-box {
+	position: absolute;
+	top: 0px;
+	width: 200px;
+	height: 60px;
+	border-radius: 5px;
+	background-color: rgb(0, 0, 0, 0.4);
+	color: white;
+}
+
+.lineup-template .combos .combo-box-text {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	color: white;
+	text-align: center;
+}
+
+.lineup-template .combos a {
+	color: white;
+}
+
+.lineup-template .main-part .items-container {
+	position: static;
+	height: 55px;
+}
+
+.lineup-template .main-part .items-container .items {
+	position: relative;
+	top: 0px;
+	left: 25px;
+}
+
+.lineup-template .items .items-tab-title {
+	position: absolute;
+	top: 5px;
+	left: 0px;
+	width: 100px;
+	height: 32px;
+	border-radius: 16px;
+	background-color: black;
+	color: white;
+	font-size: 9pt;
+	text-align: center;
+	padding-top: 5px;
+}
+
+.lineup-template .items .items-icons-container {
+	position: absolute;
+	top: 1px;
+	left: 126px;
+	letter-spacing: 5px;
+}
+
+.lineup-template .main-part .notes {
+	position: static;
+	width: auto;
+	height: auto;
+	padding: 0px 12px 10px 12px;
+}
+
+.lineup-template .main-part .notes .notes-text-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	background-color: black;
+	color: white;
+	font-size: 9pt;
+	padding: 5px 10px;
+	line-height: 21px;
+	text-align: left;
+}
+
+.lineup-template .notes a {
+	color: #00cdd0;
+}
+
+.lineup-template .notes .new {
+	color: var(--theme-alert-color--hover);
+}
+
+.lineup-template .base-part {
+	position: relative;
+	width: 180px;
+	border-left: 1px solid rgb(153, 131, 82);
+	box-shadow: 0 0 5px 1px #000a inset;
+	padding-bottom: 3px;
+}
+
+.lineup-template .base-part .base-part-inner {
+	position: absolute;
+	min-width: 180px;
+	height: 100%;
+	box-shadow: 0 0 5px 1px #000a inset;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+.lineup-template .base-part .base-part-title {
+	position: relative;
+	left: calc(50% - 50px);
+	height: 24px;
+	width: 100px;
+	border-radius: 12px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	margin-top: 5px;
+}
+
+.lineup-template .base-part .base-imgs {
+	height: 270px;
+	width: 180px;
+	position: relative;
+	top: 0;
+	left: calc(50% - 64px);
+}
+
+.lineup-template .base-part .base-part-text {
+	position: relative;
+	width: 90%;
+	height: 20px;
+	margin: 4px auto;
+	background-color: black;
+	color: white;
+	border-radius: 10px;
+	font-size: 12px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.lineup-template * {
+	box-sizing: border-box;
+}
+
+/* specify image sizes to override width: auto in comments */
+.lineup-slots-background img {
+	width: 442px;
+}
+
+.slot-img-container img {
+	width: 80px;
+}
+
+.page-1-marker img,
+.page-2-marker img {
+	width: 64px;
+}
+
+.base-part-text img {
+	width: 18px;
+}
+
+/* [[Category:Template stylesheets]] */

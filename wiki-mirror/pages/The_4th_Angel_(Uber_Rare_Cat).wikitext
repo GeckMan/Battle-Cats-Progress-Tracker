@@ -1,0 +1,137 @@
+:''This article is about the Cat Unit. For the enemy, see [[The 4th Angel (Enemy)|The 4th Angel]].''
+'''The 4th Angel''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was introduced in [[Version 10.2 Update|Version 10.2]] and can be unlocked during the [[Neon Genesis Evangelion Collaboration Event]].
+
+{{Cat Info
+|ID = 548
+|rarity = UR
+|name1 = The 4th Angel
+|name2 = 4th Angel Cat
+}}
+
+==Evolution==
+Evolves into '''4th Angel Cat''' at level 10.
+
+==Strategy/Usage==
+This unit's main strength is the long range and good survivability, at least for a unit with its range, and the nice ability against Darks. This unit can provide decent support from the backlines and, sometimes, cause a lot of trouble to Dark enemies by pushing them back rather often, while the occasional Mini-Waves can keep most Dark enemies at bay, although this is usually redundant thanks to most Dark enemies' high knockback count.
+
+Unfortunately, its anti-Dark niche and range come at the cost of a low DPS, even for range of its caliber, making its general usage limited.
+
+{{Job|Classification = Super-Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 548
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni548 f00.png
+|Image2 = Uni548 c00.png
+|Name1 = The 4th Angel
+|Desc1 = Terrifying being appearing with unknown intent.<br>Striking out with piercing light from its palms.<br>Massive Area damage & Knockback vs. Dark.
+|Name2 = 4th Angel Cat
+|Desc2 = A Cat Army-produced replica of the 4th Angel.<br>Modified by fusing a Cat to the Angel's core.<br>Massive Area damage & Knockback vs. Dark.
+|Name1 (JP) = 第４の使徒 (Dai Yon no Shito, The Fourth Apostle)
+|Desc1 (JP) = 人類の前に現れた未知なる異形の生命体<br>掌から射出される光のパイルですべてを貫く<br>黒い敵に超ダメージを与え、ふっとばす(範囲攻撃)
+|Transl1 (JP) = A strange, unidentified life form that has appeared in front of humanity<br>piercing everything with a pile of light ejected from its palm<br>Inflicting super damage to Black Enemies and wiping them out (Area Attack)
+|Name2 (JP) = 第４のネコ使徒 (Dai Yon no Neko Shito, The Fourth Cat Apostle)
+|Desc2 (JP) = 第４の使徒を模したネコの造りし生命体<br>自らコアと融合することでネコらしさを強化させた<br>黒い敵に超ダメージを与え、ふっとばす(範囲攻撃)
+|Transl2 (JP) = A feline lifeform that resembles the 4th Apostle<br>fused with its own core to enhance its feline nature<br>Deals super damage to Black Enemies and wipes them out (Area Attack)
+|Name1 (TW) = 第4使徒
+|Desc1 (TW) = 出現在人類面前的未知異形生命體<br>用手掌射出的光線可貫穿一切<br>可以給予黑色敵人超大傷害、且能打飛(範圍攻擊)
+|Name2 (TW) = 第4貓使徒
+|Desc2 (TW) = 仿造第4使徒造的貓咪生命體<br>透過自己與核心結合更加強化了貓咪感<br>可以給予黑色敵人超大傷害、且能打飛(範圍攻擊)
+|Name1 (KR) = 제4사도
+|Desc1 (KR) = 인류 앞에 나타난 미지의 이형 생명체<br>손바닥에서 발사되는 빛의 파일로 모든 것을 관통시킨다<br>검은 적에 초 데미지를 입히며 날려버린다 (범위 공격)
+|Name2 (KR) = 제4사도 고양이
+|Desc2 (KR) = 제4사도를 본떠 만든 고양이 생명체<br>스스로 코어와 융합하여 고양이다움을 강화시켰다<br>검은 적에 초 데미지를 입히며 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,450¢
+*Chapter 2: 3,675¢
+*Chapter 3: 4,900¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = The 4th Angel
+|Normal Base HP = 2100
+|Normal Base AP = 870
+|Normal Range = 500
+|Normal Foreswing = 38
+|Normal Attack Cooldown = 133
+|Normal Attack Length = 103
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 2450
+|Normal Recharge = 5600
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Mini-Wave}} 50% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Evolved Name = 4th Angel Cat
+|Evolved Base HP = 2100
+|Evolved Base AP = 870
+|Evolved Range = 500
+|Evolved Foreswing = 38
+|Evolved Attack Cooldown = 133
+|Evolved Attack Length = 103
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 2450
+|Evolved Recharge = 5600
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Mini-Wave}} 50% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,100 HP
+|val-Normal-Attack Power = 870 damage<br>(152.63 DPS)
+|val-Normal-Attack Range = 500
+|val-Normal-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 38f <sup>1.27s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Normal-Recharge Time = 186.67 ~ 177.87 seconds
+|val-Normal-MaxHP = 35,700 HP
+|val-Normal-MaxAttack = 14,790 damage<br>(2,594.74 DPS)
+|val-Evolved-Health = 35,700 HP
+|val-Evolved-Attack Power = 14,790 damage<br>(2,594.74 DPS)
+|val-Evolved-Attack Range = 500
+|val-Evolved-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 38f <sup>1.27s</sup><br>(65f <sup>2.17s</sup> backswing)
+|val-Evolved-Recharge Time = 186.67 ~ 177.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni548 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/549.html
+
+----
+{{CatNav|Night Oracle Rei|The 6th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Knockback ability]]
+[[Category:Mini-Wave Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Cats with unique death animations]]

@@ -1,0 +1,14 @@
+<onlyinclude>{| class="stubcat template-collapsible-notice" style="overflow:hidden;clear:both;height:115px;max-width:560px;border:2px solid white;border-radius:15px;padding:0px 10px;background:#21312c;background-image:-webkit-linear-gradient(top,#21312c 0%,#4a6963 100%);background-image:linear-gradient(to bottom,#21312c 0%,#4a6963 100%);background-repeat:no-repeat;background-position:0 0;background-size:auto auto;margin:2px auto;box-shadow:1px 1px 2px #000;"
+| class="nomobile" style="position:relative;bottom:-15px;"| [[File:TankNotice.png|link=|bottom|120px]]
+| style="padding-left:20px;margin-top:5px;color:white;font-size:15px;line-height:16px;"| <div class="catbox_text_container"><!-- WARNING part--><div class="catbox_text warning_text" style="text-indent:-18px;">~ Nyanko, this article seems to be as long as [[Nobiluga (Uber Rare Cat)|Mystican Pasalan]]!</div><!-- QUOTE part--><div class="catbox_text nomobile" style="text-indent:-18px;">~ Click show or hide at the bottom right of this notice to display or hide the collapsed media!</div></div>
+|}{{#if:{{{text|}}}|
+<div class="template-collapsible long-section-collapsible mw-collapsible mw-collapsed" data-expandtext="Show" data-collapsetext="Hide">
+{{{text}}}
+</div>}}</onlyinclude>
+;Description
+:This template will hide sections of articles that are extremely long and requires the {{t|Collapsible}} template.
+;Syntax
+:Type <code><nowiki>{{LongSection|text=...}}</nowiki></code> at the start of an article.
+:NOTE: if the text attribute is ignored this will work more like {{t|Stub}} and you will need to apply the collapsible section yourself
+
+[[Category:Page notices]]

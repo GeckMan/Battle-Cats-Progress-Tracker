@@ -1,0 +1,89 @@
+'''Nutcracker Witch''' (くるみ割りの魔女, ''Kurumiwari no Majo'', '''Nutcracker Witch''') is a [[:Category:Witch Enemies|Witch]] enemy that appears in the [[Puella Magi Madoka Magica Collaboration Event]]. She was added in [[Version 7.4 Update|Version 7.4]].
+
+{{Enemy Info
+|name = Nutcracker Witch
+|image = E 429.png
+|appearance = [[Puella Magi Madoka Magica Collaboration Event]]
+|money drop = 9,000¢ - 35,550¢
+}}
+
+==Enemy==
+Nutcracker Witch is an incredibly tough enemy, with 9 million health, exceptional range, [[Base Destroyer]] and immunity to most effects. Because of her [[Omni Strike]], she only needs to get within 1,800 range of the [[Cat Base]] to damage it and, with Base Destroyer, she deals 48,000 damage per hit. The worst thing she has going for her is her [[Weaken|weaken]] ability, which for any cat not immune to weaken effectively doubles her health to ''18 million''.
+
+==Strategy==
+The best way to defeat her is with [[Li'l Madoka (Rare Cat)|Li'l Madoka]]'s and [[Li'l Homura (Special Cat)|Li'l Homura]]'s [[Cat Combo|Combo]], [[My Very Best Friend (Combo)|My Very Best Friend]], combined with [[:Category:Uber Rare Cats|Uber Rares]] from the collab like [[Kyoko Sakura (Uber Rare Cat)|Kyoko Sakura]]. If such Ubers are not available, others like [[Lesser Demon Cat (Uber Rare Cat)|Balrog Cat]] can also be very effective.
+
+Her DPS is not the best, so tankers like [[Titan Cat (Normal Cat)|Jamiera]] and [[Kai (Uber Rare Cat)|Kai]] are great for walking up and dealing damage. Your attackers should also ideally have weaken/knockback immunity as well.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nutcracker Witch]]:
+**[[This is My Despair]] (30%)
+**[[How Did it Come to This?]] (70%)
+**[[Thank You For Coming]] (100%)
+**[[Just Couldn't Say Goodbye]] (125%)
+**[[I'm Sorry]] (150%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[A Fake Mitakihara]]:
+**[[The Nutcracker Witch (Veteran)]] (30%)
+**[[The Nutcracker Witch (Merciless)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Nutcracker Witch
+|Health = 9000000
+|Attack Power = 12000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 170
+|Movement Speed = 4
+|Knockback = 3
+|Foreswing = 39
+|Backswing = 100
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -1,800~1,800)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Base Destroyer}} [[Base Destroyer]] (deals 4x damage to the [[Cat Base]])<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Witch
+}}
+
+{{UnitViewer|enemy|bg=Bg100 bottom.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+429 e.png|Nutcracker Witch's spritesheet
+IdleHomulily.gif|Nutcracker Witch's moving animation
+</gallery>
+
+==Trivia==
+*Nutcracker Witch has the highest health out of all enemies at 100% strength magnification.
+*Nutcracker Witch is tied with [[Walpurgisnacht (Enemy)|Walpurgisnacht]] for the 2nd place of most abilities out of all enemies. The only other enemies with more abilities are [[Bears Be Back]] and [[Unit-13's False Evolution]], both of which are also tied.
+*Incidentally, [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou|YuruGeGe]]'s Traitless Enemy, [[wikia:gegegenokitaro:Nurarihyon|Nurarihyon]]'s rebirthed form, Nurari-Kanibozu has similar attack mechanism without low KB rate.
+*Prior to [[Version 14.1 Update|Version 14.1]], Nutcracker Witch's name was Homulilly.
+
+==Reference==
+*https://battlecats-db.com/enemy/431.html
+
+----
+{{EnemyNav|Dread Bore|Satan Claus}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Witch Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

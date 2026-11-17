@@ -1,0 +1,151 @@
+{{EnemiesAppearing|Metal Hippoe|Rain D.|Sir Seal|Lucky Sloth}}
+
+{{Stage Info
+|stage name = [[File:Rc016.png]]
+[[File:Mapsn039 00 a en.png]]
+|stage location = [[File:Mapname039 a en.png]]
+|enemies = {{Magnification|Metal Hippoe|0
+|Rain D.|0
+|Sir Seal|0}}
+|boss = {{Magnification|Lucky Sloth|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,500
+|max enemies = 15
+|jpname = Summon Lv.X
+|script = 召喚 Lv.X
+|romaji = Shōkan Lv. X
+|event = [[February Gauntlet]]
+|event-chapter = [[February Gauntlet]]
+|require = Clear [[Ritual Happiness (Monthly Event)|Ritual Happiness]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*1 [[Metal Hippoe]] spawns after 3.33 seconds<sup>100f</sup>.
+*3 [[Rain D.|Rain Ds]] spawn after 120 seconds<sup>3,600f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*3 [[Metal Hippoe]]s spawn after 100 seconds<sup>3,000f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*Infinite [[Sir Seal]]s spawn after 20 seconds<sup>600f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Lucky Sloth]] spawns as the boss after 0.4 seconds<sup>12f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Happiness Lv.
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Lucky Sloth]]
+! scope="col" |[[Metal Hippoe]]
+! scope="col" |[[Rain D.]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|400%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|122%
+|117%
+|111%
+|522%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|144%
+|134%
+|122%
+|644%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|166%
+|151%
+|133%
+|766%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|188%
+|168%
+|144%
+|888%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|210%
+|185%
+|155%
+|1,010%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|232%
+|202%
+|166%
+|1,132%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|254%
+|219%
+|177%
+|1,254%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|276%
+|236%
+|188%
+|1,376%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|300%
+|250%
+|200%
+|1,500%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+The main gist of this stage is to use the Metal Hippoe as a stepping stone for [[Long Distance]] attackers or [[:Category:Waver-class Cats|Wavers]] to chip Lucky Sloth down, eliminate Metal Hippoe, and destroy the base before the Rain D.s spawn. Some good snipers for this stage include [[Vaulter Cat (Super Rare Cat)|Housewife Cat]], [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Slime Cat (Rare Cat)|Slime Cat]], [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]], and (for later game players) [[Ancient Egg: N005 (Special Cat)|Hitman Cat]]. The rest of your lineup should comprise of a good critter ([[Jurassic Cat (Rare Cat)|Catasaurus]] or [[Cheerleader Cat (Super Rare Cat)|Soba Cat]] work especially well), and strong rushers like [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]. Overall, a very simple Gauntlet.
+
+==Reference==
+*https://battlecats-db.com/stage/s24039.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]
+[[Category:Event Stages]]
+[[Category:Event]]

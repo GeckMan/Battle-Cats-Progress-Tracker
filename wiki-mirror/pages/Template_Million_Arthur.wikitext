@@ -1,0 +1,31 @@
+{{#invoke:Navbox|main
+|template = Template:Million Arthur
+|title = [[Million Arthur Collaboration Event]]
+|navbox_class = million-arthur
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Clone Elle (Special Cat)|Clone Elle]]
+*[[Nimue (Uber Rare Cat)|Nimue]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Nimue (Enemy)|Nimue]]
+*[[Neutralization Type Nimue (Enemy)|Neutralization Type Nimue]]
+
+|header3 = Stages
+|group3 = Diffuse Million Arthur
+|list3 =
+*[[One Million Stories]]
+*[[Swordsman Castle]]
+*[[The Fate of Britain]]
+*[[A Place of Skill]]
+*[[Excalibur]]
+*[[Magic School]]
+*[[The Birth of the True King]]
+*[[Gyudon and Heavy Metal]]
+}}<templatestyles src="Million Arthur/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Million Arthur]]}}<noinclude>[[Category:Navboxes]]</noinclude>

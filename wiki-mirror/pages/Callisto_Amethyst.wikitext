@@ -1,0 +1,85 @@
+[[File:St004 o.png]]
+:''Attacks against Starred Aliens are much more powerful!''
+The '''Callisto Amethyst''' is one of the [[Cats of the Cosmos]] [[Treasure]]s. It reduces the +1600% buff that [[:Category:Starred Alien Enemies|Starred Aliens]] have by default.
+
+==Effect==
+The [[Anti-Starred Alien Treasures]] decrease the initial +1600% stat magnification applied to all [[:Category:Starred Alien Enemies|Starred Aliens]]' base health and base attack power.
+
+For example, a hypothetical Starred Alien has base health and attack power of 1,000, but the default stat magnification applied to Starred Alien base stats is +1600%, making the enemy's health and damage from each hit 16,000.
+
+Each fully activated Callisto Amethyst, [[Stellar Garnet]], [[Phoebe Beryl]], [[Lunar Citrine]] and [[Ganymede Topaz]] Treasure set reduces the +1600% default magnification by -100% (additively) such that the Starred Alien's base attack power is always 1,000 but the default magnification effect applied to produce the enemy health and damage output is reduced as shown below.
+
+{| class="article-table" style="width: 100%;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="row" style="width: 25%;" | Activated Treasure Effect
+! scope="row" style="width: 25%;" | Starred Alien Base Health / Attack Stat
+! scope="row" style="width: 25%;" | Starred Alien Stat Magnification Applied
+! scope="row" style="width: 25%;" | Starred Alien Effective Health / Attack
+|-
+! - 0%
+|1,000
+|<nowiki>+ 1600%</nowiki>
+|16,000
+|-
+!
+- 300%
+|1,000
+|<nowiki>+ 1300%</nowiki>
+|13,000
+|-
+! - 600%
+|1,000
+|<nowiki>+ 1000%</nowiki>
+|10,000
+|-
+! - 900%
+|1,000
+|<nowiki>+ 700%</nowiki>
+|7,000
+|-
+! - 1200%
+|1,000
+|<nowiki>+ 400%</nowiki>
+|4,000
+|-
+! - 1500%
+|1,000
+|<nowiki>+ 100%</nowiki>
+|1,000
+|}
+
+==Requirements==
+{| style="width: 500px;" class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|3-X-37
+|[[Aguham (Cats of the Cosmos)|Aguham]]
+|Spaceship
+|-
+|3-X-38
+|[[Somolon (Cats of the Cosmos)|Somolon]]
+|Confetti
+|-
+|3-X-39
+|[[Ababwa (Cats of the Cosmos)|Ababwa]]
+|Mushrooms
+|-
+|3-X-40
+|[[Titan (Cats of the Cosmos)|Titan]]
+|Ominous Face
+|-
+|3-X-41
+|[[Skelling (Cats of the Cosmos)|Skelling]]
+|The Force
+|}
+
+==Trivia==
+*[[wikipedia:Callisto (moon)|Callisto]] is the second-largest moon of [[Jupiter (Cats of the Cosmos)|Jupiter]].
+*In spite of being listed fifth in the [[Treasure]] menu, the Callisto Amethyst is actually the ninth obtainable Cats of the Cosmos Treasure.
+{{Treasures}}
+[[Category:Cats of the Cosmos Treasures]]
+[[Category:Anti-Starred Alien Treasures]]
+[[Category:Treasures]]

@@ -1,0 +1,74 @@
+{{DISPLAYTITLE:Round 1}}
+{{EnemiesAppearing|UltraBaaBaa|Otta-smack-u|Squire Rel|General GreGory|Rain D.|Commander Ostromeda|LeMurr|R.Ost}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Mega Cat Cannon 2|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|UltraBaaBaa|1,200%
+|Otta-smack-u|800%
+|Squire Rel|4,000%
+|General GreGory|2,500%
+|Rain D.|500%
+|Commander Ostromeda|150%
+|LeMurr|2,400%
+|R.Ost|300%}}
+|boss = {{Magnification|R.Ost|300%}}
+|enemies2 = {{Magnification|UltraBaaBaa|1,440%
+|Otta-smack-u|960%
+|Squire Rel|4,800%
+|General GreGory|3,000%
+|Rain D.|600%
+|Commander Ostromeda|180%
+|LeMurr|2,880%
+|R.Ost|360%}}
+|boss2 = {{Magnification|R.Ost|360%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 30
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Mega Cat Cannon 2|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Mega Cat Cannon 2)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Mega Cat Cannon|200}}
+
+==Battleground==
+*1 [[UltraBaaBaa]] spawns after 8 seconds<sup>240f</sup>.
+*1 [[Otta-smack-u]] spawns after 16.67 seconds<sup>500f</sup>.
+*8 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 99% HP:
+**1 [[R.Ost]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**3 [[General GreGory|General GreGories]] spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**2 [[Otta-smack-u]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**Infinite [[UltraBaaBaa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**2 [[Rain D.|Rain Ds]] spawn after 13.33 seconds<sup>400f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**1 [[Commander Ostromeda]] spawns after 40 seconds<sup>1,200f</sup>.
+**5 [[General GreGory|General GreGories]] spawn after 70 seconds<sup>2,100f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[LeMurr]]s spawn after 80 seconds<sup>2,400f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**1 [[R.Ost]] spawns after 66.67 seconds<sup>2,000f</sup>.
+**3 [[Rain D.|Rain Ds]] spawn after 93.33 seconds<sup>2,800f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**1 [[Commander Ostromeda]] spawns after 93.33 seconds<sup>2,800f</sup>.
+
+==Strategy==
+Stalling is the name of the game for this Otherworld Colosseum; the hyperbuffed Cat Cannon deals 910,000 damage per cast, effectively clearing out the entire field every time it's used. Naturally, you'll want to use it as much as possible to take full advantage of the buff. This means using Recharge Speed (M) [[Cat Combo]]s like [[Sweets (Combo)|Sweets]] to cut it down to ''35 seconds''. Don't bother overdosing on Recharge Speed Combos since there's a hardcap minimum at 31.67 seconds, so keep it to one Medium or Large Combo.
+
+You're easily able to stall out the opening wave of peons and clear them out with your Cat Cannon to buy yourself as much time as you want before triggering the boss wave. Your Cat Cannon deals almost enough damage to instantly kill R.Ost and Commander Ostromeda on {{1c}}, so wait until both are on screen to use it. Stall them out with [[Stone Cat (Rare Cat)|Boulder Cat]] as well as other small meatshields while chipping them with [[Vaulter Cat (Super Rare Cat)|Housewife Cats]] and [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]]. The General GreGories have a Barrier that prevents your Cat Cannon from killing them instantly, so bring [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] to stop them right in their tracks until your Cat Cannon recharges. You win once you kill the second Commander Ostromeda.
+
+==Reference==
+*https://battlecats-db.com/stage/s36019-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

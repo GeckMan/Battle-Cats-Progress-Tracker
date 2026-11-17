@@ -1,0 +1,64 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Doge|Snache|Those Guys|Baa Baa|Gudetama Plate}}
+'''You Can Boil It''' is the first stage in [[Gudetama Collaboration Event#I Am Gudegude|I Am Gudegude]].
+
+{{Stage Info
+|stage name = [[File:rc084.png]]
+[[File:Mapsn049 00 c ja.png]]
+|stage location = [[File:Mapname049 c ja.png]]
+|energy = 30
+|enemy castle hp = 8,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%
+|Baa Baa|100%}}
+|boss = {{Magnification|Gudetama Plate|100%}}
+|enemies2 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Baa Baa|200%}}
+|boss2 = {{Magnification|Gudetama Plate|200%}}
+|enemies3 = {{Magnification|Doge|300%
+|Snache|300%
+|Those Guys|300%
+|Baa Baa|300%}}
+|boss3 = {{Magnification|Gudetama Plate|300%}}
+|score reward = '''7,500''': 50,000 XP<br>
+'''4,500''': [[Battle Items#Speed Up|Speed Up]] +1<br>
+'''500''': 10,000 XP
+|XP = 900 XP
+|width = 4,000
+|max enemies = 4
+|jpname = You Can Boil It
+|script = ゆでるもよし
+|romaji = Yuderu Mo Yoshi
+|star = 3
+|event = [[Gudetama Collaboration Event]]
+|event-chapter = [[Gudetama Collaboration Event#I Am Gudegude|I Am Gudegude]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[You Can Grill It]]
+}}
+
+==Battleground==
+*7 [[Doge]]s spawn after 0.07 seconds<sup>2f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*7 [[Snache]]s spawn after 0.07 seconds<sup>2f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*5 [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*1 [[Baa Baa]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 90% HP:
+**1 [[Gudetama Plate (Enemy)|Gudetama Plate]] spawns as the boss.
+**1 [[Baa Baa]] spawns.
+**Infinite [[Baa Baa]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+**5 [[Those Guys]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**Infinite [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02049-01.html
+
+{{Gudetama}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

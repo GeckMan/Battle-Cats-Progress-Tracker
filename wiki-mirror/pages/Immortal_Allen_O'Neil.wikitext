@@ -1,0 +1,63 @@
+{{EnemiesAppearing|MARS PEOPLE|MARCO|ALLEN O'NEIL}}
+'''Immortal Allen O'Neil''' is the first stage in [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]].
+
+{{Stage Info
+|stage name = [[File:rc052.png]]
+[[File:Mapsn021 00 c en.png]]
+|stage location = [[File:Mapname021 c en.png]]
+|energy = 30
+|enemy castle hp = 10,000 HP
+|enemies = {{Magnification|MARS PEOPLE|100%
+|MARCO|100%}}
+|boss = {{Magnification|ALLEN O'NEIL|100%}}
+|enemies2 = {{Magnification|MARS PEOPLE|150%
+|MARCO|150%}}
+|boss2 = {{Magnification|ALLEN O'NEIL|150%}}
+|enemies3 = {{Magnification|MARS PEOPLE|200%
+|MARCO|200%}}
+|boss3 = {{Magnification|ALLEN O'NEIL|200%}}
+|enemies4 = {{Magnification|MARS PEOPLE|300%
+|MARCO|300%}}
+|boss4 = {{Magnification|ALLEN O'NEIL|300%}}
+|treasure = - [[HYAKUTARO (Rare Cat)|HYAKUTARO]] (1%, 1 time)
+|score reward = '''6,500''': 50,000 XP<br>
+'''5,000''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''3,500''': 10,000 XP<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 900 XP
+|width = 4,500
+|max enemies = 5
+|jpname = Sergeant Oni Allen O'Neil
+|script = オニ軍曹 アレン・オニール
+|romaji = Oni Gunsō Aren O'Nīru
+|star = 4
+|event = [[Metal Slug Collaboration Event]]
+|event-chapter = [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Attack on Huge Hermit]]
+}}
+
+==Battleground==
+*5 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 6.67 seconds<sup>200f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawns after 30.67 seconds<sup>920f</sup>.
+*1 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[MARCO (Enemy)|MARCO]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawns after 84 seconds<sup>2,520f</sup>.
+*Infinite [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 100 seconds<sup>3,000f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*When the base reaches 90% HP:
+**1 [[ALLEN O'NEIL (Enemy)|ALLEN O'NEIL]] spawns as the boss.
+**3 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**1 [[MARCO (Enemy)|MARCO]] spawns.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win. Even in 4♛ the stage is a joke because pretty the enemy stats are low enough for many [[:Category:Rare Cats|Rare]] or [[:Category:Special Cats|Special Cat]] to simply overrun the stage. In particular, [[Ninja Cat (Special Cat)|Ninja Cat]] or [[Li'l Giraffe Cat|Li'l Giraffe Cat's]] fast attack rate and good speed pretty much guarantee getting the timed rewards.
+
+==Reference==
+*https://battlecats-db.com/stage/s02021-01.html
+
+{{Metal Slug}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

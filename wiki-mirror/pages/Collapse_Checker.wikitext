@@ -1,0 +1,66 @@
+{{EnemiesAppearing|Metal Doge|Mr. Puffington}}
+'''Collapse Checker''' is the second stage in [[Drunken Foundry]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn021 01 na en.png]]
+|stage location = [[File:Mapname021 na en.png]]
+|energy = 190
+|enemy castle hp = 840,000 HP
+|enemies = {{Magnification|Metal Doge|300%
+|Mr. Puffington|100%}}
+|boss = {{Magnification|Metal Doge|10%}}
+|enemies2 = {{Magnification|Metal Doge|390%
+|Mr. Puffington|130%}}
+|boss2 = {{Magnification|Metal Doge|13%}}
+|enemies3 = {{Magnification|Metal Doge|510%
+|Mr. Puffington|170%}}
+|boss3 = {{Magnification|Metal Doge|17%}}
+|treasure = - [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 7,220 XP
+|width = 4,200
+|max enemies = 10
+|jpname = Working to Check for a Collapse
+|script = 倒れてないか見る仕事
+|romaji = Taoretenai Ka Miru Shigoto
+|star = 4
+|sub-chapter = [[Drunken Foundry]]
+|difficulty = ★10
+|prev stage = [[Proletarian Box]]
+|next stage = [[Unmoving Conveyer]]
+}}
+
+==Battleground==
+*1 [[Metal Doge]] (300%) spawns.
+*2 [[Metal Doge]]s (300%) spawn after 13.33 seconds<sup>400f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*3 [[Metal Doge]]s (300%) spawn after 26.67 seconds<sup>800f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*4 [[Metal Doge]]s (300%) spawn after 40 seconds<sup>1,200f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*5 [[Metal Doge]]s (300%) spawn after 53.33 seconds<sup>1,600f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*When the base reaches 99% HP:
+**1 [[Metal Doge]] (10%) spawns as the boss.
+**Infinite [[Metal Doge]]s (300%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**3 [[Metal Doge]]s (300%) spawn, delay 3~5 seconds<sup>90f~150f</sup>.
+**4 [[Metal Doge]]s (300%) spawn, delay 12~15 seconds<sup>360f~450f</sup>.
+**1 [[Mr. Puffington]] spawns.
+**1 [[Mr. Puffington]] spawns.
+
+==Strategy==
+If you are able to, try to exhaust the initial waves of metal doges before triggering the boss wave, as the horde of Metal Doges will be significantly easier to deal with without the Puffingtons.
+
+Because the Puffingtons aren't too threatening once you've cleared all of the waves of the Metal Doges, you want to focus your lineup around them. Units like [[Catornado (Super Rare Cat)|Catyphoon]] can help with the startoff, but you want to bring longer range critical hitters such as [[Aku Researcher (Rare Cat)|Cat Researcher]], [[Space Cat (Rare Cat)|Space Marine Cat]] and [[Cheerleader Cat (Super Rare Cat)|Soba Cat]] for the Doges after you trigger the base. [[Slime Cat (Rare Cat)|Slime Cat]] will be of use, being able to use the Metal Doges as stepping stones to chip the Puffingtons, as well as syncing their attacks so they don't attack at different times.
+
+If you find yourself constantly losing space, the Iron Wall cannon can provide temprorary defense against the Puffingtons attack, saving yourself some ground. Cat Researcher is also capable of juggling both Puffingtons at the same time, although Metal Doge getting in the way will let the Puffingtons attack.
+
+[[Primordial Cat (Rare Cat)|Primordial Cat]] in any of its forms will be of use here, as it can stall the Metal Doges quite well and tank the Puffingtons, although you may need a Research Combo or two.
+
+==Trivia==
+*Collapse Checker is the only stage to have been nerfed more than once.
+** The first time was in [[Version 10.5 Update|version 10.5]]. In prior versions, there were 2 extra sets of infinite Metal Doges; one spawned at 80 seconds and had 12~16 seconds between each Metal Doge, the other appeared at 120 seconds and gave the Doges a 21.33~28-second delay.
+** The second time was in [[Version 11.2 Update|version 11.2]], which decreased the number of Metal Doges spawned on base hit as well as increasing the delay between each one of them. Originally, hitting the base summoned 6 Metal Doges 2~3.33 seconds apart and 7 Metal Doges spaced out by 8~10 seconds.
+
+==Reference==
+*https://battlecats-db.com/stage/s13021-02.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 71 Stages]]

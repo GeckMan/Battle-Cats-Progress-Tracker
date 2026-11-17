@@ -1,0 +1,256 @@
+:''For the new stage, see [[Ep. 3: Lady of Darkness (13 1/2)/Cruelty's Lash Lv.1~10]]
+<tabber>
+Cruelty's Lash Lv.1~5=
+{{EnemiesAppearing|Cerberus Kids|Doge Dark|Aku Doge|Malizabeth|Countess Koryessa}}
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn076 00 a en.png]]
+|stage location = [[File:Mapname076 a en.png]]
+|enemies = {{Magnification|Cerberus Kids|0
+|Doge Dark|0
+|Aku Doge|0
+|Malizabeth|0}}
+|boss = {{Magnification|Countess Koryessa|0}}
+|restriction = [[No Continues]]
+|width = 4,800
+|max enemies = 20
+|jpname = The Cruel Whip Lv.
+|script = 非道なる鞭 Lv.X
+|romaji = Hidō naru Muchi Lv.
+|star = 1
+|event-chapter = [[Ep. 3: Lady of Darkness]]
+|max clears = 3
+}}
+
+==Battleground==
+*5 [[Cerberus Kids]] spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[Doge Dark]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Aku Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*When the base reaches 99% HP:
+**1 [[Countess Koryessa]] spawns as the boss.
+**2 [[Doge Dark]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**2 [[Aku Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**3 [[Cerberus Kids]] spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**1 [[Malizabeth]] spawns after 20 seconds<sup>600f</sup>.
+**1 [[Doge Dark]] spawns after 80 seconds<sup>2,400f</sup>.
+**Infinite [[Cerberus Kids]] spawn after 106.67 seconds<sup>3,200f</sup>, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+**Infinite [[Doge Dark]]s spawn after 120 seconds<sup>3,600f</sup>, delay 36.67~43.33 seconds<sup>1,100f~1,300f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Cruelty's Lash Lv.
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Cerberus Kids]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Malizabeth]]
+! scope="col" |[[Countess Koryessa]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|100%
+|100%
+|150,000 HP
+|50
+|200,000 XP
+|1,500 XP
+|-
+! scope="row" |2
+|125%
+|175%
+|125%
+|138%
+|138%
+|180,000 HP
+|60
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +2
+|1,800 XP
+|-
+! scope="row" |3
+|150%
+|250%
+|150%
+|175%
+|175%
+|200,000 HP
+|70
+|[[Catfruit|Purple Catfruit Seed]] +5
+|2,100 XP
+|-
+! scope="row" |4
+|175%
+|325%
+|175%
+|213%
+|213%
+|230,000 HP
+|80
+|[[Catfruit|Red Catfruit Seed]] +5
+|2,400 XP
+|-
+! scope="row" |5
+|200%
+|400%
+|200%
+|250%
+|250%
+|250,000 HP
+|100
+|[[Catfruit|Blue Catfruit Seed]] +5
+|3,000 XP
+|}
+
+==Strategy==
+Due to the presence of both Malizabeth and Countess Koryessa, it is heavily recommended to use [[Helmet Cat (Special Cat)|Yellow Nyanko Ranger]]'s [[Yellow Strike (Combo)|Wave Immunity Combo]] to ensure your Nyanko Rangers won't get torn apart by constant Wave Attack spam. For Lv. 1, prior to unlocking Yellow Nyanko Ranger, stack up [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cats]] on the peons at the start to repeatedly juggle Countess Koryessa. She's only at 100% strength magnification in the first encounter, which means she's relatively feeble.
+
+For later clears, the abundance of Aku enemies effectively mandates the use of [[Scarf Cat (Special Cat)|Red Nyanko Ranger]], as you have barely any anti-Aku at this point in the game. Koryessa herself isn't very threatening when your Nyanko Rangers are Immune to Waves. Just build up multiple Red, Yellow, and [[Fedora Cat (Special Cat)|Blue Nyanko Rangers]] early on, that way you can swarm her when she spawns. If you possess [[Goggles Cat (Special Cat)|Green Nyanko Ranger]], he completely permafreezes her where she stands.
+
+|-|
+Cruelty's Lash Lv.6~10=
+{{EnemiesAppearing|Kaijin Doge|Zoge|St. Pigge the 2nd|Zackie Peng|Madam Peng|Ginger Snache|High Countess Koryessa}}
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn076 00 a en.png]]
+|stage location = [[File:Mapname076 a en.png]]
+|enemies = {{Magnification|Kaijin Doge|0
+|Zoge|0
+|St. Pigge the 2nd|0
+|Zackie Peng|0
+|Madam Peng|0
+|Ginger Snache|0}}
+|boss = {{Magnification|High Countess Koryessa|0}}
+|restriction = [[No Continues]]
+|width = 6,000
+|max enemies = 20
+|jpname = The Cruel Whip Lv.
+|script = 非道なる鞭 Lv.X
+|romaji = Hidō naru Muchi Lv.
+|star = 1
+|event-chapter = [[Ep. 3: Lady of Darkness]]
+|max clears = 3
+}}
+
+==Battleground==
+*Infinite [[Kaijin Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*Infinite [[Zoge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*2 [[St. Pigge the 2nd]]s spawn after 20 seconds<sup>600f</sup>, delay 106.67~113.33 seconds<sup>3,200f~3,400f</sup>.
+*3 [[Zackie Peng]]s spawn after 40 seconds<sup>1,200f</sup>, delay 66.67~73.33 seconds<sup>2,000f~2,200f</sup>.
+*3 [[Madam Peng]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*2 [[Ginger Snache]]s spawn after 80 seconds<sup>2,400f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*3 [[Ginger Snache]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*1 [[High Countess Koryessa]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Cruelty's Lash Lv.
+! colspan="7" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Kaijin Doge]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[St. Pigge the 2nd]]
+! scope="col" |[[Zackie Peng]]
+! scope="col" |[[Madam Peng]]
+! scope="col" |[[Ginger Snache]]
+! scope="col" |[[High Countess Koryessa]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |6
+|1,500%
+|150%
+|600%
+|150%
+|600%
+|100%
+|100%
+|300,000 HP
+|120
+|[[Catfruit|Green Catfruit Seed]] +5
+|3,600 XP
+|-
+! scope="row" |7
+|2,025%
+|188%
+|700%
+|188%
+|750%
+|150%
+|125%
+|350,000 HP
+|150
+|[[Catfruit|Yellow Catfruit Seed]] +5
+|4,500 XP
+|-
+! scope="row" |8
+|2,550%
+|225%
+|800%
+|225%
+|900%
+|200%
+|150%
+|400,000 HP
+|180
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +3
+|5,400 XP
+|-
+! scope="row" |9
+|3,075%
+|263%
+|900%
+|263%
+|1,050%
+|250%
+|175%
+|450,000 HP
+|200
+|[[Leadership]] +1
+|6,000 XP
+|-
+! scope="row" |10
+|3,600%
+|300%
+|1,000%
+|300%
+|1,200%
+|300%
+|200%
+|500,000 HP
+|220
+|[[Nyanko Rangers (Event Gacha)|Justice Hearts]] +3
+|6,600 XP
+|}
+
+==Strategy==
+High Countess Koryessa is much stronger this time around, and she's supported by a cavalcade of strong Red and Zombie enemies. Using [[Helmet Cat (Special Cat)|Yellow Nyanko Ranger]]'s [[Yellow Strike (Combo)|Wave Immune combo]] is basically required to ensure Koryessa doesn't clear the entire field with every attack. Start the stage by spamming [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cats]] and [[Ancient Egg: N101 (Rare Cat)|Courier Cats]]. You want to keep Koryessa at the enemy base for as long as possible until Zackie Peng burrows. As soon as he does, send out [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to nuke both him and Madam Peng out of existence. Take care of Zackie Peng immediately as he revives too, then try to get Koryessa in a freeze lock with [[Goggles Cat (Special Cat)|Green Nyanko Ranger]] (this is exponentially easier if you're using [[Flower Cat (Special Cat)|Bombercat]] alongside him). Green Nyanko Ranger survives an attack from 200% High Countess Koryessa at Lv.34 with [[Red Strike (Combo)|Red Strike]], making it way easier to keep him alive even without [[Ribbon Cat (Special Cat)|Pink Nyanko Ranger]]'s Weaken.
+
+You want to take things slow, handling each wave of peons with [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]/[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]], [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cat]], and whatever else, while ensuring you don't lose any ground. Koryessa's rebounds will mess up any chance at a permafreeze, so keep that in mind. By the third Zackie Peng wave, your Awakened Bahamut Cat will be off cooldown, so deploy him to get rid of the bothersome Peng, then kill him again as he revives. Once the dust settles, there will be nothing left except Zoges and Kaijin Doges; just start spamming Yellow Nyanko Rangers to stall Koryessa and simultaneously chip her down. Once Koryessa dies, it's just a victory march to the enemy base.
+</tabber>
+
+==Walkthrough==
+{{Walkthrough
+|7DFMl6zr-gs|Novastrala|Only features strongest and weakest Cruelty's Lash Lv.s
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s24076.html
+
+{{Anniversary}}
+
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

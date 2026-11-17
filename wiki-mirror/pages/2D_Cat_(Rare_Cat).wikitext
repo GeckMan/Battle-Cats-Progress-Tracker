@@ -1,0 +1,111 @@
+{{JPExclusive}}
+'''2D Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 8.9 Update|Version 8.9]] and can be obtained when beating any stage from the [[Dot Heroes Collaboration Event]].
+
+{{Cat Info
+|ID = 503
+|rarity = RR
+|name1 = 2D Cat
+|name2 = 3D Cat
+}}
+
+==Evolution==
+Evolves into '''3D Cat''' at level 10.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role without relevant differences in quality. 2D Cat, however, can be used in {{4c}} stages, where there is considerably less competition.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 503
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni503 f00.png
+|Image2 = Uni503 c00.png
+|Name1 (JP) = ネコ２Ｄ (Neko 2D, Cat 2D)
+|Desc1 (JP) = ドットヒーローズから参戦！<br>クラフトカードにドットで描かれたネコ<br>命が吹き込まれる時を待っている
+|Transl1 (JP) = Participant from Dot Heroes!<br>A cat drawn with dots on a craft card.<br>Has been waiting for life to come to life.
+|Name2 (JP) = ネコ３Ｄ (Neko 3D, Cat 3D)
+|Desc2 (JP) = ドットヒーローズから参戦！<br>ゲームの近代化と共に進化を果たしたネコ<br>これからの時代は３Ｄだと確信している
+|Transl2 (JP) = Participant from Dot Heroes!<br>A cat that evolved with the modernization of the game.<br>Is confident that the future will be 3D from now on.
+}}
+
+==Cost==
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = 2D Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 31
+|Normal Attack Length = 18
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = 3D Cat
+|Evolved Base HP = 100
+|Evolved Base AP = 8
+|Evolved Range = 140
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 18
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 50
+|Evolved Recharge = 150
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 135 damage<br>(109.46 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Evolved-Recharge Time = 5 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni503 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/504.html
+
+----
+{{CatNav|Myrcia|Burgle Boss Cat (Retired)}}
+----
+
+{{Dot Heroes}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]

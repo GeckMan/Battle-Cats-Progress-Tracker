@@ -1,0 +1,148 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For other uses, see [[God (disambiguation)|God]]. Not to be confused with [[King's Mimic]].''
+'''God''' is a [[:Category:Special Cats|Special Cat]] that was obtainable as a [[Daily Bonus]] in [[Nyanko Daisensou|BCJP]]'s [[Anniversary/11 1/2 Year|11.5 Anniversary]] event. It was added in [[Version 2.8.1 Update|Version 2.8.1]].
+
+{{Cat Info
+|ID = 141
+|rarity = EX
+|name1 = God
+|name2 = Secret God
+}}
+
+==Evolution==
+Evolves into '''Secret God''' at level 10.
+
+==Strategy/Usage==
+Though God is meant to be a support [[:Category:Cat Units|unit]] with its high range and [[Freeze|freeze]] ability, its very slow attack rate, recharge time,low knockback count and health are too sluggish for a very brief single target freeze effect. There's no point in using it over much more competent units unless you somehow don't have decent freeze crowd controllers, other than that he's sadly just [[Underground Labyrinth]] fodder.
+
+{{Job|Classification = User Rank Dump & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 141
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni141 f00.png
+|Image2 = Uni141 c00.png
+|Name1 = God
+|Desc1 = A deity who transcends time and space.<br>The paradox has made it appear as a child<br>despite its adult needs. ... Is it really him?
+|Name2 = Secret God
+|Desc2 = A deity who transcends time and space.<br>With this body he's confident he can<br>finally win the heart of the gorgeous Valkyrie.
+|Name1 (JP) = 神様 (Kami-sama, Mr. God)
+|Desc1 (JP) = ついに時空を超越した神<br>その反動で見た目は子供になってしまったが<br>煩悩はオトナ。その能力は謎に満ちている
+|Transl1 (JP) = Cat God finally transcends time and space<br>In the process, his appearance became youthful<br>but he's still an adult inside. His powers are unknown
+|Name2 (JP) = シークレット神様 (Shīkuretto Kami-sama, Secret Mr. God)
+|Desc2 (JP) = ついに時空を超越した神<br>この体ならばネコヴァルキリーの母性をくすぐれると<br>フォーリンラブへの自信に満ちている
+|Transl2 (JP) = Cat God finally transcends time and space<br>With his new body, he's confident that he can steal<br>Valkyrie's heart by stimulating her motherly instincts
+|Name1 (TW) = 天神
+|Desc1 (TW) = 穿越時空來到人世間的神<br>結果變成外表看似小孩的成年人<br>他的能力雖謎但是不容小覷
+|Name2 (TW) = 謎之神
+|Desc2 (TW) = 穿越時空來到人世的神<br>有自信以此體格激發出瓦爾基麗貓的<br>女性本能並傾心於他的糟糕天神
+|Name1 (KR) = 신
+|Desc1 (KR) = 드디어 시공을 초월한 신<br>그 반동으로 겉모습은 어린아이가 되어버렸지만<br>번뇌는 어른. 그 능력은 베일에 싸여있다
+|Name2 (KR) = 시크릿 신
+|Desc2 (KR) = 드디어 시공을 초월한 신<br>이 몸이라면 고양이 발키리의 모성을 자극할 수<br>있다는 신념에 자신감이 흘러넘치고 있다
+}}
+
+==Cost==
+*Chapter 1: 777円
+*Chapter 2: 1,165円
+*Chapter 3: 1,554円
+{{Upgrade Cost|EX3}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = God
+|Normal Base HP = 100
+|Normal Base AP = 3
+|Normal Range = 540
+|Normal Foreswing = 63
+|Normal Attack Cooldown = 199
+|Normal Attack Length = 91
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 777
+|Normal Recharge = 2222
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 20f <sub>0.67 seconds</sub>
+|Evolved Name = Secret God
+|Evolved Base HP = 100
+|Evolved Base AP = 3
+|Evolved Range = 540
+|Evolved Foreswing = 63
+|Evolved Attack Cooldown = 199
+|Evolved Attack Length = 91
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 777
+|Evolved Recharge = 2222
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 20f <sub>0.67 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 3 damage<br>(0.34 DPS)
+|val-Normal-Attack Range = 540
+|val-Normal-Attack Frequency = 262f <sub>8.73 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 63f <sup>2.1s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 74.07 ~ 65.27 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 50 damage<br>(5.73 DPS)
+|val-Evolved-Health = 1,700 HP
+|val-Evolved-Attack Power = 50 damage<br>(5.73 DPS)
+|val-Evolved-Attack Range = 540
+|val-Evolved-Attack Frequency = 262f <sub>8.73 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 63f <sup>2.1s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Evolved-Recharge Time = 74.07 ~ 65.27 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+===[[The Burgle Cats]]===
+God appears as a game feature in The Burgle Cats.
+{| style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid;width:20%;" cellspacing="0" cellpadding="1"
+|-
+| style="padding:2px;border-bottom:1px solid #ddd;" | [[File:Existence elsewhere (2).png|center|250x250px]]
+|-
+| style="padding:2px;text-align:center" | Outside of the Shrine
+|}
+
+{{Gallery|Uni141 f00}}
+
+==Trivia==
+*God was formerly unlocked by inputting a [[Serial Codes|Serial Code]] included in [[Nyanko Ecology Report Special Edition]]. However, once Serial Codes were removed in [[Version 4.3 Update|Version 4.3]], he was unobtainable.
+
+==Reference==
+*https://battlecats-db.com/unit/142.html
+
+----
+{{CatNav|Squish Ball Cat|Tutorial Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

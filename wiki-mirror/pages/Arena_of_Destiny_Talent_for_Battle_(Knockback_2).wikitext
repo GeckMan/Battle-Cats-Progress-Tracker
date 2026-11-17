@@ -1,0 +1,125 @@
+{{EnemiesAppearing|Talent Orb Castle|Wild Doge|Crustaceous Scissorex|Sir Rel|Ursamajor|Condemned Peng|M. Ost|Kroxo|Devil Wife|Medu-san}}
+'''Talent for Battle''' is the 7th [[Arena of Destiny]] of the [[Catclaw Dojo]]. It awards Bronze, Silver and Gold Treasure Chests with [[Talent Orbs|Ability Orbs]].
+
+{{Stage Info
+|stage name = [[File:E 720.png]]
+[[File:Mapsn041 00 r en.png]]
+|stage location = [[File:Mapname041 r en.png]]
+|energy = 10
+|enemy castle hp = Unlimited
+|base = {{Magnification|Talent Orb Castle|0}}
+|enemies = {{Magnification|Wild Doge|0
+|Sir Rel|0
+|Condemned Peng|0
+|Kroxo|0
+|Devil Wife|0
+|Ursamajor|0
+|Crustaceous Scissorex|0}}
+|boss = {{Magnification|Crustaceous Scissorex|0
+|Ursamajor|0
+|M. Ost|0
+|Medu-san|0
+|Condemned Peng|0
+|Devil Wife|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 20
+|jpname = Fighting Instinct Tournament
+|script = 闘争本能大会
+|romaji = Tōsō Honnō Taikai
+|star = 1
+|dojo-chapter = [[Arena of Destiny]]
+|difficulty = ★9
+|require = Clear [[A New Legend]]
+}}
+
+==Rules==
+{{DojoRule|Knockback}}
+
+==Battleground==
+*The enemy base here is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]].
+*1 [[Ursamajor]] (1,920%) spawns after 160 seconds<sup>4,800f</sup>.
+*2 [[Condemned Peng]]s (600%) spawn after 153.33 seconds<sup>4,600f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*2 [[Sir Rel]]s (150%) spawn after 140 seconds<sup>4,200f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*2 [[Kroxo]]s (2,400%) spawn after 133.33 seconds<sup>4,000f</sup>, delay 10 seconds<sup>300f</sup>.
+*2 [[Wild Doge]]s (200%) spawn after 133.33 seconds<sup>4,000f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Crustaceous Scissorex]] (100%) spawns after 113.33 seconds<sup>3,400f</sup>.
+*1 [[Devil Wife]] (500%) spawns after 100 seconds<sup>3,000f</sup>.
+*2 [[Wild Doge]]s (200%) spawn after 100 seconds<sup>3,000f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*2 [[Condemned Peng]]s (300%) spawn after 83.33 seconds<sup>2,500f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Kroxo]] (1,400%) spawns after 83.33 seconds<sup>2,500f</sup>.
+*2 [[Sir Rel]]s (100%) spawn after 60 seconds<sup>1,800f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Ursamajor]] (1,400%) spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Wild Doge]] (100%) spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Devil Wife]] (400%) spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Sir Rel]] (100%) spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Kroxo]] (1,400%) spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Wild Doge]] (100%) spawns after 10 seconds<sup>300f</sup>.
+*2 [[Kroxo]]s (1,400%) spawn after 6.67 seconds<sup>200f</sup>, delay 10 seconds<sup>300f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Devil Wife]] (500%) spawns as the boss.
+**2 [[Sir Rel]]s (100%) spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+*When the base takes 100,000 damage:
+**1 [[Condemned Peng]] (300%) spawns as the boss.
+**2 [[Kroxo]]s (1,400%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 110,000 damage:
+**1 [[Condemned Peng]] (300%) spawns.
+*When the base takes 200,000 damage:
+**1 [[Ursamajor]] (1,400%) spawns as the boss.
+**2 [[Wild Doge]]s (100%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base takes 400,000 damage:
+**1 [[Medu-san]] (150%) spawns as the boss.
+**1 [[Kroxo]] (2,400%) spawns.
+**1 [[Sir Rel]] (100%) spawns.
+**1 [[Devil Wife]] (500%) spawns.
+*When the base takes 700,000 damage:
+**1 [[M. Ost]] (100%) spawns as the boss.
+**3 [[Condemned Peng]]s (400%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 1,000,000 damage:
+**1 [[Ursamajor]] (1,600%) spawns as the boss.
+**3 [[Sir Rel]]s (150%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,300,000 damage:
+**1 [[Crustaceous Scissorex]] (120%) spawns as the boss.
+**2 [[Wild Doge]]s (240%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,600,000 damage:
+**1 [[Medu-san]] (180%) spawns as the boss.
+**2 [[Kroxo]]s (2,880%) spawn, delay 10 seconds<sup>300f</sup>.
+**1 [[Sir Rel]] (180%) spawns.
+**1 [[Devil Wife]] (600%) spawns.
+*When the base takes 2,000,000 damage:
+**1 [[M. Ost]] (120%) spawns as the boss.
+**3 [[Condemned Peng]]s (600%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 2,500,000 damage:
+**1 [[Ursamajor]] (1,920%) spawns as the boss.
+**3 [[Sir Rel]]s (180%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 3,000,000 damage:
+**1 [[Crustaceous Scissorex]] (120%) spawns as the boss.
+**2 [[Wild Doge]]s (240%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 3,500,000 damage:
+**1 [[Medu-san]] (180%) spawns as the boss.
+**2 [[Kroxo]]s (2,880%) spawn, delay 10 seconds<sup>300f</sup>.
+**1 [[Sir Rel]] (180%) spawns.
+**1 [[Devil Wife]] (600%) spawns.
+*When the base takes 4,000,000 damage:
+**1 [[M. Ost]] (120%) spawns as the boss.
+**3 [[Condemned Peng]]s (600%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 4,500,000 damage:
+**1 [[Ursamajor]] (1,600%) spawns as the boss.
+**3 [[Sir Rel]]s (150%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 5,000,000 damage:
+**1 [[Crustaceous Scissorex]] (120%) spawns as the boss.
+**2 [[Wild Doge]]s (240%) spawn, delay 10 seconds<sup>300f</sup>.
+
+==Explanation==
+*You have three minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The total points earned from killing enemies will decrease overtime.
+*Unlike other Dojos, this one has a few other differences:
+**Enemies will drop money on defeat.
+**The base will not attack but is still an animated base, meaning [[Surge Attack|Surges]] and [[Explosion]]s can damage it.
+
+==Reference==
+*https://battlecats-db.com/stage/s11041-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

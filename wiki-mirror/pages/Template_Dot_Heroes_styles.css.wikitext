@@ -1,0 +1,10 @@
+.ranger-navbox.dot-heroes {
+	--bg-navbox-title: linear-gradient(to right, #850042 0%, #a80054 100%);
+	--bg-sub-table-title: #b81f00;
+	--bg-group-name: #790679;
+
+	--sub-title-color: #fff;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

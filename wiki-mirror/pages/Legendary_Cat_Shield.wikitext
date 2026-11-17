@@ -1,0 +1,275 @@
+{{PageBanner|Ot003 o en.png}}
+:''Cat Health increased!''
+The '''Legendary Cat Shield ''' is the seventh [[Empire of Cats]] [[Treasure]]. It is one of the most important Treasures in the game because it provides a truly massive boost to all [[Cat Units]]' health (50% per completed set). It has an offensive counterpart in the [[Legendary Cat Sword]].
+
+The first stats shown for a unit's first form on this wiki are '''without''' any Legendary Cat Shields. Other stats are with '''all''' Legendary Cat Shields at 100%.
+
+==Effect==
+When Legendary Cat Shield (Health) and/or [[Legendary Cat Sword]] (Attack Power) have been activated with Superior Treasure, each set's power is 100% which gives the maximum +50% effect from each.</p>Since Treasure effects are additive, when each of the three Legendary Cat Shield +50% Health boosts activated are added, it gives the cat's Initial Health stat the maximum +150% boost.
+
+This percentage needs to be expressed as a decimal fraction in order to multiply the Initial stat in the formula above.
+
+Expressed as a decimal fraction 100% = 1.0, 50% = 0.5 etc.
+
+The Initial Stat's base multiplier is therefore always 1.0 ie. Initial Stat x 1.0 = Initial Stat
+
+A maximum Shield or Sword Treasure effect adds + 50% to the relevant Initial Stat. The same as adding + 0.5 to the base multiplier.
+
+Which means the Treasure Bonus multipliers for 0%, 100%, 200% and 300% Legendary Cat Shield are 1.0, 1.5, 2.0 and 2.5 respectively.
+
+Likewise when each of the three Legendary Cat Sword +50% Attack boosts are activated and added, it gives the cat's Initial Attack stat the maximum +150% boost, or a 2.5 multiplier in the formula above.
+
+Again, it's important to understand that when the Treasure set's power percentage reaches 100% this does not imply that the effect of the treasure set will increase the relevant stat by 100%. It simply refers to the treasure set's own effect being applied at maximum or 100% power. In this case that's 100% of a maximum +50% stat boost.
+
+Example:
+
+Empire of Cats Legendary Cat Shield requires 3 Treasures to be obtained before its effect is activated.
+[[File:Cat Shield Activated.png|thumb|left|390px|class=large-image]]
+*If you complete the set, by obtaining
+*1 Inferior Treasure (Bronze)
+*2 Normal Treasure (Silver)
+*0 Superior Treasure (Gold)
+
+{| class="article-table" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="row" |Legendary Cat Shield
+| style="text-align:center;" |[[Norway (Empire of Cats)|Norway]]
+| style="text-align:center;" |[[United Kingdom (Empire of Cats)|United Kingdom]]
+| style="text-align:center;" |[[Greenland (Empire of Cats)|Greenland]]
+|-
+! scope="row" |Bronze
+| style="background-color: #936b4c;border: 4px solid #f9ec07;text-align: center;color: white;width: 20%;" |1
+| style="text-align:center;" |1
+| style="text-align:center;" |1
+|-
+! scope="row" |Silver
+| style="text-align:center;" |2
+| style="background-color: #a5a4b8;border: 4px solid #f9ec07;text-align: center;color: black;width: 20%;" |2
+| style="background-color: #a5a4b8;border: 4px solid #f9ec07;text-align: center;color: black;width: 20%;" |2
+|-
+! scope="row" |Gold
+| style="text-align:center;" |3
+| style="text-align:center;" |3
+| style="text-align:center;" |3
+|}
+.. here the power percentage of Legendary Cat Shield's (maximum +50% Initial Health) activated by these Treasures is:
+
+( (1*1) + (2*2) + (0*3) ) / (3*3) = 55.55% or +27.77% Initial Health. (as shown but rounded down in-game)
+
+In this example a level 1 [[Cat (Normal Cat)|Cat]] with Initial Health of 100 would be treasure boosted by 55% of +50% Health.
+
+The level 1 Cat's new health is now 127.
+
+There are three Empire of Cats chapters each containing Legendary Cat Shield so the effect of obtaining each of those three sets at maximum power gives 100%, 200% or 300% [Legendary Cat Shield power, that would increase the Initial Health of [[Cat (Normal Cat)|Cat]] to 150, 200 or 250 at level 1. (an increase of +50%, +100% or +150%)
+
+All cats have their own initial Health (HP) and Attack (AP) Stats.
+
+for example, Cat's Health at level 1 through to level 8 would be affected as shown below -
+{| class="article-table" style="width: 100%;text-align: right;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="col" | Legendary Cat Shield
+! scope="col" style="width: 15%;text-align: right;" | + 0%
+! scope="col" style="width: 15%;text-align: right;" | + 100%
+! scope="col" style="width: 15%;text-align: right;" | + 200%
+! scope="col" style="width: 15%;text-align: right;" | + 300%
+|-
+! scope="col" | Initial Stat boost
+! scope="col" style="width: 15%;text-align: right;" | + 0%
+! scope="col" style="width: 15%;text-align: right;" | + 50%
+! scope="col" style="width: 15%;text-align: right;" | + 100%
+! scope="col" style="width: 15%;text-align: right;" | + 150%
+|-
+! scope="col" | TB Multiplier
+! scope="col" style="width: 15%;text-align: right;" | x 1.0
+! scope="col" style="width: 15%;text-align: right;" | x 1.5
+! scope="col" style="width: 15%;text-align: right;" | x 2.0
+! scope="col" style="width: 15%;text-align: right;" | x 2.5
+|-
+! scope="row" |Level 1 (Initial Stat)
+|100
+|150
+|200
+|250
+|-
+! scope="row" |Level 2
+|120
+|180
+|240
+|300
+|-
+! scope="row" |Level 3
+|140
+|210
+|280
+|350
+|-
+! scope="row" |Level 4
+|160
+|240
+|320
+|400
+|-
+! scope="row" |Level 5
+|180
+|270
+|360
+|450
+|-
+! scope="row" |Level 6
+|200
+|300
+|400
+|500
+|-
+! scope="row" |Level 7
+|220
+|330
+|440
+|550
+|-
+! scope="row" |Level 8
+|240
+|360
+|480
+|600
+|-
+! scope="row" |Increase / Level
+| + 20
+| + 30
+| + 40
+| + 50
+|}
+<sup>Shown here to illustrate the Treasure bonus effect, which applies universally. A level 1 Cat with a 300% Treasure bonus is not possible in-game.</sup>
+
+Here's a more powerful illustration, [[Crazed Titan Cat (Super Rare Cat)|Crazed Titan Cat]]'s Health at level 1 through to level 8 would be affected as shown below -
+{| class="article-table" style="width: 100%;text-align: right;" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="col" | Legendary Cat Shield
+! scope="col" style="width: 15%;text-align: right;" | + 0%
+! scope="col" style="width: 15%;text-align: right;" | + 100%
+! scope="col" style="width: 15%;text-align: right;" | + 200%
+! scope="col" style="width: 15%;text-align: right;" | + 300%
+|-
+! scope="col" | Initial Stat boost
+! scope="col" style="width: 15%;text-align: right;" | + 0%
+! scope="col" style="width: 15%;text-align: right;" | + 50%
+! scope="col" style="width: 15%;text-align: right;" | + 100%
+! scope="col" style="width: 15%;text-align: right;" | + 150%
+|-
+! scope="col" | TB Multiplier
+! scope="col" style="width: 15%;text-align: right;" | x 1.0
+! scope="col" style="width: 15%;text-align: right;" | x 1.5
+! scope="col" style="width: 15%;text-align: right;" | x 2.0
+! scope="col" style="width: 15%;text-align: right;" | x 2.5
+|-
+! scope="row" |Level 1 (Initial Stat)
+|3,600
+|5,400
+|7,200
+|9,000
+|-
+! scope="row" |Level 2
+|4,320
+|6,480
+|8,640
+|10,800
+|-
+! scope="row" |Level 3
+|5,040
+|7,560
+|10,080
+|12,600
+|-
+! scope="row" |Level 4
+|5,760
+|8,640
+|11,520
+|14,400
+|-
+! scope="row" |Level 5
+|6,480
+|9,720
+|12,960
+|16,200
+|-
+! scope="row" |Level 6
+|7,200
+|10,800
+|14,400
+|18,000
+|-
+! scope="row" |Level 7
+|7,920
+|11,880
+|15,840
+|19,800
+|-
+! scope="row" |Level 8
+|8,640
+|12,960
+|17,280
+|21,600
+|-
+! scope="row" |Increase / Level
+| + 720
+| + 1,080
+| + 1,440
+| + 1,800
+|}
+
+What these examples show is how powerful the Legendary Cat Shield and Legendary Cat Sword Treasure bonuses are on a cat's health and Attack Power and why it's important to obtain them.
+
+In both of these cases and all others, it shows that any level 1 Cat with the maximum 300% Treasure boost is ''stronger'' than the same cat at level 8 with 0% Treasure boost.
+
+==Requirements==
+===English Version===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|1-X-30
+|[[Norway (Empire of Cats)|Norway]]
+|Income Tax
+|-
+|1-X-31
+|[[United Kingdom (Empire of Cats)|United Kingdom]]
+|Fish and Chips
+|-
+|1-X-32
+|[[Greenland (Empire of Cats)|Greenland]]
+|Santa Beard
+|}
+
+===Japanese Version===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Stage
+! scope="col" |Location
+! scope="col" |Treasure
+|-
+|1-X-30
+|[[Norway (Empire of Cats)|Yamanashi]]
+|Houtou (ほうとう)
+|-
+|1-X-31
+|[[United Kingdom (Empire of Cats)|Nagano]]
+|Shinsu Soba (信州そば)
+|-
+|1-X-32
+|[[Greenland (Empire of Cats)|Niigata]]
+|Rice (お米)
+|}
+
+==Gallery==
+<gallery>
+Jpot003_o.png|[[Nyanko Daisensou|Japanese version]]'s Treasure (Snowscape of Kōshin'etsu)
+</gallery>
+
+==Trivia==
+*In the Japanese version, the Management Bible's equivalent is the '''Snowscape of Kōshin'etsu''' (甲信越の雪景色), Kōshinetsu being a subregion of the Chūbu region of Japan.
+**In the [[Battle Cats (Removed Game)|original English version]], it was shortened to just '''Snowscape'''.
+{{Treasures}}
+[[Category:Empire of Cats Treasures]]
+[[Category:Treasures]]

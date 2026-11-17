@@ -1,0 +1,20 @@
+{{#invoke:Navbox|main
+|template = Template:Tokyo Skytree
+|title = [[Tokyo Skytree Collaboration Event]]
+|navbox_class = skytree
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Sorakara (Rare Cat)|Sorakara]]
+
+|header2 = Stages
+|group2 = 7th Anniversary ★ Tokyo Skytree
+|list2 =
+*[[Sorakara (Easy)]]
+*[[From Now On (Easy)]]
+*[[I'll Try! (Easy)]]
+}}<templatestyles src="Tokyo Skytree/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Tokyo Skytree]]}}<noinclude>[[Category:Navboxes]]</noinclude>

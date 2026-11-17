@@ -1,0 +1,89 @@
+'''Grand Mage Mimon''' (大魔道士ミモーン, ''Daimadōshi Mimōn'', '''Archmage Mimon''') is a [[:Category:Traitless Enemies|Traitless]] variant of [[Dark Priest Mamon]] that appears in the [[Underground Labyrinth/Stage 113|last stage]] of [[Underground Labyrinth]]. She was added in [[Version 12.3 Update|Version 12.3]].
+
+{{Enemy Info
+|name = Grand Mage Mimon
+|image = E 643.png
+|appearance = [[Underground Labyrinth]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+This Traitless enemy is very similar to Dark Priest Mamon, with massive health, high damage, great range and far-reaching Omni Strikes, but balanced by her long attack animation. Unfortunately, while she sounds a straightforward enemy, the general nature of the Underground Labyrinth may lock your more useful units out of rotation, unless you save up the proper counters from the beginning.
+
+==Strategy==
+:''See [[Underground Labyrinth/Stage 113]]''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 643
+|Type = [[:Category:Traitless Enemies|Traitless]]
+|Image1 = Enemy icon 643.png
+|Name1 = Grand Mage Mimon
+|Desc1 = Horrific enchantress who resides in the deepest<br>depths of a labyrinth. Subjects victims caught in<br>her traps to unending stories with no punchline,<br>always about her big brother in the Aku Realms.
+|Name1 (JP) = 大魔道士ミモーン (Daimadōshi Mimōn, Archmage Mimon)
+|Desc1 (JP) = 地底迷宮の奥深くに棲む邪悪な魔導士。<br>罠で捕らえた勇者たちに延々と<br>オチのない長話を聞かせる苦行を科す。<br>魔界に住む兄貴のドジ話は鉄板ネタ。
+|Transl1 (JP) = An evil mage who lives deep in the [[Underground Labyrinth]],<br>she subjects the trapped heroes to endless torment by forcing them to<br>listen to her rambling stories with no punchline.<br>The story of her [[Dark Priest Mamon|older brother]] who lives in the [[The Aku Realms|Devil World]] works every time
+|Name1 (TW) = 大魔導士迷魔
+|Desc1 (TW) = 居住在地底迷宮深處的邪惡魔導士。<br>會把掉入陷阱裡的勇者們抓來<br>逼他們聽又長又無聊的故事。<br>最常講住在魔界的大哥所發生的趣事。
+|Name1 (KR) = 대마도사 미몬
+|Desc1 (KR) = 지하 미궁 깊은 곳에 살고 있는 사악한 마도사<br>함정에 빠진 용사들에게 영원히 끝나지 않는<br>재미없는 이야기를 들려주는 형벌을 준다<br>이야기의 대부분은 마계에 살고 있는 오라버니의 TMI
+}}
+
+==Variants==
+{{Variant
+|original = Grand Mage Mimon
+|inherit_desc = true
+|Enchanting Mage Vibon
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Underground Labyrinth]]===
+*[[Underground Labyrinth/Stage 113|Stage 113]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Grand Mage Mimon
+|Health = 3000000
+|Attack Power = 45000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 201
+|Movement Speed = 4
+|Knockback = 3
+|Foreswing = 105
+|Backswing = 96
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~500)<br>
+{{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg168.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+643 e.png|Grand Mage Mimon's spritesheet
+Medal 120.png|Grand Mage Mimon's hand on the ''Underground B100F'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*[[Dark Priest Mamon|Mamon]] and Mimon have similar names to [[wikipedia:ja:マモー・ミモー|Mamō and Mimō]], a pair of [https://youtu.be/3_b43drGB18 comedy characters] from the variety show ''[[wikipedia:ja:ウッチャンナンチャンのやるならやらねば!|Ucchan Nanchan no Yarunara Yaraneba!]]''. Furthermore, Mimon and Mimō are both redheads.
+*She is the first and only enemy to exclusively appear in the [[Underground Labyrinth]].
+*The orb she holds in her right hand closely resembles a [[Catseye|Dark Catseye]].
+
+==Reference==
+*https://battlecats-db.com/enemy/645.html
+
+----
+{{EnemyNav|Infernal Tyrant Nyandam|E-644}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Slow ability]]

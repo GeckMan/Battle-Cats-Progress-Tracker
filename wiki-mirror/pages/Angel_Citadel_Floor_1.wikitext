@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Squire Rel|Hippoe|Gabriel}}
+:''Not to be confused with the [[Heavenly Tower/Floor 1|Heavenly Tower]] or [[Infernal Tower/Floor 1|Infernal Tower]] versions of Floor 1.''
+'''Floor 1''' is the first floor of [[Angel Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 00 v en.png]]
+|stage location = [[File:Mapname003 v en.png]]
+|energy = 80
+|enemy castle hp = 15,000 HP
+|enemies = {{Magnification|Squire Rel|100%
+|Hippoe|100%}}
+|boss = {{Magnification|Gabriel|100%}}
+|treasure = - [[Battle Items#Rich Cat|Rich Cat]] +1 (100%, 1 time)
+|XP = 1,520 XP
+|width = 6,000
+|max enemies = 10
+|jpname = 1st Floor
+|script = 1階
+|romaji = 1 Kai
+|star = 1
+|event-chapter = [[Angel Citadel]]
+|difficulty = ★2
+|prev stage = N/A
+|next stage = [[Angel Citadel/Floor 2|Floor 2]]
+}}
+
+==Battleground==
+*6 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 12.67~13.33 seconds<sup>380f~400f</sup>.
+*6 [[Squire Rel]]s spawn after 10.67 seconds<sup>320f</sup>, delay 12.67~13.33 seconds<sup>380f~400f</sup>.
+*6 [[Squire Rel]]s spawn after 11.67 seconds<sup>350f</sup>, delay 12.67~13.33 seconds<sup>380f~400f</sup>.
+*2 [[Hippoe]]s spawn after 30 seconds<sup>900f</sup>, delay 32.67~33.33 seconds<sup>980f~1,000f</sup>.
+*2 [[Hippoe]]s spawn after 40 seconds<sup>1,200f</sup>, delay 32.67~33.33 seconds<sup>980f~1,000f</sup>.
+*2 [[Hippoe]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 32.67~33.33 seconds<sup>980f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gabriel]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07003-01.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

@@ -1,0 +1,121 @@
+{{PCExclusive}}
+'''New Year Momo''' is an [[:Category:Special Cats|Special Cat]] that is exclusive to the collaboration [[Minna de Nyanko Daisensou/PostPet Collaboration Event|Post Pet Momo's Optical Line Pioneering Story! Salesman Nyanmaru Tour]], only available in the [[Minna de Nyanko Daisensou|PC version]], from 29th December 2017 to 9th January 2018.
+
+{{Cat Info
+|ID = 905
+|rarity = EX
+|version = PC
+|name1 = New Year Momo
+|name2 = New Year Momo & Cat
+|image1 = 10905 1.PNG
+|image2 = 10905 2.PNG
+}}
+
+==Evolution==
+Evolves into '''New Year Momo & Cat''' at level 10.
+
+==Strategy/Usage==
+Similarly to [[Momo (PC Special Cat)|Momo]], its non-new years variant, this unit has very little usage due to its poor DPS and most importantly, Single Target. Even though it has above-average range, [[Lizard Cat (Normal Cat)|Dragon Cat]] has more range and overall better stats. However, it does have the Money Up ability, which could give it some use against weak peons like [[Doge]] and [[Snache]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 905<sup>PC</sup>
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni10905 f00.png
+|Image2 = Uni10905 c00.png
+|Name1 (JP) = 新年モモ (Shinnen Momo, New Year Momo)
+|Desc1 (JP) = あのポストペットから参戦！<br>にゃんこに羽根突き勝負を挑みに行く途中<br>遠くの敵を攻撃できる遠距離型キャラ
+|Transl1 (JP) = Joining the war from Post-Pet!<br>On the way to challenge Nyanko to a Hanetsuki game<br>A long-distance character that can attack enemies from afar
+|Name2 (JP) = 新年モモ&にゃんこ (Shinnen Momo & Nyanko, New Year Momo & Cat)
+|Desc2 (JP) = あのポストペットから参戦！<br>羽根突き勝負はご覧の結果だけど、とてもなかよし<br>遠くの敵を攻撃できる遠距離型キャラ
+|Transl2 (JP) = Joining the war from Post-Pet!<br>The Hanetsuki game is the result you see, but it's very good<br>A long-distance character that can attack enemies from afar
+}}
+
+==Cost==
+*Chapter 1: 600円
+*Chapter 2: 900円
+*Chapter 3: 1,200円
+{{Upgrade Cost|MIX
+|0
+|2,000
+|3,200
+|4,800
+|6,800
+|9,200
+|12,000
+|15,200
+|18,800
+|22,800
+|3,000
+|max = 40
+}}
+
+==Stats==
+:''Note: these stats are an approximation.''
+{{Cat Stats 1.2
+|Normal Name = New Year Momo
+|Normal Base HP = 600
+|Normal Base AP = 150
+|Normal Range = 380
+|Normal Foreswing = 32
+|Normal Attack Cooldown = 133
+|Normal Attack Length = 69
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 605
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = New Year Momo & Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 150
+|Evolved Range = 380
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 133
+|Evolved Attack Length = 69
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 605
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.40
+|Scaling = 20x20
+|Orb = false
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10905_f.png|MediaWiki:Custom-AnimationViewer/PC905_f.json}}
+|-|Evolved=
+{{AnimationViewer|10905_c.png|MediaWiki:Custom-AnimationViewer/PC905_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10905 f00}}
+
+==Trivia==
+*The words appeared on the photo above said あけおめ (Akeome), which is Happy New Year's Japanese but short form, the original being '''あけ'''まして'''おめ'''でとう (Akemashite omedetō), bolded words represent where the words came from in the short form of this.
+
+==Reference==
+*https://seesaawiki.jp/battlecatswiki/d/%bf%b7%c7%af%a5%e2%a5%e2
+*https://www.youtube.com/watch?v=JZ70JfOMkAo
+
+----
+{{CatNav|Momo|Hatsuyume Mikan}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Money Up ability]]

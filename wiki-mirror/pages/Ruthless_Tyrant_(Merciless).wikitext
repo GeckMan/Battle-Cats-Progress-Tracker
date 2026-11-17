@@ -1,0 +1,71 @@
+{{EnemiesAppearing|Malevolent Lion Cat|Brollow|Crazed Cow Cat}}
+'''Ruthless Tyrant (Merciless)''' is the only stage in '''The Malevolent Cow''', which is unlocked after clearing [[Mount Aku (Aku Realm)|Mount Aku/Mount Fuji]] in [[The Aku Realms]]. It was added in [[Version 12.7 Update|Version 12.7]] and appears on the '''15th''' of every month. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc170.png]]
+[[File:Mapsn354 00 s en 1.png]]
+|stage location = [[File:Mapname354 s en.png]]
+|energy = 200
+|enemy castle hp = 2,500,000 HP
+|enemies = {{Magnification|Malevolent Lion Cat|100%
+|Brollow|200%
+|Crazed Cow Cat|100%}}
+|boss = {{Magnification|Brollow|100%}}
+|treasure = - [[Brainwashed Cow Cat (Super Rare Cat)|Brainwashed Cow Cat]]'s [[True Form]] (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 4,000 XP
+|width = 4,700
+|max enemies = 20
+|jpname = Resentment King Super Extremely Hard
+|script = 来怨キング 超極ムズ
+|romaji = Raion Kingu Chō Goku Muzu
+|star = 1
+|event-chapter = The Malevolent Cow
+|difficulty = ★11
+|prev stage = N/A
+|next stage = N/A
+|require = Clear [[Mount Aku (Aku Realm)|Mount Aku/Mount Fuji]]
+}}
+
+==Battleground==
+*2 [[Malevolent Lion Cat]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*3 [[Brollow]]s (200%) spawn after 46.67 seconds<sup>1,400f</sup>, delay 13.33~15.33 seconds<sup>400f~460f</sup>.
+*When the base reaches 99% HP:
+**1 [[Brollow]] (100%) spawns as the boss.
+**Infinite [[Malevolent Lion Cat]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**40 [[Malevolent Lion Cat]]s spawn, delay 4~6 seconds<sup>120f~180f</sup>.
+**1 [[Crazed Cow Cat (Enemy)|Crazed Cow Cat]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**7 [[Brollow]]s (200%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+This stage is more or less similar to [[Lots O' Lion (Deadly)|Lots O' Lion]] in that most of the threats aren't all that durable and have very low range, not to mention the Crazed Cow variants having single target. Spammable attackers should be the way to go, although with how much damage they could deal, it's recommended to employ the likes of [[Stone Cat (Rare Cat)|Boulder Cat]] so they can't push. You don't need to use [[:Category:Surge Attack Cats|Surge Attackers]] at all, since they generally wouldn't do much here and the Malevolent Lion Cats' [[Counter-Surge]] ability can destroy most DPS units easily.
+
+Because of how early the threats tend to spawn, you might want to consider using a Rich Cat. You'll also need something to stop the Brollow from clipping through your units during the boss shockwave.
+
+===Recommended Units===
+*[[Master Uril (Special Cat)|Esoteric Uril]] - His guaranteed Slow effect, high damage and insane bulk allows him to destroy the lions easily while controlling them. Despite the lions having Counter Surge, you can always pair him with Boulder Cat, Cat Cactus and Cone Cat, which are either Immune to Surge or have enough bulk to tank them. However, if you feel that the counter surge is working against you, you could always try removing Uril.
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]] - Cameraman is a mid-ranged attacker who's Strong Against [[:Category:Floating Enemies|Floating]] and tears up Brollows like paper, while also having a low cost and the ability to Survive a Lethal Strike. This makes her an excellent choice to accumulate DPS.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - Bahamut needs a lot of meatshields to work properly, but he can act as a supplementary form of DPS that backs your [[:Category:Area Attack Cats|Area Attackers]]. If you have explosion talents unlocked, Bahamut can shred the malevolent lions.
+*[[Stone Cat (Rare Cat)|Boulder Cat]] - Boulder has extreme health and very high speed but despawns after one attack. Nevertheless, when the enemies stack up, Boulder will often be your main source of defense while you stack up Area Attackers.
+*[[Slime Cat (Rare Cat)|Jellycat]] - Jellycat can fire off powerful [[Wave Attack]]s, exploiting the range disadvantage of most enemies in the stage. At level 48 or above, Jellycat's attacks do just enough damage to instantly kill 200% Brollows, and at level 50, it can destroy the Lions' [[Shield]]s, making things that much easier.
+*[[Ancient Egg: N006 (Special Cat)|Fallen Bear Cat]] - If you happen to have them true formed they will absolutely crush this stage, able to kill each malevolent lion in just 6 hits at level 50 doing ~76k damage per hit.
+*[[Paperboy Cat (Rare Cat)|Paperboy Cat]] - Despite being obtained from [[Invasion of Poultrio|an incredibly difficult stage]], Paperboy proves to be an incredible unit here. His Insane Damage to Akus allows him to melt through stacks of the lions. He also has Immunity to Surges in case you're using some Surge attackers.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Mapsn354 00 s en.png|Pre-[[Version 15.0 Update|15.0]] stage name
+</gallery>
+
+==Trivia==
+*Prior to [[Version 15.0 Update|Version 15.0]], Ruthless Tyrant was an Insane stage. This was most likely a translation error.
+*Ruthless Tyrant's Japanese name, Raion King (来怨キング), is a pun: 来怨 literally translates to "coming resentment", but also happens to be pronounced ''raion'', the Japanese pronunciation of ''[[Malevolent Lion Cat|lion]]''.
+*Prior to [[Version 13.0 Update|Version 13.0]], the enemy base had 1,500,000 HP instead of 2,500,000.
+
+==Reference==
+*https://battlecats-db.com/stage/s01354-01.html
+
+{{Awakening Stages}}
+[[Category:Awakening Stages]]
+[[Category:Malevolent Stages]]
+[[Category:No Continue Stages]]
+[[Category:Event Stages]]

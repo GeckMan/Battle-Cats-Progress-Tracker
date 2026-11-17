@@ -1,0 +1,44 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Hippoe}}
+:''Not to be confused with the [[Citadel]] version of [[Citadel/Floor 1|Floor 1]].''
+'''Floor 1''' is the first floor of [[Heavenly Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 00 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 40
+|enemy castle hp = 5,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%}}
+|boss = {{Magnification|Hippoe|100%}}
+|treasure = - [[Battle Items#Speed Up|Speed Up]] +1 (100%, 1 time)
+|XP = 760 XP
+|width = 3,600
+|max enemies = 7
+|jpname = 1st Floor
+|script = 1階
+|romaji = 1 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Heavenly Tower/Floor 2|Floor 2]]
+}}
+
+==Battleground==
+*3 [[Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*4 [[Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*7 [[Snache]]s spawn after 80 seconds<sup>2,400f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*7 [[Those Guys]] spawn after 100 seconds<sup>3,000f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hippoe]] spawns as the boss.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-01.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]

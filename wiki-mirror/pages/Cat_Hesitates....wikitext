@@ -1,0 +1,56 @@
+{{EnemiesAppearing|Baa Baa|Gory|Le'boin|Dagshund|Celeboodle|King's Mimic}}
+'''Cat Hesitates...''' is the fifth stage in [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn361 04 s en.png]]
+|stage location = [[File:Mapname361 s en.png]]
+|energy = 100
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Baa Baa|600%
+|Gory|600%
+|Le'boin|600%
+|Dagshund|200%
+|Celeboodle|200%}}
+|boss = {{Magnification|King's Mimic|400%}}
+|restriction = Cat Deploy Cost: Only 300¢ or more
+|score reward = '''6,300''': [[Catamin]] [A] +1<br>
+'''4,200''': [[Battle Items#Speed Up|Speed Up]] +1<br>
+'''500''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 3,000 XP
+|width = 4,400
+|max enemies = 12
+|jpname = Cat Is Unsure What to Do
+|script = ネコはどうしていいかわからない
+|romaji = Neko wa Dōshiteīka Wakaranai
+|star = 1
+|event-chapter = [[Anniversary/11th Year#Part 5: Battle at Doge Castle|Part 5: Battle at Doge Castle]]
+|difficulty = ★6
+|prev stage = [[Mimic's Sly Smirk]]
+|next stage = [[Mimic's Mockery]]
+}}
+
+==Restrictions==
+Cat Deploy Cost: Only 300¢ or more
+
+==Battleground==
+*Infinite [[Baa Baa]]s spawn after 2 seconds<sup>60f</sup>, delay 8~24 seconds<sup>240f~720f</sup>.
+*3 [[Gory|Gories]] spawn after 10 seconds<sup>300f</sup>, delay 16~20 seconds<sup>480f~600f</sup>.
+*1 [[Le'boin]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[King's Mimic]] spawns as the boss.
+**1 [[Le'boin]] spawns after 16.67 seconds<sup>500f</sup>.
+**3 [[Dagshund]]s spawn after 3.33 seconds<sup>100f</sup>, delay 20 seconds<sup>600f</sup>.
+**5 [[Gory|Gories]] spawn, delay 13.33~18.67 seconds<sup>400f~560f</sup>.
+**6 [[Celeboodle]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+
+==Strategy==
+Spam [[Axe Cat (Normal Cat)|Dark]], [[Lizard Cat (Normal Cat)|King Dragon]], [[Gross Cat (Normal Cat)|Macho Leg]] and [[Titan Cat (Normal Cat)|Jamiera]] Cats to win. Bring any useful [[Cat Combo]]s you have to help get a faster time.
+
+==Reference==
+*https://battlecats-db.com/stage/s01361-05.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]
+[[Category:Restriction Stages]]

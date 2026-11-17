@@ -1,0 +1,84 @@
+{{EnemiesAppearing|Those Guys|Metal Hippoe|Jackie Peng|Shadow Boxer K|Squire Rel|B.B.Bunny|Bore|Gory Groom}}
+'''...No, I Do Not''' is the eighth and final stage in [[The Forbidden Bride (Monthly Event)|The Forbidden Bride]].
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn030 07 s en.png]]
+|stage location = [[File:Mapname030 s en.png]]
+|energy = 115
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Those Guys|400%
+|Metal Hippoe|100%
+|Jackie Peng|800%
+|Shadow Boxer K|100%
+|Squire Rel|800%
+|B.B.Bunny|800%
+|Bore|100%
+|Gory Groom|150%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|enemies2 = {{Magnification|Those Guys|600%
+|Metal Hippoe|150%
+|Jackie Peng|1,200%
+|Shadow Boxer K|150%
+|Squire Rel|1,200%
+|B.B.Bunny|1,200%
+|Bore|150%
+|Gory Groom|225%}}
+|boss2 = {{Magnification|Squire Rel|150%}}
+|enemies3 = {{Magnification|Those Guys|800%
+|Metal Hippoe|200%
+|Jackie Peng|1,600%
+|Shadow Boxer K|200%
+|Squire Rel|1,600%
+|B.B.Bunny|1,600%
+|Bore|200%
+|Gory Groom|300%}}
+|boss3 = {{Magnification|Squire Rel|200%}}
+|enemies4 = {{Magnification|Those Guys|1,200%
+|Metal Hippoe|300%
+|Jackie Peng|2,400%
+|Shadow Boxer K|300%
+|Squire Rel|2,400%
+|B.B.Bunny|2,400%
+|Bore|300%
+|Gory Groom|450%}}
+|boss4 = {{Magnification|Squire Rel|300%}}
+|treasure = - [[Madam Bride (Rare Cat)|Madam Bride]] (10%, 1 time)
+|XP = 3,450 XP
+|width = 4,400
+|max enemies = 12
+|jpname = I won't swear in the end.
+|script = 最終的に誓いません。
+|romaji = Saishū Teki ni Chikaimasen.
+|star = 4
+|event-chapter = [[The Forbidden Bride (Monthly Event)|The Forbidden Bride]]
+|difficulty = ★5
+|prev stage = [[Ex says I object]]
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 0.67~6.67 seconds<sup>20f~200f</sup>.
+*5 [[Metal Hippoe]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 13.33 seconds<sup>400f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Shadow Boxer K]] spawns after 60 seconds<sup>1,800f</sup>.
+*When the base reaches 99% HP:
+**3 [[Shadow Boxer K]]s spawn, delay 4 seconds<sup>120f</sup>.
+**20 [[Squire Rel]]s (800%) spawn, delay 2 seconds<sup>60f</sup>.
+*When the base reaches 50% HP:
+**1 [[Squire Rel]] (100%) spawns as the boss.
+**Infinite [[Squire Rel]]s (800%) spawn, delay 0.33~2 seconds<sup>10f~60f</sup>.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 0.33~2 seconds<sup>10f~60f</sup>.
+**1 [[Bore]] spawns.
+**2 [[Gory Groom]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+The main problem is the Bore shredding your [[:Category:Anti-Dark Cats|anti-Dark]] cats, but this is only a problem if you have never faced a Bore before. After killing the Bore, you should be able to destroy the base on 1-{{2c}} difficulties. On {{3c}}, just stall and chip down/kill the Gory Grooms while managing the Bore with [[:Category:Anti-Red Cats|anti-Red]] cats such as [[Witch Cat (Rare Cat)|Witch Cat]] or [[Apple Cat (Super Rare Cat)|iCat]]. [[Weightlifter Cat (Super Rare Cat)|Weightlifter Cat]] is good here, as having multiple stacked up can do a really good job at mowing down the [[:Category:Dark Enemies|Dark]] enemies and damaging the Bore, as well as protecting your stronger units.
+
+==Reference==
+*https://battlecats-db.com/stage/s01030-08.html
+
+{{Monthly}}
+[[Category:The Forbidden Bride Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

@@ -1,0 +1,113 @@
+#combo-menu > div {
+	height: 30px;
+	line-height: 30px;
+	font-weight: bold;
+	flex-grow: 1;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.1s;
+    user-select: none;
+}
+
+#combo-menu > div:not(:last-child) {
+	border-right: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#combo-menu > div:hover {
+	background-color: #1e4837;
+}
+
+.combo-dropdown {
+	display: block;
+	max-height: 501.5px;
+	padding-top: 1.5px;
+	transition: 0.1s;
+	transform: scaleY(0);
+	transform-origin: 50% 0;
+	overflow-y: auto;
+}
+
+#combo-menu > div:hover > .combo-dropdown {
+	transform: scaleY(1);
+}
+
+.combo-multi-item {
+	background: var(--theme-page-dynamic-color-1--inverted);
+	opacity: 0.75;
+	font-size: 0.8em;
+	color: var(--theme-page-dynamic-color-1);
+}
+
+.combo-multi-selected {
+	background: var(--theme-page-dynamic-color-1--inverted);
+	opacity: 1;
+	text-decoration: underline;
+}
+
+.combo-multi-all,
+.combo-multi-none {
+	background: var(--theme-page-dynamic-color-1--inverted);
+	font-size: 0.8em;
+	color: var(--theme-page-dynamic-color-1);
+}
+
+@media not (hover: none) {
+	.combo-multi-item:hover:not(.combo-multi-selected) {
+		background: var(--theme-link-dynamic-color-2);
+		opacity: 0.75;
+	}
+
+	.combo-multi-selected:hover,
+	.combo-multi-all:hover,
+	.combo-multi-none:hover {
+		background: var(--theme-link-dynamic-color-2);
+	}
+
+	.combo-multi-item:active,
+	.combo-multi-all:active,
+	.combo-multi-none:active {
+		background: var(--theme-page-dynamic-color-1--inverted) !important;
+		opacity: 0.8;
+	}
+}
+
+.combo-dropdown-divide {
+	height: 0;
+	border: rgba(0, 0, 0, 0) 0.5px solid;
+}
+
+.combo-dropdown-arrow {
+	display: inline-block;
+	transition: 0.1s;
+}
+
+#combo-menu > div:hover > .combo-dropdown-arrow {
+	transform: rotate(180deg);
+}
+
+#combo-list .unit-icon img {
+	width: 70px;
+	height: 70px;
+}
+
+#combo-list a {
+	color: #FBFBFC;
+}
+
+#combo-list > div {
+	display: inline-block;
+	margin: 3px;
+}
+
+#combo-background {
+	background-image: url("https://static.wikitide.net/battlecatswiki/8/84/Img016.png");
+	animation: combo-bg 5s ease-in-out 0s infinite alternate;
+	mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.25) 25%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 1) 100%);
+}
+
+@keyframes combo-bg {
+	0% { opacity: 0.25; }
+	100% { opacity: 0.04; }
+}
+
+/* [[Category:Template stylesheets]] */

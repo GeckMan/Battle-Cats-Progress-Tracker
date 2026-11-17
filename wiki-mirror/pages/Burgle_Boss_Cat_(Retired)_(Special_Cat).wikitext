@@ -1,0 +1,127 @@
+'''Burgle Boss Cat (Retired)''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Download Celebration! (Event Gacha)|Download Celebration!]] Event Gacha. He was added in [[Version 8.9 Update|Version 8.9]].
+
+{{Cat Info
+|ID = 504
+|rarity = EX
+|name1 = Burgle Boss Cat (Retired)
+|name2 = Burgle Boss Cat (Prime)
+}}
+
+==Evolution==
+Evolves into '''Burgle Boss Cat (Prime)''' at level 10.
+
+==Strategy/Usage==
+Burgle Boss Cat can effectively be seen as just a worse [[Thief Cat (Rare Cat)|Phantom Thief Cat]], as he is worse at clearing peons due to his infrequent attacks; additionally, Thief Cat is already situational as it is. In short, he can only really shine in those areas where Phantom Thief Cat would also shine, so only really up until the end of early-game. Unfortunately, Phantom Thief Cat can later evolve into Goemon Cat, who outclasses Burgle Boss Cat in just about every possible way, even before its Talents, rendering him useless, other than as a way to boost your [[User Rank]], or as [[Underground Labyrinth|Labyrinth]] fodder.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 504
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni504 f00.png
+|Image2 = Uni504 c00.png
+|Name1 = Burgle Boss Cat (Retired)
+|Desc1 = Salty old thief who schools rookies in the tricks of<br>the trade, while hiding kind eyes behind their shades.<br>Double Bounty when defeating enemies.
+|Name2 = Burgle Boss Cat (Prime)
+|Desc2 = Ex-ringleader of a "top-tier crew", a blown knee forced<br>him to hang up the lockpicks after protege Gamatoto quit.<br>Double Bounty when defeating enemies.
+|Name1 (JP) = おやじネコ(店主) (Oyaji Neko (Tenshu), Fatherly Cat (Shopkeeper))
+|Desc1 (JP) = 新人ネコに泥棒のアレコレを教える世話好きおやじ<br>口は悪いがサングラスの奥につぶらな瞳を隠している<br>敵を倒したときにお金を多くもらえる
+|Transl1 (JP) = A caring father teaching a newbie cat the art of thievery.<br>He has a bad mouth, but hides his round cute eyes behind sunglasses.<br>Gain a lot of money upon defeating enemies.
+|Name2 (JP) = おやじネコ(現役) (Oyaji Neko (Gen'eki), Fatherly Cat (Active Service))
+|Desc2 (JP) = 自称、伝説の泥棒団を束ねていたリーダー<br>ガマトトの脱退直後に膝を痛めて自らも引退<br>敵を倒したときにお金を多くもらえる
+|Transl2 (JP) = Self-proclaimed leader who administrates legendary thieves.<br>After Gamatoto's withdrawal, his knees hurt so he retired as well.<br>Gain a lot of money upon defeating enemies.
+|Name1 (TW) = 貓大叔（店主）
+|Desc1 (TW) = 喜歡照顧與教導新手貓咪"小偷大小事"的大叔<br>嘴巴惡毒但墨鏡後隱藏著一雙深邃的眼睛<br>打倒敵人的時候可以得到很多金錢
+|Name2 (TW) = 貓大叔（現役）
+|Desc2 (TW) = 自稱是掌管過傳說中小偷幫一團的頭頭<br>在加碼多多退出後加上膝蓋舊傷就此引退<br>打倒敵人的時候可以得到很多金錢
+|Name1 (KR) = 두목 고양이(점주)
+|Desc1 (KR) = 신입 고양이에게 도둑질의 노하우를 가르치며 남을 잘 챙기는 두목<br>입은 걸지만 선글라스 뒤에 귀여운 눈망울을 감추고 있다<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+|Name2 (KR) = 두목 고양이(현역)
+|Desc2 (KR) = 자칭 전설의 도적단을 거느렸던 리더<br>가마토토를 탈퇴한 직후에 무릎을 다쳐 은퇴했다<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Burgle Boss Cat (Retired)
+|Normal Base HP = 500
+|Normal Base AP = 500
+|Normal Range = 200
+|Normal Foreswing = 13
+|Normal Attack Cooldown = 211
+|Normal Attack Length = 98
+|Normal Speed = 8
+|Normal KB = 5
+|Normal Cost = 360
+|Normal Recharge = 640
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = Burgle Boss Cat (Prime)
+|Evolved Base HP = 500
+|Evolved Base AP = 500
+|Evolved Range = 200
+|Evolved Foreswing = 13
+|Evolved Attack Cooldown = 211
+|Evolved Attack Length = 98
+|Evolved Speed = 16
+|Evolved KB = 5
+|Evolved Cost = 360
+|Evolved Recharge = 640
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.50+5
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 500 damage<br>(66.96 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 224f <sub>7.47 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 13f <sup>0.43s</sup><br>(85f <sup>2.83s</sup> backswing)
+|val-Normal-Recharge Time = 21.33 ~ 12.53 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 8,500 damage<br>(1,138.39 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 8,500 damage<br>(1,138.39 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 224f <sub>7.47 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 13f <sup>0.43s</sup><br>(85f <sup>2.83s</sup> backswing)
+|val-Evolved-Recharge Time = 21.33 ~ 12.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni504 f00}}
+
+==Trivia==
+*Prior to [[Version 15.6 Update|Version 15.6]], Burgle Boss Cat was exclusive to the Japanese and Taiwanese versions of [[The Battle Cats]]. In order to unlock him, you had to reach League 2 in [[The Burgle Cats]]. When done, a red gift icon would appear, which would give this Cat when tapped. With the shutdown of The Burgle Cats, this was no longer possible.
+
+==Reference==
+*https://battlecats-db.com/unit/505.html
+
+----
+{{CatNav|2D Cat|Relentless Gladios}}
+----
+
+{{The Burgle Cats}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Money Up ability]]

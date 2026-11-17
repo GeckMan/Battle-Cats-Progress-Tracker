@@ -1,0 +1,84 @@
+'''Messier''' (メシエ, ''Meshie'') is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Shoumetsu Toshi Collaboration Event]]. She was added in [[Version 9.5 Update|Version 9.5]].
+
+{{Enemy Info
+|name = Messier
+|image = E 507.png
+|money drop = 1,500¢ - 5,925¢
+|appearance = [[Shoumetsu Toshi Collaboration Event]]
+}}
+
+==Enemy==
+Messier has very low range, but her Omni Strike hits up to 600 and strengthens by 200% at 20% health. This combined with her great damage, high durability and the nasty support makes her more than a match to any player. Her main weaknesses are her unusually high knockback count, somewhat slow attack rate and an easy to exploit trait.
+
+==Strategy==
+:''See [[Messier's Assault!]] for Strategies.''
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Messier's Assault!]]:
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv1]] (100%)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv2]] (140% HP/130% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv3]] (180% HP/160% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv4]] (220% HP/190% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv5]] (250% HP/200% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv6]] (320% HP/220% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv7]] (390% HP/240% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv8]] (460% HP/260% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv9]] (530% HP/280% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv10]] (600% HP/300% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv11]] (640% HP/310% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv12]] (680% HP/320% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv13]] (720% HP/330% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv14]] (760% HP/340% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv15]] (800% HP/350% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv16]] (840% HP/360% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv17]] (880% HP/370% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv18]] (920% HP/380% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv19]] (960% HP/390% AP)
+**[[Messier's Assault!/Land of Dreams Lv1~20|Land of Dreams Lv20]] (1,000% HP/410% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Messier
+|Health = 378000
+|Attack Power = 8000
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 242
+|Movement Speed = 6
+|Knockback = 14
+|Foreswing = 43
+|Backswing = 38
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~600)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 200% at 20% health<br>
+{{AbilityIcon|Immune to Freeze|Immune to Weaken}} [[Immune to Freeze]] and [[Immune to Weaken|Weaken]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy|bg = Bg108.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+507 e.png|Messier's spritesheet
+IdleMessier.gif|Messier's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/509.html
+
+----
+{{EnemyNav|Everlord Wanwan|Yakisoba U.F.O. Cat}}
+----
+
+{{Shoumetsu Toshi}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Weaken Immunity]]

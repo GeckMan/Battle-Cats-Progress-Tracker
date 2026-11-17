@@ -1,0 +1,121 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Medama-Oyaji (Enemy)]].''
+'''Medama-Oyaji''' (目玉おやじ, Lit. "Eyeball Father") is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 8.1 Update|Version 8.1]] and can be obtained during the [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou Collaboration Event]].
+
+{{Cat Info
+|ID = 454
+|rarity = EX
+|name1 = Medama-Oyaji
+|name2 = Bathing Oyaji
+}}
+
+==Evolution==
+Evolves into '''Bathing Oyaji''' at level 10.
+
+==Strategy/Usage==
+Oyaji's pitiful stats make him unusable past early [[Empire of Cats]] [[Zombie Outbreaks|Outbreaks]]. His most noticeably weakness is his abysmal cooldown, comparable to the cooldown of certain [[:Category:Uber Rare Cats|Uber Rares]]! Although his [[Weaken]] effect has well over 100% uptime, his low HP allows Zombies to burrow onto him and flank him easily. Lastly, his anti-Metal ability is more than disappointing. With its 4% chance, you'll hardly ever see a Critical Hit from him.
+
+{{Job|Classification = Crowd-Controller & Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 454
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni454 f00.png
+|Image2 = Uni454 c00.png
+|Name1 (JP) = 目玉おやじ (Medama Oyaji, Eyeball Father)
+|Desc1 (JP) = ゆるゲゲから参戦！<br>実は鬼太郎の左目、ではなく自分の体から出た目玉<br>ゾンビの攻撃力を下げ、ごくまれにクリティカルを放つ
+|Transl1 (JP) = Joining the war from YuruGeGe!<br>He's not actually Kitaro's left eye, but an eyeball that came out of his own body<br>Lowers the attack power of Zombie, very occasionally releases a Critical
+|Name2 (JP) = 入浴おやじ (Nyūyoku Oyaji, Bathing Father)
+|Desc2 (JP) = ゆるゲゲから参戦！<br>風呂マニアでここ数百年は超熱湯風呂に夢中<br>ゾンビの攻撃力を下げ、ごくまれにクリティカルを放つ
+|Transl2 (JP) = Joining the war from YuruGeGe!<br>He's a bath fanatic and has been obsessed with super-boiling water baths for the last few hundred years<br>Lowers the attack power of Zombies, very occasionally releases a Critical
+}}
+
+==Cost==
+*Chapter 1: 210円
+*Chapter 2: 315円
+*Chapter 3: 420円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Medama-Oyaji
+|Normal Base HP = 720
+|Normal Base AP = 99
+|Normal Range = 210
+|Normal Foreswing = 24
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 51
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 210
+|Normal Recharge = 2100
+|Normal Attack Type = Single
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Critical}} 4% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Bathing Oyaji
+|Evolved Base HP = 720
+|Evolved Base AP = 99
+|Evolved Range = 210
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 65
+|Evolved Attack Length = 40
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 210
+|Evolved Recharge = 2100
+|Evolved Attack Type = Single
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Critical}} 4% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 720 HP
+|val-Normal-Attack Power = 99 damage<br>(35.78 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 24f <sup>0.8s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 70 ~ 61.2 seconds
+|val-Normal-MaxHP = 12,240 HP
+|val-Normal-MaxAttack = 1,682 damage<br>(607.95 DPS)
+|val-Evolved-Health = 12,240 HP
+|val-Evolved-Attack Power = 1,682 damage<br>(607.95 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 70 ~ 61.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni454 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/454.html
+
+----
+{{CatNav|Kitarou|Wonder MOMOCO}}
+----
+
+{{Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Critical Hit Cats]]

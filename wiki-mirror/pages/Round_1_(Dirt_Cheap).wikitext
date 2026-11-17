@@ -1,0 +1,70 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Mr. Angel|Ginger Snache|Red EnerG|Professor A.|Bore|Cala Maria|Winged Pigge|St. Dober}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Mr. Angel|200%
+|Ginger Snache|500%
+|Red EnerG|100%
+|Bore|300%
+|Cala Maria|100%
+|St. Dober|100%}}
+|boss = {{Magnification|Professor A.|150%
+|Winged Pigge|100%}}
+|enemies2 = {{Magnification|Mr. Angel|240%
+|Ginger Snache|600%
+|Red EnerG|120%
+|Bore|360%
+|Cala Maria|120%
+|St. Dober|120%}}
+|boss2 = {{Magnification|Professor A.|180%
+|Winged Pigge|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Dirt Cheap|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Dirt Cheap)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Dirt Cheap}}
+
+==Battleground==
+*Infinite [[Mr. Angel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*6 [[Mr. Angel]]s spawn after 5.33 seconds<sup>160f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*5 [[Ginger Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Red EnerG]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Professor A.]] spawns as the boss.
+**1 [[Bore]] spawns.
+**1 [[Cala Maria]] spawns.
+**1 [[Bore]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 70% HP:
+**1 [[Winged Pigge]] spawns as the boss.
+**1 [[St. Dober]] spawns.
+**1 [[Red EnerG]] spawns.
+**1 [[Cala Maria]] spawns.
+**Infinite [[Ginger Snache]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+This is a mixed Red/Angel stage that features some of the most annoying threats of both traits and a flood of Surges, so anything that isn't Surge Immune won't hold up for long. The Red EnerGs can stunlock anything they hit, Cala Maria/Professor A. decimates units from afar while Winged Pigge/St. Dober withstand and dish out extreme damage at close range, to the point where even reliable anti-Reds and anti-Angels will suffer tremendously. It's best to eliminate the first two Red EnerGs before hitting the base so the first group of enemies are easier to handle. Specific Ubers and CC units are almost required for the second wave to prevent the threats from pushing too much.
+
+==Reference==
+*https://battlecats-db.com/stage/s36016-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

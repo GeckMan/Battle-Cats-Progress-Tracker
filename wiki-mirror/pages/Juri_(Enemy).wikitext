@@ -1,0 +1,70 @@
+:''This article is about the enemy. For the Cat Unit, see [[Juri (Uber Rare Cat)]].''
+'''Juri''' (ジュリ, ''Juri'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Street Fighter Collaboration Event]]. She was added in [[Version 14.7 Update|Version 14.7]] for [[Nyanko Daisensou|BCJP]] and [[Version 15.0 Update|Version 15.0]] for [[The Battle Cats|BCEN]].
+
+{{Enemy Info
+|name = Juri
+|image = E 749.png
+|first appearance = [[VS JURI (Easy)|New Challenger]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Out of the two fighters that were introduced in Version 14.7, Juri comes out on top for being the strongest of the two. Although having less HP than Cammy, Juri has higher stats overall as well as having a guaranteed to [[Freeze]] and [[Slow]] Cat units. In both her New Challenger appearances she isn't that bad to fight against as the support she is with is around mid [[Stories of Legend]] strength.
+
+==Strategy==
+Juri is quite a powerful enemy, with high damage split up into a three part [[Long Distance]] Multi-Hit. This mainly is used to extend her [[Freeze]] and [[Slow]] to be slightly longer, essentially making them 0.5 seconds longer. She attacks moderately fast, making fast units like [[Express Cat (Super Rare Cat)|Maglev Cat]] and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] essential in chipping her down. Her abilities make her a dangerous support, despite not having much pushing power herself; however, she can be sniped by piercing units using them as a platform depending on the specific encounters.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS JURI (Easy)]] (5%)
+**[[VS JURI (Expert)]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest|I Seek the Strongest]] (25%, 55%, 80%, 110%, 140%, 170%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Juri
+|Health = 200000
+|Attack Power = 16800
+|Attack Range = 430
+|Attack Type = Area
+|Time Between Attacks = 164
+|Movement Speed = 20
+|Knockback = 4
+|Foreswing = 12
+|Backswing = 32
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">5,600</span> at 12f <sup>0.4s</sup>, <span class="scaled" data-type="ap">5,600</span> at 21f <sup>0.7s</sup>, <span class="scaled" data-type="ap">5,600</span> at 25f <sup>0.83s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~431 on 1st hit, 75~505 on 2nd hit, 150~580 on 3rd hit)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+749 e.png|Juri's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/751.html
+
+----
+{{EnemyNav|Cammy|Kaijin Doge}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Slow ability]]

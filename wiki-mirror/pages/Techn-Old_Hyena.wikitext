@@ -1,0 +1,109 @@
+'''Techn-Old Hyena''' (テク・ノロ爺, ''Teku・Noro-jiji'', '''Tech Nolo-jiji''') is a [[:Category:Starred Alien Enemies|Starred Alien]]/[[:Category:Sage Enemies|Sage]] variant of [[H. Nah]] introduced in [[Secluded Cavy Island]]. He was added in [[Version 13.5 Update|Version 13.5]].
+
+{{Enemy Info
+|name = Techn-Old Hyena
+|image = E 694.png
+|first appearance = '''ZL:''' [[Yodoyo Sea|Sub-chapter 13 - Yodoyo Sea]]
+|latest appearance = '''ZL:''' [[Pirates Breaking Rank|Sub-chapter 16 - Pirates Breaking Rank]]
+|money drop = 1,505¢ - 5,944¢
+}}
+
+==Enemy==
+He has lower range and attack power than a 200% [[Red EnerG]] (370/13,580 > 350/12,022), but hits up to 390 range with his Omni Strikes and trades the knockback ability for a guaranteed chance to Warp cats back by 1,200 range for almost 17 seconds. In addition to having the usual status resistances of [[:Category:Sage Enemies|Sages]], he is immune to Curse and [[Counter-Surge|duplicates]] any Surges that hit him.
+
+==Strategy==
+Due to his Sage typing, any and all crowd-control will be greatly resisted, although this isn't too relevant as status effects are rarely useful against [[H. Nah]] variants in the first place. Since being Immune to Curse allows his Warp to function without interference, [[:Category:Cats with Warp Immunity|Warp-immune units]] should be used so as to not clog up the Cat Deploy Limit with his long Warp duration. His Counter-Surge means [[:Category:Surge Attack Cats|Surge Attackers]] are likewise not useful unless most or all cats you're using are Warp/[[:Category:Cats with Surge Immunity|Surge-immune]], as that will just cause him to teleport or instantly delete a massive group of units in the blink of an eye.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 694
+|Type = [[:Category:Starred Alien Enemies|Starred Alien]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 694.png
+|Name1 = Techn-Old Hyena
+|Desc1 = Old hyena considered the greatest astronomer<br>ever... according to the participation trophy<br>from a local astronomy summit. Sends those<br>who crtiticize its theories to another dimension.
+|Name1 (JP) = テク・ノロ爺 (Teku・Noro-jiji, Tech Nolo-jiji)
+|Desc1 (JP) = ワシは宇宙一の天文学者だ・・・と<br>大昔に学会で貰った参加賞を見せつけて<br>語る老ハイエナ。自分の考えた学説に<br>反対する若者は別次元へ強制転送する。
+|Transl1 (JP) = "I'm the best astronomer in the universe..." says<br>this old hyena as he shows off the<br>participation award he got at an academic meeting<br>long ago. Youngsters who disagree with his theories are forcibly taken to another dimension.
+|Name1 (TW) = 鬣老狼G
+|Desc1 (TW) = 一邊說著自己是宇宙第一的天文學家<br>一邊拿出過去學會所贈與的參加獎的<br>老鬣狗。會把反對自己所研究出的<br>學說的年輕人強制送到其他次元。
+|Name1 (KR) = 테크 놀로 G
+|Desc1 (KR) = 나는 우주 최고의 천문학자...라며<br>옛날에 받은 학회 참가상을 보여주며 중얼거리는<br>하이에나. 자신이 생각한 학설에 반대하는<br>젊은이는 다른 차원으로 강제전송시킨다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 13-1: [[Yodoyo Sea]]
+*Stage 13-4: [[Nonsense Mutation]]
+*Stage 13-6: [[Heartful Homunculus]]
+*Stage 14-2: [[After-Lunch Nap]]
+*Stage 15-2: [[Antimatter Jungle]]
+*Stage 16-5: [[Pirates Breaking Rank]]
+*Stage 17-5: [[Illuminated Trapdoor]]
+*Stage 18-3: [[Marble Swamp]]
+*Stage 19-3: [[Renovated Shipwreck]]
+*Stage 20-3: [[Newton's Fruit]]
+*Stage 21-5: [[Clock Oubliette]]
+*Stage 23-6: [[Round-trip to Heaven]]
+*Stage 27-1: [[Insufficient Evidence]]
+*Stage 29-3: [[Physique Mystique]]
+*Stage 31-5: [[The Cullosseum]]
+*Stage 32-1: [[A Vast Red Waste]]
+*Stage 34-1: [[Bristle Bodysuit]]
+*Stage 36-1: [[Room for Dessert]]
+*Stage 37-1: [[Soup Stock Springs]]
+*Stage 38-2: [[ZL 38-2]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Techn-Old Hyena
+|Health = 850000
+|Attack Power = 12022
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 60
+|Movement Speed = 9
+|Knockback = 3
+|Foreswing = 30
+|Backswing = 30
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~390)<br>
+{{AbilityIcon|Warp}} 100% chance to [[Warp|warp]] Cat Units back by 1,200 range for 500f <sub>16.67 seconds</sub><br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]] (When hit by a [[Surge Attack]], creates its own Surge of equal level and spawn range)<br>
+{{AbilityIcon|Immune to Curse}} [[Immune to Curse]]
+|Element = StarredAlien/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+694 e.png|Techn-Old Hyena's spritesheet
+</gallery>
+
+==Trivia==
+*His Japanese name, Tech Nolo-jiji (テク・ノロ爺, ''Teku・Noro-jiji''), is a pun on ''technology'' and 爺 ''jiji'', meaning "grandpa" or "old man" and similar in usage to the English words ''geezer'' and ''gramps''.
+*His Korean name, Tech Nolo G (테크 놀로 G ''Tekeu Nollo G''), is a combination of ''technology'' and ''[[Red EnerG]]''.
+*The first-person pronoun he uses in his Japanese description, ''washi'' (ワシ), is mainly used by men in Western Japan and stereotypical old men or [[wikipedia:Kansai|Kansaian]] characters in fiction.
+*His hairstyle and mustache are reminiscent of [[wikipedia:Albert Einstein|Albert Einstein]]. His [[:Category:Alien Enemies|Alien]] trait and Warp ability could allude to Einstein's [[wikipedia:Theory of relativity|theory of relativity]], while the fact that he is a variant of [[H. Nah]] may be a subtle reference to Einstein's formula for [[wikipedia:mass–energy equivalence|mass-energy equivalence]], E=mc^2, as H. Nah's Japanese name is High Energy (ハイ・エナジー). Lastly, the electricity in his attack animation combined with the participation trophy in his description could refer to how Einstein won the Nobel Prize in Physics for his explanation of the [[wikipedia:Photoelectric effect|photoelectric effect]].
+**He also faintly resembles [[wikipedia:Karol Pollak|Karol Pollak]] and [[wikipedia:Charles Algernon Parsons|Charles Algernon Parsons]], both of which would fit with the electricity in his attack animation, but Albert Einstein is the closest match.
+
+==Reference==
+*https://battlecats-db.com/enemy/696.html
+
+----
+{{EnemyNav|Wave Dummy|Log}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Starred Alien Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Warp ability]]
+[[Category:Counter-Surge Enemies]]
+[[Category:Enemies with Curse Immunity]]

@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Bannerman Doge|Snache|Squire Rel|Kang Roo|Mooth}}
+:''For the [[Invasion Stage]], see [[Daidai Domain/Doge's Rebellion|here]].''
+'''Daidai Domain''' is the fifth stage in [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]].
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn385 04 s en.png]]
+|stage location = [[File:Mapname385 s en.png]]
+|energy = 50
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Bannerman Doge|150%
+|Snache|150%
+|Squire Rel|150%
+|Kang Roo|150%
+|Mooth|150%}}
+|boss = {{Magnification|Squire Rel|150%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +100 (100%, unlimited)
+|score reward = '''7,000''': 40,000 XP<br>
+'''6,000''': 30,000 XP<br>
+'''500''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 950 XP
+|width = 4,200
+|max enemies = 20
+|jpname = Orange Province
+|script = 橙国
+|romaji = Daidai Koku
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]]
+|difficulty = ★3
+|prev stage = [[Fuku Domain]]
+|next stage = [[U-don Domain]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*Infinite [[Bannerman Doge]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Snache]]s spawn after 5.33 seconds<sup>160f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*12 [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] spawns as the boss.
+**1 [[Kang Roo]] spawns after 1.33 seconds<sup>40f</sup>.
+**1 [[Mooth]] spawns after 6.67 seconds<sup>200f</sup>.
+**1 [[Kang Roo]] spawns after 8.67 seconds<sup>260f</sup>.
+**1 [[Mooth]] spawns after 13.33 seconds<sup>400f</sup>.
+**1 [[Kang Roo]] spawns after 16 seconds<sup>480f</sup>.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the Normal Cats to win.
+
+==Trivia==
+*Daidai Domain is named after the Japanese word 橙 ''daidai'' (orange).
+
+==Reference==
+*https://battlecats-db.com/stage/s01385-05.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

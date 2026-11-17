@@ -1,0 +1,79 @@
+{{EnemiesAppearing|Relic Doge|Those Guys|Ragin' Gory|Sir Rel|Teacher Bun Bun|Golem Sunfish}}
+'''Rest Stop Sacrifice''' is the fifth stage in [[Cat-Chasing Village]].
+
+{{Stage Info
+|stage name = [[File:rc018.png]]
+[[File:Mapsn044 04 na en.png]]
+|stage location = [[File:Mapname044 na en.png]]
+|energy = 200
+|enemy castle hp = 1,220,000 HP
+|enemies = {{Magnification|Relic Doge|150%
+|Those Guys|4,000%
+|Ragin' Gory|100%
+|Sir Rel|150%
+|Teacher Bun Bun|2,000%}}
+|boss = {{Magnification|Golem Sunfish|100%}}
+|enemies2 = {{Magnification|Relic Doge|180%
+|Those Guys|4,800%
+|Ragin' Gory|120%
+|Sir Rel|180%
+|Teacher Bun Bun|2,400%}}
+|boss2 = {{Magnification|Golem Sunfish|120%}}
+|enemies3 = {{Magnification|Relic Doge|210%
+|Those Guys|5,600%
+|Ragin' Gory|140%
+|Sir Rel|210%
+|Teacher Bun Bun|2,800%}}
+|boss3 = {{Magnification|Golem Sunfish|140%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 7,600 XP
+|width = 5,100
+|max enemies = 15
+|jpname = Sacrifice-seeking Roadside Station
+|script = 生贄探して道の駅
+|romaji = Ikenie Sagashite Michi no Eki
+|star = 4
+|sub-chapter = [[Cat-Chasing Village]]
+|difficulty = ★11
+|prev stage = [[Chiefs' Smoking Area]]
+|next stage = [[Outta This Village]]
+}}
+
+==Battleground==
+*2 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*Infinite [[Those Guys]] spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Ragin' Gory]] spawns after 20 seconds<sup>600f</sup>.
+*2 [[Relic Doge]]s spawn after 30 seconds<sup>900f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Golem Sunfish]] spawns as the boss.
+**Infinite [[Relic Doge]]s spawn, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+**10 [[Sir Rel]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**4 [[Ragin' Gory|Ragin' Gories]] spawn, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+**1 [[Teacher Bun Bun]] spawns.
+
+==Strategy==
+The presence of Golem Sunfish dramatically compounds the stage's difficulty in combination with Bun Bun, Relic peons and Ragin' Gories. Stacks of smaller units perish very quickly to its LD attacks that hit up to 1350, which also denies the use of CC units like Cyberpunk. Nevertheless, disposable units will often be the way to go by sneaking in large damage bursts when more Ragin' Gories and Sir Rels show up. Eventually these reinforcements will dwindle and deplete, after which a mostly isolated Bun Bun and Golem Sunfish can be easily taken out.
+
+A Rich Cat and Thunderbolt are all recommended, especially on higher crown difficulties, as there simply isn't enough time to accumulate funds. Careful resource management is key to victory, since it drains rapidly when spamming units.
+
+===Recommended Units===
+*[[Ancient Egg: N101 (Rare Cat)|Courier]] - A decent disposable LD generalist with high speed and Behemoth Slayer (for Ragin' Gory), Courier can be put to great use in damaging groups of enemies at once, and unlike [[Weightlifter Cat (Super Rare Cat)|Pizza]], it has the speed to work here.
+*[[Elder Mask Doron (Special Cat)|Doron]] - Doron's attacks freeze Relics for 5 seconds and spawns a level 3 surge. Considering the prevalence of Relics here, it is absolutely necessary to paralyze them, and he has the health to land his attack before despawning. His 600 range Omni Strike can't catch Golem Sunfish, but the surge might. In True Form, he even gains knockback, and Behemoth Slayer can easily punish Ragin' Gory.
+*[[Swimmer Cat (Super Rare Cat)|Fishman]] - A fast rusher with Massive Damage to Floating, Fishman can be sent in to deal burst damage against Bun Bun whenever the frontline isn't too crowded, or to pick off Golem Sunfish once he's gone.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] - Resistant to Floating with 30% chance to Weaken them by 50% for 6.67 seconds, Octopus can keep Bun Bun stalled for a while as long as the other Relics don't get in the way. Once Talented with Curse Immunity, it can even tank Golem Sunfish.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling]] - Firing powerful level 7 wave attacks, the frail Jelly Dumpling is a surefire solution to the Relic peons by dealing large bursts of damage that can whittle Sir Rel and Relic Doge long before they get to the frontline.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can]] - Can Can is practically required for the most part, being one of the only proper attackers that can still function thanks to having high stats for its low cost, especially when talented with Extra Money and Move Speed Up to heavily damage the Relic peons.
+*[[Mer-Cat (Rare Cat)|Cameraman]] - While initially not the best option due to being more of a cash drain, large stacks of Cameraman are necessary on 4-crown to damage and tear down Bun Bun, even if their Strong Against Floating ability gets shut down by Golem Sunfish's Curse. Having the Survive talent maxed helps them to achieve value as well.
+
+===Recommended Ubers===
+*[[Cat Clan Heroes (Uber Rare Cat)|Cat Quest Heroes]] - Being able to Weaken Relic, Black and Floating enemies to 50% for 5 seconds with their LD attacks, they can greatly reduce frontline pressure, and even if a Relic hits them their Curse Immunity will keep their ability going. They also have a relatively short cooldown time, and having multiple desynced copies can ensure full weaken uptime.
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]] - Having more than enough range to keep away from the main threats, guaranteed freeze to both Sunfish and Bun Bun, a level 10 wave attack, and a 200K+ damage nuke (including wave), Supernova Cosmo is a fantastic unit to use on this stage. Be sure to meatshield him well, though, as his very long foreswing makes him susceptible to damage.
+*[[Mighty Kat-A-Pult (Uber Rare Cat)|CAT-10 Gigapult]] -  Being resistant to Golem Sunfish, with the ability to weaken, immunity to curse, and non-talented Bahamut levels of damage per hit makes CAT-10 Gigapult a pretty good uber for this stage. In addition, its massive pierce ensures constant hits on Golem Sunfish even if it is hiding behind Bun Bun. Be wary, though, as Bun Bun can absolutely shred its HP if left unchecked.
+
+
+==Reference==
+*https://battlecats-db.com/stage/s13044-05.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 94 Stages]]

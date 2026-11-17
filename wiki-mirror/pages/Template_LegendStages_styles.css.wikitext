@@ -1,0 +1,23 @@
+.ranger-navbox.legendstages, .ranger-navbox.legendstages .ranger-section {
+	--bg-navbox-title: linear-gradient(to bottom, #ff5000 0%, #ffe000 100%);
+	--group-color: #ffffff;
+	--sub-title-color: #000;
+}
+
+.ranger-navbox.legendstages .ranger-section.sol {
+	--bg-sub-table-title: #ffcc00;
+	--bg-group-name: #ffa800;
+	--group-color: #000;
+}
+
+.ranger-navbox.legendstages .ranger-section.ul {
+	--bg-sub-table-title: #94d437;
+	--bg-group-name: #596e3f;
+}
+
+.ranger-navbox.legendstages .ranger-section.zl {
+	--bg-sub-table-title: #688cbd;
+	--bg-group-name: #2d39b3;
+}
+
+/* [[Category:Template stylesheets]] */

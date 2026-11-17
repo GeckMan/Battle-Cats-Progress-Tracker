@@ -1,0 +1,51 @@
+{{Documentation}}
+
+==Usage & preview==
+Type in this:
+
+<pre>
+{{Enemy Info
+|name = Doge
+|image = E 000.png
+|first appearance = '''EoC''': [[Korea (Empire of Cats)|Chapter 1 - Korea]]
+|appearance = '''SoL''': [[Earthshaker|Sub-chapter 1 - Earthshaker]]
+|money drop = 15¢ - 59¢
+}}
+</pre>
+
+to see this:
+
+{{Enemy Info
+|name = Doge
+|image = E 000.png
+|first appearance = '''EoC''': [[Korea (Empire of Cats)|Chapter 1 - Korea]]
+|appearance = '''SoL''': [[Earthshaker|Sub-chapter 1 - Earthshaker]]
+|money drop = 15¢ - 59¢
+}}
+
+[{{fullurl:{{ns:Template}}:{{PAGENAME}}}}?action=purge Click here to refresh the preview above]
+
+{{clear}}
+
+==With variants==
+<pre>
+{{Enemy Info
+|name = Mesocosmocyclone
+|image = E 443.png
+|first appearance = '''CotC''': [[Earth (Cats of the Cosmos)|Chapter 3 - Earth]]<br>
+'''UL''': [[Lost Sailors|Sub-chapter 13 - Lost Sailors]]
+|latest appearance = '''ZL''': [[Bubbly Dream|Sub-chapter 10 - Bubbly Dream]]
+|money drop = 333¢ - 1,315¢
+}}
+</pre>
+
+to see this:
+
+{{Enemy Info
+|name = Mesocosmocyclone
+|image = E 443.png
+|first appearance = '''CotC''': [[Earth (Cats of the Cosmos)|Chapter 3 - Earth]]<br>
+'''UL''': [[Lost Sailors|Sub-chapter 13 - Lost Sailors]]
+|latest appearance = '''ZL''': [[Bubbly Dream|Sub-chapter 10 - Bubbly Dream]]
+|money drop = 333¢ - 1,315¢
+}}

@@ -1,0 +1,219 @@
+{{StrategyNeeded}}
+<tabber>
+ROUND 1~5=
+{{EnemiesAppearing|Inky Doge|Hippoe|Giant PAC-MAN}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn027 00 ca en.png]]
+|stage location = [[File:Mapname027 ca en.png]]
+|enemies = {{Magnification|Inky Doge|0
+|Hippoe|0}}
+|boss = {{Magnification|Giant PAC-MAN|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 20
+|jpname = ROUND X
+|script = ROUND X
+|romaji = ROUND X
+|star = 1
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[Giant PAC-MAN Strikes!]]
+|max clears = 3
+}}
+
+==Battleground==
+*3 [[Inky Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Inky Doge]]s spawn after 8 seconds<sup>240f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Inky Doge]]s spawn after 9.33 seconds<sup>280f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Hippoe]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Giant PAC-MAN]] spawns as the boss.
+**Infinite [[Inky Doge]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**Infinite [[Inky Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**4 [[Hippoe]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="3" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Inky Doge]]
+! scope="col" |[[Hippoe]]
+! scope="col" |[[Giant PAC-MAN]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|600%
+|150%
+|100%
+|15,000 HP
+|50
+|100,000 XP
+|1,500 XP
+|-
+! scope="row" |2
+|2,250%
+|413%
+|450% HP/950% AP
+|160,000 HP
+|60
+|[[Catamin]] [A] +3
+|1,800 XP
+|-
+! scope="row" |3
+|3,900%
+|675%
+|800% HP/1,800% AP
+|310,000 HP
+|70
+|[[Catamin]] [B] +3
+|2,100 XP
+|-
+! scope="row" |4
+|5,550%
+|938%
+|1,150% HP/2,650% AP
+|450,000 HP
+|80
+|[[Catamin]] [C] +3
+|2,400 XP
+|-
+! scope="row" |5
+|7,200%
+|1,200%
+|1,500% HP/3,500% AP
+|600,000 HP
+|90
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,700 XP
+|}
+
+==Strategy==
+-
+
+|-|
+ROUND 6~10=
+{{EnemiesAppearing|Inky Doge|Celeboodle|Clyde Gory|Pinky Bear|Giant PAC-MAN}}
+
+{{Stage Info
+|stage name = [[File:rc006.png]]
+[[File:Mapsn027 00 ca en.png]]
+|stage location = [[File:Mapname027 ca en.png]]
+|enemies = {{Magnification|Inky Doge|0
+|Celeboodle|0
+|Clyde Gory|0
+|Pinky Bear|0}}
+|boss = {{Magnification|Giant PAC-MAN|0}}
+|restriction = [[No Continues]]
+|width = 5,200
+|max enemies = 20
+|jpname = ROUND X
+|script = ROUND X
+|romaji = ROUND X
+|star = 1
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[Giant PAC-MAN Strikes!]]
+|max clears = 3
+}}
+
+==Battleground==
+*6 [[Inky Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Celeboodle]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Giant PAC-MAN]] spawns as the boss.
+**Infinite [[Inky Doge]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**6 [[Celeboodle]]s spawn after 3.33 seconds<sup>100f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**6 [[Clyde Gory|Clyde Gories]] spawn after 6.67 seconds<sup>200f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**3 [[Celeboodle]]s spawn after 80 seconds<sup>2,400f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**1 [[Pinky Bear]] spawns after 33.33 seconds<sup>1,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Inky Doge]]
+! scope="col" |[[Celeboodle]]
+! scope="col" |[[Clyde Gory]]
+! scope="col" |[[Pinky Bear]]
+! scope="col" |[[Giant PAC-MAN]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |6
+|10,000%
+|400%
+|3,200%
+|5,000% HP/2,000% AP
+|1,800% HP/3,800% AP
+|900,000 HP
+|100
+|[[Catseye]] [Special] +1
+|3,000 XP
+|-
+! scope="row" |7
+|12,000%
+|550%
+|3,375%
+|5,250% HP/2,125% AP
+|2,100% HP/4,100% AP
+|980,000 HP
+|110
+|[[Catseye]] [Rare] +1
+|3,300 XP
+|-
+! scope="row" |8
+|14,000%
+|700%
+|3,550%
+|5,500% HP/2,250% AP
+|2,400% HP/4,400% AP
+|1,100,000 HP
+|120
+|[[Catseye]] [Super Rare] +1
+|3,600 XP
+|-
+! scope="row" |9
+|16,000%
+|850%
+|3,725%
+|5,750% HP/2,375% AP
+|2,700% HP/4,700% AP
+|1,150,000 HP
+|130
+|[[Catseye]] [Uber Rare] +1
+|3,900 XP
+|-
+! scope="row" |10
+|18,000%
+|1,000%
+|3,900%
+|6,000% HP/2,500% AP
+|3,000% HP/5,000% AP
+|1,200,000 HP
+|140
+|[[Catseye]] [Legend] +1
+|4,200 XP
+|}
+
+==Strategy==
+-
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s27027.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Gauntlets]]
+[[Category:Collaboration Stages]]

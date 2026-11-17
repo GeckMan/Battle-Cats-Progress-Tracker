@@ -1,0 +1,36 @@
+{{#invoke:Navbox|main
+|template = Template:Kishidan
+|title = [[Kishidan Collaboration Event]]
+|navbox_class = kishidan
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Yankee Cat (Rare Cat)|Yankee Cat]]
+*[[Hikaru Saotome (Special Cat)|Hikaru Saotome]]
+*[[Hitomi Saionji (Special Cat)|Hitomi Saionji]]
+*[[Hoshi Grandmarnier (Special Cat)|Hoshi Grandmarnier]]
+*[[Shouchikubai Shiratori (Special Cat)|Shouchikubai Shiratori]]
+*[[Sho Ayanokoji (Special Cat)|Sho Ayanokoji]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Hikaru Saotome (Enemy)|Hikaru Saotome]]
+*[[Hitomi Saionji (Enemy)|Hitomi Saionji]]
+*[[Hoshi Grandmarnier (Enemy)|Hoshi Grandmarnier]]
+*[[Shouchikubai Shiratori (Enemy)|Shouchikubai Shiratori]]
+*[[Sho Ayanokoji (Enemy)|Sho Ayanokoji]]
+
+|header3 = Stages
+|group3 = Kishidan Clash<nowiki>!!</nowiki>
+|list3 =
+*[[Shouchikubai Shiratori]]
+*[[Hoshi Grandmarnier]]
+*[[Hitomi Saionji]]
+*[[Hikaru Saotome]]
+*[[Sho Ayanokoji]]
+*[[Super Clash!! Kishidan!!]]
+}}<templatestyles src="Kishidan/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Kishidan]]}}<noinclude>[[Category:Navboxes]]</noinclude>

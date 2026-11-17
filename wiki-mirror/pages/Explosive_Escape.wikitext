@@ -1,0 +1,65 @@
+'''Explosive Escape''' is the second stage in [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]].
+{{EnemiesAppearing|Le'boin|Kang Roo|Mooth|Squire Rel|Doge Dark|Belial}}
+{{Stage Info
+|stage name = [[File:rc076.png]]
+[[File:Mapsn041 01 c en.png]]
+|stage location = [[File:Mapname041 c en.png]]
+|energy = 70
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Le'boin|100%
+|Kang Roo|100%
+|Mooth|100%
+|Squire Rel|100%
+|Doge Dark|100%}}
+|boss = {{Magnification|Belial|50%}}
+|enemies2 = {{Magnification|Le'boin|200%
+|Kang Roo|200%
+|Mooth|200%
+|Squire Rel|200%
+|Doge Dark|200%}}
+|boss2 = {{Magnification|Belial|100%}}
+|enemies3 = {{Magnification|Le'boin|300%
+|Kang Roo|300%
+|Mooth|300%
+|Squire Rel|300%
+|Doge Dark|300%}}
+|boss3 = {{Magnification|Belial|150%}}
+|score reward = '''7,500''': 100,000 XP<br>
+'''4,500''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''500''': 20,000 XP
+|XP = 2,100 XP
+|width = 4,400
+|max enemies = 8
+|jpname = Explosion Sprint
+|script = 爆煙疾走
+|romaji = Bakuen shissō
+|star = 3
+|event = [[Crash Fever Collaboration Event]]
+|event-chapter = [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]]
+|difficulty = ★3
+|prev stage = [[Virus of Love]]
+|next stage = [[Order/Disorder]]
+}}
+
+==Battleground==
+*1 [[Le'boin]] spawns.
+*1 [[Kang Roo]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Kang Roo]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Kang Roo]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Belial (Enemy)|Belial]] spawns as the boss.
+**2 [[Mooth]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+**Infinite [[Squire Rel]]s spawn, delay 10~30 seconds<sup>300f~900f</sup>.
+**20 [[Squire Rel]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+**5 [[Doge Dark]]s spawn, delay 10 seconds<sup>300f</sup>.
+
+==Strategy==
+Belial is quite weak in this stage, but has long range, so any units that can tank his hits will work.
+
+==Reference==
+*https://battlecats-db.com/stage/s02041-02.html
+
+{{Crash Fever}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

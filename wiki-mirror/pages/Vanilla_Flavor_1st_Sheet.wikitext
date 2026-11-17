@@ -1,0 +1,44 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Wafer Cat XL|Snache|Hippoe}}
+'''Vanilla Flavor 1st Sheet''' is the first stage in [[Wafer Cat Advent]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn249 00 s ja.png]]
+|stage location = [[File:Mapname249 s ja.png]]
+|energy = 50
+|enemy castle hp = 1,000 HP
+|enemies = {{Magnification|Wafer Cat XL|100%
+|Snache|100%}}
+|boss = {{Magnification|Hippoe|100%}}
+|treasure = - 25,000 XP (100%, 1 time)
+|XP = 4,500 XP
+|width = 4,000
+|max enemies = 15
+|jpname = 1st Vanilla Flavor
+|script = バニラ味 1枚目
+|romaji = Banirami 1 Maime
+|star = 1
+|event-chapter = [[Wafer Cat Advent]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Vanilla Flavor 2nd Sheet]]
+}}
+
+==Battleground==
+*1 [[Wafer Cat XL (Enemy)|Wafer Cat XL]] spawns after 10 seconds<sup>300f</sup>.
+*10 [[Snache]]s spawn after 30 seconds<sup>900f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hippoe]] spawns as the boss.
+**Infinite [[Wafer Cat XL (Enemy)|Wafer Cat XL]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**10 [[Wafer Cat XL (Enemy)|Wafer Cat XL]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Wafer Cat XL (Enemy)|Wafer Cat XL]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01249-01.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

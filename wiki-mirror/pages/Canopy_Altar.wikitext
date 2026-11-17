@@ -1,0 +1,68 @@
+{{EnemiesAppearing|Surge Base|Relic Doge|Raynard|Li'l Bun Bun|St. Dober}}
+'''Canopy Altar''' is the fourth stage in [[Ancient Forest Labyrinth]].
+
+{{Stage Info
+|stage name = [[File:E 524.png]]
+[[File:Mapsn035 03 na en.png]]
+|stage location = [[File:Mapname035 na en.png]]
+|energy = 190
+|enemy castle hp = 1,200,000 HP
+|enemy castle hp2 = 1,560,000 HP
+|enemy castle hp3 = 2,040,000 HP
+|base = {{Magnification|Surge Base|80,000%}}
+|enemies = {{Magnification|Relic Doge|100%
+|Raynard|100%
+|Li'l Bun Bun|1,500%
+|St. Dober|100%}}
+|boss = {{Magnification|Relic Doge|100%}}
+|base2 = {{Magnification|Surge Base|104,000%}}
+|enemies2 = {{Magnification|Relic Doge|130%
+|Raynard|130%
+|Li'l Bun Bun|1,950%
+|St. Dober|130%}}
+|boss2 = {{Magnification|Relic Doge|130%}}
+|base3 = {{Magnification|Surge Base|136,000%}}
+|enemies3 = {{Magnification|Relic Doge|170%
+|Raynard|170%
+|Li'l Bun Bun|2,550%
+|St. Dober|170%}}
+|boss3 = {{Magnification|Relic Doge|170%}}
+|treasure = - [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 7,220 XP
+|width = 4,900
+|max enemies = 10
+|jpname = Canopy Altar
+|script = 樹冠の祭壇
+|romaji = Jukan no Saidan
+|star = 4
+|sub-chapter = [[Ancient Forest Labyrinth]]
+|difficulty = ★10
+|prev stage = [[Re-Leaf Towers]]
+|next stage = [[Sappy Underpass]]
+}}
+
+==Battleground==
+*The enemy base here is a [[Surge Base (Enemy Base)|Surge Base]].
+*3 [[Relic Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*1 [[Raynard]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Li'l Bun Bun]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Relic Doge]] spawns as the boss.
+**3 [[Li'l Bun Bun]]s spawn, delay 36.67~43.33 seconds<sup>1,100f~1,300f</sup>.
+**1 [[Raynard]] spawns.
+**1 [[St. Dober]] spawns.
+
+==Strategy==
+The stage gives you ample time to prepare, so you can use [[Fishman Cat]] to kill the Li'l Bun Bun, spam [[Boulder Cat]] to kill Raynard, then keep the last Relic Doge alive as long as possible to build up your wallet. Or, if you're careful, you can use the Surge Base to kill all your Cats after dispatching every enemy, then wait for a completely full wallet before attacking the base.
+
+When you hit the base, use [[Awakened Bahamut Cat]] to do so, so that you get the full extent of Bahamut's Explosion. This will leave Raynard at extremely low health. Use any other damage source like the default Cat Cannon or an Attack Combo and the stage turns into a generic St. Dober fight that's easily done by luring and spamming your best anti-Angel CC units.
+
+==Trivia==
+*Prior to [[Version 15.3 Update|Version 15.3]], the stage width was set to 4,800. The change was made because of a bug in how [[:Category:Animated Enemy Bases|Animated Bases]] spawn when not set as bosses.
+
+==Reference==
+*https://battlecats-db.com/stage/s13035-04.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 85 Stages]]

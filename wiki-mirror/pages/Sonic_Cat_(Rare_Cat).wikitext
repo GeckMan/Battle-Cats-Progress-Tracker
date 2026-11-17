@@ -1,0 +1,135 @@
+{{TranslationNeeded}}
+:''For other uses, see [[Sonic (disambiguation)]].''
+'''Sonic Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained when beating any stage in [[Sonic the Hedgehog Collaboration Event#Green Hill Zone|Green Hill Zone]] during the [[Sonic the Hedgehog Collaboration Event]]. It was added in [[Version 14.4 Update|Version 14.4]] for [[Nyanko Daisensou|BJCP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 807
+|rarity = RR
+|name1 = Sonic Cat
+|name2 = Sonic Cat CC
+}}
+
+==Evolution==
+Evolves into '''Sonic Cat CC''' at level 10.
+
+==Strategy/Usage==
+Unlike the other non-Uber units in the Sonic Collaboration Event, Sonic Cat has different stats between forms, with different abilities as well.
+
+==='''Normal Form'''===
+Sonic Cat is meant to function as an anti-[[:Category:Alien Enemies|Alien]] melee attacker. However, it has an abysmal range value of 130, a somewhat long cooldown and Single Attack, meaning anything beyond [[Cyberhorn]] or short-ranged Alien peons like Star Peng will prove to be risky matchups. Players will usually resort to [[Wheel Cat (Rare Cat)|Chill Cat]] instead, as it has more powerful Area Attacks at longer range. It is also outclassed by [[Cossack Cat (Rare Cat)|Royal Guard Cat]], whose True Form isn't difficult to obtain and is an all-round superior alternative with its wide assortment of abilities.
+
+==='''Evolved Form'''===
+Sonic Cat CC functions as an anti-Alien meatshield. Despite its misleading animations, Sonic Cat CC has an abysmally slow speed of 8. This unit is, for all intents and purposes, completely useless and outclassed by [[Rover Cat (Rare Cat)|Catellite]]. While Sonic Cat CC has the advantage in HP and the [[Resistant]] ability, Catellite is cheaper, moves faster and has a shorter cooldown time. Its Strong ability loses out on defense, but can contribute significantly more damage, has a variety of immunities (Slow/Weaken). + levels and Talents further widening their performance gap. [[Jetpack Cat (Rare Cat)|Jetpack Cat]] further outclasses it in its own no-gacha niche during late-game.
+
+{{Job|Classification = Melee & User Rank Dump|EvolvedClass = Meatshield & User Rank Dump|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 807
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni807 f00.png
+|Image2 = Uni807 c00.png
+|Name1 = Sonic Cat
+|Desc1 = Cat who adores a supersonic hedgehog.<br>Has to take medicine for motion sickness due to a weak inner ear.<br>Deals Massive damage to Aliens.
+|Name2 = Sonic Cat CC
+|Desc2 = Cat who underwent surgery in the hope of developing<br>slightly faster legs. (Did not translate to a speed increase.)<br>Tough vs Aliens.
+|Name1 (JP) = ネコソニック (Neko Sonikku, Sonic Cat)
+|Desc1 (JP) = 超音速のハリネズミに憧れるネコ<br>三半規管が弱く、転がる前に酔い止めを服用している<br>エイリアンに超ダメージを与える
+|Transl1 (JP) = ?
+|Name2 (JP) = ネコソニックCC (Neko Sonikku Shīshī, Sonic Cat CC)
+|Desc2 (JP) = 肉体改造で足を動かす速さは誰にも<br>負けなくなったネコ。前に進む速度はスズメの涙ほど<br>エイリアンに打たれ強い
+|Transl2 (JP) = ?
+|Name1 (TW) = 索尼克貓
+|Desc1 (TW) = 對超音速刺蝟充滿憧憬的貓咪。因為<br>三半規管較敏感，向前滾之前要吃暈車藥<br>可以給予異星戰士超大傷害
+|Name2 (TW) = 索尼克貓CC
+|Desc2 (TW) = 經過體態改造後的貓咪，腳的轉動速度<br>不輸給任何人，但移動速度幾乎沒變<br>對上異星戰士很耐打
+|Name1 (KR) = 고양이 소닉
+|Desc1 (KR) = 초음속 고슴도치를 동경하는 고양이<br>세반고리관이 약해 구르기 전 멀미약을 먹는다<br>에이리언에 초 데미지를 입힌다
+|Name2 (KR) = 고양이 소닉CC
+|Desc2 (KR) = 육체 개조로 다리를 움직이는 속도는 누구에게도<br>지지 않게 된 고양이. 전진하는 속도는 새 발의 피 수준<br>에이리언에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 280¢
+*Chapter 2: 420¢
+*Chapter 3: 560¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sonic Cat
+|Normal Base HP = 450
+|Normal Base AP = 150
+|Normal Range = 130
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 61
+|Normal Speed = 18
+|Normal KB = 2
+|Normal Cost = 280
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Sonic Cat CC
+|Evolved Base HP = 600
+|Evolved Base AP = 2
+|Evolved Range = 120
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 16
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 280
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Immune to Warp}} [[Immune to Warp]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 150 damage<br>(73.77 DPS)
+|val-Normal-Attack Range = 130
+|val-Normal-Attack Frequency = 61f <sub>2.03 seconds</sub>
+|val-Normal-Movement Speed = 18
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(1,254.1 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 35 damage<br>(15.67 DPS)
+|val-Evolved-Attack Range = 120
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni807 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/808.html
+
+----
+{{CatNav|Shadow|Tails Cat}}
+----
+
+{{Sonic the Hedgehog}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats with Resistant ability]]

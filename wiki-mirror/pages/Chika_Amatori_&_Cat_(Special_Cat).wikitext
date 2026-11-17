@@ -1,0 +1,130 @@
+'''Chika Amatori & Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from a login stamp during the [[World Trigger Collaboration Event]]. She was added in [[Version 11.9 Update|Version 11.9.2]].
+
+{{Cat Info
+|ID = 679
+|rarity = EX
+|name1 = Chika Amatori & Cat
+|name2 = Chika Amatori & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Chika Amatori & Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit is okay at first, but quickly falls off once you unlock [[Flower Cat (Special Cat)|Bombercat]]. As the game goes on, [[:Category:Dark Enemies|Dark]] enemies get more and more aggressive due to extreme magnifications and quantity. It also doesn't help that she has pitifully low health and DPS, meaning they could easily push through and destroy a unit that isn't easy to replace once killed.
+
+{{Job|Classification = Crowd-Controller & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 679
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni679 f00.png
+|Image2 = Uni679 c00.png
+|Name1 = Chika Amatori & Cat
+|Desc1 = Joining from World Trigger! Joined Border to find her<br>brother and friend that were captured by Neighbors.<br>Long-range Area attacks 100% Slow Dark.
+|Name2 = Chika Amatori & Cat CC
+|Desc2 = Joining from World Trigger! A Sniper in Tamakoma<br>Second with an abundance of Trions.<br>Long-range Area attacks 100% Slow Dark.
+|Name1 (JP) = 雨取千佳&ネコ (Amatori Chika & Neko, Chika Amatori & Cat)
+|Desc1 (JP) = ワールドトリガーから参戦！近界民(ネイバー)に<br>攫われた兄と友人を探す為「ボーダー」に入隊<br>必ず黒い敵の動きを一瞬遅くする(遠方範囲攻撃)
+|Transl1 (JP) = Joining from World Trigger! Joined the "Border" to search for<br>her brother and friend who were abducted by Neighbors<br>Always briefly Slows the movement of Black enemies (Long Distance Area Attack)
+|Name2 (JP) = 雨取千佳&ネコCC (Amatori Chika & Neko CC, Amatori Chika & Cat CC)
+|Desc2 (JP) = ワールドトリガーから参戦！膨大なトリオン量を持つ<br>玉狛第２の狙撃手(スナイパー)<br>必ず黒い敵の動きを一瞬遅くする(遠方範囲攻撃)
+|Transl2 (JP) = Joining from World Trigger! The Sniper of<br>Tamakoma Second with a huge Trion volume<br>Always briefly Slows the movement of Black enemies (Long Distance Area Attack)
+|Name1 (TW) = 雨取千佳&貓咪
+|Desc1 (TW) = 從境界觸發者來參戰！為了找尋<br>被近界民擄走的哥哥和朋友而加入「BORDER」<br>必定能使黑色敵人瞬間動作變慢(遠距範圍攻擊)
+|Name2 (TW) = 雨取千佳&貓咪CC
+|Desc2 (TW) = 從境界觸發者來參戰！<br>有著極多的三離子，玉狛第2的狙擊手<br>必定能使黑色敵人瞬間動作變慢(遠距範圍攻擊)
+|Name1 (KR) = 아마토리 치카&고양이
+|Desc1 (KR) = 월드 트리거에서 참전! 네이버에게 납치된<br>오빠와 친구를 찾기 위해 「보더」에 입대했다<br>반드시 검은 적의 움직임을 순간 느리게 한다 (원거리 범위공격)
+|Name2 (KR) = 아마토리 치카&고양이CC
+|Desc2 (KR) = 월드 트리거에서 참전! 높은 트리온 능력을 보유한<br>타마코마 제2 부대의 스나이퍼(저격수)<br>반드시 검은 적의 움직임을 순간 느리게 한다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Chika Amatori & Cat
+|Normal Base HP = 480
+|Normal Base AP = 120
+|Normal Range = 450
+|Normal Foreswing = 64
+|Normal Attack Cooldown = 115
+|Normal Attack Length = 116
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 1080
+|Normal Attack Type = Area
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~550)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Chika Amatori & Cat CC
+|Evolved Base HP = 480
+|Evolved Base AP = 120
+|Evolved Range = 450
+|Evolved Foreswing = 64
+|Evolved Attack Cooldown = 115
+|Evolved Attack Length = 116
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 1080
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~550)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 120 damage<br>(20.11 DPS)
+|val-Normal-Attack Range = 450
+|val-Normal-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 64f <sup>2.13s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Normal-Recharge Time = 36 ~ 27.2 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(341.9 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(341.9 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 64f <sup>2.13s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Evolved-Recharge Time = 36 ~ 27.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni679 f00}}
+
+==Trivia==
+*In [[Version 11.9 Update|Version 11.9]], her English descriptions suggested that she can freeze Darks, when she can actually only slow them.
+
+==Reference==
+*https://battlecats-db.com/unit/680.html
+
+----
+{{CatNav|Yuma Kuga & Cat|Sakura}}
+----
+
+{{World Trigger}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with unique death animations]]

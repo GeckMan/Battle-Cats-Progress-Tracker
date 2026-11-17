@@ -1,0 +1,62 @@
+:''This article is about the enemy. For the Cat Unit, see [[Vacation Queen (Rare Cat)]].''
+'''Call Center Cat''' (コールセンターのOL, ''Kōru Sentā no OL'', '''Call Center's Office Lady''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Vacation Awakes!]]. She was added in [[Version 5.1 Update|Version 5.1]].
+
+{{Enemy Info
+|name = Call Center Cat
+|image = E 253.png
+|appearance = [[Vacation Awakes!]]
+|money drop = 1,800¢ - 7,110¢
+}}
+
+==Enemy==
+This enemy has high health, high attack power, and a chance to knockback Cats. She has a quick attack animation and attacks rapidly.
+
+==Strategy==
+Try and use high-damaging Cats like [[Bahamut Cat (Special Cat)|Bahamut Cat]] (Normal/Evolved) and [[Ururun Wolf (Special Cat)|Ururun Wolf]], coupled with meatshields like [[Tank Cat (Normal Cat)|Eraser Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall/Manic Eraser Cat]]. Alone, she is pretty easy, but when there are multiple, a lot of meatshielding is needed. Like above, cats with a knockback ability help because they not only make them stay away from your cat stack, but also help by interrupting their long attack animation.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Vacation Awakes!]]:
+**[[End of Holiday (Expert)]] (100%)
+**[[End of Holiday (Insane)]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Call Center Cat
+|Health = 400000
+|Attack Power = 12500
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 116
+|Movement Speed = 6
+|Knockback = 2
+|Foreswing = 80
+|Backswing = 36
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+253 e.png|Call Center Cat's spritesheet
+IdleCallCenterCat.gif|Call Center Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/255.html
+
+----
+{{EnemyNav|Madam the Savannah|Mr. Angel}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]

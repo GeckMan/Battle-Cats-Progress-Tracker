@@ -1,0 +1,134 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Cornelia (Enemy)]].''
+'''Cornelia''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 3.8 Update|Version 3.8]] and was created by a collaboration event between [[Merc Storia Collaboration Event/Gacha Drop|Merc Storia Collaboration Gacha]] and can be unlocked by drawing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the event period.
+
+{{Cat Info
+|ID = 186
+|rarity = UR
+|name1 = Cornelia
+|name2 = Cornelia CC
+}}
+
+==Evolution==
+Evolves into '''Cornelia CC''' at level 10.
+
+==Strategy/Usage==
+Cornelia's stats are very low, and her niche is very plain, but she does have the not so saving grace of a decent cost and quick cooldown. Against [[:Category:Red Enemies|Red]] enemies, she's horrible as a generalist and her freeze is very unreliable thanks to her low chance, which is outclassed by non Uber units, such as [[Apple Cat (Super Rare Cat)|iCat]] and [[Flower Cat (Special Cat)|Bomber Cat]].
+Against [[:Category:Dark Enemies|Dark]] enemies, her freeze is even more worthless, since Dark enemies tend to have lots of knockbacks, making Cornelia miss and potentially clip because of her high speed and small backswing, and die thanks to her pitiful health.
+
+Overall, she's very weak and outclassed by non uber rare alternatives, which provide much higher value against her targets. The best comparison to make to her would be [[Valkyrie Cat (Special Cat)|Holy Valkyrie Cat]], who is a mediocre unit who although has lower freeze duration, but targeting more traits, making Cornelia even worse. Cornelia is one of the worst ubers in the set and the game, and isn't useful for anything except EoC.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 186
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni186 f00.png
+|Image2 = Uni186 c00.png
+|Name1 = Cornelia
+|Desc1 = Joining the fight from Merc Storia! Lady who<br>admires dragons, dreaming of a celestial bridge.<br>Area attacks might Freeze Red/Dark.
+|Name2 = Cornelia CC
+|Desc2 = Joining the fight from Merc Storia! Can't resist<br>the dragon scales that build heaven's bridge.<br>Area attacks might Freeze Red/Dark.
+|Name1 (JP) = コーネリア (Kōneria, Cornelia)
+|Desc1 (JP) = メルクストーリアから参戦！<br>飛龍への憧れを胸に天の橋を夢見る女性<br>黒い敵と赤い敵の動きをたまに一瞬止める(範囲攻撃)
+|Transl1 (JP) = Participation from Merc Storia!
+The lady who dreams of a bridge in heaven with the admiration of Flying Dragon
+Sometimes stops the movement  of black enemy and red enemy (area attack)
+|Name2 (JP) = コーネリアCC (KōneriaCC, CorneliaCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>いずれ天の橋の材料となる龍のウロコに目がない<br>黒い敵と赤い敵の動きをたまに一瞬止める(範囲攻撃)
+|Transl2 (JP) = Participation from Merc Storia!
+Now has  a weakness to dragon scales, which becomes the material of the bridge in heaven eventually
+Sometimes stops the movement  of black enemy and red enemy (area attack)
+|Name1 (TW) = 可納莉亞
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>憧憬飛龍，夢想著建造通天之橋的女性。<br>有時候會讓黑色與紅色敵人瞬間動作停止(範圍攻擊)
+|Name2 (TW) = 可納莉亞CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>熱心收集通天之橋的材料・龍鱗<br>有時候會讓黑色與紅色敵人瞬間動作停止(範圍攻擊)
+|Name1 (KR) = 코넬리아
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>비룡에의 동경을 가슴에 품고 하늘의 다리를 꿈꾸는 여성<br>검은 적과 빨간 적의 움직임을 가끔 순간 멈춘다 (범위 공격)
+|Name2 (KR) = 코넬리아CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>하늘의 다리의 재료가 되는 용의 비늘을 찾는데 열심이다<br>검은 적과 빨간 적의 움직임을 가끔 순간 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cornelia
+|Normal Base HP = 1400
+|Normal Base AP = 700
+|Normal Range = 410
+|Normal Foreswing = 53
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 74
+|Normal Speed = 27
+|Normal KB = 4
+|Normal Cost = 2500
+|Normal Recharge = 2100
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Cornelia CC
+|Evolved Base HP = 1600
+|Evolved Base AP = 920
+|Evolved Range = 410
+|Evolved Foreswing = 53
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 74
+|Evolved Speed = 27
+|Evolved KB = 4
+|Evolved Cost = 2500
+|Evolved Recharge = 2100
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,400 HP
+|val-Normal-Attack Power = 700 damage<br>(138.16 DPS)
+|val-Normal-Attack Range = 410
+|val-Normal-Attack Frequency = 152f <sub>5.07 seconds</sub>
+|val-Normal-Movement Speed = 27
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 53f <sup>1.77s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Normal-Recharge Time = 70 ~ 61.2 seconds
+|val-Normal-MaxHP = 23,800 HP
+|val-Normal-MaxAttack = 11,900 damage<br>(2,348.68 DPS)
+|val-Evolved-Health = 27,200 HP
+|val-Evolved-Attack Power = 15,640 damage<br>(3,086.84 DPS)
+|val-Evolved-Attack Range = 410
+|val-Evolved-Attack Frequency = 152f <sub>5.07 seconds</sub>
+|val-Evolved-Movement Speed = 27
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 53f <sup>1.77s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Evolved-Recharge Time = 70 ~ 61.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni186 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/187.html
+
+----
+{{CatNav|Hearscht|Juvens}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]

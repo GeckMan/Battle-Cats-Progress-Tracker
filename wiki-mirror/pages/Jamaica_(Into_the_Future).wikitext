@@ -1,0 +1,120 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Jamaica (Into the Future)/Outbreak|here]].''
+'''Jamaica''' is the 36th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc010.png]]
+|stage location = [[File:Jamaica.png]]
+'''Into The Future'''
+|energy = 54
+|energy2 = 64
+|energy3 = 74
+|enemy castle hp = 150,000 HP
+|enemy castle hp2 = 225,000 HP
+|enemy castle hp3 = 300,000 HP
+|enemies = {{Magnification|Snache|500%
+|Doge|500%
+|Helmut Krabbe|100%
+|Jackie Peng|500%
+|Kroxo|100%
+|Imperator Sael|100%
+|Jackie Peng|100%}}
+|enemies2 = {{Magnification|Snache|1,000%
+|Doge|1,000%
+|Helmut Krabbe|250%
+|Jackie Peng|1,000%
+|Kroxo|250%
+|Imperator Sael|250%}}
+|enemies3 = {{Magnification|Helmut Krabbe|600%
+|Imperator Sael|600%
+|Kroxo|600%
+|Cyberhorn|250%
+|Jackie Peng|1,500%}}
+|treasure = - [[Treasure|Dreadlocks]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +90,000 XP
+|score reward2 = '''7,500''': [[Cat Food]] +10<br>
+'''6,500''': +135,000 XP
+|score reward3 = '''5,500''': [[Cat Food]] +10<br>
+'''4,500''': +180,000 XP
+|max enemies = 6
+|max enemies2 = 6
+|max enemies3 = 8
+|XP = 11,500 XP
+|width = 3,600
+|jpname = Jamaica
+|script = ジャマイカ
+|romaji = Jamaika
+|jptreasure = Steel Drum
+|twname = Jamaica
+|twscript = 牙買加
+|twromaji = Yámǎijiā
+|twtreasure = Reggae
+|krname = Jamaica
+|krscript = 자메이카
+|krromaji = Jameika
+|krtreasure = Reggae
+|chapter = [[Into the Future]]
+|prev stage = [[Colombia (Into the Future)|Colombia]]
+|next stage = [[Mexico (Into the Future)|Mexico]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Snache|Doge|Helmut Krabbe|Jackie Peng|Kroxo|Imperator Sael}}
+*10 [[Snache]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Helmut Krabbe]] spawns after 22 seconds<sup>660f</sup>.
+*3 [[Jackie Peng]]s (500%) spawn after 29.33 seconds<sup>880f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Kroxo]]s spawn after 50 seconds<sup>1,500f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*1 [[Helmut Krabbe]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Helmut Krabbe]] spawns after 70.67 seconds<sup>2,120f</sup>.
+*1 [[Imperator Sael]] spawns after 80 seconds<sup>2,400f</sup>.
+*3 [[Jackie Peng]]s (100%) spawn after 100 seconds<sup>3,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Helmut Krabbe]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*When the base reaches 99% HP:
+**1 [[Imperator Sael]] spawns.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Snache|Doge|Helmut Krabbe|Jackie Peng|Kroxo|Imperator Sael}}
+*10 [[Snache]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*10 [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Helmut Krabbe]] spawns after 22 seconds<sup>660f</sup>.
+*3 [[Jackie Peng]]s spawn after 29.33 seconds<sup>880f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Kroxo]]s spawn after 44 seconds<sup>1,320f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*1 [[Imperator Sael]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Helmut Krabbe]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Helmut Krabbe]] spawns after 70.67 seconds<sup>2,120f</sup>.
+*3 [[Jackie Peng]]s spawn after 100 seconds<sup>3,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Helmut Krabbe]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*When the base reaches 99% HP:
+**1 [[Imperator Sael]] spawns.
+**1 [[Imperator Sael]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Helmut Krabbe|Imperator Sael|Kroxo|Cyberhorn|Jackie Peng}}
+*2 [[Helmut Krabbe]]s spawn after 16 seconds<sup>480f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*2 [[Imperator Sael]]s spawn after 32 seconds<sup>960f</sup>, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*2 [[Helmut Krabbe]]s spawn after 48 seconds<sup>1,440f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*15 [[Kroxo]]s spawn after 52 seconds<sup>1,560f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*15 [[Kroxo]]s spawn after 56 seconds<sup>1,680f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Cyberhorn]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 80 seconds<sup>2,400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Imperator Sael]]s spawn after 100 seconds<sup>3,000f</sup>, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*When the base reaches 99% HP:
+**5 [[Helmut Krabbe]]s spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Imperator Sael]]s spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+
+==Strategy==
+Because the stage mostly consists of Alien enemies, it is highly recommended to use units that are most effective against them. Units like [[Psychocat (Rare Cat)|Psychocat]], [[Surfer Cat (Super Rare Cat)|Surfer Cat]], [[Gross Cat (Normal Cat)|Macho Leg Cat]] and [[Rover Cat (Rare Cat)|Rover Cat]] can help a lot in this stage.
+
+For the beginning, you're gonna want to upgrade your [[Worker Cat]] before the main enemies spawn and then save up for [[Bahamut Cat (Special Cat)|Bahamut Cat]]. After the first enemies start appearing, use meatshields like [[Tank Cat (Normal Cat)|Eraser Cat]], [[Crazed Cat (Super Rare Cat)|Crazed Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]] to stall the enemies. When you summon in your Bahamut, start placing down your other units. You should be able to defeat the oncoming horde of Helmut Krabbes and Imperator Saels, achieving victory. For Chapter 3 you can use [[Ururun Wolf (Special Cat)|Ururun Wolf]] for better results, but she can be replaced with an Uber.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-36.html
+*https://battlecats-db.com/stage/s03004-36.html
+*https://battlecats-db.com/stage/s03005-36.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,9 @@
+.ranger-navbox.demon-slayer {
+	--bg-navbox-title: linear-gradient(to right, hsl(173, 66%, 27.6%) 0%, hsl(0, 0%, 0%) 100%);
+	--bg-sub-table-title: hsl(31, 66.2%, 39.4%);
+	--bg-group-name: hsl(45, 97%, 73.9%);
+	--title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

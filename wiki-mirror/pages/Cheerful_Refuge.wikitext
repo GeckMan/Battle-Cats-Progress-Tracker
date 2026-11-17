@@ -1,0 +1,56 @@
+{{EnemiesAppearing|Mooth|Pigeon de Sable|Li'l Bun Bun|Gobble}}
+'''Cheerful Refuge''' is the sixteenth stage in [[Island of Hidden Treasure]].
+
+{{Stage Info
+|stage name = [[File:rc003.png]]
+[[File:Mapsn055 15 a en.png]]
+|stage location = [[File:Mapname055 a en.png]]
+|energy = 300
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|Mooth|2,800%
+|Pigeon de Sable|300%
+|Li'l Bun Bun|1,200%
+|Gobble|100%}}
+|boss = {{Magnification|Li'l Bun Bun|1%}}
+|treasure = One of the following (unlimited):<br>
+- Attack Up D [[Talent Orbs|Orb]]: Floating +1 (32.5%)<br>
+- Defense Up D [[Talent Orbs|Orb]]: Floating +1 (32.5%)<br>
+- Attack Up C [[Talent Orbs|Orb]]: Floating +1 (11%)<br>
+- Defense Up C [[Talent Orbs|Orb]]: Floating +1 (11%)<br>
+- Attack Up B [[Talent Orbs|Orb]]: Floating +1 (3.5%)<br>
+- Defense Up B [[Talent Orbs|Orb]]: Floating +1 (3.5%)<br>
+- Strong Effect Up D [[Talent Orbs|Orb]]: Floating +1 (2%)<br>
+- Massive Damage Up D [[Talent Orbs|Orb]]: Floating +1 (2%)<br>
+- Resistant Effect Up D [[Talent Orbs|Orb]]: Floating +1 (2%)
+|XP = 5,700 XP
+|width = 4,500
+|max enemies = 12
+|jpname = Uncharted Land of Floating Instinct
+|script = 浮ける本能の秘境
+|romaji = Ukeru Honnō no Hikyō
+|star = 1
+|event-chapter = [[Island of Hidden Treasure]]
+|difficulty = ★9
+|prev stage = [[Crimson Refuge]]
+|next stage = [[Ebony Refuge]]
+}}
+
+==Battleground==
+*1 [[Mooth]] spawns after 10 seconds<sup>300f</sup>.
+*5 [[Pigeon de Sable]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Mooth]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Li'l Bun Bun]] (1%) spawns as the boss.
+**Infinite [[Li'l Bun Bun]]s (1,200%) spawn, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**4 [[Li'l Bun Bun]]s (1,200%) spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**8 [[Li'l Bun Bun]]s (1,200%) spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**4 [[Gobble]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+Since the Gobbles shred your cats with their attacks, you want them to miss every shot. Since they have a low standing range, the best way to counter them is to not meatshield. [[:Category:Cats with Toxic Immunity|Toxic-immune]] or [[:Category:Cats with Curse ability|Curse-inflicting]] Cats work very well here.
+
+==Reference==
+*https://battlecats-db.com/stage/s24055-16.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

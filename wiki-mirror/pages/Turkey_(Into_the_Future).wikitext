@@ -1,0 +1,127 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Turkey (Into the Future)/Outbreak|here]].''
+'''Turkey''' is the 15th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc031.png]]
+|stage location = [[File:Turkey.png]]
+'''Into The Future'''
+|energy = 45
+|energy2 = 55
+|energy3 = 65
+|enemy castle hp = 30,000 HP
+|enemy castle hp2 = 45,000 HP
+|enemy castle hp3 = 60,000 HP
+|enemies = {{Magnification|Those Guys|200%
+|Doge|200%
+|Hippoe|200%
+|Jackie Peng|200%
+|Kang Roo|200%
+|Helmut Krabbe|50%
+|Shibalien|80%}}
+|enemies2 = {{Magnification|Those Guys|600%
+|Doge|600%
+|Hippoe|600%
+|Kang Roo|600%
+|Jackie Peng|600%
+|Helmut Krabbe|250%
+|Shibalien|250%}}
+|enemies3 = {{Magnification|Those Guys|1,000%
+|Doge|1,000%
+|Shibalien|500%
+|Mistress Celeboodle|250%
+|Scissoroo|250%}}
+|treasure = - [[Treasure|Belly Dancer]]
+|treasure2 = - [[Treasure|Belly Dancer]]
+|treasure3 = - [[Treasure|Belly Dancer]]
+|score reward = '''8,000''': [[Cat Food]] +10<br>
+'''5,000''': +55,000 XP
+|score reward2 = '''8,500''': [[Cat Food]] +10<br>
+'''7,000''': +82,500 XP
+|score reward3 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': +110,000 XP
+|max enemies = 7
+|max enemies2 = 7
+|max enemies3 = 9
+|XP = 5,200 XP
+|width = 4,400
+|jpname = Turkey
+|script = トルコ
+|romaji = Toruko
+|jptreasure = Carpet
+|twname = Greece
+|twscript = 希臘
+|twromaji = Xīlà
+|twtreasure = Ancient Fruins
+|krname = Turkey
+|krscript = 터키
+|krromaji = Teoki
+|krtreasure = Belly Dance
+|chapter = [[Into the Future]]
+|prev stage = [[Greece (Into the Future)|Greece]]
+|next stage = [[Dubai (Into the Future)|Dubai]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Those Guys|Doge|Hippoe|Jackie Peng|Kang Roo|Helmut Krabbe|Shibalien}}
+*Infinite [[Those Guys]] spawn after 4 seconds<sup>120f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Doge]]s spawn after 8 seconds<sup>240f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*3 [[Hippoe]]s spawn after 50 seconds<sup>1,500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*3 [[Jackie Peng]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Kang Roo]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Helmut Krabbe]] spawns after 100 seconds<sup>3,000f</sup>.
+*Infinite [[Shibalien]]s spawn after 116.67 seconds<sup>3,500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Kang Roo]] spawns after 150 seconds<sup>4,500f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Those Guys|Doge|Hippoe|Kang Roo|Jackie Peng|Helmut Krabbe|Shibalien}}
+*Infinite [[Those Guys]] spawn after 4 seconds<sup>120f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Doge]]s spawn after 8 seconds<sup>240f</sup>, delay 5~13.33 seconds<sup>150f~400f</sup>.
+*3 [[Hippoe]]s spawn after 26.67 seconds<sup>800f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Kang Roo]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*3 [[Jackie Peng]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*1 [[Kang Roo]] spawns after 63.33 seconds<sup>1,900f</sup>.
+*1 [[Kang Roo]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Helmut Krabbe]] spawns after 83.33 seconds<sup>2,500f</sup>.
+*Infinite [[Shibalien]]s spawn after 100 seconds<sup>3,000f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Kang Roo]]s spawn after 116.67 seconds<sup>3,500f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*Infinite [[Kang Roo]]s spawn after 120 seconds<sup>3,600f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Helmut Krabbe]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Those Guys|Doge|Shibalien|Mistress Celeboodle|Scissoroo}}
+*Infinite [[Those Guys]] spawn after 4 seconds<sup>120f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Doge]]s spawn after 6 seconds<sup>180f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*5 [[Mistress Celeboodle]]s spawn after 20 seconds<sup>600f</sup>, delay 30~40 seconds<sup>900f~1,200f</sup>.
+*3 [[Scissoroo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*5 [[Mistress Celeboodle]]s spawn after 40 seconds<sup>1,200f</sup>, delay 30 seconds<sup>900f</sup>.
+*5 [[Mistress Celeboodle]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 30 seconds<sup>900f</sup>.
+*1 [[Scissoroo]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Scissoroo]] spawns after 53.33 seconds<sup>1,600f</sup>.
+
+==Strategy==
+==='''Chapters 1 & 2'''===
+Kill off the Helmut Krabbes with [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] and [[Titan Cat (Normal Cat)|Mythical Titan Cat]]. The use of [[:Category:Anti-Alien Cats|anti-Alien Cats]] is also recommended.
+
+==='''Chapter 3'''===
+While rushing this stage sounds like a good idea, it is infact not, and will make you lose instead because of the 500% Shibaliens. The main threats are Mistress Celeboodles and Scissoroos. They are very deadly to deal with, stacked 250% Scissoroos and stacked Mistress Celeboodles that one shots almost anything you deployed at 75% health. Abuse Mistress Celeboodle's single target flaw with bringing loads of cheap meatshields. Use good anti-Alien Cats like [[Surfer Cat (Super Rare Cat)|Castaway Cat]] and [[Psychocat (Rare Cat)|Neo Psychocat]] to freeze and slow these threats, then put a final blow on them with [[Salon Cat (Rare Cat)|Cyborg Cats]].
+
+==Gallery==
+<gallery>
+Wc032.png|Taiwanese version's base (Greece)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Greece'''; [[Greece (Into the Future)|stage 14]] is Italy and Turkey is moved to stage 16.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-15.html
+*https://battlecats-db.com/stage/s03004-15.html
+*https://battlecats-db.com/stage/s03005-15.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

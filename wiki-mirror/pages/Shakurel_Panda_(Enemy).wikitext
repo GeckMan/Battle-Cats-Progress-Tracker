@@ -1,0 +1,64 @@
+{{ENExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[Shakurel Panda (Special Cat)]].''
+'''Shakurel Panda''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Shakurel Planet Collaboration Event]] and the [[Catclaw Dojo]]. It was added in [[Version 8.8 Update|Version 8.8]].
+
+{{Enemy Info
+|name = Shakurel Panda
+|image = E 475.png
+|appearance = [[Shakurel Planet Collaboration Event]]<br>
+[[Arena of Honor/Attack of the Shakurels|Attack of the Shakurels]]
+|money drop = 900¢ - 3,555¢
+}}
+
+==Enemy==
+This enemy has high health, low attack power and range, but has a fast attack rate as well as a 50% chance to [[Knockback|knockback]] Cat Units.
+
+==Strategy==
+To defeat him bring along some powerful [[Long Distance]] attackers to deal with his support, when alone Shakurel Panda is not too much of a threat but can be a bit of a threat for early-game players.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Shakurel Planet Collaboration Event#Shakurel Planet|Shakurel Planet]]:
+**[[Chompin' Trees]] (100%)
+**[[The Future Is Chins]] (200%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Attack of the Shakurels|Attack of the Shakurels]] (75%, 200%, 400%, 500%, 600%, 700%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Shakurel Panda
+|Health = 150000
+|Attack Power = 3000
+|Attack Range = 140
+|Attack Type = Area
+|Time Between Attacks = 29
+|Movement Speed = 7
+|Knockback = 1
+|Foreswing = 25
+|Backswing = 4
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+475 e.png|Shakurel Panda's spritesheet
+IdleShakurelPanda.gif|Shakurel Panda's moving animation
+</gallery>
+
+----
+{{EnemyNav|Shakurel Tiger|Dot Hero}}
+----
+
+{{Shakurel Planet}}
+{{Enemies}}
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]

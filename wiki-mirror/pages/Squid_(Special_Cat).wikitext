@@ -1,0 +1,127 @@
+:''This article is about the Cat Unit. For the enemy, see [[Squid (Enemy)]].''
+'''Squid''' is a [[:Category:Special Cats|Special Cat]] that can obtained from the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]] using Legend Traps. It was added in [[Version 13.6 Update|Version 13.6]].
+
+{{Cat Info
+|ID = 767
+|rarity = EX
+|name1 = Squid
+|name2 = Squid CC
+}}
+
+==Evolution==
+Evolves into '''Squid CC''' at level 10.
+
+==Strategy/Usage==
+Squid can be used in much the same way as [[Cat (Normal Cat)|Cat]], but it has one major drawback—it costs 60% more than Cat and most other Cat clones. On top of this, the Freeze and Slow immunities usually aren't worth the cost, unless playing in a stage with [[Henry]] or [[Croakley]] (and even then, Squid only survives a single hit from each at level 30, with it being one-shot outright by a 150% Croakley). Most other enemies with Freeze or Slow abilities will simply kill this squid in one hit. As a result, Squid is usually a bad choice for an extra Cat-like meatshield, and only grows exponentially worse in stages that are lengthier and require more meatshields to be spawned, or in stages where money management is very important.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 767
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni767 f00.png
+|Image2 = Uni767 c00.png
+|Name1 = Squid
+|Desc1 = Dropping in from "Survive! Mola Mola!"<br>Loved by sunfish.<br>Nullifies Freeze and Slow attacks from enemies.
+|Name2 = Squid CC
+|Desc2 = Dropping in from "Survive! Mola Mola!" Squids are hard<br>for sunfish to digest, ultimately killing them.<br>Nullifies Freeze and Slow attacks from enemies.
+|Name1 (JP) = イカ (Ika, Squid)
+|Desc1 (JP) = 生きろ！マンボウ！から参戦！<br>マンボウの大好物<br>動きを止める攻撃と遅くする攻撃を無効化する
+|Transl1 (JP) = Joining from Survive! Mola Mola!<br>Favorite prey of Molas<br>Immune to Freeze and Slow
+|Name2 (JP) = イカCC (Ika CC, Squid CC)
+|Desc2 (JP) = 生きろ！マンボウ！から参戦！マンボウは内臓も弱く<br>イカを食べ過ぎてぜんぜん消化できずたまに死ぬ<br>動きを止める攻撃と遅くする攻撃を無効化する
+|Transl2 (JP) = Joining from Survive! Mola Mola! Molas occasionally die from overeating<br>squid because their weak organs can't digest them quickly enough<br>Immune to Freeze and Slow
+|Name1 (TW) = 烏賊
+|Desc1 (TW) = 從活下去！曼波魚！來參戰。<br>是曼波魚很喜歡的食物<br>能讓敵人的使動作停止、使動作變慢無效化
+|Name2 (TW) = 烏賊CC
+|Desc2 (TW) = 從活下去！曼波魚！來參戰。曼波魚內臟也很<br>軟弱，偶爾會因喜歡的烏賊吃太多無法消化而死<br>能讓敵人的使動作停止、使動作變慢無效化
+|Name1 (KR) = 오징어
+|Desc1 (KR) = 살아남아라!개복치!에서 참전!<br>개복치가 정말 좋아하는 먹이<br>움직임을 멈추는 공격과 느리게 하는 공격을 무효화한다
+|Name2 (KR) = 오징어CC
+|Desc2 (KR) = 살아남아라!개복치!에서 참전! 개복치는 내장도 약하여<br>오징어를 너무 먹어 소화를 전혀 시키지 못해서 죽는다<br>움직임을 멈추는 공격과 느리게 하는 공격을 무효화한다
+}}
+
+==Cost==
+*Chapter 1: 80¢
+*Chapter 2: 120¢
+*Chapter 3: 160¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Squid
+|Normal Base HP = 200
+|Normal Base AP = 5
+|Normal Range = 110
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 49
+|Normal Attack Length = 21
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 80
+|Normal Recharge = 260
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Immune to Freeze|Immune to Slow}} [[Immune to Freeze]] and [[Immune to Slow|Slow]]
+|Evolved Name = Squid CC
+|Evolved Base HP = 235
+|Evolved Base AP = 6
+|Evolved Range = 110
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 49
+|Evolved Attack Length = 21
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 80
+|Evolved Recharge = 260
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Immune to Freeze|Immune to Slow}} [[Immune to Freeze]] and [[Immune to Slow|Slow]]
+|Lv.MAX = Lv.50+20
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 5 damage<br>(3 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 50f <sub>1.67 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Normal-Recharge Time = 8.67 ~ 2 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 85 damage<br>(51 DPS)
+|val-Evolved-Health = 3,995 HP
+|val-Evolved-Attack Power = 102 damage<br>(61.2 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 50f <sub>1.67 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(20f <sup>0.67s</sup> backswing)
+|val-Evolved-Recharge Time = 8.67 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni767 f00}}
+
+==Trivia==
+*Though it, [[Sardine (Special Cat)|Sardine]] and [[Tasmanian Giant Crab (Special Cat)|Tasmanian Giant Crab]] originate from the game [[Survive! Mola Mola! Collaboration Event|Survive! Mola Mola]], the [[Summer Break Cats Castaway (Event Gacha)|Summer Break Cats Castaway]] event gacha makes no mention of this fact anywhere on its banner or info page.
+
+==Reference==
+*https://battlecats-db.com/unit/768.html
+
+----
+{{CatNav|Sardine|Taitenki}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]

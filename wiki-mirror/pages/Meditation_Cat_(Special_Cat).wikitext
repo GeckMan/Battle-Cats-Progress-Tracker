@@ -1,0 +1,153 @@
+'''Meditation Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Download Celebration! (Event Gacha)|Download Celebration!]] Event Gacha. It was added to [[Nyanko Daisensou|BCJP]] in [[Version 11.10 Update|Version 11.10]], and [[The Battle Cats|BCEN]] in [[Version 13.6 Update|Version 13.6]].
+
+{{Cat Info
+|ID = 689
+|rarity = EX
+|name1 = Meditation Cat
+|name2 = Paragon Cat
+}}
+
+==Evolution==
+Evolves into '''Paragon Cat''' at level 10.
+
+==Strategy/Usage==
+This unit is similar to [[Battle Items#Sniper the Cat|Sniper the Cat]] in that it sits behind the [[Cat Base]] and knocks back enemies. The differences are that Paragon Cat has much lower range and is ineffective against [[:Category:Traitless Enemies|Traitless]] enemies and [[:Category:Enemies with Knockback Immunity|Knockback-immune enemies]]. While not entirely useless on stages featuring [[:Category:Long Distance Enemies|Long Distance attacks]], [[:Category:Wave Attack Enemies|Wave]] [[:Category:Mini-Wave Enemies|Attacks]], or [[:Category:Surge Attack Enemies|Surge]] [[:Category:Mini-Surge Enemies|Attacks]], using Paragon Cat on said stages is risky since they can be sniped if the enemies are too close to the Cat Base. [[:Category:Wave Shield Cats|Wave Shields]] can at least help alleviate the risk on Wave stages.
+
+Due to how units get sent out, it can only hit enemies that are up to '''500px''' away from the Cat Base, meaning it will be useless against enemies with a range higher than 500, like [[Camelle]] and his variants. It also fares very poorly on [[Duel Stages Challenge|Duel Stages]] and [[Tag Arena Challenge|Tag Arena stages]], or other levels where there is a [[Restriction Stage|restriction]] on how many Cat Units can be sent out, since it will not contribute to the fight for the most part and enemies likely won't kill it to make room for more units.
+
+That being said, it works very well on stages where enemies have to be fought close to the Cat Base, such as due to a [[Doge Base (Enemy Base)|Doge Base]] or [[Surge Base (Enemy Base)|Surge Base]], or stages with very few peons to get in the way, like [[Kugel Schreiber]]. It also excels in [[:Category:Zombie Enemies|Zombie]]-heavy stages, where it can easily knock away any threatening Zombies that [[Burrow]] close to your base. In particular, it can act as a hard counter to [[Big Sal]], capable of stunlocking one indefinitely on its own. It pairs exceptionally with the default [[Cat Cannon]] or a [[:Category:Waver-class Cats|Wave Attacker]] to clear weak enemies so it doesn't waste an attack.
+
+There is not much point stacking this cat, since most enemies will be knocked out of its range, which will cause their attacks to sync.
+
+{{Job|Classification = Super-Backliner & Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Reserve Element|Cannon Recharge Up (M)|Mamolan Pasalan|Meditation Cat|jpname=居残り組}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 689
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni689 f00.png
+|Image2 = Uni689 c00.png
+|Name1 = Meditation Cat
+|Desc1 = Cat that has spent 10 years contemplating how<br>peace might be restored to the chaotic Cat Empire.<br>Deals Knockback to Traited enemies.
+|Name2 = Paragon Cat
+|Desc2 = Statue in honor of the Cat who devoted 10 years of<br>thought to restoring peace to the war-torn Cat Empire.<br>Deals Knockback to Traited enemies.
+|Name1 (JP) = 石の上にも10年ネコ (Ishi no Ue ni mo 10 Nen Neko, 10 Years on a Stone Cat)
+|Desc1 (JP) = にゃんこ大戦争と掛けまして平和と解く<br>その答えを石の上で考え続け10年が経過したネコ<br>属性を持つ敵をふっとばす
+|Transl1 (JP) = For 10 years, this Cat has been thinking about<br>the similarities between the [[Nyanko Daisensou|Great Cat War]] and peace<br>Knocks back Traited enemies
+|Name2 (JP) = 石の上にも10年ネコ像 (Ishi no Ue ni mo 10 Nen Nekozō, 10 Years on a Stone Cat Statue)
+|Desc2 (JP) = にゃんこ大戦争と平和について<br>10年間石の上で考え続けたネコを模した記念碑<br>属性を持つ敵をふっとばす
+|Transl2 (JP) = Monument commemorating a Cat that has been thinking about the<br>[[Nyanko Daisensou|Great Cat War]] and peace on a stone for 10 years<br>Knocks back Traited enemies
+|Name1 (TW) = 石上10年貓
+|Desc1 (TW) = 為了想出貓咪大戰爭與和平這兩詞的雙關語<br>而坐在石頭上思考超過10年的貓咪<br>能把有屬性敵人打飛
+|Name2 (TW) = 石上10年貓像
+|Desc2 (TW) = 這是模仿那隻在石頭上思考貓咪大戰爭與和平<br>兩詞雙關語長達10年的貓咪所建立之紀念碑<br>能把有屬性敵人打飛
+|Name1 (KR) = 10년이면 고양이
+|Desc1 (KR) = 서당에서 10년간 풍월을 읊으며<br>냥코 대전쟁과 세계 평화에 대해 고민해온 고양이<br>속성을 가진 적을 날려버린다
+|Name2 (KR) = 10년이면 고양이 동상
+|Desc2 (KR) = 서당에서 10년간 풍월을 읊으며<br>냥코 대전쟁과 세계 평화에 대해 고민해온 고양이를<br>기리는 기념비. 속성을 가진 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Meditation Cat
+|Normal Base HP = 10
+|Normal Base AP = 10
+|Normal Range = 600
+|Normal Foreswing = 31
+|Normal Attack Cooldown = 199
+|Normal Attack Length = 59
+|Normal Speed = 0
+|Normal KB = 1
+|Normal Cost = 500
+|Normal Recharge = 5000
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Immune to Boss Shockwave}} [[Immune to Boss Shockwave]]
+|Evolved Name = Paragon Cat
+|Evolved Base HP = 10
+|Evolved Base AP = 10
+|Evolved Range = 600
+|Evolved Foreswing = 31
+|Evolved Attack Cooldown = 199
+|Evolved Attack Length = 59
+|Evolved Speed = 0
+|Evolved KB = 1
+|Evolved Cost = 500
+|Evolved Recharge = 5000
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Immune to Boss Shockwave}} [[Immune to Boss Shockwave]]
+|Lv.MAX = Lv.50+25
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 10 HP
+|val-Normal-Attack Power = 10 damage<br>(1.3 DPS)
+|val-Normal-Attack Range = 600
+|val-Normal-Attack Frequency = 230f <sub>7.67 seconds</sub>
+|val-Normal-Movement Speed = 0
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 31f <sup>1.03s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 166.67 ~ 157.87 seconds
+|val-Normal-MaxHP = 170 HP
+|val-Normal-MaxAttack = 170 damage<br>(22.17 DPS)
+|val-Evolved-Health = 170 HP
+|val-Evolved-Attack Power = 170 damage<br>(22.17 DPS)
+|val-Evolved-Attack Range = 600
+|val-Evolved-Attack Frequency = 230f <sub>7.67 seconds</sub>
+|val-Evolved-Movement Speed = 0
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Evolved-Recharge Time = 166.67 ~ 157.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni689 f00}}
+
+==Trivia==
+*Meditation Cat was originally obtainable from the [[10th Memorial (Event Gacha)|10th Memorial]] Event Gacha during the [[Anniversary/10th Year|10th Anniversary]] celebration event.
+*Meditation Cat may be based on the idiom ''ishi no ue ni mo sannen'' (石の上にも三年, "three years on a stone"), which is to say that no matter how difficult something is, it can eventually be achieved with enough patience.
+*Meditation Cat's Japanese description begins in the form of ''Nazokake'' (謎掛け), a word game where you find the similarity between two named things.
+*The marking on Meditation Cat's stone is 十, the Japanese word for 10.
+*This is actually [[PONOS Corporation|PONOS]]' second take on a completely unmoving "base defender" unit. The first was [https://seesaawiki.jp/urugege/d/%C0%E9%C7%AF%A4%CB%B0%EC%CA%E2%CA%E2%A4%AF%C4%BB The Bird That Takes One Step a Millennium], one of the most prevalently used [[:Category:Uber Rare Cats|Uber Rare]] units in [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou|YuruGeGe]]. While this Uber had a blind spot and took nearly 10 minutes to recharge, it also had exceptional damage (102,000 at level 30) and reach (450~2700), Area Attack, and a cost of only 1,002, making it extremely valuable as a stackable base defender in levels with non-timed bosses, or to be saved up like the [[Cat Cannon]] until a group of dangerous enemies appeared, especially in levels that rushed players with such enemies at the beginning. Perhaps to avoid creating such a versatile unit again, Meditation Cat is given many disadvantages that its predecessor lacked, namely Single Attack and an extremely low damage output that makes it almost pointless to stack.
+*The [[Ototo Corps#Iron Wall|Iron Wall Cat]], Meditation Cat, [[Mamoluga (Uber Rare Cat)|Mamolan Pasalan]], and [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]] are the only units with 0 speed.
+**The Iron Wall Cat, Meditation Cat, and Mamolan Pasalan are also the only non-[[Conjure|conjured]] units to be Immune to Boss Shockwaves.
+
+==Reference==
+*https://battlecats-db.com/unit/690.html
+
+----
+{{CatNav|Brainwashed Lizard Cat|Child of Destiny Phono}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Boss Shockwave Immunity]]

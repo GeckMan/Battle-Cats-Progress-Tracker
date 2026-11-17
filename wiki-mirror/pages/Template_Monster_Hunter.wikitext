@@ -1,0 +1,35 @@
+{{#invoke:Navbox|main
+|template = Template:Monster Hunter
+|title = [[Monster Hunter Collaboration Event]]
+|navbox_class = monster-hunter
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Felyne (Special Cat)|Felyne]]
+*[[Kirin Cat (Special Cat)|Kirin Cat]]
+*[[Sheria - Kirin (Special Cat)|Sheria - Kirin]]
+*[[Rathalos (Special Cat)|Rathalos]]
+*[[Rathian (Special Cat)|Rathian]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Rathalos (Enemy)|Rathalos]]
+*[[Rathian (Enemy)|Rathian]]
+
+|header3 = Stages
+|group3 = MonHun Great Hunting Quest
+|list3 =
+*[[Noble Queen・Rathian 【Village】]]
+*[[King Of The Sky・Rathalos 【Inferior】]]
+*[[Proud and Strongest Couple! 【Superior】]]
+
+|group4 = 【Emergency】MonHun Great Hunting Quest
+|list4 =
+*[[Queen, Descends 【Inferior】]]
+*[[The Sky Has Fallen, King Of The Sky! 【Superior】]]
+*[[Hunt Sky And Fire Dragons! 【G Class】]]
+}}<templatestyles src="Monster Hunter/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Monster Hunter]]}}<noinclude>[[Category:Navboxes]]</noinclude>

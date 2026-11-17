@@ -1,0 +1,118 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit, for the enemy, see [[Setsuko (Enemy)]].''
+'''Setsuko''' is a [[:Category:Special Cats|Special Cat]] that could be obtained from the [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru Collaboration]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Cat Info
+|ID = 265
+|rarity = EX
+|name1 = Setsuko
+|name2 = Setsuko Love Mackerel
+}}
+
+==Evolution==
+Evolves into '''Setsuko Love Mackerel''' at level 10.
+
+==Strategy/Usage==
+Setsuko has the stats of a generalist, but, unlike Nyamusu, is nothing but downgrades from [[Mer-Cat (Rare Cat)|Cameraman Cat]] and is, therefore, only truly good for [[User Rank]]. He can be really strong in early [[Empire of Cats]] and his 30% chance to knockback Red enemies can be useful until [[Pirate Cat (Rare Cat)|Pirate Cat]] is obtained, but he won't have much going for him after [[Dark Emperor Nyandam]]'s first defeat.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 265
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni265 f00.png
+|Image2 = Uni265 c00.png
+|Name1 (JP) = せつ子
+|Desc1 (JP) = にゃんパズルから参戦！<br>物知りでニャームスのよき話相手<br>たまに赤い敵をふっとばす(範囲攻撃)
+|Transl1 (JP) = Joined the war from NYAN puzzle!<br>The companion to whom NYAMUSU is preferred by a well-informed.<br>A red enemy is sometimes blown (area attack).
+|Name2 (JP) = せつ子Love鯖
+|Desc2 (JP) = にゃんパズルから参戦！<br>実は太ったおじさんネコ<br>たまに赤い敵をふっとばす(範囲攻撃)
+|Transl2 (JP) = Joined the war from  NYAN puzzle!<br>The uncle cat which actually gained weight.<br>A red enemy is sometimes blown (area attack).
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Setsuko
+|Normal Base HP = 440
+|Normal Base AP = 90
+|Normal Range = 240
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 149
+|Normal Attack Length = 81
+|Normal Speed = 5
+|Normal KB = 1
+|Normal Cost = 360
+|Normal Recharge = 520
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Setsuko Love Mackerel
+|Evolved Base HP = 580
+|Evolved Base AP = 120
+|Evolved Range = 240
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 149
+|Evolved Attack Length = 81
+|Evolved Speed = 5
+|Evolved KB = 1
+|Evolved Cost = 360
+|Evolved Recharge = 520
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 440 HP
+|val-Normal-Attack Power = 90 damage<br>(15.08 DPS)
+|val-Normal-Attack Range = 240
+|val-Normal-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 17.33 ~ 8.53 seconds
+|val-Normal-MaxHP = 7,480 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(256.42 DPS)
+|val-Evolved-Health = 9,860 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(341.9 DPS)
+|val-Evolved-Attack Range = 240
+|val-Evolved-Attack Frequency = 179f <sub>5.97 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 17.33 ~ 8.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni265 f00}}
+
+==Trivia==
+*The t-shirt in his Evolved Form is the same one that [[Titan Cat (Normal Cat)|Jamiera Cat]] wears, as both say "I love mackerel" on them in Japanese.
+
+==Reference==
+*https://battlecats-db.com/unit/266.html
+
+----
+{{CatNav|Kuromi|Nebaaru-kun}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]

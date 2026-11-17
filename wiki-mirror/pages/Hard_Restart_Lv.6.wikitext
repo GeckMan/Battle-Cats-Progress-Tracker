@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Metal One Horn|Metal Snache|Super Metal Hippoe}}
+'''Hard Restart Lv.6''' is the sixth stage in [[Machines in Revolt]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn349 05 s en.png]]
+|stage location = [[File:Mapname349 s en.png]]
+|energy = 120
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Metal One Horn|100%
+|Metal Snache|200%}}
+|boss = {{Magnification|Super Metal Hippoe|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 3,600 XP
+|width = 3,600
+|max enemies = 15
+|jpname = Reboot Lv.6
+|script = 再起動 Lv.6
+|romaji = Saikidō Lv.6
+|star = 1
+|event-chapter = [[Machines in Revolt]]
+|max clears = 1
+|difficulty = ★7
+|prev stage = [[Hard Restart Lv.5]]
+|next stage = [[Hard Restart Lv.7]]
+}}
+
+==Battleground==
+*1 [[Metal One Horn]] spawns after 6.67 seconds<sup>200f</sup>.
+*4 [[Metal Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 4~12 seconds<sup>120f~360f</sup>.
+*2 [[Metal Snache]]s spawn after 26.67 seconds<sup>800f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*1 [[Metal Snache]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Super Metal Hippoe]] spawns as the boss.
+**9 [[Metal Snache]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+**9 [[Metal Snache]]s spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+**3 [[Metal One Horn]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+The stages have now reached a point where one should have progressed through some of the Cyclone Stages. The Metal One Horns, although they may look threatening, have some of the worst range in the entire game as even your ''meatshields'' outrange them.
+
+==Reference==
+*https://battlecats-db.com/stage/s01349-06.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

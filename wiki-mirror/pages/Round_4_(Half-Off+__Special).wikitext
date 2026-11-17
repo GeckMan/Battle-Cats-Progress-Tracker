@@ -1,0 +1,67 @@
+{{DISPLAYTITLE:Round 4}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Znache|Sir Rel|Zuche|Zigge|Zang Roo|Othom|Kang Roo|Relic Bun-Bun}}
+'''Round 4''' is the fourth stage in [[Otherworld Colosseum#Half-Off+: Special|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 03 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,700,000 HP
+|enemies = {{Magnification|Znache|300%
+|Sir Rel|150%
+|Zuche|200%
+|Zigge|300%
+|Zang Roo|300%
+|Othom|100%
+|Kang Roo|4,000%}}
+|boss = {{Magnification|Relic Bun-Bun|100%}}
+|enemies2 = {{Magnification|Znache|360%
+|Sir Rel|180%
+|Zuche|240%
+|Zigge|360%
+|Zang Roo|360%
+|Othom|120%
+|Kang Roo|4,800%}}
+|boss2 = {{Magnification|Relic Bun-Bun|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 20
+|jpname = Round 4
+|script = Round 4
+|romaji = Round 4
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Half-Off+: Special|Otherworld Colosseum]]
+|prev stage = [[Round 3 (Half-Off+: Special)|Round 3]]
+|next stage = [[Round 5 (Half-Off+: Special)|Round 5]]
+}}
+
+==Rules==
+{{ColosseumRule|Half-Off+: Special}}
+
+==Battleground==
+*5 [[Znache]]s spawn after 8 seconds<sup>240f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*3 [[Sir Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*2 [[Zuche]]s spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Zigge]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[Relic Bun-Bun]] spawns as the boss.
+**25 [[Sir Rel]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**Infinite [[Znache]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**4 [[Zang Roo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+**2 [[Othom]]s spawn after 20 seconds<sup>600f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+**5 [[Zuche]]s spawn after 30 seconds<sup>900f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**Infinite [[Kang Roo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**2 [[Zigge]]s spawn after 50 seconds<sup>1,500f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36026-04.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

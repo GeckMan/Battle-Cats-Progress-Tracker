@@ -1,0 +1,153 @@
+'''Principal Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained by purchasing him from a special sale during the [[Heartbeat Catcademy]] event. He was added in [[Version 13.2 Update|Version 13.2]].
+
+{{Cat Info
+|ID = 735
+|rarity = EX
+|name1 = Principal Cat
+|name2 = Midlife Crisis Cat
+}}
+
+==Evolution==
+Evolves into '''Midlife Crisis Cat''' at level 10.
+
+==Strategy/Usage==
+Sadly, this Cat does a terrible job as a [[Titan Cat (Normal Cat)|Titan Cat]] variant. His stats are unreliable even at Level 30, so this Cat should not be even considered for serious usage outside of [[Empire of Cats]] and the restricted [[Heartbeat Catcademy]] stages, where he can greatly help against the Traitless, Red and Dark enemies without the need to farm Love Letters for his + levels like other Heartbeat Catcademy units. Like [[Gacha Cat (Special Cat)|Gacha Cat]], his stats increase exponentially past level 30, reaching 40,890 HP, 13,920 AP and 6,233 DPS at level 50, but by that point you will already have better units that can deal with the same enemy types better.
+
+However, this Cat does not just serve as User Rank Dump and Love Letter Farmer—his main selling point is the Cat Combo [[Catcademy Anthem (Combo)|Catcademy Anthem]]. This is actually a very helpful Combo, decreasing the time between Cat deployment by a landslide. However, being a 5-slot Combo, its effect can easily be reproduced or surpassed by stacking other smaller Research UP Combos like [[Biohazard (Combo)|Biohazard]], [[Bony Bone (Combo)|Bony Bone]] and [[Mini-Saurus (Combo)|Mini-Saurus]], or certain other Combos like [[Bad Guys (Combo)|Bad Guys]].
+
+{{Job|Classification = Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Catcademy Anthem|Research Power Up (L)|Secret Crush Cat|Tomboy Lion Cat|Chalkboard Eraser Cat|Class Rep Cat|Principal Cat|jpname=にゃんこ学園校歌斉唱}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 735
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni735 f00.png
+|Image2 = Uni735 c00.png
+|Name1 = Principal Cat
+|Desc1 = Long-haired headmaster who supports his<br>students' dreams with affectionate advice.<br>Strong vs. Red, Dark, and Traitless enemies.
+|Name2 = Midlife Crisis Cat
+|Desc2 = Feeling adrift after retirement, this former<br>principal Cat changed his identity completely.<br>Strong vs. Red, Dark, and Traitless enemies.
+|Name1 (JP) = ネコ校長 (Neko Kōchō, Principal Cat)
+|Desc1 (JP) = 恋に励む学び舎で　力強くおおらかに<br>若き夢追う我ら見守る　輝く希望の長髪<br>赤い敵、黒い敵、属性を持たない敵にめっぽう強い
+|Transl1 (JP) = Be strong and generous in a school dedicated to love<br>As young dreamers, the shining long hair of hope watches over us<br>Strong against Red enemies, Dark enemies, and Traitless enemies
+|Name2 (JP) = ネコセカンドライフ (Neko Sekando Raifu, Second Life Cat)
+|Desc2 (JP) = 校長先生を早期引退し趣味の世界へ羽ばたいた<br>輝くセカンドライフを楽しむネコ<br>赤い敵、黒い敵、属性を持たない敵にめっぽう強い
+|Transl2 (JP) = Entered the world of hobbies, retiring early from being a school principal<br>A Cat enjoying a shining second life<br>Strong against Red enemies, Dark enemies, and Traitless enemies
+|Name1 (TW) = 校長貓
+|Desc1 (TW) = 頂著長髮，在鼓勵學生戀愛的學舍中<br>默默守護著追逐夢想的學生們<br>善於攻擊紅色敵人、黑色敵人與無屬性敵人
+|Name2 (TW) = 第二人生貓
+|Desc2 (TW) = 從校長的職位提早退休，開始挑戰<br>各種興趣，開心享受第二人生的貓咪<br>善於攻擊紅色敵人、黑色敵人與無屬性敵人
+|Name1 (KR) = 고양이 교장
+|Desc1 (KR) = 냥코탑 맑은 정기 이어받아~ 큰 꿈을 품고~<br>사랑으로 키워 나가자~ 길이 빛나는 머리카락~<br>빨간 적, 검은 적, 속성을 가지지 않은 적에 엄청 강하다
+|Name2 (KR) = 고양이 세컨드 라이프
+|Desc2 (KR) = 교장 생활을 조기 퇴직 후, 취미의 세계에 푹 빠진<br>빛나는 제2의 인생을 즐기는 고양이<br>빨간 적, 검은 적, 속성을 가지지 않은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 1,300¢
+*Chapter 2: 1,950¢
+*Chapter 3: 2,600¢
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Principal Cat
+|Normal Base HP = 470
+|Normal Base AP = 160
+|Normal Range = 150
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 49
+|Normal Attack Length = 26
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 1300
+|Normal Recharge = 930
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark,Traitless
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Knockback|Immune to Weaken}} [[Immune to Knockback]] and [[Immune to Weaken|Weaken]]
+|Evolved Name = Midlife Crisis Cat
+|Evolved Base HP = 470
+|Evolved Base AP = 160
+|Evolved Range = 150
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 49
+|Evolved Attack Length = 26
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 1300
+|Evolved Recharge = 930
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark,Traitless
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Knockback|Immune to Weaken}} [[Immune to Knockback]] and [[Immune to Weaken|Weaken]]
+|Lv.MAX = Lv.50
+|Scaling = 20x2,120,100,80,20,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 470 HP
+|val-Normal-Attack Power = 160 damage<br>(71.64 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 31 ~ 22.2 seconds
+|val-Normal-MaxHP = 19,740 HP
+|val-Normal-MaxAttack = 6,720 damage<br>(3,008.96 DPS)
+|val-Evolved-Health = 19,740 HP
+|val-Evolved-Attack Power = 6,720 damage<br>(3,008.96 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 31 ~ 22.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni735 f00}}
+
+==Trivia==
+*Principal Cat has the same hairstyle, hair color and suit as Kinpachi Sakamoto, the eponymous teacher from the television drama ''[[wikipedia:Kinpachi-sensei|Kinpachi-sensei]]'', also known as ''Mr. Kinpachi in Class 3B''.
+*Principal Cat's Japanese description reads like a school's anthem.
+*[[Gacha Cat (Special Cat)|Gacha Cat]], Principal Cat and [[Choco Capsule (Special Cat)|Choco Capsule]] are currently the only cats to have level scaling above 20%.
+*Principal Cat is currently the only [[:Category:IAP Cats|IAP Cat]] to have a Cat Combo featuring at least one other unit.
+
+==Reference==
+*https://battlecats-db.com/unit/736.html
+
+----
+{{CatNav|Pegasa|Frozen Rose Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Weaken Immunity]]

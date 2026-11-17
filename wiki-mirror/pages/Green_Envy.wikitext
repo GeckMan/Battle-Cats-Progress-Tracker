@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Mooth|Owlbrow|The Face}}
+'''Green Envy''' is the first stage in [[Growing Catfruit]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn422 00 s en.png]]
+|stage location = [[File:Mapname422 s en.png]]
+|energy = 200
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|Mooth|400%
+|Owlbrow|100%}}
+|boss = {{Magnification|The Face|400%}}
+|treasure = One of the following (unlimited):<br>
+- [[Catfruit|Green Catfruit]] +1 (57%)<br>
+- [[Catfruit|Green Catfruit Seed]] +3 (37%)<br>
+- [[Catfruit|Green Catfruit]] +3 (3%)<br>
+- [[Catfruit|Epic Catfruit]] +1 (3%)
+|XP = 4,000 XP
+|width = 4,000
+|max enemies = 9
+|jpname = Green Temptation
+|script = 翠の誘惑
+|romaji = Midori no Yūwaku
+|star = 1
+|event-chapter = [[Growing Catfruit]]
+|difficulty = ★5
+|prev stage = N/A
+|next stage = [[Violet Flash]]<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 5%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 5%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 5%)
+}}
+
+==Battleground==
+*1 [[Mooth]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Mooth]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Mooth]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[The Face]] spawns as the boss.
+**10 [[Owlbrow]]s spawn, delay 2~3 seconds<sup>60f~90f</sup>.
+**5 [[Owlbrow]]s spawn, delay 3~6 seconds<sup>90f~180f</sup>.
+
+==Strategy==
+Players who own [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] should have no trouble beating this stage.
+
+==Reference==
+*https://battlecats-db.com/stage/s01422-01.html
+
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Event Stages]]

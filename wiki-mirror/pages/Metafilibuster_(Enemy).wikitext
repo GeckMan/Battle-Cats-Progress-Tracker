@@ -1,0 +1,98 @@
+:''For other uses, see [[Filibuster Cat (disambiguation)]].''
+'''Metafilibuster''' (メタフィリバスター, ''Metafiribasutā'', '''Metafilibuster''') is a [[:Category:Floating Enemies|Floating]] variant of [[Filibuster Obstructa]] that appears in [[Legend Stages]]. He was added in [[Version 12.0 Update|Version 12.0]].
+
+{{Enemy Info
+|name = Metafilibuster
+|image = E 630.png
+|first appearance = '''ZL''': [[A Whole New World|Sub-chapter 1 - A Whole New World]]
+|latest appearance = '''ZL''': [[A Whole New World|Sub-chapter 1 - A Whole New World]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+Metafilibuster is a hologram of Filibuster Obstructa with nearly identical stats and abilities, the only meaningful differences being an extra million HP, an added immunity to [[Surge Attack|Surges]] and the removal of his [[:Category:Alien Enemies|Alien]] trait. With the enemy himself remaining relatively trivial, the true threat lies in the drastically improved support that you must neutralize quickly.
+
+==Strategy==
+It's worth noting that unlike Filibuster Obstructa in [[Filibuster Invasion (Cats of the Cosmos)|Filibuster Invasion]], this enemy may not hit the [[Cat Base]] in [[A Whole New World]] if it's far enough away due to the increased stage width. Otherwise, treat it like its original without the Alien trait.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 630
+|Type = [[:Category:Floating Enemies|Floating]]
+|Image1 = Enemy icon 630.png
+|Name1 = Metafilibuster
+|Desc1 = Wanders infinite worlds leaving a trail of both<br>destruction and creation in its wake. Its<br>makeup is a mystery, as is its power. All<br>negative effects are ineffective against it.
+|Name1 (JP) = メタフィリバスター (Metafiribasutā, Metafilibuster)
+|Desc1 (JP) = 無限に広がる数多の世界を彷徨いながら<br>破壊と再構築を繰り返す謎の生命体。<br>世界をも変える計り知れない力により<br>あらゆる妨害効果を無に帰す。
+|Transl1 (JP) = A mysterious lifeform that wanders infinite worlds,<br>causing repeated destruction and reconstruction.<br>Its immeasurable, world-changing power<br>invalidates all negative effects.
+|Name1 (TW) = 異界阻撓貓
+|Desc1 (TW) = 彷徨在數不清的世界之間，<br>不斷進行破壞與再生的謎之生命體。<br>那深不可測且足以改變世界的力量<br>會讓所有妨害效果全部無效。
+|Name1 (KR) = 메타 필리버스터
+|Desc1 (KR) = 무한히 펼쳐진 수많은 세계를 방황하면서<br>파괴와 재구축을 반복하는 수수께끼의 생명체<br>세계마저 바꿔버릴 헤아릴 수 없는 힘으로<br>온갖 방해 효과를 무효로 한다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 1-1: [[A Whole New World]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Metafilibuster
+|Health = 3000000
+|Attack Power = 3000000
+|Attack Range = 2000
+|Attack Type = Area
+|Time Between Attacks = 1351
+|Movement Speed = 30
+|Knockback = 200
+|Foreswing = 1200
+|Backswing = 151
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~4,300)<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]] and [[Immune to Surge|Surge]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy|bg=Bg193.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+630 e.png|Metafilibuster's spritesheet
+THISTOOKAGESAGAIN.gif|Metafilibuster's animations
+</gallery>
+
+==Trivia==
+*The ''meta-'' in Metafilibuster draws from its Greek definition, meaning ''beyond'' or ''transcendant'', which indicates an evolved version of [[Filibuster Obstructa]]. However, it could also imply a sequel or continuation, effectively a "post-Filibuster Obstructa".
+*Since Filibuster Obstructa resembles [[wikia:dragonball:Frieza|Mecha-Frieza]], Metafilibuster may be a reference to the [[wikia:dragonball:Meta-Cooler|Meta-Coolers]] introduced in ''[[wikia:dragonball:Dragon Ball Z: The Return of Cooler|Dragon Ball Z: The Return of Cooler]]''. This is supported by how Metafilibuster's Japanese description says that his power can change the world and how his first stage's English name is [[A Whole New World]], potentially referencing Meta-Cooler's role as one of the [[wikia:dragonball:Universe Creation Planners|Universe Creation Planners]].
+**When unlocked as [[Filibuster Cat X (Special Cat)|Filibuster Cat X]]'s [[True Form]], Metafilibuster takes on a golden hue, which may be a nod to Golden Meta-Cooler.
+*Metafilibuster's knockback animation has the hologram glitch slightly. He shares this behavior with his allied counterpart.
+*Metafilibuster, [[Super Metal Hippoe]] and [[Firecracker]] are the only enemy units whose knockback animations have multiple frames.
+**[[Dark Emperor Nyandam]], [[Director Kurosawah]], [[Skelecat (Enemy)|Skelecat]], [[Gato Amigo (Enemy)|Gato Amigo]], [[Manic Lion Cat (Enemy)|Manic Lion Cat]] and [[The 9th Angel (Enemy)|The 9th Angel]] are all internally set to have knockback animations that last more than 1 frame, however they still remain static when knocked back.
+*Metafilibuster's attack cycle is one frame shorter than Filibuster Obstructa's.
+*Despite Metafilibuster's English description saying it is immune to all negative effects, it is not immune to Curse, Warp, Toxic and Explosion, although no Cats currently have Toxic or Warp and Curse has no effect on it.
+*Metafilibuster has the highest base attack power of all enemies in the game at 3,000,000 damage.
+
+==Reference==
+*https://battlecats-db.com/enemy/632.html
+
+----
+{{EnemyNav|Zero Luza|Rabbit Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Zero Legends Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Mythic Bosses]]

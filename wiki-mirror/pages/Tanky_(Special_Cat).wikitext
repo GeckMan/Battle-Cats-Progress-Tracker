@@ -1,0 +1,126 @@
+'''Tanky''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 5.2 Update|Version 5.2]] and can be unlocked as a daily stamp during the [[Neo Mushroom Garden Collaboration Event]].
+
+{{Cat Info
+|ID = 278
+|rarity = EX
+|name1 = Tanky
+|name2 = Tanky 'n' Cat
+}}
+
+==Evolution==
+Evolves into '''Tanky 'n' Cat''' at level 10.
+
+==Strategy/Usage==
+Tanky is a Cat that, despite being called Tanky, is not tanky at all. Despite both form's descriptions, neither form is great for long-distance combat. Considering everything, Tanky is best used as an early-game ranger, most ideal for assassinating [[Hippoe]]s and [[Gory|Gories]], assuming you have decently leveled meatshields. Outside of killing early-game threats, Tanky best supports your Cat Army by contributing to your [[User Rank]], as he will hardly even scratch dangerous mid-game and late-game enemies.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 278
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni278 f00.png
+|Image2 = Uni278 c00.png
+|Name1 = Tanky
+|Desc1 = Thought about adding a harvester,<br>but decided a tank was cooler.<br>Great for long-distance combat.
+|Name2 = Tanky 'n' Cat
+|Desc2 = A rowdy Cat took over the<br>controls while no one was looking.<br>Great for long-distance combat.
+|Name1 (JP) = なめこタンク (Nameko Tanku, Nameko Mushroom Tank)
+|Desc1 (JP) = NEOなめこ栽培キットから参戦！<br>下半身をキャタピラにするかで半年ほど悩んだらしい<br>遠くの敵を攻撃できる遠距離型キャラ
+|Transl1 (JP) = Join the NEO Nameko Cultivation Kit!
+It seems that I was troubled about half a year to make the lower body a caterpillar
+Long-distance characters that can attack distant enemies
+|Name2 (JP) = なめこタンク&にゃんこ (Nameko Tanku & Nyanko, Nameko Mushroom Tank & Cat)
+|Desc2 (JP) = NEOなめこ栽培キットから参戦！<br>コントロール権をネコに乗っ取られ暴走中<br>遠くの敵を攻撃できる遠距離型キャラ
+|Transl2 (JP) = Join the NEO Nameko Cultivation Kit!
+The control right is taken over by the cat and running away
+Long-distance characters that can attack distant enemies
+|Name1 (TW) = 菇菇坦克
+|Desc1 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>據說為了下半身是否裝上履帶就煩惱了半年<br>可以攻擊遠處敵人的遠距離攻擊型角色
+|Name2 (TW) = 菇菇坦克&貓咪
+|Desc2 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>掌控權被貓咪奪走而現在暴走中<br>可以攻擊遠處敵人的遠距離攻擊型角色
+|Name1 (KR) = 나메코 탱크
+|Desc1 (KR) = NEO 나메코 재배 킷트에서 참전!<br>하반신을 무한궤도 스타일로 할지에 대해<br>반년이나 고민했다고 한다. 원거리 공격용 캐릭터
+|Name2 (KR) = 나메코 탱크&냥코
+|Desc2 (KR) = NEO 나메코 재배 킷트에서 참전!<br>냥코에게 조종당해 폭주 중<br>원거리 공격용 캐릭터
+}}
+
+==Cost==
+*Chapter 1: 600¢
+*Chapter 2: 900¢
+*Chapter 3: 1,200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tanky
+|Normal Base HP = 600
+|Normal Base AP = 200
+|Normal Range = 380
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 76
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 660
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Tanky 'n' Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 200
+|Evolved Range = 380
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 76
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 660
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 200 damage<br>(38.71 DPS)
+|val-Normal-Attack Range = 380
+|val-Normal-Attack Frequency = 155f <sub>5.17 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 22 ~ 13.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(658.06 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(658.06 DPS)
+|val-Evolved-Attack Range = 380
+|val-Evolved-Attack Frequency = 155f <sub>5.17 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 22 ~ 13.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni278 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/279.html
+
+----
+{{CatNav|Funghi|White Cat}}
+----
+
+{{Neo Mushroom Garden}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Stamp Reward Cats]]

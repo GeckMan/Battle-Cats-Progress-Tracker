@@ -1,0 +1,54 @@
+{{EnemiesAppearing|B.B.Bunny|Gory|Pigge|Gabriel|Doge Dark|Sir Seal|Teacher Bun Bun}}
+'''Light, Shadow and Air''' is one of the many [[Enigma Stages]]. It was added in [[Version 14.5 Update|Version 14.5]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn071 00 h en.png]]
+|stage location = [[File:Mapname071 h en.png]]
+|energy = 10
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|B.B.Bunny|400%
+|Gory|400%
+|Pigge|400%
+|Gabriel|100%
+|Doge Dark|100%
+|Sir Seal|400%}}
+|boss = {{Magnification|Teacher Bun Bun|400%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, unlimited)
+|score reward =
+|XP = 300 XP
+|width = 6,000
+|max enemies = 8
+|jpname = Light, Shadow and Floating Teacher
+|script = 光と影と浮遊教師
+|romaji = Hika to Kage to Fuyū Kyōshi
+|star = 1
+|event =
+|event-chapter = Map to Reunion
+|max clears = 1
+|difficulty = ★5
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Gory|Gories]] spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Pigge]]s spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Gabriel]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[Sir Seal]]s spawn, delay 10~40 seconds<sup>300f~1,200f</sup>.
+*When the base reaches 99% HP:
+**4 [[Sir Seal]]s spawn, delay 4~13.33 seconds<sup>120f~400f</sup>.
+**6 [[Gory|Gories]] spawn, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+*When the base reaches 70% HP:
+**1 [[Teacher Bun Bun]] spawns as the boss.
+
+==Strategy==
+Treat this stage as just a slightly souped-up version of [[Moon (Empire of Cats)|Moon]], so you can use basically the same strategy here. Depending on when you encounter this stage, you will have stronger units to blow up Teacher Bun Bun with.
+
+==Reference==
+*https://battlecats-db.com/stage/s25071-01.html
+
+{{EnigmaStages}}
+[[Category:Enigma Stages]]

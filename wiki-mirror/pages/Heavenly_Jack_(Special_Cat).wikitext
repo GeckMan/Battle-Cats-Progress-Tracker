@@ -1,0 +1,128 @@
+:''For other uses, see [[Jack (disambiguation)]].''
+'''Heavenly Jack''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by playing the [[Bikkuriman Collaboration Event/Event Gacha|Event Capsule]] during the [[Bikkuriman Collaboration Event]]. He was added in [[Version 9.7 Update|Version 9.7]].
+
+{{Cat Info
+|ID = 557
+|rarity = EX
+|name1 = Heavenly Jack
+|name2 = Heavenly Lord Jack
+}}
+
+==Evolution==
+Evolves into '''Heavenly Lord Jack''' at level 10.
+
+==Strategy/Usage==
+This cat can be used to take out small peons in levels or chip a boss away. Be wary though; his short range and glass health allows him to be overwhelmed by long-ranged enemies VERY quickly!
+
+{{Job|Classification = Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 557
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni557 f00.png
+|Image2 = Uni557 c00.png
+|Name1 = Heavenly Jack
+|Desc1 = An angel who frolics through the elysian fields.<br>Make the devils dance before crushing them!<br>Extra money earned by defeating enemies!
+|Name2 = Heavenly Lord Jack
+|Desc2 = Divine King who uses godlike speed to fulfill<br>the prophecies of the heavenly realms.<br>Extra money earned by defeating enemies!
+|Name1 (JP) = 天子男ジャック (Tenshi Otoko Jakku, Heavenly Man Jack)
+|Desc1 (JP) = 聖遊源で飛びはね誕生した天使。遊弦棒で魔人も<br>小踊りさせ聖コインつぶてを投飛させやっつける<br>次界若神子の１！敵を倒したときにお金を多くもらえる
+|Transl1 (JP) = An angel who was born by splashing in the Sacred Source. A demon with a wand<br> makes them do a little dance, throw a holy coin into the air and take out<br>
+one of the young gods of the Next World 1. Gets a lot of money when defeating an enemy.
+|Name2 (JP) = 神帝男ジャック (Kamimikado Otoko Jakku, Heavenly Heavenly Lord Jack)
+|Desc2 (JP) = 天子導きに相乗聖動を力に次界へ高飛速スタートの<br>神帝１。遊晶剣を新たに伝授し若神子からの聖儀完成！<br>途中聖戦有。敵を倒したときにお金を多くもらえる
+|Transl2 (JP) = To the next world with the power of the synergistic Holy Movement and the guidance of the Heavenly Son, a high speed start to the next world<br>God Emperor 1. He has newly introduced the Crystal Sword to complete the ritual from the Young Goddess!<br>There is a holy war on the way. Gets a lot of money when defeating an enemy.
+|Name1 (TW) = 天子男傑克
+|Desc1 (TW) = 於聖遊源下飛躍誕生的天使。以遊弦棒打擊<br>再以飛起的聖幣飛投魔人的次界若神子之１！<br>打倒敵人的時候可以得到很多金錢
+|Name2 (TW) = 神帝男傑克
+|Desc2 (TW) = 引導天子將雙重聖動為力向次界開始高速起飛的<br>神帝１。重新傳授遊晶劍,完成了若神子的聖儀！<br>途中有聖戰。打倒敵人的時候可以得到很多金錢
+|Name1 (KR) = 천자남 잭
+|Desc1 (KR) = 성유원에서 탄생한 천사. 유현봉으로 마인도<br>춤추게하며 돈팔매질로 해치운다. 차계 약신자1!<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+|Name2 (KR) = 신제남 잭
+|Desc2 (KR) = 천자를 이끌기 위해 상승성동의 차계에 고속 비행을 시작한<br>신제1. 유정검을 새로이 전수하여 약신자들의 성의 완료!<br>적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX5}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Heavenly Jack
+|Normal Base HP = 420
+|Normal Base AP = 190
+|Normal Range = 220
+|Normal Foreswing = 17
+|Normal Attack Cooldown = 63
+|Normal Attack Length = 52
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = Heavenly Lord Jack
+|Evolved Base HP = 550
+|Evolved Base AP = 250
+|Evolved Range = 220
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 63
+|Evolved Attack Length = 52
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.50+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 420 HP
+|val-Normal-Attack Power = 190 damage<br>(71.25 DPS)
+|val-Normal-Attack Range = 220
+|val-Normal-Attack Frequency = 80f <sub>2.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 7,140 HP
+|val-Normal-MaxAttack = 3,230 damage<br>(1,211.25 DPS)
+|val-Evolved-Health = 9,350 HP
+|val-Evolved-Attack Power = 4,250 damage<br>(1,593.75 DPS)
+|val-Evolved-Attack Range = 220
+|val-Evolved-Attack Frequency = 80f <sub>2.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni557 f00}}
+
+==Trivia==
+*In the English banner for [[Bikkuriman Collaboration Event/Event Gacha|Bikkuriman Choco Capsules]], Heavenly Jack's name is misspelled as ''Heavenly Jackt''.
+
+==Reference==
+*https://battlecats-db.com/unit/558.html
+
+----
+{{CatNav|Holy Knight Alibaba|Gacha Cat}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Money Up ability]]

@@ -1,0 +1,104 @@
+'''Doremi ''' (ドレミちゃん, '''''Doremi-chan''''') is a [[:Category:Traitless Enemies|Traitless]] variant of [[Bakoo]] introduced in the [[:Category:Advent Stages|Advent Stage]] [[Baby Fake (Merciless)|First Errand]]. She was added in [[Version 9.6 Update|Version 9.6]].
+
+{{Enemy Info
+|name = Doremi
+|image = E 514.png
+|appearance = [[Baby Fake (Merciless)|First Errand]]<br>
+[[NEO First Errand]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+Doremi has extreme attack power, 100% slow, very high health and a high knockback count as well as slow immunity. Like [[Bakoo]], she has a very low standing range, but also a massive Long Distance area and fast movement speed, so make sure to deploy everything before she strikes!
+
+Hard-hitting units, such as [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] and [[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]], can outrange Doremi and constantly interrupt her attacks, making them valuable in the fights against her.
+
+==Strategy==
+:''See [[Baby Fake (Merciless)]], [[Babies First (Merciless)]] and [[Professional Babbler (Merciless)]] for each stage's strategy.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 514
+|Type = [[:Category:Traitless Enemies|Traitless]]
+|Image1 = Enemy icon 514.png
+|Name1 = Doremi
+|Desc1 = A veteran baby with over 7 years of experience<br>in infancy. Perfected the fake cry, with enough<br>power to knock strangers unconcious. Rejected<br>by 2 elite kindergartens because of this "talent".
+|Name1 (JP) = ドレミちゃん (Doremi-chan)
+|Desc1 (JP) = プロ赤ちゃん歴７年のキャリアを持つバク。<br>リアルなウソ泣きで相手を思い通りに動かす。<br>気にいらない大人を超ウルトラ寝息で退け<br>母からの幼稚園入園の要請も２度退けた。
+|Transl1 (JP) = A tapir with a 7-year career as a professional baby.<br>Manipulates others as she desires with convincing lies and tears.<br>Eliminates adults who do not like her with super ultra sleep breath.<br>Her mother's request for her to enroll in kindergarten was rejected twice.
+|Name1 (TW) = 愛假哭的貘
+|Desc1 (TW) = 有著"專業小孩"7年資歷的貘。<br>用逼真的假哭來隨意擺佈對方。<br>遇到不喜歡的大人就使出雷級睡覺呼聲擊退對方<br>目前為止就拒絕了媽媽兩次上幼稚園的要求。
+|Name1 (KR) = 도레미양
+|Desc1 (KR) = 프로 아기 경력 7년의 맥. 리얼한 거짓 울음으로<br>상대를 자신이 생각한 대로 움직인다.<br>마음에 들지 않는 어른을 울트라 잠투정으로 격파!<br>엄마의 유치원 입학 요청도 2번째 거절 중.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*First Errand: [[Baby Fake (Merciless)]]
+*[[NEO First Errand]]:
+**[[Babies First (Merciless)]]
+**[[Professional Babbler (Merciless)]]
+*[[The Mask and the Baby]]: [[Baby Fake (Merciless) (Mask and Baby)|Baby Fake (Merciless)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Doremi
+|Health = 1800000
+|Attack Power = 28000
+|Attack Range = 180
+|Attack Type = Area
+|Time Between Attacks = 80
+|Movement Speed = 14
+|Knockback = 20
+|Foreswing = 40
+|Backswing = 40
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 50~1,850)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 180f <sub>6 seconds</sub><br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+514 e.png|Doremi's spritesheet
+Medal 078.png|Doremi on the ''Helping Out'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Like [[Bakoo]], she is based on the ''[[wikipedia:Baku (mythology)|Baku]]'', a Japanese mythical creature that devours dreams.
+**The Japanese term ''baku'' can also refer to a [[wikipedia:Malayan tapir|Malayan tapir]], which Bakoo closely resembles. Doremi, being entirely white, looks like an [https://www.nationalgeographic.com/adventure/article/150321-tapirs-albinos-brazil-animals-science-rare albino lowland tapir].
+*Her gender is confirmed by her Korean name, Doremi Yang (도레미양), which can be taken as "Miss Doremi". When attached to a name, 양 ''yang'' is used for a girl or young woman, especially of lower age than the speaker; the masculine equivalent is 군 ''gun''.
+*Doremi's name may be derived from:
+**The "do-re-mi" syllables of the sol-fa scale.
+**"[https://youtu.be/dpVhzTivUZo Do Re Mi Fa Daijōbu]", a song by [[wikipedia:B.B. Queens|B.B.Queens]] used as the opening theme for [[wikipedia:Old Enough!|''Old Enough!'']]. In Japanese, both [[Baby Fake (Merciless)|First Errand]] and ''Old Enough!'' are named ''Hajimete no Otsukai'' ("My First Errand"), except First Errand is はじめてのお使い while ''Old Enough!'' is はじめてのおつかい.
+**[https://en.touhouwiki.net/wiki/Doremy_Sweet Doremy Sweet] from the bullet hell game [[wikipedia:Touhou Project|''Touhou Project'']], who is also a ''Baku''.
+**''[[wikipedia:Ojamajo Doremi|Ojamajo Doremi]]'', a magical girl anime aimed at young girls.
+*Based on her Japanese description and Slow ability, Doremi may have been inspired by the ''[[wikipedia:Anpanman|Anpanman]]'' character [[wikia:anpanman:Kokin-chan|Kokin-chan]], a childish young girl who was introduced as an antagonist and mastered crocodile tears, crying to get her way and force others to cry, which usually immobilizes them similarly to how Doremi nearly immobilizes cats.
+*Her attack animation may take inspiration from the [https://www.pikminwiki.com/Fiery_Blowhog Fiery Blowhog] from the ''[[wikipedia:Pikmin|Pikmin]]'' series.
+*Among the Tier 2 [[:Category:Advent Bosses|Advent Bosses]], Doremi may represent the virtue of humility, as she remains a humble baby rather than trying to be or appear as anything more.
+*She can be seen as a foil to her original variant: Bakoo is a perpetual sleepwalker whereas Doremi's cries put others to sleep.
+*Her English description misspells the word "unconscious" as "unconcious".
+*She is tied with Bakoo for the shortest standing range and longest reach of any Advent Boss.
+
+==Reference==
+*https://battlecats-db.com/enemy/516.html
+
+----
+{{EnemyNav|St. Dober|Mega-Mooth}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Slow Immunity]]

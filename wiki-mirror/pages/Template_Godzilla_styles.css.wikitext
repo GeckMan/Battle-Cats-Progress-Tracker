@@ -1,0 +1,9 @@
+.ranger-navbox.godzilla {
+	--bg-navbox-title: linear-gradient(to right, #c74e43 0%, #d06b62 100%);
+	--bg-sub-table-title: #443332;
+	--bg-group-name: #b8392e;
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

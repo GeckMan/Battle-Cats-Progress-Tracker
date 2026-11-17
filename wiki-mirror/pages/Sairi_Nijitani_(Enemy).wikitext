@@ -1,0 +1,64 @@
+:''This article is about the enemy. For the Cat Unit, see [[Sairi Nijitani (Rare Cat)]].''
+'''Sairi Nijitani''' (虹谷彩理) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Power Pro Baseball Collaboration Event]]. She was added in [[Version 6.8 Update|Version 6.8]].
+
+{{Enemy Info
+|name = Sairi Nijitani
+|image = E 383.png
+|appearance = [[Power Pro Baseball Collaboration Event]]
+|money drop = 1,800¢ - 7,110¢
+}}
+
+==Enemy==
+This enemy has somewhat high health and damage, but low DPS and mediocre range being her main weaknesses. However, she also has an [[Omni Strike]] that increases her range to a number being able to hit most mid-range attackers, as well as a 100% chance to [[Weaken]] units to 50% of their original attack power.
+
+==Strategy==
+Like mentioned before, this enemy's main weakeness is its low range even with its Omni Strike which means any unit with above 350 range like [[Lizard Cat (Normal Cat)|Dragon Cat]] will be able to safely chip away at it. Another option is to use Rushers like [[Bahamut Cat (Special Cat)|Awakened Bahamut]] to quickly dispose of it since its attack power and attack rate are very mediocre.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Power Pro Baseball Collaboration Event#Date Chance: Sairi|Date Chance: Sairi]]:
+**[[No.1 Angel (Easy)]] (4%)
+**[[No.1 Angel (Expert)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sairi Nijitani
+|Health = 360000
+|Attack Power = 8000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 110
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 17
+|Backswing = 38
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~350)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 150f <sub>5 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+383 e.png|Sairi Nijitani's spritesheet
+IdleSairiNijitani.gif|Sairi Nijitani's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/385.html
+
+----
+{{EnemyNav|Misaki Konno|Ren Katagiri}}
+----
+
+{{Power Pro Baseball}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]

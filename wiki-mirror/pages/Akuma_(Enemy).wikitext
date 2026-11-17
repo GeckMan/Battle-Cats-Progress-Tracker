@@ -1,0 +1,72 @@
+:''For other uses, see [[Akuma (disambiguation)|Akuma]].''
+'''Akuma''' (豪鬼, ''Gōki'') is a [[:Category:Dark Enemies|Dark]] enemy that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]].
+
+{{Enemy Info
+|name = Akuma
+|image = E 488.png
+|appearance = [[Street Fighter Collaboration Event]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+This enemy has high health and a long-range [[Multi-Hit]] attack, along with the [[Omni Strike]] ability. He is essentially a Dark counterpart to [[Dancer Cat (Enemy)|Dancer Cat]], with double the damage of said enemy and more range.
+
+==Strategy==
+Fast attackers that can sneak in hits are the best way to counter him, which includes [[Express Cat (Super Rare Cat)|Maglev Cat]], [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Talents|Talented]] [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]], and the likes. Most traditional backliners are likely to get sniped by his Omni Strike, so don't bother with them. Notably, [[Flower Cat (Special Cat)|Bombercat]] with Speed Up and Freeze [[Cat Combo]]s is one of the only crowd-controllers capable of holding him still. Take advantage of that!
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#New Challenger 2|<span style="color:#B99D5C;">New Challenger</span>]]:
+**[[Master of the Fist (Veteran)]] (7%)
+**[[Sekia Goshoha (Deadly)]] (100%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Street Fighter Collaboration Event#New Challenger 2|<span style="color:#B99D5C;">New Challenger</span>]]:
+**[[Master of the Fist (Veteran)]] (7%)
+**[[Sekia Goshoha (Deadly)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Akuma
+|Health = 1200000
+|Attack Power = 54000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 59
+|Movement Speed = 18
+|Knockback = 6
+|Foreswing = 23
+|Backswing = 28
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">18,000</span> at 23f <sup>0.77s</sup>, <span class="scaled" data-type="ap">18,000</span> at 27f <sup>0.9s</sup>, <span class="scaled" data-type="ap">18,000</span> at 31f <sup>1.03s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~550)
+|Element = Dark
+}}
+
+{{UnitViewer|enemy|bg=Bg121.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+488 e.png|Akuma's spritesheet
+IdleAkuma.gif|Akuma's moving animation
+</gallery>
+
+==Trivia==
+*Akuma (悪魔, "Devil") is also the [[:Category:Aku Enemies|Aku]] trait's Japanese name. However, Akuma himself is named Gōki (豪鬼) in Japanese, so he wasn't updated to have the Aku trait like [[Dark Emperor Santa]].
+
+==Reference==
+*https://battlecats-db.com/enemy/490.html
+
+----
+{{EnemyNav|Car|7th Anniversary Birthday Cake}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Dark Enemies]]
+[[Category:Enemy Units]]

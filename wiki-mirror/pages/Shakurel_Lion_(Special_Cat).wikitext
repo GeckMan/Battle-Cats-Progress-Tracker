@@ -1,0 +1,119 @@
+{{ENExclusive}}
+:''This article is about the Cat Unit. For the enemy unit, see [[Shakurel Lion (Enemy)]].''
+'''Shakurel Lion''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.8 Update|Version 8.8]] and can be unlocked by purchasing a special sale which contains Shakurel Lion and 300 [[Cat Food]] during the [[Shakurel Planet Collaboration Event]].
+
+{{Cat Info
+|ID = 498
+|rarity = EX
+|name1 = Shakurel Lion
+|name2 = Shakurel Lion CC
+}}
+
+==Evolution==
+Evolves into '''Shakurel Lion CC''' at level 10.
+
+==Strategy/Usage==
+Although Shakurel Lion has good health, his Crit is unreliable and getting a Wave and a Crit is extremely low. In early game, he can be used as Critter if there is nothing else, but is outclassed by Jurrasic Cat and Space Cat. So this cat's only use is for your user rank and collection.
+
+{{Job|Classification = Critter & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 498
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni498 f00.png
+|Image2 = Uni498 c00.png
+|Name1 = Shakurel Lion
+|Desc1 = Joining the fight from Shakurel Planet!<br>Do you feel like that super chin makes<br>the King of the Beasts a bit less regal?
+|Name2 = Shakurel Lion CC
+|Desc2 = Joining the fight from Shakurel Planet!<br>The symbol of power is no longer the mane,<br>but the JAW! ...said the press release.
+|Name1 (TW) = 戽斗獅子
+|Desc1 (TW) = 從戽斗星球來參戰！<br>原先是百獸之王，<br>但加了下巴後很介意有失風格
+|Name2 (TW) = 戽斗獅子CC
+|Desc2 (TW) = 從戽斗星球來參戰！<br>「有下巴就是大爺！」<br>這句話是最近的口頭禪
+|Name1 (KR) = 주걱턱 라이온
+|Desc1 (KR) = 주걱턱 행성에서 참전!<br>주걱턱이 되어 백수의 왕의 풍격을 잃어버린 게 아닌가<br>신경 쓰고 있다
+|Name2 (KR) = 주걱턱 라이온CC
+|Desc2 (KR) = 주걱턱 행성에서 참전!<br>강함의 상징은 목덜미의 털이 아니라<br>턱이라고 말하는 게 입버릇
+}}
+
+==Cost==
+*Chapter 1: 800¢
+*Chapter 2: 1,200¢
+*Chapter 3: 1,600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shakurel Lion
+|Normal Base HP = 1700
+|Normal Base AP = 150
+|Normal Range = 160
+|Normal Foreswing = 19
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 28
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 800
+|Normal Recharge = 1200
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 10% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]
+|Evolved Name = Shakurel Lion CC
+|Evolved Base HP = 2300
+|Evolved Base AP = 200
+|Evolved Range = 160
+|Evolved Foreswing = 19
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 28
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 800
+|Evolved Recharge = 1200
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 10% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Wave Attack}} 20% chance to create a level 1 [[Wave Attack]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,700 HP
+|val-Normal-Attack Power = 150 damage<br>(160.71 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 28f <sub>0.93 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 19f <sup>0.63s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 28,900 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(2,732.14 DPS)
+|val-Evolved-Health = 39,100 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(3,642.86 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 28f <sub>0.93 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 19f <sup>0.63s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni498 f00}}
+
+----
+{{CatNav|Shakurel Cat|Shakurel Tiger}}
+----
+
+{{Shakurel Planet}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Wave Attack Cats]]

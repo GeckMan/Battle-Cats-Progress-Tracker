@@ -1,0 +1,58 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Snache|Doge Dark|Perry Duche|Jackie Peng}}
+'''The Commodore Demands a Decision (Normal)''' is the first stage in [[Anniversary/12 1/2 Year#Please Open the Country|Please Open the Country]].
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn401 00 s ja.png]]
+|stage location = [[File:Mapname401 s ja.png]]
+|energy = 50
+|enemy castle hp = 44,000 HP
+|enemies = {{Magnification|Snache|150%
+|Doge Dark|100%
+|Jackie Peng|150%}}
+|boss = {{Magnification|Perry Duche|100%}}
+|enemies2 = {{Magnification|Snache|300%
+|Doge Dark|200%
+|Jackie Peng|300%}}
+|boss2 = {{Magnification|Perry Duche|200%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +250 (100%, unlimited)
+|score reward = '''6,900''': 130,000 XP<br>
+'''5,800''': [[Road to Unification#Mechanics|War Funds]] +2,000<br>
+'''4,700''': 70,000 XP<br>
+'''2,600''': [[Road to Unification#Mechanics|War Funds]] +1,000<br>
+'''500''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 950 XP
+|width = 4,800
+|max enemies = 10
+|jpname = ?
+|script = 決断を迫る提督 中級
+|romaji = ?
+|star = 2
+|event-chapter = [[Anniversary/12 1/2 Year#Please Open the Country|Please Open the Country]]
+|difficulty = ★3
+|prev stage = N/A
+|next stage = [[The Commodore Demands a Decision (Expert)]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*3 [[Snache]]s spawn after 5.33 seconds<sup>160f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Doge Dark]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Perry Duche]] spawns as the boss.
+**4 [[Snache]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Jackie Peng]]s spawn after 20 seconds<sup>600f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**2 [[Doge Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01401-01.html
+
+{{Anniversary}}
+[[Category:Event Stages]]

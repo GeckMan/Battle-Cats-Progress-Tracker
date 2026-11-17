@@ -1,0 +1,47 @@
+{{EnemiesAppearing|Those Guys|Gory|Kang Roo|Ken}}
+'''VS KEN (Easy)''' is one of the [[Street Fighter Collaboration Event#New Challenger|New Challenger]] stages.
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Mapsn122 00 c en.png]]
+|stage location = [[File:Mapname122 c en.png]]
+|energy = 100
+|enemy castle hp = 25,000 HP
+|enemies = {{Magnification|Those Guys|100%
+|Gory|100%
+|Kang Roo|100%}}
+|boss = {{Magnification|Ken|3%}}
+|treasure = - 100,000 XP (100%, 1 time)
+|XP = 12,000 XP
+|width = 4,500
+|max enemies = 15
+|jpname = VS Ken Beginner
+|script = VSケン 初級
+|romaji = VS Ken Shokyū
+|star = 1
+|event = [[Street Fighter Collaboration Event]]
+|event-chapter = [[Street Fighter Collaboration Event/New Challenger|New Challenger]]
+|difficulty = ★2
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*15 [[Those Guys]] spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*12 [[Those Guys]] spawn after 30 seconds<sup>900f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*9 [[Those Guys]] spawn after 50 seconds<sup>1,500f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*1 [[Gory]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ken (Enemy)|Ken]] spawns as the boss.
+**3 [[Kang Roo]]s spawn, delay 20 seconds<sup>600f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02242-01.html
+
+{{Street Fighter}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

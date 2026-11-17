@@ -1,0 +1,117 @@
+{{JPExclusive}}
+'''Evangelion Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Shin Japan Heroes Universe Collaboration Event#Rescue! Evangelion Cat|Rescue! Evangelion Cat]]. It was added in [[Version 12.2 Update|Version 12.2]].
+
+{{Cat Info
+|ID = 703
+|rarity = RR
+|name1 = Evangelion Cat
+|name2 = Shin Evangelion Cat
+}}
+
+==Evolution==
+Evolves into '''Shin Evangelion Cat''' at level 10.
+
+==Strategy/Usage==
+Its laughable stats make it unworthy of using in battle. Even as an early game generalist, it doesn't work well at all – it has low damage and health, so it struggles to fend off even the most basic of enemies that aren't [[Doge]] or [[Those Guys]]. Its incredibly infrequent attacks and single target completely prevent it from clearing peons properly. It also has a rather long cooldown and high cost for its low stats. Even against [[:Category:Angel Enemies|Angels]], its stats don't do it any favours. Angels tend to be aggressive, high damage pushers, so this unit can be shredded by even a couple of [[Gabriel]]s, not to mention it has less than a third of [[Rocker Cat (Rare Cat)|Ramen Cat]]'s base HP, with a longer cooldown and higher cost.
+
+Essentially, this unit's only real use is to boost your user rank. Even Rocker Cat, Ramen's first form, has higher stats.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 703
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni703 f00.png
+|Image2 = Uni703 c00.png
+|Name1 (JP) = エヴァンゲリオンにゃんこ (Evangerion Nyanko, Evangelion Cat)
+|Desc1 (JP) = 憧れのヒーロー「エヴァ初号機」になりきるネコ<br>体にフィットする着ぐるみとのシンクロ率は<br>120％超え。天使に打たれ強く、超ダメージを与える
+|Transl1 (JP) = A Cat who became its admired hero "Eva Unit-01"<br>Synchronization rate with the costume fitting to its body is<br>over 120%. Tough against Angels, deals Super damage
+|Name2 (JP) = シン・エヴァンゲリオンにゃんこ (Shin・Evangerion Nyanko, True・Evangelion Cat)
+|Desc2 (JP) = 憧れのヒーロー「エヴァ初号機」になりきるネコ<br>エネルギーが切れはじめると食料を求めて暴走する<br>天使に打たれ強く、超ダメージを与える
+|Transl2 (JP) = A Cat who became its admired hero "Eva Unit-01"<br>Goes berserk for food when its energy depletes<br>Tough against Angels, deals Super damage
+}}
+
+==Cost==
+*Chapter 1: 460円
+*Chapter 2: 690円
+*Chapter 3: 920円
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Evangelion Cat
+|Normal Base HP = 315
+|Normal Base AP = 525
+|Normal Range = 270
+|Normal Foreswing = 37
+|Normal Attack Cooldown = 125
+|Normal Attack Length = 89
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 460
+|Normal Recharge = 530
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Shin Evangelion Cat
+|Evolved Base HP = 315
+|Evolved Base AP = 525
+|Evolved Range = 270
+|Evolved Foreswing = 37
+|Evolved Attack Cooldown = 125
+|Evolved Attack Length = 89
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 460
+|Evolved Recharge = 530
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 315 HP
+|val-Normal-Attack Power = 525 damage<br>(97.22 DPS)
+|val-Normal-Attack Range = 270
+|val-Normal-Attack Frequency = 162f <sub>5.4 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 37f <sup>1.23s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Normal-Recharge Time = 17.67 ~ 8.87 seconds
+|val-Normal-MaxHP = 5,355 HP
+|val-Normal-MaxAttack = 8,925 damage<br>(1,652.78 DPS)
+|val-Evolved-Health = 5,355 HP
+|val-Evolved-Attack Power = 8,925 damage<br>(1,652.78 DPS)
+|val-Evolved-Attack Range = 270
+|val-Evolved-Attack Frequency = 162f <sub>5.4 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 37f <sup>1.23s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Evolved-Recharge Time = 17.67 ~ 8.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni703 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/704.html
+
+----
+{{CatNav|Cat Godzilla|Ultraman Cat}}
+----
+
+{{Shin Japan Heroes Universe}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

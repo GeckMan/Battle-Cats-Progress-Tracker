@@ -1,0 +1,11 @@
+<includeonly><onlyinclude>{{#invoke:LuaWrapper|callParserFunction|#tag:span}}[[Category:Pages using tooltips]]</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|style = display: block;
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-level = 30+10
+|data-talents = Speed Up talent required
+}}
+Used for a simple tooltip using [[MediaWiki:Gadget-Tooltips]]. Automatically adds in the tracking category that enables tooltips to work.

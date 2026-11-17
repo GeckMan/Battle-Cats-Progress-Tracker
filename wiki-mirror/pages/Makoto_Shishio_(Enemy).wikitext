@@ -1,0 +1,76 @@
+{{JPExclusive}}
+{{Stub}}
+:''This article is about the enemy. For the Cat Unit, see [[Makoto Shishio (Uber Rare Cat)]].''
+'''Makoto Shishio''' (志々雄真実, ''Shishiō Makoto'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Enemy Info
+|name = Makoto Shishio
+|image = E 790.png
+|first appearance = [[Rurouni Kenshin Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Rurouni Kenshin Collaboration Event#幕末の亡霊・志々雄真実|幕末の亡霊・志々雄真実]]:
+**[[人斬り抜刀斎の後継者]] (100%)
+**[[燃える殺人奇剣・無限刃]] (130%)
+**[[信じれば裏切られる]] (155%)
+**[[俺は熱くてしょうがねえ]] (230%)
+**[[所詮この世は弱肉強食]] (365%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/The Swords of Meiji|The Swords of Meiji]] (100%, 155%, 180%, 220%, 250%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Makoto Shishio
+|Health = 528000
+|Attack Power = 4730
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 120
+|Movement Speed = 10
+|Knockback = 1
+|Foreswing = 41
+|Backswing = 42
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~500)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 20% health<br>
+{{AbilityIcon|Explosion}} 100% chance to create an [[Explosion]] at 350 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Explosions}} [[Immune to Waves]] and [[Immune to Explosions|Explosions]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+790 e.png|Makoto Shishio's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/792.html
+
+----
+{{EnemyNav|Sojiro Seta|Seijuro Hiko}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Explosion Enemies]]
+[[Category:Enemies with Explosion Immunity]]

@@ -1,0 +1,31 @@
+{{#invoke:Navbox|main
+|template = Template:Dragon Poker
+|title = [[Dragon Poker Collaboration Event]]
+|navbox_class = dragon-poker
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Monkey King (Uber Rare Cat)|Monkey King]]
+*[[Red Marron (Special Cat)|Red Marron]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Monkey King (Enemy)|Monkey King]]
+*[[SSS Monkey King (Enemy)|SSS Monkey King]]
+
+|header3 = Stages
+|group3 = Dragon Poker
+|list3 =
+*[[Beginning of the Docking]]
+*[[Real-time Battle]]
+*[[Shout Festival]]
+*[[Ban Coliseum]]
+*[[Rookie League]]
+*[[5vs5]]
+*[[Super-combined]]
+*[[Breaker Crash]]
+}}<templatestyles src="Dragon Poker/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Dragon Poker]]}}<noinclude>[[Category:Navboxes]]</noinclude>

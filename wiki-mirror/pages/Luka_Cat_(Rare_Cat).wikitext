@@ -1,0 +1,124 @@
+'''Luka Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 9.8 Update|Version 9.8]].
+
+{{Cat Info
+|ID = 562
+|rarity = RR
+|name1 = Luka Cat
+|name2 = Luka Cat CC
+}}
+
+==Evolution==
+Evolves into '''Luka Cat CC''' at level 10.
+
+==Strategy/Usage==
+This Cat is very similar to another from the same collaboration, [[Miku Cat (Rare Cat)|Miku Cat]], but dodges attacks from Aliens instead of [[:Category:Floating Enemies|Floating]] enemies. However, Luka Cat shouldn't be used outside of early [[Into the Future]] or early Alien [[Legend Stages]] such as [[Winning Back]] or [[Sunset Soldier]], as she has rather low survivability even with her chance to dodge.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 562
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni562 f00.png
+|Image2 = Uni562 c00.png
+|Name1 = Luka Cat
+|Desc1 = Die-hard fan of a cool & mysterious singer.<br>Avoids dancing to preserve her mysterious allure.<br>Chance to Dodge Alien attacks.
+|Name2 = Luka Cat CC
+|Desc2 = To better be like that cool & mysterious singer,<br>dances with a tuna and talks like a salty sea dog.<br>Chance to Dodge Alien attacks
+|Name1 (JP) = ネコルカ (Neko Ruka, Cat Luka)
+|Desc1 (JP) = ミステリアスなバーチャル・シンガーに憧れるネコ<br>踊ってみたが、謎めいた雰囲気が壊れるのでお蔵入り<br>たまにエイリアンからの攻撃を無効化する
+|Transl1 (JP) = Cat who admires a mysterious virtual singer.<br>Tried to dance, but entered a warehouse because the mysterious atmosphere was gone.<br>Occasionally nullifies attacks from Aliens.
+|Name2 (JP) = ネコルカCC (Neko Ruka CC, Cat Luka CC)
+|Desc2 (JP) = ミステリアスなバーチャル・シンガーに近づくため<br>マグロを捕ったネコ。１年間の漁船生活で方言も習得した<br>たまにエイリアンからの攻撃を無効化する
+|Transl2 (JP) = Cat who caught a tuna to get closer to the mysterious virtual singer.<br>She also learned a new dialect after 1 year of life on a fishing boat.<br>Occasionally nullifies attacks from Aliens.
+|Name1 (TW) = 貓咪流歌
+|Desc1 (TW) = 很憧憬有著神秘氣質虛擬歌手的貓咪<br>試著自己跳舞看看結果超詭異從此停止<br>有時候可使異星戰士的攻擊無效化
+|Name2 (TW) = 貓咪流歌CC
+|Desc2 (TW) = 為了接近憧憬的神秘氣質虛擬歌手而出海<br>捕鮪魚的貓咪。一年的漁船生活中還學會了方言<br>有時候可使異星戰士的攻擊無效化
+|Name1 (KR) = 고양이 루카
+|Desc1 (KR) = 미스터리한 버추얼 싱어를 동경하는 고양이<br>도무지 신비한 분위기가 나지 않아 춤은 포기했다<br>가끔 에이리언의 공격을 무효화 시킨다
+|Name2 (KR) = 고양이 루카CC
+|Desc2 (KR) = 미스터리한 버추얼 싱어에 한 걸음 더 가까워지기 위해<br>참치를 잡은 고양이. 1년간의 어선 생활로 사투리도 완벽 습득<br>가끔 에이리언의 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 330¢
+*Chapter 2: 495¢
+*Chapter 3: 660¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Luka Cat
+|Normal Base HP = 840
+|Normal Base AP = 260
+|Normal Range = 200
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 105
+|Normal Attack Length = 75
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 330
+|Normal Recharge = 400
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Luka Cat CC
+|Evolved Base HP = 840
+|Evolved Base AP = 260
+|Evolved Range = 200
+|Evolved Foreswing = 32
+|Evolved Attack Cooldown = 89
+|Evolved Attack Length = 91
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 330
+|Evolved Recharge = 400
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 840 HP
+|val-Normal-Attack Power = 260 damage<br>(64.46 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 121f <sub>4.03 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(59f <sup>1.97s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 14,280 HP
+|val-Normal-MaxAttack = 4,420 damage<br>(1,095.87 DPS)
+|val-Evolved-Health = 14,280 HP
+|val-Evolved-Attack Power = 4,420 damage<br>(1,095.87 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 121f <sub>4.03 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 32f <sup>1.07s</sup><br>(59f <sup>1.97s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni562 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/563.html
+
+----
+{{CatNav|MEIKO & Cat|Squirtgun Saki}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

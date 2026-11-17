@@ -1,0 +1,114 @@
+{{Documentation}}
+Important note: for big templates it's better to just put <pre>
+{{#invoke:Navbox|main
+|arg1 = ...
+...
+}}
+</pre>
+Rather than
+<pre>
+{{Navbox
+|arg1 = ...
+...
+}}
+</pre>
+
+This saves space from the "post-expand include size". This is because parser functions like <code>#invoke</code> double the PEIS for some reason.
+
+Alternatively, {{t|HiddenNavbox}} is hidden by default and is instead loaded with js.
+
+See [[wgg:RANGER navboxes]] for the actual docs. Original template is [[wgg:defaultloadout:Template:Navbox]].
+
+== Basic example ==
+The following example demonstrates the core functionality of this template: the title text, one standard link group, and one link group that contains two sub-groups. The rows are striped for easier readability.
+
+{{Navbox
+| template = Navbox/doc
+
+| title = Items
+| striped = even
+
+| group1 = Consumables
+| list1 =
+* Health Potion
+* Mana Potion
+
+| group2 = Weapons
+
+| group2.1 = Swords
+| list2.1 =
+* Wooden Sword
+* Rusted Sword
+* Steel Sword
+
+| group2.2 = Bows
+| list2.2 =
+* Shortbow
+* Crossbow
+* Longbow
+}}
+
+==Replacing the old==
+From [[Template:AcousticNavbox/doc]]:
+{{Navbox
+|title = Basic
+|state = collapsed
+|striped = on
+
+|group1 = Heading 1
+|list1 =
+*Item 1
+
+|group2 = Heading 2
+|list2 =
+*Item 2
+
+}}
+
+{{Navbox
+|title = With groups
+|state = collapsed
+|striped = on
+
+|group1 = Grouped heading 1
+|group1.1 = Sub-heading 1
+|list1.1 =
+*Item 1
+
+|group1.2 = Sub-heading 2
+|list1.2 =
+*Item 2
+
+|group2 = Heading 1
+|list2 = Item 3
+
+}}
+
+{{Navbox
+|title = With sub-titles
+|state = collapsed
+|striped = on
+|header_state = plain
+
+|header1 = Sub-title 1
+|group1 = Heading 1
+|list1 = Item 1
+
+|header2 = Pure data, no groups
+|list2 = Item 2
+}}
+
+{{Navbox
+|title = With sub-tables
+|state = collapsed
+|striped = on
+|header_state = collapsed
+
+|header1 = Sub-table 1
+|group1 = Heading 1
+|list1 = Item 1
+
+|header2 = Sub-table 2
+|group2 = Heading 2
+|list2 = Item 2
+}}

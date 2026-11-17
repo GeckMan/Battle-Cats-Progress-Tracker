@@ -1,0 +1,9 @@
+.ranger-navbox.maji-island {
+	--bg-navbox-title: linear-gradient(to right, hsl(5, 85%, 52%) 0%, hsl(5, 85%, 60%) 100%);
+	--bg-sub-table-title: hsl(238, 49%, 52%);
+	--bg-group-name: hsl(1, 88%, 54%);
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

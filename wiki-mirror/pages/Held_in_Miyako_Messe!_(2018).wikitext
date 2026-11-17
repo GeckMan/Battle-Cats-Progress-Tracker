@@ -1,0 +1,54 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Fireworks Guys (High-Yield)|Fireworks Guys (Low-Yield)|Those Guys}}
+'''Held in Miyako Messe!''' is an event stage that is only available during the 6th [[Sponsorship BitSummit Memorial!|BitSummit Indie Festival]]. After clearing this stage, the player may progress to the [[Continuation Stage]] [[One more thing... (2018)|One more thing...]].
+
+{{Stage Info
+|stage name = [[File:rc115.png]]
+[[File:Mapsn113 00 s ja.png]]
+|stage location = [[File:Mapname113 s ja.png]]
+|energy = 20
+|enemy castle hp = 2,000 HP
+|enemies = {{Magnification|Fireworks Guys (High-Yield)|100%
+|Fireworks Guys (Low-Yield)|100%
+|Those Guys|10%}}
+|boss = {{Magnification|Fireworks Guys (High-Yield)|100%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|XP = 1,000 XP
+|width = 4,200
+|max enemies = 30
+|jpname = Held in Miyako Messe!
+|script = みやこめっせで開催！
+|romaji = Miyako Messe de Kaisai!
+|star = 1
+|event-chapter = [[Sponsorship BitSummit Memorial!#2018|協賛BitSummit記念！]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[One more thing... (2018)|One more thing...]] (''Continuation Stage'')
+|occurrence = May 11th - 13th, 2018
+}}
+
+==Battleground==
+*5 [[Fireworks Guys (High-Yield)]] spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*3 [[Fireworks Guys (Low-Yield)]] spawn after 3.33 seconds<sup>100f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Those Guys]] spawns after 6.67 seconds<sup>200f</sup>.
+*2 [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*3 [[Those Guys]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 1~2 seconds<sup>30f~60f</sup>.
+*Infinite [[Fireworks Guys (High-Yield)]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Fireworks Guys (Low-Yield)]] spawn after 80 seconds<sup>2,400f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Fireworks Guys (High-Yield)]] spawns as the boss.
+**Infinite [[Fireworks Guys (High-Yield)]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**Infinite [[Those Guys]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**10 [[Those Guys]] spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**20 [[Those Guys]] spawn, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+**30 [[Those Guys]] spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01163-01.html
+
+{{SpecialStages List}}
+[[Category:BitSummit Stages]]
+[[Category:Event Stages]]

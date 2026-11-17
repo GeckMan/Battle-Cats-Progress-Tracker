@@ -1,0 +1,87 @@
+:''This article is about the enemy. For the Cat Unit, see [[Aura (Super Rare Cat)]].''
+'''Aura''' (アウラ ''Aura'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Enemy Info
+|name = Aura
+|image = E 095.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 800¢ - 3160¢
+}}
+
+==Enemy==
+She shares similarities with both [[Fuu (Enemy)|Fuu]] and [[The Face]], but without the [[:Category:Floating Enemies|Floating]] trait. She has high HP, high damage per hit, stands at a fairly good range, moves very slowly, and knocks back cats that survive her attacks. However, her backswing is quite long, so on her own she won't push at all, though her supports make up for her lack of pushing power.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]]:
+**[[A Strange Bottled Girl]] (100%)
+**[[Subjugated Cats]] (100%)
+**[[300 Yard Strike]] (100%)
+*[[Healer Awakens!]]: [[Healer Awakens (Insane)]] (300%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.1|Healer & Co. Lv.1]] (100%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.2]] (175%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.3]] (250%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.4]] (325%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.5]] (400%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.6]] (480%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.7]] (560%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.8]] (640%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.9]] (720%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.10]] (800%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Weak of Spirit|Weak of Spirit]] (50%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Aura
+|Health = 77000
+|Attack Power = 3555
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 111
+|Movement Speed = 3
+|Knockback = 2
+|Foreswing = 46
+|Backswing = 65
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|095 e ja.png|MediaWiki:Custom-AnimationViewer/095 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+095 e.png|Aura's spritesheet (EN/KR)
+095 e ja.png|Aura's spritesheet (JP)
+095 e tw.png|Aura's spritesheet (TW)
+IdleAuraJP.gif|Aura's moving animation
+</gallery>
+
+==Trivia==
+*Aura, [[Nono (Enemy)|Nono]], [[Olga (Enemy)|Olga]], [[Norn (Enemy)|Norn]], [[Yoichi (Enemy)|Yoichi]], and [[Healer (Enemy)|Healer]] were originally [[:Category:Typeless Enemies|Typeless]] instead of [[:Category:Traitless Enemies|Traitless]]. This seems to have changed in [[Version 6.5 Update|Version 6.5]], [[Version 6.6 Update|6.6]] or [[Version 6.7 Update|6.7]].
+
+==Reference==
+*https://battlecats-db.com/enemy/097.html
+
+----
+{{EnemyNav|Fuu|Rei}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

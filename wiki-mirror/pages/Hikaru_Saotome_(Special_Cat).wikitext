@@ -1,0 +1,113 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For the enemy encountered in the [[Kishidan Collaboration Event]], see [[Hikaru Saotome (Enemy)]]. For the stage, see [[Hikaru Saotome]].''
+'''Hikaru Saotome''' is a [[:Category:Special Cats|Special Cat]] implemented in [[Version 3.4 Update|Version 3.4]] and was obtainable during the [[Kishidan Collaboration Event]]. He could be unlocked by using a [[Serial Codes|serial code]] from "Kishidan's CD (幸せにしかしねーから)", which is no longer possible due to serial codes being removed.
+
+{{Cat Info
+|ID = 163
+|rarity = EX
+|name1 = Hikaru Saotome
+|name2 = Hikaru & Cat
+}}
+
+==Evolution==
+Evolves into '''Hikaru & Cat''' at level 10.
+
+==Strategy/Usage==
+Hikaru is virtually a weaker [[Kung Fu Cat (Special Cat)|Kung Fu Cat]] on all fronts. Though Hikaru has decent stats, his recharge time massively drags down his usage below most other midrangers, including the aforementioned Kung Fu as well as [[Salon Cat (Rare Cat)|Salon Cat]] and [[Actress Cat (Special Cat)|Actress Cat]]. Even [[Titan Cat (Normal Cat)|Titan Cat]]'s superior stats and useful tankiness put Hikaru's usability in [[Empire of Cats]] into question, the only place Hikaru could even hypothetically be useful.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 163
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni163 f00.png
+|Image2 = Uni163 c00.png
+|Name1 (JP) = 早乙女 光 (Saotome Hikaru)
+|Desc1 (JP) = ヤンクロックバンド氣志團から参戦！<br>ダンス＆スクリーム担当の精神年齢４歳<br>通り名は『森の堅者』
+|Transl1 (JP) = Joining the war from the yankii rock band Kishidan!<br>He is in charge of dancing and screaming and has a mental age of 4 years old<br>Catchphrase is "Sage of the Forest"
+|Name2 (JP) = 光&にゃんこ (Hikaru & Nyanko, Hikaru & Cat)
+|Desc2 (JP) = ヤンクロックバンド氣志團から参戦！<br>ダンス＆スクリーム担当の精神年齢４歳<br>意味不明の言語、ヒカル語を話す(範囲攻撃)
+|Transl2 (JP) = Joining the war from the yankii rock band Kishidan!<br>He is in charge of dancing and screaming and has a mental age of 4 years old<br>Speaks Hikarugo, an unintelligible language (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 1,200円
+*Chapter 2: 1,800円
+*Chapter 3: 2,400円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hikaru Saotome
+|Normal Base HP = 500
+|Normal Base AP = 750
+|Normal Range = 285
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 161
+|Normal Attack Length = 52
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 1200
+|Normal Recharge = 1300
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Hikaru & Cat
+|Evolved Base HP = 500
+|Evolved Base AP = 750
+|Evolved Range = 285
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 161
+|Evolved Attack Length = 52
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 1200
+|Evolved Recharge = 1300
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 750 damage<br>(138.04 DPS)
+|val-Normal-Attack Range = 285
+|val-Normal-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 43.33 ~ 34.53 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 12,750 damage<br>(2,346.63 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 12,750 damage<br>(2,346.63 DPS)
+|val-Evolved-Attack Range = 285
+|val-Evolved-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 43.33 ~ 34.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni163 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/164.html
+
+----
+{{CatNav|Sho Ayanokoji|Hitomi Saionji}}
+----
+
+{{Kishidan}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Serial Code Cats]]

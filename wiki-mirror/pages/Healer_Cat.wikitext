@@ -1,0 +1,71 @@
+:''For the Cat Unit, see [[Healer (Special Cat)]]. Not to be confused with [[Healer (Enemy)]].''
+'''Healer Cat''' (にゃんこ化癒術士) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Healer Awakens!]] He was added in [[Version 3.8 Update|Version 3.8]].
+
+{{Enemy Info
+|name = Healer Cat
+|image = E 166.png
+|appearance = [[Healer Awakens!]]
+|money drop = 1,400¢ - 5,530¢
+}}
+
+==Enemy==
+This enemy has a very large health pool, but low attack power and mediocre range with a short freeze effect. Not too bad by itself, but it is accompanied with pushers like [[Hearscht (Enemy)|Hearscht]] and it can be a rather annoying support.
+
+==Strategy==
+:''For strategy, see [[Healer Awakens!]]''
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Healer Awakens!]]:
+**[[Healer Awakens (Expert)]] (100%)
+**[[Healer Awakens (Insane)]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Healer Cat
+|Health = 1255500
+|Attack Power = 8850
+|Attack Range = 330
+|Attack Type = Area
+|Time Between Attacks = 79
+|Movement Speed = 23
+|Knockback = 5
+|Foreswing = 20
+|Backswing = 26
+|Ability = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] Cat Units for 30f <sub>1 second</sub>
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|166 e ja.png|MediaWiki:Custom-AnimationViewer/166 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+166 e.png|Healer Cat's spritesheet (EN/KR)
+166 e ja.png|Healer Cat's spritesheet (JP)
+166 e tw.png|Healer Cat's spritesheet (TW)
+IdleRedoOfHealer.gif|Healer Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/168.html
+
+----
+{{EnemyNav|Alois|Shibalien}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

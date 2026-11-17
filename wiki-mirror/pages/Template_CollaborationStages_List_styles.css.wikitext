@@ -1,0 +1,18 @@
+.navbox.collab {
+	--bg-navbox-title: linear-gradient(to bottom, #a57736 0%, #a38259 100%);
+	--bg-sub-table-title: linear-gradient(135deg, #b58958 0%, #c1ae91 100%);
+	--bg-group-name: #d6c3a9;
+	--bg-group-member: #d6c3a9;
+
+	--group-color: #000;
+}
+
+table.navbox.collab {
+	border-radius: 0;
+}
+
+table.navbox.collab > tbody > tr:first-child > th {
+	border-radius: 0;
+}
+
+/* [[Category:Template stylesheets]] */

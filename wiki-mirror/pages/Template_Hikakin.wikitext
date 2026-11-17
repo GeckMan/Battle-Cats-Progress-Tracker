@@ -1,0 +1,28 @@
+{{#invoke:Navbox|main
+|template = Template:Hikakin
+|title = [[Hikakin Collaboration Event]]
+|navbox_class = hikakin
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Hikakin (Special Cat)|Hikakin]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Hikakin (Enemy)|Hikakin]]
+*[[Mukyakin (Enemy)|Mukyakin]]
+
+|header3 = Stages
+|group3 = Hikakin Advent
+|list3 =
+*[[Bunbun Hello Cat]]
+*[[It's Hikakin]]
+
+|group4 = Hikakin Awakens!
+|list4 =
+*[[Phoenix Dance (Easy)]]
+}}<templatestyles src="Hikakin/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Hikakin]]}}<noinclude>[[Category:Navboxes]]</noinclude>

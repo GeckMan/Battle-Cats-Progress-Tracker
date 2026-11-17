@@ -1,0 +1,5 @@
+<p style="text-align:center;">[[Enemy Release Order]]:</p>
+
+<p style="text-align:center;">'''<!--
+-->{{#if:{{{1|}}}|[[{{#invoke:Units/invoke|main|type=attr|Enemies|link|{{{1}}}}}|&lt;&lt; {{#invoke:Units/invoke|main|type=attr|Enemies|name|{{{1}}}}}]]|&lt;&lt; N/A}} | <!--
+-->{{#if:{{{2|}}}|[[{{#invoke:Units/invoke|main|type=attr|Enemies|link|{{{2}}}}}|{{#invoke:Units/invoke|main|type=attr|Enemies|name|{{{2}}}}} &gt;&gt;]]|N/A &gt;&gt;}}'''</p>

@@ -1,0 +1,63 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Metal One Horn|Squire Rel|Gory Dark|Dread Bore|Zroco|Shy Boy|Imperator Sael|Heavenly Hippoe|Teacher Bun Bun}}
+'''Compass Mound (Deadly)''' is the first stage in [[Isle of the Map Lord]]. This stage will always drop an [[Enigma Stages|Enigma]] for a Cradle Stage.
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn233 00 s en.png]]
+|stage location = [[File:Mapname233 s en 2.png]]
+|energy = 200
+|enemy castle hp = 600,000 HP
+|enemies = {{Magnification|Metal One Horn|100%
+|Squire Rel|1,800%
+|Gory Dark|250%
+|Dread Bore|120%
+|Zroco|200%
+|Shy Boy|1,000%
+|Imperator Sael|1,000%
+|Heavenly Hippoe|250%}}
+|boss = {{Magnification|Teacher Bun Bun|1,000%}}
+|treasure = - Inferior [[Enigma Stages#Enigma Level|Enigma]] for random Cradle Stage (100%)
+|XP = 3,800 XP
+|width = 4,800
+|max enemies = 9
+|jpname = Compass Mound Extreme
+|script = コンパス塚 極ムズ
+|romaji = Konpasu Tsuka Goku Muzu
+|star = 1
+|event-chapter = [[Isle of the Map Lord]]
+|difficulty = ★8
+|prev stage = N/A
+|next stage = [[Atlas Archeology (Deadly)]]
+|require = Complete [[Into the Future]] Chapter 3
+|occurrence = Every Monday, Wednesday, Friday (11:00 - 13:00)<br>
+Every Tuesday and Thursday (20:00 - 22:00)<br>
+Every Saturday and Sunday (11:00 - 13:00, 20:00 - 22:00)
+}}
+
+==Battleground==
+*1 [[Metal One Horn]] spawns.
+*Infinite [[Squire Rel]]s spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Gory Dark]]s spawn after 30 seconds<sup>900f</sup>, delay 30 seconds<sup>900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Teacher Bun Bun]] spawns as the boss.
+**1 [[Dread Bore]] spawns.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Zroco]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**1 [[Shy Boy]] spawns.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Zroco]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Imperator Sael]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 20 seconds<sup>600f</sup>.
+**1 [[Metal One Horn]] spawns.
+
+==Trivia==
+*Prior to [[Version 15.4 Update|Version 15.4,]] this was the only [[Legend Stages|Legend Stage]] to use the [[Cats of the Cosmos]] meadow [[Backgrounds|background]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01233-01.html
+
+{{SpecialStages List}}
+[[Category:Guerrilla Stages]]
+[[Category:Enigma Guerrilla Stages]]
+[[Category:Event Stages]]

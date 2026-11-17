@@ -1,0 +1,78 @@
+:''This article is about the enemy. For the Cat Unit, see [[Sagat (Uber Rare Cat)]].''
+
+'''Sagat''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Enemy Info
+|name = Sagat
+|image = E 531.png
+|first appearance = [[Solitary Emperor (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+This enemy has somewhat high health, but low DPS, and extremely low range, but this is balanced out by his powerful [[Omni Strike]], [[Wave Attack]], and his [[Strengthen|strengthen]] abilities.
+
+==Strategy==
+Dealing with this enemy's waves won't be like dealing with [[Kory]]'s waves, as Sagat has a very short attack animation. The use of [[:Category:Cats with Wave Immunity|wave immune cats]] is recommended, otherwise units with good range and high health work quite well too.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[Solitary Emperor (Easy)|Solitary Emperor]] (7%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]: [[Solitary Emperor (Normal)|Solitary Emperor]] (65%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]:
+**[[Fists of Avarice (Hard)|Fists of Avarice]] (100%)
+**[[The Supreme Evil (Hard)|The Supreme Evil]] (140%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS SAGAT (Normal)]] (10%)
+**[[VS SAGAT (Insane)]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest|I Seek the Strongest]] (50%, 70%, 100%, 130%, 160%, 190%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] (50%, 70%, 100%, 130%, 160%, 190%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sagat
+|Health = 480000
+|Attack Power = 2200
+|Attack Range = 175
+|Attack Type = Area
+|Time Between Attacks = 83
+|Movement Speed = 17
+|Knockback = 4
+|Foreswing = 4
+|Backswing = 47
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~300)<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+531 e.png|Sagat's spritesheet
+IdleSagat.gif|Sagat's walking animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/533.html
+
+----
+{{EnemyNav|Vega|M. Bison}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

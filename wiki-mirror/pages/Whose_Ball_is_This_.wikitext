@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Large Iron Ball|Large White Ball|Large Red Ball}}
+'''Whose Ball is This?''' is the fifth stage in [[River City Stages#River City Ball-Rolling|River City Ball-Rolling]].
+
+{{Stage Info
+|stage name = [[File:rc151.png]]
+[[File:Mapsn260 04 s en.png]]
+|stage location = [[File:Mapname260 s en 2.png]]
+|energy = 150
+|enemy castle hp = 120,000 HP
+|enemies = {{Magnification|Large Iron Ball|150%
+|Large White Ball|6,000%
+|Large Red Ball|600%}}
+|boss = {{Magnification|Large Red Ball|1%}}
+|enemies2 = {{Magnification|Large Iron Ball|225%
+|Large White Ball|9,000%
+|Large Red Ball|900%}}
+|boss2 = {{Magnification|Large Red Ball|1%}}
+|enemies3 = {{Magnification|Large Iron Ball|300%
+|Large White Ball|12,000%
+|Large Red Ball|1,200%}}
+|boss3 = {{Magnification|Large Red Ball|2%}}
+|enemies4 = {{Magnification|Large Iron Ball|450%
+|Large White Ball|18,000%
+|Large Red Ball|1,800%}}
+|boss4 = {{Magnification|Large Red Ball|3%}}
+|treasure = One of the following (unlimited):<br>
+- 155,000 XP<br>
+- 110,000 XP
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 15
+|jpname = What Pair of Balls are These
+|script = これは何組の玉ですか
+|romaji = Kore wa Nan Kumi no Tamadesu ka
+|star = 4
+|event = [[River City Stages]]
+|event-chapter = [[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]
+|difficulty = ★5
+|prev stage = [[Red vs White]]
+|next stage = [[Covered in Dust]]
+}}
+
+==Battleground==
+*1 [[Large Iron Ball]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Large White Ball]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Large Red Ball]] (600%) spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Large Red Ball]] (1%) spawns as the boss.
+**7 [[Large White Ball]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**5 [[Large Red Ball]]s (600%) spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**3 [[Large Iron Ball]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+==Strategy==
+[[:Category:Critical Hit Cats|Critical Hit Cats]] or [[:Category:Rusher-class Cats|Rusher Cats]] such as [[Cow Cat (Normal Cat)|Cow Cat]] can be used to deal with the Metal Balls.
+
+==Reference==
+*https://battlecats-db.com/stage/s01260-05.html
+
+{{Seasonal}}
+[[Category:Event Stages]]

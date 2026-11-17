@@ -1,0 +1,79 @@
+<infobox>
+	<title source="ability"><default>''Ability Name''</default></title>
+    <image source="image"><caption source="description"/></image>
+    <data source="actualeffect"><label>Actual Effect</label></data>
+	<data source="type"><label>Ability Type</label><default>''Type''</default></data>
+	<data source="cursable"><label>Affected by Curse?</label><default>''Yes/No''</default></data>
+    <data source="version"><label>Version Added</label><default>''Version X.0''</default></data>
+    
+     <group collapse="open">
+      <header>First User(s)</header>
+	<data source="cat"><label>Cat Units</label></data>
+	<data source="enemy"><label>Enemy Units</label></data>
+   </group>
+    
+   <group collapse="closed">
+      <header>Japanese Name</header>
+      <data source="jpname"><label>JP Name:</label></data>
+      <data source="script"><label>Script:</label></data>
+      <data source="romaji"><label>Romaji:</label></data>
+   </group>
+</infobox>
+<noinclude>
+Ability Types:
+*Attack Type
+*Stat Multiplier
+*Instant Effect
+*Negative Status
+*Positive Status
+*Extra Damage
+*Hindrance
+*Defensive
+*Immunity
+*Defensive/Immunity (Wave Shield)
+*Stat Buff
+*Resistance
+*Miscellaneous
+
+==Usage & preview==
+Type in this:
+
+<pre>
+{{Ability
+|ability=
+|image=
+|description=
+|actualeffect=
+|type=
+|cursable=
+|version=
+|cat=
+|enemy=
+|jpname=
+|script=
+|romaji=
+}}
+
+</pre>
+
+to see this:
+
+{{Ability
+|ability=Curse
+|image=Unitcurseicon.png
+|description=Enemy cannot inflict negative status effects for a short time.
+|actualeffect=Nullifies trait-specific abilities
+|type=Negative Status
+|cursable=Yes
+|version=[[Version 7.0 Update|Version 7.0]]
+|cat=*[[Kasli the Bane (Uber Rare Cat)|Kasli the Bane]]
+|enemy=*[[Relic Bun-Bun]]
+*[[Relic Doge]]
+|jpname=Unknown
+|script=Unknown
+|romaji=Unknown
+}}
+
+
+[{{fullurl:{{ns:Template}}:{{PAGENAME}}}}?action=purge Click here to refresh the preview above]
+</noinclude>

@@ -1,0 +1,50 @@
+{{EnemiesAppearing|Wild Doge|Vlad de Sable|Aku Doge|Cerberus Kids|Aku Gory}}
+'''Archaeology 101: Planning''' is the first stage in [[Empress' Excavation 1]]. This stage can only be cleared once.
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn277 00 s en.png]]
+|stage location = [[File:Mapname277 s en.png]]
+|energy = 100
+|enemy castle hp = 600,000 HP
+|enemies = {{Magnification|Wild Doge|100%
+|Vlad de Sable|500%
+|Aku Doge|400%
+|Cerberus Kids|400%
+|Aku Gory|200%}}
+|treasure = - [[Catamin]] [A] +3 (100%, 1 time)
+|XP = 1,900 XP
+|width = 4,600
+|max enemies = 20
+|jpname = Ancient Survey I Plan
+|script = 遺物調査Ⅰ計画
+|romaji = Ibutsu Chōsa Ⅰ Keikaku
+|star = 1
+|event-chapter = [[Empress' Excavation 1]]
+|max clears = 1
+|difficulty = ★8
+|prev stage = N/A
+|next stage = [[Archaeology 101: Methods]]
+}}
+
+==Battleground==
+*1 [[Wild Doge]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Wild Doge]] spawns after 20 seconds<sup>600f</sup>.
+*3 [[Vlad de Sable]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Aku Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*5 [[Wild Doge]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Aku Gory|Aku Gories]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+*3 [[Wild Doge]]s spawn after 80 seconds<sup>2,400f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+Having [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] takes away the threat from the wild doges in the stage. Courier also helps in chipping down the weaker aku doges and cerberus kids in the stage, and deal with the Wild Doges and Aku Gories with midrange attackers like [[Salon Cat (Rare Cat)|Cyborg Cat]] and [[Figure Skating Cats (Super Rare Cat)|Drama Cats]].
+
+This is the first stage in the Empress' Excavation series, so the difficulty here is not very high.
+
+==Reference==
+*https://battlecats-db.com/stage/s01277-01.html
+
+{{Empress}}
+
+[[Category:Event Stages]]

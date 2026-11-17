@@ -1,0 +1,150 @@
+'''Trixi the Merc''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Best of the Best (Gacha Event)/10 Year Special|Best of the Best]] gacha event. She was added to BCTW and BCKR in [[Version 13.4 Update|Version 13.4]], [[The Battle Cats|BCEN]] in [[Version 13.6 Update|Version 13.6]] and [[Nyanko Daisensou|BCJP]] in [[Version 14.0 Update|Version 14.0]].
+
+{{Cat Info
+|ID = 758
+|rarity = UR
+|name1 = Trixi the Merc
+|name2 = Trixi the Revenant
+}}
+
+==Evolution==
+Evolves into '''Trixi the Revenant''' at level 10.
+
+==Strategy/Usage==
+With her very frequent multi-hit attacks, she has decent DPS against her target traits despite her seemingly low attack power. However, it is necessary to keep in mind that her usage may be limited in some circumstances due to her short range of 280.
+
+Trixi works in a much different way compared to many existing crowd-controllers with [[Freeze]]. She has a very short Freeze time of only a third of a second, but she attacks very frequently and therefore has many chances to Freeze. Because of this, her 50% chance to Freeze is much more consistent compared to other units with the same chance such as [[Snow Miku 2021 (Uber Rare Cat)|Snow Miku 2021]]. The result is that her Freezes act as continuous stuns to enemies with an expected uptime of 64.7%. This nature of her Freeze ability allows her to significantly delay attacks from target traits, especially if they have a slow attack frequency or even just a long foreswing. She also works well against enemies with more knockbacks, as it will be easier for her to knock them back before they have a chance to attack.
+
+Finally, her immunities help her tank and stay in the frontline, as her HP stat is made more impressive with her Strong ability working against 3 traits. Slow, Warp and Curse are all nice immunities for a tanker. However, her 4 knockbacks can still limit her with high-DPS enemies who outrange her or otherwise avoid her freeze, and her range means that she does not really benefit from frequently repositioning.
+
+{{Job|Classification = Crowd-Controller & Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 758
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni758 f00.png
+|Image2 = Uni758 c00.png
+|Name1 = Trixi the Merc
+|Desc1 = Notorious sword-for-hire wielding a Muranyasa<br>charged blade, known to be Strong vs Relics, Alien<br>and Traitless, and with Area Attacks that might Freeze.
+|Name2 = Trixi the Revenant
+|Desc2 = Betrayed by her crew and left in a coma for 10 years,<br>now hellbent on revenge. Strong vs Relics, Alien<br>and Traitless, with Area Attacks that might Freeze.
+|Name1 (JP) = 謎の傭兵トリクシー (Nazo no Yōhei Torikushī, Mysterious Mercenary Trixi)
+|Desc1 (JP) = 陽電子刀MURANYASAで敵を圧倒する謎の傭兵<br>神速の刃で属性を持たない敵とエイリアンと古代種に<br>めっぽう強く、たまに動きを一瞬止める(範囲攻撃)
+|Transl1 (JP) = A mysterious mercenary who trounces enemies with the positron sword MURANYASA<br>The lightning speed blade is Strong against Traitless enemies, Aliens and Ancient Species,<br>and occasionally Stops their movement (Area Attack)
+|Name2 (JP) = 復讐の傭兵トリクシー (Fukushū no Yōhei Torikushī, Vengeful Mercenary Trixi)
+|Desc2 (JP) = 仲間の裏切りで10年間昏睡状態に陥っていた傭兵<br>復讐に燃える刃で属性を持たない敵とエイリアンと<br>古代種にめっぽう強く、たまに動きを一瞬止める
+|Transl2 (JP) = A mercenary who was in a 10-year coma after a comrade betrayed her<br>The blade burning with vengeance makes her Strong against<br>Traitless enemies, Aliens and Ancient Species, and occasionally Stops their movement
+|Name1 (TW) = 炫幻傭兵特麗希
+|Desc1 (TW) = 用陽電子刀MURANYASA對抗敵人的炫幻傭兵<br>其神速之刃善於攻擊無屬性敵人、異星戰士和<br>古代種，有時候會使其瞬間動作停止(範圍攻擊)
+|Name2 (TW) = 復仇傭兵特麗希
+|Desc2 (TW) = 因為遭到夥伴背叛而陷入昏睡長達10年<br>拿起刀刃復仇的傭兵。善於攻擊無屬性敵人、<br>異星戰士和古代種，有時候會使其瞬間動作停止
+|Name1 (KR) = 정체불명 용병 트릭시
+|Desc1 (KR) = 양전자 블레이드 MURANYASA로 적을 압도하는 정체불명의 용병<br>그 신속한 칼날은 속성을 가지지 않은 적, 에이리언, 고대종에<br>엄청 강하고 가끔 움직임을 순간 멈춘다 (범위 공격)
+|Name2 (KR) = 복수의 용병 트릭시
+|Desc2 (KR) = 동료의 배신으로 10년간 혼수상태에 빠졌던 용병<br>그 복수의 칼날은 속성을 가지지 않은 적, 에이리언, 고대종에<br>엄청 강하고 가끔 움직임을 순간 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,900¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Trixi the Merc
+|Normal Base HP = 4800
+|Normal Base AP = 80,80,80
+|Normal Range = 280
+|Normal Foreswing = 3,6,9
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 17
+|Normal Speed = 12
+|Normal KB = 4
+|Normal Cost = 2600
+|Normal Recharge = 3000
+|Normal Attack Type = Area
+|Normal Targets = Traitless,Alien,Relic
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,360 at 3f <sup>0.1s</sup>, 1,360 at 6f <sup>0.2s</sup>, 1,360 at 9f <sup>0.3s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 10f <sub>0.33 seconds</sub><br>
+{{AbilityIcon|Immune to Slow|Immune to Warp|Immune to Curse}} [[Immune to Slow]], [[Immune to Warp|Warp]] and [[Immune to Curse|Curse]]
+|Evolved Name = Trixi the Revenant
+|Evolved Base HP = 6000
+|Evolved Base AP = 95,95,95
+|Evolved Range = 280
+|Evolved Foreswing = 3,6,9
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 17
+|Evolved Speed = 12
+|Evolved KB = 4
+|Evolved Cost = 2600
+|Evolved Recharge = 3000
+|Evolved Attack Type = Area
+|Evolved Targets = Traitless,Alien,Relic
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,615 at 3f <sup>0.1s</sup>, 1,615 at 6f <sup>0.2s</sup>, 1,615 at 9f <sup>0.3s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 10f <sub>0.33 seconds</sub><br>
+{{AbilityIcon|Immune to Slow|Immune to Warp|Immune to Curse}} [[Immune to Slow]], [[Immune to Warp|Warp]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,800 HP
+|val-Normal-Attack Power = 240 damage<br>(423.53 DPS)
+|val-Normal-Attack Range = 280
+|val-Normal-Attack Frequency = 17f <sub>0.57 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 3f <sup>0.1s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 100 ~ 91.2 seconds
+|val-Normal-MaxHP = 81,600 HP
+|val-Normal-MaxAttack = 4,080 damage<br>(7,200 DPS)
+|val-Evolved-Health = 102,000 HP
+|val-Evolved-Attack Power = 4,845 damage<br>(8,550 DPS)
+|val-Evolved-Attack Range = 280
+|val-Evolved-Attack Frequency = 17f <sub>0.57 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 3f <sup>0.1s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 100 ~ 91.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni758 f00}}
+
+==Trivia==
+*When first added to [[The Battle Cats|BCEN]]'s files, Trixi's descriptions initially said that she was "Strong vs [[:Category:Relic Enemies|Relics]], ''[[:Category:Zombie Enemies|Zombies]]'' and [[:Category:Traitless Enemies|Traitless]]". This error was fixed before she became obtainable. However the change introduced a new typo, in that "[[:Category:Alien Enemies|Alien]]" is not pluralized.
+*Her three targeted traits may represent the past (Relic), present (Traitless) and future (Alien).
+*She and [[Sharpshooter Saki (Uber Rare Cat)|Bad Blaster Saki]] share similar hairstyles, Strong Against abilities (albeit only as a [[Talents|Talent]] in Saki's case) and Alien and Relic targets. Like many of the [[Justice Strikes Back! Dark Heroes (Gacha Event)|Dark Heroes]], she also uses futuristic technology.
+*She is the first [[:Category:Gacha Cats|Gacha Cat]] that does not target all or all but one trait to [[:Category:Anti-Relic Cats|Target Relic]] enemies in her Normal and Evolved Forms.
+*She and [[Agent Staal (Uber Rare Cat)|Agent Staal]] are tied for the fastest attack rate of all Cats by technicality, as the previous record-holder [[Catornado (Super Rare Cat)|Catornado]] attacks three times in 18 frames, while they attack 3 times in 17 frames.
+*Muranyasa is a reference to 16th-century swordsmith [[wikipedia:Muramasa|Muramasa]] combined with にゃん ''nyan'' (meow) or にゃんこ ''nyanko'' (kitty).
+*Trixi the Revenant's 10-year coma is a reference to her releasing during the [[Anniversary/10th Year|10th Anniversary]] for the English, Korean and Taiwanese versions.
+**Despite the fact that she was released during the [[Anniversary/12th Year|12th Anniversary]] in the [[Nyanko Daisensou|Japanese version]], her description still says that her coma was only 10 years.
+*According to the descriptions of Trixi the Revenant and Agent Staal, Trixi was betrayed by Staal.
+
+==Reference==
+*https://battlecats-db.com/unit/759.html
+
+----
+{{CatNav|Ancient Egg: N205|Music Fest Thundia}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Curse Immunity]]

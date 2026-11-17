@@ -1,0 +1,9 @@
+<onlyinclude><span style="color:{{{1|black}}};">{{#if:{{{2|}}}|{{{2}}}|<Color template incorrectly used. Please see [[Template:Color]] for usage.>}}</span></onlyinclude>
+
+'''Syntax:''' <nowiki>{{color|Name of color or #HTMLcode|text you want colored}}</nowiki>
+
+{{color|red|TEXT}}
+
+You may also use <nowiki>{{colour|name|text}}</nowiki>. See the talk page for examples. Feel free to copy this template and use it on another wiki.
+
+[[Category:General wiki templates]]

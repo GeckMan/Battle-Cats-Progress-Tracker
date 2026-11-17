@@ -1,0 +1,74 @@
+:''For other uses, see [[Sonic (disambiguation)]].''
+'''Sonic''' (ソニック, ''Sonikku'', '''Sonic''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Sonic the Hedgehog Collaboration Event]]. He was added in [[Version 14.4 Update|Version 14.4]].
+
+{{Enemy Info
+|name = Sonic
+|image = E 730.png
+|first appearance = [[Sonic the Hedgehog Collaboration Event]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+True to form, the Blue Blur is incredibly fast with a blistering 95 speed, being [[Immune to Freeze]] and [[Immune to Slow|Slow]] as well. His range is incredibly low, with his [[Omni Strike]] only reaching to 190. Sonic does have [[Knockback]] and [[Slow]], though they're an annoyance at best  and he generally doesn't pose a threat, as even given his full backswing cooldown he can be greatly hindered by his high knockback count.
+
+==Strategy==
+Spam units that can outrange him and he'll die very easily, like [[Dancing Flasher Cat]] or [[Dragon Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Sonic the Hedgehog Collaboration Event#Green Hill Zone|Green Hill Zone]]:
+**[[Gotta Keep Movin']] (1%)
+**[[Promises Kept]] (10%)
+**[[Helping Those In Need]] (80%)
+**[[Always Sharp, Always Cool]] (150%)
+**[[The Fastest Hedgehog Alive]] (400%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Sonic Battle!|Sonic Battle!]] (2,700%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sonic
+|Health = 55000
+|Attack Power = 2500
+|Attack Range = 120
+|Attack Type = Area
+|Time Between Attacks = 181
+|Movement Speed = 95
+|Knockback = 8
+|Foreswing = 5
+|Backswing = 176
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~190)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Freeze|Immune to Slow}} [[Immune to Freeze]] and [[Immune to Slow|Slow]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg239.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+730 e.png|Sonic's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/732.html
+
+----
+{{EnemyNav|Sage of Logic Newtone|Tails}}
+----
+
+{{Sonic the Hedgehog}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]

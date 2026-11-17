@@ -1,0 +1,34 @@
+{{#invoke:Navbox|main
+|template = Template:LINE Pokopang!
+|title = [[LINE Pokopang! Collaboration Event]]
+|navbox_class = pokopang
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Pokota (Rare Cat)|Pokota]]
+*[[Ovis (Rare Cat)|Ovis]]
+*[[Coco (Rare Cat)|Coco]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Pokota (Enemy)|Pokota]]
+*[[Ovis (Enemy)|Ovis]]
+*[[Coco (Enemy)|Coco]]
+
+|header3 = Stages
+|group3 = Pokopang Forest Friends!
+|list3 =
+*[[Rabbit's Mischief]]
+*[[Sheep's Bravado]]
+*[[Bear's Bashfulness]]
+
+|group4 = Trio from the Woods
+|list4 =
+*[[Puzzle Attack!]]
+*[[Collecting Cherries]]
+*[[Rainbow Blast!]]
+}}<templatestyles src="LINE Pokopang!/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:LINE Pokopang!]]}}<noinclude>[[Category:Navboxes]]</noinclude>

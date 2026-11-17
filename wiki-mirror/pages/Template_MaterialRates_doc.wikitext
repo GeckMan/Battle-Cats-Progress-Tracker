@@ -1,0 +1,36 @@
+{{Documentation}}
+This template is used to display the material drop rates in a [[Legend Stages]] sub-chapter alongside [[Template:MaterialDrops]]. Data comes from DropItem.csv.
+
+==Usage==
+<pre>
+{{MaterialRates|none|bricks|feathers|coal|sprockets|gold|meteorite|beast bones|ammonite|brick z|feathers z|coal z|sprockets z|gold z|meteorite z|beast bones z|ammonite z|noheading=|hidenormal=}}
+</pre>
+<code>noheading=</code> is added to remove the heading that is attached to the template by default. <code>hidenormal=</code> is added to hide the rows for the normal materials.
+
+==Example Usage==
+<tabber>Normal Materials=
+<pre>
+{{MaterialRates|33|13|13|13|0|13|0|0|13|noheading=}}
+</pre>
+
+===Result===
+{{MaterialRates|33|13|13|13|0|13|0|0|13|noheading=}}
+
+|-|With Extra-Dimensional Materials=
+<pre>
+{{MaterialRates|33|0|0|0|0|0|0|0|0|10|10|10|10|10|10|10|0|noheading=}}
+</pre>
+
+===Result===
+{{MaterialRates|33|0|0|0|0|0|0|0|0|10|10|10|10|10|10|10|0|noheading=}}
+
+|-|Without Normal Materials=
+<pre>
+{{MaterialRates|33|0|0|0|0|0|0|0|0|10|10|10|10|10|10|10|0|noheading=|hidenormal=}}
+</pre>
+
+===Result===
+{{MaterialRates|33|0|0|0|0|0|0|0|0|10|10|10|10|10|10|10|0|noheading=|hidenormal=}}
+</tabber>
+
+[[Category:Content templates]]

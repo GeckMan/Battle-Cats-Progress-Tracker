@@ -1,0 +1,10 @@
+.ranger-navbox.madoka {
+	--bg-navbox-title: hsl(260, 26%, 40%);
+	--bg-sub-table-title: hsl(51, 6%, 25%);
+	--bg-group-name: var(--bg-navbox-title);
+
+	--title-color: #fff;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

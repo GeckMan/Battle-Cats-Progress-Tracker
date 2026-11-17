@@ -1,0 +1,51 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Gabriel|Heavenly Hippoe|Angelic Gory|Mysterious Calamity}}
+'''Decaying Town''' is the third stage in [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc007.png]]
+[[File:Mapsn369 02 s en.png]]
+|stage location = [[File:Mapname369 s en.png]]
+|energy = 120
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Gabriel|200%
+|Heavenly Hippoe|200%
+|Angelic Gory|200%}}
+|boss = {{Magnification|Mysterious Calamity|450%}}
+|treasure = - 1,000,000 XP (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,600 XP
+|width = 5,000
+|max enemies = 15
+|jpname = Crumbling Cities
+|script = 崩れゆく街
+|romaji = Kuzure yuku Machi
+|star = 1
+|event-chapter = [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]
+|difficulty = ★8
+|prev stage = [[Dark Clouds Rising]]
+|next stage = [[Age of Havoc]]
+}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*10 [[Gabriel]]s spawn after 4.67 seconds<sup>140f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 14.67 seconds<sup>440f</sup>.
+*1 [[Angelic Gory]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mysterious Calamity]] spawns as the boss.
+**3 [[Gabriel]]s spawn, delay 1.33~2 seconds<sup>40f~60f</sup>.
+**2 [[Heavenly Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 66.67~80 seconds<sup>2,000f~2,400f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 100 seconds<sup>3,000f</sup>.
+**5 [[Gabriel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01369-03.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:No Continue Stages]]
+[[Category:Stages with Base Barriers]]

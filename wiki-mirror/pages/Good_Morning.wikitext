@@ -1,0 +1,69 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Gudetama Plate|Gudegude à la mode|One Horn|Ginger Snache|Nisetama Army}}
+'''Good Morning''' is the third and final stage in [[Gudetama Collaboration Event#I Can Eat It Anyway|I Can Eat Anything]].
+
+{{Stage Info
+|stage name = [[File:rc083.png]]
+[[File:Mapsn050 02 c ja.png]]
+|stage location = [[File:Mapname050 c ja.png]]
+|energy = 150
+|enemy castle hp = 270,000 HP
+|enemies = {{Magnification|Gudetama Plate|400%
+|Gudegude à la mode|400%
+|One Horn|800%
+|Ginger Snache|100%
+|Nisetama Army|200%}}
+|boss = {{Magnification|Gudetama Plate|10%}}
+|enemies2 = {{Magnification|Gudetama Plate|800%
+|Gudegude à la mode|800%
+|One Horn|1,600%
+|Ginger Snache|200%
+|Nisetama Army|400%}}
+|boss2 = {{Magnification|Gudetama Plate|20%}}
+|enemies3 = {{Magnification|Gudetama Plate|1,200%
+|Gudegude à la mode|1,200%
+|One Horn|2,400%
+|Ginger Snache|300%
+|Nisetama Army|600%}}
+|boss3 = {{Magnification|Gudetama Plate|30%}}
+|score reward = '''5,500''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''3,000''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Good Morning
+|script = おはようございません
+|romaji = Ohayōgozaimasen
+|star = 3
+|event = [[Gudetama Collaboration Event]]
+|event-chapter = [[Gudetama Collaboration Event#I Can Eat It Anyway|I Can Eat It Anyway]]
+|difficulty = ★6
+|prev stage = [[Stability Orientation]]
+|next stage = N/A
+}}
+
+==Battleground==
+*5 [[Gudetama Plate (Enemy)|Gudetama Plates]] (400%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Gudegude à la mode (Enemy)|Gudegude à la mode]] spawns after 2 seconds<sup>60f</sup>.
+*1 [[One Horn]] spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gudetama Plate (Enemy)|Gudetama Plate]] (10%) spawns as the boss.
+**3 [[One Horn]]s spawn, delay 30 seconds<sup>900f</sup>.
+**8 [[Ginger Snache]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**8 [[Gudetama Plate (Enemy)|Gudetama Plates]] (400%) spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**5 [[Gudegude à la mode (Enemy)|Gudegude à la modes]] spawn, delay 23.33~33.33 seconds<sup>700f~1,000f</sup>.
+**3 [[Nisetama Army (Enemy)|Nisetama Armies]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**5 [[Nisetama Army (Enemy)|Nisetama Armies]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02050-03.html
+
+{{Gudetama}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

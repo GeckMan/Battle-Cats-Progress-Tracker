@@ -1,0 +1,53 @@
+{{Documentation}}
+==How to use==
+<code><nowiki>{{Nyanko|name|level|talents}}</nowiki></code>
+*name is the name of the form you want to show
+*level is the level of the cat
+**If level is ?, then the icon used is the placeholder deploy icon and level is converted to 0
+*talents are as follows:
+**0 - No talents unlocked/unit doesn't have talents
+**1 - One regular talent unlocked
+**2 - Two regular talents unlocked
+**3 - Three regular talents unlocked
+**4 - Four regular talents unlocked
+**5 - Five regular talents unlocked
+**6 - Full regular talents unlocked (Certain units have six talents)
+**7 - One Ultra Talent unlocked
+**8 - Two  Ultra Talents unlocked
+**9 - Three Ultra Talents unlocked
+
+==Example Usage==
+<tabber>
+Basic=
+<pre>
+{{Nyanko|Mohawk Cat|20+90|0}}
+</pre>
+gives
+{{Nyanko|Mohawk Cat|20+90|0}}
+|-|
+Advanced=
+<pre>
+{{Nyanko|Mohawk Cat|20+90|0
+|Eraser Cat|20+90|0
+|Courier Cat|50|0
+|Balaluga|?|0
+|Kasa Jizo|60|6
+|God-Emperor Megidora|60|9
+|Nuclear Blade Dragon King Berius|85|0}}
+</pre>
+gives
+{{Nyanko|Mohawk Cat|20+90|0
+|Eraser Cat|20+90|0
+|Courier Cat|50|0
+|Balaluga|?|0
+|Kasa Jizo|60|6
+|God-Emperor Megidora|60|9
+|Nuclear Blade Dragon King Berius|85|0}}
+</tabber>
+
+==Notes==
+*If you are using the wiki name given on a unit's page and it still shows a script error, see here:
+{{#invoke:Cats/showdata|show_replacements}}
+<includeonly>
+[[Category:Cosmetic templates]]
+</includeonly>

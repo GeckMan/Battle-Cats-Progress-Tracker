@@ -1,0 +1,58 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Kroxo|Inky Doge|Maawth|Mistress Celeboodle|Blinky Kory}}
+'''Invitation to a High Score''' is the eighth stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn272 07 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 150
+|enemy castle hp = 300,000 HP
+|enemies = {{Magnification|Kroxo|250%
+|Inky Doge|7,500%
+|Maawth|250%
+|Mistress Celeboodle|250%}}
+|boss = {{Magnification|Blinky Kory|300%}}
+|enemies2 = {{Magnification|Kroxo|375%
+|Inky Doge|11,250%
+|Maawth|375%
+|Mistress Celeboodle|375%}}
+|boss2 = {{Magnification|Blinky Kory|450%}}
+|score reward = '''6,900''': 130,000 XP<br>
+'''3,000''': [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+'''500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +2
+|XP = 4,500 XP
+|width = 5,000
+|max enemies = 12
+|jpname = Invitation to High Score
+|script = ハイスコアへの招待状
+|romaji = Hai Sukoa e no Shōtaijō
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★7
+|prev stage = [[Face the Threat]]
+|next stage = [[Pac-Dots or Cat Food?]]
+}}
+
+==Battleground==
+*2 [[Kroxo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Inky Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Maawth]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Kroxo]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Blinky Kory]] spawns as the boss.
+**Infinite [[Kroxo]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**Infinite [[Mistress Celeboodle]]s spawn after 10 seconds<sup>300f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**1 [[Maawth]] spawns after 33.33 seconds<sup>1,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-08.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

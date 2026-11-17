@@ -1,0 +1,137 @@
+:''For the enemy encountered in the [[Neon Genesis Evangelion Collaboration Event]], see [[The 10th Angel (Enemy)|The 10th Angel]].''
+'''The 10th Angel''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 10.2 Update|Version 10.2]].
+
+{{Cat Info
+|ID = 550
+|rarity = UR
+|name1 = The 10th Angel
+|name2 = 10th Angel Cat
+}}
+
+==Evolution==
+Evolves into '''10th Angel Cat''' at level 10.
+
+==Strategy/Usage==
+The 10th Angel's extreme piercing range sounds impressive on paper, as it not only stands far enough to avoid many melee Angels but can also hit targets much further away, catching huge clusters of them at once, and its surge does increase its potency somewhat, dealing two additional hits if they connect for widespread devastation. This advantage is further amplified when it's close to the enemy base, as Omni Strike units stand at their maximum range.
+
+However, despite its obvious strengths, The 10th Angel remains a lackluster unit with its several other weaknesses, starting with the general nature of Angels. Many of them are highly aggressive, short-ranged pushers, which can't be easily defeated by the unit's slow attack rate and low overall damage, surge included. More often than not, the surge will miss, and so does two thirds of its damage. Even the freeze duration is too short for it to matter when better options to stall melee angels exist. The few higher-ranged exceptions, such as [[Sunfish Jones|Jones]], are barely outranged by it, yet more efficient counters also exist for demolishing them. Its extreme cooldown and low health only hinder it further, as Angel pushers can very easily destroy everything in their way, with such stages often requiring a constant stream of replacements, so while it can stand far enough to avoid them, it really doesn't have other abilities to defend itself once they get too close.
+
+{{Job|Classification = Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 550
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni550 f00.png
+|Image2 = Uni550 c00.png
+|Name1 = The 10th Angel
+|Desc1 = Terrifying being appearing with unknown intent.<br>Lashes out by extending its mighty A.T. Field. Massive<br>Omnistrike Damage & Freeze vs Angelic enemies.
+|Name2 = 10th Angel Cat
+|Desc2 = A Cat Army-produced replica of the 10th Angel.<br>Unknown genomes spliced into Gross Cat DNA. Massive<br>Omnistrike Damage & Freeze vs Angelic enemies.
+|Name1 (JP) = 第１０の使徒 (Dai Ichi no Shito, The Tenth Apostle)
+|Desc1 (JP) = 人類の前に現れた未知なる異形の生命体<br>A.T.フィールドを多重展開でき、鋭利な触手で攻撃する<br>天使に超ダメージを与え、動きを止める(全方位攻撃)
+|Transl1 (JP) = An unknown alien life form that has appeared before mankind<br>capable of deploying multiple A.T. fields and attacking with sharp tentacles<br>Causing super damage to Angels and stopping them from moving (Omni-directional Attack)
+|Name2 (JP) = 第１０のネコ使徒 (Dai Ichi no Neko Shito, The Tenth Cat Apostle)
+|Desc2 (JP) = 第１０の使徒を模したネコの造りし生命体<br>キモネコのゲノム解析を元に極秘に開発された<br>天使に超ダメージを与え、動きを止める(全方位攻撃)
+|Transl2 (JP) = A life form created by a cat in the form of the 10th Apostle<br>developed in secret based on the analysis of the genome of the kimo cat<br>deals super damage to Angels and stops them from moving (Omni-directional Attack)
+|Name1 (TW) = 第10使徒
+|Desc1 (TW) = 出現在人類面前的未知異形生命體<br>可多重展開A.T Field，以鋒利的觸手攻擊<br>可以給予天使敵人超大傷害、使動作停止(全方位攻擊)
+|Name2 (TW) = 第10貓使徒
+|Desc2 (TW) = 仿造第10使徒造的貓咪生命體<br>以分析噁心貓的基因為底被極密開發出<br>可以給予天使敵人超大傷害、使動作停止(全方位攻擊)
+|Name1 (KR) = 제10사도
+|Desc1 (KR) = 인류 앞에 나타난 미지의 이형 생명체<br>A.T. 필드를 다중 전개할 수 있으며 예리한 촉수로 공격한다<br>천사에 초 데미지를 입히며 움직임을 멈춘다 (전방위 공격)
+|Name2 (KR) = 제10사도 고양이
+|Desc2 (KR) = 제10사도를 본떠 만든 고양이 생명체<br>징글 고양이의 게놈 분석을 베이스로 극비리에 개발되었다<br>천사에 초 데미지를 입히며 움직임을 멈춘다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,600¢
+*Chapter 2: 3,825¢
+*Chapter 3: 5,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = The 10th Angel
+|Normal Base HP = 2400
+|Normal Base AP = 1111
+|Normal Range = 400
+|Normal Foreswing = 53
+|Normal Attack Cooldown = 437
+|Normal Attack Length = 131
+|Normal Speed = 4
+|Normal KB = 2
+|Normal Cost = 2600
+|Normal Recharge = 6000
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -200~900)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 2 [[Surge Attack]] between 250 and 950 range
+|Evolved Name = 10th Angel Cat
+|Evolved Base HP = 2400
+|Evolved Base AP = 1111
+|Evolved Range = 400
+|Evolved Foreswing = 53
+|Evolved Attack Cooldown = 437
+|Evolved Attack Length = 131
+|Evolved Speed = 4
+|Evolved KB = 2
+|Evolved Cost = 2600
+|Evolved Recharge = 6000
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -200~900)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 2 [[Surge Attack]] between 250 and 950 range
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,400 HP
+|val-Normal-Attack Power = 1,111 damage<br>(68.02 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 490f <sub>16.33 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 53f <sup>1.77s</sup><br>(78f <sup>2.6s</sup> backswing)
+|val-Normal-Recharge Time = 200 ~ 191.2 seconds
+|val-Normal-MaxHP = 40,800 HP
+|val-Normal-MaxAttack = 18,887 damage<br>(1,156.35 DPS)
+|val-Evolved-Health = 40,800 HP
+|val-Evolved-Attack Power = 18,887 damage<br>(1,156.35 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 490f <sub>16.33 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 53f <sup>1.77s</sup><br>(78f <sup>2.6s</sup> backswing)
+|val-Evolved-Recharge Time = 200 ~ 191.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni550 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/551.html
+
+----
+{{CatNav|The 6th Angel|The 9th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Surge Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Collaboration Event Cats]]
+[[Category:Cats with unique death animations]]

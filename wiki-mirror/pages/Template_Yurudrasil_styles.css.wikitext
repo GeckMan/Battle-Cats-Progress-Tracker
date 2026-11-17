@@ -1,0 +1,7 @@
+.ranger-navbox.yurudrasil {
+	--bg-navbox-title: linear-gradient(to right, hsl(188, 90%, 24%) 0%, hsl(188, 90%, 29%) 100%);
+	--bg-sub-table-title: hsl(10, 81%, 58%);
+	--bg-group-name: hsl(175, 90%, 24%);
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,29 @@
+{{#invoke:Navbox|main
+|template = Template:Puzzle Bonanza! Nyanko Village
+|title = [[Puzzle Bonanza! Nyanko Village Collaboration Event]]
+|navbox_class = puzzle-bonanza
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = {{Color|#000000|Cat Units}}
+|list1 =
+*[[Nyanko Village Cat (Rare Cat)|Nyanko Village Cat]]
+
+|group2 = {{Color|#000000|Enemy Units}}
+|list2 =
+*[[Nyanko Village Cat (Enemy)|Nyanko Village Cat]]
+*[[Naughty Woody (Enemy Base)|Naughty Woody]]
+
+|header3 = Stages
+|group3 = {{Color|#000000|Puzzle Bonanza! Nyanko Village}}
+|list3 =
+*[[Easy to Play Match 3 Puzzle]]
+*[[Revitalizing The Village with Unique Residents]]
+*[[Let's Enjoy the Farm Life!]]
+
+|group4 = {{Color|#000000|Assault! Naughty Woody}}
+|list4 =
+*[[Assault! Naughty Woody/Naughty Lv.1~20|Naughty Lv.1~20]]
+}}<templatestyles src="Puzzle Bonanza! Nyanko Village/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Puzzle Bonanza! Nyanko Village]]}}<noinclude>[[Category:Navboxes]]</noinclude>

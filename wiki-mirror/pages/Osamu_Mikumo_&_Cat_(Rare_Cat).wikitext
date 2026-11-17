@@ -1,0 +1,126 @@
+:''This article is about the Cat Unit. For the enemy, see [[Osamu Mikumo & Doge]].''
+'''Osamu Mikumo & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by beating any stage in [[World Trigger Collaboration Event#Battle! Tamakoma Second's Leader|Battle! Tamakoma Second's Leader]] during the [[World Trigger Collaboration Event]]. He was added in [[Version 11.9 Update|Version 11.9.2]] for [[Nyanko Daisensou|JP]] and [[Version 11.9 Update|Version 11.9]] for [[The Battle Cats|EN]].
+
+{{Cat Info
+|ID = 677
+|rarity = RR
+|name1 = Osamu Mikumo & Cat
+|name2 = Osamu Mikumo & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Osamu Mikumo & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Osamu Mikumo works best around the early to midgame, providing high base health and being immune to slow and knockback. However, since Osamu is a pure generalist, he lacks a special typing niche that lets him excel in specialized stages, especially in late endgame stages where enemies will tear through him in seconds. He also isn't effective at stalling in general due to his subpar cooldown.
+
+{{Job|Classification = Tanker & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 677
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni677 f00.png
+|Image2 = Uni677 c00.png
+|Name1 = Osamu Mikumo & Cat
+|Desc1 = Joining from World Trigger! Captain of Tamakoma<br>Second in the organization Border.<br>(Area Attack)
+|Name2 = Osamu Mikumo & Cat CC
+|Desc2 = Joining from World Trigger! A Shooter who wins<br>battles with intelligence and ingenuity.<br>(Area Attack)
+|Name1 (JP) = 三雲修&ネコ (Mikumo Osamu & Neko, Osamu Mikumo & Cat)
+|Desc1 (JP) = ワールドトリガーから参戦！異世界からの侵攻に<br>対抗する組織「ボーダー」に所属する玉狛第２の隊長<br>(範囲攻撃)
+|Transl1 (JP) = Joined from World Trigger! The captain of Tamakoma Second belonging<br>to the "Border" an organisation that opposes the invasion from another world<br>(Ranged Attack)
+|Name2 (JP) = 三雲修&ネコCC (Mikumo Osamu & NekoCC, Osamu Mikumo & Cat CC)
+|Desc2 (JP) = ワールドトリガーから参戦！未熟ながらも<br>知恵と工夫で戦局を切り抜ける射手(シューター)<br>(範囲攻撃)
+|Transl2 (JP) = Joined from World Trigger! Despite his inexperience<br>a shooter who uses his wits and ingenuity to get through the war<br>(Ranged attack)
+|Name1 (TW) = 三雲修&貓咪
+|Desc1 (TW) = 從境界觸發者來參戰！隸屬於對抗<br>異次元侵略的組織「BORDER」，玉狛第2隊長<br>(範圍攻擊)
+|Name2 (TW) = 三雲修&貓咪CC
+|Desc2 (TW) = 從境界觸發者來參戰！實力仍待磨練<br>但憑著智慧和鑽研在戰場上突破困境的射手<br>(範圍攻擊)
+|Name1 (KR) = 미쿠모 오사무&고양이
+|Desc1 (KR) = 월드 트리거에서 참전! 다른 세계로부터의 침공에<br>대항하는 조직 「보더」에 소속된 타마코마 제2 부대의 대장<br>(범위 공격)
+|Name2 (KR) = 미쿠모 오사무&고양이CC
+|Desc2 (KR) = 월드 트리거에서 참전! 미숙하지만 지혜와 연구를<br>이용하는 싸움 방식으로 상황을 타파하는 슈터(사격수)<br>(범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Osamu Mikumo & Cat
+|Normal Base HP = 2500
+|Normal Base AP = 500
+|Normal Range = 150
+|Normal Foreswing = 50
+|Normal Attack Cooldown = 149
+|Normal Attack Length = 101
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 450
+|Normal Recharge = 760
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Evolved Name = Osamu Mikumo & Cat CC
+|Evolved Base HP = 2500
+|Evolved Base AP = 500
+|Evolved Range = 150
+|Evolved Foreswing = 50
+|Evolved Attack Cooldown = 149
+|Evolved Attack Length = 101
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 450
+|Evolved Recharge = 760
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,500 HP
+|val-Normal-Attack Power = 500 damage<br>(75.38 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 50f <sup>1.67s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 42,500 HP
+|val-Normal-MaxAttack = 8,500 damage<br>(1,281.41 DPS)
+|val-Evolved-Health = 42,500 HP
+|val-Evolved-Attack Power = 8,500 damage<br>(1,281.41 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 199f <sub>6.63 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 50f <sup>1.67s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni677 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/678.html
+
+----
+{{CatNav|Ancient Egg: N106|Yuma Kuga & Cat}}
+----
+
+{{World Trigger}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with unique death animations]]

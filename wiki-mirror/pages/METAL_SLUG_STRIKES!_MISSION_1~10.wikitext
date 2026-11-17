@@ -1,0 +1,172 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|MARS PEOPLE|MARCO|SV-001|HUGE HERMIT|DONALD MORDEN|SOL DAE ROKKER}}
+
+{{Stage Info
+|stage name = [[File:rc003.png]]
+[[File:Mapsn015 00 ca en.png]]
+|stage location = [[File:Mapname015 ca en.png]]
+|enemies = {{Magnification|MARS PEOPLE|0
+|MARCO|0
+|SV-001|0
+|HUGE HERMIT|0
+|DONALD MORDEN|0}}
+|boss = {{Magnification|SOL DAE ROKKER|0}}
+|width = 4,500
+|max enemies = 15
+|jpname = MISSION
+|script = MISSION
+|romaji = MISSION
+|star = 1
+|event = [[Metal Slug Collaboration Event]]
+|event-chapter = [[METAL SLUG STRIKES!]]
+}}
+
+==Battleground==
+*Infinite [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 3.33 seconds<sup>100f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*3 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 4.67 seconds<sup>140f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 6.67 seconds<sup>200f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*1 [[SV-001 (Enemy)|SV-001]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[HUGE HERMIT (Enemy)|HUGE HERMIT]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*1 [[DONALD MORDEN (Enemy)|DONALD MORDEN]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[SOL DAE ROKKER (Enemy)|SOL DAE ROKKER]] spawns as the boss after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**3 [[SV-001 (Enemy)|SV-001s]] spawn, delay 3.33 seconds<sup>100f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |MISSION
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[MARS PEOPLE (Enemy)|MARS PEOPLE]]
+! scope="col" |[[MARCO (Enemy)|MARCO]]
+! scope="col" |[[SV-001 (Enemy)|SV-001]]
+! scope="col" |[[HUGE HERMIT (Enemy)|HUGE HERMIT]]
+! scope="col" |[[DONALD MORDEN (Enemy)|DONALD MORDEN]]
+! scope="col" |[[SOL DAE ROKKER (Enemy)|SOL DAE ROKKER]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|300%
+|300%
+|200%
+|100%
+|15%
+|50%
+|70
+|Speed Up +1
+|1,330
+|-
+! scope="row" |2
+|600%
+|600%
+|511%
+|289%
+|47%
+|178%
+|80
+|Treasure Radar +1
+|1,520
+|-
+! scope="row" |3
+|900%
+|900%
+|822%
+|478%
+|79%
+|306%
+|90
+|Cat Jobs +1
+|1,710
+|-
+! scope="row" |4
+|1,200%
+|1,200%
+|1,133%
+|667%
+|111%
+|434%
+|100
+|XP +250,000
+|1,900
+|-
+! scope="row" |5
+|1,500%
+|1,500%
+|1,444%
+|856%
+|143%
+|562%
+|110
+|Cat Ticket +1
+|2,090
+|-
+! scope="row" |6
+|1,800%
+|1,800%
+|1,755%
+|1,045%
+|175%
+|690%
+|120
+|XP +500,000
+|2,280
+|-
+! scope="row" |7
+|2,100%
+|2,100%
+|2,066%
+|1,234%
+|207%
+|818%
+|130
+|Sniper the Cat +1
+|2,470
+|-
+! scope="row" |8
+|2,400%
+|2,400%
+|2,377%
+|1,423%
+|239%
+|946%
+|140
+|Cat Ticket +1
+|2,660
+|-
+! scope="row" |9
+|2,700%
+|2,700%
+|2,688%
+|1,612%
+|271%
+|1,074%
+|150
+|XP +1,000,000
+|2,850
+|-
+! scope="row" |COMPLETE!
+|3,000%
+|3,000%
+|3,000%
+|1,800%
+|300%
+|1,200%
+|160
+|Rare Ticket +1
+|3,040
+|-
+|}
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s27015.html
+
+{{SpecialStages List}}
+[[Category:Gauntlets]]
+[[Category:No Continue Stages]]

@@ -1,0 +1,70 @@
+'''Parasol Base''' is an animated [[Enemy Bases|Enemy Base]] found in [[Summer Break Cats#Unprecedented Forecasts|Unprecedented Forecasts]]. It was added in [[Version 14.5 Update|Version 14.5]].
+
+{{Enemy Info
+|name = Parasol Base
+|image = E 738.png
+|appearance = [[Summer Break Cats Castaway#Unprecedented Forecasts|Unprecedented Forecasts]]
+|money drop = N/A
+}}
+
+==Enemy==
+This animated mimics the appearance of a regular base but functions similarly to a [[Sunrise Doge]] with superior range and a slightly faster attack cycle.
+
+==Strategy==
+Parasol Base is a nuisance at best, since it deals negligible damage and its Freeze duration is still very short, though players need to be cautious when using cats with the [[Survive]] ability if said units manage to survive a lethal strike, as anything that touches them will finish them off. Just like Sunrise Doge, using cats with [[Immune to Freeze|Freeze Immunity]] helps, and in some cases fighting outside of its range may still be an option, despite its extreme reach.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Summer Break Cats Castaway#Unprecedented Forecasts|Unprecedented Forecasts]]:
+**[[Thunderstorm Warning]] (3,000,000% HP/100% AP)
+**[[Typhoon Warning]] (10,000,000% HP/100% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Parasol Base
+|Health = 10
+|Attack Power = 1
+|Attack Range = 2950
+|Attack Type = Area
+|Time Between Attacks = 380
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 60
+|Backswing = 21
+|Ability = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Surge|Immune to Explosions}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Surge|Surge]] and [[Immune to Explosions|Explosions]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+738 e.png|Parasol Base's spritesheet
+</gallery>
+
+==Trivia==
+*Parasol Base is the only animated enemy base to be immune to [[Explosion]]s and one of only two animated enemy bases to be immune to [[Surge Attack|Surges]], the other being the [[Origin Base (Enemy Base)|Origin Base]].
+
+==Reference==
+*https://battlecats-db.com/enemy/740.html
+
+----
+{{EnemyNav|South Seas Otter|Freeze Dummy}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Explosion Immunity]]

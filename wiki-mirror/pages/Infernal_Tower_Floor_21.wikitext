@@ -1,0 +1,67 @@
+{{EnemiesAppearing|Cerberus Kids|B.B.Bunny|Shy Boy|St. Pigge the 2nd|Capy|Christmas D.|Red Cyclone|Hackey}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 21|Floor 21]].''
+'''Floor 21''' is the 21st floor of [[Infernal Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 20 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 200
+|enemy castle hp = 920,000 HP
+|enemies = {{Magnification|Cerberus Kids|600%
+|B.B.Bunny|4,000%
+|Shy Boy|1,800%
+|St. Pigge the 2nd|2,000%
+|Capy|150%
+|Christmas D.|600%
+|Hackey|200%}}
+|boss = {{Magnification|Red Cyclone|200%}}
+|treasure = One of the following (1 time):<br>
+- [[Catseye]] [Special] +3<br>
+- [[Catseye]] [Rare] +3<br>
+- [[Catseye]] [Super Rare] +3<br>
+- [[Catseye]] [Uber Rare] +3<br>
+- [[Catseye]] [Legend] +3
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,000
+|max enemies = 10
+|jpname = 21st Floor
+|script = 21階
+|romaji = 21 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★10
+|prev stage = [[Infernal Tower/Floor 20|Floor 20]]
+|next stage = [[Infernal Tower/Floor 22|Floor 22]]
+}}
+
+==Battleground==
+*Infinite [[Cerberus Kids]] spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+*10 [[B.B.Bunny|B.B.Bunnies]] spawn after 3.33 seconds<sup>100f</sup>, delay 1.33~3.33 seconds<sup>40f~100f</sup>.
+*2 [[Shy Boy]]s spawn after 13.33 seconds<sup>400f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*1 [[St. Pigge the 2nd]] spawns after 10 seconds<sup>300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Red Cyclone]] spawns as the boss.
+**3 [[Capy|Capies]] spawn, delay 13.33 seconds<sup>400f</sup>.
+**6 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 1.33~2 seconds<sup>40f~60f</sup>.
+**3 [[Christmas D.|Christmas Ds]] spawn, delay 93.33~94 seconds<sup>2,800f~2,820f</sup>.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 66.67~67.33 seconds<sup>2,000f~2,020f</sup>.
+**1 [[Hackey]] spawns.
+
+==Strategy==
+This stage is pretty much the same as the original, since Cerberus Kids are merely glorified peons and Hackey isn't really a threat with its massive blindspot (1200). Bring meatshields to stall melee pushers, anti-Red specialists to cut them down, and additional CC units to keep Red Cyclone in check.
+
+Wave Units might be necessary to neutralize the Cerberus Kids.
+
+===Recommended Units===
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]] - Courier's LD attacks deals Massive Damage against Red enemies, decimating them with ease, and is powerful enough to wipe out Cerberus Kids in two hits.
+*[[Apple Cat (Super Rare Cat)|iCat]] - iCat's 100% chance to Freeze Red enemies for 2 seconds can halt the buffed Red pushers dead in their tracks (until Capy and Blitzen arrive, at which point they must be supported by other units) to reduce defensive pressure.
+*[[Bishop Cat (Rare Cat)|Sanzo]] - Sanzo's 20% chance to Slow Floating enemies for 4 seconds at midrange makes it useful against Red Cyclone to impede its advance, since it has more range than iCat to avoid enemy midrangers better, and could also be used against Shy Boys at the beginning if necessary.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-21.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]
+[[Category:No Continue Stages]]

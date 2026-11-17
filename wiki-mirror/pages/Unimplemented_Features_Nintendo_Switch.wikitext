@@ -1,0 +1,337 @@
+{{Unobtainable}}
+{{SwitchExclusive}}
+This article focuses on unimplemented features exclusive in the [[The Battle Cats Unite!|Nintendo Switch]] version of [[The Battle Cats]]. Since there are three versions of The Battle Cats Unite (Japan, Southeast Asia, and International), there may be slight differences on what may be unimplemented or available. It should be noted that The Battle Cats Unite is based off [[Version 6.10 Update|Version 6.10]] of The Battle Cats on launch. ''Updated as of October 10, 2026.''
+
+==Unused Cat Units==
+Though most units are present in-game, there are still plenty of units that cannot be obtainable between all three versions. The range of accessibility comes from full playability with slight modifications in the game or left with a few sprite sheets and data.
+
+===Catburger===
+Catburger is the only fully functional [[Cat Units|Cat Unit]] in this list, though it only has its Normal and Evolved forms. Originally implemented in [[The Battle Cats Unite!/Patch 1.0.5 Update|Patch 1.0.5]], it is possible that there would be a full international release back in 2021, but with sudden changes, left the release limited to Southeast Asia for Bandai Namco SEA to publish. Considering the poor reception of [[The Battle Cats POP!]], this may have been a factor into reconsidering the release, leaving Catburger left unused in its entirety. The current way to reinstate this unit is to modify one's save file using external third-party software.
+
+===Li'l Cats===
+There are unused spritesheets for most of the [[:Category:Li'l Cats|Li'l Cats]], suggesting they were meant to be unlockable through some different means similar to that of the [[:Category:Serial Code Cats|Serial Code Cats]] from mobile. However, there is no known working code to summon these units and only their spritesheets remain available. The only Li'l Cats to not have spritesheets are [[Li'l Bird Cat (Special Cat)|Li'l Bird Cat]], [[Li'l Fish Cat (Special Cat)|Li'l Fish Cat]], [[Li'l Lizard Cat (Special Cat)|Li'l Lizard Cat]], and [[Li'l Titan Cat (Special Cat)|Li'l Titan Cat]].
+<gallery type="slideshow" hideaddbutton="true" bordercolor="transparent" position="center">
+209 f.png
+209 c.png
+209 s.png
+210 f.png
+210 c.png
+210 s.png
+211 f.png
+211 c.png
+211 s.png
+246 f.png
+246 c.png
+246 s.png
+</gallery>
+
+===Li'l Gold Cat===
+This is currently the only Switch-Exclusive Cat to be scrapped from The Battle Cats Unite! As of now, Li'l Gold Cat only has its sprite sheet and animation files which are currently used for the mini-game Li'l Cat Catcher. Currently, there is no way to implement this unit naturally into the story mode nor legend stages. <gallery hideaddbutton="true" bordercolor="transparent">
+Mini n209 f.png
+</gallery>{{AnimationViewer|Mini_n209_f.png|MediaWiki:Custom-AnimationViewer/209_f_mini.json}}
+
+===Other Unused Units===
+Looking through the CVS files for The Battle Cats Unite! shows that there were multiple units that were cut from the game. There are unused stats for units ranging from [[Version 1.0 Update|Version 1.0]] to [[Version 6.10 Update|Version 6.10]] implying that the game must have been developed in a 9 month period. Over 200 units, including Advents, Gacha, and Collaboration cats were cut from the game but their XP tables and slots for their Cat Dictionary slots still remain.
+
+==Unused Unit Stats==
+A couple of units have had their stats seemingly changed throughout development as well as a different unit IDs. Two cats of notice seem to be Driller Cat and Piledriver Cat. Located in the game's files shows old stats that go completely unused as well as IDs that are completely different than what is currently being used in the game itself. Driller Cat initially had an ID of 400 (now 384) and Piledriver Cat initially had an ID of 401 (now 386).
+<tabber>
+Driller Cat=
+{{Cat Stats 1.2
+|Normal Name = Driller Cat
+|Normal Base HP = 300
+|Normal Base AP = 200
+|Normal Range = 140
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 168
+|Normal Attack Length = 76
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 400
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Power Driller Cat
+|Evolved Base HP = 300
+|Evolved Base AP = 200
+|Evolved Range = 140
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 168
+|Evolved Attack Length = 76
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 400
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.40
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+|-|
+Piledriver Cat=
+{{Cat Stats 1.2
+|Normal Name = Piledriver Cat
+|Normal Base HP = 300
+|Normal Base AP = 200,0,0
+|Normal Range = 140
+|Normal Foreswing = 67,92,117
+|Normal Attack Cooldown = 124
+|Normal Attack Length = 200
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 400
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = 
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Power Piledriver Cat
+|Evolved Base HP = 300
+|Evolved Base AP = 200,0,0
+|Evolved Range = 140
+|Evolved Foreswing = 67,92,117
+|Evolved Attack Cooldown = 124
+|Evolved Attack Length = 200
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 400
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities =
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.40
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+</tabber>
+==Unused True Forms==
+Every unused true form can be reinstated to the game via save file modification, hinting at one point they were considered since most of their forms are fully functional.
+
+===Purchasable Special Cats===
+Each of the [[:Category:Special Cats|Special Cats]] that cost Cat Food to unlock has an unused [[True Form]] that has full functionality and can only be used when manipulating one's save file. The following cats have an unused True Form:
+*[[Actress Cat (Special Cat)#Beefcake Cat|Beefcake Cat]]
+*[[Kung Fu Cat (Special Cat)#Dancer Cat|Dancer Cat]]
+*[[Mr. (Special Cat)#Hyper Mr.|Hyper Mr.]]
+*[[Bondage Cat (Special Cat)#Ultimate Bondage Cat|Ultimate Bondage Cat]]
+*[[Dom Cat (Special Cat)#Dark Lazer|Dark Lazer]]
+*[[Cats in a Box (Special Cat)#Heavy Assault C.A.T.|Heavy Assault C.A.T.]]
+*[[Panties Cat (Special Cat)#Lollycat|Lollycat]]
+*[[Ninja Cat (Special Cat)#Flying Ninja Cat|Flying Ninja Cat]]
+*[[Zombie Cat (Special Cat)#Skelecat|Skelecat]]
+*[[Samurai Cat (Special Cat)#Pastry Cat|Pastry Cat]]
+*[[Sumo Cat (Special Cat)#Riceball Cat|Riceball Cat]]
+*[[Boogie Cat (Special Cat)#Gato Amigo|Gato Amigo]]
+*[[Skirt Cat (Special Cat)#Loincloth Cat|Loincloth Cat]]
+Since these True Forms go completely unused, any additions for anti-[[:Category:Zombie Enemies|Zombie]] abilities that were reintroduced in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]], these purchasable Special Cats did not receive those changes. This leaves Hyper Mr., Skelecat, Pastry Cat, and Gato Amigo not receiving these buffs.
+<gallery type="slideshow" hideaddbutton="true" bordercolor="transparent" position="center">
+Uni009 s00.png
+Uni010 s00.png
+Uni012 s00.png
+Uni013 s00.png
+Uni014 s00.png
+Uni015 s00.png
+Uni017 s00.png
+Uni018 s00.png
+Uni019 s00.png
+Uni020 s00.png
+Uni021 s00.png
+Uni022 s00.png
+Uni023 s00.png
+</gallery>
+
+===Secret Unlockable Cats===
+Just like the purchasable Special Cats, both [[Tricycle Cat (Special Cat)|Tricycle Cat]] and [[Flower Cat (Special Cat)|Flower Cat]] have unused True Forms that are fully functional and cannot be used without modifying the user's save file.
+
+===Cat Bros===
+From [[The Battle Cats Unite!/Patch 1.0.0 Update|Patch 1.0.0]] to [[The Battle Cats Unite!/Patch 1.0.4 Update|Patch 1.0.4]], all of the unused True Forms (excluding Cyperbunk Cat) received a placeholder name and description, that being "@" before being shortly removed in Patch 1.0.5. Funnily enough, this leaves a very unusual oversight with Cat Bros receiving this placeholder, which interestingly enough, allows the player to put it into their formation and have the placeholder sprite summon if they used Cat Bros' "True Form". It does not cost anything to the player can can be summoned immediately, however it does not eat up any deployment cost, allowing the player to spam this unused True Form as much as their heart desires. 
+
+===Cyberpunk Cat===
+Unlike the other unused True Forms listed in this section, [[Nerd Cat (Super Rare Cat)|Nerd Cat]]'s True Form, Cyberpunk Cat, is left at a broken state. While he can be used in-game via save file editing, he costs 0¢ and has the same recharge time as [[Cat (Normal Cat)|Cat]]. When summoned, he plays through his entire animations list before remaining at his idle animation. The only way he can die naturally without wasting your deployment limit is when a boss wave occurs. 
+
+==Unused Unit Sprites==
+===Corodragon===
+[[Corodragon (Switch Special Cat)|Corodragon]]'s Normal Form has an unused Basic Cat in its spritesheet which gets reused in its Evolved Form.
+<gallery hideaddbutton="true" bordercolor="transparent">
+10393 f.png|Corodragon's sprite sheet containing a Basic Cat that goes unused.
+</gallery>
+
+===Cat Cannon Foundations===
+There are a list of [[Cat Cannon]] foundations that went up unused in the final game, but are listed in the Data.arc file<gallery type="slideshow" hideaddbutton="true" bordercolor="transparent" position="center">
+Slow Cannon.png
+Iron Cannon.png
+Thunderbolt Cannon.png
+Waterblast Cannon.png
+Slow Style.png
+Iron Style.png
+Thunderbolt Style.png
+Waterblast Style.png
+Slow Foundation.png
+Iron Foundation.png
+Thunderbolt Foundation.png
+Waterblast Foundation.png
+</gallery>
+
+===Tricycle Cat===
+Just like in the mobile version, there is an unused greyscale missile sprite for both his unused stamp sprite and Normal Form.<gallery hideaddbutton="true" bordercolor="transparent">
+000 stamp f.png|Unused Stamp Sprite
+017 f.png|Cat Unit Sprite
+</gallery>
+
+==Unused Sound Files==
+There is an array of unused sound files present when looking through the SoundData.bfsar ranging from music tracks for collaborations to sound effects for Cat Base foundations.
+*The following are music tracks that were listed in the SoundData.bsfar file
+** Gamatoto Expedition ♪
+**Catclaw Dojo Theme
+**"Taiko no Chikara" (太古の力, "Ancient Power")
+**"Kodai no Noroi" (古代の呪い, "Ancient Curse")
+**"Kyōgaku! Kodai Seibutsu" (驚愕！古代生物, "Astonishing! Ancient Lifeforms")
+**Filibuster Invasion
+**Heavenly Tower Floor 50
+**Afternoon Bug Hunt
+**Evening Bug Hunt
+**Midnight Bug Hunt
+**Shoumetsu Toshi Collab Main Menu and Battle Themes #1 - #3
+**PowerPro Baseball Collab Battle Theme/The Last Game
+** Evangelion Collab Main Menu and Battle Themes #1 - #5
+** Street Fighter V Collab Main Menu Theme and Battle Themes #1 - #9
+**Hastune Miku Cat Base theme and Battle Themes #1 - #6
+**Godzilla Collab Theme
+*The following Sound Effects were found when looking through the SoundData.bfsar file:
+** Backout/Cancel SFX from The Battle Cats POP! (snd012)
+**snd013
+**snd016 & snd017 (Cat Shrine SFX)
+**snd018
+**The Cat Cannon firing the Slow Beam
+**The Cat Cannon firing the Iron Wall
+**The Cat Cannon firing the Waterblast
+**The Cat Cannon firing the Holy Blast
+**The Cat Cannon firing the Breakerblast
+**The Cat Cannon firing the Curseblast
+**Savage Blow sound effect
+**Toxic sound effect
+**Surge Attack sound effects
+**Receiving a rank during an Arena of Honor event
+**Unlocking a Meow Medal
+**Rolling the Wildcats Slots for the first and second time
+**Scratching the Cat scratcher
+**Gamatoto gaining XP
+**Gamatoto's Log
+**Organizing Gamatoto Assistants
+**Opening the door during the Summer Cats event
+**Opening the door in the Cat Base during the Neo Mushroom Garden Collaboration Event
+**Opening the Cat Base door during the Street Fighter V Collaboration Event (snd092 - snd 096)
+**Starting a stage during the Street Fighter V Collaboration Event
+**Ending a stage during the Street Fighter V Collaboration Event
+**Sound effects for opening the door and obtaining a reward during the Hatsune Miku collaboration event
+
+==Unused Playable Chapters/Stages==
+The majority of this content is found in the main Data.arc folder which seemingly enforces the idea that the port was just transferring data from the mobile version and directly into the Switch version when creating the game. 
+
+===Unused Main Chapters===
+It may have been considered that [[Empire of Cats]] Chapters 2 and 3 and [[Into the Future]] Chapters 2 and 3 could have been in development, but since this was before [[Cats of the Cosmos]] Chapters 2 and 3 were available, they were most likely scrapped in favor of changing certain stages to other stages from these cut chapters.
+
+===Intrepid Cats===
+The 29th sub-chapter of [[Stories of Legend]], [[Intrepid Cats]], is listed in the Data.arc file, but is unplayable in-game.
+<gallery hideaddbutton="true" bordercolor="transparent">
+Mapname028 n en.png|Unused Text File for Intrepid Cats
+</gallery>
+
+===Continuation Stages===
+Hidden in the game's Data.arc files exists multiple [[Continuation Stage]]s that may have been leftover from importing the mobile version's code when developing this version.
+
+<gallery hideaddbutton="true" bordercolor="transparent">
+Doom Paradise (Insane).png
+Acts of Cat-God (Insane).png
+Mapsn007 00 ex en.png
+</gallery>
+
+===Unused Catfruit Buffet Continuation Stages===
+This could be leftover code, but there are images showing the existence of [[Catfruit Buffet]] Continuation Stages present in the game's files as they are ID'd separately from the typical daily Growing stages.
+
+===Old XP Stage===
+Just like the mobile version, there is code for the original [[XP Stage]] that was only available in older versions of
+The Battle Cats, replaced by a revamped version that goes up to harder difficulties.
+<gallery hideaddbutton="true" bordercolor="transparent">
+Mapsn005 00 s en.png
+Mapsn005 01 s en.png
+Mapsn005 02 s en.png
+</gallery>
+
+===Challenge Battle/49th Treasure===
+Challenge Battle is an event stage that lets players aim for a higher score by beating the base as fast as possible, this is present in both The Battle Cats and The Battle Cats POP!, however, it goes completely unused in the Nintendo Switch version of the game. It is technically implemented, though improperly, and is the game's "49th" treasure that one can obtain by manipulating the save file for the game. When unlocked, this Treasure does nothing and does not even show up in the Treasure list. It is shown in a text file that the 49th treasure is named "???".
+<gallery hideaddbutton="true" bordercolor="transparent">
+Ec048 n en.png|It is labeled as a main chapter level, "ec048_n_en.png", making it the 49th level for each Main Chapter Level
+</gallery>
+
+==Miscellaneous==
+There are also smaller features that were also unimplemented in the Nintendo Switch version of The Battle Cats.
+
+===Cut Playable Modes===
+There are some unused modes that were crossed out in the spritesheets. [[Catclaw Dojo]], Special Stages before clearing Empire of Cats, and an unused version of Empire of Cats Chapter 1 are cut chapters from the spritesheet. There are also unused sprites for the [[Cat Beacon]], the Mailbox and Zombie Outbreaks.
+<gallery hideaddbutton="true" bordercolor="transparent">
+Img011 00 chapter button.png
+</gallery>
+
+===Unused Medal Sprite for Zombie Outbreaks===
+Checking through the Data.arc file shows that there are Zombie Outbreak medals which would normally be given to players that beat an Outbreak stage. However, with the lack of Zombie Outbreaks in the Nintendo Switch version, they go unused.
+
+===Evangelist Cat "+" Levels===
+When modifying the game's save file, it is possible for [[Evangelist Cat (Uber Rare Cat)|Evangelist Cat]] to gain + levels, despite not being obtained from any [[Cat Capsule|Capsule]]. Through save file manipulation, it is possible for Evangelist Cat to gain a maximum level of "40+20."
+
+===Unused Traits and Abilities===
+There are unused icons for the [[:Category:Relic Enemies|Relic]] trait, immunity to Curse, Witch Killer and EVA Angel Killer.
+<gallery hideaddbutton="true" bordercolor="transparent">
+Relictraiticon.png
+Epicability1.png
+WitchKiller.png
+Epicability2.png
+</gallery>
+
+===Cat Combos===
+There is an unused sprite for [[Cat Combo]]s as well as a question regarding about Cat Combos.
+
+===More Unused Stages===
+In the cbs files from both Data.arc and Patch001.arc archives, there is a myriad of unused stages that went unused in the Switch port. A majority of [[:Category:Monthly Events|Monthly Events]], [[:Category:Cyclone Stages|Cyclone Stages]], Special Cat [[:Category:Awakening Stages|Awakening Stages]], [[Deadly Carnival!|Deadly]] [[Deadly Carnival II|Carnival]] stages, Tier 1 and Tier 2 [[:Category:Advent Stages|Advent Stages]], other [[Event Stages]], and Stories of Legend stages that go all the way up to sub-chapter 46, [[Singularityville]].
+
+===Cat Stamp Logins===
+This could have been leftover data from importing data from the mobile version when developing the Nintendo Switch version, but there could have been a 30-day login bonus similar to the mobile version which was instead discarded in favor of the Text Speech method to unlock Tricycle Cat.
+
+===Recording Settings===
+In a cbs file from the Data.arc archive, there was text mentioning the ability to record a [[Battle|battle]] while playing, which would be saved into the console's album.
+
+===Unused Gacha System Sprites===
+In the spritesheet that is used to indicate what rarity was obtained from rolling the Cat Capsule, there is an unused sprite mentioning "Legend" and could have been simply ported from the mobile version. There also exists unused sprites for receiving 1 million XP, guaranteed uber draws, and looking up the event info for each banner.
+
+===Unused Sales Sprites===
+Since this version of the game does not use in-app purchases, there are unused sprites promoting sales for Platinum and Rare Tickets, Limited Packs, and a Start Up pack.
+
+===Unused Items===
+Catseyes and Catamins are present in the games files as well as leftover sprites for Catamins being available on the Item Store as well.
+
+===Crazed Cats in the Enemy Guide===
+A text file that contained descriptions for the enemies encountered in the game, there are slots for the enemy forms of the Crazed Cats albeit with no text. However, there is no mention for the enemy forms of the Manic Cats.
+===Unused Missions and Banners===
+There are several missions that were added in The Battle Cats Unite for the International Version as well as additional banners that were going to be added to be unlocked.
+*The following missions that are unused in the International Version:
+**Login to claim Catburger
+**Login to claim Driller Cat
+**Login to claim Piledriver Cat
+**Login to claim Cutter Cat
+**Login to claim Backhoe Cat
+**Login to claim Miter Saw Cat
+*The following banners have been mentioned in the game's files and were mentioned to be planned additions:
+**[[Girls & Monsters: Angels of Terror (Gacha Event)|Girls & Monsters: Angels of Terror]]
+**[[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|Nature's Guardians ELEMENTAL PIXIES]]
+It should be noted that Iron Legion was also mentioned among these files and was the only one of the three that have been fully implemented into the game. The unused missions for the International Version may be future content that will be distributed as Catburger remains to be the only unavailable unit across all three releases for the game.
+
+==Trivia==
+*The Battle Cats Unite! would have been the first iteration of The Battle Cats to have [[:Category:Enemy Cats|enemy cats]] (besides major bosses such as [[:Category:Mythic Bosses|Mythic Bosses]], [[Evil Emperor Cat]] and [[Ensanglion the Calamity]]) or seasonal variants appear in the [[Enemy Guide]], however, it seems to have been cut rather early on as the enemy Crazed Cats' description slots have no text and only mention their name.
+*Bahamut Cat's awakening stage is ordered in the same category as the [[FINALS WEEK|Go Go Graduates!]] stages when viewing the stage list order text file.
+
+{{BC Navigation}}
+[[Category:Unobtainable Content]]
+[[Category:Game Features]]

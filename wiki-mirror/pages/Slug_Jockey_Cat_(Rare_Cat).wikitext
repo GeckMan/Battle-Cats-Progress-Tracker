@@ -1,0 +1,143 @@
+'''Slug Jockey Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 6.1 Update|Version 6.1]] and has a chance to be unlocked when beating any stage in [[Sliming to Victory]].
+
+{{Cat Info
+|ID = 343
+|rarity = RR
+|name1 = Slug Jockey Cat
+|name2 = Slugcat
+}}
+
+==Evolution==
+Evolves into '''Slugcat''' at level 10.
+
+==Strategy/Usage==
+Despite its ability to affect every trait and having a decent [[Cat Combo]], Slug Jockey Cat has embarrassingly poor stats across the board, particularly range, uptime, and cooldown. Slug Jockey is limited to melee enemies, and even if she locks on to something, the enemy is only slowed for less than 1/6th of the time. It takes more than a minute to get enough Slug Jockeys for even 50% uptime, which is extremely difficult considering most melee enemies make a dent in 10k HP like nothing. Its one perk is that most threats in [[Empire of Cats]]—Hippoe, One Horn, Sir Seal—have lower range than it, so it can temporarily serve as your main crowd-controller. Otherwise, use any other crowd-controller, even [[Eggy Cat (Rare Cat)|Easter Egg Cat]], for the traits you need to counter.
+
+Slug Jockey Cat's terrible DPS can actually be used to your advantage: stack enough of them on peons at the start of a level and they can immobilize bosses with less range than them. However, since Slowed enemies still move at a speed of 1, they will eventually kill the Slugcat stacks.
+
+{{Job|Classification = Combo Slave & Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Meowin' in the Rain|"Slow" Effects Up (Sm)|Mizli|Slug Jockey Cat|jpname=土砂降りに唄えば}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 343
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni343 f00.png
+|Image2 = Uni343 c00.png
+|Name1 = Slug Jockey Cat
+|Desc1 = One rainy day, a Slug befriended a Cat.<br>Her will is strong, but her body is weak (to salt).<br>Area attack Slows enemies for a moment.
+|Name2 = Slugcat
+|Desc2 = They thought it wasn't fair for the Cat to always<br>ride, so now they take turns. No effect on race<br>times. Area attack Slows enemies for a moment.
+|Name1 (JP) = なめネコ
+|Desc1 (JP) = 雨上がりの日に出会って意気投合したなめとネコ<br>粘り強い勝負が得意だが塩には弱い<br>敵の動きを一瞬遅くする(範囲攻撃)
+|Transl1 (JP) = Nameko and Neko meet on a rainy day and hit it off.<br>Good at tenacious contests, but weak against salt<br>Slows the enemy's movement for a moment (ranged attack)
+|Name2 (JP) = ネコなめ
+|Desc2 (JP) = 更なる高みを目指すため、乗り手を交替したなめとネコ<br>先行逃げ切りが得意だがやっぱり塩には弱い<br>敵の動きを一瞬遅くする(範囲攻撃)
+|Transl2 (JP) = Nameko and Neko switch riders in order to achieve a higher level of performance.<br>Good at running ahead of the pack, but still weak against salt<br>Slows the enemy's movement for a moment (ranged attack)
+|Name1 (TW) = 鼻涕蟲與貓
+|Desc1 (TW) = 雨停的那天相遇後志趣相投的鼻涕蟲與貓<br>最擅長貼身緊追，但弱點是怕鹽巴<br>可以讓敵人的動作瞬間變慢（範圍攻擊）
+|Name2 (TW) = 鼻涕蟲騎貓
+|Desc2 (TW) = 為了更上一層樓而換成鼻涕蟲來騎貓<br>最擅長單騎領放，但弱點還是怕鹽巴<br>可以讓敵人的動作瞬間變慢（範圍攻擊）
+|Name1 (KR) = 민달팽이 고양이
+|Desc1 (KR) = 비가 갠 날 만나 의기투합한 민달팽이와 고양이<br>끈질기고 끈덕진 승부가 특기지만 소금에 약하다<br>적의 움직임을 순간 느리게 한다 (범위 공격)
+|Name2 (KR) = 고양이 민달팽이
+|Desc2 (KR) = 더 높은 곳을 목표로 서로를 바꿔 본 민달팽이와 고양이<br>도망치는 게 특기지만 역시 소금에 약하다<br>적의 움직임을 순간 느리게 한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Slug Jockey Cat
+|Normal Base HP = 600
+|Normal Base AP = 60
+|Normal Range = 210
+|Normal Foreswing = 27
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 38
+|Normal Speed = 12
+|Normal KB = 2
+|Normal Cost = 420
+|Normal Recharge = 960
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 30f <sub>1 second</sub>
+|Evolved Name = Slugcat
+|Evolved Base HP = 600
+|Evolved Base AP = 60
+|Evolved Range = 210
+|Evolved Foreswing = 27
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 38
+|Evolved Speed = 12
+|Evolved KB = 2
+|Evolved Cost = 420
+|Evolved Recharge = 960
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 30f <sub>1 second</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 60 damage<br>(9.68 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 186f <sub>6.2 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 27f <sup>0.9s</sup><br>(11f <sup>0.37s</sup> backswing)
+|val-Normal-Recharge Time = 32 ~ 23.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(164.52 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 1,020 damage<br>(164.52 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 186f <sub>6.2 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 27f <sup>0.9s</sup><br>(11f <sup>0.37s</sup> backswing)
+|val-Evolved-Recharge Time = 32 ~ 23.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni343 f00}}
+
+==Trivia==
+*Like [[Mr. Ninja (Special Cat)|Mr. Ninja]], Slug Jockey Cat is a character from [[PONOS Corporation|PONOS]]' simulation game, '''''Namesta''''' (なめすた), introduced in the 5th [[BitSummit Collaboration Event|BitSummit Indie Game Festival]].
+*This Cat was available to players of the second round of The Great Cat Tournament in their provided save.
+*Slug Jockey Cat was originally a [[:Category:Special Cats|Special Cat]].
+*When the [[Sliming to Victory]] event was first made available, none of the stages had Slug Jockey Cat as a reward, making this Cat unobtainable for over a year.
+
+==Reference==
+*https://battlecats-db.com/unit/344.html
+
+----
+{{CatNav|Maneki Cat|Orthos}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Item Drop Cats]]
+[[Category:Rare Cats]]

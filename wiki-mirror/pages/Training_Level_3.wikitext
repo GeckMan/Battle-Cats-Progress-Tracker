@@ -1,0 +1,52 @@
+{{EnemiesAppearing|Marmod|Red Marmod|Black Marmod}}
+'''Training Level 3''' is the third stage in [[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn188 02 c en.png]]
+|stage location = [[File:Mapname188 c en.png]]
+|energy = 150
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Marmod|100%
+|Red Marmod|100%}}
+|boss = {{Magnification|Black Marmod|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|restriction = Unit Restriction: Only [[World Trigger Collaboration Event|World Trigger]] Units
+|XP = 4,500 XP
+|width = 4,000
+|max enemies = 12
+|jpname = Training Level 3
+|script = 訓練レベル3
+|romaji = Kunren Reberu 3
+|star = 1
+|event = [[World Trigger Collaboration Event]]
+|event-chapter = [[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]]
+|difficulty = ★7
+|prev stage = [[Training Level 2]]
+|next stage = [[Training Level 4]]
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo & Cat]], [[Yuma Kuga & Cat (Rare Cat)|Yuma Kuga & Cat]] and [[Chika Amatori & Cat (Special Cat)|Chika Amatori & Cat]]
+
+==Battleground==
+*1 [[Marmod]] spawns.
+*1 [[Marmod]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Marmod]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Red Marmod]] spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Red Marmod]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Black Marmod]] spawns as the boss.
+**4 [[Marmod]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Red Marmod]]s spawn, delay 30 seconds<sup>900f</sup>.
+
+==Strategy==
+Albeit harder than its predecessors, it is still rather easy to do, even with level 20 units. Level 30 World Trigger units will render this stage a non-issue.
+
+==Reference==
+*https://battlecats-db.com/stage/s02188-03.html
+
+{{World Trigger}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]

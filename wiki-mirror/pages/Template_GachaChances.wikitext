@@ -1,0 +1,16 @@
+<templatestyles src="GachaChances/styles.css" />
+{| cellspacing="2px" width="75%;" align="center" style="background:var(--color-max-contrast);" class="gacha-table"
+!colspan="2" style="background:black;"|<font color="#FFF">'''Drop rate by rarity'''</font>
+|-
+|width="25%" style="background-color: var(--gacha-rarity-ur); text-align:center;"|<font color="#000">'''Uber Super Rare'''</font>
+|class="bg-creamy-yellow" style="text-align:center;"|{{{UberChance}}}
+|-
+|width="25%" style="background-color: var(--gacha-rarity-sr); text-align:center;"|<font color="#000">'''Super Rare'''</font>
+|class="bg-creamy-yellow" style="text-align:center;"|{{{SuperChance}}}
+|-
+|width="25%" style="background-color: var(--gacha-rarity-rr); text-align:center;"|<font color="#000">'''Rare'''</font>
+|class="bg-creamy-yellow" style="text-align:center;"|{{{RareChance}}}
+|- {{#if:{{{LegendChance|}}}||class="hideme"}}
+|{{#if:{{{LegendChance|}}}||class="hideme"}} width="25%" style="background-color: var(--gacha-rarity-lr); text-align:center;"|<font color="#000">'''??? Rare'''</font>
+|{{#if:{{{LegendChance|}}}||class="hideme"}} class="bg-creamy-yellow" style="text-align:center;"|{{{LegendChance}}}
+|}

@@ -1,0 +1,129 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[MARS PEOPLE (Enemy)]].''
+'''MARS PEOPLE''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 221
+|rarity = RR
+|name1 = MARS PEOPLE
+|name2 = MARS PEOPLE CC
+}}
+
+==Evolution==
+Evolves into '''MARS PEOPLE CC''' at level 10.
+
+==Strategy/Usage==
+While this unit may seem like a slightly stronger anti-[[:Category:Alien Enemies|Alien]] version of [[Onmyoji Cat (Rare Cat)|Onmyoji Cat]] with a higher cost, there is one notable difference between the two. MARS PEOPLE has a fast enough attack rate to attack twice in one weaken, greatly increasing its potential uptime. That being said, this doesn't really matter, since most threatening Alien enemies, such as [[Ursamajor]], will outrange it. To make things worse, Onmyoji Cat has a [[True Form]] which makes it about a thousand times better, even against Aliens.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 221
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni221 f00.png
+|Image2 = Uni221 c00.png
+|Name1 = MARS PEOPLE
+|Desc1 = Recruited from the Metal Slug series!<br>Yep, they're actual Martians.<br>Might weaken Aliens.
+|Name2 = MARS PEOPLE CC
+|Desc2 = Recruited from the Metal Slug series!<br>Mastered warping. No motivation to try<br>now, though. Might weaken Aliens.
+|Name1 (JP) = マーズピープル (Māzu Pīpuru, Mars People)
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>いわゆる火星人<br>たまにエイリアンの攻撃力をダウンさせる
+|Transl1 (JP) = Joining from the Metal Slug series!<br>So-called Martian<br>Sometimes reduces Alien's attack power.
+|Name2 (JP) = マーズピープルCC (Māzu Pīpuru CC, Mars People CC)
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>ワープしたり特殊な行動が可能、だが今回はしないらしい<br>たまにエイリアンの攻撃力をダウンさせる
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Can warp and perform certain other special actions, but apparently not this time!<br>Sometimes reduces Alien's attack power.
+|Name1 (TW) = 火星人
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>就是所謂的火星人<br>有時候會讓異星戰士攻擊力下降
+|Name2 (TW) = 火星人CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>本來可以做出時空跳躍等特殊行動。但是這次不能<br>有時候會讓異星戰士攻擊力下降
+|Name1 (KR) = 마즈 피플
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>이른바 화성인<br>가끔 에이리언의 공격력을 다운시킨다
+|Name2 (KR) = 마즈 피플CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>워프나 특수한 행동이 가능. 하지만 지금은 할 수 없는 듯하다<br>가끔 에이리언의 공격력을 다운시킨다
+}}
+
+==Cost==
+*Chapter 1: 660¢
+*Chapter 2: 990¢
+*Chapter 3: 1,320¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = MARS PEOPLE
+|Normal Base HP = 455
+|Normal Base AP = 47
+|Normal Range = 310
+|Normal Foreswing = 77
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 96
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 660
+|Normal Recharge = 620
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = MARS PEOPLE CC
+|Evolved Base HP = 566
+|Evolved Base AP = 60
+|Evolved Range = 310
+|Evolved Foreswing = 77
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 96
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 660
+|Evolved Recharge = 620
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 455 HP
+|val-Normal-Attack Power = 47 damage<br>(14.69 DPS)
+|val-Normal-Attack Range = 310
+|val-Normal-Attack Frequency = 96f <sub>3.2 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 77f <sup>2.57s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Normal-Recharge Time = 20.67 ~ 11.87 seconds
+|val-Normal-MaxHP = 7,735 HP
+|val-Normal-MaxAttack = 800 damage<br>(250 DPS)
+|val-Evolved-Health = 9,622 HP
+|val-Evolved-Attack Power = 1,020 damage<br>(318.75 DPS)
+|val-Evolved-Attack Range = 310
+|val-Evolved-Attack Frequency = 96f <sub>3.2 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 77f <sup>2.57s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Evolved-Recharge Time = 20.67 ~ 11.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni221 f00}}
+
+==Trivia==
+*MARS PEOPLE is based off of the [[wikia:metalslug:Mars People|Mars People]] from the Metal Slug series.
+*MARS PEOPLE's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/222.html
+
+----
+{{CatNav|ALLEN O'NEIL|HUGE HERMIT}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

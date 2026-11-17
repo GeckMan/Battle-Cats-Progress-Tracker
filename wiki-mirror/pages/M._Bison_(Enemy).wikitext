@@ -1,0 +1,83 @@
+:''This article is about the enemy. For the Cat Unit, see [[M. Bison (Uber Rare Cat)]].''
+'''M. Bison''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Enemy Info
+|name = M. Bison
+|image = E 532.png
+|first appearance = [[The Supreme Evil (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+This enemy has slightly below average health and attack power, but has slightly above average range along with both an [[Omni Strike]] that reaches to 425 range and a [[Toxic]] attack that takes 20% of all [[Cat Units]] health. However, he has [[Multi-Hit]] which divides his Toxic attack into three parts along with immunity to [[Wave Attack]]s, [[Knockback|knockback]], [[Freeze|freeze]], [[Slow|slow]] and [[Weaken|weaken]].
+
+==Strategy==
+[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] does a good job against M. Bison, being able to knock him back repeatedly. His 425 range also means that even Crazed Bahamut Cat and [[Ururun Wolf (Special Cat)|Ururun Cat]] can help with proper stalling.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[The Supreme Evil (Easy)|The Supreme Evil]] (13%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]: [[The Supreme Evil (Normal)|The Supreme Evil]] (75%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]: [[The Supreme Evil (Hard)|The Supreme Evil]] (140%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS M. BISON (Normal)]] (10%)
+**[[VS M. BISON (Insane)]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest|I Seek the Strongest]] (50%, 70%, 100%, 130%, 160%, 190%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] (50%, 70%, 100%, 130%, 160%, 190%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = M. Bison
+|Health = 320000
+|Attack Power = 6000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 208
+|Movement Speed = 8
+|Knockback = 4
+|Foreswing = 27
+|Backswing = 78
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">2,000</span> at 27f <sup>0.9s</sup>, <span class="scaled" data-type="ap">2,000</span> at 34f <sup>1.13s</sup>, <span class="scaled" data-type="ap">2,000</span> at 41f <sup>1.37s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -700~425)<br>
+{{AbilityIcon|Toxic}} 100% chance to perform a [[Toxic]] attack (takes 20% of Cat Units' maximum health)<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+532 e.png|M. Bison's spritesheet
+IdleBiggestChadBison.gif|M. Bison's moving animation
+</gallery>
+
+==Trivia==
+*In the Japanese Version of Battle Cats, this enemy is known as [[Vega (Enemy)|Vega]] instead.
+
+==Reference==
+*https://battlecats-db.com/enemy/534.html
+
+----
+{{EnemyNav|Sagat|8th Anniversary Birthday Cake}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Toxic ability]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

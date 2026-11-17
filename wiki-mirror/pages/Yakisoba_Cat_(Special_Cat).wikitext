@@ -1,0 +1,121 @@
+{{JPExclusive}}
+'''Yakisoba Cat''' is a [[:Category:Special Cats|Special Cat]] who was introduced in [[Version 9.5 Update|Version 9.5]] and can be unlocked as a daily reward stamp during the [[Nissin U.F.O. Collaboration Event]].
+
+{{Cat Info
+|ID = 541
+|rarity = EX
+|name1 = Yakisoba Cat
+|name2 = Splendid!Thick!Big!Cat
+}}
+
+==Evolution==
+Evolves into '''Splendid!Thick!Big!Cat''' at level 10.
+
+==Strategy/Usage==
+It is similar to [[Titan Cat (Normal Cat)|Titan Cat]], but worse in every way except for having Jamiera Cat's knockback. You can use him as a Jamiera Cat alternative in {{4c}} stages if you don't have [[Li'l Titan Cat (Special Cat)|Li'l Jamiera Cat]], but the usage of a tanker with such low stats in {{4c}} isn't recommended anyways.
+
+{{Job|Classification = User Rank Dump & Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 541
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni541 f00.png
+|Image2 = Uni541 c00.png
+|Name1 (JP) = ネコヤキソバン (Neko Yakisoban, Yakisoba Cat)
+|Desc1 (JP) = 普段はネコとして生活しているがその正体は<br>食生活を守るヒーローネコヤキソバン！<br>たまにメタルな敵以外をふっとばす(範囲攻撃)
+|Transl1 (JP) = Usually lives as a cat, but his true identity is<br>Cat Hero Yakisoban, protector of eating habits!<br>Sometimes pushes back non-metal enemies (Area Attack)
+|Name2 (JP) = うまい!太い!大きい!ネコ (Umai!Futoi!Oukii!Neko, Splendid!Thick!Big!Cat)
+|Desc2 (JP) = うまいソース、太い麺、大きいキャベツが<br>味わえる焼そばU.F.Oをこよなく愛する巨大ネコ<br>たまにメタルな敵以外をふっとばす(範囲攻撃)
+|Transl2 (JP) = Splendid sauce, thick noodles, and a big cabbage<br>A giant cat that loves Yakisoba U.F.O.<br>Sometimes pushes back non-metal enemies (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 1,300円
+*Chapter 2: 1,950円
+*Chapter 3: 2,600円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yakisoba Cat
+|Normal Base HP = 800
+|Normal Base AP = 175
+|Normal Range = 150
+|Normal Foreswing = 18
+|Normal Attack Cooldown = 49
+|Normal Attack Length = 25
+|Normal Speed = 6
+|Normal KB = 1
+|Normal Cost = 1300
+|Normal Recharge = 930
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Splendid!Thick!Big!Cat
+|Evolved Base HP = 800
+|Evolved Base AP = 175
+|Evolved Range = 150
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 49
+|Evolved Attack Length = 32
+|Evolved Speed = 6
+|Evolved KB = 1
+|Evolved Cost = 1300
+|Evolved Recharge = 930
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 175 damage<br>(78.36 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 18f <sup>0.6s</sup><br>(7f <sup>0.23s</sup> backswing)
+|val-Normal-Recharge Time = 31 ~ 22.2 seconds
+|val-Normal-MaxHP = 13,600 HP
+|val-Normal-MaxAttack = 2,975 damage<br>(1,332.09 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 2,975 damage<br>(1,332.09 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Evolved-Recharge Time = 31 ~ 22.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni541 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/542.html
+
+----
+{{CatNav|U.F.O. Cat|Cat Boy}}
+----
+
+{{Nissin U.F.O.}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]

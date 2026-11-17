@@ -1,0 +1,59 @@
+{{EnemiesAppearing|Olga|Celesse|Fuu|Cornelia|Yoichi|Healer Cat}}
+'''Healer Awakens (Expert)''' is the first stage in [[Healer Awakens!]].
+
+{{Stage Info
+|stage name = [[File:rc042.png]]
+[[File:Mapsn018 00 c en.png]]
+|stage location = [[File:Mapname018 c en.png]]
+|energy = 150
+|enemy castle hp = 450,000 HP
+|enemies = {{Magnification|Olga|800%
+|Celesse|800%
+|Fuu|400%
+|Cornelia|100%
+|Yoichi|800%}}
+|boss = {{Magnification|Healer Cat|100%}}
+|treasure = - [[Healer (Special Cat)|Healer]]'s [[True Form]] (5%, 1 time)
+|XP = 4,000 XP
+|width = 4,200
+|max enemies = 6
+|jpname = Road To Healer Evolution Intense
+|script = 癒術士進化への道 激ムズ
+|romaji = Shi shinka e no michi geki muzu
+|star = 1
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Healer Awakens!]]
+|difficulty = ★6
+|prev stage = N/A
+|next stage = [[Healer Awakens (Insane)]]
+}}
+
+==Battleground==
+*3 [[Olga (Enemy)|Olgas]] spawn after 13.33 seconds<sup>400f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*Infinite [[Celesse (Enemy)|Celesses]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 90% HP:
+**1 [[Healer Cat]] spawns as the boss.
+**Infinite [[Fuu (Enemy)|Fuus]] spawn, delay 16.67~26.67 seconds<sup>500f~800f</sup>.
+**1 [[Cornelia (Enemy)|Cornelia]] spawns.
+**3 [[Cornelia (Enemy)|Cornelias]] spawn, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**Infinite [[Yoichi (Enemy)|Yoichis]] spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**Infinite [[Yoichi (Enemy)|Yoichis]] spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**Infinite [[Yoichi (Enemy)|Yoichis]] spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+
+==Strategy==
+Healer Cat is essentially just Healer but with a slow chance rather than a crit chance. This essentially makes it much harder to actually push, and as such, even just a couple meatshields can endlessly stall Healer Cat. This stage is rather easy, as a result, with the only hard part being the beginning rush. However, even this isn't all that difficult. Just get [[Bahamut Cat (Special Cat)|Bahamut]] and meatshield spam.
+
+==Walkthrough==
+{{Walkthrough
+|57YethceJAM|Novastrala|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s02018-01.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+{{Awakening Stages}}
+[[Category:Awakening Stages]]
+[[Category:Collaboration Stages]]
+[[Category:Healer Awakens!]]

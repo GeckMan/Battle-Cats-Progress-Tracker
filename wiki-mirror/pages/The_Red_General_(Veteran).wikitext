@@ -1,0 +1,58 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Bannerman Doge|Snache|Doge Dark|Commander Nyandam}}
+'''The Red General (Veteran)''' is the second stage in [[Road to Unification#Engage! Commander Nyandam|Engage! Commander Nyandam]].
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn386 01 s en.png]]
+|stage location = [[File:Mapname386 s en.png]]
+|energy = 100
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Bannerman Doge|800%
+|Snache|800%
+|Doge Dark|200%}}
+|boss = {{Magnification|Commander Nyandam|600%}}
+|enemies2 = {{Magnification|Bannerman Doge|1,600%
+|Snache|1,600%
+|Doge Dark|400%}}
+|boss2 = {{Magnification|Commander Nyandam|1,200%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +200 (100%, unlimited)
+|score reward = '''8,100''': [[Catamin]] [B] +1<br>
+'''7,000''': [[Road to Unification#Mechanics|War Funds]] +1,250<br>
+'''5,500''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''3,000''': [[Road to Unification#Mechanics|War Funds]] +2,500<br>
+'''500''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''500''': 300,000 XP
+|XP = 3,000 XP
+|width = 4,000
+|max enemies = 15
+|jpname = Red Tactician Super Advanced
+|script = 赤の知将 超上級
+|romaji = Aka no Chishō Chōjōkyū
+|star = 2
+|event-chapter = [[Road to Unification#Engage! Commander Nyandam|Engage! Commander Nyandam]]
+|difficulty = ★5
+|prev stage = [[The Red General (Normal)]]
+|next stage = [[The Red General (Insane)]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*Infinite [[Bannerman Doge]]s spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Snache]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*15 [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*6 [[Doge Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*4 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Commander Nyandam]] spawns as the boss after 5.33 seconds<sup>160f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01386-02.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

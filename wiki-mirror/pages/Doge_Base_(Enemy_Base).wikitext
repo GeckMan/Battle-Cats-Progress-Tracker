@@ -1,0 +1,97 @@
+:''This article's name is not official.''
+The '''Doge Base''' (わんこの城 ''Wanko no Shiro'', '''Doggy's Castle''') is an animated [[Enemy Bases|Enemy Base]] that appears in [[Legend Stages]]. It was added in [[Version 5.9 Update|Version 5.9]].
+
+{{Enemy Info
+|name = Doge Base
+|image = E 315.png
+|first appearance = '''SoL''': [[Multiversal Studios|Sub-chapter 37 - Multiversal Studios]]
+|latest appearance = '''ZL:''' [[Candy Downpour|Sub-chapter 12 - Candy Downpour]]
+|money drop = N/A
+}}
+
+==Enemy==
+Very similar to the [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]], Doge Base is a Single Target [[:Category:Typeless Enemies|Typeless]] enemy with high range and fires off an extremely damaging level 20 [[Wave Attack]], having enough reach to cover the entire stage in all its appearances. Though it never is the main threat, the support enemies usually featured are more than compensation.
+
+==Strategy==
+It has to hit a cat unit for its wave to occur. As such, if your wave blocker is positioned correctly or you have multiple out at once, it will only destroy one of your frontline units before the wave itself gets neutralized. Otherwise, it will simply destroy everything on the field that isn't immune to waves. Depending on stage length, fighting outside of its range is another possible option.
+
+As with most animated bases, the Doge Base lacks both [[:Category:Enemies with Surge Immunity|Surge]] and [[:Category:Enemies with Explosion Immunity|Explosion Immunity]], so it will take the additional damage from units that have those abilities, such as [[Master Uril (Special Cat)|Master Uril]] and [[Talents|Talented]] [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 37-6: [[Multiversal Studios]] (50,000%)
+*Stage 40-6: [[Houses of the Holy]] (60,000%)
+*Stage 42-2: [[Surrealist Sins]] (150,000%)
+*Stage 48-5: [[False Resurrection]] (70,000%)
+
+===[[Uncanny Legends]]===
+*Stage 9-1: [[Escolar Coast]] (55,000%)
+*Stage 19-1: [[Beachhead Invasion]] (60,000%)
+*Stage 19-6: [[Multitetrapod]] (100,000%)
+*Stage 23-1: [[Loser's Complaint]] (100,000%)
+*Stage 25-1: [[Treadmill Powered]] (60,000%)
+*Stage 27-2: [[Aria of the Princess]] (60,000%)
+*Stage 27-4: [[Glass Slippers]] (80,000%)
+*Stage 34-2: [[Tropical Garden]] (80,000%)
+*Stage 38-4: [[Multiplanar Studios]] (60,000%)
+*Stage 46-2: [[Stand By Motel]] (60,000%)
+
+===[[Zero Legends]]===
+*Stage 12-3: [[Candy Downpour]] (100,000%)
+*Stage 20-3: [[Newton's Fruit]] (120,000%)
+*Stage 37-6: [[Bowl of Bliss]] (120,000%)
+
+===[[Special Events|Event Stages]]===
+*[[River City Stages#River City Challenge Course|River City Challenge Course]]:
+**[[Power On Through]] (4,000%)
+**[[Mistakes Don't Matter]] (20,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Doge Base
+|Health = 1500
+|Attack Power = 50
+|Attack Range = 1000
+|Attack Type = Single
+|Time Between Attacks = 751
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 2
+|Backswing = 10
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 20 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+''*Note that these are the stats of the Doge Base at 100% strength magnification; it does not appear at magnifications under 4,000% in any stage, and is typically featured at 50,000% or above.''
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+315 e.png|The Doge Base's spritesheet
+</gallery>
+
+==Trivia==
+*It is tied with the [[Corrupted Cat Base (Enemy Base)|Corrupted Cat Base]] and the [[Wave Dummy (Enemy Base)|Wave Dummy]] for the highest [[Wave Attack]] level in the game.
+
+==Reference==
+*https://battlecats-db.com/enemy/317.html
+
+----
+{{EnemyNav|Nazousagi|Inumusha}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Animated Enemy Bases]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

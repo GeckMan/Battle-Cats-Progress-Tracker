@@ -1,0 +1,114 @@
+'''Hitboxes''', in the general sense, are the invisible areas around a [[Cat Units|Cat Unit]] or [[Enemy Units|Enemy Unit]] that determine where it can stand, what it can attack, etc.
+
+==Terminology==
+When it comes to hitboxes, it is important to know the difference between the various types:
+
+===Hurtbox===
+[[File:Hitboxes Hurtbox.png|thumb|Hurtboxes of [[Wheel Cat (Rare Cat)|Wheel Cat]] and [[Kotatsu Cat (Super Rare Cat)|Kotatsu Cat]]. Hurtboxes shall be represented in green.]]
+The hurtbox is the vulnerable and "solid" part of a unit. If a unit's hurtbox is touched by an attack from the opposing side, the unit in question takes damage. It is merely a "point" or "vertical line" by the front of the unit. Since verticality never plays a factor, it will be represented by a line in following images.
+
+*Units will always stop moving if there is the hurtbox of a unit of the opposing side in the way, even if the former has the [[Attacks Only|Attacks Only ability]] and can't hit the latter. This is the reason why Cats and enemies don't just walk past each other.
+*Hurtboxes move forwards at a constant speed, being the movement speed of the unit, then stand still while the unit attacks, despite what the unit's sprite may suggest. If you see [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]] launch herself in the enemy army, her hurtbox actually stays where she started the jump.
+*A unit with movement speed being an X number means they advance by X/2 pixels per frame. With 30 speed for example, a unit advances by 15 pixels per frame.
+*Movements aren't precisely "smooth", meaning units inch, or "hop" forward a fixed distance every frame. For example, a cat with 80 speed and an enemy with 20 speed, both having 300 attack range, are 320 range units apart in the current frame. After the next frame, the cat advances by 40 and the enemy moves forward by 10, closing the distance to 320-(40+10)=270, which is less than 300. If movements were "smooth" (though still frame-based), both sides would've always stood at exactly 320-20=300, with Cat stopping early after traveling 16 pixels and enemy stopping after 4 pixels, as based on the speed ratio.
+*The hurtbox is a permanent part of a unit, but it is temporarily disabled while a unit is in the middle of a knockback (including a boss shockwave), while a Cat is being warped, or while a [[:Category:Zombie Enemies|Zombie]] enemy is either temporarily dead or burrowing.
+**The duration for which hitboxes disappear during a knockback is 24 frames for damage-based knockbacks, 11 frames for both default [[Cat Cannon]]/[[Sniper the Cat]] knockbacks, [[Knockback]] ability, and 47 frames for boss shockwave knockbacks.
+**This can cause fast units to clip behind the hurtboxes of units of the opposing side, or it can cause attacks to miss.
+**Bases are an exception, as their hurtboxes extend an indeterminate distance behind them and cannot be disabled by anything.
+**Winning or losing a stage still deletes disabled hurtboxes and the units attached for the losing side.
+*Sprites serve to give life to units, as well as allowing their distinction. Sprites are made to make sense with the hitboxes, meaning that players can usually guess accurately where a unit's hurtbox starts and where a unit's attack is going to hit or miss, although the animations can be very misleading at times.
+
+===Hitbox===
+[[File:Hitboxes Hitbox.png|thumb|[[Splendid Ganesha (Uber Rare Cat)|Ganesha]]'s hitbox. Hitboxes shall be represented in red.]]
+A hitbox, in the specific sense, is the part of a unit that stays at a constant distance from the hurtbox (except for certain units with the multi-hit ability such as [[Elder Beast Naala (Special Cat)|Elder Beast Naala]]) and, when active, it causes damage in its area.
+
+*A hitbox extends by 320px (technically this range is variable, but every single cat and enemy have it set at 320) behind a unit and by a unit's range in the positives, unless a unit has [[:Category:Omni Strike Cats|Omni Strike]] or [[:Category:Long Distance Cats|Long Distance]], in which case the beginning point and ending point are stated.
+*A hitbox is almost always disabled. It only activates once per attack animation (multiple times with multi-hit) and disappears after one frame. However, opposing units still can hit each other simultaneously (this is known as a frame-perfect trade). Certain units can even regularly trade when facing the right opponents, though due to movements not being "smooth", trades may not always succeed.
+**Hitboxes disappear the next frame even if the unit gets frozen in the frame that caused the hitbox to appear.
+*Hitboxes do not necessarily have to be caused by regular unit attacks, as there are other possible causes such as [[Wave Attack]]s, [[Surge Attack|Surges]], the [[Cat Cannon]] or the [[Sniper the Cat]] item.
+*[[:Category:Single Attack Cats|Units with Single Attack]] generate special hitboxes that only hit the target closest to the back of the hitbox itself.
+**If multiple hitboxes from multiple sources activate on the same tick, all single-target attacks will always land on the same unit, when multiple possible targets are perfectly overlapped.
+*'''The full size of a hitbox can be stated with "Effective range: ???~???" or, if not mentioned, goes from -320 to a unit's "range" stat.'''
+
+===Detection Box===
+[[File:Hitboxes Detection Box.png|thumb|[[Lizard Cat (Normal Cat)|Lizard Cat]]'s detection box. Detection boxes shall be represented in yellow.]]
+The detection box is an invisible box around a unit of set length, indicated by a unit's '''range stat''' in the positives and with a set extension in the negatives. Detection boxes are active when and only when hurtboxes are also active and are strictly linked to them. The detection box simply tells a unit to stop moving and, eventually, start an attack when it detects the hurtbox of an enemy.
+
+*A detection box ALWAYS starts 320px behind a unit (its hurtbox, to be precise) and, unless the unit has [[:Category:Omni Strike Cats|Omni Strike]] or [[:Category:Long Distance Cats|Long Distance]], it fully overlaps with the hitbox.
+*A detection box is able to detect only active hurtboxes, while sprites play no part in the process, nor do hitboxes.
+*A detection box will also detect hurtboxes that the unit can't hurt (due to Target Only/Dodge), but not inactive ones (warped cats, burrowed or temporarily dead [[:Category:Zombie Enemies|Zombies]] and so on).
+*A Cat or enemy's detection box will never extend forwards farther than their hitbox.
+*'''The full size of a detection box is, therefore, 320 plus a unit's "range" stat and it goes from -320 to the aforementioned range.'''
+
+==Subdivisions==
+[[File:Hitboxes Sub.png|center|thumb|650px|class=large-image]]
+'''Range (1):''' Also referred to as "standing range", this value can be found in the "Stats" section of every [[Cat Dictionary|Cat]] and [[Enemy Dictionary|Enemy]] page in this Wiki. It is just the positive section of the detection box and determines where the Cat or Enemy Unit will stop moving forward and then start its attack animation. [[Piledriver Cat (Super Rare Cat)|Piledriver Cat]]'s range can be found easily on this wiki, it's 300.
+
+'''Effective Range:''' Indicates where the hitbox starts and ends in Cats and enemies with either Long Distance or Omni Strike.
+
+'''Blindspot (2):''' Only exists in Cats and enemies with the Long Distance ability. It is the part of the <u>detection box</u> between its starting point and the <u>hitbox's starting point</u>. Enemies can enter a Cat's blindspot if their range is lower than the positive part of the Cat's blindspot and vice versa. Since [[Red Riding Mina (Special Cat)|Mina]] has 435 range and Long Distance (Effective range: 300~600), her blindspot goes from -320 to 300, meaning that enemies with less than 300 range may walk in her blindspot and attack her while being safe from her attacks.
+
+'''Piercing range (3):''' Only exists in Cats and enemies with the Long Distance ability and rarely (for Cats) the Omni Strike ability. It is the part of the hitbox that extends beyond the range of a unit. This is always a very good thing to have, as it allows Cats and enemies to hit opponents behind their target, even allowing units to hit targets with higher range safely, by making use of a stepping stone. [[Blanka (Uber Rare Cat)|Blanka]] has 150 range and Omni Strike (Effective Range: -100~300), so his piercing range is 300-150=150; Mina's is 600-435=165 and so on.
+
+'''Inner range (4):''' Only exists in Cats and enemies with the Long Distance ability. It is the part of the <u>detection box</u> actually covered by the <u>hitbox</u>. This determines how much opponents need to advance before reaching the unit's blindspot. Cats and enemies with a small inner range can have their blindspot invaded easily, so it's best to have a wide one. The inner range is just the range minus the first number of the effective range ('''300'''~600, in her case), so Mina's inner range is 435-300=135.
+
+'''Negative blindspot (5):''' Only exists in Cats and enemies with the Omni Strike ability. It is the part of the <u>detection box</u> behind a unit's <u>hurtbox</u> that isn't covered by the <u>hitbox</u>. Its existence is not well known and rarely comes into play, but it could lead to some enemies or Cats being stuck on an opponent that they can't hit, especially against Zombies. Its size is the difference between 320 (always 320 for all Cats and enemies alike) and the negative reach, so Blanka's negative blindspot is 320-100=220.
+
+'''Negative piercing range (6):''' Only exists in Cats and enemies with the Omni Strike ability. It is the part of the hitbox that extends in the negatives, further back than the detection box. Its size is the difference between the negative reach and 320, so Piledriver's negative piercing range is 600-320=280.
+
+==Interactions==
+The various types of hitboxes interact in different ways depending by the scenario. There are no differences in mechanics between Cats and enemies.
+
+===Standard unit vs any unit===
+When it comes to most units, everything goes as one would expect.[[File:Hitboxes Normal Normal.png|none|thumb|400x400px|class=large-image]]
+In the image above, it is easy to notice that [[Gross Cat (Normal Cat)|Sexy Legs Cat]]'s <u>hitbox</u> and <u>detection box</u> actually overlap. This is going to be true for all Cats and enemies without [[Omni Strike]] or [[Long Distance]] abilities.
+
+In this scenario, Sexy Legs is MOVING toward [[Hippoe]]. As soon as the yellow/red area reaches Hippoe's hitbox, Sexy Legs will be told to stop by its <u>detection box</u>, then it will start an attack animation which will cause its <u>hitbox</u> to activate for a frame and deal damage to Hippoe.
+
+The same is true for Hippoe and all other [[Cat Dictionary|Cats]] and [[Enemy Dictionary|Enemies]] who lack Long Distance or Omni Strike.
+
+===Standard unit on base===
+[[File:Hitboxes Normal OnBase.png|none|thumb|400x400px|class=large-image]]
+In this image, it is possible to see how Sexy Legs Cat interacts with a base. As you can see, the base's hurtbox continues far behind its sprite, while it starts slightly to the right of it.
+
+Since Sexy Legs' <u>detection box</u> has reached the base's <u>hurtbox</u>, Sexy Legs is STANDING STILL. Since it is not moving, Sexy Legs is able to attack and cause damage to the base by having his hitbox activate during an attack animation, which happens every few seconds (indicated in this wiki by '''attack frequency''').
+
+A base's hurtbox stays after the battle is won, meaning that Sexy Legs will never advance any further.
+
+===Long Distance unit vs any unit===
+Things get complicated with [[:Category:Long Distance Cats|Long Distance Cats]] and [[:Category:Long Distance Enemies|enemies]].[[File:Hitboxes LD Normal.png|none|thumb|400x400px|class=large-image]]
+As shown in the picture above, the thing that changed is the position of the hitbox. In this case, [[Vengeful Cat (Rare Cat)|Kite Cat]]'s <u>hitbox</u> is already overlapping with Hippoe's <u>hurtbox</u>, so does this mean that Kite Cat is standing still? The answer is NO, because her detection box has not reached Hippoe yet. Kite Cat is actually still moving and will only stop once her <u>Detection box</u> reaches Hippoe. Once that happens, Kite will attack and hit the area indicated in red, rather than the area between the two.
+
+If a Zoge were to un-burrow right now, such that his <u>hurtbox</u> barely overlaps with the back of Kite Cat's <u>detection box</u>, then Kite would attack and actually miss the Zoge, as Kite's <u>hitbox</u> doesn't cover her own <u>hurtbox</u>, but Hippoe would get hit (assuming it doesn't move). Zoge, on the other hand, would be able to freely and safely hit Kite.
+
+===Long Distance unit on base===
+[[File:Hitboxes LD OnBase.png|none|thumb|400x400px|class=large-image]]
+When dealing with bases, units with Long Distance use the <u>closest part of their hitbox</u> to detect them, instead of their range. In simpler words, Long Distance units get very close to the enemy base if they have a small blindspot, while they don't get as close as normal if they have the <u>hitbox</u> start farther than the end of the <u>detection box</u>. Instead, in both cases, they align their hitbox to hit the base and anything behind. This basically nullifies the inner range, putting the unit at risk and locking single-target units to only hit the base, as it is always the closest target, unless overlapped.<br>
+
+===Omni Strike unit vs any unit===
+Omni Strike, although a single ability, can work in different ways:
+
+#Some Cats with Omni Strike have no forward piercing range, instead having backward extended range. Such units include [[Mighty Thermae D-Lux (Uber Rare Cat)|Mighty Thermae D-Lux]], [[Piledriver Cat (Super Rare Cat)|Piledriver Cat]] and a couple other units, usually [[:Category:Anti-Zombie Cats|anti-Zombie]] that deal with Zombies burrowing behind.
+#All enemies and a couple of Cats that have Omni Strike also have a piercing range. Such units include [[Cat God the Great (Special Cat)|Cat God the Great]], [[Ken (Uber Rare Cat)|Ken]], [[Daboo of the Dead]], [[Zollow]] and [[Mr. Puffington]], to name a few. Sadly, there are no small and common units in this category, so [[Ken (Uber Rare Cat)|Ken]] will be used in examples.
+#Some Cats, such as [[Baby Garu (Uber Rare Cat)|Baby Garu]], have less negative reach than the standard 320 and no piercing range, meaning that they act like regular units, except they have a negative blindspot, while they gain nothing in return, making the ability a purely negative one.
+
+[[File:Hitboxes Omni Normal.png|none|thumb|400x400px|class=large-image]]
+As this image shows, Ken, who has Omni Strike WITH piercing range, has a <u>hitbox</u> that extends further than the <u>detection box</u>, but still covers the hurtbox. For this reason, in this scenario, Ken works exactly like Kite Cat, but doesn't have a blindspot to worry about.
+
+Since his negative reach is lower than 320, however, Ken still has a negative blindspot to worry about, meaning that a Zoge could un-burrow into this blindspot and still freely hit him, just like with Kite.
+
+Units with a negative reach higher than 320 (negative piercing range) have the ability to hit enemies that are behind them, as long as someone else is triggering their detection box, meaning that if a Zoge un-burrows behind [[Piledriver Cat (Super Rare Cat)|Pilediver Cat]]'s <u>detection box</u>, but touches her <u>hitbox</u>, Pilediver will still advance forward like nothing. For this reason, the negative range on the hitbox is only useful to intercept units by chance, so, in most cases, it is very wide to increase said chances.
+
+===Omni Strike unit on base===
+[[File:Hitboxes Onmi OnBase.png|none|thumb|400x400px|class=large-image]]
+Despite what it may look like, in this image Ken is actually standing still with no intention of ever walking forwards again. When encountering a base, Omni Strike units detect it with the <u>front of their hitbox</u>, unlike Long Distance cats and enemies who use the <u>back of the hitbox</u> instead. This means that Omni Strike units stay farther from the base than an enemy, unless the Omni Strike unit has no piercing range. This gives units with high piercing range like [[Heavenly Herald Papuu]] or [[Cat God the Great (Special Cat)|Cat God the Great]] a massive advantage in standing range when close to a base. Even in this case, Ken is standing 100px farther from the base than he would to an enemy, making him that much safer.
+
+Some units change their effective range for multiple hits of the Omni Strike. In this case, the first hit of the multi-hit is the only one that counts when it comes to distance to stay from the base.
+
+==Trivia==
+*In [[Version 6.0 Update|version 6.0]] of [[Nyanko Daisensou|BCJP]], hurtboxes would not disappear when units were being knocked back, which had [https://youtu.be/S7mv39eOnX4 some serious repercussions] for [[:Category:Rusher-class Cats|rusher-class Cats]]. The change was reverted in [[The Battle Cats|BCEN]] 6.0 and subsequent versions of BCJP.
+*Before it was given an official ability name in [[Version 6.10 Update|Version 6.10]], Omni Strike was classified as being just another type of Long Distance, and was commonly referred to as "negative Long Distance".
+
+{{BC Navigation}}
+
+[[Category:Game Features]]

@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Master Da Xun|Angelic Gory|Hermit Peng|Mighty Gui Zuli|Gabriel|Dober P.D}}
+:''Not to be confused with the [[Infernal Tower]] version of [[Infernal Tower/Floor 15|Floor 15]].''
+'''Floor 15''' is the fifteenth floor of [[Heavenly Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 14 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 160
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Master Da Xun|300%
+|Angelic Gory|100%
+|Hermit Peng|500%
+|Mighty Gui Zuli|300%
+|Gabriel|200%}}
+|boss = {{Magnification|Dober P.D|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +3 (100%, 1 time)
+|XP = 3,040 XP
+|width = 4,000
+|max enemies = 30
+|jpname = 15th Floor
+|script = 15階
+|romaji = 15 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★7
+|prev stage = [[Heavenly Tower/Floor 14|Floor 14]]
+|next stage = [[Heavenly Tower/Floor 16|Floor 16]]
+}}
+
+==Battleground==
+*1 [[Master Da Xun]] spawns after 0.07 seconds<sup>2f</sup>.
+*4 [[Angelic Gory|Angelic Gories]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dober P.D]] spawns as the boss.
+**3 [[Hermit Peng]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+**2 [[Master Da Xun]]s spawn, delay 3.33 seconds<sup>100f</sup>.
+**1 [[Mighty Gui Zuli]] spawns.
+**6 [[Gabriel]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**12 [[Gabriel]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+Despite there being a Dober P.D, using normal meatshield tactics is fine, since Gui Zuli's high damage per hit means that Dober is going to be  missing his attacks often. Bring backliners to deal with Gui Zuli and you should be fine.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-15.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]

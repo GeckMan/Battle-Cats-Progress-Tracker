@@ -1,0 +1,96 @@
+{{Documentation}}
+This template is used to display the map difficulty of an [[Special Events|Event]] map, [[Enigma Stages|Enigma]] map, [[Collaboration Events|Collaboration]] map or [[Legend Stages]] sub-chapter.
+
+==Parameters==
+''The difficulty works in the exact same way as [[Template:Stars]].''
+
+<pre>{{Map Stars|difficultyValue|mapType|nobutton=}}</pre>
+<code>difficultyValue</code> is a numerical representation of the map difficulty. It is determined by interpreting the stars in a difficulty as a binary number with the most significant bit on the right (reversed in simple terms) with an empty star being 0 and a filled star being 1. For example, if the 3rd and 8th stars are filled, the number is 2^2 + 2^7 = 132.
+
+<code>mapType</code> is an optional parameter acting as a specifier for the background color. It takes the values SoL, UL, ZL, E, C and EN. SoL is for Stories of Legend, UL is for Uncanny Legends, ZL is for Zero Legends, E is for Event Stages, C is for collaboration stages and EN is for Enigma maps. If the value does not equal any of these values (with case sensitivity) or is unused, the color is dependent on difficulty, becoming closer to red with a higher difficulty and closer to purple with a lower difficulty.
+
+<code>nobutton</code> is a named and optional parameter that hides the info button to the right of the template. No argument needs to be passed, meaning that the parameter just has to be included.
+
+==Usage==
+<tabber>
+Dependent on Difficulty=
+<pre>
+{{Map Stars|1}}
+{{Map Stars|2}}
+{{Map Stars|4}}
+{{Map Stars|8}}
+{{Map Stars|16}}
+{{Map Stars|32}}
+{{Map Stars|64}}
+{{Map Stars|128}}
+{{Map Stars|256}}
+{{Map Stars|512}}
+{{Map Stars|1024}}
+{{Map Stars|2048}}
+{{Map Stars|4095}}
+</pre>
+===Result===
+{{Map Stars|1}}
+{{Map Stars|2}}
+{{Map Stars|4}}
+{{Map Stars|8}}
+{{Map Stars|16}}
+{{Map Stars|32}}
+{{Map Stars|64}}
+{{Map Stars|128}}
+{{Map Stars|256}}
+{{Map Stars|512}}
+{{Map Stars|1024}}
+{{Map Stars|2048}}
+{{Map Stars|4095}}
+
+|-|Stories of Legend=
+<pre>
+{{Map Stars|16|SoL}}
+</pre>
+===Result===
+{{Map Stars|16|SoL}}
+
+|-|Uncanny Legends=
+<pre>
+{{Map Stars|512|UL}}
+</pre>
+===Result===
+{{Map Stars|512|UL}}
+
+|-|Zero Legends=
+<pre>
+{{Map Stars|1024|ZL}}
+</pre>
+===Result===
+{{Map Stars|1024|ZL}}
+
+|-|Event Stages=
+<pre>
+{{Map Stars|4095|E}}
+</pre>
+===Result===
+{{Map Stars|4095|E}}
+
+|-|Collaboration=
+<pre>
+{{Map Stars|174|C}}
+</pre>
+===Result===
+{{Map Stars|174|C}}
+
+|-|Enigma Map=
+<pre>
+{{Map Stars|384|EN}}
+</pre>
+===Result===
+{{Map Stars|384|EN}}
+
+|-|No Text=
+<pre>
+{{Map Stars|4095|nobutton=}}
+</pre>
+===Result===
+{{Map Stars|4095|nobutton=}}
+
+</tabber>

@@ -1,0 +1,64 @@
+'''Bang-Bang''' (だっふんと機関銃 ''Daffun to Kikan Jū'', "'''[[wikipedia:Sailor Suit and Machine Gun (film)|Dagshund and Machine Gun]]'''") is a [[:Category:Traitless Enemies|Traitless]] enemy introduced in [[FINALS WEEK#Go Go Graduates!|Go Go Graduates!]]. She was added in [[Version 6.9 Update|Version 6.9]].
+
+{{Enemy Info
+|name = Bang-Bang
+|image = E 390.png
+|appearance = [[FINALS WEEK#Go Go Graduates!|Go Go Graduates!]]<br>[[Citadel#Traitless|Traitless Citadel]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+A [[Dagshund]] with a sailor suit and machine gun. She has a longer backswing and attack rate making her even easier to stall, but she makes up for that with the ability to slow cats from afar.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[FINALS WEEK#Go Go Graduates!|Go Go Graduates!]]:
+**[[One-Use Cannon]] (50%)
+**[[Sanitary Corps]] (100%)
+**[[Cat Army's Day Off]] (200%)
+*[[Halloween Party!##04 Mischievous Schemes|#04 Mischievous Schemes]]: [[Worldwide Oversleep]] (100%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2018 Debut]] (200%)
+*[[Traitless Citadel]]: [[Traitless Citadel/Floor 7|Floor 7]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Bang-Bang
+|Health = 180000
+|Attack Power = 7500
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 64
+|Movement Speed = 8
+|Knockback = 1
+|Foreswing = 2
+|Backswing = 62
+|Ability = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+390 e.png|Bang-Bang's spritesheet
+IdleBangBang.gif|Bang-Bang's moving animation
+</gallery>
+
+==Trivia==
+*She is a direct reference to Izumi Hoshi, the machine-gun-wielding schoolgirl from the movie ''[[wikipedia:Sailor Suit and Machine Gun (film)|Sailor Suit and Machine Gun]]''.
+
+==Reference==
+*https://battlecats-db.com/enemy/392.html
+
+----
+{{EnemyNav|Pigge Victorious|Mentori}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]

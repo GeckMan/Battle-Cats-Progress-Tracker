@@ -1,0 +1,110 @@
+:''For the Cat Unit, see [[Mecha-Bun (Special Cat)]]. Not to be confused with [[Bun Bun Monger Prototype (PC Special Cat)|Bun Bun Monger Prototype]].''
+'''Mecha-Bun''' (レジェンドブンブンΩ, ''Rejendo Bun Bun Ω'', '''Legend Bun Bun Ω''') is a [[:Category:Floating Enemies|Floating]] enemy introduced in [[Eldritch Forces]], the final stage of [[Stories of Legend]]. It can be unlocked as a [[Mecha-Bun (Special Cat)|Special Cat]] at a guaranteed chance in said stage. It was added in [[Version 7.0 Update|Version 7.0]].
+
+{{Enemy Info
+|name = Mecha-Bun
+|image = E 405.png
+|first appearance = '''SoL''': [[Eldritch Forces|Sub-chapter 49 - Eldritch Forces]]
+|latest appearance = '''UL''': [[Hell's All-Stars|Sub-chapter 38 - Hell's All-Stars]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+A robotic version of [[Teacher Bun Bun]] piloted by a [[Doge]]. Universally amongst Teacher Bun Bun's variants, Mecha-Bun sports gargantuan health and DPS, but it also has an Omni Strike with 40 piercing range, with greater speed and attack rate.
+
+Despite its name and appearance, Mecha-Bun isn't a [[:Category:Metal Enemies|Metal]] enemy.
+
+==Strategy==
+If you don't want Mecha-Bun to push, your safest option is to not let it attack at all. The best unit and the only one you will need to perma-freeze it in Eldritch Forces is [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]], who outranges Mecha-Bun's Omni Strike by 60. You might also want to use either [[Kotatsu Cat (Super Rare Cat)|Sadako Cat]] or [[Curling Cat (Rare Cat)|Cleanerbot Cat]] to stop Mecha-Bun in its tracks so your Necro-Dancer Cats can attack it more safely. The [[Ototo Corps#Thunderbolt|Thunderbolt Cannon]] can help with the beginning of the fight, as it will ensure that your crowd-controllers attack before Mecha-Bun. You also need some [[:Category:Long Distance Cats|Long Distance]]/[[:Category:Wave Attack Cats|Wave]]/[[:Category:Surge Attack Cats|Surge]]/[[:Category:Explosion Cats|Explosion]] units to clear the peons such that they don't prevent your crowd-control units from hitting Mecha-Bun.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 405
+|Type = Floating
+|Image1 = Enemy icon 405.png
+|Name1 = Mecha-Bun
+|Desc1 = Artifact of an ancient empire which once ruled<br>the Earth. A dark union of Doges has revived<br>this terrible force, but thankfully they only<br>have one copy of the pilot's manual to share!
+|Name1 (JP) = レジェンドブンブンΩ (Rejendo Bun Bun Ω, Legend Bun Bun Ω)
+|Desc1 (JP) = かつて地上を支配した古代種の力を<br>闇の組織が蘇らせた。圧倒的な手数で<br>敵をボコボコに出来るが、パイロットが<br>乗り物酔いになりやすいのが難点。
+|Transl1 (JP) = A dark organization has revived the power of the<br>[[:Category:Relic Enemies|Ancient Species]] that once ruled the Earth. Can crush<br>enemies with overwhelming effort, but the drawback<br>is that it can easily cause the pilot motion sickness.
+|Name1 (TW) = 傳奇噴噴Ω
+|Desc1 (TW) = 黑暗組織甦醒了過去曾支配陸地<br>的古代種之力。以迅速的連環攻擊<br>打到敵人體無完膚,但頭痛的是操縱的<br>飛行員很容易暈機。
+|Name1 (KR) = 레전드 맴매Ω
+|Desc1 (KR) = 옛날옛적 지상을 지배한 고대종의 힘을<br>어둠의 조직이 되살렸다. 압도적인 파워로<br>얼마든지 적을 너덜너덜하게 만들 수 있지만<br>파일럿이 멀미가 심하다는 것이 옥에 티
+}}
+
+==Variants==
+{{Variant
+|original = Mecha-Bun
+|inherit_desc = yes
+|Relic Bun-Bun
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 49-1: [[Eldritch Forces]] (100%)
+
+===[[Uncanny Legends]]===
+*Stage 38-5: [[Infernal Forces]] (100%)
+*Stage 38-6: [[Hell's All-Stars]] (100%)
+
+===[[Zero Legends]]===
+*Stage 32-4: [[A Barrier Great]] (120%)
+
+===[[Special Events|Event Stages]]===
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 48|Floor 48]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 48|Floor 48]] (100%)
+*[[Golden Tower]]: [[Golden Tower/Floor 48|Floor 48]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Mecha-Bun
+|Health = 3000000
+|Attack Power = 22222
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 23
+|Knockback = 10
+|Foreswing = 10
+|Backswing = 8
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~240)
+|Element = Floating
+}}
+
+{{UnitViewer|enemy|bg=Bg095.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+405 e.png|Mecha-Bun's spritesheet
+IdleMechaBun.gif|Mecha-Bun's moving animation
+</gallery>
+
+==Trivia==
+*Mecha-Bun's Japanese name contains the Greek letter Ω ([[wikipedia:Omega|omega]]), which is the twenty-fourth and last letter of the Greek alphabet and often used to denote the end, the final part, or the limit of something.
+**This contrasts the final boss of [[Uncanny Legends]], [[Zero Luza]], who is associated with beginnings: its stage is named [[Revival of Origin]], its Japanese description states that it took in energy said to be the origin of all things, and [[Great Ape Luza]] is considered the origin of humans. Furthermore, [[Mecha-Bun (Special Cat)|allied Mecha-Bun]]'s description refers to it as an ancient superweapon, while Zero Luza is an ancient guardian of the [[Sacred Forest]], and both enemy Mecha-Bun and Zero Luza have Omni Strike and attack with their fists.
+*Its Japanese description directly mentions the [[:Category:Relic Enemies|Relics]] before the player first encounters them, whereas the English description describes it as an ancient empire.
+*The "dark organization" in its Japanese description refers to the "organization conducting research to awaken ancient power" from the Japanese [[Stories of Legend]] ending. In [[The Battle Cats|BCEN]], these were localized as "a dark union of [[Doge]]s" and "a shadowy conspiracy researching how to awaken Relic powers" respectively.
+*Since Mecha-Bun consists of a Doge and a mechanical [[Teacher Bun Bun]], it can be seen as a combination of the first and last enemies from [[Empire of Cats]], as well as the last enemies from the two stages preceding [[Eldritch Forces]] ([[Twilight Zephyr]]'s Teacher Bun Bun and [[Unkept Promises]]' Doge).
+*Not counting [[Idi:Re]], the first and last new enemies introduced in Stories of Legend are technological variants of the first and last bosses of Empire of Cats. [[Metal Hippoe]] is a cyborg [[Hippoe]], while Mecha-Bun is a mechanical Teacher Bun Bun.
+*Prior to the [[Version 9.9 Update]], Mecha-Bun's Omni Strike had an effective range of -270~270.
+*Even though Mecha-Bun is supposed to come as a surprise, the player can spoil its name for themselves through the ''Buns of Steel'' [[Meow Medals|Meow Medal]]'s description, which becomes visible after unlocking [[Miyamoku Musashi (Special Cat)|Miyamoku Musashi]].
+
+==Reference==
+*https://battlecats-db.com/enemy/407.html
+
+----
+{{EnemyNav|Misa Ono & Doge|Relic Bun-Bun}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Mythic Bosses]]

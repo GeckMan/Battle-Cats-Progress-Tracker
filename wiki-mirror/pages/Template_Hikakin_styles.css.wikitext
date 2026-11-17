@@ -1,0 +1,9 @@
+.ranger-navbox.hikakin {
+	--bg-navbox-title: linear-gradient(to right, hsl(337, 71%, 62%) 0%, hsl(337, 71%, 70%) 100%);
+	--bg-sub-table-title: #ffe204;
+	--bg-group-name: hsl(320, 67%, 60%);
+
+	--sub-title-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

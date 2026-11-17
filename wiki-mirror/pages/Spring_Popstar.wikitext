@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Glowstick Guys|B.B.Bunny|Sir Seal|MikuDoge|Sakura Miku}}
+'''Spring Popstar''' is the first stage in [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]].
+
+{{Stage Info
+|stage name = [[File:rc139.png]]
+[[File:Mapsn128 00 c en.png]]
+|stage location = [[File:Mapname128 c en.png]]
+|energy = 120
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Glowstick Guys|100%
+|B.B.Bunny|400%
+|Sir Seal|400%
+|MikuDoge|25%}}
+|boss = {{Magnification|Sakura Miku|25%}}
+|enemies2 = {{Magnification|Glowstick Guys|150%
+|B.B.Bunny|600%
+|Sir Seal|600%
+|MikuDoge|37%}}
+|boss2 = {{Magnification|Sakura Miku|37%}}
+|enemies3 = {{Magnification|Glowstick Guys|200%
+|B.B.Bunny|800%
+|Sir Seal|800%
+|MikuDoge|50%}}
+|boss3 = {{Magnification|Sakura Miku|50%}}
+|treasure = One of the following (unlimited):<br>
+- [[Battle Items#Speed Up|Speed Up]] +1<br>
+- [[Battle Items#Cat CPU|Cat CPU]] +1<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+- [[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|XP = 3,600 XP
+|width = 4,400
+|max enemies = 10
+|jpname = Spring Color Pop Star
+|script = 春色ポップスター
+|romaji = Shunshoku Poppu Sutā
+|star = 3
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]
+|difficulty = ★4
+|prev stage = N/A
+|next stage = [[Scent of Blossoms]]
+}}
+
+==Battleground==
+*Infinite [[Glowstick Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 3.33 seconds<sup>100f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sakura Miku (Enemy)|Sakura Miku]] spawns as the boss.
+**3 [[Sir Seal]]s spawn, delay 23.33 seconds<sup>700f</sup>.
+**Infinite [[MikuDoge]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02128-01.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

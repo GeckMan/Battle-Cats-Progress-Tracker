@@ -1,0 +1,167 @@
+'''Marshmallow Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating any stage from the [[War on Valentines#War on Valentines|War on Valentines]] event. It was added in [[Version 3.5 Update|Version 3.5]].
+
+{{Cat Info
+|ID = 176
+|rarity = RR
+|name1 = Marshmallow Cat
+|name2 = Creepmallow
+}}
+
+==Evolution==
+Evolves into '''Creepmallow''' at level 10.
+
+==Strategy/Usage==
+Marshmallow Cat shows very little use outside of [[Empire of Cats]], as it is outclassed by even [[Gross Cat (Normal Cat)|Sexy Legs Cat]], who sports a higher range, shorter cooldown and foreswing, shorter time between attacks, and lower cost. However, his main usage is for the [[Gross!!! (Combo)|Gross!!!]] combo, which increases the duration of freeze. This is very useful for units like [[Flower Cat (Special Cat)|Bombercat]] and [[Apple Cat (Super Rare Cat)|iCat]], as it allows them to perma-freeze enemies more easily.
+
+{{Job|Classification = Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Roasted Marshmallow|Bounty Up (Sm)|Bora|Marshmallow Cat|jpname=焼きマシュマロ}}
+|{{CatCombo|Soft and Flexible|Base Defense Up (M)|Nobiluga|Creepmallow|jpname=伸縮性と弾力性}}
+|{{CatCombo|Gross!!!|"Freeze" Effects Up (M)|Gross Cat|Crazed Gross Cat|Creepmallow|jpname=キモモモ}}
+|{{CatCombo|Sweets|Cannon Recharge Up (M)|Lollycat|Pastry Cat|Marshmallow Cat|jpname=スイーツ}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 176
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni176 f00.png
+|Image2 = Uni176 c00.png
+|Name1 = Marshmallow Cat
+|Desc1 = A sugary treat who likes cuddling rough!<br>Wraps his enemy in jet-puffed sweetness<br>before viciously smashing them over and over.
+|Name2 = Creepmallow
+|Desc2 = Quickly toasted over a roaring bonfire,<br>his burning body brings back happy memories.<br>Delivers powerful beatings with his soft body!
+|Name1 (JP) = マシュマロにゃん (Mashumaro Neko, Marshmallow Cat)
+|Desc1 (JP) = 純粋な愛へのお返しのマシュマロ型にゃんこ<br>やわらかく相手のご厚意を包みます<br>持ち前の弾力で相手に猛アタック
+|Transl1 (JP) = Marshmallow shaped kitten given in exchange for pure love!<br>Softly envelops the other party's kindness.<br>It attacks the opponent fiercely with its own flexibility.
+|Name2 (JP) = キモマロにゃん (Kimomaro Neko, Gross Mallow Cat)
+|Desc2 (JP) = 急なバーベキューでもすぐに焼ける<br>便利な脚付きのマシュマロ型にゃんこ<br>持ち前の弾力で相手に猛アタック
+|Transl2 (JP) = Ready to grill on short notice, even at a barbecue.<br>Marshmallow-shaped kitten with convenient legs.<br>It attacks the opponent fiercely with its own flexibility.
+|Name1 (TW) = 棉花糖貓
+|Desc1 (TW) = 內餡包著準備回送給對方的滿滿心意<br>純愛口味的棉花糖貓<br>觸感超強彈力打擊不留情
+|Name2 (TW) = 長腳棉花糖貓
+|Desc2 (TW) = 遇到ＢＢＱ就會馬上烤焦<br>因為帶有雙長腳，加上超強觸感與彈力<br>在打擊方面猛攻不留情
+|Name1 (KR) = 마시멜로 냥코
+|Desc1 (KR) = 순수한 사랑의 보답인 마시멜로 냥코<br>부드럽고 따뜻하게 당신의 마음을 감싸안을게요<br>마시멜로의 탱글탱글 탄력으로 적에게 맹공격!
+|Name2 (KR) = 징글마시멜로 냥코
+|Desc2 (KR) = 언제 어디서나 가볍게 먹을 수 있는<br>네발 다리 마시멜로 냥코<br>마시멜로의 탱글탱글 탄력으로 적에게 맹공격!
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Marshmallow Cat
+|Normal Base HP = 420
+|Normal Base AP = 180
+|Normal Range = 340
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 179
+|Normal Attack Length = 54
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 420
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Creepmallow
+|Evolved Base HP = 420
+|Evolved Base AP = 180
+|Evolved Range = 340
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 179
+|Evolved Attack Length = 54
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 420
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 420 HP
+|val-Normal-Attack Power = 180 damage<br>(26.87 DPS)
+|val-Normal-Attack Range = 340
+|val-Normal-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 7,140 HP
+|val-Normal-MaxAttack = 3,060 damage<br>(456.72 DPS)
+|val-Evolved-Health = 7,140 HP
+|val-Evolved-Attack Power = 3,060 damage<br>(456.72 DPS)
+|val-Evolved-Attack Range = 340
+|val-Evolved-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Nyanko Defence Force]]===
+Marshmallow Cat and its evolution appear in Nyanko Defence Force as a Uber Super Rare team member. It can be obtained through the gacha system.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|マシュマロにゃん (Mashumaro Neko, Marshmallow Cat)
+! scope="row" style="text-align: center;"|キモマロにゃん (Kimomaro Neko, Gross Mallow Cat)
+! scope="row" style="text-align: center;"|ラブマロにゃん (Rabumaro Neko, Love Mallow Cat)
+|-
+| colspan="2" |[[File:FC46 T1.png|center|200px]]
+|[[File:FC46 T2.png|center|200px]]
+|[[File:FC46 T3.png|center|200px]]
+|-
+! scope="col" colspan="4" style="text-align: center;"|Stats At Level 30
+|-
+! scope="col" colspan="2" |Rarity
+| colspan="2" |Uber Super Rare
+|-
+! scope="col" rowspan="3" |Attack
+! scope="col" |3/3 Zodiac Signs
+| colspan="2" |216
+|-
+! scope="col" |2/3 Zodiac Signs
+| colspan="2" |160
+|-
+! scope="col" |1/3 Zodiac Signs
+| colspan="2" |133
+|-
+! scope="col" colspan="2" |Skill
+| colspan="3" |[[File:Skill 5.jpg|50px]] If you take the "Apple of Passion" that this character releases with a 50% chance every 6 seconds, the captain's attack speed +15% (4 seconds)<br>[[File:Skill 12.jpg|50px]] Follows the boss and deal 100% damage
+|}
+</div>
+
+{{Gallery|Uni176 f00}}
+
+==Trivia==
+*Prior to [[Version 4.7 Update|Version 4.7]], Marshmallow Cat was a part of another [[Cat Combo]] called [[Grocery Cart (Removed Combo)|Grocery Cart]].
+*Despite not having a [[True Form]] in The Battle Cats, Marshmallow Cat has a third form in [[Nyanko Defence Force]], which looks like Creepmallow holding a box of chocolates.
+*Not counting [[:Category:Collaboration Event Cats|Collaboration Cats]], Marshmallow Cat is the oldest existing Rare Cat without a [[True Form]].
+
+==Reference==
+*https://battlecats-db.com/unit/177.html
+
+----
+{{CatNav|Meowla Meowla|Dioramos}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]

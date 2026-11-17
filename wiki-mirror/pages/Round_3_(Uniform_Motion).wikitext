@@ -1,0 +1,62 @@
+{{DISPLAYTITLE:Round 3}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Metal Hippoe|Squire Rel|Sir Rel|Othom|Cumulus Gallus|Oldhorn|Metal One Horn}}
+'''Round 3''' is the third stage in [[Otherworld Colosseum#Uniform Motion|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 02 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,600,000 HP
+|enemies = {{Magnification|Metal Hippoe|300%
+|Squire Rel|4,000%
+|Sir Rel|100%
+|Othom|100%
+|Oldhorn|100%
+|Metal One Horn|300%}}
+|boss = {{Magnification|Cumulus Gallus|100%}}
+|enemies2 = {{Magnification|Metal Hippoe|360%
+|Squire Rel|4,800%
+|Sir Rel|120%
+|Othom|120%
+|Oldhorn|120%
+|Metal One Horn|360%}}
+|boss2 = {{Magnification|Cumulus Gallus|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,800
+|max enemies = 30
+|jpname = Round 3
+|script = Round 3
+|romaji = Round 3
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Uniform Motion|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 2 (Uniform Motion)|Round 2]]
+|next stage = [[Round 4 (Uniform Motion)|Round 4]]
+}}
+
+==Rules==
+{{ColosseumRule|Uniform Motion|12}}
+
+==Battleground==
+*2 [[Metal Hippoe]]s spawn after 6.67 seconds<sup>200f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*30 [[Squire Rel]]s spawn after 8 seconds<sup>240f</sup>, delay 1.33~2 seconds<sup>40f~60f</sup>.
+*3 [[Sir Rel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Othom]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Squire Rel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*1 [[Cumulus Gallus]] spawns as the boss after 43.33 seconds<sup>1,300f</sup>.
+*2 [[Sir Rel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*1 [[Oldhorn]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Metal One Horn]] spawns after 120 seconds<sup>3,600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36011-03.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

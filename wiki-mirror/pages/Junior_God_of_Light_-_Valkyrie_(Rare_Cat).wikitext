@@ -1,0 +1,119 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For other uses, see [[Valkyrie (disambiguation)|Valkyrie]].''
+'''Junior God of Light - Valkyrie''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.4 Update|Version 4.4]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Yurudrasil Collaboration Event]].
+
+{{Cat Info
+|ID = 232
+|rarity = RR
+|name1 = Junior God of Light - Valkyrie
+|name2 = Junior God of Light - Valkyrie CC
+}}
+
+==Evolution==
+Evolves into '''Junior God of Light - Valkyrie CC''' at level 10
+
+==Strategy/Usage==
+Valkyrie is a downright irrelevant crowd-control unit. With stats similar to [[Tin Cat (Rare Cat)|Tin/Plane Cat]], an already bad sign, she has worse range and a slightly longer cooldown in exchange for a marginally better [[Knockback|Knockback]] rate. She does poorly against Dark enemies for the same reason Tin Cat does: [[Single Attack]] that's ineffective against groups of enemies, the aggressive nature of Dark enemies (amplified by Valkyrie's low range), the fact that Dark enemies hardly need Knockback as they typically have large stagger counts, and superior alternatives, mainly [[Flower Cat (Special Cat)|Bombercat]]. Embarrassingly, Robocat is essentially a direct upgrade to her kit, range, [[Talents]], and all. Her one relevant use is to Knockback [[Dark Otter]]s if other options such as Robocat, Bombercat, and [[Cat Gunslinger (Rare Cat)|Rodeo Cat]] are somehow inaccessible.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 232
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni232 f00.png
+|Image2 = Uni232 c00.png
+|Name1 (JP) = 光の神徒ヴァルキリー
+|Desc1 (JP) = ゆるドラシルから参戦！<br>力を求めにゃんこの世界に降り立った戦乙女<br>ごくたまに黒い敵をふっとばす
+|Transl1 (JP) = Joining the war from YuruDrasil!<br>A war maiden who came down to this world in search of power.<br>Very occasionally blows back Dark enemies
+|Name2 (JP) = 光の神徒ヴァルキリーCC
+|Desc2 (JP) = ゆるドラシルから参戦！<br>幾多の試練を乗り越えた神立ヴァルキリー養成学校の卒業生<br>ごくたまに黒い敵をふっとばす
+|Transl2 (JP) = Joining the war from YuruDrasil!<br>A graduate of the National Valkyrie Training School who has overcome many trials.<br>Very occasionally blows back Dark enemies
+|Name1 (KR) = 빛의 신도 발키리
+|Desc1 (KR) = 유루드라실에서 참전!<br>더욱 강한 힘을 찾아 냥코 세계에 내려 온 발키리<br>아주 가끔 검은 적을 날려버린다
+|Name2 (KR) = 빛의 신도 발키리CC
+|Desc2 (KR) = 유루드라실에서 참전!<br>수많은 시련을 극복한 신립 발키리 양성학교의 졸업생<br>아주 가끔 검은 적을 날려버린다
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Junior God of Light - Valkyrie
+|Normal Base HP = 550
+|Normal Base AP = 90
+|Normal Range = 255
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 24
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Junior God of Light - Valkyrie CC
+|Evolved Base HP = 700
+|Evolved Base AP = 120
+|Evolved Range = 255
+|Evolved Foreswing = 10
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 24
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 550 HP
+|val-Normal-Attack Power = 90 damage<br>(55.1 DPS)
+|val-Normal-Attack Range = 255
+|val-Normal-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 9,350 HP
+|val-Normal-MaxAttack = 1,530 damage<br>(936.73 DPS)
+|val-Evolved-Health = 11,900 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(1,248.98 DPS)
+|val-Evolved-Attack Range = 255
+|val-Evolved-Attack Frequency = 49f <sub>1.63 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 10f <sup>0.33s</sup><br>(14f <sup>0.47s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni232 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/233.html
+
+----
+{{CatNav|Oden|Junior God Brynhildr}}
+----
+
+{{Yurudrasil}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]

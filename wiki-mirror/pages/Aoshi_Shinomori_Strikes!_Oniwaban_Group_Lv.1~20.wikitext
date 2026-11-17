@@ -1,0 +1,372 @@
+{{StrategyNeeded}}
+<tabber>
+Oniwaban Group Lv.1~10=
+{{EnemiesAppearing|Baa Baa|Sir Seal|B.B.Bunny|One Horn|Aoshi Shinomori}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn017 00 ca en.png]]
+|stage location = [[File:Mapname017 ca en.png]]
+|enemies = {{Magnification|Baa Baa|0
+|Sir Seal|0
+|B.B.Bunny|0
+|One Horn|0}}
+|boss = {{Magnification|Aoshi Shinomori|0}}
+|width = 5,000
+|max enemies = 15
+|jpname = Oniwaban Lv.
+|script = 御庭番衆 Lv.
+|romaji = Oniwabanshū Lv.
+}}
+
+==Battleground==
+*Infinite [[Baa Baa]]s spawn after 20 seconds<sup>600f</sup>, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+*2 [[Sir Seal]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*7 [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Aoshi Shinomori (Enemy)|Aoshi Shinomori]] spawns as the boss.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**10 [[Sir Seal]]s spawn, delay 66.67 seconds<sup>2,000f</sup>.
+**2 [[One Horn]]s spawn, delay 53.33 seconds<sup>1,600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Aoshi Shinomori (Enemy)|Aoshi Shinomori]]
+! scope="col" |[[Baa Baa]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[One Horn]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+!scope="row" |1
+|100%
+|400%
+|400%
+|400%
+|400%
+|80,000
+|70
+|XP +250,000
+|1,330
+|-
+!scope="row" |2
+|156%
+|578%
+|578%
+|578%
+|578%
+|120,000
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|1,330
+|-
+!scope="row" |3
+|212%
+|756%
+|756%
+|756%
+|756%
+|160,000
+|70
+|[[Catamin]] [A] +3
+|1,330
+|-
+!scope="row" |4
+|268%
+|934%
+|934%
+|934%
+|934%
+|200,000
+|70
+|[[Catamin]] [B] +3
+|1,330
+|-
+!scope="row" |5
+|324%
+|1,112%
+|1,112%
+|1,112%
+|1,112%
+|240,000
+|90
+|[[Catamin]] [C] +3
+|1,710
+|-
+!scope="row" |6
+|380%
+|1,290%
+|1,290%
+|1,290%
+|1,290%
+|290,000
+|90
+|XP +500,000
+|1,710
+|-
+!scope="row" |7
+|436%
+|1,468%
+|1,468%
+|1,468%
+|1,468%
+|320,000
+|90
+|[[Cat Capsule|Cat Ticket]] +2
+|1,710
+|-
+!scope="row" |8
+|492%
+|1,646%
+|1,646%
+|1,646%
+|1,646%
+|370,000
+|90
+|[[Leadership]] +1
+|1,710
+|-
+!scope="row" |9
+|548%
+|1,824%
+|1,824%
+|1,824%
+|1,824%
+|410,000
+|90
+|XP +750,000
+|1,710
+|-
+!scope="row" |10
+|600%
+|2,000%
+|2,000%
+|2,000%
+|2,000%
+|450,000
+|110
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,090
+|}
+
+==Strategy==
+[[Crazed Giraffe Cat]] essentially clears this stage. It has high health, high damage, and can stack in Aoshi's blindspot, taking care of the only threat in this level, the One Horns.
+
+|-|
+Oniwaban Group Lv.11~20=
+{{EnemiesAppearing|Doge Dark|Aku Doge|Sinner Snache|Condemned Peng|Aoshi Shinomori|Aku Gory|Dagshund|Devil Wife}}
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn017 00 ca en.png]]
+|stage location = [[File:Mapname017 ca en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|Aku Doge|0
+|Sinner Snache|0
+|Condemned Peng|0
+|Aku Gory|0
+|Dagshund|0
+|Devil Wife|0}}
+|boss = {{Magnification|Aoshi Shinomori|0}}
+|width = 5,800
+|max enemies = 20
+|jpname = Oniwaban Lv.
+|script = 御庭番衆 Lv.
+|romaji = Oniwabanshū Lv.
+}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*1 [[Doge Dark]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Aku Doge]] spawns after 6.67 seconds<sup>200f</sup>.
+*3 [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*10 [[Sinner Snache]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*5 [[Sinner Snache]]s spawn after 32 seconds<sup>960f</sup>, delay 2~5.33 seconds<sup>60f~160f</sup>.
+*1 [[Condemned Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Aoshi Shinomori (Enemy)|Aoshi Shinomori]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+*5 [[Aku Gory|Aku Gories]] spawn after 50 seconds<sup>1,500f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*10 [[Aku Doge]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*2 [[Dagshund]]s spawn after 60 seconds<sup>1,800f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*4 [[Devil Wife|Devil Wives]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 66.67 seconds<sup>2,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Stage
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Aoshi Shinomori (Enemy)|Aoshi Shinomori]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Sinner Snache]]
+! scope="col" |[[Condemned Peng]]
+! scope="col" |[[Aku Gory]]
+! scope="col" |[[Dagshund]]
+! scope="col" |[[Devil Wife]]
+!Treasure
+!Base XP
+|-
+!scope="row" |11
+|700%
+|800%
+|400%
+|400%
+|300%
+|200%
+|400%
+|200%
+|570,000
+|110
+|[[Leadership]] +1
+|2,090
+|-
+!scope="row" |12
+|789%
+|844%
+|422%
+|422%
+|311%
+|211%
+|444%
+|233%
+|640,000
+|110
+|XP +1,000,000
+|2,090
+|-
+!scope="row" |13
+|878%
+|888%
+|444%
+|444%
+|322%
+|222%
+|488%
+|266%
+|710,000
+|120
+|[[Catfruit|Green Catfruit]] +3
+|2,280
+|-
+!scope="row" |14
+|967%
+|932%
+|466%
+|466%
+|333%
+|233%
+|532%
+|299%
+|780,000
+|120
+|[[Catfruit|Purple Catfruit]] +3
+|2,280
+|-
+!scope="row" |15
+|1,056%
+|976%
+|488%
+|488%
+|344%
+|244%
+|576%
+|332%
+|850,000
+|130
+|[[Catfruit|Red Catfruit]] +3
+|2,470
+|-
+!scope="row" |16
+|1,145%
+|1,020%
+|510%
+|510%
+|355%
+|255%
+|620%
+|365%
+|920,000
+|130
+|[[Catfruit|Blue Catfruit]] +3
+|2,470
+|-
+!scope="row" |17
+|1,234%
+|1,064%
+|532%
+|532%
+|366%
+|266%
+|664%
+|398%
+|990,000
+|130
+|[[Catfruit|Yellow Catfruit]] +3
+|2,470
+|-
+!scope="row" |18
+|1,323%
+|1,108%
+|554%
+|554%
+|377%
+|277%
+|708%
+|431%
+|1,060,000
+|140
+|[[Catfruit|Epic Catfruit]] +3
+|2,660
+|-
+!scope="row" |19
+|1,412%
+|1,152%
+|576%
+|576%
+|388%
+|288%
+|752%
+|464%
+|1,130,000
+|140
+|XP +1,500,000
+|2,660
+|-
+!scope="row" |20
+|1,500%
+|1,200%
+|600%
+|600%
+|400%
+|300%
+|800%
+|500%
+|1,200,000
+|150
+|[[Cat Capsule|Cat Ticket]] +3
+|2,850
+|}
+
+==Strategy==
+-
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s27017.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Gauntlets]]
+[[Category:Stages with Base Barriers]]

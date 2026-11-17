@@ -1,0 +1,104 @@
+:''This article is about the enemy. For the Cat Unit, see [[Elder Beast Naala (Special Cat)]].''
+'''Ultima Beast Naala''' (超古獣ナーラ, ''Chō Kojū Nāra'', '''Super Ancient Beast Naala''') is a [[:Category:Relic Enemies|Relic]]/[[:Category:Behemoth Enemies|Behemoth]] enemy introduced in [[Immortal Zenith]], the final stage in [[Behemoth's Peak]]. It is the enemy version of [[Elder Beast Naala (Special Cat)|Elder Beast Naala]]. It was added in [[Version 11.3 Update|Version 11.3]].
+
+{{Enemy Info
+|name = Ultima Beast Naala
+|image = E 599.png
+|appearance =
+|first appearance='''UL''': [[Immortal Zenith|Sub-chapter 43 - Immortal Zenith]]
+|latest appearance='''UL''': [[Atonement for Sin|Sub-chapter 48 - Atonement for Sin]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Ultima Beast Naala stands at 400 range and has a multi-hit attack that covers three separate 200px areas in front of it, reaching up to 600 range on the last hit. The second and third hits deal half as much damage, so long-ranged units may not be punished as harshly as those in the frontlines, but all will be frozen and cursed regardless. Besides that, it has a massive health pool and is immune to [[Surge Attack|Surges]]. This would all make for a truly fearsome opponent or a relatively weak adversary depending on what threat Naala is paired with.
+
+==Strategy==
+:''See each stage's article for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 599
+|Type = Relic/Behemoth
+|Image1 = Enemy icon 599.png
+|Name1 = Ultima Beast Naala
+|Desc1 = A sacred primordial being, known as the<br>most ancient among all forest creatures.<br>Calls down lightning to test trespassers.<br>Those who survive are deemed worthy to live.
+|Name1 (JP) = 超古獣ナーラ (Cho Kojū Nāra, Super Ancient Beast Naala)
+|Desc1 (JP) = 悠久の時を生きる伝説の獣。<br>全ての獣の始祖として崇められている。<br>出会いし者に審判の雷を放ち<br>共に生きる強さがあるか見定めるという。
+|Transl1 (JP) = A legendary beast that has lived for an eternity.<br>Revered as the founder of all beasts.<br>Fires thunderbolts of judgement at those it<br>meets to see if they have the strength to live together.
+|Name1 (TW) = 超古獸納拉
+|Desc1 (TW) = 誕生於遠古時代的傳說野獸。<br>被當作是所有野獸的祖先而受到崇拜。<br>會對遇見牠的人施放審判的閃電<br>來判定對方是否夠資格成為其夥伴。
+|Name1 (KR) = 초 고대수 나라
+|Desc1 (KR) = 기나긴 세월을 살아온 전설의 동물<br>모든 동물의 시조라고 받들어 모셔진다.<br>마주친 자에게 심판의 벼락을 내려<br>함께 살아갈 자격이 있는 자인지 확인한다고 한다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 43-6: [[Immortal Zenith]]
+*Stage 48-4: [[Bestowing Eternity]]
+*Stage 48-5: [[Atonement for Sin]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ultima Beast Naala
+|Health = 3000000
+|Attack Power = 60000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 136
+|Movement Speed = 16
+|Knockback = 3
+|Foreswing = 40
+|Backswing = 56
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">30,000</span> at 40f <sup>1.33s</sup>, <span class="scaled" data-type="ap">15,000</span> at 60f <sup>2s</sup>, <span class="scaled" data-type="ap">15,000</span> at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~201 on 1st hit, 200~400 on 2nd hit, 400~600 on 3rd hit)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Element = Relic/Behemoth
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+599 e.png|Ultima Beast Naala's spritesheet
+Green uhhhh deer.gif|Ultima Beast Naala's animations
+</gallery>
+
+==Trivia==
+*The name Naala (ナーラ ''Nāra'') may be a reference to the Japanese city of [[wikipedia:Nara (city)|Nara]], which is famous for its deer. In fact, Naala and Nara sound almost the same in Japanese.
+*Ultima Beast Naala appears to be based on the [[wikipedia:Qilin|qilin/kirin]], a holy, unicorn-like beast from Chinese mythology that is often depicted with deer-like traits, particularly in Japan. [[Elder Beast Naala (Special Cat)|Elder Beast Naala]]'s Japanese description refers to it as a ''[[wikipedia:Raijū|raijū]]'' (雷獣, "thunder-beast"), a Japanese legendary creature that has a body made of lightning and is represented with the form of many different animals, including a deer or kirin.
+**Naala may specifically be based on [[wikia:monsterhunter:Kirin|Kirin]] from ''Monster Hunter'', as its ability to rapidly call down series of lightning bolts is very similar to ''Monster Hunter''<nowiki>'</nowiki>s Kirin's attacks and [[:Category:Behemoth Enemies|Behemoths]] tend to be references to ''Monster Hunter''.
+*Ultima Beast Naala may represent [[wikipedia:Eikþyrnir|Eikþyrnir]], a heavenly stag in Norse mythology. Awakened Naala is stated to be holy, and Eikþyrnir eats from [[wikipedia:Læraðr|Læraðr]], a tree often identified with [[wikipedia:Yggdrasil|Yggdrasil]]—a possible inspiration for the [[Media:Bg1028.gif|huge, glowing tree]] in the last four [[Uncanny Legends]] stages. The dew that drips from Eikþyrnir's glowing antlers flows into [[wikipedia:Hvergelmir|Hvergelmir]], one of the wellsprings at Yggdrasil's roots, creating rivers that sustain life; this may be referenced by the stage before [[Immortal Zenith]], [[Silver Current]], whose Japanese name confirms that it refers to a water current. Eikþyrnir stands upon one of the afterlife locations, [[wikipedia:Valhalla|Valhalla]], which may correlate or contrast with [[Immortal Zenith]], whose Japanese name (天寿を授ける頂 ''Tenju o Sazukeru Itadaki'') can be literally translated as "The Summit That Bestows Natural Lifespans".
+*The Japanese descriptions of [[Ganglion (Uber Rare Cat)|Ganglion]], whose enemy counterpart [[Ensanglion the Calamity|Ensanglion]] is a Behemoth, and Ultima Beast Naala, another powerful, ancient Behemoth, both use the word 始祖 ''shiso'' (founder or originator; the first person to start something, or the first in a lineage). Ganglion is said to be the founder/originator of all dragons (全てのドラゴンの始祖 ''subete no doragon no shiso''), while Naala is revered as the founder/originator of all beasts (全ての獣の始祖 ''subete no kemono no shiso'').
+*Ultima Beast Naala and Elder Beast Naala are the first characters to have multi-hit attacks with different effective ranges on each hit.
+*Along with [[Ragin' Gory]] and [[Wild Doge]], Ultima Beast Naala was one of the three enemies that were updated to have the Behemoth type in [[Version 11.5 Update|Version 11.5]].
+*Ultima Beast Naala and [[Ancient Magamojoe]] are the only Behemoths to share the same title in their Japanese names. Both are titled Chō Kojū (超古獣, "Super Ancient Beast").
+*Ultima Beast Naala's icon shows all of the lightning from its feet at once, which doesn't happen in-game.
+
+==Reference==
+*https://battlecats-db.com/enemy/601.html
+
+----
+{{EnemyNav|Firecracker|Zapy}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Relic Enemies]]
+[[Category:Behemoth Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with different effective ranges]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Mythic Bosses]]

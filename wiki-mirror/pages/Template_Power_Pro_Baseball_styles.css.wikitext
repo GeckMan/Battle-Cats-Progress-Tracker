@@ -1,0 +1,9 @@
+.ranger-navbox.power-pro {
+	--bg-navbox-title: linear-gradient(to right, hsl(358, 94%, 41%) 0%, hsl(358, 94%, 45%) 100%);
+	--bg-sub-table-title: #fede08;
+	--bg-group-name: hsl(350, 80%, 60%);
+
+	--sub-title-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

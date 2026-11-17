@@ -1,0 +1,86 @@
+{{Documentation}}
+<templatestyles src="Template:GachaDescription/styles.css" />
+This template is used to display lists of Super Rare and Rare Cats on gacha pages. It takes a list of units and outputs the resulting partial table format for the section, and it also has preset outputs from keywords passed to the <code>set</code> parameter: <code>super rare</code> for the normal Super Rare Cats, <code>super rare+</code> for the Super Rare Cats and the Grandon series, and <code>rare</code> for the normal Rare Cats.
+
+==Examples==
+<tabber>
+Using Lists=
+<pre>
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|Hip Hop Cat|Vaulter Cat|Cat Toaster}}
+|-
+| style="width: 100%; background-color: var(--gacha-rarity-rr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Rare
+|-
+{{GachaList|Salon Cat|Tin Cat|Wushu Cat}}
+|}
+</pre>
+
+===Result===
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|Hip Hop Cat|Vaulter Cat|Cat Toaster}}
+|-
+| style="width: 100%; background-color: var(--gacha-rarity-rr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Rare
+|-
+{{GachaList|Salon Cat|Tin Cat|Wushu Cat}}
+|}
+
+|-|Preset Lists=
+<pre>
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|set=super rare+}}
+|-
+| style="width: 100%; background-color: var(--gacha-rarity-rr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Rare
+|-
+{{GachaList|set=rare}}
+|}
+</pre>
+
+===Result===
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|set=super rare+}}
+|-
+| style="width: 100%; background-color: var(--gacha-rarity-rr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Rare
+|-
+{{GachaList|set=rare}}
+|}
+
+|-|Both=
+<pre>
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|Metal Cat|Gold Cat|set=super rare+}}
+|}
+</pre>
+
+===Result===
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-sr); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Super Rare
+|-
+{{GachaList|Metal Cat|Gold Cat|set=super rare+}}
+|}
+
+|-|Gacha Subset=
+<pre>
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-ur); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Uber Rare
+|-
+{{GachaList|Nekoluga|Asiluga|Tecoluga|subset=Tales of the Nekoluga}}
+|}
+</pre>
+
+===Result===
+{| cellpadding="0" cellspacing="4" style="width: 100%;"
+| style="width: 100%; background-color: var(--gacha-rarity-ur); padding: 2px 0 2px 4px; font-weight: bold;" | ▼Uber Super Rare
+|-
+{{GachaList|Nekoluga|Asiluga|Tecoluga|subset=The Nekoluga Family}}
+|}
+</tabber>

@@ -1,0 +1,124 @@
+'''Croakley''' (ケロ助, '''''Kerosuke''''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Legend Stages]]. He was added in [[Version 6.3 Update|Version 6.3]].
+
+{{Enemy Info
+|name = Croakley
+|image = E 355.png
+|first appearance = '''SoL''': [[Broadband Omens|Sub-chapter 41 - Broadband Omens]]
+|latest appearance = '''ZL:''' [[Forest of Irony|Sub-chapter 9 - Forest of Irony]]
+|money drop = 800¢ - 3,160¢
+}}
+
+==Enemy==
+Croakley is durable, has slow movement speed and a Long Distance attack with expansive reach. His damage is not that strong, but it is guaranteed to [[Slow|slow]] all cats for a minute, which may as well be certain death for units that aren't immune. To compensate for a debuff of this caliber, Croakley has a massive blind spot and his standing range is well within it.
+
+==Strategy==
+Treat this enemy like [[Queen B]], but with lower damage and a longer slow. If Croakley is alone, even the weakest of cats can defeat him. If he's paired with a more powerful enemy (like [[The Face]] or [[Berserkory]] in [[Broadband Omens|his debut stage]]), then [[Wave Attack]]s, [[Surge Attack]]s or [[:Category:Long Distance Cats|Long Distance attacks]] can be used to pick him off from a safe distance. When not protected, most units can simply enter the blind spot without much timing.
+
+DO NOT give units the Resist Slow [[Talents|Talent]] solely to counter him, as Croakley's slow has 100% uptime even against [[:Category:Resist Slow Cats|slow-resistant cats]]. [[:Category:Cats with Slow Immunity|Slow Immunity]], on the other hand, is a very useful asset against him.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 355
+|Type = Traitless
+|Image1 = Enemy icon 355.png
+|Name1 = Croakley
+|Desc1 = eSports pro famous for rage-quitting during<br>tournaments by using his tongue to hit the<br>reset button. Guess that's one way to<br>maintain a perfect win-loss ratio...
+|Name1 (JP) = ケロ助 (Kerosuke)
+|Desc1 (JP) = なめプレイで有名なプロ格闘ゲーマーのカエル。<br>負けそうになると舌を伸ばしてリセットを押す。<br>ブーイングの嵐の中でもケロッとしている<br>ド根性の持ち主だがお酒に関しては下戸。
+|Transl1 (JP) = This frog is a pro fighting gamer famous for licking "play".<br>When he's about to lose, he stretches his tongue out to hit "reset".<br>Even in the face of a booing crowd, he's got guts, but<br>when it comes to drinking alcohol, he can't do it.
+|Name1 (TW) = 蛙助
+|Desc1 (TW) = 在電競中很有名的格鬥遊戲選手。<br>快要輸的時候就伸舌頭點選重新來過鍵！<br>面對全場的噓聲仍然一副不在乎的樣子<br>有著一身硬骨頭但是酒量差到不行。
+|Name1 (KR) = 케로롱
+|Desc1 (KR) = 끈적 플레이로 유명한 프로 격투 게이머 개구리.<br>질 것 같으면 혀로 리셋 버튼을 누르며<br>관중의 야유 속에서도 꿋꿋이 개굴 거린다.<br>엄청난 근성을 가지고 있지만 술은 입에도 못 댄다.
+}}
+
+==Variants==
+{{Variant
+|original = Croakley
+|Ribbo
+|A [[:Category:Starred Alien Enemies|Starred Alien]] variant of Croakley. Has lower range, extremely low health, a [[Barrier]] with a breaking point of 65,000, and [[Warp]]s back cats instead of slowing them down.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Stories of Legend]]===
+*Stage 41-6: [[Broadband Omens]] (100%)
+*Stage 42-4: [[Death by Dada]] (100%)
+*Stage 45-2: [[Leaky Tunnel]] (100%)
+*Stage 48-5: [[False Resurrection]] (100%)
+
+===[[Uncanny Legends]]===
+*Stage 8-4: [[Hunter's Hills]] (100%)
+*Stage 10-4: [[Snitches Get Stitches]] (150%)
+*Stage 14-3: [[Rude on the Beach]] (150%)
+*Stage 21-4: [[Stars in the Sewers]] (150%)
+*Stage 25-5: [[Sauna Handstands]] (100%)
+*Stage 31-2: [[The Belated Priest]] (150%)
+*Stage 36-2: [[Reincarnation Ring]] (150%)
+*Stage 45-1: [[Pithouse Academy]] (150%)
+*Stage 48-2: [[Wager of Honor]] (150%)
+
+===[[Zero Legends]]===
+*Stage 9-3: [[Forest of Irony]] (150%)
+*Stage 24-4: [[Snores and Prayers]] (180%)
+*Stage 31-3: [[The Dogma Divide]] (180%)
+
+===[[Special Events|Event Stages]]===
+*[[Empress' Report 4]]: [[Aku Studies 401: Methods]] (100%)
+*[[Empress' Excavation 5]]: [[Archaeology 501: Analysis]] (150%)
+*[[Anniversary/14th Year#鉄壁の中庭|鉄壁の中庭]]: [[サーチアンドデストロイ]] (100%)
+*[[Anniversary/14th Year#脱獄王への道|脱獄王への道]]: [[サーチアンドデストロイ (脱獄王への道)|サーチアンドデストロイ]] (150%)
+
+===[[Underground Labyrinth]]===
+*[[Underground Labyrinth/Stage 39|Stage 39]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Croakley
+|Health = 360000
+|Attack Power = 3789
+|Attack Range = 900
+|Attack Type = Area
+|Time Between Attacks = 149
+|Movement Speed = 3
+|Knockback = 4
+|Foreswing = 20
+|Backswing = 21
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1,100~1,400)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 1,800f <sub>60 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+355 e.png|Croakley's spritesheet
+frogge.gif|Croakley's animations
+</gallery>
+
+==Trivia==
+*His Japanese name, Kerosuke, is a combination of ''kero'', the Japanese onomatopeia for a frog's ribbit, and ''suke'', a common suffix in masculine Japanese names.
+*The line, "He's got guts" (ド根性の持ち主) in his Japanese description may be a reference to the manga ''[[wikipedia:The Gutsy Frog|The Gutsy Frog]]'' (ど根性ガエル).
+*His Japanese description calls him a ''geko'' (下戸), meaning someone who can't or doesn't like to drink alcohol. The joke is that it sounds like げこっ ''geko'', meaning croak.
+**This same joke would later be used as [[Ribbo]]'s Japanese namesake, Gekokku.
+*Since the Korean language doesn't distinguish between "L" and "R", Croakley's Korean name, Kelolong (케로롱), can also be taken as "Kerorong", which may be a reference to [[wikia:keroro:Keroro|Keroro]] from ''[[wikipedia: Sgt. Frog|Sgt. Frog]]''.
+*Judging by his color scheme, Croakley may be based on the [[wikipedia:Grey foam-nest tree frog|grey foam-nest tree frog]],  [[wikipedia:Common reed frog|common reed frog]], or [[wikipedia:Sandhill frog|sandhill frog]]. His white coloration could also be a reference to the [[wikipedia:Gephyromantis blanci|white Madagascar frog]].
+*When he moves, he doesn't actually stay still, instead his sprite moves backwards to make it seem like he is still. This can be seen well if he is slowed. This animation trick is used on various other units that stay still for a bit before moving again, such as [[Kotatsu Cat (Super Rare Cat)|Kotatsu Cat]].
+
+==Reference==
+*https://battlecats-db.com/enemy/357.html
+
+----
+{{EnemyNav|Hermit Cat|Gary Gory}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Stories of Legend Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]

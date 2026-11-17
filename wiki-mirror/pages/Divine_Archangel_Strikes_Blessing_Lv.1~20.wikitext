@@ -1,0 +1,458 @@
+<tabber>
+Blessing 1~10=
+{{EnemiesAppearing|Cerberus Kids|Doge Dark|Aku Doge|Aku Gory|Shadow Boxer K|Dark Otter|Archangel Exiel}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn037 00 a en.png]]
+|stage location = [[File:Mapname037 a en.png]]
+|enemies = {{Magnification|Cerberus Kids|0
+|Doge Dark|0
+|Aku Doge|0
+|Aku Gory|0
+|Shadow Boxer K|0
+|Dark Otter|0}}
+|boss = {{Magnification|Archangel Exiel|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 12
+|jpname = Blessing Lv.X
+|script = 祝福 Lv.X
+|romaji = Shukufuku Lv.X
+|event = [[Divine Archangel Strikes]]
+|event-chapter = [[Divine Archangel Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*10 [[Cerberus Kids]] spawn after 5 seconds<sup>150f</sup>, delay 5~15 seconds<sup>150f~450f</sup>.
+*5 [[Doge Dark]]s spawn after 15 seconds<sup>450f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Aku Doge]]s spawn after 30 seconds<sup>900f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Archangel Exiel]] spawns as the boss.
+**Infinite [[Aku Doge]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**4 [[Aku Gory|Aku Gories]] spawn, delay 16.67 seconds<sup>500f</sup>.
+**2 [[Shadow Boxer K]]s spawn, with a delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**1 [[Dark Otter]] spawns.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Blessing Lv.
+! colspan="7" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! rowspan="2" style="text-align: center;"|Continuation Chance [[Divine Archangel Strikes/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Archangel Exiel]]
+! scope="col" |[[Cerberus Kids]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Aku Gory]]
+! scope="col" |[[Shadow Boxer K]]
+! scope="col" |[[Dark Otter]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|300%
+|800%
+|300%
+|100%
+|200%
+|150%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|114%
+|311%
+|822%
+|311%
+|117%
+|211%
+|161%
+|60
+|Bricks +5
+|1,140
+|3%
+|-
+! scope="row" |3
+|128%
+|322%
+|844%
+|322%
+|134%
+|222%
+|172%
+|70
+|500,000 XP
+|1,330
+|7%
+|-
+! scope="row" |4
+|142%
+|333%
+|866%
+|333%
+|151%
+|233%
+|183%
+|70
+|Coal +5
+|1,330
+|11%
+|-
+! scope="row" |5
+|156%
+|344%
+|888%
+|344%
+|168%
+|244%
+|194%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|170%
+|355%
+|910%
+|355%
+|185%
+|255%
+|205%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|184%
+|366%
+|932%
+|366%
+|202%
+|266%
+|216%
+|90
+|Feathers +5
+|1,710
+|21%
+|-
+! scope="row" |8
+|198%
+|377%
+|954%
+|377%
+|219%
+|277%
+|227%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|212%
+|388%
+|976%
+|388%
+|236%
+|288%
+|238%
+|100
+|Meteorite +5
+|1,900
+|27%
+|-
+! scope="row" |10
+|225%
+|400%
+|1,000%
+|400%
+|250%
+|300%
+|250%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+These first ten stages pair up Exiel with multiple hard pushers, although the difficulty of these stages go down if you use the startoff to build up cash. As long as you have enough Crowd Control and enough stackable DPS, these should be very straightforward.
+
+==='''Recommended Units'''===
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: Ramen's very high base HP allows him to tank blows from the supporting peons in addition to Exiel.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: Boulder Cat's high health allows it to stall Exiel and the high DPS peons for a while.
+*[[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: Spammable anti-Angel midranger that quickly tanks chunks out of Exiel's health.
+*[[Phantom Cat (Rare Cat)|Bubble Cat]]: A unit similar to Mushroom, but with higher standing range and damage.
+*[[Ancient Egg: N110 (Rare Cat)|Farmboy Cat]]: An extremely powerful anti-Angel CC with very high uptime. Farmboy's Single Attack means you need to properly run enough damage to allow Farmboy to connect onto Exiel.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Gets rid of the peons as well as Aku Gory, and can even tank hits from Exiel if needed. Beware that they don't outrange Exiel's Omni Strike.
+*[[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]: An anti-Dark midranger who can deal extremely high damage to the Shadow Boxer Ks and Dark Otters while outranging Exiel. Pizza's damage also works as a generalist for the Aku Gory, and his Wave Attack Talent helps him cover the whole field.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Cyberpunk's long-lasting Slow and incredibly high range makes him extremely useful on this stage.
+*[[Rover Cat (Rare Cat)|Catellite]]: while his HP is inferior to Eraser Cat and his variants against non-aliens, he can tank some hits from Exiel, and his warp immunity prevents him from pushing. It may also provide some form of damage thanks to it's weaken immunity.
+*[[Urs & Fenrir (Special Cat)|Awakened Urs]]: Generic high DPS backliner with Colossus Slayer.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: A unit similar to Urs that trades standing range for high piercing range.
+
+==='''Recommended Ubers'''===
+*Anti-Angel Nukers: Focus on killing Exiel quickly so you can get to the next ten stages faster. Examples include [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]], [[Colossal Benkei]], [[Dynasaurus Cat (Uber Rare Cat)|Dynasaurus Cat]], and [[Obliterator Diabolosa]].
+*Colossal Slayer Ubers: Units like [[God-Emperor Daliasan]], [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]], [[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]] and [[One-Eyed Asuka (Uber Rare Cat)|One-Eyed Asuka]] can deal high damage to Exiel and finish these stages quickly.
+*Fest Ubers: Since these stages are so easy, focus on bringing units that can brute force the stage. Examples include [[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]] and [[Mighty Lord Gao]].
+
+|-|
+Blessing 11~20=
+{{EnemiesAppearing|Ginger Snache|Sir Seal|Bore Jr.|Capy|Mr. Mer|Archangel Exiel}}
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn037 00 a en.png]]
+|stage location = [[File:Mapname037 a en.png]]
+|enemies ={{Magnification|Ginger Snache|0
+|Sir Seal|0
+|Bore Jr.|0
+|Capy|0
+|Mr. Mer|0}}
+|boss = {{Magnification|Archangel Exiel|0}}
+|restriction = [[No Continues]]
+|width = 4,800
+|max enemies = 10
+|jpname = Blessing Lv.X
+|script = 祝福 Lv.X
+|romaji = Shukufuku Lv.X
+|event = [[Divine Archangel Strikes]]
+|event-chapter = [[Divine Archangel Strikes]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*6 [[Ginger Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*4 [[Sir Seal]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Bore Jr.]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Archangel Exiel]] spawns as the boss.
+**Infinite [[Sir Seal]]s spawn, with a delay 20~26.67 seconds<sup>600f~800f</sup>.
+**5 [[Bore Jr.|Bore Jrs]] spawn, with a delay 20 seconds<sup>600f</sup>.
+**2 [[Capy|Capies]] spawn, with a delay 40 seconds<sup>1,200f</sup>.
+**1 [[Mr. Mer]] spawns.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Blessing Lv.
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+! colspan="3" scope="col" style="text-align: center;"|Continuation Chance
+|-
+! scope="col" |[[Archangel Exiel]]
+! scope="col" |[[Ginger Snache]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[Bore Jr.]]
+! scope="col" |[[Capy]]
+! scope="col" |[[Mr. Mer]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+! scope="col" |[[Divine Archangel Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+! scope="col" |[[Divine Archangel Strikes/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! scope="col" |[[Divine Archangel Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|225%
+|500%
+|4,000%
+|100%
+|150%
+|100%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|239%
+|511%
+|4,222%
+|106%
+|161%
+|106%
+|120
+|Beast Bones +5
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|253%
+|522%
+|4,444%
+|112%
+|172%
+|112%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|267%
+|533%
+|4,666%
+|118%
+|183%
+|118%
+|140
+|Sprockets +5
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|281%
+|544%
+|4,888%
+|124%
+|194%
+|124%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|295%
+|555%
+|5,110%
+|130%
+|205%
+|130%
+|200
+|Ammonite +5
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|306%
+|566%
+|5,332%
+|136%
+|216%
+|136%
+|200
+|Gold +15
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|323%
+|577%
+|5,554%
+|142%
+|227%
+|142%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|337%
+|588%
+|5,776%
+|148%
+|238%
+|148%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|350%
+|600%
+|6,000%
+|150%
+|250%
+|150%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+Instead of these stages using the supporting enemies to plow through your units so the boss can attack your base, Exiel aims to remove your units so the enemies here like Bore Jr., Mr. Mer and Capy can wreck havoc on backliners. As you've probably learned with other stages with Bore Jr. in them like [[Revival of Origin]], kill Bore Jr. as fast as you can before he causes too much damage.
+
+Funding shortages is perhaps the greatest issue in the stage, because Sir Seals spawn only around every 20 seconds or so in the main fight and can be difficult to reach with Exiel's incessant advances. Taking down Bore Jr. and Mr. Mer are likewise risky due to their DPS, with Bore Jr. quickly pushing up while Mr. Mer's high health enables him to dismiss many attacks before falling. Their Waves nullify traditional meatshielding, enabling the Capies (with more than 1.3 million health and 130k damage each) to push with terrifying ease. Players should seek to eliminate either the powerful tanks or Exiel as soon as possible while trying to outlast the Traitless Wavers, at which point the stage becomes manageable and can be mopped up with relative ease.
+
+==='''Recommended Units'''===
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: Ramen's very high base HP allows him to tank blows from the supporting peons in addition to Exiel, but suffers greatly in the presence of Capy and Bore Jr. unless supported appropriately, not to mention Exiel's Warp can easily nullify his presence.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: Stalls Exiel and everything else for a short while with its extreme health and Warp Immunity. Works extremely well against Capy in particular.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Courier's Massive vs. Red allows him to do well against the beginning Ginger Snaches and Sir Seals, or even chip the Capies from time to time if given the chance.
+*[[Ancient Egg: N005 (Special Cat)|Hitman Cat]]: Hitman's Wave Immunity and Massive Damage against Traitless allows him to easily cripple the Bore Jr. and quickly whittle down Mr. Mer's high health as long as other units hold the line.
+*[[Bakery Cat (Rare Cat)|Fried Chicken Cat]]: With a high-uptime Curse ability vs Angels and support from Wave Shields, Fried Chicken's LD attacks can disable Exiel's Warp/Weaken abilities, enabling melee units to tank him with little worry.
+*[[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: Mushroom's Wave Immunity makes him a better option than Bubble or Kasa Jizo here, allowing him to chip at the enemies even while the rest of your units are getting demolished by Bore Jr.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Being a cost-efficient attacker, Can Can sees great use at the startoff picking off Ginger Snaches and Sir Seals. With the Extra Money Talent, Can Can is able to quickly acquire massive amounts of funds by exploiting Sir Seal's unusually high money drop, vital for spamming disposable units later on. Meatshields are recommended to improve Can Can's consistency. While not as useful when Exiel is still present, Can Can might be able to land a hit on Bore Jr. to either cripple or outright eliminate him.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]: Your main way to protect your units if you don't have ranged Wave Blockers. Octopus' low standing range means he is going to be tanking a lot of hits, so use Research Combos to send him out frequently.
+*[[Gloomy Neneko (Super Rare Cat)|Costumed Witchy Neneko]]: Similar to Octopus, but has much higher standing range, meaning she won't die nearly as easily.
+*Talented [[Kung Fu Cat (Special Cat)|Dancer Cat]]: When Talented, Dancer's standing range, Wave Immunity, high stats, and Surge allows him to do extremely well on these stages, provided if superior options are not available, as he is expensive for what he does.
+*[[Freshman Cat Jobs (Super Rare Cat)|Headmaster Cat Jobs]]: Somehow, Cat Jobs works here, since unlike most other Gauntlet bosses, Exiel reaches only up to 260 range, while Cat Jobs has 300. By luring Exiel to the base, Cat Jobs can hit Exiel and Weaken him to 1%, enough for many units to quickly whittle him down. DPS units like [[Fencer Cat (Super Rare Cat)|The Kitty of Liberty]], Hitman, and Courier can then be used to finish the stage quickly. Pulling this off is another challenge in itself, however. See the video in the Walkthrough section for more information.
+*[[Jagando Jr. (Special Cat)|Jagando]]: While Jagando isn't Wave Immune, his Strong ability against Traitless means he can tank some Mini-Waves. Despite his short 350 range, he can actually outrange every threat here, with their low range giving him better chances of generating his level 1 Surge Attack on his third hit that carries a 100% Knockback effect. His damage is enough to force Bore Jr. to flinch, and the Knockback likewise is very helpful for keeping Mr. Mer away.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: Disposable damage mainly used for sniping Bore Jr. and potentially whittle Exiel with help from his Colossus Slayer ability.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: A Wave Immune sniper unit whose Colossus Slayer grants higher stats against Exiel and can deal well with the rest of the supporting enemies.
+
+==='''Recommended Ubers'''===
+*[[Wonder MOMOCO (Legend Rare Cat)|Wonder MOMOCO]]: Momoco targets both the boss and the Reds, having a high uptime Freeze and Wave Immunity.
+*[[Cat Tengu (Uber Rare Cat)|Immortal Master Tengu]]: Tengu is designed to demolish this stage. With Strong against both Red and Angels, Colossus Slayer to chip more at Exiel, Wave Immunity, and 50% Knockback in case if either Exiel or the nasty Reds are pushing too much.
+*[[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]]: Lunacia absolutely destroys this stage. She's tied for the highest range for a Wave Blocker, and she can also freeze the Capies, Sir Seals and Ginger Snaches, preventing them from getting in the way of other units. Her Explosion is also very powerful, and the lingering effect works very well for attacking the many Bore Jrs. in this stage.
+*Anti-Angel Nukers: Killing Exiel makes the rest of the stage a lot easier. Examples include [[Kasa Jizo (Uber Rare Cat)|Jizo's Mega-Castle]], [[Mami Tomoe (Uber Rare Cat)|Mami Tomoe]], [[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]], [[Dynasaurus Cat (Uber Rare Cat)|Dynasaurus Cat]] and [[Ushiwakamaru (Legend Rare Cat)|Colossal Benkei]].
+*[[Lasvoss (Uber Rare Cat)|Lasvoss]] - While primarily used for his three-slot Research Combo [[Bad Guys (Combo)|Bad Guys]], Lasvoss is actually much more useful here since unlike all other Gauntlet stages, his 320 range enables him to safely engage most enemies here, with Capy being the only exception who's still nullified by meatshielding. Many have very few knockbacks, giving Lasvoss a good chance to land a devastating hit. His cost might be fairly high and so many formations find it difficult to deploy or defend him, but when the opportunity presents itself he can tremendously speed up the fight. If that wasn't enough, he has Wave/Warp Immunity, with talents boosting speed and granting Colossus Slayer.
+*Anti-Angel CC: Any unit that can control Exiel helps a ton here. Examples include [[Trickster Himeyuri (Uber Rare Cat)|Fox Queen Himeyuri]], [[Empress Chronos (Uber Rare Cat)|Almighty Chronos]], and [[Momotaro (Uber Rare Cat)|The Peach Devils]].
+*Colossal Slayer Ubers: Units like [[Sea Serpent Daliasan (Uber Rare Cat)|God-Emperor Daliasan]], [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]], [[Spectral Goth Vega (Uber Rare Cat)|Lady of Deception Vega]] and [[One-Eyed Asuka (Uber Rare Cat)|One-Eyed Asuka]] can deal high damage to Exiel and finish these stages quickly.
+*Angel Cursers: Examples include [[Kintaro (Uber Rare Cat)|Kinrangers GigaForce]] and [[Shitakiri Sparrow (Uber Rare Cat)|Grand Chunchun Haunters]]. Only use these units if you don't have Fried Chicken Cat.
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: While Cosmo isn't Wave Immune, he doesn't really care seeing his 850 standing range, practically enough to hit everything. His attacks are strong enough to instantly eliminate Bore Jr. and will Freeze Exiel. While not needed, Cosmo can gain Colossus Slayer and Curse via talents to further improve his effectiveness.
+*Ranged Wave Blockers: Units like [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]], [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku: MM2020 Tokyo]], and [[Yamii (Uber Rare Cat)|Yaminora]] protect your vulnerable units from Bore Jr. and Mr. Mer at a safe range.
+*[[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]] - Kasli the Bane's level 3 Surge Attacks can rack up heavy damage from a safe 400 range, with her consistent Curse ability completely shutting down Exiel's Warp/Weaken. Kasli also happens to be Immune to Waves/Weaken/Warp, further improving her matchups against the main threats.
+*[[Daybreaker Izanagi (Legend Rare Cat)|Dawnbringer Izanagi]]: Izanagi's extremely high damage per hit, Insane Damage to Traited enemies and Wave Immunity allows him to eradicate most enemies here, with a Conjure allowing for extra destruction.
+*[[Izanami of Dusk (Legend Rare Cat)|Izanami of Eventide]]: While Izanami isn't Wave Immune and targets Traitless only, her Insane Damage ability and 20% Savage Blows can absolutely demolish Mr. Mer and Bore Jr. If things are getting too dire, Izanami's Conjure can also deliver a quick burst of damage.
+
+==Walkthrough==
+{{Walkthrough
+|RwbqsKxIYpk
+|catbattles COOL
+|Headmaster Cat Jobs brute force
+}}
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24037.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Event Stages]]
+[[Category:Event]]

@@ -1,0 +1,132 @@
+'''Meowla Meowla''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by clearing any of the [[Survive! Mola Mola! Collaboration Event#Survive! Mola Mola!|Survive! Mola Mola!]] stages during the [[Survive! Mola Mola! Collaboration Event]]. He was added in [[Version 3.5 Update|Version 3.5]].
+
+{{Cat Info
+|ID = 175
+|rarity = EX
+|name1 = Meowla Meowla
+|name2 = Catorpedo
+}}
+
+==Evolution==
+Evolves into '''Catorpedo''' at level 10.
+
+==Strategy/Usage==
+Catorpedo is a damage oriented anti-Red meatshield. Unfortunately, in compressing both roles, it sacrifices utility in both aspects leaving mediocre on all fronts. It has a terrible effective HP against Reds at Lv.30 (25,500) which is only slightly higher than a [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]] at equal levels (18,995). Even at Lv.50 it can't hope to tank due to its unusually high knockback count of 4, giving it a durability of only 10,125 at the best of times. Other anti-Red units like [[Sushi Cat (Super Rare Cat)|Roe Cat]] easily outperform it, and furthermore once [[Carpenter Cat (Rare Cat)|Carpenter Cat]] is obtained in the late game. This unit can still see some use in the Underground Labyrinth, but that's it.
+
+{{Job|Classification = Meatshield & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 175
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni175 f00.png
+|Image2 = Uni175 c00.png
+|Name1 = Meowla Meowla
+|Desc1 = A cat trained by Molas for marine combat.<br>Still kinda wishes he became a meteorologist.<br>Resistant to Red enemy attacks. (Area Atk)
+|Name2 = Catorpedo
+|Desc2 = Evolved arms instead of legs… weird.<br>Hates being stepped all over. Stop it!!!<br>Resistant to Red enemy attacks. (Area Atk)
+|Name1 (JP) = にゃんぼう (Nyanbō)
+|Desc1 (JP) = 水中戦を想定しマンボウになろうとしたネコ<br>兄弟で始めた天気予報がマイブーム<br>赤い敵に打たれ強い(範囲攻撃)
+|Transl1 (JP) = A Cat who tried to become a sunfish in case of marine combat<br>His current obsession is the weather forecast program started with his brothers<br>Tough against Red enemies (Area Attack)
+|Name2 (JP) = ネコトーピード (Neko Tōpīdo, Torpedo Cat)
+|Desc2 (JP) = 進化の過程で足の代わりに腕が生えた<br>踏みつけられることを極端に嫌う水中兵器と化したネコ<br>赤い敵に打たれ強い(範囲攻撃)
+|Transl2 (JP) = Evolved arms instead of legs<br>A Cat who became a marine weapon that hates being trampled<br>Tough against Red enemies (Area Attack)
+|Name1 (TW) = 喵波
+|Desc1 (TW) = 假想水中之戰所以設法變成曼波魚的喵波<br>兄弟倆現在熱衷播報氣象<br>對上紅色敵人很耐打（範圍攻擊）
+|Name2 (TW) = 猛波
+|Desc2 (TW) = 進化過程中強而有力的手腕取代了腳<br>極度厭惡被踩踏而進化成為水中兵器<br>對上紅色敵人很耐打（範圍攻擊）
+|Name1 (KR) = 냥복치
+|Desc1 (KR) = 수중전에 대비하기 위해 개복치가 된 냥코<br>고양이일적 습관으로 아직까지 물과 친해지지 못했다<br>빨간 적에 맷집이 좋다 (범위 공격)
+|Name2 (KR) = 고양이 톨피드
+|Desc2 (KR) = 진화의 과정에서 다리 대신 팔이 생겼다<br>머리 밟히는 것을 극도로 싫어하는 수중병기 냥코<br>빨간 적에 맷집이 좋다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Meowla Meowla
+|Normal Base HP = 300
+|Normal Base AP = 140
+|Normal Range = 140
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 61
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 300
+|Normal Recharge = 340
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Catorpedo
+|Evolved Base HP = 300
+|Evolved Base AP = 140
+|Evolved Range = 140
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 61
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 300
+|Evolved Recharge = 340
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 140 damage<br>(47.19 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 89f <sub>2.97 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 11.33 ~ 2.53 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 2,380 damage<br>(802.25 DPS)
+|val-Evolved-Health = 5,100 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(802.25 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 89f <sub>2.97 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 11.33 ~ 2.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni175 f00}}
+
+==Trivia==
+*The line, "Still kinda wishes he became a meteorologist," in Meowla Meowla's description is a reference to the weather forecast program [[wikipedia:ja:ヤン坊マー坊天気予報|''Yanbō Mābō Tenkiyohō'']]. The joke is that the Japanese word for sunfish is ''manbō'', which sounds like a combination of the names of the two mascot characters, Yanbō and Mābō. Thus, if he were to become a ''manbō'', it could mean becoming a sunfish or becoming a third mascot for the program.
+**[[Nyanko Daisensou|BCJP]] makes the reference more obvious, as his Japanese name is Nyanbō and his description instead mentions a "weather forecast program started with his brothers."
+*Catorpedo is a reference to the [[mariowiki:Bullet Bill|Bullet Bill]] from the [[mariowiki:Mario (series)|Mario]] franchise. "Hates being stepped all over" refers to how [[mariowiki:Mario|Mario]] can defeat Bullet Bills by jumping on them.
+*During the [[Survive! Mola Mola! Collaboration Event/2015 Collab|first run of the collab]], this unit was obtained by playing the game "Survive! Mola Mola!" and getting "Sudden Death" when "Cat Mode" had been activated. After that, you would open [[The Battle Cats]] and it would tell you that you had received Meowla Meowla.
+
+==Reference==
+*https://battlecats-db.com/unit/176.html
+
+----
+{{CatNav|Mola King|Marshmallow Cat}}
+----
+
+{{Survive! Mola Mola!}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]

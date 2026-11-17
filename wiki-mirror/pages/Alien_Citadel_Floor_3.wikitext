@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Shibalien|Helmut Krabbe}}
+:''Not to be confused with the [[Heavenly Tower/Floor 3|Heavenly Tower]] or [[Infernal Tower/Floor 3|Infernal Tower]] versions of Floor 3.''
+'''Floor 3''' is the third floor of [[Alien Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 02 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 80
+|enemy castle hp = 60,000 HP
+|enemies = {{Magnification|Shibalien|75%
+|Helmut Krabbe|50%}}
+|boss = {{Magnification|Shibalien|1%}}
+|treasure = - [[Battle Items#Sniper the Cat|Sniper the Cat]] +1 (100%, 1 time)
+|XP = 1,520 XP
+|width = 3,600
+|max enemies = 10
+|jpname = 3rd Floor
+|script = 3階
+|romaji = 3 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★3
+|prev stage = [[Alien Citadel/Floor 2|Floor 2]]
+|next stage = [[Alien Citadel/Floor 4|Floor 4]]
+}}
+
+==Battleground==
+*1 [[Shibalien]] (75%) spawns after 5 seconds<sup>150f</sup>.
+*1 [[Shibalien]] (75%) spawns after 15 seconds<sup>450f</sup>.
+*1 [[Shibalien]] (75%) spawns after 35 seconds<sup>1,050f</sup>.
+*1 [[Shibalien]] (75%) spawns after 45 seconds<sup>1,350f</sup>.
+*1 [[Shibalien]] (75%) spawns after 53.33 seconds<sup>1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien]] (1%) spawns as the boss.
+**6 [[Shibalien]]s (75%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Helmut Krabbe]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-03.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

@@ -1,0 +1,113 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Sho Ayanokoji (Enemy)]]. For the stage, see [[Sho Ayanokoji]].''
+'''Sho Ayanokoji''', often styled as '''Show Ayanocozey''', is a [[:Category:Special Cats|Special Cat]] added in [[Version 3.4 Update|Version 3.4]] and was created by a collaboration event between [[Kishidan Collaboration Event|Battle Cats and Kishidan]]. He could be unlocked by using a [[Serial Codes|serial code]] from "Kishidan's CD (幸せにしかしねーから)" which is no longer possible due to serial codes being removed.
+
+{{Cat Info
+|ID = 162
+|rarity = EX
+|name1 = Sho Ayanokoji
+|name2 = Shoyan & Cat
+}}
+
+==Evolution==
+Evolves into '''Shoyan & Cat''' at level 10.
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 162
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni162 f00.png
+|Image2 = Uni162 c00.png
+|Name1 (JP) = 綾小路 翔 (Ayanokōji Shō)
+|Desc1 (JP) = ヤンクロックバンド氣志團から参戦！<br>誇り高き團長でありヴォーカル<br>通り名は『房総の狂犬』
+|Transl1 (JP) = Joining the war from the yankii rock band Kishidan!<br>Vocalist and proud leader of the band<br>Catchphrase is "Rabid dog of Bōsō*"<br>''*This refers to the Bōsō Peninsula, whose name sounds like 暴走, meaning a rampage or reckless driving.''
+|Name2 (JP) = 翔やん&にゃんこ (Shōyan & Nyanko, Shoyan & Cat)
+|Desc2 (JP) = ヤンクロックバンド氣志團から参戦！<br>誇り高き團長でありヴォーカル(範囲攻撃)<br>永遠の16歳(赤い敵にめっぽう強い)
+|Transl2 (JP) = Joining the war from the yankii rock band Kishidan!<br>Vocalist and proud leader of the band (Area Attack)<br>Forever 16 (massive damage to Red enemies)
+}}
+
+==Cost==
+*Chapter 1: 1,450円
+*Chapter 2: 2,175円
+*Chapter 3: 2,900円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sho Ayanokoji
+|Normal Base HP = 1200
+|Normal Base AP = 1300
+|Normal Range = 290
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 161
+|Normal Attack Length = 52
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 1450
+|Normal Recharge = 1300
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Shoyan & Cat
+|Evolved Base HP = 1200
+|Evolved Base AP = 1300
+|Evolved Range = 290
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 161
+|Evolved Attack Length = 52
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 1450
+|Evolved Recharge = 1300
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,200 HP
+|val-Normal-Attack Power = 1,300 damage<br>(239.26 DPS)
+|val-Normal-Attack Range = 290
+|val-Normal-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 43.33 ~ 34.53 seconds
+|val-Normal-MaxHP = 20,400 HP
+|val-Normal-MaxAttack = 22,100 damage<br>(4,067.48 DPS)
+|val-Evolved-Health = 20,400 HP
+|val-Evolved-Attack Power = 22,100 damage<br>(4,067.48 DPS)
+|val-Evolved-Attack Range = 290
+|val-Evolved-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 43.33 ~ 34.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni162 f00}}
+
+==Trivia==
+*Amongst the members of [[Kishidan Collaboration Event|Kishidan]], Sho Ayanokoji's signature color is red (as opposed to [[Hikaru Saotome (Special Cat)|Hikaru]]'s blue, [[Hitomi Saionji (Special Cat)|Tommy]]'s purple, etc.), hence why he is strong against [[:Category:Red Enemies|Red Enemies]].
+
+==Reference==
+*https://battlecats-db.com/unit/163.html
+
+----
+{{CatNav|Crazed Princess Punt|Hikaru Saotome}}
+----
+
+{{Kishidan}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Area Attack Cats]]
+[[Category:Serial Code Cats]]

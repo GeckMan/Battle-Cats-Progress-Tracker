@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Wild Doge|Star Peng|Corporal Weyland|Project A|Casaurian Darkjo}}
+'''Burning Sands Area 7''' is the seventh stage in [[Ashvini Desert]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn001 06 q en.png]]
+|stage location = [[File:Mapname001 q en.png]]
+|energy = 200
+|enemy castle hp = 800,000 HP
+|enemies = {{Magnification|Wild Doge|100%
+|Star Peng|300%
+|Corporal Weyland|200%
+|Project A|300%}}
+|boss = {{Magnification|Casaurian Darkjo|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Stone]] +1 (15%)<br>
+- [[Catfruit#Behemoth Stones|Red Behemoth Stone]] +1 (15%)<br>
+- [[Catfruit#Behemoth Stones|Blue Behemoth Stone]] +1 (35%)<br>
+- [[Catfruit#Behemoth Stones|Green Behemoth Stone]] +1 (35%)
+|XP = 6,000 XP
+|width = 4,500
+|max enemies = 7
+|jpname = Scorching Dunes Area 7
+|script = 酷暑砂丘 エリア7
+|romaji = Kokusho Sakyū Eria 7
+|star = 1
+|event-chapter = [[Ashvini Desert]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = [[Burning Sands Area 6]]
+|next stage = [[Burning Sands Area 8]]
+|require = Clear [[Venomous Duck|Oddity in the Desert]]
+|occurrence = *Monday, Thursday: 12:00~16:00
+*Tuesday, Friday, Sunday: 19:00~23:00
+*Wednesday, Saturday: 07:00~11:00
+}}
+
+==Battleground==
+*5 [[Wild Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Star Peng]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*1 [[Star Peng]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Wild Doge]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Casaurian Darkjo]] spawns as the boss.
+**6 [[Star Peng]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**8 [[Wild Doge]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**2 [[Corporal Weyland]]s spawn, delay 73.33~80 seconds<sup>2,200f~2,400f</sup>.
+**1 [[Project A]] spawns.
+
+==Strategy==
+The stages difficulty heavily relies on your [[Anti-Starred Alien Treasures|Anti-Starred Alien Treasures]], as this stage becomes trivial with Treasures from Chapter 3 of [[Cats of the Cosmos]].
+
+Otherwise, use [[Rover Cat (Rare Cat)|Catellite]] to stall the Star Pengs and [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] to remove the Wild Doges. Many of the other enemies only spawn once the base is hit, so it is best to stall the beginning enemies and build up cash. Once Project A, Corporal Weyland, and Darkjo spawn, you must quickly dispose of Corporal Weyland and Project A using [[:Category:Long Distance Cats|LD]] or [[:Category:Waver-class Cats|Waver]] units. Otherwise, they will pick off your midrangers, greatly extending Casaurian Darkjo's lifespan. However, the Star Pengs and Wild Doges accompanying Darkjo should not be ignored. Make sure to burst them down before they tear through your units.
+
+==Reference==
+*https://battlecats-db.com/stage/s31001-07.html
+
+{{Guerrilla}}
+[[Category:Behemoth Culling]]
+[[Category:Event Stages]]

@@ -1,0 +1,41 @@
+{{EnemiesAppearing|Metal Hippoe|Metal Doge|Metal One Horn|Super Metal Hippoe}}
+'''Floor 14''' is the 14th floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 13 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 120
+|enemy castle hp = 240,000 HP
+|enemies = {{Magnification|Metal Hippoe|100%
+|Metal Doge|100%
+|Metal One Horn|100%}}
+|boss = {{Magnification|Super Metal Hippoe|100%}}
+|treasure = - [[Catfruit|Red Catfruit Seed]] +10 (100%, 1 time)
+|XP = 2,280 XP
+|width = 5,500
+|max enemies = 30
+|jpname = 14th Floor
+|script = 14階
+|romaji = 14 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★7
+|prev stage = [[Golden Tower/Floor 13|Floor 13]]
+|next stage = [[Golden Tower/Floor 15|Floor 15]]
+}}
+
+==Battleground==
+*5 [[Metal Hippoe]]s spawn after 0.07 seconds<sup>2f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Metal Doge]]s spawn after 0.07 seconds<sup>2f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*4 [[Metal One Horn]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Super Metal Hippoe]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 14#Strategy|Floor 14]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-14.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

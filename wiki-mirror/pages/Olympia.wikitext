@@ -1,0 +1,57 @@
+{{TWExclusive}}
+{{EnemiesAppearing|The Face|Shy Boy|HAPPI}}
+'''Olympia''' is the fifth and final stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]].
+
+{{Stage Info
+|stage name = [[File:rc127.png]]
+[[File:Mapsn103 04 c tw.png]]
+|stage location = [[File:Mapname103 c tw.png]]
+|energy = 200
+|enemy castle hp = 250,000 HP
+|enemies = {{Magnification|Shy Boy|300%
+|HAPPI|150%}}
+|boss = {{Magnification|The Face|600%}}
+|enemies2 = {{Magnification|Shy Boy|450%
+|HAPPI|225%}}
+|boss2 = {{Magnification|The Face|900%}}
+|enemies3 = {{Magnification|Shy Boy|600%
+|HAPPI|300%}}
+|boss3 = {{Magnification|The Face|1,200%}}
+|treasure = - [[HAPPI (Rare Cat)|HAPPI]] (50%, 1 time)
+|score reward = '''5,000''': 250,000 XP<br>
+'''3,500''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''500''': 75,000 XP
+|XP = 30,000 XP
+|width = 5,000
+|max enemies = 15
+|twname = World Games
+|twscript = 高雄車站
+|twromaji = Shì Yùn
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]
+|difficulty = ★6
+|prev stage = [[Kaohsiung Station]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[The Face]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+*3 [[Shy Boy]]s spawn after 26.67 seconds<sup>800f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*Infinite [[Shy Boy]]s spawn after 120 seconds<sup>3,600f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+*1 [[HAPPI (Enemy)|HAPPI]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[HAPPI (Enemy)|HAPPI]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*1 [[HAPPI (Enemy)|HAPPI]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[HAPPI (Enemy)|HAPPI]] spawns after 90 seconds<sup>2,700f</sup>.
+*5 [[HAPPI (Enemy)|HAPPIs]] spawn after 113.33 seconds<sup>3,400f</sup>, delay 10 seconds<sup>300f</sup>.
+
+==Strategy==
+Bring strong [[:Category:Anti-Floating Cats|Anti-Floating Cats]] and [[:Category:Anti-Red Cats|Anti-Red Cats]] to deal with [[The Face]] and [[Shy Boy]]s, as they will be a barrier for how long you stay in the stage.  [[HAPPI (Enemy)|HAPPI]] will appear occasionally until up to 113.33 seconds<sup>3,400f</sup>, when 5 will start to appear.  If you're able to survive the onslaught of [[HAPPI (Enemy)|HAPPI]], then only [[Shy Boy]] will appear.
+
+==Reference==
+*https://battlecats-db.com/stage/s02103-05.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,56 @@
+{{DISPLAYTITLE:Life Ain't Easy, Kid}}
+{{RemovedContent}}
+{{EnemiesAppearing|Ayumi Manbosaki|Tasmanian Giant Crab|Squid|Sardine|Young Man Mola}}
+:''For the new stage, see [[Life Ain't Easy, Kid]].''
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn011 02 c en.png]]
+|stage location = [[File:Mapname011 c en.png]]
+|energy = 90
+|enemy castle hp = 240,000 HP
+|enemies = {{Magnification|Tasmanian Giant Crab|400%
+|Squid|800%
+|Sardine|800%
+|Young Man Mola|800%}}
+|boss = {{Magnification|Ayumi Manbosaki|100%}}
+|score reward = '''8,800''': Treasure Radar +1 <br>
+'''7,500''': Rare Cat Ticket +1 <br>
+'''6,000''': 250,000 XP<br>
+'''4,000''': Cat Jobs +1<br>
+'''2,000''': Cat Ticket +1<br>
+'''500''': 50,000 XP
+|XP = 2,700 XP
+|width = 4,000
+|max enemies = 30
+|jpname = I greet the life
+|script = 寿命を迎える
+|romaji = Jumyō o Mukaeru
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|star = 1
+|event-chapter = [[Survive! Mola Mola! Collaboration Event#Survive! Mola! Mola!|Survive! Mola Mola!]]
+|difficulty = ★4
+|prev stage = [[Mean Morning Sunbeams (Old)|Mean Morning Sunbeams]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Ayumi Manbosaki]] spawns as the boss after 10 seconds<sup>300f</sup>.
+*10 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 0.07 seconds<sup>2f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 15 seconds<sup>450f</sup>, delay 10~16 seconds<sup>300f~480f</sup>.
+*Infinite [[Sardine (Enemy)|Sardines]] spawn after 23.33 seconds<sup>700f</sup>, delay 14~20 seconds<sup>420f~600f</sup>.
+*Infinite [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 13.33 seconds<sup>400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*10 [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 20 seconds<sup>600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 180 seconds<sup>5,400f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 99% HP:
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base reaches 90% HP:
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+
+==Reference==
+*https://battlecats-db.com/stage/s02011-03.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

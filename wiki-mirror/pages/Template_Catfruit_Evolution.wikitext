@@ -1,0 +1,87 @@
+<includeonly><onlyinclude><templatestyles src="Catfruit_Evolution/styles.css" /><div class="overflow-shadow">
+<div class="catfruit-evolution catfruit-evolution-desktop {{#if:{{{Quantity XP Ultra|}}}|mw-collapsible|}}" id="mw-customcollapsible-form" style="{{#if:{{{Quantity XP Ultra|}}}|margin-top: 1.5rem|}};">
+<div class="catfruit-evolution-toggle">
+<div class="true-tab {{#if:{{{Quantity XP Ultra|}}}||hideme}}">True Form</div>
+<div class="mw-customtoggle-form ultra-tab {{#if:{{{Quantity XP Ultra|}}}||hideme}}" title="Switch to Ultra Form Evolution" role="button">Ultra Form</div>
+</div>
+{| class="CatfruitTable"
+|- class="CatfruitElement"
+| rowspan="2" class="unit-images" " | [[File:{{{Evolved Image}}}|96px|class=deploy-img|link=|{{{Evolved Name}}}]]
+<div class="xp-cell">[[File:XPLabel.png|30px|class=xp-img|link=XP Function|alt=XP]]<br>{{BCNum|{{{Quantity XP|?}}}|mode=white-sm|size=16}}</div>
+| colspan="5" class="unit-name" |'''{{{Evolved Name|?}}}'''
+|- class="evolve-materials"
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit1|}}}|amount={{{Quantity Catfruit1}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit2|}}}|amount={{{Quantity Catfruit2}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit3|}}}|amount={{{Quantity Catfruit3}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit4|}}}|amount={{{Quantity Catfruit4}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit5|}}}|amount={{{Quantity Catfruit5}}}}}
+|- class="evolve-info"
+| class="evolve-icon" |<div class="evolve-icon-images">
+[[File:EvolveFrame.png|90px|class=evolve-img-frame|link=|alt=]]
+[[File:{{{True Image}}}|96px|class=deploy-img-dark|link=|{{{True Name}}}]]
+[[File:EvolvedText.png|64px|class=evolve-text|link=|Evolved]]
+[[File:EvolveArrow.png|100px|class=evolve-arrow-img|link=|alt=→]]
+</div>
+| colspan="5" class="evolve-desc" |'''{{{True Name|?}}}'''<br><p class="description">{{{True Description|?}}}</p>
+|}</div>
+
+<div class="catfruit-evolution {{#if:{{{Quantity XP Ultra|}}}||hideme}} mw-collapsible mw-collapsed" id="mw-customcollapsible-form" style="margin-top: 1.5rem;"><div class="catfruit-evolution-toggle"><div class="mw-customtoggle-form true-tab" title="Switch to True Form Evolution" role="button">True Form</div> <div class="ultra-tab">Ultra Form</div></div>
+{| class="CatfruitTable"
+|- class="CatfruitElement"
+| rowspan="2" class="unit-images" | [[File:{{{True Image}}}|96px|class=deploy-img|link=|{{{True Name}}}]]
+<div class="xp-cell">[[File:XPLabel.png|30px|class=xp-img|link=XP Function|alt=XP]]<br>{{BCNum|{{{Quantity XP Ultra|?}}}|mode=white-sm|size=16}}</div>
+| colspan="5" class="unit-name" |'''{{{True Name|?}}}'''
+|- class="evolve-materials"
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit1 Ultra|}}}|amount={{{Quantity Catfruit1 Ultra}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit2 Ultra|}}}|amount={{{Quantity Catfruit2 Ultra}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit3 Ultra|}}}|amount={{{Quantity Catfruit3 Ultra}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit4 Ultra|}}}|amount={{{Quantity Catfruit4 Ultra}}}}}
+|{{Catfruit Evolution/fruit|fruit={{{Catfruit5 Ultra|}}}|amount={{{Quantity Catfruit5 Ultra}}}}}
+|- class="evolve-info"
+| class="evolve-icon" |<div class="evolve-icon-images">
+[[File:EvolveFrame.png|90px|class=evolve-img-frame|link=|alt=]]
+[[File:{{{Ultra Image}}}|96px|class=deploy-img-dark|link=|{{{Ultra Name}}}]]
+[[File:EvolvedText.png|64px|class=evolve-text|link=|Evolved]]
+[[File:EvolveArrow.png|100px|class=evolve-arrow-img|link=|alt=→]]
+</div>
+| colspan="5" class="evolve-desc" |'''{{{Ultra Name|?}}}'''<br><p class="description">{{{Ultra Description|?}}}</p>
+|}</div></div>
+
+<div class="catfruit-evolution-mobile">
+{| class="article-table" align="center" style="width: 100%; text-align: center;"
+|-
+|[[File:{{{Catfruit1|Blank}}}.png]]<br>{{{Quantity Catfruit1|}}}
+|[[File:{{{Catfruit2|Blank}}}.png]]<br>{{{Quantity Catfruit2|}}}
+|[[File:{{{Catfruit3|Blank}}}.png]]<br>{{{Quantity Catfruit3|}}}
+|[[File:{{{Catfruit4|Blank}}}.png]]<br>{{{Quantity Catfruit4|}}}
+|[[File:{{{Catfruit5|Blank}}}.png]]<br>{{{Quantity Catfruit5|}}}
+|-
+| colspan="5" |'''XP:''' {{{Quantity XP|?}}}
+|-
+| colspan="5" style="text-align: left;" |{{{True Description|?}}}
+|}
+
+{{#if:{{{Quantity XP Ultra|}}}|===Ultra Form===|}}
+{| class="article-table" align="center" style="width: 100%; text-align: center; {{#if:{{{Quantity XP Ultra|}}}||display: none;}}"
+|-
+|[[File:{{{Catfruit1 Ultra|Blank}}}.png]]<br>{{{Quantity Catfruit1 Ultra|}}}
+|[[File:{{{Catfruit2 Ultra|Blank}}}.png]]<br>{{{Quantity Catfruit2 Ultra|}}}
+|[[File:{{{Catfruit3 Ultra|Blank}}}.png]]<br>{{{Quantity Catfruit3 Ultra|}}}
+|[[File:{{{Catfruit4 Ultra|Blank}}}.png]]<br>{{{Quantity Catfruit4 Ultra|}}}
+|[[File:{{{Catfruit5 Ultra|Blank}}}.png]]<br>{{{Quantity Catfruit5 Ultra|}}}
+|-
+| colspan="5" |'''XP:''' {{{Quantity XP Ultra|?}}}
+|-
+| colspan="5" style="text-align: left;" |{{{Ultra Description|?}}}
+|}</div><!--
+-->{{#ifeq:{{NAMESPACENUMBER}}|0|<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit1|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit2|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit3|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit4|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit5|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit1 Ultra|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit2 Ultra|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit3 Ultra|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit4 Ultra|}}}}}<!--
+-->{{Catfruit Evolution/category|fruit={{{Catfruit5 Ultra|}}}}}}}</onlyinclude></includeonly>{{/doc}}

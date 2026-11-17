@@ -1,0 +1,108 @@
+'''Jumbo Jones''' (ジャンボーグ鈴木, ''Janbōgu Suzuki'', '''Jumborg Suzuki''') is an [[:Category:Angel Enemies|Angel]]/[[:Category:Colossus Enemies|Colossus]] variant of [[Sunfish Jones]] that appears in the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] [[Jumbo Invasion]]. He was added in [[Version 14.6 Update|Version 14.6]].
+
+{{Enemy Info
+|name = Jumbo Jones
+|image = E 743.png
+|appearance = [[Jumbo Invasion]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+A Great [[:Category:Advent Bosses|Advent Boss]] version of [[Sunfish Jones]] with extremely high stats that exchanges range and support for speed and pure pushing power. He has a 2-part attack with [[Omni Strike]] on the (relatively weak) 1st hit and what is effectively [[Long Distance]] on the 2nd hit, heavily punishing any units standing beyond 451 range with 90k damage, a level 7 [[Wave Attack]] and a 2-second [[Slow]].
+
+Unlike Sunfish Jones, Jumbo Jones' delay between attacks consists solely of backswing, so he will always start attacking again should he flinch.
+
+==Strategy==
+Jumbo Jones is best treated as a Long Distance enemy with a minimum range of 450, as his damage output up close is manageable unless he manages to land the second hit and fire his Wave. The best way to fight him is with fast or bulky melee units able to withstand the close-ranged hits and prevent him from pushing, particularly those [[:Category:Cats with Wave Immunity|immune to Waves]] or possessing [[Wave Shield]] to neutralize the incoming Wave even if he manages to land his second attack. His Slow effect can occasionally be troublesome, but has a low enough uptime to be completely manageable.
+
+While Jumbo Jones is immune to Freeze, he is still vulnerable to [[Knockback]] and Sniper, which, along with other DPS sources, can force him to repeatedly flinch and delay or prevent his attacks outright.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 743
+|Type = [[:Category:Angel Enemies|Angel]]/[[:Category:Colossus Enemies|Colossus]]
+|Image1 = Enemy icon 743.png
+|Name1 = Jumbo Jones
+|Desc1 = A secret lab used unethical genome editing to<br>create a superior sunfish. It has grown so large<br>that stealth is no longer an option. Destroys all<br>that encounter it with Waves that Slow.
+|Name1 (JP) = ジャンボーグ鈴木 (Janbōgu Suzuki, Jumborg Suzuki)
+|Desc1 (JP) = 古代研究所の極秘技術でゲノム改造された<br>天界の秘密兵器。ステルスで隠せないほど<br>巨大化した。姿を目撃してしまった者は<br>動きを遅くする波動攻撃で消される。
+|Transl1 (JP) = A secret weapon of the heavenly world,<br>his genome remodeled via the top-secret technology of the [[Laboratory of Relics|Ancient Laboratory]]. Has grown so gigantic<br>that he can no longer be hidden by stealth. Those who witness his appearance<br>will be eliminated by Wave Attacks that slow movement.
+|Name1 (TW) = 巨大生化魚鈴木
+|Desc1 (TW) = 被用古代研究所的極密技術進行基因改造，<br>天界的秘密武器。太過巨大的身軀使得<br>隱形能力已無法作用。會用使動作<br>變慢的波動攻擊消滅所有看到他的人。
+|Name1 (KR) = 대천사 개복치
+|Desc1 (KR) = 고대 연구소의 극비 게놈 기술로 개조된<br>천계의 비밀 병기. 스텔스 기술로 숨길 수 없을 정도로<br>거대해졌다. 한 번 그의 모습을 본 자는<br>움직임을 느리게 하는 파동 공격으로 제거된다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Jumbo Invasion]]:
+**[[Aqua Saint I (Deadly)]]
+**[[Aqua Saint II (Merciless)]]
+**[[Aqua Saint III (Merciless)]]
+**[[Aqua Saint Climax (Brutal)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Jumbo Jones
+|Health = 2500000
+|Attack Power = 110000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 241
+|Movement Speed = 35
+|Knockback = 5
+|Foreswing = 140
+|Backswing = 81
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">20,000</span> at 140f <sup>4.67s</sup>, <span class="scaled" data-type="ap">90,000</span> at 160f <sup>5.33s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 451~751 on 2nd hit)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~450 on 1st hit)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub> on 2nd hit<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 7 [[Wave Attack]] on 2nd hit<br>
+{{AbilityIcon|Immune to Freeze|Immune to Weaken}} [[Immune to Freeze]] and [[Immune to Weaken|Weaken]]
+|Element = Angel/Colossus
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+743 e.png|Jumbo Jones's spritesheet
+Medal 122.png|Jumbo Jones on the ''Jumbo Jones'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Since [[Sunfish Jones]]'s description references an aircraft (the Northrop Grumman [[wikipedia:Northrop Grumman B-2 Spirit|B-2 Spirit]] stealth bomber), Jumbo Jones's name may reference [[wikipedia:Jumbo jet|jumbo jets]].
+*Jumbo Jones's Japanese name, Jumborg Suzuki (ジャンボーグ鈴木 ''Janbōgu Suzuki'') is derived from ''jumbo'', ''Manborg Suzuki'' (マンボーグ鈴木 ''Manbōgu Suzuki'', Sunfish Jones's Japanese name) and possibly the ''[[wikipedia:Tokusatsu|tokusatsu]]'' series ''[[wikipedia:Jumborg Ace|Jumborg Ace]]''. The series' main giant mechas are the titular [[wikia:ultra:Jumborg Ace (mecha)|Jumborg Ace]], who has a maximum flight speed of Mach 11 (i.e., 11 times the speed of sound) and later [[wikia:ultra:Jumborg 9|Jumborg 9]], who can attain similar speeds when running, which may be why Jumbo Jones has such high movement speed.
+*Since most of the other [[:Category:Advent Bosses|Advent Bosses]] appear to have religious inspirations, Jumbo Jones may represent [[wikipedia:Leviathan|Leviathan]], a biblical sea monster associated with chaos and the sin of envy. Leviathan is known for being extremely large, and the largest extant bony fish are the [[wikipedia:Giant sunfish|giant sunfish]] followed by the [[wikipedia:Ocean sunfish|ocean sunfish]]. In some [[wikipedia:Classification of demons|classifications of demons]], Leviathan is one of the princes of Hell alongside Satan and Lucifer, who may be represented by [[Infernal Tyrant Nyandam]] and [[Xenobeast Bunaglios]] respectively.
+**In this regard, Jumbo Jones can be seen as a foil to [[Sea Serpent Daliasan (Uber Rare Cat)|Sea Serpent Daliasan]], an [[:Category:Anti-Angel Cats|anti-Angel]] Colossus Slayer whose name may be partially derived from Leviathan. Daliasan has horns and a [[Brainwashed Cat (Super Rare Cat)|Brainwashed Cat]] face on its Evolved Form's tail, suggesting a demon, but is on the player's side, whereas Jumbo Jones is an [[:Category:Angel Enemies|Angel]], perhaps representing the interpretation of Leviathan as simply another of God's creations, but is on the enemies' side. Both also have Long Distance and Slow abilities.
+**The [[Media:Bg016.png|ruined city background]] in [[Aqua Saint I (Deadly)|Aqua Saint I]] may imply that an apocalypse has occurred, which could be a reference to Leviathan being defeated at the end of time.
+**Jumbo Jones could also represent the great fish sent by God to transport [[wikipedia:Jonah|Jonah]] by swallowing him, as the phrase 大聖魚 ''Daisēgyo'' in his stages' Japanese names literally translates to "Great Holy Fish" or "Large Holy Fish".
+*The orbs of electricity in Jumbo Jones's attack animation may be a reference to [[wikipedia:Ball lightning|ball lightning]], a rare and unexplained atmospheric phenomenon best described as luminescent, spherical objects that appear during or shortly after thunderstorms.
+*The Colossus jewel being embedded in Jumbo Jones's forehead may be a reference to the nuchal humps that grow in the foreheads of some fish species, such as the [[wikipedia:Flowerhorn cichlid|flowerhorn cichlid]]. A nuchal hump is made of fat and stores calories.
+*Jumbo Jones has a "King" title like the first three Great Advent Bosses, but only in the [[Media:Eve l 246 nyanko images MSTm2PwFwoiA14wl1BuB.png|Japanese event poster]] for [[Jumbo Invasion]]. His title is "King Who Sprang from the Deep Sea" (深海を飛び出した王 ''Shinkai o Tobidashita Ō''), which is changed to "Lord of the Deep" in the [[Media:Eve l 183 en.png|English event poster]].
+
+==Reference==
+*https://battlecats-db.com/enemy/745.html
+
+----
+{{EnemyNav|Fireworks Gang|Deathshund}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Angel Enemies]]
+[[Category:Colossus Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with different effective ranges]]
+[[Category:Enemies with Slow ability]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Freeze Immunity]]

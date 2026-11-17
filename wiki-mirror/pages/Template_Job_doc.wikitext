@@ -1,0 +1,101 @@
+{{Documentation}}
+==Usage==
+<tabber>
+Basic=
+<pre>
+{{Job|Classification = Tanker & Melee}}
+</pre>
+===Result===
+{{Job|Classification = Tanker & Melee}}
+
+|-|
+Only two forms=
+<pre>
+{{Job|Classification = Super-Backliner & User Rank Dump & N/A|EvolvedClass = This classification doesn't exist|TrueClass=|UltraClass=}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner & User Rank Dump & N/A|EvolvedClass = This classification doesn't exist|TrueClass=|UltraClass=}}
+
+|-|
+3 different forms=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = User Rank Dump|UltraClass=}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = User Rank Dump|UltraClass=}}
+
+|-|
+3 forms part 1=
+<pre>
+{{Job|Classification = Super-Backliner|TrueClass = User Rank Dump|UltraClass=}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|TrueClass = User Rank Dump|UltraClass=}}
+
+|-|
+3 forms part 2=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|UltraClass=}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|UltraClass=}}
+
+|-|
+4 different forms=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = Sniper|UltraClass = Nuker}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = Sniper|UltraClass = Nuker}}
+
+|-|
+4 forms part 1=
+<pre>
+{{Job|Classification = Super-Backliner|TrueClass = Sniper|UltraClass = Nuker}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|TrueClass = Sniper|UltraClass = Nuker}}
+
+|-|
+4 forms part 2=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|UltraClass = Nuker}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|UltraClass = Nuker}}
+
+|-|
+4 forms part 3=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = Sniper}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = Sniper}}
+
+|-|
+4 forms part 4=
+<pre>
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|EvolvedClass = Melee}}
+
+|-|
+4 forms part 5=
+<pre>
+{{Job|Classification = Super-Backliner|TrueClass = Sniper}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|TrueClass = Sniper}}
+
+|-|
+4 forms part 6=
+<pre>
+{{Job|Classification = Super-Backliner|UltraClass = Nuker}}
+</pre>
+===Result===
+{{Job|Classification = Super-Backliner|UltraClass = Nuker}}
+</tabber>
+
+==List of Classes==
+{{#invoke:Job|list}}

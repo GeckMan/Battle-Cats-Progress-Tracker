@@ -1,0 +1,130 @@
+:''Not to be confused with [[Kaworu & Cat (Special Cat)]].''
+'''Kaworu Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. He was added in [[Version 10.2 Update|Version 10.2]].
+
+{{Cat Info
+|ID = 552
+|rarity = RR
+|name1 = Kaworu Cat
+|name2 = Moon Kaworu Cat
+}}
+
+==Evolution==
+Evolves into '''Moon Kaworu Cat''' at level 10.
+
+==Strategy/Usage==
+This unit lacks the stats to be very viable, especially for a unit with single target, so its use is not recommended outside of the early game. Its Evolved Form trades attack rate for range, so, depending by the situation, either form can perform better.
+
+Do not use against non-Darks.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 552
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni552 f00.png
+|Image2 = Uni552 c00.png
+|Name1 = Kaworu Cat
+|Desc1 = Cat resembling a mysterious boy who enjoys<br>playing piano and making ominous statements.<br>Tough vs. Dark enemies, with Massive Damage.
+|Name2 = Moon Kaworu Cat
+|Desc2 = Recently seen on the moon performing his original<br>composition, "The Promised Time of Shinji Cat"<br>Tough vs. Dark enemies, with Massive Damage.
+|Name1 (JP) = ネコカヲル (Neko Kaworu, Cat Kaworu)
+|Desc1 (JP) = ミステリアスな少年に憧れるお年頃のネコ<br>意味深な言葉を口にしながらピアノを弾くのが趣味<br>黒い敵に打たれ強く、超ダメージを与える
+|Transl1 (JP) = A cat of a certain age with a penchant for mysterious boys<br>Enjoys playing the piano while uttering meaningful words<br>Is strong against Dark Enemies and deals super damage
+|Name2 (JP) = 月面のネコカヲル (Getsumen no Neko Kaworu, Moon Cat Kaworu)
+|Desc2 (JP) = 自作の曲「さあ、約束の時だ、ネコシンジ君」を<br>月面らしき場所で弾き語る謎多きネコ<br>黒い敵に打たれ強く、超ダメージを与える
+|Transl2 (JP) = An enigmatic cat who plays his own song, "Now, it's time for the promise, Nekosinji-kun,"<br>On what appears to be the surface of the moon<br>Striking Dark Enemies and inflicting super damage
+|Name1 (TW) = 薰貓
+|Desc1 (TW) = 一隻對充滿神秘感少年有憧憬的青年貓咪<br>喜歡邊說有意義的話邊彈鋼琴<br>對上黑色敵人很耐打，可以給予超大傷害
+|Name2 (TW) = 月面薰貓
+|Desc2 (TW) = 在月面般地方彈奏自創曲<br>「約定的時刻來臨了，真嗣貓君」的神秘貓咪<br>對上黑色敵人很耐打，可以給予超大傷害
+|Name1 (KR) = 고양이 카오루
+|Desc1 (KR) = 미스테리한 소년을 동경하는 또래 고양이<br>의미심장한 말을 하며 피아노를 연주하는 것이 취미<br>검은 적에 맷집이 좋고 초 데미지를 입힌다
+|Name2 (KR) = 월면의 고양이 카오루
+|Desc2 (KR) = 자작곡 '자, 약속의 시간이다. 고양이 신지군'을<br>월면다운 장소에서 연주하며 부르는 수수께끼에 쌓인 고양이<br>검은 적에 맷집이 좋고 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kaworu Cat
+|Normal Base HP = 500
+|Normal Base AP = 220
+|Normal Range = 250
+|Normal Foreswing = 42
+|Normal Attack Cooldown = 61
+|Normal Attack Length = 63
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 550
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Moon Kaworu Cat
+|Evolved Base HP = 500
+|Evolved Base AP = 220
+|Evolved Range = 350
+|Evolved Foreswing = 17
+|Evolved Attack Cooldown = 191
+|Evolved Attack Length = 91
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 550
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 220 damage<br>(64.08 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 103f <sub>3.43 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 42f <sup>1.4s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Normal-Recharge Time = 18.33 ~ 9.53 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 3,740 damage<br>(1,089.32 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 3,740 damage<br>(539.42 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 208f <sub>6.93 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 17f <sup>0.57s</sup><br>(74f <sup>2.47s</sup> backswing)
+|val-Evolved-Recharge Time = 18.33 ~ 9.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni552 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/553.html
+
+----
+{{CatNav|The 9th Angel|Bakery Cat}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Massive Damage ability]]

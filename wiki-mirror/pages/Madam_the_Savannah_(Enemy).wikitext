@@ -1,0 +1,67 @@
+:''This article is about the enemy. For the Cat Unit, see [[Madam Bride (Rare Cat)]].''
+'''Madam the Savannah''' (マダム・ザ・サバンナ, ''Madamu・za・Sabanna'', "Madam the Savannah") is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Bride Awakens!]]. She was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Madam the Savannah
+|appearance = [[Bride Awakens!]]
+|image = E 252.png
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+She has very high health, a crushing attack, fast attack speed, and decent range. However, she has a sluggish attack animation, making it difficult for her to advance. She also survives a lethal strike.
+
+==Strategy==
+Bring a lot of meatshields and fast-attacking Cats to defeat her. Alternatively, instead of fast attackers, bringing slow but strong attackers with meatshields can also work against her.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Bride Awakens!]]:
+**[[Bridal Blues (Expert)]] (100%)
+**[[Bridal Blues (Insane)]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Madam the Savannah
+|Health = 1222200
+|Attack Power = 14400
+|Attack Range = 270
+|Attack Type = Area
+|Time Between Attacks = 34
+|Movement Speed = 8
+|Knockback = 2
+|Foreswing = 12
+|Backswing = 6
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">4,800</span> at 12f <sup>0.4s</sup>, <span class="scaled" data-type="ap">4,800</span> at 20f <sup>0.67s</sup>, <span class="scaled" data-type="ap">4,800</span> at 28f <sup>0.93s</sup>)<br>
+{{AbilityIcon|Survive}} 100% chance to [[Survive|survive]] a lethal strike
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+252 e.png|Madam the Savannah's spritesheet
+IdleMadamtheSavannah.gif|Madam the Savannah's moving animation
+</gallery>
+
+==Trivia==
+*Madam the Savannah appears to be wearing one of the [https://mediaim.expedia.com/localexpert/169707/d037b7a2-e10f-4049-b800-fee1dda9c9fe.jpg costumes] from a [https://youtu.be/4ZzIhAuJN2M Japanese ''The Lion King'' musical], which is supported by her [[Cat Combo]] [[Lion King (Combo)|Lion King]].
+
+==Reference==
+*https://battlecats-db.com/enemy/254.html
+
+----
+{{EnemyNav|Kiss and Koi|Call Center Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Lethal Strike Resistant Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemy Cats]]

@@ -1,0 +1,51 @@
+{{EnemiesAppearing|B.B.Bunny|Ginger Snache|St. Pigge the 2nd|Red Slug|The Red Malice}}
+'''Top Floor''' is the tenth and final floor of [[Red Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn005 09 v en.png]]
+|stage location = [[File:Mapname001 v en.png]]
+|energy = 200
+|enemy castle hp = 950,000 HP
+|enemies = {{Magnification|B.B.Bunny|300%
+|Ginger Snache|300%
+|St. Pigge the 2nd|1,000%
+|Red Slug|2,000%}}
+|boss = {{Magnification|The Red Malice|400%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,600
+|max enemies = 30
+|jpname = Top Floor
+|script = 最上階
+|romaji = Saijōkai
+|star = 1
+|event-chapter = [[Red Citadel]]
+|difficulty = ★9
+|prev stage = [[Red Citadel/Floor 9|Floor 9]]
+|next stage = N/A
+}}
+
+==Battleground==
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 3.33 seconds<sup>100f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[St. Pigge the 2nd]] spawns after 13.33 seconds<sup>400f</sup>.
+*2 [[Red Slug]]s spawn after 26.67 seconds<sup>800f</sup>, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[The Red Malice]] spawns as the boss.
+**3 [[St. Pigge the 2nd]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**4 [[Red Slug]]s spawn, delay 26.67 seconds<sup>800f</sup>.
+
+==Strategy==
+As this stage entirely consists of Red enemies, many of your usual counters to Red (e.g. Courier, Roe, iCat) and any anti-Red ubers you may happen to have will help. Whilst it is worth noting that The Red Malice does outrange most of the common anti-Red Cats, if you can get iCat to perma-freeze him, it won't be an issue.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], B.B.Bunny was set to spawn every 6.67~1.33 seconds instead of just 6.67. It didn't work properly because the maximum time was lower than the minimum, so in practice nothing changed.
+
+==Reference==
+*https://battlecats-db.com/stage/s07001-10.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]
+[[Category:No Continue Stages]]

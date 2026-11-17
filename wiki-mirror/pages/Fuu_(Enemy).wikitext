@@ -1,0 +1,93 @@
+:''This article is about the enemy. For the Cat Unit, see [[Fuu (Rare Cat)]].''
+'''Fuu''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Enemy Info
+|name = Fuu
+|image = E 094.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 800¢ - 3,160¢
+}}
+
+==Enemy==
+She has a bulky amount of HP, as well as much higher DPS than previous Merc Storia enemies, which along with her ability to freeze, are capable of rendering melee units nearly useless. However, her range is pretty low and her backswing length makes her not so hard to stall. She's also very slow and has only one knockback.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Inferno|Merc Storia: Inferno]]: [[A City Aflame (Insane)]] (400%)
+*[[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]]:
+**[[Teraphobic]] (100%)
+**[[A Strange Bottled Girl]] (100%)
+**[[Threads of Love]] (100%)
+*[[Healer Awakens!]]: [[Healer Awakens (Expert)]] (400%)
+*[[Merc Awakens!]]: [[Merc Awakens (Veteran)]] (400%)
+*[[Titi Awakens!]]:
+**[[Titi Awakens (Veteran)]] (400%)
+**[[Titi Awakens (Insane)]] (1,100%)
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[On Holy Wings]] (100%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.11]] (600%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.12]] (675%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.13]] (750%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.14]] (825%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.15]] (900%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.16]] (960%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.17]] (1,020%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.18]] (1,080%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.19]] (1,140%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.11~20|Healer & Co. Lv.20]] (1,200%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Mystery|Merc Storia: Mystery]]: [[On Holy Wings]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Fuu
+|Health = 30000
+|Attack Power = 1942
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 63
+|Movement Speed = 4
+|Knockback = 1
+|Foreswing = 31
+|Backswing = 32
+|Ability = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Floating
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|094 e ja.png|MediaWiki:Custom-AnimationViewer/094 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+094 e.png|Fuu's spritesheet (EN/KR)
+094 e ja.png|Fuu's spritesheet (JP)
+094 e tw.png|Fuu's spritesheet (TW)
+IdleFuuJP.gif|Fuu's moving animation
+</gallery>
+
+==Trivia==
+*Fuu, [[Serum (Enemy)|Serum]], [[Celesse (Enemy)|Celesse]], [[Michelia (Enemy)|Michelia]] and [[Box Witch and Minions]] are the only non-[[:Category:Angel Enemies|Angel]] enemies to have halos.
+
+==Reference==
+*https://battlecats-db.com/enemy/096.html
+
+----
+{{EnemyNav|Serum|Aura}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

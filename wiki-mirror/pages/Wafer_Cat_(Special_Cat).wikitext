@@ -1,0 +1,149 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Wafer Cat XL (Enemy)]].''
+'''Wafer Cat''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 10.4 Update|Version 10.4]] and can be unlocked by purchasing a special sale which contains this unit and 1 [[Cat Capsule|Rare Ticket]]. It was added to promote Japanese Battle Cats wafers.
+
+{{Cat Info
+|ID = 608
+|rarity = EX
+|name1 = Wafer Cat
+|name2 = Wafer Cat XL
+}}
+
+==Evolution==
+Evolves into '''Wafer Cat XL''' at level 10.
+
+==Strategy/Usage==
+Use this unit how you would use [[Glass Cat (Rare Cat)|Glass Cat]]: a one time debuffer that works best when either stalling slow backliners like [[Dark Emperor Nyandam]] or [[Alpacky]], or stalling stronger frontliners (when there are no peons to get in the way). These feats are most prevalent in stages like [[Twilight Zephyr]] or [[Atrocious Deco]], although due to its Single Target nature and relatively long recharge time, this unit is still replaceable by more competent [[:Category:Crowd-Controller-class Cats|crowd-controllers]] when applicable.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 608
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni608 f00.png
+|Image2 = Uni608 c00.png
+|Name1 (JP) = ネコウエハース (Neko Wafer, Cat Wafer)
+|Desc1 (JP) = 【成分】小麦粉・砂糖・卵・ネコカベ<br>【保管方法】開封後はすぐにお召し上がりください<br>※非常に割れやすい為ご注意ください
+|Transl1 (JP) = 【Ingredients】 Wheat, flour, sugar, eggs, catnip<br>【Storage】 Please eat immediately after opening the package<br>※Please be careful as they are very fragile
+|Name2 (JP) = ネコウエハースBIG (BIG Neko Wafer, BIG Cat Wafer)
+|Desc2 (JP) = 【成分】小麦粉・砂糖・卵・ネコカベ・ゴムネコ<br>【保管方法】開封後はすぐにお召し上がりください<br>※非常に大きいためお取り扱いにはご注意ください
+|Transl2 (JP) = 【Ingredients】 Wheat, flour, sugar, eggs, catnip, rubber cat<br>【Storage】 Please eat immediately after opening the package<br>※Please be careful as they are very fragile
+}}
+
+==Cost==
+*Chapter 1: 300円
+*Chapter 2: 450円
+*Chapter 3: 600円
+{{Upgrade Cost|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Wafer Cat
+|Normal Base HP = 20000
+|Normal Base AP = 1
+|Normal Range = 100
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 40
+|Normal Speed = 12
+|Normal KB = 1
+|Normal Cost = 300
+|Normal Recharge = 1000
+|Normal Attack Type = Single
+|Normal Kamikaze = true
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Curse}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Curse|Curse]]
+|Evolved Name = Wafer Cat XL
+|Evolved Base HP = 20000
+|Evolved Base AP = 1
+|Evolved Range = 125
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 67
+|Evolved Speed = 20
+|Evolved KB = 1
+|Evolved Cost = 300
+|Evolved Recharge = 1000
+|Evolved Attack Type = Single
+|Evolved Kamikaze = true
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Curse}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Curse|Curse]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 20,000 HP
+|val-Normal-Attack Power = 1 damage
+|val-Normal-Attack Range = 100
+|val-Normal-Attack Frequency = -
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 340,000 HP
+|val-Normal-MaxAttack = 17 damage
+|val-Evolved-Health = 340,000 HP
+|val-Evolved-Attack Power = 17 damage
+|val-Evolved-Attack Range = 125
+|val-Evolved-Attack Frequency = -
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 12f <sup>0.4s</sup><br>(55f <sup>1.83s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni608 f00}}
+
+==Trivia==
+*Wafer Cat, [[Li'l Tank Cat (Special Cat)|Li'l Tank Cat]], [[PAC-MAN (Special Cat)|PAC-MAN]], [[:Category:Ancient Eggs|Ancient Eggs]] and [[Li'l Clops Cat Egg (Special Cat)|Li'l Clops Cat Egg]] have the joint-lowest range out of all [[Cat Units]].
+*This Cat is tied with [[Stone Cat (Rare Cat)|Stone Cat]] and [[Hell Warden Emma (Uber Rare Cat)|Hell Commissioner Emma]] for the third highest health out of all Cats, only beaten by [[Elder Mask Doron (Special Cat)|Cat Mask Doron]] and [[Hades the Punisher (Uber Rare Cat)|Hades the Deathdealer]].
+
+==Reference==
+*https://battlecats-db.com/unit/609.html
+
+----
+{{CatNav|Adventurer Kanna|Dark Aegis Garu}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Weaken Immunity]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Warp Immunity]]
+[[Category:Kamikaze Cats]]
+[[Category:IAP Cats]]

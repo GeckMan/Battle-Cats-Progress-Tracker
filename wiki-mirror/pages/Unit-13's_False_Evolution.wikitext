@@ -1,0 +1,94 @@
+:''For the Traitless version of this enemy, see [[EVA Unit-13 (Enemy)]].''
+'''Unit-13's False Evolution''' (第13号機 疑似シン化第3+形態（推定）, ''Dai 13 Gō-Ki Giji Shinka Dai-San+ Kētai (Suitē)'', '''Unit-13 Pseudo-Awakened Third Form+ (Estimated)''') is an [[:Category:EVA Angel Enemies|EVA Angel]] enemy that appears in the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 8.7 Update#Update 8.7.5|Version 8.7.5]].
+
+{{Enemy Info
+|name = Unit-13's False Evolution
+|image = E 464.png
+|appearance = [[EVA Unit-13 Strikes!]]
+|money drop = 10,000¢ - 39,500¢
+}}
+
+==Enemy==
+Unit-13's False Evolution is currently the most powerful EVA Angel from the Evangelion Collaboration, having massive amounts of damage and immunity to almost all status effects excluding [[Curse|curse]]. Along with its ability to knockback, freeze and weaken all Cat Units with a 100% chance. It also has a very long Omni Strike range of -3600~1200. Its negative range combined with its immunity to [[Wave Attack]]s makes cheesing not an option and/or a stressful challenge for many.
+
+Thankfully, Unit-13 has low movement speed, low standing range and plenty of knockbacks. However, at 100% strength magnification, it has 4,000,000 HP and 100,000 damage (200,000 damage when strengthened!) and considering all [[Immune to Weaken|non-immune]] cats will get weakened, it effectively has 8 million HP! Combined with the peons in its [[We'll Meet Again (Merciless)|Merciless]] stage, this Angel can be considered a challenge for many.
+
+==Strategy==
+It is usually ill-advised to use meatshields against this monstrosity, as there are barely any fast ones that are immune to freeze or knockback. The only two relevant ones are [[Curling Cat (Rare Cat)|Curling Cat]] and [[Sumo Cat (Special Cat)|Talented Riceball Cat]], who both stand no chance against this enemy due to its overwhelming damage, especially when strengthened. What's more, it can also use them as a stepping stone to wipe out all your units or even snipe the base, thanks to its absurd Omni Strike range.
+
+The general strategy against this enemy is to either use rushers to slowly burst it down, or attack it from afar while triggering its attack as little as possible. The player must have a good timing on sending their units, so using most non-[[:Category:Rusher-class Cats|rusher]] [[:Category:Uber Rare Cats|Uber Rares]] is not a good idea, due to most getting killed in a single blow. If you want a unit that can can survive being hit and go on the attack back, it is required that they be [[:Category:Cats with Freeze Immunity|immune to Freeze]] or you have another attacker; otherwise, Unit 13's ability uptime of around 123% will make them worthless beyond absorbing damage.
+
+If the player happens to own any [[:Category:EVA Angel Killer Cats|EVA Angel Killer]] Ubers, using the [[You Will Find Happiness (Combo)|You Will Find Happiness]] combo to boost them will allow this enemy to be much easier to deal with. With the combo, EVA Angel Killers will deal '''25x''' damage to and only take '''1/25''' damage from this enemy, allowing very large amounts of damage to be secured without getting eradicated in a single attack.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[EVA Unit-13 Strikes!]]:
+**[[It's Not Your Fault (Veteran)]] (15%)
+**[[We'll Meet Again (Merciless)]] (100%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Unit-13 Strikes! (Removed)|Unit-13 Strikes!]]:
+**[[It's Not Your Fault (Veteran)]] (15%)
+**[[We'll Meet Again (Merciless)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Unit-13's False Evolution
+|Health = 4000000
+|Attack Power = 100000
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 122
+|Movement Speed = 4
+|Knockback = 6
+|Foreswing = 54
+|Backswing = 68
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -3,600~1,200)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 750f <sub>25 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = EVA Angel
+}}
+
+{{UnitViewer|enemy|bg = Bg110.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+464 e.png|Unit-13's False Evolution's spritesheet
+</gallery>
+
+==Trivia==
+
+*Currently, he is the only EVA Angel to not have a cat counterpart.
+*This is currently the tallest enemy in the game.
+*Him and [[Elder Flame Doron]] are tied for being the enemy with the highest number of [[Special Abilities]] at 10.
+*Prior to [[Version 14.7 Update|Version 14.7]] of the [[The Battle Cats|English Version]], this enemy was named "Awakened Eva Unit-13".
+
+==Reference==
+*https://battlecats-db.com/enemy/466.html
+
+----
+{{EnemyNav|Judgment|HAPPI}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:EVA Angel Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

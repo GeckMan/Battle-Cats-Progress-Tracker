@@ -1,0 +1,73 @@
+:''For the Cat Unit, see [[Master Uril (Special Cat)]]. For the form introduced in [[Heavenly Tower]], see [[Master Uril (Enemy)]].''
+'''Esoteric Uril''' (ネコ神面のウリル, ''Neko Shinmen no Uriru'', '''Divine Cat Mask Uril''' or '''Cat God-Mask Uril''') is a [[:Category:Relic Enemies|Relic]] variant of [[Master Uril (Enemy)|Master Uril]] introduced on [[Infernal Tower/Floor 50|Floor 50]] of the [[Infernal Tower]], which unlocks him as [[Master Uril (Special Cat)|Master Uril]]'s [[True Form]] via [[Catnip Challenges]] when completed. He was added in [[Version 13.0 Update|Version 13.0]].
+
+{{Enemy Info
+|name = Esoteric Uril
+|image = E 674.png
+|appearance = [[Infernal Tower/Floor 50|Infernal Tower - Floor 50]]
+|money drop = 3,333¢ - 13,165¢
+}}
+
+==Enemy==
+This Relic variant of Uril has two more knockbacks, but boasts even higher overall stats. He does more damage and has more health, with a higher standing range of 300 and an Omni Strike that hits up to 550. His rapid, devastating attacks generate level 4 [[Surge Attack]]s on hit that reach almost as far. Though he retains his Curse ability and has a 50% chance to Slow [[Cat Units]], these are largely irrelevant in face of his sheer strength that shreds them with terrifying ease.
+
+==Strategy==
+:''See [[Infernal Tower/Floor 50]].''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Infernal Tower]]: [[Infernal Tower/Floor 50|Floor 50]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Esoteric Uril
+|Health = 4500000
+|Attack Power = 28500
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 63
+|Movement Speed = 5
+|Knockback = 14
+|Foreswing = 20
+|Backswing = 29
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -400~550)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 4 [[Surge Attack]] between 200 and 450 range
+|Element = Relic
+}}
+
+{{UnitViewer|enemy|bg=Bg206.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+674 e.png|Esoteric Uril's spritesheet
+</gallery>
+
+==Trivia==
+*Esoteric Uril has the second-highest health of all [[:Category:Relic Enemies|Relics]], right behind [[Sage of Life Dr. Nova]].
+*He, [[Masked Grandmaster Cat (Enemy)|Masked Grandmaster Cat]], and [[Spiritual Yulala (Enemy)|Spiritual Yulala]] are currently the only Relic Enemies without descriptions, unlike their Traitless variants fought in Heavenly Tower.
+**Incidentally, all of these enemies are exclusive to the [[Infernal Tower]] and fought to unlock the [[True Form]]s of their corresponding [[:Category:Mythic Cats|Mythic Cats]].
+
+==Reference==
+*https://battlecats-db.com/enemy/676.html
+
+----
+{{EnemyNav|11th Anniversary Dummy|SOL DAE ROKKER}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Surge Attack Enemies]]
+[[Category:Mythic Bosses]]

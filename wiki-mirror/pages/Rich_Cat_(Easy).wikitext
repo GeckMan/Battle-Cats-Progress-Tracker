@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Hippoe|Mooth}}
+'''Rich Cat (Easy)''' is the first stage in [[Monday Stage]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 s en.png]]
+|stage location = [[File:Mapname000 s en.png]]
+|energy = 60
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%
+|Hippoe|100%}}
+|boss = {{Magnification|Mooth|100%}}
+|treasure = - [[Battle Items#Rich Cat|Rich Cat]] +1 (10%, unlimited)
+|XP = 1,140 XP
+|width = 4,000
+|max enemies = 7
+|jpname = Nekobon House Beginner
+|script = ネコボン屋敷 初級
+|romaji = Nekobon Yashiki Shokyū
+|star = 1
+|event-chapter = [[Monday Stage]]
+|difficulty = ★2
+|prev stage = N/A
+|next stage = [[Rich Cat (Normal)]]
+|occurrence = Every Monday
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 2~12 seconds<sup>60f~360f</sup>.
+*Infinite [[Snache]]s spawn, delay 2~12 seconds<sup>60f~360f</sup>.
+*Infinite [[Those Guys]] spawn, delay 2~12 seconds<sup>60f~360f</sup>.
+*1 [[Hippoe]] spawns.
+*When the base reaches 60% HP:
+**1 [[Mooth]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 1~4 seconds<sup>30f~120f</sup>.
+
+==Strategy==
+Very easy stage. The player can use [[Titan Cat (Normal Cat)|Mythical Titan Cat]], some meatshields, and some [[Lizard Cat (Normal Cat)|Dragon Cats]] to kill the Mooth.
+
+==Reference==
+*https://battlecats-db.com/stage/s01000-01.html
+
+{{Daily}}
+[[Category:Event Stages]]

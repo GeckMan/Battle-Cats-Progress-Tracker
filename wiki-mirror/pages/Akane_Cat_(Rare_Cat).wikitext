@@ -1,0 +1,124 @@
+:''For other uses, see [[Akane (disambiguation)]].''
+'''Akane Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. She was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 605
+|rarity = RR
+|name1 = Akane Cat
+|name2 = Akane Cat (Gi)
+}}
+
+==Evolution==
+Evolves into '''Akane Cat (Gi)''' at level 10.
+
+==Strategy/Usage==
+This unit's low stats and range doesn't make it have any use outside of early-game, not to mention her stats are only usable at level 30 or above, at which point more powerful cats can be invested in instead of Akane Cat.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 605
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni605 f00.png
+|Image2 = Uni605 c00.png
+|Name1 = Akane Cat
+|Desc1 = A pure-hearted Cat loved by all the guys.<br>Awaiting the fiance of her dreams.<br>Chance to strike a Savage Blow!
+|Name2 = Akane Cat (Gi)
+|Desc2 = A Cat who just can't stand boys! Trains while<br>imagining she's beating up that one rude guy!<br>Chance to strike a Savage Blow!
+|Name1 (JP) = ネコあかね (Neko Akane, Cat Akane)
+|Desc1 (JP) = 男子にモテモテの素直な美少女になりきるネコ<br>素敵な許婚が現れるのを待っている<br>たまに渾身の一撃を放つ
+|Transl1 (JP) = A cat who pretends to be an honest and beautiful girl who is popular with boys<br>Waiting for a nice marriage to appear<br>Occasionally fires off a shot with all her might shoots a whole body blow
+|Name2 (JP) = ネコあかね(道着) (Neko Akane, Neko Akane （Dōgi）)
+|Desc2 (JP) = 男なんて大嫌い！な強い美少女になりきるネコ<br>言い寄る男を倒す様を想像しながら日々鍛錬を積む<br>たまに渾身の一撃を放つ
+|Transl2 (JP) = I hate men! She's a beautiful, strong girl who hates men!<br>She trains daily, imagining herself defeating the men who woo her<br>Occasionally fires off a shot with all her might shoots a whole body blow
+|Name1 (TW) = 貓小茜
+|Desc1 (TW) = 很受男生歡迎的單純美少女。<br>期待著意想中的婚約對象到來。<br>有時候施放渾身一擊
+|Name2 (TW) = 貓小茜(道服)
+|Desc2 (TW) = 就是討厭男生！的倔強美少女貓咪。<br>想像著要打倒靠過來的男生而每天努力鍛鍊。<br>有時候施放渾身一擊
+|Name1 (KR) = 고양이 아카네
+|Desc1 (KR) = 남자에게 인기인 솔직한 미소녀가 된 고양이.<br>멋진 혼약자가 나타나길 기다리고 있다.<br>가끔 혼신의 일격을 낸다
+|Name2 (KR) = 고양이 아카네(도복)
+|Desc2 (KR) = 남자는 정말 질색!이라며 강한 미소녀가 된 고양이.<br>꼬시러 오는 남자들을 쓰러트리는 것을 상상하며 매일 단련 중.<br>가끔 혼신의 일격을 낸다
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Akane Cat
+|Normal Base HP = 1100
+|Normal Base AP = 700
+|Normal Range = 210
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 115
+|Normal Attack Length = 93
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 420
+|Normal Recharge = 560
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Savage Blow}} 30% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Evolved Name = Akane Cat (Gi)
+|Evolved Base HP = 1100
+|Evolved Base AP = 700
+|Evolved Range = 210
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 115
+|Evolved Attack Length = 93
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 420
+|Evolved Recharge = 560
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Savage Blow}} 30% chance to land a [[Savage Blow|savage blow]] dealing 3x damage to non-[[:Category:Metal Enemies|Metal]] enemies
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,100 HP
+|val-Normal-Attack Power = 700 damage<br>(139.07 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(57f <sup>1.9s</sup> backswing)
+|val-Normal-Recharge Time = 18.67 ~ 9.87 seconds
+|val-Normal-MaxHP = 18,700 HP
+|val-Normal-MaxAttack = 11,900 damage<br>(2,364.24 DPS)
+|val-Evolved-Health = 18,700 HP
+|val-Evolved-Attack Power = 11,900 damage<br>(2,364.24 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(57f <sup>1.9s</sup> backswing)
+|val-Evolved-Recharge Time = 18.67 ~ 9.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni605 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/606.html
+
+----
+{{CatNav|Ranma Cat (M)|Panda Cat}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Savage Blow Cats]]

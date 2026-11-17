@@ -1,0 +1,2 @@
+<includeonly><onlyinclude>&#91;[[MediaWiki:Custom-{{{1}}}/i18n.json|translations]]&#93;</onlyinclude></includeonly>
+E.g. for [[MediaWiki:Gadget-View Source]]: {{TranslateGadget|View Source}}

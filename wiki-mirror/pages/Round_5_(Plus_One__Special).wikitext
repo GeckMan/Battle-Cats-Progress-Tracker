@@ -1,0 +1,67 @@
+{{DISPLAYTITLE:Round 5}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Coffin Zoge|The Thrillerz|Zigge|Li'l Zyclone|Dread Bore|Oldhorn|Lowkey}}
+'''Round 5''' is the fifth and final stage in [[Otherworld Colosseum#Plus One: Special|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn000 04 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Coffin Zoge|400%
+|The Thrillerz|200%
+|Zigge|300%
+|Li'l Zyclone|100%
+|Dread Bore|300%
+|Oldhorn|100%}}
+|boss = {{Magnification|Lowkey|100%}}
+|enemies2 = {{Magnification|Coffin Zoge|480%
+|The Thrillerz|240%
+|Zigge|360%
+|Li'l Zyclone|120%
+|Dread Bore|360%
+|Oldhorn|120%}}
+|boss2 = {{Magnification|Lowkey|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Round 5
+|script = Round 5
+|romaji = Round 5
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Plus One: Special|Otherworld Colosseum]]
+|difficulty = ★11
+|prev stage = [[Round 4 (Plus One: Special)|Round 4]]
+|next stage = N/A
+}}
+
+==Rules==
+{{ColosseumRule|Plus One: Special}}
+
+==Battleground==
+*Infinite [[Coffin Zoge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*Infinite [[The Thrillerz|Thrillerz]] spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*Infinite [[The Thrillerz|Thrillerz]] spawn after 10 seconds<sup>300f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*4 [[Zigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*2 [[Li'l Zyclone]]s spawn after 40 seconds<sup>1,200f</sup>, delay 80~86.67 seconds<sup>2,400f~2,600f</sup>.
+*2 [[Dread Bore]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 80~86.67 seconds<sup>2,400f~2,600f</sup>.
+*2 [[Oldhorn]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 80~86.67 seconds<sup>2,400f~2,600f</sup>.
+*1 [[Lowkey]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+
+==Strategy==
+The ideal strategy is to rush this stage with DPS units or burst down the frontline pushers (Dread Bore/Oldhorn) as soon as possible before they become too much to handle. The Zombie peons and Lowkey shouldn't be underestimated, but aren't as threatening as the pushers.
+
+===Recommended Units===
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - With very high speed and extreme damage at melee range, Bahamut can quickly tear down the base and win the stage even before the first Oldhorn could spawn, although the same cannot be said for Lowkey unless he is Frozen as Bahamut won't be able to land enough hits to quickly remove him. As a Special Unit, he does benefit from the Colosseum Rule, and the additional copy it generates can easily secure a free victory.
+*[[Idi:N (Special Cat)|Idi]] - A deadly anti-Relic specialist rusher, Idi's Massive/Insane Damage ability can delete large chunks Lowkey and Oldhorn's otherwise towering health pool with every successful hit. Much like Bahamut, Idi requires Freeze effects to be consistent against Lowkey due to his very high range. Being a Special Unit only sweetens the deal further, as two Idis can take out Lowkey in a matter of seconds and contribute a bit more damage to the base when rushing.
+*[[Elder Mask Doron (Special Cat)|Doron]] - With level 3 Surge Attacks and a 8-second Freeze effect versus Relics, Doron's extreme health and 600-range Omni Strikes will typically ensure a successful hit on Lowkey and Oldhorn. The chip damage is obviously great to have, but it matters little compared to the Freeze, as it removes Lowkey's range advantage, allowing rushers to whittle away at him with no worry. The Colosseum Rule also serve to slightly extend his Freeze uptime, which works well due to his long cooldown.
+*[[Teacher BearCat (Rare Cat)|Cadaver BearCat]] - Packing Insane Damage to Zombies with its short-ranged Area Attacks and Zombie Killer, Cadaver BearCat helps to clear out the initial zombies, giving other units a clear shot at Lowkey, and also has applications against Dread Bore due to its range advantage if they end up spawning as the fight drags on.
+
+==Reference==
+*https://battlecats-db.com/stage/s36012-05.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

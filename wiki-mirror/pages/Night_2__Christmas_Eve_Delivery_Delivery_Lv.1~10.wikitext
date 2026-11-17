@@ -1,0 +1,237 @@
+{{StrategyNeeded}}
+<tabber>
+Delivery Lv.1~5=
+{{EnemiesAppearing|The Face|Snowball|Baa Baa|Those Guys|Teacher Bear|B.B.Bunny|Jackie Peng}}
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn058 00 a en.png]]
+|stage location = [[File:Mapname058 a en.png]]
+|energy = 80
+|enemy castle hp = 80,000 HP
+|enemies = {{Magnification|Snowball|0
+|Baa Baa|0
+|Those Guys|0
+|Teacher Bear|0
+|B.B.Bunny|0
+|Jackie Peng|0}}
+|boss = {{Magnification|The Face|0}}
+|XP = 1,520 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Delivery Lv.X
+|script = 配達 Lv.X
+|romaji = Haitatsu Lv.X
+|star = 1
+|event-chapter = [[Night 2: Christmas Eve Delivery]]
+}}
+
+==Battleground==
+*1 [[The Face]] spawns as the boss after 1.33 seconds<sup>40f</sup>.
+*40 [[Snowball]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Baa Baa]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*30 [[Snowball]]s spawn after 13.33 seconds<sup>400f</sup>, delay 2.67~4.67 seconds<sup>80f~140f</sup>.
+*5 [[Those Guys]] spawn after 26.67 seconds<sup>800f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*1 [[Teacher Bear]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 60 seconds<sup>1,800f</sup>, delay 25.33~26.67 seconds<sup>760f~800f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 62 seconds<sup>1,860f</sup>, delay 25.33~26.67 seconds<sup>760f~800f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 62.67 seconds<sup>1,880f</sup>, delay 25.33~26.67 seconds<sup>760f~800f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+*1 [[Teacher Bear]] spawns after 73.33 seconds<sup>2,200f</sup>.
+*Infinite [[Snowball]]s spawn after 100 seconds<sup>3,000f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Delivery
+! colspan="7" style="text-align: center;"|Strength Magnifactions
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+|-
+! scope="col" |[[The Face]]
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Jackie Peng]]
+! scope="col" |[[Baa Baa]]
+! scope="col" |[[Teacher Bear]]
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Snowball]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|200%
+|200%
+|200%
+|200%
+|200%
+|200%
+|200%
+|80
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|1,520 XP
+|-
+! scope="row" |2
+|300%
+|450%
+|450%
+|450%
+|450%
+|450%
+|450%
+|80
+|[[Catamin]] [A] +3
+|1,520 XP
+|-
+! scope="row" |3
+|400%
+|700%
+|700%
+|700%
+|700%
+|700%
+|700%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520 XP
+|-
+! scope="row" |4
+|500%
+|950%
+|950%
+|950%
+|950%
+|950%
+|950%
+|120
+|[[Battle Items#Rich Cat|Rich Cat]] +1
+|2,280 XP
+|-
+! scope="row" |5
+|600%
+|1,200%
+|1,200%
+|1,200%
+|1,200%
+|1,200%
+|1,200%
+|120
+|[[Catamin]] [B] +3
+|2,280 XP
+|}
+
+==Strategy==
+The main problem of this stage are the two Teacher Bears, as when they come out they will hang out behind The Face, tearing into your units. A Long Distance attacker can easily fix this issue, or you could use the default Cat Cannon to knock back and eventually defeat the Teacher Bears, although this only really works well in Delivery 1-3, when the Teacher Bears have less HP. Other than that, make sure to bring along something that can outrange The Face, like Crazed Bahamut Cat, as he can safely hit The Face from a distance, making the stage a whole lot quicker.
+
+|-|
+Delivery Lv.6~10=
+{{EnemiesAppearing|Dark Emperor Santa|Satan Claus|Gabriel|Snowball|Angelic Gory|Christmas D.}}
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn058 00 a en.png]]
+|stage location = [[File:Mapname058 a en.png]]
+|energy = 120
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Dark Emperor Santa|0
+|Gabriel|0
+|Snowball|0
+|Angelic Gory|0
+|Christmas D.|0}}
+|boss = {{Magnification|Satan Claus|0}}
+|XP = 2,280 XP
+|width = 5,500
+|max enemies = 10
+|jpname = Delivery Lv.X
+|script = 配達 Lv.X
+|romaji = Haitatsu Lv.X
+|star = 1
+|event-chapter = [[Night 2: Christmas Eve Delivery]]
+}}
+
+==Battleground==
+*1 [[Dark Emperor Santa]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Satan Claus]] spawns as the boss after 26.67 seconds<sup>800f</sup>.
+*Infinite [[Gabriel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*3 [[Gabriel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Snowball]]s spawn after 20 seconds<sup>600f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*3 [[Angelic Gory|Angelic Gories]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+*1 [[Christmas D.]] spawns after 86.67 seconds<sup>2,600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Delivery
+! colspan="6" style="text-align: center;"|Strength Magnifactions
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+|-
+! scope="col" |[[Satan Claus]]
+! scope="col" |[[Dark Emperor Santa]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Angelic Gory]]
+! scope="col" |[[Christmas D.]]
+! scope="col" |[[Snowball]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |6
+|150%
+|400%
+|100%
+|100%
+|200%
+|1,200%
+|120
+|500,000 XP
+|2,280 XP
+|-
+! scope="row" |7
+|313%
+|475%
+|175%
+|125%
+|250%
+|1,650%
+|160
+|[[Battle Items#Cat CPU|Cat CPU]] +1
+|3,040 XP
+|-
+! scope="row" |8
+|476%
+|550%
+|250%
+|150%
+|300%
+|2,100%
+|160
+|[[Catamin]] [C] +3
+|3,040 XP
+|-
+! scope="row" |9
+|639%
+|625%
+|325%
+|175%
+|350%
+|2,550%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800 XP
+|-
+! scope="row" |10
+|800%
+|700%
+|400%
+|200%
+|400%
+|3,000%
+|200
+|1,000,000 XP
+|3,800 XP
+|}
+
+==Strategy==
+-
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24058.html
+[[Category:No Continue Stages]]

@@ -1,0 +1,130 @@
+:''This article is about the Cat Unit. For the enemies, see [[Satanmaria (Enemy)]] and [[Wondermaria (Enemy)]].''
+'''Satanmaria''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Bikkuriman Collaboration Event]].
+
+{{Cat Info
+|ID = 470
+|rarity = UR
+|name1 = Satanmaria
+|name2 = Wondermaria
+}}
+
+==Evolution==
+Evolves into '''Wondermaria''' at level 10.
+
+==Strategy/Usage==
+Wondermaria is an aggressive midrange rusher that blitzes down melee enemies. She has above-average DPS, meaning she can effectively take care of anything that doesn't immediately outrange her. Her two biggest flaws, however, are her poor health (lower than even the likes of pre-[[True Form]] [[Raiden (Uber Rare Cat)|Raiden]]) and lack of backswing to prevent clipping into enemies. To compensate, she has low cooldown and frequent attacks. [[Berserkory]] and [[Johnnyleon]] are her best targets; both are Red, only have one knockback, and can't normally hit her, the reason being that their waves are nullified and that their [[Long Distance]] attacks miss respectively. Wondermaria's Red target and [[Immune to Waves|Wave Immune]] are still useful against other enemies such as [[J.K. Bun Bun]], [[Capy]], [[Dober P.D]], and [[Mr. Mer]]. She can deliver well as long as you have her risky nature in mind.
+
+{{Job|Classification = Rusher & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 470
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni470 f00.png
+|Image2 = Uni470 c00.png
+|Name1 = Satanmaria
+|Desc1 = Having stolen the six sacred orbs of power<br>She has achieved unspeakable strength!<br>Immune to Waves, Massive damage to Red
+|Name2 = Wondermaria
+|Desc2 = Veteran of countless battles, she commands the<br>orbs to open to the gates to a higher dimension.<br>Immune to Waves, Massive damage to Red
+|Name1 (JP) = サタンマリア (Satanmaria, Satan Maria)
+|Desc1 (JP) = 豊・光・動・夢・遊・霊の６の聖球を奪った<br>マリアはパワーアップ！無敵の魔重進攻を開始？<br>波動ダメージを無効にし、赤い敵に超ダメージを与える
+|Transl1 (JP) = Steal the 6 sacred balls of Yutaka, Light, Motion, Dream, Yu, and Spirit<br>Maria powers up! Start invincible invasion of magic?<br>Disables Wave Damage and deals super damage to red enemies
+|Name2 (JP) = ワンダーマリア (Wandāmaria, Wonder Maria)
+|Desc2 (JP) = 魔戦歴を経たマリアは６聖球ソードを自在に<br>操作し次界魔豊光動夢遊霊域の発見征服へ加速進攻？！<br>波動ダメージを無効にし、赤い敵に超ダメージを与える
+|Transl2 (JP) = Maria who has gone through magical battles can freely take 6 sacred ball swords<br>Operate to accelerate the discovery and conquer the discovery of the next world Maho Toyomado dream spirit area? !<br>Disables Wave Damage and deals super damage to red enemies
+|Name1 (TW) = 撒旦瑪利亞
+|Desc1 (TW) = 奪走了豐・光・動・夢・遊・靈六聖球的<br>瑪利亞將會更強！開始無敵的魔重進攻？<br>波動傷害無效，可以給予紅色敵人超大傷害
+|Name2 (TW) = 神奇瑪利亞
+|Desc2 (TW) = 經歷魔戰的瑪利亞自在的操控六聖球<br>對發現征服次界魔豐光動夢遊靈域而加速進攻？！<br>波動傷害無效，可以給予紅色敵人超大傷害
+|Name1 (KR) = 사탄마리아
+|Desc1 (KR) = 풍(豊), 광(光), 동(動), 몽(夢), 유(遊), 영(靈)의 성구를<br>빼앗은 마리아는 파워 업! 무적의 침공 개시!?<br>파동 데미지를 무효화 시키고 빨간 적에 초 데미지를 입힌다
+|Name2 (KR) = 원더마리아
+|Desc2 (KR) = 마전력을 거친 마리아는 6성구 존을 자유자재로 조작하여<br>차계 마6성구 지역의 발견, 정복에 가속 침공!?<br>파동 데미지를 무효화 시키고 빨간 적에 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 2,700¢
+*Chapter 2: 4,050¢
+*Chapter 3: 5,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Satanmaria
+|Normal Base HP = 1400
+|Normal Base AP = 1980
+|Normal Range = 370
+|Normal Foreswing = 51
+|Normal Attack Cooldown = 105
+|Normal Attack Length = 96
+|Normal Speed = 14
+|Normal KB = 4
+|Normal Cost = 2700
+|Normal Recharge = 2800
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Evolved Name = Wondermaria
+|Evolved Base HP = 1680
+|Evolved Base AP = 2310
+|Evolved Range = 370
+|Evolved Foreswing = 51
+|Evolved Attack Cooldown = 105
+|Evolved Attack Length = 96
+|Evolved Speed = 28
+|Evolved KB = 4
+|Evolved Cost = 2700
+|Evolved Recharge = 2800
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,400 HP
+|val-Normal-Attack Power = 1,980 damage<br>(380.77 DPS)
+|val-Normal-Attack Range = 370
+|val-Normal-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Normal-Movement Speed = 14
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 51f <sup>1.7s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Normal-Recharge Time = 93.33 ~ 84.53 seconds
+|val-Normal-MaxHP = 23,800 HP
+|val-Normal-MaxAttack = 33,660 damage<br>(6,473.08 DPS)
+|val-Evolved-Health = 28,560 HP
+|val-Evolved-Attack Power = 39,270 damage<br>(7,551.92 DPS)
+|val-Evolved-Attack Range = 370
+|val-Evolved-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Evolved-Movement Speed = 28
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 51f <sup>1.7s</sup><br>(45f <sup>1.5s</sup> backswing)
+|val-Evolved-Recharge Time = 93.33 ~ 84.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni470 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/471.html
+
+----
+{{CatNav|Super Devil|Heracrist}}
+
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Collaboration Event Cats]]
+[[Category:Rusher-class Cats]]

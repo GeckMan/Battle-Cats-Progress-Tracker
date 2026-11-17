@@ -1,0 +1,126 @@
+:''For the enemy encountered in [[Fate/Stay Night: Heaven's Feel Collaboration Event]], see [[Lancer (Enemy)]].''
+'''Lancer''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. He was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Cat Info
+|ID = 366
+|rarity = UR
+|name1 = Lancer
+|name2 = Lancer CC
+}}
+
+==Evolution==
+Evolves into '''Lancer CC''' at level 10.
+
+==Strategy/Usage==
+Treat Lancer as a better [[Bahamut Cat (Special Cat)|Crazed Bahamut]]: a unit who can be used anywhere for general damage, but for little more. His stats are not that good compared to other pure generalists, but his lack of real downsides prevents him from being fully outclassed.
+
+Of course, he is also viable as a barrier breaker, as his health and range tend to allow him to stay alive for quite a while, during which he may strike down plenty of barriers.
+
+{{Job|Classification = Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 366
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni366 f00.png
+|Image2 = Uni366 c00.png
+|Name1 = Lancer
+|Desc1 = Joining the fight from Fate/stay night [HF]! His<br>spear is pledged to an unknown Master.<br>100% chance to break Barriers! (Area Attack)
+|Name2 = Lancer CC
+|Desc2 = Joining the fight from Fate/stay night [HF]! Agility<br>which rivals even Saber's is his point of pride.<br>100% chance to break Barriers! (Area Attack)
+|Name1 (JP) = ランサー (Ransā, Lancer)
+|Desc1 (JP) = Fate/stay night [HF]から参戦！<br>マスター不明の槍兵の英霊<br>必ずバリアを貫く(範囲攻撃)
+|Transl1 (JP) = Enter from Fate / stay night [HF]!<br>The hero of the unknown spear soldier<br>Always penetrate the barrier (range attack)
+|Name2 (JP) = ランサーCC (RansāCC, LancerCC)
+|Desc2 (JP) = Fate/stay night [HF]から参戦！<br>高い敏捷性を誇り、セイバーと互角に渡り合う<br>必ずバリアを貫く(範囲攻撃)
+|Transl2 (JP) = Enter from Fate / stay night [HF]!<br>Highly agile, crossing Saber<br>Always penetrate the barrier (area attack)
+|Name1 (TW) = Lancer
+|Desc1 (TW) = 從Fate/stay night [HF]來參戰！<br>御主不明，槍兵的英靈<br>必定能破壞護盾(範圍攻擊)
+|Name2 (TW) = Lancer CC
+|Desc2 (TW) = 從Fate/stay night [HF]來參戰！<br>敏捷性優秀，與Saber不相上下<br>必定能破壞護盾(範圍攻擊)
+|Name1 (KR) = 랜서
+|Desc1 (KR) = Fate/stay night [HF]에서 참전!<br>마스터를 알 수 없는 창병 클래스 영령<br>반드시 베리어를 뚫어버린다 (범위 공격)
+|Name2 (KR) = 랜서CC
+|Desc2 (KR) = Fate/stay night [HF]에서 참전!<br>높은 민첩성을 자랑하며 세이버와 호각을 다툰다<br>반드시 베리어를 뚫어버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,900¢
+*Chapter 2: 4,350¢
+*Chapter 3: 5,800¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Lancer
+|Normal Base HP = 1900
+|Normal Base AP = 900
+|Normal Range = 480
+|Normal Foreswing = 44
+|Normal Attack Cooldown = 91
+|Normal Attack Length = 76
+|Normal Speed = 13
+|Normal KB = 4
+|Normal Cost = 2900
+|Normal Recharge = 4100
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Evolved Name = Lancer CC
+|Evolved Base HP = 2900
+|Evolved Base AP = 1350
+|Evolved Range = 480
+|Evolved Foreswing = 44
+|Evolved Attack Cooldown = 91
+|Evolved Attack Length = 76
+|Evolved Speed = 13
+|Evolved KB = 4
+|Evolved Cost = 2900
+|Evolved Recharge = 4100
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Barrier Breaker}} 100% chance to [[Barrier Breaker|break]] [[Barrier]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,900 HP
+|val-Normal-Attack Power = 900 damage<br>(200 DPS)
+|val-Normal-Attack Range = 480
+|val-Normal-Attack Frequency = 135f <sub>4.5 seconds</sub>
+|val-Normal-Movement Speed = 13
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 44f <sup>1.47s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 136.67 ~ 127.87 seconds
+|val-Normal-MaxHP = 32,300 HP
+|val-Normal-MaxAttack = 15,300 damage<br>(3,400 DPS)
+|val-Evolved-Health = 49,300 HP
+|val-Evolved-Attack Power = 22,950 damage<br>(5,100 DPS)
+|val-Evolved-Attack Range = 480
+|val-Evolved-Attack Frequency = 135f <sub>4.5 seconds</sub>
+|val-Evolved-Movement Speed = 13
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 44f <sup>1.47s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 136.67 ~ 127.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni366 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/367.html
+
+----
+{{CatNav|Archer|Rider}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Barrier Breaker Cats]]

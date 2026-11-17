@@ -1,0 +1,83 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Celeboodle|Gory|Croco|Squire Rel|One Horn|Those Guys|Pigge|Christmas D.}}
+'''Reindeer on Strike''' is the fourth stage in [[Santa Claws at Work!#Night 1: Santa Claws at Work|Night 1: Santa Claws at Work]].
+
+{{Stage Info
+|stage name = [[File:rc054.png]]
+[[File:Mapsn325 03 s en.png]]
+|stage location = [[File:Mapname325 s en.png]]
+|energy = 85
+|enemy castle hp = 150,000 HP
+|enemies = {{Magnification|Doge Dark|100%
+|Celeboodle|100%
+|Gory|400%
+|Croco|400%
+|Squire Rel|400%
+|One Horn|400%
+|Those Guys|400%
+|Pigge|400%}}
+|boss = {{Magnification|Christmas D.|100%}}
+|enemies2 = {{Magnification|Doge Dark|150%
+|Celeboodle|150%
+|Gory|600%
+|Croco|600%
+|Squire Rel|600%
+|One Horn|600%
+|Those Guys|600%
+|Pigge|600%}}
+|boss2 = {{Magnification|Christmas D.|150%}}
+|enemies3 = {{Magnification|Doge Dark|200%
+|Celeboodle|200%
+|Gory|800%
+|Croco|800%
+|Squire Rel|800%
+|One Horn|800%
+|Those Guys|800%
+|Pigge|800%}}
+|boss3 = {{Magnification|Christmas D.|200%}}
+|treasure = - [[A Gift of Cats (Rare Cat)|A Gift of Cats]] (4%, 1 time)
+|score reward = '''7,000''': 150,000 XP<br>
+'''4,000''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': [[Battle Items#Rich Cat|Rich Cat]] +1
+|XP = 2,550 XP
+|width = 6,000
+|max enemies = 8
+|jpname = Reindeers' Strike
+|script = トナカイたちのスト
+|romaji = Tonakai tachi no Suto
+|star = 3
+|event-chapter = [[Santa Claws at Work!#Night 1: Santa Claws at Work|Night 1: Santa Claws at Work]]
+|difficulty = ★4
+|prev stage = [[Returning Gifts]]
+|next stage = [[Gift of Smiles]]
+}}
+
+==Battleground==
+*1 [[Doge Dark]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Celeboodle]] spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Celeboodle]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Celeboodle]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Doge Dark]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*3 [[Gory|Gories]] spawn after 60 seconds<sup>1,800f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Croco]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Squire Rel]]s spawn after 83.33 seconds<sup>2,500f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*When the base reaches 75% HP:
+**1 [[Christmas D.]] spawns as the boss.
+**3 [[One Horn]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**1 [[Celeboodle]] spawns.
+**Infinite [[Those Guys]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**3 [[Squire Rel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Croco]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Those Guys]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Pigge]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+**1 [[Celeboodle]] spawns.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01325-04.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

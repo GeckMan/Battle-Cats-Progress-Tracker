@@ -1,0 +1,112 @@
+'''Scarf Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Nyanko Rangers (Event Gacha)|Nyanko Rangers]] Event Gacha using Justice Hearts. It was added in [[Version 15.0 Update|Version 15.0]] for [[Nyanko Daisensou|BCJP]] and in [[Version 15.4 Update|Version 15.4]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 831
+|rarity = EX
+|name1 = Scarf Cat
+|name2 = Red Nyanko Ranger
+}}
+
+==Evolution==
+Evolves into '''Red Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+This Cat moves fast and attacks fast, but is finicky to a fault. Red Nyanko Ranger is a middling anti-[[:Category:Aku Enemies|Aku]] DPS that performs well against shorter-ranged targets like [[Aku Gory]], [[Condemned Peng]], and [[Medu-san]]. The largest part of their survivability against Aku is gated behind [[Gold Silver Strike (Combo)|Gold Silver Strike]]'s Surge Immunity effect, which is essentially mandatory to run when using them against most Death Surge enemies, otherwise they tend to die to a light breeze. (The units required for this [[Cat Combo]] are currently exclusive to the Japanese version of The Battle Cats.) Red Nyanko Ranger sustains 8,400 Area-DPS against targets at Lv.50, which is actually quite decent, only being held back by their abysmally long recharge rate. However, this performance is usually not good enough to justify the opportunity cost of burning two valuable upper-row slots for an otherwise useless Cat Combo, all to bolster the matchups of one situationally useful cat. Red Nyanko Ranger can still be useful for midgame in [[The Aku Realms]], where dedicated Aku counters like them are uncommon enough to be worth considering even without Gold Silver Strike, but by lategame, [[Paperboy Cat (Rare Cat)|Paperboy Cat]] completely outclasses them in every regard.
+
+Despite this, with [[Helmet Cat (Special Cat)|Helmet Cat]]'s Wave Immunity [[Cat Combo|Combo]], Red Nyanko Ranger can be used as a decently powerful soft-counter to [[Deathkory]]. But their own "Kaijin Slayer" Effect Combo lacks any purpose outside of the [[Anniversary/13th Year|only event]] where [[:Category:Kaijin Enemies|Kaijin Enemies]] appear, so this cat will generally not be considered for use when stacking Nyanko Ranger Combos.
+
+In truth, Red Nyanko Ranger is usually not even worth considering for {{4c}} restriction stages either, outside of Deathkory, especially with just how powerful Paperboy Cat and [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]] already are in this environment; by the time Aku are introduced in [[Legend Stages#Uncanny Legends|Uncanny Legend]] subchapters, the boat for any meaningful usage has long since sailed. This unit is best reserved for the [[Underground Labyrinth]].
+
+{{Job|Classification = Midranger & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Red Strike|"Kaijin Slayer" Effects Activated|Scarf Cat|jpname=レッドパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 831
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni831 f00.png
+|Image2 = Uni831 c00.png
+|Name1 = Scarf Cat
+|Desc1 = Fiery leader of the Nyanko Rangers.<br>Their burning passion saves a fortune on heating bills.<br>Area Attacks deal Massive damage to Aku.
+|Name2 = Red Nyanko Ranger
+|Desc2 = Awaken, Cat Soul! Transform!<br>Their mighty Nyanblade cuts evil in two.<br>Area Attacks deal Massive damage to Aku.
+|Name1 (JP) = スカーフにゃんこ (Sukāfu Nyanko, Scarf Cat)
+|Desc1 (JP) = にゃんこレンジャーのリーダーを務める熱血ネコ<br>燃えたぎるハートで寒い日でも暖房いらず<br>悪魔に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = A hot-blooded Cat who serves as the leader of the Nyanko Rangers<br>Its blazing heart keeps it warm even on cold days<br>Deals Massive Damage to Aku enemies (Area Attack)
+|Name2 (JP) = レッドにゃんこ (Reddo Nyanko, Red Cat)
+|Desc2 (JP) = キャットソウルを宿し、にゃんこレンジャー変身！<br>「ニャンブレード」で立ちはだかる敵を一刀両断する<br>悪魔に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Channeling the Cat Soul, Nyanko Ranger transform!<br>Uses the "Nyanblade" to slice through any enemies in the way<br>Deals Massive Damage to Aku enemies (Area Attack)
+|Name1 (TW) = 領巾貓
+|Desc1 (TW) = 擔任貓咪戰隊隊長的熱血貓咪<br>熾熱燃燒的內心讓他在寒冬也不需要暖氣<br>可以給予惡魔超大傷害（範圍攻擊）
+|Name2 (TW) = 紅戰士貓
+|Desc2 (TW) = 以寄宿的貓咪之魂變身為貓咪戰隊<br>以「喵刃」將來勢洶洶的敵人一刀兩斷<br>可以給予惡魔超大傷害（範圍攻擊）
+|Name1 (KR) = 스카프 냥코
+|Desc1 (KR) = 냥코 레인저의 리더를 맡고 있는 열혈 고양이<br>불타오르는 마음 덕분에 추운 날에도 난방이 필요 없다<br>악마에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 레드 냥코
+|Desc2 (KR) = 냥코 레인저 변신! 레드 캣!<br>「냥 블레이드」로 앞길을 막는 적을 일도양단한다<br>악마에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 600¢
+*Chapter 2: 900¢
+*Chapter 3: 1,200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Scarf Cat
+|Normal Base HP = 850
+|Normal Base AP = 70
+|Normal Range = 295
+|Normal Foreswing = 12
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 24
+|Normal Speed = 19
+|Normal KB = 2
+|Normal Cost = 600
+|Normal Recharge = 960
+|Normal Attack Type = Area
+|Normal Targets = Aku
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Red Nyanko Ranger
+|Evolved Base HP = 950
+|Evolved Base AP = 83
+|Evolved Range = 295
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 24
+|Evolved Speed = 19
+|Evolved KB = 2
+|Evolved Cost = 600
+|Evolved Recharge = 960
+|Evolved Attack Type = Area
+|Evolved Targets = Aku
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+20<br>Lv.50+25<sup>JP</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni831 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/832.html
+
+----
+{{CatNav|Raclesa|Fedora Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

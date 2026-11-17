@@ -1,0 +1,119 @@
+{{Unobtainable}}
+{{JPExclusive}}
+'''Clone Elle''' is a [[:Category:Special Cats|Special Cat]] that could be unlocked by using a serial code during the [[Million Arthur Collaboration Event]]. It was added in [[Version 2.2 Update#Version 2.2.4 Update|Version 2.2.4]].
+
+{{Cat Info
+|ID = 101
+|rarity = EX
+|name1 = Clone Elle
+|name2 = Clone Elle CC
+}}
+
+==Evolution==
+Evolves into '''Clone Elle CC''' at level 10.
+
+==Strategy/Usage==
+This unit is immediately outclassed upon obtaining [[Axe Cat (Normal Cat)|Axe Cat]]. With superior durability and DPS, Axe Cat so thoroughly outperforms Clone Elle that the latter's Area Attack hardly matters in the long run. The fact that even Axe Cat eventually gets replaced by [[Ninja Cat (Special Cat)|Ninja Cat]] and the latter has decent talents purchasable later on only cement Clone Elle's obsolescence.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 101
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni101 f00.png
+|Image2 = Uni101 c00.png
+|Name1 (JP) = 弱酸性エル (Jaku-San-Sei Eru, Jaku-San-Sei Elle)
+|Desc1 (JP) = 弱酸性ミリオンアーサーから参戦！<br>見た目よりも戦闘向きのキャラクター<br>赤い敵にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = Joining the war from Jaku-San-Sei Million Arthur!<br>A character more suited for combat than appearance<br>Extremely strong against Red enemies (Area Attack)
+|Name2 (JP) = 弱酸性エルCC (Jaku-San-Sei EruCC, Jaku-San-Sei ElleCC)
+|Desc2 (JP) = 弱酸性ミリオンアーサーから参戦！<br>見た目よりも戦闘向きのキャラクター<br>赤い敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joining the war from Jaku-San-Sei Million Arthur!<br>A character more suited for combat than appearance<br>Extremely strong against Red enemies (Area Attack)
+|Name1 (KR) = 약산성 엘
+|Desc1 (KR) = 약산성 밀리언 아서에서 참전!<br>생긴 것 보다는 전투적인 캐릭터<br>빨간 적에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 약산성 엘CC
+|Desc2 (KR) = 약산성 밀리언 아서에서 참전!<br>생긴 것 보다는 전투적인 캐릭터<br>빨간 적에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 200円
+*Chapter 2: 300円
+*Chapter 3: 400円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Clone Elle
+|Normal Base HP = 200
+|Normal Base AP = 49
+|Normal Range = 150
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 87
+|Normal Speed = 12
+|Normal KB = 5
+|Normal Cost = 200
+|Normal Recharge = 396
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Clone Elle CC
+|Evolved Base HP = 200
+|Evolved Base AP = 49
+|Evolved Range = 150
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 87
+|Evolved Speed = 12
+|Evolved KB = 5
+|Evolved Cost = 200
+|Evolved Recharge = 396
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 49 damage<br>(16.9 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 87f <sub>2.9 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 13.2 ~ 4.4 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 832 damage<br>(286.9 DPS)
+|val-Evolved-Health = 3,400 HP
+|val-Evolved-Attack Power = 832 damage<br>(286.9 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 87f <sub>2.9 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 13.2 ~ 4.4 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni101 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/102.html
+
+----
+{{CatNav|Maiden Cat|Red Marron}}
+----
+
+{{Million Arthur}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Collaboration Event Cats]]

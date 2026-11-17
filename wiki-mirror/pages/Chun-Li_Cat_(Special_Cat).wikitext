@@ -1,0 +1,127 @@
+'''Chun-Li Cat''' is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]] and can be unlocked as a [[Daily Bonus|Stamp Reward]] during the [[Street Fighter Collaboration Event]].
+
+{{Cat Info
+|ID = 509
+|rarity = EX
+|name1 = Chun-Li Cat
+|name2 = Chun-Li Cat CC
+}}
+
+==Evolution==
+Evolves into '''Chun-Li Cat CC''' at level 10.
+
+==Strategy/Usage==
+Chun-Li Cat can be useful for very early-game [[:Category:Metal Enemies|Metal]] stages such as [[Return of Terror]] or [[Love, Metal Hippoe (Hard)|Love, Metal Hippoe]]. However, once you get past [[Empire of Cats]], this Cat sees limited use, and is primarily used for getting [[User Rank]] levels. However, she can see use in [[Aguham (Cats of the Cosmos)|Aguham]] due to her specific attributes of being a Special Critter. However, this role is now a bit saturated, and she's made essentially obsolete if other Critters (namely [[Crazed Moneko (Special Cat)|Crazed Moneko]]) are owned.
+Besides these few use cases, however, you're unlikely to see her outside of a cage in the [[Underground Labyrinth]].
+
+{{Job|Classification = Critter & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 509
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni509 f00.png
+|Image2 = Uni509 c00.png
+|Name1 = Chun-Li Cat
+|Desc1 = A Cat who seems to have stuck buns in her<br>hair. Trying to learn the Spinning Bird Kick.<br>Small chance of Critical.
+|Name2 = Chun-Li Cat CC
+|Desc2 = Beautiful Cat working for the ICPO.<br>Mesmerizing kicks stun her opponents.<br>Small chance of Critical.
+|Name1 (JP) = ネコ春麗 (Neko Shunrē, Cat Chun-Li)
+|Desc1 (JP) = 可愛らしいお団子ヘアーが特徴的なネコ<br>スピニングバードキックを見よう見まねで特訓中<br>ごくまれにクリティカルを放つ
+|Transl1 (JP) = A Cat whose hair has distinctive cute buns<br>Training the spinning bird kick by imitating an example<br> Very occasionally releases a critical
+|Name2 (JP) = ネコ春麗CC (Neko Shunrē CC, Cat Chun-Li CC)
+|Desc2 (JP) = ICPO捜査官の美女ファイターに憧れるネコ<br>美しき回転キックは対戦相手も自分も酔わせる<br>ごくまれにクリティカルを放つ
+|Transl2 (JP) = A Cat who longs to be a beautiful fighter and an ICPO investigator<br>Her elegant spinning kick makes the opponent and her dizzy<br>Very occasionally releases a critical
+|Name1 (TW) = 春麗貓
+|Desc1 (TW) = 有著可愛雙丸子頭特徵的貓咪<br>對"旋轉鶴腳腿"有樣學樣特訓中<br>偶爾會使出會心一擊
+|Name2 (TW) = 春麗貓CC
+|Desc2 (TW) = 崇拜ICPO美女搜查官戰士的貓咪<br>華麗的回旋踢讓對手跟自己都沉醉了<br>偶爾會使出會心一擊
+|Name1 (KR) = 고양이 춘리
+|Desc1 (KR) = 귀여운 양갈래 당고머리가 특징적인 고양이<br>스피닝 버드 킥을 어깨 넘어로 배워 맹훈련 중<br>극히 드물게 크리티컬을 낸다
+|Name2 (KR) = 고양이 춘리CC
+|Desc2 (KR) = ICPO 탐사관인 미녀 파이터를 동경하는 고양이<br>아름다운 회전 킥은 상대는 물론 자기자신도 홀려버린다<br>극히 드물게 크리티컬을 낸다
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Chun-Li Cat
+|Normal Base HP = 600
+|Normal Base AP = 60,60,60
+|Normal Range = 180
+|Normal Foreswing = 27,35,43
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 94
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,020 at 27f <sup>0.9s</sup>, 1,020 at 35f <sup>1.17s</sup>, 1,020 at 43f <sup>1.43s</sup>)<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]
+|Evolved Name = Chun-Li Cat CC
+|Evolved Base HP = 600
+|Evolved Base AP = 60,60,60
+|Evolved Range = 180
+|Evolved Foreswing = 27,35,43
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 94
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (1,020 at 27f <sup>0.9s</sup>, 1,020 at 35f <sup>1.17s</sup>, 1,020 at 43f <sup>1.43s</sup>)<br>
+{{AbilityIcon|Critical}} 5% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 180 damage<br>(57.45 DPS)
+|val-Normal-Attack Range = 180
+|val-Normal-Attack Frequency = 94f <sub>3.13 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 27f <sup>0.9s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 3,060 damage<br>(976.6 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 3,060 damage<br>(976.6 DPS)
+|val-Evolved-Attack Range = 180
+|val-Evolved-Attack Frequency = 94f <sub>3.13 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 27f <sup>0.9s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni509 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/510.html
+
+----
+{{CatNav|Ryu Cat|Akuma}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Multi-Hit Cats]]

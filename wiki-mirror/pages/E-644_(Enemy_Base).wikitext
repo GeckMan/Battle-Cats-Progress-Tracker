@@ -1,0 +1,48 @@
+'''E-644''' is a placeholder [[Enemy Bases|enemy base]] whose ID is between [[Grand Mage Mimon]] and [[10th and 1/2 Anniversary Birthday Cake]]. It looks exactly like [[Doge]] with only 100 hp, but has the damage and special abilities of a [[Dummy (Enemy Base)|Dummy]]. It was added in [[Version 12.3 Update|Version 12.3]].
+
+{{Enemy Info
+|name = E-644
+|image = E 000.png
+|money drop = N/A
+}}
+
+==Stats==
+{{Enemy Stats
+|Enemy = E-644
+|Health = 100
+|Attack Power = 999999
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 609
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 10
+|Backswing = 8
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy|bg=Bg043.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+644 e.png|E-644's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/646.html
+
+----
+{{EnemyNav|Grand Mage Mimon|10th and 1/2 Anniversary Birthday Cake}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Animated Enemy Bases]]

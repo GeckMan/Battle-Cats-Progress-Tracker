@@ -1,0 +1,195 @@
+{{EnemiesAppearing|Zoge|Kroxo|Owlbrow|Pigeon de Sable|Zigge|Znache|Gorilliam}}
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn016 00 a en.png]]
+|stage location = [[File:Mapname016 a en.png]]
+|enemies = {{Magnification|Zoge|0
+|Kroxo|0
+|Owlbrow|0
+|Pigeon de Sable|0
+|Zigge|0
+|Znache|0}}
+|boss = {{Magnification|Gorilliam|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,000
+|max enemies = 12
+|jpname = Continued・Forbidden Lv.X
+|script = 続・禁断 Lv.X
+|romaji = Zoku・Kindan  Lv. X
+|event = [[June Gauntlet II]]
+|event-chapter = [[June Gauntlet II]]
+|require = Clear [[The Forbidden Bride (Monthly Event)|The Forbidden Bride]] and [[Forbidden Bride Pt II (Monthly Event)|Forbidden Bride Pt II]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*The enemy base's HP starts at 275,000 and increases by 25,000 with each stage.
+*5 [[Zoge]]s spawn after 1.33 seconds<sup>40f</sup>, delay 13.33~23.33 seconds<sup>400f~700f</sup>.
+*6 [[Kroxo]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Owlbrow]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Owlbrow]] spawns after 23.33 seconds<sup>700f</sup>.
+*1 [[Owlbrow]] spawns after 56.67 seconds<sup>1,700f</sup>.
+*1 [[Owlbrow]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gorilliam]] spawns as the boss.
+**7 [[Pigeon de Sable]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**6 [[Kroxo]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Zigge]]s spawn, delay 50~53.33 seconds<sup>1,500f~1,600f</sup>.
+**2 [[Znache]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Forbidden II Lv.
+! colspan="7" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Kroxo]]
+! scope="col" |[[Owlbrow]]
+! scope="col" |[[Pigeon de Sable]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Znache]]
+! scope="col" |[[Zigge]]
+! scope="col" |[[Gorilliam]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|250%
+|400%
+|100%
+|150%
+|150%
+|150%
+|500%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |12
+|333%
+|444%
+|122%
+|161%
+|161%
+|161%
+|556%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |13
+|416%
+|488%
+|144%
+|172%
+|172%
+|172%
+|612%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |14
+|499%
+|532%
+|166%
+|183%
+|183%
+|183%
+|668%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |15
+|582%
+|576%
+|188%
+|194%
+|194%
+|194%
+|724%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|665%
+|620%
+|210%
+|205%
+|205%
+|205%
+|780%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |17
+|748%
+|664%
+|232%
+|216%
+|216%
+|216%
+|836%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |18
+|831%
+|708%
+|254%
+|227%
+|227%
+|227%
+|892%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |19
+|914%
+|752%
+|276%
+|238%
+|238%
+|238%
+|948%
+|150
+|Aku Catfruit Seed +1
+|2,850
+|-
+! scope="row" |20
+|1,000%
+|800%
+|300%
+|250%
+|250%
+|250%
+|1,000%
+|150
+|Rare Ticket +1
+|2,850
+|-
+|}
+
+==Strategy==
+It's imperative that you start off slow and pick off each Owlbrow before you start the boss wave, as the Owlbrows will shred anything that tries to get a hit on Gorilliam. It is best to use a unit like [[Express Cat (Super Rare Cat)|Bullet Train]] for this due to its [[Money Up]] ability and high burst damage, but after the 2nd Stage, you'll need to pair it with something else like [[Swimmer Cat (Super Rare Cat)|Fishman]]. For the Zombies, it's best to not be actively deploying something with [[Zombie Killer|Z-Killer]], but rather something with [[Soulstrike]] like [[Ancient Egg: N107 (Rare Cat)|Chief]] only when there is a corpse that concerns you. You need as much space in the Deploy Limit to deal with Gorilliam. It's also possible your units might brute force the zombies to the point where they won't be a problem at all, removing the need for an Anti-Zombie in the first place.
+
+==Trivia==
+*Prior to [[Version 11.5 Update|version 11.5]], this stage had a restriction of "only [[:Category:Normal Cats|Normal]], [[:Category:Special Cats|Special]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]] units", rather than a Cat Deploy Limit of 10.
+
+==Reference==
+*https://battlecats-db.com/stage/s24016.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

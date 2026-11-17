@@ -1,0 +1,362 @@
+.standard-cat-stats-table {
+	width: 100%;
+	line-height: normal;
+	border-radius: 5px;
+	border: 3px solid #000;
+	background-color: #000;
+	text-align: center;
+	box-sizing: border-box;
+}
+
+.standard-cat-stats-form {
+	display: grid;
+	justify-content: space-between;
+	grid-template-columns: repeat(8, minmax(0, 1fr));
+	gap: 1px;
+	background-color: #000;
+}
+
+.standard-cat-stats-form:not(.position-end) {
+	border-bottom: 2px solid #000;
+}
+
+.standard-cat-stats-form .stats-cell {
+	display: block;
+	text-align: center;
+	align-content: center;
+}
+
+.standard-cat-stats-form .stats-cell.stats-value-abil {
+	text-align: left;
+}
+
+.standard-cat-stats-form .form-name {
+	padding: 0.5em 0.25em;
+	color: white;
+	background-color: var(--bg-color-orange2);
+	border-bottom: 1px solid #000;
+}
+
+.standard-cat-stats-form .stats-label {
+	background-color: var(--bg-color-light4);
+	padding: 0.5em 0.25em;
+	font-weight: 600;
+}
+
+.standard-cat-stats-form .stats-value {
+	background-color: var(--bg-color-light3);
+	padding: 3px;
+}
+
+.standard-cat-stats-form.position-start {
+	grid-template-areas:
+		"name      name      name        name       name     name    name   name        "
+		"lab-maxhp lab-maxap lab-atkfreq lab-atklen lab-rng  lab-spd lab-kb lab-recharge"
+		"val-maxhp val-maxap val-atkfreq val-atklen val-rng  val-spd val-kb val-recharge"
+		"lab-abil  lab-abil  lab-abil    lab-abil   lab-abil lab-hp  lab-ap lab-atktype "
+		"val-abil  val-abil  val-abil    val-abil   val-abil val-hp  val-ap val-atktype ";
+}
+
+.standard-cat-stats-form.position-start .stats-label-hp::after,
+.standard-cat-stats-form.position-start .stats-label-ap::after {
+	content: " (Base)";
+}
+
+.standard-cat-stats-form.position-middle {
+	grid-template-areas:
+		"name     name     name        name       name     name     name     name        "
+		"lab-hp   lab-ap   lab-atkfreq lab-atklen lab-rng  lab-spd  lab-kb   lab-recharge"
+		"val-hp   val-ap   val-atkfreq val-atklen val-rng  val-spd  val-kb   val-recharge"
+		"lab-abil lab-abil lab-abil    lab-abil   lab-abil lab-abil lab-abil lab-atktype "
+		"val-abil val-abil val-abil    val-abil   val-abil val-abil val-abil val-atktype "
+}
+
+.standard-cat-stats-form.position-end {
+	grid-template-areas:
+		"name     name     name        name       name     name     name       name        "
+		"lab-hp   lab-ap   lab-atkfreq lab-atklen lab-rng  lab-spd  lab-kb     lab-recharge"
+		"val-hp   val-ap   val-atkfreq val-atklen val-rng  val-spd  val-kb     val-recharge"
+		"lab-abil lab-abil lab-abil    lab-abil   lab-abil lab-abil lab-maxlvl lab-atktype "
+		"val-abil val-abil val-abil    val-abil   val-abil val-abil val-maxlvl val-atktype "
+}
+
+@media screen and (max-width: 700px) {
+	.standard-cat-stats-table {
+		font-size: 0.8rem;
+	}
+
+	.standard-cat-stats-form {
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+
+	.standard-cat-stats-form.position-start {
+		grid-template-areas:
+			"name        name        name        name        "
+			"lab-maxhp   lab-maxap   lab-atkfreq lab-atklen  "
+			"val-maxhp   val-maxap   val-atkfreq val-atklen  "
+			"lab-rng     lab-spd     lab-kb      lab-recharge"
+			"val-rng     val-spd     val-kb      val-recharge"
+			"lab-atktype lab-atktype lab-hp      lab-ap      "
+			"val-atktype val-atktype val-hp      val-ap      "
+			"lab-abil    lab-abil    lab-abil    lab-abil    "
+			"val-abil    val-abil    val-abil    val-abil    ";
+	}
+
+	.standard-cat-stats-form.position-start .stats-label-hp::before,
+	.standard-cat-stats-form.position-start .stats-label-ap::before {
+		content: "Base ";
+	}
+
+	.standard-cat-stats-form.position-start .stats-label-hp::after,
+	.standard-cat-stats-form.position-start .stats-label-ap::after {
+		content: none;
+	}
+
+	.standard-cat-stats-form.position-middle {
+		grid-template-areas:
+			"name        name        name        name        "
+			"lab-hp      lab-ap      lab-atkfreq lab-atklen  "
+			"val-hp      val-ap      val-atkfreq val-atklen  "
+			"lab-rng     lab-spd     lab-kb      lab-recharge"
+			"val-rng     val-spd     val-kb      val-recharge"
+			"lab-atktype lab-atktype lab-atktype lab-atktype "
+			"val-atktype val-atktype val-atktype val-atktype "
+			"lab-abil    lab-abil    lab-abil    lab-abil    "
+			"val-abil    val-abil    val-abil    val-abil    "
+	}
+
+	.standard-cat-stats-form.position-end {
+		grid-template-areas:
+			"name        name        name        name        "
+			"lab-hp      lab-ap      lab-atkfreq lab-atklen  "
+			"val-hp      val-ap      val-atkfreq val-atklen  "
+			"lab-rng     lab-spd     lab-kb      lab-recharge"
+			"val-rng     val-spd     val-kb      val-recharge"
+			"lab-atktype lab-atktype lab-maxlvl  lab-maxlvl  "
+			"val-atktype val-atktype val-maxlvl  val-maxlvl  "
+			"lab-abil    lab-abil    lab-abil    lab-abil    "
+			"val-abil    val-abil    val-abil    val-abil    "
+	}
+}
+
+/*-- Detailed --*/
+
+.detailed-cat-stats-controls {
+	width: 100%;
+	margin: 10px 0;
+	padding-bottom: 3px;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid var(--theme-border-color);
+}
+
+.detailed-cat-stats-controls th {
+	padding: 2px;
+	background: var(--theme-page-background-color--secondary);
+}
+
+.detailed-cat-stats-controls input,
+.detailed-cat-stats-controls button {
+	margin-top: 3px;
+}
+
+.detailed-cat-stats-controls input {
+	max-width: 5rem;
+	padding: 4px 0;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.detailed-cat-stats-controls button {
+	padding: 3px 6px;
+	background: var(--theme-page-background-color--secondary);
+	border-radius: 5px;
+	border: 1px solid var(--theme-page-text-color);
+	cursor: pointer;
+}
+
+@media (hover: hover) {
+	.detailed-cat-stats-controls button:hover {
+		filter: brightness(0.95);
+	}
+}
+
+.detailed-cat-stats-form {
+	display: grid;
+	gap: 1px;
+	width: 100%;
+	border-radius: 0;
+	border: 3px solid #000;
+	border-bottom-width: 0;
+	border-top-width: 2px;
+	box-sizing: border-box;
+	text-align: center;
+	background-color: #000;
+	overflow: auto;
+}
+
+.detailed-cat-stats-form.first-form {
+	border-radius: 5px 5px 0 0;
+	border-top-width: 3px;
+}
+
+.detailed-cat-stats-form.final-form {
+	border-bottom-width: 3px;
+	border-radius: 0 0 5px 5px;
+}
+
+@media screen and (min-width: 601px) {
+	.detailed-cat-stats-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modlabh modvalh modvalh modlaba modlaba modvala modvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil lababil"
+			"valabil valabil valabil valabil valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-form.orb-valid {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modvalh modlaba modvala orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil lababil"
+			"valabil valabil valabil valabil valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-form.final-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modlabh modvalh modvalh modlaba modlaba modvala modvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil labmax "
+			"valabil valabil valabil valabil valabil valabil valabil valmax ";
+	}
+
+	.detailed-cat-stats-form.orb-valid.final-form {
+		grid-template-areas:
+			"name    name    name    name    name    name    name    name   "
+			"modlabh modvalh modlaba modvala orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps  labac   labac   valac   valac  "
+			"labbase valhpb  valapb  valdpsb labfore valfore labback valback"
+			"labcalc valhpc  valapc  valdpsc labfore valfore labacd  valacd "
+			"labat   labkb   labrng  labspd  labrech labrech labcost labcost"
+			"valat   valkb   valrng  valspd  valrech valrech valcost valcost"
+			"lababil lababil lababil lababil lababil lababil lababil labmax "
+			"valabil valabil valabil valabil valabil valabil valabil valmax ";
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.detailed-cat-stats-table {
+		font-size: 0.8rem;
+	}
+
+	.detailed-cat-stats-form {
+		grid-template-areas:
+			"name    name    name    name   "
+			"modlabh modvalh modlaba modvala"
+			"orblabh orbvalh orblaba orbvala"
+			"lablvl  labhp   labap   labdps "
+			"labbase valhpb  valapb  valdpsb"
+			"labcalc valhpc  valapc  valdpsc"
+			"labac   labac   valac   valac  "
+			"labfore valfore labacd  valacd "
+			"labfore valfore labback valback"
+			"labat   labkb   labrng  labspd "
+			"valat   valkb   valrng  valspd "
+			"labrech labrech labcost labcost"
+			"valrech valrech valcost valcost"
+			"labmax  labmax  labmax  labmax "
+			"valmax  valmax  valmax  valmax "
+			"lababil lababil lababil lababil"
+			"valabil valabil valabil valabil";
+	}
+
+	.detailed-cat-stats-table .detailed-cat-stats-form .cell-mod:nth-child(6) {
+		border-width: 1px 0 0 1px;
+	}
+}
+
+.detailed-cat-stats-form .stats-table-cell {
+	display: block;
+	text-align: center;
+	align-content: center;
+	padding: 3px;
+}
+
+.detailed-cat-stats-form .stats-table-cell.abilities {
+	text-align: left;
+}
+
+.detailed-cat-stats-form .cell-name {
+	color: white;
+	background-color: var(--bg-color-orange2);
+	border-bottom: 1px solid #000;
+	font-weight: bold;
+}
+
+.detailed-cat-stats-form .cell-mod {
+	background: var(--theme-page-background-color--secondary);
+}
+
+.detailed-cat-stats-form .cell-mod ~ .cell-mod {
+	margin-left: -1px;
+}
+
+.detailed-cat-stats-form .cell-label {
+	background: var(--bg-color-light4);
+	font-weight: bold;
+}
+
+.detailed-cat-stats-form .cell-value {
+	background: var(--bg-color-light3);
+}
+
+.detailed-cat-stats-table .time-toggle::after {
+	content: "f";
+}
+
+.detailed-cat-stats-table.duration-seconds .time-toggle::after {
+	content: "s";
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities:not(.abilities-empty) {
+	font-size: 0;
+	text-align: center;
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities > * {
+	display: none;
+}
+
+.detailed-cat-stats-table.ability-simple .stats-table-cell.abilities > span[typeof="mw:File"] {
+	display: inline;
+}
+
+.detailed-cat-stats-form input {
+	width: 3rem;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* [[Category:Template stylesheets]] */

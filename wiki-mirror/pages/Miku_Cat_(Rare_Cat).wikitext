@@ -1,0 +1,128 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Miku Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was introduced in [[Version 9.4 Update|Version 9.4]] and can be unlocked when beating any stage in [[Hatsune Miku Collaboration Event#Hatsune Miku|Hatsune Miku]] during the [[Hatsune Miku Collaboration Event]].
+
+{{Cat Info
+|ID = 538
+|rarity = RR
+|name1 = Miku Cat
+|name2 = Miku Cat CC
+}}
+
+==Evolution==
+Evolves into '''Miku Cat CC''' at level 10.
+
+==Strategy/Usage==
+Can be used as an anti-Floating meatshield in early game or 4-crown. Unfortunately for them, this is their only use as outside this restriction, they can be easily replaced by [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] or [[Tank Cat (Normal Cat)|Eraser Cat]]. To make matters worse, [[Carpenter Cat (Rare Cat)|Carpenter Cat]] completely blows them out of the water even in the Restriction niche once obtained. Overall, there's not much to see here.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 538
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni538 f00.png
+|Image2 = Uni538 c00.png
+|Name1 = Miku Cat
+|Desc1 = Die-hard fan of a cute & stylish pop diva.<br>Broke a mirror trying to cover Miku's songs.<br>Might Dodge Floating enemy attacks
+|Name2 = Miku Cat CC
+|Desc2 = Taking first steps toward global pop stardom.<br>Has front row seats for Miku's next show.<br>Might Dodge Floating enemy attacks
+|Name1 (JP) = ネコミク
+|Desc1 (JP) = ポップでキュートなバーチャル・シンガーに憧れるネコ<br>人気の曲を歌ってみたら部屋の窓ガラスが割れた<br>たまに浮いてる敵からの攻撃を無効化する
+|Transl1 (JP) = A Cat that thinks it's one step closer being a global diva<br>Managed to get a front seat in next live performance<br>Occasionally negates attacks from Floating enemies.
+|Name2 (JP) = ネコミクCC
+|Desc2 (JP) = 世界的な歌姫に一歩近づいた気がするネコ<br>次のライブはかなり前の席が取れた<br>たまに浮いてる敵からの攻撃を無効化する
+|Transl2 (JP) = A Cat yearning to be a popular and cute virtual singer<br>When it sang a popular song, the window glass in the room broke<br>Occasionally negates attacks from Floating enemies.
+|Name1 (TW) = 貓初音
+|Desc1 (TW) = 很憧憬俏皮又可愛偶像的貓咪<br>試唱了熱門歌曲結果歌聲震碎房間玻璃<br>有時候可讓飄浮敵人的攻擊無效化
+|Name2 (TW) = 貓初音CC
+|Desc2 (TW) = 自覺朝世界歌姬又邁向一大步的貓咪<br>下次的演唱會已經取得超前排座位票<br>有時候可讓飄浮敵人的攻擊無效化
+|Name1 (KR) = 고양이 미쿠
+|Desc1 (KR) = 팝하고 큐트한 버추얼 싱어를 동경하는 고양이<br>인기곡을 불렀더니 창문이 깨져버렸다<br>가끔 떠있는 적의 공격을 무효화 시킨다
+|Name2 (KR) = 고양이 미쿠CC
+|Desc2 (KR) = 세계적인 여가수에 한 걸음 더 가까워진 느낌이 드는 고양이<br>곧 열릴 콘서트의 꽤나 앞자리를 예매했다<br>가끔 떠있는 적의 공격을 무효화 시킨다
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Miku Cat
+|Normal Base HP = 600
+|Normal Base AP = 150
+|Normal Range = 140
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 89
+|Normal Attack Length = 63
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 300
+|Normal Recharge = 420
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Miku Cat CC
+|Evolved Base HP = 600
+|Evolved Base AP = 150
+|Evolved Range = 140
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 89
+|Evolved Attack Length = 63
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 300
+|Evolved Recharge = 420
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 30% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 150 damage<br>(40.54 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 111f <sub>3.7 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Normal-Recharge Time = 14 ~ 5.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(689.19 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(689.19 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 111f <sub>3.7 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(41f <sup>1.37s</sup> backswing)
+|val-Evolved-Recharge Time = 14 ~ 5.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni538 f00}}
+
+==Trivia==
+*The spring onion that Miku Cat holds is a reference to a popular [https://www.youtube.com/watch?v=jrgO_9ey53M video] in which Hatsune Miku sings the [[wikipedia:Ievan polkka|Ievan polkka]] whilst spinning said onion.
+
+==Reference==
+*https://battlecats-db.com/unit/539.html
+
+----
+{{CatNav|Kagamine Rin & Len|Rugby Cat}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

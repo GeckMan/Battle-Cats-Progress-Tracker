@@ -1,0 +1,14 @@
+<includeonly><onlyinclude><templatestyles src="Template:GachaDescription/styles.css" />
+{{safesubst:#invoke:GachaDescription2|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+For gacha pages e.g. [[The Almighties The Majestic Zeus (Gacha Event)|The Almighties The Majestic Zeus]]. See [[Module:GachaDescription/data]] for information on how to update the available unit descriptions.
+
+{| class="gacha-table" cellpadding="0" cellspacing="4"
+|-
+| class="gacha-table-heading" style="background-color: var(--gacha-rarity-lr);" | ▼Legend Rare
+|-
+{{GachaDescription
+|Cat
+|Cat
+|Gaia the Creator}}
+|}

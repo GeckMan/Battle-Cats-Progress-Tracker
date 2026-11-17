@@ -1,0 +1,113 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Moe Uzumasa & Doge]].''
+'''Moe Uzumasa & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 7.0 Update|Version 7.0]] and can be obtained during the [[Get On! Kyoto City Subway Collaboration Event]].
+
+{{Cat Info
+|ID = 422
+|rarity = RR
+|name1 = Moe Uzumasa & Cat
+|name2 = Moe Uzumasa & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Moe Uzumasa & Cat CC''' at level 10.
+
+==Strategy/Usage==
+This duo of Cat and anime girl unfortunately has no meaning or use in the game other than to boost [[User Rank]]. The best it can do is offer some support in early [[Empire of Cats]] stages like [[Korea (Empire of Cats)|Korea]] or [[Japan (Empire of Cats)|Japan]], as it will falter and die at any real threat, like [[J.K. Bun Bun|J.K. Bun Bun]]. Unfortunately, no amount of boost will save it from this fate either, as they have too low base stats.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 422
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni422 f00.png
+|Image2 = Uni422 c00.png
+|Name1 (JP) = 太秦萌&ネコ
+|Desc1 (JP) = 「地下鉄に乗るっ」から参戦！地下鉄で通学する女の子<br>明るくみんなから愛されるちょっと天然な高校２年生<br>(遠方範囲攻撃)
+|Transl1 (JP) = Joining the war from "Get on the Subway"! A girl who rides the underground to school<br>She is a cheerful high school sophomore who is loved by everyone<br>(Long Distance Area Attack)
+|Name2 (JP) = 太秦萌&ネコＣＣ
+|Desc2 (JP) = 「地下鉄に乗るっ」から参戦！<br>趣味はカメラでエスカレーターは使わない派<br>(遠方範囲攻撃)
+|Transl2 (JP) = Joining the war from "Get on the Subway"!<br>Her hobby is photography and doesn't use escalators<br>(Long Distance Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 400円
+*Chapter 2: 600円
+*Chapter 3: 800円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Moe Uzumasa & Cat
+|Normal Base HP = 425
+|Normal Base AP = 175
+|Normal Range = 375
+|Normal Foreswing = 56
+|Normal Attack Cooldown = 149
+|Normal Attack Length = 116
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 800
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~425)
+|Evolved Name = Moe Uzumasa & Cat CC
+|Evolved Base HP = 425
+|Evolved Base AP = 175
+|Evolved Range = 375
+|Evolved Foreswing = 56
+|Evolved Attack Cooldown = 149
+|Evolved Attack Length = 116
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 800
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 300~425)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 425 HP
+|val-Normal-Attack Power = 175 damage<br>(25.61 DPS)
+|val-Normal-Attack Range = 375
+|val-Normal-Attack Frequency = 205f <sub>6.83 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 56f <sup>1.87s</sup><br>(60f <sup>2s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 7,225 HP
+|val-Normal-MaxAttack = 2,975 damage<br>(435.37 DPS)
+|val-Evolved-Health = 7,225 HP
+|val-Evolved-Attack Power = 2,975 damage<br>(435.37 DPS)
+|val-Evolved-Attack Range = 375
+|val-Evolved-Attack Frequency = 205f <sub>6.83 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 56f <sup>1.87s</sup><br>(60f <sup>2s</sup> backswing)
+|val-Evolved-Recharge Time = 26.67 ~ 17.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni422 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/423.html
+
+----
+{{CatNav|Coco|Saki Matsuga & Cat}}
+----
+
+{{Get On! Kyoto City Subway}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]

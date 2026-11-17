@@ -1,0 +1,313 @@
+<tabber>
+Choco Chaos Lv.1~4 =
+{{EnemiesAppearing|Chocolate Doge|Kang Roo|Croco|Marching Kory}}
+
+{{Stage Info
+|stage name = [[File:Rc000.png]]
+[[File:Mapsn013 00 a en.png]]
+|stage location = [[File:Mapname013 a en.png]]
+|enemies = {{Magnification|Chocolate Doge|0
+|Kang Roo|0
+|Croco|0}}
+|boss = {{Magnification|Marching Kory|0}}
+|restriction = No Continues
+|width = 4,200
+|max enemies = 10
+|jpname = Cacoa Lv.X
+|script = カカオ Lv.X
+|romaji = Kakoa Lv. X
+|star = 1
+|event-chapter = [[A Colossal Valentine's]]
+|require = Clear [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*The enemy base HP starts at 30,000 and increases by 30,000 for the first stage, 40,000 for the third stage 45,000 till stage 10 and finally 75,000 up to the final stage.
+*1 [[Chocolate Doge]] spawns after 0.07 seconds<sup>2f</sup>.
+*1 [[Kang Roo]] spawns after 50 seconds<sup>1,500f</sup>.
+*Infinite [[Croco]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~6.67 seconds<sup>150~200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Marching Kory]] spawns as the boss.
+**1 [[Chocolate Doge]] spawns.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 700px;"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Choco Chaos Lv.
+! colspan="4" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy
+cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Marching Kory]]
+! scope="col" |[[Chocolate Doge]]
+! scope="col" |[[Kang Roo]]
+! scope="col" |[[Croco]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|5%
+|5%
+|100%
+|100%
+|30
+|Treasure Radar +1
+|570
+|-
+! scope="row" |2
+|25%
+|25%
+|150%
+|150%
+|40
+|Catamin [A] +3
+|760
+|-
+! scope="row" |3
+|50%
+|50%
+|250%
+|250%
+|50
+|Cat Ticket +1
+|950
+|-
+! scope="row" |4
+|75%
+|75%
+|400%
+|400%
+|60
+|Bricks +5
+|1,140
+|-
+|}
+
+|-|
+Choco Chaos Lv.5~20 =
+{{EnemiesAppearing|Chocolate Doge|Kang Roo|Croco|Le'boin|Marching Kory}}
+
+{{Stage Info
+|stage name = [[File:Rc017.png]]
+[[File:Mapsn013 00 a en.png]]
+|stage location = [[File:Mapname013 a en.png]]
+|enemies = {{Magnification|Chocolate Doge|0
+|Kang Roo|0
+|Croco|0
+|Le'boin|0}}
+|boss = {{Magnification|Marching Kory|0}}
+|restriction = No Continues
+|width = 4,200
+|max enemies = 10
+|jpname = Cacoa Lv.X
+|script = カカオ Lv.X
+|romaji = Kakoa Lv. X
+|star = 1
+|event-chapter = [[A Colossal Valentine's]]
+|require = Clear [[Empire of Cats]] Chapter 1
+}}
+
+==Battleground==
+*The enemy base HP starts as 30,000 and increases by 30,000 for the first stage, 40,000 for the third stage 45,000 till stage 10 and finally 75,000 up to the final stage.
+*1 [[Chocolate Doge]] spawns after 0.07 seconds<sup>2f</sup>.
+*2 [[Kang Roo]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Marching Kory]] spawns as the boss.
+**Infinite [[Croco]]s spawn, delay 5~6.67 seconds<sup>150~200f</sup>.
+**2 [[Le'boin]]s spawn, delay 31.67~33.33 seconds<sup>650~1,000f</sup>.
+**5 [[Chocolate Doge|Chocolate Wall Doges]] spawn, delay 16.67 seconds<sup>500f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1" style="width: 700px;"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Choco Chaos Lv.
+! colspan="5" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy
+cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Marching Kory]]
+! scope="col" |[[Chocolate Doge]]
+! scope="col" |[[Kang Roo]]
+! scope="col" |[[Croco]]
+! scope="col" |[[Le'boin]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |5
+|100%
+|100%
+|600%
+|600%
+|600%
+|70
+|XP +250,000
+|1,330
+|-
+! scope="row" |6
+|130%
+|140%
+|840%
+|840%
+|840%
+|70
+|Catamin [B] +3
+|1,330
+|-
+! scope="row" |7
+|160%
+|180%
+|1,080%
+|1,080%
+|1,080%
+|80
+|Feathers +5
+|1,520
+|-
+! scope="row" |8
+|190%
+|220%
+|1,320%
+|1,320%
+|1,320%
+|80
+|Coal +5
+|1,520
+|-
+! scope="row" |9
+|200%
+|260%
+|1,560%
+|1,560%
+|1,560%
+|80
+|Cat Ticket +2
+|1520
+|-
+! scope="row" |10
+|250%
+|300%
+|1,800%
+|1,800%
+|1,800%
+|90
+|XP +500,000
+|1,710
+|-
+! scope="row" |11
+|300%
+|390%
+|2,240%
+|2,240%
+|2,240%
+|90
+|Catamin [C] +3
+|1,710
+|-
+! scope="row" |12
+|350%
+|480%
+|2,680%
+|2,680%
+|2,680%
+|100
+|Sprockets +5
+|1,900
+|-
+! scope="row" |13
+|400%
+|570%
+|3,120%
+|3,120%
+|3,120%
+|100
+|Gold +5
+|1,900
+|-
+! scope="row" |14
+|450%
+|660%
+|3,560%
+|3,560%
+|3,560%
+|100
+|Cat Ticket +3
+|1,900
+|-
+! scope="row" |15
+|500%
+|750%
+|4,000%
+|4,000%
+|4,000%
+|110
+|XP +750,000
+|2,090
+|-
+! scope="row" |16
+|550%
+|800%
+|4,400%
+|4,400%
+|4,400%
+|110
+|Meteorite +5
+|2,090
+|-
+! scope="row" |17
+|600%
+|850%
+|4,800%
+|4,800%
+|4,800%
+|130
+|Leadership +1
+|2,470
+|-
+! scope="row" |18
+|650%
+|900%
+|5,200%
+|5,200%
+|5,200%
+|130
+|Beast Bones +5
+|2,470
+|-
+! scope="row" |19
+|700%
+|950%
+|5,600%
+|5,600%
+|5,600%
+|130
+|XP +1,000,000
+|2,470
+|-
+! scope="row" |20
+|750%
+|1,000%
+|6,000%
+|6,000%
+|6,000%
+|150
+|Rare Ticket +1
+|2,850
+|-
+|}
+</tabber>
+
+==Strategy==
+You will need some [[:Category:Anti-Dark Cats|anti-Dark cats]] to kill the Chocolate Wall Doges like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], as well as meatshields like [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]] and [[Tank Cat (Normal Cat)|Eraser Cat]] to protect your anti-Dark units and cats that can outrange Martin in order to kill him.
+
+Although not nearly as important in the earlier levels, bringing [[:Category:Cats with Wave Immunity|Wave Immune Cats]] can be very helpful, primarily in the final stages of this gauntlet. [[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]], [[Pirate Cat (Rare Cat)|Dread Pirate Catley]] (with [[Talents]]), and [[Rugby Cat (Rare Cat)|Rugby Cat]] can serve as useful wave immune meatshields, with the most easily accessible ones being [[Li'l Cow Cat (Special Cat)|Li'l Lion]], and talented [[Pirate Cat (Rare Cat)|Catley]].
+
+Additionally, if you use a wave blocker, ideally [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]], you may be able to protect your main attackers to some degree. However, if you decide to use Octopus, you will need to protect him <u>at all times</u>, because of his short range; ideally by the two previously mentioned meatshields. However, if those two Cats are not highly leveled, you may need to use four Cats total to protect Octopus (ex. [[Cat (Normal Cat)|Mohawk Cat]] and [[Crazed Cat (Super Rare Cat)|Crazed Cat]]).
+
+==Reference==
+*https://battlecats-db.com/stage/s24013.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

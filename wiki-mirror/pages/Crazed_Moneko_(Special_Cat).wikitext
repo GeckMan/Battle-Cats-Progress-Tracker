@@ -1,0 +1,152 @@
+:''This article is about the Cat Unit. For the enemy units, see [[Crazed Moneko (Enemy)]] and [[Corrupted Moneko (Enemy)]]. For the stages, see [[Crazed Moneko]].''
+'''Crazed Moneko''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 6.10 Update|Version 6.10]]. Unlocked by beating the [[Crazed Moneko]] appearing on the '''28th''' of every month.
+
+{{Cat Info
+|ID = 418
+|rarity = EX
+|name1 = Crazed Moneko
+|name2 = Corrupted Moneko
+}}
+
+==Evolution==
+Evolves into '''Corrupted Moneko''' at level 10.
+
+==Strategy/Usage==
+Being able to be used on 4-Crown stages is her biggest advantage over [[Cheerleader Cat (Super Rare Cat)|Cheerleader Cat]], who outclasses her in terms of range and attack damage. What she lacks in those she makes up with her higher health and shorter delay between attacks. If not for being another guaranteed [[:Category:Critter-class Cats|Critter]], her best use is in her [[Cat Combo]] [[Miracle Performance (Combo)|Miracle Performance]], which increases the Critical rate of all units that can do Criticals. Its effect is most noticeable on fast attackers with a low Crit rate like [[Jurassic Cat (Rare Cat)|Catasaurus]] or [[Catornado (Super Rare Cat)|Catornado]].
+
+Her range is lower than Cheerleader Cat's, but it is still high enough to outrange every single common [[:Category:Metal Enemies|Metal]] enemy, earning her a spot in any [[:Category:Anti-Metal Cats|Anti-Metal]] lineup. Additionally, her attack rate is fast enough that as long as she is properly protected, she can deal lethal strikes to Metal enemies consistently. Plus, she’s cheap and you will probably be bringing her combo anyway, so you can just chuck her out on the field and hope for a crit every now and then.
+
+{{Job|Classification = Critter & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Miracle Performance|"Critical" Rate Up (M)|Moneko|Crazed Moneko|jpname=ミラクルライブ！}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 418
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni418 f00.png
+|Image2 = Uni418 c00.png
+|Name1 = Crazed Moneko
+|Desc1 = Everyone's favorite girl-next door popstar finally<br>snapped under the stress of stardom. Even an<br>evil idol has nothing but love for her fans.
+|Name2 = Corrupted Moneko
+|Desc2 = Global superstar who uses her charisma to<br>whip her adoring audiences into a crazed fury.<br>Her thankful bow delivers big critical damage!
+|Name1 (JP) = 狂乱のもねこ (Kyōran no Moneko, Crazed Moneko)
+|Desc1 (JP) = 高い人気を誇る国民的アイドルにゃんこ<br>事務所の方針で狂乱となった<br>心を込めた鋭いおじぎで必ずクリティカル
+|Transl1 (JP) = Highly popular national idol Cat who went<br>crazy because of her office's policies.<br>Her heartfelt bow brings a guaranteed Critical.
+|Name2 (JP) = 狂乱のスターもねこ (Kyōran no Sutā Moneko, Crazed Star Moneko)
+|Desc2 (JP) = 世界的な人気を誇るアイドルにゃんこ<br>圧倒的なライブで観客を狂乱の渦に巻き込む<br>心を込めた鋭いおじぎで必ずクリティカル
+|Transl2 (JP) = Globally popular idol Cat who sends her audiences<br>into a frenzy with her overwhelming live performances.<br>Her heartfelt bow brings a guaranteed Critical.
+|Name1 (TW) = 狂亂萌貓
+|Desc1 (TW) = 擁有超高人氣的國民偶像貓<br>因公司的方針而狂亂化<br>誠懇又激烈的鞠躬必定能會心一擊
+|Name2 (TW) = 狂亂偶像萌貓
+|Desc2 (TW) = 世界知名的偶像貓<br>壓倒性的演出讓粉絲也捲入狂亂漩渦<br>誠懇又激烈的鞠躬必定能會心一擊
+|Name1 (KR) = 광란의 귀여미
+|Desc1 (KR) = 높은 인기를 자랑하는 국민 아이돌 냥코<br>소속사의 방침으로 광란이 되었다<br>마음을 담은 재빠른 인사로 반드시 크리티컬
+|Name2 (KR) = 광란의 스타 귀여미
+|Desc2 (KR) = 세계적인 인기를 자랑하는 아이돌 냥코<br>압도적인 라이브로 관객을 광란의 소용돌이로 몰아넣는다<br>마음을 담은 재빠른 인사로 반드시 크리티컬
+}}
+
+==Cost==
+*Chapter 1: 99¢
+*Chapter 2: 148¢
+*Chapter 3: 198¢
+{{Upgrade Cost|MIX
+|0
+|108,000
+|110,000
+|113,000
+|116,000
+|119,000
+|123,000
+|127,000
+|132,000
+|138,000
+|212,000
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Crazed Moneko
+|Normal Base HP = 1000
+|Normal Base AP = 150,150,150
+|Normal Range = 210
+|Normal Foreswing = 4,19,139
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 181
+|Normal Speed = 10
+|Normal KB = 4
+|Normal Cost = 99
+|Normal Recharge = 1332
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (2,550 at 4f <sup>0.13s</sup>, 2,550 at 19f <sup>0.63s</sup>, 2,550 at 139f <sup>4.63s</sup>)<br>
+{{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]] on 3rd hit
+|Evolved Name = Corrupted Moneko
+|Evolved Base HP = 1500
+|Evolved Base AP = 200,200,200
+|Evolved Range = 210
+|Evolved Foreswing = 4,19,139
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 181
+|Evolved Speed = 10
+|Evolved KB = 4
+|Evolved Cost = 99
+|Evolved Recharge = 1332
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (3,400 at 4f <sup>0.13s</sup>, 3,400 at 19f <sup>0.63s</sup>, 3,400 at 139f <sup>4.63s</sup>)<br>
+{{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]] on 3rd hit
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 450 damage<br>(74.59 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(42f <sup>1.4s</sup> backswing)
+|val-Normal-Recharge Time = 44.4 ~ 35.6 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 7,650 damage<br>(1,267.96 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 10,200 damage<br>(1,690.61 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 4f <sup>0.13s</sup><br>(42f <sup>1.4s</sup> backswing)
+|val-Evolved-Recharge Time = 44.4 ~ 35.6 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni418 f00}}
+
+==Trivia==
+*Like [[Moneko (Special Cat)|Moneko]], she has a unique death animation; her ghost also appears to be [[Crazed Cats (origin)|Crazed]].
+*Crazed Moneko was the first unit to have an ability that activates only on one part of a multi-hit attack.
+*Unlike other Crazed Cats, Crazed Moneko's evolution is named differently to her original form, being Corrupted Moneko rather than Crazed Miss Moneko.
+**However, this is not the case in [[Nyanko Daisensou|BCJP]], where Miss Moneko is named Star Moneko and Corrupted Moneko is Crazed Star Moneko.
+*Crazed Moneko is the only Crazed Cat Unit who retains the purple smoke from their [[Crazed Moneko (Enemy)|enemy form]].
+
+==Reference==
+*https://battlecats-db.com/unit/419.html
+
+----
+{{CatNav|Mighty Thermae D-Lux|Pokota}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Cats with unique death animations]]

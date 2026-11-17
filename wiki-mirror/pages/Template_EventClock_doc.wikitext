@@ -1,0 +1,34 @@
+{{Documentation}}
+This template is used to display a clock for an event or multiple regular events (schedule is known) telling when it ends if it is ongoing and otherwise when it starts again.
+
+==Parameters==
+<pre>
+{{EventClock|eventName1|eventName2 (optional)|eventName3 (optional)|...|noborder=}}
+</pre>
+The template takes full event names as arguments, and they must be typed accurately with correct spelling and capitalization. Any number of events can be listed as long as there is at least one event. Any event listed on [[Template:EventClock/recurring.json]] that is also in [[Template:CurrentEvents/Images.json]] can be displayed, but if an event is not in either of them, it cannot be shown. The order of events in the arguments is preserved when displayed.
+
+If the border is unwanted, include the <code>noborder</code> parameter and set it to some arbitrary value. It will remove the black and orange border. Otherwise, it does not have to be included as it is an optional parameter.
+
+==Usage==
+<tabber>
+One Event=
+<pre>
+{{EventClock|River Styx}}
+</pre>
+===Result===
+{{EventClock|River Styx}}
+
+|-|Multiple Events=
+<pre>
+{{EventClock|Monday Stage|Tuesday Stage|Wednesday Stage|Thursday Stage|Friday Stage|Weekend Stage}}
+</pre>
+===Result===
+{{EventClock|Monday Stage|Tuesday Stage|Wednesday Stage|Thursday Stage|Friday Stage|Weekend Stage}}
+
+|-|No Border=
+<pre>
+{{EventClock|Li'l Cat's Trial|noborder=yes}}
+</pre>
+===Result===
+{{EventClock|Li'l Cat's Trial|noborder=yes}}
+</tabber>

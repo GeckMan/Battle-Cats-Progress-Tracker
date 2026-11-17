@@ -1,0 +1,69 @@
+:''This article is about the enemy. For the Cat Unit, see [[Kano & Souma (Rare Cat)]].''
+'''Kano & Souma''' (セイバーオルタ) are a [[:Category:Traitless Enemies|Traitless]] enemy that only appear in the [[Shoumetsu Toshi Collaboration Event]]. They were added in [[Version 8.6 Update|Version 8.6]].
+
+{{Enemy Info
+|name = Kano & Souma
+|image = E 461.png
+|appearance = [[Shoumetsu Toshi Collaboration Event]]
+|money drop = 660¢ - 2,607¢
+}}
+
+==Enemy==
+Kano & Souma are basically [[Takuya (Enemy)|Takuya]], but with lower stats and a 100% chance to produce a level 2 [[Wave Attack]]; essentially, just like a weaker [[Kory]].
+
+==Strategy==
+Any [[:Category:Cats with Wave Immunity|Wave Immune Units]] are ideal for this enemy. [[:Category:Wave Shield Cats|Wave Shields]] are even better. After that, use any other high DPS units to deal with them faster.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Shoumetsu Toshi Collaboration Event#The World Beyond|The World Beyond]]:
+**[[An Encounter With Sin]] (100%)
+**[[Foolish Wanderer Kano]] (300%)
+**[[Wishing for Happiness]] (500%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Shoumetsu Toshi Collaboration Event#The World Beyond|The World Beyond]]:
+**[[An Encounter With Sin]] (100%)
+**[[Foolish Wanderer Kano]] (300%)
+**[[Wishing for Happiness]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Kano & Souma
+|Health = 80000
+|Attack Power = 800
+|Attack Range = 220
+|Attack Type = Area
+|Time Between Attacks = 115
+|Movement Speed = 18
+|Knockback = 2
+|Foreswing = 22
+|Backswing = 39
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 2 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+461 e.png|Kano & Souma's spritesheet
+IdleKano&Souma.gif|Kano & Souma's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/463.html
+
+----
+{{EnemyNav|Neko-Musume|Gekirinchi}}
+----
+
+{{Shoumetsu Toshi}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Wave Attack Enemies]]

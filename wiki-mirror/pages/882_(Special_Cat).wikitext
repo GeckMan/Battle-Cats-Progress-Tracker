@@ -1,0 +1,92 @@
+{{LimitedContent}}
+'''882-1''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Catnip Challenges]] during the [[Anniversary/14th Year|14th Anniversary]]. It was added in [[Version 16.0 Update|Version 16.0]].
+
+{{Cat Info
+|ID = 882
+|rarity = EX
+|name1 = 882-1
+|name2 = 882-2
+}}
+
+==Evolution==
+Evolves into '''882-2''' at level 10.
+
+==Strategy/Usage==
+A relatively weak anti-[[:Category:Red Enemies|Red]] crowd-controller. 882-2 can be viable early into [[Stories of Legend]] as a counter to [[Bore]], as well as [[Casaurian Ahirujo]] prior to unlocking [[Ancient Egg: N101 (Rare Cat)|Courier Cat]]. Beyond that point, 882-2's particularly decent against [[Hannya]] as one of the only easily accessible means of controlling her, in both [[Realm of Carnage (Deadly)|Realm of Carnage]] and [[Wrath of Carnage (Deadly)|Wrath of Carnage]]. It… also has a pretty sick mohawk, for whatever that's worth.
+
+{{Job|Classification = Rusher & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 882
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni882 f00.png
+|Image2 = Uni882 c00.png
+|Name1 (JP) = 監獄ネコ (Kangoku Neko, Prisoner Cat)
+|Desc1 (JP) = 指名手配犯に顔が似ているという理由で投獄されたネコ<br>脱獄する方法を看守に相談している<br>赤い敵にめっぽう強く、たまにふっとばす
+|Name2 (JP) = 脱獄ネコ (Datsugoku Neko, Jailbreak Cat)
+|Desc2 (JP) = 脱獄のために身体を鍛え上げたネコ<br>袖がはち切れたため冬場は肌寒い<br>赤い敵にめっぽう強く、たまにふっとばす
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = 882-1
+|Normal Base HP = 500
+|Normal Base AP = 200
+|Normal Range = 140
+|Normal Foreswing = 3
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 76
+|Normal Speed = 20
+|Normal KB = 2
+|Normal Cost = 300
+|Normal Recharge = 600
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Special Abilities#Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Knockback}} 50% chance to [[Special Abilities#Knockback|knockback]] target traits
+|Evolved Name = 882-2
+|Evolved Base HP = 550
+|Evolved Base AP = 260
+|Evolved Range = 140
+|Evolved Foreswing = 3
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 76
+|Evolved Speed = 20
+|Evolved KB = 2
+|Evolved Cost = 300
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Special Abilities#Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Knockback}} 50% chance to [[Special Abilities#Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni882 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/883.html
+
+----
+{{CatNav|Seijuro Hiko|883-1}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Knockback ability]]

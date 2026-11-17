@@ -1,0 +1,124 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Argentina (Into the Future)/Outbreak|here]].''
+'''Argentina''' is the 32nd stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc014.png]]
+|stage location = [[File:Argentina.png]]
+'''Into The Future'''
+|energy = 52
+|energy2 = 62
+|energy3 = 72
+|enemy castle hp = 150,000 HP
+|enemy castle hp2 = 225,000 HP
+|enemy castle hp3 = 300,000 HP
+|enemies = {{Magnification|Doge Dark|100%
+|Doge|500%
+|Shibalien|100%
+|Croco|500%
+|Snache|500%
+|Kang Roo|500%}}
+|boss = {{Magnification|Shadow Boxer K|100%}}
+|enemies2 = {{Magnification|Doge Dark|200%
+|Doge|1,000%
+|Shibalien|250%
+|Croco|1,000%
+|Snache|1,000%
+|Kang Roo|1,000%}}
+|boss2 = {{Magnification|Shadow Boxer K|150%}}
+|enemies3 = {{Magnification|Doge Dark|400%
+|Doge|1,500%
+|Shibalien|600%
+|Gabriel|250%
+|Shadow Boxer K|200%
+|Kang Roo|1,500%}}
+|boss3 = {{Magnification|Doge|1,500%}}
+|treasure = - [[Treasure|Mate]]
+|treasure2 = - [[Treasure|Mate]]
+|treasure3 = - [[Treasure|Mate]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': Cat CPU +1
+|score reward3 = '''6,000''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 12
+|XP = 10,300 XP
+|width = 6,000
+|jpname = Argentina
+|script = アルゼンチン
+|romaji = Aruzenchin
+|jptreasure = Beef
+|twname = Argentina
+|twscript = 阿根廷
+|twromaji = Āgēntíng
+|twtreasure = Mate Tea
+|krname = Argentina
+|krscript = 아르헨티나
+|krromaji = Aleuhentina
+|krtreasure = Mate
+|chapter = [[Into the Future]]
+|prev stage = [[South Africa (Into the Future)|South Africa]]
+|next stage = [[Easter Island (Into the Future)|Easter Island]]
+}}
+
+==Battleground==
+===<u>Chapter 1 & 2</u>===
+{{EnemiesAppearing|Doge Dark|Doge|Shibalien|Croco|Snache|Shadow Boxer K|Kang Roo}}
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+*Infinite [[Doge Dark]]s spawn after 22 seconds<sup>660f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+*5 [[Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Shibalien]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Croco]]s spawn after 36.67 seconds<sup>1,100f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Snache]]s spawn after 38.67 seconds<sup>1,160f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*5 [[Doge]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Shibalien]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shadow Boxer K]] spawns as the boss.
+**5 [[Kang Roo]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Doge Dark|Doge|Shibalien|Gabriel|Shadow Boxer K|Kang Roo}}
+*Infinite [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Doge Dark]]s spawn after 22 seconds<sup>660f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*10 [[Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Shibalien]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Gabriel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Gabriel]]s spawn after 42 seconds<sup>1,260f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*10 [[Doge]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Shibalien]]s spawn after 100 seconds<sup>3,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge]] spawns as the boss.
+**15 [[Gabriel]]s spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**15 [[Doge Dark]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**3 [[Shadow Boxer K]]s spawn, delay 10 seconds<sup>300f</sup>.
+**5 [[Kang Roo]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+Its a pretty straightforward stage in chapter 1. It is recommended that you use only 3 meatshields, [[Salon Cat (Rare Cat)|Paris Cat]] (if you have her) and one other good AoE unit, preferably [[Figure Skating Cats (Super Rare Cat)|Drama Cats]] or [[Bird Cat (Normal Cat)|Bird Cat]]. Pair those with [[Sexy Legs Cat|Sexy Legs]], [[Lizard Cat (Normal Cat)|Dragon Cat]], [[Valkyrie Cat (Special Cat)|Valkyrie]], [[Bahamut Cat (Special Cat)|Bahamut]] and any hard hitting or anti-Dark uber/units available to you and you'll be good to go.
+
+==='''Chapter 2'''===
+Chapter 2 increases the strength of both types of Kang Roos and you will see extra Shadow Boxer Ks spawn with the boss wave. Ring Girl Cat is almost a must-have here but since she's Super Rare people may not have her yet. The level can still be won without anti-Dark units if you use a Rich Cat and protect your heavy hitters behind more than 3 meatshields.
+
+==='''Chapter 3'''===
+Chapter 3 is very tough, especially without good anti-Dark units. Excellent timing and precise unit summoning are key to making it out of this nightmare stage alive.
+
+This time around you will no longer see the regular Snaches as peons, they are replaced with 250% Gabriels to bring the total to 4 different kinds of Doges appearing as the only peons in the stage.
+
+The Doges can be overwhelming and you can't really stack Bahamuts because you don't have the time. You need a large force to hold off the doges but once you build up a big force they stop entirely and your army heads to the base.
+
+Even with a Rich Cat you have to summon units to stop the doge wave so you may be able to save up 12k by the time you run out of Doges to farm. You should however, have a substantial force of Damage dealers and enough cash to purchase Bahamut + an Uber before you advance to the base.
+
+When you hit the base, multiple Kang Roos and Shadow Boxer Ks burst out of the base. You can feel like you're doing very well against the first couple Shadow Boxers but soon they'll start pushing you back and you won't stand a chance if they get through your meatshields. Cat CPU is a great help here for perfect Meatshielding, as long as you have all your expensive Units summoned so it doesn't fail.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-32.html
+*https://battlecats-db.com/stage/s03004-32.html
+*https://battlecats-db.com/stage/s03005-32.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

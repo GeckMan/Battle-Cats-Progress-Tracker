@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Wild Doge|Heavenly Hippoe|Mr. Angel|Angelic Beast Rajakong}}
+'''Archaeology 201: Planning''' is the first stage in [[Empress' Excavation 2]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn278 00 s en.png]]
+|stage location = [[File:Mapname278 s en.png]]
+|energy = 100
+|enemy castle hp = 800,000 HP
+|enemies = {{Magnification|Wild Doge|100%
+|Heavenly Hippoe|300%
+|Mr. Angel|150%}}
+|boss = {{Magnification|Angelic Beast Rajakong|100%}}
+|treasure = - [[Catamin]] [B] +3 (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 4,600
+|max enemies = 10
+|jpname = Ancient Survey II Method
+|script = 遺物調査Ⅱ方法
+|romaji = Ibutsu Chōsa Ⅱ Hōhō
+|star = 1
+|event-chapter = [[Empress' Excavation 2]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = N/A
+|next stage = [[Archaeology 201: Methods]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*2 [[Wild Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*3 [[Heavenly Hippoe]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[Mr. Angel]]s spawn after 80 seconds<sup>2,400f</sup>, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+*When the base reaches 99% HP:
+**1 [[Angelic Beast Rajakong]] spawns as the boss.
+**5 [[Wild Doge]]s spawn, delay 43.33~46.67 seconds<sup>1,300f~1,400f</sup>.
+**2 [[Heavenly Hippoe]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+
+==Strategy==
+As this stage has a deploy limit of 15, it is advisable to level up [[Rocker Cat (Rare Cat)|Ramen]] so that it is easier facing Angelic Beast Rajakong. [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] can help with their Behemoth Slayer ability.
+
+==Reference==
+*https://battlecats-db.com/stage/s01278-01.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

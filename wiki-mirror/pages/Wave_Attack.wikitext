@@ -1,0 +1,49 @@
+:''Not to be confused with [[Surge Attack]]s or [[Explosion]]s.''
+'''Wave Attacks''' (波動, ''Hadō'', '''Wave Motions'''), also known as '''Waves''' or '''Shockwaves''', are a [[Special Abilities|special ability/effect]] in [[The Battle Cats]]. They can be created by certain [[:Category:Wave Attack Cats|Cat Units]] and [[:Category:Wave Attack Enemies|Enemy Units]] at a set chance.
+
+[[File:Cat Base Mini.gif|thumb|right|[[Cat Base Mini (Super Rare Cat)|Cat Base Mini]] creating a Wave Attack]]
+
+==Explanation==
+Wave Attacks hit all enemies/cats in their range, but don't affect bases. The damage done by Wave Attacks is the same as a normal attack from their creator. Wave Attacks will retain any special ability/effect that the original attack had.
+
+Wave Attacks have a level, which determines the number of Wave Attack blasts produced. The starting Wave Attack range for enemies is '''467.5''', so even Level 1 is already enough to hit many backliners like [[Bahamut Cat (Special Cat)|Bahamut Cat]] (450 range); whereas for cats, the starting Wave Attack range is '''332.5'''. Each Wave Attack level applies '''200''' extra range.
+
+==Mini-Wave==
+[[File:SweetheartNenekoAttack.gif|thumb|right|[[Valentine's Neneko (Super Rare Cat)|Sweetheart Neneko]] creating a Mini-Wave]]
+'''Mini-Wave''' (小波動, ''Shō Hadō'', '''Mini-Wave Motion''') is an ability introduced in [[Version 10.1 Update|Version 10.1]]. Faster and weaker than Wave Attacks, Mini-Waves deal only 20% of their creator's attack power, but they move at twice the speed of normal Waves. Mini-Waves are counted as the same effect as Wave Attacks, meaning they are resisted by anti-Wave units all the same.
+
+Since the added attack power from Attack Up [[Talent Orbs]] is a flat increase that ignores damage multipliers, it will be added on top of the Mini-Wave's damage without being decreased to 20%.
+
+Also note that despite the name and visually smaller size, Mini-Waves still have the exact same ranges as regular Wave Attacks, so enemy Mini-Waves will reach up to '''467.5''' at level 1, Cat Mini-Waves reach up to '''332.5''', and each extra level still adds '''200''' range.
+
+==Notes==
+*Wave Attacks are only generated if their user's attack connects with an opposing unit or base.
+*Wave Attacks have more range than they seem to, especially for enemies, with the hitbox reaching further than the Wave Attack visuals. This can be annoying sometimes, as units that should be safe from the waves will still get hit.
+*A Wave Attack operates at a delay and is a separate hitbox from the attack that triggered them. This means its hitbox appears and deals damage a bit later than the triggering attack, will linger for a short duration (can hit different opponents that touch it at different times, but can only hit the same opponent once), and if the unit which created the waves is knocked back, the waves will still progress and deal damage independently. For example, this can be seen when [[Crazed Gross Cat (Super Rare Cat)|Crazed Gross Cat]] attacks the enemy base in the [[Higher Score|Challenge Battle]], triggering the summon of [[Assassin Bear]], and even though Crazed Gross Cat's attack has ended, the waves still progress forward, killing Assassin Bear. This also applies to Surges and Explosions.
+*As mentioned above, a Wave hits slightly later than the attack hit that creates it. Therefore, if a unit is knocked back immediately after standing too close to its opponent as the opponent launches a Wave, the Wave won't hit the unit, and vice versa. For example, a [[Wild Doge]] found within [[Revival of Origin]] at 2-Crown and 3-Crown difficulties respectively has 121,000 HP and 132,000 HP. [[Slime Cat (Rare Cat)|Jelly Dumpling Cat]] deals 40,500 damage with its direct bite and wave at level 50. As Wild Doge has 3 knockbacks (receives a KB after every 1/3 HP it loses), Jelly Dumpling's bite will knock a 220% WD at full HP back, so its Wave doesn't hit due to both sides being in melee range. This isn't the case for a 240% WD at full HP, so JD can deal double damage with Wave and WD can be seen getting KB slightly later. In addition, it also enables both an Enemy and a Cat to kill each other simultaneously, like when Slime Cat and [[Aku Doge]] directly confront each other (Slime's bite removes AD's [[Shield]] without hurting AD, then AD kills Slime just before being finished by Slime's Wave).
+*The first Wave Attack blast for enemies has a hitbox between the ranges 67.5~467.5, whereas this hitbox for cats is between the ranges -67.5~332.5. First Wave Attack blasts for both enemies and cats have a width of 400, but with different effective ranges.
+*When a multi-level Wave Attack generates a new blast, the previous blast's hitbox disappears rather than lingering, even though the blast is still briefly visible. The blasts' ranges overlap enough for this to be nearly irrelevant, but can still lead to characters avoiding Waves that should have hit them under [https://youtu.be/Oqq9ct_cxf0 very specific circumstances].
+*There are several abilities that reduce the effect of Wave Attacks:
+**[[:Category:Cats with Wave Immunity|Cats]] and [[:Category:Enemies with Wave Immunity|enemies]] with "Immune to Waves" abilities take no damage from Wave Attacks. However, they still can take damage from the attack triggering the Wave Attack if they are too close to the attacker.
+**[[:Category:Wave Shield Cats|Cats with "Wave Shield" abilities]] can stop Wave Attacks entirely. This ability disables the hitbox of wave blasts upon contact, meaning that units like [[Mighty Kristul Muu (Legend Rare Cat)|Mighty Kristul Muu]] can protect [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] from waves even if Bahamut is in front. Wave Shield can only absorb waves that would hit the unit, so for example if a Wave Shield is only 50 range away from a wave enemy then the enemy will be able to send waves straight through them.
+**[[:Category:Resist Wave Cats|Cats with "Resist Wave" Talents]] or Resist Wave [[Talent Orbs]] take reduced damage from Wave Attacks. The damage reduction depends on the Talent's/Orb's level/Rank, generally ranging from 5% to 50% reduction. These effects stack, resulting in full immunity with either two S-Rank Resist Wave Orbs or one S-Rank Resist Wave Orb and a level 10 Resist Wave Talent.
+*The [[Ototo Corps#Foundation and Style Upgrades|Iron Wall Foundation]] reduces the damage all [[Cat Units]] take from Wave Attacks by 0.75% per level up to a maximum of 15%.
+*Wave Attacks carry any [[Special Abilities|abilities]] that the original hit has. For example, [[Kubiluga (Uber Rare Cat)|Kubilan Pasalan]]'s waves knockback non-Metal enemies.
+*Wave Attacks are entirely separate from [[Surge Attack]]s and [[Explosion]]s.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Skill004.png|Sprites of a Cat Unit's Wave Attack
+Skill005.png|Sprites of an Enemy Unit's Wave Attack
+skill012.png|Sprites of a Cat Unit's Mini-Wave
+skill013.png|Sprites of an Enemy Unit's Mini-Wave
+</gallery>
+
+==Trivia==
+*[[Kory]] is the first character to have Wave Attacks.
+*[[Crazed Gross Cat (Super Rare Cat)|Crazed Gross Cat]] and [[Crazed Titan Cat (Super Rare Cat)|Crazed Titan Cat]] are the first cats to have Wave Attacks.
+*Enemies will create blue waves, and cats will create pink waves.
+*Wave Attacks are visually and functionally similar to the blasts fired by the default [[Cat Cannon]] and Holy Blast cannon. However, Holy Blast is able to hit [[:Category:Zombie Enemies|Zombies]] that are immune to waves, such as [[Zapy]], whereas the default Cat Cannon can't.
+
+[[Category:Game Features]]
+[[Category:Special Abilities]]

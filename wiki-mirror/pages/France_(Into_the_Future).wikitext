@@ -1,0 +1,126 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[France (Into the Future)/Outbreak|here]].''
+'''France''' is the 10th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc036.png]]
+|stage location = [[File:France.png]]
+'''Into the Future'''
+|energy = 35
+|energy2 = 45
+|energy3 = 55
+|enemy castle hp = 18,000 HP
+|enemy castle hp2 = 27,000 HP
+|enemy castle hp3 = 36,000 HP
+|enemies = {{Magnification|Jackie Peng|150%
+|Hippoe|150%
+|Gory|150%}}
+|boss = {{Magnification|Hyppoh|35%}}
+|enemies2 = {{Magnification|Jackie Peng|600%
+|Gory|600%
+|Hippoe|600%}}
+|boss2 = {{Magnification|Hyppoh|250%}}
+|enemies3 = {{Magnification|Jackie Peng|1,000%
+|Gory|1,000%
+|Hippoe|1,000%
+|Celeboodle|400%
+|Hyppoh|500%
+|Mistress Celeboodle|250%}}
+|boss3 = {{Magnification|Celeboodle|400%}}
+|treasure = - [[Treasure|Chardonnay]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': Sniper Cat +1
+|score reward2 = '''8,500''': [[Cat Food]] +10<br>
+'''7,000''': Sniper Cat +1
+|score reward3 = '''8,000''': [[Cat Food]] +10<br>
+'''7,000''': Sniper Cat +1
+|max enemies = 6
+|max enemies2 = 6
+|max enemies3 = 8
+|XP = 3,700 XP
+|width = 4,800
+|jpname = France
+|script = フランス
+|romaji = Furansu
+|jptreasure = French Bread
+|twname = Germany
+|twscript = 德國
+|twromaji = Déguó
+|twtreasure = German Sausage
+|krname = France
+|krscript = 프랑스
+|krromaji = Peulangseu
+|krtreasure = Wine
+|chapter = [[Into the Future]]
+|prev stage = [[Germany (Into the Future)|Germany]]
+|next stage = [[Spain (Into the Future)|Spain]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Jackie Peng|Hippoe|Gory|Hyppoh}}
+*3 [[Jackie Peng]]s spawn after 10 seconds<sup>300f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*3 [[Hippoe]]s spawn after 28.33 seconds<sup>850f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Gory|Gories]] spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 36.67~51.33 seconds<sup>1,100f~1,540f</sup>.
+*Infinite [[Gory|Gories]] spawn after 166.67 seconds<sup>5,000f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*Infinite [[Hippoe]]s spawn after 200 seconds<sup>6,000f</sup>, delay 50 seconds<sup>1,500f</sup>.
+*When the base reaches 90% HP:
+**1 [[Hyppoh]] spawns as the boss.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Jackie Peng|Gory|Hippoe|Hyppoh}}
+*3 [[Jackie Peng]]s spawn after 10 seconds<sup>300f</sup>, delay 29.33~44 seconds<sup>880f~1,320f</sup>.
+*3 [[Gory|Gories]] spawn after 20 seconds<sup>600f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*3 [[Hippoe]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Hippoe]]s spawn after 38.33 seconds<sup>1,150f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 36.67~51.33 seconds<sup>1,100f~1,540f</sup>.
+*Infinite [[Gory|Gories]] spawn after 146.67 seconds<sup>4,400f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*Infinite [[Hippoe]]s spawn after 166.67 seconds<sup>5,000f</sup>, delay 50 seconds<sup>1,500f</sup>.
+*When the base reaches 90% HP:
+**1 [[Hyppoh]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Jackie Peng|Gory|Hippoe|Celeboodle|Hyppoh|Mistress Celeboodle}}
+*1 [[Jackie Peng]] spawns after 5 seconds<sup>150f</sup>.
+*1 [[Gory]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Hippoe]] spawns after 13.33 seconds<sup>400f</sup>.
+*3 [[Celeboodle]]s spawn after 23.33 seconds<sup>700f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*3 [[Celeboodle]]s spawn after 26.67 seconds<sup>800f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[Hyppoh]] spawns after 50 seconds<sup>1,500f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Gory|Gories]] spawn after 60 seconds<sup>1,800f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*Infinite [[Hippoe]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*When the base reaches 90% HP:
+**1 [[Celeboodle]] spawns as the boss.
+**5 [[Mistress Celeboodle]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**5 [[Mistress Celeboodle]]s spawn, delay 3~6 seconds<sup>90f~180f</sup>.
+
+==Strategy==
+==='''Chapter 1 & 2'''===
+To kill Hyppoh, use [[Gross Cat (Normal Cat)|Sexy Legs Cat]], [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Valkyrie Cat (Special Cat)|Valkyrie Cat]]. Not that difficult of a stage all in all.
+
+==='''Chapter 3'''===
+Buffed Celeboodles and Mistress Celeboodles are present in this stage. Since they can almost 1 shot even the mighty [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]], you may need to bring multiple cheap meatshields to stall them. Start by saving some money. After the Celeboodles spawned, spam the cheap meatshields along with [[Salon Cat (Rare Cat)|Cyborg Cat]] (32) to kill them with powerful area damage while being protected by meatshields. Proceed to stack them, once Mistress Celeboodles starts spawning, just do the same thing. Don't forget to collect anti unstarred alien treasures from chapter 1 and 2 to make this stage easier. If you still struggles in this stage THAT bad then bring [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] aswell.
+
+If you still can't beat the stage, try collecting more [[Treasure]]s from [[Empire of Cats]]. More meatshields could also be a solution.
+
+==Gallery==
+<gallery>
+Wc036 new.png|[[Version 10.2 Update|Version 10.2]] base design
+Wc037.png|Taiwanese version's base (Germany)
+</gallery>
+
+==Trivia==
+*The [[Version 10.2 Update|Version 10.2]] [[Enemy Bases|enemy base]] is a reference to ''[[wikipedia:Evangelion: 3.0+1.0 Thrice Upon a Time|Evangelion: 3.0+1.0 Thrice Upon a Time]]''.
+*In the Taiwanese version, this stage takes place in '''Germany'''; [[Germany (Into the Future)|stage 9]] is Denmark and France is moved to [[Spain (Into the Future)|stage 11]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-10.html
+*https://battlecats-db.com/stage/s03004-10.html
+*https://battlecats-db.com/stage/s03005-10.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,43 @@
+{{EnemiesAppearing|Shibalien|Hyppoh|Imperator Sael}}
+:''Not to be confused with the [[Heavenly Tower/Floor 4|Heavenly Tower]] or [[Infernal Tower/Floor 4|Infernal Tower]] versions of Floor 4.''
+'''Floor 4''' is the fourth floor of [[Alien Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 03 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 120
+|enemy castle hp = 90,000 HP
+|enemies = {{Magnification|Shibalien|90%
+|Hyppoh|70%}}
+|boss = {{Magnification|Imperator Sael|60%}}
+|treasure = - 250,000 XP (100%, 1 time)
+|XP = 2,280 XP
+|width = 4,000
+|max enemies = 12
+|jpname = 4th Floor
+|script = 4階
+|romaji = 4 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★4
+|prev stage = [[Alien Citadel/Floor 3|Floor 3]]
+|next stage = [[Alien Citadel/Floor 5|Floor 5]]
+}}
+
+==Battleground==
+*5 [[Shibalien]]s spawn, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*5 [[Shibalien]]s spawn after 40 seconds<sup>1,200f</sup>, delay 3.33~8.33 seconds<sup>100f~250f</sup>.
+*When the base reaches 99% HP:
+**1 [[Imperator Sael]] spawns as the boss.
+**Infinite [[Shibalien]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**1 [[Hyppoh]] spawns.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-04.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

@@ -1,0 +1,69 @@
+{{JPExclusive}}
+The '''Niconico TV''' (テレビちゃん城, '''TV-Chan Castle''') is an [[Enemy Bases|enemy base]] that appears in the second [[Catclaw Dojo]] stage, [[Nico Training Yawame]]. It was added in [[Version 5.6 Update|Version 5.6]].
+
+{{Enemy Info
+|name = Niconico TV
+|image = E 298.png
+|appearance = [[Nico Training Yawame]]
+|money drop = N/A
+}}
+
+==Enemy==
+This enemy base can attack Cat Units in range, with a slow attack rate. Because it is a base, it does not move and is immune to all effects. All of its attacks are basically an instant-kill, except against [[:Category:Cats with Metal ability|Metal Cats]] and [[:Category:Lethal Strike Resistant Cats|Cats that survive lethal strikes]]. Niconico TV is immune to all effects because it is an enemy base.
+
+==Strategy==
+Basically any unit that it can outrange, it will kill. Therefore, the best way to counter this unsettling TV is to use units that outrange it, or time your units so that they go directly before it attacks so your units can trigger the next wave as fast as possible, as the boss wave knocks your units out of Niconico TV's range.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Catclaw Dojo]]===
+*ニコニコの間: [[Nico Training Yawame]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Niconico TV
+|Health = 100
+|Attack Power = 999999
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 649
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 50
+|Backswing = 31
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy|bg=Bg043.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+298 e.png|The Niconico TV's spritesheet
+IdleNicoNicoTV.gif|Niconico TV's idle state
+</gallery>
+
+==Trivia==
+*Niconico TV is based on the Japanese video-sharing service [[:wikipedia:Niconico|Niconico]]. It gets its name and design from the logo of Niconico featuring a TV.
+*The text that scrolls by before its attack, ''くるぞ...'' means ''Here it comes...''
+
+==Reference==
+*https://battlecats-db.com/enemy/300.html
+
+----
+{{EnemyNav|4th Anniversary Birthday Cake|W (form 1)}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Weaken Immunity]]

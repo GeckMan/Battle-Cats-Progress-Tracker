@@ -1,0 +1,116 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''For the enemy, see [[Type 10 (Enemy)]] or [[Type 10 (Hometown Self-Defense Force)]].''
+'''Type 10''' is a [[:Category:Special Cats|Special Cat]] that could be obtained when beating any stage in [[Hometown Self-Defense Force Collaboration Event#Hometown Self-Defense Force|Hometown Self-Defense Force]] during the [[Hometown Self-Defense Force Collaboration Event]]. It was added in [[Version 2.0 Update#Version 2.0.4 Update|Version 2.0.4]].
+
+{{Cat Info
+|ID = 54
+|rarity = EX
+|name1 = Type 10
+|name2 = Cat Transportation Type 10
+}}
+
+==Evolution==
+Evolves into '''Cat Transportation Type 10''' at level 10.
+
+==Strategy/Usage==
+Type 10 is completely useless outside of [[Empire of Cats]]. It has a much cheaper cost than [[Titan Cat (Normal Cat)|Titan Cat]], in exchange for lower health and higher DPS, though this is negligible once Titan Cat's [[True Form]] is unlocked.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 54
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni054 f00.png
+|Image2 = Uni054 c00.png
+|Name1 (JP) = 10式戦車 (Hitomaru Shiki Sensha, Type 10 Tank)
+|Desc1 (JP) = C4Iシステムを搭載する｢走るコンピューター｣の<br>異名をもつ１０(ひとまる)式戦車(範囲攻撃)<br>本物はタッチパネル操作で主砲が撃てるらしい
+|Transl1 (JP) = Equipped with a C4I system, the Type 10 (Hitomaru) Tank<br>has the nickname "Running Computer" (Ranged Attack)<br>Real ones apparently use touch panels to fire the main cannon
+|Name2 (JP) = ネコ搭乗10式戦車 (Neko Tōjō Hitomaru Shiki Sensha, Cat Boarding Type 10 Tank)
+|Desc2 (JP) = 乗員3人　全備重量約44t 最高速度70km/h<br>全長9.42m 全幅3.24m 全高2.30m(範囲攻撃)<br>水冷4サイクルV型8気筒ディーゼルエンジン
+|Transl2 (JP) = Carries 3 passengers, weighs approx. 44 tons, max. speed 70 km/h,<br>total length 9.42 m, total width 3.24 m, total height 2.30 m (Ranged Attack)<br>Uses a V8 diesel engine with a 4 cycle water cooling system
+}}
+
+==Cost==
+*Chapter 1: 942円
+*Chapter 2: 1,413円
+*Chapter 3: 1,884円
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Type 10
+|Normal Base HP = 762
+|Normal Base AP = 230
+|Normal Range = 140
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 31
+|Normal Speed = 6
+|Normal KB = 4
+|Normal Cost = 942
+|Normal Recharge = 1180
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Cat Transportation Type 10
+|Evolved Base HP = 762
+|Evolved Base AP = 230
+|Evolved Range = 140
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 31
+|Evolved Speed = 6
+|Evolved KB = 4
+|Evolved Cost = 942
+|Evolved Recharge = 1180
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 762 HP
+|val-Normal-Attack Power = 230 damage<br>(222.58 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 31f <sub>1.03 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 39.33 ~ 30.53 seconds
+|val-Normal-MaxHP = 12,955 HP
+|val-Normal-MaxAttack = 3,910 damage<br>(3,783.87 DPS)
+|val-Evolved-Health = 12,955 HP
+|val-Evolved-Attack Power = 3,910 damage<br>(3,783.87 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 31f <sub>1.03 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 39.33 ~ 30.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni054 f00}}
+
+==Trivia==
+*This unit is based on the [[wikipedia:Type 10|Type 10]] Main Battle Tank of the Japan Self-Defense Forces.
+
+==Reference==
+*https://battlecats-db.com/unit/055.html
+
+----
+{{CatNav|Evangelist Cat|Witch Cat}}
+----
+
+{{Hometown Self-Defense Force}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Area Attack Cats]]

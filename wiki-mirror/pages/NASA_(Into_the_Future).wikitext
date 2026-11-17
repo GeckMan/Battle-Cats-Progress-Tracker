@@ -1,0 +1,121 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[NASA (Into the Future)/Outbreak|here]].''
+'''NASA''' is the 44th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc002.png]]
+|stage location = [[File:NASA.png]]
+'''Into The Future'''
+|energy = 60
+|energy2 = 70
+|energy3 = 80
+|enemy castle hp = 255,000 HP
+|enemy castle hp2 = 382,500 HP
+|enemy castle hp3 = 510,000 HP
+|enemies = {{Magnification|Shibalien|100%
+|Baa Baa|600%
+|Gory|600%
+|Gory Dark|100%
+|Doge Dark|100%}}
+|boss = {{Magnification|I.M. Phace|100%}}
+|enemies2 = {{Magnification|Shibalien|250%
+|Doge Dark|200%
+|Mistress Celeboodle|100%
+|Scissoroo|100%
+|Dark Otter|100%}}
+|boss2 = {{Magnification|I.M. Phace|250%}}
+|enemies3 = {{Magnification|Shibalien|600%
+|Doge Dark|400%
+|Mistress Celeboodle|250%
+|Scissoroo|250%
+|Dark Otter|150%
+|Shadow Boxer K|200%}}
+|boss3 = {{Magnification|I.M. Phace|600%}}
+|treasure = - [[Treasure|Astronaut Helmet]]
+|treasure2 = - [[Treasure|Astronaut Helmet]]
+|treasure3 = - [[Treasure|Astronaut Helmet]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +105,000 XP
+|score reward2 = '''6,000''': [[Cat Food]] +10<br>
+'''5,000''': +157,500 XP
+|score reward3 = '''5,500''': [[Cat Food]] +10<br>
+'''4,500''': +210,000 XP
+|max enemies = 8
+|max enemies2 = 7
+|max enemies3 = 7
+|XP = 13,900 XP
+|width = 4,500
+|jpname = NASA
+|script = NASA
+|romaji = NASA
+|jptreasure = Space Food
+|twname = NASA
+|twscript = 美國太空總署
+|twromaji = Měiguó Tàikōng Zǒng Shǔ
+|twtreasure = Astronaut
+|krname = NASA
+|krscript = NASA
+|krromaji = NASA
+|krtreasure = Astronaut
+|chapter = [[Into the Future]]
+|prev stage = [[New York (Into the Future)|New York]]
+|next stage = [[Bermuda (Into the Future)|Bermuda]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Shibalien|Baa Baa|Gory|Gory Dark|I.M. Phace|Doge Dark}}
+*Infinite [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 10~30 seconds<sup>300f~900f</sup>.
+*Infinite [[Shibalien]]s spawn after 13.33 seconds<sup>400f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+*Infinite [[Baa Baa]]s spawn after 23.33 seconds<sup>700f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*Infinite [[Gory|Gories]] spawn after 26.67 seconds<sup>800f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+*1 [[Gory Dark]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Gory Dark]]s spawn after 42 seconds<sup>1,260f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*1 [[I.M. Phace]] spawns as the boss after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Doge Dark]] spawns after 98 seconds<sup>2,940f</sup>.
+*Infinite [[Doge Dark]]s spawn after 100 seconds<sup>3,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Shibalien|Doge Dark|Mistress Celeboodle|Scissoroo|I.M. Phace|Dark Otter}}
+*Infinite [[Shibalien]]s spawn after 4 seconds<sup>120f</sup>, delay 10~30 seconds<sup>300f~900f</sup>.
+*Infinite [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*1 [[Mistress Celeboodle]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Mistress Celeboodle]] spawns after 30 seconds<sup>900f</sup>.
+*Infinite [[Scissoroo]]s spawn after 40 seconds<sup>1,200f</sup>, delay 30~60 seconds<sup>900f~1,800f</sup>.
+*1 [[I.M. Phace]] spawns as the boss after 50 seconds<sup>1,500f</sup>.
+*1 [[Dark Otter]] spawns after 83.33 seconds<sup>2,500f</sup>.
+*1 [[Dark Otter]] spawns after 100 seconds<sup>3,000f</sup>.
+*Infinite [[Mistress Celeboodle]]s spawn after 120 seconds<sup>3,600f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Shibalien|Doge Dark|Mistress Celeboodle|Scissoroo|I.M. Phace|Dark Otter|Shadow Boxer K}}
+*Infinite [[Shibalien]]s spawn after 4 seconds<sup>120f</sup>, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Doge Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*1 [[Mistress Celeboodle]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Mistress Celeboodle]] spawns after 30 seconds<sup>900f</sup>.
+*Infinite [[Scissoroo]]s spawn after 40 seconds<sup>1,200f</sup>, delay 30~50 seconds<sup>900f~1,500f</sup>.
+*1 [[I.M. Phace]] spawns as the boss after 50 seconds<sup>1,500f</sup>.
+*1 [[Dark Otter]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Dark Otter]] spawns after 83.33 seconds<sup>2,500f</sup>.
+*1 [[Shadow Boxer K]] spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Shadow Boxer K]] spawns after 106.67 seconds<sup>3,200f</sup>.
+*Infinite [[Mistress Celeboodle]]s spawn after 120 seconds<sup>3,600f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+I.M. Phace on his own is not a problem, but things get messy once Gory Darks get in the way. Midrange Gory Dark counters such as [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]] are less effective in this stage, for they tend to walk into I.M. Phace's attacks and get picked off. This problem can be circumvented by allowing the Gory Darks to push your frontline out of I.M. Phace's range. From there, any of your attackers should be capable of dealing with the Gory Darks. An alternative strategy is to destroy the base before I.M. Phace spawns. As long as you can deal with the Gory Darks, just spam fast cats to break the base first.
+
+==='''Chapter 2'''===
+Ring Girl Cat is an effective enough unit to deal with the Doge Darks and works well for the Dark Otters. Use [[Bahamut Cat (Special Cat)|Bahamut Cat]] and [[Lizard Cat (Normal Cat)|Dragon Cat]] to deliver chip damage to I.M. Phace, in addition to [[:Category:Crowd-Controller-class Cats|crowd-controllers]] such as [[Psychocat (Rare Cat)|Psychocat]] and [[Surfer Cat (Super Rare Cat)|Surfer Cat]] to deal with the Scissoroos.
+
+==='''Chapter 3 '''===
+This stage is relatively straightforward. It is best to bring 3-4 meatshields, as the Scissoroos and Shadow Boxer Ks would otherwise cripple your defenses. Ring Girl Cat is great at killing the Dark enemies, however her attacks may get interrupted if enemies are pushing too quickly. Bring units that outrange I.M. Phace, such as Dragon Cat and [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]]. Anti-Alien crowd-controllers like Castaway Cat are worth bringing to keep the Scissoroos in check. If you own her, [[Ururun Wolf (Special Cat)|Ururun Cat]] is an excellent counter to this stage, as she can juggle the main threats while comfortably outranging I.M. Phace.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-44.html
+*https://battlecats-db.com/stage/s03004-44.html
+*https://battlecats-db.com/stage/s03005-44.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

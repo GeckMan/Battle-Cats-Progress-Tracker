@@ -1,0 +1,62 @@
+{{DISPLAYTITLE:Cradle Shrine (Deadly)}}
+{{EnemiesAppearing|Doge Dark|Gory Dark|Director Kurosawah|Shadow Boxer K}}
+'''Cradle Shrine (Deadly)''' is one of the many [[Enigma Stages]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn009 00 h en.png]]
+|stage location = [[File:Mapname015 h en 1.png]]
+|energy = 100
+|enemy castle hp = 480,000 HP
+|enemies = {{Magnification|Doge Dark|400%
+|Gory Dark|250%
+|Shadow Boxer K|200%}}
+|boss = {{Magnification|Director Kurosawah|200%}}
+|treasure = One of the following (unlimited):<br>
+- Attack Up D [[Talent Orbs|Orb]]: Dark +1 (41%)<br>
+- Defense Up D [[Talent Orbs|Orb]]: Dark +1 (41%)<br>
+- Attack Up C [[Talent Orbs|Orb]]: Dark +1 (7.5%)<br>
+- Defense Up C [[Talent Orbs|Orb]]: Dark +1 (7.5%)<br>
+- Strong Effect Up D [[Talent Orbs|Orb]]: Dark +1 (1%)<br>
+- Massive Damage Up D [[Talent Orbs|Orb]]: Dark +1 (1%)<br>
+- Resistant Effect Up D [[Talent Orbs|Orb]]: Dark +1 (1%)
+|stage type = [[Enigma Stages|Enigma Stage]]
+|XP = 1,900 XP
+|width = 4,400
+|max enemies = 20
+|jpname = Cradle Shrine (Deadly)
+|script = 起源の祠 極ムズ
+|romaji = Kigen no Hokora Goku Muzu
+|star = 1
+|event-chapter = Dark Cradle
+|max clears = 1
+|difficulty = ★8
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*5 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Gory Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Director Kurosawah]] spawns as the boss.
+**10 [[Shadow Boxer K]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**Infinite [[Shadow Boxer K]]s spawn, delay 36~40 seconds<sup>1,080f~1,200f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+:''This Enigma stage is identical to a stage in Island of Hidden Treasure. As such, see [[Ebony Dawn|that stage]] for strategies.''
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Mapname015 h en.png|Pre-[[Version 15.3 Update|15.3]] stage name
+</gallery>
+
+==Trivia==
+*Prior to [[Version 15.3 Update|Version 15.3]], this Enigma was called Black Cradle.
+
+==Reference==
+*https://battlecats-db.com/stage/s25015-01.html
+
+{{EnigmaStages}}
+[[Category:Enigma Stages]]

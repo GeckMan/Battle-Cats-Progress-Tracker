@@ -1,0 +1,166 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Zoge|Zir Zeal|Aku Doge|Cerberus Kids|Dark Emperor Santa}}
+
+{{Stage Info
+|stage name = [[File:Rc005.png]]
+[[File:Mapsn030 00 a en.png]]
+|stage location = [[File:Mapname030 a en.png]]
+|enemies = {{Magnification|Zoge|0
+|Zir Zeal|0
+|Aku Doge|0
+|Cerberus Kids|0}}
+|boss = {{Magnification|Dark Emperor Santa|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,200
+|max enemies = 50
+|jpname = Coming! Lv.X
+|script = 来た！ Lv.X
+|romaji = Kita！ Lv.X
+|event = [[December Gauntlet]]
+|event-chapter = [[December Gauntlet]]
+|require = Clear [[Jingle Cat Bell (Monthly Event)|Jingle Cat Bell]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Zoge]]s spawn after 0.4 seconds<sup>12f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*10 [[Aku Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Emperor Santa]] spawns as the boss.
+**1 [[Zir Zeal]] spawns.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+!rowspan="2" scope="col" style="text-align: center;" |Jingle Cat Lv.
+!colspan="5"|Strength Magnifications
+!rowspan="2" style="text-align: center;" |Energy Cost
+!colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+!scope="col"|[[Zoge]]
+!scope="col"|[[Zir Zeal]]
+!scope="col"|[[Aku Doge]]
+!scope="col"|[[Cerberus Kids]]
+!scope="col"|[[Dark Emperor Santa]]
+!scope="col"|Treasure
+!scope="col"|Base XP
+|-
+!scope="row"|1
+|50%
+|50%
+|100%
+|100%
+|100%
+|60
+|[[Battle Items#Speed Up|Speed Up]] +1
+|1,140
+|-
+!scope="row"|2
+|67%
+|67%
+|111%
+|111%
+|133%
+|60
+|[[Catamin]] [A] +1
+|1,140
+|-
+!scope="row"|3
+|84%
+|84%
+|122%
+|122%
+|166%
+|70
+|[[Battle Items#Cat CPU|Cat CPU]] +1
+|1,330
+|-
+!scope="row"|4
+|101%
+|101%
+|133%
+|133%
+|199%
+|70
+|[[Battle Items#Rich Cat|Rich Cat]] +1
+|1,330
+|-
+!scope="row"|5
+|118%
+|118%
+|144%
+|144%
+|232%
+|80
+|Platinum Shard +1
+|1,520
+|-
+!scope="row"|6
+|135%
+|135%
+|155%
+|155%
+|265%
+|80
+|[[Catamin]] [B] +1
+|1,520
+|-
+!scope="row"|7
+|152%
+|152%
+|166%
+|166%
+|298%
+|90
+|[[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|1,710
+|-
+!scope="row"|8
+|169%
+|169%
+|177%
+|177%
+|331%
+|90
+|[[Catamin]] [C] +1
+|1,710
+|-
+!scope="row"|9
+|186%
+|186%
+|188%
+|188%
+|364%
+|100
+|[[Battle Items#Cat Jobs|Cat Jobs]] +1
+|1,900
+|-
+!scope="row"|10
+|200%
+|200%
+|200%
+|200%
+|400%
+|100
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|1,900
+|-
+|}
+
+==Strategy==
+-
+
+==Trivia==
+*Prior to [[Version 13.3 Update|Version 13.3]], there were only 10 Zoges, Zir Zeal and Dark Emperor Santa spawned without hitting the base, and Dark Emperor Santa wasn't a boss.
+
+==Reference==
+*https://battlecats-db.com/stage/s24030.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

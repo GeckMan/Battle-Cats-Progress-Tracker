@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Wall Doge|Kory|Ice Doge|Bore Jr.|Dober P.D|Le'mammoth}}
+'''Top Floor''' is the tenth and final floor of [[Traitless Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn005 09 v en.png]]
+|stage location = [[File:Mapname007 v en.png]]
+|energy = 200
+|enemy castle hp = 720,000 HP
+|enemies = {{Magnification|Wall Doge|400%
+|Kory|400%
+|Ice Doge|400%
+|Bore Jr.|100%
+|Dober P.D|150%}}
+|boss = {{Magnification|Le'mammoth|500%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 3,600
+|max enemies = 12
+|jpname = Top Floor
+|script = 最上階
+|romaji = Saijōkai
+|star = 1
+|event-chapter = [[Traitless Citadel]]
+|difficulty = ★9
+|prev stage = [[Traitless Citadel/Floor 9|Floor 9]]
+|next stage = N/A
+}}
+
+==Battleground==
+*4 [[Wall Doge]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Kory]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'mammoth]] spawns as the boss.
+**Infinite [[Ice Doge]]s spawn, delay 30~50 seconds<sup>900f~1,500f</sup>.
+**5 [[Bore Jr.|Bore Jrs]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**3 [[Kory|Kories]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**1 [[Dober P.D]] spawns.
+
+==Strategy==
+Because this stage relies almost entirely on [[Wave Attack]] for damage, bringing a [[:Category:Wave Shield Cats|Wave Shield]] is absolutely mandatory or else your backliners will not stand a chance. Nearly any Wave Shield up to and including [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] will work, as long as their range is short and can be stacked.
+
+==Reference==
+*https://battlecats-db.com/stage/s07007-10.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]
+[[Category:No Continue Stages]]

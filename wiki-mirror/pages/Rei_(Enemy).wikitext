@@ -1,0 +1,87 @@
+:''For other uses see, [[Rei (disambiguation)]].''
+'''Rei''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Merc Storia Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Enemy Info
+|name = Rei
+|image = E 096.png
+|appearance = [[Merc Storia Collaboration Event]]
+|money drop = 900¢ - 3555¢
+}}
+
+==Enemy==
+Rei is relatively fast enemy with a fairly high amount of HP(depending on magnification), aswell as a rapid attack rate, similar to [[Fuu (Enemy)|Fuu]]. Additionally, this character is capable of delivering substantial damage with each strike.
+
+Fortunately, Rei-being a melee, means it is important to note that their effective range is notably limited, which exposes them to vulnerability from numerous opposing units, particularly when considering their Floating trait, bearing some resemblance to [[Serum (Enemy)|Serum]] to a certain extent.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Inferno|Merc Storia: Inferno]]: [[A City Aflame (Insane)]] (100%, 400%)
+*[[Merc Storia Collaboration Event#Merc Storia: Showdown|Merc Storia: Showdown]]:
+**[[Subjugated Cats]] (100%)
+**[[Threads of Love]] (200%)
+*[[Merc Awakens!]]: [[Merc Awakens (Veteran)]] (400%)
+*[[Titi Awakens!]]: [[Titi Awakens (Veteran)]] (400%)
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]: [[Hearscht: Silver Beast]] (400%)
+*[[Trials of Merc Storia!]]:
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.1|Healer & Co. Lv.1]] (100%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.2]] (175%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.3]] (250%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.4]] (325%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.5]] (400%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.6]] (480%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.7]] (560%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.8]] (640%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.9]] (720%)
+**[[Trials of Merc Storia!/Healer & Co. Lv.1~20#Healer & Co. Lv.2~10|Healer & Co. Lv.10]] (800%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Merc Storia Collaboration Event#Merc Storia: Attack|Merc Storia: Attack]]: [[Hearscht: Silver Beast]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Rei
+|Health = 40000
+|Attack Power = 2123
+|Attack Range = 130
+|Attack Type = Area
+|Time Between Attacks = 63
+|Movement Speed = 18
+|Knockback = 3
+|Foreswing = 24
+|Backswing = 39
+|Ability = -
+|Element = Floating
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|096 e ja.png|MediaWiki:Custom-AnimationViewer/096 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+096 e.png|Rei's spritesheet (EN/KR)
+096 e ja.png|Rei's spritesheet (JP)
+096 e tw.png|Rei's spritesheet (TW)
+IdleReiJP.gif|Rei's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/098.html
+
+----
+{{EnemyNav|Aura|Wyvern}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with regional differences]]

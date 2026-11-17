@@ -1,0 +1,65 @@
+'''Possessed King Doge''' (操られしわんわん大王, ''Ayatsura Reshi Wan Wan Daiō'', '''Possessed Great King Wan Wan''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Shadows over Doge Kingdom]]. He was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Enemy Info
+|name = Possessed King Doge
+|image = E 685.png
+|first appearance = [[Shadows over Doge Kingdom]]
+|money drop = 1,111¢ - 4,388¢
+}}
+
+==Enemy==
+Considering his insane 1000 Range and his 100% freeze on all units, this Enemy should be handled with extreme caution. He attacks slowly, but it is [[Multi-Hit]] and guaranteed freezes all units within that range. Fast units can exploit this low attack rate.
+
+==Strategy==
+Excessive meatshielding isn't required due to his very long attack cooldown, but try to use Units that are Immune to [[Freeze]], such as [[Kung Fu Cat (Special Cat)|Kung Fu]], [[Maize Cat (Rare Cat)|Maize]], or Ubers like [[Lasvoss (Uber Rare Cat)|Lasvoss]] and [[Baby Cat (Uber Rare Cat)|Baby]]. Also, use fast units, like [[Cow Cat (Normal Cat)|Cow Cat]] or [[Express Cat (Super Rare Cat)|Express Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Year's End Event#Top 5 Most Seen Enemies, 2025!|Top 5 Most Seen Enemies, 2025!]] (JP only): [[Unseen in 2025]] (1%)
+*[[Shadows over Doge Kingdom]]:
+**[[A Vile Presence]] (100%)
+**[[Manipulated King]] (600%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Possessed King Doge
+|Health = 80000
+|Attack Power = 3000
+|Attack Range = 1000
+|Attack Type = Area
+|Time Between Attacks = 361
+|Movement Speed = 2
+|Knockback = 3
+|Foreswing = 90
+|Backswing = 71
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">1,000</span> at 90f <sup>3s</sup>, <span class="scaled" data-type="ap">1,000</span> at 120f <sup>4s</sup>, <span class="scaled" data-type="ap">1,000</span> at 150f <sup>5s</sup>)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 50f <sub>1.67 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+685 e.png|Possessed King Doge's spritesheet
+</gallery>
+
+==Trivia==
+*Possessed King Doge's Japanese name, Wan Wan, is a pun on "One One" (referring to how he was created for the 11.5th anniversary event) and ''wan'', the Japanese onomatopoeia for a dog's bark.
+
+==Reference==
+*https://battlecats-db.com/enemy/687.html
+
+----
+{{EnemyNav|Mysterious Calamity|Voluptuous Peony - Daji}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Freeze ability]]

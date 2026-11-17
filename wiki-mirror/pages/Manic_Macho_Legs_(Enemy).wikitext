@@ -1,0 +1,65 @@
+:''For the Cat Unit, see [[Crazed Gross Cat (Super Rare Cat)]]. For the weaker boss that must be beaten first, see [[Crazed Gross Cat (Enemy)]].''
+'''Manic Macho Legs''' (大狂乱のムキあしネコ ''Dai Kyōran no Mukiashi Neko'', '''Insane Muscular Legs Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy found in [[Muscle Party (Deadly)|Muscle Party]]. He was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Manic Macho Legs
+|image = E 245.png
+|appearance = [[Muscle Party (Deadly)]]
+[[Infernal Tower/Floor 33|Infernal Tower - Floor 33]]
+|money drop = 810¢ - 3,199¢
+}}
+
+==Enemy==
+This enemy has high health (though lower than most other enemy variants of Manic Cats), high attack power and creates a Lv.4 [[Wave Attack]]. Cats with high attack power like [[Bahamut Cat (Special Cat)|Awakened Bahamut]] and/or a stack of ranged attackers will make short work of it, but don't expect just one to show up.
+
+This enemy becomes far easier if the player has access to [[:Category:Wave Shield Cats|Wave Shields]] like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]].
+
+==Strategy==
+:''For strategies, see [[Muscle Party (Deadly)|Muscle Party]]''.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Gross Maniac: [[Muscle Party (Deadly)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 33|Floor 33]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manic Macho Legs
+|Health = 300000
+|Attack Power = 9990
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 47
+|Movement Speed = 6
+|Knockback = 2
+|Foreswing = 8
+|Backswing = 4
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 4 [[Wave Attack]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+245 e.png|Manic Macho Legs' spritesheet
+IdleManicMachoLegs.gif|Manic Macho Legs' walking animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/247.html
+
+----
+{{EnemyNav|Manic Dark Cat|Manic Lion Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Single Attack Enemies]]

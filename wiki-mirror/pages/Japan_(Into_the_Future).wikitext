@@ -1,0 +1,95 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Japan (Into the Future)/Outbreak|here]].''
+'''Japan''' is the 1st stage of [[Into the Future]]. This stage introduces the first [[:Category:Alien Enemies|Alien]] enemy, [[Shibalien]].
+
+{{Story Info
+|stage name = [[File:Wc045.png]]
+|stage location = [[File:Japan.png]]
+'''Into The Future'''
+|energy = 30
+|energy2 = 40
+|energy3 = 50
+|enemy castle hp = 4,000 HP
+|enemy castle hp2 = 6,000 HP
+|enemy castle hp3 = 8,000 HP
+|enemies = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%}}
+|boss = {{Magnification|Shibalien|50%}}
+|enemies2 = {{Magnification|Doge|400%
+|Snache|400%
+|Those Guys|400%}}
+|boss2 = {{Magnification|Shibalien|250%}}
+|enemies3 = {{Magnification|Doge|800%
+|Snache|800%
+|Those Guys|800%
+|Shibalien|500%}}
+|boss3 = {{Magnification|Doge|800%}}
+|treasure = - [[Treasure|Home Electronics]]
+|treasure2 = - [[Treasure|Home Electronics]]
+|treasure3 = - [[Treasure|Home Electronics]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''9,000''': [[Cat Food]] +10<br>
+'''7,000''': Cat CPU +1
+|score reward3 = '''9,000''': [[Cat Food]] +10<br>
+'''7,500''': Cat CPU +1
+|max enemies = 5
+|max enemies2 = 5
+|max enemies3 = 8
+|XP = 1,000 XP
+|width = 4,000
+|jpname = Japan
+|script = 日本
+|romaji = Nippon
+|jptreasure = Chonmage
+|twname = Japan
+|twscript = 日本
+|twromaji = Rìběn
+|twtreasure = 3C Products
+|krname = Japan
+|krscript = 일본
+|krromaji = Ilbon
+|krtreasure = Home Appliance
+|chapter = [[Into the Future]]
+|prev stage = N/A
+|next stage = [[Korea (Into the Future)|Korea]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Doge|Snache|Those Guys|Shibalien}}
+*Infinite [[Doge]]s spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Doge|Snache|Those Guys|Shibalien}}
+*Infinite [[Doge]]s spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge]] spawns as the boss.
+**1 [[Shibalien]] spawns.
+**1 [[Shibalien]] spawns.
+**1 [[Shibalien]] spawns.
+
+==Strategy==
+Since it's the first stage of Into the Future, it's easy. Even if the Shibalien overpowers your troops, he has a moderate attack rate and a Single Target attack, meaning you can stall him with [[Cat (Normal Cat)|Macho Cat]] and [[Tank Cat (Normal Cat)|Wall Cat]] and hit him with [[Gross Cat (Normal Cat)|Sexy Legs Cat]], [[Lizard Cat (Normal Cat)|Dragon Cat]] and other longer-ranged attackers. Spamming [[Cow Cat (Normal Cat)|Giraffe Cats]] is another way to take him down easily. It is highly recommended to use [[Surfer Cat (Super Rare Cat)|Castaway Cat]]
+
+Once the Shibalien is dead, the remaining peons pose no threat and you can claim victory.
+
+==Trivia==
+*This stage is most likely underwater because the intro to this chapter says the [[:Category:Alien Enemies|Aliens]] sunk Japan. However, on the in-game map, some of Japan appears above water.
+*Unlike other [[Into the Future]] stages, Japan's base is not a modified version of its [[Empire of Cats]] counterpart. In the [[Japan (Empire of Cats)|Japan]] stage of Empire of Cats, the base was a [[wikipedia:Maiko|''maiko'']] in front of [[wikipedia:Kinkaku-ji|Kinkaku-ji]], but here it's the sunken ruin of the [[wikipedia:Tokyo Tower|Tokyo Tower]], which originally appeared in [[Bermuda (Empire of Cats)|stage 35]] of [[Nyanko Daisensou|BCJP]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-01.html
+*https://battlecats-db.com/stage/s03004-01.html
+*https://battlecats-db.com/stage/s03005-01.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

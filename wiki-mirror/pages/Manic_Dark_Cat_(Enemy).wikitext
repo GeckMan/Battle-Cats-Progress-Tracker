@@ -1,0 +1,66 @@
+:''For the Cat Unit, see [[Crazed Axe Cat (Super Rare Cat)]]. For the weaker boss that must be beaten first, see [[Crazed Axe Cat (Enemy)]].''
+'''Manic Dark Cat''' (大狂乱の暗黒ネコ ''Dai Kyōran no Ankoku Neko'', '''Insane Dark Cat''') is a [[:Category:Traitless Enemies|Traitless]] enemy found in [[Unjust War (Deadly)|Unjust War]]. It was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Manic Dark Cat
+|image = E 244.png
+|appearance = [[Unjust War (Deadly)]]
+[[Infernal Tower/Floor 33|Infernal Tower - Floor 33]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+This enemy has rapid, powerful attacks at medium range, with enough [[Freeze|freeze]] uptime to render its targets completely helpless, making it a very tough adversary. However, it's the least of your worries in its appearances compared to the nasty threats backed by it. Once all the support dies down, its health disappears at a surprisingly quick rate. Note the fewer knockbacks and health compared to [[Crazed Axe Cat (Enemy)|Crazed Axe Cat]] and lack of [[:Category:Dark Enemies|Dark]] trait.
+
+==Strategy==
+:''For strategies, see [[Unjust War (Deadly)|Unjust War]]''.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Axe Maniac: [[Unjust War (Deadly)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 33|Floor 33]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manic Dark Cat
+|Health = 2100000
+|Attack Power = 6800
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 7
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 8
+|Ability = {{AbilityIcon|Freeze}} 65% chance to [[Freeze|freeze]] Cat Units for 150f <sub>5 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+244 e.png|Manic Dark Cat's spritesheet
+IdleManicDark.gif|Manic Dark Cat's walking animation
+</gallery>
+
+==Trivia==
+*This is the only Manic Cat to have less health than their [[Crazed Axe Cat (Enemy)|crazed enemy]] equivalent.
+
+==Reference==
+*https://battlecats-db.com/enemy/246.html
+
+----
+{{EnemyNav|Manic Eraser Cat|Manic Macho Legs}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]

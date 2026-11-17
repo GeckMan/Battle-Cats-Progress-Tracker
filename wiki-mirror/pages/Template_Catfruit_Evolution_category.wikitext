@@ -1,0 +1,7 @@
+<includeonly><onlyinclude>{{#if:{{{fruit|}}}|[[Category:Cats evolving using {{#switch:1
+|{{#invoke:string|count|{{{fruit}}}|Fruit}} = {{#invoke:string|replace|{{{fruit}}}|Fruit| Catfruit}}
+|{{#invoke:string|count|{{{fruit}}}|Seed}} = {{#invoke:string|replace|{{{fruit}}}|Seed| Catfruit Seeds}}
+|{{#invoke:string|count|{{{fruit}}}|Stone}} = {{#invoke:string|replace|{{{fruit}}}|Stone| Behemoth Stones}}
+|{{#invoke:string|count|{{{fruit}}}|Gem}} = {{#invoke:string|replace|{{{fruit}}}|Gem| Behemoth Gems}}
+|1 = {{{fruit}}}
+}}]]}}</onlyinclude></includeonly>

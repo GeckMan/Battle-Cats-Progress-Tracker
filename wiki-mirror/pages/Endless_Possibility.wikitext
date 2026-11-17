@@ -1,0 +1,54 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Glowstick Guys|Doge Dark|Gory Dark|Shadow Boxer K|Hatsune Miku XVI}}
+'''Endless Possibility''' is the first stage in [[Hatsune Miku Collaboration Event#Weekend Concert: Day 2|Weekend Concert: Day 2]].
+
+{{Stage Info
+|stage name = [[File:rc139.png]]
+[[File:Mapsn211 00 c en.png]]
+|stage location = [[File:Mapname211 c en.png]]
+|energy = 150
+|enemy castle hp = 240,000 HP
+|enemies = {{Magnification|Glowstick Guys|100%
+|Doge Dark|200%
+|Gory Dark|100%
+|Shadow Boxer K|100%}}
+|boss = {{Magnification|Hatsune Miku XVI|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 4,500 XP
+|width = 4,200
+|max enemies = 15
+|jpname = Infinite Possibilities
+|script = 無限の可能性
+|romaji = Mugen no Kanōsei
+|star = 1
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#Weekend Concert: Day 2|Weekend Concert: Day 2]]
+|difficulty = ★6
+|prev stage = N/A
+|next stage = [[Imagine With Me]]
+}}
+
+==Battleground==
+*10 [[Glowstick Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 5~15 seconds<sup>150f~450f</sup>.
+*5 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Gory Dark]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Gory Dark]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Gory Dark]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hatsune Miku XVI (Enemy)|Hatsune Miku XVI]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 30~40 seconds<sup>900f~1,200f</sup>.
+**Infinite [[Glowstick Guys]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**10 [[Glowstick Guys]] spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+**1 [[Shadow Boxer K]] spawns after 46.67 seconds<sup>1,400f</sup>.
+**1 [[Shadow Boxer K]] spawns after 26.67 seconds<sup>800f</sup>.
+**1 [[Shadow Boxer K]] spawns.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02211-01.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

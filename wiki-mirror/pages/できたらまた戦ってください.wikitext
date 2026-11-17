@@ -1,0 +1,60 @@
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Gabriel|Zoge|Angelic Gory|Zir Zeal|Zang Roo|Sojiro Seta}}
+'''できたらまた戦ってください''' is the fifth and final stage in [[Rurouni Kenshin Collaboration Event#天剣・瀬田宗次郎|天剣・瀬田宗次郎]].
+
+{{Stage Info
+|stage name = [[File:rc014.png]]
+[[File:Mapsn274 04 c ja.png]]
+|stage location = [[File:Mapname274 c ja.png]]
+|energy = 140
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Gabriel|300%
+|Zoge|250%
+|Angelic Gory|200%
+|Zir Zeal|250%
+|Zang Roo|200%}}
+|boss = {{Magnification|Sojiro Seta|8,500/4,000%}}
+|enemies2 = {{Magnification|Gabriel|450%
+|Zoge|375%
+|Angelic Gory|300%
+|Zir Zeal|375%
+|Zang Roo|300%}}
+|boss2 = {{Magnification|Sojiro Seta|12,750/6,000%}}
+|score reward = '''3,800''': 300,000 XP<br>
+'''2,200''': 100,000 XP<br>
+'''500''': [[Catamin]] [C] +3
+|XP = 4,200 XP
+|width = 6,000
+|max enemies = 20
+|jpname = ?
+|script = できたらまた戦ってください
+|romaji = ?
+|star = 2
+|event = [[Rurouni Kenshin Collaboration Event]]
+|event-chapter = [[Rurouni Kenshin Collaboration Event#天剣・瀬田宗次郎|天剣・瀬田宗次郎]]
+|prev stage = [[勝負あり、かな]]
+|next stage = N/A
+}}
+
+==Battleground==
+*3 [[Gabriel]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Zoge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Angelic Gory]] spawns after 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sojiro Seta (Enemy)|Sojiro Seta]] spawns as the boss.
+**Infinite [[Gabriel]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Zir Zeal]]s spawn, delay 73.33~80 seconds<sup>2,200f~2,400f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] spawn after 3.33 seconds<sup>100f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**5 [[Zoge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**1 [[Zang Roo]] spawns after 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02274-05.html
+
+{{Rurouni Kenshin}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]

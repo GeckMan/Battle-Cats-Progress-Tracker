@@ -1,0 +1,86 @@
+{{JPExclusive}}
+:''This article is about the enemy. For the Cat Unit, see [[U.F.O. Cat (Rare Cat)]].''
+'''Yakisoba U.F.O. Cat''' (ネコ焼そばU.F.O., ''Neko Yakisoba U.F.O.'') is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Nissin U.F.O. Collaboration Event]]. It was added in [[Version 9.5 Update|Version 9.5]].
+
+{{Enemy Info
+|name = Yakisoba U.F.O. Cat
+|image = E 508.png
+|appearance = [[Nissin U.F.O. Collaboration Event]]
+|money drop = 200円 - 790円
+}}
+
+==Enemy==
+A [[:Category:Floating Enemies|Floating]] peon with melee range and chance to slow cats. It doesn't have much health and deals low damage, but can become dangerous near the final stages of [[U.F.O. Corps Strikes!]].
+
+==Strategy==
+Outside of U.F.O. Corps Strikes!, it has very low magnifications, and shouldn't be worried about, as most things will be able to kill it and survive its attacks. In said [[Gauntlet]], it can go up to '''600,000 health''' and '''30,000 damage''', requiring specific anti-[[:Category:Anti-Floating Cats|Floating]] Cats to deal with it, with [[Mer-Cat (Rare Cat)|Cameraman Cat]] and [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] being great non-Uber options for dishing out damage. [[Windy (Uber Rare Cat)|Windy]], along with any other anti-Floating [[:Category:Nuker-class Cats|Nukers]], will all work well, as they can take off large chunks of their health, if not outright killing them.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Nissin U.F.O. Collaboration Event#U.F.O. Strikes!|U.F.O. Strikes!]]:
+**[[Open the Lid and Pour Out the Sauce]] (25%)
+**[[Pour Hot Water and Wait 3 Minutes]] (50%)
+**[[Finish by Mixing the Sauce]] (100%)
+*[[U.F.O. Corps Strikes!]]:
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 1~4|① How to Make Without Reading]] (1%, 25%)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 1~4|② Search For Hot Water Line]] (1%, 49%)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 1~4|③ Add Hot Water Without Opening the Pouch]] (1%, 73%)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 1~4|④ Not Enough Hot Water]] (1%, 96%)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑤ Accidentally Forget]] (120%)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑥ Missed the Sauce]] (500% HP/250% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑦ Lid That Opens]] (1,000% HP/500% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑧ How Many Minutes?]] (1,500% HP/750% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑨ The Sink]] (2,000% HP/1,000% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 5~10|⑩ Noodles Thrown Into the Sink]] (3,000% HP/1,500% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑪ Protect the Back of the Lid]] (5,000% HP/2,500% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑫ Blue Glue Bag Disappear!]] (7,778% HP/3,889% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑬ Forgotten Chopsticks]] (10,556% HP/5,278% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑭ Mixing Power]] (13,333% HP/6,667% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑮ Slowly Sinking]] (16,111% HP/8,056% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑯ First Bite]] (18,889% HP/9,444% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑰ Cloudy Glasses]] (21,667% HP/10,833% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑱ Shining Smile with Blue Glue]] (24,444% HP/12,222% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑲ Smell That Remains]] (27,222% HP/13,611% AP)
+**[[U.F.O. Corps Strikes!/Levels 1~20#Stages 11~20|⑳ Feast!]] (30,000% HP/15,000% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Yakisoba U.F.O. Cat
+|Health = 2000
+|Attack Power = 200
+|Attack Range = 170
+|Attack Type = Area
+|Time Between Attacks = 97
+|Movement Speed = 8
+|Knockback = 4
+|Foreswing = 18
+|Backswing = 8
+|Ability = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+508 e.png|Yakisoba U.F.O. Cat's spritesheet
+YakisobaUFO.gif|Yakisoba U.F.O. Cat's attack animation
+IdleYakisobaUFO.gif|Yakisoba U.F.O. Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/510.html
+
+----
+{{EnemyNav|Messier|Yakisoba Face}}
+----
+
+{{Nissin U.F.O.}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

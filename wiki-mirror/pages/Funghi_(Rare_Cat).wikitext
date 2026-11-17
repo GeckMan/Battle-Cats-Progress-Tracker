@@ -1,0 +1,130 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Funghi (Enemy)]].''
+'''Funghi''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 5.2 Update|Version 5.2]] and can be obtainable during the [[Neo Mushroom Garden Collaboration Event]]. It can be unlocked from any of the stages in [[Neo Mushroom Garden Collaboration Event#A Fungal Challenge|A Fungal Challenge]].
+
+{{Cat Info
+|ID = 277
+|rarity = RR
+|name1 = Funghi
+|name2 = Funghi 'n' Cat
+}}
+
+==Evolution==
+Evolves into '''Funghi 'n' Cat''' at level 10.
+
+==Strategy/Usage==
+Funghi is a pretty standard meatshield, low cost, fast recharge and practically non-existent health and attack, however, Funghi has one interesting stat that sets it apart: its range.
+
+Funghi's higher than average range for a meatshield of 200 allows it to stack up behind your other meatshields, acting as a safety net for your ranged attackers incase the enemies manage to push through your other meatshields. This use is still very niche, as it only practically applies in stages where the main threats have low range and can't damage units past it with abilities like [[Long Distance]] or [[Wave Attack]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 277
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni277 f00.png
+|Image2 = Uni277 c00.png
+|Name1 = Funghi
+|Desc1 = Edible fungus aiming to rule the<br>table as the staple food. Cheap to<br>produce, so send 'em en masse!
+|Name2 = Funghi 'n' Cat
+|Desc2 = Cutting-edge science allowed<br>him to grow a Cat? Cheap to<br>produce, so send 'em en masse!
+|Name1 (JP) = なめこ
+|Desc1 (JP) = NEOなめこ栽培キットから参戦！<br>食卓制覇をもくろむ刹那的な食用キノコ<br>生産コストが安いので量産が可能
+|Transl1 (JP) = Battle participant from NEO Nameko Cultivation Kit!
+Funghi that plans to conquer the dinner table as the ultimate food.<br>
+Cheap production cost, so can be mass produced.
+|Name2 (JP) = なめこ&にゃんこ
+|Desc2 (JP) = NEOなめこ栽培キットから参戦！<br>特技の増殖でなぜか頭にネコが生えてきた<br>生産コストが安いので量産が可能
+|Transl2 (JP) = Battle participant from NEO Nameko Cultivation Kit!
+For some reason, increasing skill allowed it to grow a cat on its head.<br>
+Cheap production cost, so can be mass produced.
+|Name1 (TW) = 菇菇
+|Desc1 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>企圖稱霸餐桌的食用菇菇<br>生產成本低可以大量生產
+|Name2 (TW) = 菇菇&貓咪
+|Desc2 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>用繁殖特技使頭上長出了貓咪<br>生產成本低可以大量生產
+|Name1 (KR) = 나메코
+|Desc1 (KR) = NEO 나메코 재배 킷트에서 참전!<br>식탁 점령을 꾀하는 식용 버섯<br>생산 코스트가 저렴해서 대량생산 가능
+|Name2 (KR) = 나메코&냥코
+|Desc2 (KR) = NEO 나메코 재배 킷트에서 참전!<br>특기인 증식으로 머리 위에 냥코가 자라났다<br>생산 코스트가 저렴해서 대량생산 가능
+}}
+
+==Cost==
+*Chapter 1: 60¢
+*Chapter 2: 90¢
+*Chapter 3: 120¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Funghi
+|Normal Base HP = 110
+|Normal Base AP = 20
+|Normal Range = 150
+|Normal Foreswing = 52
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 113
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 60
+|Normal Recharge = 180
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Funghi 'n' Cat
+|Evolved Base HP = 110
+|Evolved Base AP = 10
+|Evolved Range = 200
+|Evolved Foreswing = 52
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 113
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 60
+|Evolved Recharge = 180
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 110 HP
+|val-Normal-Attack Power = 20 damage<br>(5.31 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 113f <sub>3.77 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 52f <sup>1.73s</sup><br>(61f <sup>2.03s</sup> backswing)
+|val-Normal-Recharge Time = 6 ~ 2 seconds
+|val-Normal-MaxHP = 1,870 HP
+|val-Normal-MaxAttack = 340 damage<br>(90.27 DPS)
+|val-Evolved-Health = 1,870 HP
+|val-Evolved-Attack Power = 170 damage<br>(29.82 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 52f <sup>1.73s</sup><br>(61f <sup>2.03s</sup> backswing)
+|val-Evolved-Recharge Time = 6 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni277 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/278.html
+
+----
+{{CatNav|Sunny Neneko|Tanky}}
+----
+
+{{Neo Mushroom Garden}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Single Attack Cats]]

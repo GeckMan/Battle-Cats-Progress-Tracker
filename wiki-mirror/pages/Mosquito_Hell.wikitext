@@ -1,0 +1,77 @@
+{{EnemiesAppearing|Hippoe|Metal Hippoe|Teacher Bear|Fireworks Guys (High-Yield)|Fireworks Guys (Low-Yield)|St. Pigge the 2nd|Pigge|Festive Otter}}
+'''Mosquito Hell''' is the fourth stage in [[Summer Break Cats|Summer Diary]].
+
+{{Stage Info
+|stage name = [[File:rc060.png]]
+[[File:Mapsn115 03 s en.png]]
+|stage location = [[File:Mapname115 s en.png]]
+|energy = 70
+|enemy castle hp = 100,000 HP
+|enemies = {{Magnification|Hippoe|200%
+|Metal Hippoe|100%
+|Teacher Bear|200%
+|Fireworks Guys (High-Yield)|100%
+|Fireworks Guys (Low-Yield)|100%
+|St. Pigge the 2nd|100%
+|Pigge|200%
+|Festive Otter|100%}}
+|boss = {{Magnification|Pigge|200%}}
+|enemies2 = {{Magnification|Hippoe|300%
+|Metal Hippoe|150%
+|Teacher Bear|300%
+|Fireworks Guys (High-Yield)|150%
+|Fireworks Guys (Low-Yield)|150%
+|St. Pigge the 2nd|150%
+|Pigge|300%
+|Festive Otter|150%}}
+|boss2 = {{Magnification|Pigge|300%}}
+|enemies3 = {{Magnification|Hippoe|400%
+|Metal Hippoe|200%
+|Teacher Bear|400%
+|Fireworks Guys (High-Yield)|200%
+|Fireworks Guys (Low-Yield)|200%
+|St. Pigge the 2nd|200%
+|Pigge|400%
+|Festive Otter|200%}}
+|boss3 = {{Magnification|Pigge|400%}}
+|treasure = - [[Awa-Odori Cat (Rare Cat)|Awa-Odori Cat]] (4%, 1 time)
+|score reward = '''6,500''': 150,000 XP<br>
+'''4,000''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''500''': 30,000 XP
+|XP = 2,100 XP
+|width = 4,800
+|max enemies = 9
+|jpname = Deathfight with Aedes mosquitoes
+|script = やぶ蚊との死闘
+|romaji = Yabuka to no shitō
+|star = 3
+|event = [[Summer Break Cats|Summer Festival]]
+|event-chapter = [[Summer Break Cats#Summer Diary|Summer Diary]]
+|difficulty = ★4
+|prev stage = [[Candy Apple Dentistry]]
+|next stage = [[Sparkler Heaven]]
+}}
+
+==Battleground==
+*5 [[Hippoe]]s spawn after 0.07 seconds<sup>2f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Metal Hippoe]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Teacher Bear]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Teacher Bear]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Fireworks Guys (High-Yield)]] spawn after 50 seconds<sup>1,500f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[Fireworks Guys (Low-Yield)]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 50~66.67 seconds<sup>1,500f~2,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Pigge]] spawns as the boss.
+**5 [[St. Pigge the 2nd]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**Infinite [[Pigge]]s spawn, delay 30~60 seconds<sup>900f~1,800f</sup>.
+**3 [[Festive Otter]]s spawn, delay 25 seconds<sup>750f</sup>.
+
+==Strategy==
+Simple meatshielding with your long ranged attackers is enough. You may use [[:Category:Anti-Red Cats|Anti-Red]] cats (e.g. [[Axe Cat (Normal Cat)|Axe Cat]] or [[Fish Cat (Normal Cat)|Fish Cat]]) to deal with St. Pigge the 2nd if you like.
+
+==Reference==
+*https://battlecats-db.com/stage/s01115-04.html
+
+{{Seasonal}}
+[[Category:Summer Diary Stages]]
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

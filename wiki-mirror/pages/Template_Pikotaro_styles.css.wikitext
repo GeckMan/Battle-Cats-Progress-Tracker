@@ -1,0 +1,7 @@
+.ranger-navbox.pikotaro {
+	--bg-navbox-title: linear-gradient(to right, hsl(195, 80%, 49%) 0%, hsl(195, 80%, 54%) 100%);
+	--bg-sub-table-title: #ee81ad;
+	--bg-group-name: hsl(200, 75%, 40%);
+}
+
+/* [[Category:Template stylesheets]] */

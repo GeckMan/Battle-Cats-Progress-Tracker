@@ -1,0 +1,196 @@
+{{EnemiesAppearing|Those Guys|Trolly Blogger|Cerberus Kids|Chief Peng}}
+<tabber>
+Labour Lv.1~5 =
+{{Stage Info
+|stage name = [[File:Rc001.png]]
+[[File:Mapsn028 00 a en.png]]
+|stage location = [[File:Mapname028 a en.png]]
+|enemies = {{Magnification|Those Guys|0
+|Trolly Blogger|0
+|Cerberus Kids|0
+|Chief Peng|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,600
+|max enemies = 50
+|jpname = Labor Lv.X
+|script = 労働 Lv.X
+|romaji = Rōdō Lv.X
+|event = [[November Gauntlet]]
+|event-chapter = [[November Gauntlet]]
+|require = Clear [[Loving Labour (Monthly Event)|Loving Labor]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 3.33~5.33 seconds<sup>100f~160f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 5 seconds<sup>150f</sup>, delay 5.33~7.33 seconds<sup>160f~220f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~5.33 seconds<sup>100f~160f</sup>.
+*2 [[Chief Peng]]s spawn after 90 seconds<sup>2,700f</sup>, delay 0.8 seconds<sup>24f</sup>.
+*4 [[Chief Peng]]s spawn after 70 seconds<sup>2,100f</sup>, delay 0.8 seconds<sup>24f</sup>.
+*3 [[Chief Peng]]s spawn after 50 seconds<sup>1,500f</sup>, delay 0.8 seconds<sup>24f</sup>.
+*2 [[Chief Peng]]s spawn after 30 seconds<sup>900f</sup>, delay 20.8 seconds<sup>624f</sup>.
+*1 [[Chief Peng]] spawns after 10 seconds<sup>300f</sup>.
+
+|-|
+Labour Lv.6~10 =
+{{Stage Info
+|stage name = [[File:Rc001.png]]
+[[File:Mapsn028 00 a en.png]]
+|stage location = [[File:Mapname028 a en.png]]
+|enemies = {{Magnification|Those Guys|0
+|Trolly Blogger|0
+|Cerberus Kids|0
+|Chief Peng|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5,200
+|max enemies = 50
+|jpname = Labor Lv.X
+|script = Labour Lv.X
+|romaji = Rōdō Lv.X
+|event = [[November Gauntlet]]
+|event-chapter = [[November Gauntlet]]
+|require = Clear [[Loving Labour (Monthly Event)|Loving Labor]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 2~3.33 seconds<sup>60f~100f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 5 seconds<sup>150f</sup>, delay 3.33~4.67 seconds<sup>100f~140f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 6.67 seconds<sup>200f</sup>, delay 4.67~6.67 seconds<sup>140f~200f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 10~133.33 seconds<sup>300f~400f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 80 seconds<sup>2,400f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*4 [[Chief Peng]]s spawn after 20 seconds<sup>600f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Chief Peng]]s spawn after 40.8 seconds<sup>1,224f</sup>, delay 20.8 seconds<sup>624f</sup>.
+*2 [[Chief Peng]]s spawn after 61.6 seconds<sup>1,848f</sup>, delay 20.8 seconds<sup>624f</sup>.
+*1 [[Chief Peng]] spawns after 82.4 seconds<sup>2,472f</sup>.
+*When the base reaches 99% HP:
+**1 [[Chief Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**1 [[Chief Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**1 [[Chief Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+</tabber>
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Labour Lv.
+! colspan="4" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Trolly Blogger]]
+! scope="col" |[[Cerberus Kids]]
+! scope="col" |[[Chief Peng]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|400%
+|100%
+|100%
+|200%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|556%
+|111%
+|111%
+|244%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|712%
+|122%
+|122%
+|288%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|868%
+|133%
+|133%
+|332%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|1,024%
+|144%
+|144%
+|376%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|1,180%
+|155%
+|155%
+|420%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|1,336%
+|166%
+|166%
+|464%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|1,492%
+|177%
+|177%
+|508%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|1,648%
+|188%
+|188%
+|552%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|1,800%
+|200%
+|200%
+|600%
+|100
+|Rare Ticket +1
+| 1,900
+|-
+|}
+
+==Strategy==
+The basic way to beat these stages is to bring several strong meatshields and at least one Cat with both Area Attack and more than 200 range. Just be careful with the restriction. Early game players should be able to slowly, but easily clear these stages with Bahamut Cat, while more advanced players should make use of [[Vaulter Cat (Super Rare Cat)|Polevaulter Cat]] and [[Crazed Gross Cat (Super Rare Cat)|Crazed Sexy Legs]] to quickly clear these stages.
+
+==Reference==
+*https://battlecats-db.com/stage/s24028.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

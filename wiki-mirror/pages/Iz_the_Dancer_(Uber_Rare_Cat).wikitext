@@ -1,0 +1,231 @@
+{{TranslationNeeded}}
+:''For the [[EPICFEST (Gacha Event)|EPICFEST]] counterpart, see [[Iz the Dancer of Grief (Uber Rare Cat)]].''
+'''Iz the Dancer''' is a [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[UBERFEST (Gacha Event)|UBERFEST]] event. She was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 641
+|rarity = UR
+|name1 = Iz the Dancer
+|name2 = Iz the Alluring Dancer
+}}
+
+==Evolution==
+Evolves into '''Iz the Alluring Dancer''' at level 10.
+
+==Strategy/Usage==
+A slightly awkward unit, Iz takes the role of a [[Classification|midrange rusher]] with massive damage to all traits. Though she has low base DPS for an Uber Rare, a strengthened Iz can deal damage comparable to [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] when facing traited enemies. This, combined with a meager 46-second recharge time, makes Iz the Alluring Dancer one of the strongest rushers in the game in terms of raw stats.
+
+Her role, however, is not quite the same as A. Bahamut and similar units. Instead, somewhat like [[Dom Cat (Special Cat)|Dom Cat]], she specializes in attacking continuously to quickly defeat or knockback enemies, thus relieving the pressure on the frontline, instead of specializing in quickly defeating targets. She is thus excellent against hordes of small and medium enemies, but also against tanky backliners who mainly rely on health and range, such as [[Elder Sloth]], [[Dark Emperor Nyandam]] and [[Daboo of the Dead]], as she is quite hard to knock back.
+
+Versatility is what she lacks, however, as it usually doesn't take much to put her life on the line, making her heavily reliant on outranging enemies and not being sniped between attacks. Luckily, her Omni Strike offers a solution, allowing her to deliver somewhat consistent damage even when heavy meatshielding prevents enemies from coming in her range after the first hit of her attack.
+
+{{Job|Classification = Midranger & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 641
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni641 f00.png
+|Image2 = Uni641 c00.png
+|Name1 = Iz the Dancer
+|Desc1 = Dancer who wants to make people smile with her art.<br>She just doesn't realize the power within herself.<br>Massive Omnistrike damage to any enemy with a trait.
+|Name2 = Iz the Alluring Dancer
+|Desc2 = Graceful dancer who entrances with elegant moves.<br>Conjures magical power delivers Massive Damage<br>to Traited enemies. Stronger after taking damage!
+|Name1 (JP) = 踊り子イズ (Odoriko Izu, Iz the Dancer)
+|Desc1 (JP) = ダンスで皆に笑顔を届けたい見習いの踊り子<br>自分の中に眠っているチカラをまだ知る由もない<br>属性を持つ敵に超ダメージを与える(全方位攻撃)
+|Transl1 (JP) = An apprentice dancer who wants to bring smiles to everyone's face with her dancing.<br>She doesn't yet know the power that lies dormant within her.<br>Deals super damage to Traited enemies (Omnidirectional Attack)
+|Name2 (JP) = 魅惑の舞姫イズ (Miwaku no Maihime Izu, Iz the Alluring Dancing Princess)
+|Desc2 (JP) = 美しい舞いで人々を魅了する優しき踊り子<br>踊りが生み出すふしぎな魔力で属性を持つ敵に<br>超ダメージを与え、体力低下で攻撃力が上昇する
+|Transl2 (JP) = A gentle dancer who charms people with her beautiful dance<br>The magical power created by her dance deals super damage to Traited enemies<br>and increases her attack power when her health decreases.
+|Name1 (TW) = 歡笑揮舞孃
+|Desc1 (TW) = 透過跳舞帶給大家歡笑的學徒小舞孃<br>殊不知自己體內有著強大力量<br>可以給予有屬性的敵人超大傷害(全方位攻擊)
+|Name2 (TW) = 魅惑舞姬孃
+|Desc2 (TW) = 以優美舞姿魅惑人們的溫柔小舞孃<br>舞蹈產生出的神奇魔力可以給予有屬性的<br>敵人超大傷害，體力低下時攻擊力將會上升
+|Name1 (KR) = 무희 이즈
+|Desc1 (KR) = 춤으로 모두에게 미소를 전하고 싶은 견습 무희<br>아직 내면에 잠들어 있는 힘을 모르고 있다<br>속성을 가진 적에 초 데미지를 입힌다 (전방위 공격)
+|Name2 (KR) = 매혹의 무희 이즈
+|Desc2 (KR) = 아름다운 춤으로 사람들을 매료시키는 상냥한 무희<br>춤이 만들어 내는 신기한 마력으로 속성을 가진 적에<br>초 데미지를 입히고 체력이 감소하면 공격력이 상승한다
+}}
+
+==Cost==
+*Chapter 1: 2,100¢
+*Chapter 2: 3,150¢
+*Chapter 3: 4,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Iz the Dancer
+|Normal Base HP = 2800
+|Normal Base AP = 250,250,250
+|Normal Range = 300
+|Normal Foreswing = 40,60,80
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 131
+|Normal Speed = 20
+|Normal KB = 2
+|Normal Cost = 2100
+|Normal Recharge = 1640
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 40f <sup>1.33s</sup>, 4,250 at 60f <sup>2s</sup>, 4,250 at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~350)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Evolved Name = Iz the Alluring Dancer
+|Evolved Base HP = 3500
+|Evolved Base AP = 300,300,300
+|Evolved Range = 300
+|Evolved Foreswing = 40,60,80
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 131
+|Evolved Speed = 20
+|Evolved KB = 2
+|Evolved Cost = 2100
+|Evolved Recharge = 1640
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,100 at 40f <sup>1.33s</sup>, 5,100 at 60f <sup>2s</sup>, 5,100 at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -350~350)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,800 HP
+|val-Normal-Attack Power = 750 damage<br>(171.76 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Normal-Movement Speed = 20
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 54.67 ~ 45.87 seconds
+|val-Normal-MaxHP = 47,600 HP
+|val-Normal-MaxAttack = 12,750 damage<br>(2,919.85 DPS)
+|val-Evolved-Health = 59,500 HP
+|val-Evolved-Attack Power = 15,300 damage<br>(3,503.82 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Evolved-Movement Speed = 20
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 54.67 ~ 45.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Merc Storia Collaboration Event|Merc Storia]]===
+Iz appears in Merc Storia as a 5★ unit introduced in the ninth collaboration between the two games. She can be obtained through the collaboration gacha during the event.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+! scope="col" colspan="2" style="text-align: center;"|「興舞導く踊炎」イズ ("Kyōmai Michibiku Odorien " Izu, "Alluring Flame Dancer" Iz)
+|-
+|[[File:Pic-unit c9 1.png|center|300px]]
+|[[File:c9 1.mp4|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats at Level 145
+|-
+! scope="col" |Element
+|Fire
+|-
+! scope="col" |Weapon
+|Strike
+|-
+! scope="col" |Rarity
+|5★
+|-
+! scope="col" |Affiliation
+|Cat Country
+|-
+! scope="col" |Gender
+|Female
+|-
+! scope="col" |Age
+|?
+|-
+! scope="col" |Growth Rate
+|Average
+|-
+! scope="col" |HP
+|11,160
+|-
+! scope="col" |ATK
+|13,035
+|-
+! scope="col" |Target(s)
+|2
+|-
+! scope="col" |Hit(s)
+|3
+|-
+! scope="col" |Movement Speed
+|50
+|-
+! scope="col" |Attack Speed
+|3.68
+|-
+! scope="col" |Single DPS
+|3.542.1
+|-
+! scope="col" |Total DPS
+|7.084.2
+|-
+! scope="col" |Reach
+|30
+|-
+! scope="col" |Toughness
+|86
+|-
+! scope="col" style="text-align: center;"|Description
+! scope="col" style="text-align: center;"|Translation
+|-
+|美しい舞でギャラリーを魅了する、心優しい<br>踊り子。何よりも踊ることが好きな上に、ダ<br>ンスの力で皆を笑顔にするという夢もあるた<br>め、日々の修練を決して欠かさない。<br>イスの舞を知る者たちは、口をそろえてこう<br>語る。彼女の踊りには不思議な力がある、見<br>ているだけで自然に踊りたくなるのだ、と。
+|?
+|}
+</div>
+
+{{Gallery|Uni641 f00}}
+
+==Trivia==
+*Iz the Dancer is a reference to ''[[wikipedia:The Dancing Girl of Izu|The Dancing Girl of Izu]]'' or ''The Izu Dancer'', a short story by [[wikipedia:Yasunari Kawabata|Yasunari Kawabata]].
+**In Japanese, her name is read as ''Izu''; it would seem the change to ''Iz'' was a mistranslation.
+*Appearance-wise, Iz the Dancer is best described as a feline version of [[wikia:hakushon-daimao:Akubi|Akubi]] from the anime ''[[wikipedia:The Genie Family|Hakushon Daimaō]]'', also known as ''The Genie Family''.
+*Unlike many other [[UBERFEST (Gacha Event)|UBERFEST]] units but similar to EPICFEST ones, Iz doesn't have a "young" version as her first form, with vastly different roles and stats, instead having both forms share the same cost and recharge time, with the Evolved Form being a direct improvement.
+*Prior to [[Version 14.1 Update|Version 14.1]], her Evolved Form's English description erroneously described her ability as Insane Damage rather than Massive Damage.
+
+==Reference==
+*https://battlecats-db.com/unit/642.html
+
+----
+{{CatNav|Ann & Cat|Lucifer the Fallen}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Strengthen ability]]
+[[Category:Multi-Hit Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Weaken Immunity]]

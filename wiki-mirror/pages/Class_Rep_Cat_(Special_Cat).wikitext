@@ -1,0 +1,135 @@
+'''Class Rep Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Heartbeat Catcademy (Event Gacha)|Heartbeat Catcademy]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 12.1 Update|Version 12.1]].
+
+{{Cat Info
+|ID = 696
+|rarity = EX
+|name1 = Class Rep Cat
+|name2 = Stealth Class Rep Cat
+}}
+
+==Evolution==
+Evolves into '''Stealth Class Rep Cat''' at level 10.
+
+==Strategy/Usage==
+While he may seem like a decent crowd controller at first glance, there are usually better options against his target traits. [[Flower Cat (Special Cat)|Bombercat]] absolutely knocks him out of the park against Dark enemies, and [[Apple Cat (Super Rare Cat)|iCat]] can do the same against Red enemies, not to mention [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]], who can also Slow Red enemies, but has much superior stats.
+
+That being said, however, he does have a niche in very specific stages, such as [[Red Rectangle (Cats of the Cosmos)|Red Rectangle]] in Chapter 3, and [[Restriction Stage]]s that only allow Heartbeat Catcademy units.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Catcademy Anthem|Research Power Up (L)|Secret Crush Cat|Tomboy Lion Cat|Chalkboard Eraser Cat|Class Rep Cat|Principal Cat|jpname=にゃんこ学園校歌斉唱}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 696
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni696 f00.png
+|Image2 = Uni696 c00.png
+|Name1 = Class Rep Cat
+|Desc1 = A serious Cat who is representative of his class. Wants<br>to become a splendid salaryman. May Slow Red and<br>Dark enemies.
+|Name2 = Stealth Class Rep Cat
+|Desc2 = Borrowed his older brother's hand-me-downs because<br>his uniform is in the wash.<br>May Slow Red and Dark enemies.
+|Name1 (JP) = ネコ委員長 (Neko Iinchō, Cat Chairman)
+|Desc1 (JP) = クラス委員長を勤める真面目なネコ<br>将来は立派なサラリーマンになりたいと思っている<br>たまに赤い敵と黒い敵の動きを遅くする
+|Transl1 (JP) = A serious Cat who is the class president<br>Wants to be a proud salaryman in the future<br>Occasionally Slows movement of Red enemies and Dark enemies
+|Name2 (JP) = 裏ネコ委員長 (Ura Neko Iinchō, Reverse Cat Chairman)
+|Desc2 (JP) = いつもの制服が洗濯されてしまったので<br>お兄ちゃんのお下がりで登校したネコ<br>たまに赤い敵と黒い敵の動きを遅くする
+|Transl2 (JP) = His usual uniform was being washed so this Cat<br>went to school with his brother's hand-me-downs<br>Occasionally Slows movement of Red enemies and Dark enemies
+|Name1 (TW) = 班長貓
+|Desc1 (TW) = 擔任班長且認真向學的貓咪<br>將來打算成為優秀的上班族<br>有時候可讓紅色敵人與黑色敵人的動作變慢
+|Name2 (TW) = 叛逆班長貓
+|Desc2 (TW) = 因為平常穿的制服被拿去洗了<br>改穿哥哥留下來的制服去上學的貓咪<br>有時候可讓紅色敵人與黑色敵人的動作變慢
+|Name1 (KR) = 고양이 반장
+|Desc1 (KR) = 반장으로 뽑힌 모범생 고양이<br>장래 희망은 어엿한 샐러리맨이 되는 것<br>가끔 빨간 적과 검은 적의 움직임을 느리게 한다
+|Name2 (KR) = 불량 고양이 반장
+|Desc2 (KR) = 세탁한 교복이 마르지 않아<br>형이 입던 교복을 입고 등교한 고양이<br>가끔 빨간 적과 검은 적의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 460¢
+*Chapter 2: 690¢
+*Chapter 3: 920¢
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Class Rep Cat
+|Normal Stats Level = 1+29
+|Normal Base HP = 860
+|Normal Base AP = 175
+|Normal Range = 250
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 67
+|Normal Attack Length = 51
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 460
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = Red,Dark
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Evolved Name = Stealth Class Rep Cat
+|Evolved Stats Level = 1+29
+|Evolved Base HP = 860
+|Evolved Base AP = 175
+|Evolved Range = 250
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 67
+|Evolved Attack Length = 51
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 460
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.1+45
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 860 HP
+|val-Normal-Attack Power = 175 damage<br>(58.99 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 89f <sub>2.97 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 14,620 HP
+|val-Normal-MaxAttack = 2,975 damage<br>(1,002.81 DPS)
+|val-Evolved-Health = 14,620 HP
+|val-Evolved-Attack Power = 2,975 damage<br>(1,002.81 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 89f <sub>2.97 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(29f <sup>0.97s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni696 f00}}
+
+==Trivia==
+*Class Rep Cat's description is likely a reference to [[Salaryman Cat (Rare Cat)|Salaryman Cat]].
+*Class Rep Cat is incorrectly labelled as Chairman Cat on the [[Heartbeat Catcademy (Event Gacha)|Heartbeat Catcademy]] Event Gacha.
+
+==Reference==
+*https://battlecats-db.com/unit/697.html
+
+----
+{{CatNav|Killer Tank Cat|Ancient Egg: N107}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]

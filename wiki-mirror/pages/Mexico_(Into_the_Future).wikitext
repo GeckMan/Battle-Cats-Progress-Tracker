@@ -1,0 +1,127 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Mexico (Into the Future)/Outbreak|here]].''
+'''Mexico''' is the 37th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc009.png]]
+|stage location = [[File:Mexico.png]]
+'''Into the Future'''
+|energy = 56
+|energy2 = 66
+|energy3 = 76
+|enemy castle hp = 175,000 HP
+|enemy castle hp2 = 262,500 HP
+|enemy castle hp3 = 350,000 HP
+|enemies = {{Magnification|Shibalien|100%
+|Hyppoh|100%
+|Doge|500%
+|Those Guys|500%
+|One Horn|500%
+|Shy Boy|300%
+|Pigge|500%}}
+|enemies2 = {{Magnification|Shibalien|250%
+|Those Guys|1,000%
+|One Horn|1,000%
+|Trolly Blogger|100%
+|Shy Boy|600%
+|Ginger Snache|100%}}
+|boss2 = {{Magnification|Bore|200%}}
+|enemies3 = {{Magnification|Shibalien|600%
+|Those Guys|1,500%
+|One Horn|1,500%
+|Trolly Blogger|200%
+|Shy Boy|800%
+|Ginger Snache|200%
+|Maawth|600%}}
+|boss3 = {{Magnification|Bore|250%}}
+|treasure = - [[Treasure|Sombrero]]
+|treasure2 = - [[Treasure|Sombrero]]
+|treasure3 = - [[Treasure|Sombrero]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': Sniper Cat +1
+|score reward2 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': Sniper Cat +1
+|score reward3 = '''5,500''': [[Cat Food]] +10<br>
+'''4,500''': Sniper Cat +1
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 8
+|XP = 11,800 XP
+|width = 5,500
+|jpname = Mexico
+|script = メキシコ
+|romaji = Mekishiko
+|jptreasure = Cactus
+|twname = Mexico
+|twscript = 墨西哥
+|twromaji = Mòxīgē
+|twtreasure = Sombrero
+|krname = Mexico
+|krscript = 멕시코
+|krromaji = Megsiko
+|krtreasure = Sombrero
+|chapter = [[Into the Future]]
+|prev stage = [[Jamaica (Into the Future)|Jamaica]]
+|next stage = [[Hollywood (Into the Future)|Hollywood]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Shibalien|Hyppoh|Doge|Those Guys|One Horn|Shy Boy|Pigge}}
+*5 [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 8~12 seconds<sup>240f~360f</sup>.
+*3 [[Hyppoh]]s spawn after 20 seconds<sup>600f</sup>, delay 16~24 seconds<sup>480f~720f</sup>.
+*Infinite [[Doge]]s spawn after 22 seconds<sup>660f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Those Guys]] spawn after 23.33 seconds<sup>700f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*3 [[One Horn]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*3 [[One Horn]]s spawn after 40 seconds<sup>1,200f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*3 [[Shy Boy]]s spawn after 60 seconds<sup>1,800f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Pigge]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 29.33~36.67 seconds<sup>880f~1,100f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Shibalien|Those Guys|One Horn|Trolly Blogger|Shy Boy|Ginger Snache|Bore}}
+*5 [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 8~12 seconds<sup>240f~360f</sup>.
+*Infinite [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[One Horn]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[One Horn]] spawns after 26.67 seconds<sup>800f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 40 seconds<sup>1,200f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*1 [[Shy Boy]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 80% HP:
+**1 [[Bore]] spawns as the boss.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Shibalien|Those Guys|One Horn|Trolly Blogger|Shy Boy|Ginger Snache|Maawth|Bore}}
+*5 [[Shibalien]]s spawn after 10 seconds<sup>300f</sup>, delay 8~12 seconds<sup>240f~360f</sup>.
+*Infinite [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[One Horn]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[One Horn]] spawns after 26.67 seconds<sup>800f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 40 seconds<sup>1,200f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*1 [[Shy Boy]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 80% HP:
+**1 [[Bore]] spawns as the boss.
+**Infinite [[Shibalien]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**1 [[Maawth]] spawns.
+
+==Strategy==
+==='''Chapter 1'''===
+At the start of the battle, spam meatshields to prevent enemies from hitting your base and level up your wallet. Once the Shy Boys appear, spam your heavy hitters and back them up with meatshields. Don't worry, the Shy Boys are the main threats here, and they have only 300% strength magnification (100% less than in [[Twin Peaks]]), so they should be easy to stall and kill. Make sure to kill them before One Horn reaches your cats, or else they will protect the Shy Boys and attack your meatshields, making the battle harder. If you do so, you've already won this stage.
+
+==='''Chapter 2'''===
+The main threat in this stage is a Bore, but it does not spawn until the base is hit. As such, it is best to stall the beginning of the stage until you have enough money to defend against the Bore. Meatshielding alone is not enough to stop the Bore, so using [[:Category:Crowd-Controller-class Cats|Crowd-Controllers]] is almost required. [[Pirate Cat (Rare Cat)|Pirate Cat]], [[Witch Cat (Rare Cat)|Witch Cat]] and [[Apple Cat (Super Rare Cat)|Apple Cat]] are greatly recommended for this purpose.
+
+Stall out the beginning until a Shy Boy appears. On its own, it will not push very quickly, so use it as an opportunity to begin stacking attackers and Crowd-Controllers. Once you reach the base and the Bore spawns, your stack should hopefully be large enough to  prevent Bore from pushing altogether. Any [[:Category:Wave Attack Cats|Wave Attackers]] you may own will help with clearing the peons.
+
+==='''Chapter 3'''===
+Do the same thing than in chapter 2, but bring more anti red-units to stop Bore, with the fact that the use of Pirate Cat is not recommended since it will push him and your stack will die by Maawth.
+
+[[Witch Cat (Rare Cat)|Sorceress Cat]], [[Apple Cat (Super Rare Cat)|Face Cat]] and [[Hip Hop Cat (Super Rare Cat)|Dancing Flasher Cat]] are good options for this, however don't forget to bring a good anti-alien against Maawth.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-37.html
+*https://battlecats-db.com/stage/s03004-37.html
+*https://battlecats-db.com/stage/s03005-37.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

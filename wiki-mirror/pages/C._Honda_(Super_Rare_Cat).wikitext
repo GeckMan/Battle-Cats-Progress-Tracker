@@ -1,0 +1,132 @@
+'''C. Honda''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Cat Info
+|ID = 576
+|rarity = SR
+|name1 = C. Honda
+|name2 = C. Honda CC
+}}
+
+==Evolution==
+Evolves into '''C. Honda CC''' at level 10.
+
+==Strategy/Usage==
+This cat is designed to be used as an anti-Angel tanker. He is especially effective against [[Angelic Sleipnir]] and [[Sunfish Jones]] due to their knockback and slow abilities respectively. However, Angels are often spammed, so C. Honda's long recharge time is a massive barrier to its effective use. [[Rocker Cat (Rare Cat)|Ramen Cat]] essentially does the same job but better even without considering [[Talents]] and the boost from duplicates, due to its stats being much higher relative to cost and recharge time.
+
+{{Job|Classification = Tanker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 576
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni576 f00.png
+|Image2 = Uni576 c00.png
+|Name1 = C. Honda
+|Desc1 = A Cat driven to spread the love of Sumo.<br>Winner of the Li'l Sumo Tournament for 20<br>years running. Tough vs Angels (Area Attack)
+|Name2 = C. Honda CC
+|Desc2 = Cultivated his body to become a testament to<br>the healing powers of Japan's hot spring culture.<br>Tough vs Angels (Area Attack)
+|Name1 (JP) = ネコモンド本田 (Nekomondo Honda)
+|Desc1 (JP) = 相撲の魅力を世界に広めるネコ<br>ちびっこ相撲大会20年連続優勝の記録を持つ<br>天使に打たれ強い(範囲攻撃)
+|Transl1 (JP) = The cat who spreads the appeal of sumo to the world<br>Has a record of winning the Chibi Sumo Tournament for 20 consecutive years<br>Strong enough to resist Angels (Range Attack)
+|Name2 (JP) = ネコモンド本田CC (Nekomondo HondaCC)
+|Desc2 (JP) = 日本文化を伝えたくて「心技体」を鍛え上げたネコ<br>熱々のちゃんこと熱湯風呂を世界に広めたい<br>天使に打たれ強い(範囲攻撃)
+|Transl2 (JP) = A cat who trained his "mind, technique and body" to pass on Japanese culture<br>Wants to spread hot chanko and boiling water baths to the world<br>Strong enough to resist Angels (Range Attack)
+|Name1 (TW) = C. HONDA
+|Desc1 (TW) = 將相撲的魅力推向世界的Cat<br>小小相撲大賽連續優勝20年紀錄保持者<br>對上天使敵人很耐打(範圍攻擊)
+|Name2 (TW) = C. HONDA CC
+|Desc2 (TW) = 為傳達日本文化而鍛鍊「心技體」的Cat<br>想向世界推廣熱騰騰的相撲鍋跟熱溫泉<br>對上天使敵人很耐打(範圍攻擊)
+|Name1 (KR) = C. Honda
+|Desc1 (KR) = 스모의 매력을 세계로 알리는 고양이<br>꼬맹이 스모 대회 20년 연속 우승의 기록을 가졌다<br>천사에 맷집이 좋다 (범위 공격)
+|Name2 (KR) = C. Honda CC
+|Desc2 (KR) = 일본 문화를 전파시키고 싶어 정신력, 기술, 체력을 기른 고양이<br>뜨끈한 창코나베와 열탕 온천을 세계에 알리고 싶다<br>천사에 맷집이 좋다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 840¢
+*Chapter 2: 1,260¢
+*Chapter 3: 1,680¢
+
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = C. Honda
+|Normal Base HP = 2800
+|Normal Base AP = 40,40,40
+|Normal Range = 110
+|Normal Foreswing = 13,19,25
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 38
+|Normal Speed = 18
+|Normal KB = 2
+|Normal Cost = 840
+|Normal Recharge = 760
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (680 at 13f <sup>0.43s</sup>, 680 at 19f <sup>0.63s</sup>, 680 at 25f <sup>0.83s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Evolved Name = C. Honda CC
+|Evolved Base HP = 2800
+|Evolved Base AP = 40,40,40
+|Evolved Range = 110
+|Evolved Foreswing = 13,19,25
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 38
+|Evolved Speed = 18
+|Evolved KB = 2
+|Evolved Cost = 840
+|Evolved Recharge = 760
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (680 at 13f <sup>0.43s</sup>, 680 at 19f <sup>0.63s</sup>, 680 at 25f <sup>0.83s</sup>)<br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Immune to Knockback|Immune to Slow}} [[Immune to Knockback]] and [[Immune to Slow|Slow]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,800 HP
+|val-Normal-Attack Power = 120 damage<br>(94.74 DPS)
+|val-Normal-Attack Range = 110
+|val-Normal-Attack Frequency = 38f <sub>1.27 seconds</sub>
+|val-Normal-Movement Speed = 18
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 13f <sup>0.43s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 47,600 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(1,610.53 DPS)
+|val-Evolved-Health = 47,600 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(1,610.53 DPS)
+|val-Evolved-Attack Range = 110
+|val-Evolved-Attack Frequency = 38f <sub>1.27 seconds</sub>
+|val-Evolved-Movement Speed = 18
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 13f <sup>0.43s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni576 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/577.html
+
+----
+{{CatNav|M. Bison|Balrog Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Resistant ability]]
+[[Category:Multi-Hit Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Collaboration Event Cats]]

@@ -1,0 +1,147 @@
+'''Million-Dollar Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Download Celebration! (Event Gacha)|Download Celebration!]] Event Gacha. It was added in [[Version 11.0 Update|Version 11.0]].
+
+{{Cat Info
+|ID = 635
+|rarity = EX
+|name1 = Million-Dollar Cat
+|name2 = Hundred-Million-Dollar Cat
+}}
+
+==Evolution==
+Evolves into '''Hundred-Million-Dollar Cat''' at level 10.
+
+==Strategy/Usage==
+Million-Dollar Cat is a fairly situational unit. It has a 100% chance to perform [[Critical Hit]]s at 350 range, with no drawn out foreswing animation like units such as [[Cheerleader Cat (Super Rare Cat)|Soba Cat]] or [[Crazed Moneko (Special Cat)|Corrupted Moneko]]. However, it has a 16 second attack rate, mirroring the long attack rate seen with [[Sunny Neneko (Super Rare Cat)|Sunny Neneko]]. In that respect, Million-Dollar Cat performs best when handling enemies in low quantities. Its abysmal damage also prevents its usage against the upper echelon of Metal enemies with 1k+ HP, such as [[Super Metal Hippoe]] or [[Sir Metal Seal]]. This doesn't mean its entirely useless though; it can easily pick off higher ranged threats in [[Pure Gold R.Ost]]/[[Koronium]] (so long as the latter doesn't get a chance to unleash a [[Wave Attack]]). While one might assume you can use it to take care of [[CyberFace]], Million-Dollar Cat's damage is so low that it needs to be at least level '''46''' to kill it.
+
+Additionally, its [[Money Up]] ability provides an incentive to use Million-Dollar Cat over other Critical Hitters when facing off against [[Metal Hippoe]], [[Metal Doge]], or any of the aforementioned low HP Metal threats. Considering how many Metal stages tend to be stringent with cash, it finds excellent usage in stages with even just a few annoying Metal peons.
+
+{{Job|Classification = Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 635
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni635 f00.png
+|Image2 = Uni635 c00.png
+|Name1 = Million-Dollar Cat
+|Desc1 = A plaque worth $1,000,000 sent to prize<br>winners, with extra appeal from well-toned legs.<br>Critical Attack, extra money from defeated enemies
+|Name2 = Hundred-Million-Dollar Cat
+|Desc2 = Plaque worth $100,000,000 sent to grand prize<br>winners, with extra appeal from fishnet stockings.<br>Critical Attack, extra money from defeated enemies
+|Name1 (JP) = 100万ドルのネコ (100 Man Doru no Neko, 1 Million Dollar Cat)
+|Desc1 (JP) = 勝者に贈られる高額賞金のプレート<br>を運ぶ美しきネコ。その脚には100万ドルの価値あり<br>クリティカルを放ち、敵を倒したときにお金を多くもらえる
+|Transl1 (JP) = A beautiful cat carries a plaque with a large sum of money<br>given to the winner. Its legs are worth a million dollars<br>Gains more money and critical hits when defeating an enemy
+|Name2 (JP) = 1億ドルのネコ (1 Oku Doru no Neko, 100 Million Dollar Cat)
+|Desc2 (JP) = 勝者に贈られる超高額賞金のプレート<br>を運ぶ、1億ドルの懸賞金がかけられた前科持ちのネコ<br>クリティカルを放ち、敵を倒したときにお金を多くもらえる
+|Transl2 (JP) = A plaque with a very high prize given to the winner<br>with a criminal record with a $100 million bounty on its head<br>Gains more money and critical hits when defeating an enemy
+|Name1 (TW) = 一百萬的貓
+|Desc1 (TW) = 搬運贈送給贏家的高額獎金獎牌<br>的美麗貓咪。那雙美腿價值一百萬<br>可發出會心一擊，打倒敵人的時候可以得到很多金錢
+|Name2 (TW) = 一億元的貓
+|Desc2 (TW) = 搬運贈送給贏家的超高額獎金獎牌<br>被懸賞一億元帶有前科的貓咪<br>可發出會心一擊，打倒敵人的時候可以得到很多金錢
+|Name1 (KR) = 100만불 고양이
+|Desc1 (KR) = 승자에게 주어지는 고액 상금의 플레이트를 나르는<br>아름다운 고양이. 그 다리는 100만 불의 가치가 있어<br>크리티컬을 내며, 적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+|Name2 (KR) = 1억불 고양이
+|Desc2 (KR) = 승자에게 주어지는 고액 상금의 플레이트를 나르는<br>1억 불의 현상금이 달려있는 전과가 있는 고양이<br>크리티컬을 내며, 적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+|Name3 (KR) = 1억불의 고양이
+|Desc3 (KR) = 승자에게 주어지는 고액 상금의 플레이트를 나르는<br>1억 불의 현상금이 달려있는 전과가 있는 고양이<br>크리티컬을 내며, 적을 쓰러뜨렸을 때 머니를 많이 얻을 수 있다
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|MIX
+|0
+|500
+|1400
+|2600
+|4100
+|5900
+|8000
+|10400
+|13100
+|16100
+|600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Million-Dollar Cat
+|Normal Base HP = 400
+|Normal Base AP = 6
+|Normal Range = 350
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 493
+|Normal Attack Length = 12
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 990
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Evolved Name = Hundred-Million-Dollar Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 6
+|Evolved Range = 350
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 493
+|Evolved Attack Length = 12
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 990
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 100% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Money Up}} [[Money Up|Double money]] gained when defeating enemies
+|Lv.MAX = Lv.50+25
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 6 damage<br>(0.36 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 499f <sub>16.63 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(6f <sup>0.2s</sup> backswing)
+|val-Normal-Recharge Time = 33 ~ 24.2 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 102 damage<br>(6.13 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 102 damage<br>(6.13 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 499f <sub>16.63 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(6f <sup>0.2s</sup> backswing)
+|val-Evolved-Recharge Time = 33 ~ 24.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni635 f00}}
+
+==Trivia==
+*Million-Dollar Cat was originally obtainable from the [[Catnip Challenges]] during the [[Anniversary/9th Year|9th Anniversary Event]].
+*Million-Dollar Cat's bunny ears, heels and fishnet stockings in the Evolved Form are likely references to [[wikipedia:Playboy Bunny|Playboy Bunny]] waitresses.
+*Million-Dollar Cat has the second lowest base DPS in the game, beating out the long-time previous holder [[Balaluga (Uber Rare Cat)|Balalan Pasalan]] and itself only beaten by [[Healer (Special Cat)|Healer]].
+**However, its effective DPS caused by its guaranteed Critical Hits is only the third lowest, being higher than Balalan by 1 point.
+
+==Reference==
+*https://battlecats-db.com/unit/636.html
+
+----
+{{CatNav|White Knight Cyclops|Brainwashed Tank Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Cats with Money Up ability]]

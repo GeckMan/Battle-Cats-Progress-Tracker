@@ -1,0 +1,87 @@
+:''This article is about the enemy. For the Cat Unit, see [[Chun-Li (Uber Rare Cat)]].''
+'''Chun-Li''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Street Fighter Collaboration Event]]. She was added in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]].
+
+{{Enemy Info
+|name = Chun-Li
+|image = E 481.png
+|first appearance = [[Blue Jade (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+She sports high health but low attack power which is compensated by her lightning fast attack rate and a very annoying ability: 100% chance to [[Knockback|knockback]] all Cat Units. She has decent range too, making low range attackers very ineffective.
+
+==Strategy==
+To properly deal with Chun-Li you will need units with over 360 range such as [[Bahamut Cat (Special Cat)|Bahamut Cat]] or very fast units like [[Express Cat (Super Rare Cat)|Maglev Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[Blue Jade (Easy)|Blue Jade]] (2%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]: [[Blue Jade (Normal)|Blue Jade]] (10%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]:
+**[[Iron Cyclone (Hard)|Iron Cyclone]] (80%)
+**[[Blue Jade (Hard)|Blue Jade]] (100%)
+**[[Warrior of Nature (Hard)|Warrior of Nature]] (100%)
+**[[The Clawed Rondo (Hard)|The Clawed Rondo]] (110%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS CHUN-LI (Easy)]] (10%)
+**[[VS CHUN-LI (Expert)]] (100%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter (Easy)|Street Fighter (Easy)]]: [[Blue Jade (Easy)|Blue Jade]] (2%)
+*[[Street Fighter Collaboration Event#Street Fighter (Normal)|Street Fighter (Normal)]]:
+**[[Illuminating Flame (Normal)|Illuminating Flame]] (7%)
+**[[Blue Jade (Normal)|Blue Jade]] (10%)
+*[[Street Fighter Collaboration Event#Street Fighter (Hard)|Street Fighter (Hard)]]:
+**[[Iron Cyclone (Hard)|Iron Cyclone]] (80%)
+**[[Blue Jade (Hard)|Blue Jade]] (100%)
+**[[Warrior of Nature (Hard)|Warrior of Nature]] (100%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS CHUN-LI (Easy)]] (10%)
+**[[VS CHUN-LI (Expert)]] (100%)
+*[[Arena of Honor]]:
+**[[Arena of Honor/I Seek the Strongest (Oldest)|I Seek the Strongest]] (50%, 80%, 110%, 140%, 170%, 200%)
+**[[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] (25%, 55%, 80%, 110%, 140%, 170%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Chun-Li
+|Health = 360000
+|Attack Power = 5100
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 39
+|Movement Speed = 25
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 15
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">1,700</span> at 8f <sup>0.27s</sup>, <span class="scaled" data-type="ap">1,700</span> at 16f <sup>0.53s</sup>, <span class="scaled" data-type="ap">1,700</span> at 24f <sup>0.8s</sup>)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+481 e.png|Chun-Li's spritesheet
+IdleChun-Li.gif|Chun-Li's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/483.html
+
+----
+{{EnemyNav|Ryu|Guile}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemy Units]]

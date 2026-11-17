@@ -1,0 +1,131 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Black Hole (Cats of the Cosmos)/Outbreak|here]].''
+'''Black Hole''' is the 47th stage in [[Cats of the Cosmos]].
+
+{{Story Info
+|stage name = [[File:Sc046.png]]
+|stage location = [[File:Black Hole.png]]
+'''Cats of the Cosmos'''
+|energy = 95
+|energy2 = 105
+|energy3 = 115
+|enemy castle hp = 450,000 HP
+|enemy castle hp2 = 690,000 HP
+|enemy castle hp3 = 790,000 HP
+|enemies = {{Magnification|Doge Dark|600%
+|Star Peng|100%
+|Metal Doge|100%
+|Corporal Weyland|100%}}
+|boss = {{Magnification|Spacefish Jones|100%}}
+|enemies2 = {{Magnification|Doge Dark|800%
+|Star Peng|300%
+|Corporal Weyland|300%
+|Ribbo|100%}}
+|boss2 = {{Magnification|Spacefish Jones|300%}}
+|enemies3 = {{Magnification|Shibalien Elite|2,500%
+|Star Peng|2,500%
+|Mesocosmocyclone|900%
+|Axoloty|900%}}
+|boss3 = {{Magnification|Shibalien Elite|10%}}
+|treasure = - [[Treasure|Spacetime]]
+|max enemies = 9
+|restriction = Rarity: Only [[:Category:Special Cats|Special]], [[:Category:Rare Cats|Rare]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]]<br>
+Max # of Deployable Cats: 10
+|restriction2 = Rarity: Only [[:Category:Special Cats|Special]], [[:Category:Rare Cats|Rare]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]]<br>
+Max # of Deployable Cats: 10
+|restriction3 = Rarity: Only [[:Category:Special Cats|Special]], [[:Category:Rare Cats|Rare]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]]<br>
+Max # of Deployable Cats: 10
+|XP = 14,200 XP
+|width = 5,000
+|jpname = Black Hole
+|script = ブラックホール
+|romaji = Burakku Hōru
+|jptreasure = Space-time
+|twname = Black Hole
+|twscript = 黑洞
+|twromaji = Hēidòng
+|twtreasure = Space-time
+|krname = Black Hole
+|krscript = 블랙홀
+|krromaji = Beullaeghol
+|krtreasure = Construction
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[Andromeda (Cats of the Cosmos)|Andromeda]]
+|next stage = [[The Big Bang (Cats of the Cosmos)|The Big Bang]]
+}}
+
+==Restrictions==
+*Rarity: Only [[:Category:Special Cats|Special]], [[:Category:Rare Cats|Rare]], [[:Category:Uber Rare Cats|Uber Rare]] and [[:Category:Legend Rare Cats|Legend Rare]]
+*Max # of Deployable Cats: 10
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Doge Dark|Star Peng|Metal Doge|Corporal Weyland|Spacefish Jones}}
+*5 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Star Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Star Peng]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Star Peng]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Doge Dark]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Spacefish Jones]] spawns as the boss.
+**8 [[Doge Dark]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**5 [[Metal Doge]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**2 [[Corporal Weyland]]s spawn, delay 100 seconds<sup>3,000f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Doge Dark|Star Peng|Corporal Weyland|Ribbo|Spacefish Jones}}
+*5 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Star Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Star Peng]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Star Peng]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Doge Dark]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Spacefish Jones]] spawns as the boss.
+**8 [[Doge Dark]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**2 [[Corporal Weyland]]s spawn, delay 100 seconds<sup>3,000f</sup>.
+**1 [[Ribbo]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Shibalien Elite|Star Peng|Mesocosmocyclone|Axoloty}}
+*5 [[Shibalien Elite]]s (2,500%) spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*1 [[Star Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Star Peng]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Star Peng]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*4 [[Shibalien Elite]]s (2,500%) spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien Elite]] (10%) spawns as the boss.
+**4 [[Mesocosmocyclone]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67 seconds<sup>500f</sup>.
+**2 [[Axoloty|Axoloties]] spawn after 5.33 seconds<sup>160f</sup>, delay 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+This stage is not to be underestimated. Having all possible [[Anti-Starred Alien Treasures]] is required before facing this. Critters are greatly recommended for Chapter 1. The rarity restriction is similar to {{4c}} restrictions, albeit more lenient by allowing Ubers and Legend Rares.
+
+==='''Chapters 1 & 2'''===
+The key is to use fast-attacking units to deal with the [[Doge Dark]]s while facing the other enemies. Some very good non-[[:Category:Uber Rare Cats|Uber]] choices include: [[Bahamut Cat (Special Cat)|Awakened Bahamut]] to take care of the Star Pengs after getting some distance from the boss, [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] for damage, [[Jurassic Cat (Rare Cat)|Catasaurus]] for damage to Metal Doges and [[Rocker Cat (Rare Cat)|Ramen Cat]] for its high health and quick attacks.
+
+It is important that you don't push forward too much while dealing with the Star Pengs, otherwise the boss will cause trouble. For this reason, strong units without Area Attack are great here. Limiting your own attack power to prevent trouble with Spacefish Jones before the Star Pengs are dead may also help, but it all depends on your strategy and units. Despite everything, the stage is still very hard, so using your best Uber Rares, [[:Category:Anti-Alien Cats|anti-Alien]] or not, may help your strategy to work. Don't worry about Corporal Weyland, he should not cause much trouble, especially if you use resistant units.
+
+If you have issues with the Doge Darks, [[Dom Cat (Special Cat)|Dark Lazer]] and [[Teacher BearCat (Rare Cat)|Assassin BearCat]] can really help.
+
+==='''Chapter 3'''===
+For Chapter 3, the enemies have been completely switched so the strategy will be very different. It is essential to have all Anti-Starred Alien Treasures before attempting this.
+
+The three key units for this stage are [[Rover Cat (Rare Cat)|Catellite]], [[Psychocat (Rare Cat)|Corrupted Psychocat]] and [[Wheel Cat (Rare Cat)|Chill Cat]]. If your Chill Cat and Catellite are boosted enough you will not need any other units. Chill Cat with the Cost Down [[Talents|talent]] at a high level or maxed out is recommended. [[Bahamut Cat (Special Cat)|Awakened Bahamut]] and, if possible, [[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]] are also highly recommended. Other than that, Slow UP [[Cat Combo|combos]], Attack UP combos, Massive Damage UP combos and [[Li'l Gross Cat (Special Cat)|Li'l Macho Legs]] can also help. You should make sure to bait the Axoloties to attack early and far from your base as possible to give yourself enough ground, units like Courier Cat and [[Mr. (Special Cat)|Hyper Mr.]] are able to accomplish this easily thanks to their fast speed.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Black Hole map.png|Black Hole on the [[Cats of the Cosmos]] map
+</gallery>
+
+==Trivia==
+*Black Hole and [[Dogsville Annex (Merciless)|Dogsville Annex]] are the only [[Restriction Stage]]s to have two different restrictions.
+**Incidentally, both stages limit the possible Cat rarities and have a Cat limit of 10.
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-47.html
+*https://battlecats-db.com/stage/s03007-47.html
+*https://battlecats-db.com/stage/s03008-47.html
+
+{{StoryMode Stages}}
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Main Chapters Levels]]
+[[Category:Restriction Stages]]

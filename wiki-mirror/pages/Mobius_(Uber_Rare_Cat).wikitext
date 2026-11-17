@@ -1,0 +1,128 @@
+:''This article is about the Cat Unit. For the Enemy Unit, see [[Mobius (Enemy)]].''
+'''Mobius''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 5.10 Update|Version 5.10]] and can be unlocked by rolling the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Crash Fever Collaboration Event]].
+
+{{Cat Info
+|ID = 326
+|rarity = UR
+|name1 = Mobius
+|name2 = Miraculous Mobius
+}}
+
+==Evolution==
+Evolves into '''Miraculous Mobius''' at level 10.
+
+==Strategy/Usage==
+Mobius does a pretty good job against [[:Category:Red Enemies|Red]] enemies, standing at a good range, dealing decent DPS against them as well, in addition to knocking them back to gain breathing space, as some Red enemies like [[J.K. Bun Bun]], [[Bore]], [[One Horn]] and [[Capy]] are quite tanky and hard to knock back. This can, however, be bad in situations where they are backed up by backliners such as [[Professor A.]] or [[Dark Emperor Nyandam]].
+
+{{Job|Classification = Crowd-Controller & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 326
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni326 f00.png
+|Image2 = Uni326 c00.png
+|Name1 = Mobius
+|Desc1 = Earnest lady scholar with a strong heart,<br>dropping in from Crash Fever (Area Atk)<br>Huge damage/100% knockback vs Red
+|Name2 = Miraculous Mobius
+|Desc2 = Through dedicated effort she has perfected<br>her skills. A guest from Crash Fever. Huge<br>damage/100% knockback vs Red. (Area Atk)
+|Name1 (JP) = メビウス (Mebiusu, Mobius)
+|Desc1 (JP) = クラッシュフィーバーから参戦!<br>清楚で大人しめだが実は芯の強い女性学者<br>赤い敵に超ダメージを与え、必ずふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining the war from Crash Fever!<br>A neat and quiet but actually strong-minded female scholar<br>Deals super damage to Red enemies and always pushes them away (Area Attack)
+|Name2 (JP) = 奇跡の調和メビウス (Kiseki no Chōwa Mebiusu, Miraculous Harmony Mobius)
+|Desc2 (JP) = クラッシュフィーバーから参戦!<br>大人の女性に憧れて密かに自分磨きをしている<br>赤い敵に超ダメージを与え、必ずふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining the war from Crash Fever!<br>She is secretly improving herself, longing to become an adult woman<br>Deals super damage to Red enemies and always pushes them away (Area Attack)
+|Name1 (TW) = 莫比烏斯
+|Desc1 (TW) = 來自Crash Fever！<br>看來優雅穩重且又堅強的女學者<br>給予紅色敵人超大傷害，且必定打飛他們（範圍攻擊）
+|Name2 (TW) = 奇蹟調和莫比烏斯
+|Desc2 (TW) = 來自Crash Fever！<br>嚮往著成爲一名成熟女性而不停磨練自己<br>給予紅色敵人超大傷害，且必定打飛他們（範圍攻擊）
+|Name1 (KR) = 뫼비우스
+|Desc1 (KR) = 크래시 피버에서 참전!<br>청초하고 어른스럽지만 실은 외유내강형인 여성학자<br>빨간 적에 초 데미지를 입히며 반드시 날려버린다 (범위 공격)
+|Name2 (KR) = 기적의 조화 뫼비우스
+|Desc2 (KR) = 크래시 피버에서 참전!<br>성인 여성을 동경하여 은밀히 자기 계발에 힘써왔다<br>빨간 적에 초 데미지를 입히며 반드시 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,980¢
+*Chapter 2: 4,470¢
+*Chapter 3: 5,960¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mobius
+|Normal Base HP = 1880
+|Normal Base AP = 1280
+|Normal Range = 445
+|Normal Foreswing = 71
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 121
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 2980
+|Normal Recharge = 3960
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Miraculous Mobius
+|Evolved Base HP = 2480
+|Evolved Base AP = 1680
+|Evolved Range = 445
+|Evolved Foreswing = 71
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 121
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 2980
+|Evolved Recharge = 3960
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,880 HP
+|val-Normal-Attack Power = 1,280 damage<br>(202.11 DPS)
+|val-Normal-Attack Range = 445
+|val-Normal-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 71f <sup>2.37s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 132 ~ 123.2 seconds
+|val-Normal-MaxHP = 31,960 HP
+|val-Normal-MaxAttack = 21,760 damage<br>(3,435.79 DPS)
+|val-Evolved-Health = 42,160 HP
+|val-Evolved-Attack Power = 28,560 damage<br>(4,509.47 DPS)
+|val-Evolved-Attack Range = 445
+|val-Evolved-Attack Frequency = 190f <sub>6.33 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 71f <sup>2.37s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 132 ~ 123.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni326 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/327.html
+
+----
+{{CatNav|Welterweight Cat|Belial}}
+----
+
+{{Crash Fever}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]

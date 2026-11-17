@@ -1,0 +1,144 @@
+{{Unobtainable}}
+{{TWExclusive}}
+:''This article is about the Cat Unit. For the enemy units, see [[HAPPI (Enemy)]] or [[HAPPI & Maji Cat & Cat (Enemy)]].''
+'''HAPPI''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained when beating any stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]. It was added in [[Version 8.7 Update#Update 8.7.5|Version 8.7.5]]. [[True Form]] gives it the ability to target [[:Category:Angel Enemies|Angel]] enemies.
+
+{{Cat Info
+|ID = 492
+|rarity = RR
+|name1 = HAPPI
+|name2 = HAPPI & Maji Cat
+|name3 = HAPPI & Maji Cat & Cat
+}}
+
+==Evolution==
+Evolves into '''HAPPI & Maji Cat''' at level 10.
+
+Evolves into '''HAPPI & Maji Cat & Cat''' when obtained from any stage in [[Kaohsiung Rapid Transit Orange Line]].
+
+==Strategy/Usage==
+HAPPI is a unit built to rush into the frontlines and deal damage, not dissimilar to that of [[Express Cat (Super Rare Cat)|Express Cat]]'s. However, when compared to Express Cat it underperforms on nearly every level. HAPPI's only in-battle advantages are a negligible range increase and a crowd-control ability, which is practically useless due to its long attack cycle and relatively long recharge time. Compare this to Express having double the speed, five times the damage and superior ability even in its weakest form. HAPPI's only saving grace is that it is a Rare Cat, allowing it to be used in 4-crown stages.
+
+{{Job|Classification = Rusher & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 492
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni492 f00.png
+|Image2 = Uni492 c00.png
+|Image3 = Uni492 s00.png
+|Name1 (TW) = HAPPI
+|Desc1 (TW) = 從高雄捷運來參戰！<br>搭乘高雄捷運，帶大家看見高雄的美好！<br>有時候會打飛紅色敵人
+|Transl1 (TW) = Joining the war from Kaohsiung Rapid Transit!<br>Take the Kaohsiung Rapid Transit to show you the beauty of Kaohsiung!<br>Sometimes pushes away Red enemies
+|Name2 (TW) = HAPPI&麻吉貓
+|Desc2 (TW) = 從高雄捷運來參戰！<br>加入新成員，一起帶大家發現高雄新魅力！<br>有時候會打飛紅色與黑色敵人
+|Transl2 (TW) = Joining the war from Kaohsiung Rapid Transit!<br>Join the new members and let's discover the new charm of Kaohsiung!<br>Sometimes pushes away Red and Dark enemies
+|Name3 (TW) = HAPPI&麻吉貓&貓咪
+|Desc3 (TW) = 從高雄捷運來參戰！<br>3位成員共同亮相，跟大家一起高雄玩翻天！<br>有時候會打飛紅色黑色與天使敵人
+|Transl3 (TW) = Joining the war from Kaohsiung Rapid Transit!<br>The 3 members of the team will appear together and have fun with everyone in Kaohsiung!<br>Sometimes pushes away Red and Black and Angel enemies
+}}
+
+==Cost==
+*Chapter 1: 300元
+*Chapter 2: 450元
+*Chapter 3: 600元
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = HAPPI
+|Normal Base HP = 600
+|Normal Base AP = 200
+|Normal Range = 150
+|Normal Foreswing = 1
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 201
+|Normal Speed = 30
+|Normal KB = 1
+|Normal Cost = 300
+|Normal Recharge = 840
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Evolved Name = HAPPI & Maji Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 200
+|Evolved Range = 150
+|Evolved Foreswing = 1
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 201
+|Evolved Speed = 30
+|Evolved KB = 1
+|Evolved Cost = 300
+|Evolved Recharge = 840
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|True Name = HAPPI & Maji Cat & Cat
+|True Base HP = 600
+|True Base AP = 200
+|True Range = 150
+|True Foreswing = 1
+|True Attack Cooldown = 0
+|True Attack Length = 201
+|True Speed = 30
+|True KB = 1
+|True Cost = 300
+|True Recharge = 840
+|True Attack Type = Single
+|True Targets = Red,Dark,Angel
+|True Abilities = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 200 damage<br>(29.85 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 1f <sup>0.03s</sup><br>(200f <sup>6.67s</sup> backswing)
+|val-Normal-Recharge Time = 28 ~ 19.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(507.46 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(507.46 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 1f <sup>0.03s</sup><br>(200f <sup>6.67s</sup> backswing)
+|val-Evolved-Recharge Time = 28 ~ 19.2 seconds
+|val-True-Health = 10,200 HP
+|val-True-Attack Power = 3,400 damage<br>(507.46 DPS)
+|val-True-Attack Range = 150
+|val-True-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-True-Movement Speed = 30
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 1f <sup>0.03s</sup><br>(200f <sup>6.67s</sup> backswing)
+|val-True-Recharge Time = 28 ~ 19.2 seconds
+}}
+
+{{Gallery|Uni492 f00}}
+
+{{UnitViewer|cat}}
+
+----
+{{CatNav|Rei Ayanami (???)|Gaia the Creator}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats requiring Awakening for True Form]]
+[[Category:Anti-Angel Cats]]

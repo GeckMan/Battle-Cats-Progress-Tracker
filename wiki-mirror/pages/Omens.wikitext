@@ -1,0 +1,103 @@
+'''Omens''' (オーメンズ, ''Ōmenzu'', '''Omens''') are an [[:Category:Aku Enemies|Aku]]/[[:Category:Colossus Enemies|Colossus]] variant of [[Cerberus Kids]] that appears in [[Attack of the Omens]]. They were added in [[Version 12.2 Update|Version 12.2]].
+
+{{Enemy Info
+|name = Omens
+|image = E 637.png
+|first appearance = [[Attack of the Omens]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Omens rapidly deliver three closely-spaced multi-hits in each short attack cycle at a whopping 430 range. Each attack has a 30% chance to freeze and generate a level 1 [[Surge Attack|Surge]], further escalating the threat they pose. The long Surge spawn area reaching up to 950 puts even super-backliners such as [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] at risk if Omens are given the chance to push even slightly.
+
+==Strategy==
+:''See [[Attack of the Omens/Three Omens Lv.1~20]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 637
+|Type = [[:Category:Aku Enemies|Aku]]/[[:Category:Colossus Enemies|Colossus]]
+|Image1 = Enemy icon 637.png
+|Name1 = Omens
+|Desc1 = A secret lab used unethical genome editing to<br>improve the Cerberus Kids, unparalleled in size,<br>with Surge and Freezing attacks.<br>Lethality increases with each battle.
+|Name1 (JP) = オーメンズ (Ōmenzu, Omens)
+|Desc1 (JP) = 古代研究所の極秘技術によってゲノム改造され<br>巨大な超生命体と化したケルベローズ。<br>たまに連携が合うと烈波を放ち、動きを<br>止めてくる。戦うごとに凶暴性が増す。
+|Transl1 (JP) = The top-secret technology of the [[Laboratory of Relics|Ancient Laboratory]]<br>allowed the [[Cerberus Kids|Cerbellows]] to become gigantic Super-Lifeforms via genome remodeling.<br>They occasionally cooperate to release Intense Waves and stop movement.<br>Becomes more ferocious with each battle.
+|Name1 (TW) = 巨大三惡魔
+|Desc1 (TW) = 惡魔三兄弟被古代研究所的機密技術<br>進行了基因改造後所變成的巨大超生命體。<br>偶爾三人合作順利時會發射烈波、使對方<br>動作停止。凶暴程度會隨著戰鬥而增加。
+|Name1 (KR) = 오멘즈
+|Desc1 (KR) = 고대 연구소의 극비 게놈 기술로 개조되어<br>거대한 초생명체로 다시 태어난 케르베로즈.<br>가끔 팀워크가 맞아 떨어지면 열파를 내고<br>움직임을 멈추게 한다. 싸울 때마다 흉폭성이 증가
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Attack of the Omens]]:
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.1]] (100%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.2]] (111%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.3]] (122%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.4]] (133%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.5]] (144%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.6]] (155%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.7]] (166%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.8]] (177%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.9]] (188%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 1~10|Three Omens Lv.10]] (200%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.11]] (200%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.12]] (211%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.13]] (222%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.14]] (233%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.15]] (244%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.16]] (255%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.17]] (266%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.18]] (277%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.19]] (288%)
+**[[Attack of the Omens/Three Omens Lv.1~20#Three Omens 11~20|Three Omens Lv.MAX]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Omens
+|Health = 800000
+|Attack Power = 15000
+|Attack Range = 430
+|Attack Type = Area
+|Time Between Attacks = 44
+|Movement Speed = 7
+|Knockback = 4
+|Foreswing = 15
+|Backswing = 19
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">5,000</span> at 15f <sup>0.5s</sup>, <span class="scaled" data-type="ap">5,000</span> at 20f <sup>0.67s</sup>, <span class="scaled" data-type="ap">5,000</span> at 25f <sup>0.83s</sup>)<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] Cat Units for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Surge Attacks}} 30% chance to create a level 1 [[Surge Attack]] between 250 and 950 range
+|Element = Aku/Colossus
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+637 e.png|Omens' spritesheet
+</gallery>
+
+==Trivia==
+*Omens' Japanese name, Ōmenzu (オーメンズ), is a pun on 大 ''Ō'' (big), オーメンズ ''ōmenzu'' (omens) and メンズ ''menzu'' (men, mens or men's), referring to their [[:Category:Colossus Enemies|Colossus]] attribute/size, the bad omens the [[:Category:Aku Enemies|Aku]] bring and how they are a group of men.
+*They are the only Colossus enemy to have multiple orbs in their design instead of just one.
+
+==Reference==
+*https://battlecats-db.com/enemy/639.html
+
+----
+{{EnemyNav|Devil Wife|Mini White Cyclone}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Colossus Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Surge Attack Enemies]]

@@ -1,0 +1,123 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Greece (Into the Future)/Outbreak|here]].''
+'''Greece''' is the 14th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc032.png]]
+|stage location = [[File:Greece.png]]
+'''Into The Future'''
+|energy = 42
+|energy2 = 52
+|energy3 = 62
+|enemy castle hp = 35,000 HP
+|enemy castle hp2 = 52,500 HP
+|enemy castle hp3 = 70,000 HP
+|enemies = {{Magnification|Those Guys|200%
+|Croco|200%
+|Baa Baa|200%
+|Teacher Bear|200%}}
+|boss = {{Magnification|Metal Hippoe|100%}}
+|enemies2 = {{Magnification|Those Guys|600%
+|Croco|600%
+|Baa Baa|600%
+|Teacher Bear|600%
+|Shibalien|250%
+|Ursamajor|100%}}
+|boss2 = {{Magnification|Metal Hippoe|200%}}
+|enemies3 = {{Magnification|Those Guys|1,000%
+|Trolly Blogger|200%
+|Metal Hippoe|250%
+|Baa Baa|1,000%
+|Shibalien|500%
+|Teacher Bear|1,000%
+|Ursamajor|500%}}
+|boss3 = {{Magnification|Metal Hippoe|250%}}
+|treasure = - [[Treasure|Marble Pillar]]
+|treasure2 = - [[Treasure|Marble Pillar]]
+|treasure3 = - [[Treasure|Marble Pillar]]
+|score reward = '''8,000''': [[Cat Food]] +10<br>
+'''5,000''': Speed Up +1
+|score reward2 = '''8,000''': [[Cat Food]] +10<br>
+'''7,000''': Speed Up +1
+|score reward3 = '''7,000''': [[Cat Food]] +10<br>
+'''6,000''': Speed Up +1
+|max enemies = 5
+|max enemies2 = 5
+|max enemies3 = 8
+|XP = 4,900 XP
+|width = 4,800
+|jpname = Greece
+|script = ギリシャ
+|romaji = Girisha
+|jptreasure = Zeus's Nail Stain
+|twname = Italy
+|twscript = 義大利
+|twromaji = Yìdàlì
+|twtreasure = Italian Pasta
+|krname = Greece
+|krscript = 그리스
+|krromaji = Geuliseu
+|krtreasure = Ruins
+|chapter = [[Into the Future]]
+|prev stage = [[Italy (Into the Future)|Italy]]
+|next stage = [[Turkey (Into the Future)|Turkey]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Metal Hippoe|Those Guys|Croco|Baa Baa|Teacher Bear}}
+*1 [[Metal Hippoe]] spawns as the boss after 20 seconds<sup>600f</sup>.
+*Infinite [[Those Guys]] spawn after 25 seconds<sup>750f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Croco]]s spawn after 30 seconds<sup>900f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*3 [[Baa Baa]]s spawn after 60 seconds<sup>1,800f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Teacher Bear]] spawns after 100 seconds<sup>3,000f</sup>.
+*Infinite [[Baa Baa]]s spawn after 120 seconds<sup>3,600f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Metal Hippoe|Those Guys|Croco|Baa Baa|Teacher Bear|Shibalien|Ursamajor}}
+*1 [[Metal Hippoe]] spawns as the boss after 6.67 seconds<sup>200f</sup>.
+*Infinite [[Those Guys]] spawn after 11.67 seconds<sup>350f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Croco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*3 [[Baa Baa]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Teacher Bear]]s spawn after 50 seconds<sup>1,500f</sup>, delay 80~106.67 seconds<sup>2,400f~3,200f</sup>.
+*2 [[Shibalien]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Baa Baa]]s spawn after 100 seconds<sup>3,000f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ursamajor]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Metal Hippoe|Those Guys|Trolly Blogger|Baa Baa|Shibalien|Teacher Bear|Ursamajor}}
+*1 [[Metal Hippoe]] spawns as the boss.
+*Infinite [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*1 [[Metal Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*10 [[Baa Baa]]s spawn after 26.67 seconds<sup>800f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Shibalien]]s spawn after 30 seconds<sup>900f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Metal Hippoe]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*3 [[Teacher Bear]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ursamajor]] spawns.
+
+==Strategy==
+==='''Chapter 1'''===
+Any strategy that works for the [[Love, Metal Hippoe (Hard)|Love, Metal Hippoe]] should work here, including spamming [[Cow Cat (Normal Cat)|Giraffe Cat]]. Any [[:Category:Critical Hit Cats|Critical Hitters]] could also be useful, even [[Moneko (Special Cat)|Miss Moneko]]. Kill Teacher Bear with your normal lineup, using cats that outrange him like [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]].
+
+==='''Chapter 2 & 3'''===
+This stage can be beaten without having to kill the Ursamajor. Just try to [[Critical Hit|Crit]] the Metal Hippoe at the start (any Critical Hitter can work with enough trial and error, even [[Merc (Special Cat)|Merc]] or Miss Moneko) and rush down the base as fast as possible with Giraffe Cat, Dragon Cat, Crazed Bahamut Cat and [[Crazed Cow Cat (Super Rare Cat)|Crazed Giraffe Cat]] if you have him.
+
+==Gallery==
+<gallery>
+Wc033.png|Taiwanese version's base (Italy)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Italy'''; [[Italy (Into the Future)|stage 13]] is Monaco and Greece is moved to [[Turkey (Into the Future)|stage 15]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-14.html
+*https://battlecats-db.com/stage/s03004-14.html
+*https://battlecats-db.com/stage/s03005-14.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

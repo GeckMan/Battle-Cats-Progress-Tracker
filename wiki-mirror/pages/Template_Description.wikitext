@@ -1,0 +1,264 @@
+<includeonly><onlyinclude>
+<templatestyles src="Template:Description/styles.css" />
+<div class="unit-desc">
+{{#tag:tabber|
+<!--EN tab-->
+{{#if:{{{Name1|}}}|EN{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image1}}}|center|{{{Name1}}}]]
+{{!}} class="desc-label" {{!}} EN Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc1}}}
+{{!}}- class="{{#if:{{{Name2|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image2}}}|center|{{{Name2}}}]]
+{{!}} class="desc-label" {{!}} EN Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc2}}}
+{{!}}- class="{{#if:{{{Name3|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image3}}}|center|{{{Name3}}}]]
+{{!}} class="desc-label" {{!}} EN Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc3}}}
+{{!}}- class="{{#if:{{{Name4|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image4}}}|center|{{{Name4}}}]]
+{{!}} class="desc-label" {{!}} EN Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc4}}}
+{{!}}}
+}}
+<!--JP tab-->
+{{#if:{{{Name1 (JP)|}}}|{{!}}-{{!}}JP{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1 (JP)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl1 (JP)|}}}|4|2}}" {{!}} [[File:{{{Image1 (JP)|{{{Image1}}}}}}|center|{{{Name1 (JP)}}}]]
+{{!}} class="desc-label" {{!}} JP Description
+{{!}}-
+{{!}} class="desc-text" lang="ja" {{!}} {{{Desc1 (JP)}}}
+{{!}}- style="{{#if:{{{Transl1 (JP)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl1 (JP)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl1 (JP)}}}
+{{!}}- class="{{#if:{{{Name2 (JP)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2 (JP)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl2 (JP)|}}}|4|2}}" {{!}} [[File:{{{Image2 (JP)|{{{Image2}}}}}}|center|{{{Name2 (JP)}}}]]
+{{!}} class="desc-label" {{!}} JP Description
+{{!}}-
+{{!}} class="desc-text" lang="ja" {{!}} {{{Desc2 (JP)}}}
+{{!}}- style="{{#if:{{{Transl2 (JP)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl2 (JP)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl2 (JP)}}}
+{{!}}- class="{{#if:{{{Name3 (JP)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3 (JP)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl3 (JP)|}}}|4|2}}" {{!}} [[File:{{{Image3 (JP)|{{{Image3}}}}}}|center|{{{Name3 (JP)}}}]]
+{{!}} class="desc-label" {{!}} JP Description
+{{!}}-
+{{!}} class="desc-text" lang="ja" {{!}} {{{Desc3 (JP)}}}
+{{!}}- style="{{#if:{{{Transl3 (JP)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl3 (JP)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl3 (JP)}}}
+{{!}}- class="{{#if:{{{Name4 (JP)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4 (JP)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl4 (JP)|}}}|4|2}}" {{!}} [[File:{{{Image4 (JP)|{{{Image4}}}}}}|center|{{{Name4 (JP)}}}]]
+{{!}} class="desc-label" {{!}} JP Description
+{{!}}-
+{{!}} class="desc-text" lang="ja" {{!}} {{{Desc4 (JP)}}}
+{{!}}- style="{{#if:{{{Transl4 (JP)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl4 (JP)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl4 (JP)}}}
+{{!}}}
+}}
+<!--TW Tab-->
+{{#if:{{{Name1 (TW)|}}}|{{!}}-{{!}}TW{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1 (TW)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl1 (TW)|}}}|4|2}}" {{!}} [[File:{{{Image1 (TW)|{{{Image1}}}}}}|center|{{{Name1 (TW)}}}]]
+{{!}} class="desc-label" {{!}} TW Description
+{{!}}-
+{{!}} class="desc-text" lang="zh-Hant" {{!}} {{{Desc1 (TW)}}}
+{{!}}- style="{{#if:{{{Transl1 (TW)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl1 (TW)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl1 (TW)}}}
+{{!}}- class="{{#if:{{{Name2 (TW)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2 (TW)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl2 (TW)|}}}|4|2}}" {{!}} [[File:{{{Image2 (TW)|{{{Image2}}}}}}|center|{{{Name2 (TW)}}}]]
+{{!}} class="desc-label" {{!}} TW Description
+{{!}}-
+{{!}} class="desc-text" lang="zh-Hant" {{!}} {{{Desc2 (TW)}}}
+{{!}}- style="{{#if:{{{Transl2 (TW)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl2 (TW)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl2 (TW)}}}
+{{!}}- class="{{#if:{{{Name3 (TW)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3 (TW)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl3 (TW)|}}}|4|2}}" {{!}} [[File:{{{Image3 (TW)|{{{Image3}}}}}}|center|{{{Name3 (TW)}}}]]
+{{!}} class="desc-label" {{!}} TW Description
+{{!}}-
+{{!}} class="desc-text" lang="zh-Hant" {{!}} {{{Desc3 (TW)}}}
+{{!}}- style="{{#if:{{{Transl3 (TW)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl3 (TW)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl3 (TW)}}}
+{{!}}- class="{{#if:{{{Name4 (TW)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4 (TW)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl4 (TW)|}}}|4|2}}" {{!}} [[File:{{{Image4 (TW)|{{{Image4}}}}}}|center|{{{Name4 (TW)}}}]]
+{{!}} class="desc-label" {{!}} TW Description
+{{!}}-
+{{!}} class="desc-text" lang="zh-Hant" {{!}} {{{Desc4 (TW)}}}
+{{!}}- style="{{#if:{{{Transl4 (TW)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl4 (TW)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl4 (TW)}}}
+{{!}}}
+}}
+<!--KR Tab-->
+{{#if:{{{Name1 (KR)|}}}|{{!}}-{{!}}KR{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1 (KR)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl1 (KR)|}}}|4|2}}" {{!}} [[File:{{{Image1 (KR)|{{{Image1}}}}}}|center|{{{Name1 (KR)}}}]]
+{{!}} class="desc-label" {{!}} KR Description
+{{!}}-
+{{!}} class="desc-text" lang="ko" {{!}} {{{Desc1 (KR)}}}
+{{!}}- style="{{#if:{{{Transl1 (KR)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl1 (KR)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl1 (KR)}}}
+{{!}}- class="{{#if:{{{Name2 (KR)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2 (KR)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl2 (KR)|}}}|4|2}}" {{!}} [[File:{{{Image2 (KR)|{{{Image2}}}}}}|center|{{{Name2 (KR)}}}]]
+{{!}} class="desc-label" {{!}} KR Description
+{{!}}-
+{{!}} class="desc-text" lang="ko" {{!}} {{{Desc2 (KR)}}}
+{{!}}- style="{{#if:{{{Transl2 (KR)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl2 (KR)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl2 (KR)}}}
+{{!}}- class="{{#if:{{{Name3 (KR)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3 (KR)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl3 (KR)|}}}|4|2}}" {{!}} [[File:{{{Image3 (KR)|{{{Image3}}}}}}|center|{{{Name3 (KR)}}}]]
+{{!}} class="desc-label" {{!}} KR Description
+{{!}}-
+{{!}} class="desc-text" lang="ko" {{!}} {{{Desc3 (KR)}}}
+{{!}}- style="{{#if:{{{Transl3 (KR)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl3 (KR)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl3 (KR)}}}
+{{!}}- class="{{#if:{{{Name4 (KR)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4 (KR)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="{{#if:{{{Transl4 (KR)|}}}|4|2}}" {{!}} [[File:{{{Image4 (KR)|{{{Image4}}}}}}|center|{{{Name4 (KR)}}}]]
+{{!}} class="desc-label" {{!}} KR Description
+{{!}}-
+{{!}} class="desc-text" lang="ko" {{!}} {{{Desc4 (KR)}}}
+{{!}}- style="{{#if:{{{Transl4 (KR)|}}}||display:none}}"
+{{!}} class="desc-label" {{!}} EN Translation
+{{!}}- style="{{#if:{{{Transl4 (KR)|}}}||display:none}}"
+{{!}} class="desc-text" {{!}} {{{Transl4 (KR)}}}
+{{!}}}
+}}
+<!--Switch Tab-->
+{{#if:{{{Name1 (Switch)|}}}|{{!}}-{{!}}Switch{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1 (Switch)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image1 (Switch)|{{{Image1}}}}}}|center|{{{Name1 (Switch)}}}]]
+{{!}} class="desc-label" {{!}} Switch Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc1 (Switch)}}}
+{{!}}- class="{{#if:{{{Name2 (Switch)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2 (Switch)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image2 (Switch)|{{{Image2}}}}}}|center|{{{Name2 (Switch)}}}]]
+{{!}} class="desc-label" {{!}} Switch Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc2 (Switch)}}}
+{{!}}- class="{{#if:{{{Name3 (Switch)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3 (Switch)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image3 (Switch)|{{{Image3}}}}}}|center|{{{Name3 (Switch)}}}]]
+{{!}} class="desc-label" {{!}} Switch Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc3 (Switch)}}}
+{{!}}- class="{{#if:{{{Name4 (Switch)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4 (Switch)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image4 (Switch)|{{{Image4}}}}}}|center|{{{Name4 (Switch)}}}]]
+{{!}} class="desc-label" {{!}} Switch Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc4 (Switch)}}}
+{{!}}}
+}}
+<!--3DS Tab-->
+{{#if:{{{Name1 (3DS)|}}}|{{!}}-{{!}}3DS{{=}}
+{{{!}} class="unit-desc-table"
+! class="unit-id" {{!}} {{{Mode}}} Unit #{{#invoke:string|padleft|{{{Number}}}|3|0}}
+! class="unit-type" {{!}} {{{Type}}}
+{{!}}-
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name1 (3DS)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image1 (3DS)|{{{Image1}}}}}}|center|{{{Name1 (3DS)}}}]]
+{{!}} class="desc-label" {{!}} 3DS Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc1 (3DS)}}}
+{{!}}- class="{{#if:{{{Name2 (3DS)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name2 (3DS)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image2 (3DS)|{{{Image2}}}}}}|center|{{{Name2 (3DS)}}}]]
+{{!}} class="desc-label" {{!}} 3DS Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc2 (3DS)}}}
+{{!}}- class="{{#if:{{{Name3 (3DS)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name3 (3DS)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image3 (3DS)|{{{Image3}}}}}}|center|{{{Name3 (3DS)}}}]]
+{{!}} class="desc-label" {{!}} 3DS Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc3 (3DS)}}}
+{{!}}- class="{{#if:{{{Name4 (3DS)|}}}||hideme}}"
+{{!}} class="unit-name" colspan="2" {{!}} '''{{{Name4 (3DS)}}}'''
+{{!}}-
+{{!}} class="unit-image" rowspan="2" {{!}} [[File:{{{Image4 (3DS)|{{{Image4}}}}}}|center|{{{Name4 (3DS)}}}]]
+{{!}} class="desc-label" {{!}} 3DS Description
+{{!}}-
+{{!}} class="desc-text" {{!}} {{{Desc4 (3DS)}}}
+{{!}}}
+}}
+}}
+</div></onlyinclude></includeonly><noinclude>{{/doc}}</noinclude>

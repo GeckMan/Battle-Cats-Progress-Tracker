@@ -1,0 +1,130 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Australia (Into the Future)/Outbreak|here]].''
+'''Australia''' is the 23rd stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc023.png]]
+|stage location = [[File:Australia.png]]
+'''Into The Future'''
+|energy = 52
+|energy2 = 62
+|energy3 = 72
+|enemy castle hp = 75,000 HP
+|enemy castle hp2 = 112,500 HP
+|enemy castle hp3 = 150,000 HP
+|enemies = {{Magnification|Kang Roo|400%
+|Doge|400%
+|Snache|400%
+|Croco|400%
+|Maawth|80%}}
+|enemies2 = {{Magnification|Kang Roo|800%
+|Doge|800%
+|Snache|800%
+|Croco|800%
+|Scissoroo|100%
+|Maawth|250%}}
+|enemies3 = {{Magnification|Kang Roo|1,200%
+|Croco|1,200%
+|Snache|1,200%
+|Doge|1,200%
+|Scissoroo|250%
+|Maawth|250%
+|Shadow Boxer K|200%
+|Doge Dark|400%}}
+|treasure = - [[Treasure|Drop Bear]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': +70,000 XP
+|score reward2 = '''7,000''': [[Cat Food]] +10<br>
+'''5,500''': +105,000 XP
+|score reward3 = '''6,500''': [[Cat Food]] +10<br>
+'''5,500''': +140,000 XP
+|max enemies = 7
+|max enemies2 = 8
+|max enemies3 = 9
+|XP = 7,600 XP
+|width = 5,600
+|jpname = Australia
+|script = オーストラリア
+|romaji = Ōsutoraria
+|jptreasure = Didgeridoo
+|twname = Australia
+|twscript = 澳大利亞
+|twromaji = Àodàlìyǎ
+|twtreasure = Koala
+|krname = Australia
+|krscript = 호주
+|krromaji = Hoju
+|krtreasure = Koala
+|chapter = [[Into the Future]]
+|prev stage = [[Singapore (Into the Future)|Singapore]]
+|next stage = [[The Great Abyss (Into the Future)|The Great Abyss]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Kang Roo|Doge|Snache|Croco|Maawth}}
+*3 [[Kang Roo]]s spawn after 20 seconds<sup>600f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*3 [[Kang Roo]]s spawn after 22 seconds<sup>660f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*Infinite [[Doge]]s spawn after 25.33 seconds<sup>760f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Snache]]s spawn after 26.67 seconds<sup>800f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Croco]]s spawn after 30 seconds<sup>900f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Maawth]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Kang Roo]]s spawn after 80 seconds<sup>2,400f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**3 [[Kang Roo]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Kang Roo|Doge|Snache|Croco|Scissoroo|Maawth}}
+*3 [[Kang Roo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*3 [[Kang Roo]]s spawn after 16.67 seconds<sup>500f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*Infinite [[Doge]]s spawn after 25.33 seconds<sup>760f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Snache]]s spawn after 26.67 seconds<sup>800f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Croco]]s spawn after 30 seconds<sup>900f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Scissoroo]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Scissoroo]] spawns after 41.67 seconds<sup>1,250f</sup>.
+*1 [[Maawth]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Scissoroo]] spawns after 80 seconds<sup>2,400f</sup>.
+*When the base reaches 99% HP:
+**3 [[Kang Roo]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Kang Roo|Croco|Snache|Doge|Scissoroo|Maawth|Shadow Boxer K|Doge Dark}}
+*3 [[Kang Roo]]s spawn after 10 seconds<sup>300f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*3 [[Kang Roo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*Infinite [[Croco]]s spawn after 20 seconds<sup>600f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Snache]]s spawn after 24 seconds<sup>720f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Doge]]s spawn after 26 seconds<sup>780f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*3 [[Scissoroo]]s spawn after 30 seconds<sup>900f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*3 [[Scissoroo]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*1 [[Maawth]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Shadow Boxer K]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Doge Dark]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Kang Roo]] spawns.
+*When the base reaches 90% HP:
+**1 [[Kang Roo]] spawns.
+*When the base reaches 80% HP:
+**1 [[Kang Roo]] spawns.
+
+==Strategy==
+==='''Chapter 1'''===
+Set up: [[Tank Cat (Normal Cat)|Wall Cat]] (level 20 or higher) [[Rover Cat (Rare Cat)|Rover Cat]] (Level 10 or higher) [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] level 10 or higher) [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] (Level 10 or higher)
+
+First start spamming Wall Cat and Rover Cat, when the Kang Roo comes out you should almost have enough for Valkyrie Cat so save up and buy her then continue spamming Rover Cat and Wall Cat if your money capacity isn't at 4500 buy a few levels on your wallet. When Valkyrie destroys the Kang Roo you should be able to get Bahamut Cat, then continue spamming Rover and Wall and whenever you can get another Bahamut or Valkyrie buy them. You should kill the Maawth in a hit of the Bahamut. You should be done with the level in no time.
+
+Also you can replace Rover with [[Psychocat (Rare Cat)|Neo Psychocat]] and Valkyrie with [[Salon Cat (Rare Cat)|Paris Cat]].
+
+==='''Chapter 2'''===
+Use anti-Aliens such as [[Psychocat (Rare Cat)|Neo Psychocat]] and [[Surfer Cat (Super Rare Cat)|Castaway Cat]] for Scissoroo, and backliners like [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] and [[Lizard Cat (Normal Cat)|Dragon]] [[Crazed Lizard Cat (Super Rare Cat)|Variants]] for the Maawth. Meatshields should consist of [[Tank Cat (Normal Cat)|Eraser Cat]], [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]] and/or [[Rover Cat (Rare Cat)|Rover Cat Mk II]]. If one has true forms, then this should be easy, especially with Catellite and Seafarer.
+
+==='''Chapter 3'''===
+A 200% Shadow Boxer K being present in this stage can be proven deadly, not to mention the Scissoroos. Your main goal is to kill Shadow Boxer K before Scisoroos start spawning in swarms. The same tactic may be used from Chapter 1, but with some unit that can slow/freeze Dark enemies. If you have [[Rover Cat (Rare Cat)|Catellite]], you don't really need to worry about the Scissoroos as it can tank a few hits.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-23.html
+*https://battlecats-db.com/stage/s03004-23.html
+*https://battlecats-db.com/stage/s03005-23.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

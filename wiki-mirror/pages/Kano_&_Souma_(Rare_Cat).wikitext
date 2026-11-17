@@ -1,0 +1,126 @@
+{{Unobtainable}}
+:''For the enemy encountered in the [[Shoumetsu Toshi Collaboration Event]], see [[Kano & Souma (Enemy)]].''
+'''Kano & Souma''' are a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 8.6 Update|Version 8.6]] and can be unlocked when beating any stage in [[Shoumetsu Toshi Collaboration Event#The World Beyond|The World Beyond]] during the [[Shoumetsu Toshi Collaboration Event]].
+
+{{Cat Info
+|ID = 483
+|rarity = RR
+|name1 = Kano & Souma
+|name2 = Kano & Souma & Cat
+}}
+
+==Evolution==
+Evolves into '''Kano & Souma & Cat''' at level 10.
+
+==Strategy/Usage==
+Although this unit appears to be a superior equivalent to specialist meatshields like [[Rover Cat (Rare Cat)|Catellite]], it is ultimately outclassed due to various issues, since its very awkward price range doesn't provide any value. It lacks Immunity to status effects like Warp/Slow, which are commonly used by many Alien threats. Despite having high effective health and speed, its additional knockback effectively negates this advantage by reducing the amount of damage it could potentially absorb, not to mention slower units often are better as they can create a thick line of defense. And while it can be boosted by Catseyes to increase its stats to see use, especially in restriction stages, it is again outclassed by more accessible alternatives.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 483
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni483 f00.png
+|Image2 = Uni483 c00.png
+|Name1 = Kano & Souma
+|Desc1 = Heroes from Shoumetsu Toshi! Two wanderers in<br>the ruins of the city, confronting their own sins.<br>Tough vs Aliens, Area Attack
+|Name2 = Kano & Souma & Cat
+|Desc2 = Joined by a Cat picked up at the seaside, our<br>wanderers set their sights on the ruined city.<br>Tough vs Aliens, Area Attack
+|Name1 (JP) = カノとソウマ (Kano to Sōma, Kano and Soma)
+|Desc1 (JP) = 消滅都市から参戦！旅人カノと少年ソウマ<br>自らの罪と向き合い、"消滅都市"を目指す<br>エイリアンに打たれ強い(範囲攻撃)
+|Transl1 (JP) = Participate in the extinct city 0! Traveler Kano and Boy Soma<br>Facing your sins and aiming for a "disappearing city"<br>Tough against Alien enemies (ranged attack)
+|Name2 (JP) = カノとソウマとネコ (Kano to Sōma to Neko, Kano and Soma and Cat)
+|Desc2 (JP) = ソウマと一緒に浜辺に打ち上げられていたネコを乗せ<br>"消滅都市"を目指して旅をする<br>エイリアンに打たれ強い(範囲攻撃)
+|Transl2 (JP) = Put a cat that was launched on the beach with Soma<br>Travelling toward an "annihilated city"<br>Tough against Alien enemies (ranged attack)
+|Name1 (TW) = 佳乃與蒼真
+|Desc1 (TW) = 來自消滅都市的戰士！旅人佳乃與少年蒼真<br>迎向自己的罪孽，目標就是"消滅都市"<br>對上異星戰士很耐打(範圍攻擊)
+|Name2 (TW) = 佳乃與蒼真與貓咪
+|Desc2 (TW) = 載著蒼真與擱淺在岸邊的貓咪<br>進行著目標為消滅都市的旅程<br>對上異星戰士很耐打(範圍攻擊)
+|Name1 (KR) = 카노와 소우마
+|Desc1 (KR) = 소멸도시에서 참전! 여행자 카노와 소년 소우마.<br>자신의 죄와 마주하여 "소멸도시"를 향한다<br>에이리언에 맷집이 좋다 (범위 공격)
+|Name2 (KR) = 카노와 소우마와 고양이
+|Desc2 (KR) = 소우마와 함께 해변에 떠밀려온 고양이를 태우고<br>"소멸도시"를 향해 여행을 떠난다<br>에이리언에 맷집이 좋다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 280¢
+*Chapter 2: 420¢
+*Chapter 3: 560¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kano & Souma
+|Normal Base HP = 500
+|Normal Base AP = 70
+|Normal Range = 190
+|Normal Foreswing = 22
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 61
+|Normal Speed = 25
+|Normal KB = 2
+|Normal Cost = 280
+|Normal Recharge = 390
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Kano & Souma & Cat
+|Evolved Base HP = 500
+|Evolved Base AP = 70
+|Evolved Range = 190
+|Evolved Foreswing = 22
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 61
+|Evolved Speed = 25
+|Evolved KB = 2
+|Evolved Cost = 280
+|Evolved Recharge = 390
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 70 damage<br>(20.79 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Normal-Movement Speed = 25
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 22f <sup>0.73s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Normal-Recharge Time = 13 ~ 4.2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 1,190 damage<br>(353.47 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 1,190 damage<br>(353.47 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Evolved-Movement Speed = 25
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 22f <sup>0.73s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Evolved-Recharge Time = 13 ~ 4.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni483 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/484.html
+
+----
+{{CatNav|Benevolent Souma|Li'l Valkyrie Dark}}
+----
+
+{{Shoumetsu Toshi}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Resistant ability]]

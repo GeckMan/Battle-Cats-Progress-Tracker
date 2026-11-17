@@ -1,0 +1,64 @@
+'''Freeze Dummy''' (停止木人城, ''Teishi Mokujin-jō'', '''Freeze Wooden Castle''') is an animated [[Enemy Bases|Enemy Base]] found in [[Arena of Power/Freeze in Fright|Freeze in Fright]]. It was added in [[Version 14.5 Update|Version 14.5]].
+
+{{Enemy Info
+|name = Freeze Dummy
+|image = E 739.png
+|appearance = [[Arena of Power/Freeze in Fright|Freeze in Fright]]
+|money drop = N/A
+}}
+
+==Enemy==
+While this base resembles the original [[Dummy (Enemy Base)|Dummy]], it isn't nearly as lethal. However, it has over double the range with a guaranteed Freeze and around 49% uptime.
+
+==Strategy==
+You almost certainly are not going to be able to outrange it, but its damage is low enough that most units won't be harmed. They will, however, be stuck in place for a little under half of their existence. Bring as many [[:Category:Cats with Freeze Immunity|Cats with Freeze Immunity]] as is reasonable, and otherwise focus on the enemy fighters rather than the base.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Catclaw Dojo]]===
+*[[Arena of Power]]: [[Arena of Power/Freeze in Fright|Freeze in Fright]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Freeze Dummy
+|Health = 100
+|Attack Power = 5000
+|Attack Range = 800
+|Attack Type = Area
+|Time Between Attacks = 309
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 10
+|Backswing = 30
+|Ability = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy|bg=Bg043.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+739 e.png|Freeze Dummy's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/741.html
+
+----
+{{EnemyNav|Parasol Base|Mass Production EVA}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Typeless Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Weaken Immunity]]

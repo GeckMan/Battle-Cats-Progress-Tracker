@@ -1,0 +1,94 @@
+:''This enemy has no official name.''
+'''MikuGory''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. It was added in [[Version 9.4 Update|Version 9.4]].
+
+{{Enemy Info
+|name = MikuGory
+|image = E 504.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 450¢ - 1,777¢
+}}
+
+==Enemy==
+This enemy is very similar to [[Gory Dark]], but with no trait, less knockbacks and a chance to [[Knockback|knockback]] Cat Units.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#Hatsune Miku|Hatsune Miku]]: [[Sing with a Smile]] (15%)
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in INDONESIA]] (2%)
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]: [[Sakura Dance]] (100%)
+*[[Hatsune Miku Collaboration Event#SNOW MIKU|SNOW MIKU]]: [[The Diva of Ice]] (30%)
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]]: [[Growing Creativity]] (40%)
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 2|Weekend Concert: Day 2]]: [[Dear Creators]] (250%)
+*[[Electric Diva Strikes!]]:
+**[[Electric Diva Strikes!/Song 1~20|1st Song]] (2%)
+**[[Electric Diva Strikes!/Song 1~20|2nd Song]] (5%)
+**[[Electric Diva Strikes!/Song 1~20|3rd Song]] (12%)
+**[[Electric Diva Strikes!/Song 1~20|4th Song]] (24%)
+**[[Electric Diva Strikes!/Song 1~20|5th Song]] (40%)
+**[[Electric Diva Strikes!/Song 1~20|6th Song]] (56%)
+**[[Electric Diva Strikes!/Song 1~20|7th Song]] (72%)
+**[[Electric Diva Strikes!/Song 1~20|8th Song]] (88%)
+**[[Electric Diva Strikes!/Song 1~20|9th Song]] (104%)
+**[[Electric Diva Strikes!/Song 1~20|10th Song]] (120%)
+**[[Electric Diva Strikes!/Song 1~20|11th Song]] (156%)
+**[[Electric Diva Strikes!/Song 1~20|12th Song]] (192%)
+**[[Electric Diva Strikes!/Song 1~20|13th Song]] (228%)
+**[[Electric Diva Strikes!/Song 1~20|14th Song]] (264%)
+**[[Electric Diva Strikes!/Song 1~20|15th Song]] (300%)
+**[[Electric Diva Strikes!/Song 1~20|16th Song]] (320%)
+**[[Electric Diva Strikes!/Song 1~20|17th Song]] (340%)
+**[[Electric Diva Strikes!/Song 1~20|18th Song]] (360%)
+**[[Electric Diva Strikes!/Song 1~20|19th Song]] (380%)
+**[[Electric Diva Strikes!/Song 1~20|Last Song]] (400%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/MikuMiku Music Fest|MikuMiku Music Fest]] (2%, 30%, 75%, 100%, 150%, 175%, 225%, 250%, 300%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in INDONESIA]] (2%)
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]: [[Sakura Dance]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = MikuGory
+|Health = 72000
+|Attack Power = 3200
+|Attack Range = 160
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 24
+|Knockback = 2
+|Foreswing = 6
+|Backswing = 10
+|Ability = {{AbilityIcon|Knockback}} 50% chance to [[Knockback|knockback]] Cat Units
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+504 e.png|MikuGory's spritesheet
+IdleMikuGory.gif|MikuGory's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/506.html
+
+----
+{{EnemyNav|MikuDoge|MikuBear}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Area Attack Enemies]]

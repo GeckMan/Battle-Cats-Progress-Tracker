@@ -1,0 +1,49 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Gory|Teacher Bear}}
+'''Cat Jobs (Normal)''' is the second stage in [[Wednesday Stage]].
+
+{{Stage Info
+|stage name = [[File:rc010.png]]
+[[File:Mapsn002 01 s en.png]]
+|stage location = [[File:Mapname002 s en.png]]
+|energy = 60
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Gory|100%}}
+|boss = {{Magnification|Teacher Bear|400%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (25%, unlimited)
+|XP = 1,140 XP
+|width = 4,800
+|max enemies = 7
+|jpname = Okame Dojo Intermediate
+|script = おかめ道場 中級
+|romaji = Okame Dōjō Chūkyū
+|star = 1
+|event-chapter = [[Wednesday Stage]]
+|difficulty = ★3
+|prev stage = [[Cat Jobs (Easy)]]
+|next stage = [[Cat Jobs (Hard)]]
+|occurrence = Every Wednesday
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Snache]]s spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Those Guys]] spawn, delay 3~20 seconds<sup>90f~600f</sup>.
+*Infinite [[Gory|Gories]] spawn, delay 6~20 seconds<sup>180f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Teacher Bear]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 1~6 seconds<sup>30f~180f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+**Infinite [[Gory|Gories]] spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+
+==Strategy==
+Use strong [[:Category:Area Attack Cats|Area Attack Cats]] like [[Bird Cat (Normal Cat)|UFO Cat]] with meatshields to destroy the massive amount of Gories. Teacher Bear isn't much of a problem in this stage, but if you are worrying about him, [[Titan Cat (Normal Cat)|Titan Cat]] may be a good choice to bring along.
+
+==Reference==
+*https://battlecats-db.com/stage/s01002-02.html
+
+{{Daily}}
+[[Category:Event Stages]]

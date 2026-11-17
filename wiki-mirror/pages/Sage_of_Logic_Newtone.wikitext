@@ -1,0 +1,101 @@
+:''This article is about the enemy. For the Cat Unit, see [[Master of Logic Newtone (Special Cat)]].''
+'''Sage of Logic Newtone''' (理の賢者ニュトーン, ''Kotowari no Kenja Nyutōn'', '''Sage of Logic Nyutone''') is a [[:Category:Red Enemies|Red]]/[[:Category:Sage Enemies|Sage]] enemy that appears in [[Zero Legends]]. He is the enemy version of [[Master of Logic Newtone (Special Cat)|Master of Logic Newtone]]. He was added in [[Version 14.4 Update|Version 14.4]].
+
+{{Enemy Info
+|name = Sage of Logic Newtone
+|image = E 729.png
+|first appearance = '''ZL''': [[Immeasurable Power|Sub-chapter 20 - Immeasurable Power]]
+|money drop = 8,888¢ - 35,107¢
+}}
+
+==Enemy==
+A true super-backliner threat, Sage of Logic Newtone has a ridiculous standing range of 700 on top of a jaw-dropping 1,500 [[Omni Strike]] and a whopping 190k damage per hit, which is increased by 1.5x when he reaches 50% health. This means that his fight will be a game of stalling him between peon waves. However he has two staggering weaknesses: his attack cycle lasts for nearly ten seconds, and he has a high knockback count for his HP (2M HP with 8 knockbacks, meaning 1 per 250k damage taken), giving you a chance to slip in lots of damage during the downtimes between his attacks and even juggle him if you manage to get a stack of DPS units on him, trivializing the stage.
+
+Note that despite defying gravity and being slightly above the ground, he isn't a [[:Category:Floating Enemies|Floating]] enemy. Fortunately, as long as the peons are dealt with, his Red trait can still be easily exploited.
+
+==Strategy==
+:''See [[Immeasurable Power]] for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 729
+|Type = [[:Category:Red Enemies|Red]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 729.png
+|Name1 = Sage of Logic Newtone
+|Desc1 = Peered into our world from another dimension<br>and blesses latent geniuses with great<br>scientific knowledge. Seeks to probe the illogical<br>depths of the Cat Army by facing them in combat.
+|Name1 (JP) = 理の賢者ニュトーン (Kotowari no Kenja Nyutōn, Sage of Logic Nyutone)
+|Desc1 (JP) = 遥か高位の異次元から現世を観測し<br>才を見い出した者に科学の種をもたらしていた<br>超賢者。にゃんこ軍団という測定不能な<br>存在を徹底的に分析すべく対峙する。
+|Transl1 (JP) = A Super-Sage who is observing this world from a far higher<br>dimension and brought the seeds of science to those who discovered their talent.<br>He is confronting the unmeasurable entity<br>called the Cat Army in order to thoroughly analyze it.
+|Name1 (TW) = 理之賢者扭頓
+|Desc1 (TW) = 從極高層次的異次元來到這裡觀測世界，<br>將科學的種子賜予具有天賦之人的<br>賢者。為了徹底分析貓咪軍團這個<br>深不可測的存在，決定與其對峙。
+|Name1 (KR) = 이치의 현자 뉴톤
+|Desc1 (KR) = 머나먼 다른 차원에서 세계를 관측하고<br>재능을 발견한 자에게 과학의 씨앗을 내려주던<br>초현자. 냥코 군단이란 측정 불가능한 존재를<br>철저하게 분석하기 위해 대립한다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 20-6: [[Immeasurable Power]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sage of Logic Newtone
+|Health = 2000000
+|Attack Power = 190000
+|Attack Range = 700
+|Attack Type = Area
+|Time Between Attacks = 297
+|Movement Speed = 4
+|Knockback = 8
+|Foreswing = 58
+|Backswing = 43
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~1,500)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 9 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Element = Red/Sage
+}}
+
+{{UnitViewer|enemy|bg=Bg238.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+729 e.png|Sage of Logic Newtone's spritesheet
+Medal 121.png|Sage of Logic Newtone on the ''Newtone'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Like [[Sage of Mind Soractes|Soractes]] and [[Sage of Selection Darvin|Darvin]], Sage of Logic Newtone's Japanese name is slightly different from the historical figure he's based on. In Japanese, the real [[wikipedia:Isaac Newton|Newton]] is ニュートン ''Nyūton'', whereas the [[The Battle Cats|Battle Cats]] character is ニュトーン ''Nyutōn''. It may be a pun on ストーン ''sutōn'' (stone), referencing his [[:Category:Sage Enemies|Sage]] stone, or 入湯 ''nyūtō'' (taking a hot bath; bathing in a hot spring), since he's [[:Category:Red Enemies|Red]] and appears underwater.
+**His Japanese name and Red trait may also be derived from the [[wikipedia:Philosopher's stone|philosopher's stone]], a legendary alchemical substance usually depicted as a red stone. [[wikipedia:Isaac Newton's occult studies#Alchemical research|Newton spent decades studying alchemy]] and is thought to have been pursuing the philosopher's stone.
+**His Slow ability and [[Master of Logic Newtone (Special Cat)|allied self]]'s [[:Category:Floating Enemies|Floating]] target may imply some form of gravity manipulation.
+**Because of his Red trait, [[Apple Cat (Super Rare Cat)|Apple Cat]] can ironically be used to freeze Sage of Logic Newtone.
+**During his attack animation, the movements made by the spheres that Sage of Logic Newtone holds up mirror the movements made by the swinging spheres of a [[wikipedia:Newton's cradle|Newton's cradle]].
+**[[Truth's Devouring Maw]]'s Japanese name, Banbutsu Izanau Shinri no Ōuzu (万物誘う真理の大渦, "Great Whirlpool of Truth That Entices All Things"), may be a reference to the Newton quote "I do not know what I may appear to the world, but to myself I seem to have been only like a boy playing on the sea-shore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the <u>great ocean of truth</u> lay all undiscovered before me."
+**Sage of Logic Newtone may have been foreshadowed by the name of the sub-chapter preceding Truth's Devouring Maw, [[Newtown Trench]].
+*Prior to [[Version 15.4 Update|Version 15.4]], Sage of Logic Newtone lacked the extra ''e'' at the end of his name, matching the real world Newton.
+**The change may have been made to add a pun, as Sage of Logic Newtone is Red, in other words a ''new tone''. It may also be a pun on ''stone'' similarly to his Japanese name.
+**The change was later reverted in Version 15.4.1, however the name change was reinstated in [[Version 15.5 Update|Version 15.5]].
+*According to the Japanese descriptions of Sage of Logic Newtone, Sage of Mind Soractes and Sage of Selction Darvin, the world they are observing is specifically the [[wikipedia:Present life|present life]] (現世 ''gen sei'', ''utsushi yo''), a concept in certain religions such as Shinto and Buddhism.
+*Sage of Logic Newtone may have been inspired by Abrahamic religions' story of the [[wikipedia:Garden of Eden|Garden of Eden]], as he was added in the same update as [[Temptation's Rhapsody]], Truth's Devouring Maw's Japanese name can be translated as "Great Whirlpool of Truth That <u>Tempts</u> All Things", he attacks with an apple (the most common depiction of the [[wikipedia:Forbidden fruit|forbidden fruit]]), and eating the fruit gave Adam and Eve forbidden [[:Category:Sage Enemies|knowledge]]. Furthermore, [[Immeasurable Power]] contains [[Angelic Gory]], a fallen [[:Category:Angel Enemies|Angel]], and the serpent that tempted Eve is often associated with [[wikipedia:Samael|Samael]] and Satan, who are fallen angels in many of their depictions.
+
+==Reference==
+*https://battlecats-db.com/enemy/731.html
+
+----
+{{EnemyNav|Jack Hammer|Sonic}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Red Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Mini-Wave Enemies]]
+[[Category:Mythic Bosses]]

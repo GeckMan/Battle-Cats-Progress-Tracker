@@ -1,0 +1,9 @@
+.ranger-navbox.yurugege {
+	--bg-navbox-title: linear-gradient(to right, hsl(32, 98%, 46%) 0%, hsl(32, 98%, 51%) 100%);
+	--bg-sub-table-title: hsl(27, 47%, 22%);
+	--bg-group-name: hsl(32, 98%, 40%);
+
+	--sub-title-color: #eee;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,69 @@
+'''Blinky Kory''' (ブリンキーコアラッキョ, ''Burinkī Koarakkyo'', '''Blinky Koalakkyo''') is a [[:Category:Red Enemies|Red]] enemy that appears in the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Enemy Info
+|name = Blinky Kory
+|image = E 782.png
+|first appearance = [[PAC-MAN Collaboration Event]]
+|money drop = 900¢ - 3,555¢
+}}
+
+==Enemy==
+Essentially a slightly stronger [[Kory]] with the Red trait, a longer [[Wave Attack#Mini-Wave|Mini-Wave]] instead of a standard Wave Attack and a 50% chance to [[Slow]] units.
+
+==Strategy==
+The damage from its Mini-Waves is very low, which means many sturdy attackers/crowd-controllers like [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Fish Cat (Normal Cat)|Island Cat]] and [[Apple Cat (Super Rare Cat)|iCat]] can simply brute-force their way through. A [[:Category:Wave Shield Cats|Wave Shield]] is recommended at higher magnifications, as it begins dealing noticeably higher damage that can stunlock some of your cats. In particular, [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] can take advantage of the Mini-Waves' low damage to repeatedly rebound onto enemies, which can be very good for bursting down specific threats.
+
+Outside of this, standard [[:Category:Cats with Wave Immunity|Wave-Immune units]] like [[Talents|Talented]] [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] and [[Kung Fu Cat (Special Cat)|Dancer Cat]] get the job done well enough.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[PAC-MAN Collaboration Event#PAC-MAN Appears!|PAC-MAN Appears!]]:
+**[[Power Pellet Comeback]] (100%)
+**[[Ghosts on the Run]] (150%)
+**[[256 Levels to Victory]] (250%)
+*[[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]:
+**[[The Hunt for Power Pellets]] (100%)
+**[[Invitation to a High Score]] (300%)
+**[[Fit to Burst]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Blinky Kory
+|Health = 240000
+|Attack Power = 3000
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 60
+|Movement Speed = 7
+|Knockback = 5
+|Foreswing = 21
+|Backswing = 9
+|Ability = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 6 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+782 e.png|Blinky Kory's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/784.html
+
+----
+{{EnemyNav|Pinky Bear|Giant PAC-MAN}}
+----
+
+{{Pac-Man}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Mini-Wave Enemies]]

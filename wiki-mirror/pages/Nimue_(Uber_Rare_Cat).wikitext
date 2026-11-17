@@ -1,0 +1,124 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the Enemy Units, see [[Nimue (Enemy)]] and [[Neutralization Type Nimue (Enemy)]].''
+'''Nimue''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Million Arthur Collaboration Event]]. She was added in [[Version 2.2 Update#Version 2.2.3 Update|Version 2.2.3]].
+
+{{Cat Info
+|ID = 89
+|rarity = UR
+|name1 = Nimue
+|name2 = Neutralization Type Nimue
+}}
+
+==Evolution==
+Evolves into '''Neutralization Type Nimue''' at level 10.
+
+==Strategy/Usage==
+Nimue has almost the exact same stats as [[Thundia (Uber Rare Cat)|Thundia]]. They can be used pretty much the same way. Nimue however, does not have access to a [[True Form]], [[Ultra Form]] or [[Talents]]. Because of that, her usefulness will fall behind harshly as the game progresses.
+
+{{Job|Classification = Nuker & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 89
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni089 f00.png
+|Image2 = Uni089 c00.png
+|Name1 (JP) = ニムエ (Nimue)
+|Desc1 (JP) = コラボイベントの限定キャラクター<br>遠距離から放たれる強烈な魔法弾は<br>赤い敵に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = A limited character of Million Arthur appears!<br>Summons intense bullets of magic from a distance.<br>Deals triple damage to red enemies (Area attack)
+|Name2 (JP) = 帰化型ニムエ (Kika-gata nimue, Neutralization Type Nimue)
+|Desc2 (JP) = カラフル＆スケールアップ<br>遠距離から放たれる強烈な魔法弾は<br>赤い敵に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Colorful & scaled-up<br>Summons intense bullets of magic from a distance.<br>Deals triple damage to red enemies (Area attack)
+|Name1 (KR) = 니무에
+|Desc1 (KR) = 콜라보 이벤트의 한정 캐릭터<br>원거리에서 발사되는 강렬한 마법탄은<br>빨간 적에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 귀화형 니무에
+|Desc2 (KR) = 칼라풀 ＆ 스케일 업<br>원거리에서 발사되는 강렬한 마법탄은<br>빨간 적에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,890円
+*Chapter 2: 4,335円
+*Chapter 3: 5,780円
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nimue
+|Normal Base HP = 798
+|Normal Base AP = 1243
+|Normal Range = 408
+|Normal Foreswing = 63
+|Normal Attack Cooldown = 343
+|Normal Attack Length = 121
+|Normal Speed = 5
+|Normal KB = 5
+|Normal Cost = 2890
+|Normal Recharge = 3444
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Neutralization Type Nimue
+|Evolved Base HP = 1488
+|Evolved Base AP = 2540
+|Evolved Range = 408
+|Evolved Foreswing = 63
+|Evolved Attack Cooldown = 343
+|Evolved Attack Length = 121
+|Evolved Speed = 5
+|Evolved KB = 5
+|Evolved Cost = 2890
+|Evolved Recharge = 3444
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 798 HP
+|val-Normal-Attack Power = 1,243 damage<br>(91.85 DPS)
+|val-Normal-Attack Range = 408
+|val-Normal-Attack Frequency = 406f <sub>13.53 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 63f <sup>2.1s</sup><br>(58f <sup>1.93s</sup> backswing)
+|val-Normal-Recharge Time = 114.8 ~ 106 seconds
+|val-Normal-MaxHP = 13,565 HP
+|val-Normal-MaxAttack = 21,130 damage<br>(1,561.33 DPS)
+|val-Evolved-Health = 25,295 HP
+|val-Evolved-Attack Power = 43,180 damage<br>(3,190.64 DPS)
+|val-Evolved-Attack Range = 408
+|val-Evolved-Attack Frequency = 406f <sub>13.53 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 63f <sup>2.1s</sup><br>(58f <sup>1.93s</sup> backswing)
+|val-Evolved-Recharge Time = 114.8 ~ 106 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni089 f00}}
+
+==Trivia==
+*Neutralization Type Nimue's moving animation has a small speech bubble appear after some time. The text uttered roughly translates to "roar".
+*[[The Battle Cats]]' version of Nimue has small differences compared to her art from Million Arthur.
+
+==Reference==
+*https://battlecats-db.com/unit/090.html
+*[[wikia:Million-Arthur:Category:Nimue|Nimue in Million Arthur Wiki]]
+
+----
+{{CatNav|Rope Jump Cat|Monkey King}}
+----
+
+{{Million Arthur}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

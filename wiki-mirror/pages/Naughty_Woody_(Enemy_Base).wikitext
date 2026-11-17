@@ -1,0 +1,96 @@
+{{JPExclusive}}
+'''Naughty Woody''' is a [[:Category:Typeless Enemies|Typeless]] enemy. It was added in [[Version 15.3 Update|Version 15.3]].
+
+{{Enemy Info
+|name = Naughty Woody
+|image = E 774.png
+|first appearance = [[Assault! Naughty Woody]]
+|money drop = 0¢ - 0¢
+}}
+
+==Enemy==
+Naughty Woody isn't too much of a threat, but can be annoying nevertheless at higher strength magnifications where he gains a substantial amount of damage. Apart from that, its three-part multi-hits have decently high uptime and deliver guaranteed Slow/Knockback to whatever caught in their area of effect, up to a massive 2000 range, though they are not properly connected and have small blindspots between them.
+
+==Strategy==
+As with many animated enemy bases, Naughty Woody is still vulnerable to Surge Attacks and Explosions, or units that can withstand both the damage and status effects. Faster units can potentially enter the range of its first hit after while avoiding the second and quickly tear it down. Ranged units might not fare as well, as few can remain inside the blindspots, assuming if they get there.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Assault! Naughty Woody]]:
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.1]] (100%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.2]] (1,100%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.3]] (2,100%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.4]] (3,100%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.5]] (4,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.6]] (5,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.7]] (6,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.8]] (7,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.9]] (8,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.1~10|Naughty Lv.10]] (9,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.11]] (10,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.12]] (11,700%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.13]] (13,400%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.14]] (15,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.15]] (16,700%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.16]] (18,400%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.17]] (20,000%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.18]] (21,700%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.19]] (23,400%)
+**[[Assault! Naughty Woody/Naughty Lv.1~20#Naughty Lv.11~20|Naughty Lv.MAX]] (25,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Naughty Woody
+|Health = 3000
+|Attack Power = 45
+|Attack Range = 2000
+|Attack Type = Area
+|Time Between Attacks = 347
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 42
+|Backswing = 27
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">15</span> at 42f <sup>1.4s</sup>, <span class="scaled" data-type="ap">15</span> at 45f <sup>1.5s</sup>, <span class="scaled" data-type="ap">15</span> at 48f <sup>1.6s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 750~1,250 on 2nd hit, 1,500~2,000 on 3rd hit)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: 0~500 on 1st hit)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy|bg=Bg262.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+774 e.png|Naughty Woody's spritesheet
+</gallery>
+
+==Trivia==
+*Naughty Woody's body is misaligned by a single pixel. This is most noticeable by his "entrance" being offset to the left.
+
+==Reference==
+*https://battlecats-db.com/enemy/776.html
+
+----
+{{EnemyNav|Nyanko Village Cat|Possessed Silver Nyanko Ranger}}
+----
+
+{{Puzzle Bonanza! Nyanko Village}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:PONOS Crossover Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

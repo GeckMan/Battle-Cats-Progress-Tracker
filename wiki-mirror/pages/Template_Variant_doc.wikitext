@@ -1,0 +1,84 @@
+{{Documentation}}
+This template is used to display enemy variants. You can either define the description inside the template, or inherit the description from other pages (which saves you from needing any copying/pasting). See below for both usages.
+
+==Bucket integration==
+This template stores variants and descriptions in [[bucket:variant]].
+
+==Defining a description==
+<pre>
+{{Variant
+|original = Kang Roo
+|Shadow Boxer K
+|A really annoying black enemy.
+|Scissoroo
+|Less annoying, only alien.
+|Zang Roo
+|Zombie version.
+|Ms. Madonna
+|Description4
+}}
+</pre>
+
+===Gives===
+{{Variant
+|original = Kang Roo
+|Shadow Boxer K
+|A really annoying black enemy.
+|Scissoroo
+|Less annoying, only alien.
+|Zang Roo
+|Zombie version.
+|Ms. Madonna
+|Description4
+}}
+
+==Inheriting a description==
+<pre>
+{{Variant
+|original = Kang Roo
+|inherit_desc = yes
+|Shadow Boxer K
+|Scissoroo
+|Zang Roo
+|Ms. Madonna
+}}
+</pre>
+
+===Gives===
+These descriptions were all defined in [[Kang Roo#Variants]].
+{{Variant
+|original = Kang Roo
+|inherit_desc = yes
+|Shadow Boxer K
+|Scissoroo
+|Zang Roo
+|Ms. Madonna
+}}
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Enemy 1"
+		},
+		"2": {
+			"label": "Desc 1/Enemy 2",
+			"description": "If inheriting descriptions then is second enemy, else is the description for enemy 1"
+		},
+		"original": {
+			"required": true
+		},
+		"inherit_desc": {
+			"type": "boolean"
+		}
+	},
+	"paramOrder": [
+		"original",
+		"inherit_desc",
+		"1",
+		"2"
+	],
+	"format": "{{_\n|_ = _\n}}"
+}
+</templatedata>

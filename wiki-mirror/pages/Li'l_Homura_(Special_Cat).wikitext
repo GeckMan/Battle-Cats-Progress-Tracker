@@ -1,0 +1,172 @@
+'''Li'l Homura''' is a [[:Category:Special Cats|Special Cat]] implemented in [[Version 5.5 Update|Version 5.5]] which can be unlocked as a Stamp Reward during the [[Puella Magi Madoka Magica Collaboration Event]]. [[True Form]] added in [[Version 7.4 Update|Version 7.4]] increases her damage, range, TBA and attack animation length and grants the ability to [[Weaken|Weaken]] [[:Category:Dark Enemies|Dark]] enemies.
+
+{{Cat Info
+|ID = 300
+|rarity = EX
+|name1 = Li'l Homura
+|name2 = Li'l Magical Girl Homura
+|name3 = Li'l Devil Homura
+}}
+
+==Evolution==
+Evolves into '''Li'l Magical Girl Homura''' at level 10.
+
+Evolves into '''Li'l Devil Homura''' when obtained from [[Nutcracker Witch]] (may drop on the 1st and 2nd stage but guaranteed on the 3rd) and is level 20 or above.
+
+==Strategy/Usage==
+Due to her low base stats, this unit is practically useless outside of her combo, [[My Very Best Friend (Combo)|My Very Best Friend]], which greatly improves the performance of those units who possess the Witch Killer ability, like the Ubers in the collab.
+
+==='''True Form'''===
+Li'l Homura's True Form doubles her attack power, which would help her if the final result wasn't so low. To add more salt to the wound, she takes almost twice the amount of time to attack again. She does get a 50% chance to weaken Dark Enemies with over 100% uptime, but due to how fast Dark enemies push and her low health, it's not a great match. By the time you get her True Form, you'd most likely already have [[Flower Cat (Special Cat)|Bombercat]], so her ability is useless.
+
+{{Job|Classification = Combo Slave|TrueClass = Combo Slave & Crowd-Controller|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|My Very Best Friend|"Witch Killer" Effects Up (XL)|Li'l Madoka|Li'l Homura|jpname=最高の友達}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 300
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni300 f00.png
+|Image2 = Uni300 c00.png
+|Image3 = Uni300 s00.png
+|Name1 = Li'l Homura
+|Desc1 = From Madoka Magica The Movie -Rebellion-!<br>A young girl with an indomitable will.
+|Name2 = Li'l Magical Girl Homura
+|Desc2 = From Madoka Magica The Movie -Rebellion-!<br>She will continue fighting until Walpurgisnacht<br>is defeated, at any cost. (Area Attack)
+|Name3 = Li'l Devil Homura
+|Desc3 = From Madoka Magica The Movie -Rebellion-!<br>She will relentlessly consume all things holy.<br>Area attacks might Weaken Dark enemies.
+|Name1 (JP) = ちびほむら (Chibi Homura, Li'l Homura)
+|Desc1 (JP) = 魔法少女まどか☆マギカから参戦！<br>小さな体に強い意志を秘めた少女
+|Transl1 (JP) = Joining from Puella Magi Madoka Magica!<br>A girl with a strong will in her small body
+|Name2 (JP) = ちび魔法少女ほむら (Chibi Mahō Shōjo Homura, Li'l Magical Girl Homura)
+|Desc2 (JP) = 魔法少女まどか☆マギカから参戦！<br>ワルプルギスの夜を倒す<br>その日まで戦い続ける(範囲攻撃)
+|Transl2 (JP) = Joining from Puella Magi Madoka Magica!<br>Continues fighting until the day<br>she defeats Walpurgisnacht (Ranged Attack)
+|Name3 (JP) = ちび悪魔ほむら (Chibi Akuma Homura, Li'l Devil Homura)
+|Desc3 (JP) = 魔法少女まどか☆マギカから参戦！<br>神にも等しく聖なるものを貶めて蝕んでしまった少女<br>たまに黒い敵の攻撃力を下げる(範囲攻撃)
+|Transl3 (JP) = Joining from Puella Magi Madoka Magica!<br>Demeaning something equally holy as god ate away at this girl<br>Sometimes lowers attack power of Dark enemies (Ranged Attack)
+|Name1 (TW) = 小小焰
+|Desc1 (TW) = 從魔法少女小圓來參戰！<br>小小身體卻有超強大意志的少女
+|Name2 (TW) = 魔法少女小小焰
+|Desc2 (TW) = 從魔法少女小圓來參戰！<br>打倒魔女之夜！<br>戰到那一天來臨(範圍攻擊)
+|Name3 (TW) = 惡魔小小焰
+|Desc3 (TW) = 從魔法少女小圓來參戰！<br>侵蝕了神明般的神聖之物的少女<br>有時能使黑色敵人攻擊力下降(範圍攻擊)
+|Name1 (KR) = 꼬마 호무라
+|Desc1 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>작은 체구에 큰 의지를 품은 소녀
+|Name2 (KR) = 꼬마 마법소녀 호무라
+|Desc2 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>발푸르기스의 밤을 쓰러뜨리다<br>그날 까지 계속해서 싸운다(범위 공격)
+|Name3 (KR) = 꼬마 악마 호무라
+|Desc3 (KR) = 마법소녀 마도카☆마기카에서 참전!<br>신에 가까운 성스런 존재를 기만하고 해친 소녀<br>가끔 검은 적의 공격력을 낮춘다(범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 300¢
+*Chapter 2: 450¢
+*Chapter 3: 600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Homura
+|Normal Base HP = 600
+|Normal Base AP = 80
+|Normal Range = 225
+|Normal Foreswing = 7
+|Normal Attack Cooldown = 71
+|Normal Attack Length = 31
+|Normal Speed = 11
+|Normal KB = 2
+|Normal Cost = 300
+|Normal Recharge = 1000
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)
+|Evolved Name = Li'l Magical Girl Homura
+|Evolved Base HP = 600
+|Evolved Base AP = 80
+|Evolved Range = 225
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 36
+|Evolved Speed = 11
+|Evolved KB = 2
+|Evolved Cost = 300
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)
+|True Name = Li'l Devil Homura
+|True Base HP = 600
+|True Base AP = 160
+|True Range = 275
+|True Foreswing = 53
+|True Attack Cooldown = 87
+|True Attack Length = 74
+|True Speed = 11
+|True KB = 2
+|True Cost = 300
+|True Recharge = 1000
+|True Attack Type = Area
+|True Targets = Dark
+|True Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Witch Killer}} [[Witch Killer]] (Deals 5x damage to [[:Category:Witch Enemies|Witches]], only takes 1/10 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 80 damage<br>(30.77 DPS)
+|val-Normal-Attack Range = 225
+|val-Normal-Attack Frequency = 78f <sub>2.6 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 7f <sup>0.23s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(523.08 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(523.08 DPS)
+|val-Evolved-Attack Range = 225
+|val-Evolved-Attack Frequency = 78f <sub>2.6 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+|val-True-Health = 10,200 HP
+|val-True-Attack Power = 2,720 damage<br>(582.86 DPS)
+|val-True-Attack Range = 275
+|val-True-Attack Frequency = 140f <sub>4.67 seconds</sub>
+|val-True-Movement Speed = 11
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 53f <sup>1.77s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-True-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni300 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/301.html
+
+----
+{{CatNav|Li'l Madoka|Kyubey Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Witch Killer Cats]]
+[[Category:Cats requiring Awakening for True Form]]
+[[Category:Anti-Dark Cats]]
+[[Category:Cats with Weaken ability]]

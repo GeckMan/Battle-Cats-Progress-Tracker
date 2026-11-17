@@ -1,0 +1,129 @@
+:''This article is about the Cat Unit. For the enemy, see [[Yuma Kuga & Doge]].''
+'''Yuma Kuga & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by beating any stage in [[World Trigger Collaboration Event#Battle! Tamakoma Second's Ace|Battle! Tamakoma Second's Ace]] during the [[World Trigger Collaboration Event]]. He was added in [[Version 11.9 Update|Version 11.9.2]].
+
+{{Cat Info
+|ID = 678
+|rarity = RR
+|name1 = Yuma Kuga & Cat
+|name2 = Yuma Kuga & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Yuma Kuga & Cat CC''' at level 10.
+
+==Strategy/Usage==
+This unit is similar to [[Mer-Cat (Rare Cat)|Cameraman]], except with a much longer cooldown. This is an enormous drawback, since Cameraman's main strength is her massive DPS when stacked.
+
+Yuma Kuga can be useful in the early game due to a lack of anti-Traitless options, and since unlike Cameraman, there's no requirement to invest in a [[True Form]].
+
+{{Job|Classification=User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 678
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni678 f00.png
+|Image2 = Uni678 c00.png
+|Name1 = Yuma Kuga & Cat
+|Desc1 = Joining from World Trigger! A boy from the<br>Neighborhood with experience on the battlefield.<br>Strong vs Traitless and Red Enemies (Area Atk)
+|Name2 = Yuma Kuga & Cat CC
+|Desc2 = Joining from World Trigger! An Ace Attacker with a<br>Side Effect that lets him see through lies.<br>Strong vs Traitless and Red Enemies (Area Atk)
+|Name1 (JP) = 空閑遊真&ネコ (Kuga Yuma & Neko, Yuma Kuga & Cat)
+|Desc1 (JP) = ワールドトリガーから参戦！近界(ネイバーフッド)<br>からやってきた戦闘経験が豊富な少年<br>属性を持たない敵と赤い敵にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = Joining from World Trigger! A boy from the<br>Neighborhood with plenty of battle experience<br>Strong against Traitless enemies and Red enemies (Ranged attack)
+|Name2 (JP) = 空閑遊真&ネコCC (Kuga Yuma & NekoCC, Yuma Kuga & CatCC)
+|Desc2 (JP) = ワールドトリガーから参戦！相手の嘘を見抜く<br>サイドエフェクトを持つエース攻撃手(アタッカー)<br>属性を持たない敵と赤い敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joining from World Trigger! An ace attacker who has<br>a Side Effect of seeing through oppponents' lies<br>Strong against Traitless enemies and Red enemies (Ranged attack)
+|Name1 (TW) = 空閑遊真&貓咪
+|Desc1 (TW) = 從境界觸發者來參戰！<br>有著豐富的戰鬥經驗，來自近界的少年<br>善於攻擊無屬性和紅色敵人(範圍攻擊)
+|Name2 (TW) = 空閑遊真&貓咪CC
+|Desc2 (TW) = 從境界觸發者來參戰！有著<br>視破謊言的伴隨效應的王牌攻擊手<br>善於攻擊無屬性和紅色敵人(範圍攻擊)
+|Name1 (KR) = 쿠가 유마&고양이
+|Desc1 (KR) = 월드 트리거에서 참전!<br>네이버후드에서 온 전투 경험이 풍부한 소년<br>속성을 가지지 않은 적과 빨간 적에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 쿠가 유마&고양이CC
+|Desc2 (KR) = 월드 트리거에서 참전! 상대의 거짓말을 꿰뚫어보는<br>사이드 이펙트를 가진 에이스 어태커(공격수)<br>속성을 가지지 않은 적과 빨간 적에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Yuma Kuga & Cat
+|Normal Base HP = 600
+|Normal Base AP = 540
+|Normal Range = 250
+|Normal Foreswing = 40
+|Normal Attack Cooldown = 133
+|Normal Attack Length = 91
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 760
+|Normal Attack Type = Area
+|Normal Targets = Red,Traitless
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Yuma Kuga & Cat CC
+|Evolved Base HP = 600
+|Evolved Base AP = 540
+|Evolved Range = 250
+|Evolved Foreswing = 40
+|Evolved Attack Cooldown = 133
+|Evolved Attack Length = 91
+|Evolved Speed = 16
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 760
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Traitless
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 540 damage<br>(93.64 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 173f <sub>5.77 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 9,180 damage<br>(1,591.91 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 9,180 damage<br>(1,591.91 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 173f <sub>5.77 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(51f <sup>1.7s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni678 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/679.html
+
+----
+{{CatNav|Osamu Mikumo & Cat|Chika Amatori & Cat}}
+----
+
+{{World Trigger}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with unique death animations]]

@@ -1,0 +1,73 @@
+{{EnemiesAppearing|Relic Doge|Li'l Doge|Li'l Bun Bun|Mooth|Lowkey|Othom}}
+'''Local Harvest Forecast''' is the second stage in [[Cat-Chasing Village]].
+
+{{Stage Info
+|stage name = [[File:rc117.png]]
+[[File:Mapsn044 01 na en.png]]
+|stage location = [[File:Mapname044 na en.png]]
+|energy = 180
+|enemy castle hp = 960,000 HP
+|enemies = {{Magnification|Relic Doge|150%
+|Li'l Doge|500%
+|Li'l Bun Bun|1,500%
+|Mooth|4,000%
+|Othom|100%}}
+|boss = {{Magnification|Lowkey|100%}}
+|enemies2 = {{Magnification|Relic Doge|180%
+|Li'l Doge|600%
+|Li'l Bun Bun|1,800%
+|Mooth|4,800%
+|Othom|120%}}
+|boss2 = {{Magnification|Lowkey|120%}}
+|enemies3 = {{Magnification|Relic Doge|210%
+|Li'l Doge|700%
+|Li'l Bun Bun|2,100%
+|Mooth|5,600%
+|Othom|140%}}
+|boss3 = {{Magnification|Lowkey|140%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 6,840 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Harvest Yield Broadcast
+|script = 収穫量を占う地方放送
+|romaji = Shūkakuryō o Uranau Chihō Hōsō
+|star = 4
+|sub-chapter = [[Cat-Chasing Village]]
+|difficulty = ★11
+|prev stage = [[Pithouse Academy]]
+|next stage = [[Clay Pot Soul Food]]
+}}
+
+==Battleground==
+*3 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*10 [[Li'l Doge]]s spawn after 5.33 seconds<sup>160f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*2 [[Li'l Bun Bun]]s spawn after 13.33 seconds<sup>400f</sup>, delay 23.33 seconds<sup>700f</sup>.
+*1 [[Mooth]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Lowkey]] spawns as the boss.
+**Infinite [[Li'l Doge]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**5 [[Relic Doge]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**10 [[Li'l Bun Bun]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**1 [[Othom]] spawns.
+**1 [[Othom]] spawns.
+
+==Strategy==
+This stage has a tight startoff  with Relic Doges, Li'l Doges and Li'l Bun Buns applying frontline pressure while Li'l Doge's dodge deny attacks. Mooth isn't much of a concern, but the Othoms certainly are thanks to their very high Omni Strike range. The key to victory is to lure and kill off the Othoms as soon as possible through any means necessary, while other units dispose of the Li'l Bun Buns. Once they are gone, the Li'l Bun Buns become manageable, and Lowkey can be finished off. A precisely-deployed Thunderbolt can help to even out the odds.
+
+==='''Recommended Units'''===
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut]] - In many strategies, Bahamut's presence is mandatory to quickly whittle down the first few Li'l Bun Buns with his very high melee DPS and speed, giving himself and other units a window of opportunity.
+*[[Elder Mask Doron (Special Cat)|Doron]] - Doron despawns after attacking, but his Omni Strikes hit up to 600 range, freezing Relics for 5 seconds even without the level 3 Surge, aided by his extreme health. His True Form might be counterproductive, as his knockback ability can push Othom away and cost a victory. Disabling Othom buys a bit more time to deal with the Li'l Bun Buns before the bulk of the DPS units approach and remove them, followed by a Thunderbolt if necessary. Doron can also be used to fight Lowkey.
+*[[Swimmer Cat (Super Rare Cat)|Fishman]] - A fast rusher with Massive Damage against Floating, Fishman's use is fairly limited in scope, but does come into play on higher crown difficulties by heavily damaging the Li'l Bun Buns. If there is an opportunity, it can land a hit on one of the Othoms while they're defenseless, and the same applies when Lowkey becomes the only major threat.
+*[[Idi:N (Special Cat)|Idi]] - Able to dish out extreme damage to Relics with Immunity to Curse, Idi can rip away large chunks of health from them. Even one or two well-timed hits from her attacks could be the difference between victory and defeat.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]] - Naala is best used during replays, with earlier forms being fairly inconsistent. Being Strong Against Relics with 100% chance to weaken them to 50% for 4 seconds not only allows it to whittle them at range but also reduces their damage, enabling other rushers to survive the Othoms' attacks and possibly kill them off.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling]] - Jelly Dumpling can help to deal chip damage at any point in the stage by firing off level 7 Wave Attacks that practically cover every enemy in the field.
+*[[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] - Although required Curse immune talents, he's able to tank most of the enemies in this stage.
+*[[Phantom Cat (Rare Cat)|Bubble Cat]] - Able to deal with the Li'l Bun Buns easily, effectively removing the rough start and can even deal good damage to Othoms with stepping stones.
+
+==Reference==
+*https://battlecats-db.com/stage/s13044-02.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 94 Stages]]

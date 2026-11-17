@@ -1,0 +1,206 @@
+{{EnemiesAppearing|Dummy|Wyvern|Doge Dark|Shy Boy|Healer|Serum|Todomeki|Dark Otter|Aura|Nono}}
+'''Weak of Spirit''' is the fifth [[Arena of Honor]] of the [[Catclaw Dojo]].
+
+{{Stage Info
+|stage name = [[File:E 283.png]]
+[[File:Mapsn004 00 r en.png]]
+|stage location = [[File:Mapname000 r en.png]]
+|energy = 30
+|enemy castle hp = Unlimited
+|base = {{Magnification|Dummy|0}}
+|enemies = {{Magnification|Doge Dark|0
+|Shy Boy|0
+|Serum|0
+|Dark Otter|0
+|Aura|0
+|Nono|0}}
+|boss = {{Magnification|Wyvern|0
+|Healer|0
+|Todomeki|0
+|Doge Dark|0
+|Shy Boy|0
+|Serum|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 12
+|jpname = Spiritless Training
+|script = 無気力修行
+|romaji = Mukiryoku Shugyō
+|star = 1
+|event = [[Merc Storia Collaboration Event]]
+|dojo-chapter = [[Arena of Honor]]
+|difficulty = ★2
+}}
+
+==Battleground==
+*The enemy base here is a [[Dummy (Enemy Base)|Dummy]].
+*2 [[Nono (Enemy)|Nonos]] spawn after 1.67 seconds<sup>50f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Nono (Enemy)|Nonos]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base takes 1,000 damage:
+**1 [[Serum (Enemy)|Serum]] (50%) spawns as the boss.
+**3 [[Nono (Enemy)|Nonos]] spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 6,000 damage:
+**1 [[Shy Boy]] (100%) spawns as the boss.
+**2 [[Serum (Enemy)|Serums]] (100%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 13,000 damage:
+**1 [[Doge Dark]] (10%) spawns as the boss.
+**2 [[Aura (Enemy)|Auras]] spawn, delay 10 seconds<sup>300f</sup>.
+**5 [[Doge Dark]]s (100%) spawn, delay 3 seconds<sup>90f</sup>.
+**10 [[Doge Dark]]s (100%) spawn, delay 5 seconds<sup>150f</sup>.
+*When the base takes 22,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (50%) spawns as the boss.
+**1 [[Dark Otter]] (100%) spawns.
+**3 [[Doge Dark]]s (150%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 34,000 damage:
+**1 [[Healer (Enemy)|Healer]] (50%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (60%) spawns as the boss.
+**8 [[Doge Dark]]s (150%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (400%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 80,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (100%) spawns as the boss.
+**1 [[Dark Otter]] (100%) spawns.
+**10 [[Doge Dark]]s (250%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 120,000 damage:
+**1 [[Healer (Enemy)|Healer]] (100%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (500%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 170,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (100%) spawns as the boss.
+**15 [[Doge Dark]]s (250%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (500%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 220,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (150%) spawns as the boss.
+**1 [[Dark Otter]] (100%) spawns.
+**10 [[Doge Dark]]s (400%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 270,000 damage:
+**1 [[Healer (Enemy)|Healer]] (150%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (800%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 320,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (150%) spawns as the boss.
+**15 [[Doge Dark]]s (400%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (600%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 370,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (200%) spawns as the boss.
+**1 [[Dark Otter]] (200%) spawns.
+**10 [[Doge Dark]]s (600%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 420,000 damage:
+**1 [[Healer (Enemy)|Healer]] (200%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (1,000%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 470,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (200%) spawns as the boss.
+**15 [[Doge Dark]]s (600%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (1,200%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 520,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (250%) spawns as the boss.
+**1 [[Dark Otter]] (200%) spawns.
+**10 [[Doge Dark]]s (900%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 570,000 damage:
+**1 [[Healer (Enemy)|Healer]] (250%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (1,200%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 620,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (250%) spawns as the boss.
+**15 [[Doge Dark]]s (900%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (1,800%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 720,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (300%) spawns as the boss.
+**1 [[Dark Otter]] (250%) spawns.
+**10 [[Doge Dark]]s (1,200%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 820,000 damage:
+**1 [[Healer (Enemy)|Healer]] (300%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (1,400%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 920,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (300%) spawns as the boss.
+**15 [[Doge Dark]]s (1,200%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (2,400%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 1,020,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (350%) spawns as the boss.
+**1 [[Dark Otter]] (300%) spawns.
+**10 [[Doge Dark]]s (1,500%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 1,120,000 damage:
+**1 [[Healer (Enemy)|Healer]] (350%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (1,600%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 1,220,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (350%) spawns as the boss.
+**15 [[Doge Dark]]s (1,500%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (3,000%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 1,320,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (400%) spawns as the boss.
+**1 [[Dark Otter]] (350%) spawns.
+**10 [[Doge Dark]]s (1,800%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 1,420,000 damage:
+**1 [[Healer (Enemy)|Healer]] (400%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (1,800%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 1,520,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (400%) spawns as the boss.
+**15 [[Doge Dark]]s (1,800%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (3,600%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 1,620,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (450%) spawns as the boss.
+**1 [[Dark Otter]] (400%) spawns.
+**10 [[Doge Dark]]s (2,100%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 1,720,000 damage:
+**1 [[Healer (Enemy)|Healer]] (450%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (2,000%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 1,820,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (450%) spawns as the boss.
+**15 [[Doge Dark]]s (2,100%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (4,200%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 1,920,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (500%) spawns as the boss.
+**1 [[Dark Otter]] (450%) spawns.
+**10 [[Doge Dark]]s (2,400%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 2,020,000 damage:
+**1 [[Healer (Enemy)|Healer]] (500%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (2,200%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 2,120,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (500%) spawns as the boss.
+**15 [[Doge Dark]]s (2,400%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (4,800%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 2,220,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (550%) spawns as the boss.
+**1 [[Dark Otter]] (500%) spawns.
+**10 [[Doge Dark]]s (2,700%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 2,320,000 damage:
+**1 [[Healer (Enemy)|Healer]] (550%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (2,400%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 2,420,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (550%) spawns as the boss.
+**15 [[Doge Dark]]s (2,700%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (5,400%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 2,520,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (600%) spawns as the boss.
+**1 [[Dark Otter]] (550%) spawns.
+**10 [[Doge Dark]]s (3,000%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 2,620,000 damage:
+**1 [[Healer (Enemy)|Healer]] (600%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (2,600%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 2,720,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (600%) spawns as the boss.
+**15 [[Doge Dark]]s (3,000%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (6,000%) spawn, delay 16.67 seconds<sup>500f</sup>.
+*When the base takes 2,820,000 damage:
+**1 [[Todomeki (Enemy)|Todomeki]] (650%) spawns as the boss.
+**1 [[Dark Otter]] (600%) spawns.
+**10 [[Doge Dark]]s (3,300%) spawn, delay 3.33 seconds<sup>100f</sup>.
+*When the base takes 2,920,000 damage:
+**1 [[Healer (Enemy)|Healer]] (650%) spawns as the boss.
+**5 [[Serum (Enemy)|Serums]] (2,800%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 3,020,000 damage:
+**1 [[Wyvern (Enemy)|Wyvern]] (650%) spawns as the boss.
+**15 [[Doge Dark]]s (3,300%) spawn, delay 5 seconds<sup>150f</sup>.
+**2 [[Shy Boy]]s (6,600%) spawn, delay 16.67 seconds<sup>500f</sup>.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The base has unlimited health and can attack Cats that are close to it.
+*You gain no money for defeating enemies.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Reference==
+*https://battlecats-db.com/stage/s11004-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

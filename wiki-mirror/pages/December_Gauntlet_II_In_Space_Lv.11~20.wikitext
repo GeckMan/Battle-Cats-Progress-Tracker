@@ -1,0 +1,163 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Gabriel|Angelic Gory|Doge Dark|Gory Dark|Satan Claus}}
+
+{{Stage Info
+|stage name = [[File:Rc018.png]]
+[[File:Mapsn031 00 a en.png]]
+|stage location = [[File:Mapname031 a en.png]]
+|enemies = {{Magnification|Gabriel|0
+|Angelic Gory|0
+|Doge Dark|0
+|Gory Dark|0}}
+|boss = {{Magnification|Satan Claus|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 6,000
+|max enemies = 50
+|jpname = From Space Lv.X
+|script = 宇宙から Lv.X
+|romaji = Uchū Kara Lv. X
+|star = 1
+|event-chapter = [[December Gauntlet II]]
+|require = Clear [[Christmas in Space (Monthly Event)|Christmas in Space]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Angelic Gory]] spawns after 40 seconds<sup>1,200f</sup>.
+*Infinite [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67 seconds<sup>500f~600f</sup>.
+*1 [[Gory Dark]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Satan Claus]] spawns as the boss after 66.67 seconds<sup>2,000f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn after 20 seconds<sup>600f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+**3 [[Gory Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 40 seconds<sup>1,200f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+!rowspan="2" scope="col" style="text-align: center;" |In Space Lv.
+!colspan="5" style="text-align: center;" |Strength Magnifications
+!rowspan="2" style="text-align: center;" |Energy Cost
+!colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+!scope="col"|[[Gabriel]]
+!scope="col"|[[Angelic Gory]]
+!scope="col"|[[Doge Dark]]
+!scope="col"|[[Gory Dark]]
+!scope="col"|[[Satan Claus]]
+!scope="col"|Treasure
+!scope="col"|Base XP
+|-
+!scope="row"|11
+|100%
+|100%
+|400%
+|250%
+|400%
+|110
+|Speed Up +2
+|2,090
+|-
+!scope="row"|12
+|122%
+|111%
+|444%
+|256%
+|444%
+|110
+|Catamin [A] +2
+|2,090
+|-
+!scope="row"|13
+|144%
+|122%
+|488%
+|262%
+|488%
+|120
+|Cat CPU +2
+|2,280
+|-
+!scope="row"|14
+|166%
+|133%
+|532%
+|268%
+|532%
+|120
+|Rich Cat +2
+|2,280
+|-
+!scope="row"|15
+|188%
+|144%
+|576%
+|274%
+|576%
+|130
+|Platinum Shard +1
+|2,470
+|-
+!scope="row"|16
+|210%
+|155%
+|620%
+|280%
+|620%
+|130
+|Catamin [B] +2
+|2,470
+|-
+!scope="row"|17
+|232%
+|166%
+|664%
+|286%
+|664%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+!scope="row"|18
+|254%
+|177%
+|708%
+|292%
+|708%
+|140
+|Catamin [C] +2
+|2,660
+|-
+!scope="row"|19
+|276%
+|188%
+|752%
+|298%
+|752%
+|150
+|Aku [[Catfruit]] Seed +1
+|2,850
+|-
+!scope="row"|20
+|300%
+|200%
+|800%
+|300%
+|800%
+|150
+|Rare Ticket +1
+|2,850
+|}
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s24031.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

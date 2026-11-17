@@ -1,0 +1,7 @@
+.ranger-navbox.evangelion {
+	--bg-navbox-title: linear-gradient(to right, hsl(124, 74%, 53%) 0%, hsl(268, 36%, 34%) 20%, hsl(268, 36%, 34%) 40%, hsl(268, 36%, 34%) 60%, hsl(268, 36%, 34%) 80%, hsl(124, 74%, 53%) 100%);
+	--bg-sub-table-title: #e20a08;
+	--bg-group-name: hsl(13, 19%, 36%);
+}
+
+/* [[Category:Template stylesheets]] */

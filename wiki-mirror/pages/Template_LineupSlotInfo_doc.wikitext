@@ -1,0 +1,93 @@
+{{Documentation}}
+[[Category:Pages using tooltips]]
+==Usage==
+<pre>
+{{Tooltip
+|{{4}}
+|class = lineup-slot-info
+|data-unitname = {{1}}
+|data-level = {{2}}
+|data-talents = {{3}}
+}}
+</pre>
+*<code><nowiki>{{1}}</nowiki></code> is the name of the unit in the slot.
+*<code><nowiki>{{2}}</nowiki></code> is the level of the unit in the slot.
+*<code><nowiki>{{3}}</nowiki></code> is any details about the talents that the unit requires in a strategy.
+*<code><nowiki>{{4}}</nowiki></code> is the content that will be wrapped such that hovering over will show this template.
+
+This template is used for the popups in the [[Template:Lineup|Lineup template]] inside a span tag to show details (unit name, level, and talents) about a unit in a lineup. The level and talents parameters are not supplied when unnecessary.
+
+==Example==
+<tabber>
+Only Unit=
+<pre>
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+}}
+</pre>
+
+===Result===
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+}}
+
+|-|Without Talent=
+<pre>
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-level = 30+10
+}}
+</pre>
+
+===Result===
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-level = 30+10
+}}
+
+|-|Without Level=
+<pre>
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-talents = Speed Up talent required
+}}
+</pre>
+
+===Result===
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-talents = Speed Up talent required
+}}
+
+|-|Full Usage=
+<pre>
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-level = 30+10
+|data-talents = Speed Up talent required
+}}
+</pre>
+
+===Result===
+{{Tooltip
+|[[File:Uni037 s00.png|80px]]
+|class = lineup-slot-info
+|data-unitname = Jiangshi Cat
+|data-level = 30+10
+|data-talents = Speed Up talent required
+}}
+</tabber>

@@ -1,0 +1,71 @@
+<infobox>
+    <title source="App Name"/>
+	<image source="image"/>
+	<group collapse="closed">
+	    <header>Information</header>
+    	<data source="developer"><label>Developer(s):</label></data>
+    	<data source="publisher"><label>Publisher(s):</label></data>
+    	<data source="platform"><label>Platform(s):</label></data>
+    	<data source="release date"><label>Release Date(s):</label></data>
+    	<data source="genre"><label>Genre(s):</label></data>
+    	<data source="rating"><label>Rating(s):</label></data>
+    	<data source="mode"><label>Mode(s):</label></data>
+    	<data source="price"><label>Price:</label></data>
+	</group>
+</infobox>
+<noinclude>
+== Usage & preview ==
+Type in this:
+
+<pre>
+{{App Info
+|align=
+|mainbg=
+|mainborder=
+|text=
+|App Name=
+|image=
+|imagewidth=
+|caption=
+|headertext=
+|line=
+|headerbg=
+|developer=
+|publisher=
+|platform=
+|release date=
+|genre=
+|rating=
+|mode=
+|price=
+}}
+
+</pre>
+
+to see this:
+
+{{App Info
+|align=This is a test
+|mainbg=This is a test
+|mainborder=This is a test
+|text=This is a test
+|App Name=This is a test
+|image=
+|imagewidth=
+|caption=This is a test
+|headertext=This is a test
+|line=This is a test
+|headerbg=This is a test
+|developer=This is a test
+|publisher=This is a test
+|platform=This is a test
+|release date=This is a test
+|genre=This is a test
+|rating=This is a test
+|mode=This is a test
+|price=This is a test
+}}
+
+
+[{{fullurl:{{ns:Template}}:{{PAGENAME}}}}?action=purge Click here to refresh the preview above]
+</noinclude>

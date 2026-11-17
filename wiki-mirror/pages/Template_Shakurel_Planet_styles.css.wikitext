@@ -1,0 +1,7 @@
+.ranger-navbox.shakurel {
+	--bg-navbox-title: linear-gradient(to right, hsl(5, 81%, 35%) 0%, hsl(5, 81%, 40%) 100%);
+	--bg-sub-table-title: hsl(336, 8%, 36%);
+	--bg-group-name: hsl(8, 67%, 51%);
+}
+
+/* [[Category:Template stylesheets]] */

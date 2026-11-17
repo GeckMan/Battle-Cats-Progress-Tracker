@@ -1,0 +1,83 @@
+{{EnemiesAppearing|Relic Doge|Doge Dark|Ginger Snache|Suidae Piggicus|Mooth|Wild Doge|Iguanidae Ibilujon|Sir Rel|H. Nah}}
+'''Purple Crystal Forest''' is a [[Continuation Stage]] that has a 40% chance to be available upon beating [[Purple Stone Forest IV]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn060 00 ex en.png]]
+|stage location = [[File:Mapname066 h en.png]]
+|energy = N/A
+|enemy castle hp = 1,400,000 HP
+|enemies = {{Magnification|Relic Doge|150%
+|Doge Dark|800%
+|Ginger Snache|500%
+|Suidae Piggicus|100%
+|Mooth|4,000%
+|Wild Doge|200%
+|Sir Rel|150%
+|H. Nah|300%}}
+|boss = {{Magnification|Iguanidae Ibilujon|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Stone]] +5 (40%)<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Gem]] +3 (40%)<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Gem]] +4 (20%)
+|restriction = [[No Continues]]
+|stage type = [[Continuation Stage]]
+|XP = 4,000 XP
+|width = 5,500
+|max enemies = 20
+|jpname = Purple Beast Crystal Jungle
+|script = 紫獣結晶の密林
+|romaji = Muraski Jūkesshou no Mitsurin
+|star = 1
+|event-chapter = [[Hunter's Map IV]]
+|difficulty = ★11
+|prev stage = [[Purple Stone Forest IV]]
+|next stage = N/A
+}}
+
+==Battleground==
+*10 [[Relic Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+*8 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*8 [[Ginger Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 23.33~30 seconds<sup>700f~900f</sup>.
+*2 [[Suidae Piggicus|Suidae Piggici]] spawn after 20 seconds<sup>600f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*3 [[Mooth]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 80~83.33 seconds<sup>2,400f~2,500f</sup>.
+*Infinite [[Wild Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+*1 [[Iguanidae Ibilujon]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+*3 [[Sir Rel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 93.33~96.67 seconds<sup>2,800f~2,900f</sup>.
+*3 [[Sir Rel]]s spawn after 61.33 seconds<sup>1,840f</sup>, delay 93.33~96.67 seconds<sup>2,800f~2,900f</sup>.
+*Infinite [[Sir Rel]]s spawn after 62 seconds<sup>1,860f</sup>, delay 93.33~96.67 seconds<sup>2,800f~2,900f</sup>.
+*1 [[H. Nah]] spawns after 86.67 seconds<sup>2,600f</sup>.
+
+==Strategy==
+This stage introduces Iguanidae Ibilujon, a stat block of an enemy that will push over the player even with UL [[:Category:Mythic Cats|Mythic Cats]]. Your main source of money in this stage will be the various Doge Darks and Mooths that spawn.
+
+Your first priority is to get rid of the Suidae Piggicus as quickly as you possibly can. Using [[Ancient Egg: N101 (Rare Cat)|Courier]], this can be done relatively easily. After this, Ibilujon should spawn—note the lack of [[Immune to Freeze|Freeze Immunity]] on Ibilujon, meaning Doron can work perfectly against it. However, be wary that Ibilujon has [[Counter-Surge]], so if Doron's surge lands on Ibilujon it will be reflected onto your entire stack of units. Awakened Naala is an excellent source of damage against Ibilujon, since if you use her correctly, she can take out half of Ibilujon's health before she dies.
+
+The biggest dangers in this stage are the periodic waves of Sir Rel and eventually H. Nah, meaning you'll want to bring along a unit like Slime Cat to deal with them. Do remember that Slime Cat has pitifully low health and will die to everything, so time him well. Don't expect Slime Cat to work against Ibilujon, as it is [[Immune to Waves|Wave Immune]].
+
+==='''Recommended Units'''===
+''Remember before just copying ten units from this section that this is a Continuation stage, meaning you still have to have a lineup that clears the previous stage.''
+*[[Dogumaru (Special Cat)|Reborn Warrior Doguemon]]: [[Resistant|Resists]] both Ibilujon and H. Nah.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: While Ibilujon is [[Immune to Knockback]] and [[Immune to Weaken|Weaken]], he's still able to be [[Freeze|Frozen]] by Doron. Normally, Ibilujon's Counter-Surge would be a problem, if not for the fact that Doron's [[Surge Attack]] is pretty inconsistent, and that even if it does land on Ibilujon and create a Counter-Surge, Naala and other [[Immune to Surge|Surge Immune]] units don't take any damage. In addition, Doron also helps for the Sir Rels.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: Basically a required unit for Ibilujon pre-Luza, with high stats vs. Relics and Behemoths.
+*[[Ancient Egg: N000 (Special Cat)|Ape Lord Luza]]: Deals 7.5 times his normal damage against Ibilujon and Resists him by nearly 7 times through [[Behemoth Slayer]].
+*[[Idi:N (Special Cat)|Idi:N2/NX]]: Combined with Doron's Freeze, you can get [[Massive Damage]] off with properly timed Idi chains. If you have Idi's True Form, this becomes [[Insane Damage]].
+*[[Ancient Egg: N112 (Rare Cat)|Cat Egg Pod]]: Eggpod's 50% Dodge vs. Behemoths means it resist an incredibly large number of attacks against Ibilujon, however, it is vulnerable to the other peons.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Clears peons for [[Extra Money]]. Also good for Suidae Piggicus.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Clears Mooth very well. Make sure your Fishman can tank an Ibilujon hit (level 48).
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: A strong crowd-control option for every enemy here.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Handles the Sir Rel waves very easily, but be mindful of his health.
+
+==='''Recommended Ubers'''===
+
+*[[The Grateful Crane (Uber Rare Cat)|Supernova Cosmo]]: Can clear the Sir Rel waves if he attacks while they are out, also does good chip to every enemy.
+
+*[[Lone Moon Lunos (Uber Rare Cat)|Lunos the Eclipsed]]: Has enough health to tank for a decent amount of time, especially against H. Nah. His conjure also lets him deal with the Sir Rel waves and get money from the Mooths.
+
+==Reference==
+*https://battlecats-db.com/stage/s04060-01.html
+
+{{EnigmaStages}}
+[[Category:Event Stages]]
+[[Category:Continuation Stages]]
+[[Category:Enigma Stages]]

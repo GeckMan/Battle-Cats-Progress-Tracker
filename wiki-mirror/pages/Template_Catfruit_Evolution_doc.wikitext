@@ -1,0 +1,231 @@
+{{documentation}}
+{{clear}}
+==Documentation==
+Use this template in the Catfruit Evolution section, whenever a Cat Unit needs Catfruit to evolve into its True Form or Ultra Form. If used in the main namespace, [[:Category:Cats by evolution material|categories]] for the passed Catfruit types will be added automatically.
+
+==Usage==
+You have 5 fields for the first row to edit, 6 fields for the second row. There are also parameters for the names, images, and evolution description. If the unit also has an Ultra Form evolution, there are additional parameters.
+
+===First Row===
+The first row displays the pictures. "Catfruit 1" to "Catfruit 5" are Fields 1 to 5, Field 6 is already pre-filled with the XP icon.
+
+To put a picture of Catfruit in one of the cell, just type one of these entries:
+
+*Gold Catfruit: GoldFruit, GoldSeed
+*Elder Catfruit: ElderFruit, ElderSeed
+*Epic Catfruit: EpicFruit, EpicSeed
+*Aku Catfruit: AkuFruit, AkuSeed
+*Catfruit: PurpleFruit, RedFruit, BlueFruit, GreenFruit, YellowFruit
+*Catfruit Seeds: PurpleSeed, RedSeed, BlueSeed, GreenSeed, YellowSeed
+*Behemoth Stones: PurpleStone, RedStone, BlueStone, GreenStone, YellowStone, EpicStone
+*Behemoth Gems: PurpleGem, RedGem, BlueGem, GreenGem, YellowGem
+
+If you forget to fill one of these fields, then a question mark icon will appear instead.
+
+===Second Row===
+The second row displays, in the same order, the number of each of these ingredients you need.
+
+If you forget to fill one of these fields, a question mark will appear instead.
+
+==Example==
+<tabber>
+Parameters (True Form)=
+<pre>
+{{Catfruit Evolution
+|Evolved Name =
+|Evolved Image =
+|True Name =
+|True Image =
+|True Description =
+|Catfruit1 =
+|Catfruit2 =
+|Catfruit3 =
+|Catfruit4 =
+|Catfruit5 =
+|Quantity Catfruit1 =
+|Quantity Catfruit2 =
+|Quantity Catfruit3 =
+|Quantity Catfruit4 =
+|Quantity Catfruit5 =
+|Quantity XP =
+}}
+</pre>
+
+|-|Example Usage (True Form)=
+<pre>
+{{Catfruit Evolution
+|Evolved Name = Erphuan
+|Evolved Image = Uni361 c00.png
+|True Name = Aervanta
+|True Image = Uni361 s00.png
+|True Description = True Form evolution improves<br>attack power and defense!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x4
+|Quantity Catfruit3 = x7
+|Quantity Catfruit4 = x4
+|Quantity Catfruit5 = x3
+|Quantity XP = 1000000
+}}
+</pre>
+
+===Result===
+{{Catfruit Evolution
+|Evolved Name = Erphuan
+|Evolved Image = Uni361 c00.png
+|True Name = Aervanta
+|True Image = Uni361 s00.png
+|True Description = True Form evolution improves<br>attack power and defense!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x4
+|Quantity Catfruit3 = x7
+|Quantity Catfruit4 = x4
+|Quantity Catfruit5 = x3
+|Quantity XP = 1000000
+}}
+
+|-|Parameters (True/Ultra Form)=
+<pre>
+{{Catfruit Evolution
+|Evolved Name =
+|Evolved Image =
+|True Name =
+|True Image =
+|True Description =
+|Catfruit1 =
+|Catfruit2 =
+|Catfruit3 =
+|Catfruit4 =
+|Catfruit5 =
+|Quantity Catfruit1 =
+|Quantity Catfruit2 =
+|Quantity Catfruit3 =
+|Quantity Catfruit4 =
+|Quantity Catfruit5 =
+|Quantity XP =
+|Ultra Name =
+|Ultra Image =
+|Ultra Description =
+|Catfruit1 =
+|Catfruit2 =
+|Catfruit3 =
+|Catfruit4 =
+|Catfruit5 =
+|Quantity Catfruit1 =
+|Quantity Catfruit2 =
+|Quantity Catfruit3 =
+|Quantity Catfruit4 =
+|Quantity Catfruit5 =
+|Quantity XP =
+}}
+</pre>
+
+|-|Example Usage (True/Ultra Form)=
+<pre>
+{{Catfruit Evolution
+|Evolved Name = Erphuan
+|Evolved Image = Uni361 c00.png
+|True Name = Aervanta
+|True Image = Uni361 s00.png
+|True Description = True Form evolution improves<br>attack power and defense!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x4
+|Quantity Catfruit3 = x7
+|Quantity Catfruit4 = x4
+|Quantity Catfruit5 = x3
+|Quantity XP = 1,000,000
+|Ultra Name = Aervantex
+|Ultra Image = Uni361 u00.png
+|Ultra Description = Ultra Form gains increased defense and<br>a wider attack range with longer reach!<br>Plus, gains Knockback vs. Aliens!
+|Catfruit1 Ultra = BlueGem
+|Catfruit2 Ultra = PurpleStone
+|Catfruit3 Ultra = GreenStone
+|Quantity Catfruit1 Ultra = x1
+|Quantity Catfruit2 Ultra = x5
+|Quantity Catfruit3 Ultra = x5
+|Quantity XP Ultra = 1000000
+}}
+</pre>
+
+===Result===
+{{Catfruit Evolution
+|Evolved Name = Erphuan
+|Evolved Image = Uni361 c00.png
+|True Name = Aervanta
+|True Image = Uni361 s00.png
+|True Description = True Form evolution improves<br>attack power and defense!
+|Catfruit1 = PurpleFruit
+|Catfruit2 = RedFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x3
+|Quantity Catfruit2 = x4
+|Quantity Catfruit3 = x7
+|Quantity Catfruit4 = x4
+|Quantity Catfruit5 = x3
+|Quantity XP = 1000000
+|Ultra Name = Aervantex
+|Ultra Image = Uni361 u00.png
+|Ultra Description = Ultra Form gains increased defense and<br>a wider attack range with longer reach!<br>Plus, gains Knockback vs. Aliens!
+|Catfruit1 Ultra = BlueGem
+|Catfruit2 Ultra = PurpleStone
+|Catfruit3 Ultra = GreenStone
+|Quantity Catfruit1 Ultra = x1
+|Quantity Catfruit2 Ultra = x5
+|Quantity Catfruit3 Ultra = x5
+|Quantity XP Ultra = 1000000
+}}
+</tabber>
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"Quantity XP Ultra": {},
+		"Evolved Image": {},
+		"Evolved Name": {},
+		"Quantity XP": {},
+		"Catfruit1": {},
+		"Quantity Catfruit1": {},
+		"Catfruit2": {},
+		"Quantity Catfruit2": {},
+		"Catfruit3": {},
+		"Quantity Catfruit3": {},
+		"Catfruit4": {},
+		"Quantity Catfruit4": {},
+		"Catfruit5": {},
+		"Quantity Catfruit5": {},
+		"True Image": {},
+		"True Name": {},
+		"True Description": {},
+		"Catfruit1 Ultra": {},
+		"Quantity Catfruit1 Ultra": {},
+		"Catfruit2 Ultra": {},
+		"Quantity Catfruit2 Ultra": {},
+		"Catfruit3 Ultra": {},
+		"Quantity Catfruit3 Ultra": {},
+		"Catfruit4 Ultra": {},
+		"Quantity Catfruit4 Ultra": {},
+		"Catfruit5 Ultra": {},
+		"Quantity Catfruit5 Ultra": {},
+		"Ultra Image": {},
+		"Ultra Name": {},
+		"Ultra Description": {}
+	}
+}
+</templatedata>

@@ -1,0 +1,122 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Nepal (Into the Future)/Outbreak|here]].''
+'''Nepal''' is the 18th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc028.png]]
+|stage location = [[File:Nepal.png]]
+'''Into The Future'''
+|energy = 46
+|energy2 = 56
+|energy3 = 66
+|enemy castle hp = 45,000 HP
+|enemy castle hp2 = 67,500 HP
+|enemy castle hp3 = 90,000 HP
+|enemies = {{Magnification|Doge|300%
+|Snache|300%
+|Gory|300%
+|Hyppoh|70%
+|Croco|300%}}
+|enemies2 = {{Magnification|Doge|800%
+|Snache|800%
+|Gory|800%
+|Hyppoh|250%
+|Croco|800%
+|Mooth|800%}}
+|enemies3 = {{Magnification|Shibalien|500%
+|Gabriel|250%
+|Hyppoh|500%
+|Heavenly Hippoe|250%
+|Imperator Sael|500%
+|Mooth|1,200%}}
+|treasure = - [[Treasure|Prayer Flags]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''8,500''': [[Cat Food]] +10<br>
+'''6,500''': Cat CPU +1
+|score reward3 = '''6,000''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 9
+|XP = 5,500 XP
+|width = 4,500
+|jpname = Nepal
+|script = ネパール
+|romaji = Nepāru
+|jptreasure = Faith
+|twname = India
+|twscript = 印度
+|twromaji = Yìndù
+|twtreasure = Prince of India
+|krname = Nepal
+|krscript = 네팔
+|krromaji = Nepal
+|krtreasure = Himalayan Stone
+|chapter = [[Into the Future]]
+|prev stage = [[India (Into the Future)|India]]
+|next stage = [[Thailand (Into the Future)|Thailand]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Doge|Snache|Gory|Hyppoh|Croco}}
+*Infinite [[Doge]]s spawn, delay 5~13.33 seconds<sup>150f~400f</sup>.
+*Infinite [[Snache]]s spawn after 13.33 seconds<sup>400f</sup>, delay 5~13.33 seconds<sup>150f~400f</sup>.
+*3 [[Gory|Gories]] spawn after 30 seconds<sup>900f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*3 [[Gory|Gories]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 60 seconds<sup>1,800f</sup>.
+*1 [[Hyppoh]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Croco]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hyppoh]] spawns.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Doge|Snache|Gory|Hyppoh|Croco|Mooth}}
+*Infinite [[Doge]]s spawn, delay 5~13.33 seconds<sup>150f~400f</sup>.
+*Infinite [[Snache]]s spawn after 13.33 seconds<sup>400f</sup>, delay 5~13.33 seconds<sup>150f~400f</sup>.
+*3 [[Gory|Gories]] spawn after 20 seconds<sup>600f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*3 [[Gory|Gories]] spawn after 23 seconds<sup>690f</sup>, delay 53.33 seconds<sup>1,600f</sup>.
+*Infinite [[Hyppoh]]s spawn after 36.67 seconds<sup>1,100f</sup>, delay 53.33~80 seconds<sup>1,600f~2,400f</sup>.
+*Infinite [[Croco]]s spawn after 40 seconds<sup>1,200f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Mooth]]s spawn after 60 seconds<sup>1,800f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hyppoh]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Shibalien|Gabriel|Hyppoh|Heavenly Hippoe|Imperator Sael|Mooth}}
+*Infinite [[Shibalien]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Shibalien]]s spawn after 4 seconds<sup>120f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*Infinite [[Gabriel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Hyppoh]]s spawn after 23.33 seconds<sup>700f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Hyppoh]]s spawn after 30 seconds<sup>900f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Heavenly Hippoe]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*3 [[Imperator Sael]]s spawn after 50 seconds<sup>1,500f</sup>, delay 20 seconds<sup>600f</sup>.
+*Infinite [[Mooth]]s spawn after 60 seconds<sup>1,800f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mooth]] spawns.
+**1 [[Mooth]] spawns.
+**1 [[Mooth]] spawns.
+
+==Strategy==
+==='''Chapter 1 & Chapter 2'''===
+Use [[Valkyrie Cat (Special Cat)|True Valkyrie Cat]] or [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] as your main attacker while backing them up with [[Lizard Cat (Normal Cat)|Dragon Cats]], meatshields and tanky units like [[Titan Cat (Normal Cat)|Mythical Titan Cat]] or [[Fish Cat (Normal Cat)|Whale Cat]].
+
+=== '''Chapter 3''' ===
+Any cat that counters [[:Category:Angel Enemies|Angels]] (such as [[Rocker Cat (Rare Cat)|Rocker Cat]]) will help here. Don't forget to add any [[:Category:Anti-Alien Cats|anti-alien]] cats in your lineup!
+
+==Gallery==
+<gallery>
+Wc029.png|Taiwanese version's base (India)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''India'''; [[India (Into the Future)|stage 17]] is Dubai and Nepal is moved to [[Thailand (Into the Future)|stage 19]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-18.html
+*https://battlecats-db.com/stage/s03004-18.html
+*https://battlecats-db.com/stage/s03005-18.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

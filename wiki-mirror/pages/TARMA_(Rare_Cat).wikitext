@@ -1,0 +1,128 @@
+'''TARMA''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 216
+|rarity = RR
+|name1 = TARMA
+|name2 = TARMA CC
+}}
+
+==Evolution==
+Evolves into '''TARMA CC''' at level 10.
+
+==Strategy/Usage==
+TARMA is essentially a slightly longer-ranged [[Li'l Gross Cat (Special Cat)|Li'l Macho Legs]], at least in terms of knocking back Aliens. His Area Attack makes him quite good at doing so, as well. However, knocking back Aliens is typically a bad thing because of their numerous backliners. If you would need to knockback an Alien though, [[Ancient Egg: N105 (Rare Cat)|Racquet Cat]] is more useful because she attacks twice.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 216
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni216 f00.png
+|Image2 = Uni216 c00.png
+|Name1 = TARMA
+|Desc1 = Recruited from the Metal Slug series!<br>This captain takes pride in his trademark shades.<br>Might knockback Aliens (Area Atk)
+|Name2 = TARMA CC
+|Desc2 = Recruited from the Metal Slug series!<br>Master of the shotgun, Marco's best friend.<br>Might knockback Aliens (Area Atk)
+|Name1 (JP) = ターマ
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>正規軍大尉。サングラスがトレードマーク<br>たまにエイリアンをふっとばす(範囲攻撃)
+|Transl1 (JP) = Joining from the Metal Slug series!<br>Captain of the regular army. His trademark is sunglasses<br>Sometimes knockbacks Aliens (Range Attack)
+|Name2 (JP) = ターマCC
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>ショットガンをぶっ放す、マルコの親友<br>たまにエイリアンをふっとばす(範囲攻撃)
+|Transl2 (JP) = Joining from the Metal Slug series!<br>Marco's best friend, firing a shotgun<br>Sometimes knockbacks Aliens (Range Attack)
+|Name1 (TW) = 塔瑪
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>正規軍上尉。墨鏡是其註冊商標<br>有時候會打飛異星戰士（範圍攻擊）
+|Name2 (TW) = 塔瑪CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>手握散彈槍的馬可至交<br>有時候會打飛異星戰士（範圍攻擊）
+|Name1 (KR) = 타마
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>정규군 대위. 선글라스가 트레이드 마크<br>가끔씩 에이리언을 날려버린다 (범위 공격)
+|Name2 (KR) = 타마CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>샷건을 다루는 마르코의 절친<br>가끔씩 에이리언을 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 665¢
+*Chapter 2: 997¢
+*Chapter 3: 1,330¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = TARMA
+|Normal Base HP = 270
+|Normal Base AP = 51
+|Normal Range = 315
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 117
+|Normal Attack Length = 46
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 665
+|Normal Recharge = 600
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Evolved Name = TARMA CC
+|Evolved Base HP = 320
+|Evolved Base AP = 73
+|Evolved Range = 315
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 117
+|Evolved Attack Length = 46
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 665
+|Evolved Recharge = 600
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 270 HP
+|val-Normal-Attack Power = 51 damage<br>(12.86 DPS)
+|val-Normal-Attack Range = 315
+|val-Normal-Attack Frequency = 119f <sub>3.97 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 4,590 HP
+|val-Normal-MaxAttack = 867 damage<br>(218.57 DPS)
+|val-Evolved-Health = 5,440 HP
+|val-Evolved-Attack Power = 1,240 damage<br>(312.61 DPS)
+|val-Evolved-Attack Range = 315
+|val-Evolved-Attack Frequency = 119f <sub>3.97 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(44f <sup>1.47s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni216 f00}}
+
+==Trivia==
+*TARMA is based off of [[wikia:metalslug:Tarma Roving|Tarma Roving]] from the Metal Slug series.
+*TARMA's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/217.html
+
+----
+{{CatNav|MARCO|ERI}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]

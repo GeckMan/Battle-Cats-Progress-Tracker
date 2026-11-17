@@ -1,0 +1,58 @@
+{{EnemiesAppearing|Squire Rel|Sir Seal|Imperator Sael|Hyppoh|Croco|Shy Boy|Maawth}}
+'''Impact Site (Veteran)''' is the second stage in [[Cavern of Comets]].
+
+{{Stage Info
+|stage name = [[File:rc006.png]]
+[[File:Mapsn150 01 s en.png]]
+|stage location = [[File:Mapname150 s en.png]]
+|energy = 150
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Squire Rel|400%
+|Sir Seal|400%
+|Imperator Sael|100%
+|Hyppoh|100%
+|Croco|400%
+|Shy Boy|400%
+|Maawth|100%}}
+|boss = {{Magnification|Croco|10%}}
+|treasure = One of the following (unlimited):<br>
+- Bricks +3 (16.5%)<br>
+- Meteorite +3 (16.5%)<br>
+- Bricks +2 (28.5%)<br>
+- Meteorite +2 (28.5%)<br>
+- Bricks +1 (5%)<br>
+- Meteorite +1 (5%)
+|XP = 2,850 XP
+|width = 3,600
+|max enemies = 15
+|script = 隕石墜落跡地 超上級
+|star = 1
+|event-chapter = [[Cavern of Comets]]
+|difficulty = ★5
+|prev stage = [[Impact Site (Normal)]]
+|next stage = [[Impact Site (Insane)]]
+}}
+
+==Battleground==
+*Infinite [[Squire Rel]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Sir Seal]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Imperator Sael]] spawns after 4.67 seconds<sup>140f</sup>.
+*1 [[Hyppoh]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Croco]] (10%) spawns as the boss.
+**3 [[Hyppoh]]s spawn, delay 16.67~18.67 seconds<sup>500f~560f</sup>.
+**5 [[Imperator Sael]]s spawn, delay 6~8 seconds<sup>180f~240f</sup>.
+**5 [[Sir Seal]]s spawn, delay 6~8 seconds<sup>180f~240f</sup>.
+**Infinite [[Croco]]s (400%) spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Shy Boy]]s spawn, delay 23.33~25.33 seconds<sup>700f~760f</sup>.
+**2 [[Maawth]]s spawn, delay 13.33~15.33 seconds<sup>400f~460f</sup>.
+
+==Strategy==
+An ordinary level akin in difficulty to any [[Into the Future]] Chapter 1 stage. Use long ranged attackers like [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] to kill the Maawth, while your [[Fish Cat (Normal Cat)|Whale Cats]] and/or [[Salon Cat (Rare Cat)|Paris Cats]] handle everything else.
+
+==Reference==
+*https://battlecats-db.com/stage/s01150-02.html
+
+{{Guerrilla}}
+[[Category:Builder's Blitz Stages]]
+[[Category:Event Stages]]

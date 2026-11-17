@@ -1,0 +1,103 @@
+'''The Perfect Cyclone''' (ハリケーンサイクロン, ''Harikēn Saikuron'', '''Hurricane Cyclone''') is a [[:Category:Floating Enemies|Floating]] [[:Category:Cyclones|Cyclone]] introduced in [[Oncoming Storm (Insane)|Red Sky at Morning]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = The Perfect Cyclone
+|image = E 236.png
+|first appearance = [[Oncoming Storm (Insane)|Red Sky at Morning]]<br>
+'''ZL''': [[Costly Emigration|Sub-chapter 14 - Costly Emigration]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+The Perfect Cyclone has an enormous standing range of 650 but a blind spot of 250 range. However, despite the very obvious weakness, it is almost impossible to get close enough because of its insanely fast attack rate compared to other [[:Category:Long Distance Enemies|Long Distance Enemies]], greatly increasing its DPS even with low attack power for a Cyclone.
+
+==Strategy==
+:''See each respective stage for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 236
+|Type = [[:Category:Floating Enemies|Floating]]
+|Image1 = Enemy icon 236.png
+|Name1 = The Perfect Cyclone
+|Desc1 = A Category-5 storm that grew massive by<br>consuming lesser cyclones. Repels threats<br>from uber long distance. Meteorologists say<br>getting near its eye disables its knockback.
+|Name1 (JP) = ハリケーンサイクロン (Harikēn Saikuron, Hurricane Cyclone)
+|Desc1 (JP) = 異常気象より生まれし超大型で猛烈な大渦<br>遠距離からの容赦ない暴風は<br>いかなる者もよせつけない。<br>台風の目に近づけば風が止むというが...
+|Transl1 (JP) = A super-large and furious great vortex born from abnormal weather conditions,<br>this relentless windstorm keeps<br>all away from long distance.<br>It is said that its winds will cease if you get close enough to its eye...
+|Name1 (TW) = 颶風旋風
+|Desc1 (TW) = 異常氣象中誕生的超大型猛烈大渦，<br>遠距離攻撃不留情的暴風<br>是不允許任何人踏入地盤的。<br>據說越近颱風眼時暴風會停止...
+|Name1 (KR) = 허리케인 사이클론
+|Desc1 (KR) = 이상기상으로 인해 태어난 초대형 맹렬한 거대 소용돌이<br>원거리로부터의 용서없는 폭풍은<br>어떠한 자도 다가오지 못하게 한다.<br>태풍의 눈에 가까이 가면 바람은 멈춘다고 하지만...
+}}
+
+==Variants==
+{{Variant
+|original = The Perfect Cyclone
+|inherit_desc = true
+|E-792
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 14-6: [[Costly Emigration]] (150%)
+*Stage 36-4: [[Sugar Coma]] (180%)
+
+===[[Special Events|Event Stages]]===
+*Red Sky at Morning: [[Oncoming Storm (Insane)]] (100%)
+*[[Deadly Carnival II]]: [[Tornado Carnival II (Deadly)]] (100%)
+*[[Red Sky at Night]]:
+**[[Wrath of Red Sky (Deadly)]] (100%)
+**[[Revenge of Red Sky (Merciless)]] (130%)
+*[[Otherworld Colosseum#Dirt Cheap 2|Otherworld Colosseum]]: [[Round 3 (Dirt Cheap 2)|Round 3]] (130%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = The Perfect Cyclone
+|Health = 750000
+|Attack Power = 3666
+|Attack Range = 650
+|Attack Type = Area
+|Time Between Attacks = 6
+|Movement Speed = 4
+|Knockback = 3
+|Foreswing = 1
+|Backswing = 5
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~650)
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+236 e.png|The Perfect Cyclone's spritesheet
+IdlePerfectCyclone.gif|The Perfect Cyclone's moving animation
+Medal 024.png|The Perfect Cyclone on the ''Perfect Threat'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*The Perfect Cyclone's name and description may be references to ''Dragon Ball Z''<nowiki>'</nowiki>s [[wikia:dragonball:Cell|Perfect Cell]]: it achieved its final form by consuming other [[:Category:Cyclones|Cyclone]]s.
+**Its name also references the phrase "perfect storm," which originates from the movie ''[[wikipedia:The Perfect Storm (film)|The Perfect Storm]]''.
+*Prior to [[Version 15.0 Update|Version 15.0]], its description misspelled "Meteorologists" as "Meteorolo'''i'''gists".
+*Contrary to its description, this enemy does not have the knockback ability.
+**However, this appears to be a localization oversight, as the Japanese description mentions that its attacks will cease up close.
+*The Perfect Cyclone has the longest range of all [[:Category:Cyclones|Cyclone]]s.
+*[[E-792]]'s Japanese description implies that she is The Perfect Cyclone's niece.
+
+==Reference==
+*https://battlecats-db.com/enemy/238.html
+
+----
+{{EnemyNav|Mr. Mole|Nyamusu}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Cyclones]]

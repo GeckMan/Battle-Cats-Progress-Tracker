@@ -1,0 +1,77 @@
+:''For other uses, see [[Vega (disambiguation)]].''
+'''Vega''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|Version 10.0]].
+
+{{Enemy Info
+|name = Vega
+|image = E 530.png
+|first appearance = [[The Clawed Rondo (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+This enemy has moderate health, moderate damage, long range with massive effective range and a 100% chance to [[Freeze|freeze]] cats for 3 seconds, all with a high knockback count.
+
+==Strategy==
+This enemy has a nasty [[Long Distance]] attack, but a very small inner range, meaning that it is very vulnerable to rushers such as [[Crazed Cow Cat (Super Rare Cat)|Manic Lion]] or [[Bahamut Cat (Special Cat)|Awakened Bahamut]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[The Clawed Rondo (Easy)|The Clawed Rondo]] (10%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]: [[The Clawed Rondo (Normal)|The Clawed Rondo]] (60%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]:
+**[[The Clawed Rondo (Hard)|The Clawed Rondo]] (110%)
+**[[The Supreme Evil (Hard)|The Supreme Evil]] (140%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS VEGA (Normal)]] (9%)
+**[[VS VEGA (Insane)]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest|I Seek the Strongest]] (35%, 70%, 100%, 130%, 160%, 190%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] (35%, 70%, 100%, 130%, 160%, 190%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Vega
+|Health = 360000
+|Attack Power = 5000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 175
+|Movement Speed = 25
+|Knockback = 6
+|Foreswing = 48
+|Backswing = 58
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 400~800)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+530 e.png|Vega's spritesheet
+IdleVega.gif|Vega's walking animation
+</gallery>
+
+==Trivia==
+*In the Japanese Version of Battle Cats, this enemy is known as [[Balrog (Enemy)|Balrog]] instead.
+
+==Reference==
+*https://battlecats-db.com/enemy/532.html
+
+----
+{{EnemyNav|Balrog|Sagat}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

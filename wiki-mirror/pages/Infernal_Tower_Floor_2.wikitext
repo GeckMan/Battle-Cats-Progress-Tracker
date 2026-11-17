@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Pumpkin Doge|Cerberus Kids|Aku Doge|Aku Gory}}
+:''Not to be confused with the [[Heavenly Tower]] or [[Citadel]] versions of Floor 2.''
+'''Floor 2''' is the 2nd floor of [[Infernal Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 01 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 100
+|enemy castle hp = 80,000 HP
+|enemies = {{Magnification|Doge|400%
+|Snache|400%
+|Those Guys|400%
+|Pumpkin Doge|400%
+|Cerberus Kids|100%
+|Aku Doge|100%}}
+|boss = {{Magnification|Aku Gory|100%}}
+|treasure = One of the following (1 time):<br>
+- [[Catamin]] [A] +3 (34%)<br>
+- [[Catamin]] [B] +3 (33%)<br>
+- [[Catamin]] [C] +3 (33%)
+|XP = 1,900 XP
+|width = 4,000
+|max enemies = 10
+|jpname = 2nd Floor
+|script = 2階
+|romaji = 2 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★5
+|prev stage = [[Infernal Tower/Floor 1|Floor 1]]
+|next stage = [[Infernal Tower/Floor 3|Floor 3]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 10.67~18.67 seconds<sup>320f~560f</sup>.
+*Infinite [[Snache]]s spawn, delay 20~53.33 seconds<sup>600f~1,600f</sup>.
+*Infinite [[Those Guys]] spawn after 40 seconds<sup>1,200f</sup>, delay 20~53.33 seconds<sup>600f~1,600f</sup>.
+*Infinite [[Pumpkin Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 10.67~18.67 seconds<sup>320f~560f</sup>.
+*When the base reaches 99% HP:
+**1 [[Aku Gory]] spawns as the boss.
+**6 [[Those Guys]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**Infinite [[Cerberus Kids]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**3 [[Aku Doge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+As with [[Infernal Tower/Floor 1|Floor 1]], no particular strategy is needed. Bring a few [[:Category:Meatshield-class Cats|meatshields]] and [[:Category:Area Attack Cats|Area Attackers]] such as [[Paris Cat]] and you should be fine.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-02.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]
+[[Category:Event Stages]]

@@ -1,0 +1,64 @@
+{{EnemiesAppearing|Loris|Relic Doge|Cyberhorn|LeMurr}}
+'''VIP Warehouse''' is the fourth stage in [[Drunken Foundry]].
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Mapsn021 03 na en.png]]
+|stage location = [[File:Mapname021 na en.png]]
+|energy = 195
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Loris|100%
+|Relic Doge|100%
+|Cyberhorn|1,200%
+|LeMurr|2,400%}}
+|boss = {{Magnification|Relic Doge|1%}}
+|enemies2 = {{Magnification|Loris|130%
+|Relic Doge|130%
+|Cyberhorn|1,560%
+|LeMurr|3,120%}}
+|boss2 = {{Magnification|Relic Doge|1%}}
+|enemies3 = {{Magnification|Loris|170%
+|Relic Doge|170%
+|Cyberhorn|2,040%
+|LeMurr|4,080%}}
+|boss3 = {{Magnification|Relic Doge|1%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 7,410 XP
+|width = 5,000
+|max enemies = 15
+|jpname = VIP Warehouse
+|script = VIP倉庫
+|romaji = VIP Sōko
+|star = 4
+|sub-chapter = [[Drunken Foundry]]
+|difficulty = ★10
+|prev stage = [[Unmoving Conveyer]]
+|next stage = [[Rebel Scraps]]
+}}
+
+==Battleground==
+*1 [[Loris]] spawns after 3.33 seconds<sup>100f</sup>.
+*8 [[Relic Doge]]s (100%) spawn after 20 seconds<sup>600f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Relic Doge]] (1%) spawns as the boss.
+**2 [[Cyberhorn]]s spawn, delay 46.67 seconds<sup>1,400f</sup>.
+**3 [[LeMurr]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**Infinite [[Relic Doge]]s (100%) spawn, delay 30~40 seconds<sup>900f~1,200f</sup>.
+**3 [[Loris|Lorises]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+If acquired by this point, [[Cossack Cat (Rare Cat)|Royal Guard Cat]] will prove extremely useful, due to the level only containing Alien and Relic enemies. [[Ancient Egg: N108 (Super Rare Cat)|Soap Cat]] and [[Stone Cat (Rare Cat)|Boulder Cat]] are able to easily hold off the LeMurrs and their crushing DPS. However, take care that the former does not get cursed by Loris.
+
+The general strategy is simple: you will want to kill the Cyberhorns as fast as possible, both giving you a large sum of money and allowing you to damage the LeMurrs that would otherwise hide behind them. Alternatively, you can use the limited peon count at the start to stack [[Nerd Cat (Super Rare Cat)|Cyberpunk Cats]], preventing the enemies from pushing at all.
+
+If the Lemurrs become too much of a problem in later difficulties, [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat's]] [[Explosion]] [[Talents|Talent]] should make quick work of them.
+
+==Trivia==
+*Prior to the [[Version 11.2 Update]], a total of 4 Lorises spawned after base hit, instead of 3.
+
+==Reference==
+*https://battlecats-db.com/stage/s13021-04.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 71 Stages]]

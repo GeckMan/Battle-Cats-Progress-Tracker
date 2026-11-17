@@ -1,0 +1,12 @@
+<includeonly><onlyinclude><div class="template-collapsible mw-collapsible mw-collapsed" data-expandtext="{{{1|Expand}}}" data-collapsetext="{{{2|Collapse}}}"></onlyinclude></includeonly>
+For usage, type the following in Source Editor:
+<pre>{{Collapsible}}
+Text
+</div></pre>
+
+To customise the Expand/Collapse message use:
+<pre>{{Collapsible|Open|Close}}
+Text
+</div></pre>
+
+[[Category:General wiki templates]]

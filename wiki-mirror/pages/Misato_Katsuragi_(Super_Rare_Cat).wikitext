@@ -1,0 +1,130 @@
+'''Misato Katsuragi''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. She was added in [[Version 8.7 Update#Update 8.7.5|Version 8.7.5]].
+
+{{Cat Info
+|ID = 489
+|rarity = SR
+|name1 = Misato Katsuragi
+|name2 = Captain Misato
+}}
+
+==Evolution==
+Evolves into '''Captain Misato''' at level 10.
+
+==Strategy/Usage==
+Misato's stats and abilities to an extent reflect those of [[Surfer Cat (Super Rare Cat)|Seafarer Cat]], meaning she does equally well at [[Slow|slowing]] short-ranged Aliens as Castaway/Seafarer does [[Freeze|freezing]] them. The two of them, or otherwise Misato substituting for Castaway, are great help in conquering [[Into the Future]]. From there on, however, Misato's usefulness starts degrading. Castaway's [[True Form]] and [[Talents]] grant him guaranteed [[Survive|Survivor]], a higher proc chance for his more potent ability, giving him an even higher uptime over time, and optional [[Immune to Warp]] as opposed to Misato's rather situational [[Immune to Slow|Slow Immunity]]. Misato's [[Barrier Breaker]] hardly helps as [[Ototo Corps#Breakerblast|Breakerblast]] and [[Fencer Cat (Super Rare Cat)|Fencer Cat]] are enough to do her job, and better at that. Generally, investing in Seafarer mitigates the need to use Misato for offense and procs as you progress in the game.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 489
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni489 f00.png
+|Image2 = Uni489 c00.png
+|Name1 = Misato Katsuragi
+|Desc1 = Recruited from EVANGELION! A bright and<br>charismatic officer who acts as Shinji's guardian.<br>Might break Barriers and Slow Aliens!
+|Name2 = Captain Misato
+|Desc2 = Recruited from EVANGELION! The ruthless<br>leader of the anti-NERV organization WILLE.<br>Might break Barriers and Slow Aliens!
+|Name1 (JP) = ちびミサト (Chibi Misato, Little Misato)
+|Desc1 (JP) = エヴァンゲリオンから参戦！<br>明るくおちゃめな性格で、シンジの保護者役を務める<br>たまにバリアを貫き、エイリアンの動きを遅くする
+|Transl1 (JP) = Joining the war from Evangelion!<br>Cheerful and playful, and acts as Shinji's protector<br>Occasionally penetrates Barriers, Slows Aliens
+|Name2 (JP) = ヴンダー艦長のちびミサト (Vundā Kanchō no Chibi Misato, Wunder Captain Little Misato)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>反ネルフ組織ヴィレのリーダーを務める冷酷な女性<br>たまにバリアを貫き、エイリアンの動きを遅くする
+|Transl2 (JP) = Joining the war from Evangelion!<br>A ruthless woman who is the leader of the anti-NERV organization Wille<br>Occasionally penetrates Barriers, Slows Aliens
+|Name1 (TW) = 小小美里
+|Desc1 (TW) = 從新世紀福音戰士來參戰！<br>個性豪爽活潑，是真嗣的監護人<br>有時候能破壞護盾，使異星戰士的動作變慢
+|Name2 (TW) = Wunder艦長小小美里
+|Desc2 (TW) = 從新世紀福音戰士來參戰！<br>反NERV組織WILLE領導者的冷酷女性<br>有時候能破壞護盾，使異星戰士的動作變慢
+|Name1 (KR) = 꼬맹이 미사토
+|Desc1 (KR) = 에반게리온에서 참전!<br>밝고 장난기가 있는 성격으로 신지의 보호자 역할을 맡고 있다<br>가끔씩 베리어를 뚫어버리고  에이리언의 움직임을 느리게 한다
+|Name2 (KR) = 분더 함장 꼬맹이 미사토
+|Desc2 (KR) = 에반게리온에서 참전!<br>반NERV 조직 빌레의 리더를 맡고 있는 냉혹한 여성<br>가끔씩 베리어를 뚫어버리고  에이리언의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 770¢
+*Chapter 2: 1,155¢
+*Chapter 3: 1,540¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Misato Katsuragi
+|Normal Base HP = 1650
+|Normal Base AP = 980
+|Normal Range = 300
+|Normal Foreswing = 45
+|Normal Attack Cooldown = 111
+|Normal Attack Length = 97
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 770
+|Normal Recharge = 920
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Captain Misato
+|Evolved Base HP = 1650
+|Evolved Base AP = 980
+|Evolved Range = 300
+|Evolved Foreswing = 45
+|Evolved Attack Cooldown = 111
+|Evolved Attack Length = 97
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 770
+|Evolved Recharge = 920
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Barrier Breaker}} 30% chance to [[Barrier Breaker|break]] [[Barrier]]s<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,650 HP
+|val-Normal-Attack Power = 980 damage<br>(188.46 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 45f <sup>1.5s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Normal-Recharge Time = 30.67 ~ 21.87 seconds
+|val-Normal-MaxHP = 28,050 HP
+|val-Normal-MaxAttack = 16,660 damage<br>(3,203.85 DPS)
+|val-Evolved-Health = 28,050 HP
+|val-Evolved-Attack Power = 16,660 damage<br>(3,203.85 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 45f <sup>1.5s</sup><br>(52f <sup>1.73s</sup> backswing)
+|val-Evolved-Recharge Time = 30.67 ~ 21.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni489 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/490.html
+
+----
+{{CatNav|AAA Wunder|Ritsuko Akagi}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Barrier Breaker Cats]]
+[[Category:Cats with Slow Immunity]]

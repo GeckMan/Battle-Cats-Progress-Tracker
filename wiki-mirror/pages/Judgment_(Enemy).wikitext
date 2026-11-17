@@ -1,0 +1,67 @@
+:''This article is about the enemy. For the Cat Unit, see [[Reaper (Super Rare Cat)]].''
+'''Judgment''' (ジャッジメント) is a [[:Category:Traitless Enemies|Traitless]] enemy appearing in the [[Princess Punt Sweets Collaboration Event]]. It was added in [[Version 8.7 Update|Version 8.7]].
+
+{{Enemy Info
+|name = Judgment
+|image = E 463.png
+|appearance = [[Princess Punt Sweets Collaboration Event]]
+|money drop = 500¢ - 1975¢
+}}
+
+==Enemy==
+An enemy that can act as a threat if the player isn't careful. It supports high health at 180,000 and moderately high damage at 13,000. It has multi-hit which separates the enemies damage into two attacks and a guaranteed chance to [[Slow|slow]] Cat Units.
+
+==Strategy==
+Units such as [[Lizard Cat (Normal Cat)|King Dragon Cat]], its [[Crazed Lizard Cat (Super Rare Cat)|Manic counterpart]], [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]], etc are able to outrange this enemy and take him out with ease.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Princess Punt Sweets Collaboration Event#To Battle! The Great Sweets War!|To Battle! The Great Sweets War!]]:
+**[[The Best Medicine is Sweet]] (100%)
+**[[Forbidden Sweets Are Like Nectar]] (200%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Princess Punt's Army|Princess Punt's Army]] (100%, 150%, 200%, 250%, 300%, 350%, 400%, 450%, 500%, 550%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Judgment
+|Health = 180000
+|Attack Power = 13000
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 184
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 57
+|Backswing = 46
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">6,500</span> at 57f <sup>1.9s</sup>, <span class="scaled" data-type="ap">6,500</span> at 83f <sup>2.77s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+463 e.png|Judgment's spritesheet
+IdleJudgement.gif|Judgment's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/465.html
+
+----
+{{EnemyNav|Gekirinchi|Unit-13's False Evolution}}
+----
+
+{{Princess Punt}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]

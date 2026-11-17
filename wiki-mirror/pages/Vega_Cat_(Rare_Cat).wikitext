@@ -1,0 +1,134 @@
+:''For other uses, see [[Vega (disambiguation)]].''
+'''Vega Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Cat Capsules]] during the [[Street Fighter Collaboration Event]]. He was added in [[Version 10.0 Update|version 10.0]].
+
+{{Cat Info
+|ID = 578
+|rarity = RR
+|name1 = Vega Cat
+|name2 = Vega Cat CC
+}}
+
+==Evolution==
+Evolves into '''Vega Cat CC''' at level 10.
+
+==Strategy/Usage==
+Vega Cat is an interesting cat, with the rare niche of strong against Angels and most importantly, immune to toxic, making him a toxic immune meatshield, which is very hard to come by. Thus, this means he is effective against enemies like [[Gobble]], [[Zollow]], and [[Heavenly Herald Papuu|Papuu]], which most traditional Cats fail against. Despite his good niche, it still isn't enough to cover his weakness of low health. At level 30 he has a miniscule 10,000 health, which is not enough to tank any form of hit from any lategame enemy, which is his place of usage. This is further weakened by the fact that despite most toxic enemies having low damage, Vega Cat lacks enough base stats to successfully use his role.
+
+{{Job|Classification=Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 578
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni578 f00.png
+|Image2 = Uni578 c00.png
+|Name1 = Vega Cat
+|Desc1 = Narcissist Cat drunk on his own beauty.<br>Wears a mask to protect his flawless looks.<br>Strong vs. Angels
+|Name2 = Vega Cat CC
+|Desc2 = Cat who mastered the beautiful art of<br>Spanish Ninjutsu. Mask is more beautiful<br>than his own face. Strong vs. Angels
+|Name1 (JP) = ネコバルログ (Neko Barurogu, Balrog Cat)
+|Desc1 (JP) = 自慢の美顔に酔いしれるナルシストなネコ<br>身元と美しい顔を守る仮面は手放せない<br>天使にめっぽう強い
+|Transl1 (JP) = A narcissistic cat who is entranced by his own beautiful face.<br>Can't give up the mask that protects his identity and lovely face.<br>Very strong against Angels.
+|Name2 (JP) = ネコバルログCC (Neko Barurogu CC, Balrog Cat CC)
+|Desc2 (JP) = スペインニンジュツで相手を翻弄する美しきネコ<br>自分より美しいものの前では仮面を被る<br>天使にめっぽう強い
+|Transl2 (JP) = A beautiful cat who plays with his opponent with Spanish ninjutsu.<br>Wears a mask in front of anything more beautiful than himself.<br>Very strong against Angel.
+|Name1 (TW) = 巴洛克貓
+|Desc1 (TW) = 沉醉於自滿美貌的自戀貓咪<br>為守護自身與美貌而假面總不離手<br>善於攻擊天使敵人
+|Name2 (TW) = 巴洛克貓CC
+|Desc2 (TW) = 以西班牙忍術翻弄對手的華麗貓咪<br>在比自己更美的人事物前就會戴上假面<br>善於攻擊天使敵人
+|Name1 (KR) = 고양이 발로그
+|Desc1 (KR) = 자신의 아름다운 얼굴에 취해있는 나르시스트 고양이<br>신원과 아름다운 얼굴을 지켜주는 가면은 포기할 수 없다<br>천사에 엄청 강하다
+|Name2 (KR) = 고양이 발로그CC
+|Desc2 (KR) = 스페인 인술로 상대를 농락하는 아름다운 고양이<br>상대가 자기보다 아름답다 생각하면 가면을 쓴다<br>천사에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 370¢
+*Chapter 2: 555¢
+*Chapter 3: 740¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Vega Cat
+|Normal Base HP = 700
+|Normal Base AP = 250,250
+|Normal Range = 225
+|Normal Foreswing = 20,42
+|Normal Attack Cooldown = 107
+|Normal Attack Length = 109
+|Normal Speed = 11
+|Normal KB = 4
+|Normal Cost = 370
+|Normal Recharge = 490
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 20f <sup>0.67s</sup>, 4,250 at 42f <sup>1.4s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Toxic}} [[Immune to Toxic]]
+|Evolved Name = Vega Cat CC
+|Evolved Base HP = 700
+|Evolved Base AP = 250,250
+|Evolved Range = 225
+|Evolved Foreswing = 20,42
+|Evolved Attack Cooldown = 107
+|Evolved Attack Length = 109
+|Evolved Speed = 11
+|Evolved KB = 4
+|Evolved Cost = 370
+|Evolved Recharge = 490
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,250 at 20f <sup>0.67s</sup>, 4,250 at 42f <sup>1.4s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Immune to Toxic}} [[Immune to Toxic]]
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 700 HP
+|val-Normal-Attack Power = 500 damage<br>(100.67 DPS)
+|val-Normal-Attack Range = 225
+|val-Normal-Attack Frequency = 149f <sub>4.97 seconds</sub>
+|val-Normal-Movement Speed = 11
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 20f <sup>0.67s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Normal-Recharge Time = 16.33 ~ 7.53 seconds
+|val-Normal-MaxHP = 11,900 HP
+|val-Normal-MaxAttack = 8,500 damage<br>(1,711.41 DPS)
+|val-Evolved-Health = 11,900 HP
+|val-Evolved-Attack Power = 8,500 damage<br>(1,711.41 DPS)
+|val-Evolved-Attack Range = 225
+|val-Evolved-Attack Frequency = 149f <sub>4.97 seconds</sub>
+|val-Evolved-Movement Speed = 11
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Evolved-Recharge Time = 16.33 ~ 7.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni578 f00}}
+
+==Trivia==
+*In [[Nyanko Daisensou|Nyanko Daisensou]], this Cat is known as [[Balrog Cat (Rare Cat)|Balrog Cat]], with Vega Cat being [[M. Bison Cat (Rare Cat)|M. Bison Cat's]] name.
+
+==Reference==
+*https://battlecats-db.com/unit/579.html
+
+----
+{{CatNav|Balrog Cat|Sagat Cat}}
+----
+
+{{Street Fighter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Toxic Immunity]]

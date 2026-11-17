@@ -1,0 +1,1039 @@
+{{SwitchExclusive}}
+[[File:Nyanyanya.png|thumb|The Versus Mode menu button|right]]
+Versus 「対戦モード, '''Versus'''」is a playable game mode that is unlocked after clearing [[Cambodia (Empire of Cats)|Cambodia]] from the [[Empire of Cats]] chapter. This game mode offers two different options with the first being Single-Screen 「おすそわけ」in which it is possible for two players to play on one console, and Local Play 「ローカル通信 」 where there are two consoles that are connected together in a local area. Versus was initially introduced in [[The Battle Cats Unite!/Patch 1.0.4 Update|Version 1.0.4]] in the '''Japanese''' ('''JP''') version of [[The Battle Cats Unite!]] then subsequently was made available during the launch dates of the '''Southeast Asia''' ('''SEA''') and '''International''' ('''WW''') versions.
+
+This game mode offers slightly different content from the [[The Battle Cats POP!|Nintendo 3DS]] and [[Minna de Nyanko Daisensou|PC Browser]] versions but ultimately plays the same as the goal is to take out the opponent's Cat Base health by attacking the base or destroying units.
+
+==Overview==
+Versus Mode is a unique game mode in which you are battling against another player to see who can take down the other's health points down to zero. This is possible by attacking the enemy's cats or base. The most notable features are the Trait Cannon and Power Level. The Trait Cannon has the ability to inflict damage and apply a trait (e.g. Red, Dark, Floating) on the opposing side. It also has the ability to stun the enemy when hitting the Cat Base so that they are unable to deploy units for a short amount of time. The Power Level represents the value of each unit and corresponds to the health of the player's Cat Base. Each unit has their own power level, so it is important to strategize the best possible lineup that is the least riskiest.
+
+==Mechanics==
+===Settings===
+Before going into the match, there are a few settings the player can set before brawling with their opponent. The Cat Base is the only aspect that is not configurable, having it set to 15,000 HP. 
+<tabber>
+Stage Size=
+Stage Size 「ステージサイズ」 Players can choose up to five different stage sizes to fight against:
+*Small 「小」: Stage length is 3600 units.
+*Medium 「中」: Stage length is 4200 units.
+*Large 「大」: Stage length is 5000 units.
+*Huge 「特大」: Stage length is 5800 units.
+*Random 「ランダム」: Stage size is chosen from any of the choices above.
+|-|
+Time Limit=
+Time Limit 「制限時間」 Players can choose up to how long they want to fight against:
+*90 Sec. 「90秒」.
+*3 Min. 「3分」.
+*5 Min. 「5分」.
+*No Limit 「無劼限」: Battle goes on until either base has been defeated.
+|-|
+Level Adjust=
+Level Adjust 「しベル合わせ」 Players can adjust the lineups levels they want to use to fight against:
+*None 「なし」: Cat Units stay the same level from single player/co-op progress.
+*Level 10 「レべル10」: Cat Unit levels are set to 10.
+*Level 20 「レべル20」: Cat Unit levels are set to 20.
+*Level 30 「レべル30」: Cat Unit levels are set to 30.
+|-|
+Team Limits=
+Team Limits「強制編成」 Players choose from a different type of formation available:
+*OFF「OFF」: No formation changes.
+*Random「ランダム」: - Lineup is randomised with the Cat Units that have been obtained during single player/co-op progress.
+*Auto-Equip「ねまかせ」: Lineup is randomised with the Cat Units that have been obtained during single player/co-op progress with also granting special effects that affect Cat Units stats.
+</tabber>
+
+===Trait Cannon===
+The Cat Cannon is replaced with the Trait Cannon in which it can damage Cat Units and the Cat Base as well as applying one of the following traits:
+*[[:Category:Red Enemies|Red]] 「赤」.
+*[[:Category:Dark Enemies|Black]] 「黒」.
+*[[:Category:Floating Enemies|Floating]] 「浮」.
+*[[:Category:Metal Enemies|Metal]] 「メタル」.
+*[[:Category:Angel Enemies|Angel]] 「天」.
+*[[:Category:Alien Enemies|Alien]] 「エ」.
+*[[:Category:Zombie Enemies|Zombies]]「ゾンビ」.
+If the player's lineup has no trait targeting Cat Units, the Trait Cannon will list none and inflict no trait.
+
+===Power Level===
+Each Cat Unit has their own unique power level and can even vary depending on the form used. The following list shows the Power Level of each unit. Note: If their evolved/true forms have a different power level, then it will be listed as well.
+
+====<u>Normal Cats</u>====
+{{Collapsible}}
+{| class="article-table"
+!Cat Units
+!Power Level
+|-
+|Cat
+|20
+|-
+|Mohawk Cat
+|30
+|-
+|Tank Cat
+|50
+|-
+|Eraser Cat
+|60
+|-
+|Axe Cat
+|50
+|-
+|Dark Cat
+|100
+|-
+|Gross Cat
+|230
+|-
+|Macho Leg Cat
+|320
+|-
+|Cow Cat
+|140
+|-
+|Lion Cat
+|220
+|-
+|Bird Cat
+|160
+|-
+|UFO Cat
+|170
+|-
+|The Flying Cat
+|230
+|-
+|Fish Cat
+|270
+|-
+|Island Cat
+|350
+|-
+|Lizard Cat
+|410
+|-
+|King Dragon Cat
+|430
+|-
+|Titan Cat
+|380
+|-
+|Jamiera Cat
+|400
+|}
+</div>
+
+====<u>Special Cats</u>====
+{{Collapsible}}
+{| class="article-table"
+!Cat Unit
+!Power Level
+|-
+|Ninja Cat
+|40
+|-
+|Sumo Cat
+|110
+|-
+|Samurai Cat
+|170
+|-
+|Zombie Cat
+|270
+|-
+|Cats in a Box
+|340
+|-
+|Bean Cats
+|100
+|-
+|Boogie Cat
+|50
+|-
+|Bondage Cat
+|260
+|-
+|Dom Cat
+|280
+|-
+|Kung Fu Cat
+|490
+|-
+|Drunken Master Cat
+|480
+|-
+|Actress Cat
+|180
+|-
+|Mother Cat
+|260
+|-
+|Tricycle Cat
+|200
+|-
+|Mr.
+|200
+|-
+|Skirt Cat
+|210
+|-
+|Panties Cat
+|210
+|-
+|Moneko
+|220
+|-
+|Miss MONEKO
+|260
+|-
+|Capsule Cat
+|320
+|-
+|Masked Cat
+|30
+|-
+|Luchador Cat
+|280
+|-
+|Maiko Cat
+|30
+|-
+|Geisha Cat
+|250
+|-
+|Toy Machine Cat
+|120
+|-
+|Blue Shinobi
+|40
+|-
+|Cat Bros
+|220
+|-
+|Flower Cat
+|80
+|-
+|Cooldown Cat
+|100
+|-
+|Squish Ball Cat
+|230
+|-
+|Valkyrie Cat
+|450
+|-
+|Holy Valkyrie Cat
+|470
+|-
+|Bahamut Cat
+|680
+|-
+|Awakened Bahamut Cat
+|530
+|-
+|Ururun Wolf
+|540
+|-
+|Li'l Nyandam
+|540
+|-
+|Hermit Cat
+|600
+|-
+|Cat Bros
+|100
+|-
+|Kabuto Cat
+|150
+|-
+|Kuwagata Cat
+|150
+|-
+|Corodragon
+|280
+|-
+|Undies Cat Jr.
+|160
+|-
+|Mallet Cat
+|120
+|-
+|Catburger
+|30
+|-
+|Cat Royale
+|190
+|-
+|Nekondo
+|240
+|-
+|Baozi Cat
+|30
+|-
+|Big Baozi
+|190
+|-
+|Crazed Baozi Cat
+|40
+|-
+|Crazed Big Baozi
+|200
+|-
+|Li'l Valkyrie
+|590
+|-
+|Li'l Valkyrie Dark
+|590
+|-
+|Manga Cat
+|600
+|-
+|Manga Boogie Cat
+|600
+|-
+|Manga Darabotchgogogo Cat
+|600
+|}
+</div>
+
+====<u>Rare Cats</u>====
+{{Collapsible}}
+{| class="article-table"
+!Cat Units
+!Power Level
+|-
+|Pogo Cat
+|100
+|-
+|Masai Cat
+|110
+|-
+|Wheel Cat
+|250
+|-
+|Solar Cat
+|280
+|-
+|Salon Cat
+|270
+|-
+|Paris Cat
+|280
+|-
+|Cyborg Cat
+|280
+|-
+|Jurassic Cat
+|180
+|-
+|Jurassic Cat-sitter
+|200
+|-
+|Catasaurus
+|230
+|-
+|Viking Cat
+|160
+|-
+|Thor Cat
+|170
+|-
+|Pirate Cat
+|110
+|-
+|Captain Cat
+|120
+|-
+|Thief Cat
+|140
+|-
+|Bishop Cat
+|80
+|-
+|Monk Cat
+|90
+|-
+|Sanzo Cat
+|130
+|-
+|Fortune Teller Cat
+|110
+|-
+|Fisherman Cat
+|120
+|-
+|Shaman Cat
+|120
+|-
+|Necromancer Cat
+|130
+|-
+|Witch Cat
+|90
+|-
+|Sorceress Cat
+|110
+|-
+|Archer Cat
+|270
+|-
+|Cupid Cat
+|280
+|-
+|Swordsman Cat
+|190
+|-
+|Sword Master Cat
+|200
+|-
+|Cat Gunslinger
+|180
+|-
+|Cat Eastwood
+|190
+|-
+|Stilts Cat
+|190
+|-
+|Totem Cat
+|200
+|-
+|Tin Cat
+|210
+|-
+|Plane Cat
+|230
+|-
+|Rocker Cat
+|100
+|-
+|Artist Cat
+|140
+|-
+|Ramen Cat
+|170
+|-
+|Mer-Cat
+|200
+|-
+|Commando Cat
+|210
+|-
+|Cameraman Cat
+|240
+|-
+|Psychocat
+|220
+|-
+|Neo Psychocat
+|230
+|-
+|Onmyoji Cat
+|210
+|-
+|Magica Cat
+|230
+|-
+|Gardener Cat
+|600
+|-
+|Welterweight Cat
+|600
+|-
+|Rover Cat
+|140
+|-
+|Rover Cat Mk II
+|170
+|-
+|Bronze Cat
+|150
+|-
+|Michelangelo Cat
+|180
+|-
+|Clockwork Cat
+|110
+|-
+|Puppetmaster Cat
+|160
+|-
+|Hoop Cat
+|190
+|-
+|Showoff Cat
+|210
+|-
+|Curling Cat
+|600
+|}
+</div>
+
+====<u>Super Rare Cats</u>====
+{{Collapsible}}
+{| class="article-table"
+!Cat Units
+!Power Level
+|-
+|Hip Hop Cat
+|370
+|-
+|Dancing Flasher Cat
+|410
+|-
+|Can Can Cat
+|440
+|-
+|Sushi Cat
+|390
+|-
+|Fried Shrimp Cat
+|400
+|-
+|Gold Cat
+|30
+|-
+|Metal Cat
+|180
+|-
+|Vaulter Cat
+|600
+|-
+|Neneko
+|200
+|-
+|Miss NENEKO
+|250
+|-
+|Cat Base Mini
+|280
+|-
+|Cat Jobs
+|280
+|-
+|Rich Cat III
+|250
+|-
+|Sniper the Recruit
+|340
+|-
+|Sniper the Heavy
+|350
+|-
+|Nerd Cat
+|510
+|-
+|Kotatsu Cat
+|300
+|-
+|Sadako Cat
+|330
+|-
+|Octopus Cat
+|340
+|-
+|Apple Cat
+|330
+|-
+|Face Cat
+|350
+|-
+|Swimmer Cat
+|330
+|-
+|Butterfly Cat
+|360
+|-
+|Bath Cat
+|380
+|-
+|Sexy Bathtub Cat
+|420
+|-
+|Delinquent Cat
+|380
+|-
+|Angry Delinquent Cat
+|400
+|-
+|Bodhisattva Cat
+|380
+|-
+|Avalokitesvara Cat
+|400
+|-
+|Juliet Cat
+|340
+|-
+|Weightlifter Cat
+|450
+|-
+|Ring Girl Cat
+|460
+|-
+|Figure Skating Cats
+|310
+|-
+|Drama Cats
+|330
+|-
+|Cat Toaster
+|380
+|-
+|Cat Projector
+|390
+|-
+|Surfer Cat
+|350
+|-
+|Castaway Cat
+|370
+|-
+|Fencer Cat
+|350
+|-
+|Kendo Cat
+|380
+|-
+|Crazed Cat
+|50
+|-
+|Manic Mohawk Cat
+|60
+|-
+|Crazed Tank Cat
+|80
+|-
+|Manic Eraser Cat
+|90
+|-
+|Crazed Axe Cat
+|130
+|-
+|Manic Dark Cat
+|140
+|-
+|Crazed Gross Cat
+|380
+|-
+|Manic Macho Legs
+|390
+|-
+|Crazed Cow Cat
+|260
+|-
+|Manic Lion Cat
+|270
+|-
+|Crazed Bird Cat
+|270
+|-
+|Crazed UFO Cat
+|280
+|-
+|Crazed Fish Cat
+|340
+|-
+|Manic Island Cat
+|360
+|-
+|Crazed Lizard Cat
+|470
+|-
+|Crazed Titan Cat
+|480
+|-
+|Manic Jamiera Cat
+|490
+|-
+|Catway
+|600
+|-
+|Catornado
+|290
+|-
+|Hurricat
+|310
+|-
+|Express Cat
+|600
+|-
+|Little Leaguer Cat
+|600
+|-
+|Cheerleader Cat
+|220
+|-
+|Waitress Cat
+|250
+|-
+|Driller Cat
+|200
+|-
+|Power Driller Cat
+|220
+|-
+|Piledriver Cat
+|200
+|-
+|Power Piledriver Cat
+|210
+|-
+|Cutter Cat
+|210
+|-
+|Power Cutter Cat
+|220
+|-
+|Backhoe Cat
+|280
+|-
+|Power Backhoe Cat
+|300
+|-
+|Miter Saw Cat
+|310
+|-
+|Power Saw Cat
+|320
+|}
+</div>
+
+====<u>Uber Rare Cats</u>====
+{{Collapsible}}
+{| class="article-table"
+!Cat Units
+!Power Level
+|-
+|Ice Cat
+|520
+|-
+|Ice Queen Cat
+|530
+|-
+|Lesser Demon Cat
+|450
+|-
+|Greater Demon Cat
+|460
+|-
+|Marauder Cat
+|520
+|-
+|Berserker Cat
+|530
+|-
+|Baby Cat
+|540
+|-
+|Nurse Cat
+|590
+|-
+|Heartful Nurse Cat
+|630
+|-
+|Sanada Yukimura
+|480
+|-
+|Wargod Yukimura
+|530
+|-
+|Maeda Keiji
+|560
+|-
+|Oda Nobunaga
+|490
+|-
+|Date Masamune
+|500
+|-
+|Useugi Kenshin
+|660
+|-
+|Imagawa Yoshimoto
+|660
+|-
+|Windy
+|590
+|-
+|Thundia
+|590
+|-
+|Kuu
+|610
+|-
+|Kai
+|630
+|-
+|Coppermine
+|510
+|-
+|Kalisa
+|560
+|-
+|Twinstars
+|530
+|-
+|Megidora
+|660
+|-
+|Sodom
+|660
+|-
+|Vars
+|660
+|-
+|Kamukura
+|700
+|-
+|Raiden
+|610
+|-
+|Dioramos
+|730
+|-
+|Ganglion
+|710
+|-
+|Momotaro
+|280
+|-
+|Princess Kaguya
+|200
+|-
+|Kasa Jizo
+|290
+|-
+|Urashima Taro
+|300
+|-
+|Guardian Gamereon
+|730
+|-
+|The Grateful Crane
+|210
+|-
+|Kachi-Kachi
+|200
+|-
+|Sarukani
+|300
+|-
+|Rock Revengers
+|730
+|-
+|Akira
+|640
+|-
+|Mekako Saionji
+|720
+|-
+|Catman
+|730
+|-
+|The White Rabbit
+|680
+|-
+|Warlock and Pierre
+|690
+|-
+|Hayabusa
+|610
+|-
+|Thunder God Zeus
+|680
+|-
+|Anubis the Protector
+|650
+|-
+|Radiant Aphrodite
+|670
+|-
+|Megaphrodite
+|690
+|-
+|Shining Amaterasu
+|650
+|-
+|Splendid Ganesha
+|650
+|-
+|Wrathful Poseidon
+|590
+|-
+|Valiant Poseidon
+|600
+|-
+|Mighty Kat-A-Pult
+|600
+|-
+|Mighty Drednot
+|600
+|-
+|Mighty Bomburr
+|600
+|-
+|Mighty Rekon Korps
+|600
+|-
+|Mighty Thermae D-Lux
+|600
+|-
+|Nekoluga
+|100
+|-
+|Unknown Cat
+|530
+|-
+|Asiluga
+|100
+|-
+|Asilan Pasalan
+|520
+|-
+|Kubiluga
+|100
+|-
+|Kubilan Pasalan
+|520
+|-
+|Tecoluga
+|100
+|-
+|Tesalan Pasalan
+|520
+|-
+|Balaluga
+|100
+|-
+|Balalan Pasalan
+|530
+|-
+|Togeluga
+|100
+|-
+|Togelan Pasalan
+|550
+|-
+|Shishilan Pasalan
+|720
+|-
+|Pai-Pai
+|620
+|-
+|Strike Unit R.E.I.
+|610
+|-
+|Dark Mitama
+|600
+|-
+|Evangelist Cat
+|430
+|}
+</div>
+
+===End Results===
+When a player defeats an opposing Cat Unit the enemies Power Gauge will lose health.
+Players are also shown statistics at the end of the battle when the timer ends or when a player wins:
+*Power Level「戦効」.
+*Trait Mastery「属性マスタ」.
+*Area Control「進軍距離」.
+*Damage Done「ボコリ度」.
+*Deployed「出撃数」.
+At the end of every battle, players are able to choose three options:
+*Play Again!!「再戦する!!」: Battle again while keeping the same restrictions.
+*Change Rules 「ルール・輪成を変更する!!」: Battle again but change the restrictions.
+*Return to Base「ネコ基地に戻る」: Return back to the main menu.
+
+==Missions==
+{{Collapsible}}
+{{MissionTable
+|{{Mission|Play VS Mode once!|[[XP Function|XP]] +10,000|xp}}
+|{{Mission|Play VS Mode 5 Times!|+5 [[Rich Cat|Rich Cat(s)]]|rich}}
+|{{Mission|Play Vs Mode 10 Times!|+5 [[Rich Cat|Rich Cat(s)]]|rich}}
+|{{Mission|Play Vs Mode 25 Times!|+3 [[Treasure Radar|Treasure Radar(s)]]|treasure}}
+|{{Mission|Play Vs Mode 50 Times!|[[XP Function|XP]] +100,000|xp}}
+|{{Mission|Play Vs Mode 75 Times!|[[XP Function|XP]] +500,000|xp}}
+|{{Mission|Play Vs Mode 100 Times!|[[XP Function|XP]] +1,000,000|xp}}
+|{{Mission|Play Vs Mode 150 Times!|[[XP Function|XP]] +1,250,000|xp}}
+|{{Mission|Play Vs Mode 200 Times!|[[XP Function|XP]] +1,500,000|xp}}
+|{{Mission|Play Vs Mode 250 Times!|[[XP Function|XP]] +1,750,000|xp}}
+|{{Mission|Play Vs Mode 300 Times!|[[XP Function|XP]] +2,000,000|xp}}
+|{{Mission|Play Vs Mode 350 Times!|[[XP Function|XP]] +2,500,000|xp}}
+|{{Mission|Play Vs Mode 400 Times!|[[XP Function|XP]] +3,000,000|xp}}
+|{{Mission|Play Vs Mode 450 Times!|[[XP Function|XP]] +3,500,000|xp}}
+|{{Mission|Play Vs Mode 500 Times!|[[XP Function|XP]] +4,000,000|xp}}
+|{{Mission|Earn Amateur Rank 1 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 2 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 3 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 4 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 5 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 6 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 7 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 8 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Amateur Rank 9 in Local VS Play!|+30 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Veteran Rank in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 1 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 2 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 3 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 4 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 5 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 6 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 7 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 8 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Veteran Rank 9 in Local VS Play!|+60 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Expert Rank in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 1 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 2 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 3 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 4 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 5 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 6 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 7 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 8 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Expert Rank 9 in Local VS Play!|+90 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Master Rank in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 1 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 2 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 3 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 4 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 5 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 6 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 7 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 8 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Master Rank 9 in Local VS Play!|+120 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Supreme Rank in Local VS Play!|+240 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 1 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 2 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 3 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 4 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 5 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 6 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 7 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 8 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Supreme Rank 9 in Local VS Play!|+150 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Legend Rank in Local VS Play!|+270 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 1 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 2 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 3 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 4 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 5 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 6 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 7 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 8 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Legend Rank 9 in Local VS Play!|+180 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Ultimate Rank in Local VS Play!|+300 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 1 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 2 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 3 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 4 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 5 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 6 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 7 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 8 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Earn Ultimate Rank 9 in Local VS Play!|+210 [[Cat Food|Cat Food(s)]]|food}}
+|{{Mission|Rank up to Almighty Rank in Local VS Play!|+1500 [[Cat Food|Cat Food(s)]]|food}}
+}}
+</div>
+
+==Trivia==
+*All Cats that were added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Version 1.0.6]]  have a Power Level of 600.
+*In the game's files, it seems that the flow of cash is 120¢ per second and every unit's speed has been increased by 20%.
+{{BC Navigation}}
+[[Category:Game Features]]

@@ -1,0 +1,56 @@
+{{DISPLAYTITLE:Doge's Rebellion}}
+{{EnemiesAppearing|Bannerman Doge|Pigge|Sir Seal|St. Pigge the 2nd|B.B.Bunny}}
+'''Doge's Rebellion''' is a stage that can be challenged after completing [[Koyo Domain]].
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn070 06 ex en.png]]
+|stage location = [[File:Mapname385 s en.png]]
+|energy = N/A
+|enemy castle hp = 32,000 HP
+|enemies = {{Magnification|Bannerman Doge|100%
+|Pigge|100%
+|Sir Seal|100%
+|B.B.Bunny|100%}}
+|boss = {{Magnification|St. Pigge the 2nd|100%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +440 (100%, unlimited)
+|stage type = [[Invasion Stage]]
+|XP = 1,330 XP
+|width = 3,600
+|max enemies = 10
+|jpname = Doge Disturbance
+|script = わんこの乱
+|romaji = Wanko no Ran
+|star = 1
+|event-chapter = [[Road to Unification#Road to Unification Pt. 1|Road to Unification Pt. 1]]
+|difficulty = ★3
+|prev stage = [[Koyo Domain]]
+|next stage = N/A
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*5 [[Bannerman Doge]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Pigge]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Pigge]] spawns after 11.67 seconds<sup>350f</sup>.
+*1 [[Pigge]] spawns after 21.67 seconds<sup>650f</sup>.
+*1 [[Sir Seal]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Pigge]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*When the base reaches 99% HP:
+**1 [[St. Pigge the 2nd]] spawns as the boss.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**3 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**Infinite [[Bannerman Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+**1 [[Sir Seal]] spawns after 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s04070-07.html
+
+{{Anniversary}}
+[[Category:Event Stages]]
+[[Category:Invasion Stages]]

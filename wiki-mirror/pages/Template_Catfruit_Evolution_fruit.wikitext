@@ -1,0 +1,1 @@
+{{#if:{{{fruit|}}}|[[File:{{{fruit}}}.png|65px|link=Catfruit|{{{fruit}}}]]<br>[[File:TimesSymbol.png|20px|class=times-symbol|link=|alt=x]]{{BCNum|{{{amount|}}}|size=26}}}}

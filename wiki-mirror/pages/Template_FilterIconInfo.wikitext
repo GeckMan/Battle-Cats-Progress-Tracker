@@ -1,0 +1,22 @@
+<includeonly><onlyinclude>{{#if:{{{2|}}}|<div style="position: relative; width: 330px; min-height: 60px; background-color: rgba(var(--theme-link-dynamic-color-1--rgb), 0.85); color: var(--color-max-contrast); font-weight: bold; text-align: center; line-height: 20px; padding: 10px;">【{{{1|}}}】<br>{{{2|}}}</div>|<div style="display: inline-block; min-width: 80px; height: 30px; background-color: rgba(var(--theme-link-dynamic-color-1--rgb), 0.85); color: var(--color-max-contrast); font-weight: bold; text-align: center; line-height: 30px; white-space: nowrap; padding: 0 6px 0 6px;">{{{1|}}}</div>}}</onlyinclude></includeonly>
+This template is used to display hover text for icon buttons on the wiki's Cat Filter.
+
+==Parameters==
+<pre>{{FilterIconInfo|name|desc (optional)}}</pre>
+The first parameter is the name of the ability or trait to display. If the second unnamed parameter is unused, a small box is displayed with only the name centered. If the second parameter is used, a larger box with fixed dimensions is shown with the name in lenticular brackets and the desc below on a new line.
+
+==Usage==
+<tabber>
+No Desc=
+<pre>{{FilterIconInfo|Traitless}}</pre>
+===Result===
+{{FilterIconInfo|Traitless}}
+
+|-|With Desc=
+<pre>{{FilterIconInfo|Weaken|Indicated enemy types will have their attack power reduced for a set period.}}</pre>
+===Result===
+{{FilterIconInfo|Weaken|Indicated enemy types will have their attack power reduced for a set period.}}
+</tabber>
+
+<!--To prevent data page from showing up as unused-->
+<div class="hideme">{{FilterIconInfo/CatData.json}}{{FilterIconInfo/Options.json}}</div>

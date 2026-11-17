@@ -1,0 +1,110 @@
+{{TranslationNeeded}}
+{{TWExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Maji Cat & Cat Tour Group (Enemy)]].''
+'''Maji Cat & Cat Tour Group''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 8.4 Update|Version 8.4]] and can be unlocked when beating any stage in [[Maji Island Tour Collaboration Event#Qibao Island - With Maji Cat Stages|Qibao Island - With Maji Cat Stages]] during the [[Maji Island Tour Collaboration Event]].
+
+{{Cat Info
+|ID = 465
+|rarity = RR
+|name1 = Maji Cat & Cat Tour Group
+|name2 = Maji Cat & Cat Tour Taiwan
+}}
+
+==Evolution==
+Evolves into '''Maji Cat & Cat Tour Taiwan''' at level 10
+
+==Strategy/Usage==
+This unit's main use is to [[:Category:Cats with Weaken ability|weaken]] Red enemies which can be useful for red-pushers like [[Bore]] and [[Red Cyclone]]. However, enemies like [[Professor A.]] or enemies that outrange him can shred this cat very quickly and therefore cannot be used against. Furthermore, he is outclassed by [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] for general usage.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 465
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni465 f00.png
+|Image2 = Uni465 c00.png
+|Name1 (TW) = 麻吉貓&貓咪旅行團
+|Desc1 (TW) = 聽到麻吉貓要帶自己去觀光<br>就放棄侵略拿起相機的貓咪<br>必定能使紅色敵人攻擊力下降
+|Name2 (TW) = 麻吉貓&貓咪遊寶島
+|Desc2 (TW) = 帶著貓咪在臺灣趴趴走<br>成功讓貓咪愛上寶島的麻吉貓<br>必定能使紅色敵人攻擊力下降
+}}
+
+==Cost==
+*Chapter 1: 400元
+*Chapter 2: 600元
+*Chapter 3: 800元
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Maji Cat & Cat Tour Group
+|Normal Base HP = 500
+|Normal Base AP = 125
+|Normal Range = 250
+|Normal Foreswing = 9
+|Normal Attack Cooldown = 133
+|Normal Attack Length = 48
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 800
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Evolved Name = Maji Cat & Cat Tour Taiwan
+|Evolved Base HP = 500
+|Evolved Base AP = 125
+|Evolved Range = 250
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 133
+|Evolved Attack Length = 59
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 800
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 150f <sub>5 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 125 damage<br>(26.41 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 142f <sub>4.73 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 9f <sup>0.3s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 2,125 damage<br>(448.94 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 2,125 damage<br>(448.94 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 142f <sub>4.73 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 26.67 ~ 17.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni465 f00}}
+
+----
+{{CatNav|Dogumaru|Black Zeus}}
+----
+
+{{Maji Island Tour}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

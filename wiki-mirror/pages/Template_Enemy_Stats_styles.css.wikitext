@@ -1,0 +1,86 @@
+table.enemy-calc-stats {
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid var(--theme-border-color)
+}
+
+table.enemy-calc-stats .modifier-heading {
+	padding: 2px;
+	background: var(--theme-page-background-color--secondary)
+}
+
+table.enemy-calc-stats input {
+	margin-top: 3px
+}
+
+table.enemy-calc-stats input {
+	max-width: 5rem;
+	padding: 4px 0;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center
+}
+
+.enemy-stats-template .enemy-stats-table {
+	display: grid;
+	grid-template-areas:
+		"title    title    title    title    title    title    title    "
+		"lab-hp   lab-ap   lab-rng  lab-spd  lab-kb   lab-freq lab-anim "
+		"val-hp   val-ap   val-rng  val-spd  val-kb   val-freq val-anim "
+		"lab-abil lab-abil lab-abil lab-abil lab-abil lab-abil lab-trait"
+		"val-abil val-abil val-abil val-abil val-abil val-abil val-trait";
+	grid-template-columns: repeat(7, minmax(0, 1fr));
+	gap: 1px;
+	width: 100%;
+	box-sizing: border-box;
+	line-height: normal;
+	font-size: 95%;
+	border-radius: 5px;
+	border: 3px solid #000;
+	background-color: #000;
+	text-align: center;
+	overflow: auto;
+}
+
+@media screen and (max-width: 600px) {
+	.enemy-stats-template .enemy-stats-table {
+		font-size: 0.8rem;
+		grid-template-areas:
+			"title    title    title    title    "
+			"lab-hp   lab-ap   lab-freq lab-anim "
+			"val-hp   val-ap   val-freq val-anim "
+			"lab-rng  lab-spd  lab-kb   lab-trait"
+			"val-rng  val-spd  val-kb   val-trait"
+			"lab-abil lab-abil lab-abil lab-abil "
+			"val-abil val-abil val-abil val-abil ";
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+	}
+}
+
+.enemy-stats-title {
+	padding: 4px;
+	color: #fff;
+	background-color: var(--bg-color-orange2);
+	font-weight: bold;
+	border-bottom: 1px solid #000
+}
+
+.enemy-stats-label,
+.enemy-stats-value {
+	padding: 3px;
+	align-content: center
+}
+
+.enemy-stats-label {
+	background-color: var(--bg-color-light4);
+	font-weight: bold
+}
+
+.enemy-stats-value {
+	background-color: var(--bg-color-light3)
+}
+
+/* [[Category:Template stylesheets]] */

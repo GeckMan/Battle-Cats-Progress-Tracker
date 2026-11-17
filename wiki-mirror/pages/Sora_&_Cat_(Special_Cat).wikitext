@@ -1,0 +1,117 @@
+{{JPExclusive}}
+'''Sora & Cat''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked from the [[Catnip Challenges]] during the [[Kaohsiung Rapid Transit Collaboration Event]]. She was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Cat Info
+|ID = 637
+|rarity = EX
+|name1 = Sora & Cat
+|name2 = Sora & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Sora & Cat CC''' at level 10.
+
+==Strategy/Usage==
+Despite a 100% chance to freeze [[:Category:Red Enemies|Red]] enemies, Sora & Cat fails as a spammable crowd-controller due to poor stats, a terrible Freeze uptime, and Single-Target attacks. Even worse, her niche causes her to face competition with [[Apple Cat (Super Rare Cat)|iCat]], which has significantly more health, a lower recharge time, way better uptime, and Area Attack. Even if one doesn't have iCat, however, she still gets outclassed by cheaper, more reliable control options like [[Witch Cat (Rare Cat)|Witch Cat]] and [[Pirate Cat (Rare Cat)|Pirate Cat]], leaving no real reason to use her beyond User Rank.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 637
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni637 f00.png
+|Image2 = Uni637 c00.png
+|Name1 (JP) = シャオチョン&ネコ (Shaochon & Neko, Sora & Cat)
+|Desc1 (JP) = 「たかめ少女」から参戦！高雄メトロの駅員さん<br>社交的で親しみやすいロングヘアの女の子<br>必ず赤い敵の動きを一瞬止める
+|Transl1 (JP) = Joining the war from "Takame Shoujo"! Kaohsiung Metro's station attendant<br>a sociable and friendly girl with long hair<br>always stops Red Enemies for a moment
+|Name2 (JP) = シャオチョン&ネコCC (Shaochon & Neko CC, Sora & Cat CC)
+|Desc2 (JP) = 「たかめ少女」から参戦！高雄メトロ「美麗島駅」の<br>光のドームに一目惚れして駅員さんになった<br>必ず赤い敵の動きを一瞬止める
+|Transl2 (JP) = Joining the war from "Takame Shoujo"! Kaohsiung Metro "Formosa Boulevard Station"<br>fell in love with the dome of light and became a station attendant<br>always stops Red Enemies for a moment
+|Name1 (TW) = 小穹&貓咪
+|Desc1 (TW) = 從「高捷少女」來參戰！是一名站務員<br>說話的結尾加「～喔。」是口頭禪<br>必定能使紅色敵人瞬間動作停止
+|Name2 (TW) = 小穹&貓咪CC
+|Desc2 (TW) = 從「高捷少女」來參戰！善於交際平易近人<br>最喜歡吃東西，非常在意體重<br>必定能使紅色敵人瞬間動作停止
+}}
+
+==Cost==
+*Chapter 1: 340円
+*Chapter 2: 510円
+*Chapter 3: 680円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sora & Cat
+|Normal Base HP = 500
+|Normal Base AP = 60
+|Normal Range = 250
+|Normal Foreswing = 51
+|Normal Attack Cooldown = 107
+|Normal Attack Length = 100
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 340
+|Normal Recharge = 800
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Evolved Name = Sora & Cat CC
+|Evolved Base HP = 500
+|Evolved Base AP = 60
+|Evolved Range = 250
+|Evolved Foreswing = 51
+|Evolved Attack Cooldown = 107
+|Evolved Attack Length = 100
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 340
+|Evolved Recharge = 800
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 60 damage<br>(11.39 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 158f <sub>5.27 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 51f <sup>1.7s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Normal-Recharge Time = 26.67 ~ 17.87 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(193.67 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 1,020 damage<br>(193.67 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 158f <sub>5.27 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 51f <sup>1.7s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Evolved-Recharge Time = 26.67 ~ 17.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni637 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/638.html
+
+----
+{{CatNav|Brainwashed Tank Cat|Nana & Cat}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Catnip Challenge Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

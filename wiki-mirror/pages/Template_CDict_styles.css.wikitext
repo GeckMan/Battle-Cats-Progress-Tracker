@@ -1,0 +1,144 @@
+/* Main table */
+.cat-dictionary {
+	color: #000;
+	margin: 0;
+	text-align: center;
+	border-radius: 20px;
+	border-bottom: 0 ridge #FFA500;
+	border: 2px solid #FFA500;
+	background: linear-gradient(to bottom, #f9d09d 0%, #f9e4bb 50%, #fff3e5 100%);
+	padding: 5px 0;
+}
+
+/* Prevent cls issues */
+.citizen-section > dl {
+	font-family: Arial;
+	letter-spacing: -0.15px;
+}
+
+/* Adjust size of icons */
+.cat-dictionary .cat-dictionary-icons a img {
+	width: 89px;
+	height: 89px;
+}
+
+.cat-dictionary > .tabber > .tabber__header {
+	border-bottom: none;
+	margin-bottom: 5px;
+}
+
+.cat-dictionary .tabber .tabber__tabs {
+	justify-content: center;
+	gap: 0 4px;
+}
+
+/* General tabber */
+.cat-dictionary .tabber__indicator.tabber__indicator--visible {
+	display: none;
+}
+
+#mw-content .cat-dictionary .tabber a.tabber__tab {
+	text-decoration: none;
+	box-shadow: none;
+}
+
+.cat-dictionary .tabber .tabber__tab:hover {
+	cursor: pointer;
+}
+
+.cat-dictionary .tabber a.tabber__tab:not([aria-selected="true"]) {
+	color: #000;
+}
+
+.cat-dictionary .tabber a.tabber__tab[aria-selected="true"] {
+	color: hsl(203, 100%, 35%);
+}
+
+/* Main rarity tabber */
+.cat-dictionary > .tabber > :first-child .tabber__tab {
+	border-radius: 5px;
+	box-shadow: 0 0 2px black;
+	width: 6.875rem;
+	background-color: #FFA824;
+	text-align: center;
+	height: 5.25rem;
+	position: relative;
+
+	background-size: 2.75rem;
+	background-repeat: no-repeat;
+	background-position: center 25%;
+
+	top: 75%;
+	font-size: var(--font-size-x-small);
+	font-family: Comic Sans MS;
+	font-weight: bold;
+	margin: 3px;
+	padding: 4px;
+
+	padding-top: 3.75rem;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.cat-dictionary > .tabber > :first-child a.tabber__tab::after {
+	content: "▲";
+	color: #FFFF22;
+}
+
+.cat-dictionary > .tabber > :first-child a.tabber__tab[aria-selected="true"]::after {
+	content: "▼";
+}
+
+/* Content container */
+.cat-dictionary > .tabber > .tab__content {
+	background: rgb(255, 242, 215);
+	border-radius: 7px;
+	margin: 6px;
+	box-shadow: rgb(68, 68, 68) 0px 0px 2px;
+}
+
+/* Sub-tabbers */
+.cat-dictionary .tabber .tabber .tabber__tab {
+	padding: 1px;
+	margin: 0;
+	border-radius: 7px;
+	border-bottom: 2px solid #CCC8C0;
+	text-align: center;
+	font-family: Comic Sans MS;
+	width: 100%;
+	box-shadow: none;
+}
+
+.cat-dictionary .tabber .tabber .tabber__tab {
+	height: auto;
+	font-size: var(--font-size-x-small);
+	font-weight: bold;
+}
+
+/* Backgrounds for rarities */
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(1) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/thumb/c/cc/Gatyachara_000_f.png/44px-Gatyachara_000_f.png");
+}
+
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(2) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/1/15/Gatyachara_209_f.png");
+	background-size: 4.5rem;
+}
+
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(3) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/thumb/e/e5/Gatyachara_319_f.png/44px-Gatyachara_319_f.png");
+}
+
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(4) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/thumb/f/f8/Gatyachara_200_f.png/44px-Gatyachara_200_f.png");
+}
+
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(5) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/thumb/f/fb/Gatyachara_129_f.png/44px-Gatyachara_129_f.png");
+}
+
+.cat-dictionary > .tabber > :first-child .tabber__tab:nth-child(6) {
+	background-image: url("https://static.wikitide.net/battlecatswiki/thumb/7/7a/Legend_cat_icon.png/44px-Legend_cat_icon.png");
+}
+
+/* [[Category:Template stylesheets]] */

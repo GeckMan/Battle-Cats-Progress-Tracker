@@ -1,0 +1,193 @@
+{{EnemiesAppearing|Shibalien|Hyppoh|Helmut Krabbe|Imperator Sael|Bearkini|Sunny Celeboodle}}
+
+{{Stage Info
+|stage name = [[File:Rc000.png]]
+[[File:Mapsn017 00 a en.png]]
+|stage location = [[File:Mapname017 a en.png]]
+|enemies = {{Magnification|Shibalien|0
+|Hyppoh|0
+|Helmut Krabbe|0
+|Imperator Sael|0
+|Bearkini|0}}
+|boss = {{Magnification|Sunny Celeboodle|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,800
+|max enemies = 12
+|jpname = Because It's Summer Lv.X
+|script = だって夏 Lv.X
+|romaji = Datte Natsu  Lv. X
+|event = [[July Gauntlet]]
+|event-chapter = [[July Gauntlet]]
+|require = Clear [[Never Summer! (Monthly Event)|Never Summer!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*The enemy base's HP starts at 75,000 and increases by 25,000 with each stage.
+*7 [[Shibalien]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*2 [[Hyppoh]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[Helmut Krabbe]]s spawn after 20 seconds<sup>600f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*1 [[Imperator Sael]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Shibalien]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**Infinite [[Hyppoh]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**3 [[Bearkini]]s spawn after 4 seconds<sup>120f</sup>, delay 20 seconds<sup>600f</sup>.
+**1 [[Sunny Celeboodle]] spawns as the boss after 8 seconds<sup>240f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Summer Lv.
+! colspan="7" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! rowspan="2" scope="col" |[[Bearkini]]
+! rowspan="2" scope="col" |[[Shibalien]]
+! rowspan="2" scope="col" |[[Hyppoh]]
+! rowspan="2" scope="col" |[[Helmut Krabbe]]
+! rowspan="2" scope="col" |[[Imperator Sael]]
+! colspan="2" scope="col" |[[Sunny Celeboodle]]
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" scope="col" |Base XP
+|-
+!HP
+!AP
+|-
+! scope="row" |1
+|200%
+|50%
+|50%
+|50%
+|50%
+|100%
+|100%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|233%
+|63%
+|63%
+|63%
+|63%
+|125%
+|125%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|266%
+|76%
+|76%
+|76%
+|76%
+|150%
+|150%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|299%
+|100%
+|100%
+|100%
+|100%
+|200%
+|200%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|332%
+|250%
+|250%
+|250%
+|250%
+|233%
+|233%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|365%
+|400%
+|400%
+|400%
+|400%
+|266%
+|250%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|398%
+|550%
+|550%
+|550%
+|550%
+|299%
+|275%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|431%
+|700%
+|700%
+|700%
+|700%
+|322%
+|300%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|464%
+|850%
+|850%
+|850%
+|850%
+|365%
+|325%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|500%
+|1,000%
+|1,000%
+|1,000%
+|1,000%
+|400%
+|350%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+Beware! The aliens in this gauntlet start out at ITF 1 magnifications, but then reach ITF 3 levels at Level 7, and cap at out 1000% at the 10th level. Just deal with the Aliens at the start, and bring ranged attackers or tankers like Dragon Cat to deal with the Sunny Celeboodle.
+
+==Trivia==
+*Prior to [[Version 11.6 Update|version 11.6]], Summer Lv.1~10 had a restriction of "Cat Deploy Cost: Only 4,000¢ or less", rather than a Cat Deploy Limit of 10.
+
+==Reference==
+*https://battlecats-db.com/stage/s24017.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

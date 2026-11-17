@@ -1,0 +1,128 @@
+:''For the other unit of the same name, see [[Zombie Cat (Special Cat)]].''
+'''Cat Devil''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the Event Capsule during the [[Bikkuriman Collaboration Event]].
+
+{{Cat Info
+|ID = 476
+|rarity = EX
+|name1 = Cat Devil
+|name2 = Infernal Cat
+}}
+
+==Evolution==
+Evolves into '''Infernal Cat''' at level 10.
+
+==Strategy/Usage==
+Infernal Cat has good stats against Angels, but his range is rather low, limiting his usage to angels such as [[Boraphim]] and [[Angelic Gory]]. [[Catway (Super Rare Cat)|Time Traveller Cat]] is, however, a much better choice against Angels due to higher range and better spammability, which results in better spammable DPS. You'd mainly want to use this unit in {{4c}} stages.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 476
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni476 f00.png
+|Image2 = Uni476 c00.png
+|Name1 = Cat Devil
+|Desc1 = Behold the next stage of devilish evolution!<br>Gimme a Catfruit and I might let you live!<br>Strong vs Angels (Area Attack)
+|Name2 = Infernal Cat
+|Desc2 = The lord of devils. His ambition threatens<br>to consume all light, love, and Cat Food.<br>Strong vs Angels (Area Attack)
+|Name1 (JP) = ネコデビル (Nekodebiru, Cat Devil)
+|Desc1 (JP) = 悪和合球に誕生した悪魔は次界へ魔獣進攻を開始！？<br>魔タタビをあげると見のがしてくれるゾ！<br>天使にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = The demon that was born in the evil harmony sphere has started the demon beast invasion to the next world!?<br>If you give him a magical rabbit, he'll look away!<br>Unbelievably strong against angels (ranged attacks)
+|Name2 (JP) = ネコ邪神 (Neko Jashin, Cat Evil God)
+|Desc2 (JP) = 魔性般にゃパワーで変貌をとげた悪魔王。すべての<br>愛とネコ缶を吸収肥大化し天肉球をのみ込むとか！<br>天使にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = A demon king who has been transformed by the power of the demon Hannya. Absorbing<br>all the love and cat cans into hypertrophy and swallowing celestial spheres!<br>Unbelievably strong against angels (ranged attacks)
+|Name1 (TW) = 貓咪惡魔
+|Desc1 (TW) = 惡和合球下誕生的惡魔開始向次界魔獸進攻！？<br>給他魔薄荷就會獲得原諒喔！<br>善於攻擊天使敵人(範圍攻擊)
+|Name2 (TW) = 貓咪邪神
+|Desc2 (TW) = 變化為魔性般喵若力量的惡魔王。據說<br>吸收所有的愛與貓罐頭肥大化為天肉球！<br>善於攻擊天使敵人(範圍攻擊)
+|Name1 (KR) = 고양이 데빌
+|Desc1 (KR) = 악화합구에서 탄생한 악마는 차계에 마수 침공을 개시!?<br>마다래를 주면 못 본 척 넘어가 주겠다냥!<br>천사에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 고양이 사신
+|Desc2 (KR) = 마성반냥 파워로 변모한 악마왕. 모든 사랑과<br>통조림을 흡수 비대화하여 발바닥을 삼켜버린다고!<br>천사에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 840¢
+*Chapter 2: 1,260¢
+*Chapter 3: 1,680¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Devil
+|Normal Base HP = 1250
+|Normal Base AP = 545
+|Normal Range = 250
+|Normal Foreswing = 45
+|Normal Attack Cooldown = 71
+|Normal Attack Length = 76
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 840
+|Normal Recharge = 970
+|Normal Attack Type = Area
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Infernal Cat
+|Evolved Base HP = 1250
+|Evolved Base AP = 545
+|Evolved Range = 250
+|Evolved Foreswing = 45
+|Evolved Attack Cooldown = 71
+|Evolved Attack Length = 76
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 840
+|Evolved Recharge = 970
+|Evolved Attack Type = Area
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,250 HP
+|val-Normal-Attack Power = 545 damage<br>(140.95 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 116f <sub>3.87 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 45f <sup>1.5s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 32.33 ~ 23.53 seconds
+|val-Normal-MaxHP = 21,250 HP
+|val-Normal-MaxAttack = 9,265 damage<br>(2,396.12 DPS)
+|val-Evolved-Health = 21,250 HP
+|val-Evolved-Attack Power = 9,265 damage<br>(2,396.12 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 116f <sub>3.87 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 45f <sup>1.5s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 32.33 ~ 23.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni476 f00}}
+
+==Trivia==
+*This cat's name used to be Devil Cat, but was changed to Cat Devil in [[Version 10.1 Update|Version 10.1]]. This is most likely due to [[Zombie Cat (Special Cat)|Zombie Cat]]'s evolved form having the same name.
+
+==Reference==
+*https://battlecats-db.com/unit/477.html
+
+----
+{{CatNav|Wakamiko Cat|Nekonosuke}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]

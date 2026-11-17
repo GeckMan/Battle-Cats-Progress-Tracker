@@ -1,0 +1,1205 @@
+{{PageBanner|Eve_l_184_en.png|event}}
+'''Ranking Dojo''' (ネコ道場ランキングイベント, ''Neko Dōjō Rankingu Ibento'', '''Cat Dojo Ranking Event''') is an event that first appeared from July 31st to August 7th, 2017. This event was officially added in the [[Version 6.3 Update]]. The Ranking Dojo is accessed from the [[Catclaw Dojo]] menu, so the player needs to unlock the Catclaw Dojo feature in order to participate by completing Chapter 1 of [[Empire of Cats]].
+
+==About Ranking Dojo==
+During this event, the cat on the front door is replaced with the ranking as shown below. A new, blue-colored Dojo area is available aside [[Wanderer's Trial (Stage 1)|Hall of Initiates]]. On the right from top to bottom are the Rewards List button, the Ranking Chart and personal statistics including personal high score, personal ranking in percentage and personal title: [[File:Ranking Dojo.png|center|600px|Initial ranking]]
+
+==About Ranking Dojo Battles==
+The player has 3 instead of the usual 5 minutes limit during an Arena of Honor stage. These stages require 30 [[Cat Energy|Energy]] to play. If the player exits the game during the battle, Energy won't be refunded. Other than that, stage's gimmick is same as regular Dojo Stages:
+*The player has an unlimited supply of [[Battle Items#Speed Up|Speed Ups]] and [[Battle Items#Cat CPU|Cat CPUs]], other items are disabled.
+*The player's score increases as their cats defeat enemies.
+*Defeating enemies won't give money.
+*After 3 minutes, remaining enemies on screen are not wiped, nothing happens even if they knockout the [[Cat Base]].
+*The enemy base is an indestructible [[Dummy (Enemy Base)|Dummy]].
+*Score per enemy kill = Enemy's Cash Drop [unaffected by treasures or abilities] + Enemy's Dojo Bounty Score [Refer to the respective dojo's schematics] * (1 + Current Dojo Time Left[seconds] / Total Dojo Time[seconds])
+[[File:Ranking Dojo 2.png|600px|center]]
+After clearing a Ranking Stage, the player will be given a title depend on the score, this requires Internet connection to update the ranking.
+[[File:Ranking Dojo 3.png|center|600px]]
+
+==Rewards List==
+Depends on personal ranking in percentage, the player will be given a title and receive rewards sent to their mailbox found in the [[Main Menu]].
+
+When the first three Ranking Dojos were released, all rankings gave the player much less [[Cat Food]]. This was later changed to compensate the players' effort in the rankings.
+
+===Current Arena of Honor Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×110 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×100 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×90 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×80 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×70 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×60 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×50 / XP+5000
+|}
+
+===Current Arena of Power Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×150 / Catseye [Dark]×3
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×150 / Catseye [Dark]×2
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×150 / Catseye [Dark]×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×150 / Catseye [Legend]×2
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×150 / Catseye [Legend]×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×150 / Treasure Radar×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×150 / XP+5000
+|}
+
+===Current Arena of Destiny Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|0～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Treasure Chest (Gold)×2 / Treasure Chest (Silver)×2 / Treasure Chest (Bronze)×4
+|-
+|11～30%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Treasure Chest (Gold)×2 / Treasure Chest (Silver)×2 / Treasure Chest (Bronze)×3
+|-
+|31～60%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Treasure Chest (Gold)×2 / Treasure Chest (Silver)×2 / Treasure Chest (Bronze)×2
+|-
+|61～100%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Treasure Chest (Gold)×1 / Treasure Chest (Silver)×2 / Treasure Chest (Bronze)×2
+|-
+|}
+
+==Previous Rewards==
+{{Collapsible}}
+
+===Initial Crimson Trial Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×20 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×20 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×20 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×20 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×20 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×20 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×20 / XP+5000
+|}
+
+===Initial Shadow Trial Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×100 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×80 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×60 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×50 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×40 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×30 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×20 / XP+5000
+|}
+
+===Initial Phoenix Trial Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×50 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×45 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×40 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×35 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×30 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×25 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×20 / XP+5000
+|}
+
+===7th Anniversary Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×167 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×157 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×147 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×137 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×127 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×117 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×107 / XP+5000
+|}
+
+===11th Anniversary Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×171 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×161 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×151 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×141 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×131 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×121 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×111 / XP+5000
+|}
+
+===12th Anniversary Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×172 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×162 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×152 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×142 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×132 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×122 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×112 / XP+5000
+|}
+
+===13th Anniversary Rewards===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Title
+! scope="col" |Rewards
+|-
+|1～10%
+|Grandmaster (伝説, ''Densetsu'', '''Legend''')
+|Cat Food×173 / Treasure Radar×1
+|-
+|11～20%
+|Master (免許皆伝, ''Menkyo Kaiden'', '''Master''')
+|Cat Food×163 / Cat Jobs×1
+|-
+|21～30%
+|Expert (道場主, ''Dōjō Nushi'', '''Dojo Owner''')
+|Cat Food×153 / Sniper the Cat×1
+|-
+|31～40%
+|Adept (師範, ''Shihan'', '''Teacher''')
+|Cat Food×143 / Rich Cat×1
+|-
+|41～50%
+|Disciple (黒帯, ''Kurotai'', '''Black Belt''')
+|Cat Food×133 / Cat CPU×1
+|-
+|51～75%
+|Initiate (白帯, ''Shirotai'', '''White Belt''')
+|Cat Food×123 / Speed Up×1
+|-
+|～100%
+|Trainee (入門者, ''Nyūmonsha'', '''Beginner''')
+|Cat Food×113 / XP+5000
+|}
+</div>
+
+==List of Stages==
+===Arena of Honor===
+'''Arena of Honor''' (ランキングの間, ''Rankingu no Ma'', '''During the Ranking''')
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname000 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname000 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn000 00 r en.png|200px|link=Arena of Honor/Crimson Trial]]
+|[[File:Mapsn000 00 r ja.png|200px|Akaten Taikai]]
+|Red Mark Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname001 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname001 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn001 00 r en.png|200px|link=Arena of Honor/Shadow Trial]]
+|[[File:Mapsn001 00 r ja.png|200px|Men in Burakku Taikai]]
+|Men in Black Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname002 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname002 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn002 00 r en.png|200px|link=Arena of Honor/Phoenix Trial]]
+|[[File:Mapsn002 00 r ja.png|200px|Fushichō Taikai]]
+|Phoenix Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname003 r en 1.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname003 r ja 1.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn003 00 r en.png|200px|link=Arena of Honor/Five Year Plan]]
+|[[File:Mapsn003 00 r ja.png|200px|5 Shūnen Kinen Taikai]]
+|5th Anniversary Tournament
+|5 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname005 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname005 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn005 00 r en.png|200px|link=Arena of Honor/Six Years Strong]]
+|[[File:Mapsn005 00 r ja.png|200px|6 Shūnen Kinen Taikai]]
+|6th Anniversary Tournament
+|6 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname011 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname011 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|16}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn011 00 r en.png|200px|link=Arena of Honor/Council of the Vampires]]
+|[[File:Mapsn011 00 r ja.png|200px|Dorakyura Taikai]]
+|Dracula Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname012 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname012 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|16}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn012 00 r en.png|200px|link=Arena of Honor/Dance in the Sky]]
+|[[File:Mapsn012 00 r ja.png|200px|Tenkū Butō Taikai]]
+|Sky Fighting Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname013 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname013 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|16}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn013 00 r en.png|200px|link=Arena of Honor/The Dead from Space]]
+|[[File:Mapsn013 00 r ja.png|200px|Uchū yori no Shisha Taikai]]
+|Dead from Space Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname015 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname015 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn015 00 r en.png|200px|link=Arena of Honor/Lucky Number 7]]
+|[[File:Mapsn015 00 r ja.png|200px|7 Shūnen Kinen Taikai]]
+|7th Anniversary Tournament
+|7 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname019 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname019 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn019 00 r en.png|200px|link=Arena of Honor/8 Ain't Enough]]
+|[[File:Mapsn019 00 r ja.png|200px|8 Shūnen Kinen Taikai]]
+|8th Anniversary Tournament
+|8 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname023 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname023 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn023 00 r en.png|200px|link=Arena of Honor/Feeling Fine at 9]]
+|[[File:Mapsn023 00 r ja 1.png|200px|9 to ½ Shūnen Kinen Taikai]]
+|9 and ½ Anniversary Tournament
+|9 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname024 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname024 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn024 00 r en.png|200px|link=Arena of Honor/10-Year Plan]]
+|[[File:Mapsn024 00 r ja 1.png|200px|10 to ½ Shūnen Kinen Taikai]]
+|10 and ½ Anniversary Tournament
+|10 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname025 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname025 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn025 00 r en.png|200px|link=Arena of Honor/Here's to Eleven]]
+|[[File:Mapsn025 00 r ja.png|200px|11 Shūnen Kinen Taikai]]
+|11th Anniversary Tournament
+|11 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname029 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |[[Arena of Honor/12th Anniversary Tournament|Stage 1]]
+|[[File:Mapsn029 00 r ja.png|200px|12 Shūnen Kinen Taikai]]
+|12th Anniversary Tournament
+|10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname039 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname039 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn039 00 r en.png|200px|link=Arena of Honor/Lucky Thirteen]]
+| [[File:Mapsn039 00 r ja.png|200px|13 Shūnen Kinen Taikai]]
+| 13th Anniversary Tournament
+| 10 {{EnergyIcon}}
+|}
+
+===Arena of Power===
+'''Arena of Power''' (超・ランキングの間, ''Chō・Rankingu no Ma'', '''Super・During the Ranking''')
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname017 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname017 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|128}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn017 00 r en.png|200px|link=Arena of Power/Tearful Tournament]]
+|[[File:Mapsn017 00 r ja.png|200px|Zettaizetsumei Taikai]]
+|Desperation Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname026 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname026 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn026 00 r en.png|200px|link=Arena of Power/Artillery Alley]]
+|[[File:Mapsn026 00 r ja.png|200px|Shatei Chūi Taikai]]
+|Raneg Caution Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname028 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname028 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn028 00 r en.png|200px|link=Arena of Power/Waves of Attack]]
+|[[File:Mapsn028 00 r ja.png|200px|Hadō Chūi Taikai]]
+|Wave Warning Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname034 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname034 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn034 00 r en.png|200px|link=Arena of Power/Freeze in Fright]]
+|[[File:Mapsn034 00 r ja.png|200px|Teishi Chūi Taikai]]
+|Stop Warning Tournament
+|30 {{EnergyIcon}}
+|}
+
+===Tales of Honor===
+'''Tales of Honor''' (ランキングの間【外伝】, ''Rankingu no Ma【Gaiden】'', '''During the Ranking【Side Story】''')
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname020 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname020 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn020 00 r en.png|200px|link=Tales of Honor/Crimson Trial]]
+|[[File:Mapsn020 00 r ja.png|200px|Akaten Taikai]]
+|Red Mark Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname021 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname021 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn021 00 r en.png|200px|link=Tales of Honor/Shadow Trial]]
+|[[File:Mapsn021 00 r ja.png|200px|Men in Burakku Taikai]]
+|Men in Black Tournament
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname022 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname022 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn022 00 r en.png|200px|link=Tales of Honor/Phoenix Trial]]
+|[[File:Mapsn022 00 r ja.png|200px|Fushichō Taikai]]
+|Phoenix Tournament
+|30 {{EnergyIcon}}
+|}
+
+===Arena of Destiny===
+Introduced in [[Version 14.3 Update|Version 14.3]] and unlocked after clearing [[A New Legend]]. Each stage has a score bonus condition that grants more points from using certain [[Special Abilities|abilities]] than killing enemies. More points will be awarded for units with fewer target Traits (not counting those gained from [[Talents]]). Enemies drop money, and the base is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]]. The rewards for this Dojo are Treasure Chests, which contain [[Talent Orbs|Ability Orbs]].
+
+'''Arena of Destiny''' (極ランキングの間, ''Goku Rankingu no Ma'', '''During the Extreme Ranking''')
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname030 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname030 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn030 00 r en.png|200px|link=Arena of Destiny/Talent Tournament]]
+|[[File:Mapsn030 00 r ja.png|200px|Tōsō Honnō Taikai]]
+|Fighting Instinct Tournament
+|0 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname030 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname033 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn033 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Knockback)]]
+|[[File:Mapsn033 00 r ja.png|200px|Tōsō Honnō Taikai]]
+|Fighting Instinct Tournament
+|10 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname035 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname035 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn035 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Strong)]]
+|[[File:Mapsn035 00 r ja.png|200px|Tōsō Honnō Taikai]]
+|Fighting Instinct Tournament
+|10 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname036 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname036 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn036 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Freeze)]]
+|[[File:Mapsn036 00 r ja.png|200px|Tōsō Honnō Taikai]]
+|Fighting Instinct Tournament
+|10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname038 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname038 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn038 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Massive Damage)]]
+| [[File:Mapsn038 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname040 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname040 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn040 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Slow)]]
+| [[File:Mapsn040 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname041 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname041 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn041 00 r en.png|200px|link=Arena of Destiny/Talent for Battle (Knockback 2)]]
+| [[File:Mapsn041 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname043 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname043 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn043 00 r en.png|200px|link=Arena of Destiny/Talent Tournament (Weaken)]]
+| [[File:Mapsn043 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname044 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname044 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn044 00 r en.png|200px|link=Arena of Destiny/Talent Tournament (Strong 2)]]
+| [[File:Mapsn044 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname045 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname045 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn045 00 r en.png|200px|link=Arena of Destiny/Talent Tournament (Massive Damage 2)]]
+| [[File:Mapsn045 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname046 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname046 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn046 00 r en.png|200px|link=Arena of Destiny/Talent Tournament (Freeze 2)]]
+| [[File:Mapsn046 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+{| class="article-table"
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname047 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname047 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|256}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" | Stage 1
+| [[File:Mapsn047 00 r en.png|200px|link=Arena of Destiny/Talent Tournament (Resistant)]]
+| [[File:Mapsn047 00 r ja.png|200px|Tōsō Honnō Taikai]]
+| Fighting Instinct Tournament
+| 10 {{EnergyIcon}}
+|}
+
+===[[Collaboration Events|Collaboration]]===
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname004 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname004 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn004 00 r en.png|200px|link=Arena of Honor/Weak of Spirit]]
+|[[File:Mapsn004 00 r ja.png|200px|Mukiryoku Shugyō]]
+|Spiritless Training
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname007 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname007 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn007 00 r en.png|200px|link=Arena of Honor/Aqua Paradiso]]
+|[[File:Mapsn007 00 r ja.png|200px|Osakana Tengoku]]
+|Fish Heaven
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname008 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname008 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn008 00 r en.png|200px|link=Arena of Honor/Princess Punt's Army]]
+|[[File:Mapsn008 00 r ja.png|200px|Shūrai ！ Kerihime Gundan]]
+|Incoming! Kerihime's Army
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname009 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |[[Arena of Honor/Castle & Dragon And Dojo|Stage 1]]
+|[[File:Mapsn009 00 r ja.png|200px|Shiro to Doragon to Dōjō]]
+|Castle and Dragon and Dojo
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname010 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname010 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn010 00 r en.png|200px|link=Arena of Honor/Attack of the Shakurels]]
+|[[File:Mapsn010 00 r ja.png|200px|010-00]]
+|010-00
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname016 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname016 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn016 00 r en.png|200px|link=Arena of Honor/MikuMiku Music Fest]]
+|[[File:Mapsn016 00 r ja.png|200px|MikuMiku Kayōsai]]
+|MikuMiku Song Festival
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname031 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname031 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|4}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn031 00 r en.png|200px|link=Arena of Honor/The Strongest Things]]
+|[[File:Mapsn031 00 r ja.png|200px|Shijō Saikyō Seibutsu Ketteisen Tu Tu!]]
+|The Strongest Creatures Ever Battle!
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname032 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname032 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|4}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn032 00 r en.png|200px|link=Arena of Honor/Sonic Battle!]]
+|[[File:Mapsn032 00 r ja.png|200px|Sonikku Batoru!]]
+|Sonic Battle!
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname037 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname037 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn037 00 r en.png|200px|link=Arena of Honor/I Seek the Strongest]]
+|[[File:Mapsn037 00 r ja.png|200px|Ore yori Tsuyoi Yatsu niai niiku]]
+|I'm Going To Meet Someone Stronger
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname042 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname042 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn042 00 r en.png|200px|link=Arena of Honor/Demon Slayer Elites]]
+|[[File:Mapsn042 00 r ja.png|200px|Tokubetsu Shōshū！Saikyōtaishi Ketteisen]]
+|Special Edition! The Ultimate Showdown
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname048 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname048 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn048 00 r en.png|200px|link=Arena of Honor/Into the Fray: Servants Strike!]]
+|[[File:Mapsn048 00 r ja.png|200px|Rantō! Sāvanto Dai Shūrai!]]
+|Brawl! The Servants are Coming!
+|30 {{EnergyIcon}}
+|}
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname049 r ja.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname049 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn049 00 r ja.png|200px|link=Arena of Honor/The Swords of Meiji]]
+|[[File:Mapsn049 00 r ja.png|200px|Meiji Kenkaku Roman Taikai]]
+|Meiji Swordsman Romantic Tournament
+|30 {{EnergyIcon}}
+|}
+
+==Removed Stages==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname006 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname006 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn006 00 r en.png|200px|link=Arena of Honor/Into the Fray: Servants Strike! (Old)]]
+|[[File:Mapsn006 00 r ja.png|200px|Rantō! Sāvanto Dai Shūrai!]]
+|Brawl! The Servants are Coming!
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname014 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname014 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn014 00 r en.png|200px|link=Arena of Honor/I Seek the Strongest (Oldest)]]
+|[[File:Mapsn014 00 r ja.png|200px|Ore yori Tsuyoi Yatsu niai niiku]]
+|I'm Going To Meet Someone Stronger
+|30 {{EnergyIcon}}
+|}
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname018 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname018 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn018 00 r en.png|200px|link=Arena of Honor/I Seek the Strongest (Old)]]
+|[[File:Mapsn018 00 r ja.png|200px|Ore yori Tsuyoi Yatsu niai niiku]]
+|I'm Going To Meet Someone Stronger
+|30 {{EnergyIcon}}
+|}
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="row" |
+! rowspan="2" scope="col" | [[File:Mapname027 r en.png|200px]]
+! rowspan="2" scope="col" | [[File:Mapname027 r ja.png|200px]]
+! colspan="2" scope="col" style="text-align: center; min-width: 210px; line-height: 20px;" |'''Difficulty'''<br>{{Stars|2}}
+|-
+! scope="col" | Translation
+! scope="col" | Energy
+|-
+! scope="row" |Stage 1
+|[[File:Mapsn027 00 r en.png|200px|link=Arena of Honor/The Swords of Meiji (Old)]]
+|[[File:Mapsn027 00 r ja.png|200px|Meiji Kenkaku Roman Taikai]]
+|Meiji Swordsman Romantic Tournament
+|30 {{EnergyIcon}}
+|}
+
+==Notes During Ranking Dojo==
+※ Rewards may take a short time to be delivered after your final ranking tier is determined. Please be patient!<br>
+※ Your Ranking Result will be shown in the Catclaw Dojo, but rewards will be claimed by visiting the Mailbox menu from the Battle Cats title screen. Rewards will expire and become unclaimable 30 days after delivery.<br>
+※ Network connection is required to play the Arena of Honor.<br>
+※ Scores achieved during this ranking event will be reset once the next ranking event begins.<br>
+※ Accounts flagged for hacking or modding will have their Arena scores invalidated and may receive a playing ban.<br>
+※ Empire of Cats Ch. 1 must be cleared before the Catclaw Dojo will be available to access.<br>
+※ If the Arena of Honor does not appear even if the conditions are met, please ensure that your Battle Cats app is updated to the most recent version available.
+
+{{Gallery|Dojoicon}}
+
+==Trivia==
+*On the initial release of the first three Ranking Dojo stages, it cost 1 Cat Food to enter an Arena of Honor stage, this was changed in Version 6.6.
+*At some point in June 2023, Arena of Honor displayed a 0 star difficulty on the map selection screen. However, in around [[Version 12.4 Update|Version 12.4]], it was removed for unknown reasons.
+
+==Reference==
+*https://battlecats-db.com/stage/index_ranking.html
+
+{{BC Navigation}}
+[[Category:Game Features]]
+[[Category:Event]]

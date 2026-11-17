@@ -1,0 +1,126 @@
+'''White Cat''' is a [[:Category:Special Cats|Special Cat]] that was implemented in [[Version 5.2 Update|Version 5.2]] and can be obtained by logging in during the [[Neo Mushroom Garden Collaboration Event]].
+
+{{Cat Info
+|ID = 279
+|rarity = EX
+|name1 = White Cat
+|name2 = Gross White Cat
+}}
+
+==Evolution==
+Evolves into '''Gross White Cat''' at level 10.
+
+==Strategy/Usage==
+White Cat, in first form, is a poor meatshield, and should not be used, provided you have [[Tank Cat (Normal Cat)|Tank Cat]] or [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank Cat]]. In evolved form, Gross White Cat now has enough range to defeat the most basic of enemies (e.g. [[Hippoe]]/[[Gory]]). With that being said, even the lowest of Cats outclass it for pure, raw pushing power, as a 20+10 [[Cow Cat (Normal Cat)|Cow Cat]] and a 20+10 [[Gross Cat (Normal Cat)|Gross Cat]] can both destroy enemies more efficiently. So, the most this Cat will contribute to your army is by helping you increase your [[User Rank]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 279
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni279 f00.png
+|Image2 = Uni279 c00.png
+|Name1 = White Cat
+|Desc1 = Loves long baths in miso soup,<br>always barely escaping when served.<br>Master of powerful single strikes.
+|Name2 = Gross White Cat
+|Desc2 = A new brand of Cat Food caused<br>some strange new growth patterns.<br>Master of powerful single strikes.
+|Name1 (JP) = 白ネコなめこ (Shiro Neko Nameko, White Cat Nameko)
+|Desc1 (JP) = NEOなめこ栽培キットから参戦！<br>味噌汁の具にされかけて新たな飼い主を探している<br>単発だけなら攻撃力はハイクラス
+|Transl1 (JP) = Join the NEO Nameko Cultivation Kit!
+I'm looking for a new owner for miso soup<br>
+The attack power is high class if only one shot
+|Name2 (JP) = キモ白ネコなめこ (Kimo Shiro Neko Nameko, Creepy White Cat Nameko)
+|Desc2 (JP) = NEOなめこ栽培キットから参戦！<br>新たな飼い主の元で驚きの成長を見せる<br>遠くの敵を攻撃できる遠距離型キャラ
+|Transl2 (JP) = Join the NEO Nameko Cultivation Kit!
+Show surprise growth with new owner<br>
+Long-distance characters that can attack distant enemies
+|Name1 (TW) = 白喵菇菇
+|Desc1 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>差點被加到味噌湯裡而現在在尋找新飼主<br>只是單發的話攻擊力很高
+|Name2 (TW) = 噁心白喵菇菇
+|Desc2 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>在新飼主身邊展現了驚人的成長力<br>只是單發的話攻擊力很高
+|Name1 (KR) = 흰고양이 나메코
+|Desc1 (KR) = NEO 나메코 재배 킷트에서 참전!<br>된장국 재료로 쓰일 뻔 해서, 새 주인을 찾는중<br>단발 공격력은 하이클라스
+|Name2 (KR) = 징글 흰고양이 나메코
+|Desc2 (KR) = NEO 나메코 재배 킷트에서 참전!<br>새로운 주인을 찾은 후, 놀라운 성장을 보임<br>원거리 공격용 캐릭터
+}}
+
+==Cost==
+*Chapter 1: 440¢
+*Chapter 2: 660¢
+*Chapter 3: 880¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = White Cat
+|Normal Base HP = 400
+|Normal Base AP = 120
+|Normal Range = 175
+|Normal Foreswing = 52
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 113
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 440
+|Normal Recharge = 360
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Gross White Cat
+|Evolved Base HP = 400
+|Evolved Base AP = 120
+|Evolved Range = 350
+|Evolved Foreswing = 52
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 86
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 440
+|Evolved Recharge = 360
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 120 damage<br>(31.86 DPS)
+|val-Normal-Attack Range = 175
+|val-Normal-Attack Frequency = 113f <sub>3.77 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 52f <sup>1.73s</sup><br>(61f <sup>2.03s</sup> backswing)
+|val-Normal-Recharge Time = 12 ~ 3.2 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(541.59 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(467.18 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 131f <sub>4.37 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 52f <sup>1.73s</sup><br>(34f <sup>1.13s</sup> backswing)
+|val-Evolved-Recharge Time = 12 ~ 3.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni279 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/280.html
+
+----
+{{CatNav|Tanky|Fortressy}}
+----
+
+{{Neo Mushroom Garden}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Stamp Reward Cats]]

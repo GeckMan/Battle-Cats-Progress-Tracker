@@ -1,0 +1,131 @@
+'''Li'l Yahiko''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event]]. He was added in [[Version 13.4 Update|Version 13.4]].
+
+{{Cat Info
+|ID = 751
+|rarity = SR
+|name1 = Li'l Yahiko
+|name2 = Li'l Yahiko CC
+}}
+
+==Evolution==
+Evolves into '''Li'l Yahiko CC''' at level 10.
+
+==Strategy/Usage==
+Li'l Yahiko is similar to Butterfly Cat, with the exception of targetting [[:Category:Floating Enemies|Floating]] and [[:Category:Angel Enemies|Angel]] enemies. He also trades recharge time and attack rate for Area Attack and higher range, but the 30 extra range and Area Attack aren't really enough to make him better than Fishman against Floating enemies, especially considering his recharge time is roughly 10 seconds longer.
+
+Against Angels, he has the advantage of targeting a trait with very few usable attackers, let alone good rushers. His decent range lets him be usable against most angels, and his high speed means he can get hits on ones that still outrange him, like [[Angelic Sleipnir]]. Once unlocked though, [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]'s pure spammability and higher range make Mushroom the better choice, outside of Sleipnir.
+
+Aside from his unique niche as an Anti-angel rusher, he is a fringe and hard to use option at best. His frankly lacking stats and elusiveness as a collab Super Rare makes him an above-average but still underwhelming collaboration unit. If one gets [[Food Stall Cat (Rare Cat)|Cafeteria Cat]] or [[Kalisa (Uber Rare Cat)|Kalisa]], Li'l Yahiko's niche gets obliterated and relegated to labyrinth and legend quest fodder.
+
+Regardless, keep in mind his usability when you're struggling against of floating and/or angels.
+
+{{Job|Classification = Rusher & Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 751
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni751 f00.png
+|Image2 = Uni751 c00.png
+|Name1 = Li'l Yahiko
+|Desc1 = Joining from Rurouni Kenshin! Apprenticing at<br>the Kamiya Dojo to become a powerful swordsman.<br>Massive Area damage to Angels and Floating.
+|Name2 = Li'l Yahiko CC
+|Desc2 = Joining from Rurouni Kenshin! Brave boy<br>who refuses to back down from even tough foes.<br>Massive Area damage to Angels and Floating.
+|Name1 (JP) = ちび弥彦 (Chibi Yahiko)
+|Desc1 (JP) = 「るろうに剣心」から参戦！<br>一人前の剣士を目指す神谷道場の門下生<br>浮いてる敵と天使に超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = Joining from 'Rurouni Kenshin'!<br>A student of the Kamiya Dojo aspiring to become a full-fledged swordsman<br>Deals super damage to floating enemies and angels (Area Attack)
+|Name2 (JP) = ちび弥彦CC (Chibi Yahiko CC)
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>強敵にも臆さずに立ち向かう勇敢な少年<br>浮いてる敵と天使に超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = Joining from 'Rurouni Kenshin'!<br>A brave young man who fearlessly faces formidable foes<br>Deals super damage to floating enemies and angels (Area Attack)
+|Name1 (TW) = 小小彌彥
+|Desc1 (TW) = 從「神劍闖江湖」來參戰！<br>神谷道場的弟子，目標是成為獨當一面的劍士<br>給予飄浮敵人與天使敵人超大傷害（範圍攻擊）
+|Name2 (TW) = 小小彌彥CC
+|Desc2 (TW) = 從「神劍闖江湖」來參戰！<br>面對強敵也毫無畏懼的勇敢少年<br>給予飄浮敵人與天使敵人超大傷害（範圍攻擊）
+|Name1 (KR) = 꼬맹이 야히코
+|Desc1 (KR) = 바람의 검심에서 참전!<br>어엿한 검사를 목표로 하는 카미야 도장의 문하생<br>떠있는 적과 천사에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 꼬맹이 야히코CC
+|Desc2 (KR) = 바람의 검심에서 참전!<br>두려워하지 않고 강적에 맞서는 용감한 소년<br>떠있는 적과 천사에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 650¢
+*Chapter 2: 975¢
+*Chapter 3: 1,300¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Yahiko
+|Normal Base HP = 800
+|Normal Base AP = 500
+|Normal Range = 250
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 128
+|Normal Speed = 25
+|Normal KB = 3
+|Normal Cost = 650
+|Normal Recharge = 840
+|Normal Attack Type = Area
+|Normal Targets = Floating,Angel
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Li'l Yahiko CC
+|Evolved Base HP = 1000
+|Evolved Base AP = 600
+|Evolved Range = 250
+|Evolved Foreswing = 5
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 128
+|Evolved Speed = 25
+|Evolved KB = 3
+|Evolved Cost = 650
+|Evolved Recharge = 840
+|Evolved Attack Type = Area
+|Evolved Targets = Floating,Angel
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 500 damage<br>(117.19 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 128f <sub>4.27 seconds</sub>
+|val-Normal-Movement Speed = 25
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 5f <sup>0.17s</sup><br>(123f <sup>4.1s</sup> backswing)
+|val-Normal-Recharge Time = 28 ~ 19.2 seconds
+|val-Normal-MaxHP = 13,600 HP
+|val-Normal-MaxAttack = 8,500 damage<br>(1,992.19 DPS)
+|val-Evolved-Health = 17,000 HP
+|val-Evolved-Attack Power = 10,200 damage<br>(2,390.62 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 128f <sub>4.27 seconds</sub>
+|val-Evolved-Movement Speed = 25
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 5f <sup>0.17s</sup><br>(123f <sup>4.1s</sup> backswing)
+|val-Evolved-Recharge Time = 28 ~ 19.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni751 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/752.html
+
+----
+{{CatNav|Li'l Kaoru|Kenshin Cat}}
+----
+
+{{Rurouni Kenshin}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

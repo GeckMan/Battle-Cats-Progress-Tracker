@@ -1,0 +1,118 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Misa Ono & Doge]].''
+'''Misa Ono & Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 7.0 Update|Version 7.0]] and can be obtained in the [[Get On! Kyoto City Subway Collaboration Event]].
+
+{{Cat Info
+|ID = 424
+|rarity = RR
+|name1 = Misa Ono & Cat
+|name2 = Misa Ono & Cat CC
+}}
+
+==Evolution==
+Evolves into '''Misa Ono & Cat CC''' at level 10.
+
+==Strategy/Usage==
+This duo of Cat and anime girl unfortunately has no meaning or use in the game other than to boost [[User Rank]]. The best it can do is offer some support in early [[Empire of Cats]] stages like [[Korea (Empire of Cats)|Korea]] or [[Japan (Empire of Cats)|Japan]], as it will falter and die at any real threat, like [[Master A.]] Unfortunately, no amount of boost will save it from this fate either, as they have too low base stats.
+
+On the plus side, she has a 100% chance to Weaken [[:Category:Floating Enemies|Floating]] enemies to 50% damage, which may be useful, as you can use her like a suicidal debuffer, unless you have a rapid supply of [[:Category:Meatshield-class Cats|meatshields]] to protect her, like [[Tank Cat (Normal Cat)|Tank Cat]] or the [[Crazed Cat (Super Rare Cat)|Crazed]] [[Crazed Tank Cat (Super Rare Cat)|Cats]]. Even then, it would be better to use and invest in attackers like [[Mer-Cat (Rare Cat)|Cameraman Cat]] or [[Salon Cat (Rare Cat)|Salon Cat]].
+
+[[Bishop Cat (Rare Cat)|Sanzo]] outclasses her in every way, especially with the weaken [[Talents|Talent]] unlocked.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 424
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni424 f00.png
+|Image2 = Uni424 c00.png
+|Name1 (JP) = 小野ミサ&ネコ
+|Desc1 (JP) = 「地下鉄に乗るっ」から参戦！地下鉄で通学する女の子<br>太秦萌の幼なじみで音楽と植物が好き<br>必ず浮いてる敵の攻撃力を下げる
+|Transl1 (JP) = Joining the war from "Get on the Subway"! She is a childhood friend of [[Moe Uzumasa & Cat (Rare Cat)|Moe Uzumasa]]<br>A girl who commutes to school by underground and loves music and plants<br>Always reduces the attack power of Floating enemies
+|Name2 (JP) = 小野ミサ&ネコＣＣ
+|Desc2 (JP) = 「地下鉄に乗るっ」から参戦！<br>運動が苦手でついついエスカレーターを使っちゃう派<br>必ず浮いてる敵の攻撃力を下げる
+|Transl2 (JP) = Joining the war from "Get on the Subway"!<br>Not very good at exercise but she's a fan of using the escalator<br>Always reduces the attack power of Floating enemies
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Misa Ono & Cat
+|Normal Base HP = 400
+|Normal Base AP = 100
+|Normal Range = 310
+|Normal Foreswing = 39
+|Normal Attack Cooldown = 225
+|Normal Attack Length = 106
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 760
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = Misa Ono & Cat CC
+|Evolved Base HP = 400
+|Evolved Base AP = 100
+|Evolved Range = 310
+|Evolved Foreswing = 39
+|Evolved Attack Cooldown = 225
+|Evolved Attack Length = 106
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 760
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 100 damage<br>(11.36 DPS)
+|val-Normal-Attack Range = 310
+|val-Normal-Attack Frequency = 264f <sub>8.8 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 39f <sup>1.3s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Normal-Recharge Time = 25.33 ~ 16.53 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(193.18 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(193.18 DPS)
+|val-Evolved-Attack Range = 310
+|val-Evolved-Attack Frequency = 264f <sub>8.8 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 39f <sup>1.3s</sup><br>(67f <sup>2.23s</sup> backswing)
+|val-Evolved-Recharge Time = 25.33 ~ 16.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni424 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/425.html
+
+----
+{{CatNav|Saki Matsuga & Cat|Rei Uzumasa & Cat}}
+----
+
+{{Get On! Kyoto City Subway}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]

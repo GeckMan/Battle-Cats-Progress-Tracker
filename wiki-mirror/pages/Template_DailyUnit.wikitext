@@ -1,0 +1,15 @@
+<includeonly><onlyinclude>{{#invoke:DailyUnit|{{{1|cat}}}}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+This template is a fun addition to the main page that features a randomly selected unit on the main page every day based on server time (UTC). To show the daily cat, pass <code>cat</code> as the first argument, and pass<code>enemy</code> for the daily enemy. Omitting this parameter will default to <code>cat</code>.
+
+<tabber>
+Daily Cat=
+<pre>{{DailyUnit|cat}}</pre>
+
+{{DailyUnit|cat}}
+
+|-|Daily Enemy=
+<pre>{{DailyUnit|enemy}}</pre>
+
+{{DailyUnit|enemy}}
+</tabber>

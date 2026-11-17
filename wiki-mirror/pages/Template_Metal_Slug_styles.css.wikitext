@@ -1,0 +1,7 @@
+.ranger-navbox.metal-slug {
+	--bg-navbox-title: linear-gradient(to right, hsl(100, 100%, 17%) 0%, hsl(100, 100%, 19%) 100%);
+	--bg-sub-table-title: hsl(90, 37%, 50%);
+	--bg-group-name: hsl(100, 100%, 27%);
+}
+
+/* [[Category:Template stylesheets]] */

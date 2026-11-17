@@ -1,0 +1,70 @@
+{{JPExclusive}}
+'''Nana & Doge''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Kaohsiung Rapid Transit Collaboration Event]]. They were added in [[Version 11.1 Update|Version 11.1]].
+
+{{Enemy Info
+|name = Nana & Doge
+|image = E 596.png
+|appearance = [[Kaohsiung Rapid Transit Collaboration Event]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Nana & Doge has high health, low attack, range and a fierce Mini-Wave + Slow combo with Omni-Strike attacks.
+
+==Strategy==
+Although she has high enough health to be considered a tank, only two stages she is in has her appear at 100% or higher magnification. Due to her low range anything that can outrange her is instantly a safe option to use since she will be attacking the meatshields sent out.<br>
+Her Mini-Wave + Slow combo can seem scary at first, but it is just above one and a half seconds long but if the player has a [[:Category:Wave Shield Cats|Wave Shield Cat]] then her combo is practically nullified.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Metro Red Line|Kaohsiung Metro Red Line]]:
+**[[Industrial Town Siaogang Station]] (1%)
+**[[International Airport Kaohsiung International Airport Station]] (10%)
+**[[For Leisure Facilities Kusanagi Station]] (40%)
+**[[Lush Greenery At Central Park Station]] (100%)
+**[[A Beautiful Station Formosa Boulevard Station]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Nana & Doge
+|Health = 120000
+|Attack Power = 5000
+|Attack Range = 160
+|Attack Type = Area
+|Time Between Attacks = 101
+|Movement Speed = 8
+|Knockback = 3
+|Foreswing = 63
+|Backswing = 38
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -420~210)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 50f <sub>1.67 seconds</sub><br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+596 e.png|Nana & Doge's spritesheet
+IdleNana&Doge.gif|Nana & Doge's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/598.html
+
+----
+{{EnemyNav|Tiger Doge|Emilia & Doge}}
+----
+
+{{Kaohsiung Rapid Transit}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Mini-Wave Enemies]]
+[[Category:Omni Strike Enemies]]

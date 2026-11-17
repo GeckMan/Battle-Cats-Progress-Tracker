@@ -1,0 +1,127 @@
+:''For other uses, see [[Kaoru (disambiguation)]].''
+'''Li'l Kaoru''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event]]. She was added in [[Version 13.4 Update|Version 13.4]].
+
+{{Cat Info
+|ID = 750
+|rarity = SR
+|name1 = Li'l Kaoru
+|name2 = Li'l Kaoru CC
+}}
+
+==Evolution==
+Evolves into '''Li'l Kaoru CC''' at level 10.
+
+==Strategy/Usage==
+Much like [[Bodhisattva Cat (Super Rare Cat)|Bodhisattva Cat]], she tries to be an anti-Floating Crowd-Controller, but fails at it due to being outclassed by [[Bishop Cat (Rare Cat)|Sanzo Cat]]. While her recharge time isn't quite as pathetic as Boshisattva's, it is still much longer than Sanzo's 4 second recharge.
+
+While she isn't of much use as a Crowd-Controller, it is worth noting that she does have surprisingly good stats, which can actually rival a non-[[Talents|Talented]] [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]. While there still are better options for midranged damaging units, she may see some occasional use thanks to said stats.
+
+{{Job|Classification = Crowd-Controller & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 750
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni750 f00.png
+|Image2 = Uni750 c00.png
+|Name1 = Li'l Kaoru
+|Desc1 = Joining from Rurouni Kenshin!<br>Kamiya Dojo's head instructor of swordmanship.<br>May Weaken Floating enemies with Area attacks.
+|Name2 = Li'l Kaoru CC
+|Desc2 = Joining from Rurouni Kenshin! Striving to pass<br>on the Kamiya Kasshin-ryu to a new generation.<br>May Weaken Floating enemies with Area attacks.
+|Name1 (JP) = ちび薫 (Chibi Kaoru)
+|Desc1 (JP) = 「るろうに剣心」から参戦！<br>剣術道場「神谷道場」の師範代を務める女性<br>たまに浮いてる敵の攻撃力を下げる(範囲攻撃)
+|Transl1 (JP) = Joining from 'Rurouni Kenshin'!<br>A woman who serves as the deputy master of the Kamiya Dojo<br>Occasionally lowers the attack power of floating enemies (Area Attack)
+|Name2 (JP) = ちび薫CC (Chibi Kaoru CC)
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>人を活かす剣術「神谷活心流」を守るため奮闘する<br>たまに浮いてる敵の攻撃力を下げる(範囲攻撃)
+|Transl2 (JP) = Joining from 'Rurouni Kenshin'!<br>Striving to preserve the swordsmanship style 'Kamiya Kasshin-ryu' that values preserving life and bringing out the best in people<br>Occasionally lowers the attack power of floating enemies (Area Attack)
+|Name1 (TW) = 小小神谷薰
+|Desc1 (TW) = 從「神劍闖江湖」來參戰！<br>在劍術道場「神谷道場」擔任代理師父的女性<br>有時候能使飄浮敵人的攻擊力下降（範圍攻擊）
+|Name2 (TW) = 小小神谷薰CC
+|Desc2 (TW) = 從「神劍闖江湖」來參戰！<br>為了守護救人的劍術「神谷活心流」而持續奮鬥<br>有時候能使飄浮敵人的攻擊力下降（範圍攻擊）
+|Name1 (KR) = 꼬맹이 카미야 카오루
+|Desc1 (KR) = 바람의 검심에서 참전!<br>검술 도장 「카미야 도장」의 사범 대리<br>가끔 떠있는 적의 공격력을 낮춘다 (범위 공격)
+|Name2 (KR) = 꼬맹이 카오루CC
+|Desc2 (KR) = 바람의 검심에서 참전!<br>사람을 살리는 검술 「카미야 활심류」를 지키기 위해 노력하고 있다<br>가끔 떠있는 적의 공격력을 낮춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 720¢
+*Chapter 2: 1,080¢
+*Chapter 3: 1,440¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Kaoru
+|Normal Base HP = 1400
+|Normal Base AP = 900
+|Normal Range = 250
+|Normal Foreswing = 38
+|Normal Attack Cooldown = 129
+|Normal Attack Length = 81
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 720
+|Normal Recharge = 860
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = Li'l Kaoru CC
+|Evolved Base HP = 1800
+|Evolved Base AP = 1200
+|Evolved Range = 250
+|Evolved Foreswing = 38
+|Evolved Attack Cooldown = 129
+|Evolved Attack Length = 81
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 720
+|Evolved Recharge = 860
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,400 HP
+|val-Normal-Attack Power = 900 damage<br>(161.68 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 167f <sub>5.57 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 38f <sup>1.27s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-Normal-Recharge Time = 28.67 ~ 19.87 seconds
+|val-Normal-MaxHP = 23,800 HP
+|val-Normal-MaxAttack = 15,300 damage<br>(2,748.5 DPS)
+|val-Evolved-Health = 30,600 HP
+|val-Evolved-Attack Power = 20,400 damage<br>(3,664.67 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 167f <sub>5.57 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 38f <sup>1.27s</sup><br>(43f <sup>1.43s</sup> backswing)
+|val-Evolved-Recharge Time = 28.67 ~ 19.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni750 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/751.html
+
+----
+{{CatNav|Hajime Saito|Li'l Yahiko}}
+----
+
+{{Rurouni Kenshin}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]

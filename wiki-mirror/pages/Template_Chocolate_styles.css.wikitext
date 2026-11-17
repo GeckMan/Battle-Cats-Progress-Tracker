@@ -1,0 +1,9 @@
+.ranger-navbox.chocolate {
+	--bg-navbox-title: linear-gradient(to right, #5a493f 0%, #776155 100%);
+	--bg-sub-table-title: #9f7060;
+	--bg-group-name: #3d3129;
+
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

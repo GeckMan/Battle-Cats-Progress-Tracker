@@ -1,0 +1,56 @@
+{{DISPLAYTITLE:Round 3}}
+{{EnemiesAppearing|Sir Seal|H. Nah|Razorback|Camelle|Raynard}}
+'''Round 3''' is the third stage in [[Otherworld Colosseum#Special Clearance|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 02 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Sir Seal|4,000%
+|H. Nah|200%
+|Razorback|150%
+|Raynard|100%}}
+|boss = {{Magnification|Camelle|400%}}
+|enemies2 = {{Magnification|Sir Seal|4,800%
+|H. Nah|240%
+|Razorback|180%
+|Raynard|120%}}
+|boss2 = {{Magnification|Camelle|480%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Round 3
+|script = Round 3
+|romaji = Round 3
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Special Clearance|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 2 (Special Clearance)|Round 2]]
+|next stage = [[Round 4 (Special Clearance)|Round 4]]
+}}
+
+==Rules==
+{{ColosseumRule|Special Clearance}}
+
+==Battleground==
+*3 [[Sir Seal]]s spawn after 8 seconds<sup>240f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[H. Nah]] spawns after 21.33 seconds<sup>640f</sup>.
+*When the base reaches 99% HP:
+**1 [[Camelle]] spawns as the boss.
+**3 [[Razorback]]s spawn, delay 56.67~60 seconds<sup>1,700f~1,800f</sup>.
+**Infinite [[Sir Seal]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**5 [[H. Nah]]s spawn after 13.33 seconds<sup>400f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**1 [[Raynard]] spawns after 46.67 seconds<sup>1,400f</sup>.
+
+==Strategy==
+When you hit the base, spam [[Dark Lazer]]. You won't even need [[Bombercat]], seeing Dark Lazer's insanely high DPS. Make sure to run [[Awakened Bahamut Cat]] to cleanup the H.Nahs and Camelles as well as [[Jelly Dumpling Cat]] to snipe Raynard.
+
+==Reference==
+*https://battlecats-db.com/stage/s36007-03.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

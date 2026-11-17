@@ -1,0 +1,137 @@
+{{TranslationNeeded}}
+{{PCExclusive}}
+'''Kitaro Cat & Nezumi-Otoko Cat''' was an [[:Category:Uber Rare Cats|Uber Rare Cat]] exclusive to the GeGeGe no Kitarou Collaboration Event, only available in the [[Minna de Nyanko Daisensou|PC version]]. It is a variant of [[Baby Cat (Uber Rare Cat)|Baby Cat]].
+
+{{Cat Info
+|ID = 914
+|rarity = UR
+|version = PC
+|name1 = Kitaro Cat & Nezumi-Otoko Cat
+|name2 = Kitaro Cat & Nezumi-Otoko Cat
+|key2 = Kitaro Cat & Nezumi-Otoko Cat 2
+|image1 = 10914 1.png
+|image2 = 10914 2.png
+}}
+
+==Evolution==
+Evolves into '''Kitaro Cat & Nezumi-Otoko Cat''' at level 10.
+
+==Strategy/Usage==
+Similarly to [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]], Kitaro Cat & Nezumi-Otoko Cat are used as a short-range tank to deal quick and high wave damage.
+
+Despite having lower health, speed and slightly lower DPS than Cats in the Cradle, Kitaro Cat has a lower cost, faster attack rate and [[Wave Attack]]s in all forms rather than just in [[True Form]], making him slightly better in some situations, especially early on or against [[:Category:Metal Enemies|Zombies]].
+
+Kitaro Cat excels in stages where they can get a clean hit off due to it featuring enemies with LDs or low attack frequencies. Enemies such as [[Dolphina]], and [[Dark Emperor Nyandam]] are good examples of this. Enemies with Omni Strike are also vulnerable, as they tend to move closer than they should be, hence causing them to take damage from the wave attack.
+
+Their high stats and massive level 3 Wave Attack allow them to hit every Zombie on the field, potentially even [[Zombie Killer|Z-killing]] them if you're lucky enough. This means they're much better at cleaning Zombie peons than even the original Cats in the Cradle, but their wave level and quicker time between attacks makes them a better choice for non-Zombie peons too.
+
+{{Job|Classification = Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 914<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10914 f00.png
+|Image2 = Uni10914 c00.png
+|Name1 (JP) = 鬼太郎ネコ&ねずみ男ネコ (Kitarō Neko & Nezumi-Otoko Neko, Kitaro Cat & Rat Man Cat)
+|Desc1 (JP) = 遠距離から敵をまとめて攻撃できるキャラクター。<br>ゾンビと浮いている敵をたまにふっとばす。<br>必ず波動を出す（範囲攻撃）
+|Transl1 (JP) = A character who can attack many enemies at ones from a long distance.<br>Occasionally Knockbacks Zombies and Floating enemies.<br>Always releases Waves (Area Attack)
+|Name2 (JP) = 鬼太郎ネコ&ねずみ男ネコ (Kitarō Neko & Nezumi-Otoko Neko, Kitaro Cat & Rat Man Cat)
+|Desc2 (JP) = 超有名な画霊族の生き残りと半妖怪に憧れるネコ<br>友情の証？の首を吹くと、ねずみの方が範囲攻撃をする<br>たまに浮いている敵とゾンピをふっとばし、波動を放つ
+|Transl2 (JP) = A survivor of a very famous spirit tribe and a Cat admiring half yokai<br>The mouse does an Area Attack when you blow on its neck, a symbol of friendship (?)<br>Occasionally Knockbacks Floating enemies and Zombies, releases Waves
+}}
+
+==Cost==
+*Chapter 1: 3,200円
+*Chapter 2: 4,800円
+*Chapter 3: 6,400円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+{{Cat Stats Manual
+|Normal Name = Kitaro Cat & Nezumi-Otoko Cat
+|Normal Health = 5,700 HP
+|Normal Attack Power = 2,250 damage<br>(346.2 DPS)
+|Normal Attack Range = 240
+|Normal Attack Frequency = 195f <sub>6.5 seconds</sub>
+|Normal Movement Speed = 8
+|Normal Knockback = 2 times
+|Normal Attack Animation = 81f <sup>2.7s</sup>
+|Normal Recharge Time = 67 ~ 58.2 seconds
+|Normal MaxHP = 96,900 HP
+|Normal MaxAttack = 38,250 damage<br>(5884.62 DPS)
+|Normal Attack Type = Area Attack
+|Normal Abilities = 30% [[Knockback|knockback]] [[:Category:Floating Enemies|Floating]] and [[:Category:Zombie Enemies|Zombie]] Enemies<br>
+100% chance to perform a Lv.3 [[Wave Attack]]<br>
+[[Zombie Killer]]
+|Evolved Name = Kitaro Cat & Nezumi-Otoko Cat
+|Evolved Health = 96,900 HP
+|Evolved Attack Power = 38,250 damage<br>(5884.62 DPS)
+|Evolved Attack Range = 240
+|Evolved Attack Frequency = 195f <sub>6.5 seconds</sub>
+|Evolved Movement Speed = 8
+|Evolved Knockback = 2 times
+|Evolved Attack Animation = 81f <sup>2.7s</sup>
+|Evolved Recharge Time = 67 ~ 58.2 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = 30% [[Knockback|knockback]] [[:Category:Floating Enemies|Floating]] and [[:Category:Zombie Enemies|Zombie]] Enemies<br>
+100% chance to perform a Lv.3 [[Wave Attack]]<br>
+[[Zombie Killer]]
+|Lv.MAX = Lv.40
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10914_f.png|MediaWiki:Custom-AnimationViewer/PC914_f.json}}
+|-|Evolved=
+{{AnimationViewer|10914_c.png|MediaWiki:Custom-AnimationViewer/PC914_c.json}}
+</tabber>
+</div>
+
+==Gallery==
+<gallery>
+10914 f.png|Kitaro Cat & Nezumi-Otoko Cat's spritesheet
+10914 c.png|Kitaro Cat & Nezumi-Otoko Cat's evolved spritesheet
+Udi914 f.png|Kitaro Cat & Nezumi-Otoko Cat's [[Upgrade Menu]] icon
+Udi914 c.png|Kitaro Cat & Nezumi-Otoko Cat's evolved Upgrade Menu icon
+</gallery>
+
+==Trivia==
+*This is a variant of Baby Cat, and, other than Wave level, time between attacks, and target traits, shares the same stats as [[Shinji Cat (Uber Rare Cat)|Shinji Cat]], another variant.
+
+==Reference==
+*https://www.youtube.com/watch?v=FdhWrds5s3c
+*https://www.youtube.com/watch?v=6-BgCJ-Z6RM
+*https://seesaawiki.jp/battlecatswiki/d/%b5%b4%c2%c0%cf%ba%a5%cd%a5%b3%26%a4%cd%a4%ba%a4%df%c3%cb%a5%cd%a5%b3
+
+----
+{{CatNav|Neko-Musume Cat|Mimiluga}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Wave Attack Cats]]
+[[Category:Zombie Killer Cats]]

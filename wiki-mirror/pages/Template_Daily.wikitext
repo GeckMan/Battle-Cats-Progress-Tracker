@@ -1,0 +1,69 @@
+{{#invoke:Navbox|main
+|template = Template:Daily
+|title = [[:Category:Daily Stages|Daily Stages]]
+|navbox_class = daily
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Normal Stages
+|group1 = [[Monday Stage]]
+|list1 =
+*[[Rich Cat (Easy)]]
+*[[Rich Cat (Normal)]]
+*[[Rich Cat (Hard)]]
+
+|group2 = [[Tuesday Stage]]
+|list2 =
+*[[Speed Cat (Easy)]]
+*[[Speed Cat (Normal)]]
+*[[Speed Cat (Hard)]]
+
+|group3 = [[Wednesday Stage]]
+|list3 =
+*[[Cat Jobs (Easy)]]
+*[[Cat Jobs (Normal)]]
+*[[Cat Jobs (Hard)]]
+
+|group4 = [[Thursday Stage]]
+|list4 =
+*[[Sniper Cat (Easy)]]
+*[[Sniper Cat (Normal)]]
+*[[Sniper Cat (Hard)]]
+
+|group5 = [[Friday Stage]]
+|list5 =
+*[[Helpful Cat (Easy)]]
+*[[Helpful Cat (Normal)]]
+*[[Helpful Cat (Hard)]]
+
+|group6 = [[Weekend Stage]]
+|list6 =
+*[[Sweet XP (Easy)]]
+*[[Sweet XP (Normal)]]
+*[[Sweet XP (Hard)]]
+*[[Sweet XP (Veteran)]]
+*[[Sweet XP (Expert)]]
+*[[Sweet XP (Insane)]]
+
+|header7 = Blitz Stages
+|group7 = Mon. Blitz Stage
+|list7 =
+*[[Rich Cat (Veteran)]]
+
+|group8 = Tues. Blitz Stage
+|list8 =
+*[[Speed Cat (Veteran)]]
+
+|group9 = Weds. Blitz Stage
+|list9 =
+*[[Cat Jobs (Veteran)]]
+
+|group10 = Thurs. Blitz Stage
+|list10 =
+*[[Sniper Cat (Veteran)]]
+
+|group11 = Fri. Blitz Stage
+|list11 =
+*[[Helpful Cat (Veteran)]]
+}}<templatestyles src="Daily/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Daily Stages]]}}<noinclude>[[Category:Navboxes]]</noinclude>

@@ -1,0 +1,109 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Denmark (Into the Future)/Outbreak|here]].''
+'''Denmark''' is the 8th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc038.png]]
+|stage location = [[File:Denmark.png]]
+'''Into The Future'''
+|energy = 32
+|energy2 = 42
+|energy3 = 52
+|enemy castle hp = 10,000 HP
+|enemy castle hp2 = 15,000 HP
+|enemy castle hp3 = 20,000 HP
+|enemies = {{Magnification|B.B.Bunny|150%
+|Those Guys|150%
+|Squire Rel|150%
+|Sir Seal|150%}}
+|boss = {{Magnification|One Horn|150%}}
+|enemies2 = {{Magnification|B.B.Bunny|600%
+|Those Guys|600%
+|Squire Rel|600%
+|Sir Seal|600%}}
+|boss2 = {{Magnification|One Horn|600%}}
+|enemies3 = {{Magnification|B.B.Bunny|1,000%
+|Those Guys|1,000%
+|Squire Rel|1,000%
+|Sir Seal|1,000%
+|Ginger Snache|200%
+|One Horn|1,000%}}
+|boss3 = {{Magnification|B.B.Bunny|1,000%}}
+|treasure = - [[Treasure|Hamlet]]
+|treasure2 = - [[Treasure|Hamlet]]
+|treasure3 = - [[Treasure|Hamlet]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': Speed Up +1
+|score reward2 = '''8,500''': [[Cat Food]] +10<br>
+'''7,000''': Speed Up +1
+|score reward3 = '''8,000''': [[Cat Food]] +10<br>
+'''7,500''': Speed Up +1
+|max enemies = 6
+|max enemies2 = 6
+|max enemies3 = 8
+|XP = 3,100 XP
+|width = 3,600
+|jpname = Denmark
+|script = デンマーク
+|romaji = Denmāku
+|jptreasure = Fairy Tale
+|twname = United Kingdom
+|twscript = 英國
+|twromaji = Yīngguó
+|twtreasure = Red Double Decker Bus
+|krname = Denmark
+|krscript = 덴마크
+|krromaji = Denmakeu
+|krtreasure = Hamlet
+|chapter = [[Into the Future]]
+|prev stage = [[United Kingdom (Into the Future)|United Kingdom]]
+|next stage = [[Germany (Into the Future)|Germany]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|B.B.Bunny|Those Guys|Squire Rel|Sir Seal|One Horn}}
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 20 seconds<sup>600f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 25 seconds<sup>750f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Those Guys]] spawn after 26.67 seconds<sup>800f</sup>, delay 5~16.67 seconds<sup>150f~500f</sup>.
+*Infinite [[Squire Rel]]s spawn after 40 seconds<sup>1,200f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Sir Seal]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Sir Seal]] spawns after 116.67 seconds<sup>3,500f</sup>.
+*1 [[Sir Seal]] spawns after 170 seconds<sup>5,100f</sup>.
+*When the base reaches 90% HP:
+**1 [[One Horn]] spawns as the boss.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|B.B.Bunny|Those Guys|Squire Rel|Sir Seal|Ginger Snache|One Horn}}
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 15 seconds<sup>450f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Those Guys]] spawn after 23.33 seconds<sup>700f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*3 [[Sir Seal]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 90% HP:
+**1 [[B.B.Bunny]] spawns as the boss.
+**5 [[Sir Seal]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**8 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+**10 [[Ginger Snache]]s spawn, delay 3~6 seconds<sup>90f~180f</sup>.
+**3 [[One Horn]]s spawn, delay 10 seconds<sup>300f</sup>.
+
+==Strategy==
+Just bring one or two [[:Category:Anti-Red Cats|anti-Red cats]] if necessary. [[Fish Cat (Normal Cat)|Whale Cat]] makes this stage a breeze.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Wc039.png|Taiwanese version's base (United Kingdom)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in the '''United Kingdom'''; [[United Kingdom (Into the Future)|stage 7]] is Norway and Denmark is moved to [[Germany (Into the Future)|stage 9]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-08.html
+*https://battlecats-db.com/stage/s03004-08.html
+*https://battlecats-db.com/stage/s03005-08.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

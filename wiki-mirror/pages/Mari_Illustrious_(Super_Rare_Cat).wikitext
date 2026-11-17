@@ -1,0 +1,138 @@
+:''For the other Mari from the same event, see [[Mari Cat (Rare Cat)]].''
+'''Mari Illustrious''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was added in [[Version 6.10 Update|Version 6.10]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event|Evangelion Collaboration Event]].
+
+{{Cat Info
+|ID = 411
+|rarity = SR
+|name1 = Mari Illustrious
+|name2 = Plug Suit Mari
+}}
+
+==Evolution==
+Evolves into '''Plug Suit Mari''' at level 10.
+
+==Strategy/Usage==
+Mari as a unit is very similar to [[Mer-Cat (Rare Cat)|Cameraman Cat]]: both are strong against [[:Category:Floating Enemies|Floating]] enemies, but upon comparing their stats Mari is stronger in nearly every region. In spite of that, she lacks spamability and cost for what she can do, on top of being unusable in {{4c}}.
+
+Mari won't replace Cameraman Cat against Floating because the lack of the [[Survive|Survive]] and her subpar recharge time, but is decent against Floating enemies that outrange Cameraman. She can also be useful if you don't have Mer-Cat's [[True Form]] or lack units to fight Floating enemies with. Additionally, she has the very niche use of being able to fight off Floating enemies in stages with [[Henry]], because of her marginally higher speed and Freeze Immunity.
+
+As for general usage, she is okay but not the best, and can usually be replaced by [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] and [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]]. Where Mari really shines is against [[:Category:EVA Angel Enemies|EVA Angels]], as her EVA Angel Killer skyrockets her stats to [[:Category:Uber Rare Cats|Uber]] levels against them.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 411
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni411 f00.png
+|Image2 = Uni411 c00.png
+|Name1 = Mari Illustrious
+|Desc1 = Recruited from EVANGELION!<br>An enigmatic girl who arrived via parachute.<br>Strong vs. Floating (Area Attack)
+|Name2 = Plug Suit Mari
+|Desc2 = Recruited from EVANGELION!<br>Her love for piloting EVA is plain to see.<br>Strong vs. Floating (Area Attack)
+|Name1 (JP) = ちびマリ (Chibi Mari)
+|Desc1 (JP) = エヴァンゲリオンから参戦！<br>パラシュートで突如現れた正体不明の少女<br>浮いてる敵にめっぽう強い(範囲攻撃)
+|Transl1 (JP) = Joining the battle from Evangelion!<br>An unidentified girl who suddenly appeared with a parachute.<br>Strong against Floating enemies (Area Attack)
+|Name2 (JP) = プラグスーツのちびマリ (Puragusūtsu no Chibi Mari, Plug Suit Chibi Mari)
+|Desc2 (JP) = エヴァンゲリオンから参戦！<br>誰よりも楽しそうにエヴァに乗る謎の少女<br>浮いてる敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joining the battle from Evangelion!<br>A mysterious girl who enjoys piloting Eva more than anyone else.<br>Strong against Floating enemies (Area Attack)
+|Name1 (TW) = 小小真理
+|Desc1 (TW) = 從新世紀福音戰士來參戰！<br>以降落傘突然出現的不明少女<br>善於攻擊飄浮敵人(範圍攻擊)
+|Name2 (TW) = 作戰服小小真理
+|Desc2 (TW) = 從新世紀福音戰士來參戰！<br>駕駛EVA比誰都快樂的謎之少女<br>善於攻擊飄浮敵人(範圍攻擊)
+|Name1 (KR) = 꼬맹이 마리
+|Desc1 (KR) = 에반게리온에서 참전!<br>낙하산으로 갑자기 나타난 정체불명의 소녀<br>떠있는 적에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 플러그 슈트 꼬맹이 마리
+|Desc2 (KR) = 에반게리온에서 참전!<br>누구보다도 즐겁게 에바에 타는 수수께끼의 소녀<br>떠있는 적에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 800¢
+*Chapter 2: 1,200¢
+*Chapter 3: 1,600¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mari Illustrious
+|Normal Base HP = 1480
+|Normal Base AP = 660
+|Normal Range = 325
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 89
+|Normal Attack Length = 67
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 800
+|Normal Recharge = 900
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Evolved Name = Plug Suit Mari
+|Evolved Base HP = 1480
+|Evolved Base AP = 660
+|Evolved Range = 325
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 89
+|Evolved Attack Length = 67
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 800
+|Evolved Recharge = 900
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,480 HP
+|val-Normal-Attack Power = 660 damage<br>(158.4 DPS)
+|val-Normal-Attack Range = 325
+|val-Normal-Attack Frequency = 125f <sub>4.17 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 30 ~ 21.2 seconds
+|val-Normal-MaxHP = 25,160 HP
+|val-Normal-MaxAttack = 11,220 damage<br>(2,692.8 DPS)
+|val-Evolved-Health = 25,160 HP
+|val-Evolved-Attack Power = 11,220 damage<br>(2,692.8 DPS)
+|val-Evolved-Attack Range = 325
+|val-Evolved-Attack Frequency = 125f <sub>4.17 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 30 ~ 21.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni411 f00}}
+
+==Trivia==
+*[[Coppermine (Uber Rare Cat)|Coppermine]] is a reference to Mari Illustrious, as described in [[Nyanko Ecology Report Large Edition]].
+**Coincidentally, Mari, alongside her [[EVA Unit-08 (Uber Rare Cat)|EVA unit]] and [[Mari Cat (Rare Cat)|Cat equivalent]] are all dedicated [[:Category:Anti-Floating Cats|anti-Floating]] units, the same as Coppermine prior to being given [[Talents|Ultra Talents]].
+
+==Reference==
+*https://battlecats-db.com/unit/412.html
+
+----
+{{CatNav|Asuka Langley|EVA Unit-00}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:EVA Angel Killer Cats]]
+[[Category:Cats with Freeze Immunity]]

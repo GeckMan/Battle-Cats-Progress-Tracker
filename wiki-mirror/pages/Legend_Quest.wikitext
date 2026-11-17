@@ -1,0 +1,446 @@
+{{PageBanner|Legendquest.png}}
+'''Legend Quest''' (レジェンドクエスト, ''Rejendo Kuesuto'', '''Legend Quest''') is an event added in [[Version 8.6 Update|Version 8.6]]. It is available after clearing [[Empire of Cats]] Chapter 1.
+{{Map Stars|4095}}
+
+==Overview==
+Legend Quest is a map somewhat similar to [[Heavenly Tower]], with 48 stages known as LEVELs. Each LEVEL is a random [[Stories of Legend]] stage that provides a partially randomized lineup. All LEVELs are [[No Continues]], and exiting a battle within 10 seconds will not refund [[Battle Items|items]], Crowns or [[Cat Energy|energy]].
+
+==Play Requirements==
+===Stage Clear Requirements===
+To play LEVEL x, the player must first beat Stories of Legend sub-chapter x + 1. For example, in order to play LEVEL 4 of Legend Quest, the player will need to have beaten Stories of Legend sub-chapter 5, [[Risqué Terrain]]. From LEVEL 11 onward, there is an added requirement of having a [[User Rank]] of 1600 or more.
+
+===Cost Requirements===
+In addition to energy, the LEVELs require Crowns to access. The player will begin with a set amount of Crowns, which is equal to the number of Stories of Legend Crown difficulties they have cleared. Crowns obtained from [[Uncanny Legends]] or [[Zero Legends]] do not count here.
+[[File:Sol1.png|thumb|right|60px|A Crown]]
+The maximum number of Crowns that the player can have is 196. Crowns spent in Legend Quest do not impact the player's progress in Stories of Legend. Unlike Energy, they do not regenerate over time, but are instead fully restored with each reappearance of the event. Every time the player retries a LEVEL, the Crown cost increases by 1, maxing out at 4 Crowns for LEVELs 1~40 and 5 Crowns for LEVELs 41~48.
+
+==Randomization==
+===Stage Randomization===
+Legend Quest's LEVELs are randomized. Upon starting LEVEL x, the game will pick a random stage from Stories of Legend sub-chapter x to x + 1. For example, LEVEL 1 is a random stage from [[The Legend Begins]] or [[Passion Land]]. However, it is not completely random, as LAST LEVEL (48) will always be [[Eldritch Forces]] from [[Laboratory of Relics]]. Once a stage is picked, it will not change until the event's next appearance. Stages are always on 1-Crown difficulty and all enemies that appear in them are visible even before attempting.
+
+===Lineup Randomization===
+Legend Quest will change the player's lineup upon entering a LEVEL as its main source of difficulty. Cats will be swapped with random other cats that the player has, potentially preventing the player from even passing a stage if they end up with an unsuitable formation, as many require a dedicated specialist lineup or at least a few key units. The number of cats swapped is generally random, though it will never replace all 10, nor will it change its current form (i.e., if [[Cat (Normal Cat)|Cat]] is currently selected, its form will not be changed to Macho Cat or Mohawk Cat), and empty slots in a lineup will not be filled. The more the player attempts a LEVEL, the less likely it is for a Cat Unit to be swapped.
+
+The chances of cat randomization by attempt number:
+{| class="article-table sortable" border="1"
+! scope="col" data-sort-type="number" |Total Attempts
+! scope="col" data-sort-type="number" |9 Cats
+! scope="col" data-sort-type="number" |8 Cats
+! scope="col" data-sort-type="number" |7 Cats
+! scope="col" data-sort-type="number" |6 Cats
+! scope="col" data-sort-type="number" |5 Cats
+! scope="col" data-sort-type="number" |4 Cats
+! scope="col" data-sort-type="number" |3 Cats
+! scope="col" data-sort-type="number" |2 Cats
+! scope="col" data-sort-type="number" |1 Cat
+! scope="col" data-sort-type="number" |0 Cats
+|-
+|1
+|30%
+|32%
+|14%
+|6%
+|6%
+|4%
+|4%
+|2%
+|2%
+|/
+|-
+|2
+|/
+|/
+|27%
+|37%
+|16%
+|6%
+|6%
+|4%
+|4%
+|/
+|-
+|3
+|/
+|/
+|/
+|/
+|25%
+|45%
+|18%
+|6%
+|6%
+|/
+|-
+|4
+|/
+|/
+|/
+|/
+|/
+|/
+|40%
+|50%
+|10%
+|/
+|-
+|5+
+|/
+|/
+|/
+|/
+|/
+|/
+|/
+|32%
+|45%
+|23%
+|}
+
+==LEVELs==
+Legend Quest's item drops are always 100%, and reset with each reappearance.
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row"|
+! scope="col" |Stories of Legend Chapters
+! scope="col" |Clear Reward
+! scope="col" |Base XP
+! scope="col" |Play Cost
+|-
+! scope="row" |LEVEL 1
+|[[The Legend Begins]] ~ [[Passion Land]]
+| +1 Random [[Battle Items|Battle Item]]
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 2
+|[[Passion Land]] ~ [[Glucosamine Desert]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 3
+|[[Glucosamine Desert]] ~ [[Swimming Cats]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 4
+|[[Swimming Cats]] ~ [[Risqué Terrain]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 5
+|[[Risqué Terrain]] ~ [[Western Street]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 6
+|[[Western Street]] ~ [[Sea of Tuna]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 7
+|[[Sea of Tuna]] ~ [[Bamboo Island]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 8
+|[[Bamboo Island]] ~ [[Squishy Cave]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 9
+|[[Squishy Cave]] ~ [[Volkanos Volcano]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 10
+|[[Volkanos Volcano]] ~ [[Neverending Cat Story]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! colspan="5" style="text-align: center;" |LEVELs 11 ~ 48 are unlocked after reaching 1600 [[User Rank]].
+|-
+! scope="row" |LEVEL 11
+|[[Neverending Cat Story]] ~ [[Castle of Fish]]
+| +3 Random [[Catseye]]s
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 12
+|[[Castle of Fish]] ~ [[Sushi Island]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 13
+|[[Sushi Island]] ~ [[The Scratching Post]]
+| +1 [[Cat Capsule#Normal Cat Capsule|Cat Ticket]]
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 14
+|[[The Scratching Post]] ~ [[Parthenon]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 15
+|[[Parthenon]] ~ [[Low Tide Beach]]
+| +1 Legend Catseye
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 16
+|[[Low Tide Beach]] ~ [[Alcatraz]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 17
+|[[Alcatraz]] ~ [[Jail Break Tunnel]]
+| +1 Cat Ticket
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 18
+|[[Jail Break Tunnel]] ~ [[Capone's Jail]]
+| +1 Random Battle Item
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 19
+|[[Capone's Jail]] ~ [[Silk Road]]
+| +1 Cat Ticket
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 20
+|[[Silk Road]] ~ [[Stairway to Darkness]]
+| +1 [[Cat Capsule#Rare Capsule|Rare Cat Ticket]]
+|950 XP
+|50 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 21
+|[[Stairway to Darkness]] ~ [[Prince of Darkness]]
+| +3 Random Catseyes
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 22
+|[[Prince of Darkness]] ~ [[Dead End Night]]
+| +1 Random Battle Item
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 23
+|[[Dead End Night]] ~ [[Battle Royale]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 24
+|[[Battle Royale]] ~ [[Scars of War]]
+| +1 Random Battle Item
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 25
+|[[Scars of War]] ~ [[Sea Polluter]]
+| +1 Legend Catseye
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 26
+|[[Sea Polluter]] ~ [[Body & Soul]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 27
+|[[Body & Soul]] ~ [[Weak & Mildly Acidic]]
+| +1 Random Battle Item
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 28
+|[[Weak & Mildly Acidic]] ~ [[Intrepid Cats]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 29
+|[[Intrepid Cats]] ~ [[Shadow Cosmopolis]]
+| +1 Random Battle Item
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 30
+|[[Shadow Cosmopolis]] ~ [[Galapa-Goth]]
+| +1 Rare Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 31
+|[[Galapa-Goth]] ~ [[Kombu Cape]]
+| +3 Random Catseyes
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 32
+|[[Kombu Cape]] ~ [[Axis of Evil]]
+| +2 Random Battle Items
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 33
+|[[Axis of Evil]] ~ [[Suburbs of the Dead]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 34
+|[[Suburbs of the Dead]] ~ [[Quarantine Isles]]
+| +2 Random Battle Items
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 35
+|[[Quarantine Isles]] ~ [[Mouseyland]]
+| +1 Legend Catseye
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 36
+|[[Mouseyland]] ~ [[Walk of Fame]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 37
+|[[Walk of Fame]] ~ [[Cutpurse Coast]]
+| +2 Random Battle Items
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 38
+|[[Cutpurse Coast]] ~ [[Above & Below]]
+| +1 Cat Ticket
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 39
+|[[Above & Below]] ~ [[Windless Island]]
+| +2 Random Battle Items
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 40
+|[[Windless Island]] ~ [[IT Catacombs]]
+| +1 Legend Catseye
+|1,900 XP
+|100 {{EnergyIcon}} {{1c}}
+|-
+! scope="row" |LEVEL 41
+|[[IT Catacombs]] ~ [[Grotesque Gallery]]
+| +3 Random Catseyes
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 42
+|[[Grotesque Gallery]] ~ [[Area 22]]
+| +2 Random Battle Items
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 43
+|[[Area 22]] ~ [[Beyond the Savannah]]
+| +1 Cat Ticket
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 44
+|[[Beyond the Savannah]] ~ [[Blizzard Boulevard]]
+| +3 Random Battle Items
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 45
+|[[Blizzard Boulevard]] ~ [[Singularityville]]
+| +1 Legend Catseye
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 46
+|[[Singularityville]] ~ [[Ends of the Earth]]
+| +3 Random Battle Items
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LEVEL 47
+|[[Ends of the Earth]] ~ [[The Legend Ends]]
+| +3 Random Catseyes
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|-
+! scope="row" |LAST LEVEL
+|[[Laboratory of Relics]]
+| +3 Legend Catseyes
+|2,850 XP
+|150 {{EnergyIcon}} {{2c}}
+|}
+
+==Recommendations==
+*Complete as many Stories of Legend Crown difficulties as possible so more retries are available, as Crown consumption accumulates quickly if they cannot be cleared in one or two attempts. Once you get to around LEVEL 20, do not expect to beat the stages in one try without a proper formation.
+*Upgrade every Cat Unit you have that could potentially be helpful, especially the ones with generalist traits. It would be distasteful to receive [[Figure Skating Cats (Super Rare Cat)|Figure Skating Cats]] but at a low level.
+*Take time to study each stage and do some planning. Knowing the stage mechanics allows you to know how to beat the stages even with random cats. If it isn't obvious how to tackle a stage, you can try to identify it and look up the corresponding stage.
+*Remember to pause and check each randomized unit's abilities through the "Confirm Units" button. Knowing what you have to work with is always important. It's a good idea to change your cats' forms before entering any stage, depending on their level. Because of this, you can easily tell which cats are worth putting on the battlefield, while others stay behind.
+**In a similar vein, keeping a few of your [[:Category:Ancient Eggs|Ancient Eggs]] in their Evolved Forms may be worth considering so you have a higher chance to get a meatshield.
+*When possible, bring multiple good counters for an enemy/situation you foresee to be troublesome. For example, if the stage has [[Razorback]], bring many solid black stallers such as [[Flower Cat (Special Cat)|Bombercat]], [[Oda Nobunaga (Uber Rare Cat)|Wargod Nobunaga]] and [[Cat Gunslinger (Rare Cat)|Cat Eastwood]]. This way, if one of them gets swapped, you might still have others to keep you going.
+*Consider investing in [[Talents]], so that units can serve more purposes if you roll them. For example, Cameraman Cat may appear useless on a metal stage at first, but her Critical talent could turn things around despite the 2% chance.
+*Avoid units who are only useful in presence of specific others, such as those who exclusively help through [[Cat Combo]]s, or in a rush-down approach that needs another rusher, as that other rusher or combo constituent may be swapped away, removing two or more good units with one swap.
+*If you are more concerned about items than Crowns, try stages a couple times before resorting to using them, as you are more likely to keep the necessary units for a stage if you already failed it a few times. If saving up Crowns is the higher priority, using items if needed and crossing your fingers is instead preferable.
+*Even if you know a run is doomed based on the randomly selected cats, it's still important to play it out, to get a feel for enemy timing. Occasionally, you'll be surprised and find it isn't actually impossible.
+*Have fun! No matter how skilled or how knowledgeable you are, Legend Quest is still all about luck. Try not get stressed out with the wrong cats that get picked for you. Just laugh it off and continue fighting until you burn out or get lucky enough to beat this entire challenge.
+
+==First Appearance==
+===English Version===
+*October 7th, 2019 to October 21st, 2019
+
+===Japanese Version===
+*July 25th, 2019 to August 8th, 2019
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+map022.png|Full map of Legend Quest
+Legend Quest JP.jpg|Event poster (JP)
+</gallery>
+
+==Trivia==
+*Prior to [[Version 10.7 Update|Version 10.7]], Legend Quest used Stars instead of Crowns. Oddly, the tutorial shown when tapping the Crown icon wasn't updated to reflect this until much later.
+*Legend Quest's logo is heavily based on ''[[wikipedia:Dragon Quest|Dragon Quest]]''<nowiki>'</nowiki>s.
+*In [[Nyanko Daisensou|BCJP]], Legend Quest's logo in the event poster has a very different subtitle from the [[The Battle Cats|English Version]]'s: 天空の大地と過ぎ去りし伝説の物語 (''Tenkū no Daichi to Sugisarishi Densetsu no Monogatari'', "Heavenly Land and a Passing Story of Legend"). Everything before 伝説の物語 ("Story of Legend") is a mash-up of three of the ''Dragon Quest'' games' Japanese subtitles:
+**天空の (''Tenkū no'', "Heavenly") is from [https://dragon-quest.org/wiki/Dragon_Quest_V:_Hand_of_the_Heavenly_Bride ''Dragon Quest V'']'s Japanese subtitle, 天空の花嫁 (''Tenkū no Hanayome'', "Heavenly Bride")
+**大地 (''Daichi'', "Land") is from [https://dragon-quest.org/wiki/Dragon_Quest_VI:_Realms_of_Revelation ''Dragon Quest VI'']'s Japanese subtitle, 幻の大地 (''Maboroshi no Daichi'', "Land of Illusion")
+**過ぎ去りし (''Sugisarashi'', "Passing") is from [https://dragon-quest.org/wiki/Dragon_Quest_XI:_Echoes_of_an_Elusive_Age ''Dragon Quest XI'']'s Japanese subtitle, 過ぎ去りし時を求めて (''Sugisarishi Toki o Motomete'', "In Search of a Passing Time").
+
+==See Also==
+*[[Heavenly Tower]]
+*[[Infernal Tower]]
+*[[Citadel]]
+*[[Gauntlet]]
+*[[Underground Labyrinth]]
+
+==Reference==
+*https://battlecats-db.com/stage/s16000.html
+*https://docs.google.com/document/d/1CNOtxC78lIuLADYX0LD8CgB721n5oAeSfIz9PSFhPU4/edit
+
+{{SpecialStages List}}
+[[Category:Event]]

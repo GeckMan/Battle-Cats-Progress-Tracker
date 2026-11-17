@@ -1,0 +1,14 @@
+''See [[Omni Strike|Special Abilities]] and [[Hitbox]] page for more explanation.''
+This ability gives the unit a set distance or area which its attack affects, both forwards and '''backwards''' <u>without a blindspot</u> unlike the [[:Category:Long Distance Cats|Long Distance]] ability, which only allows units to pierce forward. This value varies from each unit. It still has a "trigger range" which will tell the unit when to trigger its attack.
+
+Example: [[Daboo of the Dead]]'s effective range is from -700~800, but its trigger range is only 300 when facing Cats, much shorter than its maximum reach by 500 (this amount is called "piercing range"). However, when the Cat Base is approached, it'll strike the base immediately once its maximum effective range of 800 is reached instead. Essentially, Omni Strike with less standing range than maximum range is a feature that sees similar usage to Long Distance in sniping Cats further ahead, but without the caveat of being forced to stand closer to the enemy Base.
+
+An Omni Strike unit has three important parameters:
+
+*'''Negative blindspot:''' This only exists in cats and enemies with the Omni Strike ability. It is the part of the <u>detection box</u> behind a unit's <u>hurtbox</u> that isn't covered by the <u>hitbox</u>. Its existence is not well known and rarely comes into play, but it could lead to some enemies or cats being stuck on an opponent that they can't hit, especially against zombies. Its size is the difference between 320 (always 320 for all cats and enemies alike) and the negative reach, so Blanka's negative blindspot is 320-100 = 220.
+*'''Negative piercing range:''' Only exists in cats and enemies with the Omni Strike ability. It is the part of the hitbox that extends in the negatives, further back than the detection box. Its size is the difference between the negative reach and 320, so Piledriver's negative piercing range is 600-320 = 280.
+*'''Triggering range:''' Effectively the standing range of a unit, this is the range that a unit's Omni Strike attack will trigger conditionally. For example, since Daboo stands at 300, he will attack once an enemy Cat walks within 300 range or less of him.
+
+==Reference==
+*https://battlecats-db.com/enemy/sp_far_ed.html
+[[Category:Enemies by ability]]

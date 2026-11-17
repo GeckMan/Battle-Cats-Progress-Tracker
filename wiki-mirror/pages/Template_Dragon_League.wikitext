@@ -1,0 +1,26 @@
+{{#invoke:Navbox|main
+|template = Template:Dragon League
+|title = [[Dragon League Collaboration Event]]
+|navbox_class = dragon-league
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Dragon League Swordsman (Rare Cat)|Drudy Swordsman]]
+*[[Nubobo (Special Cat)|Nubobo]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Dragon League Witch (Enemy)|Dragon League Witch]]
+*[[Dragon League Swordsman (Enemy)|Dragon League Swordsman]]
+
+|header3 = Stages
+|group3 = Dragon League
+|list3 =
+*[[20-to-20]]
+*[[Cat Battle]]
+*[[Nyanko Coliseum]]
+}}<templatestyles src="Dragon League/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Dragon League]]}}<noinclude>[[Category:Navboxes]]</noinclude>

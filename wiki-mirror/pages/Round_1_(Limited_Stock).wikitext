@@ -1,0 +1,56 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge Dark|Celeboodle|Shadow Boxer K|Dagshund|Razorback}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Limited Stock|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Doge Dark|1,000%
+|Celeboodle|100%
+|Shadow Boxer K|300%
+|Dagshund|1,000%
+|Razorback|150%}}
+|enemies2 = {{Magnification|Doge Dark|1,200%
+|Celeboodle|120%
+|Shadow Boxer K|360%
+|Dagshund|1,200%
+|Razorback|180%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,800
+|max enemies = 10
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Limited Stock|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Limited Stock)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Limited Stock}}
+
+==Battleground==
+*6 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*6 [[Celeboodle]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*2 [[Shadow Boxer K]]s spawn after 20 seconds<sup>600f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*3 [[Dagshund]]s spawn after 20 seconds<sup>600f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*1 [[Razorback]] spawns after 60 seconds<sup>1,800f</sup>.
+
+==Strategy==
+The main gimmick of this Otherworld Colosseum is a combination of two previous restrictions: a unit hardcap of 50, as well as setting all of your cats' recharge rate to a uniform number (16.67 seconds in this case). Any meatshield/tank you want to use here should be capable of taking a beating (e.g. [[Brainwashed Tank Cat (Super Rare Cat)|Brainwashed Eraser Cat]], [[Nono (Rare Cat)|Frolicking Nono CC]], [[Jetpack Cat (Rare Cat)|Jetpack Cat]]).
+
+The restrictions make traditional [[Flower Cat (Special Cat)|Bombercat]] strats unviable for this stage, and necessitate the use of normally unorthodox crowd-controllers that benefit from these changes, such as [[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]] and [[Freshman Cat Jobs (Super Rare Cat)|Headmaster Cat Jobs]], to stop the Razorback in his tracks. Bombercat can still be utilized here, though much less effective than usual. Use [[Talents|Talented]] [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] with a Defense UP (Sm) [[Cat Combo]] like [[Moby Dick (Combo)|Moby Dick]] to take care of the Dagshund at the start of the stage quickly, whilst stacking [[Weightlifter Cat (Super Rare Cat)|Pizza Cats]], Cat Jobs, Sniper the Deadeyes, and any other viable DPS/crowd-controllers you may have at your disposal, including Talented [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] or [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]. Razorback should fall before long, making the cleanup phase a breeze.
+
+==Reference==
+*https://battlecats-db.com/stage/s36014-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

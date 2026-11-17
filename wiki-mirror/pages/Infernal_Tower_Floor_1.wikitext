@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Fireworks Guys (Low-Yield)|Fireworks Guys (High-Yield)|Killer Cat|Assassin Bear}}
+:''Not to be confused with the [[Heavenly Tower]] or [[Citadel]] versions of Floor 1.''
+'''Floor 1''' is the first floor of [[Infernal Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 00 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 100
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Fireworks Guys (Low-Yield)|100%
+|Fireworks Guys (High-Yield)|100%
+|Killer Cat|1,200%
+|Assassin Bear|1,000%}}
+|boss = {{Magnification|Killer Cat|100%}}
+|treasure = One of the following (1 time):<br>
+- [[Catseye]] [Special] +3<br>
+- [[Catseye]] [Rare] +3<br>
+- [[Catseye]] [Super Rare] +3<br>
+- [[Catseye]] [Uber Rare] +3<br>
+- [[Catseye]] [Legend] +3
+|XP = 1,900 XP
+|width = 3,900
+|max enemies = 12
+|jpname = 1st Floor
+|script = 1階
+|romaji = 1 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★5
+|prev stage = N/A
+|next stage = [[Infernal Tower/Floor 2|Floor 2]]
+|require = Clear [[Heavenly Tower/Floor 40|Floor 40]]
+}}
+
+==Battleground==
+*5 [[Fireworks Guys (Low-Yield)]] spawn after 3.33 seconds<sup>100f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*5 [[Fireworks Guys (High-Yield)]] spawn after 6.67 seconds<sup>200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*1 [[Assassin Bear]] spawns after 200 seconds<sup>6,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Killer Cat (Enemy)|Killer Cat]] (100%) spawns as the boss.
+**10 [[Killer Cat (Enemy)|Killer Cats]] (1,200%) spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**7 [[Killer Cat (Enemy)|Killer Cats]] (1,200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**5 [[Killer Cat (Enemy)|Killer Cats]] (1,200%) spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+
+==Strategy==
+No particular strategy is needed. Bring some [[:Category:Meatshield-class Cats|meatshields]] and [[:Category:Area Attack Cats|Area Attackers]] such as [[Salon Cat (Rare Cat)|Paris Cat]] and you shouldn't have any problems.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-01.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]
+[[Category:Event Stages]]

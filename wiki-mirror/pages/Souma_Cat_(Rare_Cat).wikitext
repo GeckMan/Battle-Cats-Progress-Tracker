@@ -1,0 +1,165 @@
+{{Unobtainable}}
+'''Souma Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Shoumetsu Toshi Collaboration Event]]. It was added in [[Version 7.1 Update|Version 7.1]].
+
+{{Cat Info
+|ID = 428
+|rarity = RR
+|name1 = Souma Cat
+|name2 = Stylish Souma Cat
+}}
+
+==Evolution==
+Evolves into '''Stylish Souma Cat''' at level 10.
+
+==Strategy/Usage==
+Souma Cat is similar to [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]], but with much worse overall stats and shorter range. In exchange for the wave niche, Souma Cat's cooldown is half of Manic Macho Legs, which results in higher, more spammable DPS. However, unlike Manic Macho Legs, Souma is usable in 4-crown [[Stories of Legend]] stages, meaning that he can be used there as a replacement.
+
+Do note that Souma Cat has a longer attack animation, meaning that he may not be able to produce waves if there are other attackers on the field.
+
+{{Job|Classification = Waver}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 428
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni428 f00.png
+|Image2 = Uni428 c00.png
+|Name1 = Souma Cat
+|Desc1 = A boy lost to the destruction, reborn as a<br>Cat who makes ominous statements.<br>100% chance of Wave Attack.
+|Name2 = Stylish Souma Cat
+|Desc2 = Over time, the boy-turned-Cat evolved the<br>powerful legs from his time as a human.<br>100% chance of Wave Attack.
+|Name1 (JP) = そうまにゃん (Sōma Nyan, Soma Cat)
+|Desc1 (JP) = "消滅"の直後から暗躍する謎の少年、に影響を受け<br>おかしな言動をするようになったにゃんこ<br>必ず波動を放つ
+|Transl1 (JP) = Influenced by a mysterious boy, who has been in the dark since just after the "disappearance"<br>The kitten has started to behave strangely<br>Always releases a wave attack
+|Name2 (JP) = スマートそうまにゃん (Sumāto Sōma Nyan, Smart Soma Cat)
+|Desc2 (JP) = "消滅"の直後から暗躍する謎の少年、に見た目も<br>近づくため、ぶら下がり健康器で背を伸ばした<br>必ず波動を放つ
+|Transl2 (JP) = A mysterious boy who has been in the dark since, just after the disappearance<br>In order to get closer to him, he stretches himself on a hanging exercise machine<br>The kitten has started to behave strangely
+|Name1 (TW) = 蒼真貓
+|Desc1 (TW) = 受"消滅後開始暗中活動的神秘少年"影響<br>言行舉止也開始怪怪的了...<br>必定能發射波動
+|Name2 (TW) = 瀟灑蒼真貓
+|Desc2 (TW) = 為了要更像"消滅後開始暗中活動的神秘<br>少年"一點，使用引體向上機拉長身了一點<br>必定能發射波動
+|Name1 (KR) = 고양이 소우마
+|Desc1 (KR) = 소멸 직후부터 암약한 수수께끼의 소년에 영향을 받아<br>이상한 말과 행동을 하게 된 고양이<br>반드시 파동을 낸다
+|Name2 (KR) = 스마트 고양이 소우마
+|Desc2 (KR) = 소멸 직후부터 암약한 수수께끼의 소년과 외모도<br>비슷해지기 위해 골반 교정을 했더니 다리가 길어졌다<br>반드시 파동을 낸다
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Souma Cat
+|Normal Base HP = 720
+|Normal Base AP = 200
+|Normal Range = 300
+|Normal Foreswing = 41
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 81
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 752
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]
+|Evolved Name = Stylish Souma Cat
+|Evolved Base HP = 720
+|Evolved Base AP = 200
+|Evolved Range = 300
+|Evolved Foreswing = 41
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 81
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 752
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 720 HP
+|val-Normal-Attack Power = 200 damage<br>(42.86 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 140f <sub>4.67 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 41f <sup>1.37s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 25.07 ~ 16.27 seconds
+|val-Normal-MaxHP = 12,240 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(728.57 DPS)
+|val-Evolved-Health = 12,240 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(728.57 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 140f <sub>4.67 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 41f <sup>1.37s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 25.07 ~ 16.27 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Souma Cat and its evolution appear in Shoumetsu Toshi as a water type unit introduced in the fourth collaboration between the two games. It appears in the collaboration gacha during the event duration and can only be obtained through it.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|そうまにゃん (Sōma Nyan, Soma Cat)
+! scope="row" style="text-align: center;"|スマートそうまにゃん (Sumāto Sōma Nyan, Smart Soma Cat)
+|-
+| colspan="2" |[[File:ST Souma Cat.png|center|300px]]
+|[[File:ST Stylish Souma Cat.png|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats At Level 50
+! scope="col" style="text-align: center;"|Stats At Level 99
+|-
+! scope="col" |Rarity
+|★5
+|★6
+|-
+! scope="col" |Health
+|1,296
+|2,682
+|-
+! scope="col" |Attack
+|758
+|1,589
+|-
+! scope="col" |Recovery
+|48
+|85
+|-
+! scope="col" |Single Skill
+| colspan="2" |FEVER revival & chain 5UP & attack power 1.7 (water) 10 seconds
+|-
+! scope="col" |Leadership Skill
+| colspan="2" |Triples the attack power of ally water attribute souls
+|}
+</div>
+
+{{Gallery|Uni428 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/429.html
+
+----
+{{CatNav|Cat Clan Heroes|Otaku Geek Cat}}
+----
+
+{{Shoumetsu Toshi}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Wave Attack Cats]]

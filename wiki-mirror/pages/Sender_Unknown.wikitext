@@ -1,0 +1,44 @@
+{{EnemiesAppearing|Package Doge}}
+'''Sender Unknown''' is a special event stage that was added in [[Version 5.3 Update|Version 5.3]]. Upon first completion, it grants the player a random gift.
+
+{{Stage Info
+|stage name = [[File:rc064.png]]
+[[File:Mapsn225 00 s en.png]]
+|stage location = [[File:Mapname225 s en.png]]
+|energy = 30
+|enemy castle hp = 222 HP
+|boss = {{Magnification|Package Doge|100%}}
+|treasure = One of the following (1 time):<br>
+- 100,000 XP<br>
+- [[Cat Capsule|Cat Ticket]] +2<br>
+- [[Battle Items#Speed Up|Speed Up]] +5<br>
+- [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+- [[Battle Items#Rich Cat|Rich Cat]] +2<br>
+- [[Battle Items#Cat CPU|Cat CPU]] +5<br>
+- [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+- [[Battle Items#Sniper the Cat|Sniper the Cat]] +2
+|XP = 570 XP
+|width = 3,600
+|max enemies = 10
+|jpname = Unknown Sender
+|script = 差出人不明
+|romaji = Sashidashinin Fumei
+|star = 1
+|event-chapter = Mystery Package
+|max clears = 1
+|difficulty = ★1
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Package Doge]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win. [[:Category:Critter-class Cats|Critters]], [[:Category:Long Distance Cats|Long Distance Units]] and fast attackers can be used to make the stage go by quicker, but are otherwise unnecessary.
+
+==Reference==
+*https://battlecats-db.com/stage/s01116-01.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

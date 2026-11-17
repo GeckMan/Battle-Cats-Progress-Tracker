@@ -1,0 +1,25 @@
+{{#invoke:Navbox|main
+|template = Template:Yakuza Apocalypse
+|title = [[Yakuza Apocalypse Collaboration Event]]
+|navbox_class = yakuza-apocalypse
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Mob Cat (Special Cat)|Mob Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Mob Cat (Enemy)|Mob Cat]]
+*[[Yakuza Vampire (Enemy)|Yakuza Vampire]]
+
+|header3 = Stages
+|group3 = Yakuza Apocalypse
+|list3 =
+*[[Cats On The Road]]
+*[[When Bitten, Everyone Is A Yakuza]]
+*[[The Great Summit War!!]]
+}}<templatestyles src="Yakuza Apocalypse/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Yakuza Apocalypse]]}}<noinclude>[[Category:Navboxes]]</noinclude>

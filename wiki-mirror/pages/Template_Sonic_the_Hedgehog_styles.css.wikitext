@@ -1,0 +1,9 @@
+.ranger-navbox.sonic {
+	--bg-navbox-title: linear-gradient(to right, hsl(38, 92%, 54%) 0%, hsl(55, 98%, 52%) 100%);
+	--bg-sub-table-title: #2A3780;
+	--bg-group-name: linear-gradient(to right, hsl(358, 77%, 50%) 0%, hsl(358, 71%, 31%) 100%);
+
+	--sub-title-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

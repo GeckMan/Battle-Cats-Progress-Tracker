@@ -1,0 +1,64 @@
+'''Marmod''' is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[World Trigger Collaboration Event]]. It was added in [[Version 11.9 Update|Version 11.9]].
+
+{{Enemy Info
+|name = Marmod
+|image = E 619.png
+|appearance = [[World Trigger Collaboration Event]]
+|money drop = 100¢ - 395¢
+}}
+
+==Enemy==
+This enemy appears to be a white quadrupedal creature with an eye in its mouth. It has low overall stats. Even with its [[Omni Strike]], the most it can reach are your meatshields. If it does reach your attackers however, it can [[Slow|slow]] them for 3 seconds.
+
+==Strategy==
+As long as your World Trigger units are well leveled, these shouldn't be much of a problem. [[Yuma Kuga & Cat (Rare Cat)|Yuma Kuga]] in particular can be used to deal high damage to it, while [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo]] can protect him using his high health and [[Immune to Slow|Slow Immmunity]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]]:
+**[[Training Level 1]] (1%, 100%)
+**[[Training Level 2]] (100%)
+**[[Training Level 3]] (100%)
+**[[Training Level 5]] (1%, 100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Marmod
+|Health = 60000
+|Attack Power = 2000
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 59
+|Movement Speed = 11
+|Knockback = 3
+|Foreswing = 20
+|Backswing = 28
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+619 e.png|Marmod's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/621.html
+
+----
+{{EnemyNav|Yuma Kuga & Doge|Red Marmod}}
+----
+
+{{World Trigger}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Slow ability]]

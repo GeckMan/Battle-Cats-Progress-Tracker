@@ -1,0 +1,56 @@
+{{EnemiesAppearing|Aku Altar|Cerberus Kids|Aku Doge|Condemned Peng|Sinner Snache|Fallen Bear|Le'Behemoth}}
+'''Demon's Temptation''' is the second stage in [[XP Bonanza!]].
+
+{{Stage Info
+|stage name = [[File:E 574.png]]
+[[File:Mapsn319 01 s en.png]]
+|stage location = [[File:Mapname319 s en.png]]
+|energy = 500
+|catamins = [[Catamin]] [C] x4
+|enemy castle hp = 800,000 HP
+|base = {{Magnification|Aku Altar|800%}}
+|enemies = {{Magnification|Cerberus Kids|500%
+|Aku Doge|500%
+|Condemned Peng|400%
+|Sinner Snache|500%
+|Fallen Bear|150%}}
+|boss = {{Magnification|Le'Behemoth|200%}}
+|treasure = - 2,630,000 XP (10%, unlimited{{TreasureAdjustment}})<br>
+- 1,620,000 XP (30%, unlimited)<br>
+- 810,000 XP (70%, unlimited)
+|XP = 180,000 XP
+|width = 3,600
+|max enemies = 15
+|jpname = Experience is a Demonic Temptation
+|script = 経験は魔性の誘惑
+|romaji = Keiken wa Mashō no Yūwaku
+|star = 1
+|event-chapter = [[XP Bonanza!]]
+|max clears = 1
+|difficulty = ★10
+|prev stage = [[Imp's Temptation]]
+|next stage = [[Archfiend's Temptation]]
+}}
+
+==Battleground==
+*The enemy base here is an [[Aku Altar (Enemy Base)|Aku Altar]].
+*30 [[Cerberus Kids]] spawn after 8.33 seconds<sup>250f</sup>, delay 1.67~5 seconds<sup>50f~150f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 16.67 seconds<sup>500f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*10 [[Aku Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*1 [[Condemned Peng]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'Behemoth]] spawns as the boss.
+**15 [[Cerberus Kids]] spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+**9 [[Sinner Snache]]s spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+**3 [[Condemned Peng]]s spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**2 [[Fallen Bear]]s spawn, delay 50 seconds<sup>1,500f</sup>.
+
+==Strategy==
+Due to the presence of Condemned Peng and Fallen Bear, [[Immune to Surge|Surge Immune]] meatshields are recommended to patch up any holes in your defenses left behind by the death surges of such enemies. [[Aku Researcher (Rare Cat)|Cat Researcher]] is also recommended to pierce the Fallen Bear and Le'Behemoth's shield. Note that the enemies here aren't of too high magnification, so this stage should not be too challenging as long as you have the Aku Realms cleared.
+
+==Reference==
+*https://battlecats-db.com/stage/s01319-02.html
+
+{{Guerrilla}}
+[[Category:Event Stages]]
+[[Category:XP Guerrilla Stages]]

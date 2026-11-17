@@ -1,0 +1,227 @@
+{{PageBanner|Nalaa splash.jpg}}
+:''This article is about the Cat Unit. For the enemy, see [[Ultima Beast Naala]].''
+'''Elder Beast Naala''' is a [[:Category:Special Cats|Special Cat]] introduced in [[Version 11.3 Update|Version 11.3]] that can be unlocked at a 30% chance when beating [[Immortal Zenith]] (guaranteed if a [[Treasure Radar]] is used). [[True Form]] added in [[Version 12.0 Update|Version 12.0]] increases health, weaken chance and weaken duration, while also gaining [[Behemoth Slayer]] and [[Colossus Slayer]].
+
+{{Cat Info
+|ID = 653
+|rarity = EX
+|categories = Mythic
+|name1 = Elder Beast Naala
+|name2 = Storm Beast Naala
+|name3 = Awakened Naala
+}}
+
+==Evolution==
+Evolves into '''Storm Beast Naala''' at level 10.
+
+Evolves into '''Awakened Naala''' at level 30 using [[Catfruit#Behemoth Stones|Behemoth Stones]] and XP after completing [[Atonement for Sin]].
+
+==Strategy/Usage==
+Naala's unique way of attacking may seem hard to understand, so here's how it affects its performance:
+
+*Enemies stalled <u>anywhere</u> in its range get hit <u>exactly once,</u> they thus take 1/3 of its full damage and DPS.
+*Enemies approaching it have a chance to not be hit by the attack at all (faster = higher chance), as they may move from the range of an attack that is about to happen to the range of an attack that has just happened.
+*Does NOT benefit from a higher de-buff chance/uptime that multi-hit attackers usually receive.
+*Bases take damage from the closest hit that reaches them and all that overshoot, taking up to 100% of Naala's DPS (see [[Hitbox]] to understand why).
+*Enemies hit while in specific positions, if knocked back, may very rarely be hit twice.
+
+''Overall, it's like a normal attack with the chance to miss enemies and 1/3 the power outside of bases.''
+
+While Naala technically has 15,031 DPS at level 30, in practice it will "only" be 5,010, which is still very good for a Long Distance attacker. The cost is its short standing range; most mid-ranged enemies can easily get the first hit on Naala, meaning that it has to rely on a stepping stone to safely snipe them. Worse still, it only has 1 standing range against enemy bases which means it can get easily ambushed by spawned enemies without having protection from meatshields. Nevertheless, its high health and immunities give it some usage in 4-Crown Uncanny Legends or in specific scenarios. In addition, standing so close to bases with few knockbacks has some potential for cheesing stages, as any non-boss enemy that spawns would not get in front of the base until Naala is half-dead, allowing DPS units that suffer from short range and/or Single Attack to safely whale on it for a short while.
+
+==='''True Form'''===
+Awakened Naala gains several useful buffs that further improve its utility and survivability. At Lv.30, Naala's base HP increases from 71K to 85K, which is a ~19% increase. Its bulk allows it to absorb numerous attacks from targets before being knocked back, enabling Naala to serve as a quick source of generalist burst damage. However, even with these buffs, Naala is still unlikely to survive until the next one is available due to its limited range and sustainability.
+
+The most important change here is the increase in its [[Weaken]] activation rate vs. Relics, going from 30% to 100%. Combined with [[Strong Against]], Naala reaches an effective 340K HP and 7.5K DPS at Lv.30 against Relics. This ludicrous effective HP, combined with its Long Distance Multi-Hits, and ~70% uptime on Weaken, means that Naala has the potential to control an entire battlefield. Additionally, Naala's Weaken ability synergizes exceptionally well with other [[Uncanny Legends]] units, most notably with [[Dogumaru (Special Cat)|Reborn Warrior Doguemon]]. Provided enemies are Weakened, Doguemon's already impressive health against Relics is boosted even further. This is especially apparent in stages like [[Revival of Origin]], where Naala's Weaken and Doguemon's high effective HP, accounting for Colossus Slayer, enables both of them to tank a massive amount of damage from [[Zero Luza]], crippling and stalling it until replacements are ready.
+
+As with all many UL Mythic Units, Naala also gains the [[Behemoth Slayer|Behemoth]]/[[Colossus Slayer]] ability, boosting its DPS further by a magnification of 2.5x/1.6x respectively, enabling Naala to act as a dedicated counter to many [[Gauntlet|Colossus Gauntlets]] regardless of typing. Its specialist output against Behemoths surpasses that of its Relic targeting, at 12.5K DPS. However, its HP sits much lower at 142K, making it much more fragile considering its lack of Weaken, as well as Behemoth Slayer's defensive bonus being lower than Strong Against (0.6x > 0.5x). Against Relic Behemoths—specifically [[Ancient Magamojoe]] and [[Iguanidae Ibilujon]]—Naala's effective stats jump to 18.8K DPS and 283K HP at Lv.30. In the case of Ancient Magamojoe, Naala's Weaken increases its effective HP to a staggering 566K, and its immunity to Magamojoe's Surges makes it a perfect counter, regardless of the circumstances. While Naala is slightly less effective against Ibilujon due to the latter's higher damage and multiple immunities (notably Weaken), it still proves more than a match.
+
+Awakened Naala is an incredibly valuable asset to your cat army, as well as one of the best anti-Relic units in the game. It is generally recommended to prioritize this True Form, as Epic Behemoth Stones are not easy to acquire.
+
+{{Job|Classification = Midranger & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 653
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni653 f00.png
+|Image2 = Uni653 c00.png
+|Image3 = Uni653 s00.png
+|Name1 = Elder Beast Naala
+|Desc1 = After witnessing the power of the Cats, decided to join<br>their cause. Smites interlopers with purifying lightning.<br>Strong vs Relics, with chance to Weaken (Area Atk)
+|Name2 = Storm Beast Naala
+|Desc2 = A benevolent being wishing for harmony between all<br>creatures, cleansing evildoers with sacred thunderbolts.<br>Strong vs Relics, with chance to Weaken (Area Atk)
+|Name3 = Awakened Naala
+|Desc3 = Holy beast who finds beauty amidst chaotic desire.<br>Colossus/Behemoth Slayer. Strong vs Relics,<br>100% chance to Weaken (Area Atk)
+|Name1 (JP) = 古獣ナーラ (Kojū Nāra, Ancient Beast Naala)
+|Desc1 (JP) = にゃんこの強さを認め共に歩む決意をした古の雷獣<br>禍をもたらす外敵には聖なる雷が降り注ぐ(範囲攻撃)<br>古代種にめっぽう強く、たまに攻撃力を下げる
+|Transl1 (JP) = An ancient thunder-beast who recognized the strength of the Cats and decided to walk with them<br>Rains holy thunderbolts on any foreign enemies who bring disaster (Area Attack)<br>Very strong against Ancient Species, sometimes lowers their attack power
+|Name2 (JP) = 雷古獣ナーラ (Kaminari Kojū Nāra, Thunderous Ancient Beast Naala)
+|Desc2 (JP) = 世の平和を強く願う穏やかで心優しき伝説の獣<br>連なる雷撃を放ち害敵の魂を浄化する(範囲攻撃)<br>古代種にめっぽう強く、たまに攻撃力を下げる
+|Transl2 (JP) = A gentle and kind-hearted beast of legend who wishes for peace in the world<br>Unleashes a series of thunderbolts to purify enemies' souls (Area Attack)<br>Very strong against Ancient Species, sometimes lowers their attack power
+|Name3 (JP) = 覚醒古獣ナーラ (Kakusē Kojū Nāra, Awakened Ancient Beast Naala)
+|Desc3 (JP) = 人々の欲望入り乱れる現世に純真な生の美しさが<br>あると知った神の獣。超生命体・超獣特効を持ち<br>古代種にめっぽう強く、必ず攻撃力を下げる(範囲攻撃)
+|Transl3 (JP) = A divine beast who learned that there is pure beauty in this world disarrayed<br>with people's desires. Has Super-Lifeform and Super-Beast Slayer<br>Very strong against Ancient Species, always lowers their attack power (Area Attack)
+|Name1 (TW) = 古獸納拉
+|Desc1 (TW) = 認同了貓咪的實力並成為他們夥伴的古代雷獸<br>會對帶來禍害的外敵降下神聖閃電(範圍攻擊)<br>善於攻擊古代種，有時使其攻擊力下降
+|Name2 (TW) = 雷古獸納拉
+|Desc2 (TW) = 一心祈求世界和平，個性溫和且善良的傳說野獸<br>會施放連續雷擊來淨化敵人的靈魂(範圍攻擊)<br>善於攻擊古代種，有時使其攻擊力下降
+|Name3 (TW) = 覺醒古獸納拉
+|Desc3 (TW) = 在充滿人類欲望的現世中，了解到純真的<br>生命之美的神獸。有超生命體和超獸特效<br>善於攻擊古代種、必定能使其攻擊力下降(範圍攻擊)
+|Name1 (KR) = 고대수 나라
+|Desc1 (KR) = 냥코의 강함을 인정하고 함께 싸우기로 한 고대의 동물<br>재앙을 불러오는 적에게 벼락을 일으킨다 (범위 공격)<br>고대종에 엄청 강하고 가끔 공격력을 낮춘다
+|Name2 (KR) = 벼락의 고대수 나라
+|Desc2 (KR) = 세상의 평화를 기원하는 상냥한 전설의 동물<br>연속으로 벼락을 일으켜 적의 영혼을 정화한다 (범위 공격)<br>고대종에 엄청 강하고 가끔 공격력을 낮춘다
+|Name3 (KR) = 각성 고대수 나라
+|Desc3 (KR) = 욕망으로 가득한 현세에 순수한 생명의 아름다움이<br>있음을 알게 된 신수. 초생명체, 초수 특효<br>고대종에 엄청 강하고 반드시 공격력을 낮춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 3,000¢
+*Chapter 2: 4,500¢
+*Chapter 3: 6,000¢
+{{Upgrade Cost|EXL}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Elder Beast Naala
+|Normal Base HP = 4200
+|Normal Base AP = 1680,1680,1680
+|Normal Range = 300
+|Normal Foreswing = 40,60,80
+|Normal Attack Cooldown = 91
+|Normal Attack Length = 136
+|Normal Speed = 16
+|Normal KB = 2
+|Normal Cost = 3000
+|Normal Recharge = 3900
+|Normal Attack Type = Area
+|Normal Targets = Relic
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (28,560 at 40f <sup>1.33s</sup>, 28,560 at 60f <sup>2s</sup>, 28,560 at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~301 on 1st hit, 300~500 on 2nd hit, 500~700 on 3rd hit)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Curse|Immune to Surge}} [[Immune to Waves]], [[Immune to Curse|Curse]] and [[Immune to Surge|Surge]]
+|Evolved Name = Storm Beast Naala
+|Evolved Base HP = 4200
+|Evolved Base AP = 1680,1680,1680
+|Evolved Range = 300
+|Evolved Foreswing = 40,60,80
+|Evolved Attack Cooldown = 91
+|Evolved Attack Length = 136
+|Evolved Speed = 16
+|Evolved KB = 2
+|Evolved Cost = 3000
+|Evolved Recharge = 3900
+|Evolved Attack Type = Area
+|Evolved Targets = Relic
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (28,560 at 40f <sup>1.33s</sup>, 28,560 at 60f <sup>2s</sup>, 28,560 at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~301 on 1st hit, 300~500 on 2nd hit, 500~700 on 3rd hit)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Weaken}} 30% chance to [[Weaken|weaken]] target traits to 50% for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Curse|Immune to Surge}} [[Immune to Waves]], [[Immune to Curse|Curse]] and [[Immune to Surge|Surge]]
+|True Name = Awakened Naala
+|True Base HP = 5000
+|True Base AP = 1680,1680,1680
+|True Range = 300
+|True Foreswing = 40,60,80
+|True Attack Cooldown = 91
+|True Attack Length = 136
+|True Speed = 16
+|True KB = 2
+|True Cost = 3000
+|True Recharge = 3900
+|True Attack Type = Area
+|True Targets = Relic
+|True Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (28,560 at 40f <sup>1.33s</sup>, 28,560 at 60f <sup>2s</sup>, 28,560 at 80f <sup>2.67s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~301 on 1st hit, 300~500 on 2nd hit, 500~700 on 3rd hit)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Colossus Slayer}} [[Colossus Slayer]] (Deals 1.6x damage to [[:Category:Colossus Enemies|Colossus]] enemies, only takes 0.7x damage)<br>
+{{AbilityIcon|Behemoth Slayer}} [[Behemoth Slayer]] (5% chance to dodge [[:Category:Behemoth Enemies|Behemoth]] enemies' attacks for 30f <sub>1 second</sub>)<br>
+{{AbilityIcon|Immune to Waves|Immune to Curse|Immune to Surge}} [[Immune to Waves]], [[Immune to Curse|Curse]] and [[Immune to Surge|Surge]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 4,200 HP
+|val-Normal-Attack Power = 5,040 damage<br>(884.21 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 40f <sup>1.33s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Normal-Recharge Time = 130 ~ 121.2 seconds
+|val-Normal-MaxHP = 71,400 HP
+|val-Normal-MaxAttack = 85,680 damage<br>(15,031.58 DPS)
+|val-Evolved-Health = 71,400 HP
+|val-Evolved-Attack Power = 85,680 damage<br>(15,031.58 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Evolved-Movement Speed = 16
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 40f <sup>1.33s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-Evolved-Recharge Time = 130 ~ 121.2 seconds
+|val-True-Health = 85,000 HP
+|val-True-Attack Power = 85,680 damage<br>(15,031.58 DPS)
+|val-True-Attack Range = 300
+|val-True-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-True-Movement Speed = 16
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 40f <sup>1.33s</sup><br>(56f <sup>1.87s</sup> backswing)
+|val-True-Recharge Time = 130 ~ 121.2 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Storm Beast Naala
+|Evolved Image = Uni653 c00.png
+|True Name = Awakened Naala
+|True Image = Uni653 s00.png
+|True Description = True Form gains increased defense!<br>Also strengthens debuffs to Relics!<br>Gains Colossus/Behemoth Slayer!
+|Catfruit1 = YellowStone
+|Catfruit2 = EpicStone
+|Quantity Catfruit1 = x10
+|Quantity Catfruit2 = x3
+|Quantity XP = 1,000,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni653 f00}}
+
+==Trivia==
+*Elder Beast Naala and [[Ultima Beast Naala]] are the first characters to have multi-hit attacks with different effective ranges on each hit.
+*The name Naala (ナーラ ''Nāra'') may be a reference to the Japanese city of [[wikipedia:Nara (city)|Nara]], which is famous for its deer. In fact, Naala and Nara sound almost the same in Japanese.
+*Elder Beast Naala's Japanese description refers to it as a ''[[wikipedia:Raijū|raijū]]'' (雷獣, "thunder-beast"), a Japanese legendary creature that has a body made of lightning and is represented with the form of many different animals, including a deer or [[wikipedia:Qilin|qilin/kirin]] - a holy, unicorn-like beast from Chinese mythology that is often depicted with deer-like traits, particularly in Japan.
+**Naala may specifically be based on [[wikia:monsterhunter:Kirin|Kirin]] from ''Monster Hunter'', as its ability to rapidly call down series of lightning bolts is very similar to ''Monster Hunter''<nowiki>'</nowiki>s Kirin's attacks and its enemy form is a [[:Category:Behemoth Enemies|Behemoth]], which tend to be references to ''Monster Hunter''.
+**Naala's Normal/Evolved Form's color scheme also gives it some resemblance to the Pokémon [[bulbapedia:Arceus (Pokémon)|Arceus]].
+*Elder Beast Naala may represent [[wikipedia:Eikþyrnir|Eikþyrnir]], a heavenly stag in Norse mythology. Awakened Naala is stated to be holy, and Eikþyrnir eats from [[wikipedia:Læraðr|Læraðr]], a tree often identified with [[wikipedia:Yggdrasil|Yggdrasil]]—a possible inspiration for the [[Media:Bg1028.gif|huge, glowing tree]] in the last four [[Uncanny Legends]] stages. The dew that drips from Eikþyrnir's glowing antlers flows into [[wikipedia:Hvergelmir|Hvergelmir]], one of the wellsprings at Yggdrasil's roots, creating rivers that sustain life; this may be referenced by the stage before [[Immortal Zenith]], [[Silver Current]], whose Japanese name confirms that it refers to a water current. Eikþyrnir stands upon one of the afterlife locations, [[wikipedia:Valhalla|Valhalla]], which may correlate or contrast with [[Immortal Zenith]], whose Japanese name (天寿を授ける頂 ''Tenju o Sazukeru Itadaki'') can be literally translated as "The Summit That Bestows Natural Lifespans".
+*Unlike other [[:Category:Mythic Cats|Mythic Cats]], Elder Beast Naala's preview displayed when entering [[Legend Stages]] shows its enemy counterpart: one can tell from the shape of its tail and the idol on its back.
+
+==Reference==
+*https://battlecats-db.com/unit/654.html
+
+----
+{{CatNav|Chalkboard Eraser Cat|Brainwashed Gross Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Mythic Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with different effective ranges]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Colossus Slayer Cats]]
+[[Category:Behemoth Slayer Cats]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats with Surge Immunity]]
+[[Category:Cats requiring Behemoth Stones for True Form]]

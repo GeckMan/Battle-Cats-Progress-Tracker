@@ -1,0 +1,40 @@
+.documentation.osrs-documentation {
+	border: 1px solid var(--border-color-base, #a2a9b1);
+	background-color: transparent;
+	clear: both;
+}
+
+.documentation-header {
+	font-weight: bold;
+	padding: 1em 1.5em;
+}
+
+.documentation-title {
+	font-size: 1.25em;
+}
+
+.documentation-subheader {
+	padding: 0.5em 1.5em;
+	border: inherit;
+	border-left: none;
+	border-right: none;
+}
+
+.documentation-documentation,
+.documentation-links {
+	font-size: 0.85em;
+}
+
+.documentation-content {
+	padding: 0.5em 1em;
+	overflow: auto;
+}
+
+div.seealso {
+	margin: 0 1.6em;
+	/* font-style: italic; */
+}
+
+.documentation.osrs-documentation > .documentation-content > hr {
+	display: none;
+}

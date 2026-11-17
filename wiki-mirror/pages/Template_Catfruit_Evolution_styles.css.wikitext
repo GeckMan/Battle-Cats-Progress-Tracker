@@ -1,0 +1,197 @@
+.catfruit-evolution {
+	position: relative;
+	margin: auto;
+	width: max-content;
+}
+
+@media only screen and (min-width: 700px) {
+	.catfruit-evolution-mobile {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 699px) {
+	.catfruit-evolution-desktop {
+		display: none;
+	}
+}
+
+.CatfruitTable {
+	background: linear-gradient(#636363 0%, #858585 100%);
+	box-shadow: 2px 3px 4px 0.5px rgba(0, 0, 0, 0.6), -1px 2px 20px rgba(255, 255, 255, 0.3) inset;
+	border-spacing: 10px;
+	text-align: center;
+	margin: 5px auto;
+	border: 1px solid #000;
+	border-radius: 5px;
+	margin: 0 auto 5px auto;
+	border: 1px solid var(--color-max-contrast);
+	border-radius: 5px;
+	z-index: 2;
+}
+
+.CatfruitTable td {
+	background: #444;
+	border-radius: 5px;
+	padding: 4px;
+	min-width: 85px;
+	color: #fff;
+}
+
+.CatfruitTable .deploy-img img {
+	transform: translateY(-15px);
+}
+
+.CatfruitTable .deploy-img-dark img {
+	position: absolute;
+	left: 0;
+	top: 17px;
+	transition: 0.2s;
+}
+
+.CatfruitTable .evolve-img-frame img {
+	position: absolute;
+	left: 3px;
+	top: 28.6px;
+	z-index: 2;
+}
+
+.CatfruitTable .evolve-text img {
+	position: absolute;
+	left: 50%;
+	top: 4px;
+	transform: translateX(-50%);
+}
+
+.CatfruitTable .times-symbol img {
+	transform: translateY(-5px);
+}
+
+.CatfruitTable .evolve-arrow-img img {
+	position: absolute;
+	left: 50%;
+	top: -37px;
+	transform: translateX(-50%);
+	animation-name: active-arrow;
+	animation-iteration-count: infinite;
+	animation-duration: 1s;
+	animation-play-state: paused;
+	animation-direction: alternate;
+	animation-timing-function: ease-in;
+}
+
+.CatfruitTable .evolve-img-frame:hover ~ .evolve-arrow-img img {
+	animation-play-state: running;
+}
+
+.CatfruitTable .deploy-img-dark img {
+	filter: brightness(0.4);
+}
+
+.CatfruitTable .evolve-img-frame:hover ~ .deploy-img-dark img {
+	filter: brightness(1);
+}
+
+.CatfruitTable .xp-cell {
+	background-color: #444;
+	border-radius: 5px;
+	padding: 3px 0 0 0;
+	transform: translateY(-25px);
+}
+
+.CatfruitTable tr.evolve-materials > td {
+	padding: 0
+}
+
+.CatfruitTable .CatfruitElement .unit-images {
+	background: none;
+	padding: 0;
+	line-height: 20px;
+}
+
+.CatfruitTable .CatfruitElement .unit-name {
+	padding: 0 8px;
+	text-align: left;
+	background: #222;
+	border-radius: 0;
+	border: 2px solid #000;
+	box-shadow: 0 0 1px 1px #444 inset;
+}
+
+.CatfruitTable .evolve-info .evolve-icon {
+	background: none;
+}
+
+.CatfruitTable .evolve-info .evolve-icon .evolve-icon-images {
+	position: relative;
+	width: 96px;
+	height: 96px;
+}
+
+.CatfruitTable .evolve-info .evolve-desc {
+	text-align: left;
+	padding: 6px 8px;
+	line-height: var(--font-size-large);
+	background: linear-gradient(#1b1b1b 0%, #262626 100%);
+	vertical-align: text-top;
+	border-radius: 0;
+	border: 3px solid #000;
+	box-shadow: 0 0 0 1px #fff inset;
+}
+
+.CatfruitTable .evolve-info .evolve-desc .description {
+	margin: 0 0 0 12px;
+	line-height: var(--font-size-x-large);
+}
+
+.catfruit-evolution-toggle {
+	--evolution-toggle-height: 1.5rem;
+	position: absolute;
+	left: calc(50% - 290px);
+	top: -1.5rem;
+	width: 100%;
+	height: var(--evolution-toggle-height);
+	overflow: hidden;
+}
+
+.catfruit-evolution-toggle .mw-customtoggle-form {
+	filter: grayscale(1);
+	transition: 0.1s;
+}
+
+.catfruit-evolution-toggle .mw-customtoggle-form:hover {
+	filter: grayscale(0.5);
+}
+
+.catfruit-evolution-toggle .true-tab,
+.catfruit-evolution-toggle .ultra-tab {
+	display: inline-block;
+	height: var(--evolution-toggle-height);
+	padding: 0 4px;
+	border-radius: 4px 4px 0 0;
+	text-align: center;
+	background: linear-gradient(#f4b33f 0%, #ffff60 100%);
+	border: 1px solid var(--color-max-contrast);
+	border-bottom: none;
+	font-weight: bold;
+	color: #000;
+	box-shadow: 2px 3px 4px 0.5px rgba(0, 0, 0, 0.6);
+}
+
+.catfruit-evolution-toggle .ultra-tab {
+	background: linear-gradient(#ff5f1e 0%, #f2a95b 100%);
+	color: #3a3a3a;
+}
+
+@keyframes active-arrow {
+	0%   { filter: contrast(1); }
+	100% { filter: contrast(1.5); }
+}
+
+.catfruit-evolution-mobile img {
+	width: calc(20vw - 23px) !important;
+	max-width: 65px;
+	height: auto !important;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,183 @@
+{{TranslationNeeded}}
+:''For the enemy encountered in the [[Bikkuriman Collaboration Event]], see [[Beastly Nero (Enemy)]].''
+'''Fiendish Nero''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was implemented in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Bikkuriman Collaboration Event]]. [[True Form]] added in [[Version 13.6 Update|Version 13.6]] increases range and health.
+
+{{Cat Info
+|ID = 472
+|rarity = SR
+|name1 = Fiendish Nero
+|name2 = Beastly Nero
+|name3 = Huge Nero
+}}
+
+==Evolution==
+Evolves into '''Beastly Nero''' at level 10.
+
+Evolves into '''Huge Nero''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Fiendish Nero is essentially an anti-Zombie [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], as it has a very high 14k DPS against Zombies with all [[Fruit Treasures]]. Its massive negative Omni Strike range also helps it attack Zombies that unburrow or revive behind it. Like most anti-Zombie units, its main problem is poor range, as it has problems reaching enemies like [[Cadaver Bear]] and [[Zamelle]].
+
+==='''True Form'''===
+Fiendish Nero's True Form increases its range and health. It's nothing major, but having more stats helps it work even better against Zombies, especially against [[Lord Gravey]], whom it now outranges.
+
+{{Job|Classification = Melee & Nuker|TrueClass = Midranger & Nuker|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 472
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni472 f00.png
+|Image2 = Uni472 c00.png
+|Image3 = Uni472 s00.png
+|Name1 = Fiendish Nero
+|Desc1 = A chaos too great for even the netherworld bursts<br>forth... will this flame consume even the heavens?<br>Massive Omnistrike damage to Zombies
+|Name2 = Beastly Nero
+|Desc2 = The infernal kings' power brought this<br>nemesis of the angels to his full potential.<br>Massive Omnistrike damage to Zombies
+|Name1 (JP) = ネロ魔身
+|Desc1 (JP) = 魔限界を超えたパワーが炸裂し魔身が<br>露出し始める！魔肖崩壊か、それとも天聖界？<br>ゾンビに超ダメージを与える(全方位攻撃)
+|Transl1 (JP) = The power beyond the magic limit bursts<br>and the magic begins to be exposed! Is it a collapse or a heavenly world?<br>Do extra damage to zombies (omni attack)
+|Name2 (JP) = 魔肖ネロ
+|Desc2 (JP) = ６魔極の念魔で出現した魔偶王。<br>無化する魔性般若パワーが天聖界を覆い隠す！<br>ゾンビに超ダメージを与える(全方位攻撃)
+|Transl2 (JP) = The Demon King who appeared in the Enma of the Six Demon Poles.<br>Unnatural genius young power hides the heavenly world!<br>Do extra damage to zombies (omni attack)
+|Name3 (JP) = デカネロン
+|Desc3 (JP) = 源祖球パワーで魔形成蘇生した魔偶妃！<br>突然変異翼を魔動させマリアを追う？！<br>ゾンビに超ダメージを与える(全方位攻撃)
+|Transl3 (JP) = ?
+|Name1 (TW) = 猊玀魔身
+|Desc1 (TW) = 超越魔限界的能力炸裂，將要開始<br>暴露魔身！究竟會是魔肖崩壞還是天聖界？<br>可以給予不死生物超大傷害(全方位攻擊)
+|Name2 (TW) = 魔肖猊玀
+|Desc2 (TW) = 以６魔極的念魔出現的魔偶王。<br>無化的魔性般若力量將隱藏天聖界！<br>可以給予不死生物超大傷害(全方位攻擊)
+|Name1 (KR) = 네로 마신
+|Desc1 (KR) = 마한계를 뛰어 넘은 파워가 작렬하여 마신이 노출되기<br>시작한다! 마초 붕괴인 것인가, 아니면 천성계인 것인가?<br>좀비에 초 데미지를 입힌다 (전방위 공격)
+|Name2 (KR) = 마초 네로
+|Desc2 (KR) = 6마극의 염마로 출현한 마우왕.<br>무화한 마성반야 파워가 천성계를 뒤덮는다!<br>좀비에 초 데미지를 입힌다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 990¢
+*Chapter 2: 1,485¢
+*Chapter 3: 1,980¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Fiendish Nero
+|Normal Base HP = 1200
+|Normal Base AP = 325,325,325
+|Normal Range = 225
+|Normal Foreswing = 51,90,130
+|Normal Attack Cooldown = 55
+|Normal Attack Length = 155
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 990
+|Normal Recharge = 1120
+|Normal Attack Type = Area
+|Normal Targets = Zombie
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (5,525 at 51f <sup>1.7s</sup>, 5,525 at 90f <sup>3s</sup>, 5,525 at 130f <sup>4.33s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -800~225)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Evolved Name = Beastly Nero
+|Evolved Base HP = 1500
+|Evolved Base AP = 425,425,425
+|Evolved Range = 225
+|Evolved Foreswing = 51,90,130
+|Evolved Attack Cooldown = 55
+|Evolved Attack Length = 155
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 990
+|Evolved Recharge = 1120
+|Evolved Attack Type = Area
+|Evolved Targets = Zombie
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (7,225 at 51f <sup>1.7s</sup>, 7,225 at 90f <sup>3s</sup>, 7,225 at 130f <sup>4.33s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -800~225)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|True Name = Huge Nero
+|True Base HP = 1950
+|True Base AP = 425,425,425
+|True Range = 275
+|True Foreswing = 51,90,130
+|True Attack Cooldown = 55
+|True Attack Length = 155
+|True Speed = 9
+|True KB = 4
+|True Cost = 990
+|True Recharge = 1120
+|True Attack Type = Area
+|True Targets = Zombie
+|True Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (7,225 at 51f <sup>1.7s</sup>, 7,225 at 90f <sup>3s</sup>, 7,225 at 130f <sup>4.33s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -800~275)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Zombie Killer}} [[Zombie Killer]] (stops [[:Category:Zombie Enemies|Zombies]] from reviving)
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,200 HP
+|val-Normal-Attack Power = 975 damage<br>(158.11 DPS)
+|val-Normal-Attack Range = 225
+|val-Normal-Attack Frequency = 185f <sub>6.17 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 51f <sup>1.7s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Normal-Recharge Time = 37.33 ~ 28.53 seconds
+|val-Normal-MaxHP = 20,400 HP
+|val-Normal-MaxAttack = 16,575 damage<br>(2,687.84 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 21,675 damage<br>(3,514.86 DPS)
+|val-Evolved-Attack Range = 225
+|val-Evolved-Attack Frequency = 185f <sub>6.17 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 51f <sup>1.7s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-Evolved-Recharge Time = 37.33 ~ 28.53 seconds
+|val-True-Health = 33,150 HP
+|val-True-Attack Power = 21,675 damage<br>(3,514.86 DPS)
+|val-True-Attack Range = 275
+|val-True-Attack Frequency = 185f <sub>6.17 seconds</sub>
+|val-True-Movement Speed = 9
+|val-True-Knockback = 4 times
+|val-True-Attack Animation = 51f <sup>1.7s</sup><br>(25f <sup>0.83s</sup> backswing)
+|val-True-Recharge Time = 37.33 ~ 28.53 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Beastly Nero
+|Evolved Image = Uni472 c00.png
+|True Name = デカネロン
+|True Image = Uni472 s00.png
+|True Description = 第３形態への進化で<br>体力と射程が上昇！
+|Catfruit1 = PurpleFruit
+|Quantity Catfruit1 = x3
+|Quantity XP = 1,000,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni472 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/473.html
+
+----
+{{CatNav|Heracrist|Prince Yamato}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats requiring Catfruits for True Form]]

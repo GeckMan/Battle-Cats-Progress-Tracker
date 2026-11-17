@@ -1,0 +1,147 @@
+:''This article is about the Cat Unit. For the enemy, see [[Shampoo (Enemy)]].''
+'''Shampoo (Cat)''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. She was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 599
+|rarity = UR
+|name1 = Shampoo (Cat)
+|name2 = Shampoo
+}}
+
+==Evolution==
+Evolves into '''Shampoo''' at level 10.
+
+==Strategy/Usage==
+Similar to [[Ancient Heroes ULTRA SOULS (Gacha Event)|ULTRA SOULS]], Shampoo (Cat) has significantly different stats between her Normal Form (spammable) and Evolved Form (high performance), both of them can be used effectively depending on the situation.
+
+==='''Normal Form'''===
+Shampoo (Cat) can be stacked and used similarly to [[Salon Cat (Rare Cat)|Salon Cat]], as she has the same range and similar DPS and cost. However, her recharge time is quite high for a stackable unit, and her multi-hit may make her miss an attack.
+
+Her Mini-Wave effectively gives her a little extra range, but the extra range affected only does 20% extra damage. This is negligible, but can be useful in clearing peons.
+
+==='''Evolved Form'''===
+Shampoo, when evolved, gets significantly better stats in exchange for longer recharge time and higher cost. Her Mini-Wave gets increased by 1 level and gains 100% chance, she gets 100 more range, and gets better defense and attack power with one more multi-hit attack.
+
+Shampoo is now able to outrange a lot more threats, such as [[Le'boin]] and [[Teacher Bear]], and can safely attack them from a distance. However, keep in mind her high movement speed, which can be fatal if the enemy is knocked back.
+
+Even with the health improvement, she is still very fragile and can easily be killed by a lot of enemies. Meatshield well, as she tends to move to the frontline. She does not have any [[Special Abilities|special ability]] other than mini-wave, so she is only a generalist.
+
+Mini-Wave, again, is negligible, as it only does 20% damage. She does get Mini-Wave on all her multi-hits though, so if only one of them hit, the enemies will take around 7% of Shampoo's original damage altogether, which is not that good. Think of the Mini-Wave as an added bonus.
+
+{{Job|Classification = Waver & Midranger|EvolvedClass = Waver & Backliner|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 599
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni599 f00.png
+|Image2 = Uni599 c00.png
+|Name1 = Shampoo (Cat)
+|Desc1 = Joining from "Ranma 1/2"! When doused in<br>water, Cursed Springs magic turns her into a cat.<br>Attacks have chance of Mini-Wave.
+|Name2 = Shampoo
+|Desc2 = Joining from "Ranma 1/2"! Mighty Amazon who'll<br>fight anyone standing between her and Ranma.<br>100% chance of Mini-Wave.
+|Name1 (JP) = シャンプー(猫) (Shanpū （Neko）, Shampoo (Cat))
+|Desc1 (JP) = 『らんま1/2』より参戦！呪われた泉「呪泉郷」の猫溺泉に<br>落ち水を被ると猫の姿へ変身する体に…<br>たまに小波動を放つ
+|Transl1 (JP) = Joining the war from Ranma 1/2! A cat drowned in a cursed spring called "Jusengo"<br>When she falls into the water, her body transforms into that of a cat...<br>Guaranteed to release a Mini-Wave
+|Name2 (JP) = シャンプー (Shanpū, Shampoo)
+|Desc2 (JP) = 『らんま1/2』より参戦！女傑族の娘<br>乱馬のことが大好きで常に結婚を迫っている<br>必ず小波動を放つ
+|Transl2 (JP) = Joining the war from Ranma 1/2! The daughter of a female heroine<br>She loves Ranma and is always trying to get him to marry her<br>Guaranteed to release a Mini-Wave
+|Name1 (TW) = 珊璞(貓)
+|Desc1 (TW) = 從「亂馬1/2」來參戰！不慎掉入「咒泉鄉」<br>的貓溺泉，從此之後變成遇水則會變成貓的體質…。<br>有時候能發射小波動
+|Name2 (TW) = 珊璞
+|Desc2 (TW) = 從「亂馬1/2」來參戰！女傑族的女兒。<br>因為喜歡亂馬所以總是迫不及待的想結婚。<br>必定能發射小波動
+|Name1 (KR) = 샴푸(고양이)
+|Desc1 (KR) = 『란마 1/2』에서 참전! 저주받은 샘물 '주천향'의 묘익천에<br>빠져 물을 뒤집어 쓰면 고양이로 변하는 몸으로...<br>가끔 소파동을 낸다
+|Name2 (KR) = 샴푸
+|Desc2 (KR) = 『란마 1/2』에서 참전! 여걸족의 딸.<br>란마를 좋아해서 항상 결혼을 조르고 있다.<br>반드시 소파동을 낸다
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 600¢
+*Chapter 2: 900¢
+*Chapter 3: 1,200¢
+
+===Evolved Form===
+*Chapter 1: 2,700¢
+*Chapter 2: 4,050¢
+*Chapter 3: 5,400¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shampoo (Cat)
+|Normal Base HP = 1000
+|Normal Base AP = 275,275
+|Normal Range = 350
+|Normal Foreswing = 17,34
+|Normal Attack Cooldown = 111
+|Normal Attack Length = 51
+|Normal Speed = 17
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 700
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,675 at 17f <sup>0.57s</sup>, 4,675 at 34f <sup>1.13s</sup>)<br>
+{{AbilityIcon|Mini-Wave}} 50% chance to create a level 4 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Evolved Name = Shampoo
+|Evolved Base HP = 2000
+|Evolved Base AP = 540,540,540
+|Evolved Range = 450
+|Evolved Foreswing = 31,38,43
+|Evolved Attack Cooldown = 113
+|Evolved Attack Length = 67
+|Evolved Speed = 18
+|Evolved KB = 3
+|Evolved Cost = 2700
+|Evolved Recharge = 2800
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (9,180 at 31f <sup>1.03s</sup>, 9,180 at 38f <sup>1.27s</sup>, 9,180 at 43f <sup>1.43s</sup>)<br>
+{{AbilityIcon|Mini-Wave}} 100% chance to create a level 4 [[Wave Attack#Mini-Wave|Mini-Wave]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,000 HP
+|val-Normal-Attack Power = 550 damage<br>(113.79 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 145f <sub>4.83 seconds</sub>
+|val-Normal-Movement Speed = 17
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 17f <sup>0.57s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 17,000 HP
+|val-Normal-MaxAttack = 9,350 damage<br>(1,934.48 DPS)
+|val-Evolved-Health = 34,000 HP
+|val-Evolved-Attack Power = 27,540 damage<br>(5,296.15 DPS)
+|val-Evolved-Attack Range = 450
+|val-Evolved-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Evolved-Movement Speed = 18
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(24f <sup>0.8s</sup> backswing)
+|val-Evolved-Recharge Time = 93.33 ~ 84.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni599 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/600.html
+
+----
+{{CatNav|Ryoga Hibiki (Pig)|Mousse (Duck)}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Mini-Wave Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Area Attack Cats]]

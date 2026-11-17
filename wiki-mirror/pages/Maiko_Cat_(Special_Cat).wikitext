@@ -1,0 +1,134 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Maiko Cat''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 2.0 Update|Version 2.0]] and can be unlocked by special [[:Category:Serial Code Cats|serial code]] included in [[Nyanko Ecology Report]]. It is now unobtainable due to serial codes being removed as a feature in the mobile version. In [[The Battle Cats Unite!]], beating [[Egypt (Empire of Cats)|Egypt]] (京都府, <b>Kyoto</b> in the Japanese Version) 10 times with [[Cat (Normal Cat)|Cat]] in the lineup will grant you access to the unit. 
+
+{{Cat Info
+|ID = 45
+|rarity = EX
+|name1 = Maiko Cat
+|name2 = Geisha Cat
+}}
+
+==Evolution==
+Evolves into '''Geisha Cat''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role without relevant differences in quality. Maiko Cat, however, can be used in 4-crown stages, where there is considerably less competition. This is her only real use.
+
+==='''Evolved Form'''===
+Due to the low stats, this form is not recommended as it is considerably worse than any possible alternative in about every way, making her a waste of money when summoned. Could still be of use in early-mid [[Empire of Cats]], but, after that, it is best to revert this cat to her Normal Form and only use that.
+
+{{Job|EvolvedClass = Midranger|Classification = Meatshield|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 45
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni045 f00.png
+|Image2 = Uni045 c00.png
+|Name1 = Maiko Cat
+|Desc1 = A sweet rookie entertainer, allergic to<br>green tea, better at keytar than shamisen.
+|Name2 = Geisha Cat
+|Desc2 = Years of life in the floating world made<br>her a cool cynic. Her distant attitude<br>befits her long-distance attacking power.
+|Name1 (JP) = 芸者ねこ (Geisha Neko, Maiko Cat)
+|Desc1 (JP) = 芸の道に進んだ行動力あふれるキャラクター<br>とはいえ中身は通常のネコと同じである
+|Transl1 (JP) = A dynamic character who has taken to the arts,<br>but she is still a normal Cat on the inside
+|Name2 (JP) = ネコでありんした (Nekode Arin Shita, Geisha Cat)
+|Desc2 (JP) = 芸の道を究めるあまりネコでは無くなった<br>と思いこんでいるキャラクター<br>遠距離攻撃が得意
+|Transl2 (JP) = She is so devoted to her art that she thinks she is no longer a cat<br>because she has mastered his art<br>Good at long-range attacks
+|Name1 (TW) = 藝妓貓
+|Desc1 (TW) = 是個邁向學藝之路並充滿活動力的角色<br>但事實上也只是一隻普通的貓
+|Name2 (TW) = 小百合
+|Desc2 (TW) = 失心瘋學藝到<br>自認為已經不是貓了<br>擅長遠距離攻擊
+|Name1 (KR) = 게이샤 고양이
+|Desc1 (KR) = 예술의 길을 걷는 행동력 넘치는 캐릭터<br>하지만 알고보면 그냥 고양이와 똑같다
+|Name2 (KR) = 고양이였사옵니다
+|Desc2 (KR) = 예술의 길을 너무 깊이 파고든 나머지<br>자신은 이제 냥코가 아니라고 생각하는 냥코<br>원거리 공격이 특징
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+
+===Evolved Form===
+*Chapter 1: 600円
+*Chapter 2: 900円
+*Chapter 3: 1,200円
+{{Upgrade Cost|EX3}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Maiko Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Geisha Cat
+|Evolved Base HP = 350
+|Evolved Base AP = 80
+|Evolved Range = 350
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 31
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 330
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50<br>Lv.30<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 5,950 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(318.75 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 128f <sub>4.27 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 11 ~ 2.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni045 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/046.html
+
+----
+{{CatNav|Lesser Demon Cat|Jurassic Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Midranger-class Cats]]
+[[Category:Meatshield-class Cats]]

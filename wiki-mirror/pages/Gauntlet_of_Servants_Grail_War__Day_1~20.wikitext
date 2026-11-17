@@ -1,0 +1,432 @@
+{{StrategyNeeded}}
+<tabber>
+Grail War: Day 1~10=
+{{EnemiesAppearing|Gory|Those Guys|Kang Roo|Doge Dark|Sir Seal|Saber|Rider|Archer}}
+
+{{Stage Info
+|stage name = [[File:rc090.png]]
+[[File:Mapsn014 00 ca en.png]]
+|stage location = [[File:Mapname014 ca en.png]]
+|enemies = {{Magnification|Gory|0
+|Those Guys|0
+|Kang Roo|0
+|Doge Dark|0
+|Sir Seal|0
+|Rider|0
+|Archer|0}}
+|boss = {{Magnification|Saber|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = Holy Grail War Day X
+|script = 聖杯戦争 X日目
+|romaji = Sēhai Sensō X Nichi Me
+|event = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|event-chapter = [[Gauntlet of Servants]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*5 [[Gory|Gories]] spawn after 5.33 seconds<sup>160f</sup>, delay 5.33~10 seconds<sup>160f~300f</sup>.
+*8 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*1 [[Kang Roo]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Saber (Enemy)|Saber]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**Infinite [[Sir Seal]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**1 [[Rider (Enemy)|Rider]] spawns after 6.67 seconds<sup>200f</sup>.
+**1 [[Archer (Enemy)|Archer]] spawns after 13.33 seconds<sup>400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Gory]]
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Kang Roo]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Sir Seal]]
+! scope="col" |[[Saber (Enemy)|Saber]]
+! scope="col" |[[Rider (Enemy)|Rider]]
+! scope="col" |[[Archer (Enemy)|Archer]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|400%
+|400%
+|400%
+|100%
+|400%
+|50% HP/40% AP
+|50% HP/40% AP
+|50% HP/40% AP
+|90,000 HP
+|70
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|2,100 XP
+|-
+! scope="row" |2
+|689%
+|689%
+|689%
+|178%
+|689%
+|78% HP/62% AP
+|78% HP/62% AP
+|78% HP/62% AP
+|180,000 HP
+|70
+|[[Catamin]] [A] +3
+|2,100 XP
+|-
+! scope="row" |3
+|978%
+|978%
+|978%
+|256%
+|978%
+|106% HP/84% AP
+|106% HP/84% AP
+|106% HP/84% AP
+|270,000 HP
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|2,100 XP
+|-
+! scope="row" |4
+|1,267%
+|1,267%
+|1,267%
+|334%
+|1,267%
+|134% HP/106% AP
+|134% HP/106% AP
+|134% HP/106% AP
+|360,000 HP
+|70
+|Bricks +5
+|2,100 XP
+|-
+! scope="row" |5
+|1,556%
+|1,556%
+|1,556%
+|412%
+|1,556%
+|162% HP/128% AP
+|162% HP/128% AP
+|162% HP/128% AP
+|450,000 HP
+|90
+|250,000 XP
+|2,700 XP
+|-
+! scope="row" |6
+|1,845%
+|1,845%
+|1,845%
+|490%
+|1,845%
+|190% HP/150% AP
+|190% HP/150% AP
+|190% HP/150% AP
+|540,000 HP
+|90
+|[[Catamin]] [B] +3
+|2,700 XP
+|-
+! scope="row" |7
+|2,134%
+|2,134%
+|2,134%
+|568%
+|2,134%
+|218% HP/172% AP
+|218% HP/172% AP
+|218% HP/172% AP
+|630,000 HP
+|90
+|Feathers +5
+|2,700 XP
+|-
+! scope="row" |8
+|2,423%
+|2,423%
+|2,423%
+|646%
+|2,423%
+|246% HP/194% AP
+|246% HP/194% AP
+|246% HP/194% AP
+|720,000 HP
+|90
+|Coal +5
+|2,700 XP
+|-
+! scope="row" |9
+|2,712%
+|2,712%
+|2,712%
+|724%
+|2,712%
+|274% HP/216% AP
+|274% HP/216% AP
+|274% HP/216% AP
+|810,000 HP
+|90
+|[[Cat Capsule|Cat Ticket]] +1
+|2,700 XP
+|-
+! scope="row" |10
+|3,000%
+|3,000%
+|3,000%
+|800%
+|3,000%
+|300% HP/240% AP
+|300% HP/240% AP
+|300% HP/240% AP
+|900,000 HP
+|110
+|500,000 XP
+|3,300 XP
+|}
+
+==Strategy==
+-
+
+|-|
+Grail War: Day 11~20=
+{{EnemiesAppearing|Gilgamesh|Kroxo|Aku Doge|Heavenly Hippoe|Lancer|Rider|Archer|Saber}}
+
+{{Stage Info
+|stage name = [[File:rc091.png]]
+[[File:Mapsn014 00 ca en.png]]
+|stage location = [[File:Mapname014 ca en.png]]
+|enemies = {{Magnification|Kroxo|0
+|Aku Doge|0
+|Heavenly Hippoe|0
+|Lancer|0
+|Rider|0
+|Archer|0
+|Saber|0}}
+|boss = {{Magnification|Gilgamesh|0}}
+|restriction = [[No Continues]]
+|width = 6,000
+|max enemies = 20
+|jpname = Holy Grail War Day X
+|script = 聖杯戦争 X日目
+|romaji = Sēhai Sensō X Nichi Me
+|event = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|event-chapter = [[Gauntlet of Servants]]
+|require = Complete [[Empire of Cats]] Chapter 3
+}}
+
+==Battleground==
+*1 [[Gilgamesh (Enemy)|Gilgamesh]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+*8 [[Kroxo]]s spawn after 3.33 seconds<sup>100f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*6 [[Aku Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*4 [[Heavenly Hippoe]]s spawn after 13.33 seconds<sup>400f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Lancer (Enemy)|Lancer]] spawns after 60 seconds<sup>1,800f</sup>.
+*1 [[Rider (Enemy)|Rider]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Archer (Enemy)|Archer]] spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Saber (Enemy)|Saber]] spawns after 120 seconds<sup>3,600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Gilgamesh (Enemy)|Gilgamesh]]
+! scope="col" |[[Kroxo]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Lancer (Enemy)|Lancer]]
+! scope="col" |[[Rider (Enemy)|Rider]]
+! scope="col" |[[Archer (Enemy)|Archer]]
+! scope="col" |[[Saber (Enemy)|Saber]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |11
+|150% HP/100% AP
+|1,600%
+|400%
+|300%
+|200% HP/150% AP
+|200% HP/150% AP
+|200% HP/150% AP
+|200% HP/150% AP
+|945,000 HP
+|110
+|[[Catamin]] [C] +3
+|3,300 XP
+|-
+! scope="row" |12
+|158% HP/106% AP
+|1,689%
+|422%
+|311%
+|211% HP/158% AP
+|211% HP/158% AP
+|211% HP/158% AP
+|211% HP/158% AP
+|990,000 HP
+|110
+|Sprockets +5
+|3,300 XP
+|-
+! scope="row" |13
+|166% HP/112% AP
+|1,778%
+|444%
+|322%
+|222% HP/166% AP
+|222% HP/166% AP
+|222% HP/166% AP
+|222% HP/166% AP
+|1,035,000 HP
+|120
+|Gold +5
+|3,600 XP
+|-
+! scope="row" |14
+|174% HP/118% AP
+|1,867%
+|466%
+|333%
+|233% HP/174% AP
+|233% HP/174% AP
+|233% HP/174% AP
+|233% HP/174% AP
+|1,080,000 HP
+|120
+|[[Cat Capsule|Cat Ticket]] +1
+|3,600 XP
+|-
+! scope="row" |15
+|182% HP/124% AP
+|1,956%
+|488%
+|344%
+|244% HP/182% AP
+|244% HP/182% AP
+|244% HP/182% AP
+|244% HP/182% AP
+|1,125,000 HP
+|130
+|750,000 XP
+|3,900 XP
+|-
+! scope="row" |16
+|190% HP/130% AP
+|2,045%
+|510%
+|355%
+|255% HP/190% AP
+|255% HP/190% AP
+|255% HP/190% AP
+|255% HP/190% AP
+|1,170,000 HP
+|130
+|Meteorite +5
+|3,900 XP
+|-
+! scope="row" |17
+|198% HP/136% AP
+|2,134%
+|532%
+|366%
+|266% HP/198% AP
+|266% HP/198% AP
+|266% HP/198% AP
+|266% HP/198% AP
+|1,215,000 HP
+|130
+|[[Leadership]] +1
+|3,900 XP
+|-
+! scope="row" |18
+|206% HP/142% AP
+|2,223%
+|554%
+|377%
+|277% HP/206% AP
+|277% HP/206% AP
+|277% HP/206% AP
+|277% HP/206% AP
+|1,260,000 HP
+|140
+|Beast Bones +5
+|4,200 XP
+|-
+! scope="row" |19
+|214% HP/148% AP
+|2,312%
+|576%
+|388%
+|288% HP/214% AP
+|288% HP/214% AP
+|288% HP/214% AP
+|288% HP/214% AP
+|1,305,000 HP
+|140
+|1,000,000 XP
+|4,200 XP
+|-
+! scope="row" |20
+|225% HP/150% AP
+|2,400%
+|600%
+|400%
+|300% HP/225% AP
+|300% HP/225% AP
+|300% HP/225% AP
+|300% HP/225% AP
+|1,350,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|4,500 XP
+|}
+
+==Strategy==
+{{Lineup
+|Roe Cat|40
+|Sashimi Cat
+|?
+|?
+|?
+|Slime Cat|40
+|Can Can Cat|40
+|Fishman Cat|40
+|Courier Cat|40
+|Awakened Bahamut Cat|30
+|talent10 = Explosion Lv10
+|cannon = Thunderbolt
+|notes = *Fill the first row with the best Starting Money, Starting Level or Attack combos you have. However, it's best if you have Sashimi Cat since Roe Cat in the combo can serve as a tanker too.
+*If you feel like you don't have enough damage output, you can use a rich cat on the last stages and swap out some of the combos.
+}}
+
+Send Slime Cat immediately to have it trade with Aku Doge, then send Can Can Cat, Courier Cat and Fishman Cat in order so that they enter Gilgamesh's blindspot together. After that try to spawn Awakened Bahamut Cat as soon as possible (just don't have it caught in Gilgamesh's attack), and spam the bottom row plus at least 1 Roe Cat, more if you have extra cash. Slime Cat will need a bit of timing, but Can Can Cat, Fisherman Cat and Courier Cat will usually enter alive even if hit.
+Gilgamesh should be dead by the time or very shortly after Lancer arrives. It's crucial to not have Awakened Bahamut Cat hit by any of the peons, as it will survive 2 hits from Lancer at full HP and you need every bit of that time. Now it's a matter of destroying the base before Rider spawns and kills your stack. Lancer deals relatively low damage, and your courier stack can survive 1 hit. Use Thunderbolt to buy time if necessary and knockback Lancer quickly. Once Lancer is behind the base, the Roe Cat from earlier can safely tank the hits and let you finish the base. Even if Rider spawns and attacks, it's not the end of the world if the enemy base is already quite low, as more Courier Cats can do a little bit of chip damage under the protection of Roe Cats.
+
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s27014.html
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Gauntlets]]
+[[Category:No Continue Stages]]

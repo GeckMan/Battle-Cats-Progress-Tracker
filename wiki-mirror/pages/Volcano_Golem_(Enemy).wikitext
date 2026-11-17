@@ -1,0 +1,69 @@
+{{JPExclusive}}'''Volcano Golem''' (ボルケーノゴーレム - Borukenogoremu) is an enemy that appears in [[Castle & Dragon Collaboration Event]]. It was added in [[Version 4.6 Update|Version 4.6]].
+
+{{Enemy Info
+|name = Volcano Golem
+|image = E 229.png
+|appearance = [[Castle & Dragon Collaboration Event]]
+|money drop = 2,000円 - 7,900円
+}}
+
+==Enemy==
+This enemy has good amounts of health, damage, long range, and a chance to [[Slow|slow]] down your units. However, he has slow movement speed, and a slow attack rate.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Castle and Dragon Awakens!]]: [[Road to Golem Evolution (Hard)]] (100%)
+*[[Castle & Dragon Collaboration Event#Immortal Castle and Dragon|Immortal Castle and Dragon]]: [[Castle Dragon Great War (Deadly)]] (200%)
+*[[Castle & Dragon Collaboration Event#Castle Dragon VS Castle Dragon|Castle Dragon VS Castle Dragon]]: [[Knights Invasion (Dragon)]] (70%)
+*[[Castle and Dragon Assault!]]:
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.11]] (400%)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.12]] (400% HP/422% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.13]] (400% HP/444% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.14]] (400% HP/466% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.15]] (400% HP/488% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.16]] (400% HP/510% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.17]] (400% HP/532% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.18]] (400% HP/554% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.19]] (400% HP/576% AP)
+**[[Castle and Dragon Assault!/Siege Battle Lv.1~20#Siege Battle Lv.11~20|Siege Battle Lv.MAX]] (400% HP/600% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Volcano Golem
+|Health = 250000
+|Attack Power = 11111
+|Attack Range = 500
+|Attack Type = Area
+|Time Between Attacks = 365
+|Movement Speed = 3
+|Knockback = 1
+|Foreswing = 16
+|Backswing = 17
+|Ability = {{AbilityIcon|Slow}} 75% chance to [[Slow|slow]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+229 e.png|Volcano Golem's spritesheet
+IdleVolcanoGolem.gif|Volcano Golem's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/231.html
+
+----
+{{EnemyNav|4D Cyclops|Prisoner Cat}}
+----
+
+{{Castle & Dragon}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

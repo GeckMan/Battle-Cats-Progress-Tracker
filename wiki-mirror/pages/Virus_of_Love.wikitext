@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Snache|Those Guys|Doge|Happy 100}}
+'''Virus of Love''' is the first stage in [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]].
+
+{{Stage Info
+|stage name = [[File:rc076.png]]
+[[File:Mapsn041 00 c en.png]]
+|stage location = [[File:Mapname041 c en.png]]
+|energy = 50
+|enemy castle hp = 3,000 HP
+|enemies = {{Magnification|Snache|100%
+|Those Guys|100%
+|Doge|100%}}
+|boss = {{Magnification|Happy 100|4%}}
+|enemies2 = {{Magnification|Snache|200%
+|Those Guys|200%
+|Doge|200%}}
+|boss2 = {{Magnification|Happy 100|8%}}
+|enemies3 = {{Magnification|Snache|300%
+|Those Guys|300%
+|Doge|300%}}
+|boss3 = {{Magnification|Happy 100|12%}}
+|score reward = '''8,500''': 50,000 XP<br>
+'''4,500''': 10,000 XP<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 1,500 XP
+|width = 3,600
+|max enemies = 6
+|jpname = Virus in Love
+|script = 恋するウイルス
+|romaji = Koisuru uirisu
+|star = 3
+|event = [[Crash Fever Collaboration Event]]
+|event-chapter = [[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Explosive Escape]]
+}}
+
+==Battleground==
+*5 [[Snache]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*5 [[Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Those Guys]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 90% HP:
+**1 [[Happy 100 (Enemy)|Happy 100]] spawns as the boss.
+**5 [[Doge]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**8 [[Those Guys]] spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02041-01.html
+
+{{Crash Fever}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

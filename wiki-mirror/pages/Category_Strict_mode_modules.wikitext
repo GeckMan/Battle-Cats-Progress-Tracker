@@ -1,0 +1,3 @@
+Modules which use <code class="mw-highlight"><span class="nb">require</span><span class="p">(</span><span class="s2">[[mw:Special:MyLanguage/Extension:Scribunto/Lua reference manual#strict|"strict"]]</span><span class="p">)</span></code> to prevent creating global variables.
+
+[[Category:Modules]]

@@ -1,0 +1,151 @@
+{{EnemiesAppearing|Pigge|Pigge Back|Dagshund|Kory}}
+
+{{Stage Info
+|stage name = [[File:Rc018.png]]
+[[File:Mapsn025 00 a en.png]]
+|stage location = [[File:Mapname025 a en.png]]
+|enemies = {{Magnification|Pigge|0
+|Pigge Back|0
+|Dagshund|0
+|Kory|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 5.000
+|max enemies = 10
+|jpname = Sports Day Lv.X
+|script = 運動会 Lv.X
+|romaji = Undōkai Lv.X
+|event = [[October Gauntlet]]
+|event-chapter = [[October Gauntlet]]
+|require = Clear [[Autumn = Sports Day! (Monthly Event)|Autumn = Sports Day!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*5 [[Pigge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*5 [[Pigge Back]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*3 [[Dagshund]]s spawn after 20 seconds<sup>600f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*1 [[Kory]] spawns after 36.67 seconds<sup>1,100f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Sports Day Lv.
+! colspan="4" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Pigge]]
+! scope="col" |[[Pigge Back]]
+! scope="col" |[[Dagshund]]
+! scope="col" |[[Kory]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|400%
+|400%
+|200%
+|100%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|556%
+|556%
+|211%
+|111%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|712%
+|712%
+|222%
+|122%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|868%
+|868%
+|233%
+|133%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|1,024%
+|1,024%
+|244%
+|144%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|1,180%
+|1,180%
+|255%
+|155%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|1,336%
+|1,336%
+|266%
+|166%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|1,492%
+|1,492%
+|277%
+|177%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|1,648%
+|1,648%
+|288%
+|188%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|1,800%
+|1,800%
+|300%
+|200%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+The easiest method is to rush this stage and destroy the enemy base before Kory spawns.
+
+If you cannot do this, then you should prioritise the use of tankers like [[Curling Cat (Rare Cat)|Cleanerbot Cat]] because of the allied units limit. Avoid low health cats without Wave Immunity, or alternatively use a Wave Blocker like [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]]. Bring an attacker like courier cat to deal with the peons, and backliner like [[Ururun Wolf (Special Cat)|Ururun Cat]] or [[Red Riding Mina (Special Cat)|Crimson Mina]] to deal with the Kory. Bring a meatshield like crazed wall cat to fill in the gaps where your tanker is still reaching the front line.
+
+If you have [[Awakened Bahamut Cat]] then these stages should be very easy, save up cash at the start and then send out him, this should lead to a quick victory, especially if you have other units (such as [[Crazed Giraffe Cat]] or even [[Holy Valkyrie Cat]]).
+
+==Reference==
+*https://battlecats-db.com/stage/s24025.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

@@ -1,0 +1,27 @@
+{{#invoke:Navbox|main
+|template = Template:Chocolate
+|title = [[Chocolate Collaboration Event]]
+|navbox_class = chocolate
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Cat Slave Chocolate (Rare Cat)|Cat Slave Chocolate]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Chocolate Cat (Enemy)|Chocolate Cat]]
+
+|header3 = Stages
+|group3 = Cat Slave King
+|list3 =
+*[[A King Imprisoned By Penguins]]
+
+|group4 = Chocolate Awakens!
+|list4 =
+*[[Road to Chocolate Evolution (Easy)]]
+*[[Road to Chocolate Evolution (Normal)]]
+}}<templatestyles src="Chocolate/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Chocolate]]}}<noinclude>[[Category:Navboxes]]</noinclude>

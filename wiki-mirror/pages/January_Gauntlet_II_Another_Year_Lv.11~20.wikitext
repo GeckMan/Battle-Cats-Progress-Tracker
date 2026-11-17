@@ -1,0 +1,166 @@
+{{EnemiesAppearing|Aku Doge|Aku Gory|Nimoy Bore|Sister Lione}}
+
+{{Stage Info
+|stage name = [[File:Rc013.png]]
+[[File:Mapsn033 00 a en.png]]
+|stage location = [[File:Mapname033 a en.png]]
+|enemies = {{Magnification|Aku Doge|0
+|Aku Gory|0
+|Nimoy Bore|0}}
+|boss = {{Magnification|Sister Lione|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 6,000
+|max enemies = 15
+|jpname = It Was Open Lv.X
+|script = あけてました Lv.X
+|romaji = Aketemashita Lv. X
+|star = 1
+|event = [[January Gauntlet II]]
+|event-chapter = [[January Gauntlet II]]
+|require = Clear [[Another New Year (Monthly Event)|Another New Year]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Aku Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Aku Gory]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sister Lione]] spawns as the boss.
+**1 [[Aku Gory]] spawns.
+**10 [[Aku Doge]]s spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**1 [[Nimoy Bore]] spawns.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Another Year Lv.
+! colspan="4" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Aku Gory]]
+! scope="col" |[[Nimoy Bore]]
+! scope="col" |[[Sister Lione]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|200%
+|100%
+|250%
+|200%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |12
+|222%
+|111%
+|333%
+|222%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |13
+|244%
+|122%
+|416%
+|244%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |14
+|266%
+|133%
+|499%
+|266%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |15
+|288%
+|144%
+|582%
+|288%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|310%
+|155%
+|665%
+|310%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |17
+|332%
+|166%
+|748%
+|332%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |18
+|354%
+|177%
+|831%
+|354%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |19
+|376%
+|188%
+|914%
+|376%
+|150
+|Aku [[Catfruit]] Seed +1
+|2,850
+|-
+! scope="row" |20
+|400%
+|200%
+|1,000%
+|400%
+|150
+|Rare Ticket +1
+|2,850
+|}
+
+==Strategy==
+Because of the absurdly high magnifications that Nimoy Bore gets at higher levels, it's not recommended to challenge this gauntlet until all [[Anti-unstarred Alien Treasures]] from [[Into the Future]] are obtained.
+
+This stage thankfully doesn't feature many peons, with only Aku Gory posing any threat. They can be stalled with meatshields like [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]] and [[Ancient Egg: N003 (Special Cat)|Cat Cactus]] to build up money at the beginning. However, Sister Lione and Nimoy Bore work in tandem to cripple and shred through your frontline. As such, [[:Category:Anti-Floating Cats|anti-Floating]] and [[:Category:Anti-Alien Cats|anti-Alien]] tankers are recommended over disposable meatshields after the startoff. For the Nimoy Bore, anti-Alien debuffers like [[Psychocat (Rare Cat)|Corrupted Psychocat]] and [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] are recommended to ease the stage's pushing power, while [[Long Distance]] attackers like [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] and [[Phantom Cat (Rare Cat)|Bubble Cat]] wear Sister Lione down.
+
+==='''Recommended Units'''===
+*[[Ancient Egg: N003 (Special Cat)|Cat Cactus]]: Great to use at the beginning of the stage to stall the Aku peons for money.
+*[[Rover Cat (Rare Cat)|Catellite]]/[[Ancient Egg: N108 (Super Rare Cat)|Soap Cat]]: Both are anti-Alien tankers that can help hold the line against Nimoy Bore. While Soap Cat is preferred due to the deploy limit, Catellite can be used if Soap Cat is not unlocked yet.
+*[[Psychocat (Rare Cat)|Corrupted Psychocat]]/[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Anti-Alien debuffers that do their usual job of keeping Nimoy Bore in check.
+*[[Kotatsu Cat (Super Rare Cat)|Sadako Cat]]: A natural choice for this stage due to being able to tank Sister Lione's attacks.
+*[[Phantom Cat (Rare Cat)|Bubble Cat]]: While available later, Bubble is an excellent choice to snipe Sister Lione due to its Massive Damage vs. Floating and immunity to Weaken. However, due to both its fragility and Sister Lione just barely outranging it, Bubble Cat needs a stepping stone (like Nimoy Bore) to function properly.
+*[[:Category:Wave Attack Cats|Wave Attack Cats]]: Units with a strong Wave attack, like [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] and [[Slime Cat (Rare Cat)|Slime/Jelly Dumpling Cat]], can help remove peons and wear down Sister Lione.
+*[[Long Distance]] attackers: Strong [[:Category:Sniper-class Cats|Snipers]] can help wear down Sister Lione, even as she's being protected by Nimoy Bore and the Aku Doges. Some good, accessible examples include [[Red Riding Mina (Special Cat)|Awakened Mina]] and [[Vaulter Cat (Super Rare Cat)|Housewife Cat]]. Do note that, like Bubble Cat, Housewife needs a stepping stone to hit Sister Lione without getting hit in return.
+
+==='''Recommended Ubers'''===
+*[[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]]: Even without his [[Talents]], Balrog is still an excellent option for this stage due to the low amount of peons and his immunity to Sister Lione's Weaken.
+*[[Catman (Uber Rare Cat)|Catman]]: Catman's base form is able to hit both of the major enemies in this stage for Massive Damage, making him a natural choice.
+*[[Coastal Explorer Kanna (Uber Rare Cat)|Deep Diver Kanna]]: Similar to Catman, she's able to hit both Sister Lione and Nimoy Bore for a huge chunk of damage. While she does have a blindspot, Deep Diver Kanna makes up for it with having a strong [[Surge Attack]] for even greater damage.
+
+==Reference==
+*https://battlecats-db.com/stage/s24033.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

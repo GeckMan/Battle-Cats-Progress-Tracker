@@ -1,0 +1,305 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Trolly Blogger|Doge Dark|Super Hyppoh|Tackey|Celeboodle|Croconator}}
+:''This article is about the original version of Horrorpotamus. For the newer version's stages, see [[Horrorpotamus/Cosmic Juggernaut Lv.1~20]].''
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn009 00 a en.png]]
+|stage location = [[File:Mapname011 a en.png]]
+|enemies = {{Magnification|Trolly Blogger|0
+|Doge Dark|0
+|Tackey|0
+|Celeboodle|0
+|Croconator|0}}
+|boss = {{Magnification|Super Hyppoh|0}}
+|restriction = [[No Continues]]
+|width = 6,200
+|max enemies = 12
+|jpname = Invasion Lv.X
+|script = 侵略 Lv.X
+|romaji = Shinryaku Lv.X
+|star = 1
+|event = [[Horrorpotamus (Old)|Horrorpotamus]]
+|event-chapter = [[Horrorpotamus (Old)|Horrorpotamus!!!]]
+|require = Complete [[Cats of the Cosmos]] Chapter 1
+}}
+
+==Battleground==
+*The enemy base's HP starts at 800,000 and increases by 40,000 with each stage.
+*Infinite [[Trolly Blogger]]s spawn after 6.67 seconds<sup>200f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[Doge Dark]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Super Hyppoh]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Tackey]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*3 [[Celeboodle]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+*2 [[Croconator]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Tackey]] spawns after 113.33 seconds<sup>3,400f</sup>.
+*3 [[Croconator]]s spawn after 146.67 seconds<sup>4,400f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*2 [[Croconator]]s spawn after 233.33 seconds<sup>7,000f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="3" scope="col" style="text-align: center;" |Cosmic Juggernaut Lv.
+! colspan="7" style="text-align: center;" |Strength magnifications
+! rowspan="3" style="text-align: center;" |Energy
+cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! colspan="2" scope="col" style="text-align: center;" |[[Super Hyppoh]]
+! rowspan="2" scope="col" |[[Trolly Blogger]]
+! rowspan="2" scope="col" |[[Doge Dark]]
+! rowspan="2" scope="col" |[[Tackey]]
+! rowspan="2" scope="col" |[[Celeboodle]]
+! rowspan="2" scope="col" |[[Croconator]]
+! rowspan="2" scope="col" |Treasure
+! rowspan="2" |Base XP
+|-
+!HP
+!AP
+|-
+! scope="row" |41
+|75,000%
+|55,000%
+|200%
+|1,000%
+|100%
+|800%
+|100%
+|100
+|Yellow Catfruit +5
+|1,900
+|-
+! scope="row" |42
+|75,000%
+|58,750%
+|230%
+|1,050%
+|130%
+|850%
+|110%
+|100
+|XP +1,000,000
+|1,900
+|-
+! scope="row" |43
+|80,000%
+|62,500%
+|260%
+|1,100%
+|160%
+|900%
+|120%
+|100
+|Feathers +5
+|1,900
+|-
+! scope="row" |44
+|85,000%
+|62,500%
+|290%
+|1,150%
+|190%
+|950%
+|130%
+|100
+|Leadership +4
+|1,900
+|-
+! scope="row" |45
+|90,000%
+|70,000%
+|300%
+|1,200%
+|200%
+|1,000%
+|130%
+|120
+|Green Catfruit +5
+|2,280
+|-
+! scope="row" |46
+|94,000%
+|72,000%
+|320%
+|1,240%
+|220%
+|1,040%
+|130%
+|120
+|XP +1,000,000
+|1,900
+|-
+! scope="row" |47
+|98,000%
+|74,000%
+|340%
+|1,280%
+|240%
+|1,080%
+|130%
+|120
+|Gold +10
+|1,900
+|-
+! scope="row" |48
+|102,000%
+|76,000%
+|360%
+|1,320%
+|260%
+|1,120%
+|140%
+|120
+|Cat Ticket +4
+|1,900
+|-
+! scope="row" |49
+|106,000%
+|78,000%
+|380%
+|1,360%
+|280%
+|1,160%
+|140%
+|120
+|Blue Catfruit +5
+|2,470
+|-
+! scope="row" |50
+|110,000%
+|80,000%
+|400%
+|1,400%
+|300%
+|1,200%
+|150%
+|130
+|XP +1,500,000
+|2,470
+|-
+! scope="row" |51
+|113,000%
+|81,000%
+|420%
+|1,440%
+|310%
+|1,240%
+|160%
+|130
+|Beast Bones +10
+|2,470
+|-
+! scope="row" |52
+|116,000%
+|82,000%
+|440%
+|1,480%
+|320%
+|1,280%
+|170%
+|130
+|Red Catfruit +5
+|2,470
+|-
+! scope="row" |53
+|119,000%
+|83,000%
+|460%
+|1,520%
+|330%
+|1,320%
+|170%
+|130
+|XP +1,500,000
+|2,470
+|-
+! scope="row" |54
+|122,000%
+|84,000%
+|480%
+|1,560%
+|340%
+|1,360%
+|180%
+|130
+|Meteorite +15
+|2,470
+|-
+! scope="row" |55
+|125,000%
+|85,000%
+|500%
+|1,600%
+|350%
+|1,400%
+|180%
+|140
+|Purple Catfruit +5
+|2,660
+|-
+! scope="row" |56
+|128,000%
+|86,000%
+|520%
+|1,640%
+|360%
+|1,440%
+|180%
+|140
+|XP +1,500,000
+|2,660
+|-
+! scope="row" |57
+|131,000%
+|87,000%
+|540%
+|1,680%
+|370%
+|1,480%
+|180%
+|140
+|Sprockets +20
+|2,660
+|-
+! scope="row" |58
+|134,000%
+|88,000%
+|560%
+|1,720%
+|380%
+|1,520%
+|190%
+|140
+|Epic Catfruit Seed +1
+|2,660
+|-
+! scope="row" |59
+|137,000%
+|89,000%
+|580%
+|1,760%
+|390%
+|1,560%
+|190%
+|140
+|XP +3,000,000
+|2,660
+|-
+! scope="row" |60
+|140,000%
+|90,000%
+|600%
+|1,800%
+|400%
+|1,600%
+|200%
+|150
+|Rare Cat Ticket +3
+|2,850
+|}
+
+==Reference==
+*https://battlecats-db.com/stage/s24011.html
+{{SpecialStages List}}
+[[Category:Horrorpotamus Stages]]
+[[Category:Gauntlets]]
+[[Category:No Continue Stages]]

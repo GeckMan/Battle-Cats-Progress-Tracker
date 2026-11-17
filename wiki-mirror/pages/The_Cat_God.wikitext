@@ -1,0 +1,93 @@
+:''For other uses, see [[God (disambiguation)|God]].''
+'''The Cat God''' (神さま, ''Kamisama'', '''God''') is a [[:Category:Floating Enemies|Floating]] enemy seen as the boss of [[The Big Bang (Cats of the Cosmos)|The Big Bang]] in [[Cats of the Cosmos]] Chapter 1. He also appears in [[Zero Legends]]. He was added in [[Version 6.5 Update|Version 6.5]].
+
+{{Enemy Info
+|name = The Cat God
+|image = E 367.png
+|appearance = '''CotC''': [[The Big Bang (Cats of the Cosmos)|Chapter 1 - The Big Bang]]<br>
+'''CotC''': [[The Big Bang (Cats of the Cosmos)|Zombie Outbreaks]]<br>
+'''ZL''': [[Crimes Against the Cosmos|Sub-chapter 2 - Crimes Against the Cosmos]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+The final boss of Cats of the Cosmos Chapter 1. He stands at a massive 1,000 range and frequently fires off three lightning strikes that do more than 50,000 damage in total, making him quite difficult to fight.
+
+It's near necessary to max out the [[Mystery Mask]] [[Treasure]] in Ch.1 in order for The Cat God to be at a beatable difficulty level for the average player. Without activating the Mystery Mask, he will have 15,399,989 health and deal 593,967 damage (or 197,989 for each hit).
+
+==Strategy==
+The Cat God is quite the threat when guarded by waves of threats and can be a handful. You'll likely have to rely on dealing burst or chip damage with fast units like [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] (exploits his Floating trait) and [[Hip Hop Cat (Super Rare Cat)|Dancing Flasher Cat]] or snipe him through [[Wave Attack|waves]] and [[Surge Attack|surges]] if there are peons in the way.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 367
+|Type = [[:Category:Floating Enemies|Floating]]
+|Image1 = Enemy icon 367.png
+|Name1 = The Cat God
+|Desc1 = Hey, it's me, Cat God.<br>You look like you're having a good<br>time reading my character text.<br>It's almost my bathtime, though, so...
+|Name1 (JP) = 神さま (Kamisama, God)
+|Desc1 (JP) = やあ、ボク、神さまだけど。<br>みんな、「にゃんこ大戦争」は楽しんで<br>くれてるかな？今日は皆が知りたいボクの<br>生い立ちを語ろう。あれは１歳の夏……
+|Transl1 (JP) = Hi, I'm God.<br>Everyone, are you enjoying "The Battle Cats?"<br>Today I want to let everyone know my story.<br>It was the summer when I was 1 year old......
+|Name1 (TW) = 神
+|Desc1 (TW) = 哈囉！沒錯，我就是神。<br>「貓咪大戰爭」好玩嗎？<br>為滿足大家的好奇心，今天就來說說<br>我的成長歷程。那是我1歲夏天的故事了...
+|Name1 (KR) = 신
+|Desc1 (KR) = 그래, 내가 신이야.<br>모두들 재밌게 플레이하고 있니?<br>오늘은 모두가 알고 싶어 하는 나의 어린 시절을<br>이야기해주지. 1살 때 여름이었어....
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Cats of the Cosmos]]===
+*Stage 1-48: [[The Big Bang (Cats of the Cosmos)|The Big Bang]] (100%)
+
+===[[Cats of the Cosmos]] [[Zombie Outbreaks|Outbreaks]]===
+*Stage 1-48: [[The Big Bang (Cats of the Cosmos)/Outbreak|The Big Bang]] (100%)
+
+===[[Zero Legends]]===
+*Stage 2-1: [[Crimes Against the Cosmos]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = The Cat God
+|Health = 1399999
+|Attack Power = 53997
+|Attack Range = 1000
+|Attack Type = Area
+|Time Between Attacks = 361
+|Movement Speed = 3
+|Knockback = 5
+|Foreswing = 90
+|Backswing = 51
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">17,999</span> at 90f <sup>3s</sup>, <span class="scaled" data-type="ap">17,999</span> at 120f <sup>4s</sup>, <span class="scaled" data-type="ap">17,999</span> at 150f <sup>5s</sup>)
+|Element = Floating
+}}
+:''*Stats shown by default are with 100% [[Cats of the Cosmos]] Ch. 1 [[Mystery Mask]] [[Treasure]]s.''
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+367 e.png|The Cat God's spritesheet
+Floating god.gif|The Cat God's animations
+</gallery>
+
+==Trivia==
+*His body is taken from Adam's depiction in ''[[wikipedia:The Creation of Adam|The Creation of Adam]]'' by [[wikipedia:Michelangelo|Michelangelo]].
+
+==Reference==
+*https://battlecats-db.com/enemy/369.html
+
+----
+{{EnemyNav|Spacefish Jones|Saber}}
+----
+
+{{Enemies}}
+
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Cats of the Cosmos Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Mythic Bosses]]

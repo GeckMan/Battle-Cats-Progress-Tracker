@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Li'l Doge|Dogenstein|Dober P.D|St. Dober|Dark Dober|Cli-One}}
+'''Automatic Avoidance''' is the fourth stage in [[Cruise Ship Panic]].
+
+{{Stage Info
+|stage name = [[File:rc009.png]]
+[[File:Mapsn015 03 nd en.png]]
+|stage location = [[File:Mapname015 nd en.png]]
+|energy = 220
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Li'l Doge|500%
+|Dogenstein|100%
+|Dober P.D|200%
+|St. Dober|100%
+|Dark Dober|100%}}
+|boss = {{Magnification|Cli-One|1,600%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +1 (1%, unlimited)
+|XP = 12,540 XP
+|width = 3,800
+|max enemies = 20
+|jpname = Automatic Crisis Avoidance
+|script = オートマチック危機回避
+|romaji = Ōtomachikku Kiki Kaihi
+|star = 1
+|sub-chapter = [[Cruise Ship Panic]]
+|difficulty = ★11
+|prev stage = [[Proposal at Sea]]
+|next stage = [[Pirates Breaking Rank]]
+}}
+
+==Battleground==
+*Infinite [[Li'l Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Dogenstein]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Dober P.D]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Dogenstein]] spawns after 93.33 seconds<sup>2,800f</sup>.
+*1 [[St. Dober]] spawns after 86.67 seconds<sup>2,600f</sup>.
+*5 [[Dogenstein]]s spawn after 146.67 seconds<sup>4,400f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*1 [[Dark Dober]] spawns after 143.33 seconds<sup>4,300f</sup>.
+*1 [[Cli-One]] spawns as the boss after 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+Cli-One's purpose is to punish your cats if they push any of the 3 Dobers too far away. Keep in mind that using meatshields in this stage might cause more harm than using none.
+
+Starting with Dogenstein and Dober P.D, you can counter them alone using only [[Can Can Cat]], but it's advised to bring a second damage-dealer just for Dober P.D; almost any [[:Category:Cats with Wave Immunity|Wave-immune attacker]] works, a good choice being [[Talents|Talented]] [[Dancer Cat]]. Afterwards comes St. Dober, who can be beaten with just 2 units: [[Farmboy Cat]] and [[Cafeteria Cat]]. It's still a bit tricky, but manageable; you can bring a 2nd attacker (since Farmboy is here to perma-[[Slow]] him) as long as it meets the [[:Category:Cats with Surge Immunity|Surge-immune]] criterion. As for the final enemy, Dark Dober makes its 7th [[Zero Legends]] appearance and the best way to deal with it is the same as always: Talented [[Dark Lazer]] gets the job done.
+
+==Walkthrough==
+{{Walkthrough
+|-m599_BaJNU
+|slad
+|Starts at [https://www.youtube.com/watch?v&#61;-m599_BaJNU&t&#61;6m54s 6:54]
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s34015-04.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 114 Stages]]
+[[Category:Zero Legends Stages]]

@@ -1,0 +1,93 @@
+:''This base has no official name.''
+The '''Surge Base''' is an animated [[Enemy Bases|Enemy Base]] that appears in [[Legend Stages]]. It was added in [[Version 9.8 Update|Version 9.8]].
+
+{{Enemy Info
+|name = Surge Base
+|image = E 524.png
+|first appearance = '''UL''': [[Happily Ever After|Sub-chapter 27 - Happily Ever After]]
+|latest appearance = '''ZL''': [[Cookie Cutter Ruins|Sub-chapter 12 - Cookie Cutter Ruins]]
+|money drop = N/A
+}}
+
+==Enemy==
+The Surge Base has double the range of the [[Doge Base (Enemy Base)|Doge Base]] and creates a devastating level 3 [[Surge Attack]] instead of a [[Wave Attack|Wave]]. It deals at least 96,000 damage per hit in all of its appearances, and can spawn Surges between 150 and 2,000 range; a huge area unfortunately paired and evened out in favor of the base as all created Surges have 125 outward piercing range and 250 inner range. Like most animated bases, it is immune to all debuffs and Waves, but can be hurt by Surges and [[Explosion]]s.
+
+While it does use a laser to telegraph ''when'' the Surge is about to go off, it is not possible to determine ''where'' it will occur until it spawns; the aiming laser is cosmetic and always stops in the same area.  Additionally, the Surge Base also has to hit a [[Cat Units|Cat Unit]] in the front with its single-target attack. Beware the telegraph, as you will have only 15 frames (half a second) to prepare before the Surge spawns.
+
+==Strategy==
+Because of the Surge Base's extreme damage output, it can easily destroy or cripple whatever it hits, with the Surge lingering on the field for even more carnage. This can be avoided by luring enemies away from its range. Alternatively, you can use [[:Category:Cats with Surge Immunity|Surge-Immune units]] such as [[Talents|Talented]] [[Actress Cat (Special Cat)|Beefcake Cat]], [[Idi:N (Special Cat)|Idi:N2]], and [[Jagando Jr. (Special Cat)|Jagando Jr]], although something else is still needed to bait out its attacks.
+
+As mentioned before, the Surge Base is vulnerable to [[:Category:Surge Attack Cats|Surge Attack]]/[[:Category:Explosion Cats|Explosion]] units such as [[Master Uril (Special Cat)|Esoteric Uril]] and Talented [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], so they could be theoretically useful provided if the Surge Base couldn't eliminate them in time. Apart from the surge, there is also the high damage single-target that hits the enemy in front, so a unit will need to be periodically sent out to intercept it and protect the rushers.
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 27-6: [[Happily Ever After]] (80,000%)
+*Stage 28-3: [[Formalin Marina]] (80,000%)
+*Stage 28-6: [[Burning Blue]] (80,000%)
+*Stage 34-1: [[Angkor S.W.A.T.]] (80,000%)
+*Stage 36-1: [[The Ivy-Sealed Door]] (80,000%)
+*Stage 36-2: [[Reincarnation Ring]] (80,000%)
+*Stage 36-3: [[Re-Leaf Towers]] (80,000%)
+*Stage 36-4: [[Canopy Altar]] (80,000%)
+*Stage 36-5: [[Sappy Underpass]] (80,000%)
+*Stage 42-6: [[Roast Meat, Not Cities]] (80,000%)
+*Stage 46-4: [[Retreat of the Living Dead]] (80,000%)
+
+===[[Zero Legends]]===
+*Stage 5-6: [[Ohno Road]] (86,000%)
+*Stage 12-5: [[Cookie Cutter Ruins]] (86,000%)
+*Stage 25-4: [[Plaza of Queues]] (100,000%)
+*Stage 34-5: [[Thunderous Trilby]] (100,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Surge Base
+|Health = 1500
+|Attack Power = 120
+|Attack Range = 2000
+|Attack Type = Single
+|Time Between Attacks = 247
+|Movement Speed = 0
+|Knockback = 1
+|Foreswing = 148
+|Backswing = 50
+|Ability = {{AbilityIcon|Surge Attacks}} 100% chance to create a level 3 [[Surge Attack]] between 150 and 2,000 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+:''*Note that these are the stats of the Surge Base at 100% strength magnification; it does not appear at magnifications under 80,000% in any stage.''
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+524 e.png|The Surge Base's spritesheet
+Monument.jpg|The Croatian monument that inspired the Surge Base's design
+</gallery>
+
+==Trivia==
+*The top of the Surge Base resembles the [[wikipedia:Monument to the Revolution of the people of Moslavina|Monument to the Revolution of the people of Moslavina]] in Croatia.
+**The soul that appears when the [[Surge Attack#Counter-Surge|Counter-Surge]] ability activates has a similar shape.
+*A bug involving how [[:Category:Animated Enemy Bases|Animated Bases]] spawn in if they're not counted as boss enemies, discovered in [[Version 15.2 Update|Version 15.2]], made it possible for the Surge Base to attack the Cat Base on [[Ohno Road]].
+
+==Reference==
+*https://battlecats-db.com/enemy/526.html
+
+----
+{{EnemyNav|Happy Birthday Cake|Super Hyppoh}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Animated Enemy Bases]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Single Attack Enemies]]
+[[Category:Surge Attack Enemies]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Wave Immunity]]

@@ -1,0 +1,96 @@
+'''Selena''' (ナミエちゃん, ''Namie-chan'') is a [[:Category:Dark Enemies|Dark]] variant of [[Sunny Celeboodle]] introduced in [[Never Not Summer! (Monthly Event)|Never Not Summer!]]. She was added in [[Version 7.2 Update|Version 7.2]].
+
+{{Enemy Info
+|name = Selena
+|image = E 416.png
+|first appearance = [[Leak Year]]
+|latest appearance = [[Infernal Tower/Floor 13|Infernal Tower - Floor 13]]
+|money drop = 1,800¢ - 7,110¢
+}}
+
+==Enemy==
+Compared to [[Sunny Celeboodle]], Selena has much higher health and deals more damage per hit, with no delay between attacks, but has one additional knockback and significantly shorter range. She also a 100% chance of knocking back cats and a 40% chance of slowing them.
+
+==Strategy==
+For the most part, the same strategy that works against Sunny Celeboodle also works against Selena: meatshield non-stop while slowly whittling down her health with long-ranged attackers, including [[Bahamut Cat (Special Cat)|Bahamut Cat]] and other heavy hitters. Avoid using short-ranged units like [[Titan Cat (Normal Cat)|Titans]] against Selena, as they will most likely be killed or knocked back repeatedly before they have a chance to attack. Also, if you time [[Flower Cat (Special Cat)|Bombercat]] correctly, you can easily stunlock her.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Never Not Summer! (Monthly Event)|Never Not Summer!]]:
+**[[Leak Year]] (100%)
+**[[Cats of Yesterday]] (130%)
+**[[Heat Wave Blues]] (200%)
+**[[Lazy Tomorrow]] (250%)
+**[[Young Nyan]] (300%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2018 Debut]] (100%)
+*[[Summer Break Cats Paradise#Extravagant Resort Land|Extravagant Resort Land]]: [[Priceless Scenery]] (300%)
+*[[Dark Citadel]]:
+**[[Dark Citadel/Floor 7|Floor 7]] (100%)
+**[[Dark Citadel/Floor 9|Floor 9]] (200%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 13|Floor 13]] (300%)
+*[[July Gauntlet II]]:
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.11]] (300%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.12]] (322%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.13]] (344%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.14]] (366%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.15]] (388%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.16]] (410%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.17]] (432%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.18]] (454%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.19]] (476%)
+**[[July Gauntlet II/Not Summer Lv.11~20|Not Summer Lv.MAX]] (500%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.9]] (300%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 9~10|Grateful XP Lv.MAX]] (400%)
+*[[Summer Break Cats: Paradise (Gauntlet)|Summer Break Cats: Paradise]]:
+**[[Unstable Dreams]] (300%)
+**[[Start from Scratch]] (300%)
+*[[Billionaire's Bidding]]: [[Astronomical Invoice]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Selena
+|Health = 400000
+|Attack Power = 9000
+|Attack Range = 270
+|Attack Type = Area
+|Time Between Attacks = 41
+|Movement Speed = 15
+|Knockback = 3
+|Foreswing = 17
+|Backswing = 24
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 40% chance to [[Slow|slow]] Cat Units for 200f <sub>6.67 seconds</sub>
+|Element = Dark
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+416 e.png|Selena's spritesheet
+IdleSelena.gif|Selena's moving animation
+</gallery>
+
+==Trivia==
+*Her Japanese name, Namie-chan, may be a reference to [[wikipedia:Namie Amuro|Namie Amuro]], also known as Amuro-chan.
+**Since both are famous singers, songwriters, actresses and producers, this could mean that her English name is, by extension, a reference to [[wikipedia:Selena Gomez|Selena Gomez]].
+*Her design is likely meant to resemble the [[wikipedia:Ganguro|Ganguro]] subculture's style of make-up and accessories.
+
+==Reference==
+*https://battlecats-db.com/enemy/418.html
+
+----
+{{EnemyNav|Betakkuma|Kid Tappa}}
+----
+
+{{Enemies}}
+
+[[Category:Enemy Units]]
+[[Category:Dark Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]

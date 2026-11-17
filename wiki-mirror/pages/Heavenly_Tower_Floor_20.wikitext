@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Gato Amigo|Riceball Cat|Hyper Mr.|Unicycle Cat|Dancer Cat}}
+'''Floor 20''' is the 20th floor of [[Heavenly Tower]].
+
+As of [[Version 11.0 Update|Version 11.0]], clearing this floor allows the player to begin Heavenly Tower at [[Heavenly Tower/Floor 11|Floor 11]] on subsequent appearences.
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 19 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 200
+|enemy castle hp = 600,000 HP
+|enemies = {{Magnification|Gato Amigo|100%
+|Riceball Cat|100%
+|Hyper Mr.|100%
+|Unicycle Cat|100%}}
+|boss = {{Magnification|Dancer Cat|90%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|XP = 3,800 XP
+|width = 6,000
+|max enemies = 10
+|jpname = 20th Floor
+|script = 20階
+|romaji = 20 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★9
+|prev stage = [[Heavenly Tower/Floor 19|Floor 19]]
+|next stage = [[Heavenly Tower/Floor 21|Floor 21]]
+}}
+
+==Battleground==
+*Infinite [[Gato Amigo (Enemy)|Gato Amigos]] spawn after 0.07 seconds<sup>2f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Riceball Cat (Enemy)|Riceball Cats]] spawn after 100 seconds<sup>3,000f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*Infinite [[Hyper Mr. (Enemy)|Hyper Messrs.]] spawn after 126.67 seconds<sup>3,800f</sup>, delay 73.33 seconds<sup>2,200f</sup>.
+*1 [[Unicycle Cat (Enemy)|Unicycle Cat]] spawns after 166.67 seconds<sup>5,000f</sup>.
+*1 [[Dancer Cat (Enemy)|Dancer Cat]] spawns as the boss.
+
+==Strategy==
+While seeing all these Awakened Cats in one place may seem intimidating at first, the only one who ends up mattering is Dancer Cat. His combination of high range and fast attacks drastically limit your options for this stage, as anything with less than his 435 range will be killed without landing a single hit. As such, strategies will end up revolving around high range units, such as the [[:Category:Mythic Cats|Mythic Cats]].
+
+[[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] and [[Ururun Wolf (Special Cat)|Ururun Cat]] in particular work well here, both just slightly outranging Dancer. [[Li'l Nyandam (Special Cat)|Dark Emperor Catdam]] is not recommended, as while he outranges Dancer Cat by a much larger margin, he doesn't provide much in the way of damage or crowd-control.
+
+==='''Recommended Units'''===
+*[[Ancient Egg: N001 (Special Cat)|Haniwa Cat]]: Haniwa's high health against Traitless allows them to tank a hit from Dancer Cat. When used in tandem with other durable meatshields, they can form a nearly impenetrable line of defenses.
+*[[Lone Cat and Kitten (Rare Cat)|Vendor Cat and Kitten]]: Their [[Special Abilities#Resist|Resistance]] to Traitless and singular knockback allow them to reach Dancer, providing much-needed crowd-control. Due to their lower range, however, don't expect them to last very long.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: His extreme range and chance to [[Slow|slow]] mean he can stop Dancer's advance and chip him from a distance. Compared to Dark Emperor Catdam, Cyberpunk has higher range and a more consistent slow ability.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-20.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]

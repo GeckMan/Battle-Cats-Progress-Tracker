@@ -1,0 +1,45 @@
+{{EnemiesAppearing|Zroco|Mooth|Zackie Peng|The Face}}
+'''Mutation Lv.3''' is the third stage in [[Resident Undead]].
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn336 02 s en.png]]
+|stage location = [[File:Mapname336 s en.png]]
+|energy = 90
+|enemy castle hp = 60,000 HP
+|enemies = {{Magnification|Zroco|30%
+|Mooth|400%
+|Zackie Peng|30%}}
+|boss = {{Magnification|The Face|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 2,700 XP
+|width = 3,600
+|max enemies = 6
+|jpname = Mutation Lv.3
+|script = 突然変異Lv.3
+|romaji = Totsuzen Hen'i Lv.3
+|star = 1
+|event-chapter = [[Resident Undead]]
+|max clears = 1
+|difficulty = ★4
+|prev stage = [[Mutation Lv.2]]
+|next stage = [[Mutation Lv.4]]
+}}
+
+==Battleground==
+*4 [[Zroco]]s spawn after 16.67 seconds<sup>500f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Mooth]] spawns after 23.33 seconds<sup>700f</sup>.
+*When the base reaches 99% HP:
+**1 [[The Face]] spawns as the boss.
+**7 [[Zroco]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**1 [[Zackie Peng]] spawns.
+**2 [[Zackie Peng]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+
+==Strategy==
+This stage is incredibly easy. The zombies are at 30% magnification, so you can easily blitz it. Think of this kind of like EoC Moon 1, but with fewer supporting enemies.
+
+==Reference==
+*https://battlecats-db.com/stage/s01336-03.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

@@ -1,0 +1,1059 @@
+{{PageBanner|Plus_img01_en.jpg|custom|width=700|height=383}}
+'''Talent Orbs''' (本能玉, ''Hon'nō-dama'', '''Instinct Orbs'''), also known as just '''Orbs''', are a feature implemented in [[Version 9.7 Update|Version 9.7]]. This feature allows players to improve certain [[True Form]] and [[Ultra Form]] Cats' stats and abilities against one of many enemy traits or give them new abilities. Talent Orbs become available after clearing [[Into the Future]] Chapter 3.
+
+==Overview==
+A Talent Orb is a type of item which can be given to a unit from the [[Upgrade Menu]] by going left in the [[Talents]] upgrade screen. Each unit can only hold one Talent Orb at a time, except for [[:Category:Uber Rare Cats|Uber Rare Cats]] with access to Ultra Talents, which can equip up to two Talent Orbs when at level 60 or above. Once equipped, a Talent Orb can still be powered up through merging, or it can be removed for 10 NP. Talent Orbs exist in different Ranks and can be obtained from certain [[Enigma Stages]], [[Island of Hidden Treasure]], [[Gauntlet#Colossus Gauntlets|Colossus Gauntlet]]s and Arena of Destiny events in the Ranking Dojo or by merging lower-Rank Talent Orbs of the exact same Rank, Target and Type. Talent Orbs have their own section in the Storage alongside Cats and [[Catfruit]], where they can be merged or sold for NP.
+
+{| class="article-table" mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width:500px;"
+|-
+! scope="col" |Rank
+!Merging
+Cost
+!NP
+value
+|-
+|S
+|A (x3)
+|25
+|-
+|A
+|B (x3)
+|7
+|-
+|B
+|C (x2)
+|2
+|-
+|C
+|D (x2)
+|1
+|-
+|D
+|<nowiki>-</nowiki>
+|1
+|}
+
+==Orb Types==
+Each Orb has a '''Rank''' (ランク, ''Ranku'') and either an '''Effect''' (効果, ''Kōka'') or '''Ability''' (能力, ''Nōryoku''). Each Effect Orb is limited by a '''Target''' (ターゲット, ''Tāgetto'') trait like [[:Category:Red Enemies|Red]] or [[:Category:Floating Enemies|Floating]], while Ability Orbs activate against all enemies or against special enemy types like [[:Category:Colossus Enemies|Colossus]]. Ability Orbs were first introduced in [[Version 14.3 Update|Version 14.3]] and are obtained from Arena of Destiny events in the Ranking Dojo.
+
+Effect Orbs have a different color and texture depending on their Target (e.g., [[:Category:Relic Enemies|Relic]] Orbs are green with spirals). Ability Orbs have an iridescent design somewhat similar to the [[:Category:Legend Rare Cats|Legend Rare Cats]]' crystals.
+
+==='''Ranks'''===
+*'''S''' (highest; best effect)
+*'''A'''
+*'''B'''
+*'''C'''
+*'''D''' (lowest; minimal effect)
+
+<tabber>
+Effect Orbs=
+==='''Effect Orb Targets'''===
+*[[:Category:Red Enemies|Red]]
+*[[:Category:Dark Enemies|Dark]]
+*[[:Category:Floating Enemies|Floating]]
+*[[:Category:Metal Enemies|Metal]] (Defense Up only)
+*[[:Category:Angel Enemies|Angel]]
+*[[:Category:Alien Enemies|Alien]]
+*[[:Category:Zombie Enemies|Zombie]]
+*[[:Category:Relic Enemies|Relic]]
+*[[:Category:Aku Enemies|Aku]]
+
+==='''Effect Orb Types'''===
+*'''Attack Up''' (ダメージアップ, ''Damēji Appu''): Deals more damage to Target.
+*'''Defense Up''' (ダメージ軽減, ''Damēji Keigen''): Receives less damage from Target.
+*'''Strong Effect Up''' (めっぽう強い強化, ''Meppō Tsuyoi Kyōka''): Reduces damage taken from a trait, as well as increasing the damage multiplier from the Strong Against ability. Can only be equipped by [[:Category:Cats with Strong ability|units with Strong Against abilities]] targeting the same trait as the Orb.
+*'''Massive Damage Up''' (超ダメージ強化, ''Chō Damēji Kyōka''): Increases the damage multiplier from the Massive Damage ability. Can only be equipped by [[:Category:Cats with Massive Damage ability|units with Massive Damage abilities]] targeting the same trait as the Orb.
+*'''Tough Effect Up''' (打たれ強い強化, ''Utare Tsuyoi Kyōka''): Reduces damage taken from a trait. Can only be equipped by [[:Category:Cats with Resistant ability|units with Resistant abilities]] targeting the same trait as the Orb.
+
+'''''Note:''' Effect Orbs do not add a target trait to units with anti-trait abilities, but merely improve attack, defense or abilities against that target trait.''
+
+For example: If [[Sushi Cat (Super Rare Cat)|Roe Cat]] is given a '''Defense Up S: Floating''' Orb, it will take less damage from [[:Category:Floating Enemies|Floating]] attacks in comparison to non-[[:Category:Red Enemies|Red]] enemies. However, the Orb does not grant it the ability to actually target Floating, so it cannot Weaken them, nor is it able to tank Floating enemies as well as Reds. Conversely, as Curse does not disable Effect Orbs, it will still retain increased defense versus Floating, even if the ability to Resist/Weaken Reds is not available.
+
+==='''Details'''===
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="3" style="text-align:center" |Strong Effect Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+! scope="col" |Secondary Orb Effect
+|-
+|'''S'''
+|'''+0.3x attack multiplier'''
+|'''-10% damage taken'''
+|-
+|'''A'''
+|'''+0.24x attack multiplier'''
+|'''-8% damage taken'''
+|-
+|'''B'''
+|'''+0.18x attack multiplier'''
+|'''-6% damage taken'''
+|-
+|'''C'''
+|'''+0.12x attack multiplier'''
+|'''-4% damage taken'''
+|-
+|'''D'''
+|'''+0.06x attack multiplier'''
+|'''-2% damage taken'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Massive Damage Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''Attack multiplier +0.5x'''
+|-
+|-
+|'''A'''
+|'''Attack multiplier +0.4x'''
+|-
+|'''B'''
+|'''Attack multiplier +0.3x'''
+|-
+|'''C'''
+|'''Attack multiplier +0.2x'''
+|-
+|'''D'''
+|'''Attack multiplier +0.1x'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Tough Effect Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-25% damage taken'''
+|-
+|'''A'''
+|'''-20% damage taken'''
+|-
+|'''B'''
+|'''-15% damage taken'''
+|-
+|'''C'''
+|'''-10% damage taken'''
+|-
+|'''D'''
+|'''-5% damage taken'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Defense Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-20% damage taken'''
+|-
+|'''A'''
+|'''-16% damage taken'''
+|-
+|'''B'''
+|'''-12% damage taken'''
+|-
+|'''C'''
+|'''-8% damage taken'''
+|-
+|'''D'''
+|'''-4% damage taken'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Attack Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''+(5 x IS*) AP'''
+|-
+|'''A'''
+|'''+(4 x IS*) AP'''
+|-
+|'''B'''
+|'''+(3 x IS*) AP'''
+|-
+|'''C'''
+|'''+(2 x IS*) AP'''
+|-
+|'''D'''
+|'''+(1 x IS*) AP'''
+|-
+! colspan="5" scope="row" style="text-align: center;" |* IS = Initial Stat = Units' attack power <u>without</u> any [[Level-up|level upgrades]], [[Talents]] or [[Treasure]]s.<br>Attack Up Orbs' effects are <u>additive</u> and do <u>not</u> stack with any offensive [[Special Abilities|abilities]].
+|}
+
+|-|Ability Orbs=
+==='''Ability Orb Types'''===
+*'''Mini-Deathsurge''' (デス小烈波, ''Desu Shō Reppa''): Every second unit deployed has a 100% chance to create a Lv.1 [[Mini-Surge]] at 200~500 upon death. These are weaker than standard Mini-Surges, except in the case of S-Rank Orbs. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Resist Waves''' (波動ダメージ耐性, ''Hadō Damēji Taisei''): Reduces damage the unit receives from [[Wave Attack]]s. Becomes immunity with either two S-Rank Resist Waves Orbs or one S-Rank Resist Waves Orb and a level 10 Resist Wave [[Talents|Talent]].
+*'''Cash Back''' (キャッシュバック, ''Kyasshu Bakku''): Every second unit deployed refunds a % of their cost upon death. Becomes a full refund with two S-Rank Cash Back Orbs.
+*'''Resist Knockback''' (ふっとばし耐性, ''Futtobashi Taisei''): Reduces the distance the unit is pushed back by Knockback effects. Becomes immunity with either two S-Rank Resist Knockback Orbs or one S-Rank Resist Knockback Orb and a level 10 Resist Knockback Talent.
+*'''Boost Stories of Legend''' (レジェンドストーリー強化, ''Rejendo Sutōrī Kyōka''): Increases health and attack power in [[Stories of Legend]]. It has no effect in other stages such as [[Uncanny Legends]], [[Zero Legends]] or [[Event Stages]]. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Colossus Slayer''' (超生命体特効, ''Chō Seimeitai Tokkō''): Every second unit deployed has increased health and attack power against [[:Category:Colossus Enemies|Colossus Enemies]]. This does not stack with pre-existing Colossus Slayer abilities. When two of the orb are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Cat Cannon Charge''' (にゃんこ砲チャージ ''Nyanko-hō Chāji''): Every second unit deployed partially recharges the [[Cat Cannon]] upon death. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Resist Toxic''' (毒撃ダメージ耐性 ''Dokugeki Damēji Taisei''): Reduces damage received from Toxic attacks. Becomes immunity with either two S-Rank Resist Toxic Orbs or one S-Rank Resist Toxic Orb and a level 10 Resist Toxic [[Talents|Talent]].
+*'''Dodge Attack (All)''' (全攻撃無効 ''Zen Kōgeki Mukō''): Every second unit deployed has a chance to dodge attacks for 1 second. This works against all enemies, including non-standard types like [[:Category:Typeless Enemies|Typeless]], [[:Category:Witch Enemies|Witch]] and [[:Category:EVA Angel Enemies|EVA Angel]]. Units with pre-existing Dodge Attack abilities will have both theirs and the Orb's. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Resist Slow''' (動きを遅くする耐性 ''Ugoki o Osoku Suru Taisei''): Reduces the duration of slow effects. Can stack with another Resist Slow Orb or Resist Slow Talents to become immunity.
+*'''Resist Curse''' (古代の呪い耐性 ''Kodai no Noroi Taisei''): Reduces the duration of curse effects. Can stack with another Resist Curse Orb or Resist Curse Talents to become immunity.
+*'''Boost Uncanny Legends''' : Increases health and attack power in [[Uncanny Legends]]. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Single Surge Counter''' (１回烈波カウンター ''1-kai Reppa Kauntā''): Every second unit deployed will do a [[Counter-Surge]] the first time it is hit by a [[Surge Attack]]. The damage dealt by these Surges will be weaker than the user's base damage, with the exception of the S-rank version. Does not stack with pre-existing Counter-Surge abilities. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority. Will have no effect when equipped by [[:Category:Cats with Surge Immunity|Cats with Surge Immunity]].
+*'''Berserker''' (撃破時攻撃力アップ ''Gekiha-ji Kōgeki-ryoku Appu''): Increases attack power by a set % after defeating 10 enemies. Stacks multiplicatively with pre-existing Strengthen abilities. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Shortened Cooldown''' (生産時間短縮 ''Seisan Jikan Tanshuku''): Every second unit deployed starts their cooldown with a set % of their cooldown already completed. Does not stack with pre-existing Shortened Cooldown abilities. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Resist Freeze''' (動きを止める耐性 ''Ugoki o Tomeru Taisei''): Reduces the duration of freeze effects. Can stack with another Resist Freeze Orb or Resist Freeze Talents to become immunity.
+*'''Resist Weaken''' (攻撃力ダウン耐性 ''Kōgeki-ryoku Daun Taisei''): Reduces the duration of weaken effects. Can stack with another Resist Weaken Orb or Resist Weaken Talents to become immunity.
+*'''Cost Down''' (生産コスト割引 ''Seisan Kosuto Waribiki''): Every second unit deployed receives a set % discount to their cost.
+*'''Resist Surges''' (烈波ダメージ耐性 ''Reppa Damēji Taisei''): Reduces damage the unit receives from [[Surge Attack]]s. Becomes immunity with either two S-Rank Resist Surges Orbs or one S-Rank Resist Surges Orb and a level 10 Resist Surge Talent.
+*'''First Bounty Up''' (初回撃破時お金アップ ''Shokai Gekiha-ji Okane Appu''): Every second unit deployed gains a set % of extra money from their first kill (applies to all enemies killed by an Area Attack, but not [[Wave Attack|Waves]], [[Surge Attack|Surges]] or [[Explosion]]s). Stacks additively with the Money Up ability. When two are equipped by the same unit, only one will take effect; the higher-Ranked Orb has priority.
+*'''Resists Explosions''' (爆波ダメージ耐性 ''Bakuha Damēji Taisei''): Reduces damage the unit receives from [[Explosion]]s. Becomes immunity with two S-Rank Resists Explosions Orbs.
+
+==='''Details'''===
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Mini-Deathsurge
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''20% Mini-Deathsurge damage'''
+|-
+|'''A'''
+|'''14% Mini-Deathsurge damage'''
+|-
+|'''B'''
+|'''10% Mini-Deathsurge damage'''
+|-
+|'''C'''
+|'''6% Mini-Deathsurge damage'''
+|-
+|'''D'''
+|'''3% Mini-Deathsurge damage'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Waves
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% damage from Waves'''
+|-
+|'''A'''
+|'''-30% damage from Waves'''
+|-
+|'''B'''
+|'''-20% damage from Waves'''
+|-
+|'''C'''
+|'''-10% damage from Waves'''
+|-
+|'''D'''
+|'''-5% damage from Waves'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Cash Back
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''50% of cost refunded'''
+|-
+|'''A'''
+|'''30% of cost refunded'''
+|-
+|'''B'''
+|'''20% of cost refunded'''
+|-
+|'''C'''
+|'''10% of cost refunded'''
+|-
+|'''D'''
+|'''5% of cost refunded'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Knockback
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% distance knocked back'''
+|-
+|'''A'''
+|'''-30% distance knocked back'''
+|-
+|'''B'''
+|'''-20% distance knocked back'''
+|-
+|'''C'''
+|'''-10% distance knocked back'''
+|-
+|'''D'''
+|'''-5% distance knocked back'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Colossus Slayer
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''1.6x damage dealt and 0.7x damage taken vs. Colossus enemies'''
+|-
+|'''A'''
+|'''1.4x damage dealt and 0.8x damage taken Colossus enemies'''
+|-
+|'''B'''
+|'''1.25x damage dealt and 0.85x damage taken vs. Colossus enemies'''
+|-
+|'''C'''
+|'''1.10x damage dealt and 0.90x taken vs. Colossus enemies'''
+|-
+|'''D'''
+|'''1.05x damage dealt and 0.95x taken vs. Colossus enemies'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Boost Stories of Legend
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''+50% HP/AP in SoL'''
+|-
+|'''A'''
+|'''+30% HP/AP in SoL'''
+|-
+|'''B'''
+|'''+20% HP/AP in SoL'''
+|-
+|'''C'''
+|'''+10% HP/AP in SoL'''
+|-
+|'''D'''
+|'''+5% HP/AP in SoL'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Cat Cannon Charge
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''15f <sub>0.5 seconds</sub><br> of Cannon recharge skipped'''
+|-
+|'''A'''
+|'''10f <sub>0.33 seconds</sub><br> of Cannon recharge skipped'''
+|-
+|'''B'''
+|'''7f <sub>0.23 seconds</sub><br> of Cannon recharge skipped'''
+|-
+|'''C'''
+|'''5f <sub>0.17 seconds</sub><br> of Cannon recharge skipped'''
+|-
+|'''D'''
+|'''3f <sub>0.1 seconds</sub><br> of Cannon recharge skipped'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Toxic
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% damage from Toxic attacks'''
+|-
+|'''A'''
+|'''-30% damage from Toxic attacks'''
+|-
+|'''B'''
+|'''-20% damage from Toxic attacks'''
+|-
+|'''C'''
+|'''-10% damage from Toxic attacks'''
+|-
+|'''D'''
+|'''-5% damage from Toxic attacks'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Dodge Attack (All)
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''10% Dodge chance'''
+|-
+|'''A'''
+|'''7% Dodge chance'''
+|-
+|'''B'''
+|'''5% Dodge chance'''
+|-
+|'''C'''
+|'''3% Dodge chance'''
+|-
+|'''D'''
+|'''1% Dodge chance'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Slow
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% slow duration'''
+|-
+|'''A'''
+|'''-30% slow duration'''
+|-
+|'''B'''
+|'''-20% slow duration'''
+|-
+|'''C'''
+|'''-10% slow duration'''
+|-
+|'''D'''
+|'''-5% slow duration'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Curse
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% curse duration'''
+|-
+|'''A'''
+|'''-30% curse duration'''
+|-
+|'''B'''
+|'''-20% curse duration'''
+|-
+|'''C'''
+|'''-10% curse duration'''
+|-
+|'''D'''
+|'''-5% curse duration'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Boost Uncanny Legends
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''+50% HP/AP in UL'''
+|-
+|'''A'''
+|'''+30% HP/AP in UL'''
+|-
+|'''B'''
+|'''+20% HP/AP in UL'''
+|-
+|'''C'''
+|'''+10% HP/AP in UL'''
+|-
+|'''D'''
+|'''+5% HP/AP in UL'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Single Surge Counter
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''100% damage 1-time Counter-Surge'''
+|-
+|'''A'''
+|'''70% damage 1-time Counter-Surge'''
+|-
+|'''B'''
+|'''50% damage 1-time Counter-Surge'''
+|-
+|'''C'''
+|'''30% damage 1-time Counter-Surge'''
+|-
+|'''D'''
+|'''10% damage 1-time Counter-Surge'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Berserker
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''+20% AP after defeating 10 enemies'''
+|-
+|'''A'''
+|'''+14% AP after defeating 10 enemies'''
+|-
+|'''B'''
+|'''+10% AP after defeating 10 enemies'''
+|-
+|'''C'''
+|'''+6% AP after defeating 10 enemies'''
+|-
+|'''D'''
+|'''+3% AP after defeating 10 enemies'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Shortened Cooldown
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-15% recharge time'''
+|-
+|'''A'''
+|'''-10% recharge time'''
+|-
+|'''B'''
+|'''-7% recharge time'''
+|-
+|'''C'''
+|'''-4% recharge time'''
+|-
+|'''D'''
+|'''-2% recharge time'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Freeze
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% freeze duration'''
+|-
+|'''A'''
+|'''-30% freeze duration'''
+|-
+|'''B'''
+|'''-20% freeze duration'''
+|-
+|'''C'''
+|'''-10% freeze duration'''
+|-
+|'''D'''
+|'''-5% freeze duration'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Weaken
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% weaken duration'''
+|-
+|'''A'''
+|'''-30% weaken duration'''
+|-
+|'''B'''
+|'''-20% weaken duration'''
+|-
+|'''C'''
+|'''-10% weaken duration'''
+|-
+|'''D'''
+|'''-5% weaken duration'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Production Cost Down
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-30% production cost'''
+|-
+|'''A'''
+|'''-20% production cost'''
+|-
+|'''B'''
+|'''-15% production cost'''
+|-
+|'''C'''
+|'''-10% production cost'''
+|-
+|'''D'''
+|'''-5% production cost'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resist Surge
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% damage from Surges'''
+|-
+|'''A'''
+|'''-30% damage from Surges'''
+|-
+|'''B'''
+|'''-20% damage from Surges'''
+|-
+|'''C'''
+|'''-10% damage from Surges'''
+|-
+|'''D'''
+|'''-5% damage from Surges'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |First Bounty Up
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''+40% money from first kill'''
+|-
+|'''A'''
+|'''+25% money from first kill'''
+|-
+|'''B'''
+|'''+15% money from first kill'''
+|-
+|'''C'''
+|'''+10% money from first kill'''
+|-
+|'''D'''
+|'''+5% money from first kill'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! scope="col" colspan="2" style="text-align:center" |Resists Explosions
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''-50% damage from Explosions'''
+|-
+|'''A'''
+|'''-30% damage from Explosions'''
+|-
+|'''B'''
+|'''-20% damage from Explosions'''
+|-
+|'''C'''
+|'''-10% damage from Explosions'''
+|-
+|'''D'''
+|'''-5% damage from Explosions'''
+|}
+</tabber>
+
+==Obtaining==
+==='''Effect Orb Stages'''===
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="4" style="text-align:center;" | '''Stages with Effect Orbs'''
+|-
+! scope="col" | Type
+! scope="col" | Enigma Stages
+! scope="col" | Island of Hidden Treasure
+! scope="col" | Gauntlet Continuation Stages
+|-
+! scope="row" | '''Red'''
+|[[Cradle Shrine (Deadly)/Red|Red Cradle]], [[Summit Shrine (Merciless)/Red|Red Summit]], [[Frontier Shrine (Merciless)/Red|Red Frontier]]
+|[[Crimson Dawn]], [[Crimson Apex]], [[Crimson Refuge]]
+|[[Baron Seal Strikes]]: [[Baron Seal Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Baron Seal Strikes/Summit Wilderness (Merciless)|Summit Wilderness]], [[Baron Seal Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Floating'''
+|[[Cradle Shrine (Deadly)/Floating|Sky Cradle]], [[Summit Shrine (Merciless)/Floating|Sky Summit]], [[Frontier Shrine (Merciless)/Floating|Sky Frontier]]
+|[[Cheerful Dawn]], [[Cheerful Apex]], [[Cheerful Refuge]]
+|[[Mega Menace]]: [[Mega Menace/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Mega Menace/Summit Wilderness (Merciless)|Summit Wilderness]], [[Mega Menace/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Dark'''
+|[[Cradle Shrine (Deadly)/Dark|Dark Cradle]], [[Summit Shrine (Merciless)/Dark|Dark Summit]], [[Frontier Shrine (Merciless)/Dark|Dark Frontier]]
+|[[Ebony Dawn]], [[Ebony Apex]], [[Ebony Refuge]]
+|[[Le'Grim Strikes]]: [[Le'Grim Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Le'Grim Strikes/Summit Wilderness (Merciless)|Summit Wilderness]], [[Le'Grim Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Metal'''
+|[[Cradle Shrine (Deadly)/Metal|Steel Cradle]], [[Summit Shrine (Merciless)/Metal|Steel Summit]], [[Frontier Shrine (Merciless)/Metal|Steel Frontier]]
+|[[Adamantine Dawn]], [[Adamantine Apex]], [[Adamantine Refuge]]
+|N/A
+|-
+! scope="row" | '''Angel'''
+|[[Cradle Shrine (Deadly)/Angel|Holy Cradle]], [[Summit Shrine (Merciless)/Angel|Holy Summit]], [[Frontier Shrine (Merciless)/Angel|Holy Frontier]]
+|[[Holy Dawn]], [[Holy Apex]], [[Holy Refuge]]
+|[[Divine Archangel Strikes]]: [[Divine Archangel Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Divine Archangel Strikes/Summit Wilderness (Merciless)|Summit Wilderness]], [[Divine Archangel Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Alien'''
+|[[Cradle Shrine (Deadly)/Alien|Cosmic Cradle]], [[Summit Shrine (Merciless)/Alien|Cosmic Summit]], [[Frontier Shrine (Merciless)/Alien|Cosmic Frontier]]
+|[[Azure Dawn]], [[Azure Apex]], [[Azure Refuge]]
+|[[Horrorpotamus]]: [[Horrorpotamus/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Horrorpotamus/Summit Wilderness (Merciless)|Summit Wilderness]], [[Horrorpotamus/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Zombie'''
+|[[Cradle Shrine (Deadly)/Zombie|Necro Cradle]], [[Summit Shrine (Merciless)/Zombie|Necro Summit]], [[Frontier Shrine (Merciless)/Zombie|Necro Frontier]]
+|[[Rotten Dawn]], [[Rotten Apex]], [[Rotten Refuge]]
+|[[Big Peng Z Strikes]]: [[Big Peng Z Strikes/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Big Peng Z Strikes/Summit Wilderness (Merciless)|Summit Wilderness]], [[Big Peng Z Strikes/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Relic'''
+|[[Cradle Shrine (Deadly)/Relic|Relic Cradle]], [[Summit Shrine (Merciless)/Relic|Relic Summit]], [[Frontier Shrine (Merciless)/Relic|Relic Frontier]]
+|N/A
+|[[Gigahaniwan Strikes!]]: [[Gigahaniwan Strikes!/Cradle Wilderness|Cradle Wilderness]], [[Gigahaniwan Strikes!/Summit Wilderness (Merciless)|Summit Wilderness]], [[Gigahaniwan Strikes!/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|-
+! scope="row" | '''Aku'''
+|[[Cradle Shrine (Deadly)/Aku|Bad Instinct's Origin]], [[Summit Shrine (Merciless)/Aku|Bad Instinct's Apex]], [[Frontier Shrine (Merciless)/Aku|Bad Instinct's Refuge]]
+|N/A
+|[[Attack of the Omens]]: [[Attack of the Omens/Cradle Wilderness (Deadly)|Cradle Wilderness]], [[Attack of the Omens/Summit Wilderness (Merciless)|Summit Wilderness]], [[Attack of the Omens/Frontier Wilderness (Merciless)|Frontier Wilderness]]
+|}
+
+==='''Drop Rates'''===
+===='''Probability of each Level of Orb from Orb Enigma Stages'''====
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="6" style="text-align:center;" | '''Non-Relic/Aku Orb Enigmas & Island of Hidden Treasure'''
+|-
+! scope="col" | Area
+! scope="col" | Special Effect Orb D
+! scope="col" | Stat Orb D
+! scope="col" | Stat Orb C
+! scope="col" | Stat Orb B
+! scope="col" | Stat Orb A
+|-
+|'''Cradle/Dawn'''
+|'''3%'''
+|'''82%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|-
+|'''Summit/Apex'''
+|'''4.5%'''
+|'''75.5%'''
+|'''17%'''
+|'''3%'''
+|'''-'''
+|-
+|'''Frontier/Refuge'''
+|'''6%'''
+|'''65%'''
+|'''22%'''
+|'''7%'''
+|'''-'''
+|}
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="9" style="text-align:center;" | '''Relic/Aku Orb Enigmas & Gauntlet Continuation Stages'''
+|-
+! scope="col" | Area
+! scope="col" | Special Effect Orb D
+! scope="col" | Special Effect Orb C
+! scope="col" | Special Effect Orb B
+! scope="col" | Special Effect Orb A
+! scope="col" | Stat Orb D
+! scope="col" | Stat Orb C
+! scope="col" | Stat Orb B
+! scope="col" | Stat Orb A
+|-
+|'''Cradle'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|'''-'''
+|'''-'''
+|-
+|'''Summit'''
+|'''-'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|'''-'''
+|-
+|'''Frontier'''
+|'''-'''
+|'''-'''
+|'''60%'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|'''20%'''
+|'''5%'''
+|}
+:''Special Effect Orbs are Strong Effect, Massive Damage, and Tough Effect Orbs. Stat Orbs are Attack Up and Defense Up Orbs.''
+
+===[[Gauntlet]] [[Continuation Stage]] Appearance Rates===
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1" style="width: 100%;"
+! colspan="4" style="text-align:center;" | '''Appearance %age of Continuation Stage'''
+|-
+!Gauntlet Stage
+!Cradle Wilderness
+!Summit Wilderness
+!Frontier Wilderness
+|-
+|'''Lv.1'''
+|'''1%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.2'''
+|'''3%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.3'''
+|'''7%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.4'''
+|'''11%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.5'''
+|'''15%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.6'''
+|'''18%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.7'''
+|'''21%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.8'''
+|'''24%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.9'''
+|'''27%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.10'''
+|'''30%'''
+|'''-'''
+|'''-'''
+|-
+|'''Lv.11'''
+|'''34%'''
+|'''1%'''
+|'''-'''
+|-
+|'''Lv.12'''
+|'''36%'''
+|'''2%'''
+|'''-'''
+|-
+|'''Lv.13'''
+|'''40%'''
+|'''3%'''
+|'''-'''
+|-
+|'''Lv.14'''
+|'''46%'''
+|'''5%'''
+|'''-'''
+|-
+|'''Lv.15'''
+|'''50%'''
+|'''10%'''
+|'''-'''
+|-
+|'''Lv.16'''
+|'''78%'''
+|'''21%'''
+|'''1%'''
+|-
+|'''Lv.17'''
+|'''77%'''
+|'''21%'''
+|'''2%'''
+|-
+|'''Lv.18'''
+|'''72%'''
+|'''25%'''
+|'''3%'''
+|-
+|'''Lv.19'''
+|'''69%'''
+|'''26%'''
+|'''5%'''
+|-
+|'''Lv.20'''
+|'''59%'''
+|'''31%'''
+|'''10%'''
+|}
+
+==='''Treasure Chests'''===
+Treasure Chests are currently the only way to obtain Ability Orbs and are awarded at the end of the [[Catclaw Dojo]]'s [[Arena of Destiny]] events. Chests appear in the Talent Orb Storage and come in 3 rarities: Bronze, Silver and Gold. Bronze Chests drop D-rank Ability Orbs, Silver Chests drop C-rank Ability Orbs and Gold Chests drop B-rank Ability Orbs. All Ability Orbs have an equal chance of being received from a Treasure Chest, and the resulting Orb can be rerolled for 30 [[Cat Food]], which will also remove the rerolled Orb from the Chest's pool of options. Treasure Chests will only drop 6 Orbs, with the types of available Orbs being dependent on which Arena of Destiny Dojo the chest was obtained from.
+
+{| class="article-table mw-collapsible mw-collapsed" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+! colspan="10" scope="col" style="text-align:center" |Treasure Chest drops by Arena
+|-
+! scope="col" |[[Arena of Destiny/Talent Tournament|Weaken]] #1
+! scope="col" |[[Arena of Destiny/Talent for Battle (Knockback)|Knockback]] #1
+! scope="col" |[[Arena of Destiny/Talent for Battle (Strong)|Strong Vs.]] #1
+! scope="col" |[[Arena of Destiny/Talent for Battle (Freeze)|Freeze]]
+! scope="col" |[[Arena of Destiny/Talent for Battle (Massive Damage)|Massive Damage]] #1
+! scope="col" |[[Arena of Destiny/Talent for Battle (Slow)|Slow]]
+! scope="col" |[[Arena of Destiny/Talent for Battle (Knockback 2)|Knockback]] #2
+! scope="col" |[[Arena of Destiny/Talent Tournament (Weaken)|Weaken]] #2
+! scope="col" |[[Arena of Destiny/Talent Tournament (Strong 2)|Strong Vs.]] #2
+! scope="col" |[[Arena of Destiny/Talent Tournament (Massive Damage 2)|Massive Damage]] #2
+|-
+|Mini-Deathsurge
+|Resist Slow
+|Single Surge Counter
+|Resist Surge
+|First Bounty Up
+|Resists Explosions
+|Mini-Deathsurge
+|Cat Cannon Charge
+|Single Surge Counter
+|Resist Surge
+|-
+|Resist Waves
+|Resist Toxic
+|Berserker
+|Production Cost Down
+|Cash Back
+|Dodge Attack (All)
+|Shortened Cooldown
+|Resist Waves
+|Cash Back
+|Berserker
+|-
+|Cash Back
+|Resist Curse
+|Shortened Cooldown
+|Resist Waves
+|Resist Toxic
+|Berserker
+|Production Cost Down
+|Resist Toxic
+|Dodge Attack (All)
+|Production Cost Down
+|-
+|Resist Knockback
+|Dodge Attack (All)
+|Resist Freeze
+|Boost Stories of Legend
+|Boost Uncanny Legends
+|Resist Freeze
+|Colossus Slayer
+|Boost Uncanny Legends
+|Resist Knockback
+|Colossus Slayer
+|-
+|Boost Stories of Legend
+|Cat Cannon Charge
+|Resist Weaken
+|Colossus Slayer
+|Boost Stories of Legend
+|Resist Knockback
+|Resist Slow
+|Resist Weaken
+|Boost Stories of Legend
+|Resist Curse
+|-
+|Colossus Slayer
+|Boost Uncanny Legends
+|Resist Knockback
+|Resist Slow
+|Resist Weaken
+|Boost Stories of Legend
+|Resist Curse
+|Resist Freeze
+|Resist Slow
+|Boost Uncanny Legends
+|}
+
+==Notes==
+==='''General'''===
+*Just like Talents and Ultra Talents, Talent Orbs only take effect for a unit's True/Ultra Form.
+*Talent Orbs are not nullified by the Curse effect nor the [[Aku Altar (Enemy Base)|Aku Altar]], except for Strong/Massive Damage/Tough Effect, which will be nullified by Curse as they are tied to the abilities themselves.
+*When farming Orbs for NP, it is generally recommended to merge anything that isn't Rank D all the way up to S, as the resultant merged Orb either has the same total value of its constituents or could be sold for more. Rank D Orbs are the only exception and should be sold immediately, since a Rank C Orb still sells for the same 1 NP. To put this into perspective, a Rank S Orb has a sell value 25 NP and requires a total of either 18 Rank C Orbs or 36 Rank D Orbs, meaning merging Rank D Orbs will result in a massive loss of 11 NP.
+
+==='''Effect Orbs'''===
+*Defense Up and Tough Effect Up Orbs both reduce the amount of incoming damage taken according to the formula '''(100 - DT)%'''. The -damage taken bonuses stack additively with the same type of orb but multiplicatively across types. For S-Rank Orbs, as an example, two Defense Up Orbs give -40% damage taken and two Tough Effect Orbs give -50% damage taken, but a Defense Up and a Tough Effect Orb reduce incoming damage to (80% * 75%)x, which is effectively -40% damage taken (much like two Defense Up Orbs). The effect is also multiplicative with the Tough ability itself. (on Fruited traits, the -25% damage taken from an S-Rank Tough Effect Orb decreases incoming damage from 0.2x to 0.15x).
+*The +attack multiplier from Massive Damage Up Orbs works by adding a flat bonus to the base Massive Damage multiplier. To calculate a unit's final damage accounting for Talent Orbs, the formula is '''(3 + AM)x''' without [[Fruit Treasures]], and it becomes '''(4 + AM)x''' with maxed Fruit Treasures. The multiplier bonus is so potent that even B-Rank Massive Damage Up Orbs are inherently more effective than S-Rank Attack Up Orbs at level 30, when both options are available. Furthermore, unlike Attack Up Orbs, the +attack multiplier scales with levels; at level 47, C-Rank Massive Damage Up Orbs also surpass S-Rank Attack Up Orbs.
+**Strong Effect Up Orbs' +attack multiplier adds to the Strong Effect in a manner similar to Massive Damage Up Orbs—an S-Rank Strong Effect Orb takes a trait's Strong Effect attack multiplier of either 1.5x/1.8x and adds +.3 to it. The -damage taken from Strong Effect Orbs follows a manner similar to how Defense Up and Tough Effect Up Orbs work, being multiplicative with other -damage taken bonuses, including Defense Up Orbs and the damage reduction of the Strong Effect itself. (on Fruited traits, the -10% damage taken from an S-Rank Strong Effect Orb decreases incoming damage from 0.4x to 0.36x).
+*To determine how much damage an Attack Up Orb will add to a given unit, go to the unit's article on this wiki, scroll down to "Stats", click "Detailed", click the "OFF" button next to "Stats Modifier", set Attack Treasure to 0, set the True Form/Ultra Form unit's level to 1+0, and multiply the attack stat displayed by 1 to 10 depending on the Orb's Rank in addition to how many are equipped.
+*The bonus damage from Attack Up Orbs is a flat increase completely unaffected by all damage multipliers, including Weaken and even the 80% damage reduction applied to [[Mini-Wave]]s and [[Mini-Surge]]s. Technically, this means units with multi-level Mini-Surges (e.g., [[Talents|Talented]] [[Mola King (Uber Rare Cat)|Master of the Pacific]], Ultra Talented [[Coppermine (Uber Rare Cat)|Divine Coppermine κ]]) as well as units with Explosions (e.g., [[Narita Kaihime (Uber Rare Cat)|Cleansing Flame Kaihime]], [[Bahamut Cat (Special Cat)|Talented Awakened Bahamut]]) can reap more benefit from Attack Up Talent Orbs than any other unit.
+*For [[:Category:Multi-Hit Cats|multi-hit attackers]], the bonus damage from Attack Up Orbs is divided using the same formula as the multi-hit. For example, [[Nobiluga (Uber Rare Cat)|Mystican Pasalan]] has an initial attack stat of 2,400, with a multi-hit attack that deals 50% damage on the first hit and 50% on the second hit; the result is that an Attack Up S Orb (initial attack stat x5) would add 6,000 damage to the first hit and 6,000 to the second hit for a total of 12,000 extra damage.
+*Since Attack Up Orbs' buff doesn't scale with level, it effectively gives diminishing returns as its user is upgraded (e.g., a level 31 unit receives ''proportionally'' less benefit than one at level 30). This goes even more so for units reliant on damage-boosting abilities such as Strengthen or Massive Damage.
+*Purchasable [[:Category:Special Cats|Special Cats]] and [[:Category:Li'l Cats|Li'l Cats]] have very low initial stats, meaning  most of them gain only a minuscule amount of extra damage from Attack Up Orbs, especially those of lower Ranks.
+*Strong/Massive Damage/Tough Orbs can only be used to improve the abilities of units against their existing targets. For example, [[Dom Cat (Special Cat)|Dark Lazer]] can be given a Strong Effect Up: [[:Category:Red Enemies|Red]] or [[:Category:Dark Enemies|Dark]] Orb to make her pre-existing Strong Against Red/Dark ability even more effective, but she can't equip Strong Effect Up Orbs of other traits such as [[:Category:Floating Enemies|Floating]] or [[:Category:Angel Enemies|Angel]].
+*Massive Damage Up Orbs cannot be given to [[:Category:Cats with Insane Damage ability|units with Insane Damage]], and Tough Effect Up Orbs cannot be given to [[:Category:Cats with Insanely Tough ability|units with Insanely Tough]].
+**Similarly, a unit with Insane Damage/Insanely Tough that gains it through Ultra Form will not gain any effect from a Massive Damage or Tough Orb equipped in its previous form in which said orb was compatible.
+
+==='''Ability Orbs'''===
+*Every other time a unit with an Orb that only activates on every second deployment finishes recharging, its icon will briefly flash and the Orb will appear on the upper-left corner of its icon, indicating that the next copy of the unit will have the Orb's effect.
+*A Mini-Deathsurge will carry over any abilities that the Cat who created it had, including but not limited to [[Critical Hit]], [[Strengthen]] and [[Metal Killer]].
+**Metal Killer will not receive the damage reduction normally applied to a Mini-Surge because it deals damage based on a percentage of the enemy's current health.
+*Resist X Orbs stack additively with each other and their Talent counterparts, making it more effective to equip these Orbs on units with an existing Resist Talent of that type to make it a full immunity. For Wave/Surge/KB/Toxic, you need a S-Rank Orb for full immunity, and for every other effect you only need an A-Rank orb for full immunity.
+**[[Urashima Taro (Uber Rare Cat)|King Gamereon]] is the only unit with a 70% Resist Knockback Talent, meaning he only needs an A-Rank Resist Knockback Orb in order to have full immunity to knockback. Likewise, [[Wushu Cat (Rare Cat)|Shigong Cat]] is the only unit with a 50% Resist Freeze Talent, meaning he needs an S-Rank Resist Freeze Orb to have full immunity.
+**Note that Sage Slayer stacks multiplicatively with the Resist X abilities rather than additively, meaning Sage Slayer combined with an Orb won't give immunity to [[:Category:Sage Enemies|Sages]]' debuffs.
+*Boost Stories of Legend and Boost Uncanny Legends Orbs stack additively with a unit's existing Defense/Attack Buff Talents rather than multiplicatively, giving slightly diminishing returns on units with stat talents.
+*Though the Shortened Cooldown Orb only affects every other unit, the reduced cooldown is applied to the cooldown of even-numbered spawns, making the unit's very first cooldown of the battle affected by the Orb.
+*The Berserker Orb is unaffected by the boost that Strengthen [[Cat Combo]]s such as [[Macho Man (Combo)|Macho Man]] provide.
+
+{{Gallery|Orbs Icon}}
+
+==Trivia==
+*The faintly visible flame symbol on Talent Orbs may be a reference to how 本能 ''Hon'nō'' (Instinct, the Japanese name of [[Talents]]) sounds similar to 炎 ''honoo'' (flame).
+*Though having basic sprites in the game's files since [[Version 9.7 Update|Version 9.7]], [[:Category:Traitless Enemies|Traitless]] Talent Orbs are unused and can't be obtained through normal means.
+**[[:Category:Relic Enemies|Relic]] Talent Orbs were also present in the files as early as Version 9.7, but were unimplemented until [[Version 13.3 Update|Version 13.3]].
+*Prior to [[Version 9.8 Update|Version 9.8]], only a few of the units with Talents could have Orbs given to them. The reason for this is unknown, as there was no clear criteria for who could and who couldn't. The specific units included:
+**'''[[:Category:Rare Cats|Rare]]''': [[Wheel Cat (Rare Cat)|Chill Cat]], [[Jurassic Cat (Rare Cat)|Catasaurus]], [[Thief Cat (Rare Cat)|Goemon Cat]], [[Fortune Teller Cat (Rare Cat)|Doctor Cat]], [[Witch Cat (Rare Cat)|Enchantress Cat]], [[Swordsman Cat (Rare Cat)|Elemental Duelist Cat]], [[Cat Gunslinger (Rare Cat)|Rodeo Cat]]
+**'''[[:Category:Super Rare Cats|Super Rare]]''': [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]], [[Sushi Cat (Super Rare Cat)|Roe Cat]], [[Swimmer Cat (Super Rare Cat)|Fishman Cat]], [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]], [[Bodhisattva Cat (Super Rare Cat)|Tathagata Cat]], [[Cat Toaster (Super Rare Cat)|Catophone]]
+**'''[[:Category:Uber Rare Cats|Uber Rare]]''': [[Ice Cat (Uber Rare Cat)|Ice Crystal Cat]], [[Oda Nobunaga (Uber Rare Cat)|Immortal Nobunaga]], [[Takeda Shingen (Uber Rare Cat)|Immortal Shingen]], [[Windy (Uber Rare Cat)|Divine Windy α]], [[Thundia (Uber Rare Cat)|Divine Thundia β]], [[Megidora (Uber Rare Cat)|God-Emperor Megidora]], [[Sodom (Uber Rare Cat)|God-Emperor Sodom]], [[Princess Kaguya (Uber Rare Cat)|The Chaos Moon]]
+*Prior to [[Version 11.4 Update|Version 11.4]], the Talent Orb Storage had the same interface as the Cat Storage and could only hold up to 128 Orbs at a time.
+*Prior to [[Version 14.3 Update|Version 14.3]], only a few of the units with Ultra Talents could NOT have a second Orb given to them. The specific units included:
+**[[Ice Cat (Uber Rare Cat)|Ice Crystal Cat]], [[Megidora (Uber Rare Cat)|God-Emperor Megidora]], [[Raiden (Uber Rare Cat)|God-Emperor Raiden]], [[Mekako Saionji (Uber Rare Cat)|Mission Control Mekako]], [[Warlock and Pierre (Uber Rare Cat)|Mad Doctor Klay]], [[Thunder God Zeus (Uber Rare Cat)|Almighty Zeus]] and [[Sea Maiden Ruri (Uber Rare Cat)|Mer-Queen Ruri]].
+*The filter's descriptions for Resist Slow and Resist Curse Orbs say, "Reduces damage from enemy Slow/Curse attacks," even though these effects don't cause damage. This may be a result of copying and pasting the Resist Toxic Orb's description without changing the word "damage".
+*Resists Explosions' name is inconsistent with the other Resist Orbs/abilities, being the only one spelled as "Resists".
+
+==See Also==
+*[[Talents]]: A similar feature also unlocked by clearing [[Into the Future]] Chapter 3.
+
+{{BC Navigation}}
+[[Category:Game Features]]

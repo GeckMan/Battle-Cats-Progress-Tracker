@@ -1,0 +1,83 @@
+{{DISPLAYTITLE:Round 2}}
+{{EnemiesAppearing|Croconator|Zroco|Metal Doge|Zoge|Metal One Horn|Zang Roo|Sir Metal Seal|Zir Zeal}}
+'''Round 2''' is the second stage in [[Otherworld Colosseum#Plus One: Special|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 01 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Croconator|100%
+|Zroco|300%
+|Metal Doge|300%
+|Zoge|300%
+|Metal One Horn|300%
+|Zang Roo|300%
+|Sir Metal Seal|300%
+|Zir Zeal|300%}}
+|boss = {{Magnification|Sir Metal Seal|300%}}
+|enemies2 = {{Magnification|Croconator|120%
+|Zroco|360%
+|Metal Doge|360%
+|Zoge|360%
+|Metal One Horn|360%
+|Zang Roo|360%
+|Sir Metal Seal|360%
+|Zir Zeal|360%}}
+|boss2 = {{Magnification|Sir Metal Seal|360%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,800
+|max enemies = 20
+|jpname = Round 2
+|script = Round 2
+|romaji = Round 2
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Plus One: Special|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = [[Round 1 (Plus One: Special)|Round 1]]
+|next stage = [[Round 3 (Plus One: Special)|Round 3]]
+}}
+
+==Rules==
+{{ColosseumRule|Plus One: Special}}
+
+==Battleground==
+*The enemy base is protected by a [[Base Barrier]] until the boss is defeated.
+*Infinite [[Croconator]]s spawn after 3.33 seconds<sup>100f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*Infinite [[Croconator]]s spawn after 5 seconds<sup>150f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*Infinite [[Zroco]]s spawn after 6.67 seconds<sup>200f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*9 [[Metal Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*7 [[Zoge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*4 [[Metal One Horn]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*3 [[Zang Roo]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+*1 [[Sir Metal Seal]] spawns after 100 seconds<sup>3,000f</sup>.
+*2 [[Zir Zeal]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*1 [[Sir Metal Seal]] spawns as the boss after 60 seconds<sup>1,800f</sup>.
+
+==Strategy==
+This is a fairly simple Metal/Zombie stage, with the main enemies to watch out for being the Sir Metal Seal, Zang Roo and Zir Zeal. With all the threatening enemies buffed to 300%, players should ideally take out the Sir Metal Seals and Zang Roos as soon as possible. Apart from powerful Anti-Zombies, many Critical units must be included to maximize consistency when up against the Metals and eat through them before the Zombies catch up. A high-leveled Holy Blast will also ease the stage significantly.
+
+It is theoretically possible to rush the stage with help from Awakened Bahamut, though this is far from consistent, primarily due to its reliance on quickly defeating the first Sir Metal Seal (which is required to eliminate the Base Barrier) and using DPS units to whittle down the base before the second appears.
+
+===Recommended Units===
+*[[Hoop Cat (Rare Cat)|Hoopmaster]] - With a very good 40% chance to Freeze Metals for 4 seconds, Hoopmaster is a staple anti-Metal CC unit in spite of having Single Attacks. As long as the Zombies are dealt with, Hoopmaster can potentially pin Sir Metal Seal in place as other critical units whittle away at his health.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] - With high speed and extreme DPS at melee range, Awakaned Bahamut is crucial when it comes to nuking the nasty Zombies if other units just wouldn't cut it, especially with his Explosion talent maxed, which enables him to do so even if they are hiding behind the Metals. As mentioned before, he can potentially even rush this stage if supported properly due to being a Special Unit, thus benefitting from the Colosseum Rule which spawns two copies for each deployment.
+*[[Crazed Moneko (Special Cat)|Corrupted Moneko]] - A Special Unit with 100% Chance to Crit on her third hit at midrange, Corrupted Moneko should be included here without question, as her overall faster attack cycle means more hits on Sir Metal Seal, and she benefits from the Colosseum Rule greatly due to her long recharge time. She also happens to provide the [[Miracle Performance (Combo)|Miracle Performance]] Combo (+2% Critical Chance for all units capable of landing one) when brought with [[Moneko (Special Cat)|Moneko]], which can potentially score enough additional crits to win the stage.
+*[[Cheerleader Cat (Super Rare Cat)|Soba]] - Soba's powerful 100% Critical Hits are dragged down by her atrociously long attack cycle of 20 seconds (far longer than Crazed Moneko's 6.03s), but the sheer durability of Sir Metal Seals definitely warrant her presence, with each  successful crit removing large chunks of their health.
+*[[Catornado (Super Rare Cat)|Catyphoon]] - With rapid area attacks, Catyphoon can absolutely decimate the Metal Doges and Croconators, clearing the way for other critical units in spite of his low 5% critical chance.
+*[[Ancient Egg: N107 (Rare Cat)|Cat Chief]] - With Massive Damage against Zombies, Zombie Killer, 30% chance of level 3 Mini-Waves and Soulstrike, Cat Chief demolishes Zombies in close quarters. Admittedly 200 range combined with its long foreswing means it isn't reliable alone, but it is still enough to outrange the Zombie threats, and with some other unit holding the front, it can possibly finish them for good one way or the other.
+*[[Consultant Cat (Special Cat)|Consultant]] - Despite his short range, inconsistent Slow (30% chance for 2 seconds) versus Metals and Single Attack, Consultant nonetheless is one of the few accessible units with Metal Killer, in this case removing 10% of a Metal's current health on hit. While he can't expect to kill Metals off on his own (rendering his Extra Money ability moot), a few successful attacks can shave off quite a bit of Sir Metal Seal's health and ease the pressure on other anti-Metals.
+*[[Master of Life Dr. Nova (Special Cat)|Dr. Nova]] - With the ability to target Metals and being a Special Cat, Dr. Nova trivialises this stage by slowing all enemy units with the second one covering her downtime.
+
+===Recommended Ubers===
+*[[Wrathful Poseidon (Uber Rare Cat)|Poseidon]] - A fast midrange rusher with a 3.33-second Anti-Metal/Zombie at 100% chance, Poseidon works well in this stage as every threat is within his targeted traits, and he has the range to safely engage them, with Zombie Killer to help finish Zombies should he land the last hit. His uptime isn't the best, and he obviously can't crit, though the extra time brought by his Freeze can provide a larger window of opportunity.
+
+==Reference==
+*https://battlecats-db.com/stage/s36012-02.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]
+[[Category:Stages with Base Barriers]]

@@ -1,0 +1,100 @@
+:''This article is about the enemy. For the Cat Unit, see [[Idi:N (Special Cat)]].''
+:''For the form that appears in the [[Eldritch Forces/Invasion|Eldritch Forces Invasion]], see [[Idi:Re]].''
+'''Idi:Ne''' (イディ:Ne, ''Idi:Ne'') is a [[:Category:Relic Enemies|Relic]] enemy found in the [[The Face of God/Invasion|The Face of God Invasion]] which appears in after clearing [[Eldritch Forces/Invasion|Eldritch Forces Invasion]] and all [[Uncanny Legends]] sub-chapters on 1-Crown difficulty. After completing the stage, [[Idi:N (Special Cat)|Idi:N]]'s [[True Form]] can be unlocked. She was added in [[Version 13.7 Update|Version 13.7]].
+
+{{Enemy Info
+|name = Idi:Ne
+|image = E 700.png
+|first appearance = '''UL:''' [[The Face of God/Invasion|Sub-chapter 36 - The Face of God Invasion]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+Compared to [[Idi:Re]], this enemy is immune to [[Wave Attack|Waves]] and [[Surge Attack|Surges]], but is otherwise much weaker, with only 1/6 as much health, 1/2 the attack power, fewer knockbacks and no Strengthen ability. However, in her only appearance, she is spammed, creating essentially an army of up to 27 Idi:Nes. Thankfully, the enemy limit in her stage is only 10, so you don't have to fight all of them at once.
+
+The Face of God Invasion also has a [[Base Barrier]] which renders the enemy base invulnerable until the boss is defeated, but the boss just so happens to be the first Idi:Ne in the stage, making it possible to rush her and the base down before the bulk of her copies approach.
+
+==Strategy==
+:''See [[The Face of God/Invasion]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 700
+|Type = [[:Category:Relic Enemies|Relic]]
+|Image1 = Enemy icon 700.png
+|Name1 = Idi:Ne
+|Desc1 = Specimen No. ???. Status: Unstable microbes<br>detected. Battle energy: Incalculable.<br>Reproduces by saving and spreading seeds.<br>The ultimate lifeform is almost upon us.
+|Name1 (JP) = イディ:Ne (Idi:Ne)
+|Desc1 (JP) = 検体No.???　状態：不安定　古ノ微生物検出<br>戦闘エネルギー値：計測不能<br>種ノ保存ヲ優先ニ増殖スル特性アリ<br>主ノ悲願タル完全生命ノ誕生ハ近イ
+|Transl1 (JP) = Specimen No.???  Condition: Unstable  Paleobacteria detected<br>Combat energy: Immeasurable<br>Has the characteristic of multiplying, with a priority of preserving the species<br>The birth of perfect life, the master's earnest wish, is near
+|Name1 (TW) = 異弟:Ne
+|Desc1 (TW) = 檢體No.???　狀態：不穩定　古微生物檢出<br>戰鬥能量值：無法計測<br>有優先保存種族並使其繁衍的特性，<br>主人期望許久的完美生命體即將誕生。
+|Name1 (KR) = 이디:Ne
+|Desc1 (KR) = 검체No.???, 상태: 불안정, 고대 미생물 검출<br>전투 에너지: 계측 불가<br>종의 보존을 우선하여 증식하는 특성 있음.<br>그분께서 원하시는 완전 생명체의 탄생이 임박했다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 36-IN: [[The Face of God/Invasion|The Face of God Invasion]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Idi:Ne
+|Health = 555555
+|Attack Power = 50000
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 141
+|Movement Speed = 44
+|Knockback = 20
+|Foreswing = 4
+|Backswing = 137
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~300)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 600f <sub>20 seconds</sub><br>
+{{AbilityIcon|Immune to Waves|Immune to Surge}} [[Immune to Waves]] and [[Immune to Surge|Surge]]
+|Element = Relic
+}}
+
+{{UnitViewer|enemy|bg=Bg228.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+700 e.png|Idi:Ne's spritesheet
+</gallery>
+
+==Trivia==
+*The name Idi may be derived from ''ID'', ''[[wikipedia:Id, ego and superego|id]]'', ''[[wikipedia:Eden|Eden]]'', 遺伝 ''iden'' (genetic heredity), アイディア ''aidia'' (idea), アイディアル ''aidiaru'' (ideal), or アイディリック ''aidirikku'' (idyllic).
+*"Ne" may be derived from 根 ''ne'' (a plant's root; the root of or cause or basis for something; the nature one has from birth), ''new'' (referring to her being a new form of Idi, creating new Idis by reproducing, or [[Master of Life Dr. Nova (Special Cat)|Nova]]'s name being Latin for "new") ''next'' (referring to how she is the next step in [[Idi:N (Special Cat)|Idi:N]]'s evolution line), ''nexus'' (a connected group, like the Idi:Nes in [[The Face of God/Invasion|The Face of God Invasion]]), or 猫 ''neko'' (cat).
+*"Unstable microbes detected" appears to be a mistranslation. Idi:Ne's Japanese description has a space between 不安定 ''fuantei'' (unstable) and 古ノ微生物検出 ''ko no biseibutsu kenshutsu'' (paleobacteria detected), implying that these are two separate assessments: Idi:Ne is unstable, and paleobacteria is detected on her.
+*"Reproduces by saving and spreading seeds" may be another mistranslation, as the kanji 種 can mean both "seed" and "species", 保存 ''hozon'' means "conservation" or "preservation", and 増殖 ''zōshoku'' means "multiplication" or "propagation". Overall, it may have been meant as "reproduces to preserve the species."
+**However, [[:Category:Relic Enemies|Relics]]' tree-like designs and the [[Media:Bg228.png |Relic trees]] seen in The Face of God Invasion could point to the seed/species ambiguity being deliberate.
+*The master mentioned in Idi:Ne's Japanese description is likely [[Sage of Life Dr. Nova]], whose own Japanese description says she wants to create perfect life.
+**This would mean Dr. Nova's attempts at perfect life were her own undoing, as [[Revival of Origin/Invasion|Revival of Origin Invasion]] appears to have been designed specifically to be cleared with Idi:NX.
+*In Japanese, Idi:Ne and [[Idi:Re]] have very different descriptions from other enemies, using exclusively kanji and katakana, even for words that would normally be spelled using hiragana.
+*She has a higher ID than Sage of Life Dr. Nova despite requiring less progress to encounter.
+*She was added in [[Version 13.7 Update|Version 13.7]] on September 26th, 2024, exactly 49 months after Idi:Re was added ([[Version 9.9 Update|Version 9.9]] on August 26th, 2020). This length of time may be a reference to how 49 is the number of sub-chapters in [[Stories of Legend]] and [[Uncanny Legends]].
+*Idi:Ne spawning many times throughout The Face of God Invasion may be because [[Elder Flame Doron]], the main enemy of the original [[The Face of God]], was also spawned repeatedly.
+**The Face of God may have also been chosen for her stage because [[Laboratory of Relics]] and [[Ancient Forest Labyrinth]] share the same map image, along with a couple other sub-chapters.
+
+==Reference==
+*https://battlecats-db.com/enemy/702.html
+
+----
+{{EnemyNav|Sage of Life Dr. Nova|Cafeteria Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemy Cats]]
+[[Category:Mythic Bosses]]

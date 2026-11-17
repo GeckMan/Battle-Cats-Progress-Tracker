@@ -1,0 +1,124 @@
+'''Imoto''' is a [[:Category:Special Cats|Special Cat]] added in [[Version 6.9 Update|Version 6.9]] that can be obtained from the daily stamp rewards during the [[Mentori Collaboration Event]].
+
+{{Cat Info
+|ID = 400
+|rarity = EX
+|name1 = Imoto
+|name2 = Imoto CC
+}}
+
+==Evolution==
+Evolves into '''Imoto CC''' at level 10.
+
+==Strategy/Usage==
+The only [[:Category:Metal Enemies|Metal enemy]] that this Bird is useful against is [[Metal Hippoe]]. Otherwise, it's not useful for anything but [[User Rank]], but it can pretty much be called a better [[Neko Hakase (Special Cat)|Neko Hakase]].
+
+{{Job|Classification = Critter}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 400
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni400 f00.png
+|Image2 = Uni400 c00.png
+|Name1 = Imoto
+|Desc1 = Dropping in from MENTORI! Mentori's sharp-<br>tongued kid sis is never not macho!<br>Chance of Critical attacks.
+|Name2 = Imoto CC
+|Desc2 = Dropping in from MENTORI! Just at that<br>age when it's all sarcasm all the time.<br>Chance of Critical attacks.
+|Name1 (JP) = イモウト (Imōto, Imouto)
+|Desc1 (JP) = めんトリから参戦！めんトリのかわいい妹さん<br>男らしい言葉とリアクションが特徴<br>ごくたまにクリティカル攻撃を放つ
+|Transl1 (JP) = Joining the war from Mentori! Cute little sister of Mentori<br>Her manly words and reactions are very special<br>Occasionally fires a Critical attack
+|Name2 (JP) = イモウトCC (Imōto CC, Imouto CC)
+|Desc2 (JP) = めんトリから参戦！厳しい返事ばかりするけど<br>素直になれないお年頃なだけで根は優しい子<br>ごくたまにクリティカル攻撃を放つ
+|Transl2 (JP) = Joining the war from Mentori! She's a tough girl<br>But she's a sweet girl at heart<br>Occasionally fires a Critical attack
+|Name1 (TW) = 直白妹
+|Desc1 (TW) = 懶得鳥你來來來參戰！懶得鳥的可愛妹妹<br>特徵是霸氣回應和反應<br>偶爾會發出會心一擊
+|Name2 (TW) = 直白妹CC
+|Desc2 (TW) = 懶得鳥你來來來參戰！總很嚴肅的回你<br>但只是個單純的直白少女<br>偶爾會發出會心一擊
+|Name1 (KR) = Imoto
+|Desc1 (KR) = Mentori에서 참전! Mentori의 귀여운 여동생<br>남자다운 말투와 액션이 특징<br>아주 가끔 크리티컬 공격을 낸다
+|Name2 (KR) = Imoto CC
+|Desc2 (KR) = Mentori에서 참전! 항상 퉁명스럽게 대답해주지만<br>부끄러움이 많은 그 나이대의 여자아이일 뿐 속은 상냥한 아이<br>아주 가끔 크리티컬 공격을 낸다
+}}
+
+==Cost==
+*Chapter 1: 240¢
+*Chapter 2: 480¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Imoto
+|Normal Base HP = 480
+|Normal Base AP = 100
+|Normal Range = 170
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 45
+|Normal Attack Length = 32
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 320
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]
+|Evolved Name = Imoto CC
+|Evolved Base HP = 480
+|Evolved Base AP = 100
+|Evolved Range = 170
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 45
+|Evolved Attack Length = 32
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 320
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 3% chance to perform a [[Critical Hit]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 100 damage<br>(50 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 60f <sub>2 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 1,700 damage<br>(850 DPS)
+|val-Evolved-Health = 8,160 HP
+|val-Evolved-Attack Power = 1,700 damage<br>(850 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 60f <sub>2 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni400 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/401.html
+
+----
+{{CatNav|Mentori|Voli}}
+----
+
+{{Mentori}}
+{{Cats}}
+[[Category:Stamp Reward Cats]]
+[[Category:Critical Hit Cats]]
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with regional differences]]

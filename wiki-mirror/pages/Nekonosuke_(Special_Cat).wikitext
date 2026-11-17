@@ -1,0 +1,123 @@
+'''Nekonosuke''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 8.5 Update|Version 8.5]] and can be unlocked by playing the Event Capsule during the [[Bikkuriman Collaboration Event]].
+
+{{Cat Info
+|ID = 477
+|rarity = EX
+|name1 = Nekonosuke
+|name2 = Old Guardian Cat
+}}
+
+==Evolution==
+Evolves into '''Old Guardian Cat''' at level 10.
+
+==Strategy/Usage==
+You can use this unit as a somewhat more expensive and more powerful [[Rover Cat (Rare Cat)|Rover Cat]], similar to a {{4c}} [[Miter Saw Cat (Super Rare Cat)|Miter Saw Cat]]. With its decently high health and damage, on top of Area Attack, it is surprisingly usable against [[:Category:Unstarred Alien Enemies|unstarred-Aliens]], though its low range and lack of [[Immune to Warp|Warp Immunity]] or [[Barrier]] [[Barrier Breaker|Breaker]] make it hard to use against [[:Category:Starred Alien Enemies|starred-Aliens]].
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 477
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni477 f00.png
+|Image2 = Uni477 c00.png
+|Name1 = Nekonosuke
+|Desc1 = My mighty body will fend off devilish attacks!<br>(If it's too much, I'll just get an angel to step in.)<br>Strong vs Aliens (Area Attack)
+|Name2 = Old Guardian Cat
+|Desc2 = Defender of a profitable holy meatball business.<br>Still, sometimes the angels have to lend a hand.<br>Strong vs Aliens (Area Attack)
+|Name1 (JP) = ネコの助 (Nekonosuke)
+|Desc1 (JP) = カタ～い体を活かして悪魔の攻撃を耐え抜いちゃう！<br>でも痛くなってきたら天使様を盾にしちゃうのよネ！<br>エイリアンにめっぽう強い(範囲攻撃)
+|Transl1 (JP) = She uses her tough body to withstand the demon's attacks!<br>But when it starts to hurt, she uses an angel as a shield!<br>Strong against Aliens (Ranged Attack)
+|Name2 (JP) = ネコ老守 (Neko Rō Mamoru, Old Guard Cat)
+|Desc2 (JP) = 天肉球の商売繁盛を見守る老守！？魔物の猛攻で<br>趣味のバス釣りに集中できない！天使さまあ～<br>エイリアンにめっぽう強い(範囲攻撃)
+|Transl2 (JP) = An old guardian watches over the prosperous business of the Heavenly Meatballs! With the onslaught of demons,<br>I can't concentrate on my hobby of bass fishing! Oh, angels~!<br>Strong against Aliens (Ranged Attack)
+|Name1 (TW) = 貓之助
+|Desc1 (TW) = 用硬朗的身體抵抗惡魔的攻擊！<br>但是痛起來的話就會用天使來當盾牌喔！<br>善於攻擊異星戰士(範圍攻擊)
+|Name2 (TW) = 貓老守
+|Desc2 (TW) = 靜守天肉球商業繁榮的老守！？魔物的猛攻<br>結果害最喜歡的釣鱸魚時間一直分心！天使呀～<br>善於攻擊異星戰士(範圍攻擊)
+|Name1 (KR) = 고양이노스케
+|Desc1 (KR) = 단단한 몸을 이용하여 악마의 공격을 버텨낸다냥!<br>그래도 아플 때는 천사님을 방패로 써버리는 거다냥!<br>에이리언에 엄청 강하다 (범위 공격)
+|Name2 (KR) = 고양이노수
+|Desc2 (KR) = 가게의 번창을 기원해주는 수호묘!? 마물의 맹공으로<br>취미인 낚시에 집중이 되질 않는다냥! 천사니임~<br>에이리언에 엄청 강하다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 830¢
+*Chapter 2: 1,245¢
+*Chapter 3: 1,660¢
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nekonosuke
+|Normal Base HP = 1340
+|Normal Base AP = 870
+|Normal Range = 250
+|Normal Foreswing = 66
+|Normal Attack Cooldown = 135
+|Normal Attack Length = 92
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 830
+|Normal Recharge = 980
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Old Guardian Cat
+|Evolved Base HP = 1340
+|Evolved Base AP = 870
+|Evolved Range = 250
+|Evolved Foreswing = 66
+|Evolved Attack Cooldown = 135
+|Evolved Attack Length = 92
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 830
+|Evolved Recharge = 980
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+30
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,340 HP
+|val-Normal-Attack Power = 870 damage<br>(129.85 DPS)
+|val-Normal-Attack Range = 250
+|val-Normal-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 66f <sup>2.2s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Normal-Recharge Time = 32.67 ~ 23.87 seconds
+|val-Normal-MaxHP = 22,780 HP
+|val-Normal-MaxAttack = 14,790 damage<br>(2,207.46 DPS)
+|val-Evolved-Health = 22,780 HP
+|val-Evolved-Attack Power = 14,790 damage<br>(2,207.46 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 201f <sub>6.7 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 66f <sup>2.2s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 32.67 ~ 23.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni477 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/478.html
+----
+{{CatNav|Cat Devil|Lumina}}
+----
+
+{{Bikkuriman}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Collaboration Event Cats]]

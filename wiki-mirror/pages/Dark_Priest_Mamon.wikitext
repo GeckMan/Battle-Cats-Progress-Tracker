@@ -1,0 +1,106 @@
+:''For the stronger variant introduced later in [[The Aku Realms]], see [[High Priest Mamon]].''
+'''Dark Priest Mamon''' (神官マモーン ''Shinkan Mamōn'', "'''Priest Mamon'''") is an [[:Category:Aku Enemies|Aku]] enemy introduced in stage 30 of [[The Aku Realms]], [[Mount Aku (Aku Realm)|Mount Aku/Mount Fuji]]. He was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Dark Priest Mamon
+|image = E 570.png
+|money drop = 3,000¢ - 11,850¢
+|appearance = '''The Aku Realms:''' [[Mount Aku (Aku Realm)|Mount Aku/Mount Fuji]]
+}}
+
+==Enemy==
+Dark Priest Mamon is a powerful enemy, with basically no shortcomings. High offensive and defensive capabilities, good range with added [[Hitbox#Subdivisions|piercing range]] and [[Area Attack]]. He's purely an [[:Category:Aku Enemies|Aku]] enemy, not [[:Category:Dark Enemies|Dark]], and his long attack animation is his only weakness to exploit.
+
+His stats may not seem threatening, but keep in mind that an [[Aku Altar (Enemy Base)|Aku Altar]] will be more than enough to fix this issue when he is first encountered.
+
+==Strategy==
+Dark Priest Mamon isn't too hard to stall, so units who can outrange him and take out his support, if paired with fast meatshields, can overcome the challenges he poses.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 570
+|Type = Aku
+|Image1 = Enemy icon 570.png
+|Name1 = Dark Priest Mamon
+|Desc1 = Evil priest with a wicked dream to rule all the<br>Aku Realms. Built Altars to seal away the power<br>of his enemies and drain them of their lifeforce<br>to be used to fulfill his own dark ambitions.
+|Name1 (JP) = 神官マモーン (Shinkan Mamon, "Priest Mamon")
+|Desc1 (JP) = 魔界征服の野望を持つ邪教の神官。<br>各地にレベル封印を行う城を建造し<br>かつて英雄により封じ込められた破壊神を<br>自分の野望に利用しようと企んでいる。
+|Transl1 (JP) = An evil priest with ambitions to conquer the [[The Aku Realms|Devil World]].<br>Built level-sealing [[Aku Altar (Enemy Base)|fortresses]] across the lands,<br>and plans to use the [[Lord of Ruin Jagando|god of destruction]], once<br>sealed away by a hero, for his own ambitions.
+|Name1 (TW) = 神官瑪魔
+|Desc1 (TW) = 抱有征服魔界野望的邪教神官。<br>在各地建造封印等級的城<br>企圖把過去被英雄封印的破壞神<br>利用於自己的野望。
+|Name1 (KR) = 신관 마몬
+|Desc1 (KR) = 마계 정복의 야망을 가진 이교의 신관<br>각 지방의 레벨을 봉인하는 성을 지어<br>과거 영웅에 의해 봉쇄된 파괴신을<br>자신의 야망을 위해 이용하려고 하고 있다.
+}}
+
+==Variants==
+{{Variant
+|original = Dark Priest Mamon
+|High Priest Mamon
+|A stronger variant of Dark Priest Mamon, with better stats, range, [[Shield]] and a [[Toxic]] effect that takes off 15% of Cat Units' maximum health.
+|Grand Mage Mimon
+|A [[:Category:Traitless Enemies|Traitless]] enemy found at the end of the [[Underground Labyrinth]]. Very similar to High Priest Mamon, but with even higher health and attack power, no Shield or Toxic ability and a 20% chance to slow units for 4 seconds.
+|Emperor Warumongar
+|An [[:Category:Aku Enemies|Aku]]/[[:Category:Kaijin Enemies|Kaijin]] variant of Mamon from the [[Anniversary/13th Year|13th Anniversary]]. Has a full 420 range rather than piercing up to that much, creates [[Explosion]]s and is immune to Knockback and Slow, but deals lackluster damage per hit and has a far weaker Shield.
+|Grand Emperor Warumongar
+|A supersized variant of Emperor Warumongar, with superior health/damage and an Omni Strike that pierces up to 570 range in exchange for a much slower attack rate and no Shield.
+|Enchanting Mage Vibon
+|An [[:Category:Angel Enemies|Angel]]/[[:Category:Kaijin Enemies|Kaijin]] variant of Grand Mage Mimon that exchanges her Slow and Omni Strike for Long Distance, a 100% chance to Weaken, and a Level 3 [[Surge Attack]]. She  also has lower attack, but slightly higher health.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[The Aku Realms]]===
+*Stage 30: [[Mount Aku (Aku Realm)|Mount Aku]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dark Priest Mamon
+|Health = 680000
+|Attack Power = 20999
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 201
+|Movement Speed = 5
+|Knockback = 3
+|Foreswing = 105
+|Backswing = 96
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~420)<br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">1,200,000</span>; regenerates with 50% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy|bg=Bg137.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+570 e.png|Dark Priest Mamon's spritesheet
+IdleDarkPriestMamon.gif|Dark Priest Mamon's moving animation
+</gallery>
+
+==Trivia==
+*He is more than likely a reference to the ''[[wikipedia:Dragon Quest|Dragon Quest]]'' character [[wikia:dragonquest:Hargon|Hargon]], as besides having similar designs, both are evil priests who aim to summon skull-wearing demonic gods of destruction ([[wikia:dragonquest:Malroth|Malroth]] in Hargon's case, [[Lord of Ruin Jagando]] in Dark Priest Mamon's).
+**Mamon's design also bears similarities to [[wikia:dragonquest:Killvearn|Killvearn]], another antagonist from the ''Dragon Quest'' franchise.
+*Mamon and his little sister [[Grand Mage Mimon|Mimon]] have similar names to [[wikipedia:ja:マモー・ミモー|Mamō and Mimō]], a pair of [https://youtu.be/3_b43drGB18 comedy characters] from the variety show ''[[wikipedia:ja:ウッチャンナンチャンのやるならやらねば!|Ucchan Nanchan no Yarunara Yaraneba!]]''. Furthermore, Mimon and Mimō are both redheads.
+*Mamon's name may also be derived from 魔 ''ma'' (demon), ''sermon'' (since he's a priest) and ''[[wikipedia:Mammon|Mammon]]'', a term from the [[wikipedia:New Testament|New Testament]] which has often been used as a name for a patron demon of greed. While Mamon isn't stated to desire money, the sin of greed includes overambition, and Mamon is highly ambitious indeed, plotting to rule the entirety of [[The Aku Realms]].
+*Mamon sounds dangerously close to the Spanish insult ''Mamón'', so he's renamed as Babón in Spanish.
+*He is The Aku Realms' narrator.
+*In the [[The Aku Realms/OPEDJP|Japanese Aku Realms opening/ending]], Mamon refers to himself using the archaic pronoun 我 ''ware'', which used to be the most popular Japanese first-person pronoun up until the [[wikipedia:Edo period|Edo period]], when it started to be phased out by 私 ''watashi''. Nowadays, it's considered too old-fashioned and formal to see much use outside of literary contexts. In fiction, it's mainly used by older, important, often immortal characters such as gods and demon lords.
+*When Mamon is knocked back, his left hand sprite erroneously gains an extra finger.
+
+==Reference==
+*https://battlecats-db.com/enemy/572.html
+
+----
+{{EnemyNav|E-569|High Priest Mamon}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:The Aku Realms Enemies]]
+[[Category:Aku Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Shields]]

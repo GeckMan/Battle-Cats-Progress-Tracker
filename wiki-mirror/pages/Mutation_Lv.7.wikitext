@@ -1,0 +1,52 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|The Thrillerz|Heavenly Hippoe|Zackie Peng|Zuche|Angelic Gory|Zir Zeal|Dread Bore}}
+'''Mutation Lv.7''' is the seventh stage in [[Resident Undead]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn336 06 s en.png]]
+|stage location = [[File:Mapname336 s en.png]]
+|energy = 150
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|The Thrillerz|150%
+|Heavenly Hippoe|250%
+|Zackie Peng|200%
+|Zuche|150%
+|Angelic Gory|150%
+|Zir Zeal|200%}}
+|boss = {{Magnification|Dread Bore|120%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 15
+|jpname = Mutation Lv.7
+|script = 突然変異Lv.7
+|romaji = Totsuzen Hen'i Lv.7
+|star = 1
+|event-chapter = [[Resident Undead]]
+|max clears = 1
+|difficulty = ★8
+|prev stage = [[Mutation Lv.6]]
+|next stage = [[Mutation Lv.8]]
+}}
+
+==Battleground==
+*6 [[The Thrillerz|Thrillerz]] spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[Heavenly Hippoe]]s spawn after 10 seconds<sup>300f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Zackie Peng]]s spawn after 20 seconds<sup>600f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dread Bore]] spawns as the boss.
+**Infinite [[The Thrillerz|Thrillerz]] spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+**5 [[Zuche]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn after 5 seconds<sup>150f</sup>, delay 20 seconds<sup>600f</sup>.
+**2 [[Zir Zeal]]s spawn after 3.33 seconds<sup>100f</sup>, delay 30 seconds<sup>900f</sup>.
+**Infinite [[Heavenly Hippoe]]s spawn after 1.67 seconds<sup>50f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01336-07.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

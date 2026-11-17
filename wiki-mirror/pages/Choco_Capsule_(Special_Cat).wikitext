@@ -1,0 +1,142 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Choco Capsule (Enemy)]].''
+'''Choco Capsule''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked by purchasing a special sale which contains this unit and 1 [[Cat Capsule|Rare Ticket]]. It was added to promote Japanese Battle Cats choco capsules. It was added in [[Version 14.2 Update|Version 14.2]].
+
+{{Cat Info
+|ID = 784
+|rarity = EX
+|name1 = Choco Capsule
+|name2 = ChocoSurp Cat F
+}}
+
+==Evolution==
+Evolves into '''ChocoSurp Cat F''' at level 10.
+
+==Strategy/Usage==
+Choco Capsule boasts one of the only positive growth curves in the game, gaining 80% stats at each level from 21-30 and 40% stats from 31-40; its stats at level 50 are 25,380 HP and 15,510 AP. Choco Capsule effectively improves at a slower pace than other units beyond level 40, as a result.
+
+==='''Normal Form'''===
+Choco Capsule serves an incredibly unique role, being a rusher specialist against Traitless enemies. Though they fill a niche most Traitless specialists do not cover, Choco Capsule sadly falls short in effective use during midgame due to general rushers outperforming Choco Capsule in damage and speed. Since the trait it covers is not affected by treasures obtained in the [[Into the Future]] saga, its [[Massive Damage]] ability is multiplied by 3x rather than 4x, giving Choco Capsule 31,680 DPH at level 30. Regardless, its matchups against Traitless enemies are rather underwhelming.
+
+Given its range and speed, Choco Capsule serves only as decent supplemental damage against Traitless enemies with less than 200 range, or a long TBA; relevant soft counters include [[Wall Doge]] and [[Wild Doge]]. Additionally, it can slip into the blind spots of enemies such as [[Henry]]/[[Dolphina]] and significantly reduce their HP. However, a major downside of this unit is its lack of immunities (specifically to [[Wave Attack|Waves]], [[Surge Attack|Surges]], and [[Slow]]/[[Freeze]]) which severely impacts its ability to reach target traits, and may result in its demise before it can even land a hit. The sheer abundance of Traitless enemies that abuse these abilities drastically affects their general usage.
+
+==='''Evolved Form'''===
+ChocoSurp Cat F can be compared to [[Talents|Talented]] [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]] in many aspects. Though, it falls short of Heavy Assault C.A.T.'s performance, having noticeably lower stats across the board in everything but AP/movement speed at equal levels. Most the time, it is held back by its HP, recharge time, single attack, and somewhat long foreswing animation for a rusher-type unit. Even so, it functions adequately as an IAP unit, making it worth the investment for those who wish to purchase the pack for any reason.
+
+{{Job|Classification = Rusher & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Pop!|Worker Max Up (M)|Choco Capsule|jpname=パッカーン}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 784
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni784 f00.png
+|Image2 = Uni784 c00.png
+|Name1 (JP) = チョコサプネコC (Chokosapu Neko C, ChocoSurp Cat C)
+|Desc1 (JP) = 全国のお菓子売り場を侵略するため<br>カプセル型チョコに隠れているキャラクター<br>中から何が出るかはお楽しみ！
+|Transl1 (JP) = A cat hiding inside a chocolate capsule<br>with a plot to invade candy isles all over the country<br>What's inside is a surprise!
+|Name2 (JP) = チョコサプネコF (Chokosapu Neko F, ChocoSurp Cat F)
+|Desc2 (JP) = 全国のお菓子売り場を侵略するため<br>カプセル型チョコから飛び出すキャラクター<br>いっぱい集めて飾って楽しもう！
+|Transl2 (JP) = A cat that pops out from chocolate capsules<br>for its plot to invade candy isles all over the country<br>Collect them as decorations!
+}}
+
+==Cost==
+*Chapter 1: 450¢
+*Chapter 2: 675¢
+*Chapter 3: 900¢
+{{Upgrade Cost
+|MIX
+|0
+|500
+|1,400
+|2,600
+|4,100
+|5,900
+|8,000
+|10,400
+|13,100
+|16,100
+|max = 50
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Choco Capsule
+|Normal Base HP = 540
+|Normal Base AP = 330
+|Normal Range = 200
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 101
+|Normal Speed = 35
+|Normal KB = 5
+|Normal Cost = 450
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = Traitless
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = ChocoSurp Cat F
+|Evolved Base HP = 540
+|Evolved Base AP = 330
+|Evolved Range = 200
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 101
+|Evolved Speed = 35
+|Evolved KB = 5
+|Evolved Cost = 450
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x2,80,40,20x2,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 540 HP
+|val-Normal-Attack Power = 330 damage<br>(98.02 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Normal-Movement Speed = 35
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(85f <sup>2.83s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 17,280 HP
+|val-Normal-MaxAttack = 10,560 damage<br>(3,136.63 DPS)
+|val-Evolved-Health = 17,280 HP
+|val-Evolved-Attack Power = 10,560 damage<br>(3,136.63 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 101f <sub>3.37 seconds</sub>
+|val-Evolved-Movement Speed = 35
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(85f <sup>2.83s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni784 f00}}
+
+==Trivia==
+*[[Gacha Cat (Special Cat)|Gacha Cat]], [[Principal Cat (Special Cat)|Principal Cat]] and this are currently the only cats to have level scaling above 20%.
+
+==Reference==
+*https://battlecats-db.com/unit/785.html
+
+----
+{{CatNav|Koneko|Killer Gross Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:IAP Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

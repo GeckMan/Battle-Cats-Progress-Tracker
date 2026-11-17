@@ -1,0 +1,75 @@
+{{EnemiesAppearing|Doge|Those Guys|Pigge|Snache|One Horn|The 6th Angel}}
+'''Pre-fire Sequence''' is the second stage in [[Neon Genesis Evangelion Collaboration Event#!|Decisive Battle!]].
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn066 01 c en.png]]
+|stage location = [[File:Mapname066 c en.png]]
+|energy = 100
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Doge|200%
+|Those Guys|200%
+|Pigge|200%
+|Snache|200%
+|One Horn|200%}}
+|boss = {{Magnification|The 6th Angel|20%}}
+|enemies2 = {{Magnification|Doge|400%
+|Those Guys|400%
+|Pigge|400%
+|Snache|400%
+|One Horn|400%}}
+|boss2 = {{Magnification|The 6th Angel|40%}}
+|enemies3 = {{Magnification|Doge|600%
+|Those Guys|600%
+|Pigge|600%
+|Snache|600%
+|One Horn|600%}}
+|boss3 = {{Magnification|The 6th Angel|60%}}
+|enemies4 = {{Magnification|Doge|800%
+|Those Guys|800%
+|Pigge|800%
+|Snache|800%
+|One Horn|800%}}
+|boss4 = {{Magnification|The 6th Angel|80%}}
+|treasure = - 30,000 XP (10%, unlimited)
+|score reward = '''6,000''': 75,000 XP<br>
+'''4,500''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': 15,000 XP
+|XP = 9,800 XP
+|width = 5,000
+|max enemies = 10
+|jpname = Positron Gun Sniper
+|script = 陽電子砲狙撃
+|romaji = Yōdenshi-hō sogeki
+|star = 4
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Neon Genesis Evangelion Collaboration Event#Decisive Battle!|Decisive Battle!]]
+|difficulty = ★3
+|prev stage = [[Futagoyama Fortress]]
+|next stage = [[High-Order Energy]]
+}}
+
+==Battleground==
+*4 [[Doge]]s spawn, delay 10 seconds<sup>300f</sup>.
+*2 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*1 [[Pigge]] spawns after 13.33 seconds<sup>400f</sup>.
+*When the base reaches 99% HP:
+**1 [[The 6th Angel (Enemy)|The 6th Angel]] spawns as the boss.
+**4 [[Snache]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[One Horn]] spawns.
+
+==Strategy==
+An easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Walkthrough==
+{{Walkthrough
+|XhPFQAdj93g|Novastrala|Starts at 0:30
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s02066-02.html
+
+{{Neon Genesis Evangelion}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

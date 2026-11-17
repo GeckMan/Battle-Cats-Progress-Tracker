@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Those Guys|Glowstick Guys|Hatsune Miku XVI}}
+'''Virtual Singer's Journey''' is the first stage in [[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]].
+
+{{Stage Info
+|stage name = [[File:rc138.png]]
+[[File:Mapsn210 00 c en.png]]
+|stage location = [[File:Mapname210 c en.png]]
+|energy = 50
+|enemy castle hp = 4,000 HP
+|enemies = {{Magnification|Those Guys|100%
+|Glowstick Guys|100%}}
+|boss = {{Magnification|Hatsune Miku XVI|1%}}
+|treasure = - [[Cat Food]] +20 (100%, 1 time)
+|XP = 1,500 XP
+|width = 3,600
+|max enemies = 12
+|jpname = Virtual Singer's Path
+|script = バーチャル・シンガーの軌跡
+|romaji = Bācharu Shingā no Kiseki
+|star = 1
+|event = [[Hatsune Miku Collaboration Event]]
+|event-chapter = [[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[A Future Born Today]]
+}}
+
+==Battleground==
+*6 [[Those Guys]] spawn after 5 seconds<sup>150f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Glowstick Guys]] spawn, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Hatsune Miku XVI (Enemy)|Hatsune Miku XVI]] spawns as the boss.
+**Infinite [[Glowstick Guys]] spawn after 40 seconds<sup>1,200f</sup>, delay 13.33~33.33 seconds<sup>400f~1,000f</sup>.
+**Infinite [[Those Guys]] spawn after 20 seconds<sup>600f</sup>, delay 20~50 seconds<sup>600f~1,500f</sup>.
+**12 [[Glowstick Guys]] spawn, delay 3.33~8.33 seconds<sup>100f~250f</sup>.
+**6 [[Those Guys]] spawn, delay 3.33~8.33 seconds<sup>100f~250f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02210-01.html
+
+{{Hatsune Miku}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

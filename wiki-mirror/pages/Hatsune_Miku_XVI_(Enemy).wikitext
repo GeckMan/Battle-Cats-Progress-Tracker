@@ -1,0 +1,68 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Hatsune Miku XVI''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 12.7 Update|Version 12.7]].
+
+{{Enemy Info
+|name = Hatsune Miku XVI
+|image = E 656.png
+|first appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 3,900¢ - 15,405¢
+}}
+
+==Enemy==
+This variant of Hatsune Miku has the highest health out of them, coupled with a level 2 Surge with a wide spawn range that can allow it to snipe oncoming units with Slow that can break your defenses. She also 1 less knockback compared to her variants.
+
+==Strategy==
+In her first 3 appearances, you can just brute force through her stages easily, but after that, she gains some very noticeable buffs, making her harder to defeat and forcing you to play the long game. Units like [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]], [[Stone Cat (Rare Cat)|Stone Cat]], and [[Elder Mask Doron (Special Cat)|Cat Mask Doron]] are useful to stop her advances, while [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] is a useful attacker against her. Longer range units, such as [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon]] (with [[Immune to Surge|Surge Immunity]] [[Talents|Talent]]), can work, but may get targeted by the Surge provided they aren't immune.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 1|Weekend Concert: Day 1]]:
+**[[Virtual Singer's Journey]] (1%)
+**[[A Future Born Today]] (8%)
+**[[Growing Creativity]] (50%)
+*[[Hatsune Miku Collaboration Event#Weekend Concert: Day 2|Weekend Concert: Day 2]]:
+**[[Endless Possibility]] (100%)
+**[[Imagine With Me]] (200%)
+**[[Dear Creators]] (400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Hatsune Miku XVI
+|Health = 240000
+|Attack Power = 5000
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 128
+|Movement Speed = 10
+|Knockback = 3
+|Foreswing = 49
+|Backswing = 57
+|Ability = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 2 [[Surge Attack]] between 150 and 950 range
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+656 e.png|Hatsune Miku XVI's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/658.html
+
+----
+{{EnemyNav|Crocodylidae Kurocroc|Relay Base}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Surge Attack Enemies]]

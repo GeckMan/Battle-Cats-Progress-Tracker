@@ -1,0 +1,141 @@
+{{Documentation}}
+This template is used on the [[Battle Cats Wiki|Main Page]] and [[Event Schedule]] to display past, current and upcoming gacha sets and events in the EN version. It does not need any arguments as it relies on a preset [[Template:CurrentEvents/Schedule.json|data page]] with a [[MediaWiki:Gadget-EventSchedule.js|JavaScript file]] to read it.
+
+==Parameter==
+<pre>
+{{CurrentEvents|margin= (optional)}}
+</pre>
+As shown above, the only parameter is <code>margin</code>, which is a threshold on the number of days to show events in advance. For example, on the Main Page, this is set to 3 so that events are shown 3 days in advance. When the parameter is omitted, this parameter is set to its default value of a year such that all events will be displayed.
+
+==Updating Data==
+The main event data is stored in two parts: [[Template:CurrentEvents/Images.json]] and [[Template:CurrentEvents/Schedule.json]]. The former contains all of the necessary image data for events, and the latter contains the actual schedule data for the events (both limited and recurring).
+
+For the event data to be displayed properly, regular maintenance and updating of the data pages is necessary. In the case that this template displays a mismatched image for an event or creates a broken link, check Images.json for any mistakes.
+
+The <code>Gacha Schedule</code> and <code>Event Schedule</code> parts must be updated regularly whenever new event data is found. To update, add a new array in the corresponding part with the first element being the event name, the second element as the start date, and the third element as the end date. The event name should be the full name as used below in the same JSON file. The dates are in the format <code>year-month-date</code> with the year being all four digits. An example is "2023-08-15". The time does not have to be specified as it is assumed to be 11:00 AM local time. When in doubt, look at the existing data and copy the format exactly how it is.
+
+If a time other than 11:00 AM is the start or end time, add an additional fourth element giving the start time as 24 hour time in the format "HH:MM". The fifth element is the same except it is for the end time. These items are optional and can be omitted to make the module interpret it as starting and ending at 11:00 AM on the given dates.
+
+When it is at least 2 days after an event's end date, remove it to prevent the data page from becoming cluttered. Waiting 2 days is done because the schedule is by local time, meaning that an event should remain there until it has ended in all time zones. All names should be typed accurately in plain text. Note that all names of stage events are of the map, not a stage.
+
+Below is a list of everything that should be put on the schedule:
+*All gacha events except for [[Platinum Capsules (Gacha Event)|Platinum Capsules]] and [[Legend Capsules (Gacha Event)|Legend Capsules]]
+*Tower Events ([[Heavenly Tower]], [[Infernal Tower]], [[Citadel]]s), [[Legend Quest]], [[Underground Labyrinth]], [[Ranking Dojo]]
+*Colossus [[:Category:Gauntlets|Gauntlets]]
+*[[:Category:Collaboration Events|Collaboration Events]]
+*[[:Category:Seasonal Event|Seasonal Event]]
+*Other limited-time [[Special Events|Events]] like [[Deadly Carnival!|Deadly]] [[Deadly Carnival II|Carnival]] [[Deadly Carnival III|Maps]], [[Forged to Kill (Deadly)|Cybear's Vengeance]], [[:Category:Monthly Event All-Stars Stages|Monthly Event All-Stars Events]]
+*[[First Draw Discount]], [[Increasing Capsules Campaign]], [[Guaranteed Uber Rare Cat Campaign]], [[Cat Scratcher]], [[Wildcat Slots]], [[Anniversary|Anniversaries]]
+
+In the gacha events, all event capsules should be listed after the rare capsule events. Within those sets, the events are ordered by end date from earliest to latest. For events with the same end date, order them by significance (a sort of rarity to them) if applicable. For example, gacha events such as collaboration sets and Best of the Best should be put before regular gacha events. The other events should be listed after the gacha events, again in order of end time from earliest to latest. However, if a special event such as a collaboration event or other seasonal event such as the anniversaries is present, put it first. Below is an example of partial section of the JSON file:
+{{Collapsible}}
+<pre>
+    "Gacha Schedule": [
+        [
+            "Wave Busters",
+            "2023-10-11",
+            "2023-10-13"
+        ],
+        [
+            "Colossus Busters",
+            "2023-10-11",
+            "2023-10-13"
+        ],
+        [
+            "Cyber Academy Galaxy Gals",
+            "2023-10-13",
+            "2023-10-16"
+        ],
+        [
+            "Ancient Heroes Ultra Souls",
+            "2023-10-13",
+            "2023-10-16"
+        ],
+        [
+            "9th Anniversary Excellent Selection",
+            "2023-10-16",
+            "2023-10-18"
+        ],
+        [
+            "Sengoku Wargods Vajiras",
+            "2023-10-16",
+            "2023-10-18"
+        ],
+        [
+            "Dark Heroes",
+            "2023-10-18",
+            "2023-10-20"
+        ],
+        [
+            "Nature's Guardians Elemental Pixies",
+            "2023-10-18",
+            "2023-10-20"
+        ],
+        [
+            "SUPERFEST",
+            "2023-10-20",
+            "2023-10-23"
+        ],
+        [
+            "The Almighties The Majestic Zeus",
+            "2023-10-20",
+            "2023-10-23"
+        ],
+        [
+            "What's in the Box Event Capsules",
+            "2023-09-18",
+            "2023-10-23"
+        ]
+    ],
+    "Event Schedule": [
+        [
+            "9th Anniversary",
+            "2023-09-18",
+            "2023-10-23"
+        ],
+        [
+            "Catfruit Festival",
+            "2023-10-14",
+            "2023-10-15"
+        ],
+        [
+            "Baron Seal Strikes",
+            "2023-10-09",
+            "2023-10-16"
+        ],
+        [
+            "Heavenly/Infernal Tower",
+            "2023-10-09",
+            "2023-10-23"
+        ],
+        [
+            "Ranking Dojo",
+            "2023-09-18",
+            "2023-10-23"
+        ],
+        [
+            "Treasure Festival",
+            "2023-10-01",
+            "2023-10-23"
+        ],
+        [
+            "Silver Week",
+            "2023-10-16",
+            "2023-10-31"
+        ]
+    ],
+</pre>
+</div>
+
+===Recurring Schedule===
+The <code>Recurring Schedule</code> part will only have to be updated if blitz events are added to this template or if a new regular event is released. Each entry contains a set of data about an event. The first item is the full event name, and the second item is a value telling how the schedule is defined for the event (week, year, month). The third item is a date value describing when the event starts. Its meaning changes for each schedule type (MONTH:DD:HH:MM for year, WEEKDAYNUM:HH:MM for week, DD:HH:MM for month). The fourth item is another date value describing the length of the event in days, hours, and minutes in the same format. The date format is identical for all schedule types (DD:HH:MM). Note that all events put on here will automatically be shown in the Recurring Events tab of this template.
+
+Some events are purposely not included in this data page that have obvious schedules. These include the Weekday Stages (Monday Stage, Tuesday Stage, etc.) and the Growing Stages (Growing Green, Growing Purple, etc.). A more complete data page is found at [[Template:EventClock/recurring.json]].
+
+===Images===
+When a new uber is added to a set or a gacha banner is otherwise updated, the banner images for the set should be updated to the newest available ones. While it is better to keep this updated, it is not a major issue if this is outdated. However, if a gacha banner image is missing from this module, it must be added. New additions should be in the following format: <code>"[full set name]": "<a href='/wiki/[page name with spaces replaced by underscores]'><img src='[image url]' title='[Event Name]' width='300px'></a>",</code>. Note that for each regular gacha set, there are three images included for each of them: the lowest ID banner image, the Neneko and Friends version, and the Reinforcements version.
+
+If an image for an event is missing (indicated by a broken image in this template), it should be added after finding an appropriate image in the format: <code>"<Full Event Name>": "<image in html>",</code>. Arguments such as the image size should be adjusted to look good for each image. For collaboration event images, the size is 300px, and map names have a size of 192px.
+
+==Result==
+{{CurrentEvents}}

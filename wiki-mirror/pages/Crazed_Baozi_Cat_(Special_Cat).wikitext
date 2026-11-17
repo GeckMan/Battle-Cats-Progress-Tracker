@@ -1,0 +1,139 @@
+{{TWExclusive}}
+'''Crazed Baozi Cat''' is a [[:Category:Special Cats|Special Cat]] that can be unlocked during the [[New Years Event]] as a [[Daily Bonus]]. It was added in [[Version 5.3 Update|Version 5.3]]. In [[The Battle Cats Unite!]], it was added in [[The Battle Cats Unite!/Patch 1.0.5 Update|Patch 1.0.5]] and is exclusive to the '''Southeast Asia''' ('''SEA''') version via Package Version Bonus.
+
+{{Cat Info
+|ID = 285
+|rarity = EX
+|name1 = Crazed Baozi Cat
+|name2 = Crazed Big Baozi Cat
+}}
+
+==Evolution==
+Evolves into '''Crazed Big Baozi Cat''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role without relevant differences in quality. Crazed Baozi Cat, however, can be used in 4-crown [[Legend Stages]], where there is considerably less competition, plus it has a lead on most other meatshields thanks to his speed, which make him one of the best options, despite the low stats. Outside of 4-Crowns however, it faces direct competition from [[Crazed Cat (Super Rare Cat)|Crazed Cat]] who is faster and deals more damage, but Baozi can still be used alongside it in situations where [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank Cat]] is less desirable.
+
+==='''Evolved Form'''===
+Due to the low stats, this form is not recommended as it is considerably worse than any possible alternative in about every way, making him into a waste of money when summoned. Could still be of use in early-mid [[Empire of Cats]], but, after that, it is best to revert this cat to Normal Form and only use that.
+
+{{Job|Classification = Meatshield|EvolvedClass = Midranger|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 285
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni285 f00.png
+|Image2 = Uni285 c00.png
+|Name1 (TW) = 狂亂小籠包貓咪 (Kuángluàn Xiǎo Lóng Bāo Māomī)
+|Desc1 (TW) = 貓咪大戰爭繁體中文版1週年紀念角色<br>窩在蒸籠中偷懶而變成小籠包的貓咪<br>狂亂化時用體力和攻擊力換來了神速
+|Transl1 (TW) = A cat from the BCTW 1st year anniversary<br>Turned into a dumpling after lazing in the steamer for too long<br>Crazed version traded health and attack power for god speed
+|Name2 (TW) = 狂亂大籠包貓咪 (Kuángluàn Dà Lóng Bāo Māomī)
+|Desc2 (TW) = 貓咪大戰爭繁體中文版1週年紀念角色<br>爲了實現「希望能大口咬」願望的職人自信作<br>狂亂化時用體力換來了更高的攻擊力（範圍攻擊）
+|Transl2 (TW) = A cat from the BCTW 1st year anniversary<br>Made by someone who wished to "take a huge bite"<br>Crazed version traded health for higher attack power (Area Attack)
+|Name1 (Switch) = Crazed Baozi Cat
+|Desc1 (Switch) = Fell asleep in a steamer and isn't at all happy about it.<br>Crazed mode trades some Defense/Attack for godly speed!
+|Name2 (Switch) = Crazed Big Baozi Cat
+|Desc2 (Switch) = Grew bigger to satisfy more people, isn't at all happy about it.<br>Crazed mode trades some Defense for Attack power!
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 50元
+*Chapter 2: 75元
+*Chapter 3: 100元
+
+===Evolved Form===
+*Chapter 1: 500元
+*Chapter 2: 750元
+*Chapter 3: 1,000元
+{{Upgrade Cost|MIX
+|0
+|1300
+|2200
+|3400
+|4900
+|6700
+|8800
+|11200
+|13900
+|16900
+|1400
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Crazed Baozi Cat
+|Normal Base HP = 55
+|Normal Base AP = 4
+|Normal Range = 140
+|Normal Foreswing = 10
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 31
+|Normal Speed = 16
+|Normal KB = 3
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Crazed Big Baozi Cat
+|Evolved Base HP = 300
+|Evolved Base AP = 95
+|Evolved Range = 300
+|Evolved Foreswing = 20
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 54
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 500
+|Evolved Recharge = 480
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50<br>Lv.30+20<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 55 HP
+|val-Normal-Attack Power = 4 damage<br>(3.08 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 39f <sub>1.3 seconds</sub>
+|val-Normal-Movement Speed = 16
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 10f <sup>0.33s</sup><br>(21f <sup>0.7s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 935 HP
+|val-Normal-MaxAttack = 67 damage<br>(51.54 DPS)
+|val-Evolved-Health = 5,100 HP
+|val-Evolved-Attack Power = 1,615 damage<br>(821.19 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 20f <sup>0.67s</sup><br>(34f <sup>1.13s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni285 f00}}
+
+==Trivia==
+*When it initially released on August 2016, it would be unlocked by going to a website and entering the code "狂亂小籠包" ("frenzy dumplings") which would then distribute Crazed Baozi Cat to your save file. It would then be later unlocked by participating in the [[Anniversary/2nd Year|2nd Anniversary]] for the Taiwanese Version.
+*It, [[Nekondo (Special Cat)|Nekondo]], [[Baozi Cat (Special Cat)|Baozi Cat]], [[Li'l Valkyrie (Uber Rare Cat)|Li'l Valkyrie]], and [[Li'l Valkyrie Dark (Uber Rare Cat)|Li'l Valkyrie Dark]] are part of a version exclusive in The Battle Cats Unite, only being obtained if the player owns the Southeast Asia version.
+
+----
+{{CatNav|Express Cat|Strike Unit R.E.I.}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]

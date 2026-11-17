@@ -1,0 +1,125 @@
+{{PCExclusive}}
+'''Honda Tadakatsu''' was an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was exclusive to the VIP [[Sengoku Wargods Vajiras (Gacha Event)|Sengoku Wargods Vajiras]] Gacha, only available in the [[Minna de Nyanko Daisensou|PC version]].
+
+{{Cat Info
+|ID = 902
+|rarity = UR
+|version = PC
+|name1 = Honda Tadakatsu
+|name2 = Wargod Tadakatsu
+|image1 = 10902 1.png
+|image2 = 10902 2.png
+}}
+
+==Evolution==
+Evolves into '''Wargod Tadakatsu''' at level 10.
+
+==Strategy/Usage==
+Tadakatsu specializes in base destruction, as if the enemy base gets in his range, it will start taking massive damage from a distance. His high health and inability to be knocked back until he dies also ensure that as much damage as possible be delivered on the base.
+
+He can also be a fairly decent generalist Long Distance unit, much like many others, but he's not without issues.
+
+His main gripes are the fact that he has an awful recharge, a high cost and horrible survivability, due to mediocre health, a very wide blindspot, and one knockback. He also has immunity to knockback, so if an enemy starts attacking him from within his blindspot, he will die unless some other Cat Units can save him... or unless he destroys the enemy base first.
+
+{{Job|Classification = Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 902<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10902 f00.png
+|Image2 = Uni10902 c00.png
+|Name1 (JP) = 本多忠勝 (Honda Tadakatsu)
+|Desc1 (JP) = 大型の巨大槍「猫腹切」にトランスフォームできるVIP大将。<br>近距離攻撃できないが超射程で城破壊が得意（遠方範囲攻撃）<br>にゃんこ軍団と黒い敵に打たれ強く、ふっとばし無効にする能力を持つ
+|Transl1 (JP) = A VIP general who can transform into a large giant spear, "Cat Harakiri".<br>Cannot attack at short range, but is good at destroying castles at super range (long-ranged attack)<br>Durable against the Nyanko Corps and Dark enemies and has the ability to negate knockback
+|Name2 (JP) = 武神・本多忠勝 (Bushin・Honda Tadakatsu, Takeshi・Wargod Tadakatsu)
+|Desc2 (JP) = 伝説の巨大槍「猫腹切」にトランスフォームできるVIP武神。<br>近距離攻撃できないが超射程で城破壊が得意（遠方範囲攻撃）<br>にゃんこ軍団と黒い敵に打たれ強く、ふっとばし無効にする能力を持つ
+|Transl2 (JP) = A VIP wargod who can transform into the legendary giant spear "Cat Harakiri".<br>Cannot attack at short range, but is good at destroying castles at super range (long-ranged attack)<br>Durable against the Nyanko Corps and Dark enemies and has the ability to negate knockback
+}}
+
+==Cost==
+*Chapter 1: 4,000円
+*Chapter 2: 6,000円
+*Chapter 3: 8,000円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+{{Cat Stats Manual
+|Normal Name = Honda Tadakatsu
+|Normal Health = 1,950 HP
+|Normal Attack Power = 1,800 damage<br>(208.49 DPS)
+|Normal Attack Range = 600
+|Normal Attack Frequency = 259f <sub>8.63 seconds</sub>
+|Normal Movement Speed = 7
+|Normal Knockback = 1 time
+|Normal Attack Animation = 122f <sup>4.07s</sup>
+|Normal Recharge Time = 233.3 ~ 224.5 seconds
+|Normal MaxHP = 33,150 HP
+|Normal MaxAttack = 30,600 damage<br>(3,544.4 DPS)
+|Normal Attack Type = Area Attack
+|Normal Abilities = [[Long Distance]] (Effective range: 450~850)<br>
+[[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only) and [[:Category:Dark Enemies|Dark]] enemies<br>
+[[Base Destroyer]] (deals x4 damage to [[Enemy Bases|bases]])<br>
+[[Immune to Knockback]]
+|Evolved Name = Wargod Tadakatsu
+|Evolved Health = 44,200 HP
+|Evolved Attack Power = 40,800 damage<br>(4,725.87 DPS)
+|Evolved Attack Range = 600
+|Evolved Attack Frequency = 259f <sub>8.63 seconds</sub>
+|Evolved Movement Speed = 7
+|Evolved Knockback = 1 time
+|Evolved Attack Animation = 122f <sup>4.07s</sup>
+|Evolved Recharge Time = 233.3 ~ 224.5 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = [[Long Distance]] (Effective range: 450~850)<br>
+[[Resistant]] to [[:Category:Cat Units|Cats]] (PvP only) and [[:Category:Dark Enemies|Dark]] enemies<br>
+[[Base Destroyer]] (deals x4 damage to [[Enemy Bases|bases]])<br>
+[[Immune to Knockback]]
+|Lv.MAX = Lv.40
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10902_f.png|MediaWiki:Custom-AnimationViewer/PC902_f.json}}
+|-|Evolved=
+{{AnimationViewer|10902_c.png|MediaWiki:Custom-AnimationViewer/PC902_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10902 f00}}
+
+==Trivia==
+*This unit is based off the Japanese samurai general of the same name, [[wikipedia:Honda Tadakatsu|Honda Tadakatsu]].
+*This and [[Warlock and Pierre (Uber Rare Cat)|Warlock and Pierre]] are the only cat units with the Base Destroyer ability.
+
+----
+{{CatNav|Bun Bun Monger Prototype|Type-Monshiro}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Cat Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Base Destroyer Cats]]
+[[Category:Cats with Knockback Immunity]]

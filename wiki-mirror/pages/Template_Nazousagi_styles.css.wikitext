@@ -1,0 +1,7 @@
+.ranger-navbox.nazousagi {
+	--bg-navbox-title: linear-gradient(to right, hsl(52, 96%, 42%) 0%, hsl(52, 96%, 47%) 100%);
+	--bg-sub-table-title: #6bc3e1;
+	--bg-group-name: hsl(40, 91%, 57%);
+}
+
+/* [[Category:Template stylesheets]] */

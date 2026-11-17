@@ -1,0 +1,151 @@
+{{JPExclusive}}
+:''For the enemy units, see [[Cyclops (Enemy)]] and [[4D Cyclops (Enemy)]].''
+'''Cyclops''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Mucha! I'm So Excited!]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 slightly increased attack range.
+
+{{Cat Info
+|ID = 255
+|rarity = RR
+|name1 = Cyclops
+|name2 = Cyclops of Steel
+|name3 = 4D Cyclops
+}}
+
+==Evolution==
+Evolves into '''Cyclops of Steel''' at level 10.
+
+Evolves into '''4D Cyclops''' when obtained from the [[Road to Cyclops Evolution (Hard)|Road to Cyclops Evolution]] stage and is level 20 or above.
+
+==Strategy/Usage==
+This unit is essentially a slower and far less damaging version of [[Lizard Cat (Normal Cat)|Dragon Cat]] and [[Crazed Lizard Cat (Super Rare Cat)|Crazed Lizard Cat]], without any of the damage and almost 3x the recharge. It might be useful for increasing [[User Rank]] and can be stacked in early Stories of Legend stages for some DPS, but even in {{4c}} it will be outclassed by [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]].
+
+The levels it shines most in are the levels in the Castle Dragon VS Castle Dragon event, due to the restriction of only Castle & Dragon units, it becomes one of the only reliable sources of DPS alongside [[Golem (Special Cat)|Golem]]. Otherwise, it's near useless.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 255
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni255 f00.png
+|Image2 = Uni255 c00.png
+|Image3 = Uni255 s00.png
+|Name1 (JP) = サイクロプス
+|Desc1 (JP) = 城とドラゴンから参戦！<br>地元じゃ負け知らず、<br>とウワサされた看板キャラ
+|Transl1 (JP) = Joined the war from "dragon and castle"!<br>Being known as the unbeatable and signboard character.
+|Name2 (JP) = 鋼鉄のサイクロプス
+|Desc2 (JP) = 城とドラゴンから参戦！<br>鋼鉄をまとい破壊を繰り出すサイクロプス
+|Transl2 (JP) = Joined the war from "dragon and castle"!<br>Cyclops which wears steel and pays out destruction.
+|Name3 (JP) = 時空のサイクロプス
+|Desc3 (JP) = 城とドラゴンから参戦！<br>刻を見る目玉を手に入れ時空の番人となったサイクロプス
+|Transl3 (JP) = Joined the war from "dragon and castle"!<br>Cyclops which got the eye from koku and now he's spatiotemporal guard.
+|Name1 (TW) = 獨眼藍胖
+|Desc1 (TW) = 從城與龍來參戰！<br>有傳言說他在家鄉<br>打遍天下無敵手的怪獸代表
+|Name2 (TW) = 鋼鐵獨眼藍胖
+|Desc2 (TW) = 從城與龍來參戰！<br>穿上一身鋼鐵裝備大肆破壞的藍胖
+|Name3 (TW) = 時空獨眼藍胖
+|Desc3 (TW) = 從城與龍來參戰！<br>獲得可以看見時間的眼球成為時空守護者的藍胖
+}}
+
+==Cost==
+*Chapter 1: 1,500円
+*Chapter 2: 2,250円
+*Chapter 3: 3,000円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cyclops
+|Normal Base HP = 1200
+|Normal Base AP = 450
+|Normal Range = 400
+|Normal Foreswing = 37
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 56
+|Normal Speed = 6
+|Normal KB = 2
+|Normal Cost = 1500
+|Normal Recharge = 1680
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Cyclops of Steel
+|Evolved Base HP = 1200
+|Evolved Base AP = 450
+|Evolved Range = 400
+|Evolved Foreswing = 37
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 56
+|Evolved Speed = 6
+|Evolved KB = 2
+|Evolved Cost = 1500
+|Evolved Recharge = 1680
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = 4D Cyclops
+|True Base HP = 1200
+|True Base AP = 450
+|True Range = 410
+|True Foreswing = 37
+|True Attack Cooldown = 119
+|True Attack Length = 56
+|True Speed = 6
+|True KB = 2
+|True Cost = 1500
+|True Recharge = 1680
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,200 HP
+|val-Normal-Attack Power = 450 damage<br>(86.54 DPS)
+|val-Normal-Attack Range = 400
+|val-Normal-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 37f <sup>1.23s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Normal-Recharge Time = 56 ~ 47.2 seconds
+|val-Normal-MaxHP = 20,400 HP
+|val-Normal-MaxAttack = 7,650 damage<br>(1,471.15 DPS)
+|val-Evolved-Health = 20,400 HP
+|val-Evolved-Attack Power = 7,650 damage<br>(1,471.15 DPS)
+|val-Evolved-Attack Range = 400
+|val-Evolved-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 37f <sup>1.23s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-Evolved-Recharge Time = 56 ~ 47.2 seconds
+|val-True-Health = 20,400 HP
+|val-True-Attack Power = 7,650 damage<br>(1,471.15 DPS)
+|val-True-Attack Range = 410
+|val-True-Attack Frequency = 156f <sub>5.2 seconds</sub>
+|val-True-Movement Speed = 6
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 37f <sup>1.23s</sup><br>(19f <sup>0.63s</sup> backswing)
+|val-True-Recharge Time = 56 ~ 47.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni255 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/256.html
+
+----
+{{CatNav|Pretty Cat|Golem}}
+
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats requiring Awakening for True Form]]

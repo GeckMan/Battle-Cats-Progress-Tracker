@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Shibalien|Kroxo|Maawth|Gorilliam|Scissoroo|Bun Bun Symbiote|Satan Claus}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 17|Floor 17]].''
+
+'''Floor 17''' is the 17th floor of [[Infernal Tower]].
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 16 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 150
+|enemy castle hp = 840,000 HP
+|enemies = {{Magnification|Shibalien|1,400%
+|Kroxo|1,400%
+|Maawth|1,200%
+|Gorilliam|900%
+|Scissoroo|600%
+|Bun Bun Symbiote|200%}}
+|boss = {{Magnification|Satan Claus|1,000%}}
+|treasure = One of the following (1 time):<br>
+- [[Catseye]] [Special] +3<br>
+- [[Catseye]] [Rare] +3<br>
+- [[Catseye]] [Super Rare] +3<br>
+- [[Catseye]] [Uber Rare] +3<br>
+- [[Catseye]] [Legend] +3
+|XP = 2,850 XP
+|width = 4,000
+|max enemies = 30
+|jpname = 17th Floor
+|script = 17階
+|romaji = 17 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★9
+|prev stage = [[Infernal Tower/Floor 16|Floor 16]]
+|next stage = [[Infernal Tower/Floor 18|Floor 18]]
+}}
+
+==Battleground==
+*20 [[Shibalien]]s spawn after 0.07 seconds<sup>2f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*10 [[Kroxo]]s spawn after 0.67 seconds<sup>20f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Maawth]] spawns after 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Satan Claus]] spawns as the boss.
+**1 [[Gorilliam]] spawns.
+**5 [[Scissoroo]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**1 [[Bun Bun Symbiote]] spawns.
+**Infinite [[Kroxo]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+
+==Strategy==
+Similarly to the original [[Heavenly Tower/Floor 17|Floor 17]], all the enemies are at least part [[:Category:Alien Enemies|Alien]]. This floor doesn't really change all that much, just replacing the [[Elder Sloth]] with Satan Claus, and [[Nimoy Bore]] with Gorilliam, and  buffing the peons. [[:Category:Anti-Alien Cats|Anti Alien]] units are all useful here, particularly [[Rover Cat (Rare Cat)|Catellite]], due to its strong ability against aliens and comes with [[:Category:Cats with Warp Immunity|Warp Immunity]], which is pretty important due to 2 of the major enemies being able to warp cats. You can also bring [[:Category:Anti-Floating Cats|Anti Floatings]] if you're having trouble with Bun Bun Symbiote.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-17.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]

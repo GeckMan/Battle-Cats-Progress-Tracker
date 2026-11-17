@@ -1,0 +1,155 @@
+{{Documentation}}
+{{#tag:tabber|
+New Enemies=
+==Parameters==
+<pre>
+{{Update|mode=enemies
+|enemy1
+|enemy2
+|enemy3
+|-|number|traits
+...
+}}
+</pre>
+If enemy is a placeholder without an icon then must follow the form <syntaxhighlight inline lang="text">|-|number|traits</syntaxhighlight> where number is the ERO number and traits is as it would be in [[Template:Enemy Stats|Enemy Stats]].
+
+==Example Usage==
+<pre>
+{{Update|mode=enemies
+|Doge
+|B.B.Bunny
+|-|17|Red
+|Doge Dark
+|Bears Be Back
+|Johnnyleon
+|Wild Doge
+|Infernal Tyrant Nyandam
+}}
+</pre>
+
+===Result===
+{{Update|mode=enemies
+|Doge
+|B.B.Bunny
+|-|17|Red
+|Doge Dark
+|Bears Be Back
+|Johnnyleon
+|Wild Doge
+|Infernal Tyrant Nyandam
+}}
+
+{{!}}-{{!}}
+New Cats=
+==Parameters==
+<pre>
+{{Update|mode=cats
+|cat1
+|cat1source
+|cat2
+|cat2source
+|cat3
+|cat3source
+|cat4
+|-
+...
+}}
+</pre>
+Cat is a valid cat name, source is where the unit comes from (see existing update pages). If the source of cat is the same as the source of the one immediately before it (see [[Version 2.0 Update]] for an example) then put "-" as the source.
+
+In case there's some manual functionality you're really in need of, see how [[Version 6.0 Update]] deals with the Iron Wall.
+
+==Example Usage==
+<pre>
+{{Update|mode=cats
+|Bodhisattva Cat
+|[[File:Rarecapsule.png|150px|link=Cat Capsule#Rare Cat Capsule|Rare Cat Capsule]]
+|Delinquent Cat
+|-
+|Hip Hop Cat
+|-
+|Cat
+|the game imo
+|Summon 9
+|- (doesn't matter what you put here; it will be ignored)
+}}
+</pre>
+
+===Result===
+{{Update|mode=cats
+|Bodhisattva Cat
+|[[File:Rarecapsule.png|150px|link=Cat Capsule#Rare Cat Capsule|Rare Cat Capsule]]
+|Delinquent Cat
+|-
+|Hip Hop Cat
+|-
+|Cat
+|the game imo
+|Summon 9
+|- (doesn't matter what you put here; it will be ignored)
+}}
+
+{{!}}-{{!}}
+New Talents/True Forms/Ultra Forms=
+:''Currently these 3 work the exact same way so they will be documented as one.''
+==Parameters==
+<pre>
+{{Update|mode=trueforms
+OR
+{{Update|mode=ultraforms
+OR
+{{Update|mode=talents
+|cat1
+|cat1changes
+|cat2
+|cat2changes
+|cat3
+|cat3changes
+|cat4
+|-
+...
+}}
+</pre>
+Cat is a valid cat name, changes are a description of the changes that such talents/True Forms apply to the cat (this part of the template actually does very little).
+
+==Example Usage==
+<pre>
+{{Update|mode=trueforms
+|Bodhisattva Cat
+|Now moves fast
+|Delinquent Cat
+|Now attacks fast
+|Hip Hop Cat
+|Now spits acid
+|Cat
+|'''HP:''' 20,400 → 51,000<br>
+'''ATT:''' 17,000 → 30,600<br>
+'''DPS:''' 1,961.54 → 3,530.77<br>
+'''Range:''' 325 → 400<br>
+'''Speed:''' 12 → 18<br>
+'''Recharge:''' 24.53s → 91.2s<br>
+[[File:Strong Against.png]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Alientraiticon.png|40px]]<br>
+[[File:Freeze.png]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Alientraiticon.png|40px]] 50% → 100%
+}}
+</pre>
+
+===Result===
+{{Update|mode=trueforms
+|Bodhisattva Cat
+|Now moves fast
+|Delinquent Cat
+|Now attacks fast
+|Hip Hop Cat
+|Now spits acid
+|Cat
+|'''HP:''' 20,400 → 51,000<br>
+'''ATT:''' 17,000 → 30,600<br>
+'''DPS:''' 1,961.54 → 3,530.77<br>
+'''Range:''' 325 → 400<br>
+'''Speed:''' 12 → 18<br>
+'''Recharge:''' 24.53s → 91.2s<br>
+[[File:Strong Against.png]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Alientraiticon.png|40px]]<br>
+[[File:Freeze.png]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Alientraiticon.png|40px]] 50% → 100%
+}}
+
+}}

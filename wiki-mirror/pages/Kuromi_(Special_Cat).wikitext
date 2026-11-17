@@ -1,0 +1,121 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit, for the enemy, see [[Kuromi (Enemy)]].''
+'''Kuromi''' is a [[:Category:Special Cats|Special Cat]] that could be obtained from the [[Nebaaru-kun and Nyanpazuru Collaboration Event|Nebaaru-kun and Nyanpazuru Collaboration]] [[Cat Capsule#Collaboration Event Capsule|Event Cat Capsule]]. It was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Cat Info
+|ID = 264
+|rarity = EX
+|name1 = Kuromi
+|name2 = Kuromi and Cats
+}}
+
+==Evolution==
+Evolves into '''Kuromi and Cats''' at level 10.
+
+==Strategy/Usage==
+This unit could be compared to [[Nono (Rare Cat)|Nono]] and [[Li'l Gau (Rare Cat)|Li'l Gau]] as an [[:Category:Anti-Dark Cats|anti-Dark]] meatshield, but what separates Kuromi from the other two is that this cat was designed to also be an attacker. As with most collab units, better alternatives are everywhere, and Kuromi is outclassed by nearly everything under the sun. [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] is the main contender here, but he is far from the only option. There's also [[Teacher BearCat (Rare Cat)|Assassin BearCat]], [[Talents|Talented]] [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]], [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]], and so many more. All of them work better simply because they'll do more damage than this unit will ever be able to against [[:Category:Dark Enemies|Dark]] enemies, and even non-Dark enemies.
+
+As a meatshield, even with Strong Against, Kuromi has the same issues as other failing meatshields, those being low health, poor spammability and a somewhat high cost. Given how much damage Dark enemies do, and how using [[Tank Cat (Normal Cat)|Eraser Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser]] provides a better defense, even without Nono or Li'l Gau, sets in stone how poor of a unit Kuromi is. Additionaly, Bombercat can't get Kuromi working either, as it's unable to knockback enemies quickly. The only way this Cat can serve you is to up your [[User Rank]]. At least he's better than [[Dragon League Swordsman (Rare Cat)|Dragon League Swordsman]], a worse anti-Dark meatshield, but that's it.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 264
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni264 f00.png
+|Image2 = Uni264 c00.png
+|Name1 (JP) = クロミ
+|Desc1 (JP) = にゃんパズルから参戦！<br>色々な事に興味を持つ努力家<br>黒い敵にめっぽう強い
+|Transl1 (JP) = Joined the war from NYAN puzzle!<br>
+Hard worker who has an interest in various things.<br>For a black enemy, extreme forcing.
+|Name2 (JP) = クロミとにゃんこたち
+|Desc2 (JP) = にゃんパズルから参戦！<br>クロエという双子の姉妹がいるらしい<br>黒い敵にめっぽう強い
+|Transl2 (JP) = Joined the war from NYAN puzzle!<br>There seems to be a twin sister called Chloe.<br>For a black enemy, extreme forcing.
+}}
+
+==Cost==
+*Chapter 1: 340円
+*Chapter 2: 480円
+*Chapter 3: 640円
+{{Upgrade Cost|EX4}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kuromi
+|Normal Base HP = 420
+|Normal Base AP = 30,30
+|Normal Range = 160
+|Normal Foreswing = 11,19
+|Normal Attack Cooldown = 21
+|Normal Attack Length = 31
+|Normal Speed = 12
+|Normal KB = 4
+|Normal Cost = 320
+|Normal Recharge = 420
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (510 at 11f <sup>0.37s</sup>, 510 at 19f <sup>0.63s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Kuromi and Cats
+|Evolved Base HP = 550
+|Evolved Base AP = 40,40
+|Evolved Range = 160
+|Evolved Foreswing = 11,19
+|Evolved Attack Cooldown = 21
+|Evolved Attack Length = 31
+|Evolved Speed = 12
+|Evolved KB = 4
+|Evolved Cost = 320
+|Evolved Recharge = 420
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (680 at 11f <sup>0.37s</sup>, 680 at 19f <sup>0.63s</sup>)<br>
+{{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 420 HP
+|val-Normal-Attack Power = 60 damage<br>(45 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 40f <sub>1.33 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 14 ~ 5.2 seconds
+|val-Normal-MaxHP = 7,140 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(765 DPS)
+|val-Evolved-Health = 9,350 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(1,020 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 40f <sub>1.33 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 11f <sup>0.37s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 14 ~ 5.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni264 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/265.html
+
+----
+{{CatNav|Pochi|Setsuko}}
+----
+
+{{Nebaaru-kun and Nyanpazuru}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Strong ability]]

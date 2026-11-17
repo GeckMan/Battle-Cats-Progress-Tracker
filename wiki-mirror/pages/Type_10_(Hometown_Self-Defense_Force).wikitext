@@ -1,0 +1,73 @@
+{{RemovedContent}}
+{{JPExclusive}}
+:''For the Cat Unit, see [[Type 10 (Special Cat)]]. Not to be confused with [[Type 10 (Enemy)]].''
+'''Type 10''' was a [[:Category:Traitless Enemies|Traitless]] enemy that appeared in the [[Hometown Self-Defense Force Collaboration Event]]. It was completely replaced with [[Type 10 (Enemy)|a metal variant]] for the [[Unseen in 2019]] stage. It was added in [[Version 2.0 Update#Version 2.0.4 Update|Version 2.0.4]].
+
+{{Enemy Info
+|name = Type 10
+|image = HometownType10.png
+|appearance = [[Hometown Self-Defense Force Collaboration Event]]
+|money drop = 500円 - 1,975円
+|novariants = true
+}}
+
+==Enemy==
+Type 10 was a tank with fairly low standing range, damage and movement speed.
+
+==Strategy==
+A very easy enemy to defeat, shouldn't have posed much of a threat due to its low range and other low stats. Any of the [[:Category:Normal Cats|Normal Cats]] could make quick work of it.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hometown Self-Defense Force Collaboration Event#Hometown Self-Defense Force|Hometown Self-Defense Force]]:
+**[[Sergeant Chakkari]] (100%)
+**[[Master Sergeant Yorudemo]] (100%)
+**[[Lieutenant Kakeashi]] (100%)
+**[[Major Jeje]] (200%)
+**[[Colonel Enyakora]] (400%)
+**[[Intense Chief of Staff]] (800%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy Key = Type 10 (Hometown)
+|Enemy = Type 10
+|Health = 15000
+|Attack Power = 1000
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 65
+|Movement Speed = 4
+|Knockback = 2
+|Foreswing = 6
+|Backswing = 25
+|Ability = [[Base Destroyer]] (deals x4 damage to Cat Base)
+|Element = Traitless
+}}
+
+==Animations==
+{{AnimationViewer|055 e old.png|MediaWiki:Custom-AnimationViewer/055 e old.json}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+HometownType10 Attack.gif|Type 10's attack animation
+055 e old.png|Type 10's Spritesheet
+</gallery>
+
+==Trivia==
+*This enemy was based on the [[wikipedia:Type 10|Type 10]] Main Battle Tank of the Japan Self-Defense Forces.
+
+==Reference==
+*https://battlecats-db.com/enemy/057.html
+
+----
+{{EnemyNav|Type 10|Metal One Horn}}
+----
+
+{{Hometown Self-Defense Force}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemy Units]]
+[[Category:Base Destroyer Enemies]]
+[[Category:Area Attack Enemies]]

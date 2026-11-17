@@ -1,0 +1,118 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Hitomi Saionji (Enemy)]]. For the stage, see [[Hitomi Saionji]].''
+
+'''Hitomi Saionji''' is a [[:Category:Special Cats|Special Cat]] added in [[Version 3.4 Update|Version 3.4]] and was created by a collaboration event between [[Kishidan Collaboration Event|Battle Cats and Kishidan]]. He could be unlocked by using a [[Serial Codes|serial code]] from Kishidan's CD (幸せにしかしねーから). He is no longer obtainable due to the removal of serial codes.
+
+{{Cat Info
+|ID = 164
+|rarity = EX
+|name1 = Hitomi Saionji
+|name2 = Tommy & Cat
+}}
+
+==Evolution==
+Evolves into '''Tommy & Cat''' at level 10.
+
+==Strategy/Usage==
+Hitomi is virtually a weaker [[Kung Fu Cat (Special Cat)|Kung Fu Cat]] on all fronts. Though Hitomi has decent stats, his recharge time massively drags down his usage below most other midrangers, including the aforementioned Kung Fu as well as [[Salon Cat (Rare Cat)|Salon Cat]] and [[Actress Cat (Special Cat)|Actress Cat]]. Even [[Titan Cat (Normal Cat)|Titan Cat]]'s superior stats and useful tankiness put Hitomi's usability in [[Empire of Cats]] into question, the only place Hitomi could even hypothetically be useful.
+
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 164
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni164 f00.png
+|Image2 = Uni164 c00.png
+|Name1 (JP) = 西園寺 瞳 (Saionji Hitomi)
+|Desc1 (JP) = ヤンクロックバンド氣志團から参戦！<br>ギター担当の長身２メートル９センチ<br>通り名は『多摩の大巨人』
+|Transl1 (JP) = Joining the war from the yankii rock band Kishidan!<br>A 2 m and 9 cm tall guitarist.<br>His catchphrase is "Giant of Tama"<br>
+|Name2 (JP) = トミー&にゃんこ (Tomī & Nyanko, Tommy & Cat)
+|Desc2 (JP) = ヤンクロックバンド氣志團から参戦！<br>ギター担当の長身２メートル９センチ<br>J.Bというチワワを飼う巨人(範囲攻撃)
+|Transl2 (JP) = Joining the war from the yankii rock band Kishidan!<br>A 2 m and 9 cm tall guitarist.<br>A giant with a chihuahua named J.B (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 1,350円
+*Chapter 2: 2,025円
+*Chapter 3: 2,700円
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hitomi Saionji
+|Normal Base HP = 600
+|Normal Base AP = 800
+|Normal Range = 295
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 161
+|Normal Attack Length = 52
+|Normal Speed = 7
+|Normal KB = 2
+|Normal Cost = 1350
+|Normal Recharge = 1300
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Tommy & Cat
+|Evolved Base HP = 600
+|Evolved Base AP = 800
+|Evolved Range = 295
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 161
+|Evolved Attack Length = 52
+|Evolved Speed = 7
+|Evolved KB = 2
+|Evolved Cost = 1350
+|Evolved Recharge = 1300
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 800 damage<br>(147.24 DPS)
+|val-Normal-Attack Range = 295
+|val-Normal-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 43.33 ~ 34.53 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 13,600 damage<br>(2,503.07 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 13,600 damage<br>(2,503.07 DPS)
+|val-Evolved-Attack Range = 295
+|val-Evolved-Attack Frequency = 163f <sub>5.43 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 43.33 ~ 34.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni164 f00}}
+
+==Trivia==
+*Tama is a city in Tokyo.
+
+==Reference==
+*https://battlecats-db.com/unit/165.html
+
+----
+{{CatNav|Hikaru Saotome|Hoshi Grandmarnier}}
+
+----
+
+{{Kishidan}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Serial Code Cats]]

@@ -1,0 +1,71 @@
+:''For more uses of "Sakura" see [[Sakura (disambiguation)]].''
+'''Sakura''' (さくら, '''''Sakura''''') is a [[:Category:Traitless Enemies|Traitless]] enemy from the [[Street Fighter Collaboration Event]]. She was added in [[Version 11.9 Update|Version 11.9]].
+
+{{Enemy Info
+|name = Sakura
+|image = E 622.png
+|appearance = [[Street Fighter Collaboration Event]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Sakura has rather high damage for a street fighter collaboration enemy, and also a [[Omni Strike]] that pierces up to 350 range. She has rather slow attack frequency for a street fighter collaboration enemy and can easily be stalled with meatshields due to her long backswing.
+
+==Strategy==
+Generic backliners can snipe her relatively easily, but you can also use her low damage per hit to chain attacks from rushers like [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] in lower magnifications. Otherwise, [[Crazed Lizard Cat (Super Rare Cat)|Dual]] [[Lizard Cat (Normal Cat)|Dragons]] + [[Ururun Wolf (Special Cat)|Ururun Cat]] get the job done.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS SAKURA (Easy)]] (4%)
+**[[VS SAKURA (Expert)]] (100%)
+*[[Street Fighter Collaboration Event#Street Fighter - VERY HARD -|Street Fighter - VERY HARD -]]:
+**[[Master of Heart Lv.1]] (150%)
+**[[Master of Heart Lv.2]] (188%)
+**[[Master of Heart Lv.3]] (226%)
+**[[Master of Heart Lv.4]] (264%)
+**[[Master of Heart Lv.MAX]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sakura
+|Health = 400000
+|Attack Power = 18000
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 135
+|Movement Speed = 20
+|Knockback = 4
+|Foreswing = 6
+|Backswing = 58
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">6,000</span> at 6f <sup>0.2s</sup>, <span class="scaled" data-type="ap">6,000</span> at 14f <sup>0.47s</sup>, <span class="scaled" data-type="ap">6,000</span> at 18f <sup>0.6s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -150~350)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+622 e.png|Sakura's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/624.html
+
+----
+{{EnemyNav|Black Marmod|Luke}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]

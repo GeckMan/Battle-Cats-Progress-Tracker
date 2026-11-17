@@ -1,0 +1,8 @@
+<includeonly><onlyinclude>{{safesubst:#invoke:EnemyList|main}}</onlyinclude></includeonly>
+{{Documentation|self_doc=true}}
+Display a list of enemies.
+
+==Usage==
+<pre>{{EnemyList|Doge|Snache|Black Thunder Rider}}</pre>
+yields<br>
+{{EnemyList|Doge|Snache|Black Thunder Rider}}

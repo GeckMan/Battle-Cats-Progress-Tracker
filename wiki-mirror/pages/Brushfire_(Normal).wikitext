@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Those Guys|Croco|Hippoe|Zoge|Squire Rel|Doge Dark|Zir Zeal}}
+'''Brushfire (Normal)''' is the first stage in [[Island of Ash]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn151 00 s en.png]]
+|stage location = [[File:Mapname151 s en.png]]
+|energy = 100
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Those Guys|100%
+|Croco|100%
+|Hippoe|100%
+|Zoge|20%
+|Squire Rel|100%
+|Doge Dark|100%}}
+|boss = {{Magnification|Zir Zeal|20%}}
+|treasure = One of the following (unlimited):<br>
+- Coal +2 (11.5%)<br>
+- Beast Bones +2 (11.5%)<br>
+- Coal +1 (38.5%)<br>
+- Beast Bones +1 (38.5%)
+|XP = 1,900 XP
+|width = 4,500
+|max enemies = 8
+|script = 焼けた森 中級
+|star = 1
+|event-chapter = [[Island of Ash]]
+|difficulty = ★3
+|prev stage = N/A
+|next stage = [[Brushfire (Veteran)]]
+}}
+
+==Battleground==
+*Infinite [[Those Guys]] spawn after 0.07 seconds<sup>2f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Croco]]s spawn after 0.07 seconds<sup>2f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*5 [[Hippoe]]s spawn after 20 seconds<sup>600f</sup>, delay 30~40 seconds<sup>900f~1,200f</sup>.
+*1 [[Zoge]] spawns after 30 seconds<sup>900f</sup>.
+*Infinite [[Zoge]]s spawn after 60 seconds<sup>1,800f</sup>, delay 30~40 seconds<sup>900f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Zir Zeal]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**4 [[Doge Dark]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+
+==Strategy==
+The starting peons are not that difficult, as Zoge was powered down to 20% while Doge Dark is still at 100%. That being said, Zoge can still cause trouble by burrowing and reviving at inopportune moments. General attackers such as [[Salon Cat (Rare Cat)|Salon Cat]] and [[Mer-Cat (Rare Cat)|Cameraman Cat]] work well, especially with their true forms and at higher levels. [[Weightlifter Cat (Super Rare Cat)|Weightlifter]] works well against the Doge Dark swarm and as a generalist.
+
+The main threat here is Zir Zeal, who can get dangerously close to the base and be dangerously difficult to defeat in time. However, this boss does not appear before the enemy base takes some damage. This gives the Cat Cannon time to charge and interrupt Zir Zeal's burrowing. This also gives players time to prepare by stacking general attackers and [[:Category:Anti-Zombie Cats|Anti-Zombie specialists]] such as [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]] and [[Wushu Cat (Rare Cat)|Wushu Cat]]. These Cats, as well as any other [[:Category:Zombie Killer Cats|Zombie Killers]], are especially useful for preventing Zir Zeal's revival if they get the final hit.
+
+==Reference==
+*https://battlecats-db.com/stage/s01151-01.html
+
+{{Guerrilla}}
+[[Category:Builder's Blitz Stages]]
+[[Category:Event Stages]]

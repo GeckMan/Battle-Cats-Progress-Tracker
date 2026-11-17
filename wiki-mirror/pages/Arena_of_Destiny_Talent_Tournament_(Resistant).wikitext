@@ -1,0 +1,117 @@
+{{EnemiesAppearing|Talent Orb Castle|Squire Rel|THE FOLIVOREAN|Fallen Bear|Cumulus Gallus|Aku Gory|Pterowl Hazuku|Li'l Bun Bun|Gobble|H. Nah}}
+'''Talent for Battle''' is the 47th [[Arena of Honor]] of the [[Catclaw Dojo]]. It awards Mysterious Bronze, Silver and Golden Treasure Chests with Ability [[Talent Orbs|Orbs]].
+
+{{Stage Info
+|stage name = [[File:E 720.png]]
+[[File:Mapsn046 00 r en.png]]
+|stage location = [[File:Mapname046 r en.png]]
+|energy = 10
+|enemy castle hp = Unlimited
+|base = {{Magnification|Talent Orb Castle|0}}
+|enemies = {{Magnification|Squire Rel|0
+|Fallen Bear|0
+|Aku Gory|0
+|Li'l Bun Bun|0
+|H. Nah|0
+|Pterowl Hazuku|0
+|THE FOLIVOREAN|0
+|Cumulus Gallus|0
+|Gobble|0}}
+|boss = {{Magnification|THE FOLIVOREAN|0
+|Cumulus Gallus|0
+|Aku Gory|0
+|Pterowl Hazuku|0
+|Li'l Bun Bun|0
+|Squire Rel|0
+|Gobble|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 20
+|jpname = Fighting Instinct Tournament
+|script = 闘争本能大会
+|romaji = Tōsō Honnō Taikai
+|star = 1
+|dojo-chapter = [[Arena of Destiny]]
+}}
+
+==Rules==
+{{DojoRule|Resistant}}
+
+==Battleground==
+*The enemy base here is a [[Talent Orb Castle (Enemy Base)|Talent Orb Castle]].
+*1 [[Fallen Bear]] (240%) spawns after 160 seconds<sup>4,800f</sup>.
+*2 [[Li'l Bun Bun]]s (1,800%) spawn after 153.33 seconds<sup>4,600f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*1 [[H. Nah]] (360%) spawns after 153.33 seconds<sup>4,600f</sup>.
+*1 [[Aku Gory]] (300%) spawns after 140 seconds<sup>4,200f</sup>.
+*4 [[Squire Rel]]s (4,000%) spawn after 140 seconds<sup>4,200f</sup>, delay 3.33 seconds<sup>100f</sup>.
+*1 [[Pterowl Hazuku]] (100%) spawns after 133.33 seconds<sup>4,000f</sup>.
+*2 [[Aku Gory|Aku Gories]] (200%) spawn after 113.33 seconds<sup>3,400f</sup>, delay 20 seconds<sup>600f</sup>.
+*1 [[THE FOLIVOREAN]] (200%) spawns after 113.33 seconds<sup>3,400f</sup>.
+*1 [[Fallen Bear]] (150%) spawns after 100 seconds<sup>3,000f</sup>.
+*1 [[Cumulus Gallus]] (100%) spawns after 83.33 seconds<sup>2,500f</sup>.
+*3 [[Squire Rel]]s (3,000%) spawn after 60 seconds<sup>1,800f</sup>, delay 3.33 seconds<sup>100f</sup>.
+*2 [[Gobble]]s spawn after 60 seconds<sup>1,800f</sup>, delay 20 seconds<sup>600f</sup>.
+*1 [[H. Nah]] (200%) spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Aku Gory]] (200%) spawns after 33.33 seconds<sup>1,000f</sup>.
+*2 [[Li'l Bun Bun]]s (1,000%) spawn after 20 seconds<sup>600f</sup>, delay 13.33 seconds<sup>400f</sup>.
+*5 [[Squire Rel]]s (2,400%) spawn after 6.67 seconds<sup>200f</sup>, delay 2.67 seconds<sup>80f</sup>.
+*When the base takes 50,000 damage:
+**1 [[Gobble]] spawns as the boss.
+*When the base takes 100,000 damage:
+**1 [[Squire Rel]] (3,000%) spawns as the boss.
+**4 [[Squire Rel]]s (3,000%) spawn, delay 2 seconds<sup>60f</sup>.
+*When the base takes 200,000 damage:
+**1 [[Li'l Bun Bun]] (1,200%) spawns as the boss.
+*When the base takes 210,000 damage:
+**1 [[Li'l Bun Bun]] (1,200%) spawns.
+*When the base takes 400,000 damage:
+**1 [[Pterowl Hazuku]] (100%) spawns as the boss.
+*When the base takes 700,000 damage:
+**1 [[Aku Gory]] (200%) spawns as the boss.
+*When the base takes 710,000 damage:
+**2 [[Aku Gory|Aku Gories]] (200%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 1,000,000 damage:
+**1 [[Cumulus Gallus]] (100%) spawns as the boss.
+**1 [[Fallen Bear]] (200%) spawns.
+*When the base takes 1,300,000 damage:
+**1 [[THE FOLIVOREAN]] (240%) spawns as the boss.
+**4 [[Squire Rel]]s (4,800%) spawn, delay 2 seconds<sup>60f</sup>.
+*When the base takes 1,600,000 damage:
+**1 [[Pterowl Hazuku]] (120%) spawns as the boss.
+*When the base takes 2,000,000 damage:
+**1 [[Aku Gory]] (360%) spawns as the boss.
+*When the base takes 2,100,000 damage:
+**2 [[Aku Gory|Aku Gories]] (360%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 2,500,000 damage:
+**1 [[Cumulus Gallus]] (120%) spawns as the boss.
+**1 [[Fallen Bear]] (240%) spawns.
+*When the base takes 3,000,000 damage:
+**1 [[THE FOLIVOREAN]] (240%) spawns as the boss.
+**4 [[Squire Rel]]s (4,800%) spawn, delay 2 seconds<sup>60f</sup>.
+*When the base takes 3,500,000 damage:
+**1 [[Pterowl Hazuku]] (120%) spawns as the boss.
+*When the base takes 4,000,000 damage:
+**1 [[Aku Gory]] (360%) spawns as the boss.
+*When the base takes 4,100,000 damage:
+**2 [[Aku Gory|Aku Gories]] (360%) spawn, delay 13.33 seconds<sup>400f</sup>.
+*When the base takes 4,500,000 damage:
+**1 [[Cumulus Gallus]] (120%) spawns as the boss.
+**1 [[Fallen Bear]] (240%) spawns.
+*When the base takes 5,000,000 damage:
+**1 [[THE FOLIVOREAN]] (240%) spawns as the boss.
+**4 [[Squire Rel]]s (4,800%) spawn, delay 2 seconds<sup>60f</sup>.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*Unlike other Dojos, this one has a few other differences:
+**Enemies will drop money on defeat.
+**The base will not attack but is still an animated base, meaning Surges and Explosions can damage it.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Reference==
+*https://battlecats-db.com/stage/s11046-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

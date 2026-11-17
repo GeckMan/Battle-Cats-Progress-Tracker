@@ -1,0 +1,43 @@
+{{#invoke:Navbox|main
+|template = Template:Tower of Saviors
+|title = [[Tower of Saviors Collaboration Event]]
+|navbox_class = tower-of-saviors
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Voluptuous Peony - Daji (Uber Rare Cat)|Voluptuous Peony - Daji]]
+*[[Mollyanna Cat (Rare Cat)|Mollyanna Cat]]
+*[[Madhead (Rare Cat)|Madhead]]
+*[[Felix the Cat Duke Cat (Special Cat)|Felix the Cat Duke Cat]]
+*[[Dotty Cat (Special Cat)|Dotty Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Voluptuous Peony - Daji (Enemy)|Voluptuous Peony - Daji]]
+*[[Madhead (Enemy)|Madhead]]
+
+|header3 = Stages
+|group3 = Era of Enoch
+|list3 =
+*[[Frozen Glacier]]
+*[[Blazing Wastes]]
+*[[Sacred Wood]]
+*[[Shining City]]
+*[[Midnight Abyss]]
+
+|group4 = Battle with Madhead!
+|list4 =
+*[[Power-Up Pandemonium]]
+*[[Complete Power]]
+*[[Super Power]]
+*[[Perfect Power]]
+*[[Miracle Power]]
+
+|group5 = Ascend the Tower of Saviors
+|list5 =
+*[[Ascend the Tower of Saviors|Floors 1~10]]
+}}<templatestyles src="Tower of Saviors/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Tower of Saviors]]}}<noinclude>[[Category:Navboxes]]</noinclude>

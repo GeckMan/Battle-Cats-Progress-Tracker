@@ -1,0 +1,74 @@
+'''Log''' (丸太, ''Maruta'', '''Log''') is a [[:Category:Traitless Enemies|Traitless]] enemy. It was added in [[Version 13.6 Update|Version 13.6]].
+
+{{Enemy Info
+|name = Log
+|image = E 695.png
+|appearance = [[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]]
+|money drop = 150¢ - 592¢
+}}
+
+==Enemy==
+Log is practically just a copy of [[Firecracker]] with no trait, slightly better stats and a longer slow.
+
+==Strategy==
+Most strategies used against Firecracker will work against this enemy.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]]:
+**[[Hunt for Sustenance]] (5%)
+**[[Current-Carried Cats]] (100%)
+**[[Resist the Raging Current]] (650%)
+*[[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Tree Strike Trial]] (5%)
+**[[Iron Orb Trial]] (100%)
+**[[Brute Force Trial]] (350%)
+**[[Tough Love Trial]] (650%)
+*[[Anniversary/13 1/2 Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Tree Strike Trial (13 1/2)|Tree Strike Trial]] (5%)
+**[[Iron Orb Trial (13 1/2)|Iron Orb Trial]] (100%)
+**[[Brute Force Trial (13 1/2)|Brute Force Trial]] (350%)
+**[[Tough Love Trial (13 1/2)|Tough Love Trial]] (650%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Log
+|Health = 2000
+|Attack Power = 500
+|Attack Range = 75
+|Attack Type = Area
+|Time Between Attacks = 85
+|Movement Speed = 25
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 77
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -300~150)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+695 e.png|Log's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/697.html
+
+----
+{{EnemyNav|Techn-Old Hyena|Boulder}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]

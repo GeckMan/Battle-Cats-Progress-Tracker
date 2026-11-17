@@ -1,0 +1,188 @@
+:''This article is about the Cat Unit. For the enemy, see [[Cafeteria Cat (Enemy)]].''
+'''Food Stall Cat''' is a [[:Category:Rare Cats|Rare Cat]] that was implemented in [[Version 5.5 Update|Version 5.5]] and can be unlocked when beating any stage in the [[A Cultured Festival]] event. [[True Form]] added in [[Version 13.7 Update|Version 13.7]] increases health, damage, range and speed, and grants both [[Curse|Curse]] and [[Immune to Curse|Curse Immunity]].
+
+{{Cat Info
+|ID = 303
+|rarity = RR
+|name1 = Food Stall Cat
+|name2 = Delivery Cat
+|name3 = Cafeteria Cat
+}}
+
+==Evolution==
+Evolves into '''Delivery Cat''' at level 10.
+
+Evolves into '''Cafeteria Cat''' at level 20 when obtained from [[Food Stall Cat Awakes!]] (may drop on the 1st stage but guaranteed on the 2nd).
+
+==Strategy/Usage==
+Food Stall Cat's low range limits his usage to short-ranged Angels such as [[Angelic Gory]], [[Gabriel]] and [[Boraphim]]; and at level 30, his anti-Angel DPS amounts to '''4,916''', or almost as much as the average [[:Category:Uber Rare Cats|Uber Rare]] provided all [[Heaven's Fruit]]s are at 100%. Under rare circumstances, he can also work as a rusher against ranged enemies like [[Sunfish Jones]], pairing well with [[A Gift of Cats (Rare Cat)|A Gift of Cats]] if both are used for rushing. However, [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]] is almost always better than this unit due to Mushroom having Area Attack, better range and [[Wave Attack|Wave]] Immunity, meaning that if you own Mushroom Cat, you may never use Food Stall Cat unless you need his speed.
+
+==='''True Form'''===
+While this unit is only fairly average, its True Form grants several significant boosts. The stat boosts turn an otherwise frail and situational attacker into a dangerous specialist that can dish out extreme damage to any Angel it gets a hit on and has a higher chance to survive a counterattack during its backswing. Its higher stats means it offsets itself from Mushroom Cat, whom Cafeteria Cat now outperforms in terms of damage and DPS, albeit it still has the disadvantages of lower range, lack of Wave Immunity and Single Attack. Higher speed allows it to support the frontline better, and the range bonus provides slightly more insurance against melee enemies, despite not providing new viable targets apart from [[Lutrinae Gokurakko]] and [[St. Dober]]. The higher damage, as mentioned earlier, allows it to tear through the aforementioned two if protected properly and especially [[Boraphim]].
+
+If you own this unit, do '''NOT''' skip getting Mushroom Cat, as Mushroom can properly counter [[Angelic Beast Rajakong]] with its stronger stats, and Cafeteria will struggle since it cannot outrange his Omni-Strike.
+
+Its Curse ability is fairly situational with little utility as it cannot hope to reach most relevant enemies, but does see applications against Gokurakko, [[Heavenly Herald Papuu]] and [[Great Angel Chibinel]], considering its high activation chance and uptime. Curse Immunity is more of a utility bonus, preventing the [[Relic Doge Base (Enemy Base)|Relic Doge Base]] and the like from removing its abilities when fighting Angels. Although primarily hindered by Single Attack, its sheer destructive power should not be discounted.
+
+It also has decently okay general usage, serving as a rusher, similar to [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], although some rushers like [[Ancient Egg: N004 (Special Cat)|Supercar Cat]] and [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]] are much stronger in general.
+
+{{Job|Classification = Rusher & Melee|TrueClass = Rusher & Nuker|UltraClass =}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Hot, Fresh 'n' Fast|Bounty Up (M)|Food Stall Cat|Pai-Pai|jpname=飲食業}}
+|{{CatCombo|Street Bazaar|"Knockback" Effects Up (Sm)|Stilts Cat|Food Stall Cat|jpname=さおだけ屋台}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 303
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni303 f00.png
+|Image2 = Uni303 c00.png
+|Image3 = Uni303 s00.png
+|Name1 = Food Stall Cat
+|Desc1 = Planning to corner the grilled calamari market.<br>Forgot to pay taxes, so now business takes<br>place on the run. Massive damage vs Angels.
+|Name2 = Delivery Cat
+|Desc2 = Brings gifts from the Cat God for you! Of<br>course, its all cash-on-delivery. Best pay up or<br>risk divine wrath. Massive damage vs Angels.
+|Name3 = Cafeteria Cat
+|Desc3 = Washes their hands and disinfects to perfection.<br>Delivers school lunches directly to students without fail.<br>Deals Massive damage to Angels and might Curse.
+|Name1 (JP) = ネコ屋台 (Neko Yatai, Food Stall Cat)
+|Desc1 (JP) = イカゲソたっぷりの斬新な明石焼き風たこ焼きで<br>一攫千金を狙う脱サラネコ<br>天使に超ダメージを与える
+|Transl1 (JP) = Akashiyaki-style takoyaki filled with squid gesso.<br>A Cat who quit a company and wants to get rich quick.<br>Deals super damage to Angels.
+|Name2 (JP) = ネコの宅配便 (Neko no Takuhaibin, Delivery Cat)
+|Desc2 (JP) = 着払いで神さまからの荷物を届ける神対応ネコ<br>荷物の中身について口外すると天罰が下るらしい<br>天使に超ダメージを与える
+|Transl2 (JP) = A Cat who is in touch with [[The Cat God (Special Cat)|God]]. Delivers packages from God, cash-on-delivery.<br>Can't disclose the contents of the packages or he'll face divine wrath.<br>Deals super damage to Angels.
+|Name3 (JP) = ネコ給食当番 (Neko Kyūshokutōban, Cat School Lunch Duty)
+|Desc3 (JP) = 徹底的な手洗いと除菌の技術を身に着け<br>給食をクラスまで届けるプロの運び屋<br>天使に超ダメージを与え、たまに呪う
+|Transl3 (JP) = A professional delivery person who has mastered thorough handwashing and sanitization techniques,<br>delivering school lunches to the classroom like a pro.<br>Deals super damage to angels and occasionally curses.
+|Name1 (TW) = 叫賣貓
+|Desc1 (TW) = 想靠著叫賣爆漿烏賊腳的明石燒風味章魚燒<br>來大賺一筆的轉行上班族<br>給予天使敵人超大傷害
+|Name2 (TW) = 宅配貓
+|Desc2 (TW) = 謹慎的配送來自神的貨到付款包裹<br>萬一把包裹的秘密說出去可能就會遭到報應<br>給予天使敵人超大傷害
+|Name3 (TW) = 打飯貓
+|Desc3 (TW) = 學會完美的洗手步驟與除菌技術<br>負責將營養午餐送到班上的打飯專家<br>給予天使敵人超大傷害，有時候可以詛咒敵人
+|Name1 (KR) = 타코야끼냥
+|Desc1 (KR) = 문어가 가득 든 소스 듬뿍 타코야끼로<br>일확천금을 노리는 전직 회사원<br>천사에게 초 데미지를 입힌다
+|Name2 (KR) = 냥택배
+|Desc2 (KR) = 착불로 신이 보낸 택배를 배달하는 신 전용 고양이<br>뭐가 들었는지 말하는 순간 천벌이 내린다<br>천사에게 초 데미지를 입힌다
+|Name3 (KR) = 고양이 급식당번
+|Desc3 (KR) = 자주 손을 씻고 개인 위생 수칙을 준수하여<br>급식을 교실까지 배달해주는 프로 급식당번<br>천사에게 초 데미지를 입히며 가끔 저주한다
+|Name4 (KR) = 철저한 손씻기와 에탄올 100%로 손소독 후
+|Desc4 (KR) = 급식을 교실까지 배달해주는 프로 급식당번<br>천사에게 초 데미지를 입히며 가끔 저주한다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Food Stall Cat
+|Normal Base HP = 555
+|Normal Base AP = 200
+|Normal Range = 200
+|Normal Foreswing = 12
+|Normal Attack Cooldown = 31
+|Normal Attack Length = 83
+|Normal Speed = 21
+|Normal KB = 4
+|Normal Cost = 350
+|Normal Recharge = 440
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Delivery Cat
+|Evolved Base HP = 555
+|Evolved Base AP = 200
+|Evolved Range = 200
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 31
+|Evolved Attack Length = 83
+|Evolved Speed = 21
+|Evolved KB = 4
+|Evolved Cost = 350
+|Evolved Recharge = 440
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|True Name = Cafeteria Cat
+|True Base HP = 1000
+|True Base AP = 620
+|True Range = 220
+|True Foreswing = 12
+|True Attack Cooldown = 31
+|True Attack Length = 83
+|True Speed = 25
+|True KB = 4
+|True Cost = 350
+|True Recharge = 440
+|True Attack Type = Single
+|True Targets = Angel
+|True Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Curse}} 50% chance to [[Curse|curse]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Curse}} [[Immune to Curse]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 555 HP
+|val-Normal-Attack Power = 200 damage<br>(72.29 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Normal-Movement Speed = 21
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 12f <sup>0.4s</sup><br>(71f <sup>2.37s</sup> backswing)
+|val-Normal-Recharge Time = 14.67 ~ 5.87 seconds
+|val-Normal-MaxHP = 9,435 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(1,228.92 DPS)
+|val-Evolved-Health = 9,435 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(1,228.92 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-Evolved-Movement Speed = 21
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 12f <sup>0.4s</sup><br>(71f <sup>2.37s</sup> backswing)
+|val-Evolved-Recharge Time = 14.67 ~ 5.87 seconds
+|val-True-Health = 17,000 HP
+|val-True-Attack Power = 10,540 damage<br>(3,809.64 DPS)
+|val-True-Attack Range = 220
+|val-True-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-True-Movement Speed = 25
+|val-True-Knockback = 4 times
+|val-True-Attack Animation = 12f <sup>0.4s</sup><br>(71f <sup>2.37s</sup> backswing)
+|val-True-Recharge Time = 14.67 ~ 5.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni303 f00}}
+
+==Trivia==
+*Food Stall Cat is a reskin of [[Flower Cat (Special Cat)|Flower Cat]] with a different ability and target trait.
+*The food that Food Stall Cat is preparing is [[wikipedia:Takoyaki|takoyaki]].
+*Delivery Cat's description is missing the apostrophe in "it's".
+*Delivery Cat's name and mention of Cat God in his description may be a reference to Matthew 6:13, "And lead us not into temptation, but deliver us from evil."
+*The logo on Delivery Cat's packages is that of [https://www.kuronekoyamato.co.jp/ Yamato Transport], a Japanese door-to-door delivery company.
+*Cafeteria Cat is based on the fact that in most Japanese schools, students will put on white coats and caps, then [[wikipedia:School lunch in Japan#Current|collect and deliver]] the school's lunches to their classrooms.
+
+==Reference==
+*https://battlecats-db.com/unit/304.html
+
+----
+{{CatNav|Lilith Cat|Mighty Kat-A-Pult}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Cats requiring Awakening for True Form]]
+[[Category:Cats with Curse ability]]
+[[Category:Cats with Curse Immunity]]

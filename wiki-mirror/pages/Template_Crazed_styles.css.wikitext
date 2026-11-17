@@ -1,0 +1,9 @@
+.ranger-navbox.crazed {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 0%, 0%) 0%, hsl(272, 58%, 32%) 50%, hsl(0, 0%, 0%) 100%);
+	--bg-sub-table-title: #893AF1;
+	--bg-group-name: hsl(271, 80%, 58%);
+	--title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

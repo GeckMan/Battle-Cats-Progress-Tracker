@@ -1,0 +1,93 @@
+:''This article is about the enemy. For the Cat Unit, see [[Jagando Jr. (Special Cat)]].''
+'''Lord of Ruin Jagando''' (破壊神ジャガンドー, ''Hakai-shin Jagandō'', '''Destruction God Jagando''') is an [[:Category:Aku Enemies|Aku]] enemy found exclusively in an [[Mount Aku (Aku Realm)/Invasion|invasion]] which appears in [[Mount Aku (Aku Realm)|Mount Aku/Mount Fuji]] after clearing all stages in [[The Aku Realms]]. Once defeated, his [[:Category:Mythic Cats|Mythic Cat]] counterpart [[Jagando Jr. (Special Cat)|Jagando Jr.]] will be unlocked. He was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Lord of Ruin Jagando
+|image = E 572.png
+|appearance = '''Aku Realm:''' [[Mount Aku (Aku Realm)/Invasion|Mount Aku/Mount Fuji Invasion]]
+|money drop = 5,000¢ - 19,750¢
+}}
+
+==Enemy==
+At a glance, Lord of Ruin Jagando may not seem that dangerous, as each of his first two hits of his attack deals only 6,000 damage, and the third takes much longer to execute. These major weaknesses are completely offset by an [[Omni Strike]] reaching the majority of units at up to 450, including [[:Category:Shield Piercing Cats|Shield Piercers]] that could help cut down his effective health pool of 5,600,000; while his reduced standing range at 300 removes any chance of him missing his third hit and allows him to move forward more easily. If that weren't enough, the third hit also carries a wildly inconsistent [[Surge Attack]] that has a 30% chance to spawn and could wipe out everything or nothing depending on when and where it appears; so don't expect to beat him and his support on your first try.
+
+==Strategy==
+:''See [[Mount Aku (Aku Realm)/Invasion]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 572
+|Type = Aku
+|Image1 = Enemy icon 572.png
+|Name1 = Lord of Ruin Jagando
+|Desc1 = The evil god of destruction, once sealed away<br>by great heroes and now revived by the rituals<br>of a Dark Priest. A long-forgotten age of<br>devastation is about to arise once more...
+|Name1 (JP) = 破壊神ジャガンドー (Hakai-shin Jagandō, Destruction God Jagando)
+|Desc1 (JP) = 伝説の英雄により封印されていたが<br>大神官が行った復活の儀式により<br>この世に再び解き放たれた邪悪な破壊神。<br>人々の脳裏に大厄災の悪夢が蘇る…
+|Transl1 (JP) = The evil god of destruction, sealed away by a legendary hero<br>but brought back into this world by the [[High Priest Mamon|Great Priest]]'s resurrection ritual. The nightmare of the great<br>calamity is back in the minds of the people...
+|Name1 (TW) = 破壞神邪根德
+|Desc1 (TW) = 曾遭傳說的英雄封印，<br>但藉由大神官執行的復活儀式<br>而再度解放於這個世界的邪惡破壞神。<br>人們腦中將再浮出大災難的惡夢…
+|Name1 (KR) = 파괴신 자간드
+|Desc1 (KR) = 전설의 영웅에 의해 봉인되었지만<br>대신관이 거행한 부활 의식에 의해<br>이 세상에 다시 해방된 사악한 파괴신.<br>사람들 머리속의 대재앙의 악몽이 다시 시작되다...
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[The Aku Realms]]===
+*Stage 30-IN: [[Mount Aku (Aku Realm)/Invasion|Mount Aku Invasion]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Lord of Ruin Jagando
+|Health = 2000000
+|Attack Power = 36000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 6
+|Knockback = 2
+|Foreswing = 20
+|Backswing = 43
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">6,000</span> at 20f <sup>0.67s</sup>, <span class="scaled" data-type="ap">6,000</span> at 35f <sup>1.17s</sup>, <span class="scaled" data-type="ap">24,000</span> at 108f <sup>3.6s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -500~450)<br>
+{{AbilityIcon|Surge Attacks}} 30% chance to create a level 1 [[Surge Attack]] between 150 and 750 range on 3rd hit<br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">1,800,000</span>; regenerates with 100% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy|bg=Bg164.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+572 e.png|Lord of Ruin Jagando's spritesheet
+Demonmap anim000.png|Lord of Ruin Jagando in Mount Aku Invasion's map spritesheet
+OhnoitsJagando.gif|Lord Of Ruin Jagando's animations
+</gallery>
+
+==Trivia==
+*As a skull-wearing demonic god of destruction summoned by an [[High Priest Mamon|evil priest]], he is more than likely a reference to the ''[[wikipedia:Dragon Quest|Dragon Quest]]'' character [[wikia:dragonquest:Malroth|Malroth]].
+**The name Jagando (ジャガンドー) may be derived from 邪 ''ja'' (evil), ジャガーノート ''jagānōto'' (juggernaut) and シドー ''Shidō'' (Malroth's Japanese name).
+*Jagando may have been inspired by the Hindu god of destruction, [[wikipedia:Shiva|Shiva]], who is often depicted with multiple pairs of arms and [https://commons.wikimedia.org/wiki/File:6_Śiva_and_Pārvatī_seated_on_a_terrace._1800_(circa)_BM.jpg blue skin]. Shiva's ''[[wikipedia:Vahana|vāhana]]'', [[wikipedia:Nandi (Hinduism)|Nandi]], is a bull, which may be referenced by the horns on Jagando's head. The skulls on Jagando's body could be based on the [[wikipedia:Mundamala|Mundamala]] (skull garland) worn by Shiva, and Jagando appearing on [[Mount Aku (Aku Realm)|Mount Aku]] could be a reference to how Shiva resides on the mountain [[wikipedia:Kailasha|Kailasha]], where he meditates sitting in a lotus position, the same pose as the [[Media:Bg137.png|cat statue]] in the non-[[Mount Aku (Aku Realm)/Invasion|invaded]] version of Mount Aku.
+*[[The Aku Realms]]' ending mentions that when the [[Cat Units|Cats]] defeated Jagando, he spit out an egg which hatched into [[Jagando Jr. (Special Cat)|Jagando Jr.]] This is a reference to [[wikia:dragonball:King Piccolo|King Piccolo]] from ''[[wikipedia:Dragon Ball|Dragon Ball]]'', whose last action before dying was to spit out an egg containing his final child and reincarnation, Piccolo Jr.
+*He is tied with [[High Priest Mamon]] for the highest [[Shield]] health of all Aku enemies.
+
+==Reference==
+*https://battlecats-db.com/enemy/574.html
+
+----
+{{EnemyNav|High Priest Mamon|Possessed Empress}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:The Aku Realms Enemies]]
+[[Category:Aku Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Surge Attack Enemies]]
+[[Category:Enemies with Shields]]
+[[Category:Mythic Bosses]]

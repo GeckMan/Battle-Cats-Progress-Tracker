@@ -1,0 +1,215 @@
+{{Documentation}}
+==Examples==
+<tabber>
+Only one form=
+<pre>
+{{Cat Info
+|ID = 673
+|rarity = UR
+|name1 = Cheetah Cat
+|image1 = 673 1.png
+}}
+</pre>
+===Result===
+{{Cat Info
+|ID = 673
+|rarity = UR
+|name1 = Cheetah Cat
+|image1 = 673 1.png
+}}
+
+|-|
+Normal and Evolved Forms=
+<pre>
+{{Cat Info
+|ID = 0
+|rarity = N
+|name1 = Cat
+|name2 = Macho Cat
+|image1 = 000 1.png
+|image2 = 000 2.png
+}}
+</pre>
+===Result===
+{{Cat Info
+|ID = 0
+|rarity = N
+|name1 = Cat
+|name2 = Macho Cat
+|image1 = 000 1.png
+|image2 = 000 2.png
+}}
+
+|-|
+Normal, Evolved and True Forms=
+<pre>
+{{Cat Info
+|ID = 0
+|rarity = N
+|name1 = Cat
+|name2 = Macho Cat
+|name3 = Mohawk Cat
+|image1 = 000 1.png
+|image2 = 000 2.png
+|image3 = 000 3.png
+}}
+</pre>
+===Result===
+{{Cat Info
+|ID = 0
+|rarity = N
+|name1 = Cat
+|name2 = Macho Cat
+|name3 = Mohawk Cat
+|image1 = 000 1.png
+|image2 = 000 2.png
+|image3 = 000 3.png
+}}
+
+|-|
+Normal, Evolved True, and Ultra Forms=
+<pre>
+{{Cat Info
+|ID = 73
+|rarity = UR
+|name1 = Oda Nobunaga
+|name2 = Wargod Nobunaga
+|name3 = Immortal Nobunaga
+|name4 = Phantasmal Nobunaga
+|image1 = 073 1.png
+|image2 = 073 2.png
+|image3 = 073 3.png
+|image4 = 073 4.png
+}}
+</pre>
+===Result===
+{{Cat Info
+|ID = 73
+|rarity = UR
+|name1 = Oda Nobunaga
+|name2 = Wargod Nobunaga
+|name3 = Immortal Nobunaga
+|name4 = Phantasmal Nobunaga
+|image1 = 073 1.png
+|image2 = 073 2.png
+|image3 = 073 3.png
+|image4 = 073 4.png
+}}
+</tabber>
+
+==Usage==
+<templatedata>
+{
+	"description": "Infobox for cat pages.",
+	"params": {
+		"ID": {
+			"description": "[[Cat Release Order]] ID",
+			"type": "number",
+			"required": true
+		},
+		"rarity": {
+			"description": "Unit's rarity",
+			"type": "string",
+			"suggestedvalues": [
+				"N",
+				"EX",
+				"RR",
+				"SR",
+				"UR",
+				"LR"
+			],
+			"required": true
+		},
+		"name1": {
+			"description": "Name of normal form",
+			"type": "string",
+			"example": "Cheetah Cat"
+		},
+		"image1": {
+			"description": "Image of normal form",
+			"type": "wiki-file-name",
+			"example": "673 1.png"
+		},
+		"name2": {
+			"description": "Name of evolved form",
+			"type": "string"
+		},
+		"image2": {
+			"description": "Image of evolved form",
+			"type": "wiki-file-name"
+		},
+		"name3": {
+			"description": "Name of true form",
+			"type": "string"
+		},
+		"image3": {
+			"description": "Image of true form",
+			"type": "wiki-file-name"
+		},
+		"name4": {
+			"description": "Name of ultra form",
+			"type": "string"
+		},
+		"image4": {
+			"description": "Image of ultra form",
+			"type": "wiki-file-name"
+		},
+		"version": {
+			"description": "Game version unit is from (if not from mobile version)",
+			"type": "string",
+			"suggestedvalues": [
+				"Switch",
+				"PC"
+			]
+		},
+		"categories": {
+			"description": "Sub-rarity categories",
+			"example": "Mythic",
+			"type": "string",
+			"suggestedvalues": [
+				"Mythic"
+			]
+		},
+		"key1": {
+			"description": "Unique name for unit if actual name is shared. See [[Commander Cat (Special Cat)]] for an example.",
+			"example": "Cat Bros R",
+			"type": "string"
+		},
+		"key2": {
+			"description": "Unique name for unit if actual name is shared. See [[Commander Cat (Special Cat)]] for an example.",
+			"example": "Cat Bros R",
+			"type": "string"
+		},
+		"key3": {
+			"description": "Unique name for unit if actual name is shared. See [[Commander Cat (Special Cat)]] for an example.",
+			"example": "Cat Bros R",
+			"type": "string"
+		},
+		"key4": {
+			"description": "Unique name for unit if actual name is shared. See [[Commander Cat (Special Cat)]] for an example.",
+			"example": "Cat Bros R",
+			"type": "string"
+		}
+	},
+	"format": "{{_\n|_ = _\n}}",
+	"paramOrder": [
+		"ID",
+		"rarity",
+		"categories",
+		"version",
+		"name1",
+		"name2",
+		"name3",
+		"name4",
+		"key1",
+		"key2",
+		"key3",
+		"key4",
+		"image1",
+		"image2",
+		"image3",
+		"image4"
+	]
+}
+</templatedata>
+[[Category:Infobox templates]]

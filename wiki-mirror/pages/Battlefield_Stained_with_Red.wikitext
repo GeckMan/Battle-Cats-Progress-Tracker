@@ -1,0 +1,59 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Puffzerker|Ginger Snache|Capy|St. Pigge the 2nd}}
+'''Battlefield Stained with Red''' is the fourth stage in [[Anniversary/12 1/2 Year#Arrival of the Red Ship|Arrival of the Red Ship]].
+
+{{Stage Info
+|stage name = [[File:rc011.png]]
+[[File:Mapsn399 03 s ja.png]]
+|stage location = [[File:Mapname399 s ja.png]]
+|energy = 150
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Puffzerker|150%
+|Ginger Snache|300%
+|Capy|100%
+|St. Pigge the 2nd|600%}}
+|boss = {{Magnification|Ginger Snache|300%}}
+|enemies2 = {{Magnification|Puffzerker|300%
+|Ginger Snache|600%
+|Capy|200%
+|St. Pigge the 2nd|1,200%}}
+|boss2 = {{Magnification|Ginger Snache|600%}}
+|treasure = - [[Road to Unification#Mechanics|War Funds]] +300 (100%, unlimited)
+|score reward = '''6,800''': [[Catamin]] [B] +1<br>
+'''5,000''': 500,000 XP<br>
+'''500''': [[Catseye]] [Special] +2
+|XP = 2,850 XP
+|width = 3,600
+|max enemies = 20
+|jpname = ?
+|script = 赤色に染まる戦場
+|romaji = ?
+|star = 2
+|event-chapter = [[Anniversary/12 1/2 Year#Arrival of the Red Ship|Arrival of the Red Ship]]
+|difficulty = ★8
+|prev stage = [[Surging Red Waves]]
+|next stage = [[The Red Ship Meets its End]]
+}}
+
+==Rules==
+{{StageRule|12thAnni}}
+
+==Battleground==
+*1 [[Puffzerker]] spawns after 13.33 seconds<sup>400f</sup>.
+*30 [[Ginger Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ginger Snache]] spawns as the boss.
+**2 [[Capy|Capies]] spawn, delay 20 seconds<sup>600f</sup>.
+**1 [[Puffzerker]] spawns.
+**3 [[Ginger Snache]]s spawn, delay 2~3.33 seconds<sup>60f~100f</sup>.
+**1 [[St. Pigge the 2nd]] spawns after 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01399-04.html
+
+{{Anniversary}}
+[[Category:Event Stages]]

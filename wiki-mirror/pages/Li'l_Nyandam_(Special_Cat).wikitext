@@ -1,0 +1,220 @@
+{{PageBanner|Li'l Nyandam Preview.png}}
+:''This article is about the Cat Unit. For the enemy, see [[Li'l Nyandam (Enemy)]].''
+'''Li'l Nyandam''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 3.5 Update|Version 3.5]] and can be unlocked when clearing [[Saint Red Fox]], the final stage of [[Dead End Night]]. [[True Form]] added in [[Version 7.0 Update|Version 7.0]] increases health, attack power, slow chance and attack rate, and gains Curse Immunity. In [[The Battle Cats Unite!]], it is guaranteed to recruit him once beating Saint Red Fox.
+
+{{Cat Info
+|ID = 172
+|rarity = EX
+|categories = Mythic
+|name1 = Li'l Nyandam
+|name2 = Dark Emperor Catdam
+|name3 = Schoolbus Nyandam
+}}
+
+==Evolution==
+Evolves into '''Dark Emperor Catdam''' at level 10.
+
+Evolves into '''Schoolbus Nyandam''' at level 30 using [[Catfruit]] and XP after completing [[Eldritch Forces]].
+
+==Strategy/Usage==
+Li'l Nyandam is a mediocre long-ranged unit. On paper, he can be useful mainly in 4-Crown [[Stories of Legend]] stages when fighting other long-ranged attackers due to the lack of alternatives, though in practice there are many other units that are able to do the same with much more value provided, such as [[Slime Cat (Rare Cat)|Slime Cat]] and [[Red Riding Mina (Special Cat)|Awakened Mina]]. Since his standing range is higher than most backliner enemies like [[Elder Sloth]], [[THE SLOTH]], [[Master A.]], [[Professor A.|Professor A]], and [[Dark Emperor Nyandam]] (these enemies have 450~501 range compared to his 551, which makes Li'l Nyandam a relatively safe matchup), he can be used to chip away at them and provide some support with his slow ability when the frontlines get into a stalemate, though you could also be using the aforementioned two to snipe them if there are lower ranged threats for them to get a hit off.
+
+Li'l Nyandam is of little to no use against [[Camelle]] or his variants (who have a range of 550), as his speed is far too quick, and outranging them by one makes him an unreliable counter, since a tiny shift in the frontline allows them to easily hit him.
+
+Li'l Nyandam is outclassed by [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] in practically every case, as despite having a similar cooldown, Cyberpunk doesn't rely on chance to slow enemies and has a much greater range. With [[Talents]] improving his Slow uptime, even one Cyberpunk can offer a lot of support, and multiple Cyberpunks can even perma-slow enemies, which Li'l Nyandam is unable to do. While Cyberpunk may have even worse survivability with zero repositioning chances, this can be patched partially with his Survive talent, the blindspot is almost negligible as you can still push back and defend better and Li'l Nyandam's very inconsistent proc chances make him nigh unusable as a practical Crowd-Controller.
+
+Li'l Nyandam also happens to be part of multiple combos. The most significant one is [[Bad Guys (Combo)|Bad Guys]], a three-slot Research L Combo with [[Killer Cat (Rare Cat)|Killer Cat]] and [[Lasvoss (Uber Rare Cat)|Lasvoss]]<nowiki/>, which allows you to easily spam disposable units, making him worth including just for the effect it provides.
+
+==='''True Form'''===
+Schoolbus Nyandam's increased slow chance doesn't do anything due to his already horrible crowd control performance. Even with his newly buffed stats, it still doesn't fix the fact that he has terrible survivability and damage. Even on 4-Crown he is still unviable due to more superior backliners like [[Ururun Wolf (Special Cat)|Awakened Ururun]]. If you want a long range unit, [[Red Riding Mina (Special Cat)|Awakened Mina]] or even [[Miyamoku Musashi (Special Cat)|Awakened Musashi]] are generally much better choices, while both of them have less range, Mina has LD to hit and snipe enemies more consistently, and Musashi's attack rate is faster, both of them also inflict higher offense, so there's no point of getting this True Form.
+
+Once [[Master of Logic Newtone (Special Cat)|Master of Logic Newtone]] is obtained, Schoolbus Nyandam becomes purely outclassed on {{4c}} due to Newtone's superior attack power and DPS.
+
+{{Job|Classification = Combo Slave & Super-Backliner & Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Lolly Fanciers|"Slow" Effects Up (Sm)|Lollycat|Li'l Nyandam|jpname=ぺろきゃん愛好家}}
+|{{CatCombo|Yesterday's Enemy|Cannon Start Level Up (M)|Ururun Wolf|Li'l Nyandam|Red Riding Mina|jpname=昨日の敵は今日の友}}
+|{{CatCombo|Bad Guys|Research Power Up (L)|Lasvoss|Li'l Nyandam|Killer Cat|jpname=悪に染まりし者達}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 172
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni172 f00.png
+|Image2 = Uni172 c00.png
+|Image3 = Uni172 s00.png
+|Name1 = Li'l Nyandam
+|Desc1 = A quantum blip transformed Nyandam into a toddler<br>with a super old face. Creeps everyone out, for real.<br>Sometimes slows enemies (Area Attack)
+|Name2 = Dark Emperor Catdam
+|Desc2 = Since rescuing a kitten from the drain of the<br>school pool, it follows him to school each day.<br>Sometimes slows enemies (Area Attack)
+|Name3 = Schoolbus Nyandam
+|Desc3 = His nature won out and now he rules the<br>kindergarten with an iron fist. ALL WILL KNEEL.<br>Sometimes slows enemies (Area Attack)
+|Name1 (JP) = コニャンダム (Ko Nyandamu, Kid Nyandam)
+|Desc1 (JP) = 時空の歪みによって子供に戻ってしまったニャンダム<br>老け顔のせいで友達がよりつかない。根はまじめ<br>たまに敵の動きを遅くする(範囲攻撃)
+|Transl1 (JP) = Distortion of spacetime de-aged Nyandam back to a child.<br>His adult face keeps friends away. Serious at heart.<br>Sometimes slows enemies (Area Attack)
+|Name2 (JP) = ネコニャンダム (Neko Nyandamu, Cat Nyandam)
+|Desc2 (JP) = 夏休みにプールで排水口に挟まっていたネコを<br>救助して以来、学校への登校はいつも一緒<br>たまに敵の動きを遅くする(範囲攻撃)
+|Transl2 (JP) = Since rescuing a Cat from a pool's drain during summer<br>vacation, it always goes to school with him.<br>Sometimes slows enemies (Area Attack)
+|Name3 (JP) = 覚醒のネコニャンダム (Kakusei no Neko Nyandamu, Awakened Cat Nyandam)
+|Desc3 (JP) = 若返りが止まらないニャンダム<br>「しょうらいのゆめはりっぱなていおうになること」<br>たまに敵の動きを遅くする(範囲攻撃)
+|Transl3 (JP) = Nyandam never stops rejuvenating.<br>"My dream for the future is to become a magnificent emperor"<br>Sometimes slows enemies (Area Attack)
+|Name1 (TW) = 小戰士貓彈
+|Desc1 (TW) = 因時空錯亂而變回小孩的身型的貓彈<br>因相貌蒼老所以沒朋友。內心正經型<br>有時候使敵人動作變慢（範圍攻擊）
+|Name2 (TW) = 喵彈人
+|Desc2 (TW) = 自從某個夏天救出了卡在<br>游泳池排水口的貓咪後，每天都一起上學<br>有時候使敵人動作變慢（範圍攻擊）
+|Name3 (TW) = 覺醒的小戰士貓彈
+|Desc3 (TW) = 持續不斷在返老還童的貓彈<br>「ㄐㄧㄤㄌㄞˊㄌㄧˋㄓˋㄉㄤㄉㄚˋㄨㄤˊ」<br>有時候使敵人動作變慢（範圍攻擊）
+|Name1 (KR) = 꼬맹이 야옹마
+|Desc1 (KR) = 시공의 뒤틀림으로 유아화 되어버린 야옹마.<br>얼굴이 노안이라 또래의 친구가 생기지 않는다. 심성은 착하다<br>가끔씩 적의 움직임을 느리게 한다 (범위 공격)
+|Name2 (KR) = 꼬양이 야옹마
+|Desc2 (KR) = 여름 방학 때 수영장의 배수구에 막혀서 괴로워하던<br>고양이를 구해준 후, 언제나 함께 등교한다<br>가끔씩 적의 움직임을 느리게 한다 (범위 공격)
+|Name3 (KR) = 각성의 꼬양이 야옹마
+|Desc3 (KR) = 너무 동안이 되어버린 야옹마<br>장래 희망은 멋진 제왕이 되는 것입니다!<br>가끔씩 적의 움직임을 느리게 한다 (범위 공격)
+|Name1 (Switch) = Li'l Nyandam
+|Desc1 (Switch) = A quantum blip transformed Nyandam into a toddler<br>with a super old face. Creeps everyone out, for real.<br>Sometimes Slows enemies. (Area Attack)
+|Name2 (Switch) = Dark Emperor Catdam
+|Desc2 (Switch) = Since rescuing a kitten from the drain of the<br>school pool, it follows him to school each day.<br>Sometimes Slows enemies. (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 2,900¢
+*Chapter 2: 4,350¢
+*Chapter 3: 5,800¢
+{{Upgrade Cost|EXL}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Li'l Nyandam
+|Normal Base HP = 1200
+|Normal Base AP = 920
+|Normal Range = 551
+|Normal Foreswing = 77
+|Normal Attack Cooldown = 359
+|Normal Attack Length = 112
+|Normal Speed = 5
+|Normal KB = 2
+|Normal Cost = 2900
+|Normal Recharge = 5300
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = Dark Emperor Catdam
+|Evolved Base HP = 1200
+|Evolved Base AP = 920
+|Evolved Range = 551
+|Evolved Foreswing = 77
+|Evolved Attack Cooldown = 359
+|Evolved Attack Length = 112
+|Evolved Speed = 5
+|Evolved KB = 2
+|Evolved Cost = 2900
+|Evolved Recharge = 5300
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub>
+|True Name = Schoolbus Nyandam
+|True Base HP = 1600
+|True Base AP = 1380
+|True Range = 551
+|True Foreswing = 77
+|True Attack Cooldown = 257
+|True Attack Length = 112
+|True Speed = 5
+|True KB = 2
+|True Cost = 2900
+|True Recharge = 5300
+|True Attack Type = Area
+|True Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|True Abilities = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Immune to Curse}} [[Immune to Curse]]
+|Lv.MAX = Lv.50<br>Lv.30<sup>BCU!</sup>
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,200 HP
+|val-Normal-Attack Power = 920 damage<br>(63.3 DPS)
+|val-Normal-Attack Range = 551
+|val-Normal-Attack Frequency = 436f <sub>14.53 seconds</sub>
+|val-Normal-Movement Speed = 5
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 77f <sup>2.57s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Normal-Recharge Time = 176.67 ~ 167.87 seconds
+|val-Normal-MaxHP = 20,400 HP
+|val-Normal-MaxAttack = 15,640 damage<br>(1,076.15 DPS)
+|val-Evolved-Health = 20,400 HP
+|val-Evolved-Attack Power = 15,640 damage<br>(1,076.15 DPS)
+|val-Evolved-Attack Range = 551
+|val-Evolved-Attack Frequency = 436f <sub>14.53 seconds</sub>
+|val-Evolved-Movement Speed = 5
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 77f <sup>2.57s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-Evolved-Recharge Time = 176.67 ~ 167.87 seconds
+|val-True-Health = 27,200 HP
+|val-True-Attack Power = 23,460 damage<br>(2,107.19 DPS)
+|val-True-Attack Range = 551
+|val-True-Attack Frequency = 334f <sub>11.13 seconds</sub>
+|val-True-Movement Speed = 5
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 77f <sup>2.57s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-True-Recharge Time = 176.67 ~ 167.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Dark Emperor Catdam
+|Evolved Image = Uni172 c00.png
+|True Name = Schoolbus Nyandam
+|True Image = Uni172 s00.png
+|True Description = True Form evolution improves all traits!<br>Plus, has a higher chance to Slow, and<br>becomes immune to enemy Curses.
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = ElderFruit
+|Quantity Catfruit1 = x5
+|Quantity Catfruit2 = x5
+|Quantity Catfruit3 = x5
+|Quantity Catfruit4 = x5
+|Quantity Catfruit5 = x1
+|Quantity XP = 1,000,000
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni172 f00}}
+
+==Trivia==
+*Prior to [[Version 4.7 Update|Version 4.7]], Li'l Nyandam was a part of another [[Cat Combo]] called [[Childs Play (Removed Combo)|Childs Play]].
+*Li'l Nyandam's evolution has some wordplay in Japanese: he goes from Ko Nyandam (コニャンダム, "Kid Nyandam") to Neko Nyandam (ネコニャンダム, "Cat Nyandam").
+*From [[Version 13.0 Update|Version 13.0]] to [[Version 13.7 Update|Version 13.7]], his [[Cat Guide]] entry incorrectly stated that he can be obtained from [[Jail Break Tunnel]].
+
+==Reference==
+*https://battlecats-db.com/unit/173.html
+
+----
+{{CatNav|Balaluga|Baby Mola}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Mythic Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Curse Immunity]]
+[[Category:Cats requiring Catfruits for True Form]]

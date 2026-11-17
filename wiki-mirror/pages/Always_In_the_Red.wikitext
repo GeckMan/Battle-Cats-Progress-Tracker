@@ -1,0 +1,68 @@
+{{EnemiesAppearing|Festival Sign Girl|Doge Dark|Gory Dark|Snache|Vendor El|Owlbrow|Duche|Shadow Boxer K|Doge}}
+'''Always In the Red''' is the sixth and final stage in [[A Cultured Festival]].
+
+{{Stage Info
+|stage name = [[File:rc070.png]]
+[[File:Mapsn174 05 s en.png]]
+|stage location = [[File:Mapname174 s en.png]]
+|energy = 100
+|enemy castle hp = 480,000 HP
+|enemies = {{Magnification|Doge Dark|200%
+|Gory Dark|100%
+|Snache|400%
+|Vendor El|300%
+|Owlbrow|200%
+|Duche|300%
+|Shadow Boxer K|100%
+|Doge|400%}}
+|boss = {{Magnification|Festival Sign Girl|600%
+|Doge Dark|10%}}
+|treasure = - [[Food Stall Cat (Rare Cat)|Food Stall Cat]] (10%, 1 time)<br>
+- [[Cat Capsule#Lucky Capsules|Lucky Ticket]] +3 (40%, unlimited)<br>
+- [[Cat Capsule#Lucky Capsules|Lucky Ticket]] +1 (60%, unlimited)
+|XP = 1,900 XP
+|width = 4,000
+|max enemies = 10
+|jpname = Why! Sold-out Deficit
+|script = なぜ！完売赤字
+|romaji = Naze ！ Kanbai Akaji
+|star = 1
+|event-chapter = [[A Cultured Festival]]
+|difficulty = ★6
+|prev stage = [[Outta Change...]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Festival Sign Girl]] spawns as the boss after 10 seconds<sup>300f</sup>.
+*5 [[Doge Dark]]s (200%) spawn after 16 seconds<sup>480f</sup>, delay 7~12.67 seconds<sup>210f~380f</sup>.
+*5 [[Gory Dark]]s spawn after 25.67 seconds<sup>770f</sup>, delay 9~13.33 seconds<sup>270f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] (10%) spawns as the boss.
+**Infinite [[Snache]]s spawn, delay 7~14 seconds<sup>210f~420f</sup>.
+**1 [[Vendor El]] spawns.
+**1 [[Owlbrow]] spawns.
+**3 [[Duche]]s spawn, delay 9~15.67 seconds<sup>270f~470f</sup>.
+**6 [[Duche]]s spawn, delay 25 seconds<sup>750f</sup>.
+**3 [[Shadow Boxer K]]s spawn, delay 50 seconds<sup>1,500f</sup>.
+**2 [[Vendor El]]s spawn, delay 23 seconds<sup>690f</sup>.
+**1 [[Duche]] spawns.
+**2 [[Vendor El]]s spawn, delay 15.33~23.33 seconds<sup>460f~700f</sup>.
+**2 [[Doge]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Snache]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Doge]]s spawn, delay 1 second<sup>30f</sup>.
+**2 [[Snache]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**1 [[Doge Dark]] (200%) spawns.
+**1 [[Vendor El]] spawns.
+
+==Strategy==
+Even with 5 Vendor Els, they lack the ability to push. Instead, the real threat are the Shadow Boxer K, who can push the Vendor Els into range of your [[Crazed Bahamut Cat]]. Spam meatshields, and [[Paris Cat]], since Paris is very helpful to handle the Shadow Boxers.
+
+For those looking to farm Lucky Tickets, this stage is a terrible choice given the fact that any kind of fast clear demands Uber Cannon Start combos and Uber rushers such as [[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]], as well as the inherently RNG nature of Vendor El's Weaken. It is highly advised to farm literally anything else or to just wait for [[Icy Desire]] to roll around.
+
+==Reference==
+*https://battlecats-db.com/stage/s01174-06.html
+
+{{Seasonal}}
+[[Category:A Cultured Festival Stages]]
+[[Category:Event Stages]]

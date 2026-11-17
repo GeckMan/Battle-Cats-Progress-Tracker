@@ -1,0 +1,123 @@
+==Release Dates==
+*'''Japanese:''' May 18th, 2017
+*'''International:''' June 6th, 2017
+
+==Cats==
+Added 5 new units, CRO ranges from 338 and 340~343:
+{{Update|mode=cats
+|Imagawa Yoshimoto
+|[[File:Gatya bnr177.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]<br>[[File:Gatya bnr178.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]<br>[[File:Gatya bnr179.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]
+|Redhead Yuki Cat
+|[[File:Mapname045 c en.png|200px|link=Shoumetsu Toshi Collaboration Event]]
+|Lost World Yuki
+|[[File:Gatya bnr180.png|400px|link=Shoumetsu Toshi Collaboration Event/Gacha Drop]]<br>[[File:Gatya bnr181.png|400px|link=Shoumetsu Toshi Collaboration Event/Gacha Drop]]
+|Maneki Cat
+|[[File:Cat beacon.png|link=Cat Beacon]]
+|Slug Jockey Cat
+|[[File:Mapname164 s en.png|200px|link=Sliming to Victory]]
+}}
+
+*Added 5 new [[True Form]]s:
+{{Update|mode=trueforms
+|PPT48
+|'''DPS:''' 1,204.1 → 2,146.43<br>
+'''TBA:''' 6.83s → 3.83s<br>
+[[File:Freeze.png]] [[File:Darktraiticon.png|40px]] for 60f<sub>2 seconds</sub> → 90f<sub>3 seconds</sub>
+|Nekondo
+|[[File:Zukan icon14.png|40px]] 0% → 20%
+|Crazed Princess Punt
+|'''HP:''' 15,300 → 23,800<br>
+'''DPS:''' 881.48 → 1,055.17<br>
+'''TBA:''' 3.6s → 5.97s<br>
+'''Attack Animation:''' 1.3s → 0.83s<br>
+[[File:Knockback.png]] [[File:Metaltraiticon.png|40px]] 40% → 50%
+|Cat Kart R
+|'''ATT:''' 1,020 → 3,060<br>
+'''DPS:''' 283.33 → 512.85<br>
+'''Range:''' 680 → 780<br>
+'''TBA:''' 8.1s → 6.77s
+|Kachi-Kachi
+|'''Speed:''' 38 → 48<br>
+'''DPS:''' 881.48 → 1,055.17<br>
+'''TBA:''' 3.6s → 5.97s<br>
+'''Attack Animation:''' 1.3s → 0.83s<br>
+[[File:Strong Against.png]] [[File:Angeltraiticon.png|40px]] [[File:Alientraiticon.png|40px]]
+}}
+
+==Enemies==
+{{Update|mode=enemies
+|Lost World Yuki
+|Cala Maria
+|Red Slug
+|Black Slug
+|Angelic Slug
+|Cat Kart P
+|Nekondo SP
+}}
+
+==Stages==
+===New Additions===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+|-
+! scope="row" |[[Stories of Legend]]
+|[[File:Mapname038 n en.png|200px|link=Above & Below]]
+|-
+! scope="row" |[[Special Events|Events]]
+|[[File:Mapname113 s ja.png|200px|link=Held in Miyako Messe! (2017)]] [[File:Mapname164 s en.png|200px|link=Sliming to Victory]] [[File:Mapname143 s en.png|200px|link=Cat Kart Awakens!]] [[File:Mapname144 s ko.png|200px|link=Nekondo Awakens!]]
+|-
+! scope="row" |[[Collaboration Events|Collaboration]]
+|[[File:Mapname045 c en.png|200px|link=Shoumetsu Toshi Collaboration Event]]
+|}
+
+===Stage Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="row" |
+! scope="col" |Stage Name
+! scope="col" |Changes
+|-
+! scope="row" |2 Star Additions
+|[[File:Mapname037 n en.png|200px|link=Cutpurse Coast]]
+|'''Magnification:''' x1 → x1.2
+|-
+! scope="row" |3 Star Additions
+|[[File:Mapname035 n en.png|200px|link=Mouseyland]]
+|'''Magnification:''' x1 → x1.3
+|-
+! scope="row" |4 Star Additions
+|[[File:Mapname020 n en.png|200px|link=Stairway to Darkness]] [[File:Mapname021 n en.png|200px|link=Prince of Darkness]]
+|'''Magnification:''' x1 → x1.3<br>
+'''Restrictions:''' Only [[:Category:Special Cats|Special]] and [[:Category:Rare Cats|Rare]] Units
+|}
+
+==Cat Combos==
+{{Combos|basic=1
+|{{CatCombo|Thanks for All|Bounty Up (Sm)|Maneki Cat|jpname=感謝御礼}}
+}}
+
+==Gacha Events==
+===Banner Changes===
+{| border="0" cellpadding="1" cellspacing="1" class="article-table"
+|-
+! scope="col" |Banner
+! scope="col" |Added Units
+! scope="col" |Removed Units
+|-
+|[[File:Gatya bnr177.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]<br>[[File:Gatya bnr178.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]<br>[[File:Gatya bnr179.png|400px|link=Sengoku Wargods Vajiras (Gacha Event)]]
+|[[File:Uni338 f00.png|link=Imagawa Yoshimoto (Uber Rare Cat)]]
+|<center>N/A</center>
+|-
+|[[File:Gatya bnr180.png|400px|link=Shoumetsu Toshi Collaboration Event/Gacha Drop]]<br>[[File:Gatya bnr181.png|400px|link=Shoumetsu Toshi Collaboration Event/Gacha Drop]]
+|[[File:Uni341 f00.png|link=Lost World Yuki (Uber Rare Cat)]]
+|<center>N/A</center>
+|}
+
+==Miscellaneous==
+*Added [[Cat Beacon]] system.
+*[[Cat Cannon]] recharge capped to 31.67 seconds.
+*Reverted the [https://youtu.be/S7mv39eOnX4 hurtbox change] from [[Version 6.0 Update|6.0]].
+
+{{Versions}}

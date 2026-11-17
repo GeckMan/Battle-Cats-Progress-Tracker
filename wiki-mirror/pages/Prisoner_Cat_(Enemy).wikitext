@@ -1,0 +1,65 @@
+:''This article is about the enemy. For the Cat Unit, see [[Adult Cat (Rare Cat)]].''
+'''Prisoner Cat''' (にゃんこ囚人, Nyanko Shūjin, Prisoner Cat) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Adult Cat Awakes!|Adult Cat Awakens!]] and [[Infernal Tower]]. He was added in [[Version 4.6 Update|Version 4.6]].
+
+{{Enemy Info
+|name = Prisoner Cat
+|image = E 230.png
+|appearance = [[Adult Cat Awakes!]]
+[[Infernal Tower/Floor 20|Infernal Tower - Floor 20]]
+|money drop = 1,555¢ - 6,142¢
+}}
+
+==Enemy==
+Prisoner Cat has high health (1,500,000) and high damage (12,000). However, he has a big blind spot and, as a result, cannot hit enemies right in front of him.
+
+==Strategy==
+:''See [[Growing Up (Expert)]], [[Growing Up (Insane)]] and [[Infernal Tower/Floor 20|Floor 20]] for their respective stratgies.''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*[[Adult Cat Awakes!]]:
+**[[Growing Up (Expert)]]
+**[[Growing Up (Insane)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 20|Floor 20]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Prisoner Cat
+|Health = 1500000
+|Attack Power = 12000
+|Attack Range = 525
+|Attack Type = Area
+|Time Between Attacks = 121
+|Movement Speed = 5
+|Knockback = 4
+|Foreswing = 32
+|Backswing = 39
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 500~700)
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+230 e.png|Prisoner Cat's spritesheet
+IdlePrisoner.gif|Prisoner Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/232.html
+
+----
+{{EnemyNav|Volcano Golem|Gentleman Bros.}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Event Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]

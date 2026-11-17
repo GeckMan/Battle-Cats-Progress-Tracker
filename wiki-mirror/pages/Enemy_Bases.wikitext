@@ -1,0 +1,90 @@
+All [[battle]]s in [[The Battle Cats]] and [[Nyanko Daisensou]] are won by destroying the '''enemy base''' on the left side of the battlefield. Like the [[Cat Base]], enemy bases are immune to most effects, including [[Wave Attack]]s. There are many different enemy bases found throughout the game, though most differ only in appearance. All bases are [[:Category:Typeless Enemies|Typeless]] except the [[Finale Base (Enemy Base)|Finale Base]], which is [[:Category:Metal Enemies|Metal]].
+
+==Relation to Boss Spawnpoints==
+Depending on which sprite the enemy base uses, bosses will spawn a different distance ahead of the base. The default value is 28.5, but most of the generic bases found all throughout [[Legend Stages]] and one of the bases from the [[Princess Punt Sweets Collaboration Event]] have their own custom distances. For more information, see [https://youtu.be/KW1ib1h76r4 this video].
+
+{| class="wikitable"
+! colspan="1" | 60.25
+! colspan="1  | 53.75
+! colspan="1  | 44.25
+! colspan="1  | 38
+! colspan="1  | 38
+|-
+|[[File:Rc017.png|center|96px]]
+|[[File:Rc011.png|center|96px]]
+|[[File:Rc003.png|center|96px]]
+|[[File:Rc002.png|center|96px]]
+|[[File:Rc015.png|center|96px]]
+|-
+! colspan="1" | 38
+! colspan="1  | 38
+! colspan="1  | 38
+! colspan="1  | 38
+! colspan="1  | 34.75
+|-
+|[[File:Rc014.png|center|96px]]
+|[[File:Rc006.png|center|96px]]
+|[[File:Rc007.png|center|96px]]
+|[[File:Rc016.png|center|96px]]
+|[[File:Rc018.png|center|96px]]
+|-
+! colspan="1" | 31.5
+! colspan="1  | 31.5
+! colspan="1  | 31.5
+! colspan="1  | 31.5
+! colspan="1  | 25.5
+|-
+|[[File:Rc010.png|center|96px]]
+|[[File:Rc020.png|center|96px]]
+|[[File:Rc021.png|center|96px]]
+|[[File:Rc012.png|center|96px]]
+|[[File:Rc013.png|center|96px]]
+|-
+! colspan="1" | 25.5
+! colspan="1  | 25.5
+! colspan="1  | 22.5
+! colspan="1  | 22.5
+! colspan="1  | 22.5
+|-
+|[[File:Rc019.png|center|96px]]
+|[[File:Rc005.png|center|96px]]
+|[[File:Rc000.png|center|96px]]
+|[[File:Rc001.png|center|96px]]
+|[[File:Rc009.png|center|96px]]
+|-
+! colspan="2" |19
+! colspan="2" |16
+! colspan="1" |28.5
+|-
+| colspan="2" |[[File:Rc008.png|center|96px]]
+| colspan="2" |[[File:Rc023.png|center|96px]]
+| style="text-align:center" |'''Others'''
+|}
+
+==Animated Enemy Bases==
+:''Main article: [[:Category:Animated Enemy Bases|Animated Enemy Bases]].''
+'''Animated Enemy Bases''' are counted as [[Enemy Units]] with their own IDs, and many also possess the ability to attack [[Cat Units]]. Unlike other bases, their health is determined by a strength magnification which also affects their damage output, and the vast majority of them can receive damage from [[Surge Attack]]s and [[Explosion]]s. Crown difficulties will increase the strength magnifications of these bases.
+
+==Base Barrier==
+:''Main article: [[Base Barrier]].''
+[[:Category:Stages with Base Barriers|Certain stages]] will have the enemy base protected by a '''Base Barrier''' that renders the enemy base completely invulnerable to attack until the stage's designated boss enemy has been defeated, effectively preventing "cheesing" of the stage by destroying the base before fighting the boss. If the boss has not spawned yet and spawns on a timer, the Base Barrier will be present beforehand; otherwise, it will be absent until the base takes enough damage to spawn the linked boss.
+
+The Base Barrier is visually identical to the [[Barrier]] used by [[:Category:Starred Alien Enemies|Starred Aliens]], but is colored green instead of red. When the linked boss is defeated, it will shatter like a Barrier hit by a [[Barrier Breaker]] attack.
+
+{{Gallery|E 315}}
+
+==Trivia==
+*[https://youtu.be/N_G5hryrIG8 When a cat is teleported behind an enemy base] by [[Mesocosmocyclone]] or the [[Gardeneel Bros.]], it will continue to walk forward until it goes off-screen, disappearing from the [[battle]] but still counting towards the Cat Deploy Limit.
+**However, due to the nature of binary data, when distance numbers [[wikipedia:Integer Overflow|overflow]] these units will be teleported to the right and rejoin the battle eventually. This phenomenon is seen in [https://youtu.be/qdzAifKBYWU this video].
+*When a battle ends in a tie (i.e., both bases reach 0 HP on the same frame), the outcome depends on which type of base is on the enemy's side.
+**If the enemy base is not animated, it will count as a victory for the player.
+**If the enemy base is animated, it will count as a loss for the player, but continuing by spending [[Cat Food]] or watching an ad will result in an instant victory.
+*Most of the enemy bases in the English version of [[Empire of Cats]] were taken directly from [[Kumanchu Royale]].
+*The [[Into the Future]] background for the [[Main Menu]] contains an unused enemy base resembling a freighter.
+*The English version of Empire of Cats uses [[Nyanko Daisensou]]'s [[Egypt (Empire of Cats)|Kyoto]] base for [[Japan (Into the Future)|Japan]]. In Into the Future, however, Japan's enemy base resembles [[Bermuda (Empire of Cats)|Tokyo]]'s.
+*The Legend Stages base with a hanging shark could be a reference to a similar-looking [https://cdn.4travel.jp/img/tcs/t/pict/src/15/41/89/src_15418927.jpg?1281578589 Jaws model] at Universal Studios Japan.
+*On higher crown difficulties, enemy bases will scale their HP to match the magnifications, but interestingly they won't scale their damage with the magnifications. This can be seen [https://www.reddit.com/r/battlecats/comments/1ksolmg/fluff_fun_fact_the_attack_power_of_special_enemy/ here], where the base has the HP of [[Surrealist Sins]]'s 3-crown Doge Base, but cannot one-shot a level 50 [[Ritual Saint Kasli]], who has 78,300 HP.
+*One of the possible endings for [[Gamatoto Expedition]] log messages is "in the Enemy Base."
+
+{{BC Navigation}}
+[[Category:Game Features]]

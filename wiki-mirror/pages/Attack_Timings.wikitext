@@ -1,0 +1,91 @@
+:'''''Note: this page is written specifically as a guide for this wiki, and there is no guarantee that any uses of the same terms outside the wiki will be consistent with those used on the wiki.'''''
+This page is about how attacks work and terminology used on this wiki.
+
+==Mechanism==
+A unit can have a few different "states": walk, idle, knockback and attack.
+
+'''Walking''' is the default state, and is simply when a unit is moving. All units with more than 0 speed will be in this state by default.
+
+When a unit has enemies inside their standing range but cannot attack, they will just wait where they are; this is known as the '''Idle''' state. Being unable to attack can be for various reasons, such as their attack cooldown not being finished, or due to having the [[Attacks Only]] ability.
+
+'''Knockback''' is the state of being knocked back. This can be knockbacks caused by damage, by the [[Knockback|ability]], or by the boss shockwave. During the knockback state, the unit's [[Hitbox|hurtbox]] disappears.
+
+'''Attacking''' is the final state. The unit cannot move or start another attack until their attack animation ends, and the state can only end either by finishing the animation or from being knocked back. The unit cannot damage enemies in any state apart from the attacking state.
+
+==Terms==
+There are 3 main important stats: foreswing, time between attacks, and animation length.
+
+===Foreswing===
+'''Foreswing''' refers to the time between the start of an attack and the attack dealing damage. Because the attack cooldown only begins from the attack frame, a unit interrupted (i.e. sent into the knockback state) during their foreswing will immediately be able to attack again without triggering the attack cooldown (commonly seen in enemies with long foreswings such as [[Dark Emperor Nyandam]]).
+
+In addition, units that have [[Multi-Hit]] will have multiple foreswings: one for each hit. For example, [[Awakened Bahamut Cat]]'s hits have respective foreswings of 5f, 10f and 20f; that is, 5 frames until hit 1, 5 frames between hits 1 and 2, and 10 frames between hits 2 and 3, meaning the full attack is 20 frames long. For these units, the whole attack animation will restart without triggering the attack cooldown if it is interrupted before the final hit.
+
+To remove ambiguity, when the wiki's stats tables refer to "foreswing", they refer to the time until the ''first'' hit of the attack. Using the same example of Awakened Bahamut, with foreswings of 5f, 10f and 20f, his foreswing is listed as 5f.
+
+===Time Between Attacks===
+'''TBA''' is the minimum amount of time between the ''last'' hit of the attack and the start of the next one. Note that this is only a minimum; a unit may take longer to attack again due to the length of their attack animation or from not being in range, but they can never attack any faster than the TBA allows.
+
+The term "TBA" can have two separate meanings due to how it is calculated. This page will use the following terms in its place:
+*'''TBA stat''': the raw TBA value given in the files.
+*'''Attack cooldown''': the actual minimum amount of time between the last hit of the attack and the start of the next. If the unit's TBA stat is <math>x</math>, then the cooldown will be <math>2x - 1</math> (unless, of course, the TBA stat is 0, in which case the attack cooldown will be 0).
+
+These definitions are not universal, so they will only be valid for this singular page. Other tools (including the [[Cat Stats Tool]]) frequently use another value for TBA/cooldown, being the <math>2x</math> value.
+
+===Animation Length===
+This is simply the amount of time that the attack animation will run for.
+
+The first frame of an attack will never actually be shown (noticeable on [[Express Cat (Super Rare Cat)|Express Cat]], whose first attack frame on the Animation Viewer is visually distinct from every other frame of its animation), as it will be replaced by the first frame of the idle state (noticeable on [[Box Witch and Minions]], whose idle state uses a distinct screen that would never be seen if the first frame was never substituted for the idle state), but it appears the rest of the animation will be shown.
+
+Attack animation length can have some interesting applications:
+*Certain units such as [[Fireworks Guys (Low-Yield)|Low]]/[[Fireworks Guys (High-Yield)|High]]-yield Fireworks Guys or [[Cheetah Cat (Uber Rare Cat)|Cheetah Cat]] have an attack animation shorter than their foreswing; these units cannot attack.
+*There are many cases of units whose animations are much longer than their attack cooldown, meaning that despite having finished their cooldown they will still be unable to attack until either finishing the animation or being knocked back. See [[#Backswing]] for a more in-depth explanation.
+
+==Derived terms==
+===Backswing===
+Backswing is the amount of time between the attack dealing damage and the attack animation ending. For Multi-Hit units, the wiki's stats tables will refer to backswing as specifically being the time between the ''last'' hit of the attack and the end of the animation, which allows backswing to be easily compared to the attack cooldown.
+
+Since backswing is part of the unit's animation, if a unit is interrupted in the middle of their backswing they will immediately be free to move again. If their attack cooldown has not finished, they will be sent into their idle state, but if the cooldown has finished, they will be able to immediately attack again: this effect is very prominent in rushers like Awakened Bahamut and [[Sanada Yukimura (Uber Rare Cat)|Sanada Yukimura]], as well as enemy rushers like [[Brollow]].
+
+For most units, if their backswing is longer than their attack cooldown, their listed TBA will be 0, or it will be so low that it is almost impossible to see their idle animation if they are knocked back. There are a few exceptions, such as [[Sakura Android (Enemy)|Sakura Android]] whose attack cooldown is 149f and whose backswing is 243f.
+
+===Attack Cycle===
+The attack cycle is the time between the start of one attack and the start of the next attack.
+
+Using the following definitions:
+*<math>\text{anim}</math> is the length of the unit's attack animation
+*<math>\text{attlength}</math> is the time between the attack starting and the ''final'' hit landing (or, alternatively, this could be described as the foreswing of the final hit)
+*<math>\text{cooldown}</math> is the attack cooldown
+then attack cycle is <math>\max(\text{anim}, \text{attlength} + \text{cooldown})</math>.
+
+Another way of expressing this is <math>\text{attlength} + \max(\text{backswing}, \text{cooldown})</math>, but as backswing is just calculated as <math>\text{anim} - \text{attlength}</math> these are equivalent.
+
+In practice, attack cycle is not binding, as a unit may be able to attack more (albeit only in cases where they are usually limited by backswing) or less (e.g. if there are no targettable enemies in range at the end of the cycle) frequently than the number stated as the attack cycle.
+
+The wiki's stats tables use the term '''Attack Frequency''' as another name for the attack cycle.
+
+==Worked example==
+This is an example of how these stats work, using [[Bahamut Cat (Special Cat)|Bahamut Cat]]'s forms.
+
+Bahamut Cat and Crazed Bahamut Cat have the following stats:
+*Foreswing: 121 frames
+*TBA stat: 240 frames; therefore attack cooldown = <math>240 * 2 - 1 = 479</math> frames
+*Attack animation: 151 frames
+
+For these forms:
+*Backswing = <math>151 - 121 = 30</math> frames
+*Attack cycle = <math>\max(151, 121 + 479 = 600) = 600</math> frames
+
+Awakened Bahamut Cat has the following stats:
+*Foreswing: 5f/10f/20f (has multi-hit; wiki stats table will list foreswing as 5f)
+*TBA stat: 0 frames, therefore attack cooldown = 0 frames
+*Attack animation: 93 frames
+
+For these forms:
+*Backswing = <math>93 - 20 = 73</math> frames
+*Attack cycle = <math>\max(93, 20 + 0 = 20) = 93</math> frames
+
+==Further reading==
+*https://thanksfeanor.pythonanywhere.com/guides/documents/attack-timings.html
+
+{{BC Navigation}}
+[[Category:Game Features]]

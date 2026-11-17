@@ -1,0 +1,108 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Russia (Into the Future)/Outbreak|here]].''
+'''Russia''' is the 5th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc041.png]]
+|stage location = [[File:Russia.png]]
+'''Into the Future'''
+|energy = 34
+|energy2 = 44
+|energy3 = 54
+|enemy castle hp = 8,000 HP
+|enemy castle hp2 = 12,000 HP
+|enemy castle hp3 = 16,000 HP
+|enemies = {{Magnification|Doge|150%
+|B.B.Bunny|150%
+|Squire Rel|150%
+|Those Guys|150%
+|Jackie Peng|150%}}
+|boss = {{Magnification|Sir Seal|150%}}
+|enemies2 = {{Magnification|Doge|400%
+|B.B.Bunny|400%
+|Squire Rel|400%
+|Those Guys|400%
+|Jackie Peng|400%}}
+|boss2 = {{Magnification|Sir Seal|400%}}
+|enemies3 = {{Magnification|Sir Seal|800%
+|Doge|800%
+|B.B.Bunny|800%
+|Squire Rel|800%
+|Those Guys|800%
+|Jackie Peng|800%}}
+|treasure = - [[Treasure|Piroshki]]
+|treasure2 = - [[Treasure|Piroshki]]
+|treasure3 = - [[Treasure|Piroshki]]
+|score reward = '''8,000''': [[Cat Food]] +10<br>
+'''5,000''': Cat CPU +1
+|score reward2 = '''9,000''': [[Cat Food]] +10<br>
+'''7,000''': Cat CPU +1
+|score reward3 = '''9,000''': [[Cat Food]] +10<br>
+'''7,500''': Cat CPU +1
+|max enemies = 7
+|max enemies2 = 7
+|max enemies3 = 9
+|XP = 2,200 XP
+|width = 6,000
+|jpname = Russia
+|script = ロシア
+|romaji = Roshia
+|jptreasure = Vodka
+|twname = Mongolia
+|twscript = 蒙古
+|twromaji = Ménggǔ
+|twtreasure = Old Mongol Horse
+|krname = Russia
+|krscript = 러시아
+|krromaji = Leosia
+|krtreasure = Fatigue
+|chapter = [[Into the Future]]
+|prev stage = [[Mongolia (Into the Future)|Mongolia]]
+|next stage = [[Norway (Into the Future)|Norway]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Doge|B.B.Bunny|Squire Rel|Those Guys|Jackie Peng|Sir Seal}}
+*Infinite [[Doge]]s spawn after 6 seconds<sup>180f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 13.33 seconds<sup>400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Squire Rel]]s spawn after 26 seconds<sup>780f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Squire Rel]]s spawn after 28 seconds<sup>840f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Squire Rel]]s spawn after 30 seconds<sup>900f</sup>, delay 20 seconds<sup>600f</sup>.
+*Infinite [[Those Guys]] spawn after 40 seconds<sup>1,200f</sup>, delay 6.67~16.67 seconds<sup>200f~500f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 50 seconds<sup>1,500f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*5 [[B.B.Bunny|B.B.Bunnies]] spawn after 80 seconds<sup>2,400f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sir Seal]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Sir Seal|Doge|B.B.Bunny|Squire Rel|Those Guys|Jackie Peng}}
+*5 [[Sir Seal]]s spawn after 5 seconds<sup>150f</sup>, delay 10 seconds<sup>300f</sup>.
+*Infinite [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Squire Rel]]s spawn after 19.33 seconds<sup>580f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Squire Rel]]s spawn after 21.33 seconds<sup>640f</sup>, delay 20 seconds<sup>600f</sup>.
+*3 [[Squire Rel]]s spawn after 23.33 seconds<sup>700f</sup>, delay 20 seconds<sup>600f</sup>.
+*Infinite [[Those Guys]] spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Jackie Peng]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+
+==Strategy==
+A fairly simple stage with no [[:Category:Alien Enemies|Alien]] threats. Kill the Sir Seal with [[Fish Cat (Normal Cat)|Whale Cat]] and [[Valkyrie Cat (Special Cat)|True Valkyrie Cat]].
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Wc042.png|Taiwanese version's base (Mongolia)
+</gallery>
+
+==Trivia==
+*In the Taiwanese version, this stage takes place in '''Mongolia'''; [[Mongolia (Into the Future)|stage 4]] is China and Russia is moved to [[Norway (Into the Future)|stage 6]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-05.html
+*https://battlecats-db.com/stage/s03004-05.html
+*https://battlecats-db.com/stage/s03005-05.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

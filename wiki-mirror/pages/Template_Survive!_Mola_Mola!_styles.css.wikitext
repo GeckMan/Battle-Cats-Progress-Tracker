@@ -1,0 +1,7 @@
+.ranger-navbox.mola-mola {
+	--bg-navbox-title: linear-gradient(to right, hsl(189, 48%, 57%) 0%, hsl(189, 48%, 62%) 100%);
+	--bg-sub-table-title: #3086c2;
+	--bg-group-name: hsl(180, 50%, 50%);
+}
+
+/* [[Category:Template stylesheets]] */

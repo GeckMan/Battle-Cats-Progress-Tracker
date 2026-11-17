@@ -1,0 +1,64 @@
+:''This article is about the enemy. For the Cat Unit, see [[Doll Cats (Rare Cat)]].''
+'''Nyalladin''' (ニャラジン, Nyarajin, Nyalladin) is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Doll Cats Awake!]]. He was added in [[Version 4.7 Update|Version 4.7]].
+
+{{Enemy Info
+|name = Nyalladin
+|image = E 233.png
+|appearance = [[Doll Cats Awake!]]
+|money drop = 1,600¢ - 6,320¢
+}}
+
+==Enemy==
+This enemy, unlike other Awakened enemies, has quite low health compared to them. However, it has a fast attack that deals a decent amount of damage and creates a level 1 [[Wave Attack]], meaning that [[Bahamut Cat (Special Cat)|Bahamut Cat]] and similar units will get hit by it.
+
+==Strategy==
+Take into consideration its Floating attribute and use units like [[Fortune Teller Cat (Rare Cat)|Doctor Cat]], [[Shaman Cat (Rare Cat)|Necromancer/Necro-Dancer Cat]] and [[Bishop Cat (Rare Cat)|Sanzo Cat]]. [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] is also very effective against this unit, due to it being both anti-floating and having the ability to block [[Wave Attack]]s.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Doll Cats Awake!]]:
+**[[Dolled Up (Expert)]] (100%)
+**[[Dolled Up (Insane)]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Nyalladin
+|Health = 900000
+|Attack Power = 6450
+|Attack Range = 190
+|Attack Type = Area
+|Time Between Attacks = 65
+|Movement Speed = 10
+|Knockback = 4
+|Foreswing = 51
+|Backswing = 14
+|Ability = {{AbilityIcon|Wave Attack}} 100% chance to create a level 1 [[Wave Attack]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+233 e.png|Nyalladin's spritesheet
+IdleNyandallin.gif|Nyalladin's moving animation
+</gallery>
+
+==Trivia==
+*Its name and appearance is likely a reference to [[wikipedia:Aladdin (1992 Disney film)|Aladdin]].
+
+==Reference==
+*https://battlecats-db.com/enemy/235.html
+
+----
+{{EnemyNav|Cruel Angel Clionel|Wrestling Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]

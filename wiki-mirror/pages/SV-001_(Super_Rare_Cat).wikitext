@@ -1,0 +1,127 @@
+:''This article is about the Cat Unit. For the enemy, see [[SV-001 (Enemy)]].''
+'''SV-001''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was implemented in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 219
+|rarity = SR
+|name1 = SV-001
+|name2 = SV-001 CC
+}}
+
+==Evolution==
+Evolves into '''SV-001 CC''' at level 10.
+
+==Strategy/Usage==
+This unit can work fairly well early on due to its' relatively high health and damage, but afterwards it gets outclassed by [[Salon Cat (Rare Cat)|Cyborg Cat]] in terms of damage, cost and recharge, and [[Figure Skating Cats (Super Rare Cat)|Drama Cats]] in pretty much every area.
+
+{{Job|Classification = Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 219
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni219 f00.png
+|Image2 = Uni219 c00.png
+|Name1 = SV-001
+|Desc1 = Recruited from the Metal Slug series!<br>A small, high-performance single-<br>passenger tank. (Area Atk)
+|Name2 = SV-001 CC
+|Desc2 = Recruited from the Metal Slug series!<br>Battle-tested model with superior<br>mobility and firepower. (Area Atk)
+|Name1 (JP) = SV-001
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>一人乗り高性能小型戦車で<br>別名は「メタルスラッグ」(範囲攻撃)
+|Transl1 (JP) = Joining from the Metal Slug series!<br>It's a one-man high-performance small tank,<br>also known as the "Metal Slug" (ranged attack).
+|Name2 (JP) = SV-001CC
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>機動力に優れた正規軍主力戦車<br>キャノン砲で援護する(範囲攻撃)
+|Transl2 (JP) = Joining from the Metal Slug series!<br>The main tank of the regular army with excellent mobility.<br>Provides cover with cannon fire (ranged attack).
+|Name1 (TW) = SV-001
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>單人用的高性能小型戰車<br>又稱「METAL SLUG」（範圍攻擊）
+|Name2 (TW) = SV-001CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>機動力強得沒話説的正規軍主力戰車<br>用加農炮進行掩護（範圍攻擊）
+|Name1 (KR) = SV-001
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>1인승 고성능 소형 전차<br>별칭은 「메탈 슬러그」(범위 공격)
+|Name2 (KR) = SV-001CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>기동력이 뛰어난 정규군 주력 전차<br>캐논포로 지원한다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 910¢
+*Chapter 2: 1,365¢
+*Chapter 3: 1,820¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = SV-001
+|Normal Base HP = 560
+|Normal Base AP = 152
+|Normal Range = 355
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 49
+|Normal Attack Length = 28
+|Normal Speed = 15
+|Normal KB = 3
+|Normal Cost = 910
+|Normal Recharge = 680
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = SV-001 CC
+|Evolved Base HP = 680
+|Evolved Base AP = 214
+|Evolved Range = 355
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 49
+|Evolved Attack Length = 28
+|Evolved Speed = 15
+|Evolved KB = 3
+|Evolved Cost = 910
+|Evolved Recharge = 680
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 560 HP
+|val-Normal-Attack Power = 152 damage<br>(71.25 DPS)
+|val-Normal-Attack Range = 355
+|val-Normal-Attack Frequency = 64f <sub>2.13 seconds</sub>
+|val-Normal-Movement Speed = 15
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Normal-Recharge Time = 22.67 ~ 13.87 seconds
+|val-Normal-MaxHP = 9,520 HP
+|val-Normal-MaxAttack = 2,585 damage<br>(1,211.72 DPS)
+|val-Evolved-Health = 11,560 HP
+|val-Evolved-Attack Power = 3,637 damage<br>(1,704.84 DPS)
+|val-Evolved-Attack Range = 355
+|val-Evolved-Attack Frequency = 64f <sub>2.13 seconds</sub>
+|val-Evolved-Movement Speed = 15
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 22.67 ~ 13.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni219 f00}}
+
+==Trivia==
+*[[wikia:metalslug:SV-001|SV-001]] is the "Metal Slug" that gives the series its name. SV-001 also stands for Super Vehicle-001.
+*SV-001's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/220.html
+
+----
+{{CatNav|FIO|ALLEN O'NEIL}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]

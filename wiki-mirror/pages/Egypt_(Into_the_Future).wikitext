@@ -1,0 +1,125 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Egypt (Into the Future)/Outbreak|here]].''
+'''Egypt''' is the 28th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc018.png]]
+|stage location = [[File:Egypt.png]]
+'''Into The Future'''
+|energy = 55
+|energy2 = 65
+|energy3 = 75
+|enemy castle hp = 125,000 HP
+|enemy castle hp2 = 187,500 HP
+|enemy castle hp3 = 250,000 HP
+|enemies = {{Magnification|Those Guys|500%
+|Doge Dark|100%
+|Mooth|500%
+|Maawth|100%
+|Doge|500%
+|Snache|500%}}
+|enemies2 = {{Magnification|Those Guys|1,000%
+|Doge Dark|200%
+|Mooth|1,000%
+|Maawth|250%
+|Doge|1,000%
+|Snache|1,000%}}
+|enemies3 = {{Magnification|Those Guys|1,500%
+|Trolly Blogger|200%
+|Doge Dark|400%
+|Maawth|600%}}
+|treasure = - [[Treasure|Mummy Wrappings]]
+|treasure2 = - [[Treasure|Mummy Wrappings]]
+|treasure3 = - [[Treasure|Mummy Wrappings]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +78,000 XP
+|score reward2 = '''8,000''': [[Cat Food]] +10<br>
+'''6,500''': +117,000 XP
+|score reward3 = '''6,000''': [[Cat Food]] +10<br>
+'''5,000''': +156,000 XP
+|max enemies = 10
+|max enemies2 = 10
+|max enemies3 = 15
+|XP = 9,100 XP
+|width = 4,800
+|jpname = Egypt
+|script = エジプト
+|romaji = Ejiputo
+|jptreasure = Hieroglyph
+|twname = Egypt
+|twscript = 埃及
+|twromaji = Āijí
+|twtreasure = Mummy
+|krname = Egypt
+|krscript = 이집트
+|krromaji = Ijibteu
+|krtreasure = Mummy
+|chapter = [[Into the Future]]
+|prev stage = [[Saudi Arabia (Into the Future)|Saudi Arabia]]
+|next stage = [[Sahara (Into the Future)|Sahara]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Those Guys|Doge Dark|Mooth|Maawth|Doge|Snache}}
+*5 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Those Guys]] spawn after 12 seconds<sup>360f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*Infinite [[Doge Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*3 [[Mooth]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*3 [[Maawth]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*Infinite [[Doge]]s spawn after 50 seconds<sup>1,500f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Snache]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Those Guys]] spawn after 64.67 seconds<sup>1,940f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*5 [[Those Guys]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*Infinite [[Those Guys]] spawn after 0.07 seconds<sup>2f</sup>, delay 1~2 seconds<sup>30f~60f</sup>.
+*20 [[Those Guys]] spawn after 0.07 seconds<sup>2f</sup>, delay 0.33~1 seconds<sup>10f~30f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Those Guys|Doge Dark|Mooth|Maawth|Doge|Snache}}
+*5 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Those Guys]] spawn after 12 seconds<sup>360f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*Infinite [[Doge Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[Mooth]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Maawth]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20 seconds<sup>600f</sup>.
+*Infinite [[Doge]]s spawn after 50 seconds<sup>1,500f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Snache]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Those Guys]] spawn after 64.67 seconds<sup>1,940f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*5 [[Those Guys]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Those Guys]] spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**20 [[Those Guys]] spawn, delay 0.33~1 seconds<sup>10f~30f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Those Guys|Trolly Blogger|Doge Dark|Maawth}}
+*5 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Those Guys]] spawn after 12 seconds<sup>360f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Trolly Blogger]]s spawn after 20 seconds<sup>600f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Doge Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[Maawth]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 20 seconds<sup>600f</sup>.
+*2 [[Maawth]]s spawn after 40 seconds<sup>1,200f</sup>, delay 20 seconds<sup>600f</sup>.
+*15 [[Those Guys]] spawn after 58 seconds<sup>1,740f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*15 [[Those Guys]] spawn after 60 seconds<sup>1,800f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*15 [[Trolly Blogger]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base reaches 99% HP:
+**Infinite [[Those Guys]] spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**30 [[Those Guys]] spawn, delay 0.33~1 seconds<sup>10f~30f</sup>.
+**Infinite [[Trolly Blogger]]s spawn, delay 1~2 seconds<sup>30f~60f</sup>.
+**30 [[Trolly Blogger]]s spawn, delay 0.33~1 seconds<sup>10f~30f</sup>.
+
+==Strategy==
+==='''Chapters 1 & 2'''===
+Simply spam [[:Category:Area Attack Cats|Area Attackers]], like [[Salon Cat (Rare Cat)|Paris Cat]], to kill off the Doge Darks, and spawn [[Bahamut Cat (Special Cat)|Bahamut]] to finish off the Mooths and Maawths.
+
+==='''Chapter 3'''===
+The main threat this time around are 3 stacking 600% Maawths, but they stack very early and you have very little cash flow due to fewer peons. The silver lining is that there is no boss wave so once you beat the early onslaught the match is over.
+
+It's different than the previous chapters because there are no Mooths at all, only 2 Doge Darks at the start to put about 1300¢ into your pocket each. Save up for Area Attack [[:Category:Uber Rare Cats|Ubers]] and protect them with a steady flow of durable meatshields. However, because your cash flow is severely limited vs the 3 stacking 600% Maawths and very little peon flow, you will use no more than 3 meatshields.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-28.html
+*https://battlecats-db.com/stage/s03004-28.html
+*https://battlecats-db.com/stage/s03005-28.html
+
+{{StoryMode Stages}}
+[[Category:Into the Future Stages]]
+[[Category:Main Chapters Levels]]
+[[Category:Timed Score Stages]]

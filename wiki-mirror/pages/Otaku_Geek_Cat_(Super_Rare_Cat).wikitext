@@ -1,0 +1,182 @@
+{{Unobtainable}}
+'''Otaku Geek Cat''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Shoumetsu Toshi Collaboration Event]]. He was added in [[Version 7.1 Update|Version 7.1]]. He is a variant of [[Nerd Cat (Super Rare Cat)|Nerd Cat]] that has the [[Weaken|weaken]] ability instead of [[Slow|slow]].
+
+{{Cat Info
+|ID = 429
+|rarity = SR
+|name1 = Otaku Geek Cat
+|name2 = Hacker Geek Cat
+}}
+
+==Evolution==
+Evolves into '''Hacker Geek Cat''' at level 10.
+
+==Strategy/Usage==
+Hacker Geek Cat acts like a second [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] with a few differences. Instead of slowing enemies down, Hacker Geek Cat weakens them. Similarly, they provide long distance support from a safe distance, even able to hit backliners with huge range.
+
+Hacker Geek Cat has a low uptime of 33%, making it almost required to create a Hacker Geek Cat stack to get 100% weaken uptime. This makes Hacker Geek Cat rather ineffective as a support on his own, unless you have other means of keeping enemies away from his very large blind spot. Unlike Cyberpunk Cat, Hacker Geek Cat can't prevent them from doing so on his own.
+
+However, when paired with Cyberpunk Cat, the two can provide excellent support from a huge range while complementing each other; Cyberpunk Cat provides support to prevent enemies from advancing when Hacker Geek Cat hinder enemies from fighting properly when your units engage them. Do note that if you choose to use other debuffer cats like [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] or [[Freshman Cat Jobs (Super Rare Cat)|Headmaster Cat Jobs]], there's not really any point in bringing him to battle.
+
+{{Job|Classification = Sniper & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 429
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni429 f00.png
+|Image2 = Uni429 c00.png
+|Name1 = Otaku Geek Cat
+|Desc1 = Cat bearing the spirit of a legendary programmer<br>dedicated to teaching the world through his blog.<br>Long-distance attacks 100% Weaken non-Metal.
+|Name2 = Hacker Geek Cat
+|Desc2 = An expert techie who knows any machine inside<br>and out. Yesterday, his own blog was hacked...<br>Long-distance attacks 100% Weaken non-Metal.
+|Name1 (JP) = オタネコギーク (Otanekogīku, Otaku Cat Geek)
+|Desc1 (JP) = インターネッツに強い名プログラマー<br>に影響を受けSNSでお役立ち情報を発信している<br>メタルな敵以外の攻撃力を必ず下げる(遠方攻撃)
+|Transl1 (JP) = Providing helpful information on social media<br>inspired by a pro programmer strong with the internet<br>Always Weakens non-Metal enemies (Area Attack)
+|Name2 (JP) = ギークネコハッカー (Gīkunekohakkā, Geek Cat Hacker)
+|Desc2 (JP) = コンピューターや機械いじりのエキスパート<br>先日、SNSのアカウントをハッキングされた<br>メタルな敵以外の攻撃力を必ず下げる(遠方範囲攻撃)
+|Transl2 (JP) = An expert with computers and tinkering with machines<br>His social media account got hacked the other day<br>Always Weakens non-Metal enemies (Area Attack)
+|Name1 (TW) = 祖克柏貓
+|Desc1 (TW) = 受"擅長網絡的優秀程式設計師"影響<br>在SNS上發佈些有用的資訊<br>必定能讓鋼鐵以外的敵人攻擊力下降(遠距攻擊)
+|Name2 (TW) = 駭客祖克柏貓
+|Desc2 (TW) = 操縱電腦和機器的專家！<br>但不久前SNS賬號遭駭客入侵<br>必定能讓鋼鐵以外的敵人攻擊力下降(遠距範圍攻擊)
+|Name1 (KR) = 오덕 고양이 긱
+|Desc1 (KR) = 인터넷에 강한 유명 프로그래머<br>에 영향을 받아 SNS담당을 맡게 된 고양이<br>메탈 적 이외의 적의 공격력을 반드시 낮춘다 (원거리 공격)
+|Name2 (KR) = 고양이 해커 긱
+|Desc2 (KR) = 컴퓨터와 기계를 잘 다루는 전문가<br>어제 SNS계정을 해킹당했다<br>메탈 적 이외의 적의 공격력을 반드시 낮춘다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Otaku Geek Cat
+|Normal Base HP = 200
+|Normal Base AP = 400
+|Normal Range = 1000
+|Normal Foreswing = 72
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 241
+|Normal Speed = 4
+|Normal KB = 1
+|Normal Cost = 2500
+|Normal Recharge = 5000
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 800~1,200)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 80f <sub>2.67 seconds</sub>
+|Evolved Name = Hacker Geek Cat
+|Evolved Base HP = 200
+|Evolved Base AP = 400
+|Evolved Range = 1000
+|Evolved Foreswing = 72
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 241
+|Evolved Speed = 4
+|Evolved KB = 1
+|Evolved Cost = 2500
+|Evolved Recharge = 5000
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 800~1,200)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 80f <sub>2.67 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 400 damage<br>(49.79 DPS)
+|val-Normal-Attack Range = 1,000
+|val-Normal-Attack Frequency = 241f <sub>8.03 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 72f <sup>2.4s</sup><br>(169f <sup>5.63s</sup> backswing)
+|val-Normal-Recharge Time = 166.67 ~ 157.87 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 6,800 damage<br>(846.47 DPS)
+|val-Evolved-Health = 3,400 HP
+|val-Evolved-Attack Power = 6,800 damage<br>(846.47 DPS)
+|val-Evolved-Attack Range = 1,000
+|val-Evolved-Attack Frequency = 241f <sub>8.03 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 72f <sup>2.4s</sup><br>(169f <sup>5.63s</sup> backswing)
+|val-Evolved-Recharge Time = 166.67 ~ 157.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Otaku Geek Cat and its evolution appear in Shoumetsu Toshi as a fire type unit introduced in the fourth collaboration between the two games. It appears in the collaboration gacha during the event duration and can only be obtained through it.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|オタネコギーク (Otanekogīku, Otaku Cat Geek)
+! scope="row" style="text-align: center;"|ギークネコハッカー (Gīkunekohakkā, Geek Cat Hacker)
+|-
+| colspan="2" |[[File:ST Otaku Geek Cat.png|center|300px]]
+|[[File:ST Hacker Geek Cat.png|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats At Level 35
+! scope="col" style="text-align: center;"|Stats At Level 99
+|-
+! scope="col" |Rarity
+|★4
+|★5
+|-
+! scope="col" |Health
+|1,224
+|1,716
+|-
+! scope="col" |Attack
+|748
+|1,173
+|-
+! scope="col" |Recovery
+|20
+|35
+|-
+! scope="col" |Single Skill
+| colspan="2" |Enemy defense power 50% DOWN once & 100,000 damage attack (fire)<br>(Affected by attribute compatibility and defense power)
+|-
+! scope="col" |Leadership Skill
+|When HP is MAX,<br>the attack power of allied fire souls is doubled
+|When HP is MAX,<br>the attack power of allied fire souls is increased by 2.5
+|}
+</div>
+
+{{Gallery|Uni429 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/430.html
+
+----
+{{CatNav|Souma Cat|Gude-Cat Machine}}
+----
+
+{{Shoumetsu Toshi}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Weaken ability]]

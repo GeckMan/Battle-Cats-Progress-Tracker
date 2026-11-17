@@ -1,0 +1,58 @@
+'''Squid Bender''' is the first stage in [[Survive! Mola Mola! Collaboration Event#Survive! Mola Mola!|Survive! Mola Mola!]].
+
+{{EnemiesAppearing|Squid|Sardine|Young Man Mola}}
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn011 00 c en.png]]
+|stage location = [[File:Mapname011 c en.png]]
+|energy = 50
+|enemy castle hp = 3,000 HP
+|enemies = {{Magnification|Squid|100%
+|Sardine|100%}}
+|boss = {{Magnification|Young Man Mola|100%}}
+|enemies2 = {{Magnification|Squid|200%
+|Sardine|200%}}
+|boss2 = {{Magnification|Young Man Mola|200%}}
+|enemies3 = {{Magnification|Squid|300%
+|Sardine|300%}}
+|boss3 = {{Magnification|Young Man Mola|300%}}
+|enemies4 = {{Magnification|Squid|400%
+|Sardine|400%}}
+|boss4 = {{Magnification|Young Man Mola|400%}}
+|treasure = - [[Meowla Meowla (Special Cat)|Meowla Meowla]] (3%)
+|score reward = '''8,000''': 15,000 XP<br>
+'''6,000''': 10,000 XP<br>
+'''500''': 5,000 XP
+|XP = 1,500 XP
+|width = 3,600
+|max enemies = 9
+|jpname = Eating too much squid
+|script = イカ食べ過ぎ
+|romaji = Ika tabe-sugi
+|star = 4
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|event-chapter = [[Survive! Mola Mola! Collaboration Event#Survive! Mola Mola!|Survive! Mola Mola!]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Mean Morning Sunbeams]]
+}}
+
+==Battleground==
+*1 [[Squid (Enemy)|Squid]] spawns.
+*3 [[Squid (Enemy)|Squid]] spawn after 20 seconds<sup>600f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 50 seconds<sup>1,500f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*When the base reaches 90% HP:
+**1 [[Young Man Mola (Enemy)|Young Man Mola]] spawns as the boss.
+**3 [[Squid (Enemy)|Squid]] spawn, delay 8.33 seconds<sup>250f</sup>.
+**5 [[Sardine (Enemy)|Sardines]] spawn, delay 5 seconds<sup>150f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02088-01.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

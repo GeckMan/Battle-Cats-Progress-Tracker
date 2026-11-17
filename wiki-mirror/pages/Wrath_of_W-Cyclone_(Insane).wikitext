@@ -1,0 +1,71 @@
+{{EnemiesAppearing|Those Guys|Kang Roo|Duche|THE SLOTH|Squire Rel|Otta-smack-u|Dagshund|White Cyclone}}
+'''Wrath of W-Cyclone (Insane)''' is the first stage in [[Peerless Too]]. Completing this stage for the first time will yield a reward of 1,000,000 XP.
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn176 00 s en.png]]
+|stage location = [[File:Mapname176 s en.png]]
+|energy = 200
+|enemy castle hp = 400,000 HP
+|enemies = {{Magnification|Those Guys|100%
+|Kang Roo|400%
+|Duche|100%
+|THE SLOTH|150%
+|Squire Rel|100%
+|Otta-smack-u|100%
+|Dagshund|100%}}
+|boss = {{Magnification|White Cyclone|100%}}
+|treasure = - 1,000,000 XP (100%, 1 time)
+|restriction = Max # of Deployable Cats: 10
+|XP = 3,800 XP
+|width = 6,000
+|max enemies = 10
+|jpname = The White Vortex of Progress Super Hard
+|script = 進撃の白渦 超激ムズ
+|romaji = Shingeki no Shiro Uzu Chō Geki Muzu
+|star = 1
+|event-chapter = [[Peerless Too]]
+|difficulty = ★6
+|prev stage = N/A
+|next stage = [[Revenge of W-Cyclone (Deadly)]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*Infinite [[Those Guys]] spawn, delay 5.33~16.67 seconds<sup>160f~500f</sup>.
+*7 [[Kang Roo]]s spawn after 3.33 seconds<sup>100f</sup>, delay 1.33~4 seconds<sup>40f~120f</sup>.
+*3 [[Duche]]s spawn after 23.33 seconds<sup>700f</sup>, delay 3.33~3.67 seconds<sup>100f~110f</sup>.
+*15 [[Duche]]s spawn after 80 seconds<sup>2,400f</sup>, delay 20~33.33 seconds<sup>600f~1,000f</sup>.
+*1 [[THE SLOTH]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Squire Rel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Otta-smack-u]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~46.67 seconds<sup>1,000f~1,400f</sup>.
+*3 [[Dagshund]]s spawn after 90 seconds<sup>2,700f</sup>, delay 0.67~0.73 seconds<sup>20f~22f</sup>.
+*3 [[Dagshund]]s spawn after 73.33 seconds<sup>2,200f</sup>, delay 0.67~0.73 seconds<sup>20f~22f</sup>.
+*1 [[White Cyclone]] spawns as the boss after 66.67 seconds<sup>2,000f</sup>.
+*When the base reaches 90% HP:
+**3 [[Otta-smack-u]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+*When the base reaches 80% HP:
+**3 [[Otta-smack-u]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+This stage is the exact same as [[Attack on W-Cyclone (Expert)|Attack on W-Cyclone]], but with a restriction in place. The restriction prevents most crowd-control units from working due to most working best in stacks, and will leave said stack defenseless from the heavy pushers of Dagshund and Otta-Smack-U. Instead a high-DPS approach is required due to the White Cyclone being knocked back after every 200,000 damage dealt to it. A good rule of thumb is 3 [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] hits and a bit of chip damage is enough to knockback the White Cyclone. A [[Mer-Cat (Rare Cat)|Cameraman Cat]] stack can easily knockback the White Cyclone and damage the support.
+
+==='''Recommended Units'''===
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]] - At level 30, 4 hits from him is enough to knockback the cyclone, though he doesn't have much range and has to be supported to work well, along with suicidally rushing into THE SLOTH'S range.
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]] - Requires some support to work well, but can deal extremely high DPS to the White Cyclone when stacked. Cameraman also has the Survive ability which allows her to reposition if hit by the cyclone.
+*[[Crazed Bird Cat (Super Rare Cat)|Crazed UFO Cat]] - Has a [[Saucers (Combo)|Massive Damage Up]] combo with [[Bird Cat (Normal Cat)|UFO Cat]] to increase Fishman Cat's damage against White Cyclone and can help clean up the remaining enemies after it is gone.
+
+==Walkthrough==
+{{Walkthrough
+|QNs9ul1nsDg|Xuan Nhi Vu|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01176-01.html
+
+{{Cyclone}}
+[[Category:Peerless Too]]
+
+[[Category:Restriction Stages]]

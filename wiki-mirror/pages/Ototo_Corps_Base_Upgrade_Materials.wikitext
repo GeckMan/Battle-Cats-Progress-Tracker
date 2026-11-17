@@ -1,0 +1,7993 @@
+<div class="mw-customtoggle-info wds-button">Switch Information</div>
+<div class="info"><tabber>
+|-|Normal Base=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Base Health Bonus
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|-
+|Style
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|-
+|Cannon
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|N/A
+|-
+|Level 2
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|4,000
+|-
+|Level 3
+|3
+|3
+|3
+|3
+|0
+|0
+|0
+|0
+|1
+|12
+|8,000
+|-
+|Level 4
+|6
+|6
+|6
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|12,000
+|-
+|Level 5
+|6
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|2
+|12
+|16,000
+|-
+|Level 6
+|6
+|6
+|6
+|0
+|6
+|0
+|0
+|0
+|2
+|12
+|20,000
+|-
+|Level 7
+|0
+|6
+|6
+|6
+|0
+|6
+|0
+|0
+|2
+|12
+|24,000
+|-
+|Level 8
+|9
+|0
+|7
+|0
+|7
+|0
+|7
+|0
+|3
+|12
+|28,000
+|-
+|Level 9
+|0
+|9
+|0
+|7
+|7
+|7
+|0
+|0
+|3
+|12
+|32,000
+|-
+|Level 10
+|0
+|0
+|0
+|9
+|9
+|9
+|9
+|0
+|3
+|12
+|36,000
+|-
+|Level 11
+|4
+|4
+|0
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|40,000
+|-
+|Level 12
+|8
+|8
+|8
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|44,000
+|-
+|Level 13
+|6
+|6
+|6
+|6
+|0
+|0
+|0
+|0
+|2
+|12
+|48,000
+|-
+|Level 14
+|0
+|10
+|12
+|0
+|0
+|14
+|0
+|0
+|2
+|12
+|52,000
+|-
+|Level 15
+|9
+|0
+|9
+|9
+|0
+|0
+|9
+|0
+|3
+|12
+|56,000
+|-
+|Level 16
+|14
+|6
+|0
+|0
+|14
+|14
+|0
+|0
+|3
+|12
+|60,000
+|-
+|Level 17
+|0
+|6
+|14
+|12
+|0
+|16
+|0
+|0
+|3
+|12
+|64,000
+|-
+|Level 18
+|14
+|0
+|14
+|0
+|14
+|0
+|18
+|0
+|3
+|12
+|68,000
+|-
+|Level 19
+|0
+|14
+|0
+|14
+|14
+|18
+|0
+|0
+|3
+|12
+|72,000
+|-
+|Level 20
+|0
+|0
+|0
+|18
+|18
+|18
+|18
+|0
+|4
+|12
+|76,000
+|-
+|Level 21
+|20
+|0
+|0
+|0
+|0
+|10
+|10
+|8
+|1
+|12
+|80,000
+|-
+|Level 22
+|0
+|0
+|18
+|12
+|0
+|0
+|10
+|8
+|1
+|12
+|84,000
+|-
+|Level 23
+|0
+|16
+|0
+|14
+|20
+|10
+|0
+|0
+|2
+|12
+|88,000
+|-
+|Level 24
+|22
+|20
+|0
+|0
+|0
+|0
+|10
+|8
+|2
+|12
+|92,000
+|-
+|Level 25
+|0
+|0
+|24
+|16
+|24
+|0
+|0
+|8
+|3
+|12
+|96,000
+|-
+|Level 26
+|24
+|24
+|0
+|0
+|0
+|12
+|12
+|0
+|3
+|12
+|100,000
+|-
+|Level 27
+|0
+|0
+|28
+|18
+|28
+|0
+|0
+|10
+|3
+|12
+|104,000
+|-
+|Level 28
+|28
+|0
+|0
+|0
+|28
+|18
+|0
+|10
+|3
+|12
+|108,000
+|-
+|Level 29
+|30
+|30
+|0
+|0
+|0
+|20
+|16
+|0
+|3
+|12
+|112,000
+|-
+|Level 30
+|32
+|0
+|30
+|0
+|32
+|0
+|0
+|14
+|4
+|12
+|116,000
+|-
+|Total
+|'''245'''
+|'''182'''
+|'''199'''
+|'''152'''
+|'''221'''
+|'''172'''
+|'''119'''
+|'''66'''
+|'''68'''
+|'''348'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Normalbase.png|100px|left]] Attacks by firing a laser beam into the ground which after a slight delay explodes into [[Wave Attack]]s. Enemies in range will be knocked back and take low damage.
+
+:Upgrades increase base health up to a maximum of 116,000 in addition to existing Base Health (which will be 120,000 with maxed out Treasures and Base Defense). The Cat Cannon's damage is unaffected, but Sniper the Cat's becomes 580 points stronger as its attack power is 5% of the base's maximum health.</div>
+|}}}
+
+|-|Slow Beam=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Slow Duration
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|5
+|3
+|4
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Style
+|7
+|4
+|5
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Cannon
+|9
+|5
+|7
+|3
+|0
+|0
+|0
+|0
+|2
+|24
+|30f <sup>1 second</sup>
+|-
+|Level 2
+|5
+|3
+|4
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|32f <sup>1.07 seconds</sup>
+|-
+|Level 3
+|0
+|5
+|3
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|34f <sup>1.13 seconds</sup>
+|-
+|Level 4
+|6
+|5
+|5
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|36f <sup>1.2 seconds</sup>
+|-
+|Level 5
+|0
+|6
+|5
+|5
+|2
+|0
+|0
+|0
+|2
+|12
+|38f <sup>1.27 seconds</sup>
+|-
+|Level 6
+|6
+|7
+|7
+|0
+|4
+|0
+|0
+|0
+|2
+|12
+|41f <sup>1.37 seconds</sup>
+|-
+|Level 7
+|7
+|5
+|6
+|0
+|6
+|0
+|0
+|0
+|2
+|12
+|43f <sup>1.43 seconds</sup>
+|-
+|Level 8
+|9
+|8
+|7
+|0
+|0
+|6
+|0
+|0
+|3
+|12
+|45f <sup>1.5 seconds</sup>
+|-
+|Level 9
+|10
+|0
+|8
+|4
+|0
+|8
+|0
+|0
+|3
+|12
+|47f <sup>1.57 seconds</sup>
+|-
+|Level 10
+|11
+|10
+|0
+|0
+|7
+|0
+|8
+|0
+|3
+|12
+|50f <sup>1.67 seconds</sup>
+|-
+|Level 11
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|55f <sup>1.83 seconds</sup>
+|-
+|Level 12
+|0
+|6
+|8
+|0
+|0
+|10
+|0
+|0
+|1
+|12
+|60f <sup>2 seconds</sup>
+|-
+|Level 13
+|0
+|6
+|10
+|8
+|0
+|0
+|0
+|0
+|2
+|12
+|65f <sup>2.17 seconds</sup>
+|-
+|Level 14
+|9
+|9
+|9
+|0
+|0
+|9
+|0
+|0
+|2
+|12
+|70f <sup>2.33 seconds</sup>
+|-
+|Level 15
+|0
+|0
+|12
+|6
+|6
+|0
+|12
+|0
+|3
+|12
+|75f <sup>2.5 seconds</sup>
+|-
+|Level 16
+|10
+|0
+|0
+|0
+|10
+|14
+|14
+|0
+|3
+|12
+|80f <sup>2.67 seconds</sup>
+|-
+|Level 17
+|12
+|8
+|16
+|0
+|12
+|0
+|0
+|0
+|3
+|12
+|85f <sup>2.83 seconds</sup>
+|-
+|Level 18
+|14
+|0
+|14
+|0
+|0
+|16
+|16
+|0
+|3
+|12
+|90f <sup>3 seconds</sup>
+|-
+|Level 19
+|16
+|0
+|20
+|4
+|0
+|20
+|0
+|0
+|3
+|12
+|95f <sup>3.17 seconds</sup>
+|-
+|Level 20
+|18
+|12
+|0
+|0
+|22
+|0
+|20
+|0
+|4
+|12
+|100f <sup>3.33 seconds</sup>
+|-
+|Level 21
+|0
+|0
+|0
+|8
+|0
+|0
+|3
+|1
+|1
+|12
+|105f <sup>3.5 seconds</sup>
+|-
+|Level 22
+|0
+|0
+|0
+|5
+|8
+|10
+|0
+|1
+|1
+|12
+|110f <sup>3.67 seconds</sup>
+|-
+|Level 23
+|6
+|6
+|0
+|0
+|0
+|0
+|10
+|2
+|2
+|12
+|115f <sup>3.83 seconds</sup>
+|-
+|Level 24
+|0
+|0
+|14
+|6
+|0
+|14
+|0
+|2
+|2
+|12
+|120f <sup>4 seconds</sup>
+|-
+|Level 25
+|0
+|8
+|0
+|0
+|8
+|0
+|16
+|4
+|3
+|12
+|125f <sup>4.16 seconds</sup>
+|-
+|Level 26
+|16
+|0
+|0
+|14
+|0
+|0
+|14
+|4
+|3
+|12
+|130f <sup>4.33 seconds</sup>
+|-
+|Level 27
+|0
+|12
+|14
+|0
+|0
+|16
+|0
+|6
+|3
+|12
+|135f <sup>4.5 seconds</sup>
+|-
+|Level 28
+|22
+|0
+|0
+|12
+|20
+|0
+|0
+|6
+|3
+|12
+|140f <sup>4.67 seconds</sup>
+|-
+|Level 29
+|0
+|0
+|22
+|0
+|0
+|16
+|14
+|8
+|3
+|12
+|145f <sup>4.83 seconds</sup>
+|-
+|Level 30
+|0
+|24
+|0
+|18
+|22
+|0
+|0
+|8
+|4
+|12
+|150f <sup>5 seconds</sup>
+|-
+|Total
+|'''202'''
+|'''156'''
+|'''204'''
+|'''101'''
+|'''127'''
+|'''139'''
+|'''127'''
+|'''42'''
+|'''72'''
+|'''396'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Slow Cannon.png|100px|left]] Fires a green laser beam from the Cat Base to the enemy base. Enemies will be immediately slowed for 30 frames <sup>1 second</sup> the moment the laser makes contact. Deals no damage to enemies.
+
+:Upgrades increase slow duration up to a maximum of 150 frames <sup>5 seconds</sup>.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Floating Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|3
+|2
+|2
+|1
+|0
+|0
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|1
+|1
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|2
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|2
+|2
+|1
+|0
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|2
+|2
+|0
+|1
+|0
+|0
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|2
+|2
+|0
+|2
+|0
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|2
+|2
+|2
+|0
+|0
+|2
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|3
+|0
+|2
+|1
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|3
+|3
+|0
+|0
+|2
+|0
+|2
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|2
+|2
+|0
+|0
+|3
+|0
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|2
+|3
+|2
+|0
+|0
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|3
+|2
+|3
+|0
+|0
+|3
+|0
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|0
+|3
+|0
+|2
+|0
+|4
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|3
+|0
+|0
+|0
+|3
+|4
+|3
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|0
+|5
+|0
+|4
+|0
+|0
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|4
+|0
+|4
+|0
+|0
+|4
+|5
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|5
+|0
+|5
+|0
+|0
+|5
+|0
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|4
+|3
+|0
+|0
+|5
+|0
+|6
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''43'''
+|'''28'''
+|'''41'''
+|'''8'''
+|'''20'''
+|'''23'''
+|'''20'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Slow Beam Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Floating Enemies|Floating enemies]].
+
+:Upgrades increase damage reduction percentage to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Slow Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|3
+|2
+|2
+|1
+|0
+|0
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|1
+|1
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|2
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|2
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|2
+|2
+|1
+|0
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|2
+|2
+|0
+|1
+|0
+|0
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|2
+|2
+|0
+|2
+|0
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|3
+|2
+|2
+|0
+|0
+|2
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|3
+|0
+|2
+|1
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|3
+|3
+|0
+|0
+|2
+|0
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|2
+|2
+|0
+|0
+|2
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|2
+|3
+|2
+|0
+|0
+|0
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|3
+|3
+|3
+|0
+|0
+|0
+|0
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|0
+|4
+|2
+|2
+|0
+|4
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|3
+|0
+|0
+|0
+|3
+|5
+|0
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|2
+|5
+|0
+|4
+|0
+|0
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|5
+|0
+|4
+|0
+|0
+|5
+|0
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|5
+|0
+|5
+|3
+|0
+|5
+|0
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|5
+|0
+|0
+|6
+|0
+|0
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''46'''
+|'''33'''
+|'''43'''
+|'''13'''
+|'''21'''
+|'''21'''
+|'''4'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Slow Beam Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Slow]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Iron Wall=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Wall Health
+! rowspan="2" |Wall Duration
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|3
+|0
+|4
+|5
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Style
+|4
+|5
+|2
+|7
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Cannon
+|6
+|0
+|6
+|9
+|3
+|0
+|0
+|0
+|2
+|24
+|5
+|60f <sup>2 seconds</sup>
+|-
+|Level 2
+|3
+|0
+|4
+|5
+|0
+|0
+|0
+|0
+|1
+|12
+|6
+|63f <sup>2.1 seconds</sup>
+|-
+|Level 3
+|0
+|2
+|5
+|5
+|0
+|0
+|0
+|0
+|1
+|12
+|7
+|66f <sup>2.2 seconds</sup>
+|-
+|Level 4
+|6
+|3
+|3
+|6
+|0
+|0
+|0
+|0
+|1
+|12
+|8
+|69f <sup>2.3 seconds</sup>
+|-
+|Level 5
+|0
+|5
+|4
+|6
+|0
+|3
+|0
+|0
+|2
+|12
+|9
+|73f <sup>2.43 seconds</sup>
+|-
+|Level 6
+|6
+|0
+|0
+|7
+|6
+|0
+|5
+|0
+|2
+|12
+|10
+|76f <sup>2.53 seconds</sup>
+|-
+|Level 7
+|0
+|6
+|5
+|7
+|0
+|0
+|6
+|0
+|2
+|12
+|11
+|79f <sup>2.63 seconds</sup>
+|-
+|Level 8
+|0
+|4
+|0
+|9
+|8
+|9
+|0
+|0
+|3
+|12
+|12
+|82f <sup>2.73 seconds</sup>
+|-
+|Level 9
+|6
+|0
+|0
+|9
+|7
+|8
+|0
+|0
+|3
+|12
+|13
+|86f <sup>2.87 seconds</sup>
+|-
+|Level 10
+|0
+|7
+|0
+|11
+|8
+|0
+|10
+|0
+|3
+|12
+|14
+|90f <sup>3 seconds</sup>
+|-
+|Level 11
+|0
+|0
+|4
+|4
+|4
+|0
+|0
+|0
+|1
+|12
+|15
+|93f <sup>3.1 seconds</sup>
+|-
+|Level 12
+|0
+|0
+|0
+|5
+|7
+|12
+|0
+|0
+|1
+|12
+|15
+|98f <sup>3.27 seconds</sup>
+|-
+|Level 13
+|0
+|0
+|7
+|7
+|0
+|0
+|10
+|0
+|2
+|12
+|15
+|102f <sup>3.4 seconds</sup>
+|-
+|Level 14
+|9
+|8
+|10
+|9
+|0
+|0
+|0
+|0
+|2
+|12
+|15
+|107f <sup>3.57 seconds</sup>
+|-
+|Level 15
+|0
+|6
+|0
+|9
+|10
+|11
+|0
+|0
+|3
+|12
+|15
+|111f <sup>3.7 seconds</sup>
+|-
+|Level 16
+|0
+|0
+|0
+|13
+|12
+|12
+|11
+|0
+|3
+|12
+|15
+|116f <sup>3.87 seconds</sup>
+|-
+|Level 17
+|12
+|8
+|12
+|16
+|0
+|0
+|0
+|0
+|3
+|12
+|16
+|120f <sup>4 seconds</sup>
+|-
+|Level 18
+|0
+|10
+|0
+|18
+|0
+|18
+|14
+|0
+|3
+|12
+|16
+|125f <sup>4.17 seconds</sup>
+|-
+|Level 19
+|0
+|0
+|10
+|20
+|14
+|16
+|0
+|0
+|3
+|12
+|16
+|129f <sup>4.3 seconds</sup>
+|-
+|Level 20
+|16
+|0
+|0
+|22
+|16
+|0
+|18
+|0
+|4
+|12
+|16
+|135f <sup>4.5 seconds</sup>
+|-
+|Level 21
+|0
+|6
+|0
+|4
+|0
+|0
+|0
+|2
+|1
+|12
+|16
+|139f <sup>4.63 seconds</sup>
+|-
+|Level 22
+|12
+|0
+|0
+|4
+|0
+|7
+|0
+|1
+|1
+|12
+|16
+|144f <sup>4.8 seconds</sup>
+|-
+|Level 23
+|0
+|0
+|10
+|6
+|0
+|0
+|6
+|2
+|2
+|12
+|16
+|148f <sup>4.93 seconds</sup>
+|-
+|Level 24
+|0
+|16
+|0
+|6
+|12
+|0
+|0
+|2
+|2
+|12
+|17
+|153f <sup>5.1 seconds</sup>
+|-
+|Level 25
+|18
+|0
+|0
+|8
+|8
+|0
+|0
+|2
+|3
+|12
+|17
+|157f <sup>5.23 seconds</sup>
+|-
+|Level 26
+|0
+|0
+|0
+|10
+|0
+|18
+|16
+|4
+|3
+|12
+|17
+|162f <sup>5.4 seconds</sup>
+|-
+|Level 27
+|0
+|14
+|20
+|10
+|0
+|0
+|0
+|4
+|3
+|12
+|17
+|166f <sup>5.53 seconds</sup>
+|-
+|Level 28
+|18
+|0
+|0
+|16
+|0
+|0
+|20
+|6
+|3
+|12
+|17
+|171f <sup>5.7 seconds</sup>
+|-
+|Level 29
+|0
+|16
+|0
+|16
+|0
+|20
+|0
+|8
+|3
+|12
+|17
+|175f <sup>5.83 seconds</sup>
+|-
+|Level 30
+|0
+|0
+|22
+|20
+|22
+|0
+|0
+|8
+|4
+|12
+|18
+|180f <sup>6 seconds</sup>
+|-
+|Total
+|'''119'''
+|'''116'''
+|'''128'''
+|'''309'''
+|'''137'''
+|'''134'''
+|'''116'''
+|'''39'''
+|'''72'''
+|'''396'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Iron Cannon.png|100px|left]] Spawns a static unit called the Iron Wall Cat 100 range in front of the nearest enemy (minimum of about 150 range from enemy base). The shield has 5 health, is considered Metal, and is immune to all status effects. However, it will expire after 60 frames <sup>2 seconds</sup> even if enemies do not deplete its health. In addition, as it considered a Cat Unit, it cannot be deployed if the maximum number of deployed units has been reached, and Zombies can burrow underneath it.
+
+:Upgrades increase shield health and duration up to a maximum of 18 health and 180 frames <sup>6 seconds</sup>.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Dark Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|0
+|2
+|3
+|1
+|0
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|1
+|0
+|1
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|1
+|2
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|1
+|1
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|1
+|2
+|0
+|1
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|0
+|0
+|2
+|2
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|2
+|2
+|0
+|0
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|1
+|0
+|3
+|2
+|3
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|0
+|0
+|3
+|2
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|2
+|0
+|3
+|2
+|0
+|3
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|0
+|1
+|1
+|1
+|0
+|0
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|0
+|0
+|2
+|2
+|4
+|0
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|0
+|2
+|2
+|0
+|0
+|3
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|3
+|2
+|3
+|3
+|0
+|0
+|0
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|2
+|0
+|0
+|3
+|3
+|0
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|0
+|4
+|4
+|3
+|3
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|0
+|3
+|5
+|0
+|0
+|0
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|0
+|4
+|0
+|5
+|0
+|5
+|0
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|0
+|3
+|0
+|4
+|5
+|0
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|0
+|0
+|6
+|5
+|0
+|5
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''21'''
+|'''17'''
+|'''21'''
+|'''52'''
+|'''28'''
+|'''26'''
+|'''18'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Iron Wall Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Dark Enemies|Dark enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Wave Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|0
+|2
+|3
+|1
+|0
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|1
+|0
+|1
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|1
+|2
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|1
+|1
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|1
+|2
+|0
+|1
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|0
+|0
+|2
+|2
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|2
+|2
+|0
+|0
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|1
+|0
+|3
+|2
+|3
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|0
+|0
+|3
+|2
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|2
+|0
+|3
+|2
+|0
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|0
+|1
+|1
+|1
+|0
+|0
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|0
+|0
+|2
+|2
+|4
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|0
+|2
+|2
+|0
+|0
+|3
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|3
+|2
+|3
+|0
+|0
+|0
+|0
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|2
+|0
+|3
+|3
+|3
+|0
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|0
+|4
+|4
+|4
+|0
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|2
+|4
+|5
+|0
+|0
+|0
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|0
+|3
+|0
+|0
+|0
+|5
+|4
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|0
+|3
+|6
+|4
+|5
+|0
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|0
+|0
+|7
+|5
+|0
+|0
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''21'''
+|'''18'''
+|'''22'''
+|'''54'''
+|'''28'''
+|'''27'''
+|'''11'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Iron Wall Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Wave]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Thunderbolt=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Freeze Duration
+! rowspan="2" |Bolt Power (relative to Cat Cannon)
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|0
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Style
+|4
+|6
+|4
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Cannon
+|9
+|0
+|9
+|0
+|0
+|3
+|3
+|0
+|2
+|24
+|15f <sup>0.5 seconds</sup>
+|30%
+|-
+|Level 2
+|0
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|16f <sup>0.53 seconds</sup>
+|31%
+|-
+|Level 3
+|4
+|4
+|4
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|18f <sup>0.6 seconds</sup>
+|32%
+|-
+|Level 4
+|5
+|3
+|6
+|0
+|4
+|0
+|0
+|0
+|1
+|12
+|20f <sup>0.67 seconds</sup>
+|33%
+|-
+|Level 5
+|6
+|0
+|0
+|3
+|0
+|5
+|4
+|0
+|2
+|12
+|21f <sup>0.7 seconds</sup>
+|34%
+|-
+|Level 6
+|0
+|6
+|0
+|0
+|7
+|6
+|5
+|0
+|2
+|12
+|23f <sup>0.77 seconds</sup>
+|35%
+|-
+|Level 7
+|7
+|0
+|5
+|0
+|8
+|4
+|0
+|0
+|2
+|12
+|25f <sup>0.83 seconds</sup>
+|36%
+|-
+|Level 8
+|0
+|9
+|0
+|6
+|8
+|0
+|7
+|0
+|3
+|12
+|27f <sup>0.9 seconds</sup>
+|37%
+|-
+|Level 9
+|0
+|0
+|7
+|0
+|6
+|8
+|9
+|0
+|3
+|12
+|28f <sup>0.93 seconds</sup>
+|38%
+|-
+|Level 10
+|6
+|0
+|0
+|0
+|10
+|9
+|11
+|0
+|3
+|12
+|30f <sup>1 second</sup>
+|39%
+|-
+|Level 11
+|0
+|0
+|4
+|0
+|0
+|4
+|4
+|0
+|1
+|12
+|33f <sup>1.1 seconds</sup>
+|39%
+|-
+|Level 12
+|0
+|6
+|6
+|0
+|0
+|4
+|8
+|0
+|1
+|12
+|36f <sup>1.2 seconds</sup>
+|40%
+|-
+|Level 13
+|6
+|6
+|0
+|4
+|0
+|8
+|0
+|0
+|2
+|12
+|39f <sup>1.3 seconds</sup>
+|41%
+|-
+|Level 14
+|0
+|8
+|10
+|0
+|6
+|0
+|12
+|0
+|2
+|12
+|42f <sup>1.4 seconds</sup>
+|42%
+|-
+|Level 15
+|8
+|0
+|0
+|5
+|0
+|11
+|12
+|0
+|3
+|12
+|45f <sup>1.5 seconds</sup>
+|43%
+|-
+|Level 16
+|0
+|0
+|14
+|0
+|7
+|12
+|15
+|0
+|3
+|12
+|48f <sup>1.6 seconds</sup>
+|44%
+|-
+|Level 17
+|12
+|0
+|15
+|0
+|8
+|13
+|0
+|0
+|3
+|12
+|51f <sup>1.7 seconds</sup>
+|45%
+|-
+|Level 18
+|13
+|0
+|16
+|15
+|0
+|0
+|16
+|0
+|3
+|12
+|54f <sup>1.8 seconds</sup>
+|46%
+|-
+|Level 19
+|0
+|14
+|0
+|13
+|0
+|15
+|18
+|0
+|3
+|12
+|57f <sup>1.9 seconds</sup>
+|47%
+|-
+|Level 20
+|18
+|0
+|0
+|0
+|14
+|20
+|20
+|0
+|4
+|12
+|60f <sup>2 seconds</sup>
+|48%
+|-
+|Level 21
+|0
+|0
+|6
+|0
+|0
+|0
+|4
+|2
+|1
+|12
+|63f <sup>2.1 seconds</sup>
+|48%
+|-
+|Level 22
+|7
+|14
+|0
+|0
+|0
+|0
+|2
+|1
+|1
+|12
+|66f <sup>2.2 seconds</sup>
+|49%
+|-
+|Level 23
+|0
+|0
+|5
+|0
+|0
+|10
+|6
+|3
+|2
+|12
+|69f <sup>2.3 seconds</sup>
+|50%
+|-
+|Level 24
+|15
+|0
+|0
+|10
+|0
+|0
+|10
+|1
+|2
+|12
+|72f <sup>2.4 seconds</sup>
+|51%
+|-
+|Level 25
+|0
+|8
+|14
+|0
+|0
+|0
+|12
+|2
+|3
+|12
+|75f <sup>2.5 seconds</sup>
+|52%
+|-
+|Level 26
+|16
+|0
+|0
+|18
+|0
+|0
+|10
+|4
+|3
+|12
+|78f <sup>2.6 seconds</sup>
+|53%
+|-
+|Level 27
+|0
+|10
+|0
+|0
+|20
+|0
+|12
+|6
+|3
+|12
+|81f <sup>2.7 seconds</sup>
+|54%
+|-
+|Level 28
+|0
+|0
+|22
+|0
+|0
+|22
+|10
+|6
+|3
+|12
+|84f <sup>2.8 seconds</sup>
+|55%
+|-
+|Level 29
+|0
+|18
+|0
+|0
+|22
+|0
+|12
+|8
+|3
+|12
+|87f <sup>2.9 seconds</sup>
+|56%
+|-
+|Level 30
+|20
+|0
+|0
+|22
+|0
+|0
+|22
+|8
+|4
+|12
+|90f <sup>3 seconds</sup>
+|57%
+|-
+|Total
+|'''156'''
+|'''120'''
+|'''155'''
+|'''108'''
+|'''120'''
+|'''154'''
+|'''244'''
+|'''41'''
+|'''72'''
+|'''396'''
+|
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Thunderbolt Cannon.png|100px|left]] Summons a bolt of lightning that strikes from 1-500 range in front of the furthest Cat Unit. The lightning strikes after a slight delay, damaging enemies by 30% of the Cat Cannon's power and freezing them for 15 frames <sup>0.5 seconds</sup>.
+
+:Upgrades increase damage and freeze duration up to a maximum of 57% of the Cat Cannon's power and 90 frames <sup>3 seconds</sup> respectively.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Angel Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|3
+|0
+|3
+|0
+|0
+|1
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|1
+|2
+|0
+|1
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|2
+|0
+|0
+|1
+|0
+|2
+|1
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|0
+|2
+|0
+|0
+|2
+|2
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|0
+|2
+|0
+|2
+|1
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|3
+|0
+|2
+|2
+|0
+|2
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|0
+|0
+|2
+|0
+|2
+|2
+|3
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|2
+|0
+|0
+|0
+|3
+|3
+|3
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|0
+|1
+|0
+|0
+|1
+|1
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|2
+|2
+|0
+|0
+|1
+|2
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|2
+|2
+|0
+|0
+|0
+|2
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|0
+|2
+|3
+|0
+|2
+|0
+|4
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|2
+|0
+|0
+|2
+|0
+|3
+|0
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|4
+|0
+|2
+|4
+|5
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|0
+|5
+|0
+|0
+|4
+|0
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|3
+|0
+|4
+|5
+|0
+|0
+|4
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|4
+|0
+|0
+|0
+|5
+|5
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|0
+|0
+|0
+|4
+|6
+|6
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''28'''
+|'''18'''
+|'''30'''
+|'''11'''
+|'''20'''
+|'''37'''
+|'''39'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Thunderbolt Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Angel Enemies|Angel enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Freeze Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|3
+|0
+|3
+|0
+|0
+|1
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|1
+|1
+|1
+|0
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|1
+|2
+|0
+|1
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|2
+|0
+|0
+|1
+|0
+|2
+|1
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|0
+|2
+|0
+|0
+|2
+|2
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|0
+|2
+|0
+|2
+|1
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|3
+|0
+|2
+|2
+|0
+|2
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|0
+|0
+|2
+|0
+|2
+|2
+|3
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|2
+|0
+|0
+|0
+|3
+|3
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|0
+|1
+|0
+|0
+|1
+|1
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|2
+|2
+|0
+|0
+|1
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|2
+|2
+|0
+|1
+|0
+|2
+|0
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|0
+|2
+|3
+|0
+|0
+|0
+|4
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|2
+|0
+|0
+|2
+|0
+|3
+|4
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|4
+|0
+|0
+|4
+|5
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|0
+|5
+|0
+|3
+|4
+|0
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|4
+|0
+|5
+|0
+|0
+|0
+|5
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|4
+|0
+|5
+|0
+|5
+|5
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|6
+|0
+|0
+|0
+|5
+|6
+|0
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''30'''
+|'''18'''
+|'''31'''
+|'''12'''
+|'''20'''
+|'''37'''
+|'''33'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Thunderbolt Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Freeze]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Waterblast=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Metal Damage (relative to enemy current health)
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|6
+|3
+|0
+|0
+|3
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Style
+|8
+|4
+|4
+|0
+|2
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Cannon
+|7
+|8
+|5
+|0
+|0
+|0
+|4
+|0
+|2
+|24
+|11%
+|-
+|Level 2
+|5
+|4
+|0
+|0
+|0
+|3
+|0
+|0
+|1
+|12
+|12%
+|-
+|Level 3
+|4
+|4
+|0
+|4
+|0
+|0
+|0
+|0
+|1
+|12
+|13%
+|-
+|Level 4
+|5
+|5
+|5
+|0
+|3
+|0
+|0
+|0
+|1
+|12
+|14%
+|-
+|Level 5
+|5
+|0
+|5
+|0
+|0
+|4
+|4
+|0
+|2
+|12
+|15%
+|-
+|Level 6
+|7
+|4
+|7
+|0
+|0
+|0
+|6
+|0
+|2
+|12
+|16%
+|-
+|Level 7
+|8
+|5
+|7
+|4
+|0
+|0
+|0
+|0
+|2
+|12
+|17%
+|-
+|Level 8
+|9
+|8
+|7
+|0
+|6
+|0
+|0
+|0
+|3
+|12
+|18%
+|-
+|Level 9
+|8
+|7
+|9
+|0
+|0
+|6
+|0
+|0
+|3
+|12
+|19%
+|-
+|Level 10
+|11
+|8
+|10
+|0
+|0
+|0
+|7
+|0
+|3
+|12
+|20%
+|-
+|Level 11
+|4
+|0
+|0
+|0
+|4
+|4
+|0
+|0
+|1
+|12
+|22%
+|-
+|Level 12
+|6
+|6
+|0
+|0
+|0
+|12
+|0
+|0
+|1
+|12
+|23%
+|-
+|Level 13
+|7
+|0
+|10
+|7
+|0
+|0
+|0
+|0
+|2
+|12
+|25%
+|-
+|Level 14
+|8
+|12
+|0
+|0
+|6
+|0
+|10
+|0
+|2
+|12
+|26%
+|-
+|Level 15
+|8
+|0
+|10
+|4
+|0
+|14
+|0
+|0
+|3
+|12
+|28%
+|-
+|Level 16
+|10
+|8
+|14
+|0
+|0
+|0
+|16
+|0
+|3
+|12
+|29%
+|-
+|Level 17
+|10
+|10
+|0
+|12
+|0
+|16
+|0
+|0
+|3
+|12
+|31%
+|-
+|Level 18
+|12
+|16
+|0
+|0
+|16
+|0
+|16
+|0
+|3
+|12
+|32%
+|-
+|Level 19
+|12
+|0
+|14
+|18
+|0
+|16
+|0
+|0
+|3
+|12
+|34%
+|-
+|Level 20
+|14
+|0
+|18
+|0
+|0
+|20
+|20
+|0
+|4
+|12
+|35%
+|-
+|Level 21
+|5
+|0
+|0
+|2
+|0
+|5
+|0
+|0
+|1
+|12
+|36%
+|-
+|Level 22
+|0
+|8
+|8
+|2
+|6
+|0
+|0
+|0
+|1
+|12
+|37%
+|-
+|Level 23
+|10
+|0
+|0
+|4
+|8
+|0
+|2
+|0
+|2
+|12
+|38%
+|-
+|Level 24
+|0
+|8
+|12
+|0
+|6
+|10
+|0
+|0
+|2
+|12
+|39%
+|-
+|Level 25
+|10
+|10
+|8
+|0
+|0
+|0
+|8
+|0
+|3
+|12
+|40%
+|-
+|Level 26
+|18
+|0
+|0
+|10
+|18
+|0
+|0
+|2
+|3
+|12
+|41%
+|-
+|Level 27
+|0
+|16
+|16
+|0
+|0
+|0
+|15
+|1
+|3
+|12
+|42%
+|-
+|Level 28
+|24
+|0
+|0
+|20
+|0
+|15
+|0
+|1
+|3
+|12
+|43%
+|-
+|Level 29
+|22
+|0
+|0
+|0
+|16
+|20
+|0
+|2
+|3
+|12
+|44%
+|-
+|Level 30
+|24
+|0
+|26
+|18
+|0
+|0
+|0
+|4
+|4
+|12
+|45%
+|-
+|Total
+|'''287'''
+|'''154'''
+|'''195'''
+|'''105'''
+|'''94'''
+|'''145'''
+|'''108'''
+|'''10'''
+|'''72'''
+|'''396'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Waterblast Cannon.png|100px|left]] Fires a jet of saltwater that strikes from 1-∞ range in front of the furthest Cat Unit. The water blast removes 11% of [[:Category:Metal Enemies|Metal Enemies]]' current health, but only does 1 damage to non-Metal enemies.
+
+:Upgrades increase percentage damage against Metal enemies up to a maximum of 45%.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Red Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|2
+|2
+|0
+|0
+|0
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|1
+|0
+|0
+|0
+|1
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|1
+|1
+|0
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|2
+|0
+|1
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|2
+|0
+|2
+|0
+|0
+|1
+|1
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|1
+|2
+|0
+|0
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|2
+|2
+|1
+|0
+|0
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|3
+|2
+|2
+|0
+|2
+|0
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|2
+|3
+|0
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|3
+|2
+|3
+|0
+|0
+|0
+|2
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|1
+|0
+|0
+|0
+|1
+|1
+|0
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|2
+|2
+|0
+|0
+|0
+|4
+|0
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|2
+|0
+|3
+|2
+|0
+|0
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|2
+|4
+|0
+|0
+|2
+|0
+|3
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|2
+|0
+|3
+|0
+|0
+|4
+|0
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|3
+|2
+|4
+|0
+|0
+|0
+|4
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|0
+|3
+|0
+|4
+|0
+|5
+|0
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|4
+|4
+|0
+|0
+|5
+|0
+|5
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|4
+|0
+|4
+|5
+|0
+|0
+|0
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|4
+|0
+|5
+|0
+|0
+|6
+|5
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''45'''
+|'''30'''
+|'''37'''
+|'''13'''
+|'''11'''
+|'''24'''
+|'''23'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Waterblast Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Red Enemies|Red enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Surge Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|2
+|2
+|0
+|0
+|0
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|1
+|0
+|0
+|0
+|1
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|1
+|1
+|0
+|1
+|0
+|0
+|0
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|2
+|0
+|1
+|0
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|2
+|0
+|2
+|0
+|0
+|1
+|1
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|1
+|2
+|0
+|0
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|2
+|2
+|2
+|1
+|0
+|0
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|3
+|2
+|2
+|0
+|2
+|0
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|2
+|3
+|0
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|3
+|2
+|3
+|0
+|0
+|0
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|1
+|0
+|0
+|0
+|1
+|1
+|0
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|2
+|2
+|0
+|0
+|0
+|4
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|2
+|0
+|3
+|2
+|0
+|0
+|0
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|2
+|4
+|0
+|0
+|0
+|0
+|3
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|2
+|0
+|3
+|0
+|2
+|4
+|0
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|3
+|0
+|4
+|0
+|0
+|0
+|5
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|3
+|3
+|0
+|4
+|0
+|5
+|0
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|4
+|5
+|0
+|0
+|5
+|0
+|0
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|4
+|0
+|4
+|5
+|0
+|5
+|0
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|0
+|0
+|5
+|0
+|0
+|6
+|6
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''44'''
+|'''29'''
+|'''37'''
+|'''13'''
+|'''11'''
+|'''29'''
+|'''18'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Waterblast Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Surge]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Holy Blast=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Zombie Damage Normal
+! rowspan="2" |Zombie Damage Burrowed
+! rowspan="2" |Zombie Freeze Duration
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|0
+|0
+|5
+|0
+|5
+|0
+|2
+|0
+|1
+|12
+|N/A
+|N/A
+|N/A
+|-
+|Style
+|6
+|0
+|0
+|4
+|5
+|0
+|3
+|0
+|1
+|12
+|N/A
+|N/A
+|N/A
+|-
+|Cannon
+|0
+|0
+|8
+|5
+|0
+|6
+|5
+|0
+|2
+|24
+|0.5%
+|10%
+|30f <sup>1 second</sup>
+|-
+|Level 2
+|0
+|0
+|5
+|0
+|0
+|5
+|2
+|0
+|1
+|12
+|0.7%
+|10.5%
+|31f <sup>1.03 seconds</sup>
+|-
+|Level 3
+|0
+|0
+|5
+|4
+|0
+|0
+|3
+|0
+|1
+|12
+|0.9%
+|11.1%
+|33f <sup>1.1 seconds</sup>
+|-
+|Level 4
+|0
+|4
+|0
+|4
+|0
+|5
+|5
+|0
+|1
+|12
+|1.1%
+|11.6%
+|35f <sup>1.17 seconds</sup>
+|-
+|Level 5
+|0
+|5
+|0
+|0
+|3
+|4
+|6
+|0
+|2
+|12
+|1.3%
+|12.2%
+|36f <sup>1.2 seconds</sup>
+|-
+|Level 6
+|6
+|0
+|6
+|6
+|0
+|0
+|6
+|0
+|2
+|12
+|1.6%
+|12.7%
+|38f <sup>1.27 seconds</sup>
+|-
+|Level 7
+|0
+|5
+|0
+|0
+|6
+|6
+|7
+|0
+|2
+|12
+|1.8%
+|13.3%
+|40f <sup>1.33 seconds</sup>
+|-
+|Level 8
+|0
+|0
+|9
+|6
+|8
+|0
+|7
+|0
+|3
+|12
+|2%
+|13.8%
+|41f <sup>1.37 seconds</sup>
+|-
+|Level 9
+|7
+|0
+|7
+|0
+|0
+|8
+|8
+|0
+|3
+|12
+|2.2%
+|14.4%
+|43f <sup>1.43 seconds</sup>
+|-
+|Level 10
+|0
+|7
+|10
+|0
+|9
+|0
+|10
+|0
+|3
+|12
+|2.5%
+|15%
+|45f <sup>1.5 seconds</sup>
+|-
+|Level 11
+|0
+|5
+|5
+|0
+|0
+|0
+|2
+|0
+|1
+|12
+|3.2%
+|16.5%
+|46f <sup>1.53 seconds</sup>
+|-
+|Level 12
+|12
+|0
+|0
+|0
+|0
+|8
+|4
+|0
+|1
+|12
+|4%
+|18%
+|48f <sup>1.6 seconds</sup>
+|-
+|Level 13
+|0
+|0
+|8
+|0
+|6
+|4
+|6
+|0
+|2
+|12
+|4.7%
+|19.5%
+|49f <sup>1.63 seconds</sup>
+|-
+|Level 14
+|6
+|12
+|0
+|0
+|0
+|10
+|8
+|0
+|2
+|12
+|5.5%
+|21%
+|51f <sup>1.7 seconds</sup>
+|-
+|Level 15
+|10
+|0
+|11
+|7
+|0
+|0
+|8
+|0
+|3
+|12
+|6.2%
+|22.5%
+|52f <sup>1.73 seconds</sup>
+|-
+|Level 16
+|0
+|14
+|0
+|0
+|12
+|12
+|10
+|0
+|3
+|12
+|7%
+|24%
+|54f <sup>1.8 seconds</sup>
+|-
+|Level 17
+|12
+|0
+|0
+|0
+|12
+|12
+|12
+|0
+|3
+|12
+|7.7%
+|25.5%
+|55f <sup>1.83 seconds</sup>
+|-
+|Level 18
+|16
+|0
+|12
+|0
+|0
+|18
+|14
+|0
+|3
+|12
+|8.5%
+|27%
+|57f <sup>1.9 seconds</sup>
+|-
+|Level 19
+|0
+|17
+|14
+|13
+|0
+|0
+|16
+|0
+|3
+|12
+|9.2%
+|28.5%
+|58f <sup>1.93 seconds</sup>
+|-
+|Level 20
+|18
+|0
+|20
+|16
+|0
+|0
+|18
+|0
+|4
+|12
+|10%
+|30%
+|60f <sup>2 seconds</sup>
+|-
+|Level 21
+|0
+|0
+|4
+|0
+|6
+|0
+|2
+|0
+|1
+|12
+|10.5%
+|31%
+|61f <sup>2.03 seconds</sup>
+|-
+|Level 22
+|6
+|0
+|5
+|5
+|0
+|8
+|0
+|0
+|1
+|12
+|11%
+|32%
+|63f <sup>2.1 seconds</sup>
+|-
+|Level 23
+|5
+|6
+|0
+|0
+|8
+|0
+|5
+|0
+|2
+|12
+|11.5%
+|33%
+|64f <sup>2.13 seconds</sup>
+|-
+|Level 24
+|0
+|0
+|8
+|12
+|0
+|10
+|6
+|0
+|2
+|12
+|12%
+|34%
+|66f <sup>2.2 seconds</sup>
+|-
+|Level 25
+|0
+|10
+|8
+|0
+|12
+|0
+|6
+|0
+|3
+|12
+|12.5%
+|35%
+|67f <sup>2.23 seconds</sup>
+|-
+|Level 26
+|14
+|0
+|0
+|18
+|0
+|0
+|14
+|2
+|3
+|12
+|13%
+|36%
+|69f <sup>2.3 seconds</sup>
+|-
+|Level 27
+|16
+|0
+|14
+|0
+|0
+|15
+|0
+|3
+|3
+|12
+|13.5%
+|37%
+|70f <sup>2.33 seconds</sup>
+|-
+|Level 28
+|0
+|16
+|0
+|0
+|24
+|0
+|18
+|2
+|3
+|12
+|14%
+|38%
+|72f <sup>2.4 seconds</sup>
+|-
+|Level 29
+|24
+|0
+|0
+|16
+|0
+|18
+|0
+|2
+|3
+|12
+|14.5%
+|39%
+|73f <sup>2.43 seconds</sup>
+|-
+|Level 30
+|0
+|20
+|26
+|0
+|0
+|0
+|24
+|2
+|4
+|12
+|15%
+|40%
+|75f <sup>2.5 seconds</sup>
+|-
+|Total
+|'''158'''
+|'''121'''
+|'''190'''
+|'''116'''
+|'''116'''
+|'''149'''
+|'''237'''
+|'''11'''
+|'''72'''
+|'''396'''
+|
+|
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Holy Cannon.png|100px|left]] Fires waves of divine light that burst from the ground in sequence toward the enemy base. Deals damage to [[:Category:Zombie Enemies|Zombies]] equal to 0.5% of their maximum health (increased to 10% if the Zombie is burrowed), forces burrowed Zombies to resurface, knocks them back, freezes them for 30 frames <sup>1 second</sup>, and permanently kills them if it deals a fatal blow. However, it has no effect against other enemies.
+
+:Upgrades increase normal percentage damage, burrowed percentage damage, and freeze duration against Zombies up to a maximum of 15%, 40%, and 75 frames <sup>2.5 seconds</sup> respectively.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Zombie Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|0
+|0
+|2
+|2
+|0
+|2
+|2
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|0
+|2
+|0
+|0
+|2
+|1
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|0
+|2
+|1
+|0
+|0
+|1
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|0
+|1
+|0
+|1
+|0
+|2
+|2
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|0
+|0
+|1
+|1
+|2
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|0
+|2
+|2
+|0
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|0
+|0
+|2
+|2
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|0
+|3
+|2
+|2
+|0
+|2
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|0
+|0
+|2
+|0
+|2
+|2
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|2
+|3
+|0
+|3
+|0
+|3
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|2
+|2
+|0
+|0
+|0
+|1
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|4
+|0
+|0
+|0
+|0
+|2
+|1
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|0
+|2
+|0
+|2
+|1
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|2
+|4
+|0
+|0
+|0
+|3
+|2
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|3
+|0
+|3
+|0
+|0
+|0
+|2
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|4
+|0
+|0
+|3
+|3
+|3
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|3
+|0
+|0
+|0
+|4
+|0
+|4
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|5
+|0
+|3
+|0
+|0
+|4
+|4
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|5
+|4
+|0
+|0
+|0
+|5
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|0
+|5
+|5
+|0
+|0
+|5
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''26'''
+|'''22'''
+|'''33'''
+|'''15'''
+|'''17'''
+|'''24'''
+|'''46'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Holy Blast Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Zombie Enemies|Zombie enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Weaken Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|0
+|0
+|2
+|2
+|0
+|2
+|2
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|0
+|2
+|0
+|0
+|2
+|1
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|0
+|2
+|1
+|0
+|0
+|1
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|0
+|1
+|0
+|1
+|0
+|2
+|2
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|2
+|0
+|0
+|1
+|1
+|2
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|2
+|0
+|2
+|2
+|0
+|0
+|2
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|0
+|0
+|2
+|2
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|0
+|3
+|2
+|2
+|0
+|2
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|2
+|0
+|0
+|2
+|0
+|2
+|2
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|2
+|3
+|0
+|3
+|0
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|0
+|2
+|2
+|0
+|0
+|0
+|1
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|4
+|0
+|0
+|0
+|0
+|2
+|1
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|0
+|2
+|0
+|2
+|1
+|2
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|0
+|4
+|0
+|0
+|0
+|3
+|2
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|3
+|0
+|3
+|2
+|0
+|0
+|2
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|4
+|0
+|0
+|4
+|4
+|0
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|0
+|0
+|0
+|4
+|3
+|4
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|5
+|0
+|4
+|0
+|0
+|0
+|4
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|5
+|4
+|4
+|0
+|0
+|4
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|5
+|0
+|6
+|0
+|0
+|0
+|5
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''25'''
+|'''22'''
+|'''35'''
+|'''16'''
+|'''18'''
+|'''24'''
+|'''41'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Holy Blast Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Weaken]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Breakerblast=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Blast Range
+! rowspan="2" |Blast Power (relative to Cat Cannon)
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|5
+|5
+|0
+|0
+|0
+|2
+|0
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Style
+|0
+|0
+|6
+|0
+|5
+|3
+|4
+|0
+|1
+|12
+|N/A
+|N/A
+|-
+|Cannon
+|8
+|6
+|0
+|4
+|0
+|6
+|0
+|0
+|2
+|24
+|160
+|30%
+|-
+|Level 2
+|5
+|0
+|5
+|0
+|0
+|2
+|0
+|0
+|1
+|12
+|164
+|32%
+|-
+|Level 3
+|0
+|0
+|0
+|0
+|4
+|3
+|5
+|0
+|1
+|12
+|168
+|34%
+|-
+|Level 4
+|6
+|5
+|0
+|3
+|0
+|4
+|0
+|0
+|1
+|12
+|173
+|36%
+|-
+|Level 5
+|0
+|0
+|5
+|0
+|4
+|4
+|5
+|0
+|2
+|12
+|177
+|38%
+|-
+|Level 6
+|10
+|0
+|0
+|4
+|4
+|6
+|0
+|0
+|2
+|12
+|182
+|41%
+|-
+|Level 7
+|0
+|7
+|0
+|5
+|0
+|6
+|6
+|0
+|2
+|12
+|186
+|43%
+|-
+|Level 8
+|0
+|8
+|10
+|0
+|5
+|7
+|0
+|0
+|3
+|12
+|191
+|45%
+|-
+|Level 9
+|10
+|0
+|0
+|5
+|7
+|8
+|0
+|0
+|3
+|12
+|195
+|47%
+|-
+|Level 10
+|0
+|10
+|12
+|0
+|0
+|8
+|6
+|0
+|3
+|12
+|200
+|50%
+|-
+|Level 11
+|5
+|0
+|5
+|0
+|0
+|2
+|0
+|0
+|1
+|12
+|212
+|55%
+|-
+|Level 12
+|10
+|8
+|0
+|2
+|0
+|4
+|0
+|0
+|1
+|12
+|224
+|60%
+|-
+|Level 13
+|0
+|8
+|7
+|0
+|3
+|6
+|0
+|0
+|2
+|12
+|236
+|65%
+|-
+|Level 14
+|14
+|0
+|9
+|7
+|0
+|9
+|0
+|0
+|2
+|12
+|248
+|70%
+|-
+|Level 15
+|0
+|10
+|13
+|0
+|5
+|8
+|0
+|0
+|3
+|12
+|260
+|75%
+|-
+|Level 16
+|14
+|0
+|16
+|0
+|0
+|8
+|10
+|0
+|3
+|12
+|272
+|80%
+|-
+|Level 17
+|14
+|14
+|0
+|10
+|0
+|10
+|0
+|0
+|3
+|12
+|284
+|85%
+|-
+|Level 18
+|20
+|0
+|0
+|0
+|18
+|10
+|12
+|0
+|3
+|12
+|296
+|90%
+|-
+|Level 19
+|0
+|16
+|18
+|14
+|0
+|12
+|0
+|0
+|3
+|12
+|308
+|95%
+|-
+|Level 20
+|20
+|16
+|20
+|0
+|0
+|16
+|0
+|0
+|4
+|12
+|320
+|100%
+|-
+|Level 21
+|0
+|0
+|6
+|2
+|0
+|4
+|0
+|0
+|1
+|12
+|328
+|105%
+|-
+|Level 22
+|10
+|4
+|0
+|0
+|6
+|0
+|4
+|0
+|1
+|12
+|336
+|110%
+|-
+|Level 23
+|8
+|0
+|8
+|4
+|0
+|4
+|0
+|0
+|2
+|12
+|344
+|115%
+|-
+|Level 24
+|0
+|10
+|0
+|10
+|0
+|4
+|12
+|0
+|2
+|12
+|352
+|120%
+|-
+|Level 25
+|12
+|0
+|10
+|0
+|8
+|6
+|0
+|0
+|3
+|12
+|360
+|125%
+|-
+|Level 26
+|0
+|16
+|0
+|18
+|0
+|13
+|0
+|1
+|3
+|12
+|368
+|130%
+|-
+|Level 27
+|16
+|0
+|0
+|0
+|0
+|16
+|15
+|1
+|3
+|12
+|376
+|135%
+|-
+|Level 28
+|0
+|0
+|22
+|0
+|20
+|16
+|0
+|2
+|3
+|12
+|384
+|140%
+|-
+|Level 29
+|0
+|20
+|0
+|18
+|0
+|18
+|0
+|4
+|3
+|12
+|392
+|145%
+|-
+|Level 30
+|0
+|0
+|0
+|0
+|20
+|25
+|22
+|5
+|4
+|12
+|400
+|150%
+|-
+|Total
+|'''187'''
+|'''163'''
+|'''172'''
+|'''106'''
+|'''109'''
+|'''247'''
+|'''101'''
+|'''13'''
+|'''72'''
+|'''396'''
+|
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Breakerblast Cannon.png|100px|left]] Fires an energy pulse that strikes from 1-160 on the nearest enemy. Breaks [[Barrier]]s of all enemies in range, deals 30% of the Cat Cannon's power as damage, and knocks them back. Its Barrier Breaker property has no effect on [[Shield]]s or [[Base Barrier]]s.
+
+:Upgrades increase attack range and damage up to a maximum of 400 range and 150% of the Cat Cannon's power respectively.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Alien Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|2
+|0
+|1
+|0
+|2
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|0
+|2
+|0
+|0
+|1
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|0
+|0
+|0
+|1
+|1
+|2
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|0
+|1
+|0
+|1
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|0
+|2
+|0
+|1
+|1
+|2
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|3
+|0
+|0
+|1
+|1
+|2
+|0
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|0
+|2
+|0
+|2
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|2
+|3
+|0
+|2
+|2
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|3
+|0
+|0
+|2
+|2
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|3
+|3
+|0
+|0
+|2
+|2
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|2
+|0
+|2
+|0
+|0
+|1
+|0
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|3
+|2
+|0
+|1
+|0
+|1
+|0
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|2
+|2
+|0
+|0
+|2
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|3
+|0
+|3
+|2
+|0
+|2
+|0
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|3
+|4
+|0
+|2
+|0
+|0
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|4
+|0
+|4
+|0
+|0
+|2
+|3
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|4
+|0
+|0
+|0
+|3
+|0
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|5
+|0
+|0
+|0
+|5
+|3
+|3
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|5
+|5
+|4
+|0
+|0
+|0
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|6
+|5
+|5
+|0
+|0
+|5
+|0
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''39'''
+|'''32'''
+|'''35'''
+|'''14'''
+|'''14'''
+|'''35'''
+|'''14'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Breakerblast Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Alien Enemies|Alien enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Toxic Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|2
+|2
+|0
+|1
+|0
+|2
+|0
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|2
+|0
+|2
+|0
+|0
+|1
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|0
+|0
+|0
+|0
+|1
+|1
+|2
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|2
+|2
+|0
+|1
+|0
+|1
+|0
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|0
+|0
+|2
+|0
+|1
+|1
+|2
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|3
+|0
+|0
+|1
+|1
+|2
+|0
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|0
+|2
+|0
+|2
+|0
+|2
+|2
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|2
+|3
+|0
+|2
+|2
+|0
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|3
+|0
+|0
+|2
+|2
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|3
+|4
+|0
+|0
+|2
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|2
+|0
+|2
+|0
+|0
+|1
+|0
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|3
+|2
+|0
+|0
+|0
+|1
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|0
+|2
+|2
+|0
+|1
+|2
+|0
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|4
+|0
+|3
+|0
+|0
+|2
+|0
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|0
+|3
+|4
+|0
+|2
+|2
+|0
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|4
+|0
+|5
+|0
+|0
+|2
+|0
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|4
+|4
+|0
+|3
+|0
+|3
+|0
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|6
+|0
+|0
+|0
+|5
+|3
+|0
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|0
+|5
+|5
+|4
+|0
+|4
+|0
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|6
+|5
+|0
+|0
+|0
+|5
+|0
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''41'''
+|'''32'''
+|'''32'''
+|'''14'''
+|'''15'''
+|'''41'''
+|'''6'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Breakerblast Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Toxic]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+|-|Curseblast=
+{{#tag:tabber|Cannon=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Time cursed
+|-
+![[File:Brick small.png|center]]
+![[File:Feather small.png|center]]
+![[File:Coals small.png|center]]
+![[File:Sprockets small.png|center]]
+![[File:Gold small.png|center]]
+![[File:Meteorite small.png|center]]
+![[File:Beast Bones small.png|center]]
+![[File:Relic Fossil Small.png|center]]
+|-
+|Foundation
+|8
+|0
+|2
+|2
+|0
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Style
+|0
+|2
+|8
+|4
+|4
+|0
+|0
+|0
+|1
+|12
+|N/A
+|-
+|Cannon
+|12
+|3
+|0
+|0
+|0
+|5
+|4
+|0
+|2
+|24
+|33f<sup>1.1 seconds</sup>
+|-
+|Level 2
+|0
+|0
+|8
+|2
+|2
+|0
+|0
+|0
+|1
+|12
+|36f<sup>1.2 seconds</sup>
+|-
+|Level 3
+|8
+|0
+|0
+|0
+|0
+|2
+|2
+|0
+|1
+|12
+|39f<sup>1.3 seconds</sup>
+|-
+|Level 4
+|0
+|3
+|10
+|0
+|2
+|0
+|3
+|0
+|1
+|12
+|42f<sup>1.4 seconds</sup>
+|-
+|Level 5
+|12
+|2
+|0
+|2
+|0
+|2
+|0
+|0
+|2
+|12
+|45f<sup>1.5 seconds</sup>
+|-
+|Level 6
+|0
+|5
+|12
+|0
+|5
+|0
+|2
+|0
+|2
+|12
+|48f<sup>1.6 seconds</sup>
+|-
+|Level 7
+|16
+|0
+|0
+|3
+|3
+|2
+|0
+|0
+|2
+|12
+|51f<sup>1.7 seconds</sup>
+|-
+|Level 8
+|0
+|5
+|14
+|0
+|6
+|0
+|5
+|0
+|3
+|12
+|54f<sup>1.8 seconds</sup>
+|-
+|Level 9
+|16
+|3
+|0
+|6
+|0
+|5
+|0
+|0
+|3
+|12
+|57f<sup>1.9 seconds</sup>
+|-
+|Level 10
+|0
+|8
+|15
+|0
+|5
+|0
+|8
+|0
+|3
+|12
+|60f<sup>2.0 seconds</sup>
+|-
+|Level 11
+|8
+|0
+|0
+|2
+|0
+|2
+|0
+|0
+|1
+|12
+|66f<sup>2.2 seconds</sup>
+|-
+|Level 12
+|0
+|2
+|15
+|5
+|0
+|2
+|0
+|0
+|1
+|12
+|72f<sup>2.4 seconds</sup>
+|-
+|Level 13
+|18
+|0
+|0
+|0
+|2
+|2
+|2
+|0
+|2
+|12
+|78f<sup>2.6 seconds</sup>
+|-
+|Level 14
+|0
+|5
+|20
+|6
+|0
+|5
+|0
+|0
+|2
+|12
+|84f<sup>2.8 seconds</sup>
+|-
+|Level 15
+|24
+|0
+|0
+|5
+|2
+|5
+|0
+|0
+|3
+|12
+|90f<sup>3.0 seconds</sup>
+|-
+|Level 16
+|0
+|0
+|20
+|12
+|10
+|0
+|6
+|0
+|3
+|12
+|96f<sup>3.2 seconds</sup>
+|-
+|Level 17
+|24
+|0
+|0
+|6
+|0
+|12
+|6
+|0
+|3
+|12
+|102f<sup>3.4 seconds</sup>
+|-
+|Level 18
+|0
+|12
+|22
+|0
+|0
+|14
+|12
+|0
+|3
+|12
+|108f<sup>3.6 seconds</sup>
+|-
+|Level 19
+|24
+|0
+|0
+|12
+|14
+|10
+|0
+|0
+|3
+|12
+|114f<sup>3.8 seconds</sup>
+|-
+|Level 20
+|0
+|18
+|24
+|0
+|12
+|0
+|18
+|0
+|4
+|12
+|120f<sup>4.0 seconds</sup>
+|-
+|Level 21
+|3
+|0
+|4
+|0
+|0
+|0
+|5
+|0
+|1
+|12
+|126f<sup>4.2 seconds</sup>
+|-
+|Level 22
+|10
+|5
+|0
+|5
+|0
+|4
+|0
+|0
+|1
+|12
+|134f<sup>4.4 seconds</sup>
+|-
+|Level 23
+|0
+|4
+|10
+|6
+|0
+|0
+|4
+|0
+|2
+|12
+|140f<sup>4.6 seconds</sup>
+|-
+|Level 24
+|12
+|0
+|14
+|0
+|6
+|0
+|4
+|0
+|2
+|12
+|146f<sup>4.8 seconds</sup>
+|-
+|Level 25
+|0
+|10
+|0
+|8
+|0
+|6
+|12
+|0
+|3
+|12
+|154f<sup>5.0 seconds</sup>
+|-
+|Level 26
+|14
+|0
+|18
+|0
+|14
+|0
+|0
+|2
+|3
+|12
+|160f<sup>5.2 seconds</sup>
+|-
+|Level 27
+|16
+|10
+|20
+|0
+|0
+|0
+|0
+|2
+|3
+|12
+|166f<sup>5.4 seconds</sup>
+|-
+|Level 28
+|20
+|0
+|0
+|22
+|0
+|16
+|0
+|2
+|3
+|12
+|170f<sup>5.6 seconds</sup>
+|-
+|Level 29
+|0
+|15
+|24
+|0
+|0
+|0
+|18
+|3
+|3
+|12
+|174f<sup>5.8 seconds</sup>
+|-
+|Level 30
+|24
+|0
+|0
+|0
+|24
+|21
+|0
+|3
+|4
+|12
+|180f<sup>6.0 seconds</sup>
+|-
+|Total
+|'''269'''
+|'''112'''
+|'''260'''
+|'''108'''
+|'''111'''
+|'''115'''
+|'''111'''
+|'''12'''
+|'''72'''
+|'''396'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Curseblast Cannon.png|thumb|100px|left]] Fires an orange laser beam from the Cat Base to the enemy base, much like the Slow Beam. Enemies will be immediately Cursed for 33 frames <sup>1.1 seconds</sup> the moment the laser makes contact. Deals no damage to enemies.
+
+:Upgrades increase Curse duration up to a maximum of 180 frames <sup>6 seconds</sup>.</div>
+|}}}
+
+{{!}}-{{!}}Foundation=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Relic Damage Reduction
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|4
+|1
+|0
+|0
+|0
+|2
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|0
+|2
+|1
+|1
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|2
+|0
+|0
+|0
+|0
+|1
+|1
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|0
+|1
+|3
+|0
+|1
+|0
+|1
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|4
+|1
+|0
+|1
+|0
+|1
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|0
+|2
+|4
+|0
+|2
+|0
+|1
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|5
+|0
+|0
+|1
+|1
+|1
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|2
+|3
+|0
+|2
+|0
+|1
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|4
+|1
+|0
+|2
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|1
+|4
+|0
+|2
+|0
+|2
+|0
+|3
+|12
+|7.5%
+|-
+|Level 11
+|2
+|0
+|0
+|1
+|0
+|1
+|0
+|1
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|1
+|5
+|2
+|0
+|1
+|0
+|0
+|1
+|12
+|9.0%
+|-
+|Level 13
+|5
+|0
+|0
+|0
+|1
+|1
+|0
+|1
+|2
+|12
+|9.75%
+|-
+|Level 14
+|0
+|2
+|5
+|2
+|0
+|1
+|0
+|0
+|2
+|12
+|10.5%
+|-
+|Level 15
+|6
+|0
+|0
+|0
+|1
+|2
+|0
+|1
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|5
+|4
+|2
+|0
+|2
+|0
+|3
+|12
+|12.0%
+|-
+|Level 17
+|6
+|0
+|0
+|0
+|0
+|4
+|2
+|2
+|3
+|12
+|12.75%
+|-
+|Level 18
+|0
+|2
+|6
+|0
+|0
+|3
+|3
+|0
+|3
+|12
+|13.5%
+|-
+|Level 19
+|6
+|0
+|0
+|4
+|4
+|0
+|0
+|2
+|3
+|12
+|14.25%
+|-
+|Level 20
+|0
+|5
+|5
+|0
+|4
+|0
+|5
+|0
+|4
+|12
+|15.0%
+|-
+|Total
+|'''44'''
+|'''19'''
+|'''42'''
+|'''18'''
+|'''21'''
+|'''20'''
+|'''19'''
+|'''7'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Curseblast Foundation.png|100px|left]] Cat units take 0.75% less damage from [[:Category:Relic Enemies|Relic enemies]].
+
+:Upgrades increase damage reduction to a maximum of 15%.</div>
+|}}}
+
+{{!}}-{{!}}Style=
+{{#!:
+{| class="article-table mw-collapsible" id="mw-customcollapsible-info" style="width: 100%; display: table; max-width: 100%;"
+! rowspan="2" |Step
+! colspan="8" |Material
+! rowspan="2" |Engineer
+[[File:Engineer small.png|center]]
+! rowspan="2" |Time<br>(hours)
+! rowspan="2" |Curse Resistance Percentage
+|-
+![[File:Brick Z small.png|center]]
+![[File:Feather Z small.png|center]]
+![[File:Coals Z small.png|center]]
+![[File:Sprockets Z small.png|center]]
+![[File:Gold Z small.png|center]]
+![[File:Meteorite Z small.png|center]]
+![[File:Beast Bones Z small.png|center]]
+![[File:Relic Fossil Z small.png|center]]
+|-
+|Level 1
+|4
+|1
+|0
+|0
+|0
+|2
+|1
+|0
+|2
+|24
+|0.75%
+|-
+|Level 2
+|0
+|0
+|2
+|1
+|1
+|0
+|0
+|0
+|1
+|12
+|1.5%
+|-
+|Level 3
+|2
+|0
+|0
+|0
+|0
+|1
+|1
+|0
+|1
+|12
+|2.25%
+|-
+|Level 4
+|0
+|1
+|3
+|0
+|1
+|0
+|1
+|0
+|1
+|12
+|3.0%
+|-
+|Level 5
+|4
+|1
+|0
+|1
+|0
+|1
+|0
+|0
+|2
+|12
+|3.75%
+|-
+|Level 6
+|0
+|2
+|3
+|0
+|2
+|0
+|1
+|0
+|2
+|12
+|4.5%
+|-
+|Level 7
+|5
+|0
+|0
+|1
+|1
+|1
+|0
+|0
+|2
+|12
+|5.25%
+|-
+|Level 8
+|0
+|2
+|4
+|0
+|2
+|0
+|2
+|0
+|3
+|12
+|6.0%
+|-
+|Level 9
+|5
+|1
+|0
+|2
+|0
+|2
+|0
+|0
+|3
+|12
+|6.75%
+|-
+|Level 10
+|0
+|2
+|5
+|0
+|2
+|0
+|0
+|1
+|3
+|12
+|7.5%
+|-
+|Level 11
+|2
+|0
+|0
+|1
+|0
+|1
+|0
+|0
+|1
+|12
+|8.25%
+|-
+|Level 12
+|0
+|1
+|5
+|0
+|0
+|1
+|0
+|1
+|1
+|12
+|9.0%
+|-
+|Level 13
+|5
+|0
+|0
+|0
+|1
+|1
+|1
+|0
+|2
+|12
+|9.75%
+|-
+|Level 14
+|0
+|2
+|6
+|2
+|0
+|0
+|0
+|1
+|2
+|12
+|10.5%
+|-
+|Level 15
+|7
+|0
+|0
+|2
+|1
+|2
+|0
+|0
+|3
+|12
+|11.25%
+|-
+|Level 16
+|0
+|0
+|4
+|4
+|3
+|0
+|0
+|2
+|3
+|12
+|12.0%
+|-
+|Level 17
+|6
+|0
+|0
+|2
+|0
+|4
+|2
+|0
+|3
+|12
+|12.75%
+|-
+|Level 18
+|0
+|4
+|0
+|0
+|0
+|4
+|4
+|2
+|3
+|12
+|13.5%
+|-
+|Level 19
+|5
+|0
+|0
+|4
+|3
+|3
+|0
+|0
+|3
+|12
+|14.25%
+|-
+|Level 20
+|0
+|5
+|0
+|0
+|4
+|0
+|5
+|2
+|4
+|12
+|15.0%
+|-
+|Total
+|'''45'''
+|'''22'''
+|'''32'''
+|'''20'''
+|'''21'''
+|'''23'''
+|'''18'''
+|'''9'''
+|'''45'''
+|'''252'''
+|
+|}
+{|class="mw-collapsible mw-collapsed" id="mw-customcollapsible-info"
+|<div style="min-height:200px;" >[[File:Base Curseblast Style.png|100px|left]] Grants [[Special Abilities#Resist|Resist Curse]] at 0.75% to all Cat units.
+
+:Upgrades increase Resist percentage to a maximum of 15%.</div>
+|}}}
+
+}}
+</tabber>
+</div>
+
+[[Category:Game Features]]

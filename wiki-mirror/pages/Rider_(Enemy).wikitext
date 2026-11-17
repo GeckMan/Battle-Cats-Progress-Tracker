@@ -1,0 +1,92 @@
+:''This article is about the enemy. For the Cat Unit, see [[Rider (Uber Rare Cat)]].''
+'''Rider''' (ライダー) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Fate/Stay Night: Heaven's Feel Collaboration Event]]. She was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Enemy Info
+|name = Rider
+|image = E 371.png
+|appearance = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|money drop = 1,500¢ - 5,925¢
+}}
+
+==Enemy==
+She may sport low health and attack power but she has 100% chance to [[Freeze|freeze]] your cats at a decent range allowing other enemies to push their way to your attackers.
+
+==Strategy==
+Rider is a pretty strong support in the stages she appears in. The best way to counter her is to use freeze immune units, but another way is if you use a rusher to get to her during her downtime and kill her before she freezes them.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#Holy War: Rider|Holy War: Rider]]:
+**[[Blood Temple (Easy)]] (7%)
+**[[Blood Temple (Expert)]] (100%)
+*[[Gauntlet of Servants]]:
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 1]] (50% HP/40% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 2]] (78% HP/62% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 3]] (106% HP/84% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 4]] (134% HP/106% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 5]] (162% HP/128% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 6]] (190% HP/150% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 7]] (218% HP/172% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 8]] (246% HP/194% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 9]] (274% HP/216% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 1~10|Grail War: Day 10]] (300% HP/240% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 11]] (200% HP/150% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 12]] (211% HP/158% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 13]] (222% HP/166% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 14]] (233% HP/174% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 15]] (244% HP/182% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 16]] (255% HP/190% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 17]] (266% HP/198% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 18]] (277% HP/206% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 19]] (288% HP/214% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Final Day]] (300% HP/225% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Into the Fray: Servants Strike!|Into the Fray: Servants Strike!]] (3%, 60%, 100%, 200%, 250%, 300%, 320%, 340%, 360%, 380%, 400%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#Holy War: Rider|Holy War: Rider]]:
+**[[Blood Temple (Easy)]] (7%)
+**[[Blood Temple (Expert)]] (100%)
+*[[Arena of Honor]]: [[Arena of Honor/Into the Fray: Servants Strike! (Old)|Into the Fray: Servants Strike!]] (3%, 100%, 200%, 300%, 400%, 500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Rider
+|Health = 200000
+|Attack Power = 6000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 169
+|Movement Speed = 10
+|Knockback = 4
+|Foreswing = 40
+|Backswing = 49
+|Ability = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 120f <sub>4 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+371 e.png|Rider's spritesheet
+IdleRider.gif|Rider's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/373.html
+
+----
+{{EnemyNav|Archer|Gilgamesh}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]

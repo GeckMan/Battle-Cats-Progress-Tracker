@@ -1,0 +1,12 @@
+<includeonly><onlyinclude><div class="stage-custom-template"><!--
+	--><div><!--
+		-->[[File:Mapname{{{3}}}_{{{4}}}_{{{lang|en}}}.png|link={{{1}}}]]<!--
+		-->[[File:Complete{{{9}}}.png|link={{{1}}}]]<!--
+		-->[[File:{{{2}}}.png|link={{{1}}}]]<!--
+		-->{{#ifeq:{{{5|2}}}|2||[[File:Sol{{{5}}}.png|link={{{1}}}]]}}<!--
+            (use default as 2 so if not provided it doesn't appear)
+		-->{{#ifeq:{{{6|2}}}|2||[[File:Sol{{{6}}}.png|link={{{1}}}]]}}<!--
+		-->{{#ifeq:{{{7|2}}}|2||[[File:Sol{{{7}}}.png|link={{{1}}}]]}}<!--
+		-->{{#ifeq:{{{8|2}}}|2||[[File:Sol{{{8}}}.png|link={{{1}}}]]}}<!--
+	--></div><!--
+--></div>{{#invoke:TemplateStyles once|_main|Stage/styles.css}}</onlyinclude></includeonly>{{/doc}}

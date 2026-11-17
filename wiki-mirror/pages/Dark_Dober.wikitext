@@ -1,0 +1,109 @@
+'''Dark Dober''' (ドヴェルダーク, ''Doveru Dāku'', '''Dover Dark''') is a [[:Category:Dark Enemies|Dark]]/[[:Category:Sage Enemies|Sage]] variant of [[Dober P.D]] introduced in [[Konjac Valley]]. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Enemy Info
+|name = Dark Dober
+|image = E 682.png
+|first appearance ='''ZL''': [[One-Second Photo|Sub-chapter 11 - One-Second Photo]]
+|latest appearance = '''ZL''': [[Cluttered Calligraphy|Sub-chapter 30 - Cluttered Calligraphy]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+This Dober variant is very dangerous, with very high health and DPS, slightly more range, an Omni Strike that pierces up to 350 range, and a guaranteed chance to weaken units to 25% for 2 seconds. Its [[Mini-Wave]]s are comparatively less threatening due to their lower damage, as they primarily serve to expand its Weaken ability. The icing on the cake is that Dark Dober is a Sage, meaning despite its exploitable trait, all crowd-control specialists other than [[:Category:Sage Slayer Cats|Sage Slayers]] will be unable to properly impede it. Fortunately, it is kept in check by its six knockbacks.
+
+==Strategy==
+While [[Flower Cat (Special Cat)|Bombercat]] is generally ineffective, a [[Talents|Talented]] [[Dom Cat (Special Cat)|Dark Lazer]] can be invaluable against Dark Dober due to being [[Strong Against|Strong]] against Dark and immune to Weaken, while also having enough health to survive several hits if well-invested. However, Dark Dober has an Omni Strike that allows its to easily weaken any unit within its reach, so its piercing can become deadly under certain circumstances.
+
+As far as [[:Category:Uber Rare Cats|Uber Rare Cats]] go, any backliner that's Immune to Waves, or Weaken, is a valuable asset. Without its main crowd-controlling gimmick, this canine is much weaker than its [[St. Dober|angelic counterpart]]. Additionally, rushers with high burst damage are good to take advantage of his high knockback count to land multiple attacks, provided they're timed well-enough to not be sniped by Dark Dober's Mini-Waves.
+
+Dark Dober still keeps the weakness of its original form, though: it has pretty low base range. Abusing this is almost necessary to take it down. Most [[:Category:Backliner-class Cats|backliners]] will be able to do the job, but those with immunity to Waves/Weaken will be more useful.
+
+Overall, this enemy is not to be underestimated in any way, shape, or form. Dispose of it as quickly as possible.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 682
+|Type = [[:Category:Dark Enemies|Dark]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 682.png
+|Name1 = Dark Dober
+|Desc1 = The strange collar awakened a love of music<br>in this noble dog. Cannot play music, but is<br>well-versed in theory enough to ghostwrite<br>pieces and have them performed in its name.
+|Name1 (JP) = ドヴェルダーク (Doveru Dāku, Dover Dark)
+|Desc1 (JP) = 謎の首輪をつける事で音楽に目覚めた犬。<br>楽器は弾けないが豊富な音楽知識で<br>ゴーストライターに作曲の指示を出し<br>自分名義の楽曲として発表している。
+|Transl1 (JP) = A dog who awakened a love of music by wearing a mysterious collar.<br>Cannot play an instrument, but uses its extensive musical knowledge<br>to give instructions to ghost writers to compose pieces<br>it releases under its own name.
+|Name1 (TW) = 黑暗杜賓
+|Desc1 (TW) = 戴上神秘項圈後音樂才能覺醒的黑犬。<br>雖然無法彈奏樂器，但靠著豐富的<br>音樂知識指揮別人協助其作曲，<br>並以自己的名義發表樂曲。
+|Name1 (KR) = 도베르 다크
+|Desc1 (KR) = 수수께끼의 목걸이로 인해 음악에 눈뜨게 된 개.<br>연주할 줄 아는 악기는 없지만 이론은 빠삭하다.<br>대필 작가에게 작곡하게 시킨 뒤<br>자신의 명의로 곡을 발표하고 있다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 11-2: [[One-Second Photo]]
+*Stage 11-6: [[Phantom Bluebird]]
+*Stage 12-2: [[Pointed Lakeshore]]
+*Stage 13-3: [[Pollution Isolation]]
+*Stage 14-5: [[Private Beach]]
+*Stage 15-3: [[Inert Zero Flux]]
+*Stage 16-4: [[Automatic Avoidance]]
+*Stage 18-4: [[Waterweed Trumpet]]
+*Stage 19-3: [[Renovated Shipwreck]]
+*Stage 22-4: [[Tapioca Hills]]
+*Stage 24-1: [[Lying Somniloquy]]
+*Stage 26-4: [[Dictionary Estate]]
+*Stage 28-5: [[Unicorn Flats]]
+*Stage 30-2: [[Cluttered Calligraphy]]
+*Stage 32-1: [[A Vast Red Waste]]
+*Stage 35-1: [[Codependent Compound]]
+*Stage 37-2: [[Mass-Chashu-Sets]]
+*Stage 38-3: [[ZL 38-3]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Dark Dober
+|Health = 2000000
+|Attack Power = 13000
+|Attack Range = 200
+|Attack Type = Area
+|Time Between Attacks = 47
+|Movement Speed = 12
+|Knockback = 6
+|Foreswing = 30
+|Backswing = 17
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -250~350)<br>
+{{AbilityIcon|Mini-Wave}} 33% chance to create a level 3 [[Wave Attack#Mini-Wave|Mini-Wave]]<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 25% for 60f <sub>2 seconds</sub>
+|Element = Dark/Sage
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+682 e.png|Dark Dober's spritesheet
+</gallery>
+
+==Trivia==
+*Dark Dober's Japanese name, Doveru Dāku (ドヴェルダーク, Dover Dark), may be a pun on ''Dovoruzāku'' (ドヴォルザーク), the Japanese pronunciation of [[wikipedia:Dvořák|Dvořák]] - a famous Czech composer best known for composing the ''[[wikipedia:New World Symphony|New World Symphony]]''. This is supported by how Dark Dober's Japanese description mentions compositions and how most other [[:Category:Sage Enemies|Sages]] are also based on historical figures.
+*Dark Dober's Japanese description may have been inspired by [[wikipedia:Mamoru Samuragochi|Mamoru Samuragochi]], a composer who was once hailed as "the Beethoven of Japan", but eventually confessed to having a ghostwriter write his best-known compositions for him. Samuragochi also used to have shoulder-length hair vaguely like Dark Dober's.
+*Given the musical theming, the shape and animation of Dark Dober's tail may be intended to resemble a conductor's baton.
+
+==Reference==
+*https://battlecats-db.com/enemy/682.html
+
+----
+{{EnemyNav|Artillery Dummy|Gigahaniwan}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Dark Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Mini-Wave Enemies]]

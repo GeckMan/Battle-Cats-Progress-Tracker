@@ -1,0 +1,54 @@
+{{Documentation}}
+
+==Example Usage==
+<pre>
+{{SpiritStats
+|Spirit CRO = 729
+|Spirit Image = 729 1.png
+|Spirit Base = 2700
+|Spirit Atk = 45,900
+|Spirit Range = 800
+|Spirit Foreswing = 41f <sup>1.37s</sup>
+|Spirit Backswing = 45f <sup>1.5s</sup>
+|Spirit Target = Area
+|Spirit Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] all enemies to 50% for 200f <sub>6.67 seconds</sub>
+}}
+</pre>
+
+===Result===
+{{SpiritStats
+|Spirit CRO = 729
+|Spirit Image = 729 1.png
+|Spirit Base = 2700
+|Spirit Atk = 45,900
+|Spirit Range = 800
+|Spirit Foreswing = 41f <sup>1.37s</sup>
+|Spirit Backswing = 45f <sup>1.5s</sup>
+|Spirit Target = Area
+|Spirit Ability = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] all enemies to 50% for 200f <sub>6.67 seconds</sub>
+}}
+
+<pre>
+{{SpiritStats
+|Spirit CRO = 818
+|Spirit Image = 818 1.png
+|Spirit Base = 2700
+|Spirit Atk = 45,900
+|Spirit Range = 800
+|Spirit Foreswing = 41f <sup>1.37s</sup>
+|Spirit Backswing = 45f <sup>1.5s</sup>
+|Spirit Target = Area
+}}
+</pre>
+
+===Result===
+{{SpiritStats
+|Spirit CRO = 818
+|Spirit Image = 818 1.png
+|Spirit Base = 2700
+|Spirit Atk = 45,900
+|Spirit Range = 800
+|Spirit Foreswing = 41f <sup>1.37s</sup>
+|Spirit Backswing = 45f <sup>1.5s</sup>
+|Spirit Target = Area
+}}

@@ -1,0 +1,63 @@
+{{EnemiesAppearing|Zir Zeal|Maawth|Henry|I.M. Phace|Chickful A}}
+'''Adventurer's Journal''' is the fourth stage in [[The Happy Lucky Temple]].
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn030 03 na en.png]]
+|stage location = [[File:Mapname030 na en.png]]
+|energy = 190
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Zir Zeal|300%
+|Maawth|2,400%
+|I.M. Phace|1,600%
+|Chickful A|250%}}
+|boss = {{Magnification|Henry|150%}}
+|enemies2 = {{Magnification|Zir Zeal|390%
+|Maawth|3,120%
+|I.M. Phace|2,080%
+|Chickful A|325%}}
+|boss2 = {{Magnification|Henry|195%}}
+|enemies3 = {{Magnification|Zir Zeal|510%
+|Maawth|4,080%
+|I.M. Phace|2,720%
+|Chickful A|425%}}
+|boss3 = {{Magnification|Henry|255%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 7,220 XP
+|width = 5,500
+|max enemies = 15
+|jpname = Recording in the Book of Adventures
+|script = 冒険の書に記録
+|romaji = Bōken no Sho ni Kiroku
+|star = 4
+|sub-chapter = [[The Happy Lucky Temple]]
+|difficulty = ★10
+|prev stage = [[Choir Battle]]
+|next stage = [[Chapel Transfer]]
+}}
+
+==Battleground==
+*2 [[Zir Zeal]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*3 [[Maawth]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base reaches 99% HP:
+**1 [[Henry]] spawns as the boss.
+**3 [[Zir Zeal]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**3 [[Zir Zeal]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**1 [[I.M. Phace]] spawns.
+**2 [[Chickful A]]s spawn, delay 46.67~50 seconds<sup>1,400f~1,500f</sup>.
+**1 [[Maawth]] spawns.
+
+==Strategy==
+The [[Freeze|Freezing]] in this stage can be problematic, so a good number of the cats you bring should be [[:Category:Cats with Freeze Immunity|Freeze Immune]]. Start spawning meatshields early in order to waste the Zir Zeals' burrows, but don't trigger the base early. Build up money as you hold the Zir Zeals back. You win after you kill I.M. Phace, and it might take a while without cats that have a lot of damage against them. You can bring various [[:Category:Anti-Floating Cats|anti-Floating Cats]] such as [[Swimmer Cat (Super Rare Cat)|Fishman Cat]] or [[Archer Cat (Rare Cat)|Cataur]] to deal with the Maawths and I.M. Phace. The Chickful As shouldn't be an issue as they tend to stay behind and strike unimportant units.
+
+If allowed to hit the base, a level 40 [[Talents|Talented]] [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] will  land two attacks on the Zir Zeals before dying. This leaves them with exactly enough health for a level 27+ [[Ototo Corps#Holy Blast|Holy Blast]] cannon to finish them off. This works on {{2c}} and {{3c}} with a level 50 Awakened Bahamut Cat and level 30 Holy Blast.
+
+==Trivia==
+*Every single enemy here has the Freeze ability.
+
+==Reference==
+*https://battlecats-db.com/stage/s13030-04.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 80 Stages]]

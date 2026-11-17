@@ -1,0 +1,49 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Mooth|Kaijin Doge|Croco|Le'boin}}
+'''Floor 5''' is the fifth floor of [[Fascinating Fallen Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn011 04 v ja.png]]
+|stage location = [[File:Mapname011 v ja.png]]
+|energy = 80
+|enemy castle hp = 20,000 HP
+|enemies = {{Magnification|Mooth|100%
+|Kaijin Doge|150%
+|Croco|100%}}
+|boss = {{Magnification|Le'boin|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +5 (100%, 1 time)
+|XP = 2,400 XP
+|width = 4,000
+|max enemies = 30
+|jpname = 5th Floor
+|script = 5階
+|romaji = 5 Kai
+|star = 1
+|event-chapter = [[Fascinating Fallen Tower]]
+|difficulty = ★2
+|prev stage = [[Fascinating Fallen Tower/Floor 4|Floor 4]]
+|next stage = [[Fascinating Fallen Tower/Floor 6|Floor 6]]
+}}
+
+==Rules==
+{{StageRule|13thAnni}}
+
+==Battleground==
+*1 [[Mooth]] spawns after 0.67 seconds<sup>20f</sup>.
+*20 [[Kaijin Doge]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 12~13.33 seconds<sup>360f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'boin]] spawns as the boss.
+**2 [[Croco]]s spawn after 0.67 seconds<sup>20f</sup>, delay 1.33 seconds<sup>40f</sup>.
+**7 [[Croco]]s spawn after 4.67 seconds<sup>140f</sup>, delay 8.67~9.33 seconds<sup>260f~280f</sup>.
+**4 [[Kaijin Doge]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**1 [[Mooth]] spawns.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07011-05.html
+
+{{Anniversary}}
+[[Category:魅惑の堕天楼 Floors]]

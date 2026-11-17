@@ -1,0 +1,63 @@
+{{EnemiesAppearing|Heavenly Hippoe|Gabriel|Angelic Gory}}
+:''Following [[Version 15.2 Update|Version 15.2]], the only way to access this stage is by playing the relevant difficulty line in [[Catfruit Buffet]].''
+'''Rays of Gold (Expert)''' is the second stage in [[Growing Yellow]].
+
+{{Stage Info
+|stage name = [[File:rc019.png]]
+[[File:Rays of Gold (Expert).png]]
+|stage location = [[File:Mapname000 b en.png]]
+|energy = 200
+|catamins = [[Catamin]] [A] x3
+|enemy castle hp = 320,000 HP
+|enemies = {{Magnification|Heavenly Hippoe|100%
+|Gabriel|100%
+|Angelic Gory|100%}}
+|boss = {{Magnification|Heavenly Hippoe|100%}}
+|treasure = - [[Catfruit|Yellow Catfruit]] +1 (45%, unlimited)<br>
+- [[Catfruit|Yellow Catfruit Seed]] +1 (43.5%, unlimited)<br>
+- [[Catfruit|Epic Catfruit]] +1 (1.5%, unlimited)
+|XP = 4,000 XP
+|width = 4,400
+|max enemies = 8
+|jpname = Sparkle Mysterious Light (Expert)
+|script = 怪光の煌めき 激ムズ
+|romaji = Kaikō no Kirameki Geki Muzu
+|star = 1
+|event = [[:Category:Catfruit Stages|Catfruit Stages]]
+|event-chapter = [[Growing Yellow]]
+|difficulty = ★6
+|prev stage = [[Rays of Gold (Hard)]]
+|next stage = [[Rays of Gold (Insane)]]<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 3.3%)
+|occurrence = Every Friday
+}}
+
+==Battleground==
+*3 [[Heavenly Hippoe]]s spawn after 0.07 seconds<sup>2f</sup>, delay 33.33~66.67 seconds<sup>1,000f~2,000f</sup>.
+*2 [[Gabriel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 18.33~20 seconds<sup>550f~600f</sup>.
+*2 [[Gabriel]]s spawn after 28.33 seconds<sup>850f</sup>, delay 18.33~20 seconds<sup>550f~600f</sup>.
+*2 [[Gabriel]]s spawn after 30 seconds<sup>900f</sup>, delay 18.33~20 seconds<sup>550f~600f</sup>.
+*5 [[Gabriel]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 0.67~1.67 seconds<sup>20f~50f</sup>.
+*When the base reaches 99% HP:
+**1 [[Heavenly Hippoe]] spawns as the boss.
+**7 [[Angelic Gory|Angelic Gories]] spawn, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+**1 [[Angelic Gory]] spawns.
+**8 [[Gabriel]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**Infinite [[Gabriel]]s spawn, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+
+==Strategy==
+The start is relatively easy, but once you hit the base, Angelic Gories start spawning. Long ranged and [[:Category:Anti-Angel Cats|anti-Angel Cats]] are recommended for dealing with them, [[Rocker Cat (Rare Cat)|Artist Cat]] being a prime example.
+
+==Walkthrough==
+{{Walkthrough
+|s1OC-7YHj88|Chuck|Uberless
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01101-02.html
+
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Event Stages]]

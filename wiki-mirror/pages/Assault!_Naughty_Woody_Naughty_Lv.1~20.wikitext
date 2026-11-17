@@ -1,0 +1,395 @@
+{{JPExclusive}}
+{{StrategyNeeded}}
+<tabber>
+Naughty Lv.1~10=
+{{EnemiesAppearing|Naughty Woody|Snache|Doge|Pigge|Jackie Peng|Sir Seal}}
+
+{{Stage Info
+|stage name = [[File:E 774.png|250px]]
+[[File:Mapsn079 00 a ja.png]]
+|stage location = [[File:Mapname079 a ja.png]]
+|base = {{Magnification|Naughty Woody|0}}
+|enemies = {{Magnification|Snache|0
+|Doge|0
+|Pigge|0
+|Jackie Peng|0}}
+|boss = {{Magnification|Sir Seal|0}}
+|restriction = [[No Continues]]
+|width = 4,500
+|max enemies = 20
+|jpname = Naughty Lv.X
+|script = いたずら Lv.X
+|romaji = Itazura Lv.X
+|star = 1
+|event-chapter = [[Assault! Naughty Woody]]
+|max clears = 3
+}}
+
+==Battleground==
+*The enemy base here is a [[Naughty Woody (Enemy Base)|Naughty Woody]].
+*Infinite [[Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*Infinite [[Doge]]s spawn after 4.67 seconds<sup>140f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Pigge]] spawns after 13.33 seconds<sup>400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sir Seal]] spawns as the boss.
+**2 [[Pigge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**1 [[Jackie Peng]] spawns after 33.33 seconds<sup>1,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Naughty Woody (Enemy Base)|Naughty Woody]]
+! scope="col" |[[Snache]]
+! scope="col" |[[Doge]]
+! scope="col" |[[Pigge]]
+! scope="col" |[[Jackie Peng]]
+! scope="col" |[[Sir Seal]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|100%
+|100%
+|100%
+|100%
+|100%
+|100%
+|3,000 HP
+|30
+|[[Battle Items#Speed Up|Speed Up]] +1
+|900 XP
+|-
+! scope="row" |2
+|1,100%
+|133%
+|133%
+|133%
+|133%
+|133%
+|33,000 HP
+|30
+|10,000 XP
+|900 XP
+|-
+! scope="row" |3
+|2,100%
+|167%
+|167%
+|167%
+|167%
+|167%
+|63,000 HP
+|40
+|[[Battle Items#Cat CPU|Cat CPU]] +1
+|1,200 XP
+|-
+! scope="row" |4
+|3,100%
+|200%
+|200%
+|200%
+|200%
+|200%
+|93,000 HP
+|40
+|30,000 XP
+|1,200 XP
+|-
+! scope="row" |5
+|4,000%
+|233%
+|233%
+|233%
+|233%
+|233%
+|120,000 HP
+|50
+|[[Cat Capsule|Cat Ticket]] +1
+|1,500 XP
+|-
+! scope="row" |6
+|5,000%
+|267%
+|267%
+|267%
+|267%
+|267%
+|150,000 HP
+|50
+|50,000 XP
+|1,500 XP
+|-
+! scope="row" |7
+|6,000%
+|300%
+|300%
+|300%
+|300%
+|300%
+|180,000 HP
+|60
+|[[Leadership]] +1
+|1,800 XP
+|-
+! scope="row" |8
+|7,000%
+|333%
+|333%
+|333%
+|333%
+|333%
+|210,000 HP
+|60
+|100,000 XP
+|1,800 XP
+|-
+! scope="row" |9
+|8,000%
+|367%
+|367%
+|367%
+|367%
+|367%
+|240,000 HP
+|70
+|[[Battle Items#Rich Cat|Rich Cat]] +1
+|2,100 XP
+|-
+! scope="row" |10
+|9,000%
+|400%
+|400%
+|400%
+|400%
+|400%
+|270,000 HP
+|70
+|[[Cat Capsule|Cat Ticket]] +2
+|2,100 XP
+|}
+
+==Strategy==
+A very easy set of stages. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+|-|
+Naughty Lv.11~20=
+{{EnemiesAppearing|Naughty Woody|Those Guys|Trolly Blogger|Gabriel|Scissoroo|Heavenly Hippoe|Nimoy Bore|Galactic Overseer Nyandam}}
+
+{{Stage Info
+|stage name = [[File:E 774.png|250px]]
+[[File:Mapsn079 00 a ja.png]]
+|stage location = [[File:Mapname079 a ja.png]]
+|base = {{Magnification|Naughty Woody|0}}
+|enemies = {{Magnification|Those Guys|0
+|Trolly Blogger|0
+|Gabriel|0
+|Scissoroo|0
+|Heavenly Hippoe|0
+|Nimoy Bore|0}}
+|boss = {{Magnification|Galactic Overseer Nyandam|0}}
+|restriction = [[No Continues]]
+|width = 4,000
+|max enemies = 20
+|jpname = Naughty Lv.X
+|script = いたずら Lv.X
+|romaji = Itazura Lv.X
+|star = 1
+|event-chapter = [[Assault! Naughty Woody]]
+|max clears = 3
+}}
+
+==Battleground==
+*The enemy base here is a [[Naughty Woody (Enemy Base)|Naughty Woody]].
+*Infinite [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 4.67 seconds<sup>140f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*2 [[Gabriel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*1 [[Scissoroo]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Galactic Overseer Nyandam]] spawns as the boss.
+**5 [[Trolly Blogger]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**4 [[Gabriel]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**5 [[Those Guys]] spawn after 3.33 seconds<sup>100f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**5 [[Those Guys]] spawn after 26.67 seconds<sup>800f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**5 [[Those Guys]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**5 [[Those Guys]] spawn after 80 seconds<sup>2,400f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+**2 [[Scissoroo]]s spawn after 20 seconds<sup>600f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**3 [[Heavenly Hippoe]]s spawn after 3.33 seconds<sup>100f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+**1 [[Nimoy Bore]] spawns after 40 seconds<sup>1,200f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |Stage
+! colspan="8" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Naughty Woody (Enemy Base)|Naughty Woody]]
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Trolly Blogger]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Scissoroo]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Nimoy Bore]]
+! scope="col" |[[Galactic Overseer Nyandam]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |11
+|10,000%
+|600%
+|100%
+|200%
+|100%
+|200%
+|100%
+|100%
+|300,000 HP
+|80
+|200,000 XP
+|2,400 XP
+|-
+! scope="row" |12
+|11,700%
+|978%
+|111%
+|233%
+|222%
+|222%
+|178%
+|222%
+|351,000 HP
+|80
+|[[Battle Items#Sniper the Cat|Sniper the Cat]] +1
+|2,400 XP
+|-
+! scope="row" |13
+|13,400%
+|1,356%
+|122%
+|267%
+|344%
+|244%
+|256%
+|344%
+|402,000 HP
+|90
+|300,000 XP
+|2,700 XP
+|-
+! scope="row" |14
+|15,000%
+|1,733%
+|133%
+|300%
+|467%
+|267%
+|333%
+|467%
+|450,000 HP
+|90
+|[[Leadership]] +2
+|2,700 XP
+|-
+! scope="row" |15
+|16,700%
+|2,111%
+|144%
+|333%
+|589%
+|289%
+|411%
+|589%
+|501,000 HP
+|100
+|[[Cat Capsule|Cat Ticket]] +3
+|3,000 XP
+|-
+! scope="row" |16
+|18,400%
+|2,489%
+|156%
+|367%
+|711%
+|311%
+|489%
+|711%
+|552,000 HP
+|110
+|500,000 XP
+|3,300 XP
+|-
+! scope="row" |17
+|20,000%
+|2,867%
+|167%
+|400%
+|833%
+|333%
+|567%
+|833%
+|600,000 HP
+|120
+|[[Battle Items#Cat Jobs|Cat Jobs]] +1
+|3,600 XP
+|-
+! scope="row" |18
+|21,700%
+|3,244%
+|178%
+|433%
+|956%
+|356%
+|644%
+|956%
+|651,000 HP
+|130
+|[[Battle Items#Treasure Radar|Treasure Radar]] +1
+|3,900 XP
+|-
+! scope="row" |19
+|23,400%
+|3,622%
+|189%
+|467%
+|1,078%
+|378%
+|722%
+|1,078%
+|702,000 HP
+|140
+|1,000,000 XP
+|4,200 XP
+|-
+! scope="row" |20
+|25,000%
+|4,000%
+|200%
+|500%
+|1,200%
+|400%
+|800%
+|1,200%
+|750,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|4,500 XP
+|}
+
+==Strategy==
+-
+</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24079.html
+
+{{Puzzle Bonanza! Nyanko Village}}
+{{SpecialStages List}}
+[[Category:Gauntlets]]

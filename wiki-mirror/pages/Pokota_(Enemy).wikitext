@@ -1,0 +1,64 @@
+:''This article is about the enemy. For the Cat Unit, see [[Pokota (Rare Cat)]].''
+'''Pokota''' (ポコタ) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[LINE Pokopang! Collaboration Event]]. He was added in [[Version 7.0 Update|Version 7.0]].
+
+{{Enemy Info
+|name = Pokota
+|image = E 399.png
+|appearance = [[LINE Pokopang! Collaboration Event]]
+|money drop = 550¢ - 2,172¢
+}}
+
+==Enemy==
+Pokota is a backliner who interestingly has a multi-hit attack. At his highest strength ([[Rainbow Blast!]] at 3 crown difficulty), he sports 128,000 health and does 10,000 damage with each part of his multi-hit attack. In the field, he's a bruiser to Cat Units who aren't able to outrange him and, despite being a backliner, he attacks more frequently than his allies ([[Ovis (Enemy)|Ovis]] or [[Coco (Enemy)|Coco]]).
+
+==Strategy==
+As Pokota's damage output is fairly high, it's important to bring meatshields so that he doesn't piledrive the more important units on your team. [[Cat (Normal Cat)|Mohawk Cat]], [[Tank Cat (Normal Cat)|Eraser Cat]], [[Crazed Cat (Super Rare Cat)|Crazed Macho Cat]] and [[Crazed Tank Cat (Super Rare Cat)|Crazed Wall Cat]] should be sufficient for the combination of Pokotas, Ovis, and Cocos that are present in [[Rainbow Blast!]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[LINE Pokopang! Collaboration Event#Poko Forest Friends!|Poko Forest Friends!]]: [[Rabbit's Mischief]] (1%)
+*[[LINE Pokopang! Collaboration Event#Trio from the Woods|Trio from the Woods]]:
+**[[Puzzle Attack!]] (25%)
+**[[Collecting Cherries]] (40%)
+**[[Rainbow Blast!]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Pokota
+|Health = 32000
+|Attack Power = 5000
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 75
+|Movement Speed = 12
+|Knockback = 4
+|Foreswing = 52
+|Backswing = 18
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">2,500</span> at 52f <sup>1.73s</sup>, <span class="scaled" data-type="ap">2,500</span> at 57f <sup>1.9s</sup>)
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+399 e.png|Pokota's spritesheet
+IdlePokota.gif|Pokota's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/401.html
+
+----
+{{EnemyNav|Glowstick Guys|Ovis}}
+----
+
+{{LINE Pokopang!}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemy Units]]

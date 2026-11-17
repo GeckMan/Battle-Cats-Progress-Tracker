@@ -1,0 +1,30 @@
+{{#invoke:Navbox|main
+|template = Template:Nissin U.F.O.
+|title = [[Nissin U.F.O. Collaboration Event]]
+|navbox_class = nissin-ufo
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[U.F.O. Cat (Rare Cat)|U.F.O. Cat]]
+*[[Yakisoba Cat (Special Cat)|Yakisoba Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Yakisoba U.F.O. Cat (Enemy)|Yakisoba U.F.O. Cat]]
+*[[Yakisoba Face]]
+
+|header3 = Stages
+|group3 = U.F.O. Strikes!
+|list3 =
+*[[Open the Lid and Pour Out the Sauce]]
+*[[Pour Hot Water and Wait 3 Minutes]]
+*[[Finish by Mixing the Sauce]]
+
+|group4 = U.F.O. Corps Strikes!
+|list4 =
+*[[U.F.O. Corps Strikes!/Levels 1~20|Stages 1~20]]
+}}<templatestyles src="Nissin U.F.O./styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Nissin U.F.O.]]}}<noinclude>[[Category:Navboxes]]</noinclude>

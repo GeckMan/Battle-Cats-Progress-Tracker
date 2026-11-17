@@ -1,0 +1,59 @@
+.spirit-stats-template table {
+	width: 100%;
+	line-height: normal;
+	font-size: 95%;
+	border: 2px solid #000;
+	border-top-width: 1px;
+	background-color: #000;
+	text-align: center;
+	table-layout: fixed;
+	border-radius: 5px;
+}
+
+.spirit-stats-template tr:nth-child(even) td {
+	background: var(--bg-color-light4);
+}
+
+.spirit-stats-template tr:nth-child(odd) td {
+	background: var(--bg-color-light3);
+}
+
+.spirit-stats-template input {
+	width: 2.5rem;
+	background: var(--bg-color-gray);
+	border: none;
+	border-radius: 5px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.spirit-stats-template p {
+	margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+	.spirit-stats-table {
+		display: grid;
+		gap: 1px;
+		grid-template-areas:
+			"name   name   name"
+			"image  attk-l attk-v"
+			"image  rang-l rang-v"
+			"image  fore-l fore-v"
+			"image  back-l back-v"
+			"image  type-l type-v"
+			"abil-l abil-l abil-l"
+			"abil-v abil-v abil-v";
+	}
+
+	.spirit-stats-table tbody,
+	.spirit-stats-table tr {
+		display: contents;
+	}
+
+	.spirit-stats-table td {
+		align-content: center;
+	}
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,1216 @@
+[[File:GamatotoLevel1.png|thumb|140px|GAMATOTO the Adventurer]]
+'''Gamatoto Expedition''' (ガマトト探検隊, ''Gamatoto Tanken-tai'', '''Gamatoto Expedition Troops''') is a feature added in [[Version 5.0 Update|Version 5.0]], which enables players to send a "cat" named GAMATOTO on expeditions in search of useful items. GAMATOTO allows players to obtain free XP, [[Cat Food]], [[Catseye]]s, etc. without doing anything else. This feature is unlocked after clearing [[Greece (Empire of Cats)|Greece]] in [[Empire of Cats]].
+
+After the expedition is complete, GAMATOTO returns to the camp, a log of the expedition is presented, and any lucky finds are awarded for a random chance.
+
+GAMATOTO has many costumes; however, they are only cosmetic. They have no effect on his chances of finding items during expeditions, regardless of which costume is worn.
+
+==Explanation==
+The expedition screen can be accessed from the [[Cat Base Menu]] after selecting a chapter. The button is located on the same row as the Menu and [[Catnip Challenges|Missions]] buttons. This screen is also where the [[Cat Shrine]] is found.
+
+You can start an expedition by tapping GAMATOTO on the center of the screen. The upper-right button toggles a reminder that GAMATOTO has completed the expedition and returned to camp. The shop button is a shortcut to buy items in the premium shop, where players can buy [[Catamin]]s to reduce the time remaining before GAMATOTO returns to the camp.
+
+An expedition can be made to one of several areas by getting specific GAMATOTO Level and [[User Rank]] if they're unlocked for a chance to obtain the rewards specified. There are three expedition duration options: 1 hour, 3 hours, and 6 hours. These various locations and durations determine the number of expedition points GAMATOTO receives towards his next level, the average number of items he acquires and, depending on where it's held, which items those are. Contingent on the expedition's duration, the game makes either 6, 18, or 36 checks to determine the total number of items dropped. Without helpers, each check has a base 32% chance of success, whereupon you will receive a random drop from the area's pool of items, and at a random quantity.
+
+Each area has specific requirements for GAMATOTO's level and the player's [[User Rank]]. All the requirements specified must be met for an area to be unlocked and available to explore.
+
+Once GAMATOTO's expedition is confirmed, a window will display the details of the mission, location, type, duration, a countdown of time remaining to completion and options to reduce the countdown timer by using Catamins. A Catamin [A] skips 1 hour of the expedition, a Catamin [B] trims 3 hours off, and a Catamin [C] is effective for 6 hours, the maximum length of an expedition.
+
+There is also a small home icon button above GAMATOTO which cancels the expedition.
+
+<span style="color:red">'''Warning:''' Cancelling a Gamatoto expedition returns him to base and forfeits any rewards he might have obtained; any Catamins used will not be returned. A lack of wireless connection gives the impression of "freezing" GAMATOTO. Reconnecting will update his progress correctly and fully.</span>
+
+Cancellation via the 'home' button also provides a further confirmation stage and once confirmed will then be completed instantly.
+
+Upon returning after the expedition timer expires, GAMATOTO will be shown running back to gain his expedition points and present the player with a report of what occurred during the expedition. There is a 20% chance of a "Great Success" per expedition, where he gains a 1.5x multiplier to his expedition points, assuming he is under level 130. Tap GAMATOTO again to get the expedition report screen showing what GAMATOTO and any assistants got up to during the expedition and also detailing any items they found. The player can skip the report by using the top right button on the log screen. Ending the report screen will simply show a summary of all items obtained during the expedition.
+
+Every 10 accumulated expedition hours, there is a set chance for GAMATOTO to become "Zoned-in". This counter resets upon Zoning-in, but does not begin to accumulate again until GAMATOTO is no longer Zoned-in. Sending GAMATOTO out while this state is active will ensure that at least one of each highlighted reward will be obtained during an expedition, no matter the length. The effect will expire after 3 expeditions, or after 24 hours have passed since its activation. Guaranteed rewards will not be affected by the presence of Inari or collaboration helpers. The odds that GAMATOTO becomes Zoned-in per 10-hour threshold are as follows:
+
+{| class="article-table" border="1"
+! scope="col" |Accumulated Hours
+! scope="col" |Activation Chance
+|-
+| 10 hours
+| 5%
+|-
+| 20 hours
+| 5%
+|-
+| 30 hours
+| 5%
+|-
+| 40 hours
+| 40%
+|-
+| 50 hours
+| 25%
+|-
+| 60 hours
+| 25%
+|-
+| 70 hours
+| 25%
+|-
+| 80 hours
+| 100%
+|}
+
+==List of Areas==
+Please note: GAMATOTO's level does not affect the drop amount nor general drop rate of items—it remains at 32% regardless of the area. Instead, each area has its own unique loot table; GAMATOTO levels work by decreasing the area's XP drop rate, then redistributing it between Cat Food, Battle Items, Catseyes, and other valuable goodies. There is also a massive redistribution spike at level 100, greatly increasing your odds at obtaining rarer items when compared to any other level threshold. You have to unlock the previous area before being able to unlock ones after.
+
+''For battle item drops, see [[Battle Items|this page]] for an explanation. For Catseye drops, see [[Catseye|this page]] for an explanation.''
+
+===Common===
+<div style="display:flex; text-align:center; flex-wrap:wrap;">
+{| style="max-width:249px"
+|[[File:Mellow Fields.png|center]]<br><br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpeed.png|40px]]
+|-
+|100/275/550
+|}
+{| style="max-width:249px"
+|[[File:Shaolin Kingdom.png|center]]<br><br>
+|-
+|User Rank 200 & GAMATOTO level 3
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallSpeed.png|40px]]
+|-
+|300/825/1,650
+|}
+{| style="max-width:249px"
+|[[File:Dusty Desert.png|center]]<br><br>
+|-
+|User Rank 400 & GAMATOTO level 6
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallSniper.png|40px]]
+|-
+|1,000/2,750/5,500
+|}
+{| style="max-width:249px"
+|[[File:Facility 999.png|center]]<br><br>
+|-
+|User Rank 600 & GAMATOTO level 10
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallSniper.png|40px]] [[File:SmallCatJobs.png|40px]]
+|-
+|2,000/5,500/11,000
+|}
+{| style="max-width:249px"
+|[[File:Caracara Marsh.png|center]]<br><br>
+|-
+|User Rank 900 & GAMATOTO level 14
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallRadar.png|40px]]
+|-
+|3,000/8,250/16,500
+|}
+{| style="max-width:249px"
+|[[File:Tomb of Gold.png|center]]<br><br>
+|-
+|User Rank 1600 & GAMATOTO level 19
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpecialEye.png|40px]]
+|-
+|5,000/13,750/27,500
+|}
+{| style="max-width:249px"
+|[[File:Eagle Fields.png|center]]<br><br>
+|-
+|User Rank 1600 & GAMATOTO level 24
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallRareEye.png|40px]]
+|-
+|5,500/15,100/30,200
+|}
+{| style="max-width:249px"
+|[[File:Traitor Trench.png|center]]<br><br>
+|-
+|User Rank 1600 & GAMATOTO level 30
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSuperEye.png|40px]]
+|-
+|6,000/16,500/33,000
+|}
+{| style="max-width:249px"
+|[[File:Mt Parabola.png|center]]<br><br>
+|-
+|User Rank 1600 & GAMATOTO level 36
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Pacific Waves.png|center]]
+|-
+|User Rank 1600 & GAMATOTO level 43
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpecialEye.png|40px]] [[File:SmallRareEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Kotatsu Tundra.png|center]]
+|-
+|User Rank 1600 & GAMATOTO level 50
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSuperEye.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map 12.png|center]]
+|-
+|User Rank 1600 & GAMATOTO level 58
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallRareEye.png|40px]] [[File:SmallSuperEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map 13.png|center]]
+|-
+|User Rank 1600 & GAMATOTO level 67
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpecialEye.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map 14.png|center]]<br><br>
+|-
+|User Rank 1600 & GAMATOTO level 72
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallSpecialEye.png|40px]] [[File:SmallSuperEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map 15.png|center]]<br><br>
+|-
+|User Rank 1600 & Gamatoto level 83
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:SmallRareEye.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map 16.png|center]]
+|-
+|User Rank 1600 & Gamatoto level 88
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallSniper.png|40px]] [[File:SmallCatJobs.png|40px]]
+|-
+|7,000/19,250/38,500
+|}
+</div>
+
+===Event===
+<div style="display:flex; text-align:center; flex-wrap:wrap;">
+{| style="max-width:249px"
+|[[File:Gama map event 08.png|center]]<br><br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:Small5000XP.png|40px]] [[File:Small10000XP.png|40px]]
+|-
+|100/200/500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 09.png|center]]<br><br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:Small5000XP.png|40px]] [[File:Small10000XP.png|40px]]
+|-
+|3,000/8,200/16,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 10.png|center]]<br><br>
+|-
+|User Rank 900 & GAMATOTO level 14
+|-
+|[[File:SmallXP.png|40px]] [[File:Small5000XP.png|40px]] [[File:Small10000XP.png|40px]] [[File:Small30000XP.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 11.png|center]]<br><br>
+|-
+|Unlocked by User Rank 1600 and GAMATOTO level 19
+|-
+|[[File:SmallXP.png|40px]]  [[File:SmallSpecialEye.png|40px]] [[File:SmallRareEye.png|40px]] [[File:SmallSuperEye.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 15.png|center]]
+|-
+|Unlocked by User Rank 5000 and GAMATOTO level 50
+|-
+|[[File:SmallXP.png|40px]] [[File:Small10000XP.png|40px]] [[File:Small30000XP.png|40px]] [[File:Small50000XP.png|40px]] [[File:Small100000XP.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:XP Harvest Easy.png|center]]<br><br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:Small5000XP.png|40px]] [[File:Small10000XP.png|40px]]
+|-
+|100/200/500
+|}
+{| style="max-width:249px"
+|[[File:XP Harvest Normal.png|center]]<br><br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:Small30000XP.png|40px]] [[File:Small50000XP.png|40px]]
+|-
+|3,000/8,200/16,500
+|}
+{| style="max-width:249px"
+|[[File:XP Harvest Hard.png|center]]<br><br>
+|-
+|User Rank 900 & GAMATOTO level 14
+|-
+|[[File:SmallXP.png|40px]] [[File:Small50000XP.png|40px]] [[File:Small100000XP.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:Cats Eye Cave.png|center]]<br><br>
+|-
+|Unlocked by User Rank 1600 and GAMATOTO level 19
+|-
+|[[File:SmallXP.png|40px]]  [[File:SmallSpecialEye.png|40px]] [[File:SmallRareEye.png|40px]] [[File:SmallSuperEye.png|40px]] [[File:SmallUberEye.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 12.png|center]]
+|-
+|Unlocked by User Rank 5000 and GAMATOTO level 50
+|-
+|[[File:SmallXP.png|40px]] [[File:Small100000XP.png|40px]] [[File:Small200000XP.png|40px]]
+|-
+|5,000/13,700/27,500
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 14.png|center]]
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallCatFood.png|40px]] [[File:Smallegendaryheartofjustice.png|40px]]
+|-
+|100/200/500
+|-
+|'''Event:''' [[Anniversary/13th Year|13th Anniversary]]
+|}
+</div>
+
+===Collaboration Event===
+<div style="display:flex; text-align:center; flex-wrap:wrap;">
+{| style="max-width:249px"
+|[[File:Gama map event 04.png|center]]<br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallSniper.png|40px]]
+|-
+|100/180/210
+|-
+|'''Collab:''' [[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 05.png|center]]
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallRadar.png|40px]]
+|-
+|100/360/420
+|-
+|'''Collab:''' [[Neon Genesis Evangelion Collaboration Event|Neon Genesis Evangelion]]
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 06.png|center]]
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallCatJobs.png|40px]] [[File:SmallSniper.png|40px]]
+|-
+|100/360/420
+|-
+|'''Collab:''' Neon Genesis Evangelion
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 07.png|center]]<br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallSniper.png|40px]]
+|-
+|100/180/210
+|-
+|'''Collab:''' [[Merc Storia Collaboration Event|Merc Storia]]
+|}
+{| style="max-width:249px"
+|[[File:Gama map event 13.png|center]]<br>
+|-
+|Clear Greece in Empire of Cats Ch. 1
+|-
+|[[File:SmallXP.png|40px]] [[File:SmallSpeed.png|40px]] [[File:SmallCPU.png|40px]] [[File:SmallRich.png|40px]] [[File:SmallRadar.png|40px]]
+|-
+|100/360/420
+|-
+|'''Collab:''' [[Rurouni Kenshin Collaboration Event|Ruroni Kenshin]]
+|}
+</div>
+
+==Level-up Requirements==
+{| class="article-table mw-collapsible mw-collapsed"
+!Lv
+!XP (actual needed)
+!Lv
+!XP (actual needed)
+!Lv
+!XP (actual needed)
+|-
+|1
+|Initial
+|2
+|600 (+600)
+|3
+|2,400 (+1,800)
+|-
+|4
+|10,900 (+8,500)
+|5
+|16,900 (+5,900)
+|6
+|23,000 (+6,100)
+|-
+|7
+|44,100 (+21,100)
+|8
+|65,300 (+21,200)
+|9
+|86,500 (+21,200)
+|-
+|10
+|107,700 (+21,200)
+|11
+|168,200 (+60,500)
+|12
+|228,700 (+60,500)
+|-
+|13
+|289,200 (+60,500)
+|14
+|349,700 (+60,500)
+|15
+|444,000 (+94,300)
+|-
+|16
+|538,400 (+94,400)
+|17
+|632,800 (+94,400)
+|18
+|727,200 (+94,400)
+|-
+|19
+|821,600 (+94,400)
+|20
+|1,003,100 (+181,500)
+|21
+|1,184,600 (+181,500)
+|-
+|22
+|1,366,100 (+181,500)
+|23
+|1,547,600 (+181,500)
+|24
+|1,729,100 (+181,500)
+|-
+|25
+|1,917,600 (+188,500)
+|26
+|2,106,200 (+188,600)
+|27
+|2,294,700 (+188,500)
+|-
+|28
+|2,483,300 (+188,600)
+|29
+|2,671,800 (+188,500)
+|30
+|2,860,400 (+188,600)
+|-
+|31
+|3,102,400 (+242,000)
+|32
+|3,344,400 (+242,000)
+|33
+|3,586,400 (+242,000)
+|-
+|34
+|3,828,400 (+242,000)
+|35
+|4,070,400 (+242,000)
+|36
+|4,312,400 (+242,000)
+|-
+|37
+|4,590,700 (+278,300)
+|38
+|4,869,000 (+278,300)
+|39
+|5,147,300 (+278,300)
+|-
+|40
+|5,425,600 (+278,300)
+|41
+|5,703,900 (+278,300)
+|42
+|5,982,100 (+278,200)
+|-
+|43
+|6,260,500 (+278,400)
+|44
+|6,575,100 (+314,600)
+|45
+|6,889,700 (+314,600)
+|-
+|46
+|7,204,300 (+314,600)
+|47
+|7,518,900 (+314,600)
+|48
+|7,833,500 (+314,600)
+|-
+|49
+|8,148,100 (+314,600)
+|50
+|8,462,700 (+314,600)
+|51
+|8,822,700 (+360,000)
+|-
+|52
+|9,182,600 (+359,900)
+|53
+|9,509,330 (+326,730)
+|54
+|9,836,000 (+326,670)
+|-
+|55
+|10,162,800 (+326,800)
+|56
+|10,489,500 (+326,700)
+|57
+|10,816,200 (+326,700)
+|-
+|58
+|11,142,900 (+326,700)
+|59
+|11,528,500 (+385,600)
+|60
+|11,914,200 (+385,700)
+|-
+|61
+|12,299,900 (+385,700)
+|62
+|12,685,600 (+385,700)
+|63
+|13,071,300 (+385,700)
+|-
+|64
+|13,457,000 (+385,700)
+|65
+|13,842,700 (+385,700)
+|66
+|14,228,400 (+385,700)
+|-
+|67
+|14,614,000 (+385,600)
+|68
+|15,088,320 (+474,320)
+|69
+|15,562,640 (+474,320)
+|-
+|70
+|16,036,960 (+474,320)
+|71
+|16,511,280 (+474,320)
+|72
+|16,985,600 (+474,320)
+|-
+|73
+|17,369,380 (+383,780)
+|74
+|18,153,160 (+783,780)
+|75
+|18,736,940 (+583,780)
+|-
+|76
+|19,320,720 (+583,780)
+|77
+|19,904,500 (+583,780)
+|78
+|20,539,750 (+635,250)
+|-
+|79
+|21,175,000 (+635,250)
+|80
+|21,810,250 (+635,250)
+|81
+|22,445,500 (+635,250)
+|-
+|82
+|23,080,750 (+635,250)
+|83
+|23,716,000 (+635,250)
+|84
+|24,630,760 (+914,760)
+|-
+|85
+|25,545,520 (+914,760)
+|86
+|26,462,800 (+917,280)
+|87
+|27,375,040 (+912,240)
+|-
+|88
+|28,289,800 (+914,760)
+|89
+|29,277,967 (+986,167)
+|90
+|30,266,133 (+988,166)
+|-
+|91
+|31,254,300 (+988,167)
+|92
+|32,242,467 (+988,167)
+|93
+|33,230,633 (+988,166)
+|-
+|94
+|34,218,800 (+988,167)
+|95
+|35,376,367 (+1,157,567)
+|96
+|36,533,933 (+1,157,566)
+|-
+|97
+|37,691,500 (+1,157,567)
+|98
+|38,849,067 (+1,157,567)
+|99
+|40,006,633 (+1,157,566)
+|-
+|100
+|41,164,200 (+1,157,567)
+|101
+|43,000,000 (+1,835,800)
+|102
+|44,835,800 (+1,835,800)
+|-
+|103
+|46,671,600 (+1,835,800)
+|104
+|48,507,400 (+1,835,800)
+|105
+|50,343,200 (+1,835,800)
+|-
+|106
+|52,179,000 (+1,835,800)
+|107
+|54,014,800 (+1,835,800)
+|108
+|55,850,600 (+1,835,800)
+|-
+|109
+|57,784,600 (+1,934,000)
+|110
+|59,718,600 (+1,934,000)
+|111
+|61,652,600 (+1,934,000)
+|-
+|112
+|63,586,600 (+1,934,000)
+|113
+|65,520,600 (+1,934,000)
+|114
+|67,454,600 (+1,934,000)
+|-
+|115
+|69,388,600 (+1,934,000)
+|116
+|71,322,600 (+1,934,000)
+|117
+|73,353,475 (+2,030,875)
+|-
+|118
+|75,384,350 (+2,030,875)
+|119
+|77,415,225 (+2,030,875)
+|120
+|79,446,100 (+2,030,875)
+|-
+|121
+|81,476,975 (+2,030,875)
+|122
+|83,507,850 (+2,030,875)
+|123
+|85,538,725 (+2,030,875)
+|-
+|124
+|87,569,600 (+2,030,875)
+|125
+|89,658,700 (+2,089,100)
+|126
+|91,747,800 (+2,089,100)
+|-
+|127
+|93,836,900 (+2,089,100)
+|128
+|95,926,000 (+2,089,100)
+|129
+|98,015,100 (+2,089,100)
+|-
+|130
+|100,104,200 (+2,089,100)
+|}
+
+==Expedition Helpers==
+After each expedition, GAMATOTO has a rare chance (higher chance at Raisin' the Bar) to meet a fellow friend during the expedition, who joins him after the expedition ends. These are called "Expedition helpers" and take the form of smaller versions of GAMATOTO (without a costume). Helpers have a specific value attached to them based on their rank. Each point of value adds 0.27% to the base 32% item drop rate, up to a maximum of 50.9% at 10 Legend helpers. The value of each helper rank is as follows:
+
+{| class="article-table" border="1"
+! scope="col" |Helper Rank
+! scope="col" |Value
+|-
+| Intern
+| 1
+|-
+| Lackey
+| 2
+|-
+| Underling
+| 4
+|-
+| Assistant
+| 6
+|-
+| Legend
+| 7
+|}
+
+If your current helper lineup's aggregate value matches or exceeds 60, Legend helpers will replace Assistants in the helper pool.
+
+Helpers come with randomly generated names selected from different sets for each rarity. The player can have at most ten helpers, and if an eleventh helper is found, at least one helper must be retired before GAMATOTO can be sent on an expedition again. If you try to start an expedition while having 11 helpers, a message will pop up letting you know and offering to dismiss one of the lowest rank helpers you have. By tapping on the helpers in the field, you can find the details of the helper's name and effect description, how many helpers you have and the dismiss button.
+
+Dismissing a helper will allow them to be recruited to the [[Ototo Corps]] as engineers for use on [[Cat Base]] upgrades, if available. This is a useful way to obtain extra engineers if a helper is no longer needed (usually due to GAMATOTO finding one when the team is full), but players must ensure they do not have the maximum amount of them in order to avoid missing out on a free Engineer, as otherwise the dismissed helper is effectively wasted. Engineers gained this way are no different from normal ones and will be consumed after starting a project.
+
+When the player has a good enough [[Cat Shrine|Cat Fortune]] (Li'l Luck or greater), there is a chance to summon Inari, who directly doubles all item rewards (no effect on [[Cat Food]]) at the end of an expedition, rather than increase the probabilities. Inari behaves like a regular helper for the rest, but doesn't count toward the helper limit, and will stay for only one expedition.
+
+During certain collaboration events, a character from the collab will assist GAMATOTO in the same way as Inari. They will stay for every expedition during the collab only.
+
+<center>
+{| class="article-table" border="1"
+! colspan="5" scope="col" style="text-align: center;" |Normal
+|-
+|[[File:GamatotoMember 002.png|center]]
+|[[File:GamatotoMember 003.png|center]]
+|[[File:GamatotoMember 004.png|center]]
+|[[File:GamatotoMember 005.png|center]]
+|[[File:GamatotoMember 006.png|center]]
+|-
+|Intern
+|Lackey
+|Underling
+|Assistant
+|Legend
+|-
+|Item Pickup chance slightly increased
+|Item Pickup chance somewhat increased
+|Item Pickup chance greatly increased
+|Item Pickup chance massively increased
+|Item Pickup chance enormously increased!
+|-
+! colspan="5" scope="col" style="text-align: center;" |[[Cat Shrine|Cat Fortune]]
+|-
+| colspan="5" |[[File:GamatotoMember jinja 000.png|center]]
+|-
+| colspan="5" |Inari
+|-
+| colspan="5" |Cat God's loyal servant, here to support Gamatoto!<br>Increases Gamatoto quest rewards for one time only!<br>※Does not apply to Cat Food rewards.
+|-
+! colspan="5" scope="col" style="text-align: center;" |Event
+|-
+| colspan="5" |[[File:Placeholder.png|center]]
+|-
+| colspan="5" |ネコ店員
+|-
+| colspan="5" |ガマトト探検隊に臨時加入したネコ店員<br>コラボ期間中、獲得アイテム量をアップしてくれます<br>※ネコカンは対象外です
+|-
+! colspan="5" scope="col" style="text-align: center;" |Collaboration
+|-
+|-
+|[[File:GamatotoMember C 008.png|center]]
+|[[File:GamatotoMember C 098.png|center]]
+|[[File:GamatotoMember C 058.png|center]]
+|[[File:GamatotoMember C 126.png|center]]
+|[[File:GamatotoMember C 224.png|center]]
+|-
+|Toto
+|Geek
+|Gunder
+|Rabbit Yukine
+|Chao
+|-
+|A mini monster ally, here from [[Merc Storia Collaboration Event|Merc Storia]] for a<br>limited time! Increases Gamatoto rewards!<br>※Cat Food drops will not increase.
+|[[Takuya (Enemy)|Takuya]]'s Loyal buddy "The Geek"<br>appears to help Gamatoto crew!<br>During the collab, Gamatoto rewards increase!<br>※Cat Food drops will not increase.
+|[[Power Pro Baseball Collaboration Event|PowerPro]]'s mascot "Gunder"<br>appears to help the Gamatoto crew!<br>During the collab, Gamatoto rewards increase!<br>※Cat Food drops will not increase.
+|[[Snow Miku 2021 (Uber Rare Cat)|Snow Miku]]'s loyal pet "Rabbit Yukine"<br>appears to help the Gamatoto crew!<br>While they are here, Gamatoto rewards increase!<br>※Cat Food excluded.
+|Chao has joined Gamatoto Expeditions!<br>Earn more item rewards during the collab!<br>※Does not apply to Cat Food.
+|}
+</center>
+
+===Recruitment Chances===
+{| class="fandom-table"
+|- class="bg-light2" style="text-align: center;"
+|'''No Engineers'''
+| colspan="3" |Early Game
+| colspan="3" |Regulars
+| colspan="3" |Raisin' the Bar
+|- style="text-align: center;"
+|
+|1H
+|3H
+|6H
+|1H
+|3H
+|6H
+|1H
+|3H
+|6H
+|-
+|Fail
+|85.56%
+|67.72%
+|49.58%
+|82.81%
+|62.4%
+|42.79%
+|67.24%
+|37.07%
+|16.76%
+|-
+|Engineer
+|12.51%
+|27.98%
+|43.70%
+|14.90%
+|32.59%
+|49.58%
+|28.39%
+|54.54%
+|72.14%
+|-
+|Intern
+|1.4%
+|3.14%
+|4.91%
+|1.33%
+|2.91%
+|4.42%
+|2.53%
+|4.86%
+|6.43%
+|-
+|Lackey
+|0.31%
+|0.69%
+|1.07%
+|0.55%
+|1.2%
+|1.83%
+|1.05%
+|2.01%
+|2.66%
+|-
+|Underling
+|0.15%
+|0.35%
+|0.54%
+|0.28%
+|0.6%
+|0.92%
+|0.52%
+|1.01%
+|1.33%
+|-
+|Assistant or Legend
+|0.06%
+|0.13%
+|0.2%
+|0.14%
+|0.3%
+|0.46%
+|0.26%
+|0.50%
+|0.67%
+|- class="bg-light4" style="text-align: center;"
+|'''Full Engineers'''
+| colspan="3" |Early Game
+| colspan="3" |Regulars
+| colspan="3" |Raisin' the Bar
+|- style="text-align: center;"
+|
+|1H
+|3H
+|6H
+|1H
+|3H
+|6H
+|1H
+|3H
+|6H
+|-
+|Fail
+|98.01%
+|95.01%
+|91.35%
+|97.61%
+|94.14%
+|89.71%
+|95.26%
+|88.57%
+|80.37%
+|-
+|Engineer
+|0%
+|0%
+|0%
+|0%
+|0%
+|0%
+|0%
+|0%
+|0%
+|-
+|Intern
+|1.45%
+|3.58%
+|6.31%
+|1.38%
+|3.40%
+|5.97%
+|2.75%
+|6.63%
+|11.39%
+|-
+|Lackey
+|0.32%
+|0.78%
+|1.38%
+|0.57%
+|1.41%
+|2.47%
+|1.14%
+|2.75%
+|4.71%
+|-
+|Underling
+|0.16%
+|0.39%
+|0.69%
+|0.29%
+|0.70%
+|1.24%
+|0.57%
+|1.37%
+|2.36%
+|-
+|Assistant or Legend
+|0.06%
+|0.15%
+|0.26%
+|0.14%
+|0.35%
+|0.62%
+|0.28%
+|0.69%
+|1.18%
+|}
+
+*Early Game refers to Mellow Fields, Shaolin Kingdom, Dusty Desert, XP Harvest (Easy) and Grand XP Harvest (Easy).
+*Legend Helpers are effectively unlocked after player has the maximum number of helpers and they are all Assistant-quality. They replace Assistants, and become locked again if the player's collective helper value is below 60.
+
+===Helper Names===
+<tabber>
+English=
+{| class="article-table" border="1"
+! scope="col" |Rank
+! scope="col" |Names
+|-
+|Intern
+|Ralf, T-Bone, Pam, Johann, Elmo, Joey, Clyde, Max, Sammy, Bert, Rosie, Banjo, Angus, Ian, Elmo, Wilbur, Ash, Felix, Chip, Kevin, Yuta, Nate, Keith, Gary, Jack, Pedro, Hank, Morty, Boris, Derp, Helga, Imogen, Tina, Deb, Gordy, Olli, Arnie, Yoyo, Peet, Theo, Alex, Carrie, Ted, Annie, Simon, Marc, Jesse, Bert, Sophie, Jen, Donny, Finn, Lily
+|-
+|Lackey
+|Tig, Petey, Bill, Baxter, Jann, Ian, Sally, Alvin, Ursula, Lee, Henry, Jonny, Axel, Sid, Peggy, Ilsa, Ellen, Butch, Max, Orville, Howie, Clara, Maria, Kumiko, Chichi, Jay, Bjorn, Iris, Hiram, Zip
+|-
+|Underling
+|Baron, Oliver, Lew, Manuel, Inga, Noah, Ziggy, Frida, Walt, Dewey, Nova, Mandy, Sue, Barry, Kanta, Sybil, Loki, Myra, Rocky, Tess, Kitt, Pierce, Otto, Pearl, May
+|-
+|Assistant
+|Pedro, Keenan, Jordan, Ima, Ivana, Ginger, Herbie, Corey, Brock, George, Anita, Denny, Fredo, Sonny, Daisy, Toots, Nora, Louie, Toni, Scotty
+|-
+|Legend
+|Nottingham, Kenshiro, Himiko, Merlin, Maximilian, Thorvald, Hercules, Diamond, Sapphire, Twilight, Gorgonzola, Ludvig, Augustus, Fauntleroy, Pono, Toyotomi, Voltaire, Tsuchinoko, Ramensky, Orlov
+|}
+
+|-|Japanese=
+{| class="article-table" border="1"
+! scope="col" |Rank
+! scope="col" |Names
+|-
+|Intern
+|にゃんた, しきお, たま, ぷんぷん, じろー, でんでん, ぱーこ, みけ, どら, こたろー, ごん, ざりがに, ひろき, きゅうり, たぴおか, げんげん, せんべい, かっしー, ぺろ, あい, ちょこ, えの, ぷるりん, おふくろ, はにゃわ, もんぶらん, りんく, べに, ゆうご, ころちん, ぷっちん, りんりん, まさこ, なかじま, ふじおか, うっしー, えりか, かまぼこ, うどん, かすが, みるく, ぽよん, きゃりー, ぱみゅ, いずみ, あつし, げれげれ, さっちー, まさる, にんたん, まりも, くにお, かず
+|-
+|Lackey
+|エマ, アゴ, チャンス, パフ, モンペ, ジズー, ラム, ウバ, キャシー, スター, クロ, ゴロー, テツ, サクジ, リットン, モチ, ニャンダ, マリー, フェリック, ヒロポン, セワシ, サテン, キナリ, カルビ, シベチョー, カリガリ, ポンセ, キング, ポロリ, ハム
+|-
+|Underling
+|えい太, 松本, 天ぷら, 出汁, 佐藤, ジバねこ, 若さま, カン助, ゴン太, 伸介, ねこ三郎, さち子, とば次郎, 干物, 六三四, よね助, がり蔵, 米蔵, ぬけ作, ちょび助, 玉三郎, しげ里, 大吟醸, 弁慶, あさ子
+|-
+|Assistant
+|クリスティーナ, ストロガノフ, クレオパトラ, ナポレオン, 子鉄, カメハメハ, タマモノマエ, まんぞく, ラブラドール, アントニオ, ガガリン, ライスシャワー, アルフレド, ラインハルト, 合点承知の助, ドンペリニャン, 峰不二ネコ, 聖徳にゃん子, 風魔ネコ太郎, フナ左衛門
+|-
+|Legend
+|ちゅーる, けんしろう, ひみこ, りゅうおう, ミタマックス, スサノオ, ヘラクレス, ダイヤモンド, サファイア, トワイライト, ゴルゴンゾーラ, ノーベル, ニャッキーチェン, ネコダンディズム, ポノ, ねこ政宗, にぼし伯爵, ツチノ子, クラッカー前田, ニャンドロフ
+|}
+
+|-|Taiwanese=
+{| class="article-table" border="1"
+! scope="col" |Rank
+! scope="col" |Names
+|-
+|Intern
+|阿飛, 志喵, 小玉, 肥肥, 二號, 丸子, 坦克, 小花, 虎毛, 毛毛, 黃黃, 螯蝦, 丹丹, 小黃瓜, 珍珠, 點點, 仙貝, 阿西, 甜甜, 小愛, 巧克力, 綿綿, 豆豆, 老媽子, 可可, 伯朗, 環環, 小紅, 雨果, 親親, 噗丁, 玲玲, 真真, 中島, 橘子, 妞妞, 小香, 魚板, 乾麵, 春天, 牛奶, 波波, 凱莉, 露露, 小泉, 純純, 寶寶, 球球, 呆呆, 凱凱, 綠藻, 文文, 阿強
+|-
+|Lackey
+|艾瑪, 雅戈, 強森, 帕福, 門貝, 吉智, 拉姆, 乃麻, 凱西, 明星, 角頭, 五郎, 小鐵, 沙科奇, 利頓, 年糕, 喵達, 馬利, 腓力克, 椪柑, 世修, 土星, 奇納利, 肋排, 西伯利亞, 瘦爺, 荷西, 金剛, 彼得, 火腿
+|-
+|Underling
+|遠志, 松本, 天婦羅, 蛋花湯, 慕容喵, 柴貓, 少爺, 軍師, 喵靖山, 喵平蕊, 歐陽喵, 喵雨竹, 喵鎮南, 魚乾, 夜雨, 喵慈大師, 天喵道長, 喵掌門, 金喵護法, 小喵助, 喵一爪, 陳高, 大吟釀, 弁慶, 飛燕
+|-
+|Assistant
+|克莉絲汀, 黑胡椒牛柳, 克麗奧佩脫拉, 拿破崙, 備前長船長光, 卡美哈梅哈, 玉藻前, 賈霸, 拉布拉多, 安東尼, 加加林, 赤兔喵, 阿爾弗雷德, 萊茵哈特, 紅燒牛肉麵, 香檳王喵貝里儂, 亞森喵蘋, 喵吒三太子, 風魔喵太郎, 鯽左衛門
+|-
+|Legend
+|戰神, 健次郎, 卑彌呼, 龍王, 御靈魔, 素戔嗚尊, 海克力斯, 金剛鑽石, 礦藍寶石, 暮光之人, 戈貢佐拉, 諾貝阿爾, 成之龍, 時尚主貓, 波諾, 貓政宗, 魚干伯爵, 槌之子, 脆迪哥, 貓多夫
+|}
+
+|-|Korean=
+{| class="article-table" border="1"
+! scope="col" |Rank
+! scope="col" |Names
+|-
+|Intern
+|냥숙, 냥철, 숙자, 테츠, 춘화, 봉심, 쿠로, 삼순, 말숙, 춘향, 은실, 우바, 캐시, 스타, 철수, 참외, 철호, 효민, 파인, 애플, 럼, 봉식, 달봉, 만득, 봉남, 몽블랑, 사과, 오렌지, 감귤, 철식, 희순, 은미, 찬스, 파브, 철쭉, 지즈, 아고, 영철, 덕만, 방석, 충재, 보영, 백금, 오이, 호현, 에마, 유미, 게레, 계순, 봉숙, 금실, 순자, 수박
+|-
+|Lackey
+|심유, 원균, 재섭, 은식, 중이, 현옥, 럼, 복룡, 심토, 용배, 성희, 미지, 송이, 민규, 윤찬, 성모, 준선, 재형, 준석, 필로, 세우시, 사텐, 키나리, 갈비, 소세, 카리, 사키, 폰세, 킹, 햄
+|-
+|Underling
+|최병장, 김서방, 이부장, 된장국, 설탕, 전지현, 도련님, 현빈, 박비서, 백사장, 송지효, 채과장, 위스키, 유재석, 김민희, 김태희, 이병헌, 원빈, 가래떡, 배용준, 송중기, 이슬, 막걸리, 비어, 해바라기
+|-
+|Assistant
+|크리스티나, 윌리엄, 클레오파트라, 나폴레옹, 에디슨, 베토벤, 알렉스, 에드워드, 엘리자베스, 안토니오, 브라이언, 크리스, 알프레드, 토머스, 올리비아, 베티, 엔젤, 라이언, 제시카, 레오
+|-
+|Legend
+|진주, 오팔, 비취, 문스톤, 가넷, 사파이어, 토파즈, 다이아몬드, 에메랄드, 카넬리안, 페리도트, 루비, 아쿠아마린, 수정, 알렉산드라이트, 스피넬, 탄자나이트, 로즈쿼츠, 코랄, 시트린
+|}
+</tabber>
+
+==Item Pack==
+After each expedition, there is a chance for players to find an item pack in the field. By tapping it, the player will be given a reward and an extra option to watch online ads for extra Cat Food, Catseyes and [[Ototo Corps|materials]]. If the player declines, a [[Doge]] steals the item pack.
+
+<gallery position="center" hideaddbutton="true" bordercolor="transparent">
+ItemPack.png|Item Pack icon
+GreatFortune.png|Great Fortune icon
+TotoCatFood.jpg|Cat Food discovered
+TotoItemPack.png|Item Pack discovered
+DogeStealingCf.gif|A [[Doge]] stealing an Item Pack after the player declines the offer
+DogeNotStealingCf.gif|A Doge failing to steal a Great Fortune after the offer is declined
+</gallery>
+
+After drawing a fortune slip from the [[Cat Shrine]], a lucky player may find a "Great Fortune", which is a large Item Pack marked with [[The Cat God (Special Cat)|The Cat God]]'s darkness-concealed face. Item Packs start appearing at User Rank 1600; before that, a single can of Cat Food will be there instead.
+
+===Item Pack Drops===
+{| class="article-table" border="1"
+!Type
+!Item
+!Chance
+!Type
+!Item
+!Chance
+|-
+|Item Pack
+|1 [[Cat Food]]
+|42%
+|Great Fortune
+|1 [[Cat Food]]
+|11.2%
+|-
+|Item Pack
+|Special Catseye
+|6%
+|Great Fortune
+|Treasure Radar
+|11.1%
+|-
+|Item Pack
+|Rare Catseye
+|6%
+|Great Fortune
+|Rich Cat
+|11.1%
+|-
+|Item Pack
+|Super Rare Catseye
+|6%
+|Great Fortune
+|Leadership
+|11.1%
+|-
+|Item Pack
+|Uber Rare Catseye
+|5%
+|Great Fortune
+|Special Catseye
+|11.1%
+|-
+|Item Pack
+|Brick
+|5%
+|Great Fortune
+|Rare Catseye
+|11.1%
+|-
+|Item Pack
+|Feather
+|5%
+|Great Fortune
+|Super Rare Catseye
+|11.1%
+|-
+|Item Pack
+|Coal
+|5%
+|Great Fortune
+|Uber Rare Catseye
+|11.1%
+|-
+|Item Pack
+|Sprockets
+|5%
+|Great Fortune
+|Legend Rare Catseye
+|11.1%
+|-
+|Item Pack
+|Gold
+|5%
+|
+|
+|
+|-
+|Item Pack
+|Meteorite
+|5%
+|
+|
+|
+|-
+|Item Pack
+|Beast Bones
+|5%
+|
+|
+|
+|}
+
+==Log==
+When an expedition is completed, a log will be displayed containing messages describing events in the expedition. All expedition log lines are of the form "<character> <action> <situation>" like the following: {{/Message}} Below is a table with the different possible actions and situations in the lines (character names are listed above under Helper Names).
+
+{{/Log Messages}}
+</div>
+
+==Tips==
+*If you are not looking for certain Battle Items or Catseyes specifically, it is recommended to keep doing expeditions in the latest area to increase GAMATOTO's level quicker.
+*Save any Catamins you get for the most rewarding levels and use them only at the start after a transformation phase point, such as when you have leveled up to level 19 due to earlier stages only having very small XP rewards.
+*Sending GAMATOTO to any area that drops [[Battle Items#Treasure Radar|Treasure Radars]] while he's in a Zoned-in state can be great way to keep up a semi-constant supply of them.
+*Do not dismiss your helpers easily; the chance to find a helper is very rare and they are more valuable as helpers rather than [[Ototo Corps]] engineers. Only dismiss helpers if you are at max capacity or if you desperately need Ototo Engineers.
+*Sending GAMATOTO on 1-hour expeditions is a faster way of recruiting helpers if you are really desperate to recruit more.
+*In recovery mode, the expedition timer will not tick down unless the app is in active use.
+*For more info about item/helper chances and a chances calculator, make copy of this [https://docs.google.com/spreadsheets/d/1_4UTvktg9yiVPHjCZaiqSu2XBtRFPQReOF66sMRm9pA/edit?usp=sharing spreadsheet] (outdated, lacks data of Raisin' the Bar).
+
+==More details==
+For the exact formulas and data points referenced within this page, see this file:<br>
+[[File:Toto.pdf|300px]]
+
+==Missions==
+{{MissionTable
+|{{Mission|Recruit a Gamatoto Assistant!<br>(Discover Assistants as Gamatoto expedition rewards)|20 [[Cat Food]](s)|food|type = main}}
+}}
+
+==Existence Elsewhere==
+===[[Princess Punt Sweets Collaboration Event|Princess Punt Sweets]]===
+GAMATOTO appears in Princess Punt Sweets as a 1★ servant that is given automatically by logging in during the collab period. His ability is to heal nearby members. Intern rank helpers also appear as 3★ servants, and can be obtained by sending GAMATOTO out to explore. Their ability is to strengthen nearby members.
+
+{| style="margin:2px 0px;padding:3px;border-radius:5px;border:1px #ddd solid;width:100%;" cellspacing="0" cellpadding="1"
+|-
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:Gamatoto Servant Icon.jpg|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd; border-right:1px solid #ddd" |[[File:Gamatoto Servant Static.jpg|center|200px]]
+| style="padding:2px;border-bottom:1px solid #ddd" |[[File:Intern Servant Static.png|center|200px]]
+|-
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |GAMATOTO's icon
+| style="width:20%;padding:2px;border-right:1px solid #ddd; text-align:center" |GAMATOTO's model
+| style="width:20%;padding:2px; text-align:center" |Intern helper's model
+|}
+
+{{Gallery|GamatotoLevel1}}
+
+==Trivia==
+*GAMATOTO is revealed as Ototo's younger brother in [[Nyanko Daisensou ~Nippon Shinryaku Hiroku~]], even though Ototo's name (sounds like 弟 ''otōto'', or literally ''younger brother'') would suggest the opposite.
+*GAMATOTO was mentioned in [[Masked Cat (Special Cat)|Masked Cat]]'s description before he was added to the game, then later in [[Stone Cat (Rare Cat)|Stone Cat]]'s description and [[Burgle Boss Cat (Retired) (Special Cat)|Burgle Boss Cat (Prime)'s]] description.
+**The costume unlocked at level 50 includes the same mask that Masked Cat wears. Furthermore, Stone Cat's description states that it was found by GAMATOTO. His level 116 outfit looks to have the bag of [[Burgle Boss Cat (Retired) (Special Cat)|Burgle Boss Cat]] from [[The Burgle Cats]], and Burgle Boss Cat (Prime)'s description says his protege, Gamatoto quit, forcing him to retire.
+*The background changes depending on the actual time of day in your area. There are day, evening, and night backgrounds for each phase.
+*If you decline to collect an Item Pack, a [[Doge]] will come to snatch the Item Pack and run away.
+**If you decline the offer of a Great Fortune, the Doge will still come, stop for a split second, then run away, leaving the bag untouched.
+*On occasion, a [[Cat (Normal Cat)|Cat]] can be seen in the tent.
+*Raisin' the Bar may have been inspired by [https://dragon-quest.org/wiki/Patty%27s_Party_Planning_Place Patty's Party Planning Place], a bar where players can recruit new party members in the ''Dragon Quest'' series. The barkeep cat in Raisin' the Bar also has a similar hairstyle and hair color to [https://dragon-quest.org/wiki/Patty Patty] herself.
+*The scenario "in the Chamber of Secrets." refers to the [[wikia:harrypotter:Chamber of Secrets|Chamber of Secrets]] from the ''Harry Potter'' series.
+*The scenario "with a lewd kappa." refers to the ''[[wikipedia:Kappa (folklore)|kappa]]'', an amphibious, reptilian, humanoid ''yōkai'' with a penchant for cucumbers; this ''yōkai'' would later make an in-game appearance as [[Kappy Jr.]]
+*Some of the possible [[Cat Shrine|Cat Fortunes]] are "Gamatoto will strike oil!" and "Gamatoto will dig it up!"
+*His level 19 outfit looks somewhat like [[Hermit Cat (Special Cat)|Grandmaster Cat]].
+*His level 67 outfit is based on an ''[[wikipedia:Oni|oni]]'', a type of ''[[wikipedia:Yōkai|yōkai]]'' often depicted with one or more horns and a ''[[wikipedia:Kanabō|kanabō]]''.
+*His level 120 outfit looks somewhat like King Cat from [[Battle Cats Quest]].
+*[[wikipedia:Inari Ōkami|Inari Ōkami]], or just Inari, is the Japanese ''[[wikipedia:Kami|kami]]'' of foxes, fertility, rice, agriculture, industry, and worldly success, to whom many have made offerings at her own [[wikipedia:Inari shrine|shrines]].
+*The level MEGABANK is likely based on [[wikipedia:London|London]], due to featuring the [[wikipedia:122 Leadenhall Street|Leadenhall building]].
+*The rarity of the helpers corresponds with the rarity of the cat units, specifically the color of the catseyes for each rarity. They as follows:
+**Intern - Normal
+**Lackey - Rare
+**Underling - Super Rare
+**Assistant - Uber Rare
+**Legend - Legend Rare
+
+{{BC Navigation}}
+[[Category:Game Features]]
+[[Category:Missing picture]]

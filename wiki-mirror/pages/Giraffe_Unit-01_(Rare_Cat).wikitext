@@ -1,0 +1,125 @@
+'''Giraffe Unit-01''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating any stage in [[Neon Genesis Evangelion Collaboration Event#The 9th Angel Strikes!|The 9th Angel Strikes!]] during the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Cat Info
+|ID = 404
+|rarity = RR
+|name1 = Giraffe Unit-01
+|name2 = Giraffe Unit-02
+}}
+
+==Evolution==
+Evolves into '''Giraffe Unit-02''' at level 10.
+
+==Strategy/Usage==
+Giraffe Unit-01 has little use outside of the early game, where he can help rush some stages alongside [[Cow Cat (Normal Cat)|Giraffe Cat]], but that's about it. He can also be used as a gap closer that is better than Giraffe Cat, but worse than [[Crazed Cow Cat (Super Rare Cat)|Crazed Giraffe Cat]].
+
+The most use this collab cat has is boosting [[User Rank]] and being a {{4c}} replacement for Giraffe Cat.
+
+{{Job|Classification = User Rank Dump & Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 404
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni404 f00.png
+|Image2 = Uni404 c00.png
+|Name1 = Giraffe Unit-01
+|Desc1 = A prototype Giraffe Cat-type weapon.<br>Escaped with only the helmet equipped.<br>Might survive a lethal strike.
+|Name2 = Giraffe Unit-02
+|Desc2 = Received a new production-model<br>helmet for mightier headbutts. Still on<br>the run. Might survive a lethal strike.
+|Name1 (JP) = ネコキリン初号機
+|Desc1 (JP) = エヴァに憧れて開発した汎用キリン型決戦兵器<br>建造中に脱走したため頭部だけ完成している<br>まれに生き残る能力を持つ
+|Transl1 (JP) = General-purpose giraffe-type decisive battle weapon designed after Eva.<br>Only the head is complete because it escaped during construction.<br>Rarely has the ability to survive.
+|Name2 (JP) = ネコキリン２号機
+|Desc2 (JP) = 気の強いエヴァパイロットに<br>頭をすげ替えられたキャラクター<br>引き続き逃走中。まれに生き残る能力を持つ
+|Transl2 (JP) = A strong-willed Eva pilot.<br>Character with his head replaced<br>continues on the run. Rarely has the ability to survive.
+|Name1 (TW) = 長頸鹿貓初號機
+|Desc1 (TW) = 嚮往EVA而製造出的泛用長頸鹿型決戰兵器<br>由於在開發過程中脫逃所以只完成了頭部<br>死前有機會存活
+|Name2 (TW) = 長頸鹿貓2號機
+|Desc2 (TW) = 被某高傲強勢的EVA駕駛員<br>給換掉了頭部的角色<br>繼續脫逃中。死前有機會存活
+|Name1 (KR) = 기린 고양이 초호기
+|Desc1 (KR) = 에바를 동경하여 개발한 범용 기린형 결전 병기<br>제조 중 탈주하여 머리 부분만 완성되었다<br>드물게 살아남는 능력을 가졌다
+|Name2 (KR) = 기린 고양이 2호기
+|Desc2 (KR) = 기가 쎈 에바 파일럿이 머리를 바꿔놓았다<br>여전히 탈주 중<br>드물게 살아남는 능력을 가졌다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Giraffe Unit-01
+|Normal Base HP = 450
+|Normal Base AP = 13
+|Normal Range = 150
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 33
+|Normal KB = 5
+|Normal Cost = 500
+|Normal Recharge = 270
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Evolved Name = Giraffe Unit-02
+|Evolved Base HP = 450
+|Evolved Base AP = 13
+|Evolved Range = 150
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 33
+|Evolved KB = 5
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Survive}} 50% chance to [[Survive|survive]] a lethal strike
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 13 damage<br>(39 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 33
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 9 ~ 2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 220 damage<br>(660 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 220 damage<br>(660 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 33
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni404 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/405.html
+
+----
+{{CatNav|Gendo & Fuyutsuki Cats|Kaworu & Cat}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Lethal Strike Resistant Cats]]

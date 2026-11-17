@@ -1,0 +1,203 @@
+'''Bronze Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating [[Attack on D-Cyclone (Expert)|Heaven of Darkness]]. It was added in [[Version 2.0 Update#Version 2.0.5 Update|Version 2.0.5]]. [[True Form]] added in [[Version 7.4 Update|Version 7.4]] increases attack power, range, grants full backswing and knockback chance at the cost of a longer delay between attacks. In [[The Battle Cats POP!]], Bronze Cat is obtainable when rolling the [[Cat Capsule|Rare Cat Capsule]] after clearing [[Moon (Empire of Cats)|Moon]] in Chapter 1. In [[The Battle Cats Unite!]], she is unlocked when beating [[Broton (Cats of the Cosmos)|Broton]].
+
+{{Cat Info
+|ID = 60
+|rarity = RR
+|name1 = Bronze Cat
+|name2 = Michelangelo Cat
+|name3 = Quizmaster Cat
+}}
+
+==Evolution==
+Evolves into '''Michelangelo Cat''' at level 10.
+
+Evolves into '''Quizmaster Cat''' when obtained from the [[NEO Darkness Heaven]] (cannot drop in the first stage but guaranteed on the second) and is level 20 or above.
+
+==Strategy/Usage==
+Bronze Cat is a decent support unit against [[:Category:Metal Enemies|Metals]] in the early-game, when you lack alternatives. She can be very useful against tough Metal enemies like [[Metal Cyclone]] or [[Sir Metal Seal]], and has the health to tank one or two hits from tougher Metal enemies. Overall, however, [[Clockwork Cat (Rare Cat)|Clockwork Cat]] and [[Drumcorps Cat (Rare Cat)|Drumcorps Cat]] are still more reliable. Aside from reliability, knockbacks are a double-edged sword against Metal enemies. On the one hand, the ability to keep them from advancing is generally nice, especially due to the lack of Metal backliners. However, there are some situations where doing so is disadvantageous, such as knocking a potential target out of [[Cheerleader Cat (Super Rare Cat)|Waitress Cat]]'s range while she goes through her long attack animation, or knocking a more threatening enemy behind more annoying peons such as [[Metal Doge]]. As [[:Category:Critical Hit Cats|Critical Hitters]] already tend to rely on heavy luck, Bronze Cat may end up being counterproductive instead.
+
+Bronze Cat's [[Cat Combo]]s can see some usage in Metal stages, where [[Eye of the Storm (Combo)|Eye of the Storm]] and [[Art History (Combo)|Art History]] can raise the effective HP of [[Rope Jump Cat (Rare Cat)|Noodle Cats]] and [[Rocker Cat (Rare Cat)|Artist Cat]] respectively. Otherwise Art History finds usage in helping many great tanks/meatshields like [[Wushu Cat (Rare Cat)|Sifu Cat]] and [[Sushi Cat (Super Rare Cat)|Fried Shrimp Cat]].
+
+==='''True Form'''===
+Quizmaster Cat gains 30 more range, more attack power, and an extra 10% chance to knockback Metal enemies but has a significantly slower attack rate. The range buff can be helpful in some certain cases, like now being able to outrange [[Super Metal Hippoe]], but the attack buff can be ignored as this unit is not meant for general use, and the attack rate penalty outweighs the marginally higher activation chance, greatly reducing its consistency.
+
+{{Job|Classification = Crowd-Controller & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Art History|"Resistant" Effects Up (Sm)|Artist Cat|Michelangelo Cat|jpname=美術教室}}
+|{{CatCombo|Eye of the Storm|Unit Defense Up (M)|Bronze Cat|Rope Jump Cat|Space Cat|Clockwork Cat|Hoop Cat|jpname=暴風一家}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 60
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni060 f00.png
+|Image2 = Uni060 c00.png
+|Image3 = Uni060 s00.png
+|Name1 = Bronze Cat
+|Desc1 = A sturdy meatshield forged from solid metal,<br>able to hold his own in any fistfight.<br>Area attacks might Knockback Metal enemies.
+|Name2 = Michelangelo Cat
+|Desc2 = Literally embodied their own work to master the<br>art of sculpting, still delivering heavy blows with ease.<br>Area attacks might Knockback Metal enemies.
+|Name3 = Quizmaster Cat
+|Desc3 = Has the longest correct-answer streak in trivia history,<br>thanks to an unheard-of series of softball questions.<br>Area attacks might Knockback Metal enemies.
+|Name1 (JP) = ネコブ・ロンズ (Neko Buronzu, Bronze Cat)
+|Desc1 (JP) = 体力を多く備えた盾用のキャラ<br>攻撃力もけっこうある感じ<br>たまにメタルな敵をふっとばす(範囲攻撃)
+|Transl1 (JP) = Shield-type character equipped with high defense.<br>Its attack power can also be useful at times.<br>Occasionally knocks back Metal enemies (Area Attack)
+|Name2 (JP) = 芸術のネコスタチュ (Geijutsu no Neko Sutachu, Cat Art Statue)
+|Desc2 (JP) = かの有名な彫像のフリをしたアートネコ<br>攻撃力もけっこうある感じ<br>たまにメタルな敵をふっとばす(範囲攻撃)
+|Transl2 (JP) = Art Cat who pretends to be that famous statue.<br>Its attack power can also be useful at times.<br>Occasionally knocks back Metal enemies (Area Attack)
+|Name3 (JP) = ネコクイズ王 (Neko Kuizu-Ō, Quiz King Cat)
+|Desc3 (JP) = 長寿クイズ番組を支えてきた頭脳派ネコ<br>最近はおバカタレントの台頭で人気が落ち気味<br>たまにメタルな敵をふっとばす(範囲攻撃)
+|Transl3 (JP) = Brainy Cat who supports a long-running quiz show.<br>Popularity has been declining due to the stupid-talent-boom.<br>Occasionally knocks back Metal enemies (Area Attack)
+|Name1 (TW) = 銅像貓
+|Desc1 (TW) = 具有很強體力的肉盾角色<br>攻擊力似乎也很強<br>有時候打飛鋼鐵敵人（範圍攻擊）
+|Name2 (TW) = 行動藝術貓
+|Desc2 (TW) = 假扮成某個知名雕像的藝術貓<br>攻擊力似乎也很強<br>有時候打飛鋼鐵敵人（範圍攻擊）
+|Name3 (TW) = 貓咪猜謎王
+|Desc3 (TW) = 長青節目"猜謎王"的固定班底聰明貓咪<br>最近因笨蛋藝人很夯導致人氣度有點下滑<br>有時候打飛鋼鐵敵人（範圍攻擊）
+|Name1 (KR) = 고양이브・론즈
+|Desc1 (KR) = 고체력 방어용 캐릭터<br>공격력도 꽤 있는 편<br>가끔 메탈 적을 날려버린다 (범위 공격)
+|Name2 (KR) = 예술의 고양이스테츄
+|Desc2 (KR) = 그 유명한 조각상인 척하고 있는 아트 고양이<br>공격력도 꽤 있는 편<br>가끔 메탈 적을 날려버린다 (범위 공격)
+|Name3 (KR) = 퀴즈왕 고양이
+|Desc3 (KR) = 장수 퀴즈 프로를 지키고 있는 뇌섹파 고양이<br>최근 신인 바보 탤런트의 활약으로 인기 주춤<br>가끔 메탈 적을 날려버린다 (범위 공격)
+|Name1 (Switch) = Bronze Cat
+|Desc1 (Switch) = Acts as a shield using her great health,<br>and very decent offensive ability.<br>Might Knockback Metal enemies. (Area Attack)
+|Name2 (Switch) = Michelangelo Cat
+|Desc2 (Switch) = Sucked into the world of art<br>and very decent offensive ability.<br>Might Knockback Metal enemies. (Area Attack)
+|Name1 (3DS) = Bronze Cat
+|Desc1 (3DS) = Defensive cat w/ ridiculous health<br>and very decent offensive ability.<br>Knockback vs Metal enemies (Area Attack)
+|Name2 (3DS) = David Cat
+|Desc2 (3DS) = Sucked into the world of art<br>sculpted itself into a masterpiece.<br>Knockback vs Metal enemies (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Bronze Cat
+|Normal Base HP = 600
+|Normal Base AP = 98
+|Normal Range = 160
+|Normal Foreswing = 12
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 50
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 420
+|Normal Recharge = 566
+|Normal Attack Type = Area
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Michelangelo Cat
+|Evolved Base HP = 900
+|Evolved Base AP = 128
+|Evolved Range = 160
+|Evolved Foreswing = 12
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 50
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 420
+|Evolved Recharge = 566
+|Evolved Attack Type = Area
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Knockback}} 20% chance to [[Knockback|knockback]] target traits
+|True Name = Quizmaster Cat
+|True Base HP = 900
+|True Base AP = 188
+|True Range = 190
+|True Foreswing = 27
+|True Attack Cooldown = 0
+|True Attack Length = 142
+|True Speed = 8
+|True KB = 2
+|True Cost = 420
+|True Recharge = 566
+|True Attack Type = Area
+|True Targets = Metal
+|True Abilities = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50<br>Lv.40<sup>BCU!</sup>
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 98 damage<br>(57.65 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 12f <sup>0.4s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Normal-Recharge Time = 18.87 ~ 10.07 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 1,665 damage<br>(979.41 DPS)
+|val-Evolved-Health = 15,300 HP
+|val-Evolved-Attack Power = 2,175 damage<br>(1,279.41 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 51f <sub>1.7 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 12f <sup>0.4s</sup><br>(38f <sup>1.27s</sup> backswing)
+|val-Evolved-Recharge Time = 18.87 ~ 10.07 seconds
+|val-True-Health = 15,300 HP
+|val-True-Attack Power = 3,195 damage<br>(675 DPS)
+|val-True-Attack Range = 190
+|val-True-Attack Frequency = 142f <sub>4.73 seconds</sub>
+|val-True-Movement Speed = 8
+|val-True-Knockback = 2 times
+|val-True-Attack Animation = 27f <sup>0.9s</sup><br>(115f <sup>3.83s</sup> backswing)
+|val-True-Recharge Time = 18.87 ~ 10.07 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni060 f00}}
+
+==Trivia==
+*Prior to being made obtainable in [[Version 2.2 Update#Version 2.2.3 Update|Version 2.2.3]], Bronze Cat had completely different stats. At Lv.30, it had 10,200 health, 6,460 attack, 7.03 second attack frequency, 110 range, 8 speed, 1 knockback, 300 cost, 2-second recharge and [[Base Destroyer]]. Both forms had the same stats, and it could not Knockback Metal.
+**These old stats may explain why Bronze Cat is somewhat confusingly called a meatshield in its description.
+*[[Version 2.3 Update#Version 2.3.1 Update|Version 2.3.1]] increased Bronze Cat's range from 140 to 160.
+*Prior to [[Version 4.7 Update|Version 4.7]], Bronze Cat was a part of another [[Cat Combo]] called [[Precious Metals (Removed Combo)|Precious Metals]].
+*Prior to [[Version 15.7 Update|Version 15.7]], Bronze Cat's descriptions read as follows:
+<pre>Bronze Cat
+A good defensive cat with ridiculous health
+and very decent offensive ability.
+Might knockback Metal enemies (Area Attack)</pre>
+<pre>Michelangelo Cat
+Sucked into the world of art
+and mastered everything about sculpting
+Might knockback Metal enemies (Area Attack)</pre>
+<pre>Quizmaster Cat
+Has the longest winning streak on a popular
+quiz show, although the questions are pretty easy.
+Might knockback Metal enemies (Area Attack)</pre>
+**The line, "although the questions are pretty easy," in Quizmaster Cat's original description can also be applied to ''Panel Quiz Attack 25''. In fact, it became a meme because of how many easy questions the original Colombia Poser got wrong despite ultimately winning.
+*During the [[Anniversary/9th Year|9th Anniversary]] event, Quizmaster Cat could be seen by opening the doors in the [[Cat Base Menu]].
+*Michelangelo Cat is based off of the ''[[wikipedia:Dying Slave|Dying Slave]]'', a sculpture created by [[wikipedia:Michelangelo|Michelangelo]], whom the Cat is also named after.
+*The triumphant pose Bronze Cat and Quizmaster Cat strike after attacking is the [https://knowyourmeme.com/photos/443657-colombia-pose Colombia Pose], a Japanese [https://knowyourmeme.com/memes/colombia-pose Internet meme] which originated from the quiz show ''Panel Quiz Attack 25''. The blue button turning red in Quizmaster Cat's animation is done in Japanese-style quiz/game shows to symbolize that the person has answered correctly. Thus, the cat is triumphing.
+*Quizmaster Cat's overall attire is reminiscent of [[wikipedia:Uncle Sam|Uncle Sam]], a personification of the United States government. The colour theme supports this in a way.
+*In [[The Battle Cats POP!]], Michelangelo Cat is called David Cat, referencing the Michelangelo sculpture ''[[wikipedia:David (Michelangelo)|David]]''.
+*In [[The Battle Cats Unite!]], Bronze Cat's description states that she is female.
+
+==Reference==
+*https://battlecats-db.com/unit/061.html
+
+----
+{{CatNav|Baby Cat|Sushi Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats requiring Awakening for True Form]]

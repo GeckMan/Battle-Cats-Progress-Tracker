@@ -1,0 +1,111 @@
+:''This article is about the enemy. For the Cat Unit, see [[Elder Mask Doron (Special Cat)]].''
+'''Elder Flame Doron''' (古神炎ドロン, ''Ko Kamien Doron'', '''Ancient God-Flame Doron''') is a [[:Category:Relic Enemies|Relic]] enemy introduced in [[The Face of God]], the final stage in [[Ancient Forest Labyrinth]]. He is the enemy version of [[Elder Mask Doron (Special Cat)|Elder Mask Doron]]. He was added in [[Version 10.6 Update|Version 10.6]].
+
+{{Enemy Info
+|name = Elder Flame Doron
+|image = E 551.png
+|money drop = 2,222¢ - 8,776¢
+|first appearance = '''UL''': [[The Face of God|Sub-chapter 36 - The Face of God]]
+|latest appearance = '''UL''': [[Atonement for Sin|Sub-chapter 48 - Atonement for Sin]]
+}}
+
+==Enemy==
+A spectral being who cowers behind the visage of a fearsome deity. Too shy to be seen for long without the mask, he leaves the stage after finishing a single attack, but has extreme health, high attack power, above-average standing range, and an [[Omni Strike]] that reaches to -1,000~600 range, ensuring he'll always deliver devastation whenever he does appear. Along with that, he has a 100% chance to create Lv.8 [[Surge Attack]]s between 500 and 1,000 range, can [[Weaken|weaken]] all Cat Units hit to 1% for 40 seconds and is immune to most effects. Since he only attacks once, he is used as support for other enemies that will end up being the real danger.
+
+Despite being a Relic enemy, he doesn't inflict Curse.
+
+==Strategy==
+His attacks are devastating and hard to prevent, but there are ways to mitigate the negative effects. If you spam replaceable units and fight far from the [[Cat Base]], you will lose ground, but you can always recuperate and try to gain it back before the next Doron. Making him miss and thus avoiding the surge is not impossible, but it requires a unit to trigger his attack, then other enemies must push said unit back or kill it and not let other cats close before Doron is done with the attack, which is nearly impossible to get consistently, or without losing more ground than by taking the hit. [[Ototo Corps|Curseblast]], if maxed, can be timed to hit '''just before''' Doron's attack hits and will result in the whole surge not applying weaken, but the duration of Curseblast is just enough, so it needs to be very precise. If this does not suffice, using [[:Category:Cats with Surge Immunity|Surge-immune cats]] is equally effective, as they are immune to the weaken effect by proxy since the surge will not hit them. However, be wary of his initial attack; in this case, [[:Category:Cats with Weaken Immunity|Cats with Weaken Immunity]] are still ideal.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 551
+|Type = [[:Category:Relic Enemies|Relic]]
+|Image1 = Enemy icon 551.png
+|Name1 = Elder Flame Doron
+|Desc1 = Deep within the Ancient Forest, the<br>Doron tribe lives hidden behind masks<br>blessed by the gods. Breaking the mask<br>releases a lethal blast of divine power.
+|Name1 (JP) = 古神炎ドロン (Ko Kamien Doron, Ancient God-Flame Doron)
+|Desc1 (JP) = 森の奥深くに暮らす内気なドロン族。<br>部族に受け継がれている古代神の力を<br>宿したお面を被ることで真のパワーを<br>発揮し、必殺の一撃を繰り出す。
+|Transl1 (JP) = The ever-shy Doron tribe dwells deep within the forest.<br>The tribe wields powers inherited from ancient gods via masks,<br>which they prove by dishing out lethal damage.
+|Name1 (TW) = 古神炎多龍
+|Desc1 (TW) = 生活在森林深處內向的多龍族。<br>戴著寄宿有部族流傳下來的古代神力量<br>的面具得以發揮真正的力量，<br>發出必殺一擊。
+|Name1 (KR) = 고대 화염신 드론
+|Desc1 (KR) = 숲속 깊은 곳에 사는 샤이한 드론 족<br>부족에서 대대로 이어받은 고대 신의 능력을 가진<br>가면을 쓰면 진정한 파워를 발휘하며<br>반드시 죽음의 일격을 내지른다
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Uncanny Legends]]===
+*Stage 36-6: [[The Face of God]]
+*Stage 48-3: [[Crown of Vanity]]
+*Stage 48-5: [[Atonement for Sin]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Elder Flame Doron
+|Health = 2222222
+|Attack Power = 22222
+|Attack Range = 400
+|Attack Type = Area
+|Time Between Attacks = 132
+|Movement Speed = 20
+|Knockback = 1
+|Foreswing = 76
+|Backswing = 56
+|Kamikaze = true
+|Ability = {{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -1,000~600)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 1% for 1,200f <sub>40 seconds</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 8 [[Surge Attack]] between 500 and 1,000 range<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]] and [[Immune to Surge|Surge]]
+|Element = Relic
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor = transparent>
+551 e.png|Elder Flame Doron's spritesheet
+Green fire circle.gif|Elder Flame Doron's animations
+Doron missing.jpg|Elder Flame Doron missing his icon in [[Version 12.0 Update|Version 12.0]]
+</gallery>
+
+==Trivia==
+*''Doron'' (どろん) is the Japanese onomatopoeia for a person or creature vanishing, such as a ninja concealing themselves with a smoke screen. The closest in English would be "poof". In this case, it literally refers to how Elder Flame Doron disappears for good after attacking.
+*His Japanese name, 古神炎ドロン ''Ko Kamien Doron'', may contain a subtle pun: 神炎 ''kamien'' ("god-flame") sounds almost like 仮面 ''kamen'' (mask).
+*When unmasked, he looks fairly similar to a [[mariowiki:Boo|Boo]] from the ''Mario'' franchise.
+*He is currently the only [[:Category:Relic Enemies|Relic]] enemy who doesn't inflict the curse effect.
+*He and [[Wafer Cat XL (Enemy)]] are the only enemies to have the self-destructive ability.
+**He is currently the only self-destructive enemy to appear outside of [[Event Stages]].
+*He is the first non-stationary enemy to be immune to Surges.
+*He is tied with [[Summerluga (Uber Rare Cat)|Fabulous Pasalan]] for the highest Surge level and is tied with [[Freshman Cat Jobs (Super Rare Cat)|Freshman Cat Jobs]] and the [[Minna de Nyanko Daisensou|PC exclusive]] unit [[Natsu Mikan (PC Uber Rare Cat)|Natsu Mikan]] for the strongest weaken of any character in the game, reducing unit damage to 1% of what it was originally.
+*In the sub-chapter preview for [[Ancient Forest Labyrinth]] and [[Humanity Catified]], his icon is replaced with an image error icon. This was later fixed in [[Version 12.6 Update|Version 12.6]].
+*He is tied with [[EVA Unit-13 (Enemy)|EVA Unit-13]] for the enemy with the highest number of [[Special Abilities]] at 10.
+
+==Reference==
+*https://battlecats-db.com/enemy/553.html
+
+----
+{{EnemyNav|Shin Godzilla|Aku Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Uncanny Legends Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Relic Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Kamikaze Enemies]]
+[[Category:Surge Attack Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Mythic Bosses]]

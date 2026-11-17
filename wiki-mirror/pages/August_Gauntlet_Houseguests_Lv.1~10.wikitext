@@ -1,0 +1,189 @@
+{{EnemiesAppearing|Zroco|Zomboe|Ghost Doge|Ghost Snache|Ghost Baa Baa|Dashing Face|Lord Enma}}
+
+{{Stage Info
+|stage name = [[File:Rc001.png]]
+[[File:Mapsn021 00 a en.png]]
+|stage location = [[File:Mapname021 a en.png]]
+|enemies = {{Magnification|Zroco|0
+|Zomboe|0
+|Ghost Doge|0
+|Ghost Snache|0
+|Ghost Baa Baa|0
+|Dashing Face|0}}
+|boss = {{Magnification|Lord Enma|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,500
+|max enemies = 8
+|jpname = Homecoming  Lv.X
+|script = 帰省 Lv.X
+|romaji = Kisei  Lv. X
+|event = [[August Gauntlet]]
+|event-chapter = [[August Gauntlet]]
+|require = Clear [[Ghostly Houseguests (Monthly Event)|Ghostly Houseguests]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*5 [[Zroco]]s spawn after 2 seconds<sup>60f</sup>, delay 5~10 seconds<sup>150~300f</sup>.
+*2 [[Zomboe]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~26.67 seconds<sup>400~800f</sup>.
+*Infinite [[Ghost Doge|Ecto Doges]] spawn after 13.33 seconds<sup>400f</sup>, delay 4~12 seconds<sup>120~360f</sup>.
+*Infinite [[Ghost Snache|Ecto Snaches]] spawn after 20 seconds<sup>600f</sup>, delay 8~16 seconds<sup>240~480f</sup>.
+*Infinite [[Ghost Baa Baa|Ecto Baa Baas]] spawn after 26.67 seconds<sup>800f</sup>, delay 12~20 seconds<sup>360~600f</sup>.
+*1 [[Dashing Face]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Lord Enma]] spawns as the boss after 3.33 seconds<sup>100f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Houseguests Lv.
+! colspan="7" style="text-align: center;" |Strength magnifications
+! rowspan="2" scope="col" style="text-align: center;" |Energy
+Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Zroco]]
+! scope="col" |[[Zomboe]]
+! scope="col" |[[Ghost Doge]]
+! scope="col" |[[Ghost Snache]]
+! scope="col" |[[Ghost Baa Baa]]
+! scope="col" |[[Dashing Face]]
+![[Lord Enma]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|50%
+|50%
+|400%
+|400%
+|400%
+|300%
+|100%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|61%
+|61%
+|578%
+|578%
+|578%
+|339%
+|139%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|72%
+|72%
+|756%
+|756%
+|756%
+|378%
+|178%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|83%
+|83%
+|934%
+|934%
+|934%
+|417%
+|217%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|94%
+|94%
+|1,112%
+|1,112%
+|1,112%
+|456%
+|256%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|105%
+|105%
+|1,290%
+|1,290%
+|1,290%
+|495%
+|295%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|116%
+|116%
+|1,468%
+|1,468%
+|1,468%
+|534%
+|334%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|127%
+|127%
+|1,646%
+|1,646%
+|1,646%
+|573%
+|373%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|138%
+|138%
+|1,824%
+|1,824%
+|1,824%
+|612%
+|412%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|150%
+|150%
+|2,000%
+|2,000%
+|2,000%
+|650%
+|450%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+Lord Enma is obviously the center of attention but don't let that fool you. The real threat is Dashing Face, Enma is just the support. The cat limit restriction makes this Face extremely annoying to fight since the main way to deal with Dashing Face is to meatshield. This gives you one of two options: attack it with brute force, or crowd-control it. If you happen to have [[Driller Cat (Super Rare Cat)|Driller Cat]], use it. [[Lifeguard Cats (Super Rare Cat)|Lifegaurd Cats]] can also work. For simply brute forcing it the old fashioned way, use a good nuker. [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] or [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] will work well if used correctly. Note that you can still meatshield a little, but mind the deploy limit. Secondary meatshields, like [[Brainwashed Tank Cat (Super Rare Cat)|Brainwashed Wall Cat]] and [[Ancient Egg: N001 (Special Cat)|Haniwa Cat]], will work well. As for lord enma, a ranged anti red nuker (like [[Pai-Pai (Uber Rare Cat)|Pai-Pai]]) will do just fine.
+
+And then, there's the peons. The ghosts can all be ignored, however the Zombies can cause a problem if left unchecked. Zomboe can burrow behind your cats after Enma and Dashing Face are dead, and move to your base. If this happens, deploy something that can quickly kill them. Unfortunately, the deploy limit can occasionally prevent this. Try to not reach the deploy limit after Dashing Face is dead so you can send a [[Zombie Killer]] in case this happens.
+
+==Reference==
+*https://battlecats-db.com/stage/s24021.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

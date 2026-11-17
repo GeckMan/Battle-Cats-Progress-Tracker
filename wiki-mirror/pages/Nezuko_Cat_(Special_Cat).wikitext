@@ -1,0 +1,107 @@
+'''Nezuko Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a Stamp Reward during the [[Demon Slayer: Kimetsu no Yaiba Collaboration Event]]. She was added in [[Version 15.1 Update#Version 15.1.1 Update|Version 15.1.1]].
+
+{{Cat Info
+|ID = 849
+|rarity = EX
+|name1 = Nezuko Cat
+|name2 = Nezuko Cat CC
+}}
+
+==Evolution==
+Evolves into '''Nezuko Cat CC''' at level 10.
+
+==Strategy/Usage==
+Nezuko Cat's different forms have slightly different stats between them, but this gimmick falls flat once you realize that most [[:Category:Floating Enemies|Floating enemies]] are either outranged by both forms, or outrange both forms. This means that for most purposes, the Normal Form will perform better due to a quicker attack rate and marginally higher health in exchange for a little bit of range.
+
+As for her actual usage, it is limited at best. Better alternatives for crowd-controlling Floating enemies exist, such as [[Bishop Cat (Rare Cat)|Sanzo Cat]] for slowing them or [[Shaman Cat (Rare Cat)|Necro-Dancer Cat]] for freezing, though her Area Attack makes her at least a little better than [[Fortune Teller Cat (Rare Cat)|Doctor Cat]]. She is best used against [[Teacher Bun Bun]] in [[Empire of Cats]] Chapter 3's [[Moon (Empire of Cats)|Moon]] and some easier Cyclone stages if obtained early on, and promptly forgotten about afterwards.
+
+{{Job|Classification = User Rank Dump & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 849
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni849 f00.png
+|Image2 = Uni849 c00.png
+|Name1 = Nezuko Cat
+|Desc1 = Believes itself a demon after oversleeping and waking<br>after sunset. Applies sunblock to its exposed leg.<br>Area attacks might Knockback Floating enemies.
+|Name2 = Nezuko Cat CC
+|Desc2 = Admires a girl who protects her brother with her life.<br>An only child looking for a brother Cat to protect.<br>Area attacks might Knockback Floating enemies.
+|Name1 (JP) = ネコ禰󠄀豆子 (Neko Nezuko, Nezuko Cat)
+|Desc1 (JP) = 昼夜逆転生活を送るうち、自分を鬼だと思い始めたネコ<br>箱から出ている足には日焼け止めを塗っている<br>たまに浮いてる敵をふっとばす(範囲攻撃)
+|Transl1 (JP) = Living its life awake at night and asleep during the day, this Cat began to think of itself as a demon<br>Applies sunscreen to its legs sticking out of the box<br>Occasionally knocks back Floating enemies (Area Attack)
+|Name2 (JP) = ネコ禰󠄀豆子CC (Neko Nezuko Shīshī, Nezuko Cat CC)
+|Desc2 (JP) = 鬼となっても強い想いで兄を守る少女に憧れるネコ<br>一人っ子なので相棒となる兄っぽいネコを探している<br>たまに浮いてる敵をふっとばす(範囲攻撃)
+|Transl2 (JP) = A Cat admiring a girl who, even after becoming a demon, protects and cares strongly for her older brother<br>Since it's an only child, it's looking for an older brother-like Cat to be its partner<br>Occasionally knocks back Floating enemies (Area Attack)
+|Name1 (TW) = 禰󠄀豆子貓
+|Desc1 (TW) = 過著日夜顛倒的生活而漸漸以為自己是鬼的貓咪<br>為了避免箱子外的腳曬傷，有特地塗防曬油<br>有時候可以打飛飄浮敵人(範圍攻擊)
+|Name2 (TW) = 禰󠄀豆子貓CC
+|Desc2 (TW) = 崇拜變成了鬼也要守護哥哥之少女的貓咪<br>因為沒有兄弟姊妹，正在尋找能飾演哥哥的貓咪<br>有時候可以打飛飄浮敵人(範圍攻擊)
+|Name1 (KR) = 고양이 네즈코
+|Desc1 (KR) = 밤낮이 바뀐 생활을 하다 보니 자기가 혈귀인 줄 아는 고양이<br>상자에서 삐져나온 다리에는 선크림을 발랐다<br>가끔 떠있는 적을 날려버린다 (범위 공격)
+|Name2 (KR) = 고양이 네즈코CC
+|Desc2 (KR) = 혈귀가 되어서도 오빠를 지키는 소녀를 동경하는 고양이<br>외동이라서 오빠가 되어 줄 고양이를 찾고 있다<br>가끔 떠있는 적을 날려버린다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 390¢
+*Chapter 2: 585¢
+*Chapter 3: 780¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nezuko Cat
+|Normal Base HP = 620
+|Normal Base AP = 50
+|Normal Range = 220
+|Normal Foreswing = 5
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 51
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 390
+|Normal Recharge = 520
+|Normal Attack Type = Area
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Evolved Name = Nezuko Cat CC
+|Evolved Base HP = 460
+|Evolved Base AP = 100
+|Evolved Range = 300
+|Evolved Foreswing = 10
+|Evolved Attack Cooldown = 129
+|Evolved Attack Length = 41
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 390
+|Evolved Recharge = 520
+|Evolved Attack Type = Area
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Knockback}} 40% chance to [[Knockback|knockback]] target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni849 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/850.html
+
+----
+{{CatNav|Tanjiro Cat|Fuma Kotaro}}
+----
+
+{{Demon Slayer}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Knockback ability]]

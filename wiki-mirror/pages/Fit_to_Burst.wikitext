@@ -1,0 +1,63 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Zroco|Inky Doge|Clyde Gory|Znache|Zir Zeal|Blinky Kory}}
+'''Fit to Burst''' is the 10th and final stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn272 09 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 200
+|enemy castle hp = 500,000 HP
+|enemies = {{Magnification|Zroco|200%
+|Inky Doge|10,000%
+|Clyde Gory|3,200%
+|Znache|200%
+|Zir Zeal|200%}}
+|boss = {{Magnification|Blinky Kory|400%}}
+|enemies2 = {{Magnification|Zroco|300%
+|Inky Doge|15,000%
+|Clyde Gory|4,800%
+|Znache|300%
+|Zir Zeal|300%}}
+|boss2 = {{Magnification|Blinky Kory|600%}}
+|score reward = '''6,200''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +3<br>
+'''3,800''': 200,000 XP<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 6,000 XP
+|width = 5,500
+|max enemies = 15
+|jpname = I Can't Eat Anymore
+|script = もう食べられない
+|romaji = Mō Taberarenai
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★8
+|prev stage = [[Pac-Dots or Cat Food?]]
+|next stage = N/A
+}}
+
+==Battleground==
+*3 [[Zroco]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Inky Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Clyde Gory]] spawns after 40 seconds<sup>1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Blinky Kory]] spawns as the boss.
+**Infinite [[Znache]]s spawn, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+**2 [[Clyde Gory|Clyde Gories]] spawn after 3.33 seconds<sup>100f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+**3 [[Zroco]]s spawn after 6.67 seconds<sup>200f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+**Infinite [[Inky Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Zroco]]s spawn after 20 seconds<sup>600f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**1 [[Clyde Gory]] spawns after 26.67 seconds<sup>800f</sup>.
+**1 [[Zir Zeal]] spawns.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-10.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

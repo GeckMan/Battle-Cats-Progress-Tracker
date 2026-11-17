@@ -1,0 +1,117 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Nazousagi (Enemy)]].''
+'''Nazousagi''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 5.8 Update|Version 5.8]] and can be unlocked during the [[Nazousagi Collaboration Event]] by completing questions contained in the manga, then patting the Cat on the Cat Base menu during the collab's period.
+
+{{Cat Info
+|ID = 321
+|rarity = EX
+|name1 = Nazousagi
+|name2 = Miya Ōdō Rabbit
+}}
+
+==Evolution==
+Evolves into '''Miya Ōdō Rabbit''' at level 10.
+
+==Strategy/Usage==
+[[Weightlifter Cat (Super Rare Cat)|Weightlifter Cat]] or [[Salon Cat (Rare Cat)|Paris Cat]] make this unit entirely irrelevant. Therefore, this Cat is only useful for increasing your [[User Rank]], as its stats aren't viable for anything more than that.
+
+{{Job|Classification = User Rank Dump & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 321
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni321 f00.png
+|Image2 = Uni321 c00.png
+|Name1 (JP) = ナゾウサギ (Nazo Usagi, Mystery Rabbit)
+|Desc1 (JP) = 漫画「ナゾウサギ」から参戦！<br>客寄せのきぐるみを着てレモネードを売っている人
+|Transl1 (JP) = Joining from the manga "Nazousagi"!<br>A person selling lemonade with a costume to attract customers
+|Name2 (JP) = 兎宮王道 (Usagi Miya Ōdō, Miya Ōdō Rabbit)
+|Desc2 (JP) = 漫画「ナゾウサギ」から参戦！<br>ナゾに支配された世界を変えようと思っている<br>黒い敵に超ダメージを与える
+|Transl2 (JP) = Joining from the manga "Nazousagi"!<br>Plans to change the world ruled by mystery<br>Deals super damage to Dark enemies
+}}
+
+==Cost==
+*Chapter 1: 400円
+*Chapter 2: 600円
+*Chapter 3: 800円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nazousagi
+|Normal Base HP = 400
+|Normal Base AP = 80
+|Normal Range = 340
+|Normal Foreswing = 21
+|Normal Attack Cooldown = 103
+|Normal Attack Length = 52
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 420
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Miya Ōdō Rabbit
+|Evolved Base HP = 400
+|Evolved Base AP = 80
+|Evolved Range = 340
+|Evolved Foreswing = 21
+|Evolved Attack Cooldown = 103
+|Evolved Attack Length = 52
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 420
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 400 HP
+|val-Normal-Attack Power = 80 damage<br>(19.35 DPS)
+|val-Normal-Attack Range = 340
+|val-Normal-Attack Frequency = 124f <sub>4.13 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 21f <sup>0.7s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 14 ~ 5.2 seconds
+|val-Normal-MaxHP = 6,800 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(329.03 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(329.03 DPS)
+|val-Evolved-Attack Range = 340
+|val-Evolved-Attack Frequency = 124f <sub>4.13 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 21f <sup>0.7s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 14 ~ 5.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni321 f00}}
+
+==Trivia==
+*The sign reads 激安 レモネード 今流行 (''Gekiyasu Remonēdo Ima Ryūkō'', '''Super Cheap Lemonade Now Trending''').
+
+==Reference==
+*https://battlecats-db.com/unit/322.html
+
+----
+{{CatNav|Hiroshi Mihara|Sarukani}}
+----
+
+{{Nazousagi}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

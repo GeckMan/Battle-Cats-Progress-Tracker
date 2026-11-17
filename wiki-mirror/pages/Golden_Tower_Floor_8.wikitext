@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Those Guys|Snache|Hippoe|Gory|Shy Boy}}
+'''Floor 8''' is the eighth floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 07 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 80
+|enemy castle hp = 78,000 HP
+|enemies = {{Magnification|Those Guys|400%
+|Snache|400%
+|Hippoe|400%
+|Gory|400%
+|Shy Boy|200%}}
+|boss = {{Magnification|Those Guys|100%}}
+|treasure = - [[Catamin]] [B] +10 (100%, 1 time)
+|XP = 1,520 XP
+|width = 3,600
+|max enemies = 6
+|jpname = 8th Floor
+|script = 8階
+|romaji = 8 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★4
+|prev stage = [[Golden Tower/Floor 7|Floor 7]]
+|next stage = [[Golden Tower/Floor 9|Floor 9]]
+}}
+
+==Battleground==
+*Infinite [[Those Guys]] (400%) spawn, delay 0.67~20 seconds<sup>20f~600f</sup>.
+*Infinite [[Snache]]s spawn, delay 0.67~20 seconds<sup>20f~600f</sup>.
+*Infinite [[Hippoe]]s spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*Infinite [[Gory|Gories]] spawn, delay 6.67~20 seconds<sup>200f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Those Guys]] (100%) spawns as the boss.
+**1 [[Shy Boy]] spawns.
+**1 [[Shy Boy]] spawns.
+**1 [[Shy Boy]] spawns.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 8#Strategy|Floor 8]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-08.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

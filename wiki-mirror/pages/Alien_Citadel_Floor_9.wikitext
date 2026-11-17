@@ -1,0 +1,51 @@
+{{EnemiesAppearing|Ursamajor|Kroxo|Scissoroo|Cyberhorn|Elder Sloth|Gorilliam}}
+:''Not to be confused with the [[Heavenly Tower/Floor 9|Heavenly Tower]] or [[Infernal Tower/Floor 9|Infernal Tower]] versions of Floor 9.''
+'''Floor 9''' is the ninth floor of [[Alien Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 08 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 200
+|enemy castle hp = 480,000 HP
+|enemies = {{Magnification|Ursamajor|1,000%
+|Kroxo|1,000%
+|Scissoroo|800%
+|Cyberhorn|800%
+|Elder Sloth|200%}}
+|boss = {{Magnification|Gorilliam|950%}}
+|treasure = - [[Battle Items#Treasure Radar|Treasure Radar]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 15
+|jpname = 9th Floor
+|script = 9階
+|romaji = 9 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★8
+|prev stage = [[Alien Citadel/Floor 8|Floor 8]]
+|next stage = [[Alien Citadel/Top Floor|Top Floor]]
+}}
+
+==Battleground==
+*1 [[Ursamajor]] spawns after 6.67 seconds<sup>200f</sup>.
+*10 [[Kroxo]]s spawn after 13.33 seconds<sup>400f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*5 [[Kroxo]]s spawn after 26.67 seconds<sup>800f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Gorilliam]] spawns as the boss.
+**Infinite [[Scissoroo]]s spawn, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+**4 [[Scissoroo]]s spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+**2 [[Cyberhorn]]s spawn, delay 50 seconds<sup>1,500f</sup>.
+**1 [[Elder Sloth]] spawns.
+
+==Strategy==
+Use your typical anti-Alien units such as [[Gross Cat (Normal Cat)|Macho Leg Cat]] and [[Rover Cat (Rare Cat)|Catellite]]. [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] and [[Psychocat (Rare Cat)|Psychocat]] can help control the Gorilliam while your units wreck havoc.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-09.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]
+[[Category:No Continue Stages]]

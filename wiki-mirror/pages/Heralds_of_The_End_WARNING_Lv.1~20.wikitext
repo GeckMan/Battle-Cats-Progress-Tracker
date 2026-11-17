@@ -1,0 +1,582 @@
+<tabber>
+WARNING Lv.1~6=
+{{EnemiesAppearing|B.B.Bunny|Imperator Sael|Doge Dark|Zoge|Gory Dark|Heavenly Hippoe|Gabriel|Zory|The 4th Angel}}
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn007 00 ca en.png]]
+|stage location = [[File:Mapname007 ca en.png]]
+|enemies = {{Magnification|B.B.Bunny|0
+|Imperator Sael|0
+|Doge Dark|0
+|Zoge|0
+|Gory Dark|0
+|Heavenly Hippoe|0
+|Gabriel|0
+|Zory|0}}
+|boss = {{Magnification|The 4th Angel|0}}
+|restriction = [[No Continues]]
+|width = 4,200
+|max enemies = 20
+|jpname = Vigilance Lv.X
+|script = 警戒 Lv.X
+|romaji = Keikai Lv.X
+|star = 1
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Heralds of The End]]
+|max clears = 3
+}}
+
+==Battleground==
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 10 seconds<sup>300f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*1 [[Imperator Sael]] spawns after 23.33 seconds<sup>700f</sup>.
+*2 [[Doge Dark]]s spawn after 30 seconds<sup>900f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*5 [[Zoge]]s spawn after 30 seconds<sup>900f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[The 4th Angel (Enemy)|The 4th Angel]] spawns as the boss.
+**6 [[Doge Dark]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**5 [[Gory Dark]]s spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**4 [[Gabriel]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**2 [[Zory|Zories]] spawn, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |WARNING
+! colspan="9" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[B.B.Bunny]]
+! scope="col" |[[Imperator Sael]]
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Zoge]]
+! scope="col" |[[Gory Dark]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Zory]]
+! scope="col" |[[The 4th Angel (Enemy)|The 4th Angel]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |1
+|400%
+|100%
+|100%
+|50%
+|100%
+|100%
+|100%
+|50%
+|1,000%
+|250,000 HP
+|70
+|250,000 XP
+|2,100 XP
+|-
+! scope="row" |2
+|750%
+|330%
+|180%
+|70%
+|140%
+|140%
+|150%
+|70%
+|1,500%
+|300,000 HP
+|70
+|[[Cat Capsule|Cat Ticket]] +1
+|2,100 XP
+|-
+! scope="row" |3
+|1,100%
+|560%
+|260%
+|100%
+|180%
+|180%
+|200%
+|100%
+|2,100%
+|350,000 HP
+|70
+|[[Catamin]] [A] +3
+|2,100 XP
+|-
+! scope="row" |4
+|1,450%
+|790%
+|340%
+|130%
+|220%
+|220%
+|250%
+|130%
+|2,800%
+|400,000 HP
+|70
+|[[Catamin]] [B] +3
+|2,100 XP
+|-
+! scope="row" |5
+|1,800%
+|1,000%
+|400%
+|150%
+|250%
+|250%
+|300%
+|150%
+|3,600%
+|450,000 HP
+|90
+|[[Catamin]] [C] +3
+|2,700 XP
+|-
+! scope="row" |6
+|2,150%
+|1,230%
+|480%
+|180%
+|280%
+|280%
+|350%
+|180%
+|4,500%
+|500,000 HP
+|90
+|500,000 XP
+|2,700 XP
+|}
+
+==Strategy==
+These first six stages are very simple in nature. The stage gives you ample time to build up money, and the supporting enemy waves can be cleared out very quickly. The hardest part of this stage is chipping down Sachiel once everyone else is dead, which can take a while given Sachiel's rapid attacks and high stats. Try luring Sachiel a bit to the base to create an easier cleanup. The Thunderbolt Cannon is recommended here to allow Bahamut to get longer chains against Sachiel.
+
+If you have any EVA Angel Killer units, feel free to use them to make the process of chipping down each boss quicker.
+
+==='''Recommended Units'''===
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Bahamut's extremely high damage makes him very good here to kill the Gories or Hippoes here. If Talented, Bahamut's effective damage doubles, allowing you to kill Sachiel even faster.
+*[[Slime Cat (Rare Cat)|Slime Cat]]: Slime is an extremely strong unit here, being able to abuse the peons to unleash high damage Wave attacks. If you have Slime's True Form, he becomes able to spread his Wave even further. Slime's True Form giving him both higher speed and range allows him to connect onto Sachiel.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Courier is a fast generalist attacker similar to Seafarer who can kill the peons and chip Sachiel down.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: A strong unit for the supporting enemies here. Also can chip down Sachiel given proper timing.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Similar to Bullet Train Cat, being a faster attacker with good chip potential.
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Seafarer's stats allows him to work as a generalist attacker as well as a unit to clean up Sachiel.
+*[[Cutter Cat (Super Rare Cat)|Cutter Cat]]: Cutter has much lower damage than Bullet Train Cat, but has a Survive to allow him to get much higher damage in. Also has an Attack combo with Li'l Brave Cat.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Extremely useful unit to chip down Sachiel.
+
+==='''Recommended Ubers'''===
+*Smaller Ubers with lower cost and cooldown can do well for the supporting peons. Examples include [[Child of Destiny Phono (Uber Rare Cat)|Child of Destiny Phono]], [[Celestial Child Luna (Uber Rare Cat)|Celestial Child Luna]] and [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]].
+*Any Uber with over 500 range is very strong here to make chipping Sachiel down take less than an eternity.
+
+|-|
+WARNING Lv.7 & 14=
+{{EnemiesAppearing|Metal One Horn|Metal Hippoe|Super Metal Hippoe|Metal Doge|The 10th Angel}}
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn007 00 ca en.png]]
+|stage location = [[File:Mapname007 ca en.png]]
+|enemies = {{Magnification|Metal One Horn|0
+|Metal Hippoe|0
+|Super Metal Hippoe|0
+|Metal Doge|0}}
+|boss = {{Magnification|The 10th Angel|0}}
+|restriction = [[No Continues]]
+|width = 5,000
+|max enemies = 10
+|jpname = Vigilance Lv.X
+|script = 警戒 Lv.X
+|romaji = Keikai Lv.X
+|star = 1
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Heralds of The End]]
+|max clears = 3
+}}
+
+==Battleground==
+*1 [[Metal One Horn]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Metal Hippoe]] spawns.
+*1 [[Metal Hippoe]] spawns after 3.33 seconds<sup>100f</sup>.
+*1 [[Metal Hippoe]] spawns after 10 seconds<sup>300f</sup>.
+*3 [[Metal Hippoe]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*When the base reaches 99% HP:
+**1 [[The 10th Angel (Enemy)|The 10th Angel]] spawns as the boss.
+**1 [[Super Metal Hippoe]] spawns.
+**Infinite [[Metal Doge]]s spawn, delay 30~60 seconds<sup>900f~1,800f</sup>.
+**5 [[Metal Doge]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |WARNING
+! colspan="5" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Metal One Horn]]
+! scope="col" |[[Metal Hippoe]]
+! scope="col" |[[Super Metal Hippoe]]
+! scope="col" |[[Metal Doge]]
+! scope="col" |[[The 10th Angel (Enemy)|The 10th Angel]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |7
+|200%
+|200%
+|100%
+|100%
+|200%
+|550,000 HP
+|90
+|[[Cat Capsule|Cat Ticket]] +2
+|2,700 XP
+|-
+! scope="row" |14
+|300%
+|300%
+|150%
+|150%
+|300%
+|900,000 HP
+|120
+|[[Catfruit|Purple Catfruit]] +3
+|3,600 XP
+|}
+
+==Strategy==
+Zeruel's stages are very tricky in nature. Once you build up your wallet and hit the base, lure Super Metal Hippoe, then kill it using Waitress Cat. Make sure when you do this that the Sniper the Cat powerup is not turned on to prevent anything bad happening. From then on, your main goal is to chip down Zeruel's massive HP while quickly killing the Metal Doges. Zeruel's Omni-Strike is extremely large, so make sure it doesn't gain any ground after it completes its attack. Because of Zeruel's ridiculously high health pool, this means that a clear of WARNING 14 will usually take around '''30''' minutes because your main sources of damage will most likely be Manic Lion, Bullet Train, and Awakened Bahamut once in a while.
+
+If you have any EVA Angel Killer units, feel free to use them to make the process of chipping down each boss quicker.
+
+==='''Recommended Units'''===
+*[[Sumo Cat (Special Cat)|Riceball Cat]]: Riceball's fast attacks makes him the best meatshield to use here. Use Riceball at the start to allow Super Metal Hippoe and the Metal Doges to attack it while Waitress one-shots the Super Metal Hippoe. You won't need boosting nor Talents given Zeruel's ridiculously high damage.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Bahamut's high damage allows him to get extremely high damage against Zeruel if there aren't any Metal Doges in the way.
+*[[Aku Researcher (Rare Cat)|Cat Researcher]]: Researcher's rapid attacks and speed allows him to work as a generalist Critter for the Metal Doges.
+*[[Curling Cat (Rare Cat)|Cleanerbot Cat]]: Cleanerbot is a strong staller here to keep Zeruel in place for a few seconds. Also helps for luring Super Metal Hippoe. Note that his True Form is not recommended because of its drastic Speed increase, making timing it to allow Waitress to one-shot Super Metal Hippoe a bit tougher. If you happen to have a free slot, a Speed Up Combo featuring Figure Skating Cats exists alongside Cleanerbot, which alongside its second form should make timing it very easy.
+*[[Metal Cat (Super Rare Cat)|Metal Cat]]: Metal's...well, Metal attribute allows him to tank multiple Zeruel hits in a row. Try to protect him from Metal Doge's rapid attacks with Riceball or Manic Lion.
+*[[Crazed Cow Cat (Super Rare Cat)|Manic Lion Cat]]: Manic Lion's rapid attacks and low cooldown allows him to work as a sufficient staller / chipper for Metal Doges.
+*[[Cow Cat (Normal Cat)|Lion Cat]] and [[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]]: For players without Cat Researcher, the best way to kill the Metal Doges will be sending a bunch of Lions and hoping for the best. Because of this, it's not a terrible idea to add both normal Lion and Li'l Lion alongside Manic Lion for a triple lion death barrage against the Metal Doges. This does use up a lot of cash, so be careful when doing this.
+*[[Cheerleader Cat (Super Rare Cat)|Waitress Cat]]: Instantly kills Super Metal Hippoe. You only need a level 30 Waitress to one-shot the Super Metal Hippoe.
+*[[Catornado (Super Rare Cat)|Hurricat]]: A fast unit similar to Cat Researcher that kills the Metal Doges quickly.
+
+|-|
+WARNING Lv.8~13=
+{{EnemiesAppearing|The 6th Angel|Cyberhorn|Shibalien|Mistress Celeboodle|Hyppoh|Scissoroo}}
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn007 00 ca en.png]]
+|stage location = [[File:Mapname007 ca en.png]]
+|enemies = {{Magnification|Cyberhorn|0
+|Shibalien|0
+|Mistress Celeboodle|0
+|Hyppoh|0
+|Scissoroo|0}}
+|boss = {{Magnification|The 6th Angel|0}}
+|restriction = [[No Continues]]
+|width = 6,000
+|max enemies = 12
+|jpname = Vigilance Lv.X
+|script = 警戒 Lv.X
+|romaji = Keikai Lv.X
+|star = 1
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Heralds of The End]]
+|max clears = 3
+}}
+
+==Battleground==
+*1 [[The 6th Angel (Enemy)|The 6th Angel]] spawns as the boss after 16.67 seconds<sup>500f</sup>.
+*1 [[Cyberhorn]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*Infinite [[Shibalien]]s spawn after 23.33 seconds<sup>700f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*6 [[Mistress Celeboodle]]s spawn after 23.33 seconds<sup>700f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*4 [[Hyppoh]]s spawn after 36.67 seconds<sup>1,100f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*2 [[Scissoroo]]s spawn after 56.67 seconds<sup>1,700f</sup>, delay 50 seconds<sup>1,500f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |WARNING
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[The 6th Angel (Enemy)|The 6th Angel]]
+! scope="col" |[[Cyberhorn]]
+! scope="col" |[[Shibalien]]
+! scope="col" |[[Mistress Celeboodle]]
+! scope="col" |[[Hyppoh]]
+! scope="col" |[[Scissoroo]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |8
+|3,000%
+|840%
+|1,480%
+|840%
+|1,480%
+|840%
+|600,000 HP
+|90
+|[[Leadership]] +1
+|2,700 XP
+|-
+! scope="row" |9
+|3,300%
+|920%
+|1,640%
+|920%
+|1,640%
+|920%
+|650,000 HP
+|90
+|750,000 XP
+|2,700 XP
+|-
+! scope="row" |10
+|3,600%
+|1,000%
+|1,800%
+|1,000%
+|1,800%
+|1,000%
+|700,000 HP
+|110
+|[[Cat Capsule|Cat Ticket]] +3
+|3,300 XP
+|-
+! scope="row" |11
+|3,900%
+|1,040%
+|2,080%
+|1,040%
+|2,080%
+|1,040%
+|750,000 HP
+|110
+|[[Leadership]] +1
+|3,300 XP
+|-
+! scope="row" |12
+|4,200%
+|1,080%
+|2,360%
+|1,080%
+|2,360%
+|1,080%
+|800,000 HP
+|110
+|1,000,000 XP
+|3,300 XP
+|-
+! scope="row" |13
+|4,500%
+|1,120%
+|2,640%
+|1,120%
+|2,640%
+|1,120%
+|850,000 HP
+|120
+|[[Catfruit|Green Catfruit]] +3
+|3,600 XP
+|}
+
+==Strategy==
+Ramiel's stages are pretty similar to Sachiel's, both being a slow boss with peons that die off after a while and very high range. In Ramiel's case, however, her Omni Strike effectively doubles her range, and her attacks can inflict at least 450,000 damage, which is more than enough to instantly eliminate anything that lacks the Survive ability or Metal trait, so make sure she doesn't push much. Your main goal is to kill Cyberhorn as fast as possible so you can start chipping Ramiel down.
+
+If you have any EVA Angel Killer units, feel free to use them to make the process of chipping down each boss quicker.
+
+==='''Recommended Units'''===
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Bahamut's extremely high damage makes him very good here to kill Cyberhorn. If Talented, Bahamut's effective damage doubles, allowing you to kill Ramiel even faster.
+*[[Slime Cat (Rare Cat)|Slime Cat]]: Slime is an extremely strong unit here, being able to abuse the peons to unleash high damage Wave attacks. If you have Slime's True Form, he becomes able to spread his Wave even further. Slime's True Form giving him both higher speed and range allows him to connect onto Ramiel better.
+*[[Cossack Cat (Rare Cat)|Royal Guard Cat]]: Guard's ridiculously high DPS against Cyberhorn means that you can quickly start chipping Ramiel down much faster.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Courier is a fast generalist attacker similar to Seafarer who can kill the peons and chip Ramiel down.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: A strong unit for the supporting enemies here, being able to one-shot Mistress Celeboodle as well as Slow Cyberhorn if Talented.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Similar to Bullet Train Cat, being a faster attacker with good chip potential.
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: Given Seafarer's natural Survive ability, he's your best choice for controlling Cyberhorn here.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Extremely useful unit to chip down Ramiel.
+
+==='''Recommended Ubers'''===
+*Rushers: Examples include [[Blanka (Uber Rare Cat)|Blanka]], [[Issun Boshi (Uber Rare Cat)|Oni Battlepod Kozuchimaru]] and [[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]].
+
+|-|
+WARNING Lv.15~20=
+{{EnemiesAppearing|Trolly Blogger|Gabriel|The 9th Angel|Angelic Gory|Ginger Snache|Sir Seal}}
+
+{{Stage Info
+|stage name = [[File:rc018.png]]
+[[File:Mapsn007 00 ca en.png]]
+|stage location = [[File:Mapname007 ca en.png]]
+|enemies = {{Magnification|Trolly Blogger|0
+|Gabriel|0
+|Angelic Gory|0
+|Ginger Snache|0
+|Sir Seal|0}}
+|boss = {{Magnification|The 9th Angel|0}}
+|restriction = [[No Continues]]
+|width = 5,400
+|max enemies = 20
+|jpname = Vigilance Lv.X
+|script = 警戒 Lv.X
+|romaji = Keikai Lv.X
+|star = 1
+|event = [[Neon Genesis Evangelion Collaboration Event]]
+|event-chapter = [[Heralds of The End]]
+|max clears = 3
+}}
+
+==Battleground==
+*Infinite [[Trolly Blogger]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*12 [[Gabriel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[The 9th Angel (Enemy)|The 9th Angel]] spawns as the boss after 23.33 seconds<sup>700f</sup>.
+*4 [[Angelic Gory|Angelic Gories]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 60 seconds<sup>1,800f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*3 [[Sir Seal]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*Infinite [[Angelic Gory|Angelic Gories]] spawn after 280 seconds<sup>8,400f</sup>, delay 40~43.33 seconds<sup>1,200f~1,300f</sup>.
+*When the base reaches 75% HP:
+**5 [[Gabriel]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" style="text-align: center;" |WARNING
+! colspan="6" style="text-align: center;" |Strength Magnifications
+! rowspan="2" style="text-align: center;" |Base HP
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Trolly Blogger]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[The 9th Angel (Enemy)|The 9th Angel]]
+! scope="col" |[[Angelic Gory]]
+! scope="col" |[[Ginger Snache]]
+! scope="col" |[[Sir Seal]]
+! style="text-align: center;" |Treasure
+! style="text-align: center;" |Base XP
+|-
+! scope="row" |15
+|300%
+|500%
+|1,300%
+|300%
+|500%
+|4,000%
+|950,000 HP
+|130
+|[[Catfruit|Red Catfruit]] +3
+|3,900 XP
+|-
+! scope="row" |16
+|320%
+|520%
+|1,400%
+|310%
+|520%
+|4,400%
+|1,000,000 HP
+|130
+|[[Catfruit|Blue Catfruit]] +3
+|3,900 XP
+|-
+! scope="row" |17
+|340%
+|540%
+|1,500%
+|320%
+|540%
+|4,800%
+|1,050,000 HP
+|130
+|[[Catfruit|Yellow Catfruit]] +3
+|3,900 XP
+|-
+! scope="row" |18
+|360%
+|560%
+|1,600%
+|330%
+|560%
+|5,200%
+|1,100,000 HP
+|140
+|[[Catfruit|Epic Catfruit]] +3
+|4,200 XP
+|-
+! scope="row" |19
+|380%
+|580%
+|1,700%
+|340%
+|580%
+|5,600%
+|1,150,000 HP
+|140
+|1,500,000 XP
+|4,200 XP
+|-
+! scope="row" |20
+|400%
+|600%
+|1,800%
+|350%
+|600%
+|6,000%
+|1,200,000 HP
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|4,500 XP
+|}
+
+==Strategy==
+What was once a genuinely hard stage now falls to the power of Bahamut's Talents. Simply lure the first Angelic Gory, beat it up with Bahamut, then spam low-range units like Slime, Manic Eraser, and Ramen. Because of The 9th Angel's blindspot, these units are free to wreck havoc without fear of retaliation. Any supporting peons that might've messed this up before die quickly to the outer parts of Bahamut's Explosion as well as Slime's Waves. If executed properly, it's possible to easily win without even using any EVA Angel Killer Ubers. Of course, bringing them is still recommended to speed up the fight while Bahamut keeps the peons occupied.
+
+If you don't have Bahamut's Talents, this stage serves as a shining example of why Evangelion is classified as a psychological horror anime. With '''infinite''' 350% Angelic Gories and a high-range, high-health boss that tears apart anything that even dares to try entering its blindspot, you're going to need to pull out everything you've got for these last few stages. This is necessary because The 9th Angel has a whopping 9 million health and 270,000 damage that reaches all the way up to 750 range at the absolute most. Your main goal is to use Bahamut for the first Angelic Gory, then start chipping The 9th Angel down while you find more and more complex ways to kill each Angelic Gory.
+
+
+==='''Recommended Units'''===
+*Meatshields: Given the nature of these stages, you can't afford to use slower options like Eraser Cat. The best options here are [[Crazed Tank Cat (Super Rare Cat)|Manic Eraser Cat]], [[Pogo Cat (Rare Cat)|Jiangshi Cat]] and [[Sumo Cat (Special Cat)|Riceball Cat]].
+*[[Ancient Egg: N004 (Special Cat)|Supercar Cat]]: Supercar's low range means he can fit into The 9th Angel's blindspot comfortably, and his 81,000 damage racks up very quickly.
+*[[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]: Bahamut's low range means he can fit into The 9th Angel's blindspot, and his Explosion, with a consistent spawn location, can deal extreme damage to both Angelic Gory and The 9th Angel. As mentioned before, Bahamut is critical to all non-Uber strategies with his raw damage keeping the peons in check while The 9th Angel remains helpless.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: Disposable nuke damage for dire situations.
+*[[Idi:N (Special Cat)|Idi:N]]: Your second Bahamut here, to be used if there's an Angelic Gory on screen and your Bahamut's still off cooldown.
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: While Ramen won't do anything in the face of The 9th Angel nuke, he still works to stall Angelic Gory.
+*[[Slime Cat (Rare Cat)|Slime Cat]]: Slime is an extremely strong unit here, being able to abuse the peons to unleash high damage Wave attacks. Note that Slime's interaction with Gabriel is always a loss. If you have Slime's True Form, he becomes able to spread his Wave even further, as well as being able to connect onto Angelic Gory.
+*[[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Courier is a fast generalist attacker who can quickly deal with the Bloggers, Ginger Snaches, and Gabriels.
+*[[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: A strong attacker who can deal very well against the Gabriels and Angelic Gories.
+*[[Phantom Cat (Rare Cat)|Bubble Cat]]: Similar to Mushroom, but with higher stats and LD.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: A strong unit that can bait out The 9th Angel early on, and works to stall Angelic Gory later on.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: A strong unit for the supporting enemies here. Also can chip down Sachiel given proper timing.
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Similar to Bullet Train Cat, being a faster attacker with good chip potential.
+*[[Cutter Cat (Super Rare Cat)|Cutter Cat]]: Cutter has much lower damage than Bullet Train Cat, but has a Survive to allow him to get much higher damage in, especially against the Sir Seals or Ginger Snaches. Also has an Attack combo with Li'l Brave Cat.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Extremely useful unit to chip down The 9th Angel as well as the supporting peons. Can also abuse Trolly Blogger to get multiple rebounds.
+*[[Rei Ayanami (Super Rare Cat)|Reunion Li'l Rei]]: Among the Super Rare EVA Angel Killers, Rei is designed to help beat these stages: Rei's stats are very high against Angels, with damage surpassing Mushroom's, and she can tank The 9th Angel.
+
+==='''Recommended Ubers'''===
+*Anti-Angel Ubers: Try to use options that are either disposable or fast. Examples include [[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]], [[Issun Boshi (Uber Rare Cat)|Oni Battlepod Kozuchimaru]], [[Kalisa (Uber Rare Cat)|Divine Kalisa]] and [[Ushiwakamaru (Legend Rare Cat)|Ushiwakamaru]].
+*Rushers: Examples include [[Sanada Yukimura (Uber Rare Cat)|Immortal Yukimura]], [[Blanka (Uber Rare Cat)|Blanka]] and [[Count Yukimura (Uber Rare Cat)|Vampiric Yukimura]].
+</tabber>
+
+==Walkthrough==
+{{Walkthrough
+|i-6cUxTekaA|goomister|Uses Bahamut's Talents and Slime's True Form
+|C8u1boEmgvY|Novastrala|Uses Metal Cat, only features strongest and weakest WARNING Lv.s
+|Wur8WgFJDe4|Windy Bee|Only 5 Units, no Gacha, no Talented Awakened Bahamut Cat, including Master of Logic Mewtone on WARNING Lv.6, only features Lv.6, Lv.13, Lv.14, and Lv.20
+|v1BjtXwKWTI|WaffleCat|Including no Uber & no EVA Killers strategy (except WARNING Lv.20), and Uber & EVA Killers strategy, only features Lv.6, Lv.13, Lv.14, and Lv.20
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s27007.html
+
+{{Neon Genesis Evangelion}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

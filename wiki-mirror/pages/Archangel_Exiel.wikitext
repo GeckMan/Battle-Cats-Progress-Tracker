@@ -1,0 +1,107 @@
+'''Archangel Exiel''' (大天使エクスエル ''Daitenshi Ekusueru'', '''Archangel Exel''') is an [[:Category:Angel Enemies|Angel]]/[[:Category:Colossus Enemies|Colossus]] variant of [[Mr. Angel]] unique to the [[Divine Archangel Strikes]] event. He was added in [[Version 11.1 Update|Version 11.1]].
+
+{{Enemy Info
+|name = Archangel Exiel
+|image = E 593.png
+|appearance = [[Divine Archangel Strikes]]
+|money drop = 750¢ - 2,962¢
+}}
+
+==Enemy==
+Archangel Exiel is a hard-pushing boss. He isn't the most durable and has a very low standing range of 210, but his Omni Strikes hit up to 260 range, occur almost every second with a 2-second warp and 15-second weaken, often making him the main threat, more so in the presence of nasty peons like [[Aku Gory]], [[Shadow Boxer K]], [[Dark Otter]], [[Capy]], [[Bore Jr.]] and [[Mr. Mer]]. Even if serviceable counters are at hand, he still shouldn't be taken lightly.
+
+==Strategy==
+:''See [[Divine Archangel Strikes/Blessing Lv.1~20]].''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 593
+|Type = [[:Category:Angel Enemies|Angel]]/[[:Category:Colossus Enemies|Colossus]]
+|Image1 = Enemy icon 593.png
+|Name1 = Archangel Exiel
+|Desc1 = A secret lab used unethical genome editing to<br>create a superior Mr. Angel, who guides lost<br>sinners by Weakening and Warping them to<br>salvation. Lethality increases with each battle.
+|Name1 (JP) = 大天使エクスエル (Daitenshi Ekusueru, Archangel Exel)
+|Desc1 (JP) = 古代研究所の極秘技術によってゲノム改造され<br>巨大な超生命体と化したミスターエンジェル。<br>迷える子羊への祝福と称し、攻撃力を下げて<br>ワープさせてくる。戦うごとに凶暴性が増す。
+|Transl1 (JP) = The top-secret technology of the [[Laboratory of Relics|Ancient Laboratory]]<br>allowed [[Mr. Angel]] to be reborn as a gigantic Super-Lifeform via genome remodeling.<br>To bless lambs who have lost their way, he lowers their attack power<br>and Warps them back. Becomes more ferocious with each battle.
+|Name1 (TW) = 特大號大天使
+|Desc1 (TW) = 被用古代研究所的極密技術進行基因改造<br>變成了巨大超生命體的天使先生。<br>藉由「給迷途羔羊的祝福」對敵人使用傳送能力<br>並使攻擊力下降。凶暴程度會隨著戰鬥而增加。
+|Name1 (KR) = 대천사 엑스엘
+|Desc1 (KR) = 고대 연구소의 극비 게놈 기술로 개조되어<br>초생명체로 다시 태어난 미스터 엔젤.<br>길 잃은 어린 양에게 축복을 내린다며 공격력을<br>낮추고 워프시켜 버린다. 싸울 때마다 흉폭성 증가
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Divine Archangel Strikes]]:
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.1]] (100%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.2]] (114%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.3]] (128%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.4]] (142%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.5]] (156%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.6]] (170%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.7]] (184%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.8]] (198%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.9]] (212%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 1~10|Blessing Lv.10]] (225%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.11]] (225%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.12]] (239%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.13]] (253%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.14]] (267%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.15]] (281%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.16]] (295%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.17]] (309%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.18]] (323%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.19]] (337%)
+**[[Divine Archangel Strikes/Blessing Lv.1~20#Blessing 11~20|Blessing Lv.MAX]] (350%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Archangel Exiel
+|Health = 945000
+|Attack Power = 4800
+|Attack Range = 210
+|Attack Type = Area
+|Time Between Attacks = 31
+|Movement Speed = 35
+|Knockback = 8
+|Foreswing = 13
+|Backswing = 18
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -390~260)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 450f <sub>15 seconds</sub><br>
+{{AbilityIcon|Warp}} 100% chance to [[Warp|warp]] Cat Units back by 1,500 range for 60f <sub>2 seconds</sub>
+|Element = Angel/Colossus
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+593 e.png|Archangel Exiel's spritesheet
+IdleDivineArchangel.gif|Archangel Exiel's moving animation
+Medal 101.png|Archangel Exiel on the ''Exiel Exterminated'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*The name Exiel may be derived from ''XL'' (Extra Large, referring to his [[:Category:Colossus Enemies|Colossal]] stature), ''exile'' (either referring to how his warp "exiles" units from the [[Battle|battle]], or common depictions of fallen angels having been 'exiled' from heaven) and ''El'' (the Hebrew word for God, commonly used as a suffix in angel names).
+*Archangel Exiel, [[Heavenly Le'saint]] and [[Great Angel Chibinel]] all have the word 大天使 ''daitenshi'' (archangel; lit. "great angel") in their Japanese names.
+**Heavenly Le'saint is the only one who isn't a Colossus.
+*He is one of the six enemies that were updated to have the Colossus type in [[Version 11.2 Update|Version 11.2]], the others being [[Baron Seal]], [[Le'Grim]], [[Mega-Mooth]], [[Super Hyppoh]] and [[Big Peng Z]].
+
+==Reference==
+*https://battlecats-db.com/enemy/595.html
+
+----
+{{EnemyNav|Red EnerG|Big Peng Z}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Angel Enemies]]
+[[Category:Colossus Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Enemies with Warp ability]]

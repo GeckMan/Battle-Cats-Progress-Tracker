@@ -1,0 +1,122 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Dragon League Swordsman''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 3.1.1 Update|Version 3.1.1]] and can be unlocked when beating any stage from the [[Dragon League Collaboration Event|Dragon League and Battle Cats]] collaboration event.
+
+{{Cat Info
+|ID = 156
+|rarity = RR
+|name1 = Dragon League Swordsman
+|name2 = Dragon League Witch
+}}
+
+==Evolution==
+Evolves into '''Dragon League Witch''' at level 10.
+
+==Strategy/Usage==
+This unit has pretty much no use at all, regardless of where in the game you are. Early in the game, his stats are very poor, his upgrade cost is too high to improve his usage and there are always better picks for his role, such as [[Tank Cat (Normal Cat)|Tank Cat]], [[Axe Cat (Normal Cat)|Axe Cat]], and [[Gross Cat (Normal Cat)|Gross Cat]]. Later on, his pathetic range makes him nothing more than a meatshield whose speed and cost are easily outclassed by other, more common meatshields, such as [[Cat (Normal Cat)|Cat]], Tank Cat and their [[Crazed Cat (Super Rare Cat)|Crazed]] [[Crazed Tank Cat (Super Rare Cat)|counterparts]], especially against Dark enemies, as they deal too much damage against Dragon League Swordsman, even with his ability. A spammed horde of Dragon League Swordsmen could barely hold off some [[Doge Dark]]s, as their base stats are simply too low.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 156
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni156 f00.png
+|Image2 = Uni156 c00.png
+|Name1 (JP) = ドラリー剣士 (Dorarī Kenshi, Dragon League Swordsman)
+|Desc1 (JP) = ドラゴンリーグから参戦！<br>安価で生産できる剣の達人<br>黒い敵にめっぽう強い
+|Transl1 (JP) = Joined the war from Dragon League!<br>Master of swords that can be produced inexpensively<br>Strong against Dark enemies.
+|Name2 (JP) = ドラリー魔法使い (Dorarī Mahōtsukai, Dragon League Witch)
+|Desc2 (JP) = ドラゴンリーグから参戦！<br>転職により魔法を会得<br>黒い敵にめっぽう強い(範囲攻撃)
+|Transl2 (JP) = Joined the war from Dragon League!<br>Learned magic because of his change in occupation.<br>Strong against Dark enemies. (Area Attack)
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 220円
+*Chapter 2: 330円
+*Chapter 3: 440円
+
+===Evolved Form===
+*Chapter 1: 750円
+*Chapter 2: 1,125円
+*Chapter 3: 1,500円
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Dragon League Swordsman
+|Normal Base HP = 180
+|Normal Base AP = 15
+|Normal Range = 150
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 13
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 220
+|Normal Recharge = 290
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Dragon League Witch
+|Evolved Base HP = 230
+|Evolved Base AP = 155
+|Evolved Range = 210
+|Evolved Foreswing = 29
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 41
+|Evolved Speed = 4
+|Evolved KB = 2
+|Evolved Cost = 750
+|Evolved Recharge = 380
+|Evolved Attack Type = Area
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 180 HP
+|val-Normal-Attack Power = 15 damage<br>(34.62 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 13f <sub>0.43 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(9f <sup>0.3s</sup> backswing)
+|val-Normal-Recharge Time = 9.67 ~ 2 seconds
+|val-Normal-MaxHP = 3,060 HP
+|val-Normal-MaxAttack = 255 damage<br>(588.46 DPS)
+|val-Evolved-Health = 3,910 HP
+|val-Evolved-Attack Power = 2,635 damage<br>(731.94 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 108f <sub>3.6 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 29f <sup>0.97s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 12.67 ~ 3.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni156 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/157.html
+
+----
+{{CatNav|Chicken Cat|Nubobo}}
+----
+
+{{Dragon League}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Cats with Strong ability]]

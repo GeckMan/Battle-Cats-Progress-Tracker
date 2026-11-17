@@ -1,0 +1,47 @@
+{{EnemiesAppearing|Hyppoh|Imperator Sael|Shibalien|I.M. Phace}}
+'''Floor 6''' is the sixth floor of [[Alien Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 05 v en.png]]
+|stage location = [[File:Mapname004 v en.png]]
+|energy = 120
+|enemy castle hp = 180,000 HP
+|enemies = {{Magnification|Hyppoh|100%
+|Imperator Sael|100%
+|Shibalien|100%}}
+|boss = {{Magnification|I.M. Phace|100%}}
+|treasure = - 400,000 XP (100%, 1 time)
+|XP = 2,280 XP
+|width = 5,000
+|max enemies = 12
+|jpname = 6th Floor
+|script = 6階
+|romaji = 6 Kai
+|star = 1
+|event-chapter = [[Alien Citadel]]
+|difficulty = ★5
+|prev stage = [[Alien Citadel/Floor 5|Floor 5]]
+|next stage = [[Alien Citadel/Floor 7|Floor 7]]
+}}
+
+==Battleground==
+*1 [[Hyppoh]] spawns.
+*1 [[Hyppoh]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Hyppoh]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*1 [[Hyppoh]] spawns after 60 seconds<sup>1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[I.M. Phace]] spawns as the boss.
+**1 [[Imperator Sael]] spawns.
+**5 [[Hyppoh]]s spawn, delay 20 seconds<sup>600f</sup>.
+**Infinite [[Shibalien]]s spawn, delay 15~30 seconds<sup>450f~900f</sup>.
+**12 [[Shibalien]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+
+==Strategy==
+It is recommended to have at least gotten all [[Anti-unstarred Alien Treasures]] up to [[The Great Abyss (Into the Future)|The Great Abyss]] Ch.1 at this point. Treat this stage like you would The Great Abyss. If you're doing this stage later on, bring anything.
+
+==Reference==
+*https://battlecats-db.com/stage/s07004-06.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

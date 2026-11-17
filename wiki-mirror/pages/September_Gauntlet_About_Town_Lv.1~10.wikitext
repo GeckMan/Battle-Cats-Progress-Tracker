@@ -1,0 +1,189 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Aku Doge|Squire Rel|Heavenly Hippoe|Hermit Peng|Gabriel|Master Da Xun|Mighty Gui Zuli}}
+
+{{Stage Info
+|stage name = [[File:Rc018.png]]
+[[File:Mapsn023 00 a en.png]]
+|stage location = [[File:Mapname023 a en.png]]
+|enemies = {{Magnification|Aku Doge|0
+|Squire Rel|0
+|Heavenly Hippoe|0
+|Hermit Peng|0
+|Gabriel|0
+|Master Da Xun|0}}
+|boss = {{Magnification|Mighty Gui Zuli|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,600
+|max enemies = 8
+|jpname = Old God Lv.X
+|script = 老神 Lv.X
+|romaji = Oigami Lv.X
+|event = [[September Gauntlet]]
+|event-chapter = [[September Gauntlet]]
+|require = Clear [[Old Guys About Town (Monthly Event)|Old Guys About Town]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*1 [[Aku Doge]] spawns after 3.33 seconds<sup>100f</sup>.
+*Infinite [[Squire Rel]]s spawn after 13.33 seconds<sup>400f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*2 [[Heavenly Hippoe]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*1 [[Hermit Peng]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mighty Gui Zuli]] spawns as the boss.
+**Infinite [[Gabriel]]s spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**2 [[Master Da Xun]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**3 [[Aku Doge]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |About Town Lv.
+! colspan="7" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Squire Rel]]
+! scope="col" |[[Heavenly Hippoe]]
+! scope="col" |[[Hermit Peng]]
+! scope="col" |[[Gabriel]]
+! scope="col" |[[Master Da Xun]]
+! scope="col" |[[Mighty Gui Zuli]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|400%
+|100%
+|100%
+|100%
+|100%
+|100%
+|60
+|Speed Up +1
+|1,140
+|-
+! scope="row" |2
+|111%
+|556%
+|117%
+|156%
+|117%
+|133%
+|144%
+|60
+|Catamin [A] +1
+|1,140
+|-
+! scope="row" |3
+|122%
+|712%
+|134%
+|212%
+|134%
+|166%
+|188%
+|70
+|Cat CPU +1
+|1,330
+|-
+! scope="row" |4
+|133%
+|868%
+|151%
+|268%
+|151%
+|199%
+|232%
+|70
+|Rich Cat +1
+|1,330
+|-
+! scope="row" |5
+|144%
+|1,024%
+|168%
+|324%
+|168%
+|232%
+|276%
+|80
+|Platinum Shard +1
+|1,520
+|-
+! scope="row" |6
+|155%
+|1,180%
+|185%
+|380%
+|185%
+|265%
+|320%
+|80
+|Catamin [B] +1
+|1,520
+|-
+! scope="row" |7
+|166%
+|1,336%
+|202%
+|436%
+|202%
+|298%
+|364%
+|90
+|Sniper the Cat +1
+|1,710
+|-
+! scope="row" |8
+|177%
+|1,492%
+|219%
+|492%
+|219%
+|331%
+|408%
+|90
+|Catamin [C] +1
+|1,710
+|-
+! scope="row" |9
+|188%
+|1,648%
+|236%
+|548%
+|236%
+|364%
+|452%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|200%
+|1,800%
+|250%
+|600%
+|250%
+|400%
+|500%
+|100
+|Rare Ticket +1
+|1,900
+|-
+|}
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s24023.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

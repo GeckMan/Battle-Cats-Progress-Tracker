@@ -1,0 +1,129 @@
+'''Cake Machine''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[June Bride (Gacha Event)|June Bride]] gacha event. It was added in [[Version 13.4 Update|Version 13.4]]. This unit is a variant of [[Cat Machine (Uber Rare Cat)|Cat Machine]] with various different attributes.
+
+{{Cat Info
+|ID = 756
+|rarity = UR
+|name1 = Cake Machine
+|name2 = Wedding Cake Machine
+}}
+
+==Evolution==
+Evolves into '''Wedding Cake Machine''' at level 10.
+
+==Strategy/Usage==
+Cake Machine is not too different from the original. It is by no means a generalist, though its [[Resistant|Resistance]] versus its targeted traits makes it a durable tank, which is further bolstered by its [[Weaken]] ability that has surprisingly decent uptime despite its low activation chance. Even Shielded Aku threats aren't exactly safe, as it also has a 75% chance to [[Shield Piercing|Pierce Shields]]. While the chances of both occurring simultaneously isn't too high, it can still buy some valuable time for other units.
+
+{{Job|Classification = Tanker & Breaker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 756
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni756 f00.png
+|Image2 = Uni756 c00.png
+|Name1 = Cake Machine
+|Desc1 = Wedding cake developed by a shadowy govt agency<br>to thrill guests with the promise of a surprise inside.<br>Tough vs. Angels, Aku, sometimes Pierces Aku Shields.
+|Name2 = Wedding Cake Machine
+|Desc2 = Dubbed CA:KE-13, meant to surprise guests by<br>interrupting boring speeches made at receptions.<br>Tough vs. Angels and Aku, might Pierce Shields.
+|Name1 (JP) = ネコケーキマシン挙式 (Neko Kēki Mashin Kyoshiki, Cat Cake Machine - Ceremony)
+|Desc1 (JP) = 連邦政府が披露宴を盛り上げるべく製造した<br>サプライズ用ウエディングケーキ試作機1号である<br>天使と悪魔に打たれ強く、たまに悪魔シールドを貫く
+|Transl1 (JP) = This is the first prototype of the surprise wedding cake-making<br>machine manufactured by the government to liven up banquets.<br>It is resilient against angels and demons, and occasionally pierces through demon shields.
+|Name2 (JP) = ネコケーキマシン挙式・寿 (Neko Kēki Mashin Kyoshiki Kotobuki, Cat Cake Machine - Ceremony Longevity)
+|Desc2 (JP) = 披露宴を盛り上げるべく長すぎる祝辞を<br>サプライズで中断する菓子型CA:KE-13<br>天使と悪魔に打たれ強く、たまに悪魔シールドを貫く
+|Transl2 (JP) = To spice up the wedding banquet, the confectionery CA:KE-13 interrupts<br>overly long congratulatory speeches as a surprise.<br>It is resilient against angels and demons, and occasionally pierces through demon shields.
+|Name1 (TW) = 婚禮蛋糕機器貓
+|Desc1 (TW) = 聯邦政府為了炒熱婚宴氣氛所製作的<br>驚喜用婚禮蛋糕試作機1號。對上天使敵人<br>和惡魔很耐打，有時候能破壞惡魔盾
+|Name2 (TW) = 婚禮蛋糕機器貓・祝
+|Desc2 (TW) = 會用驚喜打斷婚宴中冗長致詞的<br>甜點型CA：KE－13。對上天使敵人<br>和惡魔很耐打，有時候能破壞惡魔盾
+|Name1 (KR) = 고양이 웨딩 케이크 머신
+|Desc1 (KR) = 연방 정부가 피로연을 위해 특별히 제작한<br>서프라이즈용 웨딩 케이크 프로토타입 1호<br>천사와 악마에 맷집이 좋고 가끔 악마 쉴드를 뚫어버린다
+|Name2 (KR) = 고양이 웨딩 케이크 머신・축
+|Desc2 (KR) = 주례사가 길어져 피로연 시간이 늦어지자<br>서프라이즈로 주례사를 중단시킨 과자형 CA: KE-13<br>천사와 악마에 맷집이 좋고 가끔 악마 쉴드를 뚫어버린다
+}}
+
+==Cost==
+*Chapter 1: 2,300¢
+*Chapter 2: 3,450¢
+*Chapter 3: 4,600¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cake Machine
+|Normal Base HP = 5500
+|Normal Base AP = 3350
+|Normal Range = 190
+|Normal Foreswing = 92
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 126
+|Normal Speed = 9
+|Normal KB = 1
+|Normal Cost = 2300
+|Normal Recharge = 2400
+|Normal Attack Type = Area
+|Normal Targets = Angel,Aku
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Shield Piercing}} 75% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s
+|Evolved Name = Wedding Cake Machine
+|Evolved Base HP = 7500
+|Evolved Base AP = 4400
+|Evolved Range = 190
+|Evolved Foreswing = 92
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 126
+|Evolved Speed = 9
+|Evolved KB = 1
+|Evolved Cost = 2300
+|Evolved Recharge = 2400
+|Evolved Attack Type = Area
+|Evolved Targets = Angel,Aku
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Weaken}} 50% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Shield Piercing}} 75% chance to instantly [[Shield Piercing|pierce]] [[Shield]]s
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 5,500 HP
+|val-Normal-Attack Power = 3,350 damage<br>(435.06 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 231f <sub>7.7 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 92f <sup>3.07s</sup><br>(34f <sup>1.13s</sup> backswing)
+|val-Normal-Recharge Time = 80 ~ 71.2 seconds
+|val-Normal-MaxHP = 93,500 HP
+|val-Normal-MaxAttack = 56,950 damage<br>(7,396.1 DPS)
+|val-Evolved-Health = 127,500 HP
+|val-Evolved-Attack Power = 74,800 damage<br>(9,714.29 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 231f <sub>7.7 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 92f <sup>3.07s</sup><br>(34f <sup>1.13s</sup> backswing)
+|val-Evolved-Recharge Time = 80 ~ 71.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni756 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/757.html
+
+----
+{{CatNav|Akechi Mitsuhide|Ancient Egg: N205}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Resistant ability]]
+[[Category:Shield Piercing Cats]]

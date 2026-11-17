@@ -1,0 +1,122 @@
+{{ENExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Madhead (Enemy)]].''
+'''Madhead''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained when beating any stage in [[Tower of Saviors Collaboration Event#Battle with Madhead!|Battle with Madhead!]] during the [[Tower of Saviors Collaboration Event]]. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Cat Info
+|ID = 743
+|rarity = RR
+|name1 = Madhead
+|name2 = Madhead Cat
+}}
+
+==Evolution==
+Evolves into '''Madhead Cat''' at level 10.
+
+==Strategy/Usage==
+Madhead is completely outclassed by [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]] in attack rate, recharge time and Weaken uptime, not even accounting for Thaumaturge's [[Talents]]. Madhead's only meaningful advantage is that it doesn't need a [[True Form]] for its Weaken to be guaranteed, which could allow it to help new players with [[Teacher Bun Bun]] or [[Shy Boy]] very early in the game, but as soon as Thaumaturge Cat is unlocked, there is no reason to use Madhead outside of [[Underground Labyrinth]].
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 743
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni743 f00.png
+|Image2 = Uni743 c00.png
+|Name1 = Madhead
+|Desc1 = Joining the Cat Army from Tower of Saviors!<br>Legendary lifeform with a detachable head.<br>100% chance to Weaken Floating enemies.
+|Name2 = Madhead Cat
+|Desc2 = Joining the Cat Army from Tower of Saviors!<br>Used extra-dimensional powers to turn into a Cat.<br>100% chance to Weaken Floating enemies.
+|Name1 (TW) = 瘋頭 (Fēng Tóu, Mad Head)
+|Desc1 (TW) = 從神魔之塔來參戰！<br>頭和身體可以分離，傳說中的神秘生物<br>必定能使飄浮敵人的攻擊力下降
+|Transl1 (TW) = Joining from the Tower of Demons!<br>A mysterious creature of legends, he head and body can be separated<br>Reduces the attack power of Floating enemies
+|Name2 (TW) = 瘋頭貓 (Fēng Tóu Māo, Mad Head Cat)
+|Desc2 (TW) = 從神魔之塔來參戰！<br>因為超越次元的力量而變成了貓咪的瘋頭<br>必定能使飄浮敵人的攻擊力下降
+|Transl2 (TW) = Joining from the Tower of Demons!<br>A madman who became a cat because of his transdimensional powers<br>Reduces the attack power of Floating enemies
+|Name1 (KR) = 미친머리
+|Desc1 (KR) = Tower of Saviors에서 참전!<br>머리와 몸을 분리시킬 수 있는 신비한 전설의 생물<br>반드시 떠있는 적의 공격력을 낮춘다
+|Name2 (KR) = 냥코 미친머리
+|Desc2 (KR) = Tower of Saviors에서 참전!<br>차원을 넘나드는 힘으로 냥코화 되어버린 미친머리<br>반드시 떠있는 적의 공격력을 낮춘다
+}}
+
+==Cost==
+*Chapter 1: 350¢
+*Chapter 2: 525¢
+*Chapter 3: 700¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Madhead
+|Normal Base HP = 420
+|Normal Base AP = 80
+|Normal Range = 300
+|Normal Foreswing = 37
+|Normal Attack Cooldown = 203
+|Normal Attack Length = 69
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 350
+|Normal Recharge = 700
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Evolved Name = Madhead Cat
+|Evolved Base HP = 420
+|Evolved Base AP = 80
+|Evolved Range = 300
+|Evolved Foreswing = 37
+|Evolved Attack Cooldown = 203
+|Evolved Attack Length = 69
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 350
+|Evolved Recharge = 700
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 200f <sub>6.67 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 420 HP
+|val-Normal-Attack Power = 80 damage<br>(10 DPS)
+|val-Normal-Attack Range = 300
+|val-Normal-Attack Frequency = 240f <sub>8 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 37f <sup>1.23s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Normal-Recharge Time = 23.33 ~ 14.53 seconds
+|val-Normal-MaxHP = 7,140 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(170 DPS)
+|val-Evolved-Health = 7,140 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(170 DPS)
+|val-Evolved-Attack Range = 300
+|val-Evolved-Attack Frequency = 240f <sub>8 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 37f <sup>1.23s</sup><br>(32f <sup>1.07s</sup> backswing)
+|val-Evolved-Recharge Time = 23.33 ~ 14.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni743 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/744.html
+
+----
+{{CatNav|Mollyanna Cat|Felix the Cat Duke Cat}}
+----
+
+{{Tower of Saviors}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Weaken ability]]

@@ -1,0 +1,120 @@
+{{EnemiesAppearing|Doge Dark|Gabriel|Scissoroo|Angelic Gory|Dark Otter|Owlbrow|St. Pigge the 2nd|Metal Hippoe|Kory}}
+'''Catfruit Jubilee''' is a [[Continuation Stage]] accessible from any stage in [[Growing Catfruit]]. When cleared, it can drop a [[Catfruit]] or Catfruit Seed at a 100% chance and has a higher chance for an Epic Catfruit. It was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Stage Info
+|stage name = [[File:rc007.png]]
+[[File:Catfruit Jubilee.png]]
+|stage location = Growing Catfruit - Extra Stage
+|enemy castle hp = 444,444 HP
+|enemies = {{Magnification|Doge Dark|400%
+|Gabriel|100%
+|Scissoroo|250%
+|Angelic Gory|100%
+|Dark Otter|100%
+|Owlbrow|400%
+|St. Pigge the 2nd|600%
+|Metal Hippoe|200%}}
+|boss = {{Magnification|Kory|200%
+|Gabriel|100%}}
+|treasure = - See [[#Treasure Explanation|Treasure Explanation]]
+|stage type = [[Continuation Stage]]
+|XP = 4,000 XP
+|width = 4,000
+|max enemies = 8
+|jpname = Miracle of the Rainbow Actinidia
+|script = 奇跡の虹マタタビ
+|romaji = Kiseki no Niji Matatabi
+|star = 1
+|event = [[Growing Catfruit]]
+|prev stage = N/A
+|next stage = N/A
+|require = At the end of [[Catfruit Buffet]] (always) or from clearing any stage in [[Growing Catfruit]] (appears randomly)
+}}
+
+==Overview==
+This stage is special, as unlike most stages, which are entered by selecting it from the map, you will be asked if you would like to play the stage at a 15% chance after clearing any stage in [[Growing Catfruit]]. If the player selects [[Catfruit Buffet]] and completes all the stages (from [[Green Envy]] to [[Rays of Gold]]) they will effectively always have the option to attempt this stage.
+
+Throughout the stage, the player will be attacked by a variety of enemies, most notably a [[Kory]] and a [[Metal Hippoe]]. This makes it difficult to make a loadout to specifically beat the stage. Strength magnification however is minimal, so even if your lineup is less than suited to one of the specific enemy types involved, it can still be beaten with a moderately strong team.
+
+==Battleground==
+*1 [[Doge Dark]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Doge Dark]] spawns after 7.67 seconds<sup>230f</sup>.
+*Infinite [[Doge Dark]]s spawn after 8.67 seconds<sup>260f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*1 [[Gabriel]] spawns after 29.33 seconds<sup>880f</sup>.
+*Infinite [[Gabriel]]s spawn after 30 seconds<sup>900f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Kory]] spawns as the boss.
+**1 [[Gabriel]] spawns as the boss.
+**8 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**2 [[Scissoroo]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Doge Dark]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**3 [[Angelic Gory|Angelic Gories]] spawn, delay 0.07 seconds<sup>2f</sup>.
+**1 [[Dark Otter]] spawns.
+**1 [[Dark Otter]] spawns.
+**1 [[Owlbrow]] spawns.
+**1 [[Owlbrow]] spawns.
+**1 [[St. Pigge the 2nd]] spawns.
+**1 [[Metal Hippoe]] spawns.
+**5 [[Doge Dark]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**2 [[Gabriel]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+
+==Strategy==
+This stage's strategy is dependent on the [[Catfruit]] stage you come from, But a general strategy is to use whatever units that  are already in your lineup.
+
+Any unit with [[Immune to Waves|Wave Immunity]] or [[Wave Shield]] may be useful, but are usually not needed, as [[Kory]]'s waves can be mitigated with basic meatshielding.
+
+==Treasure Explanation==
+There are three possible treasures that can be obtained after beating this stage:
+{| class="article-table" cellspacing="1" cellpadding="1" border="0"
+|-
+! scope="col" style="text-align: center;" |
+!'''Day'''
+!'''Evening'''
+!'''Night'''
+|-
+! scope="row" |'''Epic Catfruit'''
+|35%
+|50%
+|70%
+|-
+!'''Normal Catfruit*'''
+|27%
+|40.5%
+|25.5%
+|-
+! scope="row" |'''Catfruit Seed*'''
+|38%
+|9.5%
+|4.5%
+|}
+<nowiki>*</nowiki> The colour of Normal Catfruit and Catfruit Seed received depends on the Catfruit stage the player is playing (e.g. [[Blue Illusion]] = Blue Catfruit).
+
+*When entering the stage from [[Catfruit Buffet]], you have a chance for any regular Catfruit or Seed.
+*The chances are based around the '''Day/Evening/Night backgrounds'''.
+The time your device is set to does NOT affect the background.
+<gallery>
+File:Bg000.png|Day Background
+File:Bg001.png|Evening Background
+File:Bg002.png|Night Background
+Glitched Catfruit Jubilee.jpeg|A glitch causing the evening version of Catfruit Jubilee to have its Japanese name in [[The Battle Cats|BCEN]]
+</gallery>
+
+==Trivia==
+*This was the first [[Continuation Stage]].
+*When first released in [[The Battle Cats|BCEN]], a glitch caused the evening version of the stage to have its Japanese name instead of its English name.
+
+==Reference==
+*https://battlecats-db.com/stage/s01097-ex01.html
+*https://battlecats-db.com/stage/s01097-ex02.html
+*https://battlecats-db.com/stage/s01097-ex03.html
+<!--
+Day = stage 2, Evening = stage 1, Night = stage 0
+Green = map 0
+Purple = map 1
+Red = map 2
+Blue = map 3
+Yellow = map 4
+-->
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Continuation Stages]]

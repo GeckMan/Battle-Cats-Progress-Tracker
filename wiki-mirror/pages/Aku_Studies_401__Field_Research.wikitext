@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Sinner Snache|Doge Dark|Brollow|Croco|Tackey|Le'Solar}}
+'''Aku Studies 401: Field Research''' is the third stage in [[Empress' Report 4]]. This stage can only be cleared once.
+
+{{Stage Info
+|stage name = [[File:rc149.png]]
+[[File:Mapsn275 02 s en.png]]
+|stage location = [[File:Mapname275 s en.png]]
+|energy = 100
+|enemy castle hp = 880,000 HP
+|enemies = {{Magnification|Sinner Snache|500%
+|Doge Dark|1,000%
+|Brollow|150%
+|Croco|4,000%
+|Tackey|200%}}
+|boss = {{Magnification|Le'Solar|2,500%}}
+|treasure = - [[Battle Items#Cat Jobs|Cat Jobs]] +3 (100%, 1 time)
+|XP = 1,900 XP
+|width = 4,600
+|max enemies = 12
+|jpname = Devil Research IV Discovery
+|script = 悪魔研究Ⅳ発見
+|romaji = Akuma Kenkyū IV Hakken
+|star = 1
+|event-chapter = [[Empress' Report 4]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = [[Aku Studies 401: Methods]]
+|next stage = [[Aku Studies 401: Inquiry]]
+|require = Complete [[Empress' Report 3]]
+|occurrence = ?
+}}
+
+==Battleground==
+*Infinite [[Sinner Snache]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*2 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*3 [[Brollow]]s spawn after 23.33 seconds<sup>700f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*Infinite [[Croco]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Le'Solar]] spawns as the boss.
+**10 [[Sinner Snache]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**8 [[Brollow]]s spawn, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**5 [[Brollow]]s spawn, delay 10~16.67 seconds<sup>300f~500f</sup>.
+**8 [[Doge Dark]]s spawn, delay 16.67~23.33 seconds<sup>500f~700f</sup>.
+**2 [[Tackey]]s spawn, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+
+==Strategy==
+This is a base hit stage, so feel free to stall for cash and build a strong frontline before hitting the base.
+
+Due to the presence of [[Le'Solar]] as the boss, you'll need to bring a Barrier Breaker, or just someone that can hit super hard. Once that's covered, you can just focus on bringing peon clearers like [[Housewife Cat]] and [[Manic Macho Legs Cat]] to clear out the Brollow horde.
+
+==Reference==
+*https://battlecats-db.com/stage/s01275-03.html
+
+{{Empress}}
+[[Category:Event Stages]]

@@ -1,0 +1,73 @@
+:''This article is about the enemy. For the Cat Unit, see [[SOL DAE ROKKER (Uber Rare Cat)]].''
+'''SOL DAE ROKKER''' is a [[:Category:Floating Enemies|Floating]] enemy that is found in the [[Metal Slug Collaboration Event]]. It was added in [[Version 13.1 Update|Version 13.1]].
+
+{{Enemy Info
+|name = SOL DAE ROKKER
+|image = E 675.png
+|first appearance = [[METAL SLUG STRIKES!]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+While this enemy may not seem like a threat with its relatively weak attacks and somewhat low health, on top of its [[:Category:Floating Enemies|Floating]] trait, it is extremely buffed in later stages, reaching up to 2,400,000 health and 60,000 damage per hit.
+
+==Strategy==
+''See [[METAL SLUG STRIKES!/MISSION 1~10]].''
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[METAL SLUG STRIKES!]]:
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 1]] (50%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 2]] (178%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 3]] (306%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 4]] (434%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 5]] (562%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 6]] (690%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 7]] (818%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 8]] (946%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION 9]] (1,074%)
+**[[METAL SLUG STRIKES!/MISSION 1~10|MISSION COMPLETE!]] (1,200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = SOL DAE ROKKER
+|Health = 200000
+|Attack Power = 15000
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 205
+|Movement Speed = 16
+|Knockback = 6
+|Foreswing = 88
+|Backswing = 81
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">5,000</span> at 88f <sup>2.93s</sup>, <span class="scaled" data-type="ap">5,000</span> at 106f <sup>3.53s</sup>, <span class="scaled" data-type="ap">5,000</span> at 124f <sup>4.13s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~450 on 1st hit, -600~300 on 2nd hit, -899~1 on 3rd hit)
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+675 e.png|SOL DAE ROKKER's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/677.html
+
+----
+{{EnemyNav|Esoteric Uril|Dragon Doge}}
+----
+
+{{Metal Slug}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Event Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with different effective ranges]]

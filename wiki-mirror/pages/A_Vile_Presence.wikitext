@@ -1,0 +1,53 @@
+{{EnemiesAppearing|Squire Rel|B.B.Bunny|Doge|Gory|Pigge|Doge Dark|Possessed King Doge}}
+'''A Vile Presence''' is the fifth stage in [[Shadows over Doge Kingdom]].
+
+{{Stage Info
+|stage name = [[File:rc003.png]]
+[[File:Mapsn066 04 a en.png]]
+|stage location = [[File:Mapname066 a en.png]]
+|energy = 90
+|enemy castle hp = 60,000 HP
+|enemies = {{Magnification|Squire Rel|400%
+|B.B.Bunny|400%
+|Doge|400%
+|Gory|400%
+|Pigge|400%
+|Doge Dark|100%}}
+|boss = {{Magnification|Possessed King Doge|100%}}
+|treasure = - [[Cat Capsule|Cat Ticket]] +1 (100%, 1 time)
+|XP = 1,710 XP
+|width = 3,200
+|max enemies = 12
+|jpname = Hint of Malice
+|script = 邪悪な気配
+|romaji = Jaaku na Kehai
+|star = 1
+|event-chapter = [[Shadows over Doge Kingdom]]
+|max clears = 3
+|difficulty = ★5
+|prev stage = [[Off to Doge Castle]]
+|next stage = [[Looming Clouds]]
+}}
+
+==Battleground==
+*5 [[Squire Rel]]s spawn after 5.33 seconds<sup>160f</sup>, delay 4~6.67 seconds<sup>120f~200f</sup>.
+*2 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*2 [[B.B.Bunny|B.B.Bunnies]] spawn after 12 seconds<sup>360f</sup>, delay 10.67~18 seconds<sup>320f~540f</sup>.
+*Infinite [[Doge]]s spawn after 24 seconds<sup>720f</sup>, delay 5.33~13.33 seconds<sup>160f~400f</sup>.
+*2 [[Gory|Gories]] spawn after 29.33 seconds<sup>880f</sup>, delay 20~24 seconds<sup>600f~720f</sup>.
+*When the base reaches 99% HP:
+**1 [[Possessed King Doge]] spawns as the boss.
+**5 [[B.B.Bunny|B.B.Bunnies]] spawn, delay 6~16 seconds<sup>180f~480f</sup>.
+**5 [[Pigge]]s spawn after 0.67 seconds<sup>20f</sup>, delay 12~15.33 seconds<sup>360f~460f</sup>.
+**4 [[Gory|Gories]] spawn after 1.33 seconds<sup>40f</sup>, delay 14~18 seconds<sup>420f~540f</sup>.
+**3 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16~20 seconds<sup>480f~600f</sup>.
+
+==Strategy==
+Despite Possessed King Doge's multi hit, and the ability to [[Freeze]] Cat units, its awful HP essentially means this is just a [[Dark Emperor Nyandam]] fight but with tankier peons, none of which should pose a problem, especially if your units are level 20.
+
+==Reference==
+*https://battlecats-db.com/stage/s24066-05.html
+
+{{Anniversary}}
+[[Category:Gauntlets]]
+[[Category:Event Stages]]

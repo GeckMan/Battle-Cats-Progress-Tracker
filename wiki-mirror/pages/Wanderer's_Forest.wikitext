@@ -1,0 +1,46 @@
+{{EnemiesAppearing|Pigge|St. Pigge the 2nd}}
+'''Wanderer's Forest''' is the second stage in [[The March of Flames]].
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn289 01 s en.png]]
+|stage location = [[File:Mapname289 s en.png]]
+|energy = 60
+|enemy castle hp = 90,000 HP
+|enemies = {{Magnification|Pigge|150%
+|St. Pigge the 2nd|150%}}
+|score reward = '''8,100''': 150,000 XP<br>
+'''6,300''': 100,000 XP<br>
+'''2,100''': [[Cat Capsule|Cat Ticket]] +1
+|XP = 1,800 XP
+|width = 4,400
+|max enemies = 15
+|jpname = Forest of Wonder
+|script = 迷いの森
+|romaji = Mayoi no Mori
+|star = 1
+|event = [[Seeing Red Stages|Seeing Red]]
+|event-chapter = [[The March of Flames]]
+|max clears = 1
+|difficulty = ★4
+|prev stage = [[Cave of Beginnings (The March of Flames)|Cave of Beginnings]]
+|next stage = [[Eastern Sands]]
+}}
+
+==Battleground==
+*Infinite [[Pigge]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[Pigge]]s spawn after 10 seconds<sup>300f</sup>, delay 20~25 seconds<sup>600f~750f</sup>.
+*Infinite [[Pigge]]s spawn after 15 seconds<sup>450f</sup>, delay 20~25 seconds<sup>600f~750f</sup>.
+*1 [[St. Pigge the 2nd]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[St. Pigge the 2nd]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*2 [[St. Pigge the 2nd]]s spawn after 60 seconds<sup>1,800f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+A pretty easy stage. Bring any [[:Category:Anti-Red Cats|anti-Reds]] or [[:Category:Normal Cats|Normal Cats]] to win. As with any Timed Score stage, units with quick movement speed help achieve a high score.
+
+==Reference==
+*https://battlecats-db.com/stage/s01289-02.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

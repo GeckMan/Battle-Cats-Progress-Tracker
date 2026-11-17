@@ -1,0 +1,601 @@
+{{PageImage|Catbook.png}}
+{{ResponsiveImage|Cat combo lol.png}}
+'''Cat Combo''' (にゃんコンボ, ''Nyankonbo'', '''Nyan Combo''' or '''Nyankombo''') is a feature added in the [[Version 4.0 Update]] of [[Nyanko Daisensou]] and [[Version 3.0 Update|Version 3.0]] of [[The Battle Cats]], available after completing Chapter 1 of [[Empire of Cats]]. When using a combination of certain Cats within the first 5 entries (top row) of a slot, additional effects will appear in battle. The Cats do not need to be in a fixed order, and having multiple Combos on the same slot is possible. All discovered Combos can be seen in the Cat Combo List, accessible from the Equip Screen. As of [[Version 16.0 Update|Version 16.0]], Cat Combos can also be unlocked via [[Talents]].
+
+There are also Combos from [[Version 4.7 Update|Version 4.7]] that were eventually removed, most of them having multiple [[:Category:Gacha Cats|gacha units]]. For the removed Combo list, see [[Cat Combo (Version 4.7)]].
+
+'''Combos can still be activated if any units required are in more advanced forms.''' For example, [[Moby Dick (Combo)|Moby Dick]] is activated by [[Fortune Teller Cat (Rare Cat)|Fisherman Cat]], [[Fish Cat (Normal Cat)|Whale Cat]] and [[Crazed Fish Cat (Super Rare Cat)|Crazed Whale Cat]], but can also work with Doctor Cat, Island Cat and Manic Island Cat.
+
+Combos are applied separately to [[Treasure]]s. For example, using a Massive Damage Sm Combo with all Treasures maxed will result in the relevant units' damage against their targets being multiplied by 4.4x, rather than 4.1x. Combos with the same effects are applied additively to each other when used together. Unit Attack and Defense Up Combos are applied separately to Strong, Resistant and Massive Damage ones. E.g., pairing [[Scantily Clad (Combo)|Scantily Clad]] with [[Land-Air Assault (Combo)|Land-Air Assault]] would make a Massive Damage unit deal 5.52x damage against their targets instead of just 5.4x.
+
+==List of Cat Combos==
+===Initial Set===
+These Combos are unlocked by default.
+
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Cat Army|Worker Start Level Up (Sm)|Cat|Tank Cat|Axe Cat|Gross Cat|Cow Cat|jpname=にゃんこ軍団, ''Nyanko Gundan'', '''Cat Army'''}}
+|{{CatCombo|Behind Closed Doors|Cannon Attack Up (Sm)|Dom Cat|Bondage Cat|jpname=アフター5, ''Afutā 5'', '''After 5'''}}
+|{{CatCombo|Cap'n Ahab|Base Defense Up (Sm)|Fisherman Cat|Whale Cat|jpname=ホゲー, ''Hogē''}}
+|{{CatCombo|Deathrock|Cannon Start Level Up (Sm)|Zombie Cat|Rocker Cat|jpname=デスロック, ''Desu Rokku'', '''Death Rock'''}}
+|{{CatCombo|Cool Japan|Unit Attack Up (M)|Ninja Cat|Sumo Cat|Samurai Cat|Sushi Cat|jpname=アイラブジャパン, ''Ai Rabu Japan'', '''I Love Japan'''}}
+|{{CatCombo|Sunbathers|Worker Start Level Up (Sm)|Island Cat|Castaway Cat|jpname=日光浴, ''Nikkōyoku'', '''Sunbathing'''}}
+|{{CatCombo|Sound of Wings|Cannon Recharge Up (Sm)|Cupid Cat|Bird Cat|jpname=パタパタ, ''Pata Pata'', '''Flap Flap'''}}
+|{{CatCombo|Choppers|Unit Attack Up (Sm)|Executioner|Axe Cat|Wargod Keiji|jpname=斧の達人, ''Ono no Tatsujin'', '''Ax Masters'''}}
+|{{CatCombo|Apples and Oranges|Base Defense Up (Sm)|Cat Gang|Apple Cat|jpname=みかんとリンゴ, ''Mikan to Ringo'', '''Mandarin Oranges and Apples'''}}
+|{{CatCombo|Take a Bow|"Knockback" Effects Up (Sm)|Tank Cat|Kubilan Pasalan|jpname=O・ZI・GI}}
+|{{CatCombo|Sister Act|Unit Attack Up (Sm)|Moneko|Neneko|jpname=アイドル志望, ''Aidoru Shibō'', '''Idol Aspiring'''}}
+|{{CatCombo|Hecks Angels|Unit Speed Up (Sm)|Biker Cat|Uesugi Kenshin|jpname=バイクツーリング, ''Baiku Tsūringu'', '''Bike Touring'''}}
+|{{CatCombo|Lingerie Special|Worker Start Level Up (Sm)|Brah Cats|Panties Cat|jpname=ブラパンツ, ''Bura Pantsu'', '''Bra Panties'''}}
+|{{CatCombo|In Bloom|"Freeze" Effects Up (Sm)|Wargod Keiji|Flower Cat|jpname=オハナガサイタ, ''Ohanagasaita'', '''Flower Blooms'''}}
+|{{CatCombo|Childhood Friends|Cannon Recharge Up (Sm)|Baby Gao|Li'l Cat|jpname=子ネコの友情, ''Ko Neko no Yūjō'', '''Kitten Friendship'''}}
+|{{CatCombo|Rawhide|Unit Speed Up (Sm)|Cow Cat|Cat Eastwood|jpname=カウボーイ, ''Kaubōi'', '''Cowboy'''}}
+|{{CatCombo|Puppeteers Guild|Cannon Start Level Up (M)|Warlock and Pierre|Puppetmaster Cat|jpname=人形師協会会員, ''Ningyōshi Kyōkai Kaiin'', '''Puppeteer Guild Member'''}}
+|{{CatCombo|Pyon Pyon for Two|Worker Max Up (Sm)|Pogo Cat|Rope Jump Cat|jpname=2人でぴょんぴょん, ''Futari de Pyon Pyon'', '''Boing Boing for 2 People'''}}
+|{{CatCombo|Helping Hand|"Slow" Effects Up (Sm)|Bodhisattva Cat|Mother Cat|jpname=救いの手, ''Sukui no Te'', '''Helping Hand'''}}
+|{{CatCombo|Fall in Love|"Massive Damage" Effects Up (Sm)|Cupid Cat|Madam Bride|jpname=フォーリンラヴ, ''Fōrinravu'', '''Fall In Love'''}}
+|{{CatCombo|Frog Prince|"Strong" Effects Up (Sm)|Princess Juliet Cat|Frog Ninja Cat|jpname=カエルの王子様, ''Kaeru no Ōji-Sama'', '''Frog Prince'''}}
+|{{CatCombo|Treasured Grandchild|Cat Cannon Start Level Up (M)|Baby Cat|Kung Fu Cat X|jpname=孫という名の宝物, ''Mago toiu Na no Takaramono'', '''Treasured Grandchild'''}}
+|{{CatCombo|No Stage Fright|"Resistant" Effects Up (Sm)|Actress Cat|Paris Cat|jpname=舞台の上では平気なの, ''Butai no Ue de wa Heikinano'', '''I'm Fine on the Stage'''}}
+|{{CatCombo|Biohazard|Research Power Up (Sm)|Zombie Cat|Mr.|jpname=バイオハザード, ''Baio Hazādo'', '''Biohazard'''}}
+|{{CatCombo|Midsummer Sun|"Massive Damage" Effects Up (Sm)|Cooldown Cat|Solar Cat|jpname=真夏の太陽, ''Manatsu no Taiyō'', '''Midsummer Sun'''}}
+|{{CatCombo|Reindeer's Gift|Starting Money Up (Sm)|Reindeer Fish Cat|A Gift of Cats|jpname=トナカイのプレゼント, ''Tonakai no Purezento'', '''Reindeer's Present'''}}
+|{{CatCombo|Silver Screen|Bounty Up (Sm)|Cat Projector|Actress Cat|jpname=銀幕のスター, ''Ginmaku no Sutā'', '''Silver Screen Star'''}}
+|{{CatCombo|Long-Legged|"Slow" Effects Up (M)|Gross Cat|Asilan Pasalan|jpname=アシナガおじさん, ''Ashinaga Ojisan'', '''Long-Legged Guy'''}}
+|{{CatCombo|Life of the Party|Base Defense Up (Sm)|Groucho Cat|Dancing Flasher Cat|jpname=宴会部長, ''Enkai Buchō'', '''Banquet Manager'''}}
+|{{CatCombo|Good Jobs!|XP Rewards Up (Sm)|Prof. Cat Jobs|jpname=グッジョブ, ''Gujjobu'', '''Good Job'''}}
+|{{CatCombo|Thirteen|"Knockback" Effects Up (Sm)|Sniper the Heavy|jpname=サーティーン, ''Sātīn'', '''Thirteen'''}}
+|{{CatCombo|Itchy Riches|Worker Start Level Up (Sm)|Rich Cat Sr.|jpname=ネーーーコボンボン, ''Nēēko Bon Bon'', '''Caaaat Goodie-Goodie'''}}
+|{{CatCombo|Toying Around|Bounty Up (Sm)|Tin Cat|Flower Cat|Cat-o-tron|jpname=おもちゃのチャチャチャ, ''Omocha no Cha Cha Cha'', '''Toy's Cha Cha Cha'''}}
+|{{CatCombo|Rich and Poor|Starting Money Up (Sm)|Cat|Gold Cat|jpname=庶民と金持ち, ''Shomin to Kanemochi'', '''Commoners and the Rich'''}}
+|{{CatCombo|Koi And Dragon|Cannon Recharge Up (M)|Koi Cat|Kamukura|jpname=コイの滝登り, ''Koi no Taki Nobori'', '''Carp Climbing a Waterfall'''}}
+|{{CatCombo|Playing Slayer|"Strong" Effects Up (Sm)|Brave Cat|Dioramos|jpname=龍退治ごっこ, ''Ryū Taiji Gokko'', '''Play Dragon Slaying'''}}
+|{{CatCombo|Sweep the Area|Cannon Recharge Up (Sm)|Mr.|Raiden|jpname=一斉掃射, ''Issei Sōsha'', '''Strafing'''}}
+|{{CatCombo|Steel Saviors|"Resistant" Effects Up (Sm)|Cat-o-tron|Cat Machine|jpname=鋼の救世主, ''Hagane no Kyūseishu'', '''Steel Saviors'''}}
+|{{CatCombo|Galactic Travel|Unit Speed Up (Sm)|Space Cat|Super Galaxy Cosmo|jpname=銀河を駆ける, ''Ginga o Kakeru'', '''Galactic Travel'''}}
+|{{CatCombo|Cursed Strength|Cannon Recharge Up (M)|Grudge Cat|Marauder Cat|jpname=呪われた力, ''Norowareta Chikara'', '''Cursed Strength'''}}
+|{{CatCombo|Secret Agency|Worker Max Up (Sm)|Ninja Cat|Urashima Taro|jpname=スパイ活動, ''Supai Katsudō'', '''Spy Activities'''}}
+|{{CatCombo|Living in Love|Cannon Attack Up (Sm)|Maiden Cat|Radiant Aphrodite|jpname=愛に生きる者, ''Ai ni Ikiru Mono'', '''Those Living in Love'''}}
+|{{CatCombo|Classic Headwear|Cannon Start Level Up (M)|Awa-Odori Cat|Kasa Jizo|jpname=オシャレ笠, ''Oshare Kasa'', '''Fashionable Hat'''}}
+|{{CatCombo|Hot, Fresh 'n' Fast|Bounty Up (M)|Food Stall Cat|Pai-Pai|jpname=飲食業, ''Inshokugyō'', '''Restaurant Service'''}}
+|{{CatCombo|Green Thumb|Starting Money Up (Sm)|Gardener Cat|Flower Cat|jpname=ガーデニング, ''Gādeningu'', '''Gardening'''}}
+|{{CatCombo|Purple Heart|"Weaken" Effects Up (Sm)|Mighty Kat-A-Pult|Sick Cat|jpname=名誉の負傷, ''Meiyo no Fushō'', '''Honor Injury'''}}
+|{{CatCombo|Marine Tours|"Massive Damage" Effects Up (Sm)|B.C.S. Lionheart|Fish Cat|Li'l Fish Cat|jpname=魚群発見！！, ''Gyogun Hakken ！！'', '''School of Fish Found!!'''}}
+|{{CatCombo|Pedal Powered|"Knockback" Effects Up (Sm)|Mighty Bomburr|Tricycle Cat|jpname=ペダリング, ''Pedaringu'', '''Pedaling'''}}
+|{{CatCombo|Roasted Marshmallow|Bounty Up (Sm)|Bora|Marshmallow Cat|jpname=焼きマシュマロ, ''Yaki Mashumaro'', '''Roasted Marshmallow'''}}
+|{{CatCombo|Meowin' in the Rain|"Slow" Effects Up (Sm)|Mizli|Slug Jockey Cat|jpname=土砂降りに唄えば, ''Doshaburi ni Utaeba'', '''If You Sing in the Downpour'''}}
+|{{CatCombo|Independence Day|Unit Attack Up (Sm)|Orbital Platform Armageddon|UFO Cat|Li'l UFO Cat|jpname=インディペンデンスな日, ''Indipendensu na Hi'', '''Independence Day'''}}
+|{{CatCombo|Dragons Old and Young|"Strong" Effects Up (Sm)|Ganglion|Li'l Dragon Cat|jpname=古龍と子竜, ''Koryū to Koryū'', '''Old Dragons and Young Dragons'''}}
+|{{CatCombo|Power in Numbers|"Weaken" Effects Up (Sm)|Cat Clan Heroes|Sports Day Cat|jpname=数の暴力, ''Kazu no Bōryoku'', '''Violence in Numbers'''}}
+|{{CatCombo|Two As One|Cannon Recharge Up (M)|Twinstars|Bean Cats|jpname=完全一心同体, ''Kanzen Isshin Dōtai'', '''Completely One-Hearted'''}}
+|{{CatCombo|Boiled Egg|"Freeze" Effects Up (Sm)|Mighty Thermae D-Lux|Eggy Cat|jpname=温泉卵, ''Onsen Tamago'', '''Hot Spring Egg'''}}
+|{{CatCombo|Cheating Heart?|Research Power Up (M)|Madame Sumo|Detective Vigler|jpname=浮気調査, ''Uwaki Chōsa'', '''Cheating Investigation'''}}
+|{{CatCombo|Imperial Court|"Strong" Effects Up (Sm)|Imagawa Yoshimoto|Doll Cats|jpname=まろはネコでおじゃる, ''Maro wa Neko de Ojaru'', '''I Am a Cat'''}}
+|{{CatCombo|Soft and Flexible|Base Defense Up (M)|Nobiluga|Creepmallow|jpname=伸縮性と弾力性, ''Shinshukusei to Danryokusei'', '''Flexibility and Elasticity'''}}
+|{{CatCombo|Growth Spurt|Worker Max Up (M)|Graveflower Verbena|Sumo Cat|jpname=食べ盛り育ち盛り, ''Tabezakari Sodachizakari'', '''Eating and Growing'''}}
+|{{CatCombo|Post-Apocalypse|Unit Attack Up (Sm)|Rock Revengers|Biker Cat|Cat Gang|jpname=終末世界, ''Shūmatsu Sekai'', '''Doomsday World'''}}
+|{{CatCombo|Kimono Champs|Research Power Up (L)|Trickster Himeyuri|Vengeful Cat|Awa-Odori Cat|jpname=振袖選手権, ''Furisode Senshuken'', '''Furisode Championship'''}}
+|{{CatCombo|Wheels of Fate|Cannon Recharge Up (M)|Empress Chronos|Tricycle Cat|Cat Gang|jpname=運命の車輪（ロンド）, ''Unmei no Sharin（Rondo）'', '''Wheels of Fate (Rondo)'''}}
+|{{CatCombo|Fresh Catch|"Resistant" Effects Up (L)|Sea Maiden Ruri|Fish Cat|Li'l Fish Cat|Sashimi Cat|jpname=とれたてピッチピチ, ''Toretate Picchi Pichi'', '''Fresh Catch Pitchi-Pitch'''}}
+|{{CatCombo|Black & White|Worker Max Up (Sm)|Cat|Killer Cat|jpname=ブラック＆ホワイト, ''Burakku & Howaito'', '''Black & White'''}}
+|{{CatCombo|Miracle Performance|"Critical" Rate Up (M)|Moneko|Crazed Moneko|jpname=ミラクルライブ！, ''Mirakuru Raibu!'', '''Miracle Live!'''}}
+|{{CatCombo|Royal Submariner|Worker Start Level Up (Sm)|Wrathful Poseidon|Madam King|jpname=海底財宝発掘命令, ''Kaitei Zaihō Hakkutsu Meirei'', '''Undersea Treasure Excavation Order'''}}
+|{{CatCombo|Co-op Mode|Unit Attack Up (Sm)|Myrcia|Reindeer Fish Cat|Koi Cat|jpname=相棒, ''Aibō'', '''Partner'''}}
+|{{CatCombo|Shields of all Sizes|Bounty Up (Sm)|Relentless Gladios|Li'l Tank Cat|jpname=ほこ×たて, ''Hoko×Tate'', '''Spear×Shield'''}}
+|{{CatCombo|Offshore Accounts|Starting Money Up (M)|Richest Cat|jpname=ボンボンネコボンネコボンボン, ''Bon Bon Neko Bon Neko Bon Bon'', '''Goodie Goodie Cat Goodie Cat Goodie Goodie'''}}
+|{{CatCombo|Ninjutsu Cute|Critical Rate Up (Sm)|Sacred Blade Sakura|jpname=忍法お色気の術, ''Ninpō Oiroke no Jutsu'', '''Art of Sex Appeal of the Ninja'''}}
+|{{CatCombo|Breakfast in Undies|Slow Effects Up (Sm)|Cat Toaster|Panties Cat|jpname=モーニングパンツ, ''Mōningu Pantsu'', '''Morning Panties'''}}
+|{{CatCombo|Witch Trial|Slow Effects Up (Sm)|Bondage Cat|Witch Cat|jpname=魔女裁判, ''Majo Saiban'', '''Witch Trial'''}}
+|{{CatCombo|Street Bazaar|Knockback Effects Up (Sm)|Stilts Cat|Food Stall Cat|jpname=さおだけ屋台, ''Sao Dake Yatai'', '''Street Stand'''}}
+|{{CatCombo|Dragon Driller|Weaken Effects Up (Sm)|Li'l Dragon Cat|Power Driller Cat|jpname=ドリラゴン, ''Doriragon'', '''Drillagon'''}}
+|{{CatCombo|Mythic Driver|Knockback Effects Up (Sm)|Li'l Mythical Titan|Power Piledriver Cat|jpname=ウチコンボッチ, ''Uchikonbocchi'', '''Mythical Piledriver'''}}
+|{{CatCombo|Brave Cutter|Unit Attack Up (Sm)|Li'l Brave Cat|Power Cutter Cat|jpname=ユウチョキン, ''Yūchokin'', '''Brave Cut'''}}
+|{{CatCombo|Whale Digger|Critical Chance Up (Sm)|Li'l Whale Cat|Power Backhoe Cat|jpname=クジラベリン, ''Kujiraberin'', '''Whale Backhoe'''}}
+|{{CatCombo|Sexy Sawer|Resistant Effects Up (Sm)|Li'l Sexy Legs Cat|Power Saw Cat|jpname=ビキャッソ, ''Bikyasso'', '''Vikasso'''}}
+|{{CatCombo|Mini-Saurus|Research Power Up (Sm)|Li'l Macho Cat|Jurassic Cat Sitter|jpname=ミニザウルス, ''Mini-Zaurusu'', '''Mini-Saurus'''}}
+|{{CatCombo|Micro Fighters|Strong Effects Up (Sm)|Li'l Brave Cat|Thor Cat|jpname=リトル軍隊, ''Ritoru Guntai'', '''Little Army'''}}
+|{{CatCombo|Little Warriors|Unit Defense Up (Sm)|Li'l Wall Cat|Commando Cat|jpname=ミクロファイター, ''Mikuro Faitā'', '''Micro Fighter'''}}
+|{{CatCombo|Minicyclone|Knockback Effects Up (Sm)|Li'l Sexy Legs Cat|Solar Cat|jpname=ミニサロン, ''Mini Saron'', '''Mini Salon'''}}
+|{{CatCombo|Big Game Hunter|Unit Speed Up (Sm)|Li'l Giraffe Cat|Phantom Thief Cat|jpname=希少種ハンター, ''Kishōshu Hantā'', '''Rare Species Hunter'''}}
+|{{CatCombo|Mystery Club|Freeze Effects Up (Sm)|Li'l UFO Cat|Lumbercat|jpname=ミステリーサークル部, ''Misuterī Sākuru Bu'', '''Mystery Circle Club'''}}
+|{{CatCombo|Dance a Little, Eat a Little|Slow Effects Up (Sm)|Li'l Whale Cat|Flamenco Cat|jpname=プチ踊り食い, ''Puchi Odorigui'', '''Petit Dance Eating'''}}
+|{{CatCombo|Tiny Ancient Hunt|Unit Attack Up (Sm)|Li'l Dragon Cat|Masai Cat|jpname=原始のちび戦士, ''Genshi no Chibi Senshi'', '''Primitive Chibi Warrior'''}}
+|{{CatCombo|Étoile minimum|Unit Defense Up (Sm)|Li'l Mythical Titan|Paris Cat|jpname=ミニマムエトワール, ''Minimamu Etowāru'', '''Minimum Etoile'''}}
+|{{CatCombo|Sacrifice|Unit Defense Up (Sm)|Summoner Satoru|Bondage Cat|jpname=生贄, ''Ikenie'', '''Sacrifice'''}}
+|{{CatCombo|One-Way Ticket to Hell|Strong Effects Up (Sm)|Hades the Deathdealer|Executioner|jpname=地獄行き片道切符, ''Jigoku Iki Katamichi Kippu'', '''One Way Ticket to Hell'''}}
+|{{CatCombo|Cat Transport|Worker Start Level Up (M)|Mighty Aethur Ltd.|Courier Cat|jpname=(株)にゃんこ運輸, ''(Kabu) Nyanko Un'yu'', '''(Stock) Cat Transport'''}}
+|{{CatCombo|Forbidden Compound|Cannon Recharge Up (Sm)|Divine Lilin π|jpname=禁断の調合, ''Kindan no Chōgō'', '''Forbidden Formulation'''}}
+|{{CatCombo|Catcademy Anthem|Research Power Up (L)|Secret Crush Cat|Tomboy Lion Cat|Chalkboard Eraser Cat|Class Rep Cat|Principal Cat|jpname=にゃんこ学園校歌斉唱, ''Nyanko Gakuen Kouka Seishou'', '''Catcademy Chorus'''}}
+|{{CatCombo|Windburst|"Knockback" Effects Up (L)|Grand Yokai Tengu|True Valkyrie Cat|Catarzan|jpname=暴風林, ''Bōfūrin'', '''Windstorm Forest'''}}
+|{{CatCombo|Pop!|Worker Max Up (M)|Choco Capsule|jpname=パッカーン, ''Pakkān'', '''Pop!'''}}
+}}
+|}
+
+===Additional Set 1===
+These Combos are unlocked after completing Into the Future Chapter 1.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Attack of the Li'ls|Unit Speed Up (M)|Li'l Cat|Li'l Tank Cat|Li'l Axe Cat|Li'l Gross Cat|Li'l Cow Cat|jpname=進撃のちびネコ, ''Shingeki no Chibi Neko'', '''Attack of the Li'l Cats'''}}
+|{{CatCombo|X-Files|Cannon Attack Up (Sm)|Neo Psychocat|UFO Cat|jpname=サイエンスフィクション, ''Saiensu Fikushon'', '''Science Fiction'''}}
+|{{CatCombo|Legs for Days|"Knockback" Effects Up (Sm)|Sexy Legs Cat|Crazed Sexy Legs Cat|jpname=ビューティフルレッグス, ''Byūtifuru Reggusu'', '''Beautiful Legs'''}}
+|{{CatCombo|Art History|"Resistant" Effects Up (Sm)|Artist Cat|Michelangelo Cat|jpname=美術教室, ''Bijutsu Kyōshitsu'', '''Fine Arts Classroom'''}}
+|{{CatCombo|Moby Dick|Unit Defense Up (Sm)|Fisherman Cat|Whale Cat|Crazed Whale Cat|jpname=ホゲーー, ''Hogēe''}}
+|{{CatCombo|Back to School|Worker Max Up (Sm)|Fish Cat|Crazed Fish Cat|Reindeer Fish Cat|jpname=お魚天国, ''Osakana Tengoku'', '''Fish Heaven'''}}
+|{{CatCombo|Eye of the Storm|Unit Defense Up (M)|Bronze Cat|Rope Jump Cat|Space Cat|Clockwork Cat|Hoop Cat|jpname=暴風一家, ''Bōfū Ikka'', '''Storm Family'''}}
+|{{CatCombo|Mo' Hawks|"Knockback" Effects Up (Sm)|Mohawk Cat|Crazed Dragon Cat|jpname=モヒカン愛好家, ''Mohikan Aikōka'', '''Mohawk Mania'''}}
+|{{CatCombo|Saucers|"Massive Damage" Effects Up (Sm)|UFO Cat|Crazed UFO Cat|jpname=未確認飛行物体, ''Mikakunin Hikō Buttai'', '''Unidentified Flying Object'''}}
+|{{CatCombo|Mecha|"Slow" Effects Up (Sm)|Major Space Cat|Cat-o-tron|jpname=ロボトモ, ''Robotomo'', '''Robo-Friends'''}}
+|{{CatCombo|Macho Man|"Strengthen" Effects Up (Sm)|Macho Leg Cat|Beefcake Cat|jpname=マッチョマン, ''Macchoman'', '''Macho Man'''}}
+|{{CatCombo|Bouncing Four|Starting Money Up (M)|Brah Cats|Pair Rope Jump Cat|jpname=4人でぴょんぴょん, ''4 Nin de Pyon Pyon'', '''Boing Boing with 4'''}}
+|{{CatCombo|Pulling Strings|Starting Money Up (Sm)|Necromancer Cat|Puppetmaster Cat|jpname=操り職人, ''Ayatsuri Shokunin'', '''Manipulator Craftsman'''}}
+|{{CatCombo|King and Queen|Worker Start Level Up (Sm)|King Dragon Cat|Ice Queen Cat|jpname=キング ＆ クイーン, ''Kingu & Kuīn'', '''King & Queen'''}}
+|{{CatCombo|Enter The Ninja|Unit Speed Up (M)|Ninja Cat|Hayabusa|jpname=ザ・ニンジャ, ''Za・Ninja'', '''The Ninja'''}}
+|{{CatCombo|Troubled Youth|"Strengthen" Effects Up (Sm)|Ururun Wolf|Akira|jpname=中二病, ''Chūnibyō'', '''Second Disease'''}}
+|{{CatCombo|Duet|Worker Start Level Up (Sm)|Moneko|Rocker Cat|jpname=デュエット, ''Duetto'', '''Duet'''}}
+|{{CatCombo|Firewatch|"Weaken" Effects Up (Sm)|Lizard Cat|Crazed Lizard Cat|Fire Squad Kachiyama|jpname=火の用心, ''Hi no Yōjin'', '''Caution with Fire'''}}
+|{{CatCombo|Pork on Rice|Unit Defense Up (Sm)|Kai|Riceball Cat|jpname=豚丼, ''Butadon'', '''Pork Bowl'''}}
+|{{CatCombo|Smiles at Cats|"Freeze" Effects Up (Sm)|Cat|Coppermine, type κ|jpname=ネコの前で見せる笑顔, ''Neko no Mae de Miseru Egao'', '''Smiles in Front of Cats'''}}
+|{{CatCombo|Lion King|"Strong" Effects Up (Sm)|Lion Cat|Madam King|jpname=獅子王, ''Shishi Ō'', '''Lion King'''}}
+|{{CatCombo|Peach 'n Banana|Unit Speed Up (Sm)|Momotaro|Cats in a Box|jpname=モモとバナナ, ''Momo to Banana'', '''Peach and Banana'''}}
+|{{CatCombo|Honnoji's Curse|"Freeze" Effects Up (Sm)|Vengeful Cat|Oda Nobunaga|jpname=本能寺の怨念, ''Honnōji no Onnen'', '''Honnoji's Grudge'''}}
+|{{CatCombo|Cool in the Heat|"Freeze" Effects Up (Sm)|Ice Cat|Cooldown Cat|jpname=暑い日も涼しく, ''Atsui Hi mo Suzushiku'', '''Cool Even on Hot Days'''}}
+|{{CatCombo|Apollo Mission|Cannon Recharge Up (Sm)|Space Cat|The Death Moon|jpname=アポロ, ''Aporo'', '''Apollo'''}}
+|{{CatCombo|Bony Bone|Research Power Up (Sm)|Necromancer Cat|Skelecat|jpname=ほねほねボーン, ''Hone Hone Bōn'', '''Bony Bony Bone'''}}
+|{{CatCombo|Chivalry and Candy|"Slow" Effects Up (M)|Vars|Pastry Cat|jpname=騎士道と菓子道, ''Kishidō to Kashidō'', '''Chivalry and Candy'''}}
+|{{CatCombo|Ratings Competition|Bounty Up (Sm)|Catman|Actress Cat|jpname=昼ドラで競演, ''Hiru Dora de Kyōen'', '''Competing in a Soap Opera'''}}
+|{{CatCombo|Cats 'n Tanks|Cannon Recharge Up (Sm)|Sports Day Cat|Doll Cats|Gentleman Bros.|jpname=ネコ＆タンクネコ, ''Neko & Tanku Neko'', '''Cat & Tank Cat'''}}
+|{{CatCombo|Headband|Cannon Attack Up (Sm)|Sports Day Cat|Grudge Cat|Momotaro|jpname=はちまき, ''Hachimaki'', '''Headband'''}}
+|{{CatCombo|Watch Me Whip|Cannon Start Level Up (Sm)|Dom Cat|Office Lady Cat|jpname=ムチ使い, ''Muchizukai'', '''Whipper'''}}
+|{{CatCombo|Masquerade|"Knockback" Effects Up (M)|Ururun Wolf|Executioner|Evil Cat|jpname=仮面舞踏会, ''Kamen Butōkai'', '''Masquerade'''}}
+|{{CatCombo|As Above, So Below|"Weaken" Effects Up (Sm)|The Flying Cat|Sodom|jpname=天地の怒り, ''Tenchi no Ikari'', '''Wrath of Heaven and Earth'''}}
+|{{CatCombo|Struck by Lightning|"Massive Damage" Effects Up (Sm)|Thundia|Skelecat|jpname=雷に打たれて, ''Kaminari ni Utarete'', '''Struck by Lightning'''}}
+|{{CatCombo|Neckless Chic|"Knockback" Effects Up (Sm)|Jamiera Cat|Balalan Pasalan|jpname=首なしスタイル, ''Kubi Nashi Sutairu'', '''Neckless Style'''}}
+|{{CatCombo|Blue Lagoon|Bounty Up (Sm)|Guardian Gamereon|Island Cat|jpname=南国諸島, ''Nangoku Shotō'', '''Tropical Islands'''}}
+|{{CatCombo|Jungle Women|"Strong" Effects Up (Sm)|Ururun Wolf|Kuu|jpname=犬猿の仲, ''Ken'en no Naka'', '''Enmity'''}}
+|{{CatCombo|Dreams of Flying|"Knockback" Effects Up (Sm)|The Grateful Crane|Flying Ninja Cat|jpname=空への憧れ, ''Sora e no Akogare'', '''Longing for the Sky'''}}
+|{{CatCombo|Offering to the Gods|Base Defense Up (M)|Shining Amaterasu|Sashimi Cat|jpname=神へのお供え, ''Kami e no Osonae'', '''Offering for God'''}}
+|{{CatCombo|Arm Day Everyday|Unit Defense Up (M)|Titan Cat|Kung Fu Cat|Beefcake Cat|Tesalan Pasalan|jpname=腕自慢, ''Ude Jiman'', '''Bragging Arms'''}}
+|{{CatCombo|Nationals|"Slow" Effects Up (Sm)|Banner Cat|Vaulter Cat|jpname=全国大会出場, ''Zenkoku Taikai Shutsujō'', '''Participation in Nationals'''}}
+|{{CatCombo|Trainspotting|Cannon Start Level Up (Sm)|Express Cat|Cameraman Cat|jpname=撮り鉄, ''Tori Tetsu'', '''Snap Shooting Trains'''}}
+|{{CatCombo|Chance of Tornado|"Resistant" Effects Up (Sm)|Aer|Catornado|jpname=爆風ときどき竜巻, ''Bakufū Tokidoki Tatsumaki'', '''Strong Winds With Chance of Tornado'''}}
+|{{CatCombo|Scantily Clad|"Massive Damage" Effects Up (M)|Pharaoh Reika|Skirt Cat|Panties Cat|jpname=薄着コーデ, ''Usugi Kōde'', '''Skimpy Code'''}}
+|{{CatCombo|Cosplay Fans|"Strengthen" Effects Up (M)|Wolf Princess Deale|Ritual Cat|jpname=コスプレファン, ''Kosupure Fan'', '''Cosplay Fan'''}}
+|{{CatCombo|Working Vacation|Massive Damage Effects Up (Sm)|Bath Cat|Heavy Assault C.A.T.|jpname=ワーケーション, ''Wākēshon'', '''Workation'''}}
+|{{CatCombo|Going Stones|Unit Defense Up (Sm)|Curling Cat|Gravi|jpname=ゴーイングストーンズ, ''Gōingusutōnzu'', '''Going Stones'''}}
+|{{CatCombo|Dream Box|Massive Damage Effects Up (Sm)|Adventurer Kanna|Heavy Assault C.A.T.|jpname=夢の箱, ''Yume no Hako'', '''Box of Dreams'''}}
+}}
+|}
+
+===Additional Set 2===
+These Combos are unlocked after completing Into the Future Chapter 2.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Crazy Hearts|Starting Money Up (L)|Crazed Cat|Crazed Tank Cat|Crazed Axe Cat|Crazed Gross Cat|Crazed Cow Cat|jpname=進撃の狂乱ネコ, ''Shingeki no Kyōran Neko'', '''Attack of the Crazed Cats'''}}
+|{{CatCombo|Power of Darkness|"Weaken" Effects Up (M)|Dark Cat|Dark Lazer|jpname=暗黒の力, ''Ankoku no Chikara'', '''Power of Darkness'''}}
+|{{CatCombo|Gross!!!|"Freeze" Effects Up (M)|Gross Cat|Crazed Gross Cat|Creepmallow|jpname=キモモモ, ''Kimomomo'', '''Grossssss'''}}
+|{{CatCombo|Nyanko, Inc.|Worker Start Level Up (Sm)|Salaryman Cat|Office Lady Cat|jpname=株式会社にゃんこ, ''Kabushikigaisha Nyanko'', '''Nyanko Limited'''}}
+|{{CatCombo|Seasons of Love|"Strong" Effects Up (M)|Maiden Cat|Koi Cat|Madam Bride|jpname=恋の季節, ''Koi no Kisetsu'', '''Season of Love'''}}
+|{{CatCombo|Flash in the Pan|"Knockback" Effects Up (Sm)|Dancing Flasher Cat|Gentleman Cat|jpname=露出狂, ''Roshutsukyō'', '''Flasher'''}}
+|{{CatCombo|Blossoming|"Resistant" Effects Up (Sm)|Wargod Keiji|Adult Cat|jpname=花見, ''Hana Mi'', '''Viewing Blossoms'''}}
+|{{CatCombo|Bento Special|Starting Money Up (M)|Sashimi Cat|Sushi Cat|jpname=和定食, ''Kazu Teishoku'', '''Japanese Set Meal'''}}
+|{{CatCombo|Speak of the Devil|Bounty Up (M)|Lesser Demon Cat|Evil Cat|jpname=鬼と呼ばれて, ''Oni to Yobarete'', '''Calling an Oni'''}}
+|{{CatCombo|Classical Arts|"Slow" Effects Up (Sm)|Puppetmaster Cat|Drama Cats|jpname=伝統芸能, ''Dentō Geinō'', '''Traditional Culture'''}}
+|{{CatCombo|Sportswoman|Unit Defense Up (Sm)|Sportsgirl Cat|Butterfly Cat|jpname=スポーツ女子, ''Supōtsu Joshi'', '''Sportswomen'''}}
+|{{CatCombo|Gentlemen|Worker Max Up (Sm)|Gentleman Cat|Phantom Thief Cat|jpname=ジェントルマン, ''Jentoruman'', '''Gentleman'''}}
+|{{CatCombo|Spinners|Unit Speed Up (Sm)|Tricycle Cat|Koi Cat|jpname=風車, ''Kazaguruma'', '''Windmill'''}}
+|{{CatCombo|Longnecks|Worker Start Level Up (M)|Giraffe Cat|Kubilan Pasalan|jpname=ロングネック, ''Rongu Nekku'', '''Long Neck'''}}
+|{{CatCombo|Feel the Dance|Unit Defense Up (Sm)|Samba Cat|Hip Hop Cat|Dancer Cat|jpname=ダンサーズ, ''Dansāzu'', '''Dancers'''}}
+|{{CatCombo|Special Treatment|"Knockback" Effects Up (M)|Nurse Cat|Sick Cat|jpname=お薬出しておきますね, ''O Kusuri Dashiteokimasune'', '''I'll Give You Medicine'''}}
+|{{CatCombo|Horror Movies|"Resistant" Effects Up (M)|Zombie Cat|Vengeful Cat|Sadako Cat|jpname=ホラー映画, ''Horā Eiga'', '''Horror Movies'''}}
+|{{CatCombo|Cat High|"Weaken" Effects Up (Sm)|Banner Cat|Delinquent Cat|Maiden Cat|jpname=にゃんこ学園, ''Nyanko Gakuen'', '''Cat Academy'''}}
+|{{CatCombo|Spearfight|"Freeze" Effects Up (Sm)|Princess Kaguya|Valkyrie Cat|jpname=槍試合, ''Yari Shiai'', '''Spear Match'''}}
+|{{CatCombo|Heart Beat|"Slow" Effects Up (Sm)|The White Rabbit|Rope Jump Cat|jpname=心がぴょんぴょん, ''Kokoro ga Pyon Pyon'', '''Hopping Heart'''}}
+|{{CatCombo|Dog Gods|Cannon Attack Up (Sm)|Ururun Wolf|Anubis the Protector|jpname=犬神様, ''Inugami-sama'', '''Dog Gods'''}}
+|{{CatCombo|Blessed Strength|Cannon Start Level Up (M)|Holy Valkyrie Cat|Megidora|jpname=聖なる力, ''Seinaru Chikara'', '''Holy Power'''}}
+|{{CatCombo|Like a Record, Baby|Cannon Attack Up (M)|Wargod Masamune|Catornado|Rope Jump Cat|jpname=ぐるぐる大回転, ''Guru Guru Dai Kaiten'', '''Round and Round'''}}
+|{{CatCombo|Brunch Rush|Cannon Recharge Up (Sm)|Waitress Cat|Cat Toaster|jpname=純喫茶, ''Jun Kissa'', '''Coffee Shop'''}}
+|{{CatCombo|Cutting Edge|Unit Speed Up (Sm)|Strike Unit R.E.I.|Drone Cat|jpname=人工知能, ''Jinkōchinō'', '''Artificial Intelligence'''}}
+|{{CatCombo|Contest of Champs|Unit Attack Up (Sm)|Welterweight Cat|Sumo Cat|Kung Fu Cat|Wrestling Cat|jpname=最強格闘技決定戦, ''Saikyō Kakutōgi Ketteisen'', '''Strongest Martial-Arts Finals'''}}
+|{{CatCombo|High Voltage|Unit Speed Up (Sm)|Voli|Catway|jpname=暴走高圧バッテリー, ''Bōsō Kōatsu Batterī'', '''High-Voltage Battery Out of Control'''}}
+|{{CatCombo|Part-Time Coworkers|Unit Defense Up (Sm)|Afterschool Sakura|Waitress Cat|jpname=バイト仲間, ''Baito Nakama'', '''Part-Time Coworkers'''}}
+|{{CatCombo|Hunting Club|Slow Effects Up (Sm)|Terun|Ururun Wolf|jpname=猟友会, ''Ryōyūkai'', '''Hunting Companions'''}}
+}}
+|}
+
+===Additional Set 3===
+These Combos are unlocked after completing Into the Future Chapter 3.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Lolly Fanciers|"Slow" Effects Up (Sm)|Lollycat|Li'l Nyandam|jpname=ぺろきゃん愛好家, ''Perokyan Aikōka'', '''Lollipop Mania'''}}
+|{{CatCombo|Master-Apprentice|"Freeze" Effects Up (Sm)|Kung Fu Cat|Kung Fu Cat X|jpname=師範といっしょ, ''Shihan to Issho'', '''With the Instructor'''}}
+|{{CatCombo|Three Kings|Unit Defense Up (Sm)|Madam King|King Dragon Cat|Lion Cat|jpname=3匹の王, ''3 Hiki no Ō'', '''3 Animal Kings'''}}
+|{{CatCombo|Girlish Innocents|Base Defense Up (M)|Maiden Cat|Juliet Cat|jpname=乙女, ''Otome'', '''Maiden'''}}
+|{{CatCombo|Headbanger's Ball|Starting Money Up (M)|Cow Cat|Crazed Cow Cat|Rocker Cat|jpname=チームヘッドバンギング, ''Chīmu Heddo Bangingu'', '''Team Head Banging'''}}
+|{{CatCombo|Showoffs|Worker Max Up (Sm)|Unicycle Cat|Showoff Cat|jpname=大道芸猫, ''Daidō Gei Neko'', '''Street Performance Cat'''}}
+|{{CatCombo|Sweets|Cannon Recharge Up (M)|Lollycat|Pastry Cat|Marshmallow Cat|jpname=スイーツ, ''Suītsu'', '''Sweets'''}}
+|{{CatCombo|Pointy Bits|"Strengthen" Effects Up (Sm)|Togelan Pasalan|King Dragon Cat|jpname=ツンツンツン, ''Tsun Tsun Tsun'', '''Poke Poke Poke'''}}
+|{{CatCombo|Yesterday's Enemy|Cannon Start Level Up (M)|Ururun Wolf|Li'l Nyandam|Red Riding Mina|jpname=昨日の敵は今日の友, ''Kinō no Teki wa Kyō no Tomo'', '''Yesterday's Enemy Is Today's Friend'''}}
+|{{CatCombo|Punchpunchpunch!|Unit Attack Up (M)|Titan Cat|Crazed Titan Cat|Maiden Cat|Kesalan Pasalan|jpname=パンチパンチパンチ！, ''Panchi Panchi Panchi！'', '''Punch Punch Punch!'''}}
+|{{CatCombo|Lust for Battle|Unit Attack Up (Sm)|Axe Cat|Ururun Wolf|Lesser Demon Cat|jpname=戦闘狂の集い, ''Sentōkyō no Tsudoi'', '''Gathering of Battle Enthusiasts'''}}
+|{{CatCombo|Punish the Lewd|"Resistant" Effects Up (Sm)|Gentleman Cat|Thunder God Zeus|jpname=変態紳士に天罰を, ''Hentai Shinshi ni Tenbatsu o'', '''Punishing a Perverted Gentleman'''}}
+|{{CatCombo|Team of Two|Unit Defense Up (M)|Figure Skating Cats|Doll Cats|Bean Cats|Koi Cat|Pair Rope Jump Cat|jpname=二人一組, ''Futari Hito Kumi'', '''Two People One Team'''}}
+|{{CatCombo|Double Typhoon|"Massive Damage" Effects Up (Sm)|Windy|Catornado|jpname=ダブルタイフーン, ''Daburu Taifūn'', '''Double Typhoon'''}}
+|{{CatCombo|Trick of the Wind|"Knockback" Effects Up (Sm)|Catornado|Skirt Cat|jpname=風のイタズラ, ''Kaze no Itazura'', '''Wind's Mischief'''}}
+|{{CatCombo|IT Crowd|Bounty Up (Sm)|Catway|Nerd Cat|jpname=IT系, ''IT Kei'', '''IT Oriented'''}}
+|{{CatCombo|Aerial Recon|Research Power Up (M)|Bird Cat|Crazed Bird Cat|Flying Ninja Cat|Drone Cat|jpname=空中偵察部隊, ''Kūchū Teisatsu Butai'', '''Aerial Recon Force'''}}
+|{{CatCombo|Under Arrest|"Slow" Effects Up (Sm)|The White Rabbit|Prisoner Cat|jpname=タイホしちゃうぞ☆, ''Taiho Shichauzo ☆'', '''I'm Going to Arrest You ☆'''}}
+|{{CatCombo|Cat Circus|Starting Money Up (M)|Lion Cat|Ururun Wolf|Warlock and Pierre|jpname=にゃんこサーカス, ''Nyanko Sākasu'', '''Cat Circus'''}}
+|{{CatCombo|Checkered Skirt|Research Power Up (Sm)|Skirt Cat|Kalisa, type χ|jpname=チェックのスカート, ''Chekku no Sukāto'', '''Checkered Skirt'''}}
+|{{CatCombo|Future of War|"Strong" Effects Up (Sm)|Mekako Saionji|Drone Cat|jpname=お騒がせメカ, ''O Sawagase Meka'', '''Noise of Mecha'''}}
+|{{CatCombo|Bazooka Bros.|Cannon Attack Up (Sm)|Super Mr.|Red Riding Mina|jpname=Wバズーカ, ''W Bazūka'', '''Double Bazooka'''}}
+|{{CatCombo|Rivalry|Worker Start Level Up (Sm)|Red Riding Mina|Valkyrie Cat|jpname=ライバル宣言, ''Raibaru Sengen'', '''Rival Declaration'''}}
+|{{CatCombo|Heavenly Kings|"Massive Damage" Effects Up (Sm)|Immortal Yukimura|Awakened Bahamut Cat|Manic Lion Cat|jpname=韋駄天トリオ, ''Idaten Torio'', '''Heavenly Trio'''}}
+|{{CatCombo|Volcanic Fury|Cannon Start Level Up (M)|Takeda Shingen|Manic Island Cat|jpname=風林火山, ''Fūrinkazan'', '''Wind Forest Fire Mountain'''}}
+|{{CatCombo|Gang of Killers|Bounty Up (Sm)|The Black Cat|Red Riding Mina|jpname=暗殺者コンビ, ''Ansatsusha Konbi'', '''Assassin Pair'''}}
+|{{CatCombo|Blessed Business|Worker Max Up (M)|Splendid Ganesha|Catway|jpname=商売繁盛祈願, ''Shōbai Hanjō Kigan'', '''Pray for Business Prosperity'''}}
+|{{CatCombo|Commuter Life|Worker Max Up (Sm)|Salaryman Cat|Express Cat|jpname=出張辞令, ''Shucchō Jirei'', '''Business Trip Resignation'''}}
+|{{CatCombo|Take Me Out|Unit Defense Up (Sm)|Banner Cat|Little Leaguer Cat|Solar Cat|jpname=真夏の甲子園, ''Manatsu no Kōshien'', '''Midsummer Baseball Championship'''}}
+|{{CatCombo|Put On Ice|Unit Speed Up (Sm)|Figure Skating Cats|Curling Cat|jpname=氷にかける, ''Kōri ni Kakeru'', '''On Ice'''}}
+|{{CatCombo|Greatswords|Cannon Attack Up (M)|Miyamoku Musashi|Takeda Shingen|jpname=大剣両断, ''Taiken Ryōdan'', '''Large Sword Cut in Two'''}}
+|{{CatCombo|Bad Guys|Research Power Up (L)|Lasvoss|Li'l Nyandam|Killer Cat|jpname=悪に染まりし者達, ''Aku ni Somarishi Mono Tachi'', '''Those Absorbed in Darkness'''}}
+|{{CatCombo|Cat Ears|"Slow" Effects Up (M)|Narita Kaihime|Red Riding Mina|Moneko|jpname=猫耳は正義, ''Neko Mimi wa Seigi'', '''Cat Ears Are Justice'''}}
+|{{CatCombo|Clear Skies|"Strong" Effects Up (Sm)|Golfer Cat|Catellite|jpname=あした天気になーれ, ''Ashita Tenki Nināre'', '''Good Weather Tomorrow'''}}
+|{{CatCombo|Drinking Age|Unit Speed Up (Sm)|Vodka Cat|Future Cat|jpname=おさけは二十歳になってから, ''O Sake wa Nijussai ni Natte Kara'', '''No Alcohol Until Drinking Age'''}}
+|{{CatCombo|Warriors of Justice|Cannon Recharge Up (L)|Kinrangers RoboForce|Space Marine Cat|Brave Cat|jpname=正義の戦士, ''Seigi no Senshi'', '''Warrior of Justice'''}}
+|{{CatCombo|Land-Air Assault|Unit Attack Up (M)|Obliterator Diabolosa|Manic Flying Cat|jpname=空陸連携作戦, ''Kūriku Renkei-Sakusen'', '''Coordinated Air-Land Operation'''}}
+|{{CatCombo|Berserkers|Bounty Up (L)|Immortal Amakusa|Awakened Musashi|Manic Jamiera Cat|jpname=バーサーカーズ, ''Bāsākāzu'', '''Berserkers'''}}
+|{{CatCombo|Truant Angel|"Strong" Effects Up (Sm)|Almighty Lucifer|Cat Cactus|jpname=サボったエンジェル, ''Sabotta Enjeru'', '''Procrastinating Angel'''}}
+|{{CatCombo|Dark End to the Holiday|"Resistant" Effects Up (M)|Yaminora|Tourist Cat|jpname=暗黒の連休明け, ''Ankoku no Renkyū Ake'', '''Dark Ending of a Long Weekend'''}}
+|{{CatCombo|Elohim, Essaim|"Slow" Effects Up (L)|Devil Hunter Satoru|Manic Dark Cat|Jamiera Cat|Li'l Flying Cat|jpname=エロイムエッサイム, ''Eroimu Essaimu'', '''Elohim Essaim'''}}
+|{{CatCombo|Wicked Flames|Unit Defense Up (M)|God-Emperor Hevijak|Gas Mask Cat|Radical Cat|jpname=邪龍黒炎波, ''Jaryū Kokuenha'', '''Evil Dragon Black Flame Wave'''}}
+|{{CatCombo|Bustin' Phantoms|Research Power Up (Sm)|Grand Chunchun Haunters|jpname=妖怪バスターズ！, ''Yōkai Basutāzu!'', '''Yokai Busters!'''}}
+|{{CatCombo|Violated Chivalry|"Massive Damage" Effects Up (Sm)|Demon Knight Kyklops|jpname=けがれなき騎士道, ''Kegarenaki Kishidō'', '''Pure Chivalry'''}}
+|{{CatCombo|Anger Management|Worker Start Level Up (M)|Ragelan Pasalan|Cat Researcher|jpname=アンガーマネジメント, ''Angā Manejimento'', '''Anger Management'''}}
+|{{CatCombo|Go to Hell!|Weaken Effects Up (L)|Hell Commissioner Emma|Harbinger Cat|Awakened Mina|jpname=ゴートゥーヘル！, ''Gō Tū Heru!'', '''Go to Hell!'''}}
+|{{CatCombo|Like the Wind|Freeze Effects Up (M)|Wargod Hanzo|Flying Ninja Cat|Miasma Cat|jpname=これにてドロン, ''Kore ni te Doron'', '''Now Gone'''}}
+|{{CatCombo|Full Transparency|Bounty Up (M)|Blizana|Macho Crystal Cat|jpname=ありのままの, ''Ari no Mamano'', '''As It Was'''}}
+|{{CatCombo|Dragon Aquarium|Unit Speed Up (M)|Sea Serpent Daliasan|Li'l Fish Cat|jpname=海龍館, ''Kairyūkan'', '''Sea Serpent Palace'''}}
+|{{CatCombo|Zero-Gravity Tour|Cannon Recharge Up (L)|Extraterrestrial Envanz|Li'l UFO Cat|Drone Cat|jpname=無重力体験ツアー, ''Mujūryoku Taiken Tsuā'', '''Zero Gravity Tour'''}}
+|{{CatCombo|#TopSecret|"Critical" Rate Up (Sm)|Sacred Blade Sakura Z|jpname=＃極秘任務, ''#Gokuhi Ninmu'', '''#SecretMission'''|link=TopSecret (Combo)}}
+|{{CatCombo|Dark Contract|Starting Money Up (L)|Illusory Guardian Vega|Dark Lazer|Li'l Dark Cat|Assassin BearCat|jpname=闇を秘めし契約者, ''Yami o Himeshi Keiyakusha'', '''Contractors with Hidden Darkness'''}}
+|{{CatCombo|David Beats Goliath|Massive Damage Effects Up (M)|Issun Boshi|Li'l Cat|Li'l Titan Cat|jpname=小よく犬を制す, ''Shou Yoku Inu o Seisu'', '''The Li'ls Controlling Dogs'''}}
+|{{CatCombo|Thunder Heel Drop|Unit Defense Up (Sm)|Thunder Jack|Li'l Macho Legs Cat|jpname=イナズマヒールドロップ, ''Inazuma Hīrudoroppu'', '''Lightning Heel Drop'''}}
+|{{CatCombo|Sigh of Relief|Research Power Up (M)|Kaolan Pasalan|Crazed Dragon Cat|jpname=ホッと一息, ''Hotto Hitoiki'', '''A Moment to Breathe'''}}
+|{{CatCombo|Traffic Violation|"Resistant" Effects Up (M)|Mighty Sphinx Korps|Cat Gang|Biker Cat|jpname=違反者講習, ''Ihansha Kōshū'', '''Traffic Offender Course'''}}
+|{{CatCombo|Steel Tennis|Unit Speed Up (M)|Tekachi|Racquet Cat|jpname=鋼式テニス, ''Kōshiki Tenisu'', '''Steel Tennis'''}}
+|{{CatCombo|Wartime Burial|"Strengthen" Effects Up (Sm)|Lightmother Aset|Holy Valkyrie Cat|jpname=戦地直葬, ''Senchichokusō'', '''Battlefield Burial'''}}
+|{{CatCombo|Insatiable Hunger|Freeze Effects Up (Sm)|Gourmand Ninja Girl Tomoe|jpname=忍びない食欲, ''Shinobinai Shokuyoku'', '''Unbearable Appetite'''}}
+|{{CatCombo|Cosmic Warriors|Starting Money Up (M)|Pegasa|Major Space Cat|jpname=めぐりあう戦士, ''Meguriau Senshi'', '''Meeting of Warriors'''}}
+|{{CatCombo|By Gun and Sword|"Knockback" Effects Up (M)|Akechi Mitsuhide|Mr.|jpname=銃刀法, ''Jūtōhō'', '''Firearms and Swords Control Law'''}}
+|{{CatCombo|Royal Barrage|Unit Attack Up (M)|Gunduros|Madam King|Knight Cat|jpname=王国砲壊, ''Ōkoku Hōkai'', '''Collapsing Kingdom'''}}
+|{{CatCombo|Primal Fear|"Resistant" Effect UP (M)|Ravenous Cherry|Cadaver BearCat|Cat Chief|jpname=闇を秘めし契約者, ''Inshū-mura''}}
+|{{CatCombo|Wilderness Wail|"Massive Damage" Effects Up (Sm)|Dynasaurus Cat|Catarzan|jpname=密林の叫び, ''Mitsurin no Sakebi'', '''Cry of The Jungle'''}}
+|{{CatCombo|Traffic Safety Week|"Slow" Effects Up (M)|Mech Patrol Axel|Biker Cat|jpname=交通安全週間, ''Kōtsū Anzen Shūkan'', '''Traffic Safety Week'''}}
+}}
+|}
+
+===Additional Set A===
+Those Combos are unlocked after reaching [[User Rank]] 1450.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Immodest Modesty|Worker Max Up (Sm)|Loincloth Cat|Fisherman Cat|jpname=ふんどし祭, ''Fundoshi Matsuri'', '''Loincloth Festival'''}}
+|{{CatCombo|Jibbly Studio|Cannon Attack Up (M)|The Flying Cat|Mythical Titan Cat|Witch Cat|jpname=スタジオニャブリ, ''Sutajio Nyaburi'', '''Studio Nyabli'''}}
+|{{CatCombo|Pumpkinpants|"Freeze" Effects Up (Sm)|Sexy Legs Cat|Cat O'Lantern|jpname=カボチャパンツ, ''Kabocha Pantsu'', '''Pumpkin Pants'''}}
+}}
+|}
+
+===Additional Set B===
+Those Combos are unlocked after reaching User Rank 2150.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Paranormal Activity|Worker Start Level Up (M)|Wheel Cat|Vengeful Cat|Evil Cat|jpname=百鬼夜行, ''Hyakkiyakō'', '''Paranormal Activity'''}}
+|{{CatCombo|Liver Trouble|Cannon Attack Up (Sm)|Adult Cat|Drunken Master Cat|jpname=酒乱若人, ''Shuran Wakōdo'', '''Sake Young Man'''}}
+|{{CatCombo|Age of Dinosaurs|Base Defense Up (Sm)|Lizard Cat|Jurassic Cat|jpname=恐竜時代, ''Kyōryū Jidai'', '''Age of Dinosaurs'''}}
+}}
+|}
+
+===Additional Set C===
+Those Combos are unlocked after reaching User Rank 2700.
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|Double Date|"Massive Damage" Effects Up (Sm)|Figure Skating Cats|Doll Cats|jpname=ダブルデート, ''Daburu Dēto'', '''Double Date'''}}
+|{{CatCombo|Lazing About|"Strong" Effects Up (Sm)|Kotatsu Cat|Adult Cat|jpname=なまけ者たち, ''Namakemonotachi'', '''Lazy People'''}}
+|{{CatCombo|Curses!!!|"Freeze" Effects Up (Sm)|Vengeful Cat|Grudge Cat|jpname=うーらーめーしーにゃ, ''U Rā Mē Shī nya'', '''Eennvvyy'''}}
+}}
+|}
+
+===Event Combos===
+These Combos include units from limited events such as [[Collaboration Events]] or [[Anniversary|Anniversaries]].
+{| class="wikitable combo-table basic mw-collapsible mw-collapsed" style="width:100%"
+! Combo Name
+! Cats
+! Combo Effect
+{{Combos|format=intable
+|{{CatCombo|My Very Best Friend|"Witch Killer" Effects Up (XL)|Li'l Madoka|Li'l Homura|jpname=最高の友達, ''Saikō no Tomodachi'', '''Best Friends'''}}
+|{{CatCombo|You Will Find Happiness|"EVA Angel Killer" Effects Up (XL)|Shinji & Cat|Kaworu & Cat|jpname=今度こそ君を幸せに, ''Kondo koso Kimi o Shiawase ni'', '''Make You Happy This Time'''}}
+|{{CatCombo|Thanks for All|Bounty Up (Sm)|Maneki Cat|jpname=感謝御礼, ''Kansha Orei'', '''Gratitude and Thanks'''}}
+|{{CatCombo|I Want To Be A Teacher|Cannon Recharge Up (Sm)|Cat Boy|jpname=先生になりたいでにゃ～る, ''Sensei ni Naritaide nya~ru'', '''I Want To Be A Teacher'''}}
+|{{CatCombo|Spinning Out|Starting Money Up (Sm)|Gacha Cat|jpname=回っております, ''Mawatte Orimasu'', '''I'm Spinning'''}}
+|{{CatCombo|Don't Mess With Me!|Worker Start Level Up (M)|Kunio-kun|jpname=なめんなよ！, ''Namennayo!'', '''Don't Underestimate Me!'''}}
+|{{CatCombo|Triple Single|Unit Speed Up (M)|Cat Giraffe Modoki|Catnip Tricky|Catnip Dragon|jpname=３連単, ''Sa Ren Tan'', '''Triple Single'''}}
+|{{CatCombo|Bring it On!|Unit Defense Up (Sm)|High School Kingpin Riki|jpname=かかってきやがれ！, ''Kakatte Kiyagare!'', '''Bring It On!'''}}
+|{{CatCombo|Red Strike|"Kaijin Slayer" Effects Activated|Scarf Cat|jpname=レッドパワー, ''Reddo Pawā'', '''Red Power'''|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|Blue Strike|Research Power Up (XL)|Fedora Cat|jpname=ブルーパワー, ''Burū Pawā'', '''Blue Power'''|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|Yellow Strike|"Immune to Waves" Effects Activated|Helmet Cat|jpname=イエローパワー, ''Ierō Pawā'', '''Yellow Power'''|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|Green Strike|Deploy Cost Down (XL)|Goggles Cat|jpname=グリーンパワー, ''Gurīn Pawā'', '''Green Power'''|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|Pink Strike|Unit Speed Up (XL)|Ribbon Cat|jpname=モモパワー, ''Momo Pawā'', '''Pink Power'''|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|Gold Silver Strike|"Immune to Surge" Effects Activated|Barista Cat|Commander Cat (13th)|jpname=キンギンパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+|{{CatCombo|PAC-MAN Fever|"Resistant" Effects Up (Sm)|PAC-MAN|jpname=パックマンフィーバー, ''Pakkuman Fībā'', '''Pac-Man Fever'''}}
+}}
+|}
+
+==Combo Effects==
+Combo effects are generally universal, but can rarely be limited to certain units. As of [[Version 15.4 Update|Version 15.4]], the only unit-specific Combos are the [[:Category:Nyanko Rangers|Nyanko Rangers]]' Combos, which exclusively affect Nyanko Rangers.
+
+===Scaling===
+These effects come in varying sizes: Sm (weakest), M, L and XL (strongest). Some effect and size combinations are unimplemented, including most XL effects.
+
+'''Unit Attack Up''': Active units have increased attack power.
+
+'''Unit Defense Up''': Active units have increased defensive power.
+
+'''Unit Speed Up''': Active units have faster movement.
+
+'''Cannon Start Level Up''': Begins the stage with the [[Cat Cannon]] partially charged.
+
+'''Worker Start Level Up''': [[Worker Cat]] begins the stage at a higher level. The battle item "Rich Cat" has priority over this skill.
+
+'''Starting Money Up''': Begin the stage with money ready in your wallet.
+
+'''Cannon Attack Up''': Damage to enemies from the Cat Cannon is increased.
+
+'''Cannon Recharge Up''': Cat Cannon will recharge at a faster rate. There is a minimum recharge time of 950f or 31.67 seconds that cannot be shortened further through Combos.
+
+'''Worker Max Up''': Increases the size of your wallet.
+
+'''Base Defense  Up''': Increases the [[Cat Base]]'s health.
+
+'''Research Power Up''': Amount of time before a Cat Unit can be deployed again is decreased. There is a minimum recharge time of 60f or 2 seconds that cannot be shortened further through Combos.
+
+'''Bounty Up''': Bonus money received from defeating enemies is increased.
+
+'''XP Rewards''': XP received upon clearing a stage is increased.
+
+'''"Strong" Effects Up''': Units who are "Strong" against certain enemies have their damage increased even further, and damage received decreased vs. that type.
+
+'''"Massive Damage" Effects Up''': Units with "Massive Damage" against enemies have damage increased even further against that enemy type.
+
+'''"Resistant" Effects Up''': Units with "Resistant" against enemies have damage received from that enemy type decreased even further.
+
+'''"Knockback" Effects Up''': Units with "Knockback" abilities against enemies have the distance of their knockback effects increased vs. that enemy type.
+
+'''"Slow" Effects Up''': Units with "Slow" abilities against enemies have the duration of their Slow effect increased vs. that enemy type.
+
+'''"Freeze" Effects Up''': Units with "Freeze" abilities against enemies have the duration of their Freeze effect increased vs. that enemy type.
+
+'''"Weaken" Effects Up''': Units with "Weaken" abilities against enemies have the duration of their Weaken effect increased vs. that enemy type.
+
+'''"Strengthen" Effects Up''': Units with "Strengthen" abilities will be able to increase their attack power even further beyond their normal amount.
+
+'''"Critical Chance Up"''': Units with Critical Attack will gain higher critical rate.
+
+'''"Cost Down"''': [[:Category:Nyanko Rangers|Nyanko Rangers]] will cost less to deploy.
+
+'''"EVA Angel Killer" Effects Up''': Units with "EVA Angel Killer" abilities will deal even more damage to and take even less damage from [[:Category:EVA Angel Enemies|EVA Angels]].
+
+'''"Witch Killer" Effects Up''': Units with "Witch Killer" abilities will deal even more damage to and take even less damage from [[:Category:Witch Enemies|Witches]].
+
+{| class="wikitable"
+!Cat Combo
+!Sm Boost
+!M Boost
+!L Boost
+!XL Boost
+|-
+|'''Unit Attack Up'''
+|Attack +10%
+|Attack +15%
+|Attack +20%
+|Attack +30%
+|-
+|'''Unit Defense Up'''
+|Health +10%
+|Health +20%
+|Health +30%
+|Health +50%
+|-
+|'''Unit Speed Up'''
+|Speed +10%
+|Speed +15%
+|Speed +20%
+|Speed +30%
+|-
+|'''Cannon Start Level Up'''
+|Start at 20%
+|Start at 40%
+|Start at 60%
+|Start at 100%
+|-
+|'''Worker Start Level Up'''
+|Wallet Lv +1
+|Wallet Lv +2
+|Wallet Lv +3
+|Wallet Lv +4
+|-
+|'''Starting Money Up'''
+|Start with 300¢
+|Start with 500¢
+|Start with 1000¢
+|Start with 2000¢
+|-
+|'''Cannon Attack Up'''
+|Cannon DMG +20%
+|Cannon DMG +50%
+|Cannon DMG +100%
+|Cannon DMG +200%
+|-
+|'''Cannon Recharge Up'''
+|Cannon recharge 10s faster
+|Cannon recharge 15s faster
+|Cannon recharge 20s faster*
+|???
+|-
+|'''Worker Max Up'''
+|Wallet Max +10%
+|Wallet Max +20%
+|Wallet Max +30%
+|Wallet Max +50%
+|-
+|'''Base Defense  Up'''
+|Base Health +20%
+|Base Health +50%
+|Base Health +100%
+|Base Health +200%
+|-
+|'''Research Power Up'''
+|Recharge time -26f (0.87 sec)
+|Recharge time -52f (1.73 sec)
+|Recharge time -79f (2.63 sec)
+|Recharge time -131f (4.37 sec)
+|-
+|'''Bounty Up'''
+|Money Loot +10%
+|Money Loot +20%
+|Money Loot +30%
+|Money Loot +50%
+|-
+|'''XP Rewards Up'''
+|XP +10%
+|XP +15%
+|XP +20%
+|XP +30%
+|-
+|'''"Strong" Effects Up'''
+|Damage & Damage Reduction +10%
+|Damage & Damage Reduction +20%
+|Damage & Damage Reduction +30%
+|Damage & Damage Reduction +50%
+|-
+|'''"Massive Damage" Effects Up'''
+|Damage +10%
+|Damage +20%
+|Damage +30%
+|Damage +50%
+|-
+|'''"Resistant" Effects Up'''
+|Damage Reduction +10%
+|Damage Reduction +20%
+|Damage Reduction +30%
+|Damage Reduction +50%
+|-
+|'''"Knockback" Effects Up'''
+|Knock Distance +10%
+|Knock Distance +20%
+|Knock Distance +30%
+|Knock Distance +50%
+|-
+|'''"Slow" Effects Up'''
+|Ability Duration +10%
+|Ability Duration +20%
+|Ability Duration +30%
+|Ability Duration +50%
+|-
+|'''"Freeze" Effects Up'''
+|Ability Duration +10%
+|Ability Duration +20%
+|Ability Duration +30%
+|Ability Duration +50%
+|-
+|'''"Weaken" Effects Up'''
+|Ability Duration +10%
+|Ability Duration +20%
+|Ability Duration +30%
+|Ability Duration +50%
+|-
+|'''"Strengthen" Effects Up'''
+|Damage Boost Effect +20%
+|Damage Boost Effect +30%
+|Damage Boost Effect +50%
+|Damage Boost Effect +100%
+|-
+|'''"Critical" Chance Up'''
+|Critical Chance +1%
+|Critical Chance +2%
+|Critical Chance +3%
+|Critical Chance +4%
+|-
+|'''"Cost Down"'''
+|Unit costs reduced by 5%
+|Unit costs reduced by 10%
+|Unit costs reduced by 15%
+|Unit costs reduced by 20%
+|}
+<nowiki>*</nowiki>The [[Cat Cannon]] recharges in 50 seconds with all upgrades at maximum, so it will effectively only reduce the cannon's recharge by 18.33 seconds.
+
+===Non-scaling===
+These effects give units abilities or situational buffs, and do not have different sizes.
+
+'''"Kaijin Slayer"''': [[:Category:Nyanko Rangers|Nyanko Rangers]] will deal 2.5x damage against and take 0.4x damage from [[:Category:Kaijin Enemies|Kaijins]].
+
+'''"Wave Immunity"''': Nyanko Rangers are granted the "Immune to Waves" ability.
+
+'''"Surge Immunity"''': Nyanko Rangers are granted the "Immune to Surge" ability.
+
+==Missions==
+{{MissionTable
+|{{Mission|Clear a stage while using a CatCombo!<br>(Deploy a set grouping of Cats in your formation!)|20 [[Cat Food]](s)|food|type = main}}
+}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+cat combo en.png
+Cat combo lol.png
+cat combo jp.png
+011 p.png
+Unlock cat combos.png
+Reward000.png
+</gallery>
+
+==See Also==
+*[[Cat Combo Filter]]
+
+==Trivia==
+*In the English release teaser image, the removed Combo [[Cat Army MkII (Removed Combo)|Cat Army MkII]] can be seen.
+*[[Ururun Wolf (Special Cat)|Ururun Wolf]] has the most Combos, with 8.
+**If counting removed Combos, [[Pogo Cat (Rare Cat)|Pogo Cat]] would be tied with her.
+*There exists unused [https://www.reddit.com/r/battlecats/comments/4anss5/comment/d11x6gy/ text] for a "DOWN" Combo level and data for negative Combo effects that either cause debuffs or do nothing (due to particular effects that don't make sense with negatives).
+*Prior to an unknown version, Bounty was named Bounty Rewards.
+*Prior to [[Version 15.0 Update|Version 15.0]]:
+**Worker Start Level was named Worker Cat Start Level.
+**Cannon Attack was named Cat Cannon Power.
+**Cannon Recharge was named Cat Cannon Recharge.
+**Worker Max was named Worker Cat Max.
+**Base Defense was named Cat Base Defense.
+**Bounty was named Accounting Power.
+**XP Rewards was named Study Power.
+**"Effects" was "Effect".
+**"Up" was "UP".
+
+{{BC Navigation}}
+[[Category:Game Features]]

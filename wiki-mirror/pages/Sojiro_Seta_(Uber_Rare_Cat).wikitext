@@ -1,0 +1,100 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Sojiro Seta (Enemy)]].''
+'''Sojiro Seta''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event/Gacha Drop|Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Cat Info
+|ID = 879
+|rarity = UR
+|name1 = Sojiro Seta
+|name2 = Sojiro Seta CC
+}}
+
+==Evolution==
+Evolves into '''Sojiro Seta CC''' at level 10.
+
+==Strategy/Usage==
+Sojiro Seta is a standard backline crowd-controller. The uptime on his [[Special Abilities#Slow|Slow]]/[[Special Abilities#Weaken|Weaken]] sits at a comfortable ~50%/~77% against targets hit by all 3 [[Special Abilities#Multi-Hit|Multi-Hits]], making him a solid cc option against the notoriously aggressive Angels and Darks. His best use case is against high-DPS melee and midrange pushers like [[Boraphim]], [[Winged Pigge]], [[Bun Bun Black]], as well as the tanky peon megaspam that plagues much of both traits (e.g. massive spontaneous waves of [[Dark Otter]]s, [[Angelic Gory|Angelic Gories]], [[Shadow Boxer K]]s, etc.). He has good survivability, boasting 5 knockbacks, albeit with subpar HP reminiscent of [[Ururun Wolf (Special Cat)|Awakened Ururun]]. Suffice to say, he's basically unusable if a stage features any kind of enemy that can snipe him, and his disappointing display of resistances don't help with that either. He works fine enough, but isn't anything to write home about, so just use him if the situation calls for it.
+
+{{Job|Classification = Crowd-Controller & Backliner}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 879
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni879 f00.png
+|Image2 = Uni879 c00.png
+|Name1 (JP) = 瀬田宗次郎
+|Desc1 (JP) = 「るろうに剣心」から参戦！「十本刀」の一人<br>「喜怒哀楽」の「楽」以外の感情が欠落している少年<br>必ず黒い敵と天使の攻撃力を下げて遅くする(範囲攻撃)
+|Name2 (JP) = 瀬田宗次郎CC
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>天賦の才による剣の技で瞬時に相手へ斬りこむ<br>必ず黒い敵と天使の攻撃力を下げて遅くする(範囲攻撃)
+}}
+
+==Cost==
+*Chapter 1: 2,100¢
+*Chapter 2: 3,150¢
+*Chapter 3: 4,200¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Sojiro Seta
+|Normal Base HP = 2000
+|Normal Base AP = 700,700,700
+|Normal Range = 450
+|Normal Foreswing = 60,65,70
+|Normal Attack Cooldown = 129
+|Normal Attack Length = 141
+|Normal Speed = 10
+|Normal KB = 5
+|Normal Cost = 2100
+|Normal Recharge = 3400
+|Normal Attack Type = Area
+|Normal Targets = Dark,Angel
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (11,900 at 60f <sup>2s</sup>, 11,900 at 65f <sup>2.17s</sup>, 11,900 at 70f <sup>2.33s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Sojiro Seta CC
+|Evolved Base HP = 2400
+|Evolved Base AP = 735,735,735
+|Evolved Range = 450
+|Evolved Foreswing = 60,65,70
+|Evolved Attack Cooldown = 129
+|Evolved Attack Length = 141
+|Evolved Speed = 10
+|Evolved KB = 5
+|Evolved Cost = 2100
+|Evolved Recharge = 3400
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Angel
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (12,495 at 60f <sup>2s</sup>, 12,495 at 65f <sup>2.17s</sup>, 12,495 at 70f <sup>2.33s</sup>)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 75f <sub>2.5 seconds</sub><br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] target traits to 50% for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni879 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/880.html
+
+----
+{{CatNav|Anji Yukyuzan|Makoto Shishio}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Multi-Hit Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Weaken ability]]
+[[Category:Cats with Slow Immunity]]

@@ -1,0 +1,53 @@
+{{StrategyNeeded}}
+{{EnemiesAppearing|Jackie Peng|Zackie Peng|Chief Peng|Hermit Peng|Star Peng|Alpacky}}
+'''Feast of Fall: Standard (Deadly)''' is the second stage in [[Total War: Fall Special]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn236 01 s en.png]]
+|stage location = [[File:Mapname236 s en 2.png]]
+|energy = 150
+|enemy castle hp = 600,000 HP
+|enemies = {{Magnification|Jackie Peng|1,800%
+|Zackie Peng|200%
+|Chief Peng|500%
+|Hermit Peng|500%
+|Star Peng|100%}}
+|boss = {{Magnification|Alpacky|300%}}
+|treasure = - 750,000 XP (100%, 1 time)
+|XP = 2,850 XP
+|width = 3,200
+|max enemies = 20
+|jpname = Festival of Autumn: Medium Rank (Extreme)
+|script = 秋の祭典 中位 極ムズ
+|romaji = Aki no Saiten Chūi Jōi Goku Muzu
+|star = 1
+|event-chapter = [[Total War: Fall Special]]
+|difficulty = ★8
+|prev stage = [[Feast of Fall: Basic (Insane)]]
+|next stage = [[Feast of Fall: Advanced (Deadly)]]
+}}
+
+==Battleground==
+*3 [[Jackie Peng]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Zackie Peng]] spawns after 10 seconds<sup>300f</sup>.
+*10 [[Chief Peng]]s spawn after 20 seconds<sup>600f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Hermit Peng]] spawns after 20 seconds<sup>600f</sup>.
+*1 [[Zackie Peng]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Zackie Peng]] spawns after 133.33 seconds<sup>4,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Alpacky]] spawns as the boss.
+**1 [[Zackie Peng]] spawns.
+**Infinite [[Jackie Peng]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**3 [[Hermit Peng]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**2 [[Star Peng]]s spawn, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+**5 [[Star Peng]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s01236-02.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]

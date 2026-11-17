@@ -1,0 +1,9 @@
+.ranger-navbox.nissin-ufo {
+	--bg-navbox-title: linear-gradient(to right, hsl(17, 79%, 39%) 0%, hsl(17, 79%, 44%) 100%);
+	--bg-sub-table-title: hsl(4, 82%, 27%);
+	--bg-group-name: hsl(24, 72%, 47%);
+
+	--sub-title-color: #eee;
+}
+
+/* [[Category:Template stylesheets]] */

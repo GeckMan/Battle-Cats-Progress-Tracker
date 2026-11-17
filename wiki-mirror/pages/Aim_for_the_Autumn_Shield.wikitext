@@ -1,0 +1,55 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Red Wind}}
+'''Aim for the Autumn Shield''' is the third and final stage in [[JRA Collaboration Event#Emperor's Award (Autumn) (GI)|Emperor's Award (Autumn) (GI)]].
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn181 02 c ja.png]]
+|stage location = [[File:Mapname181 c ja.png]]
+|energy = 150
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|Red Wind|500%}}
+|boss = {{Magnification|Red Wind|1%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''8,000''': [[Battle Items#Treasure Radar|Treasure Radar]] +1<br>
+'''6,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 4,500 XP
+|width = 5,000
+|max enemies = 15
+|jpname = Aim for the Autumn Shield
+|script = 目指すは秋の盾
+|romaji = Mezasu wa Aki no Tate
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Emperor's Award (Autumn) (GI)|Emperor's Award (Autumn) (GI)]]
+|difficulty = ★5
+|prev stage = [[A Race With Tradition and History]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[Red Wind]] (500%) spawns.
+*1 [[Red Wind]] (500%) spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[Red Wind]] (500%) spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Red Wind]] (500%) spawns after 30 seconds<sup>900f</sup>.
+*1 [[Red Wind]] (500%) spawns after 46.67 seconds<sup>1,400f</sup>.
+*When the base reaches 99% HP:
+**1 [[Red Wind]] (1%) spawns as the boss.
+**2 [[Red Wind]]s (500%) spawn, delay 11.67~13.33 seconds<sup>350f~400f</sup>.
+**4 [[Red Wind]]s (500%) spawn, delay 8.33~10 seconds<sup>250f~300f</sup>.
+**6 [[Red Wind]]s (500%) spawn, delay 5~6.67 seconds<sup>150f~200f</sup>.
+
+==Strategy==
+A rather easy stage, even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units. The enemy serves practically no threat at all, even in large numbers. It is recommended to increase the collaboration units to at least near max level to deal with the massive amount of HP  granted by these boosts. Otherwise, [[Cat Combo]]s can help.
+
+==Reference==
+*https://battlecats-db.com/stage/s02181-03.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

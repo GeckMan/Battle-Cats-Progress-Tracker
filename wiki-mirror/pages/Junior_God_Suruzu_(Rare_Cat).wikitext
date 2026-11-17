@@ -1,0 +1,121 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''For the enemy seen in the [[Yurudrasil Collaboration Event]], see [[Junior God Suruzu (Enemy)]].''
+'''Junior God Suruzu''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 4.4 Update|Version 4.4]] and can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Yurudrasil Collaboration Event]].
+
+{{Cat Info
+|ID = 234
+|rarity = RR
+|name1 = Junior God Suruzu
+|name2 = Junior God Suruzu CC
+}}
+
+==Evolution==
+Evolves into '''Junior God Suruzu CC''' at level 10
+
+==Strategy/Usage==
+Junior God Suruzu is a mediocre crowd-controller. While she has range higher than even [[Witch Cat (Rare Cat)|Enchantress Cat]], her 7.2 second recharge means that building up a stack with her is slow, and having them be consistent is even harder, considering her freeze chance is only 20%. Additionally, her freeze can only reach a total of 2.4 seconds with all [[Fruit Treasures]], meanwhile she has a 2.6 second attack frequency, which is another reason why she's bad at her job.
+
+To summarize, just use other anti-Red crowd-controllers, such as [[Apple Cat (Super Rare Cat)|iCat]] or Enchantress Cat.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 234
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni234 f00.png
+|Image2 = Uni234 c00.png
+|Name1 (JP) = 神徒スルズ
+|Desc1 (JP) = ゆるドラシルから参戦！<br>雷神の系譜を受け継ぐ純血の神である戦乙女<br>ごくたまに赤い敵の動きを一瞬止める
+|Transl1 (JP) = Joined the battle from Yurudrasil!<br>A war maiden who is a pure-blooded god who inherited the genealogy of the Thunder God<br>Sometimes for a moment stops red enemies movement.
+|Name2 (JP) = 神徒スルズCC
+|Desc2 (JP) = ゆるドラシルから参戦！<br>力持ちでパンイチの父親に似た脳筋ヴァルキリー<br>ごくたまに赤い敵の動きを一瞬止める
+|Transl2 (JP) = Joined the battle from Yurudrasil!<br>Valkyrie with a powerful brain muscle similar to Panichi's father.<br>Sometimes for a moment stops red enemies movement.
+|Name1 (KR) = 신도 스루즈
+|Desc1 (KR) = 유루드라실에서 참전!<br>뇌신의 계보를 이어받은 순혈의 신인 발키리<br>아주 가끔 빨간 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 신도 스루즈CC
+|Desc2 (KR) = 유루드라실에서 참전!<br>항상 수영복 차림인 마초 아빠를 닮은 발키리<br>아주 가끔 빨간 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Junior God Suruzu
+|Normal Base HP = 475
+|Normal Base AP = 115
+|Normal Range = 270
+|Normal Foreswing = 9
+|Normal Attack Cooldown = 69
+|Normal Attack Length = 26
+|Normal Speed = 9
+|Normal KB = 2
+|Normal Cost = 360
+|Normal Recharge = 480
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Junior God Suruzu CC
+|Evolved Base HP = 655
+|Evolved Base AP = 140
+|Evolved Range = 270
+|Evolved Foreswing = 9
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 26
+|Evolved Speed = 9
+|Evolved KB = 2
+|Evolved Cost = 360
+|Evolved Recharge = 480
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 475 HP
+|val-Normal-Attack Power = 115 damage<br>(44.23 DPS)
+|val-Normal-Attack Range = 270
+|val-Normal-Attack Frequency = 78f <sub>2.6 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 9f <sup>0.3s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 8,075 HP
+|val-Normal-MaxAttack = 1,955 damage<br>(751.92 DPS)
+|val-Evolved-Health = 11,135 HP
+|val-Evolved-Attack Power = 2,380 damage<br>(915.38 DPS)
+|val-Evolved-Attack Range = 270
+|val-Evolved-Attack Frequency = 78f <sub>2.6 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 9f <sup>0.3s</sup><br>(17f <sup>0.57s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni234 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/235.html
+
+----
+{{CatNav|Junior God Brynhildr|Goddess of Abundance - Freya}}
+----
+
+{{Yurudrasil}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

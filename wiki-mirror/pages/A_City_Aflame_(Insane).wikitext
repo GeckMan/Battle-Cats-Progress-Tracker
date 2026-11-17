@@ -1,0 +1,83 @@
+{{EnemiesAppearing|Doge Dark|Rei|Wyvern|Fuu|Serum|Healer}}
+'''A City Aflame (Insane)''' is the only stage in [[Merc Storia Collaboration Event#Merc Storia: Inferno|Merc Storia: Inferno]].
+
+{{Stage Info
+|stage name = [[File:rc003.png]]
+[[File:Mapsn007 00 c en.png]]
+|stage location = [[File:Mapname007 c en.png]]
+|energy = 150
+|enemy castle hp = 900,000 HP
+|enemies = {{Magnification|Doge Dark|200%
+|Rei|400%
+|Wyvern|100%
+|Rei|100%
+|Fuu|400%
+|Serum|600%}}
+|boss = {{Magnification|Healer|400%}}
+|enemies2 = {{Magnification|Doge Dark|300%
+|Rei|600%
+|Wyvern|150%
+|Rei|150%
+|Fuu|600%
+|Serum|900%}}
+|boss2 = {{Magnification|Healer|600%}}
+|enemies3 = {{Magnification|Doge Dark|400%
+|Rei|800%
+|Wyvern|200%
+|Rei|200%
+|Fuu|800%
+|Serum|1,200%}}
+|boss3 = {{Magnification|Healer|800%}}
+|enemies4 = {{Magnification|Doge Dark|400%
+|Rei|800%
+|Wyvern|200%
+|Rei|200%
+|Fuu|800%
+|Serum|1,200%}}
+|boss4 = {{Magnification|Healer|800%}}
+|treasure = - [[Healer (Special Cat)|Healer]] (100%, 1 time)
+|score reward = '''6,500''': 250,000 XP<br>
+'''4,500''': 150,000 XP<br>
+'''500''': 100,000 XP
+|XP = 4,500 XP
+|width = 5,200
+|max enemies = 5
+|jpname = Capital Ablaze Super Hard
+|script = 都炎上 超激ムズ
+|romaji = Miyako Enjō Chōgekimuzu
+|star = 4
+|event = [[Merc Storia Collaboration Event]]
+|event-chapter = [[Merc Storia Collaboration Event#Merc Storia: Inferno|Merc Storia: Inferno]]
+|difficulty = ★7
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*10 [[Doge Dark]]s spawn after 3.33 seconds<sup>100f</sup>, delay 5.33~16.67 seconds<sup>160f~500f</sup>.
+*2 [[Rei (Enemy)|Reis]] (400%) spawn after 40 seconds<sup>1,200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*Infinite [[Fuu (Enemy)|Fuus]] spawn after 126.67 seconds<sup>3,800f</sup>, delay 40~53.33 seconds<sup>1,200f~1,600f</sup>.
+*Infinite [[Serum (Enemy)|Serums]] spawn after 6.67 seconds<sup>200f</sup>, delay 30~36.67 seconds<sup>900f~1,100f</sup>.
+*Infinite [[Rei (Enemy)|Reis]] (400%) spawn after 113.33 seconds<sup>3,400f</sup>, delay 30~43.33 seconds<sup>900f~1,300f</sup>.
+*3 [[Rei (Enemy)|Reis]] (400%) spawn after 113.33 seconds<sup>3,400f</sup>, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+*3 [[Serum (Enemy)|Serums]] spawn after 113.33 seconds<sup>3,400f</sup>, delay 0.67~3.33 seconds<sup>20f~100f</sup>.
+*1 [[Wyvern (Enemy)|Wyvern]] spawns after 40 seconds<sup>1,200f</sup>.
+*1 [[Wyvern (Enemy)|Wyvern]] spawns after 120 seconds<sup>3,600f</sup>.
+*1 [[Healer (Enemy)|Healer]] spawns as the boss after 113.33 seconds<sup>3,400f</sup>.
+*When the base reaches 50% HP:
+**1 [[Wyvern (Enemy)|Wyvern]] spawns.
+**1 [[Rei (Enemy)|Rei]] (100%) spawns.
+
+==Strategy==
+Besides Wyvern, all the enemies here have a short range, so high DPS melee attackers work well against them. For Wyvern, time A. Bahamut to hit between attacks. This is the best option unless you have a unit that outranges Wyvern. Anti-Floating units work wonders in this stage.
+
+==Trivia==
+*This is the only stage in the [[Merc Storia Collaboration Event]] to feature a non-collab enemy, namely featuring [[Doge Dark]].
+
+==Reference==
+*https://battlecats-db.com/stage/s02007-01.html
+
+{{Merc Storia}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

@@ -1,0 +1,113 @@
+{{PCExclusive}}
+'''Type-Monshiro''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that is exclusive to the VIP [[Justice Strikes Back! Dark Heroes (Gacha Event)|Justice Strikes Back! Dark Heroes]] Gacha with a 0.42% drop rate, only available in the [[Minna de Nyanko Daisensou|PC version]].
+
+{{Cat Info
+|ID = 903
+|rarity = UR
+|version = PC
+|name1 = Type-Monshiro
+|name2 = Type-Swallow Tail
+|image1 = 10903 1.png
+|image2 = 10903 2.png
+}}
+
+==Evolution==
+Evolves into '''Type-Swallow Tail''' at level 10.
+
+==Strategy/Usage==
+Type-Monshiro is a backline DPS and crowd-controller, her usage is similar to the likes of [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]]. She sits in the back and unloads good damage with high pierce via [[Wave Attack]]s, hitting all the way up to 733 range. Her [[Slow]] has a ~33% uptime against Aliens, assuming all [[Fruit Treasures]] are collected, which is further extended up to ~40% if a Wave Attack re-procs it on an enemy. Overall, she's not a bad Uber, and can be used as a generalist waver for many early-game stages. Type-Monshiro is especially useful for [[Into the Future]] and [[Cats of the Cosmos]] as a hardcarry against all of the fearsome Aliens.
+
+{{Job|Classification = Crowd-Controller|EvolvedClass = Crowd-Controller & Waver|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 903<sup>PC</sup>
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni10903 f00.png
+|Image2 = Uni10903 c00.png
+|Name1 (JP) = Type-モンシロ (Type-Monshiro)
+|Desc1 (JP) = 「美しすぎるガトリング砲」の異名を持つヒーロー。<br>一瞬で変形し、悪者を蜂の巣にする（範囲攻撃）<br>たまににゃんこ軍団とエイリアンをふっとばす（波動無効）
+|Transl1 (JP) = Hero nicknamed "Too beautiful Gatling gun".<br>Transforms in an instant and turns bad guys into beehives (Range Attack)<br>Occasionally blows up the Nyanko Army and Aliens (Wave Disable)
+|Name2 (JP) = Type-クロアゲハ (Type-Kuroageha, Type-Swallow Tail)
+|Desc2 (JP) = 「今年最も近寄りがたい女」に選ばれたヒーロー。<br>一瞬で変形し、悪者を蜂の巣にする（範囲攻撃）<br>にゃんこ軍団とエイリアンの動きを遅くし、たまに波動を放つ
+|Transl2 (JP) = Hero voted "most unapproachable woman of the year".<br>Transforms in an instant and turns bad guys into beehives (Ranged Attack)<br>Slows down the Nyanko Army and Aliens, occasionally releases waves
+}}
+
+==Cost==
+*Chapter 1: 2,980円
+*Chapter 2: 4,470円
+*Chapter 3: 5,960円
+{{Upgrade Cost|MIX
+|0
+|9,800
+|14,800
+|21,800
+|42,500
+|64,300
+|93,200
+|118,000
+|197,400
+|513,500
+|15,600
+|max = 40
+}}
+
+==Stats==
+{{Cat Stats Manual
+|Normal Name = Type-Monshiro
+|Normal Health = 2,450 HP
+|Normal Attack Power = 2,530 damage<br>(235.71 DPS)
+|Normal Attack Range = 430
+|Normal Attack Frequency = 322f <sub>10.73 seconds</sub>
+|Normal Movement Speed = 12
+|Normal Knockback = 5 times
+|Normal Attack Animation = 43f <sup>1.43s</sup><br>(44f <sup>1.47s</sup> backswing)
+|Normal Recharge Time = 113.33 ~ 104.53 seconds
+|Normal MaxHP = 41,650 HP
+|Normal MaxAttack = 43,010 damage<br>(4,007.14 DPS)
+|Normal Attack Type = Area Attack
+|Normal Abilities = 50% chance to [[Knockback|knockback]] [[:Category:Cat Units|Cats]] (PvP only) and [[:Category:Alien Enemies|Alien]] enemies<br>
+[[Immune to Waves]]
+|Evolved Name = Type-Swallow Tail
+|Evolved Health = 41,650 HP
+|Evolved Attack Power = 43,010 damage<br>(4,007.14 DPS)
+|Evolved Attack Range = 430
+|Evolved Attack Frequency = 322f <sub>10.73 seconds</sub>
+|Evolved Movement Speed = 12
+|Evolved Knockback = 5 times
+|Evolved Attack Animation = 43f <sup>1.43s</sup><br>(44f <sup>1.47s</sup> backswing)
+|Evolved Recharge Time = 113.33 ~ 104.53 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = 100% chance to [[Slow|slow]] [[:Category:Cat Units|Cats]] (PvP only) and [[:Category:Alien Enemies|Alien]] for 90f <sub>3 seconds</sub><br>
+50% chance to create a Lv.3 [[Wave Attack]]
+|Lv.MAX = Lv.40
+}}
+
+==Animations==
+<div class="unit-viewer">
+<tabber>
+Normal=
+{{AnimationViewer|10903_f.png|MediaWiki:Custom-AnimationViewer/PC903_f.json}}
+|-|Evolved=
+{{AnimationViewer|10903_c.png|MediaWiki:Custom-AnimationViewer/PC903_c.json}}
+</tabber>
+</div>
+
+{{Gallery|Uni10903 f00}}
+
+----
+{{CatNav|Honda Tadakatsu|Momo}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Cat Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Wave Attack Cats]]
+[[Category:Cats with Wave Immunity]]

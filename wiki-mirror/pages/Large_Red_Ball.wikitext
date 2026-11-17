@@ -1,0 +1,87 @@
+'''Large Red Ball''' (大玉 (赤) ''Ōdama (Aka)'', '''Large Ball (Red)''') is a [[:Category:Red Enemies|Red]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.9 Update|Version 10.9]].
+
+{{Enemy Info
+|name = Large Red Ball
+|image = E 577.png
+|appearance = [[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]<br>
+[[New Year's Bling]]<br>
+[[Infernal Tower/Floor 6|Infernal Tower - Floor 6]]
+|money drop = 100¢ - 395¢
+}}
+
+==Enemy==
+Although rather pathetic in the early stages, when this enemy starts appearing in huge hordes, especially with their Knockback effect, they become an actual threat. The best way to counter this enemy is by using [[:Category:Anti-Red Cats|anti-Red units]] such as [[Fish Cat (Normal Cat)|Fish Cat]], [[Crazed Fish Cat (Super Rare Cat)|Crazed Fish]], [[Hip Hop Cat (Super Rare Cat)|Hip Hop]] and [[Hip Hop Cat (Super Rare Cat)|Apple]].
+
+==Strategy==
+Assuming they don't move forward at all, Crazed Fish and Fish Cat actually have the perfect attack rate to infinitely knockback Red Ball, making it a piece of cake to deal with. Alternatively, using [[:Category:Cats with Knockback Immunity|units with Knockback Immunity]] or a longer range than its Omni Strike will make it practically unable to push.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[River City Stages#River City Ball-Rolling|River City Ball-Rolling]]:
+**[[Kinetic Power]] (1%, 100%)
+**[[Red vs White]] (1%, 400%)
+**[[Whose Ball is This?]] (1%, 600%)
+**[[Covered in Dust]] (800%)
+**[[Hats Blown Away]] (1%, 1,000%)
+**[[Can't Stop Now]] (1,200%)
+*[[New Year's Bling]]:
+**[[Today Only: Sociable]] (1%, 100%)
+**[[Brotherly Income Gap]] (1%, 400%)
+**[[Increasing Sums]] (1%, 600%)
+**[[Gifting Burden]] (800%)
+**[[Grandpa's Lettering]] (1%, 1,000%)
+**[[No Gift This Year]] (1,200%)
+**[[Lucky! New Year's Loot!]] (200%)
+*[[Pt. 2: Enemy Maneuvers]]: [[2021 Debut]] (2,400%)
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[1600m Relay: Fast Start]] (1,200%)
+**[[400m Relay: Second Fastest]] (100%)
+**[[800m Relay: Second Fastest]] (1,000%)
+**[[1600m Relay: Anchor Leg]] (2,400%)
+*[[Memories of 2024]]: [[Memories of Fall Page 2]] (1%, 400%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 6|Floor 6]] (1,800%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Large Red Ball
+|Health = 4000
+|Attack Power = 250
+|Attack Range = 100
+|Attack Type = Area
+|Time Between Attacks = 151
+|Movement Speed = 30
+|Knockback = 15
+|Foreswing = 8
+|Backswing = 143
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -600~200)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+577 e.png|Large Red Ball's spritesheet
+IdleRedBall.gif|Large Red Ball's moving animation
+</gallery>
+
+==Trivia==
+*This enemy, as well as [[Large White Ball]] and [[Large Iron Ball]], are based on the Japanese Sports Day event Oodama Korogashi.
+
+==Reference==
+*https://battlecats-db.com/enemy/579.html
+
+----
+{{EnemyNav|Large White Ball|Large Iron Ball}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Omni Strike Enemies]]
+[[Category:Area Attack Enemies]]

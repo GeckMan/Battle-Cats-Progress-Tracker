@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Gory}}
+'''Cat School Musical''' is the first stage in [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]].
+
+{{Stage Info
+|stage name = [[File:rc032.png]]
+[[File:Mapsn026 00 s en.png]]
+|stage location = [[File:Mapname026 s en.png]]
+|energy = 30
+|enemy castle hp = 10,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%}}
+|boss = {{Magnification|Gory|100%}}
+|enemies2 = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%}}
+|boss2 = {{Magnification|Gory|150%}}
+|enemies3 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%}}
+|boss3 = {{Magnification|Gory|200%}}
+|enemies4 = {{Magnification|Doge|300%
+|Snache|300%
+|Those Guys|300%}}
+|boss4 = {{Magnification|Gory|300%}}
+|treasure = - [[Maiden Cat (Rare Cat)|Maiden Cat]] (1%, 1 time)
+|XP = 900 XP
+|width = 4,000
+|max enemies = 5
+|jpname = The beginning of spring
+|script = 春の始まり
+|romaji = Haru no Hajimari
+|star = 4
+|event-chapter = [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[I can feel it]]
+}}
+
+==Battleground==
+*100 [[Doge]]s spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+*Infinite [[Snache]]s spawn after 4.67 seconds<sup>140f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*100 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+*When the base reaches 70% HP:
+**1 [[Gory]] spawns as the boss.
+**5 [[Those Guys]] spawn, delay 0.07~3.33 seconds<sup>2f~100f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s01026-01.html
+
+{{Monthly}}
+[[Category:Teacher! It's Spring Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

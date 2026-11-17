@@ -1,0 +1,350 @@
+A list of all found '''glitches''' in The Battle Cats. Due to the nature of the subject, it is unlikely that every glitch in the game's history is included here, so feel free to report new glitches that have not been listed on this page.
+
+==Energy Glitch==
+The "Energy Glitch" allows the user to refill their energy by changing the device's date.
+This glitch was patched in the [[Version 5.0 Update]]. However, it can still be performed to get out of recovery mode.
+
+How to perform the glitch:
+{{VideoGallery
+|GYYkSeEh4cQ|The Battle Cats - How I do the energy glitch
+}}
+
+==HGT Error==
+This error will occur if the players change date/time. The game will be in [[Recovery Mode]] and the players can't access to Special Events, Cat Capsules and Login Bonus can't be received. You just have to go to the day and hit auto time then move it up a day then you can access special events.
+
+==HGT02 False Error==
+The game gives you a false error after accidentally detecting a time change on your device, which happens in the rare gacha section (it might also happen in other places though) but keeps the text underneath the banner image. However, the banner image disappears, showing what seems to be the rare gacha sprite in plain sight. This can be triggered by not opening the app for several days when your device is connected to the internet. It can usually be fixed by exiting the rare gacha section with the internet connected, though sometimes you may need to exit to the main menu or even restart the app entirely for it to fix itself.
+<gallery type="slideshow" position="center">
+HGT02 False Error - Glitch.png|alt=An image of a false detection of HGT02 in the rare gacha selection, with lucky tickets on and the banner text still available.|HGT02 False Error
+</gallery>
+
+==Time Traveling==
+The player can access events within two days beyond the current date. This can be acheived either by directly changing the device's current time, or manipulating its timezone, the latter of which allows you to move backwards in time freely. Certain conditions can result in an HGT error, including: setting your device's time to a point before your current time (e.g., going from 4:20PM to 2:30PM, applicable even in the event of "fixing" one's time, so long as the game detects the change in any way); switching timezones to one behind your current one (e.g., going from GMT+4 to GMT+3) before quickly closing the game; and moving beyond a specific threshold of time outside of the two day limit.
+
+Do note that changing your device's timezone does not inherently cause an HGT error, but only triggers upon closing the game within around a minute of doing so. It is also important to note that timezones do not affect any cooldown and/or timer related events such as GAMATOTO expeditions, whereas changing your time directly does.
+
+How to perform the glitch (by manipulating your timezone):
+{{VideoGallery
+|Rat3zeqSt14|<nowiki>The Battle Cats | Timezone Event Exploit</nowiki>
+}}
+
+==Mission Desync==
+After changing a device's timezone, it is possible for timed [[Catnip Challenges]] to become desynchronized. This leads to some persisting well after they should have been cleared out and reset. The old missions will stay at 0:0 and can be finished normally. Any weekly missions completed in this state will still count towards the completion of the final weekly mission. The presence of the older missions may cause newer ones to not appear. For weekly missions however, the final reward can still be obtained if you manage to complete the requirements for the unseen mission(s). The problem can be resolved by transferring your save data to a fresh version of the app.
+<gallery type="slideshow" position="center">
+Mission Desync 1.jpg|Start of the bug.
+Mission Desync 2.jpg|Screenshot showing the final weekly mission being at 3/4 clears
+Mission Desync 3.jpg|Follow-up screenshot showing a lack of any preceding weekly missions
+Mission Desync 4.jpg|Screenshot showing the final mission being completed without any other weekly missions present
+</gallery>
+
+==Mission Reward Dupe==
+For an unknown reason, mission rewards may be claimable twice. When claimed the first time, the pop-up will not include the name of what was given, however the second one will have it. The reward will be given both times. <!--Works with items, XP, and Catamins. Haven't tested with things like tickets or Catseyes.
+Notes:
+1. It's only happened (or at least I've only noticed it) with monthly missions.
+2. Only the topmost mission has had this happen so far.
+3. There has always been at least one other mission ready to be claimed below the bugged one when the glitch occurs.-->
+<gallery type="slideshow" position="center">
+Mission Reward Dupe.gif|Example of the glitch
+</gallery>
+
+==7th Anniv. Bugged Login Stamp==
+During the [[Anniversary/7th Year|7th Anniversary]] celebration event, some players were not given [[Farmer Cat (Special Cat)|Farmer Cat]] from the third [[Daily Bonus|Login Stamp]]. An update was issued shortly after reports began that allowed players to receive it from a seperate stamp instead.
+
+==Halloween Party! Capsules Bug==
+When first released to [[Nyanko Daisensou|BCJP]], the [[Halloween Party! (Event Gacha)|Halloween Party!]] Event Gacha's featured items were bugged; They could be farmed endlessly instead of being only obtainable a limited amount as intended. This led to the capsules being hastily removed shortly after they became available.
+
+==Capsule Clearance 5 Draw to 11 Draw Glitch==
+In [[Version 14.3 Update|Version 14.3]], a bug was encountered where if spending 500 [[Cat Food]] on the 5 capsule draw of [[Capsule Clearance (Gacha Event)|Capsule Clearance]], the game would think you purchased an 11 draw, resulting in 6 of the last Cat Units from the capsule being obtained but with the buttons and obtained Cat Unit being invisible. They would sell for 0 XP and if trying to upgrade, it would ask to upgrade [[Cat (Normal Cat)|Cat]] instead.
+
+==Bugged Mailbox Rewards==
+In the 2025/01/01 ~ 2025/13/01 [[Ranking Dojo]] [[Catclaw Dojo|Dojo]] event and 2024/27/12 ~ 2025/13/01 [[Underground Labyrinth]], some players were given [[Battle Items#Speed Up|Speed Ups]] in place of the rewards listed. Labyrinth medals were also replaced by Speed Ups alongside the Catseye rewards. Players who were affected by this glitch were given the proper rewards after it was addressed, with the Speed Ups being left intact.
+<gallery type="slideshow" position="center">
+Bugged Dojo Rewards 2.jpeg|"Trainee" Dojo rank rewards replaced by Speed Ups
+Bugged Dojo Rewards.png|"Grandmaster" Dojo rank rewards replaced by Speed Ups
+Bugged Dojo Rewards JP.jpeg|Platinum medal rewards replaced by Speed Ups
+</gallery>
+
+==Takuya & Yuki Glitch==
+Some users have reported suddenly and unexpectedly obtaining [[Takuya & Yuki (Rare Cat)|Takuya & Yuki]] for unknown reasons. [https://redd.it/1kc6u2e Some users] have reported that they were able to replicate the glitch by entering a [[Zombie Outbreaks|Zombie Outbreak]] stage in Chapter 3 of [[Into the Future]], closing the app, then waiting a period between 30 minutes to 20 hours before re-opening the game and completing the stage. This has been patched in [[Version 14.5 Update|Version 14.5]].
+<gallery type="slideshow" position="center">
+Takuya & Yuki Glitch 1.jpeg
+Takuya & Yuki Glitch 2.jpg
+</gallery>
+
+==Broken User Rank==
+The rewards are not given as wanted: some players don't get all the rewards, while others can upgrade their Cats beyond the limit fixed by the [[User Rank]].
+
+==Play Time Reset==
+The total play time recorded on the [[Battle Cats Officers' Club|Officer's Club]] Card may randomly reset to zero. Closing and restarting the app will not fix the problem. Currently the exact cause of this glitch is unknown.
+<gallery type="slideshow" position="center">
+Bugged Play Time.png|Screenshot of an Officer's Club card after the glitch came into effect
+</gallery>
+
+==16.0 Talent, Talent Orb & CatCombo Bugs==
+In [[Version 16.0 Update|Version 16.0]] of BCJP, all Talent Orbs mistakenly used the internal names for the effects featured in the newly added rogue-like mode when viewed from the Equip/Upgrade Menus. The effects of the Orbs remained unaffected. In addition to that, the golden frames for trait-targeting abilities that were granted or improved via Talents went missing. A third bug to come from this update was that the "NEW" tag would reset for all CatCombos whenever the app was started.
+
+Version 16.0.1 fixed the Talent Orb and CatCombo bugs, but the Talent frame one went unnoticed.
+<gallery type="slideshow" position="center">
+Ability Orb Name Bug.png|A screenshot showing both the Talent and Talent Orb bugs
+Combo Tag Reset Bug.png|Some CatCombos with a flashing "NEW" tag
+</gallery>
+
+==Missing Checkpoints==
+Randomly, some, or even all cleared checkpoints in an applicable event map may act as if they had not been reached. All of the stages will still show the lineups last used to clear them, though will have to be beaten again in order to progress. Sometimes finishing a stage in the map can restore lost checkpoints, however that is not always the case.
+
+==Cat Dupe Glitch==
+This glitch can let the player place multiple entries of the same [[Cat Units|Cat Unit]] in their team.
+The glitch was fixed in the [[Version 3.0 Update]].
+
+How to perform the glitch:
+{{VideoGallery
+|vgwZ9pHqOxc|[The Battle Cats] How to do the duplication glitch !
+}}
+
+==Stretched Names==
+If a unit Evolves from being given + levels, their name will briefly become stretched for the short time until the player is returned to the previous screen.
+<gallery type="slideshow" position="center">
+Name Stretch 1.png|Screenshot showing a unit's name in its normal state
+Name Stretch 2.png|Screenshot showing a unit's name in its stretched state
+</gallery>
+
+==Icon Glitch==
+Sometimes in the Upgrade Screen, [[The Cat God (Special Cat)|The Cat God]]'s icon will be replaced with [[Cat (Normal Cat)|Basic Cat]]'s.
+
+==Missing/Broken Graphics==
+Some of the graphics within the game appear missing or broken, they will be displayed as white squares or as the entire spritesheet. This usually occurs when tampering with the game's files.
+
+In [[Version 2.2 Update|Version 2.2.6]], a sprite of [[Coppermine (Uber Rare Cat)|Coppermine]]'s left hand was misplaced. This led to it appearing under her upper left arm at all times, with the fingertips of it slightly overlapping a sprite of her foot. The parts of her animations where it was intended to be used showed an empty space instead. Animations involving the misplaced sprite can be seen [[Coppermine (Uber Rare Cat)#Animations|here]].
+
+In the [[Version 6.3 Update]], [[Catburger (Special Cat)|Catburger]]'s [[True Form]] would display the icon as a Mohawk Cat and the unit as the first form of the unit. To evolve Catburger into its True Form it would cost no XP, Level -1 and no [[Catfruit]]. This was fixed in the [[Version 6.4 Update]].
+
+In the [[Version 9.0 Update]], [[Li'l Valkyrie Dark (Uber Rare Cat)|Li'l Valkyrie Dark]]'s animations were completely broken in BCEN and BCKR as they used the [[Nyanko Daisensou|Japanese Version]]'s model animation file. Animated recreations of those oversights can be seen [[Li'l Valkyrie Dark (Uber Rare Cat)#Animations|here]].
+
+In [[Version 11.2 Update|Version 11.2.1]], the golden frames for trait targets unlocked through [[Talents]] were shifted slightly off-center. This was fixed in [[Version 11.3 Update|Version 11.3]].
+
+In the [[Version 11.9 Update]], [[Valkyrie Cat (Special Cat)|Valkyrie Cat]]'s Meownir mysteriously disappeared whenever she wasn't attacking.
+
+<gallery type="slideshow" position="center">
+IMG 0799.PNG|Crazed Dragon Cat lacking his upgrade menu icon
+Screenshot 20190121-115311.jpg|A blank message being displayed over [[Machu Picchu (Into the Future)|Machu Picchu]]
+PRWwNdp.jpeg|A white square in the storage
+107 f Old.png|Coppermine's old spritesheet with the misplaced hand
+107 f Attack Static.png|Screenshot showing Coppermine's misplaced hand
+Screenshot 20191119-174641.jpg|[[Li'l Valkyrie Dark (Uber Rare Cat)|Dark Rider Valkyrie]] in the [[Version 9.0 Update]]
+E3CDCF88-5A71-4318-9966-CE7C52A5BFE0.png|A heavily corrupted win screen, which occurs by having a large amount of units with intense attack animations all attack at once, seen here with [[Mighty Rekon Korps (Uber Rare Cat)|Orbital Annihilator Ragnarok]] thanks to their [[:Category:Focused Target Cats|Attacks Only]] ability
+The Battle Cats 2020-07-19-10-15-41.jpg|A broken graphic in the top left corner of the [[Cat Base Menu]]
+Screenshot 2020-08-03-10-10-18.png|Corrupted graphics in the Cat Base Menu, note the [[Unimplemented Features|unused versions of the normal and superior]] [[Enigma Stages|Enigmas]]
+Glitch 2.jpg|Another case of corrupted graphics appearing in the Cat Base Menu
+775.png|Corrupted text graphics yet again in the Cat Base Menu
+Static-assets-upload16684088717104048026.jpg|Heavily corrupted chapter selection graphics
+Static-assets-upload2653493842470684703.jpg|One of the cat food offer sprites being replaced by the back button sprite
+Green sifu.png|[[Wushu Cat (Rare Cat)|Sifu Cat]]'s sprite in [[battle]] being colored green for an unknown reason
+CrownSelecterGlitch.jpeg|Blank text being displayed in the crown selection screen
+Misaligned Talent Frame.png|The golden frame being misaligned for [[Archer Cat (Rare Cat)|Cataur]]'s Zombie target icon
+Masai Sprite Dupe.png|[[Pogo Cat (Rare Cat)|Masai Cat's]] body sprite being duplicated in the True Forming screen
+Thief Sprite Dupe.png|Same bug as last with [[Thief Cat (Rare Cat)|Phantom Thief Cat]] instead
+Valkyrie cat 11.9.jpg|Valkyrie Cat missing her Meownir following the release of Version 11.9
+doron missing.jpg|[[Elder Flame Doron]] missing his icon in [[Version 12.0 Update|Version 12.0]]
+</gallery>
+
+{{VideoGallery
+|1aMA0r1CCso|<nowiki>Battle Cats 6.3 | Catburger Glitch</nowiki>
+}}
+
+==2021 Shoumetsu Toshi collab Missing Banner Image==
+During the 2021 run of the [[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]] collab event for BCEN, the banner image for the event's gacha would not display for players using the French, Italian, German or Spanish language settings. The banner could still be drawn from without issue.
+
+==15.1 French and Italian Gacha Text==
+When [[Version 15.1 Update|Version 15.1]] released, playing on the French or Italian languages in the English Version would show broken text when viewing the results of any rolls. This was patched in Version 15.1.1.
+
+<gallery type="slideshow" position="center">
+Broken 15.1 Gacha1.jpg
+Broken 15.1 Gacha2.jpg
+Broken 15.1 Gacha3.jpg
+Broken 15.1 Gacha4.jpg
+Broken 15.1 Gacha5.jpg
+Broken 15.1 Gacha6.jpg
+Broken 15.1 Gacha7.jpg
+Broken LNY Gacha1.jpg
+Broken LNY Gacha2.jpg
+Broken LNY Gacha3.jpg
+Broken LNY Gacha4.jpg
+Broken LNY Gacha5.jpg
+Broken LNY Gacha6.jpg
+Broken LNY Gacha7.jpg
+Broken LNY Gacha8.jpg
+Broken LNY Gacha9.jpg
+Broken LNY Gacha10.jpg
+</gallery>
+
+==Broken Equip Menu==
+When entering a stage, the equip menu may display a missing Cat Unit. How this happens is unknown.
+
+<gallery type="slideshow" position="center">
+Gdfsgsdf.png
+</gallery>
+
+==Missing Music==
+Some of the background music and sound effects will not play or they will loop back early.
+
+==Half-Dead Screen==
+===iOS Devices===
+Exclusively occurring for iOS 9 users; this glitch causes only half of the screen to operate. This renders some buttons and main gameplay elements useless; most notably the "Skip" button at the intro, the "Attack" button, the ability to fire the [[Cat Cannon]], and the last cat on each of the rows.
+
+Although some buttons may appear blocked, such as the [[Cat Capsule#Rare Capsule|Rare Capsule]] or Save Data Transfer they can be accessed by dragging your finger from the side of the screen that is operating onto the dead part of the screen; the button will be "pressed" and allows you to access its contents.
+
+[[PONOS Corporation|PONOS]] has officially stated that [[The Battle Cats]] didn't support iOS 9, it was fixed in the [[Version 3.0 Update|Version 3.0.1 Update]].
+
+===Android Devices===
+While fixed for iOS users, the half-dead screen bug can still occur for Android users if, the game is launched while Android OS is in landscape mode. The game will take the width of portrait mode and then set the game window size accordingly leaving a large black margin around the edge.
+
+If affected, the solution is simple: kill the application off and relaunch in portrait mode.
+
+<gallery type="slideshow" position="center">
+IMG 0853.JPG
+</gallery>
+
+==Bottom-right Cat on the Upgrade Menu==
+The Cat that appears in front of the doors that can be seen in the Cat Base menu also appears in the Upgrade menu, the Cat disappears when the player goes back to the Cat Base. How this happens is unknown.
+<gallery type="slideshow" position="center">
+BCEN Cat on the Upgrade menu bug.jpg
+</gallery>
+
+==Duplicated Screen==
+The game will appear with multiple copies of the current screen the player is in with an occasional dead screen or condensed screen. The duplicated screens do not function the same as the main and cause no harm. This happens somewhat consistently on older generation devices, when exiting and returning to the app without fully closing it.
+<gallery type="slideshow" position="center">
+Screenshot 2020-05-28-12-48-14.png
+WhatsApp Image 2020-05-29 at 11.19.09.jpeg
+fbndgz.png
+77D9DFA7-C08F-4F88-9FC1-2B4B6E665A26.jpeg
+</gallery>
+
+==Frozen Screen Transition==
+Sometimes after leaving and returning to the app as a battle is about to start, the transition effect will freeze in place. During this limbo period, the battle does not technically begin; Enemies won't spawn, money isn't generated and the Cat Cannon does not recharge. The stage's visual effects will continue to play however, if it has any. The issue can be resolved by repeating the steps that caused it.
+<gallery type="slideshow" position="center">
+Unfinished Transition 1.jpg|Example of the glitch. Note the ember's position in the top right corner.
+Unfinished Transition 2.jpg|Same as last, taken a few seconds later. The ember is now lower than before.
+</gallery>
+
+==10.6 License Agreement Bug==
+Around the time of [[Version 10.6 Update|Version 10.6]], there was a bug where the "Next" button for the Software License Agreement would remain greyed out after the "I Agree" box was checked, making it impossible to play the game until it was fixed.
+
+<gallery type="slideshow" position="center">
+Software License Next Button Bug.png
+</gallery>
+
+==License Agreement False Flag==
+In [[Version 10.7 Update|Version 10.7]], there was a bug where saves were falsely flagged as being in violation of the Software License Agreement. Closing and restarting the app should have been enough to resolve it.
+
+<gallery type="slideshow" position="center">
+SLA False Flag.png
+</gallery>
+
+==Event Information Load Error==
+Sometimes event information may refuse to load properly or at all regardless of connection strength or how many times the app is restarted. This usually won't last for more than a day or two before being fixed, if it isn't immediately upon retrying.
+
+<gallery type="slideshow" position="center">
+Event Info Bad Load.png|Screenshot of some improperly loaded event information
+Event Info HTML Error.png|Screenshot of a broken error message in place of some event information
+</gallery>
+
+==Ad Sound Problems==
+When watching an Ad for [[Cat Food]] or [[Cat Energy|Energy]], certain ads (most commonly Merge Quest) will play and continue to make sounds despite the ad being closed. Why this happens is unknown. To fix this glitch the player must spend all their energy until they are able to watch an ad to refill their energy.<!--Research needed-->
+
+==Ad Crashing==
+In the [[Version 9.8 Update]], when watching an Ad for Cat Food or Energy, certain ads (most commonly Merge Quest and Crowded City) will crash the game and could not be fixed by restarting or clearing the games cache and the player would be stuck in a crash loop. This glitch only affected Android devices.
+
+This was fixed in the [[Version 9.9 Update]].
+
+==Ad Restore Glitch==
+This is an extremely rare glitch that can happen in [[Higher Score|Challenge Battle]]'s map or in the [[Catclaw Dojo]]'s [[Wanderer's Trial (Stage 1)|Wanderer's Trial]] level. If the 'Watch an Ad to restore energy' message pops up, it may have an error due to the stage you're on costing no energy whatsoever and show an abnormally large amount of energy that you can restore by watching it. However, it will not give you any energy afterwards as the Ad normally fails to show in this glitch.
+
+==Attack Cat Combo Effect Duplication==
+When changing the language and then exiting The Battle Cats, reopening the game for the first time will cause Attack Cat Combos will get duplicated 21 times over. The duplicates stack and result in very high damage numbers completely breaking the balance of the game. Unfortunately nearly all other combos aside from attack combos no longer work, and the ones that do have their normal effect. This can be reverted by simply closing and then re-opening the game. This glitch only works on android devices.
+
+==Avoiding Dodge on Activation==
+If a Cat or enemy unit with the [[Dodge Attack]] ability takes damage from multiple applicable sources on the same frame, their Dodge may not take effect for some of the hits.
+<gallery type="slideshow" position="center">
+Dodge Ignore 1.gif|[[Myrcia (Uber Rare Cat)|Myrcia]] being killed as her Dodge activates
+Dodge Ignore 2.gif|Same scenario as last with a [[Li'l Doge]] instead
+</gallery>
+
+==Continue on Base Destruction==
+If you force close the app on the same frame that the Cat Base reaches 0 HP, the prompt for continuing the stage will still be given upon restarting it, as long as the stage doesn't have the [[No Continues]] restriction.
+
+==Synced Metal Killer Attacks==
+When the [[Metal Killer]] ability was first introduced, Cats with it could be stacked and synchronized to all deal damage based the amount of health that their target(s) had before being attacked. This was quickly patched to make it so that synced attacks would instead be applied successively, which dramatically lowered the ability's damage output when used in such a manner.
+
+==Frozen Zombie Revive==
+After reviving, Zombie enemies will briefly stand still and play their idle animation (if they have any) before resuming the battle. If a Zombie revives while under the Freeze effect, the animation will continue to play and then only afterwards will they become stiff.
+
+<gallery type="slideshow" position="center">
+Frozen Zombie Revive.gif
+</gallery>
+
+==Hit Effect Glitch==
+If a Cat or enemy unit has both the [[Critical Hit]]/[[Savage Blow]] and [[Wave Attack|Wave]]/[[Surge Attack]] abilities and both activate on a target that is immune to the latter two, then the next hit the target recieves will show the former effects' visuals no matter what damaged it. The effect is purely visual.
+<gallery type="slideshow" position="center">
+Crit wave bug.gif
+Crit Surge Glitch.gif
+Savage Surge Glitch.gif
+</gallery>
+
+==Wave Shield Bug==
+In [[Version 10.1 Update|Version 10.1]], there was a bug where units with the [[Wave Shield]] ability would sometimes take full damage from [[Wave Attack]]s. This was patched in [[Version 10.2 Update|Version 10.2]].
+
+==Wafer Cat XL Bug==
+In [[Version 10.4 Update|Version 10.4]], there was a bug with the enemy version of [[Wafer Cat XL (Enemy)|Wafer Cat XL]] where if it was knocked back by the [[Battle Items#Sniper the Cat|Sniper the Cat]] item after landing a hit, it would remain indefinitely until killed without making any further attempts to attack. This bug was patched in Version 10.4.1.
+
+{{VideoGallery
+|9aDeIw6c5KU|ウエハースのバグ⁉︎【にゃんこ大戦争】
+}}
+
+==Status Effect Immunity Heritage==
+In [[Version 14.2 Update|Version 14.2]], when a unit that's Immune to Waves or a status effect that isn't Weaken or Freeze dies, other units may suddenly gain their immunities.
+<gallery>
+StatusImmunityBug.jpg|[[Bebe (Uber Rare Cat)|Law of Cycles Nagisa]] being completely unphased by [[Nutcracker Witch (Enemy)|Nutcracker Witch]]'s attack, which is supposed to inflict Knockback
+</gallery>
+
+==Animated Bases Bug==
+In the international versions for [[Version 15.2 Update|Version 15.2]], if an [[:Category:Animated Enemy Bases|Animated Base]] is not considered a boss, then it will move further ahead than its intended position. A good example can be seen in [[Ohno Road]], where the [[Surge Base (Enemy Base)|Surge Base]] will start attacking the Cat Base.
+
+{{VideoGallery
+|0HJNsZ2C5zs|Battle Cats - Ohno Road (2-Star) [Bugged?]
+}}
+
+==Enigma Level up Delay==
+When obtaining any [[:Category:Mythic Cats|Mythic Cat]] using a [[Battle Items#Cat CPU|Golden Cat CPU]] and a [[Battle Items#Treasure Radar|Treasure Radar]], the game will not display the Enigma level up notification until you clear another stage.
+<gallery type="slideshow" position="center">
+Bouncy park.gif|Footage of the glitch in action
+</gallery>
+
+==Early 4♛ Eldritch Forces==
+{{4c}} [[Eldritch Forces]] (and its [[Eldritch Forces/Invasion|Invasion stage]]) can be accessed before the completion of its 2 and 3♛ versions if all other Stories of Legend sub-chapters have been cleared on every difficulty beforehand. The button to select the 4♛ difficulty will remain grayed out when viewing it even after finishing the stage, though will light up once the preceding difficulties have been cleared as usual. Beyond that, nothing of note happens, leaving it as just a novelty bug.
+
+<gallery type="slideshow" position="center">
+Eldritch Forces Early 4c.png|Laboratory of Relics' button showing only 1 and {{4c}} cleared
+Eldritch Forces Early 4c 2.png|LoR Difficulty select button being grayed out while still having the "CLEAR!" text
+Eldritch Forces Early 4c 3.png|"I Am Legend 4" and "Elder Annihilator" being unlocked before I Am Legend 2 and 3
+</gallery>
+
+==Cat Shrine Hitbox Bug==
+The [[Cat Shrine]]'s hitbox doesn't move when the screen is transitioning from [[Gamatoto Expedition|GAMATOTO]] to the [[Ototo Corps]], and only becomes uninteractable until the screen finishes transitioning. You can still donate XP, and the resulting item will seemingly materialize onto the screen.
+
+<gallery type="slideshow" position="center">
+Shrinetransition.png|Cat Shrine menu while going to the Ototo Corps
+Freecatseyebyototocorps.png|A Super Rare Catseye being received next to Ototo Corps
+</gallery>
+
+==Re-Explore Bug==
+In the [[Ototo Corps]] menu screen, the Re-Explore button for [[Gamatoto Expedition|GAMATOTO]] is still active, despite not being visible. Even if an Expedition is in progress, you're still able to Re-Explore, restarting your expedition. Having the Equip button active disables the glitch.
+
+==No Enemies Appearing==
+Play without an Internet connection and enter the [[Catclaw Dojo]]. When the "Connecting..." window appears, close it using the back button on your device. If done correctly, going to any stage, turning off the device without closing the game, and turning it back on, will cause the "Enemies Appearing" window to appear completely empty. This glitch is purely visual, and does not affect the stage's actual enemy lineup in any way.
+
+<gallery type="slideshow" position="center">
+File:1000007564.jpg|[[Fish Hell (Insane)|Fish Hell]] without enemies.
+</gallery>
+
+{{BC Navigation}}
+[[Category:Game Features]]

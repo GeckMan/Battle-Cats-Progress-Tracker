@@ -1,0 +1,64 @@
+'''Artillery Dummy''' is an animated [[Enemy Bases|Enemy Base]] found in the [[Ranking Dojo]]. It was added in [[Version 13.2 Update|Version 13.2]].
+
+{{Enemy Info
+|name = Artillery Dummy
+|image = E 681.png
+|appearance = [[Arena of Power/Artillery Alley|Arena of Power]]
+|money drop = N/A
+}}
+
+==Enemy==
+This enemy base can attack Cat Units in its range, with a slow attack rate. Because it is a base, it does not move. All of its attacks are basically an instant-kill, except against [[:Category:Cats with Metal ability|Metal Cats]] and [[:Category:Lethal Strike Resistant Cats|Cats that survive lethal strikes]]. Artillery Dummy is immune to all effects but [[Surge Attack|Surge]], meaning that you can rack up more damage against it if you wish to progress much more quickly, though beware its absurd range of 450, being able to wipe out nearly any unit with Surge.
+
+==Strategy==
+Basically any unit that it can outrange, it will kill. Therefore, the best way to counter Artillery Dummy is to use units that outrange it, or time your units so that they go directly before Artillery Dummy attacks so your units can trigger the next wave as fast as possible, as the boss wave knocks your units out of Artillery Dummy's range. Due to its much longer range and more than halved attack rate compared to the regular [[Dummy (Enemy Base)|Dummy]], this one poses much more of a threat.
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Catclaw Dojo]]===
+*[[Arena of Power]]: [[Arena of Power/Artillery Alley|Artillery Alley]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Artillery Dummy
+|Health = 100
+|Attack Power = 999999
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 209
+|Movement Speed = 0
+|Knockback = 0
+|Foreswing = 10
+|Backswing = 27
+|Ability = {{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Typeless
+}}
+
+{{UnitViewer|enemy|bg=Bg043.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+681 e.png|Artillery Dummy's spritesheet
+</gallery>
+
+==Trivia==
+*In reality, Artillery Dummy's health is not infinite. It actually has 2,147,483,647 health but due to the time limit of the stage, it is not possible to defeat it without hacking.
+**The reason its health is exactly that is because [[:wikipedia:2,147,483,647|2,147,483,647]] is the maximum positive value for a [[:wikipedia:32-bit computing|32-bit]] [[:wikipedia:Integer (computer science)|integer]], and going over would cause an [[:wikipedia:Integer overflow|overflow]].
+*[[Hades the Punisher (Uber Rare Cat)|Hades the Deathdealer]] is able to tank a hit from this base if at level 50+54 or at level 54 with max health [[Talents]] and a Defense UP (M) [[Cat Combo]]. [[Hell Warden Emma (Uber Rare Cat)|Hell Commissioner Emma]] can also survive a hit if at level 60+58 with max health Talents or at 60+6 with max health Talents, a Defense UP (M) Combo and a Defense UP (Sm) Combo.
+
+----
+{{EnemyNav|Tarsiriel|Dark Dober}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Area Attack Enemies]]
+[[Category:Typeless Enemies]]
+[[Category:Animated Enemy Bases]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]

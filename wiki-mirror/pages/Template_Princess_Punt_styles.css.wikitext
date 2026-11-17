@@ -1,0 +1,9 @@
+.ranger-navbox.princess-punt {
+	--bg-navbox-title: linear-gradient(to right, hsl(343, 83%, 58%) 0%, hsl(343, 83%, 63%) 100%);
+	--bg-sub-table-title: #ffb5bd;
+	--bg-group-name: hsl(340, 80%, 50%);
+
+	--sub-title-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

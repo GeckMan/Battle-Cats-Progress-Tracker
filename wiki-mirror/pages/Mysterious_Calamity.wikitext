@@ -1,0 +1,80 @@
+'''Mysterious Calamity''' (謎の厄災, ''Nazo no Yakusai'', '''Mysterious Calamity''') is a [[:Category:Floating Enemies|Floating]] enemy that appears in [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]. It was added in [[Version 13.3 Update|Version 13.3]].
+
+{{Enemy Info
+|name = Mysterious Calamity
+|image = E 684.png
+|first appearance = [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]
+|money drop = 11,115¢ - 43,904¢
+}}
+
+==Enemy==
+The Mysterious Calamity is easily mistaken for a [[:Category:Cyclones|Cyclone]], but doesn't behave anything like one. It has a slow attack rate and speed, weakens units hit for 8 seconds, strengthens by 100% at 33% HP, is immune to knockback and freeze, and attacks from 250 range by calling down meteors that hit units within an area of -800~800. While its stats are relatively low at first, this enemy becomes extremely strong in later stages of [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]], reaching up to '''3.5M''' HP and '''63k''' attack power in [[The Cats Allied]].
+
+In all stages it appears in, the enemy base is protected by a [[Base Barrier]] which renders it impervious to damage until the Mysterious Calamity is defeated. In [[Decaying Town]] and The Cats Allied, the Base Barrier is not present until the base reaches 99% HP, which is when the Mysterious Calamity spawns.
+
+==Strategy==
+Rushing would be the ideal way to desecrate this offbrand [[:Category:Cyclones|Cyclone]] in earlier magnifications, as long as the player has access to [[Swimmer Cat (Super Rare Cat)|Fishman Cat]], [[Hip Hop Cat (Super Rare Cat)|Can Can]], and [[Bahamut Cat (Special Cat)|Awakened Bahamut]]. The latter of which would benefit immensely from [[Talents]].
+
+In [[Age of Havoc]] and [[The Cats Allied]], however, stalling with Talented [[Nerd Cat (Super Rare Cat)|Cyberpunk]] is almost necessary so you can chip it down with fast, high damage nukes, nukers like Fishman Cat and [[Express Cat (Super Rare Cat)|Bullet Train Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]:
+**[[Impending Calamity]] (100%)
+**[[Dark Clouds Rising]] (150%)
+**[[Decaying Town]] (450%)
+**[[Age of Havoc]] (900%)
+**[[The Cats Allied]] (1,400%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Mysterious Calamity
+|Health = 250000
+|Attack Power = 4500
+|Attack Range = 250
+|Attack Type = Area
+|Time Between Attacks = 239
+|Movement Speed = 3
+|Knockback = 3
+|Foreswing = 40
+|Backswing = 42
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -800~800)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 240f <sub>8 seconds</sub><br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 33% health<br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze}} [[Immune to Knockback]] and [[Immune to Freeze|Freeze]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+684 e.png|Mysterious Calamity's spritesheet
+Map043 00.png|Mysterious Calamity on [[Anniversary/11th Year#Calamity in Doge Kingdom|Calamity in Doge Kingdom]]'s map
+</gallery>
+
+==Trivia==
+*The symbols in the middle of the Mysterious Calamity look like the Roman numeral XI (11), referring to how it was created for the 11th and 1/2 anniversary event for the Japanese version.
+*The Mysterious Calamity's design appears to be a combination of [[The Cat God]]'s bodiless "idle state" and [[King Doge]]'s red hair.
+*Although Mysterious Calamity and [[Ensanglion the Calamity]] are both powerful [[:Category:Floating Enemies|Floating]] event enemies with "Calamity" in their name, Omni Strike, Weaken and Immune to Freeze, this may be a coincidence, as their Japanese names use different words for "calamity" (Mystery Calamity's uses 厄災 ''yakusai'', Ensanglion's uses 禍 ''ka'').
+*It has the highest money drop in the game.
+
+==Reference==
+*https://battlecats-db.com/enemy/686.html
+
+----
+{{EnemyNav|Gigahaniwan|Possessed King Doge}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]

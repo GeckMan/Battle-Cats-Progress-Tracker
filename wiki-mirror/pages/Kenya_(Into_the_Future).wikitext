@@ -1,0 +1,110 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Kenya (Into the Future)/Outbreak|here]].''
+'''Kenya''' is the 26th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc020.png]]
+|stage location = [[File:Kenya.png]]
+'''Into The Future'''
+|energy = 52
+|energy2 = 62
+|energy3 = 72
+|enemy castle hp = 120,000 HP
+|enemy castle hp2 = 180,000 HP
+|enemy castle hp3 = 240,000 HP
+|enemies = {{Magnification|Pigge|500%
+|Sir Seal|500%
+|Croco|500%
+|Snache|500%
+|Gory Dark|100%
+|Gory|500%}}
+|boss = {{Magnification|Croco|500%}}
+|enemies2 = {{Magnification|Pigge|1,000%
+|Sir Seal|1,000%
+|Croco|1,000%
+|Snache|1,000%
+|Gory Dark|200%
+|Gory|1,000%}}
+|boss2 = {{Magnification|Croco|1,000%}}
+|enemies3 = {{Magnification|Pigge|1,500%
+|Sir Seal|1,500%
+|Croco|1,500%
+|Ginger Snache|200%
+|Gory Dark|250%
+|Gory|1,500%}}
+|boss3 = {{Magnification|Croco|1,500%}}
+|treasure = - [[Treasure|Running Shoes]]
+|score reward = '''7,500''': [[Cat Food]] +10<br>
+'''5,000''': +75,000 XP
+|score reward2 = '''7,500''': [[Cat Food]] +10<br>
+'''6,500''': +112,500 XP
+|score reward3 = '''6,500''': [[Cat Food]] +10<br>
+'''5,500''': +150,000 XP
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 10
+|XP = 7,300 XP
+|width = 5,000
+|jpname = Kenya
+|script = ケニア
+|romaji = Kenia
+|jptreasure = Proof of Masai
+|twname = Kenya
+|twscript = 肯亞
+|twromaji = Kěnyǎ
+|twtreasure = Good Eyesight
+|krname = Kenya
+|krscript = 케냐
+|krromaji = Kenya
+|krtreasure = Vision
+|chapter = [[Into the Future]]
+|prev stage = [[Madagascar (Into the Future)|Madagascar]]
+|next stage = [[Saudi Arabia (Into the Future)|Saudi Arabia]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Pigge|Sir Seal|Croco|Snache|Gory Dark|Gory}}
+*3 [[Pigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*3 [[Sir Seal]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Croco]]s spawn after 25 seconds<sup>750f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Snache]]s spawn after 26.67 seconds<sup>800f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Croco]]s spawn after 40 seconds<sup>1,200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*5 [[Snache]]s spawn after 60 seconds<sup>1,800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Pigge]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*Infinite [[Sir Seal]]s spawn after 133.33 seconds<sup>4,000f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Croco]] spawns as the boss.
+**5 [[Gory Dark]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**5 [[Gory|Gories]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Pigge|Sir Seal|Croco|Ginger Snache|Gory Dark|Gory}}
+*3 [[Pigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Sir Seal]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[Croco]]s spawn after 26.67 seconds<sup>800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Croco]]s spawn after 50 seconds<sup>1,500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 60 seconds<sup>1,800f</sup>, delay 8.33~16.67 seconds<sup>250f~500f</sup>.
+*Infinite [[Pigge]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*Infinite [[Sir Seal]]s spawn after 100 seconds<sup>3,000f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Croco]] spawns as the boss.
+**5 [[Gory Dark]]s spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Gory Dark]]s spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+**5 [[Gory|Gories]] spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Gory|Gories]] spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+
+==Strategy==
+Pigges and Sir Seals will spawn at the beginning and you have plenty of time to stall for [[Worker Cat]] levels. It is recommended that you start stacking attackers like [[Weightlifter Cat (Super Rare Cat)|Ring Girl Cat]] or a slow [[:Category:Uber Rare Cats|Uber]] so you have extras for the boss wave. You have until you hit the enemy base, so don't summon any fast units until you're absolutely ready.
+
+After you hit the base, all at once, about 3-4 Gory Darks and about a half-dozen regular Gories pop out of the base and rush you during the knockback. If you are sufficiently prepared with stacking mid-long-ranged cats then you will have little issue, it may just take some time.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-26.html
+*https://battlecats-db.com/stage/s03004-26.html
+*https://battlecats-db.com/stage/s03005-26.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

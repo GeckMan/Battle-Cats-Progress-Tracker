@@ -1,0 +1,13 @@
+{{Documentation}}
+Module to view the expanded wikitext output of templates.
+
+==How to use==
+Call <nowiki>{{ViewSource|...}}</nowiki>, where ... is an unlimited amount of arguments separated by |, and it will return the expanded wikitext output of each argument. This can be used to debug templates without categorising a page or creating broken file links.
+
+==Example usage==
+<pre>{{ViewSource|{{ViewSource|{{PAGENAME}}}}|{{t|ViewSource}}|[[File:Placeholder]]|[[Category:Pages with broken file links]]}}</pre>
+yields
+{{ViewSource|{{ViewSource|{{PAGENAME}}}}|{{t|ViewSource}}|[[File:Placeholder]]|[[Category:Pages with broken file links]]}}
+
+==Limitations==
+*[[w:c:portability:Portable Infoboxes|Portable Infoboxes]] and other [[Special:Version#mw-version-parser-extensiontags|parser tag]]-based markup such as [[w:c:Help:Galleries|Galleries]], [[w:c:Help:Tabber|Tabbers]], and <code>&lt;pre&gt;</code> will not be converted to code due to being preprocessed before being passed to the Scribunto parser. See [[Special:Version#mw-version-parser-extensiontags|here]] for a full list of tags that don't work properly with this module.

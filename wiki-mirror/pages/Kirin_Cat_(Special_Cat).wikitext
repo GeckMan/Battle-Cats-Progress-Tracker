@@ -1,0 +1,130 @@
+{{JPExclusive}}
+{{Unobtainable}}
+'''Kirin Cat''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 4.2 Update|Version 4.2]] and can be unlocked by playing the Event Gacha during the [[Monster Hunter Collaboration Event]].
+
+{{Cat Info
+|ID = 208
+|rarity = EX
+|name1 = Kirin Cat
+|name2 = Kirin Cat Kirin
+}}
+
+==Evolution==
+Evolves into '''Kirin Cat Kirin''' at level 10.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of Cats able to perform it without relevant differences in quality. Kirin Cat, however, can be used in {{4c}} stages, where there is considerably less competition. This is its only use, as the [[Resistant|resistance]] against [[:Category:Floating Enemies|Floating]] enemies is only effective against enemies such as [[Mooth]], as any kind of real Floating threat like [[Owlbrow]] or [[Teacher Bun Bun]] will kill Kirin Cat just as easily as any other meatshield.
+
+==='''Evolved Form'''===
+Unfortunately, like the previous form, Kirin Cat Kirin gets outclassed by [[Cow Cat (Normal Cat)|Lion Cat]] and once it is acquired, [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]]. The resistance against Floating enemies is slightly more helpful in this form, but still barely makes a difference in mid and late-game, as hordes of [[Li'l Bun Bun]]s or [[Brollow]]s will take it out all the same.
+
+{{Job|Classification = Meatshield|EvolvedClass = Rusher|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 208
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni208 f00.png
+|Image2 = Uni208 c00.png
+|Name1 (JP) = キリンネコ
+|Desc1 (JP) = とある雪山で落ちていた装備を拾ったにゃんこ<br>もれだす雷の力に魅了され強大な力を手に入れた<br>と思っているただのネコ。浮いてる敵に打たれ強い
+|Transl1 (JP) = A mere cat who is fascinated by the power of lightning<Br>that leaks out from equipment found in a snow-covered mountain<br>and thinks it has acquired power. Strong against floating enemies
+|Name2 (JP) = キリンネコキリン
+|Desc2 (JP) = 身につけていた装備は幻想的な獣だったと知る<br>その姿に憧れ、日々の鍛錬によってついにキリン<br>っぽい姿を手に入れた。浮いてる敵に打たれ強い
+|Transl2 (JP) = Admired the sight of the equipment it wore<br>which they learned was a fantastic beast and through<br>daily training he finally acquired a giraffe-like appearance. Strong against floating enemies
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 50円
+*Chapter 2: 75円
+*Chapter 3: 100円
+
+===Evolved Form===
+*Chapter 1: 500円
+*Chapter 2: 750円
+*Chapter 3: 1,000円
+{{Upgrade Cost|EX5}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Kirin Cat
+|Normal Base HP = 90
+|Normal Base AP = 7
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 12
+|Normal KB = 4
+|Normal Cost = 50
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Evolved Name = Kirin Cat Kirin
+|Evolved Base HP = 450
+|Evolved Base AP = 12
+|Evolved Range = 140
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 36
+|Evolved KB = 6
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 90 HP
+|val-Normal-Attack Power = 7 damage<br>(5.68 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,530 HP
+|val-Normal-MaxAttack = 120 damage<br>(97.3 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 205 damage<br>(615 DPS)
+|val-Evolved-Attack Range = 140
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 36
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni208 f00}}
+
+==Trivia==
+*Its Normal Form appears to be wearing the helmet from the Kirin Armor, an iconic armor set from ''Monster Hunter'' that has stayed mostly unchanged since its first appearance.
+*Its Evolved Form resembles a [[wikia:monsterhunter:Kirin|Kirin]] from the Monster Hunter series. In the main Monster Hunter games, Kirin is an Elder Dragon. It controls the thunder element to some extent, explaining the lightning surrounding it in [[Nyanko Daisensou|Battle Cats]].
+*This is the only unit in the [[Monster Hunter Collaboration Event]] that doesn't have a unique spawn animation.
+*The name of its Evolved Form (キリンネコキリン, Kirin Neko Kirin) is likely a pun on how the word (キリン, Kirin) can be translated as giraffe.
+
+==Reference==
+*https://battlecats-db.com/unit/209.html
+
+----
+{{CatNav|Rathian|Li'l Cat}}
+----
+
+{{Monster Hunter}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Resistant ability]]

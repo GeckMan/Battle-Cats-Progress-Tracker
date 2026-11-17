@@ -1,0 +1,57 @@
+{{JPExclusive}}
+{{EnemiesAppearing|White Wind|Red Wind}}
+'''Middle and Long Distance Elite''' is the sixth stage in [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]].
+
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn182 05 c ja.png]]
+|stage location = [[File:Mapname182 c ja.png]]
+|energy = 120
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|White Wind|300%
+|Red Wind|300%}}
+|boss = {{Magnification|Red Wind|1%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''8,000''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''5,500''': 125,000 XP<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 3,600 XP
+|width = 5,500
+|max enemies = 12
+|jpname = Middle and Long Distance Elite
+|script = 中長距離の精鋭たち
+|romaji = Chū Chōkyori no Seieitachi
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]
+|difficulty = ★4
+|prev stage = [[2 Minutes 30 Seconds To Settle]]
+|next stage = [[The Name Comes from the Race Founder]]
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[White Wind]] spawns.
+*1 [[White Wind]] spawns after 6.67 seconds<sup>200f</sup>.
+*1 [[White Wind]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[Red Wind]] (300%) spawns after 33.33 seconds<sup>1,000f</sup>.
+*1 [[Red Wind]] (300%) spawns after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Red Wind]] (300%) spawns after 53.33 seconds<sup>1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Red Wind]] (1%) spawns as the boss.
+**5 [[White Wind]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**3 [[Red Wind]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+
+==Strategy==
+An easy stage. Even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units, the enemies serve practically no threat at all. However, it is recommended to have them at least at level 1+7 so that they have some survivability.
+
+==Reference==
+*https://battlecats-db.com/stage/s02182-06.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

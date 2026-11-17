@@ -1,0 +1,247 @@
+{{EnemiesAppearing|Dummy|The Face|One Horn|Doge Dark|St. Pigge the 2nd|Squire Rel|R.Ost|Shadow Boxer K|Dagshund|Le'boin}}
+'''Wanderer's Trial (Stage 1)''' is the only available stage in the [[The Battle Cats|English Version]] of the [[Catclaw Dojo]]. It was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Stage Info
+|stage name = [[File:E 283.png]]
+[[File:Mapsn000 00 t en.png]]
+|stage location = [[File:Mapname000 t en.png]]
+|energy = 0
+|enemy castle hp = Unlimited
+|base = {{Magnification|Dummy|0}}
+|enemies = {{Magnification|One Horn|0
+|Doge Dark|0
+|St. Pigge the 2nd|0
+|Squire Rel|0
+|R.Ost|0
+|Shadow Boxer K|0
+|Dagshund|0
+|Le'boin|0}}
+|boss = {{Magnification|The Face|0
+|Squire Rel|0
+|R.Ost|0
+|St. Pigge the 2nd|0
+|Le'boin|0}}
+|time limit = 5 minutes
+|XP = 0 XP
+|width = 4,200
+|max enemies = 12
+|jpname = Cat Training - Stage 1
+|script = ネコ修行 初段
+|romaji = Neko Shugyō Shodan
+|star = 1
+|dojo-chapter = [[Catclaw Dojo|Hall of Initiates]]
+|difficulty = ★2
+}}
+
+==Battleground==
+*The enemy base here is a [[Dummy (Enemy Base)|Dummy]].
+*Infinite [[Squire Rel]]s (100%) spawn after 30 seconds<sup>900f</sup>, delay 25~26.67 seconds<sup>750f~800f</sup>.
+*Infinite [[Squire Rel]]s (100%) spawn after 28.33 seconds<sup>850f</sup>, delay 25~26.67 seconds<sup>750f~800f</sup>.
+*Infinite [[Squire Rel]]s (100%) spawn after 5 seconds<sup>150f</sup>, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base takes 1,000 damage:
+**1 [[Le'boin]] (100%) spawns as the boss.
+*When the base takes 3,000 damage:
+**1 [[One Horn]] (100%) spawns.
+*When the base takes 5,000 damage:
+**10 [[Squire Rel]]s (100%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 7,500 damage:
+**1 [[Le'boin]] (100%) spawns.
+*When the base takes 10,000 damage:
+**10 [[Squire Rel]]s (100%) spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*When the base takes 15,000 damage:
+**1 [[The Face]] (100%) spawns as the boss.
+**5 [[Doge Dark]]s (100%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**1 [[One Horn]] (100%) spawns.
+*When the base takes 30,000 damage:
+**1 [[Le'boin]] (200%) spawns.
+**10 [[Squire Rel]]s (200%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 45,000 damage:
+**1 [[St. Pigge the 2nd]] (200%) spawns as the boss.
+**5 [[Doge Dark]]s (200%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 60,000 damage:
+**1 [[One Horn]] (400%) spawns.
+*When the base takes 75,000 damage:
+**5 [[Squire Rel]]s (400%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+**5 [[Squire Rel]]s (400%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+*When the base takes 90,000 damage:
+**1 [[Squire Rel]] (100%) spawns as the boss.
+**1 [[Dagshund]] (200%) spawns.
+**1 [[Dagshund]] (200%) spawns.
+**1 [[Dagshund]] (200%) spawns.
+**1 [[St. Pigge the 2nd]] (400%) spawns.
+*When the base takes 120,000 damage:
+**1 [[Shadow Boxer K]] (100%) spawns.
+*When the base takes 135,000 damage:
+**10 [[Squire Rel]]s (400%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 150,000 damage:
+**1 [[Shadow Boxer K]] (100%) spawns.
+*When the base takes 180,000 damage:
+**1 [[The Face]] (400%) spawns as the boss.
+**5 [[Doge Dark]]s (400%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+**5 [[Doge Dark]]s (400%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 195,000 damage:
+**5 [[Squire Rel]]s (600%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+**5 [[Squire Rel]]s (600%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+*When the base takes 210,000 damage:
+**1 [[Le'boin]] (600%) spawns.
+*When the base takes 240,000 damage:
+**1 [[One Horn]] (600%) spawns.
+*When the base takes 270,000 damage:
+**10 [[Squire Rel]]s (600%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*When the base takes 300,000 damage:
+**1 [[Squire Rel]] (600%) spawns as the boss.
+**2 [[Shadow Boxer K]]s (100%) spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Shadow Boxer K]]s (100%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 360,000 damage:
+**3 [[Doge Dark]]s (600%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 390,000 damage:
+**1 [[Dagshund]] (300%) spawns.
+*When the base takes 420,000 damage:
+**3 [[Doge Dark]]s (600%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 450,000 damage:
+**1 [[R.Ost]] (100%) spawns as the boss.
+*When the base takes 480,000 damage:
+**5 [[Squire Rel]]s (1,200%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+**5 [[Squire Rel]]s (1,200%) spawn, delay 25~26.67 seconds<sup>750f~800f</sup>.
+*When the base takes 500,000 damage:
+**1 [[St. Pigge the 2nd]] (600%) spawns.
+*When the base takes 550,000 damage:
+**1 [[St. Pigge the 2nd]] (600%) spawns.
+*When the base takes 600,000 damage:
+**1 [[The Face]] (1,000%) spawns as the boss.
+**3 [[One Horn]]s (1,200%) spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**8 [[Doge Dark]]s (800%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 650,000 damage:
+**1 [[Dagshund]] (400%) spawns.
+*When the base takes 700,000 damage:
+**1 [[Le'boin]] (1,800%) spawns.
+*When the base takes 750,000 damage:
+**1 [[Dagshund]] (400%) spawns.
+*When the base takes 800,000 damage:
+**1 [[Squire Rel]] (1,800%) spawns as the boss.
+**10 [[Squire Rel]]s (1,800%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Shadow Boxer K]]s (200%) spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Shadow Boxer K]]s (200%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 850,000 damage:
+**3 [[Doge Dark]]s (900%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 900,000 damage:
+**1 [[One Horn]] (1,800%) spawns.
+*When the base takes 950,000 damage:
+**3 [[Doge Dark]]s (900%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 1,000,000 damage:
+**1 [[Squire Rel]] (2,100%) spawns as the boss.
+**2 [[R.Ost]]s (150%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,050,000 damage:
+**10 [[Squire Rel]]s (2,100%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 1,100,000 damage:
+**1 [[St. Pigge the 2nd]] (800%) spawns.
+*When the base takes 1,150,000 damage:
+**1 [[St. Pigge the 2nd]] (800%) spawns.
+*When the base takes 1,200,000 damage:
+**1 [[The Face]] (1,200%) spawns as the boss.
+**2 [[One Horn]]s (2,100%) spawn, delay 20 seconds<sup>600f</sup>.
+**5 [[Doge Dark]]s (1,000%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 1,250,000 damage:
+**1 [[Dagshund]] (500%) spawns.
+*When the base takes 1,300,000 damage:
+**1 [[Le'boin]] (2,100%) spawns.
+*When the base takes 1,350,000 damage:
+**1 [[Dagshund]] (500%) spawns.
+*When the base takes 1,400,000 damage:
+**1 [[Squire Rel]] (2,400%) spawns as the boss.
+**10 [[Squire Rel]]s (2,400%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Shadow Boxer K]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Shadow Boxer K]]s (300%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 1,450,000 damage:
+**3 [[Doge Dark]]s (1,100%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 1,500,000 damage:
+**1 [[One Horn]] (2,400%) spawns.
+*When the base takes 1,550,000 damage:
+**3 [[Doge Dark]]s (1,100%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 1,600,000 damage:
+**1 [[Squire Rel]] (2,700%) spawns as the boss.
+**2 [[R.Ost]]s (200%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 1,650,000 damage:
+**10 [[Squire Rel]]s (2,700%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 1,700,000 damage:
+**1 [[St. Pigge the 2nd]] (1,000%) spawns.
+*When the base takes 1,750,000 damage:
+**1 [[St. Pigge the 2nd]] (1,000%) spawns.
+*When the base takes 1,800,000 damage:
+**1 [[The Face]] (1,500%) spawns as the boss.
+**2 [[One Horn]]s (2,700%) spawn, delay 20 seconds<sup>600f</sup>.
+**5 [[Doge Dark]]s (1,200%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 1,850,000 damage:
+**1 [[Dagshund]] (600%) spawns.
+*When the base takes 1,900,000 damage:
+**1 [[Le'boin]] (2,700%) spawns.
+*When the base takes 1,950,000 damage:
+**1 [[Dagshund]] (600%) spawns.
+*When the base takes 2,000,000 damage:
+**1 [[Squire Rel]] (3,000%) spawns as the boss.
+**10 [[Squire Rel]]s (3,000%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Shadow Boxer K]]s (400%) spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Shadow Boxer K]]s (400%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,050,000 damage:
+**3 [[Doge Dark]]s (1,300%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,100,000 damage:
+**1 [[One Horn]] (3,000%) spawns.
+*When the base takes 2,150,000 damage:
+**3 [[Doge Dark]]s (1,300%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,200,000 damage:
+**1 [[Squire Rel]] (3,300%) spawns as the boss.
+**2 [[R.Ost]]s (250%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 2,250,000 damage:
+**10 [[Squire Rel]]s (3,300%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 2,300,000 damage:
+**1 [[St. Pigge the 2nd]] (1,200%) spawns.
+*When the base takes 2,350,000 damage:
+**1 [[St. Pigge the 2nd]] (1,200%) spawns.
+*When the base takes 2,400,000 damage:
+**1 [[The Face]] (1,800%) spawns as the boss.
+**2 [[One Horn]]s (3,300%) spawn, delay 20 seconds<sup>600f</sup>.
+**5 [[Doge Dark]]s (1,400%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+*When the base takes 2,450,000 damage:
+**1 [[Dagshund]] (700%) spawns.
+*When the base takes 2,500,000 damage:
+**1 [[Le'boin]] (3,300%) spawns.
+*When the base takes 2,550,000 damage:
+**1 [[Dagshund]] (700%) spawns.
+*When the base takes 2,600,000 damage:
+**1 [[Squire Rel]] (3,600%) spawns as the boss.
+**10 [[Squire Rel]]s (3,600%) spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**2 [[Shadow Boxer K]]s (500%) spawn, delay 10 seconds<sup>300f</sup>.
+**3 [[Shadow Boxer K]]s (500%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,650,000 damage:
+**3 [[Doge Dark]]s (1,500%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,700,000 damage:
+**1 [[One Horn]] (3,600%) spawns.
+*When the base takes 2,750,000 damage:
+**3 [[Doge Dark]]s (1,500%) spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base takes 2,800,000 damage:
+**1 [[Squire Rel]] (3,900%) spawns as the boss.
+**2 [[R.Ost]]s (300%) spawn, delay 10 seconds<sup>300f</sup>.
+*When the base takes 2,850,000 damage:
+**10 [[Squire Rel]]s (3,900%) spawn, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*When the base takes 2,900,000 damage:
+**1 [[St. Pigge the 2nd]] (1,400%) spawns.
+*When the base takes 2,950,000 damage:
+**1 [[St. Pigge the 2nd]] (1,400%) spawns.
+*When the base takes 3,000,000 damage:
+**1 [[The Face]] (2,100%) spawns as the boss.
+**2 [[One Horn]]s (3,900%) spawn, delay 20 seconds<sup>600f</sup>.
+**5 [[Doge Dark]]s (1,600%) spawn, delay 3.33~5 seconds<sup>100f~150f</sup>.
+
+==Explanation==
+*You have five minutes to defeat as many enemies as possible.
+*You have unlimited [[Battle Items#Speed Up|Speed Ups]] and [[Battle Items#Cat CPU|Cat CPUs]], but no other items are allowed.
+*The base has unlimited health and can attack Cats that are close to it.
+*You gain no money for defeating enemies.
+*Defeating enemies will earn you points. The number varies.
+*The total points will decrease overtime.
+
+==Reference==
+*https://battlecats-db.com/stage/s06000-01.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]

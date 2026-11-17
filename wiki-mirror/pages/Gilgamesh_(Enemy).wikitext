@@ -1,0 +1,88 @@
+:''This article is about the enemy. For the Cat Unit, see [[Gilgamesh (Uber Rare Cat)]].''
+'''Gilgamesh''' (ギルガメッシュ) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Fate/Stay Night: Heaven's Feel Collaboration Event]]. He was added in [[Version 6.6 Update|Version 6.6]].
+
+{{Enemy Info
+|name = Gilgamesh
+|image = E 372.png
+|appearance = [[Fate/Stay Night: Heaven's Feel Collaboration Event]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+Arguably the strongest enemy in the collab, Gilgamesh is a very tanky [[Long Distance]] attacker that rapidly delivers closely-spaced multi-hits from extreme range. However, he has a massive 600 blindspot and his standing range is well within it, so most units can easily infiltrate it when given the chance.
+
+==Strategy==
+Outranging Gilgamesh or stalling him is nigh-impossible, and the best option to fight him is to have units that can either slip past his attacks or tank enough damage to enter his blindspot and eliminate whatever that's covering him.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#Holy War: Gilgamesh|Holy War: Gilgamesh]]:
+**[[King of Heroes (Veteran)]] (20%)
+**[[King of Heroes (Deadly)]] (100%)
+**[[King of Heroes (Merciless)]] (120%)
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#The Hidden Grail War|The Hidden Grail War]]: [[Beyond Springtide]] (10%)
+*[[Gauntlet of Servants]]:
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 11]] (150% HP/100% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 12]] (158% HP/106% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 13]] (166% HP/112% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 14]] (174% HP/118% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 15]] (182% HP/124% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 16]] (190% HP/130% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 17]] (198% HP/136% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 18]] (206% HP/142% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Day 19]] (214% HP/148% AP)
+**[[Gauntlet of Servants/Grail War: Day 1~20#Grail War: Day 11~20|Grail War: Final Day]] (225% HP/150% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Into the Fray: Servants Strike!|Into the Fray: Servants Strike!]] (15%, 30%, 45%, 60%, 75%, 90%, 110%, 130%, 150%, 170%, 190%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Fate/Stay Night: Heaven's Feel Collaboration Event#Holy War: Gilgamesh|Holy War: Gilgamesh]]:
+**[[King of Heroes (Veteran)]] (20%)
+**[[King of Heroes (Deadly)]] (100%)
+*[[Arena of Honor]]: [[Arena of Honor/Into the Fray: Servants Strike! (Old)|Into the Fray: Servants Strike!]] (20%, 30%, 45%, 60%, 75%, 90%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Gilgamesh
+|Health = 1500000
+|Attack Power = 15000
+|Attack Range = 600
+|Attack Type = Area
+|Time Between Attacks = 111
+|Movement Speed = 6
+|Knockback = 8
+|Foreswing = 64
+|Backswing = 37
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">5,000</span> at 64f <sup>2.13s</sup>, <span class="scaled" data-type="ap">5,000</span> at 68f <sup>2.27s</sup>, <span class="scaled" data-type="ap">5,000</span> at 74f <sup>2.47s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 600~1,100)<br>
+{{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+372 e.png|Gilgamesh's spritesheet
+IdleGilgamesh.gif|Gilgamesh's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/374.html
+
+----
+{{EnemyNav|Rider|Rin Tohsaka}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Enemies}}
+[[Category:Traitless Enemies]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemy Units]]

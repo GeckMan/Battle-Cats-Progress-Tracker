@@ -1,0 +1,99 @@
+:''For other uses, see [[God (disambiguation)|God]].''
+'''Cat God''' (神さま（本気）, ''Kami-sama (Honki)'', '''God (Serious)''') is a [[:Category:Traitless Enemies|Traitless]] enemy seen as the boss of [[The Big Bang (Cats of the Cosmos)|The Big Bang]] in [[Cats of the Cosmos]] Chapter 2. Once his stage is cleared, his [[Cat God the Great (Special Cat)|Mythic Cat counterpart]] will be unlocked. He was added in [[Version 7.2 Update|Version 7.2]].
+
+{{Enemy Info
+|name = Cat God
+|image = E 419.png
+|appearance = '''CotC''': [[The Big Bang (Cats of the Cosmos)|Chapter 2 - The Big Bang]]
+|money drop = 6,000¢ - 23,700¢
+}}
+
+==Enemy==
+Cat God is no longer [[:Category:Floating Enemies|Floating]]! He has a standing range of 300, but his attacks go up to 1,000. His attacks are now mixed; he will first cast God Bless You twice, which will [[Knockback]] AND [[Slow]] all cats within his reach with relatively low damage. He then prepares his lightning strike, which deals 65,999 damage at 100% strength magnification. Due to his initial buff being 1,100%, if the player does not have the [[Mystery Mask]] treasure, this enemy has a whopping '''16,499,989 HP''' and deals up to '''747,967 damage'''!
+
+Like all the other Cat Gods, it's a requirement that the Mystery Mask is up to 100% to fully reduce his power.
+
+==Strategy==
+:''See [[The Big Bang (Cats of the Cosmos)]]''
+
+In order to reduce his pushing power, cats with [[Knockback]] and [[Immune to Slow|Slow Immunity]] are recommended, Cats with [[Survive]] ability can endure his 3rd hit and prevent him from moving forward. [[:Category:Anti-Traitless Cats|Anti-Traitless Cats]] can significantly help during the boss fight. [[Lone Cat and Kitten (Rare Cat)|Vendor Cat and Kitten]] shines against him. Knockback and [[Freeze]] resets his attack animation, while Knockback and Slow immunity prevent Cat God from pushing them back. Watch out for alien peons, though.
+
+Rushers also benefit significantly from Cat God's first two attacks, as the knockback will reset their backswing, and the spacing between the two hits may allow them to land one additional hit. Given the right strategy, they can practically interrupt Cat God's attacks several times, eventually killing him if not removing large sections of his health. A prime example is [[Bahamut Cat (Special Cat)|Awakened Bahamut]], who can usually get at least 2-3 hits in, and with most of his damage concentrated into his first hit, he can remove ~200k in ideal circumstances, and even more if supported well.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 419
+|Type = Traitless
+|Image1 = Enemy icon 419.png
+|Name1 = Cat God
+|Desc1 = Hey there! It's me, everyone's favorite Cat God!<br>Hope you had a real good time in Cosmos Ch. 2!<br>Life in the real world can be tough... I actually<br>had to move back in with my mom last week...
+|Name1 (JP) = 神さま（本気） (Kami-sama (Honki), God (Serious))
+|Desc1 (JP) = 久しぶり！みんな大好き神さまだよ☆<br>宇宙編第２章楽しんでくれたかな？<br>ボクの私生活、みんな気になってるよね？<br>実は、こう見えて実家ぐらしなんだけど……
+|Transl1 (JP) = Long time no see! It's everybody's beloved God.☆<br>Did you enjoy [[Cats of the Cosmos|Cosmos]] Chapter 2?<br>Everybody wants to know about my personal life, right?<br>To tell you the truth, despite my appearance, I still live with my parents...
+|Name1 (TW) = 神（認真）
+|Desc1 (TW) = 好久不見！沒錯，我就是那個大家喜愛的神☆<br>「宇宙篇第二章」好玩嗎？<br>大家是不是還很好奇我的私生活？<br>其實我…一直都在老家但絕不是媽寶唷！
+|Name1 (KR) = 신 (진심)
+|Desc1 (KR) = 다들 오랜만이야!<br>우주편 제2장은 재밌게 즐겨주고 있니?<br>나의 사생활... 모두들 궁금해할 것 같아서 알려줄게.<br>이렇게 보여도 실은 내가 바로 건물주...읍..!?
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Cats of the Cosmos]]===
+*Stage 2-48: [[The Big Bang (Cats of the Cosmos)|The Big Bang]]
+
+===[[Cats of the Cosmos]] [[Zombie Outbreaks|Outbreaks]]===
+*Stage 2-48: [[The Big Bang (Cats of the Cosmos)/Outbreak|The Big Bang]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Cat God
+|Health = 1499999
+|Attack Power = 67997
+|Attack Range = 300
+|Attack Type = Area
+|Time Between Attacks = 401
+|Movement Speed = 3
+|Knockback = 5
+|Foreswing = 90
+|Backswing = 101
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">999</span> at 90f <sup>3s</sup>, <span class="scaled" data-type="ap">999</span> at 150f <sup>5s</sup>, <span class="scaled" data-type="ap">65,999</span> at 300f <sup>10s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -1,000~1,000)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units on 1st and 2nd hits<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 50f <sub>1.67 seconds</sub> on 1st and 2nd hits
+|Element = Traitless
+}}
+:''*Stats shown by default are with 100% [[Cats of the Cosmos]] Ch. 2 [[Mystery Mask]] [[Treasure]]s.''
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+419 e.png|Cat God's spritesheet
+THISTHINGWASTERRIBLETORENDER.gif|Cat God's animations
+</gallery>
+
+==Trivia==
+*His pose is taken from Michelangelo's ''[[wikipedia:David (Michelangelo)|David]]'' sculpture.
+*Prior to the [[Enemy Guide]] rework in [[Version 13.3 Update|Version 13.3]], Cat God had a joke "trait" named Cool Dude. His name in the Enemy Guide was Cat God (Cool Dude), but this was only for flavor, as he is simply a [[:Category:Traitless Enemies|Traitless]] enemy. [[Final Boss Giga-God]] was also a Cool Dude.
+**In [[BCJP]], Cat God still has this "trait" next to his name. The Cool Dude "trait's" Japanese name is 本気 (''Honki'', Serious); this is different from the actual Serious trait in [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou|YuruGeGe]], which was named しりあす (''Shiriasu'').
+
+==Reference==
+*https://battlecats-db.com/enemy/421.html
+
+----
+{{EnemyNav|Ribbo|Loris}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Cats of the Cosmos Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]

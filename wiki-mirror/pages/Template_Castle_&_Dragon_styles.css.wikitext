@@ -1,0 +1,10 @@
+.ranger-navbox.cnd {
+	--bg-navbox-title: linear-gradient(to right, #ff7070 0%, #ff9999 100%);
+	--bg-sub-table-title: #ed1212;
+	--bg-group-name: #ff5252;
+
+	--sub-title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

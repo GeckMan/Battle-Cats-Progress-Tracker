@@ -1,0 +1,568 @@
+{{Documentation}}
+This template is for displaying the [[Cat Guide]] given unit names, levels, and talent upgrade numbers.
+
+==Parameters==
+<pre>
+{{CatGuide
+|unit1|level1|talent1
+|unit2|level2|talent2
+|unit3|level3|talent3
+...
+}}
+</pre>
+These parameters work in the exact same way as [[Template:Nyanko]] as this template directly relies on its module for displaying unit icons. What the parameters are for is listed below. Essentially, this template takes an entire list of these parameters and organizes them into the Cat Guide. The order of units shown in the Cat Guide within each rarity will be the same order used in the template call, but it is fine if the parameters are not sorted by rarity.
+*<code>unit</code> is the name of the form you want to show.
+*<code>level</code> is the level of the Cat.
+**If level is ?, then the icon used is the placeholder deploy icon and level is converted to 0.
+*<code>talent</code> is as follows:
+**0 - No Talents unlocked/unit doesn't have Talents
+**1 - One regular Talent unlocked
+**2 - Two regular Talents unlocked
+**3 - Three regular Talents unlocked
+**4 - Four regular Talents unlocked
+**5 - Five regular Talents unlocked
+**6 - Full regular Talents unlocked (Certain units have six talents)
+**7 - One Ultra Talent unlocked
+**8 - Two Ultra Talents unlocked
+**9 - Three Ultra Talents unlocked
+
+Another option is to omit all of the levels and talents to only show the unit icons. For this, the format is the following:
+<pre>
+{{CatGuide
+|unit1
+|unit2
+|unit3
+...
+}}
+</pre>
+The <code>unit</code> parameters work the same way.
+
+==Usage==
+''Note that this is just for the purpose of explaining template usage and may not be accurate information about the in-game Cat Guide.''
+
+<tabber>
+With Levels and Talents=
+{{Collapsible|Show Code|Hide Code}}
+{{Clear}}
+<pre>
+{{CatGuide
+|Mohawk Cat|20+90|0
+|Eraser Cat|20+90|0
+|Dark Cat|20+90|0
+|Macho Leg Cat|20+90|0
+|Lion Cat|20+90|0
+|The Flying Cat|20+90|0
+|Island Cat|20+90|0
+|Jamiera Cat|20+90|0
+|Superfeline II|10+60|0
+|Flying Ninja Cat|40|0
+|Riceball Cat|50|0
+|Pastry Cat|40|0
+|Skelecat|30|0
+|Heavy Assault C.A.T.|50|0
+|Gato Amigo|50|0
+|Ultimate Bondage Cat|30|0
+|Dark Lazer|50|0
+|Dancer Cat|30|2
+|Beefcake Cat|30|0
+|Unicycle Cat|38|0
+|Loincloth Cat|30|0
+|Lollycat|39|0
+|Hyper Mr.|38|0
+|Brah Cats|32|0
+|Superstar Moneko|36|0
+|Corrupted Moneko|30|0
+|Bombercat|37|0
+|Jiangshi Cat|50+57|1
+|Chill Cat|50+40|3
+|Cyborg Cat|50+43|0
+|Catasaurus|50+40|4
+|Maximum the Fighter|50+34|0
+|Dread Pirate Catley|32+20|0
+|Goemon Cat|50+62|4
+|Sanzo Cat|30+20|1
+|Doctor Cat|30+20|1
+|Necro-Dancer Cat|30+20|0
+|Enchantress Cat|30+20|0
+|Cataur|50+20|0
+|Elemental Duelist Cat|50+54|2
+|Rodeo Cat|31+20|1
+|Acrobat Cats|30+20|0
+|Robocat|30+20|0
+|Ramen Cat|50+46|1
+|Cameraman Cat|50+38|2
+|Corrupted Psychocat|40+20|1
+|Thaumaturge Cat|30+20|0
+|Weedwacker Cat|50+32|0
+|Ectoweight Cat|50+32|0
+|Catellite|50+53|0
+|Bellydance Cat|50+29|0
+|Shigong Cat|50+28|0
+|Rampage Cats|30|0
+|Ritual Cat|30|0
+|Xmas Pudding Cat|30|0
+|Prisoner Cat|50|0
+|Gentleman Bros.|40|0
+|Nyalladin|40|0
+|Wrestling Cat|50|0
+|Can Can Cat|50+17|2
+|Roe Cat|50+16|0
+|Cyberpunk Cat|50+22|0
+|Octopus Cat|50+14|2
+|iCat|32+10|0
+|Fishman Cat|50+21|2
+|Luxury Bath Cat|40+17|0
+|Ultra Delinquent Cat|30+16|0
+|Tathagata Cat|30+10|0
+|Juliet the Maiko|30+10|0
+|Pizza Cat|50+19|1
+|Slapstick Cats|50+22|0
+|Catophone|30+11|0
+|Seafarer Cat|50+15|0
+|Housewife Cat|50+16|0
+|The Kitty of Liberty|40+13|0
+|Fiend Cat|30+16|0
+|Gold Macho Cat|50+2|0
+|Metal Macho|20|0
+|Miss NENEKO|30+1|0
+|Witchy Neneko|30+0|0
+|Seaside Neneko|40+1|0
+|New Year Neneko|?|0
+|Hoppity Neneko|30+0|0
+|Sweetheart Neneko|30+0|0
+|Cat Base Ultra|30+2|0
+|Headmaster Cat Jobs|30+1|0
+|Richest Cat|30+2|0
+|Sniper the Deadeye|30+1|0
+|Power Driller Cat|30+1|0
+|Power Piledriver Cat|30+5|0
+|Neo Cutter Cat|50+2|0
+|Power Backhoe Cat|30+2|0
+|Power Saw Cat|30+0|0
+|Bad-Luck Ebisu|30+0|0
+|Macho Suntan Cat|30+0|0
+|Sweet Bro Cats|30+1|0
+|Ice Crystal Cat|38+0|0
+|Queen Succubus Cat|?|0
+|Cat Machine Mk 3|38+0|0
+|Greater Balrog Cat|50+1|6
+|Lovestruck Greater Demon|?|0
+|Paladin Cat|?|0
+|Baby Cats|30+0|0
+|Heartful Nurse Cat|30+0|0
+|Yule Knight Nurse|30+0|0
+|Cat Guild Heroes|30+0|0
+|Ultimate Lasvoss|30+1|0
+|Devil Hunter Satoru|30+0|0
+|Rabbit Champion Satoru|?|0
+|Grand Yokai Tengu|?|0
+|Cutie MOMOCO|50+0|0
+|Wargod Miyamoto|?|0
+|Jeanne, type ψ|?|0
+|God-Emperor Babel|?|0
+|Colossal Benkei|?|0
+|Professor Abyss|?|0
+|Gaia the Supreme|50+0|0
+|Doom Engine Pandora|?|0
+|Luminalia|?|0
+|True Kyosaka Nanaho|50+0|0
+|Dark Lord Zeus|?|0
+|Akuma CC|?|0
+|Legelan Pasalan|50+0|0
+|Tyrant Cat|?|0
+}}
+</pre>
+</div>
+
+===Result===
+{{CatGuide
+|Mohawk Cat|20+90|0
+|Eraser Cat|20+90|0
+|Dark Cat|20+90|0
+|Macho Leg Cat|20+90|0
+|Lion Cat|20+90|0
+|The Flying Cat|20+90|0
+|Island Cat|20+90|0
+|Jamiera Cat|20+90|0
+|Superfeline II|10+60|0
+|Flying Ninja Cat|40|0
+|Riceball Cat|50|0
+|Pastry Cat|40|0
+|Skelecat|30|0
+|Heavy Assault C.A.T.|50|0
+|Gato Amigo|50|0
+|Ultimate Bondage Cat|30|0
+|Dark Lazer|50|0
+|Dancer Cat|30|2
+|Beefcake Cat|30|0
+|Unicycle Cat|38|0
+|Loincloth Cat|30|0
+|Lollycat|39|0
+|Hyper Mr.|38|0
+|Brah Cats|32|0
+|Superstar Moneko|36|0
+|Corrupted Moneko|30|0
+|Bombercat|37|0
+|Jiangshi Cat|50+57|1
+|Chill Cat|50+40|3
+|Cyborg Cat|50+43|0
+|Catasaurus|50+40|4
+|Maximum the Fighter|50+34|0
+|Dread Pirate Catley|32+20|0
+|Goemon Cat|50+62|4
+|Sanzo Cat|30+20|1
+|Doctor Cat|30+20|1
+|Necro-Dancer Cat|30+20|0
+|Enchantress Cat|30+20|0
+|Cataur|50+20|0
+|Elemental Duelist Cat|50+54|2
+|Rodeo Cat|31+20|1
+|Acrobat Cats|30+20|0
+|Robocat|30+20|0
+|Ramen Cat|50+46|1
+|Cameraman Cat|50+38|2
+|Corrupted Psychocat|40+20|1
+|Thaumaturge Cat|30+20|0
+|Weedwacker Cat|50+32|0
+|Ectoweight Cat|50+32|0
+|Catellite|50+53|0
+|Bellydance Cat|50+29|0
+|Shigong Cat|50+28|0
+|Rampage Cats|30|0
+|Ritual Cat|30|0
+|Xmas Pudding Cat|30|0
+|Prisoner Cat|50|0
+|Gentleman Bros.|40|0
+|Nyalladin|40|0
+|Wrestling Cat|50|0
+|Can Can Cat|50+17|2
+|Roe Cat|50+16|0
+|Cyberpunk Cat|50+22|0
+|Octopus Cat|50+14|2
+|iCat|32+10|0
+|Fishman Cat|50+21|2
+|Luxury Bath Cat|40+17|0
+|Ultra Delinquent Cat|30+16|0
+|Tathagata Cat|30+10|0
+|Juliet the Maiko|30+10|0
+|Pizza Cat|50+19|1
+|Slapstick Cats|50+22|0
+|Catophone|30+11|0
+|Seafarer Cat|50+15|0
+|Housewife Cat|50+16|0
+|The Kitty of Liberty|40+13|0
+|Fiend Cat|30+16|0
+|Gold Macho Cat|50+2|0
+|Metal Macho|20|0
+|Miss NENEKO|30+1|0
+|Witchy Neneko|30+0|0
+|Seaside Neneko|40+1|0
+|New Year Neneko|?|0
+|Hoppity Neneko|30+0|0
+|Sweetheart Neneko|30+0|0
+|Cat Base Ultra|30+2|0
+|Headmaster Cat Jobs|30+1|0
+|Richest Cat|30+2|0
+|Sniper the Deadeye|30+1|0
+|Power Driller Cat|30+1|0
+|Power Piledriver Cat|30+5|0
+|Neo Cutter Cat|50+2|0
+|Power Backhoe Cat|30+2|0
+|Power Saw Cat|30+0|0
+|Bad-Luck Ebisu|30+0|0
+|Macho Suntan Cat|30+0|0
+|Sweet Bro Cats|30+1|0
+|Ice Crystal Cat|38+0|0
+|Queen Succubus Cat|?|0
+|Cat Machine Mk 3|38+0|0
+|Greater Balrog Cat|50+1|6
+|Lovestruck Greater Demon|?|0
+|Paladin Cat|?|0
+|Baby Cats|30+0|0
+|Heartful Nurse Cat|30+0|0
+|Yule Knight Nurse|30+0|0
+|Cat Guild Heroes|30+0|0
+|Ultimate Lasvoss|30+1|0
+|Devil Hunter Satoru|30+0|0
+|Rabbit Champion Satoru|?|0
+|Grand Yokai Tengu|?|0
+|Cutie MOMOCO|50+0|0
+|Wargod Miyamoto|?|0
+|Jeanne, type ψ|?|0
+|God-Emperor Babel|?|0
+|Colossal Benkei|?|0
+|Professor Abyss|?|0
+|Gaia the Supreme|50+0|0
+|Doom Engine Pandora|?|0
+|Luminalia|?|0
+|True Kyosaka Nanaho|50+0|0
+|Dark Lord Zeus|?|0
+|Akuma CC|?|0
+|Legelan Pasalan|50+0|0
+|Tyrant Cat|?|0
+}}
+
+|-|Only Units=
+{{Collapsible|Show Code|Hide Code}}
+{{Clear}}
+<pre>
+{{CatGuide
+|Mohawk Cat
+|Eraser Cat
+|Dark Cat
+|Macho Leg Cat
+|Lion Cat
+|The Flying Cat
+|Island Cat
+|Jamiera Cat
+|Superfeline II
+|Flying Ninja Cat
+|Riceball Cat
+|Pastry Cat
+|Skelecat
+|Heavy Assault C.A.T.
+|Gato Amigo
+|Ultimate Bondage Cat
+|Dark Lazer
+|Dancer Cat
+|Beefcake Cat
+|Unicycle Cat
+|Loincloth Cat
+|Lollycat
+|Hyper Mr.
+|Brah Cats
+|Superstar Moneko
+|Corrupted Moneko
+|Bombercat
+|Jiangshi Cat
+|Chill Cat
+|Cyborg Cat
+|Catasaurus
+|Maximum the Fighter
+|Dread Pirate Catley
+|Goemon Cat
+|Sanzo Cat
+|Doctor Cat
+|Necro-Dancer Cat
+|Enchantress Cat
+|Cataur
+|Elemental Duelist Cat
+|Rodeo Cat
+|Acrobat Cats
+|Robocat
+|Ramen Cat
+|Cameraman Cat
+|Corrupted Psychocat
+|Thaumaturge Cat
+|Weedwacker Cat
+|Ectoweight Cat
+|Catellite
+|Bellydance Cat
+|Shigong Cat
+|Rampage Cats
+|Ritual Cat
+|Xmas Pudding Cat
+|Prisoner Cat
+|Gentleman Bros.
+|Nyalladin
+|Wrestling Cat
+|Can Can Cat
+|Roe Cat
+|Cyberpunk Cat
+|Octopus Cat
+|iCat
+|Fishman Cat
+|Luxury Bath Cat
+|Ultra Delinquent Cat
+|Tathagata Cat
+|Juliet the Maiko
+|Pizza Cat
+|Slapstick Cats
+|Catophone
+|Seafarer Cat
+|Housewife Cat
+|The Kitty of Liberty
+|Fiend Cat
+|Gold Macho Cat
+|Metal Macho
+|Miss NENEKO
+|Witchy Neneko
+|Seaside Neneko
+|New Year Neneko
+|Hoppity Neneko
+|Sweetheart Neneko
+|Cat Base Ultra
+|Headmaster Cat Jobs
+|Richest Cat
+|Sniper the Deadeye
+|Power Driller Cat
+|Power Piledriver Cat
+|Neo Cutter Cat
+|Power Backhoe Cat
+|Power Saw Cat
+|Bad-Luck Ebisu
+|Macho Suntan Cat
+|Sweet Bro Cats
+|Ice Crystal Cat
+|Queen Succubus Cat
+|Cat Machine Mk 3
+|Greater Balrog Cat
+|Lovestruck Greater Demon
+|Paladin Cat
+|Baby Cats
+|Heartful Nurse Cat
+|Yule Knight Nurse
+|Cat Guild Heroes
+|Ultimate Lasvoss
+|Devil Hunter Satoru
+|Rabbit Champion Satoru
+|Grand Yokai Tengu
+|Cutie MOMOCO
+|Wargod Miyamoto
+|Jeanne, type ψ
+|God-Emperor Babel
+|Colossal Benkei
+|Professor Abyss
+|Gaia the Supreme
+|Doom Engine Pandora
+|Luminalia
+|True Kyosaka Nanaho
+|Dark Lord Zeus
+|Akuma CC
+|Legelan Pasalan
+|Tyrant Cat
+}}
+</pre>
+</div>
+
+===Result===
+{{CatGuide
+|Mohawk Cat
+|Eraser Cat
+|Dark Cat
+|Macho Leg Cat
+|Lion Cat
+|The Flying Cat
+|Island Cat
+|Jamiera Cat
+|Superfeline II
+|Flying Ninja Cat
+|Riceball Cat
+|Pastry Cat
+|Skelecat
+|Heavy Assault C.A.T.
+|Gato Amigo
+|Ultimate Bondage Cat
+|Dark Lazer
+|Dancer Cat
+|Beefcake Cat
+|Unicycle Cat
+|Loincloth Cat
+|Lollycat
+|Hyper Mr.
+|Brah Cats
+|Superstar Moneko
+|Corrupted Moneko
+|Bombercat
+|Jiangshi Cat
+|Chill Cat
+|Cyborg Cat
+|Catasaurus
+|Maximum the Fighter
+|Dread Pirate Catley
+|Goemon Cat
+|Sanzo Cat
+|Doctor Cat
+|Necro-Dancer Cat
+|Enchantress Cat
+|Cataur
+|Elemental Duelist Cat
+|Rodeo Cat
+|Acrobat Cats
+|Robocat
+|Ramen Cat
+|Cameraman Cat
+|Corrupted Psychocat
+|Thaumaturge Cat
+|Weedwacker Cat
+|Ectoweight Cat
+|Catellite
+|Bellydance Cat
+|Shigong Cat
+|Rampage Cats
+|Ritual Cat
+|Xmas Pudding Cat
+|Prisoner Cat
+|Gentleman Bros.
+|Nyalladin
+|Wrestling Cat
+|Can Can Cat
+|Roe Cat
+|Cyberpunk Cat
+|Octopus Cat
+|iCat
+|Fishman Cat
+|Luxury Bath Cat
+|Ultra Delinquent Cat
+|Tathagata Cat
+|Juliet the Maiko
+|Pizza Cat
+|Slapstick Cats
+|Catophone
+|Seafarer Cat
+|Housewife Cat
+|The Kitty of Liberty
+|Fiend Cat
+|Gold Macho Cat
+|Metal Macho
+|Miss NENEKO
+|Witchy Neneko
+|Seaside Neneko
+|New Year Neneko
+|Hoppity Neneko
+|Sweetheart Neneko
+|Cat Base Ultra
+|Headmaster Cat Jobs
+|Richest Cat
+|Sniper the Deadeye
+|Power Driller Cat
+|Power Piledriver Cat
+|Neo Cutter Cat
+|Power Backhoe Cat
+|Power Saw Cat
+|Bad-Luck Ebisu
+|Macho Suntan Cat
+|Sweet Bro Cats
+|Ice Crystal Cat
+|Queen Succubus Cat
+|Cat Machine Mk 3
+|Greater Balrog Cat
+|Lovestruck Greater Demon
+|Paladin Cat
+|Baby Cats
+|Heartful Nurse Cat
+|Yule Knight Nurse
+|Cat Guild Heroes
+|Ultimate Lasvoss
+|Devil Hunter Satoru
+|Rabbit Champion Satoru
+|Grand Yokai Tengu
+|Cutie MOMOCO
+|Wargod Miyamoto
+|Jeanne, type ψ
+|God-Emperor Babel
+|Colossal Benkei
+|Professor Abyss
+|Gaia the Supreme
+|Doom Engine Pandora
+|Luminalia
+|True Kyosaka Nanaho
+|Dark Lord Zeus
+|Akuma CC
+|Legelan Pasalan
+|Tyrant Cat
+}}
+</tabber>
+<includeonly>
+[[Category:Cosmetic templates]]
+</includeonly>

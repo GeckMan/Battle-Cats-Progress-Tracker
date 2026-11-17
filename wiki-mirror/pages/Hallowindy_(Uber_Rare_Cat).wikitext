@@ -1,0 +1,128 @@
+'''Hallowindy''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that was added in [[Version 4.3 Update|Version 4.3]] and can be by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] event [[Halloween Capsules (Gacha Event)|Halloween Capsules]]. She is the anti-[[:Category:Alien Enemies|Alien]] variant of [[Windy (Uber Rare Cat)|Windy]].
+
+{{Cat Info
+|ID = 229
+|rarity = UR
+|name1 = Hallowindy
+|name2 = Hallowindy, type α
+}}
+
+==Evolution==
+Evolves into '''Hallowindy, type α''' at level 10.
+
+==Strategy/Usage==
+Similar to other seasonal ubers, Hallowindy is not your best option as a generalist due to her rather poor DPS, although because of her decent range, she can serve decently as a backliner if properly protected. As for her niche, she excels against any midranged Alien enemies such as [[Ursamajor]], but can have a bad time against [[:Category:Starred Alien Enemies|Starred Aliens]] because her long attack animation can easily be interrupted by a [[Warp]]. Her slow speed doesn't make it any better as it takes a very long time for her to get back to the frontlines.
+
+{{Job|Classification = Nuker}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 229
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni229 f00.png
+|Image2 = Uni229 c00.png
+|Name1 = Hallowindy
+|Desc1 = The mistress of wind really gets into Halloween each year.<br>Blasts enemies with unearthly plasma beams.<br>Massive damage against Alien enemies from range.
+|Name2 = Hallowindy, type α
+|Desc2 = This hyper-maiden's idea of a good Halloween prank<br>is a plasma beam shot when its least expected.<br>Massive damage against Alien enemies from range.
+|Name1 (JP) = ウィンディスイート (Windi Suīto, Windy Sweet)
+|Desc1 (JP) = ハロウィン限定スタイルの風のチカラを操るハイパー少女<br>遠距離から放たれるスイートキャノンは<br>エイリアンに超ダメージを与える(範囲攻撃)
+|Transl1 (JP) = A hyper girl who manipulates the power of the wind with a Halloween-only style<br>sweet cannon which is able to shoot from a long distance<br>Super damage to Aliens (Range Attack)
+|Name2 (JP) = ウィンディスイートα (Windi Suīto α, Windy Sweet α)
+|Desc2 (JP) = 街中に風のイタズラを仕掛けるハイパーハロウィン少女<br>遠距離から放たれるスイートキャノンは<br>エイリアンに超ダメージを与える(範囲攻撃)
+|Transl2 (JP) = A hyper girl who plays wind pranks on the city with a Halloween-only style<br>sweet cannon which is able to shoot from a long distance<br>Super damage to Aliens (Range Attack)
+|Name1 (TW) = 甜心溫蒂
+|Desc1 (TW) = 萬聖節限定造型！能夠操縱風的力量的超能少女<br>從遠距離發射的甜心砲<br>可以給予異星戰士超大傷害（範圍攻擊）
+|Name2 (TW) = 甜心溫蒂α
+|Desc2 (TW) = 滿街用風捉弄人的超能萬聖少女<br>從遠距離發射的甜心砲<br>可以給予異星戰士超大傷害（範圍攻擊）
+|Name1 (KR) = 윈디 스위트
+|Desc1 (KR) = 할로윈 한정 스타일의 바람의 힘을 조종하는 하이퍼 소녀<br>원거리에서 발사되는 스위트 캐넌은<br>에이리언에 초 데미지를 입힌다 (범위 공격)
+|Name2 (KR) = 윈디 스위트α
+|Desc2 (KR) = 귀여운 장난을 좋아하는 하이퍼 할로윈 소녀<br>원거리에서 발사되는 스위트 캐넌은<br>에이리언에 초 데미지를 입힌다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,950¢
+*Chapter 2: 4,425¢
+*Chapter 3: 5,900¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hallowindy
+|Normal Base HP = 1150
+|Normal Base AP = 1855
+|Normal Range = 435
+|Normal Foreswing = 81
+|Normal Attack Cooldown = 327
+|Normal Attack Length = 136
+|Normal Speed = 9
+|Normal KB = 6
+|Normal Cost = 2950
+|Normal Recharge = 3200
+|Normal Attack Type = Area
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Hallowindy, type α
+|Evolved Base HP = 2250
+|Evolved Base AP = 3255
+|Evolved Range = 435
+|Evolved Foreswing = 81
+|Evolved Attack Cooldown = 327
+|Evolved Attack Length = 136
+|Evolved Speed = 9
+|Evolved KB = 6
+|Evolved Cost = 2950
+|Evolved Recharge = 3200
+|Evolved Attack Type = Area
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,150 HP
+|val-Normal-Attack Power = 1,855 damage<br>(136.4 DPS)
+|val-Normal-Attack Range = 435
+|val-Normal-Attack Frequency = 408f <sub>13.6 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 6 times
+|val-Normal-Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|val-Normal-Recharge Time = 106.67 ~ 97.87 seconds
+|val-Normal-MaxHP = 19,550 HP
+|val-Normal-MaxAttack = 31,535 damage<br>(2,318.75 DPS)
+|val-Evolved-Health = 38,250 HP
+|val-Evolved-Attack Power = 55,335 damage<br>(4,068.75 DPS)
+|val-Evolved-Attack Range = 435
+|val-Evolved-Attack Frequency = 408f <sub>13.6 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 6 times
+|val-Evolved-Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|val-Evolved-Recharge Time = 106.67 ~ 97.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni229 f00}}
+
+==Trivia==
+*[[Version 5.5 Update|Version 5.5]] increased Hallowindy's HP, attack, movement speed and range.
+*Prior to [[Version 9.1 Update|Version 9.1]], Hallowindy's Evolved Form was named "Hallowindy α".
+*There is a typo in Hallowindy, type α's description: "when its least expected" instead of "when it's least expected".
+*Not counting [[Evangelist Cat (Uber Rare Cat)|Evangelist Cat]] or [[:Category:Collaboration Event Cats|Collaboration Cats]], Hallowindy and [[Spooky Thundia (Uber Rare Cat)|Spooky Thundia]] are tied for the oldest existing Uber Rare Cats without [[True Form]]s.
+
+==Reference==
+*https://battlecats-db.com/unit/230.html
+
+----
+{{CatNav|Gloomy Neneko|Spooky Thundia}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]

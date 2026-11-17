@@ -1,0 +1,157 @@
+:''For other uses see, [[Rei (disambiguation)]].''
+'''Night Oracle Rei''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Neon Genesis Evangelion Collaboration Event]]. This unit is a variant of [[Miko Mitama (Uber Rare Cat)|Mitama the Oracle]] with various different attributes. She was added in [[Version 10.2 Update|Version 10.2]].
+
+{{Cat Info
+|ID = 547
+|rarity = UR
+|name1 = Night Oracle Rei
+|name2 = Heavenly Herald Rei
+}}
+
+==Evolution==
+Evolves into '''Heavenly Herald Rei''' at level 10.
+
+==Strategy/Usage==
+Despite seeming similar, this unit has worse stats and abilities than Mitama the Oracle.
+
+Compared to [[Miko Mitama (Uber Rare Cat)|Mitama the Oracle]], this unit has far less survivability, due to lower health and 1/3 the knockbacks. She has 100 less piercing range on her attacks, slightly lower damage and a much shorter-lasting debuff, but, in return, she is usable in stages with Surge Attacks (most notably the [[Surge Base (Enemy Base)|Surge Base]]) and in the Evangelion Collaboration Stages due to her EVA Angel Killer. The only advantage she might have over Mitama is her Surge Attack, but it suffers from inconsistency, both in proc rates and spawn location. It can allow her Slow to reach backliners, but again, inconsistency is an issue.
+
+In general, she's a good debuffer who may take a while to dispose of and, although not as powerful as Miko Mitama, she can still bring a lot to a fight, especially when she's not at risk of being outranged.
+
+{{Job|Classification = Crowd-Controller & Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 547
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni547 f00.png
+|Image2 = Uni547 c00.png
+|Name1 = Night Oracle Rei
+|Desc1 = Being of purity who heralds the world's end.<br>Where lies the exit from this shining night?<br>Tough vs Traited enemies, with 100% Slow.
+|Name2 = Heavenly Herald Rei
+|Desc2 = Unshakable faith in a hopeful dawn to come<br>gives her the strength to keep fighting on.<br>Tough vs Traited enemies, with 100% Slow.
+|Name1 (JP) = 白夜姫のレイ (Byakuya Hime no Rei, Rei of the White Night Princes)
+|Desc1 (JP) = 時が零を刻む頃に現れるという純白の寡黙な少女<br>光射しこむ夜からの出口を、彼女はまだ知らない(遠方範囲)<br>属性を持つ敵に打たれ強く、必ず動きを遅くする
+|Transl1 (JP) = A taciturn girl of pure white who appears when time ticks down to zero<br>she still doesn't know the way out of the light-filled night (Distant Range)<br>She is strong against enemies with attributes and always slows them down
+|Name2 (JP) = 白天姫のレイ (Haku Takashi Hime no Rei, Rei of the White Heavenly Princess)
+|Desc2 (JP) = 夜明けの光を浴びて運命に抗う強き信念の少女<br>心温まる場所の存在が戦う理由を与えてくれた(遠方範囲)<br>属性を持つ敵に打たれ強く、必ず動きを遅くする
+|Transl2 (JP) = A girl of strong faith who defies fate in the light of dawn<br>the existence of a heart-warming place has given her a reason to fight (Distant Range)<br>She is strong against enemies with attributes and always slows down their movements
+|Name1 (TW) = 白夜姬零
+|Desc1 (TW) = 傳說在午夜零時現身的純白沉默寡言少女<br>她仍不知道光線照進夜路的出口在何方(遠距範圍)<br>對上有屬性的敵人很耐打、必定能使其動作變慢
+|Name2 (TW) = 白天姬零
+|Desc2 (TW) = 沐浴晨曦的光線，對抗命運信念堅強的少女<br>讓心溫暖的所處給了我們戰鬥的理由(遠距範圍)<br>對上有屬性的敵人很耐打、必定能使其動作變慢
+|Name1 (KR) = 백야 공주 레이
+|Desc1 (KR) = 시간이 영을 새길 무렵 나타난다고 하는 순백의 과묵한 소녀<br>빛이 비치는 밤으로부터의 출구를 그녀는 아직 모른다 (원거리 범위공격)<br>속성을 가진 적에게 맷집이 좋고 반드시 움직임을 느리게 한다
+|Name2 (KR) = 백천 공주 레이
+|Desc2 (KR) = 새벽빛을 받아 운명에 저항하는 강한 신념의 소녀 (원거리 범위공격)<br>마음이 따뜻해지는 장소의 존재가 싸우는 이유를 주었다<br>속성을 가진 적에게 맷집이 좋고 반드시 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 3,500¢
+*Chapter 2: 5,250¢
+*Chapter 3: 7,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Night Oracle Rei
+|Normal Base HP = 1500
+|Normal Base AP = 1150
+|Normal Range = 350
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 151
+|Normal Speed = 6
+|Normal KB = 5
+|Normal Cost = 3500
+|Normal Recharge = 5000
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Surge Attacks}} 30% chance to create a level 1 [[Surge Attack]] between 250 and 850 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Evolved Name = Heavenly Herald Rei
+|Evolved Base HP = 1500
+|Evolved Base AP = 1150
+|Evolved Range = 350
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 151
+|Evolved Speed = 6
+|Evolved KB = 5
+|Evolved Cost = 3500
+|Evolved Recharge = 5000
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating,Dark,Metal,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 250~550)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|EVA Angel Killer}} [[EVA Angel Killer]] (Deals 5x damage to [[:Category:EVA Angel Enemies|EVA Angels]], only takes 1/5 damage)<br>
+{{AbilityIcon|Surge Attacks}} 30% chance to create a level 1 [[Surge Attack]] between 250 and 850 range<br>
+{{AbilityIcon|Immune to Surge}} [[Immune to Surge]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,500 HP
+|val-Normal-Attack Power = 1,150 damage<br>(228.48 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 15f <sup>0.5s</sup><br>(136f <sup>4.53s</sup> backswing)
+|val-Normal-Recharge Time = 166.67 ~ 157.87 seconds
+|val-Normal-MaxHP = 25,500 HP
+|val-Normal-MaxAttack = 19,550 damage<br>(3,884.11 DPS)
+|val-Evolved-Health = 25,500 HP
+|val-Evolved-Attack Power = 19,550 damage<br>(3,884.11 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 15f <sup>0.5s</sup><br>(136f <sup>4.53s</sup> backswing)
+|val-Evolved-Recharge Time = 166.67 ~ 157.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni547 f00}}
+
+==Trivia==
+*This is the first cat to be a variant of a fest-exclusive unit.
+*The evolved form has references like Gendo's glasses, [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]]'s shield, an N² Missile, the cooking pot, the letter invite to the dinner party, and the bed that Rei was wheeled in on while injured.
+*The mini Reis may be a reference to the original Neon Genesis Evangelion anime where the Angel [[wikipedia:Angels in Neon Genesis Evangelion#Armisael|Armisael]] comes into contact with Rei, producing similar growths of mini Reis.
+
+==Reference==
+*https://battlecats-db.com/unit/548.html
+
+----
+{{CatNav|Papaluga|The 4th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Slow ability]]
+[[Category:Surge Attack Cats]]
+[[Category:EVA Angel Killer Cats]]
+[[Category:Cats with Surge Immunity]]

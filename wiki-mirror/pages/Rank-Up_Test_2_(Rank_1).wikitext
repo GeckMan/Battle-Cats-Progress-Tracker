@@ -1,0 +1,63 @@
+{{EnemiesAppearing|Catclaw Castle|B.B.Bunny|Sir Seal}}
+'''Rank-Up Test 2''' is the second stage in [[Catclaw Championships#Catclaw Championships Rank 1|Catclaw Championships Rank 1]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:E 710.png]]
+[[File:Mapsn000 01 g en.png]]
+|stage location = [[File:Mapname000 g en.png]]
+|energy = 0
+|enemy castle hp = 4,500 HP
+|base = {{Magnification|Catclaw Castle|45,000%}}
+|enemies = {{Magnification|B.B.Bunny|100%}}
+|boss = {{Magnification|Sir Seal|100%}}
+|treasure = - [[Leadership]] +3 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 10 XP
+|width = 4,800
+|max enemies = 20
+|jpname = Promotion Exam 2
+|script = 昇段試験２
+|romaji = Shōdan Shiken 2
+|star = 1
+|dojo-chapter = [[Catclaw Championships#Catclaw Championships Rank 1|Catclaw Championships Rank 1]]
+|prev stage = [[Rank-Up Test 1 (Rank 1)|Rank-Up Test 1]]
+|next stage = [[Rank-Up Test 3 (Rank 1)|Rank-Up Test 3]]
+}}
+
+==Restrictions==
+*This stage uses [[Empire of Cats]] Chapter 1 deploy costs.
+*Fixed lineup: [[Axe Cat (Normal Cat)|Axe Cat]], [[Cow Cat (Normal Cat)|Cow Cat]] and [[Fish Cat (Normal Cat)|Fish Cat]].
+
+==Battleground==
+*The enemy base here is a [[Catclaw Castle (Enemy Base)|Catclaw Castle]].
+*9 [[B.B.Bunny|B.B.Bunnies]] spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 26.67 seconds<sup>800f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+*1 [[Sir Seal]] spawns as the boss after 43.33 seconds<sup>1,300f</sup>.
+
+==Lineup==
+This lineup is fixed and cannot be modified.
+{{Lineup
+|Axe Cat|5
+|Cow Cat|5
+|Fish Cat|5
+|name = Fixed
+|basic = true
+}}
+
+==Strategy==
+This stage serves to teach the player about traits. Your lineup is fixed to a bunch of cats that counters red enemies. Keep spamming these cats and the enemy will drop like flies.
+
+Alternatively, the [[Cow Cat (Normal Cat)|Cow Cat]] in your lineup allows for you to rush the stage down before the sir seal spawns, which can be an option if you don't feel like taking on the tougher enemies.
+
+==Hints==
+The first hint can be viewed within the Enemies Appearing window before beginning the stage. The second only appears as a defeat message when failing it.
+*There are many types of enemies including<br>Red, Dark, and Alien enemies.<br>For Red enemies, {{Color|Blue|Axe Cat}} and<br>{{Color|Blue|Fish Cat}} are effective.
+*Sir Seal and B.B.Bunny are Red enemies.<br>Fish Cat has a high deployment cost, but<br>is effective against Red enemies.
+
+==Reference==
+*https://battlecats-db.com/stage/s37000-02.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]
+[[Category:No Continue Stages]]
+[[Category:Restriction Stages]]

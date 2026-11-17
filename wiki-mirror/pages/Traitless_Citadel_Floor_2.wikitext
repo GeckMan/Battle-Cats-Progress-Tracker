@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Jackie Peng|Hippoe|Le'boin|Lione Hippoe|Chief Peng}}
+:''Not to be confused with the [[Heavenly Tower/Floor 2|Heavenly Tower]] or [[Infernal Tower/Floor 2|Infernal Tower]] versions of Floor 2.''
+'''Floor 2''' is the second floor of [[Traitless Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 01 v en.png]]
+|stage location = [[File:Mapname007 v en.png]]
+|energy = 80
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Jackie Peng|150%
+|Hippoe|150%
+|Le'boin|150%
+|Lione Hippoe|100%}}
+|boss = {{Magnification|Chief Peng|100%}}
+|treasure = - 100,000 XP (100%, 1 time)
+|XP = 1,520 XP
+|width = 4,400
+|max enemies = 9
+|jpname = 2nd Floor
+|script = 2階
+|romaji = 2 Kai
+|star = 1
+|event-chapter = [[Traitless Citadel]]
+|difficulty = ★3
+|prev stage = [[Traitless Citadel/Floor 1|Floor 1]]
+|next stage = [[Traitless Citadel/Floor 3|Floor 3]]
+}}
+
+==Battleground==
+*5 [[Jackie Peng]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+*1 [[Hippoe]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Hippoe]] spawns after 26.67 seconds<sup>800f</sup>.
+*1 [[Hippoe]] spawns after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Chief Peng]] spawns as the boss.
+**Infinite [[Jackie Peng]]s spawn, delay 20~30 seconds<sup>600f~900f</sup>.
+**1 [[Le'boin]] spawns.
+**1 [[Lione Hippoe]] spawns.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07007-02.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

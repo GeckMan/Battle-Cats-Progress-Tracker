@@ -1,0 +1,74 @@
+:''This article is about the enemy. For the Cat Unit, see [[The 4th Angel (Uber Rare Cat)]].''
+'''The 4th Angel''' is a [[:Category:EVA Angel Enemies|EVA Angel]] enemy that appears in the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Enemy Info
+|name = The 4th Angel
+|image = E 392.png
+|appearance = [[Neon Genesis Evangelion Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+This enemy has a 100% chance to [[Knockback]] against all Cat Units, this enemy becomes hard to hit with units with long attack animations or units with slow movement speed.
+
+==Strategy==
+Not too bad to deal with, although early players could find it annoying to fight. Using [[:Category:Cats with Knockback Immunity|cats with Knockback immunity]] helps significantly against The 4th Angel. Units that attack after a knockback (i.e. [[Express Cat (Super Rare Cat)|Maglev Cat]], [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], [[Sanada Yukimura (Uber Rare Cat)|Sanada Yukimura]], etc.) are also useful.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Neon Genesis Evangelion Collaboration Event#EVANGELION Activates!|EVANGELION Activates!]]:
+**[[State of Emergency]] (1%)
+**[[NERV]] (30%)
+**[[I Mustn't Run Away...]] (100%)
+*[[Heralds of The End]]:
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.1]] (1,000%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.2]] (1,500%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.3]] (2,100%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.4]] (2,800%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.5]] (3,600%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.1~6|WARNING Lv.6]] (4,500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = The 4th Angel
+|Health = 120000
+|Attack Power = 3000
+|Attack Range = 500
+|Attack Type = Area
+|Time Between Attacks = 103
+|Movement Speed = 6
+|Knockback = 3
+|Foreswing = 38
+|Backswing = 65
+|Ability = {{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = EVA Angel
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+392 e.png|The 4th Angel's spritesheet
+IdleSachiel.gif|The 4th Angel's moving animation
+</gallery>
+
+==Trivia==
+*Prior to [[Version 14.7 Update|Version 14.7]] of the [[The Battle Cats|English Version]], this enemy was named "Sachiel".
+
+==Reference==
+*https://battlecats-db.com/enemy/394.html
+
+----
+{{EnemyNav|Mentori|The 6th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:EVA Angel Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with unique death animations]]

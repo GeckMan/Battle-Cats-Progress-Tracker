@@ -1,0 +1,131 @@
+:''This article is about the Cat Unit. For the enemy unit, see [[MARCO (Enemy)]].''
+'''MARCO''' is a [[:Category:Rare Cats|Rare Cat]] that was introduced in [[Version 4.3 Update|Version 4.3]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Metal Slug Collaboration Event]].
+
+{{Cat Info
+|ID = 215
+|rarity = RR
+|name1 = MARCO
+|name2 = MARCO CC
+}}
+
+==Evolution==
+Evolves into '''MARCO CC''' at level 10.
+
+==Strategy/Usage==
+Despite his freezing capability, MARCO won't save you from the wrath of Aliens. His high cost and single-target attacks make him useless when facing many peons. Use him only if you don't have many [[:Category:Anti-Alien Cats|anti-Alien units]] and spam him in high numbers.
+
+He functions surprisingly well in [[The Wormhole Opens (Deadly)|The Wormhole Opens]], as [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] is outranged by the [[Super Cosmic Cyclone]]. He's also usable in [[Moon (Into the Future)|Moon]] of Into the Future Chapter 3, since [[Raging Bahamut Cat]] also outranges Seafarer. However, keep him well protected, as he only outranges Raging Bahamut by 10.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 215
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni215 f00.png
+|Image2 = Uni215 c00.png
+|Name1 = MARCO
+|Desc1 = Recruited from the Metal Slug series!<br>This major excels at programming recruits.<br>Might temporarily freeze Aliens.
+|Name2 = MARCO CC
+|Desc2 = Recruited from the Metal Slug series!<br>A top intel officer who lets loose with artillery.<br>Might temporarily freeze Aliens.
+|Name1 (JP) = マルコ
+|Desc1 (JP) = メタルスラッグシリーズから参戦！<br>正規軍少佐。叩き上げの軍人でプログラミングに秀でる<br>ごくたまにエイリアンの動きを一瞬止める
+|Transl1 (JP) = Joining from the Metal Slug series!<br>A regular army major. Excels in programming of military personnel<br>Very occasionally Stops the movement of Aliens
+|Name2 (JP) = マルコCC
+|Desc2 (JP) = メタルスラッグシリーズから参戦！<br>ヘビーマシンガンをぶっ放す、インテリ系凄腕エージェント<br>ごくたまにエイリアンの動きを一瞬止める
+|Transl2 (JP) = Joining from the Metal Slug series!<br>A superb intellectual agent, shoots away with a heavy machine gun<br>Very occasionally Stops the movement of Aliens
+|Name1 (TW) = 馬可
+|Desc1 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>正規軍少校。經過千錘百鍊且擅寫程式的軍人<br>偶爾會讓異星戰士瞬間動作停止
+|Name2 (TW) = 馬可CC
+|Desc2 (TW) = 來自越南大戰METAL SLUG系列的狠角色！<br>手握重型機槍的知性派能手特務<br>偶爾會讓異星戰士瞬間動作停止
+|Name1 (KR) = 마르코
+|Desc1 (KR) = 메탈 슬러그 시리즈에서 참전!<br>정규군 소령. 하위직급부터 올라온 군인으로 프로그래밍에<br>뛰어남. 아주 가끔씩 에이리언의 움직임을 순간 멈춘다
+|Name2 (KR) = 마르코CC
+|Desc2 (KR) = 메탈 슬러그 시리즈에서 참전!<br>헤비 머신건을 다루는 지능형 실력파 에이전트<br>아주 가끔씩 에이리언의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 660¢
+*Chapter 2: 990¢
+*Chapter 3: 1,320¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = MARCO
+|Normal Base HP = 185
+|Normal Base AP = 65
+|Normal Range = 330
+|Normal Foreswing = 2
+|Normal Attack Cooldown = 57
+|Normal Attack Length = 38
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 660
+|Normal Recharge = 600
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = MARCO CC
+|Evolved Base HP = 248
+|Evolved Base AP = 92
+|Evolved Range = 330
+|Evolved Foreswing = 2
+|Evolved Attack Cooldown = 57
+|Evolved Attack Length = 38
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 660
+|Evolved Recharge = 600
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 185 HP
+|val-Normal-Attack Power = 65 damage<br>(33.05 DPS)
+|val-Normal-Attack Range = 330
+|val-Normal-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 2f <sup>0.07s</sup><br>(36f <sup>1.2s</sup> backswing)
+|val-Normal-Recharge Time = 20 ~ 11.2 seconds
+|val-Normal-MaxHP = 3,145 HP
+|val-Normal-MaxAttack = 1,105 damage<br>(561.86 DPS)
+|val-Evolved-Health = 4,215 HP
+|val-Evolved-Attack Power = 1,565 damage<br>(795.76 DPS)
+|val-Evolved-Attack Range = 330
+|val-Evolved-Attack Frequency = 59f <sub>1.97 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 2f <sup>0.07s</sup><br>(36f <sup>1.2s</sup> backswing)
+|val-Evolved-Recharge Time = 20 ~ 11.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni215 f00}}
+
+==Trivia==
+*MARCO is based off of [[wikia:metalslug:Marco Rossi|Marco Rossi]] from the Metal Slug series.
+*MARCO's Normal and Evolved Form descriptions originally began with "Recruited from Metal Slug Defense!". They were changed in [[Version 13.1 Update|Ver. 13.1]] of [[Nyanko Daisensou|BCJP]] and [[Version 13.7 Update|Ver. 13.7]] for all other versions to reflect the fact that ''Metal Slug Defense'' was no longer the specific game in the series that was being collaborated with.
+
+==Reference==
+*https://battlecats-db.com/unit/216.html
+
+----
+{{CatNav|HYAKUTARO|TARMA}}
+----
+
+{{Metal Slug}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Gacha Cats]]

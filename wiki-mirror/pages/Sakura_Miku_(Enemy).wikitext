@@ -1,0 +1,77 @@
+:''For other uses, see [[Hatsune Miku (disambiguation)]].''
+'''Sakura Miku''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 9.4 Update|Version 9.4]].
+
+{{Enemy Info
+|name = Sakura Miku
+|image = E 501.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+This enemy has a massive LD effective range and deals fairly high damage with a 100% chance to freeze all units for 3 seconds, with immunity to freeze/slow/knockback/weaken. Fortunately, her blindspot is rather large.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Spring Popstar]] (25%)
+**[[Scent of Blossoms]] (50%)
+**[[Sakura Dance]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/MikuMiku Music Fest|MikuMiku Music Fest]] (30%, 100%, 175%, 250%, 300%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU CHERRY|MIKU CHERRY]]:
+**[[Spring Popstar]] (25%)
+**[[Scent of Blossoms]] (50%)
+**[[Sakura Dance]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sakura Miku
+|Health = 150000
+|Attack Power = 20000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 228
+|Movement Speed = 5
+|Knockback = 4
+|Foreswing = 89
+|Backswing = 50
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 450~800)<br>
+{{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] Cat Units for 100f <sub>3.33 seconds</sub><br>
+{{AbilityIcon|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken}} [[Immune to Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]] and [[Immune to Weaken|Weaken]]
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+501 e.png|Sakura Miku's spritesheet
+IdleSakuraMiku.gif|Sakura Miku's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/503.html
+
+----
+{{EnemyNav|Hatsune Miku|Kagamine Rin & Len}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

@@ -1,0 +1,58 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Dark Wind|Red Wind}}
+'''The Name Comes from the Race Founder''' is the seventh stage in [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]].
+
+{{Stage Info
+|stage name = [[File:rc153.png]]
+[[File:Mapsn182 06 c ja.png]]
+|stage location = [[File:Mapname182 c ja.png]]
+|energy = 150
+|enemy castle hp = 10 HP
+|enemies = {{Magnification|Dark Wind|400%
+|Red Wind|400%}}
+|boss = {{Magnification|Dark Wind|1%}}
+|restriction = Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+|score reward = '''7,500''': [[Battle Items#Cat Jobs|Cat Jobs]] +1<br>
+'''6,500''': 150,000 XP<br>
+'''500''': [[Battle Items#Speed Up|Speed Up]] +1
+|XP = 4,500 XP
+|width = 5,500
+|max enemies = 15
+|jpname = The Name Comes from the Race Founder
+|script = 名前の由来はレース創設者
+|romaji = Namae no Yurai wa Rēsu Sōsetsusha
+|star = 1
+|event = [[JRA Collaboration Event]]
+|event-chapter = [[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]
+|difficulty = ★5
+|prev stage = [[Middle and Long Distance Elite]]
+|next stage = [[Make the Last Run!]]
+}}
+
+==Restrictions==
+Unit Restriction: Only [[Cat Giraffe Modoki (Special Cat)|Cat Giraffe Modoki]], [[Catnip Tricky (Special Cat)|Catnip Tricky]] and [[Catnip Dragon (Special Cat)|Catnip Dragon]]
+
+==Battleground==
+*1 [[Dark Wind]] (400%) spawns after 5 seconds<sup>150f</sup>.
+*1 [[Red Wind]] spawns after 10 seconds<sup>300f</sup>.
+*1 [[Dark Wind]] (400%) spawns after 16.67 seconds<sup>500f</sup>.
+*1 [[Red Wind]] spawns after 25 seconds<sup>750f</sup>.
+*1 [[Dark Wind]] (400%) spawns after 35 seconds<sup>1,050f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Wind]] (1%) spawns as the boss.
+**3 [[Dark Wind]]s (400%) spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**3 [[Red Wind]]s spawn, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**5 [[Dark Wind]]s (400%) spawn, delay 8.33~10 seconds<sup>250f~300f</sup>.
+**5 [[Red Wind]]s spawn, delay 8.33~10 seconds<sup>250f~300f</sup>.
+
+==Strategy==
+An easy stage. Even with the restriction of only using the [[JRA Collaboration Event|JRA Collaboration]] units, the enemies serve practically no threat at all. However, it is recommended to have them at least at level 1+10 so that they have some survivability.
+
+==Reference==
+*https://battlecats-db.com/stage/s02182-07.html
+
+{{JRA}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Restriction Stages]]
+[[Category:Timed Score Stages]]

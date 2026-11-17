@@ -1,0 +1,113 @@
+{{JPExclusive}}
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the first, weaker Enemy Unit, see [[Monkey King (Enemy)]]. For the second, stronger Enemy Unit, see [[SSS Monkey King (Enemy)]].''
+'''Monkey King''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Dragon Poker Collaboration Event]]. It was added in [[Version 2.2 Update#Version 2.2.3 Update|Version 2.2.3]].
+
+{{Cat Info
+|ID = 90
+|rarity = UR
+|name1 = Monkey King
+|name2 = SSS Monkey King
+}}
+
+==Evolution==
+Evolves into '''SSS Monkey King''' at level 10.
+
+==Strategy/Usage==
+Monkey King is comparable in power to [[Lesser Demon Cat (Uber Rare Cat)|Greater Balrog Cat]], but has lower attack and defense stats in comparison, along with no [[Talents]]. Thus, he will only serve to be a spammable attacker, but this niche role is taken by [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] meaning that there's less of a reason to use the Monkey King, unless you have no better units for more DPS and support.
+
+{{Job|Classification = Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 90
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni090 f00.png
+|Image2 = Uni090 c00.png
+|Name1 (JP) = 猿王 (En'ō, Monkey King)
+|Desc1 (JP) = コラボイベントの限定キャラクター<br>単体攻撃だが、強靭な肉体と<br>高い攻撃力を兼ね備えた万能キャラ
+|Transl1 (JP) = A limited character for the collaboration event<br>a single attacker, but versatile character with<br>a strong body and high attack power
+|Name2 (JP) = SSS猿王 (SSS en'ō, SSS Monkey King)
+|Desc2 (JP) = 大迫力のSSSにクラスチェンジ<br>単体攻撃だが、強靭な肉体と<br>高い攻撃力を兼ね備えた万能キャラ
+|Transl2 (JP) = Class change to the powerful SSS<br>a single attacker, but versatile character with<br>a strong body and high attack power
+}}
+
+==Cost==
+*Chapter 1: 1,990円
+*Chapter 2: 2,985円
+*Chapter 3: 3,980円
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Monkey King
+|Normal Base HP = 2180
+|Normal Base AP = 1640
+|Normal Range = 177
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 37
+|Normal Attack Length = 63
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 1990
+|Normal Recharge = 1110
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = SSS Monkey King
+|Evolved Base HP = 2850
+|Evolved Base AP = 2212
+|Evolved Range = 177
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 37
+|Evolved Attack Length = 63
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 1990
+|Evolved Recharge = 1110
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 2,180 HP
+|val-Normal-Attack Power = 1,640 damage<br>(734.33 DPS)
+|val-Normal-Attack Range = 177
+|val-Normal-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Normal-Recharge Time = 37 ~ 28.2 seconds
+|val-Normal-MaxHP = 37,060 HP
+|val-Normal-MaxAttack = 27,880 damage<br>(12,483.58 DPS)
+|val-Evolved-Health = 48,450 HP
+|val-Evolved-Attack Power = 37,605 damage<br>(16,838.06 DPS)
+|val-Evolved-Attack Range = 177
+|val-Evolved-Attack Frequency = 67f <sub>2.23 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Evolved-Recharge Time = 37 ~ 28.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni090 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/091.html
+
+----
+{{CatNav|Nimue|Crazed Cat}}
+----
+
+{{Dragon Poker}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Gacha Cats]]
+[[Category:Single Attack Cats]]

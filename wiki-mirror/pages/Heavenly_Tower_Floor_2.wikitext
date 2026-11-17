@@ -1,0 +1,44 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Doge Dark}}
+:''Not to be confused with the [[Citadel]] version of [[Citadel/Floor 2|Floor 2]].''
+'''Floor 2''' is the second floor of [[Heavenly Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 01 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 40
+|enemy castle hp = 8,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%}}
+|boss = {{Magnification|Doge Dark|40%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (100%, 1 time)
+|XP = 760 XP
+|width = 4,000
+|max enemies = 10
+|jpname = 2nd Floor
+|script = 2階
+|romaji = 2 Kai
+|star = 1
+|event-chapter = [[Heavenly Tower]]
+|difficulty = ★1
+|prev stage = [[Heavenly Tower/Floor 1|Floor 1]]
+|next stage = [[Heavenly Tower/Floor 3|Floor 3]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 10.67~18.67 seconds<sup>320f~560f</sup>.
+*Infinite [[Snache]]s spawn, delay 20~53.33 seconds<sup>600f~1,600f</sup>.
+*Infinite [[Those Guys]] spawn after 40 seconds<sup>1,200f</sup>, delay 20~53.33 seconds<sup>600f~1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] spawns as the boss.
+**6 [[Those Guys]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+
+==Strategy==
+The Doge Dark isn't even at 100% strength magnification, so this stage is extremely easy. Use any of the [[:Category:Normal Cats|Normal Cats]] in order to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-02.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]

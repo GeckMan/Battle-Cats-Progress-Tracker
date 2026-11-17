@@ -1,0 +1,10 @@
+.ranger-navbox.fate {
+	--bg-navbox-title: linear-gradient(to right, #833989 0%, #9c44a2 100%);
+	--bg-sub-table-title: #cfc9c7;
+	--bg-group-name: #6b2e6b;
+
+	--sub-title-color: #000;
+	--group-color: #fff;
+}
+
+/* [[Category:Template stylesheets]] */

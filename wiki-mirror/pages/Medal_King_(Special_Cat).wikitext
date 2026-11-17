@@ -1,0 +1,142 @@
+'''Medal King''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[Download Celebration! (Event Gacha)|Download Celebration!]] Event Gacha. He was added in [[Version 13.0 Update|Version 13.0]].
+
+{{Cat Info
+|ID = 726
+|rarity = EX
+|name1 = Medal King
+|name2 = Medal Emperor
+}}
+
+==Evolution==
+Evolves into '''Medal Emperor''' at level 10.
+
+==Strategy/Usage==
+Medal King can be treated as an arguably worse version of [[Slug Jockey Cat (Rare Cat)|Slug Jockey Cat]]. The two share range and fairly low overall stats, however Slug Jockey has [[Area Attack]], faster attack rate, shorter foreswing, quicker speed, lower cost and shorter recharge. The only real advantage this unit has is a [[Surge Attack]], which doesn't increase the slow uptime enough to be worthwhile. In fact, Medal King's Surge and slightly better damage actually work against him, making it harder to stack him on peons like Slug Jockey can.
+
+Medal King's slow is just too short to make any impact, and may even make things worse if used in conjunction with other [[:Category:Cats with Slow ability|slowers]]. For example, if [[Glass Cat (Rare Cat)|Macho Crystal Cat]] slows an enemy, and then Medal King hits that same enemy, the enemy will be slowed for 1 second instead of 10 seconds. Even if the surge hits a backliner enemy, it won't have much impact. Backliner enemies usually rely on high damage or abilities to make things tough for the cats, neither of which slow can prevent, unlike [[Weaken]] or [[Freeze]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 726
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni726 f00.png
+|Image2 = Uni726 c00.png
+|Name1 = Medal King
+|Desc1 = Avid collector of strange medals scattered about the land.<br>Scours online auction sites for rare finds at rock-bottom<br>prices. Unleashes Surges with 100% chance to Slow.
+|Name2 = Medal Emperor
+|Desc2 = Spent so much of the royal coffers trying to find every<br>Small Medal that he was overthrown and exiled.<br>Unleashes Surges with 100% chance to Slow.
+|Name1 (JP) = ネコメダル王 (Neko Medaru Ō, Medal King Cat)
+|Desc1 (JP) = 世界中に散らばったメダルを11年間集め続けるネコ<br>安く出品されてないかネットオークションを毎日確認<br>必ず動きを一瞬遅くする烈波を放つ
+|Transl1 (JP) = A Cat who has been collecting medals scattered all around the world for 11 years<br>Checks online auctions to see if any are out for low prices<br>Always releases a Surge that Slows movement for a moment
+|Name2 (JP) = ネコメダル大王 (Neko Medaru Daiō, Great Medal King Cat)
+|Desc2 (JP) = 世界中に散らばったメダルを探すために11兆円使った王様<br>国の予算を使い果たしたことで王座を奪われ放浪中<br>必ず動きを一瞬遅くする烈波を放つ
+|Transl2 (JP) = A king who used 11 trillion yen to search for medals scattered around the world<br>Now wanders after being dethroned from using up the country's treasury<br>Always releases a Surge that Slows movement for a moment
+|Name1 (TW) = 徽章王貓
+|Desc1 (TW) = 持續收集散落在世界各地的徽章長達11年的貓咪<br>每天都會確認二手網站有沒有便宜可以撿<br>必定發射能使敵人瞬間動作變慢的烈波
+|Name2 (TW) = 徽章大王貓
+|Desc2 (TW) = 為尋找散落在世界各地的徽章而花掉11兆的國王<br>因耗盡國家預算而失去王位，目前四處流浪中<br>必定發射能使敵人瞬間動作變慢的烈波
+|Name1 (KR) = 고양이 메달왕
+|Desc1 (KR) = 전세계에 흩어진 메달을 11년간 모아 온 고양이.<br>싸게 중고 거래가 되고 있진 않은지 매일 같이 확인 중.<br>반드시 움직임을 순간 느리게 하는 열파를 낸다
+|Name2 (KR) = 고양이 메달대왕
+|Desc2 (KR) = 전세계에 흩어진 메달을 찾기 위해 11조원을 쓴 왕.<br>나라 예산을 낭비한 죄로 왕좌에서 쫓겨나 방랑 중.<br>반드시 움직임을 순간 느리게 하는 열파를 낸다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Medal King
+|Normal Base HP = 800
+|Normal Base AP = 80
+|Normal Range = 210
+|Normal Foreswing = 33
+|Normal Attack Cooldown = 159
+|Normal Attack Length = 66
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 500
+|Normal Recharge = 1200
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Normal Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 1 [[Surge Attack]] between 150 and 600 range
+|Evolved Name = Medal Emperor
+|Evolved Base HP = 800
+|Evolved Base AP = 80
+|Evolved Range = 210
+|Evolved Foreswing = 33
+|Evolved Attack Cooldown = 159
+|Evolved Attack Length = 66
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 500
+|Evolved Recharge = 1200
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating,Dark,Metal,Traitless,Angel,Alien,Zombie,Relic,Aku
+|Evolved Abilities = {{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Surge Attacks}} 100% chance to create a level 1 [[Surge Attack]] between 150 and 600 range
+|Lv.MAX = Lv.50+25
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 800 HP
+|val-Normal-Attack Power = 80 damage<br>(12.5 DPS)
+|val-Normal-Attack Range = 210
+|val-Normal-Attack Frequency = 192f <sub>6.4 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 33f <sup>1.1s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 13,600 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(212.5 DPS)
+|val-Evolved-Health = 13,600 HP
+|val-Evolved-Attack Power = 1,360 damage<br>(212.5 DPS)
+|val-Evolved-Attack Range = 210
+|val-Evolved-Attack Frequency = 192f <sub>6.4 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 33f <sup>1.1s</sup><br>(33f <sup>1.1s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni726 f00}}
+
+==Trivia==
+*Medal King was originally unlocked through the [[Medal King's Palace (Event Gacha)|Medal King's Palace]] Event Gacha.
+*Medal King and the Small Medals used to play the Medal King's Palace Gacha reference the ''[[wikipedia:Dragon Quest|Dragon Quest]]'' series' [https://dragon-quest.org/wiki/Medal_King Medal Kings] and the [https://dragon-quest.org/wiki/Mini_medal Mini medals] they collect. In particular, Medal King resembles Medford, the Medal King from ''[https://dragon-quest.org/wiki/Dragon_Quest_VI:_Realms_of_Revelation Dragon Quest VI: Realms of Revelation]''. The Small Medals and Mini medals' names are arguably more similar in Japanese, with the former being 伝説のちいさいメダル ''Densetsu no Chiisai Medaru'' and the latter ちいさなメダル ''Chiisana Medaru''.
+*Medal Emperor's sword bears some similarities to [https://dragon-quest.org/wiki/Erdrick's_Sword Erdrick's Sword] from the ''Dragon Quest'' series, particularly the hilt.
+*The 11 years and 11 trillion yen in his Japanese descriptions are, of course, referring to how Medal King was released during the 11th anniversary.
+
+==Reference==
+*https://battlecats-db.com/unit/727.html
+
+----
+{{CatNav|Ninja Girl Tomoe|SOL DAE ROKKER}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Surge Attack Cats]]

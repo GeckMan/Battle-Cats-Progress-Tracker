@@ -1,0 +1,128 @@
+'''Fortressy''' is a [[:Category:Special Cats|Special Cat]] that was added in [[Version 5.2 Update|Version 5.2]] and can be unlocked as a daily stamp during the [[Neo Mushroom Garden Collaboration Event]].
+
+{{Cat Info
+|ID = 280
+|rarity = EX
+|name1 = Fortressy
+|name2 = Castley
+}}
+
+==Evolution==
+Evolves into '''Castley''' at level 10.
+
+==Strategy/Usage==
+Despite being advertised as a tanky Cat, Fortressy is not tanky at all, even with hypermax. Adding to that, its cost is 30¢ more than [[Tank Cat (Normal Cat)|Tank Cat]], who is a much better, more ideal meatshield in every situation, no matter what part of the game you're in. The most this Cat can help you with is being a 4 Crown [[Stories of Legend]] meatshield; with the [[Cat Combo|Catcombos]] [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]] supporting it, it can be spammed relatively quickly, despite its low movement speed, not different from how [[Mer-Cat (Rare Cat)|Cameraman Cat]] is used throughout similar stages.
+
+Despite this, the previously mentioned Cats are a much better investment of XP; so invest in them rather than Fortressy. Overall, the most Fortressy can do to help your Cat Army is increasing your [[User Rank]] and, although not recommended, being a meatshield in Stories of Legend.
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 280
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni280 f00.png
+|Image2 = Uni280 c00.png
+|Name1 = Fortressy
+|Desc1 = A mobile fortress able to defend<br>against attacks from any direction.<br>Tough unit able to withstand siege.
+|Name2 = Castley
+|Desc2 = The fortress has been redesigned<br>for extra appeal to the Internet.<br>Tough unit able to withstand siege.
+|Name1 (JP) = 要塞なめこ (Yōsai Nameko, Nameko Fortress)
+|Desc1 (JP) = NEOなめこ栽培キットから参戦！<br>一見隙がなさそうな移動型要塞だが兵糧攻めには弱い<br>体力を多く備えた盾用のキャラ
+|Transl1 (JP) = Join the NEO Nameko Cultivation Kit!
+A mobile fortress seemingly unlikely but vulnerable to military attack
+A character for shield with a lot of strength
+|Name2 (JP) = なめこ&要塞にゃんこ (Nameko & Yōsai Nyanko, Nameko & Cat Fortress)
+|Desc2 (JP) = NEOなめこ栽培キットから参戦！<br>掲げる旗はなめことネコの絆の証「N」<br>体力を多く備えた盾用のキャラ
+|Transl2 (JP) = Join the NEO Nameko Cultivation Kit!
+The flag to be raised is a seal of the cat's nephew 'N'
+A character for shield with a lot of strength
+|Name1 (TW) = 要塞菇菇
+|Desc1 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>乍看似乎沒弱點的移動型要塞,但是遇到斷糧<br>戰法就完了！具有很強體力的肉盾角色
+|Name2 (TW) = 菇菇&要塞貓咪
+|Desc2 (TW) = 來自NEO菇菇栽培研究室的新人物！<br>高舉的旗上繡著代表菇菇與貓咪羈絆的「N」<br>具有很強體力的肉盾角色
+|Name1 (KR) = 요새 나메코
+|Desc1 (KR) = NEO 나메코 재배 킷트에서 참전!<br>약점이 없어 보이지만 군량 공격에는 취약하다<br>체력이 강한 방패용 캐릭터
+|Name2 (KR) = 나메코&요새냥코
+|Desc2 (KR) = NEO 나메코 재배 킷트에서 참전!<br>깃발은 나메코와 냥코의 우정의 상징 「N」<br>체력이 강한 방패용 캐릭터
+}}
+
+==Cost==
+*Chapter 1: 120¢
+*Chapter 2: 180¢
+*Chapter 3: 240¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Fortressy
+|Normal Base HP = 450
+|Normal Base AP = 10
+|Normal Range = 130
+|Normal Foreswing = 52
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 126
+|Normal Speed = 7
+|Normal KB = 1
+|Normal Cost = 120
+|Normal Recharge = 240
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Castley
+|Evolved Base HP = 450
+|Evolved Base AP = 10
+|Evolved Range = 130
+|Evolved Foreswing = 52
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 126
+|Evolved Speed = 7
+|Evolved KB = 1
+|Evolved Cost = 120
+|Evolved Recharge = 240
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 10 damage<br>(2.38 DPS)
+|val-Normal-Attack Range = 130
+|val-Normal-Attack Frequency = 126f <sub>4.2 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 52f <sup>1.73s</sup><br>(74f <sup>2.47s</sup> backswing)
+|val-Normal-Recharge Time = 8 ~ 2 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 170 damage<br>(40.48 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 170 damage<br>(40.48 DPS)
+|val-Evolved-Attack Range = 130
+|val-Evolved-Attack Frequency = 126f <sub>4.2 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 52f <sup>1.73s</sup><br>(74f <sup>2.47s</sup> backswing)
+|val-Evolved-Recharge Time = 8 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni280 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/281.html
+
+----
+{{CatNav|White Cat|Futenyan}}
+----
+
+{{Neo Mushroom Garden}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Stamp Reward Cats]]

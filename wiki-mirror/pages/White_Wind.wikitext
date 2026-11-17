@@ -1,0 +1,125 @@
+'''White Wind''' (風 (白), ''Kaze (Shiro)'', '''Wind (White)''') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Special Events|Event Stages]]. It was added in [[Version 10.10 Update|Version 10.10]].
+
+{{Enemy Info
+|name = White Wind
+|image = E 580.png
+|money drop = 250¢ - 987¢
+|appearance = [[JRA Collaboration Event]]<br>
+[[Heartbeat Catcademy#List of Stages|Weekend: Confession]]<br>
+[[Monthly Event All-Stars Grateful Gathering]]
+}}
+
+==Enemy==
+A weak enemy that can knockback units. Although it may seem pathetic, all but two stages it appears in have unit restrictions that heavily limit your options against this enemy. Still, its rather weak stats means it could only be threatening in large hordes or at high magnifications.
+
+==Strategy==
+Due to how most stages White Wind appears in have heavy unit restrictions, there really isn't much strategy but to hope your plus levels on either [[Secret Crush Cat (Special Cat)|Secret Crush Cat]] or any of the JRA Collaboration units are high enough to deal with them.
+
+==Variants==
+{{Variant
+|original = White Wind
+|Red Wind
+|White Wind's [[:Category:Red Enemies|Red]] variant. Has a higher movement speed, two more knockbacks and a 100% chance to [[Weaken|weaken]] Cat Units to 50% for 1 second instead of knockback.
+|Dark Wind
+|White Wind's [[:Category:Dark Enemies|Dark]] variant. Has 50% higher attack, 10 knockbacks and 12 movement speed, but has no special ability whatsoever.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Heartbeat Catcademy#Weekend: Confession|Weekend: Confession]]:
+**[[Courageous Call (White)|Courageous Call]] (10%)
+**[[The Dreaded Reply (White)|The Dreaded Reply]] (1%, 15%)
+**[["I'm Sorry, But..."]] (1%, 150%)
+*[[Heartbeat Catcademy#Season 4: Graduation Day|Season 4: Graduation Day]]:
+**[[Waiting at the Spot]] (10%)
+**[[Rising Heart Rate]] (25%)
+**[[Scattered Sakura]] (150%)
+**[[Moral Support]] (300%)
+**[[No Longer Single?]] (500%)
+*[[Summer Break Cats#Bug Sumo Quarterfinals|Bug Sumo Quarterfinals]]: [[Match: Juuryou]] (100%)
+*[[Summer Break Cats#Bug Sumo Finals|Bug Sumo Finals]]: [[Match: Yokozuna]] (300%)
+*[[River City Stages#River City Relay|River City Relay]]:
+**[[400m Relay: Fast Start]] (25%)
+**[[1600m Relay: Second Fastest]] (700%)
+**[[800m Relay: Anchor Leg]] (600%)
+**[[1600m Relay: Anchor Leg]] (800%)
+*[[Summer Break Cats Castaway#Jungle Survival|Jungle Survival]]:
+**[[Hunt for Sustenance]] (5%)
+**[[Current-Carried Cats]] (150%)
+**[[Unbroken Rock, Broken Heart]] (500%)
+*[[Memories of 2024]]: [[Memories of Spring Page 2]] (10%)
+*[[Summer Break Cats Castaway#Unprecedented Forecasts|Unprecedented Forecasts]]:
+**[[Torrential Rain]] (100%)
+**[[Thunderstorm Warning]] (500%)
+**[[Typhoon Warning]] (800%)
+*[[Anniversary/13th Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Wind Slash Trial]] (100%)
+**[[Iron Orb Trial]] (150%)
+**[[Tough Love Trial]] (700%)
+*[[Lunar New Year#Memories of 2025|Memories of 2025]]: [[Memories of Spring Page 2 (2025)|Memories of Spring Page 2]] (25%)
+*[[Anniversary/13 1/2 Year#Ep. 4: Secret Training|Ep. 4: Secret Training]]:
+**[[Wind Slash Trial (13 1/2)|Wind Slash Trial]] (100%)
+**[[Iron Orb Trial (13 1/2)|Iron Orb Trial]] (150%)
+**[[Tough Love Trial (13 1/2)|Tough Love Trial]] (700%)
+*[[Monthly Event All-Stars Grateful Gathering]]:
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.1]] (100%)
+**[[Monthly Event All-Stars Grateful Gathering/Grateful XP Lv.1~10#Stages 1~2|Grateful XP Lv.2]] (300%)
+
+===[[Collaboration Events|Collaboration Stages]]===
+*[[JRA Collaboration Event#Autumn Flower Award (GI)|Autumn Flower Award (GI)]]:
+**[[The Final Race Of The Triple Crown of Mares]] (10%)
+**[[A Race for 3-year-old Mares Only]] (1%, 15%)
+**[[An Early Clock Game]] (1%, 25%)
+*[[JRA Collaboration Event#Arima Kinen (GI)|Arima Kinen (GI)]]:
+**[[Decide On a Racehorse by Fan Voting]] (10%)
+**[[The Biggest Grand Prix at The End Of The Year]] (25%)
+**[[2 Minutes 30 Seconds To Settle]] (150%)
+**[[Middle and Long Distance Elite]] (300%)
+**[[Make the Last Run!]] (500%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = White Wind
+|Health = 5000
+|Attack Power = 100
+|Attack Range = 150
+|Attack Type = Area
+|Time Between Attacks = 13
+|Movement Speed = 5
+|Knockback = 1
+|Foreswing = 2
+|Backswing = 11
+|Ability = {{AbilityIcon|Knockback}} 30% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Surge}}<br>[[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]] and [[Immune to Surge|Surge]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+580 e.png|White Wind's spritesheet
+IdleWind.gif|White Wind's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/582.html
+
+----
+{{EnemyNav|Incubator|Red Wind}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Weaken Immunity]]
+[[Category:Enemies with Freeze Immunity]]
+[[Category:Enemies with Slow Immunity]]
+[[Category:Enemies with Wave Immunity]]
+[[Category:Enemies with Surge Immunity]]
+[[Category:Enemies with Warp Immunity]]

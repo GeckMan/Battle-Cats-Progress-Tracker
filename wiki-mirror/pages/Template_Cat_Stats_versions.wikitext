@@ -1,0 +1,11 @@
+List of versions of the cat stats tables.
+
+*{{t|Cat Stats Manual}}: old template, cells are manually filled in.
+*{{t|Cat Stats 0.1}}: first draft of new version. Uses the cat's base stats as input. Also has validation parameters that you don't have to use and probably don't need to be there anymore but no harm in keeping them right.
+*{{t|Cat Stats 0.2}}: Almost identical to 0.1, also adds the detailed tab. [https://battlecats.miraheze.org/wiki/aaaaaaaaaaa?diff=274408&oldid=263195 See difference]. Also adds the cost parameter (as that is only used on the detailed tab). Use this for new cats if you don't want to try and figure out the arcane formatting of {{t|Calcstatstable}}, but otherwise the best option is for 0.1 in standard and calctable in detailed (i.e. leaving the already-existing calcstatstables untouched).
+*{{t|Cat Stats 1.0}}: Able to fully replace the old stats tables with the completion of the detailed tab. With [[MediaWiki:Gadget-CatStatsDetailed.js|JavaScript]], it can handle calculations and other modifications of the table's contents. Adds the non-form-specific "Orb" parameter; this parameter is optional so you can use the exact same arguments you used for 0.2. The detailed table is also organized using a grid rather than a table, which allows it to rearrange the layout according to different needs (e.g. it uses more vertical spacing on mobile).
+*{{t|Cat Stats 1.1}}: Uses a grid layout for the standard table, and adds an optional kamikaze parameter for each form that doesn't show DPS or attack frequency on the standard table. Grid layout is also slightly different from previous versions, in an attempt at better visual consistency.
+*{{t|Cat Stats 1.2}}: Introduces a <code>Targets</code> parameter that takes a comma separated list of capitalized trait names. Rather than relying on lists of links in ability explanations, target traits are displayed as icons at the top of the ability section.
+
+==All cat stats templates==
+{{Special:PrefixIndex/Template:Cat Stats}}

@@ -1,0 +1,124 @@
+'''Madoka Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Puella Magi Madoka Magica Collaboration Event]]. She was added in [[Version 5.5 Update|Version 5.5]].
+
+{{Cat Info
+|ID = 294
+|rarity = RR
+|name1 = Madoka Cat
+|name2 = Magical Girl Madoka Cat
+}}
+
+==Evolution==
+Evolves into '''Magical Girl Madoka Cat''' at level 10.
+
+==Strategy/Usage==
+This Cat is essentially an attempt to create an anti-Floating debuffer. However, [[Bishop Cat (Rare Cat)|Sanzo Cat]] completely outclasses Madoka, especially when [[Talents|Talented]].
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 294
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni294 f00.png
+|Image2 = Uni294 c00.png
+|Name1 = Madoka Cat
+|Desc1 = A kind-hearted Cat who admires Magical Girls.<br>She will do anything to help her friends.<br>Might Slow Floating enemies.
+|Name2 = Magical Girl Madoka Cat
+|Desc2 = This Magical Cat made a contract with a suspicious<br>white creature. Uses her powers only to help others.<br>Might Slow Floating enemies.
+|Name1 (JP) = ネコまどか (Neko Madoka, Madoka Cat)
+|Desc1 (JP) = ごくごく平凡な魔法少女に憧れるネコ。友達想いで<br>心優しい性格の持ち主になりたいと思っている<br>たまに浮いてる敵の動きを一瞬遅くする
+|Transl1 (JP) = A very ordinary Cat admiring Magical Girls. <br>Wants to be kind-hearted and caring<br>Occasionally Slows the movement of Floating enemies for a moment
+|Name2 (JP) = 魔法少女ネコまどか (Mahō Shōjo Neko Madoka, Magical Girl Madoka Cat)
+|Desc2 (JP) = 怪しげな白い生き物と契約したネコ魔法少女<br>常に誰かの役に立っていると思っている<br>たまに浮いてる敵の動きを一瞬遅くする
+|Transl2 (JP) = A Magical Girl Cat who made a contract with a suspicious white creature<br>Believes that she is always helpful to someone<br>Occasionally Slows the movement of Floating enemies for a moment
+|Name1 (TW) = 小圓貓
+|Desc1 (TW) = 一隻對魔法少女有憧憬的平凡貓咪<br>想變成可為朋友著想且溫柔的個性<br>有時候會讓飄浮敵人瞬間動作變慢
+|Name2 (TW) = 魔法少女小圓貓
+|Desc2 (TW) = 跟一隻詭異白色生物簽訂契約的魔法少女貓咪<br>隨時想著可以幫助別人<br>有時候會讓飄浮敵人瞬間動作變慢
+|Name1 (KR) = 고양이 마도카
+|Desc1 (KR) = 극히 평범한 마법소녀를 동경하는 고양이.<br>친구를 아끼는 착한 마음을 가지고 싶어한다.<br>가끔 떠있는 적의 움직임을 순간 느리게 한다
+|Name2 (KR) = 마법소녀 고양이 마도카
+|Desc2 (KR) = 수상한 하얀색 생물과 계약을 맺은 마법소녀<br>자신은 누군가에게 도움을 주는 존재라고 생각한다.<br>가끔 떠있는 적의 움직임을 순간 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 420¢
+*Chapter 2: 630¢
+*Chapter 3: 840¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Madoka Cat
+|Normal Base HP = 850
+|Normal Base AP = 250
+|Normal Range = 120
+|Normal Foreswing = 23
+|Normal Attack Cooldown = 71
+|Normal Attack Length = 51
+|Normal Speed = 9
+|Normal KB = 4
+|Normal Cost = 420
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Floating
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Magical Girl Madoka Cat
+|Evolved Base HP = 850
+|Evolved Base AP = 250
+|Evolved Range = 250
+|Evolved Foreswing = 25
+|Evolved Attack Cooldown = 69
+|Evolved Attack Length = 36
+|Evolved Speed = 9
+|Evolved KB = 4
+|Evolved Cost = 420
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Floating
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 850 HP
+|val-Normal-Attack Power = 250 damage<br>(79.79 DPS)
+|val-Normal-Attack Range = 120
+|val-Normal-Attack Frequency = 94f <sub>3.13 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 23f <sup>0.77s</sup><br>(28f <sup>0.93s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 14,450 HP
+|val-Normal-MaxAttack = 4,250 damage<br>(1,356.38 DPS)
+|val-Evolved-Health = 14,450 HP
+|val-Evolved-Attack Power = 4,250 damage<br>(1,356.38 DPS)
+|val-Evolved-Attack Range = 250
+|val-Evolved-Attack Frequency = 94f <sub>3.13 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 25f <sup>0.83s</sup><br>(11f <sup>0.37s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni294 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/295.html
+
+----
+{{CatNav|Kyubey|Homura Cat}}
+----
+
+{{Puella Magi Madoka Magica}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]

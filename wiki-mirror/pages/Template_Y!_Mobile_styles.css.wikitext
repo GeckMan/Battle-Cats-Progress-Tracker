@@ -1,0 +1,7 @@
+.ranger-navbox.y-mobile {
+	--bg-navbox-title: linear-gradient(to right, hsl(350, 74%, 47%) 0%, hsl(350, 74%, 53%) 100%);
+	--bg-sub-table-title: #f08200;
+	--bg-group-name: hsl(340, 70%, 40%);
+}
+
+/* [[Category:Template stylesheets]] */

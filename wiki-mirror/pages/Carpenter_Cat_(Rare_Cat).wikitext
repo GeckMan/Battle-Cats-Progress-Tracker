@@ -1,0 +1,139 @@
+'''Carpenter Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked when beating the [[:Category:Advent Stages#Great Advent Stages|Great Advent Stage]] [[Jumbo Invasion]]. He was added in [[Version 14.6 Update|Version 14.6]].
+
+{{Cat Info
+|ID = 819
+|rarity = RR
+|name1 = Carpenter Cat
+|name2 = Rapper Cat
+}}
+
+==Evolution==
+Evolves into '''Rapper Cat''' at level 10.
+
+==Strategy/Usage==
+Rapper Cat is a cheap and spammable [[:Category:Red Enemies|Red]]/[[:Category:Floating Enemies|Floating]] specialist meatshield that can function well in {{4c}} stages; the surprising lack of units fitting this niche make his role exceptionally valuable in all stages of the game. However, just like [[Maize Cat (Rare Cat)|Cone Cat]] and [[Jetpack Cat (Rare Cat)|Jetpack Cat]], his recharge time is somewhat long for a meatshield, so he works best with Research Combos like [[Biohazard (Combo)|Biohazard]] and [[Bony Bone (Combo)|Bony Bone]].
+
+Additionally, having [[Sage Slayer]] allows him to be a phenomenal counter to Red/Floating Sage threats, such as [[Doctor K.O.]], [[Prof. Owlbrowley]], and even [[Sage of Mind Soractes]], along with serving as a general Sage meatshield. Therefore, unlocking him before reaching [[Garden of Wilted Thoughts]] is highly recommended to make subsequent [[:Category:Sage Enemies|Sage]] encounters a whole lot easier to handle. At Lv.41, he can even survive an unstrengthened attack from a 100% [[Sage of Logic Newtone]], making [[Immeasurable Power]] that much easier if existing options just wouldn't cut it.
+
+In addition, his abilities are also quite useful; [[Wave Attack|Wave]] and [[Freeze]] Immunity makes him a great counter to enemies like [[Berserkory]], the aforementioned Soractes and [[Infernal Pegasus Deonil]], along with giving him potential usage as a anti-Wave meatshield.
+
+{{Job|Classification = Meatshield & Melee}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 819
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni819 f00.png
+|Image2 = Uni819 c00.png
+|Name1 = Carpenter Cat
+|Desc1 = Diligent worker who always keeps Safety First in mind.<br>A virtuoso creating pulse-pounding beats with rhythmic<br>hammering. Sage Slayer, Tough vs Red/Floating.
+|Name2 = Rapper Cat
+|Desc2 = Whether hammering nails or spitting rhymes with mic in<br>hand, a steady beat is the key to incredible productivity.<br>Sage Slayer, Tough vs Red/Floating.
+|Name1 (JP) = ネコ大工 (Neko Daiku, Carpenter Cat)
+|Desc1 (JP) = 全身全霊で安心安全の施工を行う大工<br>トントンと釘を打つリズムにノリノリで仕事をする<br>超賢者特効を持ち、赤い敵と浮いてる敵に打たれ強い
+|Transl1 (JP) = A carpenter who devotes his heart and soul to safe and secure construction<br>Does his work in high spirits, hammering nails with a smooth and steady rhythm<br>Has Super-Sage Slayer, tough against Red and Floating enemies
+|Name2 (JP) = ネコラッパー (Neko Rappā, Rapper Cat)
+|Desc2 (JP) = ライムに目覚めたネコ。かつては釘打ち今では四つ打ち<br>運命感じた俺は猫舌、マイクを唸らせ鳴らすぜラジカセ<br>超賢者特効を持ち、赤い敵と浮いてる敵に打たれ強い
+|Transl2 (JP) = A Cat who awakened his rhyme. Once the nail in the coffin, now a four-on-the-floor beater<br>Feeling it was fate, I have a sensitive tongue and my boombox makes the microphone roar and ring<br>Has Super-Sage Slayer, tough against Red and Floating enemies
+|Name1 (TW) = 木工貓
+|Desc1 (TW) = 全神貫注並安全地施工的木工<br>總是帶著節奏感釘釘子並開心地工作<br>有超賢者特效，對上紅色與飄浮敵人很耐打
+|Name2 (TW) = 饒舌歌手貓
+|Desc2 (TW) = 饒舌魂覺醒的貓咪。過去是一位木工，現在改拿<br>麥克風，細節別管那麼多，跟著節奏一起瘋<br>有超賢者特效，對上紅色與飄浮敵人很耐打
+|Name1 (KR) = 고양이 목수
+|Desc1 (KR) = 온 힘을 다해 안전한 건물을 짓는 목수<br>못 박는 소리에 리듬을 타며 즐겁게 일한다<br>초현자 특효, 빨간 적과 떠있는 적에 맷집이 좋다
+|Name2 (KR) = 고양이 래퍼
+|Desc2 (KR) = 라임에 눈을 뜬 목수 a.k.a Moc's Mic<br>망치와 못 대신 마이크로, 망치질 못하는 나의 플로<br>초현자 특효, 빨간 적과 떠있는 적에 맷집이 좋다
+}}
+
+==Cost==
+*Chapter 1: 240¢
+*Chapter 2: 360¢
+*Chapter 3: 480¢
+{{Upgrade Cost|EX2}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Carpenter Cat
+|Normal Base HP = 850
+|Normal Base AP = 300
+|Normal Range = 170
+|Normal Foreswing = 16
+|Normal Attack Cooldown = 83
+|Normal Attack Length = 66
+|Normal Speed = 25
+|Normal KB = 1
+|Normal Cost = 240
+|Normal Recharge = 400
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating
+|Normal Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Sage Slayer}} [[Sage Slayer]]<br>
+{{AbilityIcon|Immune to Waves|Immune to Freeze}} [[Immune to Waves]] and [[Immune to Freeze|Freeze]]
+|Evolved Name = Rapper Cat
+|Evolved Base HP = 850
+|Evolved Base AP = 300
+|Evolved Range = 170
+|Evolved Foreswing = 16
+|Evolved Attack Cooldown = 83
+|Evolved Attack Length = 66
+|Evolved Speed = 25
+|Evolved KB = 1
+|Evolved Cost = 240
+|Evolved Recharge = 400
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating
+|Evolved Abilities = {{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Sage Slayer}} [[Sage Slayer]]<br>
+{{AbilityIcon|Immune to Waves|Immune to Freeze}} [[Immune to Waves]] and [[Immune to Freeze|Freeze]]
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 850 HP
+|val-Normal-Attack Power = 300 damage<br>(90.91 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 99f <sub>3.3 seconds</sub>
+|val-Normal-Movement Speed = 25
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 16f <sup>0.53s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 14,450 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(1,545.45 DPS)
+|val-Evolved-Health = 14,450 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(1,545.45 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 99f <sub>3.3 seconds</sub>
+|val-Evolved-Movement Speed = 25
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 16f <sup>0.53s</sup><br>(50f <sup>1.67s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni819 f00}}
+
+==Trivia==
+*Rapper Cat is one of the few characters to have a first-person Japanese description.
+**Rapper Cat's first-person pronoun is 俺 ''ore'', which is generally casual and masculine.
+*The word 猫舌 ''nekojita'' in Rapper Cat's Japanese description literally translates to "cat tongue", but actually refers to a tongue too sensitive to withstand hot food or beverages.
+
+==Reference==
+*https://battlecats-db.com/unit/820.html
+
+----
+{{CatNav|Komori|Seaside Pegasa}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze Immunity]]
+[[Category:Cats with Resistant ability]]
+[[Category:Cats with Wave Immunity]]
+[[Category:Sage Slayer Cats]]

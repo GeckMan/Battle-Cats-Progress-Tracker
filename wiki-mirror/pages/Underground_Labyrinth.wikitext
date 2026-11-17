@@ -1,0 +1,105 @@
+{{PageBanner|Eve l 132 1 en.png|event}}
+The '''Underground Labyrinth''' (地底迷宮, ''Chitē Mēkyū'', '''Underground Labyrinth'''), or '''The Grand Deep''' (グランドアビス ''Gurando Abisu'', '''Grand Abyss''') is a time-limited game mode that was added in [[Version 12.0 Update|Version 12.0]]. It is unlocked after [[Into the Future]] Chapter 3. It consists of 100 levels that the player can randomly challenge, and is one of the few sources of Dark [[Catseye]]s. Unlike most events, the Underground Labyrinth is accessed from its own button in the [[Main Menu]], rather than being part of [[Legend Stages]].
+
+==Overview==
+Underground Labyrinth is somewhat similar to [[Legend Quest]], being an event map that appears on an unknown schedule for a period of time and consists of a randomly shuffled assortment of stages. While players may choose any [[Cat Units]] they want for each stage, a random selection of the player's cats become "trapped" when stages are won or lost, rendering them unusable within the Underground Labryinth for the remainder of the event. Once the event period is over, players will be ranked and receive rewards based on stage progress and units remaining, similar to the [[Ranking Dojo]].
+[[File:Pict01 en.png|center|600px|class=large-image]]
+
+==Mechanics==
+The player must equip 10 units before attempting any stage in the Underground Labyrinth. The enemy preview will show what enemies are in the stage rather than the usual question marks for new stages. If the player clears the stage, then a certain amount of their units will be "trapped", meaning they cannot be used on subsequent stages. There is also a 60% chance upon clearing the stage that a trapped cat unit can be "rescued"; the rescued unit can be chosen by the player and will have their trapped status removed.
+
+If the player loses or exits the stage, then two units used will be trapped. Units trapped in this way cannot be rescued. Since the player must equip 10 units before attempting a stage, they must also swap out the trapped units. Additionally, equipped units become locked in your line-up after a stage is attempted, remaining in this state until they become trapped or the challenger can no longer progress.
+[[File:Pict02 en.png|center|600px|class=large-image]]
+
+==Randomization==
+===Trapped Units by Layer===
+{| class="article-table" width=400px
+! Layer
+! style="text-align:center;"|Units Trapped
+|-
+|1 ~ 9<br>11 ~ 19<br>21 ~ 29
+|style="text-align:center;"|3 ~ 5 Each<br>81 ~ 135 Total
+|-
+|31 ~ 39<br>41 ~ 49<br>51 ~ 59
+|style="text-align:center;"|4 ~ 6 Each<br>108 ~ 162 Total
+|-
+|61 ~ 69<br>71 ~ 79<br>81 ~ 89<br>91 ~ 98
+|style="text-align:center;"|5 ~ 7 Each<br>175 ~ 245 Total
+|-
+|Every 10th floor (minus 100th)<br>99th floor
+|style="text-align:center;"|7 ~ 9 Each<br>70 ~ 90 Total
+|}
+[[File:Labyrinth unit loss.png|A table of average unit losses|class=large-image]]
+
+Without factoring in losing or quitting stages, the number of trapped units in a complete run of the Underground Labyrinth can technically be as low as 335 (minimum traps and 99 rescues) or as high as 632 (maximum traps and 0 rescues). Realistically however, the total number of lost units will hover somewhere around 473.6 (average traps, 59.4 rescues) with higher or lower losses than this becoming exponentially less probable to the point of statistical impossibility.
+
+[[File:Labyrinth unit loss plot.png|A plot of expected units lost with respect to levels|class=large-image]]
+
+===List of Stages===
+{{:Underground Labyrinth/Stages}}
+Due to the difference in possible stages (113) and used stages per event (100), a total of 3 Floor 10 stages, 2 Floor 20/30 stages, 3 Floor 40/50/60 stages, 4 Floor 70/80/90/99 stages, and 1 stage between 61 ~ 98 (excluding multiples of 10) will go unused in each Underground Labyrinth.
+
+==List of Floors==
+Each stage has a drop reward as listed in the table below. The rewards drop at a 100% chance on the 99th floor and floors that are multiples of 10, and a 50% chance on all other floors.
+{{:Underground Labyrinth/Floors}}
+
+==Ranking Rewards==
+Final rank is primarily determined by the number of floors cleared, but in cases where players have the same floors cleared the number of remaining units will be used as a tie breaker. The final rank will determine rewards, similar to how in the [[Ranking Dojo]] higher percentiles reap higher rewards. After the event ends, the highest-tier Underground Labyrinth medal the player qualified for will be added to the upper-left corner of their [[Battle Cats Officers' Club]] card.
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! scope="col" |Reward Tiers
+! scope="col" |Medal
+! scope="col" |Reward
+|-
+|1～5%
+|Platinum Medal (プラチナ勲章, ''Purachina Kunshō'')
+|Catseye [Dark]×5
+|-
+|6～15%
+|Gold Medal (ゴールド勲章, ''Gōrudo Kunshō'')
+|Catseye [Dark]×4
+|-
+|16～25%
+|Silver Medal (シルバー勲章, ''Shirubā Kunshō'')
+|Catseye [Dark]×3
+|-
+|26～35%
+|Bronze Medal (ブロンズ勲章, ''Buronzu Kunshō'')
+|Catseye [Dark]×2
+|-
+|36～50%
+|
+|Catseye [Dark]×1
+|-
+|51～75%
+|
+|Catseye [Legend]×3
+|-
+|～100%
+|
+|Catseye [Legend]×1
+|}
+[[File:Pict03 en.png|center|600px|class=large-image]]
+
+{{Gallery|GatyaitemD 177 f}}
+
+==First Appearance==
+===Japanese Version===
+*December 6th, 2022 to December 26th, 2022
+
+===Global Version===
+*February 20th, 2023 to March 13th, 2023
+
+==Trivia==
+*Most of the files for the Underground Labyrinth were added in [[Version 11.10 Update|Version 11.10]], where there were 104 total stages including placeholders. Additionally, they were completely blacked out to prevent any spoilers.
+**3 stages were later removed in [[Version 12.0 Update|Version 12.0]], leaving 101 total stages as a result.
+**[[Version 12.2 Update|Version 12.2]] added 11 new stages to the Labyrinth.
+**[[Version 12.3 Update|Version 12.3]] added 1 new stage and the map name for 1 new floor.
+*The [https://youtu.be/wljzxSv9rNk first music track] exclusive to the Underground Labyrinth sounds similar to "[https://youtu.be/USlwK2QHz_0 Monsters in the Dungeon]" (also known as "Deep Underground") from the ''[https://dragon-quest.org/wiki/Dragon_Quest_V:_Hand_of_the_Heavenly_Bride Dragon Quest V]'' soundtrack.
+*[[Grand Mage Mimon]]'s description reveals that she is the one who traps units in the Underground Labyrinth, forcing them to listen to her long, rambling stories about her [[Dark Priest Mamon|big brother]].
+
+==Reference==
+*https://battlecats-db.com/stage/s33000.html
+
+{{SpecialStages List}}
+[[Category:Event]]

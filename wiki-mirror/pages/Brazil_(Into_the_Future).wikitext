@@ -1,0 +1,124 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Brazil (Into the Future)/Outbreak|here]].''
+'''Brazil''' is the 46th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc000.png]]
+|stage location = [[File:Brazil.png]]
+'''Into The Future'''
+|energy = 60
+|energy2 = 70
+|energy3 = 80
+|enemy castle hp = 240,000 HP
+|enemy castle hp2 = 360,000 HP
+|enemy castle hp3 = 480,000 HP
+|enemies = {{Magnification|Metal Hippoe|100%
+|Snache|600%
+|Those Guys|600%
+|Pigge|600%
+|B.B.Bunny|600%
+|LeMurr|100%
+|Kroxo|100%
+|Shibalien|100%}}
+|enemies2 = {{Magnification|Snache|1,200%
+|Those Guys|1,200%
+|Ginger Snache|100%
+|Cyberhorn|100%
+|LeMurr|250%
+|Shibalien|250%
+|Pigge|1,200%}}
+|enemies3 = {{Magnification|Snache|1,800%
+|Those Guys|1,800%
+|One Horn|1,800%
+|Ginger Snache|200%
+|LeMurr|600%
+|Shibalien|600%
+|Elder Sloth|100%
+|Pigge|1,800%}}
+|treasure = - [[Treasure|Futbol]]
+|treasure2 = - [[Treasure|Futbol]]
+|treasure3 = - [[Treasure|Futbol]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': Sniper Cat +1
+|score reward2 = '''6,500''': [[Cat Food]] +10<br>
+'''5,500''': Sniper Cat +1
+|score reward3 = '''5,500''': [[Cat Food]] +10<br>
+'''4,500''': Sniper Cat +1
+|max enemies = 8
+|max enemies2 = 8
+|max enemies3 = 8
+|XP = 13,900 XP
+|width = 4,200<br>
+4,500 (Outbreaks Chapter 3)
+|jpname = Brazil
+|script = ブラジル
+|romaji = Burajiru
+|jptreasure = Carnival Costume
+|twname = Brazil
+|twscript = 巴西
+|twromaji = Bāxī
+|twtreasure = American Hot Dog Stand
+|krname = Brazil
+|krscript = 브라질
+|krromaji = Beulajil
+|krtreasure = Soccer Ball
+|chapter = [[Into the Future]]
+|prev stage = [[Bermuda (Into the Future)|Bermuda]]
+|next stage = [[Floating Continent (Into the Future)|Floating Continent]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Metal Hippoe|Snache|Those Guys|Pigge|B.B.Bunny|LeMurr|Kroxo|Shibalien}}
+*1 [[Metal Hippoe]] spawns after 3.33 seconds<sup>100f</sup>.
+*10 [[Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*10 [[Those Guys]] spawn after 12 seconds<sup>360f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Pigge]]s spawn after 20 seconds<sup>600f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 23.33 seconds<sup>700f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 25.33 seconds<sup>760f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*3 [[Metal Hippoe]]s spawn after 36.67 seconds<sup>1,100f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*4 [[LeMurr]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*10 [[Kroxo]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 14.67~22 seconds<sup>440f~660f</sup>.
+*10 [[Shibalien]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Metal Hippoe]] spawns.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Snache|Those Guys|Ginger Snache|Cyberhorn|LeMurr|Shibalien|Pigge}}
+*10 [[Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*10 [[Those Guys]] spawn after 8.67 seconds<sup>260f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 22 seconds<sup>660f</sup>, delay 33.33 seconds<sup>1,000f</sup>.
+*1 [[Cyberhorn]] spawns after 26.67 seconds<sup>800f</sup>.
+*3 [[LeMurr]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*10 [[Shibalien]]s spawn after 50 seconds<sup>1,500f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*1 [[Cyberhorn]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Pigge]]s spawn after 80 seconds<sup>2,400f</sup>, delay 26.67~53.33 seconds<sup>800f~1,600f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Snache|Those Guys|One Horn|Ginger Snache|LeMurr|Shibalien|Elder Sloth|Pigge}}
+*10 [[Snache]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*10 [[Those Guys]] spawn after 8.67 seconds<sup>260f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*1 [[One Horn]] spawns after 10 seconds<sup>300f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 20 seconds<sup>600f</sup>, delay 50 seconds<sup>1,500f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 22 seconds<sup>660f</sup>, delay 50 seconds<sup>1,500f</sup>.
+*3 [[LeMurr]]s spawn after 30 seconds<sup>900f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[Shibalien]]s spawn after 50 seconds<sup>1,500f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*1 [[Elder Sloth]] spawns after 60 seconds<sup>1,800f</sup>.
+*Infinite [[Pigge]]s spawn after 80 seconds<sup>2,400f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+
+==Strategy==
+==='''Chapters 1 & 2'''===
+Both stages are fairly similar, with the only big difference being Cyberhorn. It's possible to speedrun Chapter 1 if you have [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow]], as you can spam that and [[Valkyrie Cat (Special Cat)|Valkyrie Cat]] to easily destroy the base before the LeMurrs cause too much damage. For Chapter 2, use your regular team and you should be fine, However, take extra caution of the LeMurrs and Cyberhorn. [[Surfer Cat (Super Rare Cat)|Surfer Cat]], [[Voli (Uber Rare Cat)|Volta]], [[Onmyoji Cat (Rare Cat)|Onmyoji Cat]] or anything else with Alien Knockback, Freeze or Weaken get an honorable mention and will be a big help to you.
+
+==='''Chapter 3'''===
+Chapter 3 is basically Elder Sloth + peons and LeMurrs. Keep on meatshielding and use longer ranged attackers to chip down the sloth. Rich Cat and all alien treasures up to this point are going to be recommended for this stage, as Elder Sloth does not wait for you to hit the base before spawning and moves about as fast as LeMurr does. An alternate way to do this stage, is to just spam heavy hitters or fast attacking units (eg. Courier Cat) before Elder Sloth spawns. After he spawns continue to send your heavy hitters to destroy the enemy base.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-46.html
+*https://battlecats-db.com/stage/s03004-46.html
+*https://battlecats-db.com/stage/s03005-46.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

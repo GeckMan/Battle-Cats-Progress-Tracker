@@ -1,0 +1,8 @@
+.ranger-navbox.special-stages, .ranger-navbox.special-stages .ranger-navbox {
+	--bg-navbox-title: linear-gradient(to bottom, #75d687 0%, #68af59 100%);
+	--bg-sub-table-title: linear-gradient(135deg, #a0dc98 0%, #82ce69 25%, #82ce69 75%, #a0dc98 100%);
+	--bg-group-name: hsl(119, 44%, 80%);
+	--bg-group-member: hsl(119, 44%, 75%);
+}
+
+/* [[Category:Template stylesheets]] */

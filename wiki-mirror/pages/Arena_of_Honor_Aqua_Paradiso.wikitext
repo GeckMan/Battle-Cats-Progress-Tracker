@@ -1,0 +1,195 @@
+{{EnemiesAppearing|Dummy|Ayumi Manbosaki|Squid|Sardine|Young Man Mola|Tasmanian Giant Crab|Mola King}}
+'''Aqua Paradiso''' is the eighth [[Arena of Honor]] of the [[Catclaw Dojo]].
+
+{{Stage Info
+|stage name = [[File:E 283.png]]
+[[File:Mapsn007 00 r en.png]]
+|stage location = [[File:Mapname000 r en.png]]
+|energy = 30
+|enemy castle hp = Unlimited
+|base = {{Magnification|Dummy|0}}
+|enemies = {{Magnification|Squid|0
+|Sardine|0
+|Young Man Mola|0
+|Tasmanian Giant Crab|0
+|Mola King|0}}
+|boss = {{Magnification|Ayumi Manbosaki|0
+|Tasmanian Giant Crab|0
+|Mola King|0}}
+|time limit = 3 minutes
+|width = 4,200
+|max enemies = 30
+|jpname = Fish Heaven
+|script = おさかな天国
+|romaji = Osakana Tengoku
+|star = 1
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|dojo-chapter = [[Arena of Honor]]
+|difficulty = ★2
+}}
+
+==Battleground==
+*The enemy base here is a [[Dummy (Enemy Base)|Dummy]].
+*3 [[Young Man Mola (Enemy)|Young Man Molas]] (100%) spawn after 1.67 seconds<sup>50f</sup>, delay 3.33 seconds<sup>100f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] (100%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*Infinite [[Young Man Mola (Enemy)|Young Man Molas]] (100%) spawn, delay 26.67~40 seconds<sup>800f~1,200f</sup>.
+*When the base takes 1,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (100%) spawns as the boss.
+**3 [[Squid (Enemy)|Squid]] (100%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**3 [[Sardine (Enemy)|Sardines]] (100%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**3 [[Young Man Mola (Enemy)|Young Man Molas]] (100%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 5,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (500%) spawns as the boss.
+**2 [[Squid (Enemy)|Squid]] (500%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Sardine (Enemy)|Sardines]] (500%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**7 [[Young Man Mola (Enemy)|Young Man Molas]] (500%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 13,000 damage:
+**1 [[Ayumi Manbosaki]] (30%) spawns as the boss.
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (800%) spawns.
+**5 [[Squid (Enemy)|Squid]] (800%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Sardine (Enemy)|Sardines]] (800%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+**5 [[Young Man Mola (Enemy)|Young Man Molas]] (800%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 80,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (2,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (2,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (20,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (20,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 150,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (3,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (3,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (3,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 250,000 damage:
+**1 [[Ayumi Manbosaki]] (150%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (40,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (40,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (4,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 400,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (5,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (5,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (25,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (25,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 520,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (6,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (6,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (6,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 650,000 damage:
+**1 [[Ayumi Manbosaki]] (200%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (45,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (45,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (7,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 800,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (8,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (8,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (30,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (30,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 920,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (9,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (9,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (9,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 1,050,000 damage:
+**1 [[Ayumi Manbosaki]] (250%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (50,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (50,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (10,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 1,200,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (11,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (11,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (35,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (35,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 1,320,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (12,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (12,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (12,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 1,450,000 damage:
+**1 [[Ayumi Manbosaki]] (300%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (55,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (55,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (13,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 1,600,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (14,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (14,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (40,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (40,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 1,720,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (15,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (15,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (15,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 1,850,000 damage:
+**1 [[Ayumi Manbosaki]] (350%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (60,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (60,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (16,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,000,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (17,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (17,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (45,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (45,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,120,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (18,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (18,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (18,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 2,250,000 damage:
+**1 [[Ayumi Manbosaki]] (400%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (65,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (65,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (19,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,400,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (20,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (20,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (50,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (50,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,520,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (21,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (21,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (21,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 2,650,000 damage:
+**1 [[Ayumi Manbosaki]] (450%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (70,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (70,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (22,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,800,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (23,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (23,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (55,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (55,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 2,920,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (24,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (24,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (24,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 3,050,000 damage:
+**1 [[Ayumi Manbosaki]] (500%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (75,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (75,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (25,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 3,200,000 damage:
+**1 [[Mola King (Enemy)|Mola King]] (26,000%) spawns as the boss.
+**3 [[Mola King (Enemy)|Mola Kings]] (26,000%) spawn, delay 10 seconds<sup>300f</sup>.
+**20 [[Squid (Enemy)|Squid]] (60,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+**20 [[Sardine (Enemy)|Sardines]] (60,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+*When the base takes 3,320,000 damage:
+**1 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crab]] (27,000%) spawns as the boss.
+**7 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] (27,000%) spawn, delay 1.67~5 seconds<sup>50f~150f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (27,000%) spawn, delay 1.67~3.33 seconds<sup>50f~100f</sup>.
+*When the base takes 3,450,000 damage:
+**1 [[Ayumi Manbosaki]] (550%) spawns as the boss.
+**10 [[Squid (Enemy)|Squid]] (80,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Sardine (Enemy)|Sardines]] (80,000%) spawn, delay 1.67~4 seconds<sup>50f~120f</sup>.
+**10 [[Young Man Mola (Enemy)|Young Man Molas]] (28,000%) spawn, delay 1.67~2.67 seconds<sup>50f~80f</sup>.
+
+==Explanation==
+*You have 3 minutes to defeat as many enemies as possible.
+*You have unlimited Speed Ups and Cat CPUs but no other power ups.
+*The base has unlimited health and can attack Cats that are close to it.
+*You gain no money for defeating enemies.
+*Defeating enemies will score points and the number varies.
+*The total points will decrease overtime.
+
+==Trivia==
+*''Paradiso'' means "paradise" in Indonesian, Italian and Swahili.
+*Aqua Paradiso's Japanese namesake is "[https://youtu.be/ynCOyUufcEY Osakana Tengoku]" ("Fish Heaven"), a famous song that lists the names of different species of fish.
+
+==Reference==
+*https://battlecats-db.com/stage/s11007-01.html
+
+{{DojoStages}}
+[[Category:Ranking Dojo Stages]]

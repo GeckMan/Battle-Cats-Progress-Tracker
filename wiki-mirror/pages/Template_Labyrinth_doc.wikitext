@@ -1,0 +1,30 @@
+{{Documentation}}
+{{Labyrinth|0|10|520|100}}
+
+<nowiki>{{Labyrinth|2|10|520|90}}</nowiki><br>
+<nowiki>{{Labyrinth|Progress|Floor|Units Remaining|Rank}}</nowiki><br>
+
+==Progress==
+*0 - Floor 1~10
+*1 - Floor 11~20
+*2 - Floor 21~30
+*3 - Floor 31~40
+*4 - Floor 41~50
+*5 - Floor 51~60
+*6 - Floor 61~70
+*7 - Floor 71~80
+*8 - Floor 81~90
+*9 - Floor 91~98
+*10 - Floor 99
+
+==Usage==
+<pre>
+{{Labyrinth|10|99|90|1}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+|{{Labyrinth|10|99|90|1}}
+|}
+
+[[Category:Cosmetic templates]]

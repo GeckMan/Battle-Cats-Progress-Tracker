@@ -1,0 +1,69 @@
+{{EnemiesAppearing|Squire Rel|Bore|The Face|Rain D.}}
+'''Benzene Field''' is the sixth stage in [[Sea Polluter]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn025 05 n en.png]]
+|stage location = [[File:Mapname025 n en.png]]
+|energy = 90
+|enemy castle hp = 600,000 HP
+|enemies = {{Magnification|Squire Rel|800%
+|Bore|200%
+|The Face|200%
+|Rain D.|300%}}
+|enemies2 = {{Magnification|Squire Rel|960%
+|Bore|240%
+|The Face|240%
+|Rain D.|360%}}
+|enemies3 = {{Magnification|Squire Rel|1,120%
+|Bore|280%
+|The Face|280%
+|Rain D.|420%}}
+|enemies4 = {{Magnification|Squire Rel|880%
+|Bore|220%
+|The Face|220%
+|Rain D.|330%}}
+|treasure = - 171,000 XP (10%, 1 time)<br>
+- [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 1,710 XP
+|width = 6,200
+|max enemies = 10
+|jpname = Benzene Field
+|script = ベンゼン畑
+|romaji = Benzen Hata
+|star = 4
+|sub-chapter = [[Sea Polluter]]
+|difficulty = ★8
+|prev stage = [[Littering Coast]]
+|next stage = [[Government Watchdog]]
+}}
+
+==Battleground==
+*Infinite [[Squire Rel]]s spawn after 36.67 seconds<sup>1,100f</sup>, delay 2~6 seconds<sup>60f~180f</sup>.
+*10 [[Bore]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 0.33 seconds<sup>10f</sup>.
+*9 [[The Face|Faces]] spawn, delay 3.33 seconds<sup>100f</sup>.
+*1 [[Rain D.]] spawns.
+
+==Strategy==
+Take it slow! The enemy limit is 10, so each enemy slain will make room for one Bore to spawn; ergo, you only have to fight one at a time provided you never kill The Faces. Of course, slow as they may be, The Faces effectively create a unstoppable wall that obliterates any cat with less range than them, so you can't waste too much time or they'll eventually reach the [[Cat Base]]. After the first three or four Bores, you should move onto fighting two at a time. To sum it up, play too aggressively and you'll face more Bores than you can handle, play too conservatively and The Faces will corner you.
+
+Since the Bores are the main problem, you should dedicate your lineup to [[:Category:Anti-Red Cats|Anti-Reds]]. The classic [[Seasons of Love (Combo)|Seasons of Love]] + [[Three Kings (Combo)|Three Kings]] + [[Fish Cat (Normal Cat)|dual]] [[Crazed Fish Cat (Super Rare Cat)|Whales]] is effective as always, especially with their single-target attacks and short range (they won't kill more than one Face at a time), while [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] can be used as an "emergency button" to deal massive damage against two or more Bores towards the end. [[Valkyrie Cat (Special Cat)|Holy Valkyrie Cat]] is a decent option as well.
+
+Using a Rich Cat will make the beginning a lot smoother, as that Rain D. can take an eternity to kill.
+
+===Recommended Ubers===
+*[[Ice Cat (Uber Rare Cat)|Ice Cat]] and [[Momotaro (Uber Rare Cat)|Momotaro]] are able to trivialize crowd-controlling the Bores, eliminating the only threat in the level.
+*[[Kubiluga (Uber Rare Cat)|Kubilan Paslan]] is able to cheese this stage by knocking back both Bores & Faces while standing safely away from them.
+*Huge-DPS units like [[Warlock and Pierre (Uber Rare Cat)|Warlock and Pierre]], [[Bunny & Canard (Uber Rare Cat)|Bunny & Canard]], and [[Mighty Drednot (Uber Rare Cat)|Mighty Drednot]] trivialize the enemies in this stage.
+
+==Walkthrough==
+{{Walkthrough
+|fDKE3YmQv0k|Nurse Wuffa|[[Battle Items#Sniper the Cat|Sniper the Cat]]
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s00025-06.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 26 Stages]]
+[[Category:Stories of Legend Stages]]

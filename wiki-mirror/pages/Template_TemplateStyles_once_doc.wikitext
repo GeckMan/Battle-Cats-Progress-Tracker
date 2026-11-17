@@ -1,0 +1,8 @@
+{{Documentation}}
+Used for templatestyles calls so you only need to call them once. Can take multiple arguments.
+
+<pre>
+{{TemplateStyles once|Lineup/styles.css|CatCombo/styles.css}}
+</pre>
+
+Using this massively reduces the unstrip post-expand size of a page compared to plain templatestyles, if the template is used a lot. Also if any template is that much of a problem then you may also need to directly invoke the module rather than using this template. [[Template:Stage]] is an example.

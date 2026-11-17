@@ -1,0 +1,116 @@
+{{PageImage|Schedule icon.png}}
+:''All events listed under tabs other than Current Events do not account for irregular events such as XP and Catfruit Festivals, so they may not always reflect the actual closest appearance of events. Such occurrences may be listed under the Special Events section of the Current Events tab. In addition, note that if you are in a location that observes daylight saving time, the listed times may be inaccurate compared to in-game event appearances on the days that it starts and ends.''
+:'''''[[Template:CurrentEvents/Schedule.json|Event data]] last updated on {{#time:F j, Y|{{REVISIONTIMESTAMP:Template:CurrentEvents/Schedule.json}}}}.'''''
+
+<div class="bg-light3" style="border-radius: 20px; text-align: center; padding: 8px; border: 2px solid var(--bg-color-orange3);">
+<div style="margin: 10px;">[[File:Schedule icon.png|link=Special Events|Event Schedule]]</div>
+<tabber>
+Current Events=
+<div style="margin-top: 7px;">{{CurrentEvents}}</div>
+
+|-|Weekday Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|Weekday Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Weekday Stages -</div>
+{{EventClock|Monday Stage|Tuesday Stage|Wednesday Stage|Thursday Stage|Friday Stage|Weekend Stage|noborder=yes}}
+
+{{!}}-{{!}}Weekday Blitz Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Weekday Blitz Stages -</div>
+{{EventClock|Monday Blitz Stage|Tuesday Blitz Stage|Wednesday Blitz Stage|Thursday Blitz Stage|Friday Blitz Stage|noborder=yes}}
+}}
+</div>
+
+|-|Item Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|XP Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- XP Stages -</div>
+{{EventClock|Weekend Stage|XP Stage|XP Megablitz!|XP Colosseum|Merciless XP!|XP Bonanza!|The Proving Grounds|noborder=yes}}
+
+{{!}}-{{!}}Catfruit Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Catfruit Stages -</div>
+{{EventClock|Growing Epic|Growing Strange|Growing Evil|noborder=yes}}
+
+{{!}}-{{!}}Cat Ticket Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Cat Ticket Stages -</div>
+{{EventClock|Cat Ticket Chance!|Siege of Hippoe!|Facing Danger|noborder=yes}}
+
+{{!}}-{{!}}Builder's Blitz Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Builder's Blitz Stages -</div>
+{{EventClock|Cavern of Comets|Island of Ash|Strait of Wings|noborder=yes}}
+
+{{!}}-{{!}}Enigma Blitz Stage=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Enigma Blitz Stage -</div>
+{{EventClock|Island of Hidden Treasure|noborder=yes}}
+}}
+</div>
+
+|-|Cyclone Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|Cyclone Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Cyclone Stages -</div>
+{{EventClock|Crimson Catastrophe|Crimson Vengeance|Heaven of Darkness|NEO Darkness Heaven|Peerless|Peerless Too|Wrath of Heaven|Wrath of the Divine|Sweet Irony|Bitter Irony|Dimension of Despair|Dimension of Delirium|Red Sky at Morning|Red Sky at Night|The Rolling Dead|The Dead Keep Rolling|The 2nd Dimension|The 3rd Dimension|Typhoon Nemo|Typhoon Nihil|The Great Diablo|The Greatest Diablo|noborder=yes}}
+
+{{!}}-{{!}}Advanced Cyclone Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Advanced Cyclone Stages -</div>
+{{EventClock|Day of Judgement|Bad to Worse|Techneurosis|noborder=yes}}
+}}
+</div>
+
+|-|Crazed/Maniac Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Crazed and Maniac Stages -</div>
+{{EventClock|The Crazed Cat|Cat Maniac|The Crazed Tank|Tank Maniac|The Crazed Axe|Axe Maniac|The Crazed Gross|Gross Maniac|The Crazed Cow|Cow Maniac|The Crazed Bird|Bird Maniac|The Crazed Fish|Fish Maniac|The Crazed Lizard|Lizard Maniac|The Crazed Titan|Titan Maniac|Crazed Moneko|Clan of the Maniacs|noborder=yes}}
+
+|-|Advent Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Advent Stages -</div>
+{{EventClock|Queen's Coronation|Queen's Condemnation|The Old Queen|The Eldest Queen|Invasion of Poultrio|Dead on Debut|Dead by Encore|Papuu's Paradise|Papuu's Paradox|Reign of the Tyrant|King Wahwah's Revenge|King Wahwah's Return|Wanwan's Glory|NEO Wanwan's Glory|Jumbo Invasion|Clionel Ascendant|Clionel Dominant|Z-Onel Rises!|Z-Onel Resurrected!|Hunt for the Xenobeast|Deeply Dreaming|A Deeper Dream|First Errand|NEO First Errand|Temptation's Symphony|Temptation's Rhapsody|River Styx|River Acheron|Rashomon|Courts of Torment|Courts of Agony|Prelude to Ruin|Blue Impact|Bottom of the Swamp|Top of the Bog|Invasion of the Swamplord|noborder=yes}}
+
+|-|Awakening Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|Awakening Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Awakening Stages -</div>
+{{EventClock|The Dom Awakens!|Panties Awakens!|Kung-Fu Awakens!|Bondage Awakens!|Zombie Awakens!|Boogie Awakens!|Samurai Awakens!|Box Cats Awaken!|Ninja Awakens!|Mr. Awakens!|Tricycle Awakens!|Skirt Awakens!|Sumo Awakens!|Actress Awakens!|Flower Cat Awakens!|noborder=yes}}
+
+{{!}}-{{!}}Li'l Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Li'l Stages -</div>
+{{EventClock|Li'l Cat Awakens!|Li'l Tank Awakens!|Li'l Axe Awakens!|Li'l Gross Awakens!|Li'l Cow Awakens!|Li'l Bird Awakens!|Li'l Fish Awakens!|Li'l Lizard Awakens!|Li'l Titan Awakens!|Li'l Cat's Trial|noborder=yes}}
+
+{{!}}-{{!}}Malevolent Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Malevolent Stages -</div>
+{{EventClock|The Malevolent Cat|The Malevolent Tank|The Malevolent Axe|The Malevolent Gross|The Malevolent Cow|The Malevolent Bird|The Malevolent Fish|The Malevolent Lizard|The Malevolent Titan|Super Smash Families|noborder=yes}}
+}}
+</div>
+
+|-|Monthly Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|Monthly Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Monthly Stages -</div>
+{{EventClock|Happy New Year?|Another New Year|Ritual Happiness|Ritual Confusion|Bears be Bare|Bears Be Back|Teacher! It's Spring!|Spring for Sensei|Love is Sickness|Lovesick Again|The Forbidden Bride|Forbidden Bride Pt II|Never Summer!|Never Not Summer!|Ghostly Houseguests|Ghostly Strangers|Old Guys About Town|Old Guys in the City|Autumn {{=}} Sports Day!|Sports Night|Loving Labour|Worker's Revolution|Jingle Cat Bell|Christmas in Space|noborder=yes}}
+
+{{!}}-{{!}}Monthly Awakening Stages=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Monthly Awakening Stages -</div>
+{{EventClock|Adult Cat Awakes!|Evil Cat Awakes!|Doll Cats Awake!|Maiden Awakes!|Koi Awakens!|Bride Awakens!|Vacation Awakes!|Vengeance Awakes!|Kung-Fu X Awakens!|Sports Day Awakens!|Salaryman Awakes!|Reindeer Fish Awakens!|noborder=yes}}
+
+{{!}}-{{!}}Monthly Gauntlets=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Monthly Gauntlets -</div>
+{{EventClock|January Gauntlet|January Gauntlet II|February Gauntlet|February Gauntlet II|March Gauntlet|March Gauntlet II|April Gauntlet|April Gauntlet II|May Gauntlet|May Gauntlet II|June Gauntlet|June Gauntlet II|July Gauntlet|July Gauntlet II|August Gauntlet|August Gauntlet II|September Gauntlet|September Gauntlet II|October Gauntlet|October Gauntlet II|November Gauntlet|November Gauntlet II|December Gauntlet|December Gauntlet II|noborder=yes}}
+}}
+</div>
+
+|-|Other Events=
+<div class="current-events" style="margin-top: 7px;">
+{{#tag:tabber|Behemoth Culling=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Behemoth Culling -</div>
+{{EventClock|Hidden Forest of Gapra|Ashvini Desert|Jinfore Volcano|Mining Epic|noborder=yes}}
+
+{{!}}-{{!}}Empress' Research=
+<div style="margin: 8px 4px 0px 4px; background-color: #FFA500; border-radius: 6px; border: 0; color: #000; font-weight: bold; font-size: 13.5px; line-height: 26.5px;">- Empress' Research -</div>
+{{EventClock|Arcane Confluence|Wicked Cat|Servant of Darkness|Wicked Tank|Demon's Park|Wicked Axe|Empress' Report 1|Empress' Report 2|Empress' Report 3|Empress' Report 4|Empress' Report 5|Empress' Excavation 1|Empress' Excavation 2|Empress' Excavation 3|Empress' Excavation 4|Empress' Excavation 5|noborder=yes}}
+}}
+</div>
+</tabber>
+</div>
+<!--Tabs ending in Events have inner tabs, tabs ending in Stages don't have inner tags-->
+
+{{BC Navigation}}
+[[Category:Main]]
+{{Nocomment-perf}}

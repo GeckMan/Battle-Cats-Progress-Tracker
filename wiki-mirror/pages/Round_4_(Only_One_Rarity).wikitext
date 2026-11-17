@@ -1,0 +1,87 @@
+{{DISPLAYTITLE:Round 4}}
+{{EnemiesAppearing|UltraBaaBaa|Mistress Celeboodle|Youcan|Corporal Weyland|Aku Doge|Fallen Bear|Le'Behemoth}}
+'''Round 4''' is the fourth stage in [[Otherworld Colosseum#Only One Rarity|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 03 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,100,000 HP
+|enemies = {{Magnification|UltraBaaBaa|1,200%
+|Mistress Celeboodle|1,500%
+|Corporal Weyland|2,500%
+|Aku Doge|400%
+|Fallen Bear|200%
+|Le'Behemoth|200%}}
+|boss = {{Magnification|Youcan|1,200%}}
+|enemies2 = {{Magnification|UltraBaaBaa|1,440%
+|Mistress Celeboodle|1,800%
+|Corporal Weyland|3,000%
+|Aku Doge|480%
+|Fallen Bear|240%
+|Le'Behemoth|240%}}
+|boss2 = {{Magnification|Youcan|1,440%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 10
+|jpname = Round 4
+|script = Round 4
+|romaji = Round 4
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Only One Rarity|Otherworld Colosseum]]
+|difficulty = ★11
+|prev stage = [[Round 3 (Only One Rarity)|Round 3]]
+|next stage = [[Round 5 (Only One Rarity)|Round 5]]
+}}
+
+==Rules==
+{{ColosseumRule|Only One Rarity}}
+
+==Battleground==
+*3 [[UltraBaaBaa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*3 [[Mistress Celeboodle]]s spawn after 16.67 seconds<sup>500f</sup>, delay 53.33~56.67 seconds<sup>1,600f~1,700f</sup>.
+*1 [[Youcan]] spawns as the boss after 43.33 seconds<sup>1,300f</sup>.
+*1 [[Corporal Weyland]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*5 [[Aku Doge]]s spawn after 76.67 seconds<sup>2,300f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*1 [[Fallen Bear]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Le'Behemoth]] spawns after 113.33 seconds<sup>3,400f</sup>.
+*2 [[UltraBaaBaa]]s spawn after 120 seconds<sup>3,600f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+
+==Strategy==
+On paper, this stage looks like a nightmare. It features enemies with nearly indestructible [[Shield]]s and [[Barrier]]s, along with health pools approaching seven digits. The restriction doesn't help either, forcing you into a game of management where a single mistake can leave you out of commission until one of your units dies. Stalling enemies is practically impossible due to a mix of Aku and Alien enemies spawning simultaneously, immediately destroying dedicated meatshields.
+
+In practice, however, the stage is divided into two halves. The first half features an abundance of Alien enemies, gradually transitioning to Aku enemies over time. Nonetheless, this stage is no joke—Research Combos are recommended to mitigate the significant problem of recharge times.
+
+With good timing and possibly some luck, this stage can be [[cheese]]d by sending out strong [[:Category:Rusher-class Cats|Rushers]] and a [[:Category:Barrier Breaker Cats|Barrier Breaker]] at the start. Attack Up [[Cat Combo]]s are vital for this approach, preferably used alongside a money boosting one as well.
+
+==='''Recommended Units'''===
+===='''Normal Cats'''====
+*[[Superfeline (Normal Cat)|Superfeline II/True Superfeline]]: At level 90, they have just enough damage to OHKO an Aku Doge at max HP, assuming its shield is down. Their [[Omni Strike]] also allows them to snipe at Corporal Weyland while targeting enemies like Le'Behemoth. Although their recharge time is on the longer side, their high speed and quick foreswing guarantee at least a few solid attacks before taking to the bench. Since they don't block you from deploying other units, there's really no downside to using them.
+
+===='''Special Cats'''====
+*[[Ancient Egg: N004 (Special Cat)|Supercar Cat]]: This stage was practically designed with this unit in mind. With a 100% chance to both Pierce Shields and [[Barrier Breaker|Break Barriers]], along with a relatively short recharge time, fast speed, and absurdly high damage, Supercar consistently rips huge chunks out of the slow-attacking enemies on this stage. He can also kill Fallen Bear in just two cycles at Level 50. However, precise timing is essential, as misdeploying him can genuinely cost you the battle. His extremely low health is both a blessing and a curse: since it ensures he leaves the field immediately after fulfilling his role, but it also gives you very little room for error in spawning him in.
+*[[Ancient Egg: N006 (Special Cat)|Fallen Bear Cat]]: This unit counters two of the three Aku enemies in this stage. Deploying him at the right moment can instantly eliminate annoying Aku Doges before they have the opportunity to cause chaos. Against Le'Behemoth, carefully timing his spawning between the enemy's attack cycles is incredibly effective. His value lies in reducing the need for other dedicated counters to Aku Doges and Le'Behemoth, assuming you manage his timing correctly. He also helps conserve Supercars for more critical moments.
+
+===='''Rare Cats'''====
+*[[Rover Cat (Rare Cat)|Catellite]]: Boosted to high levels, this unit can tank significant damage from the Alien enemies encountered early in the stage. Its [[Immune to Warp|Warp Immunity]] prevents Corporal Weyland from forcefully repositioning it, making it exceptionally useful against the Alien enemies at the stage's beginning. However, its effectiveness declines as more Aku enemies appear in the latter half, limiting its optimal use.
+*[[Maize Cat (Rare Cat)|Cone Cat]]: In the latter half of the stage, Cone Cat performs well at stalling the numerous Aku enemies, provided you can manage the Alien threats that periodically spawn. Properly keeping those Alien enemies in check allows Cone Cat to wall the Aku long enough to plan your next move.
+
+===='''Super Rare Cats'''====
+*[[Miter Saw Cat (Super Rare Cat)|Neo Saw Cat]]: Higher levels make this unit shine even more. At the start of the stage, you can cycle Neo Saw Cat to effortlessly cut down every Alien enemy with no real resistance. He reliably handles Youcan in just two or three cycles, well before the Fallen Bear even spawns. Although his usefulness diminishes once Aku Doges join the fight, the value he brings early on is enormous. At Level 45, he can withstand a hit from the Fallen Bear, allowing him to pierce UltraBaaBaa barriers when the stage shifts to predominantly Aku enemies.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Be very careful when deploying this unit. Her ridiculously high health allows her to survive far longer than one would anticipate, which can be both helpful and problematic. While her survivability is excellent, it can prevent you from cycling out more essential units like Neo Saw Cat at critical moments. That said, her damage output is invaluable for keeping Aku Doges from being knocked back, and for chipping away at the high-health enemies. Be mindful to send her out at an optimal time to avoid sabotaging yourself.
+
+==Walkthrough==
+{{Walkthrough
+|jb8FQJmIljw
+|Nerd Cat (你好強)
+|{{2c}} cheese, battle starts at 0:28
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s36002-04.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

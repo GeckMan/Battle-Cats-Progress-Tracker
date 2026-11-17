@@ -1,0 +1,80 @@
+:''This article is about the enemy. For the Cat Unit, see [[The 9th Angel (Uber Rare Cat)]].''
+'''The 9th Angel''' is an [[:Category:EVA Angel Enemies|EVA Angel]] enemy that appears in the [[Neon Genesis Evangelion Collaboration Event]]. It was added in [[Version 6.10 Update|Version 6.10]].
+
+{{Enemy Info
+|name = The 9th Angel
+|image = E 394.png
+|appearance = [[Neon Genesis Evangelion Collaboration Event]]
+|money drop = 7,000¢ - 27,650¢
+}}
+
+==Enemy==
+This enemy has the [[Long Distance]] ability, a very small blindspot, and hits quite hard, not to mention it's often backed by threats that cover its blindspot. Only lower-ranged units like [[:Category:Rusher-class Cats|rushers]] will stand a chance and find an opening.
+
+==Strategy==
+Use [[:Category:EVA Angel Killer Cats|EVA Angel Killers]] and try to get [[:Category:Rusher-class Cats|rushers]] into its blindspot.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Neon Genesis Evangelion Collaboration Event#The 9th Angel Strikes!|The 9th Angel Strikes!]]:
+**[[Asuka On Board (Easy)]] (5%)
+**[[Asuka On Board (Expert)]] (100%)
+*[[Heralds of The End]]:
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.15]] (1,300%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.16]] (1,400%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.17]] (1,500%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.18]] (1,600%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.19]] (1,700%)
+**[[Heralds of The End/WARNING Lv.1~20#WARNING Lv.15~20|WARNING Lv.20]] (1,800%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Neon Genesis Evangelion Collaboration Event#The 9th Angel Strikes!|The 9th Angel Strikes!]]:
+**[[Asuka On Board (Easy)]] (5%)
+**[[Asuka On Board (Expert)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = The 9th Angel
+|Health = 500000
+|Attack Power = 15000
+|Attack Range = 475
+|Attack Type = Area
+|Time Between Attacks = 154
+|Movement Speed = 4
+|Knockback = 4
+|Foreswing = 92
+|Backswing = 62
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~750)<br>
+{{AbilityIcon|Weaken}} 100% chance to [[Weaken|weaken]] Cat Units to 50% for 150f <sub>5 seconds</sub>
+|Element = EVA Angel
+}}
+
+{{UnitViewer|enemy|bg=Bg088.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+394 e.png|The 9th Angel's spritesheet
+IdleBardiel.gif|The 9th Angel's moving animation
+</gallery>
+
+==Trivia==
+*Prior to [[Version 14.7 Update|Version 14.7]] of the [[The Battle Cats|English Version]], this enemy was named "Bardiel".
+
+==Reference==
+*https://battlecats-db.com/enemy/396.html
+
+----
+{{EnemyNav|The 6th Angel|The 10th Angel}}
+----
+
+{{Neon Genesis Evangelion}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with Weaken ability]]
+[[Category:Long Distance Enemies]]
+[[Category:EVA Angel Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

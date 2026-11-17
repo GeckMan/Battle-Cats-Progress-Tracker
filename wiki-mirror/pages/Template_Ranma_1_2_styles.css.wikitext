@@ -1,0 +1,7 @@
+.ranger-navbox.ranma {
+	--bg-navbox-title: linear-gradient(to right, hsl(2, 99%, 37%) 0%, hsl(2, 99%, 43%) 100%);
+	--bg-sub-table-title: hsl(343, 54%, 61%);
+	--bg-group-name: hsl(15, 85%, 56%);
+}
+
+/* [[Category:Template stylesheets]] */

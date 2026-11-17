@@ -1,0 +1,71 @@
+:''For the Cat Unit, see [[Brainwashed Axe Cat (Super Rare Cat)|Brainwashed Axe Cat]]. For the weaker boss, see [[Wicked Axe Cat (Enemy)|Wicked Axe Cat]].''
+'''Malevolent Dark Cat''' is an [[:Category:Aku Enemies|Aku]] enemy that appears in [[Hyperberserker (Merciless)|The Malevolent Axe]]. It was added in [[Version 12.7 Update|Version 12.7]].
+
+{{Enemy Info
+|name = Malevolent Dark Cat
+|image = E 662.png
+|first appearance = [[Hyperberserker (Merciless)|The Malevolent Axe]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+This durable and somewhat fast enemy boasts very high DPS and rapid attacks at 360 range. Its [[Curse]] ability makes sure nothing stands a chance, and when it reaches 34% health, it [[Strengthen|Strengthens]] by 100%. Its very high health is effectively doubled by a [[Shield]] that blocks status effects and regenerates for every knockback; these completely sweep its [[Surge Attack#Counter-Surge|Counter-Surge]] under the carpet. Like all enemy [[Axe Cat (Normal Cat)|Dark Cat]] variants, it isn't a [[:Category:Dark Enemies|Dark]] enemy.
+
+==Strategy==
+Malevolent Dark Cat's very high DPS and Curse ability means the only consistent meatshield to use would be [[Maize Cat (Rare Cat)|Maize Cat]] due to its high HP, [[Immune to Curse|Curse Immunity]], and [[Resistant|Resistance]] to Aku.
+
+To block its progress, [[Talents|talented]] [[Nymph Cat (Super Rare Cat)|Fiend Cat]] can [[Knockback|knockback]] Malevolent Dark Cat, giving you some breathing room. [[Master Uril (Special Cat)|Esoteric Uril]] brings excellent DPS and [[Slow|slow]] debuffs, but you will have to be careful of Malevolent Dark's Counter-Surge and Shield. [[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]] is also an excellent attacker and debuffer, though they may have some of Uril's problems- but at less risk, due to the former's high range and weaker [[Surge Attack#Mini-Surge|Mini-Surges]].
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*The Malevolent Axe: [[Hyperberserker (Merciless)]]
+*[[Super Smash Families]]: [[Heinous Road (Brutal)]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Malevolent Dark Cat
+|Health = 2100000
+|Attack Power = 8750
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 16
+|Movement Speed = 7
+|Knockback = 3
+|Foreswing = 8
+|Backswing = 8
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 100% at 34% health<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 300f <sub>10 seconds</sub><br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">700,000</span>; regenerates with 100% HP)<br>
+{{AbilityIcon|Counter-Surge}} [[Surge Attack#Counter-Surge|Counter-Surge]] (When hit by a [[Surge Attack]], creates its own Surge of equal level and spawn range)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+662 e.png|Malevolent Dark Cat's spritesheet
+</gallery>
+
+==Trivia==
+*Malevolent Dark Cat is one of the five non-[[:Category:Relic Enemies|Relic]] enemies to have the Curse ability, the others being [[Master Uril (Enemy)|Master Uril]], the [[Relic Doge Base (Enemy Base)|Relic Doge Base]], [[Cafeteria Cat (Enemy)|Cafeteria Cat]] and [[Sage of Selection Darvin]].
+
+==Reference==
+*https://battlecats-db.com/enemy/664.html
+
+----
+{{EnemyNav|Malevolent Eraser Cat|Malevolent Macho Leg Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Enemy Cats]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Shields]]
+[[Category:Counter-Surge Enemies]]

@@ -1,0 +1,130 @@
+:''For other uses, see [[Archer (disambiguation)]].''
+'''Archer the Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. He was added in [[Version 8.2 Update|Version 8.2]].
+
+{{Cat Info
+|ID = 458
+|rarity = RR
+|name1 = Archer the Cat
+|name2 = Heroic Spirit Archer Cat
+}}
+
+==Evolution==
+Evolves into '''Heroic Spirit Archer Cat''' at level 10.
+
+==Strategy/Usage==
+Archer the Cat, or at least his Evolved Form, is, in short, a worse version of [[Rugby Cat (Rare Cat)|Quarterback Cat]], both being [[:Category:Long Distance Cats|Long Distance attackers]] with immunity to [[Wave Attack]]s. The former has more health and a slightly lower cooldown, though the latter has nearly twice the DPS, more range, higher pierce, and most importantly, [[Area Attack]]. His lack of Area Attack along with his poor Long Distance coverage means that, ironically, his Normal Form deals better with melee [[:Category:Wave Attack Enemies|Wave enemies]] than his Evolved Form. On top of being outdone by a lukewarm unit, [[Talents|Talented]] [[Kung Fu Cat (Special Cat)|Dancer Cat]] and [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]] offer more as Wave-immune attackers for Level 4 stages than Archer the Cat ever could. He does, however, has the ability to be obtained far before any of the other aforementioned units. His DPS and [[Single Attack]] are still big issues, so other Long Distance options such as [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Nymph Cat (Super Rare Cat)|Medalist Cat]] and [[Vaulter Cat (Super Rare Cat)|Polevaulter Cat]] have more priority outside of stages with Waves.
+
+{{Job|Classification = User Rank Dump & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 458
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni458 f00.png
+|Image2 = Uni458 c00.png
+|Name1 = Archer the Cat
+|Desc1 = A Heroic Cat Spirit proficient with both bow<br>and blade. Who knows why he dislikes<br>Shirou the Cat so? Immune to Waves.
+|Name2 = Heroic Spirit Archer Cat
+|Desc2 = Mastered the bow in order to claim the title<br>of Archer. His hate for Shirou the Cat keeps<br>him up at night. Long-range, Immune to Waves.
+|Name1 (JP) = アーチャーネコ (Āchā Neko, Archer Cat)
+|Desc1 (JP) = 剣も使える弓兵の英霊に憧れるネコ<br>ネコ士郎を敵視しているが真意は不明<br>波動によるダメージを無効にする
+|Transl1 (JP) = The Heroic Spirit this Cat admires is an Archer who also uses a sword<br>Hostile towards [[Shirou the Cat (Special Cat)|Cat Shirou]], but his true intentions are unknown<br>Invalidates damage from Waves
+|Name2 (JP) = 英霊アーチャーネコ (Eirei Āchā Neko, Heroic Spirit Archer Cat)
+|Desc2 (JP) = 弓兵らしく弓で戦い始めたネコ<br>ネコ士郎を敵視しすぎて夜も眠れない<br>波動によるダメージを無効にする(遠方攻撃)
+|Transl2 (JP) = A Cat who started to fight with a bow like an Archer<br>So hostile towards [[Shirou the Cat (Special Cat)|Cat Shirou]] it keeps him up at night<br>Invalidates damage from Waves (Long Distance Attack)
+|Name1 (TW) = Archer貓
+|Desc1 (TW) = 崇拜著也會使用劍的弓兵<br>將士郎貓視為敵人但真意不明<br>波動傷害無效
+|Name2 (TW) = 英靈Archer貓
+|Desc2 (TW) = 做有弓兵模樣開始拉弓迎戰的貓咪<br>過份將士郎貓視為敵人結果夜夜難眠<br>波動傷害無效(遠距攻擊)
+|Name1 (KR) = 아처 고양이
+|Desc1 (KR) = 검도 다룰 수 있는 궁병 클래스 영령을 동경하는 고양이<br>고양이 시로를 적대하고 있으나 이유는 알 수 없다<br>파동 데미지를 무효화한다
+|Name2 (KR) = 영령 아처 고양이
+|Desc2 (KR) = 궁병답게 활로 싸우기 시작한 고양이<br>밤에 잠도 못 잘 정도로 고양이 시로를 엄청 적대하고 있다<br>파동 데미지를 무효화한다 (원거리 공격)
+}}
+
+==Cost==
+*Chapter 1: 400¢
+*Chapter 2: 600¢
+*Chapter 3: 800¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Archer the Cat
+|Normal Base HP = 660
+|Normal Base AP = 120
+|Normal Range = 275
+|Normal Foreswing = 26
+|Normal Attack Cooldown = 65
+|Normal Attack Length = 53
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 400
+|Normal Recharge = 640
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Evolved Name = Heroic Spirit Archer Cat
+|Evolved Base HP = 660
+|Evolved Base AP = 120
+|Evolved Range = 275
+|Evolved Foreswing = 26
+|Evolved Attack Cooldown = 65
+|Evolved Attack Length = 53
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 400
+|Evolved Recharge = 640
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 200~350)<br>
+{{AbilityIcon|Immune to Waves}} [[Immune to Waves]]
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 660 HP
+|val-Normal-Attack Power = 120 damage<br>(39.56 DPS)
+|val-Normal-Attack Range = 275
+|val-Normal-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 26f <sup>0.87s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Normal-Recharge Time = 21.33 ~ 12.53 seconds
+|val-Normal-MaxHP = 11,220 HP
+|val-Normal-MaxAttack = 2,040 damage<br>(672.53 DPS)
+|val-Evolved-Health = 11,220 HP
+|val-Evolved-Attack Power = 2,040 damage<br>(672.53 DPS)
+|val-Evolved-Attack Range = 275
+|val-Evolved-Attack Frequency = 91f <sub>3.03 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 26f <sup>0.87s</sup><br>(27f <sup>0.9s</sup> backswing)
+|val-Evolved-Recharge Time = 21.33 ~ 12.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni458 f00}}
+
+==Trivia==
+*In Japanese, Archer the Cat is アーチャーネコ ''Āchā Neko'' (Archer Cat), while [[Archer Cat (Rare Cat)|Archer Cat]] is ネコアーチャー ''Neko Āchā'' (Cat Archer).
+*Archer the Cat is one of the units to have its description rewritten in [[Version 14.5 Update|Version 14.5]], as "Immune to Wave Attacks" was changed to "Immune to Waves".
+
+==Reference==
+*https://battlecats-db.com/unit/459.html
+
+----
+{{CatNav|Shirou the Cat|Rider the Cat}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Wave Immunity]]

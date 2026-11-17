@@ -1,0 +1,26 @@
+{{#invoke:Navbox|main
+|template = Template:Dot Heroes
+|title = [[Dot Heroes Collaboration Event]]
+|navbox_class = dot-heroes
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[2D Cat (Rare Cat)|2D Cat]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Dot Hero]]
+
+|header3 = Stages
+|group3 = Dot Heroes
+|list3 =
+*[[The Hero to be Born is a Dot]]
+*[[Only One Dot in the World]]
+*[[But Always This Dot]]
+*[[3D But With Dots]]
+*[[Games Are All About Dots]]
+}}<templatestyles src="Dot Heroes/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Dot Heroes]]}}<noinclude>[[Category:Navboxes]]</noinclude>

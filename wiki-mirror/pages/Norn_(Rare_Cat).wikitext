@@ -1,0 +1,125 @@
+{{Unobtainable}}
+'''Norn''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Merc Storia Collaboration Event]]. He was added in [[Version 2.2 Update#Version 2.2.9 Update|Version 2.2.9]].
+
+{{Cat Info
+|ID = 113
+|rarity = RR
+|name1 = Norn
+|name2 = Norn CC
+}}
+
+==Evolution==
+Evolves into '''Norn CC''' at level 10.
+
+==Strategy/Usage==
+Norn is an easily outclassed unit. Thanks to his poor stats, range, and his Single Target, it's much better to use [[Apple Cat (Super Rare Cat)|iCat]] or alternatively, [[Onmyoji Cat (Rare Cat)|Thaumaturge]] and [[Nerd Cat (Super Rare Cat)|Cyberpunk]]. In {{4c}} stages, it is recommended to use [[Pirate Cat (Rare Cat)|Dread Pirate Catley]] or [[Witch Cat (Rare Cat)|Enchantress Cat]] instead, as both are superior in almost every way, from health and uptime to range and spammability.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 113
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni113 f00.png
+|Image2 = Uni113 c00.png
+|Name1 = Norn
+|Desc1 = Joining the fight from Merc Storia!<br>A gentle young lad who loves stargazing.<br>Small chance to Freeze Red.
+|Name2 = Norn CC
+|Desc2 = Joining the fight from Merc Storia!<br>Serene but slightly absentminded youth.<br>Small chance to Freeze Red.
+|Name1 (JP) = ノルン (Norun, Norn)
+|Desc1 (JP) = メルクストーリアから参戦！<br>星を見ることが趣味の穏やかな好青年<br>ごくたまに赤い敵の動きを一瞬止める
+|Transl1 (JP) = Joining the war from Merc Storia!<br>A gentle young man who enjoys looking at the stars<br>Occasionally stops Red enemies in their tracks for a moment
+|Name2 (JP) = ノルンCC (NorunCC, NornCC)
+|Desc2 (JP) = メルクストーリアから参戦！<br>少しうっかりものの穏やかな好青年<br>ごくたまに赤い敵の動きを一瞬止める
+|Transl2 (JP) = Joining the war from Merc Storia!<br>A gentle and nice young man who is a bit careless<br>Occasionally stops Red enemies in their tracks for a moment
+|Name1 (TW) = 諾倫
+|Desc1 (TW) = 來自梅露可物語的戰士！<br>個性文靜，喜歡觀星的好青年<br>偶爾會讓紅色敵人瞬間動作停止
+|Name2 (TW) = 諾倫CC
+|Desc2 (TW) = 來自梅露可物語的戰士！<br>有點糊塗但個性文靜的好青年<br>偶爾會讓紅色敵人瞬間動作停止
+|Name1 (KR) = 노룬
+|Desc1 (KR) = 메르크 스토리아에서 참전!<br>별을 보는 것이 취미인 온화한 성품의 호감형 청년<br>아주 가끔 빨간 적의 움직임을 순간 멈춘다
+|Name2 (KR) = 노룬CC
+|Desc2 (KR) = 메르크 스토리아에서 참전!<br>약간 모자라지만 온화한 성품의 호감형 청년<br>아주 가끔 빨간 적의 움직임을 순간 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 430¢
+*Chapter 2: 645¢
+*Chapter 3: 860¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Norn
+|Normal Base HP = 480
+|Normal Base AP = 195
+|Normal Range = 155
+|Normal Foreswing = 30
+|Normal Attack Cooldown = 63
+|Normal Attack Length = 61
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 430
+|Normal Recharge = 400
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Norn CC
+|Evolved Base HP = 580
+|Evolved Base AP = 255
+|Evolved Range = 155
+|Evolved Foreswing = 30
+|Evolved Attack Cooldown = 63
+|Evolved Attack Length = 61
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 430
+|Evolved Recharge = 400
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Freeze}} 20% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 480 HP
+|val-Normal-Attack Power = 195 damage<br>(62.9 DPS)
+|val-Normal-Attack Range = 155
+|val-Normal-Attack Frequency = 93f <sub>3.1 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 30f <sup>1s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 13.33 ~ 4.53 seconds
+|val-Normal-MaxHP = 8,160 HP
+|val-Normal-MaxAttack = 3,315 damage<br>(1,069.35 DPS)
+|val-Evolved-Health = 9,860 HP
+|val-Evolved-Attack Power = 4,335 damage<br>(1,398.39 DPS)
+|val-Evolved-Attack Range = 155
+|val-Evolved-Attack Frequency = 93f <sub>3.1 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 30f <sup>1s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 13.33 ~ 4.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni113 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/114.html
+
+----
+{{CatNav|Olga|Yoichi}}
+----
+
+{{Merc Storia}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Gacha Cats]]

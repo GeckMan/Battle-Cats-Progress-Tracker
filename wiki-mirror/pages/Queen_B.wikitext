@@ -1,0 +1,117 @@
+'''Queen B''' (森の蜜子, ''Mori no Mitsuko'', '''Mitsuko of the Forest''') is an [[:Category:Alien Enemies|Alien]]/[[:Category:Floating Enemies|Floating]] enemy introduced in the [[:Category:Advent Stages|Advent Stage]] [[Honey Trap (Deadly)|Honey Trap]]. She was added in [[Version 5.4 Update|Version 5.4]]. In [[The Battle Cats Unite!]], she was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Queen B
+|image = E 271.png
+|first appearance = [[Honey Trap (Deadly)|Queen's Coronation]]<br>
+'''ZL''': [[So-So City Center|Sub-chapter 5 - So-So City Center]]
+|money drop = 4,444¢ - 17,554¢
+}}
+
+==Enemy==
+Queen B rapidly fires moderately strong Area Attacks from extreme range that slow cats for 7.4 seconds on hit, and much like [[Cruel Angel Clionel]], her massive blind spot is often heavily covered by support, making most of her fights easier said than done.
+
+==Strategy==
+It is almost mandatory to acquire all [[anti-unstarred Alien Treasures]] from [[Into the Future]], or else you'll be facing off against a '''10 million HP''' monstrosity with an insane '''85,554''' damage. Her fast attack rate only makes this worse, and anything that ''does'' survive is slowed indefinitely, so make sure to get those Treasures! Fast cats such as [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], [[Express Cat (Super Rare Cat)|Maglev Cat]], [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat]] and [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] can easily get into her blind spot and capitalize from there. Unit Speed UP [[Cat Combo]]s help as well.
+
+For cats that are not as fast as [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow]], precise timing is required to get them past Queen B's attack hitbox; the specific bar is for units with over 12 speed, and if you cannot do that, luring her to the base is another option. [[:Category:Cats with Slow Immunity|Cats with slow immunity]] like [[Rover Cat (Rare Cat)|Catellite]] are also useful, since as long as they're slow-immune and can't be moved easily by her damage, Queen B alone won't be able to stop them. Based on calculations, any unit with at least 9 speed can enter her blind spot just in time. If you decide to sacrifice some of your [[Cat Base]] health and lure, you can time your units into Queen B's blind spot that usually wouldn't be able to enter it.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 271
+|Type = [[:Category:Unstarred Alien Enemies|Alien]]/[[:Category:Floating Enemies|Floating]]
+|Image1 = Enemy icon 271.png
+|Name1 = Queen B
+|Desc1 = An exiled princess, now royalty of the mean<br>streets of the big city. Her sad upbringing makes<br>for a nasty temperament... don't get too close<br>or you'll be the victim of her tragic sting.
+|Name1 (JP) = 森の蜜子 (Mori no Mitsuko, Mitsuko of the Forest)
+|Desc1 (JP) = 夜の歓楽街に君臨する女王様。ホステス<br>だった母親蜂に捨てられた悲しい過去を持つ。<br>お客との距離感を大事にしており、不用意に<br>近づく客には毒針をお見舞いして動きを遅くする
+|Transl1 (JP) = Queen who rules over an entertainment district at night.<br>Has a tragic past, abandoned by a mother bee who<br>was a hostess. Values keeping a sense of distance from<br>her patrons; those who approach carelessly will be slowed down by poison stingers.
+|Name1 (TW) = 森蜜子
+|Desc1 (TW) = 君臨夜店區的女王。有著被曾是<br>女公關的母蜂遺棄的悲傷過去。<br>特別重視與客人間的距離，會用毒針<br>刺向不經意靠近的客人使其動作變慢。
+|Name1 (KR) = 여왕벌
+|Desc1 (KR) = 밤의 환락가에 군림하는 여왕님. 호스트였던<br>엄마벌에게 버려진 슬픈 과거를 가지고 있다.<br>손님과의 거리감을 중요하게 생각하며, 쓸데없이<br>치근덕거리는 손님에겐 독침으로 움직임을 느리게 한다
+}}
+
+==Variants==
+{{Variant
+|original = Queen B
+|Queen Mother V
+|Queen B's [[:Category:Relic Enemies|Relic]]/[[:Category:Floating Enemies|Floating]] variant. Deals more damage and, instead of slowing cats, she [[curse]]s them for almost ''2 minutes'', but attacks more slowly and has more knockbacks.
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 5-7: [[So-So City Center]] (150%)
+*Stage 23-6: [[Round-trip to Heaven]] (180%)
+
+===[[Special Events|Event Stages]]===
+*Queen's Coronation: [[Honey Trap (Deadly)]] (100%)
+*[[Queen's Condemnation]]:
+**[[Honey Drip (Deadly)]] (100%)
+**[[Royal Jelly Hell (Merciless)]] (100%)
+*[[The Queen & The Dead]]: [[Honey Trap (Deadly) (Queen & Dead)|Honey Trap (Deadly)]] (100%)
+*[[The Queen & The Maiden]]: [[Honey Trap (Deadly) (Queen & Maiden)|Honey Trap (Deadly)]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 45|Floor 45]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 45|Floor 45]] (100%)
+*[[Golden Tower]]: [[Golden Tower/Floor 45|Floor 45]] (100%)
+*[[Otherworld Colosseum#Half-Off: S. Rare|Otherworld Colosseum]]: [[Round 4 (Half-Off: S. Rare)|Round 4]] (100%)
+*[[Otherworld Colosseum#Cooldown Equality 3|Otherworld Colosseum]]: [[Round 5 (Cooldown Equality 3)|Round 5]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Queen B
+|Health = 1555555
+|Attack Power = 12222
+|Attack Range = 999
+|Attack Type = Area
+|Time Between Attacks = 99
+|Movement Speed = 3
+|Knockback = 5
+|Foreswing = 36
+|Backswing = 45
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 888~1,332)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 222f <sub>7.4 seconds</sub>
+|Element = Alien/Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+271 e.png|Queen B's spritesheet
+IdleQueenB.gif|Queen B's moving animation
+Medal 030.png|Queen B on the ''Uncrowned'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Among the first seven [[:Category:Advent Bosses|Advent Bosses]], Queen B appears to represent the sin of lust. Real queen bees are the sole reproductive females in their hives, and Queen B's debut stage is named [[Honey Trap (Deadly)|Honey Trap]], a stratagem which involves using an attractive person to lure the victim into a false relationship for other underlying purposes. She also happens to be blue, the color traditionally associated with lust.
+**Canto V of Dante's ''[[wikipedia:Inferno (Dante)|Inferno]]'', which focuses on the second circle of Hell (lust), has been called the "canto of the ''queens''" due to the abundance of rulers amongst the lustful. In the second circle, lustful souls are blown about by violent, hurricane-like winds, which might be represented by Queen B's [[:Category:Floating Enemies|Floating]] trait and the [[Brollow]]s in Honey Trap and [[Honey Drip (Deadly)|Honey Drip]].
+*Queen B may be based on various blue bee species such as the [[wikipedia:Osmia lignaria|blue orchard bee]], [[wikipedia:Ceratina cyanea|blue carpenter bee]], [[wikipedia:Osmia caerulescens|blue mason bee]], [[wikipedia:Osmia ribifloris|blueberry bee]], [[wikipedia:Thyreus nitidulus|neon cuckoo bee]], ''[[wikipedia:Aglae|Aglae caerulea]]'', or any number of [[wikipedia:Zonamegilla|blue-banded bees]].
+*Mitsuko is a feminine Japanese name that can be spelled in a number of different ways; most commonly 光子, meaning "shining child". In this case, it's spelled as 蜜子, which means "honey child/nectar child".
+*Her Japanese name may also be a reference to the late actress [[wikipedia:Mitsuko Mori|Mitsuko Mori]] (森 光子). Aside from the punny spelling of Mitsuko mentioned above, the only difference is that Queen B is Mori ''no'' Mitsuko (森の蜜子, "Mitsuko of the Forest") while the actress is just Mori Mitsuko (family names come first in Japanese).
+*The first half of her Japanese description may be a reference to the title track of [[wikipedia:Ringo Sheena|Ringo Sheena]]'s second single, "[[wikipedia:Kabukichō no Joō|Kabukichō no Joō]]". The song is about a woman who becomes the new "Queen" of [[wikipedia:Kabukichō|Kabukichō]] after being abandoned by the previous Queen, her own mother.
+*Since her Japanese description mentions the entertainment industry, she might be a reference to the singer [[wikipedia:Beyoncé|Beyoncé]], whose nickname is Queen B.
+*Most of her stats contain repeating numbers.
+**In particular, her minimum effective range of 888 may play off of how the Japanese word for 8, 八 ''hachi'', sounds exactly like 蜂, meaning honeybee.
+*Although her description says, "don't get too close or you'll be the victim of her tragic sting," she cannot hit units up close. Her Japanese description instead mentions her slowing down those who approach her.
+
+==Reference==
+*https://battlecats-db.com/enemy/273.html
+
+----
+{{EnemyNav|Rampage Cats|Li'l Bun Bun}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Alien Enemies]]
+[[Category:Unstarred Alien Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Advent Bosses]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Zero Legends Enemies]]

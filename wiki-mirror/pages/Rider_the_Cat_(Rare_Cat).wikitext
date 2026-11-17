@@ -1,0 +1,126 @@
+'''Rider the Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event/Gacha Drop|Fate/Stay Night: Heaven's Feel]] collaboration gacha event. She was added in [[Version 8.2 Update|Version 8.2]].
+
+{{Cat Info
+|ID = 459
+|rarity = RR
+|name1 = Rider the Cat
+|name2 = Heroic Spirit Rider Cat
+}}
+
+==Evolution==
+Evolves into '''Heroic Spirit Rider Cat''' at level 10.
+
+==Strategy/Usage==
+This unit acts as sort of a cheaper, more ranged [[A Gift of Cats (Rare Cat)|A Gift of Cats]].
+
+This unit is surprisingly useful in [[Oncoming Maelstrom (Expert)|Oncoming Maelstrom]], due to the huge difference between [[Divine Cyclone]]'s range (70) and Rider's range (190). But remember to stack many of them, since they all die in one hit from the Cyclone. But after you get better crowd controllers for angels she comes irrelevant.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 459
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni459 f00.png
+|Image2 = Uni459 c00.png
+|Name1 = Rider the Cat
+|Desc1 = A Cat who wields dagger and chain with<br>grace. At a slight visual disadvantage thanks<br>to her mask. Chance to Freeze Angels.
+|Name2 = Heroic Spirit Rider Cat
+|Desc2 = Gained command of a legendary lifeform.<br>Can't see much due to the mask and<br>Pegasus' head. Chance to Freeze Angels.
+|Name1 (JP) = ネコライダー (Neko Raidā, Cat Rider)
+|Desc1 (JP) = 鎖を華麗に扱う大人な女性に憧れるネコ<br>目隠しのせいであまり前が見えてない<br>たまに天使の動きを止める
+|Transl1 (JP) = A cat who admires mature women who handle their chains with flair<br>Can't see much ahead because of the blindfold<br>Sometimes stops the Angels from moving
+|Name2 (JP) = 英霊ネコライダー (Eirei Neko Raidā, Heroic Cat Rider)
+|Desc2 (JP) = 伝説の生き物を手に入れたネコ<br>目隠しとペガサスの後頭部でほぼ前が見えていない<br>たまに天使の動きを止める
+|Transl2 (JP) = The cat who got a legendary creature<br>The blindfold and the back of Pegasus' head make it almost impossible to see forward<br>Sometimes stops the Angels from moving
+|Name1 (TW) = Rider貓
+|Desc1 (TW) = 崇拜華麗使用鞭鎖的成熟女性的貓咪<br>因為眼罩擋到有點看不太到前方<br>有時候會讓天使敵人動作停止
+|Name2 (TW) = 英靈Rider貓
+|Desc2 (TW) = 入手傳說生物的貓咪<br>因為眼罩和飛馬的頭部擋到幾乎看不到前方<br>有時候會讓天使敵人動作停止
+|Name1 (KR) = 고양이 라이더
+|Desc1 (KR) = 쇠사슬을 화려하게 다루며 어른스러운 여성을 동경하는 고양이<br>눈가리개 때문에 앞이 잘 보이지 않는다<br>가끔 천사의 움직임을 멈춘다
+|Name2 (KR) = 영령 고양이 라이더
+|Desc2 (KR) = 전설의 생물을 손에 넣은 고양이<br>눈가리개와 페가수스의 뒤통수 때문에 앞이 거의 보이지 않는다<br>가끔 천사의 움직임을 멈춘다
+}}
+
+==Cost==
+*Chapter 1: 380¢
+*Chapter 2: 570¢
+*Chapter 3: 760¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Rider the Cat
+|Normal Base HP = 900
+|Normal Base AP = 200
+|Normal Range = 190
+|Normal Foreswing = 27
+|Normal Attack Cooldown = 75
+|Normal Attack Length = 49
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 380
+|Normal Recharge = 500
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Freeze}} 40% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Heroic Spirit Rider Cat
+|Evolved Base HP = 900
+|Evolved Base AP = 200
+|Evolved Range = 190
+|Evolved Foreswing = 27
+|Evolved Attack Cooldown = 75
+|Evolved Attack Length = 53
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 380
+|Evolved Recharge = 500
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Freeze}} 40% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 900 HP
+|val-Normal-Attack Power = 200 damage<br>(58.82 DPS)
+|val-Normal-Attack Range = 190
+|val-Normal-Attack Frequency = 102f <sub>3.4 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 27f <sup>0.9s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 16.67 ~ 7.87 seconds
+|val-Normal-MaxHP = 15,300 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(1,000 DPS)
+|val-Evolved-Health = 15,300 HP
+|val-Evolved-Attack Power = 3,400 damage<br>(1,000 DPS)
+|val-Evolved-Attack Range = 190
+|val-Evolved-Attack Frequency = 102f <sub>3.4 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 27f <sup>0.9s</sup><br>(26f <sup>0.87s</sup> backswing)
+|val-Evolved-Recharge Time = 16.67 ~ 7.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni459 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/460.html
+
+----
+{{CatNav|Archer the Cat|Kotomine & Gilgamesh Cats}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]

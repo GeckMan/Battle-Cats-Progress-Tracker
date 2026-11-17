@@ -1,0 +1,117 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Futenyan (Enemy)]].''
+'''Futenyan''' is a [[:Category:Rare Cats|Rare Cat]] that was introduced in [[Version 5.3 Update|Version 5.3]] and can be obtained by beating any stage in [[Y! Mobile Collaboration Event#Futenyan Appears|Futenyan Appears]] during the [[Y! Mobile Collaboration Event]].
+
+{{Cat Info
+|ID = 281
+|rarity = RR
+|name1 = Futenyan
+|name2 = Massaging Futenyan
+}}
+
+==Evolution==
+Evolves into '''Massaging Futenyan''' at level 10.
+
+==Strategy/Usage==
+This unit has pretty much no use at all, regardless of where in the game you're on. On early game, its stats are very poor, its upgrade cost is too high to improve his usage and there are always better picks for his role such as [[Tank Cat (Normal Cat)|Tank Cat]], [[Axe Cat (Normal Cat)|Axe Cat]], and [[Gross Cat (Normal Cat)|Gross Cat]]. In later game, his pathetic range makes him nothing but simply a meatshield, which due to his speed and cost gets easily outclassed by other more common meatshields, such as [[Cat (Normal Cat)|Cat]], [[Tank Cat (Normal Cat)|Tank Cat]], and their [[Crazed Cat (Super Rare Cat)|Crazed]] [[Crazed Tank Cat (Super Rare Cat)|Counterparts]].
+
+At least it can help to get some [[User Rank]], if you don't have any cheaper (In terms of upgrade cost) or better unit to upgrade, that is. Even with Strong against Red, Futenyan manages to have so low stats that there's no point in investing in it; at level 30, it can barely manage fighting a [[Pigge]].
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 281
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni281 f00.png
+|Image2 = Uni281 c00.png
+|Name1 (JP) = ふてニャン (Futenyan)
+|Desc1 (JP) = ワイモバイルからの参戦！<br>ふてぶてしい態度で、ふてたことをつぶやくネコ<br>赤い敵にめっぽう強い
+|Transl1 (JP) = Coming from Ymobile!<br>Cat with a sulky attitude and mumbles in a huff<br>Very strong against Red enemies
+|Name2 (JP) = モミモミふてニャン (Momimomi Futenyan, Massage Futenyan)
+|Desc2 (JP) = ワイモバイルからの参戦！<br>月イチで、マッサージ店に行くこともある<br>赤い敵にめっぽう強い
+|Transl2 (JP) = Coming from Ymobile!<br>Monthly, sometimes go to a massage parlour<br>Very strong against Red enemies
+}}
+
+==Cost==
+*Chapter 1: 300円
+*Chapter 2: 450円
+*Chapter 3: 600円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Futenyan
+|Normal Base HP = 300
+|Normal Base AP = 87
+|Normal Range = 150
+|Normal Foreswing = 27
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 66
+|Normal Speed = 6
+|Normal KB = 2
+|Normal Cost = 300
+|Normal Recharge = 360
+|Normal Attack Type = Single
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Massaging Futenyan
+|Evolved Base HP = 300
+|Evolved Base AP = 59
+|Evolved Range = 150
+|Evolved Foreswing = 27
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 66
+|Evolved Speed = 12
+|Evolved KB = 2
+|Evolved Cost = 300
+|Evolved Recharge = 360
+|Evolved Attack Type = Single
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 300 HP
+|val-Normal-Attack Power = 87 damage<br>(39.55 DPS)
+|val-Normal-Attack Range = 150
+|val-Normal-Attack Frequency = 66f <sub>2.2 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 2 times
+|val-Normal-Attack Animation = 27f <sup>0.9s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Normal-Recharge Time = 12 ~ 3.2 seconds
+|val-Normal-MaxHP = 5,100 HP
+|val-Normal-MaxAttack = 1,480 damage<br>(672.73 DPS)
+|val-Evolved-Health = 5,100 HP
+|val-Evolved-Attack Power = 1,002 damage<br>(455.45 DPS)
+|val-Evolved-Attack Range = 150
+|val-Evolved-Attack Frequency = 66f <sub>2.2 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 2 times
+|val-Evolved-Attack Animation = 27f <sup>0.9s</sup><br>(39f <sup>1.3s</sup> backswing)
+|val-Evolved-Recharge Time = 12 ~ 3.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni281 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/282.html
+
+----
+{{CatNav|Fortressy|Awa-Odori Cat}}
+----
+
+{{Y! Mobile}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

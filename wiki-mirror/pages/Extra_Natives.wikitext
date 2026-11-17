@@ -1,0 +1,86 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Lutrinae Gokurakko|Jackie Peng|Hippoe|Kang Roo|R.Ost|Relic Doge|Ururun Wolf}}
+'''Extra Natives''' is the first stage in [[The Ururuvu Journals]]. [[Lutrinae Gokurakko]] is introduced here.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn003 00 nd en.png]]
+|stage location = [[File:Mapname003 nd en.png]]
+|energy = 300
+|enemy castle hp = 1,200,000 HP
+|enemies = {{Magnification|Doge|4,000%
+|Snache|4,000%
+|Those Guys|4,000%
+|Lutrinae Gokurakko|250%
+|Jackie Peng|4,000%
+|Hippoe|4,000%
+|Kang Roo|4,000%
+|R.Ost|300%
+|Relic Doge|150%}}
+|boss = {{Magnification|Ururun Wolf|300/500%}}
+|enemies2 = {{Magnification|Doge|4,800%
+|Snache|4,800%
+|Those Guys|4,800%
+|Lutrinae Gokurakko|300%
+|Jackie Peng|4,800%
+|Hippoe|4,800%
+|Kang Roo|4,800%
+|R.Ost|360%
+|Relic Doge|180%}}
+|boss2 = {{Magnification|Ururun Wolf|360/600%}}
+|treasure = - [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 17,100 XP
+|width = 4,200
+|max enemies = 20
+|jpname = Extra Natives
+|script = エキストラ原住民
+|romaji = Ekisutora Genjūmin
+|star = 2
+|sub-chapter = [[The Ururuvu Journals]]
+|difficulty = ★11
+|prev stage = N/A
+|next stage = [[Hard-Luck Homestay]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*Infinite [[Snache]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*Infinite [[Those Guys]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*3 [[Lutrinae Gokurakko]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 50 seconds<sup>1,500f</sup>.
+*3 [[Jackie Peng]]s spawn after 23.33 seconds<sup>700f</sup>, delay 36.67~43.33 seconds<sup>1,100f~1,300f</sup>.
+*4 [[Hippoe]]s spawn after 23.33 seconds<sup>700f</sup>, delay 36.67~43.33 seconds<sup>1,100f~1,300f</sup>.
+*6 [[Kang Roo]]s spawn after 23.33 seconds<sup>700f</sup>, delay 36.67~43.33 seconds<sup>1,100f~1,300f</sup>.
+*1 [[R.Ost]] spawns after 100 seconds<sup>3,000f</sup>.
+*5 [[Relic Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*1 [[Ururun Wolf (Enemy)|Ururun Wolf]] spawns as the boss after 33.33 seconds<sup>1,000f</sup>.
+*When the base reaches 90% HP:
+**2 [[Relic Doge]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**1 [[Lutrinae Gokurakko]] spawns.
+
+==Strategy==
+The general idea of this stage, much like [[Heavenly Tower/Floor 34|Heavenly Tower Floor 34]]/[[Infernal Tower/Floor 34|Infernal Tower Floor 34]], is to outlast and defeat all other supporting threats then focus on taking down Ururun, as the only unlimited enemies are some weak peons. Although Relic Doge and Kang Roo are both equally dangerous, you should primarily reserve your counters for R.Ost and Gokurakko due to the short stage length and how hard they can push.
+
+With the tight startoff, you may want to consider using a Rich Cat if you believe you can't obtain enough resources before Ururun spawns.
+
+==='''Recommended Units'''===
+*[[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]]: An accessible and cheap [[Wave Attack|wave]] unit that's useful for removing small peons and to occasionally chip Ururun while the frontline enemies are still present.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: Boulder and Research [[Cat Combo]]s are pretty much necessary due to the presence of R.Ost, to cover any gaps in your defense. Its extreme health and immunity to debuffs means neither of the two main threats will be able to advance, but should not be your only means of defense.
+*[[Rocker Cat (Rare Cat)|Ramen Cat]]: By this point in the game, you may very well have Ramen heavily boosted with + levels and presumably health [[Talents]]. Ramen primarily sees use against Gokurakko despite said enemy's Knockback ability, as the extreme amount of pressure in the frontline means most other normal meatshields will be of little use. Like Boulder, Ramen greatly benefits from Research Combos if your economy can sustain them.
+*[[Ancient Egg: N005 (Special Cat)|Hitman Cat]]: Hitman Cat deals massive damage against the R.Ost and Ururun Wolf and can use the many peons as a stepping stone to land hits on them for free.
+*[[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Can Can's high damage and Extra Money and Move Speed Up [[Talents]] make it particularly suited for the beginning, where you can quickly defeat Kang Roo or Jackie Peng to essentially max out your [[Worker Cat]]. Can Can can also be used to snipe Relic Doges since they have lower range than the main threats.
+*[[Food Stall Cat (Rare Cat)|Cafeteria Cat]]: Cafeteria Cat deals impressive damage to Gokurakko on top of outranging them and having a chance to curse them. As long as they're protected with Ramen Cat, they can deal with Gokurakko in just a few hits.
+*[[Brainwashed Tank Cat (Super Rare Cat)|Brainwashed Eraser Cat]]: Brainwashed Eraser is similar to Ramen Cat, except with lower base health in exchange for being able to tank much more hits against the R.Ost and Ururun herself. The Relic Doges spawn infrequently enough to not be a problem, but they will be killed by Gokurakko in seconds.
+
+==='''Recommended Ubers'''===
+*[[Lasvoss (Uber Rare Cat)|Lasvoss Reborn]]: R.Ost and Gokurakko are both outranged by Lasvoss, who can deal considerable damage (nearly 250K at level 50, approximately a quarter of their health) to them both even without Strengthen or Savage Blows, and when either of these abilities come into play he can be much more destructive, able to essentially one-shot either. His Immunity to Knockback means Gokurakko cannot interrupt his animation, either. However, both of his damage-boosting abilities are unreliable and he is expensive, so make sure he won't hurt your economy much before sending him.
+*[[Tecoluga (Uber Rare Cat)|Lufalan Pasalan]]: As long as you keep the threats away with force and avoid using [[:Category:Surge Attack Cats|Surge Attackers]], Lufalan should be safe from all of the threats. Its extreme range and very high damage allows it to comfortably demolish R.Ost or Gokurakko, both of which have less range than Ururun and will tend to move ahead further. Its only real weakness, apart from a very high cooldown, is its single target, and as such Relic Doges or other minor threats can get in the way. You can play it safe by sending it only when the main threats are close enough so Lufalan gets to exploit its range advantage.
+*[[Shadow Gao (Uber Rare Cat)|Diabolic Gao]]/[[D'arktanyan (Uber Rare Cat)|Valiant D'arktanyan]]: Both have ways to attack Ururun Wolf effectively and can help against R.Ost with their damage-focused [[:Category:Anti-Traitless Cats|anti-Traitless]] abilities so more space can be reserved for fighting the [[:Category:Angel Enemies|Angels]].
+
+==Trivia==
+*Extra Natives is the first non-event stage to contain an enemy with separate health and attack magnifications.
+
+==Reference==
+*https://battlecats-db.com/stage/s34003-01.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 102 Stages]]
+[[Category:Zero Legends Stages]]

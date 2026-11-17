@@ -1,0 +1,131 @@
+{{TranslationNeeded}}
+'''Tails Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a stamp reward during the [[Sonic the Hedgehog Collaboration Event]]. It was added in [[Version 14.4 Update|Version 14.4]] for [[Nyanko Daisensou|BJCP]] and [[Version 14.5 Update|Version 14.5]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 808
+|rarity = EX
+|name1 = Tails Cat
+|name2 = Tails Cat CC
+}}
+
+==Evolution==
+Evolves into '''Tails Cat CC''' at level 10.
+
+==Strategy/Usage==
+Tails Cat isn't exactly the best at slowing [[:Category:Angel Enemies|Angels]] due to his first form having a 50% chance to slow them for 2 seconds. His second form is better because of its guaranteed chance to slow for 2.4 seconds post-Treasures, but that is still a 48% uptime, which makes him unviable once [[Bishop Cat (Rare Cat)|Sanzo's]] Target Angel [[Talents|Talent]] is unlocked. The closest niche for this unit is a no-gacha counter to [[Angelic Sleipnir]] and [[St. Dober]], but that's about it.
+
+{{Job|Classification = Crowd-Controller & User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 808
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni808 f00.png
+|Image2 = Uni808 c00.png
+|Name1 = Tails Cat
+|Desc1 = Cat who adores a two-tailed flying fox. Currently on a<br>diet to achieve a flying altitude higher than 0 feet.<br>May Slow Angels.
+|Name2 = Tails Cat CC
+|Desc2 = Cat who always ends up with spare parts<br>after reassembling the machines they tinker with.<br>100% chance to Slow Angels.
+|Name1 (JP) = ネコテイルス (Neko Teiruzu, Tails Cat)
+|Desc1 (JP) = 2本のシッポで空を飛ぶ子ギツネに憧れるネコ<br>飛行高度0センチから高みを目指してダイエット中<br>たまに天使の動きを遅くする
+|Transl1 (JP) = ?
+|Name2 (JP) = ネコテイルスCC (Neko Teiruzu Shīshī, Tails Cat CC)
+|Desc2 (JP) = 機械いじりとメカの開発に没頭するネコ<br>分解した物を組み直すたびに余る部品が1個増える<br>必ず天使の動きを遅くする
+|Transl2 (JP) = ?
+|Name1 (TW) = 塔爾斯貓
+|Desc1 (TW) = 對能用兩根尾巴飛翔的小狐狸充滿憧憬的貓咪<br>為了讓飛行高度從0公分開始提升正在努力減肥<br>有時候會使天使敵人的動作變慢
+|Name2 (TW) = 塔爾斯貓CC
+|Desc2 (TW) = 沉迷於機器研究和開發的貓咪。每次拆解<br>並重新組裝機器後，就會多出一個零件<br>必定使天使敵人動作變慢
+|Name1 (KR) = 고양이 테일즈
+|Desc1 (KR) = 2개의 꼬리로 하늘을 나는 꼬마 여우를 동경하는 고양이<br>비행 고도 0cm보다 더 높은 곳을 목표로 다이어트 중<br>가끔 천사의 움직임을 느리게 한다
+|Name2 (KR) = 고양이 테일즈CC
+|Desc2 (KR) = 기계를 다루는 것과 메카 개발에 몰두하는 고양이<br>분해한 물건을 재조립할 때마다 남는 부품이 하나씩 늘어난다<br>반드시 천사의 움직임을 느리게 한다
+}}
+
+==Cost==
+*Chapter 1: 380¢
+*Chapter 2: 570¢
+*Chapter 3: 760¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tails Cat
+|Normal Base HP = 350
+|Normal Base AP = 50
+|Normal Range = 380
+|Normal Foreswing = 31
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 71
+|Normal Speed = 30
+|Normal KB = 3
+|Normal Cost = 380
+|Normal Recharge = 550
+|Normal Attack Type = Single
+|Normal Targets = Angel
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 280~505)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Tails Cat CC
+|Evolved Base HP = 400
+|Evolved Base AP = 70
+|Evolved Range = 380
+|Evolved Foreswing = 31
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 71
+|Evolved Speed = 30
+|Evolved KB = 3
+|Evolved Cost = 380
+|Evolved Recharge = 550
+|Evolved Attack Type = Single
+|Evolved Targets = Angel
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 280~505)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 350 HP
+|val-Normal-Attack Power = 50 damage<br>(10 DPS)
+|val-Normal-Attack Range = 380
+|val-Normal-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 31f <sup>1.03s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Normal-Recharge Time = 18.33 ~ 9.53 seconds
+|val-Normal-MaxHP = 5,950 HP
+|val-Normal-MaxAttack = 850 damage<br>(170 DPS)
+|val-Evolved-Health = 6,800 HP
+|val-Evolved-Attack Power = 1,190 damage<br>(238 DPS)
+|val-Evolved-Attack Range = 380
+|val-Evolved-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(40f <sup>1.33s</sup> backswing)
+|val-Evolved-Recharge Time = 18.33 ~ 9.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni808 f00}}
+
+==Trivia==
+*Tails Cat appears to reference Tails' design from ''[[wikipedia:Sonic Boom (TV series)|Sonic Boom]]'' between the wrench they hold in their Normal Form and the goggles they wear in their Evolved Form.
+
+==Reference==
+*https://battlecats-db.com/unit/809.html
+
+----
+{{CatNav|Sonic Cat|Shadow Cat}}
+----
+
+{{Sonic the Hedgehog}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Slow ability]]

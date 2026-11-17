@@ -1,0 +1,25 @@
+{{#invoke:Navbox|main
+|template = Template:Betakkuma
+|title = [[Betakkuma Collaboration Event]]
+|navbox_class = betakkuma
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Nekokkuma (Special Cat)|Nekokkuma]]
+*[[Betakkuma (Rare Cat)|Betakkuma]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Betakkuma (Enemy)|Betakkuma]]
+
+|header3 = Stages
+|group3 = Groove Like A Bear
+|list3 =
+*[[Weird]]
+*[[Furious]]
+*[[Funky]]
+}}<templatestyles src="Betakkuma/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Betakkuma]]}}<noinclude>[[Category:Navboxes]]</noinclude>

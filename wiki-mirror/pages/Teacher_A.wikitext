@@ -1,0 +1,101 @@
+'''Teacher A''' (高校教師, ''Kōkō Kyōshi'', '''High School Teacher''') is a [[:Category:Traitless Enemies|Traitless]] variant of [[Master A.]] that appears in [[Special Events|Event Stages]]. It was added in [[Version 2.2 Update#Version 2.2.3 Update|Version 2.2.3]].
+
+{{Enemy Info
+|name = Teacher A
+|image = E 084.png
+|appearance = [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]<br>
+[[April Gauntlet]]<br>
+[[Special Thanks! (Insane)]]
+|money drop = 2000¢ - 7900¢
+}}
+
+==Enemy==
+Teacher A has lower range than [[Master A.]] (351<451) and is vulnerable to backliners. He moves faster, deals more damage, and has 20% chance to slow targets on hit.
+
+==Strategy==
+As mentioned before, Teacher A's reduced range makes him much more vulnerable to traditional backliners, which can now safely engage him without being hit. His increased damage and slow ability are generally insignificant, as he rarely appears at a sufficiently high magnification to be borderline threatening.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]:
+**[[P.S Cat Loves You]] (100%)
+**[[100 Cat Dates]] (150%)
+**[[Lament]] (200%)
+**[[I L U]] (100%)
+**[[Let's Start Over]] (350%)
+*Monthly Event All-Stars Special Celebration!: [[Special Thanks! (Insane)]] (200%)
+*[[Summer Break Cats#Summer Lesson|Summer Lesson]]:
+**[[c2 = a2 + b2|c² = a² + b²]] (100%)
+**[[N2+3H2→2NH3|N₂+3H₂→2NH₃]] (300%)
+*[[Spring for Sensei (Monthly Event)|Spring for Sensei]]:
+**[[You in a Petri Dish]] (400%)
+**[[U + Me = Photosynthesis]] (600%)
+*[[Total War: Spring Special]]:
+**[[Rites of Spring: Basic (Veteran)]] (350%)
+**[[Rites of Spring: Advanced (Insane)]] (500%)
+**[[Rites of Spring: Exalted (Deadly)]] (600%)
+**[[Rites of Spring: Supreme (Deadly)]] (800%)
+*[[War on Valentines#Bittersweet Valentine's|Bittersweet Valentine's]]:
+**[[Choco Aplenty (For Others)]] (600%)
+**[[I Actually Hate Chocolate]] (800%)
+*[[Traitless Citadel]]: [[Traitless Citadel/Floor 7|Floor 7]] (300%)
+*[[April Gauntlet]]:
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.1]] (150%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.2]] (200%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.3]] (250%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.4]] (300%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.5]] (350%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.6]] (400%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.7]] (450%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.8]] (500%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.9]] (550%)
+**[[April Gauntlet/Teacher! Lv.1~10|Teacher! Lv.10]] (600%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Teacher A
+|Health = 40000
+|Attack Power = 657
+|Attack Range = 351
+|Attack Type = Area
+|Time Between Attacks = 24
+|Movement Speed = 11
+|Knockback = 4
+|Foreswing = 1
+|Backswing = 23
+|Ability = {{AbilityIcon|Slow}} 20% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+084 e.png|Teacher A's spritesheet
+IdleTeacherA.gif|Teacher A's moving animation
+Medal 041.png|Teacher A on the ''Young Love'' [[Meow Medals|Meow Medal]]
+Medal 080.png|Teacher A, [[Bears Be Bare]] and [[Samurai Doggy]] on the ''Rites of Spring'' Meow Medal
+ペコバラ 2.png|By ペコバラ
+FamCom 20140730.jpg|Teacher A in the 30/7/2014 [[Nyanko Daisensou 4Koma & Strategy App|4Koma]]
+Valentines Day 2019.png|2019 Valentine's Day Illustration
+</gallery>
+
+==Trivia==
+*Teacher A's Japanese name, Kōkō Kyōshi (高校教師, "High School Teacher"), is a possible reference to the [[wikipedia:Kōkō Kyōshi|television drama]] of the same name. The main characters of ''Kōkō Kyōshi'' are Takao Hamura, a seemingly nice new teacher at an all-girls school, and his dearest student, Mayu Ninomiya; these two may be represented by Teacher A and [[Maiden Cat (Rare Cat)|Maiden Cat]] in [[Teacher! It's Spring! (Monthly Event)|Teacher! It's Spring!]]'s event poster, which describes Teacher A as a stylish rookie teacher. All the cats in [[April Gauntlet]]'s event poster have bows on their heads, implying that Teacher A works at an all-girls school like Hamura.
+*In Teacher! It's Spring!'s [[Media:Eve l 004 en.png|event poster]], Teacher A is referred to as "Teacher A.", with a period at the end of his name, but in later appearances such as April Gauntlet's event poster and the [[Enemy Guide]] entry added in [[Version 13.3 Update|Version 13.3]], his name does not have a period.
+
+==Reference==
+*https://battlecats-db.com/enemy/086.html
+
+----
+{{EnemyNav|Crazed Titan Cat|Samurai Doggy}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Area Attack Enemies]]

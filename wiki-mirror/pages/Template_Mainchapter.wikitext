@@ -1,0 +1,56 @@
+<includeonly><onlyinclude><div style="display: inline-block; text-align: center; line-height: 1em;"><!--
+--><div class="floatnone noresize" style="position: relative; width: 640px; margin-left:auto; margin-right:auto; overflow-y: hidden;"><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 134px; top: 121px; padding: 0; border-radius: 0px;"><br /><!--
+	--><span style="white-space:nowrap;"><span style=" text-align: right; color: #FFFFFF; text-shadow: -1px 0 black, 0px 1px black, 1px 0 black, 0 -1px black; font-size: 14pt;">{{BCNum|{{{3|}}}|mode=white-med|size=18}}</span></span></div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 345px; top: 121px; padding: 0; border-radius: 0px;"><br /><!--
+	--><span style="white-space:nowrap;"><span style=" text-align: right; color: #FFFFFF; text-shadow: -1px 0 black, 0px 1px black, 1px 0 black, 0 -1px black; font-size: 14pt;">{{BCNum|{{{4|}}}|mode=white-med|size=18}}</span></span></div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 556px; top: 121px; padding: 0; border-radius: 0px;"><br /><!--
+	--><span style="white-space:nowrap;"><span style=" text-align: right; color: #FFFFFF; text-shadow: -1px 0 black, 0px 1px black, 1px 0 black, 0 -1px black; font-size: 14pt;">{{BCNum|{{{5|}}}|mode=white-med|size=18}}</span></span></div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 103px; top: 4px; padding: 0; border-radius: 0px;">[[File:Outbreak {{{6|}}}.png|105px|link=Zombie Outbreaks|alt=|]]</div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 315px; top: 4px; padding: 0; border-radius: 0px;">[[File:Outbreak {{{7|}}}.png|105px|link=Zombie Outbreaks|alt=|]]</div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 527px; top: 4px; padding: 0; border-radius: 0px;">[[File:Outbreak {{{8|}}}.png|105px|link=Zombie Outbreaks|alt=|]]</div><!--
+--><div style="display: inline-block; overflow: hidden; position: absolute; left: 273px; top: 254px; padding: 0; border-radius: 0px;"><br /><!--
+	--><span style="white-space:nowrap;"><span style=" text-align: right; color: #FFFFFF; text-shadow: -1px 0 black, 0px 1px black, 1px 0 black, 0 -1px black; font-size: 23pt;">{{BCNum|{{{9|}}}|mode=white-med|size=28}}</span></span></div><!--
+	-->[[File:{{{1|}}} {{{2|}}}.png|640px|link=Main Chapters Levels|alt=|]]<!--
+--></div><!--
+--></div>
+</onlyinclude></includeonly>
+{{Mainchapter|EoC|4|48|48|48|1|1|1|50}}<br>
+<nowiki>{{Mainchapter|EoC|4|48|48|48|1|1|1|50}}</nowiki><br>
+<nowiki>{{Mainchapter|Chapter|0/1/2/3/4|Treasure 1|Treasure 2|Treasure 3|Outbreak 1|Outbreak 2|Outbreak 3/Filibuster|Invasions}}</nowiki><br>
+
+==Chapter==
+*EoC - [[Empire of Cats]]
+*ItF - [[Into the Future]]
+*CotC - [[Cats of the Cosmos]]
+
+==0/1/2/3/4==
+*0 - None unlocked, only applies for ItF and CotC
+*1 - Chapter 1 unlocked
+*2 - Chapter 2 unlocked
+*3 - Chapter 3 unlocked
+*4 - Aku Realms unlocked (Only applies to EoC as of {{CurrentVer}})
+
+==Treasure==
+*The amount of superior treasure obtained
+
+==Outbreak==
+*0 - No outbreaks active
+*1 - Outbreaks yet to be completed
+*2 - All outbreaks completed
+*3 - Filibuster, only applies for CotC
+
+==Invasions==
+*The amount of Aku invasions beaten
+
+==Usage==
+<pre>
+{{Mainchapter|EoC|4|48|48|48|1|1|1|50}}
+</pre>
+will show:
+{| style="padding-bottom: 20px; width: 80%; align: left;"
+|-
+| {{Mainchapter|EoC|4|48|48|48|2|2|2|50}}
+|}
+
+[[Category:Cosmetic templates]]

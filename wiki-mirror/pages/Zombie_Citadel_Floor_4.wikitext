@@ -1,0 +1,48 @@
+{{EnemiesAppearing|Squire Rel|Zroco|Kang Roo|Zigge|Zory}}
+:''Not to be confused with the [[Heavenly Tower/Floor 4|Heavenly Tower]] or [[Infernal Tower/Floor 4|Infernal Tower]] versions of Floor 4.''
+'''Floor 4''' is the fourth floor of [[Zombie Citadel]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 03 v en.png]]
+|stage location = [[File:Mapname005 v en.png]]
+|energy = 120
+|enemy castle hp = 90,000 HP
+|enemies = {{Magnification|Squire Rel|400%
+|Zroco|30%
+|Kang Roo|400%
+|Zigge|30%
+|Zory|30%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|treasure = - 250,000 XP (100%, 1 time)
+|XP = 2,280 XP
+|width = 5,000
+|max enemies = 15
+|jpname = 4th Floor
+|script = 4階
+|romaji = 4 Kai
+|star = 1
+|event-chapter = [[Zombie Citadel]]
+|difficulty = ★4
+|prev stage = [[Zombie Citadel/Floor 3|Floor 3]]
+|next stage = [[Zombie Citadel/Floor 5|Floor 5]]
+}}
+
+==Battleground==
+*20 [[Squire Rel]]s (400%) spawn after 5 seconds<sup>150f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*3 [[Zroco]]s spawn after 10 seconds<sup>300f</sup>, delay 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] (100%) spawns as the boss.
+**3 [[Kang Roo]]s spawn, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+**3 [[Zroco]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**2 [[Zigge]]s spawn, delay 33.33 seconds<sup>1,000f</sup>.
+**1 [[Zory]] spawns.
+
+==Strategy==
+An easy stage that any unit can beat. Use any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s07005-04.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]

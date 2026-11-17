@@ -1,0 +1,128 @@
+{{Unobtainable}}
+:''This article is about the Cat Unit. For the enemy, see [[Pikotaro (Enemy)]].''
+'''PIKOTARO''' is a [[:Category:Rare Cats|Rare Cat]] added in [[Version 5.7 Update|Version 5.7]] and he can be unlocked by beating the [[PPAP|Pikotaro collaboration stage]] during the collaboration period.
+
+{{Cat Info
+|ID = 315
+|rarity = RR
+|name1 = PIKOTARO
+|name2 = NEKOTARO
+}}
+
+==Evolution==
+Evolves into '''NEKOTARO''' at level 10.
+
+==Strategy/Usage==
+Due to horrid stats, very long recharge time, long attack rate and especially animation and low freeze chance and uptime it is not recommended to use this cat and better use much more reliable and spammable cats with same ability like [[Evil Cat (Rare Cat)|Evil Cat]] and [[Apple Cat (Super Rare Cat)|iCat]].
+
+However, if you are generally willing to use this, then it's best you attempt to get a stack of him going due to him having Area Attack, which therefore increases his chance of freezing and makes PIKOTARO somewhat useful, despite being replacable.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 315
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni315 f00.png
+|Image2 = Uni315 c00.png
+|Name1 = PIKOTARO
+|Desc1 = All it takes is Pens, a Pineapple and an<br>Apple to make the world smile. The man of<br>legend, newly married to a feisty 78-year old.
+|Name2 = NEKOTARO
+|Desc2 = A stylish Cat who always keeps an eye out<br>on new internet trends. Striving to be the most<br>popular through perfect imitation.
+|Name1 (JP) = ピコ太郎 (Piko Tarō)
+|Desc1 (JP) = ペンとパイナップルとリンゴで世界を熱狂させる<br>伝説の男。新婚で78歳の妻がいる。<br>赤い敵の動きをたまに止める(範囲攻撃)
+|Transl1 (JP) = Encourage the world with pen, pineapple and apple<br>The legendary man. Has a 78-year-old wife with a newlywed marriage.<br>Sometimes stop the movement of red enemies (range attack)
+|Name2 (JP) = ネコ太郎 (Neko Tarō)
+|Desc2 (JP) = 人気者になりたくて流行りに乗ったネコ<br>完コピしたダンスで人気動画NO.1を目指す<br>赤い敵の動きをたまに止める(範囲攻撃)
+|Transl2 (JP) = A cat who wanted to become a popular person and took on a fashion<br>Sometimes stop the movement of the red enemy aiming for<br>popular video No. 1 with a completely copied dance (range attack)
+|Name1 (TW) = PIKO太郎
+|Desc1 (TW) = 以筆與鳳梨與蘋果讓全球陷入狂熱的傳奇男子<br>剛與芳齡七十八的妻子新婚。<br>有時候可讓紅色敵人的動作停止(範圍攻擊)
+|Name2 (TW) = 貓咪太郎
+|Desc2 (TW) = 太想紅而搭上這股流行舞蹈熱潮的貓咪。<br>想靠維妙維肖的模仿影片來衝高點閱率。<br>有時候可讓紅色敵人的動作停止(範圍攻擊)
+|Name1 (KR) = 피코 타로
+|Desc1 (KR) = 펜 파인애플 애플 펜으로 세계를 열광시킨<br>전설의 남자. 신혼이며 78세의 부인이 있다.<br>빨간 적의 움직임을 가끔 멈춘다 (범위 공격)
+|Name2 (KR) = 고양이 타로
+|Desc2 (KR) = 인기인이 되고 싶어서 유행을 타는 고양이<br>완벽한 댄스 카피로 인기영상 NO.1을 노린다.<br>빨간 적의 움직임을 가끔 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 600¢
+*Chapter 2: 900¢
+*Chapter 3: 1,200¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = PIKOTARO
+|Normal Base HP = 600
+|Normal Base AP = 300
+|Normal Range = 200
+|Normal Foreswing = 145
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 224
+|Normal Speed = 6
+|Normal KB = 3
+|Normal Cost = 600
+|Normal Recharge = 1200
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Evolved Name = NEKOTARO
+|Evolved Base HP = 600
+|Evolved Base AP = 300
+|Evolved Range = 200
+|Evolved Foreswing = 145
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 224
+|Evolved Speed = 6
+|Evolved KB = 3
+|Evolved Cost = 600
+|Evolved Recharge = 1200
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 90f <sub>3 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 600 HP
+|val-Normal-Attack Power = 300 damage<br>(40.18 DPS)
+|val-Normal-Attack Range = 200
+|val-Normal-Attack Frequency = 224f <sub>7.47 seconds</sub>
+|val-Normal-Movement Speed = 6
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 145f <sup>4.83s</sup><br>(79f <sup>2.63s</sup> backswing)
+|val-Normal-Recharge Time = 40 ~ 31.2 seconds
+|val-Normal-MaxHP = 10,200 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(683.04 DPS)
+|val-Evolved-Health = 10,200 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(683.04 DPS)
+|val-Evolved-Attack Range = 200
+|val-Evolved-Attack Frequency = 224f <sub>7.47 seconds</sub>
+|val-Evolved-Movement Speed = 6
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 145f <sup>4.83s</sup><br>(79f <sup>2.63s</sup> backswing)
+|val-Evolved-Recharge Time = 40 ~ 31.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni315 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/316.html
+
+----
+{{CatNav|Years-End Neneko|Wrathful Poseidon}}
+----
+
+{{Pikotaro}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Item Drop Cats]]

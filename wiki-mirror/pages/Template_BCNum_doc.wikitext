@@ -1,0 +1,36 @@
+{{Documentation}}
+This template displays numbers using in-game images. Any non-numeric characters are omitted.
+
+==Parameters==
+<pre>
+{{BCNum|number|size=|mode=}}
+</pre>
+
+<code>number</code> is the number to display. The parameter <code>size</code> specifies the height in pixels for the resulting number. <code>mode</code> is a string specifying the type of number to display. If omitted, the <code>size</code> parameter defaults to the size in the initial spritesheet, and <code>mode</code> becomes <code>white-med</code>. Below shows the different modes:
+
+{| class="article-table"
+|'''Mode'''
+|'''Wikitext'''
+|'''Result'''
+|-
+|white-sm
+|<nowiki>{{BCNum|0123456789|mode=white-sm}}</nowiki>
+|{{BCNum|0123456789|mode=white-sm}}
+|-
+|white-med
+|<nowiki>{{BCNum|0123456789|mode=white-med}}</nowiki>
+|{{BCNum|0123456789|mode=white-med}}
+|-
+|orange-lg
+|<nowiki>{{BCNum|0123456789|mode=orange-lg}}</nowiki>
+|{{BCNum|0123456789|mode=orange-lg}}
+|-
+|orange-xl
+|<nowiki>{{BCNum|0123456789|mode=orange-xl}}</nowiki>
+|{{BCNum|0123456789|mode=orange-xl}}
+|}
+
+<!--Storage for spritesheets used here-->
+<div class="nomobile" style="visibility: hidden; position: absolute;">
+[[File:OrangeNumbers.png]]
+</div>

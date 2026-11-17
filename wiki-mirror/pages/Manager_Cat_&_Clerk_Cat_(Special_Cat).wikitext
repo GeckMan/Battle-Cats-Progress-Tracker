@@ -1,0 +1,102 @@
+{{TranslationNeeded}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Manager Cat & Clerk Cat (Enemy)]].''
+'''Manager Cat & Clerk Cat''' are a [[:Category:Special Cats|Special Cat]] that can be obtained for free after registering yourself in the [https://www.nyanko-daishoten.jp/ Nyanko Daishoten Online] website, then clicking on the designated button or banner on the site to receive them in-game. They were added in [[Version 14.7 Update|Version 14.7]].
+
+{{Cat Info
+|ID = 823
+|rarity = EX
+|name1 = Manager Cat & Clerk Cat
+|name2 = Manager Cat & Clerk Cat CC
+}}
+
+==Evolution==
+Evolves into '''Manager Cat & Clerk Cat CC''' at level 10.
+
+==Strategy/Usage==
+Manager Cat & Clerk Cat CC is an anti-Metal tanker, similar to the likes of [[Kotatsu Cat (Super Rare Cat)|Octopus Cat]] and [[Sushi Cat (Super Rare Cat)|Roe Cat]]. However, they have a 100% chance to [[Freeze]] all Metals within their range for 1 second (27% uptime), and come with Area Attack to boot!
+
+At Lv.50, they have ''472,000 effective HP'' against Metals, giving them almost 4x the bulk of a Lv.50 [[Primordial Cat (Rare Cat)|Future Cat]] (122,800). They also have [[Immune to Knockback|Knockback Immunity]], which gives them a reliable matchup against [[Super Metal Hippoe]], something that most meatshields and tanks fail to achieve.
+
+{{Job|Classification = Tanker & Crowd-Controller|TrueClass =}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 823
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni823 f00.png
+|Image2 = Uni823 c00.png
+|Name1 (JP) = ネコ店長&ネコ店員 (Neko Tenchō & Neko Ten'in, Manager Cat & Clerk Cat)
+|Desc1 (JP) = にゃんこ大商店から参戦！いつかは自分の店をもちたい<br>雇われ店長と、優秀だけどうっかりもののアルバイト店員<br>メタルな敵に打たれ強く、たまに動きを一瞬止める
+|Name2 (JP) = ネコ店長&ネコ店員CC (Neko Tenchō & Neko Ten'in Shīshī, Manager Cat & Clerk Cat CC)
+|Desc2 (JP) = にゃんこ大商店から参戦！二人とも住み込みで働きながら<br>オーナーが発注した売れそうにない商品に頭を悩ませている<br>メタルな敵に打たれ強く、必ず動きを一瞬止める
+}}
+
+==Cost==
+*Chapter 1: 940円
+*Chapter 2: 1,410円
+*Chapter 3: 1,880円
+
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Manager Cat & Clerk Cat
+|Normal Base HP = 2800
+|Normal Base AP = 90
+|Normal Range = 130
+|Normal Foreswing = 15
+|Normal Attack Cooldown = 99
+|Normal Attack Length = 46
+|Normal Speed = 10
+|Normal KB = 2
+|Normal Cost = 940
+|Normal Recharge = 580
+|Normal Attack Type = Area
+|Normal Targets = Metal
+|Normal Abilities = {{AbilityIcon|Freeze}} 50% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Evolved Name = Manager Cat & Clerk Cat CC
+|Evolved Base HP = 3500
+|Evolved Base AP = 90
+|Evolved Range = 130
+|Evolved Foreswing = 15
+|Evolved Attack Cooldown = 99
+|Evolved Attack Length = 46
+|Evolved Speed = 10
+|Evolved KB = 2
+|Evolved Cost = 940
+|Evolved Recharge = 580
+|Evolved Attack Type = Area
+|Evolved Targets = Metal
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 30f <sub>1 second</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to target traits<br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni823 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/824.html
+
+----
+{{CatNav|Consultant Cat|Sorceress Sidmi}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:External App Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Anti-Metal Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Resistant ability]]

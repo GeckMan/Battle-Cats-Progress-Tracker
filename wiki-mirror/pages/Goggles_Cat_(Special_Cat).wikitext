@@ -1,0 +1,119 @@
+'''Goggles Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from pressing a special icon in the [[Cat Guide]] during the [[Anniversary/13th Year|13th Anniversary]]. It was added in [[Version 15.0 Update|Version 15.0]] for [[Nyanko Daisensou|BCJP]] and in [[Version 15.4 Update|Version 15.4]] for [[The Battle Cats|BCEN]].
+
+{{Cat Info
+|ID = 834
+|rarity = EX
+|name1 = Goggles Cat
+|name2 = Green Nyanko Ranger
+}}
+
+==Evolution==
+Evolves into '''Green Nyanko Ranger''' at level 10.
+
+==Strategy/Usage==
+This Cat is an anti-[[:Category:Red Enemies|Red]]/[[:Category:Dark Enemies|Dark]] crowd-controller that aims to provide [[Freeze]] coverage from a surprisingly high range. Even with the presence of good Freeze units for both traits, such as [[Apple Cat (Super Rare Cat)|iCat]] and [[Flower Cat (Special Cat)|Bombercat]] respectively, this Cat's superior survivability gives them a niche as a standalone crowd-controller in otherwise volatile environments despite their high recharge time. Additionally, they can act as a good layer of secondary defense in the case that your primary stack of crowd-controllers end up biting the dust prematurely.
+
+One case where Green Nyanko Ranger is preferable over the aforementioned iCat is against [[J.K. Bun Bun]]. While iCat gets outranged and struggles to land hits, Green Nyanko Ranger can safely control him thanks to their high range. This is especially potent on cash-tight stages, where numbers-based crowd-controllers like [[Bishop Cat (Rare Cat)|Sanzo Cat]] may drain your wallet.
+
+While they may appear expensive, Green Nyanko Ranger's real price tag is actually 960¢ thanks to their Cost Down XL [[Cat Combo|Combo]], which reduces the cost of all [[:Category:Nyanko Rangers|Nyanko Rangers]] by 20%. The bulk of them have an unreasonably high cost, making this Cat Combo an absolute must-use when running multiple Nyanko Rangers. Furthermore, they can be used synergistically with [[Helmet Cat (Special Cat)|Yellow Nyanko Ranger]] to provide mutually beneficial effects and utilities. Green Nyanko Ranger can keep Yellow Nyanko Ranger safe from Dark enemies with Freeze, while the latter provides both of them Wave Immunity to better handle enemies like [[Two Can]].
+
+As a Special Cat, they even have great utility {{4c}} restriction stages, where iCat isn't available, as well as in mixed stages with Red and Dark enemies like [[Principal's Rebellion]]. Overall, Green Nyanko Ranger's excellent potential as a powerful crowd-controller more than justifies their flaws, and they should be considered over alternatives in dangerous stages where short-ranged options might falter.
+
+{{Job|Classification = Crowd-Controller & Combo Slave}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Green Strike|Deploy Cost Down (XL)|Goggles Cat|jpname=グリーンパワー|restriction=[[:Category:Nyanko Rangers|Nyanko Rangers]] only}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 834
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni834 f00.png
+|Image2 = Uni834 c00.png
+|Name1 = Goggles Cat
+|Desc1 = The Nyanko Rangers' reliable mechanic.<br>Added too many mods to the Rangers' gear to recall.<br>Area Attacks Freeze Red/Dark enemies.
+|Name2 = Green Nyanko Ranger
+|Desc2 = Awaken, Panther Soul! Transform!<br>The Emerald Spear pierces through all obstacles.<br>Area Attacks Freeze Red/Dark enemies.
+|Name1 (JP) = ゴーグルにゃんこ (Gōguru Nyanko, Goggle Cat)
+|Desc1 (JP) = にゃんこレンジャーのメカニックで手先が器用なネコ<br>装備に機能を追加し過ぎて自分でも覚えていない<br>必ず赤い敵と黒い敵の動きを一瞬止める(範囲攻撃)
+|Transl1 (JP) = This handy Cat is the mechanic for the Nyanko Rangers<br>Added too many features to their equipment to remember<br>Guaranteed to Freeze Red and Dark enemies for a moment (Area Attack)
+|Name2 (JP) = グリーンにゃんこ (Gurīn Nyanko, Green Cat)
+|Desc2 (JP) = パンサーソウルを宿し、にゃんこレンジャー変身！<br>「グリーンスピア」は苦難の壁をも貫き通す<br>必ず赤い敵と黒い敵の動きを一瞬止める(範囲攻撃)
+|Transl2 (JP) = Channeling the Panther Soul, Nyanko Ranger transform!<br>The "Green Spear" plows through walls of adversity<br>Guaranteed to Freeze Red and Dark enemies for a moment (Area Attack)
+|Name1 (TW) = 護目鏡貓
+|Desc1 (TW) = 擔任貓咪戰隊機械師，心靈手巧的貓咪<br>幫裝備追加太多功能，連自己都記不起來<br>必定能讓紅色和黑色敵人瞬間動作停止（範圍攻擊）
+|Name2 (TW) = 綠戰士貓
+|Desc2 (TW) = 以寄宿的黑豹之魂變身為貓咪戰隊<br>「綠光長矛」甚至能貫穿苦難高牆<br>必定能讓紅色和黑色敵人瞬間動作停止（範圍攻擊）
+|Name1 (KR) = 고글 냥코
+|Desc1 (KR) = 냥코 레인저의 기술자를 맡고 있는 손재주 좋은 고양이<br>장비에 기능을 너무 많이 추가해서 자기도 다 기억하지 못한다<br>반드시 빨간 적과 검은 적의 움직임을 순간 멈춘다 (범위 공격)
+|Name2 (KR) = 그린 냥코
+|Desc2 (KR) = 냥코 레인저 변신! 그린 팬서!<br>「그린 스피어」는 고난의 벽조차 꿰뚫는다<br>반드시 빨간 적과 검은 적의 움직임을 순간 멈춘다 (범위 공격)
+}}
+
+==Cost==
+*Chapter 1: 800¢
+*Chapter 2: 1,200¢
+*Chapter 3: 1,600¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Goggles Cat
+|Normal Base HP = 500
+|Normal Base AP = 170
+|Normal Range = 350
+|Normal Foreswing = 25
+|Normal Attack Cooldown = 95
+|Normal Attack Length = 66
+|Normal Speed = 6
+|Normal KB = 4
+|Normal Cost = 800
+|Normal Recharge = 900
+|Normal Attack Type = Area
+|Normal Targets = Red,Dark
+|Normal Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Green Nyanko Ranger
+|Evolved Base HP = 600
+|Evolved Base AP = 200
+|Evolved Range = 350
+|Evolved Foreswing = 25
+|Evolved Attack Cooldown = 95
+|Evolved Attack Length = 66
+|Evolved Speed = 6
+|Evolved KB = 4
+|Evolved Cost = 800
+|Evolved Recharge = 900
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Dark
+|Evolved Abilities = {{AbilityIcon|Freeze}} 100% chance to [[Freeze|freeze]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni834 f00}}
+
+==Trivia==
+*Unlike almost every other unit, Goggles Cat does not have a Storage sprite in the game files.
+
+==Reference==
+*https://battlecats-db.com/unit/835.html
+
+----
+{{CatNav|Helmet Cat|Ribbon Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Nyanko Rangers]]
+[[Category:Item Drop Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Freeze ability]]

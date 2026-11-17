@@ -1,0 +1,47 @@
+{{EnemiesAppearing|Those Guys|Gory|Metal Hippoe|Balrog}}
+'''VS BALROG (Normal)''' is one of the [[Street Fighter Collaboration Event#New Challenger|New Challenger]] stages.
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn140 00 c en.png]]
+|stage location = [[File:Mapname140 c en.png]]
+|energy = 100
+|enemy castle hp = 72,000 HP
+|enemies = {{Magnification|Those Guys|400%
+|Gory|400%
+|Metal Hippoe|100%}}
+|boss = {{Magnification|Balrog|15%}}
+|treasure = - 150,000 XP (100%, 1 time)
+|XP = 12,000 XP
+|width = 3,600
+|max enemies = 15
+|jpname = VS Balrog Intermediate
+|script = VSバルログ 中級
+|romaji = VS Barurogu Chūkyū
+|star = 1
+|event = [[Street Fighter Collaboration Event]]
+|event-chapter = [[Street Fighter Collaboration Event/New Challenger|New Challenger]]
+|difficulty = ★3
+|prev stage = N/A
+|next stage = N/A
+}}
+
+==Battleground==
+*15 [[Those Guys]] spawn after 10 seconds<sup>300f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*15 [[Those Guys]] spawn after 11.67 seconds<sup>350f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*15 [[Those Guys]] spawn after 13.33 seconds<sup>400f</sup>, delay 6~8 seconds<sup>180f~240f</sup>.
+*Infinite [[Gory|Gories]] spawn after 30 seconds<sup>900f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Balrog (Enemy)|Balrog]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**2 [[Metal Hippoe]]s spawn, delay 30 seconds<sup>900f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02246-01.html
+
+{{Street Fighter}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

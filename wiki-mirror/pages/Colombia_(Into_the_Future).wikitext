@@ -1,0 +1,134 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Colombia (Into the Future)/Outbreak|here]].''
+'''Colombia''' is the 35th stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc011.png]]
+|stage location = [[File:Colombia.png]]
+'''Into The Future'''
+|energy = 52
+|energy2 = 62
+|energy3 = 72
+|enemy castle hp = 165,000 HP
+|enemy castle hp2 = 247,500 HP
+|enemy castle hp3 = 330,000 HP
+|enemies = {{Magnification|Metal Hippoe|100%
+|Doge Dark|100%
+|Gory Dark|100%
+|Gabriel|100%
+|Heavenly Hippoe|100%}}
+|enemies2 = {{Magnification|Metal Hippoe|200%
+|Doge Dark|200%
+|Gory Dark|200%
+|Gabriel|200%
+|Heavenly Hippoe|200%}}
+|boss2 = {{Magnification|Dark Otter|100%}}
+|enemies3 = {{Magnification|Metal Hippoe|250%
+|Doge Dark|400%
+|Gory Dark|250%
+|Gabriel|250%
+|Heavenly Hippoe|250%
+|Angelic Gory|150%}}
+|boss3 = {{Magnification|Dark Otter|150%}}
+|treasure = - [[Treasure|Bag of Emeralds]]
+|treasure2 = - [[Treasure|Bag of Emeralds]]
+|treasure3 = - [[Treasure|Bag of Emeralds]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +87,500 XP
+|score reward2 = '''7,000''': [[Cat Food]] +10<br>
+'''5,500''': +131,250 XP
+|score reward3 = '''5,500''': [[Cat Food]] +10<br>
+'''4,500''': +175,000 XP
+|max enemies = 9
+|max enemies2 = 9
+|max enemies3 = 9
+|XP = 11,200 XP
+|width = 5,200
+|jpname = Columbia
+|script = コロンビア
+|romaji = Koronbia
+|jptreasure = Coffee Beans
+|twname = Colombia
+|twscript = 哥倫比亞
+|twromaji = Gēlúnbǐyǎ
+|twtreasure = Green Emerald
+|krname = Columbia
+|krscript = 콜롬비아
+|krromaji = Kollombia
+|krtreasure = Emerald
+|chapter = [[Into the Future]]
+|prev stage = [[Machu Picchu (Into the Future)|Machu Picchu]]
+|next stage = [[Jamaica (Into the Future)|Jamaica]]
+}}
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Metal Hippoe|Doge Dark|Gory Dark|Gabriel|Heavenly Hippoe}}
+*1 [[Metal Hippoe]] spawns after 6.67 seconds<sup>200f</sup>.
+*5 [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*1 [[Metal Hippoe]] spawns after 36.67 seconds<sup>1,100f</sup>.
+*1 [[Gory Dark]] spawns after 50 seconds<sup>1,500f</sup>.
+*1 [[Gory Dark]] spawns after 52 seconds<sup>1,560f</sup>.
+*5 [[Gabriel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 63.33 seconds<sup>1,900f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*1 [[Gory Dark]] spawns after 77.33 seconds<sup>2,320f</sup>.
+*1 [[Gory Dark]] spawns after 78.67 seconds<sup>2,360f</sup>.
+*1 [[Gory Dark]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[Metal Hippoe]] spawns after 83.33 seconds<sup>2,500f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 95.33 seconds<sup>2,860f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 97.67 seconds<sup>2,930f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 100 seconds<sup>3,000f</sup>.
+*Infinite [[Metal Hippoe]]s spawn after 106.67 seconds<sup>3,200f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*Infinite [[Doge Dark]]s spawn after 116.67 seconds<sup>3,500f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*Infinite [[Gabriel]]s spawn after 120 seconds<sup>3,600f</sup>, delay 20~40 seconds<sup>600f~1,200f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Metal Hippoe|Doge Dark|Gory Dark|Gabriel|Heavenly Hippoe|Dark Otter}}
+*1 [[Metal Hippoe]] spawns.
+*3 [[Doge Dark]]s spawn after 26.67 seconds<sup>800f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*1 [[Gory Dark]] spawns after 46.67 seconds<sup>1,400f</sup>.
+*3 [[Gabriel]]s spawn after 60 seconds<sup>1,800f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 73.33 seconds<sup>2,200f</sup>.
+*Infinite [[Doge Dark]]s spawn after 93.33 seconds<sup>2,800f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Gabriel]]s spawn after 100 seconds<sup>3,000f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Otter]] spawns as the boss.
+**3 [[Gabriel]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**2 [[Heavenly Hippoe]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Metal Hippoe|Doge Dark|Gory Dark|Gabriel|Heavenly Hippoe|Angelic Gory|Dark Otter}}
+*1 [[Metal Hippoe]] spawns.
+*3 [[Doge Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 3~5 seconds<sup>90f~150f</sup>.
+*1 [[Gory Dark]] spawns after 40 seconds<sup>1,200f</sup>.
+*3 [[Gabriel]]s spawn after 50 seconds<sup>1,500f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 66.67 seconds<sup>2,000f</sup>.
+*Infinite [[Doge Dark]]s spawn after 80 seconds<sup>2,400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*Infinite [[Gabriel]]s spawn after 100 seconds<sup>3,000f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Otter]] spawns as the boss.
+**5 [[Gabriel]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**3 [[Heavenly Hippoe]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**1 [[Angelic Gory]] spawns.
+
+==Strategy==
+==='''Chapter 1'''===
+After the stage starts, send out meatshields to stall the Doge Dark for money. Kill it later on with a cheap damage dealer and send out [[:Category:Critter-class Cats|Critical Hitters]] (such as [[Jurassic Cat (Rare Cat)|Jurassic Cat]]) to kill the large amount of Metal Hippoes. Stack AoE Cats to fend off the Dark and Angel enemies and reach the base to secure your victory.
+
+A high enough levelled [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]] (16~20+) can almost instakill the Gory Darks provided Bahamut hits them. Since Gory Dark has massive DPS, weakening them if you have enough meatshields and a Cat that can weaken Black (like [[Onmyoji Cat (Rare Cat)|Magica Cat]]) will help stop Gory Dark pushing your line back (provided they target the Gory Dark). Spamming lots of Dragon Cats can also stop the Gory Darks, Doge Darks and Gabriel from advancing by constantly knocking them back and eventually killing them.
+
+==='''Chapter 2'''===
+Just the same as Chapter 1, but there is a Dark Otter. Try freezing it or using status effects. Single Target units that have high damage (like [[Hip Hop Cat (Super Rare Cat)|Hip Hop Cat]]) can work against Dark Otter as well. [[Lizard Cat (Normal Cat)|Dragon Cat]] stacking is also optional.
+
+==='''Chapter 3'''===
+At this point, you should have high leveled AoE attackers, because this level can be mildly difficult. Use the same strategy as Chapter 2 but more AoE attacking. Use [[:Category:Anti-Angel Cats|anti-Angels]]/[[:Category:Anti-Dark Cats|Dark]] to do this level if you have any, such as [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03003-35.html
+*https://battlecats-db.com/stage/s03004-35.html
+*https://battlecats-db.com/stage/s03005-35.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

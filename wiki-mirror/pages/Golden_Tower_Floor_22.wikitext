@@ -1,0 +1,43 @@
+{{EnemiesAppearing|Brollow|Flying Ninja Cat}}
+'''Floor 22''' is the 22nd floor of [[Golden Tower]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 21 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 200
+|enemy castle hp = 480,000 HP
+|enemies = {{Magnification|Brollow|100%
+|Flying Ninja Cat|300%}}
+|treasure = - [[Catfruit|Blue Catfruit]] +6 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,400
+|max enemies = 10
+|jpname = 22nd Floor
+|script = 22階
+|romaji = 22 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★9
+|prev stage = [[Golden Tower/Floor 21|Floor 21]]
+|next stage = [[Golden Tower/Floor 23|Floor 23]]
+}}
+
+==Battleground==
+*1 [[Brollow]] spawns after 3.33 seconds<sup>100f</sup>.
+*When the base reaches 99% HP:
+**30 [[Brollow]]s spawn, delay 0.67~2 seconds<sup>20f~60f</sup>.
+**5 [[Brollow]]s spawn, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+**Infinite [[Brollow]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**1 [[Flying Ninja Cat (Enemy)|Flying Ninja Cat]] spawns.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 22#Strategy|Floor 22]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-22.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]
+[[Category:No Continue Stages]]

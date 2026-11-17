@@ -1,0 +1,116 @@
+{{Unobtainable}}
+{{JPExclusive}}
+'''Tutorial Cat''' is a [[:Category:Special Cats|Special Cat]] that was introduced in [[Version 2.8.1 Update|Version 2.8.1]] and can be unlocked by the serial code とくい－ふくだ during the [[Tutorial Collaboration Event]]. He is now unavailable due to serial codes no longer existing.
+
+{{Cat Info
+|ID = 142
+|rarity = EX
+|name1 = Tutorial Cat
+|name2 = Behind Tutorial
+}}
+
+==Evolution==
+Evolves into '''Behind Tutorial''' at level 10.
+
+==Strategy/Usage==
+As a unit, Tutorial Cat is completely useless due to its very long cooldown and extremely low stats. It can neither be used as a meatshield, nor leave any impact as an attacker, and furthermore it doesn't have any combos. You can only use it for [[User Rank]] if you have lots of spare XP lying around.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 142
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni142 f00.png
+|Image2 = Uni142 c00.png
+|Name1 (JP) = ネコチュートリアル (Neko Chūtoriaru, Tutorial Cat)
+|Desc1 (JP) = 顔以外はだらしない「ネコとくい」と<br>おじいちゃんみたいなネコの「ネコふくだ」<br>「ネコとくい」のへんなダンスで攻撃する
+|Transl1 (JP) = "Neko Tokui", unimpressive besides his face and<br>"Neko Fukuda", a cat resembling a grandpa.<br>Attacks using "Neko Tokui"'s strange dances.
+|Name2 (JP) = 裏チュートリアル (Ura Chūtoriaru, Behind Tutorial)
+|Desc2 (JP) = 顔以外はだらしない「ネコとくい」と<br>おじいちゃんみたいなネコの「ネコふくだ」<br>ツッコミのときの「ネコふくだ」の顔はめちゃ怖い
+|Transl2 (JP) = "Neko Tokui", unimpressive besides his face and<br>"Neko Fukuda", a cat resembling a grandpa.<br>"Neko Fukuda"'s face during a tsukkomi is horrifying.
+}}
+
+==Cost==
+*Chapter 1: 360円
+*Chapter 2: 540円
+*Chapter 3: 720円
+{{Upgrade Cost|EX3}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Tutorial Cat
+|Normal Base HP = 240
+|Normal Base AP = 30
+|Normal Range = 160
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 38
+|Normal Speed = 7
+|Normal KB = 1
+|Normal Cost = 360
+|Normal Recharge = 580
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Behind Tutorial
+|Evolved Base HP = 240
+|Evolved Base AP = 30
+|Evolved Range = 160
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 38
+|Evolved Speed = 7
+|Evolved KB = 1
+|Evolved Cost = 360
+|Evolved Recharge = 580
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 240 HP
+|val-Normal-Attack Power = 30 damage<br>(23.68 DPS)
+|val-Normal-Attack Range = 160
+|val-Normal-Attack Frequency = 38f <sub>1.27 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 19.33 ~ 10.53 seconds
+|val-Normal-MaxHP = 4,080 HP
+|val-Normal-MaxAttack = 510 damage<br>(402.63 DPS)
+|val-Evolved-Health = 4,080 HP
+|val-Evolved-Attack Power = 510 damage<br>(402.63 DPS)
+|val-Evolved-Attack Range = 160
+|val-Evolved-Attack Frequency = 38f <sub>1.27 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 19.33 ~ 10.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni142 f00}}
+
+==Trivia==
+*The chubby figure is named ネコとくい, and the thinner one is named ネコふくだ.
+
+==Reference==
+*https://battlecats-db.com/unit/143.html
+
+----
+{{CatNav|God|Nurse Cat}}
+----
+
+{{Tutorial}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Tutorial Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Collaboration Event Cats]]

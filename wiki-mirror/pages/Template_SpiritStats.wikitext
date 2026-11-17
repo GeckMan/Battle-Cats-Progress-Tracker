@@ -1,0 +1,29 @@
+<onlyinclude><div class="spirit-stats-template">
+{| cellpadding="3" cellspacing="1" align="center" class="spirit-stats-table" data-base="{{{Spirit Base}}}"
+| colspan="6" style="font-size: 16px; color: white; background-color: #FF6811; border: solid #000; border-width: 1px 0; grid-area: name;" | '''{{#invoke:string|padleft|{{{Spirit CRO}}}|3|0}}'''
+|-
+| rowspan="4" class="spirit-image" style="background-color: #445; grid-area: image" | [[File:{{{Spirit Image|Placeholder.png}}}|80px]]
+| style="grid-area: attk-l;" | '''Attack (Lv.<span class="input-level">30</span>)'''
+| style="grid-area: rang-l;" | '''Range'''
+| style="grid-area: fore-l;" | '''Foreswing'''
+| style="grid-area: back-l;" | '''Backswing'''
+| style="grid-area: type-l;" | '''Attack Type'''
+|-
+| class="cell-attack" style="grid-area: attk-v" | {{{Spirit Atk}}}
+| style="grid-area: rang-v" | {{{Spirit Range}}}
+| style="grid-area: fore-v" | {{{Spirit Foreswing}}}
+| style="grid-area: back-v" | {{{Spirit Backswing}}}
+| style="grid-area: type-v" | {{#switch:{{{Spirit Target}}}|Area|Area Attack = [[Area Attack]]|Single|Single Attack|Single Target = [[Single Attack]]|{{{Spirit Target}}}}}
+|-
+| colspan="5" style="grid-area: abil-l" | '''Special Abilities'''
+|-
+| colspan="5" style="text-align: left; padding: 4px; grid-area: abil-v" | {{AbilityIcon|Dodge Attack}} 100% chance to [[Dodge Attack|dodge]] all attacks<br>{{AbilityIcon|Immune to Boss Shockwave}} [[Immune to Boss Shockwave]]<br>{{AbilityIcon|Kamikaze}} [[Kamikaze]] (Attacks once, then disappears from the battlefield)<br><includeonly>{{{Spirit Ability|}}}</includeonly><noinclude>{{{Spirit Ability}}} (if not provided will be blank on actual template)</noinclude>
+|}
+:''*Stats include 300% Empire of Cats Treasures.''</div><!--
+-->{{#ifeq:{{NAMESPACENUMBER}}|0|<!---->{{#invoke:Bucket|put
+|spirit
+|id = {{{Spirit CRO}}}
+|id-type = int
+|+sub = {{{Spirit CRO}}}
+}}<!---->}}<!--
+--><templatestyles src="SpiritStats/styles.css" />[[Category:Pages using spirit stats template]]</onlyinclude>{{/doc}}

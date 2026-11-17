@@ -1,0 +1,59 @@
+{{EnemiesAppearing|Ragin' Gory|Doge Dark|Razorback|Gory Dark}}
+:''For the stage that appears in [[The March of Flames]], see [[Final Battleground (The March of Flames)|here]].''
+'''Final Battleground''' is the eighth and final stage in [[Cover of Darkness]].
+
+{{Stage Info
+|stage name = [[File:rc015.png]]
+[[File:Mapsn287 07 s en.png]]
+|stage location = [[File:Mapname287 s en.png]]
+|energy = 150
+|enemy castle hp = 750,000 HP
+|enemies = {{Magnification|Ragin' Gory|100%
+|Doge Dark|800%
+|Razorback|100%
+|Gory Dark|300%}}
+|boss = {{Magnification|Doge Dark|1%}}
+|score reward = '''6,000''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''5,100''': 750,000 XP<br>
+'''3,800''': 500,000 XP<br>
+'''3,000''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1<br>
+'''2,100''': 100,000 XP
+|XP = 4,500 XP
+|width = 4,500
+|max enemies = 30
+|jpname = Decisive Battleground
+|script = 決戦の地
+|romaji = Kessen no Chi
+|star = 1
+|event = [[Dark Descent Stages|Dark Descent]]
+|event-chapter = [[Cover of Darkness]]
+|max clears = 1
+|difficulty = ★9
+|prev stage = [[Cold Snowfield]]
+|next stage = N/A
+}}
+
+==Battleground==
+*1 [[Doge Dark]] (800%) spawns after 20 seconds<sup>600f</sup>.
+*Infinite [[Doge Dark]]s (800%) spawn after 20 seconds<sup>600f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Ragin' Gory]] spawns after 18.67 seconds<sup>560f</sup>.
+*2 [[Gory Dark]]s spawn after 16.67 seconds<sup>500f</sup>, delay 1 second<sup>30f</sup>.
+*3 [[Doge Dark]]s (800%) spawn after 5.33 seconds<sup>160f</sup>, delay 1 second<sup>30f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] (1%) spawns as the boss.
+**2 [[Ragin' Gory|Ragin' Gories]] spawn, delay 3.33 seconds<sup>100f</sup>.
+**5 [[Ragin' Gory|Ragin' Gories]] spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**2 [[Razorback]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+Lure both Razorbacks to your base, then start spamming [[Bombercat]] like your life depends on it. Ragin' Gory and Gory Dark are both caught by [[Pizza Cat]]'s Waves, while you can wall everyone here with units like [[Kinjirou Cat]] or just a bunch of meatshields.
+
+==Trivia==
+*Prior to [[Version 11.2 Update|Version 11.2]], this stage used the base most commonly used for the [[:Category:Awakening Stages|Awakening Stages]].
+
+==Reference==
+*https://battlecats-db.com/stage/s01287-08.html
+
+{{SpecialStages List}}
+[[Category:Event Stages]]
+[[Category:Timed Score Stages]]

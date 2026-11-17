@@ -1,0 +1,67 @@
+.portable-infobox.pi-theme-cat-appearance {
+	min-width: 308px;
+}
+
+.portable-infobox.pi-theme-cat-appearance>* {
+	border-radius: inherit;
+}
+
+.portable-infobox.pi-theme-cat-appearance,
+.portable-infobox.pi-theme-cat-appearance .pi-title {
+	background-color: var(--bg-color-light2);
+}
+
+#mw-content .portable-infobox.pi-theme-cat-appearance .pi-title {
+	padding-bottom: 0;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-title * {
+	color: var(--theme-page-text-color);
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-title a {
+	color: var(--theme-link-color);
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-panel {
+	padding: 3px;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-border-color {
+	border-color: transparent;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-section-navigation {
+	display: block;
+	margin: 0;
+	background-color: inherit;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-section-navigation .pi-section-tab {
+	display: block;
+	margin: 2px 0;
+	padding: 2px;
+	border: 1px solid #b90;
+	background: orange;
+	color: #833;
+	max-width: 100%;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-section-tab.pi-section-active {
+	background: #fd3;
+	box-shadow: none;
+	color: #000;
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-section-navigation .pi-section-label {
+	display: inline;
+	font-weight: 400;
+	font-size: var(--font-size-small);
+}
+
+.portable-infobox.pi-theme-cat-appearance .pi-section-content>.pi-item {
+	padding: 0;
+	width: unset;
+}
+
+/* [[Category:Template stylesheets]] */

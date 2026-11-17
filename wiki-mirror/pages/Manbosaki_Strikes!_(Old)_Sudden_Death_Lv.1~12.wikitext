@@ -1,0 +1,220 @@
+{{RemovedContent}}
+{{EnemiesAppearing|Ayumi Manbosaki|Young Man Mola|Mola King|Tasmanian Giant Crab|Sardine|Squid}}
+
+{{Stage Info
+|stage name = [[File:rc045.png]]
+[[File:Mapsn129 00 c en.png]]
+|stage location = [[File:Mapname129 c en.png]]
+|enemies = {{Magnification|Sardine|0
+|Squid|0
+|Young Man Mola|0
+|Mola King|0
+|Tasmanian Giant Crab|0}}
+|boss = {{Magnification|Ayumi Manbosaki|0}}
+|restriction = [[No Continues]]
+|width = 3,200
+|max enemies = 30
+|jpname = Sudden Death Lv.X
+|script = Totsuzen no Shi
+|romaji = 突然の死 Lv.X
+|event = [[Survive! Mola Mola! Collaboration Event]]
+|event-chapter = [[Manbosaki Strikes! (Old)|Manbosaki Strikes!]]
+}}
+
+==Battleground==
+*1 [[Ayumi Manbosaki]] spawns as the boss after 5 seconds<sup>150f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 6.67 seconds<sup>200f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 10 seconds<sup>300f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 56.67 seconds<sup>1,700f</sup>, delay 2.67~5.33 seconds<sup>80f~160f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 60 seconds<sup>1,800f</sup>, delay 2.67~5.33 seconds<sup>80f~160f</sup>.
+*10 [[Sardine (Enemy)|Sardines]] spawn after 96.67 seconds<sup>2,900f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*10 [[Squid (Enemy)|Squid]] spawn after 100 seconds<sup>3,000f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*Infinite [[Sardine (Enemy)|Sardines]] spawn after 60 seconds<sup>1,800f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Squid (Enemy)|Squid]] spawn after 66.67 seconds<sup>2,000f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Young Man Mola (Enemy)|Young Man Molas]] spawn after 20 seconds<sup>600f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*9 [[Mola King (Enemy)|Mola Kings]] spawn after 26.67 seconds<sup>800f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 80 seconds<sup>2,400f</sup>, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 80.67 seconds<sup>2,420f</sup>, delay 1.33~2.67 seconds<sup>40f~80f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 160 seconds<sup>4,800f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 160.67 seconds<sup>4,820f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*3 [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 161.33 seconds<sup>4,840f</sup>, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+*Infinite [[Tasmanian Giant Crab (Enemy)|Tasmanian Giant Crabs]] spawn after 240 seconds<sup>7,200f</sup>, delay 50~100 seconds<sup>1,500f~3,000f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Sudden Death
+! rowspan="2" scope="col" style="text-align: center;" |Enemy base's HP
+! colspan="6" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |Ayumi Manbosaki
+! scope="col" |Young Man Mola
+! scope="col" |Mola King
+! scope="col" |Tasmanian Giant Crab
+! scope="col" |Sardine
+! scope="col" |Squid
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|10,000
+|2%
+|100% HP, 15% AP
+|10%
+|10%
+|15%
+|15%
+|20
+|Speed Up +1
+|380
+|-
+! scope="row" |2
+|30,000
+|8%
+|100% HP, 50% AP
+|25%
+|25%
+|50%
+|50%
+|30
+|Cat CPU +1
+|570
+|-
+! scope="row" |3
+|60,000
+|30%
+|200%
+|100%
+|150%
+|200%
+|200%
+|40
+|XP+50,000
+|760
+|-
+! scope="row" |4
+|120,000
+|65%
+|400%
+|250%
+|375%
+|400%
+|400%
+|50
+|Cat Ticket +1
+|950
+|-
+! scope="row" |5
+|180,000
+|100%
+|600%
+|400%
+|600%
+|600%
+|600%
+|60
+|Rich Cat +1
+|1,140
+|-
+! scope="row" |6
+|260,000
+|343%
+|1,371%
+|914%
+|1,371%
+|1,371%
+|1,371%
+|70
+|Sniper Cat +1
+|1,330
+|-
+! scope="row" |7
+|360,000
+|586%
+|2,143%
+|1,429%
+|2,143%
+|2,143%
+|2,143%
+|80
+|XP+500,000
+|1,520
+|-
+! scope="row" |8
+|480,000
+|829%
+|2,914%
+|1,943%
+|2,914%
+|2,914%
+|2,914%
+|90
+|Cat Ticket +2
+|1,710
+|-
+! scope="row" |9
+|600,000
+|1,071%
+|3,686%
+|2,457%
+|3,686%
+|3,686%
+|3,686%
+|100
+|Cat Jobs +1
+|1,900
+|-
+! scope="row" |10
+|750,000
+|1,314%
+|4,457%
+|2,971%
+|4,457%
+|4,457%
+|4,457%
+|110
+|Treasure Radar +1
+|2,090
+|-
+! scope="row" |11
+|900,000
+|1,557%
+|5,229%
+|3,486%
+|5,229%
+|5,229%
+|5,229%
+|120
+|XP +1,000,000
+|2,280
+|-
+! scope="row" |12
+|1,100,000
+|1,800%
+|6,000%
+|4,000%
+|6,000%
+|6,000%
+|6,000%
+|130
+|Rare Cat Ticket +1
+|2,470
+|}
+
+==Strategy==
+Since the big enemies here either attack very slowly or have Single Target, it is recommended to use a large amount of meatshields, with 75c ones being the most ideal once the player's Erasers can no longer tank hits.
+
+Cyberstacking is an effective (albeit time consuming) way to beat these stages. The strategy is very straightforward: players can use anti-Red tanks and attackers like [[Sushi Cat (Super Rare Cat)|Roe Cat]], [[Hip Hop Cat (Super Rare Cat)|Can-Can Cat]], and [[Crazed Fish Cat (Super Rare Cat)|Manic Island Cat]] to deal with the Crabs, while meatshielding and stacking [[Nerd Cat (Super Rare Cat)|Cyberpunk Cats]] to beat the stage. After a while, the waves of Crabs become fewer in numbers and Mola Kings stop spawning, so it is less important to use your anti-Red units. Other helpful units are [[Mer-Cat (Rare Cat)|Cameraman]] for meatshielding and DPS, [[Baby Cat (Uber Rare Cat)|Cats in the Cradle]] to tank around 2 shots from the Manbosaki and deal damage, and [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] or [[Slime Cat (Rare Cat)|Jelly Cat]] to clear out the peons. This strategy takes a lot of patience, and you can expect to spend upwards of 7 minutes per stage with this, so a Speed Up is recommended.
+
+The small enemies, especially the Crabs, are the ones who can be expected to push the most, so bring anything you have that may counter them, namely [[Bath Cat (Super Rare Cat)|Bath Cat]]+[[Crazed Gross Cat (Super Rare Cat)|Crazed Gross Cat]].
+
+==Reference==
+*https://battlecats-db.com/stage/s02129.html
+
+{{Survive! Mola Mola!}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]

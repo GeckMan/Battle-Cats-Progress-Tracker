@@ -1,0 +1,139 @@
+:''Not to be confused with [[Wave Attack]]s or [[Explosion]]s.''
+'''Surge Attacks''' (烈波, ''Reppa'', '''Intense Waves'''), also known as just '''Surges''', are a [[Special Abilities|special ability/effect]] in [[The Battle Cats]]. They can be created by certain [[:Category:Surge Attack Cats|Cat Units]] and [[:Category:Surge Attack Enemies|Enemy Units]] at a set chance. This ability was added in [[Version 9.2 Update|Version 9.2]].
+[[File:Uril surge.gif|thumb|right|[[Master Uril (Special Cat)|Mystic Uril]] creating a Surge Attack]]
+
+==Explanation==
+Surge Attacks share many qualities with [[Wave Attack]]s: they hit all enemies/cats in their range, but don't affect bases (excluding most [[:Category:Animated Enemy Bases|animated ones]]), and they deal the same damage as a normal attack from their creator; they will also retain any special ability/effect that the original attack had, except for [[Attacks Only]]. Unlike Wave Attacks, however, Surge Attacks '''stay in one spot''', dealing the original damage of the [[Cat Units|Cat]] or [[Enemy Units|Enemy]] unit to opposing units every 20f.
+
+Surge Attacks have a '''level''', which, unlike a Wave Attack's level, determines how long they will linger on the field for. A level 1 Surge lasts for 20f, and each additional level increases the duration by 20f and allows the Surge to hit the same target one more time. Unlike Wave Attacks, Surge Attacks have a '''designated area''' where they can spawn, which varies depending on the unit. This value is independent from the attack range and will determine the minimum and maximum range in which the attack can appear.
+
+Despite looking similar, Surges are '''entirely separate''' from Waves/Explosions; Immune to Waves/Explosions, Wave Shield and Resist Wave will not protect against Surges, and Immune to Surge and Resist Surge will not protect against Waves/Explosions. Notably, there is a 15-frame delay before the Surge spawns, and a 20 frame delay between each individual Surge hitbox. The frame delay correlates with each gained Surge level.
+
+'''To recap:'''
+#A Surge has a single spawn point, which is a single point within the area of effect.
+#A Surge has 375 range width. Starting from spawn point, it has 125 outward piercing range and 250 inner range.
+#Surges cannot harm bases, excluding most animated bases found within the [[Catclaw Dojo]] and elsewhere.
+#Surge damage is the same as the damage of the hit that caused it (if a unit has Multi-Hit, the Surge bases its damage on only the hit associated with it, not the total attack power). Example: if a unit with 200 attack power deals 3 hits (each hit in order respectively: deals 100, 50, 50 damage; with the 1st and 2nd creating a Surge), the 1st Surge will deal 100 damage with every hit, the 2nd one deals 50 per hit.
+#Every hit of a Surge carries all the exact effects from the hit (only its associated hit if there's Multi-Hit, applying the same principle for damage calculation) that caused it. If the initial hit lands a freeze despite a low probability, all hits of the Surge will always freeze; and if the initial hit doesn't, then none of the Surge's hits will freeze (meaning, every Surge hit doesn't reroll its chance, instead directly inheriting the success or failure of the initial hit).
+#There is a 15f (0.5s) gap time between main attack and Surge spawning, and a 20f (0.67s) gap time between every hit of the Surge.
+
+==Calculating Effective DPS of Surge Attackers==
+DPS of a Surge unit can be calculated using the formula:
+'''Surge DPS = Base DPS x Surge Level'''. Following this, a Level 30 Master Uril has a base DPS of 803 and a Surge Level of 3. So his Surge carries a DPS of 2409 if all hits connect. This also reflects onto the damage per hit a unit has.
+
+For units who may hit foes with both the main attack and the Surge, simply add one to the Surge level to get the full DPS of the attack: '''Maximum DPS = Base DPS + Surge DPS = Base DPS x (Surge Level + 1)'''.
+
+For example, a level 30 [[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]] has a base DPS of 2,931 and a Surge Level of 3. So her Surge carries a DPS of 8,793 if all hits connect and, if her initial attack also hits the target, she has an effective DPS of 11,724.
+
+Since Mini-Surges are nearly identical in every way besides damage, the formula for calculating the DPS for mini surge attackers is as follows:  '''Mini-Surge DPS = Base DPS x (Mini-Surge level / 5)'''. For units who hit with their main attack and mini-surge, calculate the full DPS of the attack using this formula: '''Maximum DPS = Base DPS + Mini-Surge DPS = Base DPS x (Mini-Surge Level / 5) + Base DPS'''
+
+==Mini-Surge==
+[[File:705 c attack animation.gif|thumb|right|[[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]] creating a Mini-Surge]]
+'''Mini-Surge''' (小烈波 ''Shō Reppa'', '''Mini Intense Wave''') is an ability introduced in [[Version 12.3 Update|Version 12.3]]. Mini-Surges are almost identical to regular Surges, but are visually smaller and deal only 20% of their creator's attack power. Like how [[Wave Attack|Mini-Waves]] are considered the same effect as waves, Mini-Surges are still counted as Surges, meaning they are resisted by all the same abilities.
+
+Since the added attack power from Attack Up [[Talent Orbs]] is a flat increase that ignores damage multipliers, it will be added on top of the Mini-Surge's damage without being decreased to 20%. Technically, this means units with multi-level Mini-Surges (e.g., [[Talents|Ultra Talented]] [[Coppermine (Uber Rare Cat)|Divine Coppermine κ]]) can reap more benefit from Attack Up Talent Orbs than any other unit.
+
+==Death Surge==
+'''Death Surge''' (デス烈波 ''Desu Reppa'', '''Death Intense Wave''')  is an ability introduced in [[Version 10.9 Update|Version 10.9]] and exclusive to certain [[:Category:Aku Enemies|Aku Enemies]]. It is a post-mortem attack, which happens automatically with a short animation once an Aku with this ability dies. Visually, this is represented by a unique Aku soul instead of a regular white soul emerging. This unique-looking Aku soul activates the Surge Attack before disappearing. The Surge, unlike a regular Surge Attack, spawns directly every time, without the need of a regular attack connecting, plus, since it happens after death, it is not affected by any debuff that may have been applied to the dying enemy before their demise. In other words, there is no way to prevent the Surge from happening, nor can the Surge be made less problematic by ensuring that the enemy causing it dies with weaken or curse applied. [[File:Aftermath.gif|thumb|center|[[Condemned Peng|Condemned Peng]] creating a Death Surge]]
+
+==Mini-Deathsurge==
+'''Mini-Deathsurge''' (デス小烈波 ''Desu Shō Reppa'', '''Death Mini Intense Wave''')  is an ability introduced in [[Version 14.3 Update|Version 14.3]] and exclusive to Mini-Deathsurge [[Talent Orbs]]. With this Orb equipped, every second unit deployed has a 100% chance to create a Lv.1 Mini-Surge at 200~500 upon death, dealing 3-20% of its attack power as damage depending on the Orb's Rank. When two Mini-Deathsurge Orbs are equipped by the same unit, only one takes effect; the higher-Ranked Orb has priority. When a unit is set to create a Mini-Deathsurge, its deployment button will briefly flash and a small icon of the Orb will appear on the top-left corner of it.
+
+{| class="article-table mw-collapsible" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+|-
+! scope="col" |Orb Rank
+! scope="col" |Mini-Deathsurge Damage
+|-
+|'''S'''
+|'''20%'''
+|-
+|'''A'''
+|'''14%'''
+|-
+|'''B'''
+|'''10%'''
+|-
+|'''C'''
+|'''6%'''
+|-
+|'''D'''
+|'''3%'''
+|}
+
+<gallery hideaddbutton="true" bordercolor="transparent">
+Death Mini-Surge Flash.gif|[[Holy Phoenix (Uber Rare Cat)|Head Rococo]] prepared to create a Mini-Deathsurge
+Death Mini-Surge Activation.gif|Head Rococo creating a Mini-Deathsurge
+</gallery>
+
+==Counter-Surge==
+'''Counter-Surge''' (烈波カウンター ''Reppa Kauntā'', '''Intense Wave Counter''')  is an ability introduced in [[Version 12.4 Update|Version 12.4]]. It activates when a Surge hits the user, and consists of an animation in which a one-eyed soul with a colored aura (blue for cats, pink for enemies) appears above the user, jitters for a moment, and fires off a Surge from its eye before returning to the user's body, taking 1.7 seconds to execute. The Surge's level, size (normal or Mini) and spawn area are inherited from the attack that struck it, while any damage and secondary effects are scaled to that of the user itself. Unlike with Death Surge, this Surge is considered to be generated by the user itself, and as such, Weaken/Curse effects that have afflicted the unit will affect the spawned Surge. If said effects wear off before the Surge expires, their effects on the Surge are likewise removed.
+
+When used by multi-hit attackers like [[Kappy Kawano]], this ability inherits damage and other effects from the first hit. For example, Kappy Kawano's 114k damage is divided into three closely-spaced multi-hits dealing 38k damage each. As such, if a Surge hits him, the resultant Counter-Surge will only deal 38k damage.
+
+Note that units with Counter-Surge still receive full damage from Surge Attacks. Also, Counter-Surges are not generated unless the enemy takes direct damage from a Surge Attack. This means that if an enemy is protected by a [[Shield]] which absorbs the full damage of the Surge, the enemy will not create a Counter-Surge.
+
+To prevent a continuous loop, Counter-Surges cannot trigger the Counter-Surge ability itself. I.e., if [[Oda Nobunaga (Uber Rare Cat)|Phantasmal Nobunaga]] hits Kappy Kawano with a copied Surge, it won't trigger Kawano's Counter-Surge.
+
+Every second unit deployed with a Single Surge Counter [[Talent Orbs|Orb]] gains a single use of Counter-Surge that deals less damage than normal, unless at Rank S. When two Single Surge Counter Orbs are equipped by the same unit, only one takes effect; the higher-Ranked Orb has priority. When a unit is set to gain the Single Surge Counter ability, its deployment button will briefly flash and a small icon of the Orb will appear on the top-left corner of it. This Orb cannot be equipped by [[:Category:Cats with Surge Immunity|Cats with Surge Immunity]]. However, if a Cat has Surge Immunity Talent that isn't yet unlocked and is equipped with a Single Surge Counter orb, players still can unlock the Talent without removing the Orb (but the Orb still can't create any Counter-Surge).
+
+{| class="article-table mw-collapsible" border="0" cellspacing="1" cellpadding="1"style="width: 100%;"
+|-
+! scope="col" |Orb Rank
+! scope="col" |Orb Effect
+|-
+|'''S'''
+|'''100% damage 1-time Counter-Surge'''
+|-
+|'''A'''
+|'''70% damage 1-time Counter-Surge'''
+|-
+|'''B'''
+|'''50% damage 1-time Counter-Surge'''
+|-
+|'''C'''
+|'''30% damage 1-time Counter-Surge'''
+|-
+|'''D'''
+|'''10% damage 1-time Counter-Surge'''
+|}
+
+[[File:SurgeReflectorAbilitySmaller.gif|thumb|center|[[Iguanidae Ibilujon|Iguanidae Ibilujon]] creating its own Surge Attack after being hit by [[Elder Mask Doron (Special Cat)|Awakened Doron]]'s Surge]]
+
+==Notes==
+*Surge Attacks are only generated if their user's attack connects with an opposing unit or base.
+*Surge Attacks operate at a delay, and they are a separate hitbox from the attack which triggered them, meaning that if the unit which created the surge is knocked back, the surge will still be on the battlefield and deal damage independently.
+*Some abilities reduce the effect of Surge Attacks:
+**[[:Category:Cats with Surge Immunity|Cats]] and [[:Category:Enemies with Surge Immunity|enemies]] with "Immune to Surge" abilities take no damage from Surge Attacks. However, they still can take damage from the attack triggering the Surge Attack if they are too close to the attacker.
+**[[:Category:Resist Surge Cats|Cats with "Resist Surge" Talents]] or Resist Surge [[Talent Orbs]] take reduced damage from Surge Attacks. The damage reduction depends on the Talent's/Orb's level/Rank, generally ranging from 5% to 50% reduction. These effects stack, resulting in full immunity with either two S-Rank Resist Surge Orbs or one S-Rank Resist Surge Orb and a level 10 Resist Surge Talent.
+*The [[Ototo Corps#Foundation and Style Upgrades|Waterblast Foundation]] reduces the damage all [[Cat Units]] take from Surge Attacks by 0.75% per level up to a maximum of 15%.
+*Surge Attacks carry any [[Special Abilities|abilities]] that the original hit has. For example, [[Kasli the Bane (Uber Rare Cat)|Kasli the Bane]]'s surges curse all enemies.
+*Surge Attacks are entirely separate from [[Wave Attack]]s and [[Explosion]]s.
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Skill009.png|Sprites of a Cat Unit's Surge Attack
+Skill010.png|Sprites of an Enemy Unit's Surge Attack
+Skill015.png|Sprites of a Cat Unit's Mini-Surge
+Skill016.png|Sprites of an Enemy Unit's Mini-Surge
+Battle demonsoul 00.png|Sprites of an Enemy Unit's Death Surge
+Placeholder.png|Sprites of a Cat Unit's Mini-Deathsurge
+Skill017.png|Sprites of an Enemy Unit's Counter-Surge
+Skill018.png|Sprites of a Cat Unit's Counter-Surge
+</gallery>
+
+==Trivia==
+*[[Kappy Jr.]] and [[Kasli the Scourge (Uber Rare Cat)|Kasli the Scourge]] were the first enemy and cat respectively to have Surge Attacks.
+*Just like with [[Wave Attack]]s and [[Explosion]]s, enemies will create blue Surges, while cats will create pink Surges.
+*Cats' Mini-Deathsurge soul has ears, while enemies' Death Surge soul has horns.
+*If a unit creates a Surge while [[Curse|cursed]], its ability will be activated on the Surge after the curse wears off.
+**In the case of [[Elder Flame Doron]], a well-timed Curseblast can result in the Surge never applying any status effects if Doron despawns before the Curse effect wears off.
+*If a [[:Category:Focused Target Cats|unit with the Attacks Only ability]] creates a Surge, its Surge will be able to damage units outside of its target trait/s. This is currently only applicable to [[Backhoe Cat (Super Rare Cat)|Neo Backhoe Cat]].
+*The Death Surge ability was added in [[Version 10.8 Update|Version 10.8]], but was unimplemented and lacked an animation until [[Version 10.9 Update|Version 10.9]].
+*For enemies such as [[Sinner Snache]] who have a non-100% chance of Death Surge, a normal soul will appear when Death Surge does not trigger while an Aku soul appears when it does trigger. This makes Sinner Snache the only enemy with two different death animations.
+*Death Surge is similar to the Vain Struggle (わるあがき ''Waruagaki'') ability from [[Yuru-i GeGeGe no Kitarou: Youkai Dotabata Daisensou]], which dealt a set % of the user's attack power as area damage upon death.
+*[[Oda Nobunaga (Uber Rare Cat)|Phantasmal Nobunaga]] was the first [[Cat Units|Cat Unit]] to have the [[Counter-Surge]] ability.
+*The soul that appears when the Counter-Surge ability activates resembles the top of the [[Surge Base (Enemy Base)|Surge Base]] (which itself appears to be modeled after the [[wikipedia:Monument to the Revolution of the people of Moslavina|Monument to the Revolution of the people of Moslavina]] in Croatia), as well as the boss [https://wikirby.com/wiki/0%C2%B2 0²] from ''[https://wikirby.com/wiki/Kirby_64:_The_Crystal_Shards Kirby 64: The Crystal Shards]''.
+
+[[Category:Game Features]]
+[[Category:Special Abilities]]
+[[Category:Missing picture]]

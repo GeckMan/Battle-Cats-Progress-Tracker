@@ -1,0 +1,129 @@
+'''MEIKO & Cat''' are a [[:Category:Super Rare Cats|Super Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Cat Capsule/Gacha]] during the [[Hatsune Miku Collaboration Event]]. They were added in [[Version 9.8 Update|version 9.8]].
+
+{{Cat Info
+|ID = 561
+|rarity = SR
+|name1 = MEIKO & Cat
+|name2 = MEIKO & Cat CC
+}}
+
+==Evolution==
+Evolves into '''MEIKO & Cat CC''' at level 10.
+
+==Strategy/Usage==
+For general use, this unit is less effective than [[Vaulter Cat (Super Rare Cat)|Vaulter Cat]] and [[Nymph Cat (Super Rare Cat)|Nymph Cat]], so her use is recommended only if there are Red enemies. Against Reds, MEIKO can provide decent help against enemies such as [[Capy]] in the many stages that feature them. She can also take care of supporting Red enemies such as the [[Christmas D.]]s in [[Heavenly Tower]] [[Heavenly Tower/Floor 21|Floor 21]]. It is best against a large group of red enemies, especially if they are supporting. [[Bath Cat (Super Rare Cat)|Bath Cat]] is better against one boss.
+
+Unfortunately, MEIKO's usefulness will fall substantially once [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] is obtained, as it outperforms her in almost any scenario outside of a few [[Restriction Stage]]s.
+
+{{Job|Classification = Sniper}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 561
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni561 f00.png
+|Image2 = Uni561 c00.png
+|Name1 = MEIKO & Cat
+|Desc1 = Virtual singer loved by the entire Cat Empire!<br>Talented vocalist who transcends genre.<br>Massive Long-Range Area Damage to Red.
+|Name2 = MEIKO & Cat CC
+|Desc2 = Virtual singer loved by the entire Cat Empire!<br>Heartfelt singer with a world-class voice.<br>Massive Long-Range Area Damage to Red.
+|Name1 (JP) = MEIKO&ネコ (MEIKO & Neko, MEIKO & Cat)
+|Desc1 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>幅広いジャンルの曲を歌いこなす本格派ボーカル<br>赤い敵に超ダメージを与える(遠方範囲攻撃)
+|Transl1 (JP) = Popular virtual singer from the electronic world makes her appearance!<br>A skilled regular vocalist who sings songs from a wide range of genres.<br>Deals super damage to Red enemies (Long Distance Attack)
+|Name2 (JP) = MEIKO&ネコCC (MEIKO & Neko CC, MEIKO & Cat CC)
+|Desc2 (JP) = 電子世界から人気バーチャル・シンガー登場！<br>コシのある歌声が特徴的な本格派ボーカル<br>赤い敵に超ダメージを与える(遠方範囲攻撃)
+|Transl2 (JP) = Popular virtual singer from the electronic world makes her appearance!<br>Regular vocalist with a distinctive singing voice.<br>Deals super damage to Red enemies (Long Distance Attack)
+|Name1 (TW) = MEIKO&貓咪
+|Desc1 (TW) = 來自虛擬世界的人氣歌手！<br>廣範歌種皆可完美詮釋的實力派唱將<br>可以給予紅色敵人超大傷害(遠距範圍攻擊)
+|Name2 (TW) = MEIKO&貓咪CC
+|Desc2 (TW) = 來自虛擬世界的人氣歌手！<br>歌聲躍動感十足有特色的實力派唱將<br>可以給予紅色敵人超大傷害(遠距範圍攻擊)
+|Name1 (KR) = MEIKO&고양이
+|Desc1 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>폭넓은 장르의 곡을 소화하는 실력파 보컬<br>빨간 적에 초 데미지를 입힌다 (원거리 범위공격)
+|Name2 (KR) = MEIKO&고양이CC
+|Desc2 (KR) = 버추얼 세계에서 인기 버추얼 싱어가 등장!<br>힘 있는 목소리가 특징적인 실력파 보컬<br>빨간 적에 초 데미지를 입힌다 (원거리 범위공격)
+}}
+
+==Cost==
+*Chapter 1: 780¢
+*Chapter 2: 1,170¢
+*Chapter 3: 1,560¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = MEIKO & Cat
+|Normal Base HP = 1020
+|Normal Base AP = 460
+|Normal Range = 260
+|Normal Foreswing = 60
+|Normal Attack Cooldown = 121
+|Normal Attack Length = 123
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 780
+|Normal Recharge = 1000
+|Normal Attack Type = Area
+|Normal Targets = Red
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 175~425)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = MEIKO & Cat CC
+|Evolved Base HP = 1350
+|Evolved Base AP = 610
+|Evolved Range = 260
+|Evolved Foreswing = 60
+|Evolved Attack Cooldown = 121
+|Evolved Attack Length = 123
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 780
+|Evolved Recharge = 1000
+|Evolved Attack Type = Area
+|Evolved Targets = Red
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 175~425)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,020 HP
+|val-Normal-Attack Power = 460 damage<br>(76.24 DPS)
+|val-Normal-Attack Range = 260
+|val-Normal-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 60f <sup>2s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Normal-Recharge Time = 33.33 ~ 24.53 seconds
+|val-Normal-MaxHP = 17,340 HP
+|val-Normal-MaxAttack = 7,820 damage<br>(1,296.13 DPS)
+|val-Evolved-Health = 22,950 HP
+|val-Evolved-Attack Power = 10,370 damage<br>(1,718.78 DPS)
+|val-Evolved-Attack Range = 260
+|val-Evolved-Attack Frequency = 181f <sub>6.03 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 60f <sup>2s</sup><br>(63f <sup>2.1s</sup> backswing)
+|val-Evolved-Recharge Time = 33.33 ~ 24.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni561 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/562.html
+
+----
+{{CatNav|Megurine Luka|Luka Cat}}
+----
+
+{{Hatsune Miku}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Long Distance Cats]]
+[[Category:Cats with Massive Damage ability]]

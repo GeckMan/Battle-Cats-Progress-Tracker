@@ -1,0 +1,253 @@
+'''Cat Gunslinger''' is a [[:Category:Rare Cats|Rare Cat]] that was added in [[Version 3.0 Update|Version 3.0]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]]. [[True Form]] added in [[Version 7.0 Update|Version 7.0]] greatly increases health, damage, range and slowdown duration. [[Talents]] were added in [[Version 8.1 Update|Version 8.1]].
+
+{{Cat Info
+|ID = 145
+|rarity = RR
+|name1 = Cat Gunslinger
+|name2 = Cat Eastwood
+|name3 = Rodeo Cat
+}}
+
+==Evolution==
+Evolves into '''Cat Eastwood''' at level 10.
+
+Evolves into '''Rodeo Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+Cat Gunslinger can slow [[:Category:Dark Enemies|Dark enemies]] one at a time, while its targets are typically spawned in groups. He is thus only recommended for bosses like the [[Dark Cyclone]] and [[Razorback]]. It is best to try to form a stack before engaging enemies and work on keeping the frontline clear. Alternatively, he could be used alongside the more reliable [[Flower Cat (Special Cat)|Bombercat]] as an emergency second line of crowd-controllers. However, very few Dark enemies are Immune to Freeze, and those who aren't usually fall to [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], who can kill them outright, negating the purpose to use Cat Gunslinger in the first place.
+
+==='''True Form'''===
+Rodeo Cat gains higher stats and more notably, more range and longer Slow duration. However, he still lacks Area Attacks which hinders his performance against large swarms of Dark enemies. It's recommended to invest in this True Form if you wish to unlock Cat Gunslinger's [[Talents]].
+
+==='''Talents'''===
+Once he is given '''Target Relic''', his use is expanded to [[:Category:Relic Enemies|Relic]] enemies in early [[Uncanny Legends]] stages and [[Charybdis' Mouth (Merciless)|Typhoon Nemo]]. His effectiveness remains limited due to Single Attacks, but he can at least do well at slowing [[Relic Bun-Bun]] and [[Primeval Cyclone]]. Later on, he is again outshined in this role by [[Master Uril (Special Cat)|Master Uril]], who has higher range and Area Attacks plus a ridiculously powerful True Form.
+
+'''Attack Buff''' has little value, but '''HP Buff''', combined with '''Resist Curse''', can at least somewhat improve Rodeo Cat's usability against Relics. '''Recovery Speed Up''' is also important to facilitate stacking, since the slow chance is too low for his attack rate.
+
+==='''Orb'''===
+Its low health and damage, as well as a bad overall compatibility to Dark enemies make equipping any orb nigh pointless. In theory, a Relic defence orb might work, but due to Relic enemies' extreme damage output it is unlikely to make much of a difference.
+
+A-grade curse resist orb with same talent unlocked for immunity.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Rawhide|Unit Speed Up (Sm)|Cow Cat|Cat Eastwood|jpname=カウボーイ}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 145
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni145 f00.png
+|Image2 = Uni145 c00.png
+|Image3 = Uni145 s00.png
+|Name1 = Cat Gunslinger
+|Desc1 = Nameless legend of the Western frontier.<br>Today, he's out bringing bandits to justice.<br>May Slow Dark enemies.
+|Name2 = Cat Eastwood
+|Desc2 = A wandering gunman of legend, wielding<br>his pistol for justice! Italian is his first language.<br>May Slow Dark enemies.
+|Name3 = Rodeo Cat
+|Desc3 = Retired from the desperado life and now in<br>training to win the big bullriding competition.<br>May Slow Dark enemies.
+|Name1 (JP) = ねこガンマン (Neko Ganman, Gunman Cat)
+|Desc1 (JP) = 弱きを助け強きをくじく伝説のガンマン<br>今日も保安官に犯罪者を引き渡す<br>たまに黒い敵の動きを遅くする
+|Transl1 (JP) = A legendary gunman who helps the weak with firmness.<br>Even today, it continues to hand over criminals to the security<br>guards. Sometimes slows Dark enemies.
+|Name2 (JP) = ねこウエスタン (Neko Uesutan, Western Cat)
+|Desc2 (JP) = 自己保身のため権力に屈服することもいとわない<br>伝説のガンマン。今日も保安官に小銭を差し出す<br>たまに黒い敵の動きを遅くする
+|Transl2 (JP) = A legendary gunman who's unwilling to yield to authorities<br>for the sake of self protection. Even today, it continues to<br>bribe the security guards. Sometimes slows Dark enemies.
+|Name3 (JP) = ねこロデオ (Neko Rodeo, Rodeo Cat)
+|Desc3 (JP) = ロデオ大会に向けてアピールする伝説のガンマン<br>大会当日は予定があるので棄権する予定<br>たまに黒い敵の動きを遅くする
+|Transl3 (JP) = A legendary gunman who's working towards the rodeo tournament.<br>Plans to forfeit on the day of the tournament by claiming<br>to have other plans. Sometimes slows Dark enemies.
+|Name1 (TW) = 神槍手貓
+|Desc1 (TW) = 助弱不扶強的傳說神槍手<br>今天也幫忙警察抓出犯罪者<br>有時候使黑色敵人動作變慢
+|Name2 (TW) = 木馬牛仔哥
+|Desc2 (TW) = 為了保護自身不介意向權力低頭的<br>木馬牛仔貓。今天也小請了保安官們<br>有時候使黑色敵人動作變慢。
+|Name3 (TW) = 騎牛機神槍手貓
+|Desc3 (TW) = 為了騎牛術大賽而積極練習的傳說神槍手<br>搞了半天大賽那天撞到其他活動所以棄權<br>有時候使黑色敵人動作變慢。
+|Name1 (KR) = 건맨 고양이
+|Desc1 (KR) = 약한 자를 돕고 강한 자를 제압하는 전설의 건맨<br>오늘도 보안관에게 범죄자를 넘긴다<br>가끔 검은 적의 움직임을 느리게한다
+|Name2 (KR) = 웨스턴 고양이
+|Desc2 (KR) = 자신을 보호하기 위해 권력에 굴복하는 것도 마다하지<br>않는 전설의 건맨. 오늘도 보안관에게 떡값을 건넨다<br>가끔 검은 적의 움직임을 느리게한다
+|Name3 (KR) = 로데오 고양이
+|Desc3 (KR) = 로데오 대회를 위해 맹훈련 중인 전설의 건맨.<br>대회 당일에는 약속이 있어 기권할 예정<br>가끔 검은 적의 움직임을 느리게한다
+|Name1 (Switch) = Cat Gunslinger
+|Desc1 (Switch) = Nameless legend of the Western frontier.<br>Today, he's out bringing bandits to justice.<br>Might Slow Dark enemies.
+|Name2 (Switch) = Cat Eastwood
+|Desc2 (Switch) = A wandering gunman of legend, wielding<br>his pistol for justice! Italian is his first language.<br>Might Slow Dark enemies.
+}}
+
+==Cost==
+*Chapter 1: 430¢
+*Chapter 2: 645¢
+*Chapter 3: 860¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cat Gunslinger
+|Normal Base HP = 310
+|Normal Base AP = 80
+|Normal Range = 290
+|Normal Foreswing = 4
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 81
+|Normal Speed = 9
+|Normal KB = 3
+|Normal Cost = 430
+|Normal Recharge = 460
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Cat Eastwood
+|Evolved Base HP = 360
+|Evolved Base AP = 93
+|Evolved Range = 290
+|Evolved Foreswing = 4
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 81
+|Evolved Speed = 9
+|Evolved KB = 3
+|Evolved Cost = 430
+|Evolved Recharge = 460
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|True Name = Rodeo Cat
+|True Base HP = 460
+|True Base AP = 106
+|True Range = 320
+|True Foreswing = 4
+|True Attack Cooldown = 0
+|True Attack Length = 83
+|True Speed = 9
+|True KB = 3
+|True Cost = 430
+|True Recharge = 460
+|True Attack Type = Single
+|True Targets = Dark
+|True Abilities = {{AbilityIcon|Slow}} 30% chance to [[Slow|slow]] target traits for 120f <sub>4 seconds</sub>
+|Lv.MAX = Lv.50+80<br>Lv.40+20<sup>BCU!</sup>
+|Scaling = 20x7,10x2,5x11
+|Orb = true
+|validation = on
+|val-Normal-Health = 310 HP
+|val-Normal-Attack Power = 80 damage<br>(29.63 DPS)
+|val-Normal-Attack Range = 290
+|val-Normal-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Normal-Movement Speed = 9
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 4f <sup>0.13s</sup><br>(77f <sup>2.57s</sup> backswing)
+|val-Normal-Recharge Time = 15.33 ~ 6.53 seconds
+|val-Normal-MaxHP = 5,270 HP
+|val-Normal-MaxAttack = 1,360 damage<br>(503.7 DPS)
+|val-Evolved-Health = 6,120 HP
+|val-Evolved-Attack Power = 1,580 damage<br>(585.19 DPS)
+|val-Evolved-Attack Range = 290
+|val-Evolved-Attack Frequency = 81f <sub>2.7 seconds</sub>
+|val-Evolved-Movement Speed = 9
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 4f <sup>0.13s</sup><br>(77f <sup>2.57s</sup> backswing)
+|val-Evolved-Recharge Time = 15.33 ~ 6.53 seconds
+|val-True-Health = 7,820 HP
+|val-True-Attack Power = 1,802 damage<br>(651.33 DPS)
+|val-True-Attack Range = 320
+|val-True-Attack Frequency = 83f <sub>2.77 seconds</sub>
+|val-True-Movement Speed = 9
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 4f <sup>0.13s</sup><br>(79f <sup>2.63s</sup> backswing)
+|val-True-Recharge Time = 15.33 ~ 6.53 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Cat Eastwood
+|Evolved Image = Uni145 c00.png
+|True Name = Rodeo Cat
+|True Image = Uni145 s00.png
+|True Description = True Form evolution gains improved<br>defense, range and attack power. Plus,<br>Dark enemies are Slowed for longer.
+|Catfruit1 = GreenSeed
+|Catfruit2 = RedSeed
+|Catfruit3 = BlueSeed
+|Catfruit4 = YellowSeed
+|Catfruit5 = PurpleFruit
+|Quantity Catfruit1 = x1
+|Quantity Catfruit2 = x2
+|Quantity Catfruit3 = x3
+|Quantity Catfruit4 = x2
+|Quantity Catfruit5 = x2
+|Quantity XP = 200,000
+}}
+
+==Talents==
+*'''[[Special Abilities#Resist|Resist Curse]]''': Reduces curse duration by 16%, improves by 6% per level up to 70% (Total Cost: 75 NP)
+*'''Target [[:Category:Relic Enemies|Relic]]''' (Cost: 50 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 75 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 75 NP)
+*'''[[Special Abilities#Stat Enhancements|Recover Speed Up]]''': Reduces recharge time by 2f <sup>0.07s</sup>, improves by 2f <sup>0.07s</sup> per level up to 20f <sup>0.67s</sup> (Total Cost: 75 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Nyanko Defence Force]]===
+Cat Gunslinger and its evolutions appear in Nyanko Defence Force as a Rare team member. It can be obtained through the gacha system.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ねこガンマン (Neko Ganman, Gunman Cat)
+! scope="row" style="text-align: center;"|ねこウエスタン (Neko Uesutan, Western Cat)
+! scope="row" style="text-align: center;"|ねこロデオ (Neko Rodeo, Rodeo Cat)
+|-
+| colspan="2" |[[File:FC09 T1.png|center|200px]]
+|[[File:FC09 T2.png|center|200px]]
+|[[File:FC09 T3.png|center|200px]]
+|-
+! scope="col" colspan="4" style="text-align: center;"|Stats At Level 30
+|-
+! scope="col" colspan="2" |Rarity
+| colspan="2" |Rare
+|-
+! scope="col" rowspan="3" |Attack
+! scope="col" |3/3 Zodiac Signs
+| colspan="2" |160
+|-
+! scope="col" |2/3 Zodiac Signs
+| colspan="2" |120
+|-
+! scope="col" |1/3 Zodiac Signs
+| colspan="2" |100
+|-
+! scope="col" colspan="2" |Skill
+| colspan="3" |[[File:Skill 17.jpg|50px]] Energy bottle appearance rate increases by 40%
+|}
+</div>
+
+{{Gallery|Uni145 f00}}
+
+==Trivia==
+*Prior to [[Version 4.7 Update|Version 4.7]], Cat Gunslinger was a part of two other [[Cat Combo]]s: [[Crackshot (Removed Combo)|Crackshot]] and [[Triggermen (Removed Combo)|Triggermen]].
+*Cat Eastwood is an obvious reference to actor [[wikipedia:Clint Eastwood|Clinton "Clint" Eastwood]].
+*Cat Gunslinger's and Cat Eastwood's Japanese descriptions have almost the opposite tone, with Gunslinger's about serving justice, and Eastwood's being about self-protection.
+*Cat Eastwood's first language being Italian could possibly reference the "[[wikipedia:Spaghetti Western|spaghetti Western]]" movie genre. Additionally, Clint Eastwood acted in one of the most famous spaghetti Western films, ''[[w:A Fistful of Dollars|A Fistful of Dollars]]''.
+
+==Reference==
+*https://battlecats-db.com/unit/146.html
+
+----
+{{CatNav|Cat Base Mini|Stilts Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Resist Curse Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]
+[[Category:Cats with Recover Speed Up Talent]]

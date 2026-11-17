@@ -1,0 +1,94 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Korea (Into the Future)/Outbreak|here]].''
+'''Korea''' is the 2nd stage in [[Into the Future]].
+
+{{Story Info
+|stage name = [[File:Wc044.png]]
+|stage location = [[File:Korea.png]]
+'''Into The Future'''
+|energy = 30
+|energy2 = 40
+|energy3 = 50
+|enemy castle hp = 4,000 HP
+|enemy castle hp2 = 6,000 HP
+|enemy castle hp3 = 8,000 HP
+|enemies = {{Magnification|Snache|150%
+|Those Guys|150%
+|Hippoe|150%
+|Doge|150%
+|Shibalien|50%}}
+|enemies2 = {{Magnification|Snache|400%
+|Those Guys|400%
+|Hippoe|400%
+|Doge|400%
+|Shibalien|250%}}
+|enemies3 = {{Magnification|Hippoe|800%
+|Snache|800%
+|Those Guys|800%
+|Doge|800%
+|Shibalien|500%}}
+|treasure = - [[Treasure|Ginseng Root]]
+|treasure2 = - [[Treasure|Ginseng Root]]
+|treasure3 = - [[Treasure|Ginseng Root]]
+|score reward = '''8,500''': [[Cat Food]] +10<br>
+'''5,000''': +25,000 XP
+|score reward2 = '''9,000''': [[Cat Food]] +10<br>
+'''7,000''': +37,500 XP
+|score reward3 = '''9,000''': [[Cat Food]] +10<br>
+'''7,500''': +50,000 XP
+|max enemies = 5
+|max enemies2 = 5
+|max enemies3 = 8
+|XP = 1,300 XP
+|width = 4,400
+|jpname = Korea
+|script = 韓国
+|romaji = Kankoku
+|jptreasure = Kimchi
+|twname = Korea
+|twscript = 韓國
+|twromaji = Hánguó
+|twtreasure = Korean Ginseng
+|krname = Korea
+|krscript = 한국
+|krromaji = Hangug
+|krtreasure = Korean Ginseng
+|chapter = [[Into the Future]]
+|prev stage = [[Japan (Into the Future)|Japan]]
+|next stage = [[China (Into the Future)|China]]
+}}
+
+==Battleground==
+===<u>Chapters 1 & 2</u>===
+{{EnemiesAppearing|Snache|Those Guys|Hippoe|Doge|Shibalien}}
+*Infinite [[Snache]]s spawn after 10 seconds<sup>300f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Those Guys]] spawn after 16.67 seconds<sup>500f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Hippoe]]s spawn after 40 seconds<sup>1,200f</sup>, delay 40~60 seconds<sup>1,200f~1,800f</sup>.
+*Infinite [[Doge]]s spawn after 50 seconds<sup>1,500f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base reaches 90% HP:
+**1 [[Hippoe]] spawns.
+**1 [[Shibalien]] spawns.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Hippoe|Snache|Those Guys|Doge|Shibalien}}
+*1 [[Hippoe]] spawns.
+*1 [[Hippoe]] spawns after 5 seconds<sup>150f</sup>.
+*1 [[Hippoe]] spawns after 10 seconds<sup>300f</sup>.
+*Infinite [[Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*Infinite [[Those Guys]] spawn after 20 seconds<sup>600f</sup>, delay 10~20 seconds<sup>300f~600f</sup>.
+*Infinite [[Doge]]s spawn after 26.67 seconds<sup>800f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*When the base reaches 90% HP:
+**1 [[Hippoe]] spawns.
+**1 [[Shibalien]] spawns.
+
+==Strategy==
+As this is the 2nd stage of Into the Future, spamming [[Cow Cat (Normal Cat)|Giraffe Cats]] or [[Crazed Cow Cat (Super Rare Cat)|Crazed Cow Cat/Crazed Giraffe Cat]] is more than enough to go for a high score.
+
+==Reference==
+*https://battlecats-db.com/stage/s03003z-02.html
+*https://battlecats-db.com/stage/s03004z-02.html
+*https://battlecats-db.com/stage/s03005z-02.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Into the Future Stages]]
+[[Category:Timed Score Stages]]

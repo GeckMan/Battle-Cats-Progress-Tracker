@@ -1,0 +1,150 @@
+{{JPExclusive}}
+:''For the enemies encountered in the [[Castle & Dragon Collaboration Event]], see [[Dragon Rider (Enemy)]] or [[Flame Dragon Rider (Enemy)]].''
+'''Dragon Rider''' is a [[:Category:Rare Cats|Rare Cat]] that can be unlocked during the [[Castle & Dragon Collaboration Event]] by completing the stage [[Tradition]] with a [[Timed Score Reward|Timed Score]] of at least 4,500. It was added in [[Version 4.6 Update|Version 4.6]]. [[True Form]] also added in Version 4.6 doubles attack power.
+
+{{Cat Info
+|ID = 253
+|rarity = RR
+|name1 = Dragon Rider
+|name2 = Horn Dragon Rider
+|name3 = Flame Dragon Rider
+}}
+
+==Evolution==
+Evolves into '''Horn Dragon Rider''' at level 10.
+
+Evolves into '''Flame Dragon Rider''' when obtained from the [[Road to Dragon Rider Evolution (Normal)|Road to Dragon Rider Evolution]] stage and is level 20 or above.
+
+==Strategy/Usage==
+This unit has pretty much no use at all, regardless of where in the game you're at. In early game, its stats are very poor, its upgrade cost is too high to improve its usage and there are always better picks for its role such as [[Gross Cat (Normal Cat)|Gross Cat]] or [[Salon Cat (Rare Cat)|Paris Cat]]. Later on, its role is non-existant. Units like [[Brainwashed Gross Cat (Super Rare Cat)|Brainwashed Macho Legs]] or [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] completely outclass it as a midranger, and Talented [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon Cat]] blows it out of the water.
+
+At least it can help to get some [[User Rank]], if you don't have any cheaper or better unit to upgrade, that is.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 253
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni253 f00.png
+|Image2 = Uni253 c00.png
+|Image3 = Uni253 s00.png
+|Name1 (JP) = ドラゴンライダー (Doragon Raidā, Dragon Rider)
+|Desc1 (JP) = 城とドラゴンから参戦！<br>伝統的な手法で攻撃するニンゲンとドラゴン
+|Transl1 (JP) = Joined the war from "Castle and Dragon"!<br>Human and dragon that attack with traditional methods.
+|Name2 (JP) = ボーンドラゴンライダー (Hōn Doragon Raidā, Horn Dragon Rider)
+|Desc2 (JP) = 城とドラゴンから参戦！<br>ボーンボディに変身したドラゴンライダー
+|Transl2 (JP) = Joined the war from "Castle and Dragon"!<br>The dragon rider who transformed himself into a bone body.
+|Name3 (JP) = フレイムドラゴンライダー (Fureimu Doragon Raidā, Flame Dragon Rider)
+|Desc3 (JP) = 城とドラゴンから参戦！<br>炎竜へと変身し炎の力を手に入れたドラゴンライダー
+|Transl3 (JP) = Joined the war from "Castle and Dragon"!<br>The dragon rider who transformed himself into a flame dragon and gained the power of flame.
+|Name1 (TW) = 龍騎士
+|Desc1 (TW) = 從城與龍來參戰！<br>以傳統方式作戰的人類與巨龍搭檔
+|Name2 (TW) = 骨龍騎士
+|Desc2 (TW) = 從城與龍來參戰！<br>變身為骷髏的龍騎士
+|Name3 (TW) = 火龍騎士
+|Desc3 (TW) = 從城與龍來參戰！<br>變身為火龍獲得火焰之力的龍騎士
+}}
+
+==Cost==
+*Chapter 1: 450円
+*Chapter 2: 675円
+*Chapter 3: 900円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Dragon Rider
+|Normal Base HP = 450
+|Normal Base AP = 60
+|Normal Range = 330
+|Normal Foreswing = 23
+|Normal Attack Cooldown = 39
+|Normal Attack Length = 35
+|Normal Speed = 12
+|Normal KB = 3
+|Normal Cost = 450
+|Normal Recharge = 370
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Horn Dragon Rider
+|Evolved Base HP = 450
+|Evolved Base AP = 60
+|Evolved Range = 330
+|Evolved Foreswing = 23
+|Evolved Attack Cooldown = 39
+|Evolved Attack Length = 35
+|Evolved Speed = 12
+|Evolved KB = 3
+|Evolved Cost = 450
+|Evolved Recharge = 370
+|Evolved Attack Type = Single
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Flame Dragon Rider
+|True Base HP = 450
+|True Base AP = 120
+|True Range = 330
+|True Foreswing = 23
+|True Attack Cooldown = 39
+|True Attack Length = 35
+|True Speed = 12
+|True KB = 3
+|True Cost = 450
+|True Recharge = 370
+|True Attack Type = Single
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 450 HP
+|val-Normal-Attack Power = 60 damage<br>(29.03 DPS)
+|val-Normal-Attack Range = 330
+|val-Normal-Attack Frequency = 62f <sub>2.07 seconds</sub>
+|val-Normal-Movement Speed = 12
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 23f <sup>0.77s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Normal-Recharge Time = 12.33 ~ 3.53 seconds
+|val-Normal-MaxHP = 7,650 HP
+|val-Normal-MaxAttack = 1,020 damage<br>(493.55 DPS)
+|val-Evolved-Health = 7,650 HP
+|val-Evolved-Attack Power = 1,020 damage<br>(493.55 DPS)
+|val-Evolved-Attack Range = 330
+|val-Evolved-Attack Frequency = 62f <sub>2.07 seconds</sub>
+|val-Evolved-Movement Speed = 12
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 23f <sup>0.77s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-Evolved-Recharge Time = 12.33 ~ 3.53 seconds
+|val-True-Health = 7,650 HP
+|val-True-Attack Power = 2,040 damage<br>(987.1 DPS)
+|val-True-Attack Range = 330
+|val-True-Attack Frequency = 62f <sub>2.07 seconds</sub>
+|val-True-Movement Speed = 12
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 23f <sup>0.77s</sup><br>(12f <sup>0.4s</sup> backswing)
+|val-True-Recharge Time = 12.33 ~ 3.53 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni253 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/254.html
+
+----
+{{CatNav|Battle Balloon|Pretty Cat}}
+----
+
+{{Castle & Dragon}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats requiring Awakening for True Form]]

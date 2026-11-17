@@ -1,0 +1,94 @@
+'''Primeval Cyclone''' (エンシェントサイクロン, ''Enshento Saikuron'', '''Ancient Cyclone''') is a [[:Category:Relic Enemies|Relic]] [[:Category:Cyclones|Cyclone]] introduced in [[Charybdis' Mouth (Merciless)|Typhoon Nemo]]. It was added in [[Version 8.1 Update|Version 8.1]].
+
+{{Enemy Info
+|name = Primeval Cyclone
+|image = E 438.png
+|appearance = [[Charybdis' Mouth (Merciless)|Typhoon Nemo]]<br>
+[[Typhoon Nihil]]<br>[[Infernal Tower/Floor 38|Infernal Tower - Floor 38]]<br>[[Infernal Tower/Floor 42|Infernal Tower - Floor 42]]<br>[[Relic Citadel/Floor 8]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Compared to other [[:Category:Cyclones|Cyclone]]s, Primeval Cyclone moves very fast at 18 speed and curses everything it hits. However, it has a relatively low damage output (7,777), which allows it to be stopped via [[Weaken|weaken]]. This applies before the activation of its [[Strengthen|strengthen]] ability, which triples its damage to 23,331 per hit.
+
+==Strategy==
+[[Delinquent Cat (Super Rare Cat)|Ultra Delinquent Cat]], [[Onmyoji Cat (Rare Cat)|Thaumaturge Cat]], [[Talents|Talented]] [[Cat Gunslinger (Rare Cat)|Rodeo Cat]] and Talented [[Fortune Teller Cat (Rare Cat)|Doctor Cat]] can be used for crowd-control, while [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]] and [[Idi:N (Special Cat)|Idi:N2]] can help deal damage when Primeval Cyclone is subdued. Strategies based around [[:Category:Uber Rare Cats|Uber Rares]] may need a [[Battle Items#Rich Cat|Rich Cat]] in order to work.
+
+[[Freshman Cat Jobs (Super Rare Cat)|Prof. Cat Jobs]], [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] and "Weaken" Effects Up [[Cat Combo|Combos]] (ex. [[Power of Darkness (Combo)|Power of Darkness]], [[Cat High (Combo)|Cat High]]) is another way to defeat it, as he can weaken this enemy's damage to a pathetic 77. If you decide to use Prof. Cat Jobs, it is important you '''DO NOT''' bring Thaumaturge Cat, Talented Slapstick Cats, [[Red Riding Mina (Special Cat)|Awakened Mina]] or any other cat that can weaken Relic enemies, as their effects will override Prof. Cat Jobs's superior weaken ability.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 438
+|Type = Relic
+|Image1 = Enemy icon 438.png
+|Name1 = Primeval Cyclone
+|Desc1 = The most ancient of cyclones, born from<br>the Big Bang itself. Hasn't weakened even<br>after devouring the dinosaurs. Inflicts Curse,<br>grows stronger after taking damage.
+|Name1 (JP) = エンシェントサイクロン (Enshento Saikuron, Ancient Cyclone)
+|Desc1 (JP) = 遥か昔に発生した地球最古のサイクロン。<br>恐竜を一掃してなお吸引力は衰えない。<br>特殊効果を封印する「古代の呪い」を持ち<br>自らの消滅が近づくと破壊力が増すという。
+|Transl1 (JP) = Earth's oldest cyclone, which occurred long ago.<br>Its suction power hasn't gone down even after wiping out the dinosaurs.<br>Has an "Ancient Curse" that seals special effects.<br>It is said to increase its destructive power when its end draws near.
+|Name1 (TW) = 古代旋風
+|Desc1 (TW) = 遙遠從前產生的地球最古老旋風<br>可一掃恐龍後吸引力仍不會減弱<br>持有封印特殊效果的「古代詛咒」能力<br>自己快消滅時破壞力就會增強。
+|Name1 (KR) = 고대 사이클론
+|Desc1 (KR) = 먼 옛날 발생한 지구에서 가장 오래된 사이클론<br>공룡을 한번에 청소하고도 흡입력이 줄어들지 않는다<br>특수 효과를 봉인하는 「고대의 저주」를 가지며<br>소멸이 가까워질 때 파괴력이 증가한다고 한다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Typhoon Nemo: [[Charybdis' Mouth (Merciless)]]
+*[[Typhoon Nihil]]:
+**[[Creation's Gyre (Merciless)]]
+**[[Extinction's Vortex (Merciless)]]
+*[[Infernal Tower]]:
+**[[Infernal Tower/Floor 38|Floor 38]]
+**[[Infernal Tower/Floor 42|Floor 42]]
+*[[Relic Citadel]]: [[Relic Citadel/Floor 8|Floor 8]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Primeval Cyclone
+|Health = 2333333
+|Attack Power = 7777
+|Attack Range = 180
+|Attack Type = Area
+|Time Between Attacks = 6
+|Movement Speed = 18
+|Knockback = 1
+|Foreswing = 1
+|Backswing = 5
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 200% at 50% health<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 450f <sub>15 seconds</sub>
+|Element = Relic
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+HD Primeval Cyclone.png|HD Primeval Cyclone
+438 e.png|Primeval Cyclone's spritesheet
+Green circle.gif|Primeval Cyclone's animations
+Medal 027.png|Primeval Cyclone on the ''Ancient Tempest'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Primeval Cyclone has the fastest attack rate and highest DPS of all [[:Category:Relic Enemies|Relic Enemies]].
+
+==Reference==
+*https://battlecats-db.com/enemy/440.html
+
+----
+{{EnemyNav|Lucky Dags|Li'l Bore}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Relic Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Enemies with Curse ability]]
+[[Category:Cyclones]]

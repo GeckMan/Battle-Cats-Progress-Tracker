@@ -1,0 +1,138 @@
+:''This article is about the Cat Unit. For the enemy, see [[Ranma Saotome (M) (Enemy)]].''
+'''Ranma Saotome (M)''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Ranma 1/2 Collaboration Event]]. He was added in [[Version 10.4 Update|Version 10.4]].
+
+{{Cat Info
+|ID = 596
+|rarity = UR
+|name1 = Ranma Saotome (M)
+|name2 = Ranma Saotome (F)
+}}
+
+==Evolution==
+Evolves into '''Ranma Saotome (F)''' at level 10.
+
+==Strategy/Usage==
+Ranma Saotome (M) has [[Massive Damage]] against Red and Floating enemies, so they can chip away at Floating and Red enemies with a spike-like attack which, thanks to Multi-Hit, can be very effective at fending off enemies such as [[Brollow]]. Their [[Omni Strike]] can't hit far in the backline, due to it only having 75 piercing range, but it can ensure the attack hits melee enemies all in the group, as well as lowering the chance of Multi-hit making them miss.
+
+Ranma Saotome also has Slow Immune or Freeze Immune depending on the form (Slow immune in first form and Freeze immune in second). This is to counter enemies such as [[Henry]] and [[Croakley]], but unfortunately, those enemies are traitless, so they aren't effected by the Massive Damage, but he's still useful in Henry/Croakley levels where there is also Red or Floating enemies. However, Ranma has one major con that drags them down far: they have low base DPS. Only around 5k DPS for 325 range, which is very low. Even their effective DPS of 15k-20k is quite low for a massive damage unit.
+
+{{Job|Classification = Nuker & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 596
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni596 f00.png
+|Image2 = Uni596 c00.png
+|Name1 = Ranma Saotome (M)
+|Desc1 = Joining from "Ranma 1/2"! Heir to the<br>Saotome style of Anything Goes Martial Arts.<br>Massive Omnistrike damage to Red/Floating.
+|Name2 = Ranma Saotome (F)
+|Desc2 = Joining from "Ranma 1/2"! When doused in water,<br>Cursed Springs magic turns him into a girl!<br>Massive Omnistrike damage to Red/Floating.
+|Name1 (JP) = 早乙女乱馬(男) (Saotome Ranba (Otoko), Saotome Ranma (Male))
+|Desc1 (JP) = 『らんま1/2』より参戦！<br>無差別格闘早乙女流の二代目を継ぐ少年<br>赤い敵と浮いてる敵に超ダメージを与える(全方位攻撃)
+|Transl1 (JP) = Participating from Ranma 1/2!<br>The boy who succeeds the second generation of the indiscriminate fighting Saotome style<br>Deals super damage to Red Enemies and Floating Enemies (Omni-directional Attack)
+|Name2 (JP) = 早乙女らんま(女) (Saotome Ranba (Onna), Saotome Ranma (Female))
+|Desc2 (JP) = 『らんま1/2』より参戦！中国修行中、呪われた泉「呪泉郷」<br>の娘溺泉に落ち水を被ると女の子の姿へ変身する体に…<br>赤い敵と浮いてる敵に超ダメージを与える(全方位攻撃)
+|Transl2 (JP) = Participating from Ranma 1/2! During her training in China, she fell into a cursed spring called "Jusenkyo"<br>and was transformed into a girl when she was covered with water...<br>Deals super damage to Red Enemies and Floating Enemies (Omni-directional Attack)
+|Name1 (TW) = 早乙女亂馬(男)
+|Desc1 (TW) = 從「亂馬1/2」來參戰！<br>無差別格鬥早乙女流第二代繼承人少年<br>可以給予紅色與飄浮敵人超大傷害(全方位攻擊)
+|Name2 (TW) = 早乙女亂馬(女)
+|Desc2 (TW) = 從「亂馬1/2」來參戰！在中國修行時不慎掉入「咒泉鄉」<br>的娘溺泉，從此之後變成遇水則會變成女生的體質…。<br>可以給予紅色與飄浮敵人超大傷害(全方位攻擊)
+|Name1 (KR) = 사오토메 란마(남)
+|Desc1 (KR) = 『란마 1/2』에서 참전!<br>무차별 격투 사오토메류의 2대를 잇는 소년<br>빨간 적과 떠있는 적에 초 데미지를 입힌다 (전방위 공격)
+|Name2 (KR) = 사오토메 란마(여)
+|Desc2 (KR) = 『란마 1/2』에서 참전! 중국 수행 중, 저주받은 샘물 '주천향'의<br>낭익천에 빠져 물을 뒤집어 쓰면 여자로 변하는 몸으로...<br>빨간 적과 떠있는 적에 초 데미지를 입힌다 (전방위 공격)
+}}
+
+==Cost==
+*Chapter 1: 2,800¢
+*Chapter 2: 4,200¢
+*Chapter 3: 5,600¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Ranma Saotome (M)
+|Normal Base HP = 3600
+|Normal Base AP = 525,525,525
+|Normal Range = 325
+|Normal Foreswing = 24,42,60
+|Normal Attack Cooldown = 91
+|Normal Attack Length = 91
+|Normal Speed = 18
+|Normal KB = 4
+|Normal Cost = 2800
+|Normal Recharge = 3000
+|Normal Attack Type = Area
+|Normal Targets = Red,Floating
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,925 at 24f <sup>0.8s</sup>, 8,925 at 42f <sup>1.4s</sup>, 8,925 at 60f <sup>2s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -600~400)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Ranma Saotome (F)
+|Evolved Base HP = 3600
+|Evolved Base AP = 525,525,525
+|Evolved Range = 325
+|Evolved Foreswing = 24,42,60
+|Evolved Attack Cooldown = 91
+|Evolved Attack Length = 91
+|Evolved Speed = 18
+|Evolved KB = 4
+|Evolved Cost = 2800
+|Evolved Recharge = 3000
+|Evolved Attack Type = Area
+|Evolved Targets = Red,Floating
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (8,925 at 24f <sup>0.8s</sup>, 8,925 at 42f <sup>1.4s</sup>, 8,925 at 60f <sup>2s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -600~400)<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Immune to Freeze}} [[Immune to Freeze]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 3,600 HP
+|val-Normal-Attack Power = 1,575 damage<br>(312.91 DPS)
+|val-Normal-Attack Range = 325
+|val-Normal-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Normal-Movement Speed = 18
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 24f <sup>0.8s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Normal-Recharge Time = 100 ~ 91.2 seconds
+|val-Normal-MaxHP = 61,200 HP
+|val-Normal-MaxAttack = 26,775 damage<br>(5,319.54 DPS)
+|val-Evolved-Health = 61,200 HP
+|val-Evolved-Attack Power = 26,775 damage<br>(5,319.54 DPS)
+|val-Evolved-Attack Range = 325
+|val-Evolved-Attack Frequency = 151f <sub>5.03 seconds</sub>
+|val-Evolved-Movement Speed = 18
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 24f <sup>0.8s</sup><br>(31f <sup>1.03s</sup> backswing)
+|val-Evolved-Recharge Time = 100 ~ 91.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni596 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/597.html
+
+----
+{{CatNav|Blooming Kamukura|Akane Tendo}}
+----
+
+{{Ranma 1/2}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Multi-Hit Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Freeze Immunity]]

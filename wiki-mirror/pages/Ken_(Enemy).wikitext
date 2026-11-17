@@ -1,0 +1,93 @@
+:''This article is about the enemy. For the Cat Unit, see [[Ken (Uber Rare Cat)]].''
+'''Ken''' is a [[:Category:Red Enemies|Red]] enemy that appears in the [[Street Fighter Collaboration Event]]. He was added in [[Version 8.10 Update#Update 8.10.5|Version 8.10.5]].
+
+{{Enemy Info
+|name = Ken
+|image = E 486.png
+|first appearance = [[Rush & Blaze (Easy)]]
+|money drop = 1,000¢ - 3,950¢
+}}
+
+==Enemy==
+Ken has very high health and attack power along with an [[Omni Strike]] and a 100% chance to [[Knockback]] all Cat Units, although along with his multi-hit, this can make some of his attacks miss due to both factors.
+
+==Strategy==
+[[:Category:Anti-Red Cats|Anti-Red cats]] such as [[Crazed Fish Cat (Super Rare Cat)|Manic Islands]] can easily counter him along with meatshieds, in levels where he is protected you could use Long Range units like [[Red Riding Mina (Special Cat)|Red Riding Mina]] or ubers like [[EVA Unit-02 (Uber Rare Cat)|EVA Unit-02]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter - EASY -|Street Fighter - EASY -]]: [[Rush & Blaze (Easy)|Rush & Blaze]] (1%)
+*[[Street Fighter Collaboration Event#Street Fighter - NORMAL -|Street Fighter - NORMAL -]]:
+**[[Rush & Blaze (Normal)|Rush & Blaze]] (12%)
+**[[Impregnable Fortress (Normal)|Impregnable Fortress]] (35%)
+**[[The Supreme Evil (Normal)|The Supreme Evil]] (75%)
+*[[Street Fighter Collaboration Event#Street Fighter - HARD -|Street Fighter - HARD -]]:
+**[[Rush & Blaze (Hard)|Rush & Blaze]] (75%)
+**[[Invincible Fist (Hard)|Invincible Fist]] (100%)
+**[[Fists of Avarice (Hard)|Fists of Avarice]] (100%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS KEN (Easy)]] (3%)
+**[[VS KEN (Expert)]] (100%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/I Seek the Strongest|I Seek the Strongest]] (5%, 60%, 90%, 120%, 150%, 180%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Street Fighter Collaboration Event#Street Fighter (Easy)|Street Fighter (Easy)]]: [[Rush & Blaze (Easy)|Rush & Blaze]] (1%)
+*[[Street Fighter Collaboration Event#Street Fighter (Normal)|Street Fighter (Normal)]]:
+**[[Rush & Blaze (Normal)|Rush & Blaze]] (12%)
+**[[Impregnable Fortress (Normal)|Impregnable Fortress]] (35%)
+*[[Street Fighter Collaboration Event#Street Fighter (Hard)|Street Fighter (Hard)]]:
+**[[Rush & Blaze (Hard)|Rush & Blaze]] (75%)
+**[[Invincible Fist (Hard)|Invincible Fist]] (100%)
+*[[Street Fighter Collaboration Event/New Challenger|New Challenger]]:
+**[[VS KEN (Easy)]] (3%)
+**[[VS KEN (Expert)]] (100%)
+*[[Arena of Honor]]:
+**[[Arena of Honor/I Seek the Strongest (Oldest)|I Seek the Strongest]] (8%, 30%, 60%, 90%, 120%, 150%, 180%)
+**[[Arena of Honor/I Seek the Strongest (Old)|I Seek the Strongest]] (5%, 60%, 90%, 120%, 150%, 180%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ken
+|Health = 600000
+|Attack Power = 36000
+|Attack Range = 180
+|Attack Type = Area
+|Time Between Attacks = 117
+|Movement Speed = 16
+|Knockback = 2
+|Foreswing = 6
+|Backswing = 45
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">12,000</span> at 6f <sup>0.2s</sup>, <span class="scaled" data-type="ap">12,000</span> at 10f <sup>0.33s</sup>, <span class="scaled" data-type="ap">12,000</span> at 12f <sup>0.4s</sup>)<br>
+{{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -330~330)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units on 3rd hit
+|Element = Red
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+486 e.png|Ken's spritesheet
+IdleKen.gif|Ken's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/488.html
+
+----
+{{EnemyNav|Dhalsim|Car}}
+----
+
+{{Street Fighter}}
+{{Enemies}}
+[[Category:Collaboration Event Enemies]]
+[[Category:Red Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemy Units]]

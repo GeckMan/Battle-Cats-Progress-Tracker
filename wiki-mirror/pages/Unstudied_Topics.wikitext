@@ -1,0 +1,53 @@
+{{EnemiesAppearing|Croco|Kang Roo|Gary Gory}}
+'''Unstudied Topics''' is the twelfth stage in [[Season 1: School Days]].
+
+{{Stage Info
+|stage name = [[File:rc021.png]]
+[[File:Mapsn048 11 a en.png]]
+|stage location = [[File:Mapname048 a en.png]]
+|energy = 120
+|enemy castle hp = 140,000 HP
+|enemies = {{Magnification|Croco|400%
+|Kang Roo|400%
+|Gary Gory|100%}}
+|boss = {{Magnification|Croco|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +1 (65%)<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +2 (30%)<br>
+- [[Heartbeat Catcademy (Event Gacha)|Love Letter]] +3 (5%)
+|XP = 2,280 XP
+|width = 4,400
+|max enemies = 10
+|jpname = Only Hit Problems Cannot be Solved
+|script = 解けない問題に限って当たる
+|romaji = Tokenai Mondai ni Kagitte Ataru
+|star = 1
+|event = [[Heartbeat Catcademy]]
+|event-chapter = [[Season 1: School Days]]
+|max clears = 3
+|difficulty = ★4
+|prev stage = [[Reforming Comment]]
+|next stage = [[Cheater Handsigns]]
+}}
+
+==Battleground==
+*5 [[Croco]]s (400%) spawn, delay 3.33~10 seconds<sup>100f~300f</sup>.
+*5 [[Croco]]s (400%) spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*5 [[Croco]]s (400%) spawn after 33.33 seconds<sup>1,000f</sup>, delay 10~16.67 seconds<sup>300f~500f</sup>.
+*1 [[Kang Roo]] spawns after 30 seconds<sup>900f</sup>.
+*1 [[Kang Roo]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Croco]] (100%) spawns as the boss.
+**Infinite [[Croco]]s (400%) spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**3 [[Gary Gory|Gary Gories]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**3 [[Gary Gory|Gary Gories]] spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+As with all the other stages prior, meatshields and [[Paris Cat|Paris]] are sufficient.
+
+==Reference==
+*https://battlecats-db.com/stage/s24048-12.html
+
+{{Seasonal}}
+[[Category:Event Stages]]
+[[Category:Gauntlets]]

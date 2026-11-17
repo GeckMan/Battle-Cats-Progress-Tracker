@@ -1,0 +1,99 @@
+:''This article is about the enemy. For the Cat Unit, see [[Kagamine Rin & Len (Uber Rare Cat)]].''
+'''Kagamine Rin & Len''' are a [[:Category:Floating Enemies|Floating]] enemy that appear in the [[Hatsune Miku Collaboration Event]]. They were added in [[Version 9.4 Update|Version 9.4]].
+
+{{Enemy Info
+|name = Kagamine Rin & Len
+|image = E 502.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+They have [[Long Distance]] attacks with a guaranteed chance to [[Knockback|knockback]] and [[Slow|slow]] Cat Units. However, not much pushing needs to be done to reach to their blind spot, so sending in some [[:Category:Rusher-class Cats|rushers]] will do the job.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in INDONESIA]] (2%)
+**[[in TAIWAN]] (15%)
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+**[[in USA]] (75%)
+**[[in EUROPE]] (100%)
+*[[Electric Diva Strikes!]]:
+**[[Electric Diva Strikes!/Song 1~20|1st Song]] (3%)
+**[[Electric Diva Strikes!/Song 1~20|2nd Song]] (8%)
+**[[Electric Diva Strikes!/Song 1~20|3rd Song]] (15%)
+**[[Electric Diva Strikes!/Song 1~20|4th Song]] (30%)
+**[[Electric Diva Strikes!/Song 1~20|5th Song]] (50%)
+**[[Electric Diva Strikes!/Song 1~20|6th Song]] (70%)
+**[[Electric Diva Strikes!/Song 1~20|7th Song]] (90%)
+**[[Electric Diva Strikes!/Song 1~20|8th Song]] (110%)
+**[[Electric Diva Strikes!/Song 1~20|9th Song]] (130%)
+**[[Electric Diva Strikes!/Song 1~20|10th Song]] (150%)
+**[[Electric Diva Strikes!/Song 1~20|11th Song]] (195%)
+**[[Electric Diva Strikes!/Song 1~20|12th Song]] (240%)
+**[[Electric Diva Strikes!/Song 1~20|13th Song]] (285%)
+**[[Electric Diva Strikes!/Song 1~20|14th Song]] (330%)
+**[[Electric Diva Strikes!/Song 1~20|15th Song]] (375%)
+**[[Electric Diva Strikes!/Song 1~20|16th Song]] (400%)
+**[[Electric Diva Strikes!/Song 1~20|17th Song]] (425%)
+**[[Electric Diva Strikes!/Song 1~20|18th Song]] (450%)
+**[[Electric Diva Strikes!/Song 1~20|19th Song]] (475%)
+**[[Electric Diva Strikes!/Song 1~20|Last Song]] (500%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/MikuMiku Music Fest|MikuMiku Music Fest]] (50%, 125%, 200%, 275%)
+
+===[[:Category:Removed Content|Removed Stages]]===
+*[[Hatsune Miku Collaboration Event#MIKU EXPO|MIKU EXPO]]:
+**[[in INDONESIA]] (2%)
+**[[in TAIWAN]] (15%)
+**[[in JAPAN (MIKU EXPO)|in JAPAN]] (25%)
+**[[in USA]] (75%)
+**[[in EUROPE]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Kagamine Rin & Len
+|Health = 180000
+|Attack Power = 8000
+|Attack Range = 390
+|Attack Type = Area
+|Time Between Attacks = 220
+|Movement Speed = 16
+|Knockback = 4
+|Foreswing = 71
+|Backswing = 30
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 390~640)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] Cat Units for 60f <sub>2 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+502 e.png|Kagamine Rin & Len's spritesheet
+IdleKagamineRin&Len.gif|Kagamine Rin & Len's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/504.html
+
+----
+{{EnemyNav|Sakura Miku|MikuDoge}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Enemies with Slow ability]]
+[[Category:Long Distance Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

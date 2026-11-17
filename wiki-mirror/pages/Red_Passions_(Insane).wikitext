@@ -1,0 +1,63 @@
+{{EnemiesAppearing|Pigge|St. Pigge the 2nd|Ginger Snache|Bore}}
+:''Following [[Version 15.2 Update|Version 15.2]], the only way to access this stage is by playing the relevant difficulty line in [[Catfruit Buffet]].''
+'''Red Passions (Insane)''' is the third and final stage in [[Growing Red]].
+
+{{Stage Info
+|stage name = [[File:rc017.png]]
+[[File:Red Passions (Insane).png]]
+|stage location = [[File:Mapname002 b en.png]]
+|energy = 200
+|catamins = [[Catamin]] [A] x3
+|enemy castle hp = 540,000 HP
+|enemies = {{Magnification|Pigge|1,200%
+|St. Pigge the 2nd|400%
+|Ginger Snache|100%
+|Bore|150%}}
+|boss = {{Magnification|Ginger Snache|100%}}
+|treasure = - [[Catfruit|Red Catfruit]] +1 (60%, unlimited)<br>
+- [[Catfruit|Red Catfruit Seed]] +1 (27.2%, unlimited)<br>
+- [[Catfruit|Epic Catfruit]] +1 (2.8%, unlimited)
+|XP = 4,000 XP
+|width = 4,800
+|max enemies = 8
+|jpname = Red of Passion (Hard+++/Insane)
+|script = 紅の情熱 超激ムズ
+|romaji = Kurenai no Jōnetsu chō geki muzu
+|star = 1
+|event = [[:Category:Catfruit Stages|Catfruit Stages]]
+|event-chapter = [[Growing Red]]
+|difficulty = ★7
+|prev stage = [[Red Passions (Expert)]]
+|next stage = [[Catfruit Jubilee]] (''Continuation Stage'', 5%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 5%)<br>
+[[Catfruit Jubilee]] (''Continuation Stage'', 5%)
+|occurrence = every Wednesday
+}}
+
+==Battleground==
+*2 [[Pigge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~14.33 seconds<sup>150f~430f</sup>.
+*1 [[St. Pigge the 2nd]] spawns after 26.67 seconds<sup>800f</sup>.
+*3 [[Pigge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 5~14.33 seconds<sup>150f~430f</sup>.
+*2 [[St. Pigge the 2nd]]s spawn after 66.67 seconds<sup>2,000f</sup>, delay 16.67~33.33 seconds<sup>500f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[Ginger Snache]] spawns as the boss.
+**Infinite [[Ginger Snache]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**3 [[Ginger Snache]]s spawn, delay 5~10 seconds<sup>150f~300f</sup>.
+**2 [[Bore]]s spawn, delay 30 seconds<sup>900f</sup>.
+
+==Strategy==
+You should have some true forms by now. If you have [[Pirate Cat (Rare Cat)|Pirate Cat]], [[Apple Cat (Super Rare Cat)|iCat]], [[Bath Cat (Super Rare Cat)|Bath Cat]], etc, use them.
+
+This stage can also be beaten using a level 30+ [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], just as along as he is properly meatshielded and there are other cheap attackers to clear the peons.
+
+==Walkthrough==
+{{Walkthrough
+|YlCf4rEs81A|Chuck|
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s01099-03.html
+
+{{Guerrilla}}
+[[Category:Catfruit Stages]]
+[[Category:Event Stages]]

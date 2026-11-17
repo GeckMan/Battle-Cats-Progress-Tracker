@@ -1,0 +1,70 @@
+:''Not to be confused with the stage [[Wicked Cat]], the Cat Unit counterpart [[Brainwashed Cat (Super Rare Cat)|Brainwashed Cat]], or [[Malevolent Mohawk Cat]].''
+'''Wicked Cat''' (邪悪なネコ, ''Jaakuna Neko'', '''Wicked Cat''') is a [[Cat (Normal Cat)|Cat]]-turned-[[:Category:Aku Enemies|Aku]] introduced in the [[Wicked Cat]] event, which is unlocked after clearing [[Arcane Confluence]]. Although [[Brainwashed Cat (Super Rare Cat)|Brainwashed Cat]] is visually an allied counterpart of Wicked Cat, it is not obtained by defeating this enemy, but rather from [[:Category:Seasonal Gacha Events|seasonal]] [[Cat Capsule#Rare Capsule|Rare Capsule]] events. It was added in [[Version 10.8 Update|Version 10.8]].
+
+{{Enemy Info
+|name = Wicked Cat
+|image = E 561.png
+|money drop = 2,000¢ - 7,900¢
+|appearance = [[Wicked Cat]]<br>
+[[The Gates of Aku]]<br>
+[[Infernal Tower]]
+}}
+
+==Enemy==
+Wicked Cat is basically a nerfed [[Crazed Cat (Enemy)|Crazed Cat]] with the [[:Category:Aku Enemies|Aku]] trait and a very frail [[Shield]]. Its health and DPS are not that high, and its range is fairly short. While its Shield can be broken easily, its surprisingly high knockback count of 30 results in many, many Shield regenerations.
+
+==Strategy==
+Use many hard-hitting [[:Category:Area Attack Cats|Area Attackers]] that outrange Wicked Cat, like [[Salon Cat (Rare Cat)|Salon Cat]], [[Mer-Cat (Rare Cat)|Cameraman Cat]], [[Figure Skating Cats (Super Rare Cat)|Figure Skating Cats]] or [[Surfer Cat (Super Rare Cat)|Surfer Cat]]. If you are having trouble keeping it in place, use a [[:Category:Crowd-Controller-class Cats|crowd-controller]] like [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]. As the Shield needs to be removed often, it is recommended to either bring a [[:Category:Wave Attack Cats|Wave Attacker]] (e.g. [[Crazed Gross Cat (Super Rare Cat)|Crazed Gross Cat]]) to break it before big hits get wasted on it or to make use of highly damaging units who may skip knockbacks, such as [[Bahamut Cat (Special Cat)|Bahamut Cat]].
+
+Due to the constant knockbacks and Shield regeneration, the use of [[:Category:Shield Piercing Cats|Shield Piercing units]] and crowd-controllers is not recommended. Rather, if possible, focus on raw power.
+
+In [[Infernal Tower]] [[Infernal Tower/Floor 44|Floor 44]], Wicked Cat takes 2 minutes and 40 seconds to spawn, which is enough time to rush down [[Hannya]] before it shows up. With Hannya gone, you can safely strike Wicked Cat with whatever attackers you were using against the rest of the enemies.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Wicked Cat]]:
+**[[Devil's Nest (Cat)|Devil's Nest]] (100%)
+**[[Cats of Evil]] (200%)
+*Unleashing the Cats: [[The Gates of Aku]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 44|Floor 44]] (200%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Wicked Cat
+|Health = 120000
+|Attack Power = 1800
+|Attack Range = 240
+|Attack Type = Area
+|Time Between Attacks = 18
+|Movement Speed = 25
+|Knockback = 30
+|Foreswing = 8
+|Backswing = 10
+|Ability = {{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">4,800</span>; regenerates with 50% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+561 e.png|Wicked Cat's spritesheet
+IdleWickedCat.gif|Wicked Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/563.html
+
+----
+{{EnemyNav|Aku Cyclone|Wicked Tank Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Event Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Shields]]
+[[Category:Enemy Cats]]

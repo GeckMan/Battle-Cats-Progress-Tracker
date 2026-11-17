@@ -1,0 +1,125 @@
+:''Not to be confused with [[Li'l Shirou (Rare Cat)]].''
+'''Shirou the Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained as a [[Daily Bonus]] during the [[Fate/Stay Night: Heaven's Feel Collaboration Event]].  He was added in [[Version 8.2 Update|Version 8.2]].
+
+{{Cat Info
+|ID = 457
+|rarity = EX
+|name1 = Shirou the Cat
+|name2 = Novice Mage Shirou Cat
+}}
+
+==Evolution==
+Evolves into '''Novice Mage Shirou Cat''' at level 10.
+
+==Strategy/Usage==
+Unfortunately, Shirou barely functions as an anti-Dark outside of the early game. He may have decent DPS against Dark enemies, but he has nothing else going for him. His single target attacks can do nothing against the aggressive spam that many Black stages are known for. His abysmal HP and range mean that he would not survive long enough to actually use his DPS even against a single enemy. His cost and cooldown don't do him any favors, either. Even without the existence of any decent anti-Dark, Shirou is unfortunately doomed to the designation of 'UR/Labyrinth fodder' that haunts many collaboration units.
+
+{{Job|Classification = User Rank Dump}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 457
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni457 f00.png
+|Image2 = Uni457 c00.png
+|Name1 = Shirou the Cat
+|Desc1 = A Cat who strives to be a defender of justice.<br>Spent months in his room trying to summon<br>a Heroic Spirit. Strong vs. Dark enemies.
+|Name2 = Novice Mage Shirou Cat
+|Desc2 = Still hasn't succeeded at Heroic Spirit<br>summoning. Now leaves his room sometimes<br>to do night patrols. Strong vs. Dark enemies.
+|Name1 (JP) = ネコ士郎 (Neko Shirou, Shirou Cat)
+|Desc1 (JP) = 正義の味方を目指す少年に憧れるネコ<br>まずは英霊召喚しようと、ずっと部屋にこもっている<br>黒い敵にめっぽう強い
+|Transl1 (JP) = A Cat who admires a boy aiming for justice<br>Staying in its room, trying to summon a Heroic Spirit<br>Strong against Dark enemies
+|Name2 (JP) = 魔術師見習いネコ士郎 (Majutsushi Minarai Neko Shirou, Apprentice Magician Shirou Cat)
+|Desc2 (JP) = 未だ英霊を呼べていないネコ<br>初心にかえり、夜回りをするため外に出てみた<br>黒い敵にめっぽう強い
+|Transl2 (JP) = Hasn't been able to summon a Heroic Spirit yet<br>Going back to basics, it tried going outside for a night patrol<br>Strong against Dark enemies
+|Name1 (TW) = 士郎貓
+|Desc1 (TW) = 崇拜立志成為正義一方的少年的貓咪<br>想要召喚英靈，卻一直宅在家裡<br>善於攻擊黑色敵人
+|Name2 (TW) = 實習魔術師士郎貓
+|Desc2 (TW) = 至今仍未召喚過英靈的貓咪<br>回到初心，為巡更守夜而試著外出了<br>善於攻擊黑色敵人
+|Name1 (KR) = 고양이 시로
+|Desc1 (KR) = 정의의 사자가 되고자 하는 소년을 동경하는 고양이<br>우선은 영령을 소환하기 위해 계속 방에 틀어박혀 있다<br>검은 적에 엄청 강하다
+|Name2 (KR) = 마술사 견습생 고양이 시로
+|Desc2 (KR) = 아직 영령을 소환하지 못한 고양이<br>초심으로 돌아가 야간 순찰을 하기 위해 외출했다<br>검은 적에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 360¢
+*Chapter 2: 540¢
+*Chapter 3: 720¢
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Shirou the Cat
+|Normal Base HP = 750
+|Normal Base AP = 130
+|Normal Range = 170
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 58
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 360
+|Normal Recharge = 530
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Evolved Name = Novice Mage Shirou Cat
+|Evolved Base HP = 750
+|Evolved Base AP = 130
+|Evolved Range = 170
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 58
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 360
+|Evolved Recharge = 530
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 750 HP
+|val-Normal-Attack Power = 130 damage<br>(67.24 DPS)
+|val-Normal-Attack Range = 170
+|val-Normal-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 36f <sup>1.2s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Normal-Recharge Time = 17.67 ~ 8.87 seconds
+|val-Normal-MaxHP = 12,750 HP
+|val-Normal-MaxAttack = 2,210 damage<br>(1,143.1 DPS)
+|val-Evolved-Health = 12,750 HP
+|val-Evolved-Attack Power = 2,210 damage<br>(1,143.1 DPS)
+|val-Evolved-Attack Range = 170
+|val-Evolved-Attack Frequency = 58f <sub>1.93 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 36f <sup>1.2s</sup><br>(22f <sup>0.73s</sup> backswing)
+|val-Evolved-Recharge Time = 17.67 ~ 8.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni457 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/458.html
+
+----
+{{CatNav|Sakura Matou|Archer the Cat}}
+----
+
+{{Fate/Stay Night: Heaven's Feel}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Stamp Reward Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Strong ability]]

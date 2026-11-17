@@ -1,0 +1,64 @@
+{{EnemiesAppearing|Doge|Snache|Those Guys|Mooth|Le'boin}}
+'''Warm Stew''' is the third stage in [[Jingle Cat Bell (Monthly Event)|Jingle Cat Bell]].
+
+{{Stage Info
+|stage name = [[File:rc005.png]]
+[[File:Mapsn010 02 s en.png]]
+|stage location = [[File:Mapname010 s en.png]]
+|energy = 75
+|enemy castle hp = 40,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%
+|Mooth|100%}}
+|boss = {{Magnification|Le'boin|200%}}
+|enemies2 = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%
+|Mooth|150%}}
+|boss2 = {{Magnification|Le'boin|300%}}
+|enemies3 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%
+|Mooth|200%}}
+|boss3 = {{Magnification|Le'boin|400%}}
+|enemies4 = {{Magnification|Doge|300%
+|Snache|300%
+|Those Guys|300%
+|Mooth|300%}}
+|boss4 = {{Magnification|Le'boin|600%}}
+|treasure = - [[Reindeer Fish Cat (Rare Cat)|Reindeer Fish Cat]] (3%, 1 time)
+|XP = 2,250 XP
+|width = 4,200
+|max enemies = 10
+|jpname = Warm Stew
+|script = あったかいシチュー
+|romaji = Attakai Shichū
+|star = 4
+|event-chapter = [[Jingle Cat Bell (Monthly Event)|Jingle Cat Bell]]
+|difficulty = ★3
+|prev stage = [[That Song]]
+|next stage = [[Cat & Snow]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn, delay 4~16 seconds<sup>120f~480f</sup>.
+*100 [[Snache]]s spawn after 10.67 seconds<sup>320f</sup>, delay 13.33~40 seconds<sup>400f~1,200f</sup>.
+*When the base reaches 99% HP:
+**200 [[Those Guys]] spawn, delay 40 seconds<sup>1,200f</sup>.
+*When the base reaches 50% HP:
+**1 [[Le'boin]] spawns as the boss.
+**10 [[Those Guys]] spawn, delay 0.07~4 seconds<sup>2f~120f</sup>.
+**2 [[Mooth]]s spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+**2 [[Mooth]]s spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+
+==Strategy==
+This is where the difficulty increases a bit. Use [[Lizard Cat (Normal Cat)|Dragon Cats]] to kill the Mooths. After all the Mooths are dead, use [[Titan Cat (Normal Cat)|Titan Cat]] to finish off the Le'boin.
+
+==Reference==
+*https://battlecats-db.com/stage/s01010-03.html
+
+{{Monthly}}
+[[Category:Jingle Cat Bell Stages]]
+[[Category:Monthly Stages]]
+[[Category:Event Stages]]

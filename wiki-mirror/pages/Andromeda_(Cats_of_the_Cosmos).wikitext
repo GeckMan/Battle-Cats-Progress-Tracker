@@ -1,0 +1,157 @@
+:''For the [[Zombie Outbreaks|Zombie Outbreak]] version of this stage, see [[Andromeda (Cats of the Cosmos)/Outbreak|here]].''
+'''Andromeda''' is the 46th stage in [[Cats of the Cosmos]]. Clearing this stage on the [[The Battle Cats Unite!|Nintendo Switch version]] unlocks [[Catornado (Super Rare Cat)|Catornado]].
+
+{{Story Info
+|stage name = [[File:Sc000.png]]
+|stage location = [[File:Andromeda.png]]
+'''Cats of the Cosmos'''
+|energy = 85
+|energy2 = 95
+|energy3 = 105
+|enemy castle hp = 400,000 HP
+|enemy castle hp2 = 640,000 HP
+|enemy castle hp3 = 740,000 HP
+|enemies = {{Magnification|Doge Dark|400%
+|One Horn|1,800%
+|Gabriel|250%
+|Shibalien Elite|100%
+|Heavenly Hippoe|250%
+|Ginger Snache|200%
+|Mooth|1,800%}}
+|boss = {{Magnification|Nimoy Bore|250%}}
+|enemies2 = {{Magnification|Doge Dark|600%
+|Ribbo|100%
+|Gabriel|300%
+|Shibalien Elite|300%
+|Heavenly Hippoe|300%
+|Ginger Snache|300%
+|Kid Tappa|100%}}
+|boss2 = {{Magnification|Nimoy Bore|800%}}
+|enemies3 = {{Magnification|Doge Dark|800%
+|Gabriel|300%
+|Shibalien Elite|2,300%
+|Heavenly Hippoe|300%
+|Ginger Snache|300%
+|Gardeneel Bros.|900%
+|Spacefish Jones|2,300%
+|Nimoy Bore|1,000%}}
+|boss3 = {{Magnification|Shibalien Elite|10%}}
+|treasure = - [[Treasure|Mythology]]
+|max enemies = 10
+|restriction = Deploy from Row 1 only
+|restriction2 = Deploy from Row 1 only
+|restriction3 = Deploy from Row 1 only
+|XP = 13,900 XP
+|width = 5,000
+|jpname = Andromeda
+|script = アンドロメダ
+|romaji = Andoromeda
+|jptreasure = Mythology
+|twname = Andromeda Galaxy
+|twscript = 仙女座星系
+|twromaji = Xiānnǚzuò Xīngxì
+|twtreasure = Myth
+|krname = Andromeda
+|krscript = 안드로메다
+|krromaji = Andeulomeda
+|krtreasure = Mythology
+|chapter = [[Cats of the Cosmos]]
+|prev stage = [[N77 Nebula (Cats of the Cosmos)|N77 Nebula]]
+|next stage = [[Black Hole (Cats of the Cosmos)|Black Hole]]
+}}
+
+==Restrictions==
+Deploy from Row 1 only
+
+==Battleground==
+===<u>Chapter 1</u>===
+{{EnemiesAppearing|Doge Dark|One Horn|Gabriel|Shibalien Elite|Heavenly Hippoe|Ginger Snache|Mooth|Nimoy Bore}}
+*3 [[Doge Dark]]s spawn after 5 seconds<sup>150f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[One Horn]] spawns.
+*1 [[Gabriel]] spawns after 26.67 seconds<sup>800f</sup>.
+*2 [[Shibalien Elite]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[Gabriel]] spawns after 58.33 seconds<sup>1,750f</sup>.
+*When the base reaches 99% HP:
+**1 [[Nimoy Bore]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**Infinite [[Ginger Snache]]s spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+**1 [[Mooth]] spawns.
+**Infinite [[Shibalien Elite]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+===<u>Chapter 2</u>===
+{{EnemiesAppearing|Doge Dark|Ribbo|Gabriel|Shibalien Elite|Heavenly Hippoe|Ginger Snache|Kid Tappa|Nimoy Bore}}
+*3 [[Doge Dark]]s spawn after 5 seconds<sup>150f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[Ribbo]] spawns after 14.67 seconds<sup>440f</sup>.
+*1 [[Gabriel]] spawns after 26.67 seconds<sup>800f</sup>.
+*2 [[Shibalien Elite]]s spawn after 13.33 seconds<sup>400f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[Gabriel]] spawns after 58.33 seconds<sup>1,750f</sup>.
+*When the base reaches 99% HP:
+**1 [[Nimoy Bore]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**Infinite [[Ginger Snache]]s spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+**1 [[Ribbo]] spawns.
+**2 [[Kid Tappa]]s spawn, delay 16.67 seconds<sup>500f</sup>.
+**Infinite [[Shibalien Elite]]s spawn, delay 20 seconds<sup>600f</sup>.
+
+===<u>Chapter 3</u>===
+{{EnemiesAppearing|Doge Dark|Gabriel|Shibalien Elite|Heavenly Hippoe|Ginger Snache|Gardeneel Bros.|Spacefish Jones|Nimoy Bore}}
+*3 [[Doge Dark]]s spawn after 5 seconds<sup>150f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[Gabriel]] spawns after 26.67 seconds<sup>800f</sup>.
+*2 [[Shibalien Elite]]s (2,300%) spawn after 13.33 seconds<sup>400f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*1 [[Heavenly Hippoe]] spawns after 16.67 seconds<sup>500f</sup>.
+*3 [[Doge Dark]]s spawn after 40 seconds<sup>1,200f</sup>, delay 2 seconds<sup>60f</sup>.
+*1 [[Gabriel]] spawns after 58.33 seconds<sup>1,750f</sup>.
+*When the base reaches 99% HP:
+**1 [[Shibalien Elite]] (10%) spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 6.67 seconds<sup>200f</sup>.
+**Infinite [[Ginger Snache]]s spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+**1 [[Gardeneel Bros.]] spawns.
+**1 [[Spacefish Jones]] spawns.
+**Infinite [[Shibalien Elite]]s (2,300%) spawn, delay 20 seconds<sup>600f</sup>.
+**3 [[Nimoy Bore]]s spawn, delay 36.67 seconds<sup>1,100f</sup>.
+
+==Strategy==
+==='''Chapter 1'''===
+Doge Dark, Gabriel, and Ginger Snache appear to be the threats in this stage, as they can group up with other enemies and destroy your units if they are not killed immediately. Shibalien Elites may also be a threat if you don't have enough [[Anti-Starred Alien Treasures]], as they will be very tanky and hard to kill plus their chance to [[Warp|warp]] your cats, making this stage harder.
+
+[[Surfer Cat (Super Rare Cat)|Seafarer Cat]] is highly recommended for his ability to [[Freeze|freeze]] Aliens, which is useful against Nimoy Bore. [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] is also recommended for dealing damage to everything. Try to shield him with [[Crazed Cat (Super Rare Cat)|Crazed Cat]] or [[Crazed Tank Cat (Super Rare Cat)|Crazed Tank Cat]], so he can deal some more damage before dying or even take you to victory.
+
+==='''Chapter 2'''===
+Not much has changed, only that One Horn and Mooth have been replaced with Ribbo and Kid Tappa and that the enemies are much stronger. You should bring a Barrier Breaker like [[Fencer Cat (Super Rare Cat)|The Kitty of Liberty]] or a unit that can deal enough damage to Ribbo's barrier, otherwise you'll be softlocked. The stage is rather trivial otherwise.
+
+==='''Chapter 3'''===
+'''If you have not used your free [[The Cat God (Special Cat)|Baby Boom]] yet, this is the last and best time to do so.''' This stage compared to the other two has been given an INSANE difficulty spike, having you fight THREE Nimoy Bores who are buffed beyond recognition, with Gardeneel warping non-immune Backliners and Spacefish punishing you if you happen to push too hard into its range, alongside the tanky Shibalien Elites, Ginger Snaches and Doge Darks adding even more pressure if you don't kill them enough, making this stage one of, if not the hardest stage in Cats of the Cosmos. Thankfully, even with these troubles, the peons give you enough cash to work with, meaning you're able to spam units without worries of running out of cash.
+
+===='''Recommended Units'''====
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]]: His Area Attack, high uptime and proc chances are absolutely crucial to freeze the Nimoy Bores and prevent them from pushing.
+*[[Mer-Cat (Rare Cat)|Cameraman Cat]]: A spammable defensive unit with Survive and good DPS when stacked up over time, she is very great at both offense and defense with her abilities.
+*[[Slime Cat (Rare Cat)|Slime Cat]]: If you somehow own this, it is an absolute godsend here, as it's able to deal serious damage to the peons and snipe Gardeneel and Spacefish.
+*Many of the Ubers from the [[Nature's Guardians ELEMENTAL PIXIES (Gacha Event)|Nature's Guardians ELEMENTAL PIXIES]] banner work very well here with their own benefits, and that all of them are able to be safe from Gardeneel's warps. The least helpful may be [[Mizli (Uber Rare Cat)|Mizuririn]] as her Knockback can cause you to push into Spacefish Jones if not dealt with properly, otherwise she will be very great for regaining ground.
+*Most anti-Alien snipers like [[Radiant Aphrodite (Uber Rare Cat)|Megaphrodite]] and [[Child of Destiny Phono (Uber Rare Cat)|King of Destiny Phonoa]] can potentially hit Spacefish and even Gardeneel, but the latter enemy can also snipe them back if they aren't positioned correctly.
+
+==Walkthrough==
+{{Walkthrough
+|0vuHxKN5BE8|dcyx|
+}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Andromeda map.png|Andromeda on the [[Cats of the Cosmos]] map
+</gallery>
+
+==Trivia==
+*In real life, the [[wikipedia:Andromeda Galaxy|Andromeda Galaxy]] is the nearest major galaxy to the [[wikipedia:Milky Way|Milky Way]].
+
+==Reference==
+*https://battlecats-db.com/stage/s03006-46.html
+*https://battlecats-db.com/stage/s03007-46.html
+*https://battlecats-db.com/stage/s03008-46.html
+
+{{StoryMode Stages}}
+[[Category:Main Chapters Levels]]
+[[Category:Cats of the Cosmos Stages]]
+[[Category:Restriction Stages]]

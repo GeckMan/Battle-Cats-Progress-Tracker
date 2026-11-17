@@ -1,0 +1,35 @@
+{{#invoke:Navbox|main
+|template = Template:Yurudrasil
+|title = [[Yurudrasil Collaboration Event]]
+|navbox_class = yurudrasil
+|state = collapsed
+|striped = yes
+|editlinks = on
+
+|header1 = Characters
+|group1 = Cat Units
+|list1 =
+*[[Oden (Special Cat)|Oden]]
+*[[Junior God of Light - Valkyrie (Rare Cat)|Junior God of Light - Valkyrie]]
+*[[Junior God Brynhildr (Rare Cat)|Junior God Brynhildr]]
+*[[Junior God Suruzu (Rare Cat)|Junior God Suruzu]]
+*[[Goddess of Abundance - Freya (Super Rare Cat)|Goddess of Abundance - Freya]]
+*[[God of War - Odin (Uber Rare Cat)|God of War - Odin]]
+
+|group2 = Enemy Units
+|list2 =
+*[[Junior God of Light - Valkyrie (Enemy)|Junior God of Light - Valkyrie]]
+*[[Junior God Brynhildr (Enemy)|Junior God Brynhildr]]
+*[[Junior God Suruzu (Enemy)|Junior God Suruzu]]
+*[[Goddess of Abundance - Freya (Enemy)|Goddess of Abundance - Freya]]
+*[[God of War - Odin (Enemy)|God of War - Odin]]
+
+|header3 = Stages
+|group3 = Divine! Yurudrasil
+|list3 =
+*[[A New Mythology, Begins]]
+*[[Imperial City Bardia]]
+*[[The Backlash of the Gods]]
+*[[Valhalla Battle]]
+*[[The End is Coming?! Nyagnarok!]]
+}}<templatestyles src="Yurudrasil/styles.css" />{{#ifeq:{{NAMESPACENUMBER}}|0|[[Category:Yurudrasil]]}}<noinclude>[[Category:Navboxes]]</noinclude>

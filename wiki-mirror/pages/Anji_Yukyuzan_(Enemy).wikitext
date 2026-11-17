@@ -1,0 +1,74 @@
+{{JPExclusive}}
+{{Stub}}
+:''This article is about the enemy. For the Cat Unit, see [[Anji Yukyuzan (Uber Rare Cat)]].''
+'''Anji Yukyuzan''' (悠久山安慈, ''Yūkyūzan Anji'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Enemy Info
+|name = Anji Yukyuzan
+|image = E 788.png
+|first appearance = [[Rurouni Kenshin Collaboration Event]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+-
+
+==Strategy==
+-
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Rurouni Kenshin Collaboration Event#破戒僧・悠久山安慈|破戒僧・悠久山安慈]]:
+**[[森の出会い]] (100%)
+**[[破壊の極意・二重の極み]] (200%)
+**[[救世のために編み出した秘伝]] (600% HP/400% AP)
+**[[習得できねば死んでもらう]] (1,400% HP/900% AP)
+**[[せめて供養はしてやる]] (2,350% HP/1,200% AP)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/The Swords of Meiji|The Swords of Meiji]] (1,200% HP/750% AP, 2,350% HP/1,200% AP, 3,200% HP/1,400% AP, 3,800% HP/1,800% AP, 4,400% HP/2,200% AP)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Anji Yukyuzan
+|Health = 35000
+|Attack Power = 1600
+|Attack Range = 360
+|Attack Type = Area
+|Time Between Attacks = 335
+|Movement Speed = 8
+|Knockback = 2
+|Foreswing = 36
+|Backswing = 95
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~450)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Knockback|Immune to Weaken}} [[Immune to Knockback]] and [[Immune to Weaken|Weaken]]
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+788 e.png|Anji Yukyuzan's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/790.html
+
+----
+{{EnemyNav|Speaker Base|Sojiro Seta}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]
+[[Category:Wave Attack Enemies]]
+[[Category:Enemies with Knockback Immunity]]
+[[Category:Enemies with Weaken Immunity]]

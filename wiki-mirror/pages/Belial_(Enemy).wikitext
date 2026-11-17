@@ -1,0 +1,66 @@
+:''This article is about the enemy. For the Cat Unit, see [[Belial (Super Rare Cat)]].''
+'''Belial''' (ベリアル, ''Beriaru'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Crash Fever Collaboration Event]]. He was added in [[Version 5.10 Update|Version 5.10]].
+
+{{Enemy Info
+|name = Belial
+|image = E 320.png
+|appearance = [[Crash Fever Collaboration Event]]
+|money drop = 900¢ - 3,555¢
+}}
+
+==Enemy==
+This enemy has a [[Strengthen|strengthen]] ability, which activates when he is lower than 50% health and boosts his damage by 50%. Belial also has very fast movement speed and a lot of knockbacks, combined with Area Attack.
+
+When he is at higher strength magnifications in later parts of the event, Belial can do devastating damage.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Crash Fever Collaboration Event#Gates of ALICE|Gates of ALICE]]:
+**[[Explosive Escape]] (50%)
+**[[Order/Disorder]] (100%)
+*[[Crash Fever Collaboration Event#Moonlit City|Moonlit City]]:
+**[[Fever Time!]] (400%)
+**[[World War ALICE]] (200%)
+*[[Crash Fever Collaboration Event#Queen Rampant|Queen Rampant]]:
+**[[Synthetic Hubris (Hard)]] (100%)
+**[[Tangible Existence (Deadly)]] (300%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Belial
+|Health = 100000
+|Attack Power = 4000
+|Attack Range = 320
+|Attack Type = Area
+|Time Between Attacks = 121
+|Movement Speed = 33
+|Knockback = 8
+|Foreswing = 56
+|Backswing = 65
+|Ability = {{AbilityIcon|Strengthen}} [[Strengthen|Strengthens]] by 50% at 50% health
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+320 e.png|Belial's spritesheet
+IdleBelial.gif|Belial's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/322.html
+
+----
+{{EnemyNav|Mobius|Happy 100}}
+----
+
+{{Crash Fever}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Enemies with Strengthen ability]]
+[[Category:Area Attack Enemies]]

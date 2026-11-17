@@ -1,0 +1,473 @@
+<tabber>Three Omens Lv.1~10=
+{{EnemiesAppearing|Cerberus Kids|Those Guys|Aku Doge|Great Angel Chibinel|Li'l Bun Bun|Angelic Sleipnir|Omens}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn061 00 a en.png]]
+|stage location = [[File:Mapname061 a en.png]]
+|enemies = {{Magnification|Cerberus Kids|0
+|Those Guys|0
+|Aku Doge|0
+|Great Angel Chibinel|0
+|Li'l Bun Bun|0
+|Angelic Sleipnir|0}}
+|boss = {{Magnification|Omens|0}}
+|width = 4,600
+|max enemies = 20
+|jpname = Three Bodies Lv.
+|script = 三体 Lv.
+|romaji = Santai Lv.
+|event = [[Attack of the Omens]]
+|event-chapter = [[Attack of the Omens]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 550,000 and increases by 50,000 with each stage.
+*7 [[Those Guys]] spawn after 6.67 seconds<sup>200f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*7 [[Cerberus Kids]] spawn after 10 seconds<sup>300f</sup>, delay 6.67 seconds<sup>200f</sup>.
+*Infinite [[Aku Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Omens]] spawns as the boss.
+**2 [[Great Angel Chibinel]]s spawn, delay 66.67 seconds<sup>2,000f</sup>.
+**20 [[Those Guys]] spawn, delay 13.33 seconds<sup>400f</sup>.
+**20 [[Cerberus Kids]] spawn after 6.67 seconds<sup>200f</sup>, delay 13.33 seconds<sup>400f</sup>.
+**1 [[Angelic Sleipnir]] spawns after 13.33 seconds<sup>400f</sup>.
+**2 [[Li'l Bun Bun]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 80 seconds<sup>2,400f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Three Omens Lv.
+! colspan="7" style="text-align: center;"|Strength Magnifications
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! rowspan="2" style="text-align: center;"|Continuation Chance [[Attack of the Omens/Cradle Wilderness (Deadly)|(Cradle)]]
+|-
+! scope="col" |[[Omens]]
+! scope="col" |[[Cerberus Kids]]
+! scope="col" |[[Those Guys]]
+! scope="col" |[[Aku Doge]]
+! scope="col" |[[Great Angel Chibinel]]
+! scope="col" |[[Li'l Bun Bun]]
+! scope="col" |[[Angelic Sleipnir]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |1
+|100%
+|300%
+|3,000%
+|300%
+|100%
+|1,000%
+|150%
+|60
+|[[Catamin]] [A] +3
+|1,140
+|1%
+|-
+! scope="row" |2
+|111%
+|322%
+|3,111%
+|322%
+|100%
+|1,022%
+|161%
+|60
+|Bricks +8
+|1,140
+|3%
+|-
+! scope="row" |3
+|122%
+|344%
+|3,222%
+|344%
+|100%
+|1,044%
+|172%
+|70
+|500,000 XP
+|1,330
+|7%
+|-
+! scope="row" |4
+|133%
+|366%
+|3,333%
+|366%
+|100%
+|1,066%
+|183%
+|70
+|Feathers +8
+|1,330
+|11%
+|-
+! scope="row" |5
+|144%
+|388%
+|3,444%
+|388%
+|100%
+|1,088%
+|194%
+|80
+|[[Cat Capsule|Cat Ticket]] +1
+|1,520
+|15%
+|-
+! scope="row" |6
+|155%
+|410%
+|3,555%
+|410%
+|100%
+|1,110%
+|205%
+|80
+|[[Catamin]] [B] +3
+|1,520
+|18%
+|-
+! scope="row" |7
+|166%
+|432%
+|3,666%
+|432%
+|100%
+|1,132%
+|216%
+|90
+|Coal +8
+|1,710
+|21%
+|-
+! scope="row" |8
+|177%
+|454%
+|3,777%
+|454%
+|100%
+|1,154%
+|227%
+|90
+|1,000,000 XP
+|1,710
+|24%
+|-
+! scope="row" |9
+|188%
+|476%
+|3,888%
+|476%
+|100%
+|1,176%
+|238%
+|100
+|Sprockets +8
+|1,900
+|27%
+|-
+! scope="row" |10
+|200%
+|500%
+|4,000%
+|500%
+|100%
+|1,200%
+|250%
+|100
+|[[Cat Capsule|Cat Ticket]] +2
+|1,900
+|30%
+|}
+
+==Strategy==
+These ten stages are pretty basic, mainly serving as a demonstration for the Omens. You shouldn't struggle too much given the weak support.
+
+==='''Recommended Units'''===
+*[[Cat Cactus]]: [[Immune to Surge|Surge Immune]] meatshield for the Omens.
+*[[Talents|Talented]] [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon]]: Surge Immune backliner that is good for the supporting enemies here.
+*[[Maize Cat (Rare Cat)|Cone Cat]]: Works better than Cactus despite the latter's Surge Immunity.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: Disposable source of [[Surge Attack]]s that occasionally hit everything for heavy damage. Doron's True Form is recommended for extra damage against Chibinel and the Omens, but his second form's fine as well.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: Naala has high stats and can hit Sleipnir pretty reliably. Take caution when sending out Naala as she's outranged by the Omens.
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Disposable unit that can use Aku Doge or peons to create a strong Wave. Generally not recommended due to the Omens flooding the stage with nasty Surges.
+*[[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]]: Backliner that helps with slowing both Omens and Sleipnir.
+*Talented [[Nymph Cat (Super Rare Cat)|Fiend Cat]]: The Omens here aren't buffed too much to where Fiend can stand a little bit of a chance. Using the peons, Fiend can [[Knockback]] both Sleipnir and the Omens.
+*[[Express Cat (Super Rare Cat)|Bullet Train Cat]]: Good for general damage, and can occasionally net you extra cash.
+
+|-|
+Three Omens Lv.11~20=
+{{EnemiesAppearing|Relic Doge|Wild Doge|Mistress Celeboodle|General GreGory|Trolly Blogger|Cerberus Kids|Johnnyleon|Omens|Midnite D.}}
+
+{{Stage Info
+|stage name = [[File:rc136.png]]
+[[File:Mapsn061 00 a en.png]]
+|stage location = [[File:Mapname061 a en.png]]
+|enemies = {{Magnification|Relic Doge|0
+|Wild Doge|0
+|Mistress Celeboodle|0
+|General GreGory|0
+|Trolly Blogger|0
+|Cerberus Kids|0
+|Johnnyleon|0
+|Midnite D.|0}}
+|boss = {{Magnification|Omens|0}}
+|width = 6,000
+|max enemies = 20
+|jpname = Three Bodies Lv.
+|script = 三体 Lv.
+|romaji = Santai Lv.
+|event = [[Attack of the Omens]]
+|event-chapter = [[Attack of the Omens]]
+|require = Complete [[Into the Future]] Chapter 3
+}}
+
+==Battleground==
+*The enemy base's HP starts at 1,050,000 and increases by 50,000 with each stage.
+*6 [[Relic Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+*4 [[Wild Doge]]s spawn after 13.33 seconds<sup>400f</sup>, delay 33.33~40 seconds<sup>1,000f~1,200f</sup>.
+*8 [[Mistress Celeboodle]]s spawn after 20 seconds<sup>600f</sup>, delay 23.33~30 seconds<sup>700f~900f</sup>.
+*3 [[General GreGory|General GreGories]] spawn after 30 seconds<sup>900f</sup>, delay 40~46.67 seconds<sup>1,200f~1,400f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 53.33 seconds<sup>1,600f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*Infinite [[Cerberus Kids]] spawn after 53.33 seconds<sup>1,600f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*1 [[Johnnyleon]] spawns after 53.33 seconds<sup>1,600f</sup>.
+*1 [[Omens]] spawns as the boss after 53.33 seconds<sup>1,600f</sup>.
+*1 [[Midnite D.]] spawns after 106.67 seconds<sup>3,200f</sup>.
+*When the base reaches 99% HP:
+**1 [[Midnite D.]] spawns.
+*When the base reaches 90% HP:
+**2 [[General GreGory|General GreGories]] spawn, delay 0.67 seconds<sup>20f</sup>.
+
+==Details==
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+! rowspan="2" scope="col" style="text-align: center;" |Three Omens Lv.
+! colspan="9" style="text-align: center;"|Strength Magnifications
+! rowspan="2" style="text-align: center;"|Energy Cost
+! colspan="2" scope="col" style="text-align: center;"|Rewards
+! colspan="3" scope="col" style="text-align: center;"|Continuation Chance
+|-
+! scope="col" |[[Omens]]
+! scope="col" |[[Relic Doge]]
+! scope="col" |[[Wild Doge]]
+! scope="col" |[[Mistress Celeboodle]]
+! scope="col" |[[General GreGory]]
+! scope="col" |[[Trolly Blogger]]
+! scope="col" |[[Cerberus Kids]]
+! scope="col" |[[Johnnyleon]]
+! scope="col" |[[Midnite D.]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+! scope="col" |[[Attack of the Omens/Cradle Wilderness (Deadly)|Cradle Wilderness (Deadly)]]
+! scope="col" |[[Attack of the Omens/Summit Wilderness (Merciless)|Summit Wilderness (Merciless)]]
+! scope="col" |[[Attack of the Omens/Frontier Wilderness (Merciless)|Frontier Wilderness (Merciless)]]
+|-
+! scope="row" |11
+|200%
+|100%
+|200%
+|1,200%
+|2,400%
+|300%
+|600%
+|100%
+|100%
+|110
+|[[Catamin]] [C] +3
+|2,090
+|34%
+|1%
+|0%
+|-
+! scope="row" |12
+|211%
+|111%
+|211%
+|1,333%
+|2,433%
+|350%
+|633%
+|106%
+|111%
+|120
+|Gold +8
+|2,280
+|36%
+|2%
+|0%
+|-
+! scope="row" |13
+|222%
+|122%
+|222%
+|1,466%
+|2,466%
+|400%
+|666%
+|112%
+|122%
+|130
+|1,500,000 XP
+|2,470
+|40%
+|3%
+|0%
+|-
+! scope="row" |14
+|233%
+|133%
+|233%
+|1,599%
+|2,499%
+|450%
+|699%
+|118%
+|133%
+|140
+|Meteorite +8
+|2,660
+|46%
+|5%
+|0%
+|-
+! scope="row" |15
+|244%
+|144%
+|244%
+|1,732%
+|2,532%
+|500%
+|732%
+|124%
+|144%
+|150
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|2,850
+|50%
+|10%
+|0%
+|-
+! scope="row" |16
+|255%
+|155%
+|255%
+|1,865%
+|2,565%
+|550%
+|765%
+|130%
+|155%
+|200
+|Beast Bones +8
+|3,800
+|78%
+|21%
+|1%
+|-
+! scope="row" |17
+|266%
+|166%
+|266%
+|1,998%
+|2,598%
+|600%
+|798%
+|136%
+|166%
+|200
+|Ammonite +8
+|3,800
+|77%
+|21%
+|2%
+|-
+! scope="row" |18
+|277%
+|177%
+|277%
+|2,131%
+|2,631%
+|650%
+|831%
+|142%
+|177%
+|200
+|[[Catfruit|Epic Catfruit Seed]] +1
+|3,800
+|72%
+|25%
+|3%
+|-
+! scope="row" |19
+|288%
+|188%
+|288%
+|2,264%
+|2,664%
+|700%
+|864%
+|148%
+|188%
+|200
+|[[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|3,800
+|69%
+|26%
+|5%
+|-
+! scope="row" |20
+|300%
+|200%
+|300%
+|2,400%
+|2,700%
+|750%
+|900%
+|150%
+|200%
+|200
+|[[Catseye]] [Dark] +1
+|3,800
+|59%
+|31%
+|10%
+|}
+
+==Strategy==
+While scary at first and indeed very dangerous without specific units, Omens unfortunately falls to the sheer amount of anti-Aku powercreep and Surge Immune released later on, though the stages' difficulty are still incredibly dependent on the player's arsenal.
+
+The General GreGories here are balanced around CotC3 completion, so players should not challenge them unless they have maxed all of the associated treasures.
+
+==='''Recommended Units'''===
+*[[Slime Cat (Rare Cat)|Jelly Dumpling Cat]]: Surprisingly, Jelly Dumpling can still see some use here, as the large burst of damage greatly eases the startoff and the other lower-ranged peons may enable it to get an attack off from time to time.
+*[[:Category:Cats with Surge Immunity|Surge Immune]] meatshields like [[Ancient Egg: N003 (Special Cat)|Cat Cactus]] or Talented [[Boogie Cat (Special Cat)|Gato Amigo]]: In a stage where Surges are more abundant than potatoes in Idaho, having Surge Immune meatshields to walk off the powerful Surges present on this level will be a necessity.
+*[[Maize Cat (Rare Cat)|Maize Cat]]: One of the many units easing the stage and any continuation stages that happen to follow, Maize is a fast specialist meatshield boasting Resistance versus Aku and Relics with Colossus Slayer, enabling it to tank the Omens, Relic Doge or just about any Aku threats comfortably.
+*[[Surfer Cat (Super Rare Cat)|Seafarer Cat]] or [[Ancient Egg: N101 (Rare Cat)|Courier Cat]]: Depending on your strategy, you may either want to keep Johnnyleon alive for your LD ubers to wreck havoc, or get him out of the way as soon as possible for your backliners to turn the Omens into Aku-flavored mush. For the former scenario, run Seafarer to freeze him in his tracks, while for the latter Courier is a better option due to his [[Massive Damage]] vs. Red. Seafarer's Freeze also comes in handy against the nasty Aliens, and Courier likewise has Behemoth Slayer to chip Wild Doge.
+*[[Stone Cat (Rare Cat)|Boulder Cat]]: With extreme health and Immunity to Surge/Freeze/Knockback, Stone can pin the nasty enemies during its very brief lifetime.
+*Talented [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]]: Deals with the starting peons very well with a little bit of meatshielding, and can Double Money the Mistress Celeboodle for bonus cash.
+*Talented [[Li'l Lizard Cat (Special Cat)|Li'l King Dragon]]: With Surge Immune, Mini-Wave, and Survive, Talented LKD is a mighty tool to have for this stage, although he does get outranged by the Omens, and should be swapped out for better alternatives if available.
+*[[Ancient Egg: N109 (Rare Cat)|Barrel Cat]]: A Surge Immune Shield Piercer good for Midnite D. Also works very well on the Continuation stages against Shields.
+*[[Jetpack Cat (Rare Cat)|Jetpack Cat]]: While he doesn't have Surge Immune, Jetpack is fast, has Colossus Slayer to tank the Omens hits, and tanks huge amounts of damage from the Alien Support, mainly General GreGory.
+*[[Elder Mask Doron (Special Cat)|Awakened Doron]]: Big burst damage which can clear out pesky peons. As a bonus, also has Colossus Slayer.
+*[[Elder Beast Naala (Special Cat)|Awakened Naala]]: One of your biggest assets for this stage if you lack enough good Ubers due to its LD Attacks reaching all the way to 700 range and Surge Immunity. Behemoth Slayer and Colossus Slayer allows it to contribute some damage against the Omens/Wild Doge, and it's also Strong Against Relics in case if Relic Doge poses a threat. Its closely-spaced LD attacks have varying coverage, so it can better exploit Johnnyleon to snipe anything outranging it.
+*[[Master Uril (Special Cat)|Esoteric Uril]]: With his Strong/Slow ability vs. Aku/Relic, level 3 Surges and Surge Immunity, Uril can tank a bit of damage from Omens/Cerberus Kids/Midnite D./Relic Doge and greatly impede them, as well as any Aku threats in the continuation stages. His Behemoth Slayer improves his matchup versus Wild Doge even in face of their Surge Immunity.
+
+==='''Recommended Ubers'''===
+*[[Summoner Satoru (Uber Rare Cat)|Devil Hunter Satoru]]: A Surge Immune anti-Aku CC unit known for his extreme reach, Satoru stands at a safe range of and bombards his targeted trait with a 100% Knockback/6-second Slow. His LD reaches all the way to 770 range and with good uptime on his Slow, the Omens would barely even push. His 50% Shield Piercing chance can be put to great use versus Midnite D. and any Shielded threats in the continuation stages. Upgrading him to level 35+ even allows him to barely survive a hit from a 200% Midnite D. and when combined with his Survive talent, potentially allows him to reposition twice to maintain pressure on the Aku threats.
+*[[Spectral Goth Vega (Uber Rare Cat)|Spectral Goth Vega]]: Vega is one of the few Colossus Slayer units that remains useful here due to her being Strong Against all traited enemies. Her 50% 6-second Weaken ability on her second hit usually reaches all the threats (unless they enter her 230-range blindspot), improving the survivability of all other units present.
+*[[:Category:Cats with Surge Immunity|Surge Immune]] Ubers with over 430 range: Examples include [[Lucifer the Fallen (Uber Rare Cat)|Almighty Lucifer]], [[Child of Destiny Phono (Uber Rare Cat)|King of Destiny Phonoa]], [[King of Doom Phono (Uber Rare Cat)|King of Extinction Phono]], [[Kenshin Himura (Uber Rare Cat)|Kenshin Himura]] and [[EVA Unit-13 (Uber Rare Cat)|EVA Unit-13]]. If you choose to use these Ubers, focus on eliminating Johnnyleon as fast as possible in order to have your ubers directly start attacking the Omens.
+*[[Mighty Deth-Troy-R (Uber Rare Cat)|Obliterator Diabolosa]] - With talents, Diabolosa gains both Colossus Slayer and Surge Immunity to nuke the Omens/Johnnyleon into oblivion with their Massive Damage ability versus Aku/Zombie while being unfazed by their Surges. Though, you will have to lure Johnnyleon into into a safe range for Diabolosa to not get targetted by his LD. Diabolosa also happens to pack a [[Land-Air Assault (Combo)|Unit Attack Up Combo]] with Manic Flying Cat for even greater destruction. It's fragile and has a long cooldown/foreswing, so make sure to keep the other enemies pinned before they get too close for comfort.
+*Surge Immune ubers with piercing attacks and less than 430 range: Examples include [[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]] and [[Shitakiri Sparrow (Uber Rare Cat)|Grand Chunchun Haunters]]. You'll need a stepping stone here for these Ubers to be able to wreck havoc without instantly dying, which the Johnnyleon provides.
+*[[Oda Nobunaga (Uber Rare Cat)|Phantasmal Nobunaga]]: Nobunaga's Ultra Form, if one happens to own it, wrecks this stage, since he gains Counter-Surge and Target Aku for his 8-second Freeze, with enough health to tank at least one Surge. While this is inconsistent, it can potentially Freeze the Omens in their tracks and completely stop them from pushing.
+*[[Kaoluga (Uber Rare Cat)|Kaolan Tatalan]]: A reliable Surge-immune super-backliner, it outranges every enemy in this stage and deals consistently high damage (boosted by Colossus Slayer) with occasional Knockback as a bonus. It comes with a two-slot Research Up (M) [[Cat Combo]] as well.</tabber>
+
+==Reference==
+*https://battlecats-db.com/stage/s24061.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Event Stages]]
+[[Category:Event]]

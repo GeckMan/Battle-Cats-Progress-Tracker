@@ -1,0 +1,73 @@
+:''This article is about the enemy. For the Cat Unit, see [[Titi (Special Cat)]].''
+'''Titi Cat''' (ネコティティCC) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Titi Awakens!]] She was added in [[Version 6.2 Update|Version 6.2]].
+
+{{Enemy Info
+|name = Titi Cat
+|image = E 347.png
+|appearance = [[Titi Awakens!]]
+|money drop = 1,600¢ - 6,320¢
+}}
+
+==Enemy==
+This enemy has very high health, decent range, and a Multi-Hit that separates her attack into 3 parts. Her attack power and attack frequency are mediocre especially considering her Multi-Hit which ends up working against her as it forces her to finish the attack animation before advancing. She also has the ability to Slow Cat Units but simply using Units with above 350 range is enough to counter it.
+
+==Strategy==
+Mid-ranged attackers like [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] or [[Salon Cat (Rare Cat)|Cyborg Cat]] will get outranged. Instead, it is advisable to use long-ranged attackers like [[Lizard Cat (Normal Cat)|King Dragon Cat]], [[Crazed Lizard Cat (Super Rare Cat)|Crazed Dragon Cat]], or even [[Bath Cat (Super Rare Cat)|Luxury Bath Cat]].
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Titi Awakens!]]:
+**[[Titi Awakens (Veteran)]] (50%)
+**[[Titi Awakens (Insane)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Titi Cat
+|Health = 1000000
+|Attack Power = 27000
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 115
+|Movement Speed = 8
+|Knockback = 4
+|Foreswing = 30
+|Backswing = 28
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">9,000</span> at 30f <sup>1s</sup>, <span class="scaled" data-type="ap">9,000</span> at 39f <sup>1.3s</sup>, <span class="scaled" data-type="ap">9,000</span> at 48f <sup>1.6s</sup>)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 210f <sub>7 seconds</sub>
+|Element = Traitless
+}}
+
+==Animations==
+<tabber>
+English/Korean/Taiwanese=
+{{UnitViewer|enemy|noheading=true}}
+|-|Japanese=
+{{AnimationViewer|347 e ja.png|MediaWiki:Custom-AnimationViewer/347 e.json}}
+</tabber>
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+347 e.png|Titi Cat's spritesheet (EN/KR)
+347 e ja.png|Titi Cat's spritesheet (JP)
+347 e tw.png|Titi Cat's spritesheet (TW)
+IdleTitiCCJP.gif|Titi Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/349.html
+
+----
+{{EnemyNav|Merc & Cat|Orthos}}
+----
+
+{{Merc Storia}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Traitless Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Enemies with regional differences]]

@@ -1,0 +1,66 @@
+:''For the Cat Unit, see [[Crazed Bird Cat (Super Rare Cat)]]. For the weaker boss that must be beaten first, see [[Crazed Bird Cat (Enemy)]].''
+'''Manic Flying Cat''' (大狂乱の天空のネコ, ''Dai Kyōran no Tenkū no Neko'', '''''Insane Sky Cat''''') is a [[:Category:Floating Enemies|Floating]] enemy found in [[Forest Beasts (Deadly)|Forest Beasts]]. It was added in [[Version 5.0 Update|Version 5.0]].
+
+{{Enemy Info
+|name = Manic Flying Cat
+|image = E 247.png
+|appearance = [[Forest Beasts (Deadly)]]
+[[Infernal Tower/Floor 33|Infernal Tower - Floor 33]]
+|money drop = 1,999¢ - 7,896¢
+}}
+
+==Enemy==
+This enemy is functionally identical to Crazed Bird Cat, just with higher health and very high damage.
+
+==Strategy==
+:''For strategies, see Encounters.''
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Special Events|Event Stages]]===
+*Bird Maniac: [[Forest Beasts (Deadly)]]
+*[[Infernal Tower]]: [[Infernal Tower/Floor 33|Floor 33]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Manic Flying Cat
+|Health = 2680000
+|Attack Power = 32000
+|Attack Range = 640
+|Attack Type = Area
+|Time Between Attacks = 169
+|Movement Speed = 2
+|Knockback = 1
+|Foreswing = 20
+|Backswing = 21
+|Ability = -
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton = true bordercolor = transparent>
+247 e.png|Manic Flying Cat's spritesheet
+IdleManicFlying.gif|Manic Flying Cat's moving animation
+</gallery>
+
+==Trivia==
+*This enemy's attack used to occur when its crystal flashed, not when its laser was fired. This was fixed in a subsequent update.
+*Prior to [[Version 5.10 Update|Version 5.10]], Manic Flying Cat was a [[:Category:Traitless Enemies|Traitless]]/[[:Category:Floating Enemies|Floating]] enemy.
+
+==Reference==
+*https://battlecats-db.com/enemy/249.html
+
+----
+{{EnemyNav|Manic Lion Cat|Manic Island Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Floating Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Event Enemies]]
+[[Category:Enemy Cats]]

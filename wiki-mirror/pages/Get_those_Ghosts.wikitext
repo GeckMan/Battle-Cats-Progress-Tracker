@@ -1,0 +1,57 @@
+{{EnemiesAppearing|Pinky Bear|Squire Rel|B.B.Bunny|One Horn|Clyde Gory}}
+'''Get those Ghosts''' is the third stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc004.png]]
+[[File:Mapsn272 02 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 50
+|enemy castle hp = 50,000 HP
+|enemies = {{Magnification|Squire Rel|200%
+|B.B.Bunny|200%
+|One Horn|200%
+|Clyde Gory|250%}}
+|boss = {{Magnification|Pinky Bear|200%}}
+|enemies2 = {{Magnification|Squire Rel|300%
+|B.B.Bunny|300%
+|One Horn|300%
+|Clyde Gory|375%}}
+|boss2 = {{Magnification|Pinky Bear|300%}}
+|score reward = '''7,100''': 50,000 XP<br>
+'''5,400''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1
+|XP = 1,500 XP
+|width = 3,800
+|max enemies = 20
+|jpname = Defeat the Ghost
+|script = ゴーストをやっつけろ
+|romaji = Gōsuto o Yattsukero
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★3
+|prev stage = [[Warp Tunnel's End]]
+|next stage = [[A Straight Line's Beauty]]
+}}
+
+==Battleground==
+*1 [[Pinky Bear]] spawns as the boss after 16.67 seconds<sup>500f</sup>.
+*Infinite [[Squire Rel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 8~10 seconds<sup>240f~300f</sup>.
+*15 [[Squire Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 8~10 seconds<sup>240f~300f</sup>.
+*1 [[B.B.Bunny]] spawns after 13.33 seconds<sup>400f</sup>.
+*2 [[One Horn]]s spawn after 40 seconds<sup>1,200f</sup>, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+*2 [[B.B.Bunny|B.B.Bunnies]] spawn after 60 seconds<sup>1,800f</sup>, delay 8 seconds<sup>240f</sup>.
+*2 [[B.B.Bunny|B.B.Bunnies]] spawn after 100 seconds<sup>3,000f</sup>, delay 8 seconds<sup>240f</sup>.
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 133.33 seconds<sup>4,000f</sup>, delay 8 seconds<sup>240f</sup>.
+*2 [[Clyde Gory|Clyde Gories]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 53.33~60 seconds<sup>1,600f~1,800f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-03.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

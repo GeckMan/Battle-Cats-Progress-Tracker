@@ -1,0 +1,58 @@
+{{TWExclusive}}
+{{EnemiesAppearing|Doge|Snache|Those Guys|HAPPI}}
+'''Taroko Park''' is the first stage in [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]].
+
+{{Stage Info
+|stage name = [[File:rc127.png]]
+[[File:Mapsn103 00 c tw.png]]
+|stage location = [[File:Mapname103 c tw.png]]
+|energy = 80
+|enemy castle hp = 3,000 HP
+|enemies = {{Magnification|Doge|100%
+|Snache|100%
+|Those Guys|100%}}
+|boss = {{Magnification|HAPPI|1%}}
+|enemies2 = {{Magnification|Doge|150%
+|Snache|150%
+|Those Guys|150%}}
+|boss2 = {{Magnification|HAPPI|1%}}
+|enemies3 = {{Magnification|Doge|200%
+|Snache|200%
+|Those Guys|200%}}
+|boss3 = {{Magnification|HAPPI|2%}}
+|treasure = - [[HAPPI (Rare Cat)|HAPPI]] (5%, 1 time)
+|score reward = '''7,500''': 50,000 XP<br>
+'''4,500''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''500''': 10,000 XP
+|XP = 7,200 XP
+|width = 3,000
+|max enemies = 6
+|twname = Taroko Park
+|twscript = 草衙
+|twromaji = Cǎoyá
+|star = 3
+|event = [[Kaohsiung Rapid Transit Collaboration Event]]
+|event-chapter = [[Kaohsiung Rapid Transit Collaboration Event#Kaohsiung Rapid Transit Red Line|Kaohsiung Rapid Transit Red Line]]
+|difficulty = ★1
+|prev stage = N/A
+|next stage = [[Central Park]]
+}}
+
+==Battleground==
+*5 [[Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Snache]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Those Guys]] spawns after 50 seconds<sup>1,500f</sup>.
+*When the base reaches 90% HP:
+**1 [[HAPPI (Enemy)|HAPPI]] spawns as the boss.
+**8 [[Doge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02103-01.html
+
+{{Kaohsiung Rapid Transit}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

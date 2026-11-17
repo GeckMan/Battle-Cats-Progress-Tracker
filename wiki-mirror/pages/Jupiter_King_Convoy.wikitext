@@ -1,0 +1,75 @@
+{{EnemiesAppearing|MARCO|MARS PEOPLE|ALLEN O'NEIL|JUPITER KING|SV-001}}
+'''Jupiter King Convoy''' is the third and final stage in [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]].
+
+{{Stage Info
+|stage name = [[File:rc052.png]]
+[[File:Mapsn021 02 c en.png]]
+|stage location = [[File:Mapname021 c en.png]]
+|energy = 80
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|MARCO|400%
+|MARS PEOPLE|400%
+|ALLEN O'NEIL|600%
+|SV-001|400%}}
+|boss = {{Magnification|JUPITER KING|100%}}
+|enemies2 = {{Magnification|MARCO|600%
+|MARS PEOPLE|600%
+|ALLEN O'NEIL|900%
+|SV-001|600%}}
+|boss2 = {{Magnification|JUPITER KING|150%}}
+|enemies3 = {{Magnification|MARCO|800%
+|MARS PEOPLE|800%
+|ALLEN O'NEIL|1,200%
+|SV-001|800%}}
+|boss3 = {{Magnification|JUPITER KING|200%}}
+|enemies4 = {{Magnification|MARCO|1,200%
+|MARS PEOPLE|1,200%
+|ALLEN O'NEIL|1,800%
+|SV-001|1,200%}}
+|boss4 = {{Magnification|JUPITER KING|300%}}
+|treasure = - [[HYAKUTARO (Rare Cat)|HYAKUTARO]] (10%, 1 time)
+|score reward = '''7,500''': [[Cat Capsule|Cat Ticket]] +1<br>
+'''5,500''': 150,000 XP<br>
+'''3,000''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''500''': [[Cat Capsule#Rare Capsule|Rare Ticket]] +1
+|XP = 2,400 XP
+|width = 4,800
+|max enemies = 7
+|jpname = Jupiter King Escort
+|script = ジュピターキングの護衛
+|romaji = Jupitā Kingu no Goei
+|star = 4
+|event = [[Metal Slug Collaboration Event]]
+|event-chapter = [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]]
+|difficulty = ★5
+|prev stage = [[Attack on Huge Hermit]]
+|next stage = N/A
+}}
+
+==Battleground==
+*5 [[MARCO (Enemy)|MARCOs]] spawn, delay 13.33~26.67 seconds<sup>400f~800f</sup>.
+*3 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 3.33 seconds<sup>100f</sup>, delay 4~12 seconds<sup>120f~360f</sup>.
+*1 [[ALLEN O'NEIL (Enemy)|ALLEN O'NEIL]] spawns after 13.33 seconds<sup>400f</sup>.
+*1 [[JUPITER KING (Enemy)|JUPITER KING]] spawns as the boss after 30 seconds<sup>900f</sup>.
+*5 [[MARS PEOPLE (Enemy)|MARS PEOPLE]] spawn after 46.67 seconds<sup>1,400f</sup>, delay 8~12 seconds<sup>240f~360f</sup>.
+*5 [[MARCO (Enemy)|MARCOs]] spawn after 80 seconds<sup>2,400f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*3 [[SV-001 (Enemy)|SV-001s]] spawn after 100 seconds<sup>3,000f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 190 seconds<sup>5,700f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 192 seconds<sup>5,760f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 194 seconds<sup>5,820f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 196.67 seconds<sup>5,900f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[ALLEN O'NEIL (Enemy)|ALLEN O'NEILs]] spawn after 200 seconds<sup>6,000f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[SV-001 (Enemy)|SV-001s]] spawn after 296.67 seconds<sup>8,900f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[SV-001 (Enemy)|SV-001s]] spawn after 298 seconds<sup>8,940f</sup>, delay 200 seconds<sup>6,000f</sup>.
+*Infinite [[SV-001 (Enemy)|SV-001s]] spawn after 300 seconds<sup>9,000f</sup>, delay 200 seconds<sup>6,000f</sup>.
+
+==Strategy==
+Since there are limited enemies before the boss spawns, it is possible to stall for money with slow Cats and then let them die and stall the last few enemies with nothing but [[Tank Cat (Normal Cat)|Dual]] [[Crazed Tank Cat (Super Rare Cat)|Walls]]. Once you have enough money, hit the base and fight JUPITER KING. He is fairly weak to tanky Cats like [[Fish Cat (Normal Cat)|Island Cat]] and [[Titan Cat (Normal Cat)|Titan Cat]], but you'll have to clear his support before being able to hit him at all.
+
+==Reference==
+*https://battlecats-db.com/stage/s02021-03.html
+
+{{Metal Slug}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

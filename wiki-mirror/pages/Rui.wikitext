@@ -1,0 +1,72 @@
+'''Rui''' (累, ''Rui'') is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in the [[Demon Slayer: Kimetsu no Yaiba Collaboration Event]]. He was added in [[Version 15.1 Update#Version 15.1.1 Update|Version 15.1.1]].
+
+{{Enemy Info
+|name = Rui
+|image = E 761.png
+|first appearance = [[Swarm of Spiders]]
+|money drop = 2,000¢ - 7,900¢
+}}
+
+==Enemy==
+Rui can come off as a menacing foe, boasting a strong 100,000 health, 450 range and a 50% chance to [[Slow]] [[Cat Units]], but his damage isn't that high even at his highest magnification. The strongest you'll ever see Rui is at 450% at {{1c}} and 675% at {{2c}}. His decently average time between attacks allows you to get a couple of hits on him with fast melee units, and makes him vulnerable to any [[:Category:Anti-Traitless Cats|Anti-Traitless Cats]] that have status effects such as [[Freeze]], [[Weaken]], [[Slow]], etc.
+
+==Strategy==
+Rui outranges many standard backline attackers like [[Bahamut Cat (Special Cat)|Crazed Bahamut Cat]], [[Ururun Wolf (Special Cat)|Ururun Cat]], [[Lizard Cat (Normal Cat)|King Dragon Cat]], etc. The best way to take him down is to use rushers like [[Swimmer Cat (Super Rare Cat)|Butterfly Cat]] and [[Talents|Talented]] [[Hip Hop Cat (Super Rare Cat)|Can Can Cat]] to deal high damage in between attack cycles. However, [[Nerd Cat (Super Rare Cat)|Hacker Cat]], [[Sniper the Recruit (Super Rare Cat)|Sniper the Heavy]], [[Li'l Nyandam (Special Cat)|Dark Emperor Catdam]] are some notable exceptions that outrange Rui, and can be used to provide consistent chip damage and crowd-control against him.
+
+Midgame players can use [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] to rush him down for timed rewards, or [[Lone Cat and Kitten (Rare Cat)|Vendor Cat and Kitten]] for their phenomenal support through Freeze.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Demon Slayer: Kimetsu no Yaiba Collaboration Event#Battle at Mt. Natagumo|Battle at Mt. Natagumo]]:
+**[[Swarm of Spiders]] (7%)
+**[[The Manipulated]] (23%)
+**[[False Bonds]] (100%)
+**[[Band of Brothers]] (350%)
+**[[Slicing Spiderwebs]] (450%)
+*[[Demon Slayer: Kimetsu no Yaiba Collaboration Event#Mission: Slay Rui!|Mission: Slay Rui!]]:
+**[[Lower Rank Five - Rui (Easy)]] (10%)
+**[[Lower Rank Five - Rui (Insane)]] (450%)
+
+===[[Catclaw Dojo]]===
+*[[Arena of Honor]]: [[Arena of Honor/Demon Slayer Elites|Demon Slayer Elites]] (23%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Rui
+|Health = 100000
+|Attack Power = 4800
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 153
+|Movement Speed = 6
+|Knockback = 3
+|Foreswing = 14
+|Backswing = 50
+|Ability = {{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] Cat Units for 90f <sub>3 seconds</sub>
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy|bg=Bg254.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+761 e.png|Rui's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/763.html
+
+----
+{{EnemyNav|Horse Doge|Enmu}}
+----
+
+{{Demon Slayer}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with Slow ability]]
+[[Category:Enemies with unique death animations]]

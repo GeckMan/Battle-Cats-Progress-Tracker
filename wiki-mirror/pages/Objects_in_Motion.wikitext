@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Inky Doge|Doge|Gory|Clyde Gory}}
+'''Objects in Motion''' is the first stage in [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]].
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn272 00 c en.png]]
+|stage location = [[File:Mapname272 c en.png]]
+|energy = 30
+|enemy castle hp = 5,000 HP
+|enemies = {{Magnification|Inky Doge|150%
+|Doge|150%
+|Gory|150%
+|Clyde Gory|100%}}
+|boss = {{Magnification|Clyde Gory|100%}}
+|enemies2 = {{Magnification|Inky Doge|225%
+|Doge|225%
+|Gory|225%
+|Clyde Gory|150%}}
+|boss2 = {{Magnification|Clyde Gory|150%}}
+|score reward = '''7,800''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1<br>
+'''5,900''': 30,000 XP<br>
+'''500''': [[PAC-MAN Collaboration Event/Event Gacha|Power Pellet]] +1
+|XP = 900 XP
+|width = 4,000
+|max enemies = 20
+|jpname = Once You Start Moving You Can't Stop
+|script = 進み始めたら止まらない
+|romaji = Susumihajimetara Tomaranai
+|star = 2
+|event = [[PAC-MAN Collaboration Event]]
+|event-chapter = [[PAC-MAN Collaboration Event#PAC-MAN & Cat|PAC-MAN & Cat]]
+|difficulty = ★2
+|prev stage = N/A
+|next stage = [[Warp Tunnel's End]]
+}}
+
+==Battleground==
+*2 [[Inky Doge]]s spawn after 10 seconds<sup>300f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*2 [[Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*1 [[Gory]] spawns after 26.67 seconds<sup>800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Clyde Gory]] spawns as the boss.
+**Infinite [[Inky Doge]]s spawn after 3.33 seconds<sup>100f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**1 [[Clyde Gory]] spawns after 36.67 seconds<sup>1,100f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02272-01.html
+
+{{Pac-Man}}
+{{CollaborationStages List}}
+[[Category:Timed Score Stages]]
+[[Category:Collaboration Stages]]

@@ -1,0 +1,108 @@
+'''Blinky Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[PAC-MAN Collaboration Event/Event Gacha|Event Gacha]] during the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Cat Info
+|ID = 867
+|rarity = EX
+|name1 = Blinky Cat
+|name2 = Blinky Cat CC
+}}
+
+==Evolution==
+Evolves into '''Blinky Cat CC''' at level 10.
+
+==Strategy/Usage==
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of cats able to perform this role, usually with a lower cost.
+
+Blinky Cat, however, has the ability to [[Dodge Attack|dodge]] Alien enemies. This doesn't help it much though, since the chance is somewhat low. It might be somewhat useful in pure-Alien stages, but other than that, it's better to use cheaper meatshields, such as [[Catburger (Special Cat)|Catburger]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 867
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni867 f00.png
+|Image2 = Uni867 c00.png
+|Name1 = Blinky Cat
+|Desc1 = Cat dressed as a relentless Ghost,<br>but still just as slow as ever.<br>Might Dodge attacks from Aliens.
+|Name2 = Blinky Cat CC
+|Desc2 = Striving to reach Blinky's speed,<br>they flail their arms for more inertia.<br>Might Dodge attacks from Aliens.
+|Name1 (JP) = ネコブリンキー (Neko Burinkī, Blinky Cat)
+|Desc1 (JP) = すばやいブリンキーになりきる被り物をしたネコ<br>見た目は変わっても移動速度はそのまま<br>たまにエイリアンの攻撃を無効化する
+|Transl1 (JP) = A Cat who wore a costume to turn into the speedy Blinky<br>Even though his appearance has changed, his speed is still the same<br>Occasionally nullifies Aliens' attacks
+|Name2 (JP) = ネコブリンキーCC (Neko Burinkī CC, Blinky Cat CC)
+|Desc2 (JP) = ブリンキーの速さに憧れて筋肉を鍛えたネコ<br>腕を振ると前よりすばやくなった気がする<br>たまにエイリアンの攻撃を無効化する
+|Transl2 (JP) = A Cat who trained muscles in awe of Blinky's speed<br>His arms feel faster than before when swung<br>Occasionally nullifies Aliens' attacks
+|Name1 (TW) = Blinky貓
+|Desc1 (TW) = 戴著Blinky造型的頭套、希望動作變敏捷的貓咪<br>雖然外表變了，但移動速度還是一樣<br>有時候使異星戰士的攻擊無效化
+|Name2 (TW) = Blinky貓CC
+|Desc2 (TW) = 嚮往Blinky的速度而努力鍛鍊肌肉的貓咪<br>揮動手臂時移動速度感覺比之前更快了<br>有時候使異星戰士的攻擊無效化
+|Name1 (KR) = 고양이 Blinky
+|Desc1 (KR) = 재빠른 Blinky로 변장하기 위한 탈을 쓴 고양이<br>겉모습은 변했지만 이동 속도는 여전하다<br>가끔 에이리언의 공격을 무효화한다
+|Name2 (KR) = 고양이 Blinky CC
+|Desc2 (KR) = Blinky의 속도를 동경하여 근육을 키운 고양이<br>팔을 휘두르는 속도가 전보다 빨라진 기분이다<br>가끔 에이리언의 공격을 무효화한다
+}}
+
+==Cost==
+*Chapter 1: 70¢
+*Chapter 2: 105¢
+*Chapter 3: 140¢
+
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Blinky Cat
+|Normal Base HP = 200
+|Normal Base AP = 8
+|Normal Range = 130
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 70
+|Normal Recharge = 220
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Dodge Attack}} 10% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Evolved Name = Blinky Cat CC
+|Evolved Base HP = 200
+|Evolved Base AP = 8
+|Evolved Range = 130
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 29
+|Evolved Attack Length = 16
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 70
+|Evolved Recharge = 220
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Dodge Attack}} 10% chance to [[Dodge Attack|dodge]] attacks from target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni867 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/868.html
+
+----
+{{CatNav|PAC-MAN|Inky Cat}}
+----
+
+{{Pac-Man}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Dodge Attack ability]]

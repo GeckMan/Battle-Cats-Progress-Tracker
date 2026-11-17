@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Master Da Xun|Hermit Peng|Aku Doge|Mighty Gui Zuli|Aku Gory|Dober P.D}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 15|Floor 15]].''
+
+'''Floor 15''' is the 15th floor of [[Infernal Tower]].
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 14 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 140
+|enemy castle hp = 780,000 HP
+|enemies = {{Magnification|Master Da Xun|400%
+|Hermit Peng|600%
+|Aku Doge|500%
+|Mighty Gui Zuli|600%
+|Aku Gory|250%}}
+|boss = {{Magnification|Dober P.D|150%}}
+|treasure = One of the following (1 time):<br>
+- [[Catamin]] [A] +3 (34%)<br>
+- [[Catamin]] [B] +3 (33%)<br>
+- [[Catamin]] [C] +3 (33%)
+|XP = 2,660 XP
+|width = 4,000
+|max enemies = 30
+|jpname = 15th Floor
+|script = 15階
+|romaji = 15 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★9
+|prev stage = [[Infernal Tower/Floor 14|Floor 14]]
+|next stage = [[Infernal Tower/Floor 16|Floor 16]]
+}}
+
+==Battleground==
+*1 [[Master Da Xun]] spawns after 3.33 seconds<sup>100f</sup>.
+*2 [[Hermit Peng]]s spawn after 13.33 seconds<sup>400f</sup>, delay 26.67 seconds<sup>800f</sup>.
+*3 [[Aku Doge]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dober P.D]] spawns as the boss.
+**3 [[Hermit Peng]]s spawn, delay 26.67~33.33 seconds<sup>800f~1,000f</sup>.
+**2 [[Master Da Xun]]s spawn, delay 10 seconds<sup>300f</sup>.
+**1 [[Mighty Gui Zuli]] spawns.
+**5 [[Aku Gory|Aku Gories]] spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**6 [[Aku Doge]]s spawn, delay 6.67~10 seconds<sup>200f~300f</sup>.
+**Infinite [[Aku Doge]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+
+==Strategy==
+This stage is quite different to the original [[Heavenly Tower/Floor 15|Floor 15]], notably the absence of [[Angelic Gory]] and [[Gabriel]] removes most reason to bring Anti Angels, the enemies all being either slightly or twice as strong, the spawn conditions and timers being different, and Aku Doge and Aku Gory join the fray as well. [[:Category:Anti-Traitless Cats|Anti Traitless]] and/or some [[:Category:Anti-Aku Cats|Anti Akus]] are very useful, and maybe some [[:Category:Cats with Wave Immunity|Wave Immunity]] if you're worried about the Dober P.D.
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-15.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]

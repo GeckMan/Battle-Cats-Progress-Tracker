@@ -1,0 +1,105 @@
+'''Inky Cat''' is a [[:Category:Special Cats|Special Cat]] that can be obtained from the [[PAC-MAN Collaboration Event/Event Gacha|Event Gacha]] during the [[PAC-MAN Collaboration Event]]. It was added in [[Version 15.5 Update|Version 15.5]].
+
+{{Cat Info
+|ID = 868
+|rarity = EX
+|name1 = Inky Cat
+|name2 = Inky Cat CC
+}}
+
+==Evolution==
+Evolves into '''Inky Cat CC''' at level 10.
+
+==Strategy/Usage==
+A specialist meatshield tailored to [[:Category:Explosion Enemies|Explosion enemies]]. It actually has good matchups across the board, trivializing much of [[Journey to Talent (Bahamut Cat)|Journey to Talent]], while being useful against [[Xenobeast Bunaglios]] and [[Poultrio]], who rely on said pierce. Outside of this niche, it is a worse, more expensive version of [[Tank Cat (Normal Cat)|Eraser Cat]].
+
+{{Job|Classification = Meatshield}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 868
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni868 f00.png
+|Image2 = Uni868 c00.png
+|Name1 = Inky Cat
+|Desc1 = Tank Cat cosplays as a bashful Ghost,<br>even bowing to avoid eye contact.<br>Immune to Explosions.
+|Name2 = Inky Cat CC
+|Desc2 = Caught in a cycle of tumbling and rising<br>in homage to Inky's capricious nature.<br>Immune to Explosions.
+|Name1 (JP) = ネコインキー (Neko Inkī, Inky Cat)
+|Desc1 (JP) = シャイなインキーの被り物をしたタンクネコ<br>近付かれるとおじぎで目線をそらす<br>爆波によるダメージを無効にする
+|Transl1 (JP) = A Tank Cat who wore a costume of the shy Inky<br>Averts his gaze with a bow if he's noticed<br>Nullifies damage from Explosions
+|Name2 (JP) = ネコインキーCC (Neko Inkī CC, Inky Cat CC)
+|Desc2 (JP) = 行動が読めないインキーに憧れるネコカベ<br>気まぐれで立ったり倒れたりする<br>爆波によるダメージを無効にする
+|Transl2 (JP) = A Wall Cat in awe of Inky's unpredictable actions<br>Standing up and falling down on a whim<br>Nullifies damage from Explosions
+|Name1 (TW) = Inky貓
+|Desc1 (TW) = 戴著害羞的Inky造型頭套的坦克貓<br>一旦有人靠近他就會鞠躬來避開視線<br>爆波傷害無效
+|Name2 (TW) = Inky貓CC
+|Desc2 (TW) = 嚮往行動難以預測的Inky的牆貓<br>會隨心所欲地忽然站起來或倒下去<br>爆波傷害無效
+|Name1 (KR) = 고양이 Inky
+|Desc1 (KR) = 소심한 Inky로 변장하기 위한 탈을 쓴 탱크 고양이<br>접근하면 고개를 숙여 인사하며 시선을 피한다<br>폭파 데미지를 무효화한다
+|Name2 (KR) = 고양이 Inky CC
+|Desc2 (KR) = 행동을 종잡을 수 없는 Inky를 동경하는 고양이 벽<br>마음 내키는 대로 서거나 눕거나 한다<br>폭파 데미지를 무효화한다
+}}
+
+==Cost==
+*Chapter 1: 150¢
+*Chapter 2: 225¢
+*Chapter 3: 300¢
+
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Inky Cat
+|Normal Base HP = 600
+|Normal Base AP = 4
+|Normal Range = 110
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 59
+|Normal Attack Length = 16
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 150
+|Normal Recharge = 240
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Immune to Explosions}} [[Immune to Explosions]]
+|Evolved Name = Inky Cat CC
+|Evolved Base HP = 600
+|Evolved Base AP = 4
+|Evolved Range = 110
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 59
+|Evolved Attack Length = 16
+|Evolved Speed = 8
+|Evolved KB = 1
+|Evolved Cost = 150
+|Evolved Recharge = 240
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Immune to Explosions}} [[Immune to Explosions]]
+|Lv.MAX = Lv.50+10
+|Scaling = 20x6,10x14
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni868 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/869.html
+
+----
+{{CatNav|Blinky Cat|Akane Tounji}}
+----
+
+{{Pac-Man}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Event Capsule Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Explosion Immunity]]

@@ -1,0 +1,25 @@
+<onlyinclude>{{#ifeq:{{{3}}}|NF||==Gallery==}}
+{| class="stubcat" style="overflow:hidden;clear:both;min-height:115px;max-width:580px;border:2px solid white;border-radius:15px;padding:0px 10px;background:#21312c;background-image:-webkit-linear-gradient(top,#21312c 0%,#4a6963 100%);background-image:linear-gradient(to bottom,#21312c 0%,#4a6963 100%);background-repeat:no-repeat;background-position:0 0;background-size:auto auto;margin:2px auto;box-shadow:1px 1px 2px #000;"
+| <div class="catbox_text warning_text" style="font-size:16px; color:#FFF; text-align:center; margin-top:15px;">{{SITENAME}} has a [[:Category:Galleries|{{Color|#FBAF03|gallery}}]] for {{{page|{{PAGENAME}}}}}.</div>
+|-
+|
+<table style="width: 100%;"><tr>
+<td>[[File:{{{1|placeholder}}}{{{2|.png}}}|120px|link=|alt=]]</td>
+<td> <div class="catbox_text warning_text" style="border-radius:0.5em; border:2px solid white; text-align:center; color:#FFF;background:rgba(0,0,0,0.2);padding-left:4px;">Visit {{#ifeq:{{NAMESPACENUMBER}}|0|[[{{{page|{{PAGENAME}}}}}/Gallery|{{Color|#FBAF03|this page}}]]|[[{{{page|The Battle Cats Wiki:Gallery}}}/Gallery|{{Color|#FBAF03|this page}}]]}} to see it.</div></td>
+<td style="transform: rotateY(180deg);">[[File:{{{1|placeholder}}}{{{2|.png}}}|120px|link=|alt=]]</td>
+</tr></table>
+|}</onlyinclude>
+{{clear}}
+==Usage==
+<pre>
+{{Gallery|Uni000 f00}}
+</pre>
+will show:
+{{Gallery|Uni000 f00}}
+
+==Other Parameters==
+<pre>
+{{Gallery|placeholder|.png|NF|page=The Battle Cats Wiki:Gallery}}
+</pre>
+will show
+{{Gallery|placeholder|.png|NF|page=The Battle Cats Wiki:Gallery}}

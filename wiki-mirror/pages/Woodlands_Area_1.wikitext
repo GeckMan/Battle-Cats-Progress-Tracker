@@ -1,0 +1,59 @@
+{{EnemiesAppearing|Snache|Croco|Squire Rel|Mooth|Wild Doge}}
+'''Woodlands Area 1''' is the first stage in [[Hidden Forest of Gapra]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn000 00 q en.png]]
+|stage location = [[File:Mapname000 q en.png]]
+|energy = 100
+|enemy castle hp = 200,000 HP
+|enemies = {{Magnification|Snache|400%
+|Croco|400%
+|Squire Rel|400%
+|Mooth|400%
+|Wild Doge|100%}}
+|boss = {{Magnification|Wild Doge|100%}}
+|treasure = One of the following (unlimited):<br>
+- [[Catfruit#Behemoth Stones|Purple Behemoth Stone]] +1 (15%)<br>
+- [[Catfruit#Behemoth Stones|Red Behemoth Stone]] +1 (15%)<br>
+- Bricks +1 (35%)<br>
+- Feathers +1 (35%)
+|XP = 3,000 XP
+|width = 3,500
+|max enemies = 10
+|jpname = Humid Forest Area 1
+|script = 多湿樹海 エリア1
+|romaji = Tashitsu Jukai Eria 1
+|star = 1
+|event-chapter = [[Hidden Forest of Gapra]]
+|max clears = 1
+|difficulty = ★5
+|prev stage = N/A
+|next stage = [[Woodlands Area 2]]
+|require = Clear [[Empire of Cats]] Chapter 3
+|occurrence = *Monday, Thursday: 07:00~11:00
+*Tuesday, Friday, Sunday: 12:00~16:00
+*Wednesday, Saturday: 19:00~23:00
+}}
+
+==Battleground==
+*5 [[Snache]]s spawn after 2 seconds<sup>60f</sup>, delay 8~13.33 seconds<sup>240f~400f</sup>.
+*5 [[Croco]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*3 [[Squire Rel]]s spawn after 16.67 seconds<sup>500f</sup>, delay 13.33~20 seconds<sup>400f~600f</sup>.
+*1 [[Mooth]] spawns after 20 seconds<sup>600f</sup>.
+*2 [[Wild Doge]]s spawn after 86.67 seconds<sup>2,600f</sup>, delay 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Wild Doge]] spawns as the boss.
+**10 [[Snache]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**5 [[Croco]]s spawn, delay 13.33~20 seconds<sup>400f~600f</sup>.
+**1 [[Mooth]] spawns.
+
+==Strategy==
+The only threats are the Wild Doges, who are outranged by almost all units. Spam [[Cat (Normal Cat)|Macho Cats]], [[Tank Cat (Normal Cat)|Wall Cats]], [[Boogie Cat (Special Cat)|Samba Cats]] and [[Bird Cat (Normal Cat)|UFO Cats]] to take care of them, while using [[Lizard Cat (Normal Cat)|Dragon Cat]] to handle the Mooths.
+
+==Reference==
+*https://battlecats-db.com/stage/s31000-01.html
+
+{{Guerrilla}}
+[[Category:Behemoth Culling]]
+[[Category:Event Stages]]

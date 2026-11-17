@@ -1,0 +1,60 @@
+{{JPExclusive}}
+{{EnemiesAppearing|Doge|Those Guys|Jackie Peng|Hippoe|Gory|Mooth}}
+'''Real-time Battle''' is the second stage in [[Dragon Poker Collaboration Event#Dragon Poker|Dragon Poker]].
+
+{{Stage Info
+|stage name = [[File:rc002.png]]
+[[File:Mapsn005 01 c ja.png]]
+|stage location = [[File:Mapname005 c ja.png]]
+|energy = 60
+|enemy castle hp = 30,000 HP
+|enemies = {{Magnification|Doge|100%
+|Those Guys|100%
+|Jackie Peng|100%
+|Hippoe|100%
+|Gory|100%
+|Mooth|100%}}
+|boss = {{Magnification|Mooth|100%}}
+|enemies2 = {{Magnification|Doge|150%
+|Those Guys|150%
+|Jackie Peng|150%
+|Hippoe|150%
+|Gory|150%
+|Mooth|150%}}
+|boss2 = {{Magnification|Mooth|150%}}
+|treasure = - [[Battle Items#Speed Up|Speed Up]] +1 (1%, unlimited)
+|XP = 1,800 XP
+|width = 4,800
+|max enemies = 8
+|jpname = Real-time Battle
+|script = リアルタイムバトル
+|romaji = Riarutaibatoru
+|star = 2
+|event = [[Dragon Poker Collaboration Event]]
+|event-chapter = [[Dragon Poker Collaboration Event#Dragon Poker|Dragon Poker]]
+|difficulty = ★2
+|prev stage = [[Beginning of the Docking]]
+|next stage = [[Shout Festival]]
+}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 2~8 seconds<sup>60f~240f</sup>.
+*100 [[Those Guys]] spawn, delay 2~10 seconds<sup>60f~300f</sup>.
+*1 [[Jackie Peng]] spawns after 2 seconds<sup>60f</sup>.
+*5 [[Those Guys]] spawn, delay 0.07~2 seconds<sup>2f~60f</sup>.
+*3 [[Hippoe]]s spawn after 26.67 seconds<sup>800f</sup>, delay 3.33~6.67 seconds<sup>100f~200f</sup>.
+*3 [[Gory|Gories]] spawn after 40 seconds<sup>1,200f</sup>, delay 20~26.67 seconds<sup>600f~800f</sup>.
+*When the base reaches 99% HP:
+**1 [[Mooth]] spawns as the boss.
+**Infinite [[Those Guys]] spawn, delay 0.67~4 seconds<sup>20f~120f</sup>.
+**2 [[Mooth]]s spawn, delay 0.07~1.33 seconds<sup>2f~40f</sup>.
+
+==Strategy==
+A very easy stage that any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win.
+
+==Reference==
+*https://battlecats-db.com/stage/s02005-02.html
+
+{{Dragon Poker}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]

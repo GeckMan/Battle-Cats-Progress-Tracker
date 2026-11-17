@@ -1,0 +1,42 @@
+Let's be real here the invocation is almost exactly the same as the [[Template:Cat Stats 0.1/examples|0.1 template]] but it now has the cost parameter.
+
+{{Cat Stats 0.2
+|Normal Name = Sorceress Sidmi
+|Normal Base HP = 7500
+|Normal Base AP = 950,950
+|Normal Range = 360
+|Normal Foreswing = 59,90
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 151
+|Normal Speed = 15
+|Normal KB = 2
+|Normal Cost = 3100
+|Normal Recharge = 4300
+|Normal Attack Type = Area
+|Normal Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (16,150 at 59f <sup>1.97s</sup>, 16,150 at 90f <sup>3s</sup>)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] [[:Category:Red Enemies|Red]] and [[:Category:Floating Enemies|Floating]] enemies for 100f <sub>3.33 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to [[:Category:Red Enemies|Red]] and [[:Category:Floating Enemies|Floating]] enemies<br>
+{{AbilityIcon|Conjure}} When on the battlefield, tap icon again to [[Conjure]] unit 825 as its [[#Spirit|spirit]]<br>
+{{AbilityIcon|Sage Slayer}} [[Sage Slayer]]<br>
+{{AbilityIcon|Immune to Weaken}} [[Immune to Weaken]]
+|Evolved Name = Flame Mage Sidmi
+|Evolved Base HP = 9000
+|Evolved Base AP = 1250,1250
+|Evolved Range = 360
+|Evolved Foreswing = 59,90
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 151
+|Evolved Speed = 15
+|Evolved KB = 2
+|Evolved Cost = 3100
+|Evolved Recharge = 4300
+|Evolved Attack Type = Area
+|Evolved Abilities = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (21,250 at 59f <sup>1.97s</sup>, 21,250 at 90f <sup>3s</sup>)<br>
+{{AbilityIcon|Slow}} 50% chance to [[Slow|slow]] [[:Category:Red Enemies|Red]] and [[:Category:Floating Enemies|Floating]] enemies for 150f <sub>5 seconds</sub><br>
+{{AbilityIcon|Resistant}} [[Resistant]] to [[:Category:Red Enemies|Red]] and [[:Category:Floating Enemies|Floating]] enemies<br>
+{{AbilityIcon|Conjure}} When on the battlefield, tap icon again to [[Conjure]] unit 825 as its [[#Spirit|spirit]]<br>
+{{AbilityIcon|Sage Slayer}} [[Sage Slayer]]<br>
+{{AbilityIcon|Immune to Weaken}} [[Immune to Weaken]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+}}

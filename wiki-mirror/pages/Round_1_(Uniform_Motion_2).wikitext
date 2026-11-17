@@ -1,0 +1,65 @@
+{{DISPLAYTITLE:Round 1}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Doge|Brollow|Teacher Bear|The Face|Shy Boy|Wicked Face|Dagshund|Condemned Peng}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#Uniform Motion 2|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Doge|4,000%
+|Brollow|100%
+|Teacher Bear|4,000%
+|Shy Boy|1,600%
+|Wicked Face|100%
+|Dagshund|1,000%
+|Condemned Peng|300%}}
+|boss = {{Magnification|The Face|1,600%}}
+|enemies2 = {{Magnification|Doge|4,800%
+|Brollow|120%
+|Teacher Bear|4,800%
+|Shy Boy|1,920%
+|Wicked Face|120%
+|Dagshund|1,200%
+|Condemned Peng|360%}}
+|boss2 = {{Magnification|The Face|1,920%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 10
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#Uniform Motion 2|Otherworld Colosseum]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Round 2 (Uniform Motion 2)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|Uniform Motion|25}}
+
+==Battleground==
+*Infinite [[Doge]]s spawn after 6.67 seconds<sup>200f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*3 [[Brollow]]s spawn after 8.67 seconds<sup>260f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*2 [[Teacher Bear]]s spawn after 18.67 seconds<sup>560f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*When the base reaches 99% HP:
+**1 [[The Face]] spawns as the boss.
+**3 [[Shy Boy]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**2 [[Wicked Face]]s spawn after 3.33 seconds<sup>100f</sup>, delay 56.67~60 seconds<sup>1,700f~1,800f</sup>.
+**2 [[Dagshund]]s spawn, delay 66.67~70 seconds<sup>2,000f~2,100f</sup>.
+**Infinite [[Condemned Peng]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**8 [[Brollow]]s spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36018-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

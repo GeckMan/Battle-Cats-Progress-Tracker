@@ -1,0 +1,71 @@
+{{EnemiesAppearing|Croco|Squire Rel|Master A.|Those Guys|Osamu Mikumo & Doge}}
+'''After-Battle Introspection''' is the fourth stage in [[World Trigger Collaboration Event#Battle! Tamakoma Second's Leader|Battle! Tamakoma Second's Leader]].
+
+{{Stage Info
+|stage name = [[File:rc162.png]]
+[[File:Mapsn186 03 c en.png]]
+|stage location = [[File:Mapname186 c en.png]]
+|energy = 150
+|enemy castle hp = 160,000 HP
+|enemies = {{Magnification|Croco|400%
+|Squire Rel|400%
+|Master A.|100%
+|Those Guys|400%}}
+|boss = {{Magnification|Osamu Mikumo & Doge|200%}}
+|enemies2 = {{Magnification|Croco|600%
+|Squire Rel|600%
+|Master A.|150%
+|Those Guys|600%}}
+|boss2 = {{Magnification|Osamu Mikumo & Doge|300%}}
+|enemies3 = {{Magnification|Croco|800%
+|Squire Rel|800%
+|Master A.|200%
+|Those Guys|800%}}
+|boss3 = {{Magnification|Osamu Mikumo & Doge|400%}}
+|enemies4 = {{Magnification|Croco|1,200%
+|Squire Rel|1,200%
+|Master A.|300%
+|Those Guys|1,200%}}
+|boss4 = {{Magnification|Osamu Mikumo & Doge|600%}}
+|treasure = - [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo & Cat]] (25%, 1 time)
+|score reward = '''7,100''': 200,000 XP<br>
+'''3,200''': 100,000 XP<br>
+'''500''': 40,000 XP
+|XP = 18,000 XP
+|width = 4,500
+|max enemies = 30
+|jpname = Reflection Only After It's All Over
+|script = 反省は全部終わってからだ
+|romaji = Hansei wa Zenbu Owatte karada
+|star = 4
+|event = [[World Trigger Collaboration Event]]
+|event-chapter = [[World Trigger Collaboration Event#Battle! Tamakoma Second's Leader|Battle! Tamakoma Second's Leader]]
+|difficulty = ★5
+|prev stage = [[I'll Do What I Must]]
+|next stage = [[I'm No Hero]]
+}}
+
+==Battleground==
+*3 [[Croco]]s spawn, delay 3~6 seconds<sup>90f~180f</sup>.
+*3 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 3~6 seconds<sup>90f~180f</sup>.
+*4 [[Croco]]s spawn after 20 seconds<sup>600f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*4 [[Squire Rel]]s spawn after 26.67 seconds<sup>800f</sup>, delay 2~4 seconds<sup>60f~120f</sup>.
+*5 [[Croco]]s spawn after 40 seconds<sup>1,200f</sup>, delay 1~3 seconds<sup>30f~90f</sup>.
+*5 [[Squire Rel]]s spawn after 46.67 seconds<sup>1,400f</sup>, delay 1~3 seconds<sup>30f~90f</sup>.
+*When the base reaches 99% HP:
+**1 [[Osamu Mikumo & Doge]] spawns as the boss.
+**1 [[Master A.]] spawns after 20 seconds<sup>600f</sup>.
+**Infinite [[Croco]]s spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**Infinite [[Squire Rel]]s spawn, delay 20~40 seconds<sup>600f~1,200f</sup>.
+**20 [[Those Guys]] spawn, delay 2~4 seconds<sup>60f~120f</sup>.
+
+==Strategy==
+Even at level 20, [[Rocker Cat (Rare Cat)|Artist Cat]] can almost solo the stage. In 2 and 3-crown difficulties you might need a higher-level Artist/Ramen to stall Osamu Mikumo & Doge better. In 4-crown, bring along [[Bahamut Cat (Special Cat)|Awakened Bahamut]] and spawn him when there is a clear shot on the boss.
+
+==Reference==
+*https://battlecats-db.com/stage/s02186-04.html
+
+{{World Trigger}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

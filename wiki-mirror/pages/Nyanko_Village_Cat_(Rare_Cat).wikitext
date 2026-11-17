@@ -1,0 +1,101 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Nyanko Village Cat (Enemy)]].''
+'''Nyanko Village Cat''' is a [[:Category:Rare Cats|Rare Cat]] that can be obtained by beating any stage in [[Puzzle Bonanza! Nyanko Village Collaboration Event#Puzzle Bonanza! Nyanko Village|Puzzle Bonanza! Nyanko Village]]. It was added in [[Version 15.3 Update|Version 15.3]].
+
+{{Cat Info
+|ID = 856
+|rarity = RR
+|name1 = Nyanko Village Cat
+|name2 = Nyanko Village Cat CC
+}}
+
+==Evolution==
+Evolves into '''Nyanko Village Cat CC''' at level 10.
+
+==Strategy/Usage==
+A pathetic crowd-controller that struggles to find a place. Their 30% chance to [[Freeze]] Aliens only lasts for 4-seconds, which hardly covers their 6.3-second attack rate. It barely suffices for melee pushers like Star Peng or Nimoy Bore, but that is as far as it goes.
+
+Their Single Attack hinders it further, though they do have a 20% chance to create an [[Explosion]] that theoretically can pierce up to 535. Even with this, the chance said Explosion even carries a Freeze is not worth considering in a practical sense. [[Surfer Cat (Super Rare Cat)|Seafarer Cat]] will always prove more useful outside of {{4c}}.
+
+{{Job|Classification = User Rank Dump & Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 856
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni856 f00.png
+|Image2 = Uni856 c00.png
+|Name1 (JP) = にゃんこ村のネコ (Nyanko Mura no Neko, Nyanko Village Cat)
+|Desc1 (JP) = 「パズルで豊作！にゃんこ村」から参戦！<br>故郷の村で野菜を育てて収穫しているネコ<br>たまにエイリアンの動きを止めて爆波を放つ
+|Transl1 (JP) = Joining the war from the game "Puzzle Bonanza! Nyanko Village"!<br>A cat growing and harvesting vegetables in his home village<br>Occasionally stops the Alien's movement and fires Explosive Waves
+|Name2 (JP) = にゃんこ村のネコCC (Nyanko Mura no Neko CC, Nyanko Village Cat CC)
+|Desc2 (JP) = 「パズルで豊作！にゃんこ村」から参戦！<br>荒れた農園を劇的リノベーションして村おこしに励む<br>たまにエイリアンの動きを止めて爆波を放つ
+|Transl2 (JP) = Joining the war from the game "Puzzle Bonanza! Nyanko Village"!<br>Dramatically renovating a dilapidated farm and working to revitalize the village<br>Occasionally stops the Alien's movement and fires Explosive Waves
+}}
+
+==Cost==
+*Chapter 1: 520¢
+*Chapter 2: 780¢
+*Chapter 3: 1,040¢
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Nyanko Village Cat
+|Normal Base HP = 520
+|Normal Base AP = 320
+|Normal Range = 260
+|Normal Foreswing = 50
+|Normal Attack Cooldown = 139
+|Normal Attack Length = 76
+|Normal Speed = 8
+|Normal KB = 3
+|Normal Cost = 520
+|Normal Recharge = 620
+|Normal Attack Type = Single
+|Normal Targets = Alien
+|Normal Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Explosion}} 20% chance to create an [[Explosion]] at 260 range
+|Evolved Name = Nyanko Village Cat CC
+|Evolved Base HP = 650
+|Evolved Base AP = 410
+|Evolved Range = 260
+|Evolved Foreswing = 50
+|Evolved Attack Cooldown = 139
+|Evolved Attack Length = 76
+|Evolved Speed = 8
+|Evolved KB = 3
+|Evolved Cost = 520
+|Evolved Recharge = 620
+|Evolved Attack Type = Single
+|Evolved Targets = Alien
+|Evolved Abilities = {{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] target traits for 120f <sub>4 seconds</sub><br>
+{{AbilityIcon|Explosion}} 20% chance to create an [[Explosion]] at 260 range
+|Lv.MAX = Lv.50
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni856 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/857.html
+
+----
+{{CatNav|Master of Selection Darvin|Barista Cat}}
+----
+
+{{Puzzle Bonanza! Nyanko Village}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:PONOS Crossover Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Explosion Cats]]

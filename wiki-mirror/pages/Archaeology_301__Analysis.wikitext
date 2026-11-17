@@ -1,0 +1,59 @@
+{{EnemiesAppearing|Celeboodle|Doge Dark|Wild Doge|Cumulus Gallus|Casaurian Ahirujo|Casaurian Darkjo|Pterowl Hazuku}}
+'''Archaeology 301: Analysis''' is the fourth and final stage in [[Empress' Excavation 3]].
+
+{{Stage Info
+|stage name = [[File:rc012.png]]
+[[File:Mapsn279 03 s en.png]]
+|stage location = [[File:Mapname279 s en.png]]
+|energy = 100
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Celeboodle|1,000%
+|Doge Dark|1,200%
+|Wild Doge|200%
+|Casaurian Ahirujo|100%
+|Casaurian Darkjo|100%
+|Pterowl Hazuku|100%}}
+|boss = {{Magnification|Cumulus Gallus|100%}}
+|treasure = - [[Ancient Egg: N004 (Special Cat)|Ancient Egg: N004]] (100%, 1 time)
+|restriction = Max # of Deployable Cats: 15
+|XP = 1,900 XP
+|width = 5,400
+|max enemies = 20
+|jpname = Ancient Survey III Analysis
+|script = 遺物調査Ⅲ分析
+|romaji = Ibutsu Chōsa Ⅲ Bunseki
+|star = 1
+|event-chapter = [[Empress' Excavation 3]]
+|max clears = 1
+|difficulty = ★10
+|prev stage = [[Archaeology 301: Results]]
+|next stage = N/A
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 15
+
+==Battleground==
+*1 [[Celeboodle]] spawns.
+*Infinite [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 26.67~30 seconds<sup>800f~900f</sup>.
+*4 [[Celeboodle]]s spawn after 20 seconds<sup>600f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*10 [[Wild Doge]]s spawn after 20 seconds<sup>600f</sup>, delay 50~53.33 seconds<sup>1,500f~1,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Cumulus Gallus]] spawns as the boss.
+**Infinite [[Celeboodle]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**1 [[Casaurian Ahirujo]] spawns after 13.33 seconds<sup>400f</sup>.
+**1 [[Casaurian Darkjo]] spawns after 60 seconds<sup>1,800f</sup>.
+**1 [[Pterowl Hazuku]] spawns after 120 seconds<sup>3,600f</sup>.
+
+==Strategy==
+The goal of this stage is to kill every other Behemoth before Pterowl Hazuku spawns. For this reason, you'll want to bring every unit you've got that would work against them, such as [[Ancient Egg: N101 (Rare Cat)|Courier Cat]] (for Behemoths in general, and can demolish Casaurian Ahirujo), [[Urs & Fenrir (Special Cat)|Urs & Minka]], among other units like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]], as well as units that can quickly dispose of the peons. You effectively win the stage if Hazuku is only supported by peons.
+
+If you struggle to kill Casaurian Darkjo before Hazuku spawns, then you might instead lure Cumulus Gallus close to your base, where similar to [[Archaeology 301: Planning|the first stage in this map]], he can be rushed down using a [[Talents|talented]] [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]], [[Ancient Egg: N101 (Rare Cat)|Courier Cat]], [[Express Cat (Super Rare Cat)|Bullet Train Cat]], alongside others to kill him and destroy the base before Darkjo and Hazuku can appear.
+
+==Reference==
+*https://battlecats-db.com/stage/s01279-04.html
+
+{{Empress}}
+
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

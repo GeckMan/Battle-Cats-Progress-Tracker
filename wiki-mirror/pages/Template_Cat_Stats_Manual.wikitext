@@ -1,0 +1,161 @@
+<onlyinclude>{{#invoke:Cat Stats Manual|main}}<templatestyles src="Cat Stats 1.1/styles.css" />
+:''*First stats are 1st form's initial; other stats include 300% Empire of Cats Treasures; recharge time may vary.''
+:''*Time between attacks is the time from the attack's execution to the start of the next attack (includes backswing).''
+:''*For units with multi-hit attacks, attack animation is the part of the animation leading up to the first hit.''
+:''*[[Fruit Treasures]] not included.''
+:''*See [[Level-up#Calculating Stats|this section]] to calculate {{{Normal Name}}}'s stats.''</onlyinclude>
+{{Dependencies|Module:Cat Stats Manual|Template:Cat Stats 1.1/styles.css}}
+Stats template with manually-inputted parameters.
+{{clear}}
+==Example usage==
+In addition to parameters shown above, you can also use the "Normal/Evolved/True/Ultra Stats Level" parameters if the level you show stats at isn't 30, as seen in the examples below.
+
+<tabber>
+One=
+{{Cat Stats Manual
+|Normal Name = Cheetah Cat
+|Normal Stats Level = 1
+|Normal Health = 1 HP
+|Normal Attack Power = 1 damage
+|Normal Attack Range = 1
+|Normal Attack Frequency = 99f <sub>3.3 seconds</sub>
+|Normal Movement Speed = 0
+|Normal Knockback = 1 time
+|Normal Attack Animation = 100 <sup>3.33s</sup><br>(-98f <sup>-3.27s</sup> backswing)
+|Normal Recharge Time = 666.6 ~ 657.8 seconds
+|Normal MaxHP = 2 HP
+|Normal MaxAttack = 2 damage
+|Normal Attack Type = Single Attack
+|Normal Abilities = -
+|Lv.MAX = Lv.1
+}}
+|-|
+Two=
+{{Cat Stats Manual
+|Normal Name = Bean Cats
+|Normal Stats Level = 1
+|Normal Health = 255 HP
+|Normal Attack Power = 55 damage<br>(16.67 DPS)
+|Normal Attack Range = 230
+|Normal Attack Frequency = 99f <sub>3.3 seconds</sub>
+|Normal Movement Speed = 8
+|Normal Knockback = 3 times
+|Normal Attack Animation = 40f <sup>1.33s</sup><br>(25f <sup>0.83s</sup> backswing)
+|Normal Recharge Time = 18.6 - 9.8 seconds
+|Normal MaxHP = 4,335 HP
+|Normal MaxAttack = 935 damage<br>(283.33 DPS)
+|Normal Attack Type = Single Attack
+|Normal Abilities = 30% chance to [[Knockback]] [[:Category:Red Enemies|Red]] enemies
+|Evolved Name = Brah Cats
+|Evolved Stats Level = 2
+|Evolved Health = 6,868 HP
+|Evolved Attack Power = 1,785 damage<br>(540.91 DPS)
+|Evolved Attack Range = 230
+|Evolved Attack Frequency = 99f <sub>3.3 seconds</sub>
+|Evolved Movement Speed = 8
+|Evolved Knockback = 3 times
+|Evolved Attack Animation = 40f <sup>1.33s</sup><br>(25f <sup>0.83s</sup> backswing)
+|Evolved Recharge Time = 18.6 - 9.8 seconds
+|Evolved Attack Type = Single Attack
+|Evolved Abilities = 30% chance to [[Knockback]] [[:Category:Red Enemies|Red]] enemies
+|Lv.MAX = Lv.50
+}}
+|-|
+Three=
+{{Cat Stats Manual
+|Normal Name = Rocker Cat
+|Normal Stats Level = 1
+|Normal Health = 450 HP
+|Normal Attack Power = 32 damage<br>(96 DPS)
+|Normal Attack Range = 120
+|Normal Attack Frequency = 10f <sub>0.33 seconds</sub>
+|Normal Movement Speed = 8
+|Normal Knockback = 1 time
+|Normal Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|Normal Recharge Time = 12.67 ~ 3.87 seconds
+|Normal MaxHP = 7,650 HP
+|Normal MaxAttack = 545 damage<br>(1,635 DPS)
+|Normal Attack Type = Single Attack
+|Normal Abilities = [[Resistant]] to [[:Category:Angel Enemies|Angel]] enemies
+|Evolved Name = Artist Cat
+|Evolved Stats Level = 2
+|Evolved Health = 12,750 HP
+|Evolved Attack Power = 917 damage<br>(2,751 DPS)
+|Evolved Attack Range = 120
+|Evolved Attack Frequency = 10f <sub>0.33 seconds</sub>
+|Evolved Movement Speed = 8
+|Evolved Knockback = 1 time
+|Evolved Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|Evolved Recharge Time = 12.67 ~ 3.87 seconds
+|Evolved Attack Type = Single Attack
+|Evolved Abilities = [[Resistant]] to [[:Category:Angel Enemies|Angel]] enemies
+|True Name = Ramen Cat
+|True Stats Level = 3
+|True Health = 17,850 HP
+|True Attack Power = 1,020 damage<br>(3,060 DPS)
+|True Attack Range = 120
+|True Attack Frequency = 10f <sub>0.33 seconds</sub>
+|True Movement Speed = 8
+|True Knockback = 1 time
+|True Attack Animation = 5f <sup>0.17s</sup><br>(5f <sup>0.17s</sup> backswing)
+|True Recharge Time = 12.67 ~ 3.87 seconds
+|True Attack Type = Single Attack
+|True Abilities = [[Resistant]] to [[:Category:Angel Enemies|Angel]] enemies
+|Lv.MAX = Lv.50+80
+}}
+|-|
+Four=
+{{Cat Stats Manual
+|Normal Name = Windy
+|Normal Stats Level = 1
+|Normal Health = 800 HP
+|Normal Attack Power = 1,255 damage<br>(92.28 DPS)
+|Normal Attack Range = 420
+|Normal Attack Frequency = 408f <sub>13.6 seconds</sub>
+|Normal Movement Speed = 6
+|Normal Knockback = 6 times
+|Normal Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|Normal Recharge Time = 111.07 ~ 102.27 seconds
+|Normal MaxHP = 13,600 HP
+|Normal MaxAttack = 21,335 damage<br>(1,568.75 DPS)
+|Normal Attack Type = Area Attack
+|Normal Abilities = Deals [[Massive Damage|massive damage]] to [[:Category:Floating Enemies|Floating]] enemies
+|Evolved Name = Windy, type α
+|Evolved Stats Level = 2
+|Evolved Health = 25,500 HP
+|Evolved Attack Power = 43,435 damage<br>(3,193.75 DPS)
+|Evolved Attack Range = 420
+|Evolved Attack Frequency = 408f <sub>13.6 seconds</sub>
+|Evolved Movement Speed = 6
+|Evolved Knockback = 6 times
+|Evolved Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|Evolved Recharge Time = 111.07 ~ 102.27 seconds
+|Evolved Attack Type = Area Attack
+|Evolved Abilities = Deals [[Massive Damage|massive damage]] to [[:Category:Floating Enemies|Floating]] enemies
+|True Name = Divine Windy α
+|True Stats Level = 3
+|True Health = 51,000 HP
+|True Attack Power = 68,935 damage<br>(11,796.36 DPS)
+|True Attack Range = 450
+|True Attack Frequency = 408f <sub>13.6 seconds</sub>
+|True Movement Speed = 12
+|True Knockback = 6 times
+|True Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|True Recharge Time = 111.07 ~ 102.27 seconds
+|True Attack Type = Area Attack
+|True Abilities = Deals [[Massive Damage|massive damage]] to [[:Category:Floating Enemies|Floating]] enemies
+|Ultra Name = Ultimate Windy α
+|Ultra Stats Level = 4
+|Ultra Health = 51,000 HP
+|Ultra Attack Power = 68,935 damage<br>(5,068.75 DPS)
+|Ultra Attack Range = 450
+|Ultra Attack Frequency = 408f <sub>13.6 seconds</sub>
+|Ultra Movement Speed = 12
+|Ultra Knockback = 6 times
+|Ultra Attack Animation = 81f <sup>2.7s</sup><br>(55f <sup>1.83s</sup> backswing)
+|Ultra Recharge Time = 111.07 ~ 102.27 seconds
+|Ultra Attack Type = Area Attack
+|Ultra Abilities = Deals [[Insane Damage|insane damage]] to [[:Category:Floating Enemies|Floating]] enemies
+|Lv.MAX = Lv.60+70
+}}
+</tabber>

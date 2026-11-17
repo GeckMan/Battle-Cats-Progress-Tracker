@@ -1,0 +1,139 @@
+'''Reindeer Terun''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] added in [[Version 11.10 Update|Version 11.10]] that can be obtained by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Xmas Gals (Gacha Event)|Xmas Gals]] Gacha Event. She is the Christmas variant of [[Terun (Uber Rare Cat)|Terun]].
+
+{{Cat Info
+|ID = 687
+|rarity = UR
+|name1 = Reindeer Terun
+|name2 = Reindeer Terun, type ζ
+}}
+
+==Evolution==
+Evolves into '''Reindeer Terun, type ζ''' at level 10.
+
+==Strategy/Usage==
+Reindeer Terun plays a different role than her ordinary variant. Instead of slowing Red and Aliens, she knocks back Dark and Alien enemies. Knocking back Aliens could prevent your backliners from getting damaged and/or allowing enemies to enter their blindspot. But knocking back an enemy could cause [[Classification|Nukers]] to miss and could be a fatal mistake, and knocking back Dark enemies doesn't make much use, as they (usually) have a lot of knockbacks, like [[Bun Bun Black]] or [[Gory Dark]]. Her decent stats against Alien and Dark have good potential in the early game and definitely make her stronger than her regular variant, but she will be outclassed as you progress.
+
+Do note that she is simply not good against [[Le'Grim]] who outranges her or [[Super Hyppoh]] which both already has a large amount of knockbacks and additionally comes with support that completely invalidate Reindeer Terun. This means her [[Colossus Slayer]] ability is pretty much useless.
+
+{{Job|Classification = Crowd-Controller}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 687
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni687 f00.png
+|Image2 = Uni687 c00.png
+|Name1 = Reindeer Terun
+|Desc1 = The genius gal decided to dress up for the holidays.<br>Stands against those that would ruin Christmas.<br>Strong against Colossal, Dark, and Aliens.
+|Name2 = Reindeer Terun, type ζ
+|Desc2 = Genius hunter on her way to a Christmas party with a<br>friend. Her catch will be the centerpiece of dinner.<br>Strong against Colossal, Dark, and Aliens.
+|Name1 (JP) = トナカイ娘テルン (Tonakai Musume Terun, Reindeer Girl Terun)
+|Desc1 (JP) = クリスマス限定スタイルの秀才少女<br>聖夜を乱す者を容赦なく撃ち抜く<br>超生命体特効を持ち、黒い敵とエイリアンにめっぽう強い
+|Transl1 (JP) = A brilliant girl with a Christmas-only style<br>Mercilessly shoots those who disturb the holy night<br>Has a special super life form effect and is extremely strong against Dark enemies and Aliens
+|Name2 (JP) = トナカイ娘テルンζ (Tonakai Musume Terun ζ, Reindeer Girl Terun ζ)
+|Desc2 (JP) = 親友とクリスマスパーティーを楽しむ秀才狩猟少女<br>彼女の獲物がディナーを豪華に彩る<br>超生命体特効を持ち、黒い敵とエイリアンにめっぽう強い
+|Transl2 (JP) = A gifted hunting girl who enjoys Christmas parties with her best friends<br>Her prey makes a gorgeous dinner<br>Has a special super life form effect and is extremely strong against Dark enemies and Aliens
+|Name1 (TW) = 馴鹿女孩媞倫
+|Desc1 (TW) = 換上聖誕節限定造型的優秀少女<br>對那些想破壞聖誕夜的人可是毫不留情<br>有超生命體特效，善於攻擊黑色敵人與異星戰士
+|Name2 (TW) = 馴鹿女孩媞倫ζ
+|Desc2 (TW) = 和好友一起開聖誕派對的天才狩獵少女<br>帶來了捕獲的獵物讓晚餐更加豐盛<br>有超生命體特效，善於攻擊黑色敵人與異星戰士
+|Name1 (KR) = 사슴뿔 테룬
+|Desc1 (KR) = 크리스마스 한정 스타일의 수재 소녀<br>성야의 분위기를 망치는 자를 가차 없이 처리한다<br>초생명체 특효, 검은 적과 에이리언에 엄청 강하다
+|Name2 (KR) = 사슴뿔 테룬ζ
+|Desc2 (KR) = 친구와 크리스마스 파티를 즐기는 수재 수렵 소녀<br>잡은 사냥감으로 저녁 식탁을 호화롭게 만든다<br>초생명체 특효, 검은 적과 에이리언에 엄청 강하다
+}}
+
+==Cost==
+*Chapter 1: 2,000¢
+*Chapter 2: 3,000¢
+*Chapter 3: 4,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Reindeer Terun
+|Normal Base HP = 1950
+|Normal Base AP = 1150
+|Normal Range = 430
+|Normal Foreswing = 92
+|Normal Attack Cooldown = 79
+|Normal Attack Length = 141
+|Normal Speed = 8
+|Normal KB = 4
+|Normal Cost = 2000
+|Normal Recharge = 2100
+|Normal Attack Type = Area
+|Normal Targets = Dark,Alien
+|Normal Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Colossus Slayer}} [[Colossus Slayer]] (Deals 1.6x damage to [[:Category:Colossus Enemies|Colossus]] enemies, only takes 0.7x damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Evolved Name = Reindeer Terun, type ζ
+|Evolved Base HP = 2250
+|Evolved Base AP = 1350
+|Evolved Range = 430
+|Evolved Foreswing = 92
+|Evolved Attack Cooldown = 79
+|Evolved Attack Length = 141
+|Evolved Speed = 8
+|Evolved KB = 4
+|Evolved Cost = 2000
+|Evolved Recharge = 2100
+|Evolved Attack Type = Area
+|Evolved Targets = Dark,Alien
+|Evolved Abilities = {{AbilityIcon|Strong Against}} [[Strong Against|Strong]] against target traits (Deals 1.5x damage, only takes 1/2 damage)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Colossus Slayer}} [[Colossus Slayer]] (Deals 1.6x damage to [[:Category:Colossus Enemies|Colossus]] enemies, only takes 0.7x damage)<br>
+{{AbilityIcon|Immune to Slow}} [[Immune to Slow]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+|validation = on
+|val-Normal-Health = 1,950 HP
+|val-Normal-Attack Power = 1,150 damage<br>(201.75 DPS)
+|val-Normal-Attack Range = 430
+|val-Normal-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 4 times
+|val-Normal-Attack Animation = 92f <sup>3.07s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Normal-Recharge Time = 70 ~ 61.2 seconds
+|val-Normal-MaxHP = 33,150 HP
+|val-Normal-MaxAttack = 19,550 damage<br>(3,429.82 DPS)
+|val-Evolved-Health = 38,250 HP
+|val-Evolved-Attack Power = 22,950 damage<br>(4,026.32 DPS)
+|val-Evolved-Attack Range = 430
+|val-Evolved-Attack Frequency = 171f <sub>5.7 seconds</sub>
+|val-Evolved-Movement Speed = 8
+|val-Evolved-Knockback = 4 times
+|val-Evolved-Attack Animation = 92f <sup>3.07s</sup><br>(49f <sup>1.63s</sup> backswing)
+|val-Evolved-Recharge Time = 70 ~ 61.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni687 f00}}
+
+==Trivia==
+*Prior to [[Version 15.6 Update|Version 15.6]], [[First-Love Myrcia (Uber Rare Cat)|First-Love Myrcia]], [[Night Beach Lilin (Uber Rare Cat)|Night Beach Lilin]], Reindeer Terun, [[Music Fest Thundia (Uber Rare Cat)|Music Fest Thundia]], and [[Seaside Pegasa (Uber Rare Cat)|Seaside Pegasa]]'s Evolved Forms were missing the ", type" part of their names that other Galaxy Gals had.
+*The floating presents in Reindeer Terun, type ζ's design were reused for several things, including [[Santa Claws at Work!]]'s Event Banner, and [[Capsule Clearance (Gacha Event)|Capsule Clearance]]'s Gacha Button and Gacha Banner.
+**Despite the asset being used for Capsule Clearance, she could not be obtained from said Gacha Event.
+
+==Reference==
+*https://battlecats-db.com/unit/688.html
+
+----
+{{CatNav|Goddess of Light Sirius|Brainwashed Lizard Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with Strong ability]]
+[[Category:Cats with Knockback ability]]
+[[Category:Colossus Slayer Cats]]
+[[Category:Cats with Slow Immunity]]

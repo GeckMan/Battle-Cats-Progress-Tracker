@@ -1,0 +1,97 @@
+'''Metal Cyclone''' (メタルサイクロン, ''Metaru Saikuron'', '''Metal Cyclone''') is a [[:Category:Metal Enemies|Metal]] enemy and [[:Category:Cyclones|Cyclone]] introduced in [[Attack on Titanium (Insane)|Sweet Irony]].
+{{Enemy Info
+|name = Metal Cyclone
+|image = E 071.png
+|appearance = [[Attack on Titanium (Insane)|Sweet Irony]]<br>'''ZL''': [[Groundscraper|Sub-chapter 11 - Groundscraper]]
+|money drop = 3,000¢ - 11,850¢
+}}
+
+==Enemy==
+Similarly to other [[:Category:Cyclones|Cyclone]]s, this very slow enemy attacks non-stop and deals extreme damage, but has a tiny range of 65. It takes only 1 damage from non-[[Critical Hit|Critical]] attacks like all Metal enemies yet has more than triple the health of [[Sir Metal Seal]], requiring a lot of [[Critical Hit]]s to defeat. Fortunately, Metal Cyclone does have a very high knockback count, making it easy to keep at bay if enough damage is dealt to it.
+
+==Strategy==
+Depending on the support, you may have to reserve only a few [[:Category:Anti-Metal Cats|anti-Metal]] specialists to take it down. When using [[:Category:Critical Hit Cats|Critters]] like [[Jurassic Cat (Rare Cat)|Jurassic Cat Sitter]] that value quantity over quality, it's important to back them with [[:Category:Crowd-Controller-class Cats|crowd-control units]] so they could at least attack it with impunity. Guaranteed Critical units like [[Cheerleader Cat (Super Rare Cat)|Waitress Cat]], while definitely useful, will also require support so they don't waste their powerful Critical Hits on something else.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 071
+|Type = Metal
+|Image1 = Enemy icon 071.png
+|Name1 = Metal Cyclone
+|Desc1 = Attacks continuously while moving<br>so no one can stop its cyclonic force.<br>A maelstrom of flying metal shards.<br>Its heavy body keeps it from floating.
+|Name1 (JP) = メタルサイクロン (Metaru Saikuron, Metal Cyclone)
+|Desc1 (JP) = 超高速回転による連続攻撃は<br>いかなる者もよせつけない。<br>鉄製であるがゆえに浮くことが出来ず<br>鉄屑をまき散らしながら破壊を続ける。
+|Transl1 (JP) = Attacks continuously through ultra high-speed rotation so no one can stop its cyclonic force. Its iron body prevents it from floating, and dispersing its metal shards everywhere means it is continuously being destroyed.
+|Name1 (TW) = 鋼鐵旋風
+|Desc1 (TW) = 他的超高速迴轉連續攻擊能力<br>讓敵人無法靠近他。<br>因為鐵製的關係無法浮起<br>不過他可以揮灑鐵屑使攻擊力不間斷。
+|Name1 (KR) = 메탈 사이클론
+|Desc1 (KR) = 초고속 회전에 의한 연속 공격은<br>어떠한 자도 다가오지 못하게 한다.<br>철제이므로 뜰 수가 없어 철부스러기를<br>흩날리며 모든 것을 파괴한다
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Zero Legends]]===
+*Stage 11-5: [[Groundscraper]] (150%)
+
+===[[Special Events|Event Stages]]===
+*Sweet Irony: [[Attack on Titanium (Insane)]] (100%)
+*[[Techneurosis]]: [[Nuts 'n' Bolts (Expert)]] (100%)
+*[[Deadly Carnival II]]: [[Tornado Carnival II (Deadly)]] (100%)
+*[[Bitter Irony]]:
+**[[Wrath of Titanium (Deadly)]] (100%)
+**[[Revenge of Titanium (Deadly)]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 38|Floor 38]] (200%)
+*[[Golden Tower]]: [[Golden Tower/Floor 38|Floor 38]] (200%)
+*[[Otherworld Colosseum#Cooldown Equality 3|Otherworld Colosseum]]: [[Round 4 (Cooldown Equality 3)|Round 4]] (150%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Metal Cyclone
+|Health = 77777
+|Attack Power = 77000
+|Attack Range = 65
+|Attack Type = Area
+|Time Between Attacks = 5
+|Movement Speed = 2
+|Knockback = 10
+|Foreswing = 1
+|Backswing = 4
+|Ability = -
+|Element = Metal
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+Metal Cyclone(bcp).png|Metal Cyclone's Enemy Guide entry in [[The Battle Cats POP!]]
+IdleMetalCyclone.gif|Metal Cyclone's moving animation
+Ciclone.png|Metal Cyclone before it was implemented
+Medal 022.png|Metal Cyclone on the ''Storm of Steel'' [[Meow Medals|Meow Medal]]
+071 e.png|Metal Cyclone's spritesheet
+File:MetalCyclonePOP.png|Metal Cyclone's Spritesheet (3DS)
+</gallery>
+
+==Trivia==
+*Metal Cyclone existed in the game data for an indeterminate length of time before it was implemented in [[Version 3.0 Update|Version 3.0]], hence why it is the fourth [[:Category:Cyclones|Cyclone]] in the [[Enemy Release Order]] despite being the fifth released, coming after [[Divine Cyclone]], and why [[Oncoming Maelstrom (Expert)|Wrath of Heaven]]'s ID comes before [[Attack on Titanium (Insane)|Sweet Irony]]'s in spite of that.
+**Before Metal Cyclone was implemented, it appeared noticeably higher above the ground, floating at the same altitude as the previous Cyclones - as shown in the gallery above.
+***The Metal Cyclone in [[The Battle Cats POP!]] still has this appearence.
+*Metal Cyclone is the only Cyclone to close its eye when it is knocked back.
+*Metal Cyclone has the highest health, shortest range and fastest attack rate of all [[:Category:Metal Enemies|Metal Enemies]].
+
+==Reference==
+*https://battlecats-db.com/enemy/073.html
+
+----
+{{EnemyNav|Dark Cyclone|Nimue}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Metal Enemies]]
+[[Category:Event Enemies]]
+[[Category:Zero Legends Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Cyclones]]

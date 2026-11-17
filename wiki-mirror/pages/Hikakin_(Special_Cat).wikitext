@@ -1,0 +1,151 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemies, see [[Hikakin (Enemy)]] and [[Mukyakin (Enemy)]].''
+'''Hikakin''' is a [[:Category:Special Cats|Special Cat]] introduced in [[Version 2.6 Update|Version 2.6]] and was a [[Hikakin Collaboration Event|collaboration]] with the YouTuber of the same name. To unlock said unit was to input the code (ヒカ－キン ) and after reaching level 10, his [[True Form]] was obtained by using the code ( ひかきん － しんか ). As of [[Version 4.3 Update|Version 4.3]], this long-standing collaboration unit became unobtainable due to the removed feature of inputting [[Serial Codes]]. In a newer collab in [[Version 8.0 Update|Version 8.0]], it and its True Form was made obtainable as drop rewards. True Form has no statistical changes and is purely aesthetic.
+
+{{Cat Info
+|ID = 133
+|rarity = EX
+|name1 = Hikakin
+|name2 = Bikyakin
+|name3 = Mukyakin
+}}
+
+==Evolution==
+Evolves into '''Bikyakin''' at level 10.
+
+Evolves into '''Mukyakin''' by when obtained from the [[Hikakin Awakens!]]<sup>8.0 onward</sup> or when the code ( ひかきん － しんか ) is used<sup>before 8.0</sup> and is level 20 or above.
+
+==Strategy/Usage==
+Hikakin can serve as a temporary version of [[Salon Cat (Rare Cat)|Salon Cat]] until said Cat is obtained, similarly to [[Vengeful Cat (Rare Cat)|Vengeful Cat]] or [[Actress Cat (Special Cat)|Actress Cat]]. Much like them, he quickly becomes useless afterwards due to lower overall stats. He may still find use in providing some [[User Rank]], though.
+
+{{Job|Classification = User Rank Dump & Midranger}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 133
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni133 f00.png
+|Image2 = Uni133 c00.png
+|Image3 = Uni133 s00.png
+|Name1 (JP) = ヒカキン (Hikakin)
+|Desc1 (JP) = にゃんこ軍団に捕まってしまったヒカキン<br>無理やりキモネコとの融合手術を施され<br>殺戮マシンと化し敵を粉砕する(範囲攻撃)
+|Transl1 (JP) = Hikakin was caught by the Cat Army<br>He was forced into a fusion surgery with [[Gross Cat (Normal Cat)|Gross Cat]]<br>and became a killing machine that crushes enemies (Area Attack)
+|Name2 (JP) = ビキャキン (Bikyakin)
+|Desc2 (JP) = フェニックスひかるとなって<br>脱出を試みるも、今度は美脚ネコと無理やり<br>融合させられた悲劇のヒーロー(範囲攻撃)
+|Transl2 (JP) = Transforming into Phoenix Hikaru<br>he tried escaping, but this time he was fused with [[Gross Cat (Normal Cat)|Beautiful Legs Cat]]<br>becoming a tragedy hero (Area Attack)
+|Name3 (JP) = ムキャキン (Mukyakin)
+|Desc3 (JP) = にゃんこ軍団からの脱出を断念したヒカキンは<br>新たなる融合手術を許してしまう<br>暴走する彼を誰も止める事は出来ない(範囲攻撃)
+|Transl3 (JP) = Hikakin has given up on escape from the Cat Army<br>and allowed a new fusion surgery<br>No one can stop his rampage (Area Attack)
+}}
+
+==Cost==
+*Chapter 1: 444円
+*Chapter 2: 666円
+*Chapter 3: 888円
+{{Upgrade Cost|RR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Hikakin
+|Normal Base HP = 500
+|Normal Base AP = 150
+|Normal Range = 350
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 16
+|Normal Speed = 10
+|Normal KB = 3
+|Normal Cost = 444
+|Normal Recharge = 480
+|Normal Attack Type = Area
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Bikyakin
+|Evolved Base HP = 500
+|Evolved Base AP = 150
+|Evolved Range = 350
+|Evolved Foreswing = 8
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 16
+|Evolved Speed = 10
+|Evolved KB = 3
+|Evolved Cost = 444
+|Evolved Recharge = 480
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|True Name = Mukyakin
+|True Base HP = 500
+|True Base AP = 150
+|True Range = 350
+|True Foreswing = 8
+|True Attack Cooldown = 119
+|True Attack Length = 16
+|True Speed = 10
+|True KB = 3
+|True Cost = 444
+|True Recharge = 480
+|True Attack Type = Area
+|True Targets = -
+|True Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 150 damage<br>(35.43 DPS)
+|val-Normal-Attack Range = 350
+|val-Normal-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Normal-Movement Speed = 10
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Normal-Recharge Time = 16 ~ 7.2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 2,550 damage<br>(602.36 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 2,550 damage<br>(602.36 DPS)
+|val-Evolved-Attack Range = 350
+|val-Evolved-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-Evolved-Movement Speed = 10
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-Evolved-Recharge Time = 16 ~ 7.2 seconds
+|val-True-Health = 8,500 HP
+|val-True-Attack Power = 2,550 damage<br>(602.36 DPS)
+|val-True-Attack Range = 350
+|val-True-Attack Frequency = 127f <sub>4.23 seconds</sub>
+|val-True-Movement Speed = 10
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 8f <sup>0.27s</sup><br>(8f <sup>0.27s</sup> backswing)
+|val-True-Recharge Time = 16 ~ 7.2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni133 f00}}
+
+==Trivia==
+*This cat is based on [http://www.youtube.com/user/HikakinGames HikakinGames] - a famous Japanese Youtuber.
+*Bikyakin's name is a portmanteau of 美 ''bi'' (beautiful) and ''Hikakin''.
+*Mukyakin's name is a portmanteau of むきむき ''mukimuki'' (an informal term for "muscular") and ''Hikakin''.
+*Mukyakin is the only [[True Form]] not to change a unit's [[Battle|battle]] performance in any way.
+*Its first collaboration event was the longest a collab has ever been held as it lasted from its addition until inputting serial codes were removed.
+
+==Reference==
+*https://battlecats-db.com/unit/134.html
+
+----
+{{CatNav|Kung Fu Cat X|Urashima Taro}}
+----
+
+{{Hikakin}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Item Drop Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats requiring Awakening for True Form]]

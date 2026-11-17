@@ -1,0 +1,335 @@
+'''Marauder Cat''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during [[THE DYNAMITES (Gacha Event)|THE DYNAMITES]] and [[METAL BUSTERS (Gacha Event)|METAL BUSTERS]] events. It was added in [[Version 2.0 Update#Version 2.0.5 Update|Version 2.0.5]]. [[True Form]] added in [[Version 5.3 Update|Version 5.3]] increases attack power, health, range and critical chance, along with gaining [[Immune to Knockback|Knockback Immunity]]. [[Talents]] were added in [[Version 10.4 Update|Version 10.4]], and Ultra Talents were added in [[Version 14.4 Update|Version 14.4]].
+
+{{Cat Info
+|ID = 57
+|rarity = UR
+|name1 = Marauder Cat
+|name2 = Berserker Cat
+|name3 = Paladin Cat
+}}
+
+==Evolution==
+Evolves into '''Berserker Cat''' at level 10.
+
+Evolves into '''Paladin Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+There are a few factors that hinder this unit's performance before True Form, with its terrible stats, range and somewhat low [[Critical Hit|Critical]] chance, so it's best to invest early to get the most of it. Its highly damaging Critical Hits can quickly put [[:Category:Metal Enemies|Metals]] out of action due to their low health pools crumbling easily when Critical Hits bypass said ability, although that's as far as it goes since its stats are simply not worth using elsewhere.
+
+==='''True Form'''===
+Paladin Cat gains an increase in base stats, more range, a higher Critical chance and Immunity to Knockback, heavily improving its overall effectiveness within its niche but not opening up any new doors. This allows him to be a strong anti-Metal attacker, which is compounded by his excellent 2250¢ and sub-50s cooldown, allowing him to easily get value in a single Critical Hit.
+
+However, Paladin Cat faces stringent competition from [[Jurassic Cat (Rare Cat)|Catasaurus]], who has consistent and strong Critical Hits, and can accumulate unmatched Anti-Metal DPS in a stack. Despite this, Paladin Cat remains viable as Catasaurus relies on building a stack to get going, especially against swarms, while Paladin Cat offers immediate and strong Anti-Metal area damage. Paladin Cat even pairs well with Catasaurus; Paladin Cat can burst down a Metal frontline, helping weaken stronger Metals like [[Sir Metal Seal]] and gather cash from weaker Metals that die in one hit, allowing Catasaurus to more easily stack up and get going.
+
+While the [[Immune to Knockback|Knockback Immunity]] does prevent it from being repositioned by [[Super Metal Hippoe]], it isn't a total downgrade either, as said effect will no longer interrupt Paladin's foreswing.
+
+==='''Talents'''===
+Paladin's Talents begin with the [[Freeze]] ability, followed by [[Zombie Killer]], [[Immune to Slow|Slow Immunity]], and general stat boosts, but many of them are simply not worth the cost.
+
+At first glance, an [[:Category:Anti-Metal Cats|anti-Metal]] '''Freeze''' effect would've been great to nullify their pushing power, but the activation chance is even lower than the unit's Critical Hits at a measly 30%. Even when maxed with all [[Titanium Fruit]]s, it only goes up to 2.4 seconds, giving it little uptime in practice compared to disposable anti-Metal crowd-control units like [[Clockwork Cat (Rare Cat)|Puppetmaster & Charley]], [[Hoop Cat (Rare Cat)|Hoopmaster Cat]] and Talented [[Panties Cat (Special Cat)|Lollycat]], since they can overwhelm Metals with sheer quantity, giving them a higher overall chance to inflict status effects despite being unable to Crit. Additionally, Paladin's Crits will likely kill most Metals outright, rendering the Freeze pointless.
+
+'''Zombie Killer''' is useless for Paladin Cat, as he is a pure Critter and has no other redeeming qualities; although intended to work on [[March to Death (Merciless)|March to Death]], the only [[:Category:Zombie Enemies|Zombie]] there is [[Daboo of the Dead]], whom Paladin Cat has no hope of killing on his own. Immune to Slow is just as situational, as there are almost no stages where it would even come into play at all.
+
+Level 1 '''Attack Buff''' is actually worth the NP if Paladin Cat himself has also been upgraded to level 50, in which case his Critical damage will increase just enough to knockback the 300% [[Sir Metal Seal]]s found in many late-game stages. Investing any further, however, is only good if you don't have a high-level [[Jurassic Cat (Rare Cat)|Catasaurus]] or any other Critical Hitters that you may use more often than Paladin Cat.
+
+==='''Ultra Talents'''===
+Although Paladin Cat gains a few notable Ultra Talents, they pale in comparison to other units for the same Dark Catseye investment, especially since Paladin, being an anti-Metal specialist, boasts terrible stats and is not useful elsewhere.
+
+'''Critical''' boosts the unit's Critical Chance to 60% when maxed. This does improve its consistency, but is far from necessary, as 50% is more than enough to tear down nasty Metals quickly.
+
+'''[[Dodge Attack]]''' against Metal is absolutely useless. 30% to Dodge for 2 seconds isn't too shabby, but the fact that it targets only Metals and how they tend to appear alongside other enemies often limits its scope.
+
+'''[[Money Up]]''' is arguably the best Talent of the three, with how Metal stages tend to be cash-tight and the lack of units that could exploit this ability, but even within this niche, Paladin still faces significant competition to more disposable anti-Metal units, who can function just fine on their own with the right strategy.
+
+{{Job|Classification = Critter & Melee}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|Cursed Strength|Cannon Recharge Up (M)|Grudge Cat|Marauder Cat|jpname=呪われた力}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 57
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni057 f00.png
+|Image2 = Uni057 c00.png
+|Image3 = Uni057 s00.png
+|Name1 = Marauder Cat
+|Desc1 = Their cursed blade slices through armor with<br>Critical blows, but drains the might of lesser strikes.<br>Known as the "Metal Slayer".
+|Name2 = Berserker Cat
+|Desc2 = Consumed by the cursed blade, this dark knight<br>is driven solely by the desire to destroy all Metal.<br>Area attacks might strike for Critical damage.
+|Name3 = Paladin Cat
+|Desc3 = With a righteous heart finally shattering the spell of<br>the cursed sword, transforming it into a holy axe.<br>Area attacks might strike for Critical damage.
+|Name1 (JP) = ネコシュバリエ (Neko Shubarie, Chevalier Cat)
+|Desc1 (JP) = 呪われた剣によって通常攻撃は強くはないが<br>たまにクリティカル攻撃を出すことができる<br>メタルキラーにゃんこ
+|Transl1 (JP) = His cursed sword weakens his normal attacks, but<br>he can do Critical attacks sometimes.<br>A Metal Killer Cat.
+|Name2 (JP) = ネコベルセルク (Neko Beruseruku, Berserk Cat)
+|Desc2 (JP) = 呪われた剣によって我を忘れた<br>メタルキラーにゃんこ<br>たまにクリティカル攻撃を出すことができる(範囲攻撃)
+|Transl2 (JP) = Has lost himself due to his cursed sword.<br>A Metal Killer Cat.<br>Can do Critical attacks sometimes.
+|Name3 (JP) = ネコパラディン (Neko Paradin, Paladin Cat)
+|Desc3 (JP) = 剣の呪縛から解放され真の力を取り戻したにゃんこ<br>聖なる槍でメタルな敵を討ち滅ぼす<br>たまにクリティカル攻撃を出すことができる(範囲攻撃)
+|Transl3 (JP) = A Cat that was released from the sword's spell and regained his true power.<br>Destroys Metal enemies with his holy spear.<br>Can do Critical attacks sometimes.
+|Name1 (TW) = 巨劍騎士貓
+|Desc1 (TW) = 因為劍被詛咒所以普通攻擊並不強<br>但有時候可以發出會心一擊的<br>鋼鐵剋星
+|Name2 (TW) = 狂戰士貓
+|Desc2 (TW) = 因為劍被詛咒而盡情忘我的<br>鋼鐵剋星<br>有時候可以發出會心一擊（範圍攻擊）
+|Name3 (TW) = 聖騎士貓
+|Desc3 (TW) = 從劍的詛咒解放而取回真正的能力<br>以手中的神聖武器消滅鋼鐵敵人們<br>有時候可以發出會心一擊（範圍攻擊）
+|Name1 (KR) = 고양이 슈발리에
+|Desc1 (KR) = 저주받은 검으로 인해 기본 공격은 강하지 않지만<br>가끔 크리티컬을 낸다<br>메탈 킬러 냥코
+|Name2 (KR) = 고양이 베르세르크
+|Desc2 (KR) = 저주받은 검으로 인해 자아를 잃어 버린<br>메탈 킬러 냥코<br>가끔 크리티컬을 낸다 (범위 공격)
+|Name3 (KR) = 고양이 파라딘
+|Desc3 (KR) = 검의 저주에서 풀려나 진짜 힘을 되찾은 냥코<br>성스러운 창으로 메탈 적을 토멸한다<br>가끔 크리티컬을 낸다 (범위 공격)
+|Name1 (3DS) = Marauder Cat
+|Desc1 (3DS) = Its cursed sword might lack power<br>but might deliver critical hits.<br>Known as the "Metal Killer"
+|Name2 (3DS) = Berserkat
+|Desc2 (3DS) = Cursed blade has taken over and<br>made this poor Cat a Cursed Knight.<br>No mercy to Metal foes.
+}}
+
+==Cost==
+*Chapter 1: 1,500¢
+*Chapter 2: 2,250¢
+*Chapter 3: 3,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Marauder Cat
+|Normal Base HP = 1300
+|Normal Base AP = 200
+|Normal Range = 195
+|Normal Foreswing = 31
+|Normal Attack Cooldown = 119
+|Normal Attack Length = 61
+|Normal Speed = 7
+|Normal KB = 3
+|Normal Cost = 1500
+|Normal Recharge = 1700
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Critical}} 20% chance to perform a [[Critical Hit]]
+|Evolved Name = Berserker Cat
+|Evolved Base HP = 1800
+|Evolved Base AP = 300
+|Evolved Range = 195
+|Evolved Foreswing = 31
+|Evolved Attack Cooldown = 119
+|Evolved Attack Length = 61
+|Evolved Speed = 7
+|Evolved KB = 3
+|Evolved Cost = 1500
+|Evolved Recharge = 1700
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Critical}} 40% chance to perform a [[Critical Hit]]
+|True Name = Paladin Cat
+|True Base HP = 2300
+|True Base AP = 400
+|True Range = 245
+|True Foreswing = 31
+|True Attack Cooldown = 119
+|True Attack Length = 66
+|True Speed = 7
+|True KB = 3
+|True Cost = 1500
+|True Recharge = 1700
+|True Attack Type = Area
+|True Targets = -
+|True Abilities = {{AbilityIcon|Critical}} 50% chance to perform a [[Critical Hit]]<br>
+{{AbilityIcon|Immune to Knockback}} [[Immune to Knockback]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 1,300 HP
+|val-Normal-Attack Power = 200 damage<br>(40 DPS)
+|val-Normal-Attack Range = 195
+|val-Normal-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Normal-Movement Speed = 7
+|val-Normal-Knockback = 3 times
+|val-Normal-Attack Animation = 31f <sup>1.03s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Normal-Recharge Time = 56.67 ~ 47.87 seconds
+|val-Normal-MaxHP = 22,100 HP
+|val-Normal-MaxAttack = 3,400 damage<br>(680 DPS)
+|val-Evolved-Health = 30,600 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(1,020 DPS)
+|val-Evolved-Attack Range = 195
+|val-Evolved-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 3 times
+|val-Evolved-Attack Animation = 31f <sup>1.03s</sup><br>(30f <sup>1s</sup> backswing)
+|val-Evolved-Recharge Time = 56.67 ~ 47.87 seconds
+|val-True-Health = 39,100 HP
+|val-True-Attack Power = 6,800 damage<br>(1,360 DPS)
+|val-True-Attack Range = 245
+|val-True-Attack Frequency = 150f <sub>5 seconds</sub>
+|val-True-Movement Speed = 7
+|val-True-Knockback = 3 times
+|val-True-Attack Animation = 31f <sup>1.03s</sup><br>(35f <sup>1.17s</sup> backswing)
+|val-True-Recharge Time = 56.67 ~ 47.87 seconds
+}}
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Berserker Cat
+|Evolved Image = Uni057 c00.png
+|True Name = Paladin Cat
+|True Image = Uni057 s00.png
+|True Description = True Form evolution increases all traits<br>and critical attack chance! Also grants<br>resistance to enemy attacks' knockback.
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = BlueFruit
+|Catfruit4 = YellowFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x4
+|Quantity Catfruit2 = x5
+|Quantity Catfruit3 = x4
+|Quantity Catfruit4 = x4
+|Quantity Catfruit5 = x3
+|Quantity XP = 1,000,000
+}}
+
+==Talents==
+*'''[[Freeze]]''': Adds a 30% chance to Freeze [[:Category:Metal Enemies|Metal]] enemies for 15f <sup>0.5s</sup>, improves by 5f <sup>0.17s</sup> per level up to 60f <sup>2s</sup> (Total Cost: 235 NP)
+*'''[[Zombie Killer]]''' (Cost: 100 NP)
+*'''[[Immune to Slow]]''' (Cost: 100 NP)
+*'''[[Special Abilities#Stat Enhancements|HP Buff]]''': Upgrades health by 2% per level up to 20% (Total Cost: 175 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 175 NP)
+
+===Ultra Talents===
+*'''[[Critical]]''': Upgrades Critical Hit chance by 1% per level up to 10% (Total Cost: 225 NP)
+*'''[[Dodge Attack]]''': Adds a 3% chance to Dodge [[:Category:Metal Enemies|Metal]] enemy attacks for 60f <sup>2s</sup> per level up to 30% (Total Cost: 355 NP)
+*'''[[Money Up|Extra Bounties]]''' (Cost: 150 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Marauder Cat and its evolution appear in Shoumetsu Toshi as a dark type unit introduced in the first collaboration between the two games. It appears in the collaboration gacha during the event duration and can be obtained through it.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ネコシュバリエ (Neko Shubarie, Chevalier Cat)
+! scope="row" style="text-align: center;"|ネコベルセルク (Neko Beruseruku, Berserk Cat)
+|-
+| colspan="2" |[[File:ST Marauder Cat.png|center|300px]]
+|[[File:ST Berserker Cat.png|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats At Level 35
+! scope="col" style="text-align: center;"|Stats At Level 99
+|-
+! scope="col" |Rarity
+|★4
+|★5
+|-
+! scope="col" |Health
+|1,148
+|2,280
+|-
+! scope="col" |Attack
+|598
+|1,180
+|-
+! scope="col" |Recovery
+|120
+|230
+|-
+! scope="col" |Single Skill
+| colspan="2" |Performs a dark attribute attack equal to x3 your attack power, recovers HP
+|-
+! scope="col" |Leadership Skill
+| colspan="2" |Doubles the attack power of ally dark attribute souls,<br>increases resilience by 1.2
+|}
+
+===[[Nyanko Defence Force]]===
+Marauder Cat and its evolutions appear in Nyanko Defence Force as a Uber Super Rare team member. It can be obtained through the gacha system.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|ネコシュバリエ (Neko Shubarie, Chevalier Cat)
+! scope="row" style="text-align: center;"|ネコベルセルク (Neko Beruseruku, Berserk Cat)
+! scope="row" style="text-align: center;"|ネコパラディン (Neko Paradin, Paladin Cat)
+|-
+| colspan="2" |[[File:LC06 T1.png|center|200px]]
+|[[File:LC06 T2.png|center|200px]]
+|[[File:LC06 T3.png|center|200px]]
+|-
+! scope="col" colspan="4" style="text-align: center;"|Stats At Level 30
+|-
+! scope="col" colspan="2" |Rarity
+| colspan="2" |Uber Super Rare
+|-
+! scope="col" rowspan="3" |Attack
+! scope="col" |3/3 Zodiac Signs
+| colspan="2" |192
+|-
+! scope="col" |2/3 Zodiac Signs
+| colspan="2" |144
+|-
+! scope="col" |1/3 Zodiac Signs
+| colspan="2" |120
+|-
+! scope="col" colspan="2" |Skill
+| colspan="3" |[[File:Skill 13.jpg|50px]] Reduces movement speed of non-boss enemies by 10%<br>[[File:Skill 20.jpg|50px]] Treasure chest appearance rate increases by 25%
+|}
+</div>
+
+{{Gallery|Uni057 f00}}
+
+==Trivia==
+*[[Version 2.0 Update#Version 2.0.6 Update|Version 2.0.6]] increased Berserker Cat's Critical Hit chance from 20% to 40%.
+*[[Version 2.0 Update#Version 2.0.9 Update|Version 2.0.9]] changed Berserker Cat from Single Attack to Area Attack.
+*Prior to [[Version 4.7 Update|Version 4.7]], Marauder Cat was a part of another [[Cat Combo]] called [[Dynamites (Removed Combo)|Dynamites]].
+*Prior to [[Version 15.7 Update|Version 15.7]], Marauder Cat's descriptions read as follows:
+<pre>Marauder Cat
+Its cursed sword reduces the offensive power
+but might deliver critical hits.
+Known as the "Metal Killer".</pre>
+<pre>Berserker Cat
+The cursed sword has taken over and
+turned the Cat into the Cursed Knight.
+Known as the "Dark Metal Knight". (Area Atk)</pre>
+<pre>Paladin Cat
+This Cat's righteous heart finally conquered
+the cursed sword, turning it into a holy axe.
+Might critical attack. (Area Attack)</pre>
+**Despite being known as the "Metal Killer" in its original description, Marauder Cat was not retroactively given the [[Metal Killer]] ability after it was added.
+**Berserker Cat's original nickname, "Dark Metal Knight", could potentially have been referencing [https://wikirby.com/wiki/Dark_Meta_Knight Dark Meta Knight], a recurring boss in the ''[[wikipedia:Kirby (series)|Kirby]]'' series.
+*Berserker Cat is modeled after the gaming magazine [[wikipedia:Famitsu|''Famitsu'']]'s mascot, Necky the Fox, as described in [[Nyanko Ecology Report Large Edition]]. Though at first they would appear to lack any visual similarities, Necky is depicted in a different costume every time he appears on the magazine's cover art, with many of the costumes including dark clothing, a sword, and/or medieval armor.
+**Berserker Cat also looks like [[wikia:berserk:Guts|Guts]] from the manga ''[[wikipedia:Berserk (manga)|Berserk]]'' in [[wikia:berserk:Berserker Armor|Berserker Mode]].
+*Paladin Cat's weapon looks like a combination of several weapons used by [[wikipedia:Kingdom Hearts|''Kingdom Hearts'']]' Organization XIII: it has Axel's Chakrams, Vexen's Shield, Lexaeus's Axe, Larxene's Knives, and Xaldin's Lances. Paladin Cat himself also shares some similarities with the Twilight Thorn Nobody.
+*Paladin Cat's True Form evolution description claims that he is granted "Resistance to enemy attack's knockback", when in reality, he gains a full immunity to knockback.
+**This is likely because Immune to Knockback was originally named Resist Knockback.
+*There is a typo in Paladin Cat's [[Talents]] screen: it says "Freeeze" instead of freeze.
+*With the relevant Ultra Talent fully upgraded and all [[Critical Hit|Critical]] Rate UP [[Cat Combo]]s active, Paladin Cat can achieve the highest sub-100% Critical chance in the game, at 65%.
+*Paladin Cat's Zombie Killer Talent may be a reference to how paladins in pop culture (e.g., [[wikipedia:Paladin (Dungeons & Dragons)|''Dungeons & Dragons''<nowiki>'</nowiki> paladin class]]) tend to have holy powers, smiting unholy beings such as the undead. Even in [[The Battle Cats]], the [[Ototo Corps|Holy Blast]] is effective against [[:Category:Zombie Enemies|Zombies]].
+
+==Reference==
+*https://battlecats-db.com/unit/058.html
+
+----
+{{CatNav|Archer Cat|Swordsman Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Critical Hit Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Cats with Talents]]
+[[Category:Anti-Metal Cats]]
+[[Category:Cats with Freeze ability]]
+[[Category:Zombie Killer Cats]]
+[[Category:Cats with Slow Immunity]]
+[[Category:Cats with Defense Buff Talent]]
+[[Category:Cats with Attack Buff Talent]]
+[[Category:Cats with Ultra Talents]]
+[[Category:Cats with Dodge Attack ability]]
+[[Category:Cats with Money Up ability]]

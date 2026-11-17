@@ -1,0 +1,13 @@
+{{Documentation}}
+==Usage==
+As a visual helper:
+*{{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (4,760 at 40f <sup>1.33s</sup>, 4,760 at 60f <sup>2s</sup>, 4,760 at 80f <sup>2.67s</sup>)
+*{{AbilityIcon|Immune to Waves|Immune to Knockback|Immune to Freeze|Immune to Slow|Immune to Weaken|Immune to Warp|Immune to Curse|Immune to Toxic|Immune to Surge}} [[Immune to Waves]], [[Immune to Knockback|Knockback]], [[Immune to Freeze|Freeze]], [[Immune to Slow|Slow]], [[Immune to Weaken|Weaken]], [[Immune to Warp|Warp]], [[Immune to Curse|Curse]], [[Immune to Toxic|Toxic]] and [[Immune to Surge|Surge]]
+
+Don't use this as a substitute for writing out the detail of the ability.
+
+With named parameters:
+*{{AbilityIcon|Knockback|size=40|nolink=on}} 0% → 50% (custom size, has no link + uses alt text)
+*{{AbilityIcon|Knockback|size=80}} really big
+
+With nolink, this can be used as a substitute for writing out the detail of the ability (e.g. in update pages).

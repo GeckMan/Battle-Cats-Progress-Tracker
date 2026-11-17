@@ -1,0 +1,125 @@
+{{Unobtainable}}
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Mob Cat (Enemy)]] or [[Yakuza Vampire (Enemy)]].''
+'''Mob Cat''' is a [[:Category:Special Cats|Special Cat]] added in [[Version 3.5 Update|Version 3.5]] and was available during the [[Yakuza Apocalypse Collaboration Event]]. During the event, the player must have bought a movie ticket for Yakuza Apocalypse and on the back side would contain its [[Serial Codes|serial code]].
+
+{{Cat Info
+|ID = 178
+|rarity = EX
+|name1 = Mob Cat
+|name2 = Yakuza Vampire
+}}
+
+==Evolution==
+Evolves into '''Yakuza Vampire''' at level 10
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Very similar to [[Cat (Normal Cat)|Cat]] in terms of usage. Cheap and expendable, it can be summoned en masse to take hits in place of other, more important units. This meatshield role is quite valuable, if not for the wide selection of Cats able to perform it, usually with a lower cost. Mob Cat, however, can be used in {{4c}} stages, where there is considerably less competition. Despite that, there are still lower cost alternatives, such as [[Catburger (Special Cat)|Catburger]] and [[Boogie Cat (Special Cat)|Boogie Cat]].
+
+==='''Evolved Form'''===
+There is no reason to use this form. In non-{{4c}} stages, one can just use [[Titan Cat (Normal Cat)|Jamiera Cat]], with the ability to knockback almost all traits as well as access to plus levels, giving you a very strong Cat that you will never get with this one. Even in {{4c}} stages, you can use [[Li'l Titan Cat (Special Cat)|Li'l Jamiera Cat]], which gives the same benefits of Jamiera Cat. Overall, the form is outclassed in every situation you might use it in.
+
+{{Job|Classification = Meatshield & User Rank Dump|EvolvedClass = Tanker & User Rank Dump|TrueClass=|UltraClass=}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 178
+|Type = [[:Category:Special Cats|Special Cat]]
+|Image1 = Uni178 f00.png
+|Image2 = Uni178 c00.png
+|Name1 (JP) = 極道にゃんこ
+|Desc1 (JP) = 愛しの人を守るため仁義を貫く漢にゃんこ<br>その身は汚れても侠気は失わない
+|Transl1 (JP) = The Han cat which has one important duty. To protect a dear person.<br>Even if his body gets soiled, the chivalrous spirit will still remain.
+|Name2 (JP) = ヤクザヴァンパイア
+|Desc2 (JP) = 「血の儀式」という洗礼を受け<br>ヴァンパイアと化したヤクザねこ(範囲攻撃)<br>愛しき人が見せる健気な笑みにはめっぽう弱い
+|Transl2 (JP) = Received a baptism as "ceremony of blood",<br>The good-for-nothing cat which changed into a vampire.<br>Vulnerable to the cheerful smiles shown by loved ones
+}}
+
+==Cost==
+===Normal Form===
+*Chapter 1: 70円
+*Chapter 2: 105円
+*Chapter 3: 140円
+
+===Evolved Form===
+*Chapter 1: 1,250円
+*Chapter 2: 1,875円
+*Chapter 3: 2,500円
+{{Upgrade Cost|EX1}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Mob Cat
+|Normal Base HP = 100
+|Normal Base AP = 8
+|Normal Range = 140
+|Normal Foreswing = 8
+|Normal Attack Cooldown = 29
+|Normal Attack Length = 18
+|Normal Speed = 8
+|Normal KB = 1
+|Normal Cost = 70
+|Normal Recharge = 150
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Yakuza Vampire
+|Evolved Base HP = 1030
+|Evolved Base AP = 280
+|Evolved Range = 155
+|Evolved Foreswing = 18
+|Evolved Attack Cooldown = 53
+|Evolved Attack Length = 31
+|Evolved Speed = 7
+|Evolved KB = 1
+|Evolved Cost = 1250
+|Evolved Recharge = 830
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.50
+|Scaling = 20x6,10x14
+|Orb = false
+|validation = on
+|val-Normal-Health = 100 HP
+|val-Normal-Attack Power = 8 damage<br>(6.49 DPS)
+|val-Normal-Attack Range = 140
+|val-Normal-Attack Frequency = 37f <sub>1.23 seconds</sub>
+|val-Normal-Movement Speed = 8
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 8f <sup>0.27s</sup><br>(10f <sup>0.33s</sup> backswing)
+|val-Normal-Recharge Time = 5 ~ 2 seconds
+|val-Normal-MaxHP = 1,700 HP
+|val-Normal-MaxAttack = 135 damage<br>(109.46 DPS)
+|val-Evolved-Health = 17,510 HP
+|val-Evolved-Attack Power = 4,760 damage<br>(2,011.27 DPS)
+|val-Evolved-Attack Range = 155
+|val-Evolved-Attack Frequency = 71f <sub>2.37 seconds</sub>
+|val-Evolved-Movement Speed = 7
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 18f <sup>0.6s</sup><br>(13f <sup>0.43s</sup> backswing)
+|val-Evolved-Recharge Time = 27.67 ~ 18.87 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni178 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/179.html
+
+----
+{{CatNav|Dioramos|Takuya & Yuki}}
+----
+
+{{Yakuza Apocalypse}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Special Cats]]
+[[Category:Serial Code Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]

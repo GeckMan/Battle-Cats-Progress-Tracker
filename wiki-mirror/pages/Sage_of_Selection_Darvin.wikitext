@@ -1,0 +1,104 @@
+:''This article is about the enemy. For the Cat Unit, see [[Master of Selection Darvin (Special Cat)]].''
+'''Sage of Selection Darvin''' (淘の賢者ダーヴィン, ''Tō no Kenja Dāvin'', '''Sage of Selection Darvin''') is an [[:Category:Alien Enemies|Alien]]/[[:Category:Sage Enemies|Sage]] enemy that appears in [[Zero Legends]]. He is the enemy version of [[Master of Selection Darvin (Special Cat)|Master of Selection Darvin]]. He was added in [[Version 15.3 Update|Version 15.3]].
+
+{{Enemy Info
+|name = Sage of Selection Darvin
+|image = E 772.png
+|first appearance = [[Endless Forms Most Beautiful]]
+|money drop = 7,000¢ - 27,650¢
+}}
+
+==Enemy==
+This Alien/Sage midranger has an immense amount of health, high stamina, and a disjointed [[Multi-Hit]] that allows him to hit up to 651 from a comparatively short standing range of 350, with the outer hit dealing half the damage of the inner one. Cats that survive his attacks will not only be [[Curse|Cursed]], but suffer a penalty to their ongoing cooldown that only increases the more of their kind are hit at once, thinning the flow of incoming reinforcements.
+
+==Strategy==
+:''See [[Endless Forms Most Beautiful]] for strategies.''
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 772
+|Type = [[:Category:Alien Enemies|Alien]]/[[:Category:Sage Enemies|Sage]]
+|Image1 = Enemy icon 772.png
+|Name1 = Sage of Selection Darvin
+|Desc1 = Peered into our world from another dimension and<br>resolved to subject all life to the trials of selection.<br>Tracing the threads of causality, he now marches<br>upon the Cat Army for defying the laws of evolution.
+|Name1 (JP) = 淘の賢者ダーヴィン (Tō no Kenja Dāvin, Sage of Selection Darvin)
+|Desc1 (JP) = 遥か高位の異次元より現世を観測し<br>生命に淘汰の試練を課す超賢者。<br>進化の理を超えるにゃんこ軍団の元へ<br>因果の糸を辿り静かに歩み寄る。
+|Transl1 (JP) = A Super-Sage who is observing this world from a far higher<br>dimension and imposes the laws of natural selection upon all living things.<br>Following the threads of causality,<br>he serenely approaches the Cat Army, which transcends the laws of evolution.
+|Name1 (TW) = 淘之賢者達而文
+|Desc1 (TW) = 從極高層次的異次元來到這裡觀測世界，<br>對生命降下淘汰試煉的超賢者。<br>循著因果脈絡悄悄地來到<br>超越進化原理的貓咪軍團的身邊。
+|Name1 (KR) = 도태의 현자 다뷘
+|Desc1 (KR) = 머나먼 다른 차원에서 세계를 관측하고<br>생명에게 도태의 시련을 주는 초현자.<br>진화의 이치를 초월한 냥코 군단을 향해<br>인과의 실을 따라 고요히 다가간다.
+}}
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Zero Legends]]===
+*Stage 31-6: [[Endless Forms Most Beautiful]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Sage of Selection Darvin
+|Health = 5000000
+|Attack Power = 60000
+|Attack Range = 350
+|Attack Type = Area
+|Time Between Attacks = 160
+|Movement Speed = 4
+|Knockback = 4
+|Foreswing = 62
+|Backswing = 40
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">40,000</span> at 62f <sup>2.07s</sup>, <span class="scaled" data-type="ap">20,000</span> at 81f <sup>2.7s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1~401 on 1st hit, 401~651 on 2nd hit)<br>
+{{AbilityIcon|Curse}} 100% chance to [[Curse|curse]] Cat Units for 90f <sub>3 seconds</sub><br>
+{{AbilityIcon|Drain}} 100% chance to [[Drain|drain]] a Cat Unit's ongoing cooldown by 50% of current cooldown<br>
+{{AbilityIcon|Immune to Curse}} [[Immune to Curse]]
+|Element = Alien/Sage
+}}
+
+{{UnitViewer|enemy|bg=bg263.png}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+772 e.png|Sage of Selection Darvin's spritesheet
+Medal 126.png|Sage of Selection Darvin on the ''Darvin'' [[Meow Medals|Meow Medal]]
+</gallery>
+
+==Trivia==
+*Sage of Selection Darvin is based on English evolutionary biologist [[wikipedia:Charles Darwin|Charles Darwin]]. His title refers to [[wikipedia:Natural selection|natural selection]], while his name may be a combination of ''Darwin'' and ''carving'' (as in a stone carving, since [[Master of Mind Soractes (Special Cat)|Soractes]] resembles a [[commons:File:Statues of Plato (left) and Socrates (right) by Leonidas Drosis at the Academy of Athens.jpg|statue]] and [[Master of Logic Newtone (Special Cat)|Newtone]]'s Japanese name may be a pun on ''stone''), ''starving'' (as in starving for knowledge, since [[Sage of Mind Soractes]]' description mentions his insatiable thirst for knowledge and all Sage [[:Category:Mythic Cats|Mythic Cats]] are interested in studying the Cat Army), ''conserving'' (as in conserving species), ''observing'' (since all Sage Mythic Cats' enemy forms except [[Sage of Life Dr. Nova|Dr. Nova]]'s are stated to be observing the [[wikipedia:Present life|present life]]), or ''vintage'' (referencing his old age).
+**The giant tortoise is based on the [[wikipedia:Galápagos tortoise|Galápagos giant tortoise]], which contributed to Darwin's theory of evolution, the large branch on his shell references the branches of the metaphorical [[wikipedia:Tree of life (biology)|tree of life]] describing life's evolutionary relationships, and the primates on top represent human evolution, which Darwin discussed in ''[[wikipedia:The Descent of Man, and Selection in Relation to Sex|The Descent of Man, and Selection in Relation to Sex]]''. [[Tree of Strife]]'s name also references the tree of life.
+***The branch and primates nearly form the shape of a [[wikipedia:Nucleic acid double helix|double helix]], which is used in DNA, the building blocks of life. This is more noticeable in [[Master of Selection Darvin (Special Cat)|Master of Selection Darvin]]'s preview, which shows him as a silhouette.
+***When Sage of Selection Darvin is knocked back, the monkey and the two apes above it will perform a pose reminiscent of the [[wikipedia:Three wise monkeys|three wise monkeys]] (see no evil, hear no evil, speak no evil). The man on top of them may represent the less common fourth monkey (do no evil).
+**The book "On the Origin of Scratches" in Master of Selection Clawvin's description is a reference to ''[[wikipedia:On the Origin of Species|On the Origin of Species]]'' (種の起源 ''Shu no Kigen'', "Origin of Species") by Darwin. On the Origin of Scratches' Japanese name (ネコの機嫌 ''Neko no Kigen'', "Cats' Moods") plays off of how 機嫌 (mood) and 起源 (origin) are both read as ''kigen''.
+***The names of [[Origin Outback]] and [[Endless Forms Most Beautiful]] both reference ''On the Origin of Species'', with the latter specifically quoting the book's last paragraph: "There is grandeur in this view of life, with its several powers, having been originally breathed into a few forms or into one; and that, whilst this planet has gone cycling on according to the fixed law of gravity, from so simple a beginning <u>endless forms most beautiful</u> and most wonderful have been, and are being, evolved."
+**His allied self's [[:Category:Angel Enemies|Angel]] target might be a reference to the scientific theory of evolution eclipsing [[wikipedia:Creationism|creationism]], which is based in religion. This is supported by [[The Dogma Divide]], which references the divide between [[wikipedia:Rejection of evolution by religious groups|evolution and faith]].
+**The [[Commander Ostromeda]] in [[Endless Forms Most Beautiful]] may represent [[wikipedia:Darwin's rhea|Darwin's rhea]], as [[wikipedia:Rhea (bird)|rheas]] are distantly related to ostriches and are also known as "South American ostriches".
+**Endless Forms Most Beautiful can be seen as an "evolved" form of [[Realm of Carnage (Deadly)|Realm of Carnage]], having a stage width of 6,000, a long-reaching boss that spawns after 10 seconds, and unlimited, alternating variants of [[Bore]] ([[Boraphim]]) and [[R.Ost]] (Commander Ostromeda) as constant threats.
+**Darwin was depicted as an animal with his own face in [[wikipedia:Caricatures of Charles Darwin and his evolutionary theory in 19th-century England|certain caricatures]], but as a monkey, not a tortoise.
+*Sage of Selection Darvin's [[:Category:Alien Enemies|Alien]] trait may reference [[wikipedia:Panspermia|panspermia]], the theory that life originated in space and landed on Earth through astronomical objects such as meteorites or comets; or myths of the [[wikipedia:World Turtle|World Turtle]], also known as the Cosmic Turtle. The "tree of life" and man on his shell could specifically be based on the [[wikipedia:Turtle Island#Lenape|Lenape creation myth]], in which the first man and woman come from a tree grown on the turtle.
+**Sage of Selection Darvin's "tree of life" may also be a nod to the [[wikipedia:World tree|world tree]], another cosmological mytheme.
+*Unlike the other Sage Mythic Cats ([[Sage of Mind Soractes|Soractes]], [[Sage of Life Dr. Nova|Dr. Nova]] and [[Sage of Logic Newtone|Newtone]]), Darvin is only missing his eyes, not his whole face.
+*According to the Japanese descriptions of Sage of Selection Darvin, Sage of Mind Soractes and Sage of Logic Newtone, the world they are observing is specifically the [[wikipedia:Present life|present life]] (現世 ''gen sei'', ''utsushi yo''), a concept in certain religions such as Shinto and Buddhism.
+*The gemstone on Sage of Selection Darvin's shell might be a reference to the [[wikipedia:Diamondback terrapin|diamondback terrapin]].
+*Sage of Selection Darvin is one of the five non-[[:Category:Relic Enemies|Relic]] enemies to have the Curse ability, the others being [[Master Uril (Enemy)|Master Uril]], the [[Relic Doge Base (Enemy Base)|Relic Doge Base]], [[Malevolent Dark Cat]] and [[Cafeteria Cat (Enemy)|Cafeteria Cat]].
+
+==Reference==
+*https://battlecats-db.com/enemy/774.html
+
+----
+{{EnemyNav|The Golden Face|Nyanko Village Cat}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Alien Enemies]]
+[[Category:Sage Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Curse ability]]
+[[Category:Enemies with Drain ability]]
+[[Category:Enemies with Curse Immunity]]
+[[Category:Mythic Bosses]]

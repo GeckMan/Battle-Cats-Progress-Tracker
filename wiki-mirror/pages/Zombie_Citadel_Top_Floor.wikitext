@@ -1,0 +1,60 @@
+{{EnemiesAppearing|Zoge|Znache|The Thrillerz|Squire Rel|Li'l Zyclone|Cadaver Bear|Dread Bore|Lord Gravey}}
+'''Top Floor''' is the tenth and final floor of [[Zombie Citadel]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc013.png]]
+[[File:Mapsn005 09 v en.png]]
+|stage location = [[File:Mapname005 v en.png]]
+|energy = 200
+|enemy castle hp = 720,000 HP
+|enemies = {{Magnification|Zoge|250%
+|Znache|250%
+|The Thrillerz|150%
+|Squire Rel|3,000%
+|Li'l Zyclone|100%
+|Cadaver Bear|200%
+|Dread Bore|200%
+|Lord Gravey|200%}}
+|boss = {{Magnification|Squire Rel|100%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +1 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 6,000
+|max enemies = 20
+|jpname = Top Floor
+|script = 最上階
+|romaji = Saijōkai
+|star = 1
+|event-chapter = [[Zombie Citadel]]
+|difficulty = ★9
+|prev stage = [[Zombie Citadel/Floor 9|Floor 9]]
+|next stage = N/A
+}}
+
+==Battleground==
+*8 [[Zoge]]s spawn after 10 seconds<sup>300f</sup>, delay 6.67~10 seconds<sup>200f~300f</sup>.
+*6 [[Znache]]s spawn after 10 seconds<sup>300f</sup>, delay 10~13.33 seconds<sup>300f~400f</sup>.
+*4 [[The Thrillerz|Thrillerz]] spawn after 10 seconds<sup>300f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Squire Rel]] (100%) spawns as the boss.
+**Infinite [[The Thrillerz|Thrillerz]] spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**Infinite [[Squire Rel]]s (3,000%) spawn, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+**6 [[Li'l Zyclone]]s spawn, delay 20~23.33 seconds<sup>600f~700f</sup>.
+**5 [[Cadaver Bear]]s spawn, delay 26.67~30 seconds<sup>800f~900f</sup>.
+**4 [[Dread Bore]]s spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+**3 [[Lord Gravey]]s spawn, delay 40 seconds<sup>1,200f</sup>.
+
+==Strategy==
+The primary threats of this stage are the Cadaver Bears and Li'l Zyclones that continuously force you to lose ground. As such, you'll want units like [[Teacher BearCat (Rare Cat)|Cadaver BearCat]] and [[Talents|Talented]] [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] to deal with the onslaught as quickly as humanly possible. [[Ototo Corps#Holy Blast|Holy Blast]] is a necessity to unburrow the Cadaver Bears as they appear periodically, while your backliners/rushers like [[Ururun Wolf (Special Cat)|Ururun Cat]]/[[Express Cat (Super Rare Cat)|Bullet Train Cat]] chip at their health. [[Wushu Cat (Rare Cat)|Shigong Cat]] alongside a potential Talented [[Li'l Tank Cat (Special Cat)|Li'l Eraser Cat]] should be your main meatshields, and will be able to hold back the Zombies save for the Lord Graveys. Only spawn Cadaver BearCats when the Li'l Zyclones burrow in order to waste them as quickly as possible.
+
+==Walkthrough==
+{{Walkthrough
+|3DdthUx8LkE|WaffleCat|Cheese without Uber / Cadaver BearCat
+}}
+
+==Reference==
+*https://battlecats-db.com/stage/s07005-10.html
+
+{{SpecialStages List}}
+[[Category:Citadel Stages]]
+[[Category:No Continue Stages]]

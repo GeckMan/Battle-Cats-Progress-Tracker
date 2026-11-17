@@ -1,0 +1,29 @@
+/*==left column==*/
+.template-cats table tr td:nth-of-type(1) {
+	background: var(--bg-color-creamy-yellow);
+	border-radius: 4px;
+	padding: 0px 2px;
+}
+.template-cats table tr:hover td:nth-of-type(1) {
+	background: var(--bg-color-light1);
+}
+
+/*==right column==*/
+.template-cats table tr td:nth-of-type(2) {
+	padding: 0px 3px;
+	background: var(--bg-color-light4);
+	border-radius: 5px;
+}
+.template-cats table tr:nth-of-type(2n) td:nth-of-type(2) {
+	padding: 0px 3px;
+	background: var(--bg-color-light3);
+	border-radius: 5px;
+}
+.template-cats table tr:hover td:nth-of-type(2) {
+	background: var(--bg-color-light2);
+}
+.template-cats table th {
+	border-radius: 4px
+}
+
+/* [[Category:Template stylesheets]] */

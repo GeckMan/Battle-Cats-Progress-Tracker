@@ -1,0 +1,9 @@
+.ranger-navbox.pac-man {
+	--bg-navbox-title: linear-gradient(to right, #3731FF 0%, #000000 50%, #3731FF 100%);
+	--bg-sub-table-title: #2D44F4;
+	--bg-group-name: #FFFE04;
+	--title-color: #fff;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

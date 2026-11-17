@@ -1,0 +1,59 @@
+{{Documentation}}
+This template uses [[Template:AnimationViewer]] to automatically create viewers for cat and enemy pages.
+
+==Usage==
+<pre>{{UnitViewer|mode|name = (optional)|noheading = (optional)|bg = (optional)}}</pre>
+
+<code>mode</code> is the only required parameter, and it can take the values <code>cat</code>, <code>enemy</code> and <code>conjurer</code>. Any other value will cause an error. The first two modes should be self-explanatory, but <code>conjurer</code> is used for [[:Category:Cats with Conjure ability|Cats with the Conjure ability]]. It is named "conjurer" and not "spirit" because it displays the original unit along with its spirit. In most circumstances, nothing else is needed because [[Module:UnitViewer]] uses the page name to figure out what unit it is supposed to display.
+
+Note about conjurer: ONLY use it if the unit has exactly one spirit, and that one spirit's ID is immediately after the main cat's ID. For example [[Master of Mind Soractes (Special Cat)|Master of Mind Soractes]] is fine while [[Squire Luno (Uber Rare Cat)|Squire Luno]] is not.
+
+When the page's title cannot be used to get the unit, the unit's name must be passed to the <code>name</code> parameter. For Cats, it does not matter which form's name you use. If you do not want the "Animation" heading, pass "true" or anything to <code>noheading</code>. <code>bg</code> is also optional, and it takes a file to use as the default background just like AnimationViewer.
+
+When a unit has a preview sprite, it will automatically have this preview added to their list of sprites. The list of all previewable cats can be found at [[Module:UnitViewer#L-9]].
+
+==Examples==
+<tabber>
+Mizli=
+{{UnitViewer|cat|name=Mizli|noheading=true}}
+|-|Izanagi=
+{{UnitViewer|conjurer|name=Daybreaker Izanagi|noheading=true}}
+|-|Xenobeast Bunaglios=
+{{UnitViewer|enemy|name=Xenobeast Bunaglios|noheading=true}}
+|-|Bahamut Cat=
+{{UnitViewer|cat|name=Bahamut Cat|noheading=true}}
+</tabber>
+
+==TemplateData==
+<templatedata>
+{
+	"params": {
+		"1": {
+			"label": "Mode",
+			"description": "Which unitviewer mode you use",
+			"type": "string",
+			"suggestedvalues": [
+				"cat",
+				"enemy",
+				"conjurer"
+			],
+			"required": true
+		},
+		"name": {
+			"description": "Name of unit to be viewed. Will default to page name if not given.",
+			"type": "string"
+		},
+		"noheading": {
+			"description": "Do you NOT put in the \"Animations\" heading.",
+			"type": "boolean"
+		},
+		"bg": {
+			"description": "Background image to use.",
+			"example": "Bg000.png",
+			"type": "wiki-file-name"
+		}
+	},
+	"format": "inline",
+	"description": "Convenient shorthand for the AnimationViewer template to be used on cat and enemy units."
+}
+</templatedata>

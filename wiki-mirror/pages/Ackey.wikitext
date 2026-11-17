@@ -1,0 +1,120 @@
+'''Ackey''' (デビルカツヤ, ''Debiru Katsuya'', '''Devil Katsuya''') is an [[:Category:Aku Enemies|Aku]] variant of [[Tackey]] that appears in [[Legend Stages]]. He was added in [[Version 11.0 Update|Version 11.0]].
+
+{{Enemy Info
+|name = Ackey
+|image = E 587.png
+|first appearance = [[Aku Studies 501: Inquiry]]<br>
+'''UL''': [[Seahorses Caught|Sub-chapter 40 - Seahorses Caught]]
+|latest appearance = '''ZL''': [[Accidental Toxicity|Sub-chapter 13 - Accidental Toxicity]]
+|money drop = 550¢ - 2,172¢
+}}
+
+==Enemy==
+Like [[Tackey]] and [[Hackey]] before him, Ackey's attacks can easily snipe your important support units from afar. His health is actually among the lowest of his variants, but he has a [[Shield]] that can tank almost nine times as much and could regenerate once. The problems don't end here, as Ackey's attack is split into three rapid hits that get progressively weaker but can occasionally freeze your cats in place. Due to the multi-hit, he approximately has a 66% chance of freezing any cats he hits.
+
+==Strategy==
+Depending on the stage in which Ackey appears, it may be worth trying to get a powerful attacker in his range by having said attacker be approached by Ackey while the meatshield line is dangerously close to said attacker. This isn't easy to achieve given the frontline pressure, but it's always worth trying to exploit any openings. A much less risky way to deal with him is to use short-ranged cats, as anything with less than 350 range will easily reach his blind spot, if they can get past the attack. Short-ranged [[:Category:Shield Piercing Cats|Shield Piercers]] such as a level 32 [[Ancient Egg: N004 (Special Cat)|Supercar Cat]] can instantly kill an unbuffed Ackey and easily rush into his blind spot.
+
+==Description==
+{{Description
+|Mode = Enemy
+|Number = 587
+|Type = [[:Category:Aku Enemies|Aku]]
+|Image1 = Enemy icon 587.png
+|Name1 = Ackey
+|Desc1 = A cold-hearted high-school baseball ace<br>who sold his twin brother's soul to the Aku<br>for a tournament victory. A five-tool player<br>who's being scouted by the Major League.
+|Name1 (JP) = デビルカツヤ (Debiru Katsuya, Devil Katsuya)
+|Desc1 (JP) = 双子の兄の魂を悪魔に売り払い<br>全国大会まで勝ち進んだ心なき高校球児。<br>投手と打者と監督の三刀流スタイルは<br>メジャーリーグからも注目を集めている。
+|Transl1 (JP) = A heartless high-school baseball player who made it to<br>the national tournament by selling his twin brother's soul<br>to a Devil. His Three Sword Style of pitcher, hitter<br>and manager has also been getting attention from the Major League.
+|Name1 (TW) = 惡魔達也
+|Desc1 (TW) = 將雙胞胎哥哥的靈魂出賣給惡魔<br>闖進了全國大會的無心球兒。<br>兼具投手打者與教練的三刀流風格<br>使他也受到美國職棒大聯盟的注目。
+|Name1 (KR) = 데빌 해마
+|Desc1 (KR) = 쌍둥이 형의 영혼을 악마에게 팔아<br>전국 대회까지 진출한 철없는 고딩 야구 선수.<br>투수, 타짜, 감독의 삼도류 스타일은<br>메이저리그에서도 주목을 받고 있다
+}}
+
+==Encounters==
+{{Collapsible}}
+===[[Uncanny Legends]]===
+*Stage 40-6: [[Seahorses Caught]] (100%)
+*Stage 41-3: [[Boiling Blood]] (100%)
+*Stage 46-5: [[Titanic Steakhouse]] (100%)
+*Stage 48-4: [[Bestowing Eternity]] (100%)
+
+===[[Zero Legends]]===
+*Stage 7-5: [[Blessings in Sand]] (100%)
+*Stage 7-6: [[Misfortune in Sand]] (100%)
+*Stage 13-5: [[Accidental Toxicity]] (100%)
+*Stage 27-5: [[Affairs of Another]] (120%)
+*Stage 31-4: [[Tree of Strife]] (120%)
+
+===[[Special Events|Event Stages]]===
+*[[Empress' Report 5]]: [[Aku Studies 501: Inquiry]] (100%)
+*[[Infernal Tower]]:
+**[[Infernal Tower/Floor 41|Floor 41]] (100%)
+**[[Infernal Tower/Floor 47|Floor 47]] (100%)
+*[[Aku Citadel]]:
+**[[Aku Citadel/Floor 8|Floor 8]] (100%)
+**[[Aku Citadel/Top Floor|Top Floor]] (100%)
+*[[Otherworld Colosseum#Cooldown Equality|Otherworld Colosseum]]: [[Round 4 (Cooldown Equality)|Round 4]] (100%)
+*[[Otherworld Colosseum#Cheap Labor|Otherworld Colosseum]]: [[Round 1 (Cheap Labor)|Round 1]] (100%)
+*[[Otherworld Colosseum#Mega Cat Cannon|Otherworld Colosseum]]: [[Round 5 (Mega Cat Cannon)|Round 5]] (100%)
+*[[Otherworld Colosseum#Pay Day|Otherworld Colosseum]]: [[Round 3 (Pay Day)|Round 3]] (100%)
+*[[Otherworld Colosseum#Grand Battle|Otherworld Colosseum]]: [[Round 3 (Grand Battle)|Round 3]] (100%)
+
+===[[Enigma Stages]]===
+*Bad Instinct's Refuge: [[Frontier Shrine (Merciless)/Aku|Frontier Shrine (Merciless)]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Ackey
+|Health = 53000
+|Attack Power = 30000
+|Attack Range = 450
+|Attack Type = Area
+|Time Between Attacks = 171
+|Movement Speed = 6
+|Knockback = 2
+|Foreswing = 32
+|Backswing = 21
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">15,000</span> at 32f <sup>1.07s</sup>, <span class="scaled" data-type="ap">10,000</span> at 52f <sup>1.73s</sup>, <span class="scaled" data-type="ap">5,000</span> at 72f <sup>2.4s</sup>)<br>
+{{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 650~900)<br>
+{{AbilityIcon|Freeze}} 30% chance to [[Freeze|freeze]] Cat Units for 60f <sub>2 seconds</sub><br>
+{{AbilityIcon|Aku Shield}} [[Shield]] (initial HP: <span class="scaled">450,000</span>; regenerates with 100% HP)
+|Element = Aku
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+587 e.png|Ackey's spritesheet
+Ackey.gif|Ackey's animations
+</gallery>
+
+==Trivia==
+*Ackey's projectile is a dodecahedron.
+*Ackey's name may be a pun on [[wikipedia:ja:悪鬼|悪鬼 ''akki'']] (one of several Japanese words that can be translated as "demon" or "evil spirit"; the individual kanji mean "evil" and "''[[wikipedia:Oni|oni]]''") and ''[[Tackey]]''. Other than especially sinister ''oni'', the word 悪鬼 ''akki'' can be used figuratively to mean someone who commits acts of extreme evil.
+*Ackey's Japanese name, Devil Katsuya, is seemingly a mash-up of '''Ka'''zuya and Ta'''tsuya''', twin brothers of the baseball manga ''[[wikipedia:Touch (manga)|Touch]]'', which is also referenced by Tackey's Japanese name and description.
+**Just like Tackey's Japanese description, Ackey's mirrors the character of Tatsuya, a  high-school baseball player who rose to glory to continue his deceased brother's legacy. But where Tatsuya's brother died in a traffic accident, Ackey's twin's death was purely his own doing.
+**Devil Katsuya may also be a reference to ''Tekken'' antagonist [[wikia:Tekken:Devil Kazuya|Devil Kazuya]].
+*In baseball, a five-tool player is someone who hits for average and for power, runs the bases well, fields well and throws well.
+*Contrary to Ackey's Japanese description, the third role entailed by a "[https://jisho.org/word/三刀流 three sword style]" (三刀流 ''santōryū'') in Japanese baseball terminology is normally fielder, not manager.
+*Prior to [[Version 14.2 Update|Version 14.2]], Ackey's second and third hits landed at frames 38 and 44 respectively. They were changed to properly fit his attack animation, as before all three hits were grouped within only the first blast.
+
+==Reference==
+*https://battlecats-db.com/enemy/589.html
+
+----
+{{EnemyNav|Midnite D.|Deathkory}}
+----
+
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Aku Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Enemies with Freeze ability]]
+[[Category:Enemies with Shields]]
+[[Category:Uncanny Legends Enemies]]

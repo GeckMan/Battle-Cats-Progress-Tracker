@@ -1,0 +1,95 @@
+{{EnemiesAppearing|Bun Bun Black|Doge Dark|Dark Otter|Gory Dark|Shadow Boxer K|Le'noir}}
+'''Dark Premonition''' is the third stage in [[Dead End Night]]. [[Le'noir]] is introduced here.
+
+{{Stage Info
+|stage name = [[File:rc020.png]]
+[[File:Mapsn022 02 n en 2.png]]
+|stage location = [[File:Mapname022 n en.png]]
+|energy = 90
+|enemy castle hp = 696,000 HP
+|enemies = {{Magnification|Doge Dark|800%
+|Dark Otter|100%
+|Gory Dark|150%
+|Shadow Boxer K|150%}}
+|boss = {{Magnification|Bun Bun Black|200%
+|Le'noir|100%}}
+|enemies2 = {{Magnification|Doge Dark|960%
+|Dark Otter|120%
+|Gory Dark|180%
+|Shadow Boxer K|180%}}
+|boss2 = {{Magnification|Bun Bun Black|240%
+|Le'noir|120%}}
+|enemies3 = {{Magnification|Doge Dark|1,120%
+|Dark Otter|140%
+|Gory Dark|210%
+|Shadow Boxer K|210%}}
+|boss3 = {{Magnification|Bun Bun Black|280%
+|Le'noir|140%}}
+|enemies4 = {{Magnification|Doge Dark|960%
+|Dark Otter|120%
+|Gory Dark|180%
+|Shadow Boxer K|180%}}
+|boss4 = {{Magnification|Bun Bun Black|240%
+|Le'noir|120%}}
+|treasure = - 171,000 XP (10%, 1 time)<br>
+- [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 1,710 XP
+|width = 5,300
+|max enemies = 11
+|jpname = Black Premonition
+|script = 黒い予感
+|romaji = Kuroi Yokan
+|star = 4
+|sub-chapter = [[Dead End Night]]
+|difficulty = ★8
+|prev stage = [[Catharsis' End]]
+|next stage = [[Broken Mask]]
+}}
+
+==Battleground==
+*3 [[Shadow Boxer K]]s spawn after 43.33 seconds<sup>1,300f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*3 [[Doge Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*3 [[Gory Dark]]s spawn after 20 seconds<sup>600f</sup>, delay 0.67 seconds<sup>20f</sup>.
+*When the base reaches 99% HP:
+**1 [[Bun Bun Black]] spawns as the boss.
+**1 [[Le'noir]] spawns as the boss.
+**10 [[Doge Dark]]s spawn, delay 0.07 seconds<sup>2f</sup>.
+**5 [[Dark Otter]]s spawn, delay 0.33~1.33 seconds<sup>10f~40f</sup>.
+**Infinite [[Gory Dark]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**Infinite [[Shadow Boxer K]]s spawn, delay 10~20 seconds<sup>300f~600f</sup>.
+**Infinite [[Doge Dark]]s spawn, delay 4~12 seconds<sup>120f~360f</sup>.
+**10 [[Gory Dark]]s spawn, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+**10 [[Shadow Boxer K]]s spawn, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+**10 [[Doge Dark]]s spawn, delay 0.07~0.67 seconds<sup>2f~20f</sup>.
+
+==Strategy==
+While no [[:Category:Anti-Dark Cats|anti-Dark Cats]] are necessary, simply using [[Flower Cat (Special Cat)|Bombercat]] is enough to irreversibly destroy this stage. [[Cat Gunslinger (Rare Cat)|Rodeo Cat]] works in place of Bombercat with enough stacking. This stage has almost all the same enemies as [[Refined Palate (Insane)|XP Megablitz]] so if you're experienced with that stage this shouldn't be too much trouble.
+
+Otherwise, bring a Rich Cat, three meatshields and a lot of generalist attackers like [[Lizard Cat (Normal Cat)|King Dragon Cat]], [[Salon Cat (Rare Cat)|Paris Cat]], [[Mer-Cat (Rare Cat)|Cameraman Cat]], [[Crazed Bird Cat (Super Rare Cat)|Crazed UFO Cat]], [[Ururun Wolf (Special Cat)|Ururun Cat]], etc.
+
+==='''Recommended Ubers'''===
+*[[Sengoku Wargods Vajiras (Gacha Event)|Sengoku Wargods Vajiras]] tend to perform exceptionally here.
+*[[Kasa Jizo (Uber Rare Cat)|Kasa Jizo]], [[Twinstars (Uber Rare Cat)|Twinstars]], [[Adventurer Kanna (Uber Rare Cat)|Adventurer Kanna]], and other high-DPS Ubers trivialize this stage.
+
+==Walkthrough==
+{{Walkthrough
+|y75uOS0Mchc|Nurse Wuffa|
+}}
+
+==Gallery==
+<gallery>
+File:Mapsn022 02 n en.png|Pre-[[Version 15.3 Update|Version 15.3]] stage name
+Black_Premonition_server_side.png|Dark Premonition being called Black Premonition when tapping the speech bubble
+</gallery>
+
+==Trivia==
+*Prior to [[Version 6.0 Update|Version 6.0]], the enemy limit was 13 instead of 11, [[Gory Dark]] and [[Shadow Boxer K]] were buffed to 200% instead of 150%, and the [[Doge Dark]] trio at the beginning was only at 200% instead of 800%.
+*Prior to [[Version 15.3 Update|Version 15.3]], Dark Premonition's English name was Black Premonition.
+**The info screen shown when tapping the speech bubble next to [[Dead End Night]] in the [[Legend Stages]] menu still says Black Premonition.
+
+==Reference==
+*https://battlecats-db.com/stage/s00022-03.html
+
+{{LegendStages}}
+[[Category:Sub-chapter 23 Stages]]
+[[Category:Stories of Legend Stages]]

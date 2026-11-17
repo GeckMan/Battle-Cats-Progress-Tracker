@@ -1,0 +1,61 @@
+{{EnemiesAppearing|SV-001|MARCO|HUGE HERMIT}}
+'''Attack on Huge Hermit''' is the second stage in [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]].
+
+{{Stage Info
+|stage name = [[File:rc052.png]]
+[[File:Mapsn021 01 c en.png]]
+|stage location = [[File:Mapname021 c en.png]]
+|energy = 60
+|enemy castle hp = 90,000 HP
+|enemies = {{Magnification|SV-001|100%
+|MARCO|200%}}
+|boss = {{Magnification|HUGE HERMIT|100%}}
+|enemies2 = {{Magnification|SV-001|150%
+|MARCO|300%}}
+|boss2 = {{Magnification|HUGE HERMIT|150%}}
+|enemies3 = {{Magnification|SV-001|200%
+|MARCO|400%}}
+|boss3 = {{Magnification|HUGE HERMIT|200%}}
+|enemies4 = {{Magnification|SV-001|300%
+|MARCO|600%}}
+|boss4 = {{Magnification|HUGE HERMIT|300%}}
+|treasure = - [[HYAKUTARO (Rare Cat)|HYAKUTARO]] (3%, 1 time)
+|score reward = '''7,000''': [[Battle Items#Sniper the Cat|Sniper the Cat]] +1<br>
+'''5,500''': [[Battle Items#Rich Cat|Rich Cat]] +1<br>
+'''3,500''': 40,000 XP<br>
+'''500''': [[Battle Items#Cat CPU|Cat CPU]] +1
+|XP = 1,800 XP
+|width = 5,000
+|max enemies = 5
+|jpname = Attack Huge Hermit
+|script = 進撃のヒュージハーミット
+|romaji = Shingeki no Hyūji Hāmitto
+|star = 4
+|event = [[Metal Slug Collaboration Event]]
+|event-chapter = [[Metal Slug Collaboration Event#Metal Slug Defense|Metal Slug Defense]]
+|difficulty = ★3
+|prev stage = [[Immortal Allen O'Neil]]
+|next stage = [[Jupiter King Convoy]]
+}}
+
+==Battleground==
+*2 [[SV-001 (Enemy)|SV-001s]] spawn after 20 seconds<sup>600f</sup>, delay 20~30 seconds<sup>600f~900f</sup>.
+*1 [[SV-001 (Enemy)|SV-001]] spawns after 80 seconds<sup>2,400f</sup>.
+*1 [[SV-001 (Enemy)|SV-001]] spawns after 90 seconds<sup>2,700f</sup>.
+*1 [[MARCO (Enemy)|MARCO]] spawns after 96.67 seconds<sup>2,900f</sup>.
+*1 [[MARCO (Enemy)|MARCO]] spawns after 100 seconds<sup>3,000f</sup>.
+*Infinite [[MARCO (Enemy)|MARCOs]] spawn after 120 seconds<sup>3,600f</sup>, delay 33.33~50 seconds<sup>1,000f~1,500f</sup>.
+*When the base reaches 80% HP:
+**1 [[HUGE HERMIT (Enemy)|HUGE HERMIT]] spawns as the boss.
+**Infinite [[SV-001 (Enemy)|SV-001s]] spawn, delay 44~66 seconds<sup>1,320f~1,980f</sup>.
+
+==Strategy==
+On lower ♛ difficulties this is an easy stage that pretty much any unit can beat. Bring any of the [[:Category:Normal Cats|Normal Cats]] to win. However, HUGE HERMIT can become a moderate threat at 3 and especially 4♛ difficulty. This being said, [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]] can obliterate HUGE HERMIT extremely fast if you have them and is usable on all ♛ difficulties, so possessing them turns the stage into a joke once more.
+
+==Reference==
+*https://battlecats-db.com/stage/s02021-02.html
+
+{{Metal Slug}}
+{{CollaborationStages List}}
+[[Category:Collaboration Stages]]
+[[Category:Timed Score Stages]]

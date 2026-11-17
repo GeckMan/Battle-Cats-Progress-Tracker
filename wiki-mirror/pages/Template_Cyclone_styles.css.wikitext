@@ -1,0 +1,8 @@
+.ranger-navbox.cyclone {
+	--bg-navbox-title: linear-gradient(to right, hsl(225, 2%, 52%) 0%, hsl(225, 3%, 80%) 50%, hsl(225, 2%, 52%) 100%);
+	--bg-sub-table-title: #737373;
+	--bg-group-name: linear-gradient(to right, hsl(225, 0%, 48%) 0%, hsl(225, 0%, 68%) 100%);
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

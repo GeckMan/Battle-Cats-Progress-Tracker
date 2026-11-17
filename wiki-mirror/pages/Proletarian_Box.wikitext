@@ -1,0 +1,64 @@
+{{EnemiesAppearing|Sir Rel|Relic Doge|Project A}}
+'''Proletarian Box''' is the first stage in [[Drunken Foundry]].
+
+{{Stage Info
+|stage name = [[File:rc017.png]]
+[[File:Mapsn021 00 na en.png]]
+|stage location = [[File:Mapname021 na en.png]]
+|energy = 180
+|enemy castle hp = 800,000 HP
+|enemies = {{Magnification|Sir Rel|100%
+|Relic Doge|100%
+|Project A|2,500%}}
+|boss = {{Magnification|Sir Rel|10%}}
+|enemies2 = {{Magnification|Sir Rel|130%
+|Relic Doge|130%
+|Project A|3,250%}}
+|boss2 = {{Magnification|Sir Rel|13%}}
+|enemies3 = {{Magnification|Sir Rel|170%
+|Relic Doge|170%
+|Project A|4,250%}}
+|boss3 = {{Magnification|Sir Rel|17%}}
+|treasure = - [[Battle Items#Cat CPU|Cat CPU]] +1 (1%, unlimited)
+|XP = 6,840 XP
+|width = 4,000
+|max enemies = 25
+|jpname = Proletarian Box
+|script = プロレタリアの箱
+|romaji = Puroretaria no Hako
+|star = 4
+|sub-chapter = [[Drunken Foundry]]
+|difficulty = ★10
+|prev stage = N/A
+|next stage = [[Collapse Checker]]
+}}
+
+==Battleground==
+*Infinite [[Sir Rel]]s (100%) spawn after 6.67 seconds<sup>200f</sup>, delay 8 seconds<sup>240f</sup>.
+*When the base reaches 99% HP:
+**1 [[Sir Rel]] (10%) spawns as the boss.
+**Infinite [[Sir Rel]]s (100%) spawn, delay 4~8 seconds<sup>120f~240f</sup>.
+**20 [[Relic Doge]]s spawn, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+**30 [[Sir Rel]]s (100%) spawn, delay 10~12 seconds<sup>300f~360f</sup>.
+**30 [[Sir Rel]]s (100%) spawn, delay 8~10 seconds<sup>240f~300f</sup>.
+**40 [[Sir Rel]]s (100%) spawn, delay 6~8 seconds<sup>180f~240f</sup>.
+**40 [[Sir Rel]]s (100%) spawn, delay 2~6 seconds<sup>60f~180f</sup>.
+**25 [[Sir Rel]]s (100%) spawn, delay 0.33~2 seconds<sup>10f~60f</sup>.
+**2 [[Project A]]s spawn, delay 13.33 seconds<sup>400f</sup>.
+
+==Strategy==
+
+This stage is essentially just Sir Rel spam, accompanied by the two mildly threatening Project As. As a result, you want to focus your lineup around countering the Sir Rel spam.
+
+Basically, use all the anti-Relic units that you have. [[Figure Skating Cats (Super Rare Cat)|Slapstick Cats]] is almost mandatory, providing consistent DPS to the Sir Rels. Other options like [[Hermit Cat (Special Cat)|Masked Grandmaster Cat]] and [[Master Uril (Special Cat)|Master Uril]] will be of use if you have them. [[Primordial Cat (Rare Cat)|Future Cat]] will provide as a great source of defense along with your erasers, while wave attackers like [[Crazed Gross Cat (Super Rare Cat)|Manic Macho Legs]] and [[Slime Cat (Rare Cat)|Slime Cat]] can help with dealing damage to all the Sir Rels while chipping the Project As.
+
+Despite the Sir Rel spam, this stage is rather cash tight, as for some reason they only drop about 200c upon death. If you find yourself not able to ward off the Sir Rels consistently, cost-efficient attackers like [[Cossack Cat (Rare Cat)|Royal Guard Cat]] and [[Mer-Cat (Rare Cat)|Cameraman Cat]] can help supply additional DPS.
+
+Alternatively, if you have [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat's]] [[Talents]], you can have him hit the base, instantly killing the initial Sir Rels and dealing huge damage to the first Project A. If you have enough meatshields or preferably [[Maize Cat (Rare Cat)|Cone Cat]], he can just obliterate the base from there.
+
+==Reference==
+*https://battlecats-db.com/stage/s13021-01.html
+
+{{LegendStages}}
+[[Category:Uncanny Legends Stages]]
+[[Category:Sub-chapter 71 Stages]]

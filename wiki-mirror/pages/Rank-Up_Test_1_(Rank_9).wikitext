@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Catclaw Castle|UltraBaaBaa|Shibalien Elite|General GreGory|Le'Solar}}
+'''Rank-Up Test 1''' is the first stage in [[Catclaw Championships#Catclaw Championships Rank 9|Catclaw Championships Rank 9]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:E 710.png]]
+[[File:Mapsn008 00 g en.png]]
+|stage location = [[File:Mapname008 g en.png]]
+|energy = 0
+|enemy castle hp = 700,000 HP
+|base = {{Magnification|Catclaw Castle|7,000,000%}}
+|enemies = {{Magnification|UltraBaaBaa|100%
+|Shibalien Elite|300%
+|General GreGory|100%
+|Le'Solar|100%}}
+|treasure = - [[Leadership]] +3 (100%, 1 time)
+|restriction = [[No Continues]]
+|XP = 10 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Promotion Exam 1
+|script = 昇段試験１
+|romaji = Shōdan Shiken 1
+|star = 1
+|dojo-chapter = [[Catclaw Championships#Catclaw Championships Rank 9|Catclaw Championships Rank 9]]
+|prev stage = N/A
+|next stage = [[Rank-Up Test 2 (Rank 9)|Rank-Up Test 2]]
+}}
+
+==Restrictions==
+*Fixed lineup: [[Cat (Normal Cat)|Mohawk Cat]], [[Tank Cat (Normal Cat)|Eraser Cat]], [[Rover Cat (Rare Cat)|Catellite]], [[Gross Cat (Normal Cat)|Macho Leg Cat]] and [[Space Cat (Rare Cat)|Space Marine Cat]].
+
+==Battleground==
+*The enemy base here is a [[Catclaw Castle (Enemy Base)|Catclaw Castle]].
+*Infinite [[UltraBaaBaa]]s spawn after 6.67 seconds<sup>200f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*7 [[Shibalien Elite]]s spawn after 13.33 seconds<sup>400f</sup>, delay 20~23.33 seconds<sup>600f~700f</sup>.
+*5 [[General GreGory|General GreGories]] spawn after 30 seconds<sup>900f</sup>, delay 30~33.33 seconds<sup>900f~1,000f</sup>.
+*3 [[Le'Solar]]s spawn after 40 seconds<sup>1,200f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+
+==Strategy==
+This stage introduces the ability of barriers, which nullify attacks and all crowd control abilities until a certain damage threshold is met, or a cat successfully lands a successful [[Barrier Breaker]] attack.
+
+You are given meatshields and a barrier breaker in the form of Space Marine. Macho Leg cat works well to kill the starred aliens, while Space Marine breaks the barriers for him to land his attacks. The Le'Solars here are the biggest threat, as they have high health, high attack damage, and a somewhat strong barrier capable of absorbing most of your non-barrier breaking attacks, meaning Space Marine will definitely need to be spammed if you want to pass the stage. Allowing the Le'Solars to stack up will most definitely result in a loss, so dispose of them quickly.
+
+==Hints==
+The first hint can be viewed within the Enemies Appearing window before beginning the stage. The second only appears as a defeat message after failing it.
+*Some enemies have damage-nullifying<br>Barriers. These can be destroyed with<br>either a powerful attack or by a Unit<br>with the {{Color|Blue|Barrier Breaker}} ability.
+*Enemy Barriers can be destroyed<br>with the Barrier Breaker ability!<br>Use Space Marine Cat to lead<br>your Cat Army to victory!
+
+==Reference==
+*https://battlecats-db.com/stage/s37008-01.html
+
+{{DojoStages}}
+[[Category:Catclaw Dojo Stages]]
+[[Category:No Continue Stages]]
+[[Category:Restriction Stages]]

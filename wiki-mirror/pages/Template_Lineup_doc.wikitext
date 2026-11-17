@@ -1,0 +1,444 @@
+{{Documentation}}
+This template is used to display lineups in strategies. It allows units in a lineup to be shown similarly to the in-game Equip screen, and has additional features such as showing which combos are activated, if any, which base components to use, which battle items to bring, and any notes for the lineup such as Talents for certain units and possible replacements/additions.
+
+==Parameters==
+<pre>
+{{Lineup
+|cat1|cat1 level
+|cat2|cat2 level
+|cat3|cat3 level
+|cat4|cat4 level
+|cat5|cat5 level
+|cat6|cat6 level
+|cat7|cat7 level
+|cat8|cat8 level
+|cat9|cat9 level
+|cat10|cat10 level
+|talent1 = 
+|talent2 = 
+|talent3 = 
+...
+|talent9 = 
+|talent10 = 
+|cannon = 
+|style = 
+|foundation = 
+|items = 
+|notes = 
+|name = 
+}}
+</pre>
+The level parameters are optional and can be omitted. <code>talent[n]</code>, <code>cannon</code>, <code>style</code>, <code>foundation</code>, <code>items</code>, <code>notes</code> and <code>name</code> are also optional parameters. Inserting "?" in place of a cat will give an empty slot with a question mark that is for a unit of the player's choice. When fewer than 10 units are given, the remaining slots will automatically be set to a blank slot that is meant to be left open. The final parameter <code>name</code> is a name for the lineup and is optional, the default value being "Lineup". Take note that this name cannot be too long.
+
+Unit names must be inputted with accurate spelling and capitalization. The levels for each unit takes a number, but it can also have a plus sign denoting plus levels. Don't include words such as "level" in the level parameters as they are automatically added.
+
+The <code>talent[n]</code> parameters do two things: adding the talent icon to slot n and including the talent explanation passed as the argument in the popup shown when hovering over the slot. If a unit does not require any talents, these parameters are unnecessary as default values are used. It is best to keep the talent explanation concise and not too lengthy. If a fairly long explanation is needed, it is better to shortly describe it using the talent parameter and explain in detail in the notes.
+
+The parameter <code>cannon</code> takes the name of the cannon to use. If the name of a cannon is typed accurately, the text on the template as well as the image above it will be set to the specified type. When the input is not typed accurately, the default part will be shown. The same applies for <code>style</code> and <code>foundation</code>. If cannon, style or foundation levels are specified, include them numerically after the name of the base component separated with a space. For example, <code>|cannon = Thunderbolt 20</code> works.
+
+The <code>items</code> parameter takes a list of battle items to use. Put the names of the battle items in a list format separated by commas and spaces, and the specified items will be shown colored on the template as opposed to the grayed-out versions that are not used. If not passed, all items will be set to unused.
+
+For any notes about the lineup including details such as replaceable units and alternative combos, include them using the <code>notes</code> parameter. Extensive notes that are more about battle rather than the lineup should be placed outside of the template in a paragraph below. When notes have multiple independent points, put them in bullet points as you would do in an ordinary page.
+
+==Usage==
+This template is to be used in each strategy containing a specific lineup, not for general strategies without any specific units mentioned. When using it, make sure to distinguish free slots that can have any unit in them and open slots, which indicate that no more units are necessary, with the former done by adding a question mark as a unit. In the case where the player is free to include any combos they want, insert question marks in the top row as done in an example below. In addition, use the minimum form necessary for combo units unused in actual battle.
+
+When there are no requirements for any of the parameters, leave them blank as the template will automatically set them to their default values. Do not use the <code>name</code> parameter in strategies, as that is done by the headings. The parameter is an option made for users who may want to use it in their own user pages. It is encouraged to add unit levels but is not necessary, a main example being combo units.
+
+==Example Usage==
+<tabber>
+Full Template=
+<pre>
+{{Lineup
+|Cat
+|Tank Cat|20
+|Dark Cat|20+90
+|Gross Cat
+|Giraffe Cat
+|UFO Cat
+|Island Cat|14+73
+|?
+|Jamiera Cat|20+0
+|cannon = Thunderbolt
+|style = Waterblast
+|foundation = Slow Beam
+|items = Rich Cat, Cat CPU
+|notes = The open slot can be replaced with any unit that may be helpful.
+}}
+</pre>
+
+===Result===
+{{Lineup
+|Cat
+|Tank Cat|20
+|Dark Cat|20+90
+|Gross Cat
+|Giraffe Cat
+|UFO Cat
+|Island Cat|14+73
+|?
+|Jamiera Cat|20+0
+|cannon = Thunderbolt
+|style = Waterblast
+|foundation = Slow Beam
+|items = Rich Cat, Cat CPU
+|notes = The open slot can be replaced with any unit that may be helpful.
+}}
+
+|-|Multiple Combos=
+<pre>
+{{Lineup
+|Divine Kai μ
+|Riceball Cat
+|Section Chief Gravicci
+|Richest Cat
+|Headmaster Cat Jobs
+|Sniper the Deadeye
+|Rodeo Cat
+|Lion Cat
+|notes = The combos in row 1 are activated while the ones in row 2 are not.
+}}
+</pre>
+
+===Result===
+{{Lineup
+|Divine Kai μ
+|Riceball Cat
+|Section Chief Gravicci
+|Richest Cat
+|Headmaster Cat Jobs
+|Sniper the Deadeye
+|Rodeo Cat
+|Lion Cat
+|notes = The combos in row 1 are activated while the ones in row 2 are not.
+}}
+
+|-|Free Combos=
+<pre>
+{{Lineup
+|?
+|?
+|?
+|?
+|?
+|Boulder Cat
+|Courier Cat
+|Swordsman Cat
+|Awakened Bahamut Cat
+|notes = Use any [[Cat Combo|combos]] of your choice.
+}}
+</pre>
+
+===Result===
+{{Lineup
+|?
+|?
+|?
+|?
+|?
+|Boulder Cat
+|Courier Cat
+|Elemental Duelist Cat
+|Awakened Bahamut Cat
+|notes = Use any [[Cat Combo|combos]] of your choice.
+}}
+
+|-|Talents=
+<pre>
+{{Lineup
+|Manic Eraser Cat|50
+|Eraser Cat|20+90
+|Awa-Odori Cat
+|Vengeful Cat
+|Trickster Himeyuri
+|Sanzo Cat
+|Can Can Cat
+|Greater Balrog Cat
+|talent6 = Target Angel
+|talent7 = Double Bounty, Max Attack Buff
+|cannon = Curseblast
+|notes = The talent6 parameter is for slot 6.
+}}
+</pre>
+===Result===
+{{Lineup
+|Manic Eraser Cat|50
+|Eraser Cat|20+90
+|Awa-Odori Cat
+|Vengeful Cat
+|Trickster Himeyuri
+|Sanzo Cat
+|Can Can Cat|40+
+|Awakened Urs
+|talent6 = Target Angel
+|talent7 = Double Bounty, Max Attack Buff
+|cannon = Curseblast
+|notes = The talent6 parameter is for slot 6.
+}}
+
+|-|Compact Mode=
+<pre>
+{{Lineup
+|Cat|20
+|Tank Cat
+|basic = true
+}}
+</pre>
+
+===Result===
+{{Lineup
+|Cat|20
+|Tank Cat
+|basic = true
+}}
+</tabber>
+
+==TemplateData==
+{{collapsible}}
+<templatedata>
+{
+	"params": {
+		"1": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"2": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"3": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"4": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"5": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"6": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"7": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"8": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"9": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"10": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"11": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"12": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"13": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"14": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"15": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"16": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"17": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"18": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"19": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"20": {
+			"description": "cat/level",
+			"type": "string"
+		},
+		"cannon": {
+			"suggestedvalues": [
+				"Any",
+				"Default",
+				"Slow Beam",
+				"Iron Wall",
+				"Thunderbolt",
+				"Waterblast",
+				"Holy Blast",
+				"Breakerblast",
+				"Curseblast"
+			],
+			"description": "Cannon type",
+			"type": "string"
+		},
+		"style": {
+			"suggestedvalues": [
+				"Any",
+				"Default",
+				"Slow Beam",
+				"Iron Wall",
+				"Thunderbolt",
+				"Waterblast",
+				"Holy Blast",
+				"Breakerblast",
+				"Curseblast"
+			],
+			"description": "Cannon style",
+			"type": "string"
+		},
+		"foundation": {
+			"suggestedvalues": [
+				"Any",
+				"Default",
+				"Slow Beam",
+				"Iron Wall",
+				"Thunderbolt",
+				"Waterblast",
+				"Holy Blast",
+				"Breakerblast",
+				"Curseblast"
+			],
+			"description": "Cannon foundation",
+			"type": "string"
+		},
+		"items": {
+			"type": "string",
+			"suggestedvalues": [
+				"Treasure Radar",
+				"Speed Up",
+				"Rich Cat",
+				"Cat CPU",
+				"Cat Jobs",
+				"Sniper the Cat"
+			],
+			"description": "Battle Items used"
+		},
+		"notes": {
+			"description": "Notes about the lineup including details such as replaceable units and alternative combos.",
+			"type": "string"
+		},
+		"name": {
+			"type": "string",
+			"label": "Loadout name",
+			"description": "Name in top left of lineup. Probably shouldn't be used on wiki pages."
+		},
+		"basic": {
+			"type": "boolean",
+			"label": "Use compact mode?"
+		},
+		"talent1": {
+			"description": "Information about unit 1's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent2": {
+			"description": "Information about unit 2's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent3": {
+			"description": "Information about unit 3's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent4": {
+			"description": "Information about unit 4's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent5": {
+			"description": "Information about unit 5's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent6": {
+			"description": "Information about unit 6's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent7": {
+			"description": "Information about unit 7's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent8": {
+			"description": "Information about unit 8's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent9": {
+			"description": "Information about unit 9's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		},
+		"talent10": {
+			"description": "Information about unit 10's talents",
+			"example": "Double Bounty, Max Attack Buff",
+			"type": "string"
+		}
+	},
+	"paramOrder": [
+		"1",
+		"2",
+		"3",
+		"4",
+		"5",
+		"6",
+		"7",
+		"8",
+		"9",
+		"10",
+		"11",
+		"12",
+		"13",
+		"14",
+		"15",
+		"16",
+		"17",
+		"18",
+		"19",
+		"20",
+		"talent1",
+		"talent2",
+		"talent3",
+		"talent4",
+		"talent5",
+		"talent6",
+		"talent7",
+		"talent8",
+		"talent9",
+		"talent10",
+		"cannon",
+		"style",
+		"foundation",
+		"items",
+		"notes",
+		"name",
+		"basic"
+	],
+	"description": "Template to display cat lineups."
+}
+</templatedata>
+</div>

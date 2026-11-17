@@ -1,0 +1,89 @@
+{{Documentation}}
+{{Stage|The Legend Begins|SoL|000|n|1|0|0|0|1}}
+<nowiki>{{Stage|The Legend Begins|SoL|000|n|1|0|0|0|1}}</nowiki><br>
+{{t|Stage|Stage Name|Map Name|Stage ID|Stage Map|Crown|Crown|Crown|Crown|Completed|lang {{=}} en}}
+
+==Specific Aspects==
+{{Collapsible}}
+===Stage Name===
+*Name of the stage
+
+===Map Name===
+*SoL
+*UL
+*Event
+**Abyss
+*Collab
+*ZL
+
+===Stage Map===
+*n - SoL
+*na - UL
+*nd - ZL
+*c - Collab
+*s - Event
+*a - Gauntlet
+*ca - Collab Gauntlet
+*h - Enigma
+*q - Behemoth Stones
+*g - Catclaw Championship
+
+===Stage ID===
+*SoL - 000~048
+*UL - 000~048
+*ZL - 000~ongoing (as of [[Version 15.3 Update|15.3]])
+*Collab: [[Collaboration Events]]
+*Event - [[Event Release Order]]
+
+===Crown System===
+*0 - Uncleared
+*1 - Cleared
+*2 - Blank (for any stages not above certain stars)
+
+===Completed System===
+*0 - Not completed
+*1 - Completed
+*2 - Cleared
+
+===Lang===
+*Default is en.
+*Other values are ja, kr and tw.
+</div>
+
+==Usage==
+<pre>
+{{Stage|The Legend Begins|SoL|000|n|1|0|0|0|1}}
+</pre>
+
+will show:
+{{Stage|The Legend Begins|SoL|000|n|1|0|0|0|1}}
+
+==Optimisation==
+This template has undergone multiple major optimisations, which will massively affect its maintainability. The first major update was inlining the old "Stageprompt" template that this used and turning the styling into inline CSS.
+
+While most other templates would be fine with just inlining the CSS, this one needed some more because of [[User:Porokking|Porokking]] (mainly [[User:Porokking/progressMain]]). Attemps can be seen in [https://battlecats.miraheze.org/wiki/User:Jenny_on_Wiki/sandbox2?action=history&offset=20250810164557 User:Jenny on Wiki/sandbox2] and results are in [https://battlecats.miraheze.org/wiki/User:Jenny_on_Wiki/Archive?oldid=253508 User:Jenny on Wiki/Archive]. A summary of experiments tried are as follows:
+
+*Replacing inline CSS with TemplateStyles &ndash; easy, significant gains; not recorded in the links given above but likely did a whole lot.
+**Moving TemplateStyles to global.css &ndash; removed 400k of "Unstrip post-expand size" and did nothing else so probably good to keep.
+**Using {{t|TemplateStyles once}} got back the advantages of TemplateStyles while only adding a few hundred bytes to the output.
+**Using the Mustache extension seemed to improve loading times without any downsides. Although using mustache for something like this gives me the ick and doesn't noticeably make any improvements.
+*Remove <code> class="floatnone noresize"</code> from the inner div &ndash; negligible benefit but not worth reverting now.
+*Add an <code>ifeq</code> before the SoL crown image links to disable them when set as blank &ndash; benefit is difficult to quantify but seems to have worked nicely.
+*Replace image container divs (the ones that did the positioning) with pure CSS &ndash; caused an issue with the ifeqs, meaning that <code><nowiki><span></span></nowiki></code> had to be placed inside them, but reduced quite a bit of bloat.
+**The ifeq issue was later solved by putting those elements last.
+*Removing px in images and doing them with pure CSS &ndash; Removed a large amount of bloat, as image sizing increases url size and adds the srcset attribute. Removed about 200k unstrip post-expand size.
+
+Things tried but reverted are:
+*Add an <code>ifeq</code> before the Complete image if blank &ndash; decreased "Unstrip post‐expand size" by about 30k on Porokking's page, but increased "Post‐expand include size" by about 10k.
+*Replacing the links with <code>link=</code> &ndash; removes the massive containing <code><a></code> tag but removes the really important feature of being able to click on the thing.
+*Removing captions/title &ndash; didn't work; removing alt only added bloat.
+*Using only modules to generate data (e.g. [https://battlecats.miraheze.org/wiki/Module:Sandbox/Jenny_on_Wiki?oldid=257661 257661], [https://battlecats.miraheze.org/wiki/Module:Sandbox/Jenny_on_Wiki?oldid=268533 268533] + [https://battlecats.miraheze.org/wiki/User:Jenny_on_Wiki/sandbox2?oldid=268531]) &ndash; negligible real-time benefit; it's basically just doing the work in Lua instead of wikitext which isn't any faster seemingly. Makes a slight difference to other metrics but not enough to really be worth using. It does reduce the size of the page, especially the version that collected everything into 1, but eh.
+**Tried again in new era with [[Special:Permalink/515953]] but still no real benefit.
+
+Potential things to also try:
+*Doing the blank image overlay that turns the whole thing into a link so the other links can be minimised.
+*Using Extension:Mustache
+
+Overall, massively reduced the size of a lot of templates including this one, but still when Porokking uses this 450 times on one page it's going to be slow.
+
+[[Category:Cosmetic templates]]

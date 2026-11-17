@@ -1,0 +1,65 @@
+:''This article is about the enemy. For the Cat Unit, see [[Sumo Cat (Special Cat)]].''
+'''Riceball Cat''' (ネコにぎり Nekonigiri, Onigiri Cat) is a [[:Category:Traitless Enemies|Traitless]] enemy that appears in [[Special Events|Event Stages]]. He was added in [[Version 3.3 Update|Version 3.3]]. In [[The Battle Cats Unite!]], he was added in [[The Battle Cats Unite!/Patch 1.0.6 Update|Patch 1.0.6]].
+
+{{Enemy Info
+|name = Riceball Cat
+|image = E 138.png
+|first appearance = [[Oh Yokozuna! (Expert)]]
+|latest appearance = [[Infernal Tower/Floor 20|Infernal Tower - Floor 20]]
+|money drop = 500¢ - 1,975¢
+}}
+
+==Enemy==
+Unlike its [[Sumo Cat (Special Cat)|Cat Unit counterpart]] (high health), this enemy has lower health than most of the Awakened enemies, but he moves much faster, has double the attack range, attacks non-stop, and deals increased damage.
+
+==Encounters==
+{{Collapsible}}
+===[[Special Events|Event Stages]]===
+*[[Sumo Awakens!]]:
+**[[Oh Yokozuna! (Expert)]] (100%)
+**[[Oh Yokozuna! (Insane)]] (150%)
+*[[Deadly Carnival!]]: [[Awakened Carnival (Deadly)]] (100%)
+*[[Heavenly Tower]]: [[Heavenly Tower/Floor 20|Floor 20]] (100%)
+*[[Infernal Tower]]: [[Infernal Tower/Floor 20|Floor 20]] (100%)
+*[[Golden Tower]]: [[Golden Tower/Floor 20|Floor 20]] (100%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Riceball Cat
+|Health = 133300
+|Attack Power = 4440
+|Attack Range = 220
+|Attack Type = Area
+|Time Between Attacks = 34
+|Movement Speed = 18
+|Knockback = 2
+|Foreswing = 12
+|Backswing = 6
+|Ability = {{AbilityIcon|Multi-Hit}} [[Multi-Hit]] (<span class="scaled" data-type="ap">1,480</span> at 12f <sup>0.4s</sup>, <span class="scaled" data-type="ap">1,480</span> at 20f <sup>0.67s</sup>, <span class="scaled" data-type="ap">1,480</span> at 28f <sup>0.93s</sup>)
+|Element = Traitless
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true" bordercolor="transparent">
+138 e.png|Riceball Cat's spritesheet
+IdleRiceball.gif|Riceball Cat's moving animation
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/140.html
+
+----
+{{EnemyNav|Pastry Cat|Gato Amigo}}
+----
+
+{{Awakening Stages}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Event Enemies]]
+[[Category:Traitless Enemies]]
+[[Category:Multi-Hit Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemy Cats]]

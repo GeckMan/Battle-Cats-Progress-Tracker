@@ -1,0 +1,106 @@
+{{JPExclusive}}
+:''This article is about the Cat Unit. For the enemy, see [[Anji Yukyuzan (Enemy)]].''
+'''Anji Yukyuzan''' is an [[:Category:Uber Rare Cats|Uber Rare Cat]] that can be obtained from the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Rurouni Kenshin Collaboration Event/Gacha Drop|Rurouni Kenshin Collaboration Event]]. He was added in [[Version 15.7 Update|Version 15.7]].
+
+{{Cat Info
+|ID = 878
+|rarity = UR
+|name1 = Anji Yukyuzan
+|name2 = Anji Yukyuzan CC
+}}
+
+==Evolution==
+Evolves into '''Anji Yukyuzan CC''' at level 10.
+
+==Strategy/Usage==
+A run of the mill, albeit very decent anti-Red/Floating nuker. Anji Yukyuzan has an effective damage per attack cycle of 224,400 against targets at Lv.30, (356,400 at Lv.50), though his damage is split between the main [[Omni Strike]] and its subsequent [[Wave Attack]], not to mention the fact that his damage is halved for enemies not hit by his Single Attack. This Wave Attack has very high pierce, hitting well into the backline at enemies like [[Professor A.]] without so much as breaking a sweat. He protects himself in a roundabout way via [[Knockback]]s which can trigger twice assuming targets weren't already staggered by the first hit. All of these qualities work together to make him a reliable Waver who can keep enemies like [[Baron Seal]] and [[Teacher Bun Bun]] variants at bay even whilst dealing with untargeted enemies.
+
+Anji's natural bulk is on the higher end too, letting him endure a good amount of punishment before getting knocked back. Enemies like [[Hannya]] will take a good amount of damage before shaking him off, aiding you immensely throughout the entire confrontation, usually getting more than your money's worth by the time Anji does die. However, make no mistake, he cannot facetank much of anything reliably even at higher levels. So, like all nukers, protect him well and he'll pay dividends. Additionally, [[Immune to Weaken]] has decent applicability against [[Calamary]], [[Puffzerker]], [[Cli-One]], [[Great Angel Chibinel]], and the aforementioned Hannya. [[Immune to Knockback]] is mainly useful against [[Mr. Mole]]. His only real weakness is his below-average DPS vs. grouped targets due to his Single Attack, although his high pierce and Knockback do leave an impact on the field regardless of who's targeted. 
+
+{{Job|Classification = Nuker & Waver}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 878
+|Type = [[:Category:Uber Rare Cats|Uber Rare Cat]]
+|Image1 = Uni878 f00.png
+|Image2 = Uni878 c00.png
+|Name1 (JP) = 悠久山安慈
+|Desc1 (JP) = 「るろうに剣心」から参戦！「十本刀」の一人<br>神仏をも凌駕する救世の力を得るため修行する破戒僧<br>赤と浮きに超ダメージを与えてふっとばし、波動を放つ
+|Name2 (JP) = 悠久山安慈CC
+|Desc2 (JP) = 「るろうに剣心」から参戦！<br>破壊の極意「二重の極み」は岩石をも粉砕する<br>赤と浮きに超ダメージを与えてふっとばし、波動を放つ
+}}
+
+==Cost==
+*Chapter 1: 3,500¢
+*Chapter 2: 5,250¢
+*Chapter 3: 7,000¢
+{{Upgrade Cost|UR}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Anji Yukyuzan
+|Normal Base HP = 8200
+|Normal Base AP = 1350
+|Normal Range = 360
+|Normal Foreswing = 36
+|Normal Attack Cooldown = 239
+|Normal Attack Length = 131
+|Normal Speed = 8
+|Normal KB = 2
+|Normal Cost = 3500
+|Normal Recharge = 4700
+|Normal Attack Type = Single
+|Normal Targets = Red,Floating
+|Normal Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~450)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Knockback|Immune to Weaken}} [[Immune to Knockback]] and [[Immune to Weaken|Weaken]]
+|Evolved Name = Anji Yukyuzan CC
+|Evolved Base HP = 9000
+|Evolved Base AP = 1650
+|Evolved Range = 360
+|Evolved Foreswing = 36
+|Evolved Attack Cooldown = 239
+|Evolved Attack Length = 131
+|Evolved Speed = 8
+|Evolved KB = 2
+|Evolved Cost = 3500
+|Evolved Recharge = 4700
+|Evolved Attack Type = Single
+|Evolved Targets = Red,Floating
+|Evolved Abilities = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -320~450)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] target traits<br>
+{{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits<br>
+{{AbilityIcon|Wave Attack}} 100% chance to create a level 3 [[Wave Attack]]<br>
+{{AbilityIcon|Immune to Knockback|Immune to Weaken}} [[Immune to Knockback]] and [[Immune to Weaken|Weaken]]
+|Lv.MAX = Lv.60+70
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni878 f00}}
+
+==Reference==
+*https://battlecats-db.com/unit/879.html
+
+----
+{{CatNav|Hare of Inaba|Sojiro Seta}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Uber Rare Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Omni Strike Cats]]
+[[Category:Cats with Knockback ability]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Wave Attack Cats]]
+[[Category:Cats with Knockback Immunity]]
+[[Category:Cats with Weaken Immunity]]

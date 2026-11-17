@@ -1,0 +1,8 @@
+.ranger-navbox.guerrilla {
+	--bg-navbox-title: linear-gradient(to right, hsl(0, 36%, 53%) 0%, hsl(0, 53%, 65%) 50%, hsl(0, 36%, 53%) 100%);
+	--bg-sub-table-title: #d59282;
+	--bg-group-name: #dba4a3;
+	--group-color: #000;
+}
+
+/* [[Category:Template stylesheets]] */

@@ -1,0 +1,54 @@
+{{EnemiesAppearing|Dark Emperor Nyandam|B.B.Bunny|CTO Seal|The Red Malice|Christmas D.|Dark Emperor Santa}}
+:''Not to be confused with the [[Heavenly Tower]] version of [[Heavenly Tower/Floor 11|Floor 11]].''
+'''Floor 11''' is the 11th floor of [[Infernal Tower]].
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 10 v en.png]]
+|stage location = [[File:Mapname006 v en.png]]
+|energy = 130
+|enemy castle hp = 660,000 HP
+|enemies = {{Magnification|B.B.Bunny|2,400%
+|CTO Seal|400%
+|The Red Malice|400%
+|Christmas D.|400%}}
+|boss = {{Magnification|Dark Emperor Nyandam|1,200%
+|Dark Emperor Santa|600%}}
+|treasure = One of the following (1 time):<br>
+- [[Catseye]] [Special] +3<br>
+- [[Catseye]] [Rare] +3<br>
+- [[Catseye]] [Super Rare] +3<br>
+- [[Catseye]] [Uber Rare] +3<br>
+- [[Catseye]] [Legend] +3
+|XP = 2,470 XP
+|width = 4,300
+|max enemies = 8
+|jpname = 11th Floor
+|script = 11階
+|romaji = 11 Kai
+|star = 1
+|event-chapter = [[Infernal Tower]]
+|difficulty = ★9
+|prev stage = [[Infernal Tower/Floor 10|Floor 10]]
+|next stage = [[Infernal Tower/Floor 12|Floor 12]]
+}}
+
+==Battleground==
+*1 [[Dark Emperor Nyandam]] spawns as the boss after 0.07 seconds<sup>2f</sup>.
+*Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 6.67 seconds<sup>200f</sup>, delay 20 seconds<sup>600f</sup>.
+*1 [[CTO Seal]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Dark Emperor Santa]] spawns as the boss.
+**2 [[CTO Seal]]s spawn, delay 46.67~53.33 seconds<sup>1,400f~1,600f</sup>.
+**1 [[The Red Malice]] spawns.
+**3 [[Christmas D.|Christmas Ds]] spawn, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+
+==Strategy==
+Similarly to the original [[Heavenly Tower/Floor 11|Floor 11]], all the enemies here are [[:Category:Red Enemies|Red]] ones. However, most of the enemies here have good range, and two of them effectively permafreeze units that happen to wander into their range. Ranged Attackers and [[:Category:Anti-Red Cats|anti-Reds]] are both very useful for this stage, as are units with [[:Category:Cats with Freeze Immunity|Freeze Immunity]].
+
+==Reference==
+*https://battlecats-db.com/stage/s07006-11.html
+
+{{SpecialStages List}}
+[[Category:Infernal Tower Floors]]
+[[Category:Event Stages]]

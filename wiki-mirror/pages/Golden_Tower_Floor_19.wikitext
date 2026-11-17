@@ -1,0 +1,55 @@
+{{EnemiesAppearing|Gabriel|Angelic Sleipnir|Shy Boy|I.M. Phace|Metal Doge|Bore|Director Kurosawah|Bun Bun Black|Dark Otter}}
+'''Floor 19''' is the 19th floor of [[Golden Tower]].
+
+{{Stage Info
+|stage name = [[File:rc177.png]]
+[[File:Mapsn000 18 v en.png]]
+|stage location = [[File:Mapname010 v en.png]]
+|energy = 160
+|enemy castle hp = 490,000 HP
+|enemies = {{Magnification|Gabriel|100%
+|Angelic Sleipnir|100%
+|Shy Boy|1,400%
+|I.M. Phace|600%
+|Metal Doge|100%
+|Bun Bun Black|300%
+|Dark Otter|100%}}
+|boss = {{Magnification|Bore|300%
+|Director Kurosawah|100%}}
+|treasure = - [[Catfruit|Purple Catfruit]] +6 (100%, 1 time)
+|XP = 3,040 XP
+|width = 4,000
+|max enemies = 9
+|jpname = 19th Floor
+|script = 19階
+|romaji = 19 Kai
+|star = 1
+|event-chapter = [[Golden Tower]]
+|difficulty = ★8
+|prev stage = [[Golden Tower/Floor 18|Floor 18]]
+|next stage = [[Golden Tower/Floor 20|Floor 20]]
+}}
+
+==Battleground==
+*Infinite [[Gabriel]]s spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~13.33 seconds<sup>200f~400f</sup>.
+*1 [[Angelic Sleipnir]] spawns.
+*When the base reaches 99% HP:
+**1 [[Bore]] spawns as the boss.
+**3 [[Shy Boy]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+**1 [[I.M. Phace]] spawns.
+**3 [[Metal Doge]]s spawn, delay 0.67 seconds<sup>20f</sup>.
+*When the base reaches 80% HP:
+**1 [[Director Kurosawah]] spawns as the boss.
+**15 [[Metal Doge]]s spawn, delay 2~2.67 seconds<sup>60f~80f</sup>.
+**1 [[Bun Bun Black]] spawns.
+**Infinite [[Dark Otter]]s spawn, delay 20~26.67 seconds<sup>600f~800f</sup>.
+**4 [[Dark Otter]]s spawn, delay 0.67~1.33 seconds<sup>20f~40f</sup>.
+
+==Strategy==
+:''This floor is identical to the corresponding Heavenly Tower floor. As such, see [[Heavenly Tower/Floor 19#Strategy|Floor 19]] for strategies.''
+
+==Reference==
+*https://battlecats-db.com/stage/s07010-19.html
+
+{{Downloads}}
+[[Category:Golden Tower Floors]]

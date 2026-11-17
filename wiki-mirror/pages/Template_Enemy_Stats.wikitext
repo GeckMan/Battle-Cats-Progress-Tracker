@@ -1,0 +1,6 @@
+<onlyinclude><includeonly>{{#ifeq:{{NAMESPACENUMBER}}|0|{{#invoke:Enemy Stats|cat|{{{Element}}}<!----->}}}}<templatestyles src="Template:Enemy_Stats/styles.css" />{{#invoke:Enemy Stats|main
+|Name = {{{Enemy}}}
+|Attack Frequency = {{{Time Between Attacks}}}
+|Abilities = {{{Ability}}}
+|Traits = {{{Element}}}
+}}[[Category:Pages using enemy stats template]]</includeonly></onlyinclude>{{/doc}}

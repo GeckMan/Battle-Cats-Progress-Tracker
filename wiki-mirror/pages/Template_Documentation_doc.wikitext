@@ -1,0 +1,12 @@
+{{Documentation}}
+<code><nowiki>{{Documentation}}</nowiki></code> is transcluded in template/module documentation pages. This template should only be used on subpages titled "doc".
+
+This is '''not''' the template of the same name from Wikipedia and it is not used in the same way.
+
+==Usage==
+Place {{t|documentation}} at the top of the documentation page, then transclude <code><nowiki>{{/doc}}</nowiki></code> directly from the main template page, within <nowiki><noinclude></nowiki> tags.
+
+If the page to be documented is a subpage, use {{t|documentation|pagename of page to be documented}} at the top of the documentation page. For example, Template:Foo/bar's documentation page would use {{t|documentation|Template:Foo/bar}}.
+
+You can create a new page with this preloaded with a url like {{fullurl:Template:Documentation/preload/doc|action=edit&preload={{urlencode:Template:Documentation/preload}}}}.
+<includeonly>[[Category:Template documentation| ]]</includeonly><!-- makes it show up first on the category page -->

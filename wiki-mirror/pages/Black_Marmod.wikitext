@@ -1,0 +1,64 @@
+'''Black Marmod''' is a [[:Category:Dark Enemies|Dark]] enemy that appears in the [[World Trigger Collaboration Event]]. It was added in [[Version 11.9 Update|Version 11.9]].
+
+{{Enemy Info
+|name = Black Marmod
+|image = E 621.png
+|appearance = [[World Trigger Collaboration Event]]
+|money drop = 100¢ - 395¢
+}}
+
+==Enemy==
+This enemy appears to be a black quadrupedal creature with an eye in its mouth. It has low overall stats. Even with its [[Omni Strike]], the most it can reach are your meatshields. If it does reach your attackers however, it can [[Knockback|knockback]] them.
+
+==Strategy==
+As long as your World Trigger units are well leveled, these shouldn't be much of a problem. [[Chika Amatori & Cat (Special Cat)|Chika Amatori]] in particular can be used to slow it down from a distance, while [[Osamu Mikumo & Cat (Rare Cat)|Osamu Mikumo]] can protect her using his high health and [[Immune to Knockback|Knockback Immmunity]].
+
+==Encounters==
+{{Collapsible}}
+This enemy has always appeared at 100% strength magnification.
+===[[Collaboration Events|Collaboration Stages]]===
+*[[World Trigger Collaboration Event#Vs Training Marmod|Vs Training Marmod]]:
+**[[Training Level 3]]
+**[[Training Level 4]]
+**[[Training Level 5]]
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Black Marmod
+|Health = 120000
+|Attack Power = 4000
+|Attack Range = 120
+|Attack Type = Area
+|Time Between Attacks = 59
+|Movement Speed = 14
+|Knockback = 5
+|Foreswing = 20
+|Backswing = 28
+|Ability = {{AbilityIcon|Omni Strike}} [[Omni Strike]] (Effective range: -450~150)<br>
+{{AbilityIcon|Knockback}} 100% chance to [[Knockback|knockback]] Cat Units
+|Element = Dark
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery>
+621 e.png|Black Marmod's spritesheet
+</gallery>
+
+==Reference==
+*https://battlecats-db.com/enemy/623.html
+
+----
+{{EnemyNav|Red Marmod|Sakura}}
+----
+
+{{World Trigger}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Dark Enemies]]
+[[Category:Area Attack Enemies]]
+[[Category:Omni Strike Enemies]]
+[[Category:Enemies with Knockback ability]]

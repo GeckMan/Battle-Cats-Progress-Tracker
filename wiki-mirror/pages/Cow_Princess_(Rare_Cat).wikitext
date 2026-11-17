@@ -1,0 +1,141 @@
+{{Unobtainable}}
+'''Cow Princess''' is a [[:Category:Rare Cats|Rare Cat]] that could be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]] during the [[Princess Punt Sweets Collaboration Event]]. It was added in [[Version 2.0 Update#Version 2.0.7 Update|Version 2.0.7]].
+
+{{Cat Info
+|ID = 65
+|rarity = RR
+|name1 = Cow Princess
+|name2 = Giraffe Princess
+}}
+
+==Evolution==
+Evolves into '''Giraffe Princess''' at level 10.
+
+==Strategy/Usage==
+Against most enemies, this Cat is essentially [[Cow Cat (Normal Cat)|Cow Cat]] with slightly higher damage at the same level. Against [[:Category:Dark Enemies|Dark]] enemies, Cow Princess deals considerably more damage, which can be useful for the early game, though this assumes that the player has no better Cats to beat Dark enemies at that point. Unfortunately, beyond the early game, Cow Princess shares the same fate as many other collaboration units due to low HP and Single Target, even with the extra attack power against Dark enemies. At least it's better than [[Tomboy Lion Cat (Special Cat)|Tomboy Lion Cat]], though.
+
+{{Job|Classification = Rusher}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 65
+|Type = [[:Category:Rare Cats|Rare Cat]]
+|Image1 = Uni065 f00.png
+|Image2 = Uni065 c00.png
+|Name1 = Cow Princess
+|Desc1 = Craziness even exudes from its luxurious locks.<br>Slightly longer reach than a regular Cow Cat.<br>Deals Massive damage to Dark enemies.
+|Name2 = Giraffe Princess
+|Desc2 = Craziness even exudes from its luxurious locks.<br>Slightly longer reach than a regular Giraffe Cat.<br>Deals Massive damage to Dark enemies.
+|Name1 (JP) = ウシ姫 (Ushi Hime, Cow Princess)
+|Desc1 (JP) = 振り乱した髪の毛には狂気すら感じる<br>ウシネコよりもちょっとだけリーチが長い<br>黒い敵に超ダメージを与える
+|Transl1 (JP) = Gets mad every time her hair is dishevelled.<br>Has slightly longer reach than Cow Cat.<br>Deals great damage to Dark enemies.
+|Name2 (JP) = キリン姫 (Kirin Hime, Giraffe Princess)
+|Desc2 (JP) = 振り乱した髪の毛には狂気すら感じる<br>ネコキリンよりもちょっとだけリーチが長い<br>黒い敵に超ダメージを与える
+|Transl2 (JP) = Gets mad every time her hair is dishevelled.<br>Has slightly longer reach than Giraffe Cat.<br>Deals great damage to Dark enemies.
+|Name1 (TW) = 牛公主
+|Desc1 (TW) = 散亂的頭髮帶著一絲瘋狂<br>攻擊距離比牛貓長一點<br>能夠對黑色敵人造成超大傷害
+|Name2 (TW) = 長頸鹿公主
+|Desc2 (TW) = 散亂的頭髮帶著一絲瘋狂<br>攻擊距離比長頸鹿貓長一點<br>能夠對黑色敵人造成超大傷害
+|Name1 (KR) = 황소 공주
+|Desc1 (KR) = 흐트러지는 머릿결이 광기에 절어보인다.<br>황소 고양이 보다 아주 조금 공격 거리가 길다<br>검은 적에 초 데미지를 입힌다
+|Name2 (KR) = 기린 공주
+|Desc2 (KR) = 흐트러지는 머릿결이 광기에 절어보인다.<br>고양이 기린보다 아주 조금 공격 거리가 길다<br>검은 적에 초 데미지를 입힌다
+}}
+
+==Cost==
+*Chapter 1: 500¢
+*Chapter 2: 750¢
+*Chapter 3: 1,000¢
+{{Upgrade Cost|MIX
+|0
+|1,500
+|2,400
+|3,600
+|5,100
+|6,900
+|9,000
+|11,400
+|14,100
+|29,800
+|1,600
+}}
+
+==Stats==
+{{Cat Stats 1.2
+|Normal Name = Cow Princess
+|Normal Base HP = 500
+|Normal Base AP = 30
+|Normal Range = 161
+|Normal Foreswing = 6
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 10
+|Normal Speed = 30
+|Normal KB = 5
+|Normal Cost = 500
+|Normal Recharge = 270
+|Normal Attack Type = Single
+|Normal Targets = Dark
+|Normal Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Evolved Name = Giraffe Princess
+|Evolved Base HP = 500
+|Evolved Base AP = 30
+|Evolved Range = 161
+|Evolved Foreswing = 6
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 10
+|Evolved Speed = 30
+|Evolved KB = 5
+|Evolved Cost = 500
+|Evolved Recharge = 270
+|Evolved Attack Type = Single
+|Evolved Targets = Dark
+|Evolved Abilities = {{AbilityIcon|Massive Damage}} Deals [[Massive Damage|massive damage]] to target traits
+|Lv.MAX = Lv.50+80
+|Scaling = 20x7,10x2,5x11
+|Orb = false
+|validation = on
+|val-Normal-Health = 500 HP
+|val-Normal-Attack Power = 30 damage<br>(90 DPS)
+|val-Normal-Attack Range = 161
+|val-Normal-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Normal-Movement Speed = 30
+|val-Normal-Knockback = 5 times
+|val-Normal-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Normal-Recharge Time = 9 ~ 2 seconds
+|val-Normal-MaxHP = 8,500 HP
+|val-Normal-MaxAttack = 510 damage<br>(1,530 DPS)
+|val-Evolved-Health = 8,500 HP
+|val-Evolved-Attack Power = 510 damage<br>(1,530 DPS)
+|val-Evolved-Attack Range = 161
+|val-Evolved-Attack Frequency = 10f <sub>0.33 seconds</sub>
+|val-Evolved-Movement Speed = 30
+|val-Evolved-Knockback = 5 times
+|val-Evolved-Attack Animation = 6f <sup>0.2s</sup><br>(4f <sup>0.13s</sup> backswing)
+|val-Evolved-Recharge Time = 9 ~ 2 seconds
+}}
+
+{{UnitViewer|cat}}
+
+{{Gallery|Uni065 f00}}
+
+==Trivia==
+*Giraffe Princess' icon contains the text "キリン" (''Kirin'', '''Giraffe''') in [[Nyanko Daisensou|BCJP]]. This text was replaced with a blank space in her international appearances.
+
+==Reference==
+*https://battlecats-db.com/unit/066.html
+
+----
+{{CatNav|Swordsman|PPT48}}
+----
+
+{{Princess Punt}}
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Rare Cats]]
+[[Category:Collaboration Event Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Cats with Massive Damage ability]]
+[[Category:Gacha Cats]]
+[[Category:Cats with regional differences]]

@@ -1,0 +1,96 @@
+{{EnemiesAppearing|Hermit Cat|Trolly Blogger|Ginger Snache|Doge Dark}}
+:''Not to be confused with the [[Infernal Tower]] version of [[Infernal Tower/Floor 30|Floor 30]].''
+'''Floor 30''' is the 30th floor of [[Heavenly Tower]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc085.png]]
+[[File:Mapsn000 29 v en.png]]
+|stage location = [[File:Mapname000 v en.png]]
+|energy = 200
+|enemy castle hp = 1,000,000 HP
+|enemies = {{Magnification|Trolly Blogger|200%
+|Ginger Snache|400%
+|Doge Dark|1,000%}}
+|boss = {{Magnification|Hermit Cat|100%}}
+|treasure = - [[Cat Capsule#Rare Capsule|Rare Ticket]] +3 (100%, 1 time)<br>
+- [[Hermit Cat (Special Cat)|Hermit Cat]] (via [[Catnip Challenges]])
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,000
+|max enemies = 10
+|jpname = 30th Floor
+|script = 30階
+|romaji = 30 Kai
+|star = 1
+|event = [[Heavenly Tower]]
+|event-chapter = [[Heavenly Tower]]
+|prev stage = [[Heavenly Tower/Floor 29|Floor 29]]
+|next stage = [[Heavenly Tower/Floor 31|Floor 31]]
+}}
+
+==Battleground==
+*1 [[Hermit Cat (Enemy)|Hermit Cat]] spawns as the boss after 10 seconds<sup>300f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 40 seconds<sup>1,200f</sup>, delay 50~60 seconds<sup>1,500f~1,800f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 80 seconds<sup>2,400f</sup>, delay 50~60 seconds<sup>1,500f~1,800f</sup>.
+*Infinite [[Doge Dark]]s spawn after 120 seconds<sup>3,600f</sup>, delay 50~60 seconds<sup>1,500f~1,800f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 160 seconds<sup>4,800f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 200 seconds<sup>6,000f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*Infinite [[Doge Dark]]s spawn after 240 seconds<sup>7,200f</sup>, delay 60~80 seconds<sup>1,800f~2,400f</sup>.
+*Infinite [[Trolly Blogger]]s spawn after 280 seconds<sup>8,400f</sup>, delay 80~120 seconds<sup>2,400f~3,600f</sup>.
+*Infinite [[Ginger Snache]]s spawn after 320 seconds<sup>9,600f</sup>, delay 80~120 seconds<sup>2,400f~3,600f</sup>.
+*Infinite [[Doge Dark]]s spawn after 360 seconds<sup>10,800f</sup>, delay 80~120 seconds<sup>2,400f~3,600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Doge Dark]] spawns.
+*When the base reaches 90% HP:
+**1 [[Doge Dark]] spawns.
+*When the base reaches 80% HP:
+**1 [[Doge Dark]] spawns.
+
+==Strategy==
+Hermit's Wave Attacks are extremely dangerous, as it can easily compensate for his very low range and completely nullify traditional meatshielding, which would have been useful against the peons. As such, it would be in one's interests to include numerous Wave-Immune units. Those that can outrange Hermit and are wave immune can work very well in this stage.
+
+==='''Recommended Units'''===
+*[[Swimmer Cat (Super Rare Cat)|Fishman Cat]]: Although there are no Floating enemies in this stage, Fishman's high speed makes it a great option for dealing chip damage with full backswing cooldown. At level 34, Fishman can actually survive one hit from Hermit, and that extra hit can make a significant difference as the battle progresses.
+*[[Express Cat (Super Rare Cat)|Bullet Train]]: Bullet Train's extreme speed, extra money ability and high single target burst damage can both be useful in this stage. It does require Attack Up combos to actually kill off Doge Dark and Ginger Snache on its own (1000% Doge Darks have 50,000 health each, so for 10%/15%/20%/25% combos to work, Bullet Train needs to be at level 48/46/44/42), but when it does it can eliminate them from play quickly and provide a small income boost. If used correctly, Bullet Train could achieve even more value by hitting the boss.
+*[[Crazed Cow Cat (Super Rare Cat)|Manic Lion Cat]]: With extremely high speed and a decently short cooldown, Manic Lion can be used as a pseudo-meatshield, forcing Hermit to attack and catching up just after his attacks cease, effectively perma-stalling him, although it may struggle when peons arrive.
+*[[Li'l Cow Cat (Special Cat)|Li'l Lion Cat]]: Li'l Lion is similar to Manic Lion, but trades HP and speed for [[Immune to Waves|Wave Immunity]]. Level 40+15 is the least it needs to work, as it can stomach a hit from Hermit Cat after/before several hits from Trolly Blogger.
+*[[Miyamoku Musashi (Special Cat)|Awakened Musashi]]: Musashi, being a Wave Immune backliner that can outrange Hermit, is serviceable in absence of other alternatives, as his attack rate is simply too slow for the peons and requires significant support.
+*[[Kung Fu Cat (Special Cat)|Dancer Cat]]: Though initially an unremarkable midranger, Dancer's Wave Immunity and Attack Buff Talents work particularly well with his somewhat short cooldown, able to deliver bursts of area damage that can both hit Hermit and cripple peons.
+*[[Gloomy Neneko (Super Rare Cat)|Costumed Witchy Neneko]]: This elusive unit is perhaps the only non-Uber Wave Shield that can outrange Hermit to completely deny his main source of pushing power.
+*[[Stone Cat (Rare Cat)|Stone Cat]]: Stone despawns shortly after attacking, but its high speed, extreme health and Wave Immunity mean it won't fall to any threat as long as it exists. Stone doesn't have full uptime regardless of combos, but still greatly alleviates defensive pressure and offers a good deal of support.
+*[[Brainwashed Lizard Cat (Super Rare Cat)|Brainwashed King Dragon Cat]]: Brainwashed King Dragon has high DPS and high range alongside having Wave Immunity, a stack of them can begin to overwhelm Hermit with time.
+*[[Glass Cat (Rare Cat)|Macho Crystal Cat]]: Macho Crystal's single target attacks inflict knockback and 10-second slow to Traitless enemies with Wave Immunity, high speed, a good deal of health and the Metal trait to ensure it could reach Hermit quickly and fire off the attack. It does require a clear shot to have any impact due to its range, but when it does the unit provides surprisingly high uptime, given its cooldown is only slightly more than double of its slow duration.
+*[[Lone Cat and Kitten (Rare Cat)|Tourist Cat]]: Tourist is an anti-Traitless single target CC unit that is Immune to Knockback, with resistance to Traitless enemies as well as 100% chance to Knockback and Freeze them for 2 seconds on hit.  Though easy to overwhelm, Tourist nevertheless is one of the better means to recover ground, and won't be pushed around by Trolly Blogger either, not to mention its potential applications in cheese strategies.
+*[[Ancient Egg: N005 (Special Cat)|Hitman Cat]]: Hitman is a specialist LD attacker with Massive Damage to Traitless and Wave Immunity. As one of the few stackable DPS units that work here, Hitman can provide some serious damage at a relatively safe range.
+*[[Crazed Cat (Super Rare Cat)|Manic Mohawk Cat]]: A fast, cheap meatshield that can consistently stall Hermit without peons. When peons start coming out you'll have to deal with them quickly or Hermit will gain ground. Luring near the base is required for consistent stalling.
+*[[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]]: provided you have talented damage and Massive Damage, this is very helpful in both clearing Doge Dark and as a more spamable variant of Fishman Cat. It does drain cash fast, so be wary of using it too often.
+* [[Ancient Egg: N106 (Rare Cat)|Mushroom Cat]]: Mushroom Cat is immune to waves meaning that if protected, it can deal damage while ignoring Hermit Cat's wave. It can additionally be used as a wave immune meatshield alongside [[Pirate Cat (Rare Cat)|Talented Pirate Cat]] provided you have research combos and a good flow of money.
+*[[Helmet Cat (Special Cat)|Yellow Nyanko Ranger]], [[Fedora Cat (Special Cat)|Blue Nyanko Ranger]], and [[Goggles Cat (Special Cat)|Green Nyanko Ranger]]: If you've played during the [[Anniversary/13th Year|13th Anniversary Event]], the Nyanko Rangers are a surprisingly good pick for this stage. Yellow Nyanko Ranger's [[Yellow Strike (Combo)|Wave Immunity Combo]] can let you stack up many Blue and Green Nyanko Rangers, who provide good support against boss and many of his peons. [[Ribbon Cat (Special Cat)|Pink Nyanko Ranger]] and [[Scarf Cat (Special Cat)|Red Nyanko Ranger]] are not nearly as useful, even for their Cat Combos, but can be still included if you truly lack better options. Furthermore, [[Giga-Nyan Rex (Uber Rare Cat)|Giga-Nyan Rex]] is a viable backliner to include alongside them. It is worth noting that the mecha only really helps against the peons, and does laughable damage to Hermit Cat unless boosted.
+
+==='''Recommended Ubers'''===
+*[[Shadow Gao (Uber Rare Cat)|Shadow Gao]]/[[D'arktanyan (Uber Rare Cat)|D'arktanyan]]: These Anti-Traitless specialists deal massive damage against their targets and are Immune to Waves. Their offensive focus can completely demolish Hermit, with Shadow Gao having a brief 1-second Freeze as well as Knockback Immunity. They will definitely make things much easier, just not ideal with dealing with peons.
+*[[Child of Destiny Phono (Uber Rare Cat)|Child of Destiny Phono]]/[[King of Doom Phono (Uber Rare Cat)|King of Doom Phono]]: The evolved forms of this Uberfest/Epicfest duo can fire safely at a range with them having Immune to Waves. King of Doom can even relieve pressure if he manages to knockback before he slows. The lingering attack animations of both mean they have a higher likelihood to hit peons than the previous two with decent meatshielding.
+*[[Kasli the Bane (Uber Rare Cat)|Kasli, Daughter of Chaos]]: Long-range (11,724 DPS with Surge) with Immune to Waves along with lingering surges that help deal with peons. Basic meatshield timing along with her allows you to deal with the stage with loads of ease.
+*[[Yamii (Uber Rare Cat)|Yaminora]], [[Celestial Child Luna (Uber Rare Cat)|Salvation's Daughter Lunacia]], [[EVA Unit-00 (Uber Rare Cat)|EVA Unit-00]], [[Mighty Kristul Muu (Legend Rare Cat)|Doom Engine Pandora]] and [[Hatsune Miku: MM2020 Tokyo (Uber Rare Cat)|Hatsune Miku: MM2020 Tokyo]]: Ranged wave blocker units that are able to outrange Hermit, as long as one of them are alive he will not be able to release any waves, allowing for you to stack ranged attackers such as dragon variants that can stand behind them and be unharmed, completely destroying the stage.
+*[[Lone Moon Lunos (Uber Rare Cat)|Lunos the Eclipsed]]: Essentially a cheat-code for the stage. Requires very little aid to simply force Hermit Cat to the other end of the stage, dealing with peons easily as well and can even earn money back quicker due to his Conjure's Double Bounty.
+
+==Missions==
+{{MissionTable
+|{{Mission|Defeat the 30th floor of the Heavenly Tower.<br>(This reward can only be claimed once.)|[[Hermit Cat (Special Cat)|Hermit Cat]]|misc|type = special}}
+}}
+
+==Walkthrough==
+{{Walkthrough
+|2b4aW6Bxi5Q|Lucas IV|No gacha, no powerups
+|l1wVa_EGa64|Solar Frost|Cheese, no Healer
+}}
+
+==Trivia==
+*Before the introduction of Floors 31 and above, this floor had a different [[Enemy Bases|enemy base]].
+
+==Reference==
+*https://battlecats-db.com/stage/s07000-30.html
+
+{{SpecialStages List}}
+[[Category:Heavenly Tower Floors]]
+[[Category:No Continue Stages]]

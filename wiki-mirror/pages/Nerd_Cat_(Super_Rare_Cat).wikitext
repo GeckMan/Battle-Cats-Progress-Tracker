@@ -1,0 +1,360 @@
+'''Nerd Cat''' is a [[:Category:Super Rare Cats|Super Rare Cat]] that was introduced in [[Version 2.0 Update|Version 2.0]] and can be unlocked by playing the [[Cat Capsule#Rare Capsule|Rare Capsule]]. [[True Form]] added in [[Version 6.8 Update|Version 6.8]] increases attack power and [[Slow|slows]] non-[[:Category:Metal Enemies|Metal]] enemies. [[Talents]] were added in [[Version 8.3 Update|Version 8.3]]. In [[The Battle Cats POP!]], Nerd Cat is unlocked in the Rare Cat Capsule pool once clearing [[Saudi Arabia (Empire of Cats)|Saudi Arabia]].
+
+{{Cat Info
+|ID = 35
+|rarity = SR
+|name1 = Nerd Cat
+|name2 = Hacker Cat
+|name3 = Cyberpunk Cat
+}}
+
+==Evolution==
+Evolves into '''Hacker Cat''' at level 10.
+
+Evolves into '''Cyberpunk Cat''' at level 30 using [[Catfruit]] and XP.
+
+==Strategy/Usage==
+==='''Normal Form'''===
+Nerd Cat has Single Target attacks with mediocre damage, but has more effective range than the other two forms, making it able to [[cheese]] certain stages by using the enemy limit. However, in most other cases it's eclipsed by the unit's other forms and isn't worth using in general, especially considering his extremely long recharge time.
+
+==='''Evolved Form'''===
+Hacker Cat has the same qualities of Nerd Cat. Despite the reduced effective range, it can still occasionally chip enemies with its weak area attacks, especially against threats your units struggle to reach, such as [[Camelle]] in [[Chubby B. Goode]] and [[Manic Flying Cat (Enemy)|Manic Flying Cat]] in [[Forest Beasts (Deadly)|Forest Beasts]].
+
+==='''True Form'''===
+While the extra damage is always good, the guaranteed slow on hit transforms Cyberpunk Cat from a niche source of extra damage to among the best supportive units in the game. While he has a poor ~25% uptime, this is where Cyberstacking comes in. By stalling peons in his blindspot, you could accumulate multiple Cyberpunk Cats before triggering the boss wave on most basehit stages, allowing you to permanently slow the enemies and win easily. This strategy works as long as the main threat of the stage spawns on basehit, is affected by slow and there are stallable peons.
+
+Cyberpunk forms a strong combination with [[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]], who shares a similar range and can push enemy pushers out of Cyberpunk's blindspot and further control them.
+
+Despite his strength, Cyberpunk is sluggish and is much worse on stages where the main threat spawns on a timer. He also retains his immense frailty and is vulnerable to certain enemies who may be able to hit him, such as [[Hackey]].
+
+==='''Talents'''===
+Cyberpunk's Slow talent is undoubtedly the most important, as it essentially doubles his ability duration when fully upgraded and greatly improves uptime. This improves Cyberstacking strategies, allowing only 2 desynced Cyberpunk Cats to have perfect slow uptime. It also heavily improves his performance as a supportive unit in his own right, especially on stages where the main threat spawns on a timer, since a single Cyberpunk Cat with the Slow talent maxed out has 50% slow uptime on his own, drastically reducing reliance on Cyberstacking to get value. If you use Cyberpunk Cat, this talent is crucial to get.
+
+As for other talents, the situational [[Survive]] talent, when maxed, is useful too, since it allows Cyberpunk to reposition once. [[Barrier Breaker]] is unnecessary due to the presence of vastly superior alternatives that are far more versatile. Cost Down, however, isn't so relevant, since he remains affordable on most stages that do allow for his use even without it, though makes him easier to use on certain aggressive stages.
+
+The last talent is a standard Attack Buff, which like all other stat boost talents is helpful, but in no way necessary due to his low base damage and high NP cost for what it does.
+
+==='''Orb'''===
+Because Cyberpunk is reliant on his crowd-control instead of his health or damage, all Effect Orbs are meaningless. A Shortened Cooldown Orb would work best on him, as even just a B rank Orb would be enough to shave off around 11 seconds from his lengthy cooldown.
+
+{{Job|Classification = Sniper & Super-Backliner|EvolvedClass = Super-Backliner|TrueClass = Crowd-Controller & Super-Backliner|UltraClass=}}
+
+==Cat Combos==
+{{Combos
+|{{CatCombo|IT Crowd|Bounty Up (Sm)|Catway|Nerd Cat|jpname=IT系}}
+}}
+
+==Description==
+{{Description
+|Mode = Cat
+|Number = 35
+|Type = [[:Category:Super Rare Cats|Super Rare Cat]]
+|Image1 = Uni035 f00.png
+|Image2 = Uni035 c00.png
+|Image3 = Uni035 s00.png
+|Name1 = Nerd Cat
+|Desc1 = Undisputed record-holder of never touching grass.<br>A keyboard warrior sparking massive flames.<br>Super-duper Long-Range attack specialist.
+|Name2 = Hacker Cat
+|Desc2 = Tech savant freshly dropped out of an elite university,<br>able to bring down nations with a single keystroke.<br>Super-duper Long-Range specialist with Area attack.
+|Name3 = Cyberpunk Cat
+|Desc3 = Can change the course of history with a blink,<br>still lost their whole fortune in a crypto rug-pull.<br>Super Long-Range Area attacks Slow non-Metal.
+|Name1 (JP) = オタネコ (Otaneko, Cat Otaku)
+|Desc1 (JP) = 家の中なら誰にも負ける気がしない<br>ネット界に嵐を巻き起こすオトコ<br>超遠距離攻撃が可能(遠方攻撃)
+|Transl1 (JP) = He's the man creating storms on the internet<br>thinking that he can't be defeated by anyone while in his home<br>Can make super long distance attacks
+|Name2 (JP) = ネコハッカー (Neko Hakkā, Hacker Cat)
+|Desc2 (JP) = ボタンひとつで全てを動かす<br>エリート大学出身のハイテクにゃんこ<br>超遠距離の範囲攻撃が可能(遠方範囲攻撃)
+|Transl2 (JP) = A high tech Cat from an elite university<br>that does everything at the push of a button<br>Can make super long distance attacks
+|Name3 (JP) = ネコスーパーハッカー (Neko Sūpā Hakkā, Super Hacker Cat)
+|Desc3 (JP) = 指すら触れずに全てを動かす天才ハッカー<br>先日、仮想通貨取引で大損した<br>メタルな敵以外の動きを一瞬遅くする(遠方範囲攻撃)
+|Transl3 (JP) = A genius hacker that does everything without even using his fingers<br>Suffered a large loss at a digital currency deal the other day<br>Momentarily slows down movement of non-Metal enemies (Long Distance Area Attack)
+|Name1 (TW) = 御宅貓
+|Desc1 (TW) = 在家裡覺得自己最厲害<br>在網絡界引起風潮的男人<br>可以進行超遠距離攻擊(遠距攻擊)
+|Name2 (TW) = 駭客貓
+|Desc2 (TW) = 只要一個按鈕就能運作一切<br>畢業於精英大學的高科技貓咪<br>可以進行超遠距離範圍攻擊(遠距範圍攻擊)
+|Name3 (TW) = 高階駭客貓
+|Desc3 (TW) = 一根手指都不動就可運作一切的天才駭客<br>不過前陣子操作虛擬貨幣失手慘遭滑鐵盧<br>可使鋼鐵以外的敵人動作瞬間變慢(遠距範圍攻擊)
+|Name1 (KR) = 오덕 고양이
+|Desc1 (KR) = 집안이라면 어디에서도 지지 않을 자신이 있다<br>인터넷계에 폭풍을 일으키는 남자<br>초원거리 공격이 가능 (원거리 공격)
+|Name2 (KR) = 고양이 해커
+|Desc2 (KR) = 버튼 하나로 모든것을 움직인다<br>엘리트 대학출신의 하이테크 냥코<br>초원거리 공격이 가능 (원거리 범위공격)
+|Name3 (KR) = 고양이 슈퍼 해커
+|Desc3 (KR) = 손가락 하나 까딱 않고 모든 것을 움직일 수 있는 천재 해커.<br>며칠 전, 가상 화폐 폭락으로 엄청난 손실을 입었다<br>메탈 적 이외의 움직임을 순간 느리게 한다 (원거리 범위공격)
+|Name1 (3DS) = Nerd Cat
+|Desc1 (3DS) = Totally fearless, inside his basement.<br>Netizen famous for flaming.<br>Uber long distance attacker.
+|Name2 (3DS) = Hacker Cat
+|Desc2 (3DS) = Famous for making Bid Red Buttons.<br>Graduate from an elite university.<br>Uber long distance attacker.
+}}
+
+==Cost==
+*Chapter 1: 2,500¢
+*Chapter 2: 3,750¢
+*Chapter 3: 5,000¢
+{{Upgrade Cost|SR}}
+
+==Stats==
+<tabber>
+Mobile Version=
+{{Cat Stats 1.2
+|Normal Name = Nerd Cat
+|Normal Base HP = 200
+|Normal Base AP = 300
+|Normal Range = 1200
+|Normal Foreswing = 72
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 241
+|Normal Speed = 4
+|Normal KB = 1
+|Normal Cost = 2500
+|Normal Recharge = 5000
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 1,100~1,500)
+|Evolved Name = Hacker Cat
+|Evolved Base HP = 200
+|Evolved Base AP = 300
+|Evolved Range = 1200
+|Evolved Foreswing = 72
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 241
+|Evolved Speed = 4
+|Evolved KB = 1
+|Evolved Cost = 2500
+|Evolved Recharge = 5000
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 800~1,200)
+|True Name = Cyberpunk Cat
+|True Base HP = 200
+|True Base AP = 450
+|True Range = 1200
+|True Foreswing = 72
+|True Attack Cooldown = 0
+|True Attack Length = 241
+|True Speed = 4
+|True KB = 1
+|True Cost = 2500
+|True Recharge = 5000
+|True Attack Type = Area
+|True Targets = Red,Floating,Dark,Traitless,Angel,Alien,Zombie,Relic,Aku
+|True Abilities = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 800~1,200)<br>
+{{AbilityIcon|Slow}} 100% chance to [[Slow|slow]] target traits for 60f <sub>2 seconds</sub>
+|Lv.MAX = Lv.50+70
+|Scaling = 20x6,10x2,5x12
+|Orb = true
+|validation = on
+|val-Normal-Health = 200 HP
+|val-Normal-Attack Power = 300 damage<br>(37.34 DPS)
+|val-Normal-Attack Range = 1,200
+|val-Normal-Attack Frequency = 241f <sub>8.03 seconds</sub>
+|val-Normal-Movement Speed = 4
+|val-Normal-Knockback = 1 time
+|val-Normal-Attack Animation = 72f <sup>2.4s</sup><br>(169f <sup>5.63s</sup> backswing)
+|val-Normal-Recharge Time = 166.67 ~ 157.87 seconds
+|val-Normal-MaxHP = 3,400 HP
+|val-Normal-MaxAttack = 5,100 damage<br>(634.85 DPS)
+|val-Evolved-Health = 3,400 HP
+|val-Evolved-Attack Power = 5,100 damage<br>(634.85 DPS)
+|val-Evolved-Attack Range = 1,200
+|val-Evolved-Attack Frequency = 241f <sub>8.03 seconds</sub>
+|val-Evolved-Movement Speed = 4
+|val-Evolved-Knockback = 1 time
+|val-Evolved-Attack Animation = 72f <sup>2.4s</sup><br>(169f <sup>5.63s</sup> backswing)
+|val-Evolved-Recharge Time = 166.67 ~ 157.87 seconds
+|val-True-Health = 3,400 HP
+|val-True-Attack Power = 7,650 damage<br>(952.28 DPS)
+|val-True-Attack Range = 1,200
+|val-True-Attack Frequency = 241f <sub>8.03 seconds</sub>
+|val-True-Movement Speed = 4
+|val-True-Knockback = 1 time
+|val-True-Attack Animation = 72f <sup>2.4s</sup><br>(169f <sup>5.63s</sup> backswing)
+|val-True-Recharge Time = 166.67 ~ 157.87 seconds
+}}
+|-|
+Nintendo 3DS Version=
+{{Cat Stats 1.2
+|Normal Name = Nerd Cat
+|Normal Base HP = 200
+|Normal Base AP = 150
+|Normal Range = 1200
+|Normal Foreswing = 72
+|Normal Attack Cooldown = 0
+|Normal Attack Length = 241
+|Normal Speed = 4
+|Normal KB = 1
+|Normal Cost = 2500
+|Normal Recharge = 5000
+|Normal Attack Type = Single
+|Normal Targets = -
+|Normal Abilities = -
+|Evolved Name = Hacker Cat
+|Evolved Base HP = 200
+|Evolved Base AP = 150
+|Evolved Range = 1200
+|Evolved Foreswing = 72
+|Evolved Attack Cooldown = 0
+|Evolved Attack Length = 241
+|Evolved Speed = 4
+|Evolved KB = 1
+|Evolved Cost = 2500
+|Evolved Recharge = 5000
+|Evolved Attack Type = Area
+|Evolved Targets = -
+|Evolved Abilities = -
+|Lv.MAX = Lv.20+5
+|Scaling = 20x6,10x2,5x12
+|Orb = false
+}}
+</tabber>
+
+==Catfruit Evolution==
+{{Catfruit Evolution
+|Evolved Name = Hacker Cat
+|Evolved Image = Uni035 c00.png
+|True Name = Cyberpunk Cat
+|True Image = Uni035 s00.png
+|True Description = True Form evolution increases Attack!<br>Also gains the ability to Slow down<br>non-Metal enemies for a short time.
+|Catfruit1 = GreenFruit
+|Catfruit2 = PurpleFruit
+|Catfruit3 = RedFruit
+|Catfruit4 = BlueFruit
+|Catfruit5 = EpicFruit
+|Quantity Catfruit1 = x2
+|Quantity Catfruit2 = x2
+|Quantity Catfruit3 = x2
+|Quantity Catfruit4 = x2
+|Quantity Catfruit5 = x1
+|Quantity XP = 500,000
+}}
+
+==Talents==
+*'''[[Slow]]''': Increases slow duration by 6f <sup>0.2s</sup> per level up to 60f <sup>2s</sup> (Total Cost: 125 NP)
+*'''[[Survive|Survives]]''': Adds a 28% chance to survive a lethal strike, improves by 8% per level up to 100% (Total Cost: 165 NP)
+*'''[[Barrier Breaker]]''': Adds a 15% chance to break barriers, improves by 5% per level up to 60% (Total Cost: 165 NP)
+*'''[[Special Abilities#Stat Enhancements|Attack Buff]]''': Upgrades attack power by 2% per level up to 20% (Total Cost: 125 NP)
+*'''[[Special Abilities#Stat Enhancements|Cost Down]]''': Reduces cost by 50/75/100¢ per level up to 500/750/1,000¢ (Total Cost: 125 NP)
+
+{{UnitViewer|cat}}
+
+==Existence Elsewhere==
+{{Collapsible}}
+===[[Shoumetsu Toshi Collaboration Event|Shoumetsu Toshi]]===
+Nerd Cat and its evolution appear in Shoumetsu Toshi as a dark type unit introduced in the first collaboration between the two games. It appears in the collaboration gacha during the event duration and can only be obtained through it.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|オタネコ (Otaneko, Cat Otaku)
+! scope="row" style="text-align: center;"|ネコハッカー (Neko Hakkā, Hacker Cat)
+|-
+| colspan="2" |[[File:ST Nerd Cat.png|center|300px]]
+|[[File:ST Hacker Cat.png|center|300px]]
+|-
+! scope="col" colspan="2" style="text-align: center;"|Stats At Level 50
+! scope="col" style="text-align: center;"|Stats At Level 99
+|-
+! scope="col" |Rarity
+|★5
+|★6
+|-
+! scope="col" |Health
+|1,829
+|3,103
+|-
+! scope="col" |Attack
+|1,300
+|1,731
+|-
+! scope="col" |Recovery
+|61
+|99
+|-
+! scope="col" |Single Skill
+| colspan="2" |Halves enemy's defense power,<br>performs a dark attribute attack equal to x5 your attack power
+|-
+! scope="col" |Leadership Skill
+|Increases the the attack power of ally dark attribute souls by 2,<br>increase HP by 1.2
+|Increases the the attack power of ally dark attribute souls by 2.7,<br>increase HP by 1.2
+|}
+
+===[[Nyanko Defence Force]]===
+Nerd Cat and its evolutions appear in Nyanko Defence Force as a Super Rare team member. It can be obtained through the gacha system.
+{| class="article-table" border="1" cellpadding="0" cellspacing="0" style="margin:auto;"
+|-
+! scope="row" colspan="2" style="text-align: center;"|オタネコ (Otaneko, Cat Otaku)
+! scope="row" style="text-align: center;"|ネコハッカー (Neko Hakkā, Hacker Cat)
+! scope="row" style="text-align: center;"|ネコスーパーハッカー (Neko Sūpā Hakkā, Super Hacker Cat)
+|-
+| colspan="2" |[[File:NC08 T1.png|center|200px]]
+|[[File:NC08 T2.png|center|200px]]
+|[[File:NC08 T3.png|center|200px]]
+|-
+! scope="col" colspan="4" style="text-align: center;"|Stats At Level 30
+|-
+! scope="col" colspan="2" |Rarity
+| colspan="2" |Super Rare
+|-
+! scope="col" rowspan="3" |Attack
+! scope="col" |3/3 Zodiac Signs
+| colspan="2" |189
+|-
+! scope="col" |2/3 Zodiac Signs
+| colspan="2" |142
+|-
+! scope="col" |1/3 Zodiac Signs
+| colspan="2" |118
+|-
+! scope="col" colspan="2" |Skill
+| colspan="3" |[[File:Skill 16.jpg|50px]] Item drop rate increases by 20%
+|}
+</div>
+
+{{Gallery|Uni035 f00}}
+
+==Trivia==
+*Before [[The Battle Cats|BCEN]] [[Version 3.0 Update|Ver. 3.0]], Nerd Cat's description was: "Said to be unstoppable... if in his room. Net denizen who is famous for flaming. Uber long distance attacker."
+*Nerd Cat was given the "Long Distance" ability in BCEN [[Version 4.7 Update|Version 4.7]], along with a doubling of its attack power to compensate.
+*Prior to [[Version 4.7 Update|Version 4.7]], Hacker Cat was a part of another [[Cat Combo]] called [[Cybercrimes (Removed Combo)|Cybercrimes]].
+*Prior to [[Version 15.7 Update|Version 15.7]], Nerd Cat's descriptions read as follows:
+<pre>Nerd Cat
+Completely fearless… until leaving his basement.
+Net denizen who is famous for flaming.
+Uber Long Distance attack specialist.</pre>
+<pre>Hacker Cat
+Famous for making Big Red Buttons.
+Graduate from an elite tech university.
+Uber Long Distance attack specialist.</pre>
+<pre>Cyberpunk Cat
+Having mastered virtual space, he's moved on
+to losing his shirt in the cryptocurrency market.
+Long-range area attacks slow non-Metal.</pre>
+*In [[The Battle Cats Unite!]], Nerd Cat's true form goes unused but is present in the game's code. If it were to be deployed, it will run through all of its animations before remaining in its first frame in its idle animation.
+
+==Reference==
+*https://battlecats-db.com/unit/036.html
+
+----
+{{CatNav|Nekoluga|Swimmer Cat}}
+----
+
+{{Cats}}
+[[Category:Cat Units]]
+[[Category:Super Rare Cats]]
+[[Category:Gacha Cats]]
+[[Category:Single Attack Cats]]
+[[Category:Area Attack Cats]]
+[[Category:Cats with different Attack Types]]
+[[Category:Long Distance Cats]]
+[[Category:Cats requiring Catfruits for True Form]]
+[[Category:Anti-Traitless Cats]]
+[[Category:Anti-Red Cats]]
+[[Category:Anti-Dark Cats]]
+[[Category:Anti-Floating Cats]]
+[[Category:Anti-Angel Cats]]
+[[Category:Anti-Alien Cats]]
+[[Category:Anti-Zombie Cats]]
+[[Category:Anti-Relic Cats]]
+[[Category:Anti-Aku Cats]]
+[[Category:Cats with Slow ability]]
+[[Category:Cats with Talents]]
+[[Category:Lethal Strike Resistant Cats]]
+[[Category:Barrier Breaker Cats]]
+[[Category:Cats with Attack Buff Talent]]
+[[Category:Cats with Cost Down Talent]]

@@ -1,0 +1,187 @@
+{{EnemiesAppearing|Doge Dark|Metal Hippoe|Gory Dark|Metal Doge|Metal One Horn|Selena}}
+
+{{Stage Info
+|stage name = [[File:Rc007.png]]
+[[File:Mapsn018 00 a en.png]]
+|stage location = [[File:Mapname018 a en.png]]
+|enemies = {{Magnification|Doge Dark|0
+|Metal Hippoe|0
+|Gory Dark|0
+|Metal Doge|0
+|Metal One Horn|0}}
+|boss = {{Magnification|Selena|0}}
+|restriction = Max # of Deployable Cats: 10<br>
+[[No Continues]]
+|width = 4,500
+|max enemies = 12
+|jpname = Because It's Super Summer Lv.X
+|script = だって超夏 Lv.X
+|romaji = Datte Chō Natsu  Lv. X
+|event = [[July Gauntlet II]]
+|event-chapter = [[July Gauntlet II]]
+|require = Clear [[Never Summer! (Monthly Event)|Never Summer!]]
+}}
+
+==Restrictions==
+Max # of Deployable Cats: 10
+
+==Battleground==
+*The enemy base's HP starts at 275,000 and increases by 25,000 with each stage.
+*5 [[Doge Dark]]s spawn after 6.67 seconds<sup>200f</sup>, delay 5~10 seconds<sup>150f~300f</sup>.
+*1 [[Metal Hippoe]] spawns after 3.33 seconds<sup>100f</sup>.
+*3 [[Gory Dark]]s spawn after 33.33 seconds<sup>1,000f</sup>, delay 40 seconds<sup>1,200f</sup>.
+*1 [[Metal Doge]] spawns after 16.67 seconds<sup>500f</sup>.
+*When the base reaches 99% HP:
+**1 [[Selena]] spawns as the boss.
+**Infinite [[Doge Dark]]s spawn, delay 8~14.67 seconds<sup>240f~440f</sup>.
+**3 [[Metal Doge]]s spawn, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**1 [[Metal One Horn]] spawns.
+
+{| class="article-table" border="0" cellpadding="1" cellspacing="1"
+|-
+! rowspan="2" scope="col" style="text-align: center;" |Not Summer Lv.
+! colspan="6" style="text-align: center;" |Strength magnifications
+! rowspan="2" style="text-align: center;" |Energy Cost
+! colspan="2" scope="col" style="text-align: center;" |Rewards
+|-
+! scope="col" |[[Doge Dark]]
+! scope="col" |[[Metal Hippoe]]
+! scope="col" |[[Gory Dark]]
+! scope="col" |[[Metal One Horn]]
+! scope="col" |[[Metal Doge]]
+! scope="col" |[[Selena]]
+! scope="col" |Treasure
+! scope="col" |Base XP
+|-
+! scope="row" |11
+|400%
+|250%
+|250%
+|100%
+|100%
+|300%
+|110
+|Speed Up +2
+|2,090
+|-
+! scope="row" |12
+|444%
+|256%
+|256%
+|111%
+|122%
+|322%
+|110
+|Catamin [A] +2
+|2,090
+|-
+! scope="row" |13
+|488%
+|262%
+|262%
+|122%
+|144%
+|344%
+|120
+|Cat CPU +2
+|2,280
+|-
+! scope="row" |14
+|532%
+|268%
+|268%
+|133%
+|166%
+|366%
+|120
+|Rich Cat +2
+|2,280
+|-
+! scope="row" |15
+|576%
+|274%
+|274%
+|144%
+|188%
+|388%
+|130
+|Platinum Shard +1
+|2,470
+|-
+! scope="row" |16
+|620%
+|280%
+|280%
+|155%
+|210%
+|410%
+|130
+|Catamin [B] +2
+|2,470
+|-
+! scope="row" |17
+|664%
+|286%
+|286%
+|166%
+|232%
+|432%
+|140
+|Sniper the Cat +2
+|2,660
+|-
+! scope="row" |18
+|708%
+|292%
+|292%
+|177%
+|254%
+|454%
+|140
+|Catamin [C] +2
+|2,660
+|-
+! scope="row" |19
+|752%
+|298%
+|298%
+|188%
+|276%
+|476%
+|150
+|Aku Catfruit Seed +1
+|2,850
+|-
+! scope="row" |20
+|800%
+|300%
+|300%
+|200%
+|300%
+|500%
+|150
+|Rare Ticket +1
+|2,850
+|-
+|}
+
+==Strategy==
+Between Selena's high damage output, the buffed Metal peons, and the 10 cat limit, this is one of the more annoying monthly gauntlets, but it's not impossible. [[Flower Cat (Special Cat)|Bombercat]] with a Freeze Up combo (ideally a Medium combo like [[Gross!!! (Combo)|Gross!!!]]) is essential for this stage, lest your units get kicked in by Selena.
+
+Be sure to bring 1-2 consistent critters like [[Jurassic Cat (Rare Cat)|Catasaurus]], [[Aku Researcher (Rare Cat)|Cat Researcher]], and/or [[Cheerleader Cat (Super Rare Cat)|Waitress/Soba Cat]], alongside strong anti-Dark attackers like [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] (preferably with his Wave talent maxed out), [[Teacher BearCat (Rare Cat)|Assassin BearCat]], and/or Talented [[Cats in a Box (Special Cat)|Heavy Assault C.A.T.]] After removing the initial peons with the aforementioned attackers/critters, lure Selena to the base, permafreeze it with a pair of Bombercats and burst her down with the aforementioned attackers and [[Bahamut Cat (Special Cat)|Awakened Bahamut Cat]]. Timing is essential in this stage; not only do you have to desync your Bombercats whenever Selena gets knocked back, but you have to properly time your critters so that the Metal One Horn and Metal Doges don't chew through your units.
+
+==='''Recommended Ubers'''===
+*[[Hattori Hanzo (Uber Rare Cat)|Immortal Hanzo]] - Not only does Hanzo have a medium Freeze Duration Up combo in the form of [[Like the Wind (Combo)|Like the Wind]], but he also has excellent damage output against Selena and the other Dark peons. Do not that his own freeze may risk disrupting Bombercat's perma-freeze, however.
+*[[Miko Mitama (Uber Rare Cat)|Mitama the Oracle]] - Mitama safely outranges Selena and can reduce the pushing power of her and the Metal enemies via Slowing them, all while not disrupting Bombercat's freeze.
+*[[Night Oracle Rei (Uber Rare Cat)|Heavenly Herald Rei]] - While largely a worse version of Mitama (outside of the occasional Surge attack), she's still a perfectly serviceable substitute for her here.
+
+==Trivia==
+*Prior to [[Version 11.6 Update|Version 11.6]], Not Summer Lv.11~20 had a restriction of "Cat Deploy Cost: Only 4,000¢ or less", rather than a Cat Deploy Limit of 10.
+
+==Reference==
+*https://battlecats-db.com/stage/s24018.html
+
+{{SpecialStages List}}
+[[Category:No Continue Stages]]
+[[Category:Gauntlets]]
+[[Category:Restriction Stages]]

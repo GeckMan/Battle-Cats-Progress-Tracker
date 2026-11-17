@@ -1,0 +1,84 @@
+:''This article is about the enemy. For the Cat Unit, see [[Megurine Luka (Uber Rare Cat)]].''
+'''Megurine Luka''' is a [[:Category:Floating Enemies|Floating]] enemy that appears in the [[Hatsune Miku Collaboration Event]]. She was added in [[Version 10.1 Update|Version 10.1]].
+
+{{Enemy Info
+|name = Megurine Luka
+|image = E 536.png
+|appearance = [[Hatsune Miku Collaboration Event]]
+|money drop = 4,000¢ - 15,800¢
+}}
+
+==Enemy==
+Megurine has low damage, but relatively high health and range and has a chance to [[Warp|warp]] your units back,  as she is more of support for [[Kagamine Rin & Len (Enemy)|Kagamine Rin & Len]] and [[Hatsune Miku (Enemy)|Hatsune Miku]] in the stages she appears in, try to time your units well so they won't be warped, although sometimes her warp can save some of your units from a powerful attack from the other enemies.
+
+==Encounters==
+{{Collapsible}}
+===[[Collaboration Events|Collaboration Stages]]===
+*[[Electric Diva Strikes!]]:
+**[[Electric Diva Strikes!/Song 1~20|1st Song]] (5%)
+**[[Electric Diva Strikes!/Song 1~20|2nd Song]] (15%)
+**[[Electric Diva Strikes!/Song 1~20|3rd Song]] (30%)
+**[[Electric Diva Strikes!/Song 1~20|4th Song]] (60%)
+**[[Electric Diva Strikes!/Song 1~20|5th Song]] (100%)
+**[[Electric Diva Strikes!/Song 1~20|6th Song]] (140%)
+**[[Electric Diva Strikes!/Song 1~20|7th Song]] (180%)
+**[[Electric Diva Strikes!/Song 1~20|8th Song]] (220%)
+**[[Electric Diva Strikes!/Song 1~20|9th Song]] (260%)
+**[[Electric Diva Strikes!/Song 1~20|10th Song]] (300%)
+**[[Electric Diva Strikes!/Song 1~20|11th Song]] (390%)
+**[[Electric Diva Strikes!/Song 1~20|12th Song]] (480%)
+**[[Electric Diva Strikes!/Song 1~20|13th Song]] (570%)
+**[[Electric Diva Strikes!/Song 1~20|14th Song]] (660%)
+**[[Electric Diva Strikes!/Song 1~20|15th Song]] (750%)
+**[[Electric Diva Strikes!/Song 1~20|16th Song]] (800%)
+**[[Electric Diva Strikes!/Song 1~20|17th Song]] (850%)
+**[[Electric Diva Strikes!/Song 1~20|18th Song]] (900%)
+**[[Electric Diva Strikes!/Song 1~20|19th Song]] (950%)
+**[[Electric Diva Strikes!/Song 1~20|Last Song]] (1,000%)
+</div>
+
+==Stats==
+{{Enemy Stats
+|Enemy = Megurine Luka
+|Health = 150000
+|Attack Power = 2000
+|Attack Range = 425
+|Attack Type = Area
+|Time Between Attacks = 214
+|Movement Speed = 18
+|Knockback = 4
+|Foreswing = 75
+|Backswing = 51
+|Ability = {{AbilityIcon|Long Distance}} [[Long Distance]] (Effective range: 150~500)<br>
+{{AbilityIcon|Warp}} 100% chance to [[Warp|warp]] Cat Units back by 1,000 range for 10f <sub>0.33 seconds</sub>
+|Element = Floating
+}}
+
+{{UnitViewer|enemy}}
+
+==Gallery==
+<gallery hideaddbutton="true">
+536 e.png|Megurine Luka's spritesheet
+IdleMegurineWaifu.gif|Megurine Luka's moving animation
+</gallery>
+
+==Trivia==
+*She and [[Yakisoba Face]] are the only collaboration event enemies with the Warp ability.
+**Interestingly enough, they both have the exact same Warp chance, duration and distance.
+
+==Reference==
+*https://battlecats-db.com/enemy/538.html
+
+----
+{{EnemyNav|Evil Emperor Cat|Cow Doge}}
+----
+
+{{Hatsune Miku}}
+{{Enemies}}
+[[Category:Enemy Units]]
+[[Category:Collaboration Event Enemies]]
+[[Category:Floating Enemies]]
+[[Category:Long Distance Enemies]]
+[[Category:Enemies with Warp ability]]
+[[Category:Area Attack Enemies]]
+[[Category:Enemies with unique death animations]]

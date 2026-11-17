@@ -1,0 +1,19 @@
+<onlyinclude>{{#ifeq:{{NAMESPACENUMBER}}|0|{{#invoke:Job|category}}}}<div class="template-job" style="text-align:center;margin: auto; display: flex;flex-direction: column;">
+{| cellpadding="3" cellspacing="0" class="bg-light3" style="border-collapse: separate;margin: auto;{{#if:{{{UltraClass|{{{TrueClass|{{{EvolvedClass|}}}}}}}}}|width:64%|width:50%}};line-height:normal;border-radius:5px;border:3px solid"
+|- {{#if:{{{TrueClass|}}}{{{EvolvedClass|}}}{{{UltraClass|}}}|class="hideme"|}}
+! {{#if:{{{EvolvedClass|}}}|colspan="2"|}} style="{{#invoke:Job|color|{{{Classification}}}}};border-bottom:2px solid var(--color-max-contrast); color:#000"|Class
+|- {{#if:{{{TrueClass|}}}{{{EvolvedClass|}}}{{{UltraClass|}}}||class="hideme"}}
+! colspan="2" style="background-color:#2ECC71;border-bottom:2px solid var(--color-max-contrast); color:#000"|Class
+|-
+! {{#if:{{{TrueClass|}}}{{{EvolvedClass|}}}{{{UltraClass|}}}||class="hideme"}} style="{{#invoke:Job|color|{{{Classification}}}}};border-right:2px solid var(--color-max-contrast); color:#000"|Normal
+| {{#if:{{{EvolvedClass|}}}|colspan="2"|rowspan="2"}} {{#if:{{{EvolvedClass|{{{TrueClass|}}}}}}||rowspan="3"}} align="center"|{{{Classification}}}
+|- {{#if: {{{EvolvedClass|{{{TrueClass|{{{UltraClass|}}}}}}}}}||class="hideme"}}
+! style="{{#invoke:Job|color|{{{EvolvedClass|{{{Classification}}}}}}}};border-top:2px solid var(--color-max-contrast);border-right:2px solid var(--color-max-contrast); color:#000"|Evolved
+| {{#if: {{{EvolvedClass|}}}||class="hideme"}} {{#if:{{{TrueClass|}}}||rowspan="2"}} {{#if:{{{TrueClass|{{{UltraClass|}}}}}}||rowspan="3"}} align="center" style="border-top:2px solid var(--color-max-contrast)"|{{{EvolvedClass}}}
+|- {{#if:{{{TrueClass|{{{EvolvedClass|}}}}}}{{{UltraClass|}}}||class="hideme"}}
+! style="{{#invoke:Job|color|{{{TrueClass|{{{EvolvedClass|{{{Classification}}}}}}}}}}};border-top:2px solid var(--color-max-contrast);border-right:2px solid var(--color-max-contrast); color:#000"|True
+| {{#if:{{{TrueClass|}}}||class="hideme"}} {{#if:{{{UltraClass|}}}||rowspan="2"}} align="center" style="border-top:2px solid var(--color-max-contrast)"|{{{TrueClass}}}
+|- {{#if:{{{UltraClass|{{{TrueClass|}}}}}}{{{UltraClass|{{{EvolvedClass|}}}}}}||class="hideme"}}
+! style="{{#invoke:Job|color|{{{UltraClass|{{{TrueClass|{{{EvolvedClass|}}}}}}}}}}};border-top:2px solid var(--color-max-contrast);border-right:2px solid var(--color-max-contrast); color:#000"|Ultra
+| {{#if:{{{UltraClass|}}}||class="hideme"}} align="center" style="border-top:2px solid var(--color-max-contrast)"|{{{UltraClass}}}
+|}'''In order to classify Cat Units, see [[Classification]]'''<br>'''Classification does not include [[Talents]]'''</div></onlyinclude>{{/doc}}
