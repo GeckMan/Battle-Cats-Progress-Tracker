@@ -1,0 +1,119 @@
+---	Backend of [[Template:Stamps]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Stamps/data (parent module)
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local stamps = mw.loadData('Module:Stamps/data')
+
+---	Display the mobile list view for day provided.
+--	@param {number} day
+--	@param {string} desc
+--	@return {mw.html} List item
+function p.list(day, desc)
+	return mw.html.create("li")
+		:wikitext(("Day %d: %s"):format(day, desc))
+end
+
+---	Construct the box for desktop view
+--	@param {number} day
+--	@param {StampData} item
+--	@param {string} desc
+--	@return {mw.html} Desktop view box div
+function p.box(day, item, desc)
+	if stamps[item] then
+		item = stamps[item]
+		item = {
+			image = ('Stamp reward %s.png'):format(item[2]),
+			link = item[3]
+		}
+	else
+		item = {image = 'Placeholder.png', link = ''}
+	end
+
+	local div = mw.html.create('div')
+		:wikitext('Day ' .. day)
+		:wikitext(('[[File:%s|link=%s|%s]]'):format(
+			item.image, item.link, desc
+		))
+	return div
+end
+
+function p._main(args)
+	local desktop = mw.html.create('div')
+		:addClass('login-stamps')
+		:addClass('nomobile')
+	local mobileList = mw.html.create('ul')
+
+	local day = 1
+	local count = 1
+	while true do
+		local item = args[count]
+		local desc
+
+		if args.nodesc then
+			desc = ''
+		else
+			count = count + 1
+			desc = args[count]
+		end
+
+		if not item or not desc then break end
+		mobileList:node(p.list(day, desc))
+		desktop:node(p.box(day, item, desc))
+		count = count + 1
+		day = day + 1
+	end
+
+	local mobile = mw.html.create('div')
+		:addClass('mobileonly')
+		:node(mobileList)
+
+	return tostring(desktop) .. tostring(mobile)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+---	Return a demonstration of the module being used in action. If `args[1]` is
+--	`code` then wrap in `pre` tags.
+--	@param {Frame} frame
+function p.demo(frame)
+	local names = {}
+
+	local reader = require('Module:CSV').from_page('Module:Stamps.csv')
+	-- remove headers
+	reader()
+
+	for line in reader do
+		if line[1] ~= "" then
+			table.insert(names, line[1])
+		else
+			table.insert(names, line[2])
+		end
+	end
+	table.insert(names, "Any invalid value")
+	table.insert(names, "nodesc=true")
+
+	local call = ("{{Stamps|%s}}"):format(table.concat(names, "|"))
+
+	if frame.args[1] == "code" then
+		return ("<pre>%s</pre>"):format(call)
+	else
+		return frame:preprocess(call)
+	end
+end
+
+return p
+
+--[=[
+a = mw.getCurrentFrame()
+a.args[1] = "code"
+a.args[1] = nil
+print(p.demo(a))
+
+print(p._main{"Treasure Radar", "Radars + 56"})
+print(p._main{"Treasure Radar", "Radars + 56", nodesc=true})
+]=]

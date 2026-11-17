@@ -1,0 +1,869 @@
+---	Module backend for Cat Stats 0.2.
+--
+--	@module stats
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local formatnum = require('Module:Formatnum')
+local yesno = require('Module:Yesno')
+
+local awesome_data = {}
+awesome_data.positions = {
+	start = "start_DO_NOT_USE_THIS_AS_A_LITERAL",
+	middle = "middle_DO_NOT_USE_THIS_AS_A_LITERAL",
+	last = "end_DO_NOT_USE_THIS_AS_A_LITERAL"
+}
+
+awesome_data.form_names = {
+	normal = "Normal",
+	evolved = "Evolved",
+	true_form = "True",
+	ultra = "Ultra"
+}
+
+awesome_data.headings = {
+	hp = "Health",
+	ap = "Attack Power",
+	range = "Attack Range",
+	freq = "Attack Frequency",
+	speed = "Movement Speed",
+	kb = "Knockback",
+	anim = "Attack Animation",
+	recharge = "Recharge Time"
+}
+awesome_data.bottom_headings = {
+	max = "Lv.MAX",
+	atktype = "Attack Type",
+	abil = "Special Abilities"
+}
+
+awesome_data.validation_params = {
+	["validation"] = true,
+	["val-Normal-MaxHP"] = true,
+	["val-Normal-MaxAttack"] = true,
+}
+
+awesome_data.param_data = {
+	params = {
+		"Name",
+		"Base HP",
+		"Base AP",
+		"Range",
+		"Foreswing",
+		"Attack Cooldown",
+		"Attack Length",
+		"Speed",
+		"KB",
+		"Cost",
+		"Recharge",
+		"Attack Type",
+		"Abilities",
+		"Stats Level",
+	},
+	defaults = {
+		["Stats Level"] = "30",
+		["Ultra Stats Level"] = "60",
+	},
+	others = {
+		"Scaling",
+		"Lv.MAX"
+	}
+}
+
+--[[
+	Set of all valid parameters for the template.
+
+	@local
+	@table possible_params
+	@field {table} form Form-specific parameters
+	@field {table} all All-form parameters
+	@field {table} validation Validation parameters
+--]]
+
+---	Get all possible parameter names.
+--	@return {possible_params}
+function p.get_possible_params()
+	local possible_params = {
+		form = {},
+		all = {},
+		validation = {},
+	}
+	-- probably should be extracted out to a data module along with the rest of
+	-- the param data
+	for _, form in pairs(awesome_data.form_names) do
+		for _, name in ipairs(awesome_data.param_data.params) do
+			local n = form .. " " .. name
+			possible_params.form[n] = true
+		end
+		for _, name in pairs(awesome_data.headings) do
+			local val = ("val-%s-%s"):format(form, name)
+			possible_params.validation[val] = true
+		end
+	end
+	for _, name in ipairs(awesome_data.param_data.others) do
+		possible_params.all[name] = true
+	end
+
+	return possible_params
+end
+
+awesome_data.possible = p.get_possible_params()
+
+-- Due to Docbunto limitations have to use another character (`&nbsp;`, ` `)
+-- instead of space
+--[[
+	Raw form as given in template parameters.
+
+	All numbers should be formatted as whole numbers with no separators
+	(commas/underscores etc.) unless otherwise stated.
+	@local
+	@table raw_form
+	@field {string} "Name" Name of unit.
+	@field {string} "Base HP" Base HP (level 1, no treasures) of unit, numeric.
+	@field {string} "Base AP" Base attack. Should be a comma-separated list.
+	(e.g. `"1680"` for a single hit, or `"1680,1680,1680"` for three-hit
+	multihit) of the damage for each attack.
+	@field {string} "Range" Standing range; LD/Omni should only go in the
+	abilities section.
+	@field {string} "Foreswing" Time between attack starting and hits
+	connecting, unit is frames. If unit has multihit, use a comma-separated list
+	(e.g. `"5,10,20"` for Awakened Bahamut).
+	@field {string} "Attack Cooldown" See Attack Timings page.
+	@field {string} "Attack Length" Attack animation length, see Attack Timings
+	page.
+	@field {string} "Speed" Unit speed.
+	@field {string} "KB" Amount of knockbacks before death.
+	@field {string} "Cost" EoC chapter 1 cost of character.
+	@field {string} "Recharge" Maximum recharge time of unit in frames.
+	@field {string} "Attack Type" Single or Area Attack.
+	@field {string} "Abilities" Unit's abilities.
+	@field[opt] {string} "Stats Level" Level that stats should be shown at.
+	Default is 30, except for Ultra Forms where it is 60. You can put + levels
+	in (e.g. 1+30).
+--]]
+
+-- Again, Docbunto won't work properly with the array notation so just do it
+-- manually.
+--[[
+	Form with more appropriate representation than raw strings.
+	@local
+	@table form
+	@field {string} name Unit name.
+	@field {number} hp Base HP.
+	@field ap Base AP of each hit. (`number[]`)
+	@field {number} range
+	@field fore Foreswing of each hit e.g. `{5, 10, 20}`. (`number[]`)
+	@field {number} cooldown Attack cooldown.
+	@field {number} length Attack animation length.
+	@field {number} speed
+	@field {number} kb
+	@field {number} cost EoC chapter 1 cost.
+	@field recharge Max, min. (`[number, number]`)
+	@field {string} attack_type
+	@field {string} abilities
+	@field {string} str_level Level as string e.g. `"20+90"`.
+	@field {number} num_level Level as number e.g. `110`.
+	@field {string} position Position in table.
+--]]
+
+--[[
+	Data that applies to all forms.
+	@local
+	@table all
+	@field {scaling} scaling How the unit's stats scale with levels.
+	@field {string} max_level
+--]]
+
+---	Get icon for the attack type.
+--	@param {string} attack_type
+--	@return {string}
+--	@error {string} Attack type is not `"Single"` or `"Area"`.
+function p.attack_type_icon(attack_type)
+	if not (attack_type == "Single" or attack_type == "Area") then
+		return error(mw.dumpObject(attack_type) .. " is not recognised as a valid attack type")
+	end
+
+	local format = "[[File:%s Attack.png|link=Special Abilities#%s Attack|%s Attack]]"
+	return format:format(attack_type, attack_type, attack_type)
+end
+
+---	Parse form data into @{form} representation. Also checks that all data is
+--	valid.
+--	@param {string} form_name Name (`"Normal"`, `"Evolved"` etc.)
+--	@param {raw_form} data Form data
+--	@return {form}
+--	@error {string} Missing parameter
+--	@error {string} Non-numeric input where numeric input expected.
+function p.parse_form(form_name, data)
+	-- construct the list of tables
+	-- {...params, position, parsed: {level, scaling}}
+	-- utility data: positions, switches (area/single), perhaps extra lines
+	-- need something different for multihit, maybe just 1680,1680,1680
+	local defaults = awesome_data.param_data.defaults
+	for _, param_name in ipairs(awesome_data.param_data.params) do
+		if not data[param_name] then
+			local full = form_name .. " " .. param_name
+			data[param_name] = defaults[full] or
+				defaults[param_name] or
+				error(('Parameter "%s" is missing'):format(full))
+		end
+	end
+
+	local function parse_int(param_name)
+		return tonumber(data[param_name])
+			or error(('"%s %s" is not numeric'):format(form_name, param_name))
+	end
+	local function parse_int_multi(param_name)
+		local t = {}
+		for value in mw.text.gsplit(data[param_name], ',') do
+			local n = tonumber(value)
+			if not n then
+				local format = '"%s %s" is not a comma-separated list of numbers'
+				error(format:format(form_name, param_name))
+			end
+			table.insert(t, n)
+		end
+		return t
+	end
+
+	local parsed = {}
+	parsed.name = data["Name"]
+	parsed.hp = parse_int("Base HP")
+	parsed.ap = parse_int_multi("Base AP")
+	parsed.range = parse_int("Range")
+	parsed.fore = parse_int_multi("Foreswing")
+	parsed.cooldown = parse_int("Attack Cooldown")
+	parsed.length = parse_int("Attack Length")
+	parsed.speed = parse_int("Speed")
+	parsed.kb = parse_int("KB")
+	parsed.cost = parse_int("Cost")
+
+	local recharge = parse_int("Recharge")
+	local MAX_RECHARGE_DISCOUNT = 264
+	local MIN_RECHARGE = 60
+	parsed.recharge = { recharge, math.max(recharge - MAX_RECHARGE_DISCOUNT, MIN_RECHARGE) }
+
+	parsed.attack_type = data["Attack Type"]
+	parsed.abilities = data["Abilities"]:gsub('<br>%s*', '<br>')
+	-- <br> followed by newline creates a line break, this fixes that problem
+
+	local level = data["Stats Level"]
+	parsed.str_level = level
+	local nat, plus = level:match('^(%d+)%+(%d+)$')
+	if nat then
+		parsed.num_level = tonumber(nat) + tonumber(plus)
+	else
+		parsed.num_level = parse_int("Stats Level")
+	end
+
+	return parsed
+end
+
+-- idk if this will work
+--[[
+	An array of 20 numbers (`int[20]`).
+	@local
+	@type scaling
+--]]
+
+---	Parse scaling format string into numbers.
+--	@param {string} scaling Scaling, as specified in format.
+--	@return {scaling}
+--	@error {string} Invalid number.
+--	@error {string} Scaling is not 20 numbers long.
+function p.parse_scaling_format(scaling)
+	local t = {}
+	scaling = scaling:gsub("(%d+)x(%d+)", function(scale, repeats)
+		local t2 = {}
+		local s = tonumber(scale)
+		for _ = 1, tonumber(repeats) do
+			table.insert(t2, s)
+		end
+		return table.concat(t2, ',')
+	end)
+	for value in mw.text.gsplit(scaling, ',') do
+		local n = tonumber(value)
+		if not n then
+			local format = 'Error when parsing scaling: "%s" is not a valid number'
+			error(format:format(value))
+		end
+		table.insert(t, n)
+	end
+	assert(#t == 20, "Scaling should be 20 numbers long")
+	return t
+end
+
+---	Workhorse function for `get_stat_at_level` function. Gets the `x` in
+--	<math>\Bigl\lfloor \operatorname{round}\left(\text{Initial} \times x\right) \times 2.5 \Bigr\rfloor</math>
+--	@param {scaling} scaling
+--	@param {number} level
+--	@return {number}
+--	@error {string} Level is too high to get the actual stats.
+function p.get_stat_multiplier_at_level(scaling, level)
+	local i = 1
+	local total_multiplier = 1.0
+
+	if level <= 10 then return total_multiplier + ((level - 1) * scaling[i] / 100.0) end
+	total_multiplier = total_multiplier + 9 * scaling[i] / 100.0
+	level = level - 10
+	i = i + 1
+
+	local function try()
+		if level <= 10 then return total_multiplier + (level * scaling[i] / 100.0) end
+		total_multiplier = total_multiplier + 10 * scaling[i] / 100.0
+		level = level - 10
+		i = i + 1
+		return false
+	end
+
+	local x
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+	x = try(); if x then return x end
+
+	error("Cannot get the stats of a unit at level " .. level)
+end
+
+---	Get the stat at the level specified.
+--	@param {scaling} scaling
+--	@param {number} initial The initial value of the stat.
+--	@param {number} level Level to get the stat's value at.
+function p.get_stat_at_level(scaling, initial, level)
+	local raw = p.get_stat_multiplier_at_level(scaling, level) * initial
+	local without_treasure = math.floor(raw + 0.5)
+	-- rounding because Lua doesn't have that
+	return math.floor(25 * without_treasure / 10)
+end
+
+--[[
+	@local
+	@table table_list
+	@field {all} all
+	@field forms ([@{string} -> @{form}])
+	@field validation Validation parameters.
+--]]
+
+---	Get the table list.
+--	@param {table} args Frame args.
+--	@return {table_list}
+--	@error {string} Validation incomplete.
+function p.get_table_list(args)
+	local is_validated = yesno(args.validation or false)
+	if is_validated == nil then
+		error(args.validation .. ' is not recognised as a value for validation.')
+		-- only occurs if `args.validation` is provided but is not recognised by
+		-- `yesno`
+	end
+
+	local all = {}
+	local raw_forms = {}
+	local validation = is_validated and {} or nil
+
+	for param_name, param_value in pairs(args) do
+		if awesome_data.possible.form[param_name] then
+			local form, name = param_name:match("(%w+) (.*)")
+			if not raw_forms[form] then
+				raw_forms[form] = {}
+			end
+			raw_forms[form][name] = param_value
+		elseif awesome_data.possible.all[param_name] then
+			all[param_name] = param_value
+		elseif is_validated and awesome_data.possible.validation[param_name] then
+			local form, name = param_name:match("val%-(%w+)%-(.*)")
+			if not validation[form] then
+				validation[form] = {}
+			end
+			validation[form][name] = param_value
+		elseif is_validated and awesome_data.validation_params[param_name] then
+			local name = param_name:match("val%-Normal%-(.*)")
+			if name then
+				if not validation.all then
+					validation.all = {}
+				end
+				validation.all[name] = param_value
+			end
+		else
+			error(mw.dumpObject(param_name) .. " is not recognised as a valid parameter")
+		end
+	end
+
+	local forms = {}
+	for name, data in pairs(raw_forms) do
+		forms[name] = p.parse_form(name, data)
+	end
+
+	local normal = awesome_data.form_names.normal
+	local evolved = awesome_data.form_names.evolved
+	local tf = awesome_data.form_names.true_form
+	local ultra = awesome_data.form_names.ultra
+
+	assert(forms[normal] and forms[evolved], "Both normal and evolved forms are required")
+	-- If only normal was necessary, then the max level would be hidden in the
+	-- template if you only had 1 form. Therefore, might as well require having
+	-- two forms.
+	forms[normal].position = awesome_data.positions.start
+	forms[evolved].position = awesome_data.positions.last
+	if forms[tf] then
+		forms[evolved].position = awesome_data.positions.middle
+		forms[tf].position = awesome_data.positions.last
+	end
+	if forms[ultra] then
+		assert(forms[tf], "Ultra form found but missing true form")
+		forms[tf].position = awesome_data.positions.middle
+		forms[ultra].position = awesome_data.positions.last
+	end
+
+	local parsed_all = {}
+	parsed_all.scaling = p.parse_scaling_format(all["Scaling"])
+	parsed_all.max_level = all["Lv.MAX"]
+
+	return { all = parsed_all, forms = forms, validation = validation }
+end
+
+--[[
+	Represents a heading-value pair of table cells.
+	@local
+	@table table_cell
+	@field {string} heading Cell heading.
+	@field {string} content Cell content.
+	@field attrs Attributes ([@{string} -> @{string}; optional])
+	@field th_attrs Attributes for th elements ([@{string} -> @{string};
+	optional])
+	@field td_attrs Attributes for td elements ([@{string} -> @{string};
+	optional])
+--]]
+
+---	Get the stats on the top row (or second if you include the name) of the
+--	form's cell area.
+--	@param {all} all
+--	@param {form} form
+--	@return (`table_cell[]`)
+function p.get_top_stats(all, form)
+	local top_stats = {}
+	local attrs = { style = "width: 120px;" }
+
+	local attack_cycle = math.max(form.length, form.fore[#form.fore] + form.cooldown)
+
+	if form.position == awesome_data.positions.start then
+		local hp = ("%s HP"):format(formatnum.formatInt(form.hp))
+
+		local ap = 0
+		for _, n in ipairs(form.ap) do
+			ap = ap + n
+		end
+		local dps = ap * 30 / attack_cycle
+		local attack = ("%s damage<br>(%s DPS)"):format(formatnum.formatInt(ap), formatnum.formatFloat(dps, 2))
+
+		table.insert(top_stats, { heading = awesome_data.headings.hp, content = hp, attrs = attrs })
+		table.insert(top_stats, { heading = awesome_data.headings.ap, content = attack, attrs = attrs })
+	else
+		local hp = p.get_stat_at_level(all.scaling, form.hp, form.num_level)
+		local health = ("%s HP"):format(formatnum.formatInt(hp))
+
+		local ap = 0
+		for _, n in ipairs(form.ap) do
+			ap = ap + p.get_stat_at_level(all.scaling, n, form.num_level)
+		end
+		local dps = ap * 30 / attack_cycle
+		local attack = ("%s damage<br>(%s DPS)"):format(formatnum.formatInt(ap), formatnum.formatFloat(dps, 2))
+
+		table.insert(top_stats,
+			{ heading = ("%s (Lv.%s)"):format(awesome_data.headings.hp, form.str_level), content = health, attrs = attrs }
+		)
+		table.insert(top_stats,
+			{ heading = ("%s (Lv.%s)"):format(awesome_data.headings.ap, form.str_level), content = attack, attrs = attrs }
+		)
+	end
+
+	table.insert(top_stats,
+		{ heading = awesome_data.headings.range, content = formatnum.formatInt(form.range), attrs = attrs })
+
+	local frequency = ("%sf <sub>%s %s</sub>"):format(
+		formatnum.formatInt(attack_cycle),
+		formatnum.formatFloat(attack_cycle / 30, 2),
+		attack_cycle == 30 and "second" or "seconds"
+	)
+	table.insert(top_stats, { heading = awesome_data.headings.freq, content = frequency, attrs = attrs })
+	table.insert(top_stats,
+		{ heading = awesome_data.headings.speed, content = formatnum.formatInt(form.speed), attrs = attrs })
+
+	local kb = ("%s %s"):format(formatnum.formatInt(form.kb), form.kb == 1 and "time" or "times")
+	table.insert(top_stats, { heading = awesome_data.headings.kb, content = kb, attrs = attrs })
+
+	local fore = form.fore[1]
+	local back = form.length - form.fore[#form.fore]
+	local animation = ("%sf <sup>%ss</sup><br>(%sf <sup>%ss</sup> backswing)"):format(
+		formatnum.formatInt(fore),
+		formatnum.formatFloat(fore / 30, 2),
+		formatnum.formatInt(back),
+		formatnum.formatFloat(back / 30, 2)
+	)
+	table.insert(top_stats, { heading = awesome_data.headings.anim, content = animation, attrs = attrs })
+
+	local recharge_max = formatnum.formatFloat(form.recharge[1] / 30, 2)
+	local recharge_min = formatnum.formatFloat(form.recharge[2] / 30, 2)
+	local recharge = ("%s ~ %s seconds"):format(recharge_max, recharge_min)
+	table.insert(top_stats, { heading = awesome_data.headings.recharge, content = recharge, attrs = attrs })
+	-- no need to consider plural as min is 2 seconds
+
+	return top_stats
+end
+
+---	Get the stats on the bottom row of the form's cell area.
+--	@param {all} all
+--	@param {form} form
+--	@return (`table_cell[]`)
+function p.get_bottom_stats(all, form)
+	local bottom_stats = {}
+
+	if form.position == awesome_data.positions.start then
+		local attack_cycle = math.max(form.length, form.fore[#form.fore] + form.cooldown)
+		local hp = p.get_stat_at_level(all.scaling, form.hp, form.num_level)
+		local health = ("%s HP"):format(formatnum.formatInt(hp))
+
+		local ap = 0
+		for _, n in ipairs(form.ap) do
+			ap = ap + p.get_stat_at_level(all.scaling, n, form.num_level)
+		end
+		local dps = ap * 30 / attack_cycle
+		local attack = ("%s damage<br>(%s DPS)"):format(formatnum.formatInt(ap), formatnum.formatFloat(dps, 2))
+
+		table.insert(bottom_stats,
+			{ heading = ("%s (Lv.%s)"):format(awesome_data.headings.hp, form.str_level), content = health })
+		table.insert(bottom_stats,
+			{ heading = ("%s (Lv.%s)"):format(awesome_data.headings.ap, form.str_level), content = attack })
+	end
+
+	if form.position == awesome_data.positions.last then
+		table.insert(bottom_stats, { heading = awesome_data.bottom_headings.max, content = all.max_level })
+	end
+	table.insert(bottom_stats,
+		{ heading = awesome_data.bottom_headings.atktype, content = p.attack_type_icon(form.attack_type) })
+
+	table.insert(bottom_stats, {
+		heading = awesome_data.bottom_headings.abil,
+		content = form.abilities,
+		attrs = { colspan = "7" },
+		td_attrs = { style = "text-align: left;" }
+	})
+
+	return bottom_stats
+end
+
+---	Add stats row to the table body.
+--	@param {mw.html} body
+--	@param row_items (`table_cell[]`)
+function p.add_stats_row(body, row_items)
+	local row1 = body:tag('tr'):addClass('bg-light4')
+	local row2 = body:tag('tr'):addClass('bg-light3')
+	for _, item in ipairs(row_items) do
+		row1
+			:tag('th')
+			:wikitext(item.heading)
+			:cssText('padding: 0.5em 0.25em')
+			-- move to templatestyles
+			:attr(item.attrs or {})
+			:attr(item.th_attrs or {})
+		row2
+			:tag('td')
+			:wikitext(item.content)
+			:attr(item.attrs or {})
+			:attr(item.td_attrs or {})
+	end
+end
+
+---	Add standard form to table.
+--	@param {mw.html} body Table body.
+--	@param {table_list} table_list
+--	@param {string} form_name
+--	@note Also checks validation.
+function p.add_form_to_table(body, table_list, form_name)
+	local all = table_list.all
+	local form = table_list.forms[form_name]
+	body:tag('tr'):tag('th')
+		:cssText('padding: 0.5em 0.25em; color: white; background-color: #FF6811;border: solid #000;border-width: 1px 0;')
+		:attr('colspan', '8')
+		:tag('b'):wikitext(form.name)
+
+	local top = p.get_top_stats(all, form)
+	if table_list.validation then
+		local validation = table_list.validation[form_name] or error("Validation not found for form " .. form_name)
+		for code, heading in pairs(awesome_data.headings) do
+			local new_heading = heading
+			if form.position ~= awesome_data.positions.start and (code == "hp" or code == "ap") then
+				new_heading = ("%s (Lv.%s)"):format(heading, form.str_level)
+			end
+
+			local checked = false
+			for _, entry in ipairs(top) do
+				local th, td = entry.heading, entry.content
+				if new_heading == th then
+					assert(not checked, "%s form's %s is validated multiple times")
+					-- is this even possible?
+					if td ~= validation[heading] then
+						local fmt = "Validation failed for parameter %s: %s (calculated) ~= %s (given)"
+						local msg = fmt:format(
+							mw.dumpObject(new_heading),
+							mw.dumpObject(td),
+							mw.dumpObject(validation[heading])
+						)
+						error(msg)
+					end
+					checked = true
+				end
+			end
+			if not checked then
+				error(("%s form's %s is never validated"):format(form_name, mw.dumpObject(new_heading)))
+			end
+		end
+	end
+
+	local bottom = p.get_bottom_stats(all, form)
+	if table_list.validation and form.position == awesome_data.positions.start then
+		local val_all = table_list.validation.all
+
+		local hp_param = "MaxHP"
+		local hp_heading = ("%s (Lv.%s)"):format(awesome_data.headings.hp, form.str_level)
+		if bottom[1].heading ~= hp_heading then
+			local fmt = "Internal module error: hp heading is incorrect. Should have been %s, found %s"
+			error(fmt:format(mw.dumpObject(hp_heading), mw.dumpObject(bottom[1].heading)))
+		end
+		if bottom[1].content ~= val_all[hp_param] then
+			-- ("val-Normal-%s"):format("MaxHP")
+			local fmt = "Validation for %s was incorrect: parameter given was %s, parameter calculated was %s"
+			local msg = fmt:format(
+				mw.dumpObject(hp_param),
+				mw.dumpObject(val_all[hp_param]),
+				mw.dumpObject(bottom[1].content)
+			)
+			error(msg)
+		end
+
+		local ap_param = "MaxAttack"
+		local ap_heading = ("%s (Lv.%s)"):format(awesome_data.headings.ap, form.str_level)
+		if bottom[2].heading ~= ap_heading then
+			local fmt = "Internal module error: ap heading is incorrect. Should have been %s, found %s"
+			error(fmt:format(mw.dumpObject(ap_heading), mw.dumpObject(bottom[2].heading)))
+		end
+		if bottom[2].content ~= val_all[ap_param] then
+			local fmt = "Validation for %s was incorrect: parameter given was %s, parameter calculated was %s"
+			local msg = fmt:format(
+				mw.dumpObject(ap_param),
+				mw.dumpObject(val_all[ap_param]),
+				mw.dumpObject(bottom[2].content)
+			)
+			error(msg)
+		end
+	end
+
+	-- local top_attrs = { style = "width:120px;" }
+	-- local attr = {colspan = 8}
+	p.add_stats_row(body, top)
+	p.add_stats_row(body, bottom)
+
+	return body
+end
+
+---	Get the standard table.
+--	@param {table_list} table_list
+--	@return {mw.html}
+function p.get_table(table_list)
+	local container = mw.html.create('div')
+		:addClass('overflow-shadow')
+
+	local body = container:tag('table')
+		:cssText(
+			'width: 100%; line-height: normal; border-radius:5px; border: 2px solid #000; background-color: #000; text-align: center;'
+		)
+		:attr({ cellpadding = "3", cellspacing = "1" })
+
+	local f
+	f = awesome_data.form_names.normal
+	if table_list.forms[f] then p.add_form_to_table(body, table_list, f) end
+	f = awesome_data.form_names.evolved
+	if table_list.forms[f] then p.add_form_to_table(body, table_list, f) end
+	f = awesome_data.form_names.true_form
+	if table_list.forms[f] then p.add_form_to_table(body, table_list, f) end
+	f = awesome_data.form_names.ultra
+	if table_list.forms[f] then p.add_form_to_table(body, table_list, f) end
+
+	return container
+end
+
+---	Helper function for `add_detailed_form_to_table`.
+--	@param {string} tag HTML tag to use for table cell.
+--	@param {string} cell_type Class to use for the cell.
+--	@param {string} content Wikitext to place in cell.
+--	@param[opt] {number} colspan `colspan` of cell.
+--	@param[opt] {number} rowspan `rowspan` of cell.
+local function get_cell(tag, cell_type, content, colspan, rowspan)
+	return mw.html.create(tag)
+		:addClass('stats-table-cell')
+		:addClass(('cell-%s'):format(cell_type))
+		:wikitext(content)
+		:attr({ colspan = colspan, rowspan = rowspan })
+end
+
+---	I wonder what this function does.
+--	@param {table_list} table_list
+--	@param {string} form_name
+function p.add_detailed_form_to_table(container, table_list, form_name)
+	local label = 'label'
+	local value = 'value'
+
+	local all = table_list.all
+	local form = table_list.forms[form_name]
+
+	local function get_td(cell_type, content, colspan, rowspan)
+		return get_cell('td', cell_type, content, colspan, rowspan)
+	end
+	local function get_th(cell_type, content, colspan, rowspan)
+		return get_cell('th', cell_type, content, colspan, rowspan)
+	end
+
+	local attack_cycle = math.max(form.length, form.fore[#form.fore] + form.cooldown)
+	container:tag('tr')
+		:node(get_th('name', form.name, 8))
+
+	container:tag('tr')
+		:node(get_th(label, 'Level'))
+		:node(get_th(label, 'HP'))
+		:node(get_th(label, 'AP'))
+		:node(get_th(label, 'DPS'))
+		:node(get_th(label, 'Attack Cycle', 2))
+		:node(get_td(value, attack_cycle, 2))
+
+	local ap = 0
+	for _, n in ipairs(form.ap) do
+		ap = ap + n
+	end
+	container:tag('tr')
+		:node(get_th(label, 'Base'))
+		:node(get_td(value, formatnum.formatInt(form.hp)))
+		:node(get_td(value, formatnum.formatInt(ap)))
+		:node(get_td(value, formatnum.formatFloat(ap * 30 / attack_cycle, 2)))
+		:node(get_th(label, 'Foreswing', 1, 2))
+		:node(get_td(value, table.concat(form.fore, '/'), 1, 2))
+		:node(get_th(label, 'Backswing'))
+		:node(get_td(value, form.length - form.fore[#form.fore]))
+
+	local hp_at_level = p.get_stat_at_level(all.scaling, form.hp, form.num_level)
+	local ap_at_level = 0
+	for _, n in ipairs(form.ap) do
+		ap_at_level = ap_at_level + p.get_stat_at_level(all.scaling, n, form.num_level)
+	end
+	local dps_at_level = ap_at_level * 30 / attack_cycle
+
+	container:tag('tr')
+		:node(get_th(label, form.str_level))
+		:node(get_td(value, formatnum.formatInt(hp_at_level)))
+		:node(get_td(value, formatnum.formatInt(ap_at_level)))
+		:node(get_td(value, formatnum.formatFloat(dps_at_level, 2)))
+		:node(get_th(label, 'Attack CD'))
+		:node(get_td(value, form.cooldown))
+
+	container:tag('tr')
+		:node(get_th(label, 'Attack Type'))
+		:node(get_th(label, 'Knockbacks'))
+		:node(get_th(label, 'Range'))
+		:node(get_th(label, 'Speed'))
+		:node(get_th(label, 'Recharge', 2))
+		:node(get_th(label, 'Cost', 2))
+
+	local costs = ("%d/%d/%d¢"):format(form.cost, math.floor(form.cost * 15 / 10), form.cost * 2)
+	-- use math.floor because I'm paranoid
+	local recharge_max = formatnum.formatFloat(form.recharge[1] / 30, 2)
+	local recharge_min = formatnum.formatFloat(form.recharge[2] / 30, 2)
+	local recharge = ("%s ~ %s seconds"):format(recharge_max, recharge_min)
+	container:tag('tr')
+		:node(get_td(value, form.attack_type))
+		:node(get_td(value, formatnum.formatInt(form.kb)))
+		:node(get_td(value, formatnum.formatInt(form.range)))
+		:node(get_td(value, formatnum.formatInt(form.speed)))
+		:node(get_td(value, recharge, 2))
+		:node(get_td(value, costs, 2))
+
+	local is_last = form.position == awesome_data.positions.last
+	local bottomLabel = container:tag('tr')
+		:node(get_th(label, 'Abilities', is_last and 7 or 8))
+	if is_last then
+		bottomLabel:node(get_th('label max-level', 'Lv.MAX'))
+	end
+
+	local bottomValue = container:tag('tr')
+		:addClass('final-row')
+		:node(get_td('value abilities', form.abilities, is_last and 7 or 8))
+	if is_last then
+		bottomValue:node(get_td('value max-level', all.max_level))
+	end
+end
+
+---	Get detailed cat stats.
+--	@param {table_list} table_list
+--	@return {mw.html}
+function p.detailed(table_list)
+	local container = mw.html.create('table')
+		:addClass('detailed-cat-stats-table')
+		:attr({ cellpadding = "3", cellspacing = "0" })
+
+	local f
+	f = awesome_data.form_names.normal
+	if table_list.forms[f] then p.add_detailed_form_to_table(container, table_list, f) end
+	f = awesome_data.form_names.evolved
+	if table_list.forms[f] then p.add_detailed_form_to_table(container, table_list, f) end
+	f = awesome_data.form_names.true_form
+	if table_list.forms[f] then p.add_detailed_form_to_table(container, table_list, f) end
+	f = awesome_data.form_names.ultra
+	if table_list.forms[f] then p.add_detailed_form_to_table(container, table_list, f) end
+
+	return container
+end
+
+---	Main function executor.
+--	@param {table} args Frame args.
+--	@return {mw.html} Rendered tabber.
+function p._main(args)
+	local table_list = p.get_table_list(args)
+	local standard = tostring(p.get_table(table_list))
+	local detailed = tostring(p.detailed(table_list))
+
+	return mw.ext.tabber.render {
+		{ label = 'Standard', content = standard },
+		{ label = 'Detailed', content = detailed }
+	}
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+
+b = getmetatable(a)
+b.__tostring = nil
+local a = "..."
+mw.log(mw.getCurrentFrame():preprocess(a))
+
+local scale = {20,20,20,20,20,20,10,10,10,10,10,10,10,10,10,10,10,10,10,10}
+mw.log(p.get_stat_at_level(scale, 1680, 30)) -- 28560
+
+]=]

@@ -1,0 +1,44 @@
+---	Additionally, contains some invokable functions that can be used with
+--	`subst:` (technically it's possible to use them without substing but...
+--	don't).
+--	These functions are to be used in invoke statements, and will instantiate
+--	an object on the fly to call these functions on.
+local Unit = {}
+
+---	Call a function from the unit
+--	@param {string} mod Name of module containing unit's class
+--	@param {string} func Name of function to call
+--	@param {string} name Name to pass to `cls.new`
+--	@param[opt] ...
+--	@note Assumes the class has a constructor called `cls.new` with a single
+--	string argument `name`.
+function Unit._func(mod, func, name, ...)
+	local mod2 = require('Module:' .. mod)
+	if mod2.load_imgfuncs then mod2.load_imgfuncs() end
+	local unit = mod2.new(name)
+	return unit[func](unit, ...)
+end
+
+---	Access an attribute of a unit
+--	@param {string} mod Name of module containing unit's class
+--	@param {string} func Name of attribute to access
+--	@param {string} name Name to pass to `cls.new`
+--	@param[opt] ...
+--	@note Assumes the class has a constructor called `cls.new` with a single
+--	string argument `name`.
+function Unit._attr(mod, attr, name, ...)
+	local unit = require('Module:' .. mod).new(name)
+	return unit[attr]
+end
+
+---	Invokable entrypoint to `_func` and `_attr`
+--	@param {Frame} frame
+--	@param {string} frame.args.type One of `func` or `attr`
+--	@usage '{{#invoke:Units/invoke|main|type=attr|Cats|link|Eraser Cat}}'
+function Unit.main(frame)
+	local args = frame.args
+	local type = args.type
+	return Unit['_' .. type](args[1], args[2], args[3])
+end
+
+return Unit

@@ -1,0 +1,33 @@
+---	Module backend of [[Cat Combo Filter]].
+--
+--	@module	ComboFilter
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:CatCombo
+--	@require Module:Lineup/combos2.json
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local CatCombo = require('Module:CatCombo')
+local comboData = mw.loadJsonData('Module:Lineup/combos2.json')
+
+---	Returns the template text
+function p._main()
+	local result = {}
+	for _, row in ipairs(comboData) do
+		local params = { row.name, row.effect }
+		for _, combo_unit in ipairs(row.cats) do
+			local cat = string.format("%03d-%d", combo_unit[1], combo_unit[2] + 1)
+			table.insert(params, cat)
+		end
+		if row.name == '#TopSecret' then params['link'] = 'TopSecret (Combo)' end
+
+		table.insert(result, CatCombo.notable(params, CatCombo.with_module_cats()))
+	end
+	return table.concat(result)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p

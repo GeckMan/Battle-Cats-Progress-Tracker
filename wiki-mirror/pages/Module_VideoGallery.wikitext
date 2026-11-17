@@ -1,0 +1,41 @@
+---	Implements the [[Template:VideoGallery|VideoGallery]] template.
+--
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p._main(args)
+	local divBase = mw.html.create('div')
+		:cssText('text-align: center;')
+
+	local i = 0
+	local argsMax = 2
+	while true do
+		local id = args[argsMax * i + 1]
+		local description = args[argsMax * i + 2]
+		if not id then break end
+
+		local divVideo = mw.html.create('div')
+			:addClass('video-gallery-item')
+			:wikitext('<youtube width="240">' .. id .. '</youtube>')
+
+		divVideo:wikitext('<br>' .. description)
+		divBase:node(divVideo)
+		i = i + 1
+	end
+
+	return tostring(divBase)
+end
+
+function p.main(frame)
+	return frame:getParent():preprocess(p._main(getArgs(frame, {
+		removeBlanks = false
+	})))
+end
+
+return p
+
+--[=[
+mw.log(p._main({'Aw2nz5iO5e0', 'Caption'}))
+mw.log(p._main({'Aw2nz5iO5e0', '', 'VpNJUvQk8eI', 'Text'}))
+]=]

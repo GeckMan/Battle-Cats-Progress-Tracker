@@ -1,0 +1,74 @@
+local p = {}
+
+local traits = mw.loadData('Module:Enemy Stats (Old)/traits')
+
+local function _link(num, cat)
+	cat = traits[cat]
+
+	local catLink = ("Category:%s Enemies"):format(cat["Category"])
+	local slash = (num > 1 and '/' or '')
+	local link
+
+	if #cat["Icon"] > 0 then
+		link = '<span class="nomobile">[[File:%s|%s|link=:%s|%s]]</span>'
+		link = link:format(cat["Icon"], (cat["Size"] or '45x45px'), catLink, cat['Category'])
+		link = link .. ('<span class="mobileonly">%s[[:%s|%s]]</span>')
+			:format(slash, catLink, cat["Category"])
+	else
+		link = slash .. ('[[:%s|%s]]'):format(catLink, cat["Category"])
+	end
+	return link
+end
+
+local function _cat(cat)
+	if not traits[cat] then
+		error(cat .. " is not recognised as a valid trait name!")
+	end
+	cat = traits[cat]
+	local categories = ('[[%s]]'):format(("Category:%s Enemies"):format(cat["Category"]))
+
+	if cat["Cat2"] then
+		categories = categories .. ('[[%s]]'):format(("Category:%s Enemies"):format(cat["Cat2"]))
+	end
+
+	return categories
+end
+
+local function split(frame)
+	-- Does the initial splitting input into an array that can then be used by
+	-- the below functions
+	return mw.text.split(frame.args[1], '/')
+end
+
+function p.cat(frame)
+	-- Public function invoked to handle the categories
+	local categories = split(frame)
+	local out = {}
+	for _, cat in ipairs(categories) do
+		table.insert(out, _cat(cat))
+	end
+	return table.concat(out)
+end
+
+function p.link(frame)
+	-- The link (or icon) in the attribute cell
+	local categories = split(frame)
+	local out = {}
+	for num, cat in ipairs(categories) do
+		local a, b = pcall(_link, num, cat)
+		if a then
+			out[num] = b
+		else
+			out[num] = (num > 1 and '/' or '') .. cat
+		end
+	end
+	return table.concat(out)
+end
+
+return p
+
+--[[
+print(p.link({args={'__'}}))
+print(p.link({args={'Red/Alien/abc/Zombie'}}))
+print(p.cat({args={'Red/Alien/Zombie'}}))
+]]

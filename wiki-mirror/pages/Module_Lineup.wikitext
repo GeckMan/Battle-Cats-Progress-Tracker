@@ -1,0 +1,556 @@
+---	Module backend of [[Template:Lineup]].
+--
+--	@module	Lineup
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]] (primary)
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+--	@require Module:Cats
+--	@require Module:Lineup/combos2.json
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local ts = require('Module:TemplateStyles once')
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+require('Module:Cat2/string_functions').init(Cat)
+require('Module:Cat2/load_bulk_data').init(Cat)
+-- TODO bulk data really shouldn't be required
+local comboData = mw.loadJsonData('Module:Lineup/combos2.json')
+local talents = {}
+require('strict')
+
+-- if on main namespace then make sure that strategies don't contain ubers/lrs,
+-- else this just does nothing
+local function assert_rarity(cat) end
+if mw.title.getCurrentTitle().namespace == 0 then
+	assert_rarity = function(cat)
+		if cat.rarity == "UR" or cat.rarity == "LR" then
+			error("Cannot input an Uber or Legend Rare")
+		end
+	end
+end
+
+local function is_numeric(n)
+	return tonumber(n) ~= nil
+end
+
+---	Returns the lineup section
+--	@param {table} args Frame args
+--	@return {mw.html} Lineup section div
+function p.units(args)
+	local unitContainer = mw.html.create('div')
+		:addClass('units-container')
+	local unitDiv = unitContainer:tag('div')
+		:addClass('units')
+
+	local counter = 0
+	local xCoor = { 75, 167.8, 260.5, 352.8, 446, 75, 167.8, 260.5, 352.8, 446 }
+	local yCoor = { 15, 15, 15, 15, 15, 75, 75, 75, 75, 75 }
+	local pCoor = { 0, 0, 0, 0, 0, 67, 67, 67, 67, 67 }
+
+	for index, item in ipairs(args) do
+		local nextItem = args[index + 1]
+		if nextItem ~= nil then nextItem = nextItem:gsub('+', '') end
+
+		if not is_numeric(item:gsub('+', '')) then
+			-- the world if lua had a continue statement
+			counter = counter + 1
+			local level = ""
+			local popup = mw.html.create('span')
+				:addClass("lineup-slot-info")
+				:attr("data-unitname", item)
+
+			local unit
+			if item == "?" then
+				unit = "[[File:LQ icon.png|80px|link=|Any Unit]]"
+			else
+				local cat = Cat.from_name(item)
+				assert_rarity(cat)
+				unit = Cat.image_str(cat, 'deploy', { size = '80px' })
+				if is_numeric(nextItem) then
+					local levelBase = mw.html.create('p')
+						:addClass('unit-level')
+						:cssText(("top: %dpx;"):format(pCoor[counter]))
+						:wikitext("Level " .. args[index + 1])
+					level = levelBase
+					popup
+						:attr("data-level", args[index + 1])
+				end
+				if talents[counter] then
+					popup
+						:attr("data-talents", talents[counter])
+				end
+			end
+
+			local unitOuter = mw.html.create('div')
+				:addClass('slot-img-container')
+			unitOuter:tag('div')
+				:addClass('slot-inner-container')
+				:node(popup:wikitext(unit))
+
+			local cssSlot = "position: absolute; top: %dpx; left: %.1fpx; margin: 0px;"
+			unitDiv:tag('div')
+				:addClass('slot-base')
+				:cssText(cssSlot:format(yCoor[counter], xCoor[counter]))
+				:node(unitOuter)
+				:node(level)
+		end
+	end
+	return unitContainer
+end
+
+---	Returns the talent icons
+--	@param {table} args Frame args
+--	@return {mw.html} HTML node for talent icons
+function p.talents(_)
+	local talentContainer = mw.html.create('div')
+		:cssText("position: absolute; top: 0px; left: 0px; z-index: 3;")
+		:addClass("talents")
+	local image = "[[File:Talent 6.png|24px|link=|Talented]]"
+	local top = { 72, 72, 72, 72, 72, 132, 132, 132, 132, 132 }
+	local left = { 128, 221, 314, 406, 499, 128, 221, 314, 406, 499 }
+	for i = 1, 10, 1 do
+		if talents[i] then
+			talentContainer:tag('div')
+				:cssText(("position: absolute; top: %dpx; left: %dpx;"):format(top[tonumber(i)], left[tonumber(i)]))
+				:wikitext(image)
+		end
+	end
+	return talentContainer
+end
+
+---	Returns the cannon, style, foundation section
+--	@param {table} args Frame args
+--	@return {mw.html} Section HTML node
+function p.catBase(args)
+	if args.basic then return "" end
+	local catbaseContainer = mw.html.create('div')
+		:addClass('base-part')
+
+	local catbaseInner = catbaseContainer:tag('div')
+		:addClass('base-part-inner')
+	-- needed so it doesn't affect the height of the whole template
+
+	catbaseInner:tag('div')
+		:addClass('base-part-title')
+		:wikitext("Cat Base")
+
+	local cannon = "Default"
+	if args.cannon and args.cannon ~= "Cat Cannon" and args.cannon ~= "Any" then
+		cannon = args.cannon:match('^%w+')
+	end
+	if cannon == cannon:lower() then
+		error(("%s is not recognised as a valid cannon"):format(args.cannon))
+	end
+
+	local style = "Default"
+	if args.style and args.style ~= "Any" then
+		style = args.style:match('^%w+')
+	end
+	if style == style:lower() then
+		error(("%s is not recognised as a valid style"):format(args.style))
+	end
+
+	local foundation = "Default"
+	if args.foundation and args.foundation ~= "Any" then
+		foundation = args.foundation:match('^%w+')
+	end
+	if foundation == foundation:lower() then
+		error(("%s is not recognised as a valid foundation"):format(args.foundation))
+	end
+
+	local imgDiv = catbaseInner:tag('div')
+		:addClass('base-imgs')
+	imgDiv:tag('div')
+		:addClass('base-cannon-img')
+		:cssText("position: absolute; z-index: 3;")
+		:wikitext(("[[File:%s Cannon.png|link=|alt=]]"):format(cannon))
+	imgDiv:tag('div')
+		:addClass('base-style-img')
+		:cssText("position: absolute; z-index: 2;")
+		:wikitext(("[[File:%s Style.png|link=|alt=]]"):format(style))
+	imgDiv:tag('div')
+		:addClass('base-foundation-img')
+		:cssText("position: absolute; z-index: 1;")
+		:wikitext(("[[File:%s Foundation.png|link=|alt=]]"):format(foundation))
+
+	catbaseInner:tag('div'):addClass('base-part-text')
+		:wikitext(
+			'<div style="position: absolute; left: 4px; top: -2px;">[[File:Cannon Icon.png|18px|link=|Cannon]]</div>')
+		:wikitext(args.cannon or "Any")
+	catbaseInner:tag('div'):addClass('base-part-text')
+		:wikitext(
+			'<div style="position: absolute; left: 6px; top: -1px;">[[File:Style Icon.png|18px|link=|Style]]</div>')
+		:wikitext(args.style or "Any")
+	catbaseInner:tag('div'):addClass('base-part-text')
+		:wikitext('<div style="position: absolute; left: 5px; top: -2px;">[[File:Base Icon.png|18px|link=|Base]]</div>')
+		:wikitext(args.foundation or "Any")
+
+	return catbaseContainer
+end
+
+---	Returns the combo section
+--	@param {table} args Frame args
+--	@param {table} combos List of names of activated combos
+--	@param {table} effects List of effects of activated combos
+--	@return {mw.html} Combos section div
+function p.combos(_, combos, effects)
+	local comboContainer = mw.html.create('div')
+		:addClass('combos-container')
+
+	local comboBase = comboContainer:tag('div')
+		:addClass('combos')
+		:wikitext("[[File:Unknown.png|506px|link=|alt=]]")
+
+	comboBase:tag('div')
+		:addClass('combos-tab-title')
+		:wikitext("Activated Combos")
+
+	local comboOuter = comboBase:tag('div')
+		:addClass('combos-row-container')
+	local comboInner = comboOuter:tag('div')
+		:addClass('combos-row-container-inner')
+
+	for index, name in ipairs(combos) do
+		local comboBox = comboInner:tag('div')
+			:addClass('combo-box')
+			:cssText(("left: %dpx;"):format(208 * (index - 1)))
+
+		local comboBoxText = [=[[[%s (Combo)|'''%s''']]<br><span style="font-size: 9pt;">%s</span>]=]
+		comboBox:tag('div')
+			:addClass('combo-box-text')
+			:wikitext(comboBoxText:format(name, name, effects[index]))
+	end
+
+	local comboNum = #combos
+	if comboNum == 0 then
+		return ""
+	elseif comboNum <= 2 then
+		local css = "position: relative; width: %dpx; left: calc(50%% - %dpx);"
+		local width = 208 * comboNum - 8
+		comboInner:cssText(css:format(width, width / 2))
+	else
+		comboInner:cssText("position: relative; width: auto;")
+	end
+
+	return comboContainer
+end
+
+---	Returns the battle items section
+--	@param {table} args Frame args
+--	@return {mw.html} Battle items section div
+function p.items(args)
+	if not args.items then return "" end
+
+	local itemContainer = mw.html.create('div')
+		:addClass('items-container')
+
+	local itemBase = itemContainer:tag('div')
+		:addClass("items")
+	itemBase:tag('div')
+		:addClass("items-tab-title")
+		:wikitext("Battle Items")
+
+	local groupBox = itemBase:tag('div')
+		:addClass('items-icons-container')
+
+	local images =
+		'<div style="position: absolute; top: 0px; left: 0px;">[[File:SpeedUp %s.png|40px|link=|Speed Up]]</div>'
+		.. '<div style="position: absolute; top: 0px; left: 62px;">[[File:TreasureRadar %s.png|40px|link=|Treasure Radar]]</div>'
+		.. '<div style="position: absolute; top: 0px; left: 124px;">[[File:RichCat %s.png|40px|link=|Rich Cat]]</div>'
+		.. '<div style="position: absolute; top: 0px; left: 186px;">[[File:CatCPU %s.png|40px|link=|Cat CPU]]</div>'
+		.. '<div style="position: absolute; top: 0px; left: 248px;">[[File:CatJobs %s.png|40px|link=|Cat Jobs]]</div>'
+		.. '<div style="position: absolute; top: 0px; left: 310px;">[[File:SnipertheCat %s.png|40px|link=|Sniper the Cat]]</div>'
+
+	local speed = "gray"
+	local treasure = "gray"
+	local rich = "gray"
+	local cpu = "gray"
+	local jobs = "gray"
+	local sniper = "gray"
+	if args.items then
+		local user = args.items:gsub(",", "")
+		if user:lower():match("speed") then speed = "color" end
+		if user:lower():match("treasure") then treasure = "color" end
+		if user:lower():match("rich") then rich = "color" end
+		if user:lower():match("cpu") then cpu = "color" end
+		if user:lower():match("jobs") then jobs = "color" end
+		if user:lower():match("sniper") then sniper = "color" end
+	end
+	groupBox:wikitext(images:format(speed, treasure, rich, cpu, jobs, sniper))
+
+	return itemContainer
+end
+
+---	Returns the notes section
+--	@param {table} args Frame args
+--	@return {mw.html} Notes section div
+function p.notes(args)
+	if not args.notes then return "" end
+	args.notes = args.notes:gsub('^%*', '\n*')
+
+	local notesOuter = mw.html.create('div')
+		:addClass("notes")
+	notesOuter:tag('div')
+		:addClass('notes-text-container')
+		:wikitext("Notes: " .. args.notes)
+
+	return notesOuter
+end
+
+---	Returns the top row units given an ordered table of units in a lineup
+--	@param {table} args Frame args
+--	@return {table} A hashmap of unit ids to forms exclusively from top row of lineup
+function p.toprow(args)
+	local result = {}
+	local counter = 0
+	local name
+	for _, item in ipairs(args) do
+		name = item:gsub("+", "")
+		if not is_numeric(name) then
+			counter = counter + 1
+			if item ~= "?" then
+				item = Cat.from_name(item)
+				-- store number and form to use in notintable
+				result[item.id] = item.current_form
+			end
+		end
+		if counter >= 5 then break end
+	end
+	return result
+end
+
+---	Returns a table of combo names given a lineup, a table containing effects,
+--	and a table containing units in the combos
+--	@param {table} args Frame args
+--	@return {table} List of names of activated combos
+--	@return {table} List of effects of activated combos
+--	@return {table} List of Cats included in activated combos
+function p.findCombos(args)
+	local links = {}
+	local effects = {}
+	local units = {}
+	local toprow = p.toprow(args)
+
+	local active
+	for _, row in ipairs(comboData) do
+		active = true
+		for _, combo_unit in ipairs(row.cats) do
+			local toprow_cat_form = toprow[combo_unit[1]]
+			if not (toprow_cat_form and toprow_cat_form >= combo_unit[2] + 1) then
+				active = false
+				break
+			end
+		end
+
+		if active then
+			table.insert(links, row.name)
+			table.insert(effects, row.effect)
+			for _, combo_unit in ipairs(row.cats) do
+				local cat = Cat.from_number_and_form(combo_unit[1], combo_unit[2] + 1)
+				table.insert(units, cat:name())
+			end
+		end
+	end
+
+	return links, effects, units
+end
+
+---	Returns a boolean telling whether a unit is in the given table
+--	@param {table} args
+--	@param {string} unit
+--	@return {bool}
+function p.unitIn(args, unit)
+	local cat = Cat.from_name(unit)
+	local comboCat
+	for _, item in ipairs(args) do
+		comboCat = Cat.from_name(item)
+		if cat.id == comboCat.id then return true end
+	end
+	return false
+end
+
+---	Returns a concatenation of the two given tables
+--	@param {table} table1
+--	@param {table} table2
+--	@return {table} Concatenated table
+function p.concatenate(table1, table2)
+	local result = table1
+	for _, item in ipairs(table2) do
+		table.insert(result, item)
+	end
+	return result
+end
+
+---	Generates the lineup for the mobile-friendly version
+--	@param {table} args Frame args
+--	@param {table} combos List of names of activated combos
+--	@param {table} comboCats List of Cats included in activated combos
+--	@return {string}
+function p.mobileLineup(args, combos, comboCats)
+	-- combos
+	local comboLinks = {}
+	for _, item in ipairs(combos) do
+		table.insert(comboLinks, ("[[%s (Combo)|%s]]"):format(item, item))
+	end
+
+	-- rest of units
+	local lineup = {}
+	local text, nextItem
+	local hasLevel = false
+	local isCombo = false
+	local counter = 1
+	for index, unit in ipairs(args) do
+		nextItem = args[index + 1]
+		if nextItem ~= nil then nextItem = nextItem:gsub('+', '') end
+
+		if is_numeric(unit:gsub("+", "")) then
+			if hasLevel or not isCombo then
+				text = ("%s %s"):format(text, unit)
+			end
+		elseif unit ~= "?" then
+			isCombo = p.unitIn(comboCats, unit)
+			hasLevel = is_numeric(nextItem)
+			if hasLevel or not isCombo or talents[counter] then
+				table.insert(lineup, text)
+				text = Cat.str.page_link(Cat.from_name(unit))
+			end
+			if talents[counter] then text = ("%s (%s)"):format(text, talents[counter]) end
+			counter = counter + 1
+		else
+			counter = counter + 1
+		end
+	end
+
+	table.insert(lineup, text)
+	lineup = p.concatenate(comboLinks, lineup)
+	return ("'''Lineup:''' %s"):format(table.concat(lineup, ", "))
+end
+
+---	Generates the mobile-friendly version
+--	@param {table} args Frame args
+--	@param {table} combos List of names of activated combos
+--	@param {table} comboCats List of Cats included in activated combos
+--	@return {mw.html}
+function p.mobile(args, combos, comboCats)
+	local mobileBase = mw.html.create('div')
+	mobileBase:newline()
+
+	-- lineup
+	local lineup = p.mobileLineup(args, combos, comboCats)
+	-- cannon
+	local cannonList = {}
+	local included = false
+	if args.cannon then
+		table.insert(cannonList, args.cannon)
+		included = true
+	end
+	if args.style then
+		table.insert(cannonList, args.style .. " (Style)")
+		included = true
+	end
+	if args.foundation then
+		table.insert(cannonList, args.foundation .. " (Foundation)")
+		included = true
+	end
+
+	local cannon
+	if included then
+		cannon = "\n\n'''Cannon:''' " .. table.concat(cannonList, ", ")
+	else
+		cannon = ""
+	end
+	-- items
+	local items = ""
+	if args.items then items = "\n\n'''Items:''' " .. args.items end
+	-- notes
+	local notes = ""
+	if args.notes then notes = "\n\n'''Notes:''' " .. args.notes end
+	-- combine all parts
+	mobileBase
+		:wikitext(lineup, cannon, items, notes)
+		:newline()
+	return mobileBase
+end
+
+function p.desktop(args, comboList, comboEffects)
+	local desktop = mw.html.create('div')
+		:addClass('desktop-mode')
+
+	local base = mw.html.create('div')
+		:addClass('main-part')
+	base:tag('div')
+		:addClass('lineup-name-box')
+		:wikitext(("'''%s'''"):format(args.name or "Lineup"))
+	base:tag('div')
+		:addClass('lineup-slots-background')
+		:wikitext("[[File:Lineup slots.png|442px|link=|alt=]]")
+	base:tag('div')
+		:addClass('page-1-marker')
+		:wikitext("[[File:Lineup page 1.png|64px|link=|Page 1]]")
+	base:tag('div')
+		:addClass('page-2-marker')
+		:wikitext("[[File:Lineup page 2.png|64px|link=|Page 2]]")
+	base
+		:node(p.units(args))
+		:node(p.talents(args))
+		:node(p.combos(args, comboList, comboEffects))
+		:node(p.items(args))
+		:node(p.notes(args))
+
+	local catbase = p.catBase(args)
+	desktop
+		:node(base)
+		:node(catbase)
+
+	return desktop
+end
+
+function p._main(args)
+	-- Table of talents to use in different methods
+	talents = { args.talent1, args.talent2, args.talent3, args.talent4, args.talent5, args.talent6, args.talent7, args
+		.talent8, args.talent9, args.talent10 }
+
+	local container = mw.html.create('div')
+		:addClass('lineup-template')
+
+	local comboList, comboEffects, comboCats = p.findCombos(args)
+	local desktop = p.desktop(args, comboList, comboEffects)
+	local mobile = p.mobile(args, comboList, comboCats)
+
+	local mobileonly = mw.html.create('span')
+		:addClass('mobileonly')
+	local nomobile = mw.html.create('span')
+		:addClass('nomobile')
+
+	nomobile:node(desktop)
+	mobileonly:node(mobile)
+
+	container
+		:node(nomobile)
+		:node(mobileonly)
+
+	return tostring(container)
+end
+
+function p.main(frame)
+	local args = getArgs(frame)
+	return p._main(args) .. ts.style({ 'Lineup/styles.css' })
+end
+
+return p
+
+--[=[
+mw.log(p.main({"Cat", "20", "Tank Cat", "Axe Cat", "Gross Cat", "Cow Cat", "Bird Cat", "Fish Cat", "?", "Titan Cat", "20+90", cannon="Thunderbolt", foundation="Slow Beam", items="Rich Cat", notes="Use a unit of choice for the open slot."}))
+mw.log(p.main({"Cat", "20", "Tank Cat", "Axe Cat", "Gross Cat", "Cow Cat", "Bird Cat", "Fish Cat", "?", "Titan Cat"}))
+mw.log(p.main({"Cat", "20", "Tank Cat", "Axe Cat", "Gross Cat", "Cow Cat", "?"}))
+mw.log(p.main({"Richest Cat", "Lollycat", "Brah Cats", "Awakened Mina", "Holy Valkyrie Cat"}))
+mw.log(p.main({"Li'l Cat", "Baby Gao", "Mohawk Cat", "Manic King Dragon"}))
+mw.log(p.main({"Cat", "20", "Tank Cat", "Axe Cat", "Gross Cat", "Cow Cat"}))
+mw.log(p.main({"Cat", "Tank Cat", "Axe Cat", "Gross Cat", "Cow Cat"}))
+mw.log(p.main({"Cat", "20+10", "Tank Cat"}))
+mw.log(p.main({"?", "?", "?", "?", "Cat", "Baby Gao"}))
+mw.log(p.main({"?", "?", "?", "Li'l Mohawk Cat", "Baby Gao"}))
+mw.log(p.main({"?", "?", "?", "Li'l Mohawk Cat", "Baby Gao", talent4="Max Talents"}))
+mw.log(p.main({"?", "?", "?", "Li'l Mohawk Cat", "Mighty Lord Gao", notes="*This should begin with \\n"}))
+mw.log(p.main({"?", "?", "?", "Li'l Mohawk Cat", "Mighty Lord Gao", notes="This shouldn't"}))
+]=]

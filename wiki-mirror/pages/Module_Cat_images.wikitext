@@ -1,0 +1,94 @@
+---	Provides functions for cat images.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local img = {}
+
+local egg_images
+local function egg_num(id, form)
+	if not egg_images then
+		egg_images = mw.loadJsonData('Module:Cat images/eggs.json')
+	end
+	local eggs = egg_images[id]
+	if eggs then
+		if form == 1 then
+			return eggs.normal
+		elseif form == 2 then
+			return eggs.evolved
+		end
+	end
+
+	return nil
+end
+
+---	Return image number, such as the 001 in `Uni001 f00.png`.
+--	@return {number} Image number, which is one of the following:
+--	* Majority of units: same as cat's number
+--	* First forms of ancient eggs: 0
+--	* Second forms of ancient eggs: number as in second column of
+--	[[Module:Cats/images.csv]]
+--	@private
+local function img_num(id, form)
+	return egg_num(id, form) or id
+end
+
+local function img_fcode(id, form)
+	if egg_num(id, form) then return 'm' end
+	return ({ 'f', 'c', 's', 'u' })[form]
+end
+
+---	@return {string} Spritesheet file name
+function img.spritesheet(id, form)
+	return ('%03d %s.png'):format(img_num(id, form), img_fcode(id, form))
+end
+
+---	@return {string} Deploy icon file name
+function img.deploy(id, form)
+	local suffix = 0
+	if egg_num(id, form) and form == 2 then
+		suffix = 1
+	end
+	return ('Uni%03d %s%02d.png'):format(img_num(id, form), img_fcode(id, form), suffix)
+end
+
+---	@return {string} Upgrade icon file name
+function img.upgrade(id, form)
+	if not egg_num(id, form) then
+		return ('Udi%03d %s.png'):format(img_num(id, form), img_fcode(id, form))
+	else
+		return ('Udi%03d %s%02d.png'):format(
+			img_num(id, form), img_fcode(id, form), form - 1
+		)
+	end
+end
+
+---	@return {string} Storage icon file name
+function img.storage(id, form)
+	return ('Gatyachara %03d %s.png'):format(img_num(id, form), img_fcode(id, form))
+end
+
+---	@return {string} Wiki appearance image
+function img.appearance(id, form)
+	if not egg_num(id, form) then
+		return ('%03d %d.png'):format(id, form)
+	end
+
+	return ("m %03d.png"):format(egg_num(id, form))
+end
+
+---	@return {string} Animation data page title
+function img.animation(id, form)
+	return ('%03d %s.json'):format(img_num(id, form), img_fcode(id, form))
+end
+
+return img
+
+--[=[
+local name = 'Cat'
+local cat = require('Module:Cats').new(name)
+
+print(img_funcs.page(cat.id, cat.form))
+print(img_funcs.spritesheet(cat.id, cat.form))
+print(img_funcs.deploy(cat.id, cat.form))
+print(img_funcs.upgrade(cat.id, cat.form))
+print(img_funcs.storage(cat.id, cat.form))
+]=]

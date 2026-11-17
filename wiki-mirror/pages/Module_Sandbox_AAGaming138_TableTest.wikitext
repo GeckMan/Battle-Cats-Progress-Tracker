@@ -1,0 +1,17 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+
+function p._main(args)
+    local aakehming = {}
+    for _, value in ipairs(args) do
+        table.insert(aakehming, value)
+    end
+    return table.concat(aakehming)
+end
+
+function p.main(frame)
+	return frame:preprocess(p._main(getArgs(frame)))
+end
+
+return p

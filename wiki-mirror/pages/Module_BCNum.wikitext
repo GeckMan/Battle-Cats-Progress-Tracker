@@ -1,0 +1,103 @@
+---	Module backend of [[Template:BCNum]].
+--
+--	@module	BCNum
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local fn = require('Module:Formatnum')
+local ts = require('Module:TemplateStyles once')
+
+-- Data for clipping coordinates in File:Img001 ja.png
+local data = {
+	['white-sm']  = {
+		['image'] = 'game-numbers',
+		['dimensions'] = {512, 256},
+		['coor'] = {{255, 89}, {271, 89}, {287, 89}, {303, 89}, {319, 89}, {335, 89}, {351, 89}, {367, 89}, {383, 89}, {399, 89}},
+		['size'] = {{14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}, {14, 18}},
+	},
+	['white-med'] = {
+		['image'] = 'game-numbers',
+		['dimensions'] = {512, 256},
+		['coor'] = {{75, 89}, {95, 89}, {115, 89}, {135, 89}, {155, 89}, {175, 89}, {195, 89}, {215, 89}, {235, 89}, {1, 118}},
+		['size'] = {{18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}, {18, 27}},
+	},
+	['orange-lg'] = {
+		['image'] = 'game-numbers-orange',
+		['dimensions'] = {253, 33},
+		['coor'] = {{0, 0}, {234, 0}, {52, 0}, {26, 0}, {78, 0}, {104, 0}, {130, 0}, {156, 0}, {182, 0}, {208, 0}},
+		['size'] = {{24, 33}, {19, 33}, {24, 33}, {24, 33}, {24, 33}, {24, 33}, {24, 33}, {24, 33}, {24, 33}, {24, 33}},
+	},
+	['orange-xl'] = {
+		['image'] = 'game-numbers',
+		['dimensions'] = {512, 256},
+		['coor'] = {{1, 1}, {33, 1}, {65, 1}, {97, 1}, {129, 1}, {161, 1}, {193, 1}, {225, 1}, {1, 45}, {33, 45}},
+		['size'] = {{30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}, {30, 42}},
+	}
+}
+
+local function fmt_num(n)
+	local s = fn.formatFloat(n, 2):gsub(',', '')
+	return s
+end
+
+---	Returns the template text
+function p._main(args)
+	if not args[1] then return '' end
+
+	local mode = 'white-med'
+	if args.mode then mode = args.mode end
+	local class = data[mode]['image']
+	local coor = data[mode]['coor']
+	local size = data[mode]['size']
+	local dimensions = data[mode]['dimensions']
+	assert(coor and size, mode .. " is not recognised as a valid mode!")
+
+	local scale = 1
+	if args.size then
+		scale = tonumber(args.size) / size[1][2]
+	end
+
+	local result = mw.html.create('span')
+		-- :css( 'font-size', fmt_num( size[1][1] * scale ) .. 'px' )
+	for i = 1, #args[1] do
+		local digit = args[1]:sub(i, i)
+		digit = tonumber(digit)
+		if digit then
+			local css = {
+				['width'] = ('%spx'):format( fmt_num( size[digit + 1][1] * scale ) ),
+				['height'] = ('%spx'):format( fmt_num( size[digit + 1][2] * scale ) ),
+				['background-position'] = ('-%spx -%spx'):format(
+					fmt_num( coor[digit + 1][1] * scale ),
+					fmt_num( coor[digit + 1][2] * scale )
+				),
+				['background-size'] = ('%spx %spx'):format(
+					fmt_num( scale * dimensions[1] ),
+					fmt_num( scale * dimensions[2] )
+				),
+			}
+
+			result:tag('span')
+				:css(css)
+				:addClass(class)
+				:wikitext(digit)
+		end
+	end
+
+	return result
+end
+
+function p.main(frame)
+	local args = getArgs(frame)
+	return tostring(p._main(args)) .. ts.style({ 'BCNum/styles.css' })
+end
+
+return p
+
+--[=[
+print(p.main({}))
+print(p.main({""}))
+print(p.main({"0123456789"}))
+print(p.main({"0123456789", size="30"}))
+print(p.main({"0123456789", mode="white-med"}))
+]=]

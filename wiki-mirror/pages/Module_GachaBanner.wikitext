@@ -1,0 +1,283 @@
+---	Module backend of [[Template:GachaBanner]].
+--
+--	@module GachaBanner
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Cats
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local cat_query = require('Module:Cat query helper')
+local Cat2 = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat2)
+
+-- Generate an almost unique id for the template using clock time of module
+local id = tostring(os.clock() * 10 ^ 5)
+
+---comment
+---@param cats Cat[]
+---@return string
+function p.normal(cats)
+	local pcUnit
+	local lastIndex = #cats
+	if cats[lastIndex].rarity == "UR (PC)" then
+		pcUnit = cats[lastIndex]
+		table.remove(cats, lastIndex)
+	end
+
+	local icons = {}
+	for _, name in ipairs(cats) do
+		local cat = name
+		local img = Cat2.image_str(cat, 'deploy')
+		table.insert(icons, img)
+	end
+	local result = table.concat(icons, '')
+
+	if pcUnit then
+		local fmt =
+		[[<p style="height: 10px; margin: 0px; color: white; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 0.8px;">'''PC'''</p>]]
+		local pc_icon = Cat2.image_str(pcUnit, 'deploy')
+		result = result .. (fmt .. pc_icon)
+		table.insert(cats, pcUnit)
+	end
+	return result
+end
+
+---comment
+---@param cats Cat[]
+---@return string
+function p.evolved(cats)
+	local units = {}
+	for index, item in ipairs(cats) do
+		local cat = item:to_form(2)
+		table.insert(units, cat)
+	end
+	return p.normal(units)
+end
+
+---comment
+---@param cats Cat[]
+---@return string
+function p.true_form(cats)
+	local units = {}
+	for _, item in ipairs(cats) do
+		local cat = item:to_form(3)
+		if cat:form_exists() then
+			table.insert(units, cat)
+		end
+	end
+	if not units[1] then
+		return ''
+	end
+	return p.normal(units)
+end
+
+---comment
+---@param cats Cat[]
+---@return string
+function p.ultra(cats)
+	local units = {}
+	for _, item in ipairs(cats) do
+		local cat = item:to_form(4)
+		if cat:form_exists() then
+			table.insert(units, cat)
+		end
+	end
+	if not units[1] then
+		return ''
+	end
+	return p.normal(units)
+end
+
+---	Returns the units portion of the template
+function p.units(units)
+	local names = {}
+	for name in units:gmatch("([^\n]+)") do
+		name = mw.text.trim(name)
+		table.insert(names, name)
+	end
+	local get_cat = cat_query.get_cat_function(names)
+
+	local cats = {}
+	for _, name in ipairs(names) do
+		table.insert(cats, get_cat(name):to_form(1))
+	end
+
+	local first = p.normal(cats)
+	local second = p.evolved(cats)
+	local third = p.true_form(cats)
+	local fourth = p.ultra(cats)
+
+	-- Buttons for toggling between Normal Forms, Evolved Forms, and True Forms
+	local rotate1 = mw.html.create('div')
+		:addClass('mw-customtoggle-normal' .. id)
+		:addClass('mw-customtoggle-evolved' .. id)
+		:addClass('mw-collapsible')
+		:attr('id', 'mw-customcollapsible-normal' .. id)
+		:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show Evolved Forms]]')
+
+	local rotate2 = mw.html.create('div')
+		:addClass('mw-customtoggle-evolved' .. id)
+		:addClass('mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-evolved' .. id)
+	if third:len() == 0 then
+		rotate2
+			:addClass('mw-customtoggle-normal' .. id)
+			:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show Normal Forms]]')
+	else
+		rotate2
+			:addClass('mw-customtoggle-true' .. id)
+			:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show True Forms]]')
+	end
+
+	local rotate3 = mw.html.create('div')
+		:addClass('mw-customtoggle-true' .. id)
+		:addClass('mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-true' .. id)
+	if fourth:len() == 0 then
+		rotate3
+			:addClass('mw-customtoggle-normal' .. id)
+			:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show Normal Forms]]')
+	else
+		rotate3
+			:addClass('mw-customtoggle-ultra' .. id)
+			:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show True Forms]]')
+	end
+
+	local rotate4 = mw.html.create('div')
+		:addClass('mw-customtoggle-ultra' .. id)
+		:addClass('mw-customtoggle-normal' .. id)
+		:addClass('mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-ultra' .. id)
+		:wikitext('[[File:Rotate button.png|class=rotate-button|link=|Show Normal Forms]]')
+
+	-- Divs for unit image collapsibles
+	local div1 = mw.html.create('div')
+		:addClass('collapsible-units mw-collapsible')
+		:attr('id', 'mw-customcollapsible-normal' .. id)
+		:wikitext(first)
+
+	local div2 = mw.html.create('div')
+		:addClass('collapsible-units mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-evolved' .. id)
+		:wikitext(second)
+
+	local div3 = mw.html.create('div')
+		:addClass('collapsible-units mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-true' .. id)
+		:wikitext(third)
+
+	local div4 = mw.html.create('div')
+		:addClass('collapsible-units mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-ultra' .. id)
+		:wikitext(fourth)
+
+	-- Collapsible div containing unit icons
+	local icons = mw.html.create('div')
+		:addClass('unit-container mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-icons' .. id)
+		:node(rotate1)
+		:node(rotate2)
+	if third:len() > 0 then
+		icons:node(rotate3)
+	end
+	if fourth:len() > 0 then
+		icons:node(rotate4)
+	end
+	icons
+		:node(div1)
+		:node(div2)
+	if third:len() > 0 then
+		icons:node(div3)
+	end
+	if fourth:len() > 0 then
+		icons:node(div4)
+	end
+	return icons
+end
+
+---	Returns a replacement for the units portion using text
+function p.text(args)
+	local text = mw.html.create('div')
+		:addClass('text-container mw-collapsible mw-collapsed')
+		:attr('id', 'mw-customcollapsible-icons' .. id)
+		:wikitext(args.units)
+	return text
+end
+
+---	Puts together the template
+function p._main(args)
+	-- Generate collapsible portion of template
+	local collapsible
+	if args.text then
+		collapsible = p.text(args)
+	else
+		collapsible = p.units(args.units)
+	end
+
+	-- Divs for set name box and collapsible button for units
+	local arrow1 = mw.html.create('p')
+		:addClass('arrow-box')
+		:wikitext('[▼]')
+
+	local box1 = mw.html.create('div')
+		:addClass('mw-customtoggle-icons' .. id)
+		:addClass('mw-customtoggle-closed' .. id)
+		:addClass('mw-customtoggle-open' .. id)
+		:addClass('mw-collapsible gacha-name')
+		:attr('id', 'mw-customcollapsible-closed' .. id)
+		:attr('role', 'button')
+		:wikitext(("'''''%s'''''"):format(args[1]))
+		:node(arrow1)
+
+	local arrow2 = mw.html.create('p')
+		:addClass('arrow-box')
+		:wikitext('[▲]')
+
+	local box2 = mw.html.create('div')
+		:addClass('mw-customtoggle-icons' .. id)
+		:addClass('mw-customtoggle-closed' .. id)
+		:addClass('mw-customtoggle-open' .. id)
+		:addClass('mw-collapsible mw-collapsed gacha-name')
+		:attr('id', 'mw-customcollapsible-open' .. id)
+		:wikitext(("'''''%s'''''"):format(args[1]))
+		:node(arrow2)
+
+	-- Get banner image
+	local banner
+	if (args.image) then
+		banner = ('[[File:%s|class=banner-image|%s]]'):format(args.image, args[1])
+	elseif (args.event) then
+		banner = ('[[File:Gatya e bnr%s.png|class=banner-image|%s]]'):format(args.event, args[1])
+	else
+		banner = ('[[File:Gatya bnr%s.png|class=banner-image|%s]]'):format(args.bnr, args[1])
+	end
+
+	-- Entire template
+	local bannerCSS = ('background: %s;'):format(args.color)
+	if (args.css) then
+		bannerCSS = bannerCSS .. args.css
+	end
+
+	local container = mw.html.create('div')
+		:addClass('gacha-banner')
+		:cssText(bannerCSS)
+		:wikitext(banner)
+		:node(box1)
+		:node(box2)
+		:node(collapsible)
+
+	return container
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p._main({"The Dynamites", bnr="741", color="linear-gradient(#FFFB4A, #CE0203)", units="Ice Cat\nCat Machine\nLesser Demon Cat\nMarauder Cat\nBaby Cat\nNurse Cat\nCat Clan Heroes\nLasvoss\nSummoner Satoru\nCat Tengu\nCat Maid"}))
+print(p._main({"The Dynamites", bnr="741", color="linear-gradient(#FFFB4A, #CE0203)", units="Ice Cat\nCat Machine\nLesser Demon Cat\nMarauder Cat\nBaby Cat\nNurse Cat\nCat Clan Heroes\nLasvoss\nSummoner Satoru\nCat Tengu"}))
+print(p._main({"The Dynamites", bnr="741", color="linear-gradient(#FFFB4A, #CE0203)", units="Cat Tengu\nBliza"}))
+print(p._main({"Platinum Capsules", bnr="174", color="linear-gradient(#DDAFE1, #ACDCD1, #ACDCD1, #E5EAC2)", text="", units="The player needs to use Platinum Tickets to enter this event. Platinum Tickets can be bought with real money during short time periods. Each Platinum Ticket guarantees an Uber Rare Cat from the Regular Pools."}))
+]=]

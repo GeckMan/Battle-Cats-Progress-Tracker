@@ -1,0 +1,76 @@
+return {
+	--Trait-Specific Abilities--
+	["weaken"]         = "Cats with Weaken ability",
+	["freeze"]         = "Cats with Freeze ability",
+	["slow"]           = "Cats with Slow ability",
+	["attacks only"]   = "Focused Target Cats",
+	["strong"]         = "Cats with Strong ability",
+	["resistant"]      = "Cats with Resistant ability",
+	["insanely tough"] = "Cats with Insanely Tough ability",
+	["massive damage"] = "Cats with Massive Damage ability",
+	["insane damage"]  = "Cats with Insane Damage ability",
+	["knockback"]      = "Cats with Knockback ability",
+	["curse"]          = "Cats with Curse ability",
+	["dodge attacks"]  = "Cats with Dodge Attack ability",
+	["dodge"]          = "Cats with Dodge Attack ability",
+	
+	--General Abilities--
+	["strengthen"]      = "Cats with Strengthen ability",
+	["survive"]         = "Lethal Strike Resistant Cats",
+	["base destroyer"]  = "Base Destroyer Cats",
+	["critical hit"]    = "Critical Hit Cats",
+	["critical"]        = "Critical Hit Cats",
+	["metal"]           = "Cats with Metal ability",
+	["zombie killer"]   = "Zombie Killer Cats",
+	["soulstrike"]      = "Soulstrike Cats",
+	["barrier breaker"] = "Barrier Breaker Cats",
+	["shield piercing"] = "Shield Piercing Cats",
+	["savage blow"]     = "Savage Blow Cats",
+	["extra money"]     = "Cats with Extra Money ability",
+	["money up"]        = "Cats with Extra Money ability",
+	["wave attack"]     = "Wave Attack Cats",
+	["mini-wave"]       = "Mini-Wave Cats",
+	["surge attack"]    = "Surge Attack Cats",
+	["wave shield"]     = "Wave Shield Cats",
+	
+	--Slayer Abilities--
+	["colossus slayer"] = "Colossus Slayer Cats",
+	["behemoth slayer"] = "Behemoth Slayer Cats",
+	
+	--Abilities With No Official Name--
+	["kamikaze"] = "Kamikaze Cats",
+	
+	--Immunity Abilities--
+	["immune to weaken"]    = "Cats with Weaken Immunity",
+	["immune to freeze"]    = "Cats with Freeze Immunity",
+	["immune to slow"]      = "Cats with Slow Immunity",
+	["immune to knockback"] = "Cats with Knockback Immunity",
+	["immune to waves"]     = "Cats with Wave Immunity",
+	["immune to surge"]     = "Cats with Surge Immunity",
+	["surge evade"]         = "Cats with Surge Immunity",
+	["immune to warp"]      = "Warp Blocker Cats",
+	["warp blocker"]        = "Warp Blocker Cats",
+	["immune to curse"]     = "Cats with Curse Immunity",
+	["immune to toxic"]     = "Cats with Toxic Immunity",
+	
+	--Collab-Exclusive Abilities--
+	["witch killer"]     = "Witch Killer Cats",
+	["eva angel killer"] = "EVA Angel Killer Cats",
+	
+	--Resist Abilities--
+	["resist weaken"]    = "Resist Weaken Cats",
+	["resist freeze"]    = "Resist Freeze Cats",
+	["resist slow"]      = "Resist Slow Cats",
+	["resist knockback"] = "Resist Knockback Cats",
+	["resist wave"]      = "Resist Wave Cats",
+	["resist curse"]     = "Resist Curse Cats",
+	["resist toxic"]     = "Resist Toxic Cats",
+	["resist surge"]     = "Resist Surge Cats",
+	
+	--Stat Enhancement Abilities--
+	["defense buff"]     = "Cats with Defense Buff Talent",
+	["attack buff"]      = "Cats with Attack Buff Talent",
+	["move speed up"]    = "Cats with Move Speed Up Talent",
+	["cost down"]        = "Cats with Cost Down Talent",
+	["recover speed up"] = "Cats with Recover Speed Up Talent",
+}

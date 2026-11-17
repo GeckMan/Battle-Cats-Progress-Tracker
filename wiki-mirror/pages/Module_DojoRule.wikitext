@@ -1,0 +1,63 @@
+---	Implements [[Template:DojoRule|DojoRule]]. Basically a copy of
+--	[[Module:ColosseumRule]].
+--
+--	@author [[User:Novastrala|Novastrala]]
+--	@require Module:DojoRule/data (parent module)
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local descs = mw.loadData('Module:DojoRule/data')
+
+---	Standard interface to either get the correct rule or throw an intuitive
+--	error.
+--	@param {string} rule_name Name of Dojo rule
+--	@returns {table} Rule information
+local function desc(rule_name)
+	return descs[rule_name] or error(rule_name .. " is not a recognised Dojo rule!")
+end
+
+---	Get the bolded header part of the Dojo rule.
+function p.header(frame)
+	local args = getArgs(frame)
+	return mw.text.split(desc(args[1]).ingame, '<br>')[1]
+end
+
+---	Get the ingame description of the Dojo rule.
+function p.ingame(frame)
+	local args = getArgs(frame)
+	local info = desc(args[1]).ingame
+	local br = mw.ustring.find(info, '<br>') + #'<br>'
+	return mw.ustring.sub(info, br)
+end
+
+---	Display information about the Dojo rule.
+function p.info(frame)
+	local args = getArgs(frame)
+	local info = desc(args[1]).info
+	info = mw.ustring.gsub(info, "%$(%d+)", function(num)
+		local n = tonumber(num)
+		local param = args[n + 1]
+		if param then
+			return param
+		else
+			return "<i>unknown</i>"
+		end
+	end)
+	info = mw.ustring.gsub(info, "{{plural|1|([^|]*)|[^}]*}}", "%1")
+	-- {{plural|1|one|multiple}} -> one
+	info = mw.ustring.gsub(info, "{{plural|%d+|[^|]*|([^}]*)}}", "%1")
+	-- {{plural|x|one|multiple}} -> multiple
+	info = mw.ustring.gsub(info, "{{plural|[^|]*|[^|]*|([^}]*)}}", "%1")
+	-- {{plural|never gonna give you up|one|multiple}} -> multiple
+	return info
+end
+
+return p
+
+--[=[
+mw.log(p.header({"Weaken"}))
+mw.log(p.ingame({"Knockback"}))
+mw.log(p.info({"Strong"}))
+mw.log(p.info({"Weaken"}))
+mw.log(p.info({"Weaken", "2500"}))
+]=]

@@ -1,0 +1,58 @@
+local p = {}
+local navbox = require('Module:Navbox')
+
+local function onBuildTreeEnd(tree, args)
+	tree.sections = nil
+	-- hook, see [[Module:Navbox/Hooks]].
+end
+
+local function is_ignorable(key)
+	if key == '' then
+		return true
+	end
+	if key:match('^list[%d%.]*$') then
+		return true
+	end
+	if key:match('^group[%d%.]*$') then
+		return true
+	end
+	if key:match('^header[%d%.]*$') then
+		return true
+	end
+
+	return false
+end
+
+function p.get_hidden_navbox(frame, template)
+	local args = {}
+	for k, v in pairs(frame:getParent().args) do
+		if not is_ignorable(k) then
+			args[k] = mw.text.trim(v)
+		end
+	end
+
+	local base = navbox.build(args, true, {}, { onBuildTreeEnd = onBuildTreeEnd })
+
+	base = base:gsub('(<div class="ranger%-section[^>]*>)(</div>)', '%1Loading...%2')
+
+	local revision = frame:callParserFunction('REVISIONID', template.fullText)
+
+	return mw.html.create('div')
+		:addClass('ranger-hidden-navbox')
+		:attr('data-revision-id', revision)
+		:wikitext(base)
+end
+
+function p.main(frame)
+	local tname = frame.args['template'] or frame:getParent().args['template']
+	local template = mw.title.new(tname, 'Template') or error("aa")
+	local current_page = mw.title.getCurrentTitle()
+
+	if mw.title.compare(template, current_page) ~= 0 then
+		return tostring(p.get_hidden_navbox(frame, template)) .. '[[Category:Pages using hidden navboxes]]'
+	end
+
+	return navbox.main(frame)
+end
+
+return p

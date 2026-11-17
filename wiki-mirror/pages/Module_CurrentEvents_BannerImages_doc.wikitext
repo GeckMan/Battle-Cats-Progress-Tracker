@@ -1,0 +1,4 @@
+A hashmap of banner names and images.
+
+==Updating==
+These images are the banner images for the gacha sets. They should be updated to the most recent gacha banner image available whenever a new Uber is added to a gacha set. In addition, if a gacha set is missing from this hashmap, add it in the following format: <code>["<full set name>"] = "[[File:Gacha bnr<banner image id>.png|400px|link=<page name of gacha event>|<full set name>]]",</code>.

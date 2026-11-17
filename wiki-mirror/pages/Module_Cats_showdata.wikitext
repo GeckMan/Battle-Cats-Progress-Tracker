@@ -1,0 +1,46 @@
+---	Module for showing relevant data from the base module.
+local title = mw.title.getCurrentTitle()
+if title.namespace == 0 then
+	error("Using showdata on main namespace")
+end
+
+local p = {}
+
+function p.show_replacements()
+	local Cat = require('Module:Cats')
+	local replacements = mw.loadData('Module:Cats/data2').replacements
+
+	local rows = {}
+	for key, _ in pairs(replacements) do
+		local cat = Cat.new(key)
+
+		local value = ("%s (%03d-%d)"):format(cat:page(), cat.id, cat.form)
+		local row = mw.html.create('tr')
+			:tag('td'):wikitext(value):done()
+			:tag('td'):wikitext(key):done()
+
+		table.insert(rows, { cat = cat, row = row })
+	end
+
+	table.sort(rows, function(a, b)
+		if a.cat.id == b.cat.id then
+			return a.cat.form < b.cat.form
+		end
+
+		return a.cat.id < b.cat.id
+	end)
+
+	local t = mw.html.create('table')
+		:addClass('article-table')
+	t:tag('tr')
+		:tag('th'):wikitext('Actual name'):done()
+		:tag('th'):wikitext('Instead use'):done()
+
+	for _, r in ipairs(rows) do
+		t:node(r.row)
+	end
+
+	return t
+end
+
+return p

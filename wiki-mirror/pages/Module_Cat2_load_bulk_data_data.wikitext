@@ -1,0 +1,46 @@
+local Cat = require( 'Module:Cat2' )
+
+local LEN = 5000
+local units = mw.bucket( 'cat' )
+	.select( unpack( Cat.required_fields ) )
+	.limit( LEN )
+	.run()
+
+if #units >= LEN then
+	error( "too many cooks or something idk use ChunkedIterator" )
+end
+
+local fails = {}
+-- same as [[Module:Cat query helper]]
+-- keep the two of these in sync
+local function setMapValue( map, key, value, noerr )
+	if map[key] and noerr then
+		return
+	end
+	if map[key] then
+		return table.insert( fails, "Duplicate unit name/id found: " .. key )
+	end
+
+	map[key] = value
+end
+
+local map = {}
+for _, v in ipairs( units ) do
+	---@type BucketData
+	v = v
+	v.amt_forms = #v.name_index
+	-- since this will be `mw.loadData`'d, the amount of forms needs to manually
+	-- be set as the normal length getter doesn't work with loaded data
+	for form, name in ipairs( v.name_index ) do
+		setMapValue( map, name, v )
+		setMapValue( map, ("%03d-%d"):format( v.id, form ), v, true )
+	end
+	setMapValue( map, v.id, v )
+	setMapValue( map, v.page_name, v )
+end
+
+if #fails > 0 then
+	error( mw.dumpObject( fails ) )
+end
+
+return map

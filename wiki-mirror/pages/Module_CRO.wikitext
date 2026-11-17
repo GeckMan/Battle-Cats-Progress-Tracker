@@ -1,0 +1,98 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat2 = require('Module:Cat2')
+require('Module:Cat2/load_bulk_data').init(Cat2)
+require('Module:Cat2/string_functions').init(Cat2)
+local Spirit = require('Module:Spirit')
+
+-- Used to sort the table on rarity
+local sortValues = {
+	n = 1,
+	ex = 2,
+	rr = 3,
+	sr = 4,
+	ur = 5,
+	lr = 6
+}
+
+-- CRO number, data sort value, rarity, page, alt forms, obtain method
+local base = [[
+|%d
+| data-sort-value="%d" | %s
+|%s
+|%s
+|%s
+]]
+
+---Display the alternate forms of `cat`
+---@param cat Cat
+---@return string alt_forms
+function p.altforms(cat)
+	local forms = {}
+
+	if cat:to_form(2):form_exists() then
+		table.insert(forms, cat:name())
+		-- to_form modifies the cat so `:name()` will always be correct
+	end
+	if cat:to_form(3):form_exists() then
+		table.insert(forms, cat:name())
+	end
+	if cat:to_form(4):form_exists() then
+		table.insert(forms, cat:name())
+	end
+
+	local forms = table.concat(forms, " / ")
+	return (forms ~= "" and forms) or "N/A"
+end
+
+function p.get_table_row(name, obtain)
+	local summon_id = name:match("^Summon (%d+)$")
+	if summon_id then
+		local data = Spirit.from_ordinal(tonumber(summon_id))
+		if not data then
+			error("Data not found for Summon " .. summon_id)
+		end
+		local orig = Cat2.from_name(data.page_name)
+		local link = ("[[%s|%s]]"):format(data.page_name, name)
+		return base:format(
+			data.id, sortValues[orig.rarity:lower()],
+			orig.rarity, link, "N/A", obtain
+		)
+	end
+
+	local cat = Cat2.from_name(name)
+	return base:format(
+		cat.id, sortValues[cat.rarity:lower()],
+		cat.rarity, Cat2.str.page_link(cat), p.altforms(cat), obtain
+	)
+end
+
+function p._main(args)
+	local argsMax = 2
+	local i = 0
+	local cats = {}
+
+	while true do
+		local name = args[argsMax * i + 1]
+		local obtain = args[argsMax * i + 2]
+		if not (name) then break end
+
+		table.insert(cats, p.get_table_row(name, obtain))
+		i = i + 1
+	end
+
+	return table.concat(cats, '|-\n')
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main{
+	'Cat', 'Beginning - automatically given',
+	'Oda Nobunaga', 'Getting really lucky',
+})
+]=]

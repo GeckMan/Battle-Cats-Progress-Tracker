@@ -1,0 +1,5 @@
+{{Documentation}}
+{{Docbunto|Stamps|preface=
+==Data==
+Data is stored in [[Module:Stamps.csv]]. The general order of lines in the file is: game items, game item combos, event gacha tickets, special cat drops, combo special cat drops (normal first then rare). Where there is a special cat and a ticket the link will be to the cat; otherwise for combo items if there is a single link which suits all items there then that will be used. If there is no suitable link for an item it won't be linked.
+|all=on}}

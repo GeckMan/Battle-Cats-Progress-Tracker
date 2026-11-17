@@ -1,0 +1,132 @@
+local p = {}
+
+local Cat = require( 'Module:Cat2' )
+
+---@alias Ident number|string
+
+-- same as [[Module:Cat2/load bulk data/data]]
+-- keep the two of these in sync
+local function setMapValue( fails, map, key, value )
+	if map[key] then
+		return table.insert( fails, "Duplicate unit name/id found: " .. key )
+	end
+
+	map[key] = value
+end
+
+---Query bucket data for all units with given names.
+---@param names string[]
+---@return fun(name: string): BucketData
+local function query_all_names( names )
+	local where = {}
+	-- used in the bucket query
+	local seen = {}
+	-- hashset of all units that are useful for this query
+
+	for _, name in ipairs( names ) do
+		table.insert( where, { 'cat_names.name', name } )
+		seen[name] = true
+	end
+
+	if #where == 0 then
+		return error( 'No units specified' )
+	end
+
+	local LEN = 500
+
+	local units = mw.ext.bucket( 'cat' )
+		.select( unpack( Cat.required_fields ) )
+		.select( 'cat_names.name', 'cat_names.type', 'cat_names.form' )
+		.join( 'cat_names', 'id', 'cat_names.id' )
+		.where( mw.ext.bucket.Or( unpack( where ) ) )
+		.limit( LEN )
+		.run()
+	mw.incrementExpensiveFunctionCount()
+	-- if you're doing too many queries you should probably try to make it more
+	-- efficient/use the bulk data function
+
+	if #units >= LEN then
+		error( "too many cooks or something idk use ChunkedIterator" )
+	end
+
+	local map = {}
+	local fails = {}
+	for _, data in ipairs( units ) do
+		---@type BucketData
+		data = data
+		setMapValue( fails, map, data['cat_names.name'], data )
+	end
+
+	if #fails > 0 then
+		error( mw.dumpObject( fails ) )
+	end
+
+	return p.map_cat_name( map )
+end
+
+local get_renamed
+---Convert map to name function.
+---@param map table<string | number, BucketData>
+---@return fun(name: Ident): BucketData
+function p.map_cat_name( map )
+	return function( name )
+		name = tonumber( name ) or name
+		local data = map[name]
+		if not data then
+			-- still necessary when loading bulk data
+			if not get_renamed then
+				get_renamed = require( 'Module:Get renamed cat' ).get_renamed_unit_data
+			end
+			data = get_renamed( name )
+		end
+		if data["cat_names.type"] == "renamed_fallback" then
+			local form = data['cat_names.form']
+			require( 'Module:Get renamed cat' ).add_warning( name, data['name_index'][form] )
+		end
+
+		return data
+	end
+end
+
+---Convert function from yielding BucketData to yielding a Cat object.
+---@param f fun(name: Ident): BucketData
+---@return fun(name: Ident, form?: number): Cat
+function p.convert_data_function( f )
+	return function( name, form )
+		local data = f( name )
+		if not data then
+			error( "Data not found for unit " .. name )
+		end
+		if data.should_be then
+			name = data.should_be
+		end
+		local cat = Cat.from_bucket_data( data )
+		if form or data['cat_names.form'] then
+			return cat:to_form( form or data['cat_names.form'] )
+		end
+		return cat:to_form_by_name( name )
+	end
+end
+
+---Get a function to convert all named units to cat.
+---@param names string[]
+---@return fun(name: string): Cat
+function p.get_cat_function( names )
+	return p.convert_data_function( query_all_names( names ) )
+end
+
+return p
+
+--[=[
+local names = { 'Tank Cat', 'Wall Cat', '001-3', 'Cat (Normal Cat)' }
+local f = p.get_cat_function(names, { page_name = true })
+
+local name = 'Tank Cat'
+mw.logObject( f(name) )
+local name = 'Wall Cat'
+mw.logObject( f(name) )
+local name = '001-3'
+mw.logObject( f(name) )
+local name = 'Cat (Normal Cat)'
+mw.logObject( f(name) )
+]=]

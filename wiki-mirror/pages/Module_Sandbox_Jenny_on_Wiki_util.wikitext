@@ -1,0 +1,42 @@
+--- Various functions that could be useful idk
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Enemy = require("Module:Enemies")
+
+---	Basically a macro to give examples of how to use a certain template. See
+--	doc page.
+function p.documentformat(frame)
+	local t = {}
+	for i, demo in ipairs(getArgs(frame)) do
+		local title = demo:match("%((.-)%)")
+
+		if title then
+			demo = demo:sub(#title + 3)
+		end
+
+		demo = ("<pre>\n%s\n</pre>\n\n===Result===\n%s"):format(demo, demo)
+		table.insert(t, ("%s=\n%s"):format(title or i, demo))
+	end
+	return ("<tabber>\n%s\n</tabber>"):format(table.concat(t, '\n\n|-|\n'))
+end
+
+---	`{{subst:#invoke:Sandbox/Jenny on Wiki/util|get_new_csv|670|750}}`
+function p.get_new_csv(frame)
+	local t = {}
+	for i = frame.args[1], frame.args[2], 1 do
+		local succ, enemy = pcall(Enemy.new, i)
+		if succ then
+			table.insert(t, ("%s,%s,%s"):format(i + 2, enemy.page, enemy.page))
+		end
+	end
+	return table.concat(t, "\n")
+end
+
+return p
+
+--[=[
+print(p.documentformat{"{{Clear}}"})
+print(p.documentformat{"(basic){{Clear}}"})
+]=]

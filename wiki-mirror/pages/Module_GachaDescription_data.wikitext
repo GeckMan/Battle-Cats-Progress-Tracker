@@ -1,0 +1,27 @@
+---	Data module for [[Module:GachaDescription2]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@file descriptions
+--	@require Module:CSV
+--	@require Module:GachaDescription/descs.csv (parent module)
+
+---	Output of CSV-parsing [[Module:GachaDescription/descs.csv]]. Hashmap of unit
+--	name to DescriptionData table.
+--	@field map ([@{string} -> @{DescriptionData}])
+local descriptions = {}
+
+--[[
+	@local
+	@table DescriptionData
+	@field {string} 1 Normal Form name
+	@field {string} 2 Normal Form description
+	@field {string} 3 Evolved Form description
+--]]
+
+for t in require('Module:CSV').from_page('Module:GachaDescription/descs.csv', {delim = '|'}) do
+	-- no dupe normal form names
+	assert(not descriptions[t[1]])
+	descriptions[t[1]] = t
+end
+
+return descriptions

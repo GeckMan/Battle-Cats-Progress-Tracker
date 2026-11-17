@@ -1,0 +1,21 @@
+{{Documentation}}
+<includeonly>{{Collapsible}}</includeonly>
+{{Docbunto|Cats|all=on|preface=
+==Usage==
+This module is meant to be used as such:
+<syntaxhighlight lang="lua">
+local Cat = require('Module:Cats')
+local eraser = Cat.new('Eraser Cat')
+</syntaxhighlight>
+
+The variable <syntaxhighlight inline lang="lua">eraser</syntaxhighlight> will now be an object that contains data and functions that give details about Eraser Cat. See [[#Documentation]] for an exhaustive list of these, but they can be used like this:
+<syntaxhighlight lang="lua">
+assert(eraser:page() == "[[Tank Cat (Normal Cat)|Eraser Cat]]")
+</syntaxhighlight>
+
+This allows you to be able to query a lot of data just based on the name of a unit. For example, the entire [[Cat Dictionary]] runs off of this module (See [[Module:CDict]]), where all that is needed is a unit's first form name and the rest of the data (e.g. link to the page, deploy icon of final form) is filled in with just these attributes and methods. See [[Module:Cats/data/doc#catMap|catMap]] for details on what valid names are.
+
+==Other Features==
+*Full support of <syntaxhighlight inline lang="lua">tostring</syntaxhighlight>, such that <syntaxhighlight inline lang="lua">tostring(eraser)</syntaxhighlight> would yield <syntaxhighlight inline lang="lua">'Eraser Cat'</syntaxhighlight>. The main benefit of this is that the inherited invoke statements from Unit (e.g. <syntaxhighlight inline lang="text">{{#invoke:Units/invoke|main|type=func|Cats|normal|Eraser Cat}}</syntaxhighlight>) will display a string despite the actual return type of that method being a Cat object.
+}}
+<includeonly></div>{{Clear}}</includeonly>

@@ -1,0 +1,124 @@
+local p = {}
+
+local catSkip = {}
+local enemySkip = {
+	-- princess punt sweets duplicates
+	[28] = true,
+	[29] = true,
+	[30] = true,
+	-- placeholders
+	[564] = true,
+	[565] = true,
+	[566] = true,
+	[567] = true,
+	[568] = true,
+	[569] = true,
+	[644] = true
+}
+
+---	Sets a seed for `math.random` using the time for the current day
+function p.setRandomseed()
+	local current = os.date('*t')
+	local currentDay = {
+		year = args.year or args[4] or current.year,
+		month = args.month or args[2] or current.month,
+		day = args.day or args[3] or current.day,
+		hour = 0,
+		min = 0,
+		sec = 0
+	}
+	local day = os.time(currentDay)
+	math.randomseed(day)
+end
+
+local function rarity_str(rarity)
+	local fullNames = {
+		N = 'Normal',
+		EX = 'Special',
+		RR = 'Rare',
+		SR = 'Super Rare',
+		UR = 'Uber Rare',
+		LR = 'Legend Rare',
+	}
+
+	return fullNames[rarity]
+end
+
+---	Returns the appearance image for a randomly selected cat daily
+--	@return {string} Appearance image and additional information
+function p.cat(frame)
+	args = frame:getParent().args
+	local form_keys = { 'name1', 'name2', 'name3', 'name4' }
+	p.setRandomseed()
+	local query = mw.ext.bucket('cat')
+		.select('page_name', 'id', unpack(form_keys), 'rarity')
+		.where('version', mw.ext.bucket.Null())
+	-- find valid cats excluding PC and Switch units
+
+	local catOptions = {}
+	for _, value in ipairs(query.run()) do
+		table.insert(catOptions, value)
+	end
+
+	-- get info and create appearance image
+	local cat = catOptions[math.random(1, #catOptions)]
+	local amt_forms = 0
+	for i, key in ipairs(form_keys) do
+		if cat[key] then
+			amt_forms = i
+		end
+	end
+
+	local form = math.random(1, amt_forms)
+	local name = cat[form_keys[form]]
+
+	local img = require('Module:Cat images')
+	local file = img.appearance(cat.id, form)
+	local info = ('[[%s|%s]] (%s)'):format(cat.page_name, name, rarity_str(cat.rarity))
+
+	return ('[[File:%s|link=%s|alt=%s|class=notpageimage]]<br>%s'):format(file, cat.page_name, name, info)
+end
+
+---	Returns the appearance image for a randomly selected enemy daily
+--	@return {string} Appearance image and additional information
+function p.enemy(frame)
+	args = frame:getParent().args
+	local Enemy = require('Module:Enemies')
+	local enemyCSV = mw.loadData('Module:Enemies/data')
+	p.setRandomseed()
+
+	-- find valid enemies
+	local enemyOptions = {}
+	for _, value in pairs(enemyCSV.data) do
+		if value[2] ~= '?' and not enemySkip[tonumber(value[1])] then
+			table.insert(enemyOptions, value[2])
+		end
+	end
+	-- create appearance image and info
+	local name = enemyOptions[math.random(1, #enemyOptions)]
+	local enemy = Enemy.new(name)
+
+	local traits = mw.ext.bucket("enemy_stats")
+		.select("traits")
+		.where("name", enemy.name)
+		.run()
+
+	local info
+	if #traits == 1 then
+		local traitList = {}
+		for _, t in pairs(traits[1].traits) do
+			if t == 'StarredAlien' then
+				table.insert(traitList, 'Starred Alien')
+			else
+				table.insert(traitList, t)
+			end
+		end
+		info = ('%s (%s)'):format(enemy.page, table.concat(traitList, '/'))
+	else
+		info = enemy.page
+	end
+
+	return ('[[File:E %03d.png|link=%s|alt=%s|class=notpageimage]]<br>%s'):format(enemy.num, enemy.link, name, info)
+end
+
+return p

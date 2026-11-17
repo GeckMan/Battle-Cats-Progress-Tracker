@@ -1,0 +1,94 @@
+---	Module backend of [[Template:Mission]].
+--
+--	@module	Mission
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Validation
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local validation = {}
+---	Stolen from [[Module:Validation]].
+function validation.named_args(args, named_args)
+	local named_args2 = {}
+	for _, value in ipairs(named_args) do
+		named_args2[value] = true
+	end
+	for key in pairs(args) do
+		if type(key) ~= "number" and not named_args2[key] then
+			return false, key
+		end
+	end
+
+	return true
+end
+
+function p.get_mission_node(args)
+	local container = mw.html.create('div')
+		:addClass("mission-entry")
+		:addClass(args.type)
+
+	local imgType = args[3]
+	if imgType == "true" then imgType = "misc" end
+	-- true form uses same background as misc
+	local image = ("[[File:Stamp reward %s.png|60px|link=|%s]]"):format(imgType, args[2])
+	if args[3]:find("%.") then
+		-- if is a file name use that as override
+		image = ("[[File:%s|60px|link=|%s]]"):format(args[3], args[2])
+	end
+	container:tag('div')
+		:addClass("image-wrapper")
+		:wikitext(image)
+
+	container:tag('div')
+		:addClass("condition")
+		:wikitext(args[1])
+
+	container:tag('div')
+		:addClass("separator")
+
+	local rewardText = "Reward: %s"
+	if args[3] == "misc" then
+		rewardText = 'Cat Unit Reward: "%s"'
+	elseif args[3] == "true" then
+		rewardText = 'True Form Reward: "%s"'
+	end
+	container:tag('div')
+		:addClass("reward")
+		:wikitext(rewardText:format(args[2]))
+
+	return container
+end
+
+function p.main(frame)
+	local t = mw.html.create('div')
+		:addClass('mission-table')
+
+	for i, value in ipairs(getArgs(frame)) do
+		local s, args = pcall(mw.text.jsonDecode, value)
+		if not s then
+			error('Argument #' .. i .. ' had an error when decoding.\n<pre>' .. value .. '</pre>')
+		end
+		local named_args = { "type" }
+		local success, fail_arg = validation.named_args(args, named_args)
+		if not success then
+			error("Unrecognised key in entry #" .. i .. ": " .. fail_arg)
+		end
+
+		local n = p.get_mission_node(args)
+		t:node(n)
+	end
+
+	return t
+end
+
+return p
+
+--[=[
+local mission1 = {
+	'Level up one Cat the Upgrade menu!<br>(Tap the "Power Up!" button to upgrade a Cat)',
+	"Cat Food +20",
+	"food",
+}
+mw.log(p.main { mw.text.jsonEncode(mission1) })
+]=]

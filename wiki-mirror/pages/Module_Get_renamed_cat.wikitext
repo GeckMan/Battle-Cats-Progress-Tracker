@@ -1,0 +1,52 @@
+local p = {}
+
+---Note: Assumes that the unit is already known to exist in renames.
+---@param renames table
+---@param name string
+---@return string
+function p.get_renamed_unit(renames, name)
+	mw.ext.bucket("template_log").put({
+		template_name = "Module:get renamed cat old function too",
+		log_level = "warn",
+		log_key = "module_cats_global_rename",
+		data = name,
+	})
+	local fmt = "Debug: %s uses globally renamed cat (should be %s)"
+	mw.addWarning(fmt:format(mw.dumpObject(name), mw.dumpObject(renames[name])))
+	return renames[name]
+end
+
+function p.add_warning(name, should_be)
+	mw.loadData('Module:Cat renames')
+	-- so we can register as a transclusion
+	mw.ext.bucket("template_log").put({
+		template_name = "Module:Get renamed cat",
+		log_level = "warn",
+		log_key = "module_cats_global_rename",
+		data = name .. ' -> ' .. should_be,
+	})
+
+	local fmt = "Debug: %q uses globally renamed cat (should be %q)"
+	mw.addWarning(fmt:format(name, should_be))
+end
+
+local renames
+---Get bucket data for renamed unit.
+---@param name string
+---@return BucketData
+function p.get_renamed_unit_data(name)
+	if not renames then
+		renames = mw.loadData('Module:Cat renames')
+	end
+
+	local next = renames[name]
+	if not next then
+		error(mw.dumpObject(name) .. " is not recognised as a valid cat name")
+	end
+
+	p.add_warning(name, next.should_be)
+
+	return next
+end
+
+return p

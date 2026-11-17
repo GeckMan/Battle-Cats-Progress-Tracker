@@ -1,0 +1,54 @@
+local p = {}
+local Cat = require('Module:Cats')
+local getArgs = require('Module:Arguments').getArgs
+
+-- local descriptions = mw.loadData('Module:Variant/data')
+
+---	Get full table row for individual variant
+--	@param {string} name
+--	@param {string} desc
+--	@return {string} Wikitext table row
+function p.tr(name, desc)
+	local cat = Cat.new(name)
+	local tr = {'|-', cat.page, cat:image_str('deploy'), desc}
+	return table.concat(tr, '\n|')
+end
+
+function p._main(args)
+	local i = 0
+	local variants = {}
+
+	while true do
+		local name = args[i + 1]
+		local desc = args[i + 2]
+		if not (name) then break end
+
+		if desc and not pcall(Cat.new, desc) then -- use supplied desc
+			i = i + 2
+		else
+			local descname = descriptions[name]
+			if descname then -- if desc exists in descs.csv
+				desc = descname[2]
+			else
+				desc = '?'
+			end
+			i = i + 1
+		end
+
+		table.insert(variants, p.tr(name, desc))
+	end
+
+	return table.concat(variants, '\n')
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p._main{'Doge Dark', 'A [[:Category:Black Enemies|Black]] variant of Doge with superior overall stats and more knockbacks. Drops good amounts of money for how easily it is killed.'})
+print(p._main{'Doge Dark'})
+print(p._main{'Doge Dark', 'Shibalien', 'Doge'})
+]=]

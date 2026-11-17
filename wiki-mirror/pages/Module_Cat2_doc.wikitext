@@ -1,0 +1,71 @@
+{{Documentation}}
+:''This doc is updated as of [[Special:Diff/483036]].''
+This module provides various useful functions for cats. It is aimed to be a proper replacement for most uses of [[Module:Cats]] ([[Module:Units/invoke]] being the exception).
+
+== Usage ==
+
+This module defines a "Cat" class that has various functions. The documentation is done with code annotations following the format of https://luals.github.io/wiki/definition-files/. This is the format that the Lua VSCode extension uses. You can copy this module to your local machine and get LSP support for the cat object. Take that Docbunto!
+
+<syntaxhighlight lang="lua">
+local Cat = require('Module:Cat2')
+local data = mw.ext.bucket('cat')
+	.select(unpack(Cat.required_fields))
+	.where('id', 0)
+	.run()
+---@type Cat
+local mohawk = Cat.from_bucket_data(data[1], 3)
+assert(mohawk:name(), "Mohawk Cat")
+</syntaxhighlight>
+
+However, in most cases it's probably much easier to use [[Module:Cat query helper]] instead of manually querying the cat bucket. But for example, [[Module:DailyUnit]] is an exception to that.
+
+== Sub-modules ==
+
+A submodule can be loaded with <code>require</code> like so:
+
+<syntaxhighlight lang="lua">
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+require('Module:Cat2/string_functions').init(Cat)
+</syntaxhighlight>
+
+The reason it still uses <code>require</code> is so that [[Template:Dependency list]] is happy. Is the entire module system a bad design system? maybe.
+
+=== Example ===
+
+If you define a page called "Module:Cat2/omgnew", with this:
+
+<syntaxhighlight lang="lua">
+local omgnew = {}
+
+---Convert cat names to JSON.
+---@param cat Cat
+---@return string
+function omgnew.get_names_json(cat)
+	return mw.text.jsonEncode(cat.names)
+end
+
+return {
+	init = function(p)
+		p.omgnew = omgnew
+	end
+}
+</syntaxhighlight>
+
+Then you can now use this submodule like:
+
+<syntaxhighlight lang="lua">
+local Cat = require('Module:Cat2')
+require('Module:Cat2/omgnew').init(Cat)
+-- ... (define `cat` as an instance of the `Cat` class.
+mw.log(Cat.omgnew.get_names_json(cat))
+</syntaxhighlight>
+
+You ''can'' modify <code>p</code> however you want, but you should probably stick to the format that other submodules do. Especially, please stick to the format of returning return a table, with a function <code>init</code> that modifies the return package (<code>p</code>) of Cat2.
+
+=== List of submodules ===
+<dpl>
+titlematch=Cat2/%
+nottitlematch=%/data|%/doc
+ordermethod=sortkey
+</dpl>

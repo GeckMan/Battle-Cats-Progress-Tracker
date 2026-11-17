@@ -1,0 +1,44 @@
+---	Get an ability's icon.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local yesno = require('Module:Yesno')
+local icons = mw.loadData('Module:AbilityIcon/data')
+
+function p.icon(icon, size, nolink)
+	if nolink then
+		return ("[[File:%s|%dpx|link=|%s]]"):format(icons[icon], size, icon)
+	else
+		return ("[[File:%s|%dpx|link=%s|%s&nbsp;]]"):format(icons[icon], size, icon, icon)
+	end
+	-- Note: won't work for some talent-specific things e.g. resist or
+	-- attack/defense buffs
+end
+
+function p._main(args)
+	local size = args.size or 30
+	local nolink = yesno(args.nolink or false)
+	if nolink == nil then
+		error(args.nolink .. ' is not recognised as a yes or no value.')
+	end
+
+	local t = {}
+	local icons = {}
+	for _, icon in ipairs(args) do
+		table.insert(t, p.icon(icon, size, nolink))
+		table.insert(icons, icon)
+	end
+
+	return mw.html.create('span')
+		:addClass('ability-icons')
+		:attr('data-abilities', mw.text.jsonEncode(icons))
+		:wikitext(table.concat(t, ''))
+		-- do not update without considering the bucket stuff from [[Module:Cat Stats 1.2]]
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p

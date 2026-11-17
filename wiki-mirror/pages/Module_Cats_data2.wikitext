@@ -1,0 +1,60 @@
+---	Data module for [[Module:Cats]].
+--
+--	@submodule data
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local data = {}
+
+local LEN = 5000
+data.units = mw.bucket('cat')
+	.select('id', 'name1', 'name2', 'name3', 'name4', 'page_name', 'rarity', 'replacements_json')
+	.limit(LEN)
+	.run()
+
+if #data.units >= LEN then
+	error("too many cooks or something idk use ChunkedIterator")
+end
+
+local fails = {}
+local function setMapValue(map, unit, key, i, force)
+	if not unit[key] then
+		if not force then
+			return
+		end
+
+		return table.insert(fails, "Missing field " .. key .. " for unit " .. mw.text.jsonEncode(unit))
+	end
+
+	if map[unit[key]] then
+		return table.insert(fails, "Duplicate unit name/id found: " .. unit[key])
+	end
+
+	map[unit[key]] = i
+end
+
+local map = {}
+local replacements = {}
+for i, v in ipairs(data.units) do
+	setMapValue(map, v, 'id', i, true)
+	setMapValue(map, v, 'name1', i, false)
+	setMapValue(map, v, 'name2', i, false)
+	setMapValue(map, v, 'name3', i, false)
+	setMapValue(map, v, 'name4', i, false)
+	setMapValue(map, v, 'page_name', i, true)
+	if v.replacements_json then
+		for k2, v2 in pairs(mw.text.jsonDecode(v.replacements_json)) do
+			assert(not replacements[k2])
+			replacements[k2] = v2
+		end
+	end
+
+	v.replacements_json = nil
+	-- so we aren't exposing this to users of Module:Cats
+end
+data.map = map
+data.replacements = replacements
+
+if #fails > 0 then
+	error(mw.dumpObject(fails))
+end
+
+return data

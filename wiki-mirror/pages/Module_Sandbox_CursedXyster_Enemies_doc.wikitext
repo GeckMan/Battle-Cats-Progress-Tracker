@@ -1,0 +1,37 @@
+{{Documentation}}
+<includeonly>{{Collapsible}}</includeonly>
+like [[Template:EnemyList|enemylist]] but with more functionality<br>
+invoked with [[User:CursedXyster/EnemyList]]
+
+ <nowiki>{{User:CursedXyster/EnemyList|Doge|Snache|Ensanglion the Calamity}}</nowiki>
+{{User:CursedXyster/EnemyList|Doge|Snache|Ensanglion the Calamity}}
+
+ <nowiki>{{User:CursedXyster/EnemyList|px=20|Doge|Snache|Ensanglion the Calamity}}</nowiki>
+{{User:CursedXyster/EnemyList|px=20|Doge|Snache|Ensanglion the Calamity}}
+
+
+you can add custom images too, so long as you add the file extension at the end
+ <nowiki>{{User:CursedXyster/EnemyList|px=50|Monaco.png|Seabreeze Coppermine Promotional.png}}</nowiki>
+{{User:CursedXyster/EnemyList|px=50|Monaco.png|Seabreeze Coppermine Promotional.png}}
+
+and you can blend together custom images and enemy icons easily as well
+ <nowiki>{{User:CursedXyster/EnemyList|Kamisama.c3fdc4d.png|Esoteric Uril|Crazed Tank Cat|Zapy|Hackey|SC35_T2.png}}</nowiki>
+{{User:CursedXyster/EnemyList|Kamisama.c3fdc4d.png|Esoteric Uril|Crazed Tank Cat|Zapy|Hackey|SC35_T2.png}}
+
+
+also you can set appear or appearing to anything that isn't blank and it'll switch it to be like [[Template:EnemiesAppearing|enemiesappearing]]
+ <nowiki>{{User:CursedXyster/EnemyList|appear=jfpiaj|Doge|Masked Grandmaster Cat|Grand Mage Mimon}}</nowiki>
+{{User:CursedXyster/EnemyList|appear=jfpiaj|Doge|Masked Grandmaster Cat|Grand Mage Mimon}}
+
+ <nowiki>{{User:CursedXyster/EnemyList|appearing=jfpiaj|Doge|Masked Grandmaster Cat|Grand Mage Mimon}}</nowiki>
+{{User:CursedXyster/EnemyList|appearing=jfpiaj|Doge|Masked Grandmaster Cat|Grand Mage Mimon}}
+
+you can even add links before the custom images
+ <nowiki>{{User:CursedXyster/EnemyList|Dark Dober|link:Dynasaurus Cat (Uber Rare Cat)|Uni763 c00.png|Cursed luna.png|link:Squire Luno (Uber Rare Cat)|838 1.png|link:Lone Moon Lunos (Uber Rare Cat)|860 1.png}}</nowiki>
+{{User:CursedXyster/EnemyList|Dark Dober|link:Dynasaurus Cat (Uber Rare Cat)|Uni763 c00.png|Cursed luna.png|link:Squire Luno (Uber Rare Cat)|838 1.png|link:Lone Moon Lunos (Uber Rare Cat)|860 1.png}}
+ <nowiki>{{User:CursedXyster/EnemyList|appearing=a|Dark Dober|link:Dynasaurus Cat (Uber Rare Cat)|Uni763 c00.png|Cursed luna.png|link:Squire Luno (Uber Rare Cat)|838 1.png|link:Lone Moon Lunos (Uber Rare Cat)|860 1.png}}</nowiki>
+{{User:CursedXyster/EnemyList|appearing=a|Dark Dober|link:Dynasaurus Cat (Uber Rare Cat)|Uni763 c00.png|Cursed luna.png|link:Squire Luno (Uber Rare Cat)|838 1.png|link:Lone Moon Lunos (Uber Rare Cat)|860 1.png}}
+
+you can also use the format E-ID instead of the enemy's name
+ <nowiki>{{User:CursedXyster/EnemyList|E-012|E-12|E-123|E-506|E-715}}</nowiki>
+{{User:CursedXyster/EnemyList|E-012|E-12|E-123|E-506|E-715}}

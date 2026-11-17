@@ -1,0 +1,11 @@
+{{Documentation}}
+<includeonly>{{Collapsible}}</includeonly>
+{{Docbunto|Cats/data (old)|all=on|preface=
+==Data files==
+All of the data files used here have a header that explains what each column does.
+
+[[Module:Cats/exclusives.csv]] follows the same format as [[Module:Cats/names.csv]] because that makes the implementation easier.
+
+[[Module:Cats/images.csv]] describes cat units whose image files do not line up with their CRO number (as of [[Version 14.2 Update|14.2]] this is exclusively the [[:Category:Ancient Eggs|Ancient Eggs]]). These units use [[:File:Uni000 m00.png|Uni000 m00.png]] for their first form and their second form uses an image of the form <code>Uni{xxx} m01.png</code>. The <code>Ind</code> column simply lists this <code>xxx</code>.
+}}
+<includeonly></div>{{Clear}}</includeonly>

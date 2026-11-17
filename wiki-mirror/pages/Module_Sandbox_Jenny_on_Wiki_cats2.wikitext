@@ -1,0 +1,155 @@
+---	x
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local Cat = require("Module:Cat2")
+require('Module:Cat2/string_functions').init(Cat)
+require('Module:Cat2/load_bulk_data').init(Cat)
+
+function p.recursively_parse_content(orig_content)
+	orig_content = mw.text.trim(orig_content)
+
+	local ts = orig_content:match('File:God cat homemade.png.*({{CDict[^}]*}})$')
+	if ts then
+		return {
+			'[[The Cat God (Special Cat)|The Cat God]]',
+			unpack(p.recursively_parse_content(ts))
+		}
+	end
+
+	local cd = orig_content:match('^{{CDict|([^}]*)}}$')
+	if cd then
+		return mw.text.split(cd, '|')
+	end
+
+	local tt = orig_content:match('^{{#tag:tabber|(.*)}}$')
+	if tt then
+		local t = {}
+		for part in mw.text.gsplit(tt, '{{!}}%-{{!}}') do
+			local title, content = part:match('(.-)=(.*)')
+
+			table.insert(t, {
+				title = mw.text.trim(title),
+				content = p.recursively_parse_content(content),
+			})
+		end
+
+		return t
+	end
+
+	local t = {}
+
+	--[[
+		for title, content in orig_content:gmatch('<!%-%-([^%-]*)%-%->%s*({{CDict[^}]*}})') do
+			table.insert(t, {
+				title = mw.text.trim(title),
+				content = p.recursively_parse_content(content),
+			})
+		end
+
+		for content in orig_content:gmatch('[^>]%s*({{CDict[^}]*}})') do
+			table.insert(t, {
+				title = '???',
+				content = p.recursively_parse_content(content),
+			})
+		end
+	]]
+
+	for dict in orig_content:gmatch('{{CDict[^}]*}}') do
+		table.insert(t, {
+			title = '???',
+			content = p.recursively_parse_content(dict),
+		})
+	end
+
+	return t
+end
+
+function p.get_content()
+	local c = mw.title.new('Cat Dictionary'):getContent()
+
+	local t = {}
+	local tc = c:match('<tabber>(.*)</tabber>')
+	for part in mw.text.gsplit(tc, '|%-|') do
+		local title, content = part:match('(.-)=(.*)')
+
+		table.insert(t, {
+			title = mw.text.trim(title),
+			content = p.recursively_parse_content(content),
+		})
+	end
+
+	return t
+end
+
+function p.flatten_items(items)
+	if items.content then
+		return p.flatten_items(items.content)
+	end
+
+	if type(items[1]) == "string" then
+		return items
+	end
+
+	local t = {}
+	for _, item in ipairs(items) do
+		-- yield from p.flatten_items
+		for _, item2 in ipairs(p.flatten_items(item)) do
+			table.insert(t, item2)
+		end
+	end
+	return t
+end
+
+function p.format_items(items)
+	local t = {}
+	for _, name in ipairs(items) do
+		if name:match('^%[%[') then
+			-- formatted link e.g. cat god
+			table.insert(t, '*' .. name)
+		else
+			table.insert(t, '*' .. Cat.str.page_link(Cat.from_name(name)))
+		end
+	end
+	return table.concat(t, '\n')
+end
+
+function p.add_to_navbox(args, i, items)
+	args['header' .. i] = items.title
+
+	if type(items.content[1]) == "string" then
+		args['list' .. i] = p.format_items(items.content)
+		return
+	end
+
+	for j, group in ipairs(items.content) do
+		local s = i .. '.' .. j
+		args['group' .. s] = group.title
+		args['list' .. s] = p.format_items(p.flatten_items(group.content))
+	end
+end
+
+function p.main()
+	local navbox = require('Module:Navbox')
+	local args = {
+		template = "Template:Cats",
+		title = "With sub-tables",
+		--state = "collapsed",
+		--header_state = "collapsed",
+		striped = "yes",
+		editlinks = "on",
+	}
+
+	local data = p.get_content()
+	for i, items in ipairs(data) do
+		p.add_to_navbox(args, i, items)
+	end
+
+	return navbox.build(args, true)
+end
+
+return p
+
+--[=[
+mw.logObject(p.get_content())
+]=]

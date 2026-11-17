@@ -1,0 +1,10 @@
+local data = mw.loadData('Module:Cat2/load bulk data/data')
+local query_helper = require('Module:Cat query helper')
+
+return {
+	init = function(p)
+		local f = query_helper.map_cat_name(data)
+		p.from_name = query_helper.convert_data_function(f)
+		p.from_number_and_form = query_helper.convert_data_function(f)
+	end
+}

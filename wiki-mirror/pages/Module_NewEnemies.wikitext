@@ -1,0 +1,99 @@
+---	To generate tables containing new enemies in update pages using
+--	[[Template:Update]].
+--
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Enemies
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Enemy = require('Module:Enemies')
+
+-- Wikitext for table
+local tableBase = [[{| class="article-table" border="0" cellspacing="1" cellpadding="1"
+|-
+! scope="col" |ERO
+! scope="col" |Enemy
+! scope="col" |Type
+%s
+|}]]
+local rowBase = [[|-
+|%03d
+|%s
+|%s
+]]
+
+--- Generate table wikitext
+function p._main(args)
+	local counter = 1
+
+	local where = {}
+	local data = {}
+	while true do
+		local name = args[counter]
+		if not name then
+			break
+		end
+
+		if name ~= "-" then
+			local enemy = Enemy.new(name)
+
+			local d = {
+				ero = enemy.num,
+				icon = ("[[File:%s|link=%s|%s]]"):format(enemy:icon(), enemy.link, enemy.name),
+				-- traits = enemy:get_trait_icons(),
+				name = enemy.name,
+				traits = nil,
+			}
+			table.insert(data, d)
+			table.insert(where, { "name", enemy.name })
+			counter = counter + 1
+		else
+			local num = args[counter + 1]
+			local traits = args[counter + 2]
+			local traits_t = {}
+			for trait in mw.text.gsplit(traits, '/') do
+				table.insert(traits_t, mw.text.trim(trait))
+			end
+
+			local d = {
+				ero = num,
+				icon = "[[File:Placeholder.png|64px|link=]]",
+				traits = Enemy.format_trait_icons(traits_t),
+			}
+			table.insert(data, d)
+			counter = counter + 3
+		end
+	end
+
+	local query = mw.ext.bucket('enemy_stats')
+		.select('name', 'traits')
+		.where(mw.ext.bucket.Or(unpack(where)))
+
+	local map = {}
+	for _, enemy in ipairs(query.run()) do
+		if map[enemy.name] and map[enemy.name] ~= enemy.traits then
+			error("Duplicate conflicting traits found for " .. enemy.name)
+		end
+		map[enemy.name] = enemy.traits
+	end
+
+	local rows = {}
+	for _, row in ipairs(data) do
+		local traits = row.traits
+		if not traits then
+			traits = map[row.name] and Enemy.format_trait_icons(map[row.name]) or '?[[Category:Missing enemy traits]]'
+		end
+		table.insert(rows, rowBase:format(row.ero, row.icon, traits))
+	end
+
+	return tableBase:format(table.concat(rows))
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({"Doge", "Doge Dark", "-", "17", "Red/Black/Behemoth", "Infernal Tyrant Nyandam"}))
+]=]

@@ -1,0 +1,28 @@
+---	Data module for [[Module:Stamps]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@file stamps
+--	@require Module:CSV
+--	@require Module:Stamps.csv (parent module)
+
+---	Output of CSV-parsing Module:Stamps.csv.
+--	@field map ([@{string} -> @{StampData}])
+local stamps = {}
+
+--[[
+	@local
+	@table StampData
+	@field {string} 1 Common name (may be blank)
+	@field {string} 2 Image name (as in `Stamp reward %s.png`)
+	@field {string} 3 Page link (may be blank)
+--]]
+
+for line in require('Module:CSV').from_page('Module:Stamps.csv') do
+	if line[1] ~= "" then
+		stamps[line[1]] = line
+	else
+		stamps[line[2]] = line
+	end
+end
+
+return stamps

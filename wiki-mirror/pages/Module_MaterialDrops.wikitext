@@ -1,0 +1,50 @@
+---	Module backend of [[Template:MaterialDrops]].
+--
+--	@module	MaterialDrops
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+---	Returns the template text
+function p._main(args)
+	local container = mw.html.create('table')
+		:addClass('article-table')
+
+	local stages = args.stages
+	local crowns = args.crowns
+
+	local function add_cell(row, tag, content)
+		row:node(mw.html.create(tag):wikitext(content))
+	end
+
+	local function round(n)
+		return math.floor(n + 0.5)
+	end
+
+	local row = container:tag('tr')
+	add_cell(row, 'th', 'Stage No.')
+	for s = 1, stages do
+		add_cell(row, 'th', s)
+	end
+
+	for c = 1, crowns do
+		row = container:tag('tr')
+		add_cell(row, 'th', c .. '♛')
+		for s = 1, stages do
+			add_cell(row, 'td', round(args[c] * args[4 + s]))
+		end
+	end
+
+	return tostring(container)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({'0.75', '1', '1.25', '1.25', '3', '3', '3', '3', '3', '4', '4', '4', crowns='3', stages='6'}))
+]=]

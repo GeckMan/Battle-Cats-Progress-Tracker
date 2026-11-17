@@ -1,0 +1,134 @@
+local p = {}
+local Enemy = require('Module:Enemies')
+local enemyCSV = mw.loadData('Module:Enemies/data')
+
+function getID(name)
+	if name == "?" then
+		ID = -1
+		return
+	end
+	local t = enemyCSV.data[name]
+	if string.match(name, "E%-%d+") then
+		t = enemyCSV.data[string.format("%03d", (string.sub(name, 3, 5)))]
+		mw.logObject(t)
+	end
+	if t == nil then
+		ID = nil
+		return(name)
+	else
+		if t[3] == "" then
+			link = t[2]
+		else
+			link = t[3]
+		end
+		ID = tonumber(t[1]:match("^%d+"))
+		while string.len(ID) < 3 do
+			ID = 0 .. ID
+		end
+	end
+end
+
+function p.main(frame)
+	args = frame:getParent().args
+	if args.px then
+		pix = args.px
+	else
+		pix = 64
+	end
+	local imgs ={}
+	for _, name in ipairs(args) do
+		if string.sub(name, 1, 5) ~= "link:" then
+			getID(name)
+			if ID == nil then
+				if linkc == nil then
+					table.insert(imgs, string.format('[[File:%s|0x%spx]]',name,pix))
+				else
+					table.insert(imgs, string.format('[[File:%s|link=%s|0x%spx]]',name,linkc,pix))
+					linkc = nil
+				end
+			else
+				if ID == -1 then
+					table.insert(imgs, string.format('[[File:Icon_hatena.png|link=https://battlecats.miraheze.org/wiki/|0x%spx]]',pix))
+				else
+					table.insert(imgs, string.format('[[File:Enemy icon %s.png|link=%s|%spx]]',ID,link,pix))
+				end
+			end
+		else
+			linkc = string.sub(name, 5, #name)
+		end
+	end
+	return table.concat(imgs,' ')
+end
+
+function p.appearing(frame) -- most of this is just taken from [[Module:EnemiesAppearing]], i simply changed it to use my code that allows displaying of any image
+	args = frame:getParent().args
+	local enemies = {}
+	for _, name in ipairs(args) do
+		if string.sub(name, 1, 5) ~= "link:" then
+			getID(name)
+			if ID == nil then
+				if linkc == nil then
+					table.insert(enemies, string.format('[[File:%s|0x44px]]',name))
+				else
+					table.insert(enemies, string.format('[[File:%s|link=%s|0x44px]]',name,linkc))
+					linkc = nil
+				end
+			else
+				if ID == -1 then
+					table.insert(enemies, '[[File:Icon_hatena.png|link=https://battlecats.miraheze.org/wiki/|0x44px]]')
+				else
+					table.insert(enemies, string.format('[[File:Enemy icon %s.png|link=%s|0x44px]]',ID,link))
+				end
+			end
+		else
+			linkc = string.sub(name, 5, #name)
+		end
+	end
+	local container = mw.html.create('div')
+		:cssText(
+			"position:relative;"
+			.. "height:auto;"
+			.. "width:100%;"
+			.. "margin:12px 0;"
+			.. "overflow:hidden;"
+			.. "overflow-x:auto;"
+			.. "text-align:center;"
+		)
+		:wikitext(
+			("[[File:EnemiesAppearing%d.jpg|570px|link=|Enemies Appearing]]")
+			:format((#enemies <= 10 and #enemies or 0))
+		)
+		:addClass('enemy-preview')
+		:addClass('overflow-shadow')
+
+	local div = container:tag('div'):cssText(
+		"position: absolute;"
+		.. "width: 570px;"
+		.. "height: 118px;"
+		.. "top: 0;"
+		.. "left: max(0px, 50% - 285px);"
+	)
+	local offset = 44 * math.floor(#enemies / 2) + 8
+	-- offset in px of the first enemy image
+	if #enemies % 2 == 0 then offset = offset - 22 end
+	for _, enemy in ipairs(enemies) do
+		div:node(p.img_node(enemy, offset))
+		offset = offset - 44
+	end
+	return container
+end
+
+function p.img_node(enemy, xOffset)
+	local div = mw.html.create('div')
+		:cssText(
+			"position:absolute;"
+			.. "top:calc(50% + 1.54px);"
+			.. "left:calc(50% - " .. xOffset .. "px);"
+			.. "transform: translate(-25%, -25%);"
+		)
+		:wikitext(enemy)
+		:addClass('enemy-preview-img')
+	return div
+end
+
+return p

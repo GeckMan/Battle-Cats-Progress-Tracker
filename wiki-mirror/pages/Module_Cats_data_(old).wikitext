@@ -1,0 +1,157 @@
+---	Data module for [[Module:Cats]]. This has been superseded by
+--	[[Module:Cats/data2]].
+--
+--	@submodule data
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:CSV
+--	@require Module:Cache
+--	@require Module:Cats/names.csv (parent module)
+--	@require Module:Cats/exclusives.csv (parent module)
+--	@require Module:Cats/images.csv (parent module)
+error('Module:Cats/data has been superseded by Module:Cats/data2')
+local cache = require('Module:Cache').load_cache('Module:Cats/data')
+if cache then
+	return cache
+end
+
+local csv = require('Module:CSV')
+local args = {delim = '\t'}
+
+---	@table catData
+--	@field {catNames} names
+--	@field {catMap} map
+--	@field {catImages} images
+--	@todo rename `names`, data is more appropriate since also contains CRO num
+--	and rarity and link etc.
+local data = {
+	names = {},
+	map = {},
+	images = {}
+}
+
+--[[
+	@local
+	@table catNames
+	@field names ([@{number} -> @{catNames.t}])
+	@usage
+local cat = data.names[1]
+assert(cat[1] == 0)
+assert(cat[3] == 'Macho Cat')
+assert(cat[7] == 'N')
+--]]
+
+--[[
+	@local
+	@table catNames.t
+	@field {number} 1 CRO number
+	@field {string} 2 Normal form name
+	@field {string} 3 Evolved form name
+	@field {string} 4 True form name
+	@field {string} 5 Ultra form name
+	@field {string} 6 Page name
+	@field {string} 7 Rarity short code
+--]]
+
+--[[
+	Maps Cat name (normal, evolved, true, ultra and page name) to index in
+	@{catNames}
+	@local
+	@table catMap
+	@field map ([@{string} -> @{number}])
+	@usage
+local normal = 'Tank Cat'
+assert(data.names[ data.map[normal] ][2] == normal)
+-- -- You could also use 'Wall Cat', 'Eraser Cat', or 'Tank Cat (Normal Cat)' to
+-- -- get the other forms of Tank Cat
+	@warning The following Cats have different names to their wiki names:
+	* `Cat Bros (Special Cat)`, first form: `Cat Bros EX`
+	* `Cat Bros (Rare Cat)`, first form: `Cat Bros R`
+	* `Kitaro Cat & Nezumi-Otoko Cat (PC Uber Rare Cat)`,
+	  second form: `Kitaro Cat & Nezumi-Otoko Cat 2`
+	* `Cat Bros (Switch Special Cat)`, first form: `Cat Bros Sw`
+	* `Kabuto Cat (Switch Special Cat)`, first form: `Kabuto Cat Sw`
+	* `Kuwagata Cat (Switch Special Cat)`, first form: `Kuwagata Cat Sw`
+--]]
+
+---	Add the cat represented by `t` to `data`
+--	@param {table} t
+--	@note Modifies global variable `data`, adds to `names` and `map`
+--	@todo Fix hardcoded file name
+local function addCatName(t)
+	local num = #data.names + 1
+	for i = 1, 6 do
+		if t[i] ~= '' and not t[i]:match("Special Abilities") then
+			assert(
+				not data.map[t[i]],
+				"Duplicate name found in Module:Cats/names.csv: " .. t[i]
+			)
+			data.map[t[i]] = num
+		end
+	end
+	assert(
+		not data.names[num],
+		"Duplicate number found in Module:Cats/names.csv: " .. num
+	)
+	assert(#t == 7, "Error: Module:Cats/names.csv incorrectly formatted")
+	t[1] = tonumber(t[1]) or error('CRO number must be numeric!')
+	data.names[num] = t
+end
+
+local catNames = csv.from_page('Module:Cats/names.csv', args)
+catNames()
+-- get rid of header row
+
+for t in catNames do
+	addCatName(t)
+end
+
+local exclusives = csv.from_page('Module:Cats/exclusives.csv', args)
+exclusives()
+-- get rid of header row
+
+for t in exclusives do
+	addCatName(t)
+end
+
+--[[
+	Maps CRO number (`catData.t[1]`, not the number from @{catMap}) to image
+	indicator number. Currently only used for Ancient Eggs.
+	@local
+	@table catImages
+	@field images ([@{number} -> @{number}])
+	@usage
+local cat = 'Ancient Egg: N101'
+cat = data.names[ data.map[cat] ]
+assert(data.images[ cat[1] ] == 2)
+--]]
+
+local catImages = csv.from_page('Module:Cats/images.csv', args)
+catImages()
+-- get rid of header row
+
+for line in catImages do
+	local num = tonumber(line[1])
+	local ind = tonumber(line[2])
+	assert(num and ind, "CRO and indicator number must be numeric!")
+	assert(
+		not data.images[num],
+		"Duplicate number found in Module:Cats/images.csv: " .. num
+	)
+	data.images[num] = ind
+end
+
+return data
+
+--[=[
+for num, t in pairs(p.names) do
+	for k, part in pairs(t) do
+		print(num, k, part)
+	end
+end
+for k, v in pairs(p.map) do
+	print(k, v)
+end
+for num, ind in pairs(p.images) do
+	print(num, ind)
+end
+]=]

@@ -1,0 +1,303 @@
+---	General-purpose helper module offering many functions to help deal with
+--	cats.
+--
+--	@classmod Cat
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cats/data2 (parent module)
+
+---	Cat object.
+--	@type Cat
+local Cat = {}
+
+local renames
+local get_renamed_unit
+-- will be lazy-loaded
+
+---	Output of [[Module:Cats/data2]]
+--	@member {mw.loadData} catData
+local catData = mw.loadData('Module:Cats/data2')
+
+local gfk_keys = { 'name1', 'name2', 'name3', 'name4' }
+---Get form name key in catData table.
+--@param f any
+--@return string
+local function get_form_key(f)
+	return gfk_keys[f]
+end
+
+local function get_cat_and_form(placeholder_name, id, form)
+	mw.ext.bucket("template_log").put({
+		template_name = "Module:Cats",
+		log_level = "info",
+		log_key = "module_cats_fallback",
+		data = placeholder_name,
+	})
+	local fmt = "Debug: %s uses Module:Cats fallback"
+	mw.addWarning(fmt:format(mw.dumpObject(placeholder_name)))
+	-- warn so it gets fixed, but also allow
+
+	local idx = catData.map[id]
+	local data = catData.units[idx]
+	if not data then
+		error(placeholder_name .. ' is not recognised as a valid cat/page.')
+	end
+	return data[get_form_key(form)]
+end
+
+---	Create new @{Cat} object with name/page given
+--	@constructor
+--	@param {string} name Cat's name
+--	@return {Cat} Cat object
+--	@error Cat name empty
+--	@error Cat name not recognised
+--	@usage local cat = Cat.new('Eraser Cat')
+function Cat.new(name)
+	assert(name ~= '', 'Name cannot be empty')
+
+	if renames and renames[name] and not catData.map[name] then
+		-- make sure both that renames exists and that the given name isn't in
+		-- catData
+		-- (you want to be able to add to renames _before_ actually renaming the
+		-- unit)
+		name = get_renamed_unit(renames, name)
+	end
+	-- apply rename + warning
+
+	local cat = {}
+
+	if not catData.map[name] then
+		local id, form = string.match(name, '^(%d+)%-(%d)$')
+		if id and form then
+			return Cat.new(get_cat_and_form(name, tonumber(id), tonumber(form)))
+		end
+
+		if not renames then
+			get_renamed_unit = require('Module:Get renamed cat').get_renamed_unit
+			renames = mw.loadData('Module:Cat renames/names')
+		end
+		if renames[name] then
+			return Cat.new(get_renamed_unit(renames, name))
+		end
+
+		error(name .. ' is not recognised as a valid cat/page.')
+	end
+	-- apply id-fallback mapping
+
+	local idx = catData.map[name]
+	local data = catData.units[idx]
+	--[[
+		Internal table holding cat data.
+		@private
+		@member {table} cat._data
+	]]
+	cat._data = data
+
+	--[[
+		Cat's CRO ID
+		@member {number} cat.id
+	--]]
+	cat.id = data.id
+
+	--[[
+		Cat's name
+		@member {string} cat.name
+	--]]
+	--[[
+		Unique name s.t. Cat.new(cat.uniqueName) = cat
+		@member {string} cat.uniqueName
+	--]]
+	--[[
+		Cat's form number (1 = normal etc.)
+		@member {number} cat.form
+	--]]
+	local f
+	if name == data.name1 then
+		f = 1
+	elseif name == data.name2 then
+		f = 2
+	elseif name == data.name3 then
+		f = 3
+	elseif name == data.name4 then
+		f = 4
+	else
+		f = 1
+	end
+	cat.form = f
+	cat.uniqueName = data[get_form_key(f)]
+	cat.name = data[get_form_key(f)]
+
+	--[[
+		Page name of unit (e.g. `Cat (Normal Cat)`)
+		@member {string} cat.link
+	--]]
+	cat.link = data.page_name
+	--[[
+		Short code of cat's rarity (`N`, `EX`, `RR`, etc.)
+		@member {string} cat.rarity
+	--]]
+	cat.rarity = data.rarity
+
+	-- For Cats like all 3 Cat Bros, fix cat.name to be the proper unit name
+	cat.name = Cat:_clean_name(cat.name)
+
+	local mt = {
+		__index = Cat,
+		-- what happens when you call tostring(cat)
+		__tostring = function(cat)
+			return cat.name
+		end
+	}
+	setmetatable(cat, mt)
+	return cat
+end
+
+---	Create new @{Cat} object from Cat's ID. Always returns first form.
+--	@usage
+--	assert(Cat.from_number(0).name == "Cat")
+function Cat.from_number(num)
+	return Cat.new(tonumber(num))
+end
+
+---	Create new @{Cat} object from Cat's ID and form.
+--	@usage
+--	assert(Cat.from_number_and_form(0, 3).name == "Mohawk Cat")
+function Cat.from_number_and_form(num, form)
+	return Cat.new(tonumber(num)):_to_form(form)
+end
+
+---	@section Methods
+
+---	For cats where supplied name has to be different to actual name, transform
+--	key into name.
+--	@param {string} name Name as supplied to template
+--	@return {string} Proper name of unit
+--	@private
+function Cat:_clean_name(name)
+	return catData.replacements[name] or name
+end
+
+---	@return {string} Formatted link to Cat's page
+function Cat:page()
+	return ('[[%s|%s]]'):format(self.link, self.name)
+end
+
+---	Convert current cat into form `f`
+--	@param {number} f Form to convert to
+--	@return {Cat | nil} cat Cat with form `f`
+--	@private
+function Cat:_to_form(f)
+	local k = get_form_key(f)
+	if not k then return nil end
+
+	local name = self._data[k]
+	if not name then return nil end
+
+	return Cat.new(name)
+end
+
+---	Convert Cat to normal form
+--	@return {Cat | nil} cat
+function Cat:normal()
+	return self:_to_form(1)
+end
+
+---	Convert Cat to evolved form
+--	@return {Cat | nil} cat
+function Cat:evolved()
+	return self:_to_form(2)
+end
+
+---	Convert Cat to true form
+--	@return {Cat | nil} cat
+--	@note Naming has to be inconsistent because `true` is reserved and would
+--	cause a compiler error
+function Cat:true_form()
+	return self:_to_form(3)
+end
+
+---	Convert Cat to true form
+--	@return {Cat | nil} cat
+function Cat:ultra()
+	return self:_to_form(4)
+end
+
+---	Convert Cat to latest form that exists
+--	@return {Cat | nil} cat
+function Cat:last()
+	return self:ultra() or self:true_form() or self:evolved() or self:normal()
+end
+
+---	@return {string} String representation of cat's rarity
+--	@todo Rarity for Switch and PC Exclusives
+local function rarity_str(rarity)
+	local fullNames = {
+		N = 'Normal',
+		EX = 'Special',
+		RR = 'Rare',
+		SR = 'Super Rare',
+		UR = 'Uber Rare',
+		LR = 'Legend Rare',
+	}
+
+	return fullNames[rarity]
+end
+
+---	@return {string} String representation of cat's rarity
+--	@todo Rarity for Switch and PC Exclusives
+function Cat:rarity_str()
+	return rarity_str(self.rarity)
+end
+
+local img_loaded = false
+---	Load image functions from [[Module:Cat images]].
+--	@usage
+--	local Cat = require('Module:Cats').load_imgfuncs()
+function Cat.load_imgfuncs()
+	if img_loaded then return Cat end
+	img_loaded      = true
+	local img       = require('Module:Cat images')
+
+	Cat.spritesheet = function(cat) return img.spritesheet(cat.id, cat.form) end
+	Cat.deploy      = function(cat) return img.deploy(cat.id, cat.form) end
+	Cat.upgrade     = function(cat) return img.upgrade(cat.id, cat.form) end
+	Cat.storage     = function(cat) return img.storage(cat.id, cat.form) end
+	Cat.appearance  = function(cat) return img.appearance(cat.id, cat.form) end
+
+	return Cat
+end
+
+return Cat
+
+--[=[
+local name = 'Cat'
+local cat = p.new(name)
+print(cat.name)
+print(cat.id)
+print(cat.form)
+print(cat.link)
+print(cat.rarity)
+print(cat)
+
+p.load_imgfuncs()
+print(cat:page())
+print(cat:spritesheet())
+print(cat:deploy())
+print(cat:upgrade())
+print(cat:storage())
+
+-- repeat with cat:normal, cat:evolved, cat:true_form, cat:ultra(), cat:last
+-- don't just copy and paste the full thing otherwise this will fail on the
+-- ultra form as Cat doesn't have a uf
+print(cat:normal().name)
+print(cat:evolved().name)
+print(cat:true_form().name)
+print(cat:ultra().name)
+print(cat:last().name)
+
+-- I should really sort out unit testing
+print(p.new("Cheetah Cat"):last().form)
+print(p.from_number("1"):last().name)
+print(p.from_number(673):last().name)
+print(p.from_number(673):last().form)
+print(p.from_number_and_form(0, 3).name)
+]=]

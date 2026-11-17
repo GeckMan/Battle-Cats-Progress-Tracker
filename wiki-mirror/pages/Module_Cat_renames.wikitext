@@ -1,0 +1,34 @@
+local renames = require('Module:Cat renames/names')
+
+local where = { { 'id' , -1 } }
+-- if `where` is blank then the bucket query below would return every cat. ig
+-- this could also be something like `{ 'page_name', '#' }`
+local reverse_map = {}
+
+for name, rename in pairs(renames) do
+	table.insert(where, { 'name_index', rename })
+	reverse_map[rename] = name
+end
+
+local data = mw.ext.bucket('cat')
+	.select('id', 'page_name', 'name_index', 'rarity', 'replacements_json')
+	-- manually synced with those in [[Module:Cat2]]
+	.where(mw.ext.bucket.Or(unpack(where)))
+	.run()
+-- mw.logObject(data)
+
+local t = {}
+for _, unit_data in ipairs(data) do
+	for _, name in ipairs(unit_data.name_index) do
+		local original = reverse_map[name]
+		if original then
+			local new = mw.clone(unit_data)
+			new.should_be = name
+			new.amt_forms = #unit_data.name_index
+			-- used for the logging in [[Module:Get renamed cat]]
+			t[original] = new
+		end
+	end
+end
+
+return t

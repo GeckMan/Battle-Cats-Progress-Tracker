@@ -1,0 +1,110 @@
+---	Module backend of [[Template:GachaList]].
+--
+--	@module	GachaList
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+require('Module:Cat2/string_functions').init(Cat)
+local cat_query = require('Module:Cat query helper')
+local getArgs = require('Module:Arguments').getArgs
+
+local base = [=[| %s
+|-
+| style="border: 1px solid #bbb; padding: 4px 6px;" | %s]=]
+local subsetBase = '<div style="color: #f60; font-weight: bold;">%s</div>'
+local iconBase = [=[<div class="cropped-icon" style="display: inline-block; width: 69px; height: 53px; overflow: hidden; vertical-align: top; margin: 2px 0;">%s</div>]=]
+local rare = {'Pogo Cat', 'Wheel Cat', 'Salon Cat', 'Jurassic Cat', 'Viking Cat', 'Pirate Cat', 'Thief Cat', 'Bishop Cat', 'Fortune Teller Cat', 'Shaman Cat', 'Witch Cat', 'Archer Cat', 'Swordsman Cat', 'Cat Gunslinger', 'Stilts Cat', 'Tin Cat', 'Rocker Cat', 'Mer-Cat', 'Psychocat', 'Onmyoji Cat', 'Gardener Cat', 'Welterweight Cat', 'Rover Cat', 'Matador Cat', 'Wushu Cat'}
+local super = {'Bodhisattva Cat', 'Delinquent Cat', 'Hip Hop Cat', 'Kotatsu Cat', 'Nerd Cat', 'Swimmer Cat', 'Apple Cat', 'Bath Cat', 'Sushi Cat', 'Juliet Cat', 'Weightlifter Cat', 'Figure Skating Cats', 'Cat Toaster', 'Surfer Cat', 'Vaulter Cat', 'Fencer Cat', 'Nymph Cat'}
+local superG = {'Driller Cat', 'Piledriver Cat', 'Cutter Cat', 'Backhoe Cat', 'Miter Saw Cat'}
+
+local function get_non_special()
+	local nonspecial = {}
+	local unit_tables = {rare, super, superG}
+	for _, t in ipairs(unit_tables) do
+		for _, item in ipairs(t) do
+			nonspecial[item] = true
+		end
+	end
+	return nonspecial
+end
+---	Non-regular units.
+local nonspecial = get_non_special()
+
+---	Returns the template text
+function p._main(args)
+	if args.set == 'rare' then
+		local copy = rare
+		for _, unit in ipairs(args) do
+			table.insert(copy, unit)
+		end
+		args = copy
+	elseif args.set == 'super rare' then
+		local copy = super
+		for _, unit in ipairs(args) do
+			table.insert(copy, unit)
+		end
+		args = copy
+	elseif args.set == 'super rare+' then
+		local copy = super
+		for _, unit in ipairs(superG) do
+			table.insert(copy, unit)
+		end
+		for _, unit in ipairs(args) do
+			table.insert(copy, unit)
+		end
+		args = copy
+	end
+	local icons = {}
+	local links = {}
+	local pageLink, cat
+
+	local allAreRed = true
+	if args.subset then
+		allAreRed = false
+	else
+		for _, name in ipairs(args) do
+			if nonspecial[name] then
+				allAreRed = false
+				break
+			end
+		end
+	end
+
+	local get_cat = cat_query.get_cat_function(args)
+	-- so apparently this just works lol, since args is just the names
+	for _, name in ipairs(args) do
+		cat = get_cat(name)
+		local deploy = Cat.image_str(cat, 'deploy', { size = '80px' })
+		table.insert(icons, iconBase:format(deploy))
+		if nonspecial[name] or args.subset or allAreRed then
+			pageLink = Cat.str.page_link(cat)
+		else
+			pageLink = ("[[%s|%s]]"):format(
+				cat.link,
+				'<span style="color: var(--color-red); font-weight: bold;">' .. name .. '</span>'
+			)
+		end
+		table.insert(links, pageLink)
+	end
+
+	local subset = ''
+	if args.subset then
+		subset = subsetBase:format(args.subset)
+	end
+
+	return base:format(subset .. table.concat(icons, ' '), table.concat(links, ', '))
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({'Hip Hop Cat', 'Cat Base Mini'}))
+print(p.main({'Cutter Cat', 'Neneko', 'Years-End Neneko', 'Moneko', set='super rare'}))
+print(p.main({'Nekoluga', subset='Tales of the Nekoluga'}))
+]=]

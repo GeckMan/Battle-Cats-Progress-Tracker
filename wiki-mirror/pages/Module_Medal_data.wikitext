@@ -1,0 +1,81 @@
+---	Data module for [[Module:Medal]].
+--
+--	@submodule data
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:CSV
+--	@require Module:Medal/medalname.tsv (parent module)
+
+-- name, description, file
+-- name without ★ is key
+-- also add in set of custom ones
+
+---	@table medals
+--	@field names ([@{string} -> @{MedalData}])
+--	@usage local medal = medals["Builder of Empires"]
+local medals = {}
+
+--[[
+	@table MedalData
+	@field {string} name Name of medal (includes ★ characters)
+	@field {string} description Ingame description of medal
+	@field {string} file Name of file for medal
+--]]
+
+local csv = require('Module:CSV')
+-- WARNING Makes the assumption that '|' doesn't actually appear
+local args = {delim = '\t', quote = '|'}
+
+local i = 0
+-- literally the output of resLocal/medalname.tsv
+for t in csv.from_page('Module:Medal/medalname.tsv', args) do
+	-- Update medals with t
+	local name = t[1]
+	local description = t[2]
+	local key = name:match("★ (.*) ★")
+	if not key then
+		error(name .. ' does not match expected pattern "★ (.*) ★"')
+	end
+	assert(not medals[key], "Duplicate medal name found!")
+
+	medals[key] = {
+		name = name,
+		description = description,
+		file = ("Medal %03d.png"):format(i)
+	}
+
+	i = i + 1
+end
+
+local unknown = {
+	{'Bronze',   'An unearned bronze Meow Medal',   'Medal unknown 000.png'},
+	{'Silver',   'An unearned silver Meow Medal',   'Medal unknown 001.png'},
+	{'Gold',     'An unearned gold Meow Medal',     'Medal unknown 002.png'},
+	{'Platinum', 'An unearned platinum Meow Medal', 'Medal unknown 003.png'},
+	{'Unknown',  'A undiscovered Meow Medal',       'Medal lost 000.png'},
+}
+
+for _, t in ipairs(unknown) do
+	local key = t[1]
+	assert(not medals[key], "Duplicate medal name found!")
+
+	medals[key] = {
+		name = t[1],
+		description = t[2],
+		file = t[3]
+	}
+end
+
+return medals
+
+--[=[
+for key, t in pairs(p) do
+	for k, part in pairs(t) do
+		print(key, k, part)
+	end
+end
+
+local medal = medals["Builder of Empires"]
+assert(medal.name == "★ Builder of Empires ★")
+assert(medal.description == "Collect all Gold Treasures from Empire of Cats Ch. 1")
+assert(medal.file == "Medal 000.png")
+]=]

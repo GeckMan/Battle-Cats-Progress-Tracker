@@ -1,0 +1,82 @@
+{{Documentation}}
+Allows you to create a chunked iterator.
+
+==Motivation==
+Let's say you want to iterate over every single item in [[mh:bucket:bucket:move|bucket:move]]. A single Bucket query can only return up to 5000 values at once, whereas that bucket has more than 5000 items. An extremely crude way of iterating through the whole bucket is:
+
+<syntaxhighlight lang="lua">
+local function get_next(limit, offset)
+	return mw.bucket('move')
+		.select('name', 'damage', 'accuracy')
+		.limit(limit)
+		.offset(offset)
+		.run()
+end
+
+local bigtable = {}
+for _, value in ipairs(get_next(5000, 0)) do
+	table.insert(bigtable, value)
+end
+for _, value in ipairs(get_next(5000, 5000)) do
+	table.insert(bigtable, value)
+end
+
+for _, value in ipairs(bigtable) do
+	-- ... (custom logic)
+end
+</syntaxhighlight>
+
+This has a few problems.
+*It will stop working properly if the Bucket has more than 10,000 items.
+*It overfits to the size of bucket:move. Other buckets might not need you to potentially iterate over 10,000 items.
+*It creates a new table and adds in all the queried data to that table: doing so is a complete waste because the data gets duplicated.
+
+==ChunkedIterator==
+===Goal===
+The goal of ChunkedIterator is to essentially work like this:
+<syntaxhighlight lang="lua">
+for _, value in chunkediterator do
+	-- ... (custom logic)
+end
+</syntaxhighlight>
+<syntaxhighlight lang="lua" inline>chunkediterator</syntaxhighlight> should be cleanly iterable inside a for loop, and it should abstract away the actual amount of items it's iterating over. That is to say, the exact same code would work the same regardless of whether you're iterating over 60 items or iterating over 6000 items.
+
+===Usage===
+<syntaxhighlight lang="lua" copy>
+local function get_next(limit, offset)
+	return mw.bucket('move')
+		.select('name', 'damage', 'accuracy')
+		.limit(limit)
+		.offset(offset)
+		.run()
+end
+local args = {
+	chunk_size = 500,
+	offset = 0,
+	maximum = 10000,
+}
+for gid, value, i, j in p.create_chunked_iter(get_next, args) do
+	mw.logObject(gid)
+	mw.logObject(value)
+	mw.logObject(i)
+	mw.logObject(j)
+end
+</syntaxhighlight>
+<syntaxhighlight lang="lua" inline>p.create_chunked_iter</syntaxhighlight> takes two arguments. The first is <code>get_next</code>, which is a function that takes two arguments, <code>limit</code> and <code>offset</code>, and then returns a table. <code>limit</code> and <code>offset</code> are intended to work like the [https://meta.weirdgloop.org/w/Extension:Bucket/Usage Bucket functions of the same name], although you could technically make ChunkedIterator work with non-Bucket data.
+
+The second argument is called <code>args</code> and is a table:
+*<code>chunk_size</code> is how big you want your iteration steps to be (how many items should be in each table that you iterate over). It corresponds to the <code>limit</code> function from Bucket. The maximum that Bucket allows is 5000, the default is 500.
+*<code>offset</code> is the offset from the start. For most cases you probably want this at 0.
+*<code>maximum</code> is the maximum amount of items you want to iterate over. The default is 10,000, which was plucked from [[User:Jenny on Wiki/sandbox2]].
+
+<syntaxhighlight lang="lua" inline>p.create_chunked_iter</syntaxhighlight> will return a function. This function can be iterated over with a for loop, and each iteration will return up to 4 items:
+*<code>gid</code>: the global index of the current value.
+*<code>value</code>: the current value.
+*<code>i</code>: the current chunk you're on.
+*<code>j</code>: the index inside the current chunk you're on.
+
+If bucket:move contained 6,421 items, then the final time that the for loop is executed, these will be the following:
+*<code>gid</code>: 6421
+*<code>value</code>: the very final value that you see if you dive into bucket:move
+*<code>i</code>: 13
+*<code>j</code>: 421

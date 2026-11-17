@@ -1,0 +1,247 @@
+---	Module backend of [[Template:CatCombo]].
+--
+--	@module CatCombo
+--	@alias p
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+--	@require Module:Cats
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+
+---- legacy stuff
+
+-- td value, first is desktop view and second is mobile
+local combotdthingbase = [[|- class="combo-table-image"
+|%s
+|- class="combo-table-basic"
+%s
+]]
+
+local base = [[<div class="overflow-shadow">
+{| class="article-table combo-table %s"
+! Combo Name
+! Cats
+! Combo Effect
+%s
+|}</div>]]
+
+----
+
+---@alias fArgs any
+
+---Get blank html placeholder div.
+---@param left number Left px align.
+---@return MwHtml d Placeholder div.
+function p.blank(left)
+	return mw.html.create('div')
+		:addClass('blank-placeholder')
+		:cssText('left:' .. left .. 'px')
+		:wikitext('[[File:ComboIcon.png|65px|link=|alt=]]')
+end
+
+---Get html div with cat's icon for desktop view.
+---@param cat Cat Cat's form.
+---@param iconsize number icon size in px.
+---@param left number Left px align.
+---@return MwHtml d Cat icon div.
+function p.icon(cat, iconsize, left)
+	local image = Cat.image_str(cat, 'deploy', { size = iconsize .. "px" })
+	return mw.html.create('div')
+		:addClass('unit-icon')
+		:cssText('left:' .. left .. 'px')
+		:wikitext(image)
+end
+
+---Generate formatted link to combo page.
+---@param args fArgs Frame args.
+---@return string
+function p.comboname(args)
+	if args.link == '' then return args[1] end
+	-- if `link=` then don't actually link
+
+	if args.link then
+		return ("[[%s|%s]]"):format(args.link, args[1])
+	end
+
+	return ("[[%s (Combo)|%s]]"):format(args[1], args[1])
+end
+
+---Get text wrapping div for desktop mode.
+---@param args fArgs
+---@return MwHtml
+function p.text(args)
+	local div = mw.html.create('div')
+		:addClass('combo-text')
+
+	local name = mw.html.create('div')
+		:addClass('combo-name')
+		:node(p.comboname(args))
+	div:node(name)
+	local effect = mw.html.create('div')
+		:addClass('combo-effect')
+		:wikitext(args[2])
+	div:node(effect)
+	if args['restriction'] then
+		local restrict = mw.html.create('div')
+			:addClass('combo-restrict')
+			:wikitext(args['restriction'])
+		div
+			:cssText('gap: 3px;')
+			:node(restrict)
+	else
+		div:cssText('gap: 6px;')
+	end
+	-- gap for flexbox is here because sanitized css doesn't like :has()
+	return div
+end
+
+---Get desktop mode view.
+---@param args fArgs
+---@param f CatFunction
+---@return MwHtml
+function p.image(args, f)
+	local main = mw.html.create('div')
+		:addClass('combo-image-main')
+		:wikitext('[[File:ComboBackground.png|600px|link=|alt=]]')
+	main:node(p.text(args))
+
+	local offset_base = 67
+	for num = 1, 5 do
+		main:node(p.blank(186 + num * offset_base))
+	end
+	for num, cat in ipairs(args) do
+		if num > 2 then
+			main:node(p.icon(f(cat), 70, 47.5 + num * offset_base))
+		end
+	end
+
+	return tostring(main)
+end
+
+---Get table cell format.
+---@param args fArgs
+---@param f CatFunction
+---@return string
+function p.table(args, f)
+	local comboname
+	if args.jpname == '' then
+		comboname = p.comboname(args)
+	else
+		comboname = ('%s (%s)'):format(p.comboname(args), args.jpname or '?')
+	end
+
+	local cats = {}
+	for num, cat in ipairs(args) do
+		if num > 2 then
+			table.insert(cats, Cat.image_str(f(cat), 'deploy'))
+		end
+	end
+	local effect
+	if args['restriction'] then
+		effect = ("%s<br>'''Restriction:''' %s"):format(args[2], args['restriction'])
+	else
+		effect = args[2]
+	end
+	return ('| %s\n| %s\n| %s'):format(
+		comboname,
+		table.concat(cats),
+		effect
+	)
+end
+
+---@alias CatFunction fun(name: string): Cat
+
+---Use Module:Cats for p.get_data_function.
+---@return CatFunction
+function p.with_module_cats()
+	require('Module:Cat2/load_bulk_data').init(Cat)
+	return Cat.from_name
+end
+
+---Get function that converts cat name to cat form information.
+---@param args fArgs
+---@return CatFunction
+function p.get_data_function(args)
+	local cats = {}
+	for i, inner_args in ipairs(args) do
+		if i >= 10 then
+			return p.with_module_cats()
+		end
+		-- if we have more than 10 it's probably cheaper to just use Module:Cats
+
+		for j, cat in ipairs(mw.text.jsonDecode(inner_args)) do
+			if j > 2 then
+				table.insert(cats, cat)
+			end
+		end
+	end
+
+	local cq = require('Module:Cat query helper')
+	return cq.get_cat_function(cats)
+end
+
+---Format using no table (e.g. on [[Cat Combo Filter]]).
+---@param args fArgs
+---@param f CatFunction
+---@return string
+function p.notable(args, f)
+	return tostring(p.image(args, f))
+end
+
+---Format inside a table (e.g. on [[Cat Combo]]).
+---@param args fArgs
+---@param f CatFunction
+---@return string
+function p.intable(args, f)
+	return '\n|- class="combo-table-basic"\n' .. tostring(p.table(args, f))
+end
+
+---Format with both table and div view.
+---@param args fArgs
+---@param f CatFunction
+---@return string
+function p.normal(args, f)
+	local tablepart = combotdthingbase:format(tostring(p.image(args, f)), p.table(args, f))
+	return tablepart
+end
+
+---	For use in [[Template:Combos]].
+function p.main(frame)
+	local args = frame:getParent().args
+	local fmt = p.normal
+	if args.format then
+		local fn = mw.text.trim(args.format)
+		if fn == "intable" then
+			fmt = p.intable
+		elseif fn == "notable" then
+			fmt = p.notable
+		else
+			error(fn .. ' is not recognised as a valid cat combo format')
+		end
+	end
+
+	local t = {}
+	local f = p.get_data_function(args)
+	for _, arg in ipairs(args) do
+		table.insert(t, fmt(mw.text.jsonDecode(arg), f))
+	end
+	local concat = table.concat(t)
+	if not args.format then
+		-- i.e. basic format
+		return base:format(args.basic and "basic" or "", concat)
+	end
+	return concat
+end
+
+--- Used in [[Template:CatCombo]].
+function p.jsonify(frame)
+	local args = getArgs(frame, { removeBlanks = false })
+	local t = {}
+	for k, v in pairs(args) do
+		t[k] = v
+	end
+	return mw.text.jsonEncode(t)
+end
+
+return p

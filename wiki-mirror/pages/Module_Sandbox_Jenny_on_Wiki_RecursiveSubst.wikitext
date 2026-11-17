@@ -1,0 +1,91 @@
+--- Module providing helper functions to make
+--  recursively self-substituting templates.
+--
+--  Practical use is limited but it's funny
+--
+--  @module	RecursiveSubst
+--  @alias	p
+--  @author	[[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+
+--- Write the hiding tags in if the template is being substed with no args
+--  
+--  Check if there is a |= in the template call, if so return nothing, if there
+--  isn't then put in the display:none and /span outside the substed part
+--  @param	{frame} frame
+--  @param	{string} tag Tag to hide wikitext
+--  @return	{string} tag returns the tag or nothing if it is already there
+function p.hide(frame, tag)
+	if frame:getParent().args[''] then
+		return ''
+	end
+	return tag
+end
+
+--- Write in the {{subst:<pagename>| part of the output
+--  @param	{frame} frame
+--  @return	{string} subst
+function p.get_subst(frame)
+	return '{{subst:' .. frame:getParent():getTitle() .. '|'
+end
+
+--- Get the args supplied by the parent that are valid according to the rules of
+--  `args.maintain`
+--
+--  @param	{frame} frame
+--  @return	{table} parentArgs args supplied by parent
+--
+--  @note	Rules of `args.maintain`:
+--  * Input must be a number, for all n <= args.maintain then the
+--  parent frame's args[n] is also written to the final output
+function p.get_parent_args(frame)
+	if not frame.args.maintain then return {} end
+
+	-- form (num)?(;arg)*
+	-- perhaps, currently only just num
+	local num = tonumber(frame.args.maintain)
+
+	local parentArgs = {}
+	for i, value in ipairs(frame:getParent().args) do
+		if i <= num then
+			table.insert(parentArgs, value)
+		end
+	end
+
+	return parentArgs
+end
+
+--- Get everything that will be between the {{subst:...| and the final }} at the
+--  end
+--
+--  @param	{frame} frame
+--  @return	{string} content
+function p.get_content(frame)
+	local parentArgs = p.get_parent_args(frame)
+	-- putting this in parentArgs means you don't have a ||= if parentArgs
+	-- returns an empty table, and if parentArgs isn't blank then there
+	-- still isn't a || anywhere
+	table.insert(parentArgs, '=</span>')
+
+	local childArgs = {}
+	for _, value in ipairs(frame.args) do
+		table.insert(childArgs, value)
+	end
+
+	return table.concat(parentArgs, '|')
+	    .. table.concat(childArgs, '|')
+end
+
+--- Module entrypoint
+function p.main(frame)
+	local substed = {
+		p.hide(frame, '<span style="display:none">'),
+		p.get_subst(frame),
+		p.get_content(frame),
+		'<span style="display:none">}}',
+		p.hide(frame, '</span>')
+	}
+	return table.concat(substed)
+end
+
+return p

@@ -1,0 +1,53 @@
+local img = require('Module:Cat images')
+
+local file_link
+-- this will probably end up loaded but eh
+
+---Format a linked image of the cat, using [[Module:file_link]].
+---@param cat Cat
+---@param args table
+---@return string
+local function image(cat, args)
+	if not file_link then
+		file_link = require('Module:file_link')
+	end
+
+	local default_args = {
+		link = cat.link,
+		caption = cat:name(),
+	}
+
+	for k, v in pairs(args) do
+		default_args[k] = v
+	end
+
+	return file_link._main(default_args)
+end
+
+---Format a linked image of the cat, given a function name from
+---[[Module:Cat images]].
+---@param f fun(cat: Cat): string
+---@param cat Cat
+---@param args? table
+---@return string
+local function image_str(f, cat, args)
+	local file_name = f(cat)
+	args = args or {}
+	args.file = file_name
+	return image(cat, args)
+end
+
+return {
+	init = function(p)
+		p.img = {
+			spritesheet = function(cat) return img.spritesheet(cat.id, cat.current_form) end,
+			deploy      = function(cat) return img.deploy(cat.id, cat.current_form) end,
+			upgrade     = function(cat) return img.upgrade(cat.id, cat.current_form) end,
+			storage     = function(cat) return img.storage(cat.id, cat.current_form) end,
+			appearance  = function(cat) return img.appearance(cat.id, cat.current_form) end,
+			animation   = function(cat) return img.animation(cat.id, cat.current_form) end,
+		}
+
+		p.image_str = function(cat, f, args) return image_str(p.img[f], cat, args) end
+	end
+}

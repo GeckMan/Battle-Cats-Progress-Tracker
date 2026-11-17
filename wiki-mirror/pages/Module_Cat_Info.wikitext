@@ -1,0 +1,117 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local cat_image = require('Module:Cat images')
+
+local function isMainNamespace()
+	return mw.title.getCurrentTitle().namespace == 0
+end
+
+function p.categories(cats)
+	local cats = mw.text.trim(cats or '')
+	if cats == '' then
+		return ''
+	end
+	local valid = {
+		Mythic = '[[:Category:Mythic Cats|Mythic]]',
+	}
+
+	local t = {}
+	for cat in mw.text.gsplit(cats, ',') do
+		cat = mw.text.trim(cat)
+		if not valid[cat] and not isMainNamespace() then
+			local v = {}
+			for key, _ in pairs(valid) do table.insert(v, key) end
+			error('Invalid cat category: ' .. cat .. '. Valid categories are: ' .. mw.text.listToText(v))
+		end
+		table.insert(t, valid[cat] or cat)
+	end
+
+	return (" (%s)"):format(mw.text.listToText(t))
+end
+
+function p.rarity(rarity)
+	local map = {
+		N = "[[:Category:Normal Cats|Normal Cat]]",
+		EX = "[[:Category:Special Cats|Special Cat]]",
+		RR = "[[:Category:Rare Cats|Rare Cat]]",
+		SR = "[[:Category:Super Rare Cats|Super Rare Cat]]",
+		UR = "[[:Category:Uber Rare Cats|Uber Rare Cat]]",
+		LR = "[[:Category:Legend Rare Cats|Legend Rare Cat]]",
+	}
+
+	local rarity = mw.text.trim(rarity or '')
+	if map[rarity] then
+		return map[rarity]
+	end
+
+	error((rarity or "<empty arg>") .. ' is not a valid rarity!')
+end
+
+function p.replacemewithaproperinfobox(frame)
+	local args = getArgs(frame)
+
+	local box = mw.html.create('infobox')
+		:attr('theme', 'cat-appearance')
+
+	local id = tonumber(args['ID'])
+	if args.version then
+		id = id + 10000
+	end
+
+	local title = mw.html.create('b')
+	title:wikitext("[[Cat Release Order|Cat Unit]] # ")
+	if isMainNamespace() then
+		title:wikitext(("%03d"):format(id or error('missing Cat ID')))
+	else
+		title:wikitext(args['ID'])
+		-- leniency when not mainspace
+	end
+	if args.version then
+		title:wikitext(("<sup>%s</sup>"):format(args.version))
+	end
+	title:wikitext('<br>')
+	title:wikitext(("<i>%s%s</i>"):format(p.rarity(args.rarity), p.categories(args.categories)))
+	box:tag('title'):tag('default')
+		:node(title)
+
+	local panel = box:tag('panel')
+	local i = 1
+	while true do
+		local name = args['name' .. i]
+		if not name then
+			break
+		end
+
+		local section = panel:tag('section')
+		section:tag('label'):wikitext(name)
+
+		local filename = id and cat_image.appearance(id, i)
+		local given_image = args['image' .. i]
+		if given_image then
+			if id < 10000 and isMainNamespace() then
+				-- i.e. a main cat and we actually care about those so we wanna
+				-- log it so we can eliminate it
+				mw.ext.bucket('template_log').put({
+					template_name = 'Module:Cat Info',
+					log_level = 'warn',
+					log_key = 'cat_info_uses_image',
+					data = ("calculated %q, given %q"):format(filename, given_image)
+				})
+			end
+			filename = given_image
+		end
+		local img = "[[File:%s|300px|center|alt=A screenshot of %s]]"
+		section:tag('data'):tag('default')
+			:wikitext(img:format(filename, name))
+
+		i = i + 1
+	end
+
+	if isMainNamespace() then
+		require('Module:Cat Info/store').store(args)
+	end
+
+	return frame:preprocess('<templatestyles src="Cat_Info/styles.css" />' .. tostring(box))
+end
+
+return p

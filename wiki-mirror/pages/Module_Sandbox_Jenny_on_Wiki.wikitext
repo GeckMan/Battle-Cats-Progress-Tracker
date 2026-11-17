@@ -1,0 +1,52 @@
+local p = {}
+
+function p.display(saved)
+	local t = mw.html.create('table')
+	t:tag('tr')
+		:tag('th'):wikitext('id'):done()
+		:tag('th'):wikitext('form'):done()
+		:tag('th'):wikitext('name'):done()
+
+	for _, rename in ipairs(saved) do
+		t:tag('tr')
+			:tag('td'):wikitext(rename.id):done()
+			:tag('td'):wikitext(rename.form):done()
+			:tag('td'):wikitext(rename.name):done()
+	end
+
+	return t
+end
+
+function p.main(frame)
+	local page = mw.title.getCurrentTitle().fullText
+	if page ~= "Module:Cat renames/names" then
+		return "(Data is only saved on [[Module:Cat renames/names]])"
+	end
+
+	local saved = {}
+	-- for formatting the table
+	for source, target in pairs(require('Module:Cat renames/names')) do
+		local query = mw.ext.bucket('cat_names')
+			.select('id', 'form')
+			.where('name', target)
+			.run()
+		mw.incrementExpensiveFunctionCount()
+		-- we do the inefficient thing because I'm lazy and this page surely
+		-- shouldn't refresh that often
+
+		local d = query[1] or error(target .. ' is not a valid cat name')
+		local to_save = {
+			id = d.id,
+			form = d.form,
+			name = source,
+			type = 'renamed_fallback',
+		}
+
+		mw.ext.bucket('cat_names').put(to_save)
+		table.insert(saved, to_save)
+	end
+
+	return p.display(saved)
+end
+
+return p

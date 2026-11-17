@@ -1,0 +1,9 @@
+{{Documentation}}
+This module exists as an alternative to the specific queries of [[Module:Cat query helper]], instead querying the entirety of [[bucket:cat]] and <code>mw.loadData</code>ing that. As a submodule of [[Module:Cat2]], it is intended to be used like
+<syntaxhighlight lang="lua">
+local Cat = require('Module:Cat2')
+require('Module:Cat2/load_bulk_data').init(Cat)
+mw.log( Cat.from_name('Tank Cat'):name() )
+</syntaxhighlight>
+
+<code>init</code> modifies <code>Cat</code> to add a single function <code>Cat.from_name</code>, which works exactly the same as the function returned from [[Module:Cat query helper]]'s <code>get_cat_function</code>, except being able to query every single cat in the game (including PC/Switch units). Therefore, see Cat query helper for full details on how to use this module.

@@ -1,0 +1,91 @@
+---	Implements the [[Enemy Release Order]].
+--
+--	@module ero
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Enemies
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Enemy = require('Module:Enemies')
+
+-- ERO number, page link, traits, debut stage
+local base = [[
+|%d
+|%s
+|%s
+|%s
+]]
+
+---	Adds extra data to the enemy page
+--	@param {string} page `enemy.page`
+--	@return {string} `page` but with extra data
+function p.add_to_page(page)
+	-- differentiate between Type 10s
+	if page == "[[Type 10 (Event Enemy)|Type 10]]" then
+		return "[[Type 10 (Event Enemy)|Type 10 (Unseen)]]"
+	elseif page == "[[Type 10 (Enemy)|Type 10 (Hometown)]]" then
+		return "[[Type 10 (Enemy)|Type 10 (Hometown Self-Defense Force)]]"
+	end
+
+	-- use all the names for the DL Birthday Cake
+	page = page:gsub("20 Million DL", "20/30/40/50/60/70/80 Million DL")
+
+	return page
+end
+
+function p._main(args)
+	local argsMax = 2
+	local i = 0
+
+	local data = {}
+	local where = {}
+	while true do
+		local name = args[argsMax * i + 1]
+		local debut = args[argsMax * i + 2]
+		if not (name) then break end
+
+		local enemy = Enemy.new(name)
+		local d = {
+			id = enemy.num + 2,
+			link = p.add_to_page(enemy.page),
+			name = enemy.name,
+			debut = debut,
+		}
+		table.insert(data, d)
+		table.insert(where, { "name", enemy.name })
+
+		i = i + 1
+	end
+
+	local query = mw.ext.bucket('enemy_stats')
+		.select('name', 'traits')
+		.where(mw.ext.bucket.Or(unpack(where)))
+		.limit(5000)
+	local traits_map = {}
+	for _, enemy in ipairs(query.run()) do
+		local traits = table.concat(enemy.traits, '/'):gsub('StarredAlien', 'Alien (Star)')
+		if traits_map[enemy.name] and traits_map[enemy.name] ~= traits then
+			error("Duplicate conflicting traits found for " .. enemy.name)
+		end
+		traits_map[enemy.name] = traits
+	end
+
+	local enemies = {}
+	for _, d in ipairs(data) do
+		if not traits_map[d.name] then error("Traits not found for " .. d.name) end
+		local row = base:format(d.id, d.link, traits_map[d.name], d.debut)
+		table.insert(enemies, row)
+	end
+
+	return table.concat(enemies, '|-\n')
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame, { removeBlanks = false }))
+end
+
+return p
+
+--[=[
+print(p.main{'Doge', 'EoC: [[Korea (Empire of Cats)|Stage 1-1]]',
+	'Bears Be Back', 'Monthly: [[Bears Be Back (Monthly Event)|Bears Be Back]]'})
+]=]

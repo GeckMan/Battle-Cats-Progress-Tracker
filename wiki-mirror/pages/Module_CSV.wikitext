@@ -1,0 +1,168 @@
+---	CSV parser meta-module written in Lua.
+--
+--	@script csv
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@todo Convert generators to table option
+--	@todo Write to csv option
+--	@todo Comment character option
+--	@todo Remove header row(s)
+local csv = {}
+
+---	Stolen from [[Module:Utility]].
+local function escape(s)
+	s = s:gsub('([%(%)%.%%%+%-%*%?%[%]%^%$])', '%%%1')
+	return s
+end
+
+---	@table args
+--	@field {nil | table} columns If not nil, allows for naming the csv rows. Default is just an indexed array.
+--	@field {string} delim The delimiter for the csv file, default is <code>,</code>
+--	@field {string} quote Character used when the field contains <code>delim</code> or <code>quote</code>. Maximum 1 ASCII character, cannot be same as <code>delim</code>. Default is <code>"</code>.
+--	@field {string} escape Character used in quoted field before to escape <code>quote</code>. Maximum 1 ASCII character. Default is <code>"</code>.
+--	@warning `delim` may only be 1 ASCII character in length
+local defaultArgs = {
+	columns = nil,
+	delim = ',',
+	quote = '"',
+	escape = '"',
+}
+
+---	Parse a quoted csv field
+--	@param {string} line
+--	@param {number} start
+--	@param {table} args
+--	@return {number}
+local function with_quote(line, start, args)
+	-- position of current pointer
+	local _
+	local pos = start + 1
+	local pattern = ('.-[%s]'):format(escape(args.escape .. args.quote))
+	while true do
+		_, pos = line:find(pattern, pos)
+		-- break if next bit is quote then delim
+		if (line:sub(pos, pos) == args.quote and
+				line:sub(pos + 1, pos + 1) == args.delim) then
+			break
+			-- advance pointer by 2 if is escape followed by quote
+		elseif (line:sub(pos, pos) == args.escape and
+				line:sub(pos + 1, pos + 1) == args.quote) then
+			pos = pos + 1
+		end
+		-- increment pos for next run
+		pos = pos + 1
+	end
+	return pos + 1
+end
+
+---	Turn any one line into a table
+--	@param {string} line
+--	@param {table} args
+--	@return {table}
+local function split_line(line, args)
+	-- return value of function
+	local items = {}
+	-- start of current item
+	local start = 1
+	-- current length of items
+	local count = 0
+	-- char1 is first item after delimiter
+	-- itemEnd is the location of next delimiter
+	-- curItem is the text content of the current item
+	local char1, itemEnd, curItem, _
+
+	line = line .. args.delim
+	while true do
+		char1 = line:sub(start, start)
+
+		-- end of line
+		if char1 == '' then
+			break
+		elseif char1 == args.quote then
+			itemEnd = with_quote(line, start, args)
+			curItem = line:sub(start + 1, itemEnd - 2)
+			curItem = curItem:gsub(escape(args.escape .. args.quote),
+				args.quote)
+		else
+			_, itemEnd = line:find('.-' .. escape(args.delim), start)
+			curItem = line:sub(start, itemEnd - 1)
+		end
+		count = count + 1
+		if args.columns then
+			items[args.columns[count]] = curItem
+		else
+			items[count] = curItem
+		end
+		start = itemEnd + 1
+	end
+
+	return items
+end
+
+---	Transform args into table with only the fields specified in defaultArgs, as
+--	well as ensuring rules of args are followed.
+--	@param {table} args Frame args
+--	@return {table} Processed argument table
+function csv.process_args(args)
+	args = args or {}
+	setmetatable(args, { __index = defaultArgs })
+	assert((#args.quote == 1) and
+		(#args.escape == 1),
+		'Parsing arguments must be of length 1')
+	assert(args.delim ~= args.quote,
+		'Delimiter and quote may not be the same character')
+	assert(#args.delim == 1, 'Delimiter must be of length 1')
+	return args
+end
+
+---	Generator function for CSV parser
+--	@param {string} txt
+--	@param {table} args
+--	@return {function} Generator
+function csv.read(txt, args)
+	args = csv.process_args(args)
+	local lines = mw.text.gsplit(txt, '\n')
+	return function()
+		for line in lines do
+			return split_line(line, args)
+		end
+	end
+end
+
+---	Call csv.read with the page's content as its input
+--	@param {string} pageName
+--	@param {table} args
+--	@return {function} Generator
+--	@warning Increments [[mw:Manual:Parser functions#Expensive parser
+--	functions|expensive parser function]] count
+function csv.from_page(pageName, args)
+	mw.incrementExpensiveFunctionCount()
+	local txt = mw.title.new(pageName):getContent()
+	return csv.read(txt, args)
+end
+
+return csv
+
+--[=[
+for t in p.read([[579,"Kyubey (form"","" 2)",Kyubey (form 2) (Enemy),
+543,Kasli the Bane,"Kasli, Daughter of Chaos",,Kasli the Bane (Uber Rare Cat),
+258,"Codename ""Red Riding""",,]]) do
+	for num, f in ipairs(t) do
+		print(num, ':'..f..':')
+	end
+end
+for t in p.from_page('Module:Enemies.csv', {delim='\t'}) do
+	print(table.concat(t,':'))
+end
+for t in p.from_page('Module:Enemies.csv', {columns={'t','u','v','w','x'}, delim='\t'}) do
+	for key, val in pairs(t) do
+		print(key, ':'..val..':')
+	end
+end
+for t in p.read([[579^*Kyubey (form"," 2)*^Kyubey (form 2) (Enemy)^^^
+543^*Kasli the Bane*^Kasli, Daughter of Chaos^^Kasli the Bane (Uber Rare Cat)^
+258^*Codename "Red Riding"*^^^^]], {delim = '^', quote = '*', escape = '\\'}) do
+	for num, f in ipairs(t) do
+		print(num, ':'..f..':')
+	end
+end
+]=]

@@ -1,0 +1,92 @@
+local p = {}
+
+---Get an iterator over all chunks returned by `get_next`.
+---@param get_next function
+---@param limit number
+---@param offset number
+---@return function
+function p.chunk_iter(get_next, limit, offset)
+	local next = get_next(limit, offset)
+	local chunk_num = 1
+	local initial_offset = offset
+	return function()
+		while true do
+			if offset < initial_offset + chunk_num * limit then
+				offset = offset + limit
+				return chunk_num, next
+			end
+			chunk_num = chunk_num + 1
+			if #next < limit then
+				return
+			end
+			next = get_next(limit, offset)
+		end
+	end
+end
+
+---Flatten `chunk_iter` iterator into a single iterator.
+---@param iterator function Iterator.
+---@param maximum number Maximum amount of values to return.
+---@return function
+function p.flatten_chunked_iter(iterator, maximum)
+	local i, next = iterator()
+	local j = 0
+	local global_idx = 0
+	return function()
+		while true do
+			if global_idx >= maximum then
+				return
+			end
+			j = j + 1
+			if next[j] then
+				global_idx = global_idx + 1
+				return global_idx, next[j], i, j
+			end
+			i, next = iterator()
+			j = 0
+			if not next then
+				return
+			end
+		end
+	end
+end
+
+---@class Args
+---@field chunk_size number
+---@field offset number
+---@field maximum number
+
+---Create a chunked iterator.
+---@param next_func function Function to get the next chunk.
+---@param args Args
+---@return function
+function p.create_chunked_iter(next_func, args)
+	local chunk_size = args.chunk_size or 500
+	local offset = args.offset or 0
+	local maximum = args.maximum or 10000
+
+	return p.flatten_chunked_iter(p.chunk_iter(next_func, chunk_size, offset), maximum)
+end
+
+return p
+
+--[[
+local function get_next(limit, offset)
+	return mw.bucket('move')
+		.select('name', 'damage', 'accuracy')
+		.limit(limit)
+		.offset(offset)
+		.run()
+end
+local args = {
+	chunk_size = 500,
+	offset = 0,
+	maximum = 10000,
+}
+for gid, value, i, j in p.create_chunked_iter(get_next, args) do
+	mw.logObject(gid)
+	mw.logObject(value)
+	mw.logObject(i)
+	mw.logObject(j)
+end
+]]

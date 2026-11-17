@@ -1,0 +1,34 @@
+---	Module to do some things for my [[User:Jenny on Wiki/Storage|storage
+--	page]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@script Storage
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+---	Registers as a transclusion to every named template given, without
+--	returning the content. Useful for templates like {{t|delete}} so that it
+--	can be transcluded without putting the page into [[:Category:Candidates for
+--	deletion|Candidates for deletion]].
+--	@param {Frame} frame
+--	@return {string} List of templates that have been transcluded
+--	@usage '{{#invoke:Sandbox/Jenny on Wiki/Storage|template|Delete|!}}'
+function p.template(frame)
+	local args = getArgs(frame)
+	local templates = {}
+	for _, name in ipairs(args) do
+		-- transcludes the template without registering its content <nowiki>
+		frame:preprocess(("{{%s}}"):format(name))
+		-- </nowiki>
+
+		local msg = ("<code>{{[[Template:%s|%s]]}}</code>"):format(name, name)
+		table.insert(templates, msg)
+	end
+
+	templates[1] = ("Transcluded the following templates: %s")
+		:format(templates[1])
+
+	return table.concat(templates, ', ')
+end
+
+return p

@@ -1,0 +1,30 @@
+---	General-purpose helper module for conjured spirits.
+--
+--	@classmod Spirit
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Spirit/data (parent module)
+local Spirit = {}
+local data = mw.loadData('Module:Spirit/data')
+
+--[[
+Table containing spirit data.
+@table spirit
+@field {number} id Cat Release Order ID.
+@field {string} page_name Page that spirit exists on.
+--]]
+
+
+---	Get spirit data from order.
+--	@param {number} ord Which number of spirit
+--	@return {spirit | nil}
+function Spirit.from_ordinal(ord)
+	assert(type(ord) == "number")
+	return data[ord]
+end
+
+return Spirit
+
+--[=[
+spirit = p.from_ordinal(3)
+mw.logObject(spirit)
+]=]

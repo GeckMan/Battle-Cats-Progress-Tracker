@@ -1,0 +1,158 @@
+local p = {}
+
+---@class Cat
+---@field id number Cat's ID (basic cat = 0).
+---@field link string Link to cat's page.
+---@field rarity string Cat's rarity.
+---@field names string[] List of cat's names.
+---List of unique names, will be the same as `names` in most cases, except for
+---like "Cat Bros EX" (where `names` would have "Cat Bros").
+---@field _unique_names string[]
+---@field current_form number
+---@field amt_forms number
+local Cat = {}
+
+---@class BucketData
+---@field id number
+---@field page_name string
+---@field name_index string[]
+---@field rarity string
+---@field replacements_json? string
+---Used as a fallback in [[Module:Cat2/load bulk data/data]] and in [[Module:Cat
+---renames]].
+---@field amt_forms? number
+-- (remember that these are all used in [[Module:Cat renames]] too)
+-- (maybe could just make that require this)
+-- (okay yeah if this ever needs more bucket data, just change Cat renames to
+-- use this module)
+p.required_fields = { 'id', 'page_name', 'name_index', 'rarity', 'replacements_json' }
+
+---Create cat from bucket data.
+---@param bData BucketData
+---@param form number Form of unit, default 1.
+---@return Cat
+function p.from_bucket_data(bData, form)
+	assert(bData, "Bucket data expected, found nil")
+	form = form or 1
+
+	---@type Cat
+	---@diagnostic disable-next-line: missing-fields
+	local cat = {
+		id = bData.id,
+		link = bData.page_name,
+		rarity = bData.rarity,
+		current_form = form,
+		amt_forms = bData.amt_forms or #bData.name_index,
+	}
+
+	cat._unique_names = bData.name_index
+	if bData.replacements_json then
+		local r = mw.text.jsonDecode(bData.replacements_json)
+		local names = {}
+		for i, key in ipairs(cat._unique_names) do
+			local name = r[key] or key
+			-- if the replacement exists then make names[i] the replaced value,
+			-- otherwise assume name is same as key
+			names[i] = name
+		end
+		cat.names = names
+	else
+		cat.names = bData.name_index
+	end
+
+	local mt = getmetatable(cat) or {}
+	mt.__index = Cat
+	setmetatable(cat, mt)
+	return cat
+end
+
+---Shallow clone the cat.
+---@return Cat
+function Cat:shallow_clone()
+	---@type Cat
+	local new = {
+		id = self.id,
+		link = self.link,
+		rarity = self.rarity,
+		names = self.names,
+		_unique_names = self._unique_names,
+		current_form = self.current_form,
+		amt_forms = self.amt_forms,
+	}
+
+	local mt = getmetatable(new) or {}
+	mt.__index = Cat
+	setmetatable(new, mt)
+	return new
+end
+
+---Does this form of the cat actually exist?
+---@return boolean
+function Cat:form_exists()
+	return self.current_form <= self.amt_forms
+end
+
+---Get cat's name.
+---@return string
+function Cat:name()
+	return self.names[self.current_form]
+end
+
+---Get cat's unique name. E.g. "Cat Bros EX", where `Cat:name()` would return
+---"Cat Bros".
+function Cat:unique_name()
+	return self._unique_names[self.current_form]
+end
+
+---Transforms cat into given form. Modifies in-place and returns.
+---@param form number
+---@return Cat
+function Cat:to_form(form)
+	self.current_form = form
+	return self
+end
+
+---Get the number of the form that `name` corresponds to.
+---@param name string Either unique name (e.g. "Cat Bros EX") or ID ("357-4").
+---@return integer | nil
+function Cat:get_form_by_name(name)
+	for i, self_name in ipairs(self._unique_names) do
+		if self_name == name then
+			return i
+		end
+	end
+
+	local form = name:match('^%d+%-(%d)$')
+	if form then
+		return tonumber(form)
+	end
+
+	if name == self.link then
+		return 1
+	end
+
+	return nil
+end
+
+---Convert to the form that `name` corresponds to.
+---@param name string Either unique name (e.g. "Cat Bros EX") or ID ("357-4").
+---@return Cat | nil
+function Cat:to_form_by_name(name)
+	local form = self:get_form_by_name(name)
+	if form then
+		return self:to_form(form)
+	end
+end
+
+--------------------------------------------------------------------------------
+-- load_modules
+--------------------------------------------------------------------------------
+
+---Extend the cat class by running function f.
+---@param f fun(Cat: Cat): nil
+function p.extend_cat_class(f)
+	error('IDK if this function should even be used to be honest')
+	f(Cat)
+end
+
+return p

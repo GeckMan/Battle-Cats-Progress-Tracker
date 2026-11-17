@@ -1,0 +1,51 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p.using_enemies(args)
+	local Enemy = require('Module:Enemies')
+	local imgs = {}
+	for _, name in ipairs(args) do
+		local enemy = Enemy.new(name)
+		local fmt = '[[File:%s|link=%s|%s]]'
+		table.insert(imgs, fmt:format(enemy:icon(), enemy.link, enemy.name))
+	end
+	return table.concat(imgs, args.delimiter or ' ')
+end
+
+function p._main(args)
+	-- this was half-finished before I realised that bucket:enemy doesn't exist
+	local where = {}
+	for _, name in ipairs(args) do
+		table.insert(where, { "name", name })
+	end
+
+	local bucket = mw.ext.bucket
+	local query = bucket('enemy')
+		.select('page_name', 'name', 'icon')
+		.where(bucket.Or(unpack(where)))
+
+	local m = {}
+	for _, enemy in ipairs(query.run()) do
+		if m[enemy.name] then
+			error("AAAAAAAAAAAAAAAAA")
+		else
+			m[enemy.name] = enemy
+		end
+	end
+
+	local imgs = {}
+	for _, name in ipairs(args) do
+		local enemy = m[name]
+		local fmt = '[[File:%s|link=%s|%s]]'
+		table.insert(imgs, fmt:format(enemy:icon(), enemy.link, enemy.name))
+	end
+	return table.concat(imgs, args.delimiter or ' ')
+end
+
+function p.main(frame)
+	return p.using_enemies(getArgs(frame))
+end
+
+return p
+
+-- print(p._main({'Doge', 'Snache'}))

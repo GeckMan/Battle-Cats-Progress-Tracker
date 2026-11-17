@@ -1,0 +1,50 @@
+---	Implements event user templates.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local data = mw.loadData('Module:EventTemplates/data')
+
+function p._main(args)
+	if args[3] then
+		error('template should only have 2 arguments')
+	end
+
+	local base = args[1]:lower()
+	local dt = data[base]
+	local amt = tonumber(args[2]) or error('amount of stages should be numeric')
+
+	local t = {
+		'<div style="display: inline-block; text-align: center; line-height: 1em;"><div class="floatnone noresize" style="position: relative; width: ',
+		dt.base_width .. 'px; margin-left:auto; margin-right:auto;">'
+	}
+	for i = 1, amt, 1 do
+		if not dt.items[i] then
+			break
+		end
+		-- originally tried amt = math.min(amt, #dt.items)
+		-- mw.loadData does funky stuff with metatables, so #dt.items returns 0,
+		-- so have to use an if instead
+
+		table.insert(t,
+			'<div style="display: inline-block; overflow: hidden; position: absolute; padding: 0; border-radius: 0px; '
+		)
+		local rest_fmt = 'left: %dpx; top: %dpx;">[[File:Clear1.png|%dpx|link=%s|alt=|]]</div>'
+
+		local item = dt.items[i]
+		table.insert(t, rest_fmt:format(item[1], item[2], dt.clear_width, dt.link))
+	end
+
+	local end_fmt = '[[File:%s|%dpx|link=%s|alt=|]]</div></div>'
+	table.insert(t, end_fmt:format(dt.base_img, dt.base_width, dt.link))
+
+	return table.concat(t)
+end
+
+---	Main function.
+--	@usage '{{#invoke:EventTemplates|main|lq|50}}'
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p

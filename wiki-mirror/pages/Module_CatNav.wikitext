@@ -1,0 +1,69 @@
+local p = {}
+local Cat = require('Module:Cat2')
+local cat_query = require('Module:Cat query helper')
+
+---Find the unit's name in the haystack.
+---@param name string
+---@param haystack BucketData[]
+---@return Cat?
+local function find_unit(name, haystack)
+	for _, item in ipairs(haystack) do
+		-- only check first name because lazy
+		if item.name_index[1] == name then
+			return Cat.from_bucket_data(item)
+		end
+	end
+end
+
+local fmt = [=[<p style="text-align:center;">[[Cat Release Order]]:</p>
+
+<p style="text-align:center;">'''%s | %s'''</p>]=]
+
+local get_renamed
+
+function p.main(frame)
+	local args = frame:getParent().args
+
+	local cats = {}
+	args[1] = mw.text.trim(args[1] or '')
+	args[2] = mw.text.trim(args[2] or '')
+	if args[1] ~= '' then table.insert(cats, args[1]) end
+	if args[2] ~= '' then table.insert(cats, args[2]) end
+
+	local results
+	if #cats > 0 then
+		results = cat_query.get_cat_function(cats)
+	end
+
+	local part1 = '&lt;&lt; N/A'
+	if args[1] ~= '' then
+		local unit = results(args[1])
+
+		if not unit then
+			if not get_renamed then
+				get_renamed = require('Module:Get renamed cat').get_renamed_unit_data
+			end
+			unit = Cat.from_bucket_data(get_renamed(args[1]))
+		end
+
+		part1 = ("[[%s|&lt;&lt; %s]]"):format(unit.link, unit:name())
+	end
+
+	local part2 = 'N/A &gt;&gt;'
+	if args[2] ~= '' then
+		local unit = results(args[2])
+
+		if not unit then
+			if not get_renamed then
+				get_renamed = require('Module:Get renamed cat').get_renamed_unit_data
+			end
+			unit = Cat.from_bucket_data(get_renamed(args[2]))
+		end
+
+		part2 = ("[[%s|%s &gt;&gt;]]"):format(unit.link, unit:name())
+	end
+
+	return fmt:format(part1, part2)
+end
+
+return p

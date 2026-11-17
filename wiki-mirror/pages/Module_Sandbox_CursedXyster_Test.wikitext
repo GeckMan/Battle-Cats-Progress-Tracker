@@ -1,0 +1,113 @@
+local p = {}
+
+local rows = {}
+local overrides = {
+	["Ancient Egg:"] = "Uni000 m00.png",
+	["Mystic Egg:"] = "Uni001 m01.png",
+	["Cinnabar Egg:"] = "Uni002 m01.png",
+	["Green Egg:"] = "Uni003 m01.png",
+	["Dark Egg:"] = "Uni004 m01.png",
+	["Amber Egg:"] = "Uni006 m01.png",
+	["Teal Egg:"] = "Uni007 m01.png",
+	["Violet Egg:"] = "Uni008 m01.png",
+	["Devil Egg:"] = "Uni009 m01.png",
+	["Elder Egg:"] = "Uni010 m01.png"
+}
+
+function init()
+	math.randomseed(os.time())
+    if #rows == 0 then
+    	rows = bucket("cat")
+        	.select("id", "name1", "name2", "name3", "name4", "page_name")
+	        .limit(1500)
+	        .run()
+	    end
+end
+
+function p.rand()
+    init()
+
+    local row = rows[math.random(#rows)]
+    
+    return p.image(row)
+end
+
+function p.test(frame)
+	init()
+	
+	args = frame:getParent().args
+    local rows = bucket("cat")
+        .select("id", "name1", "name2", "name3", "name4", "page_name")
+        .where("id", args[1])
+        .limit(1500)
+        .run()
+
+    if #rows == 0 then
+        return "No such ID"
+    end
+
+    local row = rows[1]
+
+    return(p.image(row))
+end
+
+function p.image(row, o)
+    local choices = {}
+
+    if row.name1 then table.insert(choices, "f") end
+    if row.name2 then table.insert(choices, "c") end
+    if row.name3 then table.insert(choices, "s") end
+    if row.name4 then table.insert(choices, "u") end
+
+    local letter = math.random(#choices)
+
+    local id = tonumber(row.id)
+
+	local filename
+	
+	local selectedName = row["name" .. letter]
+
+	for phrase, image in pairs(overrides) do
+    	if selectedName and string.find(selectedName, phrase, 1, true) then
+        	filename = image
+        	break
+    	end
+	end
+
+	if not filename then
+	    local id = tonumber(row.id)
+
+	    filename = string.format(
+    	    "Uni%03d %s00.png",
+	        id,
+        	choices[letter]
+    	)
+	end
+
+    local title = mw.title.new("File:" .. filename)
+
+    if not title or not title.exists then
+        filename = "Uni000 a00.png"
+    end
+
+    if o == 1 then
+    	return filename
+    else
+    	return string.format("[[File:%s|link=%s]]", filename, row.page_name)
+    end
+end
+
+function p.batch()
+    init()
+
+    local result = {}
+
+    for i = 1, 25 do
+        local row = rows[math.random(#rows)]
+        table.insert(result, p.image(row, 1))
+    end
+
+    return mw.text.jsonEncode(result)
+end
+
+return p

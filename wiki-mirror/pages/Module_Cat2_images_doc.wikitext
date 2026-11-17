@@ -1,0 +1,8 @@
+{{Documentation}}
+Provides various image functions. Largely the same as [[Module:Cat images]] with the exception of instead of requiring an ID and a form, it just requires the cat.
+
+Also provides a function <code>image_str</code>. Usage is as such:
+<syntaxhighlight lang="lua">
+local image = Cat.image_str(cat, 'deploy', { size = "30px" })
+</syntaxhighlight>
+First argument is the cat, second argument is the function name, third is a list of args to pass to [[Module:File link]].

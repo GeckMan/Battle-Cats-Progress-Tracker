@@ -1,0 +1,28 @@
+---	Data module for [[Module:Spirit]].
+--
+--	@submodule spirits
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local LEN = 5000
+local spirits = mw.bucket('spirit')
+	.select('id', 'page_name')
+	.limit(LEN)
+	.run()
+
+if #spirits >= LEN then
+	error("too many cooks or something idk use ChunkedIterator")
+end
+
+table.sort(spirits, function(u1, u2)
+	return u1.id < u2.id
+end)
+
+for i = 1, #spirits do
+	if spirits[i + 1] then
+		if not (spirits[i].id < spirits[i + 1].id) then
+			error("Duplicated spirit ID: " .. spirits[i].id .. " (see [[bucket:spirit]])")
+			-- since is already sorted this should be easy enough
+		end
+	end
+end
+
+return spirits

@@ -1,0 +1,20 @@
+local p = {}
+
+function p.main(frame)
+	args = frame:getParent().args
+	if args[1] == "Long Distance" or args[1] == "Long-Distance" or args[1] == "LD" then
+		return string.format("[[File:Zukan icon18 en.png|link=Long Distance|30px]] [[Long Distance]] (Effective range: %s to %s)",args[2],args[3])
+	elseif args[1] == "Omnistrike" or args[1] == "Omni-strike" or args[1] == "Omni" then
+		return string.format("[[File:Zukan icon28 en.png|link=Omni Strike|30px]] [[Omni Strike]] (Effective range: %s to %s)",args[2],args[3])
+	elseif args[1] == "Weaken" then
+		return string.format("[[File:Zukan icon01.png|link=Weaken|30px]] %s%s chance to [[Weaken|Weaken]] target traits to %s%s for %sf <sub>%s seconds</sub>",args[2],"%",args[3],"%",args[4],args[4]/30)
+	elseif args[1] == "Freeze" then
+		return string.format("[[File:Zukan icon03.png|link=Freeze|30px]] %s%s chance to [[Freeze|freeze]] target traits for %sf <sub>%s seconds</sub>",args[2],"%",args[3],args[3]/30)
+	elseif args[1] == "Slow" then
+		return string.format("[[File:Zukan icon04.png|link=Slow|30px %s%s chance to [[Slow|slow]] target traits for %sf <sub>%s seconds</sub>",args[2],"%",args[3],args[3]/30)
+	else
+		error(string.format("%s is not a valid ability/not added yet.",args[1]))
+	end
+end
+
+return p

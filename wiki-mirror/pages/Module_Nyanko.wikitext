@@ -1,0 +1,62 @@
+---	Module backend of [[Template:Nyanko]]. See template page for explanation of
+--	arguments passed.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cats
+
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local ts = require('Module:TemplateStyles once')
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+require('Module:Cat2/load_bulk_data').init(Cat)
+
+---	Convert template args to Nyanko format
+--	@param {string} name Unit name
+--	@param {string} level Unit level
+--	@param {number} talents Numeric code for talents
+function p.get_nyan(name, level, talents)
+	-- Very important debug statement
+	if name == "Slime Cat" then name = "Jellycat" end
+	local cat = Cat.from_name(name)
+
+	-- deploy icon, level text, talents icon
+	local nyargs = {
+		Cat.image_str(cat, 'deploy'),
+		('<p>Level <b>%s</b></p>'):format(level),
+		(tonumber(talents) ~= 0 and
+			('[[File:Talent %d.png|link=]]'):format(talents)) or ''
+	}
+	if level == '?' then
+		nyargs[1] = nyargs[1]:gsub('Uni.-%.png', 'Uni000 a00.png')
+		nyargs[2] = '<p>Level <b>0</b></p>'
+	end
+	return ('<div class="nyanko">%s</div>'):format(table.concat(nyargs))
+end
+
+function p._main(args)
+	local argsMax = 3
+	local i = 0
+	local nyans = {}
+	-- run through args in multiples of argsMax
+	while true do
+		local name = args[argsMax * i + 1]
+		local level = args[argsMax * i + 2]
+		local talents = args[argsMax * i + 3]
+		if not (name and level and talents) then break end
+		table.insert(nyans, p.get_nyan(name, level, talents))
+		i = i + 1
+	end
+	return table.concat(nyans)
+end
+
+function p.main(frame)
+	local args = getArgs(frame)
+	return p._main(args) .. ts.style({ 'Nyanko/styles.css' })
+end
+
+return p
+
+--[=[
+print(p._main{'Cat', 0, 0, 'Courier Cat', 0, 0, 'Ancient Egg: N101', 0, 0, 'Cinnabar Egg: N101', 0, 0})
+]=]

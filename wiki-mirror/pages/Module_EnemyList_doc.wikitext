@@ -1,0 +1,6 @@
+{{Documentation}}
+Simple wrapper module for [[Module:Enemies|Enemies]]'s built-in methods. Takes in a list of enemy names and returns linked images.
+
+<pre>{{EnemyList|Doge|Snache|Oversleeping Beauty Punt}}</pre> yields
+
+{{EnemyList|Doge|Snache|Oversleeping Beauty Punt}}

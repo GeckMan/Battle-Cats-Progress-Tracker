@@ -1,0 +1,46 @@
+{{Documentation}}
+Stores Bucket data for [[Module:Cat Info]]. Stores to both [[bucket:cat]] and [[bucket:cat_names]].
+
+== Aim ==
+
+This module aims to store data into [[bucket:cat]] and [[bucket:cat_names]]. Due to a few considerations that had to be made with the design of this module, it ends up being rather complex.
+
+The first important concept is the "unique name". If I want to get the data for Cat Bros, I should know that the Cat Bros whose data I am getting is the one I want. I.e. a Bucket query by name will only ever return one row.
+
+The second is about how names should be queried. There are quite a few different cases of how the cat bucket ends up getting queried:
+
+* Regular query by cat (unique) name.
+* Query by page name.
+* Query by unit ID.
+
+But wait, there's more. During localisation updates, we're going to have to change some unit names. That means to avoid script errors then we might also want:
+
+* Query by form id (e.g. 000-1 for [[Cat (Normal Cat)]]).
+* Query by the cat's old name.
+
+There is no easy solution to all of this. The complexity has to end up going somewhere. In the past, [[Module:Cat query helper]] shouldered the complexity burden alone. But then I realised it didn't play nicely with joins so we're back here now.
+
+== What this module does ==
+
+The goal here is to try as much as physically possible to contain the complexity spirit demon inside this one module. The two big important parts of making this work:
+
+* All 5 of the above querying use cases should be supported.
+* Any query for one cat/page/id/form id/old name should return one result.
+
+=== Supporting all cases ===
+
+Cat query helper used to handle this but it uses [[Module:Get renamed cat]] which wouldn't play nice with joins. Anyway, wouldn't it be so much nicer if instead of 1500 if statements, querying code could just simply make one query? [[bucket:cat_names]] attempts to be this much nicer interface. You can see that bucket directly has the first 4 use cases for every unit. It also supports the 5th use case through [[Module:Cat renames/names]].
+
+Repeated fields wouldn't exactly work because the cat renames would have to be defined on the cat page itself. And if you stored renames in a different bucket, then that's another query you have to make and part of the whole point here was that you just need a single query.
+
+Instead, cat_names means that querying `name` and then joining to cat based on `id` is trivial. It also has a `type` column to identify which of the 5 querying use cases the stored name uses. That way you can still warn when using the cat's old name.
+
+=== One query = one result ===
+
+There are realistically speaking 3 ways to achieve this:
+
+* Any querying code should check that all of its queries are unique. This approach was used on this wiki for a while due to being part of Cat query helper, but it would always leave extremely unhelpful script errors. Nobody wants to be trying to document an update then run into an error that can only be fixed when Jenny wakes up.
+* This module right here does all the work in making sure that there are no duplicates before saving to Bucket. This would remove the problem of cryptic errors as the script errors would surface immediately upon saving the page with the Cat Info template. However, it would introduce a Bucket query to every single page using this module and would make this module significantly more complex.
+* Create a monitoring page somewhere that queries the entire cat names bucket and checks for duplicates. This is conceptually much simpler than option 2 and also means that you aren't confusing new people with script errors. However, [[bucket:cat_names]] is already more than 5000 items long.
+
+Overall it does seem like option 2 is the best one to go for here.

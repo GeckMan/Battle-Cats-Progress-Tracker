@@ -1,0 +1,18 @@
+--- does JSON-related stuff
+local p = {}
+
+--- JSON-ify arguments.
+--- @param frame table Frame object
+--- @return string
+function p.dollar(frame)
+	local t = {}
+	for k, v in pairs(frame:getParent().args) do
+		v = mw.text.trim(v)
+		if v ~= "" then
+			t[k] = v
+		end
+	end
+	return mw.text.jsonEncode(t)
+end
+
+return p

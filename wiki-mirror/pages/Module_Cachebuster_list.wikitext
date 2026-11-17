@@ -1,0 +1,20 @@
+return {
+	main = function(frame)
+		local map = {}
+		for _, page in ipairs(frame:getParent().args) do
+			page = mw.title.new(page).fullText
+			-- normalise page name, will do stuff like auto-capitalising first
+			-- letter
+			map[page] = "{{REVISIONID:" .. page .. "}}"
+		end
+
+		local d = mw.html.create('div')
+			:addClass('cachebuster-list')
+			:cssText('display: none;')
+			:attr('data-cachebuster-list', frame:preprocess(mw.text.jsonEncode(map)))
+		-- preprocess all at once to avoid having to use callParserFunction in a
+		-- loop
+
+		return d
+	end
+}

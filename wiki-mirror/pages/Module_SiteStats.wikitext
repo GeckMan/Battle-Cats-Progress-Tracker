@@ -1,0 +1,37 @@
+local p = {}
+
+local TEMPLATE = 'Template:SiteStats/doc'
+
+function p.store(frame)
+	if mw.title.getCurrentTitle().fullText ~= TEMPLATE then
+		return error('Function store only works on [[' .. TEMPLATE .. ']]')
+	end
+
+	local t = {}
+	for _, word in ipairs(frame.args) do
+		word = mw.text.trim( string.upper(word) )
+		local value = frame:callParserFunction(word, '')
+
+		mw.ext.bucket('site_stats')
+			.put { word = word, value = value }
+
+		local fmt = "*Stored %s as %s"
+		table.insert(t, fmt:format(word, value))
+	end
+
+	return table.concat(t, '\n')
+end
+
+function p.main(frame)
+	local word = frame.args[1] or frame:getParent().args[1] or error('no magic word provided')
+	word = mw.text.trim( string.upper(word) )
+
+	local query = mw.ext.bucket('site_stats')
+		.select('value')
+		.where('page_name', TEMPLATE)
+		.where('word', word)
+
+	return query.run()[1].value
+end
+
+return p

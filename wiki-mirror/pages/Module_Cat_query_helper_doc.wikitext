@@ -1,0 +1,27 @@
+{{Documentation}}
+:''This doc page is updated as of [[Special:Permalink/489000]]''
+Simple interface for querying [[bucket:cat]].
+
+==Usage==
+<syntaxhighlight lang="lua>
+local cat_query = require('Module:Cat query helper')
+local names = { 'Tank Cat', 'Wall Cat', '001-3', 'Cat (Normal Cat)' }
+local f = cat_query.get_cat_function(names, { page_name = true })
+mw.log( f('Tank Cat'):name() )
+</syntaxhighlight>
+
+<code>get_cat_function</code> takes in a list of cat names, and returns a function (which in this paragraph will be called <code>f</code>) such that <code>f(cat_name)</code> will return a Cat object (from [[Module:Cat2]]). Under the hood it queries bucket:cat and creates a map of all the cat names/ids to their bucket data, then returns a function calling Cat2's <code>from_bucket_data</code>.
+
+The public functions other than <code>get_cat_function</code> exist for [[Module:Cat2/load bulk data]]. Maybe they could be converted to a common module to reduce dependency list bloat. That module could be called "Cat query helper helper". Anyway.
+
+==Config==
+<syntaxhighlight lang="lua>
+local f = cat_query.get_cat_function(names)
+</syntaxhighlight>
+This is the default. <code>get_cat_function</code> takes another value, being the <code>config</code>. So far the only config value is <code>page_name</code>, which you can see being used above. This also allows page names to be queried.
+
+==Other features==
+See [[User blog:Jenny on Wiki/2026-08-23-cat2]] for more information.
+*ID-based fallbacks, e.g. as seen above "001-3" is exactly equivalent to "Eraser Cat". However, in the above function call, <code>f('Eraser Cat'):name()</code> wouldn't work as "Eraser Cat" wasn't part of the query, but <code>f('001-3'):name()</code> would.
+*Support for global cat renames, using [[Module:Get renamed cat]].
+*Support for page names (will default to the first form, as that's what [[Module:Cat2]] does), if the appropriate config value is set.

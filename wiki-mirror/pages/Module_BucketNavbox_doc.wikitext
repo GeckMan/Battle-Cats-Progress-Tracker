@@ -1,0 +1,4 @@
+{{Documentation}}
+This is kept for historical reasons. It was an attempt at reducing the post-expand include size of [[Template:Navbox]], but the attempt failed because it turns out that any #invoke will double the post-expand include size. Therefore, the reason that transcluded navboxes were 3x as big was because of that rather than because of any inefficiency: just replace <code>{<nowiki />{Navbox</code> with <code>{<nowiki />{#invoke:Navbox|main</code> and you'll get a 33% performance improvement when transcluding. See also [[Special:Permalink/391142]].
+
+This is kept because it might be useful one day for another template.

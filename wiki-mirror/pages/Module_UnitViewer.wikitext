@@ -1,0 +1,129 @@
+---	Module to provide functions for [[Template:UnitViewer]].
+--
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Enemies
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local preview_cats = {
+	['Valkyrie Cat'] = '000',
+	['Bahamut Cat'] = '001',
+	['Holy Valkyrie Cat'] = '002',
+	['Bean Cats'] = '003',
+	['Moneko'] = '004',
+	['Ururun Wolf'] = '005',
+	["Li'l Nyandam"] = '006',
+	['Awakened Bahamut Cat'] = '007',
+	['Red Riding Mina'] = '008',
+	['Miyamoku Musashi'] = '009',
+	['Cat God the Golden'] = '010',
+	['Ultimate Mecha-Bun'] = '012',
+	['Filibuster Cat X'] = '013',
+	['Dogumaru'] = '014',
+	['Urs & Fenrir'] = '015',
+	['Idi:N'] = '016',
+	['Elder Mask Doron'] = '017',
+	['Elder Beast Naala'] = '018',
+	['Master of Mind Soractes'] = '019',
+	['Master of Life Dr. Nova'] = '020',
+	['Master of Logic Newton'] = '021'
+}
+
+function p.cat(args, has_spirit)
+	local form_names = { "Normal", "Evolved", "True", "Ultra" }
+	local bg = args.bg or ''
+	local to_query = args.name or mw.title.getCurrentTitle().text
+
+	local img = require('Module:Cat images')
+	-- we don't want linked images, we just want file names
+	local Cat2 = require('Module:Cat2')
+	require('Module:Cat2/images').init(Cat2)
+	local query = mw.ext.bucket('cat')
+		.select(unpack(Cat2.required_fields))
+		.where(mw.ext.bucket.Or { { 'name_index', to_query }, { 'page_name', to_query } })
+	local results = query.run()
+
+	if #results == 0 then
+		local get_renamed = require('Module:Get renamed cat').get_renamed_unit_data
+		local name = get_renamed(to_query).name_index[1]
+		args.name = name
+		return p.cat(args, has_spirit)
+		-- efficiency doesn't really matter as it's the sad path anyway
+		-- checking for recursion is also pointless for that reason
+	end
+	assert(#results == 1, "there should probably be an error message here")
+
+	---@type Cat
+	local cat = Cat2.from_bucket_data(results[1])
+	local tabber = {}
+	for i = 1, cat.amt_forms do
+		local form = cat:to_form(i)
+		if form:form_exists() then
+			local anim_file = img.animation(form.id, i)
+			local spritesheet = img.spritesheet(form.id, i)
+			local base_fmt = '{{AnimationViewer|%s|MediaWiki:Custom-AnimationViewer/%s|bg=%s}}'
+			-- tabber.render preprocesses everything anyway so we can just do raw
+			-- template call
+			table.insert(tabber, {
+				label = form_names[i],
+				content = base_fmt:format(spritesheet, anim_file, bg)
+			})
+
+			local preview_id = preview_cats[form:name()]
+			if preview_id then
+				local preview_fmt =
+				'{{AnimationViewer|%s p.png|MediaWiki:Custom-AnimationViewer/%s_p.json|bg=Img 045 intro.png|bgtype=preview|bgalign=top}}'
+				table.insert(tabber, {
+					label = 'Preview',
+					content = preview_fmt:format(preview_id, preview_id)
+				})
+			end
+		end
+	end
+
+	if has_spirit then
+		local spirit_file = ('%03d_f'):format(cat.id + 1)
+		local fmt = '{{AnimationViewer|%s.png|MediaWiki:Custom-AnimationViewer/%s.json|bg=%s|frame=65}}'
+		table.insert(tabber, {
+			label = 'Spirit',
+			content = fmt:format(spirit_file, spirit_file, bg)
+		})
+	end
+
+	local container = mw.html.create('div')
+		:addClass('unit-viewer')
+		:node(mw.ext.tabber.render(tabber))
+	return tostring(container)
+end
+
+function p.enemy(args)
+	local Enemy = require('Module:Enemies')
+	local bg = args.bg or ''
+	local name = args.name or mw.title.getCurrentTitle().text
+	local unit = Enemy.new(name)
+	local spritesheet = args.spritesheet or ('%03d_e.png'):format(unit.num)
+	local fmt = '{{AnimationViewer|%s|MediaWiki:Custom-AnimationViewer/%03d_e.json|bg=%s}}'
+	local tcall = fmt:format(spritesheet, unit.num, bg)
+	return mw.getCurrentFrame():preprocess(tcall)
+end
+
+---	Get necessary viewers for unit
+function p.main(frame)
+	local args = getArgs(frame)
+	local result = '==Animations==\n'
+	if args.noheading then
+		result = ''
+	end
+	if args[1] == 'cat' then
+		result = result .. p.cat(args, false)
+	elseif args[1] == 'conjurer' then
+		result = result .. p.cat(args, true)
+	elseif args[1] == 'enemy' then
+		result = result .. p.enemy(args)
+	else
+		error('Unrecognized argument: ' .. args[1])
+	end
+	return result
+end
+
+return p

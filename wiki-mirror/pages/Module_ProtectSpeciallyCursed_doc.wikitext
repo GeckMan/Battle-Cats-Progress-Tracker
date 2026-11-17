@@ -1,0 +1,4 @@
+<!-- {{Documentation|isUsed=true}} we don't want to make documentation cascade-protected too -->
+This module exists to cascade-protect all modules listed on [[MediaWiki:Speciallycursed-config.json]]. [[mw:Extension:SpeciallyCursed]]'s special pages will use the raw HTML from the modules, so to prevent stuff like XSS it's necessary to admin-protect the module pages. This module exists to just make that easier.
+
+{{#invoke:ProtectSpeciallyCursed|main}}

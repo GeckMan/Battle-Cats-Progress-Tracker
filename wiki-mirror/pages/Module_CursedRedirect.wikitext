@@ -1,0 +1,23 @@
+---	[[mw:Extension:SpeciallyCursed|SpeciallyCursed]] page to provide utility
+--	functions.
+--
+--	@script cursed_redirect
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+
+---	Text for cat and enemy redirect root pages when no ID is provided.
+--
+--	I.e. will be shown on [[Special:cat]] and [[Special:enemy]].
+function p.no_id_provided()
+	local example_page = mw.title.getCurrentTitle().prefixedText .. '/0'
+
+	local format = '<p>You must specify a valid ID, for example %s.</p>'
+	local link = mw.html.create('a'):attr({
+		href = mw.uri.fullUrl(example_page).path,
+		title = example_page
+	}):wikitext(mw.ext.SpeciallyCursed.escapeHtml(example_page))
+
+	return format:format(tostring(link))
+end
+
+return p

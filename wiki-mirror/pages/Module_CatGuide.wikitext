@@ -1,0 +1,172 @@
+---	Module backend of [[Template:CatGuide]].
+--
+--	@module	CatGuide
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Cats
+--	@require Module:Nyanko
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat2 = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat2)
+require('Module:Cat2/load_bulk_data').init(Cat2)
+local Nyanko = require('Module:Nyanko')
+
+-- Generate an id for the template using clock time of module for custom collapsibles
+local id = tostring(os.clock() * 10 ^ 5)
+
+---	Returns a sliced list from index first (inclusive) to index last
+--	(exclusive). Used exclusively in a `table.concat`.
+--	@param {mw.loadData} args
+--	@param {number} first
+--	@param {number} last
+--	@return {table}
+function p.slice(args, first, last)
+	local result = {}
+	for i = first, last do
+		table.insert(result, args[i] or '')
+	end
+	return result
+end
+
+---	Returns the template text
+function p._main(args)
+	local groups = {
+		['N']  = {},
+		['EX'] = {},
+		['RR'] = {},
+		['SR'] = {},
+		['UR'] = {},
+		['LR'] = {}
+	}
+
+	-- Determine if parameters are units only or with levels
+	local nyanko = true
+	local test = args[2]
+	if test ~= '?' and tonumber(test:sub(1, 1)) == nil then nyanko = false end
+
+	-- Organize arguments by rarity into a hashmap
+	local cat, item
+	local i = 1
+	if nyanko then
+		while true do
+			item = args[i]
+			if not item then break end
+			cat = Cat2.from_name(item)
+			table.insert(groups[cat.rarity], Nyanko.get_nyan(item, args[i + 1], args[i + 2]))
+			i = i + 3
+		end
+	else
+		while true do
+			item = args[i]
+			if not item then break end
+			cat = Cat2.from_name(item)
+			local icon = Cat2.image_str(cat, 'deploy', { size = '90px' })
+			table.insert(groups[cat.rarity], icon)
+			i = i + 1
+		end
+	end
+
+	-- Determine number of pages
+	local pages = {
+		['N']  = math.ceil(#groups['N'] / 24),
+		['EX'] = math.ceil(#groups['EX'] / 24),
+		['RR'] = math.ceil(#groups['RR'] / 24),
+		['SR'] = math.ceil(#groups['SR'] / 24),
+		['UR'] = math.ceil(#groups['UR'] / 24),
+		['LR'] = math.ceil(#groups['LR'] / 24)
+	}
+	local pagesTotal = pages['N'] + pages['EX'] + pages['RR'] + pages['SR'] + pages['UR'] + pages['LR']
+
+	-- Build template
+	local container = mw.html.create('div')
+		:addClass('cat-guide')
+		:wikitext('[[File:Dictbg.png|640px|link=|Cat Guide]]')
+	local counter = 1
+	local rarity = 'N'
+	local rarities = { 'N', 'EX', 'RR', 'SR', 'UR', 'LR' }
+	local fullRarities = { 'Normal', 'Special', 'Rare', 'Super Rare', 'Uber Super Rare', 'Legendary' }
+	local rarityCount = 1
+	local nextRarityPage = 2
+
+	for page = 1, pagesTotal, 1 do
+		while pages[rarity] == 0 do
+			rarityCount = rarityCount + 1
+			rarity = rarities[(rarityCount - 1) % 6 + 1]
+			nextRarityPage = (nextRarityPage + pages[rarity] - 1) % pagesTotal + 1
+		end
+		if nextRarityPage == page then nextRarityPage = nextRarityPage % pagesTotal + 1 end
+		local dots = ('● '):rep(page - 1) .. '<span style="color: white;">●</span> ' .. ('● '):rep(pagesTotal - page)
+		dots = dots:sub(1, dots:len() - 1)
+
+		local units = table.concat(p.slice(groups[rarity], (counter - 1) * 24 + 1, counter * 24), '')
+
+		local dotsDiv = mw.html.create('div')
+			:addClass('cat-guide-dots')
+			:wikitext(dots)
+
+		local rarityNavButton = mw.html.create('div')
+			:addClass('rarity-button')
+			:attr('role', 'button')
+			:wikitext(fullRarities[rarityCount])
+
+		local leftArrowButton = mw.html.create('div')
+			:attr('role', 'button')
+			:cssText('position: absolute; top: 135px; left: -40px;')
+			:wikitext('[[File:Left Arrow.png|30px|link=|To Previous Page]]')
+
+		local rightArrowButton = mw.html.create('div')
+			:attr('role', 'button')
+			:cssText('position: absolute; top: 135px; right: -40px;')
+			:wikitext('[[File:Right Arrow.png|30px|link=|To Next Page]]')
+
+		local unitsPanel = container:tag('div')
+			:addClass('units-panel')
+			:wikitext(units)
+			:node(dotsDiv)
+			:node(rarityNavButton)
+			:node(leftArrowButton)
+			:node(rightArrowButton)
+
+		if page ~= 1 then
+			unitsPanel:addClass('mw-collapsed')
+		end
+		if pagesTotal > 1 then
+			rarityNavButton
+				:addClass('mw-customtoggle-page' .. page .. id)
+				:addClass('mw-customtoggle-page' .. nextRarityPage .. id)
+			leftArrowButton
+				:addClass('mw-customtoggle-page' .. page .. id)
+				:addClass('mw-customtoggle-page' .. (page - 2) % pagesTotal + 1 .. id)
+			rightArrowButton
+				:addClass('mw-customtoggle-page' .. page .. id)
+				:addClass('mw-customtoggle-page' .. page % pagesTotal + 1 .. id)
+			unitsPanel
+				:addClass('mw-collapsible')
+				:attr('id', 'mw-customcollapsible-page' .. page .. id)
+		end
+
+		counter = counter + 1
+		if counter > pages[rarity] then
+			counter = 1
+			rarityCount = rarityCount + 1
+			rarity = rarities[(rarityCount - 1) % 6 + 1]
+			nextRarityPage = (nextRarityPage + pages[rarity] - 1) % pagesTotal + 1
+		end
+	end
+
+	return tostring(container)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({"Cat", "20+90", "0", "Tank Cat", "20+90", "0", "Brave Cat", "20+80", "0", "Flying Ninja Cat", "50", "3", "Crazed Bahamut Cat", "40", "0", "Jiangshi Cat", "50+60", "6", "Ramen Cat", "50+80", "5", "Can Can Cat", "50+20", "4", "Manic Eraser Cat", "50", "0", "Kasli, Daughter of Chaos", "60+2", "0", "Legeluga", "50+0", "0"}))
+print(p.main({"Cat", "Tank Cat", "Brave Cat", "Flying Ninja Cat", "Crazed Bahamut Cat", "Jiangshi Cat", "Ramen Cat", "Can Can Cat", "Manic Eraser Cat", "Kasli, Daughter of Chaos", "Legeluga"}))
+print(p.main({"Ice Cat", "Greater Balrog Cat"}))
+print(p.main({"Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat", "Greater Balrog Cat"}))
+]=]

@@ -1,0 +1,84 @@
+---	Used in [[List of Enemy Variants]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local chunk = require('Module:ChunkedIterator')
+local Enemy = require('Module:Enemies')
+
+local function get_next(limit, offset)
+	return mw.bucket('variant')
+		.select('original', 'variant', 'description')
+		.limit(limit)
+		.offset(offset)
+		.run()
+end
+
+function p.get_variant_list()
+	local vlist = {}
+	for _, variant in chunk.create_chunked_iter(get_next, {}) do
+		if vlist[variant.variant] then
+			local vvar = vlist[variant.variant]
+			table.insert(vvar.originals, variant.original)
+			if not vvar.description then
+				vvar.description = variant.description
+			elseif variant.description then
+				vvar.description = vvar.description
+					.. '<br>Alternative description: '
+					.. variant.description
+			end
+		else
+			local t = {
+				originals = { variant.original },
+				description = variant.description,
+			}
+			vlist[variant.variant] = t
+		end
+	end
+
+	return vlist
+end
+
+function p.cmp_by_id(e1, e2)
+	return Enemy.new(e1):id() < Enemy.new(e2):id()
+end
+
+function p.enemy()
+	local vlist = p.get_variant_list()
+
+	local ivlist = {}
+	for name, data in pairs(vlist) do
+		table.sort(data.originals, p.cmp_by_id)
+		data.name = name
+		table.insert(ivlist, data)
+	end
+
+	table.sort(ivlist, function(e1, e2)
+		return p.cmp_by_id(e1.name, e2.name)
+	end)
+
+	local t = mw.html.create('table')
+		:addClass('article-table')
+	t:tag('tr')
+		:tag('th'):wikitext('Original'):cssText('width:72px'):done()
+		:tag('th'):wikitext('Variant'):cssText('width:72px'):done()
+		:tag('th'):wikitext('Description'):cssText('min-width:300px'):done()
+
+	for _, data in ipairs(ivlist) do
+		local enemy = Enemy.new(data.name)
+		local o = {}
+		for _, name in ipairs(data.originals) do
+			local enemy = Enemy.new(name)
+			local img = ("[[File:%s|48px|link=%s|%s]]"):format(enemy:icon(), enemy.link, enemy.name)
+			table.insert(o, img)
+		end
+		local icon = ("[[File:%s|link=%s|%s]]"):format(enemy:icon(), enemy.link, enemy.name)
+		t:tag('tr')
+			:tag('td'):cssText('text-align:center'):wikitext(table.concat(o)):done()
+			:tag('td'):cssText('text-align:center'):wikitext(icon):wikitext('<br>' .. enemy.page):done()
+			:tag('td'):wikitext(data.description):done()
+	end
+
+	return t
+end
+
+return p

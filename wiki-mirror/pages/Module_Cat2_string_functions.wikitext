@@ -1,0 +1,34 @@
+---Full name of the cat's rarity.
+---@param rarity string
+---@return string
+local function rarity_str(rarity)
+	local fullNames = {
+		N = 'Normal',
+		EX = 'Special',
+		RR = 'Rare',
+		SR = 'Super Rare',
+		UR = 'Uber Rare',
+		LR = 'Legend Rare',
+	}
+
+	return fullNames[rarity]
+end
+
+---Format a link to the cat's page.
+---@param cat Cat
+---@return string
+local function page_link(cat)
+	return ("[[%s|%s]]"):format(cat.link, cat:name())
+end
+
+return {
+	init = function(p)
+		local str = {}
+		Cat = p
+
+		str.rarity_str = rarity_str
+		str.page_link = page_link
+
+		p.str = str
+	end
+}

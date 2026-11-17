@@ -1,0 +1,219 @@
+---	Comparing cats data modules.
+--
+--	@submodule data
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cats/data
+--	@require Module:Cats/data2
+local info = {}
+
+local d1 = require('Module:Cats/data')
+local d2 = require('Module:Cats/data2')
+
+local incompatible1 = {}
+
+---Check that unit name is in d2.map, and that names are the same between data
+---sets.
+---@param d1name string Unit name from d1
+---@param d2index number Index of unit in d2.units
+---@param d2name string Unit name from d2
+local function check_d1_issame(d1name, d2index, d2name)
+	if d1name == "" then
+		return assert(d2name == nil)
+	end
+
+	if d2.map[d1name] ~= d2index then
+		-- check that the unit's form name appears in the map, and that the
+		-- map's index for form name is same as index
+		local s = "*Not found in map: %s (should correspond to index %d)"
+		table.insert(incompatible1, s:format(d1name, d2index))
+	end
+
+	if d2name ~= d1name then
+		-- names should be the same
+		local s = ("*Expected %s, got %s"):format(mw.dumpObject(d1name), mw.dumpObject(d2name))
+		table.insert(incompatible1, s)
+	end
+end
+
+-- this function exists because Lua doesn't have `continue`
+local function do_innerloop(data)
+	local id = data[1]
+	-- data = { id, name1, name2, name3, name4, page_name, rarity }
+	if id == 339 then return end
+	-- iron wall
+	if data[6] == "Special Abilities#Conjure" then return end
+	if id >= 900 and id < 1000 then id = id + 10000 end
+	-- PC
+
+	local i = d2.map[id]
+	-- e.g. d2.map[0] will be a number i
+	-- d2.units[i] will be the data for cat
+	-- (cat has id 0)
+	if not i then
+		local s = "Unit not found with id %d (%s)"
+		-- id, name1
+		error(s:format(id, data[2]))
+	end
+	local cd2 = d2.units[i]
+	if not cd2 then
+		error("(I don't think this code path should be possible) Unit not found for index " .. i)
+		-- shouldn't be possible because d2.units[d2.map[x]] should always work
+		-- due to how these were created
+		-- condition is still good to have
+	end
+
+	if cd2.id ~= id then
+		local s = "*Unit has differing IDs between data sets: %d (%s); %d (%s)"
+		table.insert(incompatible1, s:format(data[1], data[2], cd2.id, cd2.name1))
+	end
+
+	check_d1_issame(data[2], i, cd2.name1)
+	check_d1_issame(data[3], i, cd2.name2)
+	check_d1_issame(data[4], i, cd2.name3)
+	check_d1_issame(data[5], i, cd2.name4)
+	assert(data[6])
+	check_d1_issame(data[6], i, cd2.page_name)
+
+	local clean_rarity = data[7]:gsub(' %(PC%)$', ''):gsub(' %(Sw%)$', '')
+	if clean_rarity ~= cd2.rarity then
+		local s = "*Rarity mismatch for %s. data1 = %s, data2 = %s"
+		table.insert(incompatible1, s:format(data[2], data[7], cd2.rarity))
+	end
+end
+for _, data in ipairs(d1.names) do
+	do_innerloop(data)
+end
+
+if #incompatible1 > 0 then
+	local s = "data1/data2 not lined up properly:\n%s"
+	table.insert(info, s:format(table.concat(incompatible1, '\n')))
+else
+	table.insert(info, "data1 is forwards-compatible.")
+end
+
+local incompatible2 = {}
+
+---Check that unit name is in d2.map, and that names are the same between data
+---sets.
+---@param d2name string Unit name from d2
+---@param d1index number Index of unit in d1.names
+---@param d1name string Unit name from d1
+local function check_d2_issame(d2name, d1index, d1name)
+	if d2name == nil then
+		return assert(d1name == "")
+	end
+
+	if d1.map[d2name] ~= d1index then
+		-- check that the unit's form name appears in the map, and that the
+		-- map's index for form name is same as index
+		local s = "*Not found in map: %s (should correspond to index %d)"
+		table.insert(incompatible2, s:format(d2name, d1index))
+	end
+
+	if d1name ~= d2name then
+		-- names should be the same
+		local s = ("*Expected %s, got %s"):format(mw.dumpObject(d2name), mw.dumpObject(d1name))
+		table.insert(incompatible2, s)
+	end
+end
+
+for _, data in ipairs(d2.units) do
+	local d1_id = data.id
+	if d1_id >= 10900 and d1_id < 11000 then d1_id = d1_id - 10000 end
+
+	local i = d1.map[data.name1]
+	if not i then
+		local s = "Unit not found with name %s"
+		error(s:format(data.name1))
+	end
+	local cd1 = d1.names[i]
+	if not cd1 then
+		error("(I don't think this code path should be possible) Unit not found for index " .. i)
+		-- shouldn't be possible because d1.names[d1.map[x]] should always work
+		-- due to how these were created
+		-- condition is still good to have
+	end
+
+	if cd1[1] ~= d1_id then
+		local s = "*Unit has differing IDs between data sets: %d (%s); %d (%s)"
+		table.insert(incompatible2, s:format(data.id, data.name1, cd1[1], cd1[2]))
+	end
+
+	check_d2_issame(data.name1, i, cd1[2])
+	check_d2_issame(data.name2, i, cd1[3])
+	check_d2_issame(data.name3, i, cd1[4])
+	check_d2_issame(data.name4, i, cd1[5])
+	check_d2_issame(data.page_name, i, cd1[6])
+
+	local clean_rarity = cd1[7]:gsub(' %(PC%)$', ''):gsub(' %(Sw%)$', '')
+	if clean_rarity ~= data.rarity then
+		local s = "*Rarity mismatch for %s. data1 = %s, data2 = %s"
+		table.insert(incompatible2, s:format(data.name, cd1[7], data.rarity))
+	end
+end
+
+if #incompatible2 > 0 then
+	local s = "data1/data2 not lined up properly:\n%s"
+	table.insert(info, s:format(table.concat(incompatible2, '\n')))
+else
+	table.insert(info, "data2 is backwards-compatible.")
+end
+
+---- Replacements
+
+local manual_fixes = {
+	-- copied from Module:Cats
+	["Cat Bros EX"] = "Cat Bros",
+	["Cat Bros R"] = "Cat Bros",
+	["Kitaro Cat & Nezumi-Otoko Cat 2"] = "Kitaro Cat & Nezumi-Otoko Cat",
+	["Cat Bros Sw"] = "Cat Bros",
+	["Kabuto Cat Sw"] = "Kabuto Cat",
+	["Kuwagata Cat Sw"] = "Kuwagata Cat",
+	["Commander Cat (13th)"] = "Commander Cat",
+	["Gold Cat (13th)"] = "Gold Cat",
+}
+if mw.text.jsonEncode(manual_fixes) ~= mw.text.jsonEncode(d2.replacements) then
+	local s = "Replacements not lined up properly:\n<pre>%s</pre>\n<pre>%s</pre>"
+	table.insert(info, s:format(mw.dumpObject(manual_fixes), mw.dumpObject(d2.replacements)))
+else
+	table.insert(info, "Replacements are fine.")
+end
+
+---- Images
+
+local function getd1images()
+	local csv = require('Module:CSV')
+	local args = { delim = '\t' }
+	local catImages = csv.from_page('Module:Cats/images.csv', args)
+	catImages()
+	-- get rid of header row
+
+	local data = { images = {} }
+	for line in catImages do
+		local num = tonumber(line[1])
+		local ind = tonumber(line[2])
+		assert(num and ind, "CRO and indicator number must be numeric!")
+		assert(
+			not data.images[num],
+			"Duplicate number found in Module:Cats/images.csv: " .. num
+		)
+		data.images[num] = { normal = 0, evolved = ind }
+	end
+
+	return data.images
+end
+
+if mw.text.jsonEncode(getd1images()) ~= mw.text.jsonEncode(d2.images) then
+	local s = "Images not lined up properly:\n<pre>%s</pre>\n<pre>%s</pre>"
+	table.insert(info, s:format(mw.dumpObject(d1.images), mw.dumpObject(d2.images)))
+else
+	table.insert(info, "Images are fine.")
+end
+
+local s = table.concat(info, '\n\n')
+
+return {
+	main = function()
+		return s
+	end
+}

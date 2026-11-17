@@ -1,0 +1,2 @@
+{{Documentation}}
+Wrapper around [[Module:BucketPut]] and [[Module:BucketGet]], which allow you to perform Bucket operations through a pure wikitext interface. This module contains two invokable functions: <code>put</code> and <code>get</code>, which correspond to the appropriate functions in the respective modules.

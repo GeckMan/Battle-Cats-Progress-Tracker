@@ -1,0 +1,96 @@
+-- <nowiki>
+local dependencyList = require( 'Module:Dependency list' )
+local yn = require( 'Module:Yesno' )
+local p = {}
+
+---@class fArgs
+---@field [1]? string Page to be documented.
+---@field dependency_list? string|boolean Add dependency list?
+---@field category? string|boolean Add page to categories?
+---@field is_used? string|boolean Check if page is used?
+---@field self_doc? string|boolean Is page its own doc page?
+---@field docpage? string Page to use as doc page.
+
+function p.doc( frame )
+    local title = mw.title.getCurrentTitle()
+	---@type fArgs
+    local args = frame:getParent().args
+    local page = args[1] or mw.ustring.gsub( title.fullText, '/doc$', '' )
+    local addDependencyList = yn( args.dependency_list or true )
+    local ret, cats, ret1, ret2, ret3
+    local onModule = title.namespace == 828
+
+    -- subpage header
+    if title.subpageText == 'doc' then
+        ret = mw.html.create( 'div' )
+            :addClass( 'messagebox' )
+            :addClass( 'info' )
+			:cssText( 'width: max(65%, 500px); max-width:100%;margin: 0.5em auto;background-color: var(--theme-page-background-color--secondary);box-sizing: border-box; border: 1px solid var(--theme-accent-color);padding: 0.25em 0.75em;' )
+				:tag( 'b' )
+					:wikitext( 'This is a documentation subpage for [[' .. page .. ']].' )
+					:done()
+				:tag( 'div' )
+					:css({ ['font-size'] = '0.85em', ['line-height'] = '1.4em' })
+					:wikitext(
+						string.format(
+							'It contains usage information, categories, and other content that is not part of the original %s page.',
+							onModule and 'module' or 'template'
+						)
+					)
+				:done()
+
+        if title.namespace == 10 then -- Template namespace
+            cats = '[[Category:Template documentation|' .. title.baseText .. ']]'
+            ret2 = addDependencyList and dependencyList._main(nil, args.category, args.is_used) or ''
+        elseif title.namespace == 116 then -- Calculator namespace
+        	cats = ''
+        	ret2 = addDependencyList and dependencyList._main(nil, args.category, args.is_used) or ''
+        elseif title.namespace == 828 then -- Module namespace
+        	cats = '[[Category:Module documentation|' .. title.baseText .. ']]'
+        	ret2 = addDependencyList and dependencyList._main(nil, args.category, args.is_used) or ''
+        else
+        	cats = ''
+        	ret2 = ''
+        end
+
+        return tostring( ret ) .. ret2 .. cats
+    end
+
+    -- template header
+    -- don't use mw.html as we aren't closing the main div tag
+    ret1 = '<div class="documentation osrs-documentation" style="clear:both;">'
+
+	local docpage = (yn( args.self_doc ) and page) or args.docpage or (page .. '/doc')
+
+    ret2 = mw.html.create( nil )
+        :tag( 'div' )
+            :addClass( 'doc-header documentation-header')
+            :tag( 'span' )
+            	:addClass( 'doc-title documentation-title' )
+            	:wikitext( string.format('%s documentation', onModule and 'Module' or 'Template') )
+            	:done()
+            :done()
+        :tag( 'div' )
+            :addClass( 'doc-transclusion documentation-subheader' )
+            :tag( 'span' )
+            	:addClass( 'documentation-documentation' )
+            	:wikitext( 'This documentation is transcluded from [[' .. docpage.. ']]. ' )
+            	:done()
+            :tag( 'span' )
+            	:addClass( 'doc-editlinks documentation-links plainlinks' )
+            	:wikitext(
+	            	'[[' .. tostring( mw.uri.fullUrl( docpage, {action='edit'} ) ) .. ' edit]] ' ..
+	            	'[[' .. tostring( mw.uri.fullUrl( docpage, {action='history'} ) ) .. ' history]] ' ..
+	                '[<span class="jsPurgeLink">[' .. tostring( mw.uri.fullUrl( title.fullText, {action='purge'} ) ) .. ' purge]</span>]'
+	            )
+	            :done()
+            :done()
+
+    ret3 = addDependencyList and dependencyList._main(nil, args.category, args.is_used) or ''
+
+    return ret1 .. tostring( ret2 ) .. '<div class="documentation-content">' .. ret3
+end
+
+return p
+
+-- </nowiki>

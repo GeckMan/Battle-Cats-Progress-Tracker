@@ -1,0 +1,4 @@
+A hashmap of event names and images to be displayed on [[Template:CurrentEvents]].
+
+==Updating==
+If an image for an event is missing from the hashmap (if this is the case, an image will not be shown on [[Template:CurrentEvents]] for the event), find an appropriate image for the event and add it to this hashmap in the following format: <code>["<Full Event Name>"] = "<image in wikitext>",</code>. Arguments such as the image size should be adjusted to look good for each image. For collaboration event images, the size is 300px, and no size has to be specified for map names.

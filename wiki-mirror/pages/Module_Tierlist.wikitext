@@ -1,0 +1,265 @@
+---	Module backend of [[Template:Tierlist]].
+--
+--	@module	Tierlist
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+-- Wikitext used for displaying table
+local base = [[{| class="article-table tierlist" style="%s %s"
+%s%s|}]]
+local rowBase = [[|-
+! style="%stext-align: center;%s" %s| %s
+%s | %s
+]]
+local titleBase = [[! colspan=%d style="text-align: center; font-size: 14pt; %s" | %s
+]]
+local userBase = "%s" -- "[[File:%s.png|100px]]"
+local userRow = [[|-
+| %s
+]]
+local userLink = "[[User:%s|%s]]"
+local colorBase = "background-color: rgb(%s); "
+
+---	Returns the rgb values of the color by a linear gradient
+--	@param {string | table} color1 A hexadecimal color code as a string or a triple of rgb values for the beginning
+--	@param {string | table} color2 A hexadecimal color code as a string or a triple of rgb values for the ending
+--	@param {number} rowTotal The number of tiers in the tierlist
+--	@param {number} tierNum The position of the tier to color counting from top using 1-based indexing
+--	@return {table} A triple of rgb values for the color genreated by the linear gradient defined by passed values
+function p.gradient(color1, color2, rowTotal, tierNum)
+	local result = {}
+	if type(color1) ~= 'table' then
+		color1 = p.rgb(color1)
+	end
+	if type(color2) ~= 'table' then
+		color2 = p.rgb(color2)
+	end
+	for i = 1, 3 do
+		table.insert(result, p.linear(color1[i], color2[i], rowTotal, tierNum))
+	end
+	return result
+end
+
+---	Returns a color in a rainbow gradient given a percentage for where the pick the color
+--	@param {number} percent
+--	@return {table} A triple of rgb values at the given position in the rainbow gradient
+function p.rainbow(percent)
+	local steps = { "#FC6663", "#FEB144", "#FDFD97", "#98FB98", "#87CDEE", "#A68DFF", "#FA86C4" }
+	local stepPercents = { 0, 14, 29, 48, 64, 82, 100 }
+	local stepNum = #steps
+	for i = 1, stepNum do
+		if percent <= stepPercents[i + 1] then
+			return p.gradient(steps[i], steps[i + 1], stepPercents[i + 1] - stepPercents[i], percent - stepPercents[i])
+		end
+	end
+	return p.rgb(steps[stepNum])
+end
+
+---	Returns a linear interpolation of r, g, or b value given number of tiers, the tier to color, and the two edge colors
+--	@param {number} color1 Color component for top tier
+--	@param {number} color2 Color component for bottom tier
+--	@param {number} rowTotal Number of tiers in tierlist
+--	@param {number} tierNum Order of tier from top the bottom for the tier to color using 1-based indexing
+--	@return {number} New color generated from linear gradient of given values
+function p.linear(color1, color2, rowTotal, tierNum)
+	return (color2 - color1) / (rowTotal - 1) * (tierNum - 1) + color1
+end
+
+---	Converts a hexadecimal color code into a triple of decimal rgb values
+--	@param {string} color A hexadecimal color code as a string
+--	@return {table} A triple of rgb values
+function p.rgb(color)
+	local result = color:gsub("#", "")
+	result = { result:sub(1, 2), result:sub(3, 4), result:sub(5, 6) }
+	for i = 1, 3 do
+		result[i] = tonumber(result[i], 16)
+	end
+	return result
+end
+
+---	Generates the table for tierlist
+function p.generateTable(args, mode)
+	local Cat
+	local Enemy
+
+	local text = ""
+	local rows = {}
+	local tier = ""
+	local counter = 0
+	local maxCol = 2
+	local separator = " "
+	local span = ""
+	local color = ""
+	local top, bottom, triple, colorInput
+	if mode == 'user' then
+		span = "rowspan=2 "
+	end
+	-- Change input into 2D table that's easier to work with
+	for _, item in ipairs(args) do
+		if item:match(' Tier') then
+			counter = counter + 1
+			table.insert(rows, { item })
+		else
+			local mag = tonumber(args.size or 1) or 1
+			if mode == 'cat' then
+				if not Cat then
+					Cat = require('Module:Cat2')
+					require('Module:Cat2/images').init(Cat)
+					require('Module:Cat2/load_bulk_data').init(Cat)
+				end
+				local cat = Cat.from_name(item)
+
+				local size = ('%.0fpx'):format(77 * mag)
+				local icon = Cat.image_str(cat, 'deploy', { size = size })
+
+				table.insert(rows[counter], icon)
+			elseif mode == 'enemy' then
+				if not Enemy then Enemy = require('Module:Enemies') end
+				local enemy = Enemy.new(item)
+
+				local size = ('%.0fpx'):format(55 * mag)
+				local icon = ("[[File:%s|%s|link=%s|%s]]"):format(enemy:icon(), size, enemy.link, enemy.name)
+
+				table.insert(rows[counter], icon)
+			elseif mode == 'user' then
+				table.insert(rows[counter], item)
+				separator = "\n| "
+			elseif mode == 'image' then
+				table.insert(rows[counter], item)
+			else
+				table.insert(rows[counter], item)
+				separator = ", "
+			end
+		end
+	end
+	if args.separator then
+		separator = args.separator
+	end
+	local tierStyle = " font-size: 11pt;"
+	if (args.color ~= nil and args.color:lower():match('none') == nil) and not args.normaltier then
+		tierStyle = " color: white; font-size: 11pt; -webkit-text-stroke-color: black; -webkit-text-stroke-width: 1px;"
+	end
+	local css = ""
+	if args.color then
+		css = "background-color: black; color: white;"
+	end
+	if args.background then
+		if args.background:lower() ~= "none" then
+			css = css .. ("background-color: %s;"):format(args.background)
+		else
+			css = ""
+		end
+		if args.textcolor then
+			css = css .. ("color: %s;"):format(args.textcolor)
+		end
+	end
+	-- this is disgusting
+	if args.size == nil and mode == "cat" then
+		css = css .. '" class="cat_images'
+	end
+	if css:len() >= 1 then
+		css = ('! style="%s"'):format(css)
+	end
+	-- Write contents of table
+	for index, item in ipairs(rows) do
+		tier = item[1]
+		if args.notier then
+			tier = tier:sub(1, tier:find(' Tier') - 1)
+		end
+		table.remove(item, 1)
+		if args.color and not args.color:match('none') then
+			if args.color:match('linear') then
+				colorInput = args.color:sub(args.color:find(' ') + 1, -1)
+				top = colorInput:sub(1, colorInput:find(' ') - 1)
+				bottom = colorInput:sub(colorInput:find(' ') + 1, -1)
+				triple = p.gradient(top, bottom, #rows, index)
+			elseif args.color:match('rainbow') then
+				triple = p.rainbow((index - 1) / (#rows - 1) * 100)
+			elseif args.color:match('custom') then
+				colorInput = args.color:sub(args.color:find(' ') + 1, -1)
+				local customColors = {}
+				for i in colorInput:gmatch("%S+") do
+					table.insert(customColors, p.rgb(i))
+				end
+				triple = customColors[index]
+				if triple == nil then
+					triple = { 0, 0, 0, 0 }
+				end
+			end
+			color = colorBase:format(table.concat(triple, ', '))
+		end
+		if mode == 'user' then
+			local userImgs = {}
+			local userLinks = {}
+			for _, username in ipairs(item) do
+				table.insert(userImgs, userBase:format(username))
+				table.insert(userLinks, userLink:format(username, username))
+			end
+			if #item + 1 > maxCol then
+				maxCol = #item + 1
+			end
+			text = text .. rowBase:format(color, tierStyle, span, tier, css, table.concat(userImgs, separator))
+			text = text .. userRow:format(table.concat(userLinks, separator))
+		else
+			text = text .. rowBase:format(color, tierStyle, span, tier, css, table.concat(item, separator))
+		end
+	end
+	return text, maxCol
+end
+
+---	Main function
+function p._main(args)
+	local title = ""
+	local text = ""
+	local mode = 'cat'
+	local css = ""
+	local maxCol
+	if args.mode ~= nil then
+		local modeArg = args.mode:lower()
+		if modeArg:match('enem') then
+			mode = 'enemy'
+		elseif modeArg:match('user') then
+			mode = 'user'
+			css = "text-align: center;"
+		elseif modeArg:match('image') then
+			mode = 'image'
+		elseif not modeArg:match('cat') then
+			mode = 'text'
+		end
+	end
+	text, maxCol = p.generateTable(args, mode)
+	if args.title then
+		local titleStyle = ""
+		if args.titlecss then
+			titleStyle = args.titlecss
+		end
+		title = titleBase:format(maxCol, titleStyle, args.title)
+	end
+	local tableStyle = ""
+	if args.tablecss then
+		tableStyle = args.tablecss
+	end
+	return base:format(css, tableStyle, title, text)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+mw.log(p.main({ "S Tier", "S", "A Tier", "A", "B Tier", "B", "C Tier", "C", "D Tier", "D", "E Tier", "E", "F Tier", "F", mode = "text", color = "rainbow" }))
+mw.log(p.main({ "S Tier", "S", "A Tier", "A", "B Tier", "B", "C Tier", "C", "D Tier", "D", "F Tier", "F", mode = "text", color = "linear #FC6663 #FA86C4" }))
+mw.log(p.main({ "Something Tier", "SweetDonut0", "SweetDonut0", "SweetDonut0", mode = "user", title = "Donut Tierlist" }))
+mw.log(p.main({ "Something Tier", "SweetDonut0", mode = "user" }))
+mw.log(p.main({ "S Tier", "Li'l Doge", "A Tier", "Doge", "Snache", mode = "enemy" }))
+mw.log(p.main({ "S Tier", "Cat", "Tank Cat", "A Tier", "King Dragon Cat", mode = "cat", title = "Normal Cats" }))
+mw.log(p.main({ "S Tier", "Cat", "Tank Cat", "A Tier", "King Dragon Cat", color = "custom #00ff00" }))
+mw.log(p.main({ "S Tier", "Cat", "Tank Cat", "A Tier", "King Dragon Cat", color = "custom #00ff00 #773355" }))
+mw.log(p.main({ "S Tier", "Cat", "Tank Cat", "A Tier", "King Dragon Cat" }))
+mw.log(p.main({ "S Tier", "Cat", size = "2" }))
+mw.log(p.main({ "S Tier", "Cat" }))
+]=]

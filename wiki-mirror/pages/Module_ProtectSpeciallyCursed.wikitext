@@ -1,0 +1,16 @@
+local p = {}
+
+local cursed = mw.loadJsonData('MediaWiki:Speciallycursed-config.json')
+
+function p.main(frame)
+	local pages = { "Pages:" }
+	for specialpage, t in pairs(cursed) do
+		local invoke = ("{{#invoke:%s|main}}"):format(t.module)
+		frame:preprocess(invoke)
+		table.insert(pages, ("*[[Module:%s]] ([[Special:%s]])"):format(t.module, specialpage))
+	end
+
+	return table.concat(pages, '\n')
+end
+
+return p

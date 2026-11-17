@@ -1,0 +1,94 @@
+---	Data module for [[Module:Enemies]] (who would have guessed) as parsed from
+--	`[[Module:Enemies.csv]]`
+--
+--	@submodule data
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:CSV
+--	@require Module:Cache
+--	@require Module:Enemies.csv (parent module)
+local cache = nil--require('Module:Cache').load_cache("Module:Enemies/data")
+if cache then
+	return cache
+end
+
+local csv = require('Module:CSV')
+---	@table data
+--	@field {string} name E.g. where `data['Doge']` is of the form @{data.sub}
+--	@usage
+--local name = 'Doge'
+--assert(data[name][2] == name)
+--assert(data[name][4] == '90')
+local data = {}
+---	Table with the following numeric keys
+--	@table data.sub
+--	@field {string} 1 Enemy image file number (as in `Enemy icon %s.png`)
+--	@field {string} 2 Enemy name
+--	@field {string} 3 Enemy page link (blank if link is name e.g. for Traitless
+--	enemies)
+--	@field {string} 4 Enemy HP at 100% (numeric)
+--	@field {string} 5 Enemy damage at 100% (numeric)
+local args = { delim = '\t' }
+local enemiesCSV = csv.from_page('Module:Enemies.csv', args)
+enemiesCSV()
+
+---	Add table to data, with key `t[2]` (i.e. Enemy name)
+--	@param {data.sub} t CSV row to add
+--	@param {bool} add_other_keys Add page name and id as keys
+--	@warning Modifies `data` rather than having a return
+local function add(t, add_other_keys)
+	local enemy = t[2]
+	enemy = tonumber(enemy) or enemy
+	assert(not data[enemy], "Duplicate name found in Module:Enemies.csv: " .. enemy)
+	data[enemy] = t
+
+	if t[3] ~= "" and add_other_keys then
+		enemy = t[3]
+		assert(not data[enemy], "Duplicate link found in Module:Enemies.csv: " .. enemy)
+		enemy = tonumber(enemy) or enemy
+		local t2 = {}
+		for key, value in pairs(t) do
+			t2[key] = value
+		end
+		data[enemy] = t2
+	end
+
+	if add_other_keys then
+		enemy = t[1]
+
+		if data[enemy] then
+			error("Duplicate id found in Module:Enemies.csv: " .. enemy)
+		end
+		assert(("%03d"):format(enemy) == enemy)
+
+		local t2 = {}
+		for key, value in pairs(t) do
+			t2[key] = value
+		end
+		data[enemy] = t2
+	end
+end
+
+for t in enemiesCSV do
+	add(t, true)
+end
+
+---	Added data for enemies with multiple incarnations
+local extras = require('Module:Enemies/extras')
+
+for _, t in ipairs(extras) do
+	add(t)
+end
+
+---	@table enemyData
+--	@field {data} data
+return {
+	data = data,
+}
+
+--[=[
+for num, t in pairs(p) do
+	for k, part in pairs(t) do
+		print(num, k, part)
+	end
+end
+]=]

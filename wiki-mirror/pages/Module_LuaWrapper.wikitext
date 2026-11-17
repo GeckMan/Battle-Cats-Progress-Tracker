@@ -1,0 +1,20 @@
+---	Wrapper around basic Lua functions to use in wikitext.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+
+---	Unstrip &lt;nowiki&gt; tags from first argument.
+function p.unstripnowiki(frame)
+	return mw.text.unstripNoWiki(frame.args[1])
+end
+
+---	Call parser function with parent args.
+function p.callParserFunction(frame)
+	local t = {}
+	for k, v in pairs(frame:getParent().args) do
+		t[k] = v
+	end
+	return frame:callParserFunction(frame.args[1], t)
+end
+
+return p

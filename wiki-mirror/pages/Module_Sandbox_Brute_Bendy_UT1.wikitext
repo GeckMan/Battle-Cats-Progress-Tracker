@@ -1,0 +1,101 @@
+-- @author       Brute Bendy
+
+-- @script     UT1
+-- @param 
+
+local p = {}
+local deezNuts = require('Module:Arguments').getArgs
+--- @function   checkname
+-- @param      {string} name Takes in a name as a string.
+-- @return     {string} Returns the "name" argument with an extension.
+-- 
+function p.checkname(name)
+	local gifs = {
+		"Pizzamemes", "LemonSociety", "Yelisreal", "Suicidal Speed Demon",
+		"Sharkey192", "Fatmax2Spew", "Huwdte 2", "Mech on the Moon",
+		"Huwdte", "Yyyyyyyyyyy520", "JackTheArtist", "Shattre",
+		"Moeeeeeee", "Tacomando", "ItzJustLuke", "Keyboardspamdjifwjfjdsl"
+	}
+	local avatar = {"BbAaTtTtLlEe Cats", "Cat Game is fun", "Krazyman505858",
+		"TheRealAlanGaming"
+	}
+	
+	for _, item in ipairs(avatar) do
+		if name == item then
+			return "Avatar.png"
+		end
+	end
+	
+	for _, item in ipairs(gifs) do
+		if name == item then
+			return string.format("%s.gif", name)
+		end
+	end
+	return string.format("%s.png", name)
+end
+
+--- @function  user_tierlist
+-- @param     {string} title Takes in a string to be used as the resulting table's title.
+-- @param     {table} args Takes in a table of usernames to be used throughout the function.
+-- @return     {string} Concatenates a new table's items that were made inside of this function.
+function p.user_tierlist(title, args)
+	local rowspan = 2
+	local length = #args
+        
+	while length > 4 do
+		rowspan = rowspan + 2
+		length = length - 4
+	end
+
+	rowspan = rowspan + 1
+
+	local list = {'{| class="wikitable" style="text-align:center;"', "|-", string.format('! rowspan="%s" | %s', rowspan, title)}
+	local file, usernames = "", ""
+
+	for index, user in ipairs(args) do
+		if index % 4 == 1 then
+			file = string.format("%s|-\n| [[File:%s|x100px|link=User:%s]]", file, p.checkname(user), user)
+			usernames = string.format("%s|-\n| %s", usernames, user)
+		else
+			file = string.format("%s || [[File:%s|x100px|link=User:%s]]", file, p.checkname(user), user)
+			usernames = string.format("%s || %s", usernames, user)
+		end
+
+		if index % 4 == 0 then
+			table.insert(list, file)
+			table.insert(list, usernames)
+			file, usernames = "", ""
+		elseif index == #args then
+			table.insert(list, file)
+			table.insert(list, usernames)
+		end
+	end
+	table.insert(list, "|}")
+
+	return table.concat(list, "\n")
+end
+
+
+function p._main(test)
+	local test1 = {}
+	
+	for _, item in ipairs(test) do
+		table.insert(test1, item)
+	end
+	
+	if #test1 > 1 then
+		local test2 = {}
+		for _, item in ipairs(test1) do
+			table.insert(test2, item)
+		end
+		table.remove(test2, 1)
+		return p.user_tierlist(test1[1], test2)
+	else
+		return "Either you give me more arguments, or I won't do crap for you. Those are your only two options."
+	end
+end
+
+function p.main(frame)
+	return p._main(deezNuts(frame))
+end
+return p

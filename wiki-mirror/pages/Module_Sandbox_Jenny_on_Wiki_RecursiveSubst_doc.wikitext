@@ -1,0 +1,79 @@
+{{Documentation}}
+<includeonly><onlyinclude>There is a problem with onlyinclude so you won't see the actual documentation from this page, so just go to [[/doc]] to see it instead.<br><br></onlyinclude></includeonly>
+==Usage==
+===Basic===
+If you make the template A and put in this
+<syntaxhighlight lang="wikitext">
+<includeonly><onlyinclude>{{subst:#invoke:Sandbox/Jenny on Wiki/RecursiveSubst|main|<|content|>}}</onlyinclude></includeonly>
+</syntaxhighlight>
+Then if you put
+<syntaxhighlight lang="wikitext">{{subst:A}}</syntaxhighlight>
+on another page it will expand to
+<syntaxhighlight lang="wikitext"><span style="display:none">{{subst:A|=</span><|content|><span style="display:none">}}</span></syntaxhighlight>
+which will render as "<|content|>" on the page.
+
+===Advanced===
+The advantage of this is if you had <syntaxhighlight inline lang="wikitext">{{subst:CURRENTTIME}}</syntaxhighlight> in Template:A instead of <|content|> then the page would save it to be {{CURRENTTIME}}: there is no need for the module to try and work out the time the module was last saved using any database queries, as this is embedded in the page itself. Additionally, when users save the page, there is no need for them to manually input this data as the process of expansion is automatic. In short, it is a zero-cost abstraction.
+
+====maintain====
+The <code>maintain</code> parameter allows you to preserve positional arguments. For example in the following:
+<syntaxhighlight lang="wikitext">
+<includeonly><onlyinclude>{{subst:#invoke:Sandbox/Jenny on Wiki/RecursiveSubst|main|maintain=2|hello {{{1}}} you are {{{2}}}!}}</onlyinclude></includeonly>
+</syntaxhighlight>
+then the call
+<syntaxhighlight lang="wikitext">{{subst:A|world|cool}}</syntaxhighlight>
+yields
+<syntaxhighlight lang="wikitext"><span style="display:none">{{subst:A|world|cool|=</span>hello world you are cool!<span style="display:none">}}</span></syntaxhighlight>
+which renders as hello world you are cool!
+
+==Inner workings==
+:''See [[mw:Manual:Recursive conversion of wikitext]] for original source of inspiration.''
+===Recursive conversion basics===
+The module works by using the subst: method to expand something that expands to have the same subst:. To do this in wikitext you could do the following:
+
+*Create the template A, with content <syntaxhighlight inline lang="wikitext"><includeonly>{{subst:B}}}}</includeonly></syntaxhighlight>
+*Create the template B, with content <syntaxhighlight inline lang="wikitext"><includeonly>{{subst:A</includeonly></syntaxhighlight>
+*On page C, call <syntaxhighlight inline lang="wikitext">{{subst:A}}</syntaxhighlight>
+*When you save, the parser will expand the wikitext as such:
+*#Substitute out A: <syntaxhighlight inline lang="wikitext">{{subst:B}}}}</syntaxhighlight>
+*#Substitute out B: <syntaxhighlight inline lang="wikitext">{{subst:A}}</syntaxhighlight>
+*#And you're left with the final substitution being the original one!
+
+===Using modules===
+This process is far easier with modules since a module can just <syntaxhighlight inline lang="lua">return '{{subst:A}}'</syntaxhighlight>, removing the need for module B or any fancy wikitext to prevent parser issues. In this case you could use a module B
+<syntaxhighlight lang="lua">
+function p.main(frame)
+	return '{{subst:A}}'
+end
+</syntaxhighlight>
+Then, with template A <syntaxhighlight inline lang="wikitext"><includeonly>{{subst:#invoke:B|main}}</includeonly></syntaxhighlight>, this will work the same as the wikitext A template in the section above.
+
+While the module approach may seem more boilerplate-y, it takes advantage of the extensibility of modules, allowing you to reuse code and add new features.
+
+===Storing data===
+The simplest use case is to store data inside this subst: so it is automatically saved onto the page when a user edits it. For example, take module B described above with the following modification:
+<syntaxhighlight lang="lua">
+function p.main(frame)
+	return '{{subst:A|Hello World!}}'
+end
+</syntaxhighlight>
+When page C is saved with <syntaxhighlight inline lang="wikitext">{{subst:A}}</syntaxhighlight> this will expand to <syntaxhighlight inline lang="wikitext">{{subst:A|Hello World!}}</syntaxhighlight>, and whenever the page is saved the message will always be there. This module can be expanded to have substed text of its own such as <syntaxhighlight inline lang="wikitext">~~~~</syntaxhighlight> or <syntaxhighlight inline lang="wikitext">{{subst:CURRENTTIME}}</syntaxhighlight>, which when saved will save as the user's signature or the current time respectively. This allows the page to be saved with information directly embedded into it without needing it to be figured out as with using <syntaxhighlight inline lang="wikitext">{{REVISIONUSER}}</syntaxhighlight> or <syntaxhighlight inline lang="wikitext">{{#time:h:m|{{REVISIONTIMESTAMP}}}}</syntaxhighlight> would in a similar context.
+
+===Formatting===
+Having the page say "<nowiki>{{subst:A|Hello World!}}</nowiki>" isn't very reader-friendly, you likely want the page to say "Hello World!" instead. There is actually a very simple solution: just use <syntaxhighlight inline lang="wikitext"><span style="display:none">{{subst:A|</span>Hello World!<span style="display:none">}}</span></syntaxhighlight> as what is being saved instead.
+
+This introduces a new problem: how to make sure these tags are balanced. One solution is to instead make the original call be <syntaxhighlight inline lang="wikitext"><span style="display:none">{{subst:A}}</span></syntaxhighlight>, which is generally what is used on the original meta-wiki templates that inspired this module, and then have the function <syntaxhighlight inline lang="lua">return '{{subst:A|</span>Hello World!<span style="display:none">}}'</syntaxhighlight>.
+
+Having to put the span in yourself is no fun (well it's not the end of the world, [[Module:Cache]] has you do that anyway, but this isn't about anything useful, it's about fun). How to solve this: just check if <syntaxhighlight inline lang="lua">args[1]</syntaxhighlight> exists. There's also a problem here if the argument has an = sign (e.g. <syntaxhighlight inline lang="wikitext">{{subst:A|thing = less good than other thing}}</syntaxhighlight>), so instead it's easier to have it be <syntaxhighlight inline lang="wikitext">{{subst:A|1=thing = less good than other thing}}</syntaxhighlight> by explicitly specifying <syntaxhighlight inline lang="lua">args[1]</syntaxhighlight>. This module actually uses the empty argument to do this (<syntaxhighlight inline lang="wikitext">{{subst:A|=thing = less good than other thing}}</syntaxhighlight>) since it makes the next section easier to do.
+
+With the check out of the way this then just uses <syntaxhighlight inline lang="lua">p.hide</syntaxhighlight> to check to see if <syntaxhighlight inline lang="lua">args['']</syntaxhighlight> exists, and if it doesn't then it inserts the span tags on the outside.
+
+===Preserving arguments===
+:''This part of the module is still incomplete''
+*{using |= to store main stuff, still has limitations but args.maintain still works alright}
+
+==Actual uses==
+Originally I didn't care that this was useless. Then I had the idea to make [[Module:Cache]], which uses some of the techniques described here to make something actually useful.
+
+==Documentation==
+{{Docbunto|Sandbox/Jenny on Wiki/RecursiveSubst|code=on}}

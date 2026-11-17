@@ -1,0 +1,175 @@
+local p = {}
+
+---Get the JSON for cats whose unique names are different from their actual
+---names.
+---@param args any
+---@return string?
+function p.replacements(args)
+	local r = {}
+	if args.key1 then r[args.key1] = args.name1 end
+	if args.key2 then r[args.key2] = args.name2 end
+	if args.key3 then r[args.key3] = args.name3 end
+	if args.key4 then r[args.key4] = args.name4 end
+
+	local encoded = mw.text.jsonEncode(r)
+	if #encoded < 3 then
+		-- covers both `[]` and `{}`. Currently empty tables get encoded as []
+		-- but this is more robust probably.
+		return nil
+	end
+
+	return encoded
+end
+
+---Parse args or something.
+---@param args any
+---@return table
+function p.get_data(args)
+	local id = tonumber(args['ID']) or error("missing ID")
+	if args.version then
+		id = id + 10000
+	end
+	local categories = {}
+	for value in mw.text.gsplit(args.categories or "", ',') do
+		value = mw.text.trim(value)
+		if value ~= "" then
+			table.insert(categories, value)
+		end
+	end
+
+	local unique_names = {
+		args.key1 or args.name1,
+		args.key2 or args.name2,
+		args.key3 or args.name3,
+		args.key4 or args.name4,
+	}
+	-- local names = {
+	-- 	args.name1,
+	-- 	args.name2,
+	-- 	args.name3,
+	-- 	args.name4,
+	-- }
+
+	return {
+		id = id,
+		unique_names = unique_names,
+		rarity = args.rarity or error("missing rarity"),
+		categories = categories,
+		version = args.version,
+		replacements_json = p.replacements(args),
+	}
+end
+
+function p.store(args)
+	local page = mw.title.getCurrentTitle()
+	if page.namespace ~= 0 then
+		return
+	end
+
+	local data = p.get_data(args)
+	local unique_names = data.unique_names
+	local unit_id = data.id
+	-- unit_id gets used across this function so give it a big name
+
+	local bArgs = {
+		id = unit_id,
+		name1 = unique_names[1],
+		name2 = unique_names[2],
+		name3 = unique_names[3],
+		name4 = unique_names[4],
+		name_index = unique_names,
+
+		rarity = data.rarity,
+		categories = data.categories,
+		version = data.version,
+		replacements_json = data.replacements_json,
+	}
+	mw.ext.bucket('cat').put(bArgs)
+
+	-- now for cat names
+
+	--[[
+	Units will be 3-tuples of { name, form, type }
+	Each is same as in cat_names bucket
+	--]]
+	local units = {}
+	for form, name in ipairs(unique_names) do
+		table.insert(units, { name, form, 'unique_name' })
+	end
+	-- technically these could be in the same loop but [[bucket:cat names]]
+	-- looks nicer with them in their own little blocks
+	for form in ipairs(unique_names) do
+		local form_id = ('%03d-%d'):format(unit_id, form)
+		table.insert(units, { form_id, form, 'form_id' })
+	end
+	table.insert(units, { unit_id, nil, 'id' })
+	local page_name = mw.title.getCurrentTitle().fullText
+	table.insert(units, { page_name, nil, 'page_name' })
+
+	-- as per docs, we want to trap the complexity spirit demon in here, so we
+	-- now query the bucket to see if these names are already in use
+	local where = {}
+	for _, unit in ipairs(units) do
+		table.insert(where, { 'name', '=', unit[1] })
+	end
+	local query = mw.ext.bucket('cat_names')
+		.select('page_name', 'id', 'form', 'name')
+		.where(mw.ext.bucket.Or(unpack(where)))
+		.where('page_name', '!=', page_name)
+
+	-- name -> { id, form, page_name? }
+	local map = {}
+	for _, unit in ipairs(query.run()) do
+		map[unit.name] = { unit.id, unit.form, unit.page_name }
+	end
+
+	---This function would be inside the loop but Lua doesn't have `continue`
+	local function setBucket(unit)
+		local params = {
+			id = unit_id,
+			form = unit[2],
+			name = unit[1],
+			type = unit[3],
+		}
+
+		if not map[params.name] then
+			-- case 1: it's a unique name
+			mw.ext.bucket('cat_names').put(params)
+			map[params.name] = { params.id, params.form }
+			return
+		end
+
+		local m = map[params.name]
+		if m[1] == params.id and m[2] == params.form then
+			-- case 2: we have a dupe name, but that name corresponds to the
+			-- exact same unit and form so we don't need to do anything
+			return
+		end
+
+		if m[3] then
+			-- case 3: a different page already has a unit with the same name
+			-- in this case m[3] is the name of that page
+			local fmt = 'page [[%s]] already has a unit with the name %q.'
+				.. ' You may need to use {{[[Template:Cat Info|Cat Info]]}}\'s "key%d" parameter'
+			error(fmt:format(m[3], params.name, params.form))
+		end
+
+		if m[1] == params.id then
+			-- case 4: the current page uses the same name for different forms.
+			-- e.g. [[Kitaro Cat & Nezumi-Otoko Cat (PC Uber Rare Cat)]] if it
+			-- didn't have key parameters. Or if unit 0's 2nd form was named
+			-- 000-1.
+			local fmt = 'forms %d and %d use the same name: %q'
+			error(fmt:format(m[2], params.form, params.name))
+		end
+
+		error('attempting to set duplicate name')
+		-- can this even happen?
+	end
+
+	for _, unit in ipairs(units) do
+		setBucket(unit)
+	end
+end
+
+return p

@@ -1,0 +1,110 @@
+---	Module to create API endpoints for [[Module:Cats]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cats
+local p = {}
+local cat_keys = { 'id', 'name1', 'name2', 'name3', 'name4', 'page_name', 'rarity' }
+
+local function iterate_json_item(t, keys)
+	local i = 0
+	return function()
+		while true do
+			i = i + 1
+			if keys[i] and t[keys[i]] then
+				return keys[i], t[keys[i]]
+			end
+			if i > #keys then
+				return
+			end
+		end
+	end
+end
+
+local function get_json_iterator(keys)
+	return function(t)
+		return iterate_json_item(t, keys)
+	end
+end
+
+function p.get_replacements_json()
+	local LEN = 500
+	local units = mw.bucket('cat')
+		.select('id', 'replacements_json')
+		.where('replacements_json', '!=', mw.bucket.Null())
+		.limit(LEN)
+		.orderBy('id')
+		.run()
+
+	if #units >= LEN then
+		error("too many cooks or something idk use ChunkedIterator")
+	end
+
+	local keys = {}
+	local replacements = {}
+	for _, unit in ipairs(units) do
+		for k, v in pairs(mw.text.jsonDecode(unit.replacements_json)) do
+			assert(not replacements[k])
+			replacements[k] = v
+			table.insert(keys, k)
+		end
+	end
+
+	setmetatable(replacements, { __pairs = get_json_iterator(keys) })
+	return replacements
+end
+
+function p.get_cats_json()
+	local cat_data = require('Module:Cats/data2')
+	local mt = { __pairs = get_json_iterator(cat_keys) }
+	-- this means that mw.text.jsonEncode will order everything properly rather
+	-- than having a completely random order
+
+	local t = {}
+	for _, v in ipairs(cat_data.units) do
+		if v.id < 10000 then
+			setmetatable(v, mt)
+			table.insert(t, v)
+		end
+	end
+
+	local wall = {
+		id = 339,
+		name1 = "Iron Wall Cat",
+		page_name = "Ototo Corps#Base Upgrade Materials/Information",
+		rarity = "EX",
+	}
+	setmetatable(wall, mt)
+	table.insert(t, wall)
+
+	for i, data in ipairs(require('Module:Spirit/data')) do
+		local spirit = {
+			id = data.id,
+			name1 = "Summon " .. i,
+			page_name = "Special Abilities#Conjure",
+			rarity = cat_data.units[cat_data.map[data.page_name]].rarity,
+		}
+		setmetatable(spirit, mt)
+		table.insert(t, spirit)
+	end
+
+	table.sort(t, function(a, b)
+		return a.id < b.id
+	end)
+
+	return t
+end
+
+function p.get_cats_csv()
+	local t = { 'Number	First	Evolved	True	Ultra	PageName	Rarity' }
+	for _, value in ipairs(p.get_cats_json()) do
+		value.id = ("%03d"):format(value.id)
+		local t2 = {}
+		for _, key in ipairs(cat_keys) do
+			table.insert(t2, value[key] or '')
+		end
+		table.insert(t, table.concat(t2, '\t'))
+	end
+	return table.concat(t, '\n')
+end
+
+return p

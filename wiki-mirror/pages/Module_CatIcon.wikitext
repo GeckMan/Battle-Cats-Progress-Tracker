@@ -1,0 +1,39 @@
+---	Module backend of [[Template:CatIcon]].
+--
+--	@module	CatIcon
+--	@alias p
+--	@author [[User:Miaousquetaire]]
+--	@require Module:Cats
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+local cat_query = require('Module:Cat query helper')
+
+function p._main(args)
+	local names = {}
+	for _, name in ipairs(args) do
+		table.insert(names, name)
+	end
+
+	local get_cat = cat_query.get_cat_function(names)
+	local icons = {}
+	for _, name in ipairs(args) do
+		local cat = get_cat(name)
+		local icon = Cat.image_str(cat, 'deploy', { size = args.size })
+		table.insert(icons, icon)
+	end
+
+	return table.concat(icons, '')
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({"Cat"}))
+print(p.main({"Cat", "Tank Cat", size="80px"}))
+]=]

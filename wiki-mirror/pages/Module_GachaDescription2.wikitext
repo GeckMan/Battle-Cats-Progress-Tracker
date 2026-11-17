@@ -1,0 +1,89 @@
+---	See [[Template:GachaDescription]].
+--
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+--	@require Module:Cats
+--	@require Module:Utility
+--	@require Module:GachaDescription/data (parent module)
+local p = {}
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+require('Module:Cat2/string_functions').init(Cat)
+local cat_query = require('Module:Cat query helper')
+local getArgs = require('Module:Arguments').getArgs
+
+local descriptions = mw.loadData("Module:GachaDescription/data")
+
+---comment
+---@param cat Cat
+---@return MwHtml
+function p.get_desc(cat)
+	local normal = cat:to_form(1)
+	local evolved = cat:shallow_clone():to_form(2)
+
+	local desc = descriptions[normal:unique_name()]
+	if not desc then
+		mw.logObject(desc)
+		error(normal:unique_name() .. ' has no descriptions')
+	end
+	local csr = Cat.str
+	local data = {
+		normal = csr.page_link(normal),
+		evolved = csr.page_link(evolved),
+		deployn = Cat.image_str(normal, 'deploy', { size = '100px' }),
+		deployev = Cat.image_str(evolved, 'deploy', { size = '100px' }),
+		descn = desc[2],
+		descev = desc[3],
+	}
+	-- Use the greyed-out icons for Legend Rares (minus Tyrant Cat which
+	-- doesn't have those)
+	if normal.rarity == "LR" then
+		data.deployn = (data.deployn):gsub('f00', 'a00')
+		data.deployev = (data.deployev):gsub('c00', 'b00')
+	end
+
+	local main = mw.html.create('div')
+		:addClass('template-gacha-description')
+
+	local n = main:tag('div')
+		:addClass('gacha-unit-form')
+	n:tag('div'):addClass('gacha-unit-header'):wikitext('Normal')
+	n:tag('div'):addClass('gacha-unit-img'):wikitext(data.deployn)
+	n:tag('div'):addClass('gacha-unit-subheader'):wikitext('Unit')
+	n:tag('div'):addClass('gacha-unit-name'):wikitext(data.normal)
+	n:tag('div'):addClass('gacha-unit-description'):wikitext(data.descn)
+
+	local e = main:tag('div')
+		:addClass('gacha-unit-form')
+	e:tag('div'):addClass('gacha-unit-header'):wikitext('Evolved')
+	e:tag('div'):addClass('gacha-unit-img'):wikitext(data.deployev)
+	e:tag('div'):addClass('gacha-unit-subheader'):wikitext('Unit')
+	e:tag('div'):addClass('gacha-unit-name'):wikitext(data.evolved)
+	e:tag('div'):addClass('gacha-unit-description'):wikitext(data.descev)
+
+	return main
+end
+
+function p._main(args)
+	local names = {}
+	for _, name in ipairs(args) do
+		table.insert(names, name)
+	end
+
+	local descs = { '|' }
+	local get_cat = cat_query.get_cat_function(names)
+	for _, name in ipairs(args) do
+		local cat = get_cat(name)
+		table.insert(descs, tostring(p.get_desc(cat)))
+	end
+	return table.concat(descs)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p._main({'Cat', 'Cat', 'Gaia the Creator'}))
+]=]

@@ -1,0 +1,24 @@
+local color = {
+	["Novastrala"]                 = "color:#40131E; font-weight:bold; text-shadow:1px 1px 2px rgb(255, 76, 121);",
+	["TheWWRNerdGuy"]              = "color:hsl(315, 92%, 50%); font-weight:bold;",
+	["AAGaming138"]                = "color:#27DF9A;"
+}
+
+function color.check_p(tab, name)
+	local keys = {}
+	for key, _ in pairs(tab) do
+		table.insert(keys, key)
+	end
+	
+	for _, value in ipairs(keys) do
+		if name == value then
+			return tab[value]
+		else
+			return _
+		end
+		
+	end
+end
+
+
+return color

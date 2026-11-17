@@ -1,0 +1,48 @@
+{{Documentation}}
+This module is intended to be annoying.
+
+Forgot to update those .csv data pages that the entire wiki relies on, because they didn't show up as links? Annoyed that nobody automatically updated it and you now need to do that yourself? This module registers as links to all of the broken links so it can annoy the people who didn't update it!
+
+The following pages are checked by this module:
+{{#invoke:Sandbox/Jenny on Wiki/Annoy|list}}
+
+==How to fix==
+Put this into [[Special:MyPage/common.css]] if you don't know how to use your browser's style editor.
+<syntaxhighlight lang="css" copy>
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview .mw-collapsible-content {
+	display: block !important;
+	content-visibility: visible !important;
+	position: relative !important;
+	width: auto !important;
+	height: auto !important;
+}
+
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview * {
+	font-size: 0;
+	margin: 0;
+}
+
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview h3 {
+	margin: 12px 0;
+}
+
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview h3 *,
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview h3[id^="SCRIPT_ERROR"] {
+	font-size: 12px;
+}
+
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview img {
+	display: none;
+}
+
+.page-Module_Sandbox_Jenny_on_Wiki_Annoy_doc #wikiPreview :where(a.new, span.new, a.new > span) {
+	font-size: 40px !important;
+}
+</syntaxhighlight>
+then just [{{fullurl:Module:Sandbox/Jenny on Wiki/Annoy/doc|action=edit}} preview this page]. This will show all the headings and if there are any broken links they will be very obvious.
+
+==Output==
+<div class="mw-collapsible mw-collapsed">{{Clear}}
+{{#invoke:Sandbox/Jenny on Wiki/Annoy|main}}
+</div>
+{{Clear}}

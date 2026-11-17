@@ -1,0 +1,62 @@
+---	Calculates proper rates for [[Template:MaterialRates]].
+--
+--	@module	MaterialRates
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p.normal(frame)
+	local args = getArgs(frame)
+	local function round(n)
+		return math.floor(n * 100 + 0.5) / 100
+	end
+
+	local none = args[1] / 100
+	local total = 0
+	for i = 2, 17 do
+		if not args[i] then break end
+		total = total + args[i]
+	end
+	total = total / 100
+
+	local cells = {}
+	for i = 2, 9 do
+		if not args[i] then break end
+		local rate = round((1 - none) * args[i] / 100 / total * 100)
+		table.insert(cells, ('| %s%%\n'):format(rate))
+	end
+
+	return table.concat(cells)
+end
+
+function p.extra(frame)
+	local args = getArgs(frame)
+	local function round(n)
+		return math.floor(n * 100 + 0.5) / 100
+	end
+
+	local none = args[1] / 100
+	local total = 0
+	for i = 2, 17 do
+		if not args[i] then break end
+		total = total + args[i]
+	end
+	total = total / 100
+
+	local cells = {}
+	for i = 10, 17 do
+		if not args[i] then break end
+		local rate = round((1 - none) * args[i] / 100 / total * 100)
+		table.insert(cells, ('| %s%%\n'):format(rate))
+	end
+
+	return table.concat(cells)
+end
+
+return p
+
+--[=[
+print(p.normal({'33', '13', '13', '13', '0', '13', '0', '0', '13'}))
+print(p.extra({'33', '0', '0', '0', '0', '0', '0', '0', '0', '10', '10', '10', '10', '10', '10', '10', '0'}))
+]=]

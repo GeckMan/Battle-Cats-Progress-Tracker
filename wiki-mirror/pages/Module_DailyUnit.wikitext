@@ -1,0 +1,122 @@
+---	Module backend of [[Template:DailyUnit]].
+--
+--	@module	DailyUnit
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+
+local catSkip = {}
+local enemySkip = {
+	-- princess punt sweets duplicates
+	[28] = true,
+	[29] = true,
+	[30] = true,
+	-- placeholders
+	[564] = true,
+	[565] = true,
+	[566] = true,
+	[567] = true,
+	[568] = true,
+	[569] = true,
+	[644] = true
+}
+
+---	Sets a seed for `math.random` using the time for the current day
+function p.setRandomseed()
+	local current = os.date('*t')
+	local currentDay = {
+		year = current.year,
+		month = current.month,
+		day = current.day,
+		hour = 0,
+		min = 0,
+		sec = 0
+	}
+	local day = os.time(currentDay)
+	math.randomseed(day)
+end
+
+---	Returns the appearance image for a randomly selected cat daily
+--	@return {string} Appearance image and additional information
+function p.cat()
+	p.setRandomseed()
+
+	local Cat = require('Module:Cat2')
+	require('Module:Cat2/images').init(Cat)
+	require('Module:Cat2/string_functions').init(Cat)
+
+	local query = mw.ext.bucket('cat')
+		.select(unpack(Cat.required_fields))
+		.where('version', mw.ext.bucket.Null())
+	-- find valid cats excluding PC and Switch units. we exclude PC and Switch
+	-- units because those don't all have screenshots in PNG format, and thus
+	-- the appearance image is not guaranteed to exist
+	-- I wonder, would it be better to just select id then run another bucket
+	-- query again after this.
+
+	local catOptions = {}
+	for _, value in ipairs(query.run()) do
+		table.insert(catOptions, value)
+	end
+
+	-- get info and create appearance image
+	local catData = catOptions[math.random(1, #catOptions)]
+
+	local cat = Cat.from_bucket_data(catData)
+	local form = math.random(1, cat.amt_forms)
+	cat = cat:to_form(form)
+
+	local csr = Cat.str
+	local file = Cat.image_str(cat, 'appearance', { class = 'notpageimage' })
+	local info = ('%s (%s)'):format(csr.page_link(cat), csr.rarity_str(cat.rarity))
+
+	return ('%s<br>%s'):format(file, info)
+end
+
+---	Returns the appearance image for a randomly selected enemy daily
+--	@return {string} Appearance image and additional information
+function p.enemy()
+	local Enemy = require('Module:Enemies')
+	local enemyCSV = mw.loadData('Module:Enemies/data')
+	p.setRandomseed()
+
+	-- find valid enemies
+	local enemyOptions = {}
+	for _, value in pairs(enemyCSV.data) do
+		if value[2] ~= '?' and not enemySkip[tonumber(value[1])] then
+			table.insert(enemyOptions, value[2])
+		end
+	end
+	-- create appearance image and info
+	local name = enemyOptions[math.random(1, #enemyOptions)]
+	local enemy = Enemy.new(name)
+
+	local traits = mw.ext.bucket("enemy_stats")
+		.select("traits")
+		.where("name", enemy.name)
+		.run()
+
+	local info
+	if #traits == 1 then
+		local traitList = {}
+		for _, t in pairs(traits[1].traits) do
+			if t == 'StarredAlien' then
+				table.insert(traitList, 'Starred Alien')
+			else
+				table.insert(traitList, t)
+			end
+		end
+		info = ('%s (%s)'):format(enemy.page, table.concat(traitList, '/'))
+	else
+		info = enemy.page
+	end
+
+	return ('[[File:E %03d.png|link=%s|alt=%s|class=notpageimage]]<br>%s'):format(enemy.num, enemy.link, name, info)
+end
+
+return p
+
+--[=[
+print(p.cat())
+print(p.enemy())
+]=]

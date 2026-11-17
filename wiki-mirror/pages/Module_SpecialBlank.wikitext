@@ -1,0 +1,7 @@
+local p = {}
+
+function p.main(frame)
+    return '<p>' .. frame:preprocess(mw.message.new('intentionallyblankpage'):plain()) .. '</p>'
+end
+
+return p

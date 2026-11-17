@@ -1,0 +1,109 @@
+local p = {}
+
+local Enemy = require("Module:Enemies")
+local interpolate = require("Module:Interpolate")
+local lang = mw.language.new("en")
+
+-- function that multiplies the value by the magnification
+-- then rounds and formats it
+local mult = function(x, mag)
+    -- Lua doesn't even have a rounding function so
+    -- the floor function workaround must be used
+    return lang:formatNum(math.floor(x*mag/100+0.5))
+end
+
+local messages = {
+    abbr1 = "${enemy} at ${mag}% strength magnification has "
+         .. "${hp} HP & ${atk} AP"
+}
+
+function p.abbr(enemy, mag)
+    -- function that returns the <abbr> element that displays the stats
+    -- of the enemy at its magnification
+    local abbr
+    mag = math.floor(tonumber(mag) or 0)
+    if mag == 0 then return "" end
+    local args = {
+        enemy = enemy.name,
+        mag = lang:formatNum(mag),
+        hp = mult(enemy.hp, mag),
+        atk = mult(enemy.atk, mag),
+    }
+    local txt = interpolate(messages.abbr1, args)
+    abbr = mw.html.create("abbr")
+        :attr("title", txt)
+        :cssText("cursor:help;")
+        :wikitext(lang:formatNum(mag).."%")
+    return "("..tostring(abbr)..")"
+end
+
+-- When HP and Attack magnifications are different
+-- mag will be a 2-element array containing the respective
+-- HP and AP magnifications
+function p.abbr2(enemy, mag)
+    local abbr = {}
+    local buff
+
+    local statName = {hp = "HP", atk = "AP"}
+    for i, stat in ipairs({"hp", "atk"}) do
+        mag[i] = math.floor(tonumber(mag[i]))
+        if mag[i] == 0 then error("Cannot have a 0% magnification") end
+
+        abbr[i] = tostring(mw.html.create("abbr")
+            :attr("title",("%s %s"):format(
+                mult(enemy[stat], mag[i]), statName[stat]
+            ))
+            :cssText("cursor:help;")
+            :wikitext(lang:formatNum(mag[i]).."% "..statName[stat]))
+    end
+
+    return table.concat(abbr,", ")
+    -- see the Heavy Assault C.A.T. example for a demonstration of this function
+end
+
+function p.stats_mag(name, mag)
+    local enemy = Enemy.new(name)
+
+    local link, abbr
+    if (enemy.link):find("Enemy") then
+        --[[lazy determination of the link customisation in infobox
+        i.e. is page name except if called like (Enemy)/(Event Enemy)]]
+        link = enemy.page
+    else link = ("[[%s]]"):format(enemy.link) end
+
+    mag = mag:gsub("[,%%]","")
+    -- used so 100/150 is 100% HP and 150% attack
+    mag = mw.text.split(mag, "/")
+
+    if #mag==1 then abbr = p.abbr(enemy, mag[1])
+    else abbr = p.abbr2(enemy, mag) end
+    --[[According to BCU HP must be at least 1]]
+    abbr = abbr:gsub("([^%d])0 HP","%11 HP")
+
+    local line = ("*%s: [[%s]] %s"):format(chapter, stage:gsub("*", "|"), abbr)
+    return line
+end
+
+function p.get_stats(args)
+    -- iterator code copied from Module:Tabber, as apparently #args doesn't work
+    local flag = true
+    local i = 1
+    local magnifications = {}
+    local enemy = args[1]
+    while flag do
+    	chapter = args[3 * i - 1]
+        stage = args[3 * i]
+        local mag = args[3 * i + 1]
+        if stage and mag then
+            table.insert(magnifications, p.stats_mag(enemy, mag))
+            i = i + 1
+        else flag = false end
+    end
+    return table.concat(magnifications,"\n")
+end
+
+function p.main(frame)
+    return p.get_stats(frame:getParent().args)
+end
+
+return p

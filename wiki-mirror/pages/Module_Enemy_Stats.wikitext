@@ -1,0 +1,316 @@
+---	Module backend of [[Template:Enemy Stats]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local formatnum = require('Module:Formatnum')
+local yesno = require('Module:Yesno')
+
+local trait_config = {
+	["Traitless"]    = { icon = 'Traitlesstraiticon.png', cat = 'Traitless' },
+	["Red"]          = { icon = 'Redtraiticon.png', cat = 'Red' },
+	["Floating"]     = { icon = 'Floatingtraiticon.png', cat = 'Floating' },
+	["Dark"]         = { icon = 'Darktraiticon.png', cat = 'Dark' },
+	["Metal"]        = { icon = 'Metaltraiticon.png', cat = 'Metal' },
+	["Angel"]        = { icon = 'Angeltraiticon.png', cat = 'Angel' },
+	["Alien"]        = { icon = 'Alientraiticon.png', cat = 'Unstarred Alien', cat2 = 'Alien' },
+	["StarredAlien"] = { icon = 'StarredAlientraiticon.png', cat = 'Starred Alien', cat2 = 'Alien' },
+	["Zombie"]       = { icon = 'Zombietraiticon.png', cat = 'Zombie' },
+	["Relic"]        = { icon = 'Relictraiticon.png', cat = 'Relic' },
+	["Aku"]          = { icon = 'Akutraiticon.png', cat = 'Aku' },
+	["Colossus"]     = { icon = 'Colossustraiticon.png', cat = 'Colossus' },
+	["EVA Angel"]    = { icon = 'EvaAngeltraiticon.png', cat = 'EVA Angel' },
+	["Witch"]        = { icon = 'Witchtraiticon.png', cat = 'Witch' },
+	["Typeless"]     = { icon = 'Typelesstraiticon.png', cat = 'Typeless' },
+	["Behemoth"]     = { icon = 'Beasttraiticon.png', cat = 'Behemoth' },
+	["Sage"]         = { icon = 'Sagetraiticon.png', cat = 'Sage' },
+	["Kaijin"] = { icon = 'Kaijintraiticon.png', cat = 'Kaijin' },
+}
+
+function p.get_detailed_controls(traits)
+	local controls = mw.html.create('table')
+		:addClass('enemy-calc-stats mw-collapsible mw-collapsed')
+		:attr({
+			cellspacing = "0",
+			["data-expandtext"] = "OFF",
+			["data-collapsetext"] = "ON"
+		})
+
+	local function get_cell(tag, class, content, colspan, rowspan)
+		return mw.html.create(tag)
+			:addClass(class)
+			:wikitext(content)
+			:attr({ colspan = colspan, rowspan = rowspan })
+	end
+
+	controls:tag('tr')
+		:addClass('modifier-heading')
+		:node(get_cell('th', '', 'Stats Modifier', 2))
+
+	controls:tag('tr')
+		:node(get_cell('th', '', 'Magnification (% HP/% AP)'))
+		:node(get_cell('td', 'enemy-stats-input enemy-mag-input', '100'))
+
+	controls:tag('tr')
+		:node(get_cell('th', '', "Decimal Places '''[DPS]'''"))
+		:node(get_cell('td', 'enemy-stats-input enemy-decimals-input', '2'))
+
+	if not traits:match('Alien') then
+		return controls
+	end
+
+	local base_mag = traits:match('StarredAlien') and "1500" or "600"
+	controls:tag('tr')
+		:node(get_cell('th', '', "Crystal Treasures"))
+		:node(get_cell('td', 'enemy-stats-input enemy-crystal-input', base_mag))
+
+	return controls
+end
+
+function p.attack_type_icon(attack_type)
+	if not (attack_type == "Single" or attack_type == "Area") then
+		return error(mw.dumpObject(attack_type) .. " is not recognised as a valid attack type")
+	end
+
+	-- local format = "[[File:%s Attack.png|link=Special Abilities#%s Attack|%s Attack]]"
+	local format = "[[Special Abilities#%s Attack|%s Attack]]"
+	return format:format(attack_type, attack_type)
+end
+
+function p.trait_links(traits)
+	local desktop = {}
+	local mobile = {}
+
+	for trait in mw.text.gsplit(traits, '/') do
+		trait = trait_config[trait]
+		local cat_link = ("Category:%s Enemies"):format(trait.cat)
+
+		local d_fmt = '[[File:%s|45x45px|link=:%s|%s]]'
+		table.insert(desktop, d_fmt:format(trait.icon, cat_link, trait.cat))
+		table.insert(mobile, ('[[:%s|%s]]'):format(cat_link, trait.cat))
+	end
+
+	return ('<span class="nomobile">%s</span><span class="mobileonly">%s</span>'):format(
+		table.concat(desktop),
+		table.concat(mobile, '/')
+	)
+end
+
+function p.get_table(args)
+	local function get_arg(arg_name)
+		return args[arg_name] or error(arg_name .. " parameter is missing")
+	end
+	local function parse_int(param_name)
+		return tonumber(args[param_name])
+			or error(('"%s" is not numeric'):format(param_name))
+	end
+	local function parse_int_multi(param_name)
+		local t = {}
+		for value in mw.text.gsplit(args[param_name], ',') do
+			local n = tonumber(value)
+			if not n then
+				local format = '"%s" is not a comma-separated list of numbers'
+				error(format:format(param_name))
+			end
+			table.insert(t, n)
+		end
+		return t
+	end
+
+	local bucket_args = {}
+	local do_put = mw.title.getCurrentTitle().namespace == 0
+	if do_put then
+		local Enemy = require('Module:Enemies')
+
+		local name
+		local s1, v1 = pcall(Enemy.new, mw.title.getCurrentTitle().fullText)
+		if s1 then
+			name = v1.name
+		else
+			name = Enemy.new(get_arg("Enemy Key")).name
+		end
+
+		bucket_args.name = name
+	end
+
+	local hp = parse_int("Health")
+	local attack_list = parse_int_multi("Attack Power")
+	local ap = 0
+	for _, n in ipairs(attack_list) do
+		ap = ap + n
+	end
+
+	local kamikaze = yesno(args["Kamikaze"] or "false")
+	if kamikaze == nil then
+		error(args["Kamikaze"] .. ' is not recognised as a true or false value.')
+	end
+
+	local freq
+	if kamikaze then
+		freq = { false }
+	else
+		local af = parse_int("Attack Frequency")
+		if af > 0 then
+			freq = { true, af }
+		else
+			freq = { false }
+		end
+	end
+	local foreswing = parse_int("Foreswing")
+	local backswing = parse_int("Backswing")
+	if backswing < 0 then
+		freq = { false }
+	end
+
+	local overflow = mw.html.create('div')
+		:addClass('overflow-shadow')
+	local main = overflow:tag('div')
+		:addClass('enemy-stats-table')
+		:attr({
+			['data-hp'] = hp,
+			['data-ap'] = mw.text.jsonEncode(attack_list),
+			['data-freq'] = (freq[1] and freq[2]) or nil,
+		})
+
+	main:tag('div')
+		:addClass('enemy-stats-title')
+		:cssText('grid-area: title;')
+		:wikitext(get_arg("Name"))
+
+	local function get_label(labelname, wikitext)
+		return mw.html.create('div')
+			:addClass('enemy-stats-label')
+			:cssText('grid-area: lab-' .. labelname)
+			:wikitext(wikitext)
+	end
+	local function get_value(valuename, wikitext)
+		return mw.html.create('div')
+			:addClass('enemy-stats-value')
+			:cssText('grid-area: val-' .. valuename)
+			:wikitext(wikitext)
+	end
+
+	main:node(get_label('hp', 'Health'):wikitext((args.Traits:match('Alien') or args.Traits:match('Metal')) and '*'))
+	main:node(get_value('hp', ("%s HP"):format(formatnum.formatInt(hp))):addClass('enemy-stats-hp'))
+
+	local attack = ("%s damage"):format(formatnum.formatInt(ap))
+	if freq[1] then
+		local dps = ap * 30 / freq[2]
+		attack = attack .. ("<br>(%s DPS)"):format(formatnum.formatFloat(dps, 2))
+	end
+	main:node(get_label('ap', 'Attack Power'):wikitext(args.Traits:match('Alien') and '*'))
+	main:node(get_value('ap', attack):addClass('enemy-stats-ap'))
+
+	local rng = parse_int("Attack Range")
+	local spd = parse_int("Movement Speed")
+	local kb = parse_int("Knockback")
+
+	local atktype = p.attack_type_icon(get_arg("Attack Type"))
+	main:node(get_label('rng', 'Attack Range'))
+	main:node(get_value('rng', formatnum.formatInt(rng)):wikitext('<br>(' .. atktype .. ')'))
+
+	main:node(get_label('spd', 'Movement Speed'))
+	main:node(get_value('spd', formatnum.formatInt(spd)))
+
+	local knock = ("%s %s"):format(formatnum.formatInt(kb), kb == 1 and "time" or "times")
+	main:node(get_label('kb', 'Knockback'))
+	main:node(get_value('kb', knock))
+
+	local frequency
+	if freq[1] then
+		frequency = ("%sf <sub>%s %s</sub>"):format(
+			formatnum.formatInt(freq[2]),
+			formatnum.formatFloat(freq[2] / 30, 2),
+			freq[2] == 30 and "second" or "seconds"
+		)
+	else
+		frequency = "-"
+	end
+	main:node(get_label('freq', 'Attack Frequency'))
+	main:node(get_value('freq', frequency))
+
+	local animation = ("%sf <sup>%ss</sup><br>(%sf <sup>%ss</sup> backswing)"):format(
+		formatnum.formatInt(foreswing),
+		formatnum.formatFloat(foreswing / 30, 2),
+		formatnum.formatInt(backswing),
+		formatnum.formatFloat(backswing / 30, 2)
+	)
+	if backswing < 0 then
+		animation = "Cannot attack"
+	end
+	main:node(get_label('anim', 'Attack Animation'))
+	main:node(get_value('anim', animation))
+
+	main:node(get_label('abil', 'Special Abilities'))
+	main:node(get_value('abil', get_arg("Abilities"):gsub('<br>%s*', '<br>'))
+		:addClass('abilities')
+		:cssText('text-align: left; line-height: 1.2em;')
+	)
+
+	main:node(get_label('trait', 'Traits'))
+	main:node(get_value('trait', p.trait_links(get_arg("Traits"))))
+	local traits = {}
+	for trait in mw.text.gsplit(get_arg("Traits"), '/') do
+		table.insert(traits, mw.text.trim(trait))
+	end
+	bucket_args.traits = traits
+
+	if do_put then
+		mw.bucket("enemy_stats")
+			.put(bucket_args)
+	end
+
+	return overflow
+end
+
+function p._main(args)
+	local container = mw.html.create('div')
+		:addClass('enemy-stats-template')
+
+	container:node(p.get_detailed_controls(args.Traits))
+	container:node(p.get_table(args))
+
+	local gutter = container:tag('div')
+	if args.Traits:match('StarredAlien') then
+		gutter:newline():wikitext([=[:''*Stats shown by default are with 1,500% [[Anti-Starred Alien Treasures]].'']=])
+	elseif args.Traits:match('Alien') then
+		gutter:newline():wikitext([=[:''*Stats shown by default are with 600% [[Anti-unstarred Alien Treasures]].'']=])
+	end
+	if args.Traits:match('Metal') then
+		gutter:newline():wikitext(
+			[=[:''*[[:Category:Metal Enemies|Metal enemies]] only take 1 damage from non-[[Critical Hit|Critical]] attacks.'']=])
+	end
+
+	return container
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+local function _cat(traits)
+	local t = {}
+	for traitname in mw.text.gsplit(traits, '/') do
+		local trait = trait_config[traitname]
+		if not trait then
+			error(traitname .. " is not recognised as a valid trait name!")
+		end
+		local fmt = "[[Category:%s Enemies]]"
+		table.insert(t, fmt:format(trait.cat))
+		if trait.cat2 then
+			table.insert(t, fmt:format(trait.cat2))
+		end
+	end
+
+	return table.concat(t)
+end
+
+function p.cat(frame)
+	return _cat(getArgs(frame)[1])
+end
+
+return p
+
+--[=[
+print(p.cat({"EVA Angel/StarredAlien"}))
+]=]

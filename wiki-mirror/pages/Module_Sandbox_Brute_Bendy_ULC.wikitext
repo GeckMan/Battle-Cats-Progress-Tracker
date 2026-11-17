@@ -1,0 +1,57 @@
+return {
+	--UL 1~10--
+	["A New Legend"] = "4♛",
+	["Here Be Dragons"] = "4♛",
+	["The Endless Wood"] = "4♛",
+	["Primeval Currents"] = "4♛",
+	["Barking Bay"] = "4♛",
+	["Abyss Gazers"] = "4♛",
+	["Neo Necropolis"] = "4♛",
+	["Law of the Wildlands"] = "4♛",
+	["Pararila Peninsula"] = "4♛",
+	["Coup de Chat"] = "4♛",
+	
+	--UL 11~20--
+	["Cherry Isles"] = "4♛",
+	["Depths of My Heart"] = "4♛",
+	["Ghost Sea"] = "4♛",
+	["Exile's Resort"] = "4♛",
+	["Roads of Torment"] = "4♛",
+	["Heaven's Back Alley"] = "4♛",
+	["Battle in the Bath"] = "4♛",
+	["Ancient Mountains"] = "4♛",
+	["Marine Ministry"] = "4♛",
+	["The Devils' Academy"] = "4♛",
+	
+	--UL 21~30
+	["The Gelatin Mines"] = "4♛",
+	["Drunken Foundry"] = "4♛",
+	["Unearthed Artifacts"] = "4♛",
+	["Realm of Whyworry"] = "4♛",
+	["Pumping Titanium"] = "3♛",
+	["Morningstar Isle"] = "3♛",
+	["In the Sleeping Forst"] = "3♛",
+	["Laboratory Island"] = "3♛",
+	["Forgotten Graves"] = "3♛",
+	["Dawn of the Beginning"] = "3♛",
+	
+	--UL 31~40--
+	["The Happy Lucky Temple"] = "2♛",
+	["Threatre of Fear"] = "2♛",
+	["Diver's City"] = "2♛",
+	["Nasi-Go-Round"] = "2♛",
+	["DNA Plantation"] = "2♛",
+	["Ancient Forest Labyrinth"] = "2♛",
+	["Castle of the Sentinels"] = "2♛",
+	["Spacetime Distortion"] = "2♛",
+	["Imminent Disaster"] = "2♛",
+	["Bikura, Harbor of Evil"] = "1♛",
+	
+	--UL 41~46--
+	["Dead Heat Land"] = "1♛",
+	["Rose-Colored Road"] = "1♛",
+	["Behemoth's Peak"] = "1♛",
+	["Moodist Beach"] = "1♛",
+	["Cat-Chasing Village"] = "1♛",
+	["Bazaar of the Pirate King"] = "1♛",
+}

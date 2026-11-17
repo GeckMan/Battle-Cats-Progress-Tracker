@@ -1,0 +1,71 @@
+---	Module backend of [[Template:EnemiesAppearing]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@attribution [[User:Jollytone Jukebox|Jollytone Jukebox]] (styling/positioning)
+--	@attribution [[User:AAGaming138|AAGaming138]] (EA background images, styling/positioning)
+--	@require Module:Enemies
+local p = {}
+
+local Enemy = require('Module:Enemies')
+
+function p.img_node(enemy, xOffset)
+	local div = mw.html.create('div')
+		:cssText(
+			"position:absolute;"
+			.. "top:calc(50% + 1.54px);"
+			.. "left:calc(50% - " .. xOffset .. "px);"
+			.. "transform: translate(-25%, -25%);"
+		)
+		:wikitext(enemy)
+		:addClass('enemy-preview-img')
+	return div
+end
+
+function p._main(frame)
+	local enemies = {}
+	for num, name in ipairs(frame.args) do
+		local enemy = Enemy.new(name)
+		local fmt = '[[File:%s|44px|link=%s|%s]]'
+		enemies[num] = fmt:format(enemy:icon(), enemy.link, enemy.name)
+	end
+	local container = mw.html.create('div')
+		:cssText(
+			"position:relative;"
+			.. "height:auto;"
+			.. "width:100%;"
+			.. "margin:12px 0;"
+			.. "overflow:hidden;"
+			.. "overflow-x:auto;"
+			.. "text-align:center;"
+		)
+		:wikitext(
+			("[[File:EnemiesAppearing%d.jpg|570px|link=|Enemies Appearing]]")
+			:format((#enemies <= 10 and #enemies or 0))
+		)
+		:addClass('enemy-preview')
+		:addClass('overflow-shadow')
+
+	local div = container:tag('div'):cssText(
+		"position: absolute;"
+		.. "width: 570px;"
+		.. "height: 118px;"
+		.. "top: 0;"
+		.. "left: max(0px, 50% - 285px);"
+	)
+	local offset = 44 * math.floor(#enemies / 2) + 8
+	-- offset in px of the first enemy image
+	if #enemies % 2 == 0 then offset = offset - 22 end
+	for _, enemy in ipairs(enemies) do
+		div:node(p.img_node(enemy, offset))
+		offset = offset - 44
+	end
+	return container
+end
+
+function p.main(frame)
+	return p._main(frame:getParent())
+end
+
+return p
+
+-- print(p._main({args={'Doge', 'Snache'}}))

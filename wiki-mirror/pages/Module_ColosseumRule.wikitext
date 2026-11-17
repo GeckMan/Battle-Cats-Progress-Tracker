@@ -1,0 +1,121 @@
+---	Implements [[Template:ColosseumRule|ColosseumRule]]. See also
+--	[[Module:ColosseumRule/data]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+-- stuff for [[Template:ColosseumRule/data]]
+function p._info(frame)
+	return p.clean_info(frame.args[1], {})
+end
+
+function p._list_rule_params(frame)
+	local args = frame:getParent().args
+
+	local params = {}
+	local counter = 1
+	while args['info_arg' .. counter] do
+		table.insert(params, ';Argument ' .. counter)
+		table.insert(params, ':' .. args['info_arg' .. counter])
+		counter = counter + 1
+	end
+
+	return table.concat(params, '\n')
+end
+
+-- end of /data stuff
+
+local function desc_base()
+	mw.incrementExpensiveFunctionCount()
+	-- if necessary this can be batched into a loadData but for now let's just
+	-- make this function expensive
+	return mw.ext.bucket("special_rule")
+		.where('rule_prefix', 'SpecialRule')
+		.where('rule_type', 'colosseum')
+		.select('id')
+		.orderBy('id')
+end
+
+---	Standard interface to either get the correct rule or throw an intuitive
+--	error.
+--	@param {string} rule_name Name of Colosseum rule
+--	@returns {table} Rule information
+local function desc(rule_name, select)
+	local descs = desc_base()
+		.where(mw.bucket.Or({ 'name_en', rule_name }, { 'name_jp', rule_name }))
+		.select(unpack(select))
+		.run()
+	return descs[1] or error(rule_name .. " is not a recognised Colosseum rule!")
+end
+
+function p.list_rules()
+	local descs = desc_base()
+		.select('id', 'name_en', 'name_jp', 'info')
+		.run()
+
+	local t = {}
+	for _, desc in ipairs(descs) do
+		local fmt = "*Rule %d: %s. %s"
+		local info = p.clean_info(desc.info, {})
+		table.insert(t, fmt:format(desc.id + 1, desc.name_en or desc.name_jp, info))
+	end
+
+	return table.concat(t, '\n')
+end
+
+---	Get the bolded header part of the Colosseum rule.
+function p.header(frame)
+	local args = getArgs(frame)
+	local this = desc(args[1], { 'desc_en', 'desc_jp' })
+	return mw.text.split(this.desc_en or this.desc_jp, '<br>')[1]
+end
+
+---	Get the ingame description of the Colosseum rule.
+function p.ingame(frame)
+	local args = getArgs(frame)
+	local this = desc(args[1], { 'desc_en', 'desc_jp' })
+	local info = this.desc_en or this.desc_jp
+	local br = mw.ustring.find(info, '<br>') + #'<br>'
+	return mw.ustring.sub(info, br)
+end
+
+function p.clean_info(info, args)
+	info = mw.ustring.gsub(info, "%$(%d+)", function(num)
+		local n = tonumber(num)
+		local param = args[n + 1]
+		if param then
+			return param
+		else
+			return "<i>unknown</i>"
+		end
+	end)
+	info = mw.ustring.gsub(info, "{{plural|1|([^|]*)|[^}]*}}", "%1")
+	-- {{plural|1|one|multiple}} -> one
+	info = mw.ustring.gsub(info, "{{plural|%d+|[^|]*|([^}]*)}}", "%1")
+	-- {{plural|x|one|multiple}} -> multiple
+	info = mw.ustring.gsub(info, "{{plural|[^|]*|[^|]*|([^}]*)}}", "%1")
+	-- {{plural|never gonna give you up|one|multiple}} -> multiple
+
+	return info
+end
+
+---	Display information about the Colosseum rule.
+function p.info(frame)
+	local args = getArgs(frame)
+	local info = desc(args[1], { 'info' }).info
+	return p.clean_info(info, args)
+end
+
+return p
+
+--[=[
+mw.log(p.header({"Only One Rarity"}))
+mw.log(p.ingame({"Cheap Labor"}))
+mw.log(p.info({"Deploy Limit"}))
+mw.log(p.info({"Uniform Motion"}))
+mw.log(p.info({"Uniform Motion", "10"}))
+mw.log(p.info({"Uber Clearance"}))
+mw.log(p.info({"Uber Clearance", "1"}))
+mw.log(p.info({"Uber Clearance", "2"}))
+]=]

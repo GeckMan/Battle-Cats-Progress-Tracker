@@ -1,0 +1,47 @@
+--[[
+== Scribunto Testing Area ==
+
+This is not an actual Lua module. It exists to provide a convenient pseudo-namespace for code testing.
+
+Lua modules cannot exist as subpages in the User: namespace. Therefore, please name your experimental modules in the following format to help keep things tidy:
+
+ Module:Sandbox/''Your User Name''/''Module name''
+
+You can use Special:PrefixIndex/Module:Sandbox to list modules in this area.
+
+== Sample module ==
+]]
+
+local p = {}
+
+--[[
+Switch function for nested data structures (Thread:5225)
+> {{#invoke: sandbox|switch|parent_key|node_key}}
+>> {{#invoke: sandbox|switch|foo|bar}} > baz
+>> {{#invoke: sandbox|switch|bar|baz1}} > foo1
+]]
+
+function p.switch(frame)
+    -- Sample data
+    -- To be placed in Module:Name/data, then called via mw.loadData
+    local data = {
+        foo = {
+            bar = 'baz',
+            bar1 = 'baz1'
+        },
+        bar = {
+            baz = 'foo',
+            baz1 = 'foo1'
+        }
+    }
+    local text = frame.args[1]
+    local textkey = frame.args[2]
+        if data[text] ~= nil and data[text][textkey] ~= nil then
+            text = data[text][textkey]
+        else
+            text = nil -- Modify invalid key output here
+        end
+    return text
+end
+
+return p

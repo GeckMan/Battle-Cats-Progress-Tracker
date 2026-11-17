@@ -1,0 +1,5 @@
+{{Documentation}}
+{{Docbunto|GachaDescription/data|all=on|preface=
+==Updating the data==
+The format of [[Module:GachaDescription/descs.csv]] is quite simple: Normal Form Name&vert;Normal Form Desc&vert;Evolved Form Desc. If a unit is [[:Category:Japanese Exclusive Content|JP-exclusive]] (or basically not in the English version) then put the description as N/A, and if it isn't JP-exclusive but hasn't appeared in any event (either it has official translations despite not appearing in any events or is [[:Category:Limited Content|Limited Content]]) then put the description as ?.
+}}

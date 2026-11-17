@@ -1,0 +1,32 @@
+---	Page to store the configurations of cached pages using [[Module:Cache]]
+--
+--	@submodule storage
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+
+---	Configuration storage map, key is name of page to cache
+--	@table storage
+--	@field pages ([@{string} -> @{storage.t}])
+local storage = {}
+
+--[[
+	@local
+	@table storage.t
+	@field {string} page page where cache is stored (recommended: page/cache)
+	@field[opt] {table} dependencies pages that contain the data the cache relies on
+	e.g. csv files
+	@field[opt] {table} subitems sub-items on page e.g. if one page had both cats and
+	enemies and was like {cats = {...}, enemies = {...}}, then cats's subitem
+	would be cats. This is a table value, so you can nest subitems.
+--]]
+
+storage["Module:Enemies/data"] = {
+	page = "Module:Units/cache",
+	dependencies = {
+		'Module:Enemies/data',
+		'Module:Enemies/extras',
+		'Module:Enemies.csv',
+	},
+	subitems = {"enemies"}
+}
+
+return storage

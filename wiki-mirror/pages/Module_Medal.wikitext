@@ -1,0 +1,30 @@
+---	See [[Template:Medal]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Medal/data (parent module)
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local medalData = mw.loadData('Module:Medal/data')
+
+function p.get_medal(name)
+	local medal = medalData[name]
+	assert(medal, name .. " is not recognised as a valid medal name!")
+	return medal
+end
+
+function p._main(args)
+	local imgs = {}
+	for _, name in ipairs(args) do
+		local medal = p.get_medal(name)
+		table.insert(imgs, ("[[File:%s]]"):format(medal.file))
+	end
+	return table.concat(imgs, ' ')
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+-- print(p._main({'Builder of Empires'}))

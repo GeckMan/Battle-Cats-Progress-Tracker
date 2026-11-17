@@ -1,0 +1,42 @@
+---	Port of the global [[Module:String/global|String]] module, adds a couple of
+--	extensions to that.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:String/global
+local str = require('Module:String/global')
+local lang = mw.language.getContentLanguage()
+
+---	Call `string.format` with supplied arguments
+--	@param {Frame} frame
+--	@return {string} Formatted string
+function str.format(frame)
+	local args = frame.args
+	local newArgs = {}
+	for i, arg in ipairs(args) do
+		newArgs[i] = arg
+	end
+	local formatted = (newArgs[1]):format(unpack(newArgs, 2))
+	return formatted
+end
+
+---	Format a number, if error then just return what was passed.
+--	@param {Frame} frame
+--	@return {string} Formatted number
+function str.formatnum(frame)
+	local success
+	local num = lang:parseFormattedNumber(frame.args[1])
+	success, num = pcall(lang.formatNum, lang, num)
+	if success then
+		return num
+	else
+		return frame.args[1]
+	end
+end
+
+return str
+
+--[=[
+-- print(p.funcname{args={args}})
+
+print(p.format{args={"%d + %d = %d", 2, 2, 4}})
+]=]

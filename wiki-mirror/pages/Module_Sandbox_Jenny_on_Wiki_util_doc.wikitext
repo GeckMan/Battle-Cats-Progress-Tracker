@@ -1,0 +1,16 @@
+{{Documentation}}
+{{Docbunto|Sandbox/Jenny on Wiki/util|all=on|preface=
+==Usage==
+===documentformat===
+Fun demonstration:
+<pre>
+{{subst:#invoke:Sandbox/Jenny on Wiki/util|documentformat
+|(Basic){{Job|Classification = Tanker & Melee}}
+|(Only two forms){{Job|Classification = Super-Backliner & User Rank Dump & N/A|EvolvedClass = This classification doesn't exist|TrueClass=}}
+|(3 different forms){{Job|Classification = Super-Backliner|EvolvedClass = Melee|TrueClass = User Rank Dump}}
+|(3 forms part 1){{Job|Classification = Super-Backliner|TrueClass = User Rank Dump}}
+|(3 forms part 2){{Job|Classification = Super-Backliner|EvolvedClass = Melee}}
+}}
+</pre>
+Put this on your sandbox, save and you'll see how it works. You can omit the name in brackets at the start of each parameter and you'll just get the number.
+}}

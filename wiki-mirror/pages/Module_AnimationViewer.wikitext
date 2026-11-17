@@ -1,0 +1,33 @@
+---	Module to provide functions for [[Template:AnimationViewer]].
+--
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+---	Add images so they don't appear on [[Special:UnusedImages]].
+function p._image(args)
+	if not args.spritesheet then
+		return
+	end
+
+	local div = mw.html.create('div'):addClass('hideme')
+	local image
+	if args.spritesheet:find(',') then
+		local images = {}
+		for file in string.gmatch(args.spritesheet, "([^,]+)") do
+			table.insert(images, '[[File:' .. file .. ']]')
+		end
+		image = table.concat(images)
+	else
+		image = '[[File:' .. args.spritesheet .. ']]'
+	end
+	div:wikitext(image)
+
+	return div
+end
+
+function p.image(frame)
+	return p._image(getArgs(frame))
+end
+
+return p

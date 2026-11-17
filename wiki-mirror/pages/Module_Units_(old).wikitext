@@ -1,0 +1,100 @@
+---	Helper module to provide generic functions for [[Module:Cats|cats]] and
+--	[[Module:Enemies|enemies]]. Contains a base class that other unit classes
+--	can inherit methods from. Also see [[Module:Units/invoke]].
+--
+--	@classmod Unit
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+
+---	Unit base class
+--	@type Unit
+local Unit = {}
+
+---	Format an image with data from the unit
+--	@param {Unit} self
+--	@param {string} file Name of file to format e.g. `Uni001 f00.png`
+--	@param[opt] {string | table} args See notes
+--	@param[opt] {string} caption See notes
+--	@return {string} Image embed
+--
+--	@error args of unexpected type (should be `nil | string | table`)
+--	@usage
+--local cat = Cat.new('Cat')
+--local img = cat:image('Placeholder.png')
+--assert(img == "[[File:Placeholder.png|link=Cat (Normal Cat)|Cat]]")
+--img = cat:image('Placeholder.png', '80px')
+--assert(img == "[[File:Placeholder.png|80px|link=Cat (Normal Cat)|Cat]]")
+--
+--	@note
+--	Assumptions about behaviour:
+--	* `unit.name`: a descriptive name for the unit
+--	* `unit.link`: a working link, i.e. the `%s` in `[[%s]]`
+--
+--	@note Default behaviour:
+--		* `unit:image(filename)`
+--		* return: file link, linking to unit page and displaying unit name
+--
+--	@note Behaviour of `args`:
+--		* If str then just used as mw file args e.g. `unit:image(filename, "80px")`
+--		will give `[[File:<filename>|80px|link=...]]`
+--		* If table then treats like `pairs`:
+--			** If index is num then just adds `|arg`
+--			** If is `key, value` then adds `|key=value`
+--			** If index is `link` then overrides default behaviour
+--
+--	@note Behaviour of `caption`:
+--		* If nil then defaults to unit's name as in example
+--		* If given then overrides
+--		* If empty string then follows mw's basic format of caption -> link ->
+--		filename for the title attribute
+--
+--	@todo Add option to have image's onclick be the normal one rather than
+--	having to be link=page or link=
+function Unit.image(unit, file, args, caption)
+	local img
+	if not args then
+		img = ('[[File:%s|link=%s|%s]]'):format(
+			file, unit.link, caption or unit.name
+		)
+	elseif type(args) == "string" then
+		img = ('[[File:%s|%s|link=%s|%s]]'):format(
+			file, args, unit.link, (caption or unit.name)
+		)
+	elseif type(args) == "table" then
+		-- let's just hope nobody wants to have images that have the same
+		-- onclick behaviour as normal images do
+		local params = {}
+		if not args.link then params[1] = 'link=' .. unit.link end
+		for k, arg in pairs(args) do
+			if type(k) == "number" then
+				table.insert(params, arg)
+			elseif type(k) == "string" then
+				table.insert(params, ('%s=%s'):format(k, arg))
+			end
+		end
+		if caption then
+			table.insert(params, caption)
+		else
+			table.insert(params, unit.name)
+		end
+		img = ('[[File:%s|%s]]'):format(file, table.concat(params, '|'))
+	else
+		error('args should be of type string or table, not ' .. type(args))
+	end
+
+	-- remove duplicate |
+	img = img:gsub('|+', '|')
+
+	return img
+end
+
+---	Shortened version of Unit:image
+--	@usage
+--local original = unit:image(unit:img(), a, c)
+--local new      = unit:image_str('img', a, c)
+--assert(original == new)
+function Unit.image_str(unit, imageMethod, args, caption)
+	local image = unit[imageMethod](unit)
+	return unit:image(image, args, caption)
+end
+
+return Unit

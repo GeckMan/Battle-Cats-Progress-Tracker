@@ -1,0 +1,153 @@
+---	Module backend for normal stats table.
+--
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local forms = {
+	"Normal",
+	"Evolved",
+	"True",
+	"Ultra"
+}
+local p_names = {
+	name = "Name",
+	hp = "Health",
+	ap = "Attack Power",
+	stats_level = "Stats Level",
+	maxhp = "MaxHP",
+	maxap = "MaxAttack",
+	atkfreq = "Attack Frequency",
+	atklen = "Attack Animation",
+	rng = "Attack Range",
+	spd = "Movement Speed",
+	kb = "Knockback",
+	recharge = "Recharge Time",
+	atktype = "Attack Type",
+	abil = "Abilities",
+}
+
+local function fmt_atktype(atktype)
+	local matches = {
+		Area = "[[Special Abilities#Area Attack|Area Attack]]",
+		["Area Attack"] = "[[Special Abilities#Area Attack|Area Attack]]",
+		Single = "[[Special Abilities#Single Attack|Single Attack]]",
+		["Single Attack"] = "[[Special Abilities#Single Attack|Single Attack]]",
+	}
+
+	return matches[atktype] or atktype
+end
+
+function p._main(args)
+	local t = mw.html.create('div')
+		:addClass("standard-cat-stats-table overflow-shadow")
+
+	local function param(form, param_name)
+		local key = ("%s %s"):format(form, param_name)
+		return args[key]
+	end
+
+	local function p_fallback(form, param_name)
+		local key = ("%s %s"):format(form, param_name)
+		return args[key] or ("{{{" .. key .. "}}}")
+	end
+
+	local function add_lab_and_val_raw(tab, code, label, value)
+		tab:tag('div')
+			:addClass('stats-cell stats-label stats-label-' .. code)
+			:cssText(('grid-area: lab-' .. code))
+			:wikitext(label)
+
+		tab:tag('div')
+			:addClass('stats-cell stats-value stats-value-' .. code)
+			:cssText(('grid-area: val-' .. code))
+			:wikitext(value)
+	end
+
+	---Default case where param name is heading.
+	---@param tab any mw.html object
+	---@param form string
+	---@param param_code string
+	local function add_lab_and_val(tab, form, param_code)
+		add_lab_and_val_raw(
+			tab,
+			param_code,
+			p_names[param_code],
+			p_fallback(form, p_names[param_code])
+		)
+	end
+
+	for i, form in ipairs(forms) do
+		if i > 1 and not param(form, p_names.name) then
+			break
+		end
+
+		local tab = t:tag('div')
+			:addClass('standard-cat-stats-form')
+
+		local pos
+		if i == 1 then
+			pos = 'start'
+		elseif i >= 4 or not param(forms[i + 1], p_names.name) then
+			pos = 'end'
+		else
+			pos = 'middle'
+		end
+		tab:addClass('position-' .. pos)
+
+		tab:tag('div')
+			:addClass('stats-cell form-name')
+			:cssText(('grid-area: name'))
+			:tag('b')
+			:wikitext(p_fallback(form, p_names.name))
+
+		if pos == 'start' then
+			local code
+
+			code = 'hp'
+			add_lab_and_val_raw(tab, code, p_names[code], p_fallback(form, p_names[code]))
+			code = 'ap'
+			add_lab_and_val_raw(tab, code, p_names[code], p_fallback(form, p_names[code]))
+
+			code = 'maxhp'
+			local stats_level = param(form, p_names.stats_level) or "30"
+			local fmt = "%s (Lv.%s)"
+			add_lab_and_val_raw(tab, code, fmt:format(p_names.hp, stats_level), p_fallback(form, p_names[code]))
+			code = 'maxap'
+			add_lab_and_val_raw(tab, code, fmt:format(p_names.ap, stats_level), p_fallback(form, p_names[code]))
+		else
+			local code
+
+			code = 'hp'
+			local stats_level = param(form, p_names.stats_level) or "30"
+			local fmt = "%s (Lv.%s)"
+			add_lab_and_val_raw(tab, code, fmt:format(p_names[code], stats_level), p_fallback(form, p_names[code]))
+			code = 'ap'
+			add_lab_and_val_raw(tab, code, fmt:format(p_names[code], stats_level), p_fallback(form, p_names[code]))
+		end
+
+		add_lab_and_val(tab, form, 'atkfreq')
+		add_lab_and_val(tab, form, 'atklen')
+		add_lab_and_val(tab, form, 'rng')
+		add_lab_and_val(tab, form, 'spd')
+		add_lab_and_val(tab, form, 'kb')
+		add_lab_and_val(tab, form, 'recharge')
+
+		local at = 'atktype'
+		add_lab_and_val_raw(tab, at, p_names[at], fmt_atktype(p_fallback(form, p_names[at])))
+		add_lab_and_val(tab, form, 'abil')
+
+		if pos == 'end' then
+			local heading = 'Lv.MAX'
+			add_lab_and_val_raw(tab, 'maxlvl', heading, args[heading] or ("{{{" .. heading .. "}}}"))
+		end
+	end
+
+	return t
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p

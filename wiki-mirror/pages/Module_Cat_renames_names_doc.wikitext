@@ -1,0 +1,12 @@
+{{Documentation}}
+During updates, add cats here so that you don't get script errors everywhere.
+
+Format: see [[Special:Permalink/497833]].
+
+Add stuff here ''before'' changing their names in {{t|Cat Info}}.
+
+Don't put IDs in here (e.g. "000-1"); doing so is unnecessary. This page is only for when a localised name is changed.
+
+For more info, see [[User blog:Jenny on Wiki/2026-08-23-cat2]].
+
+{{#invoke:Cat renames/names/store|main}}

@@ -1,0 +1,29 @@
+-- copied from https://runescape.wiki/w/Module:Static
+-- tried [[Special:Diff/519424]] too but that was much less consistent
+local mwHtml = getmetatable(mw.html.create())
+mwHtml._static = mwHtml._static or {}
+local static = mwHtml._static
+
+local p = {}
+
+function p.style(page_names)
+	local pages = {}
+	for _, page_name in ipairs(page_names) do
+		if not static[page_name] then
+			static[page_name] = true
+			table.insert(pages, mw.getCurrentFrame():extensionTag('templatestyles', '', { src = page_name }))
+		end
+	end
+	return table.concat(pages, '')
+end
+
+function p._main(frame)
+	-- exists to be invoked directly
+	return p.style(frame.args)
+end
+
+function p.main(frame)
+	return p.style(frame:getParent().args)
+end
+
+return p

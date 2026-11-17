@@ -1,0 +1,39 @@
+---	[[mw:Extension:SpeciallyCursed|SpeciallyCursed]] page to redirect you to a
+--	cat page based on wiki id, e.g. [[Special:cat/1]] leads to Tank Cat and
+--	[[Special:cat/-1]] leads to an error.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+
+function p.get_redirect(pagename)
+	return mw.ext.SpeciallyCursed.output.redirect(mw.uri.fullUrl(pagename).path)
+end
+
+function p.main(frame)
+	local id = frame:getParent().args[1]
+	if not id then
+		return require('Module:CursedRedirect').no_id_provided()
+	end
+
+	local q1 = mw.bucket('cat')
+		.where('id', tonumber(id))
+		.select('page_name')
+		.run()
+	if #q1 > 0 then
+		return p.get_redirect(q1[1].page_name)
+	end
+
+	local q2 = mw.bucket('spirit')
+		.where('id', tonumber(id))
+		.select('page_name_sub')
+		.run()
+	if #q2 > 0 then
+		return p.get_redirect(q2[1].page_name_sub)
+		-- using page_name_sub doesn't actually work but shh
+	end
+
+	local txt = "Error: Cat with id " .. id .. " not found!"
+	return '<strong class="error">' .. mw.ext.SpeciallyCursed.escapeHtml(txt) .. '</strong>'
+end
+
+return p

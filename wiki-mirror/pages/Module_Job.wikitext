@@ -1,0 +1,126 @@
+---	Module to provide utility functions for {{t|Job}}
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+
+---	List of all valid categories and their colors
+local classes = {
+	["Waver"]            = {color = "#52adf7"},
+	["Combo Slave"]      = {color = "#4242ff"},
+	["User Rank Dump"]   = {color = "#9e42ff"},
+	["Meatshield"]       = {color = "#808080"},
+	["Rusher"]           = {color = "#80C0FF"},
+	["Tanker"]           = {color = "#8080FF"},
+	["Nuker"]            = {color = "#FFC080"},
+	["Crowd-Controller"] = {color = "#FF80FF"},
+	["Critter"]          = {color = "#80FFFF"},
+	["Sniper"]           = {color = "#C080C0"},
+	["Melee"]            = {color = "#69ffb9"},
+	["Midranger"]        = {color = "#8449eb"},
+	["Backliner"]        = {color = "#eb4949"},
+	["Super-Backliner"]  = {color = "#e81717"},
+	["Breaker"]          = {color = "#1fdec5"},
+
+	-- default color
+	["N/A"]              = {color = "#80FF80"},
+}
+
+---	If class is falsy, whitespace/empty, or `"N/A"`, return `true`
+--	@param {string} class The name of the class
+--	@return {bool} Whether class name is blank
+local function isBlank(class)
+	return not class or class:match('^%s*$')
+end
+
+---	Return the categories that are determined by the name of the class, split
+--	on `&`
+--	@param {string} class
+--	@return {string} Categories for `class`
+--	@local
+function p._category(class)
+	if isBlank(class) then
+		return ''
+	end
+
+	-- split on & and recurse
+	if class:find('&') then
+		local class2
+		class, class2 = class:match('^(.-) & (.*)$')
+
+		return p._category(class) .. p._category(class2)
+	end
+
+	if not classes[class] then
+		error(("%s is not recognised as a valid classification")
+			:format(class))
+	end
+
+	return ('[[Category:%s-class Cats]]'):format(class)
+end
+
+---	Invokable function that categorises the unit according to the
+--	classifications supplied by the user
+--	@param {Frame} frame
+--	@return {string} Appropriate categories for the unit
+function p.category(frame)
+	local vars = {"Classification", "EvolvedClass", "TrueClass", "UltraClass"}
+	local cats = {}
+	local args = frame:getParent().args
+
+	for _, var in ipairs(vars) do
+		table.insert(cats, p._category(args[var]))
+	end
+
+	return table.concat(cats)
+end
+
+---	Invokable function that supplies the background color for job
+--	@param {Frame} frame
+--	@return {string} Appropriate background color
+function p.color(frame)
+	local class = frame.args[1]
+
+	if class:find('&') then
+		class = class:match('(.-) &')
+	end
+	if not classes[class] then
+		class = "N/A"
+	end
+
+	return "background-color:" .. classes[class]["color"]
+end
+
+---	Show a list of available classes
+--	@param {Frame} frame
+--	@return {string} Unordered list of classes available
+function p.list(frame)
+	local t = {}
+	for className, _ in pairs(classes) do
+		table.insert(t, '*' .. className)
+	end
+	return table.concat(t, '\n')
+end
+
+return p
+
+--[=[
+print(p._category("Super-Backliner"))
+print(p._color("Super-Backliner"))
+
+print(funcname("Waver"))
+print(funcname("Combo Slave"))
+print(funcname("User Rank Dump"))
+print(funcname("Meatshield"))
+print(funcname("Rusher"))
+print(funcname("Tanker"))
+print(funcname("Nuker"))
+print(funcname("Crowd-Controller"))
+print(funcname("Critter"))
+print(funcname("Sniper"))
+print(funcname("Melee"))
+print(funcname("Midranger"))
+print(funcname("Backliner"))
+print(funcname("Super-Backliner"))
+print(funcname("N/A"))
+print(funcname("EEE"))
+]=]

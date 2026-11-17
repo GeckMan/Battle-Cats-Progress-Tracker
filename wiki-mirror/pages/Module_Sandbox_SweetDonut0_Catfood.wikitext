@@ -1,0 +1,51 @@
+---	Miscellaneous module for profile related things
+--
+--	@module	Catfood
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p.random(frame)
+	args = getArgs(frame)
+	math.randomseed(os.time() + args[1] * os.clock() * 10^2)
+	for i = 1, 10, 1 do
+		math.random()
+	end
+	return math.random()
+end
+
+function p.randInt(frame)
+	args = getArgs(frame)
+	math.randomseed(os.time() + os.clock() * 10^2)
+	for i = 1, 10, 1 do
+		math.random()
+	end
+	return math.random(args[1], args[2])
+end
+
+function p.helpers(frame)
+	local text1 = [=[<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Augustus]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Tsuchinoko]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Hercules]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Ludvig]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Voltaire]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>]=]
+	local text2 = [=[<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Diamond]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Pono]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Toyotomi]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Kenshiro]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>
+<div style="position: absolute; bottom: %dpx; left: %dpx; %s"><div style="position: relative; bottom: 0px; left: 0px; z-index: 3;">[[File:GamatotoMember 006.png|50px|link=|Ramensky]]</div><div style="position: absolute; bottom: -10px; left: 0px; z-index: 2;">[[File:Shadow.png|50px|link=]]</div></div>]=]
+
+	math.randomseed(os.time() + os.clock() * 10^2)
+	return text1:format(math.random(120, 140), math.random(30, 55), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(85, 110), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(140, 165), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(195, 220), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(250, 275), math.random() < 0.5 and "transform: rotateY(180deg);" or "") .. text2:format(math.random(120, 140), math.random(465, 490), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(520, 545), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(575, 600), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(630, 655), math.random() < 0.5 and "transform: rotateY(180deg);" or "", math.random(120, 140), math.random(685, 710), math.random() < 0.5 and "transform: rotateY(180deg);" or "")
+end
+
+return p
+
+--[=[
+print(p.random({1}))
+print(p.random({2}))
+print(p.random({3}))
+print(p.random({4}))
+print(p.random({5}))
+]=]

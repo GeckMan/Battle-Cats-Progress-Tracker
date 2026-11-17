@@ -1,0 +1,4193 @@
+[
+	{
+		"name": "Cat Army",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				0,
+				0
+			],
+			[
+				1,
+				0
+			],
+			[
+				2,
+				0
+			],
+			[
+				3,
+				0
+			],
+			[
+				4,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Behind Closed Doors",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				13,
+				0
+			],
+			[
+				12,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Cap'n Ahab",
+		"effect": "Base Defense Up (Sm)",
+		"cats": [
+			[
+				51,
+				1
+			],
+			[
+				6,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Deathrock",
+		"effect": "Cannon Start Level Up (Sm)",
+		"cats": [
+			[
+				19,
+				0
+			],
+			[
+				148,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Cool Japan",
+		"effect": "Unit Attack Up (M)",
+		"cats": [
+			[
+				18,
+				0
+			],
+			[
+				21,
+				0
+			],
+			[
+				20,
+				0
+			],
+			[
+				61,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Sunbathers",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				6,
+				2
+			],
+			[
+				199,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Sound of Wings",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				56,
+				1
+			],
+			[
+				5,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Choppers",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				13,
+				1
+			],
+			[
+				2,
+				0
+			],
+			[
+				72,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Apples and Oranges",
+		"effect": "Base Defense Up (Sm)",
+		"cats": [
+			[
+				14,
+				1
+			],
+			[
+				39,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Take a Bow",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				1,
+				0
+			],
+			[
+				169,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Sister Act",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				16,
+				0
+			],
+			[
+				131,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Hecks Angels",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				17,
+				1
+			],
+			[
+				158,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Lingerie Special",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				123,
+				1
+			],
+			[
+				15,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "In Bloom",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				72,
+				1
+			],
+			[
+				127,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Childhood Friends",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				269,
+				0
+			],
+			[
+				209,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Rawhide",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				4,
+				0
+			],
+			[
+				145,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Puppeteers Guild",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				226,
+				0
+			],
+			[
+				126,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Pyon Pyon for Two",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				37,
+				0
+			],
+			[
+				88,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Helping Hand",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				30,
+				0
+			],
+			[
+				9,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Fall in Love",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				56,
+				1
+			],
+			[
+				109,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Frog Prince",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				150,
+				1
+			],
+			[
+				18,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Treasured Grandchild",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				59,
+				0
+			],
+			[
+				132,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "No Stage Fright",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				9,
+				0
+			],
+			[
+				41,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Biohazard",
+		"effect": "Research Power Up (Sm)",
+		"cats": [
+			[
+				19,
+				0
+			],
+			[
+				11,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Midsummer Sun",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				127,
+				1
+			],
+			[
+				38,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Reindeer's Gift",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				74,
+				0
+			],
+			[
+				244,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Silver Screen",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				153,
+				1
+			],
+			[
+				9,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Long-Legged",
+		"effect": "\"Slow\" Effects Up (M)",
+		"cats": [
+			[
+				3,
+				0
+			],
+			[
+				168,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Life of the Party",
+		"effect": "Base Defense Up (Sm)",
+		"cats": [
+			[
+				128,
+				1
+			],
+			[
+				32,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Good Jobs!",
+		"effect": "XP Rewards Up (Sm)",
+		"cats": [
+			[
+				237,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Thirteen",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				239,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Itchy Riches",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				238,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Attack of the Li'ls",
+		"effect": "Unit Speed Up (M)",
+		"cats": [
+			[
+				209,
+				0
+			],
+			[
+				210,
+				0
+			],
+			[
+				211,
+				0
+			],
+			[
+				245,
+				0
+			],
+			[
+				246,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "X-Files",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				197,
+				1
+			],
+			[
+				5,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Legs for Days",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				3,
+				1
+			],
+			[
+				94,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Art History",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				148,
+				1
+			],
+			[
+				60,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Moby Dick",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				51,
+				1
+			],
+			[
+				6,
+				1
+			],
+			[
+				97,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Back to School",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				6,
+				0
+			],
+			[
+				97,
+				0
+			],
+			[
+				74,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Eye of the Storm",
+		"effect": "Unit Defense Up (M)",
+		"cats": [
+			[
+				60,
+				0
+			],
+			[
+				88,
+				0
+			],
+			[
+				78,
+				0
+			],
+			[
+				126,
+				0
+			],
+			[
+				154,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Mo' Hawks",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				0,
+				2
+			],
+			[
+				98,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Saucers",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				5,
+				1
+			],
+			[
+				96,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Mecha",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				78,
+				1
+			],
+			[
+				81,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Macho Man",
+		"effect": "\"Strengthen\" Effects Up (Sm)",
+		"cats": [
+			[
+				3,
+				2
+			],
+			[
+				9,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Bouncing Four",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				123,
+				1
+			],
+			[
+				88,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Pulling Strings",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				52,
+				1
+			],
+			[
+				126,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "King and Queen",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				7,
+				2
+			],
+			[
+				42,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Enter The Ninja",
+		"effect": "Unit Speed Up (M)",
+		"cats": [
+			[
+				18,
+				0
+			],
+			[
+				261,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Troubled Youth",
+		"effect": "\"Strengthen\" Effects Up (Sm)",
+		"cats": [
+			[
+				130,
+				0
+			],
+			[
+				194,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Duet",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				16,
+				0
+			],
+			[
+				148,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Firewatch",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				7,
+				0
+			],
+			[
+				98,
+				0
+			],
+			[
+				203,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Pork on Rice",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				106,
+				0
+			],
+			[
+				21,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Smiles at Cats",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				0,
+				0
+			],
+			[
+				107,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Lion King",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				4,
+				2
+			],
+			[
+				109,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Peach 'n Banana",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				136,
+				0
+			],
+			[
+				14,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Honnoji's Curse",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				128,
+				0
+			],
+			[
+				73,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Cool in the Heat",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				42,
+				0
+			],
+			[
+				127,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Apollo Mission",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				78,
+				0
+			],
+			[
+				138,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Bony Bone",
+		"effect": "Research Power Up (Sm)",
+		"cats": [
+			[
+				52,
+				1
+			],
+			[
+				19,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Chivalry and Candy",
+		"effect": "\"Slow\" Effects Up (M)",
+		"cats": [
+			[
+				85,
+				0
+			],
+			[
+				20,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Ratings Competition",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				196,
+				0
+			],
+			[
+				9,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Cats 'n Tanks",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				63,
+				0
+			],
+			[
+				81,
+				0
+			],
+			[
+				80,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Headband",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				63,
+				0
+			],
+			[
+				70,
+				1
+			],
+			[
+				136,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Watch Me Whip",
+		"effect": "Cannon Start Level Up (Sm)",
+		"cats": [
+			[
+				13,
+				0
+			],
+			[
+				122,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Masquerade",
+		"effect": "\"Knockback\" Effects Up (M)",
+		"cats": [
+			[
+				130,
+				0
+			],
+			[
+				13,
+				1
+			],
+			[
+				80,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Crazy Hearts",
+		"effect": "Starting Money Up (L)",
+		"cats": [
+			[
+				91,
+				0
+			],
+			[
+				92,
+				0
+			],
+			[
+				93,
+				0
+			],
+			[
+				94,
+				0
+			],
+			[
+				95,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Power of Darkness",
+		"effect": "\"Weaken\" Effects Up (M)",
+		"cats": [
+			[
+				2,
+				2
+			],
+			[
+				13,
+				2
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Gross!!!",
+		"effect": "\"Freeze\" Effects Up (M)",
+		"cats": [
+			[
+				3,
+				0
+			],
+			[
+				94,
+				0
+			],
+			[
+				176,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Nyanko, Inc.",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				70,
+				0
+			],
+			[
+				122,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Seasons of Love",
+		"effect": "\"Strong\" Effects Up (M)",
+		"cats": [
+			[
+				100,
+				0
+			],
+			[
+				104,
+				0
+			],
+			[
+				109,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Flash in the Pan",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				32,
+				1
+			],
+			[
+				80,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Blossoming",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				72,
+				1
+			],
+			[
+				79,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Bento Special",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				74,
+				1
+			],
+			[
+				61,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Speak of the Devil",
+		"effect": "Bounty Up (M)",
+		"cats": [
+			[
+				44,
+				0
+			],
+			[
+				80,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Classical Arts",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				126,
+				1
+			],
+			[
+				152,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Sportswoman",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				100,
+				1
+			],
+			[
+				36,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Gentlemen",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				80,
+				1
+			],
+			[
+				49,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Spinners",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				17,
+				0
+			],
+			[
+				104,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Longnecks",
+		"effect": "Worker Start Level Up (M)",
+		"cats": [
+			[
+				4,
+				1
+			],
+			[
+				169,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Feel the Dance",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				22,
+				1
+			],
+			[
+				32,
+				0
+			],
+			[
+				10,
+				2
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Special Treatment",
+		"effect": "\"Knockback\" Effects Up (M)",
+		"cats": [
+			[
+				143,
+				0
+			],
+			[
+				79,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Horror Movies",
+		"effect": "\"Resistant\" Effects Up (M)",
+		"cats": [
+			[
+				19,
+				0
+			],
+			[
+				128,
+				0
+			],
+			[
+				33,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Cat High",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				201,
+				1
+			],
+			[
+				31,
+				0
+			],
+			[
+				100,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Spearfight",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				138,
+				0
+			],
+			[
+				24,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Heart Beat",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				212,
+				0
+			],
+			[
+				88,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Lolly Fanciers",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				15,
+				2
+			],
+			[
+				172,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Master-Apprentice",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				10,
+				0
+			],
+			[
+				132,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Three Kings",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				109,
+				1
+			],
+			[
+				7,
+				2
+			],
+			[
+				4,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Girlish Innocents",
+		"effect": "Base Defense Up (M)",
+		"cats": [
+			[
+				100,
+				0
+			],
+			[
+				150,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Headbanger's Ball",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				4,
+				0
+			],
+			[
+				95,
+				0
+			],
+			[
+				148,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Showoffs",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				17,
+				2
+			],
+			[
+				154,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Sweets",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				15,
+				2
+			],
+			[
+				20,
+				2
+			],
+			[
+				176,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Pointy Bits",
+		"effect": "\"Strengthen\" Effects Up (Sm)",
+		"cats": [
+			[
+				240,
+				1
+			],
+			[
+				7,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Yesterday's Enemy",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				130,
+				0
+			],
+			[
+				172,
+				0
+			],
+			[
+				268,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Punchpunchpunch!",
+		"effect": "Unit Attack Up (M)",
+		"cats": [
+			[
+				8,
+				0
+			],
+			[
+				99,
+				0
+			],
+			[
+				100,
+				0
+			],
+			[
+				34,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Lust for Battle",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				2,
+				0
+			],
+			[
+				130,
+				0
+			],
+			[
+				44,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Punish the Lewd",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				80,
+				1
+			],
+			[
+				257,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Team of Two",
+		"effect": "Unit Defense Up (M)",
+		"cats": [
+			[
+				152,
+				0
+			],
+			[
+				81,
+				0
+			],
+			[
+				123,
+				0
+			],
+			[
+				104,
+				0
+			],
+			[
+				88,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Double Typhoon",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				75,
+				0
+			],
+			[
+				267,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Trick of the Wind",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				267,
+				0
+			],
+			[
+				23,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "IT Crowd",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				260,
+				0
+			],
+			[
+				35,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Aerial Recon",
+		"effect": "Research Power Up (M)",
+		"cats": [
+			[
+				5,
+				0
+			],
+			[
+				96,
+				0
+			],
+			[
+				18,
+				2
+			],
+			[
+				260,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Under Arrest",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				212,
+				0
+			],
+			[
+				79,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Cat Circus",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				4,
+				2
+			],
+			[
+				130,
+				0
+			],
+			[
+				226,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Checkered Skirt",
+		"effect": "Research Power Up (Sm)",
+		"cats": [
+			[
+				23,
+				0
+			],
+			[
+				159,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Double Date",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				152,
+				0
+			],
+			[
+				81,
+				0
+			]
+		],
+		"unlock": "A"
+	},
+	{
+		"name": "Lazing About",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				33,
+				0
+			],
+			[
+				79,
+				0
+			]
+		],
+		"unlock": "A"
+	},
+	{
+		"name": "Curses!!!",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				128,
+				0
+			],
+			[
+				70,
+				1
+			]
+		],
+		"unlock": "A"
+	},
+	{
+		"name": "Immodest Modesty",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				23,
+				2
+			],
+			[
+				51,
+				1
+			]
+		],
+		"unlock": "B"
+	},
+	{
+		"name": "Jibbly Studio",
+		"effect": "Cannon Attack Up (M)",
+		"cats": [
+			[
+				5,
+				2
+			],
+			[
+				8,
+				1
+			],
+			[
+				55,
+				0
+			]
+		],
+		"unlock": "B"
+	},
+	{
+		"name": "Pumpkinpants",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				3,
+				1
+			],
+			[
+				227,
+				1
+			]
+		],
+		"unlock": "B"
+	},
+	{
+		"name": "Paranormal Activity",
+		"effect": "Worker Start Level Up (M)",
+		"cats": [
+			[
+				38,
+				0
+			],
+			[
+				128,
+				0
+			],
+			[
+				80,
+				0
+			]
+		],
+		"unlock": "C"
+	},
+	{
+		"name": "Liver Trouble",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				79,
+				0
+			],
+			[
+				10,
+				1
+			]
+		],
+		"unlock": "C"
+	},
+	{
+		"name": "Age of Dinosaurs",
+		"effect": "Base Defense Up (Sm)",
+		"cats": [
+			[
+				7,
+				0
+			],
+			[
+				46,
+				0
+			]
+		],
+		"unlock": "C"
+	},
+	{
+		"name": "Toying Around",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				147,
+				0
+			],
+			[
+				127,
+				0
+			],
+			[
+				81,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Rich and Poor",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				0,
+				0
+			],
+			[
+				129,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Koi And Dragon",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				104,
+				0
+			],
+			[
+				86,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Playing Slayer",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				2,
+				1
+			],
+			[
+				177,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "As Above, So Below",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				5,
+				2
+			],
+			[
+				83,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Future of War",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				195,
+				0
+			],
+			[
+				260,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Bazooka Bros.",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				11,
+				1
+			],
+			[
+				268,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Rivalry",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				268,
+				0
+			],
+			[
+				24,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Heavenly Kings",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				71,
+				2
+			],
+			[
+				25,
+				2
+			],
+			[
+				95,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Sweep the Area",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				11,
+				0
+			],
+			[
+				87,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Steel Saviors",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				81,
+				1
+			],
+			[
+				43,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Galactic Travel",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				78,
+				0
+			],
+			[
+				135,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Struck by Lightning",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				76,
+				0
+			],
+			[
+				19,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Neckless Chic",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				8,
+				2
+			],
+			[
+				171,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Blue Lagoon",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				134,
+				1
+			],
+			[
+				6,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Dog Gods",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				130,
+				0
+			],
+			[
+				258,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Volcanic Fury",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				125,
+				0
+			],
+			[
+				97,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Cursed Strength",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				70,
+				1
+			],
+			[
+				57,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Secret Agency",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				18,
+				0
+			],
+			[
+				134,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Living in Love",
+		"effect": "Cannon Attack Up (Sm)",
+		"cats": [
+			[
+				100,
+				0
+			],
+			[
+				259,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Jungle Women",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				130,
+				0
+			],
+			[
+				105,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Dreams of Flying",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				135,
+				0
+			],
+			[
+				18,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Offering to the Gods",
+		"effect": "Base Defense Up (M)",
+		"cats": [
+			[
+				271,
+				0
+			],
+			[
+				74,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Blessed Strength",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				24,
+				2
+			],
+			[
+				84,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Gang of Killers",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				212,
+				1
+			],
+			[
+				268,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Classic Headwear",
+		"effect": "Cannon Start Level Up (M)",
+		"cats": [
+			[
+				282,
+				0
+			],
+			[
+				137,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Arm Day Everyday",
+		"effect": "Unit Defense Up (M)",
+		"cats": [
+			[
+				8,
+				0
+			],
+			[
+				10,
+				0
+			],
+			[
+				9,
+				2
+			],
+			[
+				170,
+				1
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Like a Record, Baby",
+		"effect": "Cannon Attack Up (M)",
+		"cats": [
+			[
+				124,
+				1
+			],
+			[
+				267,
+				0
+			],
+			[
+				88,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Blessed Business",
+		"effect": "Worker Max Up (M)",
+		"cats": [
+			[
+				272,
+				0
+			],
+			[
+				260,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "My Very Best Friend",
+		"effect": "\"Witch Killer\" Effects Up (XL)",
+		"cats": [
+			[
+				299,
+				0
+			],
+			[
+				300,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Hot, Fresh 'n' Fast",
+		"effect": "Bounty Up (M)",
+		"cats": [
+			[
+				303,
+				0
+			],
+			[
+				283,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Commuter Life",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				70,
+				0
+			],
+			[
+				284,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Take Me Out",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				201,
+				1
+			],
+			[
+				287,
+				0
+			],
+			[
+				38,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Green Thumb",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				308,
+				0
+			],
+			[
+				127,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Purple Heart",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				304,
+				0
+			],
+			[
+				79,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Marine Tours",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				305,
+				1
+			],
+			[
+				6,
+				0
+			],
+			[
+				311,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Pedal Powered",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				306,
+				0
+			],
+			[
+				17,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Nationals",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				201,
+				1
+			],
+			[
+				307,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Trainspotting",
+		"effect": "Cannon Start Level Up (Sm)",
+		"cats": [
+			[
+				284,
+				0
+			],
+			[
+				149,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Brunch Rush",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				273,
+				1
+			],
+			[
+				153,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Black \u0026 White",
+		"effect": "Worker Max Up (Sm)",
+		"cats": [
+			[
+				319,
+				0
+			],
+			[
+				0,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Royal Submariner",
+		"effect": "Worker Start Level Up (Sm)",
+		"cats": [
+			[
+				316,
+				0
+			],
+			[
+				109,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Cutting Edge",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				286,
+				0
+			],
+			[
+				260,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Contest of Champs",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				325,
+				0
+			],
+			[
+				21,
+				0
+			],
+			[
+				10,
+				0
+			],
+			[
+				100,
+				2
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Put On Ice",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				152,
+				0
+			],
+			[
+				324,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Greatswords",
+		"effect": "Cannon Attack Up (M)",
+		"cats": [
+			[
+				323,
+				0
+			],
+			[
+				125,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Thanks for All",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				342,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "You Will Find Happiness",
+		"effect": "\"EVA Angel Killer\" Effects Up (XL)",
+		"cats": [
+			[
+				402,
+				0
+			],
+			[
+				405,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Miracle Performance",
+		"effect": "\"Critical\" Rate Up (M)",
+		"cats": [
+			[
+				16,
+				0
+			],
+			[
+				418,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Roasted Marshmallow",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				359,
+				0
+			],
+			[
+				176,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Meowin' in the Rain",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				360,
+				0
+			],
+			[
+				343,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Chance of Tornado",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				361,
+				0
+			],
+			[
+				267,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "High Voltage",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				401,
+				0
+			],
+			[
+				260,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Two As One",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				351,
+				0
+			],
+			[
+				123,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Boiled Egg",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				417,
+				0
+			],
+			[
+				329,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Cheating Heart?",
+		"effect": "Research Power Up (M)",
+		"cats": [
+			[
+				431,
+				0
+			],
+			[
+				21,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Part-Time Coworkers",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				397,
+				1
+			],
+			[
+				273,
+				1
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Imperial Court",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				338,
+				0
+			],
+			[
+				81,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Soft and Flexible",
+		"effect": "Base Defense Up (M)",
+		"cats": [
+			[
+				436,
+				0
+			],
+			[
+				176,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Power in Numbers",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				427,
+				0
+			],
+			[
+				63,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Scantily Clad",
+		"effect": "\"Massive Damage\" Effects Up (M)",
+		"cats": [
+			[
+				336,
+				1
+			],
+			[
+				23,
+				0
+			],
+			[
+				15,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Cosplay Fans",
+		"effect": "\"Strengthen\" Effects Up (M)",
+		"cats": [
+			[
+				357,
+				1
+			],
+			[
+				70,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Post-Apocalypse",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				322,
+				1
+			],
+			[
+				17,
+				1
+			],
+			[
+				14,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Kimono Champs",
+		"effect": "Research Power Up (L)",
+		"cats": [
+			[
+				334,
+				0
+			],
+			[
+				128,
+				0
+			],
+			[
+				282,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Growth Spurt",
+		"effect": "Worker Max Up (M)",
+		"cats": [
+			[
+				358,
+				0
+			],
+			[
+				21,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Dragons Old and Young",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				396,
+				0
+			],
+			[
+				312,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Wheels of Fate",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				439,
+				0
+			],
+			[
+				17,
+				0
+			],
+			[
+				14,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Independence Day",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				355,
+				1
+			],
+			[
+				5,
+				1
+			],
+			[
+				247,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Fresh Catch",
+		"effect": "\"Resistant\" Effects Up (L)",
+		"cats": [
+			[
+				335,
+				0
+			],
+			[
+				6,
+				0
+			],
+			[
+				311,
+				0
+			],
+			[
+				74,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Shields of all Sizes",
+		"effect": "Bounty Up (Sm)",
+		"cats": [
+			[
+				505,
+				0
+			],
+			[
+				210,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Co-op Mode",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				502,
+				0
+			],
+			[
+				74,
+				0
+			],
+			[
+				104,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Bad Guys",
+		"effect": "Research Power Up (L)",
+		"cats": [
+			[
+				519,
+				0
+			],
+			[
+				172,
+				0
+			],
+			[
+				319,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Cat Ears",
+		"effect": "\"Slow\" Effects Up (M)",
+		"cats": [
+			[
+				496,
+				0
+			],
+			[
+				268,
+				0
+			],
+			[
+				16,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "I Want To Be A Teacher",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				542,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Spinning Out",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				558,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Offshore Accounts",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				238,
+				2
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Ninjutsu Cute",
+		"effect": "\"Critical\" Rate Up (Sm)",
+		"cats": [
+			[
+				397,
+				2
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Clear Skies",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				287,
+				2
+			],
+			[
+				376,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Drinking Age",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				528,
+				1
+			],
+			[
+				452,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Witch Trial",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				55,
+				0
+			],
+			[
+				12,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Breakfast in Undies",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				153,
+				0
+			],
+			[
+				15,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Street Bazaar",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				146,
+				0
+			],
+			[
+				303,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Working Vacation",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				40,
+				0
+			],
+			[
+				14,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Dragon Driller",
+		"effect": "\"Weaken\" Effects Up (Sm)",
+		"cats": [
+			[
+				443,
+				1
+			],
+			[
+				312,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Mythic Driver",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				444,
+				1
+			],
+			[
+				313,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Brave Cutter",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				445,
+				1
+			],
+			[
+				211,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Whale Digger",
+		"effect": "\"Critical\" Rate Up (Sm)",
+		"cats": [
+			[
+				446,
+				1
+			],
+			[
+				311,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Sexy Sawer",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				447,
+				1
+			],
+			[
+				245,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Mini-Saurus",
+		"effect": "Research Power Up (Sm)",
+		"cats": [
+			[
+				209,
+				1
+			],
+			[
+				46,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Little Warriors",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				210,
+				1
+			],
+			[
+				149,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Micro Fighters",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				211,
+				1
+			],
+			[
+				47,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Minicyclone",
+		"effect": "\"Knockback\" Effects Up (Sm)",
+		"cats": [
+			[
+				245,
+				1
+			],
+			[
+				38,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Big Game Hunter",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				246,
+				1
+			],
+			[
+				49,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Mystery Club",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				247,
+				1
+			],
+			[
+				308,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Don't Mess With Me!",
+		"effect": "Worker Start Level Up (M)",
+		"cats": [
+			[
+				624,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Triple Single",
+		"effect": "Unit Speed Up (M)",
+		"cats": [
+			[
+				626,
+				0
+			],
+			[
+				627,
+				0
+			],
+			[
+				628,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Dance a Little, Eat a Little",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				311,
+				1
+			],
+			[
+				495,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Tiny Ancient Hunt",
+		"effect": "Unit Attack Up (Sm)",
+		"cats": [
+			[
+				312,
+				1
+			],
+			[
+				37,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Étoile minimum",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				313,
+				1
+			],
+			[
+				41,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Sacrifice",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				617,
+				0
+			],
+			[
+				12,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Warriors of Justice",
+		"effect": "Cannon Recharge Up (L)",
+		"cats": [
+			[
+				525,
+				1
+			],
+			[
+				78,
+				2
+			],
+			[
+				2,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "One-Way Ticket to Hell",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				534,
+				1
+			],
+			[
+				13,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Going Stones",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				569,
+				0
+			],
+			[
+				324,
+				0
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Cat Transport",
+		"effect": "Worker Start Level Up (M)",
+		"cats": [
+			[
+				594,
+				0
+			],
+			[
+				658,
+				2
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Dream Box",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				607,
+				0
+			],
+			[
+				14,
+				2
+			]
+		],
+		"unlock": "1"
+	},
+	{
+		"name": "Land-Air Assault",
+		"effect": "Unit Attack Up (M)",
+		"cats": [
+			[
+				632,
+				2
+			],
+			[
+				96,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Forbidden Compound",
+		"effect": "Cannon Recharge Up (Sm)",
+		"cats": [
+			[
+				619,
+				2
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Berserkers",
+		"effect": "Bounty Up (L)",
+		"cats": [
+			[
+				618,
+				2
+			],
+			[
+				323,
+				2
+			],
+			[
+				99,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Truant Angel",
+		"effect": "\"Strong\" Effects Up (Sm)",
+		"cats": [
+			[
+				642,
+				2
+			],
+			[
+				669,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Dark End to the Holiday",
+		"effect": "\"Resistant\" Effects Up (M)",
+		"cats": [
+			[
+				631,
+				2
+			],
+			[
+				442,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Elohim, Essaim",
+		"effect": "\"Slow\" Effects Up (L)",
+		"cats": [
+			[
+				617,
+				2
+			],
+			[
+				93,
+				2
+			],
+			[
+				8,
+				2
+			],
+			[
+				247,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Wicked Flames",
+		"effect": "Unit Defense Up (M)",
+		"cats": [
+			[
+				620,
+				2
+			],
+			[
+				663,
+				2
+			],
+			[
+				319,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Bustin' Phantoms",
+		"effect": "Research Power Up (Sm)",
+		"cats": [
+			[
+				633,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Violated Chivalry",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				634,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Anger Management",
+		"effect": "Worker Start Level Up (M)",
+		"cats": [
+			[
+				625,
+				2
+			],
+			[
+				621,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Bring it On!",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				721,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Go to Hell!",
+		"effect": "\"Weaken\" Effects Up (L)",
+		"cats": [
+			[
+				559,
+				2
+			],
+			[
+				227,
+				2
+			],
+			[
+				268,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Hunting Club",
+		"effect": "\"Slow\" Effects Up (Sm)",
+		"cats": [
+			[
+				647,
+				0
+			],
+			[
+				130,
+				0
+			]
+		],
+		"unlock": "2"
+	},
+	{
+		"name": "Like the Wind",
+		"effect": "\"Freeze\" Effects Up (M)",
+		"cats": [
+			[
+				649,
+				1
+			],
+			[
+				18,
+				2
+			],
+			[
+				545,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Catcademy Anthem",
+		"effect": "Research Power Up (L)",
+		"cats": [
+			[
+				650,
+				0
+			],
+			[
+				651,
+				0
+			],
+			[
+				652,
+				0
+			],
+			[
+				696,
+				0
+			],
+			[
+				735,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Full Transparency",
+		"effect": "Bounty Up (M)",
+		"cats": [
+			[
+				655,
+				1
+			],
+			[
+				382,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Dragon Aquarium",
+		"effect": "Unit Speed Up (M)",
+		"cats": [
+			[
+				660,
+				0
+			],
+			[
+				311,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Windburst",
+		"effect": "\"Knockback\" Effects Up (L)",
+		"cats": [
+			[
+				668,
+				1
+			],
+			[
+				24,
+				1
+			],
+			[
+				659,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Zero-Gravity Tour",
+		"effect": "Cannon Recharge Up (L)",
+		"cats": [
+			[
+				674,
+				1
+			],
+			[
+				247,
+				1
+			],
+			[
+				260,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "#TopSecret",
+		"effect": "\"Critical\" Rate Up (Sm)",
+		"cats": [
+			[
+				397,
+				3
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Dark Contract",
+		"effect": "Starting Money Up (L)",
+		"cats": [
+			[
+				682,
+				1
+			],
+			[
+				13,
+				2
+			],
+			[
+				211,
+				2
+			],
+			[
+				531,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "David Beats Goliath",
+		"effect": "\"Massive Damage\" Effects Up (M)",
+		"cats": [
+			[
+				692,
+				0
+			],
+			[
+				209,
+				0
+			],
+			[
+				313,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Thunder Heel Drop",
+		"effect": "Unit Defense Up (Sm)",
+		"cats": [
+			[
+				698,
+				0
+			],
+			[
+				245,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Sigh of Relief",
+		"effect": "Research Power Up (M)",
+		"cats": [
+			[
+				712,
+				1
+			],
+			[
+				98,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Pop!",
+		"effect": "Worker Max Up (M)",
+		"cats": [
+			[
+				784,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Traffic Violation",
+		"effect": "\"Resistant\" Effects Up (M)",
+		"cats": [
+			[
+				715,
+				0
+			],
+			[
+				14,
+				1
+			],
+			[
+				17,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Steel Tennis",
+		"effect": "Unit Speed Up (M)",
+		"cats": [
+			[
+				719,
+				0
+			],
+			[
+				675,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Wartime Burial",
+		"effect": "\"Strengthen\" Effects Up (Sm)",
+		"cats": [
+			[
+				723,
+				0
+			],
+			[
+				24,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Insatiable Hunger",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				725,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Cosmic Warriors",
+		"effect": "Starting Money Up (M)",
+		"cats": [
+			[
+				733,
+				0
+			],
+			[
+				78,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "By Gun and Sword",
+		"effect": "\"Knockback\" Effects Up (M)",
+		"cats": [
+			[
+				754,
+				0
+			],
+			[
+				11,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Red Strike",
+		"effect": "\"Kaijin Slayer\" Effects Activated",
+		"cats": [
+			[
+				831,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Blue Strike",
+		"effect": "Research Power Up (XL)",
+		"cats": [
+			[
+				832,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Yellow Strike",
+		"effect": "\"Immune to Waves\" Effects Activated",
+		"cats": [
+			[
+				833,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Green Strike",
+		"effect": "Deploy Cost Down (XL)",
+		"cats": [
+			[
+				834,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Pink Strike",
+		"effect": "Unit Speed Up (XL)",
+		"cats": [
+			[
+				835,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Royal Barrage",
+		"effect": "Unit Attack Up (M)",
+		"cats": [
+			[
+				760,
+				0
+			],
+			[
+				109,
+				1
+			],
+			[
+				20,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Gold Silver Strike",
+		"effect": "Immunity to Surge Activated",
+		"cats": [
+			[
+				857,
+				0
+			],
+			[
+				858,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Primal Fear",
+		"effect": "\"Resistant\" Effects Up (M)",
+		"cats": [
+			[
+				769,
+				1
+			],
+			[
+				531,
+				2
+			],
+			[
+				697,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Wilderness Wail",
+		"effect": "\"Massive Damage\" Effects Up (Sm)",
+		"cats": [
+			[
+				763,
+				0
+			],
+			[
+				659,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Traffic Safety Week",
+		"effect": "\"Slow\" Effects Up (M)",
+		"cats": [
+			[
+				774,
+				0
+			],
+			[
+				17,
+				1
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "PAC-MAN Fever",
+		"effect": "\"Resistant\" Effects Up (Sm)",
+		"cats": [
+			[
+				866,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Welcome!",
+		"effect": "Unit Speed Up (Sm)",
+		"cats": [
+			[
+				874,
+				0
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Only one of us leaves!",
+		"effect": "Starting Money Up (Sm)",
+		"cats": [
+			[
+				874,
+				1
+			]
+		],
+		"unlock": "0"
+	},
+	{
+		"name": "Reserve Element",
+		"effect": "Cannon Recharge Up (M)",
+		"cats": [
+			[
+				781,
+				1
+			],
+			[
+				689,
+				0
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "Physical Exorcism",
+		"effect": "\"Freeze\" Effects Up (Sm)",
+		"cats": [
+			[
+				799,
+				0
+			],
+			[
+				665,
+				2
+			]
+		],
+		"unlock": "3"
+	},
+	{
+		"name": "地獄の国盗り",
+		"effect": "\"Strengthen\" Effects Up (Sm)",
+		"cats": [
+			[
+				880,
+				0
+			]
+		],
+		"unlock": "0"
+	}
+]

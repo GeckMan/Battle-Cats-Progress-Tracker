@@ -1,0 +1,84 @@
+---	To generate tables containing new true forms in update pages.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cats
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+local cat_query = require('Module:Cat query helper')
+
+-- Wikitext for table
+local tableBase = [[{| class="article-table update-table" border="0" cellspacing="1" cellpadding="1"
+|-
+! scope="col" |CRO
+! scope="col" |Unit
+! scope="col" |Rarity
+! scope="col" |Changes
+%s
+|}]]
+local rowBase = [[|-
+|%03d
+|%s
+|%s
+|%s
+]]
+
+--- Generate table wikitext
+function p._main(args)
+	local argsMax = 2
+	local i = 0
+	-- run through args in multiples of argsMax as in Nyanko
+	local cats = {}
+	local data = {}
+	while true do
+		local name = args[argsMax * i + 1]
+		local changes = args[argsMax * i + 2]
+		if not (name) then break end
+		table.insert(cats, name)
+		table.insert(data, { name, changes })
+
+		i = i + 1
+	end
+
+	local rows = {}
+	local get_cat = cat_query.get_cat_function(cats)
+	for _, d in ipairs(data) do
+		local name, changes = d[1], d[2]
+		local cat = get_cat(name)
+		if args.ultra then
+			cat = cat:to_form(4)
+		else
+			cat = cat:to_form(3)
+		end
+
+		local img = Cat.image_str(cat, 'deploy')
+		local row = rowBase:format(cat.id, img, cat.rarity, changes)
+		table.insert(rows, row)
+	end
+	return tableBase:format(table.concat(rows))
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[==[
+print(p.main({
+	"Rich Cat III",
+	[=[
+'''ATT:''' 9,825 → 24,565<br>
+'''DPS:''' 2,435.95 → 6,090.5<br>
+'''Attack Animation:''' 0.63s → 1.23s
+]=],
+
+"Sniper the Recruit",
+[=['''DPS:''' 31.88 → 46.15<br>
+'''Range:''' 1,000 → 1,200<br>
+'''TBA:''' 10.70s → 7.37s<br>
+[[File:Slow.png]] [[File:Traitlesstraiticon.png|40px]] [[File:Redtraiticon.png|40px]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Angeltraiticon.png|40px]] [[File:Alientraiticon.png|40px]] [[File:Zombietraiticon.png|40px]] [[File:Relictraiticon.png|40px]] 0% → 100% for 90f<sub>3 seconds</sub>
+]=],
+}))
+]==]

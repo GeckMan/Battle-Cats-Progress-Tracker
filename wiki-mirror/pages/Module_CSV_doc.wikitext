@@ -1,0 +1,18 @@
+{{Documentation}}
+{{Docbunto|CSV|all=on|preface=
+==Usage==
+<code>csv.read</code> and <code>csv.from_page</code> will return generator objects that are easily iterated through a <code>for</code> loop.
+
+<syntaxhighlight lang="lua">
+local csv = require('Module:CSV')
+
+local ex = [[name,page,dmg
+cat,Cat (Normal Cat),3]]
+
+for line in csv.read(ex) do
+	mw.logObject(line)
+end
+</syntaxhighlight>
+==Considerations==
+Lua was not built for parsing CSV files. Don't use this module directly in an invokable module; if it is needed then make a data page and <code>mw.loadData</code> the data page in the invokable module.
+}}

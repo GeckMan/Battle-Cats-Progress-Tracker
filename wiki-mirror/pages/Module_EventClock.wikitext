@@ -1,0 +1,66 @@
+---	Module backend of [[Template:EventClock]].
+--
+--	@module	EventClock
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+---	Returns the text for a single event div with class event-clock
+--	@param {string} name Name of event
+--	@return {mw.html} HTML for the div element
+function p.event(name)
+	if name:match("&equals") then
+		error("Name should not include HTML escapes!")
+	end
+	local div = mw.html.create('div')
+		:addClass('event-clock')
+		:cssText('display: inline-block;')
+		:attr('data-event-name', name)
+	return div
+end
+
+---	Returns the template text
+function p._main(args)
+	local t = {}
+	for k in pairs(args) do
+		assert(type(k) == "number" or k == 'noborder')
+	end
+	for _, item in ipairs(args) do
+		table.insert(t, tostring(p.event(item)))
+	end
+	local content = table.concat(t)
+
+	local container = mw.html.create('div')
+		:cssText('text-align: center; font-weight: bold; font-size: 18px; margin: 10px 0px 0px 0px;')
+	if args.noborder then
+		local box = mw.html.create('div')
+			:addClass('bg-light3')
+			:cssText('display: inline-block; width: auto; border-radius: 6px; padding: 5px;')
+			:wikitext(content)
+		container:node(box)
+	else
+		local inner = mw.html.create('div')
+			:addClass('bg-light3')
+			:cssText('border-radius: 4px; padding: 5px;')
+			:wikitext(content)
+		local outer = mw.html.create('div')
+			:addClass('border-body')
+			:cssText('display: inline-block; width: auto; background-color: #FFA500; border-radius: 6px; border: solid 2px; padding: 5px;')
+			:node(inner)
+		container:node(outer)
+	end
+
+	return container
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({"Monday Stage"}))
+print(p.main({"Monday Stage", "River Styx", "Crazed Cat"}))
+]=]

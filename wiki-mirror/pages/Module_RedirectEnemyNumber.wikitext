@@ -1,0 +1,25 @@
+---	[[mw:Extension:SpeciallyCursed|SpeciallyCursed]] page to redirect you to a
+--	enemy page based on wiki id, e.g. [[Special:enemy/1]] leads to Snache and
+--	[[Special:enemy/-1]] leads to an error.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local Enemy = require('Module:Enemies')
+local cursed_util = require('Module:CursedRedirect')
+
+function p.main(frame)
+	local id = frame:getParent().args[1]
+	if not id then
+		return cursed_util.no_id_provided()
+	end
+
+	local success, maybeenemy = pcall(Enemy.from_id, id)
+	if not success then
+		local txt = ("Error when attempting to get enemy: %s"):format(mw.dumpObject(maybeenemy))
+		return mw.ext.SpeciallyCursed.escapeHtml(txt)
+	end
+
+	return mw.ext.SpeciallyCursed.output.redirect(mw.uri.fullUrl(maybeenemy.link).path)
+end
+
+return p

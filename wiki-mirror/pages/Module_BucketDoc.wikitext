@@ -1,0 +1,87 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p.doc(frame)
+	local args = getArgs(frame)
+
+	local title = mw.title.new('Bucket:' .. args[1])
+	local bucketJson = title.content
+	if not bucketJson then
+		return '<strong class="error">Bucket ' .. args[1] .. ' does not exist!</strong>'
+	end
+
+	local params = {}
+	local decoded = mw.text.jsonDecode(bucketJson)
+	-- jsonDecode does _not_ preserve order so gmatch must be used
+	for param in bucketJson:gmatch('\n\t"([%w_]+)": {') do
+		local desc
+		if args[param] then
+			desc = args[param]
+		else
+			desc = '<strong class="error">missing description</strong>'
+		end
+
+		local data = decoded[param]
+		local info = { 'type ' .. data.type }
+		if data.repeated then table.insert(info, 'repeated') end
+		if data.index ~= false then table.insert(info, 'indexed') end
+
+		local line = ("*<code>%s</code> (%s): %s"):format(param, table.concat(info, ', '), desc)
+		table.insert(params, line)
+	end
+
+	for key in pairs(args) do
+		if type(key) == "string" and not decoded[key] then
+			local fmt = '*<strong class="error">unrecognised key %s</strong>'
+			table.insert(params, fmt:format(key))
+		end
+	end
+
+	return table.concat(params, "\n")
+end
+
+function p.main(frame)
+	local args = getArgs(frame)
+
+	local sections = {}
+
+	local function formatBucket(page, base_page)
+		page = page:lower():gsub(' ', '_')
+		local pageName = 'Bucket:' .. page
+
+		local title = mw.title.new(pageName)
+		local bucketJson = title.content
+		if not bucketJson then
+			return '<strong class="error">Bucket ' .. page .. ' does not exist!</strong>'
+		end
+
+		local data
+		local subpage = mw.title.new(base_page .. '/' .. page)
+		if subpage.exists then
+			if subpage.namespace == 0 then
+				data = frame:expandTemplate { title = ':' .. subpage.fullText }
+			else
+				data = frame:expandTemplate { title = subpage.fullText }
+			end
+		else
+			data = '<i>null</i>'
+		end
+		-- TODO batch
+
+		local content = {
+			("==[[%s|%s]]=="):format(title.prefixedText, page),
+			data,
+			("([[%s|edit this page]])"):format(subpage.prefixedText)
+		}
+
+		return table.concat(content, '\n')
+	end
+
+	for _, page in ipairs(args) do
+		table.insert(sections, formatBucket(page, args.base_page))
+	end
+
+	return table.concat(sections, '\n\n')
+end
+
+return p

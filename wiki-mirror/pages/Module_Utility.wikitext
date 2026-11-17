@@ -1,0 +1,78 @@
+---	Base module with some useful miscellaneous functions. Don't invoke directly.
+--
+--	@script util
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+require('strict')
+local util = {}
+
+local fn = require('Module:Formatnum')
+local interpolate = require('Module:Interpolate')
+local toBinary = require('Module:Tobinary')
+
+util.formatInt = fn.formatInt
+util.formatFloat = fn.formatFloat
+util.interpolate = interpolate
+util.toBinary = toBinary
+
+---	@param {string} pageName Full name of the page (inc. namespace)
+--	@return {string} content Full content of the page
+function util.getPageContent(pageName)
+	error("Module:Utility is not meant to be invoked directly")
+
+	-- Some namespaces have different methods of getting page content
+	local namespaces = {}
+	-- mediawiki namespace just had to be different
+	namespaces.mediawiki = function(page)
+		page = mw.message.new(page:sub(11))
+		return tostring(page)
+	end
+	namespaces.special = function(_)
+		error('Cannot obtain content from a special page!')
+	end
+	local default = function(page)
+		page = mw.title.new(page)
+		return page:getContent()
+	end
+
+	-- checks the namespace for a function in the table above
+	local getPage = namespaces[pageName:match('^[^:]*'):lower()] or default
+	return getPage(pageName)
+end
+
+---	Escapes all 'magic' characters in a string
+--	to be used in a pattern
+--	@param {string} s
+--	@return {string} Escaped string
+function util.escape(s)
+	error("Module:Utility is not meant to be invoked directly")
+
+	-- local magic = ('().%+-*?[]^$'):gsub('(.)','%%%1')
+	-- s = s:gsub('(['..magic..'])','%%%1')
+	s = s:gsub('([%(%)%.%%%+%-%*%?%[%]%^%$])', '%%%1')
+	-- gsub returns 2 values so this function must be 2 lines
+	return s
+end
+
+---	Turns a generator object into a table
+--	@param {generator} gt
+--	@param[opt] {function} func Function to apply to each element
+--	@return {table}
+function util.toTable(gt, func)
+	error("Module:Utility is not meant to be invoked directly")
+
+	func = func or function(v) return v end
+
+	local t = {}
+	for v in gt do
+		table.insert(t, func(v))
+	end
+	return t
+end
+
+error("Module:Utility is not meant to be invoked directly")
+
+return util
+
+--[=[
+print(p.getPageContent("Module:Enemies.csv"))
+]=]

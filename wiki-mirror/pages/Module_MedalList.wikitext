@@ -1,0 +1,90 @@
+---	Module backend of [[Template:MedalList]].
+--
+--	@module	MedalList
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:Medal
+--	@require Module:MedalList/data
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Medals = require('Module:Medal')
+local BCNum = require('Module:BCNum')
+local medalData = mw.loadData('Module:MedalList/data')
+
+---	Main function
+function p._main(args)
+	local container = mw.html.create('div')
+		:addClass('medal-list-template')
+
+	local medalCountBar = container:tag('div')
+		:addClass('medal-count-container')
+	medalCountBar:tag('p')
+		:addClass('medal-count-unlocked')
+		:wikitext('[[File:MedalUnlocked.png|45px|link=]]')
+	local countTextRight = medalCountBar:tag('p')
+		:addClass('medal-count-amount')
+
+	local medalPagesContiainer = container:tag('div')
+		:addClass('scrollable-medal-viewer')
+
+	local partial = {}
+	for item in (args.partial or ""):gmatch("[%d]+") do
+		partial[tonumber(item)] = true
+	end
+
+	local medalsInput = {}
+	for _, item in ipairs(args) do
+		medalsInput[item] = true
+	end
+
+	local currentPageDiv = medalPagesContiainer:tag('div')
+		:addClass('medal-list-page')
+		:cssText("top: 0px;")
+
+	-- Add medals
+	local unlocked = 0
+	for i, name in ipairs(medalData.order) do
+		-- Add medal image if passed in argument else unknown image
+		if (medalsInput[name]) then
+			local medal = Medals.get_medal(name)
+			local img = ('[[File:%s|link=|★ %s ★]]'):format(medal.file, name)
+			currentPageDiv
+				:wikitext(img)
+			unlocked = unlocked + 1
+		elseif (partial[i]) then
+			currentPageDiv
+				:wikitext(("[[File:Medal unknown %03d.png|link=|Unknown]]"):format(medalData.rarity[name]))
+		else
+			currentPageDiv
+				:wikitext("[[File:Medal lost 000.png|link=|Unknown]]")
+		end
+		-- Add break tag every 5 medals
+		if i % 5 == 0 then
+			currentPageDiv
+				:wikitext("<br>")
+		end
+		-- Make new page div if existing page is complete with 20 medals
+		if i % 20 == 0 then
+			currentPageDiv = medalPagesContiainer:tag('div')
+				:addClass('medal-list-page')
+				:cssText(("top: %dpx;"):format(i / 20 * 504))
+		end
+	end
+
+	countTextRight
+		:node(BCNum._main({ tostring(unlocked), mode = 'white-sm', size = '16' }))
+
+	return container
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+mw.log(p.main({'Builder of Empires', 'Builder of Empires 2', 'Builder of Empires 3', 'Undead Slayer', 'Undead Slayer 2', 'Undead Slayer 3', partial="7,8,9"}))
+mw.log(p.main({'Builder of Empires', 'Builder of Empires 2', 'Builder of Empires 3', 'Undead Slayer', 'Undead Slayer 2', 'Undead Slayer 3'}))
+mw.log(p.main({'Builder of Empires'}))
+]=]

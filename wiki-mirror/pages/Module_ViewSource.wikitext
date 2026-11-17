@@ -1,0 +1,41 @@
+local p = {}
+local getArgs = require("Module:Arguments").getArgs
+
+---	Convert the text to nowiki'd, viewable text
+--	@param {string} text
+--	@param {mw.loadData} args Frame args
+--	@return {string} Nowiki'd, viewable representation of text
+function p.view_source(text, args)
+	text = mw.text.nowiki(text)
+
+	-- deal with strip markers, don't want them to be nowiki'd
+	text = text:gsub('&#39;&#34;`', [['"`]])
+	text = text:gsub('`&#34;&#39;', [[`"']])
+
+	local source
+	if args.raw then
+		source = mw.html.create('div'):cssText('white-space: pre-wrap')
+	else
+		source = mw.html.create(args.tag or 'pre')
+	end
+
+	return tostring(source:wikitext(text))
+end
+
+function p._main(args)
+	local source = {}
+	for _, text in ipairs(args) do
+		table.insert(source, p.view_source(text, args))
+	end
+	return table.concat(source)
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.view_source('[[File:Placeholder]]', {}))
+]=]

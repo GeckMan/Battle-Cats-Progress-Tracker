@@ -1,0 +1,71 @@
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+function p._main(args)
+	local new = {}
+    for index, item in ipairs(args) do
+        if index == 1 then
+            table.insert(new, string.format("|-\n! %s Tier", item))
+        elseif index == 2 then
+            table.insert(new, string.format("\n| [[File:Uni%s.png|x125px]]", item))
+        else
+           table.insert(new, string.format(" [[File:Uni%s.png|x125px]]", item))
+        end
+    end
+    return table.concat(new, "")
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+return p
+
+--	# Python Equivalent
+--	
+--	example = ["SS", "494 f00", "494 c00"]
+--
+--	def _main(args) -> str:
+--		new = []
+--		for index, item in enumerate(args):
+--			if index == 0:
+--				new.append(f"|-\n! {item} Tier")
+--			elif index == 1:
+--				new.append(f"\n| [[File:Uni{item}.png|x125px]]")
+--			else:
+--				new.append(f" [[File:Uni{item}.png|x125px]]")
+--		return "".join(new)
+--
+--
+--	def main(frame):
+--		return _main(frame)
+--
+--
+--	print(main(example))
+
+
+--[[[Result of the print() statement above would be...]]
+--	|-
+--	! SS Tier
+--	| [[File:Uni494 f00.png|x125px]] [[File:Uni494 c00.png|x125px]]
+
+
+--[[
+Now combine this with wiki tables:
+
+{| class="wikitable" style="text-align:left;
+{{User:Brute Bendy/Tier|SS|494 f00|494 c00}}
+|}
+
+]]
+
+--	And then you get:
+
+--	{|class="wikitable" style="text-align:left;
+--	|-
+--	! SS Tier
+--	[[File:Uni494 f00.png|x125px]] [[File:Uni494 c00.png|x125px]]
+--	|}
+
+
+--	Basically, the first argument is the table header for the wiki table.
+--	The rest of the arguments are supposed to be Uni files.

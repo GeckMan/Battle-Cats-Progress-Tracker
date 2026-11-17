@@ -1,0 +1,19 @@
+---	Given a string and a table of values, formats it in a manner similar to
+--	JavaScript's string interpolation, or raises an error if the value is not
+--	in the table
+--	@param {string} s String to interpolate
+--	@param {table} repls Table containing replacements
+--	@return {string}
+local function interpolate(s, repls)
+	-- gsub allows a function to be used as the replacement
+	-- captures ... inside ${...} and then replaces that
+	-- match with repls[...]
+	local repl = function (attr)
+		return repls[tonumber(attr)] or repls[attr] or error(attr .. ' not found in replacements.')
+	end
+	-- should I mention the tonumber thing
+	s = s:gsub('${(.-)}', repl)
+	return s
+end
+
+return interpolate

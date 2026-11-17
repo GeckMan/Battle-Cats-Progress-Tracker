@@ -1,0 +1,100 @@
+{{Documentation}}
+<includeonly>{{Collapsible}}</includeonly>
+{{Docbunto|Cache|all=on|preface=
+Cached pages:
+{{#invoke:Cache|list}}
+
+==Intro==
+This module exists to store data from Lua modules on actual wikitext pages to greatly speed up the loading times of pages that use the modules. Generally, the best usage is on pages that require [[Module:CSV]] since these can take a while to parse.
+
+There is always a tradeoff between readability and ease of maintenance, and performance. Module:CSV may be very useful and flexible, but it is inefficient because Scribunto was never meant for something like this. This module aims to remedy the problem by storing a cached version of a parsed CSV file so that all modules can use it; reading a page and then converting JSON to a Lua table is significantly faster than attempting to parse a massive CSV file into a Lua table (there is still a non-trivial overhead to this but it's like 0.1 seconds, much less than the parser).
+
+The easiest way to use this module is to use the [[#cache.main|main]] function as described below. This takes advantage of [[mw:Manual:Recursive conversion of wikitext|recursive substitution]] and some advanced wikitext tricks; don't worry if you don't understand how this works. The function will then read in the module that needs its return cached, and convert it to JSON format, and then when you press save it will slap this format into the actual page for the reading function to take care of later.
+
+==Usage==
+===Setup===
+First off, identify a page that needs to be cached. If you inspect element, or preview with the 2010 source editor, you can see a summary of page load times as well as the amount of time spent on Lua modules. If a singular template uses a Lua module that takes more than a second to run, then it's probably a good idea to consider using this module.
+
+Secondly, identify the data module that causes the bottleneck. This is something that can be called with <code>mw.loadData</code>, and generally it will be parsing a massive block of text or two, then converting this into some sort of table to be loaded into another module. This data module will be referred to as <code>page</code>.
+
+Next, reserve a page to store this cache on. If the page does not already exist, create it. It is recommended that the page has the name <code>Module:main/data/cache</code> where <code>main</code> is the name of the module that uses the data, and <code>main/data</code> is the page that returns this data for its parent module. When creating this page, make sure to go to [[Special:ChangeContentModel]] to change the content model to 'wikitext'. You may want to protect the page. This page will be referred to as <code>storagePage</code>.
+
+===Implement===
+First, go to [[Module:Cache/storage]] and add in an entry to the storage table. Try to follow the documentation and previous examples given there, generally the form is
+<syntaxhighlight lang="lua">
+storage[page] = {
+	page = storagePage,
+	dependencies = ...,
+	subitems = ...
+}
+</syntaxhighlight>
+
+Now, go to <code>storagePage</code> and add something of the sort
+<pre>
+This is the [[Module:Cache]] output for [page].
+
+<span style="display: none">{{subst:#invoke:Cache|main}}</span>
+</pre>
+
+Then, in <code>page</code>, add in this to the very top
+<syntaxhighlight lang="lua">
+local cache = require('Module:Cache').load_cache(page)
+if cache then
+	return cache
+end
+</syntaxhighlight>
+
+===Maintain===
+At the top of this page you will see a list of cached pages. This is designed for easy copying into the [[MediaWiki:Gadget-MassNullEdit|MassNullEdit]] script: the reason there is a # there is in fact so that you can still see the status of the page, but also copy and paste the list into MassNullEdit. Due to how subst: works, by null editing the cached pages you will update them if they are out of date. To make sure that there is always a change when you press save, the module also adds a timestamp to the end of the invocation so that even if your edit makes no change to the data that is actually stored on the cache page it is still marked as a change.
+
+Whenever there is an update to the game, or you notice that when previewing an edit it takes a while for the preview to load, refer back to this page to see if stale caches could be the problem. Note that the module also adds in a warning by default, so when you preview a page with a stale cache then you may see such warning.
+
+==Example==
+To make this easier to follow along with, here is an example of using this module for [[Module:Cats/data]].
+
+Firstly, the page to be cached is Module:Cats/data itself. The storage page used is [[Module:Units/cache]]; since Module:Cats/data is a very similar data module to [[Module:Enemies/data]], the caches for both of these modules are stored on the same page. This page had its content model changed to wikitext, which allows it to directly call <code>main</code> and place its return onto the page using template substitution.
+
+[[Module:Cache/storage]] was then updated to have
+<syntaxhighlight lang="lua">
+storage["Module:Cats/data"] = {
+	page = "Module:Units/cache",
+	dependencies = {
+		'Module:Cats/names.csv',
+		'Module:Cats/exclusives.csv',
+		'Module:Cats/images.csv'
+	},
+	subitems = {"cats"}
+}
+</syntaxhighlight>
+<code>page</code> and <code>storagePage</code> are filled in, and then the other values are updated. Module:Cats/data reads three data files and so these are added as dependencies. Since the cache of this module will be stored on the same page as Module:Enemies/data, there needs to be a way to differentiate between the two: using <code>subitems</code> does this, so that when Module:Cats/data tries to load its cache it doesn't load the one for the enemies, and vice versa.
+
+Finally, the module itself is then updated to have the cache loading. If the cache is fresh, then there is no need to execute any of the rest of the module; if the cache is stale, then <code>load_cache</code> returns <code>nil</code> and the rest of the module is executed as normal.
+<syntaxhighlight lang="lua">
+local cache = require('Module:Cache').load_cache('Module:Cats/data')
+if cache then
+	return cache
+end
+</syntaxhighlight>
+
+==Known Issues==
+The module has potential improvements to be made that are written in TODOs, although it is unlikely these will be implemented any time soon. In addition, there are a few issues that may be more difficult to fix, that you will have to keep in mind when using this module:
+
+*Despite being much faster than using a csv parser, there are still overhead costs. A cached module will have to call expensive parser functions to read the cached content, and can use up a significant amount of memory compared to a csv-parsed one. It's also worth noting that converting JSON to Lua tables is not free and still takes time.
+*Make sure to null edit all pages when you make edits to:
+**[[Module:Cache]] itself, if you are making an edit to encode, cache or main.
+**[[Module:Cache/storage]], especially when adding new pages or dependencies
+**Any data page that uses this module, especially if it adds a dependency
+*JSON encoding and decoding can be unreliable to be completely bidirectional:
+**Module:Enemies needs to have the line <syntaxhighlight inline lang="lua">name = tonumber(name) or name</syntaxhighlight>, since <code>mw.text.jsonDecode</code> will decode <syntaxhighlight inline lang="lua">'{"453":3}'</syntaxhighlight> as <syntaxhighlight inline lang="lua">{[453] = 3}</syntaxhighlight> for example.
+**[[Module:Enemies/data]] needs a [https://battle-cats.fandom.com/wiki/Module:Enemies/data?diff=682879&oldid=682674 similar line].
+**A data table like <syntaxhighlight inline lang="lua">{[0] = 1, [1] = 1, [2] = 1}</syntaxhighlight> will be encoded as <syntaxhighlight inline lang="json">[1,1,1]</syntaxhighlight>, which will be then decoded as <syntaxhighlight inline lang="lua">{[1] = 1, [2] = 1, [3] = 1}</syntaxhighlight> (i.e. as a standard Lua indexed array). This will still happen even if any of the indexes are strings, although it won't happen if the numbers don't all form a sequence.
+**A data table like <syntaxhighlight inline lang="lua">{["1"] = 1, [1] = 3}</syntaxhighlight> will cause an error despite being a valid Lua table.
+**If you find any issues of these sorts on a cached page, they may require some fiddling around to fix. Try checking what happens when you use <syntaxhighlight inline lang="lua">mw.text.jsonDecode(mw.text.jsonEncode(t))</syntaxhighlight> on a table, and you can do a rough equality check with <syntaxhighlight inline lang="lua">mw.dumpObject(a) == mw.dumpObject(b)</syntaxhighlight>.
+
+==Influences==
+The idea to do this has existed for a while, but it is only now that there is both the need and the means to create this module.
+*[[Module:Sandbox/Jenny on Wiki/RecursiveSubst]] and influences stated in the doc for inspiration of the methods used to implement an auto-updating static page like the cache pages used by this module
+*[[wikia:dev:Global Lua Modules/ModularCSS]] for the idea of using Lua modules to store data on pages that could then be used externally
+*[[Module:Sandbox/Jenny on Wiki/Annoy]] for having slow enough loading times that something like this was necessary
+}}
+<includeonly></div>{{Clear}}</includeonly>

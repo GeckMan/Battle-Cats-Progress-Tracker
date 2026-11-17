@@ -1,0 +1,17 @@
+{{Documentation}}
+:''Also see the [[wikia:the-battle-doges:Module:EnemyStats|original]] module''
+
+==Usage==
+
+===Link===
+<pre>{{#invoke:Enemy Stats (Old)|link|Traitless/Red/Floating/Dark/test1/Metal/Angel/Alien/StarredAlien/Zombie/Relic/Aku/Colossus/Typeless/EVA Angel/Witch/Behemoth/Sage}}</pre>
+gives
+<div>{{#invoke:Enemy Stats (Old)|link|Traitless/Red/Floating/Dark/test1/Metal/Angel/Alien/StarredAlien/Zombie/Relic/Aku/Colossus/Typeless/EVA Angel/Witch/Behemoth/Sage}}</div>
+
+===Cat===
+<pre>{{#invoke:Enemy Stats (Old)|cat|Traitless/Red/Floating/Dark/Metal/Angel/Alien/StarredAlien/Zombie/Relic/Aku/Colossus/Typeless/EVA Angel/Witch/Behemoth/Sage}}</pre>
+yields
+{{ViewSource|{{#invoke:Enemy Stats (Old)|cat|Traitless/Red/Floating/Dark/Metal/Angel/Alien/StarredAlien/Zombie/Relic/Aku/Colossus/Typeless/EVA Angel/Witch/Behemoth/Sage}}}}
+
+==Required pages==
+*[[Module:Enemy Stats (Old)/traits]]

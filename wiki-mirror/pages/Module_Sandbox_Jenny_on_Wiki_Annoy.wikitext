@@ -1,0 +1,211 @@
+local pages = {}
+local csv = require("Module:CSV")
+local Enemy = require("Module:Enemies")
+local Cat = require("Module:Cat2")
+require('Module:Cat2/string_functions').init(Cat)
+require('Module:Cat2/load_bulk_data').init(Cat)
+
+local HIDE_RAW = true
+
+local function strip_pre(content)
+	content = content:match("<pre>(.*)</pre>")
+	return content
+end
+
+local function unescape(content)
+	content = content:gsub('""', '"')
+	return content
+end
+local function catlink(cat)
+	local link = cat:image_str('deploy', { link = "" }, ""):gsub('|link=|', '')
+	return link
+end
+local function filter_links(link)
+	local l = link:gsub("[|#][^\n]-%f[%]]", "")
+	return l
+end
+
+---	Stolen from [[Module:Utility]].
+--	@param {string} pageName Full name of the page (inc. namespace)
+--	@return {string} content Full content of the page
+local function getPageContent(pageName)
+	-- Some namespaces have different methods of getting page content
+	local namespaces = {}
+	-- mediawiki namespace just had to be different
+	namespaces.mediawiki = function(page)
+		page = mw.message.new(page:sub(11))
+		return tostring(page)
+	end
+	namespaces.special = function(_)
+		error('Cannot obtain content from a special page!')
+	end
+	local default = function(page)
+		page = mw.title.new(page)
+		return page:getContent()
+	end
+
+	-- checks the namespace for a function in the table above
+	local getPage = namespaces[pageName:match('^[^:]*'):lower()] or default
+	return getPage(pageName)
+end
+
+--------------------------------------------------------------------------------
+
+pages["Module:Enemies.csv"] = function(page)
+	-- do this to make this not such a bottleneck
+	local content = getPageContent(page)
+	local t = {}
+	-- 2nd column contains name
+	for name in content:gmatch("\n[%d]-\t([^\n]-)\t[^\n]*") do
+		-- I CBA to write a separate case for codename red riding or something
+		-- so just use `csv.read`
+		local link = Enemy.new(csv.read(name)()[1]).page
+		table.insert(t, link)
+	end
+	return table.concat(t, "\n")
+end
+pages["Module:Stamps.csv"] = function(page)
+	local content = getPageContent(page)
+	local t = {}
+	content = csv.read(content)
+	-- remove header
+	content()
+	for line in content do
+		local link = ("[[%s]]"):format(line[3])
+		if link ~= '[[]]' then
+			table.insert(t, link)
+		end
+	end
+	return table.concat(t, "\n")
+end
+pages["Module:GachaDescription/descs.csv"] = function(page)
+	local content = getPageContent(page)
+	local t = {}
+	content = csv.read(content, { delim = "|" })
+	-- remove header
+	content()
+	for line in content do
+		local link = Cat.str.page_link(Cat.from_name(line[1]))
+		table.insert(t, link)
+	end
+	return table.concat(t, "\n")
+end
+
+pages["User:Jenny on Wiki/data/StageNames.csv"] = function(page)
+	local content = getPageContent(page)
+	content = content
+		:gsub("\n%d%d%d,%d%d%d,%d%d%d,", "\n")
+		:gsub("\n%d%d%d,%d%d%d,,", "\n")
+	return unescape(strip_pre(filter_links(content)))
+end
+pages["User:Jenny on Wiki/data/EnemyLinkData.csv"] = function(page)
+	local content = getPageContent(page)
+	return unescape(strip_pre(content))
+end
+pages["User:Jenny on Wiki/data/Treasures.csv"] = function(page)
+	if HIDE_RAW then
+		return "This page is raw so does not need to be transcluded"
+	end
+	local content = getPageContent(page)
+	return content
+end
+pages["User:Jenny on Wiki/data/TalentNames.csv"] = function(page)
+	if HIDE_RAW then
+		return "This page is raw so does not need to be transcluded"
+	end
+	local content = getPageContent(page)
+	return content
+end
+pages["User:Jenny on Wiki/data/ContinueStages.csv"] = function(page)
+	if HIDE_RAW then
+		return "This page is raw so does not need to be transcluded"
+	end
+	local content = getPageContent(page)
+	return content
+end
+pages["MediaWiki:Sidebar"] = function(page)
+	local content = getPageContent(page)
+
+	content = content:gsub("%*[^|\n]+\n", "")
+	content = content .. "\n"
+	-- adding a new line to the end means the rest doesn't have to try and match
+	-- $ as well, they just need to worry about new lines
+	content = content:gsub("%*%* *[a-z]+%-url|[^\n]*\n", "")
+	content = content:gsub("%*%* *mainpage|mainpage%-description\n", "")
+	-- remove:
+	-- lines without pipe
+	-- lines that follow the format of ("**", lowercase letters, "-url|")
+	-- mainpage description
+
+	content = content:gsub("%*+(.-)%f[\n]", "[[:%1]]")
+	-- got rid of all other lines so rest should all function as links
+
+	return content
+end
+pages["MediaWiki:ExtendedSidebar"] = function(page)
+	local content = getPageContent(page)
+	content = content:gsub("%*[^|\n]+\n", "")
+	content = content:gsub("%*+(.-)%f[\n]", "[[:%1]]")
+	content = content:gsub("%*+(.-)$", "[[:%1]]")
+	-- Put links in
+	-- content = content:gsub("%[%[:[A-Z]+%]%]", "")
+	-- Remove like [[TOOLBOX]] since they're there because... idk
+	return content
+end
+pages["Template:CurrentEvents/Images.json"] = function(page)
+	local content = mw.loadJsonData(page)
+	local t = {}
+	local i = {}
+	for key, value in pairs(content) do
+		table.insert(t, ("%s = [[%s]]"):format(key, value.page))
+		local img = value.img:match('https://static.wikitide.net/battlecatswiki/./../(.*)') or "file that doesn't exist" .. key
+		table.insert(i, ("%s = [[File:%s|10px]]"):format(key, img))
+	end
+
+	return table.concat(t) .. table.concat(i)
+end
+
+--------------------------------------------------------------------------------
+
+local p = {}
+function p.list()
+	local t = {}
+	for page, _ in pairs(pages) do
+		table.insert(t, ("*[[%s]]"):format(page))
+	end
+	return table.concat(t, "\n")
+end
+
+local format = [=[===[[%s]]===
+<div class="template-collapsible mw-collapsible mw-collapsed" data-expandtext="Expand" data-collapsetext="Collapse">
+%s
+</div>
+<div style="clear:both; margin: 0; padding: 0"></div>
+]=]
+function p.main(frame)
+	local t = {}
+	for page, f in pairs(pages) do
+		local success, result = pcall(f, page)
+		local content
+		if success then
+			content = format:format(page, result)
+		else
+			content = ("===[[SCRIPT ERROR]] on page [[%s]]: %s===")
+				:format(page, result)
+		end
+		table.insert(t, content)
+	end
+	return table.concat(t, "\n")
+end
+
+return p
+
+-- print(p.list())
+-- print(p.main(mw.getCurrentFrame()))
+
+--[=[
+local page = "MediaWiki:Sidebar"
+local content = getPageContent(page)
+mw.logObject(content)
+print(content)
+]=]

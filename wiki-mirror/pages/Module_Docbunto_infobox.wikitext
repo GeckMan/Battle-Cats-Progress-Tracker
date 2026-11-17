@@ -1,0 +1,60 @@
+---	Infobox for Lua modules.
+--	@script infobox
+--	@param {table} data Taglet documentation data.
+--	@param {string} codepage Code page name.
+--	@param {table} frame Template invocation frame.
+--	@param {table} options Docbunto configuration options.
+--	@return {table} Infobox template data for `frame:expandTemplate`.
+return function(data, codepage, frame, options)
+	local infobox = {}
+
+	-- Infobox template name.
+	infobox.title = 'Infobox Lua'
+
+	-- Infobox argument list.
+	infobox.args = {}
+	infobox.args.Title = codepage
+	infobox.args.Code = ("[[Module:%s]]"):format(codepage)
+
+	if options.image or data.info['image'] then
+		infobox.args['Image file'] = data.info['image']
+	end
+
+	if options.caption or data.info['caption'] then
+		infobox.args['Image caption'] = options.caption or data.info['caption']
+	end
+
+	infobox.args['Type'] = data.type == 'module' and 'Invokable' or 'Meta'
+
+	if data.info['release'] then
+		infobox.args['Status'] = data.info['release']
+	end
+
+	if data.info['author'] then
+		infobox.args['Author'] = data.info['author']
+	end
+
+	if data.info['attribution'] then
+		infobox.args['Using code by'] = data.info['attribution']
+	end
+
+	if data.info['credit'] then
+		infobox.args['Other attribution'] = data.info['credit']
+	end
+
+	if data.info['require'] then
+		data.info['require'] = data.info['require']
+			-- :gsub('^[^%[%s]+$', '[[%1]]')
+			:gsub('^([^%[%*%s]+)(%s.*)', '[[%1]]%2')
+			-- Single required module without a link
+			:gsub('%* ([^[%s]+)', '* [[%1]]')
+			-- Required modules with `* ...` format
+		infobox.args['Dependencies'] = data.info['require']
+	end
+
+	if data.info['demo'] then
+		infobox.args['Examples'] = data.info['demo']
+	end
+
+	return frame:expandTemplate(infobox)
+end

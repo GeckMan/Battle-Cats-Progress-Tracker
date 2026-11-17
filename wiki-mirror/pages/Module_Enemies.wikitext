@@ -1,0 +1,200 @@
+---	General-purpose helper module offering many functions to help deal with
+--	enemies.
+--
+--	@classmod Enemy
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Enemies/data (parent module)
+
+---	Enemy object.
+--	@type Enemy
+local Enemy = {}
+
+local be_nice = true
+local renames = {}
+
+---	Output of [[Module:Enemies/data]]
+--	@member {mw.loadData} enemyCSV
+local enemyCSV = mw.loadData('Module:Enemies/data')
+
+---	Create new @{Enemy} object with name given
+--	@constructor
+--	@param {string} name Enemy's name
+--	@return {Enemy} Enemy object
+--	@error Enemy name empty
+--	@error Enemy name not recognised
+--	@usage local enemy = Enemy.new('Snache')
+function Enemy.new(name)
+	assert(name and name ~= '', 'Name cannot be empty')
+	if be_nice and renames[name] and not enemyCSV.data[name] then
+		mw.ext.bucket("template_log").put({
+			template_name = "Module:Enemies",
+			log_level = "info",
+			log_key = "module_enemies_replacement",
+			data = name,
+		})
+		local fmt = "Debug: %s uses Module:Enemies temporary replacements (should be %s)"
+		mw.addWarning(fmt:format(mw.dumpObject(name), mw.dumpObject(renames[name])))
+		name = renames[name]
+	end
+
+	local enemy = {}
+
+	name = tonumber(name) or name
+	if not enemyCSV.data[name] then
+		local id = string.match(name, '^E%-(%d+)$')
+		if id then
+			--[=[
+			mw.ext.bucket("template_log").put({
+				template_name = "Module:Enemies",
+				log_level = "info",
+				log_key = "module_enemies_fallback",
+				data = name,
+			})
+			--]=]
+			local fmt = "Debug: %s uses Module:Enemies fallback"
+			mw.addWarning(fmt:format(mw.dumpObject(name)))
+			-- warn so it gets fixed, but also allow
+			return Enemy.from_id(id)
+		end
+		error(name .. ' is not recognised as a valid enemy.')
+	end
+	local t = enemyCSV.data[name]
+	--[[
+		Enemy's image file number (as in `Enemy icon %s.png`)
+		@private
+		@member {string} enemy._img
+	--]]
+	enemy._img = t[1]
+	--[[
+		Enemy's ERO number (Doge is 0)
+		@member {number} enemy.num
+	--]]
+	enemy.num = tonumber(enemy._img:match("^%d+"))
+	--[[
+		Enemy's name
+		@member {string} enemy.name
+	--]]
+	enemy.name = t[2]
+
+	--[[
+		Page name of enemy
+		@member {string} enemy.link
+	--]]
+	--[[
+		Formatted link to Enemy's page
+		@member {string} enemy.page
+	--]]
+	if t[3] == '' then
+		enemy.link = enemy.name
+		enemy.page = ('[[%s]]'):format(enemy.name)
+	else
+		enemy.link = t[3]
+		enemy.page = ('[[%s|%s]]'):format(enemy.link, enemy.name)
+	end
+
+	--[[
+		HP at 100%
+		@member {number} enemy.hp
+	--]]
+	enemy.hp = tonumber(t[4])
+	--[[
+		Damage at 100% (includes all hits of multihit)
+		@member {number} enemy.atk
+	--]]
+	enemy.atk = tonumber(t[5])
+
+	local mt = {
+		__index = Enemy,
+	}
+	setmetatable(enemy, mt)
+	-- OO initialisation
+
+	return enemy
+end
+
+---	Create new @{Enemy} object from id.
+--	@param {string} name Enemy's id
+--	@return {Enemy} Enemy object
+function Enemy.from_id(id)
+	id = tonumber(id)
+
+	local as_num = enemyCSV.data[id]
+	if as_num then
+		local enemy_name = as_num[2]
+		return Enemy.new(enemy_name)
+	end
+
+	local as_str = enemyCSV.data[("%03d"):format(id)]
+	if as_str then
+		local enemy_name = as_str[2]
+		return Enemy.new(enemy_name)
+	end
+
+	error("Couldn't find enemy with ID " .. id)
+end
+
+---	@section Utility functions
+
+---	@param {string} trait Name of trait to get icon for
+--	@return {string} Name of icon image file
+--	@private
+function Enemy.format_trait_icon(trait)
+	local traitIconNames = {
+		["EVA Angel"] = "EvaAngel",
+		["Behemoth"] = "Beast"
+	}
+	return ("%straiticon.png"):format(traitIconNames[trait] or trait)
+end
+
+---	@param {string} trait Name of trait to get category name for
+--	@return {string} Name of category
+--	@private
+function Enemy.get_trait_link(trait)
+	local traitIconLinks = {
+		["Alien"]        = 'Unstarred Alien',
+		["StarredAlien"] = 'Starred Alien',
+	}
+	return ("Category:%s Enemies"):format(traitIconLinks[trait] or trait)
+end
+
+---	@return {string} Formatted/linked trait icons, separated by space
+function Enemy.format_trait_icons(traits)
+	local icons = {}
+	for _, trait in ipairs(traits) do
+		local icon = Enemy.format_trait_icon(trait)
+		local link = Enemy.get_trait_link(trait)
+		table.insert(icons, ("[[File:%s|link=%s|%s]]"):format(icon, link, trait))
+	end
+	return table.concat(icons, ' ')
+end
+
+---	@section Methods
+
+---	@return {number} Return id (null if ID not a real number)
+function Enemy:id()
+	return tonumber(self._img)
+end
+
+---	@return {string} Return name of "Enemy icon x.png" image file
+function Enemy:icon()
+	if self._img == '?' then return 'Icon hatena.png' end
+	return ('Enemy icon %s.png'):format(self._img)
+end
+
+return Enemy
+
+--[=[
+name = 'Doge'
+enemy = p.new(name)
+print(enemy.name)
+print(enemy.link)
+print(enemy.page)
+print(enemy.hp)
+print(enemy.atk)
+
+print(enemy:icon())
+print(enemy.format_trait_icons({ "Traitless" }))
+
+print(p.from_id("1").name)
+print(p.from_id(673).name)
+]=]

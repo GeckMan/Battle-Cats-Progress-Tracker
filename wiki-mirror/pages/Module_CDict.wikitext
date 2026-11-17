@@ -1,0 +1,34 @@
+---	Module to display the [[Cat Dictionary]].
+--
+--	@module	CDict
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local Cat2 = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat2)
+require('Module:Cat2/load_bulk_data').init(Cat2)
+
+function p._main(args)
+	local imgs = {}
+	for _, name in ipairs(args) do
+		local cat = Cat2.from_name(name)
+		local name1 = cat:to_form(1):name()
+
+		cat = cat:to_form(cat.amt_forms)
+		local img = Cat2.image_str(cat, 'deploy', { size = '89px', caption = name1 })
+		table.insert(imgs, img)
+	end
+
+	local icons = mw.html.create('span')
+		:addClass("cat-dictionary-icons")
+		:wikitext(table.concat(imgs, ' '))
+
+	return icons
+end
+
+function p.main(frame)
+	return p._main(frame:getParent().args)
+end
+
+return p
+
+-- print(p._main({'Cat', 'Tank Cat'}))

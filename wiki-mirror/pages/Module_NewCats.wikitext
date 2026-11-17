@@ -1,0 +1,144 @@
+---	To generate tables containing new cats in update pages.
+--
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+--	@require Module:Cats
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+local Cat = require('Module:Cat2')
+require('Module:Cat2/images').init(Cat)
+local cat_query = require('Module:Cat query helper')
+local Spirit
+
+-- Wikitext for table
+local tableBase = [[{| class="article-table update-table" border="0" cellspacing="1" cellpadding="1"
+|-
+! scope="col" |CRO
+! scope="col" |Name
+! scope="col" |Rarity
+! scope="col" |Source
+%s
+|}]]
+local rowBase = [[|-
+|%03d
+|%s
+|%s
+]]
+
+function p.get_row(get_cat, name, source)
+	local summon_id = name:match("^Summon (%d+)$")
+	if summon_id then
+		-- intentionally duplicated with check_spirit because laziness
+		if not Spirit then
+			Spirit = require('Module:Spirit')
+		end
+		local data = Spirit.from_ordinal(tonumber(summon_id))
+
+		if data then
+			local orig = get_cat(data.page_name)
+			local img = ('[[File:%03d 1.png|link=|center|%s]]'):format(data.id, name)
+			local row = rowBase:format(data.id, img, orig.rarity)
+
+			return row
+		else
+			local rb = rowBase:gsub("%%03d", "%%s")
+			local row = rb:format("???", "[[File:Placeholder.png|link=|center]]", "???")
+			return row
+		end
+	end
+
+	local s, r = pcall(get_cat, name)
+	if not s then
+		local rb = rowBase:gsub("%%03d", "%%s")
+		local row = rb:format("???", name, "???")
+		return row
+	end
+
+	local cat = r:to_form(1)
+	local img = Cat.image_str(cat, 'deploy')
+	local row = rowBase:format(cat.id, img, cat.rarity)
+
+	return row
+end
+
+function p.check_spirit(name, source)
+	local summon_id = name:match("^Summon (%d+)$")
+	if summon_id then
+		-- intentionally duplicated with above because laziness
+		if not Spirit then
+			Spirit = require('Module:Spirit')
+		end
+		local data = Spirit.from_ordinal(tonumber(summon_id))
+		source = '[[File:Zukan icon45.png|link=|Summon]]'
+		-- slightly inefficient to do it twice but who cares
+
+		return {
+			query = data and data.page_name,
+			-- if data doesn't exist then make it nil
+			name = name,
+			source = source,
+		}
+	end
+
+	return {
+		query = name,
+		name = name,
+		source = source,
+	}
+end
+
+--- Generate table wikitext (see [[Template:Update#New Cats]])
+function p._main(args)
+	local argsMax = 2
+	local i = 0
+	local cats = {}
+	local row_data = {}
+	while true do
+		local name = args[argsMax * i + 1]
+		local source = args[argsMax * i + 2]
+		-- don't check for source as doing so would mask problems with the
+		-- template being used
+		if not (name) then break end
+
+		local data = p.check_spirit(name, source)
+		table.insert(cats, data.query)
+		table.insert(row_data, data)
+
+		i = i + 1
+	end
+
+	local get_cat = cat_query.get_cat_function(cats, { page_name = true })
+	-- page_name is necessary for spirits
+	local rows = {}
+	for idx, data in ipairs(row_data) do
+		local row = p.get_row(get_cat, row_data[idx].name, row_data[idx].source)
+
+		-- allow rowspan to be used when the source is -
+		if row_data[idx].source ~= '-' then
+			local rowspan = 1
+			local j = idx + 1
+			while row_data[j] and row_data[j].source == '-' do
+				rowspan = rowspan + 1
+				j = j + 1
+			end
+
+			row = row .. ('| rowspan="%d" | %s\n'):format(rowspan, row_data[idx].source)
+		end
+
+		table.insert(rows, row)
+	end
+
+	return tableBase:format(table.concat(rows))
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p.main({"Cat", "Starting the game", "Tricycle Cat", "{{Stamps|Tricycle Cat|Daily Bonus}}",
+	"Bahamut Cat", "[[File:Moon.png|link=Moon (Empire of Cats)]]", "Mr.", "-"}))
+
+print(p.main({"Bodhisattva Cat", "[[File:Rarecapsule.png|150px|link=Cat Capsule#Rare Cat Capsule|Rare Cat Capsule]]", "Delinquent Cat", "-", "Hip Hop Cat", "-", "Kotatsu Cat", "-", "Nekoluga", "[[File:Gatya btn00.png|link=Tales of the Nekoluga (Gacha Event)]]", "Nerd Cat", "[[File:Rarecapsule.png|150px|link=Cat Capsule#Rare Cat Capsule|Rare Cat Capsule]]", "Swimmer Cat", "-", "Pogo Cat", "-", "Wheel Cat", "-", "Apple Cat", "-", "Bath Cat", "-", "Salon Cat", "-", "Maiko Cat", "[[File:MonekoButton.png|200px|link=Serial Codes]]", "Jurassic Cat", "[[File:Rarecapsule.png|150px|link=Cat Capsule#Rare Cat Capsule|Rare Cat Capsule]]", "Viking Cat", "-", "Pirate Cat", "-", "Thief Cat", "-", "Bishop Cat", "-", "Fortune Teller Cat", "-", "Shaman Cat", "-", "Evangelist Cat", "[[File:MonekoButton.png|200px|link=Serial Codes]]", "Type 10", "[[File:Mapsn000 07 c ja.png|200px|link=Hometown Self-Defense Force Collaboration Event]]", "Bronze Cat", "[[File:Mapname015 s en.png|200px|link=Attack on B-Cyclone (Expert)]]", "Toy Machine Cat", "[[File:MonekoButton.png|200px|link=Serial Codes]]"}))
+]=]

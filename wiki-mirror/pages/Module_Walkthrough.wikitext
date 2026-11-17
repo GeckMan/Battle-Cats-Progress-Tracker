@@ -1,0 +1,46 @@
+---	Implements the [[Template:Walkthrough|Walkthrough]] template.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local tableBase =
+[[{| style="max-width: 700px; width:max-content;" class="article-table" border="0" cellpadding="1" cellspacing="1"
+!Video
+!Player
+!Notes
+|-
+%s
+|}]]
+
+function p._main(frame, args)
+	local argsMax = 3
+	local i = 0
+	local videos = {}
+
+	while true do
+		local video = args[argsMax * i + 1]
+		local player = args[argsMax * i + 2]
+		local notes = args[argsMax * i + 3]
+		if not (video) then break end
+
+		video = frame:extensionTag('youtube', video, { width = 280 })
+
+		local vid = ("|%s\n|%s\n|%s"):format(video, player, notes)
+		table.insert(videos, vid)
+		i = i + 1
+	end
+
+	local t = tableBase:format(table.concat(videos, "\n|-\n"))
+	return mw.html.create('div')
+		:addClass('overflow-shadow')
+		:wikitext('\n' .. t)
+end
+
+function p.main(frame)
+	return p._main(frame, getArgs(frame, {
+		removeBlanks = false
+	}))
+end
+
+return p

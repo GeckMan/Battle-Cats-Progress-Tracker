@@ -1,0 +1,29 @@
+---	Helper module to provide validation. Not to be invoked directly.
+--
+--	@script Validation
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+
+local validation = {}
+
+---	Validate that only the given `named_args` are listed in `args`.
+--	@param {table} args Args to validate.
+--	@param {table} named_args Contains all allowed arguments.
+--	@return {bool} `success` Was the validation successful?
+--	@return {string} `fail_arg` Which arg caused the validation to fail, if any?
+function validation.named_args(args, named_args)
+	local named_args2 = {}
+	for _, value in ipairs(named_args) do
+		named_args2[value] = true
+	end
+	for key in pairs(args) do
+		if type(key) ~= "number" and not named_args2[key] then
+			return false, key
+		end
+	end
+
+	return true
+end
+
+error('Module:Validation is not meant to be invoked directly')
+
+return validation

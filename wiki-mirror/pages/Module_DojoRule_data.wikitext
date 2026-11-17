@@ -1,0 +1,47 @@
+---	Data for [[Module:DojoRule]].
+--
+--	@author [[User:Novastrala|Novastrala]]
+
+-- data is in resLocal/localizable.tsv
+return {
+	["Weaken"] = {
+		ingame = "【Score Bonus: Weaken】<br> Inflict Weaken on Enemies<br>※ Earn a higher score by Cats with fewer Target types.",
+		info =   "Defeating or inflicting [[Special Abilities#Weaken|Weaken]] on enemies will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Hell Warden Emma (Uber Rare Cat)|Hell Commissioner Emma]] will give less points when weakening due to her targetting a multitude of traits, while Talented [[Bishop Cat (Rare Cat)|Sanzo Cat]] will give even more points when weakening. Unlocking his Angel talent will not decrease the amount of points he can give. The formula for bonus points is '''$1/[number of traits targeted by caster] * [number of enemies debuffed].'''",
+	},
+	["Knockback"] = {
+		ingame = "【Score Bonus: Knockback】<br>Knockback an enemy.<br>※ Earn a higher score by Cats with fewer Target types.",
+		info =   "Defeating or inflicting [[Special Abilities#Knockback|Knockback]] on enemies will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Sniper the Recruit (Super Rare Cat)|Sniper the Deadeye]] will give less points when knocking enemies back due to him targetting a multitude of traits, while [[Hayabusa (Uber Rare Cat)|Akuma Hayabusa]] will give even more points when knocking enemies back. Unlocking his Target Aku Talent will not decrease the amount of points he can give. The formula for bonus points is '''2000/[number of traits targeted by caster] * [number of enemies debuffed].'''<br><br>The [[Ototo Corps|Breakerblast Cannon]]'s knockback effect will not give any points when used.",
+	},
+	["Strong (Attack)"] = {
+		ingame = "【Score Bonus: Strong Vs. (Attack)】<br>Deal increased damage on target enemies via the Strong ability.<br>*Earn a higher score by deploying Cats with fewer Target types.",
+		info =   "Defeating enemies with units that have the [[Special Abilities#Strong|Strong]] will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]] will give less points when attacking target traits due to her targetting a multitude of traits, while [[Sagat Cat (Rare Cat)|Sagat Cat CC]] will give even more points when attacking target traits.'''",
+	},
+	["Freeze"] = {
+		ingame = "【Score Bonus: Freeze】<br>Freeze an enemy.<br>※ Earn a higher score by Cats with fewer Target types.",
+		info =   "Defeating or inflicting [[Special Abilities#Freeze|Freeze]] on enemies will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Balaluga (Uber Rare Cat)|Balalan Pasalan]] will give less points when freezing due to it targetting a multitude of traits, while [[Juliet Cat (Super Rare Cat)|Juliet the Maiko]] will give even more points when freezing. The formula for bonus points is '''2500/[number of traits targeted by caster] * [number of enemies debuffed].'''",
+	},
+	["Massive Damage"] = {
+		ingame = "【Score Bonus: Massive Damage】<br> Inflict Massive damage on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.",
+		info =   "Defeating or inflicting [[Special Abilities#Massive Damage|Massive Damage]] on enemies will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[D'artanyan (Uber Rare Cat)|Meow-sketeer]] will give less points when dealing Massive Damage to target traits due to it targetting a multitude of traits, while [[Weightlifter Cat (Super Rare Cat)|Pizza Cat]] will give even more points when dealing Massive Damage. The formula for bonus points is '''1500/[number of traits targeted by caster] * [number of enemies affected].'''",
+	},
+	["Slow"] = {
+		ingame = "【Score Bonus: Slow】<br> Inflict Slow on target enemies.<br>※ Earn a higher score by Cats with fewer Target types.",
+		info =   "Defeating or inflicting [[Special Abilities#Slow|Slow]] on enemies will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Nerd Cat (Super Rare Cat)|Cyberpunk Cat]] will give less points when slowing due to it targetting a multitude of traits, while [[Vaulter Cat (Super Rare Cat)|Housewife Cat]] will give even more points when slowing. The formula for bonus points is '''2000/[number of traits targeted by caster] * [number of enemies affected].'''",
+	},
+	["Strong (Def)"] = {
+		ingame = "【Score Bonus: Strong Vs. (Def.)】<br>Take reduced damage from target enemies via the Strong ability.<br>* Earn a higher score by deploying Cats with fewer Target types.",
+		info =   "Units that have the [[Special Abilities#Strong|Strong]] ability will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Goddess of Light Sirius (Uber Rare Cat)|Goddess of Sunrise Sirius]] will give less points when defending against target traits due to her targetting a multitude of traits, while [[Sagat Cat (Rare Cat)|Sagat Cat CC]] will give even more points when defending against target traits. The formula for bonus points is '''1500/[number of traits targeted by defender] * [number of units affected].'''",
+	},
+	["Resistant"] = {
+		ingame = "【Score Bonus: Tough】<br> Take damage from target enemies via the Tough ability.<br>* Earn a higher score by deploying Cats with fewer Target types.",
+		info =   "Units that have the [[Special Abilities#Resistant|Resistant]] ability will score points and the number varies. " ..
+			"Units that target less traits overall will give more points, while units that target more traits will give less. Talents do not apply to this rule. For example, [[Miko Mitama (Uber Rare Cat)|Mitama the Oracle]] will give less points when defending against target traits due to her targetting a multitude of traits, while [[Sushi Cat (Super Rare Cat)|Roe Cat]] will give even more points when defending against target traits.'''",
+	},
+}

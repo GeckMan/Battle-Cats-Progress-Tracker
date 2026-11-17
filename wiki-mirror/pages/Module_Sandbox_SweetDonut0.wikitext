@@ -1,0 +1,111 @@
+---	Module backend of [[Template:Description]].
+--
+--	@module	Description
+--	@alias p
+--	@author [[User:SweetDonut0|SweetDonut0]]
+local p = {}
+local getArgs = require('Module:Arguments').getArgs
+
+local max_forms = 4
+local valid_vers = {
+	[""] = "English",
+	["JP"] = "Japanese",
+	["TW"] = "Taiwanese",
+	["KR"] = "Korean",
+	["Switch"] = "Switch",
+	["3DS"] = "3DS"
+}
+
+---	Simple helper function for readability
+--	@param {string} class HTML class for div
+--	@param {string} content Wikitext for the div's content
+--	@return {mw.html} A div element
+local function create_div(class, content)
+	return mw.html.create('div')
+		:addClass(class)
+		:wikitext(content)
+end
+
+---	Returns the html for a single form
+--	@param {table} args Frame args.
+--	@param {string} code Short code to distinguish versions.
+--	@param {string} suffix Suffix appended to template parameters using the version codes.
+--	@param {number} form 1-indexed form for Cats
+--	@return {mw.html}
+function p.form(args, code, suffix, form)
+	local full_suffix = form .. suffix
+	local form_grid = mw.html.create('div'):addClass('form-grid')
+		:node(create_div('unit-name', args['Name' .. full_suffix]))
+		:node(create_div('desc-label', valid_vers[code] .. ' Description'))
+		:node(create_div('desc-text', args['Desc' .. full_suffix]))
+	local translation = args['Transl' .. full_suffix]
+	if code ~= "" and translation then
+		form_grid
+			:node(create_div('desc-label', 'English Translation'))
+			:node(create_div('desc-text', translation))
+	end
+	-- image is added last for ~ usage in CSS
+	form_grid:node(create_div('unit-image', ('[[File:%s]]'):format(args['Image' .. form])))
+	return form_grid
+end
+
+---	Returns the text for a single version tab
+--	@param {table} args Frame args.
+--	@param {string} code Short code to distinguish versions.
+--	@param {string} suffix Suffix appended to template parameters using the version codes.
+--	@return {string} Wikitext of tab content
+function p.tab(args, code, suffix)
+	local wrapper = mw.html.create('div'):addClass('unit-desc-tab')
+
+	local unit_info = mw.html.create('div'):addClass('unit-info')
+		:node(create_div('unit-id', ('%s Unit #%03d'):format(args['Mode'], args['Number'])))
+		:node(create_div('unit-type', args['Type']))
+	wrapper:node(unit_info)
+
+	for form = 1, max_forms, 1 do
+		if args[('Name%d%s'):format(form, suffix)] == nil then
+			break
+		end
+		wrapper:node(p.form(args, code, suffix, form))
+	end
+	
+	return tostring(wrapper)
+end
+
+---	Returns the template text
+function p._main(args)
+	local tabs = {}
+	local suffix = ""
+	for code, full in pairs(valid_vers) do
+		if #code == 0 then
+			suffix = ""
+			code = ""
+		else
+			suffix = (" (%s)"):format(code)
+		end
+		if args["Name1" .. suffix] ~= nil then
+			table.insert(tabs, {
+				label = #code == 0 and "EN" or code,
+				content = p.tab(args, code, suffix)
+			})
+		end
+	end
+	return tostring(mw.html.create('div'):node(mw.ext.tabber.render(tabs)):addClass('unit-desc'))
+end
+
+function p.main(frame)
+	return p._main(getArgs(frame))
+end
+
+return p
+
+--[=[
+print(p._main({
+	Mode = "Cat",
+	Number = "73",
+	Type = "[[:Category:Uber Rare Cats|Uber Rare Cat]]",
+	Image1 = "Uni073 f00.png",
+	Name1 = "Oda Nobunaga",
+	Desc1 = "The manifestation of the Grudge of Nobunaga<br>from the lives of many (and one Cat) (Area Attack)<br>100% chance to Freeze Dark enemies."
+}))
+]=]

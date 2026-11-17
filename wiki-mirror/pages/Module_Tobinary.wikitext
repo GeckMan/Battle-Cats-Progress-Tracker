@@ -1,0 +1,33 @@
+---	Converts a number to binary, amount of bits can be specified
+--	@param {string | number} n
+--	@param[opt] {number} bits
+--	@return {string} Binary representation
+local function toBinary(n, bits)
+	local vals = {
+		['0'] = '0000',
+		['1'] = '0001',
+		['2'] = '0010',
+		['3'] = '0011',
+		['4'] = '0100',
+		['5'] = '0101',
+		['6'] = '0110',
+		['7'] = '0111',
+		['8'] = '1000',
+		['9'] = '1001',
+		['a'] = '1010',
+		['b'] = '1011',
+		['c'] = '1100',
+		['d'] = '1101',
+		['e'] = '1110',
+		['f'] = '1111'
+	}
+	n = ("%x"):format(n):gsub(".", vals)
+	if bits then
+		n = ("%0" .. bits .. "s"):format(n)
+			:sub(-bits)
+			:gsub(" ", "0")
+	end
+	return n
+end
+
+return toBinary

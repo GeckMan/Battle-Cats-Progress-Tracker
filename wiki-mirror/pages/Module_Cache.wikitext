@@ -1,0 +1,196 @@
+---	Module that can read and write caches of data modules.
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:Cache/storage (parent module)
+local cache = {}
+local storage = require('Module:Cache/storage')
+require('strict')
+
+---	Convert the table `t` to a bi-directional string representation
+--	@param {table} t Table to encode
+--	@return {string} Representation to store on page
+--	@warning Don't update without considering @{cache.decode}
+function cache.encode(t)
+	local repr = mw.text.jsonEncode(t)
+	-- ensure these characters don't interfere with the <pre> tags
+	repr = mw.text.encode(repr, "&<>")
+	return ("<pre>%s</pre>"):format(repr)
+end
+
+---	Convert the raw output of a cached page to a Lua table
+--	@param {string} raw Content of cache page
+--	@return {table} Parsed output of cache page
+--	@warning Don't update without considering @{cache.encode}
+function cache.decode(raw)
+	-- find any subst: bit after a span tag, else just keep as is
+	raw = raw:match("<span[^>]*>{{subst:.-|main|</span>(.*)<span.*") or raw
+	-- find content between <pre>s
+	raw = raw:match("^<pre>(.*)</pre>$")
+	raw = mw.text.decode(raw, "&<>")
+	return mw.text.jsonDecode(raw)
+end
+
+---	Test whether `stored` is outdated or fresh
+--	@param {table} stored Entry in @{storage}
+--	@return {bool} Whether or not `stored` is fresh
+--	@todo Make it so if storagePage is updated then the cache is marked as stale
+function cache.is_fresh(stored)
+	if not stored.dependencies then
+		return true
+	end
+
+	if mw.isSubsting() then
+		return false
+	end
+
+	local frame = mw.getCurrentFrame()
+	local function get_last_edit(page)
+		local lastEdit = frame
+			:callParserFunction("REVISIONTIMESTAMP", page)
+		return tonumber(lastEdit)
+	end
+
+	local lastEdit = get_last_edit(stored.page)
+	for _, page in ipairs(stored.dependencies) do
+		if get_last_edit(page) > lastEdit then
+			return false
+		end
+	end
+
+	return true
+end
+
+-- Business logic
+
+---	Return the JSON-formatted data to be put on the cache page `page`.
+--	@param {string} page Name of storage page
+--	@return {string} @{cache.encode|encoded} representation of data
+function cache.cache(page)
+	local pageCache = {}
+
+	for cached, args in pairs(storage) do
+		-- the world if Lua had a continue statement
+		if args.page == page then
+			-- add the data from the page that you are caching to the page you
+			-- want to store the cache on
+			if not args.subitems then
+				pageCache['data'] = require(cached)
+			else
+				-- traverse through subitems
+				local curTable = pageCache
+				for _, subitem in ipairs(args.subitems) do
+					if not curTable[subitem] then
+						curTable[subitem] = {}
+					end
+					curTable = curTable[subitem]
+				end
+				curTable['data'] = require(cached)
+			end
+		end
+	end
+
+	return cache.encode(pageCache)
+end
+
+--[[
+	@table loadArgs
+	@field[opt] {string} page Name of page to load data from e.g.
+	Module:Cats/data
+	@field[opt] {string} warning `mw.addWarning` message, if `""` then don't
+	warn
+	@local
+--]]
+
+---	Load the cache of the page provided
+--	@param {string | loadArgs} args
+--	@return {nil | table} Loaded content of page
+--	@note If args is just string then transform to `args = {page = args}`
+--	@todo Add `force` parameter
+function cache.load_cache(args)
+	if type(args) == "string" then
+		args = {page = args}
+	end
+
+	local stored = storage[args.page]
+
+	-- nil if dependencies were edited later than last edit
+	if not cache.is_fresh(stored) then
+		if args.warning ~= "" then
+			local warning = args.warning or
+				("%s's [[Module:Cache|cache]] may be outdated, please contact "
+				.. "an administrator (this will not affect your edit)")
+				:format(args.page)
+			mw.addWarning(warning)
+		end
+
+		return
+	end
+
+	local cachedData = cache.decode(mw.title.new(stored.page):getContent())
+	local curTable = cachedData
+	for _, subitem in ipairs(stored.subitems or {}) do
+		curTable = curTable[subitem]
+	end
+
+	return curTable['data']
+end
+
+-- Invokables
+
+---	Lists all pages that store caches
+--	@todo Priority support on storage e.g. if combos data relies on cats data
+--	then make sure it is displayed after cats
+function cache.list(frame)
+	-- list all pages as a hashmap (so no duplicates)
+	-- stores each page as true/false: false means the cache is outdated
+	local pages = {}
+	for _, stored in pairs(storage) do
+		-- obviously if it isn't fresh you don't want it to be marked as fresh
+		-- if another cache stored on the same page is fresh
+		if pages[stored.page] ~= false then
+			pages[stored.page] = cache.is_fresh(stored)
+		end
+	end
+
+	-- list all pages as bullet-point links
+	local pageList = {}
+	for page, status in pairs(pages) do
+		local statusMsg
+		if status then
+			statusMsg = mw.html.create('span')
+				:cssText('color:green')
+				:wikitext("Passed")
+		else
+			statusMsg = mw.html.create('span')
+				:cssText('color:red')
+				:wikitext("Failed")
+		end
+
+		-- putting the # in makes it so you can mass null edit easily
+		table.insert(pageList, ("*[[%s]]#(%s)"):format(page, tostring(statusMsg)))
+	end
+
+	return table.concat(pageList, "\n")
+end
+
+---	Invokable function that displays the data to be stored on the page this is
+--	called from, see [[#Usage]] for more information
+function cache.main(frame)
+	local dataCacheBase = ('{{subst:#invoke:Cache|main|</span>%s<span style="display: none">|time=%d}}')
+	local status, dataCache = pcall(cache.cache, frame:getParent():getTitle())
+
+	if not status then
+		local userError = require('Module:User error')
+		dataCache = userError(dataCache)
+	end
+
+	return dataCacheBase:format(dataCache, os.time())
+end
+
+return cache
+
+--[=[
+mw.text.jsonDecode(mw.text.jsonEncode(t))
+mw.dumpObject(a) == mw.dumpObject(b)
+mw.logObject(t)
+]=]

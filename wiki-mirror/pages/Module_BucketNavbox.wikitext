@@ -1,0 +1,46 @@
+---	Used in RANGER navboxes.
+--
+--	@author [[User:TheWWRNerdGuy|TheWWRNerdGuy]]
+local p = {}
+local ranger = require('Module:Navbox')
+local CHUNK_SIZE = 10000
+
+function p.read(frame)
+	local t = frame.args[1]
+	local tname = mw.title.new(t, 'Template').fullText
+
+	local query = mw.ext.bucket("ranger")
+		.select('text', 'chunk')
+		.where({ "page_name", tname })
+		.orderBy("chunk")
+
+	local chunks = query.run()
+	local out = {}
+	for _, chunk in ipairs(chunks) do
+		table.insert(out,chunk.text)
+	end
+
+	return table.concat(out)
+end
+
+function p.main(frame)
+	local out = ranger.main(frame)
+	-- local t = frame:getParent().args['template']
+	local t = frame.args['template']
+	local tname = mw.title.new(t, 'Template').fullText
+
+	local chunk_no = 1
+	for i = 1, #out, CHUNK_SIZE do
+		mw.ext.bucket("ranger").put({
+			template = tname,
+			chunk = chunk_no,
+			text = out:sub(i, i + CHUNK_SIZE - 1),
+		})
+		chunk_no = chunk_no + 1
+	end
+	-- chunking from https://stackoverflow.com/a/39481287
+
+	return out
+end
+
+return p

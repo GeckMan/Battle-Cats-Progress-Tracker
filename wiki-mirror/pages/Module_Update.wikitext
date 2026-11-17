@@ -1,0 +1,114 @@
+---	Module providing various functions for Update pages, as used in
+--	[[Template:Update]].
+--
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+--	@require Module:NewEnemies
+--	@require Module:NewCats
+--	@require Module:NewTrueForms
+--	@todo Perhaps something for medals?
+local p = {}
+
+---	Display new enemies
+--	@param {Frame} frame
+--	@return New enemies
+function p.enemies(frame)
+	return require("Module:NewEnemies").main(frame)
+end
+
+---	Display new cats
+--	@param {Frame} frame
+--	@return New cats
+function p.cats(frame)
+	return require("Module:NewCats").main(frame)
+end
+
+---	Display new True Forms
+--	@param {Frame} frame
+--	@return New True Forms
+function p.trueforms(frame)
+	return require("Module:NewTrueForms").main(frame)
+end
+
+---	Display new Ultra Forms
+--	@param {Frame} frame
+--	@return New Ultra Forms
+function p.ultraforms(frame)
+	frame.args.ultra = true
+	return require("Module:NewTrueForms").main(frame)
+end
+
+---	Display new talents
+--	@param {Frame} frame
+--	@return New talents
+function p.talents(frame)
+	-- bit sneaky doing the same thing as true forms for now
+	return require("Module:NewTrueForms").main(frame)
+end
+
+---	Invoke entrypoint (TO BE USED IN TEMPLATE ONLY, DO NOT INVOKE DIRECTLY)
+--	@param {Frame} frame Child frame
+function p.main(frame)
+	frame = frame:getParent()
+
+	local methodName = frame.args["mode"]:lower()
+	local method = p[methodName]
+		or error(("%s is not a valid method name!"):format(methodName))
+
+	for arg in pairs(frame.args) do
+		assert(type(arg) == "number" or arg == "mode",
+			('Argument "%s" not recognised!'):format(arg))
+	end
+
+	return method(frame)
+end
+
+return p
+
+--[==[
+print(p.enemies({"Doge", "Doge Dark", "-", "17", "Red/Black/Behemoth", "Infernal Tyrant Nyandam"}))
+
+print(p.cats({"Cat", "Starting the game", "Tricycle Cat", "{{Stamps|Tricycle Cat|Daily Bonus}}",
+	"Bahamut Cat", "[[File:Moon.png|link=Moon (Empire of Cats)]]", "Mr.", "-"}))
+
+print(p.trueforms({
+	"Rich Cat III",
+	[=[
+'''ATT:''' 9,825 → 24,565<br>
+'''DPS:''' 2,435.95 → 6,090.5<br>
+'''Attack Animation:''' 0.63s → 1.23s
+]=],
+
+	"Sniper the Recruit",
+	[=['''DPS:''' 31.88 → 46.15<br>
+'''Range:''' 1,000 → 1,200<br>
+'''TBA:''' 10.70s → 7.37s<br>
+[[File:Slow.png]] [[File:Traitlesstraiticon.png|40px]] [[File:Redtraiticon.png|40px]] [[File:Blacktraiticon.png|40px]] [[File:Floatingtraiticon.png|40px]] [[File:Angeltraiticon.png|40px]] [[File:Alientraiticon.png|40px]] [[File:Zombietraiticon.png|40px]] [[File:Relictraiticon.png|40px]] 0% → 100% for 90f<sub>3 seconds</sub>
+]=],
+}))
+
+-- print(p.ultraforms({args={
+-- 	"Windy",
+-- 	[=['''DPS:''' 9,541.18 → 11,796.36<br>
+-- '''Range:''' 450 → 510<br>
+-- '''TBA:''' 13.6s → 11s<br>
+-- '''Speed:''' 12 → 16<br>
+-- '''Attack Animation:''' 2.7s → 1.7s<br>
+-- '''Backswing:''' 1.83s → 2.33s<br>
+-- [[File:Insane damage.png|40px|link=|Insane Damage]]<br>
+-- [[File:Massive Damage.png|40px|link=|Massive Damage]] Removed
+-- ]=],
+-- }}))
+-- idk why this doesn't work
+
+print(p.talents({
+	"Kalisa",
+	[=[
+[[File:Slow.png]] Adds a 40% chance to slow [[:Category:Angel Enemies|Angels]] for 39f <sub>1.3 seconds</sub>, increases by 9f<sub>0.3 seconds</sub> per level up to a maximum of 120f<sub>4 seconds</sub><br>
+[[File:Epicability1.png]] Curse Immunity<br>
+[[File:Defenseupability.png]] Upgrades health by 2% per level up to 20%<br>
+[[File:Attackupability.png]] Upgrades attack power by 2% per level up to 20%<br>
+[[File:Movespeedupability.png]] Upgrades movement speed by 1 per level up to a maximum of 10
+]=],
+}))
+
+]==]

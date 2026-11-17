@@ -1,0 +1,5 @@
+-- format: `["oldname"] = "newname",`
+return {
+["SweetDonut0"]="Li'l Cat",
+["Unknown Cat"]="Kesalan Pasalan",
+}

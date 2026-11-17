@@ -1,0 +1,129 @@
+local p = {}
+local exclusives = {"Baby Gao","Miko Mitama","D'artanyan","Kasli the Scourge","Baby Garu","Iz the Dancer","Child of Destiny Phono","Celestial Child Luna","Squire Luno","Shadow Gao","Dark Mitama","D'arktanyan","Kasli the Bane","Dark Aegis Garu","Iz the Dancer of Grief","King of Doom Phono","Netherworld Nymph Lunacia","Lone Moon Lunos","Trixi the Revenant","Agent Staal","Koneko","Pai-Pai","Strike Unit R.E.I","Sakura Sonic","Goddess of Light Sirius","Hell Warden Emma","Princess Cat"}
+
+function p.main(frame)
+	local args = frame:getParent().args
+	local unit = require("Module:Cats").new(args[1])
+	rar = p.rar(args[1])
+	if rar == "LR" then
+		rar = "D8A56F"
+	elseif args["bg"] then
+		if string.match(args["bg"], "legend") then
+			rar = "D8A56F"
+		else
+			rar = "275A90"
+		end
+	else
+		rar = "275A90"
+	end
+	return string.format("[[%s|<span style=\"color:#%s;\">%s 🐾</span>]]",unit["link"],rar,args[1])
+end
+
+function p.starttable(frame)
+	local args = frame:getParent().args
+	if args.table then
+		if not(args.table == "end" or args.table == "mid") then
+			return("{| style=\"border:2px solid black; width:fit-content; text-align:center; border-collapse: collapse;\"")
+		end
+	else
+		return("{| style=\"border:2px solid black; width:fit-content; text-align:center; border-collapse: collapse;\"")
+	end
+end
+
+function p.row(frame)
+	local args = frame:getParent().args
+	if args.cell then
+		return string.format("| rowspan=\"2\" scope=\"col\" style=\"border-right:2px solid black; background-color:#F5F5F5; color:#000000\"| %s",args.cell)
+	end
+end
+
+function p.guaranteed(frame)
+	local args = frame:getParent().args
+	if args.guaranteed then
+		local unit = require("Module:Cats").new(tostring(args.guaranteed))
+		if qexclusive(unit) then
+			local col = "00FFFF"
+		elseif args.framebg then
+			local col = "00FF00"
+		else
+			local col = "F5F5F5"
+		end
+		return string.format("| vertical-align=\"bottom\" style=\"background-color:#%s; border-left:2px solid black; color:#000000\"| [[%s|%s]] -> %s",col,unit["link"],tostring(unit),args.cell)
+	else
+		return "| vertical-align=\"bottom\" width=\"103px\" style=\"background-color:#F5F5F5; border-left:2px solid black; color:#000000\" |  "
+	end
+end
+
+function p.endtable(frame)
+	local args = frame:getParent().args
+	if args.table then
+		if not(args.table == "start" or args.table == "mid") then
+			return("|}")
+		end
+	else
+		return("|}")
+	end
+end
+
+function p.rarity(frame)
+	local args = frame:getParent().args
+	local unit = require("Module:Cats").new(args[1]).rarity
+	return unit
+end
+
+function p.rar(unit)
+	return require("Module:Cats").new(unit).rarity
+end
+
+function p._rarity(frame)
+	local args = frame:getParent().args
+	local unit = tostring(require("Module:Cats").new(args[1]))
+		rarity = p.rarity(frame)
+			if args.bg ~= nil then
+				rarity = args.bg
+			elseif rarity == "N" then
+				rarity = "normal"
+			elseif rarity == "EX" then
+				rarity = "special"
+			elseif rarity == "RR" then
+				rarity = "rare"
+			elseif rarity == "SR" then
+				rarity = "super"
+			elseif rarity == "UR" then
+				rarity = "uber"
+			elseif rarity == "LR" then
+				rarity = "legend"
+			end
+	if qexclusive(unit) then
+		return("00FFFF")
+	elseif rarity == "rare" then
+		return("FFFFFF")
+	elseif rarity == "super" then
+		return("FFD700")
+	elseif string.match(rarity,"super") then
+		return("FFFF00")
+	elseif rarity == "uber" then
+		return("FF0000")
+	elseif string.match(rarity,"uber") then
+		return("FA8072")
+	elseif rarity == "legend" then
+		return("9400D3")
+	elseif string.match(rarity, "legend") then
+		return("7B68EE")
+	elseif rarity == "exclusive" then
+		return("00FFFF")
+	end
+	return("00FF00")
+end
+
+function qexclusive(Cat)
+	Cat = require("Module:Cats").new(Cat)
+	Cat = tostring(Cat:normal())
+	for i, _ in ipairs(exclusives) do
+		if exclusives[i] == Cat then
+			return(true)
+		end
+	end
+end
+
+return p

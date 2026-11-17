@@ -1,0 +1,40 @@
+---	Number formatting functions.
+--
+--	@script formatnum
+--	@author [[User:Jenny on Wiki|Jenny on Wiki]]
+require('strict')
+local formatnum = {}
+
+local lang = mw.language.getContentLanguage()
+
+---	Format an integer.
+--	@param {number} number Number to format.
+function formatnum.formatInt(number)
+	return lang:formatNum(number)
+end
+
+---	Format a floating-point number.
+--	@param {number} number Number to format.
+--	@param {number} prec Decimal precision.
+-- @usage
+-- assert(p.formatFloat(3.0, 2) == "3");
+-- assert(p.formatFloat(3.1, 2) == "3.1");
+-- assert(p.formatFloat(3.11, 2) == "3.11");
+-- assert(p.formatFloat(3.111, 2) == "3.11");
+-- assert(p.formatFloat(3.199, 2) == "3.2");
+-- assert(p.formatFloat(3.000001, 2) == "3");
+-- assert(p.formatFloat(1959.9999999999998, 2) == "1,960");
+-- -- These might be unexpected
+-- assert(p.formatFloat(3.195, 2) == "3.19");
+-- assert(p.formatFloat(3.185, 2) == "3.19");
+-- -- This still works
+-- assert(p.formatFloat(3.1951, 2) == "3.2");
+function formatnum.formatFloat(number, prec)
+	local format = ("%%.%df"):format(prec)
+	number = tonumber(format:format(number))
+	-- crude rounding operation
+	number = lang:formatNum(number)
+	return number
+end
+
+return formatnum

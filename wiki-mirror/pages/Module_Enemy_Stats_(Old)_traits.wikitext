@@ -1,0 +1,28 @@
+-- To add or change something:
+-- the key is the trait's name name (e.g. Red in |element = Red),
+-- Icon is the image file (minus File:) that is their icon
+--- Leave blank (i.e. '' if none exists)
+-- Category is the name of the category (e.g. Traitless in Category:Traitless Enemies)
+--- Cat2 is for traits that must overlap with another, e.g. how Starred and
+--- Unstarred Aliens are both subtypes of Alien, but also have their own categories
+return {
+    ["Traitless"]       =       {["Icon"] = 'Traitlesstraiticon.png',       ["Category"] = 'Traitless'                              },
+    ["Red"]             =       {["Icon"] = 'Redtraiticon.png',             ["Category"] = 'Red'                                    },
+    ["Floating"]        =       {["Icon"] = 'Floatingtraiticon.png',        ["Category"] = 'Floating'                               },
+    ["Black"]           =       {["Icon"] = 'Darktraiticon.png',            ["Category"] = 'Dark'                                   },
+    ["Dark"]            =       {["Icon"] = 'Darktraiticon.png',            ["Category"] = 'Dark'                                   },
+    ["Metal"]           =       {["Icon"] = 'Metaltraiticon.png',           ["Category"] = 'Metal'                                  },
+    ["Angel"]           =       {["Icon"] = 'Angeltraiticon.png',           ["Category"] = 'Angel'                                  },
+    ["Alien"]           =       {["Icon"] = 'Alientraiticon.png',           ["Category"] = 'Unstarred Alien', ["Cat2"] = 'Alien'    },
+    ["StarredAlien"]    =       {["Icon"] = 'StarredAlientraiticon.png',    ["Category"] = 'Starred Alien', ["Cat2"] = 'Alien'      },
+    ["Zombie"]          =       {["Icon"] = 'Zombietraiticon.png',          ["Category"] = 'Zombie'                                 },
+    ["Relic"]           =       {["Icon"] = 'Relictraiticon.png',           ["Category"] = 'Relic'                                  },
+    ["Aku"]             =       {["Icon"] = 'Akutraiticon.png',             ["Category"] = 'Aku'                                    },
+    ["Colossus"]        =       {["Icon"] = 'Colossustraiticon.png',        ["Category"] = 'Colossus'                               },
+    ["EVA Angel"]       =       {["Icon"] = 'EvaAngeltraiticon.png',        ["Category"] = 'EVA Angel'                              },
+    ["Witch"]           =       {["Icon"] = 'Witchtraiticon.png',           ["Category"] = 'Witch'                                  },
+    ["Typeless"]        =       {["Icon"] = 'Typelesstraiticon.png',        ["Category"] = 'Typeless'                               },
+    ["Behemoth"]        =       {["Icon"] = 'Beasttraiticon.png',           ["Category"] = 'Behemoth'                               },
+    ["Sage"]        	=       {["Icon"] = 'Sagetraiticon.png',            ["Category"] = 'Sage'                                   },
+    ["Supervillain"]    =       {["Icon"] = 'Supervillaintraiticon.png',    ["Category"] = 'Supervillain'                           },
+}

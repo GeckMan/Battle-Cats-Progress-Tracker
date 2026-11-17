@@ -1,0 +1,23 @@
+{{Documentation}}
+This module exists to standardise getting the names of renamed cats, and comes with logging to bucket and adding a page warning when previewing.
+
+== Usage ==
+<syntaxhighlight lang="lua">
+-- top-level declaration
+local get_renamed = require('Module:Get renamed cat').get_renamed_unit_data
+
+	-- inside a function
+	local name = ...
+	---@type BucketData?
+	local data = some_func(name)
+	if not data then
+		data = get_renamed(name)
+	end
+	local cat = Cat.from_bucket_data(data)
+</syntaxhighlight>
+
+=== Legacy ===
+There is a legacy function <code>p.get_renamed_unit(renames, names)</code>. Probably don't use this.
+
+== Data ==
+Renames are editable at [[Module:Cat renames/names]]. [[Module:Cat renames]] handles translating that format to bucket data.

@@ -1,0 +1,5 @@
+local p = {}
+function p.helloworld(frame)
+	return "Hello, " .. frame.args[1]
+end
+return p

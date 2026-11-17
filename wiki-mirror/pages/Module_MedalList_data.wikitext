@@ -1,0 +1,44 @@
+---	Data module for [[Module:MedalList]].
+--
+--	@submodule data
+--	@author [[User:SweetDonut0|SweetDonut0]]
+--	@require Module:CSV
+--	@require Module:MedalList/medalorder.tsv (parent module)
+local csv = require('Module:CSV')
+
+---	@table medalData
+--	@field {medalOrder} order
+--	@field {medalRarities} rarity
+local data = {
+	order = {},
+	rarity = {}
+}
+
+--[[
+	Contains the name of each medal in order.
+	@local
+	@table medalOrder
+	@field order ([string, string][])
+--]]
+
+--[[
+	Maps a medal name to its display rarity
+	@local
+	@table medalRarities
+	@field rarity ([@{string} -> @{number}])
+	@usage
+local builder = "Builder of Empires"
+assert(medalRarity[builder] == 0)
+--]]
+
+local delim = { delim = '\t', quote = '~', escape = '~' }
+local medalOrder = csv.from_page('Module:MedalList/medalorder.tsv', delim)
+-- Remove header
+medalOrder()
+
+for pair in medalOrder do
+	table.insert(data.order, pair[1])
+	data.rarity[pair[1]] = tonumber(pair[2])
+end
+
+return data

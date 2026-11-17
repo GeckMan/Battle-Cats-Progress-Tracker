@@ -1,0 +1,12 @@
+{{Documentation}}
+Invoked with [[User:CursedXyster/StageList]].<br>
+Creates a list of stages (like in the Encounters section of most enemy pages), but has magnifications to go alongside them.
+
+Formatted like so:
+ <nowiki>{{User:CursedXyster/StageList|enemy|chapter1|stage1|mag1|chapter2|stage2Link*stage2Display|mag2|…}}</nowiki>
+Since vertical bars would disrupt the arguments, use asterisks instead if you want to have the linked page display a different name.
+
+
+For example:
+ <nowiki>{{User:CursedXyster/StageList|Fallen Bear|Stage 19|Sahara (Aku Realm)*Sahara|100|Stage 40-5|Fishermen On Strike|200}}</nowiki>
+{{User:CursedXyster/StageList|Fallen Bear|Stage 19|Sahara (Aku Realm)*Sahara|100|Stage 40-5|Fishermen On Strike|200}}
