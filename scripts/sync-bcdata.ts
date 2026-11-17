@@ -247,7 +247,7 @@ async function main() {
     // BCData can also ship a collab's units BEFORE it has run in EN (PAC-MAN):
     // hide those until the wiki's event page shows an EN date. Self-healing —
     // syncUnits() resets the flag every run, so nothing to un-hide later.
-    await hideUnreleasedEventUnits(prisma, process.env.WIKI_MIRROR_DIR);
+    await hideUnreleasedEventUnits(prisma, process.env.WIKI_MIRROR_DIR, new Set(Object.keys(UNIT_NAME_OVERRIDES).map(Number)));
 
     // Fetched once and shared by both collab detection and gacha set
     // assignment below — both need the same rowIndex -> resolved-name map
@@ -1510,7 +1510,15 @@ async function syncEventSets(prisma: PrismaClient, dataLocal: string, bcuNames: 
       // member, will have a different member set and still get flagged
       // below for a fresh look.
       const memberKey = [...memberIds].sort((a, b) => a - b).join(",");
-      if (KNOWN_HARMLESS_FAMILY_CONFLICTS.has(memberKey)) {
+      // Also match on just the members that HAVE a set name: a family can contain
+      // extra unlabeled filler units (as the 9th-anniversary-split family does),
+      // which makes the full member list differ from the reviewed conflicting trio.
+      const namedKey = members
+        .filter((m: any) => m.setName)
+        .map((m: any) => m.unitNumber)
+        .sort((a: number, b: number) => a - b)
+        .join(",");
+      if (KNOWN_HARMLESS_FAMILY_CONFLICTS.has(memberKey) || KNOWN_HARMLESS_FAMILY_CONFLICTS.has(namedKey)) {
         suppressedKnownHarmless++;
         continue;
       }

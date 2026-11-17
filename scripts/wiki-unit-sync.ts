@@ -253,15 +253,18 @@ export async function syncUnitsFromWikiMirror(prisma: any, mirrorDir: string | u
  * (excludeFromCollection = true: out of listings, totals and completion %) while
  * their collab event isn't released in EN.
  *
- * Self-healing without tracking: syncUnits() resets excludeFromCollection on every
- * run (only the Spirit-of-X overrides stay true), and this runs after it, so the
- * moment the wiki shows an EN date the unit simply isn't re-hidden next run.
+ * Self-healing: units BCData has get excludeFromCollection reset by syncUnits() each
+ * run, so they simply aren't re-hidden once the wiki shows an EN date. Units that
+ * only exist because of the wiki-driven add (not in BCData yet) are never reset by
+ * syncUnits(), so this function also UN-hides any hidden unit (other than
+ * protectedNumbers, the Spirit-of-X entries) whose collab event the wiki now
+ * explicitly says is released in EN.
  * Guards against wiki staleness hiding real units: only RECENT units (added in a
  * version released internationally within the last 180 days), only when the event
  * page says TBA/future explicitly, and at most MAX_HIDES per run.
  */
 const MAX_HIDES = 12;
-export async function hideUnreleasedEventUnits(prisma: any, mirrorDir: string | undefined): Promise<number> {
+export async function hideUnreleasedEventUnits(prisma: any, mirrorDir: string | undefined, protectedNumbers: Set<number> = new Set()): Promise<number> {
   const pagesDir = mirrorDir ? join(mirrorDir, "pages") : "";
   if (!mirrorDir || !existsSync(pagesDir)) return 0;
   const pages = readUnitPages(pagesDir);
@@ -288,5 +291,21 @@ export async function hideUnreleasedEventUnits(prisma: any, mirrorDir: string | 
     console.log(`  ℹ Hidden until released in EN — ${h.label}`);
   }
   console.log(`  Units hidden as not-yet-released in EN: ${hide.length}`);
+
+  // Un-hide: hidden units whose every linked collab event is now explicitly released.
+  const hidden: any[] = await prisma.unit.findMany({ where: { excludeFromCollection: true }, select: { unitNumber: true, name: true } });
+  let unhidden = 0;
+  for (const u of hidden) {
+    if (protectedNumbers.has(u.unitNumber)) continue;
+    const p = pages.filter((x) => x.id === u.unitNumber && !x.regional).find((x) => norm(x.names[0]) === norm(u.name));
+    if (!p) continue;
+    const events = p.eventLinks.filter((l) => /Collaboration Event$/.test(l)).map((l) => eventReleaseStatus(l, pagesDir, redirects, today));
+    if (events.length && events.every((e) => e.status === "released")) {
+      await prisma.unit.update({ where: { unitNumber: u.unitNumber }, data: { excludeFromCollection: false } });
+      console.log(`  ℹ Un-hidden — #${u.unitNumber} ${u.name}: ${events[0].reason}`);
+      unhidden++;
+    }
+  }
+  if (unhidden) console.log(`  Units un-hidden (now released in EN): ${unhidden}`);
   return hide.length;
 }
