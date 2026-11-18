@@ -36,7 +36,9 @@ export default function AboutClient({ children, loggedIn = false }: { children: 
   }, [alreadyUnleashed, loggedIn]);
 
   return (
-    <div ref={containerRef} style={{ position: "relative" }}>
+    // Same page padding as the other app pages (pt-16 clears the mobile menu
+    // button, which used to overlap the title), and a readable line length.
+    <div ref={containerRef} className="p-4 pt-16 md:p-8 max-w-3xl" style={{ position: "relative" }}>
       {children}
 
       {/* Easter egg button — always at the bottom of the About content */}
