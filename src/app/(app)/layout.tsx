@@ -5,6 +5,8 @@ import AppSidebar from "@/components/AppSidebar";
 import RightPanelWrapper from "@/components/RightPanelWrapper";
 import { ThemeProvider, type Theme } from "@/lib/theme-context";
 import NervScanLine from "@/components/NervScanLine";
+import WhatsNew from "@/components/WhatsNew";
+import { CURRENT_UPDATE } from "@/lib/whats-new";
 
 export default async function AppGroupLayout({ children }: { children: React.ReactNode }) {
   const session = await getServerSession(authOptions);
@@ -13,12 +15,18 @@ export default async function AppGroupLayout({ children }: { children: React.Rea
 
   // Fetch user's theme preference for server-side initial render
   let initialTheme: Theme = "default";
+  let showWhatsNew = false;
   if (userId) {
-    const user = await prisma.user.findUnique({
+    // Same lookup as before, plus the one-time "What's new" check (src/lib/whats-new.ts).
+    const user = (await (prisma as any).user.findUnique({
       where: { id: userId },
-      select: { theme: true },
-    });
+      select: { theme: true, seenUpdateId: true, createdAt: true },
+    })) as { theme: string | null; seenUpdateId: string | null; createdAt: Date } | null;
     if (user?.theme === "nerv") initialTheme = "nerv";
+    showWhatsNew =
+      !!user &&
+      user.seenUpdateId !== CURRENT_UPDATE.id &&
+      user.createdAt < new Date(CURRENT_UPDATE.releasedAt); // brand-new accounts skip it
   }
 
   return (
@@ -31,6 +39,7 @@ export default async function AppGroupLayout({ children }: { children: React.Rea
           {children}
         </main>
         {userId && <RightPanelWrapper currentUserId={userId} currentUserRole={userRole} />}
+        {showWhatsNew && <WhatsNew update={CURRENT_UPDATE} />}
       </div>
       <NervScanLine />
     </ThemeProvider>

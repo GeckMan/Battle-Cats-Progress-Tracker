@@ -52,7 +52,9 @@ export default async function AboutPage() {
           </p>
           <p className="text-gray-300 text-sm leading-relaxed">
             You can track your Story, Legend, Medals, Milestones, and Unit Collection, add friends,
-            and compare where you both stand. More features are in the works.
+            and compare where you both stand. Game data updates automatically from the game files and
+            the Battle Cats Wiki, so new cats and chapters show up soon after they&apos;re released in
+            English. More features are in the works.
           </p>
         </section>
 
@@ -72,7 +74,7 @@ export default async function AboutPage() {
             </li>
             <li className="flex gap-2">
               <span className="text-gray-500">&rarr;</span>
-              <span><strong className="text-gray-100">Medals</strong> &mdash; see all Meow Medals and mark which ones you&apos;ve earned, with auto-sync from your story and legend progress</span>
+              <span><strong className="text-gray-100">Medals</strong> &mdash; see all Meow Medals and mark which ones you&apos;ve earned (press and hold on a phone to see what each one is for), with auto-sync from your story and legend progress</span>
             </li>
             <li className="flex gap-2">
               <span className="text-gray-500">&rarr;</span>
@@ -88,11 +90,15 @@ export default async function AboutPage() {
             </li>
             <li className="flex gap-2">
               <span className="text-gray-500">&rarr;</span>
-              <span><strong className="text-gray-100">Social</strong> &mdash; add friends, view their profiles, compare your progress side by side, and browse their unit collection</span>
+              <span><strong className="text-gray-100">Social</strong> &mdash; add friends, view their profiles, compare your progress side by side, and browse their unit collection. Set your progress to Private any time to hide it, even from friends</span>
             </li>
             <li className="flex gap-2">
               <span className="text-gray-500">&rarr;</span>
               <span><strong className="text-gray-100">Mobile Support</strong> &mdash; fully responsive layout with a hamburger menu, optimized grids, and touch-friendly controls</span>
+            </li>
+            <li className="flex gap-2">
+              <span className="text-gray-500">&rarr;</span>
+              <span><strong className="text-gray-100">Backup &amp; Restore</strong> &mdash; export all your progress to a file and import it again from Settings</span>
             </li>
           </ul>
         </section>
@@ -108,8 +114,12 @@ export default async function AboutPage() {
             <strong className="text-gray-200">bvg</strong>,{" "}
             <strong className="text-gray-200">JSDPLAYSBCEN</strong>,{" "}
             <strong className="text-gray-200">mranimemeboi</strong>,{" "}
-            <strong className="text-gray-200">HexagonForce</strong>, and{" "}
-            <strong className="text-gray-200">Setredid</strong>{" "}
+            <strong className="text-gray-200">HexagonForce</strong>,{" "}
+            <strong className="text-gray-200">Setredid</strong>,{" "}
+            <strong className="text-gray-200">shroomp</strong>,{" "}
+            <strong className="text-gray-200">warhammer775ig</strong>,{" "}
+            <strong className="text-gray-200">mingq</strong>, and{" "}
+            <strong className="text-gray-200">thefigg88</strong>{" "}
             for flagging issues on the site and on Reddit. If you spot something off, let us know.
             It helps everyone.
           </p>
@@ -133,6 +143,29 @@ export default async function AboutPage() {
             Changelog
           </h2>
 
+          <ChangelogEntry
+            version="1.4"
+            date="November 18, 2026"
+            items={[
+              "Faster site: one background check instead of three, Unit filters switch instantly (the catalog loads once), and unit images are served as static files",
+              "Phone layouts: Legend and Story show one saga/arc at a time with full names and every crown button; dashboard labels no longer cut off; Unit filters sit behind a Filters button",
+              "Undo for bulk unit changes (and a confirmation before clearing a large selection); failed saves on Story, Legend and Medals now show a message and roll back",
+              "Press and hold a medal on a phone to see its name and what it's for",
+              "Game data now also syncs from the Battle Cats Wiki (mirrored every other day): new English units, True/Ultra Forms and Zero Legends chapters appear even before the game-data dump catches up, units from collabs that haven't run in English yet stay hidden until they do, and \"How to Obtain\" and set names follow the wiki",
+              "Fixes from that sync: Ryuichi, Hare of Inaba, Zero Legends 36\u201337, Voli's Ultra Form, Akechi Mitsuhide's True Form, Nekoluga's evolved name, Nyanko Rangers / Download Celebration! banners, merged duplicate seasonal sets",
+              "Privacy: Private progress is now hidden everywhere (compare pages and the activity feed included), and you can remove friends or cancel friend requests",
+              "Chat badge no longer shows 99+ on every login, wrong passwords show a message, and the NERV theme's fonts load again",
+              "Accessibility: visible keyboard focus in both themes, screen-reader labels, brighter low-contrast text, and support for your device's reduce-motion setting",
+            ]}
+          />
+          <ChangelogEntry
+            version="1.3"
+            date="October 2026"
+            items={[
+              "Cut background requests so the site stays within its hosting limits (it briefly went offline in October)",
+              "Data fixes from player reports: Burgle Boss Cat is obtainable again, festival banner tags corrected, duplicate Fate and World Trigger collab entries merged, base Rare/Super Rare cats removed from special gacha filters",
+            ]}
+          />
           <ChangelogEntry
             version="1.2"
             date="July 21, 2026"
@@ -268,7 +301,8 @@ export default async function AboutPage() {
               for maintaining it.
             </p>
             <p>
-              Unit sprites and medal artwork are sourced from the{" "}
+              Unit sprites, medal artwork, and newer units, forms and &ldquo;How to Obtain&rdquo; details
+              come from the{" "}
               <a
                 href="https://battlecats.miraheze.org/wiki/Battle_Cats_Wiki"
                 target="_blank"
@@ -277,7 +311,8 @@ export default async function AboutPage() {
               >
                 Battle Cats Wiki
               </a>
-              .
+              , which we mirror every other day with Miraheze&apos;s permission. Thanks to the wiki&apos;s
+              editors for keeping it current, and to Jenny_on_Wiki for helping set that up.
             </p>
             <p>
               The Battle Cats is developed and published by{" "}

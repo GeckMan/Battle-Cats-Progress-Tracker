@@ -89,6 +89,8 @@ model User {
   // message ever posted ("99+" on every login). Null = never set (initialized on first check).
   chatLastSeenAt     DateTime?
   activityLastSeenAt DateTime?
+  // Id of the last "What's new" announcement this user dismissed (src/lib/whats-new.ts).
+  seenUpdateId       String?
   createdAt       DateTime  @default(now())
   updatedAt    DateTime @updatedAt
 

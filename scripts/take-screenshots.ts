@@ -86,6 +86,17 @@ async function run(browser: Browser) {
       await Promise.all([page.waitForURL(/\/dashboard/, { timeout: 30000 }).catch(() => {}), page.click('form button')]);
       if (!/\/dashboard/.test(page.url())) { console.log(`  ⚠ login did not reach /dashboard (at ${page.url()})`); await ctx.close(); continue; }
 
+      // One-time "What's new" dialog: photograph it if it's showing, then dismiss it
+      // so it doesn't cover the page shots (dismissing marks it seen for the test account).
+      await settle(page);
+      const gotIt = page.getByRole("button", { name: "Got it" });
+      if (await gotIt.count()) {
+        await page.screenshot({ path: join(OUT, `${tag}__whats_new.png`) });
+        await gotIt.first().click().catch(() => {});
+        await page.waitForTimeout(800);
+        console.log(`  ${tag}__whats_new.png`);
+      }
+
       for (const p of APP_PAGES) if (want(p)) await shoot(page, p, `${tag}__${slug(p)}`);
 
       // Right panel (activity / chat) open on the dashboard.
