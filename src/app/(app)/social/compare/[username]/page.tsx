@@ -192,13 +192,13 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
             ← Back to Social
           </Link>
           <h1 className="text-2xl font-semibold text-gray-100">
-            {myLabel} <span className="text-gray-600 font-normal">vs</span> {theirLabel}
+            {myLabel} <span className="text-gray-500 font-normal">vs</span> {theirLabel}
           </h1>
           <div className="mt-1.5 flex gap-3 text-xs">
             <span className={myAhead > theirAhead ? "text-amber-400 font-semibold" : "text-gray-500"}>
               {myLabel}: leading in {myAhead}/4
             </span>
-            <span className="text-gray-700">·</span>
+            <span className="text-gray-500">·</span>
             <span className={theirAhead > myAhead ? "text-amber-400 font-semibold" : "text-gray-500"}>
               {theirLabel}: leading in {theirAhead}/4
             </span>
@@ -264,7 +264,7 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
               <div className="col-span-1">#</div>
               <div className="col-span-4">Subchapter</div>
               <div className="col-span-3 text-center">{myLabel}</div>
-              <div className="col-span-1 text-center text-gray-700">vs</div>
+              <div className="col-span-1 text-center text-gray-500">vs</div>
               <div className="col-span-3 text-center">{theirLabel}</div>
             </div>
 
@@ -282,7 +282,7 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
                         theyAhead ? "bg-blue-950/20  hover:bg-blue-950/30"  :
                                     "hover:bg-gray-950"}`}
                   >
-                    <div className="col-span-1 text-gray-600 text-xs">{r.sortOrder}</div>
+                    <div className="col-span-1 text-gray-500 text-xs">{r.sortOrder}</div>
                     <div className="col-span-4 text-gray-300 truncate">{r.name}</div>
 
                     {/* My side */}
@@ -299,7 +299,7 @@ export default async function ComparePage({ params }: { params: Promise<{ userna
                     <div className="col-span-1 flex items-center justify-center">
                       {iAhead    && <span className="text-xs text-amber-500 font-semibold">▲{r.myCrown - r.theirCrown}</span>}
                       {theyAhead && <span className="text-xs text-blue-400  font-semibold">▼{r.theirCrown - r.myCrown}</span>}
-                      {tied      && <span className="text-xs text-gray-700">=</span>}
+                      {tied      && <span className="text-xs text-gray-500">=</span>}
                     </div>
 
                     {/* Their side */}
@@ -356,7 +356,7 @@ function HeadToHeadCard({
             {iWin ? `▲ +${delta}%` : `▼ ${delta}%`}
           </span>
         )}
-        {delta === 0 && <span className="text-xs text-gray-600">Tied</span>}
+        {delta === 0 && <span className="text-xs text-gray-500">Tied</span>}
       </div>
 
       {/* My bar */}
@@ -404,5 +404,5 @@ function StatusBadge({ status }: { status: string }) {
     return <span className="text-xs rounded-full px-2 py-0.5 bg-amber-500/20 border border-amber-700 text-amber-300 whitespace-nowrap">Completed</span>;
   if (status === "IN_PROGRESS")
     return <span className="text-xs rounded-full px-2 py-0.5 bg-amber-950/50 border border-amber-900 text-amber-600 whitespace-nowrap">In progress</span>;
-  return <span className="text-xs rounded-full px-2 py-0.5 bg-gray-900 border border-gray-800 text-gray-600 whitespace-nowrap">Not started</span>;
+  return <span className="text-xs rounded-full px-2 py-0.5 bg-gray-900 border border-gray-800 text-gray-500 whitespace-nowrap">Not started</span>;
 }

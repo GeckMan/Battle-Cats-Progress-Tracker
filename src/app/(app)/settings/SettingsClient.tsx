@@ -71,7 +71,7 @@ function ProfilePanel({
       <Field label="Username">
         <div className="px-3 py-2 rounded border border-gray-800 bg-gray-950 text-gray-500 text-sm">
           {username}
-          <span className="ml-2 text-xs text-gray-700">(cannot be changed)</span>
+          <span className="ml-2 text-xs text-gray-500">(cannot be changed)</span>
         </div>
       </Field>
 
@@ -83,7 +83,7 @@ function ProfilePanel({
           onChange={(e) => setDisplayName(e.target.value)}
           maxLength={40}
         />
-        <p className="text-xs text-gray-600 mt-1">Shown on your profile and in friend lists. Max 40 characters.</p>
+        <p className="text-xs text-gray-500 mt-1">Shown on your profile and in friend lists. Max 40 characters.</p>
       </Field>
 
       <Field label="Email">
@@ -94,7 +94,7 @@ function ProfilePanel({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
         />
-        <p className="text-xs text-gray-600 mt-1">
+        <p className="text-xs text-gray-500 mt-1">
           Optional, not shown publicly. Password reset is not built yet but your email will be used for it when it is.
         </p>
       </Field>
@@ -222,8 +222,8 @@ function PrivacyPanel({
           <option value="FRIENDS">Friends only - only accepted friends can see it</option>
           <option value="PRIVATE">Private - only you can see it</option>
         </select>
-        <p className="text-xs text-gray-600 mt-1">
-          Controls who can see your story, legend, and medal progress. Profile access always requires being friends first anyway.
+        <p className="text-xs text-gray-500 mt-1">
+          Controls who can see your units, story, legend and medal progress and your friend-activity updates. Only accepted friends can ever see them; Private hides them from friends too. Your username and chat messages are visible to everyone in site chat.
         </p>
       </Field>
 
@@ -453,11 +453,14 @@ function Panel({ title, children }: { title: string; children: React.ReactNode }
 }
 
 function Field({ label, children }: { label: string; children: React.ReactNode }) {
+  // Wrapping the control in the <label> associates the two (the label used to be a
+  // sibling with no htmlFor, so screen readers announced the inputs unlabelled and
+  // clicking the label didn't focus the field).
   return (
-    <div className="space-y-1">
-      <label className="block text-sm text-gray-400">{label}</label>
+    <label className="block space-y-1">
+      <span className="block text-sm text-gray-400">{label}</span>
       {children}
-    </div>
+    </label>
   );
 }
 

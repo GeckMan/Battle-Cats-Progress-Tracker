@@ -319,7 +319,7 @@ function ChangelogEntry({
       <ul className="space-y-1">
         {items.map((item, i) => (
           <li key={i} className="flex gap-2 text-sm text-gray-400 leading-relaxed">
-            <span className="text-gray-600 mt-0.5 flex-shrink-0">&bull;</span>
+            <span className="text-gray-500 mt-0.5 flex-shrink-0">&bull;</span>
             <span>{item}</span>
           </li>
         ))}

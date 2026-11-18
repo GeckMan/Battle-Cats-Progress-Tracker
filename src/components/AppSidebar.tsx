@@ -32,6 +32,14 @@ export default function AppSidebar({ loggedIn = true }: { loggedIn?: boolean }) 
     setMobileOpen(false);
   }, [pathname]);
 
+  // Escape closes the mobile menu
+  useEffect(() => {
+    if (!mobileOpen) return;
+    const onKey = (e: KeyboardEvent) => { if (e.key === "Escape") setMobileOpen(false); };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [mobileOpen]);
+
   // Prevent body scroll when mobile menu is open
   useEffect(() => {
     if (mobileOpen) {
@@ -134,11 +142,12 @@ function NervSidebarContent({ pathname, pendingRequests }: { pathname: string; p
       {/* Nav links */}
       <nav style={{ flex: 1, padding: "6px 0", overflowY: "auto" }}>
         {NAV_ITEMS.map((item) => {
-          const active = pathname === item.href;
+          const active = pathname === item.href || pathname.startsWith(item.href + "/");
           return (
             <Link
               key={item.href}
               href={item.href}
+              aria-current={active ? "page" : undefined}
               className={`nerv-nav-link ${active ? "active" : ""}`}
             >
               <span className="led green" style={{ opacity: active ? 1 : 0.2 }} />
@@ -204,7 +213,7 @@ function DefaultSidebarContent({ pathname, pendingRequests }: { pathname: string
         <div className="text-amber-400 font-bold text-sm tracking-widest uppercase">
           Battle Cats
         </div>
-        <div className="text-gray-600 text-xs mt-0.5">Progress Tracker</div>
+        <div className="text-gray-500 text-xs mt-0.5">Progress Tracker</div>
       </div>
 
       {/* Main nav */}
@@ -213,7 +222,7 @@ function DefaultSidebarContent({ pathname, pendingRequests }: { pathname: string
           <NavLink
             key={item.href}
             href={item.href}
-            active={pathname === item.href}
+            active={pathname === item.href || pathname.startsWith(item.href + "/")}
             icon={item.icon}
             badge={item.href === "/social" ? pendingRequests : 0}
           >
@@ -233,7 +242,7 @@ function DefaultSidebarContent({ pathname, pendingRequests }: { pathname: string
           onClick={() => signOut({ callbackUrl: "/login" })}
           className="w-full flex items-center gap-3 px-3 py-2 rounded text-left text-sm text-gray-500 hover:bg-gray-900 hover:text-gray-200 transition-colors"
         >
-          <span className="text-gray-600 flex-shrink-0">
+          <span className="text-gray-500 flex-shrink-0">
             <IconLogout />
           </span>
           Logout
@@ -261,13 +270,14 @@ function NavLink({
   return (
     <Link
       href={href}
+      aria-current={active ? "page" : undefined}
       className={`flex items-center gap-3 px-3 py-2 rounded text-sm transition-colors ${
         active
           ? "bg-amber-950 text-amber-200 border border-amber-800"
           : "text-gray-400 border border-transparent hover:bg-gray-900 hover:text-gray-200"
       }`}
     >
-      <span className={`flex-shrink-0 ${active ? "text-amber-400" : "text-gray-600"}`}>
+      <span className={`flex-shrink-0 ${active ? "text-amber-400" : "text-gray-500"}`}>
         {icon}
       </span>
       <span className="flex-1">{children}</span>

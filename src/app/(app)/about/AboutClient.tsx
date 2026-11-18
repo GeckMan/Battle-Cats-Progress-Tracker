@@ -60,7 +60,7 @@ export default function AboutClient({ children, loggedIn = false }: { children: 
               Recall the Cat
             </button>
             {catCount !== null && catCount > 0 && (
-              <p className="text-center text-xs text-gray-600">
+              <p className="text-center text-xs text-gray-500">
                 {catCount === 1
                   ? "You are the first to unleash the cat."
                   : `${catCount} players have unleashed the cat.`}

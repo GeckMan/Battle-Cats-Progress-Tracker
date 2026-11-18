@@ -58,3 +58,32 @@ body {
   from { transform: scale(1); }
   to { transform: scale(1.05); }
 }
+
+/* ── Keyboard focus ring (default theme) ─────────────────────────────────
+   Many controls use focus:outline-none for mouse users; this restores a
+   visible ring for keyboard navigation only (:focus-visible). NERV overrides
+   it with its own ring in nerv-theme.css. */
+a:focus-visible,
+button:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+[role="button"]:focus-visible,
+[role="checkbox"]:focus-visible,
+input[type="checkbox"]:focus-visible {
+  outline: 2px solid #f59e0b; /* amber-500 */
+  outline-offset: 2px;
+}
+
+/* ── Reduced motion ──────────────────────────────────────────────────────
+   Respect the OS "reduce motion" setting everywhere (previously only the NERV
+   scan line did): slide-ins, pulsing badges, long-press scale, smooth scroll. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -4,6 +4,7 @@ import { useEffect, useState, useCallback, useRef } from "react";
 import Link from "next/link";
 import { useTheme } from "@/lib/theme-context";
 import { useVisibleInterval } from "@/lib/use-visible-interval";
+import { scrollBehavior } from "@/lib/motion";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    RightPanel — sliding drawer on the right edge with Activity + Chat tabs
@@ -447,7 +448,7 @@ function ActivityTab({ scope }: { scope: "friends" | "global" }) {
         {defaultHeader}
         <div className="p-6 text-center">
           <div className="text-gray-500 text-sm">No recent activity.</div>
-          <div className="text-gray-600 text-xs mt-1">Updates appear when you or friends log progress.</div>
+          <div className="text-gray-500 text-xs mt-1">Updates appear when you or friends log progress.</div>
         </div>
       </div>
     );
@@ -660,7 +661,7 @@ function ActivityRow({ group, now }: { group: GroupedEntry; now: Date }) {
           {count > 1 && (
             <button
               onClick={() => setExpanded((e) => !e)}
-              className="text-[10px] text-gray-600 hover:text-gray-400 mt-0.5 transition-colors"
+              className="text-[10px] text-gray-500 hover:text-gray-400 mt-0.5 transition-colors"
             >
               {expanded ? "▾ Hide" : `▸ ${count} items`}
             </button>
@@ -669,16 +670,16 @@ function ActivityRow({ group, now }: { group: GroupedEntry; now: Date }) {
             <div className="mt-1 space-y-0.5 text-[10px] text-gray-500 max-h-32 overflow-auto">
               {group.items.map((item, i) => (
                 <div key={i}>
-                  <span className="text-gray-700">• </span>
-                  {isMixed && <span className="text-gray-600">{TYPE_ICONS[item.type] ?? "📋"} </span>}
+                  <span className="text-gray-500">• </span>
+                  {isMixed && <span className="text-gray-500">{TYPE_ICONS[item.type] ?? "📋"} </span>}
                   {item.itemName ?? "Unknown"}
-                  {item.detail && <span className="text-gray-600"> ({item.detail})</span>}
+                  {item.detail && <span className="text-gray-500"> ({item.detail})</span>}
                 </div>
               ))}
             </div>
           )}
         </div>
-        <span className="text-[10px] text-gray-600 flex-shrink-0 whitespace-nowrap mt-0.5">{time}</span>
+        <span className="text-[10px] text-gray-500 flex-shrink-0 whitespace-nowrap mt-0.5">{time}</span>
       </div>
     </div>
   );
@@ -801,7 +802,7 @@ function ChatTab({ currentUserId, isAdmin }: { currentUserId: string; isAdmin: b
 
   // Auto-scroll to bottom on new messages
   useEffect(() => {
-    if (!loading) bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (!loading) bottomRef.current?.scrollIntoView({ behavior: scrollBehavior() });
   }, [messages.length, loading]);
 
   const sendMessage = async () => {
@@ -884,7 +885,7 @@ function ChatTab({ currentUserId, isAdmin }: { currentUserId: string; isAdmin: b
         {displayMessages.length === 0 && (
           <div className="text-center py-8">
             <div className="text-gray-500 text-sm">No messages yet.</div>
-            <div className="text-gray-600 text-xs mt-1">Be the first to say something!</div>
+            <div className="text-gray-500 text-xs mt-1">Be the first to say something!</div>
           </div>
         )}
 
@@ -934,7 +935,7 @@ function ChatTab({ currentUserId, isAdmin }: { currentUserId: string; isAdmin: b
           </button>
         </div>
         {!isMuted && (
-          <div className="text-[10px] text-gray-600 mt-1 px-1">
+          <div className="text-[10px] text-gray-500 mt-1 px-1">
             {draft.length}/500 — Enter to send
           </div>
         )}
@@ -994,7 +995,7 @@ function ChatBubble({
             Admin
           </span>
         )}
-        <span className="text-[10px] text-gray-600 opacity-60 group-hover:opacity-100 transition-opacity">
+        <span className="text-[10px] text-gray-500 opacity-60 group-hover:opacity-100 transition-opacity">
           {isToday ? timeStr : `${dateStr} ${timeStr}`}
         </span>
         {/* Trailing actions — dimmed by default, brighten on hover. Deliberately
@@ -1054,7 +1055,7 @@ function ChatBubble({
                   onClick={onRequestDelete}
                   title="Delete message"
                   aria-label="Delete message"
-                  className="text-gray-600 hover:text-red-400 transition-colors p-0.5"
+                  className="text-gray-500 hover:text-red-400 transition-colors p-0.5"
                 >
                   <svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M3 4h10" />
@@ -1360,7 +1361,7 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
 
             <div className="max-h-64 overflow-y-auto space-y-1">
               {loginAttempts.length === 0 && (
-                <div className="text-gray-600 text-xs text-center py-4">
+                <div className="text-gray-500 text-xs text-center py-4">
                   {failedOnly ? "No failed login attempts recorded." : "No login attempts recorded."}
                 </div>
               )}
@@ -1374,7 +1375,7 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
                   </span>
                   <span className="text-gray-300 truncate flex-1 mx-2">{a.username}</span>
                   <span className="text-gray-500">{a.ip}</span>
-                  <span className="text-gray-600 ml-2 whitespace-nowrap">
+                  <span className="text-gray-500 ml-2 whitespace-nowrap">
                     {new Date(a.createdAt).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}
                   </span>
                 </div>
@@ -1447,13 +1448,13 @@ function AdminTab({ currentUserId }: { currentUserId: string }) {
                     </span>
                   )}
                 </div>
-                <div className="text-[10px] text-gray-600 mt-0.5">
+                <div className="text-[10px] text-gray-500 mt-0.5">
                   {user.isOnline
                     ? <span className="text-green-500">Online now</span>
                     : user.lastActiveAt
                       ? `Last active ${new Date(user.lastActiveAt).toLocaleString(undefined, { month: "short", day: "numeric", hour: "2-digit", minute: "2-digit" })}`
                       : "Never active"}
-                  <span className="mx-1.5 text-gray-700">·</span>
+                  <span className="mx-1.5 text-gray-500">·</span>
                   Joined {new Date(user.createdAt).toLocaleDateString("en-US", { month: "short", day: "numeric", year: "numeric" })}
                   {user.isMuted && (
                     <span className="ml-2 text-red-400">

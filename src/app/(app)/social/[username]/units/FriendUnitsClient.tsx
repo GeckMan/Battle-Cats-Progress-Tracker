@@ -685,7 +685,7 @@ function FriendUnitsInner({
           </button>
         )}
 
-        <span className="text-xs text-gray-600 ml-auto">
+        <span className="text-xs text-gray-500 ml-auto">
           {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
         </span>
       </div>

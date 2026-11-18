@@ -106,10 +106,13 @@ function StatusPill({ value, onChange, c }: {
 
 /* ── Checkbox ───────────────────────────────────────────────────────────── */
 
-function ThemedCheck({ checked, onChange, c }: { checked: boolean; onChange: (v: boolean) => void; c: ThemeColors }) {
+function ThemedCheck({ checked, onChange, c, label }: { checked: boolean; onChange: (v: boolean) => void; c: ThemeColors; label?: string }) {
   return (
     <button
       type="button"
+      role="checkbox"
+      aria-checked={checked}
+      aria-label={label ?? "Cleared"}
       onClick={() => onChange(!checked)}
       style={{
         width: 20,
@@ -414,7 +417,7 @@ export default function ArcSections({ groups }: { groups: Group[] }) {
                         </div>
                         {/* Controls row */}
                         <div style={{ display: "flex", alignItems: "center", gap: 6, flexWrap: "wrap" }}>
-                          <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} />
+                          <ThemedCheck checked={r.cleared} onChange={(v) => update(r.id, { cleared: v })} c={c} label={`Cleared: ${r.chapter.displayName}`} />
                           {arcHasTreasuresAndZombies(r.chapter.arc) && (
                             <>
                               <span style={{ fontSize: 9, color: c.accentDim, textTransform: "uppercase", letterSpacing: "0.06em" }}>Treasures</span>

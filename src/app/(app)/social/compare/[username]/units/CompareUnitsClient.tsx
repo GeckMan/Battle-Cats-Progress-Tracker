@@ -122,7 +122,7 @@ export default function CompareUnitsClient({
           Unit Comparison
         </h1>
         <p className="text-sm text-gray-500 mt-0.5">
-          {myLabel} <span className="text-gray-700">vs</span> {theirLabel}
+          {myLabel} <span className="text-gray-500">vs</span> {theirLabel}
         </p>
       </div>
 
@@ -217,7 +217,7 @@ export default function CompareUnitsClient({
           <span>{hideCollab ? "✓" : ""} Hide Collab</span>
         </button>
 
-        <span className="text-xs text-gray-600 ml-auto">
+        <span className="text-xs text-gray-500 ml-auto">
           {tabUnits.length} units
         </span>
       </div>
@@ -332,7 +332,7 @@ function RarityGroup({
             <div className="col-span-1"></div>
             <div className="col-span-4">Unit</div>
             <div className="col-span-3 text-center truncate">{myLabel}</div>
-            <div className="col-span-1 text-center text-gray-700"></div>
+            <div className="col-span-1 text-center text-gray-500"></div>
             <div className="col-span-3 text-center truncate">{theirLabel}</div>
           </div>
 
@@ -376,7 +376,7 @@ function CompareRow({ unit: u }: { unit: CompareUnit }) {
       {/* Name */}
       <div className="col-span-4">
         <div className="text-sm text-gray-200 truncate">{u.name}</div>
-        <div className="text-[10px] text-gray-600">#{u.unitNumber}</div>
+        <div className="text-[10px] text-gray-500">#{u.unitNumber}</div>
       </div>
 
       {/* My form */}
@@ -399,7 +399,7 @@ function CompareRow({ unit: u }: { unit: CompareUnit }) {
           </span>
         )}
         {!iAhead && !theyAhead && u.myForm > 0 && (
-          <span className="text-xs text-gray-700">=</span>
+          <span className="text-xs text-gray-500">=</span>
         )}
       </div>
 

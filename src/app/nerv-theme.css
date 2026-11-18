@@ -137,13 +137,25 @@
   }
 }
 
-/* ── Focus Suppression (prevent default blue outlines) ─────────────────── */
+/* ── Focus ring ─────────────────────────────────────────────────────────── */
+/* Mouse clicks get no outline (:focus without :focus-visible), but keyboard
+   users always see where they are. This used to be `outline: none !important`
+   on :focus-visible too, which left keyboard users in NERV with no focus
+   indicator at all (2026-11-18 accessibility pass). */
 
-[data-theme="nerv"] button:focus,
-[data-theme="nerv"] button:focus-visible,
-[data-theme="nerv"] a:focus,
-[data-theme="nerv"] a:focus-visible {
+[data-theme="nerv"] button:focus:not(:focus-visible),
+[data-theme="nerv"] a:focus:not(:focus-visible) {
   outline: none !important;
+}
+[data-theme="nerv"] button:focus-visible,
+[data-theme="nerv"] a:focus-visible,
+[data-theme="nerv"] select:focus-visible,
+[data-theme="nerv"] input[type="checkbox"]:focus-visible,
+[data-theme="nerv"] [role="button"]:focus-visible,
+[data-theme="nerv"] [role="checkbox"]:focus-visible,
+[data-theme="nerv"] summary:focus-visible {
+  outline: 1px solid var(--nerv-orange) !important;
+  outline-offset: 2px;
 }
 
 /* ── Glow Effects ────────────────────────────────────────────────────────── */

@@ -54,7 +54,7 @@ function MedalToken({ medal }: { medal: MedalRow }) {
           }
         />
       ) : (
-        <span className={`text-lg font-semibold ${medal.earned ? "text-amber-400" : "text-gray-600"}`}>
+        <span className={`text-lg font-semibold ${medal.earned ? "text-amber-400" : "text-gray-500"}`}>
           {medal.earned ? "★" : "?"}
         </span>
       )}
@@ -247,7 +247,7 @@ export default function FriendMedalsClient({
           </button>
         )}
 
-        <span className="text-xs text-gray-600 ml-auto">
+        <span className="text-xs text-gray-500 ml-auto">
           {filtered.length}{filtered.length !== medals.length ? ` of ${medals.length}` : ""} medals
         </span>
       </div>

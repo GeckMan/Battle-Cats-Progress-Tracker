@@ -130,9 +130,9 @@ function DefaultDashboard({ data }: { data: DashboardData }) {
 
 function pctColor(pct: number) {
   if (pct >= 80) return "#fbbf24"; // amber-400
-  if (pct >= 40) return "#d97706"; // amber-600
-  if (pct > 0)   return "#92400e"; // amber-800
-  return "#4b5563"; // gray-600
+  if (pct >= 40) return "#f59e0b"; // amber-500
+  if (pct > 0)   return "#d97706"; // amber-600 (amber-800 was ~2.6:1 on black)
+  return "#9ca3af"; // gray-400 (gray-600 was ~2.5:1 on black)
 }
 
 function barFill(pct: number) {

@@ -379,7 +379,7 @@ function UserProgressCard({
       <details className="border border-gray-800 rounded-md overflow-hidden">
         <summary className="cursor-pointer select-none px-3 py-2.5 text-sm text-gray-400 hover:text-gray-200 hover:bg-gray-900 transition-colors flex items-center justify-between">
           <span>Legend breakdown</span>
-          <span className="text-gray-600 text-xs">▾</span>
+          <span className="text-gray-500 text-xs">▾</span>
         </summary>
 
         <div className="px-3 pb-3 pt-2 space-y-4 bg-gray-950">
@@ -406,7 +406,7 @@ function UserProgressCard({
                 {summary.solSubchapters.map((sc) => (
                   <div key={sc.subchapterId} className="flex items-center justify-between gap-2">
                     <div className="text-xs text-gray-400 truncate">
-                      <span className="text-gray-600 mr-1">{sc.sortOrder}.</span>
+                      <span className="text-gray-500 mr-1">{sc.sortOrder}.</span>
                       {sc.subchapterName}
                     </div>
                     <div className="flex items-center gap-2 flex-shrink-0">

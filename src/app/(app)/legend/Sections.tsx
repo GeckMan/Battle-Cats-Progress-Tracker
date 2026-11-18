@@ -28,7 +28,7 @@ function sagaPct(rows: Row[]) { return rows.length ? Math.round(rows.reduce((s, 
 
 /* ── Crown Picker ───────────────────────────────────────────────────────── */
 
-function CrownPicker({ value, onChange, maxCrowns, c }: { value: number; onChange: (v: number) => void; maxCrowns: number; c: ThemeColors }) {
+function CrownPicker({ value, onChange, maxCrowns, c, label }: { value: number; onChange: (v: number) => void; maxCrowns: number; c: ThemeColors; label?: string }) {
   const crownColors: Record<number, { bg: string; border: string; color: string }> = {
     0: { bg: "rgba(136,136,128,0.1)", border: c.textDim, color: c.text },
     1: { bg: c.accentFill, border: c.accentDim, color: c.accentDim },
@@ -50,9 +50,9 @@ function CrownPicker({ value, onChange, maxCrowns, c }: { value: number; onChang
         };
         const cc = crownColors[n];
         if (isActive) {
-          return <button key={n} type="button" onClick={() => onChange(n)} style={{ ...base, background: cc.bg, borderColor: cc.border, color: cc.color, boxShadow: `0 0 3px ${cc.border}` }} title={n === 0 ? "Not started" : `Crown ${n}`}>{n === 0 ? "—" : n}</button>;
+          return <button key={n} type="button" aria-pressed={true} aria-label={`${label ? label + ": " : ""}${n === 0 ? "not started" : `${n} crown${n === 1 ? "" : "s"}`}`} onClick={() => onChange(n)} style={{ ...base, background: cc.bg, borderColor: cc.border, color: cc.color, boxShadow: `0 0 3px ${cc.border}` }} title={n === 0 ? "Not started" : `Crown ${n}`}>{n === 0 ? "—" : n}</button>;
         }
-        return <button key={n} type="button" onClick={() => onChange(n)} style={{ ...base, background: "transparent", borderColor: c.borderFaint, color: c.textDim }} title={n === 0 ? "Not started" : `Crown ${n}`}>{n === 0 ? "—" : n}</button>;
+        return <button key={n} type="button" aria-pressed={false} aria-label={`${label ? label + ": " : ""}${n === 0 ? "not started" : `${n} crown${n === 1 ? "" : "s"}`}`} onClick={() => onChange(n)} style={{ ...base, background: "transparent", borderColor: c.borderFaint, color: c.textDim }} title={n === 0 ? "Not started" : `Crown ${n}`}>{n === 0 ? "—" : n}</button>;
       })}
     </div>
   );
@@ -233,7 +233,7 @@ export default function Sections({ groups }: { groups: Group[] }) {
                           {r.subchapter.displayName}
                           {r.subchapter.stageCount != null && <span style={{ fontSize: 9, color: c.textDim, marginLeft: 4 }}>({r.subchapter.stageCount})</span>}
                         </span>
-                        <CrownPicker value={crown} onChange={(v) => update(r.id, v)} maxCrowns={r.subchapter.maxCrowns ?? 4} c={c} />
+                        <CrownPicker value={crown} onChange={(v) => update(r.id, v)} maxCrowns={r.subchapter.maxCrowns ?? 4} c={c} label={r.subchapter.displayName} />
                       </div>
                     );
                   })}

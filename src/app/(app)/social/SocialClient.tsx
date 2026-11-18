@@ -138,9 +138,9 @@ export default function SocialClient({ userId }: { userId: string }) {
           </div>
           <div className="space-y-2">
             {loading ? (
-              <div className="text-sm text-gray-600">Loading…</div>
+              <div className="text-sm text-gray-500">Loading…</div>
             ) : incoming.length === 0 ? (
-              <div className="text-sm text-gray-600">No pending requests</div>
+              <div className="text-sm text-gray-500">No pending requests</div>
             ) : (
               incoming.map((r) => (
                 <div key={r.id} className="flex items-center justify-between gap-3 py-1">
@@ -176,9 +176,9 @@ export default function SocialClient({ userId }: { userId: string }) {
           <div className="text-sm font-semibold text-gray-300 mb-3">Outgoing requests</div>
           <div className="space-y-2">
             {loading ? (
-              <div className="text-sm text-gray-600">Loading…</div>
+              <div className="text-sm text-gray-500">Loading…</div>
             ) : outgoing.length === 0 ? (
-              <div className="text-sm text-gray-600">None sent</div>
+              <div className="text-sm text-gray-500">None sent</div>
             ) : (
               outgoing.map((r) => (
                 <div key={r.id} className="flex items-center justify-between gap-3 py-1">
@@ -218,9 +218,9 @@ export default function SocialClient({ userId }: { userId: string }) {
         </div>
         <div className="space-y-1">
           {loading ? (
-            <div className="text-sm text-gray-600">Loading…</div>
+            <div className="text-sm text-gray-500">Loading…</div>
           ) : friends.length === 0 ? (
-            <div className="text-sm text-gray-600">No friends yet, search for someone above</div>
+            <div className="text-sm text-gray-500">No friends yet, search for someone above</div>
           ) : (
             friends.map((f) => (
               <div key={f.id} className="flex items-center justify-between gap-3 px-2 py-2 rounded hover:bg-gray-900 transition-colors">

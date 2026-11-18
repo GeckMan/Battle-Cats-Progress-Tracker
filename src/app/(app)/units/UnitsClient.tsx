@@ -7,6 +7,7 @@ import { useLongPress } from "@/lib/hooks/useLongPress";
 import { PretextAccordion } from "@/components/PretextAccordion";
 import { groupSetNames } from "@/lib/set-categories";
 import { spriteUrl, onSpriteError } from "@/lib/sprites";
+import { scrollBehavior } from "@/lib/motion";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -214,9 +215,9 @@ function UnitDetailPanel({
       {/* Backdrop */}
       <div className="fixed inset-0 bg-black/50 z-40" onClick={onClose} />
       {/* Panel */}
-      <div className="fixed right-0 top-0 bottom-0 w-[380px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-50 overflow-y-auto p-5 space-y-5 animate-slide-in">
+      <div role="dialog" aria-modal="true" aria-label={`${unit.name} details`} className="fixed right-0 top-0 bottom-0 w-[380px] max-w-[90vw] bg-gray-950 border-l border-gray-800 z-50 overflow-y-auto p-5 space-y-5 animate-slide-in">
         {/* Close */}
-        <button type="button" onClick={onClose} className="absolute top-3 right-3 text-gray-500 hover:text-gray-300 text-lg">✕</button>
+        <button type="button" onClick={onClose} aria-label="Close details" className="absolute top-2 right-2 p-2 text-gray-500 hover:text-gray-300 text-lg">✕</button>
 
         {/* Header with sprite */}
         <div className="flex items-center gap-4">
@@ -509,6 +510,7 @@ function RaritySection({
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
+        aria-expanded={open}
         className={`w-full flex items-center justify-between rounded-md border px-3 py-2 cursor-pointer transition-colors hover:brightness-110 ${accent}`}
       >
         <div className="flex items-center gap-3">
@@ -990,7 +992,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   useEffect(() => {
     if (focusedIdx < 0) return;
     const el = gridRef.current?.children[focusedIdx] as HTMLElement | undefined;
-    el?.scrollIntoView({ block: "nearest", behavior: "smooth" });
+    el?.scrollIntoView({ block: "nearest", behavior: scrollBehavior() });
   }, [focusedIdx]);
 
   /* Overall stats */
@@ -1071,6 +1073,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         <input
           type="text"
           placeholder="Search by name or #…"
+          aria-label="Search units by name or number"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
           className="flex-1 min-w-0 max-w-xs px-3 py-1.5 rounded border border-gray-700 bg-gray-900 text-sm text-gray-200 placeholder-gray-600 focus:outline-none focus:border-amber-700"
@@ -1146,6 +1149,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             type="button"
             role="switch"
             aria-checked={orderMode === "release"}
+            aria-label="Release order"
             onClick={() => setOrderMode((v) => (v === "catGuide" ? "release" : "catGuide"))}
             className={`relative inline-flex h-5 w-9 shrink-0 items-center rounded-full transition-colors ${
               orderMode === "release" ? "bg-amber-600" : "bg-gray-600"
@@ -1163,6 +1167,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         <button
           type="button"
           onClick={() => setHideCollab((v) => !v)}
+          aria-pressed={hideCollab}
           className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
             hideCollab
               ? "bg-amber-950/50 border-amber-700 text-amber-300"
@@ -1180,6 +1185,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             obtained" can't both be true for the same unit — turning one on
             clears the other rather than silently AND-ing to an empty grid. */}
         <button
+          aria-pressed={needsEvolving}
           type="button"
           onClick={() => { setNeedsEvolving((v) => !v); setNotObtained(false); }}
           className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
@@ -1198,6 +1204,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
             read on render like needsEvolving. Setredid's Discord request,
             2026-08-06. */}
         <button
+          aria-pressed={notObtained}
           type="button"
           onClick={() => { setNotObtained((v) => !v); setNeedsEvolving(false); }}
           className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
@@ -1238,6 +1245,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         <button
           type="button"
           onClick={() => selectionMode ? exitSelectionMode() : setSelectionMode(true)}
+          aria-pressed={selectionMode}
           className={`flex items-center gap-2 px-2 py-1.5 rounded border text-xs transition-colors ${
             selectionMode
               ? "bg-amber-950/50 border-amber-700 text-amber-300"
@@ -1247,7 +1255,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           <span>{selectionMode ? "✓" : ""} Multi-Select</span>
         </button>
 
-        <span className="text-xs text-gray-600 ml-auto">
+        <span className="text-xs text-gray-500 ml-auto">
           {filtered.length}{filtered.length !== units.length ? ` of ${units.length}` : ""} units
         </span>
       </div>
@@ -1312,7 +1320,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       {error && (
         <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
           <span>{error}</span>
-          <button type="button" onClick={() => setError(null)} className="ml-4 text-red-400 hover:text-red-200">✕</button>
+          <button type="button" onClick={() => setError(null)} aria-label="Dismiss error" className="ml-4 p-1 text-red-400 hover:text-red-200">✕</button>
         </div>
       )}
 
