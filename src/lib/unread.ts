@@ -36,9 +36,19 @@ export async function computeUnread(userId: string, legacyChatSince?: string | n
   const friendIds = allFriendIds.filter((id) => !hidden.has(id));
 
   const [unreadActivity, unreadChat] = await Promise.all([
-    (prisma as any).activity.count({
-      where: { userId: { in: friendIds }, createdAt: { gt: activitySince } },
-    }),
+    // One per friend per day, not one per row: a single sitting can log dozens of
+    // entries (BVG's 16 unit/legend changes showed as "16"), but the feed groups
+    // them, so the badge should count updates the way people read them (2026-11-18).
+    friendIds.length === 0
+      ? Promise.resolve(0)
+      : prisma
+          .$queryRaw<{ n: bigint }[]>`
+            SELECT COUNT(*) AS n FROM (
+              SELECT DISTINCT "userId", date_trunc('day', "createdAt")
+              FROM "Activity"
+              WHERE "userId" = ANY(${friendIds}) AND "createdAt" > ${activitySince}
+            ) t`
+          .then((rows) => Number(rows[0]?.n ?? 0)),
     (prisma as any).chatMessage.count({
       where: { userId: { not: userId }, createdAt: { gt: chatSince }, deletedAt: null },
     }),
