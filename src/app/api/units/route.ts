@@ -26,6 +26,12 @@ export async function GET(req: Request) {
     const onlyCollab = searchParams.get("onlyCollab") === "true";
     const source = searchParams.get("source") ?? undefined;
     const setName = searchParams.get("setName") ?? undefined;
+    // all=1: the whole collectible catalog (incl. UNOBTAINABLE, with banners) so the
+    // Units page can load once and filter in the browser, instead of re-running
+    // this route (~7 queries) on every tab/filter click (2026-11-18 CPU work).
+    // The client reproduces the filter rules below exactly (see UnitsClient's
+    // applyCatalogFilters).
+    const all = searchParams.get("all") === "1";
 
     // Optional: view another user's units (read-only)
     const targetUserId = searchParams.get("userId") ?? undefined;
@@ -75,9 +81,11 @@ export async function GET(req: Request) {
       // regardless of any other filter selected.
       excludeFromCollection: false,
     };
-    if (category) where.category = category;
-    if (hideCollab) where.isCollab = false;
-    else if (onlyCollab) where.isCollab = true;
+    if (category && !all) where.category = category;
+    if (!all) {
+      if (hideCollab) where.isCollab = false;
+      else if (onlyCollab) where.isCollab = true;
+    }
     const unitSelect = {
       id: true,
       unitNumber: true,
@@ -92,10 +100,13 @@ export async function GET(req: Request) {
       isCollab: true,
       source: true,
       setName: true,
+      banners: true,
       evolutionData: true,
     };
 
-    if (source) {
+    if (all) {
+      // no source/set filtering in catalog mode
+    } else if (source) {
       where.source = source;
     } else {
       // Hide unobtainable units by default, even when browsing a specific
@@ -117,7 +128,7 @@ export async function GET(req: Request) {
         { source: { not: "UNOBTAINABLE" } },
       ];
     }
-    if (setName) where.banners = { has: setName };
+    if (setName && !all) where.banners = { has: setName };
 
     // @ts-ignore
     let allUnits: any[] = await (prisma as any).unit.findMany({
@@ -133,7 +144,7 @@ export async function GET(req: Request) {
     // comment above). Any set with at least one real obtainable member
     // (like "Epic Fest") already returned those from the query above and
     // never reaches this fallback.
-    if (setName && !source && allUnits.length === 0) {
+    if (!all && setName && !source && allUnits.length === 0) {
       const { OR: _hideUnobtainable, ...whereWithoutHideFilter } = where;
       // @ts-ignore
       allUnits = await (prisma as any).unit.findMany({
@@ -175,6 +186,7 @@ export async function GET(req: Request) {
       isCollab: u.isCollab,
       source: u.source,
       setName: u.setName,
+      banners: u.banners ?? [],
       evolutionData: u.evolutionData ?? null,
       formLevel: progressMap.get(u.id) ?? 0,
     }));

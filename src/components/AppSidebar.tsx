@@ -3,9 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { signOut } from "next-auth/react";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect } from "react";
 import { useTheme } from "@/lib/theme-context";
-import { useVisibleInterval } from "@/lib/use-visible-interval";
 
 /* ─── Nav items ──────────────────────────────────────────────────────────── */
 
@@ -43,26 +42,15 @@ export default function AppSidebar({ loggedIn = true }: { loggedIn?: boolean }) 
     return () => { document.body.style.overflow = ""; };
   }, [mobileOpen]);
 
-  // Poll for pending friend requests
-  const checkPending = useCallback(async () => {
-    if (!loggedIn) return; // nothing to poll for logged-out visitors
-    try {
-      const res = await fetch("/api/social/summary");
-      if (res.ok) {
-        const data = await res.json();
-        setPendingRequests(data.incoming?.length ?? 0);
-      }
-    } catch { /* ignore */ }
-  }, [loggedIn]);
-
-  // Check on mount, then poll every 180s (up from 90s) while the tab is
-  // visible — friend requests are infrequent, and this component is mounted
-  // for the whole app shell, so this was a meaningful contributor to the
-  // Oct 2026 CPU-quota shutdown (see useVisibleInterval's comment).
+  // Pending friend requests come from the app shell's single heartbeat request
+  // (RightPanelWrapper -> POST /api/heartbeat), broadcast as "bc:heartbeat", so
+  // the sidebar no longer polls /api/social/summary on its own timer.
   useEffect(() => {
-    checkPending();
-  }, [checkPending]);
-  useVisibleInterval(checkPending, 180000);
+    if (!loggedIn) return;
+    const onBeat = (e: Event) => setPendingRequests((e as CustomEvent).detail?.pendingRequests ?? 0);
+    window.addEventListener("bc:heartbeat", onBeat);
+    return () => window.removeEventListener("bc:heartbeat", onBeat);
+  }, [loggedIn]);
 
   const isNerv = theme === "nerv";
 

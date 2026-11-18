@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 import type { CompareUnit } from "./page";
+import { spriteUrl, onSpriteError } from "@/lib/sprites";
 
 /* ── Constants ──────────────────────────────────────────────────────────── */
 
@@ -26,20 +27,6 @@ const FORM_BADGE: Record<number, string> = {
   4: "bg-purple-900/60 border-purple-500 text-purple-200",
 };
 
-const FORM_LETTER = ["f", "c", "s", "u"] as const;
-
-function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
-  // Ancient Egg units: base & evolved forms use a shared egg sprite
-  // (non-standard filenames that can't be derived from the unit number).
-  // Kept in sync with the same special case in UnitsClient.tsx and
-  // FriendUnitsClient.tsx so this page doesn't uniquely fail to load these
-  // sprites while the other two views handle them fine.
-  if (unitName?.startsWith("Ancient Egg") && formIndex <= 1) {
-    return `/api/sprite?u=0&f=m`;
-  }
-  const letter = FORM_LETTER[formIndex] ?? "f";
-  return `/api/sprite?u=${unitNumber}&f=${letter}`;
-}
 
 type Tab = "missing" | "haveNotThem" | "ahead" | "behind" | "both" | "all";
 
@@ -382,7 +369,7 @@ function CompareRow({ unit: u }: { unit: CompareUnit }) {
           height={32}
           loading="lazy"
           className={`w-8 h-8 object-contain pixelated ${u.myForm === 0 && u.theirForm === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => { e.currentTarget.style.opacity = "0"; }}
+          onError={(e) => onSpriteError(e, u.unitNumber, Math.max(myDisplayForm, theirDisplayForm), u.name)}
         />
       </div>
 

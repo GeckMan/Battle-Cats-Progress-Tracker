@@ -61,15 +61,24 @@ jobs:
           DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
           DATABASE_URL: ${{ secrets.DATABASE_URL }}
         run: npx tsx ./scripts/sync-medal-images.ts
-      - name: Commit newly-downloaded medal images
+      - name: Mirror any missing unit sprites into public/sprites
+        # Static sprites = no function invocation per image (src/lib/sprites.ts).
+        # Best-effort; first run downloads the whole set (~10-15 min).
+        continue-on-error: true
+        env:
+          DIRECT_DATABASE_URL: ${{ secrets.DIRECT_DATABASE_URL }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+        run: npx tsx ./scripts/sync-unit-sprites.ts
+      - name: Commit newly-downloaded medal images and unit sprites
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add public/medals
+          if [ -n "$(ls -A public/sprites 2>/dev/null)" ]; then git add public/sprites; fi
           if git diff --cached --quiet; then
-            echo "No new medal images to commit"
+            echo "No new medal images or sprites to commit"
           else
-            git commit -m "chore: add newly-synced medal images"
+            git commit -m "chore: add newly-synced medal images / unit sprites"
             # Earlier steps (npm install, prisma generate) can leave the
             # working tree with unrelated unstaged changes — e.g. `prisma
             # generate` re-emits src/generated/prisma, which is checked into

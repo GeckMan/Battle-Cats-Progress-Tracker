@@ -6,6 +6,7 @@ import Link from "next/link";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 import { useLongPress } from "@/lib/hooks/useLongPress";
 import { groupSetNames } from "@/lib/set-categories";
+import { spriteUrl, onSpriteError } from "@/lib/sprites";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -98,15 +99,6 @@ const SOURCE_LABELS: Record<string, string> = {
   STORY_CHAPTER_CLEAR: "Story Chapter Clear",
 };
 
-const FORM_LETTER = ["f", "c", "s", "u"] as const;
-
-function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
-  if (unitName?.startsWith("Ancient Egg") && formIndex <= 1) {
-    return `/api/sprite?u=0&f=m`;
-  }
-  const letter = FORM_LETTER[formIndex] ?? "f";
-  return `/api/sprite?u=${unitNumber}&f=${letter}`;
-}
 
 // NF white / EF yellow / TF red / UF purple — kept in sync with the same
 // map in UnitsClient.tsx (see its comment for why this is duplicated
@@ -179,6 +171,7 @@ function UnitDetailPanel({ unit, onClose }: { unit: UnitRow; onClose: () => void
         <div className="flex items-center gap-4">
           <img
             src={spriteUrl(unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
+            onError={(e) => onSpriteError(e, unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
             alt={unit.name}
             width={72}
             height={72}
@@ -292,24 +285,14 @@ const UnitCard = memo(function UnitCard({ unit, onInfo }: { unit: UnitRow; onInf
       )}
       <div className="w-14 h-14 flex items-center justify-center">
         <img
+          key={imgUrl}
           src={imgUrl}
           alt={unit.name}
           width={56}
           height={56}
           loading="lazy"
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => {
-            // If current form sprite doesn't exist, try falling back to previous form
-            const img = e.currentTarget;
-            if (displayForm > 0) {
-              const prevUrl = spriteUrl(unit.unitNumber, displayForm - 1, unit.name);
-              if (img.src !== prevUrl && !img.src.endsWith(prevUrl.split("?")[1])) {
-                img.src = prevUrl;
-                return;
-              }
-            }
-            img.style.opacity = "0";
-          }}
+          onError={(e) => onSpriteError(e, unit.unitNumber, displayForm, unit.name)}
         />
       </div>
       <div className={`text-[10px] font-bold px-1.5 py-0.5 rounded border ${FORM_BADGE[level]}`}>

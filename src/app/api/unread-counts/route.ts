@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth/next";
 import { NextRequest, NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
-import { privateProgressUserIds } from "@/lib/access";
+import { computeUnread } from "@/lib/unread";
 
 /**
  * GET /api/unread-counts — count-only unread badges for the right panel (one
@@ -29,45 +29,7 @@ export async function GET(req: NextRequest) {
     const userId = session.user.id as string;
 
     const { searchParams } = new URL(req.url);
-    const legacy = (v: string | null) => {
-      if (!v) return null;
-      const d = new Date(v);
-      // epoch / garbage = "never seen" placeholder from old clients, not a real marker
-      return isNaN(d.getTime()) || d.getTime() <= 0 ? null : d;
-    };
-
-    const user = (await (prisma as any).user.findUnique({
-      where: { id: userId },
-      select: { chatLastSeenAt: true, activityLastSeenAt: true },
-    })) as { chatLastSeenAt: Date | null; activityLastSeenAt: Date | null } | null;
-
-    const now = new Date();
-    const chatSince: Date = user?.chatLastSeenAt ?? legacy(searchParams.get("chatSince")) ?? now;
-    const activitySince: Date = user?.activityLastSeenAt ?? legacy(searchParams.get("activitySince")) ?? now;
-
-    const init: Record<string, Date> = {};
-    if (!user?.chatLastSeenAt) init.chatLastSeenAt = chatSince;
-    if (!user?.activityLastSeenAt) init.activityLastSeenAt = activitySince;
-
-    const friendships = await prisma.friendship.findMany({
-      where: { status: "ACCEPTED", OR: [{ requesterId: userId }, { addresseeId: userId }] },
-      select: { requesterId: true, addresseeId: true },
-    });
-    const allFriendIds = friendships.map((f) => (f.requesterId === userId ? f.addresseeId : f.requesterId));
-    const hidden = await privateProgressUserIds(allFriendIds); // same rule as /api/activity
-    const friendIds = allFriendIds.filter((id) => !hidden.has(id));
-
-    const [unreadActivity, unreadChat] = await Promise.all([
-      (prisma as any).activity.count({
-        where: { userId: { in: friendIds }, createdAt: { gt: activitySince } },
-      }),
-      (prisma as any).chatMessage.count({
-        where: { userId: { not: userId }, createdAt: { gt: chatSince }, deletedAt: null },
-      }),
-      Object.keys(init).length
-        ? (prisma as any).user.update({ where: { id: userId }, data: init }).catch(() => {})
-        : Promise.resolve(),
-    ]);
+    const { unreadActivity, unreadChat } = await computeUnread(userId, searchParams.get("chatSince"), searchParams.get("activitySince"));
 
     return NextResponse.json({ unreadActivity, unreadChat });
   } catch {

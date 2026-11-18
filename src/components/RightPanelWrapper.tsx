@@ -35,20 +35,25 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
   const [unreadActivity, setUnreadActivity] = useState(0);
   const [unreadChat, setUnreadChat] = useState(0);
 
-  // Poll for unread counts — single count-only request (see
-  // src/app/api/unread-counts/route.ts) instead of the old pattern of up to
-  // 4 separate fetches (limit=1 then limit=200 for each of activity/chat).
+  // One combined background request (POST /api/heartbeat): marks us online,
+  // returns unread chat/activity counts and pending friend requests. Replaces the
+  // separate presence ping (60s), unread poll (120s) and sidebar poll (180s).
+  // The sidebar's friend-request badge listens for the "bc:heartbeat" event.
   const checkUnread = useCallback(async () => {
     try {
-      const params = new URLSearchParams({
-        activitySince: getLastSeen(LS_KEY_ACTIVITY),
-        chatSince: getLastSeen(LS_KEY_CHAT),
+      const res = await fetch("/api/heartbeat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          activitySince: getLastSeen(LS_KEY_ACTIVITY),
+          chatSince: getLastSeen(LS_KEY_CHAT),
+        }),
       });
-      const res = await fetch(`/api/unread-counts?${params}`);
       if (!res.ok) return;
       const data = await res.json();
       setUnreadActivity(data.unreadActivity ?? 0);
       setUnreadChat(data.unreadChat ?? 0);
+      window.dispatchEvent(new CustomEvent("bc:heartbeat", { detail: { pendingRequests: data.pendingRequests ?? 0 } }));
     } catch {
       /* ignore */
     }
@@ -77,16 +82,7 @@ export default function RightPanelWrapper({ currentUserId, currentUserRole }: { 
     return () => clearTimeout(timer);
   }, []);
 
-  // Presence heartbeat — this component is mounted for the whole authenticated
-  // app shell (not just while the panel is open), so it's a reliable place to
-  // ping "I'm here" for the site-wide "online now" count.
-  const ping = useCallback(() => {
-    fetch("/api/presence", { method: "POST" }).catch(() => {});
-  }, []);
-  useEffect(() => {
-    ping();
-  }, [ping]);
-  useVisibleInterval(ping, 60000);
+  // (Presence "I'm online" is now part of the heartbeat above.)
 
   // Mark tab as read when viewing it
   const handleTabChange = useCallback(

@@ -1,11 +1,12 @@
 "use client";
 
-import { useEffect, useState, useCallback, useRef, memo, Suspense } from "react";
+import { useEffect, useMemo, useState, useCallback, useRef, memo, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { FORM_LEVELS, UNIT_CATEGORY_META } from "@/lib/unit-catalog";
 import { useLongPress } from "@/lib/hooks/useLongPress";
 import { PretextAccordion } from "@/components/PretextAccordion";
 import { groupSetNames } from "@/lib/set-categories";
+import { spriteUrl, onSpriteError } from "@/lib/sprites";
 
 /* ── Types ─────────────────────────────────────────────────────────────── */
 
@@ -27,6 +28,7 @@ type UnitRow = {
   isCollab: boolean;
   source: string | null;
   setName: string | null;
+  banners?: string[];
   evolutionData: EvolutionData;
   formLevel: number; // 0–4
 };
@@ -124,19 +126,6 @@ const SOURCE_LABELS: Record<string, string> = {
   EVENT_POSTER:        "Event Poster",
 };
 
-// Form index → letter used in Miraheze filenames (F1=f, F2=c, TF=s, UF=u)
-const FORM_LETTER = ["f", "c", "s", "u"] as const;
-
-function spriteUrl(unitNumber: number, formIndex: number, unitName?: string) {
-  // Ancient Egg units: base & evolved forms use shared egg sprite (non-standard
-  // filenames like Uni007_m01.png that can't be derived from the unit number).
-  // True Form (s00) and Ultra Form (u00) follow the standard naming.
-  if (unitName?.startsWith("Ancient Egg") && formIndex <= 1) {
-    return `/api/sprite?u=0&f=m`;
-  }
-  const letter = FORM_LETTER[formIndex] ?? "f";
-  return `/api/sprite?u=${unitNumber}&f=${letter}`;
-}
 
 /* ── Form badge colors ─────────────────────────────────────────────────── */
 
@@ -232,7 +221,9 @@ function UnitDetailPanel({
         {/* Header with sprite */}
         <div className="flex items-center gap-4">
           <img
+            key={unit.formLevel}
             src={spriteUrl(unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
+            onError={(e) => onSpriteError(e, unit.unitNumber, Math.max(0, unit.formLevel - 1), unit.name)}
             alt={unit.name}
             width={72}
             height={72}
@@ -456,24 +447,14 @@ const UnitCard = memo(function UnitCard({
       {/* Sprite */}
       <div className="w-14 h-14 flex items-center justify-center">
         <img
+          key={imgUrl}
           src={imgUrl}
           alt={unit.name}
           width={56}
           height={56}
           loading="lazy"
           className={`w-14 h-14 object-contain pixelated select-none ${level === 0 ? "opacity-30 grayscale" : ""}`}
-          onError={(e) => {
-            // If current form sprite doesn't exist, try falling back to previous form
-            const img = e.currentTarget;
-            if (displayForm > 0) {
-              const prevUrl = spriteUrl(unit.unitNumber, displayForm - 1, unit.name);
-              if (img.src !== prevUrl && !img.src.endsWith(prevUrl.split("?")[1])) {
-                img.src = prevUrl;
-                return;
-              }
-            }
-            img.style.opacity = "0";
-          }}
+          onError={(e) => onSpriteError(e, unit.unitNumber, displayForm, unit.name)}
         />
       </div>
 
@@ -678,7 +659,10 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
     }
   }, [orderMode]);
 
-  const [units, setUnits] = useState<UnitRow[]>([]);
+  // Full catalog, loaded once (GET /api/units?all=1); `units` below is the
+  // filtered view. setUnits updates the catalog, so optimistic edits survive
+  // switching tabs/filters.
+  const [catalog, setUnits] = useState<UnitRow[]>([]);
   const [availableSources, setAvailableSources] = useState<string[]>([]);
   const [availableSets, setAvailableSets] = useState<string[]>([]);
   const [availableCollabSets, setAvailableCollabSets] = useState<string[]>([]);
@@ -736,29 +720,14 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
   /* Fetch all units for current filters */
   const COLLABS_KEY = "__COLLABS__";
-  const fetchUnits = useCallback(async (cat: string, collab: boolean, src: string, sn: string, cf: string) => {
+  // Loads the whole catalog once; filtering happens in applyCatalogFilters below.
+  // (The arguments are kept so existing "reload on failure" call sites still work.)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const fetchUnits = useCallback(async (..._ignored: unknown[]) => {
     setLoading(true);
     setError(null);
     try {
-      const params = new URLSearchParams();
-      if (cat !== ALL_KEY) params.set("category", cat);
-      if (collab) params.set("hideCollab", "true");
-      if (src) params.set("source", src);
-      // Handle collab grouping: specific collab selected → filter by that banner
-      // "Collabs" selected with no sub-selection → show all collab units via
-      // the real isCollab field (previously sent source=EVENT_CAPSULE, which
-      // was wrong: plenty of real collabs use other sources, and plenty of
-      // non-collab seasonal units use EVENT_CAPSULE too).
-      if (sn === COLLABS_KEY) {
-        if (cf) {
-          params.set("setName", cf);
-        } else {
-          params.set("onlyCollab", "true");
-        }
-      } else if (sn) {
-        params.set("setName", sn);
-      }
-      const res = await fetch(`/api/units?${params}`);
+      const res = await fetch(`/api/units?all=1`);
       if (!res.ok) throw new Error("Failed to load units");
       const data = await res.json();
       setUnits(data.units);
@@ -774,8 +743,34 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   }, []);
 
   useEffect(() => {
-    fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
-  }, [activeCategory, hideCollab, sourceFilter, setFilter, collabFilter, fetchUnits]);
+    fetchUnits();
+  }, [fetchUnits]);
+
+  // Same rules /api/units applies server-side for a filtered request:
+  //  - category tab; hide collabs, or "Collabs" with no sub-pick = only collabs
+  //  - set = banner membership ("Collabs" + a pick = that collab's banner)
+  //  - an explicit source filter shows exactly that source; otherwise
+  //    UNOBTAINABLE units are hidden, unless a picked set contains nothing else
+  //    (sets made entirely of discontinued promo units, e.g. Battle Cats Gashapon)
+  const units = useMemo(() => {
+    let list = catalog;
+    if (activeCategory !== ALL_KEY) list = list.filter((u) => u.category === activeCategory);
+    let setName = "";
+    let onlyCollab = false;
+    if (setFilter === COLLABS_KEY) {
+      if (collabFilter) setName = collabFilter;
+      else onlyCollab = true;
+    } else if (setFilter) {
+      setName = setFilter;
+    }
+    if (hideCollab) list = list.filter((u) => !u.isCollab);
+    else if (onlyCollab) list = list.filter((u) => u.isCollab);
+    if (setName) list = list.filter((u) => (u.banners ?? []).includes(setName));
+    if (sourceFilter) return list.filter((u) => u.source === sourceFilter);
+    const obtainable = list.filter((u) => u.source !== "UNOBTAINABLE");
+    if (setName && obtainable.length === 0) return list;
+    return obtainable;
+  }, [catalog, activeCategory, hideCollab, sourceFilter, setFilter, collabFilter]);
 
   function handleTabChange(key: string) {
     setActiveCategory(key);
