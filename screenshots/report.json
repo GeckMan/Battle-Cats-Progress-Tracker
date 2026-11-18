@@ -1,0 +1,358 @@
+{
+  "base": "https://battlecatsprogress.app",
+  "takenAt": "2026-11-18T20:53:05.049Z",
+  "pages": [
+    {
+      "file": "mobile-default__public_login.png",
+      "url": "/login",
+      "status": 200,
+      "loadMs": 3745,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__public_signup.png",
+      "url": "/signup",
+      "status": 200,
+      "loadMs": 2862,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__public_about.png",
+      "url": "/about",
+      "status": 200,
+      "loadMs": 3077,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__dashboard.png",
+      "url": "/dashboard",
+      "status": 200,
+      "loadMs": 3422,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__units.png",
+      "url": "/units",
+      "status": 200,
+      "loadMs": 2787,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__story.png",
+      "url": "/story",
+      "status": 200,
+      "loadMs": 2876,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__legend.png",
+      "url": "/legend",
+      "status": 200,
+      "loadMs": 2886,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__medals.png",
+      "url": "/medals",
+      "status": 200,
+      "loadMs": 2898,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__milestones.png",
+      "url": "/milestones",
+      "status": 200,
+      "loadMs": 2988,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__social.png",
+      "url": "/social",
+      "status": 200,
+      "loadMs": 3137,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-default__settings.png",
+      "url": "/settings",
+      "status": 200,
+      "loadMs": 3108,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__public_login.png",
+      "url": "/login",
+      "status": 200,
+      "loadMs": 2661,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__public_signup.png",
+      "url": "/signup",
+      "status": 200,
+      "loadMs": 2563,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__public_about.png",
+      "url": "/about",
+      "status": 200,
+      "loadMs": 2725,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__dashboard.png",
+      "url": "/dashboard",
+      "status": 200,
+      "loadMs": 2757,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__units.png",
+      "url": "/units",
+      "status": 200,
+      "loadMs": 2667,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__story.png",
+      "url": "/story",
+      "status": 200,
+      "loadMs": 2775,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__legend.png",
+      "url": "/legend",
+      "status": 200,
+      "loadMs": 2911,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__medals.png",
+      "url": "/medals",
+      "status": 200,
+      "loadMs": 2827,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__milestones.png",
+      "url": "/milestones",
+      "status": 200,
+      "loadMs": 2722,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__social.png",
+      "url": "/social",
+      "status": 200,
+      "loadMs": 2766,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "mobile-nerv__settings.png",
+      "url": "/settings",
+      "status": 200,
+      "loadMs": 2692,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__public_login.png",
+      "url": "/login",
+      "status": 200,
+      "loadMs": 2677,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__public_signup.png",
+      "url": "/signup",
+      "status": 200,
+      "loadMs": 2575,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__public_about.png",
+      "url": "/about",
+      "status": 200,
+      "loadMs": 2685,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__dashboard.png",
+      "url": "/dashboard",
+      "status": 200,
+      "loadMs": 2743,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__units.png",
+      "url": "/units",
+      "status": 200,
+      "loadMs": 2658,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__story.png",
+      "url": "/story",
+      "status": 200,
+      "loadMs": 2687,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__legend.png",
+      "url": "/legend",
+      "status": 200,
+      "loadMs": 2797,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__medals.png",
+      "url": "/medals",
+      "status": 200,
+      "loadMs": 2726,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__milestones.png",
+      "url": "/milestones",
+      "status": 200,
+      "loadMs": 2723,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__social.png",
+      "url": "/social",
+      "status": 200,
+      "loadMs": 2724,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-default__settings.png",
+      "url": "/settings",
+      "status": 200,
+      "loadMs": 2673,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__public_login.png",
+      "url": "/login",
+      "status": 200,
+      "loadMs": 2688,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__public_signup.png",
+      "url": "/signup",
+      "status": 200,
+      "loadMs": 2577,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__public_about.png",
+      "url": "/about",
+      "status": 200,
+      "loadMs": 2661,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__dashboard.png",
+      "url": "/dashboard",
+      "status": 200,
+      "loadMs": 2698,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__units.png",
+      "url": "/units",
+      "status": 200,
+      "loadMs": 2671,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__story.png",
+      "url": "/story",
+      "status": 200,
+      "loadMs": 2770,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__legend.png",
+      "url": "/legend",
+      "status": 200,
+      "loadMs": 2813,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__medals.png",
+      "url": "/medals",
+      "status": 200,
+      "loadMs": 2851,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__milestones.png",
+      "url": "/milestones",
+      "status": 200,
+      "loadMs": 2785,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__social.png",
+      "url": "/social",
+      "status": 200,
+      "loadMs": 2780,
+      "consoleErrors": [],
+      "failedRequests": []
+    },
+    {
+      "file": "desktop-nerv__settings.png",
+      "url": "/settings",
+      "status": 200,
+      "loadMs": 2698,
+      "consoleErrors": [],
+      "failedRequests": []
+    }
+  ]
+}
