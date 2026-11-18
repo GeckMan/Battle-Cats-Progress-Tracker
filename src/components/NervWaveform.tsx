@@ -270,8 +270,7 @@ export default function NervWaveform() {
         <svg
           viewBox={`0 0 ${W} ${H}`}
           width="100%"
-          height="auto"
-          style={{ display: "block", overflow: "hidden" }}
+          style={{ display: "block", overflow: "hidden", height: "auto" }}
           preserveAspectRatio="xMidYMid meet"
           shapeRendering="geometricPrecision"
         >

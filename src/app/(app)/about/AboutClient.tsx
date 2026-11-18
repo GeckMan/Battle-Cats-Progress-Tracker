@@ -4,7 +4,7 @@ import { useState, useRef, lazy, Suspense, useEffect, useCallback } from "react"
 
 const BattleCatPlayground = lazy(() => import("@/components/BattleCatPlayground"));
 
-export default function AboutClient({ children }: { children: React.ReactNode }) {
+export default function AboutClient({ children, loggedIn = false }: { children: React.ReactNode; loggedIn?: boolean }) {
   const [unleashed, setUnleashed] = useState(false);
   const [catCount, setCatCount] = useState<number | null>(null);
   const [alreadyUnleashed, setAlreadyUnleashed] = useState(false);
@@ -12,6 +12,7 @@ export default function AboutClient({ children }: { children: React.ReactNode })
 
   // Fetch count on mount (silently — don't block render)
   useEffect(() => {
+    if (!loggedIn) return; // the counter API needs a session; skip the guaranteed 401
     fetch("/api/easter-egg")
       .then((r) => r.json())
       .then((d) => {
@@ -19,11 +20,11 @@ export default function AboutClient({ children }: { children: React.ReactNode })
         if (d.hasUnleashed) setAlreadyUnleashed(true);
       })
       .catch(() => {});
-  }, []);
+  }, [loggedIn]);
 
   const handleUnleash = useCallback(() => {
     setUnleashed(true);
-    if (!alreadyUnleashed) {
+    if (!alreadyUnleashed && loggedIn) {
       fetch("/api/easter-egg", { method: "POST" })
         .then((r) => r.json())
         .then((d) => {
@@ -32,7 +33,7 @@ export default function AboutClient({ children }: { children: React.ReactNode })
         })
         .catch(() => {});
     }
-  }, [alreadyUnleashed]);
+  }, [alreadyUnleashed, loggedIn]);
 
   return (
     <div ref={containerRef} style={{ position: "relative" }}>

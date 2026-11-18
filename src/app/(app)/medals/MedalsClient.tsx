@@ -22,6 +22,11 @@ const HEX_RATIO = 1.155; // height/width ratio for regular hexagon (2/√3)
 function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggle: (id: string, earned: boolean) => void }) {
   const tip = useMedalTooltip();
   const containerRef = useRef<HTMLDivElement>(null);
+  // Touch: names/descriptions were hover-only, so phone users couldn't tell what a
+  // medal was. Press-and-hold shows it (without toggling); focus (keyboard, or
+  // the focus a tap gives) also shows it.
+  const pressTimer = useRef<ReturnType<typeof setTimeout>>(undefined);
+  const suppressClick = useRef(false);
   const [containerW, setContainerW] = useState(1200);
 
   useEffect(() => {
@@ -58,11 +63,35 @@ function HexGrid({ items, c, onToggle }: { items: Row[]; c: ThemeColors; onToggl
           <button
             key={m.id}
             type="button"
-            onClick={() => onToggle(m.id, !m.earned)}
+            aria-label={`${m.name}${m.earned ? " (earned)" : ""}: ${m.description}`}
+            aria-pressed={m.earned}
+            onClick={() => {
+              if (suppressClick.current) { suppressClick.current = false; return; }
+              onToggle(m.id, !m.earned);
+            }}
             onMouseEnter={(e) => tip?.show({ name: m.name, description: m.description, earned: m.earned, x: e.clientX, y: e.clientY })}
             onMouseMove={(e) => tip?.move(e.clientX, e.clientY)}
             onMouseLeave={() => tip?.hide()}
+            onFocus={(e) => {
+              const r = e.currentTarget.getBoundingClientRect();
+              tip?.show({ name: m.name, description: m.description, earned: m.earned, x: r.left + r.width / 2, y: r.bottom });
+            }}
+            onBlur={() => tip?.hide()}
+            onTouchStart={(e) => {
+              const t = e.touches[0];
+              suppressClick.current = false;
+              clearTimeout(pressTimer.current);
+              pressTimer.current = setTimeout(() => {
+                suppressClick.current = true; // a long-press reads the medal; it doesn't toggle it
+                tip?.show({ name: m.name, description: m.description, earned: m.earned, x: t.clientX, y: t.clientY });
+              }, 450);
+            }}
+            onTouchMove={() => clearTimeout(pressTimer.current)}
+            onTouchEnd={() => clearTimeout(pressTimer.current)}
+            onContextMenu={(e) => e.preventDefault()}
             style={{
+              WebkitTouchCallout: "none",
+              userSelect: "none",
               position: "absolute",
               left: x,
               top: y,

@@ -691,6 +691,18 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
   const [selectionMode, setSelectionMode] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<string>>(new Set());
   const [bulkSaving, setBulkSaving] = useState(false);
+  // Phones: filters live behind a "Filters" button (about 15 controls used to sit
+  // above the first cat). On md+ screens the wrapper is display:contents, so the
+  // desktop layout is unchanged.
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  // Last bulk change, kept briefly so it can be undone (there used to be no way
+  // back from e.g. "Clear" on a large selection).
+  const [lastBulk, setLastBulk] = useState<{ count: number; label: string; prev: { unitId: string; formLevel: number }[] } | null>(null);
+  useEffect(() => {
+    if (!lastBulk) return;
+    const t = setTimeout(() => setLastBulk(null), 12000);
+    return () => clearTimeout(t);
+  }, [lastBulk]);
 
   /* ── Detail panel state ── */
   const [detailUnit, setDetailUnit] = useState<UnitRow | null>(null);
@@ -802,6 +814,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
 
   async function handleBulkAction(formLevel: number) {
     if (selectedIds.size === 0) return;
+    if (formLevel === 0 && selectedIds.size > 10 && !window.confirm(`Clear progress for ${selectedIds.size} units? You can undo right after.`)) return;
+    const snapshot = units.filter((u) => selectedIds.has(u.id)).map((u) => ({ unitId: u.id, formLevel: u.formLevel }));
     setBulkSaving(true);
     setError(null);
     // Optimistic update
@@ -819,6 +833,7 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         body: JSON.stringify({ updates }),
       });
       if (!res.ok) throw new Error("Bulk update failed");
+      setLastBulk({ count: snapshot.length, label: formLevel === 0 ? "Cleared" : `Set to ${FORM_LABEL[formLevel]}`, prev: snapshot });
       exitSelectionMode();
     } catch {
       // Revert on failure
@@ -826,6 +841,23 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       setError("Bulk update failed. Please try again.");
     } finally {
       setBulkSaving(false);
+    }
+  }
+
+  async function undoLastBulk() {
+    const b = lastBulk;
+    if (!b) return;
+    setLastBulk(null);
+    const prevById = new Map(b.prev.map((p) => [p.unitId, p.formLevel]));
+    setUnits((all) => all.map((u) => (prevById.has(u.id) ? { ...u, formLevel: prevById.get(u.id)! } : u)));
+    const res = await fetch("/api/units/bulk", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ updates: b.prev }),
+    }).catch(() => null);
+    if (!res || !res.ok) {
+      setError("Undo failed. Please refresh and check those units.");
+      await fetchUnits(activeCategory, hideCollab, sourceFilter, setFilter, collabFilter);
     }
   }
 
@@ -909,6 +941,12 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         if (focusedIdx >= 0) { setFocusedIdx(-1); e.preventDefault(); return; }
         return;
       }
+
+      // Keyboard grid navigation only works in the flat grid (single-rarity tab or
+      // search). In the default "All" (rarity sections) view there's no visible
+      // focus, so arrows/number keys used to move an invisible cursor and change a
+      // unit you couldn't see, and arrow keys stopped scrolling the page.
+      if (!gridRef.current) return;
 
       const list = filteredRef.current;
       if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(e.key)) {
@@ -1052,6 +1090,19 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           </button>
         )}
 
+        <button
+          type="button"
+          onClick={() => setFiltersOpen((o) => !o)}
+          aria-expanded={filtersOpen}
+          aria-controls="unit-filters"
+          className={`md:hidden px-3 py-1.5 rounded border text-xs transition-colors ${
+            filtersOpen || hasActiveFilters ? "border-amber-700 text-amber-300" : "border-gray-700 text-gray-300"
+          }`}
+        >
+          Filters{hasActiveFilters ? " •" : ""} {filtersOpen ? "▴" : "▾"}
+        </button>
+
+        <div id="unit-filters" className={`${filtersOpen ? "flex" : "hidden"} w-full flex-wrap items-center gap-2 md:contents`}>
         {/* Source filter dropdown */}
         <FilterSelect
           label="All Sources"
@@ -1164,6 +1215,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           <span>{notObtained ? "✓" : ""} Not Obtained</span>
         </button>
 
+        </div>{/* /unit-filters */}
+
         {/* Clear all filters */}
         {hasActiveFilters && (
           <button
@@ -1219,9 +1272,9 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
           <span className="w-px h-4 bg-gray-700 mx-1" />
           <span className="text-xs text-gray-500">Set to:</span>
           {[
-            { level: 1, label: "NF", color: "border-yellow-700/60 text-yellow-300 hover:bg-yellow-950/50" },
-            { level: 2, label: "EF", color: "border-red-700/60 text-red-300 hover:bg-red-950/50" },
-            { level: 3, label: "TF", color: "border-gray-400 text-gray-100 hover:bg-gray-800" },
+            { level: 1, label: "NF", color: "border-gray-300 text-gray-100 hover:bg-gray-800" },
+            { level: 2, label: "EF", color: "border-yellow-700/60 text-yellow-300 hover:bg-yellow-950/50" },
+            { level: 3, label: "TF", color: "border-red-700/60 text-red-300 hover:bg-red-950/50" },
             { level: 4, label: "UF", color: "border-purple-500/60 text-purple-200 hover:bg-purple-950/50" },
             { level: 0, label: "Clear", color: "border-gray-700 text-gray-400 hover:bg-gray-900" },
           ].map((btn) => (
@@ -1241,8 +1294,8 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
         </div>
       )}
 
-      {/* Form legend */}
-      <div className="flex gap-3 flex-wrap text-xs">
+      {/* Form legend (inside the Filters drawer on phones) */}
+      <div className={`${filtersOpen ? "flex" : "hidden"} md:flex gap-3 flex-wrap text-xs`}>
         {FORM_LEVELS.map((f) => (
           <div key={f.level} className="flex items-center gap-1.5">
             <span className={`px-1.5 py-0.5 rounded border text-[10px] font-bold ${FORM_BADGE[f.level]}`}>
@@ -1254,6 +1307,13 @@ function UnitsClientInner({ categories }: { categories: CategoryMeta[] }) {
       </div>
 
       {/* Error */}
+      {lastBulk && (
+        <div role="status" className="fixed bottom-4 left-1/2 -translate-x-1/2 z-50 flex items-center gap-3 rounded-lg border border-gray-700 bg-gray-900/95 px-4 py-2.5 text-sm text-gray-200 shadow-lg">
+          <span>{lastBulk.label} for {lastBulk.count} unit{lastBulk.count === 1 ? "" : "s"}</span>
+          <button type="button" onClick={undoLastBulk} className="font-semibold text-amber-400 hover:text-amber-300 px-2 py-1">Undo</button>
+          <button type="button" onClick={() => setLastBulk(null)} aria-label="Dismiss" className="text-gray-500 hover:text-gray-300 px-1">✕</button>
+        </div>
+      )}
       {error && (
         <div className="rounded border border-red-700 bg-red-900/30 px-4 py-2 text-sm text-red-200 flex items-center justify-between">
           <span>{error}</span>

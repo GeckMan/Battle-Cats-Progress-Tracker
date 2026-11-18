@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { getServerSession } from "next-auth/next";
+import { authOptions } from "@/lib/auth-options";
 import AboutClient from "./AboutClient";
 
 // This page doesn't require a login (see robots.ts's comment on why),
@@ -15,9 +17,10 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const session = await getServerSession(authOptions);
   return (
-    <AboutClient>
+    <AboutClient loggedIn={!!session}>
       <div className="space-y-10">
 
         {/* Hero */}

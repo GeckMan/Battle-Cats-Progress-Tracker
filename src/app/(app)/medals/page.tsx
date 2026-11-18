@@ -68,6 +68,9 @@ const rows = medals.map((m) => ({
           <div className="text-sm text-gray-400 mt-1">
             {earned}/{total} earned
           </div>
+          <div className="text-xs text-gray-500 mt-1">
+            Tap a medal to mark it earned. Hover, or press and hold on a phone, to see what it&apos;s for.
+          </div>
         </div>
       </div>
 
