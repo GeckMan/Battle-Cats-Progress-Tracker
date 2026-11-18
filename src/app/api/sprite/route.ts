@@ -23,7 +23,9 @@ export async function GET(req: NextRequest) {
   const u = req.nextUrl.searchParams.get("u");
   const f = req.nextUrl.searchParams.get("f") ?? "f";
 
-  if (!u || !/^\d{1,4}$/.test(u)) {
+  // Bounded to a realistic unit-number range so arbitrary values can't be used to
+  // force thousands of uncached function invocations.
+  if (!u || !/^\d{1,4}$/.test(u) || Number(u) > 1500) {
     return NextResponse.json({ error: "invalid unit number" }, { status: 400 });
   }
   if (!VALID_FORM_LETTERS.has(f)) {
@@ -61,7 +63,12 @@ export async function GET(req: NextRequest) {
         }
       }
 
-      return new NextResponse(null, { status: 404 });
+      // Cache misses too (a form with no sprite stays missing for a while), so the
+      // client's form-fallback requests don't hit this function every page view.
+      return new NextResponse(null, {
+        status: 404,
+        headers: { "Cache-Control": "public, max-age=86400, s-maxage=86400" },
+      });
     }
 
     const body = await upstream.arrayBuffer();
@@ -73,6 +80,6 @@ export async function GET(req: NextRequest) {
       },
     });
   } catch (err) {
-    return new NextResponse(null, { status: 502 });
+    return new NextResponse(null, { status: 502, headers: { "Cache-Control": "public, s-maxage=300" } });
   }
 }

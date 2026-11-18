@@ -24,11 +24,13 @@ export default async function AppGroupLayout({ children }: { children: React.Rea
   return (
     <ThemeProvider initialTheme={initialTheme}>
       <div className="flex min-h-screen bg-black">
-        <AppSidebar />
+        {/* Logged-out visitors (e.g. on /about) get no background polling: every
+            poll would just be a 401 that still costs a function invocation. */}
+        <AppSidebar loggedIn={!!userId} />
         <main className="flex-1 min-h-screen md:ml-52">
           {children}
         </main>
-        <RightPanelWrapper currentUserId={userId} currentUserRole={userRole} />
+        {userId && <RightPanelWrapper currentUserId={userId} currentUserRole={userRole} />}
       </div>
       <NervScanLine />
     </ThemeProvider>

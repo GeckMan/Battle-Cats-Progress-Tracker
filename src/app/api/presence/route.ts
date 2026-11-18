@@ -2,7 +2,6 @@ import { getServerSession } from "next-auth/next";
 import { NextResponse } from "next/server";
 import { authOptions } from "@/lib/auth-options";
 import { prisma } from "@/lib/prisma";
-import { checkRateLimit, rateLimitResponse } from "@/lib/rate-limit";
 
 // A user counts as "online" if we've heard a heartbeat from them within this
 // window. Client pings every 60s (see RightPanelWrapper), so this gives a
@@ -34,12 +33,17 @@ export async function POST() {
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
     const userId = session.user.id as string;
 
-    const rl = await checkRateLimit(`presence:${userId}`, 6, 60 * 1000);
-    if (rl.limited) return rateLimitResponse(rl.retryAfterMs);
-
-    await (prisma as any).user.update({
-      where: { id: userId },
-      data: { lastActiveAt: new Date() },
+    // One conditional write instead of the old rate-limit check (count + insert +
+    // table-wide cleanup + update ≈ 4 queries, and it 429'd people moving between
+    // pages quickly). The "online" window is 5 minutes, so refreshing lastActiveAt
+    // more than once every 45s adds nothing; frequent pings become a cheap no-op.
+    const now = new Date();
+    await (prisma as any).user.updateMany({
+      where: {
+        id: userId,
+        OR: [{ lastActiveAt: null }, { lastActiveAt: { lt: new Date(now.getTime() - 45 * 1000) } }],
+      },
+      data: { lastActiveAt: now },
     });
 
     return NextResponse.json({ ok: true });

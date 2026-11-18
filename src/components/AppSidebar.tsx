@@ -22,7 +22,7 @@ const NAV_ITEMS = [
 
 /* ─── Sidebar ─────────────────────────────────────────────────────────────── */
 
-export default function AppSidebar() {
+export default function AppSidebar({ loggedIn = true }: { loggedIn?: boolean }) {
   const pathname = usePathname();
   const { theme } = useTheme();
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -45,6 +45,7 @@ export default function AppSidebar() {
 
   // Poll for pending friend requests
   const checkPending = useCallback(async () => {
+    if (!loggedIn) return; // nothing to poll for logged-out visitors
     try {
       const res = await fetch("/api/social/summary");
       if (res.ok) {
@@ -52,7 +53,7 @@ export default function AppSidebar() {
         setPendingRequests(data.incoming?.length ?? 0);
       }
     } catch { /* ignore */ }
-  }, []);
+  }, [loggedIn]);
 
   // Check on mount, then poll every 180s (up from 90s) while the tab is
   // visible — friend requests are infrequent, and this component is mounted
