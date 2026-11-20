@@ -2,8 +2,10 @@ local p = {}
 local getArgs = require('Module:Arguments').getArgs
 local cat_image = require('Module:Cat images')
 
-local function isMainNamespace()
-	return mw.title.getCurrentTitle().namespace == 0
+---Is it worth bothering with validating parameters?
+local function worthBothering()
+	local page = mw.title.getCurrentTitle()
+	return page.namespace == 0 and page.fullText ~= "The Cat God (Special Cat)"
 end
 
 function p.categories(cats)
@@ -18,7 +20,7 @@ function p.categories(cats)
 	local t = {}
 	for cat in mw.text.gsplit(cats, ',') do
 		cat = mw.text.trim(cat)
-		if not valid[cat] and not isMainNamespace() then
+		if not valid[cat] and not worthBothering() then
 			local v = {}
 			for key, _ in pairs(valid) do table.insert(v, key) end
 			error('Invalid cat category: ' .. cat .. '. Valid categories are: ' .. mw.text.listToText(v))
@@ -44,6 +46,10 @@ function p.rarity(rarity)
 		return map[rarity]
 	end
 
+	if not worthBothering() then
+		return rarity
+	end
+
 	error((rarity or "<empty arg>") .. ' is not a valid rarity!')
 end
 
@@ -60,11 +66,10 @@ function p.replacemewithaproperinfobox(frame)
 
 	local title = mw.html.create('b')
 	title:wikitext("[[Cat Release Order|Cat Unit]] # ")
-	if isMainNamespace() then
+	if worthBothering() then
 		title:wikitext(("%03d"):format(id or error('missing Cat ID')))
 	else
 		title:wikitext(args['ID'])
-		-- leniency when not mainspace
 	end
 	if args.version then
 		title:wikitext(("<sup>%s</sup>"):format(args.version))
@@ -88,7 +93,7 @@ function p.replacemewithaproperinfobox(frame)
 		local filename = id and cat_image.appearance(id, i)
 		local given_image = args['image' .. i]
 		if given_image then
-			if id < 10000 and isMainNamespace() then
+			if worthBothering() and id < 10000 then
 				-- i.e. a main cat and we actually care about those so we wanna
 				-- log it so we can eliminate it
 				mw.ext.bucket('template_log').put({
@@ -107,7 +112,7 @@ function p.replacemewithaproperinfobox(frame)
 		i = i + 1
 	end
 
-	if isMainNamespace() then
+	if worthBothering() then
 		require('Module:Cat Info/store').store(args)
 	end
 
