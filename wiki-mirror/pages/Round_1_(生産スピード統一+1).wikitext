@@ -1,0 +1,68 @@
+{{DISPLAYTITLE:Round 1}}
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|Shibalien Elite|Li'l Bun Bun|Gobble|Teacher Bun Bun|Crustaceous Scissorex|Brollow|Calamary|Suidae Piggicus}}
+'''Round 1''' is the first stage in [[Otherworld Colosseum#生産スピード統一+1|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc000.png]]
+[[File:Mapsn000 00 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,500,000 HP
+|enemies = {{Magnification|Shibalien Elite|2,500%
+|Li'l Bun Bun|1,000%
+|Gobble|100%
+|Crustaceous Scissorex|100%
+|Brollow|200%
+|Calamary|500%
+|Suidae Piggicus|100%}}
+|boss = {{Magnification|Teacher Bun Bun|2,000%}}
+|enemies2 = {{Magnification|Shibalien Elite|3,000%
+|Li'l Bun Bun|1,200%
+|Gobble|120%
+|Crustaceous Scissorex|120%
+|Brollow|240%
+|Calamary|600%
+|Suidae Piggicus|120%}}
+|boss2 = {{Magnification|Teacher Bun Bun|2,400%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 4,500
+|max enemies = 20
+|jpname = Round 1
+|script = Round 1
+|romaji = Round 1
+|star = 2
+|event-chapter = [[Otherworld Colosseum#生産スピード統一+1|Otherworld Colosseum]]
+|prev stage = N/A
+|next stage = [[Round 2 (生産スピード統一+1)|Round 2]]
+}}
+
+==Rules==
+{{ColosseumRule|生産スピード統一+1}}
+
+==Battleground==
+*3 [[Shibalien Elite]]s spawn after 3.33 seconds<sup>100f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Li'l Bun Bun]] spawns after 10 seconds<sup>300f</sup>.
+*2 [[Shibalien Elite]]s spawn after 13.33 seconds<sup>400f</sup>, delay 13.33~16.67 seconds<sup>400f~500f</sup>.
+*1 [[Gobble]] spawns after 20 seconds<sup>600f</sup>.
+*When the base reaches 99% HP:
+**1 [[Teacher Bun Bun]] spawns as the boss.
+**Infinite [[Shibalien Elite]]s spawn, delay 10~13.33 seconds<sup>300f~400f</sup>.
+**3 [[Gobble]]s spawn, delay 36.67~40 seconds<sup>1,100f~1,200f</sup>.
+**1 [[Crustaceous Scissorex]] spawns after 6.67 seconds<sup>200f</sup>.
+**10 [[Brollow]]s spawn after 6.67 seconds<sup>200f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**2 [[Calamary|Calamaries]] spawn after 13.33 seconds<sup>400f</sup>, delay 66.67~73.33 seconds<sup>2,000f~2,200f</sup>.
+**10 [[Brollow]]s spawn after 20 seconds<sup>600f</sup>, delay 16.67~20 seconds<sup>500f~600f</sup>.
+**2 [[Suidae Piggicus|Suidae Piggici]] spawn after 33.33 seconds<sup>1,000f</sup>, delay 60~66.67 seconds<sup>1,800f~2,000f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36029-01.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]

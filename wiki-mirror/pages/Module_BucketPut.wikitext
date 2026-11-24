@@ -1,5 +1,4 @@
 local p = {}
-local getArgs = require('Module:Arguments').getArgs
 local yesno = require('Module:Yesno')
 local lang = mw.language.getContentLanguage()
 
@@ -245,8 +244,9 @@ end
 ---Main invokable function.
 ---@param frame any
 function p.put(frame)
-	local args = getArgs(frame, { frameOnly = true })
-	local parent_args = getArgs(frame, { parentOnly = true })
+	local args = frame.args
+	local parent_args = frame:getParent().args
+
 	local bucket_name = mw.text.trim(args[1] or '')
 	local schema = mw.loadJsonData('bucket:' .. bucket_name)
 

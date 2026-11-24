@@ -1,5 +1,4 @@
-This page defines the data used in each Colosseum rule.
-__NOTOC__
+This page defines the data used in each Colosseum rule.__NOTOC__
 
 ==Format==
 Generally rule info can be formatted like normal wikitext. However, sometimes the rules will be ever so slightly different, for example [[Round 1 (Uber Clearance)]] has only one uber being spawnable at one time while [[Round 1 (Uber Clearance 2)]] has two.
@@ -220,11 +219,9 @@ To deal with that we can add parameters like $1. In the case of Uber Clearance, 
 |info = Only one unit from each Rarity can be ''deployed'' at once and deploying one will spawn another after a 2 second<sup>60f</sup> delay. This only affects the battle, not creating the lineup.
 }}
 
-===Rarity Draft: Duo===
+===生産スピード統一+1===
 {{ColosseumRule/data
 |id = 23
-|name_en = ?
-|desc_en = ?
 |name_jp = 生産スピード統一+1
 |desc_jp = 【生産スピード統一+1】<br>すべての味方キャラクターの<br>生産スピードが同じになり固定されます<br>加えて、生産時の出現数が2体になります
 |info = All units have their cooldown set to 10 seconds<sup>300f</sup> and spawning one will spawn another instantly.

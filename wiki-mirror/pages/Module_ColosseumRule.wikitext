@@ -76,7 +76,7 @@ function p.ingame(frame)
 	local args = getArgs(frame)
 	local this = desc(args[1], { 'desc_en', 'desc_jp' })
 	local info = this.desc_en or this.desc_jp
-	local br = mw.ustring.find(info, '<br>') + #'<br>'
+	local br = (mw.ustring.find(info, '<br>') or -#'<br>') + #'<br>'
 	return mw.ustring.sub(info, br)
 end
 

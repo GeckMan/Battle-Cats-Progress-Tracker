@@ -1,0 +1,68 @@
+{{DISPLAYTITLE:Round 3}}
+{{LimitedContent}}
+{{StrategyNeeded}}
+{{EnemiesAppearing|B.B.Bunny|Squire Rel|Angelic Gory|Wild Doge|Infernal Pegasus Deonil|Angelic Beast Rajakong|Great Angel Chibinel|Hackey}}
+'''Round 3''' is the third stage in [[Otherworld Colosseum#生産スピード統一+1|Otherworld Colosseum]]. This is a [[No Continues]] stage.
+
+{{Stage Info
+|stage name = [[File:rc001.png]]
+[[File:Mapsn000 02 sr en.png]]
+|stage location = [[File:Mapname000 sr en.png]]
+|energy = 200
+|enemy castle hp = 1,700,000 HP
+|enemies = {{Magnification|B.B.Bunny|4,000%
+|Squire Rel|4,000%
+|Angelic Gory|300%
+|Wild Doge|200%
+|Angelic Beast Rajakong|100%
+|Great Angel Chibinel|100%
+|Hackey|200%}}
+|boss = {{Magnification|Infernal Pegasus Deonil|100%}}
+|enemies2 = {{Magnification|B.B.Bunny|4,800%
+|Squire Rel|4,800%
+|Angelic Gory|360%
+|Wild Doge|240%
+|Angelic Beast Rajakong|120%
+|Great Angel Chibinel|120%
+|Hackey|240%}}
+|boss2 = {{Magnification|Infernal Pegasus Deonil|120%}}
+|restriction = [[No Continues]]
+|XP = 3,800 XP
+|width = 5,500
+|max enemies = 20
+|jpname = Round 3
+|script = Round 3
+|romaji = Round 3
+|star = 2
+|event-chapter = [[Otherworld Colosseum#生産スピード統一+1|Otherworld Colosseum]]
+|prev stage = [[Round 2 (生産スピード統一+1)|Round 2]]
+|next stage = [[Round 4 (生産スピード統一+1)|Round 4]]
+}}
+
+==Rules==
+{{ColosseumRule|生産スピード統一+1}}
+
+==Battleground==
+*3 [[B.B.Bunny|B.B.Bunnies]] spawn after 3.33 seconds<sup>100f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*5 [[Squire Rel]]s spawn after 6.67 seconds<sup>200f</sup>, delay 4~6 seconds<sup>120f~180f</sup>.
+*1 [[Angelic Gory]] spawns after 10 seconds<sup>300f</sup>.
+*2 [[Wild Doge]]s spawn after 16.67 seconds<sup>500f</sup>, delay 6.67~8 seconds<sup>200f~240f</sup>.
+*When the base reaches 99% HP:
+**1 [[Infernal Pegasus Deonil]] spawns as the boss.
+**Infinite [[Squire Rel]]s spawn, delay 4~6 seconds<sup>120f~180f</sup>.
+**8 [[Wild Doge]]s spawn after 1.33 seconds<sup>40f</sup>, delay 23.33~26.67 seconds<sup>700f~800f</sup>.
+**Infinite [[B.B.Bunny|B.B.Bunnies]] spawn after 6.67 seconds<sup>200f</sup>, delay 8~10 seconds<sup>240f~300f</sup>.
+**1 [[Angelic Beast Rajakong]] spawns after 10 seconds<sup>300f</sup>.
+**1 [[Great Angel Chibinel]] spawns after 20 seconds<sup>600f</sup>.
+**1 [[Hackey]] spawns after 33.33 seconds<sup>1,000f</sup>.
+**2 [[Angelic Gory|Angelic Gories]] spawn after 80 seconds<sup>2,400f</sup>, delay 33.33~36.67 seconds<sup>1,000f~1,100f</sup>.
+
+==Strategy==
+-
+
+==Reference==
+*https://battlecats-db.com/stage/s36029-03.html
+
+{{Otherworld Colosseum}}
+[[Category:Event Stages]]
+[[Category:Restriction Stages]]
