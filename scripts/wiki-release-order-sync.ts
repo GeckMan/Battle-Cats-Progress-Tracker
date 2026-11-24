@@ -20,6 +20,7 @@
 import { existsSync, readFileSync, readdirSync } from "fs";
 import { join } from "path";
 import { norm, readUnitPages } from "./wiki-unit-sync.ts";
+import { isCurrentGachaPage } from "./wiki-banner-sync.ts";
 
 const PREFIX: Array<[string, string]> = [
   ["Rare Cat Capsules", "RARE_CAPSULE"], ["Rare Cat Capsule", "RARE_CAPSULE"],
@@ -159,7 +160,7 @@ export async function syncSetNamesFromWikiMirror(prisma: any, mirrorDir: string 
   // Source 2b: gacha roster pages (exclusive list) -> unit names.
   const rosterOf = new Map<string, string[]>(); // norm(unit name) -> page titles
   for (const f of readdirSync(pagesDir)) {
-    if (!/\((Gacha_Event|Event_Gacha)\)|Capsules/.test(f) || f.endsWith("_Gallery.wikitext")) continue;
+    if (!isCurrentGachaPage(f)) continue;
     const t = readFileSync(join(pagesDir, f), "utf8");
     for (const m of t.matchAll(/\{\{GachaDescription\|([^}]*)\}\}/g))
       for (const n of m[1].split("|").map((x) => x.trim()).filter((x) => x && !x.includes("=")))
