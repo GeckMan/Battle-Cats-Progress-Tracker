@@ -8,7 +8,7 @@
 
 .portable-infobox.pi-theme-cat-appearance,
 .portable-infobox.pi-theme-cat-appearance .pi-title {
-	background-color: var(--bg-color-light2);
+	background-color: light-dark(#EEA, #221);
 }
 
 #mw-content .portable-infobox.pi-theme-cat-appearance .pi-title {

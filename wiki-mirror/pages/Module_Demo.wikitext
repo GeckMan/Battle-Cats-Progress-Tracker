@@ -1,0 +1,37 @@
+local p = {};
+
+-- Note to dev wiki editors: this function is copied to other modules. Updates
+-- to this function should be synced with the following modules:
+-- [[Module:Loops]]
+-- [[Module:Repeat]]
+-- [[Module:Lustache]]
+-- [[Module:Choose]]
+-- [[mh:bucket:Module:BucketGet]]
+-- [[mh:loadout:Module:Demo]]
+function p._unescape(text)
+	if not text:match("UNIQ") then
+		return text;
+	end
+	local unescaped = mw.text.unstripNoWiki(text);
+	local text = unescaped:gsub('&lt;', '<')
+			:gsub('&gt;', '>')
+			:gsub('&quot;', '"')
+			-- Taken from Wikipedia's Module:Demo
+			:gsub('&#125;%-', '}-')
+			:gsub('%-&#123;', '-{')
+			:gsub("<//nowiki>", "</nowiki>");
+	return text;
+end
+
+function p.unescape(frame)
+	local text = frame.args[1];
+	return p._unescape(text);
+end
+
+function p.preprocess(frame)
+	local text = frame.args[1];
+	text = p._unescape(text);
+	return frame:preprocess(text);
+end
+
+return p;

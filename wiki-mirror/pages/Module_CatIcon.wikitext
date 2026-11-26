@@ -8,18 +8,12 @@ local p = {}
 local getArgs = require('Module:Arguments').getArgs
 local Cat = require('Module:Cat2')
 require('Module:Cat2/images').init(Cat)
-local cat_query = require('Module:Cat query helper')
+require('Module:Cat2/load_bulk_data').init(Cat)
 
 function p._main(args)
-	local names = {}
-	for _, name in ipairs(args) do
-		table.insert(names, name)
-	end
-
-	local get_cat = cat_query.get_cat_function(names)
 	local icons = {}
 	for _, name in ipairs(args) do
-		local cat = get_cat(name)
+		local cat = Cat.from_name(name)
 		local icon = Cat.image_str(cat, 'deploy', { size = args.size })
 		table.insert(icons, icon)
 	end

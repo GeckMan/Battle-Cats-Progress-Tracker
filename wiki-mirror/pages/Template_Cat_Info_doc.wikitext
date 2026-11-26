@@ -2,98 +2,63 @@
 ==Examples==
 <tabber>
 Only one form=
-<pre>
-{{Cat Info
+{{Demo
+|<nowiki>{{Cat Info
 |ID = 673
 |rarity = UR
+|categories = Mythic
 |name1 = Cheetah Cat
-|image1 = 673 1.png
-}}
-</pre>
-===Result===
-{{Cat Info
-|ID = 673
-|rarity = UR
-|name1 = Cheetah Cat
-|image1 = 673 1.png
+}}</nowiki>
 }}
 
 |-|
 Normal and Evolved Forms=
-<pre>
-{{Cat Info
+{{Demo
+|<nowiki>{{Cat Info
 |ID = 0
 |rarity = N
 |name1 = Cat
 |name2 = Macho Cat
-|image1 = 000 1.png
-|image2 = 000 2.png
-}}
-</pre>
-===Result===
-{{Cat Info
-|ID = 0
-|rarity = N
-|name1 = Cat
-|name2 = Macho Cat
-|image1 = 000 1.png
-|image2 = 000 2.png
+}}</nowiki>
 }}
 
 |-|
 Normal, Evolved and True Forms=
-<pre>
-{{Cat Info
+{{Demo
+|<nowiki>{{Cat Info
 |ID = 0
 |rarity = N
 |name1 = Cat
 |name2 = Macho Cat
 |name3 = Mohawk Cat
-|image1 = 000 1.png
-|image2 = 000 2.png
-|image3 = 000 3.png
-}}
-</pre>
-===Result===
-{{Cat Info
-|ID = 0
-|rarity = N
-|name1 = Cat
-|name2 = Macho Cat
-|name3 = Mohawk Cat
-|image1 = 000 1.png
-|image2 = 000 2.png
-|image3 = 000 3.png
+}}</nowiki>
 }}
 
 |-|
 Normal, Evolved True, and Ultra Forms=
-<pre>
-{{Cat Info
+{{Demo
+|<nowiki>{{Cat Info
 |ID = 73
 |rarity = UR
 |name1 = Oda Nobunaga
 |name2 = Wargod Nobunaga
 |name3 = Immortal Nobunaga
 |name4 = Phantasmal Nobunaga
-|image1 = 073 1.png
-|image2 = 073 2.png
-|image3 = 073 3.png
-|image4 = 073 4.png
+}}</nowiki>
 }}
-</pre>
-===Result===
-{{Cat Info
-|ID = 73
-|rarity = UR
-|name1 = Oda Nobunaga
-|name2 = Wargod Nobunaga
-|name3 = Immortal Nobunaga
-|name4 = Phantasmal Nobunaga
-|image1 = 073 1.png
-|image2 = 073 2.png
-|image3 = 073 3.png
-|image4 = 073 4.png
+
+|-|
+With custom images=
+{{Demo
+|<nowiki>{{Cat Info
+|ID = 392
+|rarity = EX
+|version = Switch
+|name1 = Kuwagata Cat
+|name2 = Fujin Cat
+|image1 = f4zSPvcOvA.jpg
+|image2 = 8euq4A1NBj.jpg
+}}</nowiki>
 }}
 </tabber>
 

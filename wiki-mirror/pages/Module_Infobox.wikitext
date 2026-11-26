@@ -1,0 +1,191 @@
+-- Module designed by Smallamm, created on August 6th, 2026; last updated on October 25th, 2026.
+-- The wrapper template for this module can be found at {{Infobox}}.
+local p = {}
+
+local function parseArgs(args)
+	local fields = {
+		title = args.title,
+		header = {},
+		label = {},
+		data = {},
+		image = {},
+		tab_label = {},
+		caption = {},
+		columns = {}
+	}
+
+	for key, value in pairs(args) do
+		local prefix, index = key:match("^([%a_]+)(%d+)$")
+
+		if prefix and fields[prefix] then
+			fields[prefix][tonumber(index)] = value
+		end
+	end
+
+	return fields
+end
+
+-- The newlines prevent an issue where <ul> wasn't being added to lists past the first.
+local function addText(data, cell)
+	cell:newline():wikitext(data)
+
+	if data:sub(1, 1) == "*" then
+		cell:newline()
+	end
+end
+
+local function addRow(parent, label, data)
+	local row = parent:tag("div"):addClass("ib-row")
+
+	if label then
+		row:tag("div")
+			:addClass("ib-label")
+			:wikitext(label)
+	end
+
+	local cell = row:tag("div")
+		:addClass("ib-data")
+
+	addText(mw.text.trim(data), cell)
+end
+
+local function addStackedRow(parent, items, columnCount)
+	local row = parent:tag("div")
+		:addClass("ib-stack-row")
+		:attr("style", "--ib-columns:" .. columnCount)
+
+	for _, item in ipairs(items) do
+		local cell = row:tag("div")
+			:addClass("ib-stack-item")
+
+		if item.label then
+			cell:tag("div")
+				:addClass("ib-label")
+				:wikitext(item.label)
+		end
+
+		local data = cell:tag("div")
+			:addClass("ib-data")
+
+		addText(item.data, data)
+	end
+end
+
+local function addImages(infobox, fields)
+	local imageIndexes = {}
+
+	for index in pairs(fields.image) do
+		imageIndexes[#imageIndexes + 1] = index
+	end
+
+	if #imageIndexes == 0 then return end
+	table.sort(imageIndexes)
+
+	local tabs
+	local container = infobox:tag("div"):addClass("ib-images")
+
+	if #imageIndexes > 1 then
+		local wrapper = container:tag("div"):addClass("ib-tabs-wrapper")
+
+		wrapper:tag("div"):addClass("ib-tabs-arrow left")
+		tabs = wrapper:tag("ul"):addClass("ib-tabs")
+		wrapper:tag("div"):addClass("ib-tabs-arrow right")
+	end
+
+	for position, index in ipairs(imageIndexes) do
+		if tabs then
+			tabs:tag("li")
+				:addClass("ib-tab" .. (position == 1 and " active" or ""))
+				:wikitext(fields.tab_label[index])
+		end
+
+		local image = container:tag("div")
+			:addClass(position == 1 and "ib-img active" or "ib-img")
+
+		image:wikitext(fields.image[index])
+
+		if fields.caption[index] then
+			image:tag("div")
+				:addClass("ib-caption")
+				:wikitext(fields.caption[index])
+		end
+	end
+end
+
+local groupFields = {"header", "label", "data"}
+
+local function createGroups(infobox, fields)
+	local currentGroup
+	local columnCount = 1
+	local pendingItems = {}
+
+	local indexes = {}
+
+	for _, field in ipairs(groupFields) do
+		for index in pairs(fields[field]) do
+			indexes[index] = true
+		end
+	end
+
+	local orderedIndexes = {}
+
+	for index in pairs(indexes) do
+		orderedIndexes[#orderedIndexes + 1] = index
+	end
+
+	table.sort(orderedIndexes)
+
+	for _, index in ipairs(orderedIndexes) do
+		if fields.header[index] then
+			currentGroup = infobox:tag("div")
+				:addClass("ib-group")
+
+			currentGroup:tag("div")
+				:addClass("ib-header")
+				:wikitext(fields.header[index])
+
+		elseif not currentGroup then
+			currentGroup = infobox:tag("div")
+				:addClass("ib-group")
+		end
+
+		if fields.columns[index] then
+			columnCount = tonumber(fields.columns[index]) or 1
+		end
+
+		local data = fields.data[index] and mw.text.trim(fields.data[index])
+
+		if data and data ~= "" then
+			if columnCount > 1 then
+				pendingItems[#pendingItems + 1] = {label = fields.label[index], data = fields.data[index]}
+
+				if #pendingItems == columnCount then
+					addStackedRow(currentGroup, pendingItems, columnCount)
+					pendingItems = {}
+				end
+			else
+				addRow(currentGroup, fields.label[index], fields.data[index])
+			end
+		end
+	end
+end
+
+function p.infobox(fields)
+	local infobox = mw.html.create("div"):addClass("infobox")
+
+	infobox:tag("div")
+		:addClass("ib-title")
+		:wikitext(fields.title)
+
+	addImages(infobox, fields)
+	createGroups(infobox, fields)
+
+	local styles = mw.getCurrentFrame():callParserFunction("#html", {"InfoboxStyles", once = "true"})
+	return styles .. tostring(infobox)
+end
+
+function p.main(frame)
+	return p.infobox(parseArgs(frame:getParent().args))
+end
+
+return p

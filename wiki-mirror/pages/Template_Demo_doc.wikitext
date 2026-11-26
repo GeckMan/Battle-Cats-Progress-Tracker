@@ -1,0 +1,9 @@
+{{Documentation}}
+Given some wikitext, this template outputs both a text version with syntax highlighting and the output from the parser.
+
+It avoid the duplication frequently seen in template documentation, where wikitext is written twice, once in a <code>&lt;pre&gt;</code> or <code>&lt;syntaxhighlight&gt;</code> tag to show the source and once directly on the page to show the output.
+
+See [[dev:Template:Demo]] for more information.
+
+{{Demo|<nowiki>{{Nyanko|Cat|20+80|0}}</nowiki>}}
+<includeonly>[[Category:Templates]]</includeonly>

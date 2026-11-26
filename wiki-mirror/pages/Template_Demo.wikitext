@@ -1,0 +1,16 @@
+<includeonly><templatestyles src="Template:Demo/styles.css" /><div class="demo {{#ifeq:{{{layout|}}}|column|demo-columns}}">
+<div class="demo-wikitext">
+<div class="demo-label">Wikitext</div>
+{{#tag:syntaxhighlight
+|{{#invoke:Demo|unescape|{{{1|}}}}}
+|copy=
+|lang=wikitext
+}}
+</div>
+<div class="demo-result">
+<div class="demo-label">Result</div>
+<div class="demo-output">
+{{#invoke:Demo|preprocess|{{{1|}}}}}
+</div>
+</div>
+</div></includeonly><noinclude>{{/doc}}</noinclude>

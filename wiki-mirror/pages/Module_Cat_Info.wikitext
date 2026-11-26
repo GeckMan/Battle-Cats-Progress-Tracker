@@ -67,9 +67,11 @@ function p.replacemewithaproperinfobox(frame)
 	local title = mw.html.create('b')
 	title:wikitext("[[Cat Release Order|Cat Unit]] # ")
 	if worthBothering() then
-		title:wikitext(("%03d"):format(id or error('missing Cat ID')))
+		title:wikitext(("%03d"):format(tonumber(args['ID']) or error('missing Cat ID')))
 	else
-		title:wikitext(args['ID'])
+		local s, res = pcall(string.format, "%03d", args['ID'])
+		-- we try to format it nicely anyway but forgive you if not possible
+		title:wikitext(s and res or args['ID'])
 	end
 	if args.version then
 		title:wikitext(("<sup>%s</sup>"):format(args.version))
